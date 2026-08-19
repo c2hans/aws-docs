@@ -34,8 +34,6 @@ content-type: application/x-amz-json-1.0
 
 The ListTables operation, by default, requests all of the table names associated with the account making the request, for the endpoint that receives the request.
 
-****
-
 |  Name  |  Description  | Required |
 | --- | --- | --- |
 |  Limit  | A number of maximum table names to return. <br />Type: Integer | No |
@@ -56,8 +54,6 @@ Date: Fri, 21 Oct 2011 20:35:38 GMT
 
 {"TableNames":["Table1","Table2","Table3"], "LastEvaluatedTableName":"Table3"}
 ```
-
-****
 
 |  Name  |  Description  |
 | --- | --- |

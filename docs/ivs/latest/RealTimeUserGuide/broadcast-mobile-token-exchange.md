@@ -9,7 +9,7 @@ Token exchange enables you to upgrade or downgrade participant-token capabilitie
 
 Token exchange is supported in both the mobile and web broadcast SDKs. When a participant exchanges a token, server-side composition detects the updated attributes in real time and automatically adjusts the layout — for example, reassigning the featured slot, reordering participants, or moving a participant into the picture-in-picture overlay — without requiring a reconnect.
 
-Limitation: Token exchange only works with tokens created on your server using a [key pair](https://docs.aws.amazon.com//ivs/latest/RealTimeUserGuide/getting-started-distribute-tokens.html#getting-started-distribute-tokens-self-signed). It does not work with tokens created via the [CreateParticipantToken API](https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_CreateParticipantToken.html).
+Limitation: Token exchange only works with tokens created on your server using a [key pair](https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/getting-started-distribute-tokens.html#getting-started-distribute-tokens-self-signed). It does not work with tokens created via the [CreateParticipantToken API](https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_CreateParticipantToken.html).
 
 ## Exchanging Tokens
 <a name="broadcast-mobile-token-exchange-exchanging-tokens"></a>

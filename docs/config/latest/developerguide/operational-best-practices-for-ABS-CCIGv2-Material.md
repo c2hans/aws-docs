@@ -9,8 +9,6 @@ Conformance packs provide a general-purpose compliance framework designed to ena
 
 The following provides a sample mapping between the ABS Cloud Computing Implementation Guide 2.0 - Material Workloads and AWS managed Config rules. Each Config rule applies to a specific AWS resource, and relates to one or more ABS Cloud Computing Implementation Guide controls. An ABS Cloud Computing Implementation Guide control can be related to multiple Config rules. Refer to the table below for more detail and guidance related to these mappings.
 
-****
-
 | Control ID  | AWS Config Rule  | Guidance  |
 | --- | --- | --- |
 | section4a-govern-the-cloud-2-material-workloads | [guardduty-enabled-centralized](https://docs.aws.amazon.com/config/latest/developerguide/guardduty-enabled-centralized.html) | Amazon GuardDuty can help to monitor and detect potential cybersecurity events by using threat intelligence feeds. These include lists of malicious IPs and machine learning to identify unexpected, unauthorized, and malicious activity within your AWS Cloud environment. |

@@ -111,7 +111,7 @@ Add code to the methods of the `StockTradeRecordProcessor` class, as shown in th
 
 **To run the consumer**
 
-1. Run the producer that you wrote in [[Implement the producer](tutorial-stock-data-kplkcl2-producer.md)Implement the producer](tutorial-stock-data-kplkcl2-producer.md) to inject simulated stock trade records into your stream.
+1. Run the producer that you wrote in [[Implement the producer](tutorial-stock-data-kplkcl2-producer.md)](tutorial-stock-data-kplkcl2-producer.md) to inject simulated stock trade records into your stream.
 
 1. Verify that the access key and secret key pair retrieved earlier (when creating the IAM user) are saved in the file `~/.aws/credentials`.
 

@@ -83,8 +83,6 @@ When configuring the template, you provide the Amazon EC2 instance type. NetApp'
 
 Following are some sample configurations and the `t3` instance type you might choose.
 
-****
-
 | File systems | CPU | Disk | Instance type |
 | --- | --- | --- | --- |
 | Under 10 | 2 cores | 500 MB | `t3.micro` |
@@ -110,7 +108,6 @@ The following procedure configures and deploys the Harvest/Grafana solution. It 
 By default, this template launches in the US East (N. Virginia) AWS Region. You must launch this solution in an AWS Region where Amazon FSx is available. For more information, see [Amazon FSx endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/fsxn.html) in the *AWS General Reference. *
 
 1. For **Parameters**, review the parameters for the template and modify them for the needs of your file system. This solution uses the following default values.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/fsx/latest/ONTAPGuide/monitoring-harvest-grafana.html)
 
 1. Choose **Next**.

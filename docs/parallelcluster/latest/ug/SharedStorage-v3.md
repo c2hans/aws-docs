@@ -436,7 +436,7 @@ Specifies the ID of the backup to use to restore the FSx for Lustre file system 
 [Update policy: If this setting is changed, the update is not allowed.](using-pcluster-update-cluster-v3.md#update-policy-fail-v3)
 
 `KmsKeyId` (**Optional**, `String`)
-The ID of the AWS Key Management Service (AWS KMS) key ID that's used to encrypt the FSx for Lustre file system's data for persistent FSx for Lustre file systems at rest. If not specified, the FSx for Lustre managed key is used. The `SCRATCH_1` and `SCRATCH_2` FSx for Lustre file systems are always encrypted at rest using FSx for Lustre managed keys. For more information, see [Encrypt](https://docs.aws.amazon.com//kms/latest/APIReference/API_Encrypt.html) in the *AWS Key Management Service API Reference*.
+The ID of the AWS Key Management Service (AWS KMS) key ID that's used to encrypt the FSx for Lustre file system's data for persistent FSx for Lustre file systems at rest. If not specified, the FSx for Lustre managed key is used. The `SCRATCH_1` and `SCRATCH_2` FSx for Lustre file systems are always encrypted at rest using FSx for Lustre managed keys. For more information, see [Encrypt](https://docs.aws.amazon.com/kms/latest/APIReference/API_Encrypt.html) in the *AWS Key Management Service API Reference*.
 [Update policy: If this setting is changed, the update is not allowed.](using-pcluster-update-cluster-v3.md#update-policy-fail-v3)
 
 `FileSystemId` (**Optional**, `String`)

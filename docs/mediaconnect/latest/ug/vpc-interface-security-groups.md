@@ -9,8 +9,6 @@ When you set up a virtual private cloud (VPC) in Amazon Virtual Private Cloud, y
 
 To ensure that content can flow between your VPC and MediaConnect, adhere to the following guidelines:
 
-****
-
 | If you have... | Make sure that the VPC interface has a security group with... | Additional information |
 | --- | --- | --- |
 | A VPC source | An inbound rule that allows the private IP address of the resource within the VPC that is sending content. | Zixi sources: When you create a VPC source using Zixi protocol, the inbound port is automatically assigned by MediaConnect. The assigned port will be in the range of 2090-2099 and assigned at the time of source creation. You should create the Zixi VPC source first and note the assigned port. After you have the assigned port information, you can configure your security groups. |

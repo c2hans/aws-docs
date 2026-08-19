@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsb
 
 AWS Billing Conductor provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="billingconductor-GetBillingGroupCostReport"></a>[GetBillingGroupCostReport](https://docs.aws.amazon.com/billingconductor/latest/APIReference/API_GetBillingGroupCostReport.html) | View the billing group cost report for the specified billing group | Read |

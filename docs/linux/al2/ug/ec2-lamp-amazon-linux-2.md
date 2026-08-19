@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/linux/al2/ug/ec2-lamp-amazon-linux-2.htm
 The following procedures help you install an Apache web server with PHP and [MariaDB](https://mariadb.org/about/) (a community-developed fork of MySQL) support on your AL2 instance (sometimes called a LAMP web server or LAMP stack). You can use this server to host a static website or deploy a dynamic PHP application that reads and writes information to a database.
 
 **Important**
-If you are trying to set up a LAMP web server on a different distribution, such as Ubuntu or Red Hat Enterprise Linux, this tutorial will not work. For AL2023, see [Install a LAMP server on AL2023](https://docs.aws.amazon.com//linux/al2023/ug/ec2-lamp-amazon-linux-2023.html). For Ubuntu, see the following Ubuntu community documentation: [ApacheMySQLPHP](https://help.ubuntu.com/community/ApacheMySQLPHP). For other distributions, see their specific documentation.
+If you are trying to set up a LAMP web server on a different distribution, such as Ubuntu or Red Hat Enterprise Linux, this tutorial will not work. For AL2023, see [Install a LAMP server on AL2023](https://docs.aws.amazon.com/linux/al2023/ug/ec2-lamp-amazon-linux-2023.html). For Ubuntu, see the following Ubuntu community documentation: [ApacheMySQLPHP](https://help.ubuntu.com/community/ApacheMySQLPHP). For other distributions, see their specific documentation.
 
 **Option: Complete this tutorial using automation**
 To complete this tutorial using AWS Systems Manager Automation instead of the following tasks, run the [AWSDocs-InstallALAMPServer-AL2](https://console.aws.amazon.com/systems-manager/automation/execute/AWSDocs-InstallALAMPServer-AL2) Automation document.

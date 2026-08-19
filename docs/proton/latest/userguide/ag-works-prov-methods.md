@@ -64,7 +64,7 @@ The following diagram shows that AWS Proton takes care of most of these steps di
 
 **To provide the pipeline role**
 
-  1. In the [AWS Proton console](https://console.aws.amazon.com//proton/), on the navigation pane, choose **Settings > Account settings**, and then choose **Configure**.
+  1. In the [AWS Proton console](https://console.aws.amazon.com/proton/), on the navigation pane, choose **Settings > Account settings**, and then choose **Configure**.
 
   1. Use the **Pipeline AWS-managed role** section to configure a new or existing pipeline role for AWS-managed provisioning.
 
@@ -126,7 +126,7 @@ The following diagram illustrates the steps that AWS Proton performs and the ste
 
 **To provide the pipeline role**
 
-  1. In the [AWS Proton console](https://console.aws.amazon.com//proton/), on the navigation pane, choose **Settings > Account settings**, and then choose **Configure**.
+  1. In the [AWS Proton console](https://console.aws.amazon.com/proton/), on the navigation pane, choose **Settings > Account settings**, and then choose **Configure**.
 
   1. Use the **Codebuild pipeline provisioning role** section to configure a new or existing pipeline role for CodeBuild provisioning.
 
@@ -193,7 +193,7 @@ Developers creating services use the same process regardless of provisioning met
 
 **To provide the pipeline role**
 
-  1. In the [AWS Proton console](https://console.aws.amazon.com//proton/), on the navigation pane, choose **Settings > Account settings**, and then choose **Configure**.
+  1. In the [AWS Proton console](https://console.aws.amazon.com/proton/), on the navigation pane, choose **Settings > Account settings**, and then choose **Configure**.
 
   1. Use the **CI/CD pipeline repository** section to configure a new or existing repository link.
 

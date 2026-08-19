@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon Kinesis Data Streams provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="kinesis-DescribeAccountSettings"></a>[DescribeAccountSettings](https://docs.aws.amazon.com/kinesis/latest/APIReference/API_DescribeAccountSettings.html) | Describe the account-level settings for Amazon Kinesis Data Streams | Read |

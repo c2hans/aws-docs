@@ -32,8 +32,6 @@ Without any additional arguments, all of these commands list or modify tags of t
 
 None of these options are required. If you run **eb create** without any options, you are prompted to enter or select a value for each setting.
 
-****
-
 |  Name  |  Description  |
 | --- | --- |
 | `-l`<br />or<br />`--list` | List all tags that are currently applied to the resource. |

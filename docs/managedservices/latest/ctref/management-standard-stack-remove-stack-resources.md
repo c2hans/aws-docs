@@ -14,8 +14,6 @@ Remove resources from a CloudFormation stack using a change set. If you set Allo
 ## Change Type Details
 <a name="ct-03mv2mypai537-MSSr-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-03mv2mypai537 |

@@ -10,8 +10,6 @@ An authentication plugin that connects to Amazon Athena through SageMaker Unifie
 ## Authentication Type
 <a name="odbc-v2-driver-sagemaker-idc-authentication-type"></a>
 
-****
-
 | **Connection string name** | **Parameter type** | **Default value** | **Connection string example** |
 | --- | --- | --- | --- |
 | AuthenticationType | Required | none | AuthenticationType=SageMakerBrowserIdc; |
@@ -20,8 +18,6 @@ An authentication plugin that connects to Amazon Athena through SageMaker Unifie
 <a name="odbc-v2-driver-sagemaker-idc-domain-id"></a>
 
 The identifier of the SageMaker domain to use.
-
-****
 
 | **Connection string name** | **Parameter type** | **Default value** | **Connection string example** |
 | --- | --- | --- | --- |
@@ -32,8 +28,6 @@ The identifier of the SageMaker domain to use.
 
 The identifier of the SageMaker project to use.
 
-****
-
 | **Connection string name** | **Parameter type** | **Default value** | **Connection string example** |
 | --- | --- | --- | --- |
 | SageMakerProjectId | Required | none | SageMakerProjectId=p-abcdef1234; |
@@ -42,8 +36,6 @@ The identifier of the SageMaker project to use.
 <a name="odbc-v2-driver-sagemaker-idc-domain-region"></a>
 
 The AWS Region where your SageMaker domain is provisioned.
-
-****
 
 | **Connection string name** | **Parameter type** | **Default value** | **Connection string example** |
 | --- | --- | --- | --- |
@@ -54,8 +46,6 @@ The AWS Region where your SageMaker domain is provisioned.
 
 The issuer URL of the AWS Identity and Access Management Identity Center instance that the SageMaker domain uses.
 
-****
-
 | **Connection string name** | **Parameter type** | **Default value** | **Connection string example** |
 | --- | --- | --- | --- |
 | sso\_oidc\_start\_url | Required | none | sso\_oidc\_start\_url=https://d-1234567890.awsapps.com/start; |
@@ -65,8 +55,6 @@ The issuer URL of the AWS Identity and Access Management Identity Center instanc
 
 The AWS Region where the AWS Identity and Access Management Identity Center instance is provisioned.
 
-****
-
 | **Connection string name** | **Parameter type** | **Default value** | **Connection string example** |
 | --- | --- | --- | --- |
 | sso\_oidc\_region | Required | none | sso\_oidc\_region=us-east-1; |
@@ -75,8 +63,6 @@ The AWS Region where the AWS Identity and Access Management Identity Center inst
 <a name="odbc-v2-driver-sagemaker-idc-sso-oidc-cache"></a>
 
 When enabled, allows the same AWS Identity and Access Management Identity Center access token to be cached to disk and reused across driver connections. This prevents SQL tools that create multiple driver connections from launching multiple browser windows.
-
-****
 
 | **Connection string name** | **Parameter type** | **Default value** | **Connection string example** |
 | --- | --- | --- | --- |

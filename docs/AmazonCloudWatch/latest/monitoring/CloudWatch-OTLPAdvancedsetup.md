@@ -10,7 +10,7 @@ You can build your own custom OpenTelemetry Collector to get the best applicatio
 ## Prerequisite
 <a name="CloudWatch-OTLPAdvancedsetupPrequisite"></a>
 
-Make sure *Transaction Search* is enabled in CloudWatch. For more information, see [Transaction Search](https://docs.aws.amazon.com//AmazonCloudWatch/latest/monitoring/CloudWatch-Transaction-Search.html).
+Make sure *Transaction Search* is enabled in CloudWatch. For more information, see [Transaction Search](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Transaction-Search.html).
 
 ## Build your own collector
 <a name="CloudWatch-OTLPAdvancedsetupBuildCollector"></a>

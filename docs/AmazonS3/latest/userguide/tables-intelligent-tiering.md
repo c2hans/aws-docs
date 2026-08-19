@@ -32,7 +32,7 @@ All tiers provide millisecond latency, high throughput performance, and are desi
 
 The following actions constitute access that automatically moves files from the Infrequent Access tier or the Archive Instant Access tier back to the Frequent Access tier:
 + Any read or write operations on table data or metadata files using `GetObject`, `PutObject`, or `CompleteMultipartUpload` actions
-+ `LoadTable` or `UpdateTable` actions using [Iceberg REST API Operations](https://docs.aws.amazon.com//AmazonS3/latest/userguide/s3-tables-integrating-open-source.html#endpoint-supported-api)
++ `LoadTable` or `UpdateTable` actions using [Iceberg REST API Operations](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-integrating-open-source.html#endpoint-supported-api)
 + S3 Tables replication operations
 
 Other actions don't constitute access that automatically moves files from the Infrequent Access tier or the Archive Instant Access tier back to the Frequent Access tier.
@@ -48,7 +48,7 @@ Automatic table maintenance operations performed by Amazon S3, such as snapshot 
 Maintenance operations do not affect the access tier of files in your table. Reads performed by maintenance operations do not cause files to change tiers. However, if a maintenance operation, such as compaction or record expiration, writes a new file, that file is created in the Frequent Access tier.
 
 **Note**
-Because compaction only processes files in the Frequent Access tier, delete operations on data in lower-cost tiers create delete files that are not automatically compacted. These delete files become eligible for compaction when the associated data files are accessed and move back to the Frequent Access tier. For tables that are not frequently accessed, you can manually run compaction using Amazon EMR to compact these delete files with their associated data files. For more information, see [Maintaining tables by using compaction](https://docs.aws.amazon.com//prescriptive-guidance/latest/apache-iceberg-on-aws/best-practices-compaction.html#compaction-emr-glue). You can monitor file growth in your table using Amazon CloudWatch metrics to determine when manual compaction may be beneficial.
+Because compaction only processes files in the Frequent Access tier, delete operations on data in lower-cost tiers create delete files that are not automatically compacted. These delete files become eligible for compaction when the associated data files are accessed and move back to the Frequent Access tier. For tables that are not frequently accessed, you can manually run compaction using Amazon EMR to compact these delete files with their associated data files. For more information, see [Maintaining tables by using compaction](https://docs.aws.amazon.com/prescriptive-guidance/latest/apache-iceberg-on-aws/best-practices-compaction.html#compaction-emr-glue). You can monitor file growth in your table using Amazon CloudWatch metrics to determine when manual compaction may be beneficial.
 
 ## Specifying S3 Intelligent-Tiering as your storage class
 <a name="tables-intelligent-tiering-specifying-storage-class"></a>
@@ -77,7 +77,7 @@ To check the default storage class on an existing table bucket, use the `GetTabl
 ## Monitoring storage usage
 <a name="tables-intelligent-tiering-monitoring-storage"></a>
 
-You can view your storage usage breakdown by access tier in the AWS Cost and Usage Reports for your account. For more information, see [Creating Cost and Usage Reports](https://docs.aws.amazon.com//cur/latest/userguide/creating-cur.html) in the *AWS Data Exports User Guide*.
+You can view your storage usage breakdown by access tier in the AWS Cost and Usage Reports for your account. For more information, see [Creating Cost and Usage Reports](https://docs.aws.amazon.com/cur/latest/userguide/creating-cur.html) in the *AWS Data Exports User Guide*.
 
 The following usage types are available in your billing reports:
 

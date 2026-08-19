@@ -12,7 +12,7 @@ With Amazon Simple Workflow Service (Amazon SWF), you can develop asynchronous a
 ## Components of a workflow
 <a name="swf-dev-overview-concepts"></a>
 
-[Components of a workflowWorkflow components](#swf-dev-overview-concepts) The fundamental concept in Amazon SWF is the *workflow*. A workflow is a set of *activities* that carry out some objective, together with logic that coordinates the activities. For example, a workflow could receive a customer order and take whatever actions are necessary to fulfill the order.
+[Components of a workflow](#swf-dev-overview-concepts) The fundamental concept in Amazon SWF is the *workflow*. A workflow is a set of *activities* that carry out some objective, together with logic that coordinates the activities. For example, a workflow could receive a customer order and take whatever actions are necessary to fulfill the order.
 
  Each workflow runs in a resource called a *domain*, which controls the workflow's scope. An AWS account can have multiple domains, each of which can contain multiple workflows, but workflows in different domains can't interact.
 

@@ -9,8 +9,6 @@ Conformance packs provide a general-purpose compliance framework designed to ena
 
 The following provides a sample mapping between the Canadian Centre for Cyber Security (CCCS) Medium Cloud Control Profile and AWS managed Config rules. Each Config rule applies to a specific AWS resource, and relates to one or more CCCS Medium Cloud Control Profile controls. A CCCS Medium Cloud Control Profile control can be related to multiple Config rules. Refer to the table below for more detail and guidance related to these mappings.
 
-****
-
 | Control ID  | Control Description  | AWS Config Rule  | Guidance  |
 | --- | --- | --- | --- |
 | CCCS-fPBMM-AC-2(1) | AC-2(1) Account Management \| Automated System Account Management | [cloudtrail-enabled](https://docs.aws.amazon.com/config/latest/developerguide/cloudtrail-enabled.html) | AWS CloudTrail can help in non-repudiation by recording AWS Management Console actions and API calls. You can identify the users and AWS accounts that called an AWS service, the source IP address where the calls generated, and the timings of the calls. Details of captured data are seen within AWS CloudTrail Record Contents. |

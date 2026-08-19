@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awss
 
 AWS Security Token Service provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="sts-GetAccessKeyInfo"></a>[GetAccessKeyInfo](https://docs.aws.amazon.com/STS/latest/APIReference/API_GetAccessKeyInfo.html) | Obtain details about the access key id passed as a parameter to the request | Read |

@@ -15,10 +15,10 @@ To grant access to a datashare for a user, use the following command to provide 
 grant share on datashare datashare_name to "IAM:test_user";
 ```
 
-To grant access to a datashare for a user group, first create a user group with users. For information on how to create user groups, see [CREATE GROUP](https://docs.aws.amazon.com//redshift/latest/dg/r_CREATE_GROUP.html). Then, grant datashare access to a user using the following command, where datashare\_name is the name of the datashare and user-group is the name of the user-group to that you want to grant access.
+To grant access to a datashare for a user group, first create a user group with users. For information on how to create user groups, see [CREATE GROUP](https://docs.aws.amazon.com/redshift/latest/dg/r_CREATE_GROUP.html). Then, grant datashare access to a user using the following command, where datashare\_name is the name of the datashare and user-group is the name of the user-group to that you want to grant access.
 
 ```
 grant share on datashare datashare_name to group user_group;
 ```
 
-For information on how to use the GRANT statement, see [GRANT](https://docs.aws.amazon.com//redshift/latest/dg/r_GRANT.html).
+For information on how to use the GRANT statement, see [GRANT](https://docs.aws.amazon.com/redshift/latest/dg/r_GRANT.html).

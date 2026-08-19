@@ -14,8 +14,6 @@ Update an S3 bucket policy.
 ## Change Type Details
 <a name="ct-0fpjlxa808sh2-MASu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-0fpjlxa808sh2 |

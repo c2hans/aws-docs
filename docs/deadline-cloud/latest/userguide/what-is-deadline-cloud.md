@@ -40,7 +40,7 @@ Use Deadline Cloud to quickly create a render farm with default settings and res
 
 You can also define the settings and resources when you create a render farm. This method takes more time than using the default settings and resources but gives you more control.
 
-After you're familiar with Deadline Cloud [ Concepts and terminology](https://docs.aws.amazon.com//deadline-cloud/latest/userguide/concepts-terminology.html), see [Getting started](https://docs.aws.amazon.com//deadline-cloud/latest/userguide/getting-started.html) for step-by-step instructions for creating your farm, adding users, and links to helpful information.
+After you're familiar with Deadline Cloud [ Concepts and terminology](https://docs.aws.amazon.com/deadline-cloud/latest/userguide/concepts-terminology.html), see [Getting started](https://docs.aws.amazon.com/deadline-cloud/latest/userguide/getting-started.html) for step-by-step instructions for creating your farm, adding users, and links to helpful information.
 
 For information about migrating from Deadline 10, including a concept mapping, see [Migrate from Deadline 10 to AWS Deadline Cloud](https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/migrate-from-deadline-10.html) in the *Deadline Cloud Developer Guide*.
 
@@ -48,9 +48,9 @@ For information about migrating from Deadline 10, including a concept mapping, s
 <a name="accessing-deadline-cloud"></a>
 
 You can access Deadline Cloud in any of the following ways:
-+ **Deadline Cloud console**– Access the console in a browser to create a farm and its resources, and manage user access. For more information, see [Getting started](https://docs.aws.amazon.com//deadline-cloud/latest/userguide/getting-started.html).
++ **Deadline Cloud console**– Access the console in a browser to create a farm and its resources, and manage user access. For more information, see [Getting started](https://docs.aws.amazon.com/deadline-cloud/latest/userguide/getting-started.html).
 + **Deadline Cloud monitor**– Manage your render jobs, including updating priorities and job statuses. Monitor your farm and view logs and job status. For users with Owner permissions, the Deadline Cloud monitor also provides access to explore usage and create budgets. The Deadline Cloud monitor is available as both a web browser and a desktop application.
-+ **AWS SDK and AWS CLI**– Use the AWS Command Line Interface (AWS CLI) to call the Deadline Cloud API operations from the command line on your local system. For more information, see [ Set up a developer workstation](https://docs.aws.amazon.com//deadline-cloud/latest/userguide/getting-started-dev.html).
++ **AWS SDK and AWS CLI**– Use the AWS Command Line Interface (AWS CLI) to call the Deadline Cloud API operations from the command line on your local system. For more information, see [ Set up a developer workstation](https://docs.aws.amazon.com/deadline-cloud/latest/userguide/getting-started-dev.html).
 
 ## Deadline Cloud documentation
 <a name="deadline-cloud-guides"></a>

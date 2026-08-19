@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/searchi
 <a name="searching-for-places"></a>
 
 **Note**
-We released a new version of the Places API, see the updated [Places Developer Guide](https://docs.aws.amazon.com//location/latest/developerguide/places.html) or [Places API](https://docs.aws.amazon.com//location/latest/APIReference/API_Operations_Amazon_Location_Service_Places_V2.html) for revised information.
+We released a new version of the Places API, see the updated [Places Developer Guide](https://docs.aws.amazon.com/location/latest/developerguide/places.html) or [Places API](https://docs.aws.amazon.com/location/latest/APIReference/API_Operations_Amazon_Location_Service_Places_V2.html) for revised information.
 
 Amazon Location includes the ability to search the geolocation, or *place*, data of your chosen provider. There are several kinds of searching available.
 + **Geocoding** – Geocoding is the process of searching for addresses, regions, business names, or other points of interest, based on text input. It returns details and the location (in latitude and longitude) of the results found.

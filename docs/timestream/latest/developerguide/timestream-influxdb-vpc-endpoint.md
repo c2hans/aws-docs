@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/timestream/latest/developerguide/timestream-influxdb-vpc-endpoint.html
 ---
 
-For similar capabilities to Amazon Timestream for LiveAnalytics, consider Amazon Timestream for InfluxDB. It offers simplified data ingestion and single-digit millisecond query response times for real-time analytics. Learn more [here](https://docs.aws.amazon.com//timestream/latest/developerguide/timestream-for-influxdb.html).
+For similar capabilities to Amazon Timestream for LiveAnalytics, consider Amazon Timestream for InfluxDB. It offers simplified data ingestion and single-digit millisecond query response times for real-time analytics. Learn more [here](https://docs.aws.amazon.com/timestream/latest/developerguide/timestream-for-influxdb.html).
 
 # Connecting to Timestream for InfluxDB through a VPC endpoint
 <a name="timestream-influxdb-vpc-endpoint"></a>
@@ -151,7 +151,7 @@ You can control access to Timestream for InfluxDB resources and operations when 
 Use caution when creating key policies and IAM policies based on your VPC endpoint. If a policy statement requires that requests come from a particular VPC or VPC endpoint, requests from integrated AWS services that use an Timestream for InfluxDB resource on your behalf might fail.
 Also, the `aws:sourceIP` condition key is not effective when the request comes from an [Amazon VPC endpoint](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-endpoints.html). To restrict requests to a VPC endpoint, use the `aws:sourceVpce` or `aws:sourceVpc` condition keys. For more information, see [Identity and access management for VPC endpoints and VPC endpoint services](https://docs.aws.amazon.com/vpc/latest/privatelink/vpc-endpoints-iam.html) in the *AWS PrivateLink Guide*.
 
-You can use these global condition keys to control access to operations like [CreateDbInstance](https://docs.aws.amazon.com//ts-influxdb/latest/ts-influxdb-api/API_CreateDbInstance.html) that don't depend on any particular resource.
+You can use these global condition keys to control access to operations like [CreateDbInstance](https://docs.aws.amazon.com/ts-influxdb/latest/ts-influxdb-api/API_CreateDbInstance.html) that don't depend on any particular resource.
 
 ## Logging your VPC endpoint
 <a name="vpce-logging"></a>

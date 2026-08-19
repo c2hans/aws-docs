@@ -13,7 +13,7 @@ Each time you store your data in Amazon Fraud Detector, using the Amazon Fraud D
 
 **Prerequisites for storing data internally with Amazon Fraud Detector**
 + To ensure that your event data passes validation and the dataset gets stored successfully, make sure you have used the insights provided by [Data models explorer](https://docs.aws.amazon.com/frauddetector/latest/ug/create-event-dataset.html#prepare-event-dataset) to prepare your dataset.
-+ Created an event type for the event data you want to store with Amazon Fraud Detector. If you haven't, follow intstructions to [Create an event type](https://docs.aws.amazon.com//frauddetector/latest/ug/create-event-type.html).
++ Created an event type for the event data you want to store with Amazon Fraud Detector. If you haven't, follow intstructions to [Create an event type](https://docs.aws.amazon.com/frauddetector/latest/ug/create-event-type.html).
 
 ## Smart Data Validation
 <a name="smart-data-validation"></a>

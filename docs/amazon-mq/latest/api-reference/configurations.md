@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/api-reference/configura
 # Configurations
 <a name="configurations"></a>
 
-This is a collection of configurations. A configuration contains all of the settings for your broker. For more information, see [Configuration](https://docs.aws.amazon.com//amazon-mq/latest/developer-guide/configuration.html) and [Amazon MQ Broker Configuration Parameters](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-mq-broker-configuration-parameters.html) in the Amazon MQ Developer Guide.
+This is a collection of configurations. A configuration contains all of the settings for your broker. For more information, see [Configuration](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/configuration.html) and [Amazon MQ Broker Configuration Parameters](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-mq-broker-configuration-parameters.html) in the Amazon MQ Developer Guide.
 
 You can create a configuration before creating any brokers. You can then apply the configuration to one or more brokers.
 
@@ -172,7 +172,7 @@ Returns information about all configurations.
 | created | string<br />Format: date-time | True | Required. The date and time of the configuration revision. |
 | description | string | True | Required. The description of the configuration. |
 | engineType | [EngineType](#configurations-model-enginetype) | True | Required. The type of broker engine. Currently, Amazon MQ supports `ACTIVEMQ` and `RABBITMQ`. |
-| engineVersion | string | True | The broker engine version. Defaults to the latest available version for the specified broker engine type. For a list of supported engine versions, see the [ActiveMQ version management](https://docs.aws.amazon.com//amazon-mq/latest/developer-guide/activemq-version-management.html) and the [RabbitMQ version management](https://docs.aws.amazon.com//amazon-mq/latest/developer-guide/rabbitmq-version-management.html) sections in the Amazon MQ Developer Guide. |
+| engineVersion | string | True | The broker engine version. Defaults to the latest available version for the specified broker engine type. For a list of supported engine versions, see the [ActiveMQ version management](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/activemq-version-management.html) and the [RabbitMQ version management](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/rabbitmq-version-management.html) sections in the Amazon MQ Developer Guide. |
 | id | string | True | Required. The unique ID that Amazon MQ generates for the configuration. |
 | latestRevision | [ConfigurationRevision](#configurations-model-configurationrevision) | True | Required. The latest revision of the configuration. |
 | name | string | True | Required. The name of the configuration. This value can contain only alphanumeric characters, dashes, periods, underscores, and tildes (- . \_ \~). This value must be 1-150 characters long. |
@@ -198,7 +198,7 @@ Creates a new configuration for the specified configuration name. Amazon MQ uses
 | --- |--- |--- |--- |
 | authenticationStrategy | [AuthenticationStrategy](#configurations-model-authenticationstrategy) | False | Optional. The authentication strategy associated with the configuration. The default is `SIMPLE`. |
 | engineType | [EngineType](#configurations-model-enginetype) | True | Required. The type of broker engine. Currently, Amazon MQ supports `ACTIVEMQ` and `RABBITMQ`. |
-| engineVersion | string | False | The broker engine version. Defaults to the latest available version for the specified broker engine type. For more information, see the [ActiveMQ version management](https://docs.aws.amazon.com//amazon-mq/latest/developer-guide/activemq-version-management.html) and the [RabbitMQ version management](https://docs.aws.amazon.com//amazon-mq/latest/developer-guide/rabbitmq-version-management.html) sections in the Amazon MQ Developer Guide. |
+| engineVersion | string | False | The broker engine version. Defaults to the latest available version for the specified broker engine type. For more information, see the [ActiveMQ version management](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/activemq-version-management.html) and the [RabbitMQ version management](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/rabbitmq-version-management.html) sections in the Amazon MQ Developer Guide. |
 | name | string | True | Required. The name of the configuration. This value can contain only alphanumeric characters, dashes, periods, underscores, and tildes (- . \_ \~). This value must be 1-150 characters long. |
 | tags | object | False | Create tags when creating the configuration. |
 

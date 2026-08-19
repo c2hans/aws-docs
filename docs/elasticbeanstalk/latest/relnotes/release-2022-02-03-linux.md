@@ -71,8 +71,6 @@ Be aware that at the time these release notes are published, the new platform ve
 ### Docker
 <a name="release-2022-02-03-linux.platforms.docker"></a>
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Docker  |  Docker Compose  |  Proxy Server  |
 | --- | --- | --- | --- | --- |
 |  ** Docker AL2 version 3.4.11** <br /> * 64bit Amazon Linux 2 v3.4.11 running Docker *  | 2.0.20220121 | 20.10.7-5 | 1.29.2 | nginx 1.20.0 |
@@ -80,16 +78,12 @@ Be aware that at the time these release notes are published, the new platform ve
 ### Go
 <a name="release-2022-02-03-linux.platforms.go"></a>
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  AWS X-Ray  |  Proxy Server  |
 | --- | --- | --- | --- | --- |
 |  ** Go 1 AL2 version 3.4.5** <br /> * 64bit Amazon Linux 2 v3.4.5 running Go 1 *  | 2.0.20220121 | Go 1.17.6 | 3.2.0 | nginx 1.20.0 |
 
 ### Java SE
 <a name="release-2022-02-03-linux.platforms.javase"></a>
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  Tools  |  AWS X-Ray  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- |
@@ -99,8 +93,6 @@ Be aware that at the time these release notes are published, the new platform ve
 ### Tomcat
 <a name="release-2022-02-03-linux.platforms.java"></a>
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  AWS X-Ray  |  Application Server  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Corretto 11 with Tomcat 8.5 AL2 version 4.2.11** <br /> * 64bit Amazon Linux 2 v4.2.11 running Tomcat 8.5 Corretto 11 *  | 2.0.20220121 | Corretto 11.0.13.8.2 | 3.2.0 | Tomcat 8.5.72 | nginx 1.20.0 (default), Apache 2.4.52 |
@@ -109,16 +101,12 @@ Be aware that at the time these release notes are published, the new platform ve
 ### .NET Core on Linux
 <a name="release-2022-02-03-linux.platforms.dotnetlinux"></a>
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET Core on AL2 version 2.2.10** <br /> * 64bit Amazon Linux 2 v2.2.10 running .NET Core *  | .NET 5.0.13, supports 5.0.13, 3.1.22, 2.1.30 | nginx 1.20.0 | 2.0.20220121 | 3.2.0 |
 
 ### Node.js
 <a name="release-2022-02-03-linux.platforms.nodejs"></a>
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -128,8 +116,6 @@ Be aware that at the time these release notes are published, the new platform ve
 ### PHP
 <a name="release-2022-02-03-linux.platforms.PHP"></a>
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  Composer  |  Proxy Server  |
 | --- | --- | --- | --- | --- |
 |  ** PHP 8.0 AL2 version 3.3.10** <br /> * 64bit Amazon Linux 2 v3.3.10 running PHP 8.0 *  | 2.0.20220121 | PHP 8.0.13 | 2.0.13 | nginx 1.20.0 (default), Apache 2.4.52 |
@@ -138,8 +124,6 @@ Be aware that at the time these release notes are published, the new platform ve
 ### Python
 <a name="release-2022-02-03-linux.platforms.python"></a>
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  Package Manager  |  Packager  |  meld3  |  AWS X-Ray  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  ** Python 3.8 AL2 version 3.3.10** <br /> * 64bit Amazon Linux 2 v3.3.10 running Python 3.8 *  | 2.0.20220121 | Python 3.8.5 | pipenv 2021.11.9 |  |  | 3.2.0 | nginx 1.20.0 (default), Apache 2.4.52 |
@@ -147,8 +131,6 @@ Be aware that at the time these release notes are published, the new platform ve
 
 ### Ruby
 <a name="release-2022-02-03-linux.platforms.ruby"></a>
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  Package Manager  |  Application Server  |  AWS X-Ray  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- | --- |

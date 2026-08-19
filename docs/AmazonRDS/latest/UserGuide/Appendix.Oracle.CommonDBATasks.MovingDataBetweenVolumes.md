@@ -25,8 +25,6 @@ To move data files between storage volumes, use the Amazon RDS procedure `rdsadm
 
 The `move_datafile` procedure has the following parameters.
 
-****
-
 | Parameter name | Data type | Required | Description |
 | --- | --- | --- | --- |
 | `p_data_file_id` | number | Yes | The ID of the data file to be moved. |

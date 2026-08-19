@@ -9,13 +9,13 @@ The AWS CloudHSM OpenSSL Provider allows you to offload TLS cryptographic operat
 
 Use the following sections to install and configure the AWS CloudHSM OpenSSL Provider, using Client SDK 5.
 
-**Warning**
- Integration with OpenSSL CLI is not currently supported by AWS CloudHSM OpenSSL Provider. See [AWS CloudHSM SSL/TLS offload on Linux using NGINX or HAProxy with OpenSSL Provider](third-offload-linux-openssl-provider.md) for supported integrations.
+**OpenSSL version requirement for ML-DSA**
+ML-DSA key types require OpenSSL 3.5 or later.
 
 ## Supported platforms
 <a name="openssl-provider-supported-platforms"></a>
 
-The OpenSSL Provider requires OpenSSL 3.2 or later, available on EL9\+, Ubuntu 24.04\+, and Amazon Linux 2023\+.
+The OpenSSL Provider requires OpenSSL 3.2 or later, available on EL9\+, EL10\+, Ubuntu 26.04 LTS, and Amazon Linux 2023\+.
 
 Verify compatibility: `openssl version`
 

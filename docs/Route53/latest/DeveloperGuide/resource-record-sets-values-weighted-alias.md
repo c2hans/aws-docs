@@ -90,14 +90,14 @@ You can't create non-weighted records that have the same values for **Record nam
 
 Enter an integer between 0 and 255. To disable routing to a resource, set **Weight** to 0. If you set **Weight** to 0 for all of the records in the group, traffic is routed to all resources with equal probability. This ensures that you don't accidentally disable routing for a group of weighted records.
 
-The effect of setting **Weight** to 0 is different when you associate health checks with weighted records. For more information, see [How Amazon Route 53 chooses records when health checking is configuredHow Route 53 chooses records when health checking is configured](health-checks-how-route-53-chooses-records.md).
+The effect of setting **Weight** to 0 is different when you associate health checks with weighted records. For more information, see [How Amazon Route 53 chooses records when health checking is configured](health-checks-how-route-53-chooses-records.md).
 
 ## Health check
 <a name="rrsets-values-weighted-alias-associate-with-health-check"></a>
 
 Select a health check if you want Route 53 to check the health of a specified endpoint and to respond to DNS queries using this record only when the endpoint is healthy.
 
-Route 53 doesn't check the health of the endpoint specified in the record, for example, the endpoint specified by the IP address in the **Value** field. When you select a health check for a record, Route 53 checks the health of the endpoint that you specified in the health check. For information about how Route 53 determines whether an endpoint is healthy, see [How Amazon Route 53 determines whether a health check is healthyHow Route 53 determines whether a health check is healthy](dns-failover-determining-health-of-endpoints.md).
+Route 53 doesn't check the health of the endpoint specified in the record, for example, the endpoint specified by the IP address in the **Value** field. When you select a health check for a record, Route 53 checks the health of the endpoint that you specified in the health check. For information about how Route 53 determines whether an endpoint is healthy, see [How Amazon Route 53 determines whether a health check is healthy](dns-failover-determining-health-of-endpoints.md).
 
 Associating a health check with a record is useful only when Route 53 is choosing between two or more records to respond to a DNS query, and you want Route 53 to base the choice in part on the status of a health check. Use health checks only in the following configurations:
 + You're checking the health of all of the records in a group of records that have the same name, type, and routing policy (such as failover or weighted records), and you specify health check IDs for all the records. If the health check for a record specifies an endpoint that is not healthy, Route 53 stops responding to queries using the value for that record.

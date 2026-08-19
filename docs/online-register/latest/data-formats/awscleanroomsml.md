@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsc
 
 AWS Clean Rooms ML provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="cleanrooms-ml-GetAudienceGenerationJob"></a>[GetAudienceGenerationJob](https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_GetAudienceGenerationJob.html) | Return information about an audience generation job | Read |

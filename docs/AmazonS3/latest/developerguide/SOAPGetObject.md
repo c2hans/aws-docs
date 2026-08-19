@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/SOAPGetOb
 The `GetObject` operation returns the current version of an object. If you try to `GetObject` an object that has a delete marker as its current version, S3 returns a 404 error. You cannot use the SOAP API to retrieve a specified version of an object. To do that, use the REST API. For more information, see [Versioning](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Versioning.html). For more options, use the [GetObjectExtended (SOAP API)](SOAPGetObjectExtended.md) operation.
 
 **Note**
-Object key names with the value "soap" aren't supported for [virtual-hosted-style requests](https://docs.aws.amazon.com/AmazonS3/latest/userguide/VirtualHosting.html#virtual-hosted-style-access). For object key name values where "soap" is used, a [path-style URL](https://docs.aws.amazon.com//AmazonS3/latest/userguide/VirtualHosting.html#path-style-access) must be used instead.
+Object key names with the value "soap" aren't supported for [virtual-hosted-style requests](https://docs.aws.amazon.com/AmazonS3/latest/userguide/VirtualHosting.html#virtual-hosted-style-access). For object key name values where "soap" is used, a [path-style URL](https://docs.aws.amazon.com/AmazonS3/latest/userguide/VirtualHosting.html#path-style-access) must be used instead.
 
 **Example**
 This example gets the "Nelson" object from the "quotes" bucket.

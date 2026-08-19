@@ -183,7 +183,7 @@ service := ecs.NewEc2Service(stack, jsii.String("MyService"), &ecs.Ec2ServicePro
 ### Referencing resources in a different stack
 <a name="resource-stack"></a>
 
-You can refer to resources in a different stack as long as they are defined in the same app and are in the same AWS environment. The following pattern is generally used:
+You can refer to resources in a different stack, as long as they are defined in the same app. The stacks can be in the same or different AWS environments (accounts and regions). The following pattern is generally used:
 + Store a reference to the construct as an attribute of the stack that produces the resource. (To get a reference to the current construct’s stack, use `Stack.of(this)`.)
 + Pass this reference to the constructor of the stack that consumes the resource as a parameter or a property. The consuming stack then passes it as a property to any construct that needs it.
 
@@ -258,14 +258,313 @@ var stack2 = new StackThatExpectsABucket(app, "Stack2", new StackProps { Env = p
     bucket = stack1.Bucket});
 ```
 
-If the AWS CDK determines that the resource is in the same environment, but in a different stack, it automatically synthesizes AWS CloudFormation [exports](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-stack-exports.html) in the producing stack and an [`Fn::ImportValue`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-importvalue.html) in the consuming stack to transfer that information from one stack to the other.
+If the AWS CDK determines that the resource is in the same environment, but in a different stack, it automatically synthesizes AWS CloudFormation [exports](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-stack-exports.html) in the producing stack and an [`Fn::ImportValue`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-importvalue.html) in the consuming stack to transfer that information from one stack to the other. This is a **strong** reference—the default behavior. You can control the strength of cross-stack references to avoid dependency deadlocks.
 
-#### Resolving dependency deadlocks
+#### Reference strength
+<a name="resources-reference-strength"></a>
+
+Every cross-stack reference has a **strength** that determines the CloudFormation mechanism used and the coupling between stacks:
+
+ **Strong** (default)
+The producing stack creates a CloudFormation export and the consuming stack uses `Fn::ImportValue`. This means the producing stack cannot be updated to remove the export while any consumer still imports it. CloudFormation enforces this constraint.
+
+ **Weak**
+The consuming stack uses [`Fn::GetStackOutput`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-getstackoutput.html) to read outputs directly from the producing stack. No export coupling is created; either stack can be updated or deleted independently.
+
+ **Both**
+A transitional state for migrating from strong to weak. The producing stack retains its export (so existing strong consumers aren’t broken), while the consuming stack switches to `Fn::GetStackOutput`.
+
+#### The dependency deadlock (deadly embrace)
 <a name="resources-deadlock"></a>
 
-Referencing a resource from one stack in a different stack creates a dependency between the two stacks. This makes sure that they’re deployed in the right order. After the stacks are deployed, this dependency is concrete. After that, removing the use of the shared resource from the consuming stack can cause an unexpected deployment failure. This happens if there is another dependency between the two stacks that force them to be deployed in the same order. It can also happen without a dependency if the producing stack is simply chosen by the CDK Toolkit to be deployed first. The AWS CloudFormation export is removed from the producing stack because it’s no longer needed, but the exported resource is still being used in the consuming stack because its update is not yet deployed. Therefore, deploying the producer stack fails.
+Strong references can create a deadlock that prevents stack updates. This happens because CloudFormation cannot remove an export while another stack still imports it—and the consuming stack cannot be updated to stop importing until the export already exists. You might see an error like:
 
-To break this deadlock, remove the use of the shared resource from the consuming stack. (This removes the automatic export from the producing stack.) Next, manually add the same export to the producing stack using exactly the same logical ID as the automatically generated export. Remove the use of the shared resource in the consuming stack and deploy both stacks. Then, remove the manual export (and the shared resource if it’s no longer needed) and deploy both stacks again. The stack’s [`exportValue()`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.Stack.html#exportwbrvalueexportedvalue-options) method is a convenient way to create the manual export for this purpose. (See the example in the linked method reference.)
+```
+Export Stack1:ExportsOutputFnGetAtt-****** cannot be deleted as it is in use by Stack2
+```
+
+This commonly occurs when you try to remove a shared resource or restructure your stacks. Weak references avoid this problem entirely, because they do not create exports.
+
+#### Controlling reference strength
+<a name="resources-controlling-strength"></a>
+
+You can control reference strength at three scopes: app-wide, per-resource, or per-usage.
+
+##### App-wide default
+<a name="_app_wide_default"></a>
+
+Set the following context key in `cdk.json` to change the default for all cross-stack references in the app:
+
+```
+{
+  "context": {
+    "@aws-cdk/core:defaultCrossStackReferences": "weak"
+  }
+}
+```
+
+##### Per-resource
+<a name="_per_resource"></a>
+
+Override the strength for all references pointing at a specific resource using `CrossStackReferences.of(resource).produce(strength)`:
+
+**Example**
+
+```
+declare const bucket: s3.Bucket;
+CrossStackReferences.of(bucket).produce(ReferenceStrength.WEAK);
+```
+
+```
+const { CrossStackReferences, ReferenceStrength } = require('aws-cdk-lib');
+
+CrossStackReferences.of(bucket).produce(ReferenceStrength.WEAK);
+```
+
+```
+from aws_cdk import CrossStackReferences, ReferenceStrength
+
+CrossStackReferences.of(bucket).produce(ReferenceStrength.WEAK)
+```
+
+```
+import software.amazon.awscdk.CrossStackReferences;
+import software.amazon.awscdk.ReferenceStrength;
+
+CrossStackReferences.of(bucket).produce(ReferenceStrength.WEAK);
+```
+
+```
+using Amazon.CDK;
+
+CrossStackReferences.Of(bucket).Produce(ReferenceStrength.WEAK);
+```
+
+```
+import "github.com/aws/aws-cdk-go/awscdk/v2"
+
+awscdk.CrossStackReferences_Of(bucket).Produce(awscdk.ReferenceStrength_WEAK)
+```
+
+All references to `bucket` from other stacks will now use `Fn::GetStackOutput` regardless of the app-wide default.
+
+##### Per-usage
+<a name="_per_usage"></a>
+
+Override the strength of a single reference at the point of consumption using `Stack.consumeReference()`:
+
+**Example**
+
+```
+declare const topic: sns.Topic;
+
+const consumer = new Stack(app, 'Consumer', {
+  env: { account: '123456789012', region: 'us-east-1' },
+});
+new sns.Subscription(consumer, 'Subscription', {
+  topic: sns.Topic.fromTopicArn(consumer, 'Topic',
+    Stack.consumeReference(topic.topicArn, ReferenceStrength.WEAK)),
+  endpoint: 'https://example.com/webhook',
+  protocol: sns.SubscriptionProtocol.HTTPS,
+});
+```
+
+```
+const { Stack, ReferenceStrength } = require('aws-cdk-lib');
+const sns = require('aws-cdk-lib/aws-sns');
+const subscriptions = require('aws-cdk-lib/aws-sns-subscriptions');
+
+const consumer = new Stack(app, 'Consumer', {
+  env: { account: '123456789012', region: 'us-east-1' },
+});
+new sns.Subscription(consumer, 'Subscription', {
+  topic: sns.Topic.fromTopicArn(consumer, 'Topic',
+    Stack.consumeReference(topic.topicArn, ReferenceStrength.WEAK)),
+  endpoint: 'https://example.com/webhook',
+  protocol: sns.SubscriptionProtocol.HTTPS,
+});
+```
+
+```
+from aws_cdk import Stack, ReferenceStrength
+import aws_cdk.aws_sns as sns
+
+consumer = Stack(app, "Consumer",
+    env=core.Environment(account="123456789012", region="us-east-1")
+)
+sns.Subscription(consumer, "Subscription",
+    topic=sns.Topic.from_topic_arn(consumer, "Topic",
+        Stack.consume_reference(topic.topic_arn, ReferenceStrength.WEAK)),
+    endpoint="https://example.com/webhook",
+    protocol=sns.SubscriptionProtocol.HTTPS
+)
+```
+
+```
+import software.amazon.awscdk.Stack;
+import software.amazon.awscdk.ReferenceStrength;
+import software.amazon.awscdk.services.sns.*;
+
+Stack consumer = new Stack(app, "Consumer", StackProps.builder()
+        .env(Environment.builder().account("123456789012").region("us-east-1").build())
+        .build());
+Subscription.Builder.create(consumer, "Subscription")
+        .topic(Topic.fromTopicArn(consumer, "Topic",
+            Stack.consumeReference(topic.getTopicArn(), ReferenceStrength.WEAK)))
+        .endpoint("https://example.com/webhook")
+        .protocol(SubscriptionProtocol.HTTPS)
+        .build();
+```
+
+```
+using Amazon.CDK;
+using Amazon.CDK.AWS.SNS;
+
+var consumer = new Stack(app, "Consumer", new StackProps
+{
+    Env = new Amazon.CDK.Environment { Account = "123456789012", Region = "us-east-1" }
+});
+new Subscription(consumer, "Subscription", new SubscriptionProps
+{
+    Topic = Topic.FromTopicArn(consumer, "Topic",
+        Stack.ConsumeReference(topic.TopicArn, ReferenceStrength.WEAK)),
+    Endpoint = "https://example.com/webhook",
+    Protocol = SubscriptionProtocol.HTTPS
+});
+```
+
+```
+import (
+  "github.com/aws/aws-cdk-go/awscdk/v2"
+  "github.com/aws/aws-cdk-go/awscdk/v2/awssns"
+  "github.com/aws/jsii-runtime-go"
+)
+
+consumer := awscdk.NewStack(app, jsii.String("Consumer"), &awscdk.StackProps{
+  Env: &awscdk.Environment{Account: jsii.String("123456789012"), Region: jsii.String("us-east-1")},
+})
+awssns.NewSubscription(consumer, jsii.String("Subscription"), &awssns.SubscriptionProps{
+  Topic: awssns.Topic_FromTopicArn(consumer, jsii.String("Topic"),
+    awscdk.Stack_ConsumeReference(topic.TopicArn(), awscdk.ReferenceStrength_WEAK)),
+  Endpoint: jsii.String("https://example.com/webhook"),
+  Protocol: awssns.SubscriptionProtocol_HTTPS,
+})
+```
+
+Use `Stack.consumeListReference()` for string list references.
+
+##### Scoped override
+<a name="_scoped_override"></a>
+
+You can also set the reference strength for a subtree of constructs using `CrossStackReferences.of(scope).consume(strength)`. All cross-stack references consumed within that scope will use the specified strength.
+
+#### Migrating from strong to weak references
+<a name="resources-migrating-strength"></a>
+
+If you already have deployed stacks with strong references, you cannot switch directly to weak—CloudFormation would fail because the export is still in use. Instead, use a two-phase migration through the `BOTH` transitional state.
+
+Which API to use depends on your goal:
++  **Removing a single reference** (but keeping both stacks and the resource in place)—use `Stack.consumeReference()` to weaken only that specific usage.
++  **Removing or restructuring the producing resource**—use `CrossStackReferences.of(producer).produce()` to weaken all references pointing at that resource at once.
+
+Both approaches follow the same two-phase pattern described below. The examples show the per-resource approach. For per-usage, wrap the reference with `Stack.consumeReference(ref, ReferenceStrength.BOTH)` in Phase 1 and `Stack.consumeReference(ref, ReferenceStrength.WEAK)` in Phase 2.
+
+##### Phase 1: Deploy with `BOTH`
+<a name="_phase_1_deploy_with_both"></a>
+
+Switch the reference strength to `BOTH`. This makes the consuming stack start using `Fn::GetStackOutput`, but keeps the export in the producing stack so the transition is safe:
+
+**Example**
+
+```
+declare const bucket: s3.Bucket;
+CrossStackReferences.of(bucket).produce(ReferenceStrength.BOTH);
+```
+
+```
+const { CrossStackReferences, ReferenceStrength } = require('aws-cdk-lib');
+
+CrossStackReferences.of(bucket).produce(ReferenceStrength.BOTH);
+```
+
+```
+from aws_cdk import CrossStackReferences, ReferenceStrength
+
+CrossStackReferences.of(bucket).produce(ReferenceStrength.BOTH)
+```
+
+```
+import software.amazon.awscdk.CrossStackReferences;
+import software.amazon.awscdk.ReferenceStrength;
+
+CrossStackReferences.of(bucket).produce(ReferenceStrength.BOTH);
+```
+
+```
+using Amazon.CDK;
+
+CrossStackReferences.Of(bucket).Produce(ReferenceStrength.BOTH);
+```
+
+```
+import "github.com/aws/aws-cdk-go/awscdk/v2"
+
+awscdk.CrossStackReferences_Of(bucket).Produce(awscdk.ReferenceStrength_BOTH)
+```
+
+Deploy both stacks.
+
+##### Phase 2: Deploy with `WEAK`
+<a name="_phase_2_deploy_with_weak"></a>
+
+Now that no consumer uses `Fn::ImportValue`, the export can be safely removed. Switch to `WEAK`:
+
+**Example**
+
+```
+declare const bucket: s3.Bucket;
+CrossStackReferences.of(bucket).produce(ReferenceStrength.WEAK);
+```
+
+```
+const { CrossStackReferences, ReferenceStrength } = require('aws-cdk-lib');
+
+CrossStackReferences.of(bucket).produce(ReferenceStrength.WEAK);
+```
+
+```
+from aws_cdk import CrossStackReferences, ReferenceStrength
+
+CrossStackReferences.of(bucket).produce(ReferenceStrength.WEAK)
+```
+
+```
+import software.amazon.awscdk.CrossStackReferences;
+import software.amazon.awscdk.ReferenceStrength;
+
+CrossStackReferences.of(bucket).produce(ReferenceStrength.WEAK);
+```
+
+```
+using Amazon.CDK;
+
+CrossStackReferences.Of(bucket).Produce(ReferenceStrength.WEAK);
+```
+
+```
+import "github.com/aws/aws-cdk-go/awscdk/v2"
+
+awscdk.CrossStackReferences_Of(bucket).Produce(awscdk.ReferenceStrength_WEAK)
+```
+
+Deploy both stacks. The export is removed and the reference is now fully weak.
+
+After this migration, you can freely remove, move, or restructure the resource without hitting the deadly embrace.
+
+#### Manual workaround (legacy)
+<a name="resources-deadlock-manual"></a>
+
+If you are not yet using reference strength controls, you can work around the deadlock manually. Remove the use of the shared resource from the consuming stack. Then manually add the same export to the producing stack using exactly the same logical ID as the automatically generated export. Deploy both stacks to remove the `Fn::ImportValue`. Then remove the manual export (and the shared resource if it’s no longer needed) and deploy both stacks again. The stack’s [`exportValue()`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.Stack.html#exportwbrvalueexportedvalue-options) method is a convenient way to create the manual export for this purpose.
 
 ### Referencing resources in your AWS account
 <a name="resources-external"></a>

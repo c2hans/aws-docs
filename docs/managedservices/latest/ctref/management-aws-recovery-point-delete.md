@@ -14,8 +14,6 @@ Delete one or more recovery points (snapshots) from the specified vault. Use thi
 ## Change Type Details
 <a name="ct-1r1vbr8ahr156-MARd-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1r1vbr8ahr156 |

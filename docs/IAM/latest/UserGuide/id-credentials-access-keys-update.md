@@ -48,7 +48,7 @@ You can update access keys from the AWS Management Console.
 
 1. Use only the new access key to confirm that your applications are working. Any applications and tools that still use the original access key will stop working at this point because they no longer have access to AWS resources. If you find such an application or tool, you can reactivate the first access key. Then return to [Step 3](#id_credentials_access-keys-key-still-in-use) and update this application to use the new key.
 
-1. After you wait some period of time to ensure that all applications and tools have been updated, you can delete the first access key:
+1. After you wait some period of time to make sure that all applications and tools have been updated, you can delete the first access key:
 
    1. Sign in to the AWS Management Console and open the IAM console at [https://console.aws.amazon.com/iam/](https://console.aws.amazon.com/iam/).
 
@@ -98,7 +98,7 @@ You can update access keys from the AWS Command Line Interface.
 
 1. Use only the new access key to confirm that your applications are working. Any applications and tools that still use the original access key will stop working at this point because they no longer have access to AWS resources. If you find such an application or tool, you can switch its state back to `Active` to reactivate the first access key. Then return to step [Step 2](#step-update-apps) and update this application to use the new key.
 
-1. After you wait some period of time to ensure that all applications and tools have been updated, you can delete the first access key with this command:
+1. After you wait some period of time to make sure that all applications and tools have been updated, you can delete the first access key with this command:
    + [`aws iam delete-access-key`](https://docs.aws.amazon.com/cli/latest/reference/iam/delete-access-key.html)
 
 ## Updating access keys (AWS API)
@@ -125,5 +125,5 @@ You can update access keys using the AWS API.
 
 1. Use only the new access key to confirm that your applications are working. Any applications and tools that still use the original access key will stop working at this point because they no longer have access to AWS resources. If you find such an application or tool, you can switch its state back to `Active` to reactivate the first access key. Then return to step [Step 2](#step-update-apps-2) and update this application to use the new key.
 
-1. After you wait some period of time to ensure that all applications and tools have been updated, you can delete the first access key by calling this operation:
+1. After you wait some period of time to make sure that all applications and tools have been updated, you can delete the first access key by calling this operation:
    + [`DeleteAccessKey`](https://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteAccessKey.html)

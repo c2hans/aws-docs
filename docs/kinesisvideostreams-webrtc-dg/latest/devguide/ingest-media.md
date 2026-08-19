@@ -31,14 +31,14 @@ Chrome is currently the only supported browser.
      Complete the following fields:
      + **Access Key ID**
      + **Secret Access Key**
-     + **Session Token** - The sample application supports both temporary and long-term credentials. Leave this field blank if you're using long-term IAM credentials. See [Temporary security credentials in IAM](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_credentials_temp.html) for more information.
+     + **Session Token** - The sample application supports both temporary and long-term credentials. Leave this field blank if you're using long-term IAM credentials. See [Temporary security credentials in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp.html) for more information.
    + **Signaling Channel** - In the **Channel Name** field, type the name of the signaling channel you configured earlier. For more information, see [Configure destination](configure-ingestion.md).
    + **Tracks** - Select **Send Video** and **Send Audio**.
-   + **WebRTC Ingestion and Storage** - Expand the node and select **Automatically determine ingestion mode**. This option makes the sample application call the [DescribeMediaStorageConfiguration](https://docs.aws.amazon.com//kinesisvideostreams/latest/dg/API_DescribeMediaStorageConfiguration.html) API to determine in which mode to run.
+   + **WebRTC Ingestion and Storage** - Expand the node and select **Automatically determine ingestion mode**. This option makes the sample application call the [DescribeMediaStorageConfiguration](https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/API_DescribeMediaStorageConfiguration.html) API to determine in which mode to run.
 
 1. Select **Start Master**.
 
-   If the signaling channel is configured for ingestion using the [DescribeMediaStorageConfiguration](https://docs.aws.amazon.com//kinesisvideostreams/latest/dg/API_DescribeMediaStorageConfiguration.html) API, the sample application will automatically invoke the [JoinStorageSession](https://docs.aws.amazon.com//kinesisvideostreams/latest/dg/API_webrtc_JoinStorageSession.html) API immediately after connecting to the Signaling channel to start the WebRTC ingestion workflow.
+   If the signaling channel is configured for ingestion using the [DescribeMediaStorageConfiguration](https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/API_DescribeMediaStorageConfiguration.html) API, the sample application will automatically invoke the [JoinStorageSession](https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/API_webrtc_JoinStorageSession.html) API immediately after connecting to the Signaling channel to start the WebRTC ingestion workflow.
 
 ## Ingest media from WebRTC C SDK
 <a name="ingest-webrtc-sdk"></a>
@@ -80,7 +80,7 @@ Follow the [Amazon Kinesis Video Streams with WebRTC SDK in C for embedded devic
 This starts WebRTC ingestion.
 
 **Note**
-Your supplied signaling channel must be configured for storage. Use the [DescribeMediaStorageConfiguration](https://docs.aws.amazon.com//kinesisvideostreams/latest/dg/API_DescribeMediaStorageConfiguration.html) API to confirm.
+Your supplied signaling channel must be configured for storage. Use the [DescribeMediaStorageConfiguration](https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/API_DescribeMediaStorageConfiguration.html) API to confirm.
 
 ## Add viewers to the ingestion session
 <a name="ingest-add-viewers"></a>
@@ -108,17 +108,17 @@ Chrome is the only supported browser.
      Complete the following fields:
      + **Access Key ID**
      + **Secret Access Key**
-     + **Session Token** - The sample application supports both temporary and long-term credentials. Leave this field blank if you're using long-term IAM credentials. See [Temporary security credentials in IAM](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_credentials_temp.html) for more information.
+     + **Session Token** - The sample application supports both temporary and long-term credentials. Leave this field blank if you're using long-term IAM credentials. See [Temporary security credentials in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp.html) for more information.
    + **Signaling Channel** - In the **Channel Name** field, type the name of the signaling channel you configured earlier. For more information, see [Configure destination](configure-ingestion.md).
    + **Tracks** - Select **Send Audio**. Note that if **Send Video** is checked, it will automatically be unchecked when choosing **Start Viewer**.
-   + **WebRTC Ingestion and Storage** - Expand the node and select **Automatically determine ingestion mode**. This option makes the sample application call the [DescribeMediaStorageConfiguration](https://docs.aws.amazon.com//kinesisvideostreams/latest/dg/API_DescribeMediaStorageConfiguration.html) API to determine in which mode to run.
+   + **WebRTC Ingestion and Storage** - Expand the node and select **Automatically determine ingestion mode**. This option makes the sample application call the [DescribeMediaStorageConfiguration](https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/API_DescribeMediaStorageConfiguration.html) API to determine in which mode to run.
 
 1. Select **Start Viewer**.
 
-   The application automatically calls the [JoinStorageSessionAsViewer](https://docs.aws.amazon.com//kinesisvideostreams/latest/dg/API_webrtc_JoinStorageSessionAsViewer.html) API immediately after connecting to the signaling channel to trigger an SDP offer send to the viewer from the session.
+   The application automatically calls the [JoinStorageSessionAsViewer](https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/API_webrtc_JoinStorageSessionAsViewer.html) API immediately after connecting to the signaling channel to trigger an SDP offer send to the viewer from the session.
 
 **Note**
-With peer-to-peer WebRTC, the viewer participant is the controlling peer and the master participant is the controlled peer. In WebRTC ingestion mode, the storage session is now the controlling peer. After connecting to signaling and invoking [JoinStorageSessionAsViewer](https://docs.aws.amazon.com//kinesisvideostreams/latest/dg/API_webrtc_JoinStorageSessionAsViewer.html), the viewer will need to respond to the SDP offer and establish a connection to the storage session through WebRTC.
+With peer-to-peer WebRTC, the viewer participant is the controlling peer and the master participant is the controlled peer. In WebRTC ingestion mode, the storage session is now the controlling peer. After connecting to signaling and invoking [JoinStorageSessionAsViewer](https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/API_webrtc_JoinStorageSessionAsViewer.html), the viewer will need to respond to the SDP offer and establish a connection to the storage session through WebRTC.
 
 **Note**
 The storage session will only send `TURN` candidates. When nominating an ICE candidate pair from the perspective of participants, the remote candidate will always be of type `relay`.

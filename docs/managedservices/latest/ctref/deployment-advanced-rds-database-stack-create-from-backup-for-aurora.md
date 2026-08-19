@@ -14,8 +14,6 @@ Create an AWS Relational Database Service (RDS) Aurora stack from AWS Backup.
 ## Change Type Details
 <a name="ct-2wllq61djysxz-DARc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2wllq61djysxz |

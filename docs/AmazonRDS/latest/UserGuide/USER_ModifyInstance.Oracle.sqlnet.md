@@ -21,8 +21,6 @@ For information about managing parameter groups and setting parameter values, se
 
 Amazon RDS supports the following sqlnet.ora parameters. Changes to dynamic sqlnet.ora parameters take effect immediately.
 
-****
-
 | Parameter | Valid values | Static/Dynamic | Description |
 | --- | --- | --- | --- |
 | `sqlnetora.default_sdu_size` | `512` to `2097152`  | Dynamic | The session data unit (SDU) size, in bytes. <br />The SDU is the amount of data that is put in a buffer and sent across the network at one time. |

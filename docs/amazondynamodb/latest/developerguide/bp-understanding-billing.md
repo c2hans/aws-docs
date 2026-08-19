@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-
 
 AWS provides cost and usage reports (CUR) that contain data for the services used. You can use AWS Cost and Usage Report to publish billing reports to Amazon S3 in a CSV format. When setting up the CUR you can choose to break time periods down by hour, day, or month, and you can choose if you want to break out usage by resource ID or not. For more details on generating CUR, please see [Creating Cost and Usage Reports](https://docs.aws.amazon.com/cur/latest/userguide/creating-cur.html)
 
-Within the CSV export, you will find relevant attributes listed for each line. The following are examples of attributes that may be included:
+Within the CSV export, you will find relevant attributes listed for each line. The following are examples of attributes that might be included:
 + **lineitem/UsageStartDate: **The start date and time for the line item in UTC, inclusive.
 + **lineitem/UsageEndDate: **The end date and time for the corresponding line item in UTC, exclusive.
 + **lineitem/ProductCode: **For DynamoDB this will be “AmazonDynamoDB”
@@ -25,8 +25,6 @@ For more information about the CUR data dictionary, see [Cost and Usage Report (
 A `UsageType` is a string with a value such as `ReadCapacityUnit-Hrs`, `USW2-ReadRequestUnits`, `EU-WriteCapacityUnit-Hrs`, or `USE1-TimedPITRStorage-ByteHrs`. Each usage type begins with an optional Region prefix. If absent, that indicates the us-east-1 Region. If present, the below table maps the short billing Region code to the conventional Region code and name.
 
 For example, the usage named `USW2-ReadRequestUnits` indicates read request units consumed in us-west-2.
-
-****
 
 | Billing Region Code | Region Code | Region Name |
 | --- | --- | --- |
@@ -80,8 +78,6 @@ In the following sections, we use `REG-UsageType` pattern when going through the
 
 When you create a DynamoDB table in provisioned capacity mode, you specify the read and write capacity that you expect your application to require. The usage type depends on your table class (Standard or Standard-Infrequent Access). You provision read and writes based on consumption rate per second, but the charges are priced per hour based on provisioned capacity.
 
-****
-
 | UsageType | Units | Granularity | Description |
 | --- | --- | --- | --- |
 | REG-ReadCapacityUnit-Hrs | RCU-hours | Hour | Charges for reads in provisioned capacity mode using the Standard table class. |
@@ -93,8 +89,6 @@ When you create a DynamoDB table in provisioned capacity mode, you specify the r
 
 With reserved capacity, you pay a one-time upfront fee and commit to a minimum provisioned usage level over a period of time. Reserved capacity is billed at a discounted hourly rate. Any capacity that you provision in excess of your reserved capacity is billed at standard provisioned capacity rates. Reserved capacity is available for single-region, provisioned read and write capacity units (RCU and WCU) on DynamoDB tables that use the standard table class. Both 1-year and 3-year reserved capacity are billed using the same SKUs.
 
-****
-
 | UsageType | Units | Granularity | Description |
 | --- | --- | --- | --- |
 | REG-HeavyUsage:dynamodb.read | RCU-hours | Up-front then monthly | Charges for reserved capacity reads: a one-time up-front charge and a monthly charge at the start of each month covering all the discounted committed RCU-hours during the month. Will have matching zero-cost REG-ReadCapacityUnit-Hrs line items. |
@@ -103,8 +97,6 @@ With reserved capacity, you pay a one-time upfront fee and commit to a minimum p
 **On-Demand Capacity Reads and Writes**
 
 When you create a DynamoDB table in on-demand capacity mode, you pay only for the reads and writes your application performs. The prices for read and write requests depend on your table class.
-
-****
 
 | UsageType | Units | Granularity | Description |
 | --- | --- | --- | --- |
@@ -123,8 +115,6 @@ Writes to global secondary indexes (GSIs) are billed using standard write units 
 
  When you select on-demand capacity mode for your DynamoDB global tables, you pay only for the resources your application uses on each replica table.
 
-****
-
 | UsageType | Units | Granularity | Description |
 | --- | --- | --- | --- |
 | REG-ReplWriteCapacityUnit-Hrs | rWCU-hours | Hour | Global table, provisioned, Standard table class. |
@@ -139,15 +129,11 @@ DynamoDB has two streaming technologies, DynamoDB Streams and Kinesis. Each have
 
 DynamoDB Streams charges for reading data in read request units. Each `GetRecords` API call is billed as a streams read request. You are not charged for `GetRecords` API calls invoked by AWS Lambda as part of DynamoDB triggers or by DynamoDB global tables as part of replication.
 
-****
-
 | UsageType | Units | Granularity | Description |
 | --- | --- | --- | --- |
 | REG-Streams-RequestsCount | Count | Unit | Read request units for DynamoDB Streams. |
 
 Amazon Kinesis Data Streams charges in change data capture units. DynamoDB charges one change data capture unit for each write (up to 1 KB). For items larger than 1 KB, additional change data capture units are required. You pay only for the writes your application performs without having to manage throughput capacity on the table.
-
-****
 
 | UsageType | Units | Granularity | Description |
 | --- | --- | --- | --- |
@@ -165,8 +151,6 @@ Storage is calculated hourly but priced monthly as calculated from an average of
 
 Although the storage `UsageType` uses `ByteHrs` as a suffix, storage usage in the CUR is measured in GB and priced by GB-month.
 
-****
-
 | UsageType | Units | Granularity | Description |
 | --- | --- | --- | --- |
 | REG-TimedStorage-ByteHrs | GB | Month | Amount of storage used by your DynamoDB tables and indexes, for tables with the Standard table class. |
@@ -179,8 +163,6 @@ DynamoDB offers two types of backups: Point In Time Recovery (PITR) backups and 
 
 Backup storage charges are incurred on the first of the month with adjustments made throughout the month as backups are added or removed. See the [Understanding Amazon DynamoDB On-demand Backups and Billing](https://repost.aws/articles/AR74LYumctRa-t7Z87uwKrlw) blog for more information
 
-****
-
 | UsageType | Units | Granularity | Description |
 | --- | --- | --- | --- |
 | REG-TimedBackupStorage-ByteHrs | GB | Month | The storage consumed by on-demand backups of your DynamoDB tables and Local Secondary Indexes. |
@@ -191,8 +173,6 @@ Backup storage charges are incurred on the first of the month with adjustments m
 <a name="bp-understanding-billing.aws-backup"></a>
 
 AWS Backup is a fully managed backup service that makes it easy to centralize and automate the backup of data across AWS services in the cloud as well as on premises. AWS Backup is charged for storage (warm or cold storage), restoration activities, and cross-Region data transfer. The following `UsageType` charges appear under the “AWSBackup” ProductCode rather than “AmazonDynamoDB”.
-
-****
 
 | UsageType | Units | Granularity | Description |
 | --- | --- | --- | --- |
@@ -209,8 +189,6 @@ AWS Backup is a fully managed backup service that makes it easy to centralize an
 
 Although the `UsageType` uses `Bytes` as a suffix, export and import usage in the CUR is measured and priced in GB.
 
-****
-
 | UsageType | Units | Granularity | Description |
 | --- | --- | --- | --- |
 | REG-ExportDataSize-Bytes | GB | Size | The charge for exporting data to S3. DynamoDB charges for data you export based on the size of the DynamoDB base table (table data and local secondary indexes) at the specified point in time when the export was created. |
@@ -220,9 +198,7 @@ Although the `UsageType` uses `Bytes` as a suffix, export and import usage in th
 ## Data Transfer
 <a name="bp-understanding-billing.datatransfer"></a>
 
-Data transfer activity may appear associated with the DynamoDB service. DynamoDB does not charge for inbound data transfer, and it does not charge for data transferred between DynamoDB and other AWS services within the same AWS Region (in other words, $0.00 per GB). Data transferred across AWS Regions (such as between DynamoDB in the US East [N. Virginia] Region and Amazon EC2 in the EU [Ireland] Region) is charged on both sides of the transfer.
-
-****
+Data transfer activity might appear associated with the DynamoDB service. DynamoDB does not charge for inbound data transfer, and it does not charge for data transferred between DynamoDB and other AWS services within the same AWS Region (in other words, $0.00 per GB). Data transferred across AWS Regions (such as between DynamoDB in the US East [N. Virginia] Region and Amazon EC2 in the EU [Ireland] Region) is charged on both sides of the transfer.
 
 | UsageType | Units | Granularity | Description |
 | --- | --- | --- | --- |
@@ -234,8 +210,6 @@ Data transfer activity may appear associated with the DynamoDB service. DynamoDB
 
 CloudWatch Contributor Insights for DynamoDB is a diagnostic tool for identifying the most frequently accessed and throttled keys in your DynamoDB table. The following `UsageType` charges appear under the “AmazonCloudWatch” ProductCode rather than “AmazonDynamoDB”.
 
-****
-
 | UsageType | Units | Granularity | Description |
 | --- | --- | --- | --- |
 | REG-CW:ContributorEventsManaged | Events processed | Units | The amount of DynamoDB events processed. For example for a table with CloudWatch Contributor Insights enabled, anytime an item is read or written, it’s counted as one event. If the table has a sort key, it results in charges for two events. |
@@ -245,8 +219,6 @@ CloudWatch Contributor Insights for DynamoDB is a diagnostic tool for identifyin
 <a name="bp-understanding-billing.dax"></a>
 
 DynamoDB Accelerator (DAX) is billed by the hour based on the instance type selected for the service. The charges below refers to the DynamoDB Accelerator instances provisioned. The following `UsageType` charges appear under the “AmazonDAX” ProductCode rather than “AmazonDynamoDB”.
-
-****
 
 | UsageType | Units | Granularity | Description |
 | --- | --- | --- | --- |

@@ -24,8 +24,6 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_arc-zonal-shift-actions-as-permissions).
 
-****
-
 - **   CancelPracticeRun  **
   - **IAM action:**  [arc-zonal-shift:CancelPracticeRun](#list_arc-zonal-shift-action-CancelPracticeRun)
   - **Condition key:**
@@ -120,8 +118,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
 <a name="list_arc-zonal-shift-actions-as-permissions"></a>
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
-
-****
 
 - **   [CancelPracticeRun](https://docs.aws.amazon.com/arc-zonal-shift/latest/api/API_CancelPracticeRun.html)  **
   - **Description:** Grants permission to cancel an active practice run
@@ -218,8 +214,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
 
-****
-
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
 |  [ALB](https://docs.aws.amazon.com/r53recovery/latest/dg/arc-zonal-shift.resource-types.html)  | arn:${Partition}:elasticloadbalancing:${Region}:${Account}:loadbalancer/app/${LoadBalancerName}/${LoadBalancerId} | [arc-zonal-shift:ResourceIdentifier](#list_arc-zonal-shift-arc-zonal-shift_ResourceIdentifier)<br />[aws:ResourceTag/${TagKey}](#list_arc-zonal-shift-aws_ResourceTag___TagKey_)<br />[elasticloadbalancing:ResourceTag/${TagKey}](#list_arc-zonal-shift-elasticloadbalancing_ResourceTag___TagKey_) |
@@ -229,8 +223,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_arc-zonal-shift-policy-keys"></a>
 
 Amazon Application Recovery Controller - Zonal Shift defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

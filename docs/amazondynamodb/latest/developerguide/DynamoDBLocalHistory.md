@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Dyn
 
 The following table describes the important changes in each release of *DynamoDB local*.
 
-****
-
 | Version | Change | Description | Date |
 | --- | --- | --- | --- |
 | 3.3.1 | Including PartiQL dependencies |  +  Adding PartiQL dependencies in pom.xml <br />+  Updating SDK Java version to the latest public version 2.48.3 <br />+  Upgrading dependencies to fix CVEs   | May 28, 2026 |

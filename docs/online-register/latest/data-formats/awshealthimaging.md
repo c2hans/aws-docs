@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsh
 
 AWS HealthImaging provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="medical-imaging-GetDICOMBulkdata"></a>[GetDICOMBulkdata](https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_dicom_GetDICOMBulkdata.html) | Get dicom bulkdata in binary format | Read |

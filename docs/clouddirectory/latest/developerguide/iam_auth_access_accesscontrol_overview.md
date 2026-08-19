@@ -24,8 +24,6 @@ An *account administrator* (or administrator user) is a user with administrator 
 
 In Cloud Directory, the primary resources are directories and schemas. These resources have unique Amazon Resource Names (ARNs) associated with them as shown in the following table.
 
-****
-
 | **Resource Type**  |  **ARN Format**  |
 | --- | --- |
 | Directory | `arn:aws:clouddirectory:{{region}}:{{account-id}}:directory/{{directory-id}}` |

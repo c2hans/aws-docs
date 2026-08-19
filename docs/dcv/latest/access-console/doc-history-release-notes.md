@@ -31,16 +31,12 @@ This section provides release notes for the Amazon DCV Access Console by release
 ### 2025.0-175 — February 2, 2026
 <a name="2025.0-175"></a>
 
-****
-
 | Build numbers | Release notes |
 | --- | --- |
 | Version: 2025.0-175+ Web Client: 175<br />+ Handler: 175<br />+ Authentication Server: 175<br />+ Setup Wizard: 175 |  +  Added `jwt-default-groups-claim-key` and `jwt-role-claim-key` parameters in the Handler configuration to support role and group assignment from external OAuth claims. <br />+  Added `loginUsername` support to CSV user import. <br />+  Replaced `userId` values with `loginUsername` values for display throughout the user interface and added support for filtering and sorting on these values.   |
 
 ### 2025.0-168 — December 23, 2025
 <a name="2025.0-168"></a>
-
-****
 
 | Build numbers | Release notes |
 | --- | --- |
@@ -49,16 +45,12 @@ This section provides release notes for the Amazon DCV Access Console by release
 ### 2025.0-159 — November 12, 2025
 <a name="2025.0-159"></a>
 
-****
-
 | Build numbers | Release notes |
 | --- | --- |
 | Version: 2025.0-159+ Web Client: 159<br />+ Handler: 159<br />+ Authentication Server: 159<br />+ Setup Wizard: 159 |  +  Added support for macOS hosts. <br />+  Fixed token expiration handling to support both seconds and milliseconds timestamp formats, preventing token expiration issues.   |
 
 ### 2025.0-155 — October 23, 2025
 <a name="2025.0-155"></a>
-
-****
 
 | Build numbers | Release notes |
 | --- | --- |
@@ -67,16 +59,12 @@ This section provides release notes for the Amazon DCV Access Console by release
 ### 2024.0-150 — June 17, 2025
 <a name="2024.0-150"></a>
 
-****
-
 | Build numbers | Release notes |
 | --- | --- |
 | Version: 2024.0-150+ Web Client: 150<br />+ Handler: 150<br />+ Authentication Server: 150<br />+ Setup Wizard: 150 |  +  Added parameters in the Handler and Web Client configuration files to support external OAuth providers. <br />+  Other fixes and performance improvements.   |
 
 ### 2024.0-135 — January 15, 2025
 <a name="2024.0-135"></a>
-
-****
 
 | Build numbers | Release notes |
 | --- | --- |
@@ -85,16 +73,12 @@ This section provides release notes for the Amazon DCV Access Console by release
 ### 2024.0-73 — October 1, 2024
 <a name="2024.0-73"></a>
 
-****
-
 | Build numbers | Release notes |
 | --- | --- |
 | Version: 2024.0-73+ Web Client: 73<br />+ Handler: 55<br />+ Authentication Server: 54<br />+ Setup Wizard: 50 |  + Rebranded NICE DCV to Amazon DCV.<br />+ Added support for Ubuntu 24.04.<br />+ Added functionality to make the Privacy link on the Sign In page configurable.<br />+ Bug fixes and performance improvements.  |
 
 ### 2023.1-57 — August 1, 2024
 <a name="2023.1-57"></a>
-
-****
 
 | Build numbers | Release notes |
 | --- | --- |
@@ -103,16 +87,12 @@ This section provides release notes for the Amazon DCV Access Console by release
 ### 2023.1-20 — June 26, 2024
 <a name="2023.1-20"></a>
 
-****
-
 | Build numbers | Release notes |
 | --- | --- |
 | Version: 2023.1-20+ Web Client: 20<br />+ Handler: 20<br />+ Authentication Server: 26<br />+ Setup Wizard: 20 |  + Added an error if **Creating a session** fails.<br />+ Bug fixes and performance improvements.  |
 
 ### 2023.1 — June 13, 2024
 <a name="2023.1"></a>
-
-****
 
 | Build numbers | Release notes |
 | --- | --- |
@@ -122,8 +102,6 @@ This section provides release notes for the Amazon DCV Access Console by release
 <a name="doc-history"></a>
 
 The following table describes the documentation for this release of Amazon DCV Access Console.
-
-****
 
 | Change | Description | Date |
 | --- | --- | --- |

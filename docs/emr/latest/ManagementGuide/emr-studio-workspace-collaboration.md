@@ -66,7 +66,6 @@ You won't see the **Collaboration** panel unless your Studio administator has gi
    The following table specifies the applicable collaborator values to enter based on the identity type of the owner.
 **Note**
 An owner can only invite collaborators with the same identity type. For example, a user can only add other a users, and an IAM Identity Center user can only add other IAM Identity Center users.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-studio-workspace-collaboration.html)
 
 1. Choose **Add**. The collaborator can now see the Workspace on their EMR Studio **Workspaces** page, and launch the Workspace to use it in real time with you.

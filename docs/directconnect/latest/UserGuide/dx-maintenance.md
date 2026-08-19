@@ -71,6 +71,8 @@ If you’ve configured your Direct Connect environment to be resilient, regularl
 
 You can also leverage Amazon CloudWatch Network Monitor to provide active monitoring of your Direct Connect connections. For more information, see [Monitor hybrid connectivity with Amazon CloudWatch Network Synthetic Monitor](https://aws.amazon.com/blogs/networking-and-content-delivery/monitor-hybrid-connectivity-with-amazon-cloudwatch-network-monitor/).
 
+You can also use the Network Resilience Agent, an open-source sample solution, to discover, visualize, and assess your Direct Connect topology against resiliency best practices. For more information, see [Network Resilience Agent](https://github.com/aws-samples/sample-network-resilience-agent) on GitHub.
+
 ## Requests for maintenance event postponement or cancellation
 <a name="operations-maintenance-rescehedule"></a>
 

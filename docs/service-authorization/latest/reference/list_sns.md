@@ -24,8 +24,6 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_sns-actions-as-permissions).
 
-****
-
 - **   AddPermission  **
   - **IAM action:**  [sns:AddPermission](#list_sns-action-AddPermission)
   - **Condition key:**
@@ -62,6 +60,7 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   CreateTopic  **
   - **IAM action:**  [sns:CreateTopic](#list_sns-action-CreateTopic)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [sns:PutDataProtectionPolicy](#list_sns-action-PutDataProtectionPolicy)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [sns:TagResource](#list_sns-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
   - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** sns.amazonaws.com / **Access level:** Write
 
@@ -269,8 +268,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
 <a name="list_sns-actions-as-permissions"></a>
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
-
-****
 
 - **   [AddPermission](https://docs.aws.amazon.com/sns/latest/api/API_AddPermission.html)  **
   - **Description:** Grants permission to add a statement to a topic's access control policy, granting access for the specified AWS accounts to the specified actions
@@ -523,8 +520,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
 
-****
-
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
 |  [topic](https://docs.aws.amazon.com/sns/latest/dg/CreateTopic.html)  | arn:${Partition}:sns:${Region}:${Account}:${TopicName} | [aws:ResourceTag/${TagKey}](#list_sns-aws_ResourceTag___TagKey_) |
@@ -533,8 +528,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_sns-policy-keys"></a>
 
 Amazon SNS defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

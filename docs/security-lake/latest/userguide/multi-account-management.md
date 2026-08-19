@@ -16,7 +16,7 @@ The delegated Security Lake administrator has access to log and event data for a
 To enable Security Lake for multiple accounts in an organization, the organization management account must first designate a delegated Security Lake administrator account for the organization. The delegated administrator can then enable and configure Security Lake for the organization.
 
 **Important**
-Use Security Lake's [RegisterDataLakeDelegatedAdministrator](https://docs.aws.amazon.com//security-lake/latest/APIReference/API_RegisterDataLakeDelegatedAdministrator.html) API to allow Security Lake access to your organization and register Organizations's delegated administrator.
+Use Security Lake's [RegisterDataLakeDelegatedAdministrator](https://docs.aws.amazon.com/security-lake/latest/APIReference/API_RegisterDataLakeDelegatedAdministrator.html) API to allow Security Lake access to your organization and register Organizations's delegated administrator.
 If you use Organizations' APIs to register a delegated administrator, service-linked roles for the Organizations might not be created successfully. To ensure full functionality, use the Security Lake APIs.
 
 For information about setting up Organizations, see [Creating and managing an organization](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_org.html) in the *AWS Organizations User Guide*.

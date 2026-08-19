@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon S3 provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="s3-AllowVendedLogDeliveryForResource"></a>[AllowVendedLogDeliveryForResource](https://docs.aws.amazon.com/AmazonS3/latest/userguide/ServerLogs.html) | Configure server access logs delivery to CloudWatch | Read |

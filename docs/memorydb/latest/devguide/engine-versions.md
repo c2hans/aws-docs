@@ -131,8 +131,6 @@ You initiate version upgrades to your cluster by modifying it using the MemoryDB
 
 As shown in the following table, your Redis OSS engine upgrade operation is blocked if you have a pending scale up operation.
 
-****
-
 - **Scale up**
   - Immediate engine upgrade
 

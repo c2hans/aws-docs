@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon Transcribe provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="transcribe-DescribeLanguageModel"></a>[DescribeLanguageModel](https://docs.aws.amazon.com/transcribe/latest/dg/API_DescribeLanguageModel.html) | Return information about a custom language model | Read |

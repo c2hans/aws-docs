@@ -36,8 +36,6 @@ The table in this section provides the source name for each integration partner 
 
 The information in the **Source name** column is required when calling the `CreateChannel` API. You specify the source name as the value for the `Source` parameter.
 
-****
-
 | Partner name (console) | Source name (API) | Integration type |
 | --- | --- | --- |
 | My custom integration | Custom | solution |

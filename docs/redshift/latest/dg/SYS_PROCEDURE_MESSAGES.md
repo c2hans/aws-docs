@@ -20,6 +20,7 @@ SYS\_PROCEDURE\_MESSAGES is visible to all users. Superusers can see all rows; r
 | log\_level | char(10) | The log level of the generated message. Possible values are LOG, INFO, NOTICE, WARNING, and EXCEPTION. |
 | message | char(1024) | The text of the generated message. |
 | line\_number | integer | The line number of the generated message. |
+| query\_uuid | character(36) | A globally unique identifier (UUID) of the query. |
 
 ## Sample queries
 <a name="SYS_PROCEDURE_MESSAGES-sample-queries"></a>

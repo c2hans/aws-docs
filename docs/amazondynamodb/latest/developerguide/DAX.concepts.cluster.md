@@ -140,8 +140,6 @@ Every cluster has a weekly maintenance window to apply system changes. As change
 
 If you don't specify a preferred maintenance window when you create or modify a cache cluster, DAX assigns a 60-minute maintenance window on a random weekday. This 60-minute maintenance window is randomly selected from an 8-hour block of time for each AWS Region. The following table lists the time blocks for each Region from which the default maintenance windows are assigned.
 
-****
-
 | Region code | Region name | Maintenance window |
 | --- | --- | --- |
 |  ap-northeast-1  |  Asia Pacific (Tokyo) Region  |  13:00–21:00 UTC  |

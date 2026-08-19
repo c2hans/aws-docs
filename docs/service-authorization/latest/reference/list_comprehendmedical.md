@@ -24,8 +24,6 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_comprehendmedical-actions-as-permissions).
 
-****
-
 - **   DescribeEntitiesDetectionV2Job  **
   - **IAM action:**  [comprehendmedical:DescribeEntitiesDetectionV2Job](#list_comprehendmedical-action-DescribeEntitiesDetectionV2Job)
   - **Condition key:**
@@ -171,8 +169,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
 
-****
-
 | Actions | Description | Resource types (\*required) | Condition keys | Access level |
 | --- | --- | --- | --- | --- |
 |   [DescribeEntitiesDetectionV2Job](https://docs.aws.amazon.com/comprehend-medical/latest/api/API_DescribeEntitiesDetectionV2Job.html)  | Grants permission to describe the properties of a medical entity detection job that you have submitted |  |   | Read |
@@ -210,8 +206,6 @@ Amazon Comprehend Medical does not support specifying a resource ARN in the `Res
 <a name="list_comprehendmedical-policy-keys"></a>
 
 Amazon Comprehend Medical defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

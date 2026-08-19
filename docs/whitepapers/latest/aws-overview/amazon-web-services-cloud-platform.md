@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/amazon-w
 
 AWS consists of many cloud services that you can use in combinations tailored to your business or organizational needs. This section introduces the major AWS services by category. Choose a category to explore its services.
 
-****
-
 |  |  |  |  |  |  |
 | --- |--- |--- |--- |--- |--- |
 | ![AWS Analytics category icon](http://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/analytics-icon.jpg)[Analytics](analytics.md) | ![AWS application integration category icon](http://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/application-integration-icon.jpg)[Application integration](application-integration.md) | ![AWS Blockchain category icon](http://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/blockchain-icon.jpg)[Blockchain](blockchain.md) | ![AWS Business Applications category icon](http://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/business-applications-icon.jpg)[Business applications](business-applications.md) | ![AWS Cloud Financial Management category icon](http://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/cost-management-icon.jpg)[Cloud Financial Management](aws-cost-management.md) | ![AWS Compute Services category icon](http://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/compute-icon.jpg)[Compute](compute-services.md) |

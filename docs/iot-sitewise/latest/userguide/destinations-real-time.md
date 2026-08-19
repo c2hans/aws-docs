@@ -255,7 +255,7 @@ Type: Object
 Required: Yes
 + `paths`
 
-  An array of path filters. For more information, see [Understand path filters for AWS IoT SiteWise Edge destinationsUnderstand path filters](gw-destinations.md#destinations-path-filters). The default path is `#`.
+  An array of path filters. For more information, see [Understand path filters for AWS IoT SiteWise Edge destinations](gw-destinations.md#destinations-path-filters). The default path is `#`.
 
   Type: Array of strings
 

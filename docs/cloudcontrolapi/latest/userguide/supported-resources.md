@@ -13,8 +13,6 @@ For information about how to determine if a specific resource type supports Clou
 
 Table last updated: December 23, 2025
 
-****
-
 | Resource | Create | Read | Update | Delete | List |
 | --- | --- | --- | --- | --- | --- |
 | [`AWS::AccessAnalyzer::Analyzer`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-accessanalyzer-analyzer.html) | Create | Read | Update | Delete | List |

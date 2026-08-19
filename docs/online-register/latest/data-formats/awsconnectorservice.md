@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsc
 
 AWS Connector Service provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="awsconnector-GetConnectorHealth"></a>[GetConnectorHealth](https://docs.aws.amazon.com/server-migration-service/latest/userguide/prereqs.html#connector-permissions) | Retrieves all health metrics that were published from the Server Migration Connector. | Read |

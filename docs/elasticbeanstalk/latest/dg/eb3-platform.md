@@ -48,8 +48,6 @@ Lists the versions of the current platform and enables you to manage custom plat
 ### Options
 <a name="eb3-platform-options"></a>
 
-****
-
 |  Name  |  Description  |
 | --- | --- |
 | `create [{{version}}] [{{options}}]` | Build a new version of the platform. [Learn more](#eb3-platform-create). |
@@ -66,8 +64,6 @@ Lists the versions of the current platform and enables you to manage custom plat
 <a name="eb3-platform-common"></a>
 
 All **eb platform** commands include the following common options.
-
-****
 
 |  Name  |  Description  |
 | --- | --- |
@@ -86,8 +82,6 @@ Builds a new version of the platform and returns the ARN for the new version. If
 
 #### Options
 <a name="eb3-platform-create-options"></a>
-
-****
 
 |  Name  |  Description  |
 | --- | --- |
@@ -111,8 +105,6 @@ Delete a platform version. The version isn't deleted if an environment is using 
 #### Options
 <a name="eb3-platform-delete-options"></a>
 
-****
-
 |  Name  |  Description  |
 | --- | --- |
 | `{{version}}` | The version to delete. This value is required. |
@@ -128,8 +120,6 @@ Display the events from a platform version. If {{version}} is specified, display
 #### Options
 <a name="eb3-platform-events-options"></a>
 
-****
-
 |  Name  |  Description  |
 | --- | --- |
 | {{version}} | The version for which events are displayed. This value is required. |
@@ -142,8 +132,6 @@ Initialize a platform repository.
 
 #### Options
 <a name="eb3-platform-init-options"></a>
-
-****
 
 |  Name  |  Description  |
 | --- | --- |
@@ -168,8 +156,6 @@ The command returns different results depending on the type of workspace you run
 #### Options
 <a name="eb3-platform-list-options"></a>
 
-****
-
 |  Name  |  Description  |
 | --- | --- |
 | `-a`<br />OR<br />`--all-platforms` | Valid only in an initialized workspace (a directory initialized by `eb platform init` or `eb init`). Lists the platform versions of all custom platforms associated with your account. |
@@ -182,8 +168,6 @@ Display logs from the builder environment for a platform version.
 
 #### Options
 <a name="eb3-platform-logs-options"></a>
-
-****
 
 |  Name  |  Description  |
 | --- | --- |
@@ -198,8 +182,6 @@ Display the status of the a platform version.
 #### Options
 <a name="eb3-platform-status-options"></a>
 
-****
-
 |  Name  |  Description  |
 | --- | --- |
 | `{{version}}` | The version of the platform for which the status is retrieved. If omitted, display the status of the current version. |
@@ -211,8 +193,6 @@ Select a different platform from which new versions are built.
 
 #### Options
 <a name="eb3-platform-use-options"></a>
-
-****
 
 |  Name  |  Description  |
 | --- | --- |
@@ -234,8 +214,6 @@ Lists supported platforms and enables you to set the default platform and platfo
 
 ### Options
 <a name="eb3-platformenvoptions"></a>
-
-****
 
 |  Name  |  Description  |
 | --- | --- |

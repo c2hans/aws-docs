@@ -103,10 +103,10 @@ All AppIntegrations quotas are at the Account level.
 | Name | Default | Adjustable |
 | --- | --- | --- |
 | Data integration associations per data integration | 10 | Yes |
-| Data integrations per Region | 10 | Yes |
+| Data integrations per Region | 20 | Yes |
 | Event integration associations per event integration | 10 | Yes |
 | Event integrations per Region | 10 | Yes |
-| Application per region (third-party application) | 25 | No |
+| Applications per Region | 50 | Yes |
 
 ## Connect Customer agent assist service quotas
 <a name="connect-ai-agents-quotas"></a>

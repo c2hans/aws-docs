@@ -13,7 +13,7 @@ A reference to an evaluator used for recommendation assessment.
  ** evaluatorArn **   <a name="BedrockAgentCore-Type-RecommendationEvaluatorReference-evaluatorArn"></a>
 The Amazon Resource Name (ARN) of the evaluator.
 Type: String
-Pattern: `arn:aws[a-zA-Z-]*:bedrock-agentcore:[a-z0-9-]+:[0-9]{12}:evaluator\/[a-zA-Z][a-zA-Z0-9-_]{0,99}-[a-zA-Z0-9]{10}$|^arn:aws[a-zA-Z-]*:bedrock-agentcore:::evaluator/Builtin.[a-zA-Z0-9_-]+`
+Pattern: `arn:aws[a-zA-Z-]*:bedrock-agentcore:[a-z0-9-]+:[0-9]{12}:evaluator\/[a-zA-Z][a-zA-Z0-9-_]{0,99}-[a-zA-Z0-9]{10}$|^arn:aws[a-zA-Z-]*:bedrock-agentcore:::evaluator/(Builtin|ThirdParty)\.[a-zA-Z0-9._-]+`
 Required: Yes
 
 ## See Also

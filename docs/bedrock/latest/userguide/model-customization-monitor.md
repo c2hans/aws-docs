@@ -36,4 +36,4 @@ To list all the tags for a model customization job, send a [ListTagsForResource]
 
 ------
 
-You can also monitor model customization jobs with Amazon EventBridge. For more information, see [Monitor Amazon Bedrock job state changes using Amazon EventBridgeMonitor event changes](monitoring-eventbridge.md).
+You can also monitor model customization jobs with Amazon EventBridge. For more information, see [Monitor Amazon Bedrock job state changes using Amazon EventBridge](monitoring-eventbridge.md).

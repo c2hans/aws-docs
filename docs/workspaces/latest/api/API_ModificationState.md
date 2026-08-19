@@ -11,9 +11,9 @@ Describes a WorkSpace modification.
 <a name="API_ModificationState_Contents"></a>
 
  ** Resource **   <a name="WorkSpaces-Type-ModificationState-Resource"></a>
-The resource.
+The WorkSpace property being modified.
 Type: String
-Valid Values: `ROOT_VOLUME | USER_VOLUME | COMPUTE_TYPE | PROTOCOL`
+Valid Values: `ROOT_VOLUME | USER_VOLUME | COMPUTE_TYPE | PROTOCOL | NESTED_VIRTUALIZATION`
 Required: No
 
  ** State **   <a name="WorkSpaces-Type-ModificationState-State"></a>

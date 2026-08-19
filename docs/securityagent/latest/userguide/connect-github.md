@@ -10,7 +10,7 @@ Connect your AWS Security Agent to GitHub repositories to enable code review, th
 GitHub integration serves multiple purposes:
 
 **Note**
-This page covers cloud-hosted GitHub (github.com) and cloud-hosted GitHub Enterprise. For self-hosted GitHub Enterprise Server, see [Connect AWS Security Agent to GitHub Enterprise Server](connect-github-enterprise-server.md).
+This page covers cloud-hosted GitHub (github.com) and cloud-hosted GitHub Enterprise. For self-hosted GitHub Enterprise Server, see [Connect AWS Security Agent to GitHub Enterprise](connect-github-enterprise-server.md).
 +  **Code review** - Automatically analyze the code changes in each pull request against your organizational security requirements, and run on-demand full-repository scans
 +  **Threat modeling** - Provide application understanding by analyzing source code, data flows, and architecture
 +  **Penetration testing context** - Provide application understanding for penetration testing by analyzing source code
@@ -28,7 +28,7 @@ You create and run **full code reviews** — which scan a repository’s entire 
  **Penetration testing** and **threat modeling** are initiated within the AWS Security Agent web application. Users select connected repositories to provide application context, and specify target domains for penetration testing. If you enable automated remediation, users can request AWS Security Agent to fix findings by opening pull requests to connected repositories.
 
 ## Prerequisites
-<a name="_prerequisites"></a>
+<a name="connect-github-prerequisites"></a>
 
 Before you begin, ensure you have:
 + GitHub organization admin access or GitHub user account owner access
@@ -38,8 +38,10 @@ Before you begin, ensure you have:
 **Important**
 A GitHub App can only be installed once to a GitHub account or GitHub organization. If you need to connect the same GitHub organization to AWS Security Agent, you must use the same AWS account where the integration was first registered.
 
-**Note**
-If your GitHub enterprise organization has enabled IP allowlisting, you must accept the allowed IP addresses on the GitHub app. You can also choose to automatically add the IP addresses to your allow list. For more information, see [Allowing access by GitHub Apps](https://docs.github.com/en/enterprise-cloud@latest/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/managing-allowed-ip-addresses-for-your-organization#allowing-access-by-github-apps) and [Enabling allowed IP addresses](https://docs.github.com/en/enterprise-cloud@latest/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/managing-allowed-ip-addresses-for-your-organization#enabling-allowed-ip-addresses) in the GitHub documentation.
+**Important**
+Your GitHub organization might use an IP allow list. If so, add the AWS Security Agent IP addresses for your AWS Region to the IP allow list. Wait a few minutes for GitHub to apply them, then register the integration.
+Do not rely on the GitHub **Enable IP allow list configuration for installed GitHub Apps** setting. This setting adds IP addresses only for app-installation requests, not for the requests that AWS Security Agent makes during registration. As a result, registration fails even when those addresses appear in your IP allow list.
+For more information about enabling allowed IP addresses for your GitHub organization, see [Enabling allowed IP addresses](https://docs.github.com/en/enterprise-cloud@latest/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/managing-allowed-ip-addresses-for-your-organization#enabling-allowed-ip-addresses) in the GitHub documentation.
 The following IP addresses are used to access your GitHub resources:
 US East (N. Virginia) (us-east-1)
  `34.228.181.128`
@@ -144,6 +146,15 @@ If you were unable to complete the registration process (for example, your brows
 1. Uninstall the AWS Security Agent GitHub App from your GitHub organization or user account.
 
 1. Return to the AWS Security Agent console and start the integration process again from the beginning.
+
+### Registration fails when you enable an IP allow list
+<a name="_registration_fails_when_you_enable_an_ip_allow_list"></a>
+
+**Symptoms**
+Registration fails with an error such as "Security token validation error. Please try again." or "Access Denied." The failure occurs even when the AWS Security Agent IP addresses already appear in your IP allow list. The GitHub **Enable IP allow list configuration for installed GitHub Apps** setting added them automatically.
+
+**Resolution**
+Manually add the AWS Security Agent IP addresses for your AWS Region (see [Prerequisites](#connect-github-prerequisites)) to your organization’s IP allow list. Wait a few minutes for GitHub to apply them, then register the integration again.
 
 ### Multiple AWS accounts trying to integrate the same GitHub organization
 <a name="_multiple_aws_accounts_trying_to_integrate_the_same_github_organization"></a>

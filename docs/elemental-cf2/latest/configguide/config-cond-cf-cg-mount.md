@@ -22,7 +22,6 @@ where `{{folder}}` is a folder name that you specify and that is then created on
 1. On the **Node Configuration** screen, choose **Mount Points**.
 
 1. On the **Mount Points** screen, complete the screen according to the following table and choose **Save**.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-cf2/latest/configguide/config-cond-cf-cg-mount.html)
 
 1. Wait a few minutes. The newly mounted folder appears on the screen.

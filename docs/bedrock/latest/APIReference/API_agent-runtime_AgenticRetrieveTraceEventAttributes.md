@@ -24,7 +24,7 @@ Required: Yes
  ** step **   <a name="bedrock-Type-agent-runtime_AgenticRetrieveTraceEventAttributes-step"></a>
 The current step in the retrieval process.
 Type: String
-Valid Values: `Planning | Retrieval | SpeculativeRetrieval | FullDocumentExpansion`
+Valid Values: `Planning | Retrieval | SpeculativeRetrieval | FullDocumentExpansion | SessionHistoryLoad`
 Required: Yes
 
  ** actions **   <a name="bedrock-Type-agent-runtime_AgenticRetrieveTraceEventAttributes-actions"></a>

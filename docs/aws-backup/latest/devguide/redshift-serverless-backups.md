@@ -27,7 +27,7 @@ You can create on-demand backups of Redshift Serverless namespaces through the f
 ------
 #### [ Console ]
 
-1. Open the [AWS Backup console](https://console.aws.amazon.com//backup).
+1. Open the [AWS Backup console](https://console.aws.amazon.com/backup).
 
 1. On the dashboard, choose **Create an on-demand backup**.
 
@@ -89,7 +89,7 @@ Your scheduled backups can include Redshift Serverless namespaces if they are a 
 
 To opt into protecting Redshift Serverless in the AWS Backup console, complete the following steps:
 
-1. Open the [AWS Backup console](https://console.aws.amazon.com//backup).
+1. Open the [AWS Backup console](https://console.aws.amazon.com/backup).
 
 1. Using the navigation pane, choose **Protected resources**.
 

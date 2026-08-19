@@ -13,8 +13,8 @@ The access endpoint cannot be customized for VPC endpoints. To add a custom URL,
 **Note**
 The following procedure relies on you using the recommended [CloudFormation stack template](https://s3.amazonaws.com/aws-transfer-resources/custom-domain-templates/aws-transfer-web-app-custom-domain-distribution.template.yml). You don't need to use the template: you can create the distribution by using the [CloudFront console](https://console.aws.amazon.com/cloudfront/v4/home) directly.
 However, the provided template simplifies the process, and makes it easier to avoid misconfiguration. If you don't use the CloudFormation template, make sure to follow these guidelines:
-The [Origin request policy](https://docs.aws.amazon.com//AmazonCloudFront/latest/DeveloperGuide/using-managed-origin-request-policies.html#managed-origin-request-policy-cors-custom) should forward query strings and cookies to the origin, and should not forward the `Host` header to the origin.
-The [Cache policy](https://docs.aws.amazon.com//AmazonCloudFront/latest/DeveloperGuide/using-managed-cache-policies.html#managed-cache-policy-origin-cache-headers) should not include the `Host` header in the cache key.
+The [Origin request policy](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/using-managed-origin-request-policies.html#managed-origin-request-policy-cors-custom) should forward query strings and cookies to the origin, and should not forward the `Host` header to the origin.
+The [Cache policy](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/using-managed-cache-policies.html#managed-cache-policy-origin-cache-headers) should not include the `Host` header in the cache key.
 
 **To customize your web app URL**
 

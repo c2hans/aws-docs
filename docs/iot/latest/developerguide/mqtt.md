@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/mqtt.html
 
  AWS IoT Core supports device connections that use the MQTT protocol and MQTT over WSS protocol and that are identified by a *client ID*. The [AWS IoT Device SDKs](iot-connect-devices.md#iot-connect-device-sdks) support both protocols and are the recommended ways to connect devices to AWS IoT Core. The AWS IoT Device SDKs support the functions necessary for devices and clients to connect to and access AWS IoT services. The Device SDKs support the authentication protocols that the AWS IoT services require and the connection ID requirements that the MQTT protocol and MQTT over WSS protocols require. For information about how to connect to AWS IoT using the AWS Device SDKs and links to examples of AWS IoT in the supported languages, see [Connecting with MQTT using the AWS IoT Device SDKs](#mqtt-sdk). For more information about authentication methods and the port mappings for MQTT messages, see [Protocols, port mappings, and authentication](protocols.md#protocol-mapping).
 
-While we recommend using the AWS IoT Device SDKs to connect to AWS IoT, they are not required. If you do not use the AWS IoT Device SDKs, however, you must provide the necessary connection and communication security. Clients must send the [Server Name Indication (SNI) TLS extension](https://tools.ietf.org/html/rfc3546#section-3.1) in the connection request. Connection attempts that don't include the SNI are refused. For more information, see [Transport Security in AWS IoT](transport-security.html). Clients that use IAM users and AWS credentials to authenticate clients must provide the correct [Signature Version 4](https://docs.aws.amazon.com//general/latest/gr/signature-version-4.html) authentication.
+While we recommend using the AWS IoT Device SDKs to connect to AWS IoT, they are not required. If you do not use the AWS IoT Device SDKs, however, you must provide the necessary connection and communication security. Clients must send the [Server Name Indication (SNI) TLS extension](https://tools.ietf.org/html/rfc3546#section-3.1) in the connection request. Connection attempts that don't include the SNI are refused. For more information, see [Transport Security in AWS IoT](transport-security.html). Clients that use IAM users and AWS credentials to authenticate clients must provide the correct [Signature Version 4](https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html) authentication.
 
 After your clients are connected, you can monitor and manage their MQTT client connections using the console or APIs. For more information, see [MQTT connection management](#mqtt-client-disconnect).
 
@@ -127,11 +127,11 @@ After the client joins a persistent session, it can publish messages and subscri
 ### Message traffic after reconnection to a persistent session
 <a name="persistent-session-reconnect"></a>
 
-A persistent session represents an ongoing connection between a client and an MQTT message broker. When a client connects to the message broker using a persistent session, the message broker saves all subscriptions that the client makes during the connection. When the client disconnects, the message broker stores unacknowledged QoS 1 messages and new QoS 1 messages published to topics to which the client is subscribed. Messages are stored according to account limit. Messages that exceed the limit will be dropped. For more information about persistent message limits, see [AWS IoT Core endpoints and quotas](https://docs.aws.amazon.com//general/latest/gr/iot-core.html#message-broker-limits). When the client reconnects to its persistent session, all subscriptions are reinstated and all stored messages are sent to the client at a maximum rate of 10 messages per second. In MQTT 5, if an outbound QoS 1 with the Message Expiry Interval expires when a client is offline, after the connection resumes, the client won't receive the expired message.
+A persistent session represents an ongoing connection between a client and an MQTT message broker. When a client connects to the message broker using a persistent session, the message broker saves all subscriptions that the client makes during the connection. When the client disconnects, the message broker stores unacknowledged QoS 1 messages and new QoS 1 messages published to topics to which the client is subscribed. Messages are stored according to account limit. Messages that exceed the limit will be dropped. For more information about persistent message limits, see [AWS IoT Core endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/iot-core.html#message-broker-limits). When the client reconnects to its persistent session, all subscriptions are reinstated and all stored messages are sent to the client at a maximum rate of 10 messages per second. In MQTT 5, if an outbound QoS 1 with the Message Expiry Interval expires when a client is offline, after the connection resumes, the client won't receive the expired message.
 
-After reconnection, the stored messages are sent to the client, at a rate that is limited to 10 stored messages per second, along with any current message traffic until the [`Publish requests per second per connection`](https://docs.aws.amazon.com//general/latest/gr/iot-core.html#message-broker-limits) limit is reached. Because the delivery rate of the stored messages is limited, it will take several seconds to deliver all stored messages if a session has more than 10 stored messages to deliver after reconnection.
+After reconnection, the stored messages are sent to the client, at a rate that is limited to 10 stored messages per second, along with any current message traffic until the [`Publish requests per second per connection`](https://docs.aws.amazon.com/general/latest/gr/iot-core.html#message-broker-limits) limit is reached. Because the delivery rate of the stored messages is limited, it will take several seconds to deliver all stored messages if a session has more than 10 stored messages to deliver after reconnection.
 
-For shared subscribers, messages will be queued if at least one subscriber of a group uses a persistent session and no subscribers are online to receive the QoS 1 message. Dequeuing of messages is done at a maximum speed of 20 messages per second per active subscriber in a group. For more information, see [shared subscriptions message queuing](https://docs.aws.amazon.com//iot/latest/developerguide/mqtt.html#mqtt5-shared-subscription-queuing).
+For shared subscribers, messages will be queued if at least one subscriber of a group uses a persistent session and no subscribers are online to receive the QoS 1 message. Dequeuing of messages is done at a maximum speed of 20 messages per second per active subscriber in a group. For more information, see [shared subscriptions message queuing](https://docs.aws.amazon.com/iot/latest/developerguide/mqtt.html#mqtt5-shared-subscription-queuing).
 
 ### Ending a persistent session
 <a name="ending-a-persistent-session"></a>
@@ -163,12 +163,12 @@ If a client doesn't reconnect to its persistent session before it expires, the s
 
 Messages are charged to your AWS account when the message broker sends a message to a client or an offline persistent session. When an offline device with a persistent session reconnects and resumes its session, the stored messages are delivered to the device and charged to your account again. For more information about message pricing, see [AWS IoT Core pricing - Messaging](https://aws.amazon.com/iot-core/pricing/#Messaging).
 
-The default persistent session expiration time of one hour can be increased by using the standard limit increase process. Note that increasing the session expiration time might increase your message charges because the additional time could allow for more messages to be stored for the offline device and those additional messages would be charged to your account at the standard messaging rate. The session expiration time is approximate and a session could persist for up to 30 minutes longer than the account limit; however, a session will not be shorter than the account limit. For more information about session limits, see [AWS Service Quotas](https://docs.aws.amazon.com//general/latest/gr/iot-core.html#message-broker-limits).
+The default persistent session expiration time of one hour can be increased by using the standard limit increase process. Note that increasing the session expiration time might increase your message charges because the additional time could allow for more messages to be stored for the offline device and those additional messages would be charged to your account at the standard messaging rate. The session expiration time is approximate and a session could persist for up to 30 minutes longer than the account limit; however, a session will not be shorter than the account limit. For more information about session limits, see [AWS Service Quotas](https://docs.aws.amazon.com/general/latest/gr/iot-core.html#message-broker-limits).
 
 ## MQTT retained messages
 <a name="mqtt-retain"></a>
 
-AWS IoT Core supports the `RETAIN` flag described in the MQTT protocol. When a client sets the `RETAIN` flag on an MQTT message that it publishes, AWS IoT Core saves the message. It can then be sent to new subscribers, retrieved by calling the [`GetRetainedMessage`](https://docs.aws.amazon.com//iot/latest/apireference/API_iotdata_GetRetainedMessage.html) operation, and viewed in the [AWS IoT console](https://console.aws.amazon.com//iot/home#/retainedMessages).
+AWS IoT Core supports the `RETAIN` flag described in the MQTT protocol. When a client sets the `RETAIN` flag on an MQTT message that it publishes, AWS IoT Core saves the message. It can then be sent to new subscribers, retrieved by calling the [`GetRetainedMessage`](https://docs.aws.amazon.com/iot/latest/apireference/API_iotdata_GetRetainedMessage.html) operation, and viewed in the [AWS IoT console](https://console.aws.amazon.com/iot/home#/retainedMessages).
 
 **Examples of using MQTT retained messages**
 +
@@ -197,7 +197,7 @@ This section describes common operations that involve retained messages.
 +
 
 **Creating a retained message**
-The client determines whether a message is retained when it publishes an MQTT message. Clients can set the `RETAIN` flag when they publish a message by using a [Device SDK](iot-sdks.md). Applications and services can set the `RETAIN` flag when they use the [`Publish` action](https://docs.aws.amazon.com//iot/latest/apireference/API_iotdata_Publish.html) to publish an MQTT message.
+The client determines whether a message is retained when it publishes an MQTT message. Clients can set the `RETAIN` flag when they publish a message by using a [Device SDK](iot-sdks.md). Applications and services can set the `RETAIN` flag when they use the [`Publish` action](https://docs.aws.amazon.com/iot/latest/apireference/API_iotdata_Publish.html) to publish an MQTT message.
 
   Only one message per topic name is retained. A new message with the RETAIN flag set published to a topic replaces any existing retained message that was sent to the topic earlier.
 **Note**
@@ -219,7 +219,7 @@ To receive a retained message upon subscription, the topic filter in the subscri
 **Retrieving a retained message**
 Retained messages are delivered to clients automatically when they subscribe to the topic with the retained message. For a client to receive the retained message upon subscription, it must subscribe to the exact topic name of the retained message. Subscribing to a wild card topic filter that includes a retained message topic lets the client receive subsequent messages published to the retained message's topic, but it does not deliver the retained message upon subscription.
 
-  Services and apps can list and retrieve retained messages by calling [`ListRetainedMessages`](https://docs.aws.amazon.com//iot/latest/apireference/API_iotdata_ListRetainedMessages.html) and [`GetRetainedMessage`](https://docs.aws.amazon.com//iot/latest/apireference/API_iotdata_GetRetainedMessage.html).
+  Services and apps can list and retrieve retained messages by calling [`ListRetainedMessages`](https://docs.aws.amazon.com/iot/latest/apireference/API_iotdata_ListRetainedMessages.html) and [`GetRetainedMessage`](https://docs.aws.amazon.com/iot/latest/apireference/API_iotdata_GetRetainedMessage.html).
 
   A client is not prevented from publishing messages to a retained message topic *without* setting the `RETAIN` flag. This could cause unexpected results, such as the retained message not matching the message received by subscribing to the topic.
 
@@ -227,11 +227,11 @@ Retained messages are delivered to clients automatically when they subscribe to 
 +
 
 **Listing retained message topics**
-You can list retained messages by calling [`ListRetainedMessages`](https://docs.aws.amazon.com//iot/latest/apireference/API_iotdata_ListRetainedMessages.html) and the retained messages can be viewed in the [AWS IoT console](https://console.aws.amazon.com//iot/home#/retainedMessages).
+You can list retained messages by calling [`ListRetainedMessages`](https://docs.aws.amazon.com/iot/latest/apireference/API_iotdata_ListRetainedMessages.html) and the retained messages can be viewed in the [AWS IoT console](https://console.aws.amazon.com/iot/home#/retainedMessages).
 +
 
 **Getting retained message details**
-You can get retained message details by calling [`GetRetainedMessage`](https://docs.aws.amazon.com//iot/latest/apireference/API_iotdata_GetRetainedMessage.html) and they can be viewed in the [AWS IoT console](https://console.aws.amazon.com//iot/home#/retainedMessages).
+You can get retained message details by calling [`GetRetainedMessage`](https://docs.aws.amazon.com/iot/latest/apireference/API_iotdata_GetRetainedMessage.html) and they can be viewed in the [AWS IoT console](https://console.aws.amazon.com/iot/home#/retainedMessages).
 +
 
 **Retaining a Will message**
@@ -241,23 +241,23 @@ MQTT [*Will* messages](http://docs.oasis-open.org/mqtt/mqtt/v3.1.1/errata01/os/m
 **Deleting a retained message**
 Devices, applications, and services can delete a retained message by publishing a message with the `RETAIN` flag set and an empty (0-byte) message payload to the topic name of the retained message to delete. Such messages delete the retained message from AWS IoT Core, are sent to clients with a subscription to the topic, but they are not retained by AWS IoT Core.
 
-  Retained messages can also be deleted interactively by accessing the retained message in the [AWS IoT console](https://console.aws.amazon.com//iot/home#/retainedMessages). Retained messages that are deleted by using the [AWS IoT console](https://console.aws.amazon.com//iot/home#/retainedMessages) also send a 0-byte message to clients that have subscribed to the retained message's topic.
+  Retained messages can also be deleted interactively by accessing the retained message in the [AWS IoT console](https://console.aws.amazon.com/iot/home#/retainedMessages). Retained messages that are deleted by using the [AWS IoT console](https://console.aws.amazon.com/iot/home#/retainedMessages) also send a 0-byte message to clients that have subscribed to the retained message's topic.
 
   Retained messages can't be restored after they are deleted. A client would need to publish a new retained message to take the place of the deleted message.
 +
 
 **Debugging and troubleshooting retained messages**
-The [AWS IoT console](https://console.aws.amazon.com//iot/home#) provides several tools to help you troubleshoot retained messages:
+The [AWS IoT console](https://console.aws.amazon.com/iot/home#) provides several tools to help you troubleshoot retained messages:
   +
 
-**The **[Retained messages](https://console.aws.amazon.com//iot/home#/retainedMessages)** page**
+**The **[Retained messages](https://console.aws.amazon.com/iot/home#/retainedMessages)** page**
 The **Retained messages** page in the AWS IoT console provides a paginated list of the retained messages that have been stored by your Account in the current Region. From this page, you can:
     + See the details of each retained message, such as the message payload, QoS, the time it was received.
     + Update the contents of a retained message.
     + Delete a retained message.
   +
 
-**The **[MQTT test client](https://console.aws.amazon.com//iot/home#/test)****
+**The **[MQTT test client](https://console.aws.amazon.com/iot/home#/test)****
 The **MQTT test client** page in the AWS IoT console can subscribe and publish to MQTT topics. The publish option lets you set the RETAIN flag on the messages that you publish to simulate how your devices might behave. You can also use the MQTT test client to monitor messages from connected clients that you manage through the client connections interface. For more information about managing client connections, see [MQTT connection management](#mqtt-client-disconnect).
 
   Some unexpected results might be the result of these aspects of how retained messages are implemented in AWS IoT Core.
@@ -273,13 +273,13 @@ The sequence of retained message and subscribed message delivery is not guarante
 ### Billing and retained messages
 <a name="mqtt-retain-billing"></a>
 
-Publishing messages with the `RETAIN` flag set from a client, by using AWS IoT console, or by calling [`Publish`](https://docs.aws.amazon.com//iot/latest/apireference/API_iotdata_Publish.html) incurs additional messaging charges described in [AWS IoT Core pricing - Messaging](https://aws.amazon.com//iot-core/pricing/#Messaging).
+Publishing messages with the `RETAIN` flag set from a client, by using AWS IoT console, or by calling [`Publish`](https://docs.aws.amazon.com/iot/latest/apireference/API_iotdata_Publish.html) incurs additional messaging charges described in [AWS IoT Core pricing - Messaging](https://aws.amazon.com/iot-core/pricing/#Messaging).
 
-Retrieving retained messages by a client, by using AWS IoT console, or by calling [`GetRetainedMessage`](https://docs.aws.amazon.com//iot/latest/apireference/API_iotdata_GetRetainedMessage.html) incurs messaging charges in addition to the normal API usage charges. The additional charges are described in [AWS IoT Core pricing - Messaging](https://aws.amazon.com//iot-core/pricing/#Messaging).
+Retrieving retained messages by a client, by using AWS IoT console, or by calling [`GetRetainedMessage`](https://docs.aws.amazon.com/iot/latest/apireference/API_iotdata_GetRetainedMessage.html) incurs messaging charges in addition to the normal API usage charges. The additional charges are described in [AWS IoT Core pricing - Messaging](https://aws.amazon.com/iot-core/pricing/#Messaging).
 
-MQTT [*Will* messages](http://docs.oasis-open.org/mqtt/mqtt/v3.1.1/errata01/os/mqtt-v3.1.1-errata01-os-complete.html#_Will_Flag) that are published when a device disconnects unexpectedly incur messaging charges described in [AWS IoT Core pricing - Messaging](https://aws.amazon.com//iot-core/pricing/#Messaging).
+MQTT [*Will* messages](http://docs.oasis-open.org/mqtt/mqtt/v3.1.1/errata01/os/mqtt-v3.1.1-errata01-os-complete.html#_Will_Flag) that are published when a device disconnects unexpectedly incur messaging charges described in [AWS IoT Core pricing - Messaging](https://aws.amazon.com/iot-core/pricing/#Messaging).
 
-For more information about messaging costs, see [AWS IoT Core pricing - Messaging](https://aws.amazon.com//iot-core/pricing/#Messaging).
+For more information about messaging costs, see [AWS IoT Core pricing - Messaging](https://aws.amazon.com/iot-core/pricing/#Messaging).
 
 ### Comparing MQTT retained messages and MQTT persistent sessions
 <a name="mqtt-retain-persist"></a>
@@ -309,7 +309,7 @@ Retained messages and Device Shadows both retain data from a device, but they be
 |    |  Retained messages  |  Device Shadows  |
 | --- | --- | --- |
 | **Message payload has a pre-defined structure or schema** | As defined by the implementation. MQTT does not specify a structure or schema for its message payload. | AWS IoT supports a specific data structure. |
-| **Updating the message payload generates event messages** | Publishing a retained message sends the message to subscribed clients, but doesn't generate additional update messages. | Updating a Device Shadow produces [update messages that describe the change](https://docs.aws.amazon.com//iot/latest/developerguide/device-shadow-mqtt.html#update-delta-pub-sub-topic). |
+| **Updating the message payload generates event messages** | Publishing a retained message sends the message to subscribed clients, but doesn't generate additional update messages. | Updating a Device Shadow produces [update messages that describe the change](https://docs.aws.amazon.com/iot/latest/developerguide/device-shadow-mqtt.html#update-delta-pub-sub-topic). |
 | **Message updates are numbered** | Retained messages are not numbered automatically. | Device Shadow documents have automatic version numbers and timestamps. |
 | **Message payload is attached to a thing resource** | Retained messages are not attached to a thing resource. | Device Shadows are attached to a thing resource. |
 | **Updating individual elements of the message payload** | Individual elements of the message can't be changed without updating the entire message payload. | Individual elements of a Device Shadow document can be updated without the need to update the entire Device Shadow document. |
@@ -323,7 +323,7 @@ Last Will and Testament (LWT) is a feature in MQTT. With LWT, clients can specif
 
 When managing client connections, you can control whether LWT messages are published when you disconnect a client. For more information, see [MQTT connection management](#mqtt-client-disconnect).
 
-The broker will store the Will Messages until an uninitiated disconnection occurs. When that happens, the broker will publish the messages to all clients that subscribed to the Will Topic to notify the disconnection. If the client disconnects from the broker with a client-initiated disconnection using the MQTT DISCONNECT message, the broker won't publish the stored LWT messages. In all other cases, the LWT messages will be dispatched. Due to the asynchronous nature of disconnect processing, LWT messages are not guaranteed to be dispatched in order during reconnection. We recommend that you use [lifecycle events](life-cycle-events.md) to improve the accuracy of connectivity state detection, as these events provide attributes such as timestamps and version numbers to manage out-of-order events. For a complete list of the disconnect scenarios when the broker will send the LWT messages, see [Connect/Disconnect events](https://docs.aws.amazon.com//iot/latest/developerguide/life-cycle-events.html#connect-disconnect).
+The broker will store the Will Messages until an uninitiated disconnection occurs. When that happens, the broker will publish the messages to all clients that subscribed to the Will Topic to notify the disconnection. If the client disconnects from the broker with a client-initiated disconnection using the MQTT DISCONNECT message, the broker won't publish the stored LWT messages. In all other cases, the LWT messages will be dispatched. Due to the asynchronous nature of disconnect processing, LWT messages are not guaranteed to be dispatched in order during reconnection. We recommend that you use [lifecycle events](life-cycle-events.md) to improve the accuracy of connectivity state detection, as these events provide attributes such as timestamps and version numbers to manage out-of-order events. For a complete list of the disconnect scenarios when the broker will send the LWT messages, see [Connect/Disconnect events](https://docs.aws.amazon.com/iot/latest/developerguide/life-cycle-events.html#connect-disconnect).
 
 ## Using connectAttributes
 <a name="connect-attribute"></a>
@@ -364,28 +364,24 @@ AWS IoT Core supports shared subscriptions for both MQTT 3.1.1 and MQTT 5. Share
 
 Message queuing capabilities are available for shared subscriptions on both MQTT 3.1.1 and MQTT 5 connections to enhance message delivery reliability.
 
-To use shared subscriptions, clients subscribe to a shared subscription's [topic filter](https://docs.aws.amazon.com//iot/latest/developerguide/topics.html#topicfilters) as follows:
+To use shared subscriptions, clients subscribe to a shared subscription's [topic filter](https://docs.aws.amazon.com/iot/latest/developerguide/topics.html#topicfilters) as follows:
 
 ```
 $share/{ShareName}/{TopicFilter}
 ```
 + `$share` is a literal string to indicate a Shared Subscription's topic filter, which must start with `$share`.
 + `{ShareName}` is a character string to specify the shared name used by a group of subscribers. A shared subscription's topic filter must contain a `ShareName` and be followed by the `/` character. The `{ShareName}` must not include the following characters: `/`, `+`, or `#`. The maximum size for `{ShareName}` is 128 UTF-8 characters.
-+ `{TopicFilter}` follows the same [topic filter](https://docs.aws.amazon.com//iot/latest/developerguide/topics.html#topicfilters) syntax as a non-shared subscription. The maximum size for `{TopicFilter}` is 256 UTF-8 characters.
++ `{TopicFilter}` follows the same [topic filter](https://docs.aws.amazon.com/iot/latest/developerguide/topics.html#topicfilters) syntax as a non-shared subscription. The maximum size for `{TopicFilter}` is 256 UTF-8 characters.
 + The two required slashes (`/`) for `$share/{ShareName}/{TopicFilter}` are not included in the [Maximum number of slashes in topic and topic filter](https://console.aws.amazon.com/servicequotas/home/services/iotcore/quotas/L-AD5A8D4F) limit.
 
-Subscriptions that have the same `{ShareName}/{TopicFilter}` belong to the same shared subscription group. You can create multiple shared subscription groups and don't exceed the [Shared Subscriptions per group limit](https://docs.aws.amazon.com//general/latest/gr/iot-core.html#message-broker-limits). For more information, see [AWS IoT Core endpoints and quotas](https://docs.aws.amazon.com//general/latest/gr/iot-core.html) from the *AWS General Reference*.
+Subscriptions that have the same `{ShareName}/{TopicFilter}` belong to the same shared subscription group. You can create multiple shared subscription groups and don't exceed the [Shared Subscriptions per group limit](https://docs.aws.amazon.com/general/latest/gr/iot-core.html#message-broker-limits). For more information, see [AWS IoT Core endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/iot-core.html) from the *AWS General Reference*.
 
 The following tables compare non-shared subscriptions and shared subscriptions:
-
-****
 
 | Subscription | Description | Topic filter examples |
 | --- | --- | --- |
 | Non-shared subscriptions | Each client creates a separate subscription to receive the published messages. When a message is published to a topic, all subscribers to that topic receive a copy of the message. | <pre>sports/tennis<br />sports/#</pre> |
 | Shared subscriptions | Multiple clients can share a subscription to a topic and only one client will receive messages published to that topic at a random distribution. |  <pre>$share/consumer/sports/tennis<br />$share/consumer/sports/#</pre>  |
-
-****
 
 | Non-shared subscriptions flow  | Shared subscriptions flow |
 | --- | --- |
@@ -394,7 +390,7 @@ The following tables compare non-shared subscriptions and shared subscriptions:
 **Important notes for using shared subscriptions**
 + If the shared subscriber group consists of any persistent session subscribers, when all the subscribers in the shared group are disconnected, or if any subscribers breach the Publish requests per second per connection limit, any unacknowledged QoS 1 messages and undelivered QoS 1 messages published to a shared subscription group will be queued. For more information, see [shared subscriptions message queuing](#mqtt5-shared-subscription-message-queuing).
 + QoS 0 messages published to a shared subscription group will be dropped upon any failure.
-+ Shared subscriptions don't receive [retained messages](https://docs.aws.amazon.com//iot/latest/developerguide/mqtt.html#mqtt-retain) when subscribing to topic patterns as part of a shared subscriber group. Messages that are published on topics that have shared subscribers and have the `RETAIN` flag set are delivered to shared subscribers like any other publish message.
++ Shared subscriptions don't receive [retained messages](https://docs.aws.amazon.com/iot/latest/developerguide/mqtt.html#mqtt-retain) when subscribing to topic patterns as part of a shared subscriber group. Messages that are published on topics that have shared subscribers and have the `RETAIN` flag set are delivered to shared subscribers like any other publish message.
 + When shared subscriptions contain wildcard characters (\# or \+), there might be multiple matching shared subscriptions to a topic. If that happens, the message broker copies the publishing message and sends it to a random client in each matching shared subscription. The wildcard behavior of shared subscriptions can be explained in the following diagram.
 ![Shared subscriptions with wildcard characters in AWS IoT Core.](http://docs.aws.amazon.com/iot/latest/developerguide/images/mqtt_shared_subscriptions_wildcard.gif)
 
@@ -406,16 +402,16 @@ The following tables compare non-shared subscriptions and shared subscriptions:
 
   Client 5 and client 6 share the subscription: `$share/consumer2/sports/tennis`
 
-For more information about shared subscriptions limits, see [AWS IoT Core endpoints and quotas](https://docs.aws.amazon.com//general/latest/gr/iot-core.html) from the *AWS General Reference*. To test shared subscriptions using the AWS IoT MQTT client in the [AWS IoT console](https://console.aws.amazon.com/iot/home), see [Testing Shared Subscriptions in the MQTT client](view-mqtt-messages.md#view-mqtt-shared-subscriptions). You can also view which topics connected clients are subscribed to, including shared subscriptions, by using the client connection management features. For more information, see [MQTT connection management](#mqtt-client-disconnect). For more information about shared subscriptions, see [Shared Subscriptions](https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html#_Toc3901250) from the MQTTv5.0 specification.
+For more information about shared subscriptions limits, see [AWS IoT Core endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/iot-core.html) from the *AWS General Reference*. To test shared subscriptions using the AWS IoT MQTT client in the [AWS IoT console](https://console.aws.amazon.com/iot/home), see [Testing Shared Subscriptions in the MQTT client](view-mqtt-messages.md#view-mqtt-shared-subscriptions). You can also view which topics connected clients are subscribed to, including shared subscriptions, by using the client connection management features. For more information, see [MQTT connection management](#mqtt-client-disconnect). For more information about shared subscriptions, see [Shared Subscriptions](https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html#_Toc3901250) from the MQTTv5.0 specification.
 
 #### Shared subscriptions message queuing
 <a name="mqtt5-shared-subscription-message-queuing"></a>
 
-To enhance message delivery reliability, shared subscriptions include message queuing capabilities that store messages when no online subscribers are available. When a shared subscription group contains at least one member with a persistent session, the queuing feature is enabled for the group. When distributing messages, online members are selected as recipients. QoS 1 messages are queued when no members are found online or when subscribers exceed the [`Publish requests per second per connection`](https://docs.aws.amazon.com//general/latest/gr/iot-core.html#message-broker-limits) limit. Queued messages are delivered when either existing members resume their persistent sessions, or new members join the group. Queued messages are delivered at up to 20 queued messages per second per active group subscriber, along with any other messages delivered to the subscriber as per the subscriptions.
+To enhance message delivery reliability, shared subscriptions include message queuing capabilities that store messages when no online subscribers are available. When a shared subscription group contains at least one member with a persistent session, the queuing feature is enabled for the group. When distributing messages, online members are selected as recipients. QoS 1 messages are queued when no members are found online or when subscribers exceed the [`Publish requests per second per connection`](https://docs.aws.amazon.com/general/latest/gr/iot-core.html#message-broker-limits) limit. Queued messages are delivered when either existing members resume their persistent sessions, or new members join the group. Queued messages are delivered at up to 20 queued messages per second per active group subscriber, along with any other messages delivered to the subscriber as per the subscriptions.
 
-By default, queued message retention follows the [`Persistent Session expiry period`](https://docs.aws.amazon.com//general/latest/gr/iot-core.html#message-broker-limits) quota. However, if a Message Expiry Interval (MEI) is set in the inbound publish message, the MEI takes precedence. When MEI is present, it determines the message retention period, regardless of the Persistent Session expiry period.
+By default, queued message retention follows the [`Persistent Session expiry period`](https://docs.aws.amazon.com/general/latest/gr/iot-core.html#message-broker-limits) quota. However, if a Message Expiry Interval (MEI) is set in the inbound publish message, the MEI takes precedence. When MEI is present, it determines the message retention period, regardless of the Persistent Session expiry period.
 
-Message queue rates are limited according to the [`Queued messages per second per account`](https://docs.aws.amazon.com//general/latest/gr/iot-core.html#message-broker-limits) quota, and the number of messages is limited by the [`Maximum number of queued messages per shared subscription group`](https://docs.aws.amazon.com//general/latest/gr/iot-core.html#message-broker-limits) quota. To view and manage your quotas, access the [Service Quotas console](https://console.aws.amazon.com/servicequotas/home).
+Message queue rates are limited according to the [`Queued messages per second per account`](https://docs.aws.amazon.com/general/latest/gr/iot-core.html#message-broker-limits) quota, and the number of messages is limited by the [`Maximum number of queued messages per shared subscription group`](https://docs.aws.amazon.com/general/latest/gr/iot-core.html#message-broker-limits) quota. To view and manage your quotas, access the [Service Quotas console](https://console.aws.amazon.com/servicequotas/home).
 
 You can monitor the Queue CloudWatch by searching for `ApproximateQueueDepth` under the `AWS/Usage` namespace, or you can use the following CLI command to list the metrics associated with each shared subscription group's queue depth.
 
@@ -446,7 +442,7 @@ You can debug or process error messages more easily using the reason codes. Reas
 ### Topic aliases
 <a name="mqtt5-topic-alias"></a>
 
-You can substitute a topic name with a topic alias, which is a two-byte integer. Using topic aliases can optimize the transmission of topic names to potentially reduce data costs on metered data services. AWS IoT Core has a default limit of 8 topic aliases. For more information, see [AWS IoT Core endpoints and quotas](https://docs.aws.amazon.com//general/latest/gr/iot-core.html) from the *AWS General Reference*.
+You can substitute a topic name with a topic alias, which is a two-byte integer. Using topic aliases can optimize the transmission of topic names to potentially reduce data costs on metered data services. AWS IoT Core has a default limit of 8 topic aliases. For more information, see [AWS IoT Core endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/iot-core.html) from the *AWS General Reference*.
 
 ### Message expiry
 <a name="mqtt5-message-expiry"></a>
@@ -458,8 +454,6 @@ On the outbound, the subscriber will receive a message with the remaining time l
 In AWS IoT Core, the minimum MEI is 1. If the interval is set to 0 from the client side, it will be adjusted to 1. The maximum message expiry interval is 604800 (7 days). Any values higher than this will be adjusted to the maximum value.
 
 In cross version communication, the behavior of message expiry is decided by MQTT version of the inbound publish message. For example, a message with message expiry sent by a session connected via MQTT5 can expire for devices subscribed with MQTT3 sessions. The table below lists how message expiry supports the following types of publish messages:
-
-****
 
 | Publish Message Type | Message Expiry Interval |
 | --- | --- |
@@ -490,7 +484,7 @@ You can specify the payload format (binary, text) and content type when a messag
 ## MQTT 5 properties
 <a name="mqtt5-properties"></a>
 
-MQTT 5 properties are important additions to the MQTT standard to support new MQTT 5 features such as Session Expiry and the Request/Response pattern. In AWS IoT Core, you can create [rules](https://docs.aws.amazon.com//iot/latest/developerguide/republish-rule-action.html) that can forward the properties in outbound messages, or use [HTTP Publish](https://docs.aws.amazon.com//iot/latest/apireference/API_iotdata_Publish.html) to publish MQTT messages with some of the new properties.
+MQTT 5 properties are important additions to the MQTT standard to support new MQTT 5 features such as Session Expiry and the Request/Response pattern. In AWS IoT Core, you can create [rules](https://docs.aws.amazon.com/iot/latest/developerguide/republish-rule-action.html) that can forward the properties in outbound messages, or use [HTTP Publish](https://docs.aws.amazon.com/iot/latest/apireference/API_iotdata_Publish.html) to publish MQTT messages with some of the new properties.
 
 The following table lists all the MQTT 5 properties that AWS IoT Core supports.
 
@@ -600,7 +594,7 @@ The message broker implementation is based on the [MQTT v3.1.1 specification](ht
 + On rare occasions, the message broker might resend the same logical PUBLISH message with a different packet ID.
 + Subscription to topic filters that contain a wildcard character can't receive retained messages. To receive a retained message, the subscribe request must contain a topic filter that matches the retained message topic exactly.
 + The message broker doesn't guarantee the order in which messages and ACK are received.
-+ AWS IoT can have limits that are different from the specifications. For more information, see [AWS IoT Core message broker and protocol limits and quotas](https://docs.aws.amazon.com//general/latest/gr/iot-core.html#message-broker-limits) from the *AWS IoT Reference Guide*.
++ AWS IoT can have limits that are different from the specifications. For more information, see [AWS IoT Core message broker and protocol limits and quotas](https://docs.aws.amazon.com/general/latest/gr/iot-core.html#message-broker-limits) from the *AWS IoT Reference Guide*.
 + The MQTT DUP flag is not supported.
 
 ## MQTT connection management
@@ -1106,7 +1100,7 @@ This procedure shows you how to view currently connected MQTT devices in the AWS
 
 **To view connected MQTT devices**
 
-1. Open the [AWS IoT console](https://console.aws.amazon.com//iot/home).
+1. Open the [AWS IoT console](https://console.aws.amazon.com/iot/home).
 
 1. In the left navigation pane, choose **Manage**, and then choose **All devices**.
 
@@ -1121,7 +1115,7 @@ This procedure shows you how to view the topic subscriptions for a specific MQTT
 
 **To view client subscriptions**
 
-1. Open the [AWS IoT console](https://console.aws.amazon.com//iot/home).
+1. Open the [AWS IoT console](https://console.aws.amazon.com/iot/home).
 
 1. In the left navigation pane, choose **Manage**, and then choose **All devices**.
 

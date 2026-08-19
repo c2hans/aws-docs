@@ -12,5 +12,4 @@ End of support notice: On June 30, 2027, AWS will end support for AMS Advanced. 
 + [Stack from CloudFormation Template \| Continue Update Rollback (Managed Automation)](management-custom-stack-from-cloudformation-template-continue-update-rollback-managed-automation.md)
 + [Stack from CloudFormation Template \| Delete Failed Stack (Managed Automation)](management-custom-stack-from-cloudformation-template-delete-failed-stack-managed-automation.md)
 + [Stack from CloudFormation Template \| Remediate Drift](management-custom-stack-from-cloudformation-template-remediate-drift.md)
-+ [Stack from CloudFormation Template \| Remediate Drift (Managed Automation)](management-custom-stack-from-cloudformation-template-remediate-drift-managed-automation.md)
 + [Stack from CloudFormation Template \| Update](management-custom-stack-from-cloudformation-template-update.md)

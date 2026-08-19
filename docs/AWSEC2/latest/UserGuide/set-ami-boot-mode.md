@@ -27,7 +27,7 @@ To convert an existing Legacy BIOS-based instance to UEFI, or an existing UEFI-b
 
 **To set the boot mode of an AMI**
 
-1. Make suitable modifications to the instance's volume and operating system to support booting via the selected boot mode. The modifications that are required are operating system-specific. For more information, see the manual for your operating system.
+1. Make suitable modifications to the instance's volume and operating system to support booting by using the selected boot mode. The modifications that are required are operating system-specific. For more information, see the manual for your operating system.
 **Warning**
 If you don't perform this step, the AMI will not be usable.
 
@@ -143,7 +143,7 @@ If you don't perform this step, the AMI will not be usable.
 
 **To set the boot mode of an AMI**
 
-1. Make suitable modifications to the instance's volume and operating system to support booting via the selected boot mode. The modifications that are required are operating system-specific. For more information, see the manual for your operating system.
+1. Make suitable modifications to the instance's volume and operating system to support booting by using the selected boot mode. The modifications that are required are operating system-specific. For more information, see the manual for your operating system.
 **Warning**
 If you don't perform this step, the AMI will not be usable.
 

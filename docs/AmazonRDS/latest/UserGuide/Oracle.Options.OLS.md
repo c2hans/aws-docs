@@ -77,8 +77,6 @@ If you add Label Security to an existing option group that is already attached t
 
 The following are issues you might encounter when you use Oracle Label Security.
 
-****
-
 | Issue | Troubleshooting suggestions |
 | --- | --- |
 | When you try to create a policy, you see an error message similar to the following: `insufficient authorization for the SYSDBA package`.  | A known issue with Oracle's Label Security feature prevents users with usernames of 16 or 24 characters from running Label Security commands. You can create a new user with a different number of characters, grant LBAC\_DBA to the new user, log in as the new user, and run the OLS commands as the new user. For additional information, contact Oracle Support.  |

@@ -146,7 +146,7 @@ After you create a new resource using the AWS Proton console, you can view its l
 
 **Create or edit a tag**
 
-1. In the [AWS Proton console](https://console.aws.amazon.com//proton/), open an AWS Proton resource detail page where you can see a list of tags.
+1. In the [AWS Proton console](https://console.aws.amazon.com/proton/), open an AWS Proton resource detail page where you can see a list of tags.
 
 1. Choose **Manage tags**.
 

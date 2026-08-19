@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/upd
 # Increase your existing DynamoDB table's warm throughput
 <a name="update-warm-throughput"></a>
 
-Once you've checked your DynamoDB table's current warm throughput value, you can update it with the following steps:
+After you've checked your DynamoDB table's current warm throughput value, you can update it with the following steps:
 
 ## AWS Management Console
 <a name="warm-throughput-update-console"></a>

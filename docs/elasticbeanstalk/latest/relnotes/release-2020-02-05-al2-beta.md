@@ -41,8 +41,6 @@ We initially also included a Docker AL2 beta platform version in this release. W
 ### Java SE
 <a name="release-2020-02-05-al2-beta.platforms.javase"></a>
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  Tools  |  Proxy Server  |
 | --- | --- | --- | --- | --- |
 |  ** (BETA) Corretto 11 version 0.1.1** <br /> * 64bit Amazon Linux 2 v0.1.1 running Corretto 11 (BETA) *  | 2.0.20200115 | Corretto 11.0.6.10.1 | Ant 1.10.7, Gradle 5.6.2, Maven 3.6.2 | nginx 1.16.1 |
@@ -50,8 +48,6 @@ We initially also included a Docker AL2 beta platform version in this release. W
 
 ### Python
 <a name="release-2020-02-05-al2-beta.platforms.python"></a>
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  Package Manager  |  Packager  |  meld3  |  AWS X‑Ray  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- | --- | --- |

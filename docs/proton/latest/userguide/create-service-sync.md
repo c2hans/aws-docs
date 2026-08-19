@@ -18,7 +18,7 @@ You can create a service sync configuration using the console or AWS CLI.
 
 1. (Optional) Enter a description for the service.
 
-1. In the **Application source code repository** section, choose **Choose a linked Git repository** to select a repository you've already linked with AWS Proton. If you don't already have a linked repository, choose **Link another Git repository** and follow the instructions in [Create a link to your repository](https://docs.aws.amazon.com//proton/latest/userguide/ag-create-repo.html).
+1. In the **Application source code repository** section, choose **Choose a linked Git repository** to select a repository you've already linked with AWS Proton. If you don't already have a linked repository, choose **Link another Git repository** and follow the instructions in [Create a link to your repository](https://docs.aws.amazon.com/proton/latest/userguide/ag-create-repo.html).
 
 1. For **Repository**, choose the name of your source code repository from the list.
 

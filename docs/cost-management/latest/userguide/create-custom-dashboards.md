@@ -7,6 +7,9 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/create-
 
 Dashboards help you visualize and monitor your AWS costs and usage data by combining multiple widgets into a single view. You can create custom dashboards to track specific metrics, compare costs across services or Regions, and share standardized views within or outside your organization.
 
+**Tip**
+Rather than starting with an empty dashboard, you can duplicate a Managed Dashboard. The copy is yours to edit freely, so you begin with widgets that are already configured and populated with your data. For more information, see [Managed Dashboards](https://docs.aws.amazon.com/cost-management/latest/userguide/managed-dashboards.html).
+
 **To create a dashboard**
 
 1. Open the Billing and Cost Management console at [https://console.aws.amazon.com/costmanagement/](https://console.aws.amazon.com/costmanagement/).

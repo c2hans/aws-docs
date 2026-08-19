@@ -413,9 +413,9 @@ The following policy statements grant access to view and edit recommendation pre
 <a name="license-access"></a>
 
 For Compute Optimizer to generate license recommendations, attach the following Amazon EC2 instance roles and policies.
-+ The `AmazonSSMManagedInstanceCore` role to enable Systems Manager. For more information, see [AWS Systems Manager identity-based policy examples](https://docs.aws.amazon.com//systems-manager/latest/userguide/security_iam_id-based-policy-examples) in the *AWS Systems Manager User Guide*.
-+ The `CloudWatchAgentServerPolicy` policy to enable the release of instance metrics and logs to CloudWatch. For more information, see [ Create IAM roles and users for use with the CloudWatch agent](https://docs.aws.amazon.com//AmazonCloudWatch/latest/monitoring/create-iam-roles-for-cloudwatch-agent) in the *Amazon CloudWatch User Guide*.
-+ The following IAM inline policy statement to read the secret Microsoft SQL Server connection string stored in AWS Systems Manager. For more information about inline policies, see [ Managed policies and inline policies](https://docs.aws.amazon.com//IAM/latest/UserGuide/access_policies_managed-vs-inline) in the *AWS Identity and Access Management User Guide*.
++ The `AmazonSSMManagedInstanceCore` role to enable Systems Manager. For more information, see [AWS Systems Manager identity-based policy examples](https://docs.aws.amazon.com/systems-manager/latest/userguide/security_iam_id-based-policy-examples) in the *AWS Systems Manager User Guide*.
++ The `CloudWatchAgentServerPolicy` policy to enable the release of instance metrics and logs to CloudWatch. For more information, see [ Create IAM roles and users for use with the CloudWatch agent](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/create-iam-roles-for-cloudwatch-agent) in the *Amazon CloudWatch User Guide*.
++ The following IAM inline policy statement to read the secret Microsoft SQL Server connection string stored in AWS Systems Manager. For more information about inline policies, see [ Managed policies and inline policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline) in the *AWS Identity and Access Management User Guide*.
 
 ------
 #### [ JSON ]
@@ -439,7 +439,7 @@ For Compute Optimizer to generate license recommendations, attach the following 
 
 ------
 
-Additionally, to enable and receive license recommendations, attach the following IAM policy to your user, group or role. For more information, [ IAM policy](https://docs.aws.amazon.com//AmazonCloudWatch/latest/monitoring/appinsights-iam) in the *Amazon CloudWatch User Guide*.
+Additionally, to enable and receive license recommendations, attach the following IAM policy to your user, group or role. For more information, [ IAM policy](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/appinsights-iam) in the *Amazon CloudWatch User Guide*.
 
 ------
 #### [ JSON ]

@@ -42,8 +42,6 @@ The following describes the syntax for using the **eb config** command to work w
 ## Options
 <a name="eb3-configoptions"></a>
 
-****
-
 |  Name  |  Description  |
 | --- | --- |
 | `--cfg {{config-name}}` | The name to use for a saved configuration.<br />This option works with **eb config save** only. |
@@ -51,45 +49,7 @@ The following describes the syntax for using the **eb config** command to work w
 | `-f {{format_type}}`<br />or<br />`--format {{format_type}}` | Specifies display format. Valid values are JSON or YAML. <br />Defaults to YAML.<br />This option works with the `--display` option only. |
 | `-﻿-﻿tags {{key1}}={{value1}}[,{{key2}}={{value2}} ...]` | Tags to add to your saved configuration. When specifying tags in the list, specify them as key=value pairs and separate each one with a comma.<br />For more information, see [Tagging saved configurations](environment-configuration-savedconfig-tagging.md).<br />This option works with **eb config save** only. |
 | `--timeout {{timeout}}` | The number of minutes before the command times out. |
-| `-u {{configuration_string}} \| {{file_path}}`<br />or<br />`--update {{configuration_string}} \| {{file_path}}` | Updates the active configuration settings for the current environment.<br />This option only works if you use the **eb config** command without any of the other subcommands.<br />The `{{configuration_string}} \| {{file_path}}` parameter is of the type string. The string provides the list of namespaces and corresponding options to add to, update, or remove from the configuration settings for your environment. Alternatively, the input string can represent a file that contains the same information.<br />To specify a file name, the input string must follow the format `"file://<{{path}}><{{filename}}>"`. To specify the file name without a `{{path}}`, save the file to the folder where you run the command. Alternatively, specify the filename by providing the full path.<br />The configuration information must meet the following conditions. At least one of the sections, **OptionSettings** or **OptionsToRemove**, is required. Use **OptionSettings** to add or change options. Use **OptionsToRemove** to remove options from a namespace. For specific examples, see the [Examples](#eb3-configexample) section later in this topic.
-
-**Example**
-*YAML Format*
-
-```
-OptionSettings:
-  namespace1:
-    option-name-1: {{option-value-1}}
-    option-name-2: {{option-value-2}}
-    ...
-OptionsToRemove:
-  namespace1:
-    option-name-1
-    option-name-2
-    ...
-```
-
-**Example**
-*JSON Format*
-
-```
-{
-   "OptionSettings": {
-      "namespace1": {
-         "option-name-1": "{{option-value-1}}",
-         "option-name-2": "{{option-value-2}}",
-         ...
-      }
-   },
-   "OptionsToRemove": {
-      "namespace1": {
-         "option-name-1",
-         "option-name-2",
-         ...
-      }
-   }
-}
-``` |
+| `-u {{configuration_string}} \| {{file_path}}`<br />or<br />`--update {{configuration_string}} \| {{file_path}}` | Updates the active configuration settings for the current environment.<br />This option only works if you use the **eb config** command without any of the other subcommands.<br />The `{{configuration_string}} \| {{file_path}}` parameter is of the type string. The string provides the list of namespaces and corresponding options to add to, update, or remove from the configuration settings for your environment. Alternatively, the input string can represent a file that contains the same information.<br />To specify a file name, the input string must follow the format `"file://<{{path}}><{{filename}}>"`. To specify the file name without a `{{path}}`, save the file to the folder where you run the command. Alternatively, specify the filename by providing the full path.<br />The configuration information must meet the following conditions. At least one of the sections, **OptionSettings** or **OptionsToRemove**, is required. Use **OptionSettings** to add or change options. Use **OptionsToRemove** to remove options from a namespace. For specific examples, see the [Examples](#eb3-configexample) section later in this topic.*YAML Format*<pre>OptionSettings:<br />  namespace1:<br />    option-name-1: {{option-value-1}}<br />    option-name-2: {{option-value-2}}<br />    ...<br />OptionsToRemove:<br />  namespace1:<br />    option-name-1<br />    option-name-2<br />    ...</pre>*JSON Format*<pre>{<br />   "OptionSettings": {<br />      "namespace1": {<br />         "option-name-1": "{{option-value-1}}",<br />         "option-name-2": "{{option-value-2}}",<br />         ...<br />      }<br />   },<br />   "OptionsToRemove": {<br />      "namespace1": {<br />         "option-name-1",<br />         "option-name-2",<br />         ...<br />      }<br />   }<br />}</pre> |
 | [Common options](eb3-cmd-options.md) |  |
 
 ## Output

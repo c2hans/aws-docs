@@ -8,7 +8,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 <a name="aws-resource-chatbot-microsoftteamschannelconfiguration"></a>
 
 **Note**
-AWS Chatbot is now Amazon Q Developer. [Learn more](https://docs.aws.amazon.com//chatbot/latest/adminguide/service-rename.html)
+AWS Chatbot is now Amazon Q Developer. [Learn more](https://docs.aws.amazon.com/chatbot/latest/adminguide/service-rename.html)
 `Type` attribute values remain unchanged.
 
 The `AWS::Chatbot::MicrosoftTeamsChannelConfiguration` resource configures a Microsoft Teams channel to allow users to use Amazon Q Developer with CloudFormation templates.

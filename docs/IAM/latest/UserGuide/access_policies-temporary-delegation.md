@@ -33,7 +33,7 @@ The process works as follows:
 
 1. You review the requested permissions and determine whether to approve, deny, or forward the request to your administrator.
 
-1. Once you or your administrator approves the request, the product provider can obtain approver's temporary credentials to perform the required tasks.
+1. After you or your administrator approves the request, the product provider can obtain approver's temporary credentials to perform the required tasks.
 
 1. Product provider access automatically expires after the specified time period. However, any IAM role created through the temporary delegation request persists beyond this period, allowing the product provider to continue accessing resources and actions for ongoing management tasks.
 
@@ -44,9 +44,9 @@ You can only delegate permissions to a product provider if you have permissions 
 
 If the permission check shows it is likely to succeed, you can approve the temporary delegation request and continue with the workflow.
 
-If the permission check shows that you may not have sufficient permissions, forward the request to your administrator for approval. We recommend notifying your administrator about this request using your preferred method such as an email or a ticket.
+If the permission check shows that you might not have sufficient permissions, forward the request to your administrator for approval. We recommend notifying your administrator about this request using your preferred method such as an email or a ticket.
 
-Once your administrator approves the request, what happens next depends on the product provider's configuration:
+After your administrator approves the request, what happens next depends on the product provider's configuration:
 + If the product provider requested immediate access, they automatically receive temporary permissions and the access duration begins.
 + If the product provider requested release by the owner (initial recipient), you must return to the request to explicitly share temporary account access before the access duration begins. Product providers typically use this option when they need additional input from you, such as resource selection or configuration details, to complete the required task.
 

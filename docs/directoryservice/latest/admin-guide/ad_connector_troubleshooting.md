@@ -55,7 +55,7 @@ AD Connector uses the Active Directory Site whose subnet IP address ranges are c
 + Inconsistencies in DNS SRV records (These records use the following syntax: `_ldap._tcp.<DnsDomainName>` and `_kerberos._tcp.<DnsDomainName>`) created in customer managed Active Directory domain. This can occur when AD Connector couldn't find and connect to a valid domain controller based on these SRV records.
 + Networking issues between AD Connector and customer managed AD such as firewall devices.
 
-You can use [network packet capture](https://techcommunity.microsoft.com/blog/iis-support-blog/capture-a-network-trace-without-installing-anything--capture-a-network-trace-of-/376503) on your domain controllers, DNS servers, and VPC flow logs of directory network interfaces to investigate this issue. Contact [AWS Support](https://docs.aws.amazon.com//awssupport/latest/user/case-management.html) for further assistance.
+You can use [network packet capture](https://techcommunity.microsoft.com/blog/iis-support-blog/capture-a-network-trace-without-installing-anything--capture-a-network-trace-of-/376503) on your domain controllers, DNS servers, and VPC flow logs of directory network interfaces to investigate this issue. Contact [AWS Support](https://docs.aws.amazon.com/awssupport/latest/user/case-management.html) for further assistance.
 
 ## Connectivity issues
 <a name="ad_connector_connectivity_issues"></a>
@@ -165,7 +165,7 @@ The Certificate Authority (CA) certificates should be uploaded to the AD Connect
     certutil -dspublish -f {{Third_Party_CA.cer}} NTAuthCA
     ```
 
-For more information about publishing certificates to the NTAuth store, see [Import the issuing CA certificate into the Enterprise NTAuth store](https://docs.aws.amazon.com//whitepapers/latest/access-workspaces-with-access-cards/import-the-issuing-ca-certificate-into-the-enterprise-ntauth-store.html) in *Access Amazon WorkSpaces with Common Access Cards Installation Guide*.
+For more information about publishing certificates to the NTAuth store, see [Import the issuing CA certificate into the Enterprise NTAuth store](https://docs.aws.amazon.com/whitepapers/latest/access-workspaces-with-access-cards/import-the-issuing-ca-certificate-into-the-enterprise-ntauth-store.html) in *Access Amazon WorkSpaces with Common Access Cards Installation Guide*.
 
 **You can check to see if the user certificate or CA chain certificates are verified by OCSP by following this procedure:**
 
@@ -191,7 +191,7 @@ This can occur if the hard drive on your domain controller runs out of space. En
 ### I receive "An error has occurred" or "An unexpected error" when I try to update the AD Connector service account
 <a name="error_unexpected_error"></a>
 
- The following errors or symptoms occur while searching users in AWS Enterprise Applications such as [Amazon WorkSpaces Console Launch Wizard](https://docs.aws.amazon.com//workspaces/latest/adminguide/launch-workspace-ad-connector.html#create-workspace-ad-connector):
+ The following errors or symptoms occur while searching users in AWS Enterprise Applications such as [Amazon WorkSpaces Console Launch Wizard](https://docs.aws.amazon.com/workspaces/latest/adminguide/launch-workspace-ad-connector.html#create-workspace-ad-connector):
 + An Error Has Occurred. If you continue to experience an issue contact the AWS Support Team on the community forums and via AWS Premium Support.
 + An Error Has Occurred. Your directory needs a credential update. Please update the directory credentials.
 
@@ -329,5 +329,5 @@ The [DirectoryServicePortTest](samples/DirectoryServicePortTest.zip) testing too
 You can use the built-in Windows package capture utility ([netsh](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/jj129382(v=ws.11))) to investigate and troubleshoot potential network or Active Directory communication (ldap and kerberos) issue. For more information, see [Capture a Network Trace without installing anything](https://techcommunity.microsoft.com/t5/iis-support-blog/capture-a-network-trace-without-installing-anything-amp-capture/ba-p/376503).
 
 **VPC Flow logs**
-To better understand what requests are being received and sent from AD Connector, you can configure [VPC flow logs](https://docs.aws.amazon.com//vpc/latest/userguide/working-with-flow-logs.html) for the directory network interfaces. You can identify all network interfaces reserved for use with Directory Service by the description: `AWS created network interface for directory {{your-directory-id}}`.
+To better understand what requests are being received and sent from AD Connector, you can configure [VPC flow logs](https://docs.aws.amazon.com/vpc/latest/userguide/working-with-flow-logs.html) for the directory network interfaces. You can identify all network interfaces reserved for use with Directory Service by the description: `AWS created network interface for directory {{your-directory-id}}`.
 A simple use case is during AD Connector creation with a customer managed Active Directory domain with a large number of domain controllers. You can use VPC flow logs and filter by the Kerberos port (88) to find out what domain controllers in the customer managed Active Directory are being contacted for authentication.

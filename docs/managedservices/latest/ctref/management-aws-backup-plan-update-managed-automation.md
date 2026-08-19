@@ -14,8 +14,6 @@ Update an existing backup plan. Please note that any changes that you make to a 
 ## Change Type Details
 <a name="ct-1ay83wy4vxa3k-MABu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1ay83wy4vxa3k |

@@ -14,8 +14,6 @@ Remove a stale computer object from Microsoft Active Directory (AD) and the corr
 ## Change Type Details
 <a name="ct-3d0lrfb8eckuu-MDCr-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-3d0lrfb8eckuu |

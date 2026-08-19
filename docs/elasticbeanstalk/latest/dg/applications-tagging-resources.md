@@ -12,7 +12,7 @@ You can apply tags to resources of your AWS Elastic Beanstalk applications. Tags
 Here are some ways to use tagging with Elastic Beanstalk resources:
 + *Deployment stages* – Identify resources associated with different stages of your application, such as development, beta, and production.
 + *Cost allocation* – Use cost allocation reports to track your usage of AWS resources associated with various expense accounts. The reports include both tagged and untagged resources, and they aggregate costs according to tags. For information about how cost allocation reports use tags, see [Use Cost Allocation Tags for Custom Billing Reports](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/allocation.html) in the *AWS Billing and Cost Management User Guide*.
-+ *Access control* – Use tags to manage permissions to requests and resources. For example, a user who can only create and manage beta environments should only have access to beta stage resources. For details, see [Using tags to control access to Elastic Beanstalk resourcesExamples of tag conditions in policies](AWSHowTo.iam.policies.access-tags.md).
++ *Access control* – Use tags to manage permissions to requests and resources. For example, a user who can only create and manage beta environments should only have access to beta stage resources. For details, see [Using tags to control access to Elastic Beanstalk resources](AWSHowTo.iam.policies.access-tags.md).
 
 You can add up to 50 tags to each resource. Environments are slightly different: Elastic Beanstalk adds three default system tags to environments, and you can't edit or delete these tags. In addition to the default tags, you can add up to 47 additional tags to each environment.
 

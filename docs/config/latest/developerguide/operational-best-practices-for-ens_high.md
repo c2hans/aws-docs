@@ -11,8 +11,6 @@ The following provides a sample mapping between Spain Esquema Nacional de Seguri
 
 This sample conformance pack template contains mappings to controls within the Spain ENS High framework, as last updated on 2021/07/09.
 
-****
-
 | Control ID  | AWS Config Rule  | Guidance  |
 | --- | --- | --- |
 | Anexo II 4.1.1.ALTO | annual-risk-assessment-performed (Process check) | Perform an annual risk assessment on your organization. Risk assessments can assist in determining the likelihood and impact of identified risks and/or vulnerabilities affecting an organization. |

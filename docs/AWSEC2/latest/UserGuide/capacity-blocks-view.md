@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/capacity-blocks-
 
 After you reserve a Capacity Block, you can view the Capacity Block reservation in your AWS account. You can view the `start-date` and `end-date` to see when your reservation will begin and end. Before a Capacity Block reservation begins, the available capacity appears as zero. You can see how many instances will be available in your Capacity Block by the tag value for the tag key `aws:ec2capacityreservation:incrementalRequestedQuantity`.
 
-When a Capacity Block reservation begins, the reservation state changes from `scheduled` to `active`. We emit an event through Amazon EventBridge to notify you that the Capacity Block is available to use. For more information, see [Monitor Capacity Blocks using EventBridge](capacity-blocks-monitor.md).
+When a Capacity Block reservation begins, the reservation state changes from `scheduled` to `active`. An event is emitted through Amazon EventBridge to notify you that the Capacity Block is available to use. For more information, see [Monitor Capacity Blocks using EventBridge](capacity-blocks-monitor.md).
 
 Capacity Blocks have the following states:
 + `payment-pending` – The upfront payment hasn't been processed yet.

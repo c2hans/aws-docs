@@ -147,8 +147,6 @@ A grantee can use the temporary credential vended by S3 Access Grants to perform
 **Note**
 In addition to the Amazon S3 permissions listed below, Amazon S3 can call the AWS Key Management Service (AWS KMS) [Decrypt](https://docs.aws.amazon.com/kms/latest/APIReference/API_Decrypt.html) (`kms:decrypt`) `READ` permission or the AWS KMS [GenerateDataKey](https://docs.aws.amazon.com/kms/latest/APIReference/API_GenerateDataKey.html) (`kms:generateDataKey`) `WRITE` permission. These permissions don't allow direct access to the AWS KMS key.
 
-****
-
 | S3 IAM action | API action & doc | S3 Access Grants Permission | S3 resource |
 | --- | --- | --- | --- |
 | s3:GetObject | [GetObject](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html) | READ | Object |

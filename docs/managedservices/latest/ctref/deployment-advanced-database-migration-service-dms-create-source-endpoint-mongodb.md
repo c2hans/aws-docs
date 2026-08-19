@@ -14,8 +14,6 @@ Use to create a Database Migration Service (DMS) source endpoint for MongoDB.
 ## Change Type Details
 <a name="ct-2hxcllf1b4ey0-DADc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2hxcllf1b4ey0 |

@@ -81,7 +81,7 @@ The Simple Authentication and Security Layer (SASL) method replaces the clientâ€
 
 **Important**
 Apache Kafka and Amazon MSK accept resolved certificates. This is a known limitation of Kafka and Amazon MSK to be addressed. For more information, see [Apache Kafka issues, KAFKA-3700](https://issues.apache.org/jira/browse/KAFKA-3700).
-If you're using Amazon MSK, consider using access control lists (ACLs) as a workaround to this known limitation. For more information about using ACLs, see [Apache Kafka ACLs](https://docs.aws.amazon.com//msk/latest/developerguide/msk-acls.html) section of *Amazon Managed Streaming for Apache Kafka Developer Guide*.
+If you're using Amazon MSK, consider using access control lists (ACLs) as a workaround to this known limitation. For more information about using ACLs, see [Apache Kafka ACLs](https://docs.aws.amazon.com/msk/latest/developerguide/msk-acls.html) section of *Amazon Managed Streaming for Apache Kafka Developer Guide*.
 If you're using a self-managed Kafka cluster, see [Comment dated 21/Oct/18](https://issues.apache.org/jira/browse/KAFKA-3700?focusedCommentId=16658376) for information about configuring your cluster.
 
 ### Using SSL encryption with Amazon MSK or a self-managed Kafka cluster

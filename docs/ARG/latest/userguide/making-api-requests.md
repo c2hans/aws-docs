@@ -15,7 +15,7 @@ An *endpoint* is a URL that serves as an entry point for a web service. You can 
 ## Query parameters
 <a name="query-parameters"></a>
 
-Each query request must include some common parameters to handle authentication and selection of an action. For more information, see [Common Parameters](https://docs.aws.amazon.com//ARG/latest/APIReference/CommonParameters.html) in the *AWS Resource Groups API Reference*.
+Each query request must include some common parameters to handle authentication and selection of an action. For more information, see [Common Parameters](https://docs.aws.amazon.com/ARG/latest/APIReference/CommonParameters.html) in the *AWS Resource Groups API Reference*.
 
 Some API operations take lists of parameters. These lists are specified using the following notation:
 

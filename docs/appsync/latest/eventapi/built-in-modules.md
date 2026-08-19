@@ -1182,7 +1182,7 @@ export const onPublish = {
 ### Casting
 <a name="built-in-rds-modules-casting"></a>
 
-In some cases, you might require more specificity about the correct object type to use in your statement. You can use the provided type hints to specify the type of your parameters. AWS AppSync supports the [same type hints](https://docs.aws.amazon.com//rdsdataservice/latest/APIReference/API_SqlParameter.html#rdsdtataservice-Type-SqlParameter-typeHint) as the Data API. You can cast your parameters by using the `typeHint` functions from the AWS AppSync `rds` module.
+In some cases, you might require more specificity about the correct object type to use in your statement. You can use the provided type hints to specify the type of your parameters. AWS AppSync supports the [same type hints](https://docs.aws.amazon.com/rdsdataservice/latest/APIReference/API_SqlParameter.html#rdsdtataservice-Type-SqlParameter-typeHint) as the Data API. You can cast your parameters by using the `typeHint` functions from the AWS AppSync `rds` module.
 
 The following example allows you to send an array as a value that is casted as a JSON object. We use the `->` operator to retrieve the element at the `index` `2` in the JSON array.
 

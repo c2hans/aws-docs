@@ -55,7 +55,7 @@ If you don't have any tests available, choose **Built-in: Fuzz** to run a standa
    + If you created your own device pool earlier, for **Device pool**, choose your device pool.
    + Select **Manually select devices** and choose the desired devices you want to run against. This configuration will not be saved.
 
-   For more information, see [Device support in AWS Device FarmDevices](devices.md).
+   For more information, see [Device support in AWS Device Farm](devices.md).
 
 1. (Optional) To configure run-level properties, update the **Run Settings** section. Here you can do the following:
    + Assign your run with a custom **Run name**. If no name is provided, the Device Farm console will name your run 'My Device Farm run' by default.
@@ -504,6 +504,6 @@ For information about using the Device Farm API, see [Automating Device Farm](ap
 ## Next steps
 <a name="how-to-create-test-run-console-next-steps"></a>
 
-In the Device Farm console, the clock icon ![Device Farm scheduled a job.](http://docs.aws.amazon.com/devicefarm/latest/developerguide/images/df-run-calendar.png) changes to a result icon such as success ![The test succeeded.](http://docs.aws.amazon.com/devicefarm/latest/developerguide/images/df-run-success.png) when the run is complete. A report for the run appears as soon as tests are complete. For more information, see [Reports in AWS Device FarmReports](reports.md).
+In the Device Farm console, the clock icon ![Device Farm scheduled a job.](http://docs.aws.amazon.com/devicefarm/latest/developerguide/images/df-run-calendar.png) changes to a result icon such as success ![The test succeeded.](http://docs.aws.amazon.com/devicefarm/latest/developerguide/images/df-run-success.png) when the run is complete. A report for the run appears as soon as tests are complete. For more information, see [Reports in AWS Device Farm](reports.md).
 
 To use the report, follow the instructions in [Viewing test reports in Device Farm](how-to-use-reports.md).

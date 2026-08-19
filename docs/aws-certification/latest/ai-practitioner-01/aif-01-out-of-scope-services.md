@@ -47,7 +47,6 @@ The following list contains AWS services and features that are out of scope for 
 + Amazon Simple Email Service (Amazon SES)
 + AWS Supply Chain
 + AWS Wickr
-+ Amazon WorkMail
 
 ## Cloud Financial Management
 <a name="aif-01-out-of-scope-cloud-financial-management"></a>
@@ -99,7 +98,6 @@ The following list contains AWS services and features that are out of scope for 
 ## Frontend Web and Mobile
 <a name="aif-01-out-of-scope-frontend-web-mobile"></a>
 + AWS Amplify
-+ AWS AppSync
 + AWS Device Farm
 + Amazon Location Service
 

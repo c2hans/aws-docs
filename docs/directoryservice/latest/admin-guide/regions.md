@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/regi
 
 The following table provides a list describing which Region-specific endpoints are supported by directory type.
 
-****
-
 | Region name | Region | Endpoint | Protocol | AWS Managed Microsoft AD (Standard and Enterprise Editions) | AWS Managed Microsoft AD (Hybrid Edition) | AD Connector | Simple AD |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | US East (N. Virginia) | us-east-1 | ds.us-east-1.amazonaws.com | HTTPS |  ![](http://docs.aws.amazon.com/directoryservice/latest/admin-guide/images/icon-yes.png) Yes |  ![](http://docs.aws.amazon.com/directoryservice/latest/admin-guide/images/icon-yes.png) Yes |  ![](http://docs.aws.amazon.com/directoryservice/latest/admin-guide/images/icon-yes.png) Yes |  ![](http://docs.aws.amazon.com/directoryservice/latest/admin-guide/images/icon-yes.png) Yes |
@@ -61,8 +59,6 @@ The following table provides a list describing which Region-specific endpoints a
 
  The following table provides a list of the Region-specific endpoints that Directory Service Data supports by directory type.
 
-****
-
 | Region name | Region | Endpoint | Protocol | AWS Managed Microsoft AD | AD Connector | Simple AD |
 | --- | --- | --- | --- | --- | --- | --- |
 | US East (Ohio) | us-east-2 | ds-data.us-east-2.amazonaws.com | HTTPS |  ![](http://docs.aws.amazon.com/directoryservice/latest/admin-guide/images/icon-yes.png) Yes |  ![](http://docs.aws.amazon.com/directoryservice/latest/admin-guide/images/icon-no.png) No |  ![](http://docs.aws.amazon.com/directoryservice/latest/admin-guide/images/icon-no.png) No |
@@ -84,4 +80,4 @@ The following table provides a list describing which Region-specific endpoints a
 | Europe (Stockholm) | eu-north-1 | ds-data.eu-north-1.amazonaws.com | HTTPS |  ![](http://docs.aws.amazon.com/directoryservice/latest/admin-guide/images/icon-yes.png) Yes |  ![](http://docs.aws.amazon.com/directoryservice/latest/admin-guide/images/icon-no.png) No |  ![](http://docs.aws.amazon.com/directoryservice/latest/admin-guide/images/icon-no.png) No |
 | South America (São Paulo) | sa-east-1 | ds-data.sa-east-1.amazonaws.com | HTTPS |  ![](http://docs.aws.amazon.com/directoryservice/latest/admin-guide/images/icon-yes.png) Yes |  ![](http://docs.aws.amazon.com/directoryservice/latest/admin-guide/images/icon-no.png) No |  ![](http://docs.aws.amazon.com/directoryservice/latest/admin-guide/images/icon-no.png) No |
 
- For information about the FIPS endpoints that Directory Service Data supports, see [Directory Service Data endpoints and quotas](https://docs.aws.amazon.com//general/latest/gr/ds_region.html) in the *AWS General Reference Reference Guide*.
+ For information about the FIPS endpoints that Directory Service Data supports, see [Directory Service Data endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/ds_region.html) in the *AWS General Reference Reference Guide*.

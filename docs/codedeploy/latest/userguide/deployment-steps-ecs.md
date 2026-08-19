@@ -24,8 +24,6 @@ This topic provides information about the components and workflow of CodeDeploy 
 
  Before you begin an Amazon ECS application deployment, you must have the following ready. Some requirements are specified when you create your deployment group, and some are specified in the AppSpec file.
 
-****
-
 | Requirement | Where specified |
 | --- | --- |
 | Amazon ECS cluster | Deployment group |
@@ -114,13 +112,9 @@ Lambda functions in a hook are optional.
 
 1. <a name="ecs-before-install"></a>
 
-****
-
    Execute any Lambda functions specified in the `BeforeInstall` hook in the AppSpec file.
 
 1. <a name="ecs-install"></a>
-
-****
 
    During the `Install` lifecycle event:
 
@@ -135,20 +129,14 @@ Lambda functions in a hook are optional.
 
 1. <a name="ecs-after-install"></a>
 
-****
-
    Execute any Lambda functions specified in the `AfterInstall` hook in the AppSpec file.
 
 1. <a name="ecs-allow-test-traffic"></a>
-
-****
 
    The `AllowTestTraffic` event is invoked. During this lifecycle event, the test listener routes traffic to the updated containerized application.
 ![The test listener routes traffic to the updated containerized application.](http://docs.aws.amazon.com/codedeploy/latest/userguide/images/codedeploy-ecs-deployment-step-3.png)
 
 1. <a name="ecs-after-allow-test-traffic"></a>
-
-****
 
    Execute any Lambda functions specified in the `AfterAllowTestTraffic` hook in the AppSpec file. Lambda functions can validate the deployment using the test traffic. For example, a Lambda function can serve traffic to the test listener and track metrics from the replacement task set. If rollbacks are configured, you can configure a CloudWatch alarm that triggers a rollback when the validation test in your Lambda function fails.
 
@@ -161,26 +149,18 @@ Lambda functions in a hook are optional.
 
 1. <a name="ecs-before-allow-traffic"></a>
 
-****
-
    Execute any Lambda functions specified in the `BeforeAllowTraffic` hook in the AppSpec file.
 
 1. <a name="ecs-allow-traffic"></a>
-
-****
 
    The `AllowTraffic` event is invoked. Production traffic is rerouted from the original task set to the replacement task set. The following diagram shows the replacement task set receiving production traffic.
 ![The replacement task set receives production traffic.](http://docs.aws.amazon.com/codedeploy/latest/userguide/images/codedeploy-ecs-deployment-step-4.png)
 
 1. <a name="ecs-after-allow-traffic"></a>
 
-****
-
    Execute any Lambda functions specified in the `AfterAllowTraffic` hook in the AppSpec file.
 
 1.
-
-****
 
    After all events succeed, the deployment status is set to `Succeeded` and the original task set is removed.
 ![All events succeeding.](http://docs.aws.amazon.com/codedeploy/latest/userguide/images/codedeploy-ecs-deployment-step-6.png)

@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsi
 
 AWS IoT Device Tester provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="iot-device-tester-CheckVersion"></a>[CheckVersion](https://docs.aws.amazon.com/freertos/latest/userguide/dev-tester-prereqs.html) | IoT Device Tester to check if a given set of product, test suite and device tester version are compatible | Read |

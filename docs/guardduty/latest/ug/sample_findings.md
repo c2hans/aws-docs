@@ -22,8 +22,6 @@ The GuardDuty console helps you generate one of each finding type. To generate o
 
 Use the following procedure to generate sample findings. This process generates one sample finding for each GuardDuty finding type.
 
-****
-
 1. Open the GuardDuty console at [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/).
 
 1. In the navigation pane, choose **Settings**.

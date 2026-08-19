@@ -116,14 +116,14 @@ To review the permissions for this policy, see [AmazonSecurityLakeAdministrator]
 
 Security Lake uses the service-linked role named `AWSServiceRoleForSecurityLake` to create and operate the security data lake.
 
-You can't attach the `SecurityLakeServiceLinkedRole` managed policy to your IAM entities. This policy is attached to a service-linked role that permits Security Lake to perform actions on your behalf. For more information, see [Service-linked role permissions for Security Lake](https://docs.aws.amazon.com//security-lake/latest/userguide/slr-permissions.html).
+You can't attach the `SecurityLakeServiceLinkedRole` managed policy to your IAM entities. This policy is attached to a service-linked role that permits Security Lake to perform actions on your behalf. For more information, see [Service-linked role permissions for Security Lake](https://docs.aws.amazon.com/security-lake/latest/userguide/slr-permissions.html).
 
 ## AWS managed policy: SecurityLakeResourceManagementServiceRolePolicy
 <a name="security-iam-awsmanpol-SecurityLakeServiceLinkedRole-ResourceManagement"></a>
 
 Security Lake uses the service-linked role named `AWSServiceRoleForSecurityLakeResourceManagement` to perform ongoing monitoring and performance improvements, which can reduce latency and costs. Provides access to manage resources created by Security Lake. Grants Security Lake the ability to delete SecurityLake\_Glue\_Partition\_Updater\_Lambda. This lambda has been deprecated for customers that have performed iceberg migration and moved on to v2 sources. This lambda was using Python 3.9 runtime which will be deprecated in December. Rather than updating the runtime for this lambda for those customers, it would be better to delete them. We have a recovery process that will determine if the customer still needs the lambda or not and delete them if they do not. This SLR update is required in order to allow us to delete that lambda.
 
-You can't attach the `SecurityLakeResourceManagementServiceRolePolicy` managed policy to your IAM entities. This policy is attached to a service-linked role that permits Security Lake to perform actions on your behalf. For more information, see [Service-linked role permissions for resource management](https://docs.aws.amazon.com//security-lake/latest/userguide/AWSServiceRoleForSecurityLakeResourceManagement.html).
+You can't attach the `SecurityLakeResourceManagementServiceRolePolicy` managed policy to your IAM entities. This policy is attached to a service-linked role that permits Security Lake to perform actions on your behalf. For more information, see [Service-linked role permissions for resource management](https://docs.aws.amazon.com/security-lake/latest/userguide/AWSServiceRoleForSecurityLakeResourceManagement.html).
 
 **Permissions details**
 

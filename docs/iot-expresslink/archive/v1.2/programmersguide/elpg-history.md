@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/iot-expresslink/archive/v1.2/programmers
 
 The following table describes important changes to the AWS IoT ExpressLink Programmer's Guide starting with v1.0. We also update the documentation to address any errors found or feedback received.
 
-****
-
 | Change | Description | Date |
 | --- | --- | --- |
 | version 1.2 | The following sections and tables were updated:+  [Table 1 - Error codes](elpg-commands.md#elpg-table1) - New error codes were introduced:   27 : BLE ERROR   28 : CONFIGURATION ERROR   <br />+  [Table 2 - Configuration Dictionary Persistent Keys](elpg-configuration-dictionary.md#elpg-table2) - Added new non-persistent configuration parameters:   BLECentral\#    BLEPeripheral    BLEGATT\#    <br />+  [Table 4 - ExpressLink event codes](elpg-event-handling.md#elpg-table4) - New BLE Events introduced. <br />+  [12 Bluetooth Low Energy](elpg-ble.md) - New BLE commands introduced.  | October 27, 2023 |

@@ -25,8 +25,6 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_xray-actions-as-permissions).
 
-****
-
 - **   BatchGetTraces  **
   - **IAM action:**  [xray:BatchGetTraces](#list_xray-action-BatchGetTraces)
   - **Condition key:**
@@ -255,8 +253,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
 <a name="list_xray-actions-as-permissions"></a>
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
-
-****
 
 - **   [BatchGetTraces](https://docs.aws.amazon.com/xray/latest/api/API_BatchGetTraces.html)  **
   - **Description:** Grants permission to retrieve a list of traces specified by ID. Each trace is a collection of segment documents that originates from a single request. Use GetTraceSummaries to get a list of trace IDs
@@ -497,8 +493,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 The following actions are defined by AWS X-Ray but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 | Actions | Description | Resource types (\*required) | Condition keys | Access level |
 | --- | --- | --- | --- | --- |
 |   [BatchGetTraceSummaryById](https://docs.aws.amazon.com/xray/latest/devguide/security_iam_id-based-policy-examples.html#security_iam_id-based-policy-examples-console)  | Grants permission to retrieve metadata for a list of traces specified by ID |  |   | Read |
@@ -511,8 +505,6 @@ The following actions are defined by AWS X-Ray but are not directly invocable th
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
 
-****
-
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
 |  [group](https://docs.aws.amazon.com/xray/latest/devguide/xray-concepts.html#xray-concepts-groups)  | arn:${Partition}:xray:${Region}:${Account}:group/${GroupName}/${Id} | [aws:ResourceTag/${TagKey}](#list_xray-aws_ResourceTag___TagKey_) |
@@ -522,8 +514,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_xray-policy-keys"></a>
 
 AWS X-Ray defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

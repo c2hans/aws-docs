@@ -9,7 +9,7 @@ Amazon Fraud Detector is no longer open to new customers as of November 7, 2025.
 
 An event dataset is the historical fraud data for your company. You provide this data to Amazon Fraud Detector to create fraud detection models.
 
- Amazon Fraud Detector uses machine learning models for generating fraud predictions. Each model is trained using a model type. The model type specifies the algorithms and transformations that are used for training the model. Model training is the process of using a dataset that you provide to create a model that can predict fraudulent events. For more information, see [How Amazon Fraud Detector works](https://docs.aws.amazon.com//frauddetector/latest/ug/how-frauddetector-works.html)
+ Amazon Fraud Detector uses machine learning models for generating fraud predictions. Each model is trained using a model type. The model type specifies the algorithms and transformations that are used for training the model. Model training is the process of using a dataset that you provide to create a model that can predict fraudulent events. For more information, see [How Amazon Fraud Detector works](https://docs.aws.amazon.com/frauddetector/latest/ug/how-frauddetector-works.html)
 
 The dataset used for creating fraud detection model provides details of an event. An event is a business activity that is evaluated for fraud risk. For example, an account registration can be an event. The data associated with the account registration event can be event dataset. Amazon Fraud Detector uses this dataset to evaluate account registration fraud.
 
@@ -96,7 +96,7 @@ When you create your CSV file, make sure to enter event metadata name as listed 
 | EVENT\_LABEL | You can use any labels, such as "fraud", "legit", "1", or "0". | Required if LABEL\_TIMESTAMP is included |
 | LABEL\_TIMESTAMP | It must follow the timestamp format. | Required if EVENT\_LABEL is included |
 
-For information about event variables, see [Variables](https://docs.aws.amazon.com//frauddetector/latest/ug/variables.html).
+For information about event variables, see [Variables](https://docs.aws.amazon.com/frauddetector/latest/ug/variables.html).
 
 **Important**
 If you are creating Account Takeover Insights (ATI) model, see [Preparing data](account-takeover-insights.md#preparing-training-data-ATI) for details on preparing and selecting data.
@@ -152,4 +152,4 @@ The following are some of the common issues Amazon Fraud Detector comes across w
 ## Dataset storage
 <a name="dataset-storage"></a>
 
-After you gathered your dataset, you store your dataset internally using Amazon Fraud Detector or externally with Amazon Simple Storage Service (Amazon S3). We recommend that you choose where to store your dataset based on the model you use for generating fraud predictions. For more information on model types, see [Choose a model type](https://docs.aws.amazon.com//frauddetector/latest/ug/choosing-model-type.html). For more information on storing your dataset, see [Event data storage](event-data-storage.md).
+After you gathered your dataset, you store your dataset internally using Amazon Fraud Detector or externally with Amazon Simple Storage Service (Amazon S3). We recommend that you choose where to store your dataset based on the model you use for generating fraud predictions. For more information on model types, see [Choose a model type](https://docs.aws.amazon.com/frauddetector/latest/ug/choosing-model-type.html). For more information on storing your dataset, see [Event data storage](event-data-storage.md).

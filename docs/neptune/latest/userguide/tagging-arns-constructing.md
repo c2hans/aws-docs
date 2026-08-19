@@ -11,8 +11,6 @@ You can construct an ARN for an Amazon Neptune resource using the following synt
 
 The following table shows the format that you should use when constructing an ARN for a particular Neptune administrative resource type.
 
-****
-
 | Resource Type | ARN Format |
 | --- | --- |
 | DB instance  | arn:aws:rds:{{<region>}}:{{<account>}}`:db:`{{<name>}}<br />For example:<pre>arn:aws:rds:{{us-east-2}}:{{123456789012}}:db:{{my-instance-1}}</pre> |

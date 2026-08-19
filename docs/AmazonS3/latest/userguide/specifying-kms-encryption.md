@@ -19,7 +19,7 @@ You can specify SSE-KMS by using the Amazon S3 console, REST API operations, AWS
 You can use multi-Region AWS KMS keys in Amazon S3. However, Amazon S3 currently treats multi-Region keys as though they were single-Region keys, and does not use the multi-Region features of the key. For more information, see [ Using multi-Region keys](https://docs.aws.amazon.com/kms/latest/developerguide/multi-region-keys-overview.html) in the *AWS Key Management Service Developer Guide*.
 
 **Note**
-If you want to use a KMS key that's owned by a different account, you must have permission to use the key. For more information about cross-account permissions for KMS keys, see [Creating KMS keys that other accounts can use](https://docs.aws.amazon.com//kms/latest/developerguide/key-policy-modifying-external-accounts.html#cross-account-console) in the *AWS Key Management Service Developer Guide*.
+If you want to use a KMS key that's owned by a different account, you must have permission to use the key. For more information about cross-account permissions for KMS keys, see [Creating KMS keys that other accounts can use](https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-modifying-external-accounts.html#cross-account-console) in the *AWS Key Management Service Developer Guide*.
 
 ## Using the S3 console
 <a name="add-object-encryption-kms"></a>
@@ -54,14 +54,14 @@ If you use the SSE-KMS option for your default encryption configuration, you are
    1. Under **AWS KMS key**, do one of the following to choose your KMS key:
       + To choose from a list of available KMS keys, choose **Choose from your AWS KMS keys**, and then choose your **KMS key** from the list of available keys.
 
-        Both the AWS managed key (`aws/s3`) and your customer managed keys appear in this list. For more information about customer managed keys, see [Customer keys and AWS keys](https://docs.aws.amazon.com//kms/latest/developerguide/concepts.html#key-mgmt) in the *AWS Key Management Service Developer Guide*.
+        Both the AWS managed key (`aws/s3`) and your customer managed keys appear in this list. For more information about customer managed keys, see [Customer keys and AWS keys](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#key-mgmt) in the *AWS Key Management Service Developer Guide*.
       + To enter the KMS key ARN, choose **Enter AWS KMS key ARN**, and then enter your KMS key ARN in the field that appears.
       + To create a new customer managed key in the AWS KMS console, choose **Create a KMS key**.
 
-        For more information about creating an AWS KMS key, see [Creating keys](https://docs.aws.amazon.com//kms/latest/developerguide/create-keys.html) in the *AWS Key Management Service Developer Guide*.
+        For more information about creating an AWS KMS key, see [Creating keys](https://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html) in the *AWS Key Management Service Developer Guide*.
 **Important**
 You can use only KMS keys that are available in the same AWS Region as the bucket. The Amazon S3 console lists only the first 100 KMS keys in the same Region as the bucket. To use a KMS key that is not listed, you must enter your KMS key ARN. If you want to use a KMS key that is owned by a different account, you must first have permission to use the key and then you must enter the KMS key ARN.
-Amazon S3 supports only symmetric encryption KMS keys, and not asymmetric KMS keys. For more information, see [Identifying symmetric and asymmetric KMS keys](https://docs.aws.amazon.com//kms/latest/developerguide/find-symm-asymm.html) in the *AWS Key Management Service Developer Guide*.
+Amazon S3 supports only symmetric encryption KMS keys, and not asymmetric KMS keys. For more information, see [Identifying symmetric and asymmetric KMS keys](https://docs.aws.amazon.com/kms/latest/developerguide/find-symm-asymm.html) in the *AWS Key Management Service Developer Guide*.
 
 1. Under **Additional copy settings**, choose whether you want to **Copy source settings**, **Don’t specify settings**, or **Specify settings**. **Copy source settings** is the default option. If you only want to copy the object without the source settings attributes, choose **Don’t specify settings**. Choose **Specify settings** to specify settings for storage class, ACLs, object tags, metadata, server-side encryption, and additional checksums.
 
@@ -127,7 +127,7 @@ For information about the encryption context in Amazon S3, see [Encryption conte
 You can use the `x-amz-server-side-encryption-aws-kms-key-id` header to specify the ID of the customer managed key that's used to protect the data. If you specify the `x-amz-server-side-encryption:aws:kms` header but don't provide the `x-amz-server-side-encryption-aws-kms-key-id` header, Amazon S3 uses the AWS managed key (`aws/s3`) to protect the data. If you want to use a customer managed key, you must provide the `x-amz-server-side-encryption-aws-kms-key-id` header of the customer managed key.
 
 **Important**
-When you use an AWS KMS key for server-side encryption in Amazon S3, you must choose a symmetric encryption KMS key. Amazon S3 supports only symmetric encryption KMS keys. For more information about these keys, see [Symmetric encryption KMS keys](https://docs.aws.amazon.com//kms/latest/developerguide/concepts.html#symmetric-cmks) in the *AWS Key Management Service Developer Guide*.
+When you use an AWS KMS key for server-side encryption in Amazon S3, you must choose a symmetric encryption KMS key. Amazon S3 supports only symmetric encryption KMS keys. For more information about these keys, see [Symmetric encryption KMS keys](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#symmetric-cmks) in the *AWS Key Management Service Developer Guide*.
 
 ### S3 Bucket Keys (`x-amz-server-side-encryption-aws-bucket-key-enabled`)
 <a name="bucket-key-api"></a>
@@ -141,13 +141,13 @@ If you specify the `x-amz-server-side-encryption:aws:kms` header but don't provi
 
 To use the following example AWS CLI commands, replace the `{{user input placeholders}}` with your own information.
 
-When you upload a new object or copy an existing object, you can specify the use of server-side encryption with AWS KMS keys to encrypt your data. To do this, add the `--server-side-encryption aws:kms` header to the request. Use the `--ssekms-key-id {{example-key-id}}` to add your [customer managed AWS KMS key](https://docs.aws.amazon.com//kms/latest/developerguide/concepts.html#customer-cmk) that you created. If you specify `--server-side-encryption aws:kms`, but don't provide an AWS KMS key ID, Amazon S3 will use an AWS managed key.
+When you upload a new object or copy an existing object, you can specify the use of server-side encryption with AWS KMS keys to encrypt your data. To do this, add the `--server-side-encryption aws:kms` header to the request. Use the `--ssekms-key-id {{example-key-id}}` to add your [customer managed AWS KMS key](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#customer-cmk) that you created. If you specify `--server-side-encryption aws:kms`, but don't provide an AWS KMS key ID, Amazon S3 will use an AWS managed key.
 
 ```
 aws s3api put-object --bucket {{amzn-s3-demo-bucket}} --key {{example-object-key}} --server-side-encryption aws:kms --ssekms-key-id {{example-key-id}} --body {{filepath}}
 ```
 
-You can additionally enable or disable Amazon S3 Bucket Keys on your PUT or COPY operations by adding `--bucket-key-enabled` or `--no-bucket-key-enabled`. Amazon S3 Bucket Keys can reduce your AWS KMS request costs by decreasing the request traffic from Amazon S3 to AWS KMS. For more information, see [Reducing the cost of SSE-KMS with Amazon S3 Bucket Keys](https://docs.aws.amazon.com//AmazonS3/latest/userguide/bucket-key.html).
+You can additionally enable or disable Amazon S3 Bucket Keys on your PUT or COPY operations by adding `--bucket-key-enabled` or `--no-bucket-key-enabled`. Amazon S3 Bucket Keys can reduce your AWS KMS request costs by decreasing the request traffic from Amazon S3 to AWS KMS. For more information, see [Reducing the cost of SSE-KMS with Amazon S3 Bucket Keys](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-key.html).
 
 ```
 aws s3api put-object --bucket {{amzn-s3-demo-bucket}} --key {{example-object-key}} --server-side-encryption aws:kms --bucket-key-enabled --body {{filepath}}
@@ -165,7 +165,7 @@ aws s3api copy-object --bucket {{amzn-s3-demo-bucket}} --key {{example-object-ke
 When using AWS SDKs, you can request Amazon S3 to use AWS KMS keys for server-side encryption. The following examples show how to use SSE-KMS with the AWS SDKs for Java and .NET. For information about other SDKs, see [Sample code and libraries](https://aws.amazon.com/code) on the AWS Developer Center.
 
 **Important**
-When you use an AWS KMS key for server-side encryption in Amazon S3, you must choose a symmetric encryption KMS key. Amazon S3 supports only symmetric encryption KMS keys. For more information about these keys, see [Symmetric encryption KMS keys](https://docs.aws.amazon.com//kms/latest/developerguide/concepts.html#symmetric-cmks) in the *AWS Key Management Service Developer Guide*.
+When you use an AWS KMS key for server-side encryption in Amazon S3, you must choose a symmetric encryption KMS key. Amazon S3 supports only symmetric encryption KMS keys. For more information about these keys, see [Symmetric encryption KMS keys](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#symmetric-cmks) in the *AWS Key Management Service Developer Guide*.
 
 ### `CopyObject` operation
 <a name="kms-copy-operation"></a>

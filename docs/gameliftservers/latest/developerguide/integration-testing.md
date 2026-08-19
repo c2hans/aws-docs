@@ -79,8 +79,8 @@ For an Anywhere fleet, you need to manually configure certain game server settin
 <a name="integration-testing-test"></a>
 
 Test your game server integration by working with game sessions. If you don't have a game client integrated with Amazon GameLift Servers functionality, you can use the AWS CLI to start game sessions. Try the following scenarios:
-+ **Create a game session.** Call [create-game-session ](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/gamelift/create-game-session.html) command (or the [ CreateGameSession](https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_CreateGameSession.html) API operation). Specify your Anywhere fleet's ID and custom location. This call returns a unique identifier for the new game session.
-+ **Check game session status. **Call [describe-game-sessions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/gamelift/describe-game-sessions.html) command (or the [DescribeGameSessions](https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_DescribeGameSessions.html) API action). Specify the game session ID. This call returns detailed game session information, including the game session status. Game sessions in Active status are ready for players to connect. To get a list of all game sessions for the fleet, call [list-game-sessions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/gamelift/list-game-sessions.html) command (or the [ListGameSessions](https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_ListGameSessions.html) API action).
++ **Create a game session.** Call [create-game-session ](https://docs.aws.amazon.com/cli/latest/reference/gamelift/create-game-session.html) command (or the [ CreateGameSession](https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_CreateGameSession.html) API operation). Specify your Anywhere fleet's ID and custom location. This call returns a unique identifier for the new game session.
++ **Check game session status. **Call [describe-game-sessions](https://docs.aws.amazon.com/cli/latest/reference/gamelift/describe-game-sessions.html) command (or the [DescribeGameSessions](https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_DescribeGameSessions.html) API action). Specify the game session ID to retrieve a specific session, or specify the fleet ID to retrieve all game sessions for the fleet. This call returns detailed game session information, including the game session status. Game sessions in Active status are ready for players to connect.
 + **Connect to the game session.** If your game client has the ability to join a game session, use the connection information included in the game session information.
 
 ## Iterate on your game server
@@ -94,7 +94,7 @@ You can use the same Anywhere fleet and compute to test other versions of your g
 
 1. **Update the game server build on your local compute.** Your previous Anywhere fleet is still active and your laptop is still registered as a compute resource in the fleet.
 
-1. **Get an updated authorization token.** Call the [get-compute-auth-token](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/gamelift/get-compute-auth-token.html) CLI command and store the token on the local compute.
+1. **Get an updated authorization token.** Call the [get-compute-auth-token](https://docs.aws.amazon.com/cli/latest/reference/gamelift/get-compute-auth-token.html) CLI command and store the token on the local compute.
 
 1. **Start one or more game server processes running on the local compute.** When the game server process calls `ProcessReady()`, it's ready to be used for testing.
 

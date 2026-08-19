@@ -200,7 +200,7 @@ You can register the default location, `s3://`, or a custom location in your S3 
 To use the following example commands, replace the `{{user input placeholders}}` with your own information.
 
 **Example Create a resource policy**
-Create a policy that allows S3 Access Grants to assume the IAM role. To do so, you can create a JSON file that contains the following statements. To add the resource policy to your account, see [Create and attach your first customer managed policy](https://docs.aws.amazon.com//IAM/latest/UserGuide/tutorial_managed-policies.html).
+Create a policy that allows S3 Access Grants to assume the IAM role. To do so, you can create a JSON file that contains the following statements. To add the resource policy to your account, see [Create and attach your first customer managed policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_managed-policies.html).
 *TestRolePolicy.json*
 ****
 

@@ -35,7 +35,6 @@ Use the following CLI operations to work with global datastores:
 
   The following table lists each AWS Region and its global datastore ID prefix.
 
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonElastiCache/latest/dg/Redis-Global-Datastores-CLI.html)
 +  [create-replication-group](https://docs.aws.amazon.com/cli/latest/reference/elasticache/create-replication-group.html) – Use this operation to create secondary clusters for a global datastore by supplying the name of the global datastore to the `--global-replication-group-id` parameter.
 

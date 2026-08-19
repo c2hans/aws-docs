@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsw
 
 AWS WAF provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="waf-GetByteMatchSet"></a>[GetByteMatchSet](https://docs.aws.amazon.com/waf/latest/APIReference/API_waf_GetByteMatchSet.html) | Retrieve a ByteMatchSet | Read |

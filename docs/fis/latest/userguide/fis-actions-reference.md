@@ -114,7 +114,7 @@ When you run the `aws:arc:start-zonal-autoshift` action, AWS FIS manages the zon
 **Resource type**
 + **aws:arc:zonal-shift-managed-resource**
 
-  Zonal shift managed resources are resource types including Amazon EKS clusters, Amazon EC2 Application and Network Load Balancers, and Amazon EC2 Auto Scaling groups that can be enabled for ARC zonal autoshift. For more information, see [supported resources](https://docs.aws.amazon.com/r53recovery/latest/dg/arc-zonal-shift.resource-types.html) and [enabling zonal autoshift resources](https://docs.aws.amazon.com//r53recovery/latest/dg/arc-zonal-autoshift.start-cancel.html) in the *ARC Developer Guide*.
+  Zonal shift managed resources are resource types including Amazon EKS clusters, Amazon EC2 Application and Network Load Balancers, and Amazon EC2 Auto Scaling groups that can be enabled for ARC zonal autoshift. For more information, see [supported resources](https://docs.aws.amazon.com/r53recovery/latest/dg/arc-zonal-shift.resource-types.html) and [enabling zonal autoshift resources](https://docs.aws.amazon.com/r53recovery/latest/dg/arc-zonal-autoshift.start-cancel.html) in the *ARC Developer Guide*.
 
 **Parameters**
 + **duration** – The length of time for which traffic will be shifted. In the AWS FIS API, the value is a string in ISO 8601 format. For example, PT1M represents one minute. In the AWS FIS console, you enter the number of seconds, minutes, or hours.
@@ -231,11 +231,31 @@ If a target table does not have any attached resource polices, a resource policy
 Target Amazon DynamoDB MRSC global tables are subject to an additional quota. This quota enforces that no single table may be subject to more than 5,040 minutes of impairment in a 7-day rolling window.
 
 **Multi-Region eventually consistent (MREC) global tables**
-The following statement will be dynamically appended to the policy for the target DynamoDB MREC global table:
+The following two statements will be dynamically appended to the policy for the target DynamoDB MREC global table:
 
 ```
 {
    "Statement":[
+      {
+         "Sid": "DoNotModifyFisDynamoDbPauseReplicationEXPxxxxxxxxxxxxxxxServicePrincipal",
+         "Effect":"Deny",
+         "Principal":{
+            "AWS": "*"
+         },
+         "Action":[
+            "dynamodb:ReadDataForReplication",
+            "dynamodb:WriteDataForReplication"
+         ],
+         "Resource":"arn:aws:dynamodb:us-east-1:123456789012:table/ExampleGlobalTable",
+         "Condition": {
+            "StringEquals": {
+              "aws:PrincipalServiceName": "replication.dynamodb.amazonaws.com"
+            },
+            "DateLessThan": {
+              "aws:CurrentTime": "2024-04-10T09:51:41.511Z"
+            }
+         }
+      },
       {
          "Sid": "DoNotModifyFisDynamoDbPauseReplicationEXPxxxxxxxxxxxxxxx",
          "Effect":"Deny",
@@ -679,7 +699,7 @@ To use AZ names or AZ IDs in the `sources` parameter, all targets of the action 
 + **delayMilliseconds** – Optional. The delay, in milliseconds. The default is 200.
 + **jitterMilliseconds** – Optional. The jitter, in milliseconds. The default is 10.
 + **flowsPercent** – Optional. The percentage of network flows that will be affected by the action. The default is 100%.
-+ **sources** – Optional. The sources, separated by commas, without spaces. The possible values are: an IPv4 address, an IPv4 CIDR block, a domain name, an AZ name (us-east-1a), an AZ ID (use1-az1), ALL, `DYNAMODB`, and `S3`. If you specify `DYNAMODB` or `S3`, this applies only to the Regional endpoint in the current Region. The default is ALL, which matches all IPv4 traffic.
++ **sources** – Optional. The sources, separated by commas, without spaces. The possible values are: an IPv4 address, an IPv4 CIDR block, a domain name, an AZ name (us-east-1a), an AZ ID (use1-az1), ALL, `DYNAMODB`, and `S3`. If you specify `DYNAMODB` or `S3`, this applies only to the Regional endpoint in the current Region. The default is ALL, which matches all IPv4 traffic. IPv6 traffic is not impaired by this action.
 + **installDependencies** – Optional. If this value is `True`, Systems Manager installs the required dependencies on the sidecar container for the SSM agent, if they are not already installed. The default is `True`. The dependencies are **atd**, **curl-minimal**, **dig**, **jq** and **lsof**.
 + **useEcsFaultInjectionEndpoints** – Optional. If set to true, the Amazon ECS Fault Injection APIs will be used. The default is false.
 
@@ -710,7 +730,7 @@ To use AZ names or AZ IDs in the `sources` parameter, all targets of the action 
 + **duration** – The duration of the test, in ISO 8601 format.
 + **lossPercent** – Optional. The percentage of packet loss. The default is 7%.
 + **flowsPercent** – Optional. The percentage of network flows that will be affected by the action. The default is 100%.
-+ **sources** – Optional. The sources, separated by commas, without spaces. The possible values are: an IPv4 address, an IPv4 CIDR block, a domain name, an AZ name (us-east-1a), an AZ ID (use1-az1), ALL, `DYNAMODB`, and `S3`. If you specify `DYNAMODB` or `S3`, this applies only to the Regional endpoint in the current Region. The default is ALL, which matches all IPv4 traffic.
++ **sources** – Optional. The sources, separated by commas, without spaces. The possible values are: an IPv4 address, an IPv4 CIDR block, a domain name, an AZ name (us-east-1a), an AZ ID (use1-az1), ALL, `DYNAMODB`, and `S3`. If you specify `DYNAMODB` or `S3`, this applies only to the Regional endpoint in the current Region. The default is ALL, which matches all IPv4 traffic. IPv6 traffic is not impaired by this action.
 + **installDependencies** – Optional. If this value is `True`, Systems Manager installs the required dependencies on the sidecar container for the SSM agent, if they are not already installed. The default is `True`. The dependencies are **atd**, **curl-minimal**, **dig**, **jq** and **lsof**.
 + **useEcsFaultInjectionEndpoints** – Optional. If set to true, the Amazon ECS Fault Injection APIs will be used. The default is false.
 
@@ -912,7 +932,7 @@ Use the `flowsPercent` parameter to add latency on a percentage of the connectio
 + **delayMilliseconds** – Optional. The delay, in milliseconds. The default is 200.
 + **jitterMilliseconds** – Optional. The jitter, in milliseconds. The default is 10.
 + **flowsPercent** – Optional. The percentage of network flows that will be affected by the action. The default is 100%.
-+ **sources** – Optional. The sources, separated by commas, without spaces. The possible values are: an IPv4 address, an IPv4 CIDR block, a domain name, an AZ name (us-east-1a), an AZ ID (use1-az1), ALL, `DYNAMODB`, and `S3`. If you specify `DYNAMODB` or `S3`, this applies only to the Regional endpoint in the current Region. For domain names, 10 DNS resolution attempts are made to collect IP addresses. Due to DNS load balancing and rotation, this action may not impair all possible IP addresses the domain could resolve to. The default is ALL, which matches all IPv4 traffic.
++ **sources** – Optional. The sources, separated by commas, without spaces. The possible values are: an IPv4 address, an IPv4 CIDR block, a domain name, an AZ name (us-east-1a), an AZ ID (use1-az1), ALL, `DYNAMODB`, and `S3`. If you specify `DYNAMODB` or `S3`, this applies only to the Regional endpoint in the current Region. For domain names, 10 DNS resolution attempts are made to collect IP addresses. Due to DNS load balancing and rotation, this action may not impair all possible IP addresses the domain could resolve to. The default is ALL, which matches all IPv4 traffic. IPv6 traffic is not impaired by this action.
 + **kubernetesServiceAccount** – The Kubernetes service account. For information about the required permissions, see [Configure the Kubernetes service account](eks-pod-actions.md#configure-service-account).
 + **fisPodContainerImage** – Optional. The container image used to create the fault injector pod. The default is to use the images provided by AWS FIS. For more information, see [Pod container images](eks-pod-actions.md#eks-pod-container-images).
 + **maxErrorsPercent** – Optional. The percentage of targets that can fail before the fault injection fails. The default is 0.
@@ -942,7 +962,7 @@ Use the `flowsPercent` parameter to inject packet loss on a percentage of the co
 + **interface** – Optional. The network interfaces, separated by commas. ALL and DEFAULT values are supported. The default is `DEFAULT`, which will target the primary network interface for the Operating System.
 + **lossPercent** – Optional. The percentage of packet loss. The default is 7%.
 + **flowsPercent** – Optional. The percentage of network flows that will be affected by the action. The default is 100%.
-+ **sources** – Optional. The sources, separated by commas, without spaces. The possible values are: an IPv4 address, an IPv4 CIDR block, a domain name, an AZ name (us-east-1a), an AZ ID (use1-az1), ALL, `DYNAMODB`, and `S3`. If you specify `DYNAMODB` or `S3`, this applies only to the Regional endpoint in the current Region. For domain names, 10 DNS resolution attempts are made to collect IP addresses. Due to DNS load balancing and rotation, this action may not impair all possible IP addresses the domain could resolve to. The default is ALL, which matches all IPv4 traffic.
++ **sources** – Optional. The sources, separated by commas, without spaces. The possible values are: an IPv4 address, an IPv4 CIDR block, a domain name, an AZ name (us-east-1a), an AZ ID (use1-az1), ALL, `DYNAMODB`, and `S3`. If you specify `DYNAMODB` or `S3`, this applies only to the Regional endpoint in the current Region. For domain names, 10 DNS resolution attempts are made to collect IP addresses. Due to DNS load balancing and rotation, this action may not impair all possible IP addresses the domain could resolve to. The default is ALL, which matches all IPv4 traffic. IPv6 traffic is not impaired by this action.
 + **kubernetesServiceAccount** – The Kubernetes service account. For information about the required permissions, see [Configure the Kubernetes service account](eks-pod-actions.md#configure-service-account).
 + **fisPodContainerImage** – Optional. The container image used to create the fault injector pod. The default is to use the images provided by AWS FIS. For more information, see [Pod container images](eks-pod-actions.md#eks-pod-container-images).
 + **maxErrorsPercent** – Optional. The percentage of targets that can fail before the fault injection fails. The default is 0.
@@ -997,9 +1017,6 @@ Interrupts power to nodes in the specified Availability Zone for target ElastiCa
 + `elasticache:InterruptClusterAzPower`
 + `elasticache:DescribeReplicationGroups`
 + `tag:GetResources`
-
-**Note**
-The ElastiCache interrupt AZ power action now supports all replication group types, including Valkey and Redis. To better represent this functionality, the action has been renamed. If you are currently using `aws:elasticache:interrupt-cluster-az-power`, we recommend that you migrate to the new action `aws:elasticache:replicationgroup-interrupt-az-power` to take advantage of the latest features.
 
 ## Amazon Kinesis Data Streams actions
 <a name="aws-kinesis-actions"></a>
@@ -1080,7 +1097,7 @@ Marks Lambda function invocations as failed. This action is useful for testing e
 **Parameters**
 + **duration** – The length of time that the action lasts. In the AWS FIS API, the value is a string in ISO 8601 format. For example, PT1M represents one minute. In the AWS FIS console, you enter the number of seconds, minutes, or hours.
 + **invocationPercentage** – Optional. The percentage (1-100) of function invocations to inject the fault into. The default is 100.
-+ **preventExecution** – If the value is true, the action will return the error without executing the function.
++ **preventExecution** – If the value is true, the action will return the error without executing the function. We recommend setting the `AWS_FIS_POLL_MAX_WAIT_MILLISECONDS` environment variable to a non-zero value (for example, `2000`) to ensure the extension has up-to-date fault configuration before evaluating the invocation. For more information, see [AWS FIS Lambda environment variables](use-lambda-actions.md#fis-extension-environment-variables).
 
 **Permissions**
 + `s3:PutObject`
@@ -1100,7 +1117,7 @@ Modifies the behavior of the function. You select a content type and HTTP respon
 + **contentTypeHeader** – String value of HTTP content type header to return from Lambda function.
 + **duration** – The length of time that the action lasts. In the AWS FIS API, the value is a string in ISO 8601 format. For example, PT1M represents one minute. In the AWS FIS console, you enter the number of seconds, minutes, or hours.
 + **invocationPercentage** – Optional. The percentage (1-100) of function invocations to inject the fault into. The default is 100.
-+ **preventExecution** – If the value is true, the action will return the response without executing the function.
++ **preventExecution** – If the value is true, the action will return the response without executing the function. We recommend setting the `AWS_FIS_POLL_MAX_WAIT_MILLISECONDS` environment variable to a non-zero value (for example, `2000`) to ensure the extension has up-to-date fault configuration before evaluating the invocation. For more information, see [AWS FIS Lambda environment variables](use-lambda-actions.md#fis-extension-environment-variables).
 + **statusCode** – Value of HTTP status code (000-999) to return from Lambda function.
 
 **Permissions**

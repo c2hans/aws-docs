@@ -8,8 +8,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/Hive-release-his
 ## Amazon EMR 7.9.0 - Hive changes
 <a name="Hive-release-history-changes-790"></a>
 
-****
-
 | Type | Description |
 | --- | --- |
 | Bug Fix | Hive Blobstore Committer should not be used if the table being created via CTAS is ACID. |

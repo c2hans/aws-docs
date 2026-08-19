@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon EMR on EKS (EMR Containers) provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="emr-containers-DescribeJobRun"></a>[DescribeJobRun](https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_DescribeJobRun.html) | Describe a job run | Read |

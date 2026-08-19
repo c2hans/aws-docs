@@ -14,8 +14,6 @@ Replace the instance volumes from an existing backup image of the instance. To r
 ## Change Type Details
 <a name="ct-0ffvihqwjvqj1-MAEr-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-0ffvihqwjvqj1 |

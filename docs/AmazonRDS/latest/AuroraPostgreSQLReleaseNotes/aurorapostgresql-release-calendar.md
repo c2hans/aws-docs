@@ -85,8 +85,6 @@ Dates with only a month and a year are approximate, and will be updated with an 
   <tr><td>16.10</td><td>14 August 2025</td><td>25 November 2025</td><td>30 April 2027</td><td></td><td></td><td></td></tr>
   <tr><td>16.9</td><td>8 May 2025</td><td>30 June 2025</td><td>31 December 2026</td><td></td><td></td><td></td></tr>
   <tr><td>16.8 (LTS)</td><td>20 February 2025</td><td>8 April 2025</td><td>28 February 2029</td><td></td><td></td><td></td></tr>
-  <tr><td>16.6</td><td>21 November 2024</td><td>13 December 2024</td><td>31 May 2026</td><td></td><td></td><td></td></tr>
-  <tr><td>16.4</td><td>08 August 2024</td><td>30 September 2024</td><td>31 May 2026</td><td></td><td></td><td></td></tr>
   <tr><td colspan="4"><b>15</b></td><td></td><td></td><td></td></tr>
   <tr><td>15.17</td><td>26 February 2026</td><td>6 April 2026</td><td>30 September 2027</td><td></td><td></td><td></td></tr>
   <tr><td>15.15</td><td>13 November 2025</td><td>18 December 2025</td><td>31 May 2027</td><td></td><td></td><td></td></tr>
@@ -94,15 +92,12 @@ Dates with only a month and a year are approximate, and will be updated with an 
   <tr><td>15.13</td><td>8 May 2025</td><td>30 June 2025</td><td>31 December 2026</td><td></td><td></td><td></td></tr>
   <tr><td>15.12</td><td>20 February 2025</td><td>8 April 2025</td><td>30 November 2026</td><td></td><td></td><td></td></tr>
   <tr><td>15.10 (LTS)</td><td>21 November 2024</td><td>13 December 2024</td><td>29 February 2028</td><td></td><td></td><td></td></tr>
-  <tr><td>15.8</td><td>08 August 2024</td><td>30 September 2024</td><td>31 May 2026</td><td></td><td></td><td></td></tr>
   <tr><td colspan="4"><b>14</b></td><td></td><td></td><td></td></tr>
   <tr><td>14.22</td><td>26 February 2026</td><td>6 April 2026</td><td>28 February 2027</td><td></td><td></td><td></td></tr>
   <tr><td>14.20</td><td>13 November 2025</td><td>18 December 2025</td><td>28 February 2027</td><td></td><td></td><td></td></tr>
   <tr><td>14.19</td><td>14 August 2025</td><td>25 November 2025</td><td>28 February 2027</td><td></td><td></td><td></td></tr>
   <tr><td>14.18</td><td>8 May 2025</td><td>30 June 2025</td><td>31 December 2026</td><td></td><td></td><td></td></tr>
   <tr><td>14.17</td><td>20 February 2025</td><td>8 April 2025</td><td>30 November 2026</td><td></td><td></td><td></td></tr>
-  <tr><td>14.15</td><td>21 November 2024</td><td>13 December 2024</td><td>31 May 2026</td><td></td><td></td><td></td></tr>
-  <tr><td>14.13</td><td>08 August 2024</td><td>30 September 2024</td><td>31 May 2026</td><td></td><td></td><td></td></tr>
   <tr><td>14.6 (LTS)</td><td>10 November 2022</td><td>23 January 2023</td><td>28 February 2027</td><td></td><td></td><td></td></tr>
   <tr><td colspan="4"><b>13</b></td><td></td><td></td><td></td></tr>
   <tr><td>13.23*</td><td>13 November 2025</td><td>18 December 2025</td><td>28 February 2026</td><td></td><td></td><td></td></tr>
@@ -134,5 +129,5 @@ Dates with only a month and a year are approximate, and will be updated with an 
 | 16.10-limitless | February 24, 2026 | September 2027 |
 | 16.9-limitless | September 5, 2025 | March 2027 |
 | 16.8-limitless | May 8, 2025 | November 2026 |
-| 16.6-limitless | January 24, 2025 | August 2026 |
-| 16.4-limitless | October 31, 2024 | August 2026 |
+| 16.6-limitless | January 24, 2025 | September 2026 |
+| 16.4-limitless | October 31, 2024 | September 2026 |

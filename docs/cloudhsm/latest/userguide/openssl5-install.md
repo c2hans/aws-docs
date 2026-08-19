@@ -107,6 +107,29 @@ To run a single HSM cluster with Client SDK 5, you must first manage client key 
    ```
 
 ------
+#### [ Ubuntu 26.04 LTS ]
+
+   Install the OpenSSL Dynamic Engine for Ubuntu 26.04 LTS on x86\_64 architecture:
+
+   ```
+   $ wget https://s3.amazonaws.com/cloudhsmv2-software/CloudHsmClient/Resolute/cloudhsm-dyn_latest_u26.04_amd64.deb
+   ```
+
+   ```
+   $ sudo apt install ./cloudhsm-dyn_latest_u26.04_amd64.deb
+   ```
+
+   Install the OpenSSL Dynamic Engine for Ubuntu 26.04 LTS on ARM64 architecture:
+
+   ```
+   $ wget https://s3.amazonaws.com/cloudhsmv2-software/CloudHsmClient/Resolute/cloudhsm-dyn_latest_u26.04_arm64.deb
+   ```
+
+   ```
+   $ sudo apt install ./cloudhsm-dyn_latest_u26.04_arm64.deb
+   ```
+
+------
 #### [ Ubuntu 24.04 LTS ]
 
    Install the OpenSSL Dynamic Engine for Ubuntu 24.04 LTS on x86\_64 architecture:

@@ -36,7 +36,7 @@ A *manifest* is an Amazon S3 object list that contains the object keys that you 
 + Generate an object list automatically based on an existing replication configuration. You can save this list as a manifest file and use it again for future jobs.
 + Create a new manifest file manually.
 + Use an existing manifest.
-+ Regardless of how you specify the objects to work on, the manifest itself must be stored in a general purpose bucket. Batch Operations can't import existing manifests from, or save generated object lists as manifests to directory buckets. Objects described within the manifest, however, can be stored in directory buckets. For more information, see [Directory buckets](https://docs.aws.amazon.com//AmazonS3/latest/userguide/directory-buckets-overview.html).
++ Regardless of how you specify the objects to work on, the manifest itself must be stored in a general purpose bucket. Batch Operations can't import existing manifests from, or save generated object lists as manifests to directory buckets. Objects described within the manifest, however, can be stored in directory buckets. For more information, see [Directory buckets](https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-buckets-overview.html).
 + If the objects in your manifest are in a versioned bucket, specifying the version IDs for the objects directs Batch Operations to perform the operation on a specific version. If no version IDs are specified, Batch Operations performs the operation on the latest version of the objects. If your manifest includes a version ID field, you must provide a version ID for all objects in the manifest.
 For more information, see [Specifying a manifest](#specify-batchjob-manifest).
 
@@ -49,13 +49,13 @@ S3 Batch Operations prioritizes jobs according to priority numbers, but strict o
 Specify an AWS Identity and Access Management (IAM) role to run the job. The IAM role that you use must have sufficient permissions to perform the operation specified in the job. For example, to run a `CopyObject` job, the IAM role must have the `s3:GetObject` permission for the source bucket and the `s3:PutObject` permission for the destination bucket. The role also needs permissions to read the manifest and write the completion report.
 The IAM role can be an existing role. Or, if you use the Amazon S3 console to create the job, it can be an IAM role that Amazon S3 creates automatically for you. For more information, see [Granting permissions for Batch Operations](batch-ops-iam-role-policies.md).
 For more information about IAM roles, see [IAM roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html) in the *IAM User Guide*. For more information about Amazon S3 permissions, see [Policy actions for Amazon S3](security_iam_service-with-iam.md#security_iam_service-with-iam-id-based-policies-actions).
-Batch Operations jobs that perform actions on directory buckets require specific permissions. For more information, see [AWS Identity and Access Management (IAM) for S3 Express One Zone](https://docs.aws.amazon.com//AmazonS3/latest/userguide/s3-express-security-iam.html).
+Batch Operations jobs that perform actions on directory buckets require specific permissions. For more information, see [AWS Identity and Access Management (IAM) for S3 Express One Zone](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-express-security-iam.html).
 
 **Report**
 Specify whether you want S3 Batch Operations to generate a completion report. If you request a completion report, you must also provide the parameters for the report in this element. The following information is required:
 + The bucket where you want to store the report
 **Note**
-The report must be stored in a general purpose bucket. Batch Operations can't save reports to directory buckets. For more information, see [Directory buckets](https://docs.aws.amazon.com//AmazonS3/latest/userguide/directory-buckets-overview.html).
+The report must be stored in a general purpose bucket. Batch Operations can't save reports to directory buckets. For more information, see [Directory buckets](https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-buckets-overview.html).
 + The format of the report
 + Whether you want the report to include the details of all tasks or only failed tasks
 + An optional prefix string
@@ -81,7 +81,7 @@ A *manifest* is an Amazon S3 object list that contains the object keys that you 
 
 **Note**
 Amazon S3 Batch Operations does not support cross-Region object list generation.
-Regardless of how you specify the objects to work on, the manifest itself must be stored in a general purpose bucket. Batch Operations can't import existing manifests from, or save generated object lists as manifests to directory buckets. Objects described within the manifest, however, can be stored in directory buckets. For more information, see [Directory buckets](https://docs.aws.amazon.com//AmazonS3/latest/userguide/directory-buckets-overview.html).
+Regardless of how you specify the objects to work on, the manifest itself must be stored in a general purpose bucket. Batch Operations can't import existing manifests from, or save generated object lists as manifests to directory buckets. Objects described within the manifest, however, can be stored in directory buckets. For more information, see [Directory buckets](https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-buckets-overview.html).
 
 ## Generating an object list automatically and saving it as a manifest file
 <a name="automatically-generate-manifest-file"></a>
@@ -275,7 +275,7 @@ The following example shows how to use the AWS CLI to create an S3 Batch Operati
 
    1. Use the following example command to create an IAM policy with the necessary permissions and attach it to the IAM role that you created in the previous step. For more information about the necessary permissions, see [Granting permissions for Batch Operations](batch-ops-iam-role-policies.md).
 **Note**
-Batch Operations jobs that perform actions on directory buckets require specific permissions. For more information, see [AWS Identity and Access Management (IAM) for S3 Express One Zone](https://docs.aws.amazon.com//AmazonS3/latest/userguide/s3-express-security-iam.html).
+Batch Operations jobs that perform actions on directory buckets require specific permissions. For more information, see [AWS Identity and Access Management (IAM) for S3 Express One Zone](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-express-security-iam.html).
 
       To use this example command, replace the `{{user input placeholders}}` as follows:
       + Replace `{{S3BatchJobRole}}` with the name of your IAM role. Make sure that this name matches the name that you used earlier.
@@ -382,7 +382,7 @@ The following example shows how to create an S3 Batch Operations `S3DeleteObject
 
    1. Use the following example command to create an IAM policy with the necessary permissions and attach it to the IAM role that you created in the previous step. For more information about the necessary permissions, see [Granting permissions for Batch Operations](batch-ops-iam-role-policies.md).
 **Note**
-Batch Operations jobs that perform actions on directory buckets require specific permissions. For more information, see [AWS Identity and Access Management (IAM) for S3 Express One Zone](https://docs.aws.amazon.com//AmazonS3/latest/userguide/s3-express-security-iam.html).
+Batch Operations jobs that perform actions on directory buckets require specific permissions. For more information, see [AWS Identity and Access Management (IAM) for S3 Express One Zone](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-express-security-iam.html).
 
       To use this example command, replace the `{{user input placeholders}}` as follows:
       + Replace `{{S3BatchJobRole}}` with the name of your IAM role. Make sure that this name matches the name that you used earlier.

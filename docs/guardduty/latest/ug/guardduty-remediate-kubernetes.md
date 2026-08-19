@@ -48,7 +48,7 @@ You can use Amazon Detective to further investigate the IAM role or user identif
     + Identify that instance then follow the instructions in [Remediating a potentially compromised Amazon EC2 instance](compromised-ec2.md).
   + If the `userType` is **User**, or is a **Role** that was assumed by a user:
 
-    1. [Rotate the access key](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_credentials_access-keys.html#Using_RotateAccessKey) of that user.
+    1. [Rotate the access key](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html#Using_RotateAccessKey) of that user.
 
     1. Rotate any secrets that user had access to.
 
@@ -112,7 +112,7 @@ You can use Amazon Detective to further investigate the IAM role or user identif
 
 1. If the `userType` is **User**, or is a **Role** that was assumed by a user:
 
-   1. [Rotate the access key](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_credentials_access-keys.html#Using_RotateAccessKey) of that user.
+   1. [Rotate the access key](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html#Using_RotateAccessKey) of that user.
 
    1. Rotate any secrets that user had access to.
 

@@ -16,7 +16,7 @@ The example rule set describes a match with the following characteristics:
 + Match rules: Matched players must meet the following requirements:
   + Players must choose the same game mode.
   + Players must choose the same game map.
-  + Players much choose different characters.
+  + Players must choose different characters.
 
 Notes on using this rule set:
 + To implement the match rule, this example uses comparison rules to check all players' attribute values. For game mode and map, the rule verifies that the values are the same. For character, the rule verifies that the values are different.

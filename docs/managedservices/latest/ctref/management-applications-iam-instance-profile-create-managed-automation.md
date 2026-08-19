@@ -14,8 +14,6 @@ Use to create an instance profile.
 ## Change Type Details
 <a name="ct-0ixp4ch2tiu04-MAIc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-0ixp4ch2tiu04 |

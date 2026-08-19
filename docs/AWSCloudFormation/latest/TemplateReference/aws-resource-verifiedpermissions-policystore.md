@@ -119,7 +119,7 @@ For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::
 <a name="aws-resource-verifiedpermissions-policystore-return-values-fn--getatt-fn--getatt"></a>
 
 `Arn`  <a name="Arn-fn::getatt"></a>
-The [Amazon Resource Name (ARN)](https://docs.aws.amazon.com//general/latest/gr/aws-arns-and-namespaces.html) of the new or updated policy store.
+The [Amazon Resource Name (ARN)](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html) of the new or updated policy store.
 
 `PolicyStoreId`  <a name="PolicyStoreId-fn::getatt"></a>
 The unique ID of the new or updated policy store.

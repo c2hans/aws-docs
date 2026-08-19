@@ -59,7 +59,13 @@ Provide a number to specify the maximum number of simultaneous deployments (depe
  *Default value*: `1` <a name="ref-cli-cmd-deploy-options-exclusively"></a>
 
  `--exclusively, -e <BOOLEAN>`
-Only deploy requested stacks and don’t include dependencies.<a name="ref-cli-cmd-deploy-options-force"></a>
+Only deploy requested stacks and don’t include dependencies.<a name="ref-cli-cmd-deploy-options-express"></a>
+
+ `--express <BOOLEAN>`
+Deploy using CloudFormation express mode. Express mode allows for faster deployments through CloudFormation by reporting stack operations as completed as soon as CloudFormation applies the resource configuration. However, CloudFormation reports success without waiting for resources to stabilize. Additionally, express mode does not perform rollback automatically and will leave stacks in a failed state if something goes wrong. To enable automatic rollback with express mode, include the ` --rollback ` flag in your express mode deployment.
+For more information, see [express mode](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cloudformation-express-mode.html) in the * AWS CloudFormation User Guide*.
+Express mode does not wait for stabilization before reporting success and does not perform automatic rollback upon failure. We do not recommend express mode for production deployments. Express mode is targeted towards iterative deployments you would perform while developing your application.
+ *Default value*: `false` <a name="ref-cli-cmd-deploy-options-force"></a>
 
  `--force, -f <BOOLEAN>`
 When you deploy to update an existing stack, the CDK CLI will compare the template and tags of the deployed stack to the stack about to be deployed. If no changes are detected, the CDK CLI will skip deployment.
@@ -105,7 +111,7 @@ This option is also compatible with nested stacks.
  *Default value*: `false` <a name="ref-cli-cmd-deploy-options-hotswap-fallback"></a>
 
  `--hotswap-fallback <BOOLEAN>`
-This option is is similar to `--hotswap`. The difference being that `--hotswap-fallback` will fall back to perform a full CloudFormation deployment if a change is detected that requires it.
+This option is similar to `--hotswap`. The difference is that `--hotswap-fallback` will fall back to perform a CloudFormation deployment if a change is detected that requires it.
 For more information about this option, see `--hotswap`.
  *Default value*: `false` <a name="ref-cli-cmd-deploy-options-ignore-no-stacks"></a>
 

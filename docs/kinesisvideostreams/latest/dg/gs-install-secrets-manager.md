@@ -46,7 +46,7 @@ Replace `arn:aws:secretsmanager:*:*:secret:*` with the ARNs of the secrets that 
      }
      ```
 **Note**
-`cloudSecrets` is a list of objects with the key `arn`. For more information, see the [Secret manager configuration](https://docs.aws.amazon.com//greengrass/v2/developerguide/secret-manager-component.html#secret-manager-component-configuration) section in the AWS IoT Greengrass Version 2 Developer Guide.
+`cloudSecrets` is a list of objects with the key `arn`. For more information, see the [Secret manager configuration](https://docs.aws.amazon.com/greengrass/v2/developerguide/secret-manager-component.html#secret-manager-component-configuration) section in the AWS IoT Greengrass Version 2 Developer Guide.
 
      When you're done, select **Confirm**, then choose **Next**.
    + **Step 4: Configure advanced settings**. Select **Next**.
@@ -80,4 +80,4 @@ The AWS IoT Greengrass Secret Manager component fetches and caches secrets only 
 
    In the screen that appears, paste `[""]` in the **Reset paths** box, and update the AWS Secrets Manager ARNs in the **Configuration to merge** box.
 
-   For more information, see [Reset updates](https://docs.aws.amazon.com//greengrass/v2/developerguide/update-component-configurations.html#reset-configuration-update).
+   For more information, see [Reset updates](https://docs.aws.amazon.com/greengrass/v2/developerguide/update-component-configurations.html#reset-configuration-update).

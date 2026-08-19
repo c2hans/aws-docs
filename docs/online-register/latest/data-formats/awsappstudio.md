@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsa
 
 AWS App Studio provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="appstudio-GetAccountStatus"></a>[GetAccountStatus](https://docs.aws.amazon.com/appstudio/latest/userguide/) | Describe the account's current status | Read |

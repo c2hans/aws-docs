@@ -30,7 +30,7 @@ Follow the steps below to install RSQL for Linux.
    sudo yum install unixODBC
    ```
 
-1. Install the ODBC driver: [Downloading and installing the Amazon Redshift ODBC driverDownloading and installing the ODBC driver](odbc20-install-linux.md).
+1. Install the ODBC driver: [Downloading and installing the Amazon Redshift ODBC driver](odbc20-install-linux.md).
 
 1. Copy the ini file to your home directory:
 
@@ -63,7 +63,7 @@ Follow the steps below to install RSQL for Mac OSX.
    brew install unixodbc --build-from-source
    ```
 
-1. Install the ODBC driver: [Downloading and installing the Amazon Redshift ODBC driverDownloading and installing the ODBC driver](odbc-driver-mac-how-to-install.md).
+1. Install the ODBC driver: [Downloading and installing the Amazon Redshift ODBC driver](odbc-driver-mac-how-to-install.md).
 
 1. Copy the ini file to your home directory:
 
@@ -94,6 +94,6 @@ Follow the steps below to install RSQL for Mac OSX.
 
 Follow the steps below to install RSQL for Windows.
 
-1. Install the ODBC driver: [Downloading and installing the Amazon Redshift ODBC driverDownloading and installing the ODBC driver](odbc-driver-windows-how-to-install.md).
+1. Install the ODBC driver: [Downloading and installing the Amazon Redshift ODBC driver](odbc-driver-windows-how-to-install.md).
 
 1. Double-click the RSQL download file to run the installer, then follow the prompts to complete the installation.

@@ -36,5 +36,4 @@ Make sure you have the following items.
    1. Follow the instructions in [Create a custom route table](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Internet_Gateway.html#Add_IGW_Routing) to create a route table for your public subnet. When you create the table, enter a descriptive name in the **Name tag** field to help you identify which subnet the table is associated with. For example, **Public MSKC**.
 
    1. Configure your **Public MSKC** route table using the following settings.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/msk/latest/developerguide/msk-connect-internet-access-private-subnets-example.html)

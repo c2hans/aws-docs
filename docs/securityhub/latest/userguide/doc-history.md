@@ -11,6 +11,7 @@ To receive notifications about updates to the *AWS Security Hub User Guide*, you
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [Updated Network Scanning ports list](#doc-history) | Added list of ports that are currently supported by Network Scanning. | August 18, 2026 |
 | [Updated security controls](#doc-history) | Security Hub CSPM removed the [EFS.6](https://docs.aws.amazon.com/securityhub/latest/userguide/efs-controls.html#efs-6) control from the [AWS Foundational Security Best Practices (FSBP) standard](https://docs.aws.amazon.com/securityhub/latest/userguide/fsbp-standard.html). This control remains available in the NIST SP 800-53 Rev. 5, NIST SP 800-171 Revision 2, and PCI DSS v4.0.1 standards. | August 3, 2026 |
 | [Enhanced enabling Security Hub documentation](#doc-history) |  Improved the guidance in the Managing configuration of member accounts in an AWS Organization page.  | July 7, 2026 |
 | [Added Network Scanning feature documentation](#doc-history) |  Added documentation for the Network scanning feature of Security Hub  | July 7, 2026 |

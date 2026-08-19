@@ -28,7 +28,7 @@ To use customer managed keys with AWS IoT SiteWise, you need to update your AWS 
 
 1.
 
-   Navigate to the [AWS IoT SiteWise console](https://console.aws.amazon.com//iotsitewise/).
+   Navigate to the [AWS IoT SiteWise console](https://console.aws.amazon.com/iotsitewise/).
 
 1. Choose **Account Settings** and choose **Edit** to open the **Edit account settings** page.
 

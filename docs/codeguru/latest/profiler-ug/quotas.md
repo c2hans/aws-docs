@@ -10,8 +10,6 @@ The following tables list the current quotas in Amazon CodeGuru Profiler. These 
 ## Profiling groups
 <a name="limits-profiler-group"></a>
 
-****
-
 | Resource | Default |
 | --- | --- |
 | Maximum number of profiling groups | 500 |

@@ -25,8 +25,6 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_appsync-actions-as-permissions).
 
-****
-
 - **   AssociateApi  **
   - **IAM action:**  [appsync:AssociateApi](#list_appsync-action-AssociateApi)
   - **Condition key:**
@@ -457,8 +455,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
 <a name="list_appsync-actions-as-permissions"></a>
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
-
-****
 
 - **   [AssociateApi](https://docs.aws.amazon.com/appsync/latest/APIReference/API_AssociateApi.html)  **
   - **Description:** Grants permission to attach a GraphQL API to a custom domain name in AppSync
@@ -939,8 +935,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 The following actions are defined by AWS AppSync but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 - **   [AssociateWebACL](https://docs.aws.amazon.com/appsync/latest/devguide/WAF-Integration.html)  **
   - **Description:** Grants permission to associate a web ACL and a resource
   - **Resource types (\*required):** [api](#list_appsync-resource-api) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_appsync-aws_ResourceTag___TagKey_)
@@ -1000,8 +994,6 @@ The following actions are defined by AWS AppSync but are not directly invocable 
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
 
-****
-
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
 |  [api](https://docs.aws.amazon.com/appsync/latest/eventapi/event-api-welcome.html)  | arn:${Partition}:appsync:${Region}:${Account}:apis/${ApiId} | [aws:ResourceTag/${TagKey}](#list_appsync-aws_ResourceTag___TagKey_) |
@@ -1019,8 +1011,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_appsync-policy-keys"></a>
 
 AWS AppSync defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

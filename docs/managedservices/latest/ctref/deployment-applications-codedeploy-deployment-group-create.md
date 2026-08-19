@@ -14,8 +14,6 @@ Use to create an AWS CodeDeploy application deployment group, an entity that des
 ## Change Type Details
 <a name="ct-2gd0u847qd9d2-DACc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2gd0u847qd9d2 |

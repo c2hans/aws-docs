@@ -37,12 +37,12 @@ Part of enabling backups for your landing zone includes a step outside of the AW
 
 1.  Use the toggle switches to enable or disable the services that you want to include with AWS Backup. *Be sure that the resources that you want to back up are selected, such as RDS, EC2, DDB, and so forth, whether they are part of your AWS Control Tower environment or not.*
 
-For more details, see [Opt in to managing services with AWS Backup](https://docs.aws.amazon.com//aws-backup/latest/devguide/working-with-supported-services.html#opt-in).
+For more details, see [Opt in to managing services with AWS Backup](https://docs.aws.amazon.com/aws-backup/latest/devguide/working-with-supported-services.html#opt-in).
 
 **Considerations for new resource types**
 Before you rely on AWS Backup to manage data protection for any AWS service's resources, you must perform the previous procedure and opt in to AWS Backup for that service. Also, as the AWS Backup service adds support for additional services and their resource types in the future, you must repeat this procedure and opt in for each additional resource type with AWS Backup before you can back up that resource type in AWS Control Tower. Tagging an unsupported resource type may cause your backup to fail.
 
-When you activate backups for your landing zone, AWS Control Tower establishes the two accounts you've provided as the **Central Backup** account and the **Backup Administrator** account, respectively. AWS Control Tower creates [resources](https://docs.aws.amazon.com//controltower/latest/userguide/backup-resources.html) in these accounts and other accounts.
+When you activate backups for your landing zone, AWS Control Tower establishes the two accounts you've provided as the **Central Backup** account and the **Backup Administrator** account, respectively. AWS Control Tower creates [resources](https://docs.aws.amazon.com/controltower/latest/userguide/backup-resources.html) in these accounts and other accounts.
 
 **Important**
 To enable backups for the AWS Control Tower **Audit** and **Log Archive** accounts, you must set up backups for the **Security OU,** by calling the `EnableBaseline` API. We recommend that you do so.
@@ -53,7 +53,7 @@ To enable backups for the AWS Control Tower **Audit** and **Log Archive** accoun
 + Weekly backups = 1-month retention in local vault, 3-months retention in central vault
 + Monthly backups = 3-months retention in local vault, 3-months retention in central backup vault
 
-For information about how to create your backup plans, see [Creating report plans using the AWS Backup console](https://docs.aws.amazon.com//aws-backup/latest/devguide/create-report-plan-console.html).
+For information about how to create your backup plans, see [Creating report plans using the AWS Backup console](https://docs.aws.amazon.com/aws-backup/latest/devguide/create-report-plan-console.html).
 
 ## Next part: Enable backups on OUs
 <a name="backups-on-ous"></a>
@@ -83,10 +83,10 @@ To enable the `BackupBaseline` on an OU, that OU must have the `AWSControlTowerB
   ```
 
   The role has a trust relationship with the service principal for AWS Backup The role is named `aws-controltower-backup-role`, and it has the following managed permissions attached to it:
-  + [`AWSBackupServiceRolePolicyForBackup`](https://docs.aws.amazon.com//aws-managed-policy/latest/reference/AWSBackupServiceRolePolicyForBackup.html)
-  + [`AWSBackupServiceRolePolicyForRestores`](https://docs.aws.amazon.com//aws-managed-policy/latest/reference/AWSBackupServiceRolePolicyForRestores.html)
-  + [`AWSBackupServiceRolePolicyForS3Backup`](https://docs.aws.amazon.com//aws-managed-policy/latest/reference/AWSBackupServiceRolePolicyForS3Backup.html)
-  + [`AWSBackupServiceRolePolicyForS3Restore`](https://docs.aws.amazon.com//aws-managed-policy/latest/reference/AWSBackupServiceRolePolicyForS3Restore.html)
+  + [`AWSBackupServiceRolePolicyForBackup`](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBackupServiceRolePolicyForBackup.html)
+  + [`AWSBackupServiceRolePolicyForRestores`](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBackupServiceRolePolicyForRestores.html)
+  + [`AWSBackupServiceRolePolicyForS3Backup`](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBackupServiceRolePolicyForS3Backup.html)
+  + [`AWSBackupServiceRolePolicyForS3Restore`](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSBackupServiceRolePolicyForS3Restore.html)
 
 **Tag resources for backup**
 

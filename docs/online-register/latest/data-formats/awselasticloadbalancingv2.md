@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awse
 
 AWS Elastic Load Balancing V2 provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="elasticloadbalancing-DescribeAccountLimits"></a>[DescribeAccountLimits](https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_DescribeAccountLimits.html) | Describe the Elastic Load Balancing resource limits for the AWS account  | Read |

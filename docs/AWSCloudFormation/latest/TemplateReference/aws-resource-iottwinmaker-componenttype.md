@@ -95,7 +95,7 @@ The name of the parent component type that this component type extends.
 
 `Functions`  <a name="cfn-iottwinmaker-componenttype-functions"></a>
 An object that maps strings to the functions in the component type. Each string in the mapping must be unique to this object.
-For information on the FunctionResponse object see the [FunctionResponse](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_FunctionResponse.html) API reference.
+For information on the FunctionResponse object see the [FunctionResponse](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_FunctionResponse.html) API reference.
 *Required*: No
 *Type*: Object of [Function](aws-properties-iottwinmaker-componenttype-function.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -108,7 +108,7 @@ A boolean value that specifies whether an entity can have more than one componen
 
 `PropertyDefinitions`  <a name="cfn-iottwinmaker-componenttype-propertydefinitions"></a>
 An object that maps strings to the property definitions in the component type. Each string in the mapping must be unique to this object.
-For information about the PropertyDefinitionResponse object, see the [PropertyDefinitionResponse](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_PropertyDefinitionResponse.html) API reference.
+For information about the PropertyDefinitionResponse object, see the [PropertyDefinitionResponse](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_PropertyDefinitionResponse.html) API reference.
 *Required*: No
 *Type*: Object of [PropertyDefinition](aws-properties-iottwinmaker-componenttype-propertydefinition.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

@@ -29,8 +29,6 @@ AWS Purchase Orders Console has no API operations that can be used in the `Actio
 
 The following actions are defined by AWS Purchase Orders Console but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 - **   [AddPurchaseOrder](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html#user-permissions)  **
   - **Description:** Grants permission to add a new purchase order
   - **Resource types (\*required):** [purchase-order\*](#list_purchase-orders-resource-purchase-order)
@@ -120,8 +118,6 @@ The following actions are defined by AWS Purchase Orders Console but are not dir
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
 
-****
-
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
 |  [purchase-order](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html#user-permissions)  | arn:${Partition}:purchase-orders::${Account}:purchase-order/${ResourceName} | [aws:ResourceTag/${TagKey}](#list_purchase-orders-aws_ResourceTag___TagKey_) |
@@ -130,8 +126,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_purchase-orders-policy-keys"></a>
 
 AWS Purchase Orders Console defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

@@ -9,8 +9,6 @@ Each Jupyter notebook kernel has a default language. For example, the Spark kern
 
 To activate this feature, specify one of the following magic commands at the beginning of any cell.
 
-****
-
 | Language | Command |
 | --- | --- |
 | Python | `%%pyspark` |

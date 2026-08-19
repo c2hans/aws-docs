@@ -112,8 +112,6 @@ Use the IAM console, the AWS CLI, or the AWS API to delete the AWSServiceRoleFor
 
 Managed Synchronization supports using service-linked roles in all of the Regions where Amazon Connect Global Resiliency is available. For more information, see [Set up Connect Customer Global Resiliency](setup-connect-global-resiliency.md).
 
-****
-
 | Region name | Region identity | Support in Managed Synchronization |
 | --- | --- | --- |
 | US East (N. Virginia) | us-east-1 | Yes |

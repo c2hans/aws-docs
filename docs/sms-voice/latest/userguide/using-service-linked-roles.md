@@ -52,7 +52,7 @@ If the AWS End User Messaging SMS service is using the role when you try to dele
 
 1. Verify you have no configuration sets, registrations, protect configurations, sender IDs, pools, long codes, and that you have not used AWS End User Messaging SMS in the last 30 days.
 
-1. Call the iam DeleteServiceLinkedRole api to remove the role, for more information see [Deleting a service-linked role](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_roles_create-service-linked-role.html#delete-service-linked-role).
+1. Call the iam DeleteServiceLinkedRole api to remove the role, for more information see [Deleting a service-linked role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create-service-linked-role.html#delete-service-linked-role).
 
 **To manually delete the service-linked role using IAM**
 

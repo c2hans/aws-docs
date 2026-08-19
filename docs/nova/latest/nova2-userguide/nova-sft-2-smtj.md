@@ -9,8 +9,8 @@ source_url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/nova-sft-2-s
 <a name="nova-model-training-jobs-prerequisites2"></a>
 
 Before you start a training job, note the following.
-+ Amazon S3 buckets to store your input data and output of training jobs. You can either use one bucket for both or separate buckets for each type of the data. Make sure your buckets are in the same AWS Region where you create all the other resources for training. For more information, see [Creating a general purpose bucket](https://docs.aws.amazon.com//AmazonS3/latest/userguide/create-bucket-overview.html).
-+ An IAM role with permissions to run a training job. Make sure you attach an IAM policy with `AmazonSageMakerFullAccess`. For more information, see [How to use SageMaker AI execution roles](https://docs.aws.amazon.com//sagemaker/latest/dg/sagemaker-roles.html).
++ Amazon S3 buckets to store your input data and output of training jobs. You can either use one bucket for both or separate buckets for each type of the data. Make sure your buckets are in the same AWS Region where you create all the other resources for training. For more information, see [Creating a general purpose bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/create-bucket-overview.html).
++ An IAM role with permissions to run a training job. Make sure you attach an IAM policy with `AmazonSageMakerFullAccess`. For more information, see [How to use SageMaker AI execution roles](https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-roles.html).
 + Base Amazon Nova recipes, see [Getting Amazon Nova recipes](nova-model-recipes.md#nova-model-get-recipes).
 
 ## What is SFT?

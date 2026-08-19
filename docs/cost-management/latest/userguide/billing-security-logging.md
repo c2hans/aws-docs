@@ -33,7 +33,7 @@ For more information about Budgets, see the [Managing your costs with AWS Budget
 
 Billing and Cost Management is integrated with AWS CloudTrail, a service that provides a record of actions taken by a user, role, or an AWS service in Billing and Cost Management. CloudTrail captures all write and modify API calls for Billing and Cost Management as events, including calls from the Billing and Cost Management console and from code calls to the Billing and Cost Management APIs.
 
-For more information about AWS CloudTrail, see the [Logging AWS Cost Management API calls with AWS CloudTrail](https://docs.aws.amazon.com//cost-management/latest/userguide/logging-with-cloudtrail.html).
+For more information about AWS CloudTrail, see the [Logging AWS Cost Management API calls with AWS CloudTrail](https://docs.aws.amazon.com/cost-management/latest/userguide/logging-with-cloudtrail.html).
 
 ## AWS Pricing Calculator
 <a name="billing-security-logging-pc"></a>

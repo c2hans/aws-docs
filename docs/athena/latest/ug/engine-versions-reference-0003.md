@@ -743,15 +743,11 @@ The following output shows the result of the query in Athena engine version 3.
 
 In previous engine versions:
 
-****
-
 | \# | \_col0 | \_col1 |
 | --- | --- | --- |
 | 1 | `2023-02-24T00:00:00.000Z ` | `2023-02-24T00:00:00.000Z` |
 
 Athena engine version 3:
-
-****
 
 | \# | \_col0 | \_col1 |
 | --- | --- | --- |
@@ -764,8 +760,6 @@ SELECT to_iso8601(with_timezone(TIMESTAMP '2023-01-01 00:00:00.000', 'UTC'))
 ```
 
 Result
-
-****
 
 | \# | \_col0 |
 | --- | --- |

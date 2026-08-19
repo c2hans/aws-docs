@@ -185,7 +185,7 @@ To use a dualstack endpoint, use the `codeartifact.{{region}}.on.aws` endpoint.
 ## Consume NuGet packages from CodeArtifact
 <a name="nuget-consume-cli"></a>
 
-Once you have [configured NuGet with CodeArtifact](https://docs.aws.amazon.com//codeartifact/latest/ug/nuget-cli.html), you can consume NuGet packages that are stored in your CodeArtifact repository or one of its upstream repositories.
+Once you have [configured NuGet with CodeArtifact](https://docs.aws.amazon.com/codeartifact/latest/ug/nuget-cli.html), you can consume NuGet packages that are stored in your CodeArtifact repository or one of its upstream repositories.
 
 To consume a package version from a CodeArtifact repository or one of its upstream repositories with `nuget` or `dotnet`, run the following command replacing {{packageName}} with the name of the package you want to consume and {{packageSourceName}} with the source name for your CodeArtifact repository in your NuGet configuration file. If you used the `login` command to configure your NuGet configuration, the source name is {{domain\_name/repo\_name}}.
 
@@ -236,7 +236,7 @@ You can consume NuGet packages from [NuGet.org](https://www.nuget.org/) through 
 ## Publish NuGet packages to CodeArtifact
 <a name="nuget-publish-cli"></a>
 
-Once you have [configured NuGet with CodeArtifact](https://docs.aws.amazon.com//codeartifact/latest/ug/nuget-cli.html), you can use `nuget` or `dotnet` to publish package versions to CodeArtifact repositories.
+Once you have [configured NuGet with CodeArtifact](https://docs.aws.amazon.com/codeartifact/latest/ug/nuget-cli.html), you can use `nuget` or `dotnet` to publish package versions to CodeArtifact repositories.
 
 To push a package version to a CodeArtifact repository, run the following command with the full path to your `.nupkg` file and the source name for your CodeArtifact repository in your NuGet configuration file. If you used the `login` command to configure your NuGet configuration, the source name is `domain_name/repo_name`.
 

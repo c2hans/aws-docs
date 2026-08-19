@@ -47,7 +47,7 @@ Before you begin this tutorial:
   codecatalyst-eks-source-repository
   ```
 
-  For more information, see [Store and collaborate on code with source repositories in CodeCatalystStore and collaborate on code with source repositories](source.md).
+  For more information, see [Store and collaborate on code with source repositories in CodeCatalyst](source.md).
 + In your project, you need a CodeCatalyst CI/CD **environment** (not a Dev Environment) called:
 
   ```

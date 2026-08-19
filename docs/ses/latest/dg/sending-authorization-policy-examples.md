@@ -25,8 +25,6 @@ You use both conditions and keys together to express the restriction. For exampl
 
 You can use any of the AWS-wide keys listed at [Available Keys](https://docs.aws.amazon.com/IAM/latest/UserGuide/AccessPolicyLanguage_ElementDescriptions.html#AvailableKeys) in the *IAM User Guide*, or you can use one of the following keys specific to SES that are useful in sending authorization policies:
 
-****
-
 |  Condition key  |  Description  |
 | --- | --- |
 |  `ses:Recipients`  | Restricts the recipient addresses, which include the To:, "CC", and "BCC" addresses. |

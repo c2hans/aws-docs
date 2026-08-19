@@ -10,7 +10,7 @@ AWS Application Discovery Service is no longer open to new customers. Alternativ
 **Important**
 End of support notice: On May 20, 2026, AWS will end support for AWS Database Migration Service Fleet Advisor. After May 20, 2026, you will no longer be able to access the AWS DMS Fleet Advisor console or AWS DMS Fleet Advisor resources. For more information, see [AWS DMS Fleet Advisor end of support](https://docs.aws.amazon.com/dms/latest/userguide/dms_fleet.advisor-end-of-support.html).
 
-You can view the data that your Application Discovery Service Agentless Collector (Agentless Collector) collected in the Migration Hub console by following the steps in [Viewing servers in the AWS Migration Hub consoleViewing servers](view-servers.md).
+You can view the data that your Application Discovery Service Agentless Collector (Agentless Collector) collected in the Migration Hub console by following the steps in [Viewing servers in the AWS Migration Hub console](view-servers.md).
 
 You can also view the collected metrics for database and analytics servers in the AWS DMS console by taking the following steps.
 

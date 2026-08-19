@@ -146,7 +146,7 @@ This configuration meets the [Supported Media Specifications](https://docs.aws.a
 ## Private Ingest to Stages
 <a name="private-ingest-stages"></a>
 
-You can publish RTMP(S) and E-RTMP(S) streams to a stage from resources inside your Amazon VPC or from Direct Connect, by using an interface VPC endpoint. This enables a private connection between your VPC and IVS, keeping ingest traffic within the AWS network. To set up and configure an interface VPC endpoint for IVS, see [IVS Private Ingest](https://docs.aws.amazon.com//ivs/latest/LowLatencyUserGuide/private-ingest-ll.html) in the *IVS Low-Latency Streaming User Guide*.
+You can publish RTMP(S) and E-RTMP(S) streams to a stage from resources inside your Amazon VPC or from Direct Connect, by using an interface VPC endpoint. This enables a private connection between your VPC and IVS, keeping ingest traffic within the AWS network. To set up and configure an interface VPC endpoint for IVS, see [IVS Private Ingest](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/private-ingest-ll.html) in the *IVS Low-Latency Streaming User Guide*.
 
 ## Redundant Ingest
 <a name="redundant-ingest"></a>

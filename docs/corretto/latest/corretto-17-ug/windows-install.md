@@ -20,7 +20,7 @@ source_url: https://docs.aws.amazon.com/corretto/latest/corretto-17-ug/windows-i
 
 1.  Once the install wizard is finished, set the `JAVA_HOME` and `PATH` environment variables.
 
-   Set `JAVA_HOME` to the installation location, noting that the directory contains the currently-installed version. For example, if the default directory is used for 17.0.20, then set `JAVA_HOME` as `C:\Program Files\Amazon Corretto\jdk17.0.20_8`.
+   Set `JAVA_HOME` to the installation location, noting that the directory contains the currently-installed version. For example, if the default directory is used for 17.0.20, then set `JAVA_HOME` as `C:\Program Files\Amazon Corretto\jdk17.0.20_10`.
 
    Add `%JAVA_HOME%\bin` to the current `PATH` variable.
 
@@ -28,9 +28,9 @@ source_url: https://docs.aws.amazon.com/corretto/latest/corretto-17-ug/windows-i
 **Example**
 
    ```
-   openjdk version "17.0.20" 2026-07-21 LTS
-   OpenJDK Runtime Environment Corretto-17.0.20.8.1 (build 17.0.20+8-LTS)
-   OpenJDK 64-Bit Server VM Corretto-17.0.20.8.1 (build 17.0.20+8-LTS, mixed mode, sharing)
+   openjdk version "17.0.20" 2026-08-18 LTS
+   OpenJDK Runtime Environment Corretto-17.0.20.10.1 (build 17.0.20+10-LTS)
+   OpenJDK 64-Bit Server VM Corretto-17.0.20.10.1 (build 17.0.20+10-LTS, mixed mode, sharing)
    ```
 
 ## Uninstall Amazon Corretto 17

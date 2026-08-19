@@ -8,8 +8,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/Hive-release-his
 ## Amazon EMR 7.3.0 - Hive changes
 <a name="Hive-release-history-changes-730"></a>
 
-****
-
 | Type | Description |
 | --- | --- |
 | Feature | [ HIVE-18728](https://issues.apache.org/jira/browse/HIVE-18728) – Secure webHCat with SSL. |
@@ -23,8 +21,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/Hive-release-his
 
 ### Amazon EMR 7.3.0 - New configurations
 <a name="Hive-release-history-changes-730-new-configs"></a>
-
-****
 
 | Classification | Name | Default | Description |
 | --- | --- | --- | --- |

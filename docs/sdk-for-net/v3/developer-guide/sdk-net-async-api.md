@@ -60,4 +60,4 @@ private static async Task<ListBucketsResponse> ListBucketsAsync()
 
 Notice the special `Task<>` syntax that's needed in `Main` when you use this pattern. In addition, you must use the **`Result`** member of the response to get the data.
 
-You can see full examples of asynchronous calls to AWS service clients in the [Take a quick tour](quick-start.md) section ([Simple cross-platform app](quick-start-s3-1-cross.md) and [Simple Windows-based app](quick-start-s3-1-winvs.md)) and in [Code examples with guidanceHigh-level libraries and frameworks](tutorials-examples.md).
+You can see full examples of asynchronous calls to AWS service clients in the [Take a quick tour](quick-start.md) section ([Simple cross-platform app](quick-start-s3-1-cross.md) and [Simple Windows-based app](quick-start-s3-1-winvs.md)) and in [Code examples with guidance](tutorials-examples.md).

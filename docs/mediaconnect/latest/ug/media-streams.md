@@ -14,8 +14,6 @@ The type of media stream that you create is based on the output that you are rec
 **Note**
 You use media streams only for CDI flows that have ST 2110 with JPEG XS as their input and output protocol. If you have configured your flows to use CDI as the input and output protocol, you don’t need media streams.
 
-****
-
 | AWS Elemental Live output | MediaConnect media stream type |
 | --- | --- |
 | SMPTE 2110-20: Uncompressed video | (Not supported) |

@@ -68,7 +68,7 @@ Amazon EC2 provides two status checks: the **system status check**, which detect
 + Verify that the security groups for your load balancer and Auto Scaling group are correctly configured.
 + Verify that the load balancer is configured in the same Availability Zones as your Auto Scaling group.
 
-**Solution 2**: Update the Auto Scaling group to turn off Elastic Load Balancing health checks. For instructions for how to turn off these health checks, see [ Detach a target group or Classic Load Balancer](https://docs.aws.amazon.com//autoscaling/ec2/userguide/attach-load-balancer-asg.html#as-remove-load-balancer).
+**Solution 2**: Update the Auto Scaling group to turn off Elastic Load Balancing health checks. For instructions for how to turn off these health checks, see [ Detach a target group or Classic Load Balancer](https://docs.aws.amazon.com/autoscaling/ec2/userguide/attach-load-balancer-asg.html#as-remove-load-balancer).
 
 **Cause 2**: There is a mismatch between the health check grace period and the instance startup time.
 

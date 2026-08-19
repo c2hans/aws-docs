@@ -6,13 +6,13 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/gs-publish
 <a name="gs-publish-edge"></a>
 
 **Note**
-Be aware of the [CloudWatch quotas](https://docs.aws.amazon.com//AmazonCloudWatch/latest/logs/cloudwatch_limits_cwl.html).
+Be aware of the [CloudWatch quotas](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/cloudwatch_limits_cwl.html).
 
 Follow these procedures to configure the Amazon Kinesis Video Streams Edge Agent logs to automatically upload to CloudWatch using the AWS IoT Greengrass log manager component. This is an optional step.
 
 **Install the AWS IoT Greengrass log manager component**
 
-1. Confirm that the AWS IoT Greengrass device role has the [appropriate permissions](https://docs.aws.amazon.com//greengrass/v2/developerguide/log-manager-component.html#log-manager-component-requirements).
+1. Confirm that the AWS IoT Greengrass device role has the [appropriate permissions](https://docs.aws.amazon.com/greengrass/v2/developerguide/log-manager-component.html#log-manager-component-requirements).
 
    1. Sign in to the AWS Management Console and open the IAM console at [https://console.aws.amazon.com/iam/](https://console.aws.amazon.com/iam/).
 
@@ -118,7 +118,7 @@ Don't uninstall these components.
 **Important**
 The `logFileDirectoryPath` in the preceding configuration assumes that the default logging output location is used.
 **Note**
-For more information about each of the parameters for the log manager configuration, see the [Log manager](https://docs.aws.amazon.com//greengrass/v2/developerguide/log-manager-component.html#log-manager-component-configuration) section of the AWS IoT Greengrass Version 2 Developer Guide.
+For more information about each of the parameters for the log manager configuration, see the [Log manager](https://docs.aws.amazon.com/greengrass/v2/developerguide/log-manager-component.html#log-manager-component-configuration) section of the AWS IoT Greengrass Version 2 Developer Guide.
 
       Once you finish, select **Confirm**, then choose **Next**.
 

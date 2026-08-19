@@ -98,7 +98,7 @@ aws ssm put-parameter \
 ```
 
 **Note**
-If you manage credentials such as usernames, passwords, or any other secrets, we recommend using [AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html). Secrets Manager is purpose-built for managing secrets such as database credentials, API keys, and supported third-party software-vended secrets. For more information, see [What is AWS Secrets Manager?](https://docs.aws.amazon.com//secretsmanager/latest/userguide/intro.html) in the *AWS Secrets Manager User Guide*.
+If you manage credentials such as usernames, passwords, or any other secrets, we recommend using [AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html). Secrets Manager is purpose-built for managing secrets such as database credentials, API keys, and supported third-party software-vended secrets. For more information, see [What is AWS Secrets Manager?](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html) in the *AWS Secrets Manager User Guide*.
 
 Run the following command to see what happens when you retrieve a `SecureString` value without decrypting it.
 

@@ -45,9 +45,8 @@ If you're using the RDS console, you can find out whether a specific edition, in
 aws rds describe-orderable-db-instance-options --engine {{engine-type}} --license-model {{license-type}}
 ```
 
-The following table lists all editions, instance classes, and license types supported for RDS for Oracle. For information about the memory attributes of each type, see [ RDS for Oracle instance types](https://aws.amazon.com//rds/oracle/instance-types). For information about pricing, see [Amazon RDS for Oracle pricing models](https://aws.amazon.com/rds/oracle/pricing/#Pricing_models).
+The following table lists all editions, instance classes, and license types supported for RDS for Oracle. For information about the memory attributes of each type, see [ RDS for Oracle instance types](https://aws.amazon.com/rds/oracle/instance-types). For information about pricing, see [Amazon RDS for Oracle pricing models](https://aws.amazon.com/rds/oracle/pricing/#Pricing_models).
 
-****
 <a name="rds-oracle-instance-class-reference"></a>
 
 - ** Enterprise Edition (EE) Bring Your Own License (BYOL) **

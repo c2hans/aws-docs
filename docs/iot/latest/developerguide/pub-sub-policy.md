@@ -26,7 +26,7 @@ For registered devices, we recommend that you use [thing policy variables](thing
 
 MQTT and AWS IoT Core policies have different wildcard characters and you should choose them after careful consideration. In MQTT, the wildcard characters `+` and `#` are used in [MQTT topic filters](https://docs.aws.amazon.com/iot/latest/developerguide/topics.html#topicfilters) to subscribe to multiple topic names. AWS IoT Core policies use `*` and `?` as wildcard characters and follow the conventions of [IAM policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_grammar.html#policies-grammar-json). In a policy document, the `*` represents any combination of characters and a question mark `?` represents any single character. In policy documents, the MQTT wildcard characters, `+` and `#` are treated as those characters with no special meaning. To describe multiple topic names and topic filters in the `resource` attribute of a policy, use the `*` and `?` wildcard characters in place of the MQTT wildcard characters.
 
-When you choose the wildcard characters to use in a policy document, consider that the `*` character is not confined to a single topic level. The `+` character is confined to a single topic level in an MQTT topic filter. To help constrain a wildcard specification to a single MQTT topic filter level, consider using multiple `?` characters. For more information about using wildcard characters in a policy resource and more examples of what they match, see [Using wildcards in resource ARNs](https://docs.aws.amazon.com//IAM/latest/UserGuide/reference_policies_elements_resource.html#reference_policies_elements_resource_wildcards).
+When you choose the wildcard characters to use in a policy document, consider that the `*` character is not confined to a single topic level. The `+` character is confined to a single topic level in an MQTT topic filter. To help constrain a wildcard specification to a single MQTT topic filter level, consider using multiple `?` characters. For more information about using wildcard characters in a policy resource and more examples of what they match, see [Using wildcards in resource ARNs](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_resource.html#reference_policies_elements_resource_wildcards).
 
 The table below shows the different wildcard characters used in MQTT and AWS IoT Core policies for MQTT clients.
 
@@ -761,7 +761,7 @@ To allow unauthenticated Amazon Cognito identities to publish messages over HTTP
 }
 ```
 
-To allow authenticated users, attach the preceding policy to the Amazon Cognito Identity pool role and to the Amazon Cognito Identity using the AWS IoT Core [AttachPolicy](https://docs.aws.amazon.com//iot/latest/apireference/API_AttachPolicy.html) API.
+To allow authenticated users, attach the preceding policy to the Amazon Cognito Identity pool role and to the Amazon Cognito Identity using the AWS IoT Core [AttachPolicy](https://docs.aws.amazon.com/iot/latest/apireference/API_AttachPolicy.html) API.
 
 **Note**
 When authorizing Amazon Cognito identities, AWS IoT Core considers both policies and grants the least privileges specified. An action is allowed only if both policies allow the requested action. If either policy disallows an action, that action is unauthorized.
@@ -794,7 +794,7 @@ To allow unauthenticated Amazon Cognito identities to publish MQTT messages over
 }
 ```
 
-To allow authenticated users, attach the preceding policy to the Amazon Cognito Identity pool role and to the Amazon Cognito Identity using the AWS IoT Core [AttachPolicy](https://docs.aws.amazon.com//iot/latest/apireference/API_AttachPolicy.html) API.
+To allow authenticated users, attach the preceding policy to the Amazon Cognito Identity pool role and to the Amazon Cognito Identity using the AWS IoT Core [AttachPolicy](https://docs.aws.amazon.com/iot/latest/apireference/API_AttachPolicy.html) API.
 
 **Note**
 When authorizing Amazon Cognito identities, AWS IoT Core considers both and grants the least privileges specified. An action is allowed only if both policies allow the requested action. If either policy disallows an action, that action is unauthorized.

@@ -9,7 +9,7 @@ A resource policy is an access policy option available for granting permission t
 
 The topics in this section describe the key policy language elements, with focus on MediaPackage–specific details, and provide example resource policies. We recommend that you first review the introductory topics that explain the basic concepts and options available for you to manage access to your MediaPackage resources.
 
-To learn how to attach a resource-based policy to a channel, see **[Creating a channel in AWS Elemental MediaPackageCreating a channel](channels-create.md)**.
+To learn how to attach a resource-based policy to a channel, see **[Creating a channel in AWS Elemental MediaPackage](channels-create.md)**.
 
 **Topics**
 + [Policies and Permissions in MediaPackage](policies-permissions.md)

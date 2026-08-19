@@ -35,7 +35,7 @@ If you see a non-zero value in the `Instance Provisioning Errors` graph, then it
   AWS ParallelCluster failed to launch instances because it reached the vCPU limit on your AWS account for a specific Amazon EC2 instance type that you configured for cluster compute nodes.
 + **How to resolve?**
 
-  Check for the `VcpuLimitExceeded` error in the `clustermgtd` file for static nodes, and check in the `slurm_resume.log` file for dynamic nodes to get additional details. To resolve this issue, you can request an increase to your vCPU limits. For more information about how to view current limits and request new limits, see [Amazon Elastic Compute Cloud service quotas](https://docs.aws.amazon.com//AWSEC2/latest/UserGuide/ec2-resource-limits.html) in the *Amazon Elastic Compute Cloud User Guide for Linux Instances*.
+  Check for the `VcpuLimitExceeded` error in the `clustermgtd` file for static nodes, and check in the `slurm_resume.log` file for dynamic nodes to get additional details. To resolve this issue, you can request an increase to your vCPU limits. For more information about how to view current limits and request new limits, see [Amazon Elastic Compute Cloud service quotas](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-resource-limits.html) in the *Amazon Elastic Compute Cloud User Guide for Linux Instances*.
 
 ### Seeing `VolumeLimitErrors`
 <a name="troubleshooting-v3-cluster-health-metrics-volume-limit"></a>

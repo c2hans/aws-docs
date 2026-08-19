@@ -45,7 +45,7 @@ Make sure that you can unzip the test package without errors. In the following e
           `-- wheel-0.26.0-py2.py3-none-any.whl
    ```
 
-   For more information, see [Automatically run Appium tests in Device FarmIntegrating Appium tests with Device Farm](test-types-appium.md).
+   For more information, see [Automatically run Appium tests in Device Farm](test-types-appium.md).
 
 ## APPIUM\_PYTHON\_TEST\_PACKAGE\_DEPENDENCY\_WHEEL\_MISSING
 <a name="APPIUM_PYTHON_TEST_PACKAGE_DEPENDENCY_WHEEL_MISSING"></a>
@@ -85,7 +85,7 @@ Make sure that you can unzip the test package without errors. In the following e
           `-- {{wheel-0.26.0-py2.py3-none-any.whl}}
    ```
 
-   For more information, see [Automatically run Appium tests in Device FarmIntegrating Appium tests with Device Farm](test-types-appium.md).
+   For more information, see [Automatically run Appium tests in Device Farm](test-types-appium.md).
 
 ## APPIUM\_PYTHON\_TEST\_PACKAGE\_INVALID\_PLATFORM
 <a name="APPIUM_PYTHON_TEST_PACKAGE_INVALID_PLATFORM"></a>
@@ -125,7 +125,7 @@ Make sure that you can unzip the test package without errors. In the following e
           `-- {{wheel-0.26.0-py2.py3-none-any.whl}}
    ```
 
-   For more information, see [Automatically run Appium tests in Device FarmIntegrating Appium tests with Device Farm](test-types-appium.md).
+   For more information, see [Automatically run Appium tests in Device Farm](test-types-appium.md).
 
 ## APPIUM\_PYTHON\_TEST\_PACKAGE\_TEST\_DIR\_MISSING
 <a name="APPIUM_PYTHON_TEST_PACKAGE_TEST_DIR_MISSING"></a>
@@ -165,7 +165,7 @@ Make sure that you can unzip the test package without errors. In the following e
           `-- wheel-0.26.0-py2.py3-none-any.whl
    ```
 
-   For more information, see [Automatically run Appium tests in Device FarmIntegrating Appium tests with Device Farm](test-types-appium.md).
+   For more information, see [Automatically run Appium tests in Device Farm](test-types-appium.md).
 
 ## APPIUM\_PYTHON\_TEST\_PACKAGE\_INVALID\_TEST\_FILE\_NAME
 <a name="APPIUM_PYTHON_TEST_PACKAGE_INVALID_TEST_FILE_NAME"></a>
@@ -205,7 +205,7 @@ Make sure that you can unzip the test package without errors. In the following e
           `-- wheel-0.26.0-py2.py3-none-any.whl
    ```
 
-   For more information, see [Automatically run Appium tests in Device FarmIntegrating Appium tests with Device Farm](test-types-appium.md).
+   For more information, see [Automatically run Appium tests in Device Farm](test-types-appium.md).
 
 ## APPIUM\_PYTHON\_TEST\_PACKAGE\_REQUIREMENTS\_TXT\_FILE\_MISSING
 <a name="APPIUM_PYTHON_TEST_PACKAGE_REQUIREMENTS_TXT_FILE_MISSING"></a>
@@ -245,7 +245,7 @@ Make sure that you can unzip the test package without errors. In the following e
           `-- wheel-0.26.0-py2.py3-none-any.whl
    ```
 
-   For more information, see [Automatically run Appium tests in Device FarmIntegrating Appium tests with Device Farm](test-types-appium.md).
+   For more information, see [Automatically run Appium tests in Device Farm](test-types-appium.md).
 
 ## APPIUM\_PYTHON\_TEST\_PACKAGE\_INVALID\_PYTEST\_VERSION
 <a name="APPIUM_PYTHON_TEST_PACKAGE_INVALID_PYTEST_VERSION"></a>
@@ -299,7 +299,7 @@ Make sure that you can unzip the test package without errors. In the following e
 
    It shows the pytest version, which in this example is 2.9.0. If the Appium Python package is valid, the pytest version should be larger than or equal to 2.8.0.
 
-   For more information, see [Automatically run Appium tests in Device FarmIntegrating Appium tests with Device Farm](test-types-appium.md).
+   For more information, see [Automatically run Appium tests in Device Farm](test-types-appium.md).
 
 ## APPIUM\_PYTHON\_TEST\_PACKAGE\_INSTALL\_DEPENDENCY\_WHEELS\_FAILED
 <a name="APPIUM_PYTHON_TEST_PACKAGE_INSTALL_DEPENDENCY_WHEELS_FAILED"></a>
@@ -353,7 +353,7 @@ Make sure that you can unzip the test package without errors. In the following e
    $ deactivate
    ```
 
-   For more information, see [Automatically run Appium tests in Device FarmIntegrating Appium tests with Device Farm](test-types-appium.md).
+   For more information, see [Automatically run Appium tests in Device Farm](test-types-appium.md).
 
 ## APPIUM\_PYTHON\_TEST\_PACKAGE\_PYTEST\_COLLECT\_FAILED
 <a name="APPIUM_PYTHON_TEST_PACKAGE_PYTEST_COLLECT_FAILED"></a>
@@ -411,7 +411,7 @@ Make sure that you can unzip the test package without errors. In the following e
    $ deactivate
    ```
 
-   For more information, see [Automatically run Appium tests in Device FarmIntegrating Appium tests with Device Farm](test-types-appium.md).
+   For more information, see [Automatically run Appium tests in Device Farm](test-types-appium.md).
 
 ## APPIUM\_PYTHON\_TEST\_PACKAGE\_DEPENDENCY\_WHEELS\_INSUFFICIENT
 <a name="APPIUM_PYTHON_TEST_PACKAGE_DEPENDENCY_WHEELS_INSUFFICIENT"></a>
@@ -445,4 +445,4 @@ Make sure that you can unzip the test package without errors. In the following e
 
    AWS Device Farm doesn't support lines in the {{requirements.txt}} file that don't directly correspond to dependency packages, such as lines that specify global options for the `pip install` command. See [Requirements file format](https://pip.pypa.io/en/stable/reference/requirements-file-format/#global-options) for a list of global options.
 
-   For more information, see [Automatically run Appium tests in Device FarmIntegrating Appium tests with Device Farm](test-types-appium.md).
+   For more information, see [Automatically run Appium tests in Device Farm](test-types-appium.md).

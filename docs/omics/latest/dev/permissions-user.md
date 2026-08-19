@@ -42,8 +42,6 @@ The following IAM policy allows a user to access all HealthOmics API actions, an
 ```
 
 When you use HealthOmics, you also interact with other AWS services. To access these services, use the managed policies provided by each service. To restrict access to a subset of resources, you can use the managed policies as a starting point to create your own more restrictive policies.
-
-****
 + [AmazonS3FullAccess](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/AmazonS3FullAccess) – Access to Amazon S3 buckets and objects used by jobs.
 
 + [AmazonEC2ContainerRegistryFullAccess](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryFullAccess) – Access to Amazon ECR registries and repositories for workflow container images.

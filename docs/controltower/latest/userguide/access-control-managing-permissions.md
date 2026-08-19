@@ -78,7 +78,7 @@ The **AWSControlTowerServiceRolePolicy** is an AWS-managed policy that defines p
 
 Updates to this managed policy are summarized in the table, [Managed policies for AWS Control Tower](managed-policies-table.md).
 
-For more information, see [AWSControlTowerServiceRolePolicy](https://docs.aws.amazon.com//aws-managed-policy/latest/reference/AWSControlTowerServiceRolePolicy.html) in the *AWS Managed Policy Reference Guide*.
+For more information, see [AWSControlTowerServiceRolePolicy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSControlTowerServiceRolePolicy.html) in the *AWS Managed Policy Reference Guide*.
 
 Role trust policy:
 
@@ -197,7 +197,7 @@ AWS Control Tower enables CloudTrail as a best practice and provides this role t
 
 This role uses the AWS-managed policy `AWSControlTowerCloudTrailRolePolicy`, which grants CloudTrail the permissions necessary to publish audit logs to Amazon CloudWatch Logs on behalf of AWS Control Tower. This managed policy replaces the inline policy that was previously used for this role, enabling AWS to update the policy without customer intervention.
 
-For more information, see [AWSControlTowerCloudTrailRolePolicy](https://docs.aws.amazon.com//aws-managed-policy/latest/reference/AWSControlTowerCloudTrailRolePolicy.html) in the *AWS Managed Policy Reference Guide*.
+For more information, see [AWSControlTowerCloudTrailRolePolicy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSControlTowerCloudTrailRolePolicy.html) in the *AWS Managed Policy Reference Guide*.
 
 Updates to this managed policy are summarized in the table, [Managed policies for AWS Control Tower](managed-policies-table.md).
 
@@ -346,6 +346,6 @@ The policy gives permissions to create Amazon EventBridge rules, specifically fo
 
 **Service principal:** `controltower.amazonaws.com`
 
-For more information, see [AWSControlTowerAccountServiceRolePolicy](https://docs.aws.amazon.com//aws-managed-policy/latest/reference/AWSControlTowerAccountServiceRolePolicy.html) in the *AWS Managed Policy Reference Guide*.
+For more information, see [AWSControlTowerAccountServiceRolePolicy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSControlTowerAccountServiceRolePolicy.html) in the *AWS Managed Policy Reference Guide*.
 
 Updates to this managed policy are summarized in the table, [Managed policies for AWS Control Tower](managed-policies-table.md).

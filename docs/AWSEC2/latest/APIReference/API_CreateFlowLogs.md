@@ -90,7 +90,7 @@ Required: No
 
  **ResourceId.N**
 The IDs of the resources to monitor. For example, if the resource type is `VPC`, specify the IDs of the VPCs.
-Constraints: Maximum of 25 for transit gateway resource types. Maximum of 1000 for the other resource types.
+Constraints: Maximum of 25 for transit gateway resource types. Maximum of 300 for the other resource types.
 Type: Array of strings
 Required: Yes
 

@@ -14,8 +14,6 @@ Delete an existing period used in AMS Resource Scheduler.
 ## Change Type Details
 <a name="ct-042luqo63j4mx-MAPd-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-042luqo63j4mx |

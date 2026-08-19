@@ -145,7 +145,6 @@ To edit the network access policy for your Amazon OpenSearch Serverless collecti
 1. Send a [GetSecurityPolicy](https://docs.aws.amazon.com/opensearch-service/latest/ServerlessAPIReference/API_GetSecurityPolicy.html) request with an [OpenSearch Serverless endpoint](https://docs.aws.amazon.com/general/latest/gr/opensearch-service.html#opensearch-service-regions). Specify the `name` of the policy and specify the `type` as `network`. Note the `policyVersion` in the response.
 
 1. Send a [UpdateSecurityPolicy](https://docs.aws.amazon.com/opensearch-service/latest/ServerlessAPIReference/API_UpdateSecurityPolicy.html) request with an [OpenSearch Serverless endpoint](https://docs.aws.amazon.com/general/latest/gr/opensearch-service.html#opensearch-service-regions). Minimally, specify the following fields:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/kb-create-security.html)
 
    ```

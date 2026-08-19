@@ -20,5 +20,5 @@ When you open the Service Quotas console, the dashboard displays cards for up to
 1. When you have finished adding and removing services, choose **Save**.
 
 **Next steps**
-+ [View the AWS default value and applied values](https://docs.aws.amazon.com//servicequotas/latest/userguide/gs-request-quota.html) of a particular quota.
-+ For adjustable quotas, you can [request a quota increase](https://docs.aws.amazon.com//servicequotas/latest/userguide/request-quota-increase.html).
++ [View the AWS default value and applied values](https://docs.aws.amazon.com/servicequotas/latest/userguide/gs-request-quota.html) of a particular quota.
++ For adjustable quotas, you can [request a quota increase](https://docs.aws.amazon.com/servicequotas/latest/userguide/request-quota-increase.html).

@@ -14,7 +14,7 @@ To manage permissions for your application, we recommend using [AWS managed poli
 If your application resources are in different accounts (secondary/resource accounts), you must setup a new role in each account that contains your application resources.
 
 **Note**
-If you define VPC endpoints for your workload resources, ensure that the VPC endpoint policies provide read-only access to AWS Resilience Hub for accessing the resources. For more information, see [Control access to VPC endpoints using endpoint policies](https://docs.aws.amazon.com//vpc/latest/privatelink/vpc-endpoints-access.html).
+If you define VPC endpoints for your workload resources, ensure that the VPC endpoint policies provide read-only access to AWS Resilience Hub for accessing the resources. For more information, see [Control access to VPC endpoints using endpoint policies](https://docs.aws.amazon.com/vpc/latest/privatelink/vpc-endpoints-access.html).
 
 **Topics**
 + [Using IAM role](security-iam-resilience-hub-using-iam-role.md)

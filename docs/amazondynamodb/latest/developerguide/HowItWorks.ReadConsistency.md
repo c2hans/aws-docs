@@ -12,7 +12,7 @@ Amazon DynamoDB reads data from tables, local secondary indexes (LSIs), global s
 ## Eventually consistent reads
 <a name="HowItWorks.ReadConsistency.Eventual"></a>
 
-Eventually consistent is the default read consistent model for all read operations. When issuing eventually consistent reads to a DynamoDB table or an index, the responses may not reflect the results of a recently completed write operation. If you repeat your read request after a short time, the response should eventually return the more recent item. Eventually consistent reads are supported on tables, local secondary indexes, and global secondary indexes. Also note that all reads from a DynamoDB stream are also eventually consistent.
+Eventually consistent is the default read consistent model for all read operations. When issuing eventually consistent reads to a DynamoDB table or an index, the responses might not reflect the results of a recently completed write operation. If you repeat your read request after a short time, the response should eventually return the more recent item. Eventually consistent reads are supported on tables, local secondary indexes, and global secondary indexes. Also note that all reads from a DynamoDB stream are also eventually consistent.
 
  Eventually consistent reads are half the cost of strongly consistent reads. For more information, see [Amazon DynamoDB](https://aws.amazon.com/dynamodb/pricing/) pricing.
 

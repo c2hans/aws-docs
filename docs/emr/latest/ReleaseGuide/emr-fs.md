@@ -14,7 +14,7 @@ Data encryption allows you to encrypt objects that EMRFS writes to Amazon S3, an
 
 Amazon S3 offers strong read-after write consistency for all GET, PUT, and LIST operations across all AWS Regions. This means that what you write using EMRFS is what you'll read from Amazon S3, with no impact on performance. For more information, see [Amazon S3 data consistency model](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html#ConsistencyModel).
 
-When using Amazon EMR release version 5.10.0 or later, you can use different IAM roles for EMRFS requests to Amazon S3 based on cluster users, groups, or the location of EMRFS data in Amazon S3. For more information, see [Configure IAM roles for EMRFS requests to Amazon S3](https://docs.aws.amazon.com//emr/latest/ManagementGuide/emr-emrfs-iam-roles).
+When using Amazon EMR release version 5.10.0 or later, you can use different IAM roles for EMRFS requests to Amazon S3 based on cluster users, groups, or the location of EMRFS data in Amazon S3. For more information, see [Configure IAM roles for EMRFS requests to Amazon S3](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-emrfs-iam-roles).
 
 **Warning**
 Before turning on speculative execution for Amazon EMR clusters running Apache Spark jobs, please review the following information.

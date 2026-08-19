@@ -52,8 +52,6 @@ Identify one of the routes as the default route for traffic to and from the node
 
 Here is a summary of the information that you should have collected for each cluster. Provide this information to the user who will configure MediaLive Anywhere.
 
-****
-
 |  Data  |  Where to set up this data in MediaLive Anywhere  |
 | --- | --- |
 | Number of network for this cluster, and purpose of each network | When creating the network |

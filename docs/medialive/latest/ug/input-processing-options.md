@@ -17,8 +17,6 @@ SCTE 35 messages can appear only in the following types of MediaLive inputs:
 
 The following table shows which inputs might include ad avail information and how MediaLive handles that information. To read the table, find an input in the first column, then read across in the row.
 
-****
-
 | Input | Interpret SCTE 35 messages in the source stream | Interpret ad avail information in the input manifest |
 | --- | --- | --- |
 | Elemental Link | Yes | Not applicable |

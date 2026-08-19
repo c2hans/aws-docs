@@ -95,7 +95,7 @@ The service quotas for these resources are automatically matched across AWS Regi
 **Important notes about specific resources**
 **Saved reports**: While saved reports are replicated, the schedules associated with saved reports are *not* replicated.
 **Views**: Only Views in a *published* state are replicated. Views in a draft state are *not* replicated.
-**Data tables**: Data Table values that contain literal ARN references will automatically adjust the region code to the local region when replicated. ARNs constructed using expressions may not automatically adjust the region code.
+**Data tables**: When you replicate an instance, Connect Customer updates the Region code of a literal Amazon Resource Name (ARN) for an Connect Customer or Connect Customer agent assist resource to the local Region. This applies whether the ARN is stored as a plain data table value or appears within a supported expression (for example, `=HOOP()` or `=XLOOKUP()`).
 
 [ReplicateInstance](https://docs.aws.amazon.com/connect/latest/APIReference/API_ReplicateInstance.html) also replicates the following associations across AWS Regions:
 + Phone number to flow

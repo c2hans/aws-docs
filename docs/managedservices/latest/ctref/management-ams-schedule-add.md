@@ -14,8 +14,6 @@ Add a new schedule to be used in AMS Resource Scheduler. Schedules employ define
 ## Change Type Details
 <a name="ct-2bxelbn765ive-MASa-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2bxelbn765ive |

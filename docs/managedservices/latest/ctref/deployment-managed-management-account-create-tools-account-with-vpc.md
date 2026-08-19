@@ -14,8 +14,6 @@ Create a managed AWS landing zone tools account and a VPC with a private subnet,
 ## Change Type Details
 <a name="ct-2j7q1hgf26x5c-DMMc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2j7q1hgf26x5c |

@@ -7,7 +7,7 @@ AWS Migration Hub is no longer open to new customers as of November 7, 2025. For
 # Configure User Notifications for Migration Hub Orchestrator status change events
 <a name="event-bridge-notifications"></a>
 
-You can configure AWS User Notifications to send notifications in response to status changes that occur in Migration Hub Orchestrator. User Notifications uses EventBridge to send notifications about events from AWS services to the AWS Management Console Notifications Center and your chosen delivery channels. For more information about Migration Hub Orchestrator events in EventBridge, see [Migration Hub Orchestrator events in EventBridgeMigration Hub Orchestrator event JSON structure](event-bridge.md).
+You can configure AWS User Notifications to send notifications in response to status changes that occur in Migration Hub Orchestrator. User Notifications uses EventBridge to send notifications about events from AWS services to the AWS Management Console Notifications Center and your chosen delivery channels. For more information about Migration Hub Orchestrator events in EventBridge, see [Migration Hub Orchestrator events in EventBridge](event-bridge.md).
 
 When you are creating a notification configuration, you can specify an **Advanced filter** per event rule to receive notifications that fit specific use cases. For more information on how to create a notification configuring in User Notifications, see [Creating your first notification configuration in AWS User Notifications](https://docs.aws.amazon.com/notifications/latest/userguide/getting-started.html) in the *AWS User Notifications User Guide*.
 

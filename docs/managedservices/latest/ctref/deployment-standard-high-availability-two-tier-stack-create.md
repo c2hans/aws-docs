@@ -14,8 +14,6 @@ Creates a stack consisting of an Auto Scaling group, an RDS DB instance, and a l
 ## Change Type Details
 <a name="ct-06mjngx5flwto-DSHc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-06mjngx5flwto |

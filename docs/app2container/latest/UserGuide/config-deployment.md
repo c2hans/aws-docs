@@ -103,7 +103,7 @@ If you upgrade from a previous App2Container deployment, the load balancer URL m
   + **reuseResources** (object) – Contains shared resource identifiers that can be used throughout your CloudFormation templates.
     + **vpcId** (string) – The VPC ID, if you want to bring your own VPC or to reuse an existing VPC that App2Container created for a prior deployment. *If you bring a custom VPC, you must have two or more private subnets in two or more Availability Zones. In this case, you can optionally have two or more public subnets in the same two Availability Zones.*
 **Note**
-For each private subnet in the reused VPC, you must configure a route to the internet using a NAT gateway. For more information about cluster networking for Amazon EKS, see [De-mystifying cluster networking for Amazon EKS worker nodes](https://aws.amazon.com//blogs/containers/de-mystifying-cluster-networking-for-amazon-eks-worker-nodes/).
+For each private subnet in the reused VPC, you must configure a route to the internet using a NAT gateway. For more information about cluster networking for Amazon EKS, see [De-mystifying cluster networking for Amazon EKS worker nodes](https://aws.amazon.com/blogs/containers/de-mystifying-cluster-networking-for-amazon-eks-worker-nodes/).
     + **cfnStackName** (string) – The name or ID (ARN) of the CloudFormation stack created with App2Container for the containerized application.
     + **sshKeyPairName** (string) – The name of the Amazon EC2 key pair to use for the instances that your container runs on.
     + **resourceTags** (array of objects) – Custom tags, expressed as key/value pairs that are added to resources during deployment. For Amazon EKS deployments, the key/value pairs update the Kubernetes `deployment.yml` file.

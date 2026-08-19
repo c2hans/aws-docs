@@ -14,8 +14,6 @@ Use to reboot all running EC2 and RDS DB instances in the specified stack.
 ## Change Type Details
 <a name="ct-02u0hoaa9grat-MSSr-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-02u0hoaa9grat |

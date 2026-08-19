@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/custom-
 
  Device Farm uses host machines that are pre-installed with many of the necessary software libraries to run test frameworks supported on our service, providing a ready testing environment on launch. Device Farm supports multiple languages through the use of our software selection mechanism, and will periodically update the versions of the languages included in the environment.
 
-For any other required software, you can modify the test spec file to install from your test package, download from the internet, or access private sources within your VPC (see [VPC ENI](https://docs.aws.amazon.com//devicefarm/latest/developerguide/vpc-eni.html) for more information). For more information, see [Test spec examples](custom-test-environment-test-spec.md#custom-test-environment-test-spec-example).
+For any other required software, you can modify the test spec file to install from your test package, download from the internet, or access private sources within your VPC (see [VPC ENI](https://docs.aws.amazon.com/devicefarm/latest/developerguide/vpc-eni.html) for more information). For more information, see [Test spec examples](custom-test-environment-test-spec.md#custom-test-environment-test-spec-example).
 
 ## Pre-configured software
 <a name="custom-test-environments-hosts-software-configured"></a>

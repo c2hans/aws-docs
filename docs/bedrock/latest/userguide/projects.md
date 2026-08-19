@@ -7,6 +7,9 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/projects.html
 
 Amazon Bedrock Projects API provides application-level isolation for your generative AI workloads using [OpenAI-compatible APIs](bedrock-mantle.md). Projects enable you to organize and manage your AI applications with improved access control, cost tracking, and observability across your organization.
 
+**Tip**
+For new applications, we recommend the `bedrock-runtime` endpoint. If you don't need the Projects API, use [Inference Profiles](inference-profiles-create.md) for isolation, tagging, and cost tracking on `bedrock-runtime`.
+
 **Note**
 Projects can only be used with models that use the OpenAI-compatible APIs against the [bedrock-mantle endpoint](bedrock-mantle.md). If you are using the bedrock-runtime endpoint, please use Inference Profiles instead of tagging and observability.
 
@@ -21,6 +24,9 @@ Projects allow you to manage multiple generative AI workloads in production with
 
 Each AWS account has a default project where all inference requests are associated with. You can create more projects in your account using the Projects API.
 
+**Note**
+Support for Projects differs by endpoint. On the `bedrock-mantle` endpoint, you can create and manage your own projects with the Projects API. On the `bedrock-runtime` endpoint, only the default project is available — you can't create projects there yet. Requests to `bedrock-runtime` resolve to your account's default project, whose ARN is `arn:aws:bedrock:{{region}}:{{account-id}}:project/default`. The default project can't be tagged or deleted, its data retention setting always inherits from the account, and it is never the billing anchor: usage on `bedrock-runtime` is attributed to the inference target, exactly as it is today. For the permissions that reference the default project, see [Prerequisites for running model inference](inference-prereq.md).
+
 ## When to Use Projects
 <a name="projects-when-to-use"></a>
 
@@ -33,7 +39,7 @@ You should use the Projects API when you need to:
 ## Projects vs. Inference Profiles
 <a name="projects-vs-inference-profiles"></a>
 
-Both Projects API and [Inference Profiles](inference-profiles-create.md) provide isolation, tagging, and access control capabilities in Amazon Bedrock, but they differ based on the API you use. If you're using OpenAI-compatible APIs with the [bedrock-mantle](endpoints.md) endpoint, which uses the Mantle inference engine, use the Projects API. If you're using Invoke or Converse APIs with the [bedrock-runtime](endpoints.md) endpoint, use Inference Profiles. While you can use Chat Completions API with either bedrock-mantle or bedrock-runtime endpoints, we recommend you use the Mantle endpoint.
+Both Projects API and [Inference Profiles](inference-profiles-create.md) provide isolation, tagging, and access control capabilities in Amazon Bedrock, but they differ based on the endpoint you use. If you're using OpenAI-compatible APIs with the [bedrock-mantle](endpoints.md) endpoint, use the Projects API. If you're using the [bedrock-runtime](endpoints.md) endpoint (recommended for new applications), use Inference Profiles. The Chat Completions API is available on both endpoints; the Projects API is only available on `bedrock-mantle`.
 
 | Feature | Projects API | Inference Profiles |
 | --- | --- | --- |

@@ -18,7 +18,7 @@ Model merging is only configurable for SFT training. The following table summari
 | Training type | Model merge behavior |
 | --- | --- |
 | [Supervised Fine-Tuning (SFT)](nova-fine-tune.md) | User-configurable model merging is applied. You can control the merge weight between the fine-tuned model and the base model as described in this document. |
-| [Reinforcement Fine-Tuning (RFT)](https://docs.aws.amazon.com//nova/latest/nova2-userguide/nova-reinforcement-fine-tuning.html) | No model merging. The trained model checkpoint is output directly as the final model. There is no base model involved in a merge step. |
+| [Reinforcement Fine-Tuning (RFT)](https://docs.aws.amazon.com/nova/latest/nova2-userguide/nova-reinforcement-fine-tuning.html) | No model merging. The trained model checkpoint is output directly as the final model. There is no base model involved in a merge step. |
 | [Continued Pre-Training (CPT)](nova-cpt.md) | No model merging. The trained model checkpoint is output directly as the final model. There is no base model involved in a merge step. |
 
 ## When to use model merging

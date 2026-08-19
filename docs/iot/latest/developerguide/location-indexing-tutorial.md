@@ -25,7 +25,7 @@ This tutorial takes about 15 minutes to complete.
 
 You create a thing to represent your device, and a named shadow to store its location data (coordinates 47.61564, -122.33584).
 
-1. Run the following command to create your thing that represents your bike named Bike-1. For more information about how to create a thing using AWS CLI, see [create-thing](https://docs.aws.amazon.com//cli/latest/reference/iot/create-thing.html) from *AWS CLI** Reference*.
+1. Run the following command to create your thing that represents your bike named Bike-1. For more information about how to create a thing using AWS CLI, see [create-thing](https://docs.aws.amazon.com/cli/latest/reference/iot/create-thing.html) from *AWS CLI** Reference*.
 
    ```
    aws iot create-thing --thing-name "Bike-1" \
@@ -42,7 +42,7 @@ You create a thing to represent your device, and a named shadow to store its loc
    }
    ```
 
-1. Run the following command to create a named shadow to store Bike-1's location data (coordinates 47.61564, -122.33584). For more information about how to create a named shadow using AWS CLI, see [update-thing-shadow](https://docs.aws.amazon.com//cli/latest/reference/iot-data/update-thing-shadow.html) from *AWS CLI** Reference*.
+1. Run the following command to create a named shadow to store Bike-1's location data (coordinates 47.61564, -122.33584). For more information about how to create a named shadow using AWS CLI, see [update-thing-shadow](https://docs.aws.amazon.com/cli/latest/reference/iot-data/update-thing-shadow.html) from *AWS CLI** Reference*.
 
    ```
    aws iot-data update-thing-shadow \
@@ -53,7 +53,7 @@ You create a thing to represent your device, and a named shadow to store its loc
    "output.txt" \
    ```
 
-   This command doesn't produce any output. To view the named shadow you created, you can run the [list-named-shadows-for-thing](https://docs.aws.amazon.com//cli/latest/reference/iot-data/list-named-shadows-for-thing.html) CLI command.
+   This command doesn't produce any output. To view the named shadow you created, you can run the [list-named-shadows-for-thing](https://docs.aws.amazon.com/cli/latest/reference/iot-data/list-named-shadows-for-thing.html) CLI command.
 
    ```
    aws iot-data list-named-shadows-for-thing --thing-name Bike-1
@@ -94,7 +94,7 @@ To index your location data, you must update your thing indexing configuration t
    "type":"Number"}] } }'
    ```
 
-   The command doesn't produce any output. You may need to wait for a moment until the update is complete. To check the status, run the [describe-index](https://docs.aws.amazon.com//cli/latest/reference/iot/describe-index.html) CLI command. If you see `indexStatus` shows: `ACTIVE`, your thing indexing update is complete.
+   The command doesn't produce any output. You may need to wait for a moment until the update is complete. To check the status, run the [describe-index](https://docs.aws.amazon.com/cli/latest/reference/iot/describe-index.html) CLI command. If you see `indexStatus` shows: `ACTIVE`, your thing indexing update is complete.
 
 1. Run the command to verify your indexing configuration. This step is optional.
 

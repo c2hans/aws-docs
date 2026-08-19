@@ -60,7 +60,6 @@ At runtime, if your app uses web identity federation, it must follow these steps
    + The `Expiration` field signifies the time limit for these credentials, after which they are no longer valid.
    + The `AssumedRoleId` field contains the name of a session-specific IAM role that has been assumed by the app. The app honors the access controls in the IAM policy document for the duration of this session.
    + The `SubjectFromWebIdentityToken` field contains the unique ID that appears in an IAM policy variable for this particular identity provider. The following are the IAM policy variables for supported providers, and some example values for them:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WIF.RunningYourApp.html)
 
 For example IAM policies where these policy variables are used, see [Example policies: Using conditions for fine-grained access control](specifying-conditions.md#FGAC_DDB.Examples).

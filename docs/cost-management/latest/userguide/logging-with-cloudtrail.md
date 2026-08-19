@@ -536,8 +536,6 @@ This section shows a full list of the CloudTrail events related to Pricing Calcu
 **Note**
 The event source for the following events is `bcm-pricing-calculator.amazonaws.com`.
 
-****
-
 | Event name | Definition |
 | --- | --- |
 | `CreateWorkloadEstimate` | Mutating operation. Allows customers to create a Workload estimate. |

@@ -17,6 +17,6 @@ To add multiple broadcasters to a live stream, you need to use both IVS Real-Tim
 Real-Time Streaming provides a resource called a stage, a virtual space where broadcasters (hosts) can exchange audio and video in real time. You can then broadcast a stage to channels to reach a larger audience, and you can build applications where audience members can be brought "on stage" to contribute to the live conversation.
 
 For more information about IVS Real-Time Streaming, see:
-+ [IVS Real-Time Streaming User Guide](https://docs.aws.amazon.com//ivs/latest/RealTimeUserGuide/what-is.html)
-  + The IVS Broadcast SDKs incorporate real-time functionality. See the Guides for those SDKs: [Web](https://docs.aws.amazon.com//ivs/latest/RealTimeUserGuide/broadcast-web.html), [Android](https://docs.aws.amazon.com//ivs/latest/RealTimeUserGuide/broadcast-android.html), and [iOS](https://docs.aws.amazon.com//ivs/latest/RealTimeUserGuide/broadcast-ios.html), especially the sections on "Publishing and Subscribing."
-+  [IVS Real-Time Streaming API Reference](https://docs.aws.amazon.com//ivs/latest/RealTimeAPIReference/Welcome.html)
++ [IVS Real-Time Streaming User Guide](https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/what-is.html)
+  + The IVS Broadcast SDKs incorporate real-time functionality. See the Guides for those SDKs: [Web](https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/broadcast-web.html), [Android](https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/broadcast-android.html), and [iOS](https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/broadcast-ios.html), especially the sections on "Publishing and Subscribing."
++  [IVS Real-Time Streaming API Reference](https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/Welcome.html)

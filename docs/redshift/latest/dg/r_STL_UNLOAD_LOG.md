@@ -31,6 +31,8 @@ STL\_UNLOAD\_LOG only contains queries run on main provisioned clusters. It does
 | line\_count | bigint | Number of lines (rows) unloaded to the file. |
 | transfer\_size | bigint | Number of bytes transferred. |
 | file\_format | character(10) | Format of unloaded file. |
+| user\_query\_id  | bigint  | The query identifier of the user-submitted query, as recorded in the query\_id column of [SYS\_UNLOAD\_DETAIL](SYS_UNLOAD_DETAIL.md).  |
+| transaction\_id  | bigint  | The transaction identifier associated with the statement.  |
 
 ## Sample query
 <a name="r_STL_UNLOAD_LOG-sample-query"></a>

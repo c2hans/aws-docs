@@ -22,6 +22,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::QuickSight::Flow](aws-resource-quicksight-flow.md)
 + [AWS::QuickSight::Folder](aws-resource-quicksight-folder.md)
 + [AWS::QuickSight::KnowledgeBase](aws-resource-quicksight-knowledgebase.md)
++ [AWS::QuickSight::LimitsProfile](aws-resource-quicksight-limitsprofile.md)
 + [AWS::QuickSight::OAuthClientApplication](aws-resource-quicksight-oauthclientapplication.md)
 + [AWS::QuickSight::RefreshSchedule](aws-resource-quicksight-refreshschedule.md)
 + [AWS::QuickSight::Space](aws-resource-quicksight-space.md)

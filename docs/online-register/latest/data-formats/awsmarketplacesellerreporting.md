@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsm
 
 AWS Marketplace Seller Reporting provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="aws-marketplace-GetSellerDashboard"></a>[GetSellerDashboard](https://docs.aws.amazon.com/marketplace/latest/userguide/dashboards.html#reports-accessing) | View a seller dashboard | Read |

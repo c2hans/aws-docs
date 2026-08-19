@@ -14,8 +14,6 @@ Update the DeletionProtection setting for the specified RDS instance or cluster.
 ## Change Type Details
 <a name="ct-2syhk4sr7cvyw-MARu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2syhk4sr7cvyw |

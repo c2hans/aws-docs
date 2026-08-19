@@ -30,7 +30,7 @@ These values have the following constraints:
 
 1. On the next page, keep the default values, and choose **Stream**.
 
-1. Sign in to the AWS Management Console and open the [Kinesis Video Streams console](https://console.aws.amazon.com//kinesisvideo/home/) in the US West (Oregon) Region.
+1. Sign in to the AWS Management Console and open the [Kinesis Video Streams console](https://console.aws.amazon.com/kinesisvideo/home/) in the US West (Oregon) Region.
 
    On the **Manage Streams** page, choose **demo-stream**.
 

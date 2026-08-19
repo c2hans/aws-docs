@@ -15,6 +15,21 @@ PUT /function/{{FunctionId}} HTTP/1.1
 Content-type: application/json
 
 {
+   "ConcurrentExecutorConfiguration": {
+      "FunctionList": [
+         {
+            "Alias": "{{string}}",
+            "FunctionId": "{{string}}",
+            "RunCondition": "{{string}}"
+         }
+      ],
+      "MaxConcurrency": {{number}},
+      "Output": {
+         "{{string}}" : "{{string}}"
+      },
+      "Runtime": "{{string}}",
+      "TimeoutMilliseconds": {{number}}
+   },
    "CustomOutputConfiguration": {
       "Output": {
          "{{string}}" : "{{string}}"
@@ -39,6 +54,7 @@ Content-type: application/json
    "SequentialExecutorConfiguration": {
       "FunctionList": [
          {
+            "Alias": "{{string}}",
             "FunctionId": "{{string}}",
             "RunCondition": "{{string}}"
          }
@@ -69,6 +85,11 @@ Required: Yes
 
 The request accepts the following data in JSON format.
 
+ ** [ConcurrentExecutorConfiguration](#API_PutFunction_RequestSyntax) **   <a name="mediatailor-PutFunction-request-ConcurrentExecutorConfiguration"></a>
+The configuration for a `CONCURRENT_EXECUTOR` function. Specifies the list of child functions to run in parallel, the maximum concurrency, an optional output block, and a timeout. Required when `FunctionType` is `CONCURRENT_EXECUTOR`.
+Type: [ConcurrentExecutorConfiguration](API_ConcurrentExecutorConfiguration.md) object
+Required: No
+
  ** [CustomOutputConfiguration](#API_PutFunction_RequestSyntax) **   <a name="mediatailor-PutFunction-request-CustomOutputConfiguration"></a>
 The configuration for a `CUSTOM_OUTPUT` function. Specifies the runtime and output expressions. Required when `FunctionType` is `CUSTOM_OUTPUT`.
 Type: [CustomOutputConfiguration](API_CustomOutputConfiguration.md) object
@@ -82,7 +103,7 @@ Required: No
  ** [FunctionType](#API_PutFunction_RequestSyntax) **   <a name="mediatailor-PutFunction-request-FunctionType"></a>
 The type of the function. The function type determines what the function can do at runtime. Valid values: `CUSTOM_OUTPUT` evaluates expressions and produces output bindings with no external calls. `HTTP_REQUEST` makes an HTTP call to an external service and evaluates output expressions that can reference the response. `SEQUENTIAL_EXECUTOR` runs a sequence of child functions in order, passing data between steps through temporary data. For more information, see [Function types and composition](https://docs.aws.amazon.com/mediatailor/latest/ug/monetization-functions-types.html) in the *MediaTailor User Guide*.
 Type: String
-Valid Values: `HTTP_REQUEST | CUSTOM_OUTPUT | SEQUENTIAL_EXECUTOR`
+Valid Values: `HTTP_REQUEST | CUSTOM_OUTPUT | CONCURRENT_EXECUTOR | SEQUENTIAL_EXECUTOR`
 Required: Yes
 
  ** [HttpRequestConfiguration](#API_PutFunction_RequestSyntax) **   <a name="mediatailor-PutFunction-request-HttpRequestConfiguration"></a>
@@ -109,6 +130,21 @@ Content-type: application/json
 
 {
    "Arn": "string",
+   "ConcurrentExecutorConfiguration": {
+      "FunctionList": [
+         {
+            "Alias": "string",
+            "FunctionId": "string",
+            "RunCondition": "string"
+         }
+      ],
+      "MaxConcurrency": number,
+      "Output": {
+         "string" : "string"
+      },
+      "Runtime": "string",
+      "TimeoutMilliseconds": number
+   },
    "CustomOutputConfiguration": {
       "Output": {
          "string" : "string"
@@ -134,6 +170,7 @@ Content-type: application/json
    "SequentialExecutorConfiguration": {
       "FunctionList": [
          {
+            "Alias": "string",
             "FunctionId": "string",
             "RunCondition": "string"
          }
@@ -161,6 +198,10 @@ The following data is returned in JSON format by the service.
 The Amazon Resource Name (ARN) of the function.
 Type: String
 
+ ** [ConcurrentExecutorConfiguration](#API_PutFunction_ResponseSyntax) **   <a name="mediatailor-PutFunction-response-ConcurrentExecutorConfiguration"></a>
+The configuration for a `CONCURRENT_EXECUTOR` function.
+Type: [ConcurrentExecutorConfiguration](API_ConcurrentExecutorConfiguration.md) object
+
  ** [CustomOutputConfiguration](#API_PutFunction_ResponseSyntax) **   <a name="mediatailor-PutFunction-response-CustomOutputConfiguration"></a>
 The configuration for a `CUSTOM_OUTPUT` function.
 Type: [CustomOutputConfiguration](API_CustomOutputConfiguration.md) object
@@ -176,7 +217,7 @@ Type: String
  ** [FunctionType](#API_PutFunction_ResponseSyntax) **   <a name="mediatailor-PutFunction-response-FunctionType"></a>
 The type of the function.
 Type: String
-Valid Values: `HTTP_REQUEST | CUSTOM_OUTPUT | SEQUENTIAL_EXECUTOR`
+Valid Values: `HTTP_REQUEST | CUSTOM_OUTPUT | CONCURRENT_EXECUTOR | SEQUENTIAL_EXECUTOR`
 
  ** [HttpRequestConfiguration](#API_PutFunction_ResponseSyntax) **   <a name="mediatailor-PutFunction-response-HttpRequestConfiguration"></a>
 The configuration for an `HTTP_REQUEST` function.

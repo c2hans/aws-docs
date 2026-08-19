@@ -13,7 +13,7 @@ When you have VPC BPA turned on and want to use Amazon Redshift APIs over the pu
 + **Bidirectional**: All internet traffic to and from the excluded VPCs and subnets is allowed.
 + **Egress-only**: Outbound internet traffic from the excluded VPCs and subnets is allowed. Inbound internet traffic to the excluded VPCs and subnets is blocked. This only applies when BPA is set to bidirectional.
 
-VPC BPA exclusions designate an entire VPC or specific subnet within a VPC as public-access capable. Network interfaces within that boundary respect the regular VPC networking controls, such as security groups, route tables, and network ACLs, with regard to whether that interface has a route and access to the public internet. For more information about adding exclusions, see [Create and delete exclusions](https://docs.aws.amazon.com//vpc/latest/userguide/security-vpc-bpa.html#security-vpc-bpa-exclusions) in the *Amazon VPC User Guide*.
+VPC BPA exclusions designate an entire VPC or specific subnet within a VPC as public-access capable. Network interfaces within that boundary respect the regular VPC networking controls, such as security groups, route tables, and network ACLs, with regard to whether that interface has a route and access to the public internet. For more information about adding exclusions, see [Create and delete exclusions](https://docs.aws.amazon.com/vpc/latest/userguide/security-vpc-bpa.html#security-vpc-bpa-exclusions) in the *Amazon VPC User Guide*.
 
 **Provisioned clusters**
 

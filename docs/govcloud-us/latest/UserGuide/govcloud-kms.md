@@ -8,24 +8,22 @@ source_url: https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-km
 AWS Key Management Service (KMS) is an encryption and key management service scaled for the cloud. KMS keys and functionality are used by other AWS services, and you can use them to protect data in your own applications that use AWS.
 
 ## Region availability
-<a name="_region_availability"></a>
+<a name="region-availability"></a>
 
-This service is available in the following AWS GovCloud (US) Regions:
-+  AWS GovCloud (US-West)
+ AWS Key Management Service (KMS) is available in the following AWS GovCloud (US) Regions:
 +  AWS GovCloud (US-East)
++  AWS GovCloud (US-West)
 
-## How AWS KMS differs
-<a name="govcloud-kms-diffs"></a>
-
-The following differences apply to AWS KMS:
+## How AWS Key Management Service (KMS) differs
+<a name="feature-diffs"></a>
 + External key store proxies in the AWS GovCloud (US) Region must support HTTP/1.1 or later and TLS 1.2 or later with at least one of these cipher suites: TLS\_AES\_256\_GCM\_SHA384 (TLS 1.3), TLS\_ECDHE\_RSA\_WITH\_AES\_256\_GCM\_SHA384 (TLS 1.2), TLS\_ECDHE\_ECDSA\_WITH\_AES\_256\_GCM\_SHA384 (TLS 1.2). The AWS GovCloud (US) Region does not support the TLS\_CHACHA20\_POLY1305\_SHA256 cipher suite. For more information, see the open-source [external key store proxy API specification](https://github.com/aws/aws-kms-xksproxy-api-spec/) that AWS KMS publishes.
 
 ## Documentation
-<a name="govcloud-kms-docs"></a>
+<a name="documentation"></a>
 +  [AWS Key Management Service Developer Guide](https://docs.aws.amazon.com/kms/latest/developerguide/)
 
 ## Export-controlled content
-<a name="kms-itar-boundary"></a>
+<a name="itar-boundary"></a>
 
 For AWS Services architected within the AWS GovCloud (US) Regions, the following list explains how certain components of data may leave the AWS GovCloud (US) Regions in the normal course of the service offerings. The list can be used as a guide to help meet applicable customer compliance obligations. Data not included in the following list remains within the AWS GovCloud (US) Regions.
 +  AWS KMS metadata is not permitted to contain export-controlled data. Do not enter export-controlled data in the following fields:

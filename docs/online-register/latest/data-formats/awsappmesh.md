@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsa
 
 AWS App Mesh provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="appmesh-DescribeGatewayRoute"></a>[DescribeGatewayRoute](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_DescribeGatewayRoute.html) | Describe an existing gateway route | Read |

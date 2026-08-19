@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsi
 
 AWS IoT Wireless provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="iotwireless-GetDestination"></a>[GetDestination](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetDestination.html) | Get the Destination | Read |

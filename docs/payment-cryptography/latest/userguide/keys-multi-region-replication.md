@@ -26,6 +26,7 @@ When Multi-Region key replication is enabled, the AWS Payment Cryptography servi
 <a name="limitations-considerations"></a>
 
 The following are some Multi-Region key replication limitations and considerations.
++ Payment Cryptography keys must be set to exportable to use Multi-Region key replication.
 + You must enable this feature for either an AWS Region or specific Payment Cryptography keys.
   + If this feature is enabled for an AWS Region, all AWS Payment Cryptography keys created after enablement will be replicate to the specified AWS Region. Keys created in this Region will become Primary Region keys. Existing keys in this Region will not be automatically replicated. You can enable Multi-Region key replication for existing keys within an AWS Region at the key level.
   + Each AWS Region can have unique Multi-Region key replication settings.
@@ -132,7 +133,7 @@ The following are security considerations when using Multi-Region key replicatio
 <a name="best-practices"></a>
 
 The following are some best practices when using Multi-Region key replication with AWS Payment Cryptography keys.
-+ Ensure your application continues to work even if the Multi-Region key replication to the specified AWS Region is not immediate. If you need to know when Multi-Region key replication is complete, you can monitor with the [GetKey](https://docs.aws.amazon.com/payment-cryptography/latest/APIReference/API_GetKey.html) API action. You can monitor key replication events with [AWS CloudTrail](https://docs.aws.amazon.com//awscloudtrail/latest/userguide/cloudtrail-user-guide.html).
++ Ensure your application continues to work even if the Multi-Region key replication to the specified AWS Region is not immediate. If you need to know when Multi-Region key replication is complete, you can monitor with the [GetKey](https://docs.aws.amazon.com/payment-cryptography/latest/APIReference/API_GetKey.html) API action. You can monitor key replication events with [AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html).
 + Test and implement automated deployment processes in case of fail-over from one AWS Region to another Region.
 
 ## Pricing

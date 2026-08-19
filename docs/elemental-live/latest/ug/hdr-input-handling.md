@@ -23,8 +23,6 @@ If you plan to remove the metadata, there is no need to work with the color spac
 
 The following table specifies the handling that is available for color spaces in the input.
 
-****
-
 |  Color space   | Elemental Live can correct the color space metadata |
 | --- | --- |
 | 601 | Yes |

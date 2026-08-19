@@ -77,14 +77,10 @@ The following pipeline definition shows an `HttpProxy` object:
 ## Syntax
 <a name="httpproxy-slots"></a>
 
-****
-
 | Required Fields | Description | Slot Type |
 | --- | --- | --- |
 | hostname | Host of the proxy which clients will use to connect to AWS Services. | String |
 | port | Port of the proxy host which the clients will use to connect to AWS Services. | String |
-
-****
 
 | Optional Fields | Description | Slot Type |
 | --- | --- | --- |
@@ -95,13 +91,9 @@ The following pipeline definition shows an `HttpProxy` object:
 | windowsDomain | The Windows domain name for NTLM Proxy. | String |
 | windowsWorkgroup | The Windows workgroup name for NTLM Proxy. | String |
 
-****
-
 | Runtime Fields | Description | Slot Type |
 | --- | --- | --- |
 | @version | Pipeline version the object was created with. | String |
-
-****
 
 | System Fields | Description | Slot Type |
 | --- | --- | --- |

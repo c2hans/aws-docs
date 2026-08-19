@@ -23,7 +23,7 @@ The registration process takes a minimum of 10 minutes to extend governance to t
 
 ** To register an existing OU with APIs**
 
-To register an existing OU with the AWS Control Tower APIs, you can call the `EnableBaseline` API with the `AWSControlTowerBaseline` in the `baselineIdentifier` field. For more information, see [Register an AWS Control Tower OU with APIs only](https://docs.aws.amazon.com//controltower/latest/userguide/walkthrough-baseline-steps.html).
+To register an existing OU with the AWS Control Tower APIs, you can call the `EnableBaseline` API with the `AWSControlTowerBaseline` in the `baselineIdentifier` field. For more information, see [Register an AWS Control Tower OU with APIs only](https://docs.aws.amazon.com/controltower/latest/userguide/walkthrough-baseline-steps.html).
 
 **Results of registering an existing OU**
 

@@ -48,7 +48,7 @@ To change a parameter's value using the AWS CLI, use the command `update-paramet
 
 To find the name and permitted values of the parameter you want to change, see [Engine specific parameters](parametergroups.redis.md)
 
-For more information, see [update-parameter-group](https://docs.aws.amazon.com//cli/latest/reference/memorydb/update-parameter-group.html).
+For more information, see [update-parameter-group](https://docs.aws.amazon.com/cli/latest/reference/memorydb/update-parameter-group.html).
 
 ## Modifying a parameter group (MemoryDB API)
 <a name="parametergroups.modifying.api"></a>

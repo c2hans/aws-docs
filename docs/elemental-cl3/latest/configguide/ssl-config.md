@@ -28,8 +28,6 @@ If you enter one of these commands and omit `--https`, you will *inadvertently d
 
 Make sure you perform the configuration on the correct nodes.
 
-****
-
 | Node | Work on this node? |
 | --- | --- |
 | Primary Conductor Live node | Yes |

@@ -12,7 +12,7 @@ Updates are required to correct governance drift, or to move to a new version of
   To update a single account, navigate to the account detail page and select **Update account**. Accounts also may be updated by a manual process, by choosing **Re-register OU**, or with an automated scripting approach, described in a later section of this page.
 + **A full update:** A full update includes an update of your landing zone, followed by an update of all the enrolled accounts in your registered OUs. Full updates are required with a new release of AWS Control Tower such as 3.0, 3.2, and so forth. To make the full update process easier, for OUs with 1000 or fewer accounts, you can choose **Re-register OU** to update all of the accounts within that OU, and repeat the **Re-register OU** command for each OU.
 
-For more information about landing zone updates, see [Best practices for landing zone updates](https://docs.aws.amazon.com//controltower/latest/userguide/lz-update-best-practices.html).
+For more information about landing zone updates, see [Best practices for landing zone updates](https://docs.aws.amazon.com/controltower/latest/userguide/lz-update-best-practices.html).
 
 **Note**
 After completing a landing zone update, you cannot undo the update or downgrade to a previous version.

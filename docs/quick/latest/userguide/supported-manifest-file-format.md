@@ -56,14 +56,12 @@ The manifest file elements are described following:
     Quick Sight can access Amazon S3 files that are in any AWS Region. However, you must use a URI format that identifies the AWS Region of the Amazon S3 bucket if it's different from that used by your Quick account.
 
     URIs in the following formats are supported.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/quick/latest/userguide/supported-manifest-file-format.html)
   + **URIPrefixes** – Use this array to list URI prefixes for S3 buckets and folders. All files in a specified bucket or folder are imported. Quick Sight recursively retrieves files from child folders.
 
     Quick Sight can access Amazon S3 buckets or folders that are in any AWS Region. Make sure to use a URI prefix format that identifies the S3 bucket's AWS Region if it's different from that used by your Quick account.
 
     URI prefixes in the following formats are supported.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/quick/latest/userguide/supported-manifest-file-format.html)
 + **globalUploadSettings** – (Optional) Use this element to specify import settings for the Amazon S3 files, such as field delimiters. If this element is not specified, Quick Sight uses the default values for the fields in this section.
 **Important**

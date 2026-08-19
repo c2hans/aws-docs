@@ -14,8 +14,6 @@ Modify the properties of an S3 bucket created using change type ID ct-1a68ck03fn
 ## Change Type Details
 <a name="ct-1gi93jhvj28eg-MASu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1gi93jhvj28eg |

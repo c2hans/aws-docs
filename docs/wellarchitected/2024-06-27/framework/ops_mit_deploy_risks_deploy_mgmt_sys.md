@@ -63,7 +63,7 @@ This is an earlier version of the AWS Well-Architected Framework. For the latest
 
  **Related documents:**
 + [AWS Builders Library \| Automating safe, hands-off deployments \| Production deployments ](https://aws.amazon.com/builders-library/automating-safe-hands-off-deployments/?did=ba_card&trk=ba_card#Production_deployments)
-+ [AWS Builders Library \| My CI/CD pipeline is my release captain \| Safe, automatic production releases](https://aws.amazon.com//builders-library/cicd-pipeline/#Safe.2C_automatic_production_releases)
++ [AWS Builders Library \| My CI/CD pipeline is my release captain \| Safe, automatic production releases](https://aws.amazon.com/builders-library/cicd-pipeline/#Safe.2C_automatic_production_releases)
 + [AWS Whitepaper \| Practicing Continuous Integration and Continuous Delivery on AWS \| Deployment methods](https://docs.aws.amazon.com/whitepapers/latest/practicing-continuous-integration-continuous-delivery/deployment-methods.html)
 + [AWS CodeDeploy User Guide](https://docs.aws.amazon.com/codedeploy/latest/userguide/welcome.html)
 + [Working with deployment configurations in AWS CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/deployment-configurations.html)

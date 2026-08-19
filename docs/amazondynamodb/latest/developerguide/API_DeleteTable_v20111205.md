@@ -37,8 +37,6 @@ content-type: application/x-amz-json-1.0
 {"TableName":"Table1"}
 ```
 
-****
-
 |  Name  |  Description  |  Required |
 | --- | --- | --- |
 |  TableName  |  The name of the table to delete. <br /> Type: String  |  Yes  |
@@ -68,8 +66,6 @@ Date: Sun, 14 Aug 2011 22:56:22 GMT
 }
 ```
 
-****
-
 |  Name  |  Description  |
 | --- | --- |
 | TableDescription  | A container for the table properties. |
@@ -83,8 +79,6 @@ Date: Sun, 14 Aug 2011 22:56:22 GMT
 
 ## Special errors
 <a name="API_DeleteTable_SpecialErrors"></a>
-
-****
 
 |  Error  |  Description  |
 | --- | --- |

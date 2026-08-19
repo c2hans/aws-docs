@@ -19,7 +19,7 @@ The following prerequisites are required to integrate table buckets with AWS ana
 + Add the following AWS Glue permissions to your AWS Identity and Access Management (IAM) principal:
   + `glue:CreateCatalog` which is required to create `s3tablescatalog` federated catalog in the Data Catalog
   + `glue:PassConnection` grants the calling principal the right to delegate `aws:s3tables` connection creation to Amazon S3 service.
-+ [Update to the latest version of the AWS Command Line Interface (AWS CLI)](https://docs.aws.amazon.com//cli/latest/userguide/getting-started-install.html#getting-started-install-instructions).
++ [Update to the latest version of the AWS Command Line Interface (AWS CLI)](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html#getting-started-install-instructions).
 
 **Important**
 When creating tables, make sure that you use all lowercase letters in your table names and table definitions. For example, make sure that your column names are all lowercase. If your table name or table definition contains capital letters, the table isn't supported by AWS Lake Formation or the AWS Glue Data Catalog. In this case, your table won't be visible to AWS analytics services such as Amazon Athena, even if your table buckets are integrated with AWS analytics services.

@@ -24,8 +24,6 @@ References:
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
 
-****
-
 | Actions | Description | Resource types (\*required) | Condition keys | Access level |
 | --- | --- | --- | --- | --- |
 |   [CreateApp](https://docs.aws.amazon.com/server-migration-service/latest/APIReference/API_CreateApp.html)  | Grants permission to create an application configuration to migrate on-premise application onto AWS |  |   | Write |
@@ -68,8 +66,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 <a name="list_sms-permission-only-actions"></a>
 
 The following actions are defined by AWS Server Migration Service but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
-
-****
 
 | Actions | Description | Resource types (\*required) | Condition keys | Access level |
 | --- | --- | --- | --- | --- |

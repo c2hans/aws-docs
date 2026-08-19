@@ -11,6 +11,6 @@ You can launch CloudShell from the AWS Management Console using one of the follo
 + Choose the CloudShell icon in the footer of the console.
 + Choose the CloudShell icon on the console navigation bar.
 
-For more information about this service, see the [AWS CloudShell User Guide](https://docs.aws.amazon.com//cloudshell/latest/userguide/welcome.html).
+For more information about this service, see the [AWS CloudShell User Guide](https://docs.aws.amazon.com/cloudshell/latest/userguide/welcome.html).
 
 For information about the AWS Regions where AWS CloudShell is available, see the [AWS Regional Services List](https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/). The selection of the Console Region is in sync with the CloudShell Region. If CloudShell isn't available in a selected Region, then CloudShell will operate in the nearest Region.

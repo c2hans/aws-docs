@@ -91,11 +91,11 @@ If you opt not to govern a Region, you can still deploy resources in that Region
 
 1. When the landing zone setup completes, **Re-register** the OUs to update the accounts in your new Regions. For more information, see [When to update AWS Control Tower OUs and accounts](update-existing-accounts.md).
 
-An alternative method of provisioning or updating individual accounts after configuring new Regions is by using [the API framework of Service Catalog](https://docs.aws.amazon.com//servicecatalog/latest/dg/API_Reference.html) and [the AWS CLI](https://docs.aws.amazon.com//cli/latest/reference/servicecatalog/index.html) to update the accounts in a batch process. For more information, see [Provision and update accounts using automation](update-accounts-by-script.md).
+An alternative method of provisioning or updating individual accounts after configuring new Regions is by using [the API framework of Service Catalog](https://docs.aws.amazon.com/servicecatalog/latest/dg/API_Reference.html) and [the AWS CLI](https://docs.aws.amazon.com/cli/latest/reference/servicecatalog/index.html) to update the accounts in a batch process. For more information, see [Provision and update accounts using automation](update-accounts-by-script.md).
 
 ## Considerations for the OU-level Region deny control
 <a name="region-deny-for-ou"></a>
 
 The primary consideration about the OU-level Region deny control is to determine how it will interact with the landing zone Region deny control, if both are activated. For more information, see [Region deny control applied to the OU](https://docs.aws.amazon.com/controltower/latest/controlreference/ou-region-deny.html).
 
-You also may wish to review [Configure the Region deny control](https://docs.aws.amazon.com//controltower/latest/userguide/region-deny.html).
+You also may wish to review [Configure the Region deny control](https://docs.aws.amazon.com/controltower/latest/userguide/region-deny.html).

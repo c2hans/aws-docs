@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon Interactive Video Service Chat provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="ivschat-GetLoggingConfiguration"></a>[GetLoggingConfiguration](https://docs.aws.amazon.com/ivs/latest/ChatAPIReference/API_GetLoggingConfiguration.html) | Get the logging configuration for a specified logging configuration ARN | Read |

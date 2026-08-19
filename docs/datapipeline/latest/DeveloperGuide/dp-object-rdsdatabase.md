@@ -33,15 +33,11 @@ For the Oracle engine, the `jdbcDriverJarUri` field is required and you can spec
 ## Syntax
 <a name="rdsdatabase-syntax"></a>
 
-****
-
 | Required Fields | Description | Slot Type |
 | --- | --- | --- |
 | \*password | The password to supply. | String |
 | rdsInstanceId | The DBInstanceIdentifier property of the DB instance. | String |
 | username | The user name to supply when connecting to the database. | String |
-
-****
 
 | Optional Fields | Description | Slot Type |
 | --- | --- | --- |
@@ -51,13 +47,9 @@ For the Oracle engine, the `jdbcDriverJarUri` field is required and you can spec
 | parent | Parent of the current object from which slots will be inherited. | Reference Object, for example, "parent":{"ref":"myBaseObjectId"} |
 | region | The code for the region where the database exists. For example, us-east-1. | String |
 
-****
-
 | Runtime Fields | Description | Slot Type |
 | --- | --- | --- |
 | @version | Pipeline version that the object was created with. | String |
-
-****
 
 | System Fields | Description | Slot Type |
 | --- | --- | --- |

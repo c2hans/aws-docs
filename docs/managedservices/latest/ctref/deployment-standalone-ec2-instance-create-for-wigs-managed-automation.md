@@ -14,8 +14,6 @@ Create an Amazon Elastic Compute Cloud (EC2) instance for use with Workload Inge
 ## Change Type Details
 <a name="ct-36emj2uapfbu8-DSEc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-36emj2uapfbu8 |

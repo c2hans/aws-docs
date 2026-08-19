@@ -11,7 +11,7 @@ The purpose of the evaluation process is to assess trained-model performance aga
 You can also evaluate your models using [Inspect AI](nova-eval-inspect-ai.md), an open-source evaluation framework that supports standardized benchmarks and custom evaluation tasks.
 
 **Note**
-The evaluation process described in this topic is an offline process. The model is tested against fixed benchmarks with predefined answers, rather than being assessed in real-time or through live user interactions. For real-time evaluation, you can test the model after it has been deployed to Amazon Bedrock by calling [Amazon Bedrock](https://docs.aws.amazon.com//bedrock/latest/userguide/import-with-create-custom-model.html) Runtime APIs.
+The evaluation process described in this topic is an offline process. The model is tested against fixed benchmarks with predefined answers, rather than being assessed in real-time or through live user interactions. For real-time evaluation, you can test the model after it has been deployed to Amazon Bedrock by calling [Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/import-with-create-custom-model.html) Runtime APIs.
 
 **Topics**
 + [Prerequisites](#nova-model-evaluation-prerequisites)
@@ -83,7 +83,7 @@ run:
   + amazon.nova-micro-v1:0:128k
   + amazon.nova-lite-v1:0:300k
   + amazon.nova-pro-v1:0:300k
-  + amazon.nova-2-lite-v1:0:256k (Nova 2.0 model — see [Nova 2.0 customization guide](https://docs.aws.amazon.com//nova/latest/nova2-userguide/nova-model.html))
+  + amazon.nova-2-lite-v1:0:256k (Nova 2.0 model — see [Nova 2.0 customization guide](https://docs.aws.amazon.com/nova/latest/nova2-userguide/nova-model.html))
 + `model_name_or_path`: The path to the base model or s3 path for post trained checkpoint. Options include:
   + nova-micro/prod
   + nova-lite/prod
@@ -394,7 +394,6 @@ Follow these steps to bring your own metrics with custom evaluation SDK.
 ------
 
 1. Review the Lambda payload schema. The following table lists the Lambda request and response schema. You can validate your schema using the Nova custom evaluation SDK.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/nova/latest/userguide/nova-model-evaluation.html)
 
 1. Modify the recipe file. Here is an example.
@@ -552,7 +551,7 @@ evaluation:
 ## Running evaluation training jobs
 <a name="nova-model-evaluation-notebook"></a>
 
-Start a training job using the following sample Jupyter notebook. Please refer to below notebook as example to run the evaluation training job. For more information, see [Use a SageMaker AI estimator to run a training job](https://docs.aws.amazon.com//sagemaker/latest/dg/docker-containers-adapt-your-own-private-registry-estimator.html).
+Start a training job using the following sample Jupyter notebook. Please refer to below notebook as example to run the evaluation training job. For more information, see [Use a SageMaker AI estimator to run a training job](https://docs.aws.amazon.com/sagemaker/latest/dg/docker-containers-adapt-your-own-private-registry-estimator.html).
 
 ### Reference tables
 <a name="nova-model-evaluation-reference-table"></a>

@@ -37,12 +37,12 @@ For details, see the S3 documentation on [controlling ownership of objects](http
 ### 2. Create a StorageConfiguration Object
 <a name="ind-part-rec-create-storageconfig-object"></a>
 
-After creating a bucket, call the IVS real-time streaming API to [create a StorageConfiguration](https://docs.aws.amazon.com//ivs/latest/RealTimeAPIReference/API_CreateStorageConfiguration.html) object. Once the storage configuration is successfully created, IVS will have permission to write to the provided S3 bucket. You can re-use this StorageConfiguration object on multiple stages.
+After creating a bucket, call the IVS real-time streaming API to [create a StorageConfiguration](https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_CreateStorageConfiguration.html) object. Once the storage configuration is successfully created, IVS will have permission to write to the provided S3 bucket. You can re-use this StorageConfiguration object on multiple stages.
 
 ### 3. Create a Stage with Participant Tokens
 <a name="ind-part-rec-create-stage-with-part-tokens"></a>
 
-Now you need to [create an IVS stage](https://docs.aws.amazon.com//ivs/latest/RealTimeAPIReference/API_CreateStage.html) with individual participant recording enabled (by setting the AutoParticipantRecordingConfiguration object), as well as participant tokens for each publisher.
+Now you need to [create an IVS stage](https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_CreateStage.html) with individual participant recording enabled (by setting the AutoParticipantRecordingConfiguration object), as well as participant tokens for each publisher.
 
 The request below creates a stage with two participant tokens and individual participant recording enabled.
 
@@ -79,9 +79,9 @@ Content-type: application/json
 ### 4. Join the Stage as an Active Publisher
 <a name="ind-part-rec-join-stage-as-active-pub"></a>
 
-Distribute the participant tokens to your publishers, and have them join the stage and start [publishing to it](https://docs.aws.amazon.com//ivs/latest/RealTimeUserGuide/getting-started-pub-sub.html).
+Distribute the participant tokens to your publishers, and have them join the stage and start [publishing to it](https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/getting-started-pub-sub.html).
 
-When they join the stage and start publishing to it using one of [IVS real-time streaming broadcast SDKs](https://docs.aws.amazon.com//ivs/latest/RealTimeUserGuide/broadcast.html), the participant-recording process starts automatically and sends you an [EventBridge event](eventbridge.md) indicating that the recording started. (The event is IVS Participant Recording State Change - Recording Start.) Concurrently, the participant-recording process starts writing the VOD and metadata files to the configured S3 bucket. Note: Participants connected for extremely short durations (less than 5s) are not guaranteed to be recorded.
+When they join the stage and start publishing to it using one of [IVS real-time streaming broadcast SDKs](https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/broadcast.html), the participant-recording process starts automatically and sends you an [EventBridge event](eventbridge.md) indicating that the recording started. (The event is IVS Participant Recording State Change - Recording Start.) Concurrently, the participant-recording process starts writing the VOD and metadata files to the configured S3 bucket. Note: Participants connected for extremely short durations (less than 5s) are not guaranteed to be recorded.
 
 There are two ways to get the S3 prefix for each recording:
 + Listen to the EventBridge event:
@@ -105,7 +105,7 @@ There are two ways to get the S3 prefix for each recording:
      }
   }
   ```
-+ Use the [GetParticipant](https://docs.aws.amazon.com//ivs/latest/RealTimeAPIReference/API_GetParticipant.html) API operation — The response includes the S3 bucket and prefix to where a participant is being recorded. Here is the request:
++ Use the [GetParticipant](https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_GetParticipant.html) API operation — The response includes the S3 bucket and prefix to where a participant is being recorded. Here is the request:
 
   ```
   POST /GetParticipant HTTP/1.1
@@ -135,7 +135,7 @@ There are two ways to get the S3 prefix for each recording:
 ### 5. Play Back the VOD
 <a name="ind-part-rec-play-back-vod"></a>
 
-After the recording is finalized, you can watch it using the [IVS player](https://debug.ivsdemos.com/?p=ivs). See [Playback of Recorded Content from Private Buckets](https://docs.aws.amazon.com//ivs/latest/RealTimeUserGuide/rt-composite-recording.html#comp-rec-playback) for instructions on setting up CloudFront distributions for VOD playback.
+After the recording is finalized, you can watch it using the [IVS player](https://debug.ivsdemos.com/?p=ivs). See [Playback of Recorded Content from Private Buckets](https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/rt-composite-recording.html#comp-rec-playback) for instructions on setting up CloudFront distributions for VOD playback.
 
 ## Audio-Only Recording
 <a name="ind-part-rec-audio-only-recordings"></a>

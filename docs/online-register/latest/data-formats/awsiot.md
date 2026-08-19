@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsi
 
 AWS IoT provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="iot-DescribeAccountAuditConfiguration"></a>[DescribeAccountAuditConfiguration](https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeAccountAuditConfiguration.html) | Get information about audit configurations for the account | Read |

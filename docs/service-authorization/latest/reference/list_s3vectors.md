@@ -23,8 +23,6 @@ References:
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
 
-****
-
 - **   [CreateIndex](https://docs.aws.amazon.com/AmazonS3/latest/API/API_S3VectorBuckets_CreateIndex.html)  **
   - **Description:** Grants permission to create a new vector index within a specified vector bucket
   - **Resource types (\*required):** [Index\*](#list_s3vectors-resource-Index)
@@ -144,8 +142,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
 
-****
-
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
 |  [Index](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-vectors-access-management.html)  | arn:${Partition}:s3vectors:${Region}:${Account}:bucket/${BucketName}/index/${IndexName} | [aws:ResourceTag/${TagKey}](#list_s3vectors-aws_ResourceTag___TagKey_)<br />[s3vectors:VectorBucketTag/${TagKey}](#list_s3vectors-s3vectors_VectorBucketTag___TagKey_) |
@@ -155,8 +151,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_s3vectors-policy-keys"></a>
 
 Amazon S3 Vectors defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

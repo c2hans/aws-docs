@@ -14,8 +14,6 @@ Disassociate transit gateway (TGW) attachment from the transit gateway (TGW) rou
 ## Change Type Details
 <a name="ct-3jo8yccbin4it-MMNd-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-3jo8yccbin4it |

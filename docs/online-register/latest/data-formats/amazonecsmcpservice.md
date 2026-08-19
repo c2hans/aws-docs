@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon ECS MCP Service provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="ecs-mcp-InvokeReadOnlyTools"></a>[InvokeReadOnlyTools](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-mcp-getting-started.html) | Call read-only tools in MCP service | Read |

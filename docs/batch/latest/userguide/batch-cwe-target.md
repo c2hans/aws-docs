@@ -7,7 +7,10 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/batch-cwe-target.
 
 Amazon EventBridge delivers a near real-time stream of system events that describe changes in Amazon Web Services resources. Typically, AWS Batch on Amazon Elastic Container Service, Amazon Elastic Kubernetes Service, and AWS Fargate jobs are available as EventBridge targets. Using simple rules, you can match events and submit AWS Batch jobs in response to them. For more information, see [What is EventBridge?](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html) in the *Amazon EventBridge User Guide*.
 
-You can also use EventBridge to schedule automated actions that are invoked at certain times using **cron** or rate expressions. For more information, see [Creating an Amazon EventBridge rule that runs on a schedule](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-create-rule-schedule.html) in the *Amazon EventBridge User Guide*.
+To submit AWS Batch jobs on a schedule, such as at regular intervals using **cron** or rate expressions, use Amazon EventBridge Scheduler. For more information, see [Tutorial: Create a scheduled AWS Batch job](scheduled-batch-job.md).
+
+**Note**
+Scheduled rules are a legacy EventBridge feature. If you have existing scheduled rules that submit AWS Batch jobs, they continue to work. For new schedules, we recommend Amazon EventBridge Scheduler. For more information, see [What is Amazon EventBridge Scheduler?](https://docs.aws.amazon.com/scheduler/latest/UserGuide/what-is-scheduler.html) in the *Amazon EventBridge Scheduler User Guide*.
 
 For information about how to create a rule that runs when an event matches an event pattern, see [Creating Amazon EventBridge rules that react to events](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-create-rule.html) in the *Amazon EventBridge User Guide*.
 

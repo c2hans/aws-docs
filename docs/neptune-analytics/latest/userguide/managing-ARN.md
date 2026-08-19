@@ -19,8 +19,8 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/manag
 
 | Resource | AWS CLI command | ARN property |
 | --- | --- | --- |
-| Graph | [get-graph](https://docs.aws.amazon.com//cli/latest/reference/neptune-graph/get-graph.html) | arn |
-| GraphSnapshot | [get-graph-snapshot](https://docs.aws.amazon.com//cli/latest/reference/neptune-graph/get-graph-snapshot.html) | arn |
+| Graph | [get-graph](https://docs.aws.amazon.com/cli/latest/reference/neptune-graph/get-graph.html) | arn |
+| GraphSnapshot | [get-graph-snapshot](https://docs.aws.amazon.com/cli/latest/reference/neptune-graph/get-graph-snapshot.html) | arn |
 
  As an example, running the following command:
 

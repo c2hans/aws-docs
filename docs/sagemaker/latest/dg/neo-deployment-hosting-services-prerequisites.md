@@ -281,7 +281,7 @@ To create a SageMaker Neo-compiled model, you need the following:
 **Note**
 The preceding two functions do not use any of the functionalities of MXNet, PyTorch, or TensorFlow.
 
-      For examples of how to use these functions, see [Neo Model Compilation Sample Notebooks](https://docs.aws.amazon.com//sagemaker/latest/dg/neo.html#neo-sample-notebooks).
+      For examples of how to use these functions, see [Neo Model Compilation Sample Notebooks](https://docs.aws.amazon.com/sagemaker/latest/dg/neo.html#neo-sample-notebooks).
 
    1. **For TensorFlow models**
 

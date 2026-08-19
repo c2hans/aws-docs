@@ -29,7 +29,7 @@ When you create a project with the **Modern three-tier web application** bluepri
 For expanded details about the resources that will be created in AWS and CodeCatalyst as part of this tutorial, see [Reference](#getting-started-template-project-reference).
 
 **Note**
-The resources and samples included in a project depend on which blueprint you select. Amazon CodeCatalyst offers several project blueprints that define resources related to their defined language or framework. To learn more about blueprints, see [Creating a comprehensive project with CodeCatalyst blueprintsCreating a comprehensive project with blueprints](project-blueprints.md).
+The resources and samples included in a project depend on which blueprint you select. Amazon CodeCatalyst offers several project blueprints that define resources related to their defined language or framework. To learn more about blueprints, see [Creating a comprehensive project with CodeCatalyst blueprints](project-blueprints.md).
 
 **Topics**
 + [Prerequisites](#getting-started-template-project-prerequisites)
@@ -47,7 +47,7 @@ The resources and samples included in a project depend on which blueprint you se
 ## Prerequisites
 <a name="getting-started-template-project-prerequisites"></a>
 
-To create a modern application project in this tutorial, you must have completed the tasks in [Set up and sign in to CodeCatalystSet up and sign in to CodeCatalyst](setting-up-topnode.md) as follows:
+To create a modern application project in this tutorial, you must have completed the tasks in [Set up and sign in to CodeCatalyst](setting-up-topnode.md) as follows:
 + Have an AWS Builder ID for signing in to CodeCatalyst.
 + Belong to a space and have the **Space administrator** or **Power user** role assigned to you in that space. For more information, see [Creating a space](spaces-create.md), [Granting users space permissions](spaces-members.md), and [Space administrator role](ipa-role-types.md#ipa-role-space-admin).
 + Have an AWS account associated with your space and have the IAM role you created during sign-up. For example, during sign-up, you have the option to choose to create a service role with a role policy called the **CodeCatalystWorkflowDevelopmentRole-{{spaceName}}** role policy. The role will have a name `CodeCatalystWorkflowDevelopmentRole-{{spaceName}}` with a unique identifier appended. For more information about the role and role policy, see [Understanding the **CodeCatalystWorkflowDevelopmentRole-{{spaceName}}** service role](ipa-iam-roles.md#ipa-iam-roles-service-role). For the steps to create the role, see [Creating the **CodeCatalystWorkflowDevelopmentRole-{{spaceName}}** role for your account and space](ipa-iam-roles.md#ipa-iam-roles-service-create).
@@ -135,7 +135,7 @@ CodeCatalyst helps you track features, tasks, bugs, and any other work involved 
 
 1. Choose **Create issue**. The issue is now visible on the board. Choose the card to move the issue to the **In progress** column.
 
-For more information, see [Track and organize work with issues in CodeCatalystTrack and organize work with issues](issues.md).
+For more information, see [Track and organize work with issues in CodeCatalyst](issues.md).
 
 ## Step 4: View your source repository
 <a name="getting-started-template-project-source"></a>
@@ -277,7 +277,7 @@ If the **ApplicationDeploymentPipeline** run fails with a **Build@cdk\_bootstrap
 
 1. Choose the **Reports** tab, and then choose the `backend-coverage.xml` report. CodeCatalyst displays the associated report. The report shows the code coverage tests that were run, and indicates the proportion of lines of code that were successfully validated by testing, such as 80%.
 
-   For more information about test reports, see [Testing with workflowsTesting with workflows](test-workflow-actions.md).
+   For more information about test reports, see [Testing with workflows](test-workflow-actions.md).
 **Tip**
 You can also view your test reports by choosing **Reports** in the navigation pane.
 
@@ -372,7 +372,7 @@ When an issue is resolved, it can be closed on the CodeCatalyst console.
 
 1. Drag-and-drop the issue to the **Done** column.
 
-For more information, see [Track and organize work with issues in CodeCatalystTrack and organize work with issues](issues.md).
+For more information, see [Track and organize work with issues in CodeCatalyst](issues.md).
 
 ## Clean up resources
 <a name="getting-started-template-project-clean-up"></a>

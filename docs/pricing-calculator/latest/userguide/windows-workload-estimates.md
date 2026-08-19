@@ -36,7 +36,7 @@ For options for using Microsoft software licenses on the AWS Cloud, see [Microso
 
 1. Choose **Add to my estimate**.
 
-For a step-by step example shows how to generate an estimate for Windows Server and SQL Server on Amazon EC2, see [Tutorial: Generating estimates for Windows Servers and SQL Servers on EC2Procedure](estimate-workload-tutorial.md).
+For a step-by step example shows how to generate an estimate for Windows Server and SQL Server on Amazon EC2, see [Tutorial: Generating estimates for Windows Servers and SQL Servers on EC2](estimate-workload-tutorial.md).
 
 ## Licensing and tenancy recommendations
 <a name="estimate-workload-tenancy"></a>

@@ -158,7 +158,6 @@ To create a policy statement for a custom policy, complete the following steps. 
 1. Base64-encode the policy statement using MIME base64 encoding. For more information, see [Section 6.8, Base64 Content-Transfer-Encoding](https://tools.ietf.org/html/rfc2045#section-6.8) in *RFC 2045, MIME (Multipurpose Internet Mail Extensions) Part One: Format of Internet Message Bodies*.
 
 1. Replace characters that are invalid in a URL query string with characters that are valid. The following table lists invalid and valid characters.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-setting-signed-cookie-custom-policy.html)
 
 1. Include the resulting value in your `Set-Cookie` header after `CloudFront-Policy=`.
@@ -332,7 +331,6 @@ The method that you use to hash and sign the policy statement depends on your pr
 1. Base64-encode the string using MIME base64 encoding. For more information, see [Section 6.8, Base64 Content-Transfer-Encoding](https://tools.ietf.org/html/rfc2045#section-6.8) in *RFC 2045, MIME (Multipurpose Internet Mail Extensions) Part One: Format of Internet Message Bodies*.
 
 1. Replace characters that are invalid in a URL query string with characters that are valid. The following table lists invalid and valid characters.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-setting-signed-cookie-custom-policy.html)
 
 1. Include the resulting value in the `Set-Cookie` header for the `CloudFront-Signature=` name-value pair, and return to [To set a signed cookie using a custom policy](#private-content-setting-signed-cookie-custom-policy-procedure) to add the `Set-Cookie` header for `CloudFront-Key-Pair-Id`.

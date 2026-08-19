@@ -34,7 +34,7 @@ The runbook performs the following operations:
 1. **Comprehensive reporting:** Compiles findings with actionable recommendations for resolving identified issues.
 
 **Amazon VPC Reachability Analyzer charges apply**
-This runbook uses [Amazon VPC Reachability Analyzer](https://docs.aws.amazon.com//vpc/latest/reachability/what-is-reachability-analyzer.html) to diagnose network connectivity issues. Each analysis incurs a charge. For current pricing information, see [Amazon VPC Pricing](https://aws.amazon.com/vpc/pricing/). To use static analysis only, make sure the Lambda connectivity test succeeds. If the connectivity test fails, the automation runs the Reachability Analyzer step automatically.
+This runbook uses [Amazon VPC Reachability Analyzer](https://docs.aws.amazon.com/vpc/latest/reachability/what-is-reachability-analyzer.html) to diagnose network connectivity issues. Each analysis incurs a charge. For current pricing information, see [Amazon VPC Pricing](https://aws.amazon.com/vpc/pricing/). To use static analysis only, make sure the Lambda connectivity test succeeds. If the connectivity test fails, the automation runs the Reachability Analyzer step automatically.
 
 ## Document parameters
 <a name="automation-awssupport-troubleshootmskclusterconnection-parameters"></a>
@@ -344,14 +344,14 @@ To run this runbook, the `AutomationAssumeRole` or your IAM user requires the fo
 
 Systems Manager Automation
 + [Run this Automation (console)](https://console.aws.amazon.com/systems-manager/documents/AWSSupport-TroubleshootMSKClusterConnection/description)
-+ [Run an automation](https://docs.aws.amazon.com//systems-manager/latest/userguide/automation-working-executing.html)
-+ [Setting up an Automation](https://docs.aws.amazon.com//systems-manager/latest/userguide/automation-setup.html)
++ [Run an automation](https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-working-executing.html)
++ [Setting up an Automation](https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-setup.html)
 + [AWS Support Automation Workflows (SAW) on the AWS website](https://aws.amazon.com/premiumsupport/technology/saw/)
 
 ## Additional resources
 <a name="automation-awssupport-troubleshootmskclusterconnection-additional-resources"></a>
-+ [Amazon MSK troubleshooting guide](https://docs.aws.amazon.com//msk/latest/developerguide/troubleshooting.html)
-+ [Accessing an Amazon MSK cluster](https://docs.aws.amazon.com//msk/latest/developerguide/client-access.html)
-+ [IAM access control for Amazon MSK clusters](https://docs.aws.amazon.com//msk/latest/developerguide/iam-access-control.html)
-+ [Monitoring Amazon MSK with CloudWatch](https://docs.aws.amazon.com//msk/latest/developerguide/metrics-details.html)
-+ [Amazon VPC Reachability Analyzer](https://docs.aws.amazon.com//vpc/latest/reachability/what-is-reachability-analyzer.html)
++ [Amazon MSK troubleshooting guide](https://docs.aws.amazon.com/msk/latest/developerguide/troubleshooting.html)
++ [Accessing an Amazon MSK cluster](https://docs.aws.amazon.com/msk/latest/developerguide/client-access.html)
++ [IAM access control for Amazon MSK clusters](https://docs.aws.amazon.com/msk/latest/developerguide/iam-access-control.html)
++ [Monitoring Amazon MSK with CloudWatch](https://docs.aws.amazon.com/msk/latest/developerguide/metrics-details.html)
++ [Amazon VPC Reachability Analyzer](https://docs.aws.amazon.com/vpc/latest/reachability/what-is-reachability-analyzer.html)

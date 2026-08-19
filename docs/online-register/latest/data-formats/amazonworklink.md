@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon WorkLink provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="worklink-DescribeAuditStreamConfiguration"></a>[DescribeAuditStreamConfiguration](https://docs.aws.amazon.com/worklink/latest/api/API_DescribeAuditStreamConfiguration.html) | Describe the audit stream configuration for an Amazon WorkLink fleet | Read |

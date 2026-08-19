@@ -9,8 +9,6 @@ Amazon Q Business is no longer open to new customers. For capabilities similar t
 
 The following table gives an overview of the Amazon Q Business Jira connector and its supported features.
 
-****
-
 - ****Security****
   - **Feature:** Authentication type / **Support:** Basic, Basic, OAuth 2.0 with Refresh Token Flow
   - **Feature:** Authentication credentials / **Support:** +  Jira URL <br />+  Jira username <br />+  Password (Jira site token)  +  App key <br />+  App secret <br />+  Access token <br />+  [Refresh token](https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/)  Access and refresh tokens expire in 1 hour. For information on regenerating tokens, see [Atlassian Developer Documentation](https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/#faq1).

@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon Timestream provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="timestream-DescribeAccountSettings"></a>[DescribeAccountSettings](https://docs.aws.amazon.com/timestream/latest/developerguide/API_query_DescribeAccountSettings.html) | Describe your account settings | Read |

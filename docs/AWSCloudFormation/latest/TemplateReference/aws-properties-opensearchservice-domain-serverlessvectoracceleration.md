@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::OpenSearchService::Domain ServerlessVectorAcceleration
 <a name="aws-properties-opensearchservice-domain-serverlessvectoracceleration"></a>
 
-Configuration for serverless vector acceleration, which provides [GPU-accelerated](https://docs.aws.amazon.com//opensearch-service/latest/developerguide/gpu-acceleration-vector-index.html) vector search capabilities for improved performance on vector workloads.
+Configuration for serverless vector acceleration, which provides [GPU-accelerated](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/gpu-acceleration-vector-index.html) vector search capabilities for improved performance on vector workloads.
 
 ## Syntax
 <a name="aws-properties-opensearchservice-domain-serverlessvectoracceleration-syntax"></a>

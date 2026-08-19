@@ -11,8 +11,6 @@ The following provides a sample mapping between the Australian Prudential Regula
 
 This sample conformance pack template contains mappings to controls within APRA CPG 234 2019, which was created by the Commonwealth of Australia and can be found at [Prudential Practice Guide: CPG 234 Information Security](https://www.apra.gov.au/sites/default/files/cpg_234_information_security_june_2019_1.pdf). Licensing of the framework under Creative Commons Australia Attribution 3.0 Licence and copyright information for the framework (including a disclaimer of warranties) can be found at [APRA \| Copyright](https://www.apra.gov.au/copyright).
 
-****
-
 | Control ID  | AWS Config Rule  | Guidance  |
 | --- | --- | --- |
 | 36a | [ec2-instance-managed-by-systems-manager](https://docs.aws.amazon.com/config/latest/developerguide/ec2-instance-managed-by-systems-manager.html) | An inventory of the software platforms and applications within the organization is possible by managing Amazon Elastic Compute Cloud (Amazon EC2) instances with AWS Systems Manager. Use AWS Systems Manager to provide detailed system configurations, operating system patch levels, services name and type, software installations, application name, publisher and version, and other details about your environment. |

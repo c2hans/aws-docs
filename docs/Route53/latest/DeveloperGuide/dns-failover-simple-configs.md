@@ -27,7 +27,7 @@ Route 53 can't check the health of resources that have an IP address in local, 
 
    For more information about creating health checks, see [Creating, updating, and deleting health checks](health-checks-creating-deleting.md).
 
-1. You might need to configure router and firewall rules so that Route 53 can send regular requests to the endpoints that you specified in your health checks. For more information, see [Configuring router and firewall rules for Amazon Route 53 health checksConfiguring router and firewall rules for health checks](dns-failover-router-firewall-rules.md).
+1. You might need to configure router and firewall rules so that Route 53 can send regular requests to the endpoints that you specified in your health checks. For more information, see [Configuring router and firewall rules for Amazon Route 53 health checks](dns-failover-router-firewall-rules.md).
 
 1. You create a group of records for your resources, for example, a group of weighted records. You can mix alias and non-alias records, but they all must have the same value for **Name**, **Type**, and **Routing Policy**.
 
@@ -40,9 +40,9 @@ Route 53 can't check the health of resources that have an IP address in local, 
 
    For more information about creating records by using the Route 53 console, see [Creating records by using the Amazon Route 53 console](resource-record-sets-creating.md).
 
-1. If you created health checks, Route 53 periodically sends requests to the endpoint for each health check; it doesn't perform the health check when it receives a DNS query. Based on the responses, Route 53 decides whether the endpoints are healthy and uses that information to determine how to respond to queries. For more information, see [How Amazon Route 53 determines whether a health check is healthyHow Route 53 determines whether a health check is healthy](dns-failover-determining-health-of-endpoints.md).
+1. If you created health checks, Route 53 periodically sends requests to the endpoint for each health check; it doesn't perform the health check when it receives a DNS query. Based on the responses, Route 53 decides whether the endpoints are healthy and uses that information to determine how to respond to queries. For more information, see [How Amazon Route 53 determines whether a health check is healthy](dns-failover-determining-health-of-endpoints.md).
 
-   Route 53 doesn't check the health of the resource specified in the record, such as the IP address that is specified in an A record for example.com. When you associate a health check with a record, Route 53 begins to check the health of the endpoint that you specified in the health check. You can also configure Route 53 to monitor the health of other health checks or monitor the data streams for CloudWatch alarms. For more information, see [Types of Amazon Route 53 health checksTypes of health checks](health-checks-types.md).
+   Route 53 doesn't check the health of the resource specified in the record, such as the IP address that is specified in an A record for example.com. When you associate a health check with a record, Route 53 begins to check the health of the endpoint that you specified in the health check. You can also configure Route 53 to monitor the health of other health checks or monitor the data streams for CloudWatch alarms. For more information, see [Types of Amazon Route 53 health checks](health-checks-types.md).
 
 Here's what happens when Route 53 receives a query for example.com:
 
@@ -52,7 +52,7 @@ Here's what happens when Route 53 receives a query for example.com:
 
 1. If the selected record is unhealthy, Route 53 chooses a different record. This time, the unhealthy record isn't considered.
 
-   For more information, see [How Amazon Route 53 chooses records when health checking is configuredHow Route 53 chooses records when health checking is configured](health-checks-how-route-53-chooses-records.md).
+   For more information, see [How Amazon Route 53 chooses records when health checking is configured](health-checks-how-route-53-chooses-records.md).
 
 1. When Route 53 finds a healthy record, it responds to the query with the applicable value, such as the IP address in an A record.
 

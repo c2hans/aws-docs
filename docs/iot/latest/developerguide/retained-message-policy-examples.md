@@ -92,7 +92,7 @@ The following policy document grants all clients permission to connect and publi
 ## Policy to list and get retained messages
 <a name="retained-message-policy-examples-list-get"></a>
 
-Services and applications can access retained messages without the need to support an MQTT client by calling [`ListRetainedMessages`](https://docs.aws.amazon.com//iot/latest/apireference/API_iotdata_ListRetainedMessages.html) and [`GetRetainedMessage`](https://docs.aws.amazon.com//iot/latest/apireference/API_iotdata_GetRetainedMessage.html). The services and applications that call these actions must be authorized by using a policy such as the following example.
+Services and applications can access retained messages without the need to support an MQTT client by calling [`ListRetainedMessages`](https://docs.aws.amazon.com/iot/latest/apireference/API_iotdata_ListRetainedMessages.html) and [`GetRetainedMessage`](https://docs.aws.amazon.com/iot/latest/apireference/API_iotdata_GetRetainedMessage.html). The services and applications that call these actions must be authorized by using a policy such as the following example.
 
 ****
 

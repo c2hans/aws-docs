@@ -53,8 +53,6 @@ Corretto 11 **v3.2.17** has Solution Stack Name *64bit Amazon Linux 2 **v3.3.0**
 If you use the AWS CLI or EB CLI to create environments for these two platform branches in this release, be sure to use these solution stack names in parameters that require them.
 This mismatch occurs in *this release only*. The platform releases that follow will have the standard matching version names in their corresponding Solution Stack Name. The Elastic Beanstalk console does not display the Solution Stack Name, and is therefore not affected.
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  Tools  |  AWS X-Ray  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Corretto 17 version 3.3.0** <br /> * 64bit Amazon Linux 2 v3.3.0 running Corretto 17 *  | 2.0.20220606 | Corretto 17.0.3.6.1 | Ant 1.10.7, Gradle 7.4.2, Maven 3.6.2 | 3.2.0 | nginx 1.20.0 |

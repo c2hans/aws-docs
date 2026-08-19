@@ -5,6 +5,8 @@ source_url: https://docs.aws.amazon.com/accounts/latest/reference/monitoring-clo
 # Logging AWS Account Management API calls using AWS CloudTrail
 <a name="monitoring-cloudtrail"></a>
 
+This includes AWS accounts you create using our new AWS experience and accounts you create using our advanced AWS experience. To compare sign-up options, see [Compare sign-up options](sign-up-for-aws.md).
+
 The AWS Account Management APIs are integrated with AWS CloudTrail, a service that provides a record of actions taken by a user, role, or an AWS service that calls an Account Management operation. CloudTrail captures all Account Management API calls as events. The calls captured include all calls to the Account Management operations. If you create a trail, you can turn on continuous delivery of CloudTrail events to an Amazon S3 bucket, including events for Account Management operations. If you don't configure a trail, you can still view the most recent events in the CloudTrail console in **Event history**. Using the information collected by CloudTrail, you can determine the request that called an Account Management operation, the IP address used to make the request, who made the request and when, and additional details.
 
 To learn more about CloudTrail, see the [AWS CloudTrail User Guide](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/).
@@ -21,7 +23,7 @@ For an ongoing record of events in your AWS account, including events for Accoun
 + [Receiving CloudTrail log files from multiple Regions](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/receive-cloudtrail-log-files-from-multiple-regions.html)
 + [Receiving CloudTrail log files from multiple accounts](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-receive-logs-from-multiple-accounts.html)
 
-AWS CloudTrail logs all Account Management API operations found in the [API Reference](https://docs.aws.amazon.com//accounts/latest/APIReference/Welcome.html) section of this guide. For example, calls to the `CreateAccount`, `DeleteAlternateContact`, and `PutAlternateContact` operations generate entries in the CloudTrail log files.
+AWS CloudTrail logs all Account Management API operations found in the [API Reference](https://docs.aws.amazon.com/accounts/latest/APIReference/Welcome.html) section of this guide. For example, calls to the `CreateAccount`, `DeleteAlternateContact`, and `PutAlternateContact` operations generate entries in the CloudTrail log files.
 
 Every event or log entry contains information about who generated the request. The identity information helps you determine the following:
 + Whether the request was made with root user or AWS Identity and Access Management (IAM) user credentials

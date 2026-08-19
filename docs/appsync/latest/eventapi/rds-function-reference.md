@@ -5,12 +5,12 @@ source_url: https://docs.aws.amazon.com/appsync/latest/eventapi/rds-function-ref
 # AWS AppSync JavaScript function reference for Amazon RDS
 <a name="rds-function-reference"></a>
 
-The AWS AppSync RDS function enables you to send SQL queries to an Amazon Aurora cluster database using the RDS Data API and get back the result of these queries. You can write SQL statements that are sent to the Data API by using AWS AppSync's `rds` module `sql`-tagged template or by using the `rds` module's `select`, `insert`, `update`, and `remove` helper functions. AWS AppSync utilizes the RDS Data Service's [`ExecuteStatement`](https://docs.aws.amazon.com//rdsdataservice/latest/APIReference/API_ExecuteStatement.html) action to run SQL statements against the database.
+The AWS AppSync RDS function enables you to send SQL queries to an Amazon Aurora cluster database using the RDS Data API and get back the result of these queries. You can write SQL statements that are sent to the Data API by using AWS AppSync's `rds` module `sql`-tagged template or by using the `rds` module's `select`, `insert`, `update`, and `remove` helper functions. AWS AppSync utilizes the RDS Data Service's [`ExecuteStatement`](https://docs.aws.amazon.com/rdsdataservice/latest/APIReference/API_ExecuteStatement.html) action to run SQL statements against the database.
 
 ## SQL tagged template
 <a name="sql-tagged-templates"></a>
 
-AWS AppSync's `sql` tagged template enables you to create a static statement that can receive dynamic values at runtime by using template expressions. AWS AppSync builds a variable map from the expression values to construct a [`SqlParameterized`](https://docs.aws.amazon.com//rdsdataservice/latest/APIReference/API_SqlParameter.html) query that is sent to the Amazon Aurora Serverless Data API. With this method, it isn't possible for dynamic values passed at run time to modify the original statement, which could cause unintented execution. All dynamic values are passed as parameters, can't modify the original statement, and aren't executed by the database. This makes your query less vulnerable to SQL injection attacks.
+AWS AppSync's `sql` tagged template enables you to create a static statement that can receive dynamic values at runtime by using template expressions. AWS AppSync builds a variable map from the expression values to construct a [`SqlParameterized`](https://docs.aws.amazon.com/rdsdataservice/latest/APIReference/API_SqlParameter.html) query that is sent to the Amazon Aurora Serverless Data API. With this method, it isn't possible for dynamic values passed at run time to modify the original statement, which could cause unintented execution. All dynamic values are passed as parameters, can't modify the original statement, and aren't executed by the database. This makes your query less vulnerable to SQL injection attacks.
 
 **Note**
 In all cases, when writing SQL statements, you should follow security guidelines to properly handle data that you receive as input.
@@ -61,7 +61,7 @@ export const onSubscribe = {
 ## Retrieving data
 <a name="retrieving-data"></a>
 
-The result of your executed SQL statement is available in your response handler in the `context.result` object. The result is a JSON string with the [response elements](https://docs.aws.amazon.com//rdsdataservice/latest/APIReference/API_ExecuteStatement.html#API_ExecuteStatement_ResponseElements) from the `ExecuteStatement` action. When parsed, the result has the following shape:
+The result of your executed SQL statement is available in your response handler in the `context.result` object. The result is a JSON string with the [response elements](https://docs.aws.amazon.com/rdsdataservice/latest/APIReference/API_ExecuteStatement.html#API_ExecuteStatement_ResponseElements) from the `ExecuteStatement` action. When parsed, the result has the following shape:
 
 ```
 type SQLStatementResults = {

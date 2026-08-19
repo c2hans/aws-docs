@@ -11,8 +11,6 @@ The following provides a sample mapping between UK National Cyber Security Centr
 
 This sample conformance pack template contains mappings to controls within the UK NCSC CAF ([National Cyber Security Centre \| NCSC CAF guidance](https://www.ncsc.gov.uk/collection/caf/cyber-assessment-framework)), with such public sector information licensed under the Open Government Licence v3.0. The Open Government Licence should can be accessed here: [Open Government Licence for public sector information](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/).
 
-****
-
 | Control ID  | Control Description  | AWS Config Rule  | Guidance  |
 | --- | --- | --- | --- |
 | A3.a Asset Management   | Everything required to deliver, maintain or support networks and information systems necessary for the operation of essential functions is determined and understood. This includes data, people and systems, as well as any supporting infrastructure (such as power or cooling).  | [vpc-network-acl-unused-check](https://docs.aws.amazon.com/config/latest/developerguide/vpc-network-acl-unused-check.html) | This rule ensures that Amazon Virtual Private Cloud (VPC) network access control lists are in use. Monitoring for unused network access control lists can assist in accurate inventory and management of your environment. |

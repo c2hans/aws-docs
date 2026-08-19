@@ -14,8 +14,6 @@ Use to request a manual update to a resource.
 ## Change Type Details
 <a name="ct-0xdawir96cy7k-MOOu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-0xdawir96cy7k |

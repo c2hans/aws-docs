@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon AppFlow provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="appflow-DescribeConnector"></a>[DescribeConnector](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_DescribeConnector.html) | Describe a connector registered in Amazon AppFlow | Read |

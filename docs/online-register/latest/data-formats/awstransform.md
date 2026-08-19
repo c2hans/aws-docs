@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awst
 
 AWS Transform provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="transform-GetAccountSettings"></a>[GetAccountSettings](https://docs.aws.amazon.com/transform/latest/userguide/security_iam_permissions.html) | Invoke GetAccountSettings on AWS Transform | Read |

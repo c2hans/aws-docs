@@ -15,7 +15,6 @@ The `NCryptFinalizeKey` function completes a KSP key. You must call this functio
 
 `dwFlags` [in]
 Flags to modify the function's behavior. You can use zero or these values:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/cloudhsm/latest/userguide/ksp-library-apis-finalize-key.html)
 
 ## Return Value
@@ -24,8 +23,6 @@ Flags to modify the function's behavior. You can use zero or these values:
 The function returns a status code to indicate success or failure.
 
 Common return codes include:
-
-****
 
 | Return code | Description |
 | --- | --- |

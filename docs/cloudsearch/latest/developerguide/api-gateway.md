@@ -23,8 +23,6 @@ To learn more about the benefits of API Gateway, see the [API Gateway Developer 
 
 Before you integrate Amazon CloudSearch with API Gateway, you must have the following resources.
 
-****
-
 | Prerequisite  | Description |
 | --- | --- |
 | Amazon CloudSearch Domain | For testing purposes, the domain should have some searchable data. The IMDb movies data is an excellent option.<br />The domain must have the following access policy:<br />This policy configures the Amazon CloudSearch domain so that only API Gateway (and probably the account owner) can access it. To learn more, see [Creating an Amazon CloudSearch Domain](creating-domains.md) and [Configuring Access for Amazon CloudSearch](configuring-access.md). |

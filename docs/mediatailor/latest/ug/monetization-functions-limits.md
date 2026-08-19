@@ -39,6 +39,10 @@ When an expression exceeds a limit at runtime, MediaTailor stops the expression 
 | Limit | Value |
 | --- | --- |
 | Steps per sequential executor | 1–10 |
+| Children per concurrent executor | 1–10 |
+| Maximum concurrency (concurrent executor) | 1–2 |
+| Default timeout (concurrent executor) | 2,000 ms |
+| Unique namespaces per concurrent executor | Required (validated at authoring time) |
 | Maximum nesting depth | 2 |
 | Total function executions per hook | 20 |
 | Output entries per function | 20 |

@@ -31,8 +31,6 @@ This procedure is supported for the following Amazon RDS for Oracle DB engine ve
 
 This procedure also uses the following additional parameter.
 
-****
-
 | Parameter name | Data type | Valid values | Default | Required | Description |
 | --- | --- | --- | --- | --- | --- |
 | `p_level` | number | `0`, `1` | `0` | No | Specify `0` to enable a full incremental backup.<br />Specify `1` to enable a non-cumulative incremental backup. |

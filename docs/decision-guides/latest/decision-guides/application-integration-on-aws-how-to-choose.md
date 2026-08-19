@@ -139,8 +139,6 @@ The skills of your organization are a major factor when deciding on the right in
 
 Now that you know the criteria you will use to evaluate your application integration needs, you are ready to choose which AWS service or services are right for your workloads in your environment.
 
-****
-
 | Service type | When would you use it? | What is it optimized for? | Associated services |
 | --- |--- |--- |--- |
 | Capacity | Use when you need to decouple publishers and subscribers and send events to multiple subscribers simultaneously. | Optimized for asynchronous, loosely coupled communication between publishers and subscribers. Events provide flexibility in message routing and delivery and are well-suited for event-driven architectures where events play a central role in initiating actions or workflows. | [Amazon EventBridge](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-get-started.html)<br />[Amazon SNS](https://docs.aws.amazon.com/sns/latest/dg/welcome.html) |

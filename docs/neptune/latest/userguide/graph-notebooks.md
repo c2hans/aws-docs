@@ -323,7 +323,7 @@ This method uses your local system or Amazon S3 as intermediate storage.
 
 **Best for**
 
-+ [ Direct internet access through Amazon SageMaker AI networking configuration](https://docs.aws.amazon.com//sagemaker/latest/dg/appendix-notebook-and-internet-access.html#appendix-notebook-and-internet-access-default).
++ [ Direct internet access through Amazon SageMaker AI networking configuration](https://docs.aws.amazon.com/sagemaker/latest/dg/appendix-notebook-and-internet-access.html#appendix-notebook-and-internet-access-default).
 + A moderate volume of data to migrate
 + Specific files to preserve rather than entire workspace configurations.
 
@@ -373,7 +373,7 @@ Ensure that the role associated with the notebook has appropriate permissions to
 
 1. Open a terminal in JupyterLab or type the terminal commands in a notebook cell with `!` prefix.
 
-1. Copy files from your old JupyterLab instance to S3 using either [Amazon S3 cp](https://docs.aws.amazon.com//cli/latest/reference/s3/cp.html) or [Amazon S3 sync](https://docs.aws.amazon.com//cli/latest/reference/s3/sync.html) CLI commands:
+1. Copy files from your old JupyterLab instance to S3 using either [Amazon S3 cp](https://docs.aws.amazon.com/cli/latest/reference/s3/cp.html) or [Amazon S3 sync](https://docs.aws.amazon.com/cli/latest/reference/s3/sync.html) CLI commands:
 
    ```
    # using AWS s3 cp
@@ -401,15 +401,15 @@ Use `sync` for maintaining folder structures and incremental updates and `cp` fo
 
 **Best for**
 
-+ [ VPC-only](https://docs.aws.amazon.com//sagemaker/latest/dg/appendix-notebook-and-internet-access.html#appendix-notebook-and-internet-access-default-vpc) networking configuration
++ [ VPC-only](https://docs.aws.amazon.com/sagemaker/latest/dg/appendix-notebook-and-internet-access.html#appendix-notebook-and-internet-access-default-vpc) networking configuration
 + Large data volumes
 
 **Steps**
-Follow the [Mount an EFS file system to an Amazon SageMaker AI notebook](https://aws.amazon.com/blogs//machine-learning/mount-an-efs-file-system-to-an-amazon-sagemaker-notebook-with-lifecycle-configurations/) blog to use an Amazon EFS file system with your notebook instances.
+Follow the [Mount an EFS file system to an Amazon SageMaker AI notebook](https://aws.amazon.com/blogs/machine-learning/mount-an-efs-file-system-to-an-amazon-sagemaker-notebook-with-lifecycle-configurations/) blog to use an Amazon EFS file system with your notebook instances.
 
 In addition, there are also a few more steps that apply specifically to migrating Neptune notebooks to the new environment:
 
-1. During [ Neptune notebook creation in the console ](https://docs.aws.amazon.com//neptune/latest/userguide/graph-notebooks.html#graph-notebooks-workbench), select **Create a new lifecycle configuration** under Lifecycle configuration
+1. During [ Neptune notebook creation in the console ](https://docs.aws.amazon.com/neptune/latest/userguide/graph-notebooks.html#graph-notebooks-workbench), select **Create a new lifecycle configuration** under Lifecycle configuration
 
 1. In the template lifecycle config, append your Amazon EFS mount command (`sudo mount -t nfs ...`) after the install.sh script
 
@@ -504,8 +504,6 @@ With the modifications described here to the steps outlined in the blog post, yo
 ## Create a Neptune notebook in Amazon SageMaker AI instances
 <a name="create-notebook-next"></a>
 
-****
-
 1. Open the Amazon SageMaker AI console at [https://console.aws.amazon.com/sagemaker/](https://console.aws.amazon.com/sagemaker/).
 
 1. In the navigation pane, expand **Notebook**, then choose **Notebook instances**.
@@ -569,8 +567,8 @@ With the modifications described here to the steps outlined in the blog post, yo
 +  Set up [graph-explorer](https://github.com/aws/graph-explorer) on an Amazon EC2 instance within your VPC.
 
  For detailed instructions on setting up the open-source [graph-notebooks](https://github.com/aws/graph-notebook) and [graph-explorer](https://github.com/aws/graph-explorer) packages, refer to the following official AWS documentation and GitHub repositories:
-+  [https://docs.aws.amazon.com//neptune/latest/userguide/graph-notebooks.html#graph-notebooks-local](https://docs.aws.amazon.com//neptune/latest/userguide/graph-notebooks.html#graph-notebooks-local)
-+  [https://docs.aws.amazon.com//neptune/latest/userguide/get-started-connect-ec2-same-vpc.html](https://docs.aws.amazon.com//neptune/latest/userguide/get-started-connect-ec2-same-vpc.html)
++  [https://docs.aws.amazon.com/neptune/latest/userguide/graph-notebooks.html#graph-notebooks-local](https://docs.aws.amazon.com/neptune/latest/userguide/graph-notebooks.html#graph-notebooks-local)
++  [https://docs.aws.amazon.com/neptune/latest/userguide/get-started-connect-ec2-same-vpc.html](https://docs.aws.amazon.com/neptune/latest/userguide/get-started-connect-ec2-same-vpc.html)
 +  [https://github.com/aws/graph-notebook/tree/main/additional-databases/neptune](https://github.com/aws/graph-notebook/tree/main/additional-databases/neptune)
 +  [https://github.com/aws/graph-explorer/blob/main/additionaldocs/getting-started/README.md#amazon-ec2-setup](https://github.com/aws/graph-explorer/blob/main/additionaldocs/getting-started/README.md#amazon-ec2-setup)
 

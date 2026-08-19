@@ -22,8 +22,6 @@ To create directories, use the Amazon RDS procedure `rdsadmin.rdsadmin_util.crea
 
 The `create_directory` and `drop_directory` procedures have the following required parameter.
 
-****
-
 | Parameter name | Data type | Default | Required | Description |
 | --- | --- | --- | --- | --- |
 | `p_directory_name` | VARCHAR2 | — | Yes | The name of the directory. |
@@ -64,8 +62,6 @@ Dropping a directory doesn't remove its contents. Because the `rdsadmin.rdsadmin
 
 To list the files in a directory, use the Amazon RDS procedure `rdsadmin.rds_file_util.listdir`. This procedure isn't supported on an Oracle replica. The `listdir` procedure has the following parameters.
 
-****
-
 | Parameter name | Data type | Default | Required | Description |
 | --- | --- | --- | --- | --- |
 | `p_directory` | varchar2 | — | Yes | The name of the directory to list. |
@@ -81,8 +77,6 @@ SELECT * FROM TABLE(rdsadmin.rds_file_util.listdir(p_directory => 'PRODUCT_DESCR
 <a name="Appendix.Oracle.CommonDBATasks.ReadingFiles"></a>
 
 To read a text file, use the Amazon RDS procedure `rdsadmin.rds_file_util.read_text_file`. The `read_text_file` procedure has the following parameters.
-
-****
 
 | Parameter name | Data type | Default | Required | Description |
 | --- | --- | --- | --- | --- |
@@ -225,8 +219,6 @@ The advisor task procedures are available in the following engine versions:
 
 To set parameters for some advisor tasks, use the Amazon RDS procedure `rdsadmin.rdsadmin_util.advisor_task_set_parameter`. The `advisor_task_set_parameter` procedure has the following parameters.
 
-****
-
 | Parameter name | Data type | Default | Required | Description |
 | --- | --- | --- | --- | --- |
 | `p_task_name` | varchar2 | — | Yes | The name of the advisor task whose parameters you want to change. The following values are valid:+  `AUTO_STATS_ADVISOR_TASK` <br />+  `INDIVIDUAL_STATS_ADVISOR_TASK` <br />+  `SYS_AUTO_SPM_EVOLVE_TASK` <br />+  `SYS_AUTO_SQL_TUNING_TASK`  |
@@ -259,8 +251,6 @@ END;
 <a name="Appendix.Oracle.CommonDBATasks.dropping-advisor-task"></a>
 
 To disable `AUTO_STATS_ADVISOR_TASK`, use the Amazon RDS procedure `rdsadmin.rdsadmin_util.advisor_task_drop`. The `advisor_task_drop` procedure accepts the following parameter.
-
-****
 
 | Parameter name | Data type | Default | Required | Description |
 | --- | --- | --- | --- | --- |

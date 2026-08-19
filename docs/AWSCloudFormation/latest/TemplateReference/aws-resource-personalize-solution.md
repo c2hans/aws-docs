@@ -32,7 +32,8 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[PerformAutoML](#cfn-personalize-solution-performautoml)" : {{Boolean}},
       "[PerformHPO](#cfn-personalize-solution-performhpo)" : {{Boolean}},
       "[RecipeArn](#cfn-personalize-solution-recipearn)" : {{String}},
-      "[SolutionConfig](#cfn-personalize-solution-solutionconfig)" : {{SolutionConfig}}
+      "[SolutionConfig](#cfn-personalize-solution-solutionconfig)" : {{SolutionConfig}},
+      "[Tags](#cfn-personalize-solution-tags)" : {{[ Tag, ... ]}}
     }
 }
 ```
@@ -51,6 +52,8 @@ Properties:
   [RecipeArn](#cfn-personalize-solution-recipearn): {{String}}
   [SolutionConfig](#cfn-personalize-solution-solutionconfig): {{
     SolutionConfig}}
+  [Tags](#cfn-personalize-solution-tags): {{
+    - Tag}}
 ```
 
 ## Properties
@@ -105,6 +108,14 @@ The ARN of the recipe used to create the solution. This is required when `perfor
 Describes the configuration properties for the solution.
 *Required*: No
 *Type*: [SolutionConfig](aws-properties-personalize-solution-solutionconfig.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`Tags`  <a name="cfn-personalize-solution-tags"></a>
+Property description not available.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-personalize-solution-tag.md)
+*Minimum*: `0`
+*Maximum*: `50`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values

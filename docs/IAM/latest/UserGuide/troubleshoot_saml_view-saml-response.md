@@ -28,7 +28,7 @@ These steps were tested using version 106.0.5249.103 (Official Build) (arm64) of
 
 1. Reproduce the issue.
 
-1. (Optional) If the **Method** column is not visible in the **Developer Tools** **Network** log pane, right-click on any column label and choose **Method** to add the column.
+1. (Optional) If the **Method** column is not visible in the **Developer Tools** **Network** log pane, open the context (right-click) menu for any column label and choose **Method** to add the column.
 
 1. Look for a **SAML Post** in the **Developer Tools** **Network** log pane. Select that row, and then view the **Payload** tab at the top. Look for the **SAMLResponse** element that contains the encoded request. The associated value is the Base64-encoded response.
 
@@ -47,7 +47,7 @@ This procedure was tested on version 105.0.3 (64-bit) of Mozilla Firefox. If you
 
 1. Reproduce the issue.
 
-1. (Optional) If the **Method** column is not visible in the **Web Developer Tools** **Network** log pane, right-click on any column label and choose **Method** to add the column.
+1. (Optional) If the **Method** column is not visible in the **Web Developer Tools** **Network** log pane, open the context (right-click) menu for any column label and choose **Method** to add the column.
 
 1. Look for a **POST** **SAML** in the table. Select that row, and then view the **Request** tab and find the **SAMLResponse** element. The associated value is the Base64-encoded response.
 
@@ -66,7 +66,7 @@ These steps were tested using version 16.0 (17614.1.25.9.10, 17614) of Apple Saf
 
 1. In the upper left of the **Web Inspector** window, choose options (the small circle icon containing three horizontal lines). Select **Preserve Log**.
 
-1. (Optional) If the **Method** column is not visible in the **Web Inspector** **Network** log pane, right-click on any column label and choose **Method** to add the column.
+1. (Optional) If the **Method** column is not visible in the **Web Inspector** **Network** log pane, open the context (right-click) menu for any column label and choose **Method** to add the column.
 
 1. Reproduce the issue.
 
@@ -77,7 +77,7 @@ These steps were tested using version 16.0 (17614.1.25.9.10, 17614) of Apple Saf
 ## What to do with the Base64-encoded SAML response
 <a name="whatnext"></a>
 
-Once you find the Base64-encoded SAML response element in your browser, copy it and use your favorite Base-64 decoding tool to extract the XML tagged response.
+After you find the Base64-encoded SAML response element in your browser, copy it and use your favorite Base-64 decoding tool to extract the XML tagged response.
 
 **Security tip**
 Because the SAML response data that you are viewing might contain sensitive security data, we recommend that you do not use an *online* base64 decoder. Instead use a tool installed on your local computer that does not send your SAML data over the network.

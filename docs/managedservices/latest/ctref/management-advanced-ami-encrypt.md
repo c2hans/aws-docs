@@ -14,8 +14,6 @@ Use to create a custom AMI with an encrypted EBS snapshot, which protects data a
 ## Change Type Details
 <a name="ct-3u9yd8jznb2zd-MAAe-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-3u9yd8jznb2zd |

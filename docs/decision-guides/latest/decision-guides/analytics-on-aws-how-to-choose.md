@@ -239,8 +239,6 @@ Building your analytics pipeline on AWS provides various cost optimization oppor
 
 Now that you know the criteria to evaluate your analytics needs, you are ready to choose which AWS analytics services are right for your organizational needs. The following table aligns sets of services with common capabilities and business goals.
 
-****
-
 - ****Unified analytics and AI****
   - **What is it optimized for?:** **Analytics and AI development**<br />Optimized for using a single development environment, Amazon SageMaker Unified Studio, to access data, analytics, and AI capabilities.
   - **Services:** [Amazon SageMaker](https://docs.aws.amazon.com/next-generation-sagemaker)
@@ -582,16 +580,12 @@ Explore architecture diagrams to help you develop, scale, and test your analytic
 ------
 #### [ Ready-to-use code ]
 
-****
-
 |  |  |
 | --- |--- |
 | *Featured solution*<br />**Scalable Analytics Using Apache Druid on AWS**<br />Deploy AWS-built code to help you set up, operate, and manage Apache Druid on AWS, a cost-effective, highly available, resilient, and fault tolerant hosting environment.<br />[Explore this solution](https://aws.amazon.com/solutions/implementations/scalable-analytics-using-apache-druid-on-aws/) | **AWS Solutions**<br />Explore pre-configured, deployable solutions and their implementation guides, built by AWS.<br />[Explore all AWS security, identity, and governance solutions](https://aws.amazon.com/architecture/?nc2=h_ql_le_arc&cards-all.sort-by=item.additionalFields.sortDate&cards-all.sort-order=desc&awsf.content-type=content-type%23solution&awsf.methodology=*all&awsf.tech-category=tech-category%23analytics&awsf.industries=*all&awsf.business-category=*all) |
 
 ------
 #### [ Documentation ]
-
-****
 
 |  |  |
 | --- |--- |

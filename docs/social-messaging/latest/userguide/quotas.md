@@ -15,8 +15,6 @@ Your AWS account has the following quotas related to AWS End User Messaging Soci
 
 AWS End User Messaging Social implements quotas that restrict the number of requests that you can make to the AWS End User Messaging Social API from your AWS account.
 
-****
-
 |  Operation  | Default quota rate (requests per second) |
 | --- | --- |
 | SendWhatsAppMessage  | 1,000 |

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/platforms-lin
 <a name="platforms-linux-extend.workflow"></a>
 
 **Note**
-The information in this section doesn't apply to the *ECS running on Amazon Linux 2 and Amazon Linux 2023* platform branches. For more information, see the next section [Instance deployment workflow for ECS running on Amazon Linux 2 and laterInstance deployment workflow for ECS on AL2 and later](platforms-linux-extend.workflow.ecs-al2.md).
+The information in this section doesn't apply to the *ECS running on Amazon Linux 2 and Amazon Linux 2023* platform branches. For more information, see the next section [Instance deployment workflow for ECS running on Amazon Linux 2 and later](platforms-linux-extend.workflow.ecs-al2.md).
 
 With many ways to extend your environment's platform, it's useful to know what happens whenever Elastic Beanstalk provisions an instance or runs a deployment to an instance. The following diagram shows this entire deployment workflow. It depicts the different phases in a deployment and the steps that Elastic Beanstalk takes in each phase.
 

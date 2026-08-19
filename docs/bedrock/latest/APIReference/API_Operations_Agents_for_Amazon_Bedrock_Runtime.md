@@ -7,6 +7,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Operatio
 
 The following actions are supported by Agents for Amazon Bedrock Runtime:
 +  [AgenticRetrieveStream](API_agent-runtime_AgenticRetrieveStream.md)
++  [CheckIngestedDocumentAcl](API_agent-runtime_CheckIngestedDocumentAcl.md)
 +  [CreateInvocation](API_agent-runtime_CreateInvocation.md)
 +  [CreateSession](API_agent-runtime_CreateSession.md)
 +  [DeleteAgentMemory](API_agent-runtime_DeleteAgentMemory.md)
@@ -17,6 +18,7 @@ The following actions are supported by Agents for Amazon Bedrock Runtime:
 +  [GetDocumentContent](API_agent-runtime_GetDocumentContent.md)
 +  [GetExecutionFlowSnapshot](API_agent-runtime_GetExecutionFlowSnapshot.md)
 +  [GetFlowExecution](API_agent-runtime_GetFlowExecution.md)
++  [GetIngestedDocumentAcl](API_agent-runtime_GetIngestedDocumentAcl.md)
 +  [GetInvocationStep](API_agent-runtime_GetInvocationStep.md)
 +  [GetSession](API_agent-runtime_GetSession.md)
 +  [InvokeAgent](API_agent-runtime_InvokeAgent.md)

@@ -327,7 +327,7 @@ input("Press Enter to close the browser window...")
 ## Example code using Java
 <a name="STSConsoleLink_programJava"></a>
 
-The following example shows how to use Java to programmatically construct a URL that gives users direct access to the AWS Management Console. The following code snippet uses the [AWS SDK for Java](https://docs.aws.amazon.com/http://aws.amazon.com/documentation/sdkforjava/).
+The following example shows how to use Java to programmatically construct a URL that gives users direct access to the AWS Management Console. The following code snippet uses the [AWS SDK for Java](http://aws.amazon.com/documentation/sdkforjava/).
 
 ```
 import java.net.URLEncoder;
@@ -430,7 +430,7 @@ String loginURL = signInURL + "?Action=login" +
 ## Example showing how to construct the URL (Ruby)
 <a name="STSConsoleLink_programRuby"></a>
 
-The following example shows how to use Ruby to programmatically construct a URL that gives users direct access to the AWS Management Console. This code snippet uses the [AWS SDK for Ruby](https://docs.aws.amazon.com/http://aws.amazon.com/documentation/sdkforruby/).
+The following example shows how to use Ruby to programmatically construct a URL that gives users direct access to the AWS Management Console. This code snippet uses the [AWS SDK for Ruby](http://aws.amazon.com/documentation/sdkforruby/).
 
 ```
 require 'rubygems'

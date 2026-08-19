@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::QuickSight::Agent CustomPromptInput
 <a name="aws-properties-quicksight-agent-custompromptinput"></a>
 
-<a name="aws-properties-quicksight-agent-custompromptinput-description"></a>The `CustomPromptInput` property type specifies Property description not available. for an [AWS::QuickSight::Agent](aws-resource-quicksight-agent.md).
+The custom prompt input for an agent. This is a union type that can be either an existing prompt profile or new prompt parameters.
 
 ## Syntax
 <a name="aws-properties-quicksight-agent-custompromptinput-syntax"></a>
@@ -38,13 +38,13 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-quicksight-agent-custompromptinput-properties"></a>
 
 `ExistingPrompt`  <a name="cfn-quicksight-agent-custompromptinput-existingprompt"></a>
-Property description not available.
+An existing custom prompt profile to use for the agent.
 *Required*: No
 *Type*: [CustomPromptProfile](aws-properties-quicksight-agent-custompromptprofile.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `NewPrompt`  <a name="cfn-quicksight-agent-custompromptinput-newprompt"></a>
-Property description not available.
+New custom prompt parameters to configure for the agent.
 *Required*: No
 *Type*: [CustomPromptInputParameters](aws-properties-quicksight-agent-custompromptinputparameters.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

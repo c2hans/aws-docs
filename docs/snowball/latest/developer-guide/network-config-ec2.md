@@ -31,8 +31,6 @@ Snowball Edge storage optimized (with EC2 compute functionality) devices don't s
 
 Before you configure a VNI or a DNI, be sure that you've done the following prerequisites.
 
-****
-
 1. Make sure there's power to your device and that one of your physical network interfaces, like the RJ45 port, is connected with an IP address.
 
 1. Get the IP address associated with the physical network interface that you're using on the Snowball Edge.

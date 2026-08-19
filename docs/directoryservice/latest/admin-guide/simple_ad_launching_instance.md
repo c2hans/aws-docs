@@ -42,7 +42,6 @@ To seamlessly domain join an EC2 instance, you'll need to complete the following
 
 When your Simple AD is created, a security group is created with inbound and outbound rules. To learn more about these rules and ports, see [What gets created with your Simple AD](simple_ad_what_gets_created.md). To seamlessly domain join an EC2 Windows instance, your VPC where you're launching your instance should allow the same ports allowed in your Simple AD security group's inbound and outbound rules.
 + Depending on your network security and firewall settings, you could be required to allow additional outbound traffic. This traffic would be for HTTPS (port 443) to the following endpoints:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/directoryservice/latest/admin-guide/simple_ad_launching_instance.html)
 + We recommend to use a DNS server that will resolve your Simple AD domain name. To do so, you can create a DHCP option set. See [Creating a DHCP options set for Simple AD](simple_ad_dhcp_options_set.md) for more information.
   + If you choose not to create a DHCP option set, then your DNS servers will be static and configured to by your Simple AD.
@@ -79,7 +78,7 @@ This is the only chance for you to save the private key file.
 
 1. Choose one of the public subnets in your VPC from the **Subnet** dropdown list. The subnet you choose must have all external traffic routed to an internet gateway. If this is not the case, you won't be able to connect to the instance remotely.
 
-   For more information on how to connect to a internet gateway, see [Connect to the internet using an internet gateway](https://docs.aws.amazon.com//vpc/latest/userguide/VPC_Internet_Gateway.html) in the *Amazon VPC User Guide*.
+   For more information on how to connect to a internet gateway, see [Connect to the internet using an internet gateway](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Internet_Gateway.html) in the *Amazon VPC User Guide*.
 
 1. Under **Auto-assign public IP**, choose **Enable**.
 

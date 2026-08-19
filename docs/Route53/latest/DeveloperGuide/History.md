@@ -376,17 +376,17 @@ For more information, see [Monitoring health checks using CloudWatch](monitoring
 
 **February 18, 2014**
 With this release, Route 53 adds the following features:
-+ **Health check failover threshold:** You can now specify how many consecutive health checks an endpoint must fail before Route 53 considers the endpoint unhealthy, between 1 and 10 consecutive checks. An unhealthy endpoint must pass the same number of checks to be considered healthy. For more information, see [How Amazon Route 53 determines whether a health check is healthyHow Route 53 determines whether a health check is healthy](dns-failover-determining-health-of-endpoints.md).
-+ **Health check request interval:** You can now specify how frequently Route 53 sends requests to an endpoint to determine whether the endpoint is healthy. Valid settings are 10 seconds and 30 seconds. For more information, see [How Amazon Route 53 determines whether a health check is healthyHow Route 53 determines whether a health check is healthy](dns-failover-determining-health-of-endpoints.md).
++ **Health check failover threshold:** You can now specify how many consecutive health checks an endpoint must fail before Route 53 considers the endpoint unhealthy, between 1 and 10 consecutive checks. An unhealthy endpoint must pass the same number of checks to be considered healthy. For more information, see [How Amazon Route 53 determines whether a health check is healthy](dns-failover-determining-health-of-endpoints.md).
++ **Health check request interval:** You can now specify how frequently Route 53 sends requests to an endpoint to determine whether the endpoint is healthy. Valid settings are 10 seconds and 30 seconds. For more information, see [How Amazon Route 53 determines whether a health check is healthy](dns-failover-determining-health-of-endpoints.md).
 
 **January 30, 2014**
 With this release, Route 53 adds the following features:
-+ **HTTP and HTTPS string-match health checks:** Route 53 now supports health checks that determine the health of an endpoint based on the appearance of a specified string in the response body. For more information, see [How Amazon Route 53 determines whether a health check is healthyHow Route 53 determines whether a health check is healthy](dns-failover-determining-health-of-endpoints.md).
-+ **HTTPS health checks:** Route 53 now supports health checks for secure, SSL-only websites. For more information, see [How Amazon Route 53 determines whether a health check is healthyHow Route 53 determines whether a health check is healthy](dns-failover-determining-health-of-endpoints.md).
++ **HTTP and HTTPS string-match health checks:** Route 53 now supports health checks that determine the health of an endpoint based on the appearance of a specified string in the response body. For more information, see [How Amazon Route 53 determines whether a health check is healthy](dns-failover-determining-health-of-endpoints.md).
++ **HTTPS health checks:** Route 53 now supports health checks for secure, SSL-only websites. For more information, see [How Amazon Route 53 determines whether a health check is healthy](dns-failover-determining-health-of-endpoints.md).
 + **`UPSERT` for the `ChangeResourceRecordSets` API Action:** When creating or changing records using the `ChangeResourceRecordSets` API action, you can now use the `UPSERT` action either to create a new record if none exists with a given name and type, or to update an existing record. For more information, see [ChangeResourceRecordSets](https://docs.aws.amazon.com/Route53/latest/APIReference/API_ChangeResourceRecordSets.html) in the *Amazon Route 53 API Reference*.
 
 **January 7, 2014**
-With this release, Route 53 adds support for health checks that determine the health of an endpoint based on whether a specified string appears in the response body. For more information, see [How Amazon Route 53 determines whether a health check is healthyHow Route 53 determines whether a health check is healthy](dns-failover-determining-health-of-endpoints.md).
+With this release, Route 53 adds support for health checks that determine the health of an endpoint based on whether a specified string appears in the response body. For more information, see [How Amazon Route 53 determines whether a health check is healthy](dns-failover-determining-health-of-endpoints.md).
 
 ## 2013 releases
 <a name="doc-history-2013"></a>

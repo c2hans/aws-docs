@@ -24,7 +24,7 @@ The following diagrams illustrate the scenario of migrating from an on-premises 
 ### To migrate to Amazon MQ without service interruption
 <a name="migrate-without-service-interruption"></a>
 
-![Red circle with the number 1 inside, typically used as a numerical indicator.](http://docs.aws.amazon.com/amazon-mq/latest/migration-guide/images/number-1-red.png)[Create and configure an Amazon MQ broker](https://docs.aws.amazon.com//amazon-mq/latest/developer-guide/getting-started-activemq) and note your broker's endpoint, for example:
+![Red circle with the number 1 inside, typically used as a numerical indicator.](http://docs.aws.amazon.com/amazon-mq/latest/migration-guide/images/number-1-red.png)[Create and configure an Amazon MQ broker](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/getting-started-activemq) and note your broker's endpoint, for example:
 
 ```
 ssl://b-1234a5b6-78cd-901e-2fgh-3i45j6k178l9-1.mq.us-east-2.amazonaws.com:61617

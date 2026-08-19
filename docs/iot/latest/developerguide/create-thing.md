@@ -26,4 +26,4 @@ The **CreateThing** command displays the name and Amazon Resource Name (ARN) of 
 **Note**
 We don't recommend using personally identifiable information in your thing names.
 
-For more information, see [create-thing](https://docs.aws.amazon.com//cli/latest/reference/iot/create-thing.html) from the AWS CLI Command Reference.
+For more information, see [create-thing](https://docs.aws.amazon.com/cli/latest/reference/iot/create-thing.html) from the AWS CLI Command Reference.

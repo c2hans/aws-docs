@@ -83,8 +83,6 @@ hive://${{{jdbc_connection_string}}}
 
 You can use a multiplexer to connect to multiple database instances with a single Lambda function. Requests are routed by catalog name. Use the following classes in Lambda.
 
-****
-
 | Handler | Class |
 | --- | --- |
 | Composite handler | HiveMuxCompositeHandler |
@@ -94,16 +92,12 @@ You can use a multiplexer to connect to multiple database instances with a singl
 ##### Multiplexing handler parameters
 <a name="connectors-cloudera-hive-multiplexing-handler-parameters"></a>
 
-****
-
 | Parameter | Description |
 | --- | --- |
 | ${{catalog}}\_connection\_string | Required. A database instance connection string. Prefix the environment variable with the name of the catalog used in Athena. For example, if the catalog registered with Athena is myhivecatalog, then the environment variable name is myhivecatalog\_connection\_string. |
 | default | Required. The default connection string. This string is used when the catalog is lambda:${{{AWS\_LAMBDA\_FUNCTION\_NAME}}}. |
 
 The following example properties are for a Hive MUX Lambda function that supports two database instances: `hive1` (the default), and `hive2`.
-
-****
 
 | Property | Value |
 | --- | --- |
@@ -138,8 +132,6 @@ Currently, the Cloudera Hive connector recognizes the `UID` and `PWD` JDBC prope
 
 You can use the following single connection metadata and record handlers to connect to a single Cloudera Hive instance.
 
-****
-
 | Handler type | Class |
 | --- | --- |
 | Composite handler | HiveCompositeHandler |
@@ -149,8 +141,6 @@ You can use the following single connection metadata and record handlers to conn
 ##### Single connection handler parameters
 <a name="connectors-cloudera-hive-single-connection-handler-parameters"></a>
 
-****
-
 | Parameter | Description |
 | --- | --- |
 | default | Required. The default connection string. |
@@ -158,8 +148,6 @@ You can use the following single connection metadata and record handlers to conn
 The single connection handlers support one database instance and must provide a `default` connection string parameter. All other connection strings are ignored.
 
 The following example property is for a single Cloudera Hive instance supported by a Lambda function.
-
-****
 
 | Property | Value |
 | --- | --- |
@@ -169,8 +157,6 @@ The following example property is for a single Cloudera Hive instance supported 
 <a name="connectors-cloudera-hive-spill-parameters"></a>
 
 The Lambda SDK can spill data to Amazon S3. All database instances accessed by the same Lambda function spill to the same location.
-
-****
 
 | Parameter | Description |
 | --- | --- |
@@ -182,8 +168,6 @@ The Lambda SDK can spill data to Amazon S3. All database instances accessed by t
 <a name="connectors-cloudera-hive-data-type-support"></a>
 
 The following table shows the corresponding data types for JDBC, Cloudera Hive, and Arrow.
-
-****
 
 | JDBC | Cloudera Hive | Arrow |
 | --- | --- | --- |

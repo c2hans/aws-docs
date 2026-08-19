@@ -67,8 +67,6 @@ To connect an EC2 instance to the DB instance, choose **Connect to an EC2 comput
 
 When you choose **Connect to an EC2 compute resource**, RDS sets the following options automatically. You can't change these settings unless you choose not to set up connectivity with an EC2 instance by choosing **Don't connect to an EC2 compute resource**.
 
-****
-
 | Console option | Automatic setting |
 | --- | --- |
 | **Network type** | RDS sets network type to **IPv4**. Currently, dual-stack mode isn't supported when you set up a connection between an EC2 instance and the DB instance. |

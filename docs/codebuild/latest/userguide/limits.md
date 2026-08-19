@@ -64,8 +64,6 @@ Quotas for the maximum number of concurrent running builds vary, depending on th
 ### Build projects
 <a name="limits-build-projects"></a>
 
-****
-
 | Resource | Default |
 | --- | --- |
 | Allowed characters in a build project description | Any |
@@ -78,8 +76,6 @@ Quotas for the maximum number of concurrent running builds vary, depending on th
 ### Builds
 <a name="limits-builds"></a>
 
-****
-
 | Resource | Default |
 | --- | --- |
 | Maximum time the history of a build is retained | 1 year |
@@ -87,8 +83,6 @@ Quotas for the maximum number of concurrent running builds vary, depending on th
 
 ### Compute fleets
 <a name="fleet-limits"></a>
-
-****
 
 | Resource | Default  |
 | --- | --- |
@@ -112,8 +106,6 @@ Quotas for the maximum number of concurrent running builds vary, depending on th
 ### Reports
 <a name="report-limits"></a>
 
-****
-
 | Resource | Default  |
 | --- | --- |
 | Maximum duration a test report is available after it is created | 30 days |
@@ -126,8 +118,6 @@ Quotas for the maximum number of concurrent running builds vary, depending on th
 <a name="tag-limits"></a>
 
 Tag limits apply to tags on CodeBuild build projects and CodeBuild report group resources.
-
-****
 
 | Resource | Default |
 | --- | --- |

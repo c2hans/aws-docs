@@ -165,7 +165,7 @@ The **NFS options** field lists a set of exports options available on the volume
 + `no_root_squash` turns off root squashing.
 + `anonuid` and `anongid` explicitly set the UID and GID of the anonymous account. Valid values are 0 - 2147483647, inclusive.
 + `sync` replies to client requests only after the changes have been committed to stable storage (that is, disk drives). `sync` is the default unless overridden by `async`
-+ `async` replies to client requests (such as write requests) after the changes have been committed to memory, but before any changes made by that request have been committed to stable storage (that is, disk drives). This setting can improve performance for latency-intensive or IOPS-intensive workloads. For more information, see [Performance for Amazon FSx for OpenZFSPerformance](performance.md).
++ `async` replies to client requests (such as write requests) after the changes have been committed to memory, but before any changes made by that request have been committed to stable storage (that is, disk drives). This setting can improve performance for latency-intensive or IOPS-intensive workloads. For more information, see [Performance for Amazon FSx for OpenZFS](performance.md).
 **Warning**
 Use of the `async` option can cause data to be lost or corrupted if a write request is acknowledged but the server crashes before the write request is fully written to disk.
 

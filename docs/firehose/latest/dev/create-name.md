@@ -5,8 +5,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/dev/create-name.html
 # Choose source and destination for your Firehose stream
 <a name="create-name"></a>
 
-****
-
 1. Open the Firehose console at [https://console.aws.amazon.com/firehose/](https://console.aws.amazon.com/firehose/).
 
 1. Choose **Create Firehose stream**.

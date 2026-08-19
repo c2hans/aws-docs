@@ -9,7 +9,7 @@ WorkSpaces Applications publishes metrics to Amazon CloudWatch to enabled detail
 
 **Topics**
 + [Viewing Fleet Usage Using the Console](monitoring-console.md)
-+ [Viewing Instance and Session Performance Metrics Using the Console](monitoring-instance-session-performance.md)
++ [Viewing instance and session metrics using the console](monitoring-instance-session-performance.md)
 + [WorkSpaces Applications Metrics and Dimensions](monitoring-with-cloudwatch.md)
 + [Manage Multi-Session Fleet Instances](manage-multi-session-instances.md)
 + [Create custom CloudWatch dashboards using CloudFormation templates](custom-cloudwatch-dashboards.md)

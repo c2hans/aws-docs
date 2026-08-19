@@ -14,8 +14,6 @@ Create a VPC with up to 10 private subnets and up to 5 optional public subnets p
 ## Change Type Details
 <a name="ct-1j3503fres5a5-DMAc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1j3503fres5a5 |

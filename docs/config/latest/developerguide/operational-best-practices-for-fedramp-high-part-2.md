@@ -9,8 +9,6 @@ Conformance packs provide a general-purpose compliance framework designed to ena
 
 The following provides a sample mapping between the Federal Risk and Authorization Management Program (FedRAMP) and AWS managed Config rules. Each Config rule applies to a specific AWS resource, and relates to one or more FedRAMP controls. A FedRAMP control can be related to multiple Config rules. Refer to the table below for more detail and guidance related to these mappings.
 
-****
-
 | Control ID  | Control Description  | AWS Config Rule  | Guidance  |
 | --- | --- | --- | --- |
 | AC-02 (11) | The information system enforces organization-defined circumstances and/or usage conditions for organization-defined system accounts. | [guardduty-enabled-centralized](guardduty-enabled-centralized.md) | Use Amazon GuardDuty to monitor the use of short term credentials associated with IAM instance roles. Amazon GuardDuty is able to check for credential exfiltration in IAM Instance Profiles using UnauthorizedAccess check. |

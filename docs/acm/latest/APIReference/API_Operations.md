@@ -28,6 +28,7 @@ The following actions are supported:
 +  [ListAcmeDomainValidations](API_ListAcmeDomainValidations.md)
 +  [ListAcmeEndpoints](API_ListAcmeEndpoints.md)
 +  [ListAcmeExternalAccountBindings](API_ListAcmeExternalAccountBindings.md)
++  [ListCertificateDomainValidations](API_ListCertificateDomainValidations.md)
 +  [ListCertificates](API_ListCertificates.md)
 +  [ListTagsForCertificate](API_ListTagsForCertificate.md)
 +  [ListTagsForResource](API_ListTagsForResource.md)

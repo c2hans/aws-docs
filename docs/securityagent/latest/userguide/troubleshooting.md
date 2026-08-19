@@ -65,6 +65,11 @@ A penetration test failing during endpoint validation indicates that your endpoi
   + Ensure the selected VPC/subnet has proper routing to the target endpoint (e.g., via VPN tunnel or VPC peering), DNS resolution is correctly configured for the private domain (e.g., Route 53 Resolver or custom DNS), and security group rules allow outbound traffic to the target
   + To debug further, launch an EC2 instance in your account with the same VPC, subnet, and security group as your penetration test. Connect to the EC2 instance and verify that networking requests to your target endpoint succeed
 
+## Penetration test failed due to an IP allowlist
+<a name="_penetration_test_failed_due_to_an_ip_allowlist"></a>
+
+If the endpoint that a penetration test targets has an IP allowlist enabled, you can add a private VPC configuration with an associated [VPC NAT Gateway](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-gateway.html) to your penetration test. You can then use the NAT Gateway IP address to allowlist outbound traffic from the penetration test.
+
 ## Getting additional help
 <a name="_getting_additional_help"></a>
 

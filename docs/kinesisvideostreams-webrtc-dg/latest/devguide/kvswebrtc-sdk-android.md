@@ -66,8 +66,6 @@ To build the WebRTC SDK in Android, complete the following steps:
 ## Run the sample application
 <a name="run-sdk-android"></a>
 
-****
-
 Complete the following steps:
 
 1. On your Android device, open **AWSKinesisVideoWebRTCDemoApp** and log in using either a new (by creating it first) or an existing Amazon Cognito account.

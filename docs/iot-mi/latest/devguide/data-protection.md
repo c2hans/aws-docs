@@ -34,7 +34,7 @@ Managed Integrations uses these keys by default to automatically encrypt sensiti
 
 The default encryption key used is AWS owned keys. Alternatively, the optional API to update your encryption key is [`PutDefaultEncryptionConfiguration`](https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_PutDefaultEncryptionConfiguration.html).
 
-For more information on the types of AWS KMS encryption keys, see [AWS KMS keys](https://docs.aws.amazon.com//kms/latest/developerguide/concepts.html).
+For more information on the types of AWS KMS encryption keys, see [AWS KMS keys](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html).
 
 ### AWS KMS usage for Managed Integrations
 <a name="encryption-rest-KMS-usage"></a>

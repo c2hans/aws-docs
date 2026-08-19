@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/d
 # Downloading the AWS Toolkit for JetBrains
 <a name="downloads"></a>
 
-You can download, install, and set up the AWS Toolkit for JetBrains through the JetBrains Marketplace in your IDE. For detailed instructions, see the [Installing the AWS Toolkit from your JetBrains](https://docs.aws.amazon.com//toolkit-for-jetbrains/latest/userguide/setup-toolkit.html) section in the *Getting started* topic of this User Guide.
+You can download, install, and set up the AWS Toolkit for JetBrains through the JetBrains Marketplace in your IDE. For detailed instructions, see the [Installing the AWS Toolkit from your JetBrains](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/setup-toolkit.html) section in the *Getting started* topic of this User Guide.
 
 ## Downloading the Toolkit from the JetBrains Marketplace
 <a name="download"></a>

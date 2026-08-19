@@ -9,6 +9,7 @@ The following table describes the documentation for this release of AWS Elementa
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [Recovery latency mode](using-mediaconnect-router.md) | You can now choose a recovery latency mode for the router fabric on each router output.  | August 10, 2026 |
 | [Router input content quality EventBridge event](monitoring-eventbridge-events-router-input-content-quality.md) | You can now subscribe to EventBridge events for content quality changes on router inputs. | June 29, 2026 |
 | [Content quality analysis for router inputs](monitor-content-quality-analysis.md) | You can now use MediaConnect content quality analysis to monitor your router inputs more effectively. | June 29, 2026 |
 | [Limits for API requests](quotas.md#limits-api) | Updated the high-frequency API list to include router-related APIs | May 1, 2026 |
@@ -44,7 +45,7 @@ The following table describes the documentation for this release of AWS Elementa
 | [AWS service-linked role - New role](using-service-linked-roles.md) | The AWSServiceRoleForMediaConnect role has been created.  | April 13, 2023 |
 | [AWS managed policy - New policy](security-iam-awsmanpol.md) | The MediaConnectGatewayInstanceRolePolicy has been created. | April 13, 2023 |
 | [AWS managed policy - New policy](security-iam-awsmanpol.md) | The AWSMediaConnectServicePolicy has been created. | April 13, 2023 |
-| [Updated the IAM guidance for MediaConnect](security-iam.md) | Updated guide to align with the IAM best practices. For more information, see [Security best practices in IAM](https://docs.aws.amazon.com//IAM/latest/UserGuide/best-practices.html). | February 14, 2023 |
+| [Updated the IAM guidance for MediaConnect](security-iam.md) | Updated guide to align with the IAM best practices. For more information, see [Security best practices in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html). | February 14, 2023 |
 | [Health EventBridge events](monitoring-with-cloudwatch-events.md) | New flow, source, and output health monitoring EventBridge events have been added to MediaConnect.  | February 8, 2023 |
 | [Color support for CDI protocols](protocol-color.md) | A new table has been added that defines color space, bit depth, and chroma sampling support for CDI protocols. | November 4, 2022 |
 | [MediaConnect Alerts: stream errors](monitor-flow-health.md#monitor-flow-health-stream-alerts) | The user guide has been updated to include information about stream error Alerts. | October 27, 2022 |

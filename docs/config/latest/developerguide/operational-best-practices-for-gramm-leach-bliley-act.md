@@ -9,8 +9,6 @@ Conformance packs provide a general-purpose compliance framework designed to ena
 
 The following provides a sample mapping between the Gramm-Leach-Bliley Act (GLBA) and AWS managed Config rules. Each Config rule applies to a specific AWS resource, and relates to one or more GLBA controls. A GLBA control can be related to multiple Config rules. Refer to the table below for more detail and guidance related to these mappings.
 
-****
-
 | Control ID  | Control Description  | AWS Config Rule  | Guidance  |
 | --- | --- | --- | --- |
 | GLBA-SEC.501(b) | In furtherance of the policy in subsection (a), each agency or authority described in section 505(a) shall establish appropriate standards for the financial institutions subject to their jurisdiction relating to administrative, technical, and physical safeguards | [dms-replication-not-public](https://docs.aws.amazon.com/config/latest/developerguide/dms-replication-not-public.html) | Manage access to the AWS Cloud by ensuring DMS replication instances cannot be publicly accessed. DMS replication instances can contain sensitive information and access control is required for such accounts. |

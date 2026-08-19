@@ -14,8 +14,6 @@ Use to override maximum stack access time for all stacks in this account for sin
 ## Change Type Details
 <a name="ct-0jb01cofkhwk1-MMSo-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-0jb01cofkhwk1 |

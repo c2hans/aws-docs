@@ -62,7 +62,7 @@ Use the following procedure to create a manual snapshot of your AWS Managed Micr
   New-DSSnapshot -DirectoryId {{d-1234567890}} -Name ManualSnapshot
   ```
 
-  For more information, see [`New-DSSnapshot`](https://docs.aws.amazon.com//powershell/latest/reference/items/New-DSSnapshot.html).
+  For more information, see [`New-DSSnapshot`](https://docs.aws.amazon.com/powershell/latest/reference/items/New-DSSnapshot.html).
 
 ------
 
@@ -123,7 +123,7 @@ Use the following procedure to restore your directory from a snapshot using the 
    Get-DSSnapshot -DirectoryId {{d-1234567890}} | Sort-Object StartTime | Format-Table
    ```
 
-1. To restore your AWS Managed Microsoft AD from a snapshot, you can use the [`Restore-DSFromSnapshot`](https://docs.aws.amazon.com//powershell/latest/reference/items/Restore-DSFromSnapshot.html) command. Ensure you replace the `snapshot-id` parameter with the snapshot ID you want to use to restore your AWS Managed Microsoft AD:
+1. To restore your AWS Managed Microsoft AD from a snapshot, you can use the [`Restore-DSFromSnapshot`](https://docs.aws.amazon.com/powershell/latest/reference/items/Restore-DSFromSnapshot.html) command. Ensure you replace the `snapshot-id` parameter with the snapshot ID you want to use to restore your AWS Managed Microsoft AD:
 
    ```
    Restore-DSFromSnapshot -SnapshotId {{s-1234567890}}
@@ -183,7 +183,7 @@ Use the following procedure to delete a snapshot of your AWS Managed Microsoft A
    Get-DSSnapshot -DirectoryId {{d-1234567890}} | Sort-Object StartTime | Format-Table
    ```
 
-1. To restore your AWS Managed Microsoft AD from a snapshot, you can use the [`Remove-DSnapshot`](https://docs.aws.amazon.com//powershell/latest/reference/items/Remove-DSSnapshot.html) command. Ensure you replace the `snapshot-id` parameter with the snapshot ID of the snapshot you want to delete:
+1. To restore your AWS Managed Microsoft AD from a snapshot, you can use the [`Remove-DSnapshot`](https://docs.aws.amazon.com/powershell/latest/reference/items/Remove-DSSnapshot.html) command. Ensure you replace the `snapshot-id` parameter with the snapshot ID of the snapshot you want to delete:
 
    ```
    Remove-DSSnapshot -SnapshotId {{s-1234567890}}

@@ -5,6 +5,8 @@ source_url: https://docs.aws.amazon.com/accounts/latest/reference/security-priva
 # AWS PrivateLink for AWS Account Management
 <a name="security-privatelink"></a>
 
+The following information is relevant for all AWS accounts.
+
 If you use Amazon Virtual Private Cloud (Amazon VPC) to host your AWS resources, you can access the AWS Account Management service from within the VPC without having to cross the public internet.
 
 Amazon VPC lets you launch AWS resources in a custom virtual network. You can use a VPC to control your network settings, such as the IP address range, subnets, route tables, and network gateways. For more information about VPCs, see the *[Amazon VPC User Guide](https://docs.aws.amazon.com/vpc/latest/userguide/)*.

@@ -26,7 +26,6 @@ This address serves as the constant *cluster ID* for the primary and secondary C
 1. On the **Redundancy** page, choose **New Redundancy Group** and select **Elemental Conductor Live**.
 
 1. In the **Add New Redundancy Group** dialog, complete the fields and choose **Add**. See the table for information on each field.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-cl3/latest/configguide/conductor-live-config-redundancy-cl.html)
 
 **To add Conductor Live nodes**

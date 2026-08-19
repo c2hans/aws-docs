@@ -102,7 +102,7 @@ Choose your preferred method, and follow the steps to enable Security Hub CSPM. 
 ------
 #### [ Security Hub CSPM API ]
 
-Invoke the [`EnableSecurityHub`](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_EnableSecurityHub.html) API. When you enable Security Hub CSPM from the API, it automatically enables the following default security standards:
+Invoke the [`EnableSecurityHub`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_EnableSecurityHub.html) API. When you enable Security Hub CSPM from the API, it automatically enables the following default security standards:
 + AWS Foundational Security Best Practices
 + Center for Internet Security (CIS) AWS Foundations Benchmark v1.2.0
 

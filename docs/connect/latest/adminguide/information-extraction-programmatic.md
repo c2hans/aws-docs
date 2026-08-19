@@ -57,8 +57,8 @@ Each extraction includes:
 <a name="information-extraction-api"></a>
 
 You can retrieve extracted information generated during after-call work programmatically using the following APIs:
-+ **[ListRealtimeContactAnalysisSegments](https://docs.aws.amazon.com//connect/latest/APIReference/API_connect-contact-lens_ListRealtimeContactAnalysisSegments.html)** — Returns extracted information segments for **voice** contacts during after-contact work.
-+ **[ListRealtimeContactAnalysisSegmentsV2](https://docs.aws.amazon.com//connect/latest/APIReference/API_ListRealtimeContactAnalysisSegmentsV2.html)** — Returns extracted information segments for **chat** contacts during after-contact work.
++ **[ListRealtimeContactAnalysisSegments](https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-contact-lens_ListRealtimeContactAnalysisSegments.html)** — Returns extracted information segments for **voice** contacts during after-contact work.
++ **[ListRealtimeContactAnalysisSegmentsV2](https://docs.aws.amazon.com/connect/latest/APIReference/API_ListRealtimeContactAnalysisSegmentsV2.html)** — Returns extracted information segments for **chat** contacts during after-contact work.
 
 ## Extracted information via Amazon Kinesis
 <a name="information-extraction-kinesis"></a>

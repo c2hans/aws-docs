@@ -23,7 +23,7 @@ If your resources don't have enough metric data, allow for more time before the 
 
 Amazon EC2 instances and EC2 Auto Scaling groups both require at least 30 hours of CloudWatch metric data in the past 14 days.
 
-If you enabled the enhanced infrastructure metrics feature, both EC2 instances and EC2 Auto Scaling require at least 30 hours of CloudWatch metric data over the past 93 days. For more information, see [ Enhanced infrastructure metrics](https://docs.aws.amazon.com//compute-optimizer/latest/ug/enhanced-infrastructure-metrics.html).
+If you enabled the enhanced infrastructure metrics feature, both EC2 instances and EC2 Auto Scaling require at least 30 hours of CloudWatch metric data over the past 93 days. For more information, see [ Enhanced infrastructure metrics](https://docs.aws.amazon.com/compute-optimizer/latest/ug/enhanced-infrastructure-metrics.html).
 
 For a list of the instance types supported by Compute Optimizer, see [Supported Amazon EC2 instance types](supported-resources.md#supported-ec2-instances). For information about the EC2 Auto Scaling groups that Compute Optimizer supports, see [Supported Amazon EC2 Auto Scaling groups](supported-resources.md#supported-asg).
 
@@ -73,7 +73,7 @@ To generate recommendations for commercial software licenses, Compute Optimizer 
 + At least 30 *consecutive* hours of CloudWatch metric data.
 + Enable CloudWatch Application Insights using your Microsoft SQL Server database credentials.
 
-  For more information about how to enable CloudWatch Application Insights, see [Set up Amazon CloudWatch Application Insights for monitoring](https://docs.aws.amazon.com//AmazonCloudWatch/latest/monitoring/appinsights-setting-up) in the *Amazon CloudWatch User Guide*.
+  For more information about how to enable CloudWatch Application Insights, see [Set up Amazon CloudWatch Application Insights for monitoring](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/appinsights-setting-up) in the *Amazon CloudWatch User Guide*.
 + Attach the required instance role and policy for CloudWatch Application Insights. For more information, see [Policies to enable commercial software license recommendations](security-iam.md#license-access).
 
 For more information about the metrics analyzed, see [Metrics for commercial software licenses](license-metrics-analyzed.md).
@@ -87,8 +87,8 @@ Compute Optimizer generates Aurora and RDS DB instances, RDS DB instance storage
 <a name="requirements-aurora-clusters"></a>
 
 To generate recommendations for your Aurora and RDS DB instances, Compute Optimizer requires the following:
-+ At least 30 hours of CloudWatch metric data in the past 14 days. If you enabled the enhanced infrastructure metrics feature, DB instances require at least 30 hours of metric data over the past 93 days. For more information, see [ Enhanced infrastructure metrics](https://docs.aws.amazon.com//compute-optimizer/latest/ug/enhanced-infrastructure-metrics.html).
-+ To receive recommendations for RDS DB instances that are over-provisioned, you need to enable Amazon RDS Performance Insights. To enable Performance Insights for your DB instances, see [ Turning Performance Insights on and off for Amazon RDS](https://docs.aws.amazon.com//AmazonRDS/latest/UserGuide/USER_PerfInsights.Enabling.html) in the *Amazon Relational Database Service User Guide*.
++ At least 30 hours of CloudWatch metric data in the past 14 days. If you enabled the enhanced infrastructure metrics feature, DB instances require at least 30 hours of metric data over the past 93 days. For more information, see [ Enhanced infrastructure metrics](https://docs.aws.amazon.com/compute-optimizer/latest/ug/enhanced-infrastructure-metrics.html).
++ To receive recommendations for RDS DB instances that are over-provisioned, you need to enable Amazon RDS Performance Insights. To enable Performance Insights for your DB instances, see [ Turning Performance Insights on and off for Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PerfInsights.Enabling.html) in the *Amazon Relational Database Service User Guide*.
 
 ### Aurora DB clusters
 <a name="requirements-aurora-clusters"></a>

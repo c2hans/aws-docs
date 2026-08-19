@@ -22,4 +22,4 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/connecting-to-data-snowfl
 ## Advanced options
 <a name="creating-snowflake-connection-advanced-options"></a>
 
-See [ Snowflake connections ](https://docs.aws.amazon.com//glue/latest/dg/aws-glue-programming-etl-connect-snowflake-home.html) in the AWS Glue developer guide.
+See [ Snowflake connections ](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-etl-connect-snowflake-home.html) in the AWS Glue developer guide.

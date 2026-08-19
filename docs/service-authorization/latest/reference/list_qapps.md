@@ -25,7 +25,17 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_qapps-actions-as-permissions).
 
-****
+- **   AssociateLibraryItemReview  **
+  - **IAM action:**  [qapps:AssociateLibraryItemReview](#list_qapps-action-AssociateLibraryItemReview)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   AssociateQAppWithUser  **
+  - **IAM action:**  [qapps:AssociateQAppWithUser](#list_qapps-action-AssociateQAppWithUser)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
 
 - **   BatchCreateCategory  **
   - **IAM action:**  [qapps:BatchCreateCategory](#list_qapps-action-BatchCreateCategory)
@@ -81,8 +91,20 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Read
 
+- **   DisassociateLibraryItemReview  **
+  - **IAM action:**  [qapps:DisassociateLibraryItemReview](#list_qapps-action-DisassociateLibraryItemReview)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   DisassociateQAppFromUser  **
   - **IAM action:**  [qapps:DisassociateQAppFromUser](#list_qapps-action-DisassociateQAppFromUser)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   ExportQAppSessionData  **
+  - **IAM action:**  [qapps:ExportQAppSessionData](#list_qapps-action-ExportQAppSessionData)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
@@ -211,8 +233,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
 <a name="list_qapps-actions-as-permissions"></a>
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
-
-****
 
 - **   [AssociateLibraryItemReview](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_AssociateLibraryItemReview.html)  **
   - **Description:** Grants permission to associate a library item review in the Q Business application environment
@@ -423,8 +443,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 The following actions are defined by Amazon Q Business Q Apps but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 - **   [CopyQApp](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/purpose-built-qapps.html)  **
   - **Description:** Grants permission to copy Q App in the Q Business application environment
   - **Resource types (\*required):** [application](#list_qapps-resource-application) / **Condition keys:** [qapps:AppIsPublished](#list_qapps-qapps_AppIsPublished)<br />[qapps:UserIsAppOwner](#list_qapps-qapps_UserIsAppOwner)
@@ -460,8 +478,6 @@ The following actions are defined by Amazon Q Business Q Apps but are not direct
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
 
-****
-
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
 |  [application](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/create-app.html)  | arn:${Partition}:qbusiness:${Region}:${Account}:application/${ApplicationId} |   |
@@ -472,8 +488,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_qapps-policy-keys"></a>
 
 Amazon Q Business Q Apps defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

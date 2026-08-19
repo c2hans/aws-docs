@@ -62,6 +62,7 @@ You can set configuration properties using the connection URL. For more informat
 + [Password](#jdbc20-password-option)
 + [Plugin\_Name](#jdbc20-plugin_name-option)
 + [PORT](#jdbc20-port-option)
++ [preferPQ](#jdbc20-preferpq-option)
 + [Preferred\_Role](#jdbc20-preferred_role-option)
 + [Profile](#jdbc20-profile-option)
 + [PWD](#jdbc20-pwd-option)
@@ -722,6 +723,21 @@ The following provider options are supported:
 The port of the Amazon Redshift server to connect to. You can use this option to specify the port in the JDBC connection URL.
 
 This parameter is optional.
+
+## preferPQ
+<a name="jdbc20-preferpq-option"></a>
++ **Default Value** – true
++ **Data Type** – Boolean
+
+This option controls whether the driver advertises post-quantum hybrid key-exchange groups in the TLS 1.3 ClientHello. When post-quantum groups are offered and the server also supports them, the server selects one. Otherwise, the handshake falls back to classical key exchange transparently.
+
+This parameter is optional. It is available in driver versions 2.2.8 and later.
+
+**true**
+The driver advertises post-quantum hybrid TLS key-exchange groups when supported by the runtime.
+
+**false**
+The driver does not advertise post-quantum groups. Use this setting if a network middlebox blocks TLS handshakes because it does not recognize the post-quantum key-exchange groups the driver offers.
 
 ## Preferred\_Role
 <a name="jdbc20-preferred_role-option"></a>

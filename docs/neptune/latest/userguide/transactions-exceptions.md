@@ -24,7 +24,7 @@ Retrying every error by default can lead to several unintended consequences:
 <a name="developing-practical-retry-strategy"></a>
 
 To build a resilient and efficient application, develop a retry strategy that's tailored to the specific error conditions your application might encounter. Here are some considerations to guide your approach:
-+ **Identify retryable errors** – Not all exceptions should be retried. For example, syntax errors, authentication failures, or invalid queries should not trigger a retry. Neptune provides [error codes](https://docs.aws.amazon.com//neptune/latest/userguide/errors-engine-codes.html) and general recommendations for which errors are safe to retry, but you need to implement the logic that fits your use case.
++ **Identify retryable errors** – Not all exceptions should be retried. For example, syntax errors, authentication failures, or invalid queries should not trigger a retry. Neptune provides [error codes](https://docs.aws.amazon.com/neptune/latest/userguide/errors-engine-codes.html) and general recommendations for which errors are safe to retry, but you need to implement the logic that fits your use case.
 + **Implement exponential backoff** – For transient errors, use an exponential backoff strategy to progressively increase the wait time between retries. This helps alleviate contention and reduces the risk of cascading failures.
 + **Consider initial pause length** – Performing the first retry too quickly might just end with the same error if the server hasn't been given enough time to release resources that the query needs to succeed. A longer pause in the right situations could reduce wasted requests and server pressure.
 + **Add jitter to backoff** – While exponential backoff is effective, it can still lead to synchronized retry storms if many clients fail at the same time and then retry together. Adding jitter, a small random variation to the backoff delay, helps spread out retry attempts thereby reducing the chance of all clients retrying simultaneously and causing another spike in load.
@@ -78,12 +78,12 @@ This CloudWatch metric tracks the number of requests waiting in Neptune's input 
 ### Other CloudWatch metrics
 <a name="other-cloudwatch-metrics"></a>
 
-Other [Neptune metrics](https://docs.aws.amazon.com/neptune/latest/userguide/cw-metrics.html) like `CPUUtilization`, `TotalRequestsPerSecond`, and query latency provide additional context. For example, high CPU and I/O combined with growing queue lengths might indicate that your cluster is overloaded or that queries are too large or too frequent. [CloudWatch alarms](https://docs.aws.amazon.com//AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html) can be set on these metrics to alert you to abnormal behavior and help you correlate spikes in errors or retries with underlying resource constraints.
+Other [Neptune metrics](https://docs.aws.amazon.com/neptune/latest/userguide/cw-metrics.html) like `CPUUtilization`, `TotalRequestsPerSecond`, and query latency provide additional context. For example, high CPU and I/O combined with growing queue lengths might indicate that your cluster is overloaded or that queries are too large or too frequent. [CloudWatch alarms](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html) can be set on these metrics to alert you to abnormal behavior and help you correlate spikes in errors or retries with underlying resource constraints.
 
 ### Neptune Status and Query APIs
 <a name="neptune-status-query-apis"></a>
 
-The Neptune [Status API for Gremlin](https://docs.aws.amazon.com//neptune/latest/userguide/gremlin-api-status.html) and its analogous APIs for [OpenCypher](https://docs.aws.amazon.com//neptune/latest/userguide/access-graph-opencypher-status.html) and [SPARQL](https://docs.aws.amazon.com//neptune/latest/userguide/sparql-api-status.html) give a real-time view of the queries accepted and running on the cluster which is useful for diagnosing bottlenecks or understanding the impact of retry logic in real time.
+The Neptune [Status API for Gremlin](https://docs.aws.amazon.com/neptune/latest/userguide/gremlin-api-status.html) and its analogous APIs for [OpenCypher](https://docs.aws.amazon.com/neptune/latest/userguide/access-graph-opencypher-status.html) and [SPARQL](https://docs.aws.amazon.com/neptune/latest/userguide/sparql-api-status.html) give a real-time view of the queries accepted and running on the cluster which is useful for diagnosing bottlenecks or understanding the impact of retry logic in real time.
 
 By combining these monitoring tools, you can:
 + Detect when retries are contributing to queuing and performance degradation.

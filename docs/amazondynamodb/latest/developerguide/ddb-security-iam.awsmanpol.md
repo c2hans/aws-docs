@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ddb
 
 DynamoDB uses AWS managed policies to define a set of permissions the service needs to perform specific actions. DynamoDB maintains and updates its AWS managed policies. You can't change the permissions in AWS managed policies. For more information about AWS managed policies, see [AWS managed policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html#aws-managed-policies) in the IAM User Guide.
 
-DynamoDB may occasionally add additional permissions to an AWS managed policy to support new features. This type of update affects all identities (users, groups, and roles) where the policy is attached. An AWS managed policy is most likely to be updated when a new feature is launched or when new operations become available. DynamoDB will not remove permissions from an AWS managed policy, so policy updates won't break your existing permissions. For a full list of AWS managed policies, see [AWS managed policies](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/policy-list.html).
+DynamoDB might occasionally add additional permissions to an AWS managed policy to support new features. This type of update affects all identities (users, groups, and roles) where the policy is attached. An AWS managed policy is most likely to be updated when a new feature is launched or when new operations become available. DynamoDB will not remove permissions from an AWS managed policy, so policy updates won't break your existing permissions. For a full list of AWS managed policies, see [AWS managed policies](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/policy-list.html).
 
 ## AWS managed policy: DynamoDBReplicationServiceRolePolicy
 <a name="ddb-security-iam.awsmanpol.policy"></a>
@@ -77,8 +77,6 @@ To review the policy in `JSON` format, see [AmazonDynamoDBReadOnlyAccess](https:
 <a name="ddb-security-iam.awsmanpol.updates"></a>
 
 This table shows updates to the AWS access management policies for DynamoDB.
-
-****
 
 | Change | Description | Date Changed |
 | --- | --- | --- |

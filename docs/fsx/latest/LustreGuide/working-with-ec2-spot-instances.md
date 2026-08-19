@@ -26,7 +26,7 @@ This example script cleanly unmounts terminating EC2 Spot Instances by doing the
 + When it receives a termination notice:
   + Stop applications that are accessing the file system.
   + Unmounts the file system before the instance is terminated.
-You can adapt the script as needed, especially for gracefully shutting down your application. For more information about best practices for handling Spot Instance interruptions, see [ Best practices for handling EC2 Spot Instance interruptions](https://aws.amazon.com/blogs//compute/best-practices-for-handling-ec2-spot-instance-interruptions/).
+You can adapt the script as needed, especially for gracefully shutting down your application. For more information about best practices for handling Spot Instance interruptions, see [ Best practices for handling EC2 Spot Instance interruptions](https://aws.amazon.com/blogs/compute/best-practices-for-handling-ec2-spot-instance-interruptions/).
 It can take time for a Lustre client to unmount a file system. If you mount many file systems on the same Amazon EC2 Spot Instance, it may take too long to unmount all of them within the two-minute Spot termination notice window. If you need to mount a large number of file systems on one host, we recommend using On-Demand Instances to avoid issues with unclean unmounts due to Amazon EC2 Spot Instance interruptions.
 
 ```

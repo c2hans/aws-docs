@@ -358,7 +358,6 @@ You can only delete the content of a comment if you have the AWSCodeCommitFullAc
    + The value of the reaction you want to add or update. Acceptable values include supported emojis, shortcodes, and Unicode values.<a name="emoji-reaction-table"></a>
 
    The following values are supported for emojis in CodeCommit:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/codecommit/latest/userguide/how-to-commit-comment.html)
 
     For example, to add the emoji {{:thumbsup:}} to the comment with the system-generated ID of {{abcd1234EXAMPLEb5678efgh}}:

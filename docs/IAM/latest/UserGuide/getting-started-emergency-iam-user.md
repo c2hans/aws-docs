@@ -113,7 +113,7 @@ If the password you provided in the JSON file violates your account's password p
 
 1. Create the **EmergencyAccessGroup**, attach the AWS managed policy `AdministratorAccess` to the group, and add the **EmergencyAccess** user to the group.
 **Note**
-An *AWS managed policy* is a standalone policy that is created and administered by AWS. Each policy has its own Amazon Resource Name (ARN) that includes the policy name. For example, `arn:aws:iam::aws:policy/IAMReadOnlyAccess` is an AWS managed policy. For more information about ARNs, see [IAM ARNs](reference_identifiers.md#identifiers-arns). For a list of AWS managed policies for AWS services, see [AWS managed policies](https://docs.aws.amazon.com//aws-managed-policy/latest/reference/policy-list.html).
+An *AWS managed policy* is a standalone policy that is created and administered by AWS. Each policy has its own Amazon Resource Name (ARN) that includes the policy name. For example, `arn:aws:iam::aws:policy/IAMReadOnlyAccess` is an AWS managed policy. For more information about ARNs, see [IAM ARNs](reference_identifiers.md#identifiers-arns). For a list of AWS managed policies for AWS services, see [AWS managed policies](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/policy-list.html).
    + [aws iam create-group](https://docs.aws.amazon.com/cli/latest/reference/iam/create-group.html)
 
      ```

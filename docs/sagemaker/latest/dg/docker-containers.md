@@ -34,7 +34,7 @@ The following decision tree illustrates three main scenarios: **Use cases for us
 <a name="container-scenarios-use-prebuilt"></a>
 
 Consider the following use cases when using containers with SageMaker AI:
-+ **Pre-built SageMaker AI algorithm** – Use the image that comes with the built-in algorithm. See [Use Amazon SageMaker AI Built-in Algorithms or Pre-trained Models](https://docs.aws.amazon.com//sagemaker/latest/dg/algos.html) for more information.
++ **Pre-built SageMaker AI algorithm** – Use the image that comes with the built-in algorithm. See [Use Amazon SageMaker AI Built-in Algorithms or Pre-trained Models](https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html) for more information.
 + **Custom model with pre-built SageMaker AI container** – If you train or deploy a custom model, but use a framework that has a pre-built SageMaker AI container including TensorFlow and PyTorch, choose one of the following options:
   + If you don't need a custom package, and the container already includes all required packages: Use the pre-built Docker image associated with your framework. For more information, see [Pre-built SageMaker AI Docker images](docker-containers-prebuilt.md).
   + If you need a custom package installed into one of the pre-built containers: Confirm that the pre-built Docker image allows a requirements.txt file, or extend the pre-built container based on the following use cases.

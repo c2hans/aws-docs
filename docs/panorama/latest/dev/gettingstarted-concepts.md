@@ -29,8 +29,6 @@ For more information, see [Managing the AWS Panorama Appliance](panorama-applian
 <a name="gettingstarted-concepts-devices"></a>
 
 In addition to the AWS Panorama Appliance, AWS Panorama supports compatible devices from AWS Partners. Compatible devices support the same features as the AWS Panorama Appliance. You register and manage compatible devices with the AWS Panorama console and API, and build and deploy applications in the same way.
-
-****
 + [Lenovo ThinkEdge® SE70](https://techtoday.lenovo.com/us/en/solutions/smb/thinkedge) – Powered by Nvidia Jetson Xavier NX
 
 The content and sample applications in this guide are developed with the AWS Panorama Appliance. For more information about specific hardware and software features for your device, refer to the manufacturer's documentation.

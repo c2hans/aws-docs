@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-managed-ds-s
 After you set up authentication and store your credentials in an AWS Secrets Manager secret, create the SharePoint data source in your knowledge base. This page describes how to create the data source with the AWS Management Console or the API, followed by a reference for the connector parameters you can configure.
 
 **Note**
-Complete authentication setup first. See [Set up Microsoft Entra ID App-Only authentication for SharePoint](kb-managed-sharepoint-entra-setup.md) (recommended) or [Set up OAuth 2.0 authentication for SharePoint](kb-managed-sharepoint-oauth2-setup.md). You need the secret ARN, your tenant ID, and (for Microsoft Entra ID App-Only authentication) the Amazon S3 location of your certificate.
+Complete authentication setup first. See [User-managed setup (3LO)](kb-managed-sharepoint-3lo-setup.md) (simplest), [Set up Microsoft Entra ID App-Only authentication for SharePoint](kb-managed-sharepoint-entra-setup.md) (recommended for document-level access control), or [Set up OAuth 2.0 authentication for SharePoint](kb-managed-sharepoint-oauth2-setup.md). For user-managed setup (3LO), you sign in through the console and Amazon Bedrock creates the secret for you (with a system-generated ARN); you do not provide a secret or tenant ID. For the other methods, you need the secret ARN, your tenant ID, and (for Microsoft Entra ID App-Only authentication) the Amazon S3 location of your certificate.
 
 ## Create the data source
 <a name="kb-managed-ds-sharepoint-create"></a>
@@ -24,7 +24,7 @@ Complete authentication setup first. See [Set up Microsoft Entra ID App-Only aut
 
 1. Under **Source**, enter your **Site URLs**. Each URL must start with `https://` and point to a site, team site, or personal site (for example, `https://contoso.sharepoint.com/sites/engineering`). You can add up to 100 URLs.
 
-1. Under **Authentication**, select **Microsoft Entra ID App-Only** or **OAuth 2.0 authentication**.
+1. Under **Authentication**, select **User-managed setup (3LO)**, **Microsoft Entra ID App-Only**, or **OAuth 2.0 authentication**. For user-managed setup (3LO), optionally enter a **secret name prefix**. Then choose **Sign in** to sign in to SharePoint and authorize the connection. You do not provide a secret or tenant ID. Amazon Bedrock creates a secret with a system-generated ARN to store the token. For details, see [User-managed setup (3LO)](kb-managed-sharepoint-3lo-setup.md).
 
 1. Select or create an AWS Secrets Manager secret to store your credentials.
 
@@ -83,7 +83,7 @@ The `sharepoint-managed-connector.json` file contains the following:
 }
 ```
 
-For an `OAUTH2_APP` data source, set `authType` to `OAUTH2_APP` and omit `certificateS3Path`.
+For an `OAUTH2_APP` data source, set `authType` to `OAUTH2_APP` and omit `certificateS3Path`. For user-managed setup (3LO), set `authType` to `MANAGED_OAUTH2` and omit `certificateS3Path`. You cannot create a 3LO secret through the API: first sign in through the console to create the secret, then set `secretArn` to that secret's ARN. For details, see [User-managed setup (3LO)](kb-managed-sharepoint-3lo-setup.md).
 
 For managed knowledge bases, `CreateDataSource` is asynchronous: the data source status transitions from `CREATING` to `AVAILABLE` when the operation completes.
 
@@ -100,7 +100,7 @@ The data source configuration uses the following connector parameters. To connec
 | --- | --- | --- |
 | secretArn | Yes | The ARN of the AWS Secrets Manager secret containing your SharePoint credentials. |
 | tenantId | Yes | The Microsoft Entra (Azure AD) tenant ID. |
-| authType | Yes | The authentication type: ENTRA\_ID\_APP\_ONLY (recommended) or OAUTH2\_APP. See [Authentication methods](kb-managed-ds-sharepoint.md#kb-managed-sharepoint-auth-methods). |
+| authType | Yes | The authentication type: MANAGED\_OAUTH2 (user-managed setup, 3LO), ENTRA\_ID\_APP\_ONLY (recommended), or OAUTH2\_APP. See [Authentication methods](kb-managed-ds-sharepoint.md#kb-managed-sharepoint-auth-methods). |
 | certificateS3Path | Conditional | Required for ENTRA\_ID\_APP\_ONLY authentication, even when ACLs are disabled. Contains s3BucketName and s3KeyName for the certificate file in Amazon S3. Not used with OAUTH2\_APP. |
 
 **dataEntityConfiguration**

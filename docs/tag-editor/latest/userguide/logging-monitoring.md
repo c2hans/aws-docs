@@ -17,22 +17,22 @@ For more information about CloudTrail, see the [AWS CloudTrail User Guide](https
 ### Tag Editor information in CloudTrail
 <a name="resource-groups-info-in-cloudtrail"></a>
 
-CloudTrail is enabled on your AWS account when you create the account. When activity occurs in Tag Editor, or in the Tag Editor console, that activity is recorded in a CloudTrail event along with other AWS service events in **Event history**. You can view, search, and download recent events in your AWS account. For more information, see [Viewing events with CloudTrail Event history](https://docs.aws.amazon.com//awscloudtrail/latest/userguide/view-cloudtrail-events.html).
+CloudTrail is enabled on your AWS account when you create the account. When activity occurs in Tag Editor, or in the Tag Editor console, that activity is recorded in a CloudTrail event along with other AWS service events in **Event history**. You can view, search, and download recent events in your AWS account. For more information, see [Viewing events with CloudTrail Event history](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/view-cloudtrail-events.html).
 
 For an ongoing record of events in your AWS account, including events for Tag Editor, create a trail. A trail enables CloudTrail to deliver log files to an Amazon S3 bucket. By default, when you create a trail in the console, the trail applies to all AWS Regions. The trail logs events from all Regions in the AWS partition and delivers the log files to the Amazon S3 bucket that you specify. Additionally, you can configure other AWS services to further analyze and act upon the event data collected in CloudTrail logs. For more information, see the following resources:
-+ [Creating a trail for your AWS account](https://docs.aws.amazon.com//awscloudtrail/latest/userguide/cloudtrail-create-and-update-a-trail.html)
-+ [CloudTrail supported services and integrations](https://docs.aws.amazon.com//awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.html)
-+ [Configuring Amazon SNS notifications for CloudTrail](https://docs.aws.amazon.com//awscloudtrail/latest/userguide/getting_notifications_top_level.html)
-+ [Receiving CloudTrail log files from multiple Regions](https://docs.aws.amazon.com//awscloudtrail/latest/userguide/receive-cloudtrail-log-files-from-multiple-regions.html) and [Receiving CloudTrail log files from multiple accounts](https://docs.aws.amazon.com//awscloudtrail/latest/userguide/cloudtrail-receive-logs-from-multiple-accounts.html)
++ [Creating a trail for your AWS account](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-create-and-update-a-trail.html)
++ [CloudTrail supported services and integrations](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.html)
++ [Configuring Amazon SNS notifications for CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/getting_notifications_top_level.html)
++ [Receiving CloudTrail log files from multiple Regions](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/receive-cloudtrail-log-files-from-multiple-regions.html) and [Receiving CloudTrail log files from multiple accounts](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-receive-logs-from-multiple-accounts.html)
 
-All Tag Editor actions are logged by CloudTrail and are documented in the [Tag Editor API Reference](https://docs.aws.amazon.com//ARG/latest/APIReference/). Tag Editor actions in the console are logged by CloudTrail, and are shown as events with `tagging.amazonaws.com` as the `eventSource`.
+All Tag Editor actions are logged by CloudTrail and are documented in the [Tag Editor API Reference](https://docs.aws.amazon.com/ARG/latest/APIReference/). Tag Editor actions in the console are logged by CloudTrail, and are shown as events with `tagging.amazonaws.com` as the `eventSource`.
 
 Every event or log entry contains information about who generated the request. The identity information helps you determine the following:
 + Whether the request was made with root or IAM user credentials.
 + Whether the request was made with temporary security credentials for a role or federated user.
 + Whether the request was made by another AWS service.
 
-For more information, see the [CloudTrail `userIdentity` element](https://docs.aws.amazon.com//awscloudtrail/latest/userguide/cloudtrail-event-reference-user-identity.html).
+For more information, see the [CloudTrail `userIdentity` element](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference-user-identity.html).
 
 ### Understanding Tag Editor log file entries
 <a name="understanding-service-name-entries"></a>

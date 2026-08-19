@@ -14,8 +14,6 @@ You can use the Amazon RDS procedure `msdb.dbo.rds_shrink_tempdbfile` to shrink 
 
 The `rds_shrink_tempdbfile` procedure has the following parameters.
 
-****
-
 | Parameter name | Data type | Default | Required | Description |
 | --- | --- | --- | --- | --- |
 | `@temp_filename` | SYSNAME | — | required | The logical name of the file to shrink. |

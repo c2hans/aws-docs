@@ -12,8 +12,6 @@ Chatting in an Amazon Q Business web experience preview and a deployed Amazon Q 
 **Important**
 Amazon Q Business Chat and ChatSync APIs are intended to be activated by end user interactions, not programmatic access. To protect availability, requests exceeding normal user patterns may be throttled. If throttling occurs, first wait and retry later as it is often temporary. However, if throttling persists—or if you believe the throttling is in error—contact AWS Support for troubleshooting assistance.
 
-****
-
 | API action | API description | Relevant User Guide topic |
 | --- | --- | --- |
 | [Chat](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Chat.html) | Starts or continues a streaming Amazon Q Business conversation  | +  [Preview an Amazon Q Business web experience](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/preview-experience.html) <br />+  [Customize an Amazon Q Business web experience](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/customizing-web-experience.html) <br />+  [Using Amazon Q Business web experiences](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/using-web-experience.html)  |

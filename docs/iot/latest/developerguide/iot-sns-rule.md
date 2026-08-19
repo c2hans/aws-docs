@@ -34,8 +34,8 @@ You'll need your AWS account and AWS IoT console to complete this tutorial.
 Be sure you can use the MQTT client to subscribe and publish to a topic. You'll use the MQTT client to test your new rule in this procedure.
 +
 
-**Reviewed the [Amazon Simple Notification Service](https://docs.aws.amazon.com//sns/latest/dg/welcome.html)**
-If you haven't used Amazon SNS before, review [Setting up access for Amazon SNS](https://docs.aws.amazon.com//sns/latest/dg/sns-setting-up.html). If you've already completed other AWS IoT tutorials, your AWS account should already be configured correctly.
+**Reviewed the [Amazon Simple Notification Service](https://docs.aws.amazon.com/sns/latest/dg/welcome.html)**
+If you haven't used Amazon SNS before, review [Setting up access for Amazon SNS](https://docs.aws.amazon.com/sns/latest/dg/sns-setting-up.html). If you've already completed other AWS IoT tutorials, your AWS account should already be configured correctly.
 
 ## Step 1: Create an Amazon SNS topic that sends a SMS text message
 <a name="iot-sns-rule-create-sns-topic"></a>
@@ -46,7 +46,7 @@ This procedure exaplains how to create the Amazon SNS topic your weather sensor 
 
 1. **Create an Amazon SNS topic.**
 
-   1. Sign in to the [Amazon SNS console](https://console.aws.amazon.com//sns/home).
+   1. Sign in to the [Amazon SNS console](https://console.aws.amazon.com/sns/home).
 
    1. In the left navigation pane, choose **Topics**.
 
@@ -74,7 +74,7 @@ The phone number that you use in this subscription might incur text messaging ch
 
 1. **Test the Amazon SNS notification.**
 
-   1. In the [Amazon SNS console](https://console.aws.amazon.com//sns/home), in the left navigation pane, choose **Topics**.
+   1. In the [Amazon SNS console](https://console.aws.amazon.com/sns/home), in the left navigation pane, choose **Topics**.
 
    1. To open the topic's details page, in **Topics**, in the list of topics, choose **high\_temp\_notice**.
 
@@ -88,7 +88,7 @@ The phone number that you use in this subscription might incur text messaging ch
 
    If you did not receive the test message, double check the phone number and your phone's settings.
 
-   Make sure you can publish test messages from the [Amazon SNS console](https://console.aws.amazon.com//sns/home) before you continue the tutorial.
+   Make sure you can publish test messages from the [Amazon SNS console](https://console.aws.amazon.com/sns/home) before you continue the tutorial.
 
 ## Step 2: Create an AWS IoT rule to send the text message
 <a name="iot-sns-rule-create-rule"></a>
@@ -123,7 +123,7 @@ The rule's rule query statement takes the `temperature` value from the message p
 
 **To create an AWS IoT rule to detect an over-limit temperature value and create the data to send to the Amazon SNS topic**
 
-1. Open [the **Rules** hub of the AWS IoT console](https://console.aws.amazon.com//iot/home#/rulehub).
+1. Open [the **Rules** hub of the AWS IoT console](https://console.aws.amazon.com/iot/home#/rulehub).
 
 1. If this is your first rule, choose **Create**, or **Create a rule**.
 
@@ -190,11 +190,11 @@ The rule's rule query statement takes the `temperature` value from the message p
 
 To test your new rule, you'll use the MQTT client to publish and subscribe to the MQTT messages used by this rule.
 
-Open the [MQTT client in the AWS IoT console](https://console.aws.amazon.com//iot/home#/test) in a new window. This will let you edit the rule without losing the configuration of your MQTT client. If you leave the MQTT client to go to another page in the console, it won't retain any subscriptions or message logs.
+Open the [MQTT client in the AWS IoT console](https://console.aws.amazon.com/iot/home#/test) in a new window. This will let you edit the rule without losing the configuration of your MQTT client. If you leave the MQTT client to go to another page in the console, it won't retain any subscriptions or message logs.
 
 **To use the MQTT client to test your rule**
 
-1. In the [MQTT client in the AWS IoT console](https://console.aws.amazon.com//iot/home#/test), subscribe to the input topics, in this case, `device/+/data`.
+1. In the [MQTT client in the AWS IoT console](https://console.aws.amazon.com/iot/home#/test), subscribe to the input topics, in this case, `device/+/data`.
 
    1. In the MQTT client, under **Subscriptions**, choose **Subscribe to a topic**.
 
@@ -254,7 +254,7 @@ Open the [MQTT client in the AWS IoT console](https://console.aws.amazon.com//io
       {"device_id":"32","reported_temperature":38,"max_temperature":30}
       ```
 
-      Notice that the `device_id` value is a quoted string and the `temperature` value is numeric. This is because the [`topic()`](https://docs.aws.amazon.com//iot/latest/developerguide/iot-sql-functions.html#iot-function-topic) function extracted the string from the input message's topic name while the `temperature` value uses the numeric value from the input message's payload.
+      Notice that the `device_id` value is a quoted string and the `temperature` value is numeric. This is because the [`topic()`](https://docs.aws.amazon.com/iot/latest/developerguide/iot-sql-functions.html#iot-function-topic) function extracted the string from the input message's topic name while the `temperature` value uses the numeric value from the input message's payload.
 
       If you want to make the `device_id` value a numeric value, replace `topic(2)` in the rule query statement with:
 

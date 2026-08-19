@@ -48,8 +48,6 @@ The following tables list *only supported* platform branches. They do not list p
 ### Docker
 <a name="2025-11-09-al-docker-ecs-runc.platforms.docker"></a>
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  ECS Agent  |  Docker  |  Docker Compose  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Docker AL2023 version 4.7.5** <br /> * 64bit Amazon Linux 2023 v4.7.5 running Docker *  | 2023.9.20251105 |  | 25.0.13 | 2.40.0 | nginx 1.28.0 |

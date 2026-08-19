@@ -294,8 +294,6 @@ Priority dialing order (in Customer Profile):
 
 ![Mixed disposition between Unanswered, Busy- Retry action: Call again. Max dial attempts per number: 2.](http://docs.aws.amazon.com/connect/latest/adminguide/images/campaign-set-up-and-cycling-through-recipient-contant-types-example-D.png)
 
-****
-
 | Attempt | Phone Number | Disposition | Action Taken | Total Attempts |
 | --- | --- | --- | --- | --- |
 | 1 | Mobile | Unanswered | Wait 30 mins, call again | 1 |

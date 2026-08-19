@@ -7,7 +7,7 @@ Amazon CodeCatalyst is no longer open to new customers. Existing customers can c
 # Troubleshooting problems with workflows
 <a name="troubleshooting-workflows"></a>
 
-Consult the following sections to troubleshoot problems related to workflows in Amazon CodeCatalyst. For more information about workflows, see [Build, test, and deploy with workflowsBuild, test, and deploy with workflows](workflow.md).
+Consult the following sections to troubleshoot problems related to workflows in Amazon CodeCatalyst. For more information about workflows, see [Build, test, and deploy with workflows](workflow.md).
 
 **Topics**
 + [How do I fix "Workflow is inactive" messages?](#troubleshooting-workflows-inactive)

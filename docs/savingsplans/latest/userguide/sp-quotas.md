@@ -10,8 +10,6 @@ The following table describes the current quotas and restrictions within Savings
 ## Savings Plans
 <a name="sp-quotas-details"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Maximum number of daily refresh requests for Savings Plans recommendations per consolidated billing family | 3 |

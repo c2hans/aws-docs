@@ -5,6 +5,8 @@ source_url: https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-up
 # Update the root user email address
 <a name="manage-acct-update-root-user-email"></a>
 
+These instructions are for how to update the root user email address if you signed up for AWS using Sign up for AWS (advanced) or if you activated advanced features for your account. To compare sign-up options, see [Compare sign-up options](sign-up-for-aws.md).
+
 There are various business reasons why you might need to update the root user email address of your AWS account. For example, security and administrative resilience. This topic walks you through the process of updating your root user email address for both standalone and member accounts.
 
 **Note**

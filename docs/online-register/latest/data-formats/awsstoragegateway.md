@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awss
 
 AWS Storage Gateway provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="storagegateway-DescribeAvailabilityMonitorTest"></a>[DescribeAvailabilityMonitorTest](https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_DescribeAvailabilityMonitorTest.html) | Get the information about the most recent high availability monitoring test that was performed on the gateway | Read |

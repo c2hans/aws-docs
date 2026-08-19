@@ -83,8 +83,6 @@ To connect an EC2 instance to the DB cluster, choose **Connect to an EC2 compute
 
 When you choose **Connect to an EC2 compute resource**, RDS sets the following options automatically. You can't change these settings unless you choose not to set up connectivity with an EC2 instance by choosing **Don't connect to an EC2 compute resource**.
 
-****
-
 | Console option | Automatic setting |
 | --- | --- |
 | **Network type** | RDS sets network type to **IPv4**. Currently, dual-stack mode isn't supported when you set up a connection between an EC2 instance and the DB cluster. |
@@ -375,7 +373,7 @@ The following table contains details about settings that you choose when you cre
 
 | Console setting | Setting description | CLI option and RDS API parameter |
 | --- | --- | --- |
-|  **Auto minor version upgrade**  | Choose **Enable auto minor version upgrade** if you want to enable your Aurora DB cluster to receive preferred minor version upgrades to the DB engine automatically when they become available.<br />The **Auto minor version upgrade** setting applies to both Aurora PostgreSQL and Aurora MySQL DB clusters.<br />For more information about engine updates for Aurora PostgreSQL, see [Database engine updates for Amazon Aurora PostgreSQL](AuroraPostgreSQL.Updates.md).<br />For more information about engine updates for Aurora MySQL, see [Database engine updates for Amazon Aurora MySQLLong-term support (LTS) and beta releases for Amazon Aurora MySQL](AuroraMySQL.Updates.md). |  Set this value for every DB instance in your Aurora cluster. If any DB instance in your cluster has this setting turned off, the cluster isn't automatically upgraded. <br />Using the AWS CLI, run [`create-db-instance`](https://docs.aws.amazon.com/cli/latest/reference/rds/create-db-instance.html) and set the `--auto-minor-version-upgrade\|--no-auto-minor-version-upgrade` option.<br />Using the RDS API, call [`CreateDBInstance`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBInstance.html) and set the `AutoMinorVersionUpgrade` parameter. |
+|  **Auto minor version upgrade**  | Choose **Enable auto minor version upgrade** if you want to enable your Aurora DB cluster to receive preferred minor version upgrades to the DB engine automatically when they become available.<br />The **Auto minor version upgrade** setting applies to both Aurora PostgreSQL and Aurora MySQL DB clusters.<br />For more information about engine updates for Aurora PostgreSQL, see [Database engine updates for Amazon Aurora PostgreSQL](AuroraPostgreSQL.Updates.md).<br />For more information about engine updates for Aurora MySQL, see [Database engine updates for Amazon Aurora MySQL](AuroraMySQL.Updates.md). |  Set this value for every DB instance in your Aurora cluster. If any DB instance in your cluster has this setting turned off, the cluster isn't automatically upgraded. <br />Using the AWS CLI, run [`create-db-instance`](https://docs.aws.amazon.com/cli/latest/reference/rds/create-db-instance.html) and set the `--auto-minor-version-upgrade\|--no-auto-minor-version-upgrade` option.<br />Using the RDS API, call [`CreateDBInstance`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBInstance.html) and set the `AutoMinorVersionUpgrade` parameter. |
 |  **AWS KMS key**  | Only available if **Encryption** is set to **Enable encryption**. Choose the AWS KMS key to use for encrypting this DB cluster. For more information, see [Encrypting Amazon Aurora resources](Overview.Encryption.md). | Using the AWS CLI, run [`create-db-cluster`](https://docs.aws.amazon.com/cli/latest/reference/rds/create-db-cluster.html) and set the `--kms-key-id` option.<br />Using the RDS API, call [`CreateDBCluster`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBCluster.html) and set the `KmsKeyId` parameter. |
 |  **Backtrack**  | Applies only to Aurora MySQL. Choose **Enable Backtrack** to enable backtracking or **Disable Backtrack** to disable backtracking. Using backtracking, you can rewind a DB cluster to a specific time, without creating a new DB cluster. It is disabled by default. If you enable backtracking, also specify the amount of time that you want to be able to backtrack your DB cluster (the target backtrack window). For more information, see [Backtracking an Aurora DB cluster](AuroraMySQL.Managing.Backtrack.md). | Using the AWS CLI, run [`create-db-cluster`](https://docs.aws.amazon.com/cli/latest/reference/rds/create-db-cluster.html) and set the `--backtrack-window` option.<br />Using the RDS API, call [`CreateDBCluster`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBCluster.html) and set the `BacktrackWindow` parameter. |
 | **Certificate authority** | The certificate authority (CA) for the server certificate used by the DB instances in the DB cluster.<br />For more information, see [Using SSL/TLS to encrypt a connection to a DB cluster](UsingWithRDS.SSL.md). | Using the AWS CLI, run [`create-db-instance`](https://docs.aws.amazon.com/cli/latest/reference/rds/create-db-instance.html) and set the `--ca-certificate-identifier` option.<br />Using the RDS API, call [`CreateDBInstance`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBInstance.html) and set the `CACertificateIdentifier` parameter. |
@@ -420,8 +418,6 @@ The following settings in the AWS CLI command [`create-db-cluster`](https://docs
 **Note**
 The AWS Management Console doesn't show these settings for Aurora DB clusters.
 
-****
-
 | AWS CLI setting | RDS API setting |
 | --- | --- |
 | `--allocated-storage` | `AllocatedStorage` |
@@ -443,8 +439,6 @@ The following settings in the AWS CLI command [`create-db-instance`](https://doc
 
 **Note**
 The AWS Management Console doesn't show these settings for Aurora DB instances.
-
-****
 
 | AWS CLI setting | RDS API setting |
 | --- | --- |

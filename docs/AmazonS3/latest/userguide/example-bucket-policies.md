@@ -251,7 +251,7 @@ The following permissions policy limits a user to only reading objects that have
 ### Restrict which object tag keys that users can add
 <a name="example-bucket-policies-tagging-2"></a>
 
-The following example policy grants a user permission to perform the `s3:PutObjectTagging` action, which allows a user to add tags to an existing object. The condition uses the `s3:RequestObjectTagKeys` condition key to specify the allowed tag keys, such as `Owner` or `CreationDate`. For more information, see [Creating a condition that tests multiple key values](https://docs.aws.amazon.com//IAM/latest/UserGuide/reference_policies_multi-value-conditions.html) in the *IAM User Guide*.
+The following example policy grants a user permission to perform the `s3:PutObjectTagging` action, which allows a user to add tags to an existing object. The condition uses the `s3:RequestObjectTagKeys` condition key to specify the allowed tag keys, such as `Owner` or `CreationDate`. For more information, see [Creating a condition that tests multiple key values](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_multi-value-conditions.html) in the *IAM User Guide*.
 
 The policy ensures that every tag key specified in the request is an authorized tag key. The `ForAnyValue` qualifier in the condition ensures that at least one of the specified keys must be present in the request.
 
@@ -363,12 +363,12 @@ The following example policy grants a user permission to perform the `s3:PutObje
 ## Managing object access by using global condition keys
 <a name="example-bucket-policies-global-condition-keys"></a>
 
-[Global condition keys](https://docs.aws.amazon.com//IAM/latest/UserGuide/reference_policies_condition-keys.html) are condition context keys with an `aws` prefix. AWS services can support global condition keys or service-specific keys that include the service prefix. You can use the `Condition` element of a JSON policy to compare the keys in a request with the key values that you specify in your policy.
+[Global condition keys](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html) are condition context keys with an `aws` prefix. AWS services can support global condition keys or service-specific keys that include the service prefix. You can use the `Condition` element of a JSON policy to compare the keys in a request with the key values that you specify in your policy.
 
 ### Restrict access to only Amazon S3 server access log deliveries
 <a name="example-bucket-policies-global-condition-keys-1"></a>
 
-In the following example bucket policy, the [aws:SourceArn](https://docs.aws.amazon.com//IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourcearn) global condition key is used to compare the [Amazon Resource Name (ARN)](https://docs.aws.amazon.com//IAM/latest/UserGuide/reference_identifiers.html#identifiers-arns) of the resource, making a service-to-service request with the ARN that is specified in the policy. The `aws:SourceArn` global condition key is used to prevent the Amazon S3 service from being used as a [confused deputy](https://docs.aws.amazon.com//IAM/latest/UserGuide/confused-deputy.html) during transactions between services. Only the Amazon S3 service is allowed to add objects to the Amazon S3 bucket.
+In the following example bucket policy, the [aws:SourceArn](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourcearn) global condition key is used to compare the [Amazon Resource Name (ARN)](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_identifiers.html#identifiers-arns) of the resource, making a service-to-service request with the ARN that is specified in the policy. The `aws:SourceArn` global condition key is used to prevent the Amazon S3 service from being used as a [confused deputy](https://docs.aws.amazon.com/IAM/latest/UserGuide/confused-deputy.html) during transactions between services. Only the Amazon S3 service is allowed to add objects to the Amazon S3 bucket.
 
 This example bucket policy grants `s3:PutObject` permissions to only the logging service principal (`logging.s3.amazonaws.com`).
 
@@ -487,7 +487,7 @@ For stronger protection, use a Deny statement with the `aws:PrincipalOrgID` cond
 ### Restrict access to only HTTPS requests
 <a name="example-bucket-policies-use-case-HTTP-HTTPS-1"></a>
 
-If you want to prevent potential attackers from manipulating network traffic, you can use HTTPS (TLS) to only allow encrypted connections while restricting HTTP requests from accessing your bucket. To determine whether the request is HTTP or HTTPS, use the [aws:SecureTransport](https://docs.aws.amazon.com//IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-securetransport) global condition key in your S3 bucket policy. The `aws:SecureTransport` condition key checks whether a request was sent by using HTTP.
+If you want to prevent potential attackers from manipulating network traffic, you can use HTTPS (TLS) to only allow encrypted connections while restricting HTTP requests from accessing your bucket. To determine whether the request is HTTP or HTTPS, use the [aws:SecureTransport](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-securetransport) global condition key in your S3 bucket policy. The `aws:SecureTransport` condition key checks whether a request was sent by using HTTP.
 
 If a request returns `true`, then the request was sent through HTTPS. If the request returns `false`, then the request was sent through HTTP. You can then allow or deny access to your bucket based on the desired request scheme.
 
@@ -542,7 +542,7 @@ The `aws:Referer` condition key is offered only to allow customers to protect th
 
 Suppose that you're trying to grant users access to a specific folder. If the IAM user and the S3 bucket belong to the same AWS account, then you can use an IAM policy to grant the user access to a specific bucket folder. With this approach, you don't need to update your bucket policy to grant access. You can add the IAM policy to an IAM role that multiple users can switch to.
 
-If the IAM identity and the S3 bucket belong to different AWS accounts, then you must grant cross-account access in both the IAM policy and the bucket policy. For more information about granting cross-account access, see [Bucket owner granting cross-account bucket permissions](https://docs.aws.amazon.com//AmazonS3/latest/userguide/example-walkthroughs-managing-access-example2.html).
+If the IAM identity and the S3 bucket belong to different AWS accounts, then you must grant cross-account access in both the IAM policy and the bucket policy. For more information about granting cross-account access, see [Bucket owner granting cross-account bucket permissions](https://docs.aws.amazon.com/AmazonS3/latest/userguide/example-walkthroughs-managing-access-example2.html).
 
 The following example bucket policy grants `{{JohnDoe}}` full console access to only his folder (`home/{{JohnDoe}}/`). By creating a `home` folder and granting the appropriate permissions to your users, you can have multiple users share a single bucket. This policy consists of three `Allow` statements:
 + `{{AllowRootAndHomeListingOfCompanyBucket}}`: Allows the user (`{{JohnDoe}}`) to list objects at the root level of the `{{{{amzn-s3-demo-bucket}}}}` bucket and in the `home` folder. This statement also allows the user to search on the prefix `home/` by using the console.
@@ -614,7 +614,7 @@ The following example bucket policy grants `{{JohnDoe}}` full console access to 
 ### Grant access to Application Load Balancer for enabling access logs
 <a name="example-bucket-policies-access-logs-1"></a>
 
-When you enable access logs for Application Load Balancer, you must specify the name of the S3 bucket where the load balancer will [store the logs](https://docs.aws.amazon.com//elasticloadbalancing/latest/application/enable-access-logging.html#access-log-create-bucket). The bucket must have an [attached policy](https://docs.aws.amazon.com//elasticloadbalancing/latest/application/enable-access-logging.html#attach-bucket-policy) that grants Elastic Load Balancing permission to write to the bucket.
+When you enable access logs for Application Load Balancer, you must specify the name of the S3 bucket where the load balancer will [store the logs](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/enable-access-logging.html#access-log-create-bucket). The bucket must have an [attached policy](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/enable-access-logging.html#attach-bucket-policy) that grants Elastic Load Balancing permission to write to the bucket.
 
 In the following example, the bucket policy grants Elastic Load Balancing (ELB) permission to write the access logs to the bucket:
 
@@ -642,7 +642,7 @@ In the following example, the bucket policy grants Elastic Load Balancing (ELB) 
 ------
 
 **Note**
-Make sure to replace `{{elb-account-id}}` with the AWS account ID for Elastic Load Balancing for your AWS Region. For the list of Elastic Load Balancing Regions, see [Attach a policy to your Amazon S3 bucket](https://docs.aws.amazon.com//elasticloadbalancing/latest/classic/enable-access-logs.html#attach-bucket-policy) in the *Elastic Load Balancing User Guide*.
+Make sure to replace `{{elb-account-id}}` with the AWS account ID for Elastic Load Balancing for your AWS Region. For the list of Elastic Load Balancing Regions, see [Attach a policy to your Amazon S3 bucket](https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/enable-access-logs.html#attach-bucket-policy) in the *Elastic Load Balancing User Guide*.
 
 If your AWS Region does not appear in the supported Elastic Load Balancing Regions list, use the following policy, which grants permissions to the specified log delivery service.
 
@@ -669,7 +669,7 @@ If your AWS Region does not appear in the supported Elastic Load Balancing Regio
 
 ------
 
-Then, make sure to configure your [Elastic Load Balancing access logs](https://docs.aws.amazon.com//elasticloadbalancing/latest/application/enable-access-logging.html#enable-access-logs) by enabling them. You can [verify your bucket permissions](https://docs.aws.amazon.com//elasticloadbalancing/latest/application/enable-access-logging.html#verify-bucket-permissions) by creating a test file.
+Then, make sure to configure your [Elastic Load Balancing access logs](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/enable-access-logging.html#enable-access-logs) by enabling them. You can [verify your bucket permissions](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/enable-access-logging.html#verify-bucket-permissions) by creating a test file.
 
 ## Managing access to an Amazon CloudFront OAI
 <a name="example-bucket-policies-cloudfront"></a>
@@ -812,7 +812,7 @@ The following example bucket policy grants Amazon S3 permission to write objects
 
 To restrict a user from configuring an S3 Inventory report, remove the `s3:PutInventoryConfiguration` permission from the user.
 
-Some object metadata fields in S3 Inventory report configurations are optional, meaning that they're available by default but they can be restricted when you grant a user the `s3:PutInventoryConfiguration` permission. You can control whether users can include these optional metadata fields in their reports by using the `s3:InventoryAccessibleOptionalFields` condition key. For a list of the optional metadata fields available in S3 Inventory, see [OptionalFields](https://docs.aws.amazon.com//AmazonS3/latest/API/API_PutBucketInventoryConfiguration.html#API_PutBucketInventoryConfiguration_RequestBody) in the *Amazon Simple Storage Service API Reference*.
+Some object metadata fields in S3 Inventory report configurations are optional, meaning that they're available by default but they can be restricted when you grant a user the `s3:PutInventoryConfiguration` permission. You can control whether users can include these optional metadata fields in their reports by using the `s3:InventoryAccessibleOptionalFields` condition key. For a list of the optional metadata fields available in S3 Inventory, see [OptionalFields](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketInventoryConfiguration.html#API_PutBucketInventoryConfiguration_RequestBody) in the *Amazon Simple Storage Service API Reference*.
 
 **Note**
 For directory buckets, use the `s3express:InventoryAccessibleOptionalFields` condition key instead of `s3:InventoryAccessibleOptionalFields`. For more information about configuring S3 Inventory for directory buckets, see [Configuring Amazon S3 Inventory](configure-inventory.md).

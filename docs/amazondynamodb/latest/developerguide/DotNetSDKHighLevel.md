@@ -89,8 +89,6 @@ The object persistence model also supports the .NET collection types. `DynamoDBC
 
 The following table summarizes the mapping of the preceding .NET types to the DynamoDB types.
 
-****
-
 | .NET primitive type | DynamoDB type |
 | --- | --- |
 | All number types | `N` (number type) |

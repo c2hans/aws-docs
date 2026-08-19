@@ -50,7 +50,7 @@ s3Request = CreateAmazonS3Client(tempCredentials);
 
 For an example written in Python (using the [AWS SDK for Python (Boto)](https://aws.amazon.com/sdk-for-python/)), see [Switch to an IAM role (AWS API)](id_roles_use_switch-role-api.md). This example shows how to call `AssumeRole` to get temporary security credentials and then use those credentials to make a call to Amazon S3.
 
-For details about how to call `AssumeRole`, `GetFederationToken`, and other API operations, see the [AWS Security Token Service API Reference](https://docs.aws.amazon.com/STS/latest/APIReference/). For information on getting the temporary security credentials and session token from the result, see the documentation for the SDK that you're working with. You can find the documentation for all the AWS SDKs on the main [AWS documentation page](https://docs.aws.amazon.com/http://aws.amazon.com/documentation), in the **SDKs and Toolkits** section.
+For details about how to call `AssumeRole`, `GetFederationToken`, and other API operations, see the [AWS Security Token Service API Reference](https://docs.aws.amazon.com/STS/latest/APIReference/). For information on getting the temporary security credentials and session token from the result, see the documentation for the SDK that you're working with. You can find the documentation for all the AWS SDKs on the main [AWS documentation page](http://aws.amazon.com/documentation), in the **SDKs and Toolkits** section.
 
 You must make sure that you get a new set of credentials before the old ones expire. In some SDKs, you can use a provider that manages the process of refreshing credentials for you; check the documentation for the SDK you're using.
 

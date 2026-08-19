@@ -227,7 +227,7 @@ This section covers AWS Support plan modifications that affect security incident
 
 This section provides an overview of AWS root account capabilities and references to detailed guidance on avoiding root account usage.
 
-The root account controls specific functionality in AWS. Refer to the [Top Level Guidance](https://docs.aws.amazon.com//admin-guidance/top-level-admin-guidance.html) for detailed information on how to avoid using the root account in your AWS environment.
+The root account controls specific functionality in AWS. Refer to the [Top Level Guidance](https://docs.aws.amazon.com/admin-guidance/top-level-admin-guidance.html) for detailed information on how to avoid using the root account in your AWS environment.
 
 **Important**
 AWS strongly recommends that you don’t use the root user for your everyday tasks and that you follow the root user best practices for your AWS account. Safeguard your root user credentials and use them to perform the tasks that only the root user can perform. For the complete list of tasks that require you to sign in as the root user, see Tasks that require root user credentials.

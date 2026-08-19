@@ -35,6 +35,6 @@ You can change several SMS-related settings. Most of these settings apply to you
 **Note**
 Alphabetic sender IDs are only supported in certain countries. If you don't send messages to countries where sender ID is supported by the mobile carriers in that country, you don't need to specify anything in this field. Sender IDs aren't supported in common messaging destinations such as the United States, Canada, and Brazil.
 Additionally, some countries require sender IDs to be pre-registered with government agencies or industry organizations.
-For a list of countries that support alphabetic sender IDs, see [Supported countries and regions (SMS channel)](https://docs.aws.amazon.com//sms-voice/latest/userguide/phone-numbers-sms-by-country.html) in the *AWS End User Messaging SMS User Guide*.
+For a list of countries that support alphabetic sender IDs, see [Supported countries and regions (SMS channel)](https://docs.aws.amazon.com/sms-voice/latest/userguide/phone-numbers-sms-by-country.html) in the *AWS End User Messaging SMS User Guide*.
 
 1. When you finish, choose **Save changes**.

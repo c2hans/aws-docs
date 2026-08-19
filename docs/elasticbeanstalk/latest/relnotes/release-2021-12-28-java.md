@@ -30,8 +30,6 @@ Be aware that at the time these release notes are published, the new platform ve
 ### Java SE
 <a name="release-2021-12-28-java.platforms.javase"></a>
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  Tools  |  AWS X-Ray  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Corretto 11 version 3.2.10** <br /> * 64bit Amazon Linux 2 v3.2.10 running Corretto 11 *  | 2.0.20211201 | Corretto 11.0.13.8.2 | Ant 1.10.7, Gradle 5.6.2, Maven 3.6.2 | 3.2.0 | nginx 1.20.0 |
@@ -39,8 +37,6 @@ Be aware that at the time these release notes are published, the new platform ve
 
 ### Tomcat
 <a name="release-2021-12-28-java.platforms.java"></a>
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  AWS X-Ray  |  Application Server  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- |

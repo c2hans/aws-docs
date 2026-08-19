@@ -63,8 +63,6 @@ The following sections list the requirements for training and validation dataset
 ### Amazon Titan Text Premier
 <a name="quotas-cm-titan-premier"></a>
 
-****
-
 | Description | Maximum (Fine-tuning) |
 | --- | --- |
 | Sum of input and output tokens when batch size is 1 | 4,096 |
@@ -75,8 +73,6 @@ The following sections list the requirements for training and validation dataset
 
 ### Amazon Titan Text G1 - Express
 <a name="quotas-cm-titan-text"></a>
-
-****
 
 | Description | Maximum (Fine-tuning) |
 | --- | --- |
@@ -89,8 +85,6 @@ The following sections list the requirements for training and validation dataset
 ### Amazon Titan Text G1 - Lite
 <a name="quotas-cm-titan-text-lite"></a>
 
-****
-
 | Description | Maximum (Fine-tuning) |
 | --- | --- |
 | Sum of input and output tokens when batch size is 1 or 2 | 4,096 |
@@ -101,8 +95,6 @@ The following sections list the requirements for training and validation dataset
 
 ### Amazon Titan Image Generator G1 V1
 <a name="quotas-cm-titan-image"></a>
-
-****
 
 | Description | Minimum (Fine-tuning) | Maximum (Fine-tuning) |
 | --- | --- | --- |
@@ -117,8 +109,6 @@ The following sections list the requirements for training and validation dataset
 ### Amazon Titan Multimodal Embeddings G1
 <a name="quotas-cm-titan-mm-embed"></a>
 
-****
-
 | Description | Minimum (Fine-tuning) | Maximum (Fine-tuning) |
 | --- | --- | --- |
 | Text prompt length in training sample, in characters | 0 | 2,560 |
@@ -131,8 +121,6 @@ The following sections list the requirements for training and validation dataset
 
 ### Meta Llama 3.1
 <a name="quotas-cm-meta-llama-3-1"></a>
-
-****
 
 | Description | Minimum (Fine-tuning) | Maximum (Fine-tuning) |
 | --- | --- | --- |
@@ -147,8 +135,6 @@ The following sections list the requirements for training and validation dataset
 
 Supported image formats for Meta Llama-3.2 11B Vision Instruct and Meta Llama-3.2 90B Vision Instruct include: `gif`, `jpeg`, `png`, and `webp`. For estimating the image-to-token conversion during fine-tuning of these models, you can use this formula as an approximation: `Tokens = min(2, max(Height // 560, 1)) * min(2, max(Width // 560, 1)) * 1601`. Images are converted into approximately 1,601 to 6,404 tokens based on their size.
 
-****
-
 | Description | Minimum (Fine-tuning) | Maximum (Fine-tuning) |
 | --- | --- | --- |
 | Sum of Input and Output tokens | 0 | 16,000 (10000 for Meta Llama 3.2 90B) |
@@ -160,8 +146,6 @@ Supported image formats for Meta Llama-3.2 11B Vision Instruct and Meta Llama-3.
 ### Meta Llama 3.3
 <a name="quotas-cm-meta-llama-3-3"></a>
 
-****
-
 | Description | Minimum (Fine-tuning) | Maximum (Fine-tuning) |
 | --- | --- | --- |
 | Sum of Input and output tokens | 0 | 16000 |
@@ -169,8 +153,6 @@ Supported image formats for Meta Llama-3.2 11B Vision Instruct and Meta Llama-3.
 
 ### CohereCommand
 <a name="quotas-cm-cohere-command"></a>
-
-****
 
 | Description | Maximum (Fine-tuning) |
 | --- | --- |
@@ -182,8 +164,6 @@ Supported image formats for Meta Llama-3.2 11B Vision Instruct and Meta Llama-3.
 
 ### Anthropic Claude 3 Haiku
 <a name="anthropic-claude-3-haiku"></a>
-
-****
 
 | Description | Maximum (Fine-tuning) |
 | --- | --- |
@@ -220,7 +200,7 @@ Use approximately 6 characters per token to estimate the number of tokens for pl
 ------
 #### [ Converse API format (Single turn and Multi turn) ]
 
-To use the Converse API, you call the `Converse` or `ConverseStream` operations to send messages to a model. To call `Converse`, you require permission for the `bedrock:InvokeModel` operation. To call `ConverseStream`, you require permission for the `bedrock:InvokeModelWithResponseStream` operation. For more information, see [Using the Converse APIUsing the Converse API (moved)](conversation-inference-call.md). For more information about Converse API operations, see [Inference using Converse API](conversation-inference.md)
+To use the Converse API, you call the `Converse` or `ConverseStream` operations to send messages to a model. To call `Converse`, you require permission for the `bedrock:InvokeModel` operation. To call `ConverseStream`, you require permission for the `bedrock:InvokeModelWithResponseStream` operation. For more information, see [Using the Converse API](conversation-inference-call.md). For more information about Converse API operations, see [Inference using Converse API](conversation-inference.md)
 
 Example format
 

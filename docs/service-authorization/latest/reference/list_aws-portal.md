@@ -29,8 +29,6 @@ AWS Billing Console has no API operations that can be used in the `Actions` elem
 
 The following actions are defined by AWS Billing Console but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 | Actions | Description | Resource types (\*required) | Condition keys | Access level |
 | --- | --- | --- | --- | --- |
 |   [GetConsoleActionSetEnforced](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html#user-permissions)  | Grants permission to view whether existing or fine-grained IAM actions are being used to control authorization to Billing, Cost Management, and Account consoles |  |   | Read |

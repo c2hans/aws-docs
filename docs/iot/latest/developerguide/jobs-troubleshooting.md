@@ -13,7 +13,7 @@ This is the troubleshooting section for AWS IoT Jobs.
 **How do I locate the AWS IoT Jobs control plane endpoint?**
 AWS IoT Jobs supports controls plane API operations using the HTTPS protocol. Verify you have connected to the correct control plane endpoint using the HTTPS protocol.
 For a list of AWS region-specific endpoints, see [AWS IoT Core - control plane endpoints](https://docs.aws.amazon.com/general/latest/gr/iot-core.html#iot-core-control-plane-endpoints).
-For a list of FIPS compliant **AWS IoT Jobs control plane** endpoints, see [FIPS Endpoints by Service](https://aws.amazon.com//compliance/fips/#FIPS_Endpoints_by_Service)
+For a list of FIPS compliant **AWS IoT Jobs control plane** endpoints, see [FIPS Endpoints by Service](https://aws.amazon.com/compliance/fips/#FIPS_Endpoints_by_Service)
 AWS IoT Jobs and AWS IoT Core share the same AWS Region-specific endpoints.
 
 **How do I locate the AWS IoT Jobs data plane endpoint?**
@@ -30,7 +30,7 @@ AWS IoT Jobs supports data plane API operations using the HTTPS and MQTT protoco
     ```
     aws iot describe-endpoint --endpoint-type iot:Data-ATS
     ```
-For a list of FIPS compliant **AWS IoT Jobs data plane** endpoints, see [FIPS Endpoints by Service](https://aws.amazon.com//compliance/fips/#FIPS_Endpoints_by_Service)
+For a list of FIPS compliant **AWS IoT Jobs data plane** endpoints, see [FIPS Endpoints by Service](https://aws.amazon.com/compliance/fips/#FIPS_Endpoints_by_Service)
 
 ## How do I monitor AWS IoT Jobs activity and provide metrics?
 <a name="jobs-logs-troubleshooting"></a>

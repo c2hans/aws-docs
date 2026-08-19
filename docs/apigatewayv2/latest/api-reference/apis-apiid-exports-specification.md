@@ -33,7 +33,7 @@ Exports a definition of an API in a particular output format and specification.
 
 | Name | Type | Required | Description |
 | --- |--- |--- |--- |
-| includeExtensions | String | False | Specifies whether to include [ API Gateway extensions](https://docs.aws.amazon.com//apigateway/latest/developerguide/api-gateway-swagger-extensions.html) in the exported API definition. API Gateway extensions are included by default.  |
+| includeExtensions | String | False | Specifies whether to include [ API Gateway extensions](https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-swagger-extensions.html) in the exported API definition. API Gateway extensions are included by default.  |
 | stageName | String | False | The name of the API stage to export. If you don't specify this property, a representation of the latest API configuration is exported. |
 | exportVersion | String | False | The version of the API Gateway export algorithm. API Gateway uses the latest version by default. Currently, the only supported version is `1.0`. |
 | outputType | String | True | The output type of the exported definition file. Valid values are `JSON` and `YAML`. |

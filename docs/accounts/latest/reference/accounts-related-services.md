@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/accounts/latest/reference/accounts-relat
 # Related AWS services
 <a name="accounts-related-services"></a>
 
-AWS accounts work seamlessly with the following services:
+Depending on how you sign up for AWS, you either have access to AWS accounts or projects. Projects contain AWS accounts and the settings for sharing with other collaborators. For more information, see [Compare sign-up options](sign-up-for-aws.md). In this section, we explain how AWS accounts that you create using Sign up for AWS (advanced) work seamlessly with the following services:
 + **IAM**
 
   Your AWS account is closely integrated with AWS Identity and Access Management (IAM). You can use IAM with your account to ensure that other people who work in your account have as much access as they need to get their jobs done. You also use IAM to control access to all of your AWS resources, not only account specific information. It's important that you familiarize yourself with the major concepts and best practices of IAM before you get too far along with setting up the structure of your AWS account. For more information, see [Security best practices in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html) in the *IAM User Guide*.

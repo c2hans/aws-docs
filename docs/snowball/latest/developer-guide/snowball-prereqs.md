@@ -31,7 +31,7 @@ In the Asia Pacific (Mumbai) AWS Region service is provided by Amazon on Interne
 ## Sign up for an AWS account
 <a name="sign-up-for-aws"></a>
 
-To get started with AWS, you need an AWS account. For information about creating an AWS account, see [Getting started with an AWS account](https://docs.aws.amazon.com//accounts/latest/reference/getting-started.html) in the *AWS Account Management Reference Guide*.
+To get started with AWS, you need an AWS account. For information about creating an AWS account, see [Getting started with an AWS account](https://docs.aws.amazon.com/accounts/latest/reference/getting-started.html) in the *AWS Account Management Reference Guide*.
 
 ## About your environment
 <a name="sbe-before-questions"></a>
@@ -300,6 +300,6 @@ Ubuntu 16.04 LTS - Xenial (HVM) images are no longer supported in the AWS Market
 
 You can get these images from [AWS Marketplace](https://aws.amazon.com/marketplace).
 
-If you're using SSH to connect to the instances running on a Snowball Edge, you can use your own key pair or you can create one on the Snowball Edge. To use AWS OpsHub to create a key pair on the device, see [Working with key pairs for EC2-compatible instances in AWS OpsHub](working-with-key-pair.md). To use the AWS CLI to create a key pair on the device, see `create-key-pair` in [List of supported EC2-compatible AWS CLI commands on a Snowball Edge](using-ec2-endpoint.md#list-cli-commands-ec2-edge). For more information on key pairs and Amazon Linux 2, see [Amazon EC2 key pairs and Linux instances](https://docs.aws.amazon.com//AWSEC2/latest/UserGuide/ec2-key-pairs.html) in the Amazon EC2 User Guide.
+If you're using SSH to connect to the instances running on a Snowball Edge, you can use your own key pair or you can create one on the Snowball Edge. To use AWS OpsHub to create a key pair on the device, see [Working with key pairs for EC2-compatible instances in AWS OpsHub](working-with-key-pair.md). To use the AWS CLI to create a key pair on the device, see `create-key-pair` in [List of supported EC2-compatible AWS CLI commands on a Snowball Edge](using-ec2-endpoint.md#list-cli-commands-ec2-edge). For more information on key pairs and Amazon Linux 2, see [Amazon EC2 key pairs and Linux instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html) in the Amazon EC2 User Guide.
 
 For information specific to using compute instances on a device, see [Using Amazon EC2-compatible compute instances on Snowball Edge](using-ec2.md).

@@ -163,7 +163,7 @@ If you need to change the master user password after the DB cluster is available
 ## (Optional) Create VPC, EC2 instance, and Aurora PostgreSQL cluster using CloudFormation
 <a name="CHAP_GettingStartedAurora.CFN.PostgreSQL"></a>
 
-Instead of using the console to create your VPC, EC2 instance, and Aurora PostgreSQL DB cluster, you can use CloudFormation to provision AWS resources by treating infrastructure as code. To help you organize your AWS resources into smaller and more manageable units, you can use the CloudFormation nested stack functionality. For more information, see [ Creating a stack on the CloudFormation console](https://docs.aws.amazon.com//AWSCloudFormation/latest/UserGuide/cfn-console-create-stack.html) and [Working with nested stacks](https://docs.aws.amazon.com//AWSCloudFormation/latest/UserGuide/using-cfn-nested-stacks.html).
+Instead of using the console to create your VPC, EC2 instance, and Aurora PostgreSQL DB cluster, you can use CloudFormation to provision AWS resources by treating infrastructure as code. To help you organize your AWS resources into smaller and more manageable units, you can use the CloudFormation nested stack functionality. For more information, see [ Creating a stack on the CloudFormation console](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-console-create-stack.html) and [Working with nested stacks](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-nested-stacks.html).
 
 **Important**
 CloudFormation is free, but the resources that CloudFormation creates are live. You incur the standard usage fees for these resources until you terminate them. For more information, see [Amazon Aurora Pricing](https://aws.amazon.com/rds/aurora/pricing/).
@@ -185,7 +185,7 @@ In the Github page, click the *Download raw file* button to save the template YA
 <a name="CHAP_GettingStartedAurora.CFN.PostgreSQL.Step2"></a>
 
 **Note**
-Before starting this process, make sure you have a Key pair for an EC2 instance in your AWS account. For more information, see [Amazon EC2 key pairs and Linux instances](https://docs.aws.amazon.com//AWSEC2/latest/UserGuide/ec2-key-pairs.html).
+Before starting this process, make sure you have a Key pair for an EC2 instance in your AWS account. For more information, see [Amazon EC2 key pairs and Linux instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html).
 
 When you use the CloudFormation template, you must select the correct parameters to make sure your resources are created properly. Follow the steps below:
 

@@ -25,7 +25,7 @@ You have the following options to work around this issue:
 + If you need to clean up resources in your VPC, make sure that you don't delete network interfaces related to a DataSync task that you're still using.
 
   To see the network interfaces allocated to your task, do one of the following:
-  + Use the [DescribeTask](https://docs.aws.amazon.com//datasync/latest/userguide/API_DescribeTask.html) operation. You can view the network interfaces in the `SourceNetworkInterfaceArns` and `DestinationNetworkInterfaceArns` response elements.
+  + Use the [DescribeTask](https://docs.aws.amazon.com/datasync/latest/userguide/API_DescribeTask.html) operation. You can view the network interfaces in the `SourceNetworkInterfaceArns` and `DestinationNetworkInterfaceArns` response elements.
   + In the Amazon EC2 console, search for your task ID (such as `task-f012345678abcdef0`) to find its network interfaces.
 + Consider not running your tasks automatically. This could include disabling task queueing or scheduling (through DataSync or custom automation).
 

@@ -14,8 +14,6 @@ Update read only access for one or more users for one or more stacks. The maximu
 ## Change Type Details
 <a name="ct-3kh1wiizlne1i-MASu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-3kh1wiizlne1i |

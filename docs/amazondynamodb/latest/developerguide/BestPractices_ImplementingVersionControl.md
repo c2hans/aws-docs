@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Bes
 # Best practices for handling concurrent updates in DynamoDB
 <a name="BestPractices_ImplementingVersionControl"></a>
 
-In distributed systems, multiple processes or users may attempt to modify the same data at the same time. Without concurrency control, these concurrent writes can lead to lost updates, inconsistent data, or race conditions. DynamoDB provides several mechanisms to help you manage concurrent access and maintain data integrity.
+In distributed systems, multiple processes or users might attempt to modify the same data at the same time. Without concurrency control, these concurrent writes can lead to lost updates, inconsistent data, or race conditions. DynamoDB provides several mechanisms to help you manage concurrent access and maintain data integrity.
 
 **Note**
 Individual write operations such as `UpdateItem` are atomic and always operate on the most recent version of the item, regardless of concurrency. Locking strategies are needed when your application must read an item and then write it back based on the read value (a read-modify-write cycle), because another process could modify the item between the read and the write.
@@ -43,4 +43,4 @@ Use the following guidelines to choose the right approach for your workload:
 + You need automatic lock expiry to handle process failures.
 
 **Note**
-If you use [DynamoDB global tables](GlobalTables.md), be aware that global tables use a "last writer wins" reconciliation strategy for concurrent updates. Optimistic locking with version numbers does not work as expected across Regions because a write in one Region may overwrite a concurrent write in another Region without a version check. Design your application to handle conflicts at the application level when using global tables.
+If you use [DynamoDB global tables](GlobalTables.md), be aware that global tables use a "last writer wins" reconciliation strategy for concurrent updates. Optimistic locking with version numbers does not work as expected across Regions because a write in one Region might overwrite a concurrent write in another Region without a version check. Design your application to handle conflicts at the application level when using global tables.

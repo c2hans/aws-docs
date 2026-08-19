@@ -21,4 +21,4 @@ AWS End User Messaging SMS only supports local India routes through AWS regions 
 **Cost comparison**
 
 **Note**
-The price for sending messages using international (ILDO) routes is significantly higher than the price for sending messages through local routes. For current pricing for both route types, see the [AWS End User Messaging Pricing](https://aws.amazon.com//end-user-messaging/pricing/) page.
+The price for sending messages using international (ILDO) routes is significantly higher than the price for sending messages through local routes. For current pricing for both route types, see the [AWS End User Messaging Pricing](https://aws.amazon.com/end-user-messaging/pricing/) page.

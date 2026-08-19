@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/opencypher-quer
 <a name="opencypher-query-hints"></a>
 
 **Important**
- openCypher query hint is only available from engine release [1.3.2.0](https://docs.aws.amazon.com//neptune/latest/userguide/engine-releases-1.3.2.0.html) and later.
+ openCypher query hint is only available from engine release [1.3.2.0](https://docs.aws.amazon.com/neptune/latest/userguide/engine-releases-1.3.2.0.html) and later.
 
  In Amazon Neptune, you can use the `USING` clause to specify query hints for openCypher queries. These hints allow you to control optimization and evaluation strategies.
 

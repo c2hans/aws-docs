@@ -22,7 +22,7 @@ Before you begin, make sure you have completed the [ prerequisites](ec2-serial-c
 
 GNU GRUB (short for GNU GRand Unified Bootloader, commonly referred to as GRUB) is the default boot loader for most Linux operating systems. From the GRUB menu, you can select which kernel to boot into, or modify menu entries to change how the kernel will boot. This can be useful when troubleshooting a failing instance.
 
-The GRUB menu is displayed during the boot process. The menu is not accessible via normal SSH, but you can access it using the EC2 Serial Console.
+The GRUB menu is displayed during the boot process. The menu is not accessible through normal SSH, but you can access it using the EC2 Serial Console.
 
 You can boot into single user mode or emergency mode. Single user mode will boot the kernel at a lower runlevel. For example, it might mount the filesystem but not activate the network, giving you the opportunity to perform the maintenance necessary to fix the instance. Emergency mode is similar to single user mode except that the kernel runs at the lowest runlevel possible.
 

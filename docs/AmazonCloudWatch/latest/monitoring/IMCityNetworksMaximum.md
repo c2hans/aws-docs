@@ -11,7 +11,7 @@ Internet Monitor can monitor traffic for some or all of the locations where clie
 
 You choose a [percentage of application traffic](IMTrafficPercentage.md) to monitor when you create your monitor. The default percentage is 100%. You can update the percentage at any time, by editing the monitor.
 
-The maximum limit that you set for the number of city-networks helps to make sure that your bill is predictable. For more information, see [Amazon CloudWatch Pricing](https://aws.amazon.com//cloudwatch/pricing/). You can also learn how different values for the number of city-networks actually monitored can affect your bill by using the CloudWatch price calculator. To explore options, on the [Pricing calculator for CloudWatch page](https://calculator.aws/#/addService/CloudWatch), scroll down to Internet Monitor.
+The maximum limit that you set for the number of city-networks helps to make sure that your bill is predictable. For more information, see [Amazon CloudWatch Pricing](https://aws.amazon.com/cloudwatch/pricing/). You can also learn how different values for the number of city-networks actually monitored can affect your bill by using the CloudWatch price calculator. To explore options, on the [Pricing calculator for CloudWatch page](https://calculator.aws/#/addService/CloudWatch), scroll down to Internet Monitor.
 
 To update your monitor and change the maximum city-networks limit, see [Edit a monitor in Internet Monitor](CloudWatch-IM-get-started.edit-monitor.md).
 
@@ -22,7 +22,7 @@ Setting a maximum limit for the number of city-networks monitored can help preve
 
 You only pay for the number of city-networks that are actually monitored. The city-network maximum limit that you choose lets you set a cap on the total that can be included when Internet Monitor monitors traffic with your monitor. You can change the maximum limit at any time by editing your monitor.
 
-To explore options, on the [Pricing calculator for CloudWatch](https://calculator.aws/#/addService/CloudWatch) page, scroll down to Internet Monitor. For more information on Internet Monitor pricing, see the Internet Monitor section on the [Amazon CloudWatch Pricing](https://aws.amazon.com//cloudwatch/pricing/) page.
+To explore options, on the [Pricing calculator for CloudWatch](https://calculator.aws/#/addService/CloudWatch) page, scroll down to Internet Monitor. For more information on Internet Monitor pricing, see the Internet Monitor section on the [Amazon CloudWatch Pricing](https://aws.amazon.com/cloudwatch/pricing/) page.
 
 ## How to choose a city-networks maximum limit
 <a name="IMCityNetworksMaximum.how_do_choose"></a>

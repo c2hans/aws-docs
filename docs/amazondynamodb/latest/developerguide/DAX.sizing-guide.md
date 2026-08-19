@@ -49,7 +49,7 @@ If you also already have a DAX cluster, remember that the DynamoDB `ConsumedRead
 
 If you don't already have a DynamoDB table, see the documentation about [read and write capacity units](provisioned-capacity-mode.md#read-write-capacity-units) to estimate your traffic based on your application's estimated request rate, items accessed per request, and item size.
 
-When making traffic estimates, plan for future growth and for expected and unexpected peaks to ensure that your cluster has enough headroom for traffic increases.
+When making traffic estimates, plan for future growth and for expected and unexpected peaks to make sure that your cluster has enough headroom for traffic increases.
 
 ## Load testing
 <a name="DAX.sizing-guide.load-testing"></a>
@@ -69,10 +69,10 @@ Ideally, the traffic profile that you drive during the load test should be as si
 **Note**
 Be careful when load testing T2 node types (`dax.t2.small` and `dax.t2.medium`). T2 node types provide [burstable CPU performance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/burstable-performance-instances.html) that varies over time depending on the node's CPU credit balance. A DAX cluster running on T2 nodes might appear to be operating normally, but if any node is bursting above the [baseline performance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/burstable-credits-baseline-concepts.html) of its instance, the node is spending its accrued CPU credit balance. When the credit balance runs low, [performance is gradually lowered](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/burstable-performance-instances-standard-mode.html) to the baseline performance level.
 
-[Monitor your DAX cluster](DAX.Monitoring.md) during the load test to determine whether the node type that you're using for the load test is the right node type for you. In addition, during a load test, you should monitor your request rate and cache hit rate to ensure that your test infrastructure is actually driving the amount of traffic you intend.
+[Monitor your DAX cluster](DAX.Monitoring.md) during the load test to determine whether the node type that you're using for the load test is the right node type for you. In addition, during a load test, you should monitor your request rate and cache hit rate to make sure that your test infrastructure is actually driving the amount of traffic you intend.
 
- You should pay attention to network bytes consumption of your selected cluster instance type. Exceeding the available baseline bandwidth for an Amazon EC2 instance indicates that your cluster may not sustain your application's workload, and needs to be scaled.
+ You should pay attention to network bytes consumption of your selected cluster instance type. Exceeding the available baseline bandwidth for an Amazon EC2 instance indicates that your cluster might not sustain your application's workload, and needs to be scaled.
 
-If load testing indicates that the selected cluster configuration can't sustain your application's workload, you should [switch to a larger node type](DAX.cluster-management.md#DAX.cluster-management.scaling.node-types), especially if you see high CPU utilization on the primary node in the cluster, high eviction rates, or high cache memory utilization. If hit rates are consistently high, and the ratio of read to write traffic is high, you may want to consider [adding more nodes to your cluster](DAX.cluster-management.md#DAX.cluster-management.scaling.read-scaling). Refer to [Scaling a DAX cluster](DAX.cluster-management.md#DAX.cluster-management.scaling) for additional guidance on when to use a larger node type (vertical scaling) or add more nodes (horizontal scaling).
+If load testing indicates that the selected cluster configuration can't sustain your application's workload, you should [switch to a larger node type](DAX.cluster-management.md#DAX.cluster-management.scaling.node-types), especially if you see high CPU utilization on the primary node in the cluster, high eviction rates, or high cache memory utilization. If hit rates are consistently high, and the ratio of read to write traffic is high, you might want to consider [adding more nodes to your cluster](DAX.cluster-management.md#DAX.cluster-management.scaling.read-scaling). Refer to [Scaling a DAX cluster](DAX.cluster-management.md#DAX.cluster-management.scaling) for additional guidance on when to use a larger node type (vertical scaling) or add more nodes (horizontal scaling).
 
 You should repeat your load test after making changes to your cluster configuration.

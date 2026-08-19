@@ -32,7 +32,6 @@ For information about porting the Cellular Interface library to your platform, s
 ## Memory use
 <a name="freertos-cellular-interface-memory-use"></a>
 
-****
 <a name="cellular-memory-estimate"></a>
 <table>
 <thead>

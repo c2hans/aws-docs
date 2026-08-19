@@ -9,10 +9,10 @@ source_url: https://docs.aws.amazon.com/controltower/latest/controlreference/ou-
 
 This control disallows access to unlisted operations in global and regional AWS services, outside of the specified Regions for an organizational unit (OU). You can apply this control to any subset of the Regions that are governed by your AWS Control Tower landing zone.
 
-You may wish to review the information at [Configure the Region deny control](https://docs.aws.amazon.com//controltower/latest/userguide/region-deny.html) before you enable this control.
+You may wish to review the information at [Configure the Region deny control](https://docs.aws.amazon.com/controltower/latest/userguide/region-deny.html) before you enable this control.
 
 **Warning**
-If you enforce this control, the configurations for the OU can conflict with the landing zone version of this control. For more information, see the section called "Policy evaluation of SCP controls" in this chapter, and [SCP evaluation](https://docs.aws.amazon.com//organizations/latest/userguide/orgs_manage_policies_scps_evaluation.html) in the AWS Organizations documentation.
+If you enforce this control, the configurations for the OU can conflict with the landing zone version of this control. For more information, see the section called "Policy evaluation of SCP controls" in this chapter, and [SCP evaluation](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps_evaluation.html) in the AWS Organizations documentation.
 
 **CT.MULTISERVICE.PV.1**: Deny access to AWS based on the requested AWS Region for an organizational unit
 
@@ -64,7 +64,7 @@ The policy evaluation process involves checking all applicable policies, startin
 + *Inherited Allow and No Explicit Deny:* If there is no explicit allow or deny at the requested level, AWS looks at higher-level policies. If there is an inherited allow and no explicit deny, the action is allowed.
 + *Explicit Deny at a Higher Level:* If there's an explicit deny in a higher-level policy, but no explicit allow or deny at the requested level, the action is denied.
 
-For more information about the evaluation logic, see [SCP evaluation](https://docs.aws.amazon.com//organizations/latest/userguide/orgs_manage_policies_scps_evaluation.html) in the AWS Organizations documentation.
+For more information about the evaluation logic, see [SCP evaluation](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps_evaluation.html) in the AWS Organizations documentation.
 
 **Note**
 With this control, you can allow any AWS Region at the OU level, even if your landing zone does not govern that Region, by design. We recommend that you use caution when allowing Regions that your AWS Control Tower landing zone does not govern.

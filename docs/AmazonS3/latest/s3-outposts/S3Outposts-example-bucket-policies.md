@@ -38,7 +38,7 @@ When restricting access to a specific IP address, make sure that you also specif
 
 This policy's `Condition` statement identifies {{`192.0.2.0/24`}} as the range of allowed IP version 4 (IPv4) IP addresses.
 
-The `Condition` block uses the `NotIpAddress` condition and the `aws:SourceIp` condition key, which is an AWS wide condition key. The `aws:SourceIp` condition key can only be used for public IP address ranges. For more information about these condition keys, see [Actions, resources, and condition keys for S3 on Outposts](https://docs.aws.amazon.com//service-authorization/latest/reference/list_amazons3onoutposts.html). The `aws:SourceIp` IPv4 values use standard CIDR notation. For more information, see [IAM JSON policy elements reference](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html#Conditions_IPAddress) in the *IAM User Guide*.
+The `Condition` block uses the `NotIpAddress` condition and the `aws:SourceIp` condition key, which is an AWS wide condition key. The `aws:SourceIp` condition key can only be used for public IP address ranges. For more information about these condition keys, see [Actions, resources, and condition keys for S3 on Outposts](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3onoutposts.html). The `aws:SourceIp` IPv4 values use standard CIDR notation. For more information, see [IAM JSON policy elements reference](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html#Conditions_IPAddress) in the *IAM User Guide*.
 
 **Warning**
 Before using this S3 on Outposts policy, replace the {{`192.0.2.0/24`}} IP address range in this example with an appropriate value for your use case. Otherwise, you'll lose the ability to access your bucket.

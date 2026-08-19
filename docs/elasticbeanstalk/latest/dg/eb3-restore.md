@@ -20,8 +20,6 @@ Rebuilds a terminated environment, creating a new environment with the same name
 ## Options
 <a name="eb3-restoreoptions"></a>
 
-****
-
 |  Name  |  Description  |
 | --- | --- |
 | [Common options](eb3-cmd-options.md) |  |

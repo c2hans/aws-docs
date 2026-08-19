@@ -199,8 +199,6 @@ In the preceding command, replace `us-east-2` with the AWS Region that contains 
 ### Minimum suggested route table settings for AWS Cloud9
 <a name="vpc-settings-requirements-route-table-settings"></a>
 
-****
-
 |  **Destination**  |  **Target**  |  **Status**  |  **Propagated**  |
 | --- | --- | --- | --- |
 | CIDR-BLOCK | local | Active | No |

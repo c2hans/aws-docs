@@ -74,7 +74,7 @@ To access the Apache Airflow REST API using AWS credentials, you must grant the 
 ------
 
 **Note**
-While configuring a private webserver, the `InvokeRestApi` action cannot be invoked from outside of a Virtual Private Cloud (VPC). You can use the `aws:SourceVpc` key to apply more granular access control for this operation. For more information, refer to [aws:SourceVpc](https://docs.aws.amazon.com//IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourcevpc).
+While configuring a private webserver, the `InvokeRestApi` action cannot be invoked from outside of a Virtual Private Cloud (VPC). You can use the `aws:SourceVpc` key to apply more granular access control for this operation. For more information, refer to [aws:SourceVpc](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourcevpc).
 
 ## Calling the Apache Airflow REST API
 <a name="listing-DAGs-creating-variables-using-restapi-script"></a>

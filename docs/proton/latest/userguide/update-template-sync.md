@@ -18,7 +18,7 @@ Edit a template sync configuration branch using the console.
 
 **In the list of templates.**
 
-1. In the [AWS Proton console](https://console.aws.amazon.com//proton/), choose **(Environment or Service) Templates**.
+1. In the [AWS Proton console](https://console.aws.amazon.com/proton/), choose **(Environment or Service) Templates**.
 
 1. In the list of templates, choose the name of the template with the template sync configuration that you want to edit.
 

@@ -14,4 +14,4 @@ When developers want to broadcast a stage to an IVS channel, they have two choic
   + **Resilience** — By centralizing the composition process on the server, the broadcast becomes more robust. Even if a publisher device experiences technical limitations or network fluctuations, the server can adapt and provide a smoother stream to all the audience.
   + **Bandwidth efficiency** — Since the server handles the composition, stage publishers do not have to spend extra bandwidth broadcasting the video to an IVS channel.
 
-For more information, see [Server-Side Composition](https://docs.aws.amazon.com//ivs/latest/RealTimeUserGuide/server-side-composition.html) in the *IVS Real-Time User Guide*.
+For more information, see [Server-Side Composition](https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/server-side-composition.html) in the *IVS Real-Time User Guide*.

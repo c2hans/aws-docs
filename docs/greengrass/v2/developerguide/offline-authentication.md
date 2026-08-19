@@ -18,7 +18,7 @@ When a client device connects to a core device for the first time, the core devi
 
 The next time that the device connects, the Greengrass core device attempts to validate the client device with the AWS IoT Greengrass service. If it can't connect to AWS IoT Greengrass, the core device uses its locally stored device information to validate the client device.
 
-You can configure the length of time that the Greengrass core device stores credentials. You can set the timeout from one minute to 2,147,483,647 minutes by setting the `clientDeviceTrustDurationMinutes` configuration option in the [client device auth component configuration](https://docs.aws.amazon.com//greengrass/v2/developerguide/client-device-auth-component.html#client-device-auth-component-configuration). The default is one minute, which effectively turns off offline authentication. When you set this timeout, we recommend that you consider your security needs. You should also consider how long you expect core devices to run while disconnected from the cloud.
+You can configure the length of time that the Greengrass core device stores credentials. You can set the timeout from one minute to 2,147,483,647 minutes by setting the `clientDeviceTrustDurationMinutes` configuration option in the [client device auth component configuration](https://docs.aws.amazon.com/greengrass/v2/developerguide/client-device-auth-component.html#client-device-auth-component-configuration). The default is one minute, which effectively turns off offline authentication. When you set this timeout, we recommend that you consider your security needs. You should also consider how long you expect core devices to run while disconnected from the cloud.
 
 The core device updates its credential storage at three times:
 
@@ -28,6 +28,6 @@ The core device updates its credential storage at three times:
 
 1. If the core device is connected to the cloud, once a day to refresh the entire credential store.
 
-When the Greengrass core device refreshes its credential store, it uses the [ ListClientDevicesAssociatedWithCoreDevice](https://docs.aws.amazon.com//greengrass/v2/APIReference/API_ListClientDevicesAssociatedWithCoreDevice.html) operation. Greengrass only refreshes the devices returned by this operation. To associate a client device with a core device, see [Associate client devices](associate-client-devices.md).
+When the Greengrass core device refreshes its credential store, it uses the [ ListClientDevicesAssociatedWithCoreDevice](https://docs.aws.amazon.com/greengrass/v2/APIReference/API_ListClientDevicesAssociatedWithCoreDevice.html) operation. Greengrass only refreshes the devices returned by this operation. To associate a client device with a core device, see [Associate client devices](associate-client-devices.md).
 
 To use the `ListClientDevicesAssociatedWithCoreDevice` operation, you must add permission for the operation to the AWS Identity and Access Management (IAM) role associated with the AWS account that runs AWS IoT Greengrass. For more information, see [Authorize core devices to interact with AWS services](device-service-role.md).

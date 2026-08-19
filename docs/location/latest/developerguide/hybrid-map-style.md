@@ -8,9 +8,13 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/hybrid-ma
 The Hybrid map style combines global satellite imagery with the same clear labels and configurable points of interest (POI) categories found in the Standard map style. This combination provides rich geographic detail while ensuring readability and usability for your application.
 
 ## Rich points of interest (POI)
-<a name="rich-poi"></a>
+<a name="hybrid-rich-poi"></a>
 
 The labels and POIs have been specifically designed for contrast and readability, providing the necessary context for the satellite layer without distracting from the detailed imagery. Light road lines highlight the urban structure when zoomed out and gradually fade as you zoom in, revealing more detailed street-level information.
+
+The Hybrid map style supports the same `PoiDensity` and `PoiCategories` parameters as the Standard style. For details on supported values and use cases, see [Rich points of interest (POI)](standard-map-style.md#standard-rich-poi) in the Standard map style and the [Maps features](https://docs.aws.amazon.com/location/latest/developerguide/maps-concepts.html#maps-concepts-features) reference.
+
+For instructions on using these parameters, see [How to filter POI on the map](https://docs.aws.amazon.com/location/latest/developerguide/how-to-filter-poi-map.html).
 
 ------
 #### [ Zoom ]

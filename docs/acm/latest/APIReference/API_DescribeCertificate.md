@@ -90,7 +90,8 @@ Required: Yes
       "NotBefore": number,
       "Options": {
          "CertificateTransparencyLoggingPreference": "string",
-         "Export": "string"
+         "Export": "string",
+         "ValidationMethod": "string"
       },
       "RenewalEligibility": "string",
       "RenewalSummary": {
@@ -123,7 +124,17 @@ Required: Yes
       "Status": "string",
       "Subject": "string",
       "SubjectAlternativeNames": [ "string" ],
-      "Type": "string"
+      "Type": "string",
+      "UpdateSummary": {
+         "DomainValidationMethodUpdateSummary": {
+            "From": "string",
+            "To": "string"
+         },
+         "RequestedAt": number,
+         "Status": "string",
+         "Type": "string",
+         "UpdatedAt": number
+      }
    }
 }
 ```

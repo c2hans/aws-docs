@@ -7,8 +7,6 @@ This is an earlier version of the AWS Well-Architected Framework. For the latest
 # REL05-BP07 Implement emergency levers
 <a name="rel_mitigate_interaction_failure_emergency_levers"></a>
 
-****
-
 |  |
 | --- |
 | This best practice was updated with new guidance on December 6, 2023. |

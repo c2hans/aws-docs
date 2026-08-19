@@ -14,9 +14,7 @@ Existing IAM Identity Center console APIs support dual authorization, which allo
 ## API actions after November 2023
 <a name="api-console-mapping-2023"></a>
 
-Instances of IAM Identity Center that were created before November 15, 2023 honor both old and new API actions as long as there is no explicit deny on any of the actions. Instances created after November 15, 2023 use [newer API actions](https://docs.aws.amazon.com//singlesignon/latest/APIReference/API_Operations.html) for authorization in the IAM Identity Center console.
-
-****
+Instances of IAM Identity Center that were created before November 15, 2023 honor both old and new API actions as long as there is no explicit deny on any of the actions. Instances created after November 15, 2023 use [newer API actions](https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Operations.html) for authorization in the IAM Identity Center console.
 
 | Console operation name used before November 15, 2023 | API action used after November 15, 2023 |
 | --- | --- |
@@ -38,9 +36,7 @@ Instances of IAM Identity Center that were created before November 15, 2023 hono
 ## API actions after October 2020
 <a name="api-console-mapping-2020"></a>
 
-Instances of IAM Identity Center that were created before October 15, 2020 honor both old and new API actions as long as there is no explicit deny on any of the actions. Instances created after October 15, 2020 use [newer API actions](https://docs.aws.amazon.com//singlesignon/latest/APIReference/API_Operations.html) for authorization in the IAM Identity Center console.
-
-****
+Instances of IAM Identity Center that were created before October 15, 2020 honor both old and new API actions as long as there is no explicit deny on any of the actions. Instances created after October 15, 2020 use [newer API actions](https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Operations.html) for authorization in the IAM Identity Center console.
 
 | Operation name | API actions used before October 15, 2020 | API actions used after October 15, 2020 |
 | --- | --- | --- |

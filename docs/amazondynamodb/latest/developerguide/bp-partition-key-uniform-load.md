@@ -11,8 +11,6 @@ The optimal usage of a table's provisioned throughput depends not only on the wo
 
 The following is a comparison of the provisioned throughput efficiency of some common partition key schemas.
 
-****
-
 | Partition key value | Uniformity |
 | --- | --- |
 | User ID, where the application has many users. | Good |

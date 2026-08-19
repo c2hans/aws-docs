@@ -7,9 +7,11 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Termina
 
 Terminates the specified instance and optionally adjusts the desired group size. This operation cannot be called on instances in a warm pool.
 
-This call simply makes a termination request. The instance is not terminated immediately. When an instance is terminated, the instance status changes to `terminated`. You can't connect to or start an instance after you've terminated it.
+This call simply makes a termination request. The instances are not terminated immediately. When an instance is terminated, the instance status changes to `terminated`. You can't connect to or start an instance after you've terminated it.
 
 If you do not specify the option to decrement the desired capacity, Amazon EC2 Auto Scaling launches instances to replace the ones that are terminated.
+
+To terminate multiple instances in a single call, use the `InstanceIds` and `AutoScalingGroupName` parameters instead of `InstanceId`. When terminating multiple instances, the response populates `Activities` instead of `Activity`.
 
 By default, Amazon EC2 Auto Scaling balances instances across all Availability Zones. If you decrement the desired capacity, your Auto Scaling group can become unbalanced between Availability Zones. Amazon EC2 Auto Scaling tries to rebalance the group, and rebalancing might terminate instances in other zones. For more information, see [Manual scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-scaling-manually.html) in the *Amazon EC2 Auto Scaling User Guide*.
 
@@ -18,12 +20,28 @@ By default, Amazon EC2 Auto Scaling balances instances across all Availability Z
 
  For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
+ ** AutoScalingGroupName **
+The name of the Auto Scaling group. Required when using `InstanceIds`.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 255.
+Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\r\n\t]*`
+Required: No
+
  ** InstanceId **
 The ID of the instance.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 19.
 Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\r\n\t]*`
-Required: Yes
+Required: No
+
+ **InstanceIds.member.N**
+The IDs of the instances. You can specify up to 100 instances.
+This parameter requires that you also specify `AutoScalingGroupName`.
+Type: Array of strings
+Array Members: Minimum number of 1 item. Maximum number of 100 items.
+Length Constraints: Minimum length of 1. Maximum length of 19.
+Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\r\n\t]*`
+Required: No
 
  ** ShouldDecrementDesiredCapacity **
 Indicates whether terminating the instance also decrements the size of the Auto Scaling group.
@@ -33,7 +51,11 @@ Required: Yes
 ## Response Elements
 <a name="API_TerminateInstanceInAutoScalingGroup_ResponseElements"></a>
 
-The following element is returned by the service.
+The following elements are returned by the service.
+
+ **Activities.member.N**
+The scaling activities related to terminating the instances from the Auto Scaling group.
+Type: Array of [Activity](API_Activity.md) objects
 
  ** Activity **
 A scaling activity.

@@ -14,8 +14,6 @@ Create an IAM instance profile to use with EC2 instances. Each ARN specified in 
 ## Change Type Details
 <a name="ct-117rmp64d5mvb-DAIc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-117rmp64d5mvb |

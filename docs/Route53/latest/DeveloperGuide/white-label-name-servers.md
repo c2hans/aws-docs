@@ -62,8 +62,6 @@ Create records in the hosted zones that you created in Step 2:
 
 Get the IPv4 and IPv6 addresses of the name servers in the reusable delegation set, and fill in the following table.
 
-****
-
 | Name of a name server in your reusable delegation set (example: Ns-2048.awsdns-64.com) | IPv4 and IPv6 addresses                                             | Name that you want to assign to the white-label name server (example: ns1.example.com) |
 | --- | --- | --- |
 |   | IPv4:<br />IPv6:  |   |

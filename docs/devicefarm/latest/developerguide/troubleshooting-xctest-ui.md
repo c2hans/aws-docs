@@ -7,10 +7,12 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/trouble
 
 The following topic lists error messages that occur during the upload of XCTest UI tests and recommends workarounds to resolve each error.
 
-**Note**
-The instructions below are based on Linux x86\_64 and Mac.
+## Upload errors
+<a name="troubleshooting-xctest-ui-upload"></a>
 
-## XCTEST\_UI\_TEST\_PACKAGE\_UNZIP\_FAILED
+The following errors can occur when you upload your XCTest UI tests.
+
+### XCTEST\_UI\_TEST\_PACKAGE\_UNZIP\_FAILED
 <a name="XCTEST_UI_TEST_PACKAGE_UNZIP_FAILED"></a>
 
 If you see the following message, follow these steps to fix the issue.
@@ -47,7 +49,7 @@ Make sure that you can unzip the application package without errors. In the foll
 
    For more information, see [Integrating XCTest UI for iOS with Device Farm](test-types-ios-xctest-ui.md).
 
-## XCTEST\_UI\_TEST\_PACKAGE\_PAYLOAD\_DIR\_MISSING
+### XCTEST\_UI\_TEST\_PACKAGE\_PAYLOAD\_DIR\_MISSING
 <a name="XCTEST_UI_TEST_PACKAGE_PAYLOAD_DIR_MISSING"></a>
 
 If you see the following message, follow these steps to fix the issue.
@@ -84,7 +86,7 @@ In the following example, the package's name is **swift-sample-UI.ipa**.
 
    For more information, see [Integrating XCTest UI for iOS with Device Farm](test-types-ios-xctest-ui.md).
 
-## XCTEST\_UI\_TEST\_PACKAGE\_APP\_DIR\_MISSING
+### XCTEST\_UI\_TEST\_PACKAGE\_APP\_DIR\_MISSING
 <a name="XCTEST_UI_TEST_PACKAGE_APP_DIR_MISSING"></a>
 
 If you see the following message, follow these steps to fix the issue.
@@ -121,7 +123,7 @@ In the following example, the package's name is **swift-sample-UI.ipa**.
 
    For more information, see [Integrating XCTest UI for iOS with Device Farm](test-types-ios-xctest-ui.md).
 
-## XCTEST\_UI\_TEST\_PACKAGE\_PLUGINS\_DIR\_MISSING
+### XCTEST\_UI\_TEST\_PACKAGE\_PLUGINS\_DIR\_MISSING
 <a name="XCTEST_UI_TEST_PACKAGE_PLUGINS_DIR_MISSING"></a>
 
 If you see the following message, follow these steps to fix the issue.
@@ -158,7 +160,7 @@ In the following example, the package's name is **swift-sample-UI.ipa**.
 
    For more information, see [Integrating XCTest UI for iOS with Device Farm](test-types-ios-xctest-ui.md).
 
-## XCTEST\_UI\_TEST\_PACKAGE\_XCTEST\_DIR\_MISSING\_IN\_PLUGINS\_DIR
+### XCTEST\_UI\_TEST\_PACKAGE\_XCTEST\_DIR\_MISSING\_IN\_PLUGINS\_DIR
 <a name="XCTEST_UI_TEST_PACKAGE_XCTEST_DIR_MISSING_IN_PLUGINS_DIR"></a>
 
 If you see the following message, follow these steps to fix the issue.
@@ -195,7 +197,7 @@ In the following example, the package's name is **swift-sample-UI.ipa**.
 
    For more information, see [Integrating XCTest UI for iOS with Device Farm](test-types-ios-xctest-ui.md).
 
-## XCTEST\_UI\_TEST\_PACKAGE\_PLIST\_FILE\_MISSING
+### XCTEST\_UI\_TEST\_PACKAGE\_PLIST\_FILE\_MISSING
 <a name="XCTEST_UI_TEST_PACKAGE_PLIST_FILE_MISSING"></a>
 
 If you see the following message, follow these steps to fix the issue.
@@ -232,7 +234,7 @@ In the following example, the package's name is **swift-sample-UI.ipa**.
 
    For more information, see [Integrating XCTest UI for iOS with Device Farm](test-types-ios-xctest-ui.md).
 
-## XCTEST\_UI\_TEST\_PACKAGE\_PLIST\_FILE\_MISSING\_IN\_XCTEST\_DIR
+### XCTEST\_UI\_TEST\_PACKAGE\_PLIST\_FILE\_MISSING\_IN\_XCTEST\_DIR
 <a name="XCTEST_UI_TEST_PACKAGE_PLIST_FILE_MISSING_IN_XCTEST_DIR"></a>
 
 If you see the following message, follow these steps to fix the issue.
@@ -269,7 +271,7 @@ In the following example, the package's name is **swift-sample-UI.ipa**.
 
    For more information, see [Integrating XCTest UI for iOS with Device Farm](test-types-ios-xctest-ui.md).
 
-## XCTEST\_UI\_TEST\_PACKAGE\_CPU\_ARCHITECTURE\_VALUE\_MISSING
+### XCTEST\_UI\_TEST\_PACKAGE\_CPU\_ARCHITECTURE\_VALUE\_MISSING
 <a name="XCTEST_UI_TEST_PACKAGE_CPU_ARCHITECTURE_VALUE_MISSING"></a>
 
 If you see the following message, follow these steps to fix the issue.
@@ -328,7 +330,7 @@ In the following example, the package's name is **swift-sample-UI.ipa**.
 
    For more information, see [Integrating XCTest UI for iOS with Device Farm](test-types-ios-xctest-ui.md).
 
-## XCTEST\_UI\_TEST\_PACKAGE\_PLATFORM\_VALUE\_MISSING
+### XCTEST\_UI\_TEST\_PACKAGE\_PLATFORM\_VALUE\_MISSING
 <a name="XCTEST_UI_TEST_PACKAGE_PLATFORM_VALUE_MISSING"></a>
 
 If you see the following message, follow these steps to fix the issue.
@@ -387,7 +389,7 @@ In the following example, the package's name is **swift-sample-UI.ipa**.
 
    For more information, see [Integrating XCTest UI for iOS with Device Farm](test-types-ios-xctest-ui.md).
 
-## XCTEST\_UI\_TEST\_PACKAGE\_WRONG\_PLATFORM\_DEVICE\_VALUE
+### XCTEST\_UI\_TEST\_PACKAGE\_WRONG\_PLATFORM\_DEVICE\_VALUE
 <a name="XCTEST_UI_TEST_PACKAGE_WRONG_PLATFORM_DEVICE_VALUE"></a>
 
 If you see the following message, follow these steps to fix the issue.
@@ -448,7 +450,7 @@ In the following example, the package's name is **swift-sample-UI.ipa**.
 
    For more information, see [Integrating XCTest UI for iOS with Device Farm](test-types-ios-xctest-ui.md).
 
-## XCTEST\_UI\_TEST\_PACKAGE\_FORM\_FACTOR\_VALUE\_MISSING
+### XCTEST\_UI\_TEST\_PACKAGE\_FORM\_FACTOR\_VALUE\_MISSING
 <a name="XCTEST_UI_TEST_PACKAGE_FORM_FACTOR_VALUE_MISSING"></a>
 
 If you see the following message, follow these steps to fix the issue.
@@ -507,7 +509,7 @@ In the following example, the package's name is **swift-sample-UI.ipa**.
 
    For more information, see [Integrating XCTest UI for iOS with Device Farm](test-types-ios-xctest-ui.md).
 
-## XCTEST\_UI\_TEST\_PACKAGE\_PACKAGE\_NAME\_VALUE\_MISSING
+### XCTEST\_UI\_TEST\_PACKAGE\_PACKAGE\_NAME\_VALUE\_MISSING
 <a name="XCTEST_UI_TEST_PACKAGE_PACKAGE_NAME_VALUE_MISSING"></a>
 
 If you see the following message, follow these steps to fix the issue.
@@ -566,7 +568,7 @@ In the following example, the package's name is **swift-sample-UI.ipa**.
 
    For more information, see [Integrating XCTest UI for iOS with Device Farm](test-types-ios-xctest-ui.md).
 
-## XCTEST\_UI\_TEST\_PACKAGE\_EXECUTABLE\_VALUE\_MISSING
+### XCTEST\_UI\_TEST\_PACKAGE\_EXECUTABLE\_VALUE\_MISSING
 <a name="XCTEST_UI_TEST_PACKAGE_EXECUTABLE_VALUE_MISSING"></a>
 
 If you see the following message, follow these steps to fix the issue.
@@ -625,7 +627,7 @@ In the following example, the package's name is **swift-sample-UI.ipa**.
 
    For more information, see [Integrating XCTest UI for iOS with Device Farm](test-types-ios-xctest-ui.md).
 
-## XCTEST\_UI\_TEST\_PACKAGE\_TEST\_PACKAGE\_NAME\_VALUE\_MISSING
+### XCTEST\_UI\_TEST\_PACKAGE\_TEST\_PACKAGE\_NAME\_VALUE\_MISSING
 <a name="XCTEST_UI_TEST_PACKAGE_TEST_PACKAGE_NAME_VALUE_MISSING"></a>
 
 If you see the following message, follow these steps to fix the issue.
@@ -684,7 +686,7 @@ In the following example, the package's name is **swift-sample-UI.ipa**.
 
    For more information, see [Integrating XCTest UI for iOS with Device Farm](test-types-ios-xctest-ui.md).
 
-## XCTEST\_UI\_TEST\_PACKAGE\_TEST\_EXECUTABLE\_VALUE\_MISSING
+### XCTEST\_UI\_TEST\_PACKAGE\_TEST\_EXECUTABLE\_VALUE\_MISSING
 <a name="XCTEST_UI_TEST_PACKAGE_TEST_EXECUTABLE_VALUE_MISSING"></a>
 
 If you see the following message, follow these steps to fix the issue.
@@ -743,7 +745,7 @@ In the following example, the package's name is **swift-sample-UI.ipa**.
 
    For more information, see [Integrating XCTest UI for iOS with Device Farm](test-types-ios-xctest-ui.md).
 
-## XCTEST\_UI\_TEST\_PACKAGE\_MULTIPLE\_APP\_DIRS
+### XCTEST\_UI\_TEST\_PACKAGE\_MULTIPLE\_APP\_DIRS
 <a name="XCTEST_UI_TEST_PACKAGE_MULTIPLE_APP_DIRS"></a>
 
 If you see the following message, follow these steps to fix the issue.
@@ -779,7 +781,7 @@ If you see the following message, follow these steps to fix the issue.
 
    For more information, see [Integrating XCTest UI for iOS with Device Farm](test-types-ios-xctest-ui.md).
 
-## XCTEST\_UI\_TEST\_PACKAGE\_MULTIPLE\_IPA\_DIRS
+### XCTEST\_UI\_TEST\_PACKAGE\_MULTIPLE\_IPA\_DIRS
 <a name="XCTEST_UI_TEST_PACKAGE_MULTIPLE_IPA_DIRS"></a>
 
 If you see the following message, follow these steps to fix the issue.
@@ -811,7 +813,7 @@ If you see the following message, follow these steps to fix the issue.
 
    For more information, see [Integrating XCTest UI for iOS with Device Farm](test-types-ios-xctest-ui.md).
 
-## XCTEST\_UI\_TEST\_PACKAGE\_BOTH\_APP\_AND\_IPA\_DIR\_PRESENT
+### XCTEST\_UI\_TEST\_PACKAGE\_BOTH\_APP\_AND\_IPA\_DIR\_PRESENT
 <a name="XCTEST_UI_TEST_PACKAGE_BOTH_APP_AND_IPA_DIR_PRESENT"></a>
 
 If you see the following message, follow these steps to fix the issue.
@@ -855,7 +857,7 @@ If you see the following message, follow these steps to fix the issue.
 
    For more information, see [Integrating XCTest UI for iOS with Device Farm](test-types-ios-xctest-ui.md).
 
-## XCTEST\_UI\_TEST\_PACKAGE\_PAYLOAD\_DIR\_PRESENT\_IN\_ZIP
+### XCTEST\_UI\_TEST\_PACKAGE\_PAYLOAD\_DIR\_PRESENT\_IN\_ZIP
 <a name="XCTEST_UI_TEST_PACKAGE_PAYLOAD_DIR_PRESENT_IN_ZIP"></a>
 
 If you see the following message, follow these steps to fix the issue.
@@ -889,3 +891,55 @@ If you see the following message, follow these steps to fix the issue.
    ```
 
    For more information, see [Integrating XCTest UI for iOS with Device Farm](test-types-ios-xctest-ui.md).
+
+## Test insights
+<a name="troubleshooting-xctest-ui-insights"></a>
+
+When you opt in to test insights, Device Farm generates a summarized report for your run and each job under it. If the service cannot generate the report, the insights report status is `SKIPPED` or `ERRORED`, and the report message explains why. The following messages can occur when generating insights for XCTest UI tests.
+
+### The job did not run to completion
+<a name="ti-xctest-ui-job-not-complete"></a>
+
+`Unable to generate test insights because the job was {{status}}.`
+
+The job ended in a non-successful state (where {{status}} is `STOPPED`, `ERRORED`, or `SKIPPED`), so there was no result to summarize. A run that ends in a failed state still receives insights.
+
+To resolve this issue, investigate why the job did not run to completion. In many cases, the `message` field of the job itself might explain why the job didn't complete.
+
+### The results contained no test cases
+<a name="ti-xctest-ui-no-test-cases"></a>
+
+`Test insights could not be generated. The xcresult_summary.json file was parsed successfully but contained no test cases.`
+
+The results artifact parsed successfully but contained zero test cases.
+
+To resolve this issue, verify that your test suite includes at least one test case and that results are stored correctly under `$DEVICEFARM_LOG_DIR`.
+
+### The test output exceeds the maximum supported size
+<a name="ti-xctest-ui-output-too-large"></a>
+
+`Unable to generate test insights: test output "xcresult bundle" exceeds the maximum supported size of 1GB.`
+
+The xcresult bundle is larger than 1 GB.
+
+To resolve this issue, reduce the xcresult bundle size to below 1 GB by trimming logs or attachments.
+
+### The xcresult bundle was not found
+<a name="ti-xctest-ui-xcresult-not-found"></a>
+
+`Unable to generate test insights. The xctestresult bundle file (.xcresult) was not found in the output artifacts.`
+
+Device Farm could not find an `.xcresult` bundle for this job, so there were no results to summarize.
+
+Device Farm looks for the bundle anywhere under `$DEVICEFARM_DERIVED_DATA_PATH`. The default XCTest UI test spec produces it there automatically, so this message usually indicates that a customized test spec did not write results to that location.
+
+To confirm whether a bundle was produced, download the customer artifacts for the job and look for an `.xcresult` directory under the derived data folder.
+
+### The xcresult test results could not be processed
+<a name="ti-xctest-ui-xcresult-error"></a>
+
+`Test insights could not be generated because of an error while processing the .xcresult test results.`
+
+Device Farm found an `.xcresult` bundle but could not read the test results from it.
+
+To resolve this issue, ensure that your test run produces a valid `.xcresult` bundle. Verify that your test spec does not modify, truncate, or archive the bundle before the run finishes, and that the **xcodebuild** command completes rather than being interrupted by a timeout.

@@ -14,7 +14,7 @@ After careful consideration, we have decided to discontinue Amazon Kinesis Data 
 <a name="input-parallelism"></a>
 
 **Note**
-After September 12, 2023, you will not able to create new applications using Kinesis Data Firehose as a source if you do not already use Kinesis Data Analytics for SQL. For more information, see [Limits](https://docs.aws.amazon.com//kinesisanalytics/latest/dev/limits.html).
+After September 12, 2023, you will not able to create new applications using Kinesis Data Firehose as a source if you do not already use Kinesis Data Analytics for SQL. For more information, see [Limits](https://docs.aws.amazon.com/kinesisanalytics/latest/dev/limits.html).
 
 Amazon Kinesis Data Analytics applications can support multiple in-application input streams, to scale an application beyond the throughput of a single in-application input stream. For more information on in-application input streams, see [Amazon Kinesis Data Analytics for SQL Applications: How It Works](how-it-works.md).
 

@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 **Tip**
 To learn more about OpenTelemetry on CloudWatch, check out the [Cloud Operations Enablement workshop and event series](https://aws-experience.com/amer/smb/events/series/Cloud-Operations-Enablement).
 
-You can enable OTel enrichment to make vended metrics for [supported AWS resources](https://docs.aws.amazon.com//AmazonCloudWatch/latest/monitoring/UsingResourceTagsForTelemetry.html) queryable through PromQL. After you enable OTel enrichment, metrics that contain a resource identifier dimension (for example, EC2 CPUUtilization with an InstanceId dimension) are enriched with resource ARN and resource tag labels and become queryable using PromQL.
+You can enable OTel enrichment to make vended metrics for [supported AWS resources](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/UsingResourceTagsForTelemetry.html) queryable through PromQL. After you enable OTel enrichment, metrics that contain a resource identifier dimension (for example, EC2 CPUUtilization with an InstanceId dimension) are enriched with resource ARN and resource tag labels and become queryable using PromQL.
 
 The enriched metric preserves the original metric name and CloudWatch dimensions, and adds:
 + **Resource attributes** – the resource ARN (`cloud.resource_id`), cloud provider, region, and account ID.
@@ -20,7 +20,7 @@ The original classic CloudWatch metric is not modified and remains available thr
 ## Enabling OpenTelemetry enrichment for vended metrics
 <a name="CloudWatch-OTelEnrichment-Enable"></a>
 
-Before you start OTel enrichment, you must [enable resource tags on telemetry](https://docs.aws.amazon.com//AmazonCloudWatch/latest/monitoring/EnableResourceTagsOnTelemetry.html) for your account.
+Before you start OTel enrichment, you must [enable resource tags on telemetry](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/EnableResourceTagsOnTelemetry.html) for your account.
 
 You can enable OTel enrichment for your account in a specific region using the CloudWatch console, AWS CLI, CloudFormation, Terraform, or AWS SDK.
 
@@ -43,7 +43,7 @@ aws cloudwatch start-otel-enrichment
 **CloudFormation**
 
 **Note**
-The `AWS::CloudWatch::OTelEnrichment` resource requires the `AWS::ObservabilityAdmin::TelemetryEnrichment` resource to be configured first. For more information, see [enable resource tags on telemetry](https://docs.aws.amazon.com//AmazonCloudWatch/latest/monitoring/EnableResourceTagsOnTelemetry.html).
+The `AWS::CloudWatch::OTelEnrichment` resource requires the `AWS::ObservabilityAdmin::TelemetryEnrichment` resource to be configured first. For more information, see [enable resource tags on telemetry](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/EnableResourceTagsOnTelemetry.html).
 
 ```
 Resources:

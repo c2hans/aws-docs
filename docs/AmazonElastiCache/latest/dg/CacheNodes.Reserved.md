@@ -68,8 +68,6 @@ As an example, let's say you have purchased a reserved node for a cache.r7g.4xla
 
 You can compare usage for different reserved node sizes by using normalized units. For example, one hour of usage on two cache.r6g.4xlarge nodes is equivalent to 16 hours of usage on one cache.r6g.large. The following table shows the number of normalized units for each node size:
 
-****
-
 | Node size | Normalized units with Redis OSS or Memcached | Normalized units with Valkey |
 | --- | --- | --- |
 | micro | 0.5 | 0.4 |

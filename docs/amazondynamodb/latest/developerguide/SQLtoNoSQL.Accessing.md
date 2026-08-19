@@ -13,8 +13,6 @@ The following diagram shows a client's interaction with a relational database an
 
 The following table has more details about client interaction tasks.
 
-****
-
 | Characteristic | Relational database management system (RDBMS) | Amazon DynamoDB |
 | --- | --- | --- |
 | Tools for Accessing the Database | Most relational databases provide a command line interface (CLI) so that you can enter ad hoc SQL statements and see the results immediately. | In most cases, you write application code. You can also use the AWS Management Console, the AWS Command Line Interface (AWS CLI), or NoSQL Workbench to send ad hoc requests to DynamoDB and view the results. [PartiQL](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ql-reference.html), a SQL-compatible query language, lets you select, insert, update, and delete data in DynamoDB. |

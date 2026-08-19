@@ -366,8 +366,6 @@ String uploadId = response.uploadId();
 
 The default `Content-Type` header value for the following methods differ as shown in the following table.
 
-****
-
 | SDK version | Method | Default `Content-Type` value |
 | --- | --- | --- |
 | version 1 | [initiateMultipartUpload](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/s3/AmazonS3Client.html#initiateMultipartUpload-com.amazonaws.services.s3.model.InitiateMultipartUploadRequest-) | application/octet-stream |

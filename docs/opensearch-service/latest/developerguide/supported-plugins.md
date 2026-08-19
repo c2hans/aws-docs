@@ -13,8 +13,6 @@ The following table lists plugins by OpenSearch version, as well as compatible v
 GET _cat/plugins?v
 ```
 
-****
-
 <table>
 <thead>
   <tr><th>Plugin</th><th>Minimum required OpenSearch version</th><th>Minimum required Elasticsearch version</th></tr>

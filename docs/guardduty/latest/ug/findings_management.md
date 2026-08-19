@@ -33,7 +33,7 @@ Learn how you can audit the CloudWatch Logs for GuardDuty Malware Protection for
 [Reporting false positives in Malware Protection for EC2](malware-protection-false-positives.md)
 Learn how you can report potential false positive threat detections in Malware Protection for EC2.
 
-[Reporting S3 object scan result as false positive in Malware Protection for S3Reporting false positive S3 object scan result](report-malware-protection-s3-false-positives.md)
+[Reporting S3 object scan result as false positive in Malware Protection for S3](report-malware-protection-s3-false-positives.md)
 Learn how you can report potential false positive threat detections in Malware Protection for S3.
 
 [Reporting false positives in Malware Protection for Backup](malware-protection-backup-false-positives.md)

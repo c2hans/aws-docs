@@ -17,7 +17,7 @@ The AWS Nitro System supports Credential Guard for Amazon Elastic Compute Cloud 
 ## Prerequisites
 <a name="credential-guard-prerequisites"></a>
 
-Your Windows instance must meet the following prerequisites to utilize Credential Guard.
+Your Windows instance must meet the following prerequisites to use Credential Guard.
 
 **Amazon Machine Images (AMIs)**
 The AMI must be preconfigured to enable NitroTPM and UEFI Secure Boot. For more information on supported AMIs, see [Requirements for using NitroTPM with Amazon EC2 instances](enable-nitrotpm-prerequisites.md).
@@ -85,7 +85,7 @@ New-EC2Instance `
 
 You can use the Local Group Policy Editor to disable memory integrity in supported scenarios. The following guidance can be applied for each configuration setting under **Virtualization Based Protection of Code Integrity**:
 + **Enabled without lock** – Modify the setting to **Disabled** to disable memory integrity.
-+ **Enabled with UEFI lock** – Memory integrity has been enabled with UEFI lock. Memory integrity can't be disabled once it has been enabled with UEFI lock. We recommend creating a new instance with memory integrity disabled and terminating the unsupported instance if it's not in use.
++ **Enabled with UEFI lock** – Memory integrity has been enabled with UEFI lock. Memory integrity can't be disabled after it has been enabled with UEFI lock. We recommend creating a new instance with memory integrity disabled and terminating the unsupported instance if it's not in use.
 
 **To disable memory integrity with the Local Group Policy Editor**
 

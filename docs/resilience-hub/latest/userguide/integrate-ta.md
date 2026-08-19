@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/integrat
 # AWS Trusted Advisor
 <a name="integrate-ta"></a>
 
-AWS Trusted Advisor is a centralized home of AWS best practice recommendations that helps you to identify, prioritize, and optimize your deployment on AWS. AWS Trusted Advisor inspects your AWS environment, and then makes recommendations through checks when opportunities exist to save money, improve system availability and performance, or help close security gaps. These checks are divided into multiple categories based on their purpose. For more information about different categories of checks in AWS Trusted Advisor, see the [AWS Support](https://docs.aws.amazon.com//awssupport/latest/user/trusted-advisor-check-reference.html) User Guide.
+AWS Trusted Advisor is a centralized home of AWS best practice recommendations that helps you to identify, prioritize, and optimize your deployment on AWS. AWS Trusted Advisor inspects your AWS environment, and then makes recommendations through checks when opportunities exist to save money, improve system availability and performance, or help close security gaps. These checks are divided into multiple categories based on their purpose. For more information about different categories of checks in AWS Trusted Advisor, see the [AWS Support](https://docs.aws.amazon.com/awssupport/latest/user/trusted-advisor-check-reference.html) User Guide.
 
 AWS Trusted Advisor provides multiple high-level resiliency recommendations through resiliency checks for each application in AWS Resilience Hub under **Fault tolerance** category. **Fault tolerance** category lists all the checks that tests your applications to determine their resilience and reliability. These checks alert you when there are AppComponent failures and policy breaches that can cause resiliency risks and affect the application availability for business continuity. It also provides resiliency recommendations that will improve the chances to reduce these risks under **Recommended Action** section, which needs to be addressed in AWS Resilience Hub. For more insights about the recommendations for each application in the AWS Trusted Advisor, we recommend you to view the detailed recommendations provided in the AWS Resilience Hub.
 
@@ -56,4 +56,4 @@ This check determines the assessment age of only those applications that have be
 
   To ensure that your AppComponent is recoverable, review and implement the resiliency recommendations, and then run a new assessment. For more information about reviewing the resiliency recommendations, see [Reviewing resiliency recommendations](resil-recs.md).
 
-For more information about using AWS Trusted Advisor, see the [AWS Support User Guide](https://docs.aws.amazon.com//awssupport/latest/user/trusted-advisor.html).
+For more information about using AWS Trusted Advisor, see the [AWS Support User Guide](https://docs.aws.amazon.com/awssupport/latest/user/trusted-advisor.html).

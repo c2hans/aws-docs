@@ -63,7 +63,7 @@ For more information on setting up on demand inference, see [Set up inference fo
 
 1. For **Distillation output**, specify the S3 location where you want to upload the metrics and reports about your distillation job.
 
-   For more information, see [Analyze the results of a model customization jobAnalyze model customization job results](model-customization-analyze.md).
+   For more information, see [Analyze the results of a model customization job](model-customization-analyze.md).
 
 1. For **VPC settings**, choose a VPC configuration for accessing the S3 bucket with your training data.
 
@@ -82,8 +82,6 @@ For more information on setting up on demand inference, see [Set up inference fo
 
 At minimum, you must provide the following fields to submit your model distillation job when using the Amazon Bedrock API.
 
-****
-
 | Field | Description |
 | --- | --- |
 | baseModelIdentifier | The model identifier of the student model |
@@ -97,8 +95,6 @@ At minimum, you must provide the following fields to submit your model distillat
 | clientRequestToken | Token to prevent the request from completing more than once |
 
 The following fields are optional:
-
-****
 
 | Field | Description |
 | --- | --- |

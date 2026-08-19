@@ -17,8 +17,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/Tez-release-hist
 ## Amazon EMR 7.2.0 - New configurations
 <a name="Tez-release-history-changes-720-new-configs"></a>
 
-****
-
 | Classification | Name | Default | Description |
 | --- | --- | --- | --- |
 | tez-site | tez.task.relaxed.locality | false | When enabled, rack and node locality constraints are not considered while requesting a container for a task. |

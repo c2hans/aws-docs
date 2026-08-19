@@ -47,8 +47,6 @@ Feature availability and support varies across specific versions of each databas
 
 Backup replication is supported between the following AWS Regions.
 
-****
-
 | Source Region | Destination Regions available |
 | --- | --- |
 | Africa (Cape Town) | Europe (Frankfurt), Europe (Ireland), Europe (London) |

@@ -9,8 +9,6 @@ When you connect to a Amazon Quick Sight data source that requires a user name, 
 
 The following table identifies the tables that the account must have `SELECT` permissions for, depending on the type of database you are connecting to. These requirements apply for all database instances you connect to, regardless of their environment. In other words, they apply whether your database instances are on-premises, in Amazon RDS, in Amazon EC2, or elsewhere.
 
-****
-
 | Instance type | Tables |
 | --- | --- |
 | Amazon Aurora  | `INFORMATION_SCHEMA.STATISTICS`<br />`INFORMATION_SCHEMA.TABLES` |

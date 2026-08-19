@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/using-m
 <a name="using-maps"></a>
 
 **Note**
-We released a new version of the Maps API, see the updated [Maps Developer Guide](https://docs.aws.amazon.com//location/latest/developerguide/maps.html) or [Maps API](https://docs.aws.amazon.com//location/latest/APIReference/API_Operations_Amazon_Location_Service_Maps_V2.html) for revised information.
+We released a new version of the Maps API, see the updated [Maps Developer Guide](https://docs.aws.amazon.com/location/latest/developerguide/maps.html) or [Maps API](https://docs.aws.amazon.com/location/latest/APIReference/API_Operations_Amazon_Location_Service_Maps_V2.html) for revised information.
 
 Amazon Location maps are cost-effective and interactive. You can replace an existing map in your application to save money, or add a new one to display location-based data visually, such as your store location.
 

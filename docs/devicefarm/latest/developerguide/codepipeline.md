@@ -11,8 +11,6 @@ The following diagram shows the continuous integration flow in which an Android 
 
 ![Continuos integration setup for building and testing Android source code from a GitHub repository on each push.](http://docs.aws.amazon.com/devicefarm/latest/developerguide/images/codepipeline-push-build-test.png)
 
-****
-
 |  |  |  |  |  |
 | --- |--- |--- |--- |--- |
 | 1. Configure | 2. Add definitions | 3. Push | 4. Build and test | 5. Report |

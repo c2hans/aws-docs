@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/migration-guide/tibco-r
 
  You can use the following procedure to migrate the TIBCO EMS architecture shown [here](tibco-ems-typical-architecture.md) to an equivalent Amazon MQ architecture without impacting *App 1* or *App 2*:
 
-1. Create an [active/standby broker](https://docs.aws.amazon.com//amazon-mq/latest/developer-guide/active-standby-broker-deployment) in *us-east-1* and another in *us-east-2* named as **AMQ\_ORANGE** and **AMQ\_APPLE**.
+1. Create an [active/standby broker](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/active-standby-broker-deployment) in *us-east-1* and another in *us-east-2* named as **AMQ\_ORANGE** and **AMQ\_APPLE**.
 
 1. Create a *Network Bridge* between 2 brokers by adding a duplex network connector definition to one of the queues:
 
@@ -19,7 +19,7 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/migration-guide/tibco-r
 
     After the reboot of **AMQ\_ORANGE**, there should be a Network Bridge created between both brokers as illustrated below: ![Network Bridges table showing AMQ_APPLE broker with remote address and connection details.](http://docs.aws.amazon.com/amazon-mq/latest/migration-guide/images/tibco-replatform-fig-1.PNG)
 **Note**
-Steps 1 and 2 can be replicated using a AWS CloudFormation template. For more information about using CloudFormation to set up Amazon MQ brokers, see the Amazon MQ [CloudFormation Template Reference](https://docs.aws.amazon.com//AWSCloudFormation/latest/TemplateReference/AWS_AmazonMQ.html).
+Steps 1 and 2 can be replicated using a AWS CloudFormation template. For more information about using CloudFormation to set up Amazon MQ brokers, see the Amazon MQ [CloudFormation Template Reference](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/AWS_AmazonMQ.html).
 
 1.  Retrieve the list of static TIBCO EMS server destinations from the config files, `queues.conf` and `topics.conf` or by using the following `tibemsadmin` commands:
 
@@ -49,4 +49,4 @@ Steps 1 and 2 can be replicated using a AWS CloudFormation template. For more in
 
     When finished, up the Amazon MQ broker **AMQ\_ORANGE ** configuration file to add Composite Destinations that match TIBCO EMS bridges.
 **Note**
- *Simple Topic to Queue* bridges are needed in TIBCO EMS to support *m-hop* routing. In Amazon MQ this is not needed and queues can be used directly with a [Network of Brokers](https://docs.aws.amazon.com//amazon-mq/latest/developer-guide/network-of-brokers).
+ *Simple Topic to Queue* bridges are needed in TIBCO EMS to support *m-hop* routing. In Amazon MQ this is not needed and queues can be used directly with a [Network of Brokers](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/network-of-brokers).

@@ -516,7 +516,7 @@ For more information about these fields, see the [CTA Specification Web Applicat
 
    A unique identifier for the TLS connection.
 
-   You must enable mTLS for your distributions before you can get information for this field. For more information, see [Mutual TLS authentication with CloudFront (Viewer mTLS)Origin mutual TLS with CloudFront](mtls-authentication.md).
+   You must enable mTLS for your distributions before you can get information for this field. For more information, see [Mutual TLS authentication with CloudFront (Viewer mTLS)](mtls-authentication.md).
 
 1. **`viewer-request-log-data`**
 

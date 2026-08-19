@@ -30,9 +30,11 @@ Pattern: `(?!.* {2})[a-zA-Z][a-zA-Z0-9 _-]{0,48}[a-zA-Z0-9_-]`
 Required: Yes
 
  ** type **   <a name="awscostmanagement-Type-bcmDashboards_DashboardReference-type"></a>
-The dashboard type.
+The dashboard type. The following values are valid:
++  `CUSTOM` – A dashboard that you create and manage
++  `AWS_MANAGED` – A predefined, read-only dashboard that AWS authors and maintains
 Type: String
-Valid Values: `CUSTOM`
+Valid Values: `CUSTOM | AWS_MANAGED`
 Required: Yes
 
  ** updatedAt **   <a name="awscostmanagement-Type-bcmDashboards_DashboardReference-updatedAt"></a>

@@ -764,7 +764,7 @@ If you created a vector database in OpenSearch Serverless for your knowledge bas
 ## Permissions to access your vector database in OpenSearch Managed Clusters
 <a name="kb-permissions-osm"></a>
 
-If you created a vector database in OpenSearch Managed Cluster for your knowledge base, attach the following policy to your Amazon Bedrock Knowledge Bases service role to allow access to the domain. Replace {{<region>}} and {{<accountId>}} with the Region and account ID to which the database belongs. You can allow access to multiple domains by adding them to the `Resource` list. For more information about configuring permissions, see [Prerequisites and permissions required for using OpenSearch Managed Clusters with Amazon Bedrock Knowledge BasesOverview of permissions configuration](kb-osm-permissions-prereq.md).
+If you created a vector database in OpenSearch Managed Cluster for your knowledge base, attach the following policy to your Amazon Bedrock Knowledge Bases service role to allow access to the domain. Replace {{<region>}} and {{<accountId>}} with the Region and account ID to which the database belongs. You can allow access to multiple domains by adding them to the `Resource` list. For more information about configuring permissions, see [Prerequisites and permissions required for using OpenSearch Managed Clusters with Amazon Bedrock Knowledge Bases](kb-osm-permissions-prereq.md).
 
 ------
 #### [ JSON ]

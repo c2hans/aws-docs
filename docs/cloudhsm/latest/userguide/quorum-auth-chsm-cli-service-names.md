@@ -11,8 +11,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/quorum-auth-ch
 
 Each service type is further broken down into a qualifying service name, which contains a specific set of quorum supported service operations that can be performed.
 
-****
-
 | Service name | Service type | Service operations |
 | --- | --- | --- |
 | user | Admin |  + user create<br />+ user delete<br />+ user change-password<br />+ user change-mfa  |

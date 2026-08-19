@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsc
 
 AWS CodeStar Connections provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="codestar-connections-GetConnection"></a>[GetConnection](https://docs.aws.amazon.com/codestar-connections/latest/APIReference/API_GetConnection.html) | Get details about a Connection resource | Read |

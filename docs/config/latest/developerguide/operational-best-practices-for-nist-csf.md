@@ -9,8 +9,6 @@ Conformance packs provide a general-purpose compliance framework designed to ena
 
 The following provides a sample mapping between the NIST Cyber Security Framework (CSF) and AWS managed Config rules. Each AWS Config rule applies to a specific AWS resource, and relates to one or more NIST CSF controls. A NIST CSF control can be related to multiple Config rules. Refer to the table below for more detail and guidance related to these mappings.
 
-****
-
 | Control ID  | Control Description  | AWS Config Rule  | Guidance  |
 | --- | --- | --- | --- |
 | DE.AE-1 | A baseline of network operations and expected data flows for users and systems is established and managed | [elasticsearch-logs-to-cloudwatch](https://docs.aws.amazon.com/config/latest/developerguide/elasticsearch-logs-to-cloudwatch.html) | Ensure Amazon OpenSearch Service domains have error logs enabled and streamed to Amazon CloudWatch Logs for retention and response. Domain error logs can assist with security and access audits, and can help to diagnose availability issues. |

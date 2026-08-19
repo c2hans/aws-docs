@@ -36,7 +36,7 @@ If the verification fails, you'll need to fix the errors before you can test and
 **Note**
 You must save the flow for the changes you made to be applied when you test the flow.
 
-1. (Optional) To view the inputs, outputs, and execution duration for each node, choose **Show trace** in the response. For more information, see [Track each step in your flow by viewing its trace in Amazon BedrockTrack each step in your flow by viewing its trace](flows-trace.md). To return to the visual builder, choose **Hide trace** or select the collapse icon.
+1. (Optional) To view the inputs, outputs, and execution duration for each node, choose **Show trace** in the response. For more information, see [Track each step in your flow by viewing its trace in Amazon Bedrock](flows-trace.md). To return to the visual builder, choose **Hide trace** or select the collapse icon.
 
 1. After you are satisfied with your flow performance, choose **Save and exit**.
 
@@ -47,7 +47,7 @@ You must save the flow for the changes you made to be applied when you test the 
 
 To test your flow, send an [InvokeFlow](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeFlow.html) request with an [Agents for Amazon Bedrock runtime endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#bra-rt). Include the ARN or ID of the flow in the `flowIdentifier` field and the ARN or ID of the alias to use in the `flowAliasIdentifier` field.
 
-To view the inputs and outputs for each node, set the `enableTrace` field to `TRUE`. For more information, see [Track each step in your flow by viewing its trace in Amazon BedrockTrack each step in your flow by viewing its trace](flows-trace.md).
+To view the inputs and outputs for each node, set the `enableTrace` field to `TRUE`. For more information, see [Track each step in your flow by viewing its trace in Amazon Bedrock](flows-trace.md).
 
 The request body specifies the input for the flow and is of the following format:
 

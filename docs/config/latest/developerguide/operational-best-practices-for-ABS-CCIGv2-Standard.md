@@ -9,8 +9,6 @@ Conformance packs provide a general-purpose compliance framework designed to ena
 
 The following provides a sample mapping between the ABS Cloud Computing Implementation Guide 2.0 - Standard Workloads and AWS managed Config rules. Each Config rule applies to a specific AWS resource, and relates to one or more ABS Cloud Computing Implementation Guide controls. An ABS Cloud Computing Implementation Guide control can be related to multiple Config rules. Refer to the table below for more detail and guidance related to these mappings.
 
-****
-
 | Control ID  | AWS Config Rule  | Guidance  |
 | --- | --- | --- |
 | section4a-govern-the-cloud-2-standard-workloads | [account-part-of-organizations](https://docs.aws.amazon.com/config/latest/developerguide/account-part-of-organizations.html) | Centralized management of AWS accounts within AWS Organizations helps to ensure that accounts are compliant. The lack of centralized account governance may lead to inconsistent account configurations, which may expose resources and sensitive data. |

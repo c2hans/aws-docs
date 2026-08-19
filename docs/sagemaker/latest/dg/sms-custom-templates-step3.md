@@ -14,7 +14,7 @@ In this topic, you can learn how to deploy optional [AWS Lambda](https://aws.ama
 
 If you are a new user of Lambda and Ground Truth, we recommend that you use the pages in this section as follows:
 
-1. First, review [Using pre-annotation and post-annotation Lambda functionsUsing Lambda functions](sms-custom-templates-step3-lambda-requirements.md).
+1. First, review [Using pre-annotation and post-annotation Lambda functions](sms-custom-templates-step3-lambda-requirements.md).
 
 1. Then, use the page [Add required permissions to use AWS Lambda with Ground Truth](sms-custom-templates-step3-lambda-permissions.md) to learn about security and permission requirements to use your pre-annotation and post-annotation Lambda functions in a Ground Truth custom labeling job.
 

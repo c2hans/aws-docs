@@ -26,8 +26,6 @@ For information about the AWS services offered in each Region, see [Region Table
 ## Options
 <a name="eb3-codesourceoptions"></a>
 
-****
-
 |  Name  |  Description  |
 | --- | --- |
 | [Common options](eb3-cmd-options.md) |  |

@@ -71,8 +71,6 @@ To get started with data quality for ETL jobs, see [Tutorial: Getting started wi
 
 This table provides an overview of features that each entry point for AWS Glue Data Quality supports.
 
-****
-
 | Feature | Data quality for the Data Catalog | Data quality for ETL jobs |
 | --- | --- | --- |
 | Data sources | Amazon S3, Amazon Redshift, JDBC sources compatible with the Data Catalog, and transactional data lake formats such as Apache Iceberg, Apache Hudi, and Delta Lake. AWS Lake Formation managed OTF formats are also supported with some limitations. Amazon Athena views that are cataloged in AWS Glue Data Catalog are not supported. Please see [Supported source types](data-quality-getting-started.md#data-quality-get-started-supported-source-types).  | All data sources supported by AWS Glue, including custom connectors and third-party connectors. |

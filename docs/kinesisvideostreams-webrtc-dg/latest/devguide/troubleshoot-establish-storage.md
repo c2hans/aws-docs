@@ -17,7 +17,7 @@ This section provides guidance on troubleshooting issues related to setting up a
 
 In WebRTC, the controlling peer initiates the connection to the controlled peer by sending an SDP offer. For peer-to-peer sessions, the viewer participant initiates the connection by sending an offer to the master participant through Signaling. When connecting to the storage session for WebRTC ingestion, the storage session is the controlling peer. For master participants, they still remain the controlled participant. However, viewer participants switch from controlling to controlled.
 
-Upon calling [JoinStorageSession](https://docs.aws.amazon.com//kinesisvideostreams/latest/dg/API_webrtc_JoinStorageSession.html) or [JoinStorageSessionAsViewer](https://docs.aws.amazon.com//kinesisvideostreams/latest/dg/API_webrtc_JoinStorageSessionAsViewer.html), all participants must respond with an SDP answer and exchange ICE candidates with the storage session.
+Upon calling [JoinStorageSession](https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/API_webrtc_JoinStorageSession.html) or [JoinStorageSessionAsViewer](https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/API_webrtc_JoinStorageSessionAsViewer.html), all participants must respond with an SDP answer and exchange ICE candidates with the storage session.
 
 For a sequence diagram, see Understanding WebRTC ingestion and storage.
 
@@ -27,7 +27,7 @@ Signaling messages received from the storage session do not have a senderClientI
 ## Review supported codecs
 <a name="troubleshoot-review-codecs"></a>
 
-When [sending an SDP answer](https://docs.aws.amazon.com//kinesisvideostreams-webrtc-dg/latest/devguide/SendSdpAnswer.html) and [exchanging ICE candidates](https://docs.aws.amazon.com//kinesisvideostreams-webrtc-dg/latest/devguide/SendIceCandidate.html) with the storage session, we recommend including a `correlationId` in the messages. Including a `correlationId` in the messages allows the storage session to return `statusResponse` messages. These messages will contain the `correlationId` of the input message, allowing you to track which message the `statusResponse` belongs to. This allows you to receive immediate feedback about why your SDP answers was rejected.
+When [sending an SDP answer](https://docs.aws.amazon.com/kinesisvideostreams-webrtc-dg/latest/devguide/SendSdpAnswer.html) and [exchanging ICE candidates](https://docs.aws.amazon.com/kinesisvideostreams-webrtc-dg/latest/devguide/SendIceCandidate.html) with the storage session, we recommend including a `correlationId` in the messages. Including a `correlationId` in the messages allows the storage session to return `statusResponse` messages. These messages will contain the `correlationId` of the input message, allowing you to track which message the `statusResponse` belongs to. This allows you to receive immediate feedback about why your SDP answers was rejected.
 
 For more information about `correlationId` and `statusResponse`, see [Asynchronous message reception](async-message-reception-api.md).
 
@@ -52,7 +52,7 @@ a=rtpmap:120 VP8/90000
 ...
 ```
 
-See [JoinStorageSession](https://docs.aws.amazon.com//kinesisvideostreams/latest/dg/API_webrtc_JoinStorageSession.html) for a list of supported codecs.
+See [JoinStorageSession](https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/API_webrtc_JoinStorageSession.html) for a list of supported codecs.
 
 ## If channel is not mapped to a stream, will also throw 400 InvalidArgumentException
 <a name="troubleshoot-channel-mapping"></a>

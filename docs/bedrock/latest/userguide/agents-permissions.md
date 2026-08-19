@@ -256,7 +256,7 @@ If you associate a [guardrail](guardrails.md) with your agent, attach the follow
 ## (Optional) Identity-based policy to allow Amazon Bedrock to access files from S3 to use with code interpretation
 <a name="agents-permissions-files-ci"></a>
 
-If you enable [Enable code interpretation in Amazon Bedrock](agents-enable-code-interpretation.md), attach the following identity-based policy to the service role or add the statement to the policy in [Identity-based permissions for the Agents service role](https://docs.aws.amazon.com//bedrock/latest/userguide/agents-permissions.html#agents-permissions-identity).
+If you enable [Enable code interpretation in Amazon Bedrock](agents-enable-code-interpretation.md), attach the following identity-based policy to the service role or add the statement to the policy in [Identity-based permissions for the Agents service role](https://docs.aws.amazon.com/bedrock/latest/userguide/agents-permissions.html#agents-permissions-identity).
 
 ------
 #### [ JSON ]

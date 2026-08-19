@@ -271,7 +271,8 @@ After reviewing your penetration test findings:
 + Create tracking tickets in your issue management system with links to finding details and evidence
 + Implement fixes and security controls to address identified vulnerabilities
 + Monitor the penetration test run progress indicator for newly discovered vulnerabilities
-+ Schedule a follow-up penetration test to verify that vulnerabilities have been properly remediated
++ Revalidate a finding after you deploy a fix to confirm whether it is still exploitable. See [Revalidate penetration test findings](revalidate-findings.md).
++ Schedule a follow-up penetration test to verify that broader changes have not introduced new vulnerabilities
 + Update your application security testing process and threat model based on findings
 + Review CVSS metrics to understand your application’s overall security posture
 

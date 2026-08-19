@@ -53,7 +53,7 @@ Set your VPC encryption controls by setting the VPC control mode to :
 + *monitor*
 + *enforced*
 
-To check the current control mode for your VPC, use the AWS Management Console or [DescribeVpcs](https://docs.aws.amazon.com//AWSEC2/latest/APIReference/API_DescribeVpcs.html) CLI or API command.
+To check the current control mode for your VPC, use the AWS Management Console or [DescribeVpcs](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeVpcs.html) CLI or API command.
 
 If your VPC enforces encryption, you can only provision Nitro-based DB clusters that support encryption in transit in that VPC. For more information see, [DB instance class types](Concepts.DBInstanceClass.Types.md). For information about Nitro instances, see [Instances built on the AWS Nitro System](https://docs.aws.amazon.com/ec2/latest/instancetypes/ec2-nitro-instances.html) in the *Amazon EC2 User Guide*.
 

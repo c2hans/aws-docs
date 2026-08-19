@@ -91,7 +91,7 @@ To grant your user permissions to import encrypted datasets from Amazon S3 into 
       "kms:GenerateDataKey"
 ```
 
-To learn how to edit the IAM permissions for a role, see [Adding and removing IAM identity permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html) in the *IAM User Guide*. For more information about KMS keys, see [Key policies in AWS Key Management Service](https://docs.aws.amazon.com//kms/latest/developerguide/key-policies.html) in the *AWS KMS Developer Guide*.
+To learn how to edit the IAM permissions for a role, see [Adding and removing IAM identity permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html) in the *IAM User Guide*. For more information about KMS keys, see [Key policies in AWS Key Management Service](https://docs.aws.amazon.com/kms/latest/developerguide/key-policies.html) in the *AWS KMS Developer Guide*.
 
 ## FAQs
 <a name="canvas-kms-faqs"></a>

@@ -14,8 +14,6 @@ Delete tags from existing, tagged resources: Autoscaling, EC2, Elastic Load Bala
 ## Change Type Details
 <a name="ct-2zebb2czoxpjd-MATd-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2zebb2czoxpjd |

@@ -71,7 +71,7 @@ You can switch between modes at any time without disabling Contributor Insights.
 
 1. Choose **Save changes**.
 
-   Once complete, the graphs will reflect the new mode.
+   After this is complete, the graphs will reflect the new mode.
 
 ### Creating CloudWatch alarms
 <a name="usecontributorinsights_console_alarms"></a>
@@ -208,7 +208,7 @@ The AWS CLI provides programmatic access to Contributor Insights with full suppo
    aws dynamodb describe-contributor-insights --table-name Music
    ```
 
-   During the mode switch, the `ContributorInsightsStatus` will show as `ENABLING`. Once complete, it will show as `ENABLED` with the new mode.
+   During the mode switch, the `ContributorInsightsStatus` will show as `ENABLING`. After this is complete, it will show as `ENABLED` with the new mode.
 
 ### Managing Contributor Insights
 <a name="usecontributorinsights_cli.management"></a>

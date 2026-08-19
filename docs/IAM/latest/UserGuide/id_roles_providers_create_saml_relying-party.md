@@ -25,4 +25,4 @@ You also need to create appropriate claim rules in your IdP that specify AWS as 
 +  [Integrate third-party SAML solution providers with AWS](id_roles_providers_saml_3rd-party.md). This topic provides links to documentation provided by third-party organizations about how to integrate identity solutions with AWS.
 
 **Note**
-To improve federation resiliency, we recommend that you configure your IdP and AWS federation to support multiple SAML sign-in endpoints. For details, see the AWS Security Blog article [How to use regional SAML endpoints for failover](https://aws.amazon.com/blogs//security/how-to-use-regional-saml-endpoints-for-failover).
+To improve federation resiliency, we recommend that you configure your IdP and AWS federation to support multiple SAML sign-in endpoints. For details, see the AWS Security Blog article [How to use regional SAML endpoints for failover](https://aws.amazon.com/blogs/security/how-to-use-regional-saml-endpoints-for-failover).

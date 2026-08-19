@@ -98,6 +98,7 @@ The following data types are supported:
 +  [DataSourceConfig](API_DataSourceConfig.md)
 +  [DataSourceType](API_DataSourceType.md)
 +  [DeleteMemoryStrategyInput](API_DeleteMemoryStrategyInput.md)
++  [DerivedEvaluatorConfig](API_DerivedEvaluatorConfig.md)
 +  [Descriptors](API_Descriptors.md)
 +  [EbsVolumeConfiguration](API_EbsVolumeConfiguration.md)
 +  [Ec2Configuration](API_Ec2Configuration.md)

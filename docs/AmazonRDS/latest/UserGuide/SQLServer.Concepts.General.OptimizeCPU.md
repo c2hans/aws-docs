@@ -13,8 +13,8 @@ To specify processor feature, use the following parameters:
 --processor-features "Name=coreCount,Value={{value}}" \
 	"Name=threadsPerCore,Value={{value}}"
 ```
-+ **coreCount** – Specify the number of CPU cores for the DB instance, to optimize licensing costs for DB instances. See [DB instance classes that support Optimize CPUDB instance class support](SQLServer.Concepts.General.OptimizeCPU.Support.md) to find the allowed values for core count for a selected instance type.
-+ **threadsPerCore** – Specify the threads per core to define the number of threads per CPU core. See [DB instance classes that support Optimize CPUDB instance class support](SQLServer.Concepts.General.OptimizeCPU.Support.md) to find the allowed values for threads per core for a selected instance type.
++ **coreCount** – Specify the number of CPU cores for the DB instance, to optimize licensing costs for DB instances. See [DB instance classes that support Optimize CPU](SQLServer.Concepts.General.OptimizeCPU.Support.md) to find the allowed values for core count for a selected instance type.
++ **threadsPerCore** – Specify the threads per core to define the number of threads per CPU core. See [DB instance classes that support Optimize CPU](SQLServer.Concepts.General.OptimizeCPU.Support.md) to find the allowed values for threads per core for a selected instance type.
 
 Sample command to create an RDS for SQL Server instance with Optimize CPU settings:
 
@@ -39,7 +39,7 @@ In this example, you create a `db.m7i.8xlarge` instance, which by default has a 
 If you create the instance without the `--processor-features` parameter, core count is set to 16 and threads per core is set to 1 by default, resulting in a default vCPU count of 16.
 
 Some considerations to keep in mind while specifying processor features:
-+ **Create** – Specify both the `coreCount` and `threadsPerCore` for the `processor-features` parameter from the allowed values. See [DB instance classes that support Optimize CPUDB instance class support](SQLServer.Concepts.General.OptimizeCPU.Support.md).
++ **Create** – Specify both the `coreCount` and `threadsPerCore` for the `processor-features` parameter from the allowed values. See [DB instance classes that support Optimize CPU](SQLServer.Concepts.General.OptimizeCPU.Support.md).
 + **Modify** – When modifying from one instance class configured with Optimize CPU settings to another one that supports Optimize CPU settings, you must specify the default processor settings using the `--use-default-processor-features` parameter or explicitly define the options during the modify request.
 **Note**
 Changing the vCPU count can have implications for the licensing fee cost associated with the DB instance.
@@ -51,6 +51,6 @@ Changing the vCPU count can have implications for the licensing fee cost associa
 
 The following limitations apply when using Optimize CPU:
 + Optimize CPU supports the following editions: Enterprise, Standard, and Web (License Included), and Enterprise, Standard, and Developer (Bring Your Own Media). Supported instance families include m7i, r7i, m8i, r8i, m8a, r8a, and x2m.
-+ Optimize CPU offers different valid core settings depending on the instance class. For more details, see [DB instance classes that support Optimize CPUDB instance class support](SQLServer.Concepts.General.OptimizeCPU.Support.md).
++ Optimize CPU offers different valid core settings depending on the instance class. For more details, see [DB instance classes that support Optimize CPU](SQLServer.Concepts.General.OptimizeCPU.Support.md).
 + Customizing the number of CPU cores is supported on instance sizes of `2xlarge` and above. With these instance types, the minimum number of vCPCU supported for Optimize CPU is 4.
 + Optimize CPU allows only 1 thread per core since Hyper-Threading is disabled for instances starting from 7th generation that support Optimize CPU.

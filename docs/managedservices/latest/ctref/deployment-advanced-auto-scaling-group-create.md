@@ -14,8 +14,6 @@ Use to create an Auto Scaling group, the launch configuration to use to create n
 ## Change Type Details
 <a name="ct-2tylseo8rxfsc-DAAc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2tylseo8rxfsc |

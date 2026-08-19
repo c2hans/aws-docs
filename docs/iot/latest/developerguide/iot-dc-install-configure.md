@@ -102,7 +102,7 @@ This procedure prepares the **MQTT test client** in the AWS IoT console to subsc
 
 **To prepare the **MQTT test client** to subscribe to all MQTT messages**
 
-1. On your local host computer, in the [AWS IoT console](https://console.aws.amazon.com//iot/home#/test), choose **MQTT test client**.
+1. On your local host computer, in the [AWS IoT console](https://console.aws.amazon.com/iot/home#/test), choose **MQTT test client**.
 
 1. In the **Subscribe to a topic** tab, in **Topic filter**, enter **\#** (a single pound sign), and choose **Subscribe** to subscribe to every MQTT topic.
 

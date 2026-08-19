@@ -14,8 +14,6 @@ You can use autocommit to transition files to WORM if they haven't been modified
 
 You can specify an autocommit period between five minutes and 10 years. The following table lists the specific ranges that are supported.
 
-****
-
 | Unit | Value |
 | --- | --- |
 | Minutes | 5 - 65,535 |

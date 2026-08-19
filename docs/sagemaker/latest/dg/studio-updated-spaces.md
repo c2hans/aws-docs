@@ -20,7 +20,7 @@ Spaces are used to manage the storage and resource needs of some Amazon SageMake
 A space is composed of the following resources:
 + A storage volume.
   + For Studio Classic, the space is connected to the shared Amazon Elastic File System (Amazon EFS) volume for the domain.
-  + For other applications, a distinct Amazon Elastic Block Store (Amazon EBS) volume is attached to the space. All applications are given their own Amazon EBS volume. Applications do not have access to the Amazon EBS volume of other applications. For more information about Amazon EBS volumes, see [Amazon Elastic Block Store (Amazon EBS)](https://docs.aws.amazon.com//AWSEC2/latest/UserGuide/AmazonEBS.html).
+  + For other applications, a distinct Amazon Elastic Block Store (Amazon EBS) volume is attached to the space. All applications are given their own Amazon EBS volume. Applications do not have access to the Amazon EBS volume of other applications. For more information about Amazon EBS volumes, see [Amazon Elastic Block Store (Amazon EBS)](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AmazonEBS.html).
 + The application type of the space.
 + The image that the application is based on.
 

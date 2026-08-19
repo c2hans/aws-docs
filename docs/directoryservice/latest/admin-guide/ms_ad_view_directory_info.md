@@ -58,6 +58,6 @@ You can view AWS Managed Microsoft AD directory information using the AWS Manage
   Format-List *
   ```
 
-  For more information, see [`Get-DSDirectory`](https://docs.aws.amazon.com//powershell/latest/reference/items/Get-DSDirectory.html).
+  For more information, see [`Get-DSDirectory`](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-DSDirectory.html).
 
 ------

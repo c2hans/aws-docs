@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/timestream/latest/developerguide/monitoring-cloudwatch.html
 ---
 
-For similar capabilities to Amazon Timestream for LiveAnalytics, consider Amazon Timestream for InfluxDB. It offers simplified data ingestion and single-digit millisecond query response times for real-time analytics. Learn more [here](https://docs.aws.amazon.com//timestream/latest/developerguide/timestream-for-influxdb.html).
+For similar capabilities to Amazon Timestream for LiveAnalytics, consider Amazon Timestream for InfluxDB. It offers simplified data ingestion and single-digit millisecond query response times for real-time analytics. Learn more [here](https://docs.aws.amazon.com/timestream/latest/developerguide/timestream-for-influxdb.html).
 
 # Monitoring with Amazon CloudWatch
 <a name="monitoring-cloudwatch"></a>
@@ -18,8 +18,6 @@ You can monitor Timestream for LiveAnalytics using Amazon CloudWatch, which coll
 <a name="how-to-use-metrics"></a>
 
 The metrics reported by Timestream for LiveAnalytics provide information that you can analyze in different ways. The following list shows some common uses for the metrics. These are suggestions to get you started, not a comprehensive list.
-
-****
 
 |  How can I?  |  Relevant metrics  |
 | --- | --- |

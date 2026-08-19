@@ -14,8 +14,6 @@ Removes the associations between specified resolver rules (upto 20) and a specif
 ## Change Type Details
 <a name="ct-2pfarpvczsstr-MARd-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2pfarpvczsstr |

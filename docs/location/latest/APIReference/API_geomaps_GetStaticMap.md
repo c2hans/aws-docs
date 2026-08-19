@@ -5,10 +5,7 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geomaps
 # GetStaticMap
 <a name="API_geomaps_GetStaticMap"></a>
 
-**Note**
-This operation is not supported in `ap-southeast-1` and `ap-southeast-5` regions for [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html) customers.
-
- `GetStaticMap` provides high-quality static map images with customizable options. You can modify the map's appearance and overlay additional information. It's an ideal solution for applications requiring tailored static map snapshots.
+ `GetStaticMap` provides high-quality static map images with customizable options. You can modify the map's appearance and overlay additional information. It's an ideal solution for applications requiring tailored static map snapshots. Not supported in `ap-southeast-1` and `ap-southeast-5` regions for [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html) customers.
 
 For more information, see the following topics in the *Amazon Location Service Developer Guide*:
 +  [Static maps](https://docs.aws.amazon.com/location/latest/developerguide/static-maps.html)

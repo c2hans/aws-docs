@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 
 Perform the following steps to onboard to monitoring and incident management for Amazon EKS.
 
-1. **Enable Amazon EKS cost optimization tags:** See [Tagging your resources for billing](https://docs.aws.amazon.com//eks/latest/userguide/eks-using-tags.html#tag-resources-for-billing) in the * *Amazon EKS User Guide**.
+1. **Enable Amazon EKS cost optimization tags:** See [Tagging your resources for billing](https://docs.aws.amazon.com/eks/latest/userguide/eks-using-tags.html#tag-resources-for-billing) in the * *Amazon EKS User Guide**.
 
 1. **Initiate onboarding of monitoring and incident management for EKS:** Contact your Cloud Service Delivery Manager (CSDM) with account IDs and cluster names to onboard.
 

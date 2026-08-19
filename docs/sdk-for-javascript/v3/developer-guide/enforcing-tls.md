@@ -12,7 +12,7 @@ To add increased security when communicating with AWS services, configure the AW
 Transport Layer Security (TLS) is a protocol used by web browsers and other applications to ensure the privacy and integrity of data exchanged over a network.
 
 **Important**
-As of June 10, 2024, we [announced](https://aws.amazon.com/blogs//security/faster-aws-cloud-connections-with-tls-1-3/) that TLS 1.3 is available on AWS service API endpoints across each of the AWS Regions. The AWS SDK for JavaScript v3 does not negotiate the TLS version itself. Instead, it uses the TLS version determined by Node.js, which is configurable via `https.Agent`. AWS recommends using the current Active LTS version of Node.js.
+As of June 10, 2024, we [announced](https://aws.amazon.com/blogs/security/faster-aws-cloud-connections-with-tls-1-3/) that TLS 1.3 is available on AWS service API endpoints across each of the AWS Regions. The AWS SDK for JavaScript v3 does not negotiate the TLS version itself. Instead, it uses the TLS version determined by Node.js, which is configurable via `https.Agent`. AWS recommends using the current Active LTS version of Node.js.
 
 ## Verify and enforce TLS in Node.js
 <a name="node-verify-enforce-tls"></a>

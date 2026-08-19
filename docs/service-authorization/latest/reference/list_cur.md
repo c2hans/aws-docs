@@ -25,8 +25,6 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_cur-actions-as-permissions).
 
-****
-
 - **   DeleteReportDefinition  **
   - **IAM action:**  [cur:DeleteReportDefinition](#list_cur-action-DeleteReportDefinition)
   - **Condition key:**
@@ -71,8 +69,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
 <a name="list_cur-actions-as-permissions"></a>
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
-
-****
 
 - **   [DeleteReportDefinition](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_cur_DeleteReportDefinition.html)  **
   - **Description:** Grants permission to delete Cost and Usage Report Definition
@@ -121,8 +117,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 The following actions are defined by AWS Cost and Usage Report but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 | Actions | Description | Resource types (\*required) | Condition keys | Access level |
 | --- | --- | --- | --- | --- |
 |   [GetClassicReport](https://docs.aws.amazon.com/cur/latest/userguide/security.html#user-permissions)  | Grants permission to get Bills CSV report |  |   | Read |
@@ -136,8 +130,6 @@ The following actions are defined by AWS Cost and Usage Report but are not direc
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
 
-****
-
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
 |  [cur](https://docs.aws.amazon.com/cur/latest/userguide/what-is-cur.html)  | arn:${Partition}:cur:${Region}:${Account}:definition/${ReportName} |   |
@@ -146,8 +138,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_cur-policy-keys"></a>
 
 AWS Cost and Usage Report defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

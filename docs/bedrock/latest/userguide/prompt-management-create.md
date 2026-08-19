@@ -106,8 +106,6 @@ To create a prompt, send a [CreatePrompt](https://docs.aws.amazon.com/bedrock/la
 
 The following fields are required:
 
-****
-
 | Field | Brief description |
 | --- | --- |
 | name | A name for the prompt. |
@@ -169,8 +167,6 @@ If you include the `genAiResource` field, you can only test the prompt in the co
 + metadata – Metadata to associate with the prompt variant. You can append key-value pairs to the array to tag the prompt variant with metadata.
 
 The following fields are optional:
-
-****
 
 | Field | Use case |
 | --- | --- |

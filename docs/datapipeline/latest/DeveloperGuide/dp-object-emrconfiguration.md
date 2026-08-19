@@ -168,13 +168,9 @@ The following example modifies a Hive-specific property for an EMR cluster:
 
 This object includes the following fields.
 
-****
-
 | Required Fields | Description | Slot Type |
 | --- | --- | --- |
 | classification | Classification for the configuration. | String |
-
-****
 
 | Optional Fields | Description | Slot Type |
 | --- | --- | --- |
@@ -182,13 +178,9 @@ This object includes the following fields.
 | parent | Parent of the current object from which slots will be inherited. | Reference Object, e.g. "parent":{"ref":"myBaseObjectId"} |
 | property | Configuration property. | Reference Object, e.g. "property":{"ref":"myPropertyId"} |
 
-****
-
 | Runtime Fields | Description | Slot Type |
 | --- | --- | --- |
 | @version | Pipeline version the object was created with. | String |
-
-****
 
 | System Fields | Description | Slot Type |
 | --- | --- | --- |

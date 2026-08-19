@@ -95,4 +95,4 @@ Some other differences between Aurora PostgreSQL and Aurora PostgreSQL Limitless
 + Aurora PostgreSQL performs `VACUUM` operations on transaction IDs up to the oldest ongoing transaction. If there's no ongoing transaction in the database, `VACUUM` performs the operation until the last transaction.
 + Aurora PostgreSQL Limitless Database synchronizes the oldest time snapshot every 10 seconds. Therefore, `VACUUM` might not perform the operation on any transactions that were run within the last 10 seconds.
 
-For information on support for `VACUUM` in Aurora PostgreSQL Limitless Database, see [VACUUM](limitless-reference.DML-limitations.md#limitless-reference.DML-limitations.VACUUM) in the [Aurora PostgreSQL Limitless Database referenceLimitless Database reference](limitless-reference.md).
+For information on support for `VACUUM` in Aurora PostgreSQL Limitless Database, see [VACUUM](limitless-reference.DML-limitations.md#limitless-reference.DML-limitations.VACUUM) in the [Aurora PostgreSQL Limitless Database reference](limitless-reference.md).

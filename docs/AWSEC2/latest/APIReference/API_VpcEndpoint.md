@@ -66,6 +66,11 @@ The ID of the AWS account that owns the endpoint.
 Type: String
 Required: No
 
+ ** PayerResponsibilitySet.N **
+The payer responsibility settings for the endpoint.
+Type: Array of [PayerResponsibilityEntry](API_PayerResponsibilityEntry.md) objects
+Required: No
+
  ** policyDocument **
 The policy document associated with the endpoint, if applicable.
 Type: String

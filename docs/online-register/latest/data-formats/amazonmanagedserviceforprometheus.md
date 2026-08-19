@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon Managed Service for Prometheus provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="aps-DescribeAlertManagerDefinition"></a>[DescribeAlertManagerDefinition](https://docs.aws.amazon.com/prometheus/latest/APIReference/API_DescribeAlertManagerDefinition.html) | Describe an alert manager definition | Read |

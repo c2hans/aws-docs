@@ -361,7 +361,7 @@ If you specify the `provided` identifier for this property, you can use the `Met
 *CloudFormation compatibility*: This property is passed directly to the `[Runtime](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-runtime)` property of an `AWS::Lambda::Function` resource.
 
  `RuntimeManagementConfig`   <a name="sam-function-runtimemanagementconfig"></a>
-Configure runtime management options for your Lambda functions such as runtime environment updates, rollback behavior, and selecting a specific runtime version. To learn more, see [Lambda runtime updates](https://docs.aws.amazon.com//lambda/latest/dg/runtimes-update.html) in the *AWS Lambda Developer Guide*.
+Configure runtime management options for your Lambda functions such as runtime environment updates, rollback behavior, and selecting a specific runtime version. To learn more, see [Lambda runtime updates](https://docs.aws.amazon.com/lambda/latest/dg/runtimes-update.html) in the *AWS Lambda Developer Guide*.
 *Type*: [RuntimeManagementConfig](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-runtimemanagementconfig.html)
 *Required*: No
 *CloudFormation compatibility*: This property is passed directly to the `[ RuntimeManagementConfig](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-runtimemanagementconfig.html)` property of an `AWS::Lambda::Function` resource.

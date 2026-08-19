@@ -14,8 +14,6 @@ You can only add an Amazon Kendra index as retriever if you have existing Amazon
 
 When you use the APIs, you must create a retriever for your Amazon Q Business index separately.
 
-****
-
 | API action | API description | Relevant User Guide topic |
 | --- | --- | --- |
 | [CreateRetriever](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateRetriever.html) | Creates an Amazon Q Business or Amazon Kendra retriever | +  [Creating an Amazon Q Business retriever](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/native-retriever.html) <br />+  [Creating an Amazon Kendra retriever](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/add-kendra-retriever.html)  |

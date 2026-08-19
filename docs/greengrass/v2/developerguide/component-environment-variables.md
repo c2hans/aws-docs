@@ -30,10 +30,10 @@ This feature is available for v2.5.5 and later of the [Greengrass nucleus compon
 The path to the root certificate authority (CA) certificate that the Greengrass nucleus uses.
 
 `AWS_GG_NUCLEUS_DOMAIN_SOCKET_FILEPATH_FOR_COMPONENT`
-The path to the IPC socket that components use to communicate with the AWS IoT Greengrass Core software. For more information, see [Use the AWS IoT Device SDK to communicate with the Greengrass nucleus, other components, and AWS IoT CoreCommunicate with the Greengrass nucleus, other components, and AWS IoT Core](interprocess-communication.md).
+The path to the IPC socket that components use to communicate with the AWS IoT Greengrass Core software. For more information, see [Use the AWS IoT Device SDK to communicate with the Greengrass nucleus, other components, and AWS IoT Core](interprocess-communication.md).
 
 `SVCUID`
-The secret token that components use to connect to the IPC socket and communicate with the AWS IoT Greengrass Core software. For more information, see [Use the AWS IoT Device SDK to communicate with the Greengrass nucleus, other components, and AWS IoT CoreCommunicate with the Greengrass nucleus, other components, and AWS IoT Core](interprocess-communication.md).
+The secret token that components use to connect to the IPC socket and communicate with the AWS IoT Greengrass Core software. For more information, see [Use the AWS IoT Device SDK to communicate with the Greengrass nucleus, other components, and AWS IoT Core](interprocess-communication.md).
 
 `AWS_CONTAINER_AUTHORIZATION_TOKEN`
 The secret token that components use to retrieve credentials from the [token exchange service component](token-exchange-service-component.md).

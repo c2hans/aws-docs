@@ -14,7 +14,7 @@ You can use sample use cases to verify that your rule captures the events you ne
 ## Using the API or AWS Command Line Interface
 <a name="create-rule-multiple-services-categories"></a>
 
-For a new or existing rule, use the [PutRule](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_PutRule.html) API operation or the `aws events put-rule` command to update the event pattern. To view an example AWS CLI command, see [put-rule](https://docs.aws.amazon.com//cli/latest/reference/events/put-rule.html) in the *AWS CLI Command Reference*.
+For a new or existing rule, use the [PutRule](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_PutRule.html) API operation or the `aws events put-rule` command to update the event pattern. To view an example AWS CLI command, see [put-rule](https://docs.aws.amazon.com/cli/latest/reference/events/put-rule.html) in the *AWS CLI Command Reference*.
 
 **Example: Setting up rules for issues for only the Amazon EC2 service**
 The following event pattern creates a rule to monitor issue events for the Amazon EC2 service.

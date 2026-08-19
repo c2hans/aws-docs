@@ -14,8 +14,6 @@ Create an AWS Application Load Balancer (ALB), with additional listeners.
 ## Change Type Details
 <a name="ct-111r1yayblnw4-DAAc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-111r1yayblnw4 |

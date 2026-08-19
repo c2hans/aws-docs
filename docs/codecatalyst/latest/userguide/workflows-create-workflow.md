@@ -7,14 +7,14 @@ Amazon CodeCatalyst is no longer open to new customers. Existing customers can c
 # Creating a workflow
 <a name="workflows-create-workflow"></a>
 
-A *workflow* is an automated procedure that describes how to build, test, and deploy your code as part of a continuous integration and continuous delivery (CI/CD) system. A workflow defines a series of steps, or *actions*, to take during a workflow run. A workflow also defines the events, or *triggers*, that cause the workflow to start. To set up a workflow, you create a *workflow definition file* using the CodeCatalyst console's [visual or YAML editor](https://docs.aws.amazon.com//codecatalyst/latest/userguide/flows.html#workflow.editors).
+A *workflow* is an automated procedure that describes how to build, test, and deploy your code as part of a continuous integration and continuous delivery (CI/CD) system. A workflow defines a series of steps, or *actions*, to take during a workflow run. A workflow also defines the events, or *triggers*, that cause the workflow to start. To set up a workflow, you create a *workflow definition file* using the CodeCatalyst console's [visual or YAML editor](https://docs.aws.amazon.com/codecatalyst/latest/userguide/flows.html#workflow.editors).
 
 **Tip**
-For a quick look at how you might use workflows in a project, [create a project with a blueprint](https://docs.aws.amazon.com//codecatalyst/latest/userguide/projects-create.html#projects-create-console-template). Each blueprint deploys a functioning workflow that you can review, run, and experiment with.
+For a quick look at how you might use workflows in a project, [create a project with a blueprint](https://docs.aws.amazon.com/codecatalyst/latest/userguide/projects-create.html#projects-create-console-template). Each blueprint deploys a functioning workflow that you can review, run, and experiment with.
 
 Use the following procedure to create a workflow in CodeCatalyst. The workflow will be stored as a YAML file in a `~/.codecatalyst/workflows/` folder in the chosen source repository. Optionally, you can store the workflow in a subfolder of `~/.codecatalyst/workflows/` by prefacing the workflow file name with a folder name when you commit it. For more information, see the following instructions.
 
-For more information about workflows, see [Build, test, and deploy with workflowsBuild, test, and deploy with workflows](workflow.md).
+For more information about workflows, see [Build, test, and deploy with workflows](workflow.md).
 
 ------
 #### [ Visual ]<a name="workflows-create"></a>

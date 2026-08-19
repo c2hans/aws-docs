@@ -30,7 +30,7 @@ For more information, see the AWS Online Tech talk [Deep Dive on Bring Your Own 
 + **X.509 Self-sign certificate** — A certificate standard most commonly used to encrypt and authenticate data within a network. It is a certificate used by AWS to validate control over IP space from an RDAP record. For more information about X.509 certificates, see [RFC 3280](https://datatracker.ietf.org/doc/html/rfc3280).
 + **Autonomous System Number (ASN)** – A globally unique identifier that defines a group of IP prefixes run by one or more network operators that maintain a single, clearly-defined routing policy.
 + **Regional Internet Registry (RIR)** – An organization that manages allocation and registration of IP addresses and ASNs within a region of the world.
-+ **Registry Data Access Protocol (RDAP)** — A read-only protocol to query current registration data within a RIR. Entries within the queried RIR database are referred to as "RDAP records". Certain record types need to be updated by customers via a RIR-provided mechanism. These records are queried by AWS to verify control of an address space in the RIR.
++ **Registry Data Access Protocol (RDAP)** — A read-only protocol to query current registration data within a RIR. Entries within the queried RIR database are referred to as "RDAP records". Certain record types need to be updated by customers through a RIR-provided mechanism. These records are queried by AWS to verify control of an address space in the RIR.
 + **Route Origin Authorization (ROA)** — An object created by RIRs for customers to authenticate IP advertisement in particular autonomous systems. For an overview, see [Route Origin Authorizations (ROAs)](https://www.arin.net/resources/manage/rpki/roa_request/) on the ARIN website.
 + **Local Internet Registry (LIR)** — Organizations such as internet service providers that allocate a block of IP addresses from an RIR for their customers.
 
@@ -49,12 +49,12 @@ For more information, see the AWS Online Tech talk [Deep Dive on Bring Your Own 
 + A single ROA object and RDAP record are needed for a large CIDR block. You can bring multiple smaller CIDR blocks from that range to AWS, even across multiple AWS Regions, using the single object and record.
 + BYOIP is not supported for Wavelength Zones or on AWS Outposts.
 + Do not make any manual changes for BYOIP in RADb or any other IRR. BYOIP will automatically update RADb. Any manual changes that include the BYOIP ASN will cause the BYOIP provision operation to fail.
-+ Once you bring an IPv4 address range to AWS, you can use all of the IP addresses in the range, including the first address (the network address) and the last address (the broadcast address).
++ After you bring an IPv4 address range to AWS, you can use all of the IP addresses in the range, including the first address (the network address) and the last address (the broadcast address).
 
 ## Regional availability
 <a name="byoip-reg-avail"></a>
 
-The BYOIP feature is currently available in all commercial [AWS Regions](https://aws.amazon.com//about-aws/global-infrastructure/regions_az/) except for China Regions.
+The BYOIP feature is currently available in all commercial [AWS Regions](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/) except for China Regions.
 
 ## Local Zone availability
 <a name="byoip-zone-avail"></a>

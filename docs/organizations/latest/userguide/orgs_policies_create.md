@@ -38,7 +38,7 @@ To create SCPs, you need permission to run the following action:
 
 1. On the [**Create new service control policy** page](https://console.aws.amazon.com/organizations/home/policies/service-control/create), enter a **Policy name** and an optional **Policy description**.
 
-1. (Optional) Add one or more tags by choosing **Add tag** and then entering a key and an optional value. Leaving the value blank sets it to an empty string; it isn't `null`. You can attach up to 50 tags to a policy. For more information, see [Tagging AWS Organizations resourcesConsiderations](orgs_tagging.md).
+1. (Optional) Add one or more tags by choosing **Add tag** and then entering a key and an optional value. Leaving the value blank sets it to an empty string; it isn't `null`. You can attach up to 50 tags to a policy. For more information, see [Tagging AWS Organizations resources](orgs_tagging.md).
 **Note**
 In most of the steps that follow, we discuss using the controls on the right side of the JSON editor to construct the policy, element by element. Alternatively, you can, at any time, simply enter text in the JSON editor on the left side of the window. You can directly type, or use copy and paste.
 
@@ -156,7 +156,7 @@ To create RCPs, you need permission to run the following action:
 
 1. On the [**Create new resource control policy** page](https://console.aws.amazon.com/organizations/home/policies/service-control/create), enter a **Policy name** and an optional **Policy description**.
 
-1. (Optional) Add one or more tags by choosing **Add tag** and then entering a key and an optional value. Leaving the value blank sets it to an empty string; it isn't `null`. You can attach up to 50 tags to a policy. For more information, see [Tagging AWS Organizations resourcesConsiderations](orgs_tagging.md).
+1. (Optional) Add one or more tags by choosing **Add tag** and then entering a key and an optional value. Leaving the value blank sets it to an empty string; it isn't `null`. You can attach up to 50 tags to a policy. For more information, see [Tagging AWS Organizations resources](orgs_tagging.md).
 **Note**
 In most of the steps that follow, we discuss using the controls on the right side of the JSON editor to construct the policy, element by element. Alternatively, you can, at any time, simply enter text in the JSON editor on the left side of the window. You can directly type, or use copy and paste.
 
@@ -260,7 +260,7 @@ To create a declarative policy, you need permission to run the following action:
 
 1. On the [**Create new declarative policy for EC2** page](https://console.aws.amazon.com/organizations/v2/home/policies/declarative-policy-ec2/create), enter a **Policy name** and an optional **Policy description**.
 
-1. (Optional) You can add one or more tags to the policy by choosing **Add tag** and then entering a key and an optional value. Leaving the value blank sets it to an empty string; it isn't `null`. You can attach up to 50 tags to a policy. For more information, see [Tagging AWS Organizations resourcesConsiderations](orgs_tagging.md).
+1. (Optional) You can add one or more tags to the policy by choosing **Add tag** and then entering a key and an optional value. Leaving the value blank sets it to an empty string; it isn't `null`. You can attach up to 50 tags to a policy. For more information, see [Tagging AWS Organizations resources](orgs_tagging.md).
 
 1. You can build the policy using the **Visual editor** as described in this procedure. You can also enter or paste policy text in the **JSON** tab. For information about declarative policy syntax, see [EC2 policy syntax and examples](orgs_manage_policies_ec2_syntax.md).
 
@@ -345,7 +345,7 @@ The visual editor makes the process easy, but it limits your flexibility. It's a
 
 1. On the **Create policy** page, enter a ****Policy name**** and an optional **Policy description**.
 
-1. (Optional) You can add one or more tags to the policy by choosing **Add tag** and then entering a key and an optional value. Leaving the value blank sets it to an empty string; it isn't `null`. You can attach up to 50 tags to a policy. For more information about tagging, see [Tagging AWS Organizations resourcesConsiderations](orgs_tagging.md).
+1. (Optional) You can add one or more tags to the policy by choosing **Add tag** and then entering a key and an optional value. Leaving the value blank sets it to an empty string; it isn't `null`. You can attach up to 50 tags to a policy. For more information about tagging, see [Tagging AWS Organizations resources](orgs_tagging.md).
 
 1. You can build the policy using the **Visual editor** as described in this procedure. You can also enter or paste policy text in the **JSON** tab. For information about backup policy syntax, see [Backup policy syntax and examples](orgs_manage_policies_backup_syntax.md).
 
@@ -484,7 +484,7 @@ The visual editor makes the process easy, but it limits your flexibility. It's a
 
 1. On the **Create policy** page, enter a ****Policy name**** and an optional **Policy description**.
 
-1. (Optional) You can add one or more tags to the policy object itself. These tags are not part of the policy. To do this, choose **Add tag** and then enter a key and an optional value. Leaving the value blank sets it to an empty string; it isn't `null`. You can attach up to 50 tags to a policy. For more information, see [Tagging AWS Organizations resourcesConsiderations](orgs_tagging.md).
+1. (Optional) You can add one or more tags to the policy object itself. These tags are not part of the policy. To do this, choose **Add tag** and then enter a key and an optional value. Leaving the value blank sets it to an empty string; it isn't `null`. You can attach up to 50 tags to a policy. For more information, see [Tagging AWS Organizations resources](orgs_tagging.md).
 
 1. You can build the tag policy using the **Visual editor** as described in this procedure. You can also type or paste a tag policy in the **JSON** tab. For information about tag policy syntax, see [Tag policy syntax](orgs_manage_policies_example-tag-policies.md#tag-policy-syntax-reference).
 
@@ -599,7 +599,7 @@ The visual editor makes the process easy, but it limits your flexibility. It's a
 
 1. On the [**Create new chat applications policy** page](https://console.aws.amazon.com/organizations/v2/home/policies/chatbot-policy/create), enter a **Policy name** and an optional **Policy description**.
 
-1. (Optional) You can add one or more tags to the policy by choosing **Add tag** and then entering a key and an optional value. Leaving the value blank sets it to an empty string; it isn't `null`. You can attach up to 50 tags to a policy. For more information, see [Tagging AWS Organizations resourcesConsiderations](orgs_tagging.md).
+1. (Optional) You can add one or more tags to the policy by choosing **Add tag** and then entering a key and an optional value. Leaving the value blank sets it to an empty string; it isn't `null`. You can attach up to 50 tags to a policy. For more information, see [Tagging AWS Organizations resources](orgs_tagging.md).
 
 1. You can build the policy using the **Visual editor** as described in this procedure. You can also enter or paste policy text in the **JSON** tab. For information about chat applications policy syntax, see [Chat applications policy syntax and examples](orgs_manage_policies_chatbot_syntax.md).
 
@@ -719,7 +719,7 @@ To create an AI services opt-out policy, you need permission to run the followin
 
 1. On the [**Create new AI services opt-out policy** page](https://console.aws.amazon.com/organizations/v2/home/policies/aiservices-opt-out-policy/create), enter a **Policy name** and an optional **Policy description**.
 
-1. (Optional) You can add one or more tags to the policy by choosing **Add tag** and then entering a key and an optional value. Leaving the value blank sets it to an empty string; it isn't `null`. You can attach up to 50 tags to a policy. For more information, see [Tagging AWS Organizations resourcesConsiderations](orgs_tagging.md).
+1. (Optional) You can add one or more tags to the policy by choosing **Add tag** and then entering a key and an optional value. Leaving the value blank sets it to an empty string; it isn't `null`. You can attach up to 50 tags to a policy. For more information, see [Tagging AWS Organizations resources](orgs_tagging.md).
 
 1. Enter or paste the policy text in the **JSON** tab. For information about AI services opt-out policy syntax, see [AI services opt-out policy syntax and examples](orgs_manage_policies_ai-opt-out_syntax.md). For example policies that you can use as a starting point, see [AI services opt-out policy examples](orgs_manage_policies_ai-opt-out_syntax.md#ai-opt-out-policy-examples).
 
@@ -796,7 +796,7 @@ To create a upgrade rollout policy, you need permission to run the following act
 
 1. On the [**Create new upgrade rollout policy** page](https://console.aws.amazon.com/organizations/v2/home/policies/declarative-policy-ec2/create), enter a **Policy name** and an optional **Policy description**.
 
-1. (Optional) You can add one or more tags to the policy by choosing **Add tag** and then entering a key and an optional value. Leaving the value blank sets it to an empty string; it isn't `null`. You can attach up to 50 tags to a policy. For more information, see [Tagging AWS Organizations resourcesConsiderations](orgs_tagging.md).
+1. (Optional) You can add one or more tags to the policy by choosing **Add tag** and then entering a key and an optional value. Leaving the value blank sets it to an empty string; it isn't `null`. You can attach up to 50 tags to a policy. For more information, see [Tagging AWS Organizations resources](orgs_tagging.md).
 
 1. You can build the policy using the **Visual editor** as described in this procedure. You can also enter or paste policy text in the **JSON** tab. For more information, see [Upgrade rollout policy syntax and examples](orgs_manage_policies_upgrade_syntax.md).
 
@@ -906,7 +906,7 @@ To create a Security Hub policy, you need permission to run the following action
 
 1. On the [**Create new Security Hub policy** page](https://console.aws.amazon.com/organizations/v2/home/policies/securityhub-policy/create), enter a **Policy name** and an optional **Policy description**.
 
-1. (Optional) You can add one or more tags to the policy by choosing **Add tag** and then entering a key and an optional value. Leaving the value blank sets it to an empty string; it isn't `null`. You can attach up to 50 tags to a policy. For more information, see [Tagging AWS Organizations resourcesConsiderations](orgs_tagging.md).
+1. (Optional) You can add one or more tags to the policy by choosing **Add tag** and then entering a key and an optional value. Leaving the value blank sets it to an empty string; it isn't `null`. You can attach up to 50 tags to a policy. For more information, see [Tagging AWS Organizations resources](orgs_tagging.md).
 
 1. Enter or paste the policy text in the JSON code box. For information about the Security Hub policy syntax, see [Security Hub policy syntax and examples](orgs_manage_policies_security_hub_syntax.md). For example policies that you can use as a starting point, see [Security Hub policy examples](orgs_manage_policies_security_hub_syntax.md#security-hub-policy-examples).
 

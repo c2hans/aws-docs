@@ -8,7 +8,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 <a name="aws-properties-chatbot-customaction-customactiondefinition"></a>
 
 **Note**
-AWS Chatbot is now Amazon Q Developer. [Learn more](https://docs.aws.amazon.com//chatbot/latest/adminguide/service-rename.html)
+AWS Chatbot is now Amazon Q Developer. [Learn more](https://docs.aws.amazon.com/chatbot/latest/adminguide/service-rename.html)
 `Type` attribute values remain unchanged.
 
 The definition of the command to run when invoked as an alias or as an action button.

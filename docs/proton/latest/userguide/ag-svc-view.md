@@ -12,7 +12,7 @@ You can view and list service detail data using the AWS Proton console or the AW
 ------
 #### [ AWS Management Console ]
 
-**List and view service details using the [AWS Proton console](https://console.aws.amazon.com//proton/) as shown in the following steps.**
+**List and view service details using the [AWS Proton console](https://console.aws.amazon.com/proton/) as shown in the following steps.**
 
 1. To view a list of your services, choose **Services** in the navigation pane.
 

@@ -11,7 +11,7 @@ You can use the MediaPackage console, MediaPackage API, or AWS CLI to create an 
 
 **To create an endpoint**
 
-1. Access the channel that the endpoint will be associated with, as described in [Viewing channel details in AWS Elemental MediaPackageViewing channel details](channels-view.md).
+1. Access the channel that the endpoint will be associated with, as described in [Viewing channel details in AWS Elemental MediaPackage](channels-view.md).
 
 1. Choose **Create endpoint** from the **Origin endpoints** list.
 
@@ -199,7 +199,7 @@ To encrypt content, you must have a DRM provider, and be set up to use encryptio
    1800
    ```
 
-   For information about key rotation, see [AWS Elemental MediaPackage key rotation behaviorKey rotation](drm-content-key-rotation.md).
+   For information about key rotation, see [AWS Elemental MediaPackage key rotation behavior](drm-content-key-rotation.md).
 
 1. (Optional) Select **Exclude segment DRM metadata** to omit SEIG and SGPD boxes from CMAF segments. This can improve compatibility with certain devices and players that don't support these DRM metadata boxes.
 **Note**

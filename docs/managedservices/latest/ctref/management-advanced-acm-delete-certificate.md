@@ -14,8 +14,6 @@ Delete an AWS Certificate Manager (ACM) certificate that is currently not in use
 ## Change Type Details
 <a name="ct-1q8q56cmwqj9m-MAAd-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1q8q56cmwqj9m |

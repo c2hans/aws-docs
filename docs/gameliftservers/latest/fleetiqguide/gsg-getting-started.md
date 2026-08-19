@@ -37,7 +37,7 @@ Before using a launch template with Amazon GameLift Servers FleetIQ, we highly 
 
 1. **Set up Amazon GameLift Servers FleetIQ hosting resources.**
 
-   In each Region where you want to deploy game servers, create a game server group by calling [CreateGameServerGroup()](https://docs.aws.amazon.com/gamelift/latest/apireference/API_CreateGameServerGroup.html). Pass in the launch template (containing your custom AMI and network and security settings), IAM role, and a list of instance types that your game can run on. This action sets up an Auto Scaling group in your AWS account that Amazon GameLift Servers FleetIQ can modify. For additional guidance and examples, see [Manage Amazon GameLift Servers FleetIQ game server groupsCreate a game server group](gsg-integrate-gameservergroup.md).
+   In each Region where you want to deploy game servers, create a game server group by calling [CreateGameServerGroup()](https://docs.aws.amazon.com/gamelift/latest/apireference/API_CreateGameServerGroup.html). Pass in the launch template (containing your custom AMI and network and security settings), IAM role, and a list of instance types that your game can run on. This action sets up an Auto Scaling group in your AWS account that Amazon GameLift Servers FleetIQ can modify. For additional guidance and examples, see [Manage Amazon GameLift Servers FleetIQ game server groups](gsg-integrate-gameservergroup.md).
 
 1. **Integrate Amazon GameLift Servers FleetIQ into your game client. **
 

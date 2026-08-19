@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsl
 
 AWS License Manager Linux Subscriptions Manager provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="license-manager-linux-subscriptions-GetRegisteredSubscriptionProvider"></a>[GetRegisteredSubscriptionProvider](https://docs.aws.amazon.com/license-manager-linux-subscriptions/latest/APIReference/API_GetRegisteredSubscriptionProvider.html) | Get a subscription provider in AWS License Manager | Read |

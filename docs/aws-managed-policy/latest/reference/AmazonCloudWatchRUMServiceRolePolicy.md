@@ -63,5 +63,5 @@ The policy's default version is the version that defines the permissions for the
 
 ## Learn more
 <a name="AmazonCloudWatchRUMServiceRolePolicy-learn-more"></a>
-+ [Understand versioning for IAM policies](https://docs.aws.amazon.com//IAM/latest/UserGuide/access_policies_managed-versioning.html)
-+ [Get started with AWS managed policies and move toward least-privilege permissions](https://docs.aws.amazon.com//IAM/latest/UserGuide/best-practices.html#bp-use-aws-defined-policies)
++ [Understand versioning for IAM policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-versioning.html)
++ [Get started with AWS managed policies and move toward least-privilege permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#bp-use-aws-defined-policies)

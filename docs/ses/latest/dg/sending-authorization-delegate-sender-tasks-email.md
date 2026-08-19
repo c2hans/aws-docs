@@ -26,12 +26,10 @@ As with any Amazon SES email sender, if you access Amazon SES through the Amazon
 
 If you want to use `SendRawEmail` so that you can control the format of your emails, you can specify the delegated authorized identity in one of two ways:
 + **Pass optional parameters to the `SendRawEmail` API**. The required parameters are described in the following table:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/ses/latest/dg/sending-authorization-delegate-sender-tasks-email.html)
 + **Include X-headers in the email**. X-headers are custom headers that you can use in addition to standard email headers (such as the From, Reply-To, or Subject headers). Amazon SES recognizes three X-headers that you can use to specify sending authorization parameters:
 **Important**
 Do not include these X-headers in the DKIM signature, because they are removed by Amazon SES before sending the email.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/ses/latest/dg/sending-authorization-delegate-sender-tasks-email.html)
 
   Amazon SES removes all X-headers from the email before sending it. If you include multiple instances of an X-header, Amazon SES uses only the first instance.
@@ -67,8 +65,6 @@ Do not include these X-headers in the DKIM signature, because they are removed b
 <a name="sending-authorization-delegate-sender-tasks-api-sendemail"></a>
 
 If you use the `SendEmail` or `SendTemplatedEmail` operation, you can specify the delegated authorized identity by passing in the optional parameters below. You can't use the X-header method when you use the `SendEmail` or `SendTemplatedEmail` operation.
-
-****
 
 | Parameter | Description |
 | --- | --- |

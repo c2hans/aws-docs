@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsi
 
 AWS IQ provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="iq-DownloadAttachment"></a>[DownloadAttachment](https://aws.amazon.com/iq/) | Download existing attachment | Read |

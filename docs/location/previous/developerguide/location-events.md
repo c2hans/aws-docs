@@ -89,7 +89,7 @@ Using the following values, [create an EventBridge rule](https://docs.aws.amazon
   ```
 + For **Select targets**, choose the target action to take when an event is received from Amazon Location Service.
 
-  For example, use an Amazon Simple Notification Service (SNS) topic to send an email or text message when an event occurs. You first need to create an Amazon SNS topic using the Amazon SNS console. For more information, see [Using Amazon SNS for user notifications](https://docs.aws.amazon.com//sns/latest/dg/sns-user-notifications.html).
+  For example, use an Amazon Simple Notification Service (SNS) topic to send an email or text message when an event occurs. You first need to create an Amazon SNS topic using the Amazon SNS console. For more information, see [Using Amazon SNS for user notifications](https://docs.aws.amazon.com/sns/latest/dg/sns-user-notifications.html).
 
 **Warning**
 It's best practice to confirm that the event rule was successfully applied or your automated action may not initiate as expected. To verify your event rule, initiate conditions for the event rule. For example, simulate a device entering a geofenced area.

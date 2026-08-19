@@ -20,6 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 {
   "[ExtractionConfig](#cfn-bedrockagentcore-memory-metadataschemaentry-extractionconfig)" : {{ExtractionConfig}},
+  "[ExtractionType](#cfn-bedrockagentcore-memory-metadataschemaentry-extractiontype)" : {{String}},
   "[Key](#cfn-bedrockagentcore-memory-metadataschemaentry-key)" : {{String}},
   "[Type](#cfn-bedrockagentcore-memory-metadataschemaentry-type)" : {{String}}
 }
@@ -31,6 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
   [ExtractionConfig](#cfn-bedrockagentcore-memory-metadataschemaentry-extractionconfig): {{
     ExtractionConfig}}
+  [ExtractionType](#cfn-bedrockagentcore-memory-metadataschemaentry-extractiontype): {{String}}
   [Key](#cfn-bedrockagentcore-memory-metadataschemaentry-key): {{String}}
   [Type](#cfn-bedrockagentcore-memory-metadataschemaentry-type): {{String}}
 ```
@@ -42,6 +44,13 @@ To declare this entity in your CloudFormation template, use the following syntax
 Configuration for extracting this metadata value from conversational content. Applicable only if extractionType is LLM inferred.
 *Required*: No
 *Type*: [ExtractionConfig](aws-properties-bedrockagentcore-memory-extractionconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`ExtractionType`  <a name="cfn-bedrockagentcore-memory-metadataschemaentry-extractiontype"></a>
+Specifies whether the metadata value is extracted by the LLM or passed through deterministically from the event.
+*Required*: No
+*Type*: String
+*Allowed values*: `LLM_INFERRED | STRICTLY_CONSISTENT`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Key`  <a name="cfn-bedrockagentcore-memory-metadataschemaentry-key"></a>

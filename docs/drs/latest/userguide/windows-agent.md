@@ -43,8 +43,6 @@ If you need to validate the installer hash, the correct hash is here: `https://a
 ### AWS Replication Agent download URL for Windows for each supported AWS Region
 <a name="installer-download-table"></a>
 
-****
-
 | Region name | Region identity | Download Link |
 | --- | --- | --- |
 | Africa (Cape Town) | af-south-1 | https://aws-elastic-disaster-recovery-af-south-1.s3.af-south-1.amazonaws.com/latest/windows/AwsReplicationWindowsInstaller.exe |
@@ -90,8 +88,6 @@ If you need to validate the installer hash, the correct hash is here:
  `https://aws-elastic-disaster-recovery-hashes-<REGION>.s3.<REGION>.amazonaws.com/latest/windows/AwsReplicationWindowsInstaller.exe.sha512`
  Replace `<REGION>` with the AWS Region into which you are replicating, for example: us-east-1:
 `https://aws-elastic-disaster-recovery-hashes-us-east-1.s3.us-east-1.amazonaws.com/latest/windows/AwsReplicationWindowsInstaller.exe.sha512 `
-
-****
 
 | Region name | Region identity | SHA512 Hash Download Link |
 | --- | --- | --- |

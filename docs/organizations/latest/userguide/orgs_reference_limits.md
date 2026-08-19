@@ -30,8 +30,6 @@ You can request increases for some of these values by using the [Service Quotas 
 AWS Organizations limits apply at the organization level, unless otherwise specified. Many quotas apply only to actions performed from the AWS Organizations management account.
 AWS Organizations is a global service that is physically hosted in the US East (N. Virginia) Region (`us-east-1`). Therefore, you must use `us-east-1` to access these quotas when using the Service Quotas console, the AWS CLI, or an AWS SDK.
 
-****
-
 | Description | Limit |
 | --- | --- |
 | <a name="default-maximum-number-of-accounts"></a>Maximum number of accounts | 10 — The maximum number of accounts allowed in an organization. This quota is adjustable, and can be increased by using the [Service Quotas console](https://console.aws.amazon.com/servicequotas/home?region=us-east-1#!/services/organizations/quotas).<br />**Note:** Only the Management account of an organization can submit this quota increase request. Limit increases can be granted up to 50,000 accounts based on customer qualifications and requirements. Newly created accounts and organizations might experience a quota below the default of 10 accounts.<br />An invitation sent to an account counts against this quota. The count is returned if the invited account declines, the management account cancels the invitation, or the invitation expires.<br />When an account is closed it does not stop counting against this quota until it is permanently closed. For more information on when an account is permanently closed, see [Post-closure period](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-closing.html#post-closure-period) in the *AWS Account Management Reference Guide*.<br />Some services have account limits separate from the maximum number of accounts allowed in an organization. For more information, see [Limits by AWS service](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_reference_limits.html#min-max-service-limits). |
@@ -56,8 +54,6 @@ Most AWS services support the stated maximum number of accounts that you can hav
 
 The following table shows services with separate account limits.
 
-****
-
 | AWS service | Limit | Can be increased | Service documentation |
 | --- | --- | --- | --- |
 | AWS Directory Service (Directory sharing is available for AWS Managed Microsoft AD) | Directory sharing account capacity varies by edition. | Yes | [Directory Service Quotas](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_ad_limits.html) |
@@ -78,8 +74,6 @@ The following table shows services with separate account limits.
 
 The following are the timeouts for handshakes in AWS Organizations.
 
-****
-
 | Description | Limit |
 | --- | --- |
 | Invitation to join an organization | 15 days |
@@ -93,8 +87,6 @@ The minimum and maximum depend on the policy type and the entity that you're att
 
 **Note**
 These numbers apply to only those policies that are directly attached to an OU or an account. Policies that affect an OU or account by inheritance do ***not*** count against these limits. All policy limits are hard limits.
-
-****
 
 | Policy type | Minimum attached to an entity | Maximum attached to root | Maximum attached per OU | Maximum attached per account |
 | --- | --- | --- | --- | --- |
@@ -132,8 +124,6 @@ The burst rate allows you to handle temporary spikes in traffic without getting 
 
 The following table lists the AWS Organizations APIs for account management.
 
-****
-
 | AWS Organizations API | Per account limit (rate, burst) | Per organization limit (rate, burst) |
 | --- | --- | --- |
 | CloseAccount | .05, 1 |  |
@@ -148,8 +138,6 @@ The following table lists the AWS Organizations APIs for account management.
 
 The following table lists the AWS Organizations APIs for account handshake.
 
-****
-
 | AWS Organizations API | Per account limit (rate, burst) | Per organization limit (rate, burst) |
 | --- | --- | --- |
 | AcceptHandshake | 1, 2 | 5, 5 |
@@ -163,8 +151,6 @@ The following table lists the AWS Organizations APIs for account handshake.
 <a name="throttling-limits-organization-management"></a>
 
 The following table lists the AWS Organizations APIs for organization management.
-
-****
 
 | AWS Organizations API | Per account limit (rate, burst) | Per organization limit (rate, burst) |
 | --- | --- | --- |
@@ -185,8 +171,6 @@ The following table lists the AWS Organizations APIs for organization management
 
 The following table lists the AWS Organizations APIs for policy management.
 
-****
-
 | AWS Organizations API | Per account limit (rate, burst) | Per organization limit (rate, burst) |
 | --- | --- | --- |
 | CreatePolicy, DeletePolicy, AttachPolicy, DetachPolicy | 2, 3 |  |
@@ -199,8 +183,6 @@ The following table lists the AWS Organizations APIs for policy management.
 <a name="throttling-limits-serivce-management"></a>
 
 The following table lists the AWS Organizations APIs for service management.
-
-****
 
 | AWS Organizations API | Per account limit (rate, burst) | Per organization limit (rate, burst) |
 | --- | --- | --- |

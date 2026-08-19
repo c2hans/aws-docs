@@ -723,8 +723,6 @@ Amazon DocumentDB also supports change streams, which provide a time-ordered seq
 
 The following table contains the limits for Role-Based Access Control in Amazon DocumentDB.
 
-****
-
 | Description | Limit |
 | --- | --- |
 | Number of users per cluster | 1000 |
@@ -745,8 +743,6 @@ In Amazon DocumentDB 4.0 and 5.0, the `ListCollection` and `ListDatabase` comman
 ------
 #### [ Database user ]
 
-****
-
 | Role name | Description | Actions |
 | --- | --- | --- |
 | read | Grants a user read access to the specified database. | `[changeStreams](https://docs.aws.amazon.com//documentdb/latest/devguide/change_streams.html)`<br />`collStats`<br />`dbStats`<br />`find`<br />`killCursors`<br />`listIndexes`<br />`listCollections` |
@@ -754,8 +750,6 @@ In Amazon DocumentDB 4.0 and 5.0, the `ListCollection` and `ListDatabase` comman
 
 ------
 #### [ Cluster user ]
-
-****
 
 | Role name | Description | Actions |
 | --- | --- | --- |
@@ -767,16 +761,12 @@ In Amazon DocumentDB 4.0 and 5.0, the `ListCollection` and `ListDatabase` comman
 ------
 #### [ Superuser ]
 
-****
-
 | Role name | Description | Actions |
 | --- | --- | --- |
 | root | Grants a user access to the resources and operations of all the following roles combined: readWriteAnyDatabase, dbAdminAnyDatabase, userAdminAnyDatabase, clusterAdmin, restore, and backup. | All actions from `readWriteAnyDatabase`, `dbAdminAnyDatabase`, `userAdminAnyDatabase`, `clusterAdmin`, `restore`, and `backup`. |
 
 ------
 #### [ Database administrator ]
-
-****
 
 | Role name | Description | Actions |
 | --- | --- | --- |
@@ -785,8 +775,6 @@ In Amazon DocumentDB 4.0 and 5.0, the `ListCollection` and `ListDatabase` comman
 
 ------
 #### [ Cluster administrator ]
-
-****
 
 | role Name | Description | Actions |
 | --- | --- | --- |
@@ -797,8 +785,6 @@ In Amazon DocumentDB 4.0 and 5.0, the `ListCollection` and `ListDatabase` comman
 
 ------
 #### [ Backup administrator ]
-
-****
 
 | Role name | Description | Actions |
 | --- | --- | --- |

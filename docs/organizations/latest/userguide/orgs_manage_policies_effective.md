@@ -83,4 +83,4 @@ You can use one of the following to view the effective policy:
 
 ------
 
-For information about situations in which an effective policy could become invalid, see [Viewing invalid policy alerts](https://docs.aws.amazon.com//organizations/latest/userguide/invalid-policy-alerts.html).
+For information about situations in which an effective policy could become invalid, see [Viewing invalid policy alerts](https://docs.aws.amazon.com/organizations/latest/userguide/invalid-policy-alerts.html).

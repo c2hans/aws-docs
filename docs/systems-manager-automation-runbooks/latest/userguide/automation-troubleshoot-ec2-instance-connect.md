@@ -7,11 +7,11 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 
  **Description**
 
- `AWSSupport-TroubleshootEC2InstanceConnect` automation helps analyze and detect errors preventing the connection to an Amazon Elastic Compute Cloud (Amazon EC2) instance using [Amazon EC2 Instance Connect](https://docs.aws.amazon.com//AWSEC2/latest/UserGuide/connect-linux-inst-eic.html). It identifies issues caused by an unsupported Amazon Machine Image (AMI), missing OS-level package installation or configuration, missing AWS Identity and Access Management (IAM) permissions, or network configuration issues.
+ `AWSSupport-TroubleshootEC2InstanceConnect` automation helps analyze and detect errors preventing the connection to an Amazon Elastic Compute Cloud (Amazon EC2) instance using [Amazon EC2 Instance Connect](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connect-linux-inst-eic.html). It identifies issues caused by an unsupported Amazon Machine Image (AMI), missing OS-level package installation or configuration, missing AWS Identity and Access Management (IAM) permissions, or network configuration issues.
 
  **How does it work?**
 
- The runbook takes the Amazon EC2 instance ID, username, connection mode, source IP CIDR, SSH port, and Amazon Resource Name (ARN) for the IAM role or user experiencing issues with Amazon EC2 Instance Connect. It then checks the [prerequisites](https://docs.aws.amazon.com//AWSEC2/latest/UserGuide/ec2-instance-connect-prerequisites.html) for connecting to an Amazon EC2 instance using Amazon EC2 Instance Connect:
+ The runbook takes the Amazon EC2 instance ID, username, connection mode, source IP CIDR, SSH port, and Amazon Resource Name (ARN) for the IAM role or user experiencing issues with Amazon EC2 Instance Connect. It then checks the [prerequisites](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-connect-prerequisites.html) for connecting to an Amazon EC2 instance using Amazon EC2 Instance Connect:
 + The instance is running and in a healthy state.
 + The instance is located in an AWS region supported by Amazon EC2 Instance Connect.
 + AMI of the instance is supported by Amazon EC2 Instance Connect.
@@ -23,7 +23,7 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 **Important**
 To check the instance AMI, IMDSv2 reachability, and Amazon EC2 Instance Connect package installation, the instance must be SSM managed. Otherwise, it skips those steps. For more information, see [Why is my Amazon EC2 instance not displaying as a managed node.](https://repost.aws/knowledge-center/systems-manager-ec2-instance-not-appear)
 The network check will only detect if security group and network ACL rules block traffic when SourceIpCIDR is provided as an input parameter. Otherwise, it will only display SSH-related rules.
-Connections using [Amazon EC2 Instance Connect Endpoint](https://docs.aws.amazon.com//AWSEC2/latest/UserGuide/connect-using-eice.html) are not validated in this runbook.
+Connections using [Amazon EC2 Instance Connect Endpoint](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connect-using-eice.html) are not validated in this runbook.
 For private connections, the automation does not check if the SSH client is installed on the source machine and if it can reach the instance's private IP address.
 
 **Document type**
@@ -149,8 +149,8 @@ Follow these steps to configure the automation:
 
 Systems Manager Automation
 + [Run this Automation (console)](https://console.aws.amazon.com/systems-manager/documents/AWSSupport-TroubleshootEC2InstanceConnect/description)
-+ [Run an automation](https://docs.aws.amazon.com//systems-manager/latest/userguide/automation-working-executing.html)
-+ [Setting up an Automation](https://docs.aws.amazon.com//systems-manager/latest/userguide/automation-setup.html)
++ [Run an automation](https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-working-executing.html)
++ [Setting up an Automation](https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-setup.html)
 + [Support Automation Workflows landing page](https://aws.amazon.com/premiumsupport/technology/saw/)
 
 AWS service documentation

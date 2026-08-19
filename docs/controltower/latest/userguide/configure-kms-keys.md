@@ -30,7 +30,7 @@ You may see an error banner if the key does not meet these requirements. In that
 
 **To update the KMS key policy**
 
-1.  Open the AWS KMS console at [https://console.aws.amazon.com//kms](https://console.aws.amazon.com//kms)
+1.  Open the AWS KMS console at [https://console.aws.amazon.com/kms](https://console.aws.amazon.com/kms)
 
 1.  From the navigation pane, choose **Customer managed keys**.
 
@@ -133,14 +133,14 @@ You may see an error banner if the key does not meet these requirements. In that
 ```
 
  To view other example policies, see the following pages:
-+  [Granting encrypt permissions](https://docs.aws.amazon.com//awscloudtrail/latest/userguide/create-kms-key-policy-for-cloudtrail.html#create-kms-key-policy-for-cloudtrail-encrypt) in the *AWS CloudTrail User Guide*.
-+  [Required Permissions for the KMS Key When Using Service-Linked RolesS3 Bucket Delivery)](https://docs.aws.amazon.com//config/latest/developerguide/s3-kms-key-policy.html#required-permissions-s3-kms-key-using-servicelinkedrole) in the *AWS Config Developer Guide*.
++  [Granting encrypt permissions](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/create-kms-key-policy-for-cloudtrail.html#create-kms-key-policy-for-cloudtrail-encrypt) in the *AWS CloudTrail User Guide*.
++  [Required Permissions for the KMS Key When Using Service-Linked RolesS3 Bucket Delivery)](https://docs.aws.amazon.com/config/latest/developerguide/s3-kms-key-policy.html#required-permissions-s3-kms-key-using-servicelinkedrole) in the *AWS Config Developer Guide*.
 
 **Protect against attackers**
  By adding certain conditions to your policies, you can help prevent a specific type of attack, known as a *confused deputy* attack, which occurs if an entity coerces a more-privileged entity to perform an action, such as with cross-service impersonation. For general information about policy conditions, also see [Specifying conditions in a policy](access-control-overview.md#specifying-conditions).
 
 The AWS Key Management Service (AWS KMS) allows you to create multi-Region KMS keys and asymmetric keys; however, AWS Control Tower does not support multi-Region keys or asymmetric keys. AWS Control Tower performs a pre-check of your existing keys. You may see an error message if you select a multi-Region key or an asymmetric key. In that case, generate another key for use with AWS Control Tower resources.
 
-For more information about AWS KMS, see [ the AWS KMS Developer Guide.](https://docs.aws.amazon.com//kms/latest/developerguide/overview.html)
+For more information about AWS KMS, see [ the AWS KMS Developer Guide.](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html)
 
 Note that customer data in AWS Control Tower is encrypted at rest, by default, using SSE-S3.

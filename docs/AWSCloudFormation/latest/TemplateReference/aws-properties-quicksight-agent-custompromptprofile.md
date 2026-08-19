@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::QuickSight::Agent CustomPromptProfile
 <a name="aws-properties-quicksight-agent-custompromptprofile"></a>
 
-<a name="aws-properties-quicksight-agent-custompromptprofile-description"></a>The `CustomPromptProfile` property type specifies Property description not available. for an [AWS::QuickSight::Agent](aws-resource-quicksight-agent.md).
+A reference to an existing custom prompt profile.
 
 ## Syntax
 <a name="aws-properties-quicksight-agent-custompromptprofile-syntax"></a>
@@ -38,14 +38,14 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-quicksight-agent-custompromptprofile-properties"></a>
 
 `ModelProfileId`  <a name="cfn-quicksight-agent-custompromptprofile-modelprofileid"></a>
-Property description not available.
+The identifier of the model profile.
 *Required*: Yes
 *Type*: String
 *Maximum*: `36`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `QbsAwsAccountId`  <a name="cfn-quicksight-agent-custompromptprofile-qbsawsaccountid"></a>
-Property description not available.
+The AWS account ID for the Q Business service.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^QBS[0-9]{12}$`
@@ -53,7 +53,7 @@ Property description not available.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SubscriptionId`  <a name="cfn-quicksight-agent-custompromptprofile-subscriptionid"></a>
-Property description not available.
+The subscription identifier.
 *Required*: Yes
 *Type*: String
 *Maximum*: `32`

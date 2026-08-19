@@ -28,7 +28,7 @@ Before using S3 target validation, check the following settings and permissions:
 + Ensure that the role assigned to the user account that was used to create the migration task has the correct set of permissions. See [Permissions](#CHAP_Validating_S3_permissions) following.
 
 For tasks using ongoing replication (CDC), check the following settings:
-+ Turn on supplemental logging so you have complete records in the CDC data. For information about turning on supplemental logging, see [Automatically add supplemental logging to an Oracle source endpoint](CHAP_Troubleshooting.md#CHAP_Troubleshooting.Oracle.AutoSupplLogging) in the [Troubleshooting and diagnostic supportTroubleshooting latency](CHAP_Troubleshooting.md) section in this guide.
++ Turn on supplemental logging so you have complete records in the CDC data. For information about turning on supplemental logging, see [Automatically add supplemental logging to an Oracle source endpoint](CHAP_Troubleshooting.md#CHAP_Troubleshooting.Oracle.AutoSupplLogging) in the [Troubleshooting and diagnostic support](CHAP_Troubleshooting.md) section in this guide.
 + Set the `TimestampColumnName` parameter for the target endpoint. There are no limitations on the timestamp column name. For more information, see [S3Settings](https://docs.aws.amazon.com/dms/latest/APIReference/API_S3Settings.html).
 + Set up date-based folder partitioning for the target. For more information, see [Using date-based folder partitioning](CHAP_Target.S3.md#CHAP_Target.S3.DatePartitioning).
 

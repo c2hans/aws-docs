@@ -171,7 +171,7 @@ To run the code, specify the following:
 + `FLOW_ID` – The ID of the flow.
 + `FLOW_ALIAS_ID` – The alias ID of the flow.
 
-For information about getting the IDs, see [View information about flows in Amazon Bedrock](flows-view.md). The code prompts for an initial request to send to the flow and requests more input as needed by the flow. The code doesn't manage other requests from the agent, such as requests to call AWS Lambda functions. For more information, see [How Amazon Bedrock Agents works](agents-how.md). While running, the code generates `FlowTraceEvent` objects that you can use to track the path from the input to the response that flow returns. For more information, see [Track each step in your flow by viewing its trace in Amazon BedrockTrack each step in your flow by viewing its trace](flows-trace.md).
+For information about getting the IDs, see [View information about flows in Amazon Bedrock](flows-view.md). The code prompts for an initial request to send to the flow and requests more input as needed by the flow. The code doesn't manage other requests from the agent, such as requests to call AWS Lambda functions. For more information, see [How Amazon Bedrock Agents works](agents-how.md). While running, the code generates `FlowTraceEvent` objects that you can use to track the path from the input to the response that flow returns. For more information, see [Track each step in your flow by viewing its trace in Amazon Bedrock](flows-trace.md).
 
 ```
 """

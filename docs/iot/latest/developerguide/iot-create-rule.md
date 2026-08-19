@@ -18,7 +18,7 @@ You can create AWS IoT rules to route data from your connected things to interac
 | One or more actions | The actions AWS IoT performs when enacting the rule. For example, you can insert data into a DynamoDB table, write data to an Amazon S3 bucket, publish to an Amazon SNS topic, or invoke a Lambda function. | Required. |
 | An error action | The action AWS IoT performs when it's unable to perform a rule's action. | Optional. |
 
-Before you create an AWS IoT rule, you must create an IAM role with a policy that allows access to the required AWS resources. AWS IoT assumes this role when implementing a rule. For more information, see [Granting an AWS IoT rule the access it requires](https://docs.aws.amazon.com//iot/latest/developerguide/iot-create-role.html) and [Passing role permissions](https://docs.aws.amazon.com//iot/latest/developerguide/pass-role.html).
+Before you create an AWS IoT rule, you must create an IAM role with a policy that allows access to the required AWS resources. AWS IoT assumes this role when implementing a rule. For more information, see [Granting an AWS IoT rule the access it requires](https://docs.aws.amazon.com/iot/latest/developerguide/iot-create-role.html) and [Passing role permissions](https://docs.aws.amazon.com/iot/latest/developerguide/pass-role.html).
 
 When you create a rule, be aware of how much data you're publishing on topics. If you create rules that include a wildcard topic pattern, they might match a large percentage of your messages. If this is the case, you might need to increase the capacity of the AWS resources used by the target actions. We recommend avoiding wildcard topic patterns in republish rules to prevent duplicate processing and reduce costs.
 
@@ -30,9 +30,9 @@ Creating and updating rules are administrator-level actions. Any user who has pe
 
 **To create a rule (AWS Management Console)**
 
-Use the [AWS Management Console](https://console.aws.amazon.com//iot/home#/home) command to create a rule:
+Use the [AWS Management Console](https://console.aws.amazon.com/iot/home#/home) command to create a rule:
 
-1. Open the [AWS IoT console](https://console.aws.amazon.com//iot/home#/home).
+1. Open the [AWS IoT console](https://console.aws.amazon.com/iot/home#/home).
 
 1. On the left navigation, choose **Message routing** from **Manage** section. Then choose **Rules**.
 
@@ -40,15 +40,15 @@ Use the [AWS Management Console](https://console.aws.amazon.com//iot/home#/home)
 
 1. On the **Specify rule properties** page, enter a name for your rule. **Rule description** and **Tags** are optional. Choose **Next**.
 
-1. On the **Configure SQL statement** page, choose a SQL version and enter a SQL statement. An example SQL statement can be `SELECT temperature FROM 'iot/topic' WHERE temperature > 50`. For more information, see [SQL versions](https://docs.aws.amazon.com//iot/latest/developerguide/iot-rule-sql-version.html) and [AWS IoT SQL reference](https://docs.aws.amazon.com//iot/latest/developerguide/iot-sql-reference.html).
+1. On the **Configure SQL statement** page, choose a SQL version and enter a SQL statement. An example SQL statement can be `SELECT temperature FROM 'iot/topic' WHERE temperature > 50`. For more information, see [SQL versions](https://docs.aws.amazon.com/iot/latest/developerguide/iot-rule-sql-version.html) and [AWS IoT SQL reference](https://docs.aws.amazon.com/iot/latest/developerguide/iot-sql-reference.html).
 
 1. On the **Attach rule actions** page, add rule actions to route data to other AWS services.
 
-   1. In **Rule actions**, select a rule action from the drop down list. For example, you can choose **Kinesis Stream**. For more information about rule actions, see [AWS IoT rule actions](https://docs.aws.amazon.com//iot/latest/developerguide/iot-rule-actions.html).
+   1. In **Rule actions**, select a rule action from the drop down list. For example, you can choose **Kinesis Stream**. For more information about rule actions, see [AWS IoT rule actions](https://docs.aws.amazon.com/iot/latest/developerguide/iot-rule-actions.html).
 
    1. Depending on the rule action you choose, enter related configuration details. For example, if you choose **Kinesis Stream**, you will need to choose or create a data stream resource, and optionally enter configuration details such as **Partition key**, which is used to group data by shard in a steam.
 
-   1. In **IAM role**, choose or create a role to grant AWS IoT access to your endpoint. Note that AWS IoT will automatically create a policy with a prefix of `aws-iot-rule` under your IAM role selected. You can choose **View** to view your IAM role and the policy from the IAM console. **Error action** is optional. You can find more information in [Error handling (error action)](https://docs.aws.amazon.com//iot/latest/developerguide/rule-error-handling.html). For more information about creating an IAM role for your rule, see [Grant a rule the access it requires](https://docs.aws.amazon.com//iot/latest/developerguide/iot-create-role.html). Choose **Next**.
+   1. In **IAM role**, choose or create a role to grant AWS IoT access to your endpoint. Note that AWS IoT will automatically create a policy with a prefix of `aws-iot-rule` under your IAM role selected. You can choose **View** to view your IAM role and the policy from the IAM console. **Error action** is optional. You can find more information in [Error handling (error action)](https://docs.aws.amazon.com/iot/latest/developerguide/rule-error-handling.html). For more information about creating an IAM role for your rule, see [Grant a rule the access it requires](https://docs.aws.amazon.com/iot/latest/developerguide/iot-create-role.html). Choose **Next**.
 
 1. On the **Review and create** page, review all the configuration and make edits if needed. Choose **Create**.
 

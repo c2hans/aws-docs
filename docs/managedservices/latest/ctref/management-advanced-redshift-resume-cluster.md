@@ -14,8 +14,6 @@ Resume a paused Amazon Redshift cluster.
 ## Change Type Details
 <a name="ct-39c5qiasbe4he-MARr-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-39c5qiasbe4he |

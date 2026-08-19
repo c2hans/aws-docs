@@ -9,10 +9,10 @@ AWS Control Tower enables AWS Config on all enrolled accounts, so that it can mo
 
 **If your landing zone version is earlier than 3.0**: For your enrolled accounts, AWS Config logs all changes to resources, for all Regions in which the account operates. Each change is modeled as a configuration item (CI), which contains information such as the resource identifier, the Region, the date that each change was recorded, and whether the change relates to a known resource or a newly discovered one.
 
-**If your landing zone version is 3.0 or later**: AWS Control Tower limits recording for global resources, such as IAM users, groups, roles, and customer managed polices, to your home Region only. Copies of global resource changes are not stored in every Region. This limitation of resource recording conforms with AWS Config [best practices](https://aws.amazon.com//blogs/mt/aws-config-best-practices/). A [full list of global resources](https://docs.aws.amazon.com//config/latest/developerguide/select-resources.html) is available in AWS Config documentation.
-+ To learn more about AWS Config, see [ How AWS Config works](https://docs.aws.amazon.com//config/latest/developerguide/how-does-config-work.html).
-+ For a list of resources that AWS Config can support, see [Supported resource types](https://docs.aws.amazon.com//config/latest/developerguide/resource-config-reference.html).
-+ To learn about how to customize resource tracking in the AWS Control Tower environment, see the blog post entitled [Customize AWS Config resource tracking in AWS Control Tower](https://aws.amazon.com/blogs//mt/customize-aws-config-resource-tracking-in-aws-control-tower-environment).
+**If your landing zone version is 3.0 or later**: AWS Control Tower limits recording for global resources, such as IAM users, groups, roles, and customer managed polices, to your home Region only. Copies of global resource changes are not stored in every Region. This limitation of resource recording conforms with AWS Config [best practices](https://aws.amazon.com/blogs/mt/aws-config-best-practices/). A [full list of global resources](https://docs.aws.amazon.com/config/latest/developerguide/select-resources.html) is available in AWS Config documentation.
++ To learn more about AWS Config, see [ How AWS Config works](https://docs.aws.amazon.com/config/latest/developerguide/how-does-config-work.html).
++ For a list of resources that AWS Config can support, see [Supported resource types](https://docs.aws.amazon.com/config/latest/developerguide/resource-config-reference.html).
++ To learn about how to customize resource tracking in the AWS Control Tower environment, see the blog post entitled [Customize AWS Config resource tracking in AWS Control Tower](https://aws.amazon.com/blogs/mt/customize-aws-config-resource-tracking-in-aws-control-tower-environment).
 
 AWS Control Tower sets up an AWS Config delivery channel in all enrolled accounts. Through this delivery channel, it logs all recorded changes in a centralized account, where they are stored in an Amazon Simple Storage Service bucket. The name and location of the Amazon S3 bucket depend on your landing zone version:
 + For landing zone version 3.3 or earlier, the logs are stored in the `aws-controltower-logs-*` Amazon S3 bucket in the log archive account.
@@ -33,7 +33,7 @@ You can use the AWS CLI to retrieve a list of the most recent changes for a reso
 **Resource history command:**
 + `aws configservice get-resource-config-history --resource-type {{RESOURCE-TYPE}} --resource-id {{RESOURCE-ID}} --region {{REGION}}`
 
-To learn more, see [the API documentation for `get-config-history`](https://docs.aws.amazon.com//cli/latest/reference/configservice/get-resource-config-history.html).
+To learn more, see [the API documentation for `get-config-history`](https://docs.aws.amazon.com/cli/latest/reference/configservice/get-resource-config-history.html).
 
 ### Visualize AWS Config data with Quick
 <a name="visualize-config-data-with-quicksight"></a>
@@ -53,12 +53,12 @@ If your workflow includes processes that create, update, or delete resources fre
 **Note**
 After you unenroll the account, AWS Control Tower cannot enforce detective controls or log account events, such as AWS Config activities, for resources in that account.
 
-For more information, see [Unmanage an enrolled account](https://docs.aws.amazon.com//controltower/latest/userguide/unmanage-account.html). To learn how to deactivate the AWS Config recorder, see [Managing the configuration recorder](https://docs.aws.amazon.com//config/latest/developerguide/stop-start-recorder.html).
+For more information, see [Unmanage an enrolled account](https://docs.aws.amazon.com/controltower/latest/userguide/unmanage-account.html). To learn how to deactivate the AWS Config recorder, see [Managing the configuration recorder](https://docs.aws.amazon.com/config/latest/developerguide/stop-start-recorder.html).
 
 ### The same resource is recorded multiple times
 <a name="duplicate-configuration-items"></a>
 
-Check whether the resource is a [global resource](https://docs.aws.amazon.com//config/latest/developerguide/select-resources.html). For AWS Control Tower landing zones prior to version 3.0, AWS Config may record certain global resources once for each Region in which AWS Config is operating. For example, if AWS Config is enabled on eight Regions, each role is recorded eight times.
+Check whether the resource is a [global resource](https://docs.aws.amazon.com/config/latest/developerguide/select-resources.html). For AWS Control Tower landing zones prior to version 3.0, AWS Config may record certain global resources once for each Region in which AWS Config is operating. For example, if AWS Config is enabled on eight Regions, each role is recorded eight times.
 
 **The following resources are recorded once for each Region in which AWS Config is operating:**
 + `AWS::IAM::Group`
@@ -77,4 +77,4 @@ Check whether the resource is a [global resource](https://docs.aws.amazon.com//c
 ### AWS Config did not record a resource
 <a name="resource-not-recorded"></a>
 
-Certain resources have dependency relationships with other resources. These relationships may be *direct* or *indirect*. You can find a list of deprecated indirect relationships in [the AWS Config FAQ](https://docs.aws.amazon.com//config/latest/developerguide/faq.html#faq-2).
+Certain resources have dependency relationships with other resources. These relationships may be *direct* or *indirect*. You can find a list of deprecated indirect relationships in [the AWS Config FAQ](https://docs.aws.amazon.com/config/latest/developerguide/faq.html#faq-2).

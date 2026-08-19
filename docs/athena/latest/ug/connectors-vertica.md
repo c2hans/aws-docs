@@ -131,8 +131,6 @@ vertica://jdbc:vertica://{{host_name}}:{{
 
 You can use the following single connection metadata and record handlers to connect to a single Vertica instance.
 
-****
-
 | Handler type | Class |
 | --- | --- |
 | Composite handler | VerticaCompositeHandler |
@@ -141,8 +139,6 @@ You can use the following single connection metadata and record handlers to conn
 
 #### Single connection handler parameters
 <a name="connectors-vertica-single-connection-handler-parameters"></a>
-
-****
 
 | Parameter | Description |
 | --- | --- |
@@ -189,8 +185,6 @@ Currently, the Vertica connector recognizes the `vertica-username` and `vertica-
 
 The Lambda SDK can spill data to Amazon S3. All database instances accessed by the same Lambda function spill to the same location.
 
-****
-
 | Parameter | Description |
 | --- | --- |
 | spill\_bucket | Required. Spill bucket name. |
@@ -201,8 +195,6 @@ The Lambda SDK can spill data to Amazon S3. All database instances accessed by t
 <a name="connectors-vertica-data-type-support"></a>
 
 The following table shows the supported data types for the Vertica connector.
-
-****
 
 | Boolean |
 | --- |

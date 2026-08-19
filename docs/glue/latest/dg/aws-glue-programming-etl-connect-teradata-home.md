@@ -25,7 +25,7 @@ To connect to Teradata from AWS Glue, you may need some prerequisites:
 
 1. In your Teradata configuration, identify or create a user and password AWS Glue will connect with, {{teradataUser}} and {{teradataPassword}}. For more information, consult [Vantage Security Overview](https://docs.teradata.com/r/Configuring-Teradata-VantageTM-After-Installation/January-2021/Security-Overview/Vantage-Security-Overview) in the Teradata documentation.
 
-1. In AWS Secrets Manager, create a secret using your Teradata credentials. To create a secret in Secrets Manager, follow the tutorial available in [ Create an AWS Secrets Manager secret ](https://docs.aws.amazon.com//secretsmanager/latest/userguide/create_secret.html) in the AWS Secrets Manager documentation. After creating the secret, keep the Secret name, {{secretName}} for the next step.
+1. In AWS Secrets Manager, create a secret using your Teradata credentials. To create a secret in Secrets Manager, follow the tutorial available in [ Create an AWS Secrets Manager secret ](https://docs.aws.amazon.com/secretsmanager/latest/userguide/create_secret.html) in the AWS Secrets Manager documentation. After creating the secret, keep the Secret name, {{secretName}} for the next step.
    + When selecting **Key/value pairs**, create a pair for the key `user` with the value {{teradataUsername}}.
    + When selecting **Key/value pairs**, create a pair for the key `password` with the value {{teradataPassword}}.
 

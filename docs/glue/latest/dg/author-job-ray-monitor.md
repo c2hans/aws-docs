@@ -25,7 +25,7 @@ For more information about available metrics graphs, see [Viewing Amazon CloudWa
 We publish Ray metrics when detailed monitoring is enabled in CloudWatch. Metrics are published to the `Glue/Ray` CloudWatch namespace.
 + **Instance metrics**
 
-  We publish metrics about the CPU, memory and disk utilization of instances assigned to a job. These metrics are identified by features such as `ExecutorId`, `ExecutorType` and `host`. These metrics are a subset of the standard Linux CloudWatch agent metrics. You can find information about metric names and features in the CloudWatch documentation. For more information, see [Metrics collected by the CloudWatch agent](https://docs.aws.amazon.com//AmazonCloudWatch/latest/monitoring/metrics-collected-by-CloudWatch-agent.html).
+  We publish metrics about the CPU, memory and disk utilization of instances assigned to a job. These metrics are identified by features such as `ExecutorId`, `ExecutorType` and `host`. These metrics are a subset of the standard Linux CloudWatch agent metrics. You can find information about metric names and features in the CloudWatch documentation. For more information, see [Metrics collected by the CloudWatch agent](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/metrics-collected-by-CloudWatch-agent.html).
 + **Ray cluster metrics**
 
   We forward metrics from the Ray processes that run your script to this namespace, then provide those most critical for you. The metrics that are available might differ by Ray version. For more information about which Ray version your job is running, see [AWS Glue versions](release-notes.md).

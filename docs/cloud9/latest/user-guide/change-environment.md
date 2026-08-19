@@ -81,8 +81,6 @@ If your environment isn't displayed in the console, try doing one or more of the
 
 To use code to change the settings of an environment in AWS Cloud9, call the AWS Cloud9 update environment operation, as follows.
 
-****
-
 |  |  |
 | --- |--- |
 | AWS CLI |  [update-environment](https://docs.aws.amazon.com/cli/latest/reference/cloud9/update-environment.html)  |

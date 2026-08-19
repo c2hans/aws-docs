@@ -14,8 +14,6 @@ Update Identity and Access Management (IAM) role or policy with read-write permi
 ## Change Type Details
 <a name="ct-1e0xmuy1diafq-MAIu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1e0xmuy1diafq |

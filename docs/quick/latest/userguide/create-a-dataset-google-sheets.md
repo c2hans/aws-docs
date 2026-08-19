@@ -10,7 +10,7 @@ Google Sheets is a web-based spreadsheet application that enables users to creat
 ## Admin configuration in Amazon Quick
 <a name="google-sheets-admin-config"></a>
 
-Amazon Quick administrators need to perform a one-time setup to enable Google Sheets as a data source. For detailed instructions and important considerations, see [the blog](https://aws.amazon.com//blogs/business-intelligence/transform-your-google-sheets-data-into-powerful-analytics-with-amazon-quicksight/).
+Amazon Quick administrators need to perform a one-time setup to enable Google Sheets as a data source. For detailed instructions and important considerations, see [the blog](https://aws.amazon.com/blogs/business-intelligence/transform-your-google-sheets-data-into-powerful-analytics-with-amazon-quicksight/).
 
 ## Creating a dataset using a Google Sheets data source
 <a name="google-sheets-create-dataset"></a>

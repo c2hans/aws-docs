@@ -106,8 +106,6 @@ Application Auto Scaling supports using service-linked roles in all of the AWS R
 
 The following table lists the Amazon Resource Name (ARN) of the service-linked role for each AWS service that works with Application Auto Scaling.
 
-****
-
 | Service | ARN |
 | --- | --- |
 | AppStream 2.0 | arn:aws:iam::{{012345678910}}:role/aws-service-role/appstream.application-autoscaling.amazonaws.com/AWSServiceRoleForApplicationAutoScaling\_AppStreamFleet |

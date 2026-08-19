@@ -692,7 +692,6 @@ Ground Truth creates one output sequence file for each sequence of video frames 
 + For each frame that was annotated by a worker, the frame file name (`frame`), number (`frame-no`), a list of JSON objects containing annotations (`annotations`), and if applicable, `frame-attributes`. The name of this list is defined by the task type you use: `polylines`, `polygons`, `keypoints`, and for bounding boxes, `annotations`.
 
   Each JSON object contains information about a single annotation and associated label. The following table outlines the parameters you'll see for each video frame task type.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/sagemaker/latest/dg/sms-data-output.html)
 
   In addition to task type specific values, you will see the following in each JSON object:
@@ -790,7 +789,6 @@ Ground Truth creates one output sequence file for each sequence of video frames 
 + For each frame that was annotated by a worker, the frame (`frame`), number (`frame-no`), a list of JSON objects containing annotations (`annotations`), and if applicable, frame attributes (`frame-attributes`). The name of this list is defined by the task type you use: `polylines`, `polygons`, `keypoints`, and for bounding boxes, `annotations`.
 
   Each JSON object contains information about a single annotation and associated label. The following table outlines the parameters you'll see for each video frame task type.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/sagemaker/latest/dg/sms-data-output.html)
 
   In addition to task type specific values, you will see the following in each JSON object:

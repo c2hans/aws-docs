@@ -13,7 +13,7 @@ There are two types of variable that you can use in a workflow:
 + **User-defined variables** – These are key-value pairs that you define.
 + **Predefined variables** – These are key-value pairs that are emitted by a workflow automatically. There is no need for you to define them.
 
-For more information about workflows, see [Build, test, and deploy with workflowsBuild, test, and deploy with workflows](workflow.md).
+For more information about workflows, see [Build, test, and deploy with workflows](workflow.md).
 
 **Note**
 CodeCatalyst also supports [GitHub output parameters](https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#setting-an-output-parameter), which behave like variables and can be referenced in other actions. For more information, see [Exporting GitHub output parameters](integrations-github-action-export.md) and [Referencing GitHub output parameters](integrations-github-action-referencing.md)

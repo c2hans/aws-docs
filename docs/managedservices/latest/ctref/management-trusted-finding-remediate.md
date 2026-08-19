@@ -14,8 +14,6 @@ Run the SSM automation document associated with an OpsItem to remediate a Truste
 ## Change Type Details
 <a name="ct-1c7ch8z5phrjp-MTFr-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1c7ch8z5phrjp |

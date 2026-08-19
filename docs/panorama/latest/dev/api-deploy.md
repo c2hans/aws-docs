@@ -53,8 +53,6 @@ panorama-cli package-application
 <a name="api-deploy-deploy"></a>
 
 To deploy the application, you use the [CreateApplicationInstance](https://docs.aws.amazon.com/panorama/latest/api/API_CreateApplicationInstance.html) API. This action takes the following parameters, among others.
-
-****
 + `ManifestPayload` – The application manifest (`graph.json`) that defines the application's nodes, packages, edges, and parameters.
 + `ManifestOverridesPayload` – A second manifest that overrides parameters in the first. The application manifest can be considered as a static resource in the application source, where the override manifest provides deploy-time settings that customize the deployment.
 + `DefaultRuntimeContextDevice` – The target device.

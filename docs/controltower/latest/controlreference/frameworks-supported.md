@@ -24,4 +24,4 @@ The controls available in Control Catalog support several industry frameworks.
 + PCI-DSS-v4.0
 + SSAE-18-SOC-2-Oct-2023
 
-For more information, see the Control Catalog [Ontology overview](https://docs.aws.amazon.com//controlcatalog/latest/userguide/ontology-overview.html).
+For more information, see the Control Catalog [Ontology overview](https://docs.aws.amazon.com/controlcatalog/latest/userguide/ontology-overview.html).

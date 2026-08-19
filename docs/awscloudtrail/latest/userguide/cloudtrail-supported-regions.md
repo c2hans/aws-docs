@@ -9,8 +9,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrai
 For information about Regions supported by CloudTrail Lake, see [CloudTrail Lake supported Regions](cloudtrail-lake-supported-regions.md).
 For information about data plane endpoints, see [Data plane endpoints](https://docs.aws.amazon.com/general/latest/gr/ct.html#ct_region_data_plane) in the *AWS General Reference*.
 
-****
-
 | Region name | Region | Control plane endpoint | Protocol | Support date |
 | --- | --- | --- | --- | --- |
 | US East (N. Virginia) | us-east-1 | cloudtrail.us-east-1.amazonaws.com | HTTPS | 11/13/2013 |

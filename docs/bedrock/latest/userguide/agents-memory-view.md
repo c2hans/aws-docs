@@ -34,11 +34,9 @@ If you are viewing memory sessions when you are testing your agent, you can view
 ------
 #### [ API ]
 
-To view memory sessions of your agent, send a [GetAgentMemory](https://docs.aws.amazon.com//bedrock/latest/APIReference/API_agent-runtime_GetAgentMemory.html) request (see link for request and response formats and field details) with an [Agents for Amazon Bedrock build-time endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#bra-bt).
+To view memory sessions of your agent, send a [GetAgentMemory](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_GetAgentMemory.html) request (see link for request and response formats and field details) with an [Agents for Amazon Bedrock build-time endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#bra-bt).
 
 The following fields are required:
-
-****
 
 | Field | Short description |
 | --- | --- |
@@ -48,6 +46,6 @@ The following fields are required:
 | memoryType | The type of memory. Valid value: SESSION\_SUMMARY |
 
 **Note**
-If you are viewing memory sessions when you are testing your agent, you can view the session summary only after the latest session has ended. If you try to view memory sessions when the current session is in progress you will be informed that session summary is being generated and it will take time to generate the sessions. You can force end the current session by sending an [InvokeAgent](https://docs.aws.amazon.com//bedrock/latest/APIReference/API_agent_InvokeAgent.html) request and specifying `Y` for the `endSession` field.
+If you are viewing memory sessions when you are testing your agent, you can view the session summary only after the latest session has ended. If you try to view memory sessions when the current session is in progress you will be informed that session summary is being generated and it will take time to generate the sessions. You can force end the current session by sending an [InvokeAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_InvokeAgent.html) request and specifying `Y` for the `endSession` field.
 
 ------

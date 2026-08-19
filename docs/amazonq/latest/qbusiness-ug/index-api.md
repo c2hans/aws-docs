@@ -9,8 +9,6 @@ Amazon Q Business is no longer open to new customers. For capabilities similar t
 
 All Amazon Q Business index actions are supported both on the console and using APIs.
 
-****
-
 | API action | API description | Relevant User Guide topic |
 | --- | --- | --- |
 | [CreateIndex](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateIndex.html) | Creates an Amazon Q Business index | [Creating an index](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/select-retriever.html) |

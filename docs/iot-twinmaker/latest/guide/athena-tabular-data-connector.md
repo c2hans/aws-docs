@@ -11,7 +11,7 @@ With the Athena tabular data connector, you can access and use your Athena data 
 <a name="athena-tabular-data-connector-prereqs"></a>
 
 Before you use the Athena tabular data connector, complete the following prerequisites:
-+ Create managed Athena tables and their associated Amazon S3 resources. For information on using Athena, see the [Athena documentation](https://docs.aws.amazon.com//athena/latest/ug/what-is.html).
++ Create managed Athena tables and their associated Amazon S3 resources. For information on using Athena, see the [Athena documentation](https://docs.aws.amazon.com/athena/latest/ug/what-is.html).
 + Create an AWS IoT TwinMaker workspace. You can create a workspace in the [AWS IoT TwinMaker console](https://console.aws.amazon.com/iottwinmaker/).
 + Update your workspace IAM role with Athena permissions. For more information, see [Modify your workspace IAM role to use the Athena data connector](twinmaker-gs-service-role.md#athena-tabular-data-connector-ws-IAM).
 + Become familiar with AWS IoT TwinMaker's entity-component system and how to create entities. For more information, see [Create your first entity](twinmaker-gs-entity.md).
@@ -61,7 +61,7 @@ You must have an existing component type that uses the Athena tabular data conne
 
 1. From the left side navigation menu choose **Entities**, and select the entity you want to add the component to or create a new entity.
 
-1. [ Create a new entity](https://docs.aws.amazon.com//iot-twinmaker/latest/guide/twinmaker-gs-entity.html).
+1. [ Create a new entity](https://docs.aws.amazon.com/iot-twinmaker/latest/guide/twinmaker-gs-entity.html).
 
 1.  Next select **Add component.**, fill in the **Component name** field with a name that match your use case.
 
@@ -136,7 +136,7 @@ The following example is the full the JSON reference for the Athena tabular data
 
 You can surface your entities that are using Athena tables in Grafana. For more information, see [AWS IoT TwinMaker Grafana dashboard integration](https://docs.aws.amazon.com/iot-twinmaker/latest/guide/grafana-integration.html).
 
-Read the [Athena documentation](https://docs.aws.amazon.com//athena/latest/ug/what-is.html) for information on creating and using Athena tables to store data.
+Read the [Athena documentation](https://docs.aws.amazon.com/athena/latest/ug/what-is.html) for information on creating and using Athena tables to store data.
 
 ### Troubleshooting the Athena data connector
 <a name="athena-tabular-data-connector-ts"></a>
@@ -144,7 +144,7 @@ Read the [Athena documentation](https://docs.aws.amazon.com//athena/latest/ug/wh
 This topic covers common issues you may encounter when configuring the Athena data connector.
 
 Athena workgroup location:
-When creating Athena connector componentType, an Athena workgroup has to have output location setup. See [How workgroups work](https://docs.aws.amazon.com//athena/latest/ug/user-created-workgroups.html).
+When creating Athena connector componentType, an Athena workgroup has to have output location setup. See [How workgroups work](https://docs.aws.amazon.com/athena/latest/ug/user-created-workgroups.html).
 
 Missing IAM role permissions:
 The AWS IoT TwinMaker; workspace role may be missing Athena API access permission when creating a componentType, adding a Ca component to an entity, or running the GetPropertyValue API. To update IAM permissions see [ Create and manage a service role for AWS IoT TwinMaker](https://docs.aws.amazon.com/iot-twinmaker/latest/guide/twinmaker-gs-service-role.html).

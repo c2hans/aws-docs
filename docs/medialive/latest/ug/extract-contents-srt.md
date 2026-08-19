@@ -9,8 +9,6 @@ The content in an SRT input is always a transport stream (TS). The TS is made up
 
 Obtain identifying information from the content provider.
 
-****
-
 - **Video**
   - **Details:** The source content might contain more than one video rendition.If two video renditions are identical, look at the audios and captions in each program. Those might be different, in which case you should choose the video rendition that contains the audio or captions formats that you want.
   - **Information to obtain:** Obtain the PID of the video rendition that you want.

@@ -64,7 +64,7 @@ For more information about handling encryption when copying a snapshot, see [Han
 
 When you restore a DB cluster from a DB cluster snapshot, the amount of storage allocated to the new cluster is the same as was allocated to the DB cluster from which the snapshot was made, regardless of how much of that allocated storage is actually being used.
 
- In other words, the "high water mark" for which you are billed does not change. Resetting the high water mark requires exporting the data from your graph and then reloading it onto a new DB cluster (see [Neptune storage billing](feature-overview-storage.md#feature-overview-storage-billing)).
+ In other words, the "high water mark" for which you are billed does not change. Resetting the high water mark requires exporting the data from your graph and then reloading it onto a new DB cluster (see [Neptune storage billing](storage.md#storage-billing)).
 
 ## How to restore from a snapshot
 <a name="backup-restore-restore-snapshot-restoring"></a>

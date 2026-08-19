@@ -14,8 +14,6 @@ Update tags on existing, tagged resources: Autoscaling, EC2, Elastic Load Balanc
 ## Change Type Details
 <a name="ct-0xqwmtn1hfh8u-MATu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-0xqwmtn1hfh8u |

@@ -23,9 +23,9 @@ When you use billing transfer as a bill source account, AWS Pricing Calculator p
 ## Accessing Pricing Calculator
 <a name="pc-getting-started-accessing"></a>
 
-You can access the Pricing Calculator within the AWS Billing and Cost Management Console and through a set of [APIs](https://docs.aws.amazon.com//aws-cost-management/latest/APIReference/Welcome.html). You can also access the calculator through the AWS SDK and CLI.
+You can access the Pricing Calculator within the AWS Billing and Cost Management Console and through a set of [APIs](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/Welcome.html). You can also access the calculator through the AWS SDK and CLI.
 
-AWS Pricing Calculator provides service-specific resources, actions, and condition context keys for use in IAM permission policies. For more information, see [ Actions, resources, and condition keys for AWS Pricing Calculator](https://docs.aws.amazon.com//service-authorization/latest/reference/list_awsbillingandcostmanagementpricingcalculator.html).
+AWS Pricing Calculator provides service-specific resources, actions, and condition context keys for use in IAM permission policies. For more information, see [ Actions, resources, and condition keys for AWS Pricing Calculator](https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsbillingandcostmanagementpricingcalculator.html).
 
 For member accounts to create estimates using discounted rates, the management account of the organization must enable access to use discounts from the Pricing Calculator console preferences. If the management account hasn't enabled access, the estimates default to public pricing rates.
 

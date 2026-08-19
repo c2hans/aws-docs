@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 
 **Important**
 Amazon S3 buckets with Multi-factor Authentication (MFA) enabled are not supported.
- The lifecycle rules modified by this runbook permanently delete all objects and their versions in the specified Amazon S3 bucket. You cannot recover permanently deleted objects. For more information, review [Expiring Objects](https://docs.aws.amazon.com//AmazonS3/latest/userguide/lifecycle-expire-general-considerations.html).
+ The lifecycle rules modified by this runbook permanently delete all objects and their versions in the specified Amazon S3 bucket. You cannot recover permanently deleted objects. For more information, review [Expiring Objects](https://docs.aws.amazon.com/AmazonS3/latest/userguide/lifecycle-expire-general-considerations.html).
 
  **How does it work?**
 
@@ -150,8 +150,8 @@ Follow these steps to configure the automation:
 
 Systems Manager Automation
 + [Run this Automation (console)](https://console.aws.amazon.com/systems-manager/documents/AWSSupport-EmptyS3Bucket/description)
-+ [Run an automation](https://docs.aws.amazon.com//systems-manager/latest/userguide/automation-working-executing.html)
-+ [Setting up an Automation](https://docs.aws.amazon.com//systems-manager/latest/userguide/automation-setup.html)
++ [Run an automation](https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-working-executing.html)
++ [Setting up an Automation](https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-setup.html)
 + [Support Automation Workflows](https://aws.amazon.com/premiumsupport/technology/saw/)
 
-For more information on managing Amazon S3 buckets and objects, see [Emptying a bucket](https://docs.aws.amazon.com//AmazonS3/latest/userguide/empty-bucket.html).
+For more information on managing Amazon S3 buckets and objects, see [Emptying a bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/empty-bucket.html).

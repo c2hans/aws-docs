@@ -18,7 +18,16 @@ Type: Boolean
 Required: No
 
  **Filter.N**
-The filters associated with the transit gateway policy table.
+One or more filters. The possible values are:
++  `policy-rule-number` - The rule number for the transit gateway policy table entry.
++  `target-route-table-id` - The ID of the target route table.
++  `policy-rule.source-ip` - The source CIDR block for the policy rule.
++  `policy-rule.destination-ip` - The destination CIDR block for the policy rule.
++  `policy-rule.source-port` - The source port or port range for the policy rule.
++  `policy-rule.destination-port` - The destination port or port range for the policy rule.
++  `policy-rule.protocol` - The protocol for the policy rule.
++  `policy-rule.meta-data.key` - The metadata key for the policy rule.
++  `policy-rule.meta-data.value` - The metadata value for the policy rule.
 Type: Array of [Filter](API_Filter.md) objects
 Required: No
 
@@ -42,6 +51,10 @@ Required: Yes
 <a name="API_GetTransitGatewayPolicyTableEntries_ResponseElements"></a>
 
 The following elements are returned by the service.
+
+ **nextToken**
+The token to use to retrieve the next page of results. This value is `null` when there are no more results to return.
+Type: String
 
  **requestId**
 The ID of the request.

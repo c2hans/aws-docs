@@ -9,8 +9,6 @@ End of support notice: On March 31, 2027, AWS will end support for Amazon WorkSp
 
 The following table describes the documentation releases for the WorkSpaces Thin Client User Guide.
 
-****
-
 | Change | Description | Date |
 | --- | --- | --- |
 | [Amazon WorkSpaces Thin Client end of support](workspacesthinclient-end-of-support.md) | End of support notice: On March 31, 2027, AWS will end support for Amazon WorkSpaces Thin Client. After March 31, 2027, you will no longer be able to access the WorkSpaces Thin Client console or WorkSpaces Thin Client resources. For more information, see [Amazon WorkSpaces Thin Client end of support](workspacesthinclient-end-of-support.md). | March 31, 2026 |

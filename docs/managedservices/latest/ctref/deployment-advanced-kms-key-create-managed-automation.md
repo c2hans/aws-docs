@@ -14,8 +14,6 @@ Request a KMS key by describing key permissions or submitting a key policy docum
 ## Change Type Details
 <a name="ct-2epp05svrlwod-DAKc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2epp05svrlwod |

@@ -26,8 +26,6 @@ The Amazon S3 gateway endpoint uses an IAM policy document to limit access to th
 
 The following table describes the Amazon S3 buckets you should reference in your policies to allow access to CodeArtifact in each Region.
 
-****
-
 | Region | Amazon S3 Bucket ARN |
 | --- | --- |
 | us-east-1 | arn:aws:s3:::assets-193858265520-us-east-1 |

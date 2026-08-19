@@ -131,8 +131,6 @@ For more information, see [Common parameters for RMAN procedures](Appendix.Oracl
 
 This procedure also uses the following additional parameter.
 
-****
-
 | Parameter name | Data type | Valid values | Default | Required | Description |
 | --- | --- | --- | --- | --- | --- |
 | `p_tablespace_name` | varchar2 | A valid tablespace name | — | Yes | The name of the tablespace. |
@@ -173,8 +171,6 @@ This procedure uses the following common parameters for RMAN tasks:
 For more information, see [Common parameters for RMAN procedures](Appendix.Oracle.CommonDBATasks.CommonParameters.md).
 
 This procedure also uses the following additional parameters.
-
-****
 
 | Parameter name | Data type | Valid values | Default | Required | Description |
 | --- | --- | --- | --- | --- | --- |

@@ -9,8 +9,6 @@ Amazon Q Business is no longer open to new customers. For capabilities similar t
 
 Amazon Q Business supports plugin creation through both the console and the APIs.
 
-****
-
 | API action | API description | Relevant User Guide topic |
 | --- | --- | --- |
 | [CreatePlugin](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreatePlugin.html) | Creates an Amazon Q Business plugin | [Configuring plugins with Amazon Q Business](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/plugins.html) |

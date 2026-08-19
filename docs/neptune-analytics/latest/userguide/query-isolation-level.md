@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/query
 # Transaction isolation levels in Neptune Analytics
 <a name="query-isolation-level"></a>
 
- Neptune Analytics has some differences with isolation level supported by [Neptune Database](https://docs.aws.amazon.com//neptune/latest/userguide/transactions-neptune.html).
+ Neptune Analytics has some differences with isolation level supported by [Neptune Database](https://docs.aws.amazon.com/neptune/latest/userguide/transactions-neptune.html).
 
  **Read-only query isolation in Neptune Analytics:** Neptune Analytics evaluates read-only queries under snapshot isolation, just like Neptune Database.
 

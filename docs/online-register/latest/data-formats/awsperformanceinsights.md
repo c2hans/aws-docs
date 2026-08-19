@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsp
 
 AWS Performance Insights provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="pi-DescribeDimensionKeys"></a>[DescribeDimensionKeys](https://docs.aws.amazon.com/performance-insights/latest/APIReference/API_DescribeDimensionKeys.html) | Call DescribeDimensionKeys API to retrieve the top N dimension keys for a metric for a specific time period | Read |

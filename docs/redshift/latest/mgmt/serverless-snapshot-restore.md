@@ -38,6 +38,6 @@ Restoring a snapshot to a serverless namespace is completed in two phases. The f
 
 1. Choose a **Node type**. The number of nodes depends on the node type.
 
-1. Follow the instructions on the page on the console page to enter the properties for **Cluster configuration**. See [ Creating a cluster](https://docs.aws.amazon.com//redshift/latest/mgmt/create-cluster.html) for more information.
+1. Follow the instructions on the page on the console page to enter the properties for **Cluster configuration**. See [ Creating a cluster](https://docs.aws.amazon.com/redshift/latest/mgmt/create-cluster.html) for more information.
 
-For more information about snapshots on provisioned clusters, see [Amazon Redshift snapshots and backups](https://docs.aws.amazon.com//redshift/latest/mgmt/working-with-snapshots.html).
+For more information about snapshots on provisioned clusters, see [Amazon Redshift snapshots and backups](https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-snapshots.html).

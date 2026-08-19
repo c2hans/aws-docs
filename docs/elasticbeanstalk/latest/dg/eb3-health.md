@@ -22,8 +22,6 @@ If the root directory contains a `platform.yaml` file specifying a custom platfo
 ## Options
 <a name="eb3-healthoptions"></a>
 
-****
-
 |  Name  |  Description  |
 | --- | --- |
 | `-r`<br />or<br />`--refresh` | Show health information interactively and update every 10 seconds as new information is reported. |

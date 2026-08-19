@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon Lookout for Vision provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="lookoutvision-DescribeDataset"></a>[DescribeDataset](https://docs.aws.amazon.com/lookout-for-vision/latest/APIReference/API_DescribeDataset.html) | Show detailed information about dataset manifest | Read |

@@ -21,7 +21,7 @@ Use this section to get started with the AWS Billing and Cost Management console
 ## Sign up for an AWS account
 <a name="sign-up-for-aws"></a>
 
-To get started with AWS, you need an AWS account. For information about creating an AWS account, see [Getting started with an AWS account](https://docs.aws.amazon.com//accounts/latest/reference/getting-started.html) in the *AWS Account Management Reference Guide*.
+To get started with AWS, you need an AWS account. For information about creating an AWS account, see [Getting started with an AWS account](https://docs.aws.amazon.com/accounts/latest/reference/getting-started.html) in the *AWS Account Management Reference Guide*.
 
 ## Step 1: (Prerequisite) Sign up for AWS and create an IAM user
 <a name="billing-gs-review"></a>

@@ -50,7 +50,7 @@ You can wait for the next scheduled maintenance window time to run tasks on the 
 
   For information about the role permissions needed by an AWS managed Automation runbook, see the runbook descriptions in the [AWS Systems Manager Automation Runbook Reference](https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-runbook-reference.html).
 
-  For information about the role permissions needed by an AWS managed SSM document, review the content of the document in the [Documents](https://console.aws.amazon.com//systems-manager/documents) section Systems Manager console.
+  For information about the role permissions needed by an AWS managed SSM document, review the content of the document in the [Documents](https://console.aws.amazon.com/systems-manager/documents) section Systems Manager console.
 
   For information about the role permissions needed for Step Functions tasks, Lambda tasks, and custom Automation runbooks and SSM documents, verify permission requirements with the author of those resources.
 

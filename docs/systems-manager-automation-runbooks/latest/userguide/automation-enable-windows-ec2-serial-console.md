@@ -11,17 +11,17 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 
  **How does it work?**
 
- The `AWSSupport-EnableWindowsEC2SerialConsole` automation runbook helps to enable SAC and boot menu on Amazon EC2 instances running Microsoft Windows Server. For instances in running state and managed by AWS Systems Manager, the runbook runs an AWS Systems Manager Run Command PowerShell script to enable SAC and boot menu. For instances in stopped state or not managed by AWS Systems Manager, the runbook uses the [AWSSupport-StartEC2RescueWorkflow](https://docs.aws.amazon.com//systems-manager-automation-runbooks/latest/userguide/automation-awssupport-startec2rescueworkflow.html) to create a temporary Amazon EC2 instance to perform the required changes offline.
+ The `AWSSupport-EnableWindowsEC2SerialConsole` automation runbook helps to enable SAC and boot menu on Amazon EC2 instances running Microsoft Windows Server. For instances in running state and managed by AWS Systems Manager, the runbook runs an AWS Systems Manager Run Command PowerShell script to enable SAC and boot menu. For instances in stopped state or not managed by AWS Systems Manager, the runbook uses the [AWSSupport-StartEC2RescueWorkflow](https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-awssupport-startec2rescueworkflow.html) to create a temporary Amazon EC2 instance to perform the required changes offline.
 
- For more information see [Amazon EC2 Serial Console for Windows instances.](https://docs.aws.amazon.com//AWSEC2/latest/WindowsGuide/ec2-serial-console.html)
+ For more information see [Amazon EC2 Serial Console for Windows instances.](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/ec2-serial-console.html)
 
 **Important**
-If you enable SAC on an instance, the Amazon EC2 services that rely on password retrieval will not work from the Amazon EC2 console. For more information, see [Use SAC to troubleshoot your Windows instance.](https://docs.aws.amazon.com//AWSEC2/latest/WindowsGuide/troubleshooting-sac.html)
-To configure access to the serial console, you must grant serial console access at the account level and then configure AWS Identity and Access Management (IAM) policies to grant access to your users. You must also configure a password-based user on every instance so that your users can use the serial console for troubleshooting. For more information see [Configure access to the Amazon EC2 Serial Console.](https://docs.aws.amazon.com//AWSEC2/latest/UserGuide/configure-access-to-serial-console.html)
-To see if the serial console is enabled on your account see [View account access status to the serial console.](https://docs.aws.amazon.com//AWSEC2/latest/WindowsGuide/configure-access-to-serial-console.html#sc-view-account-access)
-Serial console access is only supported on virtualized instances built on the [Nitro System.](https://docs.aws.amazon.com//AWSEC2/latest/UserGuide/instance-types.html#nitro-instance-types)
+If you enable SAC on an instance, the Amazon EC2 services that rely on password retrieval will not work from the Amazon EC2 console. For more information, see [Use SAC to troubleshoot your Windows instance.](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/troubleshooting-sac.html)
+To configure access to the serial console, you must grant serial console access at the account level and then configure AWS Identity and Access Management (IAM) policies to grant access to your users. You must also configure a password-based user on every instance so that your users can use the serial console for troubleshooting. For more information see [Configure access to the Amazon EC2 Serial Console.](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configure-access-to-serial-console.html)
+To see if the serial console is enabled on your account see [View account access status to the serial console.](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/configure-access-to-serial-console.html#sc-view-account-access)
+Serial console access is only supported on virtualized instances built on the [Nitro System.](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-types.html#nitro-instance-types)
 
- For more information, see the Amazon EC2 Serial Console [Prerequisites.](https://docs.aws.amazon.com//AWSEC2/latest/WindowsGuide/ec2-serial-console-prerequisites.html)
+ For more information, see the Amazon EC2 Serial Console [Prerequisites.](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/ec2-serial-console-prerequisites.html)
 
 **Document type**
 
@@ -205,7 +205,7 @@ Follow these steps to configure the automation:
 1. The document performs the following steps:
    + **CheckIfEc2SerialConsoleAccessEnabled:**
 
-     Checks if Amazon EC2 Serial Console access is enabled at the account level. Note: Access to the serial console is not available by default. For more information see [Configure access to the Amazon EC2 Serial Console.](https://docs.aws.amazon.com//AWSEC2/latest/WindowsGuide/configure-access-to-serial-console.html#sc-grant-account-access)
+     Checks if Amazon EC2 Serial Console access is enabled at the account level. Note: Access to the serial console is not available by default. For more information see [Configure access to the Amazon EC2 Serial Console.](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/configure-access-to-serial-console.html#sc-grant-account-access)
    + **CheckIfEc2InstanceIsWindows:**
 
      Asserts if the target instance platform is Windows.
@@ -267,6 +267,6 @@ Follow these steps to configure the automation:
 
 Systems Manager Automation
 + [Run this Automation (console)](https://console.aws.amazon.com/systems-manager/automation/execute/AWSSupport-EnableWindowsEC2SerialConsole)
-+ [Run an automation](https://docs.aws.amazon.com//systems-manager/latest/userguide/automation-working-executing.html)
-+ [Setting up an Automation](https://docs.aws.amazon.com//systems-manager/latest/userguide/automation-setup.html)
++ [Run an automation](https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-working-executing.html)
++ [Setting up an Automation](https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-setup.html)
 + [Support Automation Workflows landing page](https://aws.amazon.com/premiumsupport/technology/saw/)

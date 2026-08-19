@@ -24,8 +24,6 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_location-actions-as-permissions).
 
-****
-
 - **   AssociateTrackerConsumer  **
   - **IAM action:**  [geo:AssociateTrackerConsumer](#list_location-action-AssociateTrackerConsumer)
   - **Condition key:**
@@ -447,8 +445,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
 
-****
-
 - **   [AssociateTrackerConsumer](https://docs.aws.amazon.com/location/latest/APIReference/API_WaypointTracking_AssociateTrackerConsumer.html)  **
   - **Description:** Grants permission to create an association between a geofence-collection and a tracker resource
   - **Resource types (\*required):** [tracker\*](#list_location-resource-tracker)
@@ -853,8 +849,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
 
-****
-
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
 |  [api-key](https://docs.aws.amazon.com/location/latest/developerguide/using-apikeys.html)  | arn:${Partition}:geo:${Region}:${Account}:api-key/${KeyName} | [aws:ResourceTag/${TagKey}](#list_location-aws_ResourceTag___TagKey_) |
@@ -869,8 +863,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_location-policy-keys"></a>
 
 Amazon Location defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

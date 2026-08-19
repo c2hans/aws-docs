@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awss
 
 AWS Snow Device Management provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="snow-device-management-DescribeDevice"></a>[DescribeDevice](https://docs.aws.amazon.com/snowball/latest/developer-guide/aws-sdm.html#sdm-cli-describe-device) | Describe a remotely-managed device | Read |

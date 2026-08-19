@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsm
 
 AWS Marketplace Image Building Service provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="aws-marketplace-DescribeBuilds"></a>[DescribeBuilds](https://docs.aws.amazon.com/marketplace/latest/buyerguide/api-reference.html) | Describes Image Builds identified by a build Id | Read |

@@ -36,8 +36,6 @@ You must understand what IV you are using in your application. To unwrap the key
 
 The following table describes permitted values for IVs, which the wrapping algorithm specifies.
 
-****
-
 | AES Key Wrap Algorithm | Implicit IV | Explicit IV |
 | --- | --- | --- |
 | AES Key Wrap with Zero Padding  | Required Default value: (IV calculated internally based on specification) | Not allowed |
@@ -52,8 +50,6 @@ The following table describes permitted values for IVs, which the wrapping algor
 + In the [JCE provider](java-library.md), select the appropriate algorithm, mode and padding combination, implementing cipher methods `Cipher.WRAP_MODE` and `Cipher.UNWRAP_MODE` as shown in the following table.
 + In the [CloudHSM CLI](cloudhsm_cli.md), choose the appropriate algorithm from the list of supported [The key wrap command in CloudHSM CLI](cloudhsm_cli-key-wrap.md) and [The key unwrap command in CloudHSM CLI](cloudhsm_cli-key-unwrap.md) algorithms as shown in the following table.
 + In [key\_mgmt\_util (KMU)](key_mgmt_util.md), use commands [Export an AWS CloudHSM key using KMU](key_mgmt_util-wrapKey.md) and [Unwrap an AWS CloudHSM key using KMU](key_mgmt_util-unwrapKey.md) with appropriate m values as shown in the following table.
-
-****
 
 | AES Key Wrap Algorithm | PKCS \#11 Mechanism | Java Method | CloudHSM CLI Sub Command | Key Management Utility (KMU) Argument |
 | --- | --- | --- | --- | --- |

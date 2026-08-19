@@ -13,8 +13,6 @@ While dynamic properties are being applied, your cluster status is `modifying`. 
 
 The following table indicates which WLM properties are dynamic or static when using automatic WLM or manual WLM.
 
-****
-
 | WLM Property | Automatic WLM | Manual WLM |
 | --- | --- | --- |
 | Query groups | Dynamic | Static |

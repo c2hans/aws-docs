@@ -21,6 +21,11 @@ Type: String
 Valid Values: `modifying | optimizing | completed | failed`
 Required: No
 
+ ** operator **
+The service provider that manages the resource.
+Type: [OperatorResponse](API_OperatorResponse.md) object
+Required: No
+
  ** originalIops **
 The original IOPS rate of the volume.
 Type: Integer

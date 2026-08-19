@@ -14,7 +14,7 @@ In addition to the AWS global infrastructure, Aurora DSQL offers several feature
 ## Backup and restore
 <a name="disaster-recovery-resiliency-backup-and-restore"></a>
 
-Aurora DSQL supports backup and restore with AWS Backup console. You can perform a full backup and restore for your single-Region and multi-Region clusters. For more information, see [Backup and restore for Amazon Aurora DSQLBackup and restore](backup-aurora-dsql.md).
+Aurora DSQL supports backup and restore with AWS Backup console. You can perform a full backup and restore for your single-Region and multi-Region clusters. For more information, see [Backup and restore for Amazon Aurora DSQL](backup-aurora-dsql.md).
 
 ## Replication
 <a name="disaster-recovery-resiliency-replication"></a>

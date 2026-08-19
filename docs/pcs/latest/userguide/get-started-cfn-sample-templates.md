@@ -5,8 +5,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/get-started-cfn-sam
 # CloudFormation templates to create a sample AWS PCS cluster
 <a name="get-started-cfn-sample-templates"></a>
 
-****
-
 | AWS Region name | AWS Region | View source | Launch stack |
 | --- | --- | --- | --- |
 | US East (N. Virginia) | us-east-1 | [Download YAML](https://s3.amazonaws.com/aws-hpc-recipes/main/recipes/pcs/getting_started/assets/cluster.yaml) | [![Launch stack](http://docs.aws.amazon.com/pcs/latest/userguide/images/cloudformation-launch-stack-button.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create/review?stackName=get-started-cfn&templateURL=https://s3.amazonaws.com/aws-hpc-recipes/main/recipes/pcs/getting_started/assets/cluster.yaml&param_ClientIpCidr=0.0.0.0%2F0) |

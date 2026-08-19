@@ -18,8 +18,6 @@ You can also set the default time zone for Oracle Scheduler. For more informatio
 
 The `alter_db_time_zone` procedure has the following parameters.
 
-****
-
 | Parameter name | Data type | Default | Required | Description |
 | --- | --- | --- | --- | --- |
 | `p_new_tz` | varchar2 | — | Yes | The new time zone as a named region or an absolute offset from Coordinated Universal Time (UTC). Valid offsets range from -12:00 to \+14:00.  |

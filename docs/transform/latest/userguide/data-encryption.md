@@ -96,9 +96,9 @@ To use your customer managed key with your AWS Transform resources, the followin
 kms:CreateGrant – Adds a grant to a customer managed key. Grants control access to a specified KMS key, which allows access to grant operations AWS Transform requires. For more information about [Using Grants](https://docs.aws.amazon.com/), see the *AWS Key Management Service Developer Guide*.
 
 This allows AWS Transform to do the following:
-+ Call [KMS API ([GenerateDataKeyWithoutPlainText](https://docs.aws.amazon.com/kms/latest/APIReference/API_GenerateDataKeyWithoutPlaintext)/[GenerateDatakey](https://docs.aws.amazon.com//kms/latest/APIReference/API_GenerateDataKey)) to generate an encrypted data key and store it, because the data key isn't immediately used to encrypt.
++ Call [KMS API ([GenerateDataKeyWithoutPlainText](https://docs.aws.amazon.com/kms/latest/APIReference/API_GenerateDataKeyWithoutPlaintext)/[GenerateDatakey](https://docs.aws.amazon.com/kms/latest/APIReference/API_GenerateDataKey)) to generate an encrypted data key and store it, because the data key isn't immediately used to encrypt.
 + Call [KMS API ([Decrypt](https://docs.aws.amazon.com/kms/latest/APIReference/API_Decrypt))] to use the stored encrypted data key to access encrypted data.
-+ Set up a retiring principal to allow the service to [RetireGrant](https://docs.aws.amazon.com//kms/latest/APIReference/API_RetireGrant).
++ Set up a retiring principal to allow the service to [RetireGrant](https://docs.aws.amazon.com/kms/latest/APIReference/API_RetireGrant).
 + [kms:DescribeKey](https://docs.aws.amazon.com/kms/latest/APIReference/API_DescribeKey) – Provides the customer managed key details to allow [Service Name] to validate the key.
 
 ### Encryption for SQL modernization

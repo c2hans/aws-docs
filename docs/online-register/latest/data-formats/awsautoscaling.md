@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsa
 
 AWS Auto Scaling provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="autoscaling-plans-DescribeScalingPlanResources"></a>[DescribeScalingPlanResources](https://docs.aws.amazon.com/autoscaling/plans/APIReference/API_DescribeScalingPlanResources.html) | Describes the scalable resources in the specified scaling plan. | Read |

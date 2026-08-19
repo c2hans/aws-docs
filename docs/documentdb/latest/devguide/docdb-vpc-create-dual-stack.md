@@ -38,7 +38,7 @@ Use the following procedure to create a VPC with both public and private subnets
 
 **To create a VPC and subnets**
 
-1. Open the Amazon VPC console at [https://console.aws.amazon.com/vpc](https://console.aws.amazon.com//vpc).
+1. Open the Amazon VPC console at [https://console.aws.amazon.com/vpc](https://console.aws.amazon.com/vpc).
 
 1. In the top-right corner of the AWS Management Console, choose the Region to create your VPC in. This example uses the US West (Oregon) Region.
 
@@ -70,7 +70,7 @@ Next, you create a security group for public access. To connect to public EC2 in
 
 **To create a VPC security group**
 
-1. Open the Amazon VPC console at [https://console.aws.amazon.com/vpc](https://console.aws.amazon.com//vpc).
+1. Open the Amazon VPC console at [https://console.aws.amazon.com/vpc](https://console.aws.amazon.com/vpc).
 
 1. Choose **VPC Dashboard**, choose **Security Groups**, and then choose **Create security group**.
 
@@ -108,7 +108,7 @@ To keep your cluster private, create a second security group for private access.
 
 **To create a VPC security group**
 
-1. Open the Amazon VPC console at [https://console.aws.amazon.com/vpc](https://console.aws.amazon.com//vpc).
+1. Open the Amazon VPC console at [https://console.aws.amazon.com/vpc](https://console.aws.amazon.com/vpc).
 
 1. Choose **VPC Dashboard**, choose **Security Groups**, and then choose **Create security group**.
 
@@ -136,7 +136,7 @@ A subnet group is a collection of subnets that you create in a VPC and that you 
 
 1. Identify the private subnets for your database in the VPC.
 
-   1. Open the Amazon VPC console at [https://console.aws.amazon.com/vpc](https://console.aws.amazon.com//vpc).
+   1. Open the Amazon VPC console at [https://console.aws.amazon.com/vpc](https://console.aws.amazon.com/vpc).
 
    1. Choose **VPC Dashboard**, and then choose **Subnets**.
 
@@ -243,7 +243,7 @@ If you added resources in the VPC that you created in this topic, you might need
 
 1. Note the VPC ID:
 
-   1. Open the Amazon VPC console at [https://console.aws.amazon.com/vpc](https://console.aws.amazon.com//vpc).
+   1. Open the Amazon VPC console at [https://console.aws.amazon.com/vpc](https://console.aws.amazon.com/vpc).
 
    1. Choose **VPC Dashboard**, and then choose **Your VPCs**.
 
@@ -253,7 +253,7 @@ If you added resources in the VPC that you created in this topic, you might need
 
 1. Delete the security groups:
 
-   1. Open the Amazon VPC console at [https://console.aws.amazon.com/vpc](https://console.aws.amazon.com//vpc).
+   1. Open the Amazon VPC console at [https://console.aws.amazon.com/vpc](https://console.aws.amazon.com/vpc).
 
    1. Choose **VPC Dashboard**, and then choose **Security Groups**.
 
@@ -267,7 +267,7 @@ If you added resources in the VPC that you created in this topic, you might need
 
 1. Delete the NAT gateway:
 
-   1. Open the Amazon VPC console at [https://console.aws.amazon.com/vpc](https://console.aws.amazon.com//vpc).
+   1. Open the Amazon VPC console at [https://console.aws.amazon.com/vpc](https://console.aws.amazon.com/vpc).
 
    1. Choose **VPC Dashboard**, and then choose **Security Groups**.
 
@@ -279,7 +279,7 @@ If you added resources in the VPC that you created in this topic, you might need
 
 1. Delete the VPC:
 
-   1. Open the Amazon VPC console at [https://console.aws.amazon.com/vpc](https://console.aws.amazon.com//vpc).
+   1. Open the Amazon VPC console at [https://console.aws.amazon.com/vpc](https://console.aws.amazon.com/vpc).
 
    1. Choose **VPC Dashboard**, and then choose **Your VPCs**.
 
@@ -293,7 +293,7 @@ If you added resources in the VPC that you created in this topic, you might need
 
 1. Release the elastic IP address:
 
-   1. Open the EC2 console at [https://console.aws.amazon.com/ec2](https://console.aws.amazon.com//ec2).
+   1. Open the EC2 console at [https://console.aws.amazon.com/ec2](https://console.aws.amazon.com/ec2).
 
    1. Choose **EC2 Dashboard**, and then choose **Elastic IPs**.
 

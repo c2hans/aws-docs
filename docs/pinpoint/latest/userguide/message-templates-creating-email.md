@@ -38,7 +38,7 @@ You can also include personalized content in the subject and body of the templat
 **Note**
 You must set up an email orchestration sending role before you can use email headers. For more information, see [Creating an email orchestration sending role in Amazon Pinpoint](channels-email-orchestration-sending-role.md).
 
-   Under **Headers**, choose **Add new headers**, to add up to 15 headers for the email message. For a list of supported headers see [Amazon SES header fields](https://docs.aws.amazon.com/ses/latest/dg/header-fields.html) in the [Amazon Simple Email Service Developer Guide](https://docs.aws.amazon.com//ses/latest/dg/Welcome.html).
+   Under **Headers**, choose **Add new headers**, to add up to 15 headers for the email message. For a list of supported headers see [Amazon SES header fields](https://docs.aws.amazon.com/ses/latest/dg/header-fields.html) in the [Amazon Simple Email Service Developer Guide](https://docs.aws.amazon.com/ses/latest/dg/Welcome.html).
    + For **Name**, enter the name of the header.
    + For **Value**, enter the value of the header.
 

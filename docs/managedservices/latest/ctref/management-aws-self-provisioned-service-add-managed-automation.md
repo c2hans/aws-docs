@@ -14,8 +14,6 @@ Add a specific, allowed, AWS service to your AMS account. AMS adds the necessary
 ## Change Type Details
 <a name="ct-3qe6io8t6jtny-MASa-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-3qe6io8t6jtny |

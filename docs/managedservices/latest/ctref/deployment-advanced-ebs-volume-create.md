@@ -14,8 +14,6 @@ Creates up to five EBS volumes, and attaches them to an existing EC2 instance th
 ## Change Type Details
 <a name="ct-16xg8qguovg2w-DAEc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-16xg8qguovg2w |

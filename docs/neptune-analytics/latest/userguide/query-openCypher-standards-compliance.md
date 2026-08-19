@@ -5,9 +5,9 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/query
 # Neptune Analytics OpenCypher specification compliance
 <a name="query-openCypher-standards-compliance"></a>
 
- Refer to the Neptune Database documentation found [here](https://docs.aws.amazon.com//neptune/latest/userguide/feature-opencypher-compliance.html) for openCypher specification compliance, with the exception that Neptune Analytics does not support custom edge IDs.
+ Refer to the Neptune Database documentation found [here](https://docs.aws.amazon.com/neptune/latest/userguide/feature-opencypher-compliance.html) for openCypher specification compliance, with the exception that Neptune Analytics does not support custom edge IDs.
 
- Amazon Neptune also supports several features beyond the scope of the OpenCypher specification. Refer to [ OpenCypher extensions in Amazon Neptune](https://docs.aws.amazon.com//neptune/latest/userguide/access-graph-opencypher-extensions.html) for details.
+ Amazon Neptune also supports several features beyond the scope of the OpenCypher specification. Refer to [ OpenCypher extensions in Amazon Neptune](https://docs.aws.amazon.com/neptune/latest/userguide/access-graph-opencypher-extensions.html) for details.
 
 ## Vertex and edge IDs
 <a name="query-openCypher-standards-compliance-vertex-and-edge-ids"></a>
@@ -41,7 +41,7 @@ RETURN r
 ## IRIs and language-tagged literals
 <a name="query-openCypher-standards-compliance-iri"></a>
 
- Neptune Analytics supports values hat are of type IRI or languag-tagged literal. See [Handling RDF values](https://docs.aws.amazon.com//neptune-analytics/latest/userguide/using-rdf-data.html#rdf-handling) for more information.
+ Neptune Analytics supports values hat are of type IRI or languag-tagged literal. See [Handling RDF values](https://docs.aws.amazon.com/neptune-analytics/latest/userguide/using-rdf-data.html#rdf-handling) for more information.
 
 ## OpenCypher reduce() function
 <a name="query-openCypher-standards-compliance-reduce"></a>

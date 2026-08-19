@@ -14,8 +14,6 @@ Create a static route on transit gateway (TGW) route table. Use this change type
 ## Change Type Details
 <a name="ct-3r2ckznmt0a59-DMNa-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-3r2ckznmt0a59 |

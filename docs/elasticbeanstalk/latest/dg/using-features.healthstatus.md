@@ -27,8 +27,6 @@ Metrics gathered by the resources in your environment is published to Amazon Clo
 
 Elastic Beanstalk reports the health of a web server environment depending on how the application running in it responds to the health check. Elastic Beanstalk uses one of four colors to describe status, as shown in the following table:
 
-****
-
 | Color | Description |
 | --- | --- |
 | Grey | Your environment is being updated. |

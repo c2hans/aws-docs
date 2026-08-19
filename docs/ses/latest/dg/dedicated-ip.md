@@ -11,8 +11,6 @@ When you create a new Amazon SES account, by default your emails are sent from I
 
 When deciding between shared IP addresses or the two types of dedicated IP addresses defined above, choose the one that provides the most benefits for the type, volume, and patterns of email that you send. To help you make your decision, these benefits are summarized in the following table. Choose an item in the **Benefit** column for additional information.
 
-****
-
 | Benefit | Shared IP addresses | Dedicated IP addresses (standard) | Dedicated IP addresses (managed) |
 | --- | --- | --- | --- |
 | [Ready to use immediately](#dedicated-ip-simplicity) | Yes | No | No |

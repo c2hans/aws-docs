@@ -104,4 +104,4 @@ $  aws iot list-things --attribute-name "wattage" --attribute-value "75"
 }
 ```
 
-For more information, see [list-things](https://docs.aws.amazon.com//cli/latest/reference/iot/list-things.html) from the AWS CLI Command Reference.
+For more information, see [list-things](https://docs.aws.amazon.com/cli/latest/reference/iot/list-things.html) from the AWS CLI Command Reference.

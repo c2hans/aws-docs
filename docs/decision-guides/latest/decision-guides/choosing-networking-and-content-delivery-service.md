@@ -130,8 +130,6 @@ AWS provides a secure foundation for you to build and deploy your applications, 
 
 Now that you know the criteria by which you will be evaluating your networking service options, you are ready to choose which services may be a good fit.
 
-****
-
 | Service category | What is it optimized for? | AWS networking and content delivery services |
 | --- |--- |--- |
 | Network foundations | Optimized for getting started with AWS networking services and connecting your VPCs securely. | [Amazon VPC](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html)<br />[AWS PrivateLink](https://docs.aws.amazon.com/vpc/latest/privatelink/what-is-privatelink.html)<br />[AWS Transit Gateway](https://docs.aws.amazon.com/vpc/latest/tgw/what-is-transit-gateway.html) |

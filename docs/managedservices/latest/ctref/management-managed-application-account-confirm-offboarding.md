@@ -14,8 +14,6 @@ Confirm offboarding of the specified application account. Run this from the appl
 ## Change Type Details
 <a name="ct-2wlfo2jxj2rkj-MMAc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2wlfo2jxj2rkj |

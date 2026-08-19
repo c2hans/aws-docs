@@ -14,8 +14,6 @@ For example, consider a scaling policy that uses the predefined average `ElastiC
 
 A predefined metric is a structure that refers to a specific name, dimension, and statistic (`average`) of a given CloudWatch metric. Your Auto Scaling policy defines one of the below predefined metrics for your cluster:
 
-****
-
 | Predefined Metric Name | CloudWatch Metric Name | CloudWatch Metric Dimension | Ineligible Instance Types  |
 | --- | --- | --- | --- |
 | ElastiCachePrimaryEngineCPUUtilization | `EngineCPUUtilization` | ReplicationGroupId, Role = Primary | None |

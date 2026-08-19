@@ -14,6 +14,11 @@ You can use the [Generative AI upgrades for Apache Spark](upgrade-analysis.md) t
 
 <a name="table-glue-versions"></a>
 
+- **AWS Glue 6.0**
+  - **Supported runtime environment versions:**  +  Spark 4.1.1 <br />+  Python 3.13 <br />+  Scala 2.13.17
+  - **Supported Java version:** Java 17
+  - **Changes in functionality:** In addition to the Spark engine upgrade, there are optimizations and upgrades built into this AWS Glue release, such as:+  Open Table Formats (OTF) updated to Hudi 1.1.1, Iceberg 1.11.0, and Delta Lake 4.2.0 <br />+  Iceberg format version 3 with VARIANT data type, deletion vectors, row lineage tracking, nanosecond timestamps, and geo types <br />+  Spark Declarative Pipelines (SDP) for declarative ETL authoring in SQL and Python <br />+  Real-time mode for stateless streaming with millisecond-level latency <br />+  Spark Connect for Interactive Sessions <br />+  Arrow-native Python UDFs and UDTFs <br />+  Customer-managed Python virtual environment (`--python-virtual-env`) <br />+  AWS SDK for Java v2 only (v1 removed) <br />+  EMRFS removed; S3A is the sole S3 connector
+
 - **AWS Glue 5.1**
   - **Supported runtime environment versions:**  +  Spark 3.5.6 <br />+  Python 3.11 <br />+  Scala 2.12.18
   - **Supported Java version:** Java 17

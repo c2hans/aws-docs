@@ -66,8 +66,6 @@ The following tables list all supported platform branches for each platform. Onl
 ### Python
 <a name="release-2023-07-05-al2023-python.platforms.python"></a>
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  Package Manager  |  Packager  |  meld3  |  AWS X-Ray  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  ** Python 3.11 AL2023 version 4.0.2** <br /> * 64bit Amazon Linux 2023 v4.0.2 running Python 3.11 *  | 2023.1.20230629 | Python 3.11.2 | pipenv 2023.6.26 |  |  | 3.2.0 | nginx 1.24.0 (default), Apache 2.4.56 |

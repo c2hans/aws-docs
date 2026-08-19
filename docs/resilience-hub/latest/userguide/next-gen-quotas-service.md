@@ -25,4 +25,4 @@ The following table lists the quotas for Next generation Resilience Hub.
 | 14 | Test sources per test | 5 | No |
 | 15 | Tests per test template | 1 | No |
 
-Resilience tests run on AWS Fault Injection Service, so AWS FIS service quotas also apply to your test runs. These include quotas for the maximum number of active experiments and the maximum action duration. For more information, see [Quotas and limitations for AWS Fault Injection Service](https://docs.aws.amazon.com//fis/latest/userguide/fis-quotas.html).
+Resilience tests run on AWS Fault Injection Service, so AWS FIS service quotas also apply to your test runs. These include quotas for the maximum number of active experiments and the maximum action duration. For more information, see [Quotas and limitations for AWS Fault Injection Service](https://docs.aws.amazon.com/fis/latest/userguide/fis-quotas.html).

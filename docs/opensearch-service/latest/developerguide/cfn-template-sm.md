@@ -16,7 +16,7 @@ Then, use the **Integration with Sparse Encoders through Amazon SageMaker** temp
 
 **To use the Amazon SageMaker AI CloudFormation templates**
 
-1. Open the [Amazon OpenSearch Service console](https://console.aws.amazon.com//aos/home ).
+1. Open the [Amazon OpenSearch Service console](https://console.aws.amazon.com/aos/home ).
 
 1. In the left navigation pane, choose **Integrations**.
 

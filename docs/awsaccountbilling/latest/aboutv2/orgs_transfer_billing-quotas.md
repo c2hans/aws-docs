@@ -23,8 +23,6 @@ The following are terms and concepts for billing transfers:
 These quotas apply only to actions performed from the AWS Organizations management account.
 AWS Organizations is a global service that is physically hosted in the US East (N. Virginia) Region (`us-east-1`). Therefore, you must use `us-east-1` to access these quotas when using the Service Quotas console, the AWS CLI, or an AWS SDK.
 
-****
-
 | Description | Limit |
 | --- | --- |
 | Inbound billing transfers | 0 - The maximum number of external organizations that you can manage and pay for at any given time. This quota is adjustable, and can be increased by using Service Quotas console.<br />**Note:** Only the Management account of an organization can submit this quota increase request. Limit increases can be granted up to 1,000 based on customer qualifications and requirements.<br />Each *billing transfer invitation* you send counts against this quota. The count is returned if the invitation is declined, canceled, or expired. |

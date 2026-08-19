@@ -35,4 +35,4 @@ You can monitor your usage trends over time to:
 + Inform budget planning and business expansion estimates.
 + Identify potential cost-saving opportunities like removing cold data.
 
-Use the SYS system views to monitor Amazon Redshift Serverless;. For more information about the SYS monitoring views, go to [SYS monitoring views](https://docs.aws.amazon.com//redshift/latest/dg/serverless_views-monitoring.html) in the Amazon Redshift Database Developer Guide.
+Use the SYS system views to monitor Amazon Redshift Serverless;. For more information about the SYS monitoring views, go to [SYS monitoring views](https://docs.aws.amazon.com/redshift/latest/dg/serverless_views-monitoring.html) in the Amazon Redshift Database Developer Guide.

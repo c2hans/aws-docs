@@ -24,8 +24,6 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_guardduty-actions-as-permissions).
 
-****
-
 - **   AcceptAdministratorInvitation  **
   - **IAM action:**  [guardduty:AcceptAdministratorInvitation](#list_guardduty-action-AcceptAdministratorInvitation)
   - **Condition key:**
@@ -551,8 +549,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
 <a name="list_guardduty-actions-as-permissions"></a>
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
-
-****
 
 - **   [AcceptAdministratorInvitation](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_AcceptAdministratorInvitation.html)  **
   - **Description:** Grants permission to accept invitations to become a GuardDuty member account
@@ -1123,8 +1119,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
 
-****
-
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
 |  [detector](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_managing_access.html#guardduty-resources)  | arn:${Partition}:guardduty:${Region}:${Account}:detector/${DetectorId} | [aws:ResourceTag/${TagKey}](#list_guardduty-aws_ResourceTag___TagKey_) |
@@ -1140,8 +1134,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_guardduty-policy-keys"></a>
 
 Amazon GuardDuty defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

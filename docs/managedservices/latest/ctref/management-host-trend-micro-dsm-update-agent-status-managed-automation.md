@@ -14,8 +14,6 @@ Start, stop, deactivate, or reactivate Trend Micro agent.
 ## Change Type Details
 <a name="ct-0biqnokj25gkd-MHTu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-0biqnokj25gkd |

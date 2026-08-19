@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awse
 
 AWS Elemental Inference provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="elemental-inference-ExportDictionaryEntries"></a>[ExportDictionaryEntries](https://docs.aws.amazon.com/elemental-inference/latest/APIReference/API_ExportDictionaryEntries.html) | Export dictionary entries | Read |

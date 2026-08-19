@@ -10,8 +10,6 @@ OpenSearch SQL and OpenSearch Pipeline Processing Language (PPL) are languages f
 + **OpenSearch PPL (Piped Processing Language):** With OpenSearch PPL, you can retrieve, query, and analyze data using piped-together commands, making it easier to understand and compose complex queries. Its syntax is based on Unix pipes, and enables chaining of commands to transform and process data. With PPL, you can filter and aggregate data, and use commands such as JOINs, subqueries, LOOKUP, and a rich set of math, string, date, conditional, and other functions for analysis.
 
 Although most of the commands in OpenSearch PPL and OpenSearch SQL query languages are common across CloudWatch Logs and OpenSearch, there are some differences in which set of commands and functions are supported in each of these services. For more details, see the tables on the following pages.
-
-****
 + [Supported OpenSearch SQL commands and functions](supported-directquery-sql.md)
   + [Additional information for CloudWatch Logs Insights users using OpenSearch SQL](supported-directquery-sql.md#supported-sql-for-multi-log-queries)
   + [General SQL restrictions](supported-directquery-sql.md#general-sql-restrictions)

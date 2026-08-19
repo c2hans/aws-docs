@@ -5,9 +5,9 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-inte
 # Querying Amazon S3 tables with Athena
 <a name="s3-tables-integrating-athena"></a>
 
-Amazon Athena is an interactive query service that you can use to analyze data directly in Amazon S3 by using standard SQL. For more information, see [What is Amazon Athena?](https://docs.aws.amazon.com//athena/latest/ug/what-is.html) in the *Amazon Athena User Guide*.
+Amazon Athena is an interactive query service that you can use to analyze data directly in Amazon S3 by using standard SQL. For more information, see [What is Amazon Athena?](https://docs.aws.amazon.com/athena/latest/ug/what-is.html) in the *Amazon Athena User Guide*.
 
-After you integrate your table buckets with AWS analytics services, you can run Data Definition Language (DDL), Data Manipulation Language (DML), and Data Query Language (DQL) queries on S3 tables by using Athena. For more information about how to query tables in a table bucket, see [Register S3 Table bucket catalogs](https://docs.aws.amazon.com//athena/latest/ug/gdc-register-s3-table-bucket-cat.html) in the *Amazon Athena User Guide*.
+After you integrate your table buckets with AWS analytics services, you can run Data Definition Language (DDL), Data Manipulation Language (DML), and Data Query Language (DQL) queries on S3 tables by using Athena. For more information about how to query tables in a table bucket, see [Register S3 Table bucket catalogs](https://docs.aws.amazon.com/athena/latest/ug/gdc-register-s3-table-bucket-cat.html) in the *Amazon Athena User Guide*.
 
 You can also run queries in Athena from the Amazon S3 console.
 

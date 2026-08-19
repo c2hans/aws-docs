@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 **Note**
 Topics about data transfer in Lightsail have been relocated to [Data transfer in Lightsail](amazon-lightsail-faq-data-transfer-allowance.md).
 
-## What do Lightsail plans cost?
+## What do Lightsail instance plans cost?
 <a name="what-do-lightsail-plans-cost"></a>
 
 Lightsail plans are billed on an on-demand hourly rate, so you pay only for what you use. For every Lightsail plan you use, we charge you the fixed hourly price, up to the maximum monthly plan cost. The least expensive Lightsail plan starts at $0.0067 USD/hour ($5 USD/month). Lightsail plans that include a Windows Server license start at $0.0127 USD/hour ($9.50 USD/month).
@@ -17,6 +17,9 @@ Lightsail plans are billed on an on-demand hourly rate, so you pay only for what
 <a name="when-am-i-getting-charged-for-a-plan"></a>
 
 Lightsail instances and managed databases incur charges until they are deleted. These resources accrue charges even when they are in the stopped state. If you delete your Lightsail instance or managed database before the end of the month, we only charge you a prorated cost, based on the total number of hours that you used your Lightsail instance or managed database for that month. For example, if you use the least expensive Lightsail instance plan for 100 hours in a month, you will be charged 46 cents (100\*0.0046).
+
+**Note**
+Lightsail for Research instances accrue full hourly charges only while running. All Lightsail for Research instances cost $0.00685 USD/hr while stopped. For full pricing details, see [Lightsail for Research pricing](https://aws.amazon.com/lightsail/pricing/#Lightsail_for_Research).
 
 ## Can I try Lightsail instances for free?
 <a name="can-i-try-lightsail-instances-for-free"></a>

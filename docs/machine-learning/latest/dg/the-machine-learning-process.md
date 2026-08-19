@@ -9,8 +9,6 @@ We are no longer updating the Amazon Machine Learning service or accepting new u
 
 The following table describes how to use the Amazon ML console to perform the ML process outlined in this document.
 
-****
-
 | ML Process | Amazon ML Task |
 | --- | --- |
 | Analyze your data | To analyze your data in Amazon ML, create a datasource and review the data insights page. |

@@ -77,8 +77,6 @@ Edges map the output from one node to the input of another. In the following exa
 <a name="applications-manifest-abstract"></a>
 
 In an application manifest, an abstract node refers to a package defined by AWS Panorama, which you can use as a placeholder in your application manifest. AWS Panorama provides two types of abstract node.
-
-****
 + **Camera stream** – Choose the camera stream that the application uses during deployment.
 
   *Package name* – `panorama::abstract_rtsp_media_source`

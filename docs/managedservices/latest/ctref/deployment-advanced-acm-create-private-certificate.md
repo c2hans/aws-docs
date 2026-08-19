@@ -14,8 +14,6 @@ Create a private AWS Certificate Manager (ACM) certificate with email or DNS val
 ## Change Type Details
 <a name="ct-0hu3q3957aghj-DAAc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-0hu3q3957aghj |

@@ -14,8 +14,6 @@ Create an Elastic ("Classic") load balancer (ELB).
 ## Change Type Details
 <a name="ct-0ary07xiajwx4-DALc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-0ary07xiajwx4 |

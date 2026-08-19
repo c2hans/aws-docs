@@ -17,6 +17,6 @@ These pillars encompass:
 
 Amazon Nova customizable content moderation settings allow you to adjust safeguards relevant to your business requirements. In all cases, Amazon Nova enforces essential, non-configurable controls to ensure responsible use of AI, such as controls to prevent harm to children and preserve privacy. Please see [Responsible use](responsible-use.md) for additional details on Amazon Nova safeguards.
 
-Nova customizable content moderation settings are available for the Lite and Pro models using the method in [Deploy a custom model for on-demand inference](https://docs.aws.amazon.com//bedrock/latest/userguide/deploy-custom-model-on-demand.html) in the Bedrock User Guide, in the us-east-1 (N. Virginia) region.
+Nova customizable content moderation settings are available for the Lite and Pro models using the method in [Deploy a custom model for on-demand inference](https://docs.aws.amazon.com/bedrock/latest/userguide/deploy-custom-model-on-demand.html) in the Bedrock User Guide, in the us-east-1 (N. Virginia) region.
 
 To access customizable content moderation settings, contact your AWS Account Manager.

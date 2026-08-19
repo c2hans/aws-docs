@@ -691,7 +691,7 @@ The name of the Active Directory group to map to the SID. The data type is `varc
 
 Use this stored procedure to enable Kerberos authentication with Active Directory groups. If the `SID` or `group_name` already exists in the mapping, this stored procedure fails.
 
-For information about how to find the SID for a group, see [Step 8: Retrieve the Active Directory group SID in PowerShellStep 8: Retrieve Active Directory group SID in PowerShell](db2-kerberos-setting-up.md#db2-kerberos-setting-up-retrieve-ad-group-sid).
+For information about how to find the SID for a group, see [Step 8: Retrieve the Active Directory group SID in PowerShell](db2-kerberos-setting-up.md#db2-kerberos-setting-up-retrieve-ad-group-sid).
 
 For information about checking the status of creating a mapping, see [rdsadmin.get\_task\_status](db2-user-defined-functions.md#db2-udf-get-task-status).
 
@@ -754,7 +754,7 @@ The security ID (SID). The data type is `varchar`.
 ### Usage notes
 <a name="db2-sp-remove-sid-group-mapping-usage-notes"></a>
 
-For information about how to find the SID for a group, see [Step 8: Retrieve the Active Directory group SID in PowerShellStep 8: Retrieve Active Directory group SID in PowerShell](db2-kerberos-setting-up.md#db2-kerberos-setting-up-retrieve-ad-group-sid).
+For information about how to find the SID for a group, see [Step 8: Retrieve the Active Directory group SID in PowerShell](db2-kerberos-setting-up.md#db2-kerberos-setting-up-retrieve-ad-group-sid).
 
 For information about checking the status of removing mappings, see [rdsadmin.get\_task\_status](db2-user-defined-functions.md#db2-udf-get-task-status).
 

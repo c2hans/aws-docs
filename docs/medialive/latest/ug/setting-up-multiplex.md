@@ -62,8 +62,6 @@ The channel can contain only one output group, of type **Multiplex**. This type 
 
 The following restrictions apply to the output fields.
 
-****
-
 | Field |  Value |
 | --- | --- |
 | In Multiplex destination, the Multiplex program field | From the list, choose the multiplex program that this channel belongs to. |
@@ -74,8 +72,6 @@ The following restrictions apply to the output fields.
 **Restrictions in the Video**
 
 The following rules apply to the fields in the video.
-
-****
 
 | Field |  Value |
 | --- | --- |

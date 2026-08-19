@@ -14,8 +14,6 @@ Delete an existing AWS account alias. Note that if you delete the account alias,
 ## Change Type Details
 <a name="ct-2rfzmkm6ugigh-MAId-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2rfzmkm6ugigh |

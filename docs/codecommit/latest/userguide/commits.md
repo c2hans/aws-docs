@@ -15,7 +15,7 @@ Commits are snapshots of the contents and changes to the contents of your reposi
 
 Before you can push commits to a CodeCommit repository, you must set up your local computer to connect to the repository. For the simplest method, see [For HTTPS users using Git credentials](setting-up-gc.md).
 
-For information about working with other aspects of your repository in CodeCommit, see [Working with repositories](repositories.md), [Working with files](files.md), [Working with pull requests](pull-requests.md) , [Working with branches](branches.md), and [Working with user preferences](user-preferences.md).
+For information about working with other aspects of your repository in CodeCommit, see [Working with repositories](repositories.md), [Working with files](files.md), [Working with pull requests](pull-requests.md), [Working with branches](branches.md), and [Working with user preferences](user-preferences.md).
 
 **Topics**
 + [Create a commit in AWS CodeCommit](how-to-create-commit.md)

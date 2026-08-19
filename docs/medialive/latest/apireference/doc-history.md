@@ -8,8 +8,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/doc-histor
 The following table describes the main changes to this documentation.
 + **API version: latest**
 
-****
-
 | Change | Description | Date |
 | --- | --- | --- |
 | Workflow monitor | Workflow monitor features have been added to the API. Workflow monitor is a tool to analyze AWS media services and create signal maps, visualizations of the media workflow, between those services. Use the signal maps to generate monitoring alarms and notifications using CloudWatch, EventBridge, and CloudFormation. | April 11, 2024 |

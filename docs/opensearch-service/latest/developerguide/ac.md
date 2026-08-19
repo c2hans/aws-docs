@@ -379,8 +379,6 @@ Complexities arise when policies disagree or make no explicit mention of a user.
 
 For example, if a resource-based policy grants you access to a domain subresource (an OpenSearch index or API), but an identity-based policy denies you access, you are denied access. If an identity-based policy grants access and a resource-based policy does not specify whether or not you should have access, you are allowed access. See the following table of intersecting policies for a full summary of outcomes for domain subresources.
 
-****
-
 |  | Allowed in resource-based policy | Denied in resource-based policy | Neither allowed nor denied in resource-based policy |
 | --- |--- |--- |--- |
 | **Allowed in identity-based policy** |  Allow  | Deny | Allow |
@@ -394,8 +392,6 @@ For example, if a resource-based policy grants you access to a domain subresourc
 <a name="ac-reference"></a>
 
 OpenSearch Service supports most policy elements in the [IAM Policy Elements Reference](https://docs.aws.amazon.com/IAM/latest/UserGuide/AccessPolicyLanguage_ElementDescriptions.html), with the exception of `NotPrincipal`. The following table shows the most common elements.
-
-****
 
 | JSON policy element | Summary |
 | --- | --- |

@@ -72,7 +72,7 @@ This returns:
 The return output in this example shows two release artifacts. The first release artifact file notes that the release version has a major release version of `1`, a time stamp of `20201218` (in YYYY-MM-DD format), and a `81f481f` SHA-7 commit ID.
 
 **Note**
-The preceding command assumes you have configured the AWS Command Line Interface. For more information, about how to configure the settings that the AWS CLI uses to interact with AWS, see [Configuring the AWS CLI](https://docs.aws.amazon.com//cli/latest/userguide/cli-chap-configure.html).
+The preceding command assumes you have configured the AWS Command Line Interface. For more information, about how to configure the settings that the AWS CLI uses to interact with AWS, see [Configuring the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html).
 
 Based on your operating system, use the following commands to install the artifacts:
 

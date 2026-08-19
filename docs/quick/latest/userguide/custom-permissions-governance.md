@@ -120,7 +120,7 @@ You configure Deny by Default as part of creating or editing a custom permission
 
 **Step 1: Open the custom permissions settings**
 
-   1. Open the [Quick console](https://aws.amazon.com//quicksight/).
+   1. Open the [Quick console](https://aws.amazon.com/quicksight/).
 
    1. Choose **Manage Quick**.
 

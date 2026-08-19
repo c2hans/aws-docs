@@ -13,7 +13,7 @@ The name of the event source. This field is required if `TriggerEventSource` is 
  ** EventSourceName **   <a name="connect-Type-RuleTriggerEventSource-EventSourceName"></a>
 The name of the event source.
 Type: String
-Valid Values: `OnPostCallAnalysisAvailable | OnRealTimeCallAnalysisAvailable | OnRealTimeChatAnalysisAvailable | OnPostChatAnalysisAvailable | OnEmailAnalysisAvailable | OnZendeskTicketCreate | OnZendeskTicketStatusUpdate | OnSalesforceCaseCreate | OnContactEvaluationSubmit | OnMetricDataUpdate | OnCaseCreate | OnCaseUpdate | OnSlaBreach | OnAlertUpdate | OnSchedulePublish | OnScheduleUpdate | OnScheduleTimeOffRequestActivity`
+Valid Values: `OnPostCallAnalysisAvailable | OnRealTimeCallAnalysisAvailable | OnRealTimeChatAnalysisAvailable | OnPostChatAnalysisAvailable | OnAfterCallWorkAvailable | OnAfterChatWorkAvailable | OnEmailAnalysisAvailable | OnZendeskTicketCreate | OnZendeskTicketStatusUpdate | OnSalesforceCaseCreate | OnContactEvaluationSubmit | OnMetricDataUpdate | OnCaseCreate | OnCaseUpdate | OnSlaBreach | OnAlertUpdate | OnSchedulePublish | OnScheduleUpdate | OnScheduleTimeOffRequestActivity`
 Required: Yes
 
  ** IntegrationAssociationId **   <a name="connect-Type-RuleTriggerEventSource-IntegrationAssociationId"></a>

@@ -134,13 +134,13 @@ Custom tags can be added at any time, not just during initial deployment.
   To enable KMS CMK encryption for log groups and SNS topics, set the `cloudwatch_log_group_enable_cmk_encryption` and `sns_topic_enable_cmk_encryption` variables.
 
   If you opt into these settings, AFT uses the existing CMK, *alias/aft*, to encrypt CloudWatch logs and SNS topics. This CMK is created when AFT is deployed in the AFT management account, and it can be applied to log groups and SNS topics.
-  + If the variable `cloudwatch_log_group_enable_cmk_encryption` is set to **true**, the CloudWatch log groups for AFT are encrypted using the CMK. If the variable is set to **false**, which is the default value, the logs are encrypted using [server side encryption with the CloudWatch logs default](https://docs.aws.amazon.com//AmazonCloudWatch/latest/logs/encrypt-log-data-kms.html).
-  +  If the variable `sns_topic_enable_cmk_encryption` is set to **true**, notifications sent to the AFT SNS topics (*aft-notifications* and *aft-failure-notifications*) are encrypted using the CMK. If the variable is set to **false**, which is the default value, the SNS messages are encrypted with the AWS-managed key: *alias/aws/sns*. For more information, see [SSE key terms](https://docs.aws.amazon.com//sns/latest/dg/sns-server-side-encryption.html#sse-key-terms).
+  + If the variable `cloudwatch_log_group_enable_cmk_encryption` is set to **true**, the CloudWatch log groups for AFT are encrypted using the CMK. If the variable is set to **false**, which is the default value, the logs are encrypted using [server side encryption with the CloudWatch logs default](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/encrypt-log-data-kms.html).
+  +  If the variable `sns_topic_enable_cmk_encryption` is set to **true**, notifications sent to the AFT SNS topics (*aft-notifications* and *aft-failure-notifications*) are encrypted using the CMK. If the variable is set to **false**, which is the default value, the SNS messages are encrypted with the AWS-managed key: *alias/aws/sns*. For more information, see [SSE key terms](https://docs.aws.amazon.com/sns/latest/dg/sns-server-side-encryption.html#sse-key-terms).
 + **Optionally change your CodeBuild compute type**
 
   During deployment, to change the compute type that AFT uses for CodeBuild, set the variable `aft_codebuild_compute_type`.
 
-  For information about accepted compute types, see [About on-demand environment types](https://docs.aws.amazon.com//codebuild/latest/userguide/build-env-ref-compute-types.html#environment.types). The default compute type is `BUILD_GENERAL1_MEDIUM`.
+  For information about accepted compute types, see [About on-demand environment types](https://docs.aws.amazon.com/codebuild/latest/userguide/build-env-ref-compute-types.html#environment.types). The default compute type is `BUILD_GENERAL1_MEDIUM`.
 + **Optionally configure OpenID Connect (OIDC) for Terraform**
 
   Customers using Terraform Enterprise or HCP Terraform (formerly Terraform Cloud) can use Terraform's Workload identity tokens (or dynamic provider credentials), built on the OIDC protocol, to securely connect and authenticate workspaces with AFT.

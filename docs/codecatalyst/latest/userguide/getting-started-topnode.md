@@ -12,7 +12,7 @@ Amazon CodeCatalyst provides a number of different templates to help you get sta
 If this is your first time using CodeCatalyst, we suggest starting with [Tutorial: Creating a project with the Modern three-tier web application blueprint](getting-started-template-project.md).
 
 **Note**
-In order to follow these tutorials, you must first complete setting up. For more information, see [Set up and sign in to CodeCatalystSet up and sign in to CodeCatalyst](setting-up-topnode.md).
+In order to follow these tutorials, you must first complete setting up. For more information, see [Set up and sign in to CodeCatalyst](setting-up-topnode.md).
 
 **Topics**
 + [Tutorial: Creating a project with the Modern three-tier web application blueprint](getting-started-template-project.md)

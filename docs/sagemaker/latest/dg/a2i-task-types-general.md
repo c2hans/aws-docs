@@ -19,8 +19,6 @@ When you use a custom task type, you create and start a human loop using the Ama
 
 The following table outlines a variety of Amazon A2I use cases that you can explore using SageMaker AI Jupyter Notebooks. To get started with a Jupyter Notebook, use the instructions in [Use SageMaker Notebook Instance with Amazon A2I Jupyter Notebook](#a2i-task-types-notebook-demo). For more examples, see this [GitHub repository](https://github.com/aws-samples/amazon-a2i-sample-jupyter-notebooks).
 
-****
-
 | **Use Case** | **Description** | **Task Type** |
 | --- | --- | --- |
 | [Use Amazon A2I with Amazon Textract](https://github.com/aws-samples/amazon-a2i-sample-jupyter-notebooks/blob/master/Amazon%20Augmented%20AI%20(A2I)%20and%20Textract%20AnalyzeDocument.ipynb) | Have humans review single-page documents to review important form key-value pairs, or have Amazon Textract randomly sample and send documents from your dataset to humans for review.  | Built-in |

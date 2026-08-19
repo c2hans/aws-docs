@@ -32,8 +32,6 @@ When you use billing transfer as a bill source account, AWS Pricing Calculator p
 
 The bill estimates generation engine of AWS Pricing Calculator uses the following data entities from the specified timeframe.
 
-****
-
 | Data entity | Description |
 | --- | --- |
 | Member accounts | The selection of member accounts are used to identify how usage was incurred by each member account during the last anniversary bill month and we layer your modeled usage on top of it. |

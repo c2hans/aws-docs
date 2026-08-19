@@ -17,9 +17,9 @@ The following table describes which capabilities AWS Security Agent bills for.
 | Capability | How AWS Security Agent charges you |
 | --- | --- |
 | Penetration testing | AWS Security Agent meters each task hour by the second of task time |
-| Code review | No charge |
-| Design review | No charge |
-| Threat modeling | No charge |
+| Code review | No charge while in preview |
+| Design review | No charge while in preview |
+| Threat modeling | No charge while in preview |
 
 AWS Security Agent bills penetration testing for each second of task time. It converts the total to hours on your bill, so you pay for partial hours.
 
@@ -75,7 +75,7 @@ A job’s task hours reflect the total cumulative work done by AWS Security Agen
 ### Which capabilities does AWS Security Agent charge for?
 <a name="_which_capabilities_does_aws_security_agent_charge_for"></a>
 
-Penetration testing. AWS Security Agent doesn’t charge for code reviews, design reviews, or threat models. Quotas still apply to those capabilities. For more information, see [Service Quotas](quotas.md).
+Penetration testing. AWS doesn’t charge for code reviews, design reviews, or threat models while those capabilities are in preview. Quotas still apply to those capabilities. For more information, see [Service Quotas](quotas.md).
 
 ### Does reaching a quota stop my charges?
 <a name="_does_reaching_a_quota_stop_my_charges"></a>

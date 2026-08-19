@@ -34,7 +34,7 @@ When deciding whether to reuse a previous pipeline step or rerun the step, Pipel
   + TuningObjective
 + TrainingJobDefinitions
 
-## [AutoML step](https://docs.aws.amazon.com//sagemaker/latest/APIReference/API_AutoMLJobConfig.html)
+## [AutoML step](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AutoMLJobConfig.html)
 <a name="collapsible-caching-section-4"></a>
 + AutoMLJobConfig. This attribute is composed of multiple child attributes, not all of which cause the step to rerun. The child attributes that could incur a rerun (if changed) are:
   + CompletionCriteria

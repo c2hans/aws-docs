@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsr
 
 AWS Resilience Hub provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="resiliencehub-DescribeApp"></a>[DescribeApp](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_DescribeApp.html) | Describe application | Read |

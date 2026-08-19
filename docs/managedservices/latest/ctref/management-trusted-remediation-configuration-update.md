@@ -14,8 +14,6 @@ Request a Trusted Remediator configuration update. Use this change type in the T
 ## Change Type Details
 <a name="ct-3kl2d1u40lrj8-MTRu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-3kl2d1u40lrj8 |

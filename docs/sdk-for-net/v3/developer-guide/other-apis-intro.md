@@ -13,8 +13,6 @@ The AWS SDK for .NET supports AWS services in addition to those described in the
 
 In addition to the namespaces for individual AWS services, the AWS SDK for .NET also provides the following APIs:
 
-****
-
 | Area | Description | Resources |
 | --- | --- | --- |
 | AWS Support | Programmatic access to AWS Support cases and Trusted Advisor features. | See [Amazon.AWSSupport](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/AWSSupport/NAWSSupport.html) and [Amazon.AWSSupport.Model](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/AWSSupport/NAWSSupportModel.html). |

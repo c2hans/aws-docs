@@ -68,7 +68,7 @@ You also need Directory Service API permissions to use AWS Directory Service as 
 + `ds:AuthorizeApplication` is required to add authorization for Transfer Family
 + `ds:UnauthorizeApplication` is suggested to remove any resources that are provisionally created, in case something goes wrong during the server creation process
 
-Add these permissions to the role you are using for creating your Transfer Family servers. For more details on these permissions, see [Directory Service API permissions: Actions, resources, and conditions reference](https://docs.aws.amazon.com//directoryservice/latest/admin-guide/UsingWithDS_IAM_ResourcePermissions.html).
+Add these permissions to the role you are using for creating your Transfer Family servers. For more details on these permissions, see [Directory Service API permissions: Actions, resources, and conditions reference](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/UsingWithDS_IAM_ResourcePermissions.html).
 
 ## Working with Active Directory realms
 <a name="managed-ad-realms"></a>

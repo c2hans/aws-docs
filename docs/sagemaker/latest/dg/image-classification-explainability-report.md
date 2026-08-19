@@ -19,8 +19,6 @@ You can find the Amazon S3 prefix to the explainability artifacts generated for 
 
 The following examples illustrates what the heatmaps look like on few samples from [Oxford-IIIT Pet Dataset](https://www.robots.ox.ac.uk/~vgg/data/pets/). The heatmap image displays color gradients that indicate the relative importance of different features within the image. The red color represents regions with greater importance in predicting the "predicted\_label" of the input image compared to the features represented by the blue color.
 
-****
-
 | Input Image | Heatmap Image |
 | --- | --- |
 |  ![The original image of a dog.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/autopilot/autopilot-image-classification-explainability-img1-input.png)  |  ![A dog with a heatmap highlighting the regions with the greater contribution to the predicted label.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/autopilot/autopilot-image-classification-explainability-img1-output.png)  |

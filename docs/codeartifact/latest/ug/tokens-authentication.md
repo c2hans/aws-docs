@@ -31,8 +31,6 @@ The `aws codeartifact login` command will fetch a token with `GetAuthorizationTo
 
 The following table describes the parameters for the `login` command.
 
-****
-
 <table>
 <thead>
   <tr><th>Parameter</th><th>Required</th><th>Description</th></tr>

@@ -14,8 +14,6 @@ Update an existing period used in AMS Resource Scheduler.
 ## Change Type Details
 <a name="ct-2pkdckieh62ps-MAPu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2pkdckieh62ps |

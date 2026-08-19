@@ -54,6 +54,11 @@ This section identifies potential causes for issues that prevent applications fr
 <a name="troubleshoot-application-proton"></a>
 + **Verify that your application is compatible with Proton.** Test your application on a local environment without the Amazon GameLift Streams server to verify that it's compatible with Proton. For instructions, see [Testing and troubleshooting compatibility with Proton for Amazon GameLift Streams](troubleshoot-compatibility-wp.md).
 
+### Linux issues
+<a name="troubleshoot-application-linux"></a>
+
+If you are running a native Linux application, test it on a local Ubuntu 22.04 LTS machine to verify that it works correctly before streaming. For known issues and solutions, see [Troubleshoot Linux applications for Amazon GameLift Streams](troubleshoot-linux.md).
+
 ### Application issues due to screen resolution
 <a name="troubleshoot-application-resolution"></a>
 

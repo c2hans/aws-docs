@@ -69,4 +69,4 @@ The number of threads per CPU core. To disable multithreading for the instance, 
 
 ## See also
 <a name="aws-properties-ec2-launchtemplate-cpuoptions--seealso"></a>
-+ [Optimize CPU options](https://docs.aws.amazon.com//AWSEC2/latest/UserGuide/instance-optimize-cpu.html) in the *Amazon EC2 User Guide*.
++ [Optimize CPU options](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-optimize-cpu.html) in the *Amazon EC2 User Guide*.

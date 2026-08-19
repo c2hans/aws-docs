@@ -14,8 +14,6 @@ Use the `enum` type for partition columns whose values are members of an enumera
 
 Define the partition properties in the table as follows:
 
-****
-
 | Property name | Example values | Description |
 | --- | --- | --- |
 | projection.{{columnName}}.type | `enum` | Required. The projection type to use for column {{columnName}}. The value must be enum (case insensitive) to signal the use of the enum type. Leading and trailing white space is allowed. |
@@ -28,8 +26,6 @@ As a best practice we recommend limiting the use of `enum` based partition proje
 <a name="partition-projection-integer-type"></a>
 
 Use the integer type for partition columns whose possible values are interpretable as integers within a defined range. Projected integer columns are currently limited to the range of a Java signed long (-263 to 263-1 inclusive).
-
-****
 
 | Property name | Example values | Description |
 | --- | --- | --- |
@@ -45,8 +41,6 @@ Use the date type for partition columns whose values are interpretable as dates 
 
 **Important**
 Projected date columns are generated in Coordinated Universal Time (UTC) at query execution time.
-
-****
 
 | Property name | Example values | Description |
 | --- | --- | --- |
@@ -78,8 +72,6 @@ It is important to keep in mind the following points:
 + Queries with multiple values for a filter expression on an injected column succeed only if the values are disjunct.
 + Only columns of `string` type are supported.
 + When you use the `WHERE IN` clause with an injected partition column, there is a limit of 1,000 values that you can specify in the `IN` list. To query a dataset with more than 1,000 partitions for an injected column, split the query into multiple smaller queries, each with up to 1,000 values in the `WHERE IN` clause, and then aggregate the results.
-
-****
 
 | Property name | Value | Description |
 | --- | --- | --- |

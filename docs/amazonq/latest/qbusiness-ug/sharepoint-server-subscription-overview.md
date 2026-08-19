@@ -9,8 +9,6 @@ Amazon Q Business is no longer open to new customers. For capabilities similar t
 
 The following table gives an overview of the Amazon Q Business SharePoint Server (Subscription Edition) connector and its supported features.
 
-****
-
 - ****Security****
   - **Feature:** Authentication type / **Support:** NTLM, Kerberos, SharePoint App-Only (Client Credentials Flow)
   - **Feature:** Authentication credentials / **Support:** +  SharePoint admin username <br />+  SharePoint admin password  +  LDAP Server Endpoint <br />+  LDAP Search Base <br />+  LDAP username <br />+  LDAP password  +  SharePoint admin username <br />+  SharePoint admin password  +  LDAP Server Endpoint <br />+  LDAP Search Base <br />+  LDAP username <br />+  LDAP password  +  Tenant ID <br />+  SharePoint App-Only client ID <br />+  SharePoint App-Only client secret  +  LDAP Server Endpoint <br />+  LDAP Search Base <br />+  LDAP username <br />+  LDAP password

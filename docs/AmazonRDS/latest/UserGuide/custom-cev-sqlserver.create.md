@@ -113,8 +113,6 @@ After you successfully create a CEV, the **CEV status** shows `pending-validatio
 
 The CEV lifecycle includes the following statuses.
 
-****
-
 | CEV status | Description | Troubleshooting suggestions |
 | --- | --- | --- |
 | `pending-validation` | A CEV was created and is pending the validation of the associated AMI. A CEV will remain in `pending-validation` until an RDS Custom for SQL Server DB instance is created from it. | If there are no existing tasks, create a new RDS Custom for SQL Server DB instance from the CEV. When creating the RDS Custom for SQL Server DB instance, the system attempts to validate the associated AMI for a CEV. |

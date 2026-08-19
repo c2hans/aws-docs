@@ -44,8 +44,6 @@ To create the environment, follow the instructions in [Creating an Environment](
 
 To connect the environment to the repository, and then upload your source code to the repository if it isn't already there, use one of the following sets of instructions. The set you choose depends on the type of repository that stores the source code.
 
-****
-
 |  **Repository type**  |  **Instructions**  |
 | --- | --- |
 | CodeCommit | Follow these instructions in the *AWS CodeCommit Sample*:+   [Step 3: Connect Your Environment to the Remote Repository](sample-codecommit.md#sample-codecommit-connect-repo)  <br />+   [Step 4: Clone the Remote Repository into Your Environment](sample-codecommit.md#sample-codecommit-clone-repo)  <br />+   [Step 5: Add Files to the Repository](sample-codecommit.md#sample-codecommit-add-files), substituting your own source code for this step  |

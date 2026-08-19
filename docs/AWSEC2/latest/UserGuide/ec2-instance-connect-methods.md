@@ -74,7 +74,7 @@ EC2 Instance Connect tries to connect using the instance's IP addresses in the f
 EC2 Instance Connect tries to connect using the instance's private IPv4 address and an [EC2 Instance Connect Endpoint](connect-with-ec2-instance-connect-endpoint.md).
 
 **Note**
-In the future, we might change the behavior of the `auto` connection type. To ensure that your desired connection type is used, we recommend that you explicitly set the `--connection-type` to either `direct` or `eice`.
+In the future, the behavior of the `auto` connection type might change. To make sure that your desired connection type is used, explicitly set the `--connection-type` to either `direct` or `eice`.
 
 **Requirements**
 You must use AWS CLI version 2. For more information, see [Install or update to the latest version of the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html).

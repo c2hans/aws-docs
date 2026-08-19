@@ -108,6 +108,7 @@ Some of the reasons in the following list might not be applicable to this specif
 + ACCOUNT\_CANNOT\_LEAVE\_WITHOUT\_PHONE\_VERIFICATION: You attempted to remove an account from the organization that doesn't yet have enough information to exist as a standalone account. This account requires you to first complete phone verification. Follow the steps at [Removing a member account from your organization](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_accounts_remove.html#orgs_manage_accounts_remove-from-master) in the * AWS Organizations User Guide*.
 + ACCOUNT\_CREATION\_RATE\_LIMIT\_EXCEEDED: You attempted to exceed the number of accounts that can be in progress at a time.
 + ACCOUNT\_CREATION\_NOT\_COMPLETE: Your account setup isn't complete or your account isn't fully active. You must complete the account setup before you create an organization.
++ ACCOUNT\_NOT\_ACTIVE\_FOR\_TRANSFER\_RESPONSIBILITY: Your account setup isn't complete or your account isn't fully active to invite or accept a Billing Transfer invitation.
 + ACTIVE\_RESPONSIBILITY\_TRANSFER\_PROCESS: You cannot delete organization due to an ongoing responsibility transfer process. For example, a pending invitation or an in-progress transfer. To delete the organization, you must resolve the current transfer process.
 + ACCOUNT\_NUMBER\_LIMIT\_EXCEEDED: You attempted to exceed the limit on the number of accounts in an organization. If you need more accounts, contact [AWS Support](https://console.aws.amazon.com/support/home#/) to request an increase in your limit.
 
@@ -154,7 +155,9 @@ If you get this exception when running a command immediately after creating the 
 + TAG\_POLICY\_VIOLATION: You attempted to create or update a resource with tags that are not compliant with the tag policy requirements for this account.
 + TRANSFER\_RESPONSIBILITY\_SOURCE\_DELETION\_IN\_PROGRESS: The source organization cannot accept this transfer invitation because it is marked for deletion.
 + TRANSFER\_RESPONSIBILITY\_TARGET\_DELETION\_IN\_PROGRESS: The source organization cannot accept this transfer invitation because target organization is marked for deletion.
-+ UNSUPPORTED\_PRICING: Your organization has a pricing contract that is unsupported.
++ TRANSFER\_RESPONSIBILITY\_UPDATE\_NOT\_ALLOWED: You cannot update this transfer because it is no longer active. Transfers that have been withdrawn, declined, expired, or cancelled cannot be modified.
++ UNMET\_BILLING\_PREREQUISITE: Your current billing configuration is unsupported. Contact AWS Support for assistance.
++ UNSUPPORTED\_PRICING: Ineligible for Billing Transfer. Your organization is subject to a pricing agreement with AWS that Billing Transfer does not support.
 + WAIT\_PERIOD\_ACTIVE: After you create an AWS account, you must wait until at least four days after the account was created. Invited accounts aren't subject to this waiting period.
 HTTP Status Code: 400
 
@@ -173,7 +176,7 @@ Some of the reasons in the following list might not be applicable to this specif
 + IMMUTABLE\_POLICY: You specified a policy that is managed by AWS and can't be modified.
 + INPUT\_REQUIRED: You must include a value for all required parameters.
 + INVALID\_EMAIL\_ADDRESS\_TARGET: You specified an invalid email address for the invited account owner.
-+ INVALID\_END\_DATE: The selected withdrawal date doesn't meet the terms of your partner agreement. Visit AWS Partner Central to view your partner agreements or contact your AWS Partner for help.
++ INVALID\_END\_DATE: The selected withdrawal date doesn't meet the minimum notice period required by your partner agreement. Visit AWS Partner Central or contact your AWS Channel Partner for help.
 + INVALID\_ENUM: You specified an invalid value.
 + INVALID\_ENUM\_POLICY\_TYPE: You specified an invalid policy type string.
 + INVALID\_FULL\_NAME\_TARGET: You specified a full name that contains invalid characters.

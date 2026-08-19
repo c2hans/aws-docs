@@ -41,8 +41,6 @@ dataset.write.mode("overwrite")                 // "overwrite" instead of "inser
 
 Generally, the EMRFS S3-optimized commit protocol works the same as open source default Spark commit protocol, `org.apache.spark.sql.execution.datasources.SQLHadoopMapReduceCommitProtocol`. Optimization won't occur in the following situations.
 
-****
-
 | Situation | Why the commit protocol is not used |
 | --- | --- |
 | When you write to HDFS | The commit protocol only supports writing to Amazon S3 using EMRFS. |

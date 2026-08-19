@@ -27,8 +27,6 @@ The `Action` element of a JSON policy describes the actions that you can use to 
 
 The following table lists the IAM IoT actions, the associated AWS IoT API, and the resource the action manipulates.
 
-****
-
 | Policy actions | AWS IoT API | Resources |
 | --- | --- | --- |
 | iot:AcceptCertificateTransfer | AcceptCertificateTransfer | `arn:aws:iot:{{region}}:{{account-id}}:cert/{{cert-id}}` The AWS account specified in the ARN must be the account to which the certificate is being transferred.  |
@@ -182,8 +180,6 @@ To see a list of AWS IoT actions, see [Actions Defined by AWS IoT](https://docs.
 <a name="security_iam_service-actions-device-advisor"></a>
 
 The following table lists the IAM IoT Device Advisor actions, the associated AWS IoT Device Advisor API, and the resource the action manipulates.
-
-****
 
 | Policy actions | AWS IoT API | Resources |
 | --- | --- | --- |

@@ -84,7 +84,7 @@ You can create a parallel query cluster using the Amazon RDS console or the AWS 
 1. Specify the following set of options:
    + For the `--engine` option, use `aurora-mysql`. These values produce parallel query clusters that are compatible with MySQL 5.7 or 8.0.
    +  For the `--db-cluster-parameter-group-name` option, specify the name of a DB cluster parameter group that you created and specified the parameter value `aurora_parallel_query=ON`. If you omit this option, you can create the cluster with a default parameter group and later modify it to use such a custom parameter group.
-   + For the `--engine-version` option, use an Aurora MySQL version that's compatible with parallel query. Use the procedure from [Optimizing parallel query in Aurora MySQLPlanning for a parallel query cluster](aurora-mysql-parallel-query-optimizing.md#aurora-mysql-parallel-query-planning) to get a list of versions if necessary.
+   + For the `--engine-version` option, use an Aurora MySQL version that's compatible with parallel query. Use the procedure from [Optimizing parallel query in Aurora MySQL](aurora-mysql-parallel-query-optimizing.md#aurora-mysql-parallel-query-planning) to get a list of versions if necessary.
 
      The following code example shows how. Substitute your own value for each of the environment variables such as {{$CLUSTER\_ID}}. This example also specifies the `--manage-master-user-password` option to generate the master user password and manage it in Secrets Manager. For more information, see [Password management with Amazon Aurora and AWS Secrets Manager](rds-secrets-manager.md). Alternatively, you can use the `--master-password` option to specify and manage the password yourself.
 

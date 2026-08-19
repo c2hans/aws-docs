@@ -67,7 +67,7 @@ When you allocate a Dedicated Host with AMD SEV-SNP enabled, the host enters a `
 ## Launch instances on a AMD SEV-SNP Dedicated Host
 <a name="snp-launch-instance"></a>
 
-You can launch an instance with AMD SEV-SNP enabled once the Dedicated Host is configured.
+You can launch an instance with AMD SEV-SNP enabled after the Dedicated Host is configured.
 
 **Note**
 You can also launch instances without AMD SEV-SNP enabled on a Dedicated Host that was allocated with AMD SEV-SNP. Both AMD SEV-SNP and non-AMD SEV-SNP instances can run alongside each other on the same host.

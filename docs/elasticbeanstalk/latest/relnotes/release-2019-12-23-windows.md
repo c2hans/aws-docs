@@ -45,8 +45,6 @@ The following table lists the changes included in this release. Be aware that at
 #### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2016 with IIS 10.0 version 2.3.2**  |  * 64bit Windows Server 2016 v2.3.2 running IIS 10.0 *  | .NET Core 3.0.0, supports 3.0.0, 2.2.8, 2.1.14<br />.NET Framework 4.8, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -64,8 +62,6 @@ The following table lists the changes included in this release. Be aware that at
 
 #### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Config  |  SSM Agent  |  Web Deploy  |  AWS X‑Ray  |
 | --- | --- | --- | --- | --- | --- | --- |

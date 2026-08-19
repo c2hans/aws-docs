@@ -16,7 +16,7 @@ Type: String
 Required: No
 
  ** destinationPortRange **
-The port range for the transit gateway policy rule. Currently this is set to \* (all).
+The destination port or port range for the transit gateway policy rule.
 Type: String
 Required: No
 
@@ -36,7 +36,7 @@ Type: String
 Required: No
 
  ** sourcePortRange **
-The port range for the transit gateway policy rule. Currently this is set to \* (all).
+The source port or port range for the transit gateway policy rule.
 Type: String
 Required: No
 

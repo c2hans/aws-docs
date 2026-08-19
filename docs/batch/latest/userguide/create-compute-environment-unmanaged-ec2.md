@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/create-compute-en
 
 Complete the following steps to create an unmanaged compute environment using Amazon Elastic Compute Cloud (Amazon EC2) resources.
 
-****
-
 1. Open the AWS Batch console at [https://console.aws.amazon.com/batch/](https://console.aws.amazon.com/batch/).
 
 1. From the navigation bar, select the AWS Region to use.

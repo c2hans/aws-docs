@@ -25,6 +25,6 @@ This page gives information about modifications to the Amazon SageMaker AI domai
 
  For instructions on using a lifecycle configuration with Studio Classic, see [Use Lifecycle Configurations with Amazon SageMaker Studio](https://docs.aws.amazon.com/sagemaker/latest/dg/studio-lcc.html).
 
-For information about attaching a git repository to a domain, see [Attach Suggested Git Repos to SageMaker AI](https://docs.aws.amazon.com//sagemaker/latest/dg/studio-git-attach.html).
+For information about attaching a git repository to a domain, see [Attach Suggested Git Repos to SageMaker AI](https://docs.aws.amazon.com/sagemaker/latest/dg/studio-git-attach.html).
 
 These can also be attached to a shared space using the AWS CLI by passing values to the [create-space](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sagemaker/create-space.html) command using the `space-settings` parameter.

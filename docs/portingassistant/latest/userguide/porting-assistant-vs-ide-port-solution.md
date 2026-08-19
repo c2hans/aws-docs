@@ -21,4 +21,4 @@ You can view the list of incompatibilities, suggestions, and more from the **Err
 The source editor provides a replacement suggestion for each incompatibility in the source file. If a direct replacement exists, you are given a choice to select and replace it. If there is no direct replacement, references or contextual help on how to proceed are provided.
 
 **Run code**
-When all of the source files are updated, you can compile, test, and run your code. If you have the AWS Toolkit for Visual Studio plug-in installed on your IDE, you can deploy your application on Amazon Web Services. To install, see [AWS Toolkit for Visual Studio Code](https://aws.amazon.com//visualstudiocode).
+When all of the source files are updated, you can compile, test, and run your code. If you have the AWS Toolkit for Visual Studio plug-in installed on your IDE, you can deploy your application on Amazon Web Services. To install, see [AWS Toolkit for Visual Studio Code](https://aws.amazon.com/visualstudiocode).

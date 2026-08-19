@@ -140,7 +140,7 @@ Using the information collected in [Step 1: List users' and roles' existing perm
   See [Granting permissions on Data Catalog resources](granting-catalog-permissions.md).
 + Use the `GrantPermissions` or `BatchGrantPermissions` API operations.
 
-  See [Permissions APIsHybrid access mode APIs](aws-lake-formation-api-aws-lake-formation-api-permissions.md).
+  See [Permissions APIs](aws-lake-formation-api-aws-lake-formation-api-permissions.md).
 
 For more information, see [Overview of Lake Formation permissions](lf-permissions-overview.md).
 

@@ -23,14 +23,14 @@ Elastic Beanstalk [Enhanced Health Reporting](health-enhanced.md) has native sup
 ## .Ebextensions configuration file
 <a name="customize-containers-cw-update-roles"></a>
 
-This example uses files and commands in an .ebextensions configuration file to configure and run the Amazon CloudWatch agent on the Amazon Linux 2 platform. The agent is prepackaged with Amazon Linux 2. If you're using a different operating system, additional steps for installing the agent may be necessary. For more information, see [Installing the CloudWatch agent](https://docs.aws.amazon.com//AmazonCloudWatch/latest/monitoring/install-CloudWatch-Agent-on-EC2-Instance.html) in the *Amazon CloudWatch User Guide*.
+This example uses files and commands in an .ebextensions configuration file to configure and run the Amazon CloudWatch agent on the Amazon Linux 2 platform. The agent is prepackaged with Amazon Linux 2. If you're using a different operating system, additional steps for installing the agent may be necessary. For more information, see [Installing the CloudWatch agent](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/install-CloudWatch-Agent-on-EC2-Instance.html) in the *Amazon CloudWatch User Guide*.
 
 To use this sample, save it to a file named `cloudwatch.config` in a directory named `.ebextensions` at the top level of your project directory, then deploy your application using the Elastic Beanstalk console (include the .ebextensions directory in your [source bundle](applications-sourcebundle.md)) or the [EB CLI](eb-cli3.md).
 
 For more information about configuration files, see [Advanced environment customization with configuration files (`.ebextensions`)](ebextensions.md).
 
 This file has two sections:
-+ `files` — This section adds the agent configuration file. It indicates which metrics and logs the agent should send to Amazon CloudWatch. In this example, we're only sending the *mem\_used\_percent* metric. For a complete listing of system level metrics supported by the Amazon CloudWatch agent, see [ Metrics collected by the CloudWatch agent](https://docs.aws.amazon.com//AmazonCloudWatch/latest/monitoring/metrics-collected-by-CloudWatch-agent.html) in the *Amazon CloudWatch User Guide*.
++ `files` — This section adds the agent configuration file. It indicates which metrics and logs the agent should send to Amazon CloudWatch. In this example, we're only sending the *mem\_used\_percent* metric. For a complete listing of system level metrics supported by the Amazon CloudWatch agent, see [ Metrics collected by the CloudWatch agent](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/metrics-collected-by-CloudWatch-agent.html) in the *Amazon CloudWatch User Guide*.
 + `container_commands` — This section contains the command that starts the agent, passing in the configuration file as a parameter. For more details about `container_commands`, see [Container commands](customize-containers-ec2.md#linux-container-commands).
 
 **.ebextensions/cloudwatch.config**

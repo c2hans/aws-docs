@@ -15,7 +15,7 @@ Security is a shared responsibility between AWS and you. The [shared responsibil
 
 This documentation helps you understand how to apply the shared responsibility model when using Amazon Pinpoint. The following topics show you how to configure Amazon Pinpoint to meet your security and compliance objectives. You also learn how to use other AWS services that help you monitor and secure your Amazon Pinpoint resources.
 
-For more information see about reference architectures see [*Amazon Pinpoint Resilient Architecture Guide*](https://docs.aws.amazon.com//pinpoint/latest/archguide/welcome.html).
+For more information see about reference architectures see [*Amazon Pinpoint Resilient Architecture Guide*](https://docs.aws.amazon.com/pinpoint/latest/archguide/welcome.html).
 
 **Topics**
 + [Data protection in Amazon Pinpoint](security-data-protection.md)

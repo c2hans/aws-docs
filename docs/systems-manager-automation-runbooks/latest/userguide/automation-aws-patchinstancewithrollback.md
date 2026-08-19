@@ -47,8 +47,6 @@ Linux, macOS, Windows
 
 **Document Steps**
 
-****
-
 | Step number | Step name | Automation action |
 | --- | --- | --- |
 | 1 | createDocumentStack | `aws:createStack` |

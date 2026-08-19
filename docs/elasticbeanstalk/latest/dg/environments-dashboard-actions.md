@@ -24,7 +24,7 @@ Load a previously saved configuration. Configurations are saved to your applicat
 
 Save the current configuration of your environment to your application. Before you make changes to your environment's configuration, save the current configuration so that you can roll back later, if needed. You can also apply a saved configuration when you launch a new environment.
 
-## Swap environment Domains (URLs)
+## Swap environment domain
 <a name="environments-dashboard-actions-swap"></a>
 
 Swap the CNAME of the current environment with a new environment. After a CNAME swap, all traffic to the application using the environment URL goes to the new environment. When you are ready to deploy a new version of your application, you can launch a separate environment under the new version. When the new environment is ready to start taking requests, perform a CNAME swap to start routing traffic to the new environment. Doing this doesn't interrupt your services. For more information, see [Blue/Green deployments with Elastic Beanstalk](using-features.CNAMESwap.md).
@@ -33,11 +33,6 @@ Swap the CNAME of the current environment with a new environment. After a CNAME 
 <a name="environments-dashboard-actions-clone"></a>
 
 Launch a new environment with the same configuration as your currently running environment.
-
-## Clone with latest platform
-<a name="environments-dashboard-actions-cloneupgrade"></a>
-
-Clone your current environment with the latest version of the in-use Elastic Beanstalk platform. This option is available only when a newer version of the current environment's platform is available for use.
 
 ## Abort current operation
 <a name="environments-dashboard-actions-abort"></a>
@@ -58,3 +53,8 @@ Terminate all resources in the running environment and build a new environment w
 <a name="environments-dashboard-actions-terminate"></a>
 
 Terminate all resources in the running environment and remove the environment from the application. If you have an RDS instance that is running in a data tier and you need to retain its data, make sure the *database deletion policy* is set to either `Snapshot` or `Retain`. For more information, see [Database lifecycle](using-features.managing.db.md#environments-cfg-rds-lifecycle) in the *Configuring environments* chapter of this guide.
+
+## Restore environment
+<a name="environments-dashboard-actions-restore"></a>
+
+Recreate a recently terminated environment with the same name, ID, and configuration. This action is available from the environment dashboard while the terminated environment still appears in the environments list. To restore an environment that no longer appears in the list, use the **Restore terminated environment** option on the application page. For more information, see [Rebuilding a terminated environment](environment-management-rebuild.md#environment-management-rebuild-terminated).

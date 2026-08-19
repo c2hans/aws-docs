@@ -22,7 +22,7 @@ You can update most of your Auto Scaling group's details. You can't update the n
    + **Integrations** tab
      + **Load balancing** – [Elastic Load Balancing ](autoscaling-load-balancer.md)
 
-       If the group is associated with Elastic Load Balancing resources, see [Add an Availability ZoneRemove an Availability Zone](as-add-az-console.md) before changing Availability Zones. Some restrictions on the load balancer might prevent you from applying changes to your group's Availability Zones to your load balancer's Availability Zones.
+       If the group is associated with Elastic Load Balancing resources, see [Add an Availability Zone](as-add-az-console.md) before changing Availability Zones. Some restrictions on the load balancer might prevent you from applying changes to your group's Availability Zones to your load balancer's Availability Zones.
      + **VPC Lattice integration options** – [VPC Lattice](ec2-auto-scaling-vpc-lattice.md)
      + **ARC zonal shift** – [Auto Scaling group zonal shift](ec2-auto-scaling-zonal-shift.md)
    + **Automatic scaling** tab

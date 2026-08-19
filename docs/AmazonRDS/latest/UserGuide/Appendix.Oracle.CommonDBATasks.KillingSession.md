@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.Orac
 
 To terminate a session, use the Amazon RDS procedure `rdsadmin.rdsadmin_util.kill`. The `kill` procedure has the following parameters.
 
-****
-
 | Parameter name | Data type | Default | Required | Description |
 | --- | --- | --- | --- | --- |
 | `sid` | number | — | Yes | The session identifier. |

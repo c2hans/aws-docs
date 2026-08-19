@@ -25,8 +25,6 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_ecr-actions-as-permissions).
 
-****
-
 - **   BatchCheckLayerAvailability  **
   - **IAM action:**  [ecr:BatchCheckLayerAvailability](#list_ecr-action-BatchCheckLayerAvailability)
   - **Condition key:**
@@ -372,8 +370,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
 <a name="list_ecr-actions-as-permissions"></a>
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
-
-****
 
 - **   [BatchCheckLayerAvailability](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_BatchCheckLayerAvailability.html)  **
   - **Description:** Grants permission to check the availability of multiple image layers in a specified registry and repository
@@ -722,8 +718,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 The following actions are defined by Amazon Elastic Container Registry but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 - **   [BatchImportUpstreamImage](https://docs.aws.amazon.com/AmazonECR/latest/userguide/pull-through-cache.html)  **
   - **Description:** Grants permission to retrieve the image from the upstream registry and import it to your private registry
   - **Resource types (\*required):** [repository\*](#list_ecr-resource-repository)
@@ -747,8 +741,6 @@ The following actions are defined by Amazon Elastic Container Registry but are n
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
 
-****
-
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
 |  [repository](https://docs.aws.amazon.com/AmazonECR/latest/userguide/Repositories.html)  | arn:${Partition}:ecr:${Region}:${Account}:repository/${RepositoryName} | [aws:ResourceTag/${TagKey}](#list_ecr-aws_ResourceTag___TagKey_)<br />[ecr:ResourceTag/${TagKey}](#list_ecr-ecr_ResourceTag___TagKey_) |
@@ -757,8 +749,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_ecr-policy-keys"></a>
 
 Amazon Elastic Container Registry defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

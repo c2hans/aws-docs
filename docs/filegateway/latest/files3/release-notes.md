@@ -59,6 +59,7 @@ The following table lists the release notes for gateways based on AL2.
 
 | Release Date | Software Version | Release Notes |
 | --- | --- | --- |
+| 2026-08-17 | 1.28.11 |  +  Updates operating system components and software packages to improve security and performance.   |
 | 2026-07-20 | 1.28.10 |  +  Updates operating system components and software packages to improve security and performance. <br />+  Fixes a potential gateway stability issue when the cache runs critically low.   |
 | 2026-07-15 | 1.28.9 |  +  Updates operating system components and software packages to improve security and performance.   |
 | 2026-06-16 | 1.28.8 | **Maintenance Updates:**+  Updated operating system and software elements to improve security and performance.  |

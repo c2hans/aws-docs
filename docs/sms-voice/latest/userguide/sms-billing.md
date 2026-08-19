@@ -9,9 +9,7 @@ The AWS End User Messaging SMS channel generates a usage type that contains five
 
 RCS messaging has a separate pricing model that includes per-message fees and carrier pass-through charges, as well as registration fees for agent setup and maintenance. For detailed information about RCS pricing, see [RCS billing and pricing model](rcs-billing.md).
 
-The following table displays the possible values and descriptions for the fields in the usage type. For more information about per SMS message, per MMS message, or origination identity pricing, see [AWS End User Messaging Pricing](https://aws.amazon.com//end-user-messaging/pricing/).
-
-****
+The following table displays the possible values and descriptions for the fields in the usage type. For more information about per SMS message, per MMS message, or origination identity pricing, see [AWS End User Messaging Pricing](https://aws.amazon.com/end-user-messaging/pricing/).
 
 | Field | Options | Description |
 | --- | --- | --- |

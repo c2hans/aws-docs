@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/table-dictionary-cu
 
 Pricing columns contain data about the pricing for a line item.
 
-****
-
 | Column name | Description | Data type |
 | --- | --- | --- |
 | pricing\_currency | The currency that the pricing data is shown in. | string |

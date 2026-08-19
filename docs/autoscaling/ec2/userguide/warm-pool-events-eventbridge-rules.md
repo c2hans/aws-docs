@@ -63,7 +63,7 @@ For more information about creating and working with warm pools, see [Decrease l
 
    1. (Optional) For **Configure version/alias**, enter version and alias settings for the target Lambda function.
 
-   1. (Optional) For **Additional settings**, enter any additional settings as appropriate for your application. For more information, see [Creating Amazon EventBridge rules that react to events](https://docs.aws.amazon.com//eventbridge/latest/userguide/eb-create-rule.html) in the *Amazon EventBridge User Guide*.
+   1. (Optional) For **Additional settings**, enter any additional settings as appropriate for your application. For more information, see [Creating Amazon EventBridge rules that react to events](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-create-rule.html) in the *Amazon EventBridge User Guide*.
 
    1. Choose **Next**.
 

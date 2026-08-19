@@ -14,8 +14,6 @@ Create AWS CloudFormation (CFN) StackSets stacks and deploy the stack instances.
 ## Change Type Details
 <a name="ct-16pknsfa8lul7-DMMc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-16pknsfa8lul7 |

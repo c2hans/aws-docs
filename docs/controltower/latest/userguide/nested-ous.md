@@ -14,7 +14,7 @@ This video (4:46) describes how to manage nested OU deployments in AWS Control T
 
 [![AWS Videos](http://img.youtube.com/vi/zisI5ZNO2kk/0.jpg)](http://www.youtube.com/watch?v=zisI5ZNO2kk)
 
-For guidance regarding best practices for nested OUs and your landing zone, see the blog post [Organizing your AWS Control Tower landing zone with nested OUs](https://aws.amazon.com/blogs//mt/organizing-your-aws-control-tower-landing-zone-with-nested-ous/).
+For guidance regarding best practices for nested OUs and your landing zone, see the blog post [Organizing your AWS Control Tower landing zone with nested OUs](https://aws.amazon.com/blogs/mt/organizing-your-aws-control-tower-landing-zone-with-nested-ous/).
 
 ## Expand from flat OU structure to nested OU structure
 <a name="flat-to-nested"></a>
@@ -44,7 +44,7 @@ This step must be done in the in AWS Organizations console because AWS Control T
 ## Nested OU registration pre-checks
 <a name="nested-ou-prechecks"></a>
 
-To support successful registration of your nested OUs and their member accounts, AWS Control Tower performs a series of pre-checks. These same prechecks are performed when registering any top-level OU or nested OU. For more information, see [Common causes of failure during registration or re-registration](https://docs.aws.amazon.com//controltower/latest/userguide/common-eg-failures.html).
+To support successful registration of your nested OUs and their member accounts, AWS Control Tower performs a series of pre-checks. These same prechecks are performed when registering any top-level OU or nested OU. For more information, see [Common causes of failure during registration or re-registration](https://docs.aws.amazon.com/controltower/latest/userguide/common-eg-failures.html).
 + If all pre-checks pass, AWS Control Tower begins registering your OU, automatically.
 + If any pre-checks fail, AWS Control Tower stops the registration process and provides you with a list of items that must be fixed before you can register your OU.
 
@@ -94,7 +94,7 @@ From the AWS Control Tower console, you can view OUs and accounts that are non-c
 
 **Considerations about compliance for nested OUs and accounts**
 + An OU's compliance is not determined based on the compliance of the OUs nested under it.
-+ A control's compliance status is computed over all OUs on which the control is enabled, including nested OUs. See [AWS Control Tower compliance status for OUs and accounts](https://docs.aws.amazon.com//controltower/latest/userguide/compliance-statuses.html).
++ A control's compliance status is computed over all OUs on which the control is enabled, including nested OUs. See [AWS Control Tower compliance status for OUs and accounts](https://docs.aws.amazon.com/controltower/latest/userguide/compliance-statuses.html).
 + An OU is shown as noncompliant only if it has accounts that are noncompliant, regardless of where the OU sits in the OU hierarchy.
 + If a nested OU is noncompliant, its parent OU is not automatically considered to be noncompliant.
 + On the **OU detail** or **Account detail** page, you can view a list of noncompliant resources that may be causing your OUs or accounts to show a non-compliant status.

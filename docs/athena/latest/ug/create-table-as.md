@@ -121,7 +121,6 @@ This property does not apply to Iceberg tables. To use partition transforms for 
 Optional. An array list of columns by which the CTAS table will be partitioned. Verify that the names of partitioned columns are listed last in the list of columns in the `SELECT` statement.
  `partitioning = ARRAY[partition_transform, ...]`
 Optional. Specifies the partitioning of the Iceberg table to be created. Iceberg supports a wide variety of partition transforms and partition evolution. Partition transforms are summarized in the following table.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/athena/latest/ug/create-table-as.html)
 Example:
 

@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-iam-access
 
 You can manage user and group access to Amazon Redshift data warehouses through trusted-identity propagation.
 
-[Trusted identity propagation](https://docs.aws.amazon.com//singlesignon/latest/userguide/trustedidentitypropagation-overview.html) is an AWS IAM Identity Center feature that administrators of connected AWS services can use to grant and audit access to service data. Access to this data is based on user attributes such as group associations. Setting up trusted identity propagation requires collaboration between the administrators of connected AWS services and the IAM Identity Center administrators. For more information, see [Prerequisites and considerations](https://docs.aws.amazon.com//singlesignon/latest/userguide/trustedidentitypropagation-overall-prerequisites.html).
+[Trusted identity propagation](https://docs.aws.amazon.com/singlesignon/latest/userguide/trustedidentitypropagation-overview.html) is an AWS IAM Identity Center feature that administrators of connected AWS services can use to grant and audit access to service data. Access to this data is based on user attributes such as group associations. Setting up trusted identity propagation requires collaboration between the administrators of connected AWS services and the IAM Identity Center administrators. For more information, see [Prerequisites and considerations](https://docs.aws.amazon.com/singlesignon/latest/userguide/trustedidentitypropagation-overall-prerequisites.html).
 
 To illustrate one end-to-end case, you can use an Amazon Quick dashboard or Amazon Redshift query editor v2 to access Redshift. Access in this case is based on AWS IAM Identity Center groups. Redshift can determine who a user is and their group memberships. AWS IAM Identity Center also makes it possible to connect and manage identities through a third-party identity provider (IdP) like Okta or PingOne.
 
@@ -42,16 +42,9 @@ The following shows how to use Quick to authenticate with Redshift when it's con
 ## Connecting to Amazon Redshift with AWS IAM Identity Center through Amazon Redshift query editor v2
 <a name="redshift-iam-access-control-idp-connect-qe"></a>
 
-Upon completing the steps to set up an AWS IAM Identity Center connection with Redshift, the user can access the database and appropriate objects in the database through their AWS IAM Identity Center-based, namespace-prefixed identity. For more information about connecting to Redshift databases with query editor v2 sign-in, see [Querying a database using the query editor v2Querying a database using the Amazon Redshift query editor v2](query-editor-v2.md).
+Upon completing the steps to set up an AWS IAM Identity Center connection with Redshift, the user can access the database and appropriate objects in the database through their AWS IAM Identity Center-based, namespace-prefixed identity. For more information about connecting to Redshift databases with query editor v2 sign-in, see [Querying a database using the query editor v2](query-editor-v2.md).
 
 ## Using AWS IAM Identity Center across multiple AWS Regions
 <a name="redshift-iam-access-control-idp-connect-multi-region"></a>
 
 Amazon Redshift supports AWS IAM Identity Center in multiple AWS Regions. You can extend AWS IAM Identity Center from your primary AWS Region to additional Regions for improved performance through proximity to users and reliability. When a new Region is added in AWS IAM Identity Center, you can create Redshift IAM Identity Center applications in the new Region without replicating identities from the primary Region. You can set up Amazon Redshift federated permissions using AWS IAM Identity Center in the new Region where you can enable row-level, column-level, and masking controls. For more details to get started with AWS IAM Identity Center in multiple Regions, see [Manage AWS IAM Identity Center in multiple AWS Regions](https://docs.aws.amazon.com/singlesignon/latest/userguide/multi-region-iam-identity-center.html) in the *AWS IAM Identity Center User Guide*.
-
-## Limitations for connecting to Amazon Redshift with AWS IAM Identity Center
-<a name="redshift-iam-access-control-idp-connect-limitations"></a>
-
-When using AWS IAM Identity Center single sign-on, consider the following limitation:
-
-+  **No support for enhanced VPC** – Enhanced VPC isn't supported when you use AWS IAM Identity Center single sign-on for Amazon Redshift. For more information about enhanced VPC, see [Enhanced VPC routing in Amazon Redshift](https://docs.aws.amazon.com/redshift/latest/mgmt/enhanced-vpc-routing.html).

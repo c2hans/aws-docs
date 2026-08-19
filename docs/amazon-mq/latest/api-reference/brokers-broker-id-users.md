@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/api-reference/brokers-b
 **Note**
 Does not apply to RabbitMQ brokers.
 
-This is a collection of ActiveMQ users for the specified broker. An ActiveMQ user is a person or an application that can access the queues and topics of an ActiveMQ broker. For more information, see [User](https://docs.aws.amazon.com//amazon-mq/latest/developer-guide/user.html) in the Amazon MQ Developer Guide.
+This is a collection of ActiveMQ users for the specified broker. An ActiveMQ user is a person or an application that can access the queues and topics of an ActiveMQ broker. For more information, see [User](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/user.html) in the Amazon MQ Developer Guide.
 
 You can configure to have specific permissions. For example, you can allow some users to access the [ActiveMQ Web Console](http://activemq.apache.org/web-console.html).
 

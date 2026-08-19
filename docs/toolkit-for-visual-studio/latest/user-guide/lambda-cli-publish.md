@@ -19,7 +19,7 @@ The AWS Toolkit for Visual Studio includes AWS Lambda .NET Core project template
 Before working with .NET Core CLI to deploy Lambda functions, you must meet the following prerequisites:
 + Be sure Visual Studio 2015 Update 3 is installed.
 + Install [.NET Core for Windows](https://dotnet.microsoft.com/download#windowsvs2015).
-+ Set up the .NET Core CLI to work with Lambda. For more information, see [.NET Core CLI](https://docs.aws.amazon.com//lambda/latest/dg/csharp-package-cli.html) in the *AWS Lambda Developer Guide*.
++ Set up the .NET Core CLI to work with Lambda. For more information, see [.NET Core CLI](https://docs.aws.amazon.com/lambda/latest/dg/csharp-package-cli.html) in the *AWS Lambda Developer Guide*.
 + Install the Toolkit for Visual Studio. For more information, see [Installing the AWS Toolkit for Visual Studio](setup.md#install).
 
 ## Related topics

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/neo-deployment-hosti
 # Deploy a Compiled Model Using SageMaker SDK
 <a name="neo-deployment-hosting-services-sdk"></a>
 
-You must satisfy the [ prerequisites](https://docs.aws.amazon.com//sagemaker/latest/dg/neo-deployment-hosting-services-prerequisites) section if the model was compiled using AWS SDK for Python (Boto3), AWS CLI, or the Amazon SageMaker AI console. Follow one of the following use cases to deploy a model compiled with SageMaker Neo based on how you compiled your model.
+You must satisfy the [ prerequisites](https://docs.aws.amazon.com/sagemaker/latest/dg/neo-deployment-hosting-services-prerequisites) section if the model was compiled using AWS SDK for Python (Boto3), AWS CLI, or the Amazon SageMaker AI console. Follow one of the following use cases to deploy a model compiled with SageMaker Neo based on how you compiled your model.
 
 **Topics**
 + [If you compiled your model using the SageMaker SDK](#neo-deployment-hosting-services-sdk-deploy-sm-sdk)
@@ -84,14 +84,14 @@ endpoint = model_builder.build().deploy(
 
 See [Deploying directly from model artifacts](https://sagemaker.readthedocs.io/en/stable/frameworks/tensorflow/deploying_tensorflow_serving.html#deploying-directly-from-model-artifacts) for more information.
 
-You can select a Docker image Amazon ECR URI that meets your needs from [this list](https://docs.aws.amazon.com//sagemaker/latest/dg/neo-deployment-hosting-services-container-images.html).
+You can select a Docker image Amazon ECR URI that meets your needs from [this list](https://docs.aws.amazon.com/sagemaker/latest/dg/neo-deployment-hosting-services-container-images.html).
 
 For more information on how to construct a `TensorFlowModel` object, see the [SageMaker SDK](https://sagemaker.readthedocs.io/en/stable/api/sagemaker_train.html).
 
 **Note**
 Your first inference request might have high latency if you deploy your model on a GPU. This is because an optimized compute kernel is made on the first inference request. We recommend that you make a warm-up file of inference requests and store that alongside your model file before sending it off to a TFX. This is known as “warming up” the model.
 
-The following code snippet demonstrates how to produce the warm-up file for image classification example in the [prerequisites](https://docs.aws.amazon.com//sagemaker/latest/dg/neo-deployment-hosting-services-prerequisites) section:
+The following code snippet demonstrates how to produce the warm-up file for image classification example in the [prerequisites](https://docs.aws.amazon.com/sagemaker/latest/dg/neo-deployment-hosting-services-prerequisites) section:
 
 ```
 import tensorflow as tf

@@ -32,6 +32,16 @@ To access Dashboards
 
 1. In the navigation pane, choose **Dashboards**.
 
+## Understanding your dashboard list
+<a name="dashboards-types"></a>
+
+Your dashboard list can contain dashboards from three sources, and what you can edit depends on where a dashboard came from.
++ Dashboards that you create are fully editable. You choose which widgets to add, configure them, and arrange the layout, and you can share a dashboard that you own with other accounts.
++ Managed Dashboards are preconfigured by AWS. They appear in your dashboard list automatically, are populated with your own account data, and are read-only. Managed Dashboards are identified by a lock icon. To change a Managed Dashboard, duplicate it. The copy is a dashboard that you own and can edit freely.
++ Dashboards that are shared with you were created in another account and shared with you through AWS Resource Access Manager (AWS RAM). You can view them, but only the owning account can change them.
+
+On the dashboard list page, you can use tabs to filter your list: **All dashboards**, **Managed**, and **Shared with me**.
+
 ## Understanding dashboard permissions
 <a name="dashboards-permissions"></a>
 
@@ -84,3 +94,6 @@ When working with dashboards, users need permissions to access the dashboard res
 To schedule email delivery of dashboard reports, you also need the following permissions:
 `iam:PassRole` – Required for passing the IAM execution role to the API.
 `bcm-dashboards:GetDashboard`, `ce:GetDimensionValues`, `ce:GetCostAndUsageWithResources`, `ce:GetCostAndUsage`, `ce:GetCostForecast`, `ce:GetTags`, `ce:GetUsageForecast`, `ce:GetCostCategories`, `ce:GetSavingsPlansCoverage`, `ce:GetReservationUtilization`, `ce:GetReservationCoverage`, `ce:GetSavingsPlansUtilization`, `ce:GetSavingsPlansUtilizationDetails`, `budgets:ViewBudget`, `budgets:DescribeBudgetActionsForAccount`, `cost-optimization-hub:ListEfficiencyMetrics`, `billing:ListBillingViews` – Required for the execution role to retrieve dashboard and cost data. For more information, see [Execution role permissions for scheduled reports](https://docs.aws.amazon.com/cost-management/latest/userguide/schedule-dashboard-reports.html#schedule-dashboard-reports-permissions).
+
+**Note**
+Viewing AWS Managed Dashboards requires `ListDashboards` and `GetDashboard` permissions. If you attempt write operations (`UpdateDashboard`, `DeleteDashboard`) on a Managed Dashboard, the API returns a `AccessDeniedException`.

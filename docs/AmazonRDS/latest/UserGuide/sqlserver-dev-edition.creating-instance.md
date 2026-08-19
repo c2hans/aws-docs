@@ -47,7 +47,7 @@ Only CEVs in the `available` state appear in the list. If your CEV is not listed
 ## AWS CLI
 <a name="sqlserver-dev-edition.creating-instance.CLI"></a>
 
-To create a SQL Server Developer Edition DB instance, use the [create-db-instance](https://docs.aws.amazon.com//cli/latest/reference/rds/create-db-instance.html) command with the following parameters:
+To create a SQL Server Developer Edition DB instance, use the [create-db-instance](https://docs.aws.amazon.com/cli/latest/reference/rds/create-db-instance.html) command with the following parameters:
 
 The following options are required:
 + `--db-instance-identifier`

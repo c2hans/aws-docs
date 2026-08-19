@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsb
 
 AWS Backup Gateway provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="backup-gateway-GetBandwidthRateLimitSchedule"></a>[GetBandwidthRateLimitSchedule](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_GetBandwidthRateLimitSchedule.html) | GetBandwidthRateLimitSchedule | Read |

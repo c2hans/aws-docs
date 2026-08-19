@@ -43,8 +43,6 @@ Amazon SQS automatically deletes messages that have been in a queue for longer t
 
 The daemon sets the following HTTP headers.
 
-****
-
 |  **HTTP headers**  |
 | --- |
 | **Name** | **Value** |
@@ -103,8 +101,6 @@ If you configure your worker environment with an existing SQS queue and choose a
 Elastic Beanstalk uses leader election to determine which instance in your worker environment queues the periodic task. Each instance attempts to become leader by writing to an Amazon DynamoDB table. The first instance that succeeds is the leader, and must continue to write to the table to maintain leader status. If the leader goes out of service, another instance quickly takes its place.
 
 For periodic tasks, the worker daemon sets the following additional headers.
-
-****
 
 |  **HTTP headers**  |
 | --- |

@@ -50,8 +50,6 @@ The following tables list all supported platform branches for each platform. Onl
 ### Python
 <a name="release-2021-04-19-linux.platforms.python"></a>
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  Package Manager  |  Packager  |  meld3  |  AWS X‑Ray  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  ** Python 3.8 AL2 version 3.2.1** <br /> * 64bit Amazon Linux 2 v3.2.1 running Python 3.8 *  | 2.0.20210326 | Python 3.8.5 | pipenv 2020.8.13 |  |  | 3.2.0 | nginx 1.18.0 (default), Apache 2.4.46 |

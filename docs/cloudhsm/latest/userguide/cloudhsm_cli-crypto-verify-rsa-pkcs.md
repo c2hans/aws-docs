@@ -63,7 +63,11 @@ These examples show how to use **crypto verify rsa-pkcs** to verify a signature 
 **Example: Verify a Base64 encoded signature with Base64 encoded data**
 
 ```
-aws-cloudhsm > crypto verify rsa-pkcs --hash-function sha256 --key-filter attr.label=rsa-public --data YWJjMTIz --signature XJ7mRyHnDRYrDWTQuuNb+5mhoXx7VTsPMjgOQW4iMN7E42eNHj2Q0oovMmBdHUEH0F4HYG8FBJOBhvGuM8J/z6y41GbowVpUT6WzjnIQs79K9i7i6oR1TYjLnIS3r/zkimuXcS8/ZxyDzru+GO9BUT9FFU/of9cvu4Oyn6a5+IXuCbKNQs19uASuFARUTZ0a0Ny1CB1MulxUpqGTmI91J6evlP7k/2khwDmJ5E8FEar5/Cvbn9t21p3Uj561ngTXrYbIZ2KHpef9jQh/cEIvFLG61sexJjQi8EdTxeDA+I3ITO0qrvvESvA9+Sj7kdG2ceIicFS8/8LwyxiIC31UHQ==
+aws-cloudhsm > crypto verify rsa-pkcs \
+    --hash-function sha256 \
+    --key-filter attr.label=rsa-public \
+    --data YWJjMTIz \
+    --signature XJ7mRyHnDRYrDWTQuuNb+5mhoXx7VTsPMjgOQW4iMN7E42eNHj2Q0oovMmBdHUEH0F4HYG8FBJOBhvGuM8J/z6y41GbowVpUT6WzjnIQs79K9i7i6oR1TYjLnIS3r/zkimuXcS8/ZxyDzru+GO9BUT9FFU/of9cvu4Oyn6a5+IXuCbKNQs19uASuFARUTZ0a0Ny1CB1MulxUpqGTmI91J6evlP7k/2khwDmJ5E8FEar5/Cvbn9t21p3Uj561ngTXrYbIZ2KHpef9jQh/cEIvFLG61sexJjQi8EdTxeDA+I3ITO0qrvvESvA9+Sj7kdG2ceIicFS8/8LwyxiIC31UHQ==
 {
   "error_code": 0,
   "data": {
@@ -75,7 +79,11 @@ aws-cloudhsm > crypto verify rsa-pkcs --hash-function sha256 --key-filter attr.l
 **Example: Verify a signature file with a data file**
 
 ```
-aws-cloudhsm > crypto verify rsa-pkcs --hash-function sha256 --key-filter attr.label=rsa-public --data-path data.txt --signature-path signature-file
+aws-cloudhsm > crypto verify rsa-pkcs \
+    --hash-function sha256 \
+    --key-filter attr.label=rsa-public \
+    --data-path data.txt \
+    --signature-path signature-file
 {
   "error_code": 0,
   "data": {
@@ -88,7 +96,11 @@ aws-cloudhsm > crypto verify rsa-pkcs --hash-function sha256 --key-filter attr.l
 This command verifies whether the invalid data was signed by a public key with the label `rsa-public` using the RSAPKCS signing mechanism to produce the signature located in `/home/signature`. Because the given arguments do not make up a true signing relationship, the command returns an error message.
 
 ```
-aws-cloudhsm > crypto verify rsa-pkcs --hash-function sha256 --key-filter attr.label=rsa-public --data aW52YWxpZA== --signature XJ7mRyHnDRYrDWTQuuNb+5mhoXx7VTsPMjgOQW4iMN7E42eNHj2Q0oovMmBdHUEH0F4HYG8FBJOBhvGuM8J/z6y41GbowVpUT6WzjnIQs79K9i7i6oR1TYjLnIS3r/zkimuXcS8/ZxyDzru+GO9BUT9FFU/of9cvu4Oyn6a5+IXuCbKNQs19uASuFARUTZ0a0Ny1CB1MulxUpqGTmI91J6evlP7k/2khwDmJ5E8FEar5/Cvbn9t21p3Uj561ngTXrYbIZ2KHpef9jQh/cEIvFLG61sexJjQi8EdTxeDA+I3ITO0qrvvESvA9+Sj7kdG2ceIicFS8/8LwyxiIC31UHQ==
+aws-cloudhsm > crypto verify rsa-pkcs \
+    --hash-function sha256 \
+    --key-filter attr.label=rsa-public \
+    --data aW52YWxpZA== \
+    --signature XJ7mRyHnDRYrDWTQuuNb+5mhoXx7VTsPMjgOQW4iMN7E42eNHj2Q0oovMmBdHUEH0F4HYG8FBJOBhvGuM8J/z6y41GbowVpUT6WzjnIQs79K9i7i6oR1TYjLnIS3r/zkimuXcS8/ZxyDzru+GO9BUT9FFU/of9cvu4Oyn6a5+IXuCbKNQs19uASuFARUTZ0a0Ny1CB1MulxUpqGTmI91J6evlP7k/2khwDmJ5E8FEar5/Cvbn9t21p3Uj561ngTXrYbIZ2KHpef9jQh/cEIvFLG61sexJjQi8EdTxeDA+I3ITO0qrvvESvA9+Sj7kdG2ceIicFS8/8LwyxiIC31UHQ==
 {
   "error_code": 1,
   "data": "Signature verification failed"

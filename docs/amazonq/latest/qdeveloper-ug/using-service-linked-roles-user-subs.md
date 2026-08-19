@@ -75,8 +75,6 @@ Amazon Q Developer Subscriptions supports using service-linked roles in all of t
 
 Amazon Q Developer Subscriptions does not support using service-linked roles in every Region where the service is available. You can use the AWSServiceRoleForUserSubscriptions role in the following Regions.
 
-****
-
 | Region name | Region identity | Support in User Subscriptions |
 | --- | --- | --- |
 | US East (N. Virginia) | us-east-1 | Yes |

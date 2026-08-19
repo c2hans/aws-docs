@@ -9,8 +9,6 @@ Amazon Q Business is no longer open to new customers. For capabilities similar t
 
 Amazon Q Business captures end user feedback to chat responses to help address any technical issues. You can't configure this feature using the console.
 
-****
-
 | API action | API description | Relevant User Guide topic |
 | --- | --- | --- |
 | [PutFeedback](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_PutFeedback.html) | Enables your end user to provide feedback on their Amazon Q Business generated chat responses. | [Using web experience](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/using-web-experience.html#provide-feedback) |

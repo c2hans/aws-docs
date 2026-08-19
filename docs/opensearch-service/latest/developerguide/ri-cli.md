@@ -32,8 +32,6 @@ aws opensearch describe-reserved-instance-offerings --region {{us-east-1}}
 
 For an explanation of each return value, see the following table.
 
-****
-
 | Field | Description |
 | --- | --- |
 | FixedPrice | The upfront cost of the reservation. |

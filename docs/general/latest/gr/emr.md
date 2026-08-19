@@ -167,4 +167,4 @@ If you specify the general endpoint (elasticmapreduce.amazonaws.com), Amazon EMR
 | The maximum rate at which your bucket replenishes for all EMR operations. | Each supported Region: 50 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/elasticmapreduce/quotas/L-432FAB44)  | The maximum rate at which your bucket replenishes for all EMR operations. |
 | Write-ahead logs (EMR WAL) | Each supported Region: 20,000 | No | The maximum number of Amazon EMR write-ahead logs (EMR WAL) that can be used at the same time in this account in the current Region. |
 
-Amazon EMR throttles the following API requests for each AWS account on a per-Region basis. For more information about how throttling is applied, see [API Request Throttling](https://docs.aws.amazon.com//AWSEC2/latest/APIReference/throttling.html) in the *Amazon EC2 API Reference*.
+Amazon EMR throttles the following API requests for each AWS account on a per-Region basis. For more information about how throttling is applied, see [API Request Throttling](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/throttling.html) in the *Amazon EC2 API Reference*.

@@ -31,8 +31,6 @@ The following is a list of Sublime keyboard mode keybindings for Windows / Linux
 ## General
 <a name="keybindings-sublime-windows-linux-general"></a>
 
-****
-
 | Description | Keybinding | Command |
 | --- | --- | --- |
 | Add the selection as a watch expression |  `Ctrl-Shift-C`  |  `addwatchfromselection`  |
@@ -88,8 +86,6 @@ The following is a list of Sublime keyboard mode keybindings for Windows / Linux
 ## Tabs
 <a name="keybindings-sublime-windows-linux-tabs"></a>
 
-****
-
 | Description | Keybinding | Command |
 | --- | --- | --- |
 | Close all open tabs in the current pane, except the current tab |  `Ctrl-Alt-W`  |  `closeallbutme`  |
@@ -126,8 +122,6 @@ The following is a list of Sublime keyboard mode keybindings for Windows / Linux
 ## Panels
 <a name="keybindings-sublime-windows-linux-panels"></a>
 
-****
-
 | Description | Keybinding | Command |
 | --- | --- | --- |
 | Show the **Go** window in **Go to Anything** mode |  `Ctrl-E\|Ctrl-P`  |  `gotoanything`  |
@@ -140,8 +134,6 @@ The following is a list of Sublime keyboard mode keybindings for Windows / Linux
 
 ## Code Editor
 <a name="keybindings-sublime-windows-linux-code-editor"></a>
-
-****
 
 | Description | Keybinding | Command |
 | --- | --- | --- |
@@ -238,8 +230,6 @@ The following is a list of Sublime keyboard mode keybindings for Windows / Linux
 ## emmet
 <a name="keybindings-sublime-windows-linux-emmet"></a>
 
-****
-
 | Description | Keybinding | Command |
 | --- | --- | --- |
 | Evaluate a simple math expression (such as `2*4` or `10/2`), and output its result |  `Shift-Ctrl-Y`  |  `emmet_evaluate_math_expression`  |
@@ -252,8 +242,6 @@ The following is a list of Sublime keyboard mode keybindings for Windows / Linux
 ## Terminal
 <a name="keybindings-sublime-windows-linux-terminal"></a>
 
-****
-
 | Description | Keybinding | Command |
 | --- | --- | --- |
 | Open a new **Terminal** tab |  `Alt-T`  |  `openterminal`  |
@@ -261,8 +249,6 @@ The following is a list of Sublime keyboard mode keybindings for Windows / Linux
 
 ## Run and Debug
 <a name="keybindings-sublime-windows-linux-run-debug"></a>
-
-****
 
 | Description | Keybinding | Command |
 | --- | --- | --- |

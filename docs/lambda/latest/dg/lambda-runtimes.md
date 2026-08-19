@@ -24,14 +24,20 @@ To use other languages in Lambda, such as [Go](lambda-golang.md) or [Rust](lambd
 
 The following table lists the supported Lambda runtimes and projected deprecation dates. After a runtime is deprecated, you're still able to create and update functions for a limited period. For more information, see [Runtime use after deprecation](#runtime-deprecation-levels). The table provides the currently forecasted dates for runtime deprecation, based on our [Runtime deprecation policy](#runtime-support-policy). These dates are provided for planning purposes and are subject to change.
 
+**Note**
+The Node.js 26 and Python 3.15 runtimes are in **public preview**. Preview runtimes are not covered by the Lambda SLA or Technical Support, and should not be used for production workloads.
+The purpose of preview runtimes is to gather feedback from customers, partners, and upstream language communities prior to General Availability, while breaking changes are still possible. You can provide feedback through the dedicated GitHub issues for [Node.js 26](https://github.com/aws/aws-lambda-nodejs-runtime-interface-client/issues/198) and [Python 3.15](https://github.com/aws/aws-lambda-python-runtime-interface-client/issues/216). For further information, see this [blog post](https://aws.amazon.com/blogs/compute/introducing-public-preview-runtimes-on-aws-lambda-starting-with-node-js-26-and-python-3-15/).
+
 **Important**
 Amazon Linux 2 is scheduled for end of life on June 30, 2026. Lambda runtimes and container base images for Java 8 (AL2), Java 11 (AL2), Java 17 (AL2), Python 3.10, Python 3.11, and provided.al2 will continue to receive patches for [critical and selected important](https://alas.aws.amazon.com/faqs.html) Amazon Linux 2 security issues, in addition to language runtime patches, until the deprecation dates shown in the table below.
 We recommend customers upgrade to an Amazon Linux 2023-based runtime as soon as possible. For customers upgrading to Java 21 or Java 25, you can use [AWS Transform custom](https://docs.aws.amazon.com/transform/latest/userguide/custom.html) to assist with these upgrades. For customers unable to upgrade their Java version, we provide Amazon Linux 2023-based runtimes for Java 8, Java 11, and Java 17 that follow the AL2023 deprecation schedule.
 
 | Name | Identifier | Operating system | Deprecation date | Block function create | Block function update |
 | --- | --- | --- | --- | --- | --- |
+| Node.js 26 | `nodejs26.x` | Amazon Linux 2023 |  Not scheduled  |  Not scheduled  |  Not scheduled  |
 | Node.js 24 | `nodejs24.x` | Amazon Linux 2023 |  Apr 30, 2028  |  Jun 1, 2028  |  Jul 1, 2028  |
 | Node.js 22 | `nodejs22.x` | Amazon Linux 2023 |  Apr 30, 2027  |  Jun 1, 2027  |  Jul 1, 2027  |
+| Python 3.15 | `python3.15` | Amazon Linux 2023 |  Not scheduled  |  Not scheduled  |  Not scheduled  |
 | Python 3.14 | `python3.14` | Amazon Linux 2023 |  Jun 30, 2029  |  Jul 31, 2029  |  Aug 31, 2029  |
 | Python 3.13 | `python3.13` | Amazon Linux 2023 |  Jun 30, 2029  |  Jul 31, 2029  |  Aug 31, 2029  |
 | Python 3.12 | `python3.12` | Amazon Linux 2023 |  Oct 31, 2028  |  Nov 30, 2028  |  Jan 10, 2029  |
@@ -39,9 +45,9 @@ We recommend customers upgrade to an Amazon Linux 2023-based runtime as soon as 
 | Python 3.10 | `python3.10` | Amazon Linux 2 |  Oct 31, 2026  |  Feb 1, 2027  |  Mar 3, 2027  |
 | Java 25 | `java25` | Amazon Linux 2023 |  Jun 30, 2029  |  Jul 31, 2029  |  Aug 31, 2029  |
 | Java 21 | `java21` | Amazon Linux 2023 |  Jun 30, 2029  |  Jul 31, 2029  |  Aug 31, 2029  |
-| Java 17 | `java17.al2023` | Amazon Linux 2023 |  Not scheduled  |  Not scheduled  |  Not scheduled  |
-| Java 11 | `java11.al2023` | Amazon Linux 2023 |  Not scheduled  |  Not scheduled  |  Not scheduled  |
-| Java 8 | `java8.al2023` | Amazon Linux 2023 |  Not scheduled  |  Not scheduled  |  Not scheduled  |
+| Java 17 | `java17.al2023` | Amazon Linux 2023 |  Jun 30, 2029  |  Jul 31, 2029  |  Aug 31, 2029  |
+| Java 11 | `java11.al2023` | Amazon Linux 2023 |  Jun 30, 2029  |  Jul 31, 2029  |  Aug 31, 2029  |
+| Java 8 | `java8.al2023` | Amazon Linux 2023 |  Jun 30, 2029  |  Jul 31, 2029  |  Aug 31, 2029  |
 | Java 17 | `java17` | Amazon Linux 2 |  Jun 30, 2027  |  Jul 31, 2027  |  Aug 31, 2027  |
 | Java 11 | `java11` | Amazon Linux 2 |  Jun 30, 2027  |  Jul 31, 2027  |  Aug 31, 2027  |
 | Java 8 | `java8.al2` | Amazon Linux 2 |  Jun 30, 2027  |  Jul 31, 2027  |  Aug 31, 2027  |

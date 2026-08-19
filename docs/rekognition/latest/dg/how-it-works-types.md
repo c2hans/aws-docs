@@ -9,8 +9,6 @@ The following are the types of analysis that the Amazon Rekognition Image API an
 
 The following table lists the operations you need to use with respect to the type of media you're working with and your use case:
 
-****
-
 | Use Case | Media Type | Operations |
 | --- | --- | --- |
 |  [Moderating content](moderation.md)  | Images |  [DetectModerationLabels](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DetectModerationLabels.html), [StartMediaAnalysisJob](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_StartMediaAnalysisJob.html), [GetMediaAnalysisJob](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_GetMediaAnalysisJob.html), [ListMediaAnalysisJobs](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_ListMediaAnalysisJobs.html)  |

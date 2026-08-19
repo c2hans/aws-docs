@@ -15,4 +15,4 @@ For example, a large global company could choose to monitor 100% of its internet
 
 You can try out different options with the pricing calculator. To explore pricing options, on the [Pricing calculator for CloudWatch page](https://calculator.aws/#/addService/CloudWatch), scroll down to Internet Monitor.
 
-For more information about Internet Monitor and CloudWatch pricing, see the [Amazon CloudWatch pricing](https://aws.amazon.com//cloudwatch/pricing/) page.
+For more information about Internet Monitor and CloudWatch pricing, see the [Amazon CloudWatch pricing](https://aws.amazon.com/cloudwatch/pricing/) page.

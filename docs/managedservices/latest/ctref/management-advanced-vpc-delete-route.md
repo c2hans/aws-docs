@@ -14,8 +14,6 @@ Delete a route in a route table within a VPC.
 ## Change Type Details
 <a name="ct-1nusoameibz5p-MAVd-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1nusoameibz5p |

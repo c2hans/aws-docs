@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awss
 
 AWS Support App in Slack provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="supportapp-DescribeSlackChannels"></a>[DescribeSlackChannels](https://docs.aws.amazon.com/awssupport/latest/user/slack-authorization-permissions.html) | List all public Slack channels in a workspace that have invited the AWS Support App | Read |

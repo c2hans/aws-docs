@@ -30,7 +30,7 @@ This represents your general AWS usage across all services, showing how much of 
 
 **Commitments**
 
-This represents your AWS commitments like Savings Plans or Reserved Instances, which provide discounted pricing in exchange for a term-based commitment. For more information, see [Compute and EC2 Instance Savings Plans](https://aws.amazon.com//savingsplans/compute-pricing/) and [Amazon EC2 Reserved Instances](https://aws.amazon.com/ec2/pricing/reserved-instances/).
+This represents your AWS commitments like Savings Plans or Reserved Instances, which provide discounted pricing in exchange for a term-based commitment. For more information, see [Compute and EC2 Instance Savings Plans](https://aws.amazon.com/savingsplans/compute-pricing/) and [Amazon EC2 Reserved Instances](https://aws.amazon.com/ec2/pricing/reserved-instances/).
 
 **Note**
 You can’t use a workload estimate to model your commitments.
@@ -52,4 +52,4 @@ You can organize your estimates by defining groups. A group can reflect how your
 
 **Anniversary bill**
 
-This is the line items for services that you used during the month. For more information about billing term definitions, see [Billing details](https://docs.aws.amazon.com//cur/latest/userguide/billing-columns.html) in the *AWS Data Exports User Guide*.
+This is the line items for services that you used during the month. For more information about billing term definitions, see [Billing details](https://docs.aws.amazon.com/cur/latest/userguide/billing-columns.html) in the *AWS Data Exports User Guide*.

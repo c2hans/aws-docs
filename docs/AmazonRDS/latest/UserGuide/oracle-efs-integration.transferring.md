@@ -16,8 +16,6 @@ To transfer files between an RDS for Oracle instance and an Amazon EFS file syst
 
 To create an Oracle directory, use the procedure `rdsadmin.rdsadmin_util.create_directory_efs`. The procedure has the following parameters.
 
-****
-
 | Parameter name | Data type | Default | Required | Description |
 | --- | --- | --- | --- | --- |
 | `p_directory_name` | VARCHAR2 | – | Yes | The name of the Oracle directory.  |

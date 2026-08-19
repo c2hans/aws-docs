@@ -19,7 +19,6 @@ The address of an `NCRYPT_KEY_HANDLE` variable that stores the key handle.
  `pszAlgId` [in]
 A pointer to a null-terminated Unicode string that specifies the cryptographic algorithm identifier for creating the key.
 AWS CloudHSM Key Storage Provider (KSP) supports the following algorithms:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/cloudhsm/latest/userguide/ksp-library-apis-create-persisted-key.html)
 
 `pszKeyName` [in, optional]
@@ -30,7 +29,6 @@ AWS CloudHSM Key Storage Provider (KSP) doesn't use this parameter.
 
 `dwFlags` [in]
 Flags to modify the function's behavior. Use zero or more of the following values:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/cloudhsm/latest/userguide/ksp-library-apis-create-persisted-key.html)
 
 ## Return Value
@@ -39,8 +37,6 @@ Flags to modify the function's behavior. Use zero or more of the following value
 The function returns a status code to indicate success or failure.
 
 Common return codes include:
-
-****
 
 | Return code | Description |
 | --- | --- |

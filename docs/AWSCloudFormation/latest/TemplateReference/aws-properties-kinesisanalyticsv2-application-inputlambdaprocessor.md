@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 `ResourceARN`  <a name="cfn-kinesisanalyticsv2-application-inputlambdaprocessor-resourcearn"></a>
 The ARN of the Amazon Lambda function that operates on records in the stream.
-To specify an earlier version of the Lambda function than the latest, include the Lambda function version in the Lambda function ARN. For more information about Lambda ARNs, see [Example ARNs: Amazon Lambda](https://docs.aws.amazon.com//general/latest/gr/aws-arns-and-namespaces.html#arn-syntax-lambda)
+To specify an earlier version of the Lambda function than the latest, include the Lambda function version in the Lambda function ARN. For more information about Lambda ARNs, see [Example ARNs: Amazon Lambda](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html#arn-syntax-lambda)
 *Required*: Yes
 *Type*: String
 *Pattern*: `^arn:.*$`

@@ -9,6 +9,8 @@ In addition to a large selection of images created by Independent Software Vendo
 
 When you specify an AWS Marketplace component in an image recipe, Image Builder validates the subscription and performs dependency checks to ensure that you have the resources that you need to use it. When validation succeeds, Image Builder creates secure downloads for the component and its artifacts for use by image pipeline builds.
 
+Image Builder discovers AWS Marketplace catalog metadata using its own service credentials, so you don't need to grant Image Builder additional permissions to discover AWS Marketplace components. However, your account must be subscribed to a product before you can use its components in a recipe.
+
 ## Discover AWS Marketplace components
 <a name="use-marketplace-components-discover"></a>
 
@@ -23,7 +25,7 @@ You can discover AWS Marketplace software components to use in your recipes from
 1. To search for specific software products that include components, you can enter part of the name in the search bar or filter by `Status`, `Operating System`, `Publisher`, or `Categories`. The search bar also contains pagination controls for your results.
 
 ### Results
-<a name="w2aac13c26b7b7"></a>
+<a name="w2aac13c26b9b7"></a>
 
 Each AWS Marketplace product has its own detail panel that includes the following information.
 
@@ -77,5 +79,8 @@ You can use AWS Marketplace components in your Image Builder image recipes the s
 
 **Note**
 If you're looking for the CIS hardening component, select `Third party managed`, from the ownership list instead of `AWS Marketplace`.
+
+**Important**
+A recipe that includes one or more AWS Marketplace components must also include at least one build component. Image Builder returns an error if you create a recipe that references AWS Marketplace components but has no build component. Container recipes don't support AWS Marketplace components. For more information, see [Container recipe constraints](create-container-recipes.md#container-recipe-constraints).
 
 For more information about how to select, arrange, and configure parameters for your components, see [Create a new version of an image recipe](create-image-recipes.md).

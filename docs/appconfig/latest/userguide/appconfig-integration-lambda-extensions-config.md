@@ -29,8 +29,6 @@ The AWS AppConfig Agent Lambda extension can only retrieve data from one account
 AWS Lambda logs information about the AWS AppConfig Agent Lambda extension and the Lambda function by using Amazon CloudWatch Logs.
 The following table includes a **Sample values** column. Depending on your monitor resolution, you might need to scroll to the bottom of the table and then scroll to the right to view the column.
 
-****
-
 | Environment variable | Details | Default value | Sample values |
 | --- | --- | --- | --- |
 | `AWS_APPCONFIG_EXTENSION_HTTP_PORT` | This environment variable specifies the port on which the local HTTP server that hosts the extension runs. | 2772 | 2772 |

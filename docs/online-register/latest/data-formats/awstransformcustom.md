@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awst
 
 AWS Transform custom provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="transform-custom-GetAnalysis"></a>[GetAnalysis](https://docs.aws.amazon.com/transform/latest/userguide/custom.html) | Invoke GetAnalysis on AWS Transform custom | Read |

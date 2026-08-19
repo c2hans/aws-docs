@@ -35,8 +35,6 @@ To use a reranker model directly with the Amazon Bedrock API, send a [Rerank](ht
 
 The following fields are required:
 
-****
-
 | Field | Basic description |
 | --- | --- |
 | queries | An array of one [RerankQuery](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RerankQuery.html) object. Specify TEXT as the type and include the query in the textQuery field. |
@@ -44,8 +42,6 @@ The following fields are required:
 | rerankingConfiguration | Includes the Amazon Resource Name (ARN) of the reranking model to use, and the number of results to return after reranking, and, optionally, inference configurations for the model. You specify additional model configurations as key-value pairs. For more information, see [Rerank](https://docs.cohere.com/reference/rerank) on the Cohere documentation website. |
 
 The following fields are optional:
-
-****
 
 | Field | Use case |
 | --- | --- |

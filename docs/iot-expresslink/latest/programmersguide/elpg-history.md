@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/iot-expresslink/latest/programmersguide/
 
 The following table describes important changes to the AWS IoT ExpressLink Programmer's Guide starting with v1.0. We also update the documentation to address any errors found or feedback received.
 
-****
-
 | Change | Description | Date |
 | --- | --- | --- |
 | version 1.3 | The following sections were added:+  [13 Bluetooth Low Energy (BLE)](elpg-ble.md) Section 13 was updated with:   BLE Central Device Configuration was updated.   BLE Peripheral Device Configuration was updated.   BLE Characteristics Configuration was updated.   BLE Descriptors Configuration was updated.   [13.3.6 BLE AUTH*[\#] [0/1]*   »Authorize access to a characteristic«](elpg-ble.md#elpg-ble-auth-command) was introduced.   [13.4.11 AT\+BLE ALLOW\_CLEAR »Remove all devices from the Allow list«](elpg-ble.md#elpg-ble-allow-clear-command) was introduced.   <br />+  A new section [14 GPIO control (new with v1.3)](elpg-gpio-control.md) was added.  | August 27, 2025 |

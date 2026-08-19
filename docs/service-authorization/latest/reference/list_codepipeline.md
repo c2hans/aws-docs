@@ -24,8 +24,6 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_codepipeline-actions-as-permissions).
 
-****
-
 - **   AcknowledgeJob  **
   - **IAM action:**  [codepipeline:AcknowledgeJob](#list_codepipeline-action-AcknowledgeJob)
   - **Condition key:**
@@ -46,7 +44,7 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [codepipeline:CreatePipeline](#list_codepipeline-action-CreatePipeline)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [codepipeline:TagResource](#list_codepipeline-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
   - **IAM action:**  [codestar-connections:PassConnection](https://docs.aws.amazon.com/dtconsole/latest/userguide/security-iam.html#permissions-reference-connections-passconnection)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
-  - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** cloudformation.amazonaws.com, codepipeline.amazonaws.com / **Access level:** Write
+  - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** cloudformation.amazonaws.com, codebuild.amazonaws.com, codepipeline.amazonaws.com / **Access level:** Write
 
 - **   DeleteCustomActionType  **
   - **IAM action:**  [codepipeline:DeleteCustomActionType](#list_codepipeline-action-DeleteCustomActionType)
@@ -284,14 +282,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
 - **   UpdatePipeline  **
   - **IAM action:**  [codepipeline:UpdatePipeline](#list_codepipeline-action-UpdatePipeline)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [codestar-connections:PassConnection](https://docs.aws.amazon.com/dtconsole/latest/userguide/security-iam.html#permissions-reference-connections-passconnection)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
-  - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** cloudformation.amazonaws.com, codepipeline.amazonaws.com / **Access level:** Write
+  - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** cloudformation.amazonaws.com, codebuild.amazonaws.com, codepipeline.amazonaws.com / **Access level:** Write
 
 ## Actions defined by AWS CodePipeline
 <a name="list_codepipeline-actions-as-permissions"></a>
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
-
-****
 
 - **   [AcknowledgeJob](https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_AcknowledgeJob.html)  **
   - **Description:** Grants permission to view information about a specified job and whether that job has been received by the job worker
@@ -565,8 +561,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
 
-****
-
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
 |  [action](https://docs.aws.amazon.com/codepipeline/latest/userguide/iam-access-control-identity-based.html#ACP_ARN_Format)  | arn:${Partition}:codepipeline:${Region}:${Account}:${PipelineName}/${StageName}/${ActionName} | [aws:ResourceTag/${TagKey}](#list_codepipeline-aws_ResourceTag___TagKey_) |
@@ -579,8 +573,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_codepipeline-policy-keys"></a>
 
 AWS CodePipeline defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

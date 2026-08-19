@@ -17,7 +17,7 @@ Configurations must be made before using the console for the first time.
 
 Make sure that you have an AWS account to create or administer a WorkSpace. Device users, however, don't need an AWS account to connect to and use their WorkSpaces.
 
-Review and understand the concepts listed in [ Before You Begin Using Active Directory with WorkSpaces Pools](https://docs.aws.amazon.com//workspaces/latest/adminguide/active-directory-prerequisites.html) in the *Amazon WorkSpaces Administration Guide* before you proceed with your configuration.
+Review and understand the concepts listed in [ Before You Begin Using Active Directory with WorkSpaces Pools](https://docs.aws.amazon.com/workspaces/latest/adminguide/active-directory-prerequisites.html) in the *Amazon WorkSpaces Administration Guide* before you proceed with your configuration.
 
 ## Create a WorkSpaces Pool
 <a name="create-wsp-pool"></a>

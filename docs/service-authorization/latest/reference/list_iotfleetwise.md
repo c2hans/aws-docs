@@ -25,8 +25,6 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_iotfleetwise-actions-as-permissions).
 
-****
-
 - **   AssociateVehicleFleet  **
   - **IAM action:**  [iotfleetwise:AssociateVehicleFleet](#list_iotfleetwise-action-AssociateVehicleFleet)
   - **Condition key:**
@@ -350,8 +348,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
 <a name="list_iotfleetwise-actions-as-permissions"></a>
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
-
-****
 
 - **   [AssociateVehicleFleet](https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_AssociateVehicleFleet.html)  **
   - **Description:** Grants permission to associate the given vehicle to a fleet
@@ -707,8 +703,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 The following actions are defined by AWS IoT FleetWise but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 - **   [GenerateCommandPayload](https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/controlling-access.html#generate-command-payload)  **
   - **Description:** Grants permission to generate the payload for running a command on a vehicle
   - **Resource types (\*required):** [statetemplate](#list_iotfleetwise-resource-statetemplate) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_iotfleetwise-aws_ResourceTag___TagKey_)<br />[iotfleetwise:Signals](#list_iotfleetwise-iotfleetwise_Signals)
@@ -719,8 +713,6 @@ The following actions are defined by AWS IoT FleetWise but are not directly invo
 <a name="list_iotfleetwise-resources-for-iam-policies"></a>
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
-
-****
 
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
@@ -736,8 +728,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_iotfleetwise-policy-keys"></a>
 
 AWS IoT FleetWise defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

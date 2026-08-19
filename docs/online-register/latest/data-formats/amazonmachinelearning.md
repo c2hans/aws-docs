@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon Machine Learning provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="machinelearning-DescribeBatchPredictions"></a>[DescribeBatchPredictions](https://docs.aws.amazon.com/machine-learning/latest/APIReference/API_DescribeBatchPredictions.html) | Returns a list of BatchPrediction operations that match the search criteria in the request | List |

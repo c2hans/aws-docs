@@ -14,8 +14,6 @@ Use to start all stopped EC2 instances in the specified stack.
 ## Change Type Details
 <a name="ct-1h5xgl9cr4bzy-MSSs-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1h5xgl9cr4bzy |

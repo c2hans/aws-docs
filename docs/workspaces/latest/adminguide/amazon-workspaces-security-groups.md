@@ -8,13 +8,13 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/amazon-work
 When you register a directory with WorkSpaces, it creates two security groups, one for directory controllers and another for WorkSpaces in the directory. The security group for directory controllers has a name that consists of the directory identifier followed by **\_controllers** (for example, d-12345678e1\_controllers). The security group for WorkSpaces has a name that consists of the directory identifier followed by **\_workspacesMembers** (for example, d-123456fc11\_workspacesMembers).
 
 **Warning**
-Avoid modifying, deleting, or detaching the **\_controllers** and the **\_workspacesMembers** security groups. Be cautious when modifying or deleting these security groups, because you will not be able to recreate these groups and add them back after they have been modified or deleted. For more information, see [ Amazon EC2 security groups for Linux instance](https://docs.aws.amazon.com//AWSEC2/latest/UserGuide/ec2-security-groups.html) or [ Amazon EC2 security groups for Windows instances](https://docs.aws.amazon.com//AWSEC2/latest/WindowsGuide/ec2-security-groups.html).
+Avoid modifying, deleting, or detaching the **\_controllers** and the **\_workspacesMembers** security groups. Be cautious when modifying or deleting these security groups, because you will not be able to recreate these groups and add them back after they have been modified or deleted. For more information, see [ Amazon EC2 security groups for Linux instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-security-groups.html) or [ Amazon EC2 security groups for Windows instances](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/ec2-security-groups.html).
 
 You can add a default WorkSpaces security group to a directory. After you associate a new security group with a WorkSpaces directory, new WorkSpaces that you launch or existing WorkSpaces that you rebuild will have the new security group. You can also [add this new default security group to existing WorkSpaces without rebuilding them](#security_group_existing_workspace), as explained later in this topic.
 
 When you associate multiple security groups with a WorkSpaces directory, the rules from each security group are effectively aggregated to create one set of rules. We recommend condensing your security group rules as much as possible.
 
-For more information about security groups, see [ Security Groups for Your VPC](https://docs.aws.amazon.com//vpc/latest/userguide/VPC_SecurityGroups.html) in the *Amazon VPC User Guide*.
+For more information about security groups, see [ Security Groups for Your VPC](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_SecurityGroups.html) in the *Amazon VPC User Guide*.
 
 **To add a security group to a WorkSpaces directory**
 

@@ -112,8 +112,6 @@ If your password contains special characters (for example, `some.password`), enc
 
 You can use the following single connection metadata and record handlers to connect to a single Oracle instance.
 
-****
-
 | Handler type | Class |
 | --- | --- |
 | Composite handler | OracleCompositeHandler |
@@ -122,8 +120,6 @@ You can use the following single connection metadata and record handlers to conn
 
 ##### Single connection handler parameters
 <a name="connectors-oracle-single-connection-handler-parameters"></a>
-
-****
 
 | Parameter | Description |
 | --- | --- |
@@ -135,8 +131,6 @@ The single connection handlers support one database instance and must provide a 
 The connector supports SSL based connections to Amazon RDS instances. Support is limited to the Transport Layer Security (TLS) protocol and to authentication of the server by the client. Mutual authentication it is not supported in Amazon RDS. The second row in the table below shows the syntax for using SSL.
 
 The following example property is for a single Oracle instance supported by a Lambda function.
-
-****
 
 | Property | Value |
 | --- | --- |
@@ -183,8 +177,6 @@ Currently, the Oracle connector recognizes the `UID` and `PWD` JDBC properties.
 
 You can use a multiplexer to connect to multiple database instances with a single Lambda function. Requests are routed by catalog name. Use the following classes in Lambda.
 
-****
-
 | Handler | Class |
 | --- | --- |
 | Composite handler | OracleMuxCompositeHandler |
@@ -194,16 +186,12 @@ You can use a multiplexer to connect to multiple database instances with a singl
 ##### Multiplexing handler parameters
 <a name="connectors-oracle-multiplexing-handler-parameters"></a>
 
-****
-
 | Parameter | Description |
 | --- | --- |
 | ${{catalog}}\_connection\_string | Required. A database instance connection string. Prefix the environment variable with the name of the catalog used in Athena. For example, if the catalog registered with Athena is myoraclecatalog, then the environment variable name is myoraclecatalog\_connection\_string. |
 | default | Required. The default connection string. This string is used when the catalog is lambda:${{{AWS\_LAMBDA\_FUNCTION\_NAME}}}. |
 
 The following example properties are for a Oracle MUX Lambda function that supports two database instances: `oracle1` (the default), and `oracle2`.
-
-****
 
 | Property | Value |
 | --- | --- |
@@ -215,8 +203,6 @@ The following example properties are for a Oracle MUX Lambda function that suppo
 <a name="connectors-oracle-data-type-support"></a>
 
 The following table shows the corresponding data types for JDBC, Oracle, and Arrow.
-
-****
 
 | JDBC | Oracle | Arrow |
 | --- | --- | --- |

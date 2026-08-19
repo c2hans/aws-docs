@@ -219,7 +219,7 @@ A service role Amazon Resource Name (ARN) that grants CodeDeploy permission to m
 
 `TerminationHookEnabled`  <a name="cfn-codedeploy-deploymentgroup-terminationhookenabled"></a>
 Indicates whether the deployment group was configured to have CodeDeploy install a termination hook into an Auto Scaling group.
-For more information about the termination hook, see [How Amazon EC2 Auto Scaling works with CodeDeploy](https://docs.aws.amazon.com//codedeploy/latest/userguide/integrations-aws-auto-scaling.html#integrations-aws-auto-scaling-behaviors) in the *AWS CodeDeploy User Guide*.
+For more information about the termination hook, see [How Amazon EC2 Auto Scaling works with CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/integrations-aws-auto-scaling.html#integrations-aws-auto-scaling-behaviors) in the *AWS CodeDeploy User Guide*.
 *Required*: No
 *Type*: Boolean
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

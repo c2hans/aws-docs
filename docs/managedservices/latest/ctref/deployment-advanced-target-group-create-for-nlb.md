@@ -14,8 +14,6 @@ Use to create a target group for a Network Load Balancer.
 ## Change Type Details
 <a name="ct-3t4lifos8tu58-DATc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-3t4lifos8tu58 |

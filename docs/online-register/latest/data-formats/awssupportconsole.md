@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awss
 
 AWS Support Console provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="support-console-CheckSubscription"></a>[CheckSubscription](${AuthZDocPage}) | Check whether the account has access to given product | Read |

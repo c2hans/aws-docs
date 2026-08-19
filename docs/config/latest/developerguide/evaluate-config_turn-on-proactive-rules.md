@@ -19,7 +19,7 @@ The **Rules** page shows your rules and their current compliance results in a ta
 When AWS Config finishes evaluations, you can see the rules and resource types that are compliant or noncompliant. For more information, see [Viewing Compliance Information and Evaluation Results for your AWS Resources with AWS Config](evaluate-config_view-compliance.md).
 
 **Note**
-AWS Config evaluates only the resource types that it is recording. For example, if you add the **cloudtrail-enabled** rule but don't record the CloudTrail trail resource type, AWS Config can't evaluate whether the trails in your account are compliant or noncompliant. For more information, see [Recording AWS Resources with AWS ConfigConsiderations](select-resources.md).
+AWS Config evaluates only the resource types that it is recording. For example, if you add the **cloudtrail-enabled** rule but don't record the CloudTrail trail resource type, AWS Config can't evaluate whether the trails in your account are compliant or noncompliant. For more information, see [Recording AWS Resources with AWS Config](select-resources.md).
 
 ### Turning on proactive evaluation
 <a name="turn-on-proactive-rules-console"></a>

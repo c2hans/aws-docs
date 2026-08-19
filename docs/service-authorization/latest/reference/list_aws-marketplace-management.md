@@ -29,8 +29,6 @@ AWS Marketplace Management Portal has no API operations that can be used in the 
 
 The following actions are defined by AWS Marketplace Management Portal but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 | Actions | Description | Resource types (\*required) | Condition keys | Access level |
 | --- | --- | --- | --- | --- |
 |   [GetAdditionalSellerNotificationRecipients](https://docs.aws.amazon.com/marketplace/latest/userguide/detailed-management-portal-permissions.html#seller-ammp-permissions)  | Grants permission to view additional seller notification recipients |  |   | Read |

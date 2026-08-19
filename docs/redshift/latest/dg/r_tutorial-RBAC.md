@@ -56,7 +56,7 @@ Run all queries in the Amazon Redshift [query editor v2](https://docs.aws.amazon
    CREATE USER dbadmin PASSWORD 'Test12345';
    ```
 
-1. To grant the system defined role named sys:dba to the db\_admin role, use the following example. When granted the sys:dba role, the dbadmin user can create schemas and tables. For more information, see [Amazon Redshift system-defined rolesSystem-defined roles and users for data sharing](r_roles-default.md).
+1. To grant the system defined role named sys:dba to the db\_admin role, use the following example. When granted the sys:dba role, the dbadmin user can create schemas and tables. For more information, see [Amazon Redshift system-defined roles](r_roles-default.md).
 
 ## Step 2: Set up schemas
 <a name="tutorial-rbac-step2"></a>

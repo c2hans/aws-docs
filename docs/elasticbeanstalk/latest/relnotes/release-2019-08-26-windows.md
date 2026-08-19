@@ -25,8 +25,6 @@ This release applies Windows August 2019 security updates to the Windows Server 
 #### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2016 with IIS 10.0 version 2.2.1**  |  * 64bit Windows Server 2016 v2.2.1 running IIS 10.0 *  | .NET Core 2.2.6, supports 2.2.6, 2.1.12<br />.NET Framework 4.8, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -44,8 +42,6 @@ This release applies Windows August 2019 security updates to the Windows Server 
 
 #### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Config  |  SSM Agent  |  Web Deploy  |  AWS X‑Ray  |
 | --- | --- | --- | --- | --- | --- | --- |

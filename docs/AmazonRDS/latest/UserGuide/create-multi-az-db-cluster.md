@@ -65,8 +65,6 @@ To connect an EC2 instance to the DB cluster, choose **Connect to an EC2 compute
 
 When you choose **Connect to an EC2 compute resource**, RDS sets the following options automatically. You can't change these settings unless you choose not to set up connectivity with an EC2 instance by choosing **Don't connect to an EC2 compute resource**.
 
-****
-
 | Console option | Automatic setting |
 | --- | --- |
 | **Virtual Private Cloud (VPC)** | RDS sets the VPC to the one associated with the EC2 instance. |

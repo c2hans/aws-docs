@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon FSx provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="fsx-DescribeAssociatedFileGateways"></a>[DescribeAssociatedFileGateways](https://docs.aws.amazon.com/filegateway/latest/filefsxw/what-is-file-fsxw.html) | Describe the File Gateway instances associated with an Amazon FSx for Windows File Server file system | Read |

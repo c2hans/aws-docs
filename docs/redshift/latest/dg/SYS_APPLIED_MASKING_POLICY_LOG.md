@@ -36,6 +36,7 @@ For more information on dynamic data masking, go to [Dynamic data masking](t_ddm
 | schema\_name | text | The name of the schema that the table is in. |
 | attachment\_id | long | The attached masking policy's ID. |
 | relation\_kind | text | The type of the relation that the masking policy is applied to. Possible values are TABLE, VIEW, LATE BINDING VIEW, and MATERIALIZED VIEW. |
+| query\_uuid | character(36) | A globally unique identifier (UUID) of the query. |
 
 ## Sample queries
 <a name="SYS_APPLIED_MASKING_POLICY_LOG-sample-queries"></a>

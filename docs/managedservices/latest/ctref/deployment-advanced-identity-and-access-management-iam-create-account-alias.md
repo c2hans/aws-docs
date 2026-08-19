@@ -14,8 +14,6 @@ Create an AWS account alias. Note that an AWS account can have only one alias. T
 ## Change Type Details
 <a name="ct-36x3u7v2oklwd-DAIc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-36x3u7v2oklwd |

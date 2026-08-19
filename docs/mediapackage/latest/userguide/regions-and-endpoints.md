@@ -18,7 +18,7 @@ The term *opt-in* has a historical basis. Any AWS Regions introduced after March
 
 You can activate opt-in Regions automatically during channel setup, by selecting them. Your channel becomes active in all selected Regions.
 
-If you choose to select an opt-in Region as for your MediaPackage resources, enable it first by following the steps in [Enabling a Region](https://docs.aws.amazon.com//general/latest/gr/rande-manage.html#rande-manage-enable), when signed in to the AWS Management Console.
+If you choose to select an opt-in Region as for your MediaPackage resources, enable it first by following the steps in [Enabling a Region](https://docs.aws.amazon.com/general/latest/gr/rande-manage.html#rande-manage-enable), when signed in to the AWS Management Console.
 
 MediaPackage is available in the following AWS opt-in Regions:
 + Middle East (UAE) Region, me-central-1

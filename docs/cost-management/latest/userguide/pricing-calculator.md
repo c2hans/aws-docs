@@ -8,9 +8,9 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/pricing
  The in-console AWS Pricing Calculator is an AWS Billing and Cost Management feature that enables you to estimate your planned cloud costs using your discounts and purchase commitments. You can use Pricing Calculator to assess the cost impact and understand the return on investment for migrating workloads, planning new or growth of existing workloads, and plan for commitment purchases.
 
 ## In-console AWS Pricing Calculator and the public Pricing Calculator
-<a name="w2aac30b5"></a>
+<a name="w2aab5c45b5"></a>
 
- AWS provides two separate Pricing Calculator experiences: the in-console AWS Pricing Calculator and the public Pricing Calculator website. One of the main differences between the in-console version and the public version is that the public version doesn't require you to create an AWS account. The in-console Pricing Calculator is a feature of the AWS Billing and Cost Management service in the AWS console and has its own [set of APIs](https://docs.aws.amazon.com//aws-cost-management/latest/APIReference/Welcome.html), so it requires you to create an AWS account. For more information on how to create an AWS account, see [ Getting started with AWS Cost Management](https://docs.aws.amazon.com/cost-management/latest/userguide/billing-getting-started.html).
+ AWS provides two separate Pricing Calculator experiences: the in-console AWS Pricing Calculator and the public Pricing Calculator website. One of the main differences between the in-console version and the public version is that the public version doesn't require you to create an AWS account. The in-console Pricing Calculator is a feature of the AWS Billing and Cost Management service in the AWS console and has its own [set of APIs](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/Welcome.html), so it requires you to create an AWS account. For more information on how to create an AWS account, see [ Getting started with AWS Cost Management](https://docs.aws.amazon.com/cost-management/latest/userguide/billing-getting-started.html).
 
  Both pricing calculators allow you to generate estimates for your specific workloads or applications. However, the in-console AWS Pricing Calculator has more advanced features that allow you to do the following:
 + Model your future usage changes by importing your existing usage. This eliminates the need to manually input historical usage data.
@@ -21,12 +21,12 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/pricing
  For more information about the public Pricing Calculator, see [What is AWS Pricing Calculator?](https://docs.aws.amazon.com/pricing-calculator/latest/userguide/what-is-pricing-calculator.html)
 
 ## Features of the in-console AWS Pricing Calculator
-<a name="w2aac30b7"></a>
+<a name="w2aab5c45b7"></a>
 
  The in-console Pricing Calculator consists of two main estimate types:
 
 ### Workload estimate
-<a name="w2aac30b7b5"></a>
+<a name="w2aab5c45b7b5"></a>
 + Allows you to estimate the cost of specific workloads, applications, resources, and architectural changes.
 + This type of estimate is available to all account types (standalone, management, and member accounts).
 + Management accounts can configure the effective rate type that is available for use by their member accounts. The rate types available are Before discounts, After discounts, and After discounts and purchase commitments.
@@ -35,7 +35,7 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/pricing
 For more information, see [Workload estimates](https://docs.aws.amazon.com/cost-management/latest/userguide/pc-workload-estimate.html).
 
 ### Bill estimate
-<a name="w2aac30b7b7"></a>
+<a name="w2aab5c45b7b7"></a>
 + Allows you to estimate the cost of applying any modeled usage and commitment changes to your entire consolidated bill across your AWS organization.
 + This type of estimate is only available to management or standalone account users.
 + The bill estimate automatically includes your last month's consolidated billing usage. It also includes your existing commitments like Savings Plans and Reserved Instances.
@@ -44,7 +44,7 @@ For more information, see [Workload estimates](https://docs.aws.amazon.com/cost-
 For more information, see [Bill estimates](https://docs.aws.amazon.com/cost-management/latest/userguide/pc-bill-estimate.html).
 
 ## Pricing for AWS Pricing Calculator
-<a name="w2aac30b9"></a>
+<a name="w2aab5c45b9"></a>
 
  AWS Pricing Calculator is available to all AWS customers. Workload estimates are provided free of charge. For bill estimates, you receive five free estimates per month. After your fifth estimate in a calendar month, the estimates cost $2 each.
 

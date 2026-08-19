@@ -17,8 +17,8 @@ The following are the service endpoints and service quotas for this service.
 The following sections describe the service endpoints for AWS IoT Core.
 
 **Note**
-You can use these endpoints to perform the operations in the [AWS IoT API Reference](https://docs.aws.amazon.com/iot/latest/apireference/). The endpoints in the following sections are different from the device endpoints, which provide devices an MQTT publish/subscribe interface and a subset of the API operations. For more information about the data, credential access, and job management endpoints used by devices, see [AWS IoT device endpoints](https://docs.aws.amazon.com//iot/latest/developerguide/connect-to-iot.html#iot-device-endpoint-intro).
-For information about connecting to and using the AWS IoT endpoints, see [Connecting devices to AWS IoT](https://docs.aws.amazon.com//iot/latest/developerguide/connect-to-iot.html) in the *AWS IoT Developer Guide*.
+You can use these endpoints to perform the operations in the [AWS IoT API Reference](https://docs.aws.amazon.com/iot/latest/apireference/). The endpoints in the following sections are different from the device endpoints, which provide devices an MQTT publish/subscribe interface and a subset of the API operations. For more information about the data, credential access, and job management endpoints used by devices, see [AWS IoT device endpoints](https://docs.aws.amazon.com/iot/latest/developerguide/connect-to-iot.html#iot-device-endpoint-intro).
+For information about connecting to and using the AWS IoT endpoints, see [Connecting devices to AWS IoT](https://docs.aws.amazon.com/iot/latest/developerguide/connect-to-iot.html) in the *AWS IoT Developer Guide*.
 
 **Topics**
 + [AWS IoT Core - control plane endpoints](#iot-core-control-plane-endpoints)
@@ -62,7 +62,7 @@ The following table contains AWS Region-specific endpoints for AWS IoT Core - 
 ### AWS IoT Core - data plane endpoints
 <a name="iot-core-data-plane-endpoints"></a>
 
-The AWS IoT Core - data plane endpoints are specific to each AWS account and AWS Region. To find the AWS IoT Core - data plane endpoint for your AWS account and AWS Region, use the [**describe-endpoint**](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/describe-endpoint.html) CLI command shown here, or the [`DescribeEndpoint`](https://docs.aws.amazon.com//iot/latest/apireference/API_DescribeEndpoint.html) REST API.
+The AWS IoT Core - data plane endpoints are specific to each AWS account and AWS Region. To find the AWS IoT Core - data plane endpoint for your AWS account and AWS Region, use the [**describe-endpoint**](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/describe-endpoint.html) CLI command shown here, or the [`DescribeEndpoint`](https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeEndpoint.html) REST API.
 
 ```
 aws iot describe-endpoint --endpoint-type iot:Data-ATS
@@ -110,14 +110,14 @@ The following table contains generic representations of the AWS account-specific
 <a name="iot-core-credential-provider-endpoints"></a>
 
 **Note**
-If you are an existing user of AWS IoT Core credential provider and your endpoint was previously created, the endpoint likely only supports IPv4 address by default. For dual-stack support (to support both IPv4 and IPv6 connectivity) for your credential provider endpoint, contact [AWS Support](https://docs.aws.amazon.com//awssupport/latest/user/getting-started.html).
+If you are an existing user of AWS IoT Core credential provider and your endpoint was previously created, the endpoint likely only supports IPv4 address by default. For dual-stack support (to support both IPv4 and IPv6 connectivity) for your credential provider endpoint, contact [AWS Support](https://docs.aws.amazon.com/awssupport/latest/user/getting-started.html).
 New credential provider endpoints support both IPv4 and IPv6 (dual-stack) by default.
 To find out whether your endpoint currently supports IPv6, you can run the following command:
 **For Linux** – `dig +short AAAA {{account-specific-prefix}}.credentials.iot.{{aws-region}}.amazonaws.com`
 **For Windows** – `nslookup -type=AAAA {{account-specific-prefix}}.credentials.iot.{{aws-region}}.amazonaws.com`
 If this command returns no results, your endpoint does not currently support IPv6.
 
-The AWS IoT Core credential provider endpoints are specific to each AWS account and AWS Region. To find the credential provider endpoint for your AWS account and AWS Region, use the [**describe-endpoint**](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/describe-endpoint.html) CLI command shown here, or the [`DescribeEndpoint`](https://docs.aws.amazon.com//iot/latest/apireference/API_DescribeEndpoint.html) REST API.
+The AWS IoT Core credential provider endpoints are specific to each AWS account and AWS Region. To find the credential provider endpoint for your AWS account and AWS Region, use the [**describe-endpoint**](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/describe-endpoint.html) CLI command shown here, or the [`DescribeEndpoint`](https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeEndpoint.html) REST API.
 
 ```
 aws iot describe-endpoint --endpoint-type iot:CredentialProvider
@@ -160,7 +160,7 @@ The following table contains generic representations of the AWS account-specific
 ### AWS IoT FIPS endpoints
 <a name="iot-core-fips-endpoints"></a>
 
-AWS IoT provides endpoints that support the [Federal Information Processing Standard (FIPS) 140-2](https://aws.amazon.com//compliance/fips/). Choose the appropriate FIPS compliant endpoint to access AWS IoT features in your AWS Region from [FIPS Endpoints by Service](https://aws.amazon.com//compliance/fips/#FIPS_Endpoints_by_Service). For more information about the FIPS endpoints provided by AWS IoT, see [Connecting to AWS IoT FIPS endpoints](https://docs.aws.amazon.com//iot/latest/developerguide/iot-connect-fips.html).
+AWS IoT provides endpoints that support the [Federal Information Processing Standard (FIPS) 140-2](https://aws.amazon.com/compliance/fips/). Choose the appropriate FIPS compliant endpoint to access AWS IoT features in your AWS Region from [FIPS Endpoints by Service](https://aws.amazon.com/compliance/fips/#FIPS_Endpoints_by_Service). For more information about the FIPS endpoints provided by AWS IoT, see [Connecting to AWS IoT FIPS endpoints](https://docs.aws.amazon.com/iot/latest/developerguide/iot-connect-fips.html).
 
 ## Service quotas
 <a name="limits_iot"></a>

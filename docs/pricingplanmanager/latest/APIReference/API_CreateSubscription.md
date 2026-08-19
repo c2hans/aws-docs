@@ -56,7 +56,7 @@ Array Members: Minimum number of 1 item. Maximum number of 10 items.
 Required: Yes
 
  ** [approvalMode](#API_CreateSubscription_RequestSyntax) **   <a name="pricingplanmanager-CreateSubscription-request-approvalMode"></a>
-Determines whether the subscription requires explicit approval before billing starts. Set to `MANUAL` to require a separate `ApprovePaidSubscription` call, or `IMMEDIATE` to activate the subscription right away. Defaults to `IMMEDIATE` if not specified.
+Determines whether the subscription requires explicit approval before billing starts. Set to `MANUAL` to require a separate `ApprovePaidSubscription` call, or `IMMEDIATE` to activate the subscription right away. For paid tier plans, this defaults to `MANUAL` if not specified. For the `FREE` plan tier, only `IMMEDIATE` is supported, and it is the default.
 Type: String
 Valid Values: `MANUAL | IMMEDIATE`
 Required: No

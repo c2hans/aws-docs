@@ -21,8 +21,6 @@ When you use the `CopyPackageVersions` API to copy an npm package version, all t
 
 For example, say both repository S and repository D contain a single version of the `web-helper` package with the latest tag set as shown in this table.
 
-****
-
 | Repository | Package name | Package tags |
 | --- | --- | --- |
 | S | `web-helper` |  *latest* (alias for version 1.0.1) |
@@ -37,8 +35,6 @@ If you need to change tags after copying, use the `npm dist-tag` command to modi
 
 When npm requests the tags for a package and versions of that package are also present in an upstream repository, CodeArtifact merges the tags before returning them to the client. For example, a repository named R has an upstream repository named U. The following table shows the tags for a package named `web-helper` that's present in both repositories.
 
-****
-
 | Repository | Package name | Package tags |
 | --- | --- | --- |
 | R | `web-helper` |  *latest* (alias for version 1.0.0) |
@@ -47,8 +43,6 @@ When npm requests the tags for a package and versions of that package are also p
 In this case, when the npm client fetches the tags for the `web-helper` package from repository R, it receives both the *latest* and *alpha* tags. The versions the tags point to won't change.
 
 When the same tag is present on the same package in both the upstream and downstream repository, CodeArtifact uses the tag that is present in the *upstream* repository. For example, suppose that the tags on *webhelper* have been modified to look like the following.
-
-****
 
 | Repository | Package name | Package tags |
 | --- | --- | --- |
@@ -59,16 +53,12 @@ In this case, when the npm client fetches the tags for package *web-helper* from
 
 Using the tag in the upstream repository can be problematic when publishing new versions of a package in a downstream repository. For example, say that the latest tag on the package *web-helper* is the same in both R and U.
 
-****
-
 | Repository | Package name | Package tags |
 | --- | --- | --- |
 | R | `web-helper` |  *latest* (alias for version 1.0.1) |
 | U | `web-helper` |  *latest* (alias for version 1.0.1) |
 
 When version 1.0.2 is published to R, npm updates the *latest* tag to 1.0.2.
-
-****
 
 | Repository | Package name | Package tags |
 | --- | --- | --- |

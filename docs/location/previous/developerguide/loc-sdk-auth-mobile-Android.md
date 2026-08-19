@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/loc-sdk
 # Android Mobile Authentication SDK
 <a name="loc-sdk-auth-mobile-Android"></a>
 
-These utilities help you authenticate when making Amazon Location Service API calls from your Android applications. This specifically helps when using [Amazon Cognito](https://docs.aws.amazon.com//location/previous/developerguide/authenticating-using-cognito.html) or [API keys](https://docs.aws.amazon.com/location/previous/developerguide/using-apikeys.html) as the authentication method.
+These utilities help you authenticate when making Amazon Location Service API calls from your Android applications. This specifically helps when using [Amazon Cognito](https://docs.aws.amazon.com/location/previous/developerguide/authenticating-using-cognito.html) or [API keys](https://docs.aws.amazon.com/location/previous/developerguide/using-apikeys.html) as the authentication method.
 
 The Android mobile authentication SDK is available on github: [Amazon Location Service Mobile Authentication SDK for Android](https://github.com/aws-geospatial/amazon-location-mobile-auth-sdk-android/tree/main). Additionally, both the mobile authentication SDK and the AWS SDK are available on the [AWS Maven repository](https://central.sonatype.com/artifact/software.amazon.location/tracking).
 
@@ -37,7 +37,7 @@ import software.amazon.location.auth.AuthHelper
 import software.amazon.location.auth.LocationCredentialsProvider
 ```
 
-You have two options when creating the authentication helper and location client provider instances. You can create an instance using [Amazon Location API keys](https://docs.aws.amazon.com//location/previous/developerguide/using-apikeys.html) or [Amazon Cognito](https://docs.aws.amazon.com//location/previous/developerguide/using-apikeys.html).
+You have two options when creating the authentication helper and location client provider instances. You can create an instance using [Amazon Location API keys](https://docs.aws.amazon.com/location/previous/developerguide/using-apikeys.html) or [Amazon Cognito](https://docs.aws.amazon.com/location/previous/developerguide/using-apikeys.html).
 + To create an authentication helper instance using an Amazon Location API Key, declare the helper class as follows:
 
   ```

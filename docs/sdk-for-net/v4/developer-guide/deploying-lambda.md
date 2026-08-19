@@ -25,7 +25,7 @@ You can deploy Lambda functions by using the .NET command line interface (CLI).
 
 Before you start using the .NET CLI to deploy Lambda functions, you must meet the following prerequisites:
 + Confirm that you have the .NET CLI installed. For example: `dotnet --version`. If needed, go to [https://dotnet.microsoft.com/download](https://dotnet.microsoft.com/download) to install it.
-+ Set up the .NET CLI to work with Lambda. For a description of how to do so, see [.NET Core CLI](https://docs.aws.amazon.com//lambda/latest/dg/csharp-package-cli.html) in the *AWS Lambda Developer Guide*. In that procedure, the following is the deployment command:
++ Set up the .NET CLI to work with Lambda. For a description of how to do so, see [.NET Core CLI](https://docs.aws.amazon.com/lambda/latest/dg/csharp-package-cli.html) in the *AWS Lambda Developer Guide*. In that procedure, the following is the deployment command:
 
   ```
   dotnet lambda deploy-function MyFunction {{--function-role role}}

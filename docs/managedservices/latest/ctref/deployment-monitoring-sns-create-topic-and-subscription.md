@@ -14,8 +14,6 @@ Create an SNS topic and up to five subscriptions.
 ## Change Type Details
 <a name="ct-3dfnglm4ombbs-DMSc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-3dfnglm4ombbs |

@@ -29,13 +29,13 @@ Use the following naming conventions for the dual-stack virtual hosted-style and
 
   s3.dualstack.{{aws-region}}.amazonaws.com/{{bucketname}}
 
-For more information, about endpoint name style, see [Accessing and listing an Amazon S3 bucket ](https://docs.aws.amazon.com//AmazonS3/latest/userguide/access-bucket-intro.html). For a list of Amazon S3 endpoints, see [Regions and Endpoints](https://docs.aws.amazon.com/general/latest/gr/s3.html) in the *AWS General Reference*.
+For more information, about endpoint name style, see [Accessing and listing an Amazon S3 bucket ](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-bucket-intro.html). For a list of Amazon S3 endpoints, see [Regions and Endpoints](https://docs.aws.amazon.com/general/latest/gr/s3.html) in the *AWS General Reference*.
 
 **Important**
-You can use transfer acceleration with dual-stack endpoints. For more information, see [Getting started with Amazon S3 Transfer Acceleration ](https://docs.aws.amazon.com//AmazonS3/latest/userguide/transfer-acceleration-getting-started.html).
+You can use transfer acceleration with dual-stack endpoints. For more information, see [Getting started with Amazon S3 Transfer Acceleration ](https://docs.aws.amazon.com/AmazonS3/latest/userguide/transfer-acceleration-getting-started.html).
 
 **Note**
-The two types of Virtual Private Cloud (VPC) endpoints that access Amazon S3 (*Interface VPC endpoints* and *Gateway VPC endpoints*) now have dual-stack support. For more information about VPC endpoints for Amazon S3, see [AWS PrivateLink for Amazon S3](https://docs.aws.amazon.com//AmazonS3/latest/userguide/privatelink-interface-endpoints.html).
+The two types of Virtual Private Cloud (VPC) endpoints that access Amazon S3 (*Interface VPC endpoints* and *Gateway VPC endpoints*) now have dual-stack support. For more information about VPC endpoints for Amazon S3, see [AWS PrivateLink for Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/privatelink-interface-endpoints.html).
 
 When using the AWS Command Line Interface (AWS CLI) and AWS SDKs, you can use a parameter or flag to change to a dual-stack endpoint. You can also specify the dual-stack endpoint directly as an override of the Amazon S3 endpoint in the config file. The following sections describe how to use dual-stack endpoints from the AWS CLI and the AWS SDKs.
 
@@ -64,7 +64,7 @@ If you want to use a dual-stack endpoint for specified AWS CLI commands only (no
 + You can set up separate profiles in your AWS Config file. For example, create one profile that sets `use_dualstack_endpoint` to `true` and a profile that does not set `use_dualstack_endpoint`. When you run a command, specify which profile you want to use, depending upon whether or not you want to use the dual-stack endpoint.
 
 **Note**
-When using the AWS CLI you currently cannot use transfer acceleration with dual-stack endpoints. However, support for the AWS CLI is coming soon. For more information, see [ Enabling and using S3 Transfer Acceleration](https://docs.aws.amazon.com//AmazonS3/latest/userguide/transfer-acceleration.html#transfer-acceleration-requirements).
+When using the AWS CLI you currently cannot use transfer acceleration with dual-stack endpoints. However, support for the AWS CLI is coming soon. For more information, see [ Enabling and using S3 Transfer Acceleration](https://docs.aws.amazon.com/AmazonS3/latest/userguide/transfer-acceleration.html#transfer-acceleration-requirements).
 
 ## Using dual-stack endpoints from the AWS SDKs
 <a name="dual-stack-endpoints-sdks"></a>

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 # `AWSSupport-InstallEC2Rescue`
 <a name="automation-awssupport-installec2rescue"></a>
 
-The `AWSSupport-InstallEC2Rescue` runbook installs and runs the [Amazon EC2 Rescue for Linux](https://docs.aws.amazon.com//AWSEC2/latest/UserGuide/Linux-Server-EC2Rescue.html) or [Amazon EC2 Rescue for Windows Server](https://docs.aws.amazon.com//AWSEC2/latest/WindowsGuide/Windows-Server-EC2Rescue.html) tool on the target Amazon Elastic Compute Cloud (Amazon EC2) instance.
+The `AWSSupport-InstallEC2Rescue` runbook installs and runs the [Amazon EC2 Rescue for Linux](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Linux-Server-EC2Rescue.html) or [Amazon EC2 Rescue for Windows Server](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/Windows-Server-EC2Rescue.html) tool on the target Amazon Elastic Compute Cloud (Amazon EC2) instance.
 
 **Prerequisites**
 For Linux instances, Amazon EC2 Rescue for Linux requires Python 2.7.9, 3.2, or a later version installed on the target instance.
@@ -114,6 +114,6 @@ Follow these steps to configure the automation:
 
 Systems Manager Automation
 +  [Run this Automation (console)](https://console.aws.amazon.com/systems-manager/documents/AWSSupport-InstallEC2Rescue/description)
-+  [Run an automation](https://docs.aws.amazon.com//systems-manager/latest/userguide/automation-working-executing.html)
-+  [Setting up an Automation](https://docs.aws.amazon.com//systems-manager/latest/userguide/automation-setup.html)
++  [Run an automation](https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-working-executing.html)
++  [Setting up an Automation](https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-setup.html)
 +  [Support Automation Workflows](https://aws.amazon.com/premiumsupport/technology/saw/)

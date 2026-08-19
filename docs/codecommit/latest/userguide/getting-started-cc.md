@@ -46,7 +46,7 @@ Depending on your usage, you might be charged for creating or accessing a reposi
 
 1. Open the CodeCommit console at [https://console.aws.amazon.com/codesuite/codecommit/home](https://console.aws.amazon.com/codesuite/codecommit/home).
 
-1. Use the region selector to choose the AWS Region where you want to create the repository. For more information, see [Regions and Git connection endpoints](regions.md).
+1. Use the Region selector to choose the AWS Region where you want to create the repository. For more information, see [Regions and Git connection endpoints](regions.md).
 
 1. On the **Repositories** page, choose **Create repository**.
 

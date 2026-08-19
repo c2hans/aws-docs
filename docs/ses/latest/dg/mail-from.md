@@ -76,7 +76,6 @@ These procedures show you how to configure a custom MAIL FROM domain for an enti
 1. Publish the MX and SPF (type TXT) records to the DNS server of the custom MAIL FROM domain:
 
    In the **Custom MAIL FROM domain** pane, the **Publish DNS records** table now displays the MX and SPF (type TXT) records in that you have to publish (add) to your domain's DNS configuration. These records use the formats shown in the following table.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/ses/latest/dg/mail-from.html)
 
    In the preceding records,
@@ -134,7 +133,6 @@ You can't set up a custom MAIL FROM domain for addresses on a domain that you do
 1. Publish the MX and SPF (type TXT) records to the DNS server of the custom MAIL FROM domain:
 
    In the **Custom MAIL FROM domain** pane, the **Publish DNS records** table now displays the MX and SPF (type TXT) records in that you have to publish (add) to your domain's DNS configuration. These records use the formats shown in the following table.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/ses/latest/dg/mail-from.html)
 
    In the preceding records,
@@ -160,8 +158,6 @@ To successfully set up a custom MAIL FROM domain with Amazon SES, you must publi
 <a name="mail-from-states"></a>
 
 After you configure an identity to use a custom MAIL FROM domain, the state of the setup is "pending" while Amazon SES attempts to detect the required MX record in your DNS settings. The state then changes depending on whether Amazon SES detects the MX record. The following table describes the email-sending behavior, and the Amazon SES actions associated with each state. Each time the state changes, Amazon SES sends a notification to the email address associated with your AWS account.
-
-****
 
 | State | Email sending behavior | Amazon SES actions |
 | --- | --- | --- |

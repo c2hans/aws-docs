@@ -77,7 +77,7 @@ You can annotate and run your local ML code from SageMaker Studio Classic by cre
 
    1. From the SageMaker Studio Classic Launcher main working area, in **Utilities and files**, choose **Text file**. This opens a new tab with a text file called `untitled.txt.`
 
-      For more information about the SageMaker Studio Classic user interface (UI), see [Amazon SageMaker Studio Classic UI Overview](https://docs.aws.amazon.com//sagemaker/latest/dg/studio-ui.html).
+      For more information about the SageMaker Studio Classic user interface (UI), see [Amazon SageMaker Studio Classic UI Overview](https://docs.aws.amazon.com/sagemaker/latest/dg/studio-ui.html).
 
    1. Rename `untitled.txt `to `requirements.txt`.
 

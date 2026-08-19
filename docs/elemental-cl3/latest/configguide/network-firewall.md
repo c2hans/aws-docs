@@ -9,8 +9,6 @@ You can enable the firewall on each node on the cluster. You can customize which
 
 **Where to perform the configuration**
 
-****
-
 | Node | Work on this node? |
 | --- | --- |
 | Primary Conductor Live node | Yes |

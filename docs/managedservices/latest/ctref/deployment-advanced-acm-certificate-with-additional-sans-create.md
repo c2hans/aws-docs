@@ -14,8 +14,6 @@ ACM Certificate with additional SANs
 ## Change Type Details
 <a name="ct-3l14e139i5p50-DAAc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-3l14e139i5p50 |

@@ -7,7 +7,7 @@ Amazon CodeCatalyst is no longer open to new customers. Existing customers can c
 # Troubleshooting problems with extensions
 <a name="troubleshooting-extensions"></a>
 
-Consult the following sections to troubleshoot problems related to extensions in CodeCatalyst. For more information about extensions, see [Add functionality to projects with extensions in CodeCatalystAdd functionality to projects with extensions](extensions.md).
+Consult the following sections to troubleshoot problems related to extensions in CodeCatalyst. For more information about extensions, see [Add functionality to projects with extensions in CodeCatalyst](extensions.md).
 
 **Topics**
 + [I can't see the changes to a linked third-party repositories or search for results of those changes](#troubleshooting-detect-3p-changes)

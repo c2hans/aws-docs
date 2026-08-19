@@ -51,7 +51,7 @@ For information about using Signature Version 4 with the Amazon S3 REST API, see
 Requests signed with Signature Version 2 that are made after that will fail to authenticate with Amazon S3. Requesters will see errors stating that the request must be signed with Signature Version 4.
 
 **Should I Make Changes Even if I’m Using a Presigned URL That Requires Me to Sign for More than 7 Days?**
-If you are using a presigned URL that requires you to sign for more than 7 days, no action is currently needed. You can continue to use AWS Signature Version 2 to sign and authenticate the presigned URL. We will follow up and provide more details on how to migrate to Signature Version 4 for a presigned URL scenario.
+If you are using a presigned URL that requires you to sign for more than 7 days, no action is currently needed. You can continue to use AWS Signature Version 2 to sign and authenticate the presigned URL. For more details on how to migrate to Signature Version 4 for a presigned URL scenario, see the Amazon S3 documentation.
 
 ### More Info
 <a name="UsingAWSSDK-sev2-deprecation-more-info"></a>

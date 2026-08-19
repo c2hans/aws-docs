@@ -9,8 +9,6 @@ Following, you can find a description of options, or additional features, that a
 
 Amazon RDS supports the following options for MySQL:
 
-****
-
 | Option | Option ID | Engine versions |
 | --- | --- | --- |
 | [MariaDB Audit Plugin support for MySQL](Appendix.MySQL.Options.AuditPlugin.md) | `MARIADB_AUDIT_PLUGIN` | All MySQL 8.4 versionsMySQL 8.0.28 and higher 8.0 versions<br />All MySQL 5.7 versions |

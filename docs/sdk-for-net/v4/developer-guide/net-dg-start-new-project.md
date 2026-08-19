@@ -29,7 +29,7 @@ There are several techniques you can use to start a new project to access AWS se
 
   To see an example, open Visual Studio and choose **File**, **New**, **Project**. Search for ".net core" and choose the C\# version of the **Console App (.NET Core)** or **WPF App (.NET Core)** template. An empty project is created to which you can add code and NuGet packages.
 
-You can find some examples of how to work with AWS services in [Guided code examplesHigh-level libraries and frameworks](tutorials-examples.md).
+You can find some examples of how to work with AWS services in [Guided code examples](tutorials-examples.md).
 
 **Important**
 If you're using AWS IAM Identity Center for authentication, your application must reference the following NuGet packages so that SSO resolution can work:

@@ -14,8 +14,6 @@ Quick Setup simplifies setup and configuration tasks for Systems Manager tools. 
 
 When you configure OpsCenter to manage OpsItems across accounts by using Quick Setup, Quick Setup creates the following resources in the specified accounts. These resources give the specified accounts permission to work with OpsItems and use Automation runbooks to fix issues with AWS resources generating OpsItems.
 
-****
-
 | Resources | Accounts |
 | --- | --- |
 | `AWSServiceRoleForAmazonSSM_AccountDiscovery` AWS Identity and Access Management (IAM) service-linked role<br />For more information about this role, see [Using roles to collect AWS account information for OpsCenter and Explorer](using-service-linked-roles-service-action-2.md). | AWS Organizations management account and delegated administrator account |

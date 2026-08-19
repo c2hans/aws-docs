@@ -20,7 +20,7 @@ The `AWSSupport-ConfigureS3ReplicationSameAndCrossAccount` automation runbook co
 **This automation creates a new IAM role** with appropriate permissions for replication if S3ReplicationRole input is not provided.
 **This automation does not replicate existing objects.** Amazon S3 replication only applies to objects uploaded/created after the replication configuration is enabled.
 For cross-account replication, you must provide an IAM role in the destination account with appropriate permissions for Amazon S3 operations and AWS KMS operations (if bucket uses AWS KMS encryption).
-This automation uses the `aws:approve` action, which temporarily pauses execution until the designated principals approve the configuration changes. See [Running an automation with approvers](https://docs.aws.amazon.com//systems-manager/latest/userguide/running-automations-require-approvals.html) for more information.
+This automation uses the `aws:approve` action, which temporarily pauses execution until the designated principals approve the configuration changes. See [Running an automation with approvers](https://docs.aws.amazon.com/systems-manager/latest/userguide/running-automations-require-approvals.html) for more information.
 
  **How does it work?**
 
@@ -618,6 +618,6 @@ Follow these steps to configure the automation:
 
 Systems Manager Automation
 + [Run this Automation (console)](https://console.aws.amazon.com/systems-manager/documents/AWSSupport-ConfigureS3ReplicationSameAndCrossAccount/description)
-+ [Run an automation](https://docs.aws.amazon.com//systems-manager/latest/userguide/automation-working-executing.html)
-+ [Setting up an Automation](https://docs.aws.amazon.com//systems-manager/latest/userguide/automation-setup.html)
++ [Run an automation](https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-working-executing.html)
++ [Setting up an Automation](https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-setup.html)
 + [Support Automation Workflows](https://aws.amazon.com/premiumsupport/technology/saw/)

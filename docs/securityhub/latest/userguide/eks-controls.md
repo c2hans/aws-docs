@@ -49,7 +49,7 @@ To modify endpoint access for an existing EKS cluster, see [Modifying cluster en
 **Schedule type:** Change triggered
 
 **Parameters:**
-+ `oldestVersionSupported`: `1.33` (not customizable)
++ `oldestVersionSupported`: `1.34` (not customizable)
 
 This control checks whether an Amazon Elastic Kubernetes Service (Amazon EKS) cluster is running on a standard support Kubernetes version. The control fails if the Amazon EKS cluster is running on an unsupported or extended support version.
 
@@ -195,7 +195,7 @@ To enable audit logs for your EKS cluster, see [Enabling and disabling control p
 **Schedule type:** Change triggered
 
 **Parameters:**
-+ `oldestVersionSupported`: `1.33` (not customizable)
++ `oldestVersionSupported`: `1.34` (not customizable)
 
 This control checks whether an Amazon EKS node group runs on a standard support Kubernetes version. The control fails if the Amazon EKS node group runs on an unsupported or extended support version.
 

@@ -179,4 +179,4 @@ To run the `PutMedia` API example, do the following:
    java -classpath target/kinesisvideo-java-demo-1.0-SNAPSHOT.jar:$classpath_values -Daws.accessKeyId=${ACCESS_KEY} -Daws.secretKey=${SECRET_KEY} -Djava.library.path=/opt/amazon-kinesis-video-streams-producer-sdk-cpp/kinesis-video-native-build com.amazonaws.kinesisvideo.demoapp.DemoAppMain
    ```
 
-1. Open the [Kinesis Video Streams console](https://console.aws.amazon.com//kinesisvideo/home/), and choose your stream on the **Manage Streams** page. The video plays in the **Video Preview** pane.
+1. Open the [Kinesis Video Streams console](https://console.aws.amazon.com/kinesisvideo/home/), and choose your stream on the **Manage Streams** page. The video plays in the **Video Preview** pane.

@@ -89,8 +89,6 @@ Required: Yes
 The load job mode.
  *Allowed values*: `RESUME`, `NEW`, `AUTO`.
  *Default value*: `AUTO`.
-
-****
 +  `RESUME`   –   In RESUME mode, the loader looks for a previous load from this source, and if it finds one, resumes that load job. If no previous load job is found, the loader stops.
 
   The loader avoids reloading files that were successfully loaded in a previous job. It only tries to process failed files. If you dropped previously loaded data from your Neptune cluster, that data is not reloaded in this mode. If a previous load job loaded all files from the same source successfully, nothing is reloaded, and the loader returns success.
@@ -119,8 +117,6 @@ Required: No
 
  ** [parserConfiguration](#API_StartLoaderJob_RequestSyntax) **   <a name="neptunedata-StartLoaderJob-request-parserConfiguration"></a>
  ** `parserConfiguration` **   –   An optional object with additional parser configuration values. Each of the child parameters is also optional:
-
-****
 +  ** `namedGraphUri` **   –   The default graph for all RDF formats when no graph is specified (for non-quads formats and NQUAD entries with no graph).
 
   The default is `https://aws.amazon.com/neptune/vocab/v01/DefaultNamedGraph`.

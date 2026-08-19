@@ -25,8 +25,6 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_redshift-actions-as-permissions).
 
-****
-
 - **   AcceptReservedNodeExchange  **
   - **IAM action:**  [redshift:AcceptReservedNodeExchange](#list_redshift-action-AcceptReservedNodeExchange)
   - **Condition key:**
@@ -867,8 +865,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
 <a name="list_redshift-actions-as-permissions"></a>
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
-
-****
 
 - **   [AcceptReservedNodeExchange](https://docs.aws.amazon.com/redshift/latest/APIReference/API_AcceptReservedNodeExchange.html)  **
   - **Description:** Grants permission to exchange a DC1 reserved node for a DC2 reserved node with no changes to the configuration
@@ -1763,8 +1759,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 The following actions are defined by Amazon Redshift but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 - **   [AuthorizeInboundIntegration](https://docs.aws.amazon.com/redshift/latest/mgmt/zero-etl-using.setting-up.html)  **
   - **Description:** Grants permission to Amazon Redshift to continuously validate that the target namespace can receive data replicated from the source ARN
   - **Resource types (\*required):** [namespace\*](#list_redshift-resource-namespace)
@@ -1914,8 +1908,6 @@ The following actions are defined by Amazon Redshift but are not directly invoca
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
 
-****
-
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
 |  [cluster](https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-clusters.html)  | arn:${Partition}:redshift:${Region}:${Account}:cluster:${ClusterName} | [aws:ResourceTag/${TagKey}](#list_redshift-aws_ResourceTag___TagKey_) |
@@ -1944,8 +1936,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_redshift-policy-keys"></a>
 
 Amazon Redshift defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

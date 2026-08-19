@@ -10,7 +10,7 @@ Follow these procedures to create a stream that the media will be ingested to. I
 **Important**
 WebRTC Ingestion requires a Kinesis video stream with data retention greater than 0. The minimum is 1 hour.
 
-To create a stream, call the [CreateStream](https://docs.aws.amazon.com//kinesisvideostreams/latest/dg/API_CreateStream.html) API using the AWS Management Console, AWS CLI, or one of the AWS SDK’s.
+To create a stream, call the [CreateStream](https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/API_CreateStream.html) API using the AWS Management Console, AWS CLI, or one of the AWS SDK’s.
 
 **Important**
 Make note of the stream ARN, you'll need it later.
@@ -20,7 +20,7 @@ Make note of the stream ARN, you'll need it later.
 
 Do the following:
 
-1. Open the **Kinesis Video Streams** console at [https://console.aws.amazon.com/kinesisvideo/home/](https://console.aws.amazon.com//kinesisvideo/home/).
+1. Open the **Kinesis Video Streams** console at [https://console.aws.amazon.com/kinesisvideo/home/](https://console.aws.amazon.com/kinesisvideo/home/).
 
 1. On the **Video streams** page, choose **Create video stream**.
 
@@ -35,11 +35,11 @@ Do the following:
 ------
 #### [ AWS CLI ]
 
-Verify that you have the AWS CLI installed and configured. For more information, see the [AWS Command Line Interface User Guide](https://docs.aws.amazon.com//cli/latest/userguide/).
+Verify that you have the AWS CLI installed and configured. For more information, see the [AWS Command Line Interface User Guide](https://docs.aws.amazon.com/cli/latest/userguide/).
 
-For installation instructions, see the [AWS Command Line Interface User Guide](https://docs.aws.amazon.com//cli/latest/userguide/getting-started-install.html#getting-started-install-instructions). After installation, [configure the AWS CLI](https://docs.aws.amazon.com//cli/latest/userguide/getting-started-quickstart.html#getting-started-quickstart-new) with credentials and region.
+For installation instructions, see the [AWS Command Line Interface User Guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html#getting-started-install-instructions). After installation, [configure the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-quickstart.html#getting-started-quickstart-new) with credentials and region.
 
-Alternatively, open the AWS CloudShell terminal, which has the AWS CLI installed and configured. See the [AWS CloudShell User Guide](https://docs.aws.amazon.com//cloudshell/latest/userguide/welcome.html#how-to-get-started) for more information.
+Alternatively, open the AWS CloudShell terminal, which has the AWS CLI installed and configured. See the [AWS CloudShell User Guide](https://docs.aws.amazon.com/cloudshell/latest/userguide/welcome.html#how-to-get-started) for more information.
 
 Run the following `Create-Stream` command using the AWS CLI:
 
@@ -63,7 +63,7 @@ The response will look like the following:
 
 This code snippet shows you how to create a Kinesis video stream using the AWS SDK for JavaScript v2. The syntax will differ from other AWS SDKs, but the general flow will be the same. View a complete code example on [GitHub](https://github.com/awslabs/amazon-kinesis-video-streams-webrtc-sdk-js/blob/master/examples/createStream.js).
 
-Create the Kinesis Video Streams client. This is the client used to call the [CreateStream](https://docs.aws.amazon.com//kinesisvideostreams/latest/dg/API_CreateStream.html) API.
+Create the Kinesis Video Streams client. This is the client used to call the [CreateStream](https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/API_CreateStream.html) API.
 
 ```
 const clientConfig = {

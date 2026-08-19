@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsd
 
 AWS Diagnostic tools provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="ts-GetExecution"></a>[GetExecution](https://docs.aws.amazon.com/diagnostic-tools/latest/APIReference/API_GetExecution.html) | Get details about specific execution within AWS Diagnostic tools | Read |

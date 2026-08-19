@@ -41,8 +41,6 @@ Look up the default and applied values of a *quota*, also referred to as a *limi
 
 You might want to check if you have requested service quota limit increases for the following quotas to create a new HyperPod cluster along with pre-requisites in the SageMaker AI console. Navigate to the **Service Quota** console and search for the following terms.
 
-****
-
 | No | Quota Name | Search Term | Description |
 | --- | --- | --- | --- |
 | 1 | Maximum number instances allowed per SageMaker HyperPod cluster | Under SageMaker AI search for “Maximum number instances allowed per SageMaker HyperPod cluster” | Your account-level quota value must be more than the number of instance you wish to add to your cluster |
@@ -93,13 +91,13 @@ VPC configuration is mandatory for Amazon EKS orchestration. For Slurm orchestra
   If your current ENI limit is insufficient for your SageMaker HyperPod cluster needs, request a quota increase. Ensuring adequate ENI capacity beforehand helps prevent cluster deployment failures.
 + When using a custom VPC to connect a SageMaker HyperPod cluster with AWS resources, provide the VPC name, ID, AWS Region, subnet IDs, and security group IDs during cluster creation.
 **Note**
-When your Amazon VPC and subnets support IPv6 in the [`VPCConfig`](https://docs.aws.amazon.com//sagemaker/latest/APIReference/API_CreateCluster.html#sagemaker-CreateCluster-request-VpcConfig) of the cluster or at the Instance group level using the `OverrideVPCConfig` attribute of [`ClusterInstanceGroupSpecification`](https://docs.aws.amazon.com//sagemaker/latest/APIReference/API_ClusterInstanceGroupSpecification.html), network communications differ based on the cluster orchestration platform:
+When your Amazon VPC and subnets support IPv6 in the [`VPCConfig`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateCluster.html#sagemaker-CreateCluster-request-VpcConfig) of the cluster or at the Instance group level using the `OverrideVPCConfig` attribute of [`ClusterInstanceGroupSpecification`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ClusterInstanceGroupSpecification.html), network communications differ based on the cluster orchestration platform:
 Slurm-orchestrated clusters automatically configure nodes with dual IPv6 and IPv4 addresses, allowing immediate IPv6 network communications. No additional configuration is required beyond the `VPCConfig` IPv6 settings.
 In EKS-orchestrated clusters, nodes receive dual-stack addressing, but pods can only use IPv6 when the Amazon EKS cluster is explicitly IPv6-enabled. You must create a new IPv6 Amazon EKS cluster - existing IPv4 Amazon EKS clusters cannot be converted to IPv6. For information about deploying an IPv6 Amazon EKS cluster, see [Amazon EKS IPv6 Cluster Deployment](https://docs.aws.amazon.com/eks/latest/userguide/deploy-ipv6-cluster.html#_deploy_an_ipv6_cluster_with_eksctl).
 Additional resources for IPv6 configuration:
-For information about adding IPv6 support to your VPC, see to [IPv6 Support for VPC](https://docs.aws.amazon.com//vpc/latest/userguide/vpc-migrate-ipv6.html).
-For information about creating a new IPv6-compatible VPC, see [Amazon VPC Creation Guide](https://docs.aws.amazon.com//vpc/latest/userguide/create-vpc.html).
-To configure SageMaker HyperPod with a custom Amazon VPC, see [Custom Amazon VPC setup for SageMaker HyperPod](https://docs.aws.amazon.com//sagemaker/latest/dg/sagemaker-hyperpod-prerequisites.html#sagemaker-hyperpod-prerequisites-optional-vpc).
+For information about adding IPv6 support to your VPC, see to [IPv6 Support for VPC](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-migrate-ipv6.html).
+For information about creating a new IPv6-compatible VPC, see [Amazon VPC Creation Guide](https://docs.aws.amazon.com/vpc/latest/userguide/create-vpc.html).
+To configure SageMaker HyperPod with a custom Amazon VPC, see [Custom Amazon VPC setup for SageMaker HyperPod](https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-prerequisites.html#sagemaker-hyperpod-prerequisites-optional-vpc).
 + Make sure that all resources are deployed in the same AWS Region as the SageMaker HyperPod cluster. Configure security group rules to allow inter-resource communication within the VPC. For example, when creating a VPC in `us-west-2`, provision subnets across one or more Availability Zones (such as `us-west-2a` or `us-west-2b`), and create a security group allowing intra-group traffic.
 **Note**
 SageMaker HyperPod supports multi-Availability Zone deployment. For more information, see [Setting up SageMaker HyperPod clusters across multiple AZs](#sagemaker-hyperpod-prerequisites-multiple-availability-zones).

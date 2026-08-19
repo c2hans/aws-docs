@@ -27,20 +27,14 @@ The following is an example of this object type.
 ## Syntax
 <a name="redshiftdatanode-syntax"></a>
 
-****
-
 | Required Fields | Description | Slot Type |
 | --- | --- | --- |
 | database | The database on which the table resides. | Reference Object, e.g. "database":{"ref":"myRedshiftDatabaseId"} |
 | tableName | The name of the Amazon Redshift table. The table is created if it doesn't already exist and you've provided createTableSql. | String |
 
-****
-
 | Object Invocation Fields | Description | Slot Type |
 | --- | --- | --- |
 | schedule | This object is invoked within the execution of a schedule interval. Users must specify a schedule reference to another object to set the dependency execution order for this object. Users can satisfy this requirement by explicitly setting a schedule on the object, for example, by specifying "schedule": {"ref": "DefaultSchedule"}. In most cases, it is better to put the schedule reference on the default pipeline object so that all objects inherit that schedule. Or, if the pipeline has a tree of schedules (schedules within the master schedule), users can create a parent object that has a schedule reference. For more information about example optional schedule configurations, see [https://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/dp-object-schedule.html](https://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/dp-object-schedule.html) | Reference Object, e.g. "schedule":{"ref":"myScheduleId"} |
-
-****
 
 | Optional Fields | Description | Slot Type |
 | --- | --- | --- |
@@ -65,8 +59,6 @@ The following is an example of this object type.
 | scheduleType | Schedule type allows you to specify whether the objects in your pipeline definition should be scheduled at the beginning of interval or end of the interval. Time Series Style Scheduling means instances are scheduled at the end of each interval and Cron Style Scheduling means instances are scheduled at the beginning of each interval. An on-demand schedule allows you to run a pipeline one time per activation. This means you do not have to clone or re-create the pipeline to run it again. If you use an on-demand schedule it must be specified in the default object and must be the only scheduleType specified for objects in the pipeline. To use on-demand pipelines, you simply call the ActivatePipeline operation for each subsequent run. Values are: cron, ondemand, and timeseries. | Enumeration |
 | schemaName | This optional field specifies the name of the schema for the Amazon Redshift table. If not specified, the schema name is PUBLIC, which is the default schema in Amazon Redshift. For more information, see the Amazon Redshift Database Developer Guide.  | String |
 | workerGroup | The worker group. This is used for routing tasks. If you provide a runsOn value and workerGroup exists, workerGroup is ignored. | String |
-
-****
 
 | Runtime Fields | Description | Slot Type |
 | --- | --- | --- |
@@ -95,8 +87,6 @@ The following is an example of this object type.
 | @status | The status of this object. | String |
 | @version | Pipeline version the object was created with. | String |
 | @waitingOn | Description of list of dependencies this object is waiting on. | Reference Object, e.g. "waitingOn":{"ref":"myRunnableObjectId"} |
-
-****
 
 | System Fields | Description | Slot Type |
 | --- | --- | --- |

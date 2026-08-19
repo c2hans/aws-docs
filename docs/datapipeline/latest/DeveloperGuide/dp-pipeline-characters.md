@@ -9,8 +9,6 @@ AWS Data Pipeline is no longer available to new customers. Existing customers of
 
 AWS Data Pipeline uses certain characters that have a special meaning in pipeline definitions, as shown in the following table.
 
-****
-
 | Special Character | Description | Examples |
 | --- | --- | --- |
 | @ | Runtime field. This character is a field name prefix for a field that is only available when a pipeline runs. | @actualStartTime<br />@failureReason<br />@resourceStatus |

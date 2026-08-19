@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/in
 <a name="integration-testing-local"></a>
 
 **Note**
-This topic covers testing for games that are integrated with the server SDK for Amazon GameLift Servers version 3.x and 4.x only. Your server SDK package includes a compatible version of Amazon GameLift Servers Local. If you're using server SDK version 5.x, see [Local testing with GameLift Server SDK 5.x](https://docs.aws.amazon.com/gameliftservers/latest/developerguide/integration-testing-local.html) for local testing with an Amazon GameLift Servers Anywhere fleet. For guidance on migrating from SDK 4.x to 5.x, see [Migrate to GameLift Server SDK 5.x](https://docs.aws.amazon.com/gamelift/latest/developerguide/reference-serversdk5-migration.html).
+This topic covers testing for games that are integrated with the server SDK for Amazon GameLift Servers version 3.x and 4.x only. Your server SDK package includes a compatible version of Amazon GameLift Servers Local. If you're using server SDK version 5.x, see [Set up local testing with Amazon GameLift Servers Anywhere](integration-testing.md) for local testing with an Amazon GameLift Servers Anywhere fleet. For guidance on migrating from SDK 4.x to 5.x, see [Migrate to server SDK 5.x for Amazon GameLift Servers](reference-serversdk5-migration.md).
 
 Use Amazon GameLift Servers Local to run a limited version of the managed Amazon GameLift Servers service on a local device and test your game integration against it. This tool is useful when doing iterative development on your game integration. The alternative—uploading each new build to Amazon GameLift Servers and configuring a fleet to host your game—can take several or more each time.
 

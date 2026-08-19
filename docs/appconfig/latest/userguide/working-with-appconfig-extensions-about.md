@@ -23,8 +23,6 @@ For most use cases, to create a custom extension, you must create an AWS Lambda 
 
 The following AWS authored extensions can help you quickly integrate configuration deployments with other services. You can use these extensions in the AWS AppConfig console or by calling extension [API actions](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_Operations.html) directly from the AWS CLI, AWS Tools for PowerShell, or the SDK.
 
-****
-
 | Extension | Description |
 | --- | --- |
 | [AWS AppConfig deployment events to EventBridge](https://docs.aws.amazon.com/appconfig/latest/userguide/working-with-appconfig-extensions-about-predefined-notification-eventbridge.html) | This extension sends events to the EventBridge default event bus when a configuration is deployed.  |

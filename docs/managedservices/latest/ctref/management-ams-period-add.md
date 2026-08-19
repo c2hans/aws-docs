@@ -14,8 +14,6 @@ Add a new period to use with AMS Resource Scheduler. Periods are used in schedul
 ## Change Type Details
 <a name="ct-1976sir132k22-MAPa-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1976sir132k22 |

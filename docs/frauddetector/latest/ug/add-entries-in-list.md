@@ -33,7 +33,7 @@ You can add entries in the Amazon Fraud Detector console, using the API, using t
 ## Add entries in a list using the AWS SDK for Python (Boto3)
 <a name="add-entries-in-list-sdk"></a>
 
-The following example uses the [UpdateList](https://docs.aws.amazon.com//frauddetector/latest/api/API_UpdateList.html) API operation to add two new entries in the `allow_email_ids` list. Make sure that the entries you are adding are unique in the list.
+The following example uses the [UpdateList](https://docs.aws.amazon.com/frauddetector/latest/api/API_UpdateList.html) API operation to add two new entries in the `allow_email_ids` list. Make sure that the entries you are adding are unique in the list.
 
 ```
 import boto3

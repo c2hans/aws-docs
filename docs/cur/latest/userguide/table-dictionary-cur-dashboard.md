@@ -22,8 +22,6 @@ The cost and usage dashboard table is generated from CUR 2.0 data, which means t
 ## Cost and usage dashboard columns
 <a name="cur-dashboard-columns"></a>
 
-****
-
 | Column name | Description |
 | --- | --- |
 | amortized\_cost | The effective cost of the upfront and monthly reservation fees spread across the billing period. This is the sum of costs based on the type of line item. The cost is determined as follows:+  If the line item type is ‘SavingsPlanCoveredUsage’, the cost is the effective cost of the savings plan. <br />+  If the line item type is ‘SavingsPlanRecurringFee’, the cost is the total commitment to date of the savings plan minus the used commitment.. <br />+  If the line item type is ‘SavingsPlanNegation’ or ‘SavingsPlanUpfrontFee’, the cost is 0. <br />+  If the line item type is ‘DiscountedUsage’, the cost is the effective cost of the reservation. <br />+  If the line item type is ‘RIFee’, the cost is the sum of the unused amortized upfront fee for the billing period and the unused recurring fee of the reservation. <br />+  If the line item type is ‘Fee’ and there is a reservation ARN, the cost is 0. <br />+  For all other line item types, the cost is the unblended cost of the line item.  |

@@ -14,7 +14,7 @@ After careful consideration, we have decided to discontinue Amazon Kinesis Data 
 <a name="how-it-works"></a>
 
 **Note**
-After September 12, 2023, you will not able to create new applications using Kinesis Data Firehose as a source if you do not already use Kinesis Data Analytics for SQL. For more information, see [Limits](https://docs.aws.amazon.com//kinesisanalytics/latest/dev/limits.html).
+After September 12, 2023, you will not able to create new applications using Kinesis Data Firehose as a source if you do not already use Kinesis Data Analytics for SQL. For more information, see [Limits](https://docs.aws.amazon.com/kinesisanalytics/latest/dev/limits.html).
 
 An *application* is the primary resource in Amazon Kinesis Data Analytics that you can create in your account. You can create and manage applications using the AWS Management Console or the Kinesis Data Analytics API. Kinesis Data Analytics provides API operations to manage applications. For a list of API operations, see [Actions](API_Operations.md).
 

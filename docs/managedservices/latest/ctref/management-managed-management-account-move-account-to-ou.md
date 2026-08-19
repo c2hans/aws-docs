@@ -14,8 +14,6 @@ Move an account under an AWS organizational unit (OU) to a different OU.
 ## Change Type Details
 <a name="ct-1vq0f289r36ay-MMMm-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1vq0f289r36ay |

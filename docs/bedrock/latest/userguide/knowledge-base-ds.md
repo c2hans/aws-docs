@@ -14,7 +14,6 @@ When you connect to a [supported data source](https://docs.aws.amazon.com/bedroc
 
 If you use Amazon S3 to store your files or your data source includes attached files, then you first must check that each source document file adheres to the following:
 + The source files are of the following supported formats:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-ds.html)
 + Each file size doesn't exceed the quota of 50 MB.
 

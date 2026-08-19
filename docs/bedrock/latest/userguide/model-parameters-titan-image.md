@@ -16,8 +16,6 @@ The Amazon Titan Image Generator G1 V1 and Titan Image Generator G1 V2 models su
 
 When you make an [InvokeModel](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_InvokeModel.html) call using the Amazon Titan Image Generator models, replace the `body` field of the request with the format that matches your use-case. All tasks share an `imageGenerationConfig` object, but each task has a parameters object specific to that task. The following use-cases are supported.
 
-****
-
 | taskType | Task parameters field | Type of task | Definition |
 | --- | --- | --- | --- |
 | TEXT\_IMAGE | textToImageParams | Generation | Generate an image using a text prompt. |
@@ -313,20 +311,16 @@ The response body is a streaming object that contains one of the following field
 The shared and optional `imageGenerationConfig` contains the following fields. If you don't include this object, the default configurations are used.
 + **quality** – The quality of the image. The default value is `standard`. For pricing details, see [Amazon Bedrock Pricing](https://aws.amazon.com/bedrock/pricing/).
 + **numberOfImages** (Optional) – The number of images to generate.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters-titan-image.html)
 + **cfgScale** (Optional) – Specifies how strongly the generated image should adhere to the prompt. Use a lower value to introduce more randomness in the generation.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters-titan-image.html)
 + The following parameters define the size that you want the output image to be. For more details about pricing by image size, see [Amazon Bedrock pricing](https://aws.amazon.com/bedrock/pricing/).
   + **height** (Optional) – The height of the image in pixels. The default value is 1408.
   + **width** (Optional) – The width of the image in pixels. The default value is 1408.
 
   The following sizes are permissible.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters-titan-image.html)
 + **seed** (Optional) – Use to control and reproduce results. Determines the initial noise setting. Use the same seed and the same settings as a previous run to allow inference to create a similar image.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters-titan-image.html)
 
 ## Examples

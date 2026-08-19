@@ -39,7 +39,7 @@ This is a preventive control with elective guidance based on service control pol
 + **Resource types: **`AWS::S3::Bucket`
 
 **Usage considerations**
-This control supports configuration. It contains elements that are included by AWS Control Tower conditionally, based on the configuration you select. This control supports the following configuration parameters: **ExemptedPrincipalArns**. For more information, see [Configure controls with parameters](https://docs.aws.amazon.com//controltower/latest/controlreference/control-parameter-concepts.html).
+This control supports configuration. It contains elements that are included by AWS Control Tower conditionally, based on the configuration you select. This control supports the following configuration parameters: **ExemptedPrincipalArns**. For more information, see [Configure controls with parameters](https://docs.aws.amazon.com/controltower/latest/controlreference/control-parameter-concepts.html).
 
  The artifact for this control is the following service control policy (SCP).
 
@@ -82,7 +82,7 @@ This is a preventive control with elective guidance based on service control pol
 + **Resource types: **`AWS::S3::Bucket`
 
 **Usage considerations**
-This control supports configuration. It contains elements that are included by AWS Control Tower conditionally, based on the configuration you select. This control supports the following configuration parameters: **ExemptedPrincipalArns**. For more information, see [Configure controls with parameters](https://docs.aws.amazon.com//controltower/latest/controlreference/control-parameter-concepts.html).
+This control supports configuration. It contains elements that are included by AWS Control Tower conditionally, based on the configuration you select. This control supports the following configuration parameters: **ExemptedPrincipalArns**. For more information, see [Configure controls with parameters](https://docs.aws.amazon.com/controltower/latest/controlreference/control-parameter-concepts.html).
 
  The artifact for this control is the following service control policy (SCP).
 
@@ -125,7 +125,7 @@ This is a preventive control with elective guidance based on service control pol
 + **Resource types: **`AWS::S3::Bucket`
 
 **Usage considerations**
-This control supports configuration. It contains elements that are included by AWS Control Tower conditionally, based on the configuration you select. This control supports the following configuration parameters: **ExemptedPrincipalArns**. For more information, see [Configure controls with parameters](https://docs.aws.amazon.com//controltower/latest/controlreference/control-parameter-concepts.html).
+This control supports configuration. It contains elements that are included by AWS Control Tower conditionally, based on the configuration you select. This control supports the following configuration parameters: **ExemptedPrincipalArns**. For more information, see [Configure controls with parameters](https://docs.aws.amazon.com/controltower/latest/controlreference/control-parameter-concepts.html).
 
  The artifact for this control is the following service control policy (SCP).
 
@@ -168,7 +168,7 @@ This is a preventive control with elective guidance based on service control pol
 + **Resource types: **`AWS::S3::Bucket`
 
 **Usage considerations**
-This control supports configuration. It contains elements that are included by AWS Control Tower conditionally, based on the configuration you select. This control supports the following configuration parameters: **ExemptedPrincipalArns**. For more information, see [Configure controls with parameters](https://docs.aws.amazon.com//controltower/latest/controlreference/control-parameter-concepts.html).
+This control supports configuration. It contains elements that are included by AWS Control Tower conditionally, based on the configuration you select. This control supports the following configuration parameters: **ExemptedPrincipalArns**. For more information, see [Configure controls with parameters](https://docs.aws.amazon.com/controltower/latest/controlreference/control-parameter-concepts.html).
 
  The artifact for this control is the following service control policy (SCP).
 
@@ -211,7 +211,7 @@ This is a preventive control with elective guidance based on service control pol
 + **Resource types: **`AWS::CloudFront::Distribution`, `AWS::EC2::VPCPeeringConnection`, `AWS::EC2::TransitGatewayPeeringAttachment`, `AWS::GlobalAccelerator::Accelerator`, `AWS::GlobalAccelerator::EndpointGroup`, `AWS::GlobalAccelerator::Listener`
 
 **Usage considerations**
-This control supports configuration. It contains elements that are included by AWS Control Tower conditionally, based on the configuration you select. This control supports the following configuration parameters: **ExemptedPrincipalArns**. For more information, see [Configure controls with parameters](https://docs.aws.amazon.com//controltower/latest/controlreference/control-parameter-concepts.html).
+This control supports configuration. It contains elements that are included by AWS Control Tower conditionally, based on the configuration you select. This control supports the following configuration parameters: **ExemptedPrincipalArns**. For more information, see [Configure controls with parameters](https://docs.aws.amazon.com/controltower/latest/controlreference/control-parameter-concepts.html).
 
  The artifact for this control is the following service control policy (SCP).
 
@@ -261,7 +261,7 @@ This is a preventive control with elective guidance based on service control pol
 + **Resource types: **`AWS::EC2::InternetGateway`, `AWS::EC2::EgressOnlyInternetGateway`, `AWS::EC2::VPC`, `AWS::EC2::Subnet`, `AWS::EC2::CarrierGateway`
 
 **Usage considerations**
-This control supports configuration. It contains elements that are included by AWS Control Tower conditionally, based on the configuration you select. This control supports the following configuration parameters: **ExemptedPrincipalArns**. For more information, see [Configure controls with parameters](https://docs.aws.amazon.com//controltower/latest/controlreference/control-parameter-concepts.html).
+This control supports configuration. It contains elements that are included by AWS Control Tower conditionally, based on the configuration you select. This control supports the following configuration parameters: **ExemptedPrincipalArns**. For more information, see [Configure controls with parameters](https://docs.aws.amazon.com/controltower/latest/controlreference/control-parameter-concepts.html).
 
  The artifact for this control is the following service control policy (SCP).
 
@@ -312,7 +312,7 @@ This is a preventive control with elective guidance based on service control pol
 + **Resource types: **`AWS::EC2::VPNGateway`, `AWS::EC2::CustomerGateway`, `AWS::EC2::VPNConnection`, `AWS::EC2::ClientVpnEndpoint`, `AWS::EC2::ClientVpnTargetNetworkAssociation`, `AWS::EC2::ClientVpnAuthorizationRule`
 
 **Usage considerations**
-This control supports configuration. It contains elements that are included by AWS Control Tower conditionally, based on the configuration you select. This control supports the following configuration parameters: **ExemptedPrincipalArns**. For more information, see [Configure controls with parameters](https://docs.aws.amazon.com//controltower/latest/controlreference/control-parameter-concepts.html).
+This control supports configuration. It contains elements that are included by AWS Control Tower conditionally, based on the configuration you select. This control supports the following configuration parameters: **ExemptedPrincipalArns**. For more information, see [Configure controls with parameters](https://docs.aws.amazon.com/controltower/latest/controlreference/control-parameter-concepts.html).
 
  The artifact for this control is the following service control policy (SCP).
 
@@ -362,7 +362,7 @@ This is a preventive control with elective guidance based on service control pol
 + **Resource types: **`AWS::S3::Bucket`
 
 **Usage considerations**
-This control supports configuration. It contains elements that are included by AWS Control Tower conditionally, based on the configuration you select. This control supports the following configuration parameters: **ExemptedPrincipalArns**. For more information, see [Configure controls with parameters](https://docs.aws.amazon.com//controltower/latest/controlreference/control-parameter-concepts.html).
+This control supports configuration. It contains elements that are included by AWS Control Tower conditionally, based on the configuration you select. This control supports the following configuration parameters: **ExemptedPrincipalArns**. For more information, see [Configure controls with parameters](https://docs.aws.amazon.com/controltower/latest/controlreference/control-parameter-concepts.html).
 
  The artifact for this control is the following service control policy (SCP).
 
@@ -402,7 +402,7 @@ This is a preventive control with elective guidance based on service control pol
 + **Resource types: **`AWS::S3::Bucket`
 
 **Usage considerations**
-This control supports configuration. It contains elements that are included by AWS Control Tower conditionally, based on the configuration you select. This control supports the following configuration parameters: **ExemptedPrincipalArns**. For more information, see [Configure controls with parameters](https://docs.aws.amazon.com//controltower/latest/controlreference/control-parameter-concepts.html).
+This control supports configuration. It contains elements that are included by AWS Control Tower conditionally, based on the configuration you select. This control supports the following configuration parameters: **ExemptedPrincipalArns**. For more information, see [Configure controls with parameters](https://docs.aws.amazon.com/controltower/latest/controlreference/control-parameter-concepts.html).
 
  The artifact for this control is the following service control policy (SCP).
 
@@ -436,7 +436,7 @@ This control supports configuration. It contains elements that are included by A
 ## [CT.CLOUDFORMATION.PR.1] Disallow management of resource types, modules, and hooks within the CloudFormation registry
 <a name="disallow-cfn-extensions"></a>
 
-This elective control disallows management of the following extension types in the CloudFormation registry: resource types, modules, and hooks. For more information about CloudFormation extensions, see [Using the CloudFormationregistry](https://docs.aws.amazon.com//AWSCloudFormation/latest/UserGuide/registry.html).
+This elective control disallows management of the following extension types in the CloudFormation registry: resource types, modules, and hooks. For more information about CloudFormation extensions, see [Using the CloudFormationregistry](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/registry.html).
 
 A typical use case for this control is a situation in which you do not wish to allow your organization to register CloudFormation types. It prevents registration of types, and it prevents disabling existing CloudFormation hooks.
 + **Control objective:** Protect configurations

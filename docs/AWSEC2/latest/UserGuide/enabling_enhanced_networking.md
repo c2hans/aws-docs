@@ -345,7 +345,7 @@ If you get an execution policy error, set the policy to `Unrestricted` (by defau
 
 1. On the instance, validate that the ENA driver is installed and enabled as follows:
 
-   1. Right-click the network icon and choose **Open Network and Sharing Center**.
+   1. Open the context (right-click) menu for the network icon and choose **Open Network and Sharing Center**.
 
    1. Choose the Ethernet adapter (for example, **Ethernet 2**).
 

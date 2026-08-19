@@ -293,7 +293,7 @@ This procedure creates a config file to test the AWS IoT Device Client.
 
 1. To prepare the **MQTT test client** to subscribe to all MQTT messages:
 
-   1. On your local host computer, in the [AWS IoT console](https://console.aws.amazon.com//iot/home#/test), choose **MQTT test client**.
+   1. On your local host computer, in the [AWS IoT console](https://console.aws.amazon.com/iot/home#/test), choose **MQTT test client**.
 
    1. In the **Subscribe to a topic** tab, in **Topic filter**, enter **\#** (a single pound sign), and choose **Subscribe**.
 

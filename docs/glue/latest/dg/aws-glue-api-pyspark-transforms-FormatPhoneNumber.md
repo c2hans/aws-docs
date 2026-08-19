@@ -62,13 +62,13 @@ except:
 ## Methods
 <a name="aws-glue-api-pyspark-transforms-FormatPhoneNumber-_methods"></a>
 + [\_\_call\_\_](#aws-glue-api-pyspark-transforms-FormatPhoneNumber-__call__)
-+ [applyapply](#aws-glue-api-crawler-pyspark-transforms-FormatPhoneNumber-apply)
-+ [namename](#aws-glue-api-crawler-pyspark-transforms-FormatPhoneNumber-name)
-+ [describeArgsdescribeArgs](#aws-glue-api-crawler-pyspark-transforms-FormatPhoneNumber-describeArgs)
-+ [describeReturndescribeReturn](#aws-glue-api-crawler-pyspark-transforms-FormatPhoneNumber-describeReturn)
-+ [describeTransformdescribeTransform](#aws-glue-api-crawler-pyspark-transforms-FormatPhoneNumber-describeTransform)
-+ [describeErrorsdescribeErrors](#aws-glue-api-crawler-pyspark-transforms-FormatPhoneNumber-describeErrors)
-+ [describedescribe](#aws-glue-api-crawler-pyspark-transforms-FormatPhoneNumber-describe)
++ [apply](#aws-glue-api-crawler-pyspark-transforms-FormatPhoneNumber-apply)
++ [name](#aws-glue-api-crawler-pyspark-transforms-FormatPhoneNumber-name)
++ [describeArgs](#aws-glue-api-crawler-pyspark-transforms-FormatPhoneNumber-describeArgs)
++ [describeReturn](#aws-glue-api-crawler-pyspark-transforms-FormatPhoneNumber-describeReturn)
++ [describeTransform](#aws-glue-api-crawler-pyspark-transforms-FormatPhoneNumber-describeTransform)
++ [describeErrors](#aws-glue-api-crawler-pyspark-transforms-FormatPhoneNumber-describeErrors)
++ [describe](#aws-glue-api-crawler-pyspark-transforms-FormatPhoneNumber-describe)
 
 ## \_\_call\_\_(spark\_context, data\_frame, source\_column, phone\_number\_format=None, default\_region=None, default\_region\_column=None)
 <a name="aws-glue-api-pyspark-transforms-FormatPhoneNumber-__call__"></a>

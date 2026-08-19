@@ -21,7 +21,7 @@ This is a preventive control with elective guidance based on service control pol
 
 **Usage considerations**
 Do not enable this control if you use EBS direct APIs, either directly or through an AWS Backup partner product.
-This control supports configuration. It contains elements that are included by AWS Control Tower conditionally, based on the configuration you select. This control supports the following configuration parameters: **ExemptedPrincipalArns**. For more information, see [Configure controls with parameters](https://docs.aws.amazon.com//controltower/latest/controlreference/control-parameter-concepts.html).
+This control supports configuration. It contains elements that are included by AWS Control Tower conditionally, based on the configuration you select. This control supports the following configuration parameters: **ExemptedPrincipalArns**. For more information, see [Configure controls with parameters](https://docs.aws.amazon.com/controltower/latest/controlreference/control-parameter-concepts.html).
 
  The artifact for this control is the following service control policy (SCP).
 

@@ -18,8 +18,6 @@ To view the complete list of AWS Regions where MediaConnect is available, see [A
 
 You can use core MediaConnect flow functionality in all AWS Regions where the service operates. However, some features have region-specific availability. The following table shows which MediaConnect features are available in each Region.
 
-****
-
 | Region Name | Region | [MediaConnect flows](using-mediaconnect-flows.md) | [MediaConnect router](using-mediaconnect-router.md) | [NDI®](flows-create-ndi.md) | [AWS CDI](flows-create-cdi.md) | [MediaConnect gateway](gateway.md) |
 | --- | --- | --- | --- | --- | --- | --- |
 | US East (Ohio) | us-east-2 | ✓ | ✓ | ✓ | ✓ | ✓ |

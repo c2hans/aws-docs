@@ -14,8 +14,6 @@ Create a security group, and optionally associate it with AWS resources.
 ## Change Type Details
 <a name="ct-1oxx2g2d7hc90-DASc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1oxx2g2d7hc90 |

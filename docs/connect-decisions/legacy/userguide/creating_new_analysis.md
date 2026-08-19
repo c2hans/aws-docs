@@ -24,7 +24,7 @@ Select the blue Quick logo to navigate to the Quick menu to view the datasets or
 1. Choose **Create dataset**.
 
 1. Under **Schema:contain set of tables** drop-down, select one of the following data source names:
-   + asc\_data\_<your instance id>: Contains datasets processed and transformed by AWS Supply Chain for use within the application. These can be used for creating dashboards and custom analyses. Examples include asc\_insights\_order\_insights and asc\_adp\_forecast. For more information on available datasets and their uses, see [Application datasets used in AWS Supply Chain Analytics](https://docs.aws.amazon.com//aws-supply-chain/latest/userguide/application_datasets.html).
+   + asc\_data\_<your instance id>: Contains datasets processed and transformed by AWS Supply Chain for use within the application. These can be used for creating dashboards and custom analyses. Examples include asc\_insights\_order\_insights and asc\_adp\_forecast. For more information on available datasets and their uses, see [Application datasets used in AWS Supply Chain Analytics](https://docs.aws.amazon.com/aws-supply-chain/latest/userguide/application_datasets.html).
    + asc\_custom\_data\_<your instance id>: Contains original, non-transformed data as provided. You can query these datasets to access and analyze your raw data directly and build dashboards out of them.
 
 1. Under **Tables: contain the data you can visualize**, choose the dataset from the list of AWS Supply Chain datasets.

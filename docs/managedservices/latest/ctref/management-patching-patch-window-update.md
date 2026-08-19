@@ -14,8 +14,6 @@ Modify patch maintenance window settings created using version 1 of change type 
 ## Change Type Details
 <a name="ct-2utx36abv83pv-MPPu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2utx36abv83pv |

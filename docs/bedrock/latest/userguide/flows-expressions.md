@@ -27,8 +27,6 @@ As an example to understand how to use expressions, let's say that the whole inp
 
 You can use the following expressions to extract a part of the input (the examples refer to what would be returned from the preceding JSON object):
 
-****
-
 | Expression | Meaning | Example | Example result |
 | --- | --- | --- | --- |
 | $.data | The entire input. | $.data | The entire object |

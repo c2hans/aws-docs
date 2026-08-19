@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/api-reference/broker-in
 # Broker Instance Options
 <a name="broker-instance-options"></a>
 
-You can retrieve information about broker instances. For more information about the different components of an Amazon MQ broker, see [How Amazon MQ works](https://docs.aws.amazon.com//amazon-mq/latest/developer-guide/amazon-mq-how-it-works.html) in the *Amazon MQ Developer Guide*.
+You can retrieve information about broker instances. For more information about the different components of an Amazon MQ broker, see [How Amazon MQ works](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-mq-how-it-works.html) in the *Amazon MQ Developer Guide*.
 
 ## URI
 <a name="broker-instance-options-url"></a>

@@ -107,8 +107,6 @@ For more information about the SDK for Java, see [Getting Started with the AWS S
 
 The following is a list of links for the push notification service response codes:
 
-****
-
 | Push notification service | Response codes |
 | --- | --- |
 | Amazon Device Messaging (ADM) | See [Response Format](https://developer.amazon.com/docs/adm/send-message.html#response-format) in the ADM documentation. |

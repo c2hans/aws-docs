@@ -168,8 +168,6 @@ aws dms create-endpoint \
 ```
 
 The JSON object passed to the AWS DMS `CreateEndpoint` API in its `NeptuneSettings` parameter has the following fields:
-
-****
 + **`ServiceAccessRoleArn`**   –   *(required)* The ARN of an IAM role that permits fine-grained access to the S3 bucket used to stage migration of the data into Neptune. This Role should also have permissions to access your Neptune DB cluster if IAM authorization is enabled on it.
 + **`S3BucketName`**   –   *(required)* For Full Load migration, the replication instance converts all RDS data into CSV, quad files and uploads them to this staging bucket in S3 and then bulk-loads them into Neptune.
 + **`S3BucketFolder`**   –   *(required)* The folder to use in the S3 staging bucket.

@@ -14,8 +14,6 @@ Start an AWS Backup service backup job to create a one-time snapshot of the spec
 ## Change Type Details
 <a name="ct-2hhud2lx01tq7-MABs-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2hhud2lx01tq7 |

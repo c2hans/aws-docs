@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/places-
 <a name="places-concepts"></a>
 
 **Note**
-We released a new version of the Places API, see the updated [Places Developer Guide](https://docs.aws.amazon.com//location/latest/developerguide/places.html) for revised information.
+We released a new version of the Places API, see the updated [Places Developer Guide](https://docs.aws.amazon.com/location/latest/developerguide/places.html) for revised information.
 
 A key function of Amazon Location Service is the ability to search the geolocation information. Amazon Location provides this functionality via the *Place index* resource.
 

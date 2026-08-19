@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/iot-connect-se
 # Connect to AWS IoT Core service endpoints
 <a name="iot-connect-service"></a>
 
-You can access the features of the **AWS IoT Core - control plane** by using the AWS CLI, the AWS SDK for your preferred language, or by calling the REST API directly. We recommend using the AWS CLI or an AWS SDK to interact with AWS IoT Core because they incorporate the best practices for calling AWS services. Calling the REST APIs directly is an option, but you must provide [the necessary security credentials](https://docs.aws.amazon.com//general/latest/gr/signing_aws_api_requests.html) that enable access to the API.
+You can access the features of the **AWS IoT Core - control plane** by using the AWS CLI, the AWS SDK for your preferred language, or by calling the REST API directly. We recommend using the AWS CLI or an AWS SDK to interact with AWS IoT Core because they incorporate the best practices for calling AWS services. Calling the REST APIs directly is an option, but you must provide [the necessary security credentials](https://docs.aws.amazon.com/general/latest/gr/signing_aws_api_requests.html) that enable access to the API.
 
 **Note**
 IoT devices should use [AWS IoT Device SDKs](iot-connect-devices.md#iot-connect-device-sdks). The Device SDKs are optimized for use on devices, support MQTT communication with AWS IoT, and support the AWS IoT APIs most used by devices. For more information about the Device SDKs and the features they provide, see [AWS IoT Device SDKs](iot-connect-devices.md#iot-connect-device-sdks).
@@ -22,7 +22,7 @@ The AWS CLI provides command-line access to AWS APIs.
 +
 
 **Installation**
-For information about how to install the AWS CLI, see [Installing the AWS CLI](https://docs.aws.amazon.com//cli/latest/userguide/cli-chap-install.html).
+For information about how to install the AWS CLI, see [Installing the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html).
 +
 
 **Authentication**
@@ -44,10 +44,10 @@ For tools to manage AWS services and resources in the PowerShell scripting envir
 With AWS SDKs, your apps and compatible devices can call AWS IoT APIs and the APIs of other AWS services. This section provides links to the AWS SDKs and to the API reference documentation for the APIs of the AWS IoT Core services.
 
 **The AWS SDKs support these AWS IoT Core APIs**
-+ [AWS IoT](https://docs.aws.amazon.com//iot/latest/apireference/welcome.html)
-+ [AWS IoT Data Plane](https://docs.aws.amazon.com//iot/latest/apireference/welcome.html)
-+ [AWS IoT Jobs Data Plane](https://docs.aws.amazon.com//iot/latest/apireference/welcome.html)
-+ [AWS IoT Secure Tunneling](https://docs.aws.amazon.com//iot/latest/apireference/welcome.html)
++ [AWS IoT](https://docs.aws.amazon.com/iot/latest/apireference/welcome.html)
++ [AWS IoT Data Plane](https://docs.aws.amazon.com/iot/latest/apireference/welcome.html)
++ [AWS IoT Jobs Data Plane](https://docs.aws.amazon.com/iot/latest/apireference/welcome.html)
++ [AWS IoT Secure Tunneling](https://docs.aws.amazon.com/iot/latest/apireference/welcome.html)
 + [AWS IoT Wireless](https://docs.aws.amazon.com/iot-wireless/latest/apireference/welcome.html)
 
 ------
@@ -273,16 +273,16 @@ The REST APIs of the AWS IoT Core services can be called directly by using HTTP 
 +
 
 **Endpoint URL**
-The service endpoints that expose the REST APIs of the AWS IoT Core services vary by Region and are listed in [AWS IoT Core Endpoints and Quotas](https://docs.aws.amazon.com//general/latest/gr/iot-core.html). You must use the endpoint for the Region that has the AWS IoT resources that you want to access, because AWS IoT resources are Region specific.
+The service endpoints that expose the REST APIs of the AWS IoT Core services vary by Region and are listed in [AWS IoT Core Endpoints and Quotas](https://docs.aws.amazon.com/general/latest/gr/iot-core.html). You must use the endpoint for the Region that has the AWS IoT resources that you want to access, because AWS IoT resources are Region specific.
 +
 
 **Authentication**
-The REST APIs of the AWS IoT Core services use AWS IAM credentials for authentication. For more information, see [Signing AWS API requests](https://docs.aws.amazon.com//general/latest/gr/signing_aws_api_requests.html) in the AWS General Reference.
+The REST APIs of the AWS IoT Core services use AWS IAM credentials for authentication. For more information, see [Signing AWS API requests](https://docs.aws.amazon.com/general/latest/gr/signing_aws_api_requests.html) in the AWS General Reference.
 +
 
 **API reference**
 For information about the specific functions provided by the REST APIs of the AWS IoT Core services, see:
-  + [API reference for IoT](https://docs.aws.amazon.com//iot/latest/apireference/API_Operations_AWS_IoT.html).
-  + [API reference for IoT data](https://docs.aws.amazon.com//iot/latest/apireference/API_Operations_AWS_IoT_Data_Plane.html).
-  + [API reference for IoT jobs data](https://docs.aws.amazon.com//iot/latest/apireference/API_Operations_AWS_IoT_Jobs_Data_Plane.html).
-  + [API reference for IoT secure tunneling](https://docs.aws.amazon.com//iot/latest/apireference/API_Operations_AWS_IoT_Secure_Tunneling.html).
+  + [API reference for IoT](https://docs.aws.amazon.com/iot/latest/apireference/API_Operations_AWS_IoT.html).
+  + [API reference for IoT data](https://docs.aws.amazon.com/iot/latest/apireference/API_Operations_AWS_IoT_Data_Plane.html).
+  + [API reference for IoT jobs data](https://docs.aws.amazon.com/iot/latest/apireference/API_Operations_AWS_IoT_Jobs_Data_Plane.html).
+  + [API reference for IoT secure tunneling](https://docs.aws.amazon.com/iot/latest/apireference/API_Operations_AWS_IoT_Secure_Tunneling.html).

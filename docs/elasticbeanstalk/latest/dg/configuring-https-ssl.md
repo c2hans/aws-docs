@@ -45,8 +45,6 @@ If you enter '.', the field will be left blank.
 
 Enter the information requested and press **Enter**. The following table describes and shows examples for each field.
 
-****
-
 | Name | Description | Example |
 | --- | --- | --- |
 | Country Name | The two-letter ISO abbreviation for your country. | US = United States |

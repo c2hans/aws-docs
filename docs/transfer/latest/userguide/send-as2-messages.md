@@ -316,8 +316,6 @@ You can also check the CloudWatch logs to view the details of your transfers, in
 
 The following table lists all of the status codes that can be logged to CloudWatch logs when you or your partner send an AS2 message. Different message processing steps apply to different message types and are intended for monitoring only. The COMPLETED and FAILED states represent the final step in processing, and are visible in JSON files.
 
-****
-
 | Code | Description | Processing completed? |
 | --- | --- | --- |
 | PROCESSING | The message is in the process of being converted to its final format. For example, decompression and decryption steps both have this status. | No |

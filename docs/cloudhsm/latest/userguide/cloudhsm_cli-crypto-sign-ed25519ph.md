@@ -121,6 +121,7 @@ Required: Yes
 
 **{{<APPROVAL>}}**
 Specifies the file path to a signed quorum token file to approve operation. Only required if the key usage service quorum value of the private key is greater than 1.
+Required: No
 
 **{{<DATA\_TYPE>}}**
  Specifies whether the value of the data parameter should be hashed as part of the signing algorithm. Use `raw` for unhashed data; use `digest` for digests, which are already hashed.

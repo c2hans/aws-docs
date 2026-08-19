@@ -15,8 +15,6 @@ Modifications result in an outage if Neptune must reboot your DB instance for th
 
 The following table contains details about which settings you can change, when the changes can be applied, and whether the changes cause downtime for the DB instance.
 
-****
-
 | DB instance setting | Downtime notes |
 | --- | --- |
 | **DB instance class**  | An outage occurs during this change, whether it is applied immediately or during the next maintenance window.  |

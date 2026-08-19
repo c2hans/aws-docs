@@ -83,5 +83,5 @@ For more information about AWS PrivateLink and VPC endpoints, see the following 
 + [AWS PrivateLink for DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/privatelink-interface-endpoints.html)
 + [AWS PrivateLink for DynamoDB Streams](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/privatelink-streams.html)
 + [Connect your VPC to services using AWS PrivateLink](https://docs.aws.amazon.com/vpc/latest/userguide/endpoint-services-overview.html)
-+ [Simplify private connectivity to DynamoDB with AWS PrivateLink](https://aws.amazon.com/blogs//database/simplify-private-connectivity-to-amazon-dynamodb-with-aws-privatelink)
++ [Simplify private connectivity to DynamoDB with AWS PrivateLink](https://aws.amazon.com/blogs/database/simplify-private-connectivity-to-amazon-dynamodb-with-aws-privatelink)
 + [AWS PrivateLink Whitepaper](https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/aws-privatelink.html)

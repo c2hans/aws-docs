@@ -21,8 +21,6 @@ This table lists the names of {{bucket-name }} replacements required for some pr
 **Note**
  To access the Amazon S3 bucket in the Asia Pacific (Hong Kong) Region, you must enable the region in your AWS account. For more information, see [Managing AWS Regions](https://docs.aws.amazon.com/general/latest/gr/rande-manage.html#rande-manage-enable).
 
-****
-
 | Region name | {{Bucket-name}} replacement | Region identifier |
 | --- | --- | --- |
 | US East (N. Virginia) | aws-codedeploy-us-east-1 | us-east-1 |

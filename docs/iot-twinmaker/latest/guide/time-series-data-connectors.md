@@ -23,10 +23,10 @@ This section explains how to develop a time-series data connector in a step-by-s
 
 Before developing your time-series data connector, we recommend that you complete the following tasks:
 + Create an [AWS IoT TwinMaker workspace](twinmaker-gs-workspace.md).
-+ Create [AWS IoT TwinMaker component types](https://docs.aws.amazon.com//iot-twinmaker/latest/guide/twinmaker-component-types.html).
-+ Create [AWS IoT TwinMaker entities](https://docs.aws.amazon.com//iot-twinmaker/latest/guide/twinmaker-gs-entity.html).
-+ (Optional) Read [ Using and creating component types](https://docs.aws.amazon.com//iot-twinmaker/latest/guide/twinmaker-component-types.htm).
-+ (Optional) Read [AWS IoT TwinMaker data connector interface](https://docs.aws.amazon.com//iot-twinmaker/latest/guide/data-connector-interface.html) to get a general understanding of AWS IoT TwinMaker data connectors.
++ Create [AWS IoT TwinMaker component types](https://docs.aws.amazon.com/iot-twinmaker/latest/guide/twinmaker-component-types.html).
++ Create [AWS IoT TwinMaker entities](https://docs.aws.amazon.com/iot-twinmaker/latest/guide/twinmaker-gs-entity.html).
++ (Optional) Read [ Using and creating component types](https://docs.aws.amazon.com/iot-twinmaker/latest/guide/twinmaker-component-types.htm).
++ (Optional) Read [AWS IoT TwinMaker data connector interface](https://docs.aws.amazon.com/iot-twinmaker/latest/guide/data-connector-interface.html) to get a general understanding of AWS IoT TwinMaker data connectors.
 
 **Note**
 For an example of a fully implemented connector, see our cookie factory example implementation.
@@ -62,7 +62,7 @@ The following procedure outlines a development model that incrementally builds u
 
 1. **Create a valid basic component type**
 
-   In a component type, you define common properties that are shared across your components. To learn more about defining component types, see [Using and creating component types](https://docs.aws.amazon.com//iot-twinmaker/latest/guide/twinmaker-component-types.html).
+   In a component type, you define common properties that are shared across your components. To learn more about defining component types, see [Using and creating component types](https://docs.aws.amazon.com/iot-twinmaker/latest/guide/twinmaker-component-types.html).
 
    AWS IoT TwinMaker uses an [entity-component modeling pattern](https://en.wikipedia.org/wiki/Entity_component_system) so each component is attached to an entity. We recommend that you model each physical item as an entity and model different data sources with their own component types.
 
@@ -448,12 +448,12 @@ Though you can still update the implementation after you link the connector to t
 
 There are multiple ways to test your Lambda connector: you can test the Lambda connector in the Lambda console or locally in the AWS CDK.
 
-For more information on testing your Lambda functions, see [Testing Lambda functions](https://docs.aws.amazon.com//lambda/latest/dg/testing-functions.html) and [Locally testing AWS CDK applications](https://docs.aws.amazon.com//serverless-application-model/latest/developerguide/serverless-cdk-testing.html).
+For more information on testing your Lambda functions, see [Testing Lambda functions](https://docs.aws.amazon.com/lambda/latest/dg/testing-functions.html) and [Locally testing AWS CDK applications](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-cdk-testing.html).
 
 ## Security
 <a name="time-series-data-connectors-security"></a>
 
-For documentation on security best practices with Timestream, see [Security in Timestream](https://docs.aws.amazon.com//timestream/latest/developerguide/security.html).
+For documentation on security best practices with Timestream, see [Security in Timestream](https://docs.aws.amazon.com/timestream/latest/developerguide/security.html).
 
 For an example of SQL injection prevention, see the following [Python script](https://github.com/aws-samples/aws-iot-twinmaker-samples/blob/main/src/libs/udq_helper_utils/udq_utils/sql_detector.py) in AWS IoT TwinMaker Samples GitHub Repository.
 
@@ -468,15 +468,15 @@ If you follow the setup instructions in the GitHub sample, all AWS IoT TwinMaker
 ### Integration testing
 <a name="time-series-data-connectors-resources-testing"></a>
 
-We recommend having an integrated test with AWS IoT TwinMaker to verify the data plane query works end-to-end. You can perform that through [GetPropertyValueHistory](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_GetPropertyValueHistory.html) API or easily in [AWS IoT TwinMaker console](https://console.aws.amazon.com/iottwinmaker/).
+We recommend having an integrated test with AWS IoT TwinMaker to verify the data plane query works end-to-end. You can perform that through [GetPropertyValueHistory](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_GetPropertyValueHistory.html) API or easily in [AWS IoT TwinMaker console](https://console.aws.amazon.com/iottwinmaker/).
 
 ![A TwinMaker Component information console page shows the component's name, type, status, and so on.](http://docs.aws.amazon.com/iot-twinmaker/latest/guide/images/image(3).png)
 
-In the AWS IoT TwinMaker console, go to **component details** and then under the **Test**, you’ll see all the properties in the component are listed there. The **Test** area of the console allows you to test time-series properties as well as non-time-series properties. For time-series properties you can also use the [ GetPropertyValueHistory](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_GetPropertyValueHistory.html) API and for non-time-series properties use [ GetPropertyValue](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_GetPropertyValue.html) API. If your Lambda connector supports multiple property query, you can choose more than one property.
+In the AWS IoT TwinMaker console, go to **component details** and then under the **Test**, you’ll see all the properties in the component are listed there. The **Test** area of the console allows you to test time-series properties as well as non-time-series properties. For time-series properties you can also use the [ GetPropertyValueHistory](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_GetPropertyValueHistory.html) API and for non-time-series properties use [ GetPropertyValue](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_GetPropertyValue.html) API. If your Lambda connector supports multiple property query, you can choose more than one property.
 
 ![A portion of a TwinMaker Component information console page showing a component's test.](http://docs.aws.amazon.com/iot-twinmaker/latest/guide/images/image(4).png)
 
 ## What's next
 <a name="time-series-data-connectors-wn"></a>
 
-You can now set up an [AWS IoT TwinMaker Grafana dashboard](https://docs.aws.amazon.com//iot-twinmaker/latest/guide/grafana-integration.html) to visualize metrics. You can also explore other data connector samples in the [AWS IoT TwinMaker samples GitHub repository ](https://github.com/aws-samples/aws-iot-twinmaker-samples/tree/main/src/modules/s3) to see if they fit your use case.
+You can now set up an [AWS IoT TwinMaker Grafana dashboard](https://docs.aws.amazon.com/iot-twinmaker/latest/guide/grafana-integration.html) to visualize metrics. You can also explore other data connector samples in the [AWS IoT TwinMaker samples GitHub repository ](https://github.com/aws-samples/aws-iot-twinmaker-samples/tree/main/src/modules/s3) to see if they fit your use case.

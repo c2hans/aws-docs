@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon Security Lake provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="securitylake-GetDataLakeExceptionSubscription"></a>[GetDataLakeExceptionSubscription](https://docs.aws.amazon.com/security-lake/latest/APIReference/API_GetDataLakeExceptionSubscription.html) | Query the protocol and endpoint that were provided when subscribing to SNS topics for exception notifications | Read |

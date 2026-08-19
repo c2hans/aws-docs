@@ -18,7 +18,7 @@ The following considerations might impact how you share portal resources:
 + If both accounts are in the same organization using AWS Organizations, the resource share is automatically accepted. You still need to create the resource share using AWS RAM.
 + If both accounts are in the same organization using AWS Organizations and resource sharing within your organization is enabled, any principals in the organization that you share with are automatically granted access to the resource shares. There is no need for an invitation and you can skip the resource share.
 + If the account you shared the product with doesn't accept the resource share within **12 hours**, you must share the resource again.
-+ After you create the resource share, AWS RAM updates the product sharing policy of your product to prevent access to principals without explicit `allow` access. For more information, see [Determining whether a request is allowed or denied within an account](https://docs.aws.amazon.com//IAM/latest/UserGuide/reference_policies_evaluation-logic.html#policy-eval-denyallow) in the IAM User Guide.
++ After you create the resource share, AWS RAM updates the product sharing policy of your product to prevent access to principals without explicit `allow` access. For more information, see [Determining whether a request is allowed or denied within an account](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic.html#policy-eval-denyallow) in the IAM User Guide.
 
   The updated resource policy will look like the following:
 

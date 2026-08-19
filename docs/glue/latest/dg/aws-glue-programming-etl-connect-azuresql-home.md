@@ -16,7 +16,7 @@ To connect to Azure SQL from AWS Glue, you will need to create and store your Az
 
 **To configure a connection to Azure SQL:**
 
-1. In AWS Secrets Manager, create a secret using your Azure SQL credentials. To create a secret in Secrets Manager, follow the tutorial available in [ Create an AWS Secrets Manager secret ](https://docs.aws.amazon.com//secretsmanager/latest/userguide/create_secret.html) in the AWS Secrets Manager documentation. After creating the secret, keep the Secret name, {{secretName}} for the next step.
+1. In AWS Secrets Manager, create a secret using your Azure SQL credentials. To create a secret in Secrets Manager, follow the tutorial available in [ Create an AWS Secrets Manager secret ](https://docs.aws.amazon.com/secretsmanager/latest/userguide/create_secret.html) in the AWS Secrets Manager documentation. After creating the secret, keep the Secret name, {{secretName}} for the next step.
    + When selecting **Key/value pairs**, create a pair for the key `user` with the value {{azuresqlUsername}}.
    + When selecting **Key/value pairs**, create a pair for the key `password` with the value {{azuresqlPassword}}.
 

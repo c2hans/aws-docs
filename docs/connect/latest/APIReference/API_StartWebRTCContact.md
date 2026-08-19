@@ -44,7 +44,20 @@ Content-type: application/json
          "Value": "{{string}}"
       }
    },
-   "RelatedContactId": "{{string}}"
+   "RelatedContactId": "{{string}}",
+   "SegmentAttributes": {
+      "{{string}}" : {
+         "ValueArn": "{{string}}",
+         "ValueInteger": {{number}},
+         "ValueList": [
+            "SegmentAttributeValue"
+         ],
+         "ValueMap": {
+            "{{string}}" : "SegmentAttributeValue"
+         },
+         "ValueString": "{{string}}"
+      }
+   }
 }
 ```
 
@@ -98,7 +111,7 @@ Length Constraints: Minimum length of 1. Maximum length of 100.
 Required: Yes
 
  ** [ParticipantDetails](#API_StartWebRTCContact_RequestSyntax) **   <a name="connect-StartWebRTCContact-request-ParticipantDetails"></a>
-The customer's details.
+The details of the participant, including their display name.
 Type: [ParticipantDetails](API_ParticipantDetails.md) object
 Required: Yes
 
@@ -112,6 +125,12 @@ Required: No
 The unique identifier for an Connect Customer contact. This identifier is related to the contact starting.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
+Required: No
+
+ ** [SegmentAttributes](#API_StartWebRTCContact_RequestSyntax) **   <a name="connect-StartWebRTCContact-request-SegmentAttributes"></a>
+A map of system-defined attributes for the WebRTC contact segment. Use the `connect:Subtype` attribute to specify the channel subtype, such as `connect:WebRTC`.
+Type: String to [SegmentAttributeValue](API_SegmentAttributeValue.md) object map
+Key Length Constraints: Minimum length of 1. Maximum length of 128.
 Required: No
 
 ## Response Syntax
@@ -180,6 +199,10 @@ Length Constraints: Minimum length of 1. Maximum length of 1000.
 <a name="API_StartWebRTCContact_Errors"></a>
 
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
+
+ ** AccessDeniedException **
+You do not have sufficient permissions to perform this action.
+HTTP Status Code: 403
 
  ** InternalServiceException **
 Request processing failed because of an error or failure with the service.

@@ -14,8 +14,6 @@ Associate a VPC with a Route 53 resolver rule, this causes the resolver to forwa
 ## Change Type Details
 <a name="ct-2pbqoffhclpek-MARa-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2pbqoffhclpek |

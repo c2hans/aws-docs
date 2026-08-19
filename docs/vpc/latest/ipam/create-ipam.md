@@ -35,7 +35,7 @@ You can only create one IPAM. For more information about increasing quotas relat
 
 1. Select **Allow Amazon VPC IP Address Manager to replicate data from source account(s) into the IPAM delegate account**. If you do not select this option, you cannot create an IPAM.
 
-1. Choose an **IPAM tier**. For more information about the features available in each tier and the costs associated with the tiers, see the IPAM tab on the [Amazon VPC pricing page](https://aws.amazon.com//vpc/pricing/).
+1. Choose an **IPAM tier**. For more information about the features available in each tier and the costs associated with the tiers, see the IPAM tab on the [Amazon VPC pricing page](https://aws.amazon.com/vpc/pricing/).
 
 1. Under **Operating regions**, select the AWS Regions in which this IPAM can manage and discover resources. The AWS Region in which you are creating your IPAM is selected as one of the operating Regions by default. For example, if you're creating this IPAM in AWS Region `us-east-1` but you want to create Regional IPAM pools later that provide CIDRs to VPCs in `us-west-2`, select `us-west-2` here. If you forget an operating Region, you can return at a later time and edit your IPAM settings.
 **Note**

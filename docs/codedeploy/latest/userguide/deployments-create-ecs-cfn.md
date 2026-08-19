@@ -24,8 +24,6 @@ Unlike standard Amazon ECS blue/green deployments, you don't model or manually c
 
  This table summarizes the differences in the high-level workflow between deployment types.
 
-****
-
 | Function | Standard blue/green deployments | Blue/green deployments through CloudFormation |
 | --- | --- | --- |
 | Specify the Amazon ECS cluster, Amazon ECS service, Application Load Balancer or Network Load Balancer, Production listener, test listener, and two target groups. | Create a CodeDeploy deployment group that specifies these resources. | Create a CloudFormation template to model these resources. |

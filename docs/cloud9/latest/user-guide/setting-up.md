@@ -9,8 +9,6 @@ source_url: https://docs.aws.amazon.com/cloud9/latest/user-guide/setting-up.html
 
 To start using AWS Cloud9, follow one of these sets of procedures, depending on how you plan to use AWS Cloud9.
 
-****
-
 |  **Usage pattern**  |  **Follow these procedures**  |
 | --- | --- |
 | I am the only **individual** using my AWS account, and I am *not* a student. |  [Individual User Setup](setup-express.md)  |

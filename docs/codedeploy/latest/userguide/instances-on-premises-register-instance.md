@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/instances-on
 Registering an instance using an IAM user is not recommended because it uses static (permanent) credentials for authentication. For improved security, we recommend registering an instance using temporary credentials for authentication. For more information, see [Use the register-on-premises-instance command (IAM Session ARN) to register an on-premises instance](register-on-premises-instance-iam-session-arn.md).
 
 **Important**
-Make sure you have a plan in place to rotate the IAM user's access keys (permanent credentials). For more information, see [Rotating access keys](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_credentials_access-keys.html#Using_RotateAccessKey).
+Make sure you have a plan in place to rotate the IAM user's access keys (permanent credentials). For more information, see [Rotating access keys](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html#Using_RotateAccessKey).
 
 This section describes how to configure an on-premises instance and register and tag it with CodeDeploy with the least amount of effort. The **register** command is most useful when you are working with single or small fleets of on-premises instances. You can use the **register** command only when you are using an IAM user ARN to authenticate an instance. You cannot use the **register** command with an IAM session ARN for authentication.
 

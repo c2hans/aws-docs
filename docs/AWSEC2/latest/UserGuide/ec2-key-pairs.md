@@ -20,7 +20,7 @@ For more information about connecting to your EC2 instance, see [Connect to your
 **Important**
 Because Amazon EC2 doesn't keep a copy of your private key, there is no way to recover a private key if you lose it. However, there can still be a way to connect to instances for which you've lost the private key. For more information, see [I've lost my private key. How can I connect to my instance?](TroubleshootingInstancesConnecting.md#replacing-lost-key-pair)
 
-As an alternative to key pairs, you can use [AWS Systems Manager Session Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager.html) to connect to your instance with an interactive one-click browser-based shell or the AWS Command Line Interface (AWS CLI).
+As an alternative to key pairs, you can use [AWS Systems Manager Session Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager.html) to connect to your instance with an interactive browser-based shell or the AWS Command Line Interface (AWS CLI).
 
 **Topics**
 + [Create a key pair for your Amazon EC2 instance](create-key-pairs.md)

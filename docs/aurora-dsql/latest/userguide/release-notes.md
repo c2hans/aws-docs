@@ -13,6 +13,12 @@ This page describes new features, service launches, and important updates for Au
 ### August 2026
 <a name="release-notes-2026-08"></a>
 
+August 17, 2026
+ *Monitoring* — **Aurora DSQL Database Insights ** — Aurora DSQL now supports Aurora DSQL Database Insights, per-statement cluster-level performance monitoring capability, which samples active sessions to give visibility into database load by wait event and SQL statement. This release also adds troubleshooting guidance for clusters that don't appear in the Amazon CloudWatch Database Insights console. For more information, see [Monitoring Aurora DSQL clusters with Aurora DSQL Database Insights](dsql-db-insights.md) and [Troubleshooting missing metrics from the Amazon CloudWatch Database Insights console](troubleshooting.md#troubleshooting-database-insights).
+
+August 13, 2026
+🐘 *PostgreSQL Compatibility* — **Indexes on expressions** — Aurora DSQL now supports indexes on expressions. An index key can be an expression computed from one or more columns of the table row, so a query that filters on the same expression can use the index. For example, an index on `lower(title)` gives efficient case-insensitive searches. All functions and operators used in an index definition must be immutable. For more information, see [CREATE INDEX](create-index-syntax-support.html).
+
 August 3, 2026
 🐘 *PostgreSQL Compatibility* — **ALTER TABLE DROP COLUMN** — Aurora DSQL now supports `ALTER TABLE ... DROP COLUMN` to remove a column from an existing table, You can drop multiple columns in a single statement. Dropping a primary key column isn't supported. For more information, see [ALTER TABLE](alter-table-syntax-support.html).
 
@@ -24,6 +30,9 @@ August 3, 2026
 
 July 31, 2026
 🌍 *Region Expansion* — **Aurora DSQL available in four additional Regions** — Multi-Region clusters are now available in Europe (Stockholm), Europe (Spain), Asia Pacific (Mumbai), and Asia Pacific (Singapore). For a complete list of supported Regions, see [Region availability for Aurora DSQL](what-is-aurora-dsql.html#region-availability).
+
+July 30, 2026
+✨ *Feature* — **Cost visibility and alerting ** — With the Aurora DSQL console, you can now view accumulated Aurora DSQL distributed processing units (DPU) and more easily establish real-time alerts based on DPU usage.
 
 July 15, 2026
 ✨ *AI Integration* — **Aurora DSQL Assist in the Aurora DSQL Playground** — Aurora DSQL Assist is a new artificial intelligence (AI) assistant in the Aurora DSQL Playground that helps you go from idea to working query. You can generate and fix SQL from natural language and design schemas and indexes for the distributed architecture of Aurora DSQL. You can also explore errors and documentation conversationally. For more information about Aurora DSQL Assist, see the [Aurora DSQL Playground website](https://playground.dsql.demo.aws/).

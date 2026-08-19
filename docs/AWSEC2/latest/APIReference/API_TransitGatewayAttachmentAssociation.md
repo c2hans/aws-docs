@@ -16,6 +16,11 @@ Type: String
 Valid Values: `associating | associated | disassociating | disassociated`
 Required: No
 
+ ** transitGatewayPolicyTableId **
+The ID of the transit gateway policy table associated with the attachment.
+Type: String
+Required: No
+
  ** transitGatewayRouteTableId **
 The ID of the route table for the transit gateway.
 Type: String

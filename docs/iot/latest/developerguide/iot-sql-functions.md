@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/iot-sql-functi
 
 You can use the following built-in functions in the SELECT or WHERE clauses of your SQL expressions.
 
-The following external functions are billed equivalent to that of a rule action: [`aws_lambda`](https://docs.aws.amazon.com//iot/latest/developerguide/iot-sql-functions.html#iot-func-aws-lambda), [`get_dynamodb()`](https://docs.aws.amazon.com//iot/latest/developerguide/iot-sql-functions.html#iot-sql-function-get-dynamodb), [`get_registry_data()`](https://docs.aws.amazon.com//iot/latest/developerguide/iot-sql-functions.html#iot-sql-function-get-registry_data), and [`get_thing_shadow()`](https://docs.aws.amazon.com//iot/latest/developerguide/iot-sql-functions.html#iot-sql-function-get-thing-shadow). You also get billed for the [`decode()`](https://docs.aws.amazon.com//iot/latest/developerguide/iot-sql-functions.html#iot-sql-decode-base64) function only when you are [decoding a Protobuf message to JSON](https://docs.aws.amazon.com//iot/latest/developerguide/binary-payloads.html#binary-payloads-protobuf). For more details, refer to the [AWS IoT Core pricing page](https://aws.amazon.com/iot-core/pricing/).
+The following external functions are billed equivalent to that of a rule action: [`aws_lambda`](https://docs.aws.amazon.com/iot/latest/developerguide/iot-sql-functions.html#iot-func-aws-lambda), [`get_dynamodb()`](https://docs.aws.amazon.com/iot/latest/developerguide/iot-sql-functions.html#iot-sql-function-get-dynamodb), [`get_registry_data()`](https://docs.aws.amazon.com/iot/latest/developerguide/iot-sql-functions.html#iot-sql-function-get-registry_data), and [`get_thing_shadow()`](https://docs.aws.amazon.com/iot/latest/developerguide/iot-sql-functions.html#iot-sql-function-get-thing-shadow). You also get billed for the [`decode()`](https://docs.aws.amazon.com/iot/latest/developerguide/iot-sql-functions.html#iot-sql-decode-base64) function only when you are [decoding a Protobuf message to JSON](https://docs.aws.amazon.com/iot/latest/developerguide/binary-payloads.html#binary-payloads-protobuf). For more details, refer to the [AWS IoT Core pricing page](https://aws.amazon.com/iot-core/pricing/).
 
 ## abs(Decimal)
 <a name="iot-func-abs"></a>
@@ -15,8 +15,6 @@ The following external functions are billed equivalent to that of a rule action:
 Returns the absolute value of a number. Supported by SQL version 2015-10-08 and later.
 
 Example: `abs(-5)` returns 5.
-
-****
 
 | Argument type | Result |
 | --- | --- |
@@ -45,8 +43,6 @@ Returns the inverse cosine of a number in radians. `Decimal` arguments are round
 
 Example: `acos(0)` = 1.5707963267948966
 
-****
-
 | Argument type | Result |
 | --- | --- |
 | Int | Decimal (with double precision), the inverse cosine of the argument. Imaginary results are returned as Undefined. |
@@ -64,8 +60,6 @@ Example: `acos(0)` = 1.5707963267948966
 Returns the inverse sine of a number in radians. `Decimal` arguments are rounded to double precision before function application. Supported by SQL version 2015-10-08 and later.
 
 Example: `asin(0)` = 0.0
-
-****
 
 | Argument type | Result |
 | --- | --- |
@@ -85,8 +79,6 @@ Returns the inverse tangent of a number in radians. `Decimal` arguments are roun
 
 Example: `atan(0)` = 0.0
 
-****
-
 | Argument type | Result |
 | --- | --- |
 | Int | Decimal (with double precision), the inverse tangent of the argument. Imaginary results are returned as Undefined. |
@@ -104,8 +96,6 @@ Example: `atan(0)` = 0.0
 Returns the angle, in radians, between the positive x-axis and the (x, y) point defined in the two arguments.  The angle is positive for counter-clockwise angles (upper half-plane, y > 0), and negative for clockwise angles (lower half-plane, y < 0). `Decimal` arguments are rounded to double precision before function application. Supported by SQL version 2015-10-08 and later.
 
 Example: `atan2(1, 0)` = 1.5707963267948966
-
-****
 
 | Argument type | Argument type | Result |
 | --- | --- | --- |
@@ -200,8 +190,6 @@ Performs a bitwise AND on the bit representations of the two `Int`(-converted) a
 
 Example: `bitand(13, 5)` = 5
 
-****
-
 | Argument type | Argument type | Result |
 | --- | --- | --- |
 | Int | Int | Int, a bitwise AND of the two arguments. |
@@ -215,8 +203,6 @@ Example: `bitand(13, 5)` = 5
 Performs a bitwise OR of the bit representations of the two arguments. Supported by SQL version 2015-10-08 and later.
 
 Example: `bitor(8, 5)` = 13
-
-****
 
 | Argument type | Argument type | Result |
 | --- | --- | --- |
@@ -232,8 +218,6 @@ Performs a bitwise XOR on the bit representations of the two `Int`(-converted) a
 
 Example:`bitor(13, 5)` = 8
 
-****
-
 | Argument type | Argument type | Result |
 | --- | --- | --- |
 | Int | Int | Int, a bitwise XOR on the two arguments. |
@@ -247,8 +231,6 @@ Example:`bitor(13, 5)` = 8
 Performs a bitwise NOT on the bit representations of the `Int`(-converted) argument. Supported by SQL version 2015-10-08 and later.
 
 Example: `bitnot(13)` = 2
-
-****
 
 | Argument type | Result |
 | --- | --- |
@@ -354,8 +336,6 @@ Examples:
 
 `ceil(-1.2)` = -1
 
-****
-
 | Argument type | Result |
 | --- | --- |
 | Int | Int, the argument value. |
@@ -373,8 +353,6 @@ Examples:
 `chr(65)` = "A".
 
 `chr(49)` = "1".
-
-****
 
 | Argument type | Result |
 | --- | --- |
@@ -419,8 +397,6 @@ Examples:
 
 `concat([1, 2, 3], "hello", [4, 5, 6])` = [1, 2, 3, "hello", 4, 5, 6]
 
-****
-
 | Number of arguments | Result |
 | --- | --- |
 | 0 | Undefined. |
@@ -435,8 +411,6 @@ Returns the cosine of a number in radians. `Decimal` arguments are rounded to do
 Example:
 
 `cos(0)` = 1.
-
-****
 
 | Argument type | Result |
 | --- | --- |
@@ -455,8 +429,6 @@ Example:
 Returns the hyperbolic cosine of a number in radians. `Decimal` arguments are rounded to double precision before function application. Supported by SQL version 2015-10-08 and later.
 
 Example: `cosh(2.3)` = 5.037220649268761.
-
-****
 
 | Argument type | Result |
 | --- | --- |
@@ -591,8 +563,6 @@ Returns a `Boolean` indicating whether the first `String` argument ends with the
 
 Example: `endswith("cat","at")` = true.
 
-****
-
 | Argument type 1 | Argument type 2 | Result |
 | --- | --- | --- |
 | String | String | True if the first argument ends in the second argument. Otherwise, false. |
@@ -604,8 +574,6 @@ Example: `endswith("cat","at")` = true.
 Returns e raised to the `Decimal` argument. `Decimal` arguments are rounded to double precision before function application. Supported by SQL version 2015-10-08 and later.
 
 Example: `exp(1)` = e.
-
-****
 
 | Argument type | Result |
 | --- | --- |
@@ -624,8 +592,6 @@ Examples:
 `floor(1.2)` = 1
 
 `floor(-1.2)` = -2
-
-****
 
 | Argument type | Result |
 | --- | --- |
@@ -646,8 +612,6 @@ Examples:
 `get({"a":"b"}, "a")` = "b"
 
 `get("abc", 0)` = "a"
-
-****
 
 | Argument type 1 | Argument type 2 | Result |
 | --- | --- | --- |
@@ -837,7 +801,7 @@ String: The name of the thing whose registry data you want to retrieve.
 roleArn
 String: A role ARN with `iot:DescribeThing` permission and/or `iot:ListThingGroupsForThing` permission based on the API being called.
 
-The response format of the `get_registry_data` function is the same as the registry API called. For more information, see the [DescribeThing](https://docs.aws.amazon.com//iot/latest/apireference/API_DescribeThing.html) and [ListThingGroupsForThing](https://docs.aws.amazon.com//iot/latest/apireference/API_ListThingGroupsForThing.html) APIs.
+The response format of the `get_registry_data` function is the same as the registry API called. For more information, see the [DescribeThing](https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeThing.html) and [ListThingGroupsForThing](https://docs.aws.amazon.com/iot/latest/apireference/API_ListThingGroupsForThing.html) APIs.
 
 Example:
 
@@ -1014,8 +978,6 @@ Examples:
 
 `isNull(Null) ` = true.
 
-****
-
 | Argument type | Result |
 | --- | --- |
 | Int | false |
@@ -1037,8 +999,6 @@ Examples:
 `isUndefined(5) ` = false.
 
 `isUndefined(floor([1,2,3]))) ` = true.
-
-****
 
 | Argument type | Result |
 | --- | --- |
@@ -1069,8 +1029,6 @@ Returns the natural logarithm of the argument. `Decimal` arguments are rounded t
 
 Example: `ln(e)` = 1.
 
-****
-
 | Argument type | Result |
 | --- | --- |
 | Int | Decimal (with double precision), the natural log of the argument. |
@@ -1088,8 +1046,6 @@ Example: `ln(e)` = 1.
 Returns the base 10 logarithm of the argument. `Decimal` arguments are rounded to double precision before function application. Supported by SQL version 2015-10-08 and later.
 
 Example: `log(100)` = 2.0.
-
-****
 
 | Argument type | Result |
 | --- | --- |
@@ -1124,8 +1080,6 @@ Examples:
 
 `lpad(1, 3)` = "`   1`"
 
-****
-
 | Argument type 1 | Argument type 2 | Result |
 | --- | --- | --- |
 | String | Int | String, the provided String padded on the left side with a number of spaces equal to the provided Int. |
@@ -1142,8 +1096,6 @@ Removes all leading white space (tabs and spaces) from the provided `String`. Su
 Example:
 
 `Ltrim(" h i ")` = "hi ".
-
-****
 
 | Argument type | Result |
 | --- | --- |
@@ -1204,8 +1156,6 @@ Returns the remainder of the division of the first argument by the second argume
 
 Example: `mod(8, 3)` = 2.
 
-****
-
 | Left operand | Right operand | Output |
 | --- | --- | --- |
 | Int | Int | Int, the first argument modulo the second argument. |
@@ -1219,8 +1169,6 @@ Example: `mod(8, 3)` = 2.
 Returns the first argument if it is a valid `Decimal`. Otherwise, the second argument is returned. Supported by SQL version 2015-10-08 and later.
 
 Example: `Nanvl(8, 3)` = 8.
-
-****
 
 | Argument type 1 | Argument type 2 | Output |
 | --- | --- | --- |
@@ -1341,8 +1289,6 @@ Returns the first argument raised to the second argument. `Decimal` arguments ar
 
 Example: `power(2, 5)` = 32.0.
 
-****
-
 | Argument type 1 | Argument type 2 | Output |
 | --- | --- | --- |
 | Int/Decimal | Int/Decimal | A Decimal (with double precision), the first argument raised to the second argument's power. |
@@ -1353,8 +1299,6 @@ Example: `power(2, 5)` = 32.0.
 <a name="iot-sql-function-principal"></a>
 
 Returns the principal that the device uses for authentication, based on how the triggering message was published. The following table describes the principal returned for each publishing method and protocol.
-
-****
 
 | How the message is published | Protocol | Credential type | Principal |
 | --- | --- | --- | --- |
@@ -1479,8 +1423,6 @@ Returns the remainder of the division of the first argument by the second argume
 
 Example: `remainder(8, 3)` = 2.
 
-****
-
 | Left operand | Right operand | Output |
 | --- | --- | --- |
 | Int | Int | Int, the first argument modulo the second argument. |
@@ -1523,8 +1465,6 @@ Examples:
 
 `rpad(1, 3)` = "`1   `".
 
-****
-
 | Argument type 1 | Argument type 2 | Result |
 | --- | --- | --- |
 | String | Int | The String is padded on the right side with a number of spaces equal to the provided Int. |
@@ -1548,8 +1488,6 @@ Example: `Round(1.2)` = 1.
 
 `Round(-1.5)` = -2.
 
-****
-
 | Argument type | Result |
 | --- | --- |
 | Int | The argument. |
@@ -1565,8 +1503,6 @@ Removes all trailing white space (tabs and spaces) from the provided `String`. S
 Examples:
 
 `rtrim(" h i ")` = " h i"
-
-****
 
 | Argument type | Result |
 | --- | --- |
@@ -1591,8 +1527,6 @@ Examples:
 
 `sign(13)` = 1.
 
-****
-
 | Argument type | Result |
 | --- | --- |
 | Int | Int, the sign of the Int value. |
@@ -1606,8 +1540,6 @@ Examples:
 Returns the sine of a number in radians. `Decimal` arguments are rounded to double precision before function application. Supported by SQL version 2015-10-08 and later.
 
 Example: `sin(0)` = 0.0
-
-****
 
 | Argument type | Result |
 | --- | --- |
@@ -1626,8 +1558,6 @@ Example: `sin(0)` = 0.0
 Returns the hyperbolic sine of a number. `Decimal` values are rounded to double precision before function application. The result is a `Decimal` value of double precision. Supported by SQL version 2015-10-08 and later.
 
 Example: `sinh(2.3)` = 4.936961805545957
-
-****
 
 | Argument type | Result |
 | --- | --- |
@@ -1664,7 +1594,7 @@ Examples of how to use the sourceip() function in AWS IoT Core rule actions:
 
 **Example 1**
 
-The following example shows how to call the () function as a [substitution template](https://docs.aws.amazon.com//iot/latest/developerguide/iot-substitution-templates.html) in a [DynamoDB action](https://docs.aws.amazon.com//iot/latest/developerguide/dynamodb-rule-action.html).
+The following example shows how to call the () function as a [substitution template](https://docs.aws.amazon.com/iot/latest/developerguide/iot-substitution-templates.html) in a [DynamoDB action](https://docs.aws.amazon.com/iot/latest/developerguide/dynamodb-rule-action.html).
 
 ```
 {
@@ -1690,7 +1620,7 @@ The following example shows how to call the () function as a [substitution templ
 
 **Example 2**
 
-The following example shows how to add the sourceip() function as an MQTT user property using [substitution templates](https://docs.aws.amazon.com//iot/latest/developerguide/iot-substitution-templates.html).
+The following example shows how to add the sourceip() function as an MQTT user property using [substitution templates](https://docs.aws.amazon.com/iot/latest/developerguide/iot-substitution-templates.html).
 
 ```
 {
@@ -1725,7 +1655,7 @@ The following example shows how to add the sourceip() function as an MQTT user p
 }
 ```
 
-You can retrieve the source IP address from messages passing to AWS IoT Core rules from both Message Broker and [Basic Ingest](https://docs.aws.amazon.com//iot/latest/developerguide/iot-basic-ingest.html) pathways. You can also retrieve the source IP for both IPv4 and IPv6 messages. The source IP will be displayed like the following:
+You can retrieve the source IP address from messages passing to AWS IoT Core rules from both Message Broker and [Basic Ingest](https://docs.aws.amazon.com/iot/latest/developerguide/iot-basic-ingest.html) pathways. You can also retrieve the source IP for both IPv4 and IPv6 messages. The source IP will be displayed like the following:
 
 IPv6: `yyyy:yyyy:yyyy::yyyy:yyyy`
 
@@ -1779,8 +1709,6 @@ Returns the square root of a number. `Decimal` arguments are rounded to double p
 
 Example: `sqrt(9)` = 3.0.
 
-****
-
 | Argument type | Result |
 | --- | --- |
 | Int | The square root of the argument. |
@@ -1801,8 +1729,6 @@ Example:
 
 `startswith("ranger","ran")` = true
 
-****
-
 | Argument type 1 | Argument type 2 | Result |
 | --- | --- | --- |
 | String | String | Whether the first string starts with the second string. |
@@ -1814,8 +1740,6 @@ Example:
 Returns the tangent of a number in radians. `Decimal` values are rounded to double precision before function application. Supported by SQL version 2015-10-08 and later.
 
 Example: `tan(3)` = -0.1425465430742778
-
-****
 
 | Argument type | Result |
 | --- | --- |
@@ -1834,8 +1758,6 @@ Example: `tan(3)` = -0.1425465430742778
 Returns the hyperbolic tangent of a number in radians. `Decimal` values are rounded to double precision before function application. Supported by SQL version 2015-10-08 and later.
 
 Example: `tanh(2.3)` = 0.9800963962661914
-
-****
 
 | Argument type | Result |
 | --- | --- |
@@ -2111,8 +2033,6 @@ Example:
 
 `Trim(" hi ") ` = "hi"
 
-****
-
 | Argument type | Result |
 | --- | --- |
 | Int | The String representation of the Int with all leading and trailing white space removed. |
@@ -2138,8 +2058,6 @@ Examples:
 `trunc(2.888, 2)` = 2.88.
 
 `trunc(2.00, 5)` = 2.
-
-****
 
 | Argument type 1 | Argument type 2 | Result |
 | --- | --- | --- |

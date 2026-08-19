@@ -29,8 +29,6 @@ Amazon CodeGuru has no API operations that can be used in the `Actions` element 
 
 The following actions are defined by Amazon CodeGuru but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 | Actions | Description | Resource types (\*required) | Condition keys | Access level |
 | --- | --- | --- | --- | --- |
 |   [GetCodeGuruFreeTrialSummary](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_GetCodeGuruFreeTrialSummary.html)  | Grants permission to get free trial summary for the CodeGuru service which includes expiration date |  |   | Read |

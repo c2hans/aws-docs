@@ -22,7 +22,7 @@ Note: The information in this document does not apply when streaming content to 
 ## IP Ranges
 <a name="low-latency-network-requirements-ip-ranges"></a>
 
-The data plane for IVS low-latency streaming is global. To broadcast to IVS, it is important that all subnets for the service IVS\_LOW\_LATENCY in [ip-ranges.json](https://docs.aws.amazon.com/vpc/latest/userguide/aws-ip-ranges.html) must be accessible, regardless of their region or your chosen AWS Region. Streamers may be connected to any subnet automatically. See [Global Solution, Regional Control](https://docs.aws.amazon.com//ivs/latest/LowLatencyUserGuide/what-is.html#what-is-aws) for details.
+The data plane for IVS low-latency streaming is global. To broadcast to IVS, it is important that all subnets for the service IVS\_LOW\_LATENCY in [ip-ranges.json](https://docs.aws.amazon.com/vpc/latest/userguide/aws-ip-ranges.html) must be accessible, regardless of their region or your chosen AWS Region. Streamers may be connected to any subnet automatically. See [Global Solution, Regional Control](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/what-is.html#what-is-aws) for details.
 
 For a list of all IVS\_LOW\_LATENCY subnets, run the following `jq` commands:
 

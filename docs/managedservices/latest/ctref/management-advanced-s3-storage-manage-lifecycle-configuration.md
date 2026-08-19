@@ -14,8 +14,6 @@ Add a new lifecycle configuration, or replace an existing one for an Amazon S3 b
 ## Change Type Details
 <a name="ct-1ax768xtu8c9q-MASm-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1ax768xtu8c9q |

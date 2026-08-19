@@ -62,4 +62,4 @@ Download the package that corresponds to the system architecture of your SQL cli
      ```
 
 **Important**
-When you have finished installing the drivers, configure them for use on your system. For more information on driver configuration, see [Using an ODBC driver manager to configure the driverUsing an ODBC driver manager to configure the driver](odbc-driver-configure-linux.md).
+When you have finished installing the drivers, configure them for use on your system. For more information on driver configuration, see [Using an ODBC driver manager to configure the driver](odbc-driver-configure-linux.md).

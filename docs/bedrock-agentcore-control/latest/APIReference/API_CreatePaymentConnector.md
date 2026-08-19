@@ -21,6 +21,7 @@ Content-type: application/json
    ],
    "description": "{{string}}",
    "name": "{{string}}",
+   "provisionMode": "{{string}}",
    "type": "{{string}}"
 }
 ```
@@ -51,14 +52,14 @@ Required: No
  ** [credentialProviderConfigurations](#API_CreatePaymentConnector_RequestSyntax) **   <a name="bedrockagentcorecontrol-CreatePaymentConnector-request-credentialProviderConfigurations"></a>
 The credential provider configurations for the payment connector. These configurations specify how the connector authenticates with the payment provider.
 Type: Array of [CredentialsProviderConfiguration](API_CredentialsProviderConfiguration.md) objects
-Array Members: Fixed number of 1 item.
+Array Members: Minimum number of 0 items. Maximum number of 1 item.
 Required: Yes
 
  ** [description](#API_CreatePaymentConnector_RequestSyntax) **   <a name="bedrockagentcorecontrol-CreatePaymentConnector-request-description"></a>
 A description of the payment connector.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 4096.
-Pattern: `[a-zA-Z0-9\s]+`
+Pattern: `[^\p{C}]*`
 Required: No
 
  ** [name](#API_CreatePaymentConnector_RequestSyntax) **   <a name="bedrockagentcorecontrol-CreatePaymentConnector-request-name"></a>
@@ -67,6 +68,14 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 48.
 Pattern: `[a-zA-Z][a-zA-Z0-9_]{0,47}`
 Required: Yes
+
+ ** [provisionMode](#API_CreatePaymentConnector_RequestSyntax) **   <a name="bedrockagentcorecontrol-CreatePaymentConnector-request-provisionMode"></a>
+The provision mode for creating the payment connector. If you don't specify a value, the default is `MANUAL`.
++  `MANUAL` - You provide the credential provider configurations directly.
++  `QUICK_CREATE` - The service orchestrates OAuth consent and provisions the credential provider for you.
+Type: String
+Valid Values: `MANUAL | QUICK_CREATE`
+Required: No
 
  ** [type](#API_CreatePaymentConnector_RequestSyntax) **   <a name="bedrockagentcorecontrol-CreatePaymentConnector-request-type"></a>
 The type of payment connector, which determines the payment provider integration.
@@ -82,6 +91,7 @@ HTTP/1.1 202
 Content-type: application/json
 
 {
+   "authorizationUrl": "string",
    "createdAt": "string",
    "credentialProviderConfigurations": [
       { ... }
@@ -101,6 +111,12 @@ If the action is successful, the service sends back an HTTP 202 response.
 
 The following data is returned in JSON format by the service.
 
+ ** [authorizationUrl](#API_CreatePaymentConnector_ResponseSyntax) **   <a name="bedrockagentcorecontrol-CreatePaymentConnector-response-authorizationUrl"></a>
+The URL that the user must open to complete OAuth consent. This field is only present when the payment connector status is `PENDING_AUTHENTICATION`.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 4096.
+Pattern: `https://[^\p{C}]*`
+
  ** [createdAt](#API_CreatePaymentConnector_ResponseSyntax) **   <a name="bedrockagentcorecontrol-CreatePaymentConnector-response-createdAt"></a>
 The timestamp when the payment connector was created.
 Type: Timestamp
@@ -108,7 +124,7 @@ Type: Timestamp
  ** [credentialProviderConfigurations](#API_CreatePaymentConnector_ResponseSyntax) **   <a name="bedrockagentcorecontrol-CreatePaymentConnector-response-credentialProviderConfigurations"></a>
 The credential provider configurations for the created payment connector.
 Type: Array of [CredentialsProviderConfiguration](API_CredentialsProviderConfiguration.md) objects
-Array Members: Fixed number of 1 item.
+Array Members: Minimum number of 0 items. Maximum number of 1 item.
 
  ** [name](#API_CreatePaymentConnector_ResponseSyntax) **   <a name="bedrockagentcorecontrol-CreatePaymentConnector-response-name"></a>
 The name of the created payment connector.
@@ -120,7 +136,7 @@ Pattern: `[a-zA-Z][a-zA-Z0-9_]{0,47}`
 The unique identifier of the created payment connector.
 Type: String
 Length Constraints: Minimum length of 12. Maximum length of 211.
-Pattern: `([0-9a-z][-]?){1,100}-[0-9a-z]{10}`
+Pattern: `([0-9a-z_][-]?){1,100}-[0-9a-z]{10}`
 
  ** [paymentManagerId](#API_CreatePaymentConnector_ResponseSyntax) **   <a name="bedrockagentcorecontrol-CreatePaymentConnector-response-paymentManagerId"></a>
 The unique identifier of the parent payment manager.
@@ -131,7 +147,7 @@ Pattern: `([0-9a-z][-]?){1,100}-[0-9a-z]{10}`
  ** [status](#API_CreatePaymentConnector_ResponseSyntax) **   <a name="bedrockagentcorecontrol-CreatePaymentConnector-response-status"></a>
 The current status of the payment connector. Possible values include `CREATING`, `READY`, `UPDATING`, `DELETING`, `CREATE_FAILED`, `UPDATE_FAILED`, and `DELETE_FAILED`.
 Type: String
-Valid Values: `CREATING | UPDATING | DELETING | READY | CREATE_FAILED | UPDATE_FAILED | DELETE_FAILED`
+Valid Values: `CREATING | UPDATING | DELETING | READY | CREATE_FAILED | UPDATE_FAILED | DELETE_FAILED | AWS_MARKETPLACE_SUBSCRIPTION_REQUIRED | PENDING_AUTHENTICATION | PROVISIONING | AUTHENTICATION_EXPIRED | AUTHENTICATION_FAILED`
 
  ** [type](#API_CreatePaymentConnector_ResponseSyntax) **   <a name="bedrockagentcorecontrol-CreatePaymentConnector-response-type"></a>
 The type of the created payment connector.
@@ -162,6 +178,10 @@ HTTP Status Code: 404
  ** ServiceQuotaExceededException **
 This exception is thrown when a request is made beyond the service quota
 HTTP Status Code: 402
+
+ ** SubscriptionRequiredException **
+The request failed because it requires an active AWS Marketplace subscription that is not present. Subscribe to the required product in AWS Marketplace and try again.
+HTTP Status Code: 403
 
  ** ThrottlingException **
 This exception is thrown when the number of requests exceeds the limit

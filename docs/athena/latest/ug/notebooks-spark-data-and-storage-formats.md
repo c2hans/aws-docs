@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/notebooks-spark-data-an
 
 The following table shows formats that are supported natively in Athena for Apache Spark.
 
-****
-
 | **Data format** | **Read** | **Write** | **Write compression** |
 | --- | --- | --- | --- |
 | parquet | yes | yes | none, uncompressed, snappy, gzip |

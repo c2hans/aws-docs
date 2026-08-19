@@ -11,8 +11,6 @@ The following provides a sample mapping between the Australian Cyber Security Ce
 
 This sample conformance pack template contains mappings to controls within the ISM framework, which was created by the Commonwealth of Australia and can be found at [Australian Government Information Security Manual](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism/cyber-security-principles). Licensing of the framework under Creative Commons Attribution 4.0 International Public License and copyright information for the framework (including a disclaimer of warranties) can be found at [ACSC \| Copyright](https://www.cyber.gov.au/acsc/copyright).
 
-****
-
 | Control ID  | AWS Config Rule  | Guidance  |
 | --- | --- | --- |
 | 43 | response-plan-exists-maintained (process check) | Ensure incident response plans are established, maintained, and distributed to responsible personnel. |

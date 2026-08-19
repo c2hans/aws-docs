@@ -36,8 +36,6 @@ Commands sent using Run Command also report Canceling and Pending status. These 
 
 If you configure Run Command or a Run Command task in your maintenance window for Amazon SNS notifications, Amazon SNS sends summary messages that include the following information.
 
-****
-
 | Field | Type | Description |
 | --- | --- | --- |
 | eventTime | String | The time that the event was initiated. The timestamp is important because Amazon SNS doesn't guarantee message delivery order. Example: 2016-04-26T13:15:30Z  |
@@ -54,8 +52,6 @@ If you configure Run Command or a Run Command task in your maintenance window fo
 <a name="monitoring-sns-configure-invocation"></a>
 
 If you send a command to multiple nodes, Amazon SNS can send messages about each copy or invocation of the command. The messages include the following information.
-
-****
 
 | Field | Type | Description |
 | --- | --- | --- |
@@ -272,13 +268,13 @@ For entities without administrator permissions, an administrator must grant the 
 To provide access, add permissions to your users, groups, or roles:
 + Users and groups in AWS IAM Identity Center:
 
-  Create a permission set. Follow the instructions in [Create a permission set](https://docs.aws.amazon.com//singlesignon/latest/userguide/howtocreatepermissionset.html) in the *AWS IAM Identity Center User Guide*.
+  Create a permission set. Follow the instructions in [Create a permission set](https://docs.aws.amazon.com/singlesignon/latest/userguide/howtocreatepermissionset.html) in the *AWS IAM Identity Center User Guide*.
 + Users managed in IAM through an identity provider:
 
-  Create a role for identity federation. Follow the instructions in [Create a role for a third-party identity provider (federation)](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_roles_create_for-idp.html) in the *IAM User Guide*.
+  Create a role for identity federation. Follow the instructions in [Create a role for a third-party identity provider (federation)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-idp.html) in the *IAM User Guide*.
 + IAM users:
-  + Create a role that your user can assume. Follow the instructions in [Create a role for an IAM user](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_roles_create_for-user.html) in the *IAM User Guide*.
-  + (Not recommended) Attach a policy directly to a user or add a user to a user group. Follow the instructions in [Adding permissions to a user (console)](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_users_change-permissions.html#users_change_permissions-add-console) in the *IAM User Guide*.
+  + Create a role that your user can assume. Follow the instructions in [Create a role for an IAM user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-user.html) in the *IAM User Guide*.
+  + (Not recommended) Attach a policy directly to a user or add a user to a user group. Follow the instructions in [Adding permissions to a user (console)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_change-permissions.html#users_change_permissions-add-console) in the *IAM User Guide*.
 
 **To configure user access and attach the `iam:PassRole` policy to a user account**
 

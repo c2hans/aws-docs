@@ -48,7 +48,7 @@ The destination CIDR block for the transit gateway policy rule.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `DestinationPortRange`  <a name="cfn-ec2-transitgatewaypolicytableentry-transitgatewaypolicyrule-destinationportrange"></a>
-The port range for the transit gateway policy rule. Currently this is set to \* (all).
+The destination port or port range for the transit gateway policy rule.
 *Required*: No
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -66,7 +66,7 @@ The source CIDR block for the transit gateway policy rule.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SourcePortRange`  <a name="cfn-ec2-transitgatewaypolicytableentry-transitgatewaypolicyrule-sourceportrange"></a>
-The port range for the transit gateway policy rule. Currently this is set to \* (all).
+The source port or port range for the transit gateway policy rule.
 *Required*: No
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

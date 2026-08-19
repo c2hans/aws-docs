@@ -12,7 +12,7 @@ This page covers how to install the Discovery Agent on Linux and Microsoft Windo
 ## Install Discovery Agent on Linux
 <a name="install_on_linux"></a>
 
-Complete the following procedure on Linux. Be sure that your [Migration Hub home region](https://docs.aws.amazon.com//migrationhub/latest/ug/home-region.html) has been set before you begin this procedure.
+Complete the following procedure on Linux. Be sure that your [Migration Hub home region](https://docs.aws.amazon.com/migrationhub/latest/ug/home-region.html) has been set before you begin this procedure.
 
 **Note**
 If you are using a non-current Linux version, see [Considerations with older Linux platforms](#old_linux).<a name="linux_steps"></a>
@@ -88,7 +88,7 @@ sudo bash install -r {{your-home_region}} -k {{aws-access-key-id}} -s {{aws-secr
 ## Install Discovery Agent on Microsoft Windows
 <a name="install_on_windows"></a>
 
-Complete the following procedure to install an agent on Microsoft Windows. Be sure that your [Migration Hub home region](https://docs.aws.amazon.com//migrationhub/latest/ug/home-region.html) has been set before you begin this procedure.<a name="windows_steps"></a>
+Complete the following procedure to install an agent on Microsoft Windows. Be sure that your [Migration Hub home region](https://docs.aws.amazon.com/migrationhub/latest/ug/home-region.html) has been set before you begin this procedure.<a name="windows_steps"></a>
 
 **To install AWS Application Discovery Agent in your data center**
 

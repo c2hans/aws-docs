@@ -20,7 +20,7 @@ Before you begin, make sure you have the following:
 + Credentials with permissions for the DynamoDB actions `CreateTable`, `DescribeTable`, `PutItem`, `BatchWriteItem`, `Scan`, `SearchVectors`, `UpdateTable`, and `DeleteTable`, and for the Amazon Bedrock action `InvokeModel`. `dynamodb:SearchVectors` is a new action, so existing policies that grant DynamoDB read access do not include it.
 + Access to the Titan Text Embeddings V2 model enabled in Amazon Bedrock for your account and Region. Amazon Bedrock model access is granted per account and per Region, so you must enable the model before you can call it.
 + `jq` installed for reshaping the model output into DynamoDB format.
-+ A Region where both DynamoDB vector indexes and Amazon Bedrock Titan Text Embeddings V2 are available. Amazon Bedrock model availability varies by Region and is generally narrower than DynamoDB Region coverage, so confirm both before you choose a Region. For Amazon Bedrock model availability, see [Model support by AWS Region](https://docs.aws.amazon.com/bedrock/latest/userguide/models-regions.html) in the *Amazon Bedrock User Guide*.
++ A Region where Amazon Bedrock Titan Text Embeddings V2 is available. Vector indexes are available in all commercial AWS Regions, so Amazon Bedrock model availability is the constraint on your Region choice. For Amazon Bedrock model availability, see [Model support by AWS Region](https://docs.aws.amazon.com/bedrock/latest/userguide/models-regions.html) in the *Amazon Bedrock User Guide*.
 
 **Charges**
 This tutorial incurs charges for Amazon Bedrock model invocations and DynamoDB storage. It makes 51 embedding calls, each billed as a Amazon Bedrock inference request, on short single-sentence inputs. DynamoDB storage charges apply for as long as the table and vector index exist.
@@ -65,10 +65,12 @@ Do not use `--endpoint-url` to override the DynamoDB endpoint for these commands
 
    For an index created as part of `CreateTable`, as in this tutorial, `Backfilling` is not reported and the command returns `null` for it. Use `IndexStatus` alone as your signal in that case.
 
-   `Backfilling` is reported for a vector index that you add to an existing table with `UpdateTable`. In that case, wait until `IndexStatus` is `ACTIVE` and `Backfilling` is `false` before you rely on complete search results.
+   `Backfilling` is reported for a vector index that you add to an existing table with `UpdateTable`. In that case, wait until `IndexStatus` is `ACTIVE` and `Backfilling` is not `true` before you search. Note that `Backfilling` is reported only while the index is `CREATING`, and is absent once the index is `ACTIVE`.
 **Wait for the index, not just the table**
-Do not use `aws dynamodb wait table-exists` to gate the search. That waiter matches on `Table.TableStatus`, which becomes `ACTIVE` while the vector index can still be `CREATING`. There is no waiter for vector index readiness, so you must poll `DescribeTable` as shown. Searching an index that is not yet `ACTIVE` fails, and searching during backfill can return incomplete results.
+Do not use `aws dynamodb wait table-exists` to gate the search. That waiter matches on `Table.TableStatus`, which becomes `ACTIVE` while the vector index can still be `CREATING`. There is no waiter for vector index readiness, so you must poll `DescribeTable` as shown. Searching an index that is not yet `ACTIVE` fails with a `ValidationException`. Searching during backfill also returns a `ValidationException`. It does not return partial results.
 For the same reason, you cannot delete the table until every vector index has finished creating. `DeleteTable` returns `ResourceInUseException` with the message "Cannot delete table while indexes are being created, updated, or deleted."
+
+   After `IndexStatus` becomes `ACTIVE`, the search endpoint can require additional time before it begins serving the index. Retry `SearchVectors` on `ValidationException` during that interval.
 
 1. **Create the product catalog.** Save the following 50 products to a tab-separated file named `products.tsv`. Each line holds a product ID, a name, and a one-sentence description. The catalog contains ten groups of five related products, which makes the search results in the last step easy to interpret.
 
@@ -157,7 +159,7 @@ For the same reason, you cannot delete the table until every vector index has fi
    aws dynamodb put-item --table-name Products --item file://item-p01.json
    ```
 **Vector size and item limits**
-A 1024-dimension vector adds roughly 32 KB to the request payload and about 5 KB to the stored item, well within the 400 KB DynamoDB item size limit. Dimension count is the main driver of item size when you store embeddings.
+A 1024-dimension vector is well within the 400 KB DynamoDB item size limit. Two factors drive how much space an embedding occupies in the base table: the number of dimensions, and the number of significant digits each value carries. DynamoDB stores a number in proportion to its significant digits rather than at a fixed width. Embedding models commonly return values with many significant digits, so a stored embedding can be considerably larger than the same vector held at 32-bit floating point precision in the vector index. If item size matters to your design, measure a representative item rather than estimating from dimension count.
 
 1. **Embed the remaining products.** This loop generates an embedding for each remaining product. It skips any file that already exists, so you can rerun it safely if a call fails.
 

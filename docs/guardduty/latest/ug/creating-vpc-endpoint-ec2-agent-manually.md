@@ -90,6 +90,6 @@ There is no additional cost for the usage of the VPC endpoint.
 
 1. Under **Security groups**, choose a security group that has the in-bound port 443 enabled from your VPC (or your Amazon EC2 instance). If you don't already have a security group that has an in-bound port 443 enabled, see [Create a security group for your VPC](https://docs.aws.amazon.com/vpc/latest/userguide/creating-security-groups.html) in the *Amazon VPC User Guide*.
 
-   If there is an issue while restricting the in-bound permissions to your VPC (or instance), you can the in-bound 443 port from any IP address `(0.0.0.0/0)`. However, GuardDuty recommends using IP addresses that matches the CIDR block for your VPC. For more information, see [VPC CIDR blocks](https://docs.aws.amazon.com//vpc/latest/userguide/vpc-cidr-blocks.html) in the *Amazon VPC User Guide*.
+   If there is an issue while restricting the in-bound permissions to your VPC (or instance), you can the in-bound 443 port from any IP address `(0.0.0.0/0)`. However, GuardDuty recommends using IP addresses that matches the CIDR block for your VPC. For more information, see [VPC CIDR blocks](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-cidr-blocks.html) in the *Amazon VPC User Guide*.
 
 After you have followed the steps, see [Validating VPC endpoint configuration](validate-vpc-endpoint-config-runtime-monitoring.md) to ensure that the VPC endpoint was set up correctly.

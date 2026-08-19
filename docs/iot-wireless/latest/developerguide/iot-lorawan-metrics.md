@@ -32,7 +32,7 @@ If you see that no data is available for one or more widgets, check whether you 
 
 To view the metrics for your LoRaWAN resources, you can activate the summary metrics dashboard either from the console or using the AWS IoT Wireless API operations. You activate summary metrics for all LoRaWAN resources in your AWS account, which includes all LoRaWAN devices and gateways. The data can be aggregated to provide you with hourly, daily, or weekly information for your resources.
 
-The LoRaWAN metrics dashboard uses the compute API to display information for your LoRaWAN resources. When you activate summary metrics, charges might be incurred for using the LoRaWAN dashboard. To avoid incurring additional charges, you can deactivate summary metrics. For information about pricing, see [https://aws.amazon.com//iot-core/pricing](https://aws.amazon.com//iot-core/pricing) AWS IoT Core pricing.
+The LoRaWAN metrics dashboard uses the compute API to display information for your LoRaWAN resources. When you activate summary metrics, charges might be incurred for using the LoRaWAN dashboard. To avoid incurring additional charges, you can deactivate summary metrics. For information about pricing, see [https://aws.amazon.com/iot-core/pricing](https://aws.amazon.com/iot-core/pricing) AWS IoT Core pricing.
 
 **Note**
 The summary metrics have an expiration time. Hourly metrics expire after six months, and daily and weekly metrics expire after 12 months.

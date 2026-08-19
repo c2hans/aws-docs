@@ -17,8 +17,6 @@ Say hello to Amazon S3 using the AWS SDK for PHP. The following example displays
 
 No matter which technique you used to install the SDK, you can include the SDK in your code with just a single `require` statement. See the following table for the PHP code that best fits your installation technique. Replace any instances of `/path/to/` with the actual path on your system.
 
-****
-
 | Installation Technique | Require Statement |
 | --- | --- |
 | Using Composer |  `require '/path/to/vendor/autoload.php';`  |

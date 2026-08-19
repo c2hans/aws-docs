@@ -59,8 +59,6 @@ The following tables list all supported platform branches for each platform. Onl
 ### Docker
 <a name="release-2021-03-30-linux.platforms.docker"></a>
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Docker  |  Docker Compose  |  Proxy Server  |
 | --- | --- | --- | --- | --- |
 |  ** Docker AL2 version 3.2.5** <br /> * 64bit Amazon Linux 2 v3.2.5 running Docker *  | 2.0.20210219 | 19.03.13-ce | 1.28.4 | nginx 1.18.0 |
@@ -69,16 +67,12 @@ The following tables list all supported platform branches for each platform. Onl
 ### Multicontainer Docker
 <a name="release-2021-03-30-linux.platforms.mcdocker"></a>
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Docker  |  ECS Agent  |
 | --- | --- | --- | --- |
 |  ** Multicontainer Docker version 2.25.2** <br /> * 64bit Amazon Linux 2018.03 v2.25.2 running Multi-container Docker 19.03.13-ce (Generic) *  | 2018.03.0 | 19.03.13-ce | 1.50.3 |
 
 ### Preconfigured Docker
 <a name="release-2021-03-30-linux.platforms.dockerpreconfig"></a>
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -87,8 +81,6 @@ The following tables list all supported platform branches for each platform. Onl
 ### Go
 <a name="release-2021-03-30-linux.platforms.go"></a>
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  AWS X‑Ray  |  Proxy Server  |
 | --- | --- | --- | --- | --- |
 |  ** Go 1 AL2 version 3.2.0** <br /> * 64bit Amazon Linux 2 v3.2.0 running Go 1 *  | 2.0.20210219 | Go 1.16 | 3.2.0 | nginx 1.18.0 |
@@ -96,8 +88,6 @@ The following tables list all supported platform branches for each platform. Onl
 
 ### Java SE
 <a name="release-2021-03-30-linux.platforms.javase"></a>
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  Tools  |  AWS X‑Ray  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- |
@@ -108,8 +98,6 @@ The following tables list all supported platform branches for each platform. Onl
 
 ### Tomcat
 <a name="release-2021-03-30-linux.platforms.java"></a>
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  AWS X‑Ray  |  Application Server  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- |
@@ -123,8 +111,6 @@ The following tables list all supported platform branches for each platform. Onl
 ### Node.js
 <a name="release-2021-03-30-linux.platforms.nodejs"></a>
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X‑Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 14 AL2 version 5.3.0** <br /> * 64bit Amazon Linux 2 v5.3.0 running Node.js 14 *  | 2.0.20210219 | 14.16.0 (6.14.11), 14.15.5 (6.14.11), 14.15.4 (6.14.10), 14.15.3 (6.14.9), 14.15.2 (6.14.9), 14.15.1 (6.14.8), 14.15.0 (6.14.8), 14.14.0 (6.14.8), 14.13.1 (6.14.8), 14.13.0 (6.14.8), 14.12.0 (6.14.8), 14.11.0 (6.14.8), 14.10.1 (6.14.8), 14.10.0 (6.14.8), 14.9.0 (6.14.8), 14.8.0 (6.14.7), 14.7.0 (6.14.7), 14.6.0 (6.14.6), 14.5.0 (6.14.5), 14.4.0 (6.14.5), 14.3.0 (6.14.5), 14.2.0 (6.14.4), 14.1.0 (6.14.4), 14.0.0 (6.14.4)<br /> Default version: 14.16.0 | nginx 1.18.0 (default), Apache 2.4.46 | 2.23.3 | 3.2.0 |
@@ -134,8 +120,6 @@ The following tables list all supported platform branches for each platform. Onl
 
 ### PHP
 <a name="release-2021-03-30-linux.platforms.PHP"></a>
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  Composer  |  Proxy Server  |
 | --- | --- | --- | --- | --- |
@@ -148,8 +132,6 @@ The following tables list all supported platform branches for each platform. Onl
 ### Python
 <a name="release-2021-03-30-linux.platforms.python"></a>
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  Package Manager  |  Packager  |  meld3  |  AWS X‑Ray  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  ** Python 3.8 AL2 version 3.2.0** <br /> * 64bit Amazon Linux 2 v3.2.0 running Python 3.8 *  | 2.0.20210219 | Python 3.8.5 | pipenv 2020.8.13 |  |  | 3.2.0 | nginx 1.18.0 (default), Apache 2.4.46 |
@@ -158,8 +140,6 @@ The following tables list all supported platform branches for each platform. Onl
 
 ### Ruby
 <a name="release-2021-03-30-linux.platforms.ruby"></a>
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  Package Manager  |  Application Server  |  AWS X‑Ray  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- | --- |

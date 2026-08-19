@@ -39,6 +39,28 @@ Content-type: application/json
       "rerankingModelType": "{{string}}"
    },
    "generateResponse": {{boolean}},
+   "memoryConfiguration": {
+      "memoryId": "{{string}}",
+      "persistenceMode": "{{string}}",
+      "retrievalConfigs": [
+         {
+            "metadataFilters": [
+               {
+                  "left": { ... },
+                  "operator": "{{string}}",
+                  "right": { ... }
+               }
+            ],
+            "namespace": "{{string}}",
+            "namespacePath": "{{string}}",
+            "strategyId": "{{string}}"
+         }
+      ],
+      "sessionBinding": {
+         "actorId": "{{string}}",
+         "sessionId": "{{string}}"
+      }
+   },
    "messages": [
       {
          "content": {
@@ -84,6 +106,11 @@ Required: Yes
  ** [generateResponse](#API_agent-runtime_AgenticRetrieveStream_RequestSyntax) **   <a name="bedrock-agent-runtime_AgenticRetrieveStream-request-generateResponse"></a>
 Whether to generate a response based on the retrieved results.
 Type: Boolean
+Required: No
+
+ ** [memoryConfiguration](#API_agent-runtime_AgenticRetrieveStream_RequestSyntax) **   <a name="bedrock-agent-runtime_AgenticRetrieveStream-request-memoryConfiguration"></a>
+The configuration for using an Amazon Bedrock AgentCore Memory resource with this retrieval.
+Type: [AgenticRetrieveMemoryConfiguration](API_agent-runtime_AgenticRetrieveMemoryConfiguration.md) object
 Required: No
 
  ** [messages](#API_agent-runtime_AgenticRetrieveStream_RequestSyntax) **   <a name="bedrock-agent-runtime_AgenticRetrieveStream-request-messages"></a>
@@ -183,6 +210,15 @@ Content-type: application/json
                   "sourceRetriever": {
                      "identifier": "string"
                   }
+               },
+               "memoryRetrieve": {
+                  "inputQuery": {
+                     "text": "string"
+                  },
+                  "memoryId": "string",
+                  "namespace": "string",
+                  "namespacePath": "string",
+                  "strategyId": "string"
                },
                "retrieve": {
                   "inputQuery": {

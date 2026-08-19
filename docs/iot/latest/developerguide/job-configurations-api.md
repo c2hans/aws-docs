@@ -136,7 +136,7 @@ To add this configuration by using the API, specify the [`TimeoutConfig`](https:
 
 To use the timeout configuration
 
-1. To set the in-progress timer when you're creating a job or job template, set a value for the `inProgressTimeoutInMinutes` property of the optional [TimeoutConfig](https://docs.aws.amazon.com//iot/latest/apireference/API_TimeoutConfig.html) object.
+1. To set the in-progress timer when you're creating a job or job template, set a value for the `inProgressTimeoutInMinutes` property of the optional [TimeoutConfig](https://docs.aws.amazon.com/iot/latest/apireference/API_TimeoutConfig.html) object.
 
    ```
        "timeoutConfig": {
@@ -144,7 +144,7 @@ To use the timeout configuration
       }
    ```
 
-1. To specify a step timer for a job execution, set a value for `stepTimeoutInMinutes` when you call [UpdateJobExecution](https://docs.aws.amazon.com//iot/latest/apireference/API_iot-jobs-data_UpdateJobExecution.html). The step timer applies only to the job execution that you update. You can set a new value for this timer each time you update a job execution.
+1. To specify a step timer for a job execution, set a value for `stepTimeoutInMinutes` when you call [UpdateJobExecution](https://docs.aws.amazon.com/iot/latest/apireference/API_iot-jobs-data_UpdateJobExecution.html). The step timer applies only to the job execution that you update. You can set a new value for this timer each time you update a job execution.
 **Note**
 `UpdateJobExecution` can discard a step timer that's already been created by creating a new step timer with a value of -1.
 
@@ -158,7 +158,7 @@ To use the timeout configuration
    }
    ```
 
-1. To create a new step timer, you can also call the [StartNextPendingJobExecution](https://docs.aws.amazon.com//iot/latest/apireference/API_iot-jobs-data_StartNextPendingJobExecution.html) API operation.
+1. To create a new step timer, you can also call the [StartNextPendingJobExecution](https://docs.aws.amazon.com/iot/latest/apireference/API_iot-jobs-data_StartNextPendingJobExecution.html) API operation.
 
 ## Retry configuration
 <a name="job-retry-api"></a>

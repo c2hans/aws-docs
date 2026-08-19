@@ -48,7 +48,7 @@ You can configure advanced event selectors to filter on the `eventName`, `readOn
 
 [Management events](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-management-events-with-cloudtrail.html#logging-management-events) provide information about management operations that are performed on resources in your AWS account. These are also known as control plane operations. By default, CloudTrail logs management events.
 
-AWS End User Messaging SMS logs all AWS End User Messaging SMS control plane operations as management events. For a list of the AWS End User Messaging SMS control plane operations that AWS End User Messaging SMS logs to CloudTrail, see the [AWS End User Messaging SMS and Voice V2 API Reference](https://docs.aws.amazon.com//pinpoint/latest/apireference_smsvoicev2/Welcome.html).
+AWS End User Messaging SMS logs all AWS End User Messaging SMS control plane operations as management events. For a list of the AWS End User Messaging SMS control plane operations that AWS End User Messaging SMS logs to CloudTrail, see the [AWS End User Messaging SMS and Voice V2 API Reference](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/Welcome.html).
 
 ## AWS End User Messaging SMS event examples
 <a name="cloudtrail-event-examples"></a>

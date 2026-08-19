@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/supported-regions.h
 
 The following AWS Regions are supported by AWS Elastic Disaster Recovery:
 
-****
-
 | Region name | Region identity | Support in AWS Elastic Disaster Recovery |
 | --- | --- | --- |
 | Africa (Cape Town) | af-south-1 | Yes |

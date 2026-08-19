@@ -51,8 +51,6 @@ When you create a DB cluster using the AWS Management Console, you can't specify
 
 If you don't specify a preferred backup window when you create the DB cluster, Aurora assigns a default 30-minute backup window. This window is selected at random from an 8-hour block of time for each AWS Region. The following table lists the time blocks for each AWS Region from which the default backup windows are assigned.
 
-****
-
 | Region Name | Region | Time Block |
 | --- | --- | --- |
 | US East (N. Virginia) | us-east-1 | 03:00–11:00 UTC |

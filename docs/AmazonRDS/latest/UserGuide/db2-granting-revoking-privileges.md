@@ -369,8 +369,6 @@ The master user, who has `DBADM` authorization, can grant `DBADM`, `ACCESSCTRL`,
 
 The following procedure walks you through creating a role, granting `DBADM` authorization to the role, assigning the role to a user, and granting the role to a group.
 
-****
-
 1. Connect to the `rdsadmin` database using the master username and master password for your RDS for Db2 DB instance. In the following example, replace {{master\_username}} and {{master\_password}} with your own information.
 
    ```

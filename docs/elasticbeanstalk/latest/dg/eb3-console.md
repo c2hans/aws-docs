@@ -22,8 +22,6 @@ If the root directory contains a `platform.yaml` file specifying a custom platfo
 ## Options
 <a name="eb3-consoleoptions"></a>
 
-****
-
 |  Name  |  Description  |
 | --- | --- |
 | [Common options](eb3-cmd-options.md) |  |

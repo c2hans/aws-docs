@@ -9,8 +9,6 @@ Amazon Q Business is no longer open to new customers. For capabilities similar t
 
 The following table gives an overview of the Google Calendar connector and its supported features.
 
-****
-
 - ****Security****
   - **Feature:** Authentication type / **Support:** Google Service Account and OAuth 2.0
   - **Feature:** Authentication credentials / **Support:** +  Google service account <br />+  Admin account email <br />+  Client email <br />+  Private key <br />OAuth 2.0 <br />+  Client ID <br />+  Client secret <br />+  Refresh token

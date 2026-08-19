@@ -481,8 +481,6 @@ The configuration changes that you need to set for the v2 transfer manager depen
 ------
 #### [ Use the AWS CRT-based S3 client ]
 
-****
-
 | Setting | v1 | v2 - Transfer Manager using AWS CRT-based S3 client |
 | --- | --- | --- |
 |  <br />(get a builder) |  <pre>TransferManagerBuilder tmBuilder = <br />   TransferManagerBuilder.standard();</pre>  |  <pre>S3TransferManager.Builder tmBuilder  = <br />  S3TransferManager.builder();</pre>  |
@@ -498,8 +496,6 @@ The configuration changes that you need to set for the v2 transfer manager depen
 
 ------
 #### [ Use Java-based S3 async client ]
-
-****
 
 | Setting | v1 | v2 - Transfer Manager using Java-based S3 async client |
 | --- | --- | --- |

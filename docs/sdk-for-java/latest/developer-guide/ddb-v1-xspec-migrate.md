@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/ddb-
 
 The Expression Specification (Xspec) API available in V1 that helps create expressions to work with document-oriented data is not available in V2. V2 uses the Expression API, which works with both document-oriented data and object-to-item mapped data.
 
-****
-
 |  | V1 | V2 |
 | --- | --- | --- |
 | API name | Expression Specification (Xspec) API | Expression API |

@@ -105,7 +105,7 @@ VPC Lattice supports Availability Zone (AZ) affinity for routing traffic. When a
 
 You can create, access, and manage VPC Lattice using any of the following interfaces:
 + **AWS Management Console** – Provides a web interface that you can use to access VPC Lattice.
-+ **AWS Command Line Interface (AWS CLI)** – Provides commands for a broad set of AWS services, including VPC Lattice. The AWS CLI is supported on Windows, MacOS, and Linux. For more information about the CLI, see [AWS Command Line Interface](https://aws.amazon.com/cli/). For more information about the APIs, see [Amazon VPC Lattice API Reference](https://docs.aws.amazon.com//vpc-lattice/latest/APIReference/).
++ **AWS Command Line Interface (AWS CLI)** – Provides commands for a broad set of AWS services, including VPC Lattice. The AWS CLI is supported on Windows, MacOS, and Linux. For more information about the CLI, see [AWS Command Line Interface](https://aws.amazon.com/cli/). For more information about the APIs, see [Amazon VPC Lattice API Reference](https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/).
 + **VPC Lattice Controller for Kubernetes** – Manages VPC Lattice resources for a Kubernetes cluster. For more information about using VPC Lattice with Kubernetes, see the [AWS Gateway API Controller User Guide](https://www.gateway-api-controller.eks.aws.dev/).
 + **CloudFormation** – Helps you to model and set up your AWS resources. For more information, see the [Amazon VPC Lattice resource type reference](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/AWS_VpcLattice.html).
 

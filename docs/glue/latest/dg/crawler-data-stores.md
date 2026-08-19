@@ -54,6 +54,8 @@ For each Iceberg data store, you specify an Amazon S3 path that contains the met
 **Avoid concurrent writers with Iceberg crawlers**
 Use an Iceberg crawler only when it is the sole writer to a Data Catalog table. Do not use it alongside concurrent writers such as table optimizers, Apache Spark, or other engines that commit directly to the same table.
 The crawler syncs Iceberg metadata from an external catalog and must be the sole writer to the table. If another writer modifies the Data Catalog table while the crawler is running, the crawler fails to update the table.
+**Iceberg v3 data types not supported**
+AWS Glue crawlers do not support Iceberg v3 data types, including VARIANT, UNKNOWN, Geography, and Geometry. Tables that contain columns with these data types cannot be crawled.
 You can define these parameters for the data store:
 + **Exclusions**: Allows you to skip certain folders.
 + **Maximum Traversal Depth**: Sets the depth limit the crawler can crawl in your Amazon S3 bucket. The default maximum traversal depth is 10 and the maximum depth you can set is 20.

@@ -158,9 +158,9 @@ To monitor updates to your metadata table configuration, you can use AWS CloudTr
 ### Using the AWS CLI
 <a name="create-metadata-config-cli"></a>
 
-To run the following commands, you must have the AWS CLI installed and configured. If you don't have the AWS CLI installed, see [Install or update to the latest version of the AWS CLI](https://docs.aws.amazon.com//cli/latest/userguide/getting-started-install.html) in the *AWS Command Line Interface User Guide*.
+To run the following commands, you must have the AWS CLI installed and configured. If you don't have the AWS CLI installed, see [Install or update to the latest version of the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) in the *AWS Command Line Interface User Guide*.
 
-Alternatively, you can run AWS CLI commands from the console by using AWS CloudShell. AWS CloudShell is a browser-based, pre-authenticated shell that you can launch directly from the AWS Management Console. For more information, see [What is CloudShell?](https://docs.aws.amazon.com//cloudshell/latest/userguide/welcome.html) and [Getting started with AWS CloudShell](https://docs.aws.amazon.com//cloudshell/latest/userguide/getting-started.html) in the *AWS CloudShell User Guide*.
+Alternatively, you can run AWS CLI commands from the console by using AWS CloudShell. AWS CloudShell is a browser-based, pre-authenticated shell that you can launch directly from the AWS Management Console. For more information, see [What is CloudShell?](https://docs.aws.amazon.com/cloudshell/latest/userguide/welcome.html) and [Getting started with AWS CloudShell](https://docs.aws.amazon.com/cloudshell/latest/userguide/getting-started.html) in the *AWS CloudShell User Guide*.
 
 **To create a metadata table configuration by using the AWS CLI**
 
@@ -228,12 +228,12 @@ To monitor updates to your metadata table configuration, you can use AWS CloudTr
 ### Using the REST API
 <a name="create-metadata-config-rest-api"></a>
 
-You can send REST requests to create a metadata table configuration. For more information, see [CreateBucketMetadataConfiguration](https://docs.aws.amazon.com//AmazonS3/latest/API/API_CreateBucketMetadataConfiguration.html) in the *Amazon S3 API Reference*.
+You can send REST requests to create a metadata table configuration. For more information, see [CreateBucketMetadataConfiguration](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CreateBucketMetadataConfiguration.html) in the *Amazon S3 API Reference*.
 
 ### Using the AWS SDKs
 <a name="create-metadata-config-sdk"></a>
 
-You can use the AWS SDKs to create a metadata table configuration in Amazon S3. For information, see the [list of supported SDKs](https://docs.aws.amazon.com//AmazonS3/latest/API/API_CreateBucketMetadataConfiguration.html#API_CreateBucketMetadataConfiguration_SeeAlso) in the *Amazon S3 API Reference*.
+You can use the AWS SDKs to create a metadata table configuration in Amazon S3. For information, see the [list of supported SDKs](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CreateBucketMetadataConfiguration.html#API_CreateBucketMetadataConfiguration_SeeAlso) in the *Amazon S3 API Reference*.
 
 ## Enabling inventory and annotation tables on metadata configurations created before July 15, 2025
 <a name="metadata-tables-migration"></a>

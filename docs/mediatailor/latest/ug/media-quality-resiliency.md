@@ -37,7 +37,7 @@ Configure your MediaLive outputs with these settings:
 + Configure output segment sequence numbers so they never go backward across encoding sessions.
 + Use identical encoder output names across all Regions.
 
-For more information about configuring MediaLive for MQAR, see [Working with MQCS](https://docs.aws.amazon.com//medialive/latest/ug/mqcs.html) in the MediaLive user guide.
+For more information about configuring MediaLive for MQAR, see [Working with MQCS](https://docs.aws.amazon.com/medialive/latest/ug/mqcs.html) in the MediaLive user guide.
 
 ## Step 3: Configure MediaPackage for MQAR
 <a name="mqar-mediapackage-config"></a>
@@ -57,7 +57,7 @@ Set up your MediaPackage channels and endpoints with these configurations:
 
 1. For back-up MediaPackage origins, do not enable these error configurations to maximize chances of successful failover.
 
-For more information about configuring MediaPackage for MQAR, see [Leveraging media quality scores by using AWS Elemental MediaPackage](https://docs.aws.amazon.com//mediapackage/latest/userguide/mqcs.html) in the MediaPackage user guide.
+For more information about configuring MediaPackage for MQAR, see [Leveraging media quality scores by using AWS Elemental MediaPackage](https://docs.aws.amazon.com/mediapackage/latest/userguide/mqcs.html) in the MediaPackage user guide.
 
 ## Step 4: Configure CloudFront for MQAR
 <a name="mqar-cloudfront-config"></a>
@@ -79,7 +79,7 @@ In the CloudFront configuration, you enable MQAR and define how it selects betwe
 **Note**
 MQAR is not available when using Lambda@Edge functions in origin-facing triggers (origin request and origin response) that are associated with your distribution's cache behavior.
 
-For more information about configuring CloudFront for MQAR, see [Media quality-aware resiliency](https://docs.aws.amazon.com//AmazonCloudFront/latest/DeveloperGuide/media-quality-score.html) in the CloudFront developer guide.
+For more information about configuring CloudFront for MQAR, see [Media quality-aware resiliency](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/media-quality-score.html) in the CloudFront developer guide.
 
 ## Step 5: Configure MediaTailor for MQAR
 <a name="mqar-mediatailor-config"></a>

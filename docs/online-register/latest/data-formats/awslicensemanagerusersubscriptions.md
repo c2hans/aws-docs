@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsl
 
 AWS License Manager User Subscriptions provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="license-manager-user-subscriptions-ListIdentityProviders"></a>[ListIdentityProviders](https://docs.aws.amazon.com/license-manager-user-subscriptions/latest/APIReference/API_ListIdentityProviders.html) | List all the identity providers on license manager user subscriptions | List |

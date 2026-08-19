@@ -12,7 +12,7 @@ You can view environment detail data using either the AWS Proton console or the 
 ------
 #### [ AWS Management Console ]
 
-**You can view lists of environments with details and individual environments with detail data by using the [AWS Proton console](https://console.aws.amazon.com//proton/).**
+**You can view lists of environments with details and individual environments with detail data by using the [AWS Proton console](https://console.aws.amazon.com/proton/).**
 
 1. To view a list of your environments, choose **Environments** in the navigation pane.
 

@@ -11,8 +11,6 @@ You must have certain IAM permissions to use Managed kdb. In addition to the [fi
 
 The following table shows a list of permissions and what they are needed for.
 
-****
-
 <table>
 <thead>
   <tr><th>Permissions (IAM actions)</th><th>Use for</th><th>Used by</th></tr>

@@ -42,14 +42,14 @@ You can enable trusted propagation use cases with the following analytics and ma
 
 You can enable IAM Identity Center and trusted identity propagation with these additional AWS services:
 + **Amazon Q Business** - for guidance, see:
-  + [Admin workflow for apps using IAM Identity Center](https://docs.aws.amazon.com//amazonq/latest/qbusiness-ug/how-it-works.html#admin-flow-idc).
-  + [Configuring an Amazon Q Business application using IAM Identity Center](https://docs.aws.amazon.com//amazonq/latest/qbusiness-ug/create-application.html).
-  + [Configure Amazon Q Business with IAM Identity Center trusted identity propagation](https://aws.amazon.com/blogs//machine-learning/configuring-amazon-q-business-with-aws-iam-identity-center-trusted-identity-propagation/).
+  + [Admin workflow for apps using IAM Identity Center](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/how-it-works.html#admin-flow-idc).
+  + [Configuring an Amazon Q Business application using IAM Identity Center](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/create-application.html).
+  + [Configure Amazon Q Business with IAM Identity Center trusted identity propagation](https://aws.amazon.com/blogs/machine-learning/configuring-amazon-q-business-with-aws-iam-identity-center-trusted-identity-propagation/).
 + **Amazon OpenSearch Service** - for guidance, see:
-  + [IAM Identity Center Trusted Identity Propagation Support for Amazon OpenSearch Service](https://docs.aws.amazon.com//opensearch-service/latest/developerguide/idc-aos.html).
-  + [Centralized OpenSearch user interface (Dashboards) with Amazon OpenSearch Service](https://docs.aws.amazon.com//opensearch-service/latest/developerguide/application.html).
+  + [IAM Identity Center Trusted Identity Propagation Support for Amazon OpenSearch Service](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/idc-aos.html).
+  + [Centralized OpenSearch user interface (Dashboards) with Amazon OpenSearch Service](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/application.html).
 + **AWS Transfer Family** - for guidance, see:
-  + [Transfer Family web apps](https://docs.aws.amazon.com//transfer/latest/userguide/web-app.html).
+  + [Transfer Family web apps](https://docs.aws.amazon.com/transfer/latest/userguide/web-app.html).
 
 **Topics**
 + [Analytics, data lakehouse, and machine learning use cases](#tip-data-analytic-usecases-overview)

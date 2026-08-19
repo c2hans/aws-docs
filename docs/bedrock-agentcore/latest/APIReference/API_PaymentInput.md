@@ -18,6 +18,11 @@ Input for a crypto X402 payment.
 Type: [CryptoX402PaymentInput](API_CryptoX402PaymentInput.md) object
 Required: No
 
+ ** mpp **   <a name="BedrockAgentCore-Type-PaymentInput-mpp"></a>
+Contains the payment challenge from a 402 Payment Required response. Forward the raw `WWW-Authenticate: Payment` header value verbatim. In response, you receive a payment credential that satisfies the challenge. Provide exactly one challenge per request.
+Type: [MppPaymentInput](API_MppPaymentInput.md) object
+Required: No
+
 ## See Also
 <a name="API_PaymentInput_SeeAlso"></a>
 

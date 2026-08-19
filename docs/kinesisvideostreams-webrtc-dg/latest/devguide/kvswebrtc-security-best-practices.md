@@ -16,7 +16,7 @@ When granting permissions, you decide who is getting what permissions to which K
 
 For example, a producer that sends data to Kinesis Video Streams requires only `PutMedia`, `GetStreamingEndpoint`, and `DescribeStream`. Do not grant producer applications permissions for all actions (`*`), or for other actions such as `GetMedia`.
 
-For more information, see [Apply least-privilege permissions](https://docs.aws.amazon.com//IAM/latest/UserGuide/best-practices.html#grant-least-privilege).
+For more information, see [Apply least-privilege permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#grant-least-privilege).
 
 ## Use IAM roles
 <a name="security-best-practices-roles"></a>

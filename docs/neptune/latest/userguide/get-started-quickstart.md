@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/get-started-qui
 # Quick start using AWS CloudShell
 <a name="get-started-quickstart"></a>
 
-This guide helps you get started quickly by using [AWS CloudShell](https://docs.aws.amazon.com//cloudshell/latest/userguide/welcome.html) to connect to and query your Neptune cluster directly from the AWS Management Console.
+This guide helps you get started quickly by using [AWS CloudShell](https://docs.aws.amazon.com/cloudshell/latest/userguide/welcome.html) to connect to and query your Neptune cluster directly from the AWS Management Console.
 
 **Time to complete:** Approximately 2 minutes
 
@@ -13,13 +13,13 @@ This guide helps you get started quickly by using [AWS CloudShell](https://docs.
 
 ## Prerequisites
 <a name="get-started-quickstart-prereqs"></a>
-+ An AWS account. If you don't have one, see [Setting up your AWS account](https://docs.aws.amazon.com//SetUp/).
++ An AWS account. If you don't have one, see [Setting up your AWS account](https://docs.aws.amazon.com/SetUp/).
 + A Neptune cluster with status **Available**. If you don't already have one, see [Launching a Neptune DB cluster using the AWS Management Console](manage-console-launch-console.md) to create one.
 
 ## Step 1: Connect to your Neptune cluster
 <a name="get-started-quickstart-connect"></a>
 
-Connect to your Neptune cluster using [AWS CloudShell](https://docs.aws.amazon.com//cloudshell/latest/userguide/welcome.html). CloudShell automatically provisions a shell environment connected to your cluster's VPC. You don't need to configure security groups or set up notebooks to interact with the database.
+Connect to your Neptune cluster using [AWS CloudShell](https://docs.aws.amazon.com/cloudshell/latest/userguide/welcome.html). CloudShell automatically provisions a shell environment connected to your cluster's VPC. You don't need to configure security groups or set up notebooks to interact with the database.
 
 **To connect to your cluster**
 

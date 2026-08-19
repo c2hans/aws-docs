@@ -10,6 +10,7 @@ The following table describes the documentation release history of AWS Certifica
 | Change | Description | Date |
 | --- |--- |--- |
 | [Adding best practice for domain name privacy](acm-bestpractices.md#best-practices-domain-name-privacy) | Advises against including confidential or sensitive information in ACM public certificate domain names. | July 29, 2026 |
+| [Email-to-DNS validation migration](#dochistory) | You can now migrate an existing email-validated public ACM certificate to DNS validation while preserving the certificate ARN. For more information, see [Migrating from email to DNS validation](https://docs.aws.amazon.com/acm/latest/userguide/email-to-dns-migration.html). | July 9, 2026 |
 | [ACME certificate automation](#dochistory) | Added support for the Automated Certificate Management Environment (ACME) protocol. You can now create ACME endpoints, configure domain validations, and generate external account bindings to automate public certificate issuance for customer-managed infrastructure using standard ACME clients. See [ACME certificate automation](https://docs.aws.amazon.com/acm/latest/userguide/acm-acme.html). | June 18, 2026 |
 | [AWS Workload Credentials Provider](#dochistory) | AWS announces AWS Workload Credentials Provider, a lightweight client-side provider that automates deployment of exported certificates from ACM across AWS and non-AWS workloads. It runs on Windows and Linux and supports NGINX and Apache web servers. See [AWS Workload Credentials Provider](https://docs.aws.amazon.com/acm/latest/userguide/acm-certificate-automation.html). | June 11, 2026 |
 | [Certificate transparency logging opt-out deprecated](#dochistory) | Certificate transparency logging opt-out is no longer available. All public ACM certificates are automatically recorded in certificate transparency logs. The `CertificateTransparencyLoggingPreference` option is deprecated. With this update, ACM issued public certificates will be compliant with upcoming browser policy changes which require that all TLS server authentication certificates issued after June 15, 2026 are logged to at least one Certificate Transparency log. | June 1, 2026 |
@@ -41,7 +42,7 @@ The following table describes the documentation release history of AWS Certifica
 
 | Change | Description | Release Date |
 | --- | --- | --- |
-| New content | Added DNS validation to [AWS Certificate Manager DNS validationDNS validation](dns-validation.md).  | November 21, 2017 |
+| New content | Added DNS validation to [AWS Certificate Manager DNS validation](dns-validation.md).  | November 21, 2017 |
 | New content | Added new Java code examples to [Use AWS Certificate Manager with the SDK for Java](sdk.md).  | October 12, 2017 |
 | New content | Added information about CAA records to [(Optional) Configure a CAA record](setup.md#setup-caa).  | September 21, 2017 |
 | New content | Added information about .IO domains to [Troubleshoot issues with AWS Certificate Manager](troubleshooting.md).  | July 07, 2017 |

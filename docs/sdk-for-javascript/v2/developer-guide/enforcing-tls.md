@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/enforcing-tls.html
 ---
 
-The AWS SDK for JavaScript v2 has reached end-of-support. We recommend that you migrate to [AWS SDK for JavaScript v3](https://docs.aws.amazon.com//sdk-for-javascript/v3/developer-guide/). For additional details and information on how to migrate, please refer to this [announcement](https://aws.amazon.com/blogs//developer/announcing-end-of-support-for-aws-sdk-for-javascript-v2/).
+The AWS SDK for JavaScript v2 has reached end-of-support. We recommend that you migrate to [AWS SDK for JavaScript v3](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/). For additional details and information on how to migrate, please refer to this [announcement](https://aws.amazon.com/blogs/developer/announcing-end-of-support-for-aws-sdk-for-javascript-v2/).
 
 # Enforcing a minimum version of TLS
 <a name="enforcing-tls"></a>
@@ -12,7 +12,7 @@ To add increased security when communicating with AWS services, configure the AW
 Transport Layer Security (TLS) is a protocol used by web browsers and other applications to ensure the privacy and integrity of data exchanged over a network.
 
 **Important**
-As of June 10, 2024, we [announced](https://aws.amazon.com/blogs//security/faster-aws-cloud-connections-with-tls-1-3/) that TLS 1.3 is available on AWS service API endpoints across each of the AWS Regions. The AWS SDK for JavaScript v2 does not negotiate the TLS version itself. Instead, it uses the TLS version determined by Node.js, which is configurable via `https.Agent`. AWS recommends using the current Active LTS version of Node.js.
+As of June 10, 2024, we [announced](https://aws.amazon.com/blogs/security/faster-aws-cloud-connections-with-tls-1-3/) that TLS 1.3 is available on AWS service API endpoints across each of the AWS Regions. The AWS SDK for JavaScript v2 does not negotiate the TLS version itself. Instead, it uses the TLS version determined by Node.js, which is configurable via `https.Agent`. AWS recommends using the current Active LTS version of Node.js.
 
 ## Verify and enforce TLS in Node.js
 <a name="node-verify-enforce-tls"></a>

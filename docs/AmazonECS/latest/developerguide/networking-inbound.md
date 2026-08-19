@@ -59,7 +59,7 @@ API Gateway functions which use a VPC link that allows the AWS managed service t
 
 API Gateway supports the following features.
 + The API Gateway operation is similar to a load balancer, but has additional capabilities unique to API management
-+ The API Gateway provides additional capabilities around client authorization, usage tiers, and request/response modification. For more information, see [Amazon API Gateway features](https://aws.amazon.com//api-gateway/features/).
++ The API Gateway provides additional capabilities around client authorization, usage tiers, and request/response modification. For more information, see [Amazon API Gateway features](https://aws.amazon.com/api-gateway/features/).
 + The API Gateway can support edge, regional, and private API gateway endpoints. Edge endpoints are available through a managed CloudFront distribution. Regional and private endpoints are both local to a Region.
 + SSL/TLS termination
 + Routing different HTTP paths to different backend microservices

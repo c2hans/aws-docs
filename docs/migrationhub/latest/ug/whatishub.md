@@ -28,7 +28,7 @@ On your first use of the AWS Migration Hub console, you’re prompted to select 
 
 To learn about sending status to or querying status from AWS Migration Hub using the AWS SDK or AWS CLI, see the following API references:
 +  [AWS Migration Hub API](api-reference.md)
-+  [AWS Migration Hub Home Region API](https://docs.aws.amazon.com//migrationhub-home-region/latest/APIReference/Welcome.html)
++  [AWS Migration Hub Home Region API](https://docs.aws.amazon.com/migrationhub-home-region/latest/APIReference/Welcome.html)
 
 **Note**
 Only your migration tracking data is stored in your home region. You can migrate into any AWS Region that is supported by the migration tool that you use.

@@ -27,7 +27,7 @@ We recommend that you avoid combining `Reject` or `Alert` domain list rule group
   For more information about actions, see [Defining rule actions in AWS Network Firewall](rule-action.md).
 + **(Optional) `HOME_NET` rule group variable** – Used to expand the local network definition beyond the CIDR range of the VPC where you deploy Network Firewall. For additional information about this setting, see [Domain list inspection for traffic from outside the deployment VPC](#stateful-rule-groups-domain-names-home-net).
 
-  See the caveats for the `HOME_NET` and `EXTERNAL_NET` settings at [Suricata features that Network Firewall supports with caveatsSupported with caveats](suricata-limitations-caveats.md#suricata-supported-with-caveats).
+  See the caveats for the `HOME_NET` and `EXTERNAL_NET` settings at [Suricata features that Network Firewall supports with caveats](suricata-limitations-caveats.md#suricata-supported-with-caveats).
 **Note**
 The console doesn't currently allow entry of all rule group variables. To specify other rule group variables, use one of the APIs or AWS CloudFormation. For information, see [StatefulRule](https://docs.aws.amazon.com/network-firewall/latest/APIReference/API_StatefulRule.html) in the *AWS Network Firewall API Reference* and [AWS::NetworkFirewall::RuleGroup StatefulRule](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-networkfirewall-rulegroup-statefulrule.html) in the *AWS CloudFormation User Guide*.
 

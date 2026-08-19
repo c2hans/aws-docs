@@ -52,7 +52,7 @@ $ sudo /opt/cloudhsm/bin/configure-pkcs11 add-cluster --cluster-id {{<cluster-12
 ```
 
 ```
-PS C:\> & "C:\Program Files\Amazon\CloudHSM\bin\configure-pkcs11.exe" add-cluster --cluster-id {{<cluster-1234567>}}--region {{<us-east-1>}} --endpoint {{<https://cloudhsmv2.us-east-1.amazonaws.com>}}
+PS C:\> & "C:\Program Files\Amazon\CloudHSM\bin\configure-pkcs11.exe" add-cluster --cluster-id {{<cluster-1234567>}} --region {{<us-east-1>}} --endpoint {{<https://cloudhsmv2.us-east-1.amazonaws.com>}}
 ```
 
 For more information about the `--cluster-id`, `--region`, and `--endpoint` parameters, see [AWS CloudHSM Client SDK 5 configuration parameters](configure-tool-params5.md).

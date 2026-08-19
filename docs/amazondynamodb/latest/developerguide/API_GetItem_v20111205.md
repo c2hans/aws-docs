@@ -39,8 +39,6 @@ content-type: application/x-amz-json-1.0
 }
 ```
 
-****
-
 |  Name  |  Description  |  Required |
 | --- | --- | --- |
 |  TableName  | The name of the table containing the requested item. <br />Type: String |  Yes  |
@@ -68,8 +66,6 @@ content-length: 144
 "ConsumedCapacityUnits": 0.5
 }
 ```
-
-****
 
 |  Name  |  Description  |
 | --- | --- |

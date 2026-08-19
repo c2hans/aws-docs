@@ -14,8 +14,6 @@ Update an existing RDS maintenance window, which is a weekly time range (in UTC)
 ## Change Type Details
 <a name="ct-27jjy5wnrfef2-MARu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-27jjy5wnrfef2 |

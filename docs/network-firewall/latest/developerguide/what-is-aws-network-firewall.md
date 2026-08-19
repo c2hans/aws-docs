@@ -10,7 +10,7 @@ AWS Network Firewall is a stateful, managed, network firewall and intrusion dete
 Network Firewall uses the open source intrusion prevention system (IPS), Suricata, for stateful inspection, and supports Suricata compatible rules. For more information, see [Working with stateful rule groups in AWS Network Firewall](stateful-rule-groups-ips.md).
 
 **Note**
-This section and others that describe Suricata-based concepts are not intended to replace or duplicate information from the Suricata documentation. For more Suricata-specific information, see the [Suricata documentation](https://docs.suricata.io/en/suricata-7.0.8/).
+This section and others that describe Suricata-based concepts are not intended to replace or duplicate information from the Suricata documentation. For more Suricata-specific information, see the [Suricata documentation](https://docs.suricata.io/en/suricata-8.0.3/).
 
 You can use Network Firewall to monitor and protect your Amazon VPC traffic in a number of ways, including the following:
 + Pass traffic through only from known AWS service domains or IP address endpoints, such as Amazon S3.

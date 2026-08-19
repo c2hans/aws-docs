@@ -104,7 +104,7 @@ This feature is not available in the following Regions:
 
 1. Choose **Actions**, **Monitor and troubleshoot**, **Get instance screenshot**.
 
-1. Choose **Download**, or right-click the image to download and save it.
+1. Choose **Download**, or open the context (right-click) menu for the image to download and save it.
 
 ------
 #### [ AWS CLI ]

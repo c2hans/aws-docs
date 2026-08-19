@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/timestream/latest/developerguide/timestream-for-influx-working-read-replica.html
 ---
 
-For similar capabilities to Amazon Timestream for LiveAnalytics, consider Amazon Timestream for InfluxDB. It offers simplified data ingestion and single-digit millisecond query response times for real-time analytics. Learn more [here](https://docs.aws.amazon.com//timestream/latest/developerguide/timestream-for-influxdb.html).
+For similar capabilities to Amazon Timestream for LiveAnalytics, consider Amazon Timestream for InfluxDB. It offers simplified data ingestion and single-digit millisecond query response times for real-time analytics. Learn more [here](https://docs.aws.amazon.com/timestream/latest/developerguide/timestream-for-influxdb.html).
 
 # Working with Multi-AZ read replica clusters for Amazon Timestream for InfluxDB
 <a name="timestream-for-influx-working-read-replica"></a>
@@ -13,8 +13,6 @@ A read replica cluster deployment is an asynchronous deployment mode of Amazon T
 <a name="timestream-for-influx-instance-class-rr"></a>
 
 Read replica cluster deployments are supported for the same instance types as regular Timestream for InfluxDB instances.
-
-****
 
 | Instance class | vCPU | Memory (GiB) | Storage type | Network bandwidth (Gbps) |
 | --- | --- | --- | --- | --- |

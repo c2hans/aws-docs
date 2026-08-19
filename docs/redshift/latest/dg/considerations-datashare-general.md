@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/considerations-datash
 <a name="considerations-datashare-general"></a>
 
 The following are general considerations when working with datashares in Amazon Redshift:
-+ *Default database* – When you read data from a datashare, you remain connected to your local cluster database. For more information about setting up and reading from a database created from a datashare, see [Querying datashare objects](https://docs.aws.amazon.com/redshift/latest/mgmt/query-editor-v2-datashare-using.html#query-editor-v2-datashare-consumer) and [Materialized views on external data lake tables in Amazon Redshift SpectrumMaterialized views on external data lake tables](materialized-view-external-table.md).
++ *Default database* – When you read data from a datashare, you remain connected to your local cluster database. For more information about setting up and reading from a database created from a datashare, see [Querying datashare objects](https://docs.aws.amazon.com/redshift/latest/mgmt/query-editor-v2-datashare-using.html#query-editor-v2-datashare-consumer) and [Materialized views on external data lake tables in Amazon Redshift Spectrum](materialized-view-external-table.md).
 + *Connections* – You must be connected directly to a datashare database or run the USE command to write to datashares. You can also use three-part notation. The USE command is not supported on external tables.
 + *Performance* – The performance of the queries on shared data depends on the compute capacity of the consumer clusters.
 + *Data transfer charges* – Cross-Region data sharing includes additional cross-Region data-transfer charges.

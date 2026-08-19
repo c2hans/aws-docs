@@ -36,8 +36,6 @@ LOCATION 's3://amzn-s3-demo-bucket/'
 
 Instead of using the `STORED AS ION` syntax, you can explicitly specify the Ion class path values for the `ROW FORMAT SERDE`, `INPUTFORMAT`, and `OUTPUTFORMAT` clauses as follows.
 
-****
-
 | Parameter | Ion class path |
 | --- | --- |
 | ROW FORMAT SERDE | 'com.amazon.ionhiveserde.IonHiveSerDe' |

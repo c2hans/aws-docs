@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/data-types-examples.htm
 
 The following table shows example literals for DML data types.
 
-****
-
 | Data type | Examples |
 | --- | --- |
 | BOOLEAN | `true`<br />`false ` |

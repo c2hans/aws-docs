@@ -9,8 +9,6 @@ Amazon Q Business is no longer open to new customers. For capabilities similar t
 
 The following table shows the Amazon Q Business Microsoft Exchange connector features and capabilities.
 
-****
-
 - ****Security****
   - **Feature:** Authentication type / **Latest Connector:** OAuth 2.0 with Client Credentials Flow / **Legacy Connector:** OAuth 2.0 with Client Credentials Flow
   - **Feature:** Authentication credentials / **Latest Connector:** +  Microsoft Exchange Client ID <br />+  Microsoft Exchange Client secret  / **Legacy Connector:** +  Microsoft Exchange Client ID <br />+  Microsoft Exchange Client secret

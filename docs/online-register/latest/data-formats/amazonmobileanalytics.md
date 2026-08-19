@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon Mobile Analytics provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="mobileanalytics-GetFinancialReports"></a>GetFinancialReports | Grant access to financial metrics for an app | Read |

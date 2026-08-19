@@ -229,20 +229,14 @@ Schedule from Parent reference
 ## Syntax
 <a name="schedule-syntax"></a>
 
-****
-
 | Required Fields | Description | Slot Type |
 | --- | --- | --- |
 | period | How often the pipeline should run. The format is "N [minutes\|hours\|days\|weeks\|months]", where N is a number followed by one of the time specifiers. For example, "15 minutes", runs the pipeline every 15 minutes. The minimum period is 15 minutes and the maximum period is 3 years. | Period |
-
-****
 
 | Required Group (One of the following is required) | Description | Slot Type |
 | --- | --- | --- |
 | startAt | The date and time at which to start the scheduled pipeline runs. Valid value is FIRST\_ACTIVATION\_DATE\_TIME, which is deprecated in favor of creating an on-demand pipeline. | Enumeration |
 | startDateTime | The date and time to start the scheduled runs. You must use either startDateTime or startAt but not both. | DateTime |
-
-****
 
 | Optional Fields | Description | Slot Type |
 | --- | --- | --- |
@@ -250,13 +244,9 @@ Schedule from Parent reference
 | occurrences | The number of times to execute the pipeline after it's activated. You can't use occurrences with endDateTime. | Integer |
 | parent | Parent of the current object from which slots will be inherited. | Reference Object, e.g. "parent":{"ref":"myBaseObjectId"} |
 
-****
-
 | Runtime Fields | Description | Slot Type |
 | --- | --- | --- |
 | @version | Pipeline version the object was created with. | String |
-
-****
 
 | System Fields | Description | Slot Type |
 | --- | --- | --- |

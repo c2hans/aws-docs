@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/controltower/latest/controlreference/can
 <a name="cannot-change-with-gr-api"></a>
 
 The following controls cannot be activated or deactivated by means of the AWS Control Tower APIs. Except for the landing zone Region deny control, all of these are mandatory controls. In general, mandatory controls cannot be deactivated. The landing zone Region deny control must be changed in the console.
-+ [AWS-GR\_REGION\_DENY](https://docs.aws.amazon.com//controltower/latest/controlreference/primary-region-deny-policy.html) (Landing zone Region deny control)
++ [AWS-GR\_REGION\_DENY](https://docs.aws.amazon.com/controltower/latest/controlreference/primary-region-deny-policy.html) (Landing zone Region deny control)
 + AWS-GR\_AUDIT\_BUCKET\_DELETION\_PROHIBITED
 + AWS-GR\_AUDIT\_BUCKET\_PUBLIC\_READ\_PROHIBITED
 + AWS-GR\_AUDIT\_BUCKET\_PUBLIC\_WRITE\_PROHIBITED

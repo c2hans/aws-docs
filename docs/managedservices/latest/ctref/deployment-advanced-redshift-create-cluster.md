@@ -14,8 +14,6 @@ Create an Amazon Redshift cluster that is a fully managed data warehouse that co
 ## Change Type Details
 <a name="ct-1malj7snzxrkr-DARc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1malj7snzxrkr |

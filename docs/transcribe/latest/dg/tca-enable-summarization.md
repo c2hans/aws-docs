@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/dg/tca-enable-summariz
 <a name="tca-enable-summarization"></a>
 
 **Note**
- **Powered by Amazon Bedrock:** AWS implements [automated abuse detection](https://docs.aws.amazon.com//bedrock/latest/userguide/abuse-detection.html). Because post-contact summarization powered by generative AI is built on Amazon Bedrock, users can take full advantage of the controls implemented in Amazon Bedrock to enforce safety, security, and the responsible use of artificial intelligence (AI).
+ **Powered by Amazon Bedrock:** AWS implements [automated abuse detection](https://docs.aws.amazon.com/bedrock/latest/userguide/abuse-detection.html). Because post-contact summarization powered by generative AI is built on Amazon Bedrock, users can take full advantage of the controls implemented in Amazon Bedrock to enforce safety, security, and the responsible use of artificial intelligence (AI).
 
 To use generative call summarization with a post call analytics job, see the following for examples:
 
@@ -20,7 +20,7 @@ In the Summarization panel, enable Generative call summarization to receive summ
 ## AWS CLI
 <a name="analytics-summarization-cli"></a>
 
-This example uses the [start-call-analytics-job](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/transcribe/start-call-analytics-job.html) command and `Settings` parameter with the `Summarization` sub-parameters. For more information, see [`StartCallAnalyticsJob`](https://docs.aws.amazon.com//transcribe/latest/APIReference/API_StartCallAnalyticsJob.html).
+This example uses the [start-call-analytics-job](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/transcribe/start-call-analytics-job.html) command and `Settings` parameter with the `Summarization` sub-parameters. For more information, see [`StartCallAnalyticsJob`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartCallAnalyticsJob.html).
 
 ```
 aws transcribe start-call-analytics-job \

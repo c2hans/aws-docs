@@ -17,4 +17,4 @@ When you create custom policies for Amazon Bedrock resources, grant only the per
 
 **Do not include PII in any of the agent resources containing customer data**
 
-When creating, updating, and deleting agents resources (for example, when using [CreateAgent](https://docs.aws.amazon.com//bedrock/latest/APIReference/API_agent_CreateAgent.html) ) do not include personally-identifiable information (PII) in any fields that do not support using customer managed key such as action group names and knowledgebase names. For the list of fields that support using customer managed key, see [Encryption of agent resources with customer managed keys (CMK)](cmk-agent-resources.md)
+When creating, updating, and deleting agents resources (for example, when using [CreateAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateAgent.html) ) do not include personally-identifiable information (PII) in any fields that do not support using customer managed key such as action group names and knowledgebase names. For the list of fields that support using customer managed key, see [Encryption of agent resources with customer managed keys (CMK)](cmk-agent-resources.md)

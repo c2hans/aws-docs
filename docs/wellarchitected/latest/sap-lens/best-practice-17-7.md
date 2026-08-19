@@ -14,7 +14,7 @@ Automation of the build process by using infrastructure as code has cost efficie
 Working with AWS Professional Services or an AWS Partner can reduce the overall effort by leveraging their experience.
 
  AWS Launch Wizard for SAP can accelerate SAP deployments with automation. It’s a service that guides you through the sizing, configuration and deployment of SAP HANA applications on AWS following SAP best practice. The service is available at no additional cost, with support provided by AWS.
-+  AWS Documentation: [Infrastructure as Code](https://docs.aws.amazon.com//whitepapers/latest/introduction-devops-aws/infrastructure-as-code.html)
++  AWS Documentation: [Infrastructure as Code](https://docs.aws.amazon.com/whitepapers/latest/introduction-devops-aws/infrastructure-as-code.html)
 +  AWS Documentation: [CloudFormation](https://aws.amazon.com/cloudformation/)
 + AWS Documentation: [AWS Launch Wizard for SAP ](https://docs.aws.amazon.com/launchwizard/latest/userguide/what-is-launch-wizard-sap.html)
 +  SAP on AWS Blog: [AWS for SAP DevOps](https://aws.amazon.com/blogs/awsforsap/category/devops/)

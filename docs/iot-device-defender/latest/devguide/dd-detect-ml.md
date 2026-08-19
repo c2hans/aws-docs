@@ -90,7 +90,7 @@ Custom metrics only support the **number** type.
 
  If you verify that an ML Detect alarm is a false positive through your investigation, you can set the verification state of the alarm to False positive. This can help you and your team identify alarms you don't have to respond to. You can also mark alarms as True positive, Benign positive, or Unknown.
 
-You can mark alarms through the [AWS IoT Device Defender console](https://docs.aws.amazon.com//iot/latest/developerguide/detect-HowToHowTo.html) or by using the [PutVerificationStateOnViolation](https://docs.aws.amazon.com/iot/latest/apireference/API_PutVerificationStateOnViolation.html) API action.
+You can mark alarms through the [AWS IoT Device Defender console](https://docs.aws.amazon.com/iot/latest/developerguide/detect-HowToHowTo.html) or by using the [PutVerificationStateOnViolation](https://docs.aws.amazon.com/iot/latest/apireference/API_PutVerificationStateOnViolation.html) API action.
 
 ## Supported metrics
 <a name="dd-detect-ml-metrics"></a>

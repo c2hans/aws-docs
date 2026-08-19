@@ -14,8 +14,6 @@ Add a new static DNS A record in AWS Managed Microsoft Active Directory (AD). Fo
 ## Change Type Details
 <a name="ct-2w3rbmnny1qpo-MDDa-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2w3rbmnny1qpo |

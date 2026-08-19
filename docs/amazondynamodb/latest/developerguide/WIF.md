@@ -25,8 +25,6 @@ The following resources can help you learn more about web identity federation:
 
 To show how you can use web identity federation with DynamoDB, revisit the *GameScores* table that was introduced in [Using IAM policy conditions for fine-grained access control](specifying-conditions.md). Here is the primary key for *GameScores*.
 
-****
-
 | Table Name | Primary Key Type | Partition Key Name and Type | Sort Key Name and Type |
 | --- | --- | --- | --- |
 | GameScores (UserId, GameTitle, ...) | Composite | Attribute Name: UserId Type: String | Attribute Name: GameTitle Type: String |

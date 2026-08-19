@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 `CustomLayers`  <a name="cfn-location-map-mapconfiguration-customlayers"></a>
 Specifies the custom layers for the style. Leave unset to not enable any custom layer, or, for styles that support custom layers, you can enable layer(s), such as the `POI` layer for the VectorEsriNavigation style.
-Currenlty only `VectorEsriNavigation` supports CustomLayers. For more information, see [Custom Layers](https://docs.aws.amazon.com//location/latest/developerguide/map-concepts.html#map-custom-layers).
+Currenlty only `VectorEsriNavigation` supports CustomLayers. For more information, see [Custom Layers](https://docs.aws.amazon.com/location/latest/developerguide/map-concepts.html#map-custom-layers).
 *Required*: No
 *Type*: Array of String
 *Minimum*: `1`

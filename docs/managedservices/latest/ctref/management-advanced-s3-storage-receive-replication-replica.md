@@ -14,8 +14,6 @@ Receive S3 object replicas in the destination bucket.
 ## Change Type Details
 <a name="ct-00zr0b0ozlcn3-MASr-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-00zr0b0ozlcn3 |

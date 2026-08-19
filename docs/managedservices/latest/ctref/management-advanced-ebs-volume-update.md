@@ -14,8 +14,6 @@ Modify the properties of an existing Elastic Block Store (EBS) volume stack crea
 ## Change Type Details
 <a name="ct-2y6q4vco4miyp-MAEu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2y6q4vco4miyp |

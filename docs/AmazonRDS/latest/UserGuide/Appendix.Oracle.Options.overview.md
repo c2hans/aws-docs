@@ -17,8 +17,6 @@ To enable options for your Oracle database, add them to an option group, and the
 
 You can add the following options for Oracle DB instances.
 
-****
-
 | Option | Option ID |
 | --- | --- |
 | [Amazon S3 integration](oracle-s3-integration.md) | `S3_INTEGRATION` |

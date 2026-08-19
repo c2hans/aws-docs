@@ -52,7 +52,6 @@ If you're transferring a domain to Route 53 and the following are true, then yo
 + The contact type is **Person**.
 + You're changing the **First Name** and/or **Last Name** fields for the registrant contact from the current settings.
 In that case, ICANN requires that Route 53 email the registrant contact to get approval. Route 53 sends email from one of the following email addresses:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-register-values-specify.html)
 To determine who the registrar is for your TLD, see [Domains that you can register with Amazon Route 53](registrar-tld-list.md).
 The registrant contact must follow the instructions in the email to confirm that the email was received, or Route 53 must suspend the domain as required by ICANN. When a domain is suspended, it's not accessible on the internet.
@@ -62,7 +61,6 @@ Some TLD registrars charge a fee for changing the domain owner. When you change 
 **Organization**
 The organization that is associated with the contact, if any. For the registrant and administrative contacts, this is typically the organization that is registering the domain. For the technical contact, this might be the organization that manages the domain.
 When the contact type is any value except **Person** and you change the **Organization** field for the registrant contact, you change the owner of the domain. ICANN requires that Route 53 email the registrant contact to get approval. Route 53 sends email from one of the following email addresses:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-register-values-specify.html)
 To determine who the registrar is for your TLD, see [Domains that you can register with Amazon Route 53](registrar-tld-list.md).
 If you change the email address of the registrant contact, this email is sent to the former email address and the new email address for the registrant contact.

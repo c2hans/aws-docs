@@ -5,6 +5,8 @@ source_url: https://docs.aws.amazon.com/accounts/latest/reference/troubleshootin
 # Troubleshooting other issues with AWS accounts
 <a name="troubleshooting_other"></a>
 
+This information is about troubleshooting other issues with your AWS account if you signed up for AWS using Sign up for AWS (advanced) or if you activated advanced features for your account. To compare sign-up options, see [Compare sign-up options](sign-up-for-aws.md).
+
 Use the information here to help you troubleshoot issues related to your AWS account.
 
 **Topics**

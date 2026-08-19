@@ -127,7 +127,7 @@ The following table lists the blog posts that contain useful information for Tra
 | [Enable password authentication for AWS Transfer Family using AWS Secrets Manager](https://aws.amazon.com/blogs/storage/enable-password-authentication-for-aws-transfer-family-using-aws-secrets-manager-updated/) | November 5, 2020 |
 | [Centralize data access using AWS Transfer Family and AWS Storage Gateway](https://aws.amazon.com/blogs/storage/centralize-data-access-using-aws-transfer-family-and-aws-storage-gateway/) | June 22, 2020 |
 | [Using Amazon EFS for AWS Lambda in your serverless applications](https://aws.amazon.com/blogs/compute/using-amazon-efs-for-aws-lambda-in-your-serverless-applications) | June 18, 2020 |
-| [Use IP allow list to secure your AWS Transfer Family servers](https://aws.amazon.com/blogs//storage/use-ip-allow-list-to-secure-your-aws-transfer-for-sftp-servers/) | April 8, 2020 |
+| [Use IP allow list to secure your AWS Transfer Family servers](https://aws.amazon.com/blogs/storage/use-ip-allow-list-to-secure-your-aws-transfer-for-sftp-servers/) | April 8, 2020 |
 | [Minimize network latency with your AWS transfer for SFTP servers](https://aws.amazon.com/blogs/storage/minimize-network-latency-with-your-aws-transfer-for-sftp-servers/) | February 19, 2020 |
 | [Lift and Shift migration of SFTP servers to AWS](https://aws.amazon.com/blogs/storage/lift-and-shift-migration-of-sftp-servers-to-aws/) | February 12, 2020 |
 | [Simplify your AWS SFTP Structure with chroot and logical directories](https://aws.amazon.com/blogs/storage/simplify-your-aws-sftp-structure-with-chroot-and-logical-directories/) | September 26, 2019 |

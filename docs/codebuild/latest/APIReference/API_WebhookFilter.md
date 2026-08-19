@@ -16,6 +16,7 @@ In the following list, the required parameters are described first.
  ** pattern **   <a name="CodeBuild-Type-WebhookFilter-pattern"></a>
  For a `WebHookFilter` that uses `EVENT` type, a comma-separated string that specifies one or more events. For example, the webhook filter `PUSH, PULL_REQUEST_CREATED, PULL_REQUEST_UPDATED` allows all push, pull request created, and pull request updated events to trigger a build.
  For a `WebHookFilter` that uses any of the other filter types, a regular expression pattern. For example, a `WebHookFilter` that uses `HEAD_REF` for its `type` and the pattern `^refs/heads/` triggers a build when the head reference is a branch with a reference name `refs/heads/branch-name`.
+ CodeBuild evaluates filter patterns using [RE2 regular expression syntax](https://github.com/google/re2/wiki/Syntax). RE2 does not support lookahead assertions (`(?=`, `(?!`), lookbehind assertions (`(?<=`, `(?<!`), or backreferences (`\1`). `CreateWebhook` and `UpdateWebhook` requests that include an unsupported pattern fail with an `InvalidInputException`. To trigger builds only on events that do not match a pattern, use a matching pattern with `excludeMatchedPattern` set to `true` instead of negative lookahead.
 Type: String
 Required: Yes
 

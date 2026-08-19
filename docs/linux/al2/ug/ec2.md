@@ -24,7 +24,7 @@ source_url: https://docs.aws.amazon.com/linux/al2/ug/ec2.html
 ## Launch Amazon EC2 instance with AL2 AMI
 <a name="launch-ec2-instance"></a>
 
-You can launch an Amazon EC2 instance with the AL2 AMI. For more information, see [Step 1: Launch an instance](https://docs.aws.amazon.com//AWSEC2/latest/UserGuide/EC2_GetStarted.html#ec2-launch-instance).
+You can launch an Amazon EC2 instance with the AL2 AMI. For more information, see [Step 1: Launch an instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html#ec2-launch-instance).
 
 ## Find the latest AL2 AMI using Systems Manager
 <a name="find-latest-al2-using-systems-manager"></a>
@@ -93,7 +93,7 @@ This information applies to AL2. For information about AL2023, see [Manage packa
 AL2 and AL1 are designed to be used with online package repositories hosted in each Amazon EC2 AWS Region. The repositories are available in all Regions and are accessed using **yum** update tools. Hosting repositories in each Region enables us to deploy updates quickly and without any data transfer charges.
 
 **Important**
-The last version of AL1 reached EOL on December 31, 2023 and will not receive any security updates or bug fixes starting January 1, 2024. For more information, see [Amazon Linux AMI end-of-life](https://aws.amazon.com//blogs/aws/update-on-amazon-linux-ami-end-of-life/).
+The last version of AL1 reached EOL on December 31, 2023 and will not receive any security updates or bug fixes starting January 1, 2024. For more information, see [Amazon Linux AMI end-of-life](https://aws.amazon.com/blogs/aws/update-on-amazon-linux-ami-end-of-life/).
 
 If you don't need to preserve data or customizations for your instances, you can launch new instances using the current AL2 AMI. If you do need to preserve data or customizations for your instances, you can maintain those instances through the Amazon Linux package repositories. These repositories contain all the updated packages. You can choose to apply these updates to your running instances. Earlier versions of the AMI and update packages continue to be available for use, even as new versions are released.
 

@@ -122,8 +122,6 @@ Use the following procedure to create a stacked 100 percent bar chart.
 
 To understand the features supported by bar charts, use the following table.
 
-****
-
 | Feature | Supported? | Comments | For more information |
 | --- | --- | --- | --- |
 | Changing the legend display | Yes, with exceptions | Multi-measure and clustered bar charts display a legend, while single-measure horizontal bar charts don't. | [Legends on visual types in Quick](customizing-visual-legend.md) |

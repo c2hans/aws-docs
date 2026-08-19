@@ -24,7 +24,7 @@ When you navigate to an entity profile from another entity profile, the currentl
 
 When you navigate to an entity profile from a finding overview, the scope time is set to the finding time window.
 
-For information on customizing the scope time to limit the data displayed on entity profiles, see [Managing the scope time](https://docs.aws.amazon.com//detective/latest/userguide/scope-time-managing.html).
+For information on customizing the scope time to limit the data displayed on entity profiles, see [Managing the scope time](https://docs.aws.amazon.com/detective/latest/userguide/scope-time-managing.html).
 
 ## Entity identifier and type
 <a name="entity-identifier-type"></a>

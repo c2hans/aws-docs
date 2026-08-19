@@ -12,8 +12,6 @@ You can use credentials stored in an AWS configuration profile by setting the fo
 
 The credentials provider that will be used to authenticate requests to AWS. Set the value of this parameter to `ProfileCredentials`.
 
-****
-
 | Parameter name | Alias | Parameter type | Default value | Value to use |
 | --- | --- | --- | --- | --- |
 | CredentialsProvider | AWSCredentialsProviderClass (deprecated) | Required | none | ProfileCredentials |
@@ -22,8 +20,6 @@ The credentials provider that will be used to authenticate requests to AWS. Set 
 <a name="jdbc-v3-driver-profile-name"></a>
 
 The name of the AWS configuration profile whose credentials should be used to authenticate the request to Athena.
-
-****
 
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |

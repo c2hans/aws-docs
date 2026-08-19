@@ -16,7 +16,7 @@ The following steps guide you through a Remote Desktop Gateway deployment with A
 ------
 #### [ General ]
    + **Deployment name**. Enter a unique application name for your deployment.
-   + **Amazon Simple Notification Service (SNS) topic ARN — optional**. Specify an Amazon SNS topic where AWS Launch Wizard can send notifications and alerts. For more information, see the [Amazon Simple Notification Service Developer Guide](https://docs.aws.amazon.com//sns/latest/dg/welcome.html).
+   + **Amazon Simple Notification Service (SNS) topic ARN — optional**. Specify an Amazon SNS topic where AWS Launch Wizard can send notifications and alerts. For more information, see the [Amazon Simple Notification Service Developer Guide](https://docs.aws.amazon.com/sns/latest/dg/welcome.html).
    + **Deactivate rollback on failed deployment**. By default, if a deployment fails, your provisioned resources will be deleted. You can enable this setting during deployment to prevent this behavior.
    + **Tags - optional**. Enter a key and value to assign metadata to your deployment. For help with tagging, see [Tagging Your EC2 Resources](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html).
 

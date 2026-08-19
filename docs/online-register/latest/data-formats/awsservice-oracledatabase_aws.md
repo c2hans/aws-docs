@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awss
 
 AWS Service - Oracle Database@AWS provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="odb-GetAutonomousDatabase"></a>[GetAutonomousDatabase](https://docs.aws.amazon.com/odb/latest/APIReference/API_GetAutonomousDatabase.html) | Get information about a specific Autonomous Database | Read |

@@ -14,8 +14,6 @@ Update EC2 instances' detailed monitoring setting through direct API calls. The 
 ## Change Type Details
 <a name="ct-0tmpmp1wpgkr9-MAEu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-0tmpmp1wpgkr9 |

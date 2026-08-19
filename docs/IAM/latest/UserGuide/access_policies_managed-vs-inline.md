@@ -28,7 +28,7 @@ For instructions on creating roles and attaching these policies, see [Creating r
 ## AWS managed policies
 <a name="aws-managed-policies"></a>
 
-An *AWS managed policy* is a standalone policy that is created and administered by AWS. A *standalone policy* means that the policy has its own Amazon Resource Name (ARN) that includes the policy name. For example, `arn:aws:iam::aws:policy/IAMReadOnlyAccess` is an AWS managed policy. For more information about ARNs, see [IAM ARNs](reference_identifiers.md#identifiers-arns). For a list of AWS managed policies for AWS services, see [AWS managed policies](https://docs.aws.amazon.com//aws-managed-policy/latest/reference/policy-list.html).
+An *AWS managed policy* is a standalone policy that is created and administered by AWS. A *standalone policy* means that the policy has its own Amazon Resource Name (ARN) that includes the policy name. For example, `arn:aws:iam::aws:policy/IAMReadOnlyAccess` is an AWS managed policy. For more information about ARNs, see [IAM ARNs](reference_identifiers.md#identifiers-arns). For a list of AWS managed policies for AWS services, see [AWS managed policies](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/policy-list.html).
 
 AWS managed policies make it convenient for you to assign appropriate permissions to users, IAM groups, and roles. It is faster than writing the policies yourself, and includes permissions for many common use cases.
 

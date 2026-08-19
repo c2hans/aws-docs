@@ -30,13 +30,14 @@ ALTER DATABASE database_name
     [ ISOLATION LEVEL { SNAPSHOT | SERIALIZABLE } ]
 | INTEGRATION
  {
-  REFRESH { { ALL | INERROR } TABLES [ IN SCHEMA schema [, ...] ] | TABLE schema.table [, ...] }
+  REFRESH { { ALL | INERROR | REMEDIABLE } TABLES [ IN SCHEMA schema [, ...] ] | TABLE schema.table [, ...] }
    | SET
      [ QUERY_ALL_STATES [=] { TRUE | FALSE } ]
      [ ACCEPTINVCHARS [=] { TRUE | FALSE } ]
      [ REFRESH_INTERVAL <interval> ]
      [ TRUNCATECOLUMNS [=] { TRUE | FALSE } ]
      [ HISTORY_MODE [=] {TRUE | FALSE} [ FOR { {ALL} TABLES [IN SCHEMA schema [, ...] ] | TABLE schema.table [, ...] } ] ]
+     [ AUTO_REMEDIATION [=] { TRUE | FALSE } ]
  }
 }
 ```
@@ -89,8 +90,9 @@ Consider the following items when altering the isolation level of a database:
 INTEGRATION
 Alter a zero-ETL integration database.
 
-REFRESH {{ ALL \| INERROR } TABLES [IN SCHEMA *schema* [, ...]] \| TABLE *schema.table* [, ...]}
-A clause that specifies whether Amazon Redshift will refresh all tables or tables with errors in the specified schema or table. The refresh will trigger the tables in the specified schema or table to be fully replicated from the source database.
+REFRESH {{ ALL \| INERROR \| REMEDIABLE } TABLES [IN SCHEMA *schema* [, ...]] \| TABLE *schema.table* [, ...]}
+A clause that specifies which tables Amazon Redshift refreshes. You can target all tables, tables with errors, or tables affected by duplicate rows. The refresh fully replicates the tables from the source database.
+`REMEDIABLE` targets tables in the `Synced` state that have been affected by duplicate rows. You can inspect which tables are affected by querying [SVV\_INTEGRATION\_TABLE\_STATE](r_SVV_INTEGRATION_TABLE_STATE.md).
 For more information, see [Zero-ETL integrations](https://docs.aws.amazon.com/redshift/latest/mgmt/zero-etl-using.html) in the *Amazon Redshift Management Guide*. For more information about integration states, see [SVV\_INTEGRATION\_TABLE\_STATE](r_SVV_INTEGRATION_TABLE_STATE.md) and [SVV\_INTEGRATION](r_SVV_INTEGRATION.md).
 
 QUERY\_ALL\_STATES [=] { TRUE \| FALSE }
@@ -111,6 +113,10 @@ The TRUNCATECOLUMNS clause sets whether zero-ETL integration tables continue wit
 HISTORY\_MODE [=] {TRUE \| FALSE} [ FOR { {ALL} TABLES [IN SCHEMA schema [, ...]] \| TABLE schema.table [, ...]} ]
 A clause that specifies whether Amazon Redshift will set history mode for all tables or tables in the specified schema that participate in zero-ETL integration. This option is only applicable for databases created for zero-ETL integration.
 The HISTORY\_MODE clause can be set to `TRUE` or `FALSE`. The default is `FALSE`. Switching history mode on and off is only applicable to tables that are in the `Synced` state. For information about HISTORY\_MODE, see [History mode](https://docs.aws.amazon.com/redshift/latest/mgmt/zero-etl-history-mode.html) in the *Amazon Redshift Management Guide*.
+
+AUTO\_REMEDIATION [=] { TRUE \| FALSE }
+Specifies whether Amazon Redshift automatically resynchronizes tables that are affected by duplicate rows. When set to `TRUE`, Amazon Redshift marks affected tables for resynchronization without requiring manual intervention. The default is `FALSE`.
+You can monitor which tables have been flagged by querying [SVV\_INTEGRATION\_TABLE\_STATE](r_SVV_INTEGRATION_TABLE_STATE.md). The current setting is visible in the `auto_remediation` column of [SVV\_INTEGRATION](r_SVV_INTEGRATION.md).
 
 ## Usage notes
 <a name="r_ALTER_DATABASE-usage-notes"></a>
@@ -178,4 +184,22 @@ The following example switches history mode on for all tables in `myschema`.
 
 ```
 ALTER DATABASE sample_integration_db INTEGRATION SET HISTORY_MODE = true for ALL TABLES IN SCHEMA myschema
+```
+
+The following example enables automatic remediation of duplicate rows for a zero-ETL integration database.
+
+```
+ALTER DATABASE sample_integration_db INTEGRATION SET AUTO_REMEDIATION = true;
+```
+
+The following example refreshes all tables affected by duplicate rows in the zero-ETL integration database.
+
+```
+ALTER DATABASE sample_integration_db INTEGRATION REFRESH REMEDIABLE TABLES;
+```
+
+The following example refreshes tables affected by duplicate rows in the schema `myschema`.
+
+```
+ALTER DATABASE sample_integration_db INTEGRATION REFRESH REMEDIABLE TABLES IN SCHEMA myschema;
 ```

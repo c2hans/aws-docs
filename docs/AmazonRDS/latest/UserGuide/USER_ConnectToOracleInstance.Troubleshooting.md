@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ConnectT
 
 The following are issues you might encounter when you try to connect to your Oracle DB instance.
 
-****
-
 | Issue | Troubleshooting suggestions |
 | --- | --- |
 | Unable to connect to your DB instance.  | For a newly created DB instance, the DB instance has a status of **creating** until it is ready to use. When the state changes to **available**, you can connect to the DB instance. Depending on the DB instance class and the amount of storage, it can take up to 20 minutes before the new DB instance is available.  |

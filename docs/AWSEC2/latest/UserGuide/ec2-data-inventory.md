@@ -32,7 +32,7 @@ After you determine where your instances are located, you can decide whether to 
 
 1. Open the Amazon EC2 Global View console at [https://console.aws.amazon.com/ec2globalview/home](https://console.aws.amazon.com/ec2globalview/home).
 
-1. On the **Region explorer** tab, under **Summary**, check the resource count for **Instances**, which includes the number of instances and the number of Regions. Click the underlined text to see how the instance count is spread across Regions.
+1. On the **Region explorer** tab, under **Summary**, check the resource count for **Instances**, which includes the number of instances and the number of Regions. Choose the underlined text to see how the instance count is spread across Regions.
 
 1. On the **Global search** tab, select the client filter **Resource type = Instance**. You can filter the results further by specifying a Region or a tag.
 

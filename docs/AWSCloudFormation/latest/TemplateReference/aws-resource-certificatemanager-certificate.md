@@ -142,7 +142,7 @@ If not specified, this property defaults to email validation.
 *Required*: No
 *Type*: String
 *Allowed values*: `EMAIL | DNS | HTTP`
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
 <a name="aws-resource-certificatemanager-certificate-return-values"></a>

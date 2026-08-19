@@ -14,8 +14,6 @@ Allow cross-account access to a KMS key by adding a statement to the key policy 
 ## Change Type Details
 <a name="ct-05yb337abq3x5-MAKs-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-05yb337abq3x5 |

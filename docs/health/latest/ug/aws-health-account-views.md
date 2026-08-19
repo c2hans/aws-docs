@@ -108,7 +108,7 @@ There are two types of AWS Health events:
 
 You can use the following options to identify if an event is public or account-specific:
 + In the AWS Health Dashboard, choose the **Affected resources** tab for an event. Events with resources are specific to your account. Events without resources are public and are not specific to your account. For more information, see [Getting started with your AWS Health Dashboard](getting-started-health-dashboard.md).
-+ Use the AWS Health API to return the `eventScopeCode` parameter. Events can have the `PUBLIC`, `ACCOUNT_SPECIFIC`, or `NONE` value. For more information, see the [DescribeEventDetails](https://docs.aws.amazon.com//health/latest/APIReference/API_DescribeEventDetails.html) operation in the *AWS Health API Reference*.
++ Use the AWS Health API to return the `eventScopeCode` parameter. Events can have the `PUBLIC`, `ACCOUNT_SPECIFIC`, or `NONE` value. For more information, see the [DescribeEventDetails](https://docs.aws.amazon.com/health/latest/APIReference/API_DescribeEventDetails.html) operation in the *AWS Health API Reference*.
 
 ## Calendar view
 <a name="calendar-view"></a>

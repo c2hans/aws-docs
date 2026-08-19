@@ -9,8 +9,6 @@ To revoke privileges on a single object, use the Amazon RDS procedure `rdsadmin.
 
 The `revoke_sys_object` procedure has the following parameters.
 
-****
-
 | Parameter name | Data type | Default | Required | Description |
 | --- | --- | --- | --- | --- |
 | `p_obj_name` | varchar2 | — | Yes | The name of the object to revoke privileges for. The object can be a directory, function, package, procedure, sequence, table, or view. Object names must be spelled exactly as they appear in `DBA_OBJECTS`. Most system objects are defined in uppercase, so we recommend that you try that first.  |

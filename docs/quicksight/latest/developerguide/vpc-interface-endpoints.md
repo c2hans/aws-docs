@@ -29,7 +29,7 @@ You can create a VPC endpoint for the Quick website using either the Amazon VPC 
 Create VPC endpoints for Quick using the following service names:
 + `com.amazonaws.{{region}}.quicksight-website` - For Quick website access
 
-The private DNS names for the Quick website are not same as the public URL for Quick. To reach Quick through the public URL, create an A record for the website in the format `<region>.quicksight.aws.amazon.com` and point it to the VPC endpoint. For more information about routing to a VPC endpoint, see [Routing traffic to an Amazon Virtual Private Cloud interface endpoint by using your domain name](https://docs.aws.amazon.com//Route53/latest/DeveloperGuide/routing-to-vpc-interface-endpoint.html).
+The private DNS names for the Quick website are not same as the public URL for Quick. To reach Quick through the public URL, create an A record for the website in the format `<region>.quicksight.aws.amazon.com` and point it to the VPC endpoint. For more information about routing to a VPC endpoint, see [Routing traffic to an Amazon Virtual Private Cloud interface endpoint by using your domain name](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-to-vpc-interface-endpoint.html).
 
 The management of certain administrator features require that an administrator sign in to Quick as an IAM user. If you sign in through the VPC endpoint, you need to create the following VPC endpoints for the AWS Management Console.
 + `com.amazonaws.{{region}}.console`

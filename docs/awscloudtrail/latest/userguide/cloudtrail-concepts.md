@@ -72,8 +72,6 @@ For event data stores, you can use only advanced event selectors to include data
 #### Data events supported by AWS CloudTrail
 <a name="w2aab5c25b7c19c17"></a>
 
-****
-
 | AWS service | Description | Resource type (console) | resources.type value |
 | --- | --- | --- | --- |
 | Amazon RDS | [Amazon RDS API activity](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/logging-using-cloudtrail-data-api.html#logging-using-cloudtrail-data-api.including-excluding-cloudtrail-events) on a DB Cluster. | RDS Data API - DB Cluster | AWS::RDS::DBCluster |

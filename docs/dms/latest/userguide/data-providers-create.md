@@ -20,7 +20,6 @@ The following procedure shows you how to create data providers in the AWS DMS co
 1. Choose **Data providers**. The **Data providers** page opens.
 
 1. Choose **Create data provider**. The following table describes the settings.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/dms/latest/userguide/data-providers-create.html)
 
 1. Choose **Create data provider**.

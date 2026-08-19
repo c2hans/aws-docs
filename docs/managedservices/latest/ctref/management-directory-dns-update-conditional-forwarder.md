@@ -14,8 +14,6 @@ Update AD DNS conditional forwarder for a remote domain. For multi-account landi
 ## Change Type Details
 <a name="ct-2fqmbyud166z9-MDDu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2fqmbyud166z9 |

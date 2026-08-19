@@ -14,7 +14,7 @@ After careful consideration, we have decided to discontinue Amazon Kinesis Data 
 <a name="sch-mapping"></a>
 
 **Note**
-After September 12, 2023, you will not able to create new applications using Kinesis Data Firehose as a source if you do not already use Kinesis Data Analytics for SQL. For more information, see [Limits](https://docs.aws.amazon.com//kinesisanalytics/latest/dev/limits.html).
+After September 12, 2023, you will not able to create new applications using Kinesis Data Firehose as a source if you do not already use Kinesis Data Analytics for SQL. For more information, see [Limits](https://docs.aws.amazon.com/kinesisanalytics/latest/dev/limits.html).
 
 With Amazon Kinesis Data Analytics, you can process and analyze streaming data in either JSON or CSV formats using standard SQL.
 + To process and analyze streaming CSV data, you assign column names and data types for the columns of the input stream. Your application imports one column from the input stream per column definition, in order.

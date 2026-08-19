@@ -23,7 +23,7 @@ For a user, group, or role to be able to query data in Athena, you must grant **
 
 **STEP 1: To grant **DESCRIBE** permissions on a HealthLake data store resource link database**
 
-1. Open the AWS Lake Formation console: [https://console.aws.amazon.com/lakeformation/](https://console.aws.amazon.com//lakeformation)
+1. Open the AWS Lake Formation console: [https://console.aws.amazon.com/lakeformation/](https://console.aws.amazon.com/lakeformation)
 
 1. In the primary navigation bar, choose **Databases**.
 
@@ -49,7 +49,7 @@ Now you must use **Grant on target** to grant **Select** and **Describe** on all
 
 **STEP 2: Grant access to all tables in a HealthLake data store resource link**
 
-1. Open the AWS Lake Formation console: [https://console.aws.amazon.com/lakeformation/](https://console.aws.amazon.com//lakeformation)
+1. Open the AWS Lake Formation console: [https://console.aws.amazon.com/lakeformation/](https://console.aws.amazon.com/lakeformation)
 
 1. In the primary navigation bar, choose **Databases**.
 

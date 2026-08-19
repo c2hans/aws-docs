@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awst
 
 AWS Tiros provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="tiros-GetQueryAnswer"></a>[GetQueryAnswer](https://docs.aws.amazon.com/vpc/latest/reachability/security_iam_required-API-permissions.html) | Get VPC reachability query answers | Read |

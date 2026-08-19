@@ -14,8 +14,6 @@ Creates a CloudWatch LogGroup with optional subscription filter, up to 5 log str
 ## Change Type Details
 <a name="ct-0cyqd7laxyhlm-DMCc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-0cyqd7laxyhlm |

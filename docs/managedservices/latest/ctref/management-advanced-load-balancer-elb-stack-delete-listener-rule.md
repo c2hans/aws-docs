@@ -14,8 +14,6 @@ Delete the specified listener rule for Application Load Balancers. Default rules
 ## Change Type Details
 <a name="ct-2qsgbfmrw92zw-MALd-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2qsgbfmrw92zw |

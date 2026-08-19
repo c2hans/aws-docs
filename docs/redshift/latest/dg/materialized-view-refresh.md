@@ -109,7 +109,7 @@ The COUNT, SUM, and AVG aggregate functions are supported.
   +  Delta Lake
   +  Hudi
 
-  Incremental refresh is supported for materialized views defined using formats other than those listed above. For more information, see [Materialized views on external data lake tables in Amazon Redshift SpectrumMaterialized views on external data lake tables](materialized-view-external-table.md).
+  Incremental refresh is supported for materialized views defined using formats other than those listed above. For more information, see [Materialized views on external data lake tables in Amazon Redshift Spectrum](materialized-view-external-table.md).
 
 ## Autorefreshing a materialized view
 <a name="materialized-view-auto-refresh"></a>

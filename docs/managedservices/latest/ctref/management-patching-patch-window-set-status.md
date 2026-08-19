@@ -14,8 +14,6 @@ Enable or disable an existing AWS Systems Manager (SSM) patch window. If the win
 ## Change Type Details
 <a name="ct-3vfxkiudtovm9-MPPs-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-3vfxkiudtovm9 |

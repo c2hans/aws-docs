@@ -14,8 +14,6 @@ Update Performance Insights for a DB instance or Multi-AZ DB cluster. Amazon RDS
 ## Change Type Details
 <a name="ct-31eyj2hlvqjwu-MARu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-31eyj2hlvqjwu |

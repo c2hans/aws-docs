@@ -14,7 +14,7 @@ All discovered data is stored in your AWS Migration Hub home Region. Therefore, 
 Using Application Discovery Service APIs, you can export the system performance and utilization data for your discovered servers. Input this data into your cost model to compute the cost of running those servers in AWS. Additionally, you can export data about the network connections that exist between servers. This information helps you determine the network dependencies between servers and group them into applications for migration planning.
 
 **Note**
-Your home Region must be set in AWS Migration Hub before you begin the process of discovery, because your data will be stored in your home Region. For more information about working with a home Region, see [Home Region](https://docs.aws.amazon.com//migrationhub/latest/ug/home-region.html).
+Your home Region must be set in AWS Migration Hub before you begin the process of discovery, because your data will be stored in your home Region. For more information about working with a home Region, see [Home Region](https://docs.aws.amazon.com/migrationhub/latest/ug/home-region.html).
 
 Application Discovery Service offers three ways of performing discovery and collecting data about your on-premises servers:
 + **Agentless discovery** can be performed by deploying the Application Discovery Service Agentless Collector (Agentless Collector) (OVA file) through your VMware vCenter. After Agentless Collector is configured, it identifies virtual machines (VMs) and hosts associated with vCenter. Agentless Collector collects the following static configuration data: Server hostnames, IP addresses, MAC addresses, disk resource allocations, database engine versions, and database schemas. Additionally, it collects the utilization data for each VM and database providing the average and peak utilization for metrics such as CPU, RAM, and Disk I/O.
@@ -92,7 +92,7 @@ The following table provides a quick comparison of the data collection methods t
 
 To use Application Discovery Service, the following is assumed:
 + You have signed up for AWS. For more information, see [Setting up Application Discovery Service](setting-up.md).
-+ You have selected a Migration Hub home Region. For more information, see [the documentation regarding home Regions](https://docs.aws.amazon.com//migrationhub/latest/ug/home-region.html).
++ You have selected a Migration Hub home Region. For more information, see [the documentation regarding home Regions](https://docs.aws.amazon.com/migrationhub/latest/ug/home-region.html).
 
 Here's what to expect:
 + The Migration Hub home Region is the only Region where Application Discovery Service stores your discovery and planning data.

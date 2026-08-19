@@ -8,14 +8,14 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/information-ex
 Information extraction uses generative AI to extract information from conversations. That information could be verbatim — such as preferred name, invoice number, or reservation ID; or it could be derived – such as reason for contact, resolution provided, or next steps promised. Information can be extracted from chat contacts or voice contacts with human agents. The extracted information is associated with the contact as structured data.
 
 **Note**
-Information extraction is only available in [Amazon Connect Customer](https://docs.aws.amazon.com//connect/latest/adminguide/enable-nextgeneration-amazonconnect.html) instances.
+Information extraction is only available in [Amazon Connect Customer](https://docs.aws.amazon.com/connect/latest/adminguide/enable-nextgeneration-amazonconnect.html) instances.
 
 Extracted information is available in the following locations:
 + **Contact Control Panel (CCP)** — During after-call work.
 + **Contact details page** — After the contact ends.
 + **Contact search** — You can filter and search contacts based on extracted information.
 + **S3 files** — Extracted data is included in the conversational analytics output files stored in Amazon S3.
-+ **API** — Via [ListRealtimeContactAnalysisSegments](https://docs.aws.amazon.com//connect/latest/APIReference/API_connect-contact-lens_ListRealtimeContactAnalysisSegments.html) (voice) and [ListRealtimeContactAnalysisSegmentsV2](https://docs.aws.amazon.com//connect/latest/APIReference/API_ListRealtimeContactAnalysisSegmentsV2.html) (chat).
++ **API** — Via [ListRealtimeContactAnalysisSegments](https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-contact-lens_ListRealtimeContactAnalysisSegments.html) (voice) and [ListRealtimeContactAnalysisSegmentsV2](https://docs.aws.amazon.com/connect/latest/APIReference/API_ListRealtimeContactAnalysisSegmentsV2.html) (chat).
 + **Amazon Kinesis** — Extracted information events are delivered to your Kinesis data stream in real time.
 + **Rule actions** — Extracted information can be injected as variables into other rule actions, such as sending emails, creating tasks, creating cases, or sending notifications.
 

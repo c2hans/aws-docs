@@ -275,8 +275,6 @@ When working with XML using the Amazon RDS API, tags use the following schema:
 
 The following table provides a list of the allowed XML tags and their characteristics. Values for `Key` and `Value` are case-sensitive. For example, `project=Trinity` and `PROJECT=Trinity` are distinct tags.
 
-****
-
 | Tagging element | Description |
 | --- | --- |
 | TagSet | A tag set is a container for all tags assigned to an Amazon RDS resource. There can be only one tag set per resource. You work with a TagSet only through the Amazon RDS API. |

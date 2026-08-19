@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/alex
 
 Alexa for Business provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="a4b-GetAddressBook"></a>[GetAddressBook](https://docs.aws.amazon.com/a4b/latest/APIReference/API_GetAddressBook.html) | Get the address book details by the address book ARN | Read |

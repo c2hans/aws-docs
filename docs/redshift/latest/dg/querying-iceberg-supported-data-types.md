@@ -31,8 +31,6 @@ When you create and define an Iceberg table, use the Amazon Redshift data type n
 
 When reading from Iceberg tables, Iceberg data-types are mapped into Redshift data-types as shown in the below table:
 
-****
-
 | Iceberg type | Amazon Redshift type | Notes |
 | --- | --- | --- |
 | boolean | boolean | - |
@@ -63,8 +61,6 @@ When reading from Iceberg tables, Iceberg data-types are mapped into Redshift da
 | Unknown | - | Amazon Redshift doesn't support Iceberg V3. |
 
 The following data-types are supported when creating Iceberg tables from Redshift. Redshift data-types are mapped into Iceberg data-types as shown in the following table.
-
-****
 
 | Amazon Redshift type | Amazon Redshift alias | Iceberg type | Notes |
 | --- | --- | --- | --- |

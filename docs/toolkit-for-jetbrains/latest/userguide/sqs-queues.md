@@ -17,7 +17,7 @@ Standard and FIFO (First-In-Last-Out) are the two kinds of messages you can send
 
 1. Provide a queue name and choose the queue type.
 **Note**
-For more information on queue types, see the [Amazon SQS standard queues](https://docs.aws.amazon.com//AWSSimpleQueueService/latest/SQSDeveloperGuide/standard-queues.html) and [Amazon SQS FIFO (First-In-First-Out) queues](https://docs.aws.amazon.com//AWSSimpleQueueService/latest/SQSDeveloperGuide/FIFO-queues.html) topics in the *Amazon Simple Queue Service Developer Guide*.
+For more information on queue types, see the [Amazon SQS standard queues](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/standard-queues.html) and [Amazon SQS FIFO (First-In-First-Out) queues](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/FIFO-queues.html) topics in the *Amazon Simple Queue Service Developer Guide*.
 
 1. Choose **Create**.
 
@@ -39,7 +39,7 @@ For more information on queue types, see the [Amazon SQS standard queues](https:
 
 1. Right-click the queue that you want to edit and choose **Edit Queue Properties...**.
 
-1. In the **Edit Queue Properties** dialog box that opens, review and modify your queue properties. For more information on Amazon SQS properties, see [Configuring queue parameters (console)](https://docs.aws.amazon.com//AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-configure-queue-parameters.html) in the *Amazon Simple Queue Service Developer Guide*.
+1. In the **Edit Queue Properties** dialog box that opens, review and modify your queue properties. For more information on Amazon SQS properties, see [Configuring queue parameters (console)](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-configure-queue-parameters.html) in the *Amazon Simple Queue Service Developer Guide*.
 
 **To send Standard messages**
 
@@ -67,7 +67,7 @@ If no deduplication id is provided, one will be generated.
 
 **To delete an Amazon SQS queue**
 
-1. Verify that a queue is empty before you delete it. For more information see [Confirming that a queue is empty](https://docs.aws.amazon.com//AWSSimpleQueueService/latest/SQSDeveloperGuide/confirm-queue-is-empty.html) in the *Amazon Simple Queue Service Developer Guide*.
+1. Verify that a queue is empty before you delete it. For more information see [Confirming that a queue is empty](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/confirm-queue-is-empty.html) in the *Amazon Simple Queue Service Developer Guide*.
 
 1. From the AWS Toolkit for JetBrains, expand the AWS Explorer to view your AWS services.
 

@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsi
 
 AWS IoT Fleet Hub for Device Management provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="iotfleethub-DescribeApplication"></a>[DescribeApplication](https://docs.aws.amazon.com/iot/latest/apireference/API_iotfleethub_DescribeApplication.html) | Describe an application | Read |

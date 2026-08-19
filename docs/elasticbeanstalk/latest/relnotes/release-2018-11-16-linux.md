@@ -62,16 +62,12 @@ This release applies security updates to Linux-based platforms for AWS Elastic B
 ### Packer Builder
 <a name="release-2018-11-16-linux.platforms.packer"></a>
 
-****
-
 |  Configuration and *Solution Stack Name*   |  AMI  |  Packer Version  |
 | --- | --- | --- |
 |  **Elastic Beanstalk Packer Builder version 2.6.4** <br /> * 64bit Amazon Linux 2018.03 v2.6.4 running Packer 1.0.3 *  | 2018.03.0 | 1.0.3 |
 
 ### Single Container Docker
 <a name="release-2018-11-16-linux.platforms.docker"></a>
-
-****
 
 |  Configuration and *Solution Stack Name*   |  AMI  |  Docker Version  |  Proxy Server  |
 | --- | --- | --- | --- |
@@ -80,16 +76,12 @@ This release applies security updates to Linux-based platforms for AWS Elastic B
 ### Multicontainer Docker
 <a name="release-2018-11-16-linux.platforms.mcdocker"></a>
 
-****
-
 |  Configuration and *Solution Stack Name*   |  AMI  |  Docker Version  |  ECS Agent  |
 | --- | --- | --- | --- |
 |  **Multicontainer Docker 18.03 version 2.11.5** <br /> * 64bit Amazon Linux 2018.03 v2.11.5 running Multi-container Docker 18.06.1-ce (Generic) *  | 2018.03.0 | 18.06.1-ce | 1.21.0 |
 
 ### Preconfigured Docker
 <a name="release-2018-11-16-linux.platforms.dockerpreconfig"></a>
-
-****
 
 |  Configuration and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -101,16 +93,12 @@ This release applies security updates to Linux-based platforms for AWS Elastic B
 ### Go
 <a name="release-2018-11-16-linux.platforms.go"></a>
 
-****
-
 |  Configuration and *Solution Stack Name*   |  AMI  |  Language  |  AWS X‑Ray  |  Proxy Server  |
 | --- | --- | --- | --- | --- |
 |  **Go 1.11 version 2.9.2** <br /> * 64bit Amazon Linux 2018.03 v2.9.2 running Go 1.11 *  | 2018.03.0 | Go 1.11.1 | 2.0.0 | nginx 1.12.1 |
 
 ### Java SE
 <a name="release-2018-11-16-linux.platforms.javase"></a>
-
-****
 
 |  Configuration and *Solution Stack Name*   |  AMI  |  Language  |  Tools  |  AWS X‑Ray  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- |
@@ -119,8 +107,6 @@ This release applies security updates to Linux-based platforms for AWS Elastic B
 
 ### Java with Tomcat
 <a name="release-2018-11-16-linux.platforms.java"></a>
-
-****
 
 |  Configuration and *Solution Stack Name*   |  AMI  |  Language  |  AWS X‑Ray  |  Application Server  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- |
@@ -132,16 +118,12 @@ This release applies security updates to Linux-based platforms for AWS Elastic B
 ### Node.js
 <a name="release-2018-11-16-linux.platforms.nodejs"></a>
 
-****
-
 |  Configuration and *Solution Stack Name*   |  AMI  |  Node.js version (npm version)  |  Proxy Server  |  Git  |  AWS X‑Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  **Node.js version 4.7.0** <br /> * 64bit Amazon Linux 2018.03 v4.7.0 running Node.js *  | 2018.03.0 | 10.13.0 (6.4.1), 8.12.0 (6.4.1), 8.11.4 (5.6.0), 7.10.1 (4.2.0), 6.14.4 (3.10.10), 6.14.3(3.10.10), 5.12.0 (3.8.6), 4.9.1(2.15.11), 4.8.7 (2.15.11)<br /> Default platform: 10.13.0 | nginx 1.12.1, Apache 2.4.34 | 2.14.5 | 2.0.0 |
 
 ### PHP
 <a name="release-2018-11-16-linux.platforms.PHP"></a>
-
-****
 
 |  Configuration and *Solution Stack Name*   |  AMI  |  Language  |  Composer  |  Proxy Server  |
 | --- | --- | --- | --- | --- |
@@ -155,8 +137,6 @@ This release applies security updates to Linux-based platforms for AWS Elastic B
 ### Python
 <a name="release-2018-11-16-linux.platforms.python"></a>
 
-****
-
 |  Configuration and *Solution Stack Name*   |  AMI  |  Language  |  Package Manager  |  Packager  |  meld3  |  AWS X‑Ray  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  **Python 3.6 version 2.7.6** <br /> * 64bit Amazon Linux 2018.03 v2.7.6 running Python 3.6 *  | 2018.03.0 | Python 3.6.5 | pip 9.0.3 | setuptools 28.8.0 | meld3 1.0.2 | 2.0.0 | Apache 2.4.34 with mod\_wsgi 3.5 |
@@ -166,8 +146,6 @@ This release applies security updates to Linux-based platforms for AWS Elastic B
 
 ### Ruby
 <a name="release-2018-11-16-linux.platforms.ruby"></a>
-
-****
 
 |  Configuration and *Solution Stack Name*   |  AMI  |  Language  |  Package Manager  |  Application Server  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- |

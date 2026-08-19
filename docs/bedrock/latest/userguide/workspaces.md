@@ -7,6 +7,9 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/workspaces.html
 
 Amazon Bedrock Workspaces provide application-level isolation for your generative AI workloads using the Anthropic-compatible Messages API on the `bedrock-mantle` endpoint. Workspaces enable you to segment your AI applications for cost tracking, observability, and access control.
 
+**Tip**
+For new applications, we recommend the `bedrock-runtime` endpoint. If you don't need Workspaces, use the [Converse](conversation-inference.md) or [Invoke](inference-invoke.md) APIs with [Inference Profiles](inference-profiles-create.md) for isolation, tagging, and cost tracking on `bedrock-runtime`.
+
 **Note**
 Workspaces can only be used with models that support the Messages API on the `bedrock-mantle` endpoint. To see which models support the Messages API, see [APIs supported by Amazon Bedrock](apis.md).
 If you are using the OpenAI-compatible APIs (Responses API, Chat Completions), use [Projects (OpenAI-compatible)](projects.md) instead.

@@ -17,7 +17,7 @@ To create the role manually, use the IAM API to complete the following steps:
 
 1. Create an IAM role and attach the IAM policy to it.
 
-This topic explains how to complete these steps by using the AWS Command Line Interface (AWS CLI). It assumes that you've already created the Amazon Personalize solution and deployed it as an Amazon Personalize campaign. For information about creating and deploying a campaign, see [Creating a campaign](https://docs.aws.amazon.com//personalize/latest/dg/campaigns.html#create-campaign-cli) in the *Amazon Personalize Developer Guide*.
+This topic explains how to complete these steps by using the AWS Command Line Interface (AWS CLI). It assumes that you've already created the Amazon Personalize solution and deployed it as an Amazon Personalize campaign. For information about creating and deploying a campaign, see [Creating a campaign](https://docs.aws.amazon.com/personalize/latest/dg/campaigns.html#create-campaign-cli) in the *Amazon Personalize Developer Guide*.
 
 This topic also assumes that you've already installed and configured the AWS CLI. For information about setting up the AWS CLI, see [Get started with the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/installing.html) in the *AWS Command Line Interface User Guide*.
 

@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/timestream/latest/developerguide/what-is-timestream.html
 ---
 
-For similar capabilities to Amazon Timestream for LiveAnalytics, consider Amazon Timestream for InfluxDB. It offers simplified data ingestion and single-digit millisecond query response times for real-time analytics. Learn more [here](https://docs.aws.amazon.com//timestream/latest/developerguide/timestream-for-influxdb.html).
+For similar capabilities to Amazon Timestream for LiveAnalytics, consider Amazon Timestream for InfluxDB. It offers simplified data ingestion and single-digit millisecond query response times for real-time analytics. Learn more [here](https://docs.aws.amazon.com/timestream/latest/developerguide/timestream-for-influxdb.html).
 
 # What is Amazon Timestream for LiveAnalytics?
 <a name="what-is-timestream"></a>
@@ -39,7 +39,7 @@ We recommend that you begin by reading the following sections:
 + **[Tutorial](getting-started.db-w-sample-data.md) -** To create a database populated with sample data sets and run sample queries.
 + **[Amazon Timestream for LiveAnalytics concepts](concepts.md) -** To learn essential Timestream for LiveAnalytics concepts.
 + **[Accessing Timestream for LiveAnalytics](accessing.md) -** To learn how to access Timestream for LiveAnalytics using the console, AWS CLI, or API.
-+ **[QuotasDefault quotas](ts-limits.md) -** To learn about quotas on the number of Timestream for LiveAnalytics components that you can provision.
++ **[Quotas](ts-limits.md) -** To learn about quotas on the number of Timestream for LiveAnalytics components that you can provision.
 
 To learn how to quickly begin developing applications for Timestream for LiveAnalytics, see the following:
 + [Using the AWS SDKs](getting-started-sdks.md)

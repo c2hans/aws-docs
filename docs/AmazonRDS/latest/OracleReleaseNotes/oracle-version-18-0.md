@@ -14,8 +14,6 @@ Oracle Database 18c (18.0.0.0) is no longer supported. This information is only 
 
 To find what RUs are applied to Amazon RDS for Oracle Database 18c (18.0.0.0), see the following table.
 
-****
-
 |  Date  |  RU  |
 | --- | --- |
 | 2021 April | [18.0.0.0.ru-2021-04.rur-2021-04.r1](#oracle-version-RU-RUR.18.0.0.0.ru-2021-04.rur-2021-04.r1) |

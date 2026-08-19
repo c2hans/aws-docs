@@ -14,8 +14,6 @@ Reset the password for the specified service-specific credential.
 ## Change Type Details
 <a name="ct-22cbvc1yujhec-MAIr-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-22cbvc1yujhec |

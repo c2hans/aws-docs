@@ -91,7 +91,7 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/expor
 }
 ```
 
- This filter will export the `“name”` and `“val”` vertex properties for all vertices (regardless of label) into vertex files with a unified schema. A Parquet export have columns `~id`, `~label`, `val`, and `name`, with `val` as an Integer type column, and name a String column. For CSV exports, the last two columns will have their types appended to be `val:Int`, and `name:String`. Unlike the case where a [ specific label is specified](https://docs.aws.amazon.com//neptune-analytics/latest/userguide/export-filter-samples.html#export-filter-samples-1), the label column here will vary based on the labels of the vertices. Similarly, this filter will export the `“weight”` property as a Float column for all edges regardless of the edge label.
+ This filter will export the `“name”` and `“val”` vertex properties for all vertices (regardless of label) into vertex files with a unified schema. A Parquet export have columns `~id`, `~label`, `val`, and `name`, with `val` as an Integer type column, and name a String column. For CSV exports, the last two columns will have their types appended to be `val:Int`, and `name:String`. Unlike the case where a [ specific label is specified](https://docs.aws.amazon.com/neptune-analytics/latest/userguide/export-filter-samples.html#export-filter-samples-1), the label column here will vary based on the labels of the vertices. Similarly, this filter will export the `“weight”` property as a Float column for all edges regardless of the edge label.
 
 | "\~id" | "\~label" | "name:String" | "val:Int" |
 | --- | --- | --- | --- |

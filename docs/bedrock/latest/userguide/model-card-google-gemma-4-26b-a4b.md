@@ -12,13 +12,13 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-goog
 <a name="model-card-google-gemma-4-26b-a4b-details"></a>
 
 Gemma 4 26B-A4B is Google's mixture-of-experts model with 25.2 billion total parameters and 3.8 billion active per token, delivering cost-efficient inference with built-in reasoning, native function calling, and multimodal input across text and image, supporting a 256K token context window. For more information about model development and performance, see the [model/service card](https://huggingface.co/google/gemma-4-26B-A4B-it).
-+ **Model launch date:** Jun 10, 2025
++ **Model launch date:** Mar 31, 2026
 + **Model EOL date:** N/A
 + **End User License Agreements and Terms of Use:** [View](https://ai.google.dev/gemma/apache_2)
 + **Model lifecycle:** Active
 + **Context window:** 256K tokens
 
-| **Input Modalities** | **Output Modalities** | **[APIs supported](bedrock/latest/userguide/apis.html)** | **[Endpoints supported](bedrock/latest/userguide/endpoints.html)** |
+| **Input Modalities** | **Output Modalities** | **[APIs supported](apis.html)** | **[Endpoints supported](endpoints.html)** |
 | --- | --- | --- | --- |
 | ![Red circle with white X icon indicating error, cancel, or close action.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) Audio | ![Red circle with white X icon indicating error, cancel, or close action.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) Embedding | ![Green circle with white checkmark icon.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) Responses | ![Red circle with white X icon indicating error, cancel, or close action.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) bedrock-runtime |
 | ![Green circle with white checkmark icon.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) Image | ![Red circle with white X icon indicating error, cancel, or close action.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) Image | ![Green circle with white checkmark icon.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) Chat Completions | ![Green circle with white checkmark icon.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) bedrock-mantle |
@@ -28,7 +28,8 @@ Gemma 4 26B-A4B is Google's mixture-of-experts model with 25.2 billion total par
 
 **Note**
 Gemma 4 models are available only on the `bedrock-mantle` endpoint.
-This model is available on the `openai/v1/responses` path on the `bedrock-mantle` endpoint. This is different from the `v1/responses` path used by other models on the responses endpoint.
+
+*On `bedrock-mantle`, this model is served at `/openai/v1/responses`, not the default `/v1/responses`.*
 
 ## Capabilities and Features
 <a name="model-card-google-gemma-4-26b-a4b-capabilities"></a>
@@ -39,7 +40,7 @@ This model is available on the `openai/v1/responses` path on the `bedrock-mantle
 
 | **Supported** | **Not Supported** |
 | --- | --- |
-|  + ![Green circle with white checkmark icon.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Client-side tool calling](bedrock/latest/userguide/tool-use.html)<br />+ ![Green circle with white checkmark icon.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Reasoning](bedrock/latest/userguide/reasoning.html)<br />+ ![Green circle with white checkmark icon.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Projects](bedrock/latest/userguide/projects.html)  | — |
+|  + ![Green circle with white checkmark icon.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Client-side tool calling](tool-use.html)<br />+ ![Green circle with white checkmark icon.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Reasoning](reasoning.html)<br />+ ![Green circle with white checkmark icon.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Projects](projects.html)  | — |
 
 ## Pricing
 <a name="model-card-google-gemma-4-26b-a4b-pricing"></a>
@@ -49,7 +50,7 @@ For pricing information, see the [Amazon Bedrock Pricing](https://aws.amazon.com
 ## Programmatic Access
 <a name="model-card-google-gemma-4-26b-a4b-programmatic-access"></a>
 
-Use the following model IDs and endpoint URLs to access this model programmatically. For more information about the available APIs and endpoints, see [APIs supported](bedrock/latest/userguide/apis.html) and [Endpoints supported](bedrock/latest/userguide/endpoints.html).
+Use the following model IDs and endpoint URLs to access this model programmatically. For more information about the available APIs and endpoints, see [APIs supported](apis.html) and [Endpoints supported](endpoints.html).
 
 | **Endpoint** | **Model ID** | **In-Region endpoint URL** | **Geo inference ID** | **Global inference ID** |
 | --- | --- | --- | --- | --- |
@@ -60,7 +61,7 @@ Use the following model IDs and endpoint URLs to access this model programmatica
 ## Service Tiers
 <a name="model-card-google-gemma-4-26b-a4b-tiers"></a>
 
-Amazon Bedrock offers multiple service tiers to match your workload requirements. **Standard** provides pay-per-token access with no commitment. **Priority** offers higher throughput with a time-based commitment. **Flex** provides lower-cost access for flexible, non-time-sensitive workloads. **Reserved** provides dedicated throughput with a term commitment for predictable workloads. For more information, see [service tiers](bedrock/latest/userguide/service-tiers-inference.html).
+Amazon Bedrock offers multiple service tiers to match your workload requirements. **Standard** provides pay-per-token access with no commitment (set `"service_tier": "default"` or omit the field). **Priority** delivers the fastest response times for a price premium (set `"service_tier": "priority"`). **Flex** provides lower-cost access for flexible, non-time-sensitive workloads (set `"service_tier": "flex"`). **Reserved** provides dedicated throughput with a term commitment for predictable workloads; it is set at the account level rather than per request (contact your AWS account team to enable). For more information, see [service tiers](service-tiers-inference.html).
 
 | **Standard** | **Priority** | **Flex** | **Reserved** |
 | --- | --- | --- | --- |
@@ -83,9 +84,9 @@ Amazon Bedrock offers three inference options: **In-Region** keeps requests with
 ## Quotas and Limits
 <a name="model-card-google-gemma-4-26b-a4b-quotas"></a>
 
-Your AWS account has default quotas to maintain the performance of the service and to ensure appropriate usage of Amazon Bedrock. The default quotas assigned to an account might be updated depending on regional factors, payment history, fraudulent usage, and/or approval of a quota [increase request](bedrock/latest/userguide/quotas-increase.html). For more information, see [Quotas for Amazon Bedrock](quotas.md) documentation and see the [limits](general/latest/gr/bedrock.html#limits_bedrock) for the model.
+Your AWS account has default quotas to maintain the performance of the service and to ensure appropriate usage of Amazon Bedrock. The default quotas assigned to an account might be updated depending on regional factors, payment history, fraudulent usage, and/or approval of a quota [increase request](quotas-increase.html). For more information, see [Quotas for Amazon Bedrock](quotas.md) documentation and see the [limits](/general/latest/gr/bedrock.html#limits_bedrock) for the model.
 
-When consuming on-demand throughput on the `bedrock-mantle` endpoint, [available throughput scales over time](bedrock/latest/userguide/scaling-throughput-best-practices.html#scaling-ramp-up). Not all requests within your quota are guaranteed to succeed during periods of high demand, so ramping gradually is important. For this model, default limits aren't surfaced directly through Service Quotas, so we recommend following the ramp as your guide.
+When consuming on-demand throughput on the `bedrock-mantle` endpoint, [available throughput scales over time](scaling-throughput-best-practices.html#scaling-ramp-up). Not all requests within your quota are guaranteed to succeed during periods of high demand, so ramping gradually is important. For this model, default limits aren't surfaced directly through Service Quotas, so we recommend following the ramp as your guide.
 
 ## Sample Code
 <a name="model-card-google-gemma-4-26b-a4b-sample-code"></a>

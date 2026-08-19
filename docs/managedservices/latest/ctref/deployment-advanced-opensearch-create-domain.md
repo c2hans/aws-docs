@@ -14,8 +14,6 @@ Create an Amazon OpenSearch Service domain. An OpenSearch domain encapsulates Op
 ## Change Type Details
 <a name="ct-281et7bs9ep4s-DAOc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-281et7bs9ep4s |

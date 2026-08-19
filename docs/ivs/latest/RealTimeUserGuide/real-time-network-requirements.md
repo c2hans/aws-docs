@@ -23,4 +23,4 @@ By default, IVS real-time streaming relies on UDP for the transmission of media 
 
 | Destination | Ports |
 | --- | --- |
-| All subnets listed under the `IVS_REALTIME` service in [ip-ranges.json](https://docs.aws.amazon.com//vpc/latest/userguide/aws-ip-ranges.html) must be accessible, regardless of their `region` or your chosen AWS Region. Participants may be connected to any subnet automatically. See [Global Solution, Regional Control](what-is.md) for details. | UDP:3478<br />UDP:443<br />TCP:3478 (Fallback)<br />TCP:443 |
+| All subnets listed under the `IVS_REALTIME` service in [ip-ranges.json](https://docs.aws.amazon.com/vpc/latest/userguide/aws-ip-ranges.html) must be accessible, regardless of their `region` or your chosen AWS Region. Participants may be connected to any subnet automatically. See [Global Solution, Regional Control](what-is.md) for details. | UDP:3478<br />UDP:443<br />TCP:3478 (Fallback)<br />TCP:443 |

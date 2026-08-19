@@ -40,7 +40,12 @@ To guarantee your caller ID name is delivered to customers, see [Optimize your r
 
 Only phone numbers that you've [claimed](get-connect-number.md) or [ported to Connect Customer](port-phone-number.md) can be used as your caller ID number. Outbound calls without proper identification may be blocked in certain countries such as UK and Australia.
 
-To use an external phone number as your outbound caller ID number, contact Support to see if it's possible. The phone number needs to be in a [ country we support](https://d1v2gagwb6hfe1.cloudfront.net/Amazon_Connect_Telecoms_Coverage.pdf) for custom caller ID and you'll need to provide [proof of ownership](phone-number-requirements.md).
+To use an external phone number as your outbound caller ID number, you must meet the following requirements:
++ Verify that the phone number is in a country that supports custom caller ID. Check the [Amazon Connect Telecoms Coverage Guide](https://d1v2gagwb6hfe1.cloudfront.net/Amazon_Connect_Telecoms_Coverage.pdf) on the AWS website (PDF) to confirm.
++ Provide [proof of ownership](phone-number-requirements.md), such as a recent invoice from your current carrier showing the number. In the US, the carrier might also require Customer Service Records (CSRs).
++ Contact Support to activate the number for custom caller ID use before you configure it.
+
+To request custom outbound caller ID, open an Support case:
 
 1. Choose [Account and billing](https://console.aws.amazon.com/support/home#/case/create?issueType=customer-service&serviceCode=service-connect-number-management) to access a pre-populated form in the Support console. You must be signed in to your AWS account to access the form.
 
@@ -108,12 +113,14 @@ Toll-free products are designed to be national products and used within a countr
 ## How outbound parameters are selected
 <a name="how-outbound-parameters-selected"></a>
 
-If the call is placed with an external quick connect or quick connect number pad, the outbound caller ID and caller name depends on if the agent is on an active call or not.
+If the call is placed using a quick connect or the number pad, the outbound caller ID and caller name depends on if the agent is on an active call or not.
 + If the agent is on an active call, the original queue that the call is serviced from provides the outbound caller ID and caller name.
 + If the agent isn't on an active call, the outbound queue of the agent's [routing profile](routing-profiles.md) provides the outbound caller ID and caller name.
 
 **Note**
 You can override the outbound caller ID for direct outbound calls (when the agent is not on an active call) by using the [Call phone number](call-phone-number.md) block in a [custom outbound whisper flow](https://repost.aws/knowledge-center/connect-custom-outbound-whisper-flows). This override does not apply to transfers initiated while the agent is on an active call. In that case, the caller ID comes from the inbound queue that serviced the original call and cannot be overridden by the outbound whisper flow. To control caller ID for transfers, use a [Transfer to phone number](transfer-to-phone-number.md) block with a caller ID explicitly configured.
+
+If you use [queued callbacks](setup-queued-cb.md), configure an **Outbound caller ID number** on the queue associated with the callback. Without a valid caller ID, callbacks display as anonymous to the recipient. You can also use an outbound whisper flow to override the queue's caller ID for callbacks.
 
 ## How to set the caller ID number dynamically
 <a name="using-dynamic-caller-id"></a>
@@ -140,6 +147,8 @@ In the UK and many other countries internationally, local dialing requires the a
 
 **Important**
 Phone numbers must be formatted in E.164 or they will not work. They will also result in a breach of [Connect Customer Service Terms and conditions](https://aws.amazon.com/service-terms/) for acceptable use which may result in your service being suspended.
+
+Connect Customer transmits caller ID to carriers in E.164 format (the international telephone numbering standard). The recipient's carrier and handset control how the number appears—with or without country code, and grouped with spaces. Connect Customer does not control this display. You don't need any special configuration for national format display. The conversion happens automatically when the recipient is in the same country as the number.
 
 ## How to specify a custom caller ID number using a [Call phone number](call-phone-number.md) block
 <a name="call-number-block-how-it-works"></a>

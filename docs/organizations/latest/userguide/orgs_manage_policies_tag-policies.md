@@ -20,7 +20,7 @@ The rest of this page describes tag policies. For more information about tags, s
 + For general information about tagging, including naming and usage conventions, see the [*Tagging AWS Resources User Guide*](https://docs.aws.amazon.com/tag-editor/latest/userguide/tagging.html).
 + For a list of services that support using tags, see the [*Resource Groups Tagging API Reference*](https://docs.aws.amazon.com/resourcegroupstagging/latest/APIReference/Welcome.html).
 + For information about using tags to categorize resources, see the [*Best Practices for Tagging AWS Resources Whitepaper*](https://docs.aws.amazon.com/whitepapers/latest/tagging-best-practices/tagging-best-practices.html).
-+ For information on tagging Organizations resources, see [Tagging AWS Organizations resourcesConsiderations](orgs_tagging.md).
++ For information on tagging Organizations resources, see [Tagging AWS Organizations resources](orgs_tagging.md).
 + For information on tagging resources in other AWS services, see the documentation for that service.
 
 ## What are tag policies?

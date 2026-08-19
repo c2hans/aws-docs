@@ -39,8 +39,6 @@ The following table describes significant changes to this documentation since No
 
 The following table describes significant changes to the *AWS Encryption SDK Developer Guide* before November 2017.
 
-****
-
 | Change | Description | Date |
 | --- | --- | --- |
 | New release | Added the [Data key caching](data-key-caching.md) chapter for the new feature.<br />Added the [AWS Encryption SDK initialization vector reference](IV-reference.md) topic that explains that the SDK changed from generating random IVs to constructing deterministic IVs.<br />Added the [Concepts in the AWS Encryption SDK](concepts.md) topic to explain concepts, including the new cryptographic materials manager. | July 31, 2017 |

@@ -28,6 +28,7 @@ By default, you can create up to 1,000 evaluation configurations per AWS Region 
 + [Telemetry setup and delivery](supported-frameworks-telemetry.md)
 + [Supported agent frameworks](supported-frameworks.md)
 + [Built-in evaluators](built-in-evaluators-overview.md)
++ [Third-party evaluators](third-party-evaluators.md)
 + [Custom evaluators](custom-evaluators.md)
 + [Online evaluation](online-evaluations.md)
 + [On-demand evaluation](on-demand-evaluations.md)

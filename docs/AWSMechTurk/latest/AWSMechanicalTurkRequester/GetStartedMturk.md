@@ -58,8 +58,6 @@ We've also set the value of `FrameHeight` to zero, which directs the marketplace
 
  Next, we can define the attributes for our task. We'll use the following attributes:
 
-****
-
 |  Attribute  |  Value  |
 | --- | --- |
 |  Title  |  Describe the weather  |

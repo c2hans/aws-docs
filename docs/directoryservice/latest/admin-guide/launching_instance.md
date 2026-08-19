@@ -44,7 +44,6 @@ To seamlessly domain join an EC2 instance, you will need to complete the followi
 
 When your AWS Managed Microsoft AD is created, a security group is created with inbound and outbound rules. To learn more about these rules and ports, see [What gets created with your AWS Managed Microsoft AD](ms_ad_getting_started_what_gets_created.md). To seamlessly domain join an EC2 Windows instance, your VPC where you're launching your instance should allow the same ports allowed in your AWS Managed Microsoft AD security group's inbound and outbound rules.
 + Depending on your network security and firewall settings, you could be required to allow additional outbound traffic. This traffic would be for HTTPS (port 443) to the following endpoints:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/directoryservice/latest/admin-guide/launching_instance.html)
 + We recommend to use a DNS server that will resolve your AWS Managed Microsoft AD domain name. To do so, you can create a DHCP option set. See [Creating or changing a DHCP options set for AWS Managed Microsoft AD](dhcp_options_set.md) for more information.
   + If you choose not to create a DHCP option set, then your DNS servers will be static and configured to by your AWS Managed Microsoft AD.
@@ -83,7 +82,7 @@ This is the only chance for you to save the private key file.
 
 1. Choose one of the public subnets in your VPC from the **Subnet** dropdown list. The subnet you choose must have all external traffic routed to an internet gateway. If this is not the case, you won't be able to connect to the instance remotely.
 
-   For more information on how to connect to a internet gateway, see [Connect to the internet using an internet gateway](https://docs.aws.amazon.com//vpc/latest/userguide/VPC_Internet_Gateway.html) in the *Amazon VPC User Guide*.
+   For more information on how to connect to a internet gateway, see [Connect to the internet using an internet gateway](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Internet_Gateway.html) in the *Amazon VPC User Guide*.
 
 1. Under **Auto-assign public IP**, choose **Enable**.
 
@@ -174,6 +173,6 @@ You can enter either the fully qualified name of your domain or the NetBIOS name
 Now that your instance has been joined to the AWS Managed Microsoft AD Active Directory domain, you can log into that instance remotely and install utilities to manage the directory, such as adding users and groups. The Active Directory Administration Tools can be used to create users and groups. For more information, see [Installing Active Directory Administration Tools for AWS Managed Microsoft AD](ms_ad_install_ad_tools.md).
 
 **Note**
-You can also use Amazon Route 53 to process DNS queries instead of manually changing the DNS addresses on your Amazon EC2 instances. For more information, see [Integrating your Directory Service's DNS resolution with Amazon Route 53 Resolver](https://aws.amazon.com/blogs//networking-and-content-delivery/integrating-your-directory-services-dns-resolution-with-amazon-route-53-resolvers/) and [ Forwarding outbound DNS queries to your network](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-forwarding-outbound-queries).
+You can also use Amazon Route 53 to process DNS queries instead of manually changing the DNS addresses on your Amazon EC2 instances. For more information, see [Integrating your Directory Service's DNS resolution with Amazon Route 53 Resolver](https://aws.amazon.com/blogs/networking-and-content-delivery/integrating-your-directory-services-dns-resolution-with-amazon-route-53-resolvers/) and [ Forwarding outbound DNS queries to your network](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-forwarding-outbound-queries).
 
 ------

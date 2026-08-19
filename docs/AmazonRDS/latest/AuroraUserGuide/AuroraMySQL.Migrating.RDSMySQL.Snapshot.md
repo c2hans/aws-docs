@@ -187,7 +187,7 @@ You might be behind a corporate firewall that doesn't allow access to default po
      If your DB snapshot is encrypted, specify an encryption key to have your DB cluster encrypted at rest using the specified encryption key. You can specify the encryption key used by the DB snapshot or a different key. You can't create an unencrypted DB cluster from an encrypted DB snapshot.
    + **Auto Minor Version Upgrade**: This setting doesn't apply to Aurora MySQL DB clusters.
 
-     For more information about engine updates for Aurora MySQL, see [Database engine updates for Amazon Aurora MySQLLong-term support (LTS) and beta releases for Amazon Aurora MySQL](AuroraMySQL.Updates.md).
+     For more information about engine updates for Aurora MySQL, see [Database engine updates for Amazon Aurora MySQL](AuroraMySQL.Updates.md).
 
 1. Choose **Migrate** to migrate your DB snapshot.
 

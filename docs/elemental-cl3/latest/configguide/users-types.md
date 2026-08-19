@@ -85,8 +85,6 @@ Don't set up regular users on worker nodes when your organization is using a Con
 
 Following is a summary of the users that you must explicitly create.
 
-****
-
 | Type of user | How created |
 | --- | --- |
 | Regular administrators on Conductor Live | You manually add these users by [working on the primary Conductor Live](conductor-live-config-users.md) |

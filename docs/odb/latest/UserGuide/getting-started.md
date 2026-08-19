@@ -302,7 +302,7 @@ When you create your ODB network, Oracle Database@AWS automatically preconfigure
 
 1. Choose **Create ODB network**.
 
-After you have created an ODB network, you can peer it to a VPC. *ODB peering* is a user-created network connection that enables traffic to be routed privately between an Amazon VPC and an ODB network. After peering, an Amazon EC2 instance within the VPC can communicate with resources in the ODB network as if they were within the same network. For more information, see [Configuring ODB peering to an Amazon VPC in Oracle Database@AWSConfiguring DNS for Oracle Database@AWS](configuring.md).
+After you have created an ODB network, you can peer it to a VPC. *ODB peering* is a user-created network connection that enables traffic to be routed privately between an Amazon VPC and an ODB network. After peering, an Amazon EC2 instance within the VPC can communicate with resources in the ODB network as if they were within the same network. For more information, see [Configuring ODB peering to an Amazon VPC in Oracle Database@AWS](configuring.md).
 
 ## Step 2: Create an Oracle Exadata infrastructure in Oracle Database@AWS
 <a name="getting-started-infra"></a>

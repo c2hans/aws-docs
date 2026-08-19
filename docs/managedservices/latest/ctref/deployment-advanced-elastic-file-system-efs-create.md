@@ -14,8 +14,6 @@ Use to create a Elastic File System (EFS) stack
 ## Change Type Details
 <a name="ct-2uw99b8hpncnu-DAEc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2uw99b8hpncnu |

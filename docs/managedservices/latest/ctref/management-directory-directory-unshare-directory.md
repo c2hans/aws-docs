@@ -14,8 +14,6 @@ Stops the directory sharing between the directory owner and consumer accounts. R
 ## Change Type Details
 <a name="ct-2xd2anlb5hbzo-MDDu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2xd2anlb5hbzo |

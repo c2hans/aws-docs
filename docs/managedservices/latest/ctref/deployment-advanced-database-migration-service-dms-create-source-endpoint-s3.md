@@ -14,8 +14,6 @@ Use to create a Database Migration Service (DMS) source endpoint for S3.
 ## Change Type Details
 <a name="ct-2oxl37nphsrjz-DADc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2oxl37nphsrjz |

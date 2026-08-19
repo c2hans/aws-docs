@@ -20,8 +20,6 @@ If the root directory contains a `platform.yaml` file specifying a custom platfo
 ## Options
 <a name="listoptions"></a>
 
-****
-
 |  Name  |  Description  |
 | --- | --- |
 | `-a`<br />or<br />`--all` | Lists all environments from all applications. |

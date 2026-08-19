@@ -21,8 +21,6 @@ After your numbers are ordered or ported, the exact number of requested phone nu
 ### For ordering phone numbers
 <a name="ai-ordering"></a>
 
-****
-
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
 | Local telephone numbers | Yes | An order form is required. Use the form that is provided to you when you make the request. Provide the following information:+  Your name and address <br />+  A description of the service for which the number(s) will be used <br />A global address is acceptable. |
@@ -37,8 +35,6 @@ Porting is not supported.
 
 ### For ordering phone numbers
 <a name="ag-ordering"></a>
-
-****
 
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
@@ -55,8 +51,6 @@ Porting is not supported.
 ### For ordering phone numbers
 <a name="ar-ordering"></a>
 
-****
-
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
 | Local telephone numbers | No |   |
@@ -65,8 +59,6 @@ Porting is not supported.
 
 ### Number portability
 <a name="ar-porting"></a>
-
-****
 
 | Portability windows | Required Documents |
 | --- | --- |
@@ -81,8 +73,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 ### For ordering phone numbers
 <a name="au-ordering"></a>
 
-****
-
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
 | Local telephone numbers  | Yes | Your business address, a contact name, and phone number. An address in Australia is required |
@@ -90,8 +80,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 ### Number portability
 <a name="au-porting"></a>
-
-****
 
 | Type of number | Portability windows | Required Documents |
 | --- | --- | --- |
@@ -106,8 +94,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 ### For ordering phone numbers
 <a name="at-ordering"></a>
 
-****
-
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
 | Local telephone numbers  | Yes | Proof of telecom services at your address, which must match the city code requested. Valid forms of proof (must be issued in the past 6 months):+  Invoice from a network operator for another phone number, at your address <br />+  Invoice from an internet services provider for internet access with fix IP address, at your address  |
@@ -116,8 +102,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 ### Number portability
 <a name="at-porting"></a>
-
-****
 
 | Portability windows | Required Documents |
 | --- | --- |
@@ -131,8 +115,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 ### For ordering phone numbers
 <a name="be-ordering"></a>
 
-****
-
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
 | Local telephone numbers:  | Yes | Your business address. It must be a local address corresponding to the area code of the telephone number(s). |
@@ -141,8 +123,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 ### Number portability
 <a name="be-porting"></a>
-
-****
 
 | Portability windows | Required Documents |
 | --- | --- |
@@ -156,8 +136,6 @@ Ordering and porting of \+32 78 national numbers is not supported.
 
 ### For ordering phone numbers
 <a name="bs-ordering"></a>
-
-****
 
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
@@ -174,8 +152,6 @@ Porting is not supported.
 ### For ordering phone numbers
 <a name="bb-ordering"></a>
 
-****
-
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
 | Local telephone numbers: \+1 246 | Yes | An order form is required. Use the form that is provided to you when you make the request. Provide the following information:+  Your name and address <br />+  A description of the service for which the number(s) will be used <br />A global address is acceptable. |
@@ -191,8 +167,6 @@ Porting is not supported.
 ### For ordering phone numbers
 <a name="bo-ordering"></a>
 
-****
-
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
 | National prefixes: \+591 50 | No |   |
@@ -207,8 +181,6 @@ Porting is not supported.
 
 ### For ordering phone numbers
 <a name="bq-ordering"></a>
-
-****
 
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
@@ -227,8 +199,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 ### For ordering phone numbers
 <a name="br-ordering"></a>
 
-****
-
 <table>
 <thead>
   <tr><th>Type of Number</th><th>Are there ID requirements?</th><th>How to access</th></tr>
@@ -241,8 +211,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 ### Number portability
 <a name="br-porting"></a>
-
-****
 
 <table>
 <thead>
@@ -259,8 +227,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 ### For ordering phone numbers
 <a name="brunei-ordering"></a>
-
-****
 
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
@@ -279,8 +245,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 ### For ordering phone numbers
 <a name="ca-ordering"></a>
 
-****
-
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
 | Local telephone numbers  | No |   |
@@ -288,8 +252,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 ### Number portability
 <a name="ca-porting"></a>
-
-****
 
 | Portability windows | Required Documents |
 | --- | --- |
@@ -301,8 +263,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 ### For ordering phone numbers
 <a name="cl-ordering"></a>
 
-****
-
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
 | Local telephone numbers  | Yes | Legal Business Name (Razón Social): Extract from the commercial register<br />Local Business Address (must be within Chile): Extract from the commercial register showing the legal business address<br />Tax Registration Documentation: Copy of the RUT (Rol Unico Tributario) - Official Chilean tax identification |
@@ -311,8 +271,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 ### Number portability
 <a name="cl-porting"></a>
-
-****
 
 | Portability windows | Required Documents |
 | --- | --- |
@@ -324,16 +282,12 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 ### For ordering phone numbers
 <a name="cn-ordering"></a>
 
-****
-
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
 | UIFN | Yes | Your business name, address and service usage description. A global address is acceptable.  |
 
 ### Number portability
 <a name="cn-porting"></a>
-
-****
 
 | Portability windows | Required Documents |
 | --- | --- |
@@ -346,8 +300,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 ### For ordering phone numbers
 <a name="co-ordering"></a>
-
-****
 
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
@@ -366,8 +318,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 ### For ordering phone numbers
 <a name="cr-ordering"></a>
-
-****
 
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
@@ -390,8 +340,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 ### For ordering phone numbers
 <a name="cw-ordering"></a>
 
-****
-
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
 | Local telephone numbers: \+599 9 | Yes | An order form is required. Use the form that is provided to you when you make the request. Provide the following information:+  Your name and address <br />+  A description of the service for which the number(s) will be used <br />A global address is acceptable. |
@@ -407,8 +355,6 @@ Porting is not supported.
 ### For ordering phone numbers
 <a name="cy-ordering"></a>
 
-****
-
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
 | Local telephone numbers  | Yes | Your business address. It must be a local address corresponding to the area code of the telephone number(s). |
@@ -416,8 +362,6 @@ Porting is not supported.
 
 ### Number portability
 <a name="cy-porting"></a>
-
-****
 
 | Portability windows | Required Documents |
 | --- | --- |
@@ -429,8 +373,6 @@ Porting is not supported.
 ### For ordering phone numbers
 <a name="cz-ordering"></a>
 
-****
-
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
 | Local telephone numbers:  | Yes | Your business name and address. It must be a local address corresponding to the area code of the telephone number(s). You must provide a copy of the business registration document as proof of address. |
@@ -438,8 +380,6 @@ Porting is not supported.
 
 ### Number portability
 <a name="cz-porting"></a>
-
-****
 
 | Portability windows | Required Documents |
 | --- | --- |
@@ -453,8 +393,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 ### For ordering phone numbers
 <a name="dk-ordering"></a>
 
-****
-
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
 | Local telephone numbers:  | Yes | Your business name, address, and service description. A global address is acceptable. |
@@ -463,8 +401,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 ### Number portability
 <a name="dk-porting"></a>
-
-****
 
 | Portability windows | Required Documents |
 | --- | --- |
@@ -476,8 +412,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 ### For ordering phone numbers
 <a name="dom-ordering"></a>
 
-****
-
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
 | Local telephone numbers | No | N/A |
@@ -485,8 +419,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 ### Number portability
 <a name="dom-porting"></a>
-
-****
 
 | Portability windows | Required Documents |
 | --- | --- |
@@ -497,8 +429,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 ### For ordering phone numbers
 <a name="ecu-ordering"></a>
-
-****
 
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
@@ -516,8 +446,6 @@ Not supported
 ### For ordering phone numbers
 <a name="sv-ordering"></a>
 
-****
-
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
 | Local telephone numbers | Yes | Businesses must provide their name, address, and RUC/ TaxID number, along with a copy of the business registration and a proof of address.<br />Valid proofs of address include: third-party issued bank statements, utility bills (all issued in the previous 6 months); government documents (issued in the previous year).<br />A local address is required. |
@@ -525,8 +453,6 @@ Not supported
 
 ### Number portability
 <a name="sv-porting"></a>
-
-****
 
 | Portability windows | Required Documents |
 | --- | --- |
@@ -540,8 +466,6 @@ Not supported
 
 For UIFN numbers, supports standard [Regions and requirements](#uifn-requirements).
 
-****
-
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
 | Toll-free prefixes: \+372 800 | No |  |
@@ -549,8 +473,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 ### Number portability
 <a name="ee-porting"></a>
-
-****
 
 | Portability windows | Required Documents |
 | --- | --- |
@@ -562,8 +484,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 ### For ordering phone numbers
 <a name="fi-ordering"></a>
 
-****
-
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
 | Local telephone numbers  | Yes | Your residence or business address. Both must be a local address corresponding to the area code of the telephone number(s). |
@@ -572,8 +492,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 ### Number portability
 <a name="fi-porting"></a>
-
-****
 
 | Portability windows | Required Documents |
 | --- | --- |
@@ -587,8 +505,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 ### For ordering phone numbers
 <a name="fr-ordering"></a>
 
-****
-
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
 | Local geographic telephone numbers: \+33 1, \+33 2, \+33 3, \+33 4, \+33 5 | Yes | A business address in France is required.<br />You must provide a copy of the business registration (KBIS, INPI, or INSEE extract issued in the past 12 months), listing the provided address in France as main business address. |
@@ -600,8 +516,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 ### Number portability
 <a name="fi-porting"></a>
 
-****
-
 | Portability windows | Required Documents |
 | --- | --- |
 | Monday-Friday 10 AM to 12 PM CET | 1.  Last invoice <br />2.  Letter of Authorization (LOA): When you request porting services, we will provide you with a country-specific LOA template and explain how to complete it.  <br />3.  Documents required per Type of Number as listed in the previous table for ordering numbers.  <br />4.  It is mandatory to provide RIO code from the losing carrier, or at least the SIRET. You can obtain the SIRET by contacting your existing telecom carrier. Number portability is supported for all toll-free prefixes from \+33 800 to \+33 805, geographic prefixes from \+33 1 to \+33 5, and national multipurpose prefixes \+33 9. |
@@ -612,16 +526,12 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 ### For ordering phone numbers
 <a name="gf-ordering"></a>
 
-****
-
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
 | UIFN | Yes | Your business name, address and service usage description. A global address is acceptable.  |
 
 ### Number portability
 <a name="gf-porting"></a>
-
-****
 
 | Portability windows | Required Documents |
 | --- | --- |
@@ -632,8 +542,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 ### For ordering phone numbers
 <a name="ge-ordering"></a>
-
-****
 
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
@@ -653,8 +561,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 ### For ordering phone numbers
 <a name="de-ordering"></a>
 
-****
-
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
 | Local telephone numbers  | Yes | Your business address. It must be a local address corresponding to the area code of the telephone number(s). You must provide a copy of the business registration document (issued in the past 6 months) as proof of address. |
@@ -663,8 +569,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 ### Number portability
 <a name="de-porting"></a>
-
-****
 
 | Portability windows | Required Documents |
 | --- | --- |
@@ -678,8 +582,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 ### For ordering phone numbers
 <a name="gr-ordering"></a>
 
-****
-
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
 | Local telephone numbers:  | Yes | Your business address. It must be a local address corresponding to the area code of the telephone number(s).<br />A copy of your business registration in Greece (extracted within the last 12 months). |
@@ -687,8 +589,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 ### Number portability
 <a name="gr-porting"></a>
-
-****
 
 | Portability windows | Required Documents |
 | --- | --- |
@@ -699,8 +599,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 ### For ordering phone numbers
 <a name="guatemala-ordering"></a>
-
-****
 
 | Type of Number | Are there ID requirements? | Acceptable Identification | Restrictions |
 | --- | --- | --- | --- |
@@ -717,16 +615,12 @@ Porting is not supported.
 ### For ordering phone numbers
 <a name="gp-ordering"></a>
 
-****
-
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
 | UIFN | Yes | Your business name, address and service usage description. A global address is acceptable.  |
 
 ### Number portability
 <a name="gp-porting"></a>
-
-****
 
 | Portability windows | Required Documents |
 | --- | --- |
@@ -737,8 +631,6 @@ Porting is not supported.
 
 ### For ordering phone numbers
 <a name="honduras-ordering"></a>
-
-****
 
 | Type of Number | Are there ID requirements? | Acceptable Identification | Restrictions |
 | --- | --- | --- | --- |
@@ -758,8 +650,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 ### For ordering phone numbers
 <a name="hk-ordering"></a>
 
-****
-
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
 | Local telephone numbers | Yes | Businesses must provide their name, address, a copy of the business registration, and a proof of address. Valid proofs of address include: third-party issued bank statements, utility bills (all issued in the previous 6 months); government documents (issued in the previous year).<br />A local address is required.  |
@@ -768,8 +658,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 ### Number portability
 <a name="hk-porting"></a>
-
-****
 
 | Portability windows | Required Documents |
 | --- | --- |
@@ -783,8 +671,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 ### For ordering phone numbers
 <a name="hu-ordering"></a>
 
-****
-
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
 | Local telephone numbers  | Yes | Your business address. It must be a local address corresponding to the area code of the telephone number(s). You must provide a copy of the business registration document (issued in the past 6 months) as proof of address.<br />A copy of the ID or passport of an authorized representative is also required. |
@@ -792,8 +678,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 ### Number portability
 <a name="hu-porting"></a>
-
-****
 
 | Portability windows | Required Documents |
 | --- | --- |
@@ -806,8 +690,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 ### For ordering phone numbers
 <a name="iceland-ordering"></a>
-
-****
 
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
@@ -824,8 +706,6 @@ Porting is not supported.
 
 ### For ordering phone numbers
 <a name="id-ordering"></a>
-
-****
 
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
@@ -844,8 +724,6 @@ Not supported
 ### For ordering phone numbers
 <a name="ie-ordering"></a>
 
-****
-
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
 | Local telephone numbers  | Yes | Your business address. It must be a local address corresponding to the area code of the telephone number(s). You must provide proof of address (such as a copy of the business registration or a utility bill). |
@@ -853,8 +731,6 @@ Not supported
 
 ### Number portability
 <a name="ie-porting"></a>
-
-****
 
 | Portability windows | Required Documents |
 | --- | --- |
@@ -866,16 +742,12 @@ Not supported
 ### For ordering phone numbers
 <a name="il-ordering"></a>
 
-****
-
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
 | UIFN | Yes | Your business name, address and service usage description. A global address is acceptable.  |
 
 ### Number portability
 <a name="il-porting"></a>
-
-****
 
 | Portability windows | Required Documents |
 | --- | --- |
@@ -889,8 +761,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 ### For ordering phone numbers
 <a name="it-ordering"></a>
 
-****
-
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
 | Local telephone numbers  | Yes | Your business name, address and VAT number. It must be a local address corresponding to the area code of the telephone number(s). You must provide a copy of the business registration (extracted within the last 6 months). If the address you are ordering numbers at is not listed on the business registration, you must additionally provide a proof of the address such as a utility bill.<br />You must provide the following details of an authorized representative: name and address, birth location and data, and nationality and tax code. Also provide proof of the authorized representative's identity, which can be a copy of an ID or passport. The name of the representative must appear on the business registration. |
@@ -898,8 +768,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 ### Number portability
 <a name="it-porting"></a>
-
-****
 
 | Portability windows | Required Documents |
 | --- | --- |
@@ -910,8 +778,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 ### For ordering phone numbers
 <a name="jm-ordering"></a>
-
-****
 
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
@@ -930,8 +796,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 ### For ordering phone numbers
 <a name="jp-ordering"></a>
 
-****
-
 | Supported Regions | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- | --- |
 | Asia Pacific (Tokyo) | Local telephone numbers: \+81 3, \+81 6 | Yes | Businesses must provide 3 pieces of documentation: +  **Company registration documents** (must be issued in the past 6 months). These documents must show:   The business address is in the city corresponding to the requested area code of the number.   The authorized representative of the business.   <br />+  **A copy of the personal ID or passport of the business's authorized representative**. The person must be registered on the Company Registration Documents. Valid personal ID can be government-issued IDs or passports. <br />+  **Proof of address for the business** (must be issued in the past 6 months). Valid proofs of address include: third-party issued bank statements, public utility bills; government documents; or IDs listing the submitted address, such as government-issued IDs, passports, and business registration. <br />Copies of these documents should be made into a single ZIP file. |
@@ -940,8 +804,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 ### Number portability
 <a name="jp-porting"></a>
-
-****
 
 | Supported regions | Portability windows | Required Documents |
 | --- | --- | --- |
@@ -956,8 +818,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 ### For ordering phone numbers
 <a name="lv-ordering"></a>
 
-****
-
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
 | Toll-free prefixes: \+371 80 | Yes | Businesses must provide a copy of the business registration, along with proof of address within Latvia (issued in the past 6 months).<br /> Valid forms of proof:+  Business Registration <br />+  Third-party issued bank statement <br />+  Public utility bill showing regular use <br />+  Lease Agreement <br />+  Government documents  |
@@ -965,8 +825,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 ### Number portability
 <a name="lv-porting"></a>
-
-****
 
 | Portability windows | Required Documents |
 | --- | --- |
@@ -980,8 +838,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 ### For ordering phone numbers
 <a name="lt-ordering"></a>
 
-****
-
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
 | Local telephone numbers  | Yes | Your business address. It must be a local address corresponding to the area code of the telephone number(s). |
@@ -989,8 +845,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 ### Number portability
 <a name="lt-porting"></a>
-
-****
 
 | Portability windows | Required Documents |
 | --- | --- |
@@ -1004,8 +858,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 ### For ordering phone numbers
 <a name="lu-ordering"></a>
 
-****
-
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
 | Local telephone numbers: \+352 27 | Yes | Your residence or business address. It must be a local address corresponding to the area code of the telephone number(s). <br />A contact phone number. |
@@ -1014,8 +866,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 ### Number portability
 <a name="lu-porting"></a>
-
-****
 
 | Portability windows | Required Documents |
 | --- | --- |
@@ -1027,16 +877,12 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 ### For ordering phone numbers
 <a name="mo-ordering"></a>
 
-****
-
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
 | UIFN | Yes | Your business name, address and service usage description. A global address is acceptable.  |
 
 ### Number portability
 <a name="mo-porting"></a>
-
-****
 
 | Portability windows | Required Documents |
 | --- | --- |
@@ -1048,16 +894,12 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 ### For ordering phone numbers
 <a name="mk-ordering"></a>
 
-****
-
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
 | UIFN | Yes | Your business name, address and service usage description. A global address is acceptable.  |
 
 ### Number portability
 <a name="mk-porting"></a>
-
-****
 
 | Portability windows | Required Documents |
 | --- | --- |
@@ -1068,8 +910,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 ### For ordering phone numbers
 <a name="my-ordering"></a>
-
-****
 
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
@@ -1087,16 +927,12 @@ Not supported
 ### For ordering phone numbers
 <a name="mt-ordering"></a>
 
-****
-
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
 | UIFN | Yes | Your business name, address and service usage description. A global address is acceptable.  |
 
 ### Number portability
 <a name="mt-porting"></a>
-
-****
 
 | Portability windows | Required Documents |
 | --- | --- |
@@ -1108,16 +944,12 @@ Not supported
 ### For ordering phone numbers
 <a name="mq-ordering"></a>
 
-****
-
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
 | UIFN | Yes | Your business name, address and service usage description. A global address is acceptable.  |
 
 ### Number portability
 <a name="mq-porting"></a>
-
-****
 
 | Portability windows | Required Documents |
 | --- | --- |
@@ -1129,16 +961,12 @@ Not supported
 ### For ordering phone numbers
 <a name="yt-ordering"></a>
 
-****
-
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
 | UIFN | Yes | Your business name, address and service usage description. A global address is acceptable.  |
 
 ### Number portability
 <a name="yt-porting"></a>
-
-****
 
 | Portability windows | Required Documents |
 | --- | --- |
@@ -1150,8 +978,6 @@ Not supported
 ### For ordering phone numbers
 <a name="mx-ordering"></a>
 
-****
-
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
 | Local telephone numbers  | No |  |
@@ -1159,8 +985,6 @@ Not supported
 
 ### Number portability
 <a name="mx-porting"></a>
-
-****
 
 | Portability windows | Required Documents |
 | --- | --- |
@@ -1172,16 +996,12 @@ Not supported
 ### For ordering phone numbers
 <a name="mc-ordering"></a>
 
-****
-
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
 | UIFN | Yes | Your business name, address and service usage description. A global address is acceptable.  |
 
 ### Number portability
 <a name="mc-porting"></a>
-
-****
 
 | Portability windows | Required Documents |
 | --- | --- |
@@ -1195,8 +1015,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 ### For ordering phone numbers
 <a name="nz-ordering"></a>
 
-****
-
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
 | Local telephone numbers  | No |  |
@@ -1204,8 +1022,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 ### Number portability
 <a name="nz-porting"></a>
-
-****
 
 | Portability windows | Required Documents |
 | --- | --- |
@@ -1219,8 +1035,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 ### For ordering phone numbers
 <a name="nl-ordering"></a>
 
-****
-
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
 | Local telephone numbers  | Yes | Your business address. It must be a local address corresponding to the area code of the telephone number(s). |
@@ -1230,8 +1044,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 ### Number portability
 <a name="nl-porting"></a>
-
-****
 
 | Portability windows | Required Documents |
 | --- | --- |
@@ -1243,8 +1055,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 ### For ordering phone numbers
 <a name="nicaragua-ordering"></a>
 
-****
-
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
 | Mobile prefixes: \+505 (7)  | No | N/A |
@@ -1254,8 +1064,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 ### For ordering phone numbers
 <a name="ng-ordering"></a>
-
-****
 
 | Supported Regions | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- | --- |
@@ -1272,8 +1080,6 @@ Not supported
 ### For ordering phone numbers
 <a name="no-ordering"></a>
 
-****
-
 - ** Europe (Frankfurt) Europe (London)**
   - **Type of Number:** Local telephone numbers:  / **Are there ID requirements?:** Yes / **Acceptable Identification:** Your business address in Norway, street code, municipality code, and company organization number. <br />Norwegian business registration as proof of address.
   - **Type of Number:** Toll-free prefixes: \+47 800 / **Are there ID requirements?:** Yes / **Acceptable Identification:** Your business address in Norway, street code, municipality code, and company organization number. <br />Norwegian business registration as proof of address.
@@ -1283,8 +1089,6 @@ Numbers are available to businesses only, not individuals. The DID type is Landl
 
 ### Number portability
 <a name="no-porting"></a>
-
-****
 
 | Supported Regions | Portability windows | Required Documents |
 | --- | --- | --- |
@@ -1296,8 +1100,6 @@ Numbers are available to businesses only, not individuals. The DID type is Landl
 ### For ordering phone numbers
 <a name="pa-ordering"></a>
 
-****
-
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
 | Local telephone numbers: | No |  |
@@ -1305,8 +1107,6 @@ Numbers are available to businesses only, not individuals. The DID type is Landl
 
 ### Number portability
 <a name="pa-porting"></a>
-
-****
 
 | Portability windows | Required Documents |
 | --- | --- |
@@ -1320,8 +1120,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 ### For ordering phone numbers
 <a name="pe-ordering"></a>
 
-****
-
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
 | Local telephone numbers  | No |  |
@@ -1329,8 +1127,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 ### Number portability
 <a name="pe-porting"></a>
-
-****
 
 | Portability windows | Required Documents |
 | --- | --- |
@@ -1341,8 +1137,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 ### For ordering phone numbers
 <a name="ph-ordering"></a>
-
-****
 
 | Type of Number | Are there ID requirements? | Agent location | Acceptable Identification |
 | --- | --- | --- | --- |
@@ -1357,8 +1151,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 ### Number portability
 <a name="ph-porting"></a>
 
-****
-
 | Portability windows | Required Documents |
 | --- | --- |
 | Preset UIFN times only | Service Provider Change Authorization and Designation of Agency provided by Amazon  |
@@ -1369,8 +1161,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 ### For ordering phone numbers
 <a name="pl-ordering"></a>
 
-****
-
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
 | Local telephone numbers  | Yes | Your business name, address and tax number (NIP). It must be a local address corresponding to the area code of the telephone number(s). You must provide a copy of the business registration as proof of the address. |
@@ -1378,8 +1168,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 ### Number portability
 <a name="pl-porting"></a>
-
-****
 
 | Portability windows | Required Documents |
 | --- | --- |
@@ -1393,8 +1181,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 ### For ordering phone numbers
 <a name="pt-ordering"></a>
 
-****
-
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
 | Local telephone numbers | Yes | Your business address. It must be a local address corresponding to the area code of the telephone number(s). <br />Your tax ID (NIF). <br /> You must also submit the required proof of Telecom services being provided at the address. |
@@ -1403,8 +1189,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 ### Number portability
 <a name="pt-porting"></a>
-
-****
 
 | Portability windows | Required Documents |
 | --- | --- |
@@ -1416,8 +1200,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 ### For ordering phone numbers
 <a name="pr-ordering"></a>
 
-****
-
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
 | Local telephone numbers: \+1 787, \+1 939 | No |  |
@@ -1425,8 +1207,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 ### Number portability
 <a name="pr-porting"></a>
-
-****
 
 | Portability windows | Required Documents |
 | --- | --- |
@@ -1438,16 +1218,12 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 ### For ordering phone numbers
 <a name="re-ordering"></a>
 
-****
-
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
 | UIFN | Yes | Your business name, address and service usage description. A global address is acceptable.  |
 
 ### Number portability
 <a name="re-porting"></a>
-
-****
 
 | Portability windows | Required Documents |
 | --- | --- |
@@ -1461,8 +1237,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 ### For ordering phone numbers
 <a name="ro-ordering"></a>
 
-****
-
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
 | Local telephone numbers:  | Yes | Your address and proof of address. It must be a local address corresponding to the area code of the telephone number(s). |
@@ -1471,8 +1245,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 ### Number portability
 <a name="ro-porting"></a>
-
-****
 
 | Portability windows | Required Documents |
 | --- | --- |
@@ -1483,8 +1255,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 ### For ordering phone numbers
 <a name="bq-ordering"></a>
-
-****
 
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
@@ -1501,16 +1271,12 @@ Porting is not supported.
 ### For ordering phone numbers
 <a name="pm-ordering"></a>
 
-****
-
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
 | UIFN | Yes | Your business name, address and service usage description. A global address is acceptable.  |
 
 ### Number portability
 <a name="pm-porting"></a>
-
-****
 
 | Portability windows | Required Documents |
 | --- | --- |
@@ -1521,8 +1287,6 @@ Porting is not supported.
 
 ### For ordering phone numbers
 <a name="rs-ordering"></a>
-
-****
 
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
@@ -1540,8 +1304,6 @@ Not supported
 ### For ordering phone numbers
 <a name="mf-ordering"></a>
 
-****
-
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
 | Local telephone numbers  | Yes | An order form is required. Use the form that is provided to you when you make the request. Provide the following information:+  Your name and address <br />+  A description of the service for which the number(s) will be used <br />A global address is acceptable. |
@@ -1556,8 +1318,6 @@ Porting is not supported.
 
 ### For ordering phone numbers
 <a name="mf-ordering"></a>
-
-****
 
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
@@ -1576,8 +1336,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 ### For ordering phone numbers
 <a name="sg-ordering"></a>
 
-****
-
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
 | National prefixes: \+65 31 and \+65 6 | Yes | Address required in country.<br />Documents required for company: Company registration documents |
@@ -1585,8 +1343,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 ### Number portability
 <a name="sg-porting"></a>
-
-****
 
 | Portability windows | Required Documents |
 | --- | --- |
@@ -1599,8 +1355,6 @@ Porting-out DIDs is only possible for contiguous number blocks of 10 numbers (..
 
 ### For ordering phone numbers
 <a name="bq-ordering"></a>
-
-****
 
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
@@ -1616,8 +1370,6 @@ Porting is not supported.
 
 ### For ordering phone numbers
 <a name="sx-ordering"></a>
-
-****
 
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
@@ -1636,8 +1388,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 ### For ordering phone numbers
 <a name="sk-ordering"></a>
 
-****
-
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
 | Local telephone numbers  | Yes | Your business address. It must be a local address corresponding to the area code of the telephone number(s). |
@@ -1645,8 +1395,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 ### Number portability
 <a name="sk-porting"></a>
-
-****
 
 | Portability windows | Required Documents |
 | --- | --- |
@@ -1660,8 +1408,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 ### For ordering phone numbers
 <a name="si-ordering"></a>
 
-****
-
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
 | Local telephone numbers  | Yes | Your business address. It must be a local address corresponding to the area code of the telephone number(s). |
@@ -1670,8 +1416,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 ### Number portability
 <a name="si-porting"></a>
-
-****
 
 | Portability windows | Required Documents |
 | --- | --- |
@@ -1685,8 +1429,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 ### For ordering phone numbers
 <a name="za-ordering"></a>
 
-****
-
 - **Africa (Cape Town) **
   - **Type of Number:** Local numbers:  / **Are there ID requirements?:** Yes / **Acceptable Identification:** Your business address. It must be a local address corresponding to the area code of the telephone number(s). Your Tax ID.
   - **Type of Number:** Mobile numbers: / **Are there ID requirements?:** Yes / **Acceptable Identification:** Your business address in South Africa and proof of address such as one of the following documents:+  Excerpt from the commercial register showing the South Africa address <br />+  Utility bill <br />+  Tax notice <br />+  Rent receipt <br />+  Title deed
@@ -1695,8 +1437,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 ### Number portability
 <a name="za-porting"></a>
-
-****
 
 | Supported Regions | Portability windows | Required Documents |
 | --- | --- | --- |
@@ -1713,8 +1453,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 ### For ordering phone numbers
 <a name="kr-ordering"></a>
 
-****
-
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
 | VoIP prefixes numbers: \+82 70 | Yes | Local customers should provide a copy of their **business (tax office) registration certificate**, which is issued by local tax authorities and shows the company's registered address.<br />Submit an Support ticket to verify the documents for new number(s) ordering. |
@@ -1724,8 +1462,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 ### Number portability
 <a name="kr-porting"></a>
-
-****
 
 | Type of number | Portability windows | Required documents |
 | --- | --- | --- |
@@ -1743,8 +1479,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 ### For ordering phone numbers
 <a name="es-ordering"></a>
 
-****
-
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
 | Local telephone numbers  | Yes | Your business address in Spain in the relevant geographic zone, and your company tax ID. A copy of the business registration (Agencia Tributaria or Registro Mercantil). If the address on the business registration is different than the address provided for the telephone numbers, you must also provide a proof of address. |
@@ -1752,8 +1486,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 ### Number portability
 <a name="es-porting"></a>
-
-****
 
 | Portability windows | Required Documents |
 | --- | --- |
@@ -1764,8 +1496,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 ### For ordering phone numbers
 <a name="se-ordering"></a>
-
-****
 
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
@@ -1779,8 +1509,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 Number portability is not available for \+46 77 numbers.
 
-****
-
 | Portability windows | Required Documents |
 | --- | --- |
 | Monday-Friday 10 AM to 12 PM CET | 1.   Last invoice <br />2.  Letter of Authorization (LOA): When you request porting services, we will provide you with a country-specific LOA template and explain how to complete it.  <br />3.  Your tax number has to be provided. A Swedish organization number usually contains 12 digits, starting with **16** if it is from a company, or **19** or **20** if it's personal. <br />4.  Documents required for the Type of Number, as listed in the previous table for ordering phone numbers    |
@@ -1793,8 +1521,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 ### For ordering phone numbers
 <a name="ch-ordering"></a>
 
-****
-
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
 | Local telephone numbers  | Yes | Your business address in the country. A copy of the ID/business registration and a proof of address. |
@@ -1802,8 +1528,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 ### Number portability
 <a name="ch-porting"></a>
-
-****
 
 | Portability windows | Required Documents |
 | --- | --- |
@@ -1825,8 +1549,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 ### For ordering phone numbers
 <a name="th-ordering"></a>
 
-****
-
 | Type of Number | Are there ID requirements? | Acceptable Identification | Restrictions |
 | --- | --- | --- | --- |
 | Local telephone numbers  | Yes | **For business address inside Thailand**: Business must provide a copy of the ID of a company authorized representative and company certificate.<br />**For business address outside of Thailand**: Proof of business address and proof of ID, such as the business registration. Also, a copy of the ID or passport of an authorized representative. | International caller ID is not guaranteed. |
@@ -1834,8 +1556,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 ### Number portability (Re-Routing)
 <a name="th-porting"></a>
-
-****
 
 | Type of Number | Portability windows | Required Documents |
 | --- | --- | --- |
@@ -1848,8 +1568,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 ### For ordering phone numbers
 <a name="tt-ordering"></a>
-
-****
 
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
@@ -1866,8 +1584,6 @@ Porting is not supported.
 ### For ordering phone numbers
 <a name="tc-ordering"></a>
 
-****
-
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
 | Local telephone numbers: \+1 649 | Yes | An order form is required. Use the form that is provided to you when you make the request. Provide the following information:+  Your name and address <br />+  A description of the service for which the number(s) will be used <br />A global address is acceptable. |
@@ -1882,8 +1598,6 @@ Porting is not supported.
 
 ### For ordering phone numbers
 <a name="ug-ordering"></a>
-
-****
 
 - ** Africa (Cape Town) **
   - **Type of Number:** Local telephone numbers / **Are there ID requirements?:** Yes / **Acceptable Identification:** Businesses must provide a copy of business registration containing a proof of address.<br />Valid proofs of address include: third-party issued bank statements, utility bills (all issued in the previous 6 months); government documents (issued in the previous year). <br />The business address must be inside of Uganda.
@@ -1902,8 +1616,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 ### For ordering phone numbers
 <a name="gb-ordering"></a>
 
-****
-
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
 | Local telephone numbers: \+44 1, \+44 2 | No | A local address may be required for number orders in certain area codes.  |
@@ -1913,8 +1625,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 ### Number portability
 <a name="gb-porting"></a>
-
-****
 
 | Portability windows | Required Documents |
 | --- | --- |
@@ -1926,8 +1636,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 ### For ordering phone numbers
 <a name="us-ordering"></a>
 
-****
-
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
 | Local telephone numbers  | No |   |
@@ -1935,8 +1643,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 ### Number portability
 <a name="us-porting"></a>
-
-****
 
 | Portability windows | Required Documents |
 | --- | --- |
@@ -1948,16 +1654,12 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 ### For ordering phone numbers
 <a name="uy-ordering"></a>
 
-****
-
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
 | UIFN | Yes | Your business name, address and service usage description. A global address is acceptable.  |
 
 ### Number portability
 <a name="uy-porting"></a>
-
-****
 
 | Portability windows | Required Documents |
 | --- | --- |
@@ -1968,8 +1670,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 ### For ordering phone numbers
 <a name="ve-ordering"></a>
-
-****
 
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
@@ -1994,8 +1694,6 @@ Porting is not supported.
 ### For ordering phone numbers
 <a name="vn-ordering"></a>
 
-****
-
 | Type of Number | Are there ID requirements? | Agent Location | Acceptable Identification |
 | --- | --- | --- | --- |
 | Local telephone numbers | Yes | The agent must be located within Vietnam. | Vietnamese phone numbers are available through our telephony partner. Contact your AWS account team to begin the onboarding process. |
@@ -2016,16 +1714,12 @@ Porting is not supported.
 ### For ordering phone numbers
 <a name="uifn-ordering"></a>
 
-****
-
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
 | UIFN | Yes | Your business name, address and service usage description. A global address is acceptable.  |
 
 ### Number portability
 <a name="uifn-porting"></a>
-
-****
 
 | Portability windows | Required Documents |
 | --- | --- |

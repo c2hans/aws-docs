@@ -20,8 +20,6 @@ With AWS Managed Microsoft AD, you can run directory-aware workloads in the AWS 
 
 You can choose between two AWS Directory Service services with the features and scalability that best meet your needs. The following table helps you determine which Directory Service option works best for your organization.
 
-****
-
 | Use case | Recommended solution |
 | --- | --- |
 | Run directory-aware workloads, AWS applications, or Linux applications requiring LDAP support | *AWS Managed Microsoft AD (Standard Edition and Enterprise Edition)* create new managed AD domains to manage users, devices, and computers on AWS. These directories establish resource forests that create trust relationships with your existing AD domains on-premises, in AWS, or in multi-cloud environments. Users can access AWS resources with their existing credentials from your current AD domains. User identities stay in your existing AD domains while the resource forest manages your AWS resources, maintaining operational isolation between environments while providing seamless single sign-on. |

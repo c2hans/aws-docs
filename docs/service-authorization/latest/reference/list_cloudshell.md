@@ -29,8 +29,6 @@ AWS CloudShell has no API operations that can be used in the `Actions` element o
 
 The following actions are defined by AWS CloudShell but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 - **   [ApproveCommand](https://docs.aws.amazon.com/cloudshell/latest/userguide/sec-auth-with-identities.html#ApproveCommand)  **
   - **Description:** Grants permission to approve a command sent by another AWS service
   - **Resource types (\*required):** [Environment\*](#list_cloudshell-resource-Environment)
@@ -102,8 +100,6 @@ The following actions are defined by AWS CloudShell but are not directly invocab
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
 
-****
-
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
 |  [Environment](https://docs.aws.amazon.com/cloudshell/latest/userguide/sec-auth-with-identities.html#Environment)  | arn:${Partition}:cloudshell:${Region}:${Account}:environment/${EnvironmentId} |   |
@@ -112,8 +108,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_cloudshell-policy-keys"></a>
 
 AWS CloudShell defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

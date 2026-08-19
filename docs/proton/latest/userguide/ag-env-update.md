@@ -58,7 +58,7 @@ Standard provisioning is only supported by environments that provision with Clou
 
 **In the list of environments.**
 
-      1. In the [AWS Proton console](https://console.aws.amazon.com//proton/), choose **Environments**.
+      1. In the [AWS Proton console](https://console.aws.amazon.com/proton/), choose **Environments**.
 
       1. In the list of environments, choose the radio button to the left of the environment that you want to update.
 
@@ -66,7 +66,7 @@ Standard provisioning is only supported by environments that provision with Clou
 
 ****In the console environment detail page.****
 
-      1. In the [AWS Proton console](https://console.aws.amazon.com//proton/), choose **Environments**.
+      1. In the [AWS Proton console](https://console.aws.amazon.com/proton/), choose **Environments**.
 
       1. In the list of environments, choose the name of the environment that you want to update.
 
@@ -207,7 +207,7 @@ Self-managed provisioning is only supported by environments that provision with 
 
 **In the list of environments.**
 
-      1. In the [AWS Proton console](https://console.aws.amazon.com//proton/), choose **Environments**.
+      1. In the [AWS Proton console](https://console.aws.amazon.com/proton/), choose **Environments**.
 
       1. In the list of environments, choose the radio button to the left of the environment template that you want to update.
 
@@ -215,7 +215,7 @@ Self-managed provisioning is only supported by environments that provision with 
 
 ****In the console environment detail page.****
 
-      1. In the [AWS Proton console](https://console.aws.amazon.com//proton/), choose **Environments**.
+      1. In the [AWS Proton console](https://console.aws.amazon.com/proton/), choose **Environments**.
 
       1. In the list of environments, choose the name of the environment that you want to update.
 
@@ -385,7 +385,7 @@ You can use the console or CLI to cancel environments that are in progress.
 
 **Use the console to cancel an environment update deployment as shown in the following steps.**
 
-1. In the [AWS Proton console](https://console.aws.amazon.com//proton/), choose **Environments** in the navigation pane.
+1. In the [AWS Proton console](https://console.aws.amazon.com/proton/), choose **Environments** in the navigation pane.
 
 1. In the list of environments, choose the name of the environment with the deployment update that you want to cancel.
 

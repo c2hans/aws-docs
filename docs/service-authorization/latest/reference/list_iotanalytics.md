@@ -23,8 +23,6 @@ References:
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
 
-****
-
 - **   [BatchPutMessage](https://docs.aws.amazon.com/iotanalytics/latest/APIReference/API_BatchPutMessage.html)  **
   - **Description:** Puts a batch of messages into the specified channel
   - **Resource types (\*required):** [channel\*](#list_iotanalytics-resource-channel)
@@ -240,8 +238,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
 
-****
-
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
 |  [channel](https://docs.aws.amazon.com/iotanalytics/latest/userguide/welcome.html#aws-iot-analytics-how)  | arn:${Partition}:iotanalytics:${Region}:${Account}:channel/${ChannelName} | [aws:RequestTag/${TagKey}](#list_iotanalytics-aws_RequestTag___TagKey_)<br />[aws:TagKeys](#list_iotanalytics-aws_TagKeys)<br />[iotanalytics:ResourceTag/${TagKey}](#list_iotanalytics-iotanalytics_ResourceTag___TagKey_) |
@@ -253,8 +249,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_iotanalytics-policy-keys"></a>
 
 AWS IoT Analytics defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

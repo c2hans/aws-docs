@@ -24,8 +24,6 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_greengrass-actions-as-permissions).
 
-****
-
 - **   AssociateRoleToGroup  **
   - **IAM action:**  [greengrass:AssociateRoleToGroup](#list_greengrass-action-AssociateRoleToGroup)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** greengrass.amazonaws.com / **Access level:** Write
@@ -558,8 +556,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
 
-****
-
 - **   [AssociateRoleToGroup](https://docs.aws.amazon.com/greengrass/v1/apireference/associateroletogroup-put.html)  **
   - **Description:** Grants permission to associate a role with a group. The role's permissions must allow Greengrass core Lambda functions and connectors to perform actions in other AWS services
   - **Resource types (\*required):** [group\*](#list_greengrass-resource-group)
@@ -1064,16 +1060,16 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [UntagResource](https://docs.aws.amazon.com/greengrass/v1/apireference/untagresource-delete.html)  **
   - **Description:** Grants permission to remove tags from a resource
-  - **Resource types (\*required):** [bulkDeployment](#list_greengrass-resource-bulkDeployment) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_greengrass-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_greengrass-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_greengrass-aws_TagKeys)
-  - **Resource types (\*required):** [connectorDefinition](#list_greengrass-resource-connectorDefinition) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_greengrass-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_greengrass-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_greengrass-aws_TagKeys)
-  - **Resource types (\*required):** [coreDefinition](#list_greengrass-resource-coreDefinition) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_greengrass-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_greengrass-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_greengrass-aws_TagKeys)
-  - **Resource types (\*required):** [deployment](#list_greengrass-resource-deployment) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_greengrass-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_greengrass-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_greengrass-aws_TagKeys)
-  - **Resource types (\*required):** [deviceDefinition](#list_greengrass-resource-deviceDefinition) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_greengrass-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_greengrass-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_greengrass-aws_TagKeys)
-  - **Resource types (\*required):** [functionDefinition](#list_greengrass-resource-functionDefinition) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_greengrass-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_greengrass-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_greengrass-aws_TagKeys)
-  - **Resource types (\*required):** [group](#list_greengrass-resource-group) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_greengrass-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_greengrass-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_greengrass-aws_TagKeys)
-  - **Resource types (\*required):** [loggerDefinition](#list_greengrass-resource-loggerDefinition) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_greengrass-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_greengrass-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_greengrass-aws_TagKeys)
-  - **Resource types (\*required):** [resourceDefinition](#list_greengrass-resource-resourceDefinition) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_greengrass-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_greengrass-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_greengrass-aws_TagKeys)
-  - **Resource types (\*required):** [subscriptionDefinition](#list_greengrass-resource-subscriptionDefinition) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_greengrass-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_greengrass-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_greengrass-aws_TagKeys)
+  - **Resource types (\*required):** [bulkDeployment](#list_greengrass-resource-bulkDeployment) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_greengrass-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_greengrass-aws_TagKeys)
+  - **Resource types (\*required):** [connectorDefinition](#list_greengrass-resource-connectorDefinition) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_greengrass-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_greengrass-aws_TagKeys)
+  - **Resource types (\*required):** [coreDefinition](#list_greengrass-resource-coreDefinition) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_greengrass-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_greengrass-aws_TagKeys)
+  - **Resource types (\*required):** [deployment](#list_greengrass-resource-deployment) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_greengrass-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_greengrass-aws_TagKeys)
+  - **Resource types (\*required):** [deviceDefinition](#list_greengrass-resource-deviceDefinition) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_greengrass-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_greengrass-aws_TagKeys)
+  - **Resource types (\*required):** [functionDefinition](#list_greengrass-resource-functionDefinition) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_greengrass-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_greengrass-aws_TagKeys)
+  - **Resource types (\*required):** [group](#list_greengrass-resource-group) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_greengrass-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_greengrass-aws_TagKeys)
+  - **Resource types (\*required):** [loggerDefinition](#list_greengrass-resource-loggerDefinition) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_greengrass-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_greengrass-aws_TagKeys)
+  - **Resource types (\*required):** [resourceDefinition](#list_greengrass-resource-resourceDefinition) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_greengrass-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_greengrass-aws_TagKeys)
+  - **Resource types (\*required):** [subscriptionDefinition](#list_greengrass-resource-subscriptionDefinition) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_greengrass-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_greengrass-aws_TagKeys)
   - **Access level:** Tagging, Write
 
 - **   [UpdateConnectivityInfo](https://docs.aws.amazon.com/greengrass/v1/apireference/updateconnectivityinfo-put.html)  **
@@ -1147,8 +1143,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
 
-****
-
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
 |  [bulkDeployment](https://docs.aws.amazon.com/greengrass/latest/developerguide/bulk-deploy-cli.html)  | arn:${Partition}:greengrass:${Region}:${Account}:/greengrass/bulk/deployments/${BulkDeploymentId} | [aws:ResourceTag/${TagKey}](#list_greengrass-aws_ResourceTag___TagKey_) |
@@ -1178,8 +1172,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_greengrass-policy-keys"></a>
 
 AWS IoT Greengrass defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

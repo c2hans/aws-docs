@@ -7,16 +7,19 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/endpoints.html
 
 Amazon Bedrock supports various endpoints for performing [inference](inference.md) operations.
 
+**Note**
+Both endpoints run on the same underlying Mantle inference engine, so all Amazon Bedrock models benefit from Mantle's [zero operator access (ZOA)](https://aws.amazon.com/blogs/machine-learning/exploring-the-zero-operator-access-design-of-mantle/) design. The `bedrock-mantle` endpoint name refers only to one of the two endpoint surfaces — not to whether the Mantle engine is used.
+
 **Inference operations**
 
-Amazon Bedrock supports the following primary two end points for performing inference programmatically:
+For new applications, we recommend the `bedrock-runtime` endpoint. It supports the Bedrock-native [InvokeModel](inference-api.md) and [Converse](conversation-inference.md) APIs, the OpenAI-compatible [Responses](bedrock-mantle.md#bedrock-mantle-responses) and [Chat Completions](inference-chat-completions.md) APIs, and the Anthropic [Messages](inference-messages-api.md) API, and it is where Amazon Bedrock features such as [Guardrails](guardrails.md), [intelligent prompt routing](prompt-routing.md), and [cross-Region inference](cross-region-inference.md) are available. Amazon Bedrock also supports a second endpoint, `bedrock-mantle`, which currently offers additional capabilities such as server-side and pre-configured tool use (including [web search](web-search.md)), asynchronous inference with `background=true`, and creating [Projects](projects.md) and [Workspaces](workspaces.md). To see which endpoint each model supports, see [Endpoint availability](models-endpoint-availability.md).
 
 | **Endpoint** | **Supported APIs** | **Description** |
 | --- | --- | --- |
+| bedrock-runtime.{region}.amazonaws.com (recommended) | [InvokeModel](inference-invoke.md) / [Converse](conversation-inference.md) / [Chat Completions](inference-chat-completions.md) / [Responses API](bedrock-mantle.md#bedrock-mantle-responses) / [Messages API](inference-messages-api.md) | Region-specific endpoints for making inference requests for models hosted in Amazon Bedrock using the InvokeModel/Converse/Chat Completions/Responses/Messages APIs. For more information about the Bedrock-native operations, see [Amazon Bedrock Runtime API operations](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Operations_Amazon_Bedrock_Runtime.html). The OpenAI-compatible APIs are called on the /openai/v1 paths of this endpoint rather than through the AWS SDKs. |
 | bedrock-mantle.{region}.api.aws | [Responses API](bedrock-mantle.md) / [Chat Completions API](inference-chat-completions-mantle.md) / [Messages API](inference-messages-api.md) | Region-specific endpoints for making inference requests for models hosted in Amazon Bedrock using the OpenAI-compatible endpoints and the Anthropic Messages API. |
-| bedrock-runtime.{region}.amazonaws.com | [InvokeModel](inference-invoke.md) / [Converse](conversation-inference.md) / [Chat Completions](inference-chat-completions.md) / [Messages API](inference-messages-api.md) | Region-specific endpoints for making inference requests for models hosted in Amazon Bedrock using the InvokeModel/Converse/Chat Completions/Messages APIs. For more information, see [Amazon Bedrock Runtime API operations](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Operations_Amazon_Bedrock_Runtime.html). |
 
-For new applications, we recommend the `bedrock-mantle` endpoint. It supports OpenAI-compatible APIs (Responses and Chat Completions) and the Anthropic Messages API, includes built-in tool use and stateful conversation management, and lets you bring an existing OpenAI SDK codebase to Amazon Bedrock by changing only the base URL and API key. The `bedrock-runtime` endpoint remains fully supported and is the right choice when you're using the Bedrock-native InvokeModel or Converse APIs, or when the model you want isn't yet available on `bedrock-mantle`. To see which endpoint each model supports, see [Endpoint availability by models](models-endpoint-availability.md).
+Existing applications that use `bedrock-mantle` continue to be fully supported and do not need to change. Both endpoints let you bring an existing OpenAI SDK codebase to Amazon Bedrock by changing only the base URL and API key, and both support the OpenAI-compatible Responses and Chat Completions APIs and the Anthropic Messages API.
 
 The following tables compare what's available on each endpoint.
 
@@ -27,23 +30,30 @@ The following tables compare what's available on each endpoint.
 | [InvokeModel](inference-api.md) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) |
 | [Converse / ConverseStream](conversation-inference.md) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) |
 | [Chat Completions (OpenAI-compatible)](inference-chat-completions-mantle.md) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
-| [Responses API (OpenAI-compatible)](bedrock-mantle.md#bedrock-mantle-responses) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
+| [Responses API (OpenAI-compatible)](bedrock-mantle.md#bedrock-mantle-responses) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
 | [Messages API (Anthropic-native)](inference-messages-api.md) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
 
 **Note**
 The Messages API is available on both endpoints, but the two surfaces do not have identical feature support. In particular, [structured outputs](structured-output.md) (the `output_config.format` parameter) are not supported on `bedrock-mantle` — requests that include `output_config.format` are rejected with a 400 error. To use structured outputs with Anthropic Claude models, call the Converse or InvokeModel APIs on `bedrock-runtime`.
+
+**Note**
+The Responses API is also available on both endpoints without identical feature support. On `bedrock-runtime`:
+**Requests are always synchronous.** `background=true` is rejected with a 400 error. The `store` parameter is unaffected and keeps its default of `true`, so stored, multi-turn conversations work normally.
+**Server-side tool use and pre-configured tools are not available**, including [web search](web-search.md). Client-side tool use works on both endpoints.
+**Only the default project is supported.** See [Projects (OpenAI-compatible)](projects.md).
+**A stored response belongs to the AWS Region that served it.** Retrieving, cancelling, or deleting it, and continuing the conversation with `previous_response_id`, are all handled by that Region.
 
 **Inference capabilities**
 
 | Capability | `bedrock-runtime` | `bedrock-mantle` |
 | --- | --- | --- |
 | [Cross-region inference (geographic and global profiles)](cross-region-inference.md) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) |
-| [Stateful conversation management](bedrock-mantle.md#bedrock-mantle-responses-state) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
+| [Stateful conversation management](bedrock-mantle.md#bedrock-mantle-responses-state) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
 | [Asynchronous (long-running) inference](bedrock-mantle.md) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
 | [Client-side tool use](tool-use-client-side.md) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
 | [Server-side tool use](tool-use-server-side.md) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
 | [Pre-configured ready-to-use tools](tool-use.md) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
-| [Projects](projects.md) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
+| [Projects](projects.md) | Default project only | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
 | [Workspaces](workspaces.md) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
 
 **Operational**
@@ -52,7 +62,10 @@ The Messages API is available on both endpoints, but the two surfaces do not hav
 | --- | --- | --- |
 | AWS [SigV4](AmazonS3/latest/API/sig-v4-authenticating-requests.html) authentication | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
 | [Bedrock API key (also works with OpenAI SDK)](api-keys.md) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
-| [Usage attribution](cost-management.md) | [IAM](cost-mgmt-iam-principal-tracking.md), [per-request metadata tagging](cost-mgmt-request-metadata.md) | [Projects](projects.md), [Workspaces](workspaces.md) |
+| [Usage attribution](cost-management.md) | [IAM principal](cost-mgmt-iam-principal-tracking.md), [per-request metadata tagging](cost-mgmt-request-metadata.md), [application inference profiles](cost-mgmt-application-inference-profiles.md) | [Projects](projects.md), [Workspaces](workspaces.md) |
+
+**Note**
+On `bedrock-runtime`, the Responses API attributes usage by [IAM principal](cost-mgmt-iam-principal-tracking.md) only. Per-request metadata tagging and application inference profiles are not available on it — a request that names an application inference profile as its inference target is rejected with a 400 error. This does not affect cross-Region inference: the system-defined geographic and global inference profiles work normally.
 
 **Bedrock feature availability**
 
@@ -77,16 +90,17 @@ Per-token pricing for the same model is identical on `bedrock-runtime` and `bedr
 
 **When to choose each endpoint**
 
-Start with `bedrock-mantle` when you want to:
-+ Use the Responses API, Chat Completions API, or Messages API with stateful, multi-turn conversations.
-+ Bring existing OpenAI SDK code to Amazon Bedrock by changing only the base URL and API key.
-+ Run asynchronous or long-running inference workloads.
-+ Build agentic workflows with server-side tool use or pre-configured tools.
-+ Use [Projects (OpenAI-compatible)](projects.md) or [Workspaces (Anthropic-compatible)](workspaces.md) to isolate workloads and track cost and usage at the application level.
+Start with `bedrock-runtime` when you want to:
++ Call the OpenAI-compatible Responses or Chat Completions APIs, or the Anthropic Messages API.
++ Use the Bedrock-native [InvokeModel](inference-api.md) or [Converse](conversation-inference.md) APIs.
++ Use Amazon Bedrock features that are available only on this endpoint, such as [Guardrails](guardrails.md) and [intelligent prompt routing](prompt-routing.md).
++ Use [cross-Region inference](cross-region-inference.md) to route requests across a geography or globally.
 
-Use `bedrock-runtime` when you want to:
-+ Continue using the Bedrock-native [InvokeModel](inference-api.md) or [Converse](conversation-inference.md) APIs.
-+ Use a model that isn't yet available on `bedrock-mantle`. See [Endpoint availability by models](models-endpoint-availability.md).
+Use `bedrock-mantle` when you want to:
++ Build agentic workflows with server-side tool use or pre-configured tools, including [web search](web-search.md).
++ Run asynchronous or long-running inference workloads, including Responses requests with `background=true`.
++ Create [Projects (OpenAI-compatible)](projects.md) or [Workspaces (Anthropic-compatible)](workspaces.md) to isolate workloads and track cost and usage at the application level.
++ Use a model that is available only on `bedrock-mantle`. See [Endpoint availability](models-endpoint-availability.md).
 
 Both endpoints can be used together from the same application — choose per use case.
 

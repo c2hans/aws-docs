@@ -182,8 +182,6 @@ Programmatic requests that create or update branding style must have a request s
 
 Some assets have limitations on the filetypes that you can submit.
 
-****
-
 | Asset | Accepted file extensions |
 | --- | --- |
 | FAVICON\_ICO | ico |

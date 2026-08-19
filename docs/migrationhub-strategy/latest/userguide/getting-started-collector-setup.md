@@ -39,7 +39,7 @@ vCenter configuration setup is only available if the collector is hosted on vCen
 
 1. Enter the information for version control configurations as described in [Set up version control configurations](#cli-collector-setup-git-source-config).
 
-1. Prepare your Windows and Linux servers for collector data collection by following the instructions in [Prepare your remote Windows and Linux servers for data collectionPrepare your remote servers for data collection](#cli-collector-setup-remote-servers).
+1. Prepare your Windows and Linux servers for collector data collection by following the instructions in [Prepare your remote Windows and Linux servers for data collection](#cli-collector-setup-remote-servers).
 
 ## Set up AWS configurations
 <a name="cli-collector-setup-aws-config"></a>

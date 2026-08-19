@@ -51,8 +51,6 @@ This section contains information about the components of the journeys interface
 
 The following table includes descriptions of several of the buttons that appear in the journey workspace.
 
-****
-
 | Appearance | Button name | Description |
 | --- | --- | --- |
 | ![The journey information button.](http://docs.aws.amazon.com/pinpoint/latest/userguide/images/journeys-info-button.png) | **Info** | Opens the help panel, which shows additional information about individual journey activities. |

@@ -14,8 +14,6 @@ Use to stop all running EC2 instances in the specified stack.
 ## Change Type Details
 <a name="ct-3dgbnh6gpst4d-MSSs-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-3dgbnh6gpst4d |

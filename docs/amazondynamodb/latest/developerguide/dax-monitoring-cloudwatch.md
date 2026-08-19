@@ -18,8 +18,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/dax
 
  The metrics reported by DAX provide information that you can analyze in different ways. The following list shows some common uses for the metrics. These are suggestions to get you started, and not a comprehensive list.
 
-****
-
 |   How Can I?   |   Relevant Metrics   |
 | --- | --- |
 |  Determine if any system errors occurred  |  Monitor `FaultRequestCount` to determine if any requests resulted in an HTTP 500 (server error) code. This can indicate a DAX internal service error or an HTTP 500 in the underlying table's [SystemErrors metric](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/metrics-dimensions.html).  |

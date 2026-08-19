@@ -11,7 +11,7 @@ Each user is assigned an IAM role. The type of IAM role that AWS Transfer Family
 
 You can grant write-only access to Amazon S3 objects by using certain permissions within an IAM policy. For details, see [Grant ability to only write and list files](configure-storage.md#headobject-access-denied).
 
-The AWS Storage Blog contains a post detailing how to set up least privilege access. For details, see [Implementing least privilege access in an AWS Transfer Family workflow](https://aws.amazon.com/blogs//storage/implementing-least-privilege-access-in-an-aws-transfer-family-workflow/).
+The AWS Storage Blog contains a post detailing how to set up least privilege access. For details, see [Implementing least privilege access in an AWS Transfer Family workflow](https://aws.amazon.com/blogs/storage/implementing-least-privilege-access-in-an-aws-transfer-family-workflow/).
 
 **Note**
  If your Amazon S3 bucket is encrypted using AWS Key Management Service (AWS KMS), you must specify additional permissions in your policy. For details, see [Data protection and encryption](encryption-at-rest.md). Additionally, you can see more information about [session policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html#policies_session.html) in the *IAM User Guide*.

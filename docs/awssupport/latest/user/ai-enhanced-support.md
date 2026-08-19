@@ -31,7 +31,7 @@ For a complete list of the capabilities available in your Support plan, see [Com
 
 **Notes**
 To change your support plan, see [Change AWS Support Plans](changing-support-plans.md).
-To close your account, see [Closing an account](https://docs.aws.amazon.com//awsaccountbilling/latest/aboutv2/close-account.html) in the *AWS Billing User Guide*.
+To close your account, see [Closing an account](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/close-account.html) in the *AWS Billing User Guide*.
 To find common troubleshooting topics for AWS services, see [Troubleshooting resources](troubleshooting.md).
 If you're a customer of an AWS Partner that is part of the AWS Partner Network, and you use Resold Support, contact your AWS Partner directly for any billing related issues. AWS Support can't assist with non-technical issues for Resold Support, such as billing and account management. For more information, see the following topics:
 [How AWS Partners can determine AWS Support plans in an organization](https://aws.amazon.com/blogs/mt/aws-partners-determine-aws-support-plans-in-organization/)

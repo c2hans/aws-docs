@@ -25,7 +25,7 @@ The process has the following steps:
 <a name="creating-a-data-grant-api-prereq"></a>
 
 Before you can publish a product containing APIs, you must meet the following prerequisites:
-+ Before you can use any AWS service, including AWS Data Exchange, you must sign up for AWS and create an administrative user. For more information, see [Getting started](https://docs.aws.amazon.com//singlesignon/latest/userguide/getting-started.html) in the *AWS IAM Identity Center User Guide*.
++ Before you can use any AWS service, including AWS Data Exchange, you must sign up for AWS and create an administrative user. For more information, see [Getting started](https://docs.aws.amazon.com/singlesignon/latest/userguide/getting-started.html) in the *AWS IAM Identity Center User Guide*.
 + Your REST API must be on Amazon API Gateway with an integration that uses an appropriate request and response model for accessing your data, such as Amazon DynamoDB or AWS Lambda. For more information, see [Developing a REST API in API Gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/rest-api-develop.html) and [Working with REST APIs](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-rest-api.html) in the *Amazon API Gateway Developer Guide*.
 **Note**
 Only public API Gateway APIs are supported.

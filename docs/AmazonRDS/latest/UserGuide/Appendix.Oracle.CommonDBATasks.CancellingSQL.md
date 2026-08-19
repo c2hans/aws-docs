@@ -12,8 +12,6 @@ This procedure is supported for Oracle Database 19c (19.0.0) and all higher majo
 
 The `cancel` procedure has the following parameters.
 
-****
-
 | Parameter name | Data type | Default | Required | Description |
 | --- | --- | --- | --- | --- |
 | `sid` | number | — | Yes | The session identifier. |

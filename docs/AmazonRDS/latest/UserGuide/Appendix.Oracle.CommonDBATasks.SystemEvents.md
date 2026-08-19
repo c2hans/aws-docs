@@ -65,8 +65,6 @@ The list of the allowed system events can change over time. To make sure that yo
 
 To set a system event, use the Amazon RDS procedure `rdsadmin.rdsadmin_util.set_system_event`. You can only set events listed in the output of `rdsadmin.rdsadmin_util.list_allowed_system_events`. The `set_system_event` procedure accepts the following parameters.
 
-****
-
 | Parameter name | Data type | Default | Required | Description |
 | --- | --- | --- | --- | --- |
 | `p_event` | number | — | Yes | The system event number. The value must be one of the event numbers reported by `list_allowed_system_events`. |
@@ -117,8 +115,6 @@ PL/SQL procedure successfully completed.
 <a name="Appendix.Oracle.CommonDBATasks.SystemEvents.unsetting"></a>
 
 To unset a system event, use the Amazon RDS procedure `rdsadmin.rdsadmin_util.unset_system_event`. You can only unset events listed in the output of `rdsadmin.rdsadmin_util.list_allowed_system_events`. The `unset_system_event` procedure accepts the following parameter.
-
-****
 
 | Parameter name | Data type | Default | Required | Description |
 | --- | --- | --- | --- | --- |

@@ -206,7 +206,7 @@ Replace **latest** in the download URI with with the exact version number (for e
 
 1. Create the EC2 image builder component:
 
-   1. Open the EC2 Image Builder console at [https://console.aws.amazon.com//imagebuilder](https://console.aws.amazon.com//imagebuilder).
+   1. Open the EC2 Image Builder console at [https://console.aws.amazon.com/imagebuilder](https://console.aws.amazon.com/imagebuilder).
 
    1. Under **Saved resources**, choose **Components** and choose **Create component**.
 

@@ -14,8 +14,6 @@ Restore an RDS DB instance to a point in time.
 ## Change Type Details
 <a name="ct-2uimt36z7j6vn-MARr-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2uimt36z7j6vn |

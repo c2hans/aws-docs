@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon Route 53 Recovery Controls provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="route53-recovery-control-config-DescribeCluster"></a>[DescribeCluster](https://docs.aws.amazon.com/recovery-cluster/latest/api/cluster-clusterarn.html) | Describe a cluster | Read |

@@ -86,6 +86,6 @@ Based on your investigation, implement appropriate optimization strategies:
 
 If traffic optimization doesn't resolve the high CPU utilization:
 + **Add more domain controllers** – Scale out by deploying additional domain controllers to distribute the load. For more information, see [Deploying additional domain controllers for your AWS Managed Microsoft AD](ms_ad_deploy_additional_dcs.md).
-+ **Upgrade to Enterprise Edition** – If using Standard Edition, upgrade to Enterprise Edition for increased CPU capacity and performance. For more information, see [Upgrading your AWS Managed Microsoft AD](ms_ad_upgrade_edition.md). If already using Enterprise Edition, Contact [AWS Support](https://docs.aws.amazon.com//awssupport/latest/user/case-management.html) for increased capacity.
++ **Upgrade to Enterprise Edition** – If using Standard Edition, upgrade to Enterprise Edition for increased CPU capacity and performance. For more information, see [Upgrading your AWS Managed Microsoft AD](ms_ad_upgrade_edition.md). If already using Enterprise Edition, Contact [AWS Support](https://docs.aws.amazon.com/awssupport/latest/user/case-management.html) for increased capacity.
 
 For pricing information about AWS Managed Microsoft AD editions, see [Directory Service Pricing](https://aws.amazon.com/directoryservice/pricing/#Comparison_Table).

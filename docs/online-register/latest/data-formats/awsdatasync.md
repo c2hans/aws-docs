@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsd
 
 AWS DataSync provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="datasync-DescribeAgent"></a>[DescribeAgent](https://docs.aws.amazon.com/datasync/latest/userguide/API_DescribeAgent.html) | View metadata such as name, network interfaces, and the status (that is, whether the agent is running or not) about a sync agent | Read |

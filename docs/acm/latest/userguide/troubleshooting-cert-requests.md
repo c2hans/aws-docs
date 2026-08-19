@@ -14,7 +14,7 @@ Consult the following topics if you encounter problems when requesting an ACM ce
 ## Certificate request times out
 <a name="troubleshooting-timed-out"></a>
 
-Requests for ACM certificates time out if they are not validated within 72 hours. To correct this condition, open the console, find the record for the certificate, click the checkbox for it, choose **Actions**, and choose **Delete**. Then choose **Actions** and **Request a certificate** to begin again. For more information, see [AWS Certificate Manager DNS validationDNS validation](dns-validation.md) or [AWS Certificate Manager email validation](email-validation.md). We recommend that you use DNS validation if possible.
+Requests for ACM certificates time out if they are not validated within 72 hours. To correct this condition, open the console, find the record for the certificate, click the checkbox for it, choose **Actions**, and choose **Delete**. Then choose **Actions** and **Request a certificate** to begin again. For more information, see [AWS Certificate Manager DNS validation](dns-validation.md) or [AWS Certificate Manager email validation](email-validation.md). We recommend that you use DNS validation if possible.
 
 ## Certificate request fails
 <a name="troubleshooting-failed"></a>

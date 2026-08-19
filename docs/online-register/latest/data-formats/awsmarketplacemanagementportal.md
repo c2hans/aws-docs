@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsm
 
 AWS Marketplace Management Portal provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="aws-marketplace-management-GetAdditionalSellerNotificationRecipients"></a>[GetAdditionalSellerNotificationRecipients](https://docs.aws.amazon.com/marketplace/latest/userguide/detailed-management-portal-permissions.html#seller-ammp-permissions) | View additional seller notification recipients | Read |

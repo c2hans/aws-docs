@@ -123,4 +123,4 @@ If a batch read operation fails, the response contains either a successful respo
 
 **Related Cloud Directory Blog Articles**
 + [Write and Read Multiple Objects in Amazon Cloud Directory by Using Batch Operations](https://aws.amazon.com/blogs/security/write-and-read-multiple-objects-in-amazon-cloud-directory-by-using-batch-operations/)
-+ [How to Use Batch References in Amazon Cloud Directory to Refer to New Objects in a Batch Request](https://aws.amazon.com/blogs//security/how-to-use-batch-references-in-amazon-cloud-directory-to-refer-to-new-objects-in-a-batch-request/)
++ [How to Use Batch References in Amazon Cloud Directory to Refer to New Objects in a Batch Request](https://aws.amazon.com/blogs/security/how-to-use-batch-references-in-amazon-cloud-directory-to-refer-to-new-objects-in-a-batch-request/)

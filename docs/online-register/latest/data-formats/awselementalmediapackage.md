@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awse
 
 AWS Elemental MediaPackage provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="mediapackage-DescribeChannel"></a>[DescribeChannel](https://docs.aws.amazon.com/mediapackage/latest/apireference/channels-id.html#channels-idget) | View the details of a channel in AWS Elemental MediaPackage | Read |

@@ -14,8 +14,6 @@ Describe existing periods used in AMS Resource Scheduler.
 ## Change Type Details
 <a name="ct-1g6x4ev0hnvfn-MAPd-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1g6x4ev0hnvfn |

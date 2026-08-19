@@ -14,8 +14,6 @@ Third-party auditors assess the security and compliance of AWS services as part 
 
 AWS System and Organization Controls (SOC) Reports are independent third-party examination reports that demonstrate how AWS achieves key compliance controls and objectives.
 
-****
-
 | Service | SDK | [SOC 1,2,3](https://aws.amazon.com/compliance/soc-faqs/)  |
 | --- | --- | --- |
 | AWS CloudShell | CloudShell | ✓ |
@@ -24,8 +22,6 @@ AWS System and Organization Controls (SOC) Reports are independent third-party e
 <a name="pci-compliance"></a>
 
 The Payment Card Industry Data Security Standard (PCI DSS) is a proprietary information security standard administered by the PCI Security Standards Council, which was founded by American Express, Discover Financial Services, JCB International, MasterCard Worldwide and Visa Inc.
-
-****
 
 | Service | SDK | [PCI](https://aws.amazon.com/compliance/pci-dss-level-1-faqs/)  |
 | --- | --- | --- |
@@ -36,8 +32,6 @@ The Payment Card Industry Data Security Standard (PCI DSS) is a proprietary info
 
 AWS has certification for compliance with ISO/IEC 27001:2013, 27017:2015, 27018:2019, 27701:2019, 22301:2019, 9001:2015, and CSA STAR CCM v4.0.
 
-****
-
 | Service | SDK | [ISO and CSA STAR Certifications and Services](https://aws.amazon.com/compliance/iso-certified/)  |
 | --- | --- | --- |
 | AWS CloudShell | CloudShell | ✓ |
@@ -46,8 +40,6 @@ AWS has certification for compliance with ISO/IEC 27001:2013, 27017:2015, 27018:
 <a name="fedramp-compliance"></a>
 
  The Federal Risk and Authorization Management Program (FedRAMP) is a US government-wide program that delivers a standard approach to the security assessment, authorization, and continuous monitoring for cloud products and services.
-
-****
 
 |  Service  |  SDK  |  [FedRAMP Moderate (East/West)](https://aws.amazon.com/compliance/fedramp/)  |  [FedRAMP High (GovCloud)](https://aws.amazon.com/compliance/fedramp/)  |
 | --- | --- | --- | --- |
@@ -63,8 +55,6 @@ Services going through DoD CC SRG assessment and authorization will have the fol
 + **Joint Authorization Board (JAB) Review:** This service is currently undergoing a JAB review.
 + **Defense Information Systems Agency (DISA) Review:** This service is currently undergoing a DISA review.
 
-****
-
 | Service | SDK | [DoD CC SRG IL2 (East/West)](https://aws.amazon.com/compliance/dod/)  | [DoD CC SRG IL2 (GovCloud)](https://aws.amazon.com/compliance/dod/)  | [DoD CC SRG IL4 (GovCloud)](https://aws.amazon.com/compliance/dod/)  | [DoD CC SRG IL5 (GovCloud)](https://aws.amazon.com/compliance/dod/)   | [DoD CC SRG IL6 (AWS Secret Region)](https://aws.amazon.com/compliance/dod/)   |
 | --- | --- | --- | --- | --- | --- | --- |
 | AWS CloudShell | CloudShell | ✓  | ✓ | ✓ | ✓ | N/A |
@@ -76,8 +66,6 @@ The Health Insurance Portability and Accountability Act of 1996 (HIPAA) is a fed
 
 AWS enables covered entities and their business associates subject to HIPAA to securely process, store, and transmit protected health information (PHI). Additionally, as of July 2013, AWS offers a standardized Business Associate Addendum (BAA) for such customers.
 
-****
-
 | Service | SDK | [HIPAA BAA](https://aws.amazon.com/compliance/hipaa-compliance/)  |
 | --- | --- | --- |
 | AWS CloudShell | CloudShell | ✓ |
@@ -86,8 +74,6 @@ AWS enables covered entities and their business associates subject to HIPAA to s
 <a name="irap-compliance"></a>
 
 The Information Security Registered Assessors Program (IRAP) enables Australian Government customers to validate that appropriate controls are in place and determine the appropriate responsibility model for addressing the requirements of the Australian Government Information Security Manual (ISM) produced by the Australian Cyber Security Centre (ACSC).
-
-****
 
 | Service | Namespace\* | [IRAP protected](https://aws.amazon.com/compliance/irap/)  |
 | --- | --- | --- |
@@ -100,8 +86,6 @@ The Information Security Registered Assessors Program (IRAP) enables Australian 
 
 The Multi-Tier Cloud Security (MTCS) is an operational Singapore security management Standard (SPRING SS 584), based on ISO 27001/02 Information Security Management System (ISMS) standards.
 
-****
-
 |  Service  |  SDK  |  **US-East(Ohio)**  |  **US-East(N.Virginia)**  |  **US-West(Oregon)**  |  **US-West(N.California)**  |  **Singapore**  |  **Seoul**  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | AWS CloudShell | CloudShell | ✓ | ✓ | ✓ | N/A | N/A | N/A |
@@ -110,8 +94,6 @@ The Multi-Tier Cloud Security (MTCS) is an operational Singapore security manage
 <a name="c5-compliance"></a>
 
 Cloud Computing Compliance Controls Catalog (C5) is a German Government-backed attestation scheme introduced in Germany by the Federal Office for Information Security (BSI) to help organizations demonstrate operational security against common cyber-attacks when using cloud services within the context of the German Government's "Security Recommendations for Cloud Providers".
-
-****
 
 | Service | SDK | [C5](https://aws.amazon.com/compliance/bsi-c5/)  |
 | --- | --- | --- |
@@ -122,8 +104,6 @@ Cloud Computing Compliance Controls Catalog (C5) is a German Government-backed a
 
 The ENS (Esquema Nacional de Seguridad) accreditation scheme has been developed by the Ministry of Finance and Public Administration and the CCN (National Cryptologic Centre). This comprises of basic principles and minimum requirements necessary for the adequate protection of information.
 
-****
-
 | Service | SDK | [ENS High](https://aws.amazon.com/compliance/esquema-nacional-de-seguridad/)  |
 | --- | --- | --- |
 | AWS CloudShell | CloudShell | ✓ |
@@ -133,8 +113,6 @@ The ENS (Esquema Nacional de Seguridad) accreditation scheme has been developed 
 
 The Swiss Financial Market Supervisory Authority (FINMA) is Switzerland’s independent financial-markets regulator. AWS’s alignment with FINMA requirements demonstrates our continuous commitment to meeting the heightened expectations for cloud service providers set by Swiss financial services regulators and customers.
 
-****
-
 | Service | SDK | [FINMA](https://aws.amazon.com/compliance/finma/)  |
 | --- | --- | --- |
 | AWS CloudShell | CloudShell | ✓ |
@@ -143,8 +121,6 @@ The Swiss Financial Market Supervisory Authority (FINMA) is Switzerland’s inde
 <a name="pitukri-compliance"></a>
 
  AWS alignment with PiTuKri requirements demonstrates our continuous commitment to meeting the heightened expectations for cloud service providers set by Finnish Transport and Communications Agency, Traficom.
-
-****
 
 | Service | SDK | [PiTuKri](https://aws.amazon.com/compliance/pitukri/)  |
 | --- | --- | --- |

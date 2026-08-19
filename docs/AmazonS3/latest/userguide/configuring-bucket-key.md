@@ -43,11 +43,11 @@ If an object already has an S3 Bucket Key enabled, the S3 Bucket Key settings fo
 1. Under **AWS KMS key**, do one of the following to choose your KMS key:
    + To choose from a list of available KMS keys, choose **Choose from your AWS KMS keys**, and then choose your **KMS key** from the list of available keys.
 
-     Both the AWS managed key (`aws/s3`) and your customer managed keys appear in this list. For more information about customer managed keys, see [Customer keys and AWS keys](https://docs.aws.amazon.com//kms/latest/developerguide/concepts.html#key-mgmt) in the *AWS Key Management Service Developer Guide*.
+     Both the AWS managed key (`aws/s3`) and your customer managed keys appear in this list. For more information about customer managed keys, see [Customer keys and AWS keys](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#key-mgmt) in the *AWS Key Management Service Developer Guide*.
    + To enter the KMS key ARN, choose **Enter AWS KMS key ARN**, and enter your KMS key ARN in the field that appears.
    + To create a new customer managed key in the AWS KMS console, choose **Create a KMS key**.
 
-     For more information about creating an AWS KMS key, see [Creating Keys](https://docs.aws.amazon.com//kms/latest/developerguide/create-keys.html) in the *AWS Key Management Service Developer Guide*.
+     For more information about creating an AWS KMS key, see [Creating Keys](https://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html) in the *AWS Key Management Service Developer Guide*.
 
 1. Under **Bucket Key**, choose **Enable**.
 
@@ -74,11 +74,11 @@ If an object already has an S3 Bucket Key enabled, the S3 Bucket Key settings fo
 1. Under **AWS KMS key**, do one of the following to choose your KMS key:
    + To choose from a list of available KMS keys, choose **Choose from your AWS KMS keys**, and then choose your **KMS key** from the list of available keys.
 
-     Both the AWS managed key (`aws/s3`) and your customer managed keys appear in this list. For more information about customer managed keys, see [Customer keys and AWS keys](https://docs.aws.amazon.com//kms/latest/developerguide/concepts.html#key-mgmt) in the *AWS Key Management Service Developer Guide*.
+     Both the AWS managed key (`aws/s3`) and your customer managed keys appear in this list. For more information about customer managed keys, see [Customer keys and AWS keys](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#key-mgmt) in the *AWS Key Management Service Developer Guide*.
    + To enter the KMS key ARN, choose **Enter AWS KMS key ARN**, and enter your KMS key ARN in the field that appears.
    + To create a new customer managed key in the AWS KMS console, choose **Create a KMS key**.
 
-     For more information about creating an AWS KMS key, see [Creating Keys](https://docs.aws.amazon.com//kms/latest/developerguide/create-keys.html) in the *AWS Key Management Service Developer Guide*.
+     For more information about creating an AWS KMS key, see [Creating Keys](https://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html) in the *AWS Key Management Service Developer Guide*.
 
 1. Under **Bucket Key**, choose **Enable**.
 

@@ -195,7 +195,7 @@ A user with this policy would not be able to perform batch actions or asynchrono
 
 The policy doesn't specify the `Principal` element because you don't specify the principal who gets the permission in an identity-based policy. When you attach a policy to a user, the user is the implicit principal. When you attach a permissions policy to an IAM role, the principal identified in the role's trust policy gets the permissions.
 
-For a table showing all the Amazon Comprehend API actions and the resources that they apply to, see [ Actions, resources, and condition keys for Amazon Comprehend](https://docs.aws.amazon.com//service-authorization/latest/reference/list_amazoncomprehend.html) in the *Service Authorization Reference*.
+For a table showing all the Amazon Comprehend API actions and the resources that they apply to, see [ Actions, resources, and condition keys for Amazon Comprehend](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazoncomprehend.html) in the *Service Authorization Reference*.
 
 ## Permissions required to use KMS encryption
 <a name="auth-kms-permissions"></a>

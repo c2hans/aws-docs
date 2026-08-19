@@ -21,7 +21,7 @@ When you integrate IPAM with AWS accounts outside of your organization, there ar
 
 1. Secondary Org Owner delegates a member of their organization as the Secondary Org Admin Account (see [Integrate IPAM with accounts in an AWS Organization](enable-integ-ipam.md)).
 
-1. Secondary Org Admin Account creates a resource discovery and shares it with the Primary Org IPAM Account using AWS RAM (see [Create a resource discovery to integrate with another IPAMCreate a resource discovery](res-disc-work-with-create.md) and [Share a resource discovery with another AWS accountShare a resource discovery](res-disc-work-with-share.md)). The resource discovery must be created in the same home Region as the Primary Org IPAM.
+1. Secondary Org Admin Account creates a resource discovery and shares it with the Primary Org IPAM Account using AWS RAM (see [Create a resource discovery to integrate with another IPAM](res-disc-work-with-create.md) and [Share a resource discovery with another AWS account](res-disc-work-with-share.md)). The resource discovery must be created in the same home Region as the Primary Org IPAM.
 
 1. Primary Org IPAM Account accepts the resource share invitation using AWS RAM (see [Accepting and rejecting resource share invitations](https://docs.aws.amazon.com/ram/latest/userguide/working-with-shared-invitations.html) in the *AWS RAM User Guide*).
 

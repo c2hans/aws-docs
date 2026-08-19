@@ -9,8 +9,6 @@ Amazon Q Business is no longer open to new customers. For capabilities similar t
 
 The following table gives an overview of the Amazon Q Business Dropbox connector and its supported features.
 
-****
-
 - ****Security****
   - **Feature:** Authentication type / **Support:** OAuth 2.0 short‑lived access token and refresh token (offline access)
   - **Feature:** Authentication credentials / **Support:** OAuth 2.0 short‑lived access token and refresh token (offline access) +  App key <br />+  App secret <br />+  Access token <br />+  Refresh token (recommended)

@@ -18,7 +18,7 @@ You create Redshift Spectrum tables by defining the structure for your files and
 
 Optionally, you can partition the external tables on one or more columns. Defining partitions as part of the external table can improve performance. The improvement occurs because the Amazon Redshift query optimizer eliminates partitions that don't contain data for the query.
 
-Materialized views on Spectrum tables can greatly improve cost and performance. For more information, see [Materialized views on external data lake tables in Amazon Redshift SpectrumMaterialized views on external data lake tables](materialized-view-external-table.md).
+Materialized views on Spectrum tables can greatly improve cost and performance. For more information, see [Materialized views on external data lake tables in Amazon Redshift Spectrum](materialized-view-external-table.md).
 
 After your Redshift Spectrum tables have been defined, you can query and join the tables just as you do any other Amazon Redshift table. Redshift Spectrum doesn't support update operations on external tables. You can add Redshift Spectrum tables to multiple Amazon Redshift clusters and query the same data on Amazon S3 from any cluster in the same AWS Region. When you update Amazon S3 data files, the data is immediately available for query from any of your Amazon Redshift clusters.
 

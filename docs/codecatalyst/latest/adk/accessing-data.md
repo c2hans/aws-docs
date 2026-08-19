@@ -46,7 +46,7 @@ const actionInput = core.getInput('MyInput')
 ## Secrets
 <a name="action-secrets"></a>
 
-Sensitive data like authentication credentials and other values can be stored and protected in secrets with CodeCatalyst. You can then reference the secrets in your workflow definition file. For more information, see [Working with secrets](https://docs.aws.amazon.com//codecatalyst/latest/userguide/workflows-secrets.html).
+Sensitive data like authentication credentials and other values can be stored and protected in secrets with CodeCatalyst. You can then reference the secrets in your workflow definition file. For more information, see [Working with secrets](https://docs.aws.amazon.com/codecatalyst/latest/userguide/workflows-secrets.html).
 
 In the following workflow, the value of the `core.getInput(`${StackName}`)` secret is assigned to the `StackName` action input at runtime. For more information, see [ADK Core's getInput details](https://aws.github.io/actions-dev-kit/functions/_aws_codecatalyst_adk_core.getInput.html).
 
@@ -78,9 +78,9 @@ const region = core.getInput('Region')
 ## Application URLs
 <a name="action-urls"></a>
 
-Your workflow that deploys an application can display a URL in the workflow diagram. The clickable URL in the CodeCatalyst console can help to quickly verify your application. For more information, see [Surfacing the URL of the deployed application](https://docs.aws.amazon.com//codecatalyst/latest/userguide/deploy-consumption-surface-app-url.html).
+Your workflow that deploys an application can display a URL in the workflow diagram. The clickable URL in the CodeCatalyst console can help to quickly verify your application. For more information, see [Surfacing the URL of the deployed application](https://docs.aws.amazon.com/codecatalyst/latest/userguide/deploy-consumption-surface-app-url.html).
 
-You can also configure action source code with an output variable to get a URL link for your application. In the following code, the URL is first defined so the variable holds the URL you want to set as the output value. The output variable is named `AppUrl` in `code.setOutput('AppUrl, url);` with the value of the `url` variable. The output variable can then be accessed in a workflow. For more information, see [Working with variables](https://docs.aws.amazon.com//codecatalyst/latest/userguide/workflows-working-with-variables.html).
+You can also configure action source code with an output variable to get a URL link for your application. In the following code, the URL is first defined so the variable holds the URL you want to set as the output value. The output variable is named `AppUrl` in `code.setOutput('AppUrl, url);` with the value of the `url` variable. The output variable can then be accessed in a workflow. For more information, see [Working with variables](https://docs.aws.amazon.com/codecatalyst/latest/userguide/workflows-working-with-variables.html).
 
 ```
 const url = "https://mycompany.myapp.com";

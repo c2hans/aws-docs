@@ -14,8 +14,6 @@ Modify an existing AWS customer-managed prefix list by adding or removing CIDR e
 ## Change Type Details
 <a name="ct-2s1q5tjl0416n-MAPm-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2s1q5tjl0416n |

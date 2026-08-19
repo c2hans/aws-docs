@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsi
 
 AWS Identity and Access Management Roles Anywhere provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="rolesanywhere-GetCrl"></a>[GetCrl](https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_GetCrl.html) | Get a certificate revocation list (crl) | Read |

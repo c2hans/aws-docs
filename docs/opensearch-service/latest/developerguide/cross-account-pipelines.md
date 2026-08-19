@@ -20,8 +20,6 @@ To configure VPCs to share OpenSearch Ingestion pipelines across AWS accounts, c
 
 Before you configure VPCs to share OpenSearch Ingestion pipelines across AWS accounts, complete the following tasks:
 
-****
-
 | Task | Details |
 | --- | --- |
 | Create one or more OpenSearch Ingestion pipelines | Set the minimum OpenSearch Compute Units (OSUs) to 2 or higher. For more information, see [Creating Amazon OpenSearch Ingestion pipelines](creating-pipeline.md). For information about updating a pipeline, see [Updating Amazon OpenSearch Ingestion pipelines](update-pipeline.md). |

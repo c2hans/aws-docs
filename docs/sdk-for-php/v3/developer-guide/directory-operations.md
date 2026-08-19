@@ -96,8 +96,6 @@ The `uploadDirectory` method accepts an instance of `UploadDirectoryRequest`{{<a
 ##### Callable types of `$config` options
 <a name="upload-directory-config-callables"></a>
 
-****
-
 | Option name | parameter name | parameter type | parameter info |
 | --- | --- | --- | --- |
 | filter | $file | SplFileInfo\|string | If cast to string, it is the file path. Otherwise, it is an instance of `SplFileInfo`. |
@@ -197,8 +195,6 @@ The `downloadDirectory` method accepts an instance of `DownloadDirectoryRequest`
 
 ##### Callable types of `$config` options
 <a name="download-dir-callable-options"></a>
-
-****
 
 | Option name | parameter name | parameter type | parameter info |
 | --- | --- | --- | --- |

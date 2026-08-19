@@ -157,7 +157,7 @@ searchableAttributes
 A collection of name-value pairs associated with the thing type that can be used for searching.
 
 propagatingAttributes
-A list of propagating attributes. A propagating attribute can contain a thing attribute, a connection attribute, and a user property key. For more information, see [Adding propagating attributes for message enrichment](https://docs.aws.amazon.com//iot/latest/developerguide/thing-types-propagating-attributes.html).
+A list of propagating attributes. A propagating attribute can contain a thing attribute, a connection attribute, and a user property key. For more information, see [Adding propagating attributes for message enrichment](https://docs.aws.amazon.com/iot/latest/developerguide/thing-types-propagating-attributes.html).
 
 description
 A description of the thing type.

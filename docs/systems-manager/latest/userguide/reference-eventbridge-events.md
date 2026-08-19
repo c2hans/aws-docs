@@ -25,8 +25,6 @@ The remainder of this topic describes the types of Systems Manager events that y
 ## Event type: Automation
 <a name="event-type-automation"></a>
 
-****
-
 | Event type name  | Description of events you can add to a rule |
 | --- | --- |
 | EC2 Automation Execution Status-change Notification | The overall status of an Automation workflow changes. You can add one or more of the following status changes to an event rule:+  Approved <br />+  Canceled <br />+  Failed <br />+  PendingApproval <br />+  PendingChangeCalendarOverride <br />+  Rejected <br />+  Scheduled <br />+  Success <br />+  TimedOut  |
@@ -34,8 +32,6 @@ The remainder of this topic describes the types of Systems Manager events that y
 
 ## Event type: Change Calendar
 <a name="event-type-change-calendar"></a>
-
-****
 
 | Event type name | Description of events you can add to a rule |
 | --- | --- |
@@ -47,16 +43,12 @@ The remainder of this topic describes the types of Systems Manager events that y
 **Change Manager availability change**
 AWS Systems Manager Change Manager will no longer be open to new customers starting November 7, 2025. If you would like to use Change Manager, sign up prior to that date. Existing customers can continue to use the service as normal. For more information, see [AWS Systems Manager Change Manager availability change](https://docs.aws.amazon.com/systems-manager/latest/userguide/change-manager-availability-change.html).
 
-****
-
 | Event type name | Description of events you can add to a rule |
 | --- | --- |
 | Change Request Status Update | The state of a Change Manager change request. You can use the following states in an event rule:+  Approved <br />+  Rejected <br />+  InProgress   |
 
 ## Event type: Configuration Compliance
 <a name="event-type-configuration-compliance"></a>
-
-****
 
 | Event type name | Description of events you can add to a rule |
 | --- | --- |
@@ -65,16 +57,12 @@ AWS Systems Manager Change Manager will no longer be open to new customers star
 ## Event type: Inventory
 <a name="event-type-inventory"></a>
 
-****
-
 | Event type name | Description of events you can add to a rule |
 | --- | --- |
 | Inventory Resource State Change | The deletion of custom inventory and a [PutInventory](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_PutInventory.html) call that uses an old schema version. You can add one or more of the following state changes to an event rule:+  Custom inventory type deleted event on a specific node. EventBridge sends one event per node per custom InventoryType. <br />+  Custom inventory type deleted event for all nodes. <br />+  PutInventory call with old schema version event. EventBridge sends this event when the schema version is less than the current schema. This event applies to all inventory types. For more information, see [Using EventBridge to monitor Inventory events](systems-manager-inventory-setting-up-eventbridge.md). |
 
 ## Event type: Maintenance Window
 <a name="event-type-maintenance-window"></a>
-
-****
 
 | Event type name | Description of events you can add to a rule |
 | --- | --- |
@@ -88,8 +76,6 @@ AWS Systems Manager Change Manager will no longer be open to new customers star
 ## Event type: OpsCenter
 <a name="event-type-OpsCenter"></a>
 
-****
-
 | Event type name | Description of events you can add to a rule |
 | --- | --- |
 | OpsItem Create | Occurs when an OpsItem is created. You can add rules for one of the following OpsItem types:+  /aws/issue <br />+  /aws/task <br />+  /aws/insight <br />+  /aws/actionitem  |
@@ -97,8 +83,6 @@ AWS Systems Manager Change Manager will no longer be open to new customers star
 
 ## Event type: Parameter Store
 <a name="event-type-parameter-store"></a>
-
-****
 
 | Event type name | Description of events you can add to a rule |
 | --- | --- |
@@ -108,8 +92,6 @@ AWS Systems Manager Change Manager will no longer be open to new customers star
 ## Event type: Run Command
 <a name="event-type-run-command"></a>
 
-****
-
 | Event type name | Description of events you can add to a rule |
 | --- | --- |
 | EC2 Command Invocation Status-change Notification | The status of a command sent to an individual managed instance changes. You can add one or more of the following status changes to an event rule:+  Success <br />+  InProgress <br />+  TimedOut <br />+  Canceled <br />+  Failed  |
@@ -117,8 +99,6 @@ AWS Systems Manager Change Manager will no longer be open to new customers star
 
 ## Event type: State Manager
 <a name="event-type-state-manager"></a>
-
-****
 
 | Event type name | Description of events you can add to a rule |
 | --- | --- |

@@ -31,7 +31,7 @@ The following table summarizes support for each application. Select an applicati
 | [KeyShot Studio](keyshot.md) | 2023 - 2025 | Windows, macOS | No | No |
 | [Maxon Cinema 4D](maxon-cinema-4d.md) | 2024 - 2026 | Windows, macOS | Windows, Linux | Yes |
 | [Maxon Redshift for Maya](autodesk-maya.md) | 2025-2026 | Windows, macOS, Linux | Linux | Yes |
-| [SideFX Houdini](sidefx-houdini.md) | 19.5 - 21.0 | Windows, macOS, Linux | Linux | Yes |
+| [SideFX Houdini](sidefx-houdini.md) | 19.5 - 22.0 | Windows, macOS, Linux | Linux | Yes |
 | [Unreal Engine](epic-unreal-engine.md) | 5.4 - 5.8 | Windows | Windows | Not needed |
 
 ## Software that isn't listed

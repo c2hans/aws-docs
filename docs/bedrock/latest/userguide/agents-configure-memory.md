@@ -5,13 +5,13 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/agents-configur
 # Enable agent memory
 <a name="agents-configure-memory"></a>
 
-To configure memory for your agent, you must first enable memory and then optionally specify the retention period for the memory. You can enable memory for your agent when you [create](https://docs.aws.amazon.com//bedrock/latest/userguide/agents-create.html) or [update](https://docs.aws.amazon.com//bedrock/latest/userguide/agents-manage.html#agents-edit) your agent.
+To configure memory for your agent, you must first enable memory and then optionally specify the retention period for the memory. You can enable memory for your agent when you [create](https://docs.aws.amazon.com/bedrock/latest/userguide/agents-create.html) or [update](https://docs.aws.amazon.com/bedrock/latest/userguide/agents-manage.html#agents-edit) your agent.
 
 **Note**
 You can enable memory for Agents on all the models *except* the following:
 Amazon Titan Text Premier
 Anthropic Claude Instant
-Make sure that the model you are planning to use is available in your Region. For more information, see [Model support by AWS Region.](https://docs.aws.amazon.com//bedrock/latest/userguide/models-supported.html)
+Make sure that the model you are planning to use is available in your Region. For more information, see [Model support by AWS Region.](https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html)
 
 To learn how to configure memory for your agent, select the tab corresponding to your method of choice and follow steps.
 
@@ -45,9 +45,9 @@ To learn how to configure memory for your agent, select the tab corresponding to
 ------
 #### [ API ]
 
-To enable and configure memory for your agent, send an [CreateAgent](https://docs.aws.amazon.com//bedrock/latest/APIReference/API_agent_CreateAgent.html) or [UpdateAgent](https://docs.aws.amazon.com//bedrock/latest/APIReference/API_agent_UpdateAgent.html) request with an [Agents for Amazon Bedrock build-time endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#bra-bt).
+To enable and configure memory for your agent, send an [CreateAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateAgent.html) or [UpdateAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_UpdateAgent.html) request with an [Agents for Amazon Bedrock build-time endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#bra-bt).
 
-In the Amazon Bedrock API, you specify the `memoryConfiguration` when you send a [CreateAgent](https://docs.aws.amazon.com//bedrock/latest/APIReference/API_agent_CreateAgent.html) or [UpdateAgent](https://docs.aws.amazon.com//bedrock/latest/APIReference/API_agent_UpdateAgent.html) request.
+In the Amazon Bedrock API, you specify the `memoryConfiguration` when you send a [CreateAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateAgent.html) or [UpdateAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_UpdateAgent.html) request.
 
 The following shows the general format of the `memoryConfiguration`:
 

@@ -16,8 +16,6 @@ Following, you can find out about quotas when working with Amazon FSx for NetApp
 
 Following are the quotas for Amazon FSx for NetApp ONTAP for each AWS account, per AWS Region, that you can increase.
 
-****
-
 | Resource | Default | Description |
 | --- | --- | --- |
 | ONTAP file systems | 100 | The maximum number of Amazon FSx for NetApp ONTAP file systems that you can create in this account. |
@@ -48,8 +46,6 @@ Following are the quotas for Amazon FSx for NetApp ONTAP for each AWS account, p
 <a name="limits-ontap-resources-file-system"></a>
 
 The following table lists the quotas on Amazon FSx for NetApp ONTAP resources for each file system in an AWS Region.
-
-****
 
 | Resource | Limit per file system |
 | --- | --- |

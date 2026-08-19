@@ -27,8 +27,6 @@ The following are the service endpoints and service quotas for this service.
 ## Service quotas
 <a name="limits_migrationhuborchestrator"></a>
 
-****
-
 | Name | Default | Adjustable | Description |
 | --- | --- | --- | --- |
 | Maximum steps | 15 | No | The maximum number of steps in a step group. |

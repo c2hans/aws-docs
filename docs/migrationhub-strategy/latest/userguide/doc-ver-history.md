@@ -9,8 +9,6 @@ AWS Migration Hub is no longer open to new customers as of November 7, 2025. For
 
 The following table describes the documentation releases for Strategy Recommendations. For more information, see [Release notes](release-notes.md).
 
-****
-
 |  |  |  |
 | --- |--- |--- |
 | Change | Description | Date |

@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/multiplex-start-stop
 
 The following table summarizes the start, stop and pause capabilities for the multiplex, program, and channel.
 
-****
-
 | Item | Action | Note |
 | --- | --- | --- |
 | Multiplex | Start | You can start a multiplex and the channels in any order. |

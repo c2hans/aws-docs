@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/GetInfoAbo
 # Getting the name servers for a public hosted zone
 <a name="GetInfoAboutHostedZone"></a>
 
-You get the name servers for a public hosted zone if you want to change the DNS service for your domain registration. For information about how to change your DNS service, see [Making Amazon Route 53 the DNS service for an existing domainMaking Route 53 the DNS service for an existing domain](MigratingDNS.md).
+You get the name servers for a public hosted zone if you want to change the DNS service for your domain registration. For information about how to change your DNS service, see [Making Amazon Route 53 the DNS service for an existing domain](MigratingDNS.md).
 
 **Note**
 Some registrars only let you specify name servers using IP addresses; they don't accept fully qualified domain names. If your registrar needs IP addresses, you can get the IP addresses for your name servers using the dig utility (for Mac, Unix, or Linux) or the nslookup utility (for Windows). Route 53 rarely changes the IP addresses of name servers; if Route 53 needs to change them, it will notify you in advance.

@@ -18,11 +18,11 @@ Perform these procedures on the device that you want to test or by using an SSH 
 ## Find your device data endpoint
 <a name="iot-quick-start-test-connection-endpoint"></a>
 
-This procedure explains how to find your device data endpoint in the [AWS IoT console](https://console.aws.amazon.com//iot/home) for testing the connection to your IoT device.
+This procedure explains how to find your device data endpoint in the [AWS IoT console](https://console.aws.amazon.com/iot/home) for testing the connection to your IoT device.
 
 **To find your device data endpoint**
 
-1. In the [AWS IoT console](https://console.aws.amazon.com//iot/home), in the **Connect** section, go to **Domain Configurations**.
+1. In the [AWS IoT console](https://console.aws.amazon.com/iot/home), in the **Connect** section, go to **Domain Configurations**.
 
 1. In the **Domain Configurations** page, go to the **Domain configurations** container, and copy the **Domain name**. Your endpoint value is unique to your AWS account and is similar to this example: `a3qEXAMPLEsffp-ats.iot.eu-west-1.amazonaws.com`.
 

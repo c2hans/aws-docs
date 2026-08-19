@@ -21,6 +21,12 @@ Indicates the Global Accelerator properties.
 Type: [GlobalAcceleratorForWorkSpace](API_GlobalAcceleratorForWorkSpace.md) object
 Required: No
 
+ ** NestedVirtualizationEnabled **   <a name="WorkSpaces-Type-WorkspaceProperties-NestedVirtualizationEnabled"></a>
+Specifies whether nested virtualization is enabled for the WorkSpace.
+For more information, see [Nested virtualization for Amazon WorkSpaces](https://docs.aws.amazon.com/workspaces/latest/adminguide/nested-virtualization.html).
+Type: Boolean
+Required: No
+
  ** OperatingSystemName **   <a name="WorkSpaces-Type-WorkspaceProperties-OperatingSystemName"></a>
 The name of the operating system.
 Type: String

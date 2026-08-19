@@ -28,7 +28,6 @@ Signing algorithm support for CA certificates depends on the signing algorithm o
   + SHA512 ECDSA
 
   Legacy AWS Regions include:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/privateca/latest/userguide/PCACertInstall.html)
 + In a non-legacy AWS Region, the following rules apply for EDCSA:
   + A parent CA with the EC\_prime256v1 signing algorithm can issue certificates with ECDSA P256.

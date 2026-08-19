@@ -34,8 +34,6 @@ When you make an [InvokeModel](https://docs.aws.amazon.com/bedrock/latest/APIRef
 
 The following table shows the minimum, maximum, and default values for the numerical parameters.
 
-****
-
 | Parameter | Type | Default | Range/Validation | Description |
 | --- | --- | --- | --- | --- |
 | messages | array | Required | 1-∞ items | Chat history messages |

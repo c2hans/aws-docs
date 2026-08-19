@@ -152,8 +152,6 @@ Now that you know the criteria for evaluating your options, you're ready to choo
 
 The following table highlights which services are optimized for which circumstances. Use the table to help determine which services might best fit your organization and use case.
 
-****
-
 - **Develop**
   - **Capabilities:** Develop your Android, iOS, or web app with features such as authentication, on-device and cloud storage, analytics, AI/ML, IoT, and notifications. Natively integrate with other AWS services. / **AWS tools and services:** [AWS Amplify](https://docs.aws.amazon.com/amplify/latest/userguide/getting-started.html)
   - **Capabilities:** Use GraphQL APIs, and choose from supported frameworks and protocols. / **AWS tools and services:** [AWS AppSync](https://docs.aws.amazon.com/appsync/latest/devguide/what-is-appsync.html)

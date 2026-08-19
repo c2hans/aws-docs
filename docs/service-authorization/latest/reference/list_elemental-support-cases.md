@@ -29,8 +29,6 @@ AWS Elemental Support Cases has no API operations that can be used in the `Actio
 
 The following actions are defined by AWS Elemental Support Cases but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 - **   [AddCaseComment](https://docs.aws.amazon.com/elemental-appliances-software)  **
   - **Description:** Grants permission to add a comment to a support case
   - **Resource types (\*required):** [case\*](#list_elemental-support-cases-resource-case)
@@ -138,8 +136,6 @@ The following actions are defined by AWS Elemental Support Cases but are not dir
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
 
-****
-
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
 |  [case](https://docs.aws.amazon.com/elemental-appliances-software/)  | arn:${Partition}:elemental-support-cases::${Account}:case/${ResourceId} | [aws:ResourceTag/${TagKey}](#list_elemental-support-cases-aws_ResourceTag___TagKey_) |
@@ -148,8 +144,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_elemental-support-cases-policy-keys"></a>
 
 AWS Elemental Support Cases defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

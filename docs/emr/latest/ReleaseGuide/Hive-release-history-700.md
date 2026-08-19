@@ -8,8 +8,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/Hive-release-his
 ## Amazon EMR 7.0.0 - Hive changes
 <a name="Hive-release-history-changes-700"></a>
 
-****
-
 | Type | Description |
 | --- | --- |
 | Upgrade | Hive Runtime now uses Java 17 by default. Please refer [EMR 7.0.0 Release Guide](https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-700-release.html) for more details. |

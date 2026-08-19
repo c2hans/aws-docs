@@ -98,6 +98,7 @@ If you are modifying the compute type from a non-GPU-enabled bundles to GeneralP
 GPU-enabled WorkSpaces support compute type modifications within the same instance family but do not support cross-family modifications. For example, you can modify the compute type between G4dn instances or between G6 instances, but you cannot change from a G4dn instance to a G6 instance family. To move between GPU-enabled WorkSpace bundles powered by different instance families, use Migrate a WorkSpace feature. For more information, see [Migrate a WorkSpace in WorkSpaces Personal](migrate-workspaces.md)
 GraphicsPro bundle reaches end-of-life on October 31, 2025. We recommend migrating your GraphicsPro WorkSpaces to supported bundles before October 31, 2025. For more information, see [Migrate a WorkSpace in WorkSpaces Personal](migrate-workspaces.md).
 You cannot change the compute type of Graphics and GraphicsPro to any other value.
+If you modify the compute type from a non-GPU-enabled bundle to a GPU-enabled bundle, nested virtualization is automatically disabled on the WorkSpace. GPU WorkSpaces do not support nested virtualization. For more information, see [Nested virtualization for WorkSpaces Personal](nested-virtualization.md).
 
 When you request a compute change, WorkSpaces reboots the WorkSpace using the new compute type. WorkSpaces preserves the operating system, applications, data, and storage settings for the WorkSpace.
 
@@ -188,3 +189,55 @@ Protocol modification has failed if the WorkSpace is in an `UNHEALTHY` State wit
 Before protocol modification begins, Amazon WorkSpaces automatically takes a checkpoint snapshot of the WorkSpace. If the modification fails, the WorkSpace is automatically restored to its pre-modification checkpoint snapshot to ensure no data is lost.
 After the WorkSpace is automatically restored, try the `modify-workspace-properties` command again. If the failure persists, contact AWS Support.
 After successful protocol modification, another WorkSpace snapshot is taken ensuring that the Restore WorkSpace action restores to the updated protocol.
+
+## Modify nested virtualization
+<a name="modify_nested_virtualization"></a>
+
+You can enable or disable nested virtualization on your WorkSpaces to allow running hypervisors such as Hyper-V and KVM inside your WorkSpace. Nested virtualization is useful for running development tools like Docker Desktop, Windows Subsystem for Linux 2 (WSL2), Android Studio emulators, or QEMU within your WorkSpace.
+
+You can modify the nested virtualization setting using the AWS Management Console, AWS CLI, or Amazon WorkSpaces API.
+
+For more information about prerequisites, considerations, and detailed instructions including AWS CLI and AWS Tools for PowerShell examples, see [Nested virtualization for WorkSpaces Personal](nested-virtualization.md).
+
+**Note**
+Nested virtualization is not supported on GPU WorkSpaces.
+Nested virtualization is not supported on Standby WorkSpaces. For more information, see [Multi-Region Resilience for WorkSpaces Personal](multi-region-resilience.md).
+When nested virtualization is enabled on a Windows WorkSpace, Virtual Secure Mode (VSM) is automatically disabled.
+There is no additional cost for using nested virtualization. For more information, see [Amazon WorkSpaces pricing](https://aws.amazon.com/workspaces/pricing/).
+
+**To enable or disable nested virtualization using the console**
+
+1. Open the WorkSpaces console at [https://console.aws.amazon.com/workspaces/v2/home](https://console.aws.amazon.com/workspaces/v2/home).
+
+1. In the navigation pane, choose **WorkSpaces**.
+
+1. Select the WorkSpace.
+
+1. Choose **Actions**, and then choose **Enable Nested Virtualization** or **Disable Nested Virtualization**.
+
+**Note**
+The modification may take several minutes to complete. During the modification, the WorkSpace status shows as *Modifying*. After the modification completes, start the WorkSpace to use nested virtualization.
+
+**Tip**
+To verify the current nested virtualization state, select the WorkSpace in the console. In the detail view, the **Summary** section displays a **Nested Virtualization** field showing either `Enabled` or `Disabled`.
+
+**To enable or disable nested virtualization using the AWS CLI**
+Use the [modify-workspace-properties](https://docs.aws.amazon.com/cli/latest/reference/workspaces/modify-workspace-properties.html) command with the `NestedVirtualizationEnabled` property.
+
+To enable:
+
+```
+aws workspaces modify-workspace-properties \
+    --workspace-id {{ws-example123456}} \
+    --region {{us-west-2}} \
+    --workspace-properties NestedVirtualizationEnabled=true
+```
+
+To disable:
+
+```
+aws workspaces modify-workspace-properties \
+    --workspace-id {{ws-example123456}} \
+    --region {{us-west-2}} \
+    --workspace-properties NestedVirtualizationEnabled=false
+```

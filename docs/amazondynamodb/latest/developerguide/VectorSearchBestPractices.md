@@ -53,4 +53,4 @@ DynamoDB does not recompute embeddings for you. Whenever you change the source c
 
 You can create up to 5 vector indexes on a single table. Use separate indexes to evaluate different embedding models or model versions side by side. Store each model's embeddings in a different vector attribute and create a vector index for each. This lets you compare search quality between models against the same underlying data without migrating your production index.
 
-For example, when upgrading from one model version to another, create a second index with the new model's dimensions and distance function. Backfill it with embeddings from the new model, run test queries against both indexes, and compare relevance. Once satisfied, migrate your application to the new index and delete the old one.
+For example, when upgrading from one model version to another, create a second index with the new model's dimensions and distance function. Backfill it with embeddings from the new model, run test queries against both indexes, and compare relevance. After you are satisfied, migrate your application to the new index and delete the old one.

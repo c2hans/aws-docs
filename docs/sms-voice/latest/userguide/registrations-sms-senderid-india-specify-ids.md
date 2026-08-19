@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/registrations
 
 To successfully deliver your messages using local routes, you must specify Entity ID and Template ID values that you received after completing the sender ID registration process. You must also choose the correct entity type, and confirm that your messages match the example templates that you registered.
 
-The steps that you complete depend on how you send your SMS messages. If you use the [SendTextMessage](https://docs.aws.amazon.com//pinpoint/latest/apireference_smsvoicev2/API_SendTextMessage.html) API to send your messages, you can include these attributes in your call to the API. If you use campaigns or journeys to send your messages, you can specify the correct values when you set up the campaign or journey. This section includes information for both scenarios.
+The steps that you complete depend on how you send your SMS messages. If you use the [SendTextMessage](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_SendTextMessage.html) API to send your messages, you can include these attributes in your call to the API. If you use campaigns or journeys to send your messages, you can specify the correct values when you set up the campaign or journey. This section includes information for both scenarios.
 
 **To send messages over Indian local routes using the SendTextMessages API**
 

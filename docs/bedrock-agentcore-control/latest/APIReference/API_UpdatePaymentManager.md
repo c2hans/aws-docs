@@ -19,6 +19,7 @@ Content-type: application/json
    "authorizerType": "{{string}}",
    "clientToken": "{{string}}",
    "description": "{{string}}",
+   "kmsKeyArn": "{{string}}",
    "roleArn": "{{string}}"
 }
 ```
@@ -62,7 +63,14 @@ Required: No
 The updated description of the payment manager.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 4096.
-Pattern: `[a-zA-Z0-9\s]+`
+Pattern: `[^\p{C}]*`
+Required: No
+
+ ** [kmsKeyArn](#API_UpdatePaymentManager_RequestSyntax) **   <a name="bedrockagentcorecontrol-UpdatePaymentManager-request-kmsKeyArn"></a>
+The updated Amazon Resource Name (ARN) of the customer managed AWS KMS key used to encrypt sensitive payment manager data at rest.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 2048.
+Pattern: `arn:aws(|-cn|-us-gov):kms:[a-zA-Z0-9-]*:[0-9]{12}:key/[a-zA-Z0-9-]{36}`
 Required: No
 
  ** [roleArn](#API_UpdatePaymentManager_RequestSyntax) **   <a name="bedrockagentcorecontrol-UpdatePaymentManager-request-roleArn"></a>
@@ -81,6 +89,7 @@ Content-type: application/json
 
 {
    "authorizerType": "string",
+   "kmsKeyArn": "string",
    "lastUpdatedAt": "string",
    "name": "string",
    "paymentManagerArn": "string",
@@ -104,6 +113,12 @@ The following data is returned in JSON format by the service.
 The type of authorizer for the updated payment manager.
 Type: String
 Valid Values: `CUSTOM_JWT | AWS_IAM`
+
+ ** [kmsKeyArn](#API_UpdatePaymentManager_ResponseSyntax) **   <a name="bedrockagentcorecontrol-UpdatePaymentManager-response-kmsKeyArn"></a>
+The Amazon Resource Name (ARN) of the AWS KMS key used to encrypt sensitive payment manager data at rest, if configured.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 2048.
+Pattern: `arn:aws(|-cn|-us-gov):kms:[a-zA-Z0-9-]*:[0-9]{12}:key/[a-zA-Z0-9-]{36}`
 
  ** [lastUpdatedAt](#API_UpdatePaymentManager_ResponseSyntax) **   <a name="bedrockagentcorecontrol-UpdatePaymentManager-response-lastUpdatedAt"></a>
 The timestamp when the payment manager was last updated.

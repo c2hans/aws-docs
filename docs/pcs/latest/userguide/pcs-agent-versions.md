@@ -9,6 +9,7 @@ The AWS PCS agent software configures the EC2 instances AWS PCS launches for use
 
 | AWS PCS agent version | Release date | Release notes |
 | --- | --- | --- |
+| v1.5.1-1 | August 11, 2026 |  +  Resolve S3 buckets cross-region during Node Lifecycle Actions download. <br />+  Determine the `slurmd` version to launch from RegisterComputeNodeGroupInstance response.   |
 | v1.5.0-1 | July 23, 2026 |  +  Added support for node lifecycle actions. The agent runs custom scripts at the `nodeBootstrapped` and `nodeReady` stages of a compute node's lifecycle.   |
 | v1.4.1-1 | July 15, 2026 |  +  Added a symbolic link at `/etc/aws/pcs/scheduler/slurm` that points to `/etc/aws/pcs/scheduler/slurm-{{version}}`. The agent creates this link at runtime based on the version of the launched `slurmd`.   |
 | v1.4.0-1 | May 7, 2026 |  +  Added support for configuring and starting the `slurmd` daemon for any Slurm version that is compatible with the Slurm controller running on the AWS PCS cluster.   |

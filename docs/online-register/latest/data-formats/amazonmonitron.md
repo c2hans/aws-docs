@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon Monitron provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="monitron-GetProject"></a>[GetProject](https://docs.aws.amazon.com/Monitron/latest/user-guide/mp-project-tasks.html) | Get information about a project | Read |

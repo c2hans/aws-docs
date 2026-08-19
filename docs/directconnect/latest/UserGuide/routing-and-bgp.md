@@ -23,7 +23,7 @@ The following outbound routing policies apply:
 **Note**
  Prefixes listed in the AWS IP address ranges JSON file, ip-ranges.json, for the AWS China Regions are only advertised in the AWS China Regions.
  Prefixes listed in the AWS IP address ranges JSON file, ip-ranges.json, for the AWS Commercial Regions are only advertised in the AWS Commercial Regions.
-For more information about the ip-ranges.json file, see [AWS IP address ranges ](https://docs.aws.amazon.com//general/latest/gr/aws-ip-ranges.html) in the *AWS General Reference*.
+For more information about the ip-ranges.json file, see [AWS IP address ranges ](https://docs.aws.amazon.com/general/latest/gr/aws-ip-ranges.html) in the *AWS General Reference*.
 + Direct Connect advertises prefixes with a minimum path length of 3.
 + Direct Connect advertises all public prefixes with the well-known `NO_EXPORT` BGP community.
 + If you advertise the same prefixes from two different Regions using two different public virtual interfaces, and both have the same BGP attributes and longest prefix length, AWS will prioritize the home Region for outbound traffic.

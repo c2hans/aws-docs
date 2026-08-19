@@ -49,7 +49,7 @@ For more information about the prerequisites to connect using RDP, see [Prerequi
 
 1. Browse to the RDP file that you downloaded from the Amazon EC2 console (when you initially connected to the instance), and drag it onto the Remote Desktop Connection client.
 
-1. Right-click the RDP file, and choose **Edit**.
+1. Open the context (right-click) menu for the RDP file, and choose **Edit**.
 
 1. Choose the **Folders** tab, and select the **Redirect folders** checkbox.
 ![Microsoft Remote Desktop Edit PC window.](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/mac-map-folder-1.png)

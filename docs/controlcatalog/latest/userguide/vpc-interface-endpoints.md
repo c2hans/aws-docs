@@ -64,4 +64,4 @@ The following is an example of a custom endpoint policy. When you attach this po
 ```
 
 **Note**
-The `GetControl` and `ListControls` API operations require a different permission, the default full permission. For an example, see [the Default endpoint policy](https://docs.aws.amazon.com//vpc/latest/privatelink/vpc-endpoints-access.html#default-endpoint-policy).
+The `GetControl` and `ListControls` API operations require a different permission, the default full permission. For an example, see [the Default endpoint policy](https://docs.aws.amazon.com/vpc/latest/privatelink/vpc-endpoints-access.html#default-endpoint-policy).

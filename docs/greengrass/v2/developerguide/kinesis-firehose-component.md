@@ -113,7 +113,7 @@ This component has the following requirements:
   }
   ```<a name="connector-component-legacy-subscription-router-dependency-replace"></a>
   + Replace {{region}} with the AWS Region that you use.
-  + Replace {{version}} with the version of the Lambda function that this component runs. To find the Lambda function version, you must view the recipe for the version of this component that you want to deploy. Open this component's details page in the [AWS IoT Greengrass console](https://console.aws.amazon.com//greengrass), and look for the **Lambda function** key-value pair. This key-value pair contains the name and version of the Lambda function.
+  + Replace {{version}} with the version of the Lambda function that this component runs. To find the Lambda function version, you must view the recipe for the version of this component that you want to deploy. Open this component's details page in the [AWS IoT Greengrass console](https://console.aws.amazon.com/greengrass), and look for the **Lambda function** key-value pair. This key-value pair contains the name and version of the Lambda function.
 
 **Important**  <a name="connector-component-legacy-subscription-router-dependency-note"></a>
 You must update the Lambda function version on the legacy subscription router every time you deploy this component. This ensures that you use the correct Lambda function version for the component version that you deploy.
@@ -136,7 +136,7 @@ This component must be able to perform outbound requests to the following endpoi
 ## Dependencies
 <a name="kinesis-firehose-component-dependencies"></a>
 
-When you deploy a component, AWS IoT Greengrass also deploys compatible versions of its dependencies. This means that you must meet the requirements for the component and all of its dependencies to successfully deploy the component. This section lists the dependencies for the [released versions](#kinesis-firehose-component-changelog) of this component and the semantic version constraints that define the component versions for each dependency. You can also view the dependencies for each version of the component in the [AWS IoT Greengrass console](https://console.aws.amazon.com//greengrass). On the component details page, look for the **Dependencies** list.
+When you deploy a component, AWS IoT Greengrass also deploys compatible versions of its dependencies. This means that you must meet the requirements for the component and all of its dependencies to successfully deploy the component. This section lists the dependencies for the [released versions](#kinesis-firehose-component-changelog) of this component and the semantic version constraints that define the component versions for each dependency. You can also view the dependencies for each version of the component in the [AWS IoT Greengrass console](https://console.aws.amazon.com/greengrass). On the component details page, look for the **Dependencies** list.
 
 ------
 #### [ 2.1.10 ]

@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/detective/latest/userguide/securitylake-
 
 This topic explains how to use the Detective console to create a Security Lake subscriber.
 
-To consume logs and events from Amazon Security Lake, you must be a Security Lake subscriber. A Subscriber can query and access the data that Security Lake collects. A subscriber with query access can query AWS Lake Formation tables directly in an Amazon Simple Storage Service (Amazon S3) bucket by using services such as Amazon Athena. To become a subscriber, the Security Lake administrator has to provide you with subscriber access that lets you query the data lake. For information about how the administrator does this, see [Creating a subscriber with query access](https://docs.aws.amazon.com//security-lake/latest/userguide/subscriber-query-access.html#create-query-subscriber-procedures) in the Amazon Security Lake User Guide.
+To consume logs and events from Amazon Security Lake, you must be a Security Lake subscriber. A Subscriber can query and access the data that Security Lake collects. A subscriber with query access can query AWS Lake Formation tables directly in an Amazon Simple Storage Service (Amazon S3) bucket by using services such as Amazon Athena. To become a subscriber, the Security Lake administrator has to provide you with subscriber access that lets you query the data lake. For information about how the administrator does this, see [Creating a subscriber with query access](https://docs.aws.amazon.com/security-lake/latest/userguide/subscriber-query-access.html#create-query-subscriber-procedures) in the Amazon Security Lake User Guide.
 
 Follow these steps to create a Security Lake subscriber in order to grant query access to a Detective administrator account.
 

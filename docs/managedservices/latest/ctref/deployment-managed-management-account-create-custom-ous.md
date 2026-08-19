@@ -14,8 +14,6 @@ Create multiple custom AWS organizational units (OU) under the following paths, 
 ## Change Type Details
 <a name="ct-1ksyoxreh35tu-DMMc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1ksyoxreh35tu |

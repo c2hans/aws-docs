@@ -38,4 +38,4 @@ You must wait until the deregistration process is complete before you can deregi
 **Note**
 To remove accounts managed by AWS Control Tower, you can navigate to **Account factory** from the left navigation pane in the AWS Control Tower console. To remove accounts in the OU that are not managed by AWS Control Tower, go to the AWS Organizations console.
 
-To deregister an OU programmatically, call the [`DisableBaseline` API](https://docs.aws.amazon.com//controltower/latest/APIReference/API_DisableBaseline.html).
+To deregister an OU programmatically, call the [`DisableBaseline` API](https://docs.aws.amazon.com/controltower/latest/APIReference/API_DisableBaseline.html).

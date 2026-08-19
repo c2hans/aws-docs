@@ -25,8 +25,8 @@ Some users, such as your AWS developers, may need to know about the resources to
 
 AWS offers tools to identify the scope of a user's AWS resource access. After you identify the scope of a user's access, you can share that information with the user, in accordance with your organization's information management policies. For more information about these tools, see the links that follow.
 + **AWS access advisor** – The AWS Identity and Access Management (IAM) access advisor tool lets you determine the permissions that your developers have by analyzing the last timestamp when an IAM entity, such as a user, role, or group, called an AWS service. You can audit service access and remove unnecessary permissions, and you can automate the process if needed. For more information, see [our AWS Security blog post](https://aws.amazon.com/blogs/security/automate-analyzing-permissions-using-iam-access-advisor).
-+ **IAM policy simulator** – With the IAM policy simulator, you can test and troubleshoot IAM-based and resource-based policies. For more information, see [Testing IAM Policies with the IAM Policy Simulator](https://docs.aws.amazon.com//IAM/latest/UserGuide/access_policies_testing-policies.html).
-+ **AWS CloudTrail logs** – You can review AWS CloudTrail logs to see actions taken by a user, role, or AWS service. For more information about CloudTrail, see the [AWS CloudTrail User Guide](https://docs.aws.amazon.com//awscloudtrail/latest/userguide/cloudtrail-user-guide.html).
++ **IAM policy simulator** – With the IAM policy simulator, you can test and troubleshoot IAM-based and resource-based policies. For more information, see [Testing IAM Policies with the IAM Policy Simulator](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_testing-policies.html).
++ **AWS CloudTrail logs** – You can review AWS CloudTrail logs to see actions taken by a user, role, or AWS service. For more information about CloudTrail, see the [AWS CloudTrail User Guide](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html).
 
   Actions taken by AWS Control Tower landing zone administrators are viewable in the landing zone management account. Actions taken by member account administrators and users are viewable in the shared log archive account.
 
@@ -54,4 +54,4 @@ This procedure assumes you've already created at least one child OU within your 
 
 1. Repeat the previous two steps for each OU about which your user needs information.
 
-For detailed information about the controls and their functions, see [About controls in AWS Control Tower](https://docs.aws.amazon.com//controltower/latest/userguide/controls.html).
+For detailed information about the controls and their functions, see [About controls in AWS Control Tower](https://docs.aws.amazon.com/controltower/latest/userguide/controls.html).

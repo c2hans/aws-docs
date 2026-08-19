@@ -13,7 +13,7 @@ Access to Directory Service requires credentials that AWS can use to authenticat
 ## Authentication
 <a name="authentication"></a>
 
-Learn how to access AWS using [IAM identities](https://docs.aws.amazon.com//IAM/latest/UserGuide/id.html).
+Learn how to access AWS using [IAM identities](https://docs.aws.amazon.com/IAM/latest/UserGuide/id.html).
 
 ## Access control
 <a name="access_control"></a>

@@ -89,8 +89,6 @@ The following code block includes a JSON object for a single sequence file. The 
 
 The following table provides details about the top-level parameters of a sequence file. For detailed information about the parameters required for individual frames in the sequence file, see [Parameters for Individual Point Cloud Frames](#sms-point-cloud-multi-frame-input-single-frame).
 
-****
-
 |  Parameter  |  Required  |  Accepted Values  |  Description  |
 | --- | --- | --- | --- |
 | `seq-no` | Yes | Integer | The ordered number of the sequence.  |
@@ -102,8 +100,6 @@ The following table provides details about the top-level parameters of a sequenc
 <a name="sms-point-cloud-multi-frame-input-single-frame"></a>
 
 The following table shows the parameters you can include in your input manifest file.
-
-****
 
 |  Parameter  |  Required  |  Accepted Values  |  Description  |
 | --- | --- | --- | --- |
@@ -124,8 +120,6 @@ Ground Truth uses extrinsic matrices to project labels to and from the 3D scene 
 
 The following table provides more information about the `position` and orientation (`heading`) parameters that are required when you provide ego-vehicle information.
 
-****
-
 |  Parameter  |  Required  |  Accepted Values  |  Description  |
 | --- | --- | --- | --- |
 | `position` | Yes | JSON object<br />**Required Parameters**:<br />`x`, `y`, and `z`. Enter numbers for these parameters.  | The translation vector of the ego vehicle in the world coordinate system.  |
@@ -139,8 +133,6 @@ If you want to include color camera data with a frame, use the following paramet
 If you include camera images, you must include information about the `position` and orientation (`heading`) of the camera used the capture the images.
 
 If your images are distorted, Ground Truth can automatically undistort them using information you provide about the image in your input manifest file, including distortion coefficients (`k1`, `k2`, `k3`, `k4`, `p1`, `p1`), camera model and focal length (`fx`, `fy`), and the principal point (`cx`, `cy)`. To learn more about these coefficients and undistorting images, see [Camera calibration With OpenCV](https://docs.opencv.org/2.4.13.7/doc/tutorials/calib3d/camera_calibration/camera_calibration.html). If distortion coefficients are not included, Ground Truth will not undistort an image.
-
-****
 
 |  Parameter  |  Required  |  Accepted Values  |  Description  |
 | --- | --- | --- | --- |

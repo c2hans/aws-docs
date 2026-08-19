@@ -13,7 +13,7 @@ Application Discovery Service Agentless Collector (Agentless Collector) is an Am
 
 1. For **Collector name**, enter a name for the collector to identify it. The name can contain spaces but it cannot contain special characters.
 
-1. Under **Data synchronization**, enter the AWS access key and secret key for the AWS account IAM user to specify as the destination account to receive the data discovered by the collector. For information about the requirements for the IAM user, see [Deploying Application Discovery Service Agentless CollectorCreate an IAM user for Agentless Collector](agentless-collector-deploying.md#agentless-collector-gs-iam-user).
+1. Under **Data synchronization**, enter the AWS access key and secret key for the AWS account IAM user to specify as the destination account to receive the data discovered by the collector. For information about the requirements for the IAM user, see [Deploying Application Discovery Service Agentless Collector](agentless-collector-deploying.md#agentless-collector-gs-iam-user).
 
    1. For **AWS access-key**, enter the access key of the AWS account IAM user that you're specifying as the destination account.
 
@@ -83,8 +83,6 @@ The Agentless Collector supports IPv4. It does not support IPv6.
    ```
 
 1.
-
-****
 
    Update the interface configuration by using the following steps.
 
@@ -207,8 +205,6 @@ The Agentless Collector supports IPv4. It does not support IPv6.
    ```
 
 1.
-
-****
 
    Update the interface eth0 configuration using the following steps.
 

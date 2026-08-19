@@ -22,8 +22,6 @@ If you don't plan to set up with SMPTE 2110 outputs, you can set up all the node
 
 Make sure you perform the configuration on the correct nodes.
 
-****
-
 | Node | Work on this node? |
 | --- | --- |
 | Primary Conductor Live node | Yes |

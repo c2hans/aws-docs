@@ -9,8 +9,6 @@ The Cost and Usage Dashboard is an easy to deploy, secure, and pre-built dashboa
 
 The following table summarizes the differences between a Cost and Usage Dashboard and Cloud Intelligence Dashboards (CID):
 
-****
-
 | Feature | Cost and Usage Dashboard | Cloud Intelligence Dashboards |
 | --- | --- | --- |
 | Deployment | Seamless deployment from AWS console | CloudFormation, Command Line, or Terraform |

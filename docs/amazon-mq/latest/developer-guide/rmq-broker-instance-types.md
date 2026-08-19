@@ -33,7 +33,7 @@ We recommending using `mq.m7g.x` instance types with cluster deployment. The fol
 | mq.m7g.16xlarge | 64 | 256 | 30 Gigabit |  Production  | EBS | 345 | 500 |
 
 **Note**
-Configurable storage size is available for RabbitMQ version 4.x brokers with `CLUSTER_MULTI_AZ` deployment mode only. The storage size must be a multiple of 5 GB. If not specified, the broker uses the default storage size shown in the "Disk volume size per node" column. You can configure storage size when creating or updating a broker. For more information, see the [CreateBroker](https://docs.aws.amazon.com//amazon-mq/latest/api-reference/rest-api-brokers.html) and [UpdateBroker](https://docs.aws.amazon.com//amazon-mq/latest/api-reference/rest-api-broker.html) API operations.
+Configurable storage size is available for RabbitMQ version 4.x brokers with `CLUSTER_MULTI_AZ` deployment mode only. The storage size must be a multiple of 5 GB. If not specified, the broker uses the default storage size shown in the "Disk volume size per node" column. You can configure storage size when creating or updating a broker. For more information, see the [CreateBroker](https://docs.aws.amazon.com/amazon-mq/latest/api-reference/rest-api-brokers.html) and [UpdateBroker](https://docs.aws.amazon.com/amazon-mq/latest/api-reference/rest-api-broker.html) API operations.
 
 ## Instance types for m7g single instance deployment
 <a name="instance-types-m7g-single-instance"></a>

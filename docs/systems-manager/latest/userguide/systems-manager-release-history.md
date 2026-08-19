@@ -413,8 +413,6 @@ The following table describes the important changes to the documentation since t
 
 The following table describes important changes in each release of the *AWS Systems Manager User Guide* before June 2018.
 
-****
-
 | Change | Description | Release date |
 | --- | --- | --- |
 | Inventory all managed instances in your AWS account | You can inventory all managed instances in your AWS account by creating a global inventory association. For more information, see [Inventory all managed nodes in your AWS account](inventory-collection.md#inventory-management-inventory-all). Global inventory associations are available in SSM Agent version 2.0.790.0 or later. For information about how to update SSM Agent on your instances, see [Updating the SSM Agent using Run Command](run-command-tutorial-update-software.md#rc-console-agentexample).  | May 3, 2018 |

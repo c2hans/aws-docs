@@ -14,8 +14,6 @@ Delete up to 20 security groups. Note: Only security groups with no dependencies
 ## Change Type Details
 <a name="ct-18r16ldqil6w9-MASd-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-18r16ldqil6w9 |

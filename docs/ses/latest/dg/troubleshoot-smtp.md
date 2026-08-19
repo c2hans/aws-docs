@@ -48,8 +48,6 @@ AWS SDKs implement retry logic [automatically](https://docs.aws.amazon.com/gener
 
 If you receive a 500 error, you have to revise your request to correct an issue before you submit the request again. For example, if your AWS authentication credentials are invalid, you have to update your application to use the correct credentials before you submit your request again.
 
-****
-
 | Description | Response code | More information |
 | --- | --- | --- |
 | Authentication successful | `235 Authentication successful` | Your SMTP client successfully connected and signed in to the SMTP server. |

@@ -19,4 +19,4 @@ Customers must grant appropriate IAM permissions to the Core partner software to
 ## Required IAM permissions
 <a name="iam-permissions"></a>
 
-The WorkspacesInstances APIs will be called using an IAM role or user credentials from the WorkSpaces Core partner’s account. For more information, see [Identity and access management for WorkSpaces Instances](https://docs.aws.amazon.com//workspaces-core/latest/ag/workspaces-access-control.html) in the *Amazon WorkSpaces Core Administration Guide*.
+The WorkspacesInstances APIs will be called using an IAM role or user credentials from the WorkSpaces Core partner’s account. For more information, see [Identity and access management for WorkSpaces Instances](https://docs.aws.amazon.com/workspaces-core/latest/ag/workspaces-access-control.html) in the *Amazon WorkSpaces Core Administration Guide*.

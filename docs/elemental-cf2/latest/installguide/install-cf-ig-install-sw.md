@@ -24,7 +24,6 @@ Make sure that you use the `.run` file that corresponds to the .iso file that yo
    where -l is a letter, not a number.
 
 1. You are prompted as described in the table below.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-cf2/latest/installguide/install-cf-ig-install-sw.html)
 
    Then the software will be installed. Finally, this message appears when installation and configuration are complete:

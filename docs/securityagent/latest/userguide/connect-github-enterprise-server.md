@@ -2,15 +2,15 @@
 source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/connect-github-enterprise-server.html
 ---
 
-# Connect AWS Security Agent to GitHub Enterprise Server
+# Connect AWS Security Agent to GitHub Enterprise
 <a name="connect-github-enterprise-server"></a>
 
-Connect your AWS Security Agent to a GitHub Enterprise Server (GHES) instance to enable code review, threat modeling, penetration testing, and automated remediation capabilities for repositories hosted on your own infrastructure.
+Connect AWS Security Agent to GitHub Enterprise to enable code review, threat modeling, penetration testing, and automated remediation for your repositories.
 
-GitHub Enterprise Server integration provides the same capabilities as cloud-hosted GitHub (see [Connect AWS Security Agent to GitHub repositories](connect-github.md)) with additional configuration for network connectivity to your self-hosted instance. Before you begin, review [How integrations work with Agent Spaces](about-integrations.md) to understand how a registration is reused across Agent Spaces and shared across capabilities.
+GitHub Enterprise integration provides the same capabilities as cloud-hosted GitHub (see [Connect AWS Security Agent to GitHub repositories](connect-github.md)). Before you begin, review [How integrations work with Agent Spaces](about-integrations.md) to understand how a registration is reused across Agent Spaces and shared across capabilities.
 
 **Note**
-GitHub Enterprise Server is registered through the **GitHub** integration, not a separate integration type. In the registration flow you choose **GitHub Enterprise Server** as the instance type. The cloud-hosted GitHub.com flow is described in [Connect AWS Security Agent to GitHub repositories](connect-github.md).
+GitHub Enterprise is registered through the **GitHub** integration, not a separate integration type. In the registration flow, you choose **GitHub Enterprise** as the instance type. This instance type covers both a GitHub Enterprise Server instance that you operate and a GitHub Enterprise Cloud with data residency (a `.ghe.com` host). For the cloud-hosted GitHub.com flow, see [Connect AWS Security Agent to GitHub repositories](connect-github.md).
 
 ## How GitHub Enterprise Server integration works
 <a name="_how_github_enterprise_server_integration_works"></a>
@@ -21,16 +21,27 @@ You create and run **full code reviews** — which scan a repository’s entire 
 
  **Penetration testing** and **threat modeling** are initiated within the AWS Security Agent web application. Users specify target domains and select connected repositories to provide application context. If you enable automated remediation, users can request AWS Security Agent to fix findings by opening pull requests to connected repositories.
 
+## GitHub Enterprise Cloud with data residency (.ghe.com)
+<a name="_github_enterprise_cloud_with_data_residency_ghe_com"></a>
+
+GitHub Enterprise Cloud with data residency serves your organization from a dedicated, GitHub-operated tenant on a `.ghe.com` host rather than from `github.com`. Connect it through the same **GitHub Enterprise** instance type you use for GitHub Enterprise Server, following the steps below. A data residency tenant installs the AWS Security Agent GitHub App under an organization, so you choose the **Organization** account type during registration.
+
+**Important**
+AWS Security Agent processes your repository content in the Region of the AWS Security Agent instance you connect from. If that Region differs from your tenant’s data residency Region, AWS Security Agent processes your content outside that Region. See [Cross-Region data processing](data-protection.md#cross-region-processing).
+
 ## Prerequisites
 <a name="_prerequisites"></a>
 
 Before you begin, ensure you have:
-+ A GitHub Enterprise Server instance that is either:
-  + Publicly accessible over the internet, OR
-  + Accessible via a private connection (see [Connect to privately hosted source control](connect-private-connection.md))
-+ Site administrator or organization administrator access on your GHES instance
-+ Your GHES instance must serve HTTPS traffic with a minimum TLS version of 1.2
 + Permissions to configure integrations in the AWS Security Agent Management Console
+
+For a GitHub Enterprise Server instance:
++ An instance that is either publicly accessible over the internet, or reachable through a private connection (see [Connect to privately hosted source control](connect-private-connection.md))
++ Site administrator or organization administrator access on the instance
++ The instance must serve HTTPS traffic with a minimum TLS version of 1.2
+
+For GitHub Enterprise Cloud with data residency:
++ An organization on your `.ghe.com` tenant, and permission to install a GitHub App in it
 
 **Note**
 GitHub Enterprise Server integrations can be used across multiple AWS accounts.
@@ -49,19 +60,19 @@ Complete all steps in this process without closing your browser or navigating aw
 
 1. Select **GitHub**, then choose **Next**.
 
-1. Under **Instance type**, select **GitHub Enterprise Server**.
+1. Under **Instance type**, select **GitHub Enterprise**.
 
-1. In the **GitHub Enterprise Server URL** field, enter the HTTPS URL of your instance, for example `https://github.example.com`.
+1. In the **GitHub Enterprise URL** field, enter the HTTPS URL of your instance. For a GitHub Enterprise Server instance, enter its host, for example `https://github.example.com`. For GitHub Enterprise Cloud with data residency, enter your `.ghe.com` host, for example `https://acme.ghe.com`. Do not include an `api.` prefix or additional subdomain levels.
 
-1. If your instance is not publicly accessible, select **Connect to endpoint using a private connection**, then choose an existing private connection or create a new one. See [Connect to privately hosted source control](connect-private-connection.md).
+1. (GitHub Enterprise Server only) If your instance is not publicly accessible, select **Connect to endpoint using a private connection**, then choose an existing private connection or create a new one. See [Connect to privately hosted source control](connect-private-connection.md).
 
 1. In the **Register details** section, configure the following fields:
 
    1.  **Registration name** - Enter a descriptive name for this connection. Valid characters are letters, numbers, periods, underscores, and hyphens.
 
-   1.  **GitHub account type** - Select **Organization** or **User**.
+   1.  **GitHub account type** - Select **Organization** or **User**. For a GitHub Enterprise Cloud with data residency, you must select **Organization**; **User** accounts are not supported.
 
-   1.  **Organization name** (appears only if you selected Organization) - Enter the exact name of your GitHub Enterprise Server organization. Names are case sensitive.
+   1.  **Organization name** (appears only if you selected Organization) - Enter the exact name of your GitHub Enterprise organization. Names are case sensitive.
 
 1. Choose **Connect**.
 **Note**

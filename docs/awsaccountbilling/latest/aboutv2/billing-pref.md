@@ -199,8 +199,6 @@ If you use billing transfer, the management account (not the bill transfer accou
 
 You can choose from three sharing preference options:
 
-****
-
 | Sharing Type | Description | Use Case |
 | --- | --- | --- |
 | Open sharing | Discounts are available to all sharing-activated accounts within the organization (default) | Cost optimization across your entire organization |

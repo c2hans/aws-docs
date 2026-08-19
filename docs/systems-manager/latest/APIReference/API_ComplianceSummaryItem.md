@@ -14,7 +14,7 @@ A summary of compliance information by compliance type.
 The type of compliance item. For example, the compliance type can be Association, Patch, or Custom:string.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 100.
-Pattern: `[A-Za-z0-9_\-]\w+|Custom:[a-zA-Z0-9_\-]\w+`
+Pattern: `^([A-Za-z0-9_\-]\w+|Custom:[a-zA-Z0-9_\-]\w+)$`
 Required: No
 
  ** CompliantSummary **   <a name="systemsmanager-Type-ComplianceSummaryItem-CompliantSummary"></a>

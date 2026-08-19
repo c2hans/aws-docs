@@ -11,7 +11,7 @@ Amazon Route 53 health checks monitor the health and performance of your web ap
 + The status of an Amazon CloudWatch alarm.
 + Additionally, with Amazon Application Recovery Controller (ARC), you can set up routing control health checks with DNS failover records to manage traffic failover for your application. To learn more, see [Amazon Application Recovery Controller (ARC) Developer Guide](https://docs.aws.amazon.com/r53recovery/latest/dg/what-is-route-53-recovery.html).
 
-For an overview of the types of health checks, see [Types of Amazon Route 53 health checksTypes of health checks](health-checks-types.md). For information about creating health checks, see [Creating and updating health checks](health-checks-creating.md).
+For an overview of the types of health checks, see [Types of Amazon Route 53 health checks](health-checks-types.md). For information about creating health checks, see [Creating and updating health checks](health-checks-creating.md).
 
 After you create a health check, you can get the status of the health check, get notifications when the status changes, and configure DNS failover:
 

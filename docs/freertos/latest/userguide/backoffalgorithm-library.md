@@ -19,7 +19,6 @@ The library is written in C and designed to be compliant with [ISO C90](https://
 
 This library can be freely used and is distributed under the [MIT open source license](https://freertos.org/a00114.html).
 
-****
 <a name="backoffalgorithm-memory-estimate"></a>
 <table>
 <thead>

@@ -11,8 +11,6 @@ To retain archived redo logs, use the Amazon RDS procedure `rdsadmin.rdsadmin_ut
 
 The `set_configuration` procedure has the following parameters.
 
-****
-
 | Parameter name | Data type | Default | Required | Description |
 | --- | --- | --- | --- | --- |
 | `name` | varchar | — | Yes | The name of the configuration to update. To change the archived redo log retention hours, set the name to `archivelog retention hours`. |

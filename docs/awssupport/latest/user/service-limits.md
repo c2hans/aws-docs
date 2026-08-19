@@ -127,7 +127,7 @@ Checks for usage that is more than 80% of the DynamoDB provisioned throughput li
 `6gtQddfEw6`
 
 **Additional Resources**
-[DynamoDB quotas](https://docs.aws.amazon.com//general/latest/gr/ddb.html)
+[DynamoDB quotas](https://docs.aws.amazon.com/general/latest/gr/ddb.html)
 
 ## DynamoDB Write Capacity
 <a name="dynamo-db-write-capacity"></a>
@@ -139,7 +139,7 @@ Checks for usage that is more than 80% of the DynamoDB provisioned throughput li
 `c5ftjdfkMr`
 
 **Additional Resources**
-[DynamoDB quotas](https://docs.aws.amazon.com//general/latest/gr/ddb.html)
+[DynamoDB quotas](https://docs.aws.amazon.com/general/latest/gr/ddb.html)
 
 ## EBS Active Snapshots
 <a name="ebs-active-snapshots"></a>

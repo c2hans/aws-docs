@@ -8,14 +8,14 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/userguide/channels-push.
 <a name="channels-push"></a>
 
 **Note**
-Amazon Pinpoint has updated their user guide documentation. To get the latest information regarding how to create, configure, and manage your Push resources, see the new [AWS End User Messaging Push User Guide](https://docs.aws.amazon.com//push-notifications/latest/userguide/what-is-service.html).
+Amazon Pinpoint has updated their user guide documentation. To get the latest information regarding how to create, configure, and manage your Push resources, see the new [AWS End User Messaging Push User Guide](https://docs.aws.amazon.com/push-notifications/latest/userguide/what-is-service.html).
 The following topics have been moved:
-[Setting up Amazon Pinpoint mobile push channels](https://docs.aws.amazon.com//push-notifications/latest/userguide/procedure-enable-push.html)
+[Setting up Amazon Pinpoint mobile push channels](https://docs.aws.amazon.com/push-notifications/latest/userguide/procedure-enable-push.html)
 [Monitoring push notification activity](analytics-campaigns.md)
 To monitor push notification activity, you must use a campaign. You can't monitor push notification activity outside a campaign.
-[Managing mobile push channels](https://docs.aws.amazon.com//push-notifications/latest/userguide/procedure-enable-push.html)
-[Sending Safari web push notifications](https://docs.aws.amazon.com//push-notifications/latest/userguide/reference-send-message.html)
-[Best practices](https://docs.aws.amazon.com//push-notifications/latest/userguide/channels-push-best-practices.html)
+[Managing mobile push channels](https://docs.aws.amazon.com/push-notifications/latest/userguide/procedure-enable-push.html)
+[Sending Safari web push notifications](https://docs.aws.amazon.com/push-notifications/latest/userguide/reference-send-message.html)
+[Best practices](https://docs.aws.amazon.com/push-notifications/latest/userguide/channels-push-best-practices.html)
 
 With Amazon Pinpoint, you can engage users of your apps by sending push notifications through a push notification channel. You can send push notifications to your apps using separate channels for the following push notification services:
 + Firebase Cloud Messaging (FCM)

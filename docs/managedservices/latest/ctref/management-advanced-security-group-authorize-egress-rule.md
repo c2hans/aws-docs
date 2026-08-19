@@ -14,8 +14,6 @@ Authorize multiple egress rules for the specified security group (SG). You must 
 ## Change Type Details
 <a name="ct-0lqruajvhwsbk-MASa-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-0lqruajvhwsbk |

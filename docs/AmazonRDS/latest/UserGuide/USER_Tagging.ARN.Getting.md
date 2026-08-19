@@ -21,8 +21,6 @@ For example, you can get the ARN for a DB instance from the **Configuration** ta
 
 To get an ARN from the AWS CLI for a particular RDS resource, you use the `describe` command for that resource. The following table shows each AWS CLI command, and the ARN property used with the command to get an ARN.
 
-****
-
 | AWS CLI command | ARN property |
 | --- | --- |
 |  [describe-event-subscriptions](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-event-subscriptions.html)  | EventSubscriptionArn |
@@ -73,8 +71,6 @@ The output of that command is like the following:
 <a name="USER_Tagging.ARN.API"></a>
 
 To get an ARN for a particular RDS resource, you can call the following RDS API operations and use the ARN properties shown following.
-
-****
 
 | RDS API operation | ARN property |
 | --- | --- |

@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon OpenSearch Service provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="es-DescribeDataSourceAttachment"></a>[DescribeDataSourceAttachment](https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_DescribeDataSourceAttachment.html) | Describe the status of a data source attachment for an OpenSearch Application | Read |

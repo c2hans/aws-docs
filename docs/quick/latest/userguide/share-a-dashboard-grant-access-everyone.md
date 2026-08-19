@@ -13,7 +13,7 @@ Sharing the dashboard with everyone in your account doesn't affect email reports
 
 1. Open the published dashboard and choose **Share** at upper right. Then choose **Share dashboard**.
 
-1. In the **Share dashboard** page that opens, for **Enable access for** at bottom left, toggle on **Everyone in this account**. Accounts that sign in with an Active Directory can't access the **Everyone in this account** switch. Accounts that use Active Directory can enable this setting with an `UpdateDashboardPermissions` API call. For more information on `UpdateDashboardPermissions`, see [UpdateDashboardPermissions](https://docs.aws.amazon.com//quicksight/latest/APIReference/API_UpdateDashboardPermissions.html) in the *Amazon Quick Sight API Reference*.
+1. In the **Share dashboard** page that opens, for **Enable access for** at bottom left, toggle on **Everyone in this account**. Accounts that sign in with an Active Directory can't access the **Everyone in this account** switch. Accounts that use Active Directory can enable this setting with an `UpdateDashboardPermissions` API call. For more information on `UpdateDashboardPermissions`, see [UpdateDashboardPermissions](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdateDashboardPermissions.html) in the *Amazon Quick Sight API Reference*.
 
 1. (Optional) Toggle on **Discoverable in Quick Sight**.
 

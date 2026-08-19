@@ -14,7 +14,7 @@ After you send a one-time-password, your application can call the Amazon Pinpoin
 
 You can use the AWS CLI to test the validation process. For more information about installing and configuring the AWS CLI, see the [AWS Command Line Interface User Guide](https://docs.aws.amazon.com/cli/latest/userguide/).
 
-To verify an OTP using the AWS CLI, run the [verify-otp-message](https://docs.aws.amazon.com//cli/latest/reference/pinpoint/verify-otp-message.html) command in the terminal:
+To verify an OTP using the AWS CLI, run the [verify-otp-message](https://docs.aws.amazon.com/cli/latest/reference/pinpoint/verify-otp-message.html) command in the terminal:
 
 ```
 aws pinpoint verify-otp-message --application-id 7353f53e6885409fa32d07cedexample --verify-otp-message-request-parameters DestinationIdentity={{+12065550007}},ReferenceId={{SampleReferenceId}},Otp={{01234}}

@@ -5,12 +5,12 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/remo
 # Working with AWS Lambda Functions
 <a name="remote-lambda"></a>
 
-The AWS Toolkit for Visual Studio Code allows you to work with your AWS Lambda functions in your local VS Code environment. With the AWS Toolkit, you can create, edit, test, debug, and deploy your Lambda functions, without having to leave the IDE. For detailed information about the AWS Lambda service, see the [AWS Lambda](https://docs.aws.amazon.com//lambda/latest/dg/welcome.html) Developer Guide.
+The AWS Toolkit for Visual Studio Code allows you to work with your AWS Lambda functions in your local VS Code environment. With the AWS Toolkit, you can create, edit, test, debug, and deploy your Lambda functions, without having to leave the IDE. For detailed information about the AWS Lambda service, see the [AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html) Developer Guide.
 
 The following sections describe how to get started working with Lambda functions in the AWS Toolkit for Visual Studio Code.
 
 **Note**
-If you have already created Lambda functions by using the AWS Management Console, then you can invoke them from the Toolkit. Additionally, you can open your Lambda functions into VS Code from the AWS Lambda console, for additional information, see the [AWS Lambda console to IDE](lambda-console-ide.md) topic in this user guide. To create a new Lambda function in VS Code, follow the steps outlined in the [Creating a new serverless application (local)](https://docs.aws.amazon.com//toolkit-for-vscode/latest/userguide/sam-get-started.html#serverless-apps-create) topic in this user guide.
+If you have already created Lambda functions by using the AWS Management Console, then you can invoke them from the Toolkit. Additionally, you can open your Lambda functions into VS Code from the AWS Lambda console, for additional information, see the [AWS Lambda console to IDE](lambda-console-ide.md) topic in this user guide. To create a new Lambda function in VS Code, follow the steps outlined in the [Creating a new serverless application (local)](https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/sam-get-started.html#serverless-apps-create) topic in this user guide.
 
 ## Prerequisites
 <a name="remote-lambda-prereq"></a>
@@ -170,7 +170,7 @@ To change the handler attached to your Lambda function, use the AWS Lambda conso
 To convert your Lambda function into an AWS SAM stack, complete the following steps.
 
 **Warning**
-Currently, only a subset of resources are supported when converting a Lambda function to an AWS SAM project. To locate any missing resources after a conversion, check the Lambda console and add them manually to your AWS SAM template. For additional details about supported and unsupported resources, see the [Resource type support](https://docs.aws.amazon.com//AWSCloudFormation/latest/UserGuide/resource-import-supported-resources.html) topic in the *AWS CloudFormation Developer Guide*.
+Currently, only a subset of resources are supported when converting a Lambda function to an AWS SAM project. To locate any missing resources after a conversion, check the Lambda console and add them manually to your AWS SAM template. For additional details about supported and unsupported resources, see the [Resource type support](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/resource-import-supported-resources.html) topic in the *AWS CloudFormation Developer Guide*.
 
 1. From the AWS Toolkit, expand the AWS explorer.
 

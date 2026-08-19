@@ -21,7 +21,7 @@ Required: No
 Type: Array of strings
 Array Members: Minimum number of 1 item. Maximum number of 5000 items.
 Length Constraints: Minimum length of 6. Maximum length of 68.
-Pattern: `^(ou-[a-z0-9]{4,32}-[a-z0-9]{8,32})|(\d{12})$`
+Pattern: `^((ou-[a-z0-9]{4,32}-[a-z0-9]{8,32})|(\d{12}))$`
 Required: No
 
  ** ExecutionRoleName **   <a name="systemsmanager-Type-TargetLocation-ExecutionRoleName"></a>

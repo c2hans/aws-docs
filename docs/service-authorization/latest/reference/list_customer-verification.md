@@ -29,8 +29,6 @@ AWS Customer Verification Service has no API operations that can be used in the 
 
 The following actions are defined by AWS Customer Verification Service but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 | Actions | Description | Resource types (\*required) | Condition keys | Access level |
 | --- | --- | --- | --- | --- |
 |   [CreateCustomerVerificationDetails](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html#user-permissions)  | Grants permission to create customer verification data |  |   | Write |

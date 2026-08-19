@@ -23,7 +23,6 @@ When using HTTP connections in IoT applications, we recommend that you use a sec
 
 This library can be freely used and is distributed under the [MIT open source license](https://freertos.org/a00114.html).
 
-****
 <a name="coreHTTP-memory-estimate"></a>
 <table>
 <thead>

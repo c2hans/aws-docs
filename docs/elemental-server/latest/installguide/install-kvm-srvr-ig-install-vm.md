@@ -16,15 +16,12 @@ Perform these steps from your workstation.
 1. In the **New VM** dialog, choose **Import existing disk image** and select **Forward**.
 
 1. Complete the fields as described in the following table and then select **Forward**.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-server/latest/installguide/install-kvm-srvr-ig-install-vm.html)
 
 1. Complete the memory and CPU fields as described in the following table and then select **Forward**.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-server/latest/installguide/install-kvm-srvr-ig-install-vm.html)
 
 1. Complete the installation fields as described in the following table and choose **Finish**.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-server/latest/installguide/install-kvm-srvr-ig-install-vm.html)
 
    The OVA is installed and the VM is created.

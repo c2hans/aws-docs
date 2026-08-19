@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-cre
 
 Configuration stores supported by AWS AppConfig have the following quotas and limitations.
 
-****
-
 |  | AWS AppConfig hosted configuration store | Amazon S3 | Systems Manager Parameter Store | AWS Secrets Manager | Systems Manager Document store | AWS CodePipeline |
 | --- | --- | --- | --- | --- | --- | --- |
 | **Configuration size limit** | 2 MB default, 4 MB maximum | 2 MB<br />Enforced by AWS AppConfig, not S3 | 4 KB (free tier) / 8 KB (advanced parameters) | 64 KB | 64 KB | 2 MB<br />Enforced by AWS AppConfig, not CodePipeline |

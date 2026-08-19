@@ -16,8 +16,6 @@ Before working with snapshots, understand these important considerations. Creati
 
 To work with snapshots, configure the following permissions in your data access policy. For more information about data access policies, see [Data access policies versus IAM policies](serverless-data-access.md#serverless-data-access-vs-iam).
 
-****
-
 | Data Access Policy | APIs |
 | --- | --- |
 | aoss:DescribeSnapshot | GET /\_cat/snapshots/aoss-automated<br />GET \_snapshot/aoss-automated/{{snapshot\_id}}/ |

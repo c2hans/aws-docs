@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-fleet-config
 
 When planning your EC2 Fleet or Spot Fleet, we recommend that you consider the following options when deciding how to configure your fleet.
 
-****
-
 | Configuration option | Question | Documentation |
 | --- | --- | --- |
 | Fleet request type | Do you want a fleet that submits a one-time request for the desired target capacity, or a fleet that maintains target capacity over time? | [EC2 Fleet and Spot Fleet request types](ec2-fleet-request-type.md) |

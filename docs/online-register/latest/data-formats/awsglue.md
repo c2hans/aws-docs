@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsg
 
 AWS Glue provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="glue-AccessDataQualityRuntimeConfiguration"></a>[AccessDataQualityRuntimeConfiguration](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-data-quality-api.html) | Retrieve runtime configuration for Data Quality features | Read |

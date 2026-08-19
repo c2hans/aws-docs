@@ -10,8 +10,6 @@ You can add or remove nodes from a cluster using the AWS Management Console, the
 ## Using the AWS Management Console
 <a name="clusters.deletenodeclusters.viewdetails"></a>
 
-****
-
 1. Sign in to the AWS Management Console and open the MemoryDB console at [https://console.aws.amazon.com/memorydb/](https://console.aws.amazon.com/memorydb/).
 
 1. From the list of clusters, choose the cluster name from which you want to add or remove a node.

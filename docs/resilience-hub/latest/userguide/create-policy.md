@@ -47,7 +47,7 @@ You can create resiliency policies in Applications, and also in Resiliency polic
 
    Turn-on **Region**. For both Region **RTO** and **RPO** targets, under **Customer Application RTO and RPO**, enter a numeric value in the box, and then choose the unit of time that the value represents.
 
-1. (Optional) If you want to add tags, you can do that later as you continue creating your policy. For more information about tags, see [Tagging resources](https://docs.aws.amazon.com//general/latest/gr/aws_tagging.html) in the *AWS General Reference*.
+1. (Optional) If you want to add tags, you can do that later as you continue creating your policy. For more information about tags, see [Tagging resources](https://docs.aws.amazon.com/general/latest/gr/aws_tagging.html) in the *AWS General Reference*.
 
 1. To create the policy, choose **Create**.
 
@@ -78,7 +78,7 @@ You can create resiliency policies in Applications, and also in Resiliency polic
 
    Turn-on **Region**. For both **RTO** and **RPO** targets, under **Customer Application RTO and RPO**, enter a numeric value in the box and then choose the unit of time that the value represents.
 
-1. (Optional) If you want to add tags, you can do that later as you continue creating your policy. For more information about tags, see [Tagging resources](https://docs.aws.amazon.com//general/latest/gr/aws_tagging.html) in the *AWS General Reference*.
+1. (Optional) If you want to add tags, you can do that later as you continue creating your policy. For more information about tags, see [Tagging resources](https://docs.aws.amazon.com/general/latest/gr/aws_tagging.html) in the *AWS General Reference*.
 
 1. To create the policy, choose **Create**.
 

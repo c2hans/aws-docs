@@ -13,8 +13,6 @@ The successful execution of an RFC results in execution output. For provisioning
 
 Let's examine a CT schema. This is the schema for CodeDeploy Application Create, a fairly small schema. Some schemas have very large `Parameter` areas.
 
-****
-
 - **
 
 ```

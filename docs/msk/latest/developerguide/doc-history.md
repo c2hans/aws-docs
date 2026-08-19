@@ -9,8 +9,6 @@ The following table describes the important changes to the Amazon MSK Developer 
 
 **Latest documentation update:** June 25, 2024
 
-****
-
 | Change | Description | Date |
 | --- | --- | --- |
 | Service-linked role policy update for IPv6 connectivity | Amazon MSK updated the KafkaServiceRolePolicy to add IPv6 connectivity support. The policy now includes ec2:AssignIpv6Addresses, ec2:UnassignIpv6Addresses, and ec2:ModifyNetworkInterfaceAttribute permissions to enable IPv6 connectivity for MSK clusters. For more information, see [KafkaServiceRolePolicy](https://docs.aws.amazon.com/msk/latest/developerguide/security-iam-awsmanpol.html#security-iam-awsmanpol-KafkaServiceRolePolicy). | 2025-11-17 |
@@ -46,7 +44,7 @@ The following table describes the important changes to the Amazon MSK Developer 
 | New service execution role policy to support Amazon MSK Replicator. | Amazon MSK added new `AWSMSKReplicatorExecutionRole` policy to support Amazon MSK Replicator. For more information, see [AWS managed policy: `AWSMSKReplicatorExecutionRole`](https://docs.aws.amazon.com/msk/latest/developerguide/security-iam-awsmanpol.html#security-iam-awsmanpol-AWSMSKReplicatorExecutionRole). | 2023-12-06 |
 | M7g Graviton support | Amazon MSK now supports M7g brokers using AWS Graviton processors (custom Arm-based processors built by Amazon Web Services). | 2023-11-27 |
 | Amazon MSK Replicator | Amazon MSK Replicator is a new feature that you can use to replicate data between Amazon MSK clusters. Amazon MSK Replicator includes an update to the AmazonMSKFullAccess policy. For more information, see [AWS managed policy: `AmazonMSKFullAccess`](https://docs.aws.amazon.com/msk/latest/developerguide/security-iam-awsmanpol.html#security-iam-awsmanpol-AmazonMSKFullAccess). | 2023-09-28 |
-| Updated for IAM best practices. | Updated guide to align with the IAM best practices. For more information, see [Security best practices in IAM](https://docs.aws.amazon.com//IAM/latest/UserGuide/best-practices.html). | 2023-03-08 |
+| Updated for IAM best practices. | Updated guide to align with the IAM best practices. For more information, see [Security best practices in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html). | 2023-03-08 |
 | Service-linked role updates to support multi-VPC private connectivity | Amazon MSK now includes AWSServiceRoleForKafka service-linked role updates to manage network interfaces and VPC endpoints in your account that make cluster brokers accessible to clients in your VPC. Amazon MSK uses permissions to `DescribeVpcEndpoints`, `ModifyVpcEndpoint` and `DeleteVpcEndpoints`. For more information, see [Service-linked roles for Amazon MSK](using-service-linked-roles.md).  | 2023-03-08 |
 | Support for Apache Kafka 2.7.2 | Amazon MSK now supports Apache Kafka version 2.7.2. For more information, see [Supported Apache Kafka versions](supported-kafka-versions.md).  | 2021-12-21 |
 | Support for Apache Kafka 2.6.3 | Amazon MSK now supports Apache Kafka version 2.6.3. For more information, see [Supported Apache Kafka versions](supported-kafka-versions.md).  | 2021-12-21 |

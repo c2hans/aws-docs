@@ -73,8 +73,6 @@ Amazon Managed Service for Apache Flink backports fixes from the Flink community
 ## Components
 <a name="flink-1-19-1-components"></a>
 
-****
-
 | Component | Version |
 | --- | --- |
 | Java  | 11 (recommended) |

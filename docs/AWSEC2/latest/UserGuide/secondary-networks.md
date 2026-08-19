@@ -50,7 +50,7 @@ EC2 instances that support Secondary Networks are multi-homed, meaning they can 
 ## Additional considerations
 <a name="secondary-networks-considerations"></a>
 + Secondary interfaces are managed through RunInstances and they cannot be independently created or deleted.
-+ Secondary interfaces cannot be attached/detached once the instance is launched.
++ Secondary interfaces cannot be attached/detached after the instance is launched.
 + Secondary interfaces IP addresses cannot be changed once launched.
 + VPC features such as Security Groups, NACLs, Flow Logs are not supported in Secondary Networks.
 
@@ -60,7 +60,7 @@ EC2 instances that support Secondary Networks are multi-homed, meaning they can 
 ### Prerequisites
 <a name="secondary-networks-prerequisites"></a>
 
-Before launching instances with Secondary Networks, ensure you have also configured your VPC in the targeted region and a Subnet in the targeted availability zone of your EC2 capacity.
+Before launching instances with Secondary Networks, ensure you have also configured your VPC in the targeted Region and a Subnet in the targeted Availability Zone of your EC2 capacity.
 
 ### Step 1: Create a Secondary Network
 <a name="secondary-networks-create-network"></a>
@@ -85,7 +85,7 @@ aws ec2 create-secondary-network \
 ### Step 2: Create a Secondary Subnet
 <a name="secondary-networks-create-subnet"></a>
 
-Create a Secondary Subnet in the same availability zone as your VPC subnet. This is an AZ-specific resource.
+Create a Secondary Subnet in the same Availability Zone as your VPC subnet. This is an AZ-specific resource.
 
 ```
 aws ec2 create-secondary-subnet \
@@ -207,7 +207,7 @@ Amazon reserves 5 IP addresses per subnet.
 
 **Segregate by Secondary Network**: Create separate Secondary Networks for different projects, teams, or security boundaries. Secondary Networks provide logical isolation between instances. Instances cannot communicate across different Secondary Networks.
 
-**Use Multiple Subnets**: Within a Secondary Network, use multiple Secondary Subnets to segment traffic by GPU index, availability zone, or workload type. As an example, a common architecture pattern is to deploy a single secondary network with 4 or 8 secondary subnets, where each secondary subnet is aligned to a group of GPUs of common indices.
+**Use Multiple Subnets**: Within a Secondary Network, use multiple Secondary Subnets to segment traffic by GPU index, Availability Zone, or workload type. As an example, a common architecture pattern is to deploy a single secondary network with 4 or 8 secondary subnets, where each secondary subnet is aligned to a group of GPUs of common indices.
 
 ## Troubleshooting
 <a name="secondary-networks-troubleshooting"></a>
@@ -221,7 +221,7 @@ Amazon reserves 5 IP addresses per subnet.
 + Verify that your AMI includes proper driver support
 + Ensure your Secondary Subnet has sufficient available IP addresses
 + Confirm that your capacity reservation is in "active" state
-+ Check that your Secondary Subnet is in the same availability zone as your VPC subnet
++ Check that your Secondary Subnet is in the same Availability Zone as your VPC subnet
 
 ### Connectivity issues
 <a name="secondary-networks-connectivity-issues"></a>
@@ -232,7 +232,7 @@ Amazon reserves 5 IP addresses per subnet.
 + Verify that all instances are in the same Secondary Network and Secondary Subnet
 + Check that secondary interface drivers are properly loaded on the instance
 + Ensure that your application is binding to the correct network interfaces
-+ Instances within the same secondary subnet are reachable via direct routes. Cross subnet communication is available via a static route vended via DHCP.
++ Instances within the same secondary subnet are reachable through direct routes. Cross subnet communication is available via a static route vended via DHCP.
 
 ### API errors
 <a name="secondary-networks-api-errors"></a>
@@ -240,9 +240,9 @@ Amazon reserves 5 IP addresses per subnet.
 **Problem**: API calls for Secondary Network and Secondary Subnet operations fail.
 
 **Solutions**:
-+ Verify IAM permissions for ec2:CreateSecondaryNetwork, ec2:CreateSecondarySubnet, etc.
++ Verify IAM permissions for ec2:CreateSecondaryNetwork, ec2:CreateSecondarySubnet.
 + Check that CIDR blocks are within the supported range (/28 to /12)
-+ Verify that you're using the correct region and availability zone
++ Verify that you're using the correct Region and Availability Zone
 
 ## Quotas and limits
 <a name="secondary-networks-quotas-limits"></a>

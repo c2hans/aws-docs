@@ -18,7 +18,7 @@ This procedure creates a simple job document to include in an AWS IoT job resour
 
 **To create and store a job document:**
 
-1. Select the Amazon S3 bucket into which you'll save your job document. If you don't have an existing Amazon S3 bucket to use for this, you'll need to create one. For information about how to create Amazon S3 buckets, see the topics in [Getting started with Amazon S3](https://docs.aws.amazon.com//AmazonS3/latest/userguide/GetStartedWithS3.html).
+1. Select the Amazon S3 bucket into which you'll save your job document. If you don't have an existing Amazon S3 bucket to use for this, you'll need to create one. For information about how to create Amazon S3 buckets, see the topics in [Getting started with Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/GetStartedWithS3.html).
 
 1. Create and save the job document for this job
 

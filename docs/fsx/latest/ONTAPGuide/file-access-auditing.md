@@ -25,8 +25,6 @@ By default, audit event logs are stored in the `EVTX` file format, which allows 
 
 The following table lists the SMB file and folder access events can be audited.
 
-****
-
 | Event ID (EVT/EVTX) | Event | Description | Category |
 | --- | --- | --- | --- |
 | 560/4656 | Open Object/Create Object | OBJECT ACCESS: Object (file or directory) open | File Access |

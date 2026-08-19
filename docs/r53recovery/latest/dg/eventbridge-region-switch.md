@@ -15,7 +15,7 @@ To capture specific ARC events that you're interested in, define event-specific 
 
 Events are emitted on a best effort basis. They're delivered from ARC to EventBridge in near real-time under normal operational circumstances. However, situations can arise that might delay or prevent delivery of an event.
 
-For information about how EventBridge rules work with event patterns, see [Events and Event Patterns in EventBridge](https://docs.aws.amazon.com//eventbridge/latest/userguide/eventbridge-and-event-patterns.html).
+For information about how EventBridge rules work with event patterns, see [Events and Event Patterns in EventBridge](https://docs.aws.amazon.com/eventbridge/latest/userguide/eventbridge-and-event-patterns.html).
 
 ## Monitor a Region switch resource with EventBridge
 <a name="arc-eventbridge-tasks-readiness"></a>

@@ -17,7 +17,7 @@ All Dev Environments are created as part of a project within a space. Space memb
 **Important**
 Dev Environments aren't available for users in spaces where Active Directory is used as the identity provider. For more information, see [I can't create a Dev Environment when I'm signed into CodeCatalyst using a single sign-on account](devenvironments-troubleshooting.md#troubleshoot-create-dev-env-idprovider).
 
-For other considerations about Dev Environments, including stopping running instances, default compute configuration, upgrading your compute, incurring costs, and configuring timeouts, see [Write and modify code with Dev Environments in CodeCatalystWrite and modify code with Dev Environments](devenvironment.md).
+For other considerations about Dev Environments, including stopping running instances, default compute configuration, upgrading your compute, incurring costs, and configuring timeouts, see [Write and modify code with Dev Environments in CodeCatalyst](devenvironment.md).
 
 **Topics**
 + [Viewing Dev Environments for your space](spaces-devenv-view.md)

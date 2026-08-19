@@ -9,8 +9,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/mi
 
 The following table includes links to supplemental documentation that will help you use and understand the AWS SDK for JavaScript (v3).
 
-****
-
 | Name | Notes |
 | --- | --- |
 | [SDK Clients](https://github.com/aws/aws-sdk-js-v3/blob/main/supplemental-docs/CLIENTS.md) | Information about initializing an SDK client and common configurable constructor parameters. |

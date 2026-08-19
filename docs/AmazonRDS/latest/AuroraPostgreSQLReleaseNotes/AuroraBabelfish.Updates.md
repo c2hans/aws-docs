@@ -1959,8 +1959,8 @@ This release of Aurora Babelfish is provided with Aurora PostgreSQL 15.3. For mo
 + Supports TIMEFROMPARTS(), DATETIME2FROMPARTS(), ROWCOUNT\_BIG(), DATABASE\_PRINCIPAL\_ID() and CONTEXT\_INFO() T-SQL functions.
 + Supports STDEV(), STDEVP(), VAR(), VARP() statistical T-SQL aggregates.
 + Supports sp\_rename for COLUMN , TRIGGER, TABLE TYPE and USER DEFINED DATATYPE objects.
-+ Supports Babelfish instance as a linked server from SQL server instance. For more information, see [Babelfish supports linked servers](https://docs.aws.amazon.com//AmazonRDS/latest/AuroraUserGuide/babelfish-postgres-linkedservers.html).
-+ Supports 4 parts object name references for remote objects for select queries. For more information, see [Babelfish supports linked servers](https://docs.aws.amazon.com//AmazonRDS/latest/AuroraUserGuide/babelfish-postgres-linkedservers.html).
++ Supports Babelfish instance as a linked server from SQL server instance. For more information, see [Babelfish supports linked servers](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/babelfish-postgres-linkedservers.html).
++ Supports 4 parts object name references for remote objects for select queries. For more information, see [Babelfish supports linked servers](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/babelfish-postgres-linkedservers.html).
 + Supports TOP clause for INSERT SELECT statement.
 + Supports SET rowcount and SET CONTEXT\_INFO T-SQL syntax.
 
@@ -1989,7 +1989,7 @@ This release of Aurora Babelfish is provided with Aurora PostgreSQL 15.3. For mo
 + Fixed an issue in @@NEXTLEVEL which returned 1 unit larger than expected.
 + Fixed an issue in sp\_helpdb where input parameter’s case sensitivity is not handled properly.
 + Fixed an issue that COMMIT, ROLLBACK,EXECUTE, PRINT, SAVE and RAISERROR could be used in CREATE FUNCTION statement.
-+ Supports query timeout in sp\_serveroption for OPENQUERY. For more information, see [Babelfish supports linked servers](https://docs.aws.amazon.com//AmazonRDS/latest/AuroraUserGuide/babelfish-postgres-linkedservers.html).
++ Supports query timeout in sp\_serveroption for OPENQUERY. For more information, see [Babelfish supports linked servers](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/babelfish-postgres-linkedservers.html).
 + Fixed the case sensitivity issue in the CREATE USER for windows login.
 + Fixed an issue with detecting invalid login name in CREATE LOGIN WITH WINDOWS statement.
 + Fixed an issue to support INT values in JSON\_MODIFY() function.
@@ -2055,10 +2055,10 @@ This release of Aurora Babelfish is provided with Aurora PostgreSQL 15.2. For mo
 + Support for the following INFORMATION\_SCHEMA views: sequences, routines and schemata.
 + Support sp\_rename for TABLE, VIEW, PROCEDURE, FUNCTION, SEQUENCE.
 + Support sys.systypes system compatibility view.
-+ Support for a new GUC parameter called babelfishpg\_tds.product\_version that allows you to set SQL Server product version number that is returned as an output by Babelfish. For more information, see [Using Babelfish product version GUC](https://docs.aws.amazon.com//AmazonRDS/latest/AuroraUserGuide/babelfish-guc-version).
-+ Added support to generate data definition scripts for various objects present in a Babelfish for Aurora PostgreSQL database. For more information, see [DDL exports supported by Babelfish](https://docs.aws.amazon.com//AmazonRDS/latest/AuroraUserGuide/babelfish-query-database.html#babelfish-ddl-exports).
-+ Babelfish now supports Aurora PostgreSQL database authentication with Kerberos using AWS Directory Service for Microsoft Managed Active Directory. With this feature, for authentication you can use Microsoft Windows Authentication when you connect to your Babelfish database. For more information, see [Database authentication with Babelfish for Aurora PostgreSQL](https://docs.aws.amazon.com//AmazonRDS/latest/AuroraUserGuide/babelfish-db-authentication.html).
-+ Babelfish now supports linked servers from your Aurora PostgreSQL database by using the tds\_fdw (TDS Foreign Data Wrapper) APG extension. Only the OPENQUERY function that executes the specified pass-through query on the specified linked server is currently supported. For more information, see [Babelfish supports linked servers](https://docs.aws.amazon.com//AmazonRDS/latest/AuroraUserGuide/babelfish-postgres-linkedservers.html).
++ Support for a new GUC parameter called babelfishpg\_tds.product\_version that allows you to set SQL Server product version number that is returned as an output by Babelfish. For more information, see [Using Babelfish product version GUC](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/babelfish-guc-version).
++ Added support to generate data definition scripts for various objects present in a Babelfish for Aurora PostgreSQL database. For more information, see [DDL exports supported by Babelfish](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/babelfish-query-database.html#babelfish-ddl-exports).
++ Babelfish now supports Aurora PostgreSQL database authentication with Kerberos using AWS Directory Service for Microsoft Managed Active Directory. With this feature, for authentication you can use Microsoft Windows Authentication when you connect to your Babelfish database. For more information, see [Database authentication with Babelfish for Aurora PostgreSQL](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/babelfish-db-authentication.html).
++ Babelfish now supports linked servers from your Aurora PostgreSQL database by using the tds\_fdw (TDS Foreign Data Wrapper) APG extension. Only the OPENQUERY function that executes the specified pass-through query on the specified linked server is currently supported. For more information, see [Babelfish supports linked servers](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/babelfish-postgres-linkedservers.html).
 
 **Security enhancements**
 + Fixed buffer overflow due to out of bound array access.
@@ -2557,8 +2557,6 @@ This release of Aurora Babelfish is provided with Aurora PostgreSQL 14.7. For mo
 
 #### Aurora Babelfish release 2.4.3, October 4, 2023
 <a name="AuroraBabelfish.Updates.243"></a>
-
-****
 + Fixed a memory management issue with `update_DropRoleStmt`.
 + Fixed a crash in `SqlBulkCopy` with heap\_compute\_data\_size function in stacktrace when the order of columns is different compared to table defining.
 + Fixed an issue that `bcp in` results in server crash when the table has large number of columns.
@@ -2587,8 +2585,8 @@ This release of Aurora Babelfish is provided with Aurora PostgreSQL 14.7. For mo
 + Support for the following INFORMATION\_SCHEMA views: sequences, routines and schemata.
 +  Support sp\_rename for TABLE, VIEW, PROCEDURE, FUNCTION, SEQUENCE.
 + Support sys.systypes system compatibility view.
-+ Support for a new GUC parameter called babelfishpg\_tds.product\_version that allows you to set SQL Server product version number that is returned as an output by Babelfish. For more information, see [Using Babelfish product version GUC](https://docs.aws.amazon.com//AmazonRDS/latest/AuroraUserGuide/babelfish-guc-version).
-+ Added support to generate data definition scripts for various objects present in a Babelfish for Aurora PostgreSQL database. For more information, see [DDL exports supported by Babelfish](https://docs.aws.amazon.com//AmazonRDS/latest/AuroraUserGuide/babelfish-query-database.html#babelfish-ddl-exports).
++ Support for a new GUC parameter called babelfishpg\_tds.product\_version that allows you to set SQL Server product version number that is returned as an output by Babelfish. For more information, see [Using Babelfish product version GUC](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/babelfish-guc-version).
++ Added support to generate data definition scripts for various objects present in a Babelfish for Aurora PostgreSQL database. For more information, see [DDL exports supported by Babelfish](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/babelfish-query-database.html#babelfish-ddl-exports).
 
 **Security enhancements**
 + Fixed buffer overflow due to out of bound array access.

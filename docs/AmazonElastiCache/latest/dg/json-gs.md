@@ -9,7 +9,7 @@ ElastiCache supports the native JavaScript Object Notation (JSON) format, which 
 
 In addition to using Valkey and Redis OSS API operations for applications that operate over JSON, you can now efficiently retrieve and update specific portions of a JSON document without needing to manipulate the entire object. This can improve performance and reduce cost. You can also search your JSON document contents using the [Goessner-style](https://goessner.net/articles/JsonPath/) `JSONPath` query.
 
-After you create a cluster with a supported engine version, the JSON data type and associated commands are automatically available. API compatible and RDB compatible with version 2 of the JSON module, so you can easily migrate existing JSON-based Valkey and Redis OSS applications into ElastiCache. For more information on the supported commands, see [Supported Valkey and Redis OSS commandsJSON commands](json-list-commands.md).
+After you create a cluster with a supported engine version, the JSON data type and associated commands are automatically available. API compatible and RDB compatible with version 2 of the JSON module, so you can easily migrate existing JSON-based Valkey and Redis OSS applications into ElastiCache. For more information on the supported commands, see [Supported Valkey and Redis OSS commands](json-list-commands.md).
 
 The JSON-related metrics `JsonBasedCmds` and `JsonBasedCmdsLatency` are incorporated into CloudWatch to monitor the usage of this data type. For more information, see [Metrics for Valkey and Redis OSS](CacheMetrics.Redis.md).
 

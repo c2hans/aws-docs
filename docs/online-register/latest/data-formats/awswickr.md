@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsw
 
 AWS Wickr provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="wickr-BatchLookupUserUname"></a>[BatchLookupUserUname](https://docs.aws.amazon.com/wickr/latest/adminguide/security-iam.html) | Batch lookup user unames in a Wickr network | Read |

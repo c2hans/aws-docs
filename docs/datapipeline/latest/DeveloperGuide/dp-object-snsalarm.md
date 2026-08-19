@@ -28,8 +28,6 @@ The following is an example of this object type. The values for `node.input` and
 ## Syntax
 <a name="snsalarm-syntax"></a>
 
-****
-
 | Required Fields | Description | Slot Type |
 | --- | --- | --- |
 | message | The body text of the Amazon SNS notification. | String |
@@ -37,20 +35,14 @@ The following is an example of this object type. The values for `node.input` and
 | subject | The subject line of the Amazon SNS notification message. | String |
 | topicArn | The destination Amazon SNS topic ARN for the message. | String |
 
-****
-
 | Optional Fields | Description | Slot Type |
 | --- | --- | --- |
 | parent | Parent of the current object from which slots will be inherited. | Reference Object, e.g. "parent":{"ref":"myBaseObjectId"} |
-
-****
 
 | Runtime Fields | Description | Slot Type |
 | --- | --- | --- |
 | node | The node for which this action is being performed. | Reference Object, e.g. "node":{"ref":"myRunnableObjectId"} |
 | @version | Pipeline version the object was created with. | String |
-
-****
 
 | System Fields | Description | Slot Type |
 | --- | --- | --- |

@@ -14,8 +14,6 @@ Modify the properties of an existing Amazon ELB Classic Load Balancer created us
 ## Change Type Details
 <a name="ct-0ltm873rsebx9-MALu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-0ltm873rsebx9 |

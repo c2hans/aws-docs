@@ -20,8 +20,6 @@ You can configure Amazon CloudWatch alarms to create OpsItems programmatically b
 
 If you edit an existing alarm programmatically or create an alarm that creates OpsItems, you must specify an Amazon Resource Name (ARN). This ARN identifies Systems Manager OpsCenter as the target for OpsItems created from the alarm. You can customize the ARN so that OpsItems created from the alarm include specific information such as severity or category. Each ARN includes the information described in the following table.
 
-****
-
 | Parameter | Details |
 | --- | --- |
 | `Region` (required) | The AWS Region where the alarm exists. For example: `us-west-2`. For information about AWS Regions where you can use OpsCenter, see [AWS Systems Manager endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/ssm.html). |

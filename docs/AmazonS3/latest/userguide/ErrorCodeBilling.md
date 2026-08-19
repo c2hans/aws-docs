@@ -12,8 +12,6 @@ The following table lists specific error codes under HTTP `3XX` and `4XX` status
 **Note**
 For `AccessDenied` (HTTP `403 Forbidden`), S3 doesn't charge the bucket owner when the request is initiated outside of the bucket owner's individual AWS account or the bucket owner's AWS organization.
 
-****
-
 - **301 Moved Permanently**
   - **Error code:** PermanentRedirect / **Description of error code:** The bucket that you are attempting to access must be addressed using the specified endpoint. Send all future requests to this endpoint.
   - **Error code:** PermanentRedirectControlError / **Description of error code:** The API operation you are attempting to access must be addressed using the specified endpoint. Send all future requests to this endpoint.

@@ -14,13 +14,13 @@ To grant access to use a view, you can use assign permissions using one of the f
 To provide access, add permissions to your users, groups, or roles:
 + Users and groups in AWS IAM Identity Center:
 
-  Create a permission set. Follow the instructions in [Create a permission set](https://docs.aws.amazon.com//singlesignon/latest/userguide/howtocreatepermissionset.html) in the *AWS IAM Identity Center User Guide*.
+  Create a permission set. Follow the instructions in [Create a permission set](https://docs.aws.amazon.com/singlesignon/latest/userguide/howtocreatepermissionset.html) in the *AWS IAM Identity Center User Guide*.
 + Users managed in IAM through an identity provider:
 
-  Create a role for identity federation. Follow the instructions in [Create a role for a third-party identity provider (federation)](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_roles_create_for-idp.html) in the *IAM User Guide*.
+  Create a role for identity federation. Follow the instructions in [Create a role for a third-party identity provider (federation)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-idp.html) in the *IAM User Guide*.
 + IAM users:
-  + Create a role that your user can assume. Follow the instructions in [Create a role for an IAM user](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_roles_create_for-user.html) in the *IAM User Guide*.
-  + (Not recommended) Attach a policy directly to a user or add a user to a user group. Follow the instructions in [Adding permissions to a user (console)](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_users_change-permissions.html#users_change_permissions-add-console) in the *IAM User Guide*.
+  + Create a role that your user can assume. Follow the instructions in [Create a role for an IAM user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-user.html) in the *IAM User Guide*.
+  + (Not recommended) Attach a policy directly to a user or add a user to a user group. Follow the instructions in [Adding permissions to a user (console)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_change-permissions.html#users_change_permissions-add-console) in the *IAM User Guide*.
 
 Grant permission to allow your roles, groups, or users to invoke the `resource-explorer-2:GetView` and `resource-explorer-2:Search` operations on a view identified by its [Amazon resource name (ARN)](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html). Alternatively, you can use the [Resource Explorer read only AWS managed policy](security_iam_awsmanpol.md#security_iam_awsmanpol_AWSResourceExplorerReadOnlyAccess) for all principals who need to use the view to search. You can create multiple views that have different filters and scopes and thus return different subsets of your resource information. Then, you can grant permissions for each view to those users who need to see the information included by that view's results.
 
@@ -46,13 +46,13 @@ Alternatively, you can create your own permissions policy and grant the followin
 To provide access, add permissions to your users, groups, or roles:
 + Users and groups in AWS IAM Identity Center:
 
-  Create a permission set. Follow the instructions in [Create a permission set](https://docs.aws.amazon.com//singlesignon/latest/userguide/howtocreatepermissionset.html) in the *AWS IAM Identity Center User Guide*.
+  Create a permission set. Follow the instructions in [Create a permission set](https://docs.aws.amazon.com/singlesignon/latest/userguide/howtocreatepermissionset.html) in the *AWS IAM Identity Center User Guide*.
 + Users managed in IAM through an identity provider:
 
-  Create a role for identity federation. Follow the instructions in [Create a role for a third-party identity provider (federation)](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_roles_create_for-idp.html) in the *IAM User Guide*.
+  Create a role for identity federation. Follow the instructions in [Create a role for a third-party identity provider (federation)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-idp.html) in the *IAM User Guide*.
 + IAM users:
-  + Create a role that your user can assume. Follow the instructions in [Create a role for an IAM user](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_roles_create_for-user.html) in the *IAM User Guide*.
-  + (Not recommended) Attach a policy directly to a user or add a user to a user group. Follow the instructions in [Adding permissions to a user (console)](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_users_change-permissions.html#users_change_permissions-add-console) in the *IAM User Guide*.
+  + Create a role that your user can assume. Follow the instructions in [Create a role for an IAM user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-user.html) in the *IAM User Guide*.
+  + (Not recommended) Attach a policy directly to a user or add a user to a user group. Follow the instructions in [Adding permissions to a user (console)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_change-permissions.html#users_change_permissions-add-console) in the *IAM User Guide*.
 For more information about permissions related to views, see [Granting access to Resource Explorer views for search](configure-views-grant-access.md).
 
 **Filtering the search**

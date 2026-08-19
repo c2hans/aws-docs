@@ -657,6 +657,7 @@ aws glue put-asset-type \
 + `AccessDeniedException`
 + `InternalServiceException`
 + `InvalidInputException`
++ `EntityNotFoundException`
 + `ConcurrentModificationException`
 + `ThrottlingException`
 
@@ -1049,6 +1050,12 @@ aws glue delete-attachment \
 + `AssetIdentifier` – UTF-8 string, not less than 1 or more than 1087 bytes long, matching the [Custom string pattern #69](aws-glue-api-common.md#regex_69).
 
   The unique identifier of the asset.
++ `IterableFormName` – UTF-8 string, not less than 1 or more than 256 bytes long, matching the [Custom string pattern #73](aws-glue-api-common.md#regex_73).
+
+  The name of the iterable form, if the deletion targets an item.
++ `ItemIdentifier` – UTF-8 string, not less than 1 or more than 1087 bytes long.
+
+  The identifier of the item within the iterable form, if applicable.
 
 **Errors**
 + `AccessDeniedException`
@@ -1701,6 +1708,12 @@ aws glue associate-glossary-terms \
 + `AssetIdentifier` – *Required:* UTF-8 string, not less than 1 or more than 1087 bytes long, matching the [Custom string pattern #69](aws-glue-api-common.md#regex_69).
 
   The unique identifier of the asset to associate glossary terms with.
++ `IterableFormName` – UTF-8 string, not less than 1 or more than 256 bytes long, matching the [Custom string pattern #73](aws-glue-api-common.md#regex_73).
+
+  The name of the iterable form. When specified along with `itemIdentifier`, the glossary terms are associated with an item within the iterable form rather than the asset itself.
++ `ItemIdentifier` – UTF-8 string, not less than 1 or more than 1087 bytes long.
+
+  The identifier of the item within the iterable form. Required when `iterableFormName` is specified.
 + `GlossaryTermIdentifiers` – *Required:* An array of UTF-8 strings, not less than 1 or more than 10 strings.
 
   The list of glossary term identifiers to associate with the asset.
@@ -1712,6 +1725,12 @@ aws glue associate-glossary-terms \
 + `AssetIdentifier` – UTF-8 string, not less than 1 or more than 1087 bytes long, matching the [Custom string pattern #69](aws-glue-api-common.md#regex_69).
 
   The unique identifier of the asset.
++ `IterableFormName` – UTF-8 string, not less than 1 or more than 256 bytes long, matching the [Custom string pattern #73](aws-glue-api-common.md#regex_73).
+
+  The name of the iterable form, if the association targets an item.
++ `ItemIdentifier` – UTF-8 string, not less than 1 or more than 1087 bytes long.
+
+  The identifier of the item within the iterable form, if applicable.
 + `GlossaryTerms` – An array of UTF-8 strings, not less than 1 or more than 10 strings.
 
   The glossary terms now associated with the asset.
@@ -1747,6 +1766,12 @@ aws glue disassociate-glossary-terms \
 + `AssetIdentifier` – *Required:* UTF-8 string, not less than 1 or more than 1087 bytes long, matching the [Custom string pattern #69](aws-glue-api-common.md#regex_69).
 
   The unique identifier of the asset to disassociate glossary terms from.
++ `IterableFormName` – UTF-8 string, not less than 1 or more than 256 bytes long, matching the [Custom string pattern #73](aws-glue-api-common.md#regex_73).
+
+  The name of the iterable form. When specified along with `itemIdentifier`, the glossary terms are disassociated from an item within the iterable form rather than the asset itself.
++ `ItemIdentifier` – UTF-8 string, not less than 1 or more than 1087 bytes long.
+
+  The identifier of the item within the iterable form. Required when `iterableFormName` is specified.
 + `GlossaryTermIdentifiers` – *Required:* An array of UTF-8 strings, not less than 1 or more than 10 strings.
 
   The list of glossary term identifiers to disassociate from the asset.
@@ -1758,6 +1783,12 @@ aws glue disassociate-glossary-terms \
 + `AssetIdentifier` – UTF-8 string, not less than 1 or more than 1087 bytes long, matching the [Custom string pattern #69](aws-glue-api-common.md#regex_69).
 
   The unique identifier of the asset.
++ `IterableFormName` – UTF-8 string, not less than 1 or more than 256 bytes long, matching the [Custom string pattern #73](aws-glue-api-common.md#regex_73).
+
+  The name of the iterable form, if the disassociation targets an item.
++ `ItemIdentifier` – UTF-8 string, not less than 1 or more than 1087 bytes long.
+
+  The identifier of the item within the iterable form, if applicable.
 + `GlossaryTerms` – An array of UTF-8 strings, not less than 1 or more than 10 strings.
 
   The remaining glossary terms associated with the asset.

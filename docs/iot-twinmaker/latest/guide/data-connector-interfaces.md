@@ -45,7 +45,7 @@ You can use the schema initializer in the component type or entity lifecycle to 
 ```
 
 **Note**
-The map of properties in this request interface is a `PropertyRequest`. For more information, see [PropertyRequest](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_PropertyRequest.html).
+The map of properties in this request interface is a `PropertyRequest`. For more information, see [PropertyRequest](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_PropertyRequest.html).
 
 ### SchemaInitializer response interface
 <a name="SchemaInitializer-response-interface"></a>
@@ -61,7 +61,7 @@ The map of properties in this request interface is a `PropertyRequest`. For more
 ```
 
 **Note**
-The map of properties in this request interface is a `PropertyResponse`. For more information, see [PropertyResponse](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_PropertyResponse.html).
+The map of properties in this request interface is a `PropertyResponse`. For more information, see [PropertyResponse](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_PropertyResponse.html).
 
 ## DataReaderByEntity
 <a name="DataReaderByEntity-connector"></a>
@@ -82,7 +82,7 @@ For information about the property types, syntax, and format of this connector, 
   "properties": {
     // A map of properties as in the get-entity API response
     // property name as key,
-    // value is of type [PropertyResponse](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_PropertyResponse.html)
+    // value is of type [PropertyResponse](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_PropertyResponse.html)
     "string": "PropertyResponse"
    },
   "workspaceId": "string",
@@ -105,12 +105,12 @@ For information about the property types, syntax, and format of this connector, 
 {
   "propertyValues": [
     {
-      "entityPropertyReference": EntityPropertyReference, // The same as [EntityPropertyReference](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_EntityPropertyReference.html)
+      "entityPropertyReference": EntityPropertyReference, // The same as [EntityPropertyReference](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_EntityPropertyReference.html)
       "values": [
         {
         "timestamp": long, // Epoch sec, deprecated
         "time": "string", // ISO-8601 timestamp format
-        "value": DataValue // The same as [DataValue](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_DataValue.html)
+        "value": DataValue // The same as [DataValue](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_DataValue.html)
         }
       ]
     }
@@ -137,7 +137,7 @@ For information about the property types, syntax, and format of this connector, 
   "endTime": "string", // ISO-8601 timestamp format
   "properties": { // A map of properties as in the get-entity API response
     // property name as key,
-    // value is of type [PropertyResponse](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_PropertyResponse.html)
+    // value is of type [PropertyResponse](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_PropertyResponse.html)
     "string": "PropertyResponse"
    },
   "workspaceId": "string",
@@ -158,14 +158,14 @@ For information about the property types, syntax, and format of this connector, 
 {
   "propertyValues": [
     {
-      "entityPropertyReference": EntityPropertyReference, // The same as [EntityPropertyReference](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_EntityPropertyReference.html)
+      "entityPropertyReference": EntityPropertyReference, // The same as [EntityPropertyReference](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_EntityPropertyReference.html)
       "entityId": "string",
       "componentName": "string",
       "values": [
         {
         "timestamp": long, // Epoch sec, deprecated
         "time": "string", // ISO-8601 timestamp format
-        "value": DataValue // The same as [DataValue](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_DataValue.html)
+        "value": DataValue // The same as [DataValue](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_DataValue.html)
         }
       ]
     }
@@ -218,12 +218,12 @@ For information about the property types, syntax, and format of this connector, 
 {
   "propertyValues": [
     {
-      "entityPropertyReference": EntityPropertyReference, // The same as [EntityPropertyReference](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_EntityPropertyReference.html)
+      "entityPropertyReference": EntityPropertyReference, // The same as [EntityPropertyReference](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_EntityPropertyReference.html)
       "values": [
         {
         "timestamp": long, // Epoch sec, deprecated
         "time": "string", // ISO-8601 timestamp format
-        "value": DataValue // The same as [DataValue](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_DataValue.html)
+        "value": DataValue // The same as [DataValue](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_DataValue.html)
         }
       ]
     }
@@ -246,7 +246,7 @@ For information about the property types, syntax, and format of this connector, 
 {
   "properties": {
     // property name as key,
-    // value is of type [PropertyResponse](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_PropertyResponse.html)
+    // value is of type [PropertyResponse](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_PropertyResponse.html)
     "string": "PropertyResponse"
   }
 
@@ -264,8 +264,8 @@ For information about the property types, syntax, and format of this connector, 
 {
   "propertyValues": {
     "string": { // property name as key
-        "propertyReference": EntityPropertyReference, // The same as [EntityPropertyReference](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_EntityPropertyReference.html)
-        "propertyValue": DataValue // The same as [DataValue](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_DataValue.html)
+        "propertyReference": EntityPropertyReference, // The same as [EntityPropertyReference](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_EntityPropertyReference.html)
+        "propertyValue": DataValue // The same as [DataValue](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_DataValue.html)
     }
 }
 ```
@@ -287,19 +287,19 @@ For information about the property types, syntax, and format of this connector, 
     // entity id as key
     "String": {
       // property name as key,
-      // value is of type [PropertyResponse](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_PropertyResponse.html)
+      // value is of type [PropertyResponse](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_PropertyResponse.html)
       "string": PropertyResponse
     }
   },
   "entries": [
     {
       "entryId": "string",
-      "entityPropertyReference": EntityPropertyReference, // The same as [EntityPropertyReference](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_EntityPropertyReference.html)
+      "entityPropertyReference": EntityPropertyReference, // The same as [EntityPropertyReference](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_EntityPropertyReference.html)
       "propertyValues": [
         {
         "timestamp": long, // Epoch sec, deprecated
         "time": "string", // ISO-8601 timestamp format
-        "value": DataValue // The same as [DataValue](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_DataValue.html)
+        "value": DataValue // The same as [DataValue](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_DataValue.html)
         }
       ]
     }
@@ -314,7 +314,7 @@ For information about the property types, syntax, and format of this connector, 
 {
   "errorEntries": [
     {
-      "errors": List:BatchPutPropertyError // The value is a list of type [BatchPutPropertyError](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_BatchPutPropertyError.html)
+      "errors": List:BatchPutPropertyError // The value is a list of type [BatchPutPropertyError](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_BatchPutPropertyError.html)
     }
   ]
 }

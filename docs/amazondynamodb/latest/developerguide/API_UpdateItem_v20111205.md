@@ -61,8 +61,6 @@ content-type: application/x-amz-json-1.0
 }
 ```
 
-****
-
 |  Name  |  Description  |  Required |
 | --- | --- | --- |
 |  TableName  | The name of the table containing the item to update. <br />Type: String |  Yes  |
@@ -98,8 +96,6 @@ content-length: 140
 }
 ```
 
-****
-
 |  Name  |  Description  |
 | --- | --- |
 |  Attributes  | A map of attribute name-value pairs, but only if the `ReturnValues` parameter is specified as something other than `NONE` in the request.<br />Type: Map of attribute name-value pairs. |
@@ -107,8 +103,6 @@ content-length: 140
 
 ## Special errors
 <a name="API_UpdateItem_SpecialErrors"></a>
-
-****
 
 |  Error  |  Description  |
 | --- | --- |

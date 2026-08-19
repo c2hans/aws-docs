@@ -20,7 +20,7 @@ The following sections explain how you as an administrator can control access to
 ## Authentication
 <a name="authentication"></a>
 
-Learn how to access AWS using [IAM identities](https://docs.aws.amazon.com//IAM/latest/UserGuide/id.html).
+Learn how to access AWS using [IAM identities](https://docs.aws.amazon.com/IAM/latest/UserGuide/id.html).
 
 ## Access control
 <a name="accesscontrol"></a>

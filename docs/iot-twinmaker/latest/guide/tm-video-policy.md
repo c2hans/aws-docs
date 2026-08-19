@@ -86,7 +86,7 @@ The Video Player panel in Grafana directly calls Kinesis Video Streams and IoT S
 ## Scope down GET permissions
 <a name="scope-down-GET-permissions"></a>
 
-You can scope down the access of your Amazon Kinesis Video Streams and AWS IoT SiteWise assets by tagging resources. You might have already tagged your AWS IoT SiteWise camera asset based on the AWS IoT TwinMaker workspaceId to enable the video upload request feature, see the [Upload video from the edge](https://docs.aws.amazon.com//iot-twinmaker/latest/guide/dashboard-IAM-role.html#tagging-camera-assets) topic. You can use the same tag key-value pair to limit GET access to AWS IoT SiteWise assets, and also to tag your Kinesis Video Streams the same way.
+You can scope down the access of your Amazon Kinesis Video Streams and AWS IoT SiteWise assets by tagging resources. You might have already tagged your AWS IoT SiteWise camera asset based on the AWS IoT TwinMaker workspaceId to enable the video upload request feature, see the [Upload video from the edge](https://docs.aws.amazon.com/iot-twinmaker/latest/guide/dashboard-IAM-role.html#tagging-camera-assets) topic. You can use the same tag key-value pair to limit GET access to AWS IoT SiteWise assets, and also to tag your Kinesis Video Streams the same way.
 
 You can then add this condition to the kinesisvideo and iotsitewise statements in the `{{YourWorkspaceId}}DashboardPolicy`:
 
@@ -143,7 +143,7 @@ These statements restrict streaming video playback and AWS IoT SiteWise property
 ## Scope down AWS IoT SiteWise BatchPutAssetPropertyValue permission
 <a name="scope-down-BatchPutAssetPropertyValue"></a>
 
-Providing this permission turns on the [video upload request feature in the Video Player](https://docs.aws.amazon.com//iot-twinmaker/latest/guide/dashboard-IAM-role.html#tagging-camera-assets). When you upload video, you can specify a time range and submit the request from by choosing **Submit** on the panel on the Grafana dashboard.
+Providing this permission turns on the [video upload request feature in the Video Player](https://docs.aws.amazon.com/iot-twinmaker/latest/guide/dashboard-IAM-role.html#tagging-camera-assets). When you upload video, you can specify a time range and submit the request from by choosing **Submit** on the panel on the Grafana dashboard.
 
 To give iotsitewise:BatchPutAssetPropertyValue permissions, use the default policy:
 

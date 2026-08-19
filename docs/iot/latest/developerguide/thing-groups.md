@@ -34,7 +34,7 @@ Here are some limitations of static thing groups:
 + You can't change a group's parent later, so be sure to plan your group hierarchy and create a parent group before you create any child groups it contains.
 +
 
-  The number of groups to which a thing can belong is [limited](https://docs.aws.amazon.com//general/latest/gr/iot_device_management.html#thing-limits).
+  The number of groups to which a thing can belong is [limited](https://docs.aws.amazon.com/general/latest/gr/iot_device_management.html#thing-limits).
 + You can't add a thing to more than one group in the same hierarchy. (In other words, you can't add a thing to two groups that share a common parent.)
 + You can't rename a group.
 + Thing group names can't contain international characters, such as û, é and ñ.
@@ -83,9 +83,9 @@ As before, the **CreateThingGroup** command returns a response that contains the
 **Important**
 Keep in mind the following limits when creating thing group hierarchies:
 A thing group can have only one direct parent.
-The number of direct child groups a thing group can have is [limited](https://docs.aws.amazon.com//general/latest/gr/iot_device_management.html#thing-group-limits).
-The maximum depth of a group hierarchy is [limited](https://docs.aws.amazon.com//general/latest/gr/iot_device_management.html#thing-group-limits).
-The number of attributes a thing group can have is [limited](https://docs.aws.amazon.com//general/latest/gr/iot_device_management.html#thing-group-limits). (Attributes are name-value pairs you can use to store information about a group.) The lengths of each attribute name and each value are also [limited](https://docs.aws.amazon.com//general/latest/gr/iot_device_management.html#thing-group-limits).
+The number of direct child groups a thing group can have is [limited](https://docs.aws.amazon.com/general/latest/gr/iot_device_management.html#thing-group-limits).
+The maximum depth of a group hierarchy is [limited](https://docs.aws.amazon.com/general/latest/gr/iot_device_management.html#thing-group-limits).
+The number of attributes a thing group can have is [limited](https://docs.aws.amazon.com/general/latest/gr/iot_device_management.html#thing-group-limits). (Attributes are name-value pairs you can use to store information about a group.) The lengths of each attribute name and each value are also [limited](https://docs.aws.amazon.com/general/latest/gr/iot_device_management.html#thing-group-limits).
 
 ## Describe a thing group
 <a name="describe-thing-group"></a>
@@ -309,7 +309,7 @@ The **ListThingGroupsForThing** command returns a list of the direct thing group
 }
 ```
 
-You can also access this API within the rules engine using the inline function `get_registry_data()`. You can use this function to dynamically access and utilize thing registry information (including attributes, thing types, and group memberships) by calling `DescribeThing` and `ListThingGroupsForThing` APIs directly within AWS IoT rules, enabling real-time message processing and routing based on your device registry data. For more information, see [`get_registry_data`](https://docs.aws.amazon.com//iot/latest/developerguide/iot-sql-functions.html#iot-sql-function-get-registry_data).
+You can also access this API within the rules engine using the inline function `get_registry_data()`. You can use this function to dynamically access and utilize thing registry information (including attributes, thing types, and group memberships) by calling `DescribeThing` and `ListThingGroupsForThing` APIs directly within AWS IoT rules, enabling real-time message processing and routing based on your device registry data. For more information, see [`get_registry_data`](https://docs.aws.amazon.com/iot/latest/developerguide/iot-sql-functions.html#iot-sql-function-get-registry_data).
 
 ## Update a static thing group
 <a name="update-thing-group"></a>
@@ -329,7 +329,7 @@ The **UpdateThingGroup** command returns a response that contains the group's ve
 ```
 
 **Note**
-The number of attributes that a thing can have is [limited](https://docs.aws.amazon.com//general/latest/gr/iot_device_management.html#thing-limits).
+The number of attributes that a thing can have is [limited](https://docs.aws.amazon.com/general/latest/gr/iot_device_management.html#thing-limits).
 
 ## Delete a thing group
 <a name="delete-thing-group"></a>

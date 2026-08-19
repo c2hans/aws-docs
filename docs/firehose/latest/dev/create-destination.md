@@ -33,8 +33,6 @@ This section describes the settings that you must configure for your Firehose st
 <a name="create-destination-s3"></a>
 
 You must specify the following settings in order to use Amazon S3 as the destination for your Firehose stream.
-
-****
 + Enter values for the following fields.
  **S3 bucket**
 Choose an S3 bucket that you own where the streaming data should be delivered. You can create a new S3 bucket or choose an existing one.
@@ -91,8 +89,6 @@ Firehose can't write to Amazon Redshift clusters that use enhanced VPC routing.
 <a name="create-destination-redshift-provisioned"></a>
 
 This section describes settings for using Amazon Redshift provisioned cluster as your Firehose stream destination.
-
-****
 + Enter values for the following fields:
  **Cluster**
 The Amazon Redshift cluster to which S3 bucket data is copied. Configure the Amazon Redshift cluster to be publicly accessible and unblock Amazon Data Firehose IP addresses. For more information, see [Grant Firehose access to an Amazon Redshift destination](controlling-access.md#using-iam-rs).
@@ -137,8 +133,6 @@ Firehose supports Amazon S3 server-side encryption with AWS Key Management Servi
 <a name="create-destination-redshift-serverless"></a>
 
 This section describes settings for using Amazon Redshift Serverless workgroup as your Firehose stream destination.
-
-****
 + Enter values for the following fields:
  **Workgroup name**
 The Amazon Redshift Serverless workgroup to which S3 bucket data is copied. Configure the Amazon Redshift Serverless workgroup to be publicly accessible and unblock the Firehose IP addresses. For more information, see the Connect to a publicly accessible Amazon Redshift Serverless instance section in [Connecting to Amazon Redshift Serverless](https://docs.aws.amazon.com/redshift/latest/mgmt/serverless-connecting.html) and also [Grant Firehose access to an Amazon Redshift destination](controlling-access.md#using-iam-rs).
@@ -185,8 +179,6 @@ Firehose supports Amazon S3 server-side encryption with AWS Key Management Servi
 Firehose supports Elasticsearch versions – 1.5, 2.3, 5.1, 5.3, 5.5, 5.6, as well as all 6.\*, 7.\*, and 8.\* versions. Firehose supports Amazon OpenSearch Service 2.x and 3.x.
 
 This section describes options for using OpenSearch Service for your destination.
-
-****
 + Enter values for the following fields:
 ** **OpenSearch Service domain** **
 The OpenSearch Service domain to which your data is delivered.
@@ -213,8 +205,6 @@ Amazon Data Firehose buffers incoming data before delivering it to the specified
 <a name="create-destination-opensearch-serverless"></a>
 
 This section describes options for using OpenSearch Serverless for your destination.
-
-****
 + Enter values for the following fields:
 ** **OpenSearch Serverless collection** **
 The endpoint for a group of OpenSearch Serverless indexes to which your data is delivered.
@@ -237,8 +227,6 @@ This section describes options for using **HTTP endpoint** for your destination.
 
 **Important**
 If you choose an HTTP endpoint as your destination, review and follow the instructions in [Understand HTTP endpoint delivery request and response specifications](httpdeliveryrequestresponse.md).
-
-****
 + Provide values for the following fields:
  **HTTP endpoint name - optional**
 Specify a user friendly name for the HTTP endpoint. For example, `My HTTP Endpoint Destination`.
@@ -270,8 +258,6 @@ For the HTTP endpoint destinations, if you are seeing 413 response codes from th
 <a name="create-destination-datadog"></a>
 
 This section describes options for using **Datadog** for your destination. For more information about Datadog, see [https://docs.datadoghq.com/integrations/amazon\_web\_services/](https://docs.datadoghq.com/integrations/amazon_web_services/).
-
-****
 + Provide values for the following fields.
  **HTTP endpoint URL**
 Choose where you want to send data from one of the following options in the drop-down menu.
@@ -320,8 +306,6 @@ This section describes options for using **Grafana Cloud** for your destination.
 Both the HTTP endpoint URL format and the API key scopes that are required depend on the type of data that you send. For instructions on configuring the connection, see the following documentation on the Grafana website:
 + Metrics data – [Amazon CloudWatch metric streams](https://grafana.com/docs/grafana-cloud/observe-and-act/monitor-infrastructure/monitor-cloud-provider/aws/cloudwatch-metrics/metric-streams/)
 + Logs data – [Amazon Data Firehose logs](https://grafana.com/docs/grafana-cloud/observe-and-act/monitor-infrastructure/monitor-cloud-provider/aws/logs/firehose-logs/config-firehose-logs/)
-
-****
 + Choose options to use Grafana Cloud as the destination for your Firehose stream.
  **Ingestion type**
 Choose to deliver **Metrics** or **Logs** (default) to Grafana Cloud for further analysis and processing.
@@ -363,8 +347,6 @@ Amazon Data Firehose buffers incoming data before delivering it to the specified
 <a name="create-destination-honeycomb"></a>
 
 This section describes options for using **Honeycomb** for your destination. For more information about Honeycomb, see [https://docs.honeycomb.io/getting-data-in/metrics/aws-cloudwatch-metrics/ ](https://docs.honeycomb.io/getting-data-in/metrics/aws-cloudwatch-metrics/ ).
-
-****
 + Provide values for the following fields:
  **Honeycomb Kinesis endpoint**
 Specify the URL for the HTTP endpoint in the following format: https://api.honeycomb.io/1/kinesis\_events/{{dataset}}
@@ -393,8 +375,6 @@ Amazon Data Firehose buffers incoming data before delivering it to the specified
 <a name="create-destination-coralogix"></a>
 
 This section describes options for using **Coralogix** for your destination. For more information about Coralogix, see [Get Started with Coralogix](https://coralogix.com/docs/guide-first-steps-coralogix/).
-
-****
 + Provide values for the following fields:
  **HTTP endpoint URL**
 Choose the HTTP endpoint URL from the following options in the drop down menu:
@@ -431,8 +411,6 @@ Amazon Data Firehose buffers incoming data before delivering it to the specified
 <a name="create-destination-dynatrace"></a>
 
 This section describes options for using **Dynatrace** for your destination. For more information, see [https://www.dynatrace.com/support/help/technology-support/cloud-platforms/amazon-web-services/integrations/cloudwatch-metric-streams/](https://www.dynatrace.com/support/help/technology-support/cloud-platforms/amazon-web-services/integrations/cloudwatch-metric-streams/).
-
-****
 + Choose options to use Dynatrace as the destination for your Firehose stream.
  **Ingestion type**
 Choose whether you want to deliver **Metrics** or **Logs** (default) in Dynatrace for further analysis and processing.
@@ -465,8 +443,6 @@ Amazon Data Firehose buffers incoming data before delivering it to the specified
 <a name="create-destination-logicmonitor"></a>
 
 This section describes options for using **LogicMonitor** for your destination. For more information, see [https://www.logicmonitor.com](https://www.logicmonitor.com).
-
-****
 + Provide values for the following fields:
  **HTTP endpoint URL**
 Specify the URL for the HTTP endpoint in the following format.
@@ -502,8 +478,6 @@ This section describes options for using **Logz.io** for your destination. For m
 
 **Note**
 In the Europe (Milan) region, Logz.io is not supported as an Amazon Data Firehose destination.
-
-****
 + Provide values for the following fields:
  **HTTP endpoint URL**
 Specify the URL for the HTTP endpoint in the following format. The URL must be an `HTTPS` URL.
@@ -539,8 +513,6 @@ Amazon Data Firehose buffers incoming data before delivering it to the specified
 <a name="create-destination-mongodb"></a>
 
 This section describes options for using **MongoDB Atlas** for your destination. For more information, see [MongoDB Atlas on Amazon Web Services](https://www.mongodb.com/products/platform/atlas-cloud-providers/aws).
-
-****
 + Provide values for the following fields:
 **API Gateway URL**
 Specify the URL for the HTTP endpoint in the following format.
@@ -574,8 +546,6 @@ Amazon Data Firehose includes these key-value pairs in each HTTP call. These par
 <a name="create-destination-new-relic"></a>
 
 This section describes options for using **New Relic** for your destination. For more information, see [https://newrelic.com](https://newrelic.com).
-
-****
 + Provide values for the following fields:
  **HTTP endpoint URL**
 Choose the HTTP endpoint URL from the following options in the drop-down list.
@@ -612,8 +582,6 @@ This section describes options for using Snowflake for your destination.
 Firehose integration with Snowflake is available in the US East (N. Virginia), US West (Oregon), Europe (Ireland), US East (Ohio), Asia Pacific (Tokyo), Europe (Frankfurt), Asia Pacific (Singapore), Asia Pacific (Seoul), and Asia Pacific (Sydney), Asia Pacific (Mumbai), Europe (London), South America (Sao Paulo), Canada (Central), Europe (Paris), Asia Pacific (Osaka), Europe (Stockholm), Asia Pacific (Jakarta) AWS Regions.
 
 **Connection settings**
-
-****
 + Provide values for the following fields:
  **Snowflake account URL**
 Specify a Snowflake account URL. For example: `xy12345.us-east-1.aws.snowflakecomputing.com`. Refer to [Snowflake documentation](https://docs.snowflake.com/en/user-guide/admin-account-identifier#format-2-legacy-account-locator-in-a-region) on how to determine your account URL. Note that you mustn't specify the port number, whereas protocol (https://) is optional.
@@ -697,8 +665,6 @@ This section describes options for using Splunk for your destination.
 
 **Note**
 Firehose delivers data to Splunk clusters configured with Classic Load Balancer or an Application Load Balancer.
-
-****
 + Provide values for the following fields:
  **Splunk cluster endpoint**
 To determine the endpoint, see [Configure Amazon Data Firehose to Send Data to the Splunk Platform](http://docs.splunk.com/Documentation/AddOns/latest/Firehose/ConfigureFirehose) in the Splunk documentation.
@@ -727,8 +693,6 @@ Amazon Data Firehose buffers incoming data before delivering it to the specified
 <a name="create-destination-splunk-cloud"></a>
 
 This section describes options for using **Splunk Observability Cloud** for your destination. For more information, see [https://docs.splunk.com/observability/en/gdi/get-data-in/connect/aws/aws-apiconfig.html\#connect-to-aws-using-the-splunk-observability-cloud-api](https://docs.splunk.com/Observability/gdi/get-data-in/connect/aws/aws-apiconfig.html#connect-to-aws-using-the-splunk-observability-cloud-api).
-
-****
 + Provide values for the following fields:
  **Cloud Ingest Endpoint URL**
 You can find your Splunk Observability Cloud’s Real-time Data Ingest URL in Profile > Organizations > Real-time Data Ingest Endpoint in Splunk Observability console.
@@ -757,8 +721,6 @@ Amazon Data Firehose buffers incoming data before delivering it to the specified
 <a name="create-destination-sumo-logic"></a>
 
 This section describes options for using **Sumo Logic** for your destination. For more information, see [https://www.sumologic.com](https://www.sumologic.com).
-
-****
 + Provide values for the following fields:
  **HTTP endpoint URL**
 Specify the URL for the HTTP endpoint in the following format: `https://deployment name.sumologic.net/receiver/v1/kinesis/dataType/access token`. The URL must be an HTTPS URL.
@@ -779,8 +741,6 @@ Amazon Data Firehose buffers incoming data before delivering it to the specified
 <a name="create-destination-elastic"></a>
 
 This section describes options for using **Elastic** for your destination.
-
-****
 + Provide values for the following fields:
  **Elastic endpoint URL**
 Specify the URL for the HTTP endpoint in the following format: `https://<cluster-id>.es.<region>.aws.elastic-cloud.com`. The URL must be an HTTPS URL.

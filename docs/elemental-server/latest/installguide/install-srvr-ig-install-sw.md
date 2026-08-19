@@ -32,7 +32,6 @@ Make sure that you use the .run file that corresponds to the .iso file that you 
    Where -l is a letter, not a number.
 
 1. You are prompted as described in the table below.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-server/latest/installguide/install-srvr-ig-install-sw.html)
 
    Then the software is installed. Finally, this message appears:

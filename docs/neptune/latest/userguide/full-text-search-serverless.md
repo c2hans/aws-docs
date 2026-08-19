@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/full-text-searc
 # Replication to OpenSearch Serverless
 <a name="full-text-search-serverless"></a>
 
-Starting with [engine release 1.3.0.0](engine-releases-1.3.0.0.md), Amazon Neptune supports using [Amazon OpenSearch Service Serverless](https://docs.aws.amazon.com//opensearch-service/latest/developerguide/serverless.html) for full-text search in Gremlin and SPARQL queries. Using OpenSearch Serverless requires you to [enable IAM authentication](https://docs.aws.amazon.com/neptune/latest/userguide/iam-auth-enable.html) on your Neptune Database cluster. Neptune Database clusters with IAM authentication disabled are not supported with OpenSearch Serverless.
+Starting with [engine release 1.3.0.0](engine-releases-1.3.0.0.md), Amazon Neptune supports using [Amazon OpenSearch Service Serverless](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/serverless.html) for full-text search in Gremlin and SPARQL queries. Using OpenSearch Serverless requires you to [enable IAM authentication](https://docs.aws.amazon.com/neptune/latest/userguide/iam-auth-enable.html) on your Neptune Database cluster. Neptune Database clusters with IAM authentication disabled are not supported with OpenSearch Serverless.
 
 ## Changes required for poller AWS Lambda function
 <a name="full-text-changes-required"></a>
@@ -25,7 +25,7 @@ arn:aws:iam::{{(account ID)}}:role/stack-name-NeptuneOSReplication-NeptuneStream
 arn:aws:iam::{{012345678901}}:role/stack-name-LambdaExecutionRole-{{(id)}}
 ```
 
-For more information, see [Data access control for Amazon OpenSearch Serverless](https://docs.aws.amazon.com//opensearch-service/latest/developerguide/serverless-data-access.html).
+For more information, see [Data access control for Amazon OpenSearch Serverless](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/serverless-data-access.html).
 
 ## Changes needed to the IAM role used to query Neptune
 <a name="full-text-IAM"></a>

@@ -43,7 +43,7 @@ Make sure that you have completed the [Prerequisites](self-managed-AD.md#self-ma
 
 1. For **Storage capacity**, enter the storage capacity of your file system, in GiB. If you're using SSD storage, enter any whole number in the range of 32–65,536. If you're using HDD storage, enter any whole number in the range of 2,000–65,536. You can increase the amount of storage capacity as needed at any time after you create the file system. For more information, see [Managing storage capacity](managing-storage-configuration.md#managing-storage-capacity).
 
-1. Keep **Throughput capacity** at its default setting. **Throughput capacity** is the sustained speed at which the file server that hosts your file system can serve data. The **Recommended throughput capacity** setting is based on the amount of storage capacity you choose. If you need more than the recommended throughput capacity, choose **Specify throughput capacity**, and then choose a value. For more information, see [FSx for Windows File Server performancePerformance](performance.md).
+1. Keep **Throughput capacity** at its default setting. **Throughput capacity** is the sustained speed at which the file server that hosts your file system can serve data. The **Recommended throughput capacity** setting is based on the amount of storage capacity you choose. If you need more than the recommended throughput capacity, choose **Specify throughput capacity**, and then choose a value. For more information, see [FSx for Windows File Server performance](performance.md).
 
    You can modify the throughput capacity as needed at any time after you create the file system. For more information, see [Managing throughput capacity](managing-throughput-capacity.md).
 

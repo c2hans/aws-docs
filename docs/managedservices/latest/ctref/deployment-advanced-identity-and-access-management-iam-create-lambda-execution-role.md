@@ -14,8 +14,6 @@ Create an Lambda execution role to use with Lambda Function. Each ARN specified 
 ## Change Type Details
 <a name="ct-1k3oui719dcju-DAIc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1k3oui719dcju |

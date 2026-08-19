@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awso
 
 AWS OpsWorks Configuration Management provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="opsworks-cm-DescribeAccountAttributes"></a>[DescribeAccountAttributes](https://docs.aws.amazon.com/opsworks-cm/latest/APIReference/API_DescribeAccountAttributes.html) | Describe the service limits for the user's account | List |

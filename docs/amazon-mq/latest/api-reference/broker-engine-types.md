@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/api-reference/broker-en
 # Broker Engine Types
 <a name="broker-engine-types"></a>
 
-Retrieve information about available broker engines. AWS does not support all instance types in all availability zones and regions. For more information, see the [ActiveMQ version management](https://docs.aws.amazon.com//amazon-mq/latest/developer-guide/activemq-version-management.html) and the [RabbitMQ version management](https://docs.aws.amazon.com//amazon-mq/latest/developer-guide/rabbitmq-version-management.html) sections in the Amazon MQ Developer Guide.
+Retrieve information about available broker engines. AWS does not support all instance types in all availability zones and regions. For more information, see the [ActiveMQ version management](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/activemq-version-management.html) and the [RabbitMQ version management](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/rabbitmq-version-management.html) sections in the Amazon MQ Developer Guide.
 
 This API will tell you, for a given region and availability zone, which broker engine types and engine versions you can create.
 

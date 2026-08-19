@@ -114,7 +114,7 @@ The web experience is only available for preview and testing purposes *unless* u
 
 **To create an Amazon Q Business web experience**
 
-If you use the web experience, you must add the web experience permissions and trust [IAM policiesAPI policy](anonymous-application-iam-policies.md) here.
+If you use the web experience, you must add the web experience permissions and trust [IAM policies](anonymous-application-iam-policies.md) here.
 
 ```
 aws qbusiness create-web-experience \

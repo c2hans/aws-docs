@@ -14,8 +14,6 @@ Start up to 50 stopped EC2 instances.
 ## Change Type Details
 <a name="ct-03t7kvuwx6rgr-MAEs-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-03t7kvuwx6rgr |

@@ -14,8 +14,6 @@ Create one or more CloudWatch alarms. For detailed information on CloudWatch ala
 ## Change Type Details
 <a name="ct-361vpyun9a9dd-DMCc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-361vpyun9a9dd |

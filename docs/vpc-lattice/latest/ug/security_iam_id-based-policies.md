@@ -31,7 +31,7 @@ For more information about best practices in IAM, see [Security best practices i
 ## Additional required permissions for full access
 <a name="security_iam_id-based-policy-additional-permissions"></a>
 
-To use other AWS services that VPC Lattice is integrated with and the entire suite of VPC Lattice features, you must have specific additional permissions. These permissions are not included in the `VPCLatticeFullAccess` managed policy because of the [confused deputy](https://docs.aws.amazon.com//IAM/latest/UserGuide/confused-deputy.html) privilege escalation risk.
+To use other AWS services that VPC Lattice is integrated with and the entire suite of VPC Lattice features, you must have specific additional permissions. These permissions are not included in the `VPCLatticeFullAccess` managed policy because of the [confused deputy](https://docs.aws.amazon.com/IAM/latest/UserGuide/confused-deputy.html) privilege escalation risk.
 
 You must attach the following policy to your role and use it along with the `VPCLatticeFullAccess` managed policy.
 

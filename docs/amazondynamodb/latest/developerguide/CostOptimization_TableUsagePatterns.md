@@ -52,7 +52,7 @@ The total size of an item in DynamoDB is the sum of its attribute name lengths a
 
 [Time to Live (TTL)](TTL.md#TTL.title) can identify items older than the expiry time that you have set on an item and remove them from the table. If your data grows over time and older data becomes irrelevant, enabling TTL on the table can help trim your data down and save on storage costs.
 
- Another useful aspect of TTL is that the expired items occur on your DynamoDB streams, so rather than just removing the data from your data, it is possible to consume those items from the stream and archive them to a lower cost storage tier. Additionally, deleting items via TTL comes at no additional cost — it does not consume capacity, and there’s no overhead of designing a clean up application.
+ Another useful aspect of TTL is that the expired items occur on your DynamoDB streams, so rather than just removing the data from your data, it is possible to consume those items from the stream and archive them to a lower cost storage tier. Additionally, deleting items through TTL comes at no additional cost — it does not consume capacity, and there’s no overhead of designing a clean up application.
 
 ## Replace global tables with cross-Region backups
 <a name="CostOptimization_TableUsagePatterns_GlobalTables"></a>

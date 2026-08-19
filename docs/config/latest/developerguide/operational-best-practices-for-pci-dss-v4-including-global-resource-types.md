@@ -9,8 +9,6 @@ Conformance packs provide a general-purpose compliance framework designed to ena
 
 The following provides a sample mapping between the Payment Card Industry Data Security Standard (PCI DSS) 4.0 (Excluding global resource types) and AWS managed Config rules. Each AWS Config rule applies to a specific AWS resource, and relates to one or more PCI DSS controls. A PCI DSS control can be related to multiple Config rules. Refer to the table below for more detail and guidance related to these mappings.
 
-****
-
 | Control ID  | Control Description  | AWS Config Rule  | Guidance  |
 | --- | --- | --- | --- |
 | 1.2.5 |  Network security controls (NSCs) are configured and maintained. (PCI-DSS-v4.0) | [cloudfront-security-policy-check](cloudfront-security-policy-check.md) | Ensure that Amazon CloudFront distributions are using a minimum security policy and cipher suite of TLSv1.2 or greater for viewer connections. This rule is NON\_COMPLIANT for a CloudFront distribution if the minimumProtocolVersion is below TLSv1.2\_2018. |

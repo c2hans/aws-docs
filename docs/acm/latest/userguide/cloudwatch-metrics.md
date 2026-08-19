@@ -9,8 +9,6 @@ Amazon CloudWatch is a monitoring service for AWS resources. You can use CloudWa
 
 The `AWS/CertificateManager` namespace includes the following metrics.
 
-****
-
 | Metric | Description | Unit | Dimensions |
 | --- | --- | --- | --- |
 | DaysToExpiry | Number of days until a certificate expires. ACM publishes this metric twice per day for every certificate until expiration, and stops publishing it after a certificate expires. | Integer | CertificateArn+  Value: ARN of the certificate  |

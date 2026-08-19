@@ -18,7 +18,7 @@ You can't delete a service that has any service instance with an attached compon
 
 **In the service detail page.**
 
-1. In the [AWS Proton console](https://console.aws.amazon.com//proton/), choose **Services**.
+1. In the [AWS Proton console](https://console.aws.amazon.com/proton/), choose **Services**.
 
 1. In the list of services, choose the name of the service that you want to delete.
 

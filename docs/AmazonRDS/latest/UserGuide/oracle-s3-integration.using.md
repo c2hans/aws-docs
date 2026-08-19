@@ -31,8 +31,6 @@ To upload files from your DB instance to an Amazon S3 bucket, use the procedure 
 
 The `rdsadmin.rdsadmin_s3_tasks.upload_to_s3` procedure has the following parameters.
 
-****
-
 | Parameter name | Data type | Default | Required | Description |
 | --- | --- | --- | --- | --- |
 | `p_bucket_name` | VARCHAR2 | – | required | The name of the Amazon S3 bucket to upload files to.  |
@@ -122,8 +120,6 @@ Tasks are executed asynchronously.
 To download files from an Amazon S3 bucket to an RDS for Oracle instance, use the Amazon RDS procedure `rdsadmin.rdsadmin_s3_tasks.download_from_s3`.
 
 The `download_from_s3` procedure has the following parameters.
-
-****
 
 | Parameter name | Data type | Default | Required | Description |
 | --- | --- | --- | --- | --- |

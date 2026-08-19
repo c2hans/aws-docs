@@ -10,7 +10,7 @@ As of November 7, 2025, you can't create new repository associations in Amazon C
 You can create a GitHub Enterprise Server repository association using the Amazon CodeGuru Reviewer console, the AWS CLI, or the CodeGuru Reviewer SDK. Before you create a GitHub Enterprise Server repository association, you must have a GitHub Enterprise Server repository.
 
 **Note**
-GitHub Enterprise Cloud repositories have a different procedure and different prerequisites. If you're using GitHub Enterprise Cloud, [follow this procedure instead](https://docs.aws.amazon.com//codeguru/latest/reviewer-ug/create-github-association.html).
+GitHub Enterprise Cloud repositories have a different procedure and different prerequisites. If you're using GitHub Enterprise Cloud, [follow this procedure instead](https://docs.aws.amazon.com/codeguru/latest/reviewer-ug/create-github-association.html).
 
 **Topics**
 + [GitHub Enterprise Server repository association prerequisites](#create-github-enterprise-association-requirements)

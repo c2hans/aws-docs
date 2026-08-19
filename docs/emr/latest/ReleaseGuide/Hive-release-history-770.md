@@ -8,8 +8,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/Hive-release-his
 ## Amazon EMR 7.7.0 - Hive changes
 <a name="Hive-release-history-changes-770"></a>
 
-****
-
 | Type | Description |
 | --- | --- |
 | Bug Fix | Fixes CVE-2024-29869: Apache Hive: Credentials file created with non restrictive permissions. |

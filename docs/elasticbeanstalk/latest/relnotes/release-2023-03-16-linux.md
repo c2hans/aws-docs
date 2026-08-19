@@ -35,8 +35,6 @@ Today's release is cumulative. It includes all of the updates listed in the [Mar
 ### Docker
 <a name="release-2023-03-07-linux.platforms.docker"></a>
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  ECS Agent  |  Docker  |  Docker Compose  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Docker AL2 version 3.5.5** <br /> * 64bit Amazon Linux 2 v3.5.5 running Docker *  | 2.0.20230221 |  | 20.10.17-1 | 1.29.2 | nginx 1.22.1 |
@@ -44,8 +42,6 @@ Today's release is cumulative. It includes all of the updates listed in the [Mar
 
 ### Python
 <a name="release-2023-03-07-linux.platforms.python"></a>
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  Package Manager  |  Packager  |  meld3  |  AWS X-Ray  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- | --- | --- |

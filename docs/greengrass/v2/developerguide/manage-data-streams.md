@@ -72,8 +72,6 @@ Stream manager clients use the Stream Manager SDK to communicate with stream man
 
 You use the [STREAM\_MANAGER\_AUTHENTICATE\_CLIENT](configure-stream-manager.md#STREAM_MANAGER_AUTHENTICATE_CLIENT) parameter to set the client authentication mode. You can configure this parameter when you deploy the stream manager component to core devices.
 
-****
-
 |   | Enabled | Disabled |
 | --- | --- | --- |
 | Parameter value | `true` (default and recommended) | `false` |

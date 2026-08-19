@@ -31,9 +31,9 @@ Add the following entries to your R8/Proguard rules file (`proguard-rules.pro`):
 ## Set Up Your Backend
 <a name="chat-android-setup-backend"></a>
 
-This integration requires endpoints on your server that talk to the [Amazon IVS API](https://docs.aws.amazon.com//ivs/latest/LowLatencyAPIReference/Welcome.html). Use the [official AWS libraries](https://aws.amazon.com/developer/tools/) for access to the Amazon IVS API from your server. These are accessible within several languages from the public packages; e.g., node.js and Java.
+This integration requires endpoints on your server that talk to the [Amazon IVS API](https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/Welcome.html). Use the [official AWS libraries](https://aws.amazon.com/developer/tools/) for access to the Amazon IVS API from your server. These are accessible within several languages from the public packages; e.g., node.js and Java.
 
-Next, create a server endpoint that talks to the [Amazon IVS Chat API](https://docs.aws.amazon.com//ivs/latest/ChatAPIReference/Welcome.html) and creates a token.
+Next, create a server endpoint that talks to the [Amazon IVS Chat API](https://docs.aws.amazon.com/ivs/latest/ChatAPIReference/Welcome.html) and creates a token.
 
 ## Set Up a Server Connection
 <a name="chat-android-setup-server"></a>

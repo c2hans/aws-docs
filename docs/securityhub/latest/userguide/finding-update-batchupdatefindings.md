@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/finding-upd
 # BatchUpdateFindings for customers
 <a name="finding-update-batchupdatefindings"></a>
 
-AWS Security Hub CSPM customers, and entities acting on their behalf, can use the [BatchUpdateFindings](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_BatchUpdateFindings.html) operation to update information related to the processing of Security Hub CSPM findings from finding providers. As a customer, you can use this operation directly. SIEM, ticketing, incident management, and SOAR tools can also use this operation on behalf of a customer.
+AWS Security Hub CSPM customers, and entities acting on their behalf, can use the [BatchUpdateFindings](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateFindings.html) operation to update information related to the processing of Security Hub CSPM findings from finding providers. As a customer, you can use this operation directly. SIEM, ticketing, incident management, and SOAR tools can also use this operation on behalf of a customer.
 
 You can't use the `BatchUpdateFindings` operation to create new findings. However, you can use it to update up to 100 existing findings at a time. In a `BatchUpdateFindings` request, you specify which findings to update, which AWS Security Finding Format (ASFF) fields to update for the findings, and the new values for the fields. Security Hub CSPM then updates the findings as specified in your request. This process can take several minutes. If you update findings by using the `BatchUpdateFindings` operation, your updates don't affect existing values for the `UpdatedAt` field of the findings.
 

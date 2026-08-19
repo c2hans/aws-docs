@@ -33,5 +33,5 @@ You can create hosted zones for domains and subdomains only. Route 53 doesn't s
 1. Create records that specify how you want to route traffic for the domain and subdomains. For more information, see [Working with records](rrsets-working-with.md).
 
 1. To use records in the new hosted zone to route traffic for your domain, see the applicable topic:
-   + If you're making Route 53 the DNS service for a domain that is registered with another domain registrar, see [Making Amazon Route 53 the DNS service for an existing domainMaking Route 53 the DNS service for an existing domain](MigratingDNS.md).
+   + If you're making Route 53 the DNS service for a domain that is registered with another domain registrar, see [Making Amazon Route 53 the DNS service for an existing domain](MigratingDNS.md).
    + If the domain is registered with Route 53, see [Adding or changing name servers and glue records for a domain](domain-name-servers-glue-records.md).

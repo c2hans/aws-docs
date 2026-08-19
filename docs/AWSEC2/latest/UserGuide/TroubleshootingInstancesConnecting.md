@@ -309,7 +309,7 @@ If you are connecting to a Linux instance from Windows, perform the following st
 
 1. Navigate to your .pem file.
 
-1. Right-click on the .pem file and select **Properties**.
+1. Open the context (right-click) menu for the .pem file and select **Properties**.
 
 1. Choose the **Security** tab.
 

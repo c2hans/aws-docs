@@ -12,8 +12,6 @@ A SAML-based authentication mechanism that enables authentication to Athena usin
 
 The credentials provider that will be used to authenticate requests to AWS. Set the value of this parameter to `ADFS`.
 
-****
-
 | Parameter name | Alias | Parameter type | Default value | Value to use |
 | --- | --- | --- | --- | --- |
 | CredentialsProvider | AWSCredentialsProviderClass (deprecated) | Required | none | ADFS |
@@ -22,8 +20,6 @@ The credentials provider that will be used to authenticate requests to AWS. Set 
 <a name="jdbc-v3-driver-adfs-credentials-user"></a>
 
 The email address of the AD FS user to use for authentication with AD FS.
-
-****
 
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
@@ -34,8 +30,6 @@ The email address of the AD FS user to use for authentication with AD FS.
 
 The password for the AD FS user.
 
-****
-
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
 | Password | PWD (deprecated) | Required for form-based authentication. Optional for Windows Integrated Authentication. | none |
@@ -44,8 +38,6 @@ The password for the AD FS user.
 <a name="jdbc-v3-driver-adfs-credentials-adfshostname"></a>
 
 The address for your AD FS server.
-
-****
 
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
@@ -56,8 +48,6 @@ The address for your AD FS server.
 
 The port number to use to connect to your AD FS server.
 
-****
-
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
 | AdfsPortNumber | IdP\_Port (deprecated) | Required | none |
@@ -66,8 +56,6 @@ The port number to use to connect to your AD FS server.
 <a name="jdbc-v3-driver-adfs-credentials-adfsrelyingparty"></a>
 
 The trusted relying party. Use this parameter to override the AD FS relying party endpoint URL.
-
-****
 
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
@@ -78,8 +66,6 @@ The trusted relying party. Use this parameter to override the AD FS relying part
 
 Boolean. Use this parameter to enable Windows Integrated Authentication (WIA) with AD FS.
 
-****
-
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
 | AdfsWiaEnabled | none | Optional | FALSE |
@@ -88,8 +74,6 @@ Boolean. Use this parameter to enable Windows Integrated Authentication (WIA) wi
 <a name="jdbc-v3-driver-adfs-credentials-preferred-role"></a>
 
 The Amazon Resource Name (ARN) of the role to assume. For information about ARN roles, see [`AssumeRole`](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html) in the *AWS Security Token Service API Reference*.
-
-****
 
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
@@ -100,8 +84,6 @@ The Amazon Resource Name (ARN) of the role to assume. For information about ARN 
 
 The duration, in seconds, of the role session. For more information, see [`AssumeRole`](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html) in the *AWS Security Token Service API Reference*.
 
-****
-
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
 | RoleSessionDuration | Duration (deprecated) | Optional | 3600 |
@@ -110,8 +92,6 @@ The duration, in seconds, of the role session. For more information, see [`Assum
 <a name="jdbc-v3-driver-adfs-credentials-lake-formation-enabled"></a>
 
 Specifies whether to use the [`AssumeDecoratedRoleWithSAML`](https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_AssumeDecoratedRoleWithSAML.html) Lake Formation API action to retrieve temporary IAM credentials instead of the [`AssumeRoleWithSAML`](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRoleWithSAML.html) AWS STS API action.
-
-****
 
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |

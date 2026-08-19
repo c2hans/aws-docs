@@ -25,8 +25,6 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_mailmanager-actions-as-permissions).
 
-****
-
 - **   CreateAddonInstance  **
   - **IAM action:**  [ses:CreateAddonInstance](#list_mailmanager-action-CreateAddonInstance)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [ses:TagResource](#list_mailmanager-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
@@ -374,8 +372,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
 <a name="list_mailmanager-actions-as-permissions"></a>
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
-
-****
 
 - **   [CreateAddonInstance](https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_CreateAddonInstance.html)  **
   - **Description:** Grants permission to create an addon instance
@@ -759,8 +755,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 The following actions are defined by Amazon Simple Email Service - Mail Manager but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 - **   [AllowVendedLogDeliveryForResource](https://docs.aws.amazon.com/ses/latest/dg/eb-policies.html)  **
   - **Description:** Grants permission to configure vended log delivery for Mail Manager resources
   - **Resource types (\*required):** [mailmanager-ingress-point](#list_mailmanager-resource-mailmanager-ingress-point) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_mailmanager-aws_ResourceTag___TagKey_)<br />[ses:MailManagerIngressPointType](#list_mailmanager-ses_MailManagerIngressPointType)
@@ -771,8 +765,6 @@ The following actions are defined by Amazon Simple Email Service - Mail Manager 
 <a name="list_mailmanager-resources-for-iam-policies"></a>
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
-
-****
 
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
@@ -789,8 +781,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_mailmanager-policy-keys"></a>
 
 Amazon Simple Email Service - Mail Manager defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

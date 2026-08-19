@@ -17,7 +17,7 @@ If a user or role already has a custom permissions profile assigned, the new ass
 
 **To assign a custom permissions profile**
 
-1. Open the [Quick console](https://aws.amazon.com//quicksight/).
+1. Open the [Quick console](https://aws.amazon.com/quicksight/).
 
 1. Choose **Manage Quick**.
 
@@ -126,7 +126,7 @@ After you assign a custom permissions profile, you can verify which profile is a
 
 **To verify a user's active permissions profile**
 
-1. Open the [Quick console](https://aws.amazon.com//quicksight/).
+1. Open the [Quick console](https://aws.amazon.com/quicksight/).
 
 1. Choose **Manage Quick**.
 

@@ -14,8 +14,6 @@ Create a Relational Database Service (RDS) database (DB) subnet group to be used
 ## Change Type Details
 <a name="ct-17w6f6kzf6w51-DARc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-17w6f6kzf6w51 |

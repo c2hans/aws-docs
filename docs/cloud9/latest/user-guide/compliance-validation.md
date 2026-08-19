@@ -16,8 +16,6 @@ Third-party auditors assess the security and compliance of AWS services as part 
 
 AWS System and Organization Controls (SOC) Reports are independent third-party examination reports that demonstrate how AWS achieves key compliance controls and objectives.
 
-****
-
 | Service | SDK | [SOC 1,2,3](https://aws.amazon.com/compliance/soc-faqs/)  |
 | --- | --- | --- |
 | AWS Cloud9 | cloud9 | ✓ |
@@ -26,8 +24,6 @@ AWS System and Organization Controls (SOC) Reports are independent third-party e
 <a name="pci-compliance"></a>
 
 The Payment Card Industry Data Security Standard (PCI DSS) is a proprietary information security standard administered by the PCI Security Standards Council, which was founded by American Express, Discover Financial Services, JCB International, MasterCard Worldwide and Visa Inc.
-
-****
 
 | Service | SDK | [PCI](https://aws.amazon.com/compliance/pci-dss-level-1-faqs/)  |
 | --- | --- | --- |
@@ -41,8 +37,6 @@ The Federal Risk and Authorization Management Program (FedRAMP) is a US governme
 Services going through FedRAMP assessment and authorization will have the following status:
 + Third-Party Assessment Organization (3PAO) Assessment: This service is currently undergoing an assessment by our third-party assessor.
 + Joint Authorization Board (JAB) Review: This service is currently undergoing a JAB review.
-
-****
 
 | Service | SDK | [FedRAMP Moderate (East/West)](https://aws.amazon.com/compliance/fedramp/)  | [FedRAMP High (GovCloud)](https://aws.amazon.com/compliance/fedramp/)  |
 | --- | --- | --- | --- |
@@ -58,8 +52,6 @@ Services going through DoD CC SRG assessment and authorization will have the fol
 + Joint Authorization Board (JAB) Review: This service is currently undergoing a JAB review.
 + Defense Information Systems Agency (DISA) Review: This service is currently undergoing a DISA review.
 
-****
-
 | Service | SDKs | [DoD CC SRG IL2 (East/West)](https://aws.amazon.com/compliance/dod/)  | [DoD CC SRG IL2 (GovCloud)](https://aws.amazon.com/compliance/dod/)  | [DoD CC SRG IL4 (GovCloud)](https://aws.amazon.com/compliance/dod/)  | [DoD CC SRG IL5 (GovCloud)](https://aws.amazon.com/compliance/dod/)   | [DoD CC SRG IL6 (AWS Secret Region)](https://aws.amazon.com/compliance/dod/)   |
 | --- | --- | --- | --- | --- | --- | --- |
 | AWS Cloud9 | cloud9 | JAB Review | N/A | N/A | N/A | N/A |
@@ -71,8 +63,6 @@ The Health Insurance Portability and Accountability Act of 1996 (HIPAA) is a fed
 
 AWS enables covered entities and their business associates subject to HIPAA to securely process, store, and transmit protected health information (PHI). Additionally, as of July 2013, AWS offers a standardized Business Associate Addendum (BAA) for such customers
 
-****
-
 | Service | SDK | [HIPAA BAA](https://aws.amazon.com/compliance/hipaa-compliance/)  |
 | --- | --- | --- |
 | AWS Cloud9 | cloud9 | ✓ |
@@ -81,8 +71,6 @@ AWS enables covered entities and their business associates subject to HIPAA to s
 <a name="irap-compliance"></a>
 
 The Information Security Registered Assessors Program (IRAP) enables Australian Government customers to validate that appropriate controls are in place and determine the appropriate responsibility model for addressing the requirements of the Australian Government Information Security Manual (ISM) produced by the Australian Cyber Security Centre (ACSC).
-
-****
 
 | Service | Namespace\* | [IRAP protected](https://aws.amazon.com/compliance/irap/)  |
 | --- | --- | --- |
@@ -95,8 +83,6 @@ The Information Security Registered Assessors Program (IRAP) enables Australian 
 
 Cloud Computing Compliance Controls Catalog (C5) is a German Government-backed attestation scheme introduced in Germany by the Federal Office for Information Security (BSI) to help organizations demonstrate operational security against common cyber-attacks when using cloud services within the context of the German Government's "Security Recommendations for Cloud Providers".
 
-****
-
 | Service | SDK | [C5](https://aws.amazon.com/compliance/bsi-c5/)  |
 | --- | --- | --- |
 | AWS Cloud9 | cloud9 | ✓ |
@@ -105,8 +91,6 @@ Cloud Computing Compliance Controls Catalog (C5) is a German Government-backed a
 <a name="finma-compliance"></a>
 
 FINMA is Switzerland’s independent financial-markets regulator. Amazon Web Services (AWS) has completed the FINMA ISAE 3000 Type 2 Report.
-
-****
 
 | Service | SDK | [FINMA](https://aws.amazon.com/compliance/finma/)  |
 | --- | --- | --- |
@@ -117,8 +101,6 @@ FINMA is Switzerland’s independent financial-markets regulator. Amazon Web Ser
 
 The GSM Association is an industry organisation that represents the interests of mobile network operators worldwide. Amazon Web Services (AWS) Europe (Paris) and US East (Ohio) Regions are now certified by the GSM Association (GSMA) under its Security Accreditation Scheme Subscription Management (SAS-SM) with scope Data Center Operations and Management (DCOM). This alignment with GSMA requirements demonstrates our continuous commitment to adhere to the heightened expectations for cloud service providers.
 
-****
-
 | Service | [US-East (Ohio)](https://aws.amazon.com/compliance/gsma/) | [Europe (Paris)](https://aws.amazon.com/compliance/gsma/)  |
 | --- | --- | --- |
 | AWS Cloud9 | ✓ | ✓ |
@@ -128,11 +110,11 @@ The GSM Association is an industry organisation that represents the interests of
 
  AWS alignment with PiTuKri requirements demonstrates our continuous commitment to meeting the heightened expectations for cloud service providers set by Finnish Transport and Communications Agency, Traficom.
 
-****
-
 | Service | SDK | [PiTuKri](https://aws.amazon.com/compliance/pitukri/)  |
 | --- | --- | --- |
 | AWS Cloud9 | cloud9 | ✓ |
+
+Our new AWS sign-up experience is not designed for regulated workloads. If you're using our new AWS sign-up experience, but you want to use AWS for regulated workloads, you can [sign up for AWS (advanced)](https://docs.aws.amazon.com/accounts/latest/reference/getting-started.html) or [activate advanced features](https://docs.aws.amazon.com/accounts/latest/reference/activate-advanced-features.html) for your AWS environment.
 
 To learn whether an AWS service is within the scope of specific compliance programs, see [AWS services in Scope by Compliance Program](https://aws.amazon.com/compliance/services-in-scope/) and choose the compliance program that you are interested in. For general information, see [AWS Compliance Programs](https://aws.amazon.com/compliance/programs/).
 

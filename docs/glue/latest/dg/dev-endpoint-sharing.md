@@ -95,8 +95,6 @@ Your approach will depend on your use case. If you have a larger development end
 
 As described above, the number of Spark executors can be automatically calculated based on a combination of DPU (or `NumberOfWorkers`) and worker type. Each Spark application launches one driver and multiple executors. To calculate you will need the ` NumberOfWorkers` = `NumberOfExecutors + 1`. The matrix below explains how much capacity you need in your development endpoint based on the number of concurrent users.
 
-****
-
 | Number of concurrent notebook users | Number of Spark executors you want to allocate per user | Total NumberOfWorkers for your dev endpoint |
 | --- | --- | --- |
 | 3 | 5 | 18 |

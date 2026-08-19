@@ -115,7 +115,7 @@ Amazon Textract supports using temporary credentials.
 Amazon Textract does not support service-linked roles.
 
 **Note**
-Because Amazon Textract does not support service-linked roles, it does not support AWS service principals. For more information about service principals, see [AWS service principals](https://docs.aws.amazon.com//IAM/latest/UserGuide/reference_policies_elements_principal.html#principal-services) in the *IAM User Guide*.
+Because Amazon Textract does not support service-linked roles, it does not support AWS service principals. For more information about service principals, see [AWS service principals](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_principal.html#principal-services) in the *IAM User Guide*.
 
 ### Service Roles
 <a name="security_iam_service-with-iam-roles-service"></a>

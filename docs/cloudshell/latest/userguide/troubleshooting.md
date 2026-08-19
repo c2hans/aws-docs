@@ -249,7 +249,7 @@ For more information, see the [version 4 announcement](https://aws.amazon.com/bl
 
 **Cause:** Your AWS CloudShell VPC environment inherits the network settings of your VPC.
 
-**Solution:** To resolve this issue make sure that your VPC is set up correctly to access your resources. For more information, see VPC documentation [Connect your VPC to other networks](https://docs.aws.amazon.com//vpc/latest/userguide/extend-intro.html) and the and the Network Access Analyzer documentation [Network Access Analyzer](https://docs.aws.amazon.com//vpc/latest/network-access-analyzer/what-is-network-access-analyzer.html). You can find the IPv4 address that the AWS CloudShell VPC environment is using, by running the command **`ip -a`** inside your environment in the command line prompt, or on the VPC Console page.
+**Solution:** To resolve this issue make sure that your VPC is set up correctly to access your resources. For more information, see VPC documentation [Connect your VPC to other networks](https://docs.aws.amazon.com/vpc/latest/userguide/extend-intro.html) and the and the Network Access Analyzer documentation [Network Access Analyzer](https://docs.aws.amazon.com/vpc/latest/network-access-analyzer/what-is-network-access-analyzer.html). You can find the IPv4 address that the AWS CloudShell VPC environment is using, by running the command **`ip -a`** inside your environment in the command line prompt, or on the VPC Console page.
 
 ### The ENI used by AWS CloudShell for my VPC environment is not cleaned up
 <a name="unable-cleanup-VPC-ENI"></a>

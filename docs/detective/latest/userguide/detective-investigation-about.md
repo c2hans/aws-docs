@@ -87,5 +87,5 @@ From an entity profile, you can pivot to other entity and finding profiles, to i
 
 **Step 3: Take action**
 Based on the results of your investigation, take the appropriate action.
-For a finding that is a false positive, you can archive the finding. From Detective, you can archive GuardDuty findings. For more details, see [Archiving an Amazon GuardDuty finding](https://docs.aws.amazon.com//detective/latest/userguide/finding-update-status.html).
+For a finding that is a false positive, you can archive the finding. From Detective, you can archive GuardDuty findings. For more details, see [Archiving an Amazon GuardDuty finding](https://docs.aws.amazon.com/detective/latest/userguide/finding-update-status.html).
 Otherwise, you take the appropriate action to address the vulnerability and mitigate damage. For example, you might need to update the configuration of a resource.

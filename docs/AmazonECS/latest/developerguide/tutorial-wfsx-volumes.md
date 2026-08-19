@@ -30,7 +30,7 @@ It takes 20 to 45 minutes each time you launch or delete either the Active Direc
 
    To attach AWS managed policies.
 
-   1. Open the [IAM console](https://console.aws.amazon.com//iam/).
+   1. Open the [IAM console](https://console.aws.amazon.com/iam/).
 
    1. In the navigation pane, choose **Roles.**
 
@@ -57,7 +57,7 @@ It takes 20 to 45 minutes each time you launch or delete either the Active Direc
 
 1. Create an AWS Secrets Manager secret to use in the following steps. For more information, see [Get started with Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html#get-started) in the AWS *Secrets Manager User Guide*.
 
-   1. Open the [Secrets Manager console](https://console.aws.amazon.com//secretsmanager/).
+   1. Open the [Secrets Manager console](https://console.aws.amazon.com/secretsmanager/).
 
    1. Click **Store a new secret**.
 
@@ -102,7 +102,7 @@ The following table shows which security group outbound rules are required for t
 | --- | --- | --- | --- |
 | All traffic | All | All | 0.0.0.0/0 |
 
-1. Open the [EC2 console](https://console.aws.amazon.com//ec2/) and select **Security Groups** from the left-hand menu.
+1. Open the [EC2 console](https://console.aws.amazon.com/ec2/) and select **Security Groups** from the left-hand menu.
 
 1. From the list of security groups now displayed, select check the check-box to the left of the security group that you are using for this tutorial.
 
@@ -117,7 +117,7 @@ After your security group is verified and updated and your Active Directory is c
 
 **Create your first file system.**
 
-1. Open the [Amazon FSx console](https://console.aws.amazon.com//fsx/).
+1. Open the [Amazon FSx console](https://console.aws.amazon.com/fsx/).
 
 1. On the dashboard, choose **Create file system** to start the file system creation wizard.
 
@@ -350,7 +350,7 @@ It takes 20 to 45 minutes to delete the FSx for Windows File Server file system 
 
 **Delete FSx for Windows File Server file system.**
 
-1. Open the [Amazon FSx console](https://console.aws.amazon.com//fsx/)
+1. Open the [Amazon FSx console](https://console.aws.amazon.com/fsx/)
 
 1. Choose the radio button to the left of the FSx for Windows File Server file system that you just created.
 
@@ -360,7 +360,7 @@ It takes 20 to 45 minutes to delete the FSx for Windows File Server file system 
 
 **Delete AD.**
 
-1. Open the [Directory Service console](https://console.aws.amazon.com//directoryservicev2/).
+1. Open the [Directory Service console](https://console.aws.amazon.com/directoryservicev2/).
 
 1. Choose the radio button to the left of the AD you just created.
 
@@ -380,7 +380,7 @@ It takes 20 to 45 minutes to delete the FSx for Windows File Server file system 
 
 **Terminate EC2 instance.**
 
-1. Open the [Amazon EC2 console](https://console.aws.amazon.com//ec2/).
+1. Open the [Amazon EC2 console](https://console.aws.amazon.com/ec2/).
 
 1. From the left-hand menu, select **Instances**.
 
@@ -390,7 +390,7 @@ It takes 20 to 45 minutes to delete the FSx for Windows File Server file system 
 
 **Delete secret.**
 
-1. Open the [Secrets Manager console](https://console.aws.amazon.com//secretsmanager/).
+1. Open the [Secrets Manager console](https://console.aws.amazon.com/secretsmanager/).
 
 1. Select the secret you created for this walk through.
 

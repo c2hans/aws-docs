@@ -58,8 +58,6 @@ When you change a parameter, depending on the type of the parameter, the changes
 
 To optimize your Oracle DB instance for Siebel CRM, you can customize certain parameters. The following table shows some recommended parameter settings. For more information about performance tuning Siebel CRM, see [Siebel CRM Performance Tuning Guide](https://docs.oracle.com/cd/E63029_01/books/PerformTun/toc.htm).
 
-****
-
 | Parameter name | Default value | Guidance for optimal Siebel CRM performance |
 | --- | --- | --- |
 | \_always\_semi\_join | `CHOOSE` | `OFF` |
@@ -81,8 +79,6 @@ After you create your Siebel Database, you can copy the database by using the sn
 <a name="Oracle.Resources.Siebel.OtherComponents"></a>
 
 In addition to your Siebel Database, you can also use Amazon Web Services to support the other components of your Siebel CRM application architecture. You can find more information about the support provided by Amazon AWS for additional Siebel CRM components in the following table.
-
-****
 
 | Siebel CRM component | Amazon AWS Support |
 | --- | --- |

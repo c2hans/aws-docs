@@ -18,7 +18,7 @@ To automate public certificate issuance and renewal outside integrated services 
 
 Administrators can use ACM [Conditional Key Policies](https://docs.aws.amazon.com/acm/latest/userguide/acm-conditions.html) to control how end users issue new certificates. These Conditional keys allow restrictions to be placed on domains, validation methods, and other attributes related to a certificate request. If you encounter problems when requesting a certificate, see [Troubleshoot certificate requests](troubleshooting-cert-requests.md).
 
-To request a certificate for a private PKI using AWS Private CA, see [Request a private certificate in AWS Certificate ManagerRequest a private certificate](gs-acm-request-private.md).
+To request a certificate for a private PKI using AWS Private CA, see [Request a private certificate in AWS Certificate Manager](gs-acm-request-private.md).
 
 **Topics**
 + [AWS Certificate Manager public certificate characteristics and limitations](acm-certificate-characteristics.md)

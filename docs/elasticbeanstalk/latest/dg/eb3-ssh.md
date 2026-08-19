@@ -32,8 +32,6 @@ See [EC2 security groups](using-features.managing.ec2.console.md#using-features.
 ## Options
 <a name="eb3-sshoptions"></a>
 
-****
-
 |  Name  |  Description  |
 | --- | --- |
 | `-i`<br />or<br />`--instance` | Specifies the instance ID of the instance to which you connect. We recommend that you use this option. |

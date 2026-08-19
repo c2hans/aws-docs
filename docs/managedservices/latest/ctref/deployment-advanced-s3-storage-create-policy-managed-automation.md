@@ -14,8 +14,6 @@ Create an S3 bucket policy. The existing bucket policy (if any) is replaced with
 ## Change Type Details
 <a name="ct-220bdb8blaixf-DASc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-220bdb8blaixf |

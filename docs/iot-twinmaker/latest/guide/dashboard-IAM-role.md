@@ -12,7 +12,7 @@ To use your AWS IoT TwinMaker dashboards in Grafana, you create an IAM role and 
 ## Create an IAM policy
 <a name="IAM-policy"></a>
 
-Create an IAM policy called `{{YourWorkspaceId}}DashboardPolicy` in the IAM Console. This policy gives your workspaces access to Amazon S3 bucket and AWS IoT TwinMaker resources. You can also decide to use [AWS IoT Greengrass Edge Connector for Amazon Kinesis Video Streams](https://docs.aws.amazon.com//iot-twinmaker/latest/guide/video-integration.html), which requires permissions for the Kinesis Video Streams and AWS IoT SiteWise assets configured for the component. To fit your use case, choose one of the following policy templates.
+Create an IAM policy called `{{YourWorkspaceId}}DashboardPolicy` in the IAM Console. This policy gives your workspaces access to Amazon S3 bucket and AWS IoT TwinMaker resources. You can also decide to use [AWS IoT Greengrass Edge Connector for Amazon Kinesis Video Streams](https://docs.aws.amazon.com/iot-twinmaker/latest/guide/video-integration.html), which requires permissions for the Kinesis Video Streams and AWS IoT SiteWise assets configured for the component. To fit your use case, choose one of the following policy templates.
 
 **1. No video permissions policy**
 If you don't want to use the Grafana [Video Player panel](https://github.com/grafana/grafana-iot-twinmaker-app/blob/main/src/panels/video-player/README.md), create the policy using the following template.

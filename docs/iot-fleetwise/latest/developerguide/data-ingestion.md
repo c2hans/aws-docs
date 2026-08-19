@@ -20,7 +20,7 @@ To ingest data to the cloud, do the following:<a name="data-ingestion-flow"></a>
 
 1. Develop and install your Edge Agent for AWS IoT FleetWise software in your vehicle. For more information about how to work with the Edge Agent software, do the following to download the [*Edge Agent for AWS IoT FleetWise software Developer Guide*](https://github.com/aws/aws-iot-fleetwise-edge/blob/main/docs/dev-guide/edge-agent-dev-guide.md).
 
-   1. Navigate to the [AWS IoT FleetWise console](https://console.aws.amazon.com//iotfleetwise/home#/).
+   1. Navigate to the [AWS IoT FleetWise console](https://console.aws.amazon.com/iotfleetwise/home#/).
 
    1. On the service home page, in the **Get started with AWS IoT FleetWise** section, choose **Explore Edge Agent**.
 

@@ -40,7 +40,7 @@ Network Flow Monitor provides a distributor package in AWS Systems Manager for y
 
 If the installation is successful and the instances have permissions to access Network Flow Monitor endpoints, the agent will start collecting metrics and send reports to the Network Flow Monitor backend.
 
-Agents that are active (sending metrics data) incur billing costs. For more information about Network Flow Monitor and Amazon CloudWatch pricing, see Network Monitoring on the [Amazon CloudWatch pricing](https://aws.amazon.com//cloudwatch/pricing/) page. If you don't need metrics data temporarily, you can deactivate an agent. For more information, see [Activate or deactivate agents](#CloudWatch-NetworkFlowMonitor-agents-ec2-manage). If you no longer need Network Flow Monitor agents, you can uninstall them from the EC2 instances.
+Agents that are active (sending metrics data) incur billing costs. For more information about Network Flow Monitor and Amazon CloudWatch pricing, see Network Monitoring on the [Amazon CloudWatch pricing](https://aws.amazon.com/cloudwatch/pricing/) page. If you don't need metrics data temporarily, you can deactivate an agent. For more information, see [Activate or deactivate agents](#CloudWatch-NetworkFlowMonitor-agents-ec2-manage). If you no longer need Network Flow Monitor agents, you can uninstall them from the EC2 instances.
 
 **To uninstall agents from EC2 instances**
 
@@ -57,7 +57,7 @@ Agents that are active (sending metrics data) incur billing costs. For more info
 ## Activate or deactivate agents by using Systems Manager
 <a name="CloudWatch-NetworkFlowMonitor-agents-ec2-manage"></a>
 
-After you install a Network Flow Monitor agent with SSM, you must activate it to receive network flow metrics from the instance where it's installed. Agents that are active (sending metrics data) incur billing costs. For more information about Network Flow Monitor and Amazon CloudWatch pricing, see Network Monitoring on the [Amazon CloudWatch pricing](https://aws.amazon.com//cloudwatch/pricing/) page. If you don't need metrics data temporarily, you can deactivate an agent to prevent ongoing billing for the agent.
+After you install a Network Flow Monitor agent with SSM, you must activate it to receive network flow metrics from the instance where it's installed. Agents that are active (sending metrics data) incur billing costs. For more information about Network Flow Monitor and Amazon CloudWatch pricing, see Network Monitoring on the [Amazon CloudWatch pricing](https://aws.amazon.com/cloudwatch/pricing/) page. If you don't need metrics data temporarily, you can deactivate an agent to prevent ongoing billing for the agent.
 
 Network Flow Monitor provides a document in AWS Systems Manager that you can use activate or deactivate agents that you've installed on your EC2 instances. By running this document to manage the agents, you can activate them to begin receiving performance metrics. Or, you can deactivate them to temporarily stop metrics from being sent,without uninstalling the agents.
 

@@ -40,8 +40,6 @@ This metric has the following dimensions:
 
 If you've enabled CloudWatch metrics in your Spark-enabled Athena workgroup, Athena sends the following metric to CloudWatch per workgroup. The metric uses the `AmazonAthenaForApacheSpark` namespace.
 
-****
-
 | Metric name | Description |
 | --- | --- |
 | DPUCount  | Number of DPUs (data processing units) consumed during the session to execute the calculations. A DPU is a relative measure of processing power that consists of 4 vCPUs of compute capacity and 16 GB of memory. |
@@ -57,8 +55,6 @@ This metric has the following dimensions.
 <a name="notebooks-spark-metrics-interactive-sessions"></a>
 
 In the release version Apache Spark version 3.5, if you've enabled CloudWatch metrics in your Athena Spark workgroup, Athena sends the following metric to CloudWatch. The metric uses the `AmazonAthenaForApacheSpark` namespace.
-
-****
 
 | Name | Description |
 | --- | --- |

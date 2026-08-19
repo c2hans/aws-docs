@@ -14,8 +14,6 @@ Allow or disallow the automatic assignment of public IPv4 addresses for specifie
 ## Change Type Details
 <a name="ct-1pqxczuw5uwu6-MAVm-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1pqxczuw5uwu6 |

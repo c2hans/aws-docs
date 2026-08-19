@@ -64,7 +64,6 @@ Implementing this solution incurs billing for the associated AWS services. For m
 By default, this template launches in the US East (N. Virginia) AWS Region. Amazon FSx for Lustre is currently only available in specific AWS Regions. You must launch this solution in an AWS Region where Amazon FSx for Lustre is available. For more information, see the Amazon FSx section of [AWS Regions and Endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html) in the *AWS General Reference*.
 
 1. For **Parameters**, review the parameters for the template and modify them for the needs of your file system. This solution uses the following default values.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/fsx/latest/LustreGuide/additional-info.html)
 
 1. Choose **Next**.

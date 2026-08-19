@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/sharing-pr
 
 You can share a Profile with other accounts by:
 + Granting read-only permissions, which means the other account can associate the Profile to their VPCs. In this case all the DNS resources and configurations will be in effect on the associated VPCs.
-+ Granting admin permissions. In this case the accounts with the shared Profile can modify the Profile and then associate it with their VPCs. An owner can also create customer managed permissions that can be used to specify which actions can be performed by the consumer account. For more information, see [Customer managed permissions](https://docs.aws.amazon.com//ram/latest/userguide/create-customer-managed-permissions.html) in the *AWS RAM User Guide*.
++ Granting admin permissions. In this case the accounts with the shared Profile can modify the Profile and then associate it with their VPCs. An owner can also create customer managed permissions that can be used to specify which actions can be performed by the consumer account. For more information, see [Customer managed permissions](https://docs.aws.amazon.com/ram/latest/userguide/create-customer-managed-permissions.html) in the *AWS RAM User Guide*.
 
 Amazon Route 53 Profile integrates with AWS Resource Access Manager (AWS RAM) to enable resource sharing. AWS RAM is a service that enables you to share some Route 53 resources with other AWS accounts or through AWS Organizations. With AWS RAM, you share resources that you own by creating a *resource share*. A resource share specifies the resources to share, and the consumers with whom to share them. Consumers can include:
 + Specific AWS accounts

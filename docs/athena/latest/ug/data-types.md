@@ -9,8 +9,6 @@ When you run `CREATE TABLE`, you specify column names and the data type that eac
 
 To facilitate interoperability with other query engines, Athena uses [Apache Hive](https://cwiki.apache.org/confluence/display/Hive/LanguageManual+Types) data type names for DDL statements like `CREATE TABLE`. For DML queries like `SELECT`, `CTAS`, and `INSERT INTO`, Athena uses [Trino](https://trino.io/docs/current/language/types.html) data type names. The following table shows the data types supported in Athena. Where DDL and DML types differ in terms of name, availability, or syntax, they are shown in separate columns.
 
-****
-
 <table>
 <thead>
   <tr><th>DDL</th><th>DML</th><th>Description</th></tr>

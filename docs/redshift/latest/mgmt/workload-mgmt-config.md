@@ -30,8 +30,6 @@ You can configure WLM by using the Amazon Redshift console, the AWS CLI, the Ama
 
 The following table summarizes whether a property is applicable to automatic WLM or manual WLM.
 
-****
-
 | WLM property | Automatic WLM | Manual WLM |
 | --- | --- | --- |
 | Auto WLM | Yes | Yes |

@@ -84,7 +84,7 @@ If you're using Amazon VPC with Amazon Q Business, you need the following inform
 
 You can find the subnet and security group IDs in the Amazon VPC console. For more information, see [What is Amazon VPC?](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html) in the *Amazon VPC User Guide*.
 
-For more information about using Amazon VPC with Amazon Q Business, see [Using Amazon VPC with connectors.](https://docs.aws.amazon.com//amazonq/latest/qbusiness-ug/connector-vpc.html).
+For more information about using Amazon VPC with Amazon Q Business, see [Using Amazon VPC with connectors.](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connector-vpc.html).
 
 ## Web proxy
 <a name="connector-web-proxy"></a>

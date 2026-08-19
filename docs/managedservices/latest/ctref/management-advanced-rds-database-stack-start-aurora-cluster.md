@@ -14,8 +14,6 @@ Start an Aurora DB cluster, which is a provisioned capacity type and does not ha
 ## Change Type Details
 <a name="ct-02ocqy2i0jx3t-MARs-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-02ocqy2i0jx3t |

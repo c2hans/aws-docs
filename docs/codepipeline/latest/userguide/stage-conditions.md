@@ -51,7 +51,6 @@ Considerations for stage conditions are as follows:
 + You cannot override a condition if the condition is configured with a **Skip** result.
 + With the exception of **Skip** results, you can override a stage condition when starting a pipeline execution. For a stage condition where an override is engaged, the execution will perform as detailed in the following table.
 +
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/codepipeline/latest/userguide/stage-conditions.html)
 
 ## Considerations for rules configured for stage conditions

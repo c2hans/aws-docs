@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/aft-data-p
 # Data protection
 <a name="aft-data-protection"></a>
 
-The [AWS shared responsibility model](https://aws.amazon.com//compliance/shared-responsibility-model/) applies to data protection in AFT. For data protection purposes, we recommend the following best practices for security.
+The [AWS shared responsibility model](https://aws.amazon.com/compliance/shared-responsibility-model/) applies to data protection in AFT. For data protection purposes, we recommend the following best practices for security.
 + Follow the Data Protection guidelines provided by AWS Control Tower. For details, see [Data Protection in AWS Control Tower](controltower-console-encryption.md).
 + Preserve Terraform state configuration generated at the time of AFT deployment. For details, see [Deploy AWS Control Tower Account Factory for Terraform (AFT)](aft-getting-started.md).
 + Rotate sensitive credentials periodically as directed by your organization’s security policy. Examples of secrets are Terraform tokens, `git` tokens, and so forth.

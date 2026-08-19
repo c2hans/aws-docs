@@ -14,8 +14,6 @@ Delete an alias of an AWS Key Management Service (KMS) customer master key (CMK)
 ## Change Type Details
 <a name="ct-04gzyy008v1bg-MAKd-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-04gzyy008v1bg |

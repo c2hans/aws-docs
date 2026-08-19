@@ -64,7 +64,7 @@ When you create a new server, on the **Configure additional details** page, you 
 
 ![Logging pane for Configure additional details in the Create server wizard. Choose an existing log group is selected.](http://docs.aws.amazon.com/transfer/latest/userguide/images/logging-server-choose-existing-group.png)
 
-If you choose **Create log group**, the CloudWatch console ([https://console.aws.amazon.com/cloudwatch/](https://console.aws.amazon.com/cloudwatch/)) opens to the **Create log group** page. For details, see [ Create a log group in CloudWatch Logs](https://docs.aws.amazon.com//AmazonCloudWatch/latest/logs/Working-with-log-groups-and-streams.html#Create-Log-Group).
+If you choose **Create log group**, the CloudWatch console ([https://console.aws.amazon.com/cloudwatch/](https://console.aws.amazon.com/cloudwatch/)) opens to the **Create log group** page. For details, see [ Create a log group in CloudWatch Logs](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Working-with-log-groups-and-streams.html#Create-Log-Group).
 
 ## Updating logging for a server
 <a name="log-server-update"></a>

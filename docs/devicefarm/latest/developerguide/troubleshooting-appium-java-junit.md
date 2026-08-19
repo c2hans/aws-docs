@@ -7,9 +7,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/trouble
 
 The following topic lists error messages that occur during the upload of Appium Java JUnit tests and recommends workarounds to resolve each error.
 
-**Note**
-The instructions below are based on Linux x86\_64 and Mac.
-
 ## APPIUM\_JAVA\_JUNIT\_TEST\_PACKAGE\_UNZIP\_FAILED
 <a name="APPIUM_JAVA_JUNIT_TEST_PACKAGE_UNZIP_FAILED"></a>
 
@@ -46,7 +43,7 @@ Make sure that you can unzip the test package without errors. In the following e
          `— log4j-1.2.14.jar
    ```
 
-   For more information, see [Automatically run Appium tests in Device FarmIntegrating Appium tests with Device Farm](test-types-appium.md).
+   For more information, see [Automatically run Appium tests in Device Farm](test-types-appium.md).
 
 ## APPIUM\_JAVA\_JUNIT\_TEST\_PACKAGE\_DEPENDENCY\_DIR\_MISSING
 <a name="APPIUM_JAVA_JUNIT_TEST_PACKAGE_DEPENDENCY_DIR_MISSING"></a>
@@ -84,7 +81,7 @@ In the following example, the package's name is **zip-with-dependencies.zip**.
          `— log4j-1.2.14.jar
    ```
 
-   For more information, see [Automatically run Appium tests in Device FarmIntegrating Appium tests with Device Farm](test-types-appium.md).
+   For more information, see [Automatically run Appium tests in Device Farm](test-types-appium.md).
 
 ## APPIUM\_JAVA\_JUNIT\_TEST\_PACKAGE\_JAR\_MISSING\_IN\_DEPENDENCY\_DIR
 <a name="APPIUM_JAVA_JUNIT_TEST_PACKAGE_JAR_MISSING_IN_DEPENDENCY_DIR"></a>
@@ -122,7 +119,7 @@ In the following example, the package's name is **zip-with-dependencies.zip**.
          `— {{log4j-1.2.14.jar}}
    ```
 
-   For more information, see [Automatically run Appium tests in Device FarmIntegrating Appium tests with Device Farm](test-types-appium.md).
+   For more information, see [Automatically run Appium tests in Device Farm](test-types-appium.md).
 
 ## APPIUM\_JAVA\_JUNIT\_TEST\_PACKAGE\_TESTS\_JAR\_FILE\_MISSING
 <a name="APPIUM_JAVA_JUNIT_TEST_PACKAGE_TESTS_JAR_FILE_MISSING"></a>
@@ -160,7 +157,7 @@ In the following example, the package's name is **zip-with-dependencies.zip**.
          `— log4j-1.2.14.jar
    ```
 
-   For more information, see [Automatically run Appium tests in Device FarmIntegrating Appium tests with Device Farm](test-types-appium.md).
+   For more information, see [Automatically run Appium tests in Device Farm](test-types-appium.md).
 
 ## APPIUM\_JAVA\_JUNIT\_TEST\_PACKAGE\_CLASS\_FILE\_MISSING\_IN\_TESTS\_JAR
 <a name="APPIUM_JAVA_JUNIT_TEST_PACKAGE_CLASS_FILE_MISSING_IN_TESTS_JAR"></a>
@@ -222,7 +219,7 @@ In the following example, the package's name is **zip-with-dependencies.zip**.
          `— log4j-1.2.14.jar
    ```
 
-   For more information, see [Automatically run Appium tests in Device FarmIntegrating Appium tests with Device Farm](test-types-appium.md).
+   For more information, see [Automatically run Appium tests in Device Farm](test-types-appium.md).
 
 ## APPIUM\_JAVA\_JUNIT\_TEST\_PACKAGE\_JUNIT\_VERSION\_VALUE\_UNKNOWN
 <a name="APPIUM_JAVA_JUNIT_TEST_PACKAGE_JUNIT_VERSION_VALUE_UNKNOWN"></a>
@@ -263,7 +260,7 @@ In the following example, the package's name is **zip-with-dependencies.zip**.
 
    If the Appium Java JUnit package is valid, you will find the JUnit dependency file that is similar to the jar file {{junit-4.10.jar}} in our example. The name should consist of the keyword {{junit}} and its version number, which in this example is 4.10.
 
-   For more information, see [Automatically run Appium tests in Device FarmIntegrating Appium tests with Device Farm](test-types-appium.md).
+   For more information, see [Automatically run Appium tests in Device Farm](test-types-appium.md).
 
 ## APPIUM\_JAVA\_JUNIT\_TEST\_PACKAGE\_INVALID\_JUNIT\_VERSION
 <a name="APPIUM_JAVA_JUNIT_TEST_PACKAGE_INVALID_JUNIT_VERSION"></a>
@@ -304,4 +301,4 @@ In the following example, the package's name is **zip-with-dependencies.zip**.
 **Note**
 Your tests may not execute correctly if the JUnit version specified in your test package is lower than the minimum version 4.10 we support.
 
-   For more information, see [Automatically run Appium tests in Device FarmIntegrating Appium tests with Device Farm](test-types-appium.md).
+   For more information, see [Automatically run Appium tests in Device Farm](test-types-appium.md).

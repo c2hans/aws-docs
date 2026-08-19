@@ -41,4 +41,4 @@ If you sign up for a paid support plan, you’re responsible for a minimum one m
 
 For more information about AWS Support Plans, see the [AWS Support FAQs](https://aws.amazon.com/premiumsupport/faqs). You can also choose **Contact us** from the Support Plans console.
 
-To close your account, see [Closing an Account](https://docs.aws.amazon.com//awsaccountbilling/latest/aboutv2/close-account.html) in the *AWS Billing User Guide*.
+To close your account, see [Closing an Account](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/close-account.html) in the *AWS Billing User Guide*.

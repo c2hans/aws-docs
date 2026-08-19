@@ -9,7 +9,7 @@ You can monitor your MSK Provisioned cluster with Prometheus, an open-source mon
 
 For information about Prometheus, see the [Prometheus documentation](https://prometheus.io/docs).
 
-For information about using Prometheus, see [Enhance operational insights for Amazon MSK using Amazon Managed Service for Prometheus and Amazon Managed Grafana](https://aws.amazon.com/blogs//big-data/enhance-operational-insights-for-amazon-msk-using-amazon-managed-service-for-prometheus-and-amazon-managed-grafana/).
+For information about using Prometheus, see [Enhance operational insights for Amazon MSK using Amazon Managed Service for Prometheus and Amazon Managed Grafana](https://aws.amazon.com/blogs/big-data/enhance-operational-insights-for-amazon-msk-using-amazon-managed-service-for-prometheus-and-amazon-managed-grafana/).
 
 **Note**
 KRaft metadata mode and MSK Express brokers can't have open monitoring and public access both enabled.

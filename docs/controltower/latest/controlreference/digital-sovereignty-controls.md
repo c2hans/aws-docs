@@ -14,12 +14,12 @@ source_url: https://docs.aws.amazon.com/controltower/latest/controlreference/dig
   For more information, see [Region deny control applied to the OU](ou-region-deny.md).
 + *Encryption:* Features and controls that help you encrypt data, whether in transit, at rest, or in memory.
 
-  For example, see the control [CT.APPSYNC.PR.5: Require an AWS AppSync GraphQL API cache to have encryption at rest enabled](https://docs.aws.amazon.com//controltower/latest/controlreference/appsync-rules.html#ct-appsync-pr-5-description).
+  For example, see the control [CT.APPSYNC.PR.5: Require an AWS AppSync GraphQL API cache to have encryption at rest enabled](https://docs.aws.amazon.com/controltower/latest/controlreference/appsync-rules.html#ct-appsync-pr-5-description).
 + *Resiliency:* Ability to sustain operations through disruption or disconnection, which is essential in the case of events such as supply chain disruption, network interruption, and natural disaster.
 
-  For example see the control [CT.NETWORK-FIREWALL.PR.5: Require an AWS Network Firewall firewall to be deployed across multiple Availability Zones](https://docs.aws.amazon.com//controltower/latest/controlreference/network-firewall-rules.html#network-firewall-pr-5-description).
+  For example see the control [CT.NETWORK-FIREWALL.PR.5: Require an AWS Network Firewall firewall to be deployed across multiple Availability Zones](https://docs.aws.amazon.com/controltower/latest/controlreference/network-firewall-rules.html#network-firewall-pr-5-description).
 
-You can read more about digital sovereignty and AWS in the blog: [AWS Digital Sovereignty Pledge: Control without compromise.](https://aws.amazon.com//blogs/security/aws-digital-sovereignty-pledge-control-without-compromise/)
+You can read more about digital sovereignty and AWS in the blog: [AWS Digital Sovereignty Pledge: Control without compromise.](https://aws.amazon.com/blogs/security/aws-digital-sovereignty-pledge-control-without-compromise/)
 
 **The Data residency subgroup**
 Although the digital sovereignty group is primarily a group of preventive controls, it includes *preventive* and *detective* controls in the **Data residency** subgroup.

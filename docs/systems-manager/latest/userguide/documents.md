@@ -48,8 +48,6 @@ Documents offers these benefits:
 
 The following table describes the different types of SSM documents and their uses.
 
-****
-
 | Type | Use with | Details |
 | --- | --- | --- |
 | ApplicationConfiguration<br />ApplicationConfigurationSchema |  [AWS AppConfig](https://docs.aws.amazon.com/appconfig/latest/userguide/what-is-appconfig.html)  | AWS AppConfig lets you create, manage, and quickly deploy application configurations. You can store configuration data in an SSM document by creating a document that uses the `ApplicationConfiguration` document type. For more information, see [Freeform configurations](https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-creating-configuration-and-profile.html#free-form-configurations) in the *AWS AppConfig User Guide*.<br />If you create a configuration in an SSM document, then you must specify a corresponding JSON Schema. The schema uses the `ApplicationConfigurationSchema` document type and, like a set of rules, defines the allowable properties for each application configuration setting. For more information, see [About validators](https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-creating-configuration-and-profile-validators.html) in the *AWS AppConfig User Guide*. |

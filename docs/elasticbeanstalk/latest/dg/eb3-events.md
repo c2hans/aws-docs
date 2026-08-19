@@ -22,8 +22,6 @@ If the root directory contains a `platform.yaml` file specifying a custom platfo
 ## Options
 <a name="eb3-eventsoptions"></a>
 
-****
-
 |  Name  |  Description  |
 | --- | --- |
 | `-f`<br />or<br />`--follow` | Streams events. To cancel, press CTRL\+C. |

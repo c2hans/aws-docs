@@ -50,7 +50,7 @@ The format of a notification looks like the following sample:
 + `GENERATE_EVENTBRIDGE_EVENT`
 + `SEND_NOTIFICATION`
 
-For information about `ASSIGN_CONTACT_CATEGORY`, see [Error notifications: When conversational analytics can't analyze a contact Troubleshoot](contact-lens-error-notifications.md).
+For information about `ASSIGN_CONTACT_CATEGORY`, see [Error notifications: When conversational analytics can't analyze a contact](contact-lens-error-notifications.md).
 
 ## Supported trigger events
 <a name="supported-trigger-events"></a>

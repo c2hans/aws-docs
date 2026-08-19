@@ -22,8 +22,6 @@ CloudFront signed cookies allow you to control who can access your content when 
 
 When you create a signed cookie, you write a policy statement in JSON format that specifies the restrictions on the signed cookie, for example, how long the cookie is valid. You can use canned policies or custom policies. The following table compares canned and custom policies:
 
-****
-
 | Description | Canned policy | Custom policy |
 | --- | --- | --- |
 | You can reuse the policy statement for multiple files. To reuse the policy statement, you must use wildcard characters in the `Resource` object. For more information, see [Values that you specify in the policy statement for a custom policy for signed cookies](private-content-setting-signed-cookie-custom-policy.md#private-content-custom-policy-statement-cookies-values).)  | No | Yes |

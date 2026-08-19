@@ -28,4 +28,4 @@ The following AWS managed client-facing application supports trusted identity pr
 Both Lake Formation and Amazon S3 Access Grants are required for access control to AWS Glue Data Catalog and for Athena query results in Amazon S3.
 
 **Customer managed applications**
-To enable trusted identity propagation for users of *custom-developed applications*, see to [Access AWS services programmatically using trusted identity propagation](https://aws.amazon.com/blogs//security/access-aws-services-programmatically-using-trusted-identity-propagation/) in the *AWS Security Blog*.
+To enable trusted identity propagation for users of *custom-developed applications*, see to [Access AWS services programmatically using trusted identity propagation](https://aws.amazon.com/blogs/security/access-aws-services-programmatically-using-trusted-identity-propagation/) in the *AWS Security Blog*.

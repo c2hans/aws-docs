@@ -14,8 +14,6 @@ Attach an EBS volume to an EC2 instance. This change type provides an option tha
 ## Change Type Details
 <a name="ct-34jldf2qihaic-MAEa-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-34jldf2qihaic |

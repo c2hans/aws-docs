@@ -29,8 +29,6 @@ AWS Support Console has no API operations that can be used in the `Actions` elem
 
 The following actions are defined by AWS Support Console but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 | Actions | Description | Resource types (\*required) | Condition keys | Access level |
 | --- | --- | --- | --- | --- |
 |   [CheckSubscription](${AuthZDocPage})  | Grants permission to check whether the account has access to given product |  |   | Read |

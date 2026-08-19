@@ -36,8 +36,6 @@ CloudFront is subject to the following quotas.
 ## General quotas
 <a name="limits-general"></a>
 
-****
-
 | Entity | Default quota |
 | --- | --- |
 | Data transfer rate per distribution<br />(This quota doesn't apply for distributions subscribed to CloudFront flat-rate pricing plans. For more information, see [CloudFront flat-rate pricing plans](flat-rate-pricing-plan.md).) | 150 Gbps<br />[Request a higher quota](https://console.aws.amazon.com/support/home#/case/create?issueType=service-limit-increase) |
@@ -51,8 +49,6 @@ CloudFront is subject to the following quotas.
 
 ## General quotas on distributions
 <a name="limits-web-distributions"></a>
-
-****
 
 | Entity | Default quota |
 | --- | --- |
@@ -80,8 +76,6 @@ CloudFront is subject to the following quotas.
 ## General quotas on policies
 <a name="limits-policies"></a>
 
-****
-
 | Entity | Default quota |
 | --- | --- |
 | Custom cache policies per AWS account<br />(Does not apply to [CloudFront managed cache policies](using-managed-cache-policies.md)) | 20<br /> [Request a higher quota](https://console.aws.amazon.com/servicequotas/home/services/cloudfront/quotas/L-7D134442)  |
@@ -104,8 +98,6 @@ CloudFront is subject to the following quotas.
 ## Quotas on mTLS and trust stores
 <a name="quotas-mtls"></a>
 
-****
-
 |  Entity  |  Default quota  |
 | --- | --- |
 | Trust stores per AWS account | 20<br />[Request a higher quota](https://console.aws.amazon.com/support/home#/case/create?issueType=service-limit-increase) |
@@ -117,8 +109,6 @@ CloudFront is subject to the following quotas.
 
 ## Quotas on CloudFront Functions
 <a name="limits-functions"></a>
-
-****
 
 |  Entity  |  Default quota  |
 | --- | --- |
@@ -132,8 +122,6 @@ In addition to these quotas, there are some other restrictions when using CloudF
 ## Quotas on Connection Functions
 <a name="limits-connection-functions"></a>
 
-****
-
 |  Entity  |  Default quota  |
 | --- | --- |
 | Connection Functions per AWS account | 100 |
@@ -145,8 +133,6 @@ In addition to these quotas, there are some other restrictions when using Connec
 
 ## Quotas on key value stores
 <a name="limits-keyvaluestores"></a>
-
-****
 
 |  Entity  |  Default quota  |
 | --- | --- |
@@ -187,8 +173,6 @@ In addition to these quotas, there are some other restrictions when using Lambda
 ## Quotas on SSL certificates
 <a name="limits-ssl-certificates"></a>
 
-****
-
 | Entity | Default quota |
 | --- | --- |
 | SSL certificates per AWS account when serving HTTPS requests using dedicated IP addresses (no quota when serving HTTPS requests using SNI)<br />For more information, see [Use HTTPS with CloudFront](using-https.md). | 2<br />[Request a higher quota](https://console.aws.amazon.com/support/home#/case/create?issueType=service-limit-increase) |
@@ -200,8 +184,6 @@ There are also quotas on the number of SSL certificates that you can import into
 
 ## Quotas on invalidations
 <a name="limits-invalidations"></a>
-
-****
 
 | Entity | Default quota |
 | --- | --- |
@@ -223,16 +205,12 @@ There are also quotas on the number of SSL certificates that you can import into
 ## Quotas on WebSocket connections
 <a name="limits-websockets"></a>
 
-****
-
 | Entity | Default quota |
 | --- | --- |
 | Origin response timeout (idle timeout) | 10 minutes<br />If CloudFront hasn't detected any bytes sent from the origin to the client within the past 10 minutes, the connection is assumed to be idle and is closed. |
 
 ## Quotas on field-level encryption
 <a name="limits-field-level-encryption"></a>
-
-****
 
 | Entity | Default quota |
 | --- | --- |
@@ -251,8 +229,6 @@ There are also quotas on the number of SSL certificates that you can import into
 
 These quotas apply to CloudFront's legacy cache settings. We recommend using a [cache policy](controlling-the-cache-key.md) or [origin request policy](controlling-origin-requests.md) instead of the legacy settings.
 
-****
-
 | Entity | Default quota |
 | --- | --- |
 | Cookies per cache behavior<br />For more information, see [Cache content based on cookies](Cookies.md). | 10<br />[Request a higher quota](https://console.aws.amazon.com/support/home#/case/create?issueType=service-limit-increase) |
@@ -263,8 +239,6 @@ These quotas apply to CloudFront's legacy cache settings. We recommend using a [
 
 These quotas apply to CloudFront's legacy cache settings. We recommend using a [cache policy](controlling-the-cache-key.md) or [origin request policy](controlling-origin-requests.md) instead of the legacy settings.
 
-****
-
 | Entity | Default quota |
 | --- | --- |
 | Maximum number of characters in a query string | 128 characters |
@@ -273,8 +247,6 @@ These quotas apply to CloudFront's legacy cache settings. We recommend using a [
 
 ## Quotas on headers
 <a name="limits-custom-headers"></a>
-
-****
 
 | Entity | Default quota |
 | --- | --- |
@@ -290,8 +262,6 @@ These quotas apply to CloudFront's legacy cache settings. We recommend using a [
 
 ## Quotas on multi-tenant distributions
 <a name="limits-template"></a>
-
-****
 
 |  Entity  |  Default quota  |
 | --- | --- |
@@ -309,4 +279,4 @@ For more information about multi-tenant distributions, see [Understand how multi
 ## Related information
 <a name="related-information-cloudfront-quotas"></a>
 
-For more information, see [Amazon CloudFront endpoints and quotas](https://docs.aws.amazon.com//general/latest/gr/cf_region.html) in the * AWS General Reference*.
+For more information, see [Amazon CloudFront endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/cf_region.html) in the * AWS General Reference*.

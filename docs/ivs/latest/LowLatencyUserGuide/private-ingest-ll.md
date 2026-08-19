@@ -26,13 +26,13 @@ Ensure that your Amazon VPC is in a supported region:
 + us-east-2
 + us-west-2
 
-**Note:** While your Amazon VPC must be in one of these supported regions, IVS control-plane resources need not be in the same region or AWS account as the Amazon VPC. For more details, see [Global Solution, Regional Control](https://docs.aws.amazon.com//ivs/latest/LowLatencyUserGuide/what-is.html#what-is-aws).
+**Note:** While your Amazon VPC must be in one of these supported regions, IVS control-plane resources need not be in the same region or AWS account as the Amazon VPC. For more details, see [Global Solution, Regional Control](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/what-is.html#what-is-aws).
 
 To ingest a stream through an interface VPC endpoint, use a private ingest URL composed of the VPC endpoint’s DNS name and the stream key for the IVS resource (channel or stage ingest configuration), in this format:
 
 `rtmps://<VPC_ENDPOINT_DNS_NAME>/app/<STREAM_KEY>`
 
-To stream to a channel, create a channel and retrieve its stream key as explained in [set up streaming software](https://docs.aws.amazon.com//ivs/latest/LowLatencyUserGuide/getting-started-set-up-streaming.html). To stream to a stage using RTMP(S) or E-RTMP(S), create an [RTMP ingest configuration](https://docs.aws.amazon.com//ivs/latest/RealTimeUserGuide/rt-rtmp-publishing.html) and use its associated stream key.
+To stream to a channel, create a channel and retrieve its stream key as explained in [set up streaming software](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/getting-started-set-up-streaming.html). To stream to a stage using RTMP(S) or E-RTMP(S), create an [RTMP ingest configuration](https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/rt-rtmp-publishing.html) and use its associated stream key.
 
 Below is a quick walkthrough of streaming from an EC2 instance to an IVS channel or stage using an interface VPC endpoint:
 

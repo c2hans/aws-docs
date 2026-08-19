@@ -34,4 +34,4 @@ If you complete these steps successfully, you are now ready to move to the next 
 ## Next steps
 <a name="tutorial-stock-data-kplkcl-download-next"></a>
 
-[[Implement the producer](tutorial-stock-data-kplkcl-producer.md)Implement the producer](tutorial-stock-data-kplkcl-producer.md)
+[[Implement the producer](tutorial-stock-data-kplkcl-producer.md)](tutorial-stock-data-kplkcl-producer.md)

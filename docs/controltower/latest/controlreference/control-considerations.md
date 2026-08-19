@@ -14,4 +14,4 @@ When working with controls and OUs, consider the following properties:
 + Detective controls can be applied to an OU that has either the ConfigBaseline enabled or the AWSControlTowerBaseline.
 + Hook controls can now be deployed into any OU. The hook will deploy the AWSServiceRoleForControlTower Service Linked Role (SLR), into the account and activate the opt-in regions.
 
-For more information about how controls are applied to nested OUs, in AWS Control Tower, see [Nested Ous and controls](https://docs.aws.amazon.com//controltower/latest/userguide/nested-ous.html#nested-ous-and-controls).
+For more information about how controls are applied to nested OUs, in AWS Control Tower, see [Nested Ous and controls](https://docs.aws.amazon.com/controltower/latest/userguide/nested-ous.html#nested-ous-and-controls).

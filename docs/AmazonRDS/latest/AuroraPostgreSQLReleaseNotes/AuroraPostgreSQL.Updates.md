@@ -26,7 +26,7 @@ For a list of AWS Regions, see [ Aurora PostgreSQL Region availability](https://
 **Topics**
 + [PostgreSQL 18 versions](#aurorapostgresql-versions-version18)
 + [PostgreSQL 17 versions](#aurorapostgresql-versions-version17)
-+ [PostgreSQL 16 versions](#aurorapostgresql-versions-version16)
++ [PostgreSQL 16 versions (includes some deprecated versions)](#aurorapostgresql-versions-version16)
 + [PostgreSQL 15 versions (includes some deprecated versions)](#aurorapostgresql-versions-version15)
 + [PostgreSQL 14 versions (includes some deprecated versions)](#aurorapostgresql-versions-version14)
 + [PostgreSQL 13 versions (includes some deprecated versions)](#aurorapostgresql-versions-version13)
@@ -897,7 +897,7 @@ The Aurora PostgreSQL 17.0 preview release includes fixes for recent PostgreSQL 
 For details on the CVEs, see the [PostgreSQL release announcement](https://www.postgresql.org/about/news/postgresql-171-165-159-1414-1317-and-1221-released-2955/).
 For information about the potential impact on login roles, refer to this [PostgreSQL mailing list post](https://www.postgresql.org/message-id/CADOZwSb0UsEr4_UTFXC5k7%3DfyyK8uKXekucd%2B-uuGjJsGBfxgw%40mail.gmail.com).
 
-## PostgreSQL 16 versions
+## PostgreSQL 16 versions (includes some deprecated versions)
 <a name="aurorapostgresql-versions-version16"></a>
 
 **Migrating to Aurora PostgreSQL 16**
@@ -937,11 +937,11 @@ In addition, Aurora PostgreSQL doesn't support writebacks and sync operations si
 + [PostgreSQL 16.10](#aurorapostgresql-versions-version1610x)
 + [PostgreSQL 16.9](#aurorapostgresql-versions-version169x)
 + [PostgreSQL 16.8](#aurorapostgresql-versions-version168x)
-+ [PostgreSQL 16.6](#aurorapostgresql-versions-version166x)
-+ [PostgreSQL 16.4](#aurorapostgresql-versions-version164x)
-+ [PostgreSQL 16.3](#aurorapostgresql-versions-version163x)
-+ [PostgreSQL 16.2](#AuroraPostgreSQL.Updates.20180305.162X)
-+ [PostgreSQL 16.1](#AuroraPostgreSQL.Updates.20180305.161X)
++ [PostgreSQL 16.6 (Deprecated)](#aurorapostgresql-versions-version166x)
++ [PostgreSQL 16.4 (Deprecated)](#aurorapostgresql-versions-version164x)
++ [PostgreSQL 16.3 (Deprecated)](#aurorapostgresql-versions-version163x)
++ [PostgreSQL 16.2 (Deprecated)](#AuroraPostgreSQL.Updates.20180305.162X)
++ [PostgreSQL 16.1 (Deprecated)](#AuroraPostgreSQL.Updates.20180305.161X)
 
 ### PostgreSQL 16.13
 <a name="aurorapostgresql-versions-version1613x"></a>
@@ -1652,7 +1652,7 @@ This release of Aurora PostgreSQL is compatible with PostgreSQL 16.8. For more i
   + Update the `rds_tools` extension to 1.9.
   + Update the `rdkit` extension to Release\_2024\_09\_3.
 
-### PostgreSQL 16.6
+### PostgreSQL 16.6 (Deprecated)
 <a name="aurorapostgresql-versions-version166x"></a>
 
 This release of Aurora PostgreSQL is compatible with PostgreSQL 16.6. For more information about the improvements in PostgreSQL 16.6, see [PostgreSQL release 16.6](https://www.postgresql.org/docs/16/release-16-6.html).
@@ -1814,7 +1814,7 @@ This release of Aurora PostgreSQL is compatible with PostgreSQL 16.6. For more i
   + `RDKit` extension to 2024\_03\_6 release (4.6).
   + `pg_hint_plan` extension to version 1.6.1.
 
-### PostgreSQL 16.4
+### PostgreSQL 16.4 (Deprecated)
 <a name="aurorapostgresql-versions-version164x"></a>
 
 This release of Aurora PostgreSQL is compatible with PostgreSQL 16.4. For more information about the improvements in PostgreSQL 16.4, see [PostgreSQL release 16.4](https://www.postgresql.org/docs/16/release-16-4.html).
@@ -1968,7 +1968,7 @@ This release of Aurora PostgreSQL is compatible with PostgreSQL 16.4. For more i
   + pg\_ad\_mapping extension to version 1.0.
   + `HypoPG` extension to version 1.4.1.
 
-### PostgreSQL 16.3
+### PostgreSQL 16.3 (Deprecated)
 <a name="aurorapostgresql-versions-version163x"></a>
 
 This release of Aurora PostgreSQL is compatible with PostgreSQL 16.3. For more information about the improvements in PostgreSQL 16.3, see [PostgreSQL release 16.3](https://www.postgresql.org/docs/16/release-16-3.html).
@@ -2083,7 +2083,7 @@ This release of Aurora PostgreSQL is compatible with PostgreSQL 16.3. For more i
   + `PostGIS` extension to version 3.4.2.
   + `RDKit` extension to version 2024\_03\_1.
 
-### PostgreSQL 16.2
+### PostgreSQL 16.2 (Deprecated)
 <a name="AuroraPostgreSQL.Updates.20180305.162X"></a>
 
 This release of Aurora PostgreSQL is compatible with PostgreSQL 16.2. For more information about the improvements in PostgreSQL 16.2, see [PostgreSQL release 16.2](https://www.postgresql.org/docs/16/release-16-2.html).
@@ -2209,7 +2209,7 @@ This release of Aurora PostgreSQL is compatible with PostgreSQL 16.2. For more i
   + `pgtle.enable_clientauth`
   + `pgtle.passcheck_db_name`
 
-### PostgreSQL 16.1
+### PostgreSQL 16.1 (Deprecated)
 <a name="AuroraPostgreSQL.Updates.20180305.161X"></a>
 
 This release of Aurora PostgreSQL is compatible with PostgreSQL 16.1. For more information about the improvements in PostgreSQL 16.1, see [PostgreSQL release 16.1](https://www.postgresql.org/docs/16/release-16-1.html).
@@ -2362,12 +2362,12 @@ For information about extensions and modules, see [Extensions supported for Auro
 + [PostgreSQL 15.13](#aurorapostgresql-versions-version1513x)
 + [PostgreSQL 15.12](#aurorapostgresql-versions-version1512x)
 + [PostgreSQL 15.10](#aurorapostgresql-versions-version1510x)
-+ [PostgreSQL 15.8](#aurorapostgresql-versions-version158x)
-+ [PostgreSQL 15.7](#aurorapostgresql-versions-version157x)
-+ [PostgreSQL 15.6](#AuroraPostgreSQL.Updates.20180305.156X)
-+ [PostgreSQL 15.5](#AuroraPostgreSQL.Updates.20180305.155X)
-+ [PostgreSQL 15.4](#AuroraPostgreSQL.Updates.20180305.154X)
-+ [PostgreSQL 15.3](#AuroraPostgreSQL.Updates.20180305.153X)
++ [PostgreSQL 15.8 (Deprecated)](#aurorapostgresql-versions-version158x)
++ [PostgreSQL 15.7 (Deprecated)](#aurorapostgresql-versions-version157x)
++ [PostgreSQL 15.6 (Deprecated)](#AuroraPostgreSQL.Updates.20180305.156X)
++ [PostgreSQL 15.5 (Deprecated)](#AuroraPostgreSQL.Updates.20180305.155X)
++ [PostgreSQL 15.4 (Deprecated)](#AuroraPostgreSQL.Updates.20180305.154X)
++ [PostgreSQL 15.3 (Deprecated)](#AuroraPostgreSQL.Updates.20180305.153X)
 + [PostgreSQL 15.2 (Deprecated)](#AuroraPostgreSQL.Updates.20180305.152X)
 
 ### PostgreSQL 15.17
@@ -3212,7 +3212,7 @@ This release of Aurora PostgreSQL is compatible with PostgreSQL 15.10. For more 
   + `RDKit` extension to 2024\_03\_6 release (4.6).
   + `pg_hint_plan` extension to version 1.5.2.
 
-### PostgreSQL 15.8
+### PostgreSQL 15.8 (Deprecated)
 <a name="aurorapostgresql-versions-version158x"></a>
 
 This release of Aurora PostgreSQL is compatible with PostgreSQL 15.8. For more information about the improvements in PostgreSQL 15.8, see [PostgreSQL release 15.8](https://www.postgresql.org/docs/15/release-15-8.html).
@@ -3365,7 +3365,7 @@ This release of Aurora PostgreSQL is compatible with PostgreSQL 15.8. For more i
   + pg\_ad\_mapping extension to version 1.0.
   + `HypoPG` extension to version 1.4.1.
 
-### PostgreSQL 15.7
+### PostgreSQL 15.7 (Deprecated)
 <a name="aurorapostgresql-versions-version157x"></a>
 
 This release of Aurora PostgreSQL is compatible with PostgreSQL 15.7. For more information about the improvements in PostgreSQL 15.7, see [PostgreSQL release 15.7](https://www.postgresql.org/docs/15/release-15-7.html).
@@ -3478,7 +3478,7 @@ This release of Aurora PostgreSQL is compatible with PostgreSQL 15.7. For more i
   + `PostGIS` extension to version 3.4.2.
   + `RDKit` extension to version 2024\_03\_1.
 
-### PostgreSQL 15.6
+### PostgreSQL 15.6 (Deprecated)
 <a name="AuroraPostgreSQL.Updates.20180305.156X"></a>
 
 This release of Aurora PostgreSQL is compatible with PostgreSQL 15.6. For more information about the improvements in PostgreSQL 15.6, see [PostgreSQL release 15.6](https://www.postgresql.org/docs/15/release-15-6.html).
@@ -3605,7 +3605,7 @@ This release of Aurora PostgreSQL is compatible with PostgreSQL 15.6. For more i
   + `pgtle.enable_clientauth`
   + `pgtle.passcheck_db_name`
 
-### PostgreSQL 15.5
+### PostgreSQL 15.5 (Deprecated)
 <a name="AuroraPostgreSQL.Updates.20180305.155X"></a>
 
 This release of Aurora PostgreSQL is compatible with PostgreSQL 15.5. For more information about the improvements in PostgreSQL 15.5, see [PostgreSQL release 15.5](https://www.postgresql.org/docs/15/release-15-5.html).
@@ -3769,7 +3769,7 @@ Refer to the Aurora version policy to help you to decide how often to upgrade an
 
 For information about extensions and modules, see [Extensions supported for Aurora PostgreSQL 15](AuroraPostgreSQL.Extensions.md#AuroraPostgreSQL.Extensions.15).
 
-### PostgreSQL 15.4
+### PostgreSQL 15.4 (Deprecated)
 <a name="AuroraPostgreSQL.Updates.20180305.154X"></a>
 
 This release of Aurora PostgreSQL is compatible with PostgreSQL 15.4. For more information about the improvements in PostgreSQL 15.4, see [PostgreSQL release 15.4](https://www.postgresql.org/docs/15/release-15-4.html).
@@ -3951,7 +3951,7 @@ This release of Aurora PostgreSQL is compatible with PostgreSQL 15.4. For more i
 
 For information about extensions and modules, see [Extensions supported for Aurora PostgreSQL 15](AuroraPostgreSQL.Extensions.md#AuroraPostgreSQL.Extensions.15).
 
-### PostgreSQL 15.3
+### PostgreSQL 15.3 (Deprecated)
 <a name="AuroraPostgreSQL.Updates.20180305.153X"></a>
 
 This release of Aurora PostgreSQL is compatible with PostgreSQL 15.3. For more information about the improvements in PostgreSQL 15.3, see [PostgreSQL release 15.3](https://www.postgresql.org/docs/15/release-15-3.html).
@@ -4091,7 +4091,7 @@ This release of Aurora PostgreSQL is compatible with PostgreSQL 15.3. For more i
 #### Aurora PostgreSQL 15.3.0, July 13, 2023
 <a name="AuroraPostgreSQL.Updates.20180305.1530"></a>
 
-Following the announcement of updates to the PostgreSQL database by the open source community, we have updated Amazon Aurora PostgreSQL-Compatible Edition to support PostgreSQL versions 15.3, 14.8, 13.11, 12.15, and 11.20. These releases contains product improvements and bug fixes made by the PostgreSQL community, along with Aurora-specific improvements. The releases also contain new features and improvements for [Babelfish for Aurora PostgreSQL version 3.2](AuroraBabelfish.Updates.md), and improved support for [AWS Database Migration Service](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Target.PostgreSQL.html#CHAP_Target.PostgreSQL.Babelfish). Refer to the [Amazon Aurora versions](https://docs.aws.amazon.com//AmazonRDS/latest/AuroraUserGuide/Aurora.VersionPolicy.html) to help you to decide how often to upgrade and how to plan your upgrade process. As a reminder, if you are running any version of Amazon Aurora PostgreSQL 11, you must upgrade to a newer major version by February 29, 2024.
+Following the announcement of updates to the PostgreSQL database by the open source community, we have updated Amazon Aurora PostgreSQL-Compatible Edition to support PostgreSQL versions 15.3, 14.8, 13.11, 12.15, and 11.20. These releases contains product improvements and bug fixes made by the PostgreSQL community, along with Aurora-specific improvements. The releases also contain new features and improvements for [Babelfish for Aurora PostgreSQL version 3.2](AuroraBabelfish.Updates.md), and improved support for [AWS Database Migration Service](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Target.PostgreSQL.html#CHAP_Target.PostgreSQL.Babelfish). Refer to the [Amazon Aurora versions](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.VersionPolicy.html) to help you to decide how often to upgrade and how to plan your upgrade process. As a reminder, if you are running any version of Amazon Aurora PostgreSQL 11, you must upgrade to a newer major version by February 29, 2024.
 
 **New features**
 + This release contains memory management improvements which increase database stability and availability by proactively preventing issues caused by insufficient memory. For more information, see [Improved memory management in Aurora PostgreSQL](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraPostgreSQL.BestPractices.memory.management).
@@ -4303,13 +4303,13 @@ Due to Aurora's unique distributed storage system, Amazon Aurora PostgreSQL vers
 + [PostgreSQL 14.19](#aurorapostgresql-versions-version1419x)
 + [PostgreSQL 14.18](#aurorapostgresql-versions-version1418x)
 + [PostgreSQL 14.17](#aurorapostgresql-versions-version1417x)
-+ [PostgreSQL 14.15](#aurorapostgresql-versions-version1415x)
-+ [PostgreSQL 14.13](#aurorapostgresql-versions-version1413x)
-+ [PostgreSQL 14.12](#aurorapostgresql-versions-version1412x)
-+ [PostgreSQL 14.11](#AuroraPostgreSQL.Updates.20180305.1411X)
-+ [PostgreSQL 14.10](#AuroraPostgreSQL.Updates.20180305.1410X)
-+ [PostgreSQL 14.9](#AuroraPostgreSQL.Updates.20180305.149X)
-+ [PostgreSQL 14.8](#AuroraPostgreSQL.Updates.20180305.148X)
++ [PostgreSQL 14.15 (Deprecated)](#aurorapostgresql-versions-version1415x)
++ [PostgreSQL 14.13 (Deprecated)](#aurorapostgresql-versions-version1413x)
++ [PostgreSQL 14.12 (Deprecated)](#aurorapostgresql-versions-version1412x)
++ [PostgreSQL 14.11 (Deprecated)](#AuroraPostgreSQL.Updates.20180305.1411X)
++ [PostgreSQL 14.10 (Deprecated)](#AuroraPostgreSQL.Updates.20180305.1410X)
++ [PostgreSQL 14.9 (Deprecated)](#AuroraPostgreSQL.Updates.20180305.149X)
++ [PostgreSQL 14.8 (Deprecated)](#AuroraPostgreSQL.Updates.20180305.148X)
 + [PostgreSQL 14.7 (Deprecated)](#AuroraPostgreSQL.Updates.20180305.147X)
 + [PostgreSQL 14.6](#AuroraPostgreSQL.Updates.20180305.146X)
 + [PostgreSQL 14.5 (Deprecated)](#AuroraPostgreSQL.Updates.20180305.145X)
@@ -4999,7 +4999,7 @@ This release of Aurora PostgreSQL is compatible with PostgreSQL 14.17. For more 
   + Update the `rds_tools` extension to 1.9.
   + Update the `rdkit` extension to Release\_2024\_09\_3.
 
-### PostgreSQL 14.15
+### PostgreSQL 14.15 (Deprecated)
 <a name="aurorapostgresql-versions-version1415x"></a>
 
 This release of Aurora PostgreSQL is compatible with PostgreSQL 14.15. For more information about the improvements in PostgreSQL 14.15, see [PostgreSQL release 14.15](https://www.postgresql.org/docs/14/release-14-15.html).
@@ -5156,7 +5156,7 @@ This release of Aurora PostgreSQL is compatible with PostgreSQL 14.15. For more 
   + `RDKit` extension to 2024\_03\_6 release (4.6).
   + The `pg_hint_plan` extension to version extension 1.4.3.
 
-### PostgreSQL 14.13
+### PostgreSQL 14.13 (Deprecated)
 <a name="aurorapostgresql-versions-version1413x"></a>
 
 This release of Aurora PostgreSQL is compatible with PostgreSQL 14.13. For more information about the improvements in PostgreSQL 14.13, see [PostgreSQL release 14.13](https://www.postgresql.org/docs/14/release-14-13.html).
@@ -5306,7 +5306,7 @@ This release of Aurora PostgreSQL is compatible with PostgreSQL 14.13. For more 
   + pg\_ad\_mapping extension to version 1.0.
   + `HypoPG` extension to version 1.4.1.
 
-### PostgreSQL 14.12
+### PostgreSQL 14.12 (Deprecated)
 <a name="aurorapostgresql-versions-version1412x"></a>
 
 This release of Aurora PostgreSQL is compatible with PostgreSQL 14.12. For more information about the improvements in PostgreSQL 14.12, see [PostgreSQL release 14.12](https://www.postgresql.org/docs/14/release-14-12.html).
@@ -5419,7 +5419,7 @@ This release of Aurora PostgreSQL is compatible with PostgreSQL 14.12. For more 
   + `PostGIS` extension to version 3.4.2.
   + `RDKit` extension to version 2024\_03\_1.
 
-### PostgreSQL 14.11
+### PostgreSQL 14.11 (Deprecated)
 <a name="AuroraPostgreSQL.Updates.20180305.1411X"></a>
 
 This release of Aurora PostgreSQL is compatible with PostgreSQL 14.11. For more information about the improvements in PostgreSQL 14.11, see [PostgreSQL release 14.11](https://www.postgresql.org/docs/14/release-14-11.html).
@@ -5546,7 +5546,7 @@ This release of Aurora PostgreSQL is compatible with PostgreSQL 14.11. For more 
   + `pgtle.enable_clientauth`
   + `pgtle.passcheck_db_name`
 
-### PostgreSQL 14.10
+### PostgreSQL 14.10 (Deprecated)
 <a name="AuroraPostgreSQL.Updates.20180305.1410X"></a>
 
 This release of Aurora PostgreSQL is compatible with PostgreSQL 14.10. For more information about the improvements in PostgreSQL 14.10, see [PostgreSQL release 14.10](https://www.postgresql.org/docs/14/release-14-10.html).
@@ -5709,7 +5709,7 @@ Refer to the Aurora version policy to help you to decide how often to upgrade an
 
 For information about extensions and modules, see [Extensions supported for Aurora PostgreSQL 14](AuroraPostgreSQL.Extensions.md#AuroraPostgreSQL.Extensions.14).
 
-### PostgreSQL 14.9
+### PostgreSQL 14.9 (Deprecated)
 <a name="AuroraPostgreSQL.Updates.20180305.149X"></a>
 
 This release of Aurora PostgreSQL is compatible with PostgreSQL 14.9. For more information about the improvements in PostgreSQL 14.9, see [PostgreSQL release 14.9](https://www.postgresql.org/docs/14/release-14-9.html).
@@ -5889,7 +5889,7 @@ This release of Aurora PostgreSQL is compatible with PostgreSQL 14.9. For more i
 
 For information about extensions and modules, see [Extensions supported for Aurora PostgreSQL 14](AuroraPostgreSQL.Extensions.md#AuroraPostgreSQL.Extensions.14).
 
-### PostgreSQL 14.8
+### PostgreSQL 14.8 (Deprecated)
 <a name="AuroraPostgreSQL.Updates.20180305.148X"></a>
 
 This release of Aurora PostgreSQL is compatible with PostgreSQL 14.8. For more information about the improvements in PostgreSQL 14.8, see [PostgreSQL release 14.8](https://www.postgresql.org/docs/14/release-14-8.html).
@@ -6028,7 +6028,7 @@ This release of Aurora PostgreSQL is compatible with PostgreSQL 14.8. For more i
 #### Aurora PostgreSQL 14.8.0, July 13, 2023
 <a name="AuroraPostgreSQL.Updates.20180305.1480"></a>
 
-Following the announcement of updates to the PostgreSQL database by the open source community, we have updated Amazon Aurora PostgreSQL-Compatible Edition to support PostgreSQL versions 15.3, 14.8, 13.11, 12.15, and 11.20. These releases contains product improvements and bug fixes made by the PostgreSQL community, along with Aurora-specific improvements. The releases also contain new features and improvements for [Babelfish for Aurora PostgreSQL version 3.2](AuroraBabelfish.Updates.md), and improved support for [AWS Database Migration Service](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Target.PostgreSQL.html#CHAP_Target.PostgreSQL.Babelfish). Refer to the [Amazon Aurora versions](https://docs.aws.amazon.com//AmazonRDS/latest/AuroraUserGuide/Aurora.VersionPolicy.html) to help you to decide how often to upgrade and how to plan your upgrade process. As a reminder, if you are running any version of Amazon Aurora PostgreSQL 11, you must upgrade to a newer major version by February 29, 2024.
+Following the announcement of updates to the PostgreSQL database by the open source community, we have updated Amazon Aurora PostgreSQL-Compatible Edition to support PostgreSQL versions 15.3, 14.8, 13.11, 12.15, and 11.20. These releases contains product improvements and bug fixes made by the PostgreSQL community, along with Aurora-specific improvements. The releases also contain new features and improvements for [Babelfish for Aurora PostgreSQL version 3.2](AuroraBabelfish.Updates.md), and improved support for [AWS Database Migration Service](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Target.PostgreSQL.html#CHAP_Target.PostgreSQL.Babelfish). Refer to the [Amazon Aurora versions](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.VersionPolicy.html) to help you to decide how often to upgrade and how to plan your upgrade process. As a reminder, if you are running any version of Amazon Aurora PostgreSQL 11, you must upgrade to a newer major version by February 29, 2024.
 
 **New features**
 + This release contains memory management improvements which increase database stability and availability by proactively preventing issues caused by insufficient memory. For more information, see [Improved memory management in Aurora PostgreSQL](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraPostgreSQL.BestPractices.memory.management).
@@ -8256,7 +8256,7 @@ This release of Aurora PostgreSQL is compatible with PostgreSQL 13.11. For more 
 #### Aurora PostgreSQL 13.11.0, July 13, 2023
 <a name="AuroraPostgreSQL.Updates.20180305.13110"></a>
 
-Following the announcement of updates to the PostgreSQL database by the open source community, we have updated Amazon Aurora PostgreSQL-Compatible Edition to support PostgreSQL versions 15.3, 14.8, 13.11, 12.15, and 11.20. These releases contains product improvements and bug fixes made by the PostgreSQL community, along with Aurora-specific improvements. The releases also contain new features and improvements for [Babelfish for Aurora PostgreSQL version 3.2](AuroraBabelfish.Updates.md), and improved support for [AWS Database Migration Service](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Target.PostgreSQL.html#CHAP_Target.PostgreSQL.Babelfish). Refer to the [Amazon Aurora versions](https://docs.aws.amazon.com//AmazonRDS/latest/AuroraUserGuide/Aurora.VersionPolicy.html) to help you to decide how often to upgrade and how to plan your upgrade process. As a reminder, if you are running any version of Amazon Aurora PostgreSQL 11, you must upgrade to a newer major version by February 29, 2024.
+Following the announcement of updates to the PostgreSQL database by the open source community, we have updated Amazon Aurora PostgreSQL-Compatible Edition to support PostgreSQL versions 15.3, 14.8, 13.11, 12.15, and 11.20. These releases contains product improvements and bug fixes made by the PostgreSQL community, along with Aurora-specific improvements. The releases also contain new features and improvements for [Babelfish for Aurora PostgreSQL version 3.2](AuroraBabelfish.Updates.md), and improved support for [AWS Database Migration Service](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Target.PostgreSQL.html#CHAP_Target.PostgreSQL.Babelfish). Refer to the [Amazon Aurora versions](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.VersionPolicy.html) to help you to decide how often to upgrade and how to plan your upgrade process. As a reminder, if you are running any version of Amazon Aurora PostgreSQL 11, you must upgrade to a newer major version by February 29, 2024.
 
 **New features**
 + This release contains memory management improvements which increase database stability and availability by proactively preventing issues caused by insufficient memory. For more information, see [Improved memory management in Aurora PostgreSQL](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraPostgreSQL.BestPractices.memory.management).
@@ -10091,7 +10091,7 @@ This release of Aurora PostgreSQL is compatible with PostgreSQL 12.15. For more 
 #### Aurora PostgreSQL 12.15.0, July 13, 2023
 <a name="AuroraPostgreSQL.Updates.20180305.12150"></a>
 
-Following the announcement of updates to the PostgreSQL database by the open source community, we have updated Amazon Aurora PostgreSQL-Compatible Edition to support PostgreSQL versions 15.3, 14.8, 13.11, 12.15, and 11.20. These releases contains product improvements and bug fixes made by the PostgreSQL community, along with Aurora-specific improvements. The releases also contain new features and improvements for [Babelfish for Aurora PostgreSQL version 3.2](AuroraBabelfish.Updates.md), and improved support for [AWS Database Migration Service](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Target.PostgreSQL.html#CHAP_Target.PostgreSQL.Babelfish). Refer to the [Amazon Aurora versions](https://docs.aws.amazon.com//AmazonRDS/latest/AuroraUserGuide/Aurora.VersionPolicy.html) to help you to decide how often to upgrade and how to plan your upgrade process. As a reminder, if you are running any version of Amazon Aurora PostgreSQL 11, you must upgrade to a newer major version by February 29, 2024.
+Following the announcement of updates to the PostgreSQL database by the open source community, we have updated Amazon Aurora PostgreSQL-Compatible Edition to support PostgreSQL versions 15.3, 14.8, 13.11, 12.15, and 11.20. These releases contains product improvements and bug fixes made by the PostgreSQL community, along with Aurora-specific improvements. The releases also contain new features and improvements for [Babelfish for Aurora PostgreSQL version 3.2](AuroraBabelfish.Updates.md), and improved support for [AWS Database Migration Service](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Target.PostgreSQL.html#CHAP_Target.PostgreSQL.Babelfish). Refer to the [Amazon Aurora versions](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.VersionPolicy.html) to help you to decide how often to upgrade and how to plan your upgrade process. As a reminder, if you are running any version of Amazon Aurora PostgreSQL 11, you must upgrade to a newer major version by February 29, 2024.
 
 **New features**
 + This release contains memory management improvements which increase database stability and availability by proactively preventing issues caused by insufficient memory. For more information, see [Improved memory management in Aurora PostgreSQL](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraPostgreSQL.BestPractices.memory.management).
@@ -11474,7 +11474,7 @@ This release of Aurora PostgreSQL is compatible with PostgreSQL 11.20. For more 
 #### Aurora PostgreSQL 11.20.0, July 13, 2023
 <a name="AuroraPostgreSQL.Updates.20180305.11200"></a>
 
-Following the announcement of updates to the PostgreSQL database by the open source community, we have updated Amazon Aurora PostgreSQL-Compatible Edition to support PostgreSQL versions 15.3, 14.8, 13.11, 12.15, and 11.20. These releases contains product improvements and bug fixes made by the PostgreSQL community, along with Aurora-specific improvements. The releases also contain new features and improvements for [Babelfish for Aurora PostgreSQL version 3.2](AuroraBabelfish.Updates.md), and improved support for [AWS Database Migration Service](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Target.PostgreSQL.html#CHAP_Target.PostgreSQL.Babelfish). Refer to the [Amazon Aurora versions](https://docs.aws.amazon.com//AmazonRDS/latest/AuroraUserGuide/Aurora.VersionPolicy.html) to help you to decide how often to upgrade and how to plan your upgrade process. As a reminder, if you are running any version of Amazon Aurora PostgreSQL 11, you must upgrade to a newer major version by February 29, 2024.
+Following the announcement of updates to the PostgreSQL database by the open source community, we have updated Amazon Aurora PostgreSQL-Compatible Edition to support PostgreSQL versions 15.3, 14.8, 13.11, 12.15, and 11.20. These releases contains product improvements and bug fixes made by the PostgreSQL community, along with Aurora-specific improvements. The releases also contain new features and improvements for [Babelfish for Aurora PostgreSQL version 3.2](AuroraBabelfish.Updates.md), and improved support for [AWS Database Migration Service](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Target.PostgreSQL.html#CHAP_Target.PostgreSQL.Babelfish). Refer to the [Amazon Aurora versions](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.VersionPolicy.html) to help you to decide how often to upgrade and how to plan your upgrade process. As a reminder, if you are running any version of Amazon Aurora PostgreSQL 11, you must upgrade to a newer major version by February 29, 2024.
 
 **New features**
 + This release contains memory management improvements which increase database stability and availability by proactively preventing issues caused by insufficient memory. For more information, see [Improved memory management in Aurora PostgreSQL](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraPostgreSQL.BestPractices.memory.management).

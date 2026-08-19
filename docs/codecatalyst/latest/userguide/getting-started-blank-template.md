@@ -20,7 +20,7 @@ You can create an empty project without any predefined resources inside it by ch
 ## Prerequisites
 <a name="getting-started-bt-prerequisites"></a>
 
-To create an empty project, you must have the **Space administrator** or **Power user** role assigned to you. If this is your first time signing in to CodeCatalyst, see [Set up and sign in to CodeCatalystSet up and sign in to CodeCatalyst](setting-up-topnode.md).
+To create an empty project, you must have the **Space administrator** or **Power user** role assigned to you. If this is your first time signing in to CodeCatalyst, see [Set up and sign in to CodeCatalyst](setting-up-topnode.md).
 
 ## Create an empty project
 <a name="getting-started-bt-proj-create"></a>
@@ -95,7 +95,7 @@ You can quickly add code in your repository by creating a Dev Environment. For t
 ## Create a workflow to build, test, and deploy a code change
 <a name="getting-started-bt-workflow-create"></a>
 
-In CodeCatalyst, you organize the building, testing, and deployment of your applications or services in workflows. Workflows consist of actions and can be configured to run automatically after specified source repository events occur, such as code pushes or opening or updating a pull request. For more information about workflows, see [Build, test, and deploy with workflowsBuild, test, and deploy with workflows](workflow.md).
+In CodeCatalyst, you organize the building, testing, and deployment of your applications or services in workflows. Workflows consist of actions and can be configured to run automatically after specified source repository events occur, such as code pushes or opening or updating a pull request. For more information about workflows, see [Build, test, and deploy with workflows](workflow.md).
 
 Follow the instructions in [Getting started with workflows](workflows-getting-started.md) to create your first workflow.
 
@@ -140,4 +140,4 @@ This functionality requires that generative AI features are enabled for the spac
 
 1. Choose **Save**.
 
-After you have created issues, you can assign them to project members, estimate them, and track them on a Kanban board. For more information, see [Track and organize work with issues in CodeCatalystTrack and organize work with issues](issues.md).
+After you have created issues, you can assign them to project members, estimate them, and track them on a Kanban board. For more information, see [Track and organize work with issues in CodeCatalyst](issues.md).

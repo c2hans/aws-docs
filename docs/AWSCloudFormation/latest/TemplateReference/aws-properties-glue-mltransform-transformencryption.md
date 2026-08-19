@@ -42,10 +42,10 @@ To declare this entity in your CloudFormation template, use the following syntax
 The encryption-at-rest settings of the transform that apply to accessing user data.
 *Required*: No
 *Type*: [MLUserDataEncryption](aws-properties-glue-mltransform-mluserdataencryption.md)
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `TaskRunSecurityConfigurationName`  <a name="cfn-glue-mltransform-transformencryption-taskrunsecurityconfigurationname"></a>
 The name of the security configuration.
 *Required*: No
 *Type*: String
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)

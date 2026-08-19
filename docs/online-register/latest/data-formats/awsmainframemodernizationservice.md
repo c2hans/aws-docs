@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsm
 
 AWS Mainframe Modernization Service provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="m2-GetApplication"></a>[GetApplication](https://docs.aws.amazon.com/m2/latest/APIReference/API_GetApplication.html) | Retrieve an application | Read |

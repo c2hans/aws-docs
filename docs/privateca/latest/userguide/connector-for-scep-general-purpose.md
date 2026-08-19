@@ -62,7 +62,7 @@ After you create a connector for SCEP, you must set AWS Private CA as an externa
 
 1. Select **Static** for the challenge type.
 
-1. Copy a challenge password from your connector, and paste it into the **Challenge** field. A connector can have multiple challenge passwords. To view your connector's challenge passwords, navigate to your connector's details page in the AWS console and select the **View password** button. Alternatively, you can get a connector's challenge password(s) by calling [GetChallengePassword](https://docs.aws.amazon.com/pca-connector-scep/latest/APIReference/API_GetChallengePassword.html) and copy a `Password` value from the response. For information about using challenge passwords, see [Understand Connector for SCEP considerations and limitationsConsiderations and limitations](c4scep-considerations-limitations.md).
+1. Copy a challenge password from your connector, and paste it into the **Challenge** field. A connector can have multiple challenge passwords. To view your connector's challenge passwords, navigate to your connector's details page in the AWS console and select the **View password** button. Alternatively, you can get a connector's challenge password(s) by calling [GetChallengePassword](https://docs.aws.amazon.com/pca-connector-scep/latest/APIReference/API_GetChallengePassword.html) and copy a `Password` value from the response. For information about using challenge passwords, see [Understand Connector for SCEP considerations and limitations](c4scep-considerations-limitations.md).
 
 1. Paste the challenge password into the **Verify Challenge** field.
 

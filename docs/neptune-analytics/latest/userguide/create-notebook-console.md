@@ -5,9 +5,9 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/creat
 # Creating a new Neptune Analytics notebook using the AWS Management Console
 <a name="create-notebook-console"></a>
 
-You can create a new notebook for Neptune Analytics by following the instructions mentioned in [ Using the Neptune workbench to host Neptune notebooks](https://docs.aws.amazon.com//neptune/latest/userguide/graph-notebooks.html#graph-notebooks-workbench) with a few changes:
+You can create a new notebook for Neptune Analytics by following the instructions mentioned in [ Using the Neptune workbench to host Neptune notebooks](https://docs.aws.amazon.com/neptune/latest/userguide/graph-notebooks.html#graph-notebooks-workbench) with a few changes:
 +  While selecting the Neptune service, please choose **Analytics**.
-+  The console can create an AWS AWS Identity and Access Management role for your notebooks, or you can create one yourself by following [ Create an IAM role for a Neptune Analytics notebook](https://docs.aws.amazon.com//neptune-analytics/latest/userguide/create-notebook-console.html#create-notebook-iam-role).
++  The console can create an AWS AWS Identity and Access Management role for your notebooks, or you can create one yourself by following [ Create an IAM role for a Neptune Analytics notebook](https://docs.aws.amazon.com/neptune-analytics/latest/userguide/create-notebook-console.html#create-notebook-iam-role).
 
 ## Create an IAM role for a Neptune Analytics notebook
 <a name="create-notebook-iam-role"></a>

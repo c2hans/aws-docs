@@ -15,7 +15,7 @@ You can download the Amazon Kinesis Video Streams Edge Agent and deploy it at yo
 We offer the following installations for the Amazon Kinesis Video Streams Edge Agent:
 + **As an AWS IoT Greengrass V2 component:** You can install the Amazon Kinesis Video Streams Edge Agent as an AWS IoT Greengrass component on any AWS IoT Greengrass certified device. To learn more about AWS IoT Greengrass, see the [AWS IoT Greengrass Version 2 Developer Guide](https://docs.aws.amazon.com/greengrass/v2/developerguide/).
 + **On AWS Snowball Edge:** You can run the Amazon Kinesis Video Streams Edge Agent on Snowball Edge devices. To learn more, see the [AWS Snowball Edge Edge Developer Guide](https://docs.aws.amazon.com/snowball/latest/developer-guide/).
-+ **On a native AWS IoT deployment:** You can install the Amazon Kinesis Video Streams Edge Agent natively on any compute instance. Edge SDK uses [AWS IoT Core](https://docs.aws.amazon.com//iot/latest/developerguide/iot-gs.html) for managing edge through the [Amazon Kinesis Video Streams API Operations](https://docs.aws.amazon.com/kinesisvideostreams/latest/APIReference/API_Operations_Amazon_Kinesis_Video_Streams.html).
++ **On a native AWS IoT deployment:** You can install the Amazon Kinesis Video Streams Edge Agent natively on any compute instance. Edge SDK uses [AWS IoT Core](https://docs.aws.amazon.com/iot/latest/developerguide/iot-gs.html) for managing edge through the [Amazon Kinesis Video Streams API Operations](https://docs.aws.amazon.com/kinesisvideostreams/latest/APIReference/API_Operations_Amazon_Kinesis_Video_Streams.html).
 
 To get started with Amazon Kinesis Video Streams Edge Agent, continue with the appropriate procedures below.
 

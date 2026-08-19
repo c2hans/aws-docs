@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon Nimble Studio provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="nimble-GetEula"></a>[GetEula](https://docs.aws.amazon.com/nimble-studio/latest/APIReference/API_GetEula.html) | Get a EULA | Read |

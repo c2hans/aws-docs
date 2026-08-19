@@ -24,8 +24,6 @@ The following table lists the predefined deployment configurations.
 **Note**
 There are no predefined deployment configurations that support the [zonal configuration](deployment-configurations-create.md#zonal-config) feature (which is the feature that lets you specify the number of healthy hosts per Availability Zone). If you want to use this feature, you must [create your own deployment configuration](deployment-configurations-create.md).
 
-****
-
 | Deployment configuration | Description |
 | --- | --- |
 | CodeDeployDefault.AllAtOnce | **In-place deployments**:Attempts to deploy an application revision to as many instances as possible at once. The status of the overall deployment is displayed as Succeeded if the application revision is deployed to one or more of the instances. The status of the overall deployment is displayed as Failed if the application revision is not deployed to any of the instances. Using an example of nine instances, CodeDeployDefault.AllAtOnce attempts to deploy to all nine instances at once. The overall deployment succeeds if deployment to even a single instance is successful. It fails only if deployments to all nine instances fail. <br />**Blue/green deployments**: +  Deployment to replacement environment: Follows the same deployment rules as CodeDeployDefault.AllAtOnce for in-place deployments.  <br />+  Traffic rerouting: Routes traffic to all instances in the replacement environment at once. Succeeds if traffic is successfully rerouted to at least one instance. Fails after rerouting to all instances fails.  |
@@ -46,8 +44,6 @@ The following table lists the predefined configurations available for Amazon ECS
 
 **Note**
 If you're using a Network Load Balancer, only the `CodeDeployDefault.ECSAllAtOnce` predefined deployment configuration is supported.
-
-****
 
 | Deployment configuration | Description |
 | --- | --- |
@@ -78,8 +74,6 @@ You can also create your own custom canary or linear deployment configuration. F
 <a name="deployment-configurations-predefined-lambda"></a>
 
 The following table lists the predefined configurations available for AWS Lambda deployments.
-
-****
 
 | Deployment configuration | Description |
 | --- | --- |

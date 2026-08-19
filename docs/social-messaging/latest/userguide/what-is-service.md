@@ -41,9 +41,9 @@ AWS End User Messaging Social provides the following features and capabilities:
 <a name="related-services"></a>
 
 AWS offers other messaging services that can be used together in a multi-channel workflow:
-+ Use [AWS End User Messaging SMS](https://docs.aws.amazon.com//sms-voice/latest/userguide/what-is-service.html) to send SMS messages
-+ Use [AWS End User Messaging Push](https://docs.aws.amazon.com//push-notifications/latest/userguide/what-is-service.html) to send push notifications
-+ Use [Amazon SES](https://docs.aws.amazon.com//ses/latest/dg/Welcome.html) to send email
++ Use [AWS End User Messaging SMS](https://docs.aws.amazon.com/sms-voice/latest/userguide/what-is-service.html) to send SMS messages
++ Use [AWS End User Messaging Push](https://docs.aws.amazon.com/push-notifications/latest/userguide/what-is-service.html) to send push notifications
++ Use [Amazon SES](https://docs.aws.amazon.com/ses/latest/dg/Welcome.html) to send email
 
 ## Accessing AWS End User Messaging Social
 <a name="acessing-servicename"></a>

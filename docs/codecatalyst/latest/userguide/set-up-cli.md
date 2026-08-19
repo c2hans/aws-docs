@@ -20,7 +20,7 @@ The Amazon CodeCatalyst console is where you'll work on most of your daily tasks
 
    If you see a list of CodeCatalyst commands, you have a version that supports CodeCatalyst. If the command is not recognized, update your version of the AWS CLI to the latest version. For more information, see [Installing or updating the latest version of the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) in the AWS Command Line Interface User Guide.
 
-1. Run the **aws configure** command to create a profile if you don't have one or if you want to use a named profile specifically for CodeCatalyst. We recommend creating a named profile to use specifically with CodeCatalyst, but you can also use the default profile. For more information, see [Configuration basics](https://docs.aws.amazon.com//cli/latest/userguide/cli-configure-quickstart.html).
+1. Run the **aws configure** command to create a profile if you don't have one or if you want to use a named profile specifically for CodeCatalyst. We recommend creating a named profile to use specifically with CodeCatalyst, but you can also use the default profile. For more information, see [Configuration basics](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html).
 
 1. Edit the `config` file for the profile to add a section for connecting to CodeCatalyst as follows. The `config` file is located at `~/.aws/config` on Linux or macOS, or at `C:\Users\{{USERNAME}}\.aws\config` on Windows.
 

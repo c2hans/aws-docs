@@ -12,7 +12,7 @@ Review these prerequisites before turning on asset sync.
 
 Before using AWS IoT SiteWise, the following must be completed:
 + You have an AWS IoT TwinMaker workspace.
-+ You have assets and asset models in AWS IoT SiteWise. For more information, see [Creating asset models](https://docs.aws.amazon.com//iot-sitewise/latest/userguide/create-asset-models.html).
++ You have assets and asset models in AWS IoT SiteWise. For more information, see [Creating asset models](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/create-asset-models.html).
 + An existing IAM role with read permissions for the following AWS IoT SiteWise actions:
   + `ListAssets`
   + `ListAssetModels`

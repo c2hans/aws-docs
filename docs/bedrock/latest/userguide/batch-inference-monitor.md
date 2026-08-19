@@ -10,7 +10,7 @@ Apart from the configurations you set for a batch inference job, you can also mo
 To track a job's progress, you can use the progress counters that the [GetModelInvocationJob](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_GetModelInvocationJob.html) and [ListModelInvocationJobs](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_ListModelInvocationJobs.html) API operations return. These counters show the total number of input records and how many the service has processed. You can monitor completion without checking Amazon S3 output buckets. Alternatively, you can find these numbers in the `manifest.json.out` file in the Amazon S3 bucket that contains the output files. For more information, see [View the results of a batch inference job](batch-inference-results.md). To learn how to download an S3 object, see [Downloading objects](https://docs.aws.amazon.com/AmazonS3/latest/userguide/download-objects.html).
 
 **Tip**
-Instead of polling for job status, you can use Amazon EventBridge to receive automatic notifications when a batch inference job completes or changes state. For more information, see [Monitor Amazon Bedrock job state changes using Amazon EventBridgeMonitor event changes](monitoring-eventbridge.md).
+Instead of polling for job status, you can use Amazon EventBridge to receive automatic notifications when a batch inference job completes or changes state. For more information, see [Monitor Amazon Bedrock job state changes using Amazon EventBridge](monitoring-eventbridge.md).
 
 To learn how to view details about batch inference jobs, choose the tab for your preferred method, and then follow the steps:
 
@@ -33,8 +33,6 @@ To learn how to view details about batch inference jobs, choose the tab for your
 To get information about a batch inference job, send a [GetModelInvocationJob](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_GetModelInvocationJob.html) request with an [Amazon Bedrock control plane endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#br-cp) and provide the ID or ARN of the job in the `jobIdentifier` field.
 
 To list information about multiple batch inference jobs, send [ListModelInvocationJobs](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_ListModelInvocationJobs.html) request with an [Amazon Bedrock control plane endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#br-cp). You can specify the following optional parameters:
-
-****
 
 | Field | Short description |
 | --- | --- |

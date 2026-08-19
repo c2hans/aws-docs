@@ -107,8 +107,6 @@ Each line of the main output contains the validation results for a single digest
 
 The following table describes the possible validation messages for log and digest files.
 
-****
-
 | File Type | Validation Message | Description |
 | --- | --- | --- |
 | Digest file | valid | The digest file signature is valid. The log files it references can be checked. This message is included only in verbose mode. |

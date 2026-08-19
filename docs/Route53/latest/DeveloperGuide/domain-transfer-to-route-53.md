@@ -107,7 +107,7 @@ If a TLD is not on the list, you can't currently transfer the domain registratio
 
 **Why transfer DNS first?**
 
-Some registrars provide free DNS service that might be disabled as soon as they receive a request from Route 53 to transfer the domain's registration. If you'd like Route 53 to provide DNS service for your domain, see [Making Amazon Route 53 the DNS service for an existing domainMaking Route 53 the DNS service for an existing domain](MigratingDNS.md).
+Some registrars provide free DNS service that might be disabled as soon as they receive a request from Route 53 to transfer the domain's registration. If you'd like Route 53 to provide DNS service for your domain, see [Making Amazon Route 53 the DNS service for an existing domain](MigratingDNS.md).
 
 ## Step 3: Change settings with the current registrar
 <a name="domain-transfer-to-route-53-change-registrar-settings"></a>
@@ -386,8 +386,6 @@ For changes to the domain owner or the email address for the registrant contact,
 <a name="domain-transfer-to-route-53-authorize-transfer-email-addresses"></a>
 
 All email comes from one of the following email addresses.
-
-****
 
 | TLDs | Email address that authorization email comes from |
 | --- | --- |

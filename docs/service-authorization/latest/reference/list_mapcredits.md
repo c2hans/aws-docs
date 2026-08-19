@@ -29,8 +29,6 @@ AWS Migration Acceleration Program Credits has no API operations that can be use
 
 The following actions are defined by AWS Migration Acceleration Program Credits but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 - **   [ListAssociatedPrograms](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html)  **
   - **Description:** Grants permission to view the user's associated Migration Acceleration Program agreements
   - **Resource types (\*required):** [agreement\*](#list_mapcredits-resource-agreement)
@@ -53,8 +51,6 @@ The following actions are defined by AWS Migration Acceleration Program Credits 
 <a name="list_mapcredits-resources-for-iam-policies"></a>
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
-
-****
 
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |

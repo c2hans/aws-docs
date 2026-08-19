@@ -61,8 +61,6 @@ Use the IAM console, the AWS CLI, or the AWS API to delete the AWSServiceRoleFor
 
 re:Post Private supports using service-linked roles in the AWS Regions where the service is available.
 
-****
-
 | Region name | Region identity | Support in re:Post Private |
 | --- | --- | --- |
 | US East (N. Virginia) | us-east-1 | Yes |

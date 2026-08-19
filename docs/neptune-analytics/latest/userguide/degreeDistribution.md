@@ -9,7 +9,7 @@ The `.degreeDistribution` algorithm is a tool for analyzing and visualizing the 
 
 `.degreeDistribution` provides insight into the topology and connectivity patterns of the network, such as identifying the hubs (i.e., super nodes or high-degree nodes) and distinguishing different network types (e.g., tree vs. scale-free), which can help making informed decisions on selecting appropriate algorithms for analysis.
 
-The `%degreeDistribution` magic command in the notebook provides an interactive visualization of the output, please see the [notebook magics](https://docs.aws.amazon.com//neptune/latest/userguide/notebooks-magics.html#notebooks-line-magics-degreeDistribution) documentation for details.
+The `%degreeDistribution` magic command in the notebook provides an interactive visualization of the output, please see the [notebook magics](https://docs.aws.amazon.com/neptune/latest/userguide/notebooks-magics.html#notebooks-line-magics-degreeDistribution) documentation for details.
 
 ## `.degreeDistribution`   syntax
 <a name="degreeDistribution-syntax"></a>

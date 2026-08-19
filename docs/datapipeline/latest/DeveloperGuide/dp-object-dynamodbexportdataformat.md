@@ -84,20 +84,14 @@ The following example shows how to use `HiveCopyActivity` and `DynamoDBExportDat
 ## Syntax
 <a name="dynamodbexportdataformat-syntax"></a>
 
-****
-
 | Optional Fields | Description | Slot Type |
 | --- | --- | --- |
 | column | Column name with datatype specified by each field for the data described by this data node. Ex: hostname STRING | String |
 | parent | Parent of the current object from which slots will be inherited. | Reference Object, e.g. "parent":{"ref":"myBaseObjectId"} |
 
-****
-
 | Runtime Fields | Description | Slot Type |
 | --- | --- | --- |
 | @version | Pipeline version the object was created with. | String |
-
-****
 
 | System Fields | Description | Slot Type |
 | --- | --- | --- |

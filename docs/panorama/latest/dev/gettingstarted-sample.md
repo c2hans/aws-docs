@@ -176,8 +176,6 @@ The name of each package must be unique in your account. If you and another user
 1. Rename the package folder: `packages/123456789012-{{SAMPLE_CODE}}-1.0/`.
 
 1. Update the package name in the following locations.
-
-****
    + **Application manifest** – `graphs/aws-panorama-sample/graph.json`
    + **Package configuration** – `packages/123456789012-SAMPLE_CODE-1.0/package.json`
    + **Build script** – `3-build-container.sh`
@@ -238,8 +236,6 @@ The following example uses an MXNet SSD ResNet50 model that you can download fro
 1. Rename the package folder to match your model. For example, to `packages/{{123456789012}}-{{SSD_512_RESNET50_V1_VOC}}-1.0/`.
 
 1. Update the package name in the following locations.
-
-****
    + **Application manifest** – `graphs/aws-panorama-sample/graph.json`
    + **Package configuration** – `packages/{{123456789012}}-{{SSD_512_RESNET50_V1_VOC}}-1.0/package.json`
 
@@ -465,11 +461,7 @@ For actions that modify or use existing resources, it is a best practice to mini
 <a name="gettingstarted-sample-nextsteps"></a>
 
 For instructions on using the AWS Panorama Application CLI to build applications and create packages from scratch, see the CLI's README.
-
-****
 + [github.com/aws/aws-panorama-cli](https://github.com/aws/aws-panorama-cli)
 
 For more sample code and a test utility that you can use to validate your application code prior to deploying, visit the AWS Panorama samples repository.
-
-****
 + [github.com/aws-samples/aws-panorama-samples](https://github.com/aws-samples/aws-panorama-samples)

@@ -31,7 +31,7 @@ After the maximum number of retries, events are sent to your [dead-letter queue]
 
 When you create a connection for an API destination, the service-linked role [AmazonEventBridgeApiDestinationsServiceRolePolicy](eb-use-identity-based.md#api-destination-slr-policy) is added to your account. EventBridge uses this service-linked role to create and store a secret in Secrets Manager. To grant the necessary permissions to the service-linked role, EventBridge attaches the **AmazonEventBridgeApiDestinationsServiceRolePolicy** policy to the role. The policy limits the permissions granted to only those necessary for the role to interact with the secret for the connection. No other permissions are included, and the role can interact only with the connections in your account to manage the secret.
 
-For more information about service-linked roles, see [Using service-linked roles](https://docs.aws.amazon.com//IAM/latest/UserGuide/using-service-linked-roles.html) in the *IAM User Guide*.
+For more information about service-linked roles, see [Using service-linked roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/using-service-linked-roles.html) in the *IAM User Guide*.
 
 ## Headers in requests to API destinations
 <a name="eb-api-destination-headers"></a>

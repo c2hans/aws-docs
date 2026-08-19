@@ -9,15 +9,46 @@ This page lists the current and previous versions of AWS Elastic Beanstalk's .NE
 
 See the [Supported platforms](platforms-supported.md) page for information on the latest version of each platform supported by Elastic Beanstalk. Detailed release notes are available for recent releases at [AWS Elastic Beanstalk Release Notes](https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/).
 
-## July 24, 2026 – present
-<a name="platform-history-2026-07-24"></a>
+## August 18, 2026 – present
+<a name="platform-history-2026-08-18"></a>
 
-The following Elastic Beanstalk platform versions for .NET on Windows Server have been current since July 24, 2026:
+The following Elastic Beanstalk platform versions for .NET on Windows Server have been current since August 18, 2026:
 
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
+|  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
+| --- | --- | --- | --- |
+|  ** Windows Server 2025 with IIS 10.0 version 2.23.4**  |  * 64bit Windows Server 2025 v2.23.4 running IIS 10.0 *  | .NET 10.0.11, supports 10.0.11, 9.0.19, 8.0.30<br />.NET Framework 4.8.1, supports 4.x, 2.0 | IIS 10.0 |
+|  ** Windows Server Core 2025 with IIS 10.0 version 2.23.4**  |  * 64bit Windows Server Core 2025 v2.23.4 running IIS 10.0 *  | .NET 10.0.11, supports 10.0.11, 9.0.19, 8.0.30<br />.NET Framework 4.8.1, supports 4.x, 2.0 | IIS 10.0 |
+|  ** Windows Server 2022 with IIS 10.0 version 2.23.4**  |  * 64bit Windows Server 2022 v2.23.4 running IIS 10.0 *  | .NET 10.0.11, supports 10.0.11, 9.0.19, 8.0.30<br />.NET Framework 4.8.1, supports 4.x, 2.0 | IIS 10.0 |
+|  ** Windows Server Core 2022 with IIS 10.0 version 2.23.4**  |  * 64bit Windows Server Core 2022 v2.23.4 running IIS 10.0 *  | .NET 10.0.11, supports 10.0.11, 9.0.19, 8.0.30<br />.NET Framework 4.8.1, supports 4.x, 2.0 | IIS 10.0 |
+|  ** Windows Server 2019 with IIS 10.0 version 2.23.4**  |  * 64bit Windows Server 2019 v2.23.4 running IIS 10.0 *  | .NET 10.0.11, supports 10.0.11, 9.0.19, 8.0.30<br />.NET Framework 4.8, supports 4.x, 2.0 | IIS 10.0 |
+|  ** Windows Server Core 2019 with IIS 10.0 version 2.23.4**  |  * 64bit Windows Server Core 2019 v2.23.4 running IIS 10.0 *  | .NET 10.0.11, supports 10.0.11, 9.0.19, 8.0.30<br />.NET Framework 4.8, supports 4.x, 2.0 | IIS 10.0 |
+|  ** Windows Server 2016 with IIS 10.0 version 2.23.4**  |  * 64bit Windows Server 2016 v2.23.4 running IIS 10.0 *  | .NET 10.0.11, supports 10.0.11, 9.0.19, 8.0.30<br />.NET Framework 4.8, supports 4.x, 2.0 | IIS 10.0 |
+|  ** Windows Server Core 2016 with IIS 10.0 version 2.23.4**  |  * 64bit Windows Server Core 2016 v2.23.4 running IIS 10.0 *  | .NET 10.0.11, supports 10.0.11, 9.0.19, 8.0.30<br />.NET Framework 4.8, supports 4.x, 2.0 | IIS 10.0 |
+
+### More details
+<a name="platforms-supported.net.details"></a>
+
+|  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
+| --- | --- | --- | --- | --- | --- | --- |
+|  ** Windows Server 2025 with IIS 10.0 version 2.23.4**  | 2026.08.12 |  | 2.5.2 | 3.3.4851.0 | 4.0 | 3.6.7 |
+|  ** Windows Server Core 2025 with IIS 10.0 version 2.23.4**  | 2026.08.12 |  | 2.5.2 | 3.3.4851.0 | 4.0 | 3.6.7 |
+|  ** Windows Server 2022 with IIS 10.0 version 2.23.4**  | 2026.08.12 | 3.7.1252.1 | 2.5.2 | 3.3.4851.0 | 4.0 | 3.6.7 |
+|  ** Windows Server Core 2022 with IIS 10.0 version 2.23.4**  | 2026.08.12 | 3.7.1252.1 | 2.5.2 | 3.3.4851.0 | 4.0 | 3.6.7 |
+|  ** Windows Server 2019 with IIS 10.0 version 2.23.4**  | 2026.08.12 | 3.7.1252.1 | 2.5.2 | 3.3.4851.0 | 4.0 | 3.6.7 |
+|  ** Windows Server Core 2019 with IIS 10.0 version 2.23.4**  | 2026.08.12 | 3.7.1252.1 | 2.5.2 | 3.3.4851.0 | 4.0 | 3.6.7 |
+|  ** Windows Server 2016 with IIS 10.0 version 2.23.4**  | 2026.08.12 | 3.7.1252.1 | 2.5.2 | 3.3.4851.0 | 4.0 | 3.6.7 |
+|  ** Windows Server Core 2016 with IIS 10.0 version 2.23.4**  | 2026.08.12 | 3.7.1252.1 | 2.5.2 | 3.3.4851.0 | 4.0 | 3.6.7 |
+
+## July 24, 2026 – August 17, 2026
+<a name="platform-history-2026-07-24"></a>
+
+The following Elastic Beanstalk platform versions for .NET on Windows Server were current between July 24, 2026 and August 17, 2026:
+
+### Configuration basics
+<a name="platforms-supported.net.basics"></a>
 
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
@@ -32,8 +63,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server hav
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -54,8 +83,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2025 with IIS 10.0 version 2.23.2**  |  * 64bit Windows Server 2025 v2.23.2 running IIS 10.0 *  | .NET 10.0.9, supports 10.0.9, 9.0.17, 8.0.28<br />.NET Framework 4.8.1, supports 4.x, 2.0 | IIS 10.0 |
@@ -69,8 +96,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -91,8 +116,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2025 with IIS 10.0 version 2.23.1**  |  * 64bit Windows Server 2025 v2.23.1 running IIS 10.0 *  | .NET 10.0.8, supports 10.0.8, 9.0.16, 8.0.27<br />.NET Framework 4.8.1, supports 4.x, 2.0 | IIS 10.0 |
@@ -106,8 +129,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -128,8 +149,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2025 with IIS 10.0 version 2.23.0**  |  * 64bit Windows Server 2025 v2.23.0 running IIS 10.0 *  | .NET 10.0.7, supports 10.0.7, 9.0.15, 8.0.26<br />.NET Framework 4.8.1, supports 4.x, 2.0 | IIS 10.0 |
@@ -143,8 +162,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -165,8 +182,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2025 with IIS 10.0 version 2.22.3**  |  * 64bit Windows Server 2025 v2.22.3 running IIS 10.0 *  | .NET 10.0.5, supports 10.0.5, 9.0.14, 8.0.25<br />.NET Framework 4.8.1, supports 4.x, 2.0 | IIS 10.0 |
@@ -180,8 +195,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -202,8 +215,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2025 with IIS 10.0 version 2.22.2**  |  * 64bit Windows Server 2025 v2.22.2 running IIS 10.0 *  | .NET 10.0.3, supports 10.0.3, 9.0.13, 8.0.24<br />.NET Framework 4.8.1, supports 4.x, 2.0 | IIS 10.0 |
@@ -217,8 +228,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -239,8 +248,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2025 with IIS 10.0 version 2.22.1**  |  * 64bit Windows Server 2025 v2.22.1 running IIS 10.0 *  | .NET 10.0.2, supports 10.0.2, 9.0.12, 8.0.23<br />.NET Framework 4.8.1, supports 4.x, 2.0 | IIS 10.0 |
@@ -254,8 +261,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -276,8 +281,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2025 with IIS 10.0 version 2.22.0**  |  * 64bit Windows Server 2025 v2.22.0 running IIS 10.0 *  | .NET 10.0.1, supports 10.0.1, 9.0.11, 8.0.22<br />.NET Framework 4.8.1, supports 4.x, 2.0 | IIS 10.0 |
@@ -291,8 +294,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -313,8 +314,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2025 with IIS 10.0 version 2.21.1**  |  * 64bit Windows Server 2025 v2.21.1 running IIS 10.0 *  | .NET 9.0.11, supports 9.0.11, 8.0.22<br />.NET Framework 4.8.1, supports 4.x, 2.0 | IIS 10.0 |
@@ -328,8 +327,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -350,8 +347,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2025 with IIS 10.0 version 2.21.0**  |  * 64bit Windows Server 2025 v2.21.0 running IIS 10.0 *  | .NET 9.0.10, supports 9.0.10, 8.0.21<br />.NET Framework 4.8.1, supports 4.x, 2.0 | IIS 10.0 |
@@ -365,8 +360,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -387,8 +380,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2025 with IIS 10.0 version 2.20.0**  |  * 64bit Windows Server 2025 v2.20.0 running IIS 10.0 *  | .NET 9.0.9, supports 9.0.9, 8.0.20<br />.NET Framework 4.8.1, supports 4.x, 2.0 | IIS 10.0 |
@@ -402,8 +393,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -424,8 +413,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2025 with IIS 10.0 version 2.19.4**  |  * 64bit Windows Server 2025 v2.19.4 running IIS 10.0 *  | .NET 9.0.8, supports 9.0.8, 8.0.19<br />.NET Framework 4.8.1, supports 4.x, 2.0 | IIS 10.0 |
@@ -439,8 +426,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -461,8 +446,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2025 with IIS 10.0 version 2.19.3**  |  * 64bit Windows Server 2025 v2.19.3 running IIS 10.0 *  | .NET 9.0.7, supports 9.0.7, 8.0.18<br />.NET Framework 4.8.1, supports 4.x, 2.0 | IIS 10.0 |
@@ -476,8 +459,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -498,8 +479,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2025 with IIS 10.0 version 2.19.2**  |  * 64bit Windows Server 2025 v2.19.2 running IIS 10.0 *  | .NET 9.0.6, supports 9.0.6, 8.0.17<br />.NET Framework 4.8.1, supports 4.x, 2.0 | IIS 10.0 |
@@ -513,8 +492,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -535,8 +512,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2025 with IIS 10.0 version 2.19.1**  |  * 64bit Windows Server 2025 v2.19.1 running IIS 10.0 *  | .NET 9.0.5, supports 9.0.5, 8.0.16<br />.NET Framework 4.8.1, supports 4.x, 2.0 | IIS 10.0 |
@@ -550,8 +525,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -572,8 +545,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2025 with IIS 10.0 version 2.19.0**  |  * 64bit Windows Server 2025 v2.19.0 running IIS 10.0 *  | .NET 8.0.15, supports 8.0.15<br />.NET Framework 4.8.1, supports 4.x, 2.0 | IIS 10.0 |
@@ -587,8 +558,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -609,8 +578,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2025 with IIS 10.0 version 2.18.0**  |  * 64bit Windows Server 2025 v2.18.0 running IIS 10.0 *  | .NET 8.0.14, supports 8.0.14, 6.0.36<br />.NET Framework 4.8.1, supports 4.x, 2.0 | IIS 10.0 |
@@ -624,8 +591,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -646,8 +611,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2025 with IIS 10.0 version 2.17.0**  |  * 64bit Windows Server 2025 v2.17.0 running IIS 10.0 *  | .NET 8.0.13, supports 8.0.13, 6.0.36<br />.NET Framework 4.8.1, supports 4.x, 2.0 | IIS 10.0 |
@@ -661,8 +624,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -683,8 +644,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2022 with IIS 10.0 version 2.16.2**  |  * 64bit Windows Server 2022 v2.16.2 running IIS 10.0 *  | .NET 8.0.12, supports 8.0.12, 6.0.36<br />.NET Framework 4.8.1, supports 4.x, 2.0 | IIS 10.0 |
@@ -696,8 +655,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -716,8 +673,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2022 with IIS 10.0 version 2.16.1**  |  * 64bit Windows Server 2022 v2.16.1 running IIS 10.0 *  | .NET 8.0.11, supports 8.0.11, 6.0.36<br />.NET Framework 4.8.1, supports 4.x, 2.0 | IIS 10.0 |
@@ -729,8 +684,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -749,8 +702,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2022 with IIS 10.0 version 2.16.0**  |  * 64bit Windows Server 2022 v2.16.0 running IIS 10.0 *  | .NET 8.0.11, supports 8.0.11, 6.0.36<br />.NET Framework 4.8.1, supports 4.x, 2.0 | IIS 10.0 |
@@ -762,8 +713,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -782,8 +731,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2022 with IIS 10.0 version 2.15.6**  |  * 64bit Windows Server 2022 v2.15.6 running IIS 10.0 *  | .NET 8.0.10, supports 8.0.10, 6.0.35<br />.NET Framework 4.8.1, supports 4.x, 2.0 | IIS 10.0 |
@@ -795,8 +742,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -815,8 +760,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2022 with IIS 10.0 version 2.15.5**  |  * 64bit Windows Server 2022 v2.15.5 running IIS 10.0 *  | .NET 8.0.8, supports 8.0.8, 6.0.33<br />.NET Framework 4.8.1, supports 4.x, 2.0 | IIS 10.0 |
@@ -828,8 +771,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -848,8 +789,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2022 with IIS 10.0 version 2.15.4**  |  * 64bit Windows Server 2022 v2.15.4 running IIS 10.0 *  | .NET 8.0.8, supports 8.0.8, 6.0.33<br />.NET Framework 4.8.1, supports 4.x, 2.0 | IIS 10.0 |
@@ -861,8 +800,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -881,8 +818,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2022 with IIS 10.0 version 2.15.3**  |  * 64bit Windows Server 2022 v2.15.3 running IIS 10.0 *  | .NET 8.0.7, supports 8.0.7, 6.0.32<br />.NET Framework 4.8.1, supports 4.x, 2.0 | IIS 10.0 |
@@ -894,8 +829,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -914,8 +847,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2022 with IIS 10.0 version 2.15.2**  |  * 64bit Windows Server 2022 v2.15.2 running IIS 10.0 *  | .NET 8.0.6, supports 8.0.6, 6.0.31<br />.NET Framework 4.8.1, supports 4.x, 2.0 | IIS 10.0 |
@@ -927,8 +858,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -947,8 +876,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2022 with IIS 10.0 version 2.15.1**  |  * 64bit Windows Server 2022 v2.15.1 running IIS 10.0 *  | .NET 8.0.5, supports 8.0.5, 6.0.30<br />.NET Framework 4.8.1, supports 4.x, 2.0 | IIS 10.0 |
@@ -960,8 +887,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -980,8 +905,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2022 with IIS 10.0 version 2.15.0**  |  * 64bit Windows Server 2022 v2.15.0 running IIS 10.0 *  | .NET 8.0.4, supports 8.0.4, 6.0.29<br />.NET Framework 4.8.1, supports 4.x, 2.0 | IIS 10.0 |
@@ -993,8 +916,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1013,8 +934,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2022 with IIS 10.0 version 2.14.1**  |  * 64bit Windows Server 2022 v2.14.1 running IIS 10.0 *  | .NET 8.0.3, supports 8.0.3, 6.0.28<br />.NET Framework 4.8.1, supports 4.x, 2.0 | IIS 10.0 |
@@ -1026,8 +945,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1046,8 +963,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2022 with IIS 10.0 version 2.14.0**  |  * 64bit Windows Server 2022 v2.14.0 running IIS 10.0 *  | .NET 8.0.2, supports 8.0.2, 6.0.27<br />.NET Framework 4.8.1, supports 4.x, 2.0 | IIS 10.0 |
@@ -1059,8 +974,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1079,8 +992,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2019 with IIS 10.0 version 2.13.2**  |  * 64bit Windows Server 2019 v2.13.2 running IIS 10.0 *  | .NET 8.0.1, supports 8.0.1, 6.0.26<br />.NET Framework 4.8, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -1090,8 +1001,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1108,8 +1017,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2019 with IIS 10.0 version 2.13.1**  |  * 64bit Windows Server 2019 v2.13.1 running IIS 10.0 *  | .NET 8.0.0, supports 8.0.0, 6.0.25<br />.NET Framework 4.8, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -1119,8 +1026,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1137,8 +1042,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2019 with IIS 10.0 version 2.13.0**  |  * 64bit Windows Server 2019 v2.13.0 running IIS 10.0 *  | .NET 8.0.0, supports 8.0.0, 6.0.25<br />.NET Framework 4.8, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -1148,8 +1051,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1166,8 +1067,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2019 with IIS 10.0 version 2.12.0**  |  * 64bit Windows Server 2019 v2.12.0 running IIS 10.0 *  | .NET 6.0.23, supports 6.0.23<br />.NET Framework 4.8, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -1177,8 +1076,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1195,8 +1092,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2019 with IIS 10.0 version 2.12.0**  |  * 64bit Windows Server 2019 v2.12.0 running IIS 10.0 *  | .NET 6.0.23, supports 6.0.23<br />.NET Framework 4.8, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -1208,8 +1103,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1228,8 +1121,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2019 with IIS 10.0 version 2.11.8**  |  * 64bit Windows Server 2019 v2.11.8 running IIS 10.0 *  | .NET 6.0.22, supports 6.0.22, 3.1.32<br />.NET Framework 4.8, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -1241,8 +1132,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1261,8 +1150,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2019 with IIS 10.0 version 2.11.7**  |  * 64bit Windows Server 2019 v2.11.7 running IIS 10.0 *  | .NET 6.0.21, supports 6.0.21, 3.1.32<br />.NET Framework 4.8, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -1274,8 +1161,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1294,8 +1179,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2019 with IIS 10.0 version 2.11.6**  |  * 64bit Windows Server 2019 v2.11.6 running IIS 10.0 *  | .NET 6.0.20, supports 6.0.20, 3.1.32<br />.NET Framework 4.8, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -1307,8 +1190,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1327,8 +1208,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2019 with IIS 10.0 version 2.11.5**  |  * 64bit Windows Server 2019 v2.11.5 running IIS 10.0 *  | .NET 6.0.18, supports 6.0.18, 3.1.32<br />.NET Framework 4.8, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -1340,8 +1219,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1360,8 +1237,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2019 with IIS 10.0 version 2.11.4**  |  * 64bit Windows Server 2019 v2.11.4 running IIS 10.0 *  | .NET 6.0.16, supports 6.0.16, 3.1.32<br />.NET Framework 4.8, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -1373,8 +1248,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1393,8 +1266,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2019 with IIS 10.0 version 2.11.3**  |  * 64bit Windows Server 2019 v2.11.3 running IIS 10.0 *  | .NET 6.0.16, supports 6.0.16, 3.1.32<br />.NET Framework 4.8, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -1406,8 +1277,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1426,8 +1295,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2019 with IIS 10.0 version 2.11.2**  |  * 64bit Windows Server 2019 v2.11.2 running IIS 10.0 *  | .NET 6.0.15, supports 6.0.15, 3.1.32<br />.NET Framework 4.8, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -1439,8 +1306,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1459,8 +1324,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2019 with IIS 10.0 version 2.11.1**  |  * 64bit Windows Server 2019 v2.11.1 running IIS 10.0 *  | .NET 6.0.14, supports 6.0.14, 3.1.32<br />.NET Framework 4.8, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -1472,8 +1335,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1492,8 +1353,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2019 with IIS 10.0 version 2.11.0**  |  * 64bit Windows Server 2019 v2.11.0 running IIS 10.0 *  | .NET 6.0.13, supports 6.0.13, 3.1.32<br />.NET Framework 4.8, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -1505,8 +1364,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1525,8 +1382,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2019 with IIS 10.0 version 2.10.7**  |  * 64bit Windows Server 2019 v2.10.7 running IIS 10.0 *  | .NET 6.0.12, supports 6.0.12, 5.0.17, 3.1.32<br />.NET Framework 4.8, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -1538,8 +1393,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1558,8 +1411,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2019 with IIS 10.0 version 2.10.6**  |  * 64bit Windows Server 2019 v2.10.6 running IIS 10.0 *  | .NET 6.0.11, supports 6.0.11, 5.0.17, 3.1.31<br />.NET Framework 4.8, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -1571,8 +1422,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1591,8 +1440,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2019 with IIS 10.0 version 2.10.5**  |  * 64bit Windows Server 2019 v2.10.5 running IIS 10.0 *  | .NET 6.0.10, supports 6.0.10, 5.0.17, 3.1.30<br />.NET Framework 4.8, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -1604,8 +1451,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1624,8 +1469,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2019 with IIS 10.0 version 2.10.4**  |  * 64bit Windows Server 2019 v2.10.4 running IIS 10.0 *  | .NET 6.0.9, supports 6.0.9, 5.0.17, 3.1.29<br />.NET Framework 4.8, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -1637,8 +1480,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1657,8 +1498,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2019 with IIS 10.0 version 2.10.3**  |  * 64bit Windows Server 2019 v2.10.3 running IIS 10.0 *  | .NET 6.0.8, supports 6.0.8, 5.0.17, 3.1.28<br />.NET Framework 4.8, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -1670,8 +1509,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1690,8 +1527,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2019 with IIS 10.0 version 2.10.2**  |  * 64bit Windows Server 2019 v2.10.2 running IIS 10.0 *  | .NET 6.0.7, supports 6.0.7, 5.0.17, 3.1.27<br />.NET Framework 4.8, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -1703,8 +1538,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1723,8 +1556,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2019 with IIS 10.0 version 2.10.1**  |  * 64bit Windows Server 2019 v2.10.1 running IIS 10.0 *  | .NET 6.0.6, supports 6.0.6, 5.0.17, 3.1.26<br />.NET Framework 4.8, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -1736,8 +1567,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1756,8 +1585,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2019 with IIS 10.0 version 2.10.1**  |  * 64bit Windows Server 2019 v2.10.1 running IIS 10.0 *  | .NET 6.0.6, supports 6.0.6, 5.0.17, 3.1.26<br />.NET Framework 4.8, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -1769,8 +1596,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1789,8 +1614,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2019 with IIS 10.0 version 2.10.0**  |  * 64bit Windows Server 2019 v2.10.0 running IIS 10.0 *  | .NET 6.0.5, supports 6.0.5, 5.0.17, 3.1.25<br />.NET Framework 4.8, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -1804,8 +1627,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1826,8 +1647,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2019 with IIS 10.0 version 2.9.1**  |  * 64bit Windows Server 2019 v2.9.1 running IIS 10.0 *  | .NET 5.0.16, supports 5.0.16, 3.1.24<br />.NET Framework 4.8, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -1841,8 +1660,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1863,8 +1680,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2019 with IIS 10.0 version 2.9.0**  |  * 64bit Windows Server 2019 v2.9.0 running IIS 10.0 *  | .NET 5.0.15, supports 5.0.15, 3.1.23<br />.NET Framework 4.8, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -1878,8 +1693,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1900,8 +1713,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2019 with IIS 10.0 version 2.8.3**  |  * 64bit Windows Server 2019 v2.8.3 running IIS 10.0 *  | .NET 5.0.14, supports 5.0.14, 3.1.22, 2.1.30<br />.NET Framework 4.8, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -1915,8 +1726,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1937,8 +1746,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2019 with IIS 10.0 version 2.8.2**  |  * 64bit Windows Server 2019 v2.8.2 running IIS 10.0 *  | .NET 5.0.13, supports 5.0.13, 3.1.22, 2.1.30<br />.NET Framework 4.8, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -1952,8 +1759,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1974,8 +1779,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2019 with IIS 10.0 version 2.8.1**  |  * 64bit Windows Server 2019 v2.8.1 running IIS 10.0 *  | .NET 5.0.13, supports 5.0.13, 3.1.22, 2.1.30<br />.NET Framework 4.8, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -1989,8 +1792,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -2011,8 +1812,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2019 with IIS 10.0 version 2.8.0**  |  * 64bit Windows Server 2019 v2.8.0 running IIS 10.0 *  | .NET 5.0.12, supports 5.0.12, 3.1.21, 2.1.30<br />.NET Framework 4.8, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -2026,8 +1825,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -2048,8 +1845,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2019 with IIS 10.0 version 2.7.2**  |  * 64bit Windows Server 2019 v2.7.2 running IIS 10.0 *  | .NET 5.0.11, supports 5.0.11, 3.1.20, 2.1.30<br />.NET Framework 4.8, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -2063,8 +1858,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -2085,8 +1878,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2019 with IIS 10.0 version 2.7.1**  |  * 64bit Windows Server 2019 v2.7.1 running IIS 10.0 *  | .NET 5.0.10, supports 5.0.10, 3.1.19, 2.1.30<br />.NET Framework 4.8, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -2100,8 +1891,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -2122,8 +1911,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2019 with IIS 10.0 version 2.7.0**  |  * 64bit Windows Server 2019 v2.7.0 running IIS 10.0 *  | .NET 5.0.9, supports 5.0.9, 3.1.18, 2.1.29<br />.NET Framework 4.8, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -2137,8 +1924,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -2159,8 +1944,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2019 with IIS 10.0 version 2.6.8**  |  * 64bit Windows Server 2019 v2.6.8 running IIS 10.0 *  | .NET 5.0.8, supports 5.0.8, 3.1.17, 2.2.8, 2.1.28<br />.NET Framework 4.8, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -2174,8 +1957,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -2196,8 +1977,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2019 with IIS 10.0 version 2.6.7**  |  * 64bit Windows Server 2019 v2.6.7 running IIS 10.0 *  | .NET 5.0.7, supports 5.0.7, 3.1.16, 2.2.8, 2.1.28<br />.NET Framework 4.8, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -2211,8 +1990,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -2233,8 +2010,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2019 with IIS 10.0 version 2.6.6**  |  * 64bit Windows Server 2019 v2.6.6 running IIS 10.0 *  | .NET 5.0.6, supports 5.0.6, 3.1.15, 2.2.8, 2.1.28<br />.NET Framework 4.8, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -2248,8 +2023,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -2270,8 +2043,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2019 with IIS 10.0 version 2.6.5**  |  * 64bit Windows Server 2019 v2.6.5 running IIS 10.0 *  | .NET 5.0.5, supports 5.0.5, 3.1.14, 2.2.8, 2.1.27<br />.NET Framework 4.8, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -2283,8 +2054,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -2303,8 +2072,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2019 with IIS 10.0 version 2.6.4**  |  * 64bit Windows Server 2019 v2.6.4 running IIS 10.0 *  | .NET 5.0.4, supports 5.0.4, 3.1.13, 2.2.8, 2.1.26<br />.NET Framework 4.8, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -2316,8 +2083,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -2336,8 +2101,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2019 with IIS 10.0 version 2.6.3**  |  * 64bit Windows Server 2019 v2.6.3 running IIS 10.0 *  | .NET 5.0.3, supports 5.0.3, 3.1.12, 2.2.8, 2.1.25<br />.NET Framework 4.8, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -2349,8 +2112,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -2369,8 +2130,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2019 with IIS 10.0 version 2.6.2**  |  * 64bit Windows Server 2019 v2.6.2 running IIS 10.0 *  | .NET 5.0.2, supports 5.0.2, 3.1.11, 2.2.8, 2.1.24<br />.NET Framework 4.8, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -2382,8 +2141,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -2402,8 +2159,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2019 with IIS 10.0 version 2.6.1**  |  * 64bit Windows Server 2019 v2.6.1 running IIS 10.0 *  | .NET 5.0.0, supports 5.0.0, 3.1.10, 2.2.8, 2.1.23<br />.NET Framework 4.8, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -2415,8 +2170,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -2435,8 +2188,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2019 with IIS 10.0 version 2.6.0**  |  * 64bit Windows Server 2019 v2.6.0 running IIS 10.0 *  | .NET 5.0.0, supports 5.0.0, 3.1.10, 2.2.8, 2.1.23<br />.NET Framework 4.8, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -2448,8 +2199,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -2468,8 +2217,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2019 with IIS 10.0 version 2.5.11**  |  * 64bit Windows Server 2019 v2.5.11 running IIS 10.0 *  | .NET Core 3.1.9, supports 3.1.9, 2.2.8, 2.1.23<br />.NET Framework 4.8, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -2481,8 +2228,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -2501,8 +2246,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2019 with IIS 10.0 version 2.5.10**  |  * 64bit Windows Server 2019 v2.5.10 running IIS 10.0 *  | .NET Core 3.1.8, supports 3.1.8, 2.2.8, 2.1.22<br />.NET Framework 4.8, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -2514,8 +2257,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -2534,8 +2275,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2019 with IIS 10.0 version 2.5.9**  |  * 64bit Windows Server 2019 v2.5.9 running IIS 10.0 *  | .NET Core 3.1.7, supports 3.1.7, 2.2.8, 2.1.21<br />.NET Framework 4.8, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -2547,8 +2286,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -2567,8 +2304,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2019 with IIS 10.0 version 2.5.8**  |  * 64bit Windows Server 2019 v2.5.8 running IIS 10.0 *  | .NET Core 3.1.6, supports 3.1.6, 2.2.8, 2.1.20<br />.NET Framework 4.8, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -2580,8 +2315,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -2600,8 +2333,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2019 with IIS 10.0 version 2.5.7**  |  * 64bit Windows Server 2019 v2.5.7 running IIS 10.0 *  | .NET Core 3.1.5, supports 3.1.5, 2.2.8, 2.1.19<br />.NET Framework 4.8, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -2613,8 +2344,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -2633,8 +2362,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2019 with IIS 10.0 version 2.5.6**  |  * 64bit Windows Server 2019 v2.5.6 running IIS 10.0 *  | .NET Core 3.1.4, supports 3.1.4, 2.2.8, 2.1.18<br />.NET Framework 4.8, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -2646,8 +2373,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -2666,8 +2391,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2019 with IIS 10.0 version 2.5.5**  |  * 64bit Windows Server 2019 v2.5.5 running IIS 10.0 *  | .NET Core 3.1.3, supports 3.1.3, 2.2.8, 2.1.17<br />.NET Framework 4.8, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -2679,8 +2402,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -2699,8 +2420,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2019 with IIS 10.0 version 2.5.2**  |  * 64bit Windows Server 2019 v2.5.2 running IIS 10.0 *  | .NET Core 3.1.2, supports 3.1.2, 2.2.8, 2.1.16<br />.NET Framework 4.8, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -2712,8 +2431,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -2731,8 +2448,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
-
-****
 
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
@@ -2753,8 +2468,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -2781,8 +2494,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2019 with IIS 10.0 version 2.5.0**  |  * 64bit Windows Server 2019 v2.5.0 running IIS 10.0 *  | .NET Core 3.1.1, supports 3.1.1, 2.2.8, 2.1.15<br />.NET Framework 4.8, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -2802,8 +2513,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -2830,8 +2539,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2019 with IIS 10.0 version 2.4.0**  |  * 64bit Windows Server 2019 v2.4.0 running IIS 10.0 *  | .NET Core 3.0.0, supports 3.0.0, 2.2.8, 2.1.14<br />.NET Framework 4.8, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -2851,8 +2558,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -2879,8 +2584,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2016 with IIS 10.0 version 2.3.2**  |  * 64bit Windows Server 2016 v2.3.2 running IIS 10.0 *  | .NET Core 3.0.0, supports 3.0.0, 2.2.8, 2.1.14<br />.NET Framework 4.8, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -2898,8 +2601,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -2924,8 +2625,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2016 with IIS 10.0 version 2.3.1**  |  * 64bit Windows Server 2016 v2.3.1 running IIS 10.0 *  | .NET Core 3.0.0, supports 3.0.0, 2.2.8, 2.1.14<br />.NET Framework 4.8, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -2943,8 +2642,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -2969,8 +2666,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2016 with IIS 10.0 version 2.3.0**  |  * 64bit Windows Server 2016 v2.3.0 running IIS 10.0 *  | .NET Core 3.0.0, supports 3.0.0, 2.2.7, 2.1.13<br />.NET Framework 4.8, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -2988,8 +2683,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -3014,8 +2707,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2016 with IIS 10.0 version 2.2.2**  |  * 64bit Windows Server 2016 v2.2.2 running IIS 10.0 *  | .NET Core 2.2.7, supports 2.2.7, 2.1.13<br />.NET Framework 4.8, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -3035,8 +2726,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -3063,8 +2752,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2016 with IIS 10.0 version 2.2.1**  |  * 64bit Windows Server 2016 v2.2.1 running IIS 10.0 *  | .NET Core 2.2.6, supports 2.2.6, 2.1.12<br />.NET Framework 4.8, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -3084,8 +2771,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -3112,8 +2797,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2016 with IIS 10.0 version 2.2.0**  |  * 64bit Windows Server 2016 v2.2.0 running IIS 10.0 *  | .NET Core 2.2.6, supports 2.2.6, 2.1.12<br />.NET Framework 4.8, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -3133,8 +2816,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -3161,8 +2842,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2016 with IIS 10.0 version 2.1.0**  |  * 64bit Windows Server 2016 v2.1.0 running IIS 10.0 *  | .NET Core 2.2.5, supports 2.2.5, 2.1.11<br />.NET Framework 4.8, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -3182,8 +2861,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -3210,8 +2887,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2016 with IIS 10.0 version 2.0.4**  |  * 64bit Windows Server 2016 v2.0.4 running IIS 10.0 *  | .NET Core 2.2.5, supports 2.2.5, 2.1.11<br />.NET Framework 4.7.2, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -3231,8 +2906,6 @@ The following Elastic Beanstalk platform versions for .NET on Windows Server wer
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -3259,8 +2932,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 ### Configuration basics
 <a name="platforms-retiring.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  **Windows Server 2016 with IIS 10.0 version 2.0.3**  |  * 64bit Windows Server 2016 v2.0.3 running IIS 10.0 *  | .NET Core 2.2.4, supports 2.2.4, 2.1.10<br />.NET Framework 4.7.2, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -3280,8 +2951,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 
 ### More details
 <a name="platforms-retiring.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Config  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -3308,8 +2977,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  **Windows Server 2016 with IIS 10.0 version 2.0.2**  |  * 64bit Windows Server 2016 v2.0.2 running IIS 10.0 *  | .NET Core 2.2.3, supports 2.2.3, 2.1.9<br />.NET Framework 4.7.2, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -3329,8 +2996,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Config  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -3357,8 +3022,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  **Windows Server 2016 with IIS 10.0 version 2.0.1**  |  * 64bit Windows Server 2016 v2.0.1 running IIS 10.0 *  | .NET Core 2.2.2, supports 2.2.2, 2.1.8<br />.NET Framework 4.7.2, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -3378,8 +3041,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Config  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -3406,8 +3067,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  **Windows Server 2016 with IIS 10.0 version 1.2.0**  |  * 64bit Windows Server 2016 v1.2.0 running IIS 10.0 *  | .NET Core 2.2.1, supports 2.2.1, 2.1.7, 2.0.9, 1.1.10, 1.0.13<br />.NET Framework 4.7.2, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -3423,8 +3082,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Config  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -3447,8 +3104,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  **Windows Server 2016 with IIS 10.0 version 1.2.0**  |  * 64bit Windows Server 2016 v1.2.0 running IIS 10.0 *  | .NET Core 2.1.6, supports 2.1.6, 2.0.9, 1.1.10, 1.0.13<br />.NET Framework 4.7.2, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -3464,8 +3119,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Config  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -3488,8 +3141,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  **Windows Server 2016 with IIS 10.0 version 1.2.0**  |  * 64bit Windows Server 2016 v1.2.0 running IIS 10.0 *  | .NET Core 2.1.6, supports 2.1.6, 2.0.9, 1.1.10, 1.0.13<br />.NET Framework 4.7.2, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -3505,8 +3156,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Config  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -3529,8 +3178,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  **Windows Server 2016 with IIS 10.0 version 1.2.0**  |  * 64bit Windows Server 2016 v1.2.0 running IIS 10.0 *  | .NET Core 2.1.5, supports 2.1.5, 2.0.9, 1.1.10, 1.0.13<br />.NET Framework 4.7.2, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -3546,8 +3193,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Config  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -3570,8 +3215,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  **Windows Server 2016 with IIS 10.0 version 1.2.0**  |  * 64bit Windows Server 2016 v1.2.0 running IIS 10.0 *  | .NET Core 2.1.4, supports 2.1.4, 2.0.9, 1.1.9, 1.0.12<br />.NET Framework 4.7.2, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -3587,8 +3230,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 
 ### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Config  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -3611,8 +3252,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 ### Configuration basics
 <a name="concepts.platforms.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  **Windows Server 2016 with IIS 10.0 version 1.2.0**  |  * 64bit Windows Server 2016 v1.2.0 running IIS 10.0 *  | .NET Core 2.1, supports 2.1.x, 2.0.x, 1.1.x, 1.0.x<br />.NET Framework 4.7.2, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -3628,8 +3267,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 
 ### More details
 <a name="concepts.platforms.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Config  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -3652,8 +3289,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 ### Configuration basics
 <a name="concepts.platforms.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  **Windows Server 2016 with IIS 10.0 version 1.2.0**  |  * 64bit Windows Server 2016 v1.2.0 running IIS 10.0 *  | .NET Core 2.1, supports 2.1.x, 2.0.x, 1.1.x, 1.0.x<br />.NET Framework 4.7.2, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -3669,8 +3304,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 
 ### More details
 <a name="concepts.platforms.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Config  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -3693,8 +3326,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 ### Configuration basics
 <a name="concepts.platforms.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  **Windows Server 2016 with IIS 10.0 version 1.2.0**  |  * 64bit Windows Server 2016 v1.2.0 running IIS 10.0 *  | .NET Core 2.1, supports 2.1.x, 2.0.x, 1.1.x, 1.0.x<br />.NET Framework 4.7.2, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -3710,8 +3341,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 
 ### More details
 <a name="concepts.platforms.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Config  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -3734,8 +3363,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 ### Configuration basics
 <a name="concepts.platforms.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  **Windows Server 2016 with IIS 10.0 version 1.2.0**  |  * 64bit Windows Server 2016 v1.2.0 running IIS 10.0 *  | .NET Core 2.0, supports 2.0.x, 1.1.x, 1.0.x<br />.NET Framework 4.7.2, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -3751,8 +3378,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 
 ### More details
 <a name="concepts.platforms.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Config  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -3775,8 +3400,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 ### Configuration basics
 <a name="concepts.platforms.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  **Windows Server 2016 with IIS 10.0 version 1.2.0**  |  *64bit Windows Server 2016 v1.2.0 running IIS 10.0*  | .NET Core 2.0, supports 2.0.x, 1.1.x, 1.0.x<br />.NET Framework 4.7, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -3792,8 +3415,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 
 ### More details
 <a name="concepts.platforms.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Config  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -3816,8 +3437,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 ### Configuration basics
 <a name="concepts.platforms.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  **Windows Server 2016 with IIS 10.0 version 1.2.0**  |  *64bit Windows Server 2016 v1.2.0 running IIS 10.0*  | .NET Core 2.0, supports 2.0.x, 1.1.x, 1.0.x<br />.NET Framework 4.7, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -3833,8 +3452,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 
 ### More details
 <a name="concepts.platforms.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Config  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -3857,8 +3474,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 ### Configuration basics
 <a name="concepts.platforms.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  **Windows Server 2016 with IIS 10.0 version 1.2.0**  |  *64bit Windows Server 2016 v1.2.0 running IIS 10.0*  | .NET Core 2.0, supports 2.0.x, 1.1.x, 1.0.x<br />.NET Framework 4.7, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -3874,8 +3489,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 
 ### More details
 <a name="concepts.platforms.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Config  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -3898,8 +3511,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 ### Configuration basics
 <a name="concepts.platforms.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  **Windows Server 2016 with IIS 10.0 version 1.2.0**  |  *64bit Windows Server 2016 v1.2.0 running IIS 10.0*  | .NET Core 2.0, supports 2.0.x, 1.1.x, 1.0.x<br />.NET Framework 4.7, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -3915,8 +3526,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 
 ### More details
 <a name="concepts.platforms.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Config  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -3939,8 +3548,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 ### Configuration basics
 <a name="concepts.platforms.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  **Windows Server 2016 with IIS 10.0 version 1.2.0**  |  *64bit Windows Server 2016 v1.2.0 running IIS 10.0*  | .NET Core 2.0, supports 2.0.x, 1.1.x, 1.0.x<br />.NET Framework 4.7, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -3956,8 +3563,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 
 ### More details
 <a name="concepts.platforms.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Config  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -3980,8 +3585,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 ### Configuration basics
 <a name="concepts.platforms.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  **Windows Server 2016 with IIS 10.0 version 1.2.0**  |  *64bit Windows Server 2016 v1.2.0 running IIS 10.0*  | .NET Core 2.0, supports 1.1.x, 1.0.x<br />.NET Framework 4.7, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -3997,8 +3600,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 
 ### More details
 <a name="concepts.platforms.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Config  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -4021,8 +3622,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 ### Configuration basics
 <a name="concepts.platforms.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  **Windows Server 2016 with IIS 10.0 version 1.2.0**  |  *64bit Windows Server 2016 v1.2.0 running IIS 10.0*  | .NET Core 2.0, supports 1.1.x, 1.0.x<br />.NET Framework 4.7, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -4038,8 +3637,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 
 ### More details
 <a name="concepts.platforms.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Config  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -4062,8 +3659,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 ### Configuration basics
 <a name="concepts.platforms.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  **Windows Server 2016 with IIS 10.0 version 1.2.0**  |  *64bit Windows Server 2016 v1.2.0 running IIS 10.0*  | .NET v4.7, supports runtimes 4, 2.0, 1.1 and 1.0<br />ASP.NET Core v1.1.2, 1.0.5 | IIS 10.0 |
@@ -4079,8 +3674,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 
 ### More details
 <a name="concepts.platforms.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Config  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -4103,8 +3696,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 ### Configuration basics
 <a name="concepts.platforms.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  **Windows Server 2016 with IIS 10.0 version 1.2.0**  |  *64bit Windows Server 2016 v1.2.0 running IIS 10.0*  | .NET v4.7, supports runtimes 4, 2.0, 1.1 and 1.0<br />ASP.NET Core v1.1.2, 1.0.5 | IIS 10.0 |
@@ -4120,8 +3711,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 
 ### More details
 <a name="concepts.platforms.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Config  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -4144,8 +3733,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 ### Configuration basics
 <a name="concepts.platforms.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  **Windows Server 2016 with IIS 10.0 version 1.2.0**  |  *64bit Windows Server 2016 v1.2.0 running IIS 10.0*  | .NET v4.7, supports runtimes 4, 2.0, 1.1 and 1.0<br />ASP.NET Core v1.1.2, 1.0.5 | IIS 10.0 |
@@ -4153,8 +3740,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 
 ### More details
 <a name="concepts.platforms.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Config  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -4169,8 +3754,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 ### Configuration basics
 <a name="concepts.platforms.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  **Windows Server 2012 R2 with IIS 8.5 version 1.2.0**  |  *64bit Windows Server 2012 R2 v1.2.0 running IIS 8.5*  | .NET v4.7, supports runtimes 4, 2.0, 1.1 and 1.0<br />ASP.NET Core v1.1.2, 1.0.5 | IIS 8.5 |
@@ -4184,8 +3767,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 
 ### More details
 <a name="concepts.platforms.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Config  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -4203,8 +3784,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 
 The following Elastic Beanstalk platform versions for .NET were current during this date range:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI version  |  Framework  |  AWS SDK for .NET  |  EC2Config  |  WebDeploy  |  AWS X-Ray  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  **Windows Server 2012 R2 with IIS 8.5 version 1.2.0** <br /> *64bit Windows Server 2012 R2 v1.2.0 running IIS 8.5*  | 2017.04.12 | .NET v4.6.2, Supports runtimes 4, 2.0, 1.1 and 1.0<br />ASP.NET Core v1.1.1, 1.0.4 | 3.14.61.0 | 4.9.1775.0 | 3.6 | 1.0.0 | IIS 8.5 |
@@ -4221,8 +3800,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 
 The following Elastic Beanstalk platform versions for .NET were current during this date range:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI version  |  Framework  |  AWS SDK for .NET  |  EC2Config  |  WebDeploy  |  AWS X-Ray  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  **Windows Server 2012 R2 with IIS 8.5 version 1.2.0** <br /> *64bit Windows Server 2012 R2 v1.2.0 running IIS 8.5*  | 2017.03.15 | .NET v4.6.2, Supports runtimes 4, 2.0, 1.1 and 1.0<br />ASP.NET Core v1.1.1, 1.0.4 | 3.13.767.0 | 4.7.1631 | 3.6 | 1.0.0 | IIS 8.5 |
@@ -4238,8 +3815,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 <a name="platform-history-21"></a>
 
 The following Elastic Beanstalk platform versions for .NET were current during this date range:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI version  |  Framework  |  AWS SDK for .NET  |  EC2Config  |  WebDeploy  |  AWS X-Ray  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -4259,8 +3834,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 
 The following Elastic Beanstalk platform versions for .NET were current during this date range:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI version  |  Framework  |  AWS SDK for .NET  |  EC2Config  |  WebDeploy  |  AWS X-Ray  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  **Windows Server 2012 R2 with IIS 8.5 version 1.2.0** <br /> *64bit Windows Server 2012 R2 v1.2.0 running IIS 8.5*  | 2016.11.09 | .NET v4.6.2, Supports runtimes 4, 2.0, 1.1 and 1.0<br />ASP.NET Core v1.1.0 | 3.9.560.0 | 3.19.1153.0 | 3.6 | 1.0.0 | IIS 8.5 |
@@ -4278,8 +3851,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 <a name="platform-history-19"></a>
 
 The following Elastic Beanstalk platform versions for .NET were current during this date range:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI version  |  Framework  |  AWS SDK for .NET  |  EC2Config  |  WebDeploy  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -4299,8 +3870,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 
 The following Elastic Beanstalk platform versions for .NET were current during this date range:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI version  |  Framework  |  AWS SDK for .NET  |  EC2Config  |  WebDeploy  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- | --- |
 |  **Windows Server 2012 R2 with IIS 8.5 version 1.2.0** <br /> *64bit Windows Server 2012 R2 v1.2.0 running IIS 8.5*  | 2016.09.14 | .NET v4.6.2, Supports runtimes 4, 2.0, 1.1 and 1.0<br />ASP.NET Core v1.0.1 | 3.9.459.0 | 3.19.1153.0 | 3.6 | IIS 8.5 |
@@ -4318,8 +3887,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 <a name="platform-history-17"></a>
 
 The following Elastic Beanstalk platform versions for .NET were current during this date range:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI version  |  Framework  |  AWS SDK for .NET  |  EC2Config  |  WebDeploy  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -4339,8 +3906,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 
 The following Elastic Beanstalk platform versions for .NET were current during this date range:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI version  |  Framework  |  AWS SDK for .NET  |  EC2Config  |  WebDeploy  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- | --- |
 |  **Windows Server 2012 R2 with IIS 8.5 version 1.2.0** <br /> *64bit Windows Server 2012 R2 v1.2.0 running IIS 8.5*  | 2016.07.26 | .NET v4.6.2, Supports runtimes 4, 2.0, 1.1 and 1.0<br />ASP.NET Core v1.0 | 3.9.406.0 | 3.18.1118 | 3.6 | IIS 8.5 |
@@ -4358,8 +3923,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 <a name="platform-history-15"></a>
 
 The following Elastic Beanstalk platform versions for .NET were current during this date range:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI version  |  Framework  |  AWS SDK for .NET  |  EC2Config  |  WebDeploy  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -4379,8 +3942,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 
 The following Elastic Beanstalk platform versions for .NET were current during this date range:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI version  |  Framework  |  AWS SDK for .NET  |  EC2Config  |  WebDeploy  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- | --- |
 |  **Windows Server 2012 R2 with IIS 8.5 version 1.1.0** <br /> *64bit Windows Server 2012 R2 v1.1.0 running IIS 8.5*  | 2016.05.11 | .NET v4.6.1, Supports runtimes 4, 2.0, 1.1 and 1.0 | 3.9.329.0 | 3.15.880 | 3.6 | IIS 8.5 |
@@ -4398,8 +3959,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 <a name="platform-history-13"></a>
 
 The following Elastic Beanstalk platform versions for .NET were current during this date range:
-
-****
 
 |  Platform Version and *Solution Stack Name*  |  AMI version  |  Framework  |  AWS SDK for .NET  |  EC2Config  |  WebDeploy  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -4419,8 +3978,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 
 The following Elastic Beanstalk platform versions for .NET were current during this date range:
 
-****
-
 |  Platform Version and *Solution Stack Name*  | AMI version |  Framework  | AWS SDK for .NET | EC2Config |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- |
 | **Windows Server 2012 R21 with IIS 8.5 version 1.1.0**<br />*64bit Windows Server 2012 R2 v1.1.0 running IIS 8.5* | 2016.02.10 | .NET v4.6.1<br />Supports runtimes 4, 2.0, 1.1 and 1.0 | v3.1.36.1 | 3.12.649 | IIS 8.5 |
@@ -4438,8 +3995,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 <a name="platform-history-11"></a>
 
 The following Elastic Beanstalk platform versions for .NET were current during this date range:
-
-****
 
 |  Platform Version and *Solution Stack Name*  | AMI version |  Framework  | AWS SDK for .NET | EC2Config |  Web Server  |
 | --- | --- | --- | --- | --- | --- |
@@ -4459,8 +4014,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 
 The following Elastic Beanstalk platform versions for .NET were current during this date range:
 
-****
-
 |  Platform Version and *Solution Stack Name*  | AMI version |  Framework  | AWS SDK for .NET |  Web Server  |
 | --- | --- | --- | --- | --- |
 | **Windows Server 2012 R21 with IIS 8.5 version 1.1.0**<br />*64bit Windows Server 2012 R2 v1.1.0 running IIS 8.5* | 2015.12.31 | .NET v4.6.1<br />Supports runtimes 4, 2.0, 1.1 and 1.0 | v3.1.36.1 | IIS 8.5 |
@@ -4478,8 +4031,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 <a name="platform-history-09"></a>
 
 The following Elastic Beanstalk platform versions for .NET were current during this date range:
-
-****
 
 |  Platform Version and *Solution Stack Name*  |  Framework  |  Web Server  |
 | --- | --- | --- |
@@ -4499,8 +4050,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 
 The following Elastic Beanstalk platform versions for .NET were current during this date range:
 
-****
-
 |  Platform Version and *Solution Stack Name*  |  Framework  |  Web Server  |
 | --- | --- | --- |
 | **Windows Server 2012 R21 with IIS 8.5 version 1.0.0**<br />*64bit Windows Server 2012 R2 v1.0.0 running IIS 8.5* | .NET v4.6<br />Supports runtimes 4, 2.0, 1.1 and 1.0 | IIS 8.5 |
@@ -4517,8 +4066,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 
 The following Elastic Beanstalk platform versions for .NET were current during this date range:
 
-****
-
 | Platform Version and *Solution Stack Name* | Framework | Web Server |
 | --- | --- | --- |
 | **Windows Server 2012 R21 with IIS 8.5**<br />*64bit Windows Server 2012 R2 running IIS 8.5* | .NET v4.5<br />Also supports 4.0, 3.5, 3.0, 2.0, 1.1 and 1.0 | IIS 8.5 |
@@ -4532,8 +4079,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 <a name="platform-history-06"></a>
 
 The following Elastic Beanstalk platform versions for .NET were current during this date range:
-
-****
 
 | Platform Version and *Solution Stack Name* | Framework | Web Server |
 | --- | --- | --- |
@@ -4549,8 +4094,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 
 The following Elastic Beanstalk platform versions for .NET were current during this date range:
 
-****
-
 | Platform Version and *Solution Stack Name* | Framework | Web Server |
 | --- | --- | --- |
 | **Windows Server 2012 R21 with IIS 8.5**<br />*64bit Windows Server 2012 R2 running IIS 8.5* | .NET v4.5<br />Also supports 4.0, 3.5, 3.0, 2.0, 1.1 and 1.0 | IIS 8.5 |
@@ -4565,8 +4108,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 
 The following Elastic Beanstalk platform versions for .NET were current during this date range:
 
-****
-
 | Platform Version and *Solution Stack Name* | Framework | Web Server |
 | --- | --- | --- |
 | **Windows Server 2012 R21 with IIS 8.5**<br />*64bit Windows Server 2012 R2 running IIS 8.5* | .NET v4.5<br />Also supports 4.0, 3.5, 3.0, 2.0, 1.1 and 1.0 | IIS 8.5 |
@@ -4580,8 +4121,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 <a name="platform-history-03"></a>
 
 The following Elastic Beanstalk platform versions for .NET were current during this date range:
-
-****
 
 |  **IIS Configurations**  |
 | --- |
@@ -4599,8 +4138,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 
 The following Elastic Beanstalk platform versions for .NET were current during this date range:
 
-****
-
 |  **IIS Configurations**  |
 | --- |
 | **Name** | **AMI** | **Language** | **Web Server** |
@@ -4616,8 +4153,6 @@ The following Elastic Beanstalk platform versions for .NET were current during t
 <a name="platform-history-01"></a>
 
 The following Elastic Beanstalk platform versions for .NET were current prior to August 6, 2014:
-
-****
 
 |  **IIS Configurations**  |
 | --- |

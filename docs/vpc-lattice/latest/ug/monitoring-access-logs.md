@@ -60,7 +60,7 @@ To enable access logs and send the logs to their destinations, you must have the
 
 ------
 
-For more information, see [Adding and removing IAM identity permissions](https://docs.aws.amazon.com//IAM/latest/UserGuide/access_policies_manage-attach-detach.html) in the *AWS Identity and Access Management User Guide*.
+For more information, see [Adding and removing IAM identity permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html) in the *AWS Identity and Access Management User Guide*.
 
 After you’ve updated the policy attached to the IAM user, group, or role that you are using, go to [Enable access logs](#monitoring-access-logs-enable).
 
@@ -71,12 +71,12 @@ You can send access logs to the following destinations.
 
 **Amazon CloudWatch Logs**
 + VPC Lattice typically delivers logs to CloudWatch Logs within 2 minutes. However, keep in mind that actual log delivery time is on a best effort basis and there may be additional latency.
-+ A resource policy is created automatically and added to the CloudWatch log group if the log group does not have certain permissions. For more information, see [Logs sent to CloudWatch Logs](https://docs.aws.amazon.com//AmazonCloudWatch/latest/logs/AWS-logs-and-resource-policy.html#AWS-logs-infrastructure-CWL) in the *Amazon CloudWatch User Guide*.
-+ You can find access logs that are sent to CloudWatch under Log Groups in the CloudWatch console. For more information, see [View log data sent to CloudWatch Logs](https://docs.aws.amazon.com//AmazonCloudWatch/latest/logs/Working-with-log-groups-and-streams.html#ViewingLogData) in the *Amazon CloudWatch User Guide*.
++ A resource policy is created automatically and added to the CloudWatch log group if the log group does not have certain permissions. For more information, see [Logs sent to CloudWatch Logs](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AWS-logs-and-resource-policy.html#AWS-logs-infrastructure-CWL) in the *Amazon CloudWatch User Guide*.
++ You can find access logs that are sent to CloudWatch under Log Groups in the CloudWatch console. For more information, see [View log data sent to CloudWatch Logs](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Working-with-log-groups-and-streams.html#ViewingLogData) in the *Amazon CloudWatch User Guide*.
 
 **Amazon S3**
 + VPC Lattice typically delivers logs to Amazon S3 within 6 minutes. However, keep in mind that actual log delivery time is on a best effort basis and there may be additional latency.
-+ A bucket policy will be created automatically and added to your Amazon S3 bucket if the bucket does not have certain permissions. For more information, see [Logs sent to Amazon S3 ](https://docs.aws.amazon.com//AmazonCloudWatch/latest/logs/AWS-logs-and-resource-policy.html#AWS-logs-infrastructure-S3) in the *Amazon CloudWatch User Guide*.
++ A bucket policy will be created automatically and added to your Amazon S3 bucket if the bucket does not have certain permissions. For more information, see [Logs sent to Amazon S3 ](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AWS-logs-and-resource-policy.html#AWS-logs-infrastructure-S3) in the *Amazon CloudWatch User Guide*.
 + Access logs that are sent to Amazon S3 use the following naming convention:
 
   ```
@@ -90,8 +90,8 @@ You can send access logs to the following destinations.
 
 **Amazon Data Firehose**
 + VPC Lattice typically delivers logs to Firehose within 2 minutes. However, keep in mind that actual log delivery time is on a best effort basis and there may be additional latency.
-+ A service-linked role is automatically created that grants VPC Lattice permission to send access logs to Amazon Data Firehose. For automatic role creation to succeed, users must have permission for the `iam:CreateServiceLinkedRole` action. For more information, see [Logs sent to Amazon Data Firehose](https://docs.aws.amazon.com//AmazonCloudWatch/latest/logs/AWS-logs-and-resource-policy.html#AWS-logs-infrastructure-Firehose) in the *Amazon CloudWatch User Guide*.
-+ For more information about viewing the logs sent to Amazon Data Firehose, see [Monitoring Amazon Kinesis Data Streams](https://docs.aws.amazon.com//streams/latest/dev/monitoring.html) in the *Amazon Data Firehose Developer Guide*.
++ A service-linked role is automatically created that grants VPC Lattice permission to send access logs to Amazon Data Firehose. For automatic role creation to succeed, users must have permission for the `iam:CreateServiceLinkedRole` action. For more information, see [Logs sent to Amazon Data Firehose](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AWS-logs-and-resource-policy.html#AWS-logs-infrastructure-Firehose) in the *Amazon CloudWatch User Guide*.
++ For more information about viewing the logs sent to Amazon Data Firehose, see [Monitoring Amazon Kinesis Data Streams](https://docs.aws.amazon.com/streams/latest/dev/monitoring.html) in the *Amazon Data Firehose Developer Guide*.
 
 ## Enable access logs
 <a name="monitoring-access-logs-enable"></a>

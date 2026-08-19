@@ -11,8 +11,6 @@ DVB-Sub and SCTE-27 formats are supported only in TS inputs. You must specify th
 
 Complete the **PID** and **Language code** fields in one of the ways described in the following table. Each row in the table describes a valid way to complete these two fields.
 
-****
-
 | PID | Language code | Result |
 | --- | --- | --- |
 | Specified | Blank | Extracts the captions from the specified PID. |

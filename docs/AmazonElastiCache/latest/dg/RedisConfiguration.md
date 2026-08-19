@@ -12,8 +12,6 @@ The Valkey and Redis OSS engines each provides a number of configuration paramet
 
 For serverless caches, parameter groups are not used and all Valkey or Redis OSS configuration is not modifiable. The following Valkey or Redis OSS parameters are in place:
 
-****
-
 |  Name  |  Details  |  Description  |
 | --- | --- | --- |
 | acl-pubsub-default | `allchannels` | Default pubsub channel permissions for ACL users on the cache. |
@@ -33,8 +31,6 @@ For serverless caches, parameter groups are not used and all Valkey or Redis OSS
 | timeout | 0 | Clients are not forcibly disconnected at a specific idle time, but they may be disconnected during steady-state for load balancing purposes. |
 
 Additionally, the following limits are in place:
-
-****
 
 |  Name  |  Details  |  Description  |
 | --- | --- | --- |

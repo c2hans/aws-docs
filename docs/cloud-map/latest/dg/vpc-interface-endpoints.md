@@ -16,7 +16,7 @@ For more information, see [Access AWS services through AWS PrivateLink](https://
 
 Before you set up an interface endpoint for AWS Cloud Map, review [Considerations](https://docs.aws.amazon.com/vpc/latest/privatelink/create-interface-endpoint.html#considerations-interface-endpoints) in the *AWS PrivateLink Guide*.
 
-If your Amazon VPC doesn’t have an internet gateway and your tasks use the `awslogs` log driver to send log information to CloudWatch Logs, you must create an interface VPC endpoint for CloudWatch Logs. For more information, see [Using CloudWatch Logs with Interface VPC Endpoints](https://docs.aws.amazon.com//AmazonCloudWatch/latest/logs/cloudwatch-logs-and-interface-VPC.html) in the Amazon CloudWatch Logs User Guide.
+If your Amazon VPC doesn’t have an internet gateway and your tasks use the `awslogs` log driver to send log information to CloudWatch Logs, you must create an interface VPC endpoint for CloudWatch Logs. For more information, see [Using CloudWatch Logs with Interface VPC Endpoints](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/cloudwatch-logs-and-interface-VPC.html) in the Amazon CloudWatch Logs User Guide.
 
 VPC endpoints don’t support AWS cross-Region requests. Ensure that you create your endpoint in the same Region where you plan to issue your API calls to AWS Cloud Map.
 

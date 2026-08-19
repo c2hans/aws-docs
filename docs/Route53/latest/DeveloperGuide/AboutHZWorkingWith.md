@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/AboutHZWor
 
 A public hosted zone is a container that holds information about how you want to route traffic on the internet for a domain, such as example.com, and its subdomains (acme.example.com, zenith.example.com). You get a public hosted zone in one of two ways:
 + When you register a domain with Route 53, Route 53 creates a hosted zone for you automatically.
-+ When you transfer DNS service for an existing domain to Route 53, you start by creating a hosted zone for the domain. For more information, see [Making Amazon Route 53 the DNS service for an existing domainMaking Route 53 the DNS service for an existing domain](MigratingDNS.md).
++ When you transfer DNS service for an existing domain to Route 53, you start by creating a hosted zone for the domain. For more information, see [Making Amazon Route 53 the DNS service for an existing domain](MigratingDNS.md).
 
 In both cases, you then create records in the hosted zone to route traffic for the domain and subdomains. For example, you might create a record to route traffic for www.example.com to a CloudFront distribution or to a web server in your data center. For more information about records, see [Working with records](rrsets-working-with.md).
 

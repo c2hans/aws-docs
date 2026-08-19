@@ -9,8 +9,6 @@ AWS Data Pipeline is no longer available to new customers. Existing customers of
 
 These are the configuration options available from the command line when you launch Task Runner.
 
-****
-
 | Command Line Parameter | Description |
 | --- | --- |
 | `--help` | Command line help. Example: `Java -jar TaskRunner-1.0.jar --help` |

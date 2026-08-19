@@ -98,7 +98,7 @@ If you're part of an organization in AWS Organizations and sharing within your o
 You can share a mesh that you own using the AWS RAM console or the AWS CLI.
 
 **To share a mesh that you own using the AWS RAM console**
-For instructions, see [Creating a Resource Share](https://docs.aws.amazon.com//ram/latest/userguide/working-with-sharing.html#working-with-sharing-create) in the *AWS RAM User Guide*. When you select a resource type, select **Meshes**, and then select the mesh that you want to share. If no meshes are listed, create a mesh first. For more information, see [Creating a service mesh](meshes.md#create-mesh).
+For instructions, see [Creating a Resource Share](https://docs.aws.amazon.com/ram/latest/userguide/working-with-sharing.html#working-with-sharing-create) in the *AWS RAM User Guide*. When you select a resource type, select **Meshes**, and then select the mesh that you want to share. If no meshes are listed, create a mesh first. For more information, see [Creating a service mesh](meshes.md#create-mesh).
 
 **To share a mesh that you own using the AWS CLI**
 Use the [create-resource-share](https://docs.aws.amazon.com/cli/latest/reference/ram/create-resource-share.html) command. For the `--resource-arns` option, specify the ARN of the mesh that you want to share.

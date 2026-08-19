@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/controltower/latest/controlreference/pri
 
 This control disallows access to unlisted operations in global and regional services outside of the specified Regions. That includes all Regions where AWS Control Tower is not available, as well as all Regions not selected for governance in the **Landing zone settings** page. Actions are allowed as usual in Regions with **Governed** status.
 
-You may wish to review the information at [Configure the Region deny control](https://docs.aws.amazon.com//controltower/latest/userguide/region-deny.html) in the *AWS Control Tower User Guide* before you enable this control.
+You may wish to review the information at [Configure the Region deny control](https://docs.aws.amazon.com/controltower/latest/userguide/region-deny.html) in the *AWS Control Tower User Guide* before you enable this control.
 
 **Note**
 Certain global AWS services, such as AWS Identity and Access Management (IAM) and AWS Organizations, are exempt from data residency controls. Those services are specified in the SCP example code that follows.

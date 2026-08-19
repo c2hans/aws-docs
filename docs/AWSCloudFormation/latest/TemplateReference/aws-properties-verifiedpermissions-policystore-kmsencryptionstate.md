@@ -47,7 +47,7 @@ User-defined, additional context added to encryption processes.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Key`  <a name="cfn-verifiedpermissions-policystore-kmsencryptionstate-key"></a>
-The customer-managed KMS key [Amazon Resource Name (ARN)](https://docs.aws.amazon.com//general/latest/gr/aws-arns-and-namespaces.html) being used for encryption processes.
+The customer-managed KMS key [Amazon Resource Name (ARN)](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html) being used for encryption processes.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^[a-zA-Z0-9:/_-]+$`

@@ -9,7 +9,7 @@ Streaming media quality is influenced by many factors. To ensure the highest qua
 
 The following sections describe how MediaPackage leverages media quality scores from stream inputs and through origin outputs to continuously monitor video quality, correct for errors in the live streaming workflow, and help facilitate debugging through increased visibility.
 
-MQCS is available with CMAF ingest, and is enabled by default. To adjust settings, select the MQCS settings on your CMAF channels. For more information about channel settings, see [Creating a channel in AWS Elemental MediaPackageCreating a channel](channels-create.md).
+MQCS is available with CMAF ingest, and is enabled by default. To adjust settings, select the MQCS settings on your CMAF channels. For more information about channel settings, see [Creating a channel in AWS Elemental MediaPackage](channels-create.md).
 
 ## How MQCS works
 <a name="mqcs-how"></a>

@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/xray/latest/devguide/xray-services-event
 
 AWS X-Ray integrates with Amazon EventBridge to trace events that are passed through EventBridge. If a service that is instrumented with the X-Ray SDK sends events to EventBridge, the trace context is propagated to downstream event targets within the [tracing header](xray-concepts.md#xray-concepts-tracingheader). The X-Ray SDK automatically picks up the tracing header and applies it to any subsequent instrumentation. This continuity enables users to trace, analyze, and debug throughout downstream services and provides a more complete view of their system.
 
-For more information, see [EventBridge X-Ray Integration](https://docs.aws.amazon.com//eventbridge/latest/userguide/eb-xray-integ.html) in the *EventBridge User Guide*.
+For more information, see [EventBridge X-Ray Integration](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-xray-integ.html) in the *EventBridge User Guide*.
 
 ## Viewing source and targets on the X-Ray service map
 <a name="xray-services-eventbridge-service-map"></a>
@@ -19,7 +19,7 @@ The X-Ray [trace map](xray-console-servicemap.md) displays an EventBridge event 
 ## Propagate the trace context to event targets
 <a name="xray-services-eventbridge-auto-inject"></a>
 
-The X-Ray SDK enables the EventBridge event source to propagate trace context to downstream event targets. The following language-specific examples demonstrate calling EventBridge from a Lambda function on which [active tracing is enabled](https://docs.aws.amazon.com//lambda/latest/dg/services-xray.html#services-xray-api):
+The X-Ray SDK enables the EventBridge event source to propagate trace context to downstream event targets. The following language-specific examples demonstrate calling EventBridge from a Lambda function on which [active tracing is enabled](https://docs.aws.amazon.com/lambda/latest/dg/services-xray.html#services-xray-api):
 
 ------
 #### [ Java ]

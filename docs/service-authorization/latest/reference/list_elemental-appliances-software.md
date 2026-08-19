@@ -29,8 +29,6 @@ AWS Elemental Appliances and Software has no API operations that can be used in 
 
 The following actions are defined by AWS Elemental Appliances and Software but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 - **   [CompleteUpload](https://docs.aws.amazon.com/elemental-appliances-software)  **
   - **Description:** Grants permission to complete an upload of an attachment for a quote or order
   - **Resource types (\*required):**
@@ -119,8 +117,6 @@ The following actions are defined by AWS Elemental Appliances and Software but a
 <a name="list_elemental-appliances-software-resources-for-iam-policies"></a>
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
-
-****
 
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |

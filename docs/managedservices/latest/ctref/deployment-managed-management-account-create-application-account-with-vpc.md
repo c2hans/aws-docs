@@ -14,8 +14,6 @@ Create a managed AWS landing zone application account and a VPC with up to 10 pr
 ## Change Type Details
 <a name="ct-1zdasmc2ewzrs-DMMc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1zdasmc2ewzrs |

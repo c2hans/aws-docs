@@ -10,7 +10,7 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/exporting-greml
  To export query results to Amazon S3, use the `call()` step with the `neptune.query.exportToS3` service name as the final step in your Gremlin query. Terminal step in [Tinkerpop drivers using Bytecode](https://tinkerpop.apache.org/docs/current/reference/#terminal-steps) can be added after the `call()` step. The export parameters must be provided as string values.
 
 **Note**
- The query with the `call()` step having `neptune.query.exportToS3` will fail if not used as the final step. The Gremlin clients using bytecode can use terminal steps. See [ Gremlin best practices](https://docs.aws.amazon.com//neptune/latest/userguide/best-practices-gremlin-java-bytecode.html) in the Amazon Neptune documentation for more information.
+ The query with the `call()` step having `neptune.query.exportToS3` will fail if not used as the final step. The Gremlin clients using bytecode can use terminal steps. See [ Gremlin best practices](https://docs.aws.amazon.com/neptune/latest/userguide/best-practices-gremlin-java-bytecode.html) in the Amazon Neptune documentation for more information.
 
 ```
 g.V()
@@ -25,7 +25,7 @@ g.V()
 **Parameters**
 +  `destination`: required - The Amazon S3 URI where results will be written.
 +  `format`: required - The output format, currently only supports '[GraphSONv3](https://tinkerpop.apache.org/docs/3.7.3/dev/io/#graphson-3d0)'.
-+  `keyArn`: optional - The ARN of a AWS KMS key for Amazon S3 [ server-side encryption](https://docs.aws.amazon.com//AmazonS3/latest/userguide/serv-side-encryption.html).
++  `keyArn`: optional - The ARN of a AWS KMS key for Amazon S3 [ server-side encryption](https://docs.aws.amazon.com/AmazonS3/latest/userguide/serv-side-encryption.html).
 
 ## Examples
 <a name="exporting-gremlin-examples"></a>
@@ -69,7 +69,7 @@ g.V().
 **Important considerations**
 +  The export step must be the last step in your Gremlin query.
 +  If an object already exists at the specified Amazon S3 location, the query will fail.
-+  Maximum query execution time for export queries is limited to 11 hours and 50 minutes. This feature uses [Forward access sessions](https://docs.aws.amazon.com//IAM/latest/UserGuide/access_forward_access_sessions.html). It is currently limited to 11 hours and 50 minutes to avoid token expiry issues.
++  Maximum query execution time for export queries is limited to 11 hours and 50 minutes. This feature uses [Forward access sessions](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_forward_access_sessions.html). It is currently limited to 11 hours and 50 minutes to avoid token expiry issues.
 **Note**
  The export query still honors the query timeout. For large exports, you should use an appropriate query timeout.
 +  All new object uploads to Amazon S3 are automatically encrypted.
@@ -199,4 +199,4 @@ g.V().
 
 **Best practices**
 +  Use Amazon S3 bucket lifecycle rules to clean up incomplete multipart uploads.
-+  Monitor your export operations using Neptune logs and metrics. You can check the [Gremlin status endpoint](https://docs.aws.amazon.com//neptune/latest/userguide/gremlin-api-status.html) to see if a query is currently running. As long as the client has not received a response, the query will be assumed to be running.
++  Monitor your export operations using Neptune logs and metrics. You can check the [Gremlin status endpoint](https://docs.aws.amazon.com/neptune/latest/userguide/gremlin-api-status.html) to see if a query is currently running. As long as the client has not received a response, the query will be assumed to be running.

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/developerguide/iot-l
 # Managing LoRaWAN traffic from public networks (Everynet)
 <a name="iot-lorawan-roaming"></a>
 
-You can connect your LoRaWAN devices to the cloud in minutes by using publicly available LoRaWAN networks. AWS IoT Core for LoRaWAN now supports Everynet’s network coverage in the US, UK, Ireland, and Spain. When using the public network, you'll be charged a public network connectivity charge for each device every month. The pricing applies to all AWS Regions where public network connectivity is offered. For information about pricing for this feature, see the [AWS IoT Core pricing page](https://aws.amazon.com//iot-core/pricing/).
+You can connect your LoRaWAN devices to the cloud in minutes by using publicly available LoRaWAN networks. AWS IoT Core for LoRaWAN now supports Everynet’s network coverage in the US, UK, Ireland, and Spain. When using the public network, you'll be charged a public network connectivity charge for each device every month. The pricing applies to all AWS Regions where public network connectivity is offered. For information about pricing for this feature, see the [AWS IoT Core pricing page](https://aws.amazon.com/iot-core/pricing/).
 
 **Important**
 The public network is operated and provided as a service directly by Everynet. Before using this feature, see the applicable [AWS Service Terms](https://aws.amazon.com/service-terms/). In addition, if you use a public network through AWS IoT Core for LoRaWAN, certain LoRaWAN device information such as `DevEUI` and `JoinEUI` will be replicated across regions where AWS IoT Core for LoRaWAN is available.

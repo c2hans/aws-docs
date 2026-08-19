@@ -88,7 +88,7 @@ export function response(ctx) {
 **Note**
 Enhanced filters are enabled in the GraphQL resolver's handler in a given subscription. For more information, see [Resolver reference](https://docs.aws.amazon.com/appsync/latest/devguide/resolver-reference-js-version.html).
 
-To implement the behavior of the enhanced filter, you must use the `extensions.setSubscriptionFilter()` function to define a filter expression evaluated against published data from a GraphQL mutation that the subscribed clients might be interested in. For more information about the filtering extensions, see [Extensions](https://docs.aws.amazon.com//appsync/latest/devguide/extensions-js.html).
+To implement the behavior of the enhanced filter, you must use the `extensions.setSubscriptionFilter()` function to define a filter expression evaluated against published data from a GraphQL mutation that the subscribed clients might be interested in. For more information about the filtering extensions, see [Extensions](https://docs.aws.amazon.com/appsync/latest/devguide/extensions-js.html).
 
 The following section explains how to use filtering extensions to implement enhanced filters.
 
@@ -133,7 +133,7 @@ OR
 
 ![Example showing a ticket filtering query](http://docs.aws.amazon.com/appsync/latest/devguide/images/aws-priority-example.png)
 
-Filters defined in the subscription resolver (enhanced filtering) take precedence over filtering based only on subscription arguments (basic filtering). For more information about using subscription arguments, see [Using subscription arguments](https://docs.aws.amazon.com//appsync/latest/devguide/aws-appsync-real-time-data.html#using-subscription-arguments)).
+Filters defined in the subscription resolver (enhanced filtering) take precedence over filtering based only on subscription arguments (basic filtering). For more information about using subscription arguments, see [Using subscription arguments](https://docs.aws.amazon.com/appsync/latest/devguide/aws-appsync-real-time-data.html#using-subscription-arguments)).
 
 If an argument is defined and required in the GraphQL schema of the subscription, filtering based on the given argument takes place only if the argument is defined as a rule in the resolver's `extensions.setSubscriptionFilter()` method. However, if there are no `extensions` filtering methods in the subscription resolver, arguments defined in the client are used only for basic filtering. You can't use basic filtering and enhanced filtering concurrently.
 

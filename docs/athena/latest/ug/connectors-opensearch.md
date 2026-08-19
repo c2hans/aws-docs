@@ -136,8 +136,6 @@ PUT movies/_mapping
 
 The OpenSearch connector can extract metadata definitions from either AWS Glue or the OpenSearch instance. The connector uses the mapping in the following table to convert the definitions to Apache Arrow data types, including the points noted in the section that follows.
 
-****
-
 | OpenSearch | Apache Arrow | AWS Glue |
 | --- | --- | --- |
 | text, keyword, binary | VARCHAR | string |

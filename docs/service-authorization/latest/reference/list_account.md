@@ -25,8 +25,6 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_account-actions-as-permissions).
 
-****
-
 - **   AcceptPrimaryEmailUpdate  **
   - **IAM action:**  [account:AcceptPrimaryEmailUpdate](#list_account-action-AcceptPrimaryEmailUpdate)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [iam:UpdateAccountEmailAddress](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-update-root-user.html)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
@@ -121,8 +119,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
 <a name="list_account-actions-as-permissions"></a>
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
-
-****
 
 - **   [AcceptPrimaryEmailUpdate](https://docs.aws.amazon.com/accounts/latest/reference/API_AcceptPrimaryEmailUpdate.html)  **
   - **Description:** Grants permission to accept the process to update the primary email address of an account
@@ -225,8 +221,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 The following actions are defined by AWS Account Management but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 - **   [CloseAccount](https://docs.aws.amazon.com/accounts/latest/reference/security_account-permissions-ref.html)  **
   - **Description:** Grants permission to close an account
   - **Resource types (\*required):** [account](#list_account-resource-account)
@@ -238,8 +232,6 @@ The following actions are defined by AWS Account Management but are not directly
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
 
-****
-
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
 |  [account](https://docs.aws.amazon.com/accounts/latest/reference/security_iam_service-with-iam.html#security_iam_service-with-iam-id-based-policies-resources)  | arn:${Partition}:account::${Account}:account |   |
@@ -249,8 +241,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_account-policy-keys"></a>
 
 AWS Account Management defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

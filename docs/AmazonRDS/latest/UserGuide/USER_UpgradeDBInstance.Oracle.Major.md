@@ -25,8 +25,6 @@ Amazon RDS supports the following major version upgrades.
 **Note**
 Oracle Database 26ai is available only in Enterprise Edition.
 
-****
-
 | Current version | Upgrade supported |
 | --- | --- |
 | 21.0.0.0 using the CDB architecture | 26.0.0.0 |

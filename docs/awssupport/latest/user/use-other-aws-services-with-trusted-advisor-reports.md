@@ -219,4 +219,4 @@ After you identify the duplicate column, we recommend that you replace the exist
 1. Enter a new query in the Athena console. See [Query the data in Amazon Athena](#setting-up-athena).
 
 **Note**
-If you still have issues with this tutorial, you can create a technical support case in the [AWS Support Center](https://console.aws.amazon.com//support/home).
+If you still have issues with this tutorial, you can create a technical support case in the [AWS Support Center](https://console.aws.amazon.com/support/home).

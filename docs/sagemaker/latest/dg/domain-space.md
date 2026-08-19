@@ -24,9 +24,9 @@ A shared space uses the same VPC settings as the domain that it's created in.
 
  All resources created in a shared space are automatically tagged with a domain ARN tag and shared space ARN tag. The domain ARN tag is based on the domain ID, while the shared space ARN tag is based on the shared space name.
 
- You can use these tags to monitor AWS CloudTrail usage. For more information, see [Log Amazon SageMaker API Calls with AWS CloudTrail](https://docs.aws.amazon.com//sagemaker/latest/dg/logging-using-cloudtrail.html).
+ You can use these tags to monitor AWS CloudTrail usage. For more information, see [Log Amazon SageMaker API Calls with AWS CloudTrail](https://docs.aws.amazon.com/sagemaker/latest/dg/logging-using-cloudtrail.html).
 
- You can also use these tags to monitor costs with AWS Billing and Cost Management. For more information, see [Using AWS cost allocation tags](https://docs.aws.amazon.com//awsaccountbilling/latest/aboutv2/cost-alloc-tags.html).
+ You can also use these tags to monitor costs with AWS Billing and Cost Management. For more information, see [Using AWS cost allocation tags](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html).
 
  **Real time co-editing of notebooks**
 

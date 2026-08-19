@@ -103,13 +103,9 @@ When you create a custom IAM role, carefully consider the minimum permissions ne
 ## Syntax
 <a name="emrcluster-syntax"></a>
 
-****
-
 | Object Invocation Fields | Description | Slot Type |
 | --- | --- | --- |
 | schedule | This object is invoked within the execution of a schedule interval. Specify a schedule reference to another object to set the dependency execution order for this object. You can satisfy this requirement by explicitly setting a schedule on the object, for example, by specifying "schedule": {"ref": "DefaultSchedule"}. In most cases, it is better to put the schedule reference on the default pipeline object so that all objects inherit that schedule. Or, if the pipeline has a tree of schedules (schedules within the master schedule), you can create a parent object that has a schedule reference. For more information about example optional schedule configurations, see [https://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/dp-object-schedule.html](https://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/dp-object-schedule.html) | Reference Object, for example, "schedule":{"ref":"myScheduleId"} |
-
-****
 
 | Optional Fields | Description | Slot Type |
 | --- | --- | --- |
@@ -173,8 +169,6 @@ When you create a custom IAM role, carefully consider the minimum permissions ne
 | useOnDemandOnLastAttempt | On the last attempt to request a resource, make a request for On-Demand Instances rather than Spot Instances. This ensures that if all previous attempts have failed, the last attempt is not interrupted.  | Boolean |
 | workerGroup | Field not allowed on this object. | String |
 
-****
-
 | Runtime Fields | Description | Slot Type |
 | --- | --- | --- |
 | @activeInstances | List of the currently scheduled active instance objects. | Reference Object, for example, "activeInstances":{"ref":"myRunnableObjectId"} |
@@ -203,8 +197,6 @@ When you create a custom IAM role, carefully consider the minimum permissions ne
 | @status | The status of this object. | String |
 | @version | Pipeline version with which the object was created. | String |
 | @waitingOn | Description of the list of dependencies on which this object is waiting. | Reference Object, for example, "waitingOn":{"ref":"myRunnableObjectId"} |
-
-****
 
 | System Fields | Description | Slot Type |
 | --- | --- | --- |

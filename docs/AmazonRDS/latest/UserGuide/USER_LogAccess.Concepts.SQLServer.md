@@ -12,8 +12,6 @@ You can access Microsoft SQL Server error logs, agent logs, trace files, and dum
 
 Log files are rotated each day and whenever your DB instance is restarted. The following is the retention schedule for Microsoft SQL Server logs on Amazon RDS.
 
-****
-
 | Log type | Retention schedule |
 | --- | --- |
 | Error logs | A maximum of 30 error logs are retained. Amazon RDS might delete error logs older than 7 days.  |

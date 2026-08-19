@@ -10,7 +10,7 @@ If you're using AWS Elastic Beanstalk to deploy and manage applications in the A
 To route DNS traffic to an Elastic Beanstalk environment, see the procedures in the following topics.
 
 **Note**
-These procedures assume that you're already using Route 53 as the DNS service for your domain. If you're using another DNS service, see [Making Amazon Route 53 the DNS service for an existing domainMaking Route 53 the DNS service for an existing domain](MigratingDNS.md) for information about using Route 53 as the DNS service provider for your domain.
+These procedures assume that you're already using Route 53 as the DNS service for your domain. If you're using another DNS service, see [Making Amazon Route 53 the DNS service for an existing domain](MigratingDNS.md) for information about using Route 53 as the DNS service provider for your domain.
 
 **Topics**
 + [Deploying an application into an Elastic Beanstalk environment](#routing-to-beanstalk-environment-deploy)

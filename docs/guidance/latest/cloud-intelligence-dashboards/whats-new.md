@@ -20,6 +20,15 @@ Subscribe to the RSS feed to get notified about new releases automatically: [clo
 
 The highlights below cover notable releases from the past year, most recent first.
 
+## cid-cmd v4.4.17: merge taxonomy fields and account mapping (August 14, 2026)
+<a name="whats-new-cid-cmd-4417"></a>
++  **Merge taxonomy fields into a single dimension** (since v4.4.16) — combine several sources that represent the same business dimension (a resource tag, an IAM principal tag, an account tag, or an `account_map` column) into one dashboard filter and Group By field. The merged column takes the first non-empty value (COALESCE) and is applied as an Amazon Quick calculated field, with no Athena view changes. It is also a simple way to normalize inconsistent tag keys, such as `application` and `app`.
++  **Account mapping with `cid-cmd map` ** — build an enriched `account_map` Athena view without writing SQL, from AWS Organizations data (OU hierarchy levels, hierarchical tag inheritance, and account-name splitting), a CSV file (such as a CMDB export or spreadsheet), or both. Select which columns become taxonomy dimensions.
+
+See [Add organizational taxonomy](add-org-taxonomy.md).
+
+View the [GitHub releases](https://github.com/aws-solutions-library-samples/cloud-intelligence-dashboards-framework/releases).
+
 ## Kiro User Activity Dashboard v1.0.0: new dashboard and data collection module (August 12, 2026)
 <a name="whats-new-kiro-user-activity-100"></a>
 

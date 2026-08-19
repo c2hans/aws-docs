@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/global-config-object.html
 ---
 
-The AWS SDK for JavaScript v2 has reached end-of-support. We recommend that you migrate to [AWS SDK for JavaScript v3](https://docs.aws.amazon.com//sdk-for-javascript/v3/developer-guide/). For additional details and information on how to migrate, please refer to this [announcement](https://aws.amazon.com/blogs//developer/announcing-end-of-support-for-aws-sdk-for-javascript-v2/).
+The AWS SDK for JavaScript v2 has reached end-of-support. We recommend that you migrate to [AWS SDK for JavaScript v3](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/). For additional details and information on how to migrate, please refer to this [announcement](https://aws.amazon.com/blogs/developer/announcing-end-of-support-for-aws-sdk-for-javascript-v2/).
 
 # Using the Global Configuration Object
 <a name="global-config-object"></a>
@@ -19,8 +19,6 @@ Setting global configuration with `AWS.Config` is often easier to get started, b
 After you load the `aws-sdk` package in your code you can use the ` AWS` global variable to access the SDK's classes and interact with individual services. The SDK includes a global configuration object, `AWS.Config`, that you can use to specify the SDK configuration settings required by your application.
 
 Configure the SDK by setting `AWS.Config` properties according to your application needs. The following table summarizes `AWS.Config` properties commonly used to set the configuration of the SDK.
-
-****
 
 | Configuration Options | Description |
 | --- | --- |

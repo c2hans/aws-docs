@@ -34,4 +34,4 @@ This table describes the different parameters within an Amazon SNS status.
 | Timestamp | The Unix timestamp that indicates when the job finished, returned in milliseconds. |
 | DocumentLocation | Details about the document that was processed. Includes the file name and the Amazon S3 bucket that the file is stored in. |
 
-If the value of "Status" in the Amazon SNS notification is "Failed", this indicates something has gone wrong with your analysis job. In this case, check for an error message returned by the Amazon Textract API operation and ensure your document matches the quotas specified by[Set Quotas in Amazon TextractModifying Default Quotas in Amazon Textract](limits-document.md)
+If the value of "Status" in the Amazon SNS notification is "Failed", this indicates something has gone wrong with your analysis job. In this case, check for an error message returned by the Amazon Textract API operation and ensure your document matches the quotas specified by[Set Quotas in Amazon Textract](limits-document.md)

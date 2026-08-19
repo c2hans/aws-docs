@@ -24,8 +24,6 @@ Here is a list of the key changes in this release.
 ### Single Container Docker
 <a name="release-2019-02-11-docker.platforms.docker"></a>
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Docker Version  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  **Single Container Docker 18.03 version 2.12.8** <br /> * 64bit Amazon Linux 2018.03 v2.12.8 running Docker 18.06.1-ce *  | 2018.03.0 | 18.06.1-ce | nginx 1.14.1 |
@@ -33,16 +31,12 @@ Here is a list of the key changes in this release.
 ### Multicontainer Docker
 <a name="release-2019-02-11-docker.platforms.mcdocker"></a>
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Docker Version  |  ECS Agent  |
 | --- | --- | --- | --- |
 |  **Multicontainer Docker 18.03 version 2.11.8** <br /> * 64bit Amazon Linux 2018.03 v2.11.8 running Multi-container Docker 18.06.1-ce (Generic) *  | 2018.03.0 | 18.06.1-ce | 1.25.0 |
 
 ### Preconfigured Docker
 <a name="release-2019-02-11-docker.platforms.dockerpreconfig"></a>
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |

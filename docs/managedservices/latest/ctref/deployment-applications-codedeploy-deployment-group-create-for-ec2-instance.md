@@ -14,8 +14,6 @@ Create an AWS CodeDeploy application deployment group specifically for an EC2 in
 ## Change Type Details
 <a name="ct-00tlkda4242x7-DACc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-00tlkda4242x7 |

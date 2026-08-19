@@ -23,7 +23,7 @@ To check for key desynchronization in the source cluster:
 
 1. Run the `key list` command in the CloudHSM CLI.
 
-1. Use the `--filter `flag to specify the key.
+1. Use the `--filter` flag to specify the key.
 
 1. Add the `--verbose` flag to see the full output with key coverage information.
 

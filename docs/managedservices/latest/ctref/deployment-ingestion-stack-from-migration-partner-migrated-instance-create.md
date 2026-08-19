@@ -14,8 +14,6 @@ Migrate a running non-AMS instance into an AMS stack, in a given AMS-managed VPC
 ## Change Type Details
 <a name="ct-257p9zjk14ija-DISc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-257p9zjk14ija |

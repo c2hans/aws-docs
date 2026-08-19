@@ -5,8 +5,6 @@ source_url: https://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/
 # What is the AWS Database Encryption SDK?
 <a name="what-is-database-encryption-sdk"></a>
 
-****
-
 |  |
 | --- |
 | Our client-side encryption library was renamed to the AWS Database Encryption SDK. This developer guide still provides information on the [DynamoDB Encryption Client](legacy-dynamodb-encryption-client.md). |
@@ -71,4 +69,4 @@ To provide feedback on this documentation, use the feedback link on any page.
 ## Sign up for an AWS account
 <a name="sign-up-for-aws"></a>
 
-To get started with AWS, you need an AWS account. For information about creating an AWS account, see [Getting started with an AWS account](https://docs.aws.amazon.com//accounts/latest/reference/getting-started.html) in the *AWS Account Management Reference Guide*.
+To get started with AWS, you need an AWS account. For information about creating an AWS account, see [Getting started with an AWS account](https://docs.aws.amazon.com/accounts/latest/reference/getting-started.html) in the *AWS Account Management Reference Guide*.

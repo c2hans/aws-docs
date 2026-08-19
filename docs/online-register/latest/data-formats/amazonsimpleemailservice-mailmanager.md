@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon Simple Email Service - Mail Manager provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="ses-GetAddonInstance"></a>[GetAddonInstance](https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_GetAddonInstance.html) | Get information about an addon instance | Read |

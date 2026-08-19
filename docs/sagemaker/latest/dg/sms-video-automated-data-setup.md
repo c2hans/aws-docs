@@ -26,7 +26,7 @@ Make sure your video files are stored in an Amazon S3 bucket in the same AWS Reg
 
 **Automatically connect your video files in Amazon S3 with Ground Truth and extract video frames:**
 
-1. Navigate to the **Create labeling job** page in the Amazon SageMaker AI console: [https://console.aws.amazon.com/sagemaker/groundtruth](https://console.aws.amazon.com//sagemaker/groundtruth).
+1. Navigate to the **Create labeling job** page in the Amazon SageMaker AI console: [https://console.aws.amazon.com/sagemaker/groundtruth](https://console.aws.amazon.com/sagemaker/groundtruth).
 
    Your input and output S3 buckets must be located in the same AWS Region that you create your labeling job in. This link puts you in the North Virginia (us-east-1) AWS Region. If your input data is in an Amazon S3 bucket in another Region, switch to that Region. To change your AWS Region, on the [navigation bar](https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/getting-started.html#select-region), choose the name of the currently displayed Region.
 
@@ -63,7 +63,7 @@ Make sure your video frames are stored in an Amazon S3 bucket in the same AWS Re
 
 **Automatically connect your video frame in Amazon S3 with Ground Truth:**
 
-1. Navigate to the **Create labeling job** page in the Amazon SageMaker AI console: [https://console.aws.amazon.com/sagemaker/groundtruth](https://console.aws.amazon.com//sagemaker/groundtruth).
+1. Navigate to the **Create labeling job** page in the Amazon SageMaker AI console: [https://console.aws.amazon.com/sagemaker/groundtruth](https://console.aws.amazon.com/sagemaker/groundtruth).
 
    Your input and output S3 buckets must be located in the same AWS Region that you create your labeling job in. This link puts you in the North Virginia (us-east-1) AWS Region. If your input data is in an Amazon S3 bucket in another Region, switch to that Region. To change your AWS Region, on the [navigation bar](https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/getting-started.html#select-region), choose the name of the currently displayed Region.
 

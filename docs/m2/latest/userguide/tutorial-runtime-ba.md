@@ -197,4 +197,4 @@ In this step, you run a transaction in the migrated application.
 If you no longer need the resources that you created for this tutorial, delete them to avoid additional charges. To do so, complete the following steps:
 + If the AWS Mainframe Modernization application is still running, stop it.
 + Delete the application. For more information, see [Delete an AWS Mainframe Modernization application](applications-m2-delete.md).
-+ Delete the runtime environment. For more information, see [Delete an AWS Mainframe Modernization runtime environmentDelete a runtime environment](delete-environments-m2.md).
++ Delete the runtime environment. For more information, see [Delete an AWS Mainframe Modernization runtime environment](delete-environments-m2.md).

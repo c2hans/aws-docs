@@ -421,6 +421,6 @@ After the execution completes, review the Outputs section for the detailed resul
 
 Systems Manager Automation
 + [Run this Automation (console)](https://console.aws.amazon.com/systems-manager/automation/execute/AWSSupport-ContainIAMPrincipal)
-+ [Running a simple automation](https://docs.aws.amazon.com//systems-manager/latest/userguide/automation-working-executing.html)
-+ [Setting up Automation](https://docs.aws.amazon.com//systems-manager/latest/userguide/automation-setup.html)
++ [Running a simple automation](https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-working-executing.html)
++ [Setting up Automation](https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-setup.html)
 + [Support Automation Workflows](https://aws.amazon.com/premiumsupport/technology/saw/)

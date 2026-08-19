@@ -7,4 +7,4 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/mqtt-based-fil
 
 The FreeRTOS OTA (over-the-air) agent uses AWS IoT MQTT-based file delivery to transfer FreeRTOS firmware images to FreeRTOS devices. To send the initial data set to a device, it uses the AWS IoT Job service to schedule an OTA update job to FreeRTOS devices.
 
-For a reference implementation of an MQTT-based file delivery client, see [FreeRTOS OTA agent codes](https://docs.aws.amazon.com//freertos/latest/userguide/freertos-ota-dev.html) in the FreeRTOS documentation.
+For a reference implementation of an MQTT-based file delivery client, see [FreeRTOS OTA agent codes](https://docs.aws.amazon.com/freertos/latest/userguide/freertos-ota-dev.html) in the FreeRTOS documentation.

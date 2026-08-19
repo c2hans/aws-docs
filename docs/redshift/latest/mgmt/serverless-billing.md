@@ -23,7 +23,7 @@ For detailed pricing information, see [Amazon Redshift pricing](https://aws.amaz
 
 Primary storage capacity is billed as Redshift Managed Storage (RMS). Storage is billed by GB / month. Storage billing is separate from billing for compute capacity. Storage used for manual snapshots is billed based on the total unique data blocks across all active manual snapshots at the standard backup billing rates. Recovery points retained for less than 24 hours are not charged.
 
-Data transfer costs and machine learning (ML) costs apply separately, the same as provisioned clusters. Snapshot replication and data sharing across AWS Regions are billed at the transfer rates outlined on the pricing page. For more information, see [Amazon Redshift pricing](https://aws.amazon.com//redshift/pricing/).
+Data transfer costs and machine learning (ML) costs apply separately, the same as provisioned clusters. Snapshot replication and data sharing across AWS Regions are billed at the transfer rates outlined on the pricing page. For more information, see [Amazon Redshift pricing](https://aws.amazon.com/redshift/pricing/).
 
 ### Visualizing billing usage with CloudWatch
 <a name="db-serverless-billing-storage-cw"></a>
@@ -33,7 +33,7 @@ The metric `ServerlessUniqueSnapshotStorage`, which tracks snapshot storage usag
 ## Using the Amazon Redshift Serverless free trial
 <a name="db-serverless-billing-free-trial"></a>
 
-Amazon Redshift Serverless offers a free trial. If you participate in the free trial, you can view the free trial credit balance in the Redshift console, and check free trial usage in the [SYS\_SERVERLESS\_USAGE](https://docs.aws.amazon.com/redshift/latest/dg/SYS_SERVERLESS_USAGE.html) system view. Note that billing details for free trial usage does not appear in the billing console. You can only view usage in the billing console after the free trial ends. For more information about the Amazon Redshift Serverless free trial, see [Amazon Redshift Serverless free trial](https://aws.amazon.com//redshift/free-trial/).
+Amazon Redshift Serverless offers a free trial. If you participate in the free trial, you can view the free trial credit balance in the Redshift console, and check free trial usage in the [SYS\_SERVERLESS\_USAGE](https://docs.aws.amazon.com/redshift/latest/dg/SYS_SERVERLESS_USAGE.html) system view. Note that billing details for free trial usage does not appear in the billing console. You can only view usage in the billing console after the free trial ends. For more information about the Amazon Redshift Serverless free trial, see [Amazon Redshift Serverless free trial](https://aws.amazon.com/redshift/free-trial/).
 
 ## Billing usage notes
 <a name="db-serverless-billing-details"></a>
@@ -47,7 +47,7 @@ Amazon Redshift Serverless offers a free trial. If you participate in the free t
 + **Federated queries** - Federated queries are charged in terms of RPUs used over a specific time interval, in the same manner as queries on the data warehouse or data lake.
 + **Storage** - Storage is billed separately, by GB / month.
 + **Minimum charge** - The minimum charge is for 60 seconds of resource usage, metered on a per-second basis.
-+ **Snapshot billing** - Snapshot billing doesn't change. It's charged according to storage, billed at a rate of GB / month. You can restore your data warehouse to specific points in the last 24 hours at a 30 minute granularity, free of charge. For more information, see [Amazon Redshift pricing](https://aws.amazon.com//redshift/pricing/).
++ **Snapshot billing** - Snapshot billing doesn't change. It's charged according to storage, billed at a rate of GB / month. You can restore your data warehouse to specific points in the last 24 hours at a 30 minute granularity, free of charge. For more information, see [Amazon Redshift pricing](https://aws.amazon.com/redshift/pricing/).
 + **Automatic optimizations run using extra compute resources** ‐ Amazon Redshift Serverless usually runs automatic optimization operations alongside user queries. These operations are known as autonomics, and you aren’t charged for them.
 
   If you enable allocating extra compute resources, Amazon Redshift will run autonomics when necessary even in periods of high user activity. In such cases, you can be billed for the time spent running autonomics. For more information, see [ Allocating extra compute resources for automatic database optimization ](https://docs.aws.amazon.com/redshift/latest/dg/t_extra-compute-autonomics.html) in the *Amazon Redshift Database Developer Guide*.

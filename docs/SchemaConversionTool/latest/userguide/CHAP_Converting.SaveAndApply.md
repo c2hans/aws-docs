@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CH
 # Saving and applying converted schemas in AWS SCT
 <a name="CHAP_Converting.SaveAndApply"></a>
 
-When the AWS Schema Conversion Tool generates converted schema (as shown in [Converting schemas using AWS SCTManually converting schemas in AWS SCT](CHAP_Converting.Convert.md)), it doesn't immediately apply the converted schema to the target DB instance. Instead, converted schema are stored locally in your project until you are ready to apply them to the target DB instance. Using this functionality, you can work with schema items that can't be converted automatically to your target DB engine. For more information on items that can't be converted automatically, see [Using the assessment report in the AWS Schema Conversion Tool](CHAP_AssessmentReport.md).
+When the AWS Schema Conversion Tool generates converted schema (as shown in [Converting schemas using AWS SCT](CHAP_Converting.Convert.md)), it doesn't immediately apply the converted schema to the target DB instance. Instead, converted schema are stored locally in your project until you are ready to apply them to the target DB instance. Using this functionality, you can work with schema items that can't be converted automatically to your target DB engine. For more information on items that can't be converted automatically, see [Using the assessment report in the AWS Schema Conversion Tool](CHAP_AssessmentReport.md).
 
 You can optionally have the tool save your converted schema to a file as a SQL script prior to applying the schema to your target DB instance. You can also have the tool apply the converted schema directly to your target DB instance.
 

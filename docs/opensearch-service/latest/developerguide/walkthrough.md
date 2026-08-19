@@ -43,8 +43,6 @@ In general, performing the steps in this walkthrough should cost less than $2. T
 
 Before proceeding, you must have the following resources.
 
-****
-
 | Prerequisite | Description |
 | --- | --- |
 | Amazon S3 bucket | For more information, see [Creating a Bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/CreatingABucket.html) in the Amazon Simple Storage Service User Guide. |

@@ -59,7 +59,7 @@ If you choose **HTTPS**, the endpoint must support TLS v1.0, v1.1, or v1.2.
 
   If you choose **HTTPS** for the value of **Protocol**, an additional charge applies. For more information, see [Route 53 Pricing](https://aws.amazon.com/route53/pricing/).
 + **TCP** – Route 53 tries to establish a TCP connection.
-For more information, see [How Amazon Route 53 determines whether a health check is healthyHow Route 53 determines whether a health check is healthy](dns-failover-determining-health-of-endpoints.md).
+For more information, see [How Amazon Route 53 determines whether a health check is healthy](dns-failover-determining-health-of-endpoints.md).
 After you create a health check, you can't change the value of **Protocol**.
 For the **IP address** you can enter an IPv4 or IPv6 address of the endpoint on which you want Route 53 to perform health checks, if you chose **Specify endpoint by IP address**.
 Route 53 cannot check the health of endpoints for which the IP address is in local, private, nonroutable, or multicast ranges. For more information about IP addresses that you can't create health checks for, see the following documents:
@@ -106,7 +106,7 @@ If you choose **HTTPS**, the endpoint must support TLS v1.0, v1.1, or v1.2.
 
   If you choose **HTTPS** for the value of **Protocol**, an additional charge applies. For more information, see [Route 53 Pricing](https://aws.amazon.com/route53/pricing/).
 + **TCP** – Route 53 tries to establish a TCP connection.
-For more information, see [How Amazon Route 53 determines whether a health check is healthyHow Route 53 determines whether a health check is healthy](dns-failover-determining-health-of-endpoints.md).
+For more information, see [How Amazon Route 53 determines whether a health check is healthy](dns-failover-determining-health-of-endpoints.md).
 After you create a health check, you can't change the value of **Protocol**.
 
 **IP address ("Specify endpoint by IP address" Only)**
@@ -244,7 +244,7 @@ If you want to create an alarm, perform the following steps:
 1. Choose the refresh button next to the **CloudWatch alarm** list.
 
 1. Choose the new alarm from the list.
-If you change settings for the CloudWatch alarm after you create a health check, you must update the health check. For more information, see [Updating health checks when you change CloudWatch alarm settings (health checks that monitor a CloudWatch alarm only)Updating health checks when you change CloudWatch alarm settings](health-checks-updating-cloudwatch-alarm-settings.md).
+If you change settings for the CloudWatch alarm after you create a health check, you must update the health check. For more information, see [Updating health checks when you change CloudWatch alarm settings (health checks that monitor a CloudWatch alarm only)](health-checks-updating-cloudwatch-alarm-settings.md).
 
 **Health check status**
 Choose the status of the health check (healthy, unhealthy, or last known status) when CloudWatch has insufficient data to determine the state of the alarm that you chose for **CloudWatch alarm**. If you choose to use the last known status, Route 53 uses the status of the health check from the last time that CloudWatch had sufficient data to determine the alarm state. For new health checks that have no last known status, the default status for the health check is healthy.
@@ -277,7 +277,7 @@ If you want to create an alarm, perform the following steps:
 1. Choose the refresh button next to the **CloudWatch alarm** list.
 
 1. Choose the new alarm from the list.
-If you change settings for the CloudWatch alarm after you create a health check, you must update the health check. For more information, see [Updating health checks when you change CloudWatch alarm settings (health checks that monitor a CloudWatch alarm only)Updating health checks when you change CloudWatch alarm settings](health-checks-updating-cloudwatch-alarm-settings.md).
+If you change settings for the CloudWatch alarm after you create a health check, you must update the health check. For more information, see [Updating health checks when you change CloudWatch alarm settings (health checks that monitor a CloudWatch alarm only)](health-checks-updating-cloudwatch-alarm-settings.md).
 
 **Health check status**
 Choose the status of the health check (healthy, unhealthy, or last known status) when CloudWatch has insufficient data to determine the state of the alarm that you chose for **CloudWatch alarm**. If you choose to use the last known status, Route 53 uses the status of the health check from the last time that CloudWatch had sufficient data to determine the alarm state. For new health checks that have no last known status, the default status for the health check is healthy.
@@ -320,7 +320,7 @@ After you create a health check, you can't change the value of **Request interva
 If you choose **Fast (10 seconds)** for the value of **Request interval**, an additional charge applies. For more information, see [Route 53 Pricing](https://aws.amazon.com/route53/pricing/).
 
 **Failure threshold**
-The number of consecutive health checks that an endpoint must pass or fail for Route 53 to change the current status of the endpoint from unhealthy to healthy or vice versa. For more information, see [How Amazon Route 53 determines whether a health check is healthyHow Route 53 determines whether a health check is healthy](dns-failover-determining-health-of-endpoints.md).
+The number of consecutive health checks that an endpoint must pass or fail for Route 53 to change the current status of the endpoint from unhealthy to healthy or vice versa. For more information, see [How Amazon Route 53 determines whether a health check is healthy](dns-failover-determining-health-of-endpoints.md).
 
 **String matching (HTTP and HTTPS Only)**
 Whether you want Route 53 to determine the health of an endpoint by submitting an HTTP or HTTPS request to the endpoint and searching the response body for a specified string. If the response body contains the value that you specify in **Search string**, Route 53 considers the endpoint healthy. If not, or if the endpoint doesn't respond, Route 53 considers the endpoint unhealthy. The search string must appear entirely within the first 5,120 bytes of the response body.
@@ -381,7 +381,7 @@ After you create a health check, you can't change the value of **Request interva
 If you choose **Fast (10 seconds)** for the value of **Request interval**, an additional charge applies. For more information, see [Route 53 Pricing](https://aws.amazon.com/route53/pricing/).
 
 **Failure threshold**
-The number of consecutive health checks that an endpoint must pass or fail for Route 53 to change the current status of the endpoint from unhealthy to healthy or vice versa. For more information, see [How Amazon Route 53 determines whether a health check is healthyHow Route 53 determines whether a health check is healthy](dns-failover-determining-health-of-endpoints.md).
+The number of consecutive health checks that an endpoint must pass or fail for Route 53 to change the current status of the endpoint from unhealthy to healthy or vice versa. For more information, see [How Amazon Route 53 determines whether a health check is healthy](dns-failover-determining-health-of-endpoints.md).
 
 **String matching (HTTP and HTTPS Only)**
 Whether you want Route 53 to determine the health of an endpoint by submitting an HTTP or HTTPS request to the endpoint and searching the response body for a specified string. If the response body contains the value that you specify in **Search string**, Route 53 considers the endpoint healthy. If not, or if the endpoint doesn't respond, Route 53 considers the endpoint unhealthy. The search string must appear entirely within the first 5,120 bytes of the response body.

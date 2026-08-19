@@ -11,9 +11,9 @@ This topic provides a practical example of implementing Amazon Verified Permissi
 <a name="rust-prereqs"></a>
 
  Before starting, ensure that you have the [AWS CLI](https://aws.amazon.com/cli/) configured on your system and that you're familiar with Rust.
-+ For instructions on installing the AWS CLI, see [AWS CLI installation guide](https://docs.aws.amazon.com//cli/latest/userguide/getting-started-install.html).
-+ For instructions on configuring the AWS CLI, see [Configuring settings for the AWS CLI](https://docs.aws.amazon.com//cli/latest/userguide/cli-configure-quickstart.html) and [Configuration and credential file settings in the AWS CLI](https://docs.aws.amazon.com//cli/latest/userguide/cli-configure-profiles.html).
-+ For more information on Rust, see [rust-lang.org](https://www.rust-lang.org/) and the [AWS SDK for Rust Developer Guide](https://docs.aws.amazon.com//sdk-for-rust/latest/dg/welcome.html).
++ For instructions on installing the AWS CLI, see [AWS CLI installation guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html).
++ For instructions on configuring the AWS CLI, see [Configuring settings for the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html) and [Configuration and credential file settings in the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html).
++ For more information on Rust, see [rust-lang.org](https://www.rust-lang.org/) and the [AWS SDK for Rust Developer Guide](https://docs.aws.amazon.com/sdk-for-rust/latest/dg/welcome.html).
 
 With your environment prepared, let's explore how to implement Verified Permissions in Rust.
 

@@ -22,7 +22,7 @@ This is a preventive control with elective guidance based on service control pol
 **Usage considerations**
 This control prevents unencrypted EBS snapshots from being made public, by disallowing sharing of EBS snapshots with all AWS accounts. Encrypted snapshots and snapshots with AWS Marketplace product codes cannot be made public.
 To prevent the public sharing of snapshots, AWS Control Tower recommends enabling block public access for snapshots. For more information, see [Block public access for snapshots](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/block-public-access-snapshots.html) in the *Amazon EC2 User Guide for Linux Instances*.
-This control supports configuration. It contains elements that are included by AWS Control Tower conditionally, based on the configuration you select. This control supports the following configuration parameters: **ExemptedPrincipalArns**. For more information, see [Configure controls with parameters](https://docs.aws.amazon.com//controltower/latest/controlreference/control-parameter-concepts.html).
+This control supports configuration. It contains elements that are included by AWS Control Tower conditionally, based on the configuration you select. This control supports the following configuration parameters: **ExemptedPrincipalArns**. For more information, see [Configure controls with parameters](https://docs.aws.amazon.com/controltower/latest/controlreference/control-parameter-concepts.html).
 
  The artifact for this control is the following service control policy (SCP).
 

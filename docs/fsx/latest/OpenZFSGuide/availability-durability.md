@@ -39,7 +39,7 @@ Single-AZ (non-HA) are composed of a single file server instance and a set of st
 **Note**
 For all Single-AZ file systems, file system failure may be unrecoverable in rare cases, such as storage component failures. In these cases, you can recover your file system from the most recent backup.
 
-In addition to differences in availability and durability, different deployment types also offer varying levels of performance that may impact your decision. Note that both Single-AZ (non-HA and HA) deployment types, FSx for OpenZFS also support Single-AZ 1 and Single-AZ 2. Single-AZ 2 offers higher levels of performance than the maximum offered by Single-AZ 1. For more information on performance differences between deployment types, see [Performance for Amazon FSx for OpenZFSPerformance](performance.md).
+In addition to differences in availability and durability, different deployment types also offer varying levels of performance that may impact your decision. Note that both Single-AZ (non-HA and HA) deployment types, FSx for OpenZFS also support Single-AZ 1 and Single-AZ 2. Single-AZ 2 offers higher levels of performance than the maximum offered by Single-AZ 1. For more information on performance differences between deployment types, see [Performance for Amazon FSx for OpenZFS](performance.md).
 
 You can also migrate between deployment types by restoring from a backup, using **rsync**, or using on-demand replication. For more information, see [Migrating between deployment types and storage classes](performance.md#migrating-between-deployments).
 
@@ -92,7 +92,7 @@ The following table summarizes the subnet, elastic network interface, and IP add
 | Single-AZ (HA) | 1 | 2 | 3 |
 | Single-AZ (non-HA) | 1 | 1 | 1 |
 
-Once a file system is created, its IP addresses don't change until the file system is deleted. For Multi-AZ (HA) and Single-AZ (HA) file systems, the number of IP addresses includes a floating IP address, which allows connected clients to transition between the preferred and standby file servers during a failover event. For more information, see [Accessing your dataAccessing your data](accessing-your-data.md).
+Once a file system is created, its IP addresses don't change until the file system is deleted. For Multi-AZ (HA) and Single-AZ (HA) file systems, the number of IP addresses includes a floating IP address, which allows connected clients to transition between the preferred and standby file servers during a failover event. For more information, see [Accessing your data](accessing-your-data.md).
 
 **Important**
 Amazon FSx doesn't support accessing file systems from, or exposing file systems to the public Internet. If an Elastic IP address, which is a public IP address reachable from the Internet, is attached to a file system's elastic network interface, Amazon FSx automatically detaches it.

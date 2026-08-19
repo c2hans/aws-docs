@@ -56,7 +56,7 @@ To use a scenario using the console:
 
 1. In the **Create experiment template** select **Create experiment template**.
 
-1. From the **Experiment templates** view of the AWS FIS console select **Start experiment**. Learn more about [Managing AWS FIS experiment templatesManaging your AWS FIS experiments](experiments.md).
+1. From the **Experiment templates** view of the AWS FIS console select **Start experiment**. Learn more about [Managing AWS FIS experiment templates](experiments.md).
 
 ## Exporting a scenario
 <a name="exporting-a-scenario"></a>

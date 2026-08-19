@@ -24,8 +24,6 @@ References:
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
 
-****
-
 - **   [AcceptFinancingApplicationTerms](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/security_iam_id-based-policy-examples.html#billing-permissions-ref)  **
   - **Description:** Grants permission to accept financing application terms provided by a lender
   - **Resource types (\*required):**
@@ -133,8 +131,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 The following actions are defined by AWS Payments but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 | Actions | Description | Resource types (\*required) | Condition keys | Access level |
 | --- | --- | --- | --- | --- |
 |   [DeletePaymentInstrument](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html)  | Grants permission to delete a payment instrument |  |   | Write |
@@ -150,8 +146,6 @@ The following actions are defined by AWS Payments but are not directly invocable
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
 
-****
-
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
 |  [payment-instrument](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html#user-permissions)  | arn:${Partition}:payments::${Account}:payment-instrument:${ResourceId} | [aws:ResourceTag/${TagKey}](#list_payments-aws_ResourceTag___TagKey_) |
@@ -160,8 +154,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_payments-policy-keys"></a>
 
 AWS Payments defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

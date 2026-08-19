@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/nvidia-GRID-driv
 # Install NVIDIA GRID drivers (G7e, G6, Gr6, G6e, G6f, Gr6f, G5, G4dn, and G3 instances)
 <a name="nvidia-GRID-driver"></a>
 
-These downloads are available to AWS customers only. By downloading, in order to adhere to requirements of the AWS solution referred to in the NVIDIA GRID Cloud End User License Agreement (EULA), you agree to use the downloaded software only to develop AMIs for use with the NVIDIA L4, NVIDIA L40S, NVIDIA A10G, NVIDIA Tesla T4, or NVIDIA Tesla M60 hardware. You can use the GRID drivers to both create and use AMIs within the AWS environment. Upon installation of the software, you are bound by the terms of the [NVIDIA GRID Cloud End User License Agreement](https://aws-nvidia-license-agreement.s3.amazonaws.com/NvidiaGridAWSUserLicenseAgreement.DOCX). For information about the version of the NVIDIA GRID driver for your operating system, see the [NVIDIA Virtual GPU (vGPU) Software](https://docs.nvidia.com/vgpu/) on the NVIDIA website.
+These downloads are available to AWS customers only. By downloading, to adhere to requirements of the AWS solution referred to in the NVIDIA GRID Cloud End User License Agreement (EULA), you agree to use the downloaded software only to develop AMIs for use with the NVIDIA L4, NVIDIA L40S, NVIDIA A10G, NVIDIA Tesla T4, or NVIDIA Tesla M60 hardware. You can use the GRID drivers to both create and use AMIs within the AWS environment. Upon installation of the software, you are bound by the terms of the [NVIDIA GRID Cloud End User License Agreement](https://aws-nvidia-license-agreement.s3.amazonaws.com/NvidiaGridAWSUserLicenseAgreement.DOCX). For information about the version of the NVIDIA GRID driver for your operating system, see the [NVIDIA Virtual GPU (vGPU) Software](https://docs.nvidia.com/vgpu/) on the NVIDIA website.
 
 **Considerations**
 + G7e instances require GRID 19.1 or later for Linux and 19.4 (582.16) or later for Windows.
@@ -653,7 +653,7 @@ These downloads are available to AWS customers only. By downloading, in order to
 
    G5 instances require GRID 13.1 or later (or GRID 12.4 or later).
 
-1. Navigate to the desktop and double-click the installation file to launch it (choose the driver version that corresponds to your instance OS version). Follow the instructions to install the driver and reboot your instance as required. To verify that the GPU is working properly, check Device Manager.
+1. Navigate to the desktop and open the installation file to launch it (choose the driver version that corresponds to your instance OS version). Follow the instructions to install the driver and reboot your instance as required. To verify that the GPU is working properly, check Device Manager.
 
 1. (Optional) Use the following command to disable the licensing page in the control panel to prevent users from accidentally changing the product type (NVIDIA GRID Virtual Workstation is enabled by default). For more information, see the [GRID Licensing User Guide](https://docs.nvidia.com/vgpu/4.6/grid-licensing-user-guide/index.html).
 

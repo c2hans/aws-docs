@@ -11,7 +11,7 @@ The following list introduces you to the basic concepts of Amazon Bedrock Flows.
 + **Connection** – There are two types of connections used in Amazon Bedrock Flows:
   + A **data connection** is drawn between the output of one node (the *source node*) and the input of another node (the *target node*). It sends data from the upstream node to the downstream node. In the Amazon Bedrock console, data connections are solid gray lines.
   + A **conditional connection** is drawn between a condition in a condition node and a downstream node. It sends data from the preceding node to the downstream node if the condition is fulfilled. In the Amazon Bedrock console, conditional connections are dotted purple lines.
-+ **Expressions** – An expression defines how to extract an input from the whole input entering a node. To learn how to write expressions, see [Use expressions to define inputs by extracting the relevant part of a whole input in Amazon Bedrock FlowsDefine inputs with expressions](flows-expressions.md).
++ **Expressions** – An expression defines how to extract an input from the whole input entering a node. To learn how to write expressions, see [Use expressions to define inputs by extracting the relevant part of a whole input in Amazon Bedrock Flows](flows-expressions.md).
 + **Flow builder** – The Flow builder is a tool on the Amazon Bedrock console to build and edit flows through a visual interface. You use the visual interface to drag and drop nodes onto the interface and configure inputs and outputs for these nodes to define your flow.
 + In the following sections, we will use the following terms:
   + **Whole input** – The entire input that is sent from the previous node to the current node.

@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/timestream/latest/developerguide/migration-to-influxdb3.html
 ---
 
-For similar capabilities to Amazon Timestream for LiveAnalytics, consider Amazon Timestream for InfluxDB. It offers simplified data ingestion and single-digit millisecond query response times for real-time analytics. Learn more [here](https://docs.aws.amazon.com//timestream/latest/developerguide/timestream-for-influxdb.html).
+For similar capabilities to Amazon Timestream for LiveAnalytics, consider Amazon Timestream for InfluxDB. It offers simplified data ingestion and single-digit millisecond query response times for real-time analytics. Learn more [here](https://docs.aws.amazon.com/timestream/latest/developerguide/timestream-for-influxdb.html).
 
 # Migrating to Amazon Timestream for InfluxDB 3
 <a name="migration-to-influxdb3"></a>
@@ -82,8 +82,8 @@ Multi-node clusters (up to 15 nodes), InfluxData Marketplace license required. R
 
 ## Additional resources
 <a name="influxdb3-migration-resources"></a>
-+ [Getting started with InfluxDB 3](https://docs.aws.amazon.com//timestream/latest/developerguide/influxdb3.html)
-+ [InfluxDB 3 DB Clusters](https://docs.aws.amazon.com//timestream/latest/developerguide/influxdb3-managing-clusters.html)
++ [Getting started with InfluxDB 3](https://docs.aws.amazon.com/timestream/latest/developerguide/influxdb3.html)
++ [InfluxDB 3 DB Clusters](https://docs.aws.amazon.com/timestream/latest/developerguide/influxdb3-managing-clusters.html)
 + [InfluxDB 3 Processing Engine](https://docs.influxdata.com/influxdb3/enterprise/process-data/)
 + [Line Protocol Reference](https://docs.influxdata.com/influxdb3/enterprise/reference/line-protocol/)
 + [SQL Reference for InfluxDB 3](https://docs.influxdata.com/influxdb3/enterprise/reference/sql/)

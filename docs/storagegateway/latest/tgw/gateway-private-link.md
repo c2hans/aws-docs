@@ -28,7 +28,9 @@ Follow these instructions to create a VPC endpoint. If you already have a VPC en
 
 1. On the **Create Endpoint** page, choose **AWS Services** for **Service category**.
 
-1. For **Service Name**, choose `com.amazonaws.{{region}}.storagegateway`. For example `com.amazonaws.us-east-2.storagegateway`.
+1. For **Service Name**, choose `com.amazonaws.{{region}}.storagegateway`. For example `com.amazonaws.us-east-2.storagegateway`. For FIPS-compliant endpoints, choose `com.amazonaws.{{region}}.storagegateway-fips`, for example, `com.amazonaws.us-east-2.storagegateway-fips`.
+**Note**
+FIPS endpoints are available only in some AWS Regions. For more information, see [Storage Gateway endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/sg.html) in the *AWS General Reference*.
 
 1. For **VPC**, choose your VPC and note its Availability Zones and subnets.
 
@@ -47,5 +49,7 @@ Follow these instructions to create a VPC endpoint. If you already have a VPC en
 1. When the endpoint is created, choose **Endpoints**, then choose the new VPC endpoint.
 
 1. In **Details** tab of the selected storage gateway endpoint, under **DNS Names**, use the first DNS name that doesn't specify an Availability Zone. Your DNS name look similar to this: `vpce-1234567e1c24a1fe9-62qntt8k.storagegateway.us-east-1.vpce.amazonaws.com `
+
+   If you use a FIPS endpoint in a Region with FIPS availability, your DNS name looks similar to this example: `vpce-1234567e1c24a1fe9-62qntt8k.storagegateway-fips.us-east-1.vpce.amazonaws.com `
 
 Now that you have a VPC endpoint, you can create your gateway. For more information, see [Creating a Gateway](https://docs.aws.amazon.com/storagegateway/latest/tgw/create-gateway-vtl.html).

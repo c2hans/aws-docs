@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/gs-iam-rol
 # Create an IAM permissions policy
 <a name="gs-iam-role"></a>
 
-Follow these procedures to create an IAM policy. This permissions policy allows selective access control (a subset of supported operations) for an AWS resource. In this case, the AWS resources are the video streams that you want the Amazon Kinesis Video Streams Edge Agent to stream to. The resources also include the AWS Secrets Manager secrets that the Amazon Kinesis Video Streams Edge Agent can retrieve. For more information, see [IAM policies](https://docs.aws.amazon.com//IAM/latest/UserGuide/access_policies.html).
+Follow these procedures to create an IAM policy. This permissions policy allows selective access control (a subset of supported operations) for an AWS resource. In this case, the AWS resources are the video streams that you want the Amazon Kinesis Video Streams Edge Agent to stream to. The resources also include the AWS Secrets Manager secrets that the Amazon Kinesis Video Streams Edge Agent can retrieve. For more information, see [IAM policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html).
 
 **Create a policy by using the JSON policy editor**
 
@@ -75,7 +75,7 @@ Replace `arn:aws:kinesisvideo:*:*:stream/streamName1/*` and `arn:aws:kinesisvide
 
 1. Choose **Next**.
 **Note**
-You can switch between the **Visual** and **JSON** editor options anytime. However, if you make changes or choose **Next** in the **Visual** editor, IAM might restructure your policy to optimize it for the visual editor. For more information, see [Policy restructuring](https://docs.aws.amazon.com//IAM/latest/UserGuide/troubleshoot_policies.html#troubleshoot_viseditor-restructure) in the IAM User Guide.
+You can switch between the **Visual** and **JSON** editor options anytime. However, if you make changes or choose **Next** in the **Visual** editor, IAM might restructure your policy to optimize it for the visual editor. For more information, see [Policy restructuring](https://docs.aws.amazon.com/IAM/latest/UserGuide/troubleshoot_policies.html#troubleshoot_viseditor-restructure) in the IAM User Guide.
 
 1. On the **Review and create** page, enter a **Policy name** and an optional **Description** for the policy that you are creating. Review **Permissions defined in this policy** to see the permissions that are granted by your policy.
 

@@ -34,14 +34,14 @@ You can call the AWS Migration Hub, AWS Application Discovery Service, and AWS M
 **Note**
  You can register agents and collectors outside your home Region. However, the `StartDataCollection` API call in AWS Application Discovery Service prevents you from enabling data collection from outside the home Region.
 
-The [AWS Migration Hub Home Region APIs](https://docs.aws.amazon.com//migrationhub-home-region/latest/APIReference/Welcome.html) are available specifically for working with your Migration Hub home Region. The following is a general description of each API:
-+ [CreateHomeRegionControl](https://docs.aws.amazon.com//migrationhub-home-region/latest/APIReference/API_CreateHomeRegionControl.html) – This API sets up the home Region. It applies to the calling account only.
-+ [GetHomeRegion](https://docs.aws.amazon.com//migrationhub-home-region/latest/APIReference/API_GetHomeRegion.html) – Returns the calling account’s home Region, if configured. This API is used by other AWS services to determine the regional endpoint for calling AWS Application Discovery Service and Migration Hub.
+The [AWS Migration Hub Home Region APIs](https://docs.aws.amazon.com/migrationhub-home-region/latest/APIReference/Welcome.html) are available specifically for working with your Migration Hub home Region. The following is a general description of each API:
++ [CreateHomeRegionControl](https://docs.aws.amazon.com/migrationhub-home-region/latest/APIReference/API_CreateHomeRegionControl.html) – This API sets up the home Region. It applies to the calling account only.
++ [GetHomeRegion](https://docs.aws.amazon.com/migrationhub-home-region/latest/APIReference/API_GetHomeRegion.html) – Returns the calling account’s home Region, if configured. This API is used by other AWS services to determine the regional endpoint for calling AWS Application Discovery Service and Migration Hub.
 
   You must call `GetHomeRegion` at least once before you call any other Application Discovery Service and Migration Hub APIs, to obtain the account's Migration Hub home Region.
-+ [DeleteHomeRegionControl](https://docs.aws.amazon.com//migrationhub-home-region/latest/APIReference/API_DeleteHomeRegionControl.html) – This operation deletes the Migration Hub home Region configuration for the calling account. The operation does not delete discovery or migration tracking data in the home Region.
++ [DeleteHomeRegionControl](https://docs.aws.amazon.com/migrationhub-home-region/latest/APIReference/API_DeleteHomeRegionControl.html) – This operation deletes the Migration Hub home Region configuration for the calling account. The operation does not delete discovery or migration tracking data in the home Region.
 
   To change your Migration Hub home Region, use this operation, followed by the `CreateHomeRegionControl` operation.
-+ [DescribeHomeRegionControls](https://docs.aws.amazon.com//migrationhub-home-region/latest/APIReference/API_DescribeHomeRegionControls.html) – This API permits filtering on the `ControlId`, `HomeRegion`, and `RegionControlScope` fields.
++ [DescribeHomeRegionControls](https://docs.aws.amazon.com/migrationhub-home-region/latest/APIReference/API_DescribeHomeRegionControls.html) – This API permits filtering on the `ControlId`, `HomeRegion`, and `RegionControlScope` fields.
 
-For more information, see the [AWS Migration Hub Home Region API reference](https://docs.aws.amazon.com//migrationhub-home-region/latest/APIReference/Welcome.html).
+For more information, see the [AWS Migration Hub Home Region API reference](https://docs.aws.amazon.com/migrationhub-home-region/latest/APIReference/Welcome.html).

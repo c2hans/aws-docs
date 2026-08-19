@@ -45,8 +45,6 @@ The JSON object for an SMS event contains the data shown in the following exampl
 }
 ```
 
-****
-
 | Attribute | Description |
 | --- | --- |
 | eventType | The type of event. Values are listed in [Event types for SMS, MMS, and voice](configuration-sets-event-types.md) |
@@ -112,8 +110,6 @@ The JSON object for a SMS event when using [SMS Protect](protect.md) contains th
 }
 ```
 
-****
-
 | Attribute | Description |
 | --- | --- |
 | eventType | The type of event. Values are listed in [Event types for SMS, MMS, and voice](configuration-sets-event-types.md) |
@@ -164,8 +160,6 @@ The JSON object for a Voice event contains the data shown in the following examp
 }
 ```
 
-****
-
 | Attribute | Description |
 | --- | --- |
 | eventType | The type of event. Values are listed in [Event types for SMS, MMS, and voice](configuration-sets-event-types.md) |
@@ -209,8 +203,6 @@ The JSON object for an MMS event contains the data shown in the following exampl
     "totalCarrierFee": 0.00266
 }
 ```
-
-****
 
 | Attribute | Description |
 | --- | --- |

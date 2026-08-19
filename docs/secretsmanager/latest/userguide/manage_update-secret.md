@@ -36,7 +36,7 @@ Secrets Manager generates a CloudTrail log entry when you modify a secret. For m
 <a name="manage_update-secret_CLI"></a>
 
 **Example Update secret description**
-The following [`update-secret`](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/update-secret.html) example updates the description of a secret.
+The following [`update-secret`](https://docs.aws.amazon.com/cli/latest/reference/secretsmanager/update-secret.html) example updates the description of a secret.
 
 ```
 aws secretsmanager update-secret \

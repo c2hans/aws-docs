@@ -49,7 +49,7 @@ Migration Hub requires access to the Application Discovery Service on your behal
 
 If you use the AWS Migration Hub console, permissions to access Application Discovery Service are granted by the `AWSServiceRoleForMigrationHub` service linked role. For more information, see [Using Roles to Connect Migration Hub to Application Discovery Service](using-service-linked-roles-discovery-service-role.md).
 
-However, if you never use the Migration Hub console but you want to use the AWS Command Line Interface (AWS CLI) or the AWS Migration Hub API, you need to manually add the `migrationhub-discovery` role—which contains [AWSMigrationHubDiscoveryServiceFullAccess](https://docs.aws.amazon.com//application-discovery/latest/userguide/security-iam-awsmanpol.html#security-iam-awsmanpol-AWSApplicationDiscoveryServiceFullAccess)—to your AWS account.
+However, if you never use the Migration Hub console but you want to use the AWS Command Line Interface (AWS CLI) or the AWS Migration Hub API, you need to manually add the `migrationhub-discovery` role—which contains [AWSMigrationHubDiscoveryServiceFullAccess](https://docs.aws.amazon.com/application-discovery/latest/userguide/security-iam-awsmanpol.html#security-iam-awsmanpol-AWSApplicationDiscoveryServiceFullAccess)—to your AWS account.
 
 **To create the `migrationhub-discovery` role**
 

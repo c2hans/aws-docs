@@ -26,8 +26,6 @@ For instructions on setting application permissions using the AWS CLI and exampl
 
 When you're using the AWS CLI or the AWS SDKs to set permissions for an AWS Serverless Application Repository application, you can specify the following actions:
 
-****
-
 | Action | Description |
 | --- | --- |
 | GetApplication | Grants permission to view information about the application. |

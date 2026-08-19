@@ -15,6 +15,7 @@ As Amazon Redshift continues to evolve and improve, certain changes in behavior 
 The following describes upcoming behavior changes.
 
 **Topics**
++ [AWS KMS key permission enforcement for Amazon Redshift Serverless APIs after August 17, 2026](#kms-permission-serverless-aug2026)
 + [Amazon Redshift enforces user lockout after multiple failed login attempts starting with Patch 204](#user-lockout-patch204)
 + [Enhanced billing model for manual snapshots on Amazon Redshift Serverless and Amazon Redshift RG instances effective June 08, 2026](#snapshot-billing-model-jun2026)
 + [Iceberg DELETE on Lake Formation tables requires DELETE permission starting with Patch 202](#iceberg-delete-lf-permission-patch202)
@@ -25,6 +26,23 @@ The following describes upcoming behavior changes.
 + [Amazon Redshift won’t support functions that access consumer information through datasharing after February 16, 2026](#datasharing-feb2026)
 + [Minimum Transport Layer Security (TLS) version changes effective starting August 30, 2026](#tls-changes-aug2026)
 + [Amazon Redshift won’t support the creation of new scalar Python UDFs after October 30, 2025](#python-udf-oct2025)
+
+### AWS KMS key permission enforcement for Amazon Redshift Serverless APIs after August 17, 2026
+<a name="kms-permission-serverless-aug2026"></a>
+
+Amazon Redshift Serverless now performs a new authorization check that requires the IAM principal calling certain Amazon Redshift Serverless APIs to have explicit AWS KMS permissions on the customer managed key that encrypts the target namespace. Previously, Amazon Redshift performed AWS KMS operations on your behalf using the Amazon Redshift service role without verifying whether the calling IAM principal was itself authorized to use that key.
+
+After the new authorization check is enabled, API calls from principals that lack the required AWS KMS permissions will fail with a `ValidationException`: `"Insufficient KMS permissions."` You may be impacted by this if you have Amazon Redshift Serverless namespaces encrypted with a customer managed key and use IAM principals to call the affected APIs listed below.
+
+To avoid disruption, review which IAM principals in your accounts call the APIs listed below against namespaces encrypted with a customer managed key, and ensure those principals have the required AWS KMS permissions on the key. You can grant these permissions through an AWS KMS key policy, an IAM identity-based policy, or an AWS KMS grant.
+
+This change does not affect namespaces encrypted with the default AWS-owned key. If your IAM principals already have the required AWS KMS permissions listed below, no action is needed.
+
+The affected APIs and required permissions on the namespace's customer managed key are listed below:
++ `CreateWorkgroup`, `RestoreFromSnapshot`, `RestoreFromRecoveryPoint` – require `kms:Encrypt`, `kms:GenerateDataKey`, `kms:CreateGrant`, and `kms:Decrypt`.
++ `RestoreTableFromSnapshot`, `RestoreTableFromRecoveryPoint` – require `kms:Decrypt`.
+
+For more information, see [Controlling access to AWS KMS keys](https://docs.aws.amazon.com/kms/latest/developerguide/control-access.html) in the *AWS Key Management Service Developer Guide*. For more information about Amazon Redshift database encryption, see [Amazon Redshift database encryption](working-with-db-encryption.md).
 
 ### Amazon Redshift enforces user lockout after multiple failed login attempts starting with Patch 204
 <a name="user-lockout-patch204"></a>
@@ -49,7 +67,7 @@ You may be impacted by this if you use manual snapshots on Amazon Redshift Serve
 
 No action is required. The enhanced billing model automatically applies to both existing and new manual snapshots.
 
-For more information about snapshot pricing, see [Amazon Redshift pricing](https://aws.amazon.com//redshift/pricing/).
+For more information about snapshot pricing, see [Amazon Redshift pricing](https://aws.amazon.com/redshift/pricing/).
 
 ### Iceberg DELETE on Lake Formation tables requires DELETE permission starting with Patch 202
 <a name="iceberg-delete-lf-permission-patch202"></a>

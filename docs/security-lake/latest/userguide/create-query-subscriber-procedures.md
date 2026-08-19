@@ -31,7 +31,7 @@ Security Lake does not support Lake Formation cross-account data sharing version
 
 1. For **Data access method**, choose **Lake Formation** to create query access for the subscriber.
 
-1. For **Subscriber credentials**, provide the subscriber's AWS account ID and [external ID](https://docs.aws.amazon.com//security-lake/latest/userguide/prereqs-creating-subscriber.html#subscriber-external-id).
+1. For **Subscriber credentials**, provide the subscriber's AWS account ID and [external ID](https://docs.aws.amazon.com/security-lake/latest/userguide/prereqs-creating-subscriber.html#subscriber-external-id).
 
 1. (Optional) For **Tags**, enter as many as 50 tags to assign to the subscriber.
 

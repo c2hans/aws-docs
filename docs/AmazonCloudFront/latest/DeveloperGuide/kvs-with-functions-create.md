@@ -108,8 +108,6 @@ The operation response includes the following information:
 
 When you create a key value store, the data store can have the following status values.
 
-****
-
 | Value | Description |
 | --- | --- |
 | **Provisioning** | The key value store was created and CloudFront is processing the data source that you specified. |

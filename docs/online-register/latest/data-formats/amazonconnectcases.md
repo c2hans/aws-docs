@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon Connect Cases provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="cases-BatchGetCaseRule"></a>[BatchGetCaseRule](https://docs.aws.amazon.com/cases/latest/APIReference/API_BatchGetCaseRule.html) | Retrieve information about the case rules in the case domain | Read |

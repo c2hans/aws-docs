@@ -174,8 +174,6 @@ Amazon AppIntegrations supports using service-linked roles in all of the regions
 
 You can use the AWSServiceRoleForAppIntegrations role in the following regions.
 
-****
-
 | Region name | Region identity | Support in Amazon AppIntegrations |
 | --- | --- | --- |
 | US East (N. Virginia) | us-east-1 | Yes |

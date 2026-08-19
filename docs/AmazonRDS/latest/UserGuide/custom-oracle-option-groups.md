@@ -30,8 +30,6 @@ To enable options for your Oracle database, add them to an option group, and the
 
 RDS Custom for Oracle supports the following options for a DB instance.
 
-****
-
 | Option | Option ID | Description |
 | --- | --- | --- |
 | Oracle time zone | `Timezone` | The time zone used by your RDS Custom for Oracle DB instance.  |

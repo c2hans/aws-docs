@@ -19,20 +19,20 @@ This feature is not supported in the AWS GovCloud (US) Regions.
 ## Step 1: Register your X.509 client certificates with AWS IoT Core
 <a name="client-auth-cert-verification"></a>
 
-If you haven't done this already, register and activate your [X.509 client certificates](https://docs.aws.amazon.com//iot/latest/developerguide/x509-client-certs.html) with AWS IoT Core. Otherwise, skip to the next step.
+If you haven't done this already, register and activate your [X.509 client certificates](https://docs.aws.amazon.com/iot/latest/developerguide/x509-client-certs.html) with AWS IoT Core. Otherwise, skip to the next step.
 
 To register and activate your client certificates with AWS IoT Core, follow the steps:
 
-1. If you [create client certificates directly with AWS IoT](https://docs.aws.amazon.com//iot/latest/developerguide/device-certs-create.html). These client certificates will be automatically registered with AWS IoT Core.
+1. If you [create client certificates directly with AWS IoT](https://docs.aws.amazon.com/iot/latest/developerguide/device-certs-create.html). These client certificates will be automatically registered with AWS IoT Core.
 
-1. If you [create your own client certificates](https://docs.aws.amazon.com//iot/latest/developerguide/device-certs-your-own.html), follow [these instructions to register them with AWS IoT Core](https://docs.aws.amazon.com//iot/latest/developerguide/register-device-cert.html).
+1. If you [create your own client certificates](https://docs.aws.amazon.com/iot/latest/developerguide/device-certs-your-own.html), follow [these instructions to register them with AWS IoT Core](https://docs.aws.amazon.com/iot/latest/developerguide/register-device-cert.html).
 
-1. To activate your client certificates, follow [these instructions](https://docs.aws.amazon.com//iot/latest/developerguide/activate-or-deactivate-device-cert.html).
+1. To activate your client certificates, follow [these instructions](https://docs.aws.amazon.com/iot/latest/developerguide/activate-or-deactivate-device-cert.html).
 
 ## Step 2: Create a Lambda function
 <a name="customize-client-auth-lambda"></a>
 
-You need to create a Lambda function that will perform certificate verification and be called for every client connect attempt for the configured endpoint. When creating this Lambda function, follow the general guidance from [Create your first Lambda function](https://docs.aws.amazon.com//lambda/latest/dg/getting-started.html). Additionally, ensure that the Lambda function adheres to the expected request and response formats as follows:
+You need to create a Lambda function that will perform certificate verification and be called for every client connect attempt for the configured endpoint. When creating this Lambda function, follow the general guidance from [Create your first Lambda function](https://docs.aws.amazon.com/lambda/latest/dg/getting-started.html). Additionally, ensure that the Lambda function adheres to the expected request and response formats as follows:
 
 **Lambda function event example**
 
@@ -79,7 +79,7 @@ In the Lambda response, `isAuthenticated` must be `true` to proceed to further a
 ## Step 3: Authorize AWS IoT to invoke your Lambda function
 <a name="customize-client-configuration-grant-permission"></a>
 
-After creating the Lambda function, you must grant permission for AWS IoT to invoke it, by using the [add-permission](https://docs.aws.amazon.com//cli/latest/reference/lambda/add-permission.html) CLI command. Note that this Lambda function will be invoked for every connect attempt to your configured endpoint. For more information, see [Authorizing AWS IoT to invoke your Lambda function](custom-auth-authorize.md).
+After creating the Lambda function, you must grant permission for AWS IoT to invoke it, by using the [add-permission](https://docs.aws.amazon.com/cli/latest/reference/lambda/add-permission.html) CLI command. Note that this Lambda function will be invoked for every connect attempt to your configured endpoint. For more information, see [Authorizing AWS IoT to invoke your Lambda function](custom-auth-authorize.md).
 
 ## Step 4: Set authentication configuration for a domain
 <a name="customize-client-configuration"></a>
@@ -89,7 +89,7 @@ The following section describes how to set authentication configuration for a cu
 ### Set client certificate configuration for a domain (CLI)
 <a name="customize-client-auth-cli"></a>
 
-If you don't have a domain configuration, use the [**create-domain-configuration**](https://docs.aws.amazon.com//cli/latest/reference/iot/create-domain-configuration.html) CLI command to create one. If you already have a domain configuration, use the [**update-domain-configuration**](https://docs.aws.amazon.com//cli/latest/reference/iot/update-domain-configuration.html) CLI command to update the client certificate configuration for a domain. You must add the ARN of the Lambda function that you've created in the previous step.
+If you don't have a domain configuration, use the [**create-domain-configuration**](https://docs.aws.amazon.com/cli/latest/reference/iot/create-domain-configuration.html) CLI command to create one. If you already have a domain configuration, use the [**update-domain-configuration**](https://docs.aws.amazon.com/cli/latest/reference/iot/update-domain-configuration.html) CLI command to update the client certificate configuration for a domain. You must add the ARN of the Lambda function that you've created in the previous step.
 
 ```
 aws iot create-domain-configuration \
@@ -122,4 +122,4 @@ An object that specifies the client authentication configuration for a domain.
 `clientCertificateCallbackArn`
 The Amazon Resource Name (ARN) of the Lambda function that AWS IoT invokes in TLS layer when new connection is being established. To customize client authentication to perform custom client certificate validation, you must add the ARN of the Lambda function that you've created in the previous step.
 
-For more information, see [CreateDomainConfiguration](https://docs.aws.amazon.com//iot/latest/apireference/API_CreateDomainConfiguration.html) and [UpdateDomainConfiguration](https://docs.aws.amazon.com//iot/latest/apireference/API_UpdateDomainConfiguration.html) from the *AWS IoT API Reference*. For more information about domain configurations, see [Domain configurations](https://docs.aws.amazon.com//iot/latest/developerguide/iot-custom-endpoints-configurable.html).
+For more information, see [CreateDomainConfiguration](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateDomainConfiguration.html) and [UpdateDomainConfiguration](https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateDomainConfiguration.html) from the *AWS IoT API Reference*. For more information about domain configurations, see [Domain configurations](https://docs.aws.amazon.com/iot/latest/developerguide/iot-custom-endpoints-configurable.html).

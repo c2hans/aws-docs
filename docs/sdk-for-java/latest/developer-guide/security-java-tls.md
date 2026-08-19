@@ -125,4 +125,4 @@ You cannot combine `postQuantumTlsEnabled(false)` with `minTlsVersion(TlsVersion
 ## AWS API endpoints upgrade to TLS 1.2
 <a name="tls-more-info"></a>
 
-See this [blog post](https://aws.amazon.com/blogs//security/tls-1-2-required-for-aws-endpoints/) for information about AWS API endpoints moving to TLS 1.2 for the minimum version.
+See this [blog post](https://aws.amazon.com/blogs/security/tls-1-2-required-for-aws-endpoints/) for information about AWS API endpoints moving to TLS 1.2 for the minimum version.

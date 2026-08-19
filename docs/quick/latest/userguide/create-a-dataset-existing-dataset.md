@@ -51,7 +51,7 @@ Use the following procedure to create a dataset from an existing dataset.
 
 1. (Optional) Prepare your data for analysis. For more information about preparing data, see [Preparing data in Amazon Quick Sight](preparing-data.md).
 
-1. (Optional) Set up row-level or column-level security (RLS/CLS) to restrict access to the dataset. For more information about setting up RLS, see [Using row-level security with user-based rules to restrict access to a datasetUsing user-based rules](restrict-access-to-a-data-set-using-row-level-security.md). For more information about setting up CLS, see [Using column-level security to restrict access to a dataset](restrict-access-to-a-data-set-using-column-level-security.md).
+1. (Optional) Set up row-level or column-level security (RLS/CLS) to restrict access to the dataset. For more information about setting up RLS, see [Using row-level security with user-based rules to restrict access to a dataset](restrict-access-to-a-data-set-using-row-level-security.md). For more information about setting up CLS, see [Using column-level security to restrict access to a dataset](restrict-access-to-a-data-set-using-column-level-security.md).
 **Note**
 You can set up RLS/CLS on child datasets only. RLS/CLS on parent datasets is not supported.
 

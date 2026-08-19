@@ -34,8 +34,6 @@ The following are requirements for connecting an EC2 instance with an ElastiCach
 
 When you set up a connection to an EC2 instance, ElastiCache acts according to the current configuration of the security groups associated with the ElastiCache cache and EC2 instance, as described in the following table.
 
-****
-
 | Current ElastiCache security group configuration | Current EC2 security group configuration | ElastiCache action |
 | --- | --- | --- |
 | There are one or more security groups associated with the ElastiCache cache with a name that matches the pattern `elasticache-ec2-${cacheId}:${ec2InstanceId}`. A security group that matches the pattern hasn't been modified. This security group has only one inbound rule with the VPC security group of the EC2 instance as the source. | There are one or more security groups associated with the EC2 instance with a name that matches the pattern `elasticache-ec2-${cacheId}:${ec2InstanceId}`. A security group that matches the pattern hasn't been modified. This security group has only one outbound rule with the VPC security group of the ElastiCache cache as the source. | ElastiCache takes no action.<br />A connection was already configured automatically between the EC2 instance and the ElastiCache cache. Because a connection already exists between the EC2 instance and the ElastiCache cache, the security groups aren't modified. |

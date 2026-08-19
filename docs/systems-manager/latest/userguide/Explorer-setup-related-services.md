@@ -11,8 +11,6 @@ AWS Systems Manager Explorer and AWS Systems Manager OpsCenter collect informati
 
 The following table includes tasks that allow Explorer and OpsCenter to collect information from, or interact with, other AWS services and Systems Manager tools.
 
-****
-
 | Task | Information |
 | --- | --- |
 | Verify permissions in Systems Manager Automation | Explorer and OpsCenter allow you to remediate issues with AWS resources by using Systems Manager Automation runbooks. To use this remediation tool, you must have permission to run Systems Manager Automation runbooks. For more information, see [Setting up Automation](automation-setup.md). |

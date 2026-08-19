@@ -18,8 +18,6 @@ The following image shows an example of a radar chart.
 
 To view the features supported by radar charts, use the following table.
 
-****
-
 | Feature | Supported? | Comments | For more information |
 | --- | --- | --- | --- |
 | Changing the legend display | Yes |  | [Legends on visual types in Quick](customizing-visual-legend.md) |

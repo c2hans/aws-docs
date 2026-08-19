@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/monit
 
  Amazon Neptune and Amazon CloudWatch are integrated so that you can gather and analyze performance metrics. You can monitor these metrics using the CloudWatch console, the AWS Command Line Interface (AWS CLI), or the CloudWatch API.
 
- CloudWatch also lets you set alarms so that you can be notified if a metric value breaches a threshold that you specify. You can even set up CloudWatch events to take corrective action if a breach occurs. For more information about using CloudWatch and alarms, see the [CloudWatch documentation](https://docs.aws.amazon.com//cloudwatch/).
+ CloudWatch also lets you set alarms so that you can be notified if a metric value breaches a threshold that you specify. You can even set up CloudWatch events to take corrective action if a breach occurs. For more information about using CloudWatch and alarms, see the [CloudWatch documentation](https://docs.aws.amazon.com/cloudwatch/).
 
 ## Viewing CloudWatch data
 <a name="monitoring-cw-viewing"></a>
@@ -17,7 +17,7 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/monit
 
  To view CloudWatch data for a Neptune Analytics graph from the AWS console:
 
-1.  Sign in to the [AWS management console](https://console.aws.amazon.com//cloudwatch/) and open the CloudWatch console.
+1.  Sign in to the [AWS management console](https://console.aws.amazon.com/cloudwatch/) and open the CloudWatch console.
 
 1.  In the navigation pane, choose **Metrics**.
 
@@ -25,16 +25,16 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/monit
 
 1.  In the upper pane, scroll down to view the full list of metrics for your graph. The available Neptune Analytics metric options appear in the **Viewing** list.
 
- To select or deselect an individual metric, in the results pane, select the check box next to the resource name and metric. Graphs showing the metrics for the selected items appear at the bottom of the console. To learn more about CloudWatch graphs, see [ Graph metrics](https://docs.aws.amazon.com//AmazonCloudWatch/latest/DeveloperGuide/graph_metrics.html) in the Amazon CloudWatch user guide.
+ To select or deselect an individual metric, in the results pane, select the check box next to the resource name and metric. Graphs showing the metrics for the selected items appear at the bottom of the console. To learn more about CloudWatch graphs, see [ Graph metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/graph_metrics.html) in the Amazon CloudWatch user guide.
 
 ------
 #### [ AWS CLI ]
 
  To view CloudWatch data for a Neptune cluster using the AWS CLI:
 
-1.  Install the AWS CLI. For information on installing the CLI, see the [AWS Command Line Interface](https://docs.aws.amazon.com//cli/latest/userguide/) user guide.
+1.  Install the AWS CLI. For information on installing the CLI, see the [AWS Command Line Interface](https://docs.aws.amazon.com/cli/latest/userguide/) user guide.
 
-1.  Use the AWS CLI to fetch information. The relevant CloudWatch parameters for Neptune are listed in [Neptune CloudWatch metrics](https://docs.aws.amazon.com//neptune/latest/userguide/cw-metrics.html).
+1.  Use the AWS CLI to fetch information. The relevant CloudWatch parameters for Neptune are listed in [Neptune CloudWatch metrics](https://docs.aws.amazon.com/neptune/latest/userguide/cw-metrics.html).
 
  The following example retrieves the `GraphSizeBytes` CloudWatch metric for the example graph `g-d3iivkv6i6`.
 
@@ -49,7 +49,7 @@ aws cloudwatch get-metric-statistics \                                          
 ------
 #### [ API ]
 
- CloudWatch also supports a query action so that you can request information programmatically. For more information, see the [ CloudWatch Query API](https://docs.aws.amazon.com//AmazonCloudWatch/latest/DeveloperGuide/Using_Query_API.html) documentation and [Amazon CloudWatch API Reference](https://docs.aws.amazon.com//AmazonCloudWatch/latest/APIReference/). When a CloudWatch action requires a parameter that is specific to Neptune monitoring, such as `MetricName`, use the values listed in [Neptune CloudWatch Metrics](https://docs.aws.amazon.com//neptune/latest/userguide/cw-metrics.html). The following example shows a low-level CloudWatch request, using the following parameters:
+ CloudWatch also supports a query action so that you can request information programmatically. For more information, see the [ CloudWatch Query API](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/Using_Query_API.html) documentation and [Amazon CloudWatch API Reference](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/). When a CloudWatch action requires a parameter that is specific to Neptune monitoring, such as `MetricName`, use the values listed in [Neptune CloudWatch Metrics](https://docs.aws.amazon.com/neptune/latest/userguide/cw-metrics.html). The following example shows a low-level CloudWatch request, using the following parameters:
 
 1.  Statistics.member.1 = Average
 

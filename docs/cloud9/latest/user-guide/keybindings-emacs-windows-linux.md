@@ -31,8 +31,6 @@ The following is a list of Emacs keyboard mode keybindings for Windows / Linux o
 ## General
 <a name="keybindings-emacs-windows-linux-general"></a>
 
-****
-
 | Description | Keybinding | Command |
 | --- | --- | --- |
 | Add the selection as a watch expression |  `Ctrl-Shift-C`  |  `addwatchfromselection`  |
@@ -75,8 +73,6 @@ The following is a list of Emacs keyboard mode keybindings for Windows / Linux o
 ## Tabs
 <a name="keybindings-emacs-windows-linux-tabs"></a>
 
-****
-
 | Description | Keybinding | Command |
 | --- | --- | --- |
 | Close all open tabs in the current pane, except the current tab |  `Ctrl-Alt-W`  |  `closeallbutme`  |
@@ -114,8 +110,6 @@ The following is a list of Emacs keyboard mode keybindings for Windows / Linux o
 ## Panels
 <a name="keybindings-emacs-windows-linux-panels"></a>
 
-****
-
 | Description | Keybinding | Command |
 | --- | --- | --- |
 | Show the **Go** window in **Go to Anything** mode |  `Ctrl-E\|Ctrl-P`  |  `gotoanything`  |
@@ -128,8 +122,6 @@ The following is a list of Emacs keyboard mode keybindings for Windows / Linux o
 
 ## Code Editor
 <a name="keybindings-emacs-windows-linux-code-editor"></a>
-
-****
 
 | Description | Keybinding | Command |
 | --- | --- | --- |
@@ -225,8 +217,6 @@ The following is a list of Emacs keyboard mode keybindings for Windows / Linux o
 ## emmet
 <a name="keybindings-emacs-windows-linux-emmet"></a>
 
-****
-
 | Description | Keybinding | Command |
 | --- | --- | --- |
 | Evaluate a simple math expression (such as `2*4` or `10/2`), and output its result |  `Shift-Ctrl-Y`  |  `emmet_evaluate_math_expression`  |
@@ -239,8 +229,6 @@ The following is a list of Emacs keyboard mode keybindings for Windows / Linux o
 ## Terminal
 <a name="keybindings-emacs-windows-linux-terminal"></a>
 
-****
-
 | Description | Keybinding | Command |
 | --- | --- | --- |
 | Open a new **Terminal** tab |  `Alt-T`  |  `openterminal`  |
@@ -248,8 +236,6 @@ The following is a list of Emacs keyboard mode keybindings for Windows / Linux o
 
 ## Run and Debug
 <a name="keybindings-emacs-windows-linux-run-debug"></a>
-
-****
 
 | Description | Keybinding | Command |
 | --- | --- | --- |

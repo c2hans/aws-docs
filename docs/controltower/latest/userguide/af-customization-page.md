@@ -12,7 +12,7 @@ AWS Control Tower allows you to customize new and existing AWS accounts when you
 
 **Provision new accounts with blueprints**
 
-Your customized accounts are provisioned in the AWS Control Tower Account Factory, through CloudFormation templates, or with Terraform. You'll define a template that serves as customized account *blueprint*. Your blueprint describes the specific resources and configurations you require when an account is provisioned. Pre-defined blueprints, built and managed by AWS partners, also are available. For more information about partner-managed blueprints, see the [AWS Service Catalog Getting Started Library](https://docs.aws.amazon.com//servicecatalog/latest/adminguide/getting-started-library.html).
+Your customized accounts are provisioned in the AWS Control Tower Account Factory, through CloudFormation templates, or with Terraform. You'll define a template that serves as customized account *blueprint*. Your blueprint describes the specific resources and configurations you require when an account is provisioned. Pre-defined blueprints, built and managed by AWS partners, also are available. For more information about partner-managed blueprints, see the [AWS Service Catalog Getting Started Library](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/getting-started-library.html).
 
 **Apply blueprints to existing accounts**
 
@@ -20,12 +20,12 @@ You can apply customized blueprints to existing accounts, also, by following the
 
 **Definition: Your hub account**
 
-Your account blueprints are stored in an AWS account, which for our purposes is referred to as a *hub account*. Blueprints are stored in the form of an Service Catalog product. We call this product a blueprint, to distinguish it from any other Service Catalog products. To learn more about how to create Service Catalog products, see [Creating products](https://docs.aws.amazon.com//servicecatalog/latest/adminguide/productmgmt-cloudresource.html) in the *AWS Service Catalog Administrator Guide*.
+Your account blueprints are stored in an AWS account, which for our purposes is referred to as a *hub account*. Blueprints are stored in the form of an Service Catalog product. We call this product a blueprint, to distinguish it from any other Service Catalog products. To learn more about how to create Service Catalog products, see [Creating products](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/productmgmt-cloudresource.html) in the *AWS Service Catalog Administrator Guide*.
 
 **Note**
-AWS Control Tower contains *proactive controls*, which monitor CloudFormation resources in AWS Control Tower. Optionally, you can activate these controls in your landing zone. When you apply proactive controls, they check to make sure that the resources you're about to deploy to your accounts are compliant with your organization's policies and procedures. For more information about proactive controls, see [Proactive controls](https://docs.aws.amazon.com//controltower/latest/userguide/proactive-controls.html).
+AWS Control Tower contains *proactive controls*, which monitor CloudFormation resources in AWS Control Tower. Optionally, you can activate these controls in your landing zone. When you apply proactive controls, they check to make sure that the resources you're about to deploy to your accounts are compliant with your organization's policies and procedures. For more information about proactive controls, see [Proactive controls](https://docs.aws.amazon.com/controltower/latest/userguide/proactive-controls.html).
 
-For more information about working with AFC, see [Automate account customization using Account Factory Customization in AWS Control Tower](https://aws.amazon.com//blogs/mt/automate-account-customization-using-account-factory-customization-in-aws-control-tower/).
+For more information about working with AFC, see [Automate account customization using Account Factory Customization in AWS Control Tower](https://aws.amazon.com/blogs/mt/automate-account-customization-using-account-factory-customization-in-aws-control-tower/).
 
 **Prerequisites**
 Before you begin to create customized accounts with AWS Control Tower Account Factory, you must have an AWS Control Tower landing zone environment deployed, and you must have an organizational unit (OU) registered with AWS Control Tower, where your newly created accounts will be placed.
@@ -210,7 +210,7 @@ When you're creating an AWS Service Catalog External product with a Terraform co
 
 ------
 
-For more information about creating Terraform products using the External product type in AWS Service Catalog, see [Step 5: Create launch roles](https://docs.aws.amazon.com//servicecatalog/latest/adminguide/getstarted-launchrole-Terraform.html) in the Service Catalog Administrator Guide.
+For more information about creating Terraform products using the External product type in AWS Service Catalog, see [Step 5: Create launch roles](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/getstarted-launchrole-Terraform.html) in the Service Catalog Administrator Guide.
 
 ## Transition to the AWS Service Catalog External product type
 <a name="service-catalog-external-product-type"></a>

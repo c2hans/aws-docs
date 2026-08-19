@@ -45,7 +45,7 @@ VACUUM iceberg_table
 
 Athena's cost-based optimizer uses Iceberg statistics to produce optimal query plans. When statistics have been generated for your Iceberg tables, Athena automatically uses this information to make intelligent decisions about join ordering, filters, and aggregation behavior, often improving query performance and reducing costs.
 
-Iceberg statistics are turned on by default when you use S3 Tables. For other Iceberg tables, Athena uses the table property `use_iceberg_statistics` to determine whether to leverage statistics for cost-based optimization. To get started, see [Optimizing query performance using column statistics](https://docs.aws.amazon.com//glue/latest/dg/column-statistics.html) in the *AWS Glue User Guide* or use the [Athena console](https://docs.aws.amazon.com/athena/latest/ug/cost-based-optimizer.html) to generate on-demand statistics on your Iceberg tables.
+Iceberg statistics are turned on by default when you use S3 Tables. For other Iceberg tables, Athena uses the table property `use_iceberg_statistics` to determine whether to leverage statistics for cost-based optimization. To get started, see [Optimizing query performance using column statistics](https://docs.aws.amazon.com/glue/latest/dg/column-statistics.html) in the *AWS Glue User Guide* or use the [Athena console](https://docs.aws.amazon.com/athena/latest/ug/cost-based-optimizer.html) to generate on-demand statistics on your Iceberg tables.
 
 ## Use Parquet column indexing
 <a name="querying-iceberg-data-optimization-parquet-column-indexing"></a>

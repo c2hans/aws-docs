@@ -52,7 +52,7 @@ Refers to billing for devices. You might see references to metered devices or un
 A logical workspace that contains runs, one run for each test of a single app against one or more devices. You can use projects to organize workspaces in whatever way you choose. For example, you can have one project per app title or one project per platform. You can create as many projects as you need.
 
 **report**
-Contains information about a run, which is a request for Device Farm to test a single app against one or more devices. For more information, see [Reports in AWS Device FarmReports](reports.md).
+Contains information about a run, which is a request for Device Farm to test a single app against one or more devices. For more information, see [Reports in AWS Device Farm](reports.md).
 
 **run**
 A specific build of your app, with a specific set of tests, to be run on a specific set of devices. A run produces a report of the results. A run contains one or more jobs. For more information, see [Runs](test-runs.md).

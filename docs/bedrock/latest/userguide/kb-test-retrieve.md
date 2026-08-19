@@ -108,8 +108,6 @@ To query a knowledge base and only return relevant text from data sources, send 
 
 The following fields are required:
 
-****
-
 | Field | Basic description |
 | --- | --- |
 | knowledgeBaseId | To specify the knowledge base to query. |
@@ -117,8 +115,6 @@ The following fields are required:
 | guardrailsConfiguration | Include guardrailsConfiguration fields such as guardrailsId and guardrailsVersion to use your guardrail with the request |
 
 The following fields are optional:
-
-****
 
 | Field | Use case |
 | --- | --- |
@@ -131,8 +127,6 @@ You can use a reranking model over the default Amazon Bedrock Knowledge Bases ra
 If you the `numberOfRerankedResults` value that you specify is greater than the `numberOfResults` value in the [KnowledgeBaseVectorSearchConfiguration](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_KnowledgeBaseVectorSearchConfiguration.html), the maximum number of results that will be returned is the value for `numberOfResults`. An exception is if you use query decomposition (for more information, see the **Query modifications** section in [Configure and customize queries and response generation](kb-test-config.md). If you use query decomposition, the `numberOfRerankedResults` can be up to five times the `numberOfResults`.
 
 The response returns the source chunks from the data source as an array of [KnowledgeBaseRetrievalResult](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_KnowledgeBaseRetrievalResult.html) objects in the `retrievalResults` field. Each [KnowledgeBaseRetrievalResult](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_KnowledgeBaseRetrievalResult.html) contains the following fields:
-
-****
 
 | Field | Description |
 | --- | --- |

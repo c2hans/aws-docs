@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon EventBridge provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="events-DescribeApiDestination"></a>[DescribeApiDestination](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_DescribeApiDestination.html) | Retrieve details about an api destination | Read |

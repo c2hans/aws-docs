@@ -28,7 +28,7 @@ Change sets for nested stacks combines the following features together to expand
 **Note**
 A root change set is the change set associated with the stack from which the whole hierarchy of change sets are created. You must execute or delete change sets for nested stacks from the root change set. For more information, see [Performing stack operations on nested stacks](using-cfn-nested-stacks.md#perform-stack-operations-on-nested-stacks).
 + **View the change set** – Visualize changes to resources inside nested stacks before executing them. You can view the proposed changes in the **Changes** section of your change set by navigating through the current stack and its nested change sets. For more information, see [View a change set for a CloudFormation stack](using-cfn-updating-stacks-changesets-view.md).
-+ **Execute the change set** – Execute the changes described in the change set that pertain to the current stack and its descendants. The execute operation must be made from the root change set. For more information, see [Execute a change set for a CloudFormation stackStack policies and executing a change set](using-cfn-updating-stacks-changesets-execute.md).
++ **Execute the change set** – Execute the changes described in the change set that pertain to the current stack and its descendants. The execute operation must be made from the root change set. For more information, see [Execute a change set for a CloudFormation stack](using-cfn-updating-stacks-changesets-execute.md).
 + **Delete the change set** – Removes the change sets from the current stack. Deleting a change set helps to prevent you or another user from accidentally initiating a change set that shouldn't be applied. The delete operation must be executed from the root change set. For more information, see [Delete a change set for a CloudFormation stack](using-cfn-updating-stacks-changesets-delete.md).
 
 ## Working with change sets for nested stacks (AWS CLI)
@@ -193,7 +193,7 @@ The following is example output.
 
 ### execute-change-set
 <a name="working-with-change-set-execute-cli"></a>
-+ [execute-change-set](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/execute-change-set.html) – Creates or updates a stack using the input information that was provided when the specified change set was created. To create a change set for the entire stack hierarchy, you must specify the `–-include-nested-stacks` option during the **create-change-set** operation. For more information, see [Execute a change set for a CloudFormation stackStack policies and executing a change set](using-cfn-updating-stacks-changesets-execute.md).
++ [execute-change-set](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/execute-change-set.html) – Creates or updates a stack using the input information that was provided when the specified change set was created. To create a change set for the entire stack hierarchy, you must specify the `–-include-nested-stacks` option during the **create-change-set** operation. For more information, see [Execute a change set for a CloudFormation stack](using-cfn-updating-stacks-changesets-execute.md).
 **Note**
 **execute-change-set** must be executed from the root change set and will apply the change set on the whole hierarchy of stacks.
 

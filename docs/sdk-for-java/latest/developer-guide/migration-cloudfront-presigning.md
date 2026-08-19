@@ -10,8 +10,6 @@ This topic details the changes in the Amazon CloudFront from version 1 (v1) to v
 ## High-level changes
 <a name="migration-cloudfront-presigning-api-changes"></a>
 
-****
-
 | Change | v1 | v2 |
 | --- | --- | --- |
 |  <br />Maven dependencies |  <pre><dependencyManagement><br />    <dependencies><br />        <dependency><br />            <groupId>com.amazonaws</groupId><br />            <artifactId>aws-java-sdk-bom</artifactId><br />            <version>{{1.12.5871}}</version><br />            <type>pom</type><br />            <scope>import</scope><br />        </dependency><br />    </dependencies><br /></dependencyManagement><br /><dependencies><br />    <dependency>  <br />        <groupId>com.amazonaws</groupId><br />        <artifactId>cloudfront</artifactId><br />    </dependency><br /></dependencies></pre>  |  <pre><dependencyManagement><br />    <dependencies><br />        <dependency><br />            <groupId>software.amazon.awssdk</groupId><br />            <artifactId>bom</artifactId><br />            <version>{{2.27.212}}</version><br />            <type>pom</type><br />            <scope>import</scope><br />        </dependency><br />    </dependencies><br /></dependencyManagement><br /><dependencies><br />    <dependency><br />        <groupId>software.amazon.awssdk</groupId><br />        <artifactId>cloudfront</artifactId><br />    </dependency><br /></dependencies></pre>  |

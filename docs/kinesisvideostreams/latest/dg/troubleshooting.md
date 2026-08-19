@@ -434,4 +434,4 @@ If your setup has IP address range restrictions for Kinesis Video Streams, updat
 **Important**
 The IP range list isn't an exhaustive list of Kinesis Video Streams IP addresses. Include the IP address ranges you see and be aware that the IP addresses may change over time.
 
-For more information, see [AWS IP ranges](https://docs.aws.amazon.com//vpc/latest/userguide/aws-ip-ranges.html). To be notified when IP ranges change, follow the [subscription procedure](https://docs.aws.amazon.com//vpc/latest/userguide/aws-ip-ranges.html#subscribe-notifications).
+For more information, see [AWS IP ranges](https://docs.aws.amazon.com/vpc/latest/userguide/aws-ip-ranges.html). To be notified when IP ranges change, follow the [subscription procedure](https://docs.aws.amazon.com/vpc/latest/userguide/aws-ip-ranges.html#subscribe-notifications).

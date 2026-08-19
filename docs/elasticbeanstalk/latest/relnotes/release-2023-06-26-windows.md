@@ -63,8 +63,6 @@ Be aware that at the time these release notes are published, the new platform ve
 #### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2019 with IIS 10.0 version 2.11.5**  |  * 64bit Windows Server 2019 v2.11.5 running IIS 10.0 *  | .NET 6.0.18, supports 6.0.18, 3.1.32<br />.NET Framework 4.8, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -76,8 +74,6 @@ Be aware that at the time these release notes are published, the new platform ve
 
 #### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Config  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |

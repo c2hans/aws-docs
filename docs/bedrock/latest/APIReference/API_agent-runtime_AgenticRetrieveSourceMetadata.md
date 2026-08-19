@@ -18,7 +18,7 @@ Required: No
  ** retrievalType **   <a name="bedrock-Type-agent-runtime_AgenticRetrieveSourceMetadata-retrievalType"></a>
 The type of retrieval source.
 Type: String
-Valid Values: `BedrockKnowledgeBase`
+Valid Values: `BedrockKnowledgeBase | BedrockAgentCoreMemory`
 Required: No
 
 ## See Also

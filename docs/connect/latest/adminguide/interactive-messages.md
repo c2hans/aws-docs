@@ -106,8 +106,6 @@ The following table lists the limits for each of the list picker elements, shoul
 
 To send unlimited options, implement action buttons in your application. For more information, see [Implementation of action buttons in interactive message list picker/panel](https://github.com/amazon-connect/amazon-connect-chat-interface/blob/master/.github/docs/InteractiveMessageActionButtonImplementation.md).
 
-****
-
 - ****
   - **Field:** **templateType**
   - **Required:** Yes
@@ -247,8 +245,6 @@ The following code is the time picker template that you can use in your Lambda. 
 
 The following table lists the limits for each of the time picker elements. Use this information if you choose to build your own Lambda from scratch. The mandatory parameters are in bold.
 
-****
-
 - ****
   - **Field:** **templateType**
   - **Required:** Yes
@@ -359,8 +355,6 @@ The following table lists the limits for each of the panel elements, should you 
 
 To send unlimited options, implement action buttons in your application. For more information, see [Implementation of action buttons in interactive message list picker/panel](https://github.com/amazon-connect/amazon-connect-chat-interface/blob/master/.github/docs/InteractiveMessageActionButtonImplementation.md).
 
-****
-
 - ****
   - **Field:** **templateType**
   - **Required:** Yes
@@ -457,8 +451,6 @@ The following code is the quick reply template that you can use in your Lambda.
 <a name="quickreply-limits"></a>
 
 The following table lists the limits for each of the quick reply elements. Use this information if you choose to build your own Lambda from scratch. The mandatory parameters are in bold.
-
-****
 
 - ****
   - **Field:** **templateType**
@@ -601,8 +593,6 @@ For hosted communications widget users:
 <a name="carousel-limits"></a>
 
 The following table lists the limits for each of the carousel elements. Use this information if you choose to build your own Lambda from scratch. The mandatory parameters are in bold.
-
-****
 
 - ****
   - **Field:** **templateType**

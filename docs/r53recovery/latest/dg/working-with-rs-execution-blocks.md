@@ -13,8 +13,6 @@ Region switch includes execution block types that help scale compute resources a
 
 Region switch supports the following execution blocks.
 
-****
-
 | Execution block | Function | Ungraceful configuration |
 | --- | --- | --- |
 | [ARC Region switch plan execution block](region-switch-plan-block.md) | Orchestrate recovery for multiple applications in one execution by specifying child plans to execute. | Start child plans with their ungraceful configurations. |

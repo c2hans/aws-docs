@@ -51,7 +51,7 @@ If the total value (hourly price \* number of remaining hours) of the new Conver
 
 Exchanging Convertible Reserved Instances is free. However, you might be required to pay a true-up cost, which is a prorated upfront cost of the difference between the Convertible Reserved Instances that you had and the new Convertible Reserved Instances that you receive from the exchange.
 
-Each Convertible Reserved Instance has a list value. This list value is compared to the list value of the Convertible Reserved Instances that you want in order to determine how many instance reservations you can receive from the exchange.
+Each Convertible Reserved Instance has a list value. This list value is compared to the list value of the Convertible Reserved Instances that you want to determine how many instance reservations you can receive from the exchange.
 
 For example: You have 1 x $35-list value Convertible Reserved Instance that you want to exchange for a new instance type with a list value of $10.
 

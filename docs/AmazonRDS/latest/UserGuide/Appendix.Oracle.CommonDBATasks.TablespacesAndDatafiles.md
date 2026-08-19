@@ -164,8 +164,6 @@ SMALLTBS                           9 /rdsdbdata2/db/ORCL_A/datafile/o1_mf_smallt
 
 To set the default tablespace, use the Amazon RDS procedure `rdsadmin.rdsadmin_util.alter_default_tablespace`. The `alter_default_tablespace` procedure has the following parameters.
 
-****
-
 | Parameter name | Data type | Default | Required | Description |
 | --- | --- | --- | --- | --- |
 | `tablespace_name` | varchar | — | Yes | The name of the default tablespace. |
@@ -187,8 +185,6 @@ SELECT PROPERTY_VALUE FROM DATABASE_PROPERTIES WHERE PROPERTY_NAME = 'DEFAULT_PE
 
 To set the default temporary tablespace, use the Amazon RDS procedure `rdsadmin.rdsadmin_util.alter_default_temp_tablespace`. The `alter_default_temp_tablespace` procedure has the following parameters.
 
-****
-
 | Parameter name | Data type | Default | Required | Description |
 | --- | --- | --- | --- | --- |
 | `tablespace_name` | varchar | — | Yes | The name of the default temporary tablespace. |
@@ -203,8 +199,6 @@ EXEC rdsadmin.rdsadmin_util.alter_default_temp_tablespace(tablespace_name => '{{
 <a name="Appendix.Oracle.CommonDBATasks.creating-tts-instance-store"></a>
 
 To create a temporary tablespace on the instance store, use the Amazon RDS procedure `rdsadmin.rdsadmin_util.create_inst_store_tmp_tblspace`. The `create_inst_store_tmp_tblspace` procedure has the following parameters.
-
-****
 
 | Parameter name | Data type | Default | Required | Description |
 | --- | --- | --- | --- | --- |

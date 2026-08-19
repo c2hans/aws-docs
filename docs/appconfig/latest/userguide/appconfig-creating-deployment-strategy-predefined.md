@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-cre
 
 AWS AppConfig includes predefined deployment strategies to help you quickly deploy a configuration. Instead of creating your own strategies, you can choose one of the following when you deploy a configuration.
 
-****
-
 | Deployment strategy | Description |
 | --- | --- |
 | AppConfig.Linear20PercentEvery6Minutes | **AWS recommended**:<br />This strategy deploys the configuration to 20% of all targets every six minutes for a 30 minute deployment. The system monitors for Amazon CloudWatch alarms for 30 minutes. If no alarms are received in this time, the deployment is complete. If an alarm is triggered during this time, AWS AppConfig rolls back the deployment.<br />We recommend using this strategy for production deployments because it aligns with AWS best practices and includes additional emphasis on deployment safety due to its long duration and bake time. |

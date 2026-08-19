@@ -8,11 +8,11 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-password-t
 After you create a secret and associate it with your cluster, you can connect your client to the cluster. The following procedure demonstrates how to connect a client to a cluster that uses SASL/SCRAM authentication. It also shows how to produce to and consume from an example topic.
 
 **Topics**
-+ [Connecting a client to cluster using SASL/SCRAM authentication](#w2aab9c13c29c17c13c11b9b7)
++ [Connecting a client to cluster using SASL/SCRAM authentication](#w2aab9c13c31c17c13c11b9b7)
 + [Troubleshooting connection issues](#msk-password-tutorial-connect-troubleshooting)
 
 ## Connecting a client to cluster using SASL/SCRAM authentication
-<a name="w2aab9c13c29c17c13c11b9b7"></a>
+<a name="w2aab9c13c31c17c13c11b9b7"></a>
 
 1. Run the following command on a machine that has AWS CLI installed. Replace {{clusterARN}} with the ARN of your cluster.
 

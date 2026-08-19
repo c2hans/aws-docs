@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/uss-obtain-info.html
 
 Consult the following table for information about how to assess the source formats and packaging. Read across each row.
 
-****
-
 | Information to obtain | Verify the following |
 | --- | --- |
 | Number of sources that the content provider can provide. | If you plan to implement a [resiliency feature](plan-redundancy.md), make sure that your content provider can deliver the required inputs:+  For automatic input failover, they must deliver two identical instances of the same source content. <br />+  For pipeline redundancy, they must deliver two identical instances of the same source content. <br />+  If you plan to implement both features, they must deliver four instances.  |

@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon Honeycode provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="honeycode-DescribeTableDataImportJob"></a>[DescribeTableDataImportJob](https://docs.aws.amazon.com/honeycode/latest/UserGuide/API_DescribeTableDataImportJob.html) | Get details about a table data import job | Read |

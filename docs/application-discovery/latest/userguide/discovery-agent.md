@@ -10,7 +10,7 @@ AWS Application Discovery Service is no longer open to new customers. Alternativ
 The AWS Application Discovery Agent (Discovery Agent) is software that you install on on-premises servers and VMs targeted for discovery and migration. Agents capture system configuration, system performance, running processes, and details of the network connections between systems. Agents support most Linux and Windows operating systems, and you can deploy them on physical on-premises servers, Amazon EC2 instances, and virtual machines.
 
 **Note**
-Before you deploy the Discovery Agent, you must choose a [Migration Hub home Region](https://docs.aws.amazon.com//migrationhub/latest/ug/home-region.html). You must register your agent in your home Region.
+Before you deploy the Discovery Agent, you must choose a [Migration Hub home Region](https://docs.aws.amazon.com/migrationhub/latest/ug/home-region.html). You must register your agent in your home Region.
 
 The Discovery Agent runs in your local environment and requires root privileges. When you start the Discovery Agent, it connects securely with your home region and registers with Application Discovery Service.
 + For example, if `eu-central-1` is your home Region, it registers `arsenal-discovery.{{eu-central-1}}.amazonaws.com` with Application Discovery Service.

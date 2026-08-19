@@ -13,7 +13,7 @@ When you delete a user's account from a directory, all information about the use
 **Before you begin, complete the following:**
 + [Creating your AWS Managed Microsoft AD](ms_ad_getting_started.md#ms_ad_getting_started_create_directory).
 + Enable [user and group management for Directory Service Data](ms_ad_users_groups_mgmt_enable_disable.md). You can only enable this feature from the Primary AWS Region for your directory. For more information, see [Primary vs additional Regions](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/multi-region-global-primary-additional.html).
-+ You'll need the necessary IAM permissions to use AWS Directory Service Data. To get started, you can use the [AWS managed policy: AWSDirectoryServiceDataFullAccess](security-iam-awsmanpol.md#security-iam-awsmanpol-AWSDirectoryServiceDataFullAccess) or [AWS managed policy: AWSDirectoryServiceDataReadOnlyAccess](security-iam-awsmanpol.md#security-iam-awsmanpol-AWSDirectoryServiceDataReadOnlyAccess). For more information, see [Directory Service API permissions: Actions, resources, and conditions reference](UsingWithDS_IAM_ResourcePermissions.md) and [Security best practices in IAM](https://docs.aws.amazon.com//IAM/latest/UserGuide/best-practices.html#bp-use-aws-defined-policies).
++ You'll need the necessary IAM permissions to use AWS Directory Service Data. To get started, you can use the [AWS managed policy: AWSDirectoryServiceDataFullAccess](security-iam-awsmanpol.md#security-iam-awsmanpol-AWSDirectoryServiceDataFullAccess) or [AWS managed policy: AWSDirectoryServiceDataReadOnlyAccess](security-iam-awsmanpol.md#security-iam-awsmanpol-AWSDirectoryServiceDataReadOnlyAccess). For more information, see [Directory Service API permissions: Actions, resources, and conditions reference](UsingWithDS_IAM_ResourcePermissions.md) and [Security best practices in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#bp-use-aws-defined-policies).
 + [Creating an AWS Managed Microsoft AD user](ms_ad_create_user.md).
 
 ------
@@ -47,7 +47,7 @@ When you delete a user's account from a directory, all information about the use
 aws ds-data delete-user --directory-id {{d-1234567890}} --sam-account-name "{{jane.doe}}"
 ```
 
-For more information, see [`delete-user`](https://docs.aws.amazon.com//cli/latest/reference/ds-data/delete-user.html).
+For more information, see [`delete-user`](https://docs.aws.amazon.com/cli/latest/reference/ds-data/delete-user.html).
 
 ------
 #### [ PowerShell ]
@@ -61,6 +61,6 @@ For more information, see [`delete-user`](https://docs.aws.amazon.com//cli/lates
 Remove-DSDUser -DirectoryId {{d-1234567890}} -SAMAccountName "{{jane.doe}}"
 ```
 
-For more information, see [`Remove-DSDUser`](https://docs.aws.amazon.com//powershell/latest/reference/items/Remove-DSDUser.html).
+For more information, see [`Remove-DSDUser`](https://docs.aws.amazon.com/powershell/latest/reference/items/Remove-DSDUser.html).
 
 ------

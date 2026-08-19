@@ -35,8 +35,6 @@ You can add shards to your MemoryDB cluster using the AWS Management Console, AW
 
 You can use the AWS Management Console to add one or more shards to your MemoryDB cluster. The following procedure describes the process.
 
-****
-
 1. Sign in to the AWS Management Console and open the MemoryDB console at [https://console.aws.amazon.com/memorydb/](https://console.aws.amazon.com/memorydb/).
 
 1. From the list of clusters, choose the cluster name from which you want to add a shard.
@@ -246,8 +244,6 @@ The following process describes how to reconfigure the shards in your MemoryDB c
 Before removing shards from your cluster, MemoryDB makes sure that all your data will fit in the remaining shards. If the data will fit, shards are deleted from the cluster as requested. If the data won't fit in the remaining shards, the process is terminated and the cluster is left with the same shard configuration as before the request was made.
 
 You can use the AWS Management Console to remove one or more shards from your MemoryDB cluster. You cannot remove all the shards in a cluster. Instead, you must delete the cluster. For more information, see [Step 5: Deleting a cluster](getting-started.md#clusters.delete). The following procedure describes the process for removing one or more shards.
-
-****
 
 1. Sign in to the AWS Management Console and open the MemoryDB console at [https://console.aws.amazon.com/memorydb/](https://console.aws.amazon.com/memorydb/).
 

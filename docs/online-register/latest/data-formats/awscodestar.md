@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsc
 
 AWS CodeStar provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="codestar-DescribeProject"></a>[DescribeProject](https://docs.aws.amazon.com/codestar/latest/APIReference/API_DescribeProject.html) | Describe a project and its resources | Read |

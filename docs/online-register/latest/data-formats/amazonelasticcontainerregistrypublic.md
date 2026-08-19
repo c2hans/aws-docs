@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon Elastic Container Registry Public provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="ecr-public-BatchCheckLayerAvailability"></a>[BatchCheckLayerAvailability](https://docs.aws.amazon.com/AmazonECRPublic/latest/APIReference/API_BatchCheckLayerAvailability.html) | Check the availability of multiple image layers in a specified registry and repository | Read |

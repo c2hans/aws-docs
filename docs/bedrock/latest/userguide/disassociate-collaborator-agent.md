@@ -39,8 +39,6 @@ To apply the changes to the working draft, send a [PrepareAgent](https://docs.aw
 
 You must minimally include the following fields:
 
-****
-
 | Field | Use case |
 | --- | --- |
 | agentId | The agent ID. |

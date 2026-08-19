@@ -36,8 +36,6 @@ Be aware that at the time these release notes are published, the new platform ve
 ### Ruby
 <a name="release-2022-05-02-ruby.platforms.ruby"></a>
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  Package Manager  |  Application Server  |  AWS X-Ray  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- | --- |
 |  ** Ruby 3.0 AL2 version 3.4.6** <br /> * 64bit Amazon Linux 2 v3.4.6 running Ruby 3.0 *  | 2.0.20220419 | Ruby 3.0.4-p208 | RubyGems 3.3.12 | Puma 5.6.4 | 3.2.0 | nginx 1.20.0 |

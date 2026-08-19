@@ -10,8 +10,6 @@ End of support notice: On May 31, 2026, AWS will end support for AWS Panorama. A
 AWS Panorama applies quotas to the resources that you create in your account and the applications that you deploy. If you use AWS Panorama in multiple AWS Regions, quotas apply separately to each Region. AWS Panorama quotas are not adjustable.
 
 Resources in AWS Panorama include devices, application node packages, and application instances.
-
-****
 + **Devices** – Up to 50 registered appliances per Region.
 + **Node packages** – 50 packages per Region, with up to 20 versions per package.
 + **Application instances** – Up to 10 applications per device. Each application can monitor up to 8 camera streams. Deployments are limited to 200 per day for each device.

@@ -16,7 +16,7 @@ The *CloudFormation Template Reference Guide* contains reference information for
 + **Intrinsic functions** – Built-in functions you can use to perform certain tasks like joining strings or referencing other resources. For more information, see the [Intrinsic function reference](intrinsic-function-reference.md).
 + **Transforms** – Macros that CloudFormation provides to simplify certain tasks or operations within your templates. For more information, see the [Transform reference](transform-reference.md).
 + **Helper scripts** – Python helper scripts that you can use to install software and start services on an EC2 instance created as part of your stack. For more information, see the [CloudFormation helper scripts reference](cfn-helper-scripts-reference.md).
-+ **Resource spec and schemas** – Files that contain detailed specifications and schemas for each resource type. For more information, see the [Resource spec and schemas referenceResource spec and schemas](resource-spec-and-schemas-reference.md).
++ **Resource spec and schemas** – Files that contain detailed specifications and schemas for each resource type. For more information, see the [Resource spec and schemas reference](resource-spec-and-schemas-reference.md).
 
 If you're new to CloudFormation templates, we recommend that you first review the information in the [Working with CloudFormation templates](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-guide.html) section of the *AWS CloudFormation User Guide*.
 

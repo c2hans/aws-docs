@@ -20,8 +20,6 @@ Opens the public URL of your website in the default browser.
 ## Options
 <a name="eb3-openoptions"></a>
 
-****
-
 |  Name  |  Description  |
 | --- | --- |
 | [Common options](eb3-cmd-options.md) |  |

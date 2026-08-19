@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/controltower/latest/controlreference/pro
 
 These controls are referred to as *proactive* because they check your resources – before the resources are deployed – to determine whether the new resources will comply with the controls that are activated in your environment.
 
-Proactive controls are *optional controls* implemented with [CloudFormation hooks](https://docs.aws.amazon.com//cloudformation-cli/latest/hooks-userguide/what-is-cloudformation-hooks.html) and [hooks managed by AWS Control Tower](https://docs.aws.amazon.com//controltower/latest/controlreference/update-hooks.html).
+Proactive controls are *optional controls* implemented with [CloudFormation hooks](https://docs.aws.amazon.com/cloudformation-cli/latest/hooks-userguide/what-is-cloudformation-hooks.html) and [hooks managed by AWS Control Tower](https://docs.aws.amazon.com/controltower/latest/controlreference/update-hooks.html).
 
 Proactive controls fall into four main **Categories**. In the AWS Control Tower console, you can view the controls in groups according to their assigned categories, which are:
 + **Control objectives**: Specific purposes for implementing controls in your environment.
@@ -19,10 +19,10 @@ In this reference guide, the proactive controls are categorized according to the
 
  **Behavior of proactive controls**
 
-Proactive controls check resources whenever those resources are created or updated by means of CloudFormation stack operations. Specifically, these proactive controls are implemented as `preCreate` and `preUpdate` hook handlers. As a consequence, these controls may not affect requests that are made directly to services through the AWS console, through AWS APIs, or through other means such as AWS SDKs, or other Infrastructure-as-Code (IaC) tools. For more information about when `preCreate` and `preUpdate` hooks operate, see [CloudFormation hooks](https://docs.aws.amazon.com//cloudformation-cli/latest/hooks-userguide/what-is-cloudformation-hooks.html).
+Proactive controls check resources whenever those resources are created or updated by means of CloudFormation stack operations. Specifically, these proactive controls are implemented as `preCreate` and `preUpdate` hook handlers. As a consequence, these controls may not affect requests that are made directly to services through the AWS console, through AWS APIs, or through other means such as AWS SDKs, or other Infrastructure-as-Code (IaC) tools. For more information about when `preCreate` and `preUpdate` hooks operate, see [CloudFormation hooks](https://docs.aws.amazon.com/cloudformation-cli/latest/hooks-userguide/what-is-cloudformation-hooks.html).
 
 **Limitation of hooks managed by CloudFormation**
-Proactive controls evaluate strings passed into the CloudFormation hook within the `targetNames` property. Secure strings and secrets are not resolved before they are sent to the hook, which prevents the proactive control from evaluating the string. For more information about how the `targetNames` are passed to hooks, see [CloudFormation Hooks structure overview](https://docs.aws.amazon.com//cloudformation-cli/latest/hooks-userguide/hooks-structure.html).
+Proactive controls evaluate strings passed into the CloudFormation hook within the `targetNames` property. Secure strings and secrets are not resolved before they are sent to the hook, which prevents the proactive control from evaluating the string. For more information about how the `targetNames` are passed to hooks, see [CloudFormation Hooks structure overview](https://docs.aws.amazon.com/cloudformation-cli/latest/hooks-userguide/hooks-structure.html).
 
 When you follow an example template to set up a test for a proactive control in your environment, be aware that the template is created to test one specific control only. Other controls may not receive a PASS rating for that template. This behavior is expected. We recommend that you test proactive controls individually before you enable them in your environment.
 

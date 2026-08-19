@@ -9,7 +9,7 @@ An AWS account is the container for all your owned resources. These resources in
 
 **Resources and account creation time**
 
-When AWS Control Tower creates or enrolls an account, it deploys the minimum necessary resource configuration for the account. For example, it may include resources in the form of [Account Factory templates](https://docs.aws.amazon.com//controltower/latest/userguide/account-factory-considerations.html) and other resources in your landing zone, such as IAM roles, AWS CloudTrail trails, [Service Catalog provisioned products](https://docs.aws.amazon.com/servicecatalog/latest/userguide/enduser-dashboard.html), and IAM Identity Center users. AWS Control Tower also deploys resources, as required by the control configuration, for the organizational unit (OU) in which the new account is destined to become a member account.
+When AWS Control Tower creates or enrolls an account, it deploys the minimum necessary resource configuration for the account. For example, it may include resources in the form of [Account Factory templates](https://docs.aws.amazon.com/controltower/latest/userguide/account-factory-considerations.html) and other resources in your landing zone, such as IAM roles, AWS CloudTrail trails, [Service Catalog provisioned products](https://docs.aws.amazon.com/servicecatalog/latest/userguide/enduser-dashboard.html), and IAM Identity Center users. AWS Control Tower also deploys resources, as required by the control configuration, for the organizational unit (OU) in which the new account is destined to become a member account.
 
 AWS Control Tower orchestrates the deployment of these resources on your behalf. It may require several minutes per resource to complete the deployment, so consider the total time before you create or enroll an account. For more information about managing resources in your accounts, see [Guidance for creating and modifying AWS Control Tower resources](getting-started-guidance.md).
 
@@ -41,5 +41,5 @@ AWS Control Tower does not remove any existing resources in the logging and secu
 
 **Security for your accounts**
 You can find guidance about best practices to protect the security of your AWS Control Tower management account and member accounts in the AWS Organizations documentation.
-[Best practices for the management account](https://docs.aws.amazon.com//organizations/latest/userguide/orgs_best-practices_mgmt-acct.html)
+[Best practices for the management account](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_best-practices_mgmt-acct.html)
 [Best practices for member accounts](https://docs.aws.amazon.com/organizations/latest/userguide/best-practices_member-acct.html)

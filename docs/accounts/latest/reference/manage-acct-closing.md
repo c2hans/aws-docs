@@ -5,6 +5,8 @@ source_url: https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-cl
 # Close an AWS account
 <a name="manage-acct-closing"></a>
 
+These instructions are for how to close your AWS account if you signed up for AWS using Sign up for AWS (advanced) or if you activated advanced features for your account. To compare sign-up options, see [Compare sign-up options](sign-up-for-aws.md).
+
 If you no longer need your AWS account, you can close it at any time by following the instructions in this section. After you've closed it, you can reopen it within 90 days from the day you closed the account. The timespan between the day you closed the account and when AWS permanently closes the account is referred to as the [post-closure period](#post-closure-period).
 
 ## What you need to know before closing your account
@@ -23,7 +25,7 @@ Before closing your AWS account, you should consider the following:
 **Additional considerations for member accounts**
 + When you close a member account, that account isn't removed from the organization until after the [post-closure period](#post-closure-period). During the post-closure period, a closed member account still counts toward your quota of accounts in the organization. To avoid having the account count against the quota, see [Remove a member account from your organization](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_accounts_remove-member-account.html) before closing it.
 + You can only close 20% or 250 of member accounts to a maximum of 1,000 within a rolling 30 day period, whichever is higher. This quota is not bound by a calendar month, but starts when you close an account. For more information about Organizations quotas, see [Quotas for AWS Organizations](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_reference_limits.html).
-+ If you use AWS Control Tower, you need to unmanage the member account before you attempt to close the account. See [ Unmanage a member account](https://docs.aws.amazon.com//controltower/latest/userguide/unmanage-account.html) in the * AWS Control Tower User Guide*.
++ If you use AWS Control Tower, you need to unmanage the member account before you attempt to close the account. See [ Unmanage a member account](https://docs.aws.amazon.com/controltower/latest/userguide/unmanage-account.html) in the * AWS Control Tower User Guide*.
 
 **Service specific considerations**
 + AWS Marketplace subscriptions aren't automatically canceled on account closure. If you have any subscriptions, first [terminate all instances of your software](https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-getting-started.html#step-6-terminate-your-instance) in the subscriptions. Then, go to the **[Manage subscriptions](https://aws.amazon.com/marketplace/library)** page of the AWS Marketplace console and cancel your subscriptions.
@@ -125,7 +127,7 @@ An AWS GovCloud (US) account is always linked to a single standard AWS account f
 
 **To close an AWS GovCloud (US) account**
 
-If you have an AWS account that is linked to an AWS GovCloud (US) account, you need to close the standard account before you close the AWS GovCloud (US) account. For more details, including how to back-up data and avoid unintended AWS GovCloud (US) charges, see [Closing an AWS GovCloud (US) account](https://docs.aws.amazon.com//govcloud-us/latest/UserGuide/Closing-govcloud-account.html) in the * AWS GovCloud (US) User Guide*.
+If you have an AWS account that is linked to an AWS GovCloud (US) account, you need to close the standard account before you close the AWS GovCloud (US) account. For more details, including how to back-up data and avoid unintended AWS GovCloud (US) charges, see [Closing an AWS GovCloud (US) account](https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/Closing-govcloud-account.html) in the * AWS GovCloud (US) User Guide*.
 
 ------
 

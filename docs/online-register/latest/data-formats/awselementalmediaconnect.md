@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awse
 
 AWS Elemental MediaConnect provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="mediaconnect-DescribeBridge"></a>[DescribeBridge](https://docs.aws.amazon.com/mediaconnect/latest/api/API_DescribeBridge.html) | Display the details of a bridge | Read |

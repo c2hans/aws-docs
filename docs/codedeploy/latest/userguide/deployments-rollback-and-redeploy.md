@@ -97,8 +97,6 @@ However, if the deployment that failed was configured to overwrite, instead of r
 
 In the following example, there are three deployments. Any file that is overwritten (deleted) during the failed second deployment is no longer available (cannot be retained) when application revision 1 is deployed again during deployment 3:
 
-****
-
 |  Deployment  |  Application revision  |  Content overwrite option  |  Deployment status  |  Behavior and result  |
 | --- | --- | --- | --- | --- |
 | deployment 1 | application revision 1 | RETAIN | Succeeded | CodeDeploy detects files in the target locations that were not deployed by the previous deployment. These files might be placed there intentionally to become part of the current deployment. They are kept and recorded as part of the current deployment package. |

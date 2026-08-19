@@ -19,7 +19,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/datalake-table
 An initial RAM request is created only for the first share.
 Lake Formation optimizes subsequent shares by reusing existing accepted RAM requests when possible.
 RAM requests expire after 12 hours if not accepted.
-For more information about RAM requests, see [Accepting and rejecting resource share invitations](https://docs.aws.amazon.com/ram/latest/userguide/working-with-shared-invitations.html) and [Optimize AWS RAM resource shares](https://docs.aws.amazon.com//lake-formation/latest/dg/optimize-ram.html#optimize-version).
+For more information about RAM requests, see [Accepting and rejecting resource share invitations](https://docs.aws.amazon.com/ram/latest/userguide/working-with-shared-invitations.html) and [Optimize AWS RAM resource shares](https://docs.aws.amazon.com/lake-formation/latest/dg/optimize-ram.html#optimize-version).
 ![Shared with me - resource shares table.](http://docs.aws.amazon.com/connect/latest/adminguide/images/datalake-tables-2.png)
 
 1. After the resource shares have been accepted, in the consumer account navigate to the AWS Lake Formation console at [https://console.aws.amazon.com/lakeformation](https://console.aws.amazon.com/lakeformation). To configure access to the Connect Customer data lake tables, be certain the user configuring the following resources has Data lake administrator permissions in Lake Formation. For more information, see the - [Lake Formation personas and IAM permissions reference](https://docs.aws.amazon.com/lake-formation/latest/dg/permissions-reference.html).

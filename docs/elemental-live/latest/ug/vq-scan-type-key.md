@@ -10,8 +10,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/vq-scan-type-ke
 
 Configuring for scan type conversion involves setting fields in specific ways. The three key fields to convert the scan type of the input are **Configuration - Deinterlace Mode**, **Configuration - Interlace Mode**, and **Configuration - Telecine**. The following table describes how to set these three key fields to convert a given input to a given output.
 
-****
-
 | Input | Output | Configuration - Deinterlace mode | Configuration - Interlace mode | Configuration - Telecine |
 | --- | --- | --- | --- | --- |
 | Progressive | Progressive | Off | Progressive | None |

@@ -9,6 +9,7 @@ The following table describes important additions to the AWS Security Incident R
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [Added expected `CreateServiceLinkedRole` events explanation to Using service-linked roles](https://docs.aws.amazon.com/security-ir/latest/userguide/using-service-linked-roles.html) | Added a section explaining that `InvalidInputException` entries for `CreateServiceLinkedRole` in AWS CloudTrail are expected behavior during periodic service infrastructure updates and require no action. | August 14, 2026 |
 | [Corrected event type name in Case Comment Events](https://docs.aws.amazon.com/security-ir/latest/userguide/case-comment-events.html) | Corrected the EventBridge `detail-type` value from "Case Comment Created" to "Case Comment Added" to match the actual event emitted by the service. | August 13, 2026 |
 | [Corrected EventBridge rule name in Validate your configuration](https://docs.aws.amazon.com/security-ir/latest/userguide/config-validation.html) | Updated the EventBridge rule name to look for in member accounts from `SecurityIncidentResponse` to `SIR` to match the actual deployed rule names. | August 13, 2026 |
 | [Updated proactive response and alert triaging page](https://docs.aws.amazon.com/security-ir/latest/userguide/proactive-response-alert-triaging.html) | Renamed the page title from "Setup proactive response and alert triaging workflows" to "Proactive response and alert triaging" and removed the statement "However, for the management account, you must manually create the service-linked role to enable monitoring" as this is no longer applicable. | August 4, 2026 |
@@ -57,7 +58,7 @@ The following table describes important additions to the AWS Security Incident R
 
 |  Change  |  Description  |  Date  |
 | --- | --- | --- |
-| Cancel Membership | Updated [ cancel membership page to indicate that the membership and service will end immediately upon cancellation and not as the end of the billing cycle.](https://docs.aws.amazon.com//security-ir/latest/userguide/cancel-membership.html) | November 20, 2025 |
+| Cancel Membership | Updated [ cancel membership page to indicate that the membership and service will end immediately upon cancellation and not as the end of the billing cycle.](https://docs.aws.amazon.com/security-ir/latest/userguide/cancel-membership.html) | November 20, 2025 |
 | AWS Managed Policies | Added [ update cases, create case comments, list cases, list case comments to the list of actions that the service provides.](https://docs.aws.amazon.com/security-ir/latest/userguide/aws-managed-policies.html#AWSSecurityIncidentResponseServiceRolePolicy) | November 19, 2025 |
 | Using service-linked roles | Added [ update cases, create case comments, list cases, list case comments to the list of actions that the service provides.](https://docs.aws.amazon.com/security-ir/latest/userguide/using-service-linked-roles.html) | November 19, 2025 |
 | Communication Preferences | Created and Updated [Added Communications Preferences section for new feature documentation.](https://docs.aws.amazon.com/security-ir/latest/userguide/communication-preferences.html) | November 12, 2025 |

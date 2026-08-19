@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon WorkSpaces Thin Client provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="thinclient-GetDevice"></a>[GetDevice](https://docs.aws.amazon.com/workspaces-thin-client/latest/api/API_GetDevice.html) | Get devices | Read |

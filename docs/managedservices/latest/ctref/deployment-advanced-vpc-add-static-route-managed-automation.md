@@ -14,8 +14,6 @@ Create a static route on your route table inside a VPC.
 ## Change Type Details
 <a name="ct-06bwg93ukgg8t-DAVa-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-06bwg93ukgg8t |

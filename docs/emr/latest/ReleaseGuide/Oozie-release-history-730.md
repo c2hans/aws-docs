@@ -18,8 +18,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/Oozie-release-hi
 ## Amazon EMR 7.3.0 - New configurations
 <a name="Oozie-release-history-changes-730-new-configs"></a>
 
-****
-
 | Classification | Name | Default | Description |
 | --- | --- | --- | --- |
 | oozie-site | oozie.email.smtp.ssl.protocols |  | String property that has the supported protocols enumerated separate by space. The default empty value has no effect. e.g. "TLSv1 TLSv1.1 TLSv1.2" |

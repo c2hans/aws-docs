@@ -23,8 +23,6 @@ Amazon Quick is currently supported in the following AWS Regions. The following 
 **Note**
 \*Only Quick Sight features are supported in these regions.
 
-****
-
 | Region name | Region code | Website for user access | API endpoints (HTTPS) | IP address range for data source connectivity |
 | --- | --- | --- | --- | --- |
 | US East (Ohio)\* | us-east-2 |  https://us-east-2.quicksight.aws.amazon.com  |  quicksight.us-east-2.amazonaws.com  | 52.15.247.160/27 |
@@ -53,6 +51,8 @@ Amazon Quick is currently supported in the following AWS Regions. The following 
 | AWS GovCloud (US-West)\* | gov-west-1 |  https://quicksight.us-gov-west-1.amazonaws.com  |  quicksight.us-gov-west-1.amazonaws.com  | 160.1.180.32/27 |
 | Israel (Tel Aviv)\* | il-central-1 |  https://il-central-1.quicksight.aws.amazon.com  |  quicksight.il-central-1.amazonaws.com  | 51.17.195.32/27 |
 | Middle East (UAE)\* | me-central-1 |  https://me-central-1.quicksight.aws.amazon.com  |  quicksight.me-central-1.amazonaws.com  | 51.112.11.224/27 |
+
+If your IAM Identity Center instance is replicated to multiple Regions, you can create your Quick Enterprise subscription in an active additional Region. For more information, see [Set up Amazon Quick with IAM Identity Center multi-Region](setting-up-sso.md#idc-multi-region).
 
 ## Supported AWS Regions for Amazon Q in Quick
 <a name="regions-aqs"></a>

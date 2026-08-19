@@ -187,6 +187,6 @@ You are all set for working with the message streaming APIs.
 
 1. To verify it is working, check that messages are published to the SNS topic you created. You can do this using Amazon CloudWatch metrics. For instructions, see [Monitoring Amazon SNS topics using CloudWatch](https://docs.aws.amazon.com/sns/latest/dg/sns-monitoring-using-cloudwatch.html).
 
-1. Because SNS has [limited retention](https://aws.amazon.com/blogs//aws/sns-ttl-control/), we recommend that you set up [Amazon Simple Queue Service (Amazon SQS)](https://aws.amazon.com/sqs/) [Amazon Kinesis](https://aws.amazon.com/kinesis/), or another service to retain messages.
+1. Because SNS has [limited retention](https://aws.amazon.com/blogs/aws/sns-ttl-control/), we recommend that you set up [Amazon Simple Queue Service (Amazon SQS)](https://aws.amazon.com/sqs/) [Amazon Kinesis](https://aws.amazon.com/kinesis/), or another service to retain messages.
 
 1. Using [StopContactStreaming](https://docs.aws.amazon.com/connect/latest/APIReference/API_StopContactStreaming.html) is optional and not required if the chats are being [disconnected](disconnect-hang-up.md) through a contact flow, or if the customer disconnects the chat. However, `StopContactStreaming` provides the option to stop the message streaming on the SNS topic, even if the chat is active and ongoing.

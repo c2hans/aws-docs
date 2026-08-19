@@ -27,7 +27,7 @@ The following differences apply to AWS Outposts:
 ## Documentation
 <a name="govcloud-op-docs"></a>
 
- [AWS Outposts documentation](https://docs.aws.amazon.com//outposts/?id=docs_gateway).
+ [AWS Outposts documentation](https://docs.aws.amazon.com/outposts/?id=docs_gateway).
 
 ## Export-controlled content
 <a name="govcloud-op-itar"></a>

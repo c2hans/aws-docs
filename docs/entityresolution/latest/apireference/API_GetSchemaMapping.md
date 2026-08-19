@@ -83,7 +83,7 @@ Type: Boolean
  ** [mappedInputFields](#API_GetSchemaMapping_ResponseSyntax) **   <a name="API-GetSchemaMapping-response-mappedInputFields"></a>
 A list of `MappedInputFields`. Each `MappedInputField` corresponds to a column the source data table, and contains column name plus additional information AWS Entity Resolution uses for matching.
 Type: Array of [SchemaInputAttribute](API_SchemaInputAttribute.md) objects
-Array Members: Minimum number of 2 items. Maximum number of 35 items.
+Array Members: Minimum number of 2 items. Maximum number of 60 items.
 
  ** [schemaArn](#API_GetSchemaMapping_ResponseSyntax) **   <a name="API-GetSchemaMapping-response-schemaArn"></a>
 The ARN (Amazon Resource Name) that AWS Entity Resolution generated for the SchemaMapping.

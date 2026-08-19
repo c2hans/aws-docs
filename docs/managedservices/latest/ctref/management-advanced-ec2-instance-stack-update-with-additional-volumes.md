@@ -14,8 +14,6 @@ Use to modify the properties of an EC2 instance created using CT id ct-1aqsjf86w
 ## Change Type Details
 <a name="ct-1o1x2itfd6rk8-MAEu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1o1x2itfd6rk8 |

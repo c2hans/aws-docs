@@ -28,6 +28,9 @@ Create a denied topic with the following parameters, which your guardrail uses t
 + Don't define negative topics or exceptions. For example, **All contents except medical information** or **Contents not containing medical information** are negative definitions of a topic and must not be used.
 + Don't use denied topics to capture entities or words. For example, **Statement or questions containing the name of a person "X"** or **Statements with a competitor name Y**. The topic definitions represent a theme or a subject and guardrails evaluates an input contextually. Topic filtering should not be used to capture individual words or entity types. For more information, see [Remove PII from conversations by using sensitive information filters](guardrails-sensitive-filters.md), or [Remove a specific list of words and phrases from conversations with word filters](guardrails-word-filters.md) for these use cases.
 
+**Note**
+The order in which the topics are configured can result in varying evaluation outcomes. For example, the same prompt may be blocked under one ordering and allowed under another.
+
 ## Add denied topics to your guardrail
 <a name="guardrails-denied-topics-configure"></a>
 

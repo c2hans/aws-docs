@@ -11,8 +11,6 @@ At this point, the software is installed but it is not yet enabled. To begin usi
 
 This table provides the steps for installing a license. Detailed instructions for each step follow.
 
-****
-
 | Step | Where to Perform Step | Start Step With | Finish Step With |
 | --- | --- | --- | --- |
 | Step a: Retrieve Activation Code | Your workstation | Activation email | Activation code |

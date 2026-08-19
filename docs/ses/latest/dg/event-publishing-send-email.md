@@ -11,8 +11,6 @@ To publish events associated with an email, you must provide the name of the con
 
 You provide this information to Amazon SES as either parameters to the email sending API, Amazon SES-specific email headers, or custom headers in your MIME message. The method you choose depends on which email sending interface you use, as shown in the following table.
 
-****
-
 | Email Sending Interface | Ways to Publish Events |
 | --- | --- |
 | `SendEmail` | API parameters |

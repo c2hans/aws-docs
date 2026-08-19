@@ -25,8 +25,6 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_lambda-actions-as-permissions).
 
-****
-
 - **   AddEventSource  **
   - **SDK client:** lambda
   - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)
@@ -826,8 +824,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
 
-****
-
 - **   [AddLayerVersionPermission](https://docs.aws.amazon.com/lambda/latest/dg/API_AddLayerVersionPermission.html)  **
   - **Description:** Grants permission to add permissions to the resource-based policy of a version of an AWS Lambda layer
   - **Resource types (\*required):** [layerVersion\*](#list_lambda-resource-layerVersion)
@@ -1505,8 +1501,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 The following actions are defined by AWS Lambda but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 - **   [ConnectMicrovm](https://docs.aws.amazon.com/lambda/latest/dg/lambda-permissions.html)  **
   - **Description:** Grants permission to connect to a Lambda MicroVM via HTTP (VPC Endpoint only)
   - **Resource types (\*required):**
@@ -1548,8 +1542,6 @@ The following actions are defined by AWS Lambda but are not directly invocable t
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
 
-****
-
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
 |  [capacityProvider](https://docs.aws.amazon.com/lambda/latest/dg/lambda-api-permissions-ref.html)  | arn:${Partition}:lambda:${Region}:${Account}:capacity-provider:${CapacityProviderName} | [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_) |
@@ -1568,8 +1560,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_lambda-policy-keys"></a>
 
 AWS Lambda defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

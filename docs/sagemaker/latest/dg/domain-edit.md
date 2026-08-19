@@ -34,7 +34,7 @@ You can edit the settings of a domain from the SageMaker AI console or the AWS C
 ## AWS CLI
 <a name="domain-edit-cli"></a>
 
- Run the following command from the terminal of your local machine to update a domain from the AWS CLI. For more information about the structure of `default-user-settings`, see [CreateDomain](https://docs.aws.amazon.com//sagemaker/latest/APIReference/API_CreateDomain.html#API_CreateDomain_RequestSyntax).
+ Run the following command from the terminal of your local machine to update a domain from the AWS CLI. For more information about the structure of `default-user-settings`, see [CreateDomain](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateDomain.html#API_CreateDomain_RequestSyntax).
 
 ```
 aws sagemaker update-domain \

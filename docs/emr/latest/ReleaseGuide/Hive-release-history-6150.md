@@ -8,8 +8,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/Hive-release-his
 ## Amazon EMR 6.15.0 - Hive changes
 <a name="Hive-release-history-changes-6150"></a>
 
-****
-
 | Type | Description |
 | --- | --- |
 | Feature | Support for [TEZ-4397](https://issues.apache.org/jira/browse/TEZ-4397) – For Tez asynchronous split opening, Hive now supports the Tez configs described in [Tez asynchronous split opening](tez-configure.md#tez-configure-async). |

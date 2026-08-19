@@ -125,8 +125,6 @@ If you prefer working with Git through a visual interface, you can clone the rem
 
 Complete one of the following sets of procedures based on your type of AWS Cloud9 development environment.
 
-****
-
 |  **Environment type**  |  **Follow these procedures**  |
 | --- | --- |
 | EC2 environment |  1.  From a terminal session in the IDE, run the following two commands: <pre>git config --global credential.helper '!aws codecommit credential-helper $@'<br />git config --global credential.UseHttpPath true</pre> <br />For more information, see [Step 2: Configure the AWS CLI Credential Helper On Your AWS Cloud9 EC2 Development Environment](https://docs.aws.amazon.com/codecommit/latest/userguide/setting-up-ide-c9.html#setting-up-ide-c9-credentials) in *Integrate AWS Cloud9 with AWS CodeCommit* in the *AWS CodeCommit User Guide*. <br />2.  Skip ahead to [Step 4: Clone the Remote Repository into Your Environment](#sample-codecommit-clone-repo) later in this topic.   |

@@ -14,8 +14,6 @@ Use to create an Amazon Elastic Compute Cloud (EC2) instance.
 ## Change Type Details
 <a name="ct-14027q0sjyt1h-DAEc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-14027q0sjyt1h |

@@ -7,6 +7,8 @@ source_url: https://docs.aws.amazon.com/signin/latest/userguide/federated-identi
 
 A federated identity is a user that can access secure AWS account resources with external identities. External identities can come from a corporate identity store (such as LDAP or Windows Active Directory) or from a third party (such as Login in with Amazon, Facebook, or Google). Federated identities don't sign in with the AWS Management Console or AWS access portal. The type of external identity in use determines how federated identities sign in.
 
+This sign-in method is only supported for accounts created with Sign up for AWS (advanced). For more information, see [Compare sign-up options](https://docs.aws.amazon.com/accounts/latest/reference/sign-up-for-aws.html) in the *AWS Account Management Reference Guide*.
+
 Administrators must create a custom URL that includes `https://signin.aws.amazon.com/federation`. For more information, see [ Enabling custom identity broker access to the AWS Management Console](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_enable-console-custom-url.html).
 
 **Note**

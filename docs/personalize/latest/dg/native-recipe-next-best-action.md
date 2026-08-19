@@ -79,7 +79,7 @@ To use the Next-Best-Action recipe, you must create the following datasets:
 
   These action interactions must be present at the latest solution version training, and must occur within a span of 6 weeks from the latest interaction timestamp in the Action interactions dataset.
 
-   For information about the action interactions data you can import, see [Action interaction data](action-interactions-datasets.md). For information about recording action interaction events, see [Recording real-time action interaction eventsRecording action interaction events](recording-action-interaction-events.md).
+   For information about the action interactions data you can import, see [Action interaction data](action-interactions-datasets.md). For information about recording action interaction events, see [Recording real-time action interaction events](recording-action-interaction-events.md).
 **Note**
  With Next-Best-Action, Amazon Personalize doesn't use impressions data or contextual metadata in an Action interactions dataset.
 + Users: Amazon Personalize uses any data in your Users dataset to better understand your users and their interests. You can also use data in a Users dataset to filter action recommendations. For information about the user data you can import, see [User metadata](users-datasets.md).

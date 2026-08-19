@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon Route 53 Recovery Readiness provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="route53-recovery-readiness-GetArchitectureRecommendations"></a>[GetArchitectureRecommendations](https://docs.aws.amazon.com/recovery-readiness/latest/api/recoverygroups-recoverygroupname-architecturerecommendations.html) | Get architecture recommendations for a recovery group | Read |

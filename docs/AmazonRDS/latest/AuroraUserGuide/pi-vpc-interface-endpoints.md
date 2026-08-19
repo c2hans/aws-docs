@@ -56,9 +56,9 @@ The following is an example of a custom endpoint policy. When you attach this po
          "Principal":"*",
          "Effect":"Allow",
          "Action":[
-            "rds:CreatePerformanceAnalysisReport",
-            "rds:DeletePerformanceAnalysisReport",
-            "rds:GetPerformanceAnalysisReport"
+            "pi:CreatePerformanceAnalysisReport",
+            "pi:DeletePerformanceAnalysisReport",
+            "pi:GetPerformanceAnalysisReport"
          ],
          "Resource":"*"
       }

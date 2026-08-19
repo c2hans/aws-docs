@@ -11,7 +11,7 @@ The following outlines how you can get started with IAM Identity Center.
 
    When you [enable IAM Identity Center](enable-identity-center.md), you choose between two types of IAM Identity Center instances. These types are: [*organization instances*](organization-instances-identity-center.md) (recommended) and [*account instances*](account-instances-identity-center.md). To learn more about the different capabilities of these instance types, see [organization and account instances of IAM Identity Center](identity-center-instances.md).
 **Note**
-After IAM Identity Center is enabled, you can sign in and open the [IAM Identity Center console ](https://console.aws.amazon.com//singlesignon/) by doing either of the following:
+After IAM Identity Center is enabled, you can sign in and open the [IAM Identity Center console ](https://console.aws.amazon.com/singlesignon/) by doing either of the following:
 **Organization instance** - Sign in to AWS using credentials with administrative permissions in the management account.
 **Account instance** - Sign in to AWS using credentials with administrative permissions in the AWS account where IAM Identity Center is enabled.
 
@@ -26,7 +26,7 @@ To take advantage of a multi-Region setup, you must use an external identity pro
 
 1. **Set up user access to AWS accounts (organization instance only)**
 
-   If you’re using an organization instance of IAM Identity Center, you can [assign user or group access to AWS accounts](https://docs.aws.amazon.com//singlesignon/latest/userguide/assignusers.html), using [permission sets](https://docs.aws.amazon.com//singlesignon/latest/userguide/permissionsetsconcept.html) to grant your users access to AWS accounts and resources.
+   If you’re using an organization instance of IAM Identity Center, you can [assign user or group access to AWS accounts](https://docs.aws.amazon.com/singlesignon/latest/userguide/assignusers.html), using [permission sets](https://docs.aws.amazon.com/singlesignon/latest/userguide/permissionsetsconcept.html) to grant your users access to AWS accounts and resources.
 
 1. **Set up user access to applications**
 
@@ -45,4 +45,4 @@ To take advantage of a multi-Region setup, you must use an external identity pro
 
    The AWS access portal is a web portal that provides your users with seamless access to all their assigned applications, AWS accounts, or both. New users in IAM Identity Center must activate their user credentials before they can sign in to the AWS access portal.
 
-   For information about how to sign in to the AWS access portal, see [Sign in to the AWS access portal](https://docs.aws.amazon.com//signin/latest/userguide/iam-id-center-sign-in-tutorial.html) in the *AWS Sign-In User Guide*. To learn about the sign-in process for the AWS access portal, see [Signing in to the AWS access portal](https://docs.aws.amazon.com//singlesignon/latest/userguide/howtosignin.html).
+   For information about how to sign in to the AWS access portal, see [Sign in to the AWS access portal](https://docs.aws.amazon.com/signin/latest/userguide/iam-id-center-sign-in-tutorial.html) in the *AWS Sign-In User Guide*. To learn about the sign-in process for the AWS access portal, see [Signing in to the AWS access portal](https://docs.aws.amazon.com/singlesignon/latest/userguide/howtosignin.html).

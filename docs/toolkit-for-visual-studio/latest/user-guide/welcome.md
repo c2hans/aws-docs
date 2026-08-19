@@ -20,14 +20,14 @@ The AWS Toolkit with Amazon Q contains the following features to enhance your de
 ### AWS Explorer
 <a name="explorer"></a>
 
-The AWS Explorer tool window is accessible in the IDE's **View** menu and enables you to interact with AWS services in Visual Studio. For a list of supported AWS services and features, see the [Working with AWS Services](https://docs.aws.amazon.com//toolkit-for-visual-studio/latest/user-guide/working-with-services.html) topic in this User Guide.
+The AWS Explorer tool window is accessible in the IDE's **View** menu and enables you to interact with AWS services in Visual Studio. For a list of supported AWS services and features, see the [Working with AWS Services](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/working-with-services.html) topic in this User Guide.
 
 ### Amazon Q
 <a name="amazonq-welcome"></a>
 
 Chat with Amazon Q Developer in Visual Studio to ask questions about building at AWS and for assistance with software development. Amazon Q can explain coding concepts and code snippets, generate code and unit tests, and improve code through debugging or refactoring.
 
-To install and set up Amazon Q for the Toolkit for Visual Studio, see the [Getting started](https://docs.aws.amazon.com//toolkit-for-visual-studio/latest/user-guide/getting-set-up.html) topic in this User Guide. To learn more about working with Amazon Q Developer, see the [Amazon Q Developer in IDEs](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/q-in-IDE.html) topic in the *Amazon Q Developer* User Guide. For detailed information about plans and pricing for Amazon Q, see the [Amazon Q pricing](http://aws.amazon.com/q/pricing) guide.
+To install and set up Amazon Q for the Toolkit for Visual Studio, see the [Getting started](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/getting-set-up.html) topic in this User Guide. To learn more about working with Amazon Q Developer, see the [Amazon Q Developer in IDEs](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/q-in-IDE.html) topic in the *Amazon Q Developer* User Guide. For detailed information about plans and pricing for Amazon Q, see the [Amazon Q pricing](http://aws.amazon.com/q/pricing) guide.
 
 ## Related Information
 <a name="related-info"></a>

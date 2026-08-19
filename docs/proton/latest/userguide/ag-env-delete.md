@@ -19,7 +19,7 @@ You can't delete an environment that has any associated component. To delete suc
 
 **In the list of environments.**
 
-1. In the [AWS Proton console](https://console.aws.amazon.com//proton/), choose **Environments**.
+1. In the [AWS Proton console](https://console.aws.amazon.com/proton/), choose **Environments**.
 
 1. In the list of environments, select the radio button to the left of the environment that you want to delete.
 
@@ -31,7 +31,7 @@ You can't delete an environment that has any associated component. To delete suc
 
 **In the environment detail page.**
 
-1. In the [AWS Proton console](https://console.aws.amazon.com//proton/), choose **Environments**.
+1. In the [AWS Proton console](https://console.aws.amazon.com/proton/), choose **Environments**.
 
 1. In the list of environments, choose the name of the environment that you want to delete.
 

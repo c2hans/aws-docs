@@ -11,7 +11,7 @@ You can receive AWS Health events directly in your chat clients, such as Slack a
 <a name="prerequisited-chat-bot-event-bridge"></a>
 
 Before you get started, you must have the following:
-+ A chat client configured with Amazon Q Developer in chat applications. You can configure Amazon Chime and Slack. For more information, see [Getting started with Amazon Q Developer in chat applications](https://docs.aws.amazon.com//chatbot/latest/adminguide/getting-started.html) in the *Amazon Q Developer in chat applications Administrator Guide*.
++ A chat client configured with Amazon Q Developer in chat applications. You can configure Amazon Chime and Slack. For more information, see [Getting started with Amazon Q Developer in chat applications](https://docs.aws.amazon.com/chatbot/latest/adminguide/getting-started.html) in the *Amazon Q Developer in chat applications Administrator Guide*.
 + An Amazon SNS topic that you created and to which you're subscribed. If you already have an SNS topic, you can use an existing one. For more information, see [Getting started with Amazon SNS](https://docs.aws.amazon.com/sns/latest/dg/sns-getting-started.html) in the *Amazon Simple Notification Service Developer Guide*.
 
 **To receive AWS Health events with Amazon Q Developer in chat applications**

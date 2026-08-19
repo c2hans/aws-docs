@@ -14,8 +14,6 @@ Modify EBS Volumes that are not attached to an EC2 instance in an Auto Scaling g
 ## Change Type Details
 <a name="ct-1wle0ai4en6km-MAEm-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1wle0ai4en6km |

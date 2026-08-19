@@ -183,7 +183,6 @@ To connect to Hive via JDBC requires you to download the JDBC driver and install
    1. For **Library**, click the **Select the JAR file(s)** icon.
 
    1. Select JAR files as shown in the following table.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-3x-hive.html)
 
    1. In the **Please select one driver** dialog box, select a driver according to the following table and click **OK**.

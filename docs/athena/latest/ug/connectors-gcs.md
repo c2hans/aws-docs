@@ -187,8 +187,6 @@ The following tables show the supported data types for CSV and for Parquet.
 ### CSV
 <a name="connectors-gcs-csv"></a>
 
-****
-
 | **Nature of data** | **Inferred Data Type** |
 | --- | --- |
 | Data looks like a number | BIGINT |
@@ -199,8 +197,6 @@ The following tables show the supported data types for CSV and for Parquet.
 
 ### Parquet
 <a name="connectors-gcs-parquet"></a>
-
-****
 
 | **PARQUET** | **Athena (Arrow)** |
 | --- | --- |

@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/SQLServer.Cip
 
 You can turn certain security protocols and ciphers on and off using DB parameters. The security parameters that you can configure (except for TLS version 1.2) are shown in the following table.
 
-****
-
 | DB parameter | Allowed values (default in bold) | Description |
 | --- | --- | --- |
 | rds.tls10 | default, enabled, disabled | TLS 1.0. |

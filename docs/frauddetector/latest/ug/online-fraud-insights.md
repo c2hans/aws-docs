@@ -28,16 +28,16 @@ Your dataset must contain the column header EVENT\_LABEL. This variable classifi
 ## Selecting data
 <a name="selecting-training-data-OFI"></a>
 
-See [Gather event data](https://docs.aws.amazon.com//frauddetector/latest/ug/create-event-dataset.html#gather-event-data) for information on selecting data for training your Online Fraud Insights model.
+See [Gather event data](https://docs.aws.amazon.com/frauddetector/latest/ug/create-event-dataset.html#gather-event-data) for information on selecting data for training your Online Fraud Insights model.
 
 The Online Fraud Insights training process samples and partitions historic data based on EVENT\_TIMESTAMP. There is no need to manually sample the data and doing so may negatively impact your model results.
 
 ## Event variables
 <a name="input-variables-OFI"></a>
 
-The Online Fraud Insights model requires at least two variables, apart from the required event metadata, that has passed [data validation](https://docs.aws.amazon.com//frauddetector/latest/ug/create-event-dataset.html#dataset-validation) for model training and allows up to 100 variables per model. Generally, the more variables you provide, the better the model can differentiate between fraud and legitimate events. While the Online Fraud Insights model can support dozens of variables, including custom variables, we recommend including IP address and email address because these variables are typically most effective at identifying the entity being evaluated.
+The Online Fraud Insights model requires at least two variables, apart from the required event metadata, that has passed [data validation](https://docs.aws.amazon.com/frauddetector/latest/ug/create-event-dataset.html#dataset-validation) for model training and allows up to 100 variables per model. Generally, the more variables you provide, the better the model can differentiate between fraud and legitimate events. While the Online Fraud Insights model can support dozens of variables, including custom variables, we recommend including IP address and email address because these variables are typically most effective at identifying the entity being evaluated.
 
 ## Validating data
 <a name="training-data-validations-OFI"></a>
 
-As part of the training process, Online Fraud Insights will validate the dataset for data quality issues that may impact model training. After validating the data, Amazon Fraud Detector will take appropriate action to build the best possible model. This includes issuing warnings for potential data quality issues, automatically removing variables that have data quality issues, or issuing an error and stopping the model training process. For more information, see [dataset validation](https://docs.aws.amazon.com//frauddetector/latest/ug/create-event-dataset.html#dataset-validation).
+As part of the training process, Online Fraud Insights will validate the dataset for data quality issues that may impact model training. After validating the data, Amazon Fraud Detector will take appropriate action to build the best possible model. This includes issuing warnings for potential data quality issues, automatically removing variables that have data quality issues, or issuing an error and stopping the model training process. For more information, see [dataset validation](https://docs.aws.amazon.com/frauddetector/latest/ug/create-event-dataset.html#dataset-validation).

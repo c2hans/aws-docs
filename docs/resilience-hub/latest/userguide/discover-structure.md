@@ -29,7 +29,7 @@ Choose the AWS CloudFormation stacks that contain the resources you want to use 
 
 1. Choose stacks from the **Choose stacks** dropdown list that are associated with your AWS account and Region.
 
-   To use stacks that are in a different AWS account, different Region, or both, choose the right arrow adjacent to **Add stack outside of AWS Region** and enter the Amazon Resource Name (ARN) of the stack in the **Enter a stack ARN** box, and then choose **Add stack ARN**. For more information about ARNs, see [Amazon Resource Names (ARNs)](https://docs.aws.amazon.com//general/latest/gr/aws-arns-and-namespaces.html) in the *AWS General Reference*.
+   To use stacks that are in a different AWS account, different Region, or both, choose the right arrow adjacent to **Add stack outside of AWS Region** and enter the Amazon Resource Name (ARN) of the stack in the **Enter a stack ARN** box, and then choose **Add stack ARN**. For more information about ARNs, see [Amazon Resource Names (ARNs)](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html) in the *AWS General Reference*.
 
 ### Using AWS Resource Groups
 <a name="resource-groups-steps"></a>
@@ -42,7 +42,7 @@ Choose the AWS Resource Groups that contain the resources that you want to use i
 
 1. Choose resources from **Choose a resource group** dropdown list.
 
-   To use AWS Resource Groups that are in a different AWS account, different Region, or both, choose the right arrow adjacent to **Resource Group ARN:** and enter the Amazon Resource Name (ARN) of the AWS Resource Groups in the **Enter a resource group ARN** box, and then choose **Add resource Group ARN**. For more information about ARNs, see [Amazon Resource Names (ARNs)](https://docs.aws.amazon.com//general/latest/gr/aws-arns-and-namespaces.html) in the *AWS General Reference*.
+   To use AWS Resource Groups that are in a different AWS account, different Region, or both, choose the right arrow adjacent to **Resource Group ARN:** and enter the Amazon Resource Name (ARN) of the AWS Resource Groups in the **Enter a resource group ARN** box, and then choose **Add resource Group ARN**. For more information about ARNs, see [Amazon Resource Names (ARNs)](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html) in the *AWS General Reference*.
 
 ### Using myApplications applications
 <a name="myApplications-steps"></a>
@@ -96,7 +96,7 @@ For AWS Resilience Hub to assess your Amazon EKS clusters, you must manually add
 
 1. In **1. Select EKS clusters** section, choose the Amazon EKS clusters from the **Choose EKS clusters** dropdown list that are associated with your AWS account and Region.
 
-1. To use Amazon EKS clusters that are in a different AWS account, different Region, or both, choose the right arrow adjacent to **Add an EKS cluster within a different account or Region** and enter the Amazon Resource Name (ARN) of the Amazon EKS cluster in the **Enter an EKS ARN** box, and then choose **Add EKS ARN**. For more information about ARNs, see [Amazon Resource Names (ARNs)](https://docs.aws.amazon.com//general/latest/gr/aws-arns-and-namespaces.html) in the *AWS General Reference*.
+1. To use Amazon EKS clusters that are in a different AWS account, different Region, or both, choose the right arrow adjacent to **Add an EKS cluster within a different account or Region** and enter the Amazon Resource Name (ARN) of the Amazon EKS cluster in the **Enter an EKS ARN** box, and then choose **Add EKS ARN**. For more information about ARNs, see [Amazon Resource Names (ARNs)](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html) in the *AWS General Reference*.
 
    For more information about adding permissions to access cross-Region Amazon Elastic Kubernetes Service clusters, see [Enabling AWS Resilience Hub access to your Amazon Elastic Kubernetes Service cluster](enabling-eks-in-arh.md).
 

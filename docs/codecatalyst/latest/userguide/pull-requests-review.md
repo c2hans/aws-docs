@@ -10,7 +10,7 @@ Amazon CodeCatalyst is no longer open to new customers. Existing customers can c
 You can use the Amazon CodeCatalyst console to collaboratively review and comment on the changes included in a pull request. You can add comments to individual lines of code in the difference between the source and destination branches, or in the difference between revisions of the pull request. You can choose to create a summary of comments left on the code changes in the pull request to help you quickly understand the feedback left by other users. You can also choose to create a Dev Environment to work on code.
 
 **Note**
-**Powered by Amazon Bedrock**: AWS implements [automated abuse detection](https://docs.aws.amazon.com//bedrock/latest/userguide/abuse-detection.html). Because the **Write description for me**, **Create content summary**, **Recommend tasks**, **Use Amazon Q to create or add features to a project**, and **Assign issues to Amazon Q** feature with Amazon Q Developer Agent for software development features are built on Amazon Bedrock, users can take full advantage of the controls implemented in Amazon Bedrock to enforce safety, security, and the responsible use of artificial intelligence (AI).
+**Powered by Amazon Bedrock**: AWS implements [automated abuse detection](https://docs.aws.amazon.com/bedrock/latest/userguide/abuse-detection.html). Because the **Write description for me**, **Create content summary**, **Recommend tasks**, **Use Amazon Q to create or add features to a project**, and **Assign issues to Amazon Q** feature with Amazon Q Developer Agent for software development features are built on Amazon Bedrock, users can take full advantage of the controls implemented in Amazon Bedrock to enforce safety, security, and the responsible use of artificial intelligence (AI).
 
 **Tip**
 You can configure what pull request events you that will receive emails about as part of your profile. For more information, see [Sending Slack and email notifications from CodeCatalyst](notifications-manage.md).<a name="merge-base"></a>
@@ -59,7 +59,7 @@ You can quickly view how many files have changes in the pull request, and what f
 **Note**
 A workflow must be configured to generate reports in order for them to show up in your pull requests. For more information, see [Configuring quality reports in an action](test-config-action.md).
 
-1. To view a specific report, choose it from the list. For more information, see [Testing with workflowsTesting with workflows](test-workflow-actions.md).
+1. To view a specific report, choose it from the list. For more information, see [Testing with workflows](test-workflow-actions.md).
 
 1. If you are listed as a reviewer of this pull request and want to approve the changes, make sure that you are viewing the most recent revision, and then choose **Approve**.
 **Note**

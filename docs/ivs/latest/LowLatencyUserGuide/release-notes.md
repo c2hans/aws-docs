@@ -414,7 +414,7 @@ This document contains all Amazon IVS Low-Latency Streaming release notes, lates
 
 Server-side ad insertion enables you to monetize your streams with video ads. IVS SSAI integrates with AWS Elemental MediaTailor, giving you access to capabilities such as ad decisioning, audience targeting, and personalization. IVS provides an API operation to insert ad breaks into your live stream, allowing you to give creators or operators control over when ads run. Ads are stitched directly into the video stream, enabling a seamless viewing experience while avoiding complex client-side logic.
 
-See the new [SSAI](https://docs.aws.amazon.com//ivs/latest/LowLatencyUserGuide/server-side-ad-insertion.html) document in the *IVS Low-Latency Streaming User Guide*. For details of all documentation changes, see the [Document History](https://docs.aws.amazon.com//ivs/latest/LowLatencyUserGuide/doc-history.html) (both the User Guide and API Reference tables).
+See the new [SSAI](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/server-side-ad-insertion.html) document in the *IVS Low-Latency Streaming User Guide*. For details of all documentation changes, see the [Document History](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/doc-history.html) (both the User Guide and API Reference tables).
 
 ## April 16, 2026
 <a name="apr16-26-player-web-ll"></a>
@@ -1031,7 +1031,7 @@ We extended the supported regions for interface VPC (Virtual Private Cloud) endp
 ### Interface VPC Endpoints
 <a name="sep10-25-interface-vpc-endpoints-ll-desc"></a>
 
-New support for interface VPC (Virtual Private Cloud) endpoints enables you to establish a secure private connection between your Amazon VPC and IVS, for workloads that require secure, live video ingestion. This keeps your IVS ingest traffic within the AWS network and off the public internet. Interface VPC endpoints are powered by AWS PrivateLink, an AWS technology that enables private communication between AWS services, using an elastic network interface with private IPs in your Amazon VPC. See [Private Ingest](private-ingest-ll.md) in the *IVS Low-Latency Streaming User Guide* and [Private Ingest to Stages](https://docs.aws.amazon.com//ivs/latest/RealTimeUserGuide/rt-rtmp-publishing.html#private-ingest-stages) in the *IVS Real-Time Streaming User Guide*.
+New support for interface VPC (Virtual Private Cloud) endpoints enables you to establish a secure private connection between your Amazon VPC and IVS, for workloads that require secure, live video ingestion. This keeps your IVS ingest traffic within the AWS network and off the public internet. Interface VPC endpoints are powered by AWS PrivateLink, an AWS technology that enables private communication between AWS services, using an elastic network interface with private IPs in your Amazon VPC. See [Private Ingest](private-ingest-ll.md) in the *IVS Low-Latency Streaming User Guide* and [Private Ingest to Stages](https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/rt-rtmp-publishing.html#private-ingest-stages) in the *IVS Real-Time Streaming User Guide*.
 
 ## September 4, 2025
 <a name="sep04-25-broadcast-web-ll"></a>
@@ -1128,7 +1128,7 @@ New support for interface VPC (Virtual Private Cloud) endpoints enables you to e
 | Platform | Downloads and Changes |
 | --- | --- |
 | [Android player 1.43.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.43.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.43.0/android/)+  The SDK now supports using the system's default CookieManager for HTTP requests. To use this feature:   Set the default CookieManager before creating a Player instance.   If you are using `okhttp3:4.x` as an HTTP client, add ``okhttp-urlconnection`` as a dependency. No additional dependencies are required if you are using other HTTP clients.   Add the cookie to the default CookieManager.   <br />+  Bug fixes and stability improvements. <br />+  Support for Android 5 will be deprecated as of IVS Player 1.45.0.  |
-| [iOS Player 1.43.0](player-ios.md) | **Download:** [https://player.live-video.net/1.43.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.43.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.43.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.43.0/ios/)+  Using the Swift Package Manager is now the recommended way to integrate the Player SDK. See [Recommended: Integrate the Player SDK (Swift Package Manager)](https://docs.aws.amazon.com//ivs/latest/LowLatencyUserGuide/ios-getting-started.html#ios-integrate-sdk-swift) in the iOS Player Guide. <br />+  Bug fixes and stability improvements. <br />+  Support for iOS 13 is deprecated as of this release.  |
+| [iOS Player 1.43.0](player-ios.md) | **Download:** [https://player.live-video.net/1.43.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.43.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.43.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.43.0/ios/)+  Using the Swift Package Manager is now the recommended way to integrate the Player SDK. See [Recommended: Integrate the Player SDK (Swift Package Manager)](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/ios-getting-started.html#ios-integrate-sdk-swift) in the iOS Player Guide. <br />+  Bug fixes and stability improvements. <br />+  Support for iOS 13 is deprecated as of this release.  |
 
 #### Mobile SDK Size: Android
 <a name="player-mobile-1430-sdk-size-android"></a>
@@ -1883,7 +1883,7 @@ Multitrack video is a new, low-latency streaming paradigm supported by Amazon In
 
 Multitrack enables this to be done without requiring expensive, server-side transcoding, which is required to deliver ABR viewing experiences for single-track video streams.
 
-To get started, see [Multitrack Video](https://docs.aws.amazon.com//ivs/latest/LowLatencyUserGuide/multitrack-video.html). For details on the documentation changes, see the [Document History](doc-history.md) (both the User Guide and API Reference tables).
+To get started, see [Multitrack Video](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multitrack-video.html). For details on the documentation changes, see the [Document History](doc-history.md) (both the User Guide and API Reference tables).
 
 ## November 13, 2024
 <a name="nov13-24-broadcast-ai-ll"></a>
@@ -3099,7 +3099,7 @@ IVS customers can now control what renditions are generated for a stream when re
 + [Getting Started with IVS](getting-started.md) – In "Step 4: Create a Channel" > "Console Instructions," we updated screenshots and instructions.
 + [Auto-Record to Amazon S3](record-to-s3.md) – In "JSON Metadata Files," we added `latest_thumbnail` and updated `thumbnail`. In "Thumbnails" and "Discovering the Renditions of a Recording," we added rendition-resolution descriptions.
 + [Costs](costs.md) – In "Storing Recorded Video," we updated screenshots.
-+ [IVS API Reference](https://docs.aws.amazon.com//ivs/latest/LowLatencyAPIReference/):
++ [IVS API Reference](https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/):
   + In ThumbnailConfiguration, we added `resolution` and `storage`. This affects the CreateRecordingConfiguration request and response, GetRecordingConfiguration response, and GetStreamSession response.
   + In ThumbnailConfiguration, we changed the `targetIntervalSeconds` minimum from 5 to 1 and updated the "Important" note to say it applies only to `BASIC` channels.
   + We added the RenditionConfiguration object.
@@ -3172,7 +3172,7 @@ IVS customers can now control what renditions are generated for a stream when re
 
 IVS customers can now revoke the viewer session associated with an auth token, to prevent and stop playback using that token. For more information, see:
 + [Setting Up IVS Private Channels](private-channels.md) – We changed the "Token Schema" section and added "Revoke Viewer Sessions."
-+ [IVS API Reference](https://docs.aws.amazon.com//ivs/latest/LowLatencyAPIReference/API_Welcome.html) – We added two endpoints (StartViewerSessionRevocation and BatchStartViewerSessionRevocation) and two objects (BatchStartViewerSessionRevocationError and BatchStartViewerSessionRevocationViewerSession).
++ [IVS API Reference](https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_Welcome.html) – We added two endpoints (StartViewerSessionRevocation and BatchStartViewerSessionRevocation) and two objects (BatchStartViewerSessionRevocationError and BatchStartViewerSessionRevocationViewerSession).
 
 ## June 27, 2023
 <a name="jun27-23_2"></a>
@@ -3333,10 +3333,10 @@ The [Document History](doc-history.md) page lists related changes to the IVS Use
 <a name="multiple_hosts_health"></a>
 
 Now you can monitor the health of your IVS stages with multiple hosts. See:
-+ [Monitoring Stage Health](https://docs.aws.amazon.com//ivs/latest/RealTimeUserGuide/stage-health.html) – This is a new *Amazon IVS User Guide* page.
++ [Monitoring Stage Health](https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/stage-health.html) – This is a new *Amazon IVS User Guide* page.
 + [Using Amazon EventBridge with Amazon IVS](eventbridge.md) – We added two Stage Update events.
 + [IVS Service Quotas](service-quotas.md) – We added call-rate quotas for the new endpoints.
-+ [IVS Stage API Reference](https://docs.aws.amazon.com//ivs/latest/RealTimeAPIReference/Welcome.html) – We added five endpoints (GetParticipant, ListParticipants, GetStageSession, ListStageSessions, ListParticipantEvents) and five objects (Event, Participant, ParticipantSummary, StageSession, StageSessionSummary).
++ [IVS Stage API Reference](https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/Welcome.html) – We added five endpoints (GetParticipant, ListParticipants, GetStageSession, ListStageSessions, ListParticipantEvents) and five objects (Event, Participant, ParticipantSummary, StageSession, StageSessionSummary).
 
 ## May 1, 2023
 <a name="may01-23"></a>
@@ -3395,7 +3395,7 @@ Amazon IVS now supports RTMP (Real-Time Messaging Protocol) streaming, in additi
 
 RTMP streaming can be set up via:
 + IVS console – Use the **Custom configuration** button during initial channel setup or the **Enable RTMP ingest** toggle when modifying an existing channel.
-+ API – Use the new `insecureIngest` field in CreateChannel or UpdateChannel requests. See the [IVS API Reference](https://docs.aws.amazon.com//ivs/latest/LowLatencyAPIReference/API_Welcome.html).
++ API – Use the new `insecureIngest` field in CreateChannel or UpdateChannel requests. See the [IVS API Reference](https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_Welcome.html).
 
 For information on RTMP ingest endpoints, see [Set Up Streaming Software](getting-started-set-up-streaming.md), [Broadcast Android SDK Guide](broadcast-android.md), and [Broadcast iOS SDK Guide](broadcast-ios.md).
 
@@ -3427,7 +3427,7 @@ In [Generate and Sign Playback Tokens](private-channels-generate-tokens.md), we 
 
 This is the first release of new functionality: you can now combine video from multiple participants into one live stream. A *stage* is a virtual space where participants can exchange audio and video in real time. You can then broadcast a stage to channels to reach a larger audience, and you can build applications where audience members can be brought "on stage" to contribute to the live conversation. For details, see:
 + [Enabling Multiple Hosts on an IVS Stream](multiple-hosts.md) (new document)
-+ [Stage API Reference](https://docs.aws.amazon.com//ivs/latest/RealTimeAPIReference/) (new document)
++ [Stage API Reference](https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/) (new document)
 + [Service Quotas](service-quotas.md) (see "Amazon IVS Stage" endpoints and stage limits in Other Quotas > Amazon IVS)
 + Documentation changes for the simultaneous release of [ Amazon IVS Broadcast SDK 1.8.0](#mar23-23-broadcast-180-130)
 
@@ -3528,7 +3528,7 @@ The auto-record-to-S3 feature now supports [byte-range playlist](https://datatra
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Chat Client Messaging SDK 1.1.0](https://docs.aws.amazon.com//ivs/latest/ChatUserGuide/chat-sdk-android.html) | **Reference documentation: **[https://aws.github.io/amazon-ivs-chat-messaging-sdk-android/1.1.0/](https://aws.github.io/amazon-ivs-chat-messaging-sdk-android/1.1.0/)+  To support Kotlin Coroutines, we added new IVS Chat Messaging APIs in the com.amazonaws.ivs.chat.messaging.coroutines package. Also see the new Kotlin Coroutines tutorial; part 1 (of 2) is [Chat Rooms](https://docs.aws.amazon.com//ivs/latest/ChatUserGuide/chat-sdk-kotlin-tutorial-chat-rooms.html).  |
+| [Android Chat Client Messaging SDK 1.1.0](https://docs.aws.amazon.com/ivs/latest/ChatUserGuide/chat-sdk-android.html) | **Reference documentation: **[https://aws.github.io/amazon-ivs-chat-messaging-sdk-android/1.1.0/](https://aws.github.io/amazon-ivs-chat-messaging-sdk-android/1.1.0/)+  To support Kotlin Coroutines, we added new IVS Chat Messaging APIs in the com.amazonaws.ivs.chat.messaging.coroutines package. Also see the new Kotlin Coroutines tutorial; part 1 (of 2) is [Chat Rooms](https://docs.aws.amazon.com/ivs/latest/ChatUserGuide/chat-sdk-kotlin-tutorial-chat-rooms.html).  |
 
 #### Chat Client Messaging SDK Size: Android
 <a name="chat-110-sdk-size-android"></a>
@@ -3546,8 +3546,8 @@ The auto-record-to-S3 feature now supports [byte-range playlist](https://datatra
 | Platform | Downloads and Changes |
 | --- | --- |
 | [Web player 1.16.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.16.0/amazon-ivs-player.min.js](https://player.live-video.net/1.16.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.16.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.16.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.16.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.16.0/web/)+  Updated SDK documentation to note which methods are not supported on iOS mobile browsers.  |
-| [Android player 1.16.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.16.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.16.0/android/)+  Added the `setOrigin` method to enable inclusion of an `Origin` request header with playback requests. Also see in [Token Schema](https://docs.aws.amazon.com//ivs/latest/userguide/private-channels-generate-tokens.html#private-channels-tokens-schema) for the new `strict-origin-enforcement` field.  |
-| [iOS Player 1.16.0](player-ios.md) | **Download:** [https://player.live-video.net/1.16.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.16.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.16.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.16.0/ios/)+  Added the `setOrigin` method to enable inclusion of an `Origin` request header with playback requests. Also see in [Token Schema](https://docs.aws.amazon.com//ivs/latest/userguide/private-channels-generate-tokens.html#private-channels-tokens-schema) for the new `strict-origin-enforcement` field.  |
+| [Android player 1.16.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.16.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.16.0/android/)+  Added the `setOrigin` method to enable inclusion of an `Origin` request header with playback requests. Also see in [Token Schema](https://docs.aws.amazon.com/ivs/latest/userguide/private-channels-generate-tokens.html#private-channels-tokens-schema) for the new `strict-origin-enforcement` field.  |
+| [iOS Player 1.16.0](player-ios.md) | **Download:** [https://player.live-video.net/1.16.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.16.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.16.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.16.0/ios/)+  Added the `setOrigin` method to enable inclusion of an `Origin` request header with playback requests. Also see in [Token Schema](https://docs.aws.amazon.com/ivs/latest/userguide/private-channels-generate-tokens.html#private-channels-tokens-schema) for the new `strict-origin-enforcement` field.  |
 
 #### Mobile SDK Size: Android
 <a name="player-1160-sdk-size-android"></a>
@@ -3601,15 +3601,15 @@ When [Auto-Record to Amazon S3](record-to-s3.md) is enabled, HLS manifest files 
 <a name="chat-logging-ug"></a>
 
 This is the first release of new functionality. You can now create logging configurations to enable storage of messages sent to your chat rooms. For more information, see:
-+ [Chat Logging](https://docs.aws.amazon.com//ivs/latest/ChatUserGuide/chat-logging.html) - New page.
-+ [Getting Started with Chat](https://docs.aws.amazon.com//ivs/latest/ChatUserGuide/getting-started-chat.html) - Updated IAM permissions and added procedures for setting up chat logging.
-+ [Service Quotas](https://docs.aws.amazon.com//ivs/latest/ChatUserGuide/service-quotas.html) - new endpoints and logging configurations.
++ [Chat Logging](https://docs.aws.amazon.com/ivs/latest/ChatUserGuide/chat-logging.html) - New page.
++ [Getting Started with Chat](https://docs.aws.amazon.com/ivs/latest/ChatUserGuide/getting-started-chat.html) - Updated IAM permissions and added procedures for setting up chat logging.
++ [Service Quotas](https://docs.aws.amazon.com/ivs/latest/ChatUserGuide/service-quotas.html) - new endpoints and logging configurations.
 + CloudWatch – Added log-destination metrics.
 
   Oct 12, 2023 update: This CloudWatch document was deleted and the content was moved to [Monitoring IVS Low-Latency Streaming](stream-health.md).
 
-  Dec 28, 2023 update: Chat-related CloudWatch content was moved to [Monitoring Amazon IVS Chat](https://docs.aws.amazon.com//ivs/latest/ChatUserGuide/chat-health.html).
-+ [Chat API Reference](https://docs.aws.amazon.com//ivs/latest/ChatAPIReference) – Added a LoggingConfiguration resource and several data types and endpoints. For details see [Document History](https://docs.aws.amazon.com//ivs/latest/ChatUserGuide/doc-history.html#history-chat-api-reference).
+  Dec 28, 2023 update: Chat-related CloudWatch content was moved to [Monitoring Amazon IVS Chat](https://docs.aws.amazon.com/ivs/latest/ChatUserGuide/chat-health.html).
++ [Chat API Reference](https://docs.aws.amazon.com/ivs/latest/ChatAPIReference) – Added a LoggingConfiguration resource and several data types and endpoints. For details see [Document History](https://docs.aws.amazon.com/ivs/latest/ChatUserGuide/doc-history.html#history-chat-api-reference).
 
 ## November 9, 2022
 <a name="nov09-22"></a>
@@ -3619,7 +3619,7 @@ This is the first release of new functionality. You can now create logging confi
 
 | Platform | Downloads and Changes |
 | --- | --- |
-|  [JavaScript Chat Client Messaging SDK 1.0.2](https://docs.aws.amazon.com//ivs/latest/ChatUserGuide/chat-sdk-js.html)  | **Reference documentation:** [https://aws.github.io/amazon-ivs-chat-messaging-sdk-js/1.0.2/](https://aws.github.io/amazon-ivs-chat-messaging-sdk-js/1.0.2/)+  Fixed an issue that affected Firefox: clients erroneously received a socket error when they were disconnected from a chat room using the DisconnectUser endpoint.  |
+|  [JavaScript Chat Client Messaging SDK 1.0.2](https://docs.aws.amazon.com/ivs/latest/ChatUserGuide/chat-sdk-js.html)  | **Reference documentation:** [https://aws.github.io/amazon-ivs-chat-messaging-sdk-js/1.0.2/](https://aws.github.io/amazon-ivs-chat-messaging-sdk-js/1.0.2/)+  Fixed an issue that affected Firefox: clients erroneously received a socket error when they were disconnected from a chat room using the DisconnectUser endpoint.  |
 
 ## November 1, 2022
 <a name="nov01-22"></a>
@@ -3659,7 +3659,7 @@ This is the first release of new functionality. You can now create logging confi
 
 | Platform | Downloads and Changes |
 | --- | --- |
-|  [JavaScript Chat Client Messaging SDK 1.0.1](https://docs.aws.amazon.com//ivs/latest/ChatUserGuide/chat-sdk-js.html)  | **Reference documentation:** [https://aws.github.io/amazon-ivs-chat-messaging-sdk-js/1.0.1/](https://aws.github.io/amazon-ivs-chat-messaging-sdk-js/1.0.1/) |
+|  [JavaScript Chat Client Messaging SDK 1.0.1](https://docs.aws.amazon.com/ivs/latest/ChatUserGuide/chat-sdk-js.html)  | **Reference documentation:** [https://aws.github.io/amazon-ivs-chat-messaging-sdk-js/1.0.1/](https://aws.github.io/amazon-ivs-chat-messaging-sdk-js/1.0.1/) |
 
 ## October 6, 2022
 <a name="oct06-22"></a>
@@ -3771,8 +3771,8 @@ Today we began rolling out the changes documented in [Vertical Video Improvement
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Chat Client Messaging SDK 1.0.0](https://docs.aws.amazon.com//ivs/latest/ChatUserGuide/chat-sdk-android.html) | **Reference documentation: **[https://aws.github.io/amazon-ivs-chat-messaging-sdk-android/1.0.0/](https://aws.github.io/amazon-ivs-chat-messaging-sdk-android/1.0.0/) |
-| [iOS Chat Client Messaging SDK 1.0.0](https://docs.aws.amazon.com//ivs/latest/ChatUserGuide/chat-sdk-ios.html) | **Reference documentation: **[https://aws.github.io/amazon-ivs-chat-messaging-sdk-ios/1.0.0/](https://aws.github.io/amazon-ivs-chat-messaging-sdk-ios/1.0.0/) |
+| [Android Chat Client Messaging SDK 1.0.0](https://docs.aws.amazon.com/ivs/latest/ChatUserGuide/chat-sdk-android.html) | **Reference documentation: **[https://aws.github.io/amazon-ivs-chat-messaging-sdk-android/1.0.0/](https://aws.github.io/amazon-ivs-chat-messaging-sdk-android/1.0.0/) |
+| [iOS Chat Client Messaging SDK 1.0.0](https://docs.aws.amazon.com/ivs/latest/ChatUserGuide/chat-sdk-ios.html) | **Reference documentation: **[https://aws.github.io/amazon-ivs-chat-messaging-sdk-ios/1.0.0/](https://aws.github.io/amazon-ivs-chat-messaging-sdk-ios/1.0.0/) |
 
 #### Chat Client Messaging SDK Size: Android
 <a name="chat-100-sdk-size-android"></a>
@@ -3811,7 +3811,7 @@ This is the first release of new functionality. If your stream is configured for
 + Getting Started with Amazon IVS – We updated [Step 3: Create a Channel with Optional Recording](getting-started-create-channel.md), for console and CLI instructions.
 + Auto-Record to S3 – See the new section, [Merge Fragmented Streams](record-to-s3.md#r2s3-merge-fragmented-streams).
 + EventBridge – In [Examples: Recording State Change](eventbridge.md#eventbridge-examples-recording-state-change), `recording_session_id` and `recording_session_stream_ids` fields were added.
-+ [IVS API Reference](https://docs.aws.amazon.com//ivs/latest/LowLatencyAPIReference/) – We added the `recordingReconnectWindowSeconds` field to the CreateRecordingConfiguration request and the RecordingConfiguration object. This affects three responses (CreateRecordingConfiguration, GetRecordingConfiguration, and GetStreamSession).
++ [IVS API Reference](https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/) – We added the `recordingReconnectWindowSeconds` field to the CreateRecordingConfiguration request and the RecordingConfiguration object. This affects three responses (CreateRecordingConfiguration, GetRecordingConfiguration, and GetStreamSession).
 
 ## August 9, 2022
 <a name="aug09-22"></a>
@@ -3924,7 +3924,7 @@ There are three changes:
 
 1. (Affects `Standard` and `Basic` channels) Renditions for vertical input use a more conventional naming scheme based on width instead of height. For example, 360x640 input to a `Basic` channel has one output rendition named 360p.
 
-   This name appears in video playlists as the `NAME` attribute and in the user-facing quality selector ([example](https://docs.aws.amazon.com//ivs/latest/userguide/player-videojs.html#videojs-plugins)). The name also is used as the Amazon S3 directory name for recorded assets. For example, for 360x640 input, the quality selector and Auto-Record to Amazon S3 directory name is 360p60 (the old value was 640p60).
+   This name appears in video playlists as the `NAME` attribute and in the user-facing quality selector ([example](https://docs.aws.amazon.com/ivs/latest/userguide/player-videojs.html#videojs-plugins)). The name also is used as the Amazon S3 directory name for recorded assets. For example, for 360x640 input, the quality selector and Auto-Record to Amazon S3 directory name is 360p60 (the old value was 640p60).
 
 We are rolling out this improvement over time:
 + Now – Did you broadcast vertical input in the past six months? If not, we are enabling this change for your account now (specifically, over a 1-week period starting today). If yes, you will get a notification about this change in your account events section of the AWS Health Dashboard.
@@ -3974,17 +3974,17 @@ Oct 12, 2023 update: These documents were combined into [Monitoring IVS Low-Late
 <a name="apr26-22-ivs-chat"></a>
 
 This is the initial release of Amazon IVS Chat, a managed, live-chat feature to go alongside live video streams. New documentation is accessible from the [Amazon IVS documentation landing page](https://docs.aws.amazon.com/ivs/).
-+ Start with [Getting Started with Amazon IVS Chat](https://docs.aws.amazon.com//ivs/latest/ChatUserGuide/getting-started-chat.html).
++ Start with [Getting Started with Amazon IVS Chat](https://docs.aws.amazon.com/ivs/latest/ChatUserGuide/getting-started-chat.html).
 + In the *Amazon IVS Chat User Guide*:
-  + See [Chat Message Review Handler](https://docs.aws.amazon.com//ivs/latest/ChatUserGuide/chat-message-review-handler.html), a new page.
+  + See [Chat Message Review Handler](https://docs.aws.amazon.com/ivs/latest/ChatUserGuide/chat-message-review-handler.html), a new page.
   + Search for "chat" changes in Monitoring Amazon IVS with Amazon CloudWatch, Amazon IVS Security, and Amazon IVS Service Quotas.
 
     Oct 12, 2023 update: The CloudWatch document was deleted and the content was moved to [Monitoring IVS Low-Latency Streaming](stream-health.md).
 
-  Dec 28, 2023 update: All chat information was collected in a new [Chat User Guide](https://docs.aws.amazon.com//ivs/latest/ChatUserGuide/).
+  Dec 28, 2023 update: All chat information was collected in a new [Chat User Guide](https://docs.aws.amazon.com/ivs/latest/ChatUserGuide/).
 + The new **Amazon IVS Chat** section of the documentation landing page has two API References:
-  + [Chat API Reference](https://docs.aws.amazon.com//ivs/latest/ChatAPIReference/) – Control-plane API (HTTPS).
-  + [Chat Messaging API Reference](https://docs.aws.amazon.com//ivs/latest/chatmsgapireference/) – Data-plane API (WebSocket).
+  + [Chat API Reference](https://docs.aws.amazon.com/ivs/latest/ChatAPIReference/) – Control-plane API (HTTPS).
+  + [Chat Messaging API Reference](https://docs.aws.amazon.com/ivs/latest/chatmsgapireference/) – Data-plane API (WebSocket).
 
 As always, documentation changes are described in the Amazon IVS [Document History](doc-history.md).
 
@@ -4172,7 +4172,7 @@ This release allows you to enable/disable the recording of thumbnails for a live
   + We added a note to "Recording Contents" about modifying the `thumbnails` folder.
   + We added a new "Thumbnails" section.
   + We changed the information about the `thumbnails` and `path` fields in "JSON Metadata Files."
-+ [Amazon IVS API Reference](https://docs.aws.amazon.com//ivs/latest/LowLatencyAPIReference/) – We made several changes:
++ [Amazon IVS API Reference](https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/) – We made several changes:
   + New field `(thumbnailConfiguration`) in the RecordingConfiguration object. This in turn affects the CreateRecordingConfiguration request and response, GetRecordingConfiguration response, and GetStreamSession response.
   + New object: ThumbnailConfiguration.
 
@@ -4250,7 +4250,7 @@ Amazon IVS Stream Health lets you monitor the health of your live streams in nea
 
   Oct 12, 2023 update: This CloudWatch document was deleted and the content was moved to [Monitoring IVS Low-Latency Streaming](stream-health.md).
 +  [Using Amazon EventBridge with Amazon IVS](eventbridge.md) – We added two events, Session Created and Session Ended.
-+  [Amazon IVS API Reference](https://docs.aws.amazon.com//ivs/latest/LowLatencyAPIReference/) – Many changes:
++  [Amazon IVS API Reference](https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/) – Many changes:
   + Two new endpoints: GetStreamSession and ListStreamSessions.
   + Seven new objects: AudioConfiguration, IngestConfiguration, StreamEvent, StreamFilters, StreamSession, StreamSessionSummary, and VideoConfiguration.
   + New field (`streamID`) in the Stream and StreamSummary objects. This in turn affects the GetStream and ListStreams responses.
@@ -4474,7 +4474,7 @@ To improve player stability, additional checks were implemented to ignore API ca
 ### Service Quotas Integration with CloudWatch Usage Metrics
 <a name="service-quotas-cloudwatch-integration"></a>
 
-You can use CloudWatch to proactively manage your service quotas, via CloudWatch *usage metrics*. See [Amazon IVS Service Quotas](https://docs.aws.amazon.com//ivs/latest/userguide/service-quotas.html#quotas-cloudwatch-integration).
+You can use CloudWatch to proactively manage your service quotas, via CloudWatch *usage metrics*. See [Amazon IVS Service Quotas](https://docs.aws.amazon.com/ivs/latest/userguide/service-quotas.html#quotas-cloudwatch-integration).
 
 ## April 13, 2021
 <a name="apr13-21"></a>

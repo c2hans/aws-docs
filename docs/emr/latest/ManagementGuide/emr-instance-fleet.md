@@ -74,7 +74,7 @@ Available in Amazon EMR 5.12.1 and later, you have the option to launch Spot and
 
 For more information about Spot Instances, see [Spot Instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-spot-instances.html) in the Amazon EC2 User Guide. For more information about On-Demand Instances, see [On-Demand Instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-on-demand-instances.html) in the Amazon EC2 User Guide.
 
-If you choose to launch On-Demand Instance fleets with the lowest-price allocation strategy, you have the option to use capacity reservations. Capacity reservation options can be set using the Amazon EMR API `RunJobFlow`. Capacity reservations require additional service role permissions which you must add to use these options. See [Allocation strategy permissionsRequired IAM permissions for an allocation strategy](#create-cluster-allocation-policy). Note that you can't customize capacity reservations in the new console.
+If you choose to launch On-Demand Instance fleets with the lowest-price allocation strategy, you have the option to use capacity reservations. Capacity reservation options can be set using the Amazon EMR API `RunJobFlow`. Capacity reservations require additional service role permissions which you must add to use these options. See [Allocation strategy permissions](#create-cluster-allocation-policy). Note that you can't customize capacity reservations in the new console.
 
 ### **Multiple subnet (Availability Zones) options**
 <a name="emr-multiple-subnet-options"></a>
@@ -135,7 +135,7 @@ The lowest-price allocation strategy launches Spot Instances from the lowest pri
 ### Allocation strategy permissions
 <a name="emr-instance-fleet-allocation-strategy-permissions"></a>
 
-The allocation strategy option requires several IAM permissions that are automatically included in the default Amazon EMR service role and Amazon EMR managed policy (`EMR_DefaultRole` and `AmazonEMRServicePolicy_v2`). If you use a custom service role or managed policy for your cluster, you must add these permissions before you create the cluster. For more information, see [Allocation strategy permissionsRequired IAM permissions for an allocation strategy](#create-cluster-allocation-policy).
+The allocation strategy option requires several IAM permissions that are automatically included in the default Amazon EMR service role and Amazon EMR managed policy (`EMR_DefaultRole` and `AmazonEMRServicePolicy_v2`). If you use a custom service role or managed policy for your cluster, you must add these permissions before you create the cluster. For more information, see [Allocation strategy permissions](#create-cluster-allocation-policy).
 
 Optional On-Demand Capacity Reservations (ODCRs) are available when you use the On-Demand allocation strategy option. Capacity reservation options let you specify a preference for using reserved capacity first for Amazon EMR clusters. You can use this to ensure that your critical workloads use the capacity you have already reserved using open or targeted ODCRs. For non-critical workloads, the capacity reservation preferences let you specify whether reserved capacity should be consumed.
 

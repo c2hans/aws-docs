@@ -15,4 +15,4 @@ $ aws iot detach-thing-principal \
 
 The **DetachThingPrincipal** command doesn't produce any output.
 
-For more information, see [detach-thing-principal](https://docs.aws.amazon.com//iot/latest/apireference/API_DetachThingPrincipal.html) from the *AWS IoT Core API Reference*.
+For more information, see [detach-thing-principal](https://docs.aws.amazon.com/iot/latest/apireference/API_DetachThingPrincipal.html) from the *AWS IoT Core API Reference*.

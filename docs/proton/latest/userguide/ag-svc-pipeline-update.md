@@ -42,7 +42,7 @@ For more information on cancelling a service pipeline deployment, see [CancelSer
 
 **Update a service pipeline using the console as described in the following steps.**
 
-1. In the [AWS Proton console](https://console.aws.amazon.com//proton/), choose **Services**.
+1. In the [AWS Proton console](https://console.aws.amazon.com/proton/), choose **Services**.
 
 1. In the list of services, choose the name of the service that you want to update the pipeline for.
 
@@ -159,7 +159,7 @@ Response:
 
 **Cancel a service pipeline deployment using the console as shown in the following steps.**
 
-1. In the [AWS Proton console](https://console.aws.amazon.com//proton/), choose **Services** in the navigation pane.
+1. In the [AWS Proton console](https://console.aws.amazon.com/proton/), choose **Services** in the navigation pane.
 
 1. In the list of services, choose the name of the service that has the pipeline with the deployment update that you want to cancel.
 

@@ -23,7 +23,7 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/security-os-upg
 
  Neptune DB instances occasionally require operating system updates. Amazon Neptune upgrades the operating system to a newer version to improve database performance and customers overall security posture. Typically, the updates take about 10 minutes. Operating system updates don't change the DB engine version or DB instance class of a DB instance.
 
- To be notified when a new optional update becomes available, you can subscribe to `RDS-EVENT-0230` in the security patching event category. For information about subscribing to Amazon Neptune events, see [ Subscribing to Neptune event notification](https://docs.aws.amazon.com//neptune/latest/userguide/events-subscribing.html).
+ To be notified when a new optional update becomes available, you can subscribe to `RDS-EVENT-0230` in the security patching event category. For information about subscribing to Amazon Neptune events, see [ Subscribing to Neptune event notification](https://docs.aws.amazon.com/neptune/latest/userguide/events-subscribing.html).
 
 **Important**
  Your Amazon Neptune DB instance will be taken offline during the operating system upgrade. You can minimize cluster downtime by having a multi-instance cluster. If you do not have a multi-instance cluster then you can choose to temporarily create one by adding secondary instance(s) to perform this maintenance, then deleting the additional reader instance(s) once the maintenance is completed (regular charges for the secondary instance will apply).

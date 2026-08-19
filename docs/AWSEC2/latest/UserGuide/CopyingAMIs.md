@@ -9,7 +9,7 @@ When you need a consistent Amazon EC2 instance configuration across multiple Reg
 
 The method you use to copy an AMI depends on whether you're copying across Regions *within the same [partition](https://docs.aws.amazon.com/glossary/latest/reference/glos-chap.html#partition)* or *across different partitions*:
 + **Cross-Region copying** – Copy AMIs across Regions *within the same partition*, for example, across the Regions within the commercial partition. This copy method is described in this topic.
-+ **Cross-partition copying** – Copy AMIs *from one partition to another partition*, for example, from the commercial partition to the AWS GovCloud (US) partition. For information about this copy method, see [Store and restore an AMIAllowed AMIs](ami-store-restore.md).
++ **Cross-partition copying** – Copy AMIs *from one partition to another partition*, for example, from the commercial partition to the AWS GovCloud (US) partition. For information about this copy method, see [Store and restore an AMI](ami-store-restore.md).
 + **Cross-account copying** – Create a copy of an AMI that another AWS account has [shared with your AWS account](sharingamis-explicit.md). This copy method is described in this topic.
 
 The time taken to complete the copy operation for cross-Region and cross-account AMI copying is on a best-effort basis. If you need control over the completion time, you can specify a completion window ranging from 15 minutes to 48 hours, ensuring your AMI is copied within your required timeframe. Additional charges apply for time-based AMI copy operations. For more information, see [Time-based copies](https://docs.aws.amazon.com/ebs/latest/userguide/time-based-copies.html) in the *Amazon EBS User Guide*.

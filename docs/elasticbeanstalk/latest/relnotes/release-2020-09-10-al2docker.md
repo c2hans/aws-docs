@@ -33,8 +33,6 @@ The following tables list all supported platform branches for each platform. Onl
 ### Docker
 <a name="release-2020-09-10-al2docker.platforms.docker"></a>
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Docker Version  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Docker AL2 version 3.1.2** <br /> * 64bit Amazon Linux 2 v3.1.2 running Docker *  | 2.0.20200905 | 19.03.6-ce | nginx 1.18.0 |

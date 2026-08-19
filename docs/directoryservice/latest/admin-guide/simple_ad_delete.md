@@ -13,7 +13,7 @@ When an AD Connector is deleted, your on-premises directory remains intact. All 
 
 **To delete a directory**
 
-1. In the [AWS Directory Service console](https://console.aws.amazon.com/directoryservicev2/) navigation pane, select **Directories**. Ensure you are in the AWS Region where your Active Directory is deployed. For more information, see [Choosing a Region](https://docs.aws.amazon.com//awsconsolehelpdocs/latest/gsg/select-region.html).
+1. In the [AWS Directory Service console](https://console.aws.amazon.com/directoryservicev2/) navigation pane, select **Directories**. Ensure you are in the AWS Region where your Active Directory is deployed. For more information, see [Choosing a Region](https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/select-region.html).
 
 1. Ensure that no AWS applications are enabled for the directory you intend to delete. Enabled AWS applications will prevent you for deleting your AWS Managed Microsoft AD or Simple AD.
 
@@ -26,7 +26,7 @@ When an AD Connector is deleted, your on-premises directory remains intact. All 
       + To disable Amazon WorkMail, you must remove the Amazon WorkMail organization in the Amazon WorkMail console. For more information, see [Remove an organization](https://docs.aws.amazon.com/workmail/latest/adminguide/remove_organization.html) in the *Amazon WorkMail Administrator Guide*.
       + To disable Amazon FSx for Windows File Server, you must remove the Amazon FSx file system from the domain. For more information, see [Working with Active Directory in FSx for Windows File Server](https://docs.aws.amazon.com/fsx/latest/WindowsGuide/aws-ad-integration-fsxW.html) in the *Amazon FSx for Windows File Server User Guide*.
       + To disable Amazon Relational Database Service, you must remove the Amazon RDS instance from the domain. For more information, see [Managing a DB instance in a domain](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_SQLServerWinAuth.html#USER_SQLServerWinAuth.Managing) in the *Amazon RDS User Guide*.
-      + To disable AWS Client VPN Service, you must remove the directory service from the Client VPN Endpoint. For more information, see [Work with Client VPN](https://docs.aws.amazon.com//vpn/latest/clientvpn-admin/cvpn-working.html) in the *AWS Client VPN Administrator Guide*.
+      + To disable AWS Client VPN Service, you must remove the directory service from the Client VPN Endpoint. For more information, see [Work with Client VPN](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working.html) in the *AWS Client VPN Administrator Guide*.
       + To disable Connect Customer, you must delete the Connect Customer Instance. For more information, see [Delete your Connect Customer instance](https://docs.aws.amazon.com/connect/latest/adminguide/delete-connect-instance.html) in the *Amazon Connect Administration Guide*.
       + To disable Amazon Quick, you must unsubscribe from Amazon Quick. For more information, see [Closing your Amazon Quick account](https://docs.aws.amazon.com/quicksight/latest/user/closing-account.html) in the *Amazon Quick User Guide*.
 **Note**

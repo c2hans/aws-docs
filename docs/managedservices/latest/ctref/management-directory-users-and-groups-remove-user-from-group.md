@@ -14,8 +14,6 @@ Remove an Active Directory (AD) user from an AD group in the AMS managed AD. For
 ## Change Type Details
 <a name="ct-2019s9y3nfml4-MDUr-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2019s9y3nfml4 |

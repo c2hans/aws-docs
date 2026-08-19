@@ -21,8 +21,6 @@ Declarative policies are enforced in the service's control plane, which is an im
 
 The following table helps illustrate this distinction and provides some use cases.
 
-****
-
 |  | Service control policies | Resource control policies | Declarative policies |
 | --- | --- | --- | --- |
 | Why? | To centrally define and enforce consistent access controls on principals (such as IAM users and IAM roles) at scale.  | To centrally define and enforce consistent access controls on resources at scale | To centrally define and enforce the baseline configuration for AWS services at scale. |

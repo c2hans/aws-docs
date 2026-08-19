@@ -9,8 +9,6 @@ This is version 2.18 of the AWS Elemental Conductor File documentation. This is 
 
 You have now installed and performed the basic configuration of AWS Elemental Conductor File. To complete the configuration, refer to the following table.
 
-****
-
 | Scenario | Guide |
 | --- | --- |
 | All scenarios | Configuring a Conductor Cluster – Quick Guide |

@@ -141,7 +141,7 @@ You can use temporary credentials to sign in with federation to assume an IAM ro
 
 [Service-linked roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_terms-and-concepts.html#iam-term-service-linked-role) allow AWS services to access resources in other services to complete an action on your behalf. Service-linked roles appear in your IAM account and are owned by the service. An IAM administrator can view, but cannot edit, the permissions for service-linked roles.
 
-Device Farm uses service-linked roles in the Device Farm desktop browser testing feature. For information on these roles, see [ Using Service-Linked Roles in Device Farm desktop browser testing](https://docs.aws.amazon.com//devicefarm/latest/testgrid/using-service-linked-roles.html) in the developer guide.
+Device Farm uses service-linked roles in the Device Farm desktop browser testing feature. For information on these roles, see [ Using Service-Linked Roles in Device Farm desktop browser testing](https://docs.aws.amazon.com/devicefarm/latest/testgrid/using-service-linked-roles.html) in the developer guide.
 
 ### Service roles
 <a name="security_iam_service-with-iam-roles-service"></a>

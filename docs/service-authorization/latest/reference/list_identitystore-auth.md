@@ -29,8 +29,6 @@ AWS Identity Store Auth has no API operations that can be used in the `Actions` 
 
 The following actions are defined by AWS Identity Store Auth but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 | Actions | Description | Resource types (\*required) | Condition keys | Access level |
 | --- | --- | --- | --- | --- |
 |   [BatchDeleteSession](https://docs.aws.amazon.com/singlesignon/latest/userguide/manage-app-session.html)  | Grants permission to delete a batch of specified sessions |  |   | Write |

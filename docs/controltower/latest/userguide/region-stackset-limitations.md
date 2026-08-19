@@ -32,8 +32,8 @@ This limitation becomes apparent during the OU registration process. For example
 
 **AWS Config limitations**
 
-If you plan to register OUs with a large number of accounts, you may encounter limits with [the maximum number of accounts that AWS Config allows to be created or deleted each week](https://docs.aws.amazon.com//config/latest/developerguide/configlimits.html), across all aggregators. Enrolled accounts do not count toward this limit: You may enroll up to 1000 new accounts into AWS Control Tower each week.
+If you plan to register OUs with a large number of accounts, you may encounter limits with [the maximum number of accounts that AWS Config allows to be created or deleted each week](https://docs.aws.amazon.com/config/latest/developerguide/configlimits.html), across all aggregators. Enrolled accounts do not count toward this limit: You may enroll up to 1000 new accounts into AWS Control Tower each week.
 
 **First-time limitations for accounts and opt-in Regions**
 
-If you plan to register OUs with a large number of accounts across multiple opt-in Regions *for the first time*, you may encounter limitations due to [Account Management quotas](https://docs.aws.amazon.com//accounts/latest/reference/quotas.html), which can lead to prolonged latency. Errors may occur during OU registration due to latency.
+If you plan to register OUs with a large number of accounts across multiple opt-in Regions *for the first time*, you may encounter limitations due to [Account Management quotas](https://docs.aws.amazon.com/accounts/latest/reference/quotas.html), which can lead to prolonged latency. Errors may occur during OU registration due to latency.

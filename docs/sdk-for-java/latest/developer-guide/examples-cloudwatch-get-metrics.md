@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/exam
 To list CloudWatch metrics, create a [ListMetricsRequest](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/cloudwatch/model/ListMetricsRequest.html) and call the CloudWatchClient’s `listMetrics` method. You can use the `ListMetricsRequest` to filter the returned metrics by namespace, metric name, or dimensions.
 
 **Note**
-A list of metrics and dimensions that are posted by AWS services can be found within the [Amazon CloudWatch Metrics and Dimensions Reference](https://docs.aws.amazon.com//AmazonCloudWatch/latest/monitoring/aws-services-cloudwatch-metrics.html) in the Amazon CloudWatch User Guide.
+A list of metrics and dimensions that are posted by AWS services can be found within the [Amazon CloudWatch Metrics and Dimensions Reference](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/aws-services-cloudwatch-metrics.html) in the Amazon CloudWatch User Guide.
 
  **Imports**
 
@@ -80,4 +80,4 @@ See the [complete example](https://github.com/awsdocs/aws-doc-sdk-examples/blob/
 
 ## More information
 <a name="more-information"></a>
-+  [ListMetrics](https://docs.aws.amazon.com//AmazonCloudWatch/latest/APIReference/API_ListMetrics.html) in the Amazon CloudWatch API Reference
++  [ListMetrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_ListMetrics.html) in the Amazon CloudWatch API Reference

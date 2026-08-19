@@ -93,7 +93,7 @@ You can retrieve your assigned site tag value using your Amazon Monitron web app
 
 To begin using project and site level cost tracker tags, you must do the following:
 
-1. **Prerequisite** – You must activate AWS Cost Explorer on the AWS Management Console. This requires minimal setup. We recommend you follow the steps outlined in the [AWS Cost Management](https://docs.aws.amazon.com//cost-management/latest/userguide/ce-what-is.html) guide.
+1. **Prerequisite** – You must activate AWS Cost Explorer on the AWS Management Console. This requires minimal setup. We recommend you follow the steps outlined in the [AWS Cost Management](https://docs.aws.amazon.com/cost-management/latest/userguide/ce-what-is.html) guide.
 
 1. **Activate the Amazon Monitron [AWS–generated tags](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/aws-tags.html)** in your AWS billing account.
 

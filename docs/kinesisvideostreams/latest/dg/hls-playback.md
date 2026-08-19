@@ -24,9 +24,9 @@ Not all media sent to Kinesis Video Streams can be played back through HLS. See 
 
 The following procedure demonstrates how to use the AWS CLI to generate an HLS streaming session URL for a Kinesis video stream.
 
-For installation instructions, see the [AWS Command Line Interface User Guide](https://docs.aws.amazon.com//cli/latest/userguide/getting-started-install.html#getting-started-install-instructions). After installation, [configure the AWS CLI](https://docs.aws.amazon.com//cli/latest/userguide/getting-started-quickstart.html#getting-started-quickstart-new) with credentials and region.
+For installation instructions, see the [AWS Command Line Interface User Guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html#getting-started-install-instructions). After installation, [configure the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-quickstart.html#getting-started-quickstart-new) with credentials and region.
 
-Alternatively, open the AWS CloudShell terminal, which has the AWS CLI installed and configured. See the [AWS CloudShell User Guide](https://docs.aws.amazon.com//cloudshell/latest/userguide/welcome.html#how-to-get-started) for more information.
+Alternatively, open the AWS CloudShell terminal, which has the AWS CLI installed and configured. See the [AWS CloudShell User Guide](https://docs.aws.amazon.com/cloudshell/latest/userguide/welcome.html#how-to-get-started) for more information.
 
 **Retrieve the HLS URL endpoint for your Kinesis video stream.**
 
@@ -69,14 +69,14 @@ Alternatively, open the AWS CloudShell terminal, which has the AWS CLI installed
 
    Determine a start timestamp.
 
-   For this example, we use the **Unix Epoch time in seconds** format. Refer to the [Timestamps](https://docs.aws.amazon.com//cli/latest/userguide/cli-usage-parameters-types.html#parameter-type-timestamp) section in the AWS Command Line Interface User Guide for more information on timestamp formatting.
+   For this example, we use the **Unix Epoch time in seconds** format. Refer to the [Timestamps](https://docs.aws.amazon.com/cli/latest/userguide/cli-usage-parameters-types.html#parameter-type-timestamp) section in the AWS Command Line Interface User Guide for more information on timestamp formatting.
 
    See [UnixTime.org](https://unixtime.org/) for a conversion tool.
    + **1708471800** is equal to **February 20, 2024 3:30:00 PM GMT-08:00**
 
    In this example, we don't specify an end timestamp, meaning that the session will continue to include newly ingested media until the session expires.
 
-   Invoke the `GetHLSStreamingSessionURL` API with `LIVE_REPLAY` playback mode and an [HLS Fragment Selector](https://docs.aws.amazon.com//kinesisvideostreams/latest/dg/API_reader_GetHLSStreamingSessionURL.html#KinesisVideo-reader_GetHLSStreamingSessionURL-request-HLSFragmentSelector) specified.
+   Invoke the `GetHLSStreamingSessionURL` API with `LIVE_REPLAY` playback mode and an [HLS Fragment Selector](https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/API_reader_GetHLSStreamingSessionURL.html#KinesisVideo-reader_GetHLSStreamingSessionURL-request-HLSFragmentSelector) specified.
 
    ```
    aws kinesis-video-archived-media get-hls-streaming-session-url \
@@ -94,13 +94,13 @@ Alternatively, open the AWS CloudShell terminal, which has the AWS CLI installed
 
    To create a URL for a certain section of stream, first determine start and end timestamps.
 
-   For this example, we use the **Unix Epoch time in seconds** format. Refer to the [Timestamps](https://docs.aws.amazon.com//cli/latest/userguide/cli-usage-parameters-types.html#parameter-type-timestamp) section in the AWS Command Line Interface User Guide for more information on timestamp formatting.
+   For this example, we use the **Unix Epoch time in seconds** format. Refer to the [Timestamps](https://docs.aws.amazon.com/cli/latest/userguide/cli-usage-parameters-types.html#parameter-type-timestamp) section in the AWS Command Line Interface User Guide for more information on timestamp formatting.
 
    See [UnixTime.org](https://unixtime.org/) for a conversion tool.
    + **1708471800** is equal to **February 20, 2024 3:30:00 PM GMT-08:00**
    + **1708471860** is equal to **February 20, 2024 3:31:00 PM GMT-08:00**
 
-   Invoke the `GetHLSStreamingSessionURL` API with `ON_DEMAND` playback mode and an [HLS Fragment Selector](https://docs.aws.amazon.com//kinesisvideostreams/latest/dg/API_reader_GetHLSStreamingSessionURL.html#KinesisVideo-reader_GetHLSStreamingSessionURL-request-HLSFragmentSelector) specified.
+   Invoke the `GetHLSStreamingSessionURL` API with `ON_DEMAND` playback mode and an [HLS Fragment Selector](https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/API_reader_GetHLSStreamingSessionURL.html#KinesisVideo-reader_GetHLSStreamingSessionURL-request-HLSFragmentSelector) specified.
 
    ```
    aws kinesis-video-archived-media get-hls-streaming-session-url \
@@ -167,12 +167,12 @@ In the web page, include the following script tag to import the AWS SDK for Java
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aws-sdk/2.490.0/aws-sdk.min.js"></script>
 ```
 
-For more information, refer to the [AWS SDK for JavaScript](https://docs.aws.amazon.com//sdk-for-javascript/v2/developer-guide/loading-the-jssdk.html) documentation.
+For more information, refer to the [AWS SDK for JavaScript](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/loading-the-jssdk.html) documentation.
 
 ### Set up the Kinesis Video Streams client
 <a name="how-hls-ex1-setup"></a>
 
-To access streaming video with HLS, first create and configure the Kinesis Video Streams client. See [Setting Credentials in a Web Browser](https://docs.aws.amazon.com//sdk-for-javascript/v2/developer-guide/setting-credentials-browser.html) for other authentication methods.
+To access streaming video with HLS, first create and configure the Kinesis Video Streams client. See [Setting Credentials in a Web Browser](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/setting-credentials-browser.html) for other authentication methods.
 
 ```
 const clientConfig = {

@@ -9,8 +9,6 @@ The content in a CDI source always consists of uncompressed video, uncompressed 
 
 Obtain identifying information from the content provider.
 
-****
-
 - **Video**
   - **Description:** You don't need identifying information. MediaLive always extracts the first video that it encounters.
   - **Information to obtain:** None

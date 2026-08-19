@@ -7,12 +7,12 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/security-scp-admi
 
 If you're an administrator in AWS Organizations, you can use service control policies (SCPs) to restrict how individuals in your organization can sign up for Amazon Quick. You can restrict the edition of Quick they can sign up for, and also the type of user that they can sign up for.
 
-AWS Organizations is a user account management service that you can use to consolidate multiple AWS accounts into an organization that you create and centrally manage. You can use SCPs in AWS Organizations to manage the permissions in your organization. For more information, see [What is AWS Organizations?](https://docs.aws.amazon.com//organizations/latest/userguide/orgs_introduction.html) and [Service control policies](https://docs.aws.amazon.com//organizations/latest/userguide/orgs_manage_policies_scps.html) in the *AWS Organizations User Guide*.
+AWS Organizations is a user account management service that you can use to consolidate multiple AWS accounts into an organization that you create and centrally manage. You can use SCPs in AWS Organizations to manage the permissions in your organization. For more information, see [What is AWS Organizations?](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html) and [Service control policies](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html) in the *AWS Organizations User Guide*.
 
 In the following topic, you can learn about two ways to restrict Quick sign-up options using SCPs in AWS Organizations. The topic includes an example SCP. To learn more about creating SCPs, see the following topics in the *AWS Organizations User Guide*:
-+ [Creating, updating, and deleting service control policies](https://docs.aws.amazon.com//organizations/latest/userguide/orgs_manage_policies_scps_create.html)
-+ [SCP syntax](https://docs.aws.amazon.com//organizations/latest/userguide/orgs_manage_policies_scps_syntax.html)
-+ [Strategies for using SCPs](https://docs.aws.amazon.com//organizations/latest/userguide/orgs_manage_policies_scps_strategies.html)
++ [Creating, updating, and deleting service control policies](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps_create.html)
++ [SCP syntax](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps_syntax.html)
++ [Strategies for using SCPs](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps_strategies.html)
 
 **Topics**
 + [Restricting the Quick edition](#security-scp-edition)
@@ -46,7 +46,7 @@ To restrict the user management options that individuals in your organization ca
 ## Example SCP
 <a name="security-scp-example"></a>
 
-The following example for Quick shows a service control policy that denies signing up for a Amazon Quick Standard Edition and prevents the ability to sign up using IAM Identity Center authentication. This policy uses the `quicksight:Subscribe` action, in addition to the condition keys previously described. For a list of Amazon Quick-specific keys for use in IAM permission policies, see [Actions, resources, and condition keys for Quick](https://docs.aws.amazon.com//service-authorization/latest/reference/list_amazonquicksight.html) in the *Service Authorization Reference*.
+The following example for Quick shows a service control policy that denies signing up for a Amazon Quick Standard Edition and prevents the ability to sign up using IAM Identity Center authentication. This policy uses the `quicksight:Subscribe` action, in addition to the condition keys previously described. For a list of Amazon Quick-specific keys for use in IAM permission policies, see [Actions, resources, and condition keys for Quick](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonquicksight.html) in the *Service Authorization Reference*.
 
 ```
 {
@@ -128,4 +128,37 @@ The following example SCP denies both actions in every account except the approv
 
 With this policy in effect, only principals in the listed accounts can create a Amazon Quick subscription. Principals in any other account in your organization are prevented from signing up, and they receive a message explaining that they don't have the right permissions.
 
-As an alternative to using the condition key, you can attach a `Deny` statement for the same two actions (without the `aws:PrincipalAccount` condition) to every organizational unit (OU) except the OU that contains your approved accounts. For more information about where to attach policies, see [Strategies for using SCPs](https://docs.aws.amazon.com//organizations/latest/userguide/orgs_manage_policies_scps_strategies.html) in the *AWS Organizations User Guide*.
+To allow subscription creation only through a specific provisioning identity – for example, a role that your infrastructure-as-code pipeline uses – use the `aws:PrincipalArn` global condition key instead of `aws:PrincipalAccount`. The following example denies all three actions unless the caller is the approved provisioning role. Replace the example role ARN with the ARN of your provisioning role.
+
+```
+{
+    "Version": "2012-10-17"		 	 	 ,
+    "Statement": [
+        {
+            "Sid": "Statement1",
+            "Effect": "Deny",
+            "Action": [
+                "quicksight:Subscribe",
+                "quicksight:CreateAccountSubscription",
+                "quicksight:CreateAdmin"
+            ],
+            "Resource": [
+                "*"
+            ],
+            "Condition": {
+                "ArnNotLike": {
+                    "aws:PrincipalArn": [
+                        "arn:aws:iam::*:role/QuickAccountProvisioner"
+                    ]
+                }
+            }
+        }
+    ]
+}
+```
+
+With this policy in effect, only the approved provisioning role can create a Amazon Quick subscription, regardless of which account the request comes from. Because CloudFormation creates resources as the principal that runs the template, you can use this approach to allow subscription creation only through CloudFormation. Run your template with the approved provisioning role. Protect the provisioning role by controlling who can assume it and who can change its trust policy.
+
+This example also includes `quicksight:CreateAdmin`, which covers the Amazon Quick Standard Edition sign-up path in addition to `quicksight:Subscribe` and `quicksight:CreateAccountSubscription`.
+
+As an alternative to using the condition key, you can attach a `Deny` statement for the same two actions (without the `aws:PrincipalAccount` condition) to every organizational unit (OU) except the OU that contains your approved accounts. For more information about where to attach policies, see [Strategies for using SCPs](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps_strategies.html) in the *AWS Organizations User Guide*.

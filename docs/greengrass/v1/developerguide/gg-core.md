@@ -143,8 +143,6 @@ The `crypto` contains properties that support private key storage on a hardware 
 
 The following configuration properties are also supported:
 
-****
-
 | Field | Description | Notes |
 | --- | --- | --- |
 | <a name="shared-config-mqttmaxconnectionretryinterval"></a> mqttMaxConnectionRetryInterval  | Optional. The maximum interval (in seconds) between MQTT connection retries if the connection is dropped. | Specify this value as an unsigned integer. The default is `60`. |
@@ -203,7 +201,6 @@ The `config.json` file supports the following properties:
 The `crypto` contains properties that support private key storage on a hardware security module (HSM) through PKCS\#11 and local secret storage. For more information, see [AWS IoT Greengrass core security principals](gg-sec.md#gg-principals), [Hardware security integration](hardware-security.md), and [Deploy secrets to the AWS IoT Greengrass core](secrets.md). Configurations for private key storage on HSMs or in the file system are supported.
 <a name="config-crypto"></a>[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v1/developerguide/gg-core.html)
 The following configuration properties are also supported:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v1/developerguide/gg-core.html)
 
 GGC v1.9
@@ -248,7 +245,6 @@ The `config.json` file supports the following properties:
 The `crypto` object is added in v1.7.0. It introduces properties that support private key storage on a hardware security module (HSM) through PKCS\#11 and local secret storage. For more information, see [AWS IoT Greengrass core security principals](gg-sec.md#gg-principals), [Hardware security integration](hardware-security.md), and [Deploy secrets to the AWS IoT Greengrass core](secrets.md). Configurations for private key storage on HSMs or in the file system are supported.
 <a name="config-crypto"></a>[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v1/developerguide/gg-core.html)
 The following configuration properties are also supported.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v1/developerguide/gg-core.html)
 
 **GGC v1.8**
@@ -293,7 +289,6 @@ The `config.json` file supports the following properties.
 The `crypto` object is added in v1.7.0. It introduces properties that support private key storage on a hardware security module (HSM) through PKCS\#11 and local secret storage. For more information, see [AWS IoT Greengrass core security principals](gg-sec.md#gg-principals), [Hardware security integration](hardware-security.md), and [Deploy secrets to the AWS IoT Greengrass core](secrets.md). Configurations for private key storage on HSMs or in the file system are supported.
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v1/developerguide/gg-core.html)
 The following configuration properties are also supported:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v1/developerguide/gg-core.html)
 
 **GGC v1.7**
@@ -338,7 +333,6 @@ The `config.json` file supports the following properties:
 The `crypto` object, added in v1.7.0, introduces properties that support private key storage on a hardware security module (HSM) through PKCS\#11 and local secret storage. For more information, see [Hardware security integration](hardware-security.md) and [Deploy secrets to the AWS IoT Greengrass core](secrets.md). Configurations for private key storage on HSMs or in the file system are supported.
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v1/developerguide/gg-core.html)
 The following configuration properties are also supported:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v1/developerguide/gg-core.html)
 
 **GGC v1.6**
@@ -366,7 +360,6 @@ The following configuration properties are also supported:
 ```
 If you use the **Default Group creation** option from the AWS IoT Greengrass console, then the `config.json` file is deployed to the core device in a working state that specifies the default configuration.
 The `config.json` file supports the following properties:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v1/developerguide/gg-core.html)
 
 **GGC v1.5**
@@ -391,7 +384,6 @@ The `config.json` file supports the following properties:
 }
 ```
 The `config.json` file exists in `/{{greengrass-root}}/config` and contains the following parameters:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v1/developerguide/gg-core.html)
 
 **GGC v1.3**
@@ -416,7 +408,6 @@ The `config.json` file exists in `/{{greengrass-root}}/config` and contains the 
 }
 ```
 The `config.json` file exists in `/{{greengrass-root}}/config` and contains the following parameters:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v1/developerguide/gg-core.html)
 
 **GGC v1.1**
@@ -440,7 +431,6 @@ The `config.json` file exists in `/{{greengrass-root}}/config` and contains the 
 }
 ```
 The `config.json` file exists in `/{{greengrass-root}}/config` and contains the following parameters:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v1/developerguide/gg-core.html)
 
 **GGC v1.0**
@@ -465,7 +455,6 @@ In AWS IoT Greengrass Core v1.0, `config.json` is deployed to `{{greengrass-root
 }
 ```
 The `config.json` file exists in `/{{greengrass-root}}/configuration` and contains the following parameters:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v1/developerguide/gg-core.html)
 
 ------

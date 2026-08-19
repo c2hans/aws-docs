@@ -23,13 +23,13 @@ To complete setting up trusted identity propagation from Amazon EMR Studio, the 
 
 In this step, the Amazon EMR Studio administrator creates and IAM service role and an IAM user role for EMR Studio.
 
-1. **[Create an EMR Studio service role](https://docs.aws.amazon.com//emr/latest/ManagementGuide/emr-studio-service-role.html)** - EMR Studio assume this IAM role to securely manage workspaces and notebooks, connect to clusters, and handle data interactions.
+1. **[Create an EMR Studio service role](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-studio-service-role.html)** - EMR Studio assume this IAM role to securely manage workspaces and notebooks, connect to clusters, and handle data interactions.
 
    1. Navigate to the IAM console ([https://console.aws.amazon.com/iam/](https://console.aws.amazon.com/iam/)) and create an IAM role.
 
    1. Select **AWS service** as the trusted entity and then choose **Amazon EMR**. Attach the following policies to define the role's permissions and trust relationship.
 
-      To use these policy, replace the {{italicized placeholder text}} in the example policy with your own information. For additional directions, see [Create a policy](https://docs.aws.amazon.com//IAM/latest/UserGuide/access_policies_create.html) or [Edit a policy](https://docs.aws.amazon.com//IAM/latest/UserGuide/access_policies_manage-edit.html).
+      To use these policy, replace the {{italicized placeholder text}} in the example policy with your own information. For additional directions, see [Create a policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html) or [Edit a policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-edit.html).
 
 ------
 #### [ JSON ]
@@ -81,7 +81,7 @@ In this step, the Amazon EMR Studio administrator creates and IAM service role a
 
       For a reference of all the service role permissions, see [EMR Studio service role permissions](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-studio-service-role.html#emr-studio-service-role-permissions-table).
 
-1. **[Create an EMR Studio user role for IAM Identity Center authentication](https://docs.aws.amazon.com//emr/latest/ManagementGuide/emr-studio-user-permissions.html#emr-studio-create-user-role)** - EMR Studio assumes this role when a user signs in through IAM Identity Center to manage workspaces, EMR clusters, jobs, git repositories. **This role is used to initiate the trusted identity propagation workflow**.
+1. **[Create an EMR Studio user role for IAM Identity Center authentication](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-studio-user-permissions.html#emr-studio-create-user-role)** - EMR Studio assumes this role when a user signs in through IAM Identity Center to manage workspaces, EMR clusters, jobs, git repositories. **This role is used to initiate the trusted identity propagation workflow**.
 **Note**
 The EMR Studio user role does not need to include permissions to access the Amazon S3 locations of the tables in AWS Glue Catalog. AWS Lake Formation permissions and registered lake locations will be used to receive temporary permissions.
 
@@ -265,23 +265,23 @@ The EMR Studio user role does not need to include permissions to access the Amaz
 
    The following trust policy allows EMR Studio to assume the role:
 **Note**
-Additional permissions are needed to leverage EMR Studio Workspaces and EMR Notebooks. See [Create permissions policies for EMR Studio users](https://docs.aws.amazon.com//emr/latest/ManagementGuide/emr-studio-user-permissions.html#emr-studio-permissions-policies) for more information.
+Additional permissions are needed to leverage EMR Studio Workspaces and EMR Notebooks. See [Create permissions policies for EMR Studio users](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-studio-user-permissions.html#emr-studio-permissions-policies) for more information.
 
 **You can find more information with the following links:**
-   + [Define custom IAM permissions with customer managed policies](https://docs.aws.amazon.com//IAM/latest/UserGuide/access_policies_create.html)
-   + [EMR Studio service role permissions](https://docs.aws.amazon.com//emr/latest/ManagementGuide/emr-studio-service-role.html#emr-studio-service-role-permissions-table)
+   + [Define custom IAM permissions with customer managed policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html)
+   + [EMR Studio service role permissions](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-studio-service-role.html#emr-studio-service-role-permissions-table)
 
 ## Step 2. Create and configure your EMR Studio
 <a name="setting-up-tip-emr-step2"></a>
 
-In this step, you'll create an Amazon EMR Studio in the EMR Studio console and use the IAM roles you created in [Step 1. Create the required IAM roles for EMR StudioStep 2. Create and configure your EMR Studio](#setting-up-tip-emr-step1).
+In this step, you'll create an Amazon EMR Studio in the EMR Studio console and use the IAM roles you created in [Step 1. Create the required IAM roles for EMR Studio](#setting-up-tip-emr-step1).
 
-1. Navigate to the EMR Studio console, select **Create Studio** and the **Custom Setup** option. You can either create a new S3 bucket or use an existing bucket. You may check the box to **Encrypt workspace files with your own KMS keys**. For more information, see [AWS Key Management Service](https://docs.aws.amazon.com//kms/latest/developerguide/overview.html).
+1. Navigate to the EMR Studio console, select **Create Studio** and the **Custom Setup** option. You can either create a new S3 bucket or use an existing bucket. You may check the box to **Encrypt workspace files with your own KMS keys**. For more information, see [AWS Key Management Service](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html).
 ![Step 1 Create EMR Studio in the EMR console.](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/emr-tutorial-step-3.1.png)
 
-1. Under **Service role to let Studio access your resources**, select the service role created in [Step 1. Create the required IAM roles for EMR StudioStep 2. Create and configure your EMR Studio](#setting-up-tip-emr-step1) from the menu.
+1. Under **Service role to let Studio access your resources**, select the service role created in [Step 1. Create the required IAM roles for EMR Studio](#setting-up-tip-emr-step1) from the menu.
 
-1. Choose **IAM Identity Center** under **Authentication**. Select the user role created in [Step 1. Create the required IAM roles for EMR StudioStep 2. Create and configure your EMR Studio](#setting-up-tip-emr-step1).
+1. Choose **IAM Identity Center** under **Authentication**. Select the user role created in [Step 1. Create the required IAM roles for EMR Studio](#setting-up-tip-emr-step1).
 ![Step 3 Create EMR Studio in the EMR console, selecting IAM Identity Center for the authentication method.](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/emr-tutorial-step-3.3.png)
 
 1. Check the **Trusted identity propagation** box. Choose **Only assigned users and groups **under the Application access section, which will allow you to grant only authorized user and groups to access this studio.

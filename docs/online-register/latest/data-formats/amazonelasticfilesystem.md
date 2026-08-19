@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon Elastic File System provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="elasticfilesystem-ClientMount"></a>[ClientMount](https://docs.aws.amazon.com/efs/latest/ug/efs-client-authorization.html) | Allow an NFS client read-access to a file system | Read |

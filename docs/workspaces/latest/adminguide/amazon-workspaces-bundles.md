@@ -36,6 +36,7 @@ WorkSpaces supports several different operating systems (OS), streaming protocol
 **Note**
 Operating system versions that are no longer supported by the vender are not guaranteed to work and are not supported by AWS support.
 For WorkSpaces running on Windows operating system, Graphics bundles only supports PCoIP streaming protocol.
+Nested virtualization is not supported on Windows Server 2016-based WorkSpaces. If you require nested virtualization for running Docker Desktop, WSL2, or other hypervisor-dependent tools, migrate your WorkSpace to a newer operating system version (Windows Server 2019 or later). For more information about migration, see [Migrate a WorkSpace in WorkSpaces Personal](migrate-workspaces.md). For more information about nested virtualization, see [Nested virtualization for WorkSpaces Personal](https://docs.aws.amazon.com/workspaces/latest/adminguide/nested-virtualization.html).
 
 **Topics**
 + [Bundle options for WorkSpaces Personal](bundle-options.md)

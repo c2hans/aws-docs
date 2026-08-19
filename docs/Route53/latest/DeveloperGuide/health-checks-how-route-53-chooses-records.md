@@ -46,7 +46,7 @@ For example, suppose the alias target for an alias record is a group of weighted
 + As long as at least one of the weighted records is healthy, Route 53 considers the alias record to be healthy.
 + If none of the weighted records is healthy, Route 53 considers the alias record to be unhealthy.
 + Route 53 stops considering records in that branch of the tree until at least one weighted record becomes healthy again.
-For more information, see [How health checks work in complex Amazon Route 53 configurationsHow health checks work in complex configurations](dns-failover-complex-configs.md).
+For more information, see [How health checks work in complex Amazon Route 53 configurations](dns-failover-complex-configs.md).
 
 **Failover records**
 Failover records generally work the same way as other routing types. You create health checks and associate them with non-alias records, and you set **Evaluate Target Health** to **Yes** for alias records. Note the following:

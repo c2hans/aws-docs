@@ -150,8 +150,6 @@ To use Amazon WorkMail with WorkSpaces, create a compatible directory by using t
 
 After you create an organization, it can have one of the following states.
 
-****
-
 | **State** | Description |
 | --- | --- |
 | **Active** | Your organization is healthy and ready for use. |

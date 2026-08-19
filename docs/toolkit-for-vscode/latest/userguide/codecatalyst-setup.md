@@ -19,4 +19,4 @@ You must have active AWS Builder ID or AWS IAM Identity Center credentials to co
 ## Connecting the AWS Toolkit with CodeCatalyst
 <a name="codecatalyst-setup-connect"></a>
 
-To connect the AWS Toolkit with your CodeCatalyst account, see the [Authentication for Amazon CodeCatalyst](https://docs.aws.amazon.com//toolkit-for-vscode/latest/userguide/connect.html#catalyst) section in the *Connecting to AWS* topic of this User Guide.
+To connect the AWS Toolkit with your CodeCatalyst account, see the [Authentication for Amazon CodeCatalyst](https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/connect.html#catalyst) section in the *Connecting to AWS* topic of this User Guide.

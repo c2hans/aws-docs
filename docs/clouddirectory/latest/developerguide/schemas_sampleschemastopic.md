@@ -14,8 +14,6 @@ Cloud Directory comes ready with sample schemas for Organizations, Persons, and 
 
 The following tables list the facets that are included in the *Organizations* sample schema.
 
-****
-
 <table>
 <thead>
   <tr><th><b>"Organization" Facet </b></th><th colspan="2"><b>Data Type </b></th><th colspan="2"><b>Length </b></th><th colspan="2"><b>Required Behavior? </b></th><th><b>Description </b></th></tr>
@@ -36,8 +34,6 @@ The following tables list the facets that are included in the *Organizations* sa
   <tr><td>description </td><td colspan="2">String </td><td colspan="2">1024 </td><td colspan="2">N </td><td>Description for Organization </td></tr>
 </tbody>
 </table>
-
-****
 
 <table>
 <thead>
@@ -61,8 +57,6 @@ The following tables list the facets that are included in the *Organizations* sa
 <a name="schemas_personschema"></a>
 
 The following tables list the facets that are included in the *Person* sample schema.
-
-****
 
 <table>
 <thead>
@@ -93,8 +87,6 @@ The following tables list the facets that are included in the *Person* sample sc
 </tbody>
 </table>
 
-****
-
 <table>
 <thead>
   <tr><th><b>"Organization_Person" Facet</b></th><th colspan="2"><b>Data Type</b></th><th colspan="2"><b>Length</b></th><th colspan="2"><b>Required Behavior?</b></th><th><b>Description</b></th></tr>
@@ -120,8 +112,6 @@ The following tables list the facets that are included in the *Person* sample sc
 <a name="schemas_deviceschema"></a>
 
 The following table lists the facet that is included in the *Device* sample schema.
-
-****
 
 <table>
 <thead>

@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awse
 
 AWS Elemental MediaPackage V2 provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="mediapackagev2-GetChannel"></a>[GetChannel](https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_GetChannel.html) | Retrieve details of a channel in a channel group | Read |

@@ -37,6 +37,21 @@ Content-type: application/json
 
 {
    "Arn": "string",
+   "ConcurrentExecutorConfiguration": {
+      "FunctionList": [
+         {
+            "Alias": "string",
+            "FunctionId": "string",
+            "RunCondition": "string"
+         }
+      ],
+      "MaxConcurrency": number,
+      "Output": {
+         "string" : "string"
+      },
+      "Runtime": "string",
+      "TimeoutMilliseconds": number
+   },
    "CustomOutputConfiguration": {
       "Output": {
          "string" : "string"
@@ -62,6 +77,7 @@ Content-type: application/json
    "SequentialExecutorConfiguration": {
       "FunctionList": [
          {
+            "Alias": "string",
             "FunctionId": "string",
             "RunCondition": "string"
          }
@@ -89,6 +105,10 @@ The following data is returned in JSON format by the service.
 The Amazon Resource Name (ARN) of the function.
 Type: String
 
+ ** [ConcurrentExecutorConfiguration](#API_GetFunction_ResponseSyntax) **   <a name="mediatailor-GetFunction-response-ConcurrentExecutorConfiguration"></a>
+The configuration for a `CONCURRENT_EXECUTOR` function.
+Type: [ConcurrentExecutorConfiguration](API_ConcurrentExecutorConfiguration.md) object
+
  ** [CustomOutputConfiguration](#API_GetFunction_ResponseSyntax) **   <a name="mediatailor-GetFunction-response-CustomOutputConfiguration"></a>
 The configuration for a `CUSTOM_OUTPUT` function.
 Type: [CustomOutputConfiguration](API_CustomOutputConfiguration.md) object
@@ -104,7 +124,7 @@ Type: String
  ** [FunctionType](#API_GetFunction_ResponseSyntax) **   <a name="mediatailor-GetFunction-response-FunctionType"></a>
 The type of the function.
 Type: String
-Valid Values: `HTTP_REQUEST | CUSTOM_OUTPUT | SEQUENTIAL_EXECUTOR`
+Valid Values: `HTTP_REQUEST | CUSTOM_OUTPUT | CONCURRENT_EXECUTOR | SEQUENTIAL_EXECUTOR`
 
  ** [HttpRequestConfiguration](#API_GetFunction_ResponseSyntax) **   <a name="mediatailor-GetFunction-response-HttpRequestConfiguration"></a>
 The configuration for an `HTTP_REQUEST` function.

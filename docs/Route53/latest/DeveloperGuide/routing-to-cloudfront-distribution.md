@@ -38,7 +38,7 @@ To get started, you need the following:
 
 1. Route 53 as the DNS service for the domain. If you register your domain name by using Route 53, we automatically configure Route 53 as the DNS service for the domain.
 
-   For information about using Route 53 as the DNS service provider for your domain, see [Making Amazon Route 53 the DNS service for an existing domainMaking Route 53 the DNS service for an existing domain](MigratingDNS.md).
+   For information about using Route 53 as the DNS service provider for your domain, see [Making Amazon Route 53 the DNS service for an existing domain](MigratingDNS.md).
 
 1. A CloudFront distribution or a CloudFront distribution tenant. The distribution must include an alternate domain name that matches the domain name that you want to use for your URLs instead of the domain name that CloudFront assigned to your distribution. For a CloudFront distribution tenant, it must contain the domain name that you want to use for your URLs.
 

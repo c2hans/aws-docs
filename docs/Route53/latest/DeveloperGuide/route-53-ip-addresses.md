@@ -30,7 +30,7 @@ Route 53 name server IP addresses are static.
 **Note**
 We rarely change the IP address ranges of health checkers. Monitor the [ip-ranges.json](https://ip-ranges.amazonaws.com/ip-ranges.json) file for any updates to these ranges.
 
-For more information about IP addresses for health checks, see [Configuring router and firewall rules for Amazon Route 53 health checksConfiguring router and firewall rules for health checks](dns-failover-router-firewall-rules.md).
+For more information about IP addresses for health checks, see [Configuring router and firewall rules for Amazon Route 53 health checks](dns-failover-router-firewall-rules.md).
 
 ## Referencing prefix lists
 <a name="ip-addresses-route53-healthchecks-prefix-lists"></a>

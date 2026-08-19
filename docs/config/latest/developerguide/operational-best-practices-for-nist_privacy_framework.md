@@ -9,8 +9,6 @@ Conformance packs provide a general-purpose compliance framework designed to ena
 
 The following provides a sample mapping between the NIST Privacy Framework and AWS managed Config rules. Each AWS Config rule applies to a specific AWS resource, and relates to one or more NIST Privacy Framework controls. A NIST Privacy Framework control can be related to multiple AWS Config rules. Refer to the table below for more detail and guidance related to these mappings.
 
-****
-
 | Control ID  | Control Description  | AWS Config Rule  | Guidance  |
 | --- | --- | --- | --- |
 | CT.DM-P7 | Mechanisms for transmitting processing permissions and related data values with data elements are established and in place. | [alb-http-to-https-redirection-check](https://docs.aws.amazon.com/config/latest/developerguide/alb-http-to-https-redirection-check.html) | To help protect data in transit, ensure that your Application Load Balancer automatically redirects unencrypted HTTP requests to HTTPS. Because sensitive data can exist, enable encryption in transit to help protect that data. |

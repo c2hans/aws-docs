@@ -12,7 +12,7 @@ Using Amazon Inspector you can manage multiple accounts that are associated thro
 + View aggregated finding data from the entire organization
 + Create and manage suppression rules
 
-For more information, see [Managing multiple accounts with AWS Organizations](https://docs.aws.amazon.com//inspector/latest/user/managing-multiple-accounts.html) in the *Amazon Inspector User Guide*.
+For more information, see [Managing multiple accounts with AWS Organizations](https://docs.aws.amazon.com/inspector/latest/user/managing-multiple-accounts.html) in the *Amazon Inspector User Guide*.
 
 Use the following information to help you integrate Amazon Inspector with AWS Organizations.
 
@@ -24,7 +24,7 @@ The following [service-linked role](https://docs.aws.amazon.com/IAM/latest/UserG
 You can delete or modify this role only if you disable trusted access between Amazon Inspector and Organizations, or if you remove the member account from the organization.
 + `AWSServiceRoleForAmazonInspector2`
 
-For more information, see [Using service-linked roles with Amazon Inspector](https://docs.aws.amazon.com//inspector/latest/user/using-service-linked-roles.html) in the *Amazon Inspector User Guide*.
+For more information, see [Using service-linked roles with Amazon Inspector](https://docs.aws.amazon.com/inspector/latest/user/using-service-linked-roles.html) in the *Amazon Inspector User Guide*.
 
 ## Service principals used by the service-linked roles
 <a name="integrate-enable-svcprin-inspector2"></a>
@@ -104,7 +104,7 @@ With Amazon Inspector you can manage multiple accounts in an organization using 
 
 The AWS Organizations management account designates an account within the organization as the delegated administrator account for Amazon Inspector. The delegated administrator manages Amazon Inspector for the organization and is granted special permissions to perform tasks on behalf of your organization such as: enable or disable scans for member accounts, view aggregated finding data from the entire organization, and create and manage suppression rules
 
- For information on how a delegated administrator manages organization accounts, see [Understanding the relationship between administrator and member accounts](https://docs.aws.amazon.com//inspector/latest/user/admin-member-relationship.html) in the *Amazon Inspector User Guide*.
+ For information on how a delegated administrator manages organization accounts, see [Understanding the relationship between administrator and member accounts](https://docs.aws.amazon.com/inspector/latest/user/admin-member-relationship.html) in the *Amazon Inspector User Guide*.
 
 Only an administrator in the organization management account can configure a delegated administrator for Amazon Inspector.
 
@@ -113,7 +113,7 @@ You can specify a delegated administrator account from the Amazon Inspector cons
 **Minimum permissions**
 Only a user or role in the Organizations management account can configure a member account as a delegated administrator for Amazon Inspector in the organization
 
-To configure a delegated administrator using the Amazon Inspector console, see [Step 1: Enable Amazon Inspector - Multi-account environment](https://docs.aws.amazon.com//inspector/latest/user/getting_started_tutorial.html#tutorial_enable_scans) in the *Amazon Inspector User Guide*.
+To configure a delegated administrator using the Amazon Inspector console, see [Step 1: Enable Amazon Inspector - Multi-account environment](https://docs.aws.amazon.com/inspector/latest/user/getting_started_tutorial.html#tutorial_enable_scans) in the *Amazon Inspector User Guide*.
 
 **Note**
 You must call `inspector2:enableDelegatedAdminAccount` in each region where you use Amazon Inspector.
@@ -138,4 +138,4 @@ If you want to configure a delegated administrator account using the AWS CLI or 
 
 Only an administrator in the AWS Organizations management account can remove a delegated administrator account from the organization.
 
-You can remove the delegated administrator using either the Amazon Inspector console or API, or by using the Organizations `DeregisterDelegatedAdministrator` CLI or SDK operation. To remove a delegated administrator using the Amazon Inspector console, see [Removing a delegated administrator](https://docs.aws.amazon.com//inspector/latest/user/remove-delegated-admin.html) in the *Amazon Inspector User Guide*.
+You can remove the delegated administrator using either the Amazon Inspector console or API, or by using the Organizations `DeregisterDelegatedAdministrator` CLI or SDK operation. To remove a delegated administrator using the Amazon Inspector console, see [Removing a delegated administrator](https://docs.aws.amazon.com/inspector/latest/user/remove-delegated-admin.html) in the *Amazon Inspector User Guide*.

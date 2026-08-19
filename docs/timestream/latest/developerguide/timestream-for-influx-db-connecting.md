@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/timestream/latest/developerguide/timestream-for-influx-db-connecting.html
 ---
 
-For similar capabilities to Amazon Timestream for LiveAnalytics, consider Amazon Timestream for InfluxDB. It offers simplified data ingestion and single-digit millisecond query response times for real-time analytics. Learn more [here](https://docs.aws.amazon.com//timestream/latest/developerguide/timestream-for-influxdb.html).
+For similar capabilities to Amazon Timestream for LiveAnalytics, consider Amazon Timestream for InfluxDB. It offers simplified data ingestion and single-digit millisecond query response times for real-time analytics. Learn more [here](https://docs.aws.amazon.com/timestream/latest/developerguide/timestream-for-influxdb.html).
 
 # Connecting to an Amazon Timestream for InfluxDB DB instance
 <a name="timestream-for-influx-db-connecting"></a>
@@ -289,8 +289,6 @@ When you associate a new DB parameter group with a DB instance, Timestream appli
 To determine the supported parameters for your DB instance, view the parameters in the DB parameter group used by the DB instance. For more information, see [Viewing parameter values for a DB parameter group](#timestream-for-influx-working-with-parameter-groups-viewing).
 
 For more information about all parameters supported by the open-source version of InfluxDB, see [InfluxDB configuration options](https://docs.influxdata.com/influxdb/v2/reference/config-options/?t=JSON). Currently you will only be able to modify the following InfluxDB parameters:
-
-****
 
 | Parameter | Description | Default value | Value | Valid range | Note |
 | --- | --- | --- | --- | --- | --- |

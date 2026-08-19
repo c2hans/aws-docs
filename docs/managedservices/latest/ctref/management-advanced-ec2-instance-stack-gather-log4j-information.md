@@ -14,8 +14,6 @@ Generates a report identifying Log4j2 occurrences on the specified EC2 instances
 ## Change Type Details
 <a name="ct-19f40lfm5umy8-MAEg-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-19f40lfm5umy8 |

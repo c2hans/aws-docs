@@ -98,7 +98,6 @@ When you provide an FQDN in this field, AWS Private CA inserts the FQDN into the
 For more information about implementing a complete OCSP solution using a custom CNAME, see [Customize OCSP URL for AWS Private CA](ocsp-customize.md).
 
    For example, here is a CNAME record for customized OCSP as it would appear in Amazon Route 53.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/privateca/latest/userguide/PCAUpdateCA.html)
 **Note**
 The value of the CNAME must not include a protocol prefix such as "http://" or "https://".

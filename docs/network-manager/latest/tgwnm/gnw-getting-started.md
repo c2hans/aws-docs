@@ -66,7 +66,7 @@ Register a transit gateway in your global network.
 You can define your on-premises network by creating sites, links, and devices to represent objects in your network. For more information, see the following procedures:
 + [Create a site using AWS Network Manager](creating-a-site.md)
 + [Adding a link](nm-site-link-add.md)
-+ [Add a device using AWS Network ManagerDelete a device using AWS Network Manager](nm-devices-add.md)
++ [Add a device using AWS Network Manager](nm-devices-add.md)
 
   You associate the device with a specific site, and with one or more links. For more information, see [Associate or disassociate a device link using AWS Network Manager](nm-device-link-associate.md).
 

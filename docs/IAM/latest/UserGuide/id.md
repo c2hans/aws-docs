@@ -16,7 +16,7 @@ You can use [account access manager](account-access-manager.md) — an IAM featu
 The AWS account root user is an AWS account principal that is created when your AWS account is established. The root user has access to all AWS services and resources in the account. For more information, see [IAM root user](#id_root).
 
 **Note**
-Follow the [Security best practices in IAM](https://docs.aws.amazon.com//IAM/latest/UserGuide/best-practices-use-cases.html) when working with IAM identities.
+Follow the [Security best practices in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices-use-cases.html) when working with IAM identities.
 Follow the [root user best practices for your AWS account](root-user-best-practices.md) when working with the root user.
 If you're having trouble signing in, see [Sign in to the AWS Management Console](https://docs.aws.amazon.com/signin/latest/userguide/console-sign-in-tutorials.html).
 

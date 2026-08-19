@@ -14,7 +14,7 @@ The following table describes the documentation for this release of AWS Microser
 | Change | Description | Date |
 | --- |--- |--- |
 | [Filtering nodes by project and namespace](#microservice-extractor-doc-history) | You can apply filters to the visualization to see only namespace or projet nodes. | April 17, 2023 |
-| [IAM best practices updates](#microservice-extractor-doc-history) | Updated guide to align with the IAM best practices. For more information, see [Security best practices in IAM](https://docs.aws.amazon.com//IAM/latest/UserGuide/best-practices.html). | February 15, 2023 |
+| [IAM best practices updates](#microservice-extractor-doc-history) | Updated guide to align with the IAM best practices. For more information, see [Security best practices in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html). | February 15, 2023 |
 | [Automated refactoring recommendations](#microservice-extractor-doc-history) | You can start refactoring an older monolithic application with no familiarity with its original architecture or retrofitted features. | November 18, 2022 |
 | [.NET 7 support](microservice-extractor-supported-versions.md) | You can visualize and extract .NET version 7.0 applications using AWS Microservice Extractor for .NET. | November 15, 2022 |
 | [AWS Microservice Extractor for .NET integration with Porting Assistant for .NET](#microservice-extractor-doc-history) | You can leverage the functionality of Porting Assistant for .NET during the porting and extraction of your monolithic applications.  | November 15, 2022 |

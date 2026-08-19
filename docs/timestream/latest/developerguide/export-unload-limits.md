@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/timestream/latest/developerguide/export-unload-limits.html
 ---
 
-For similar capabilities to Amazon Timestream for LiveAnalytics, consider Amazon Timestream for InfluxDB. It offers simplified data ingestion and single-digit millisecond query response times for real-time analytics. Learn more [here](https://docs.aws.amazon.com//timestream/latest/developerguide/timestream-for-influxdb.html).
+For similar capabilities to Amazon Timestream for LiveAnalytics, consider Amazon Timestream for InfluxDB. It offers simplified data ingestion and single-digit millisecond query response times for real-time analytics. Learn more [here](https://docs.aws.amazon.com/timestream/latest/developerguide/timestream-for-influxdb.html).
 
 # Limits for UNLOAD from Timestream for LiveAnalytics
 <a name="export-unload-limits"></a>
@@ -13,4 +13,4 @@ Following are limits related to the `UNLOAD` command.
 + Queries containing `UNLOAD` statement time out after 60 minutes.
 + The maximum size of the files that the `UNLOAD` statement creates in Amazon S3 is 78 GB.
 
-For other limits for Timestream for LiveAnalytics, see [QuotasDefault quotas](ts-limits.md)
+For other limits for Timestream for LiveAnalytics, see [Quotas](ts-limits.md)

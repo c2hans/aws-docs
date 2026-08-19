@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon Elastic Transcoder provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="elastictranscoder-ListJobsByPipeline"></a>[ListJobsByPipeline](https://docs.aws.amazon.com/elastictranscoder/latest/developerguide/list-jobs-by-pipeline.html) | Get a list of the jobs that you assigned to a pipeline | List |

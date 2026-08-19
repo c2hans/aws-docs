@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon Keyspaces (for Apache Cassandra) provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="cassandra-GetRecords"></a>[GetRecords](https://docs.aws.amazon.com/keyspaces/latest/devguide/) | Retrieve the CDC stream records from a given shard | Read |

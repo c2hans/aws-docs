@@ -200,8 +200,6 @@ For detailed information about each property, see [Properties](#ad-reporting-cli
 
 The following table lists the properties in the client-side tracking API, their definitions, value types, and examples.
 
-****
-
 | Property | Definition | Value type | Example |
 | --- | --- | --- | --- |
 |   adID  | +  HLS - the sequence number associated with the beginning of the ad <br />+  DASH - the period ID of the ad Path: `/avails/ads/adId`<br />VAST mapping: None | String | 10 |

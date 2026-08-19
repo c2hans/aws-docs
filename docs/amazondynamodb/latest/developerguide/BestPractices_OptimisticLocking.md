@@ -11,7 +11,7 @@ Optimistic locking is a strategy that detects conflicts at write time rather tha
 <a name="BestPractices_OptimisticLocking_WhenToUse"></a>
 
 Optimistic locking is a good fit when:
-+ Multiple users or processes may update the same item, but conflicts are infrequent.
++ Multiple users or processes might update the same item, but conflicts are infrequent.
 + Retrying a failed write is inexpensive for your application.
 + You want to avoid the overhead and complexity of managing distributed locks.
 

@@ -58,7 +58,7 @@ These actions control the ability to manage recommendations as backlog tasks:
 ## Asset management actions
 <a name="asset-management-actions"></a>
 
-These actions control the ability to add and manage assets in an Agent Space, including skills, AGENTS.md files, attachments, custom agents, test profiles, and feedback. For details on the Asset API, see [Managing Assets](about-aws-devops-agent-managing-assets.html).
+These actions control the ability to add and manage assets in an Agent Space, including skills, AGENTS.md files, attachments, custom agents, test profiles, and feedback. For details on the Asset API, see [Managing assets](about-aws-devops-agent-managing-assets.html).
 + **aidevops:CreateAsset** – Allows users to create a new asset in an Agent Space, including skills, AGENTS.md files, attachments, custom agents, test profiles, and feedback.
 + **aidevops:GetAsset** – Allows users to retrieve an asset's metadata and version information.
 + **aidevops:UpdateAsset** – Allows users to update the metadata or content of an existing asset.

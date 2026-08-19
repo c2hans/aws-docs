@@ -20,7 +20,7 @@ This section covers important details about VPC BPA, including which services su
 ## Regional availability
 <a name="security-vpc-bpa-reg-avail"></a>
 
-VPC BPA is available in all commercial [AWS Regions](https://aws.amazon.com//about-aws/global-infrastructure/regions_az/) including GovCloud and China Regions.
+VPC BPA is available in all commercial [AWS Regions](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/) including GovCloud and China Regions.
 
 In this guide, you'll also find information about using Network Access Analyzer and Reachability Analyzer with VPC BPA. Note that Network Access Analyzer and Reachability Analyzer are not available in all commercial Regions. For information about the regional availability of Network Access Analyzer and Reachability Analyzer, see [Limitations](https://docs.aws.amazon.com/vpc/latest/network-access-analyzer/how-network-access-analyzer-works.html#analyzer-limitations) in the *Network Access Analyzer Guide* and [Considerations](https://docs.aws.amazon.com/vpc/latest/reachability/how-reachability-analyzer-works.html#considerations) in the *Reachability Analyzer Guide*.
 
@@ -196,7 +196,7 @@ The exclusion has been created.
 ## Enable VPC BPA at the Organization level
 <a name="security-vpc-bpa-exclusions-orgs"></a>
 
-If you are using AWS Organizations to manage accounts in your organization, you can use an [AWS Organizations declarative policy](https://docs.aws.amazon.com//organizations/latest/userguide/orgs_manage_policies_declarative.html) to enforce VPC BPA on the accounts in the organization. For more information about the VPC BPA declarative policy, see [Supported declarative policies ](https://docs.aws.amazon.com//organizations/latest/userguide/orgs_manage_policies_declarative_syntax.html#declarative-policy-vpc-block-public-access) in the *AWS Organizations User Guide*.
+If you are using AWS Organizations to manage accounts in your organization, you can use an [AWS Organizations declarative policy](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_declarative.html) to enforce VPC BPA on the accounts in the organization. For more information about the VPC BPA declarative policy, see [Supported declarative policies ](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_declarative_syntax.html#declarative-policy-vpc-block-public-access) in the *AWS Organizations User Guide*.
 
 **Note**
 You can use the VPC BPA declarative policy to configure if exclusions are allowed, but you cannot create exclusions with the policy. To create exclusions, you still have to create them in the account that owns the VPC. For more information about creating VPC BPA exclusions, see [Create and delete exclusions](#security-vpc-bpa-exclusions).

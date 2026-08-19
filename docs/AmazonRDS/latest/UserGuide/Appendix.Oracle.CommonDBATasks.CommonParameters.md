@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.Orac
 
 You can use procedures in the Amazon RDS package `rdsadmin.rdsadmin_rman_util` to perform tasks with RMAN. Several parameters are common to the procedures in the package. The package has the following common parameters.
 
-****
-
 | Parameter name | Data type | Valid values | Default | Required | Description |
 | --- | --- | --- | --- | --- | --- |
 | `p_directory_name` | varchar2 | A valid database directory name. | — | Yes | The name of the directory to contain the backup files. |

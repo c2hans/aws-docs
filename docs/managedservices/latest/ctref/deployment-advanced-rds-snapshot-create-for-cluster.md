@@ -14,8 +14,6 @@ Create a snapshot of Amazon Aurora or Multi-AZ DB (Amazon RDS) cluster in availa
 ## Change Type Details
 <a name="ct-2zqwr34epwzx1-DARc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2zqwr34epwzx1 |

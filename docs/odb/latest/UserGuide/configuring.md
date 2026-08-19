@@ -398,7 +398,7 @@ If you attach or reattach the attachments on your VPC, make sure you re-enter th
 
 1. Create an ODB network. For more information, see [Step 1: Create an ODB network in Oracle Database@AWS](getting-started.md#getting-started-odb).
 
-1. Create an ODB peering connection between your ODB network and your VPC. For more information, see [Configuring ODB peering to an Amazon VPC in Oracle Database@AWSConfiguring DNS for Oracle Database@AWS](#configuring).
+1. Create an ODB peering connection between your ODB network and your VPC. For more information, see [Configuring ODB peering to an Amazon VPC in Oracle Database@AWS](#configuring).
 
 1. Set up a transit gateway by following the steps in [Get started with using Amazon VPC Transit Gateways](https://docs.aws.amazon.com/vpc/latest/tgw/tgw-getting-started.html). The gateway must be either in the same AWS account as the ODB network and VPC, or shared by another account.
 **Important**

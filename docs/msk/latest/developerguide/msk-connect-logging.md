@@ -17,8 +17,6 @@ To learn more about setting up logging, see [Enabling logging from certain AWS s
 
 MSK Connect emits the following types of log events:
 
-****
-
 | Level | Description |
 | --- | --- |
 | INFO | Runtime events of interest at startup and shutdown. |

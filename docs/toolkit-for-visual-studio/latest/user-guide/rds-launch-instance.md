@@ -23,7 +23,6 @@ With AWS Explorer, you can launch an instance of any of the database engines sup
    In the **DB Engine Instance Options and Class** section, you can specify the following settings.
 
     *License Model*
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/rds-launch-instance.html)
 
    The license model varies, depending on the type of database engine. Engine Type License Microsoft SQL Server license-included MySql general-public-license Oracle bring-your-own-license
@@ -39,7 +38,6 @@ Select this option to have AWS automatically perform minor version updates on yo
 In the **RDS Database Instance** section, you can specify the following settings.
 
 ** *Allocated Storage* **
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/rds-launch-instance.html)
 The minimums and maximums for allocated storage depend on the type of database engine. Engine Minimum (GB) Maximum (GB) MySQL 5 1024 Oracle Enterprise Edition 10 1024 Microsoft SQL Server Express Edition 30 1024 Microsoft SQL Server Standard Edition 250 1024 Microsoft SQL Server Web Edition 30 1024
 

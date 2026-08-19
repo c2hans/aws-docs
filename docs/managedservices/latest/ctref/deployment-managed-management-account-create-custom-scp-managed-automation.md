@@ -14,8 +14,6 @@ Create a custom service control policy (SCP) to manage permissions across AWS or
 ## Change Type Details
 <a name="ct-33ste5yc7hprs-DMMc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-33ste5yc7hprs |

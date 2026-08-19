@@ -121,7 +121,7 @@ Although the Elastic Beanstalk console doesn't provide the option to change the 
 
 Choose an instance that's powerful enough to run your application under load, but not so powerful that it's idle most of the time. For development purposes, the t2 family of instances provides a moderate amount of power with the ability to burst for short periods of time. For large-scale, high-availability applications, use a pool of instances to ensure that capacity isn't too strongly affected if any single instance goes down. Start with an instance type that you can use to run five instances under moderate loads during normal hours. If any instance fails, the rest of the instances can absorb the rest of the traffic. The capacity buffer also allows time for the environment to scale up as traffic begins to rise during peak hours.
 
-For more information about Amazon EC2 instance families and types, see [Instance types](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-types.html) in the *Amazon EC2 User Guide*. To determine which instance types meet your requirements and their supported Regions, see [Available instance types](https://docs.aws.amazon.com//AWSEC2/latest/UserGuide/instance-types.html#AvailableInstanceTypes) in the *Amazon EC2 User Guide*.
+For more information about Amazon EC2 instance families and types, see [Instance types](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-types.html) in the *Amazon EC2 User Guide*. To determine which instance types meet your requirements and their supported Regions, see [Available instance types](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-types.html#AvailableInstanceTypes) in the *Amazon EC2 User Guide*.
 
 ### AMI ID
 <a name="using-features.managing.ec2.customami"></a>

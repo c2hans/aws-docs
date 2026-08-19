@@ -116,8 +116,6 @@ Complete the following steps:
 ## Run the sample application
 <a name="run-sdk-ios"></a>
 
-****
-
 Complete the following steps:
 
 1. On your iOS device, open **AWSKinesisVideoWebRTCDemoApp** and log in using either a new (by creating it first) or an existing Amazon Cognito account.

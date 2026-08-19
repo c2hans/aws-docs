@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/amazon-
 
 Customers often need to know the IP range from which Device Farm's traffic originates, particularly for configuring their firewalls and security settings. For Amazon EC2 test hosts, the IP range encompasses the entire `us-west-2` region. For Amazon Linux 2 test hosts, which is the default option for new Android runs, the ranges have been restricted. The traffic now originates from a specific set of NAT gateways, restricting the IP range to the following addresses:
 
-****
-
 | IP Ranges |
 | --- |
 | **44.236.137.143** |

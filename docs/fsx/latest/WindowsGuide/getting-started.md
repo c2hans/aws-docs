@@ -43,7 +43,7 @@ Before you use Amazon FSx for the first time, complete the following tasks.
 ### Sign up for an AWS account
 <a name="sign-up-for-aws"></a>
 
-To get started with AWS, you need an AWS account. For information about creating an AWS account, see [Getting started with an AWS account](https://docs.aws.amazon.com//accounts/latest/reference/getting-started.html) in the *AWS Account Management Reference Guide*.
+To get started with AWS, you need an AWS account. For information about creating an AWS account, see [Getting started with an AWS account](https://docs.aws.amazon.com/accounts/latest/reference/getting-started.html) in the *AWS Account Management Reference Guide*.
 
 ## Step 1. Setting up an Active Directory
 <a name="prereq-step1"></a>
@@ -236,7 +236,7 @@ Now that your instance has been joined to the domain, you're ready to create you
 
 1. For **Storage capacity**, enter the storage capacity of your file system, in GiB. If you're using SSD storage, enter any whole number in the range of 32–65,536. If you're using HDD storage, enter any whole number in the range of 2,000–65,536. You can increase the amount of storage capacity as needed at any time after you create the file system. For more information, see [Managing storage capacity](managing-storage-configuration.md#managing-storage-capacity).
 
-1. Keep **Throughput capacity** at its default setting. **Throughput capacity** is the sustained speed at which the file server that hosts your file system can serve data. The **Recommended throughput capacity** setting is based on the amount of storage capacity you choose. If you need more than the recommended throughput capacity, choose **Specify throughput capacity**, and then choose a value. For more information, see [FSx for Windows File Server performancePerformance](performance.md).
+1. Keep **Throughput capacity** at its default setting. **Throughput capacity** is the sustained speed at which the file server that hosts your file system can serve data. The **Recommended throughput capacity** setting is based on the amount of storage capacity you choose. If you need more than the recommended throughput capacity, choose **Specify throughput capacity**, and then choose a value. For more information, see [FSx for Windows File Server performance](performance.md).
 **Note**
 If you are going to enable file access auditing, you must choose a throughput capacity of 32 MBps or greater. For more information, see [Logging end user access with file access auditing](file-access-auditing.md).
 
@@ -265,7 +265,7 @@ In some cases, you might have modified the rules of your AWS Managed Microsoft A
 
    If you are creating a Single-AZ file system, choose the **Subnet** for your file system.
 
-1. For **Network type**, select either **IPv4** (for only IPv4 support) or **Dual-stack** (for both IPv4 and IPv6 support). You can change the network type of an existing file system at any time. For more information, see [Changing network typeTo change a file system's network type (console)](manage-network-type.md#change-network-type).
+1. For **Network type**, select either **IPv4** (for only IPv4 support) or **Dual-stack** (for both IPv4 and IPv6 support). You can change the network type of an existing file system at any time. For more information, see [Changing network type](manage-network-type.md#change-network-type).
 **Note**
 If you intend to create an FSx for Windows File Server file system that uses dual-stack mode, you must first assign an Amazon-provided IPv6 CIDR block to your VPC and subnets. For more information, see [Add IPv6 support for your VPC](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-migrate-ipv6-add.html) in the *Amazon Virtual Private Cloud User Guide*.
 

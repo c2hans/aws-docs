@@ -25,8 +25,6 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_arc-region-switch-actions-as-permissions).
 
-****
-
 - **   ApprovePlanExecutionStep  **
   - **IAM action:**  [arc-region-switch:ApprovePlanExecutionStep](#list_arc-region-switch-action-ApprovePlanExecutionStep)
   - **Condition key:**
@@ -156,8 +154,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
 <a name="list_arc-region-switch-actions-as-permissions"></a>
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
-
-****
 
 - **   [ApprovePlanExecutionStep](https://docs.aws.amazon.com/arc-region-switch/latest/api/API_ApprovePlanExecutionStep.html)  **
   - **Description:** Grants permission to approve a plan execution step
@@ -290,8 +286,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 The following actions are defined by Amazon ARC Region switch but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 - **   [DeleteResourcePolicy](https://docs.aws.amazon.com/r53recovery/latest/dg/arc-region-switch.region-switch-different-accounts.html)  **
   - **Description:** Grants permission to delete the RAM access control policy for a plan
   - **Resource types (\*required):**
@@ -315,8 +309,6 @@ The following actions are defined by Amazon ARC Region switch but are not direct
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
 
-****
-
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
 |  [plan](https://docs.aws.amazon.com/arc-region-switch/latest/api/API_Plan.html)  | arn:${Partition}:arc-region-switch::${Account}:plan/${ResourceId} | [aws:ResourceTag/${TagKey}](#list_arc-region-switch-aws_ResourceTag___TagKey_) |
@@ -325,8 +317,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_arc-region-switch-policy-keys"></a>
 
 Amazon ARC Region switch defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

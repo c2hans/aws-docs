@@ -10,7 +10,7 @@ Before you begin using SageMaker Edge Manager to manage models on your device fl
 ## Sign up for an AWS account
 <a name="sign-up-for-aws"></a>
 
-To get started with AWS, you need an AWS account. For information about creating an AWS account, see [Getting started with an AWS account](https://docs.aws.amazon.com//accounts/latest/reference/getting-started.html) in the *AWS Account Management Reference Guide*.
+To get started with AWS, you need an AWS account. For information about creating an AWS account, see [Getting started with an AWS account](https://docs.aws.amazon.com/accounts/latest/reference/getting-started.html) in the *AWS Account Management Reference Guide*.
 
 ## Create roles and storage
 <a name="edge-getting-started-step1-create-role"></a>
@@ -32,7 +32,7 @@ You can create an IAM role by using the IAM console, AWS SDK for Python (Boto3),
 
    1. Choose **Next: Tags**.
 
-   1. (Optional) Add metadata to the role by attaching tags as key–value pairs. For more information about using tags in IAM, see [Tagging IAM resources](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_tags.html).
+   1. (Optional) Add metadata to the role by attaching tags as key–value pairs. For more information about using tags in IAM, see [Tagging IAM resources](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_tags.html).
 
    1. Choose **Next: Review**.
 
@@ -76,7 +76,7 @@ You can create an IAM role by using the IAM console, AWS SDK for Python (Boto3),
 
    1. Choose **Next: Tags**.
 
-   1. (Optional) Add metadata to the role by attaching tags as key–value pairs. For more information about using tags in IAM, see [Tagging IAM resources](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_tags.html).
+   1. (Optional) Add metadata to the role by attaching tags as key–value pairs. For more information about using tags in IAM, see [Tagging IAM resources](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_tags.html).
 
    1. Choose **Next: Review**.
 
@@ -123,7 +123,7 @@ You can create an IAM role by using the IAM console, AWS SDK for Python (Boto3),
 
 ------
 
-      A trust policy is a [JSON policy document](https://docs.aws.amazon.com//IAM/latest/UserGuide/reference_policies_grammar) in which you define the principals that you trust to assume the role. For more information about trust policies, see [Roles terms and concepts](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_terms-and-concepts.html).
+      A trust policy is a [JSON policy document](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_grammar) in which you define the principals that you trust to assume the role. For more information about trust policies, see [Roles terms and concepts](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_terms-and-concepts.html).
 
    1. Note the AWS IoT role ARN. You use the AWS IoT Role ARN to create and register the device fleet. To find the IAM role ARN with the console:
 

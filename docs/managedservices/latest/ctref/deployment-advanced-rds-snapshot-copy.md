@@ -14,8 +14,6 @@ Create a KMS key encrypted copy of an Amazon Relational Database Service (Amazon
 ## Change Type Details
 <a name="ct-1c0jrxd3su5oe-DARc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1c0jrxd3su5oe |

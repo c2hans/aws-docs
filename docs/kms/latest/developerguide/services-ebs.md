@@ -21,7 +21,7 @@ When you attach an encrypted Amazon EBS volume to a [supported Amazon Elastic Co
 
 This feature is supported on all [Amazon EBS volume types](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-encryption-requirements.html#ebs-encryption-volume-types). You access encrypted volumes the same way you access other volumes; encryption and decryption are handled transparently and they require no additional action from you, your EC2 instance, or your application. Snapshots of encrypted volumes are automatically encrypted, and volumes that are created from encrypted snapshots are also automatically encrypted.
 
-The encryption status of an EBS volume is determined when you create the volume. You cannot change the encryption status of an existing volume. However, you can [migrate data](https://docs.aws.amazon.com//ebs/latest/userguide/how-ebs-encryption-works.html) between encrypted and unencrypted volumes and apply a new encryption status while copying a snapshot.
+The encryption status of an EBS volume is determined when you create the volume. You cannot change the encryption status of an existing volume. However, you can [migrate data](https://docs.aws.amazon.com/ebs/latest/userguide/how-ebs-encryption-works.html) between encrypted and unencrypted volumes and apply a new encryption status while copying a snapshot.
 
 Amazon EBS supports optional encryption by default. You can enable encryption automatically on all new EBS volumes and snapshot copies in your AWS account and Region. This configuration setting doesn't affect existing volumes or snapshots. For details, see [Amazon EBS encryption](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSEncryption.html#encryption-by-default) in the *Amazon EBS User Guide*.
 
@@ -30,7 +30,7 @@ Amazon EBS supports optional encryption by default. You can enable encryption au
 
 When you [create an encrypted Amazon EBS volume](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-creating-volume.html), you specify an AWS KMS key. By default, Amazon EBS uses the [AWS managed key](concepts.md#aws-managed-key) for Amazon EBS in your account (`aws/ebs`). However, you can specify a [customer managed key](concepts.md#customer-mgn-key) that you create and manage.
 
-To use a customer managed key, you must give Amazon EBS permission to use the KMS key on your behalf. For more information , see [How Amazon EBS encryption works](https://docs.aws.amazon.com//ebs/latest/userguide/how-ebs-encryption-works.html) in *Amazon EBS User Guide*.
+To use a customer managed key, you must give Amazon EBS permission to use the KMS key on your behalf. For more information , see [How Amazon EBS encryption works](https://docs.aws.amazon.com/ebs/latest/userguide/how-ebs-encryption-works.html) in *Amazon EBS User Guide*.
 
 **Important**
 Amazon EBS supports only [symmetric KMS keys](symm-asymm-choose-key-spec.md#symmetric-cmks). You cannot use an [asymmetric KMS key](symmetric-asymmetric.md) to encrypt an Amazon EBS volume. For help determining whether a KMS key is symmetric or asymmetric, see [Identify different key types](identify-key-types.md).

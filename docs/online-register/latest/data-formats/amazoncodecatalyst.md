@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon CodeCatalyst provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="codecatalyst-GetBillingAuthorization"></a>[GetBillingAuthorization](https://docs.aws.amazon.com/codecatalyst/latest/userguide/security-iam.html#permissions-reference-connections) | Describe the billing authorization for a connection | Read |

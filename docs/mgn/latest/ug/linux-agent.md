@@ -31,7 +31,6 @@ AWS Regions that are not opt-in also support the shorter installer path: `https:
 You can generate a custom installation command through the **Add servers** prompt. [Learn more about the Add servers prompt](add-server-server-page.md#server-actions-main).
 
    This table contains the installer download link by supported AWS Region:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/mgn/latest/ug/linux-agent.html)
 
 1. [Generate the temporary credentials](credentials.md) that are required to install the AWS Replication Agent.

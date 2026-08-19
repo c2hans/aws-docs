@@ -14,8 +14,6 @@ Create a snapshot of an Amazon Relational Database Service (RDS) database (DB) i
 ## Change Type Details
 <a name="ct-393q3yaq9ewlm-DARc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-393q3yaq9ewlm |

@@ -34,7 +34,6 @@ This automated CloudFormation template deploys the Athena Capacity Reservation a
 1. On the **Specify stack details** page, assign a name to your solution stack.
 
 1. Under **Parameters**, review the parameters for this solution template and modify them as necessary. This solution uses the following default values.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/athena/latest/ug/capacity-management-automatically-adjust-capacity.html)
 **Note**
 All DPU values must be multiples of 4 to comply with Athena's capacity reservation requirements.

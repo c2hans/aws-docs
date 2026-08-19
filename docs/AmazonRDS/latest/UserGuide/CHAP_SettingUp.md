@@ -17,7 +17,7 @@ If you already have an AWS account, know your Amazon RDS requirements, and prefe
 ## Sign up for an AWS account
 <a name="sign-up-for-aws"></a>
 
-To get started with AWS, you need an AWS account. For information about creating an AWS account, see [Getting started with an AWS account](https://docs.aws.amazon.com//accounts/latest/reference/getting-started.html) in the *AWS Account Management Reference Guide*.
+To get started with AWS, you need an AWS account. For information about creating an AWS account, see [Getting started with an AWS account](https://docs.aws.amazon.com/accounts/latest/reference/getting-started.html) in the *AWS Account Management Reference Guide*.
 
 ## Determine requirements
 <a name="CHAP_SettingUp.Requirements"></a>
@@ -102,8 +102,6 @@ You can use the VPC security group that you just created as the security group f
 If you use a default VPC, a default subnet group spanning all of the VPC's subnets is created for you. When you create a DB instance, you can select the default VPC and use **default** for **DB Subnet Group**.
 
 After you have completed the setup requirements, you can create a DB instance using your requirements and security group. To do so, follow the instructions in [Creating an Amazon RDS DB instance](USER_CreateDBInstance.md). For information about getting started by creating a DB instance that uses a specific DB engine, see the relevant documentation in the following table.
-
-****
 
 | Database engine | Documentation |
 | --- | --- |

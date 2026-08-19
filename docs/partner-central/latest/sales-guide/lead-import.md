@@ -22,7 +22,7 @@ To ensure your data is formatted correctly, download the CSV template from the *
 | City | Max 255 characters | Customer's city of operation. | Seattle |
 | State Or Region | Free text | State, province, or region within the country. | WA |
 | Postal Code | Max 20 characters | ZIP or postal code. | 98101 |
-| Industry | Predefined value | Industry vertical. Must match an accepted value. For more information about accepted values, see the [CreateEngagement API reference](https://docs.aws.amazon.com//partner-central/latest/APIReference/API_CreateEngagement.html). | Software and Internet |
+| Industry | Predefined value | Industry vertical. Must match an accepted value. For more information about accepted values, see the [CreateEngagement API reference](https://docs.aws.amazon.com/partner-central/latest/APIReference/API_CreateEngagement.html). | Software and Internet |
 | Website URL | 4–255 characters, URL format | Customer's company website URL. | https://acme.com |
 | First Name | Max 80 characters | First name of the primary contact. | Jane |
 | Last Name | Max 80 characters | Last name of the primary contact. | Doe |
@@ -32,7 +32,7 @@ To ensure your data is formatted correctly, download the CSV template from the *
 | Use Case | Max 255 characters | A description of the AWS use case or workload the lead relates to. | Cloud Migration |
 | Business Problem | Max 2000 characters | A description of the customer's core business challenge or pain point. | Looking to modernize legacy infrastructure and migrate workloads to AWS |
 
-The service validates each field (required fields, format constraints, and enum values). Invalid values return specific error codes and messages in the results file. For more information about accepted field values and constraints, see the [CreateEngagement API reference](https://docs.aws.amazon.com//partner-central/latest/APIReference/API_CreateEngagement.html).
+The service validates each field (required fields, format constraints, and enum values). Invalid values return specific error codes and messages in the results file. For more information about accepted field values and constraints, see the [CreateEngagement API reference](https://docs.aws.amazon.com/partner-central/latest/APIReference/API_CreateEngagement.html).
 
 ## Import process
 <a name="lead-import-process"></a>
@@ -62,7 +62,7 @@ When rows fail during import, you can download a results CSV file from the **Dow
 | --- | --- | --- |
 | MALFORMED\_ROW | The row is entirely empty or contains only whitespace. | Remove the empty row, or populate at least one field. |
 | DUPLICATE\_ROW | The Row ID value has already appeared in an earlier row in the same file. | Ensure each row has a unique Row ID, or remove the duplicate rows. |
-| API\_ERROR | The service rejected the row due to a validation failure (for example, missing required field, invalid format, or unrecognized enum value). | Check the Error Message column for the specific field and reason. Common causes: missing Company Name, missing Email, invalid Country Code, invalid Industry value. Fix the data and re-upload. For more information about accepted field values, see the [CreateEngagement API reference](https://docs.aws.amazon.com//partner-central/latest/APIReference/API_CreateEngagement.html). |
+| API\_ERROR | The service rejected the row due to a validation failure (for example, missing required field, invalid format, or unrecognized enum value). | Check the Error Message column for the specific field and reason. Common causes: missing Company Name, missing Email, invalid Country Code, invalid Industry value. Fix the data and re-upload. For more information about accepted field values, see the [CreateEngagement API reference](https://docs.aws.amazon.com/partner-central/latest/APIReference/API_CreateEngagement.html). |
 
 ## Failed records CSV
 <a name="lead-import-failed-records"></a>

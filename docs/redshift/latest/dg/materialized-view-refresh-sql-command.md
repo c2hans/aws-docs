@@ -88,7 +88,7 @@ The COUNT, SUM, MIN, MAX, and AVG aggregate functions are supported.
   +  Delta Lake
   +  Hudi
 
-  Incremental refresh is supported for materialized views defined using formats other than those listed above. For more information, see [Materialized views on external data lake tables in Amazon Redshift SpectrumMaterialized views on external data lake tables](materialized-view-external-table.md).
+  Incremental refresh is supported for materialized views defined using formats other than those listed above. For more information, see [Materialized views on external data lake tables in Amazon Redshift Spectrum](materialized-view-external-table.md).
 + Mutable functions, such as date-time functions, RANDOM and non-STABLE user-defined functions.
 + For limitations regarding incremental refresh for zero-ETL integrations, see [Considerations when using zero-ETL integrations with Amazon Redshift](https://docs.aws.amazon.com/redshift/latest/mgmt/zero-etl.reqs-lims.html).
 + Accessing tables from more than one database.

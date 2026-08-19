@@ -33,7 +33,7 @@ You can now perform directory administration tasks using the Active Directory to
 
 **To promote a user to a directory administrator**
 **Note**
-This procedure applies only to directories created with Simple AD, not AWS Managed AD. For directories created with AWS Managed AD, see [ Manage Users and Groups in AWS Managed Microsoft AD](https://docs.aws.amazon.com//directoryservice/latest/admin-guide/ms_ad_manage_users_groups.html) in the *AWS Directory Service Administration Guide*.
+This procedure applies only to directories created with Simple AD, not AWS Managed AD. For directories created with AWS Managed AD, see [ Manage Users and Groups in AWS Managed Microsoft AD](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_ad_manage_users_groups.html) in the *AWS Directory Service Administration Guide*.
 
 1. Open the Active Directory Users and Computers tool.
 
@@ -57,7 +57,7 @@ You can create new users from the Amazon WorkSpaces console only during the proc
 Before you can remove a user, you must delete the WorkSpace assigned to that user. For more information, see [Delete a WorkSpace in WorkSpaces Personal](delete-workspaces.md).
 
 The process you use for managing users and groups depends on which type of directory you're using.
-+ If you're using AWS Managed Microsoft AD, see [ Manage Users and Groups in AWS Managed Microsoft AD](https://docs.aws.amazon.com//directoryservice/latest/admin-guide/ms_ad_manage_users_groups.html) in the *AWS Directory Service Administration Guide*.
++ If you're using AWS Managed Microsoft AD, see [ Manage Users and Groups in AWS Managed Microsoft AD](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_ad_manage_users_groups.html) in the *AWS Directory Service Administration Guide*.
 + If you're using Simple AD, see [ Manage Users and Groups in Simple AD](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/simple_ad_manage_users_groups.html) in the *AWS Directory Service Administration Guide*.
 + If you use Microsoft Active Directory through AD Connector or a trust relationship, you can manage users and groups using the [ Active Directory module](https://docs.microsoft.com/powershell/module/activedirectory/).
 

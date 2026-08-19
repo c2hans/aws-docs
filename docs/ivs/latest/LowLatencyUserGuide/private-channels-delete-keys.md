@@ -43,7 +43,7 @@ DeletePlaybackKeyPair operation: ResourceNotFoundException:
 ## API Request
 <a name="private-channels-delete-api"></a>
 
-For usage information, see [DeletePlaybackKeyPair](https://docs.aws.amazon.com//ivs/latest/LowLatencyAPIReference/API_DeletePlaybackKeyPair.html) in the *IVS Low-Latency Streaming API Reference*.
+For usage information, see [DeletePlaybackKeyPair](https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_DeletePlaybackKeyPair.html) in the *IVS Low-Latency Streaming API Reference*.
 
 ```
 POST /DeletePlaybackKeyPair HTTP/1.1

@@ -19,7 +19,7 @@ If the IAM role has the exact same name in a current the member account, these r
 
 **To change a role from self-managed to StackSets-managed**
 
-1. Access the AWS Identity and Access Management (IAM) console at [https://console.aws.amazon.com//iamv2/home?#/](https://console.aws.amazon.com//iamv2/home?#/) with the member account that has a self-managed role status.
+1. Access the AWS Identity and Access Management (IAM) console at [https://console.aws.amazon.com/iamv2/home?#/](https://console.aws.amazon.com/iamv2/home?#/) with the member account that has a self-managed role status.
 
 1. In the navigation pane, choose **Roles**.
 

@@ -21,7 +21,7 @@ At a high level, the process for inviting accounts to contribute to a behavior g
    + AWS GovCloud (US-East) Region
    + AWS GovCloud (US-West) Region
 
-   For other Regions, you can `DisableEmailNotification` using the [CreateMembers](https://docs.aws.amazon.com//detective/latest/APIReference/API_CreateMembers.html) operation of the Detective API. If `DisableEmailNotification` is set to true, then Detective will not send invitations to the member accounts. This is a useful setting for accounts that are managed centrally.
+   For other Regions, you can `DisableEmailNotification` using the [CreateMembers](https://docs.aws.amazon.com/detective/latest/APIReference/API_CreateMembers.html) operation of the Detective API. If `DisableEmailNotification` is set to true, then Detective will not send invitations to the member accounts. This is a useful setting for accounts that are managed centrally.
 
 1. The member account accepts or declines the invitation.
 

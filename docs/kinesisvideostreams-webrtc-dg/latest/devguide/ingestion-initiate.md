@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams-webrtc-dg/latest/dev
 # Connect to the storage session
 <a name="ingestion-initiate"></a>
 
-Follow these procedures to create the storage session and start the WebRTC connection process. The master participant should call [JoinStorageSession](https://docs.aws.amazon.com//kinesisvideostreams/latest/dg/API_webrtc_JoinStorageSession.html). Viewer participants should call [JoinStorageSessionAsViewer](https://docs.aws.amazon.com//kinesisvideostreams/latest/dg/API_webrtc_JoinStorageSessionAsViewer.html).
+Follow these procedures to create the storage session and start the WebRTC connection process. The master participant should call [JoinStorageSession](https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/API_webrtc_JoinStorageSession.html). Viewer participants should call [JoinStorageSessionAsViewer](https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/API_webrtc_JoinStorageSessionAsViewer.html).
 
 This will have the storage session send an SDP offer and ICE candidates through signaling to the master participant connected through [ConnectAsMaster](ConnectAsMaster.md), or the specified viewer participant connected through [ConnectAsViewer](ConnectAsViewer.md).
 
@@ -14,7 +14,7 @@ This will have the storage session send an SDP offer and ICE candidates through 
 ------
 #### [ AWS Management Console ]
 
-   1. Open the [Kinesis Video Streams Signaling Channels console](https://console.aws.amazon.com//kinesisvideo/home/#/signalingChannels).
+   1. Open the [Kinesis Video Streams Signaling Channels console](https://console.aws.amazon.com/kinesisvideo/home/#/signalingChannels).
 
    1. Choose the name of your signaling channel.
 
@@ -23,13 +23,13 @@ This will have the storage session send an SDP offer and ICE candidates through 
 ------
 #### [ AWS CLI ]
 
-   Verify that you have the AWS CLI installed and configured. For more information, see the [AWS Command Line Interface User Guide](https://docs.aws.amazon.com//cli/latest/userguide/).
+   Verify that you have the AWS CLI installed and configured. For more information, see the [AWS Command Line Interface User Guide](https://docs.aws.amazon.com/cli/latest/userguide/).
 
-   For installation instructions, see the [AWS Command Line Interface User Guide](https://docs.aws.amazon.com//cli/latest/userguide/getting-started-install.html#getting-started-install-instructions). After installation, [configure the AWS CLI](https://docs.aws.amazon.com//cli/latest/userguide/getting-started-quickstart.html#getting-started-quickstart-new) with credentials and region.
+   For installation instructions, see the [AWS Command Line Interface User Guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html#getting-started-install-instructions). After installation, [configure the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-quickstart.html#getting-started-quickstart-new) with credentials and region.
 
-   Alternatively, open the AWS CloudShell terminal, which has the AWS CLI installed and configured. See the [AWS CloudShell User Guide](https://docs.aws.amazon.com//cloudshell/latest/userguide/welcome.html#how-to-get-started) for more information.
+   Alternatively, open the AWS CloudShell terminal, which has the AWS CLI installed and configured. See the [AWS CloudShell User Guide](https://docs.aws.amazon.com/cloudshell/latest/userguide/welcome.html#how-to-get-started) for more information.
 
-   Run the following [Describe-Signaling-Channel](https://docs.aws.amazon.com//cli/latest/reference/kinesisvideo/describe-signaling-channel.html) command using the AWS CLI:
+   Run the following [Describe-Signaling-Channel](https://docs.aws.amazon.com/cli/latest/reference/kinesisvideo/describe-signaling-channel.html) command using the AWS CLI:
 
    ```
    aws kinesisvideo describe-signaling-channel \
@@ -63,7 +63,7 @@ This will have the storage session send an SDP offer and ICE candidates through 
 
    You can view the complete code example for [JoinStorageSession](https://github.com/awslabs/amazon-kinesis-video-streams-webrtc-sdk-js/blob/master/examples/joinStorageSession.js) or [JoinStorageSessionAsViewer](https://github.com/awslabs/amazon-kinesis-video-streams-webrtc-sdk-js/blob/master/examples/joinStorageSessionAsViewer.js).
 
-   Create the Kinesis Video Streams client. This is used to call the [DescribeSignalingChannel API](https://docs.aws.amazon.com//kinesisvideostreams/latest/dg/API_DescribeSignalingChannel.html).
+   Create the Kinesis Video Streams client. This is used to call the [DescribeSignalingChannel API](https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/API_DescribeSignalingChannel.html).
 
    ```
    const clientConfig = {
@@ -93,7 +93,7 @@ This will have the storage session send an SDP offer and ICE candidates through 
 
 ------
 
-1. Obtain the WEBRTC endpoint. Requests to [JoinStorageSession](https://docs.aws.amazon.com//kinesisvideostreams/latest/dg/API_webrtc_JoinStorageSession.html) or [JoinStorageSessionAsViewer](https://docs.aws.amazon.com//kinesisvideostreams/latest/dg/API_webrtc_JoinStorageSessionAsViewer.html) for a particular signaling channel must be made to its designated endpoint.
+1. Obtain the WEBRTC endpoint. Requests to [JoinStorageSession](https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/API_webrtc_JoinStorageSession.html) or [JoinStorageSessionAsViewer](https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/API_webrtc_JoinStorageSessionAsViewer.html) for a particular signaling channel must be made to its designated endpoint.
 
 ------
 #### [ AWS Management Console ]
@@ -101,18 +101,18 @@ This will have the storage session send an SDP offer and ICE candidates through 
 **Note**
 This operation isn't currently supported in the Kinesis Video Streams AWS Management Console.
 
-   Open the AWS CloudShell terminal, which has the AWS CLI installed and configured. See the [AWS CloudShell User Guide](https://docs.aws.amazon.com//cloudshell/latest/userguide/welcome.html#how-to-get-started) for more information.
+   Open the AWS CloudShell terminal, which has the AWS CLI installed and configured. See the [AWS CloudShell User Guide](https://docs.aws.amazon.com/cloudshell/latest/userguide/welcome.html#how-to-get-started) for more information.
 
    Follow the instructions in the AWS CLI tab.
 
 ------
 #### [ AWS CLI ]
 
-   Verify that you have the AWS CLI installed and configured. For more information, see the [AWS Command Line Interface](https://docs.aws.amazon.com//cli/latest/userguide/) documentation.
+   Verify that you have the AWS CLI installed and configured. For more information, see the [AWS Command Line Interface](https://docs.aws.amazon.com/cli/latest/userguide/) documentation.
 
-   For installation instructions, see the [AWS Command Line Interface User Guide](https://docs.aws.amazon.com//cli/latest/userguide/getting-started-install.html#getting-started-install-instructions). After installation, [configure the AWS CLI](https://docs.aws.amazon.com//cli/latest/userguide/getting-started-quickstart.html#getting-started-quickstart-new) with credentials and region.
+   For installation instructions, see the [AWS Command Line Interface User Guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html#getting-started-install-instructions). After installation, [configure the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-quickstart.html#getting-started-quickstart-new) with credentials and region.
 
-   Alternatively, open the AWS CloudShell terminal, which has the AWS CLI installed and configured. See the [AWS CloudShell User Guide](https://docs.aws.amazon.com//cloudshell/latest/userguide/welcome.html#how-to-get-started) for more information.
+   Alternatively, open the AWS CloudShell terminal, which has the AWS CLI installed and configured. See the [AWS CloudShell User Guide](https://docs.aws.amazon.com/cloudshell/latest/userguide/welcome.html#how-to-get-started) for more information.
 
    Run the `Get-Signaling-Channel-Endpoint` command in the AWS CLI:
 
@@ -141,7 +141,7 @@ This operation isn't currently supported in the Kinesis Video Streams AWS Manage
 
    This code snippet shows you how to call the `GetSignalingChannelEndpoint` API for a Kinesis Video Streams with WebRTC signaling channel using the AWS SDK for JavaScript v2. The syntax will differ from other AWS SDKs, but the general flow will be the same. View a complete code example for [JoinStorageSession](https://github.com/awslabs/amazon-kinesis-video-streams-webrtc-sdk-js/blob/master/examples/joinStorageSession.js) or [JoinStorageSessionAsViewer](https://github.com/awslabs/amazon-kinesis-video-streams-webrtc-sdk-js/blob/master/examples/joinStorageSessionAsViewer.js).
 
-   Create the Kinesis Video Streams client. This is the client used to call the [DescribeSignalingChannel API](https://docs.aws.amazon.com//kinesisvideostreams/latest/dg/API_DescribeSignalingChannel.html).
+   Create the Kinesis Video Streams client. This is the client used to call the [DescribeSignalingChannel API](https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/API_DescribeSignalingChannel.html).
 
    If you created a Kinesis Video Streams client earlier to call `DescribeSignalingChannel`, you can reuse the same client.
 
@@ -184,18 +184,18 @@ This operation isn't currently supported in the Kinesis Video Streams AWS Manage
 **Note**
 This operation isn't currently supported in the Kinesis Video Streams AWS Management Console.
 
-   Open the AWS CloudShell terminal, which has the AWS CLI installed and configured. See the [AWS CloudShell User Guide](https://docs.aws.amazon.com//cloudshell/latest/userguide/welcome.html#how-to-get-started) for more information.
+   Open the AWS CloudShell terminal, which has the AWS CLI installed and configured. See the [AWS CloudShell User Guide](https://docs.aws.amazon.com/cloudshell/latest/userguide/welcome.html#how-to-get-started) for more information.
 
    Follow the instructions in the AWS CLI tab.
 
 ------
 #### [ AWS CLI ]
 
-   Verify that you have the AWS CLI installed and configured. For more information, see the [AWS Command Line Interface](https://docs.aws.amazon.com//cli/latest/userguide/) documentation.
+   Verify that you have the AWS CLI installed and configured. For more information, see the [AWS Command Line Interface](https://docs.aws.amazon.com/cli/latest/userguide/) documentation.
 
-   For installation instructions, see the [AWS Command Line Interface User Guide](https://docs.aws.amazon.com//cli/latest/userguide/getting-started-install.html#getting-started-install-instructions). After installation, [configure the AWS CLI](https://docs.aws.amazon.com//cli/latest/userguide/getting-started-quickstart.html#getting-started-quickstart-new) with credentials and region.
+   For installation instructions, see the [AWS Command Line Interface User Guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html#getting-started-install-instructions). After installation, [configure the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-quickstart.html#getting-started-quickstart-new) with credentials and region.
 
-   Alternatively, open the AWS CloudShell terminal, which has the AWS CLI installed and configured. See the [AWS CloudShell User Guide](https://docs.aws.amazon.com//cloudshell/latest/userguide/welcome.html#how-to-get-started) for more information.
+   Alternatively, open the AWS CloudShell terminal, which has the AWS CLI installed and configured. See the [AWS CloudShell User Guide](https://docs.aws.amazon.com/cloudshell/latest/userguide/welcome.html#how-to-get-started) for more information.
 
    Run the `Join-Storage-Session` command for master participants in the AWS CLI using the channel ARN and WEBRTC endpoint from previous steps:
 

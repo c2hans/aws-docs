@@ -53,7 +53,7 @@ Your Envoy proxy is unable to connect to the App Mesh Envoy management service. 
 + gRPC errors
 
 **Resolution**
-Make sure that your Envoy proxy has access to the internet or to a private [VPC endpoint](vpc-endpoints.md) and that your [security groups](https://docs.aws.amazon.com//vpc/latest/userguide/VPC_SecurityGroups.html) allow outbound traffic on port 443. App Mesh’s public Envoy management service endpoints follow the fully qualified domain name (FQDN) format.
+Make sure that your Envoy proxy has access to the internet or to a private [VPC endpoint](vpc-endpoints.md) and that your [security groups](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_SecurityGroups.html) allow outbound traffic on port 443. App Mesh’s public Envoy management service endpoints follow the fully qualified domain name (FQDN) format.
 
 ```
 # App Mesh Production Endpoint

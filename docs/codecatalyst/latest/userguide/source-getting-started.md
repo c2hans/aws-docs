@@ -45,7 +45,7 @@ This functionality requires that generative AI features are enabled for the spac
 
 1. Under **Name your project**, enter the name that you want to assign to your project and its associated resource names. The name must be unique within your space.
 
-1. (Optional) By default, the source code created by the blueprint is stored in a CodeCatalyst repository. Alternatively, you can choose to store the blueprint's source code in a third-party repository. For more information, see [Add functionality to projects with extensions in CodeCatalystAdd functionality to projects with extensions](extensions.md).
+1. (Optional) By default, the source code created by the blueprint is stored in a CodeCatalyst repository. Alternatively, you can choose to store the blueprint's source code in a third-party repository. For more information, see [Add functionality to projects with extensions in CodeCatalyst](extensions.md).
 **Important**
 CodeCatalyst doesn't support detecting changes in the default branch for linked repositories. To change the default branch for a linked repository, you must first unlink it from CodeCatalyst, change the default branch, and then link it again. For more information, see [Linking GitHub repositories, Bitbucket repositories, GitLab project repositories, and Jira projects in CodeCatalyst](extensions-link.md).
 As a best practice, always make sure you have the latest version of the extension before you link a repository.

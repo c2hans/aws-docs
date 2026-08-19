@@ -14,8 +14,6 @@ Remove the specified TGW static route from the specified transit gateway (TGW) r
 ## Change Type Details
 <a name="ct-0rmgrnr9w8mzh-MMNr-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-0rmgrnr9w8mzh |

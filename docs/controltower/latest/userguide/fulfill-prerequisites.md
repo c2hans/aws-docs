@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/fulfill-pr
 
 1.  Drop the account from its existing organization. You must provide a separate payment method if you use this approach.
 
-1.  Invite the account to join the AWS Control Tower organization. For more information, see [Inviting an AWS account to join your organization](https://docs.aws.amazon.com//organizations/latest/userguide/orgs_manage_accounts_invites.html) in the *AWS Organizations User Guide*.
+1.  Invite the account to join the AWS Control Tower organization. For more information, see [Inviting an AWS account to join your organization](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_accounts_invites.html) in the *AWS Organizations User Guide*.
 
 1.  Accept the invitation. The account shows up in the root of the organization. This step moves the account into the same organization as AWS Control Tower. and establishes SCPs and consolidated billing.
 

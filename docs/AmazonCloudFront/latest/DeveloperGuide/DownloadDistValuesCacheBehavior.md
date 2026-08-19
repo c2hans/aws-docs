@@ -75,8 +75,6 @@ You can use the following wildcard characters in your path pattern:
 
 The following examples show how the wildcard characters work:
 
-****
-
 | Path pattern | Files that match the path pattern |
 | --- | --- |
 | `*.jpg` | All .jpg files. |

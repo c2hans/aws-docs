@@ -22,8 +22,6 @@ Even after the retention period expires, you can't modify a WORM file. You can o
 
 You can specify the retention period using several different units of time. The following table lists the specific ranges that are supported.
 
-****
-
 | Type | Value | Notes |
 | --- | --- | --- |
 | Seconds | 0 - 65,535 |  |

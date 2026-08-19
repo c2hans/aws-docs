@@ -14,8 +14,6 @@ Update the existing S3 Block Public Access setting for a specified bucket. Block
 ## Change Type Details
 <a name="ct-0z8w5t4t1ti5m-MASu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-0z8w5t4t1ti5m |

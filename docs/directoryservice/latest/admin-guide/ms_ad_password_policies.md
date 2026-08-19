@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_a
 
 AWS Managed Microsoft AD enables you to define and assign different password and account lockout policies (also referred to as [fine-grained password policies](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/adac/introduction-to-active-directory-administrative-center-enhancements--level-100-#fine_grained_pswd_policy_mgmt)) for groups of users you manage in your AWS Managed Microsoft AD domain. When you create an AWS Managed Microsoft AD directory, a default domain policy is created and applied to the Active Directory. This policy includes the following settings:
 
-****
-
 | Policy | Setting |
 | --- | --- |
 | Enforce password history | 24 passwords remembered |
@@ -35,8 +33,6 @@ AWS provides a set of fine-grained password policies in AWS Managed Microsoft AD
 
  There are differences in how the fine-grained password policies are applied depending on whether the password was reset or changed. Domain users can change their own password. An Active Directory administrator or user with the necessary permissions can [ reset users passwords](ms_ad_manage_users_groups_reset_password.md). See the following chart for more information.
 
-****
-
 | Policy | Password Reset | Password Change |
 | --- | --- | --- |
 | Enforce password history | ![](http://docs.aws.amazon.com/directoryservice/latest/admin-guide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/directoryservice/latest/admin-guide/images/icon-yes.png) Yes |
@@ -56,8 +52,6 @@ AWS Managed Microsoft AD includes five fine-grained policies with a non-editable
 <a name="supportedpwdpolicies"></a>
 
 The following table lists the five policies included in your AWS Managed Microsoft AD directory and their assigned precedence value. For more information, see [Precedence](#precedence).
-
-****
 
 | Policy name | Precedence |
 | --- | --- |

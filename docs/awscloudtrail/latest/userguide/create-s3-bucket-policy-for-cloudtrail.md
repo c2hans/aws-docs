@@ -100,7 +100,7 @@ If the existing bucket already has one or more policies attached, add the statem
 ## Receiving log files from other accounts
 <a name="aggregration-option"></a>
 
-You can configure CloudTrail to deliver log files from multiple AWS accounts to a single S3 bucket. For more information, see [Receiving CloudTrail log files from multiple accountsRedacting bucket owner account IDs for data events called by other accounts](cloudtrail-receive-logs-from-multiple-accounts.md).
+You can configure CloudTrail to deliver log files from multiple AWS accounts to a single S3 bucket. For more information, see [Receiving CloudTrail log files from multiple accounts](cloudtrail-receive-logs-from-multiple-accounts.md).
 
 ## Create or update an Amazon S3 bucket to use to store the log files for an organization trail
 <a name="org-trail-bucket-policy"></a>

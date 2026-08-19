@@ -34,7 +34,7 @@ Links between RTB Fabric users can be created through the AWS Management Console
 
    Note the following:
    + Logs are delivered via Amazon CloudWatch Vended Logs, which provides delivery directly to Amazon S3, Amazon Data Firehose, or Amazon CloudWatch Logs.
-   + To configure log delivery destinations, you must use the RTB Fabric API. For more information, see the [AWS RTB Fabric API Reference](https://docs.aws.amazon.com//rtb-fabric/latest/api/).
+   + To configure log delivery destinations, you must use the RTB Fabric API. For more information, see the [AWS RTB Fabric API Reference](https://docs.aws.amazon.com/rtb-fabric/latest/api/).
    + AWS does not access or read your log data.
 
 1. In the **Target details** section, enter the **Target gateway ID** of the target gateway you want to link with. Enter a valid gateway ID (for example: **rtb-gw-source123**).

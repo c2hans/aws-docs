@@ -14,8 +14,6 @@ Remove one or more Certificates attached to the ELB Listener. If a drift is intr
 ## Change Type Details
 <a name="ct-0tpbr6lfa3zng-MAAr-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-0tpbr6lfa3zng |

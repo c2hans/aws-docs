@@ -16,8 +16,6 @@ Table configurations are user-controlled properties that a user can set to chang
 
 Cost optimization recommendations has the following table configurations:
 
-****
-
 | Configuration name | Description | Valid values |
 | --- | --- | --- |
 | INCLUDE\_ALL\_RECOMMENDATIONS | When set to "FALSE", only the highest savings value recommendation is kept in the table from any set of recommendations that are incompatible with one another. For example, only "Terminate instance" is kept from a recommendation to terminate an instance and a recommendation to rightsize the same instance.<br />When set to "TRUE", all recommendations are kept in the table.<br />This is also known as **Group related recommendations** in the Cost Optimization Hub console. For more information, see [Grouping related recommendations](https://docs.aws.amazon.com/cost-management/latest/userguide/coh-group-recommendations.html) in the *AWS Cost Management User Guide*. | TRUE, FALSE |

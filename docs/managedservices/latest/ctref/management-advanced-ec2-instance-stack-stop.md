@@ -14,8 +14,6 @@ Stop up to 50 running EC2 instances. If you specify an EC2 instance that is part
 ## Change Type Details
 <a name="ct-3mvvt2zkyveqj-MAEs-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-3mvvt2zkyveqj |

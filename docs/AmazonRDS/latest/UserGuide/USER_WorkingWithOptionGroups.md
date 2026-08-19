@@ -9,8 +9,6 @@ Some DB engines offer additional features that make it easier to manage data and
 
  Amazon RDS supports options for the following database engines:
 
-****
-
 | Database engine | Relevant documentation |
 | --- | --- |
 | `Db2` | [Options for RDS for Db2 DB instances](Db2.Options.md) |

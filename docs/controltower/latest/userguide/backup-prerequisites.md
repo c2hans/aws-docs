@@ -67,7 +67,7 @@ Also, you must select or create a multi-Region AWS Key Management Service (KMS) 
 
 ------
 
-This example policy gives all accounts in your organization access to their encrypted backup data. Use [AWS global condition keys](https://docs.aws.amazon.com//IAM/latest/UserGuide/reference_policies_condition-keys.html) and [AWS KMS condition keys](https://docs.aws.amazon.com//kms/latest/developerguide/policy-conditions.html) to refine the permissions, depending on which principals require access to your backups.
+This example policy gives all accounts in your organization access to their encrypted backup data. Use [AWS global condition keys](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html) and [AWS KMS condition keys](https://docs.aws.amazon.com/kms/latest/developerguide/policy-conditions.html) to refine the permissions, depending on which principals require access to your backups.
 
 **Note**
 Your multi-region AWS KMS key must be replicated for every AWS Region that you plan to govern with AWS Control Tower.

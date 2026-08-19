@@ -25,8 +25,6 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_dataexchange-actions-as-permissions).
 
-****
-
 - **   AcceptDataGrant  **
   - **IAM action:**  [dataexchange:AcceptDataGrant](#list_dataexchange-action-AcceptDataGrant)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [aws-marketplace:Subscribe](https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-iam-users-groups-policies.html)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
@@ -235,8 +233,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
 <a name="list_dataexchange-actions-as-permissions"></a>
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
-
-****
 
 - **   [AcceptDataGrant](https://docs.aws.amazon.com/data-exchange/latest/apireference/API_AcceptDataGrant.html)  **
   - **Description:** Grants permission to accept a data grant
@@ -474,8 +470,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 The following actions are defined by AWS Data Exchange but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 - **   [CreateAsset](https://docs.aws.amazon.com/data-exchange/latest/userguide/api-permissions-ref.html)  **
   - **Description:** Grants permission to create an asset (for example, in a Job)
   - **Resource types (\*required):** [revisions\*](#list_dataexchange-resource-revisions)
@@ -499,8 +493,6 @@ The following actions are defined by AWS Data Exchange but are not directly invo
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
 
-****
-
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
 |  [assets](https://docs.aws.amazon.com/data-exchange/latest/userguide/data-sets.html#assets)  | arn:${Partition}:dataexchange:${Region}:${Account}:data-sets/${DataSetId}/revisions/${RevisionId}/assets/${AssetId} | [aws:ResourceTag/${TagKey}](#list_dataexchange-aws_ResourceTag___TagKey_) |
@@ -517,8 +509,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_dataexchange-policy-keys"></a>
 
 AWS Data Exchange defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

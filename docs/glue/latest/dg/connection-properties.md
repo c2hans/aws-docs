@@ -95,7 +95,7 @@ Choose the security groups that are associated with your data store. AWS Glue re
 Use the following properties to set up a OpenSearch Service connection for AWS Glue ETL jobs.
 
 **Domain endpoint**
-An Amazon OpenSearch Service domain endpoint will have the following default form, https://search-{{domainName}}-{{unstructuredIdContent}}.{{region}}.es.amazonaws.com. For more information on identifying your domain endpoint, see [Creating and managing Amazon OpenSearch Service domains](https://docs.aws.amazon.com//opensearch-service/latest/developerguide/createupdatedomains.html) in the Amazon OpenSearch Service documentation.
+An Amazon OpenSearch Service domain endpoint will have the following default form, https://search-{{domainName}}-{{unstructuredIdContent}}.{{region}}.es.amazonaws.com. For more information on identifying your domain endpoint, see [Creating and managing Amazon OpenSearch Service domains](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/createupdatedomains.html) in the Amazon OpenSearch Service documentation.
 
 **Port**
 The port open on the endpoint.

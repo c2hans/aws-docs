@@ -19,7 +19,7 @@ You can use Athena to query variants and annotations. Before you run any queries
 
 To configure a query results location, follow these steps.
 
-1. Open the Athena console: [Athena console](https://console.aws.amazon.com//athena)
+1. Open the Athena console: [Athena console](https://console.aws.amazon.com/athena)
 
 1. In the primary navigation bar, choose **Query editor**.
 
@@ -32,7 +32,7 @@ To configure a query results location, follow these steps.
 
 To configure a workgroup, follow these steps.
 
-1. Open the Athena console: [Athena console](https://console.aws.amazon.com//athena)
+1. Open the Athena console: [Athena console](https://console.aws.amazon.com/athena)
 
 1. In the primary navigation bar, choose **Workgroups**, then **Create workgroup**.
 

@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon OpenSearch provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="opensearch-GetAutoOptimizeJob"></a>[GetAutoOptimizeJob](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/serverless-auto-optimize.html) | Get the Auto Optimize Job details | Read |

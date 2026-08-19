@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsc
 
 AWS CloudShell provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="cloudshell-ApproveCommand"></a>[ApproveCommand](https://docs.aws.amazon.com/cloudshell/latest/userguide/sec-auth-with-identities.html#ApproveCommand) | Approve a command sent by another AWS service | Read |

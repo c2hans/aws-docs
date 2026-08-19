@@ -21,7 +21,7 @@ When you DECLARE a cursor, the result-set size specifications for Amazon Redshif
 + For workgroups without Enhanced VPC Routing (EVR), you need two Availability Zones (AZs).
 + For workgroups with EVR, you need three AZs.
 
-To see the subnet to Availability Zone ID mapping, go to the VPC console and choose **Subnets** to see the list of subnet IDs with their Availability Zone IDs. Verify that your subnet is mapped to a supported Availability Zone ID. To create a subnet, see [Create a subnet in your VPC](https://docs.aws.amazon.com//vpc/latest/userguide/working-with-vpcs.html#AddaSubnet) in the *Amazon VPC User Guide*.
+To see the subnet to Availability Zone ID mapping, go to the VPC console and choose **Subnets** to see the list of subnet IDs with their Availability Zone IDs. Verify that your subnet is mapped to a supported Availability Zone ID. To create a subnet, see [Create a subnet in your VPC](https://docs.aws.amazon.com/vpc/latest/userguide/working-with-vpcs.html#AddaSubnet) in the *Amazon VPC User Guide*.
 
 *Two subnets (without EVR)* – You must have at least two subnets, and they must span across two Availability Zones.
 
@@ -78,7 +78,7 @@ With EVR, you also need free IP addresses when updating your workgroup to use mo
 
 ------
 
-For more information on allocating IP addresses, see [IP addressing](https://docs.aws.amazon.com//vpc/latest/userguide/how-it-works.html#vpc-ip-addressing) in the *Amazon VPC User Guide*.
+For more information on allocating IP addresses, see [IP addressing](https://docs.aws.amazon.com/vpc/latest/userguide/how-it-works.html#vpc-ip-addressing) in the *Amazon VPC User Guide*.
 
 *Storage space after migration* – When migrating small Amazon Redshift provisioned clusters to Amazon Redshift Serverless, you might see an increase in storage-space allocation after migration. This is a result of optimized storage-space allocation, resulting in preallocated storage space. This space is used over a period of time as data grows in Amazon Redshift Serverless.
 
@@ -86,7 +86,7 @@ For more information on allocating IP addresses, see [IP addressing](https://doc
 
 *Max query execution time * – Elapsed execution time for a query, in seconds. Execution time doesn't include time spent waiting in a queue. If a query exceeds the set execution time, Amazon Redshift Serverless stops the query. Valid values are 0–86,399.
 
-*Migrating for tables with interleaved sort keys * – When migrating Amazon Redshift provisioned clusters to Amazon Redshift Serverless, Redshift converts tables with interleaved sort keys and DISTSTYLE KEY to compound sort keys. The DISTSTYLE doesn't change. For more information on distribution styles, see [Working with data distribution styles](https://docs.aws.amazon.com//redshift/latest/dg/t_Distributing_data.html) in the Amazon Redshift Developer Guide. For more information on sort keys, see [Working with sort keys](https://docs.aws.amazon.com//redshift/latest/dg/t_Sorting_data.html).
+*Migrating for tables with interleaved sort keys * – When migrating Amazon Redshift provisioned clusters to Amazon Redshift Serverless, Redshift converts tables with interleaved sort keys and DISTSTYLE KEY to compound sort keys. The DISTSTYLE doesn't change. For more information on distribution styles, see [Working with data distribution styles](https://docs.aws.amazon.com/redshift/latest/dg/t_Distributing_data.html) in the Amazon Redshift Developer Guide. For more information on sort keys, see [Working with sort keys](https://docs.aws.amazon.com/redshift/latest/dg/t_Sorting_data.html).
 
 *VPC sharing* – You can create Amazon Redshift Serverless workgroups in a shared VPC. If you do so, we recommend that you don't delete the resource share as it can result in the workgroup becoming unavailable.
 

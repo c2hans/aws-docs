@@ -10,7 +10,7 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/baseline-a
 ## `DisableBaseline`
 <a name="disable-baseline"></a>
 
-For more information about this API operation, see [DisableBaseline](https://docs.aws.amazon.com//controltower/latest/APIReference/API_DisableBaseline.html).
+For more information about this API operation, see [DisableBaseline](https://docs.aws.amazon.com/controltower/latest/APIReference/API_DisableBaseline.html).
 
 `DisableBaseline` input:
 
@@ -39,7 +39,7 @@ aws controltower disable-baseline \
 ## `EnableBaseline`
 <a name="enable-baseline"></a>
 
-For more information about this API operation, see [EnableBaseline](https://docs.aws.amazon.com//controltower/latest/APIReference/API_EnableBaseline.html).
+For more information about this API operation, see [EnableBaseline](https://docs.aws.amazon.com/controltower/latest/APIReference/API_EnableBaseline.html).
 
 `EnableBaseline` input:
 
@@ -118,7 +118,7 @@ aws controltower enable-baseline \
 ## `GetBaseline`
 <a name="get-baseline"></a>
 
-For more information about this API operation, see [GetBaseline](https://docs.aws.amazon.com//controltower/latest/APIReference/API_GetBaseline.html).
+For more information about this API operation, see [GetBaseline](https://docs.aws.amazon.com/controltower/latest/APIReference/API_GetBaseline.html).
 
 `GetBaseline` input:
 
@@ -149,7 +149,7 @@ aws controltower get-baseline \
 ## `GetBaselineOperation`
 <a name="get-baseline-operation"></a>
 
-For more information about this API operation, see [GetBaselineOperation](https://docs.aws.amazon.com//controltower/latest/APIReference/API_GetBaselineOperation.html).
+For more information about this API operation, see [GetBaselineOperation](https://docs.aws.amazon.com/controltower/latest/APIReference/API_GetBaselineOperation.html).
 
 `GetBaselineOperation` input:
 
@@ -185,7 +185,7 @@ aws controltower get-baseline-operation \
 ## `GetEnabledBaseline`
 <a name="get-enabled-baseline"></a>
 
-For more information about this API operation, see [GetEnabledBaseline](https://docs.aws.amazon.com//controltower/latest/APIReference/API_GetEnabledBaseline.html).
+For more information about this API operation, see [GetEnabledBaseline](https://docs.aws.amazon.com/controltower/latest/APIReference/API_GetEnabledBaseline.html).
 
 `GetEnabledBaseline` input:
 
@@ -229,7 +229,7 @@ aws controltower get-enabled-baseline \
 ## `ListBaselines`
 <a name="list-baselines"></a>
 
-For more information about this API operation, see [ListBaselines](https://docs.aws.amazon.com//controltower/latest/APIReference/API_ListBaselines.html).
+For more information about this API operation, see [ListBaselines](https://docs.aws.amazon.com/controltower/latest/APIReference/API_ListBaselines.html).
 
 `ListBaselines` input (using optional inputs):
 
@@ -296,7 +296,7 @@ aws controltower list-baselines \
 
 The `ListEnabledBaselines` API has an optional parameter that allows you to view the baselines as they apply to the accounts that are members of an OU. The examples that follow show some CLI commands you can use to view the baselines for an account. AWS Control Tower refers to these baselines, which are enabled on the OU, but apply to each account within the OU, as *child enabled baselines*, because they derive their governance configuration from the baselines that are applied on the OU.
 
-For more information about this API operation, see [ListEnabledBaselines](https://docs.aws.amazon.com//controltower/latest/APIReference/API_ListEnabledBaselines.html).
+For more information about this API operation, see [ListEnabledBaselines](https://docs.aws.amazon.com/controltower/latest/APIReference/API_ListEnabledBaselines.html).
 
 `ListEnabledBaselines` input to show child enabled baselines:
 
@@ -485,7 +485,7 @@ aws controltower list-enabled-baselines \
 ## `ResetEnabledBaseline`
 <a name="reset-enabled-baseline"></a>
 
-For more information about this API operation, see [ResetEnabledBaseline](https://docs.aws.amazon.com//controltower/latest/APIReference/API_ResetEnabledBaseline.html).
+For more information about this API operation, see [ResetEnabledBaseline](https://docs.aws.amazon.com/controltower/latest/APIReference/API_ResetEnabledBaseline.html).
 
 `ResetEnabledbaseline` input:
 
@@ -514,7 +514,7 @@ aws controltower reset-enabled-baseline \
 ## `UpdateEnabledBaseline`
 <a name="update-enabled-baseline"></a>
 
-For more information about this API operation, see [UpdateEnabledBaseline](https://docs.aws.amazon.com//controltower/latest/APIReference/API_UpdateEnabledBaseline.html).
+For more information about this API operation, see [UpdateEnabledBaseline](https://docs.aws.amazon.com/controltower/latest/APIReference/API_UpdateEnabledBaseline.html).
 
 `UpdateEnabledBaseline` input:
 

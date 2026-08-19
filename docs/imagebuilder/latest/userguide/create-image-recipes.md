@@ -90,6 +90,13 @@ If you don't have an existing recipe, use the Image Builder pipeline wizard, or 
 
 Review the following constraints before you create an image recipe:
 + Your final image can contain at most nine AWS Marketplace product codes, combined from the base image and components. A product code is an identifier that AWS Marketplace attaches to a paid or supported AMI for billing and licensing.
+**Tip**
+Components published through AWS Marketplace can also carry product codes. Image Builder reads the product codes from each component's metadata. It counts the distinct product code IDs, along with the product codes on the base AMI, toward the limit.
+To check the product codes on a base AMI, run the Amazon EC2 [describe-images](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-images.html) command and query the `ProductCodes` field, as shown in the following example:
+
+  ```
+  aws ec2 describe-images --image-ids {{ami-example12345}} --query "Images[].ProductCodes"
+  ```
 + You can include up to 20 components (build and test combined). This is the default limit, which you can request to increase through AWS Support.
 + The same component can't appear more than once in a recipe.
 + All components must match the platform (Linux, Windows, or macOS) of your base image. Components must also support the OS version when that metadata is available.
@@ -122,10 +129,15 @@ To provide the data values as command line parameters, refer to the parameter na
      + **AMI ID** – Use when you have a specific AMI (for example, `ami-1234567890abcdef1`) that you want to customize. Because an AMI ID is static, we recommend an Image Builder image ARN or an SSM parameter instead when you want your recipe to pick up newer base images automatically.
      + **Image Builder image resource ARN** – Use when you want to build on top of an Image Builder image. This includes Amazon-managed images that Image Builder provides for the most popular operating systems, as well as images that you previously created. Specify the image ARN with a semantic version, or use a version wildcard to always get the latest version.
      + **AWS Systems Manager (SSM) Parameter Store parameter** – Use when you want your recipe to automatically pick up new AMI IDs without creating a new recipe version. Prefix the parameter with `ssm:`, followed by the parameter name or ARN. This is ideal for pipelines that should always use the latest Amazon Linux or Windows base image.
-     + **AWS Marketplace product ID** – Use when you subscribe to an AMI product in AWS Marketplace and want to customize it further.
+     + **AWS Marketplace product ID** – Use when you subscribe to an AMI product in AWS Marketplace and want to customize it further. You can specify the product ID in either of the following formats:
+       + A universally unique identifier (UUID), for example `722e1255-be34-4bbe-9ce6-80634c9d01f7`.
+       + A product ID with the `prod-` prefix, for example `prod-example12345`.
+
+       Subscribe to the product before you use it as a parent image. For more information, see [AWS Marketplace integration in Image Builder](integ-marketplace.md).
 **Note**
 When you use an AMI ID or an SSM parameter that resolves to an AMI, you must have access to that AMI in your account. The AMI must also exist in the same Region where Image Builder runs the build.
 The Linux and macOS examples specify an AMI ID, and the Windows example uses an Image Builder image ARN.
+The `parentImage` parameter accepts an AMI ID, an Image Builder image ARN, an `ssm:` parameter reference, or an AWS Marketplace product ID. If the value doesn't match one of these formats, Image Builder returns an `InvalidParameterValueException` for the `parentImage` parameter.
    + **semanticVersion** (string, required) – Enter the version number that you want to create in the format *<major>.<minor>.<patch>*. Image Builder supports automatic version incrementing for recipes, allowing you to use wildcard patterns in your recipe versions. When you create a recipe with a wildcard version such as `1.0.x`, Image Builder automatically increments the version (for example, `1.0.1`, `1.0.2`, `1.0.3`, and so on). This eliminates the need to manually track and increment recipe versions. To learn more about semantic versioning for Image Builder resources, see [Semantic versioning in Image Builder](ibhow-semantic-versioning.md).
    + **components** (array, optional) – Contains an array of `ComponentConfiguration` objects. Components are optional - you can create recipes without any components for testing or distribution workflows:
 **Note**
@@ -343,6 +355,7 @@ The following table lists common errors that you might encounter when you create
 | "Image Builder does not support configuring the SSM Agent on Windows" | You specified systemsManagerAgent with a Windows parent image. | Remove the additionalInstanceConfiguration.systemsManagerAgent block. |
 | "You've exceeded the maximum cumulative component size of 25 KB" | Too many or too-large parameters. | Reduce the parameter count or shorten parameter values. |
 | "Recipe can contain at most 9 marketplace products" | Too many AWS Marketplace product codes. | Reduce the number of AWS Marketplace components, or use a base image with fewer product codes. |
+| "Recipes with marketplace components must contain at least 1 build component" | The recipe references AWS Marketplace components but has no build component. | Add at least one build component to the recipe. |
 | "The supplied semantic version does not follow the required format" | An invalid version string. | Use the major.minor.patch format with one optional x wildcard. |
 | "Component ARN ... is deprecated and cannot be included in new recipes" (or "is disabled") | A referenced component has a DEPRECATED or DISABLED status. | Update to a current component version. |
 

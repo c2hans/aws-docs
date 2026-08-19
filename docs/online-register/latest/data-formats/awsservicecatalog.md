@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awss
 
 AWS Service Catalog provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="servicecatalog-DescribeConstraint"></a>[DescribeConstraint](https://docs.aws.amazon.com/servicecatalog/latest/dg/API_DescribeConstraint.html) | Describe a constraint | Read |

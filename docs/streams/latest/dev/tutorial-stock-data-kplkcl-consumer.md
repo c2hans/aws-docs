@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/tutorial-stock-data-k
 # Implement the consumer
 <a name="tutorial-stock-data-kplkcl-consumer"></a>
 
-The consumer application in the [Tutorial: Process real-time stock data using KPL and KCL 1.x[Tutorial: Process real-time stock data using KPL and KCL 1.x](tutorial-stock-data-kplkcl.md)](tutorial-stock-data-kplkcl.md) continuously processes the stock trades stream that you created in [[Implement the producer](tutorial-stock-data-kplkcl-producer.md)Implement the producer](tutorial-stock-data-kplkcl-producer.md). It then outputs the most popular stocks being bought and sold every minute. The application is built on top of the Kinesis Client Library (KCL), which does much of the heavy lifting common to consumer apps. For more information, see [Develop KCL 1.x consumers](developing-consumers-with-kcl.md).
+The consumer application in the [Tutorial: Process real-time stock data using KPL and KCL 1.x](tutorial-stock-data-kplkcl.md) continuously processes the stock trades stream that you created in [[Implement the producer](tutorial-stock-data-kplkcl-producer.md)](tutorial-stock-data-kplkcl-producer.md). It then outputs the most popular stocks being bought and sold every minute. The application is built on top of the Kinesis Client Library (KCL), which does much of the heavy lifting common to consumer apps. For more information, see [Develop KCL 1.x consumers](developing-consumers-with-kcl.md).
 
 Refer to the source code and review the following information.
 
@@ -66,7 +66,7 @@ Add code to the methods of the `StockTradeRecordProcessor` class, as shown in th
 
 **To run the consumer**
 
-1. Run the producer that you wrote in [[Implement the producer](tutorial-stock-data-kplkcl-producer.md)Implement the producer](tutorial-stock-data-kplkcl-producer.md) to inject simulated stock trade records into your stream.
+1. Run the producer that you wrote in [[Implement the producer](tutorial-stock-data-kplkcl-producer.md)](tutorial-stock-data-kplkcl-producer.md) to inject simulated stock trade records into your stream.
 
 1. Verify that the access key and secret key pair retrieved earlier (when creating the IAM user) are saved in the file `~/.aws/credentials` .
 
@@ -96,7 +96,7 @@ In this application, you focus on implementing a record processor class that can
 
 The term *checkpointing* means to record the point in the stream up to the data records that have been consumed and processed thus far. If the application crashes, the stream is read from that point and not from the beginning of the stream. The subject of checkpointing and the various design patterns and best practices for it are outside the scope of this chapter. However, it is something you may encounter in production environments.
 
-As you learned in [[Implement the producer](tutorial-stock-data-kplkcl-producer.md)Implement the producer](tutorial-stock-data-kplkcl-producer.md), the `put` operations in the Kinesis Data Streams API take a *partition key* as input. Kinesis Data Streams uses a partition key as a mechanism to split records across multiple shards (when there is more than one shard in the stream). The same partition key always routes to the same shard. This allows the consumer that processes a particular shard to be designed with the assumption that records with the same partition key are only sent to that consumer, and no records with the same partition key end up at any other consumer. Therefore, a consumer's worker can aggregate all records with the same partition key without worrying that it might be missing needed data.
+As you learned in [[Implement the producer](tutorial-stock-data-kplkcl-producer.md)](tutorial-stock-data-kplkcl-producer.md), the `put` operations in the Kinesis Data Streams API take a *partition key* as input. Kinesis Data Streams uses a partition key as a mechanism to split records across multiple shards (when there is more than one shard in the stream). The same partition key always routes to the same shard. This allows the consumer that processes a particular shard to be designed with the assumption that records with the same partition key are only sent to that consumer, and no records with the same partition key end up at any other consumer. Therefore, a consumer's worker can aggregate all records with the same partition key without worrying that it might be missing needed data.
 
 In this application, the consumer's processing of records is not intensive, so you can use one shard and do the processing in the same thread as the KCL thread. However, in practice, consider first scaling up the number of shards. In some cases you may want to switch processing to a different thread, or use a thread pool if your record processing is expected to be intensive. In this way, the KCL can fetch new records more quickly while the other threads can process the records in parallel. Multithreaded design is not trivial and should be approached with advanced techniques, so increasing your shard count is usually the most effective way to scale up.
 

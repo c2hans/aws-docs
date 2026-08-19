@@ -12,7 +12,7 @@ If your workload does not require a VPC, you can do the following:
 + You can change your Account Factory settings so that new AWS Control Tower accounts are created without an associated VPC.
 
 **Important**
-If you provision Account Factory accounts with VPC internet access settings enabled, that Account Factory setting overrides the control [Disallow internet access for an Amazon VPC instance managed by a customer](https://docs.aws.amazon.com//controltower/latest/userguide/data-residency-controls.html#disallow-vpc-internet-access). To avoid enabling internet access for newly provisioned accounts, you must change the setting in Account Factory.
+If you provision Account Factory accounts with VPC internet access settings enabled, that Account Factory setting overrides the control [Disallow internet access for an Amazon VPC instance managed by a customer](https://docs.aws.amazon.com/controltower/latest/userguide/data-residency-controls.html#disallow-vpc-internet-access). To avoid enabling internet access for newly provisioned accounts, you must change the setting in Account Factory.
 
 ## Delete the AWS Control Tower VPC
 <a name="delete-master-vpc"></a>

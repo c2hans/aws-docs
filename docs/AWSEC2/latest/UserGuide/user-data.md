@@ -146,7 +146,7 @@ Adding these tasks at boot time adds to the amount of time it takes to boot an i
 
 1. Follow the procedure for [launching an instance](ec2-launch-instance-wizard.md). The **User data** field is located in the [Advanced details](ec2-instance-launch-parameters.md#liw-advanced-details) section of the launch instance wizard. Enter your cloud-init directive text in the **User data** field, and then complete the instance launch procedure.
 
-   In the examples below, the directives create and configure a web server on Amazon Linux. The `#cloud-config` line at the top is required in order to identify the commands as cloud-init directives.
+   In the examples below, the directives create and configure a web server on Amazon Linux. The `#cloud-config` line at the top is required to identify the commands as cloud-init directives.
 
 ------
 #### [ AL2023 ]

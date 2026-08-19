@@ -11,8 +11,6 @@ The following table describes the important changes to the documentation since t
 +  **API Version**: 2015-08-27
 +  **Last Documentation Update**: 2021-02-23
 
-****
-
 | Change | API version | Description | Release date |
 | --- | --- | --- | --- |
 | Archived | 2015-08-27 |  The AWS Mobile SDK for Xamarin is included in the AWS SDK for .NET. This guide references the archived version of the Mobile SDK for Xamarin. | 2021-02-23 |

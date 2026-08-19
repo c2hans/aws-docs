@@ -14,8 +14,6 @@ Use to delete an Amazon GuardDuty ThreatIntelSet instance which is a list of kno
 ## Change Type Details
 <a name="ct-2qjqju7h67s7w-MMGd-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2qjqju7h67s7w |

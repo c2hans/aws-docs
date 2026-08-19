@@ -110,9 +110,9 @@ Before creating the EventBridge rule, you must create the Amazon SNS topic for t
 
    1. For **Select a target**, choose **SNS topic** to send an email, text message, or mobile push notification when the event occurs.
 
-   1. For **Topic**, choose an existing topic. You first need to create an Amazon SNS topic using the Amazon SNS console. For more information, see [Using Amazon SNS for application-to-person (A2P) messaging](https://docs.aws.amazon.com//sns/latest/dg/sns-user-notifications.html) in the *Amazon Simple Notification Service Developer Guide*.
+   1. For **Topic**, choose an existing topic. You first need to create an Amazon SNS topic using the Amazon SNS console. For more information, see [Using Amazon SNS for application-to-person (A2P) messaging](https://docs.aws.amazon.com/sns/latest/dg/sns-user-notifications.html) in the *Amazon Simple Notification Service Developer Guide*.
 
-   1. (Optional) Under **Additional settings**, you can optionally configure additional settings. For more information, see [Creating Amazon EventBridge rules that react to events](https://docs.aws.amazon.com//eventbridge/latest/userguide/eb-create-rule.html) (step 16) in the *Amazon EventBridge User Guide*.
+   1. (Optional) Under **Additional settings**, you can optionally configure additional settings. For more information, see [Creating Amazon EventBridge rules that react to events](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-create-rule.html) (step 16) in the *Amazon EventBridge User Guide*.
 
    1. Choose **Next**.
 
@@ -206,7 +206,7 @@ Before creating the EventBridge rule, you must create the Lambda function.
 
    1. For **Topic**, choose **Lambda function**, and for **Function**, choose the function that you created to respond when the event occurs.
 
-   1. (Optional) Under **Additional settings**, you can optionally configure additional settings. For more information, see [Creating Amazon EventBridge rules that react to events](https://docs.aws.amazon.com//eventbridge/latest/userguide/eb-create-rule.html) (step 16) in the *Amazon EventBridge User Guide*.
+   1. (Optional) Under **Additional settings**, you can optionally configure additional settings. For more information, see [Creating Amazon EventBridge rules that react to events](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-create-rule.html) (step 16) in the *Amazon EventBridge User Guide*.
 
    1. Choose **Next**.
 

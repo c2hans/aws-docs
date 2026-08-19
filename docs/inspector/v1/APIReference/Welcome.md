@@ -10,4 +10,4 @@ End of support notice: On May 20, 2026, AWS will end support for (Amazon Inspect
 
 Amazon Inspector Classic enables you to analyze the behavior of your AWS resources and to identify potential security issues. For more information, see [ Amazon Inspector Classic User Guide](https://docs.aws.amazon.com/inspector/latest/userguide/inspector_introduction.html).
 
-This document was last published on August 13, 2026.
+This document was last published on August 18, 2026.

@@ -118,7 +118,7 @@ You notice failures in `us-east-1a` and start a zonal shift. The following behav
 <a name="best-practices-asg-zs"></a>
 
 To maintain high availability for your applications when using zonal shift, we recommend the following best practices.
-+ Monitor EventBridge notifications to determine when there is an ongoing availability zone impairment event. For more information, see [Automating Amazon EC2 Auto Scaling with EventBridge](https://docs.aws.amazon.com//autoscaling/ec2/userguide/automating-ec2-auto-scaling-with-eventbridge.html).
++ Monitor EventBridge notifications to determine when there is an ongoing availability zone impairment event. For more information, see [Automating Amazon EC2 Auto Scaling with EventBridge](https://docs.aws.amazon.com/autoscaling/ec2/userguide/automating-ec2-auto-scaling-with-eventbridge.html).
 + Use scaling policies with appropriate thresholds to make sure that you have enough capacity to tolerate the loss of an availability zone.
 + Set an instance maintenance policy with a minimum healthy percentage of 100. With this setting, Auto Scaling waits for a new instance to be ready to use before terminating an unhealthy instance.
 

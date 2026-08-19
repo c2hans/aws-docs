@@ -33,7 +33,7 @@ In your request, use the supported parameters to specify configuration settings 
 + `sourceName` – Specify a name for the source. The name must be a Regionally unique value.
 + `eventClasses` – Specify one or more OCSF event classes to describe the type of data that the source will send to Security Lake. For a list of OCSF event classes supported as source in Security Lake, see [Open Cybersecurity Schema Framework (OCSF)](https://schema.ocsf.io/classes?extensions).
 + `sourceVersion` – Optionally, specify a value to limit log collection to a specific version of custom source data.
-+ `crawlerConfiguration` – Specify the Amazon Resource Name (ARN) of the IAM role that you created to invoke the AWS Glue crawler. For the detailed steps to create an IAM role, see [Prerequisites to adding a custom source](https://docs.aws.amazon.com//security-lake/latest/userguide/custom-sources.html#iam-roles-glue-crawler)
++ `crawlerConfiguration` – Specify the Amazon Resource Name (ARN) of the IAM role that you created to invoke the AWS Glue crawler. For the detailed steps to create an IAM role, see [Prerequisites to adding a custom source](https://docs.aws.amazon.com/security-lake/latest/userguide/custom-sources.html#iam-roles-glue-crawler)
 + `providerIdentity` – Specify the AWS identity and external ID that the source will use to write logs and events to the data lake.
 
 The following example adds a custom source as a log source in the designated log provider account in designated Regions. This example is formatted for Linux, macOS, or Unix, and it uses the backslash (\\) line-continuation character to improve readability.

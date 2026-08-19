@@ -28,8 +28,6 @@ To view a list of applications already registered to your AWS account, see [View
 
  Both deployment types do not apply to all destinations. The following table lists which deployment types work with deployments to the three types of deployment destinations.
 
-****
-
 | Deployment destination | In-place | Blue/green |
 | --- | --- | --- |
 | Amazon EC2  | Yes | Yes |

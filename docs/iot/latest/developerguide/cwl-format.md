@@ -357,7 +357,7 @@ The port where the request originated.
 ### GetRetainedMessage log entry
 <a name="log-mb-get-retain"></a>
 
-The AWS IoT message broker generates a log entry with an `eventType` of `GetRetainedMessage` when [`GetRetainedMessage`](https://docs.aws.amazon.com//iot/latest/developerguide/API_iotdata_GetRetainedMessage.html) is called.
+The AWS IoT message broker generates a log entry with an `eventType` of `GetRetainedMessage` when [`GetRetainedMessage`](https://docs.aws.amazon.com/iot/latest/developerguide/API_iotdata_GetRetainedMessage.html) is called.
 
 #### GetRetainedMessage log entry example
 <a name="log-mb-get-retain-example"></a>
@@ -696,7 +696,7 @@ The ID of the client to which the message is queued.
 
 details
 **`Throttled while queueing offline message`**
-The client exceeded the ` [Queued messages per second per account](https://docs.aws.amazon.com//general/latest/gr/iot-core.html#genref_queued_messages_per_second_per_account) ` limit, so the message wasn't stored.
+The client exceeded the ` [Queued messages per second per account](https://docs.aws.amazon.com/general/latest/gr/iot-core.html#genref_queued_messages_per_second_per_account) ` limit, so the message wasn't stored.
 
 protocol
 The protocol used to make the request. The value will always be `MQTT`.
@@ -785,7 +785,7 @@ The name of the subscribed topic.
 For MQTT 5 Subscribe operations, in addition to the [Common CloudWatch Logs attributes](#cwl-common-attributes) and the [MQTT 3 Subscribe log entry attributes](#log-mb-connect.example.subscribe), MQTT 5 `Subscribe` log entries contain the following attribute:
 
 subscriptions
-A list of mappings between the requested topics in the Subscribe request and the individual MQTT 5 reason code. For more information, see [MQTT reason codes](https://docs.aws.amazon.com//iot/latest/developerguide/mqtt.html#mqtt5-reason-codes).
+A list of mappings between the requested topics in the Subscribe request and the individual MQTT 5 reason code. For more information, see [MQTT reason codes](https://docs.aws.amazon.com/iot/latest/developerguide/mqtt.html#mqtt5-reason-codes).
 
 ### Unsubscribe log entry
 <a name="log-mb-unsubscribe"></a>
@@ -1138,7 +1138,7 @@ The following is a log entry example of `Failure`.
 }
 ```
 
-For the `RetrieveOCSPStaple` operation, in addition to the [Common CloudWatch Logs attributes](#cwl-common-attributes) and the attributes in [RetrieveOCSPStapleData log entry](https://docs.aws.amazon.com//iot/latest/developerguide/cwl-format.html#log-retrieve-ocsp-staple), the log entries for private endpoints contain the following attributes:
+For the `RetrieveOCSPStaple` operation, in addition to the [Common CloudWatch Logs attributes](#cwl-common-attributes) and the attributes in [RetrieveOCSPStapleData log entry](https://docs.aws.amazon.com/iot/latest/developerguide/cwl-format.html#log-retrieve-ocsp-staple), the log entries for private endpoints contain the following attributes:
 
 lambdaDetails
 Details of the Lambda function.

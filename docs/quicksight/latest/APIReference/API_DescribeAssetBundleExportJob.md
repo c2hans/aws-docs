@@ -97,6 +97,12 @@ Content-type: application/json
             "Properties": [ "string" ]
          }
       ],
+      "TopicsV2": [
+         {
+            "Arn": "string",
+            "Properties": [ "string" ]
+         }
+      ],
       "VPCConnections": [
          {
             "Arn": "string",

@@ -11,4 +11,4 @@ Using a JSON format for your message payload enables the AWS IoT rules engine to
 
 For more information about designing your MQTT topics and their corresponding message payloads, see [Designing MQTT Topics for AWS IoT Core](https://docs.aws.amazon.com/whitepapers/latest/designing-mqtt-topics-aws-iot-core/designing-mqtt-topics-aws-iot-core.html).
 
-If a message size limit exceeds the service quotas, it will result in a `CLIENT_ERROR` with reason `PAYLOAD_LIMIT_EXCEEDED` and "Message payload exceeds size limit for message type." For more information about message size limit, see [AWS IoT Core message broker limits and quotas](https://docs.aws.amazon.com//general/latest/gr/iot-core.html#message-broker-limits.html).
+If a message size limit exceeds the service quotas, it will result in a `CLIENT_ERROR` with reason `PAYLOAD_LIMIT_EXCEEDED` and "Message payload exceeds size limit for message type." For more information about message size limit, see [AWS IoT Core message broker limits and quotas](https://docs.aws.amazon.com/general/latest/gr/iot-core.html#message-broker-limits.html).

@@ -59,7 +59,7 @@ Customers with an AWS Unified Operations plan have access to the following benef
 + One recurring subscription to [AWS Countdown Premium](https://aws.amazon.com/premiumsupport/aws-countdown-critical-events/).
 + Critical workload reviews and personalized runbooks and operational procedures.
 
-For more information about features and pricing for each support plan, see [AWS Support](https://aws.amazon.com/premiumsupport/) and [Compare AWS Support plans](https://aws.amazon.com//premiumsupport/plans/). Some features, such as 24x7 phone and chat support, aren't available in all languages.
+For more information about features and pricing for each support plan, see [AWS Support](https://aws.amazon.com/premiumsupport/) and [Compare AWS Support plans](https://aws.amazon.com/premiumsupport/plans/). Some features, such as 24x7 phone and chat support, aren't available in all languages.
 
 **Note**
 If you work with an AWS partner and want to learn more about Partner-led Support, see [AWS Partner-Led Support](https://aws.amazon.com/premiumsupport/partner-led-support/)

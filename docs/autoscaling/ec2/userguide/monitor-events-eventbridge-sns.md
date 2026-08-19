@@ -87,7 +87,7 @@ Create a rule that matches selected events and routes them to your Amazon SNS to
 
    1. For **Topic**, choose your Amazon SNS topic.
 
-   1. (Optional) Under **Additional settings**, you can optionally configure additional settings. For more information, see [Creating Amazon EventBridge rules that react to events](https://docs.aws.amazon.com//eventbridge/latest/userguide/eb-create-rule.html) in the *Amazon EventBridge User Guide*.
+   1. (Optional) Under **Additional settings**, you can optionally configure additional settings. For more information, see [Creating Amazon EventBridge rules that react to events](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-create-rule.html) in the *Amazon EventBridge User Guide*.
 
    1. Choose **Next**.
 

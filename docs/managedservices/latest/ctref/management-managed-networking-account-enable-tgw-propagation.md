@@ -14,8 +14,6 @@ Enable the Transit Gateway (TGW) attachment to propagate routes to the TGW route
 ## Change Type Details
 <a name="ct-1f9hi4bephqa9-MMNe-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1f9hi4bephqa9 |

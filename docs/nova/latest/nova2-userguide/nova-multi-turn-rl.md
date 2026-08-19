@@ -33,4 +33,4 @@ The following table lists the models and AWS Regions that support multi-turn RL.
 | --- | --- |
 | Nova Lite 2.0 | us-east-1, us-west-2 |
 
-For complete instructions on setting up prerequisites, preparing your agent, formatting training data, launching and monitoring training jobs, deploying trained models, and evaluating results, see [Multi-turn reinforcement learning](https://docs.aws.amazon.com//sagemaker/latest/dg/model-customize-mtrl.html) in the SageMaker Developer Guide.
+For complete instructions on setting up prerequisites, preparing your agent, formatting training data, launching and monitoring training jobs, deploying trained models, and evaluating results, see [Multi-turn reinforcement learning](https://docs.aws.amazon.com/sagemaker/latest/dg/model-customize-mtrl.html) in the SageMaker Developer Guide.

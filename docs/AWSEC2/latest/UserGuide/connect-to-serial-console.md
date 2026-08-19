@@ -12,7 +12,7 @@ You can connect to the serial console of your EC2 instance by using the Amazon E
 + The serial console connection typically lasts for 1 hour unless [you disconnect from it](disconnect-serial-console-session.md). However, during system maintenance, Amazon EC2 will disconnect the serial console session.
 
   The duration of the connection is not determined by the duration of your IAM credentials. If your IAM credentials expire, the connection continues to persist until the maximum duration of the serial console connection is reached. When using the EC2 Serial Console console experience, if your IAM credentials expire, terminate the connection by closing the browser page.
-+ It takes 30 seconds to tear down a session after you've disconnected from the serial console in order to allow a new session.
++ It takes 30 seconds to tear down a session after you've disconnected from the serial console to allow a new session.
 + Supported serial console ports: `ttyS0` (Linux instances) and `COM1` (Windows instances)
 + When you connect to the serial console, you might observe a slight drop in your instance’s throughput.
 
@@ -46,13 +46,13 @@ Before connecting, make sure you have completed the [prerequisites](ec2-serial-c
 
    If the screen remains black, you can use the following information to help resolve issues with connecting to the serial console:
    + **Check that you have configured access to the serial console.** For more information, see [Configure access to the EC2 Serial Console](configure-access-to-serial-console.md).
-   + (Linux instances only) **Use SysRq to connect to the serial console.** SysRq does not require that you connect using the browser-based client. For more information, see [(Linux instances) Use SysRq to troubleshoot your instanceSysRq (Linux)](troubleshoot-using-serial-console.md#SysRq).
+   + (Linux instances only) **Use SysRq to connect to the serial console.** SysRq does not require that you connect using the browser-based client. For more information, see [(Linux instances) Use SysRq to troubleshoot your instance](troubleshoot-using-serial-console.md#SysRq).
    + (Linux instances only) **Restart getty.** If you have SSH access to your instance, then connect to your instance using SSH, and restart getty using the following command.
 
      ```
      [ec2-user ~]$ sudo systemctl restart serial-getty@ttyS0
      ```
-   + **Reboot your instance.** You can reboot your instance by using SysRq (Linux instances), the EC2 console, or the AWS CLI. For more information, see [(Linux instances) Use SysRq to troubleshoot your instanceSysRq (Linux)](troubleshoot-using-serial-console.md#SysRq) (Linux instances) or [Reboot your Amazon EC2 instance](ec2-instance-reboot.md).
+   + **Reboot your instance.** You can reboot your instance by using SysRq (Linux instances), the EC2 console, or the AWS CLI. For more information, see [(Linux instances) Use SysRq to troubleshoot your instance](troubleshoot-using-serial-console.md#SysRq) (Linux instances) or [Reboot your Amazon EC2 instance](ec2-instance-reboot.md).
 
 1. (Linux instances only) At the `login` prompt, enter the username of the password-based user that you [set up previously](configure-access-to-serial-console.md#set-user-password), and then press **Enter**.
 
@@ -74,7 +74,7 @@ Verify that the [prerequisites](ec2-serial-console-prerequisites.md) are met.
 
    Use the [send-serial-console-ssh-public-key](https://docs.aws.amazon.com/cli/latest/reference/ec2-instance-connect/send-serial-console-ssh-public-key.html) command to push your SSH public key to the instance. This starts a serial console session.
 
-   If a serial console session has already been started for this instance, the command fails because you can only have one session open at a time. It takes 30 seconds to tear down a session after you've disconnected from the serial console in order to allow a new session.
+   If a serial console session has already been started for this instance, the command fails because you can only have one session open at a time. It takes 30 seconds to tear down a session after you've disconnected from the serial console to allow a new session.
 
    ```
    aws ec2-instance-connect send-serial-console-ssh-public-key \
@@ -124,13 +124,13 @@ Verify that the [prerequisites](ec2-serial-console-prerequisites.md) are met.
 
    If the screen remains black, you can use the following information to help resolve issues with connecting to the serial console:
    + **Check that you have configured access to the serial console.** For more information, see [Configure access to the EC2 Serial Console](configure-access-to-serial-console.md).
-   + (Linux instances only) **Use SysRq to connect to the serial console.** SysRq does not require that you connect using SSH. For more information, see [(Linux instances) Use SysRq to troubleshoot your instanceSysRq (Linux)](troubleshoot-using-serial-console.md#SysRq).
+   + (Linux instances only) **Use SysRq to connect to the serial console.** SysRq does not require that you connect using SSH. For more information, see [(Linux instances) Use SysRq to troubleshoot your instance](troubleshoot-using-serial-console.md#SysRq).
    + (Linux instances only) **Restart getty.** If you have SSH access to your instance, then connect to your instance using SSH, and restart getty using the following command.
 
      ```
      [ec2-user ~]$ sudo systemctl restart serial-getty@ttyS0
      ```
-   + **Reboot your instance.** You can reboot your instance by using SysRq (Linux instances only), the EC2 console, or the AWS CLI. For more information, see [(Linux instances) Use SysRq to troubleshoot your instanceSysRq (Linux)](troubleshoot-using-serial-console.md#SysRq) (Linux instances only) or [Reboot your Amazon EC2 instance](ec2-instance-reboot.md).
+   + **Reboot your instance.** You can reboot your instance by using SysRq (Linux instances only), the EC2 console, or the AWS CLI. For more information, see [(Linux instances) Use SysRq to troubleshoot your instance](troubleshoot-using-serial-console.md#SysRq) (Linux instances only) or [Reboot your Amazon EC2 instance](ec2-instance-reboot.md).
 
 1. (Linux instances only) At the `login` prompt, enter the username of the password-based user that you [set up previously](configure-access-to-serial-console.md#set-user-password), and then press **Enter**.
 

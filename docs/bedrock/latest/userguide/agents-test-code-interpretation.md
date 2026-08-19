@@ -53,11 +53,9 @@ To learn how to attach files for code interpretation, choose the tab for your pr
 ------
 #### [ API ]
 
-To test code interpretation, send an [InvokeAgent](https://docs.aws.amazon.com//bedrock/latest/APIReference/API_agent_InvokeAgent.html) request (see link for request and response formats and field details) with an [Agents for Amazon Bedrock build-time endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#bra-bt).
+To test code interpretation, send an [InvokeAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_InvokeAgent.html) request (see link for request and response formats and field details) with an [Agents for Amazon Bedrock build-time endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#bra-bt).
 
 **To attach files for agent to use for answering your queries and summarizing the content, specify the following fields:**
-
-****
 
 | Field | Short description |
 | --- | --- |

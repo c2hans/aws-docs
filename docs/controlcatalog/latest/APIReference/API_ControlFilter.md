@@ -10,6 +10,14 @@ A structure that defines filtering criteria for the ListControls operation. You 
 ## Contents
 <a name="API_ControlFilter_Contents"></a>
 
+ ** GovernedProviders **   <a name="controlcatalog-Type-ControlFilter-GovernedProviders"></a>
+A filter that narrows the results to controls that govern a specific provider's resources.
+Type: Array of strings
+Array Members: Fixed number of 1 item.
+Length Constraints: Minimum length of 2. Maximum length of 64.
+Pattern: `[A-Z]{2,64}`
+Required: No
+
  ** Implementations **   <a name="controlcatalog-Type-ControlFilter-Implementations"></a>
 A filter that narrows the results to controls with specific implementation types or identifiers. This field allows you to find controls that are implemented by specific AWS services or with specific service identifiers.
 Type: [ImplementationFilter](API_ImplementationFilter.md) object

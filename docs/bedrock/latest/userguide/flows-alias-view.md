@@ -27,8 +27,6 @@ To get information about an alias of your flow, send a [GetFlowAlias](https://do
 
 To list information for all aliases of a flow, send a [ListFlowAliass](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_ListFlowAliass.html) request with an [Agents for Amazon Bedrock build-time endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#bra-bt) and specify the ARN or ID of the flow as the `flowIdentifier`. You can specify the following optional parameters:
 
-****
-
 | Field | Short description |
 | --- | --- |
 | maxResults | The maximum number of results to return in a response. |

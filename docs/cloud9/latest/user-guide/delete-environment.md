@@ -58,8 +58,6 @@ When you delete an environment, AWS Cloud9 deletes the environment permanently. 
 
 To use code to delete an environment in AWS Cloud9, call the AWS Cloud9 delete environment operation, as follows.
 
-****
-
 |  |  |
 | --- |--- |
 | AWS CLI |  [delete-environment](https://docs.aws.amazon.com/cli/latest/reference/cloud9/delete-environment.html)  |

@@ -56,4 +56,4 @@ You can use the `keepalive` option to configure how long connections continue. F
 
 When a zonal shift is started on an Application Load Balancer with cross-zone load balancing enabled, all traffic to targets is blocked in the Availability Zone that is impacted, and the zonal shift removes the zonal IP address from DNS.
 
-For more information, see [Integrations for your Application Load Balancer](https://docs.aws.amazon.com//elasticloadbalancing/latest/application/load-balancer-integrations.html#zonal-shift) in the *Application Load Balancer User Guide*.
+For more information, see [Integrations for your Application Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-integrations.html#zonal-shift) in the *Application Load Balancer User Guide*.

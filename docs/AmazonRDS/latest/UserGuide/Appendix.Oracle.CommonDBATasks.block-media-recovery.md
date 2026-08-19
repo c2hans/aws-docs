@@ -14,8 +14,6 @@ For more information, see [Common parameters for RMAN procedures](Appendix.Oracl
 
 This procedure uses the following additional parameters.
 
-****
-
 | Parameter name | Data type | Valid values | Default | Required | Description |
 | --- | --- | --- | --- | --- | --- |
 | `p_datafile` | `NUMBER` | A valid data file ID number. | — | Yes | The data file containing the corrupt blocks. Specify the data file in either of the following ways:+  The data file ID number, which is located in `V$DATAFILE.FILE#` <br />+  The full data file name, including the path, located in `V$DATAFILE.NAME`  |

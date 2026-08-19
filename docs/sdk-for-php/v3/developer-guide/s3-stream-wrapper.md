@@ -102,8 +102,6 @@ PHP’s [fopen()](http://php.net/manual/en/function.fopen.php) function requires
 
 The Amazon S3 stream wrapper supports the following modes for streams that target Amazon S3 objects.
 
-****
-
 |  |  |
 | --- |--- |
 | r | A read-only stream where the object must already exist. |
@@ -115,8 +113,6 @@ The Amazon S3 stream wrapper supports the following modes for streams that targe
 <a name="other-object-functions"></a>
 
 Stream wrappers allow many different built-in PHP functions to work with a custom system such as Amazon S3. Here are some of the functions that the Amazon S3 stream wrapper enables you to perform with objects stored in Amazon S3.
-
-****
 
 |  |  |
 | --- |--- |

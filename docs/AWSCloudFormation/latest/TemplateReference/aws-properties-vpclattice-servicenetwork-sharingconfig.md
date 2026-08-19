@@ -37,4 +37,4 @@ To declare this entity in your CloudFormation template, use the following syntax
 Specify if the service network should be enabled for sharing.
 *Required*: Yes
 *Type*: Boolean
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)

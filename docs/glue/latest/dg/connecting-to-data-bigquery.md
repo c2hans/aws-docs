@@ -25,4 +25,4 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/connecting-to-data-bigque
 
 You can provide advanced options when creating a BigQuery node. These options are the same as those available when programming AWS Glue for Spark scripts.
 
-See [ BigQuery connection option reference ](https://docs.aws.amazon.com//glue/latest/dg/aws-glue-programming-etl-connect-bigquery-home.html) in the AWS Glue developer guide.
+See [ BigQuery connection option reference ](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-etl-connect-bigquery-home.html) in the AWS Glue developer guide.

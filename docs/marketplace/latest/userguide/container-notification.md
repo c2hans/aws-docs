@@ -38,10 +38,10 @@ The {{<action-name>}} will vary depending on the notification. Possible actions 
 
 The `offer-identifier` is included in the notification only when the action is `subscribe-success` or `subscribe-fail`. It isn't included in notifications when the action is `unsubscribe-pending` or `unsubscribe-success`. For offers created before January 2024, this identifier is included in the notification only for private offers. For offers created in January 2024 and later, this identifier is included in notifications for all offers, including both private offers and public offers.
 
-For information on offer types, see the response from [DescribeEntity API](https://docs.aws.amazon.com//marketplace/latest/APIReference/work-with-private-offers.html#describe-entity) or the offer visibility of an agreement in the [Agreements renewals dashboard](https://docs.aws.amazon.com//marketplace/latest/userguide/agreements-renewals-dashboard.html).
+For information on offer types, see the response from [DescribeEntity API](https://docs.aws.amazon.com/marketplace/latest/APIReference/work-with-private-offers.html#describe-entity) or the offer visibility of an agreement in the [Agreements renewals dashboard](https://docs.aws.amazon.com/marketplace/latest/userguide/agreements-renewals-dashboard.html).
 
 **Note**
- For [DescribeEntity API](https://docs.aws.amazon.com//marketplace/latest/APIReference/work-with-private-offers.html#describe-entity), if you find an AWS account in the account targeting facet of targeting rule for that offer, it is a private offer. If there is not an AWS account in the account targeting facet of targeting rule for that offer, it is a public offer.
+ For [DescribeEntity API](https://docs.aws.amazon.com/marketplace/latest/APIReference/work-with-private-offers.html#describe-entity), if you find an AWS account in the account targeting facet of targeting rule for that offer, it is a private offer. If there is not an AWS account in the account targeting facet of targeting rule for that offer, it is a public offer.
 
 ## Subscribing an Amazon SQS queue to the Amazon SNS topic
 <a name="subscribing-sqs-queue-to-sns-topic"></a>

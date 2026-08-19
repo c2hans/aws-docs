@@ -47,8 +47,6 @@ If your DB instance currently uses a nondefault option group, then follow these 
 
 Amazon RDS supports the following settings for the time zone option.
 
-****
-
 | Option setting | Valid values | Description |
 | --- | --- | --- |
 | `TIME_ZONE` | One of the available time zones. For the full list, see [Available time zones](#Appendix.Oracle.Options.Timezone.Zones).  | The new time zone for your DB instance.  |
@@ -127,8 +125,6 @@ The time zone option is a permanent and persistent option. You can't remove the 
 <a name="Appendix.Oracle.Options.Timezone.Zones"></a>
 
 You can use the following values for the time zone option.
-
-****
 
 | Zone | Time zone |
 | --- | --- |

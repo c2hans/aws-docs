@@ -854,7 +854,7 @@ For more information, see [Forecasting & agent scheduling in Connect Customer](f
 
 Connect Customer now enables you to customize service level calculations to your specific needs. Supervisors and managers can define time thresholds for when a contact is considered to meet service level standards and select which contact outcomes to include in the calculation. For example, managers can choose to count callback contacts, exclude contacts transferred out while waiting in queue, and exclude short abandons using a configurable time threshold. Customization of service level calculation is available from the metric configuration section on the analytics dashboards.With this feature supervisors and managers can now create a service level metric calculation that better aligns with their business operations. With a customized view of service level performance, operations managers can assess how effectively they have met their service standards.
 
-For more information, see [Metrics, dashboards, and reports in Connect Customer](amazon-connect-metrics.md).
+For more information, see [Metrics, dashboards, and insights in Connect Customer](amazon-connect-metrics.md).
 
 ## September 2025 Updates
 <a name="september2025"></a>

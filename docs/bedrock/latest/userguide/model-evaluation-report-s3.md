@@ -58,8 +58,6 @@ The following is an example output for the text summarization task type with onl
 
 When a model evaluation job has completed, you see the following parameters in the output data returned from human review tasks.
 
-****
-
 | Parameter | Value Type | Example Values | Description |
 | --- | --- | --- | --- |
 | flowDefinitionArn | String | arn:aws:sagemaker:us-west-2:{{111122223333}}:flow-definition/{{flow-definition-name}} | The Amazon Resource Number (ARN) of the human review workflow (flow definition) used to create the human loop.  |

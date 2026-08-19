@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon GameLift Streams provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="gameliftstreams-GetApplication"></a>[GetApplication](https://docs.aws.amazon.com/gameliftstreams/latest/apireference/API_GetApplication.html) | Get an application | Read |

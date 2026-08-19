@@ -18,8 +18,6 @@ The following users can run this command.
 
 The AWS CloudHSM accepts trust anchors with the following key types:
 
-****
-
 | Key Type | Description |
 | --- | --- |
 | EC |  secp256r1 (P-256), secp384r1 (P-384), and secp521r1 (P-521) curves.  |

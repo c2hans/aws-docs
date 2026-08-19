@@ -5,11 +5,11 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/invoke-imported
 # Invoke your imported model
 <a name="invoke-imported-model"></a>
 
-The model import job can take several minutes to import your model after you send [CreateModelImportJob](https://docs.aws.amazon.com//bedrock/latest/APIReference/API_CreateModelImportJob.html) request. You can check the status of your import job in the console or by calling the [GetModelImportJob](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_GetModelImportJob.html) operation and checking the `Status` field in the response. The import job is complete if the Status for the model is **Complete**.
+The model import job can take several minutes to import your model after you send [CreateModelImportJob](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_CreateModelImportJob.html) request. You can check the status of your import job in the console or by calling the [GetModelImportJob](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_GetModelImportJob.html) operation and checking the `Status` field in the response. The import job is complete if the Status for the model is **Complete**.
 
-After your imported model is available in Amazon Bedrock, you can use the model with on demand throughput by sending [InvokeModel](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_InvokeModel.html) or [InvokeModelWithResponseStream](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_InvokeModelWithResponseStream.html) requests to make inference calls to the model. For more information, see [Submit a single prompt with InvokeModelSubmit a single prompt with InvokeModel (moved)](inference-invoke.md).
+After your imported model is available in Amazon Bedrock, you can use the model with on demand throughput by sending [InvokeModel](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_InvokeModel.html) or [InvokeModelWithResponseStream](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_InvokeModelWithResponseStream.html) requests to make inference calls to the model. For more information, see [Submit a single prompt with InvokeModel](inference-invoke.md).
 
-To interface with your imported model using the messages format, you can call the [Converse](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_Converse.html) or [ConverseStream](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_ConverseStream.html) operations. For more information, see [Using the Converse APIUsing the Converse API (moved)](conversation-inference-call.md).
+To interface with your imported model using the messages format, you can call the [Converse](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_Converse.html) or [ConverseStream](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_ConverseStream.html) operations. For more information, see [Using the Converse API](conversation-inference-call.md).
 
 **Note**
 Converse API is not supported for Qwen2.5, Qwen2-VL, Qwen2.5-VL, and GPT-OSS models.
@@ -290,6 +290,6 @@ If your `InvokeModel` or `InvokeModelWithStream` request returns `ModelNotReadyE
 
 **Contact Support for further investigation**
 
-   Open a ticket with Support For more information, see [Creating support cases](https://docs.aws.amazon.com//awssupport/latest/user/case-management.html).
+   Open a ticket with Support For more information, see [Creating support cases](https://docs.aws.amazon.com/awssupport/latest/user/case-management.html).
 
    Include relevant details such as model ID and timestamps in the support ticket.

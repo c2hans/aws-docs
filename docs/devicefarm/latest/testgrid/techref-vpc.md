@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/testgrid/techref-vpc.h
 # Using Amazon VPC with Device Farm desktop browser testing
 <a name="techref-vpc"></a>
 
-You can give Device Farm desktop browser testing access to an Amazon Virtual Private Cloud (Amazon VPC) environment, enabling testing of isolated, non-internet-facing services and apps through an [elastic network interface](https://docs.aws.amazon.com//vpc/latest/userguide/VPC_ElasticNetworkInterfaces.html). For more information on VPCs, see the [Amazon VPC User Guide](https://docs.aws.amazon.com/vpc/latest/userguide/).
+You can give Device Farm desktop browser testing access to an Amazon Virtual Private Cloud (Amazon VPC) environment, enabling testing of isolated, non-internet-facing services and apps through an [elastic network interface](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_ElasticNetworkInterfaces.html). For more information on VPCs, see the [Amazon VPC User Guide](https://docs.aws.amazon.com/vpc/latest/userguide/).
 
 ![Diagram showing Device Farm browser testing integration with VPC, including NAT Gateway and application components.](http://docs.aws.amazon.com/devicefarm/latest/testgrid/images/TestGridVPC.png)
 

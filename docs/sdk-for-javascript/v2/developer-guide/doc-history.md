@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/doc-history.html
 ---
 
-The AWS SDK for JavaScript v2 has reached end-of-support. We recommend that you migrate to [AWS SDK for JavaScript v3](https://docs.aws.amazon.com//sdk-for-javascript/v3/developer-guide/). For additional details and information on how to migrate, please refer to this [announcement](https://aws.amazon.com/blogs//developer/announcing-end-of-support-for-aws-sdk-for-javascript-v2/).
+The AWS SDK for JavaScript v2 has reached end-of-support. We recommend that you migrate to [AWS SDK for JavaScript v3](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/). For additional details and information on how to migrate, please refer to this [announcement](https://aws.amazon.com/blogs/developer/announcing-end-of-support-for-aws-sdk-for-javascript-v2/).
 
 # Document History for AWS SDK for JavaScript
 <a name="doc-history"></a>
@@ -29,8 +29,6 @@ The following table describes important changes in each release of the AWS SDK f
 <a name="doc-history-earlier"></a>
 
 The following table describes important changes in each release of the AWS SDK for JavaScript before June 2018.
-
-****
 
 | Change | Description | Date |
 | --- | --- | --- |

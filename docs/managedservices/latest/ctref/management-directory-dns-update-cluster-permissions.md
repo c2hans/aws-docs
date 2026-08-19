@@ -14,8 +14,6 @@ Grants full control to the Cluster object on the Listener object to bring the SQ
 ## Change Type Details
 <a name="ct-03ytgoevfebjr-MDDu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-03ytgoevfebjr |

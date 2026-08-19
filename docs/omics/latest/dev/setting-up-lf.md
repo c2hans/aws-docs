@@ -24,7 +24,7 @@ Administrators are users and roles with permissions to create resource links. Yo
 
 **Create an admin user in the Lake Formation console**
 
-1. Open the AWS Lake Formation console: [Lake Formation console](https://console.aws.amazon.com//lakeformation)
+1. Open the AWS Lake Formation console: [Lake Formation console](https://console.aws.amazon.com/lakeformation)
 
 1. If the console displays the **Welcome to Lake Formation** panel, choose **Get started**.
 
@@ -41,7 +41,7 @@ To make a shared resource that users can query, the default access controls must
 
 **Creating resource links in the AWS Lake Formation console and sharing them with HealthOmics Analytics users**
 
-1. Open the AWS Lake Formation console: [Lake Formation console](https://console.aws.amazon.com//lakeformation)
+1. Open the AWS Lake Formation console: [Lake Formation console](https://console.aws.amazon.com/lakeformation)
 
 1. In the primary navigation bar, choose **Databases**.
 
@@ -60,7 +60,7 @@ To make a shared resource that users can query, the default access controls must
 
 A Lake Formation database administrator can grant access to the shared resource using the following procedure.
 
-1. Open the AWS Lake Formation console: [https://console.aws.amazon.com/lakeformation/](https://console.aws.amazon.com//lakeformation)
+1. Open the AWS Lake Formation console: [https://console.aws.amazon.com/lakeformation/](https://console.aws.amazon.com/lakeformation)
 
 1. In the primary navigation bar, choose **Databases**.
 

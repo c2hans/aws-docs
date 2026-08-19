@@ -9,7 +9,7 @@ Amazon Fraud Detector is no longer open to new customers as of November 7, 2025.
 
 You can update a rule anytime by adding or updating the rule description, updating the rule expression, or adding or removing the outcome for the rule. When you update a rule a new rule version is created.
 
-You can update a rule in the Amazon Fraud Detector console, using the [update-rule-version](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/frauddetector/update-rule-version.html) command, using the [UpdateRuleVersion](https://docs.aws.amazon.com//frauddetector/latest/api/API_UpdateRuleVersion.html) API, or using the using the AWS SDK.
+You can update a rule in the Amazon Fraud Detector console, using the [update-rule-version](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/frauddetector/update-rule-version.html) command, using the [UpdateRuleVersion](https://docs.aws.amazon.com/frauddetector/latest/api/API_UpdateRuleVersion.html) API, or using the using the AWS SDK.
 
 After you have updated the rule, make sure to update your detector version to use the new rule version.
 
@@ -35,7 +35,7 @@ After you have updated the rule, make sure to update your detector version to us
 ## Update rule using the AWS SDK for Python (Boto3)
 <a name="update-rule-sdk"></a>
 
-The following example code uses the [UpdateRuleVersion](https://docs.aws.amazon.com//frauddetector/latest/api/API_UpdateRuleVersion.html) API to update the threshold for the rule `high_risk` from 900 to 950. This rule is associated with the detector `payments_detector`.
+The following example code uses the [UpdateRuleVersion](https://docs.aws.amazon.com/frauddetector/latest/api/API_UpdateRuleVersion.html) API to update the threshold for the rule `high_risk` from 900 to 950. This rule is associated with the detector `payments_detector`.
 
 ```
 fraudDetector.update_rule_version(

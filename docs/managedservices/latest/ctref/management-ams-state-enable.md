@@ -14,8 +14,6 @@ Enable AMS Resource Scheduler in the account where it was previously disabled. T
 ## Change Type Details
 <a name="ct-2wrvu4kca9xky-MASe-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2wrvu4kca9xky |

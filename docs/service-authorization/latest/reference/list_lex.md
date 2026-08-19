@@ -24,8 +24,6 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_lex-actions-as-permissions).
 
-****
-
 - **   CreateBotVersion  **
   - **SDK client:** lex-models
   - **IAM action:**  [lex:CreateBotVersion](#list_lex-action-CreateBotVersion)
@@ -268,6 +266,11 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   PutBotAlias  **
+  - **SDK client:** lex-models
+  - **IAM action:**  [lex:PutBotAlias](#list_lex-action-PutBotAlias)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [lex:TagResource](#list_lex-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+
 - **   PutIntent  **
   - **SDK client:** lex-models
   - **IAM action:**  [lex:PutIntent](#list_lex-action-PutIntent)
@@ -360,8 +363,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
 <a name="list_lex-actions-as-permissions"></a>
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
-
-****
 
 - **   [CreateBotVersion](https://docs.aws.amazon.com/lex/latest/dg/API_CreateBotVersion.html)  **
   - **Description:** Creates a new version based on the $LATEST version of the specified bot
@@ -654,8 +655,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
 
-****
-
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
 |  [bot](https://docs.aws.amazon.com/lex/latest/dg/API_BotMetadata.html)  | arn:${Partition}:lex:${Region}:${Account}:bot/${BotId}, arn:${Partition}:lex:${Region}:${Account}:bot:${BotName} | [aws:ResourceTag/${TagKey}](#list_lex-aws_ResourceTag___TagKey_) |
@@ -669,8 +668,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_lex-policy-keys"></a>
 
 Amazon Lex defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

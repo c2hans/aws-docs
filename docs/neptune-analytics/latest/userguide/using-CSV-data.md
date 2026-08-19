@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/using
 # Using CSV data
 <a name="using-CSV-data"></a>
 
- Neptune Analytics, like [Neptune Database](https://docs.aws.amazon.com//neptune/latest/userguide/bulk-load-tutorial-format.html), supports two csv formats for loading graph data: [csv](https://docs.aws.amazon.com//neptune/latest/userguide/bulk-load-tutorial-format-gremlin.html) and [opencypher](https://docs.aws.amazon.com//neptune/latest/userguide/bulk-load-tutorial-format-opencypher.html). Both are csv-based formats with a specified schema. A csv file must contain a header row and the column values. The remainder of the files are interpreted based on the corresponding header column. The header could contain predefined system column names and user-defined column names, annotated with predefined datatypes and cardinality.
+ Neptune Analytics, like [Neptune Database](https://docs.aws.amazon.com/neptune/latest/userguide/bulk-load-tutorial-format.html), supports two csv formats for loading graph data: [csv](https://docs.aws.amazon.com/neptune/latest/userguide/bulk-load-tutorial-format-gremlin.html) and [opencypher](https://docs.aws.amazon.com/neptune/latest/userguide/bulk-load-tutorial-format-opencypher.html). Both are csv-based formats with a specified schema. A csv file must contain a header row and the column values. The remainder of the files are interpreted based on the corresponding header column. The header could contain predefined system column names and user-defined column names, annotated with predefined datatypes and cardinality.
 
 ## Behavioral differences from Neptune csv (opencypher) format
 <a name="using-CSV-data-differences"></a>
@@ -45,7 +45,7 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/using
 **Important**
  The `dimension` must match the dimension of the embeddings in the vertex files.
 
- For more details of loading embeddings, refer to [vector-index](https://docs.aws.amazon.com//neptune-analytics/latest/userguide/vector-index.html).
+ For more details of loading embeddings, refer to [vector-index](https://docs.aws.amazon.com/neptune-analytics/latest/userguide/vector-index.html).
 
 ### Any type
 <a name="using-CSV-data-any-type"></a>

@@ -112,6 +112,32 @@ Make sure the destination instance's security group allows inbound traffic on th
 Use the AWS CLI to create an application status check.
 
 ------
+#### [ Console ]
+
+1. Open the Amazon EC2 console at [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2/).
+
+1. In the navigation pane, under **Instances**, choose **Application status checks**.
+
+1. Choose **Create application status check**.
+
+1. Under **Health check logic**, configure the following:
+   + **Protocol**: choose **HTTP** or **HTTPS**.
+   + **Port**: enter the port on which your application listens.
+   + **Path** (optional): enter the HTTP path to request, for example `/healthcheck`.
+   + **IP version**: choose **IPv4** or **IPv6**.
+   + **Device index**: the network interface device index to check. Default is `0`.
+
+1. Under **Controls and thresholds**, set the **Timeout**, and optionally the **Status code matcher**, **Failure threshold**, **Success threshold**, and **Initialization grace period**. The check interval is fixed at 60 seconds.
+
+1. Under **Aggregation**, choose **Included** for the check to contribute to the overall application status and drive Amazon EC2 Auto Scaling, or **Excluded** to report the check without affecting the overall status.
+
+1. Under **Health check paths**, keep **Do not specify network paths (recommended/default)** to let Amazon EC2 place the health check network interfaces in your instance's subnets, or choose **Specify network paths (advanced)** to define the source subnet, security group, and destinations yourself.
+
+1. (Optional) Add a **Name tag** and other **Tags**.
+
+1. Choose **Create application status check**.
+
+------
 #### [ AWS CLI ]
 
 To use AWS managed network paths, omit the `--health-check-paths` parameter and let AWS select source and destination subnets and security groups.
@@ -139,6 +165,17 @@ aws ec2 create-application-status-check \
 
 **Step 3: Associate the check with instances**
 Associate the check with the instances you want to monitor, either by instance ID or by tag.
+
+------
+#### [ Console ]
+
+1. In the navigation pane, under **Instances**, choose **Application status checks**, and select the check.
+
+1. Choose **Manage status check associations**, then choose **Manage associations by resource ID** or **Manage associations by tags**.
+
+1. To associate with all instances in an Auto Scaling group, choose **Manage associations by tags** and enter `aws:autoscaling:groupName` as the tag key and your Auto Scaling group name as the value.
+
+1. Choose **Associate**.
 
 ------
 #### [ AWS CLI ]
@@ -173,6 +210,17 @@ Associate and disassociate operations return per-instance success and failure re
 
 **Step 4: View results**
 View the per-instance application health status.
+
+------
+#### [ Console ]
+
+1. Open the Amazon EC2 console at [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2/).
+
+1. In the navigation pane, choose **Instances**.
+
+1. Select the instance, and then choose the **Status and alarms** tab.
+
+1. Under **Application status checks**, review the overall status and each associated check's individual status.
 
 ------
 #### [ AWS CLI ]

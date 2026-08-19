@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon Macie provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="macie2-BatchGetCustomDataIdentifiers"></a>[BatchGetCustomDataIdentifiers](https://docs.aws.amazon.com/macie/latest/APIReference/custom-data-identifiers-get.html) | Retrieve information about one or more custom data identifiers | Read |

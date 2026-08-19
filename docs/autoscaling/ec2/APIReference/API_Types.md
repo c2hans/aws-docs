@@ -69,6 +69,7 @@ The following data types are supported:
 +  [NetworkBandwidthGbpsRequest](API_NetworkBandwidthGbpsRequest.md)
 +  [NetworkInterfaceCountRequest](API_NetworkInterfaceCountRequest.md)
 +  [NotificationConfiguration](API_NotificationConfiguration.md)
++  [Operator](API_Operator.md)
 +  [PerformanceFactorReferenceRequest](API_PerformanceFactorReferenceRequest.md)
 +  [PredefinedMetricSpecification](API_PredefinedMetricSpecification.md)
 +  [PredictiveScalingConfiguration](API_PredictiveScalingConfiguration.md)

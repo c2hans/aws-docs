@@ -24,8 +24,6 @@ References:
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
 
-****
-
 - **   [AssociateTeamMember](https://docs.aws.amazon.com/codestar/latest/APIReference/API_AssociateTeamMember.html)  **
   - **Description:** Grants permission to add a user to the team for an AWS CodeStar project
   - **Resource types (\*required):** [project\*](#list_codestar-resource-project)
@@ -145,8 +143,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 The following actions are defined by AWS CodeStar but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 - **   DeleteExtendedAccess  **
   - **Description:** Grants permission to extended delete APIs
   - **Resource types (\*required):** [project\*](#list_codestar-resource-project)
@@ -170,8 +166,6 @@ The following actions are defined by AWS CodeStar but are not directly invocable
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
 
-****
-
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
 |  [project](https://docs.aws.amazon.com/codestar/latest/userguide/working-with-projects.html)  | arn:${Partition}:codestar:${Region}:${Account}:project/${ProjectId} | [aws:ResourceTag/${TagKey}](#list_codestar-aws_ResourceTag___TagKey_) |
@@ -181,8 +175,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_codestar-policy-keys"></a>
 
 AWS CodeStar defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

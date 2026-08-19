@@ -24,8 +24,6 @@ Before you begin working with runbooks, configure roles and, optionally, EventBr
 
 The `AWS-UpdateLinuxAmi` runbook accepts the following input parameters.
 
-****
-
 | Parameter | Type | Description |
 | --- | --- | --- |
 | SourceAmiId | String | (Required) The source AMI ID. You can automatically reference the latest ID of an Amazon EC2 AMI for Linux by using a AWS Systems Manager Parameter Store *public* parameter. For more information, see [Query for the latest Amazon Linux AMI IDs using AWS Systems Manager Parameter Store](https://aws.amazon.com/blogs/compute/query-for-the-latest-amazon-linux-ami-ids-using-aws-systems-manager-parameter-store/). |

@@ -89,12 +89,10 @@ If you anticipate that you will be indexing several Sharepoint sites and would l
 
          The following tables summarize all the permissions your application should have.
          + If you're not using ACL, your application should have the permission:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/sharepoint-cloud-prereqs.html)
 **Note**
 Read.All and Sites.Read.All are required only if you want to crawl OneNote Documents.
          + If you're using ACL, your application should have the following permissions:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/sharepoint-cloud-prereqs.html)
 
 1. Create a client secret for your Sharepoint App:
@@ -155,12 +153,10 @@ If you anticipate that you will be indexing a manageable number of Sharepoint si
 
          The following tables summarize all the permissions your application should have.
          + If you're not using ACL, your application should have the permissions:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/sharepoint-cloud-prereqs.html)
 **Note**
 Read.All and Sites.Read.All are required only if you want to crawl OneNote Documents.
            + If you're using ACL, your application should have the following permissions:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/sharepoint-cloud-prereqs.html)
 
 1. Create a client secret for your Sharepoint App:
@@ -369,7 +365,6 @@ To register the app:
 **Note**
 Note.Read.All and Sites.Read.All are required only if you want to crawl OneNote Documents.
       + If you're using ACL, your application should have the following permissions:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/sharepoint-cloud-prereqs.html)
 **Note**
 GroupMember.Read.All and User.Read.All are required only if Identity crawler is activated.
@@ -424,12 +419,10 @@ For organizations planning to index a manageable number of Sharepoint sites with
 
       The following tables summarize all the permissions your application should have.
       + If you're not using ACL, your application should have the permissions:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/sharepoint-cloud-prereqs.html)
 **Note**
  Note.Read.All and Sites.Read.All are required only if you want to crawl OneNote Documents.
       + If you're using ACL, your application should have the following permissions:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/sharepoint-cloud-prereqs.html)
 **Note**
  Note. GroupMember.Read.All and User.Read.All are required only if Identity crawler is activated.

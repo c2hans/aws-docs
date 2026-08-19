@@ -13,8 +13,6 @@ For more information on traditional relational database modeling and how to adap
 
 The following table shows some high-level differences between a relational database management system (RDBMS) and DynamoDB.
 
-****
-
 | Characteristic | Relational database management system (RDBMS) | Amazon DynamoDB |
 | --- | --- | --- |
 | Optimal Workloads | Ad hoc queries; data warehousing; OLAP (online analytical processing). | Web-scale applications, including social networks, gaming, media sharing, and Internet of Things (IoT). |

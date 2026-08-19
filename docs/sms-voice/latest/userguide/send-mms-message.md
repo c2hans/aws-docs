@@ -23,8 +23,6 @@ Before you begin, the following prerequisites must be met:
 
   For a list of support file types and sizes, see [ MMS file types, size and character limits  Learn about MMS file size, file type limitations, and maximum number of charters an mms can contain.  MMS file typesMMS file sizemms character limit  A single MMS media file can be up to 2 MB for all image types (gif, jpeg, png) and 600 KB in size for all audio and video media file types. The text message body of an MMS can contain 1600 from any character set. Unlike SMS, MMS message are not broken into multiple parts when they are sent. If you are sending large text message you may get better throughput sending an MMS message since they are not broken into multiple parts.
 
-****
-
 | File type | MIME types | Maximum file size |
 | --- | --- | --- |
 | Graphics Interchange Format | `image/gif` | 2 MB |
@@ -62,7 +60,7 @@ The only required parameters for [send-media-message](https://docs.aws.amazon.co
   + Replace {{\+12065550150}} with the destination phone number.
   + Replace {{\+14255550120}} with your origination identity. The origination identity must be `ACTIVE` and able to send the destination phone number.
   + Replace {{text body}} with your text message.
-  + Replace {{s3://s3-bucket/media\_file.jpg}} with the S3 URI of the MMS file. Supported media file formats are listed in [MMS file types, size and character limits](mms-limitations-character.md). For more information about creating an S3 bucket and managing objects, see [Setting up an Amazon S3 bucket for MMS files](#send-mms-message-bucket) or [Creating a bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/create-bucket-overview.html) and [Uploading objects](https://docs.aws.amazon.com//AmazonS3/latest/userguide/upload-objects.html) in the [Amazon S3 User Guide](https://docs.aws.amazon.com/AmazonS3/latest/userguide/).
+  + Replace {{s3://s3-bucket/media\_file.jpg}} with the S3 URI of the MMS file. Supported media file formats are listed in [MMS file types, size and character limits](mms-limitations-character.md). For more information about creating an S3 bucket and managing objects, see [Setting up an Amazon S3 bucket for MMS files](#send-mms-message-bucket) or [Creating a bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/create-bucket-overview.html) and [Uploading objects](https://docs.aws.amazon.com/AmazonS3/latest/userguide/upload-objects.html) in the [Amazon S3 User Guide](https://docs.aws.amazon.com/AmazonS3/latest/userguide/).
 
 If AWS End User Messaging SMS accepts the command you will receive the `MessageID`. This only means the command was successfully received and not that the destination device has received the message yet. For a list of error codes, see [SendMediaMessage Errors](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_SendMediaMessage.html#API_SendMediaMessage_Errors).
 

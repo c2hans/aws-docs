@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/syst
 
 AWS Systems Manager gives you visibility and control of your infrastructure on AWS. Systems Manager provides a unified user interface so you can view operational data from multiple AWS services and automate operational tasks across your AWS resources.
 
-A [Systems Manager document](https://docs.aws.amazon.com//systems-manager/latest/userguide/sysman-systems-manager-docs.html) defines the actions that Systems Manager performs on your managed instances. An Automation document is a type of Systems Manager document that you use to perform common maintenance and deployment tasks such as creating or updating an Amazon Machine Image (AMI). This topic outlines how to create, edit, publish, and delete Automation documents with AWS Toolkit for Visual Studio Code.
+A [Systems Manager document](https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-systems-manager-docs.html) defines the actions that Systems Manager performs on your managed instances. An Automation document is a type of Systems Manager document that you use to perform common maintenance and deployment tasks such as creating or updating an Amazon Machine Image (AMI). This topic outlines how to create, edit, publish, and delete Automation documents with AWS Toolkit for Visual Studio Code.
 
 **Topics**
 + [Assumptions and prerequisites](#systems-manager-assumptions)
@@ -25,8 +25,8 @@ A [Systems Manager document](https://docs.aws.amazon.com//systems-manager/latest
 
 Before you begin, make sure:
 + You have installed Visual Studio Code and the latest version of the AWS Toolkit for Visual Studio Code. For more information, see [Installing the AWS Toolkit for Visual Studio Code](setup-toolkit.md).
-+ You’re familiar with Systems Manager. For more information, see the [*AWS Systems Manager User Guide*](https://docs.aws.amazon.com//systems-manager/latest/userguide/what-is-systems-manager.html).
-+ You’re familiar with Systems Manager Automation use cases. For more information, see [AWS Systems Manager Automation](https://docs.aws.amazon.com//systems-manager/latest/userguide/systems-manager-automation.html) in the *AWS Systems Manager User Guide*.
++ You’re familiar with Systems Manager. For more information, see the [*AWS Systems Manager User Guide*](https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html).
++ You’re familiar with Systems Manager Automation use cases. For more information, see [AWS Systems Manager Automation](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-automation.html) in the *AWS Systems Manager User Guide*.
 
 ## IAM permissions for Systems Manager Automation documents
 <a name="systems-manager-permissions"></a>
@@ -62,7 +62,7 @@ In the Toolkit for VS Code you must have a credentials profile that contains the
 
 ------
 
-For information on how to update an IAM policy, see [Creating IAM policies](https://docs.aws.amazon.com//IAM/latest/UserGuide/access_policies_create.html) in the *IAM User Guide*. For information on how to set up your credentials profile, see [AWS IAM credentials](setup-credentials.md).
+For information on how to update an IAM policy, see [Creating IAM policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html) in the *IAM User Guide*. For information on how to set up your credentials profile, see [AWS IAM credentials](setup-credentials.md).
 
 ## Creating a new Systems Manager Automation document
 <a name="systems-manager-create"></a>
@@ -163,7 +163,7 @@ Deleting an Automation document that has already been run doesn't delete the AWS
 ## Executing a Systems Manager Automation document
 <a name="systems-manager-run"></a>
 
-Once your Automation document is published to AWS, you can run it to perform tasks on your behalf in your AWS account. To run your Automation document, you use the AWS Management Console, the Systems Manager APIs, the AWS CLI, or the AWS Tools for PowerShell. For instructions on how to run an Automation document, see [Running a simple automation](https://docs.aws.amazon.com//systems-manager/latest/userguide/automation-working-executing.html) in the *AWS Systems Manager User Guide*.
+Once your Automation document is published to AWS, you can run it to perform tasks on your behalf in your AWS account. To run your Automation document, you use the AWS Management Console, the Systems Manager APIs, the AWS CLI, or the AWS Tools for PowerShell. For instructions on how to run an Automation document, see [Running a simple automation](https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-working-executing.html) in the *AWS Systems Manager User Guide*.
 
 Alternatively, if you want to use one of the AWS SDKs with the Systems Manager APIs to run your Automation document, see the [AWS SDK references](https://aws.amazon.com/getting-started/tools-sdks/).
 

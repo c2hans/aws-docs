@@ -25,7 +25,6 @@ You disable user authentication by running the configuration script in the same 
    ```
 
 1. Answer the prompts as follows:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-cl3/latest/configguide/conductor-live-config-auth-chg.html)
 
    When you return to the web interface, you are not prompted to log in, and the menu to enable or disable node authentication on the worker nodes has disappeared.

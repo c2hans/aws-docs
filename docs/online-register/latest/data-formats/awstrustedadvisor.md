@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awst
 
 AWS Trusted Advisor provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="trustedadvisor-DescribeAccount"></a>[DescribeAccount](https://docs.aws.amazon.com/awssupport/latest/user/security-trusted-advisor.html#trusted-advisor-operations) | View the AWS Support plan and various AWS Trusted Advisor preferences | Read |

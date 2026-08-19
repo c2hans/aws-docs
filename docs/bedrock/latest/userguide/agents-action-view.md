@@ -29,8 +29,6 @@ To get information about an action group, send a [GetAgentActionGroup](https://d
 
 To list information about an agent's action groups, send a [ListAgentActionGroups](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_ListAgentActionGroups.html) request with an [Agents for Amazon Bedrock build-time endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#bra-bt). Specify the `agentId` and `agentVersion` for which you want to see action groups. You can include the following optional parameters:
 
-****
-
 | Field | Short description |
 | --- | --- |
 | maxResults | The maximum number of results to return in a response. |

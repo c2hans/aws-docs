@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awse
 
 AWS End User Messaging SMS and Voice V2 provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="sms-voice-CarrierLookup"></a>[CarrierLookup](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_CarrierLookup.html) | Look up carrier information for a phone number | Read |

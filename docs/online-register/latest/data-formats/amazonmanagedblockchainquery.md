@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon Managed Blockchain Query provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="managedblockchain-query-BatchGetTokenBalance"></a>[BatchGetTokenBalance](${APIReferenceDocPage}API_BatchGetTokenBalance.html) | Batch calls for GetTokenBalance API | Read |

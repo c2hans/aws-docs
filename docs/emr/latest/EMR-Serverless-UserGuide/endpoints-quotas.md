@@ -78,8 +78,6 @@ New AWS accounts have initial lower quotas that can increase over time. Amazon E
 
 The following table lists the service quotas for EMR Serverless. For more information, refer to [AWS service quotas](https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html).
 
-****
-
 | Name | Default limit | Adjustable? | Description |
 | --- | --- | --- | --- |
 | Max concurrent vCPUs per account | 16 | Yes | The maximum number of vCPUs that can concurrently run for the account in the current AWS Region.<br />Valid Period: 1 minute<br />Valid Statistics: Sum |
@@ -88,8 +86,6 @@ The following table lists the service quotas for EMR Serverless. For more inform
 <a name="api-limits"></a>
 
 The following describes the API limits per Region for your AWS account.
-
-****
 
 | Resource | Default quota |
 | --- | --- |

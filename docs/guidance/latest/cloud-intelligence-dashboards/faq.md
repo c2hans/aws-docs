@@ -53,7 +53,7 @@ For CUR2 we do not support exports other than those deployed by the CID Data Exp
 + Name of CUR: **Only alphanumeric characters and underscore (\_) are allowed**. Ex: "cid"
 + Prefix: You need to have a specific prefix. Ex: **cur/123412341234**. This will help to combine multiple CURs in one place.
 
-When creating a new CUR with CloudFormation you can request a backfill of up to 3 years of data via a support case. If you had an existing CUR with the required structure and you need more than 3 years of historical data, please checkout the [Migration Section](#faq-migration).
+When creating a new CUR with CloudFormation you can request a backfill of up to 14 months of data via a support case. If you had an existing CUR with the required structure and you need more than 14 months of historical data, please checkout the [Migration Section](#faq-migration).
 
 By default, you can have up to 10 CUR configurations in parallel.
 
@@ -127,7 +127,7 @@ Yes. This is a common use-case for Business Units who need a better visibility o
 
 You need to decide which of your Linked accounts will be a Data Collection Account and then you can use the same procedure as described for [multi-account setup](deployment-in-global-regions.md#deployment-in-global-regions-deployment):
 + Step 1: [CFN "CUR aggregation Stack"](deployment-in-global-regions.md#deploy-in-global-regions-create-destination-for-cur) will run in the Data collection account. Please Note to provide the full list of other accounts as input. Also you will need to activate `CreateCUR=True` option to collect data from this account as well.
-+ Step 2: [Deploy CFN "CUR aggregation Stack"](deployment-in-global-regions.md#deploy-in-global-regions-create-cur-and-replication) in all other Linked accounts specifying your Data Collection Account as the Destination. Once done you can optionally create a Support Case in each Account asking to Backfill the CUR `cid` with historical data (up to 3 years).
++ Step 2: [Deploy CFN "CUR aggregation Stack"](deployment-in-global-regions.md#deploy-in-global-regions-create-cur-and-replication) in all other Linked accounts specifying your Data Collection Account as the Destination. Once done you can optionally create a Support Case in each Account asking to Backfill the CUR `cid` with historical data (up to 14 months).
 + Step 3: [Run CFN "All-in-one Dashboards stack"](deployment-in-global-regions.md#deployment-in-global-region-deploy-dashboard) that will create the Glue Crawler, Athena Database, Athena Tables, Quick Sight DataSets and Dashboards. (Quick Sight Enterprise must be activated in this account, [Prepare Amazon Quick Sight](deployment-in-global-regions.md#deploy-in-global-regions-prepare-quicksight))
 
 ![Multi Linked Account Account Setup](http://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashboards/images/multi-account/multi-linked-account-architecture.png)
@@ -184,7 +184,7 @@ You can add data collection from multiple AWS Organizations to be visualized in 
 
 1. In each Management Account (Payer) you need to install CID-CUR-Source as described in [step 2 here](deployment-in-global-regions.md).
 
-1. In each Management Account request a backfill of CUR with the name `cid` with up to 3 years of historical data via a support case.
+1. In each Management Account request a backfill of CUR with the name `cid` with up to 14 months of historical data via a support case.
 
 You can expect the CUR to appear 24h after the backfill request completed.
 
@@ -583,7 +583,7 @@ We recommend installation from scratch in case you fully lost access to your Qui
 
  **Backup:**
 
-1. Configure cross-region/cross-account replication to DR region/account for S3 CUR and data collection buckets (cid-\*). For CUR you can request backfill for 3 years of data.
+1. Configure cross-region/cross-account replication to DR region/account for S3 CUR and data collection buckets (cid-\*). For CUR you can request backfill for 14 months of data.
 
 1. Periodically backup your dashboards using [bundles](https://repost.aws/articles/ARNZN2L2L2SomnCShtJaB-qA/amazon-quicksight-asset-deployments-using-assetbundle-export-and-import-apis-private-datasource-guidelines) or using `cid-cmd export`. Both can be used in bash or python. Store artifacts on S3 in DR region/account.
 

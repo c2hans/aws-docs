@@ -46,12 +46,10 @@ Your choice of embeddings model and vector dimensions can affect the available v
    + **Vector field name** – Provide a name for the field (for example, **embeddings**).
    + **Engine** – The vector engine used for search. Select **faiss**.
    + **Dimensions** – The number of dimensions in the vector. Refer to the following table to determine how many dimensions the vector should contain:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-setup.html)
    + **Distance metric** – The metric used to measure the similarity between vectors. We recommend using **Euclidean** for floating-point vector embeddings.
 
 1. Expand the **Metadata management** section and add two fields to configure the vector index to store additional metadata that a knowledge base can retrieve with vectors. The following table describes the fields and the values to specify for each field:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-setup.html)
 
 1. Take note of the names you choose for the vector index name, vector field name, and metadata management mapping field names for when you create your knowledge base. Then choose **Create**.
@@ -72,7 +70,7 @@ For more detailed documentation on setting up a vector store in Amazon OpenSearc
 #### [ Amazon OpenSearch Service Managed Clusters ]
 
 **Important**
-Before using any domain resources in OpenSearch Managed clusters, you need to configure certain IAM access permissions and policies. For more information, see [Prerequisites and permissions required for using OpenSearch Managed Clusters with Amazon Bedrock Knowledge BasesOverview of permissions configuration](kb-osm-permissions-prereq.md).
+Before using any domain resources in OpenSearch Managed clusters, you need to configure certain IAM access permissions and policies. For more information, see [Prerequisites and permissions required for using OpenSearch Managed Clusters with Amazon Bedrock Knowledge Bases](kb-osm-permissions-prereq.md).
 If you encounter data ingestion failures, it might indicate insufficient OpenSearch domain capacity. To resolve this issue, increase your domain's capacity by provisioning higher IOPS and by increasing the throughput settings. For more information, see [Operational best practices for Amazon OpenSearch Service](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/bp.html).
 
 1. To create a domain and vector index in OpenSearch Cluster in the AWS Management Console, follow the steps described in [Creating and managing OpenSearch Service domains](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/createupdatedomains.html) in the *Amazon OpenSearch Service Developer Guide*.
@@ -105,10 +103,8 @@ This option gives you a domain with a low throughput. If you have larger workloa
    + For the number of dimensions in the vector, refer to the following table to determine how many dimensions the vector should contain:
 **Note**
 The Titan V2 Embeddings - Text model supports multiple dimensions. It can also be 256 or 512.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-setup.html)
    + You can add two fields to configure the vector index to store additional metadata that a knowledge base can retrieve with vectors. The following table describes the fields and the values to specify for each of them.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-setup.html)
 
    ```
@@ -217,7 +213,6 @@ The encryption type can't be changed after the vector bucket has been created.
 1. Choose the vector bucket that you created and then create a vector index. When creating the vector index, take note of the following considerations.
    + **Vector index name** – Provide a name for the field (for example, **embeddings**).
    + **Dimension** – The number of dimensions in the vector. The dimensions must be a value between 1 and 4096. Refer to the following table to determine how many dimensions the vector should contain based on your selection of the embeddings model:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-setup.html)
    +
 **Note**
@@ -251,11 +246,9 @@ After you've gathered this information, you can proceed to [create your knowledg
    You must provide these fields before creating the knowledge base. They cannot be updated after the knowledge base is created.
 **Important**
 The Aurora cluster must reside in the same AWS account as the one where the knowledge base is created for Amazon Bedrock.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-setup.html)
 
 1. You must create an index on the columns vector and text for your text and embeddings fields. If you're using the custom metadata field, you must also create a GIN index on this column. GIN indexes can be used to efficiently search for key-value pairs in jsonb documents for metadata filtering. For more information, see [jsonb indexing](https://www.postgresql.org/docs/current/datatype-json.html#JSON-INDEXING) in the *PostgreSQL documentation*.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-setup.html)
 **Note**
 For improving hybrid search accuracy and latency with English content, consider using the 'english' dictionary instead of 'simple':
@@ -285,7 +278,6 @@ If you frequently use range filters over numerical metadata, then to optimize pe
 1. Configure an AWS Secrets Manager secret for your Aurora DB cluster by following the steps at [Password management with Amazon Aurora and AWS Secrets Manager](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/rds-secrets-manager.html).
 
 1. Take note of the following information after you create your DB cluster and set up the secret.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-setup.html)
 
 ------
@@ -308,7 +300,6 @@ The capacity of your graph can be modified later. We recommend that you start wi
    1. Under **Vector search settings**, choose **Use vector dimension** and specify the number of dimensions in each vector.
 **Note**
 The number of dimensions in each vector must match the vector dimensions in the embeddings model. Refer to the following table to determine how many dimensions the vector should contain:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-setup.html)
 
    1. Leave all other settings to their default and create the graph.
@@ -367,7 +358,6 @@ While you set up the vector store, take note of the following information, which
 + **Endpoint URL** – The public endpoint URL for your database.
 + **Vector index name** – The name of the vector index for your database.
 + **Vector field** – The name of the field where the vector embeddings will be stored. Refer to the following table to determine how many dimensions the vector should contain.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-setup.html)
 + **Text field** – The name of the field where the Amazon Bedrock stores the chunks of raw text.
 + **Bedrock-managed metadata field** – The name of the field where Amazon Bedrock stores metadata related to your knowledge base.

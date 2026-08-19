@@ -80,8 +80,6 @@ This Docker platform update was subsequently released to the following AWS Regio
 China (Ningxia)—cn-northwest-1
 China (Beijing)—cn-north-1
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  ECS Agent  |  Docker  |  Docker Compose  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Docker AL2 version 3.5.5** <br /> * 64bit Amazon Linux 2 v3.5.5 running Docker *  | 2.0.20230221 |  | 20.10.17-1 | 1.29.2 | nginx 1.22.1 |
@@ -90,16 +88,12 @@ China (Beijing)—cn-north-1
 ### Go
 <a name="release-2023-03-07-linux.platforms.go"></a>
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  AWS X-Ray  |  Proxy Server  |
 | --- | --- | --- | --- | --- |
 |  ** Go 1 AL2 version 3.7.0** <br /> * 64bit Amazon Linux 2 v3.7.0 running Go 1 *  | 2.0.20230221 | Go 1.20.1 | 3.2.0 | nginx 1.22.1 |
 
 ### Java SE
 <a name="release-2023-03-07-linux.platforms.javase"></a>
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  Tools  |  AWS X-Ray  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- |
@@ -110,8 +104,6 @@ China (Beijing)—cn-north-1
 ### Tomcat
 <a name="release-2023-03-07-linux.platforms.java"></a>
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  AWS X-Ray  |  Application Server  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Corretto 11 with Tomcat 8.5 AL2 version 4.3.5** <br /> * 64bit Amazon Linux 2 v4.3.5 running Tomcat 8.5 Corretto 11 *  | 2.0.20230221 | Corretto 11.0.18.10.1 | 3.2.0 | Tomcat 8.5.79 | nginx 1.22.1 (default), Apache 2.4.55 |
@@ -120,16 +112,12 @@ China (Beijing)—cn-north-1
 ### .NET Core on Linux
 <a name="release-2023-03-07-linux.platforms.dotnetlinux"></a>
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET Core on AL2 version 2.5.1** <br /> * 64bit Amazon Linux 2 v2.5.1 running .NET Core *  | .NET 6.0.14, supports 6.0.14, 3.1.32 | nginx 1.22.1 | 2.0.20230221 | 3.2.0 |
 
 ### Node.js
 <a name="release-2023-03-07-linux.platforms.nodejs"></a>
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -138,8 +126,6 @@ China (Beijing)—cn-north-1
 
 ### PHP
 <a name="release-2023-03-07-linux.platforms.PHP"></a>
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  Composer  |  Proxy Server  |
 | --- | --- | --- | --- | --- |
@@ -154,8 +140,6 @@ This Python platform update was subsequently released to the following AWS Regio
 China (Ningxia)—cn-northwest-1
 China (Beijing)—cn-north-1
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  Package Manager  |  Packager  |  meld3  |  AWS X-Ray  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  ** Python 3.8 AL2 version 3.5.0** <br /> * 64bit Amazon Linux 2 v3.5.0 running Python 3.8 *  | 2.0.20230221 | Python 3.8.16 | pipenv 2023.2.18 |  |  | 3.2.0 | nginx 1.22.1 (default), Apache 2.4.55 |
@@ -163,8 +147,6 @@ China (Beijing)—cn-north-1
 
 ### Ruby
 <a name="release-2023-03-07-linux.platforms.ruby"></a>
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  Package Manager  |  Application Server  |  AWS X-Ray  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- | --- |

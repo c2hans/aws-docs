@@ -24,8 +24,6 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_acm-actions-as-permissions).
 
-****
-
 - **   AddTagsToCertificate  **
   - **IAM action:**  [acm:AddTagsToCertificate](#list_acm-action-AddTagsToCertificate)
   - **Condition key:**
@@ -65,6 +63,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
 - **   ImportCertificate  **
   - **IAM action:**  [acm:AddTagsToCertificate](#list_acm-action-AddTagsToCertificate)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
   - **IAM action:**  [acm:ImportCertificate](#list_acm-action-ImportCertificate)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+
+- **   ListCertificateDomainValidations  **
+  - **IAM action:**  [acm:ListCertificateDomainValidations](#list_acm-action-ListCertificateDomainValidations)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
 
 - **   ListCertificates  **
   - **IAM action:**  [acm:ListCertificates](#list_acm-action-ListCertificates)
@@ -146,8 +150,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
 <a name="list_acm-actions-as-permissions"></a>
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
-
-****
 
 - **   [AddTagsToCertificate](https://docs.aws.amazon.com/acm/latest/APIReference/API_AddTagsToCertificate.html)  **
   - **Description:** Grants permission to add one or more tags to a certificate
@@ -281,6 +283,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_acm-aws_ResourceTag___TagKey_)
   - **Access level:** List
 
+- **   [ListCertificateDomainValidations](https://docs.aws.amazon.com/acm/latest/APIReference/API_ListCertificateDomainValidations.html)  **
+  - **Description:** Grants permission to list domain validation methods for a certificate
+  - **Resource types (\*required):** [certificate\*](#list_acm-resource-certificate)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_acm-aws_ResourceTag___TagKey_)
+  - **Access level:** List
+
 - **   [ListCertificates](https://docs.aws.amazon.com/acm/latest/APIReference/API_ListCertificates.html)  **
   - **Description:** Grants permission to retrieve a list of certificates for specific certificate parameters
   - **Resource types (\*required):**
@@ -387,17 +395,15 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Access level:** Write
 
 - **   [UpdateCertificateOptions](https://docs.aws.amazon.com/acm/latest/APIReference/API_UpdateCertificateOptions.html)  **
-  - **Description:** Grants permission to update a certificate configuration. Use this to specify whether to opt in to or out of certificate transparency logging
+  - **Description:** Grants permission to update a certificate configuration. Use this to specify whether to opt in to or out of certificate transparency logging or to update the certificate domain validation method
   - **Resource types (\*required):** [certificate\*](#list_acm-resource-certificate)
-  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_acm-aws_ResourceTag___TagKey_)
+  - **Condition keys:** [acm:ValidationMethod](#list_acm-acm_ValidationMethod)<br />[aws:ResourceTag/${TagKey}](#list_acm-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
 ## Resource types defined by AWS Certificate Manager
 <a name="list_acm-resources-for-iam-policies"></a>
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
-
-****
 
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
@@ -410,8 +416,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_acm-policy-keys"></a>
 
 AWS Certificate Manager defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

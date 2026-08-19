@@ -14,8 +14,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-customize-rele
 
 Below are the release notes for Base Deep Learning Containers for Amazon EKS (EKS) and SageMaker AI training jobs (SMTJ):
 
-****
-
 | Version | Type | Service | Image URL |
 | --- | --- | --- | --- |
 | 1.0.0 | CUDA | EKS | `652744875666.dkr.ecr.amazonaws.com/hyperpod-model-customization:verl-eks-v1.0.0` |
@@ -24,8 +22,6 @@ Below are the release notes for Base Deep Learning Containers for Amazon EKS (EK
 | 1.0.0 | CUDA | SMTJ | `652744875666.dkr.ecr.amazonaws.com/hyperpod-model-customization:llama-90b-v1.0.0` |
 
 **AWS Regions support**
-
-****
 
 | Region | Code | Serverless SMTJ support |
 | --- | --- | --- |

@@ -21,7 +21,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/creating-snowflake-connec
    + When selecting **Key/value pairs**, create a pair for {{snowflakePassword}} with the key `sfPassword`.
    + When selecting **Key/value pairs**, create a pair for {{snowflakeWarehouse}} with the key `sfWarehouse`. This is not needed if a default is set in Snowflake.
 
-1. In the AWS Glue Data Catalog, create a connection by following the steps in [Adding an AWS Glue connection](https://docs.aws.amazon.com//glue/latest/dg/console-connections.html). After creating the connection, keep the connection name, {{connectionName}}, for the next step.
+1. In the AWS Glue Data Catalog, create a connection by following the steps in [Adding an AWS Glue connection](https://docs.aws.amazon.com/glue/latest/dg/console-connections.html). After creating the connection, keep the connection name, {{connectionName}}, for the next step.
    + When selecting a **Connection type**, select Snowflake.
    + When selecting **Snowflake URL**, provide the hostname of your Snowflake instance. The URL will use a hostname in the form `{{account_identifier}}.snowflakecomputing.com`.
    + When selecting an **AWS Secret**, provide {{secretName}}.

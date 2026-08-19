@@ -53,4 +53,4 @@ Find all related controls, response:
 }
 ```
 
-For more information, see [ListControlMappings](https://docs.aws.amazon.com//controlcatalog/latest/APIReference/API_ListControlMappings.html).
+For more information, see [ListControlMappings](https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_ListControlMappings.html).

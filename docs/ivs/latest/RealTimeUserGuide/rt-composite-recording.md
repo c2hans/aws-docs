@@ -18,13 +18,13 @@ To use composite recording, you must have a stage with active publishers and an 
 
 1. Create an [EncoderConfiguration](https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_CreateEncoderConfiguration.html) (an object representing how the recorded video should be rendered).
 
-1. Create an [S3 bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/creating-bucket.html) and a [StorageConfiguration](https://docs.aws.amazon.com//ivs/latest/RealTimeAPIReference/API_CreateStorageConfiguration.html) (where the recording contents will be stored).
+1. Create an [S3 bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/creating-bucket.html) and a [StorageConfiguration](https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_CreateStorageConfiguration.html) (where the recording contents will be stored).
 
    **Important**: If you use an existing S3 bucket, the **Object Ownership** setting must be **Bucket owner enforced** or **Bucket owner preferred**. For details, see the S3 documentation on [controlling ownership of objects](https://docs.aws.amazon.com/AmazonS3/latest/userguide/about-object-ownership.html).
 
 1. [Join the stage and publish to it](getting-started-pub-sub.md).
 
-1. When you receive a Participant Published [EventBridge event](eventbridge.md), call [StartComposition](https://docs.aws.amazon.com//ivs/latest/RealTimeAPIReference/API_StartComposition.html) with an S3 DestinationConfiguration object as the destination
+1. When you receive a Participant Published [EventBridge event](eventbridge.md), call [StartComposition](https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_StartComposition.html) with an S3 DestinationConfiguration object as the destination
 
 1. After a few seconds, you should be able to see the HLS segments being persisted to your S3 buckets.
 
@@ -35,7 +35,7 @@ To use composite recording, you must have a stage with active publishers and an 
 ## Composite Recording Example: StartComposition with an S3 Bucket Destination
 <a name="comp-rec-example"></a>
 
-The example below shows a typical call to the [StartComposition](https://docs.aws.amazon.com//ivs/latest/RealTimeAPIReference/API_StartComposition.html) operation, specifying S3 as the only destination for the composition. Once the composition transitions to an `ACTIVE` state, video segments and metadata will start to be written to the S3 bucket specified by the `storageConfiguration` object. To create compositions with different layouts, see “Layouts” in [Server-Side Composition](ssc-overview.md#ssc-api-layouts) and the [IVS Real-Time Streaming API Reference](https://docs.aws.amazon.com//ivs/latest/RealTimeAPIReference/API_LayoutConfiguration.html).
+The example below shows a typical call to the [StartComposition](https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_StartComposition.html) operation, specifying S3 as the only destination for the composition. Once the composition transitions to an `ACTIVE` state, video segments and metadata will start to be written to the S3 bucket specified by the `storageConfiguration` object. To create compositions with different layouts, see “Layouts” in [Server-Side Composition](ssc-overview.md#ssc-api-layouts) and the [IVS Real-Time Streaming API Reference](https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_LayoutConfiguration.html).
 
 ### Request
 <a name="comp-rec-example-request"></a>
@@ -463,7 +463,7 @@ After you successfully set up the CloudFront distribution and update the bucket 
 
    `https://a1b23cdef4ghij.cloudfront.net/FDew6Szq5iTt/9NIpWJHj0wPT/fjFKbylPb3k4/composite/media/hls/multivariant.m3u8`
 
-1. You can now add the final URL to the source attribute of an IVS player to watch the full recording. To watch the recorded video, you can use the demo in [ Getting Started](https://docs.aws.amazon.com//ivs/latest/LowLatencyUserGuide/web-getting-started.html) in the *IVS Player SDK: Web Guide*.
+1. You can now add the final URL to the source attribute of an IVS player to watch the full recording. To watch the recorded video, you can use the demo in [ Getting Started](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/web-getting-started.html) in the *IVS Player SDK: Web Guide*.
 
 ### Example: S3 Bucket Policy with CloudFront and IVS Access
 <a name="comp-rec-playback-example"></a>

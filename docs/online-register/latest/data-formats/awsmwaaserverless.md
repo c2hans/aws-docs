@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsm
 
 AWS MWAA Serverless provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="airflow-serverless-GetTaskInstance"></a>[GetTaskInstance](https://docs.aws.amazon.com/mwaa-serverless/latest/APIReference/API_GetTaskInstance.html) | Retrieve the task details for a workflow run | Read |

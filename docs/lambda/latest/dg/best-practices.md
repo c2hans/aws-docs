@@ -68,7 +68,7 @@ To optimize function performance, we also recommend deploying libraries that can
 
 **Use most-restrictive permissions when setting IAM policies.** Understand the resources and operations your Lambda function needs, and limit the execution role to these permissions. For more information, see [Managing permissions in AWS Lambda](lambda-permissions.md).
 
-**Be familiar with [Lambda quotasLambda quotas](gettingstarted-limits.md).** Payload size, file descriptors and /tmp space are often overlooked when determining runtime resource limits.
+**Be familiar with [Lambda quotas](gettingstarted-limits.md).** Payload size, file descriptors and /tmp space are often overlooked when determining runtime resource limits.
 
 **Delete Lambda functions that you are no longer using.** By doing so, the unused functions won't needlessly count against your deployment package size limit.
 

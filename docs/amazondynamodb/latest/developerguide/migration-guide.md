@@ -236,4 +236,4 @@ Perform an online migration with an SQL staging table using AWS DMS
 This guide presented several considerations and approaches for migrating relational database data into DynamoDB, with a focus on minimizing downtime and using common database tools and techniques. For more information, see the following:
 + [AWS DMS User Guide](https://docs.aws.amazon.com/dms/latest/userguide/Welcome.html)
 + [AWS Glue User Guide](https://docs.aws.amazon.com/glue/latest/dg/what-is-glue.html)
-+ [Best Practices for Migrating from RDBMS to DynamoDB](https://docs.aws.amazon.com//whitepapers/latest/best-practices-for-migrating-from-rdbms-to-dynamodb/welcome.html)
++ [Best Practices for Migrating from RDBMS to DynamoDB](https://docs.aws.amazon.com/whitepapers/latest/best-practices-for-migrating-from-rdbms-to-dynamodb/welcome.html)

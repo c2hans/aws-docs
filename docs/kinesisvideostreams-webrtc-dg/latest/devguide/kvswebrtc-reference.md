@@ -28,8 +28,6 @@ The Definition of `signalingClientStats` can be found in [Stats.h](https://githu
 
 The following signaling metrics are currently supported:
 
-****
-
 | Metric | Description |
 | --- | --- |
 | cpApiCallLatency | Calculate latency for control plane API calls. Calculation is done using Exponential Moving Average (EMA). The associated calls include: describeChannel, createChannel, getChannelEndpoint and deleteChannel. |
@@ -94,8 +92,6 @@ The following [W3C](https://www.w3.org/TR/webrtc-stats/) standard metrics are cu
 
 ICE Server Metrics:
 
-****
-
 | Metric | Description |
 | --- | --- |
 | URL | URL of the STUN/TURN server being tracked |
@@ -106,8 +102,6 @@ ICE Server Metrics:
 | Total Round Trip Time | The value is updated every time an equivalent response is received for a request. The request packet is tracked in a hash map with the checksum as the key. |
 
 ICE Candidate Stats: Only the information about the selected candidate (local and remote) is included.
-
-****
 
 | Metric | Description |
 | --- | --- |
@@ -120,8 +114,6 @@ ICE Candidate Stats: Only the information about the selected candidate (local an
 | relayProtocol | If TURN server is used to obtain the selected local candidate, this field indicates what protocol was used to obtain it. Valid values are TCP/UDP. |
 
 ICE Candidate Pair Stats: Only the information about the selected candidate pairs is included.
-
-****
 
 | Metric | Description |
 | --- | --- |
@@ -151,8 +143,6 @@ ICE Candidate Pair Stats: Only the information about the selected candidate pair
 <a name="kvswebrtc-reference-media"></a>
 
 Outbound RTP Stats
-
-****
 
 | Metric | Description |
 | --- | --- |
@@ -188,8 +178,6 @@ Outbound RTP Stats
 
 Remote inbound RTP Stats:
 
-****
-
 | Metric | Description |
 | --- | --- |
 | roundTripTime | The value is extracted from the RTCP receiver report on receiving an RTCP packet type 201 (receiver report). The report comprises of details such as last sender report and delay since last sender report to calculate round trip time. Sender reports are generated roughly every 200 milliseconds comprising of information such as number of packets sent and bytes sent that are extracted from outbound stats. |
@@ -199,8 +187,6 @@ Remote inbound RTP Stats:
 | roundTripTimeMeasurements | Indicates the total number of reports received for the SSRC that contains valid round trip time. However, currently this value is incremented regardless so its meaning is the same as reportsReceived. |
 
 Inbound RTP Stats:
-
-****
 
 | Metric | Description |
 | --- | --- |
@@ -219,8 +205,6 @@ Inbound RTP Stats:
 <a name="kvswebrtc-reference-datachannel"></a>
 
 Data channel metrics:
-
-****
 
 | Metric | Description |
 | --- | --- |

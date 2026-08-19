@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/sample-emr-job.
 This sample project demonstrates Amazon EMR and AWS Step Functions integration. The project creates an Amazon EMR cluster, adds multiple steps and runs them, and then terminate the cluster.
 
 **Important**
-Amazon EMR does not have a free pricing tier. Running the sample project will incur costs. You can find pricing information on the [Amazon EMR pricing](https://aws.amazon.com//emr/pricing/) page. The availability of Amazon EMR service integration is subject to the availability of Amazon EMR APIs. Because of this, this sample project might not work correctly in some AWS Regions. See the [Amazon EMR](https://docs.aws.amazon.com//govcloud-us/latest/UserGuide/govcloud-emr.html) documentation for limitations in special Regions.
+Amazon EMR does not have a free pricing tier. Running the sample project will incur costs. You can find pricing information on the [Amazon EMR pricing](https://aws.amazon.com/emr/pricing/) page. The availability of Amazon EMR service integration is subject to the availability of Amazon EMR APIs. Because of this, this sample project might not work correctly in some AWS Regions. See the [Amazon EMR](https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-emr.html) documentation for limitations in special Regions.
 
 ## Step 1: Create the state machine
 <a name="sample-emr-manage"></a>

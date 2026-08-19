@@ -9,8 +9,6 @@ Amazon Q Business is no longer open to new customers. For capabilities similar t
 
 The following table gives an overview of the Amazon Q Business Web Crawler connector and its supported features.
 
-****
-
 - ****Security****
   - **Feature:** Authentication type / **Support:**  +  Basic <br />+  NTLM/Kerberos <br />+  Form <br />+  SAML  You don't need authentication to crawl public websites you have permission to crawl.
   - **Feature:** Authentication credentials / **Support:** **Basic authentication**+  Website username <br />+  Website password <br />**NTLM/Kerberos authentication**+  NTLM/Kerberos username <br />+  NTLM/Kerberos password <br />**Form authentication**+  Login page URL <br />+  Website username <br />+  Website password <br />+  Username field Xpath <br />+  Password field Xpath <br />+  Password button Xpath <br />+  (Optional) Username button Xpath  <br />**SAML authentication**+  Login page URL <br />+  Website username <br />+  Website password <br />+  Username field Xpath <br />+  Password field Xpath <br />+  Password button Xpath <br />+  (Optional) Username button Xpath

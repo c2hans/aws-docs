@@ -25,7 +25,6 @@ Do this from each Elemental node.
 ![](http://docs.aws.amazon.com/elemental-cf2/latest/installguide/images/install-installer-shared-png.png)
 
 1. Use the arrow keys to select each option and do the following:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-cf2/latest/installguide/install-cf-ig-install-ks.html)
 
    The operating system is installed. From now on, the system runs this customized version of your Linux operating system.

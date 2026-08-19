@@ -11,8 +11,6 @@ The following provides a sample mapping between the Australian Cyber Security Ce
 
 This sample conformance pack template contains mappings to controls within the ACSC Essential 8, which was created by the Commonwealth of Australia and can be found at [ACSC \| Essential Eight](https://www.cyber.gov.au/acsc/view-all-content/essential-eight). Licensing of the framework under Creative Commons Attribution 4.0 International Public License and copyright information for the framework (including a disclaimer of warranties) can be found at [ACSC \| Copyright](https://www.cyber.gov.au/acsc/copyright).
 
-****
-
 | Control ID  | AWS Config Rule  | Guidance  |
 | --- | --- | --- |
 | Application\_control | [alb-waf-enabled](https://docs.aws.amazon.com/config/latest/developerguide/alb-waf-enabled.html) | Ensure AWS WAF is enabled on Elastic Load Balancers (ELB) to help protect web applications. A WAF helps to protect your web applications or APIs against common web exploits. These web exploits may affect availability, compromise security, or consume excessive resources within your environment. |

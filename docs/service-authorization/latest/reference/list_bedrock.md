@@ -25,8 +25,6 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_bedrock-actions-as-permissions).
 
-****
-
 - **   BatchDeleteAdvancedPromptOptimizationJob  **
   - **SDK client:** bedrock
   - **IAM action:**  [bedrock:BatchDeleteAdvancedPromptOptimizationJob](#list_bedrock-action-BatchDeleteAdvancedPromptOptimizationJob)
@@ -1155,6 +1153,13 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [bedrock:AgenticRetrieveStream](#list_bedrock-action-AgenticRetrieveStream)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
   - **IAM action:**  [bedrock:Retrieve](#list_bedrock-action-Retrieve)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
 
+- **   CheckIngestedDocumentAcl  **
+  - **SDK client:** bedrock-agent-runtime
+  - **IAM action:**  [bedrock:CheckIngestedDocumentAcl](#list_bedrock-action-CheckIngestedDocumentAcl)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
 - **   CreateInvocation  **
   - **SDK client:** bedrock-agent-runtime
   - **IAM action:**  [bedrock:CreateInvocation](#list_bedrock-action-CreateInvocation)
@@ -1215,6 +1220,13 @@ The following table maps API operations to the IAM actions they authorize. Only 
 - **   GetFlowExecution  **
   - **SDK client:** bedrock-agent-runtime
   - **IAM action:**  [bedrock:GetFlowExecution](#list_bedrock-action-GetFlowExecution)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   GetIngestedDocumentAcl  **
+  - **SDK client:** bedrock-agent-runtime
+  - **IAM action:**  [bedrock:GetIngestedDocumentAcl](#list_bedrock-action-GetIngestedDocumentAcl)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
@@ -1645,8 +1657,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
 
-****
-
 - **   [AgenticRetrieveStream](https://docs.aws.amazon.com/bedrock/latest/APIReference/welcome.html)  **
   - **Description:** Grants permission to perform agentic retrieve with streaming from retrievers
   - **Resource types (\*required):**
@@ -1694,6 +1704,18 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [automated-reasoning-policy\*](#list_bedrock-resource-automated-reasoning-policy)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_bedrock-aws_ResourceTag___TagKey_)
   - **Access level:** Write
+
+- **   [CancelInvoke](https://docs.aws.amazon.com/bedrock/latest/APIReference/welcome.html)  **
+  - **Description:** Grants permission to cancel an in-progress stateful invocation
+  - **Resource types (\*required):** [project\*](#list_bedrock-resource-project)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_bedrock-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
+- **   [CheckIngestedDocumentAcl](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_CheckIngestedDocumentAcl.html)  **
+  - **Description:** Grants permission to check whether a user has access to a specific document based on access control list ingested in a knowledge base
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** Read
 
 - **   [CopyBlueprintStage](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Operations_Data_Automation_for_Amazon_Bedrock.html)  **
   - **Description:** Grants permission to copy a blueprint from one stage to another
@@ -2056,6 +2078,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_bedrock-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
+- **   [DeleteInvoke](https://docs.aws.amazon.com/bedrock/latest/APIReference/welcome.html)  **
+  - **Description:** Grants permission to delete a stored response of a stateful invocation
+  - **Resource types (\*required):** [project\*](#list_bedrock-resource-project)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_bedrock-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
 - **   [DeleteKnowledgeBase](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_DeleteKnowledgeBase.html)  **
   - **Description:** Grants permission to delete a knowledge base
   - **Resource types (\*required):** [knowledge-base\*](#list_bedrock-resource-knowledge-base)
@@ -2388,6 +2416,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [inference-profile\*](#list_bedrock-resource-inference-profile) / **Condition keys:**
   - **Access level:** Read
 
+- **   [GetIngestedDocumentAcl](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_GetIngestedDocumentAcl.html)  **
+  - **Description:** Grants permission to fetch the access control list for a specific document ingested in a knowledge base
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** Read
+
 - **   [GetIngestionJob](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_GetIngestionJob.html)  **
   - **Description:** Grants permission to retrieve an existing ingestion job
   - **Resource types (\*required):** [knowledge-base\*](#list_bedrock-resource-knowledge-base)
@@ -2397,6 +2431,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
 - **   [GetInvocationStep](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_GetInvocationStep.html)  **
   - **Description:** Grants permission to get an invocation step from a session
   - **Resource types (\*required):** [session\*](#list_bedrock-resource-session)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_bedrock-aws_ResourceTag___TagKey_)
+  - **Access level:** Read
+
+- **   [GetInvoke](https://docs.aws.amazon.com/bedrock/latest/APIReference/welcome.html)  **
+  - **Description:** Grants permission to retrieve a stored response of a stateful invocation
+  - **Resource types (\*required):** [project\*](#list_bedrock-resource-project)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_bedrock-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
@@ -2542,17 +2582,18 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [InvokeModel](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_InvokeModel.html)  **
   - **Description:** Grants permission to invoke the specified Bedrock model to run inference using the input provided in the request body
-  - **Resource types (\*required):** [application-inference-profile\*](#list_bedrock-resource-application-inference-profile) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_bedrock-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_bedrock-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_bedrock-aws_TagKeys)<br />[bedrock:GuardrailIdentifier](#list_bedrock-bedrock_GuardrailIdentifier)<br />[bedrock:InferenceProfileArn](#list_bedrock-bedrock_InferenceProfileArn)<br />[bedrock:PromptRouterArn](#list_bedrock-bedrock_PromptRouterArn)<br />[bedrock:ServiceTier](#list_bedrock-bedrock_ServiceTier)
-  - **Resource types (\*required):** [async-invoke\*](#list_bedrock-resource-async-invoke) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_bedrock-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_bedrock-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_bedrock-aws_TagKeys)<br />[bedrock:GuardrailIdentifier](#list_bedrock-bedrock_GuardrailIdentifier)<br />[bedrock:InferenceProfileArn](#list_bedrock-bedrock_InferenceProfileArn)<br />[bedrock:PromptRouterArn](#list_bedrock-bedrock_PromptRouterArn)<br />[bedrock:ServiceTier](#list_bedrock-bedrock_ServiceTier)
-  - **Resource types (\*required):** [bedrock-marketplace-model-endpoint\*](#list_bedrock-resource-bedrock-marketplace-model-endpoint) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_bedrock-aws_RequestTag___TagKey_)<br />[aws:TagKeys](#list_bedrock-aws_TagKeys)<br />[bedrock:GuardrailIdentifier](#list_bedrock-bedrock_GuardrailIdentifier)<br />[bedrock:InferenceProfileArn](#list_bedrock-bedrock_InferenceProfileArn)<br />[bedrock:PromptRouterArn](#list_bedrock-bedrock_PromptRouterArn)<br />[bedrock:ServiceTier](#list_bedrock-bedrock_ServiceTier)
-  - **Resource types (\*required):** [custom-model-deployment\*](#list_bedrock-resource-custom-model-deployment) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_bedrock-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_bedrock-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_bedrock-aws_TagKeys)<br />[bedrock:GuardrailIdentifier](#list_bedrock-bedrock_GuardrailIdentifier)<br />[bedrock:InferenceProfileArn](#list_bedrock-bedrock_InferenceProfileArn)<br />[bedrock:PromptRouterArn](#list_bedrock-bedrock_PromptRouterArn)<br />[bedrock:ServiceTier](#list_bedrock-bedrock_ServiceTier)
-  - **Resource types (\*required):** [default-prompt-router\*](#list_bedrock-resource-default-prompt-router) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_bedrock-aws_RequestTag___TagKey_)<br />[aws:TagKeys](#list_bedrock-aws_TagKeys)<br />[bedrock:GuardrailIdentifier](#list_bedrock-bedrock_GuardrailIdentifier)<br />[bedrock:InferenceProfileArn](#list_bedrock-bedrock_InferenceProfileArn)<br />[bedrock:PromptRouterArn](#list_bedrock-bedrock_PromptRouterArn)<br />[bedrock:ServiceTier](#list_bedrock-bedrock_ServiceTier)
-  - **Resource types (\*required):** [foundation-model\*](#list_bedrock-resource-foundation-model) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_bedrock-aws_RequestTag___TagKey_)<br />[aws:TagKeys](#list_bedrock-aws_TagKeys)<br />[bedrock:GuardrailIdentifier](#list_bedrock-bedrock_GuardrailIdentifier)<br />[bedrock:InferenceProfileArn](#list_bedrock-bedrock_InferenceProfileArn)<br />[bedrock:PromptRouterArn](#list_bedrock-bedrock_PromptRouterArn)<br />[bedrock:ServiceTier](#list_bedrock-bedrock_ServiceTier)
-  - **Resource types (\*required):** [imported-model\*](#list_bedrock-resource-imported-model) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_bedrock-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_bedrock-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_bedrock-aws_TagKeys)<br />[bedrock:GuardrailIdentifier](#list_bedrock-bedrock_GuardrailIdentifier)<br />[bedrock:InferenceProfileArn](#list_bedrock-bedrock_InferenceProfileArn)<br />[bedrock:PromptRouterArn](#list_bedrock-bedrock_PromptRouterArn)<br />[bedrock:ServiceTier](#list_bedrock-bedrock_ServiceTier)
-  - **Resource types (\*required):** [inference-profile\*](#list_bedrock-resource-inference-profile) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_bedrock-aws_RequestTag___TagKey_)<br />[aws:TagKeys](#list_bedrock-aws_TagKeys)<br />[bedrock:GuardrailIdentifier](#list_bedrock-bedrock_GuardrailIdentifier)<br />[bedrock:InferenceProfileArn](#list_bedrock-bedrock_InferenceProfileArn)<br />[bedrock:PromptRouterArn](#list_bedrock-bedrock_PromptRouterArn)<br />[bedrock:ServiceTier](#list_bedrock-bedrock_ServiceTier)
-  - **Resource types (\*required):** [prompt-router\*](#list_bedrock-resource-prompt-router) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_bedrock-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_bedrock-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_bedrock-aws_TagKeys)<br />[bedrock:GuardrailIdentifier](#list_bedrock-bedrock_GuardrailIdentifier)<br />[bedrock:InferenceProfileArn](#list_bedrock-bedrock_InferenceProfileArn)<br />[bedrock:PromptRouterArn](#list_bedrock-bedrock_PromptRouterArn)<br />[bedrock:ServiceTier](#list_bedrock-bedrock_ServiceTier)
-  - **Resource types (\*required):** [provisioned-model\*](#list_bedrock-resource-provisioned-model) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_bedrock-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_bedrock-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_bedrock-aws_TagKeys)<br />[bedrock:GuardrailIdentifier](#list_bedrock-bedrock_GuardrailIdentifier)<br />[bedrock:InferenceProfileArn](#list_bedrock-bedrock_InferenceProfileArn)<br />[bedrock:PromptRouterArn](#list_bedrock-bedrock_PromptRouterArn)<br />[bedrock:ServiceTier](#list_bedrock-bedrock_ServiceTier)
-  - **Resource types (\*required):** [system-tool\*](#list_bedrock-resource-system-tool) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_bedrock-aws_RequestTag___TagKey_)<br />[aws:TagKeys](#list_bedrock-aws_TagKeys)<br />[bedrock:GuardrailIdentifier](#list_bedrock-bedrock_GuardrailIdentifier)<br />[bedrock:InferenceProfileArn](#list_bedrock-bedrock_InferenceProfileArn)<br />[bedrock:PromptRouterArn](#list_bedrock-bedrock_PromptRouterArn)<br />[bedrock:ServiceTier](#list_bedrock-bedrock_ServiceTier)
+  - **Resource types (\*required):** [application-inference-profile\*](#list_bedrock-resource-application-inference-profile) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_bedrock-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_bedrock-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_bedrock-aws_TagKeys)<br />[bedrock:GuardrailIdentifier](#list_bedrock-bedrock_GuardrailIdentifier)<br />[bedrock:InferenceProfileArn](#list_bedrock-bedrock_InferenceProfileArn)<br />[bedrock:ModelArn](#list_bedrock-bedrock_ModelArn)<br />[bedrock:ProjectArn](#list_bedrock-bedrock_ProjectArn)<br />[bedrock:PromptRouterArn](#list_bedrock-bedrock_PromptRouterArn)<br />[bedrock:ServiceTier](#list_bedrock-bedrock_ServiceTier)
+  - **Resource types (\*required):** [async-invoke\*](#list_bedrock-resource-async-invoke) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_bedrock-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_bedrock-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_bedrock-aws_TagKeys)<br />[bedrock:GuardrailIdentifier](#list_bedrock-bedrock_GuardrailIdentifier)<br />[bedrock:InferenceProfileArn](#list_bedrock-bedrock_InferenceProfileArn)<br />[bedrock:ModelArn](#list_bedrock-bedrock_ModelArn)<br />[bedrock:ProjectArn](#list_bedrock-bedrock_ProjectArn)<br />[bedrock:PromptRouterArn](#list_bedrock-bedrock_PromptRouterArn)<br />[bedrock:ServiceTier](#list_bedrock-bedrock_ServiceTier)
+  - **Resource types (\*required):** [bedrock-marketplace-model-endpoint\*](#list_bedrock-resource-bedrock-marketplace-model-endpoint) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_bedrock-aws_RequestTag___TagKey_)<br />[aws:TagKeys](#list_bedrock-aws_TagKeys)<br />[bedrock:GuardrailIdentifier](#list_bedrock-bedrock_GuardrailIdentifier)<br />[bedrock:InferenceProfileArn](#list_bedrock-bedrock_InferenceProfileArn)<br />[bedrock:ModelArn](#list_bedrock-bedrock_ModelArn)<br />[bedrock:ProjectArn](#list_bedrock-bedrock_ProjectArn)<br />[bedrock:PromptRouterArn](#list_bedrock-bedrock_PromptRouterArn)<br />[bedrock:ServiceTier](#list_bedrock-bedrock_ServiceTier)
+  - **Resource types (\*required):** [custom-model-deployment\*](#list_bedrock-resource-custom-model-deployment) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_bedrock-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_bedrock-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_bedrock-aws_TagKeys)<br />[bedrock:GuardrailIdentifier](#list_bedrock-bedrock_GuardrailIdentifier)<br />[bedrock:InferenceProfileArn](#list_bedrock-bedrock_InferenceProfileArn)<br />[bedrock:ModelArn](#list_bedrock-bedrock_ModelArn)<br />[bedrock:ProjectArn](#list_bedrock-bedrock_ProjectArn)<br />[bedrock:PromptRouterArn](#list_bedrock-bedrock_PromptRouterArn)<br />[bedrock:ServiceTier](#list_bedrock-bedrock_ServiceTier)
+  - **Resource types (\*required):** [default-prompt-router\*](#list_bedrock-resource-default-prompt-router) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_bedrock-aws_RequestTag___TagKey_)<br />[aws:TagKeys](#list_bedrock-aws_TagKeys)<br />[bedrock:GuardrailIdentifier](#list_bedrock-bedrock_GuardrailIdentifier)<br />[bedrock:InferenceProfileArn](#list_bedrock-bedrock_InferenceProfileArn)<br />[bedrock:ModelArn](#list_bedrock-bedrock_ModelArn)<br />[bedrock:ProjectArn](#list_bedrock-bedrock_ProjectArn)<br />[bedrock:PromptRouterArn](#list_bedrock-bedrock_PromptRouterArn)<br />[bedrock:ServiceTier](#list_bedrock-bedrock_ServiceTier)
+  - **Resource types (\*required):** [foundation-model\*](#list_bedrock-resource-foundation-model) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_bedrock-aws_RequestTag___TagKey_)<br />[aws:TagKeys](#list_bedrock-aws_TagKeys)<br />[bedrock:GuardrailIdentifier](#list_bedrock-bedrock_GuardrailIdentifier)<br />[bedrock:InferenceProfileArn](#list_bedrock-bedrock_InferenceProfileArn)<br />[bedrock:ModelArn](#list_bedrock-bedrock_ModelArn)<br />[bedrock:ProjectArn](#list_bedrock-bedrock_ProjectArn)<br />[bedrock:PromptRouterArn](#list_bedrock-bedrock_PromptRouterArn)<br />[bedrock:ServiceTier](#list_bedrock-bedrock_ServiceTier)
+  - **Resource types (\*required):** [imported-model\*](#list_bedrock-resource-imported-model) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_bedrock-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_bedrock-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_bedrock-aws_TagKeys)<br />[bedrock:GuardrailIdentifier](#list_bedrock-bedrock_GuardrailIdentifier)<br />[bedrock:InferenceProfileArn](#list_bedrock-bedrock_InferenceProfileArn)<br />[bedrock:ModelArn](#list_bedrock-bedrock_ModelArn)<br />[bedrock:ProjectArn](#list_bedrock-bedrock_ProjectArn)<br />[bedrock:PromptRouterArn](#list_bedrock-bedrock_PromptRouterArn)<br />[bedrock:ServiceTier](#list_bedrock-bedrock_ServiceTier)
+  - **Resource types (\*required):** [inference-profile\*](#list_bedrock-resource-inference-profile) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_bedrock-aws_RequestTag___TagKey_)<br />[aws:TagKeys](#list_bedrock-aws_TagKeys)<br />[bedrock:GuardrailIdentifier](#list_bedrock-bedrock_GuardrailIdentifier)<br />[bedrock:InferenceProfileArn](#list_bedrock-bedrock_InferenceProfileArn)<br />[bedrock:ModelArn](#list_bedrock-bedrock_ModelArn)<br />[bedrock:ProjectArn](#list_bedrock-bedrock_ProjectArn)<br />[bedrock:PromptRouterArn](#list_bedrock-bedrock_PromptRouterArn)<br />[bedrock:ServiceTier](#list_bedrock-bedrock_ServiceTier)
+  - **Resource types (\*required):** [project\*](#list_bedrock-resource-project) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_bedrock-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_bedrock-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_bedrock-aws_TagKeys)<br />[bedrock:GuardrailIdentifier](#list_bedrock-bedrock_GuardrailIdentifier)<br />[bedrock:InferenceProfileArn](#list_bedrock-bedrock_InferenceProfileArn)<br />[bedrock:ModelArn](#list_bedrock-bedrock_ModelArn)<br />[bedrock:ProjectArn](#list_bedrock-bedrock_ProjectArn)<br />[bedrock:PromptRouterArn](#list_bedrock-bedrock_PromptRouterArn)<br />[bedrock:ServiceTier](#list_bedrock-bedrock_ServiceTier)
+  - **Resource types (\*required):** [prompt-router\*](#list_bedrock-resource-prompt-router) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_bedrock-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_bedrock-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_bedrock-aws_TagKeys)<br />[bedrock:GuardrailIdentifier](#list_bedrock-bedrock_GuardrailIdentifier)<br />[bedrock:InferenceProfileArn](#list_bedrock-bedrock_InferenceProfileArn)<br />[bedrock:ModelArn](#list_bedrock-bedrock_ModelArn)<br />[bedrock:ProjectArn](#list_bedrock-bedrock_ProjectArn)<br />[bedrock:PromptRouterArn](#list_bedrock-bedrock_PromptRouterArn)<br />[bedrock:ServiceTier](#list_bedrock-bedrock_ServiceTier)
+  - **Resource types (\*required):** [provisioned-model\*](#list_bedrock-resource-provisioned-model) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_bedrock-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_bedrock-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_bedrock-aws_TagKeys)<br />[bedrock:GuardrailIdentifier](#list_bedrock-bedrock_GuardrailIdentifier)<br />[bedrock:InferenceProfileArn](#list_bedrock-bedrock_InferenceProfileArn)<br />[bedrock:ModelArn](#list_bedrock-bedrock_ModelArn)<br />[bedrock:ProjectArn](#list_bedrock-bedrock_ProjectArn)<br />[bedrock:PromptRouterArn](#list_bedrock-bedrock_PromptRouterArn)<br />[bedrock:ServiceTier](#list_bedrock-bedrock_ServiceTier)
+  - **Resource types (\*required):** [system-tool\*](#list_bedrock-resource-system-tool) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_bedrock-aws_RequestTag___TagKey_)<br />[aws:TagKeys](#list_bedrock-aws_TagKeys)<br />[bedrock:GuardrailIdentifier](#list_bedrock-bedrock_GuardrailIdentifier)<br />[bedrock:InferenceProfileArn](#list_bedrock-bedrock_InferenceProfileArn)<br />[bedrock:ModelArn](#list_bedrock-bedrock_ModelArn)<br />[bedrock:ProjectArn](#list_bedrock-bedrock_ProjectArn)<br />[bedrock:PromptRouterArn](#list_bedrock-bedrock_PromptRouterArn)<br />[bedrock:ServiceTier](#list_bedrock-bedrock_ServiceTier)
   - **Access level:** Read
 
 - **   [InvokeModelWithResponseStream](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_InvokeModelWithResponseStream.html)  **
@@ -3243,8 +3284,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 The following actions are defined by Amazon Bedrock but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 - **   [AllowVendedLogDeliveryForResource](https://docs.aws.amazon.com/bedrock/latest/APIReference/welcome.html)  **
   - **Description:** Grants permission to configure vended log delivery for a knowledge base
   - **Resource types (\*required):** [knowledge-base](#list_bedrock-resource-knowledge-base)
@@ -3316,8 +3355,6 @@ The following actions are defined by Amazon Bedrock but are not directly invocab
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
 
-****
-
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
 |  [advanced-prompt-optimization-job](https://docs.aws.amazon.com/bedrock/latest/APIReference/welcome.html)  | arn:${Partition}:bedrock:${Region}:${Account}:advanced-prompt-optimization-job/${ResourceId} | [aws:ResourceTag/${TagKey}](#list_bedrock-aws_ResourceTag___TagKey_) |
@@ -3353,6 +3390,7 @@ The following resource types are defined by this service and can be used in the 
 |  [model-evaluation-job](https://docs.aws.amazon.com/bedrock/latest/APIReference/welcome.html)  | arn:${Partition}:bedrock:${Region}:${Account}:model-evaluation-job/${ResourceId} | [aws:ResourceTag/${TagKey}](#list_bedrock-aws_ResourceTag___TagKey_) |
 |  [model-import-job](https://docs.aws.amazon.com/bedrock/latest/APIReference/welcome.html)  | arn:${Partition}:bedrock:${Region}:${Account}:model-import-job/${ResourceId} | [aws:ResourceTag/${TagKey}](#list_bedrock-aws_ResourceTag___TagKey_) |
 |  [model-invocation-job](https://docs.aws.amazon.com/bedrock/latest/APIReference/welcome.html)  | arn:${Partition}:bedrock:${Region}:${Account}:model-invocation-job/${JobIdentifier} | [aws:ResourceTag/${TagKey}](#list_bedrock-aws_ResourceTag___TagKey_) |
+|  [project](https://docs.aws.amazon.com/bedrock/latest/APIReference/welcome.html)  | arn:${Partition}:bedrock:${Region}:${Account}:project/${ResourceId} | [aws:ResourceTag/${TagKey}](#list_bedrock-aws_ResourceTag___TagKey_) |
 |  [prompt](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_PromptSummary.html)  | arn:${Partition}:bedrock:${Region}:${Account}:prompt/${PromptId} | [aws:ResourceTag/${TagKey}](#list_bedrock-aws_ResourceTag___TagKey_) |
 |  [prompt-router](https://docs.aws.amazon.com/bedrock/latest/APIReference/welcome.html)  | arn:${Partition}:bedrock:${Region}:${Account}:prompt-router/${ResourceId} | [aws:ResourceTag/${TagKey}](#list_bedrock-aws_ResourceTag___TagKey_) |
 |  [prompt-version](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_PromptSummary.html)  | arn:${Partition}:bedrock:${Region}:${Account}:prompt/${PromptId}:${PromptVersion} | [aws:ResourceTag/${TagKey}](#list_bedrock-aws_ResourceTag___TagKey_) |
@@ -3365,8 +3403,6 @@ The following resource types are defined by this service and can be used in the 
 
 Amazon Bedrock defines the following condition keys that can be used in the `Condition` element of an IAM policy.
 
-****
-
 | Condition keys | Description | Type |
 | --- | --- | --- |
 |   [aws:RequestTag/${TagKey}](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-globally-available)  | Filters access by creating requests based on the allowed set of values for each of the mandatory tags | String |
@@ -3377,6 +3413,8 @@ Amazon Bedrock defines the following condition keys that can be used in the `Con
 |   [bedrock:GuardrailIdentifier](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonbedrock.html#amazonbedrock-policy-keys)  | Filters access by the GuardrailIdentifier containing the GuardrailArn or the GuardrailArn:NumericVersion | ARN |
 |   [bedrock:InferenceProfileArn](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-globally-available)  | Filters access by the specified inference profile | ARN |
 |   [bedrock:InlineAgentName](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonbedrock.html#amazonbedrock-policy-keys)  | Filters access by the Inline Agent Names, this will be used in InvokeInlineAgent API names | String |
+|   [bedrock:ModelArn](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonbedrock.html#amazonbedrock-policy-keys)  | Filters access by the model that a stateful invocation runs, on the authorization whose resource is the project | ARN |
+|   [bedrock:ProjectArn](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonbedrock.html#amazonbedrock-policy-keys)  | Filters access by the project that a stateful invocation belongs to, on authorizations whose resource is the inference target it runs | ARN |
 |   [bedrock:PromptRouterArn](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-globally-available)  | Filters access by the specified prompt router | ARN |
 |   [bedrock:ServiceTier](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonbedrock.html#amazonbedrock-policy-keys)  | Filters access by the specified ServiceTier | String |
 |   [bedrock:ThirdPartyKnowledgeBaseCredentialsSecretArn](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-globally-available)  | Filters access by the secretArn containing the credentials of the third party platform | ARN |

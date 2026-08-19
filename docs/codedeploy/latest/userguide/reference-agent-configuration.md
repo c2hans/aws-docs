@@ -13,8 +13,6 @@ For Windows Server instances, the configuration file is named `conf.yml`. It is 
 
 The configuration settings include:
 
-****
-
 |  |  |
 | --- |--- |
 | **:log\_aws\_wire:** | Set to `true` for the CodeDeploy agent to capture wire logs from Amazon S3 and write them to a log file in the location pointed to by the **:log\_dir:** setting.<br />For version 2.0.x and later, the filename is `codedeploy-agent.aws_wire.log` (created with 0640 permissions).<br />For version 1.8.x and earlier, the filename is `codedeploy-agent.wire.log`. You should set **:log\_aws\_wire:** to `true` only for the amount of time required to capture wire logs. The wire log file can grow to a very large size quickly. The wire log output might contain sensitive information, including the plain-text contents of files transferred into, or out of, Amazon S3 while this setting was set to `true`. The wire logs contain information about all Amazon S3 activity associated with the AWS account while this setting was set to `true`, not just activity related to CodeDeploy deployments. <br />The default setting is `false`.<br />This setting applies to all instance types. You must add this configuration setting to Windows Server instances to be able to use it. |

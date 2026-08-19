@@ -96,7 +96,7 @@ For information about CloudTrail record contents, see [CloudTrail record content
 
 You can use AWS CloudTrail to audit the users that connect to your instances using EC2 Instance Connect.
 
-**To audit SSH activity via EC2 Instance Connect using the AWS CloudTrail console**
+**To audit SSH activity through EC2 Instance Connect using the AWS CloudTrail console**
 
 1. Open the CloudTrail console at [https://console.aws.amazon.com/cloudtrail/](https://console.aws.amazon.com/cloudtrail/).
 

@@ -25,8 +25,6 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_service-catalog-actions-as-permissions).
 
-****
-
 - **   AcceptPortfolioShare  **
   - **SDK client:** servicecatalog
   - **IAM action:**  [servicecatalog:AcceptPortfolioShare](#list_service-catalog-action-AcceptPortfolioShare)
@@ -814,8 +812,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
 
-****
-
 - **   [AcceptPortfolioShare](https://docs.aws.amazon.com/servicecatalog/latest/dg/API_AcceptPortfolioShare.html)  **
   - **Description:** Grants permission to accept a portfolio that has been shared with you
   - **Resource types (\*required):** [Portfolio\*](#list_service-catalog-resource-Portfolio)
@@ -1505,8 +1501,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 The following actions are defined by AWS Service Catalog but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 - **   [DeleteResourcePolicy](https://docs.aws.amazon.com/servicecatalog/latest/arguide/sharing-definitions.html)  **
   - **Description:** Grants permission to delete a resource-based policy for the specified resource
   - **Resource types (\*required):** [Application](#list_service-catalog-resource-Application) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_service-catalog-aws_ResourceTag___TagKey_)
@@ -1530,8 +1524,6 @@ The following actions are defined by AWS Service Catalog but are not directly in
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
 
-****
-
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
 |  [Application](https://docs.aws.amazon.com/servicecatalog/latest/dg/API_app-registry_CreateApplication.html)  | arn:${Partition}:servicecatalog:${Region}:${Account}:/applications/${ApplicationId} | [aws:ResourceTag/${TagKey}](#list_service-catalog-aws_ResourceTag___TagKey_) |
@@ -1543,8 +1535,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_service-catalog-policy-keys"></a>
 
 AWS Service Catalog defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

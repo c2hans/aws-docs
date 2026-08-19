@@ -81,8 +81,6 @@ Use the IAM console, the IAM CLI, or the IAM API to delete the `AWSServiceRoleFo
 
 AWS WAF Classic supports using service-linked roles in the following AWS Regions.
 
-****
-
 | Region Name | Region Identity | Support in AWS WAF Classic |
 | --- | --- | --- |
 | US East (N. Virginia) | us-east-1 | Yes |

@@ -14,8 +14,6 @@ Update the template and/or parameters of a CFN stack. To only update the paramet
 ## Change Type Details
 <a name="ct-361tlo1k7339x-MCSu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-361tlo1k7339x |

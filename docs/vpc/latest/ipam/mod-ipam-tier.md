@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/vpc/latest/ipam/mod-ipam-tier.html
 # Modify IPAM tier
 <a name="mod-ipam-tier"></a>
 
-IPAM offers two tiers: Free Tier and Advanced Tier. Switching to the Advanced Tier of Amazon VPC IP Address Manager provides more granular control over your IP address management. This can be beneficial as your network complexity grows, allowing you to better optimize and manage your IP address space. For more information about the features available in the Free Tier and the costs associated with the Advanced Tier, see the IPAM tab in the [Amazon VPC pricing page](https://aws.amazon.com//vpc/pricing/).
+IPAM offers two tiers: Free Tier and Advanced Tier. Switching to the Advanced Tier of Amazon VPC IP Address Manager provides more granular control over your IP address management. This can be beneficial as your network complexity grows, allowing you to better optimize and manage your IP address space. For more information about the features available in the Free Tier and the costs associated with the Advanced Tier, see the IPAM tab in the [Amazon VPC pricing page](https://aws.amazon.com/vpc/pricing/).
 
 **Note**
 Before you can switch from the Advanced Tier to the Free Tier, you must:

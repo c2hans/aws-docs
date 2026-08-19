@@ -28,7 +28,7 @@ Consider the following issues before you change your configuration.
 + [You're changing name servers for a .it domain](#updating-name-servers-it-domains)
 
 **You want to make Route 53 the DNS service for your domain**
-If you're currently using another DNS service and you want to make Route 53 the DNS service for your domain, see [Making Amazon Route 53 the DNS service for an existing domainMaking Route 53 the DNS service for an existing domain](MigratingDNS.md) for detailed instructions on how to migrate DNS service to Route 53.
+If you're currently using another DNS service and you want to make Route 53 the DNS service for your domain, see [Making Amazon Route 53 the DNS service for an existing domain](MigratingDNS.md) for detailed instructions on how to migrate DNS service to Route 53.
 If you don't rigorously follow the migration process, your domain can become unavailable on the internet for up to two days.
 
 **You want to use another DNS service**
@@ -72,7 +72,7 @@ By default, DNS resolvers typically cache the names of name servers for two days
      + Replace the name servers for a Route 53 hosted zone with the name servers for another DNS service
      + Replace the name servers for one Route 53 hosted zone with the name servers for a different Route 53 hosted zone
 
-     For information about changing the DNS service for a domain, see [Making Amazon Route 53 the DNS service for an existing domainMaking Route 53 the DNS service for an existing domain](MigratingDNS.md). For information about getting the name servers for the Route 53 hosted zone that you want to use for DNS service for the domain, see [Getting the name servers for a public hosted zone](GetInfoAboutHostedZone.md).
+     For information about changing the DNS service for a domain, see [Making Amazon Route 53 the DNS service for an existing domain](MigratingDNS.md). For information about getting the name servers for the Route 53 hosted zone that you want to use for DNS service for the domain, see [Getting the name servers for a public hosted zone](GetInfoAboutHostedZone.md).
    + Add one or more name servers.
    + Replace the name of an existing name server.
    + If you specify white-label name servers, add or change the IP addresses in glue records. You can enter addresses in IPv4 or IPv6 format. If a name server has multiple IP addresses, enter each address on a separate line.

@@ -42,8 +42,6 @@ With CodeCommit, you can:
 
 As a Git-based service, CodeCommit is well suited to most version control needs. There are no arbitrary limits on file size, file type, and repository size. However, there are inherent limitations to Git that can negatively affect the performance of certain kinds of operations, particularly over time. You can avoid potential degradation of CodeCommit repository performance by avoiding using it for use cases where other AWS services are better suited to the task. You can also optimize Git performance for complex repositories. Here are some use cases where Git, and therefore CodeCommit, might not be the best solution for you, or where you might need to take additional steps to optimize for Git.
 
-****
-
 | Use case | Description | Other services to consider |
 | --- | --- | --- |
 | Large files that change frequently | Git uses delta encoding to store differences between versions of files. For example, if you change a few words in a document, Git will only store those changed words. If you have files or objects over 5 MB with many changes, Git might need to reconstruct a large chain of delta differences. This can consume an increasing amount of compute resources on both your local computer and in CodeCommit as these files grow over time.  | To version large files, consider Amazon Simple Storage Service (Amazon S3). For more information, see [Using Versioning](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Versioning.html) in the Amazon Simple Storage Service User Guide. |

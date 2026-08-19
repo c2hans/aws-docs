@@ -31,8 +31,6 @@ For more information about RUs and SPBs, see [Oracle minor version upgrades](htt
 
 To determine which RUs and SPBs are applied to Amazon RDS for Oracle Database 19c (19.0.0.0), see the following table.
 
-****
-
 |  Date  | Release type |  Name  |
 | --- | --- | --- |
 | 2026 April | SPB | [19.0.0.0.ru-2026-04.spb-1.r1](#oracle-version-RU-RUR.19.0.0.0.ru-2026-04.spb-1.r1) |

@@ -7,8 +7,6 @@ This is an earlier version of the AWS Well-Architected Framework. For the latest
 # REL12-BP02 Perform post-incident analysis
 <a name="rel_testing_resiliency_rca_resiliency"></a>
 
-****
-
 |  |
 | --- |
 | This best practice was updated with new guidance on December 6, 2023. |

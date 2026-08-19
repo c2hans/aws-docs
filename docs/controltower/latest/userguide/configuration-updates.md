@@ -21,13 +21,13 @@ The following table contains a list of AWS Control Tower landing zone update rel
 | 3.0 | 7-26-2022 | [Landing zone version 3.0](2022-all.md#version-3.0) |
 | 2.9 | 4-22-2022 | [Landing zone version 2.9](2022-all.md#version-2.9) |
 | 2.8 | 2-10-2022 | [Landing zone version 2.8](2022-all.md#version-2.8) |
-| 2.7 | 4-8-2021 | [Landing zone version 2.7](https://docs.aws.amazon.com//controltower/latest/userguide/2021-all.html#version-2.7) |
-| 2.6 | 12-29-2020 | [Landing zone version 2.6](https://docs.aws.amazon.com//controltower/latest/userguide/release-notes-2020.html#config-aggregator-12-2020) |
-| 2.5 | 11-18-2020 | [Landing zone version 2.5](https://docs.aws.amazon.com//controltower/latest/userguide/release-notes-2020.html#region-expansion-11-19-20) |
+| 2.7 | 4-8-2021 | [Landing zone version 2.7](https://docs.aws.amazon.com/controltower/latest/userguide/2021-all.html#version-2.7) |
+| 2.6 | 12-29-2020 | [Landing zone version 2.6](https://docs.aws.amazon.com/controltower/latest/userguide/release-notes-2020.html#config-aggregator-12-2020) |
+| 2.5 | 11-18-2020 | [Landing zone version 2.5](https://docs.aws.amazon.com/controltower/latest/userguide/release-notes-2020.html#region-expansion-11-19-20) |
 | 2.4 | None | None |
-| 2.3 | 3-5-2020 | [Landing zone version 2.3](https://docs.aws.amazon.com//controltower/latest/userguide/release-notes-2020.html#Available_in_Sydney) |
-| 2.2 | 11-13-19 | [Landing zone version 2.2](https://docs.aws.amazon.com//controltower/latest/userguide/release-notes-2019.html#Version-2-2) |
-| 2.1 | 6-24-19 | [Landing zone version 2.1](https://docs.aws.amazon.com//controltower/latest/userguide/release-notes-2019.html#Version-2-1) |
+| 2.3 | 3-5-2020 | [Landing zone version 2.3](https://docs.aws.amazon.com/controltower/latest/userguide/release-notes-2020.html#Available_in_Sydney) |
+| 2.2 | 11-13-19 | [Landing zone version 2.2](https://docs.aws.amazon.com/controltower/latest/userguide/release-notes-2019.html#Version-2-2) |
+| 2.1 | 6-24-19 | [Landing zone version 2.1](https://docs.aws.amazon.com/controltower/latest/userguide/release-notes-2019.html#Version-2-1) |
 
 Each time you update your landing zone, you have the opportunity to modify your landing zone settings.
 
@@ -43,7 +43,7 @@ When you update your landing zone, you receive the latest features for AWS Contr
 
 If an update fails, AWS Control Tower does not roll back to a previous landing zone version. You may find your landing zone in an indeterminate state. If so, contact AWS support. For more information about troubleshooting a failure to update, see [Unable to Update Landing Zone](troubleshooting.md#unable-to-update-landing-zone).
 
-You have the opportunity to clear unused AWS Identity Center (formerly called AWS SSO) mappings when you update your landing zone. For more information, see [Field Notes: Clear Unused IAM Identity Center Mappings Automatically During AWS Control Tower Upgrades](https://aws.amazon.com//blogs/architecture/field-notes-clear-unused-aws-sso-mappings-automatically-during-aws-control-tower-upgrades/).
+You have the opportunity to clear unused AWS Identity Center (formerly called AWS SSO) mappings when you update your landing zone. For more information, see [Field Notes: Clear Unused IAM Identity Center Mappings Automatically During AWS Control Tower Upgrades](https://aws.amazon.com/blogs/architecture/field-notes-clear-unused-aws-sso-mappings-automatically-during-aws-control-tower-upgrades/).
 
 **Prerequisite for Update and Reset – turn off Requester Pays**
-Before you update or reset your landing zone, be sure that the Amazon S3 logging bucket for the Log Archive account does not have the **Requester Pays** feature enabled. You must turn off that feature before you begin the **Update** or **Reset** process. When AWS Control Tower sets up your logging bucket, this feature is not enabled. Therefore, only the customers who have subsequently activated the Requester Pays feature must turn it off. For more information, see [Amazon S3 bucket policy for CloudTrail](https://docs.aws.amazon.com//awscloudtrail/latest/userguide/create-s3-bucket-policy-for-cloudtrail.html) and [Using Requester Pays buckets](https://docs.aws.amazon.com//AmazonS3/latest/userguide/RequesterPaysBuckets.html).
+Before you update or reset your landing zone, be sure that the Amazon S3 logging bucket for the Log Archive account does not have the **Requester Pays** feature enabled. You must turn off that feature before you begin the **Update** or **Reset** process. When AWS Control Tower sets up your logging bucket, this feature is not enabled. Therefore, only the customers who have subsequently activated the Requester Pays feature must turn it off. For more information, see [Amazon S3 bucket policy for CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/create-s3-bucket-policy-for-cloudtrail.html) and [Using Requester Pays buckets](https://docs.aws.amazon.com/AmazonS3/latest/userguide/RequesterPaysBuckets.html).

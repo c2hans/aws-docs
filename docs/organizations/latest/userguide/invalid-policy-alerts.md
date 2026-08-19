@@ -47,7 +47,7 @@ The following commands help you view accounts with invalid effective policies
 
 **AWS CloudTrail**
 
-You can use AWS CloudTrail events to monitor when accounts in your organizations have invalid effective declarative policies and when the policies are fixed. For more information, see *Effective policy examples* in [Understanding AWS Organizations log file entries](https://docs.aws.amazon.com//organizations/latest/userguide/orgs_cloudtrail-integration.html#understanding-service-name-entries).
+You can use AWS CloudTrail events to monitor when accounts in your organizations have invalid effective declarative policies and when the policies are fixed. For more information, see *Effective policy examples* in [Understanding AWS Organizations log file entries](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_cloudtrail-integration.html#understanding-service-name-entries).
 
 If you receive an invalid effective policy notification, you can navigate through the AWS Organizations console or call these APIs from your management or delegated administrator account to find more details about the status of specific accounts and policies:
 +  `ListAccountsWithInvalidEffectivePolicy` – Returns a list of accounts in the organization that have invalid effective policies of a specified type.

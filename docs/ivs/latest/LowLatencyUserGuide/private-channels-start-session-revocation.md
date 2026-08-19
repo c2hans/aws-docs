@@ -33,7 +33,7 @@ An error occurred (ValidationException) when calling the StartViewerSessionRevoc
 ## API Request
 <a name="private-channels-session-revocation-api"></a>
 
-For usage information, see [StartViewerSessionRevocation](https://docs.aws.amazon.com//ivs/latest/LowLatencyAPIReference/API_StartViewerSessionRevocation.html) in the *IVS Low-Latency Streaming API Reference*.
+For usage information, see [StartViewerSessionRevocation](https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_StartViewerSessionRevocation.html) in the *IVS Low-Latency Streaming API Reference*.
 
 ```
 POST /StartViewerSessionRevocation HTTP/1.1
@@ -44,4 +44,4 @@ POST /StartViewerSessionRevocation HTTP/1.1
 }
 ```
 
-There also is a [BatchStartViewerSessionRevocation](https://docs.aws.amazon.com//ivs/latest/LowLatencyAPIReference/API_BatchStartViewerSessionRevocation.html) operation.
+There also is a [BatchStartViewerSessionRevocation](https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_BatchStartViewerSessionRevocation.html) operation.

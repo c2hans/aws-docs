@@ -26,16 +26,16 @@ For ease of use, the Tag Editor in the AWS Management Console provides a central
 
 **Using the API or CLI**
 You can also use the API or CLI, and associate tags with wireless devices, gateways, profiles, and destinations when you create then by using the `Tags` field in the following commands:
-+ [AssociateAwsAccountWithPartnerAccount](https://docs.aws.amazon.com//iot-wireless/latest/apireference/API_AssociateAwsAccountWithPartnerAccount.html)
-+ [CreateDestination](https://docs.aws.amazon.com//iot-wireless/latest/apireference/API_CreateDestination.html)
-+ [CreateDeviceProfile](https://docs.aws.amazon.com//iot-wireless/latest/apireference/API_CreateDeviceProfile.html)
-+ [CreateFuotaTask](https://docs.aws.amazon.com//iot-wireless/latest/apireference/API_CreateFuotaTask.html)
-+ [CreateMulticastGroup](https://docs.aws.amazon.com//iot-wireless/latest/apireference/API_CreateMulticastGroup.html)
-+ [CreateServiceProfile](https://docs.aws.amazon.com//iot-wireless/latest/apireference/API_CreateServiceProfile.html)
-+ [CreateWirelessGateway](https://docs.aws.amazon.com//iot-wireless/latest/apireference/API_CreateWirelessGateway.html)
-+ [CreateWirelessGatewayTaskDefinition](https://docs.aws.amazon.com//iot-wireless/latest/apireference/API_CreateWirelessGatewayTaskDefinition.html)
-+ [CreateWirelessDevice](https://docs.aws.amazon.com//iot-wireless/latest/apireference/API_CreateWirelessDevice.html)
-+ [StartBulkAssociateWirelessDeviceWithMulticastGroup](https://docs.aws.amazon.com//iot-wireless/latest/apireference/API_StartBulkAssociateWirelessDeviceWithMulticastGroup.html)
++ [AssociateAwsAccountWithPartnerAccount](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_AssociateAwsAccountWithPartnerAccount.html)
++ [CreateDestination](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CreateDestination.html)
++ [CreateDeviceProfile](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CreateDeviceProfile.html)
++ [CreateFuotaTask](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CreateFuotaTask.html)
++ [CreateMulticastGroup](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CreateMulticastGroup.html)
++ [CreateServiceProfile](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CreateServiceProfile.html)
++ [CreateWirelessGateway](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CreateWirelessGateway.html)
++ [CreateWirelessGatewayTaskDefinition](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CreateWirelessGatewayTaskDefinition.html)
++ [CreateWirelessDevice](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CreateWirelessDevice.html)
++ [StartBulkAssociateWirelessDeviceWithMulticastGroup](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_StartBulkAssociateWirelessDeviceWithMulticastGroup.html)
 
 ## Update tags or list tags for resources
 <a name="tagging-iotwireless-update"></a>

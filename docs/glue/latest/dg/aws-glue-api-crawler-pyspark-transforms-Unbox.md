@@ -15,13 +15,13 @@ We recommend that you use the [`DynamicFrame.unbox()`](aws-glue-api-crawler-pysp
 ## Methods
 <a name="aws-glue-api-crawler-pyspark-transforms-Unbox-_methods"></a>
 + [\_\_call\_\_](#aws-glue-api-crawler-pyspark-transforms-Unbox-__call__)
-+ [applyapply](#aws-glue-api-crawler-pyspark-transforms-Unbox-apply)
-+ [namename](#aws-glue-api-crawler-pyspark-transforms-Unbox-name)
-+ [describeArgsdescribeArgs](#aws-glue-api-crawler-pyspark-transforms-Unbox-describeArgs)
-+ [describeReturndescribeReturn](#aws-glue-api-crawler-pyspark-transforms-Unbox-describeReturn)
-+ [describeTransformdescribeTransform](#aws-glue-api-crawler-pyspark-transforms-Unbox-describeTransform)
-+ [describeErrorsdescribeErrors](#aws-glue-api-crawler-pyspark-transforms-Unbox-describeErrors)
-+ [describedescribe](#aws-glue-api-crawler-pyspark-transforms-Unbox-describe)
++ [apply](#aws-glue-api-crawler-pyspark-transforms-Unbox-apply)
++ [name](#aws-glue-api-crawler-pyspark-transforms-Unbox-name)
++ [describeArgs](#aws-glue-api-crawler-pyspark-transforms-Unbox-describeArgs)
++ [describeReturn](#aws-glue-api-crawler-pyspark-transforms-Unbox-describeReturn)
++ [describeTransform](#aws-glue-api-crawler-pyspark-transforms-Unbox-describeTransform)
++ [describeErrors](#aws-glue-api-crawler-pyspark-transforms-Unbox-describeErrors)
++ [describe](#aws-glue-api-crawler-pyspark-transforms-Unbox-describe)
 
 ## \_\_call\_\_(frame, path, format, transformation\_ctx = "", info="", stageThreshold=0, totalThreshold=0, \*\*options)
 <a name="aws-glue-api-crawler-pyspark-transforms-Unbox-__call__"></a>

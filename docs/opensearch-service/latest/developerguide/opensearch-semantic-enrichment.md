@@ -13,7 +13,7 @@ Amazon OpenSearch Service uses word-to-word matching (lexical search) to find re
 Automatic Semantic Enrichment solves this limitation by considering both keyword matches and the contextual meaning behind searches. This feature understands search intent and improves search relevance by up to 20%. Enable this feature for text fields in your index to enhance search results.
 
 **Note**
-Automatic semantic enrichment is available for OpenSearch Service domains running version 2.19 or later. Additionally, domains with OpenSearch version 2.19 also need to be on the latest service software version update. Currently, feature is available for public domains, and VPC domains are not supported.
+Automatic semantic enrichment is available for OpenSearch Service domains running version 2.19 or later. Additionally, domains with OpenSearch version 2.19 also need to be on the latest service software version update. The feature is available for both public access and VPC access domains. For VPC domains, you must authorize the OpenSearch Service features principal before you create or manage a semantic enrichment index. For more information, see [Using automatic semantic enrichment with VPC domains](#semantic-enrichment-vpc).
 
 ## Model details and performance benchmark
 <a name="semantic-enrichment-model-detail"></a>
@@ -178,6 +178,68 @@ This process uses OpenSearch's built-in ML connectors and ingest pipelines, whic
 
 Search: The semantic enrichment data is already indexed, so queries run efficiently without invoking the ML model again. This means you get improved search relevance with no additional search latency overhead.
 
+## Using automatic semantic enrichment with VPC domains
+<a name="semantic-enrichment-vpc"></a>
+
+Automatic semantic enrichment is supported on both public access and VPC access domains running OpenSearch version 2.19 or later with the latest service software update.
+
+For VPC access domains, Amazon OpenSearch Service uses a managed service to provision the ML model, ingest pipeline, and search pipeline that power semantic enrichment. Because a VPC domain is not publicly reachable, you must authorize this managed service to access your domain before you create or manage a semantic enrichment index.
+
+### Authorize the OpenSearch Service features principal
+<a name="semantic-enrichment-vpc-authorize"></a>
+
+Grant access with the `AuthorizeVpcEndpointAccess` API, specifying `features.opensearchservice.amazonaws.com` as the service principal:
+
+```
+aws opensearch authorize-vpc-endpoint-access \
+  --domain-name {{domain-name}} \
+  --service "features.opensearchservice.amazonaws.com" \
+  --region {{region}}
+```
+
+A successful call returns:
+
+```
+{
+    "AuthorizedPrincipal": {
+        "PrincipalType": "AWS Service",
+        "Principal": "features.opensearchservice.amazonaws.com"
+    }
+}
+```
+
+You only need to authorize the principal once per domain. This step is not required for public access domains.
+
+If you attempt a semantic enrichment index operation (`create-index`, `update-index`, `get-index`, or `delete-index`) on a VPC domain before authorizing the principal, the operation fails with an error similar to the following:
+
+```
+An error occurred (AccessDeniedException) when calling the GetIndex operation: This operation is not authorized for VPC domain. Please authorize 'features.opensearchservice.amazonaws.com' through the AuthorizeVpcEndpointAccess API.
+```
+
+After authorizing the principal, retry the operation.
+
+### Console experience
+<a name="semantic-enrichment-vpc-console"></a>
+
+You can complete the authorization and create a semantic enrichment index for a VPC domain directly from the console. In the Amazon OpenSearch Service console, select your VPC domain to display the automatic semantic enrichment banner, and then choose Go to Indexes to open the Indexes tab.
+
+If the OpenSearch Service features principal has not yet been authorized to access the domain, the Indexes tab shows an access denied message instead of the Create index button. Choose Authorize Principal to open the VPC endpoints tab.
+
+![Indexes tab showing an access denied banner with an Authorize Principal button.](http://docs.aws.amazon.com/opensearch-service/latest/developerguide/images/ase-vpc-indexes-access-denied.png)
+
+On the VPC endpoints tab, choose Authorize principal, select Authorize Principals from other AWS Services, and choose OpenSearch Service Features. This performs the same authorization as the `AuthorizeVpcEndpointAccess` API described in the preceding section.
+
+![VPC endpoints tab with VPC endpoints and Authorized principals panels.](http://docs.aws.amazon.com/opensearch-service/latest/developerguide/images/ase-vpc-endpoints.png)
+
+![Authorize principals dialog with OpenSearch Service Features selected.](http://docs.aws.amazon.com/opensearch-service/latest/developerguide/images/ase-vpc-authorize-principals.png)
+
+Return to the Indexes tab. The Create index button is now available. Choose Create index to open the create index page, where you can define your automatic semantic enrichment fields and create the index for your VPC domain.
+
+![Indexes tab after authorization showing an info banner and a Create index button.](http://docs.aws.amazon.com/opensearch-service/latest/developerguide/images/ase-vpc-indexes-create.png)
+
+**Note**
+For VPC domains, the index list can't be displayed in the console due to VPC network restrictions. To view your indexes, use OpenSearch Dashboards directly with the dashboard URL. Because you can't view indexes in the console, you also can't update an existing semantic enrichment index there. To update a semantic enrichment index on a VPC domain, use the `update-index` API. For more information, see [Update an existing index](#semantic-enrichment-update-index).
+
 ## Configuring permissions for automatic semantic enrichment
 <a name="opensearch-semantic-enrichment-permissions"></a>
 
@@ -254,7 +316,11 @@ Replace {{aws-region}}, {{111122223333}}, and {{domain-name}} with your specific
 ### Fine-grained access control permissions
 <a name="opensearch-semantic-enrichment-fgac-permissions"></a>
 
-If your Amazon OpenSearch Service domain has fine-grained access control enabled, you need additional permissions beyond the IAM permissions. The following permissions are required for each index operation.
+If your Amazon OpenSearch Service domain has fine-grained access control enabled, you need additional permissions beyond the IAM permissions.
+
+Domains created on or after **August 12, 2026** include a predefined fine-grained access control role, `automatic_semantic_enrichment_full_access`, that grants the permissions required to manage semantic enrichment indexes. If your domain uses fine-grained access control, map your user or backend role to `automatic_semantic_enrichment_full_access` instead of assigning the individual cluster and index permissions manually.
+
+If your domain was created before this date, use the fine-grained access control permissions described in the following sections. The following permissions are required for each index operation.
 
 #### CreateIndex API permissions
 <a name="opensearch-semantic-enrichment-fgac-create-permissions"></a>

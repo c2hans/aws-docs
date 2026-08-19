@@ -5,7 +5,9 @@ source_url: https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-up
 # Update the alternate contacts for your AWS account
 <a name="manage-acct-update-contact-alternate"></a>
 
-Alternate contacts allow AWS to contact up to three alternate contacts associated with the account. An alternate contact doesn't have to be a specific person. You could instead add an email distribution list if you have a team that manages billing, operations and security related issues. These are in addition to the email address associated with the [root user](root-user.md) of the account. The [primary account contact](manage-acct-update-contact-primary.md) will continue to receive all email communications sent to the root account’s email.
+These instructions are for how to update the alternate contacts for your AWS account if you signed up for AWS using Sign up for AWS (advanced) or if you activated advanced features for your account. To compare sign-up options, see [Compare sign-up options](sign-up-for-aws.md).
+
+Alternate contacts allows AWS to contact up to three alternate contacts associated with the account. An alternate contact doesn't have to be a specific person. You could instead add an email distribution list if you have a team that manages billing, operations and security related issues. These are in addition to the email address associated with the [root user](root-user.md) of the account. The [primary account contact](manage-acct-update-contact-primary.md) will continue to receive all email communications sent to the root account’s email.
 
 You can specify only one of each of the following contact types associated with an account.
 + Billing contact
@@ -130,11 +132,11 @@ To add or edit the alternate contact details for any AWS account in your organiz
 <a name="update-alternate-contact-requirement"></a>
 
 To update alternate contacts with the AWS Organizations console, you need to do some preliminary settings:
-+ Your organization must enable *all features* to manage settings on your member accounts. This allows admin control over the member accounts. This is set by default when you create your organization. If your organization is set to *consolidated billing* only, and you want to enable all features, see [Enabling all features for an organization](https://docs.aws.amazon.com//organizations/latest/userguide/orgs_manage_org_support-all-features.html).
++ Your organization must enable *all features* to manage settings on your member accounts. This allows admin control over the member accounts. This is set by default when you create your organization. If your organization is set to *consolidated billing* only, and you want to enable all features, see [Enabling all features for an organization](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_org_support-all-features.html).
 + You need to enable trusted access for the AWS Account Management service. To set this up, see [Enable trusted access for AWS Account Management](using-orgs-trusted-access.md).
 
 **Note**
-The AWS Organizations managed policies `AWSOrganizationsReadOnlyAccess` or `AWSOrganizationsFullAccess` are updated to provide permission to access the AWS Account Management APIs so you can access account data from the AWS Organizations console. To view the updated managed policies, see [Updates to Organizations AWS managed policies](https://docs.aws.amazon.com//organizations/latest/userguide/orgs_reference_available-policies.html#ref-iam-managed-policies-updates.html).
+The AWS Organizations managed policies `AWSOrganizationsReadOnlyAccess` or `AWSOrganizationsFullAccess` are updated to provide permission to access the AWS Account Management APIs so you can access account data from the AWS Organizations console. To view the updated managed policies, see [Updates to Organizations AWS managed policies](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_reference_available-policies.html#ref-iam-managed-policies-updates.html).
 
 ------
 #### [ AWS Management Console ]

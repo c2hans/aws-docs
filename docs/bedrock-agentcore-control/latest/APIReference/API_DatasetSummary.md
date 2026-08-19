@@ -41,7 +41,7 @@ Required: Yes
  ** schemaType **   <a name="bedrockagentcorecontrol-Type-DatasetSummary-schemaType"></a>
  The schema type of the dataset.
 Type: String
-Valid Values: `AGENTCORE_EVALUATION_PREDEFINED_V1 | AGENTCORE_EVALUATION_SIMULATED_V1`
+Valid Values: `AGENTCORE_EVALUATION_PREDEFINED_V1 | AGENTCORE_EVALUATION_SIMULATED_V1 | GENERIC_EVALUATION_PREDEFINED_V1`
 Required: Yes
 
  ** status **   <a name="bedrockagentcorecontrol-Type-DatasetSummary-status"></a>

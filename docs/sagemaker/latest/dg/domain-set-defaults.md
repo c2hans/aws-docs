@@ -15,7 +15,7 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/domain-set-defaults.
 <a name="domain-set-defaults-domains"></a>
 
 You can set the following defaults when creating or updating a domain. Values passed at the user profile and shared space level override defaults set at the domain level.
-+ [ DefaultUserSettings ](https://docs.aws.amazon.com//sagemaker/latest/APIReference/API_UserSettings.html)
++ [ DefaultUserSettings ](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UserSettings.html)
 + DefaultSpaceSettings
 **Note**
 `DefaultSpaceSettings` only supports the use of JupyterLab 3 image ARNs for `SageMakerImageArn`. For more information, see [JupyterLab Versioning in Amazon SageMaker Studio Classic](studio-jl.md).

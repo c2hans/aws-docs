@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/getting-sta
 <a name="getting-started-pub-sub"></a>
 
 You can publish/subscribe (real-time) to IVS with:
-+ The native [IVS broadcast SDKs](https://docs.aws.amazon.com//ivs/latest/LowLatencyUserGuide/getting-started-set-up-streaming.html#broadcast-sdk), which support WebRTC and RTMPS. We recommend this, especially for production scenarios. See the details below for [Web](getting-started-pub-sub-web.md), [Android](getting-started-pub-sub-android.md), and [iOS](getting-started-pub-sub-ios.md).
++ The native [IVS broadcast SDKs](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/getting-started-set-up-streaming.html#broadcast-sdk), which support WebRTC and RTMPS. We recommend this, especially for production scenarios. See the details below for [Web](getting-started-pub-sub-web.md), [Android](getting-started-pub-sub-android.md), and [iOS](getting-started-pub-sub-ios.md).
 + The Amazon IVS console — This is suitable for testing streams. See below.
 + Other streaming software and hardware encoders — You can use any streaming encoder that supports the RTMP, RTMPS, or WHIP protocols. See [Stream Ingest](rt-stream-ingest.md) for more information.
 

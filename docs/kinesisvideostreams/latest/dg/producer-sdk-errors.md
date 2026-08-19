@@ -33,8 +33,6 @@ The following sections contain error and status information that are returned by
 
 The following table contains error and status information that are returned by methods in the Kinesis Video Streams `Client` library.
 
-****
-
 | Code | Message | Description | Recommended action |
 | --- | --- | --- | --- |
 | 0x52000001 | STATUS\_MAX\_STREAM\_COUNT | The maximum stream count was reached. | Specify a larger max stream count in DeviceInfo as specified in [Producer SDK quotas](limits.md#producer-sdk-limits). |
@@ -168,8 +166,6 @@ The following table contains error and status information that are returned by m
 
 The following table contains error and status information that are returned by methods in the `Duration` library.
 
-****
-
 | Code | Message |
 | --- | --- |
 | 0xFFFFFFFFFFFFFFFF | INVALID\_DURATION\_VALUE |
@@ -181,8 +177,6 @@ The following table contains error and status information that are returned by m
 
 **Note**
 These error and status information codes are common to many APIs.
-
-****
 
 | Code | Code without leading 0s | Message | Description |
 | --- | --- | --- | --- |
@@ -223,8 +217,6 @@ These error and status information codes are common to many APIs.
 
 The following table contains error and status information that are returned by methods in the `Heap` library.
 
-****
-
 | Code | Message | Description |
 | --- | --- | --- |
 | 0x10000001  | STATUS\_HEAP\_FLAGS\_ERROR  | An invalid combination of flags was specified.  |
@@ -255,8 +247,6 @@ The following table contains error and status information that are returned by m
 <a name="producer-sdk-errors-mkvgen"></a>
 
 The following table contains error and status information that are returned by methods in the `MKVGen` library.
-
-****
 
 | Code | Message | Description / Recommended action |
 | --- | --- | --- |
@@ -311,8 +301,6 @@ The following table contains error and status information that are returned by m
 
 The following table contains error and status information that are returned by methods in the `Trace` library.
 
-****
-
 | Code | Message |
 | --- | --- |
 | 0x10100001 | STATUS\_MIN\_PROFILER\_BUFFER  |
@@ -321,8 +309,6 @@ The following table contains error and status information that are returned by m
 <a name="producer-sdk-errors-utils"></a>
 
 The following table contains error and status information that are returned by methods in the `Utils` library.
-
-****
 
 | Code | Message |
 | --- | --- |
@@ -370,8 +356,6 @@ The following table contains error and status information that are returned by m
 
 The following table contains error and status information that are returned by methods in the `View` library.
 
-****
-
 | Code | Message | Description |
 | --- | --- | --- |
 | 0x30000001  | STATUS\_MIN\_CONTENT\_VIEW\_ITEMS  | An invalid content view item count was specified. For more information, see [Producer SDK quotas](limits.md#producer-sdk-limits).  |
@@ -385,8 +369,6 @@ The following table contains error and status information that are returned by m
 <a name="producer-sdk-errors-putframe-c"></a>
 
 The following section contains error and status information that are returned by callbacks for the `PutFrame` operation within the C producer library.
-
-****
 
 | Code | Message | Description | Recommended action |
 | --- | --- | --- | --- |

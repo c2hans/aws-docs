@@ -9,8 +9,6 @@ The following metrics describes performance or connection metrics for the MSK Re
 
 AuthError metrics do not cover topic-level auth errors. To monitor your MSK Replicator's topic-level auth errors, monitor Replicator's ReplicationLatency metrics and the source cluster's topic-level metrics, MessagesInPerSec. If a topic's ReplicationLatency dropped to 0 but the topic still has data being produced to it, it indicates that the Replicator has an Auth issue with the topic. Check that the Replicator's service execution IAM role has sufficient permission to access the topic.
 
-****
-
 - **Performance**
   - **Metric:** ReplicationLatency
   - **Description:** Time it takes records to replicate from the source to target cluster; duration between record produce time at source and replicated to target. If ReplicationLatency increases, check if clusters have enough partitions to support replication. High replication latency can occur when the partition count is too low for high throughput.

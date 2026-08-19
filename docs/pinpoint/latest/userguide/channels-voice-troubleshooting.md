@@ -19,5 +19,5 @@ For logging of Amazon Pinpoint voice messages, see [How do I set up logging for 
   aws pinpoint update-voice-channel --application-id AppId --voice-channel-request Enabled=true
   ```
 + TooManyRequests exception
-  + If your account is in a sandbox, there's a 20-message limit over a 24 hour period. This limit can be increased by [Voice sandbox ](https://docs.aws.amazon.com//sms-voice/latest/userguide/sandbox.html#sandbox-voice) in the *AWS End User Messaging SMS User Guide*.
+  + If your account is in a sandbox, there's a 20-message limit over a 24 hour period. This limit can be increased by [Voice sandbox ](https://docs.aws.amazon.com/sms-voice/latest/userguide/sandbox.html#sandbox-voice) in the *AWS End User Messaging SMS User Guide*.
   + Amazon Pinpoint voice channel has a hard limit of five messages per single recipient over a 24 hour period. This limit is a hard limit that can't be increased.

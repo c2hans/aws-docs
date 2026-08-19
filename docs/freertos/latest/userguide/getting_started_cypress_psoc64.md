@@ -122,7 +122,7 @@ In this section you build and run the demo.
 **Monitoring MQTT Messages on the Cloud**
 Before you run the demo, you can set up the MQTT client in the AWS IoT console to monitor the messages that your device sends to the AWS Cloud. To subscribe to the MQTT topic with the AWS IoT MQTT client, follow these steps.
 
-   1. Sign in to the [AWS IoT console](https://console.aws.amazon.com//iotv2/).
+   1. Sign in to the [AWS IoT console](https://console.aws.amazon.com/iotv2/).
 
    1. In the navigation pane, choose **Test**, then choose **MQTT test client** to open the MQTT client.
 

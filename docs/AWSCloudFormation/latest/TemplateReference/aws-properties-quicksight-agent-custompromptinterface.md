@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::QuickSight::Agent CustomPromptInterface
 <a name="aws-properties-quicksight-agent-custompromptinterface"></a>
 
-<a name="aws-properties-quicksight-agent-custompromptinterface-description"></a>The `CustomPromptInterface` property type specifies Property description not available. for an [AWS::QuickSight::Agent](aws-resource-quicksight-agent.md).
+The custom prompt interface configuration that defines how an agent's prompt is configured.
 
 ## Syntax
 <a name="aws-properties-quicksight-agent-custompromptinterface-syntax"></a>
@@ -50,7 +50,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-quicksight-agent-custompromptinterface-properties"></a>
 
 `CustomInstructions`  <a name="cfn-quicksight-agent-custompromptinterface-custominstructions"></a>
-Property description not available.
+Custom instructions for the agent's behavior.
 *Required*: No
 *Type*: String
 *Minimum*: `5`
@@ -58,7 +58,7 @@ Property description not available.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Identity`  <a name="cfn-quicksight-agent-custompromptinterface-identity"></a>
-Property description not available.
+Instructions that define the agent's identity and persona.
 *Required*: No
 *Type*: String
 *Minimum*: `5`
@@ -66,7 +66,7 @@ Property description not available.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ModelProfileId`  <a name="cfn-quicksight-agent-custompromptinterface-modelprofileid"></a>
-Property description not available.
+The identifier of the model profile.
 *Required*: No
 *Type*: String
 *Pattern*: `^[a-zA-Z0-9][a-zA-Z0-9-]{35}$`
@@ -75,7 +75,7 @@ Property description not available.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `OutputStyle`  <a name="cfn-quicksight-agent-custompromptinterface-outputstyle"></a>
-Property description not available.
+Instructions for the desired output style.
 *Required*: No
 *Type*: String
 *Minimum*: `5`
@@ -83,13 +83,13 @@ Property description not available.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `PromptSummary`  <a name="cfn-quicksight-agent-custompromptinterface-promptsummary"></a>
-Property description not available.
+A summary of the custom prompt configuration.
 *Required*: No
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `QbsAwsAccountId`  <a name="cfn-quicksight-agent-custompromptinterface-qbsawsaccountid"></a>
-Property description not available.
+The AWS account ID for the Q Business service.
 *Required*: No
 *Type*: String
 *Pattern*: `^QBS[0-9]{12}$`
@@ -98,7 +98,7 @@ Property description not available.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ResponseLength`  <a name="cfn-quicksight-agent-custompromptinterface-responselength"></a>
-Property description not available.
+Instructions for the desired response length.
 *Required*: No
 *Type*: String
 *Minimum*: `5`
@@ -106,7 +106,7 @@ Property description not available.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SubscriptionId`  <a name="cfn-quicksight-agent-custompromptinterface-subscriptionid"></a>
-Property description not available.
+The subscription identifier.
 *Required*: No
 *Type*: String
 *Pattern*: `^[a-z0-9]+$`
@@ -115,7 +115,7 @@ Property description not available.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Tone`  <a name="cfn-quicksight-agent-custompromptinterface-tone"></a>
-Property description not available.
+Instructions for the desired tone of responses.
 *Required*: No
 *Type*: String
 *Minimum*: `5`

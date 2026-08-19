@@ -7,13 +7,12 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon Bedrock provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="bedrock-AgenticRetrieveStream"></a>[AgenticRetrieveStream](https://docs.aws.amazon.com/bedrock/latest/APIReference/welcome.html) | Perform agentic retrieve with streaming from retrievers | Read |
 | <a name="bedrock-ApplyGuardrail"></a>[ApplyGuardrail](https://docs.aws.amazon.com/bedrock/latest/APIReference/welcome.html) | Apply a guardrail | Read |
 | <a name="bedrock-CallWithBearerToken"></a>[CallWithBearerToken](https://docs.aws.amazon.com/bedrock/latest/APIReference/welcome.html) | Use bearer token | Read |
+| <a name="bedrock-CheckIngestedDocumentAcl"></a>[CheckIngestedDocumentAcl](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_CheckIngestedDocumentAcl.html) | Check whether a user has access to a specific document based on access control list ingested in a knowledge base | Read |
 | <a name="bedrock-CountTokens"></a>[CountTokens](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_CountTokens.html) | Count the number of tokens in an input prompt | Read |
 | <a name="bedrock-DetectGeneratedContent"></a>[DetectGeneratedContent](https://docs.aws.amazon.com/bedrock/latest/APIReference/welcome.html) | Detect if the provided content is generated using Amazon Bedrock | Read |
 | <a name="bedrock-ExportAutomatedReasoningPolicyVersion"></a>[ExportAutomatedReasoningPolicyVersion](https://docs.aws.amazon.com/bedrock/latest/APIReference/welcome.html) | Retrieve an automated reasoning policy version artifact | Read |
@@ -58,8 +57,10 @@ Amazon Bedrock provides the following APIs for data retrieval.
 | <a name="bedrock-GetGuardrail"></a>[GetGuardrail](https://docs.aws.amazon.com/bedrock/latest/APIReference/welcome.html) | Retrieve a guardrail or its version | Read |
 | <a name="bedrock-GetImportedModel"></a>[GetImportedModel](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_GetImportedModel.html) | Get the properties associated with Bedrock imported model | Read |
 | <a name="bedrock-GetInferenceProfile"></a>[GetInferenceProfile](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_GetInferenceProfile.html) | Get the properties associated with an inference profile | Read |
+| <a name="bedrock-GetIngestedDocumentAcl"></a>[GetIngestedDocumentAcl](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_GetIngestedDocumentAcl.html) | Fetch the access control list for a specific document ingested in a knowledge base | Read |
 | <a name="bedrock-GetIngestionJob"></a>[GetIngestionJob](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_GetIngestionJob.html) | Retrieve an existing ingestion job | Read |
 | <a name="bedrock-GetInvocationStep"></a>[GetInvocationStep](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_GetInvocationStep.html) | Get an invocation step from a session | Read |
+| <a name="bedrock-GetInvoke"></a>[GetInvoke](https://docs.aws.amazon.com/bedrock/latest/APIReference/welcome.html) | Retrieve a stored response of a stateful invocation | Read |
 | <a name="bedrock-GetKnowledgeBase"></a>[GetKnowledgeBase](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_GetKnowledgeBase.html) | Retrieve an existing knowledge base | Read |
 | <a name="bedrock-GetKnowledgeBaseDocuments"></a>[GetKnowledgeBaseDocuments](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_GetKnowledgeBaseDocuments.html) | Get details for documents in a knowledge base | Read |
 | <a name="bedrock-GetMarketplaceModelEndpoint"></a>[GetMarketplaceModelEndpoint](API_GetMarketplaceModelEndpoint) | Get the properties of a marketplace model endpoint | Read |

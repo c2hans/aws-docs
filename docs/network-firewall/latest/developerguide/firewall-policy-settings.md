@@ -27,7 +27,7 @@ If you own a firewall that is shared with others using VPC endpoint associations
 
   These settings apply when you use strict ordering for stateful rule evaluation, and you can provide them even if you don't define stateful rule groups for the policy.
 
-  For more information about the options, see [Strict evaluation orderStrict evaluation orderDrop actionsAlert actions](suricata-rule-evaluation-order.md#suricata-strict-rule-evaluation-order).
+  For more information about the options, see [Strict evaluation order](suricata-rule-evaluation-order.md#suricata-strict-rule-evaluation-order).
 + **Customer-managed key** (Optional) – Network Firewall encrypts and decrypts Network Firewall resources, to protect against unauthorized access. By default, Network Firewall uses AWS owned keys for this. If you want to use your own keys, you can configure customer managed keys from AWS Key Management Service and provide them to Network Firewall. For information about this option, see [Encryption at rest with AWS Key Management Service](kms-encryption-at-rest.md).
 + **Policy variables** (Optional) – You can configure one or more IPv4 or IPv6 addresses in CIDR notation to override the default value of Suricata `HOME_NET`. If your firewall is deployed using a centralized deployment model, you might want to override `HOME_NET` with the CIDRs of your home network. Otherwise, Network Firewall uses the CIDR of your inspection VPC.
 

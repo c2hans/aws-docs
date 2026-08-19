@@ -12,8 +12,6 @@ AWS Data Pipeline is no longer available to new customers. Existing customers of
 **Note**
 The date/time format for AWS Data Pipeline is Joda Time, which is a replacement for the Java date and time classes. For more information, see [Joda Time - Class DateTimeFormat](http://joda-time.sourceforge.net/apidocs/org/joda/time/format/DateTimeFormat.html).
 
-****
-
 | Function | Description |
 | --- | --- |
 | `int day(DateTime myDateTime)` | Gets the day of the DateTime value as an integer.<br />Example: `#{day(myDateTime)}`<br />Result: `24` |

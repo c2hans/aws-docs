@@ -23,8 +23,6 @@ You can run a batch analysis job using either the Amazon Comprehend Medical cons
 
  When you are using the Amazon Comprehend Medical API, create an AWS Identity Access and Management (IAM) policy and attach it to an IAM role. To learn more about IAM roles and trust policies, see [IAM Policies and Permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html).
 
-****
-
 1. Upload your data into an S3 bucket.
 
 1. To start a new analysis job, use either the StartEntitiesDetectionV2Job operation or the StartPHIDetectionJob operation. When you start the job, tell Amazon Comprehend Medical the name of the input S3 bucket that contains the input files and designate the output S3 bucket to write the files after batch analysis.
@@ -37,8 +35,6 @@ You can run a batch analysis job using either the Amazon Comprehend Medical cons
 
 ## Performing batch analysis using the console
 <a name="batch-api-console"></a>
-
-****
 
 1. Upload your data into an S3 bucket.
 

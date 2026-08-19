@@ -66,7 +66,7 @@ Querying across all shards for items within a particular time range in a DynamoD
 ## Parallel query execution considerations
 <a name="bp-indexes-gsi-parallel-query-execution-considerations"></a>
 
-Each query consumes read capacity from your table or index. If you're using provisioned throughput, ensure that your table is provisioned with enough capacity to handle the burst of parallel queries. If you're using on-demand capacity, be mindful of the potential cost implications.
+Each query consumes read capacity from your table or index. If you're using provisioned throughput, make sure that your table is provisioned with enough capacity to handle the burst of parallel queries. If you're using on-demand capacity, be mindful of the potential cost implications.
 
 ## Code example
 <a name="bp-indexes-gsi-code-example"></a>

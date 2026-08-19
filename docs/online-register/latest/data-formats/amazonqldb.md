@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon QLDB provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="qldb-DescribeJournalKinesisStream"></a>[DescribeJournalKinesisStream](https://docs.aws.amazon.com/qldb/latest/developerguide/API_DescribeJournalKinesisStream.html) | Describe information about a journal kinesis stream | Read |

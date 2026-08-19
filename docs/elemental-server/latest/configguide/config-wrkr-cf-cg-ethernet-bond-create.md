@@ -29,7 +29,6 @@ First, create the bond for the network devices. In the next step, you will add t
    + **Network**, **Netmask**, **Gateway**: Available when static routes are used only. Complete with your networking information.
 
 1. In **Mode**, select the bonding mode that you're using. The following table describes the modes that AWS Elemental Server supports:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-server/latest/configguide/config-wrkr-cf-cg-ethernet-bond-create.html)
 
 1. In **Link Mode**, select the linking mode that you're using for this bond and complete the relevant fields, as described here:

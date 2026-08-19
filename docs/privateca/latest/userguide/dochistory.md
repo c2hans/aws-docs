@@ -13,7 +13,7 @@ The following table describes significant changes to this documentation since Ja
 | [Updated best practices for CA key management](#dochistory) | Restructured the CA key rotation best practices into separate guidance for extending CA validity periods and rotating CA keys. For more information, see [Manage CA keys and certificates](https://docs.aws.amazon.com/privateca/latest/userguide/ca-best-practices.html#rotate-keys). | April 10, 2026 |
 | [Documentation update](https://docs.aws.amazon.com/privateca/latest/userguide/PcaKubernetes.html) | Updated the [Secure Kubernetes with AWS Private Certificate Authority](https://docs.aws.amazon.com/privateca/latest/userguide/PcaKubernetes.html) with a new getting started procedure, examples, and monitoring and troubleshooting topics. | October 1, 2025 |
 | [Dual-stack support](dual-stack-endpoint-support.md) | AWS Private Certificate Authority supports dual-stack. | June 23, 2025 |
-| [Child domain support for Connector for AD is now generally available](https://docs.aws.amazon.com//privateca/latest/userguide/connector-for-ad-getting-started-prerequisites.html) | You can now set up Connector for AD with your child domain. | June 2, 2025 |
+| [Child domain support for Connector for AD is now generally available](https://docs.aws.amazon.com/privateca/latest/userguide/connector-for-ad-getting-started-prerequisites.html) | You can now set up Connector for AD with your child domain. | June 2, 2025 |
 | [New managed policy: `AWSPrivateCAConnectoForKubernetesPolicy`](auth-AwsManagedPolicies.md#managed-policy-updates) | New managed policy introduced for use with AWS Private CA Connector for Kubernetes. | May 19, 2025 |
 | [Updated `AWSPrivateCAPrivilegedUser` and `AWSPrivateCAUser` managed policies](auth-AwsManagedPolicies.md#managed-policy-updates) | Replaced `StringLike` with `ArnLike` in `AWSPrivateCAUser` and `AWSPrivateCAPrivilegedUser`. Updated template ARN to include wild cards `arn:aws:acm-pca:::template` to `arn:aws:acm-pca:*:*:template`. | January 22, 2025 |
 | [Connector for SCEP is now generally available](connector-for-scep.md) | Connector for SCEP is now generally available. | September 16, 2024 |
@@ -61,8 +61,6 @@ The following table describes significant changes to this documentation since Ja
 <a name="earlier-updates"></a>
 
 The following table describes the documentation release history of AWS Private Certificate Authority before June 2018.
-
-****
 
 | Change | Description | Date |
 | --- | --- | --- |

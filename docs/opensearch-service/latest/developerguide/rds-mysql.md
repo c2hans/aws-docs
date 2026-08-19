@@ -37,7 +37,7 @@ Before you create your OpenSearch Ingestion pipeline, perform the following step
 
 1. Verify that automated backups are enabled on the database. For more information, see [Enabling automated backups](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingWithAutomatedBackups.Enabling.html).
 
-1. Configure binary log retention with enough time for replication to occur, for example 24 hours. For more information, see [Setting and showing binary log configuration](https://docs.aws.amazon.com//AmazonRDS/latest/UserGuide/mysql-stored-proc-configuring.html) in the *Amazon RDS User Guide*.
+1. Configure binary log retention with enough time for replication to occur, for example 24 hours. For more information, see [Setting and showing binary log configuration](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/mysql-stored-proc-configuring.html) in the *Amazon RDS User Guide*.
 
 1. Set up username and password authentication on your Amazon RDS instance using [password management with Amazon RDS and AWS Secrets Manager](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-secrets-manager.html). You can also create a username/password combination by [creating a Secrets Manager secret](https://docs.aws.amazon.com/secretsmanager/latest/userguide/create_secret.html).
 

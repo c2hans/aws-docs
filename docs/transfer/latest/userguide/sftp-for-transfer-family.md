@@ -66,7 +66,7 @@ When you create a Transfer Family server, you choose the type of endpoint to use
 
 **Note**
 The `VPC_ENDPOINT` endpoint type is now deprecated and cannot be used to create new servers. Instead of using `EndpointType=VPC_ENDPOINT`, use the VPC endpoint type (`EndpointType=VPC`), which you can use as either **Internal** or **Internet Facing**, as described in the preceding table.
-For details about the deprecation, see [Discontinuing the use of VPC\_ENDPOINTYou can change the endpoint type for your server using the Transfer Family console, AWS CLI, API, SDKs, or CloudFormation. To change your server’s endpoint type, see [Updating the AWS Transfer Family server endpoint type from VPC\_ENDPOINT to VPC](update-endpoint-type-vpc.md).](create-server-in-vpc.md#deprecate-vpc-endpoint).
+For details about the deprecation, see [Discontinuing the use of VPC\_ENDPOINT](create-server-in-vpc.md#deprecate-vpc-endpoint).
 For information about managing VPC endpoint permissions, see [Limiting VPC endpoint access for Transfer Family servers](create-server-in-vpc.md#limit-vpc-endpoint-access).
 
 Consider the following options to increase the security posture of your AWS Transfer Family server:

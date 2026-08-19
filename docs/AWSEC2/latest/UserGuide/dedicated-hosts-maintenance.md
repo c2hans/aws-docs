@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dedicated-hosts-
 # Host maintenance for Amazon EC2 Dedicated Host
 <a name="dedicated-hosts-maintenance"></a>
 
-With host maintenance, in the rare event that a Dedicated Host becomes degraded, we automatically migrate instances running on it onto a healthy replacement Dedicated Host. This helps to minimize the downtime for your workload, and simplify the management of your Dedicated Hosts. Host maintenance is also performed for planned and routine Amazon EC2 maintenance.
+With host maintenance, in the rare event that a Dedicated Host becomes degraded, Amazon EC2 automatically migrates instances running on it onto a healthy replacement Dedicated Host. This helps to minimize the downtime for your workload, and simplify the management of your Dedicated Hosts. Host maintenance is also performed for planned and routine Amazon EC2 maintenance.
 
 Amazon EC2 supports two types of host maintenance:
 + **Live migration host maintenance** — Instances are automatically migrated to the replacement host within 24 hours, without stopping and restarting them.
@@ -23,8 +23,6 @@ Amazon EC2 supports two types of host maintenance:
 <a name="dedicated-hosts-maintenance-differences"></a>
 
 The following table shows the main differences between host recovery and host maintenance.
-
-****
 
 |  | Host recovery | Host maintenance |
 | --- | --- | --- |

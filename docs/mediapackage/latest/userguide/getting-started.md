@@ -99,6 +99,6 @@ To avoid extraneous charges, be sure to delete all unnecessary channel groups, c
 
 1. Delete the endpoint as described in [Deleting an endpoint in AWS Elemental MediaPackage](endpoints-delete.md).
 
-1. Delete a channel as described in [Deleting a channel in AWS Elemental MediaPackageDeleting a channel](channels-delete.md).
+1. Delete a channel as described in [Deleting a channel in AWS Elemental MediaPackage](channels-delete.md).
 
 1. Delete the channel group as described in [Deleting a channel group from AWS Elemental MediaPackage](channel-group-delete.md).

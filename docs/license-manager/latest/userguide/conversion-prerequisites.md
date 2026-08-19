@@ -47,7 +47,7 @@ You must meet the following general prerequisites before performing a license ty
 <a name="conversion-prerequisites-windows"></a>
 
 Windows instances must meet the following prerequisites:
-+ Instances that were originally launched from an Amazon provided Amazon Machine Image (AMI) are not eligible for license type conversion to BYOL. The original Amazon EC2 instance must be launched from your own virtual machine (VM) image. For more information about converting a VM to Amazon EC2, see [VM Import/Export](https://docs.aws.amazon.com//vm-import/latest/userguide/vmimport-image-import.html#import-vm-image).
++ Instances that were originally launched from an Amazon provided Amazon Machine Image (AMI) are not eligible for license type conversion to BYOL. The original Amazon EC2 instance must be launched from your own virtual machine (VM) image. For more information about converting a VM to Amazon EC2, see [VM Import/Export](https://docs.aws.amazon.com/vm-import/latest/userguide/vmimport-image-import.html#import-vm-image).
 + To change your SQL Server license to BYOL, SQL Server must have been installed using your own media.
 
 ## Linux

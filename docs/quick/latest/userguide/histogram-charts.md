@@ -16,8 +16,6 @@ Make sure that you adjust the format settings so that you have a clearly identif
 
 To understand the features supported by histograms, use the following table.
 
-****
-
 | Feature | Supported? | Comments | For more information |
 | --- | --- | --- | --- |
 | Changing the legend display | No |  | [Legends on visual types in Quick](customizing-visual-legend.md) |

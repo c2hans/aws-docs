@@ -38,8 +38,6 @@ The following lists describe the default menu bar commands in the AWS Cloud9 IDE
 ## File menu
 <a name="menu-commands-file"></a>
 
-****
-
 | Command | Description |
 | --- | --- |
 |  **New File**  | Create a new file. |

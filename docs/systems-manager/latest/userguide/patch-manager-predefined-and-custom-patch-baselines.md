@@ -23,8 +23,6 @@ The following table describes the predefined patch baselines provided with Patch
 
 For information about which versions of each operating system Patch Manager supports, see [Patch Manager prerequisites](patch-manager-prerequisites.md).
 
-****
-
 | Name | Supported operating system | Details |
 | --- | --- | --- |
 | `AWS-AlmaLinuxDefaultPatchBaseline` | AlmaLinux | Approves all operating system patches that are classified as "Security" and that have a severity level of "Critical" or "Important". Also approves all patches that are classified as "Bugfix". Patches are auto-approved 7 days after they are released or updated.¹ |

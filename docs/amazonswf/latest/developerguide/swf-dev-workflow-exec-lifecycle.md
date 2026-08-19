@@ -16,8 +16,6 @@ The following diagram shows the life cycle of an order-processing workflow execu
 
 The following table explains each task in the preceding image.
 
-****
-
 |   Description  |   Action, Decision, or Event  |
 | --- | --- |
 | 1. The workflow starter calls the appropriate Amazon SWF action to start the workflow execution for an order, providing the order information. | `[StartWorkflowExecution](https://docs.aws.amazon.com/amazonswf/latest/apireference/API_StartWorkflowExecution.html)` action. |

@@ -9,8 +9,6 @@ Conformance packs provide a general-purpose compliance framework designed to ena
 
 The following provides a sample mapping between the Monetary Authority of Singapore (MAS) Technology Risk Managment Guidelines (TRMG) January 2021 and AWS managed Config rules. Each AWS Config rule applies to a specific AWS resource, and relates to one or more MAS TRMG controls. A MAS TRMG January 2021 control can be related to multiple Config rules. Refer to the table below for more detail and guidance related to these mappings.
 
-****
-
 | Control ID  | AWS Config Rule  | Guidance  |
 | --- | --- | --- |
 | 3.3.1 | [account-part-of-organizations](https://docs.aws.amazon.com/config/latest/developerguide/account-part-of-organizations.html) | Centralized management of AWS accounts within AWS Organizations helps to ensure that accounts are compliant. The lack of centralized account governance may lead to inconsistent account configurations, which may expose resources and sensitive data. |

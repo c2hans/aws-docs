@@ -26,7 +26,7 @@ The following topic describes the prerequisites that you must complete before cr
 
    1. Choose **Next: Tags**.
 
-   1. (Optional) Add metadata to the role by attaching tags as key–value pairs. For more information about using tags in IAM, see [Tagging IAM resources](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_tags.html).
+   1. (Optional) Add metadata to the role by attaching tags as key–value pairs. For more information about using tags in IAM, see [Tagging IAM resources](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_tags.html).
 
    1. Choose **Next: Review**.
 

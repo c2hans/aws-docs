@@ -118,7 +118,7 @@ The name of the topic.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Permissions`  <a name="cfn-quicksight-topicv2-permissions"></a>
-Property description not available.
+A list of permissions for the topics that you want to apply overrides to.
 *Required*: No
 *Type*: Array of [ResourcePermission](aws-properties-quicksight-topicv2-resourcepermission.md)
 *Minimum*: `1`
@@ -126,7 +126,7 @@ Property description not available.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Tags`  <a name="cfn-quicksight-topicv2-tags"></a>
-Property description not available.
+A list of tags for the topics that you want to apply overrides to.
 *Required*: No
 *Type*: Array of [Tag](aws-properties-quicksight-topicv2-tag.md)
 *Minimum*: `1`

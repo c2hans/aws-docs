@@ -23,8 +23,6 @@ If you have more than two environments that are undergoing a update, you are pro
 ## Options
 <a name="eb3-abortoptions"></a>
 
-****
-
 |  Name  |  Description  |
 | --- | --- |
 | [Common options](eb3-cmd-options.md) |  |

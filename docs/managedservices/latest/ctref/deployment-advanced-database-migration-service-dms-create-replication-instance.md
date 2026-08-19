@@ -14,8 +14,6 @@ Create a Database Migration Service (DMS) replication instance on an Amazon EC2 
 ## Change Type Details
 <a name="ct-27apldkhqr0ol-DADc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-27apldkhqr0ol |

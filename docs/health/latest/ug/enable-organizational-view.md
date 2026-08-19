@@ -10,7 +10,7 @@ You can use the AWS Health console to get a centralized view for health events i
 Organizational view is available in the AWS Health console for all AWS Support plans at no additional cost.
 
 **Note**
-If you want to allow users access to this feature in the management account, they must have permissions such as the [AWSHealthFullAccess](https://console.aws.amazon.com//iam/home?#/policies/arn:aws:iam::aws:policy/AWSHealthFullAccess) policy. For more information, see [AWS Health identity-based policy examples](security_iam_id-based-policy-examples.md).
+If you want to allow users access to this feature in the management account, they must have permissions such as the [AWSHealthFullAccess](https://console.aws.amazon.com/iam/home?#/policies/arn:aws:iam::aws:policy/AWSHealthFullAccess) policy. For more information, see [AWS Health identity-based policy examples](security_iam_id-based-policy-examples.md).
 
 ------
 #### [ Enabling organizational view (Console) ]
@@ -27,7 +27,7 @@ You can enable organizational view from the AWS Health console. You must sign in
 
 1. (Optional) If you want to make changes to your AWS organizations, such as creating organizational units (OUs), choose **Manage AWS Organizations**.
 
-   For more information, see [Getting started with AWS Organizations](https://docs.aws.amazon.com//organizations/latest/userguide/orgs_tutorials_basic.html) in the *AWS Organizations User Guide*.
+   For more information, see [Getting started with AWS Organizations](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_tutorials_basic.html) in the *AWS Organizations User Guide*.
 
 **Notes**
 When you enable AWS Health organizational view, the initial account loading process runs in the background and might take several minutes to complete. You can close the AWS Health console and return later, as you don't need to wait for the process to finish. Historical health events (those created before you enabled the feature) might take up to 24 hours to appear in your organizational view.

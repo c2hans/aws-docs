@@ -23,6 +23,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[DestinationPattern](#cfn-observabilityadmin-telemetryrule-telemetrydestinationconfiguration-destinationpattern)" : {{String}},
   "[DestinationType](#cfn-observabilityadmin-telemetryrule-telemetrydestinationconfiguration-destinationtype)" : {{String}},
   "[ELBLoadBalancerLoggingParameters](#cfn-observabilityadmin-telemetryrule-telemetrydestinationconfiguration-elbloadbalancerloggingparameters)" : {{ELBLoadBalancerLoggingParameters}},
+  "[KmsKeyArn](#cfn-observabilityadmin-telemetryrule-telemetrydestinationconfiguration-kmskeyarn)" : {{String}},
   "[LogDeliveryParameters](#cfn-observabilityadmin-telemetryrule-telemetrydestinationconfiguration-logdeliveryparameters)" : {{LogDeliveryParameters}},
   "[RetentionInDays](#cfn-observabilityadmin-telemetryrule-telemetrydestinationconfiguration-retentionindays)" : {{Integer}},
   "[VPCFlowLogParameters](#cfn-observabilityadmin-telemetryrule-telemetrydestinationconfiguration-vpcflowlogparameters)" : {{VPCFlowLogParameters}},
@@ -40,6 +41,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   [DestinationType](#cfn-observabilityadmin-telemetryrule-telemetrydestinationconfiguration-destinationtype): {{String}}
   [ELBLoadBalancerLoggingParameters](#cfn-observabilityadmin-telemetryrule-telemetrydestinationconfiguration-elbloadbalancerloggingparameters): {{
     ELBLoadBalancerLoggingParameters}}
+  [KmsKeyArn](#cfn-observabilityadmin-telemetryrule-telemetrydestinationconfiguration-kmskeyarn): {{String}}
   [LogDeliveryParameters](#cfn-observabilityadmin-telemetryrule-telemetrydestinationconfiguration-logdeliveryparameters): {{
     LogDeliveryParameters}}
   [RetentionInDays](#cfn-observabilityadmin-telemetryrule-telemetrydestinationconfiguration-retentionindays): {{Integer}}
@@ -75,6 +77,15 @@ To declare this entity in your CloudFormation template, use the following syntax
  Configuration parameters specific to ELB load balancer logging when ELB is the resource type.
 *Required*: No
 *Type*: [ELBLoadBalancerLoggingParameters](aws-properties-observabilityadmin-telemetryrule-elbloadbalancerloggingparameters.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`KmsKeyArn`  <a name="cfn-observabilityadmin-telemetryrule-telemetrydestinationconfiguration-kmskeyarn"></a>
+ The Amazon Resource Name (ARN) of the customer-managed AWS KMS key used to encrypt the log groups created during telemetry rule remediation.
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:aws[a-zA-Z-]*:kms:[a-z0-9-]+:\d{12}:key/(mrk-)?[a-f0-9-]+$`
+*Minimum*: `1`
+*Maximum*: `2048`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `LogDeliveryParameters`  <a name="cfn-observabilityadmin-telemetryrule-telemetrydestinationconfiguration-logdeliveryparameters"></a>

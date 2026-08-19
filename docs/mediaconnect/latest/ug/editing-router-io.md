@@ -47,6 +47,8 @@ When your requirements change, you can edit existing router I/Os to meet your ne
 1. Select the router output that you want to update and choose **Edit**.
 
 1. Update router output details as needed.
+**Note**
+You cannot change the **Recovery latency mode** while the output is taking an input. Clear the input assignment for the output, and then change the mode.
 
 1. Choose **Save changes**.
 

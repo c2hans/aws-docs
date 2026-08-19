@@ -5,7 +5,25 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_S3Kno
 # S3KnowledgeBaseParameters
 <a name="API_S3KnowledgeBaseParameters"></a>
 
-The parameters that are required to connect to a S3 Knowledge Base data source.
+The parameters that are required to connect to an S3 knowledge base data source.
+
+ **Prerequisites: Amazon S3 bucket access**
+
+Before you call `CreateKnowledgeBase` for an Amazon S3 knowledge base, an administrator must grant Amazon QuickSight access to the source S3 bucket. If access has not been granted for the bucket, knowledge base creation fails.
+
+To grant access, an administrator adds the bucket in the Amazon QuickSight admin console, under Permissions, AWS resources, Amazon S3, Select S3 buckets. This authorizes the Amazon QuickSight service role to read the bucket. The bucket can be in the same AWS account or, when the bucket owner has authorized your account, in a different account.
+
+The service role requires at least the following permissions on the bucket:
++  `s3:GetObject`
++  `s3:ListBucket`
++  `s3:GetBucketLocation`
++  `s3:GetObjectVersion`
++  `s3:ListBucketVersions`
+
+For the full procedure, including cross-account buckets and AWS KMS-encrypted buckets, see the Amazon S3 knowledge base administrator setup guide.
+
+**Note**
+To grant access for a specific S3 knowledge base data source without granting account-wide S3 access, provide a custom IAM role on the data source by using `RoleArn`.
 
 ## Contents
 <a name="API_S3KnowledgeBaseParameters_Contents"></a>
@@ -20,7 +38,7 @@ Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: Yes
 
  ** MetadataFilesLocation **   <a name="QS-Type-S3KnowledgeBaseParameters-MetadataFilesLocation"></a>
-The location of metadata files within the S3 bucket that describe the structure and content of the knowledge base.
+The Amazon S3 location (prefix) of per-document metadata files. Each metadata file describes a single source document and its indexable attributes, such as title, category, and version. This is not the global ACL configuration file. To apply a single global ACL file to the entire knowledge base, use the access control configuration instead.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No

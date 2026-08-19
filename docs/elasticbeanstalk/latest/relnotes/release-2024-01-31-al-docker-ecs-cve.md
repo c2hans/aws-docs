@@ -50,8 +50,6 @@ The following tables list *only supported* platform branches. They do not list p
 ### Docker
 <a name="release-2024-01-31-docker-ecs-cve.platforms.docker"></a>
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  ECS Agent  |  Docker  |  Docker Compose  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Docker AL2023 version 4.2.1** <br /> * 64bit Amazon Linux 2023 v4.2.1 running Docker *  | 2023.3.20240122 |  | 24.0.5-1 | 2.24.3 | nginx 1.24.0 |

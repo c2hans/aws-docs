@@ -25,8 +25,6 @@ Be aware that at the time these release notes are published, the new platform ve
 ### .NET Core on Linux
 <a name="release-2020-06-23-dotnet-linux.platforms.dotnetlinux"></a>
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X‑Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET Core on AL2 version 1.0.0** <br /> * 64bit Amazon Linux 2 v1.0.0 running .NET Core *  | .NET Core 3.1.5, supports 3.1.5, 2.1.19 | nginx 1.16.1 | 2.0.20200603 | 3.2.0 |

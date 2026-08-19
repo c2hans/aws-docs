@@ -9,8 +9,6 @@ Amazon RDS currently supports the following major version upgrades to a Microsof
 
 You can upgrade your existing DB instance to SQL Server 2017, 2019, 2022, or 2025 from any version except SQL Server 2008. To upgrade from SQL Server 2008, first upgrade to one of the other versions.
 
-****
-
 | Current version | Supported upgrade versions |
 | --- | --- |
 | SQL Server 2022 | SQL Server 2025 |

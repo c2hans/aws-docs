@@ -122,8 +122,6 @@ For more information about S3 on Outposts, see [What is S3 on Outposts](https://
 
 The following table compares the storage classes, including their availability, durability, minimum storage duration, and other considerations.
 
-****
-
 | Storage class | Designed for | Durability (designed for) | Availability (designed for) | Availability Zones | Min storage duration | Min billable object size | Other considerations  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | S3 Standard (`STANDARD`) | Frequently accessed data (more than once a month) with millisecond access | 99.999999999%  | 99.99% | >= 3 | None | None | None |

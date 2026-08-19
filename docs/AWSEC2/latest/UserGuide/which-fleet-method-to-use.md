@@ -11,8 +11,6 @@ If you can't use Amazon EC2 Auto Scaling, then you might consider using EC2 Flee
 
 Use the following table to determine which fleet method to use.
 
-****
-
 | Fleet method | When to use? | Use case |
 | --- | --- | --- |
 | [Amazon EC2 Auto Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html) |  +  You need multiple instances with either a single configuration or a mixed configuration. <br />+  You want to automate the lifecycle management of your instances.   | Create an Auto Scaling group that manages the lifecycle of your instances while maintaining the desired number of instances. Supports horizontal scaling (adding more instances) between specified minimum and maximum limits. |

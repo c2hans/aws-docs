@@ -63,13 +63,11 @@ The `--thing-indexing-configuration` parameter takes a string with the following
 
 You can specify different thing indexing modes in your indexing configuration, depending on what data sources you want to index and search devices from:
 + `thingIndexingMode`: Controls if registry or shadow is indexed. When `thingIndexingMode` is set to be `OFF`, thing indexing is disabled.
-+ `thingConnectivityIndexingMode`: Specifies if thing connectivity data is indexed. This needs to be enabled to get connectivity status information in [ SearchIndex queries](https://docs.aws.amazon.com//iot/latest/developerguide/managing-index.html#search-index) or to use the GetThingConnectivityData API. The [ GetThingConnectivityData](https://docs.aws.amazon.com//iot/latest/developerguide/device-connectivity-status.html) API response will also include socket information if this is enabled in the [ filter](https://docs.aws.amazon.com//iot/latest/apireference/API_IndexingFilter.html) and the `includeSocketInformation` flag is `true` in the GetThingConnectivityData API request.
++ `thingConnectivityIndexingMode`: Specifies if thing connectivity data is indexed. This needs to be enabled to get connectivity status information in [ SearchIndex queries](https://docs.aws.amazon.com/iot/latest/developerguide/managing-index.html#search-index) or to use the GetThingConnectivityData API. The [ GetThingConnectivityData](https://docs.aws.amazon.com/iot/latest/developerguide/device-connectivity-status.html) API response will also include socket information if this is enabled in the [ filter](https://docs.aws.amazon.com/iot/latest/apireference/API_IndexingFilter.html) and the `includeSocketInformation` flag is `true` in the GetThingConnectivityData API request.
 + `deviceDefenderIndexingMode`: Specifies if Device Defender violations data is indexed.
-+ `namedShadowIndexingMode`: Specifies if named shadow data is indexed. To select named shadows to add to your fleet indexing configuration, set `namedShadowIndexingMode` to be `ON` and specify your named shadow names in [`filter`](https://docs.aws.amazon.com//iot/latest/apireference/API_IndexingFilter.html).
++ `namedShadowIndexingMode`: Specifies if named shadow data is indexed. To select named shadows to add to your fleet indexing configuration, set `namedShadowIndexingMode` to be `ON` and specify your named shadow names in [`filter`](https://docs.aws.amazon.com/iot/latest/apireference/API_IndexingFilter.html).
 
 The table below shows the valid values for each indexing mode and the data source that's indexed for each value.
-
-****
 
 - **`thingIndexingMode`**
   - **Valid values:** OFF / **Registry:**  / **Shadow:**  / **Connectivity:**  / **DD violations:**  / **Named shadow:**
@@ -181,7 +179,7 @@ The option to include socket information is only supported for the `GetThingConn
     }
   ```
 
-For more information, see [ IndexingFilter](https://docs.aws.amazon.com//iot/latest/apireference/API_IndexingFilter.html) from *AWS IoT* *API Reference*.
+For more information, see [ IndexingFilter](https://docs.aws.amazon.com/iot/latest/apireference/API_IndexingFilter.html) from *AWS IoT* *API Reference*.
 
 ### Updating indexing configuration examples
 <a name="update-index-examples"></a>
@@ -628,8 +626,6 @@ The maximum number of requested percentiles for aggregation queries is 100.
 <a name="query-auth"></a>
 
 You can specify the things index or thing (for GetThingConnectivityData action) as an Amazon Resource Name (ARN) in an AWS IoT policy action, as follows.
-
-****
 
 | Action | Resource |
 | --- | --- |

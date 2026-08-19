@@ -20,7 +20,7 @@ Example data events include:
 You can use advanced event selectors to create fine-grained selectors, which help you control costs by only logging the specific events of interest for your use cases. For example, you can use advanced event selectors to log specific API calls by adding a filter on the `eventName` field. For more information, see [Filtering data events by using advanced event selectors](filtering-data-events.md).
 
 **Note**
-The events that are logged by your trails are available in Amazon EventBridge. For example, if you choose to log data events for S3 objects but not management events, your trail processes and logs only data events for the specified S3 objects. The data events for these S3 objects are available in Amazon EventBridge. For more information, see [AWS service events delivered via CloudTrail](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-service-event-cloudtrail.html) in the *Amazon EventBridge User Guide* and the [AWS Events Reference](https://docs.aws.amazon.com//eventbridge/latest/ref/welcome.html).
+The events that are logged by your trails are available in Amazon EventBridge. For example, if you choose to log data events for S3 objects but not management events, your trail processes and logs only data events for the specified S3 objects. The data events for these S3 objects are available in Amazon EventBridge. For more information, see [AWS service events delivered via CloudTrail](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-service-event-cloudtrail.html) in the *Amazon EventBridge User Guide* and the [AWS Events Reference](https://docs.aws.amazon.com/eventbridge/latest/ref/welcome.html).
 
 **Contents**
 + [Data events](#logging-data-events)
@@ -64,8 +64,6 @@ For event data stores, you can use only advanced event selectors to include data
 
 ### Data events supported by AWS CloudTrail
 <a name="w2aac21c31c19c11"></a>
-
-****
 
 | AWS service | Description | Resource type (console) | resources.type value |
 | --- | --- | --- | --- |
@@ -285,7 +283,7 @@ The following example demonstrates how logging works when you configure a trail 
 
 **Note**
 For trails, if you are logging data events for specific Amazon S3 buckets, we recommend you do not use an Amazon S3 bucket for which you are logging data events to receive log files that you have specified in the data events section for your trail. Using the same Amazon S3 bucket causes your trail to log a data event each time log files are delivered to your Amazon S3 bucket. Log files are aggregated events delivered at intervals, so this is not a 1:1 ratio of event to log file; the event is logged in the next log file. For example, when CloudTrail delivers logs, the `PutObject` event occurs on the S3 bucket. If the S3 bucket is also specified in the data events section, the trail processes and logs the `PutObject` event as a data event. That action is another `PutObject` event, and the trail processes and logs the event again.
-To avoid logging data events for the Amazon S3 bucket where you receive log files if you configure a trail to log all Amazon S3 data events in your AWS account, consider configuring delivery of log files to an Amazon S3 bucket that belongs to another AWS account. For more information, see [Receiving CloudTrail log files from multiple accountsRedacting bucket owner account IDs for data events called by other accounts](cloudtrail-receive-logs-from-multiple-accounts.md).
+To avoid logging data events for the Amazon S3 bucket where you receive log files if you configure a trail to log all Amazon S3 data events in your AWS account, consider configuring delivery of log files to an Amazon S3 bucket that belongs to another AWS account. For more information, see [Receiving CloudTrail log files from multiple accounts](cloudtrail-receive-logs-from-multiple-accounts.md).
 
 ### Logging data events for S3 objects in other AWS accounts
 <a name="logging-data-events-for-s3-resources-in-other-accounts"></a>

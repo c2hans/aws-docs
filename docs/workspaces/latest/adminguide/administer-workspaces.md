@@ -26,6 +26,7 @@ Ensure you update the EC2Config, EC2Launch, and EC2Launch V2 agents to the lates
 + [Tag resources in WorkSpaces Personal](tag-workspaces-resources.md)
 + [Maintenance in WorkSpaces Personal](workspace-maintenance.md)
 + [Encrypted WorkSpaces in WorkSpaces Personal](encrypt-workspaces.md)
++ [Nested virtualization for WorkSpaces Personal](nested-virtualization.md)
 + [Reboot a WorkSpace in WorkSpaces Personal](reboot-workspaces.md)
 + [Rebuild a WorkSpace in WorkSpaces Personal](rebuild-workspace.md)
 + [Restore a WorkSpace in WorkSpaces Personal](restore-workspace.md)

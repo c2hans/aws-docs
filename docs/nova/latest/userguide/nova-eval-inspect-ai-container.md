@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/nova-eval-inspect-
 
 The SageMaker Inspect AI container runs LLM model evaluations on SageMaker Training Jobs. The container uses [Inspect AI](https://inspect.ai-safety-institute.org.uk/) to provide a standardized evaluation process for models deployed to SageMaker inference endpoints or Amazon Bedrock — including Amazon Nova 1.0 (Micro, Lite, Pro) and 2.0 (Lite 2) models.
 
-Previous [evaluation approaches](https://docs.aws.amazon.com//nova/latest/nova2-userguide/nova-model-evaluation.html) (based on [lighteval](https://github.com/huggingface/lighteval)) tightly coupled offline inference and evaluation logic, which limited flexibility in how models could be served and tested. The Inspect AI container decouples evaluation logic from inference entirely.
+Previous [evaluation approaches](https://docs.aws.amazon.com/nova/latest/nova2-userguide/nova-model-evaluation.html) (based on [lighteval](https://github.com/huggingface/lighteval)) tightly coupled offline inference and evaluation logic, which limited flexibility in how models could be served and tested. The Inspect AI container decouples evaluation logic from inference entirely.
 
 ## Overview
 <a name="nova-eval-container-overview"></a>
@@ -318,7 +318,7 @@ output:
 
 **Option B: Create endpoint, evaluate, then clean up**
 
-Use this option to have the container deploy a Amazon Nova base or fine-tuned model, run evaluations, and tear down the endpoint automatically. This is the recommended approach for one-off evaluation runs. Retrieve the latest SageMaker inference container from the [Amazon Nova SageMaker Inference container images](https://docs.aws.amazon.com//nova/latest/userguide/nova-model-sagemaker-inference.html#nova-sagemaker-inference-container-images) documentation.
+Use this option to have the container deploy a Amazon Nova base or fine-tuned model, run evaluations, and tear down the endpoint automatically. This is the recommended approach for one-off evaluation runs. Retrieve the latest SageMaker inference container from the [Amazon Nova SageMaker Inference container images](https://docs.aws.amazon.com/nova/latest/userguide/nova-model-sagemaker-inference.html#nova-sagemaker-inference-container-images) documentation.
 
 ```
 inference_provider:
@@ -832,11 +832,11 @@ When using a SageMaker Inference endpoint for agentic evaluations, configure the
 | ENABLE\_TOOL\_CALLING | True | Activates tool calling support on the inference endpoint |
 | CONTEXT\_LENGTH | Sufficient for multi-turn | Set to a value large enough to accommodate multi-turn conversations with tool results |
 
-For information about setting up Amazon Nova endpoints on SageMaker Inference, see [Deploy Amazon Nova models on SageMaker](https://docs.aws.amazon.com//nova/latest/userguide/deploy-sagemaker.html). For information about container features and configuration, see [Container features](https://docs.aws.amazon.com//nova/latest/userguide/container-features.html).
+For information about setting up Amazon Nova endpoints on SageMaker Inference, see [Deploy Amazon Nova models on SageMaker](https://docs.aws.amazon.com/nova/latest/userguide/deploy-sagemaker.html). For information about container features and configuration, see [Container features](https://docs.aws.amazon.com/nova/latest/userguide/container-features.html).
 
 **Amazon Bedrock endpoints**
 
-For Amazon Bedrock endpoints, tool calling is natively supported for compatible models. For more information, see [Tool use with Amazon Bedrock](https://docs.aws.amazon.com//bedrock/latest/userguide/tool-use.html).
+For Amazon Bedrock endpoints, tool calling is natively supported for compatible models. For more information, see [Tool use with Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/tool-use.html).
 
 **Getting started with agentic evaluations**
 
@@ -849,8 +849,8 @@ To run agentic evaluations, complete the following prerequisites:
 1. Configure your recipe with appropriate `timeout` and `max_tokens` values for multi-turn interactions
 
 **Amazon Bedrock endpoint**
-+ For full setup and deployment, see [Amazon Bedrock endpoints](https://docs.aws.amazon.com//bedrock/latest/userguide/endpoints.html).
-+ For tool calling support, see the client-side tool calling section in [Tool use with Amazon Bedrock](https://docs.aws.amazon.com//bedrock/latest/userguide/tool-use.html).
++ For full setup and deployment, see [Amazon Bedrock endpoints](https://docs.aws.amazon.com/bedrock/latest/userguide/endpoints.html).
++ For tool calling support, see the client-side tool calling section in [Tool use with Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/tool-use.html).
 
 **Sample notebooks**
 
@@ -953,7 +953,7 @@ When you use a SageMaker Inference endpoint, all data stays within your AWS acco
 
 **Amazon Bedrock**
 
-When you use Amazon Bedrock as the inference provider, your data is subject to the AWS AI Services Opt-Out Policy. To prevent your data from being used to improve AWS AI services, enable the opt-out policy at the AWS Organizations level. For more information, see [AI services opt-out policies](https://docs.aws.amazon.com//organizations/latest/userguide/orgs_manage_policies_ai-opt-out.html).
+When you use Amazon Bedrock as the inference provider, your data is subject to the AWS AI Services Opt-Out Policy. To prevent your data from being used to improve AWS AI services, enable the opt-out policy at the AWS Organizations level. For more information, see [AI services opt-out policies](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_ai-opt-out.html).
 
 | Inference provider | Opt-out required | Details |
 | --- | --- | --- |

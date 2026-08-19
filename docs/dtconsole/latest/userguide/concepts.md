@@ -52,8 +52,6 @@ When you create a notification rule, you can choose the level of detail or *deta
 
 The following table lists the enhanced information available for specific event types and describes the differences between the detail types.
 
-****
-
 | Service  | Event | Full includes | Basic does not include |
 | --- | --- | --- | --- |
 | CodeCommit | Comments on commits<br />Comments on pull requests | All event details and the content of the comment, including any replies or comment threads. It also includes the line number and the line of code upon which the comment was made. | The content of the comment. line number, line of code, or any comment threads. |

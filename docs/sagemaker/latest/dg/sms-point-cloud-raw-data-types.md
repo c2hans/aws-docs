@@ -14,8 +14,6 @@ For each frame, Ground Truth supports Compact Binary Pack Format (.bin) and ASCI
 
 The following table lists elements that Ground Truth supports in point cloud frame files to describe individual points.
 
-****
-
 | Symbol | Value |
 | --- | --- |
 | `x` | The x coordinate of the point. |

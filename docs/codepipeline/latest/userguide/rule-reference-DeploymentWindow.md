@@ -26,7 +26,6 @@ When you create a condition, you can add the `DeploymentWindow` rule. This secti
 **Cron**
 Required: Yes
 The expression that defines the days and times when the deployment will be allowed. Cron expressions are comprised of 6 required fields and one optional field separated by white space. The cron expression fields allow you to specify a schedule pattern with a cron expression as follows.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/codepipeline/latest/userguide/rule-reference-DeploymentWindow.html)
 + The '\*' character is used to specify all values. For example, "\*" in the minute field means "every minute".
 + The '?' character is allowed for the day-of-month and day-of-week fields. It is used to specify 'no specific value'. This is useful when you need to specify something in one of the two fields, but not the other.

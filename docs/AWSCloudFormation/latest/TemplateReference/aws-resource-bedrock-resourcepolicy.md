@@ -50,7 +50,6 @@ The JSON string representing the Bedrock resource policy.
 The ARN of the Bedrock resource to which this resource policy applies.
 *Required*: Yes
 *Type*: String
-*Pattern*: `^arn:aws(-[a-z]+)*:bedrock:[a-z0-9-]+:[0-9]{12}:(guardrail|guardrail-profile)/[a-z0-9]+$`
 *Minimum*: `1`
 *Maximum*: `2048`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)

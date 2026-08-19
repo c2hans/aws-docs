@@ -10,8 +10,6 @@ Consult the following table for information about how to assess video source. Re
 **Note**
 You don't need to perform any assessment of the video being delivered over CDI or from an AWS Elemental Link device. These sources are always acceptable to MediaLive.
 
-****
-
 | Information to obtain | Verify the following |
 | --- | --- |
 | The available video codecs or formats. | Make sure that at least one of the video codecs is included in the list of video codecs for the package format. See [Supported codecs by input type](inputs-supported-codecs-by-input-type.md). If the content is available in more than one supported codec, decide which single video codec you want to use. You can extract only one video asset from the source content. |

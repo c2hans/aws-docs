@@ -58,8 +58,6 @@ Collect the following Cassandra table metrics before a migration. This informati
 
 This table shows an example of the information about your tables that you need to pull together when planning a migration.
 
-****
-
 | Table name | Description | Average reads per second | Average writes per second | Average row size in bytes | Storage size in GBs | Read consistency breakdown |
 | --- | --- | --- | --- | --- | --- | --- |
 | mykeyspace.mytable | Used to store shopping cart history | 10,000 | 5,000 | 2,200 | 2,000 | 100% `LOCAL_ONE` |
@@ -145,7 +143,6 @@ This section provides step by step instructions on how to collect the necessary 
    + Use existing Cassandra monitoring
 
      You can use the metrics shown in the following table to observe read and write requests. Note that the metric names can change based on the monitoring tool that you're using.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/keyspaces/latest/devguide/migrating-cassandra.html)
    + Use the `nodetool`
 

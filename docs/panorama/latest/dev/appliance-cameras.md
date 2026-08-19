@@ -20,8 +20,6 @@ An application can connect to any camera stream that is routable from the local 
 ![Add streams to an AWS Panorama appliance on the console.](http://docs.aws.amazon.com/panorama/latest/dev/images/setup-addstream.png)
 
 1. Configure the following settings.
-
-****
    + **Name** – A name for the camera stream.
    + **Description** – A short description of the camera, its location, or other details.
    + **RTSP URL** – A URL that specifies the camera's IP address and the path to the stream. For example, `rtsp://192.168.0.77/live/mpeg4/`

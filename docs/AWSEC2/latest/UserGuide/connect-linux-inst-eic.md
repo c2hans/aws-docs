@@ -18,7 +18,7 @@ EC2 Instance Connect is one of the options to connect to your Linux instance. Fo
 EC2 Instance Connect is available at no additional cost.
 
 **Region availability**
-EC2 Instance Connect is available in all AWS Regions. It is not supported in Local Zones.
+EC2 Instance Connect is available in all AWS Regions except the AWS European Sovereign Cloud. It is not supported in Local Zones.
 
 **Topics**
 + [Tutorial](ec2-instance-connect-tutorial.md)

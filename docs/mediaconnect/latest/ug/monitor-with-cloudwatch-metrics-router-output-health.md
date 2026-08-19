@@ -65,6 +65,7 @@ These metrics track the connection between a router input and a router output. M
 | Metric | Description |
 | --- | --- |
 | RouteBitRate | The bitrate of the content on the route between the router input and the router output.<br />Units: bits per second (bps)<br />Valid dimensions:+  RouterOutputName, RouterOutputID, RouterOutputAvailabilityZone, RouterInputName, RouterInputID, RouterInputAvailabilityZone <br />+  RouterOutputARN <br />+  AvailabilityZone <br />Protocols: All |
+| RouteFabricRecoveryLatency | The recovery latency for the route between the router input and the router output.<br />Units: Milliseconds<br />Valid dimensions:+  RouterOutputName, RouterOutputID, RouterOutputAvailabilityZone, RouterInputName, RouterInputID, RouterInputAvailabilityZone <br />+  RouterOutputARN <br />+  AvailabilityZone <br />Protocols: All |
 | RouteNotRecoveredPackets | The number of packets lost between the router input and the router output.<br />Units: Count<br />Valid dimensions:+  RouterOutputName, RouterOutputID, RouterOutputAvailabilityZone, RouterInputName, RouterInputID, RouterInputAvailabilityZone <br />+  RouterOutputARN <br />+  AvailabilityZone <br />Protocols: All |
 
 **Note**

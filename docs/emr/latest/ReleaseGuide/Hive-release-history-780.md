@@ -8,8 +8,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/Hive-release-his
 ## Amazon EMR 7.8.0 - Hive changes
 <a name="Hive-release-history-changes-780"></a>
 
-****
-
 | Type | Description |
 | --- | --- |
 | Bug Fix | Fixes CVE-2024-23953: Apache Hive: Timing Attack Against Signature in LLAP. |

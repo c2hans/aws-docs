@@ -16,7 +16,7 @@ Here are some different scenarios you might encounter when working with DynamoDB
 ## Warm throughput and uneven access patterns
 <a name="warm-throughput-scenarios-uneven"></a>
 
-A table might have a warm throughput of 30,000 read units per second and 10,000 write units per second, but you could still experience throttling on reads or writes before hitting those values. This is likely due to a hot partition. While DynamoDB can keep scaling to support virtually unlimited throughput, each individual partition is limited to 1,000 write units per second and 3,000 read units per second. If your application drives too much traffic to a small portion of the table’s partitions, throttling can occur even before you reach the table's warm throughput values. We recommend following [DynamoDB best practices](bp-partition-key-design.md) to ensure seamless scalability and avoid hot partitions.
+A table might have a warm throughput of 30,000 read units per second and 10,000 write units per second, but you could still experience throttling on reads or writes before hitting those values. This is likely due to a hot partition. While DynamoDB can keep scaling to support virtually unlimited throughput, each individual partition is limited to 1,000 write units per second and 3,000 read units per second. If your application drives too much traffic to a small portion of the table’s partitions, throttling can occur even before you reach the table's warm throughput values. We recommend following [DynamoDB best practices](bp-partition-key-design.md) to make sure seamless scalability and avoid hot partitions.
 
 ## Warm throughput for a provisioned table
 <a name="warm-throughput-scenarios-provisioned"></a>

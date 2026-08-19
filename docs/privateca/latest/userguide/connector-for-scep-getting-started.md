@@ -67,7 +67,7 @@ Sign in to your AWS account and open the Connector for SCEP console at **[https:
 
 1. Under **Connector type**, choose **Microsoft Intune**.
 
-   1. For **Application (client) ID**, enter the application (client) ID from your Microsoft Entra ID app registration. For information about using Microsoft Intune with Connector for SCEP, see [Configure your MDM system for Connector for SCEPConfigure your MDM system](using-connector-for-scep-with-mdm.md).
+   1. For **Application (client) ID**, enter the application (client) ID from your Microsoft Entra ID app registration. For information about using Microsoft Intune with Connector for SCEP, see [Configure your MDM system for Connector for SCEP](using-connector-for-scep-with-mdm.md).
 
    1. For **Directory (tenant) ID or primary domain**, enter either the directory (tenant) ID or primary domain from your Microsoft Entra ID app registration.
 
@@ -85,4 +85,4 @@ Sign in to your AWS account and open the Connector for SCEP console at **[https:
 After you create your connector, you'll need to copy the following details from the connector into your MDM system. To view a connector's details using the console, select the connector from the list on the [Connectors for SCEP](https://console.aws.amazon.com/pca-connector-scep/home#/connectors) console page.
 + **SCEP URL** - This is the connector's endpoint where your SCEP clients will request certificates from. Take care to only provide this endpoint to trusted entities.
 + (General-purpose) **Challenge password** - Under **Challenge passwords**, select the password that you automatically generated in the preceding procedure and then select **View password** to view the password. To create an additional password, select **Create password**. Take care to distribute passwords carefully and to only highly trusted individuals and clients. A single challenge password can be used to issue any certificate, with any subject and SANs, and so should be handled with care.
-+ (Microsoft Intune) **Open ID** values - If you're integrating with Microsoft Intune, you must copy the **Open ID issuer**, **Open ID subject**, and **Open ID audience** into your Microsoft Entra app registration's OpenID Connect (OIDC) credential. For more information, see [Configure your MDM system for Connector for SCEPConfigure your MDM system](using-connector-for-scep-with-mdm.md).
++ (Microsoft Intune) **Open ID** values - If you're integrating with Microsoft Intune, you must copy the **Open ID issuer**, **Open ID subject**, and **Open ID audience** into your Microsoft Entra app registration's OpenID Connect (OIDC) credential. For more information, see [Configure your MDM system for Connector for SCEP](using-connector-for-scep-with-mdm.md).

@@ -21,7 +21,7 @@ There are no differences for this service.
 
 ## Documentation
 <a name="govcloud-gl-docs"></a>
-+  [Amazon Glacier documentation](https://docs.aws.amazon.com/http://aws.amazon.com/documentation/glacier/)
++  [Amazon Glacier documentation](http://aws.amazon.com/documentation/glacier/)
 
 ## Export-controlled content
 <a name="govcloud-gl-itar"></a>

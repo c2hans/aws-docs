@@ -15,8 +15,6 @@ You can use the AWS Toolkit for Visual Studio Code to delete CloudFormation stac
 ## Delete a CloudFormation stack
 <a name="delete-cf-stack"></a>
 
-****
-
 1. In the **AWS Explorer**, open the context menu of the CloudFormation stack you want to delete.
 ![Delete Cloudformation context menu.](http://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/images/cfn-delete-menu.png)
 

@@ -24,9 +24,9 @@ AWS IoT TwinMaker supports making calls to all of its API actions from your VPC.
   ```
 
   The data plane API operations include the following:
-  + [GetPropertyValue](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_GetPropertyValue.html)
-  + [GetPropertyValueHistory](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_GetPropertyValueHistory.html)
-  + [BatchPutPropertyValues](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_BatchPutPropertyValues.html)
+  + [GetPropertyValue](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_GetPropertyValue.html)
+  + [GetPropertyValueHistory](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_GetPropertyValueHistory.html)
+  + [BatchPutPropertyValues](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_BatchPutPropertyValues.html)
 + For the control plane API operations, use the following endpoint:
 
   ```
@@ -34,30 +34,30 @@ AWS IoT TwinMaker supports making calls to all of its API actions from your VPC.
   ```
 
   The supported control plane API operations include the following:
-  + [CreateComponentType](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_CreateComponentType.html)
-  + [CreateEntity](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_CreateEntity.html)
-  + [CreateScene](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_CreateScene.html)
-  + [CreateWorkspace](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_CreateWorkspace.html)
-  + [DeleteComponentType](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_DeleteComponentType.html)
-  + [DeleteEntity](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_DeleteEntity.html)
-  + [DeleteScene](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_DeleteScene.html)
-  + [DeleteWorkspace](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_DeleteWorkspace.html)
-  + [GetComponentType](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_GetComponentType.html)
-  + [GetEntity](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_GetEntity.html)
-  + [GetScene](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_GetScene.html)
-  + [GetWorkspace](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_GetWorkspace.html)
-  + [ListComponentTypes](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_ListComponentTypes.html)
-  + [ListComponentTypes](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_ListComponentTypes.html)
-  + [ListEntities](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_ListEntities.html)
-  + [ListScenes](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_ListScenes.html)
-  + [ListTagsForResource](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_ListTagsForResource.html)
-  + [ListWorkspaces](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_ListWorkspaces.html)
-  + [TagResource](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_TagResource.html)
-  + [UntagResource](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_UntagResource.html)
-  + [UpdateComponentType](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_UpdateComponentType.html)
-  + [UpdateEntity](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_UpdateEntity.html)
-  + [UpdateScene](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_UpdateScene.html)
-  + [UpdateWorkspace](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_UpdateWorkspace.html)
+  + [CreateComponentType](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_CreateComponentType.html)
+  + [CreateEntity](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_CreateEntity.html)
+  + [CreateScene](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_CreateScene.html)
+  + [CreateWorkspace](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_CreateWorkspace.html)
+  + [DeleteComponentType](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_DeleteComponentType.html)
+  + [DeleteEntity](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_DeleteEntity.html)
+  + [DeleteScene](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_DeleteScene.html)
+  + [DeleteWorkspace](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_DeleteWorkspace.html)
+  + [GetComponentType](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_GetComponentType.html)
+  + [GetEntity](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_GetEntity.html)
+  + [GetScene](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_GetScene.html)
+  + [GetWorkspace](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_GetWorkspace.html)
+  + [ListComponentTypes](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_ListComponentTypes.html)
+  + [ListComponentTypes](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_ListComponentTypes.html)
+  + [ListEntities](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_ListEntities.html)
+  + [ListScenes](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_ListScenes.html)
+  + [ListTagsForResource](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_ListTagsForResource.html)
+  + [ListWorkspaces](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_ListWorkspaces.html)
+  + [TagResource](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_TagResource.html)
+  + [UntagResource](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_UntagResource.html)
+  + [UpdateComponentType](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_UpdateComponentType.html)
+  + [UpdateEntity](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_UpdateEntity.html)
+  + [UpdateScene](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_UpdateScene.html)
+  + [UpdateWorkspace](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_UpdateWorkspace.html)
 
 ## Creating an interface VPC endpoint for AWS IoT TwinMaker
 <a name="vpc-endpoint-create"></a>

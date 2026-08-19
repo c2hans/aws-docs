@@ -9,8 +9,6 @@ To organize and identify your Amazon MQ resources for cost allocation, you can a
 
 For instance, you could add tags that represent the cost center and purpose of your Amazon MQ resources:
 
-****
-
 - **`Broker1`**
   - **Key:** Cost Center / **Value:** 34567
   - **Key:** Stack / **Value:** Production

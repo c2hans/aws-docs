@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awse
 
 AWS Elemental Appliances and Software Activation Service provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="elemental-activations-DownloadKickstart"></a>[DownloadKickstart](https://docs.aws.amazon.com/elemental-appliances-software/) | Download the kickstart files for AWS Elemental Appliances and Software purchases | Read |

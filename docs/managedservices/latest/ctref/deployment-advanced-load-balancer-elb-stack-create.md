@@ -14,8 +14,6 @@ Use to create an Amazon ELB Classic Load Balancer. Use alternate change types to
 ## Change Type Details
 <a name="ct-12amsdz909cfh-DALc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-12amsdz909cfh |

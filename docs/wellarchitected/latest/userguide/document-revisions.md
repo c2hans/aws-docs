@@ -23,7 +23,7 @@ The following table describes the documentation for this release of the AWS Well
 | [Updated functionality](#document-revisions) | This release enhances the AWS Trusted Advisor and AWS Service Catalog AppRegistry integration, and adds the `AWSWellArchitectedDiscoveryServiceRolePolicy` to AWS managed policies. | May 3, 2023 |
 | [Content update](dashboard.md) | **Dashboard** page updated to include detailed risk and improvement plan information. The ability to create a consolidated workload report was also added. | March 30, 2023 |
 | [Content update](#document-revisions) | Corrected name of WellArchitectedConsoleReadOnlyAccess policy. | January 19, 2023 |
-| [Updated the IAM guidance for AWS WA Tool](iam-auth-access.md) | Updated guide to align with the IAM best practices. For more information, see [Security best practices in IAM](https://docs.aws.amazon.com//IAM/latest/UserGuide/best-practices.html). | January 4, 2023 |
+| [Updated the IAM guidance for AWS WA Tool](iam-auth-access.md) | Updated guide to align with the IAM best practices. For more information, see [Security best practices in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html). | January 4, 2023 |
 | [Updated functionality](#document-revisions) | This release removes the FTR lens from the tool. | December 14, 2022 |
 | [Updated functionality](#document-revisions) | This release adds the AWS Trusted Advisor and AWS Service Catalog AppRegistry integration. | November 7, 2022 |
 | [Content update](#document-revisions) | Corrected a problem in the custom lens JSON example for `choices`. | September 29, 2022 |

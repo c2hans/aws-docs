@@ -28,7 +28,7 @@ The following differences apply to Amazon Simple Notification Service:
 
 ## Documentation
 <a name="govcloud-sns-docs"></a>
-+  [Amazon SNS documentation](https://docs.aws.amazon.com/http://aws.amazon.com/documentation/sns/)
++  [Amazon SNS documentation](http://aws.amazon.com/documentation/sns/)
 
 ## Export-controlled content
 <a name="govcloud-sns-itar"></a>

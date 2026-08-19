@@ -204,7 +204,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/upgrade-analysis.html
  To pass your own custom AWS KMS key when starting an analysis, please refer to the following section to configure appropriate permissions on the AWS KMS keys.
 
 #### Configuring the result artifact encryption using a AWS KMS key:
-<a name="w2aac37b7c20c13c13b5b5"></a>
+<a name="w2aac37b7c22c13c13b5b5"></a>
 
  This policy ensures that you have both the encryption and decryption permissions on the AWS KMS key.
 
@@ -261,7 +261,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/upgrade-analysis.html
  This example demonstrates the process of upgrading a AWS Glue job from version 2.0 to version 4.0. The sample job reads product data from an Amazon S3 bucket, applies several transformations to the data using Spark SQL, and then saves the transformed results back to an Amazon S3 bucket.
 
 ### Original code (AWS Glue 2.0) - before upgrade
-<a name="w2aac37b7c20c21b5b1"></a>
+<a name="w2aac37b7c22c21b5b1"></a>
 
 ```
 from awsglue.transforms import *
@@ -459,7 +459,7 @@ Generative AI upgrades for Apache Spark is available in the following regions:
 + **United States**: North Virginia (us-east-1), Ohio (us-east-2), and Oregon (us-west-2)
 
 ## Cross-region inference in Spark Upgrades
-<a name="w2aac37b7c20c37"></a>
+<a name="w2aac37b7c22c37"></a>
 
  Spark Upgrades is powered by Amazon Bedrock and leverages cross-region inference (CRIS). With CRIS, Spark Upgrades will automatically select the optimal region within your geography (as described in more detail [here](https://docs.aws.amazon.com/bedrock/latest/userguide/cross-region-inference.html)) to process your inference request, maximizing available compute resources and model availability, and providing the best customer experience. There's no additional cost for using cross-region inference.
 

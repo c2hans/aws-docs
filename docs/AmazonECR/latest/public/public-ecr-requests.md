@@ -11,7 +11,7 @@ Amazon ECR Public endpoints are designated by attributes beyond IPv4-only endpoi
 + **Region** – Each endpoint is specific to a Region.
 + **Type** – Endpoint selection depends on whether you're using the AWS SDK or OCI-compatible and Docker command line interfaces.
 
-For more information about service endpoints supported by IPv4, dual-stack, Docker, and OCI client, which handles Amazon ECR Public API calls from AWS CLI and AWS SDKs see, [ Service endpoints](https://docs.aws.amazon.com//general/latest/gr/ecr-public.html#ecr-public-region).
+For more information about service endpoints supported by IPv4, dual-stack, Docker, and OCI client, which handles Amazon ECR Public API calls from AWS CLI and AWS SDKs see, [ Service endpoints](https://docs.aws.amazon.com/general/latest/gr/ecr-public.html#ecr-public-region).
 
 ## Getting started with making requests over IPv6
 <a name="public-ipv6-access-getting-started"></a>

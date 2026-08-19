@@ -9,8 +9,6 @@ AWS Migration Hub is no longer open to new customers as of November 7, 2025. For
 
 A migration journey can have any of the status values that appear in the following table. For information about how to change the status of a journey, see [Updating a journey](journey-updates.md).
 
-****
-
 | Status | Meaning |
 | --- | --- |
 | Creating | The service is creating the journey. You cannot perform any actions on the journey until the create operation is complete. |

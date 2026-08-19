@@ -20,8 +20,6 @@ In the following timeline, AWS Config records `ConfigurationItems` at the follow
 
 The following table explains which `ConfigurationItems` are displayed on the AWS Config timeline based on selected retention period.
 
-****
-
 | Retention Period | Configuration Items displayed on timeline | Explanation |
 | --- | --- | --- |
 | 30 days | December 12, 2017 | The current state of the resource started from December 12, 2017 when the `ConfigurationItem` was recorded and is valid until today (May 24, 2018). When recording is turned on, the current state always exists. |

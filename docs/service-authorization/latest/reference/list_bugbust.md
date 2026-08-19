@@ -29,8 +29,6 @@ AWS BugBust has no API operations that can be used in the `Actions` element of a
 
 The following actions are defined by AWS BugBust but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 - **   [CreateEvent](https://docs.aws.amazon.com/codeguru/latest/bugbust-ug/auth-and-access-control-permissions-reference.html)  **
   - **Description:** Grants permission to create a BugBust event
   - **Resource types (\*required):**
@@ -138,8 +136,6 @@ The following actions are defined by AWS BugBust but are not directly invocable 
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
 
-****
-
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
 |  [Event](https://docs.aws.amazon.com/codeguru/latest/bugbust-ug/event-managing.html)  | arn:${Partition}:bugbust:${Region}:${Account}:events/${EventId} | [aws:ResourceTag/${TagKey}](#list_bugbust-aws_ResourceTag___TagKey_) |
@@ -148,8 +144,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_bugbust-policy-keys"></a>
 
 AWS BugBust defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

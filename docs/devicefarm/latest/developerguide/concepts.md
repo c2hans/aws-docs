@@ -8,11 +8,11 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/concept
 Device Farm is an app testing service that you can use to test and interact with your Android, iOS, and web apps on real, physical phones and tablets that are hosted by Amazon Web Services (AWS).
 
 This section describes important Device Farm concepts.
-+ [Device support in AWS Device FarmDevices](devices.md)
++ [Device support in AWS Device Farm](devices.md)
 + [Test environments in AWS Device Farm](test-environments.md)
 + [Runs](test-runs.md)
 + [Apps](apps.md)
-+ [Reports in AWS Device FarmReports](reports.md)
++ [Reports in AWS Device Farm](reports.md)
 + [Sessions](sessions.md)
 
 For more information about supported test types in Device Farm, see [Test frameworks and built-in tests in AWS Device Farm](test-types.md).

@@ -14,8 +14,6 @@ Replace the certificate of an existing Elastic (Classic) Load Balancer (ELB) lis
 ## Change Type Details
 <a name="ct-0aqx5t0pgfzbg-MALr-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-0aqx5t0pgfzbg |

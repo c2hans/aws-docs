@@ -73,8 +73,6 @@ You can now assign an Elastic IP address to the Amazon EC2 instance that you jus
 
 ### To connect to your Amazon EC2 instance
 <a name="VPCs.Connecting.CON.instance"></a>
-
-****
 + Open a command window. At the command prompt, issue the following command, replacing *mykeypair.pem* with the name of your key pair file and *54.207.55.251* with your Elastic IP address.
 
   ```

@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/cloud9/latest/user-guide/systems-manager
 
 With AWS Systems Manager, you have visibility and control of your infrastructure on AWS. Systems Manager provides a unified user interface that you can use to view operational data from multiple AWS services and automate operational tasks across your AWS resources.
 
-A [Systems Manager document](https://docs.aws.amazon.com//systems-manager/latest/userguide/sysman-systems-manager-docs.html) defines the actions that Systems Manager performs on your managed instances. An automation document is a type of Systems Manager document that's used to perform common maintenance and deployment tasks. This includes creating or updating an Amazon Machine Image (AMI). This topic outlines how to create, edit, publish, and delete automation documents with AWS Toolkit.
+A [Systems Manager document](https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-systems-manager-docs.html) defines the actions that Systems Manager performs on your managed instances. An automation document is a type of Systems Manager document that's used to perform common maintenance and deployment tasks. This includes creating or updating an Amazon Machine Image (AMI). This topic outlines how to create, edit, publish, and delete automation documents with AWS Toolkit.
 
 **Topics**
 + [Assumptions and prerequisites](#systems-manager-assumptions)

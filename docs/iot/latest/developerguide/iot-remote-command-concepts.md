@@ -57,7 +57,7 @@ An execution is an instance of a command running on a target device. When you st
 
 When creating commands with payload templates, define value conditions to validate parameter values before execution. Value conditions ensure parameters meet requirements, preventing invalid executions.
 
-**Supported operators by [CommandParameterValue](https://docs.aws.amazon.com//iot/latest/apireference/API_CommandParameterValue.html) type**
+**Supported operators by [CommandParameterValue](https://docs.aws.amazon.com/iot/latest/apireference/API_CommandParameterValue.html) type**
 
 **Numeric types (INTEGER, LONG, DOUBLE, UNSIGNEDLONG)**
 + `EQUALS` - Value must equal the specified number
@@ -113,7 +113,7 @@ When creating commands with payload templates, define value conditions to valida
 In this example, the `temperature` parameter must be between 60 and 80 (inclusive). Execution requests with values outside this range fail validation.
 
 **Note**
-Value conditions are evaluated at invocation of [StartCommandExecution API](https://docs.aws.amazon.com//iot/latest/apireference/API_iot-jobs-data_StartCommandExecution.html). Failed validations return an error and prevent execution creation.
+Value conditions are evaluated at invocation of [StartCommandExecution API](https://docs.aws.amazon.com/iot/latest/apireference/API_iot-jobs-data_StartCommandExecution.html). Failed validations return an error and prevent execution creation.
 
 ### Parameter value priority and evaluation
 <a name="iot-command-parameter-value-priority"></a>

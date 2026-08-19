@@ -151,8 +151,6 @@ Our request used a built-in scan operation to search for all entries in the tabl
 
 In a resolver, each step in the chain of handlers must be aware of the state of the data from the previous steps. The result from one handler can be stored and passed to another as an argument. GraphQL defines four basic resolver arguments:
 
-****
-
 | Resolver base arguments | Description |
 | --- | --- |
 | obj, root, parent, etc. | The result of the parent. |

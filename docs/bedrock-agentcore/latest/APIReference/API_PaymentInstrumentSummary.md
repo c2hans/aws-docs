@@ -45,7 +45,7 @@ Required: Yes
  ** status **   <a name="BedrockAgentCore-Type-PaymentInstrumentSummary-status"></a>
 The current status of this payment instrument.
 Type: String
-Valid Values: `INITIATED | ACTIVE | FAILED | DELETED`
+Valid Values: `INITIATED | ACTIVE | FAILED | DELETED | BLOCKED`
 Required: Yes
 
  ** updatedAt **   <a name="BedrockAgentCore-Type-PaymentInstrumentSummary-updatedAt"></a>

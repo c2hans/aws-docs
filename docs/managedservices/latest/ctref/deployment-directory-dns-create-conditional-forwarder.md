@@ -14,8 +14,6 @@ Create AD DNS conditional forwarder with up to five DNS servers associated with 
 ## Change Type Details
 <a name="ct-3nba0wtdugnan-DDDc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-3nba0wtdugnan |

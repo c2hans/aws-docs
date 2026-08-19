@@ -23,6 +23,6 @@ Before you can get started with this tutorial, you'll need to set up the followi
 
 To set up trusted identity propagation with Athena, the Athena administrator must:
 
-1. Review [Considerations and limitations in using IAM Identity Center enabled Athena workgroups](https://docs.aws.amazon.com//athena/latest/ug/workgroups-identity-center.html#workgroups-identity-center-considerations-and-limitations).
+1. Review [Considerations and limitations in using IAM Identity Center enabled Athena workgroups](https://docs.aws.amazon.com/athena/latest/ug/workgroups-identity-center.html#workgroups-identity-center-considerations-and-limitations).
 
-1. [Create an IAM Identity Center enabled Athena workgroup](https://docs.aws.amazon.com//athena/latest/ug/workgroups-identity-center.html#workgroups-identity-center-creating-an-identity-center-enabled-athena-workgroup).
+1. [Create an IAM Identity Center enabled Athena workgroup](https://docs.aws.amazon.com/athena/latest/ug/workgroups-identity-center.html#workgroups-identity-center-creating-an-identity-center-enabled-athena-workgroup).

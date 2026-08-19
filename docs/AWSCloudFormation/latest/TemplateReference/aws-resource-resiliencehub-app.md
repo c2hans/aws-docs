@@ -68,7 +68,7 @@ Assessment execution schedule with 'Daily' or 'Disabled' values.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `AppTemplateBody`  <a name="cfn-resiliencehub-app-apptemplatebody"></a>
-A JSON string that provides information about your application structure. To learn more about the `appTemplateBody` template, see the sample template in [Sample appTemplateBody template](https://docs.aws.amazon.com//resilience-hub/latest/APIReference/API_PutDraftAppVersionTemplate.html#API_PutDraftAppVersionTemplate_Examples).
+A JSON string that provides information about your application structure. To learn more about the `appTemplateBody` template, see the sample template in [Sample appTemplateBody template](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_PutDraftAppVersionTemplate.html#API_PutDraftAppVersionTemplate_Examples).
 The `appTemplateBody` JSON string has the following structure:
 +  ** `resources` **
 
@@ -125,7 +125,7 @@ This parameter accepts values in "eks-cluster/namespace" format.
     Type: String
   +  `additionalInfo`
 
-    Additional configuration parameters for an AWS Resilience Hub application. If you want to implement `additionalInfo` through the AWS Resilience Hub console rather than using an API call, see [Configure the application configuration parameters](https://docs.aws.amazon.com//resilience-hub/latest/userguide/app-config-param.html).
+    Additional configuration parameters for an AWS Resilience Hub application. If you want to implement `additionalInfo` through the AWS Resilience Hub console rather than using an API call, see [Configure the application configuration parameters](https://docs.aws.amazon.com/resilience-hub/latest/userguide/app-config-param.html).
 **Note**
 Currently, this parameter accepts a key-value mapping (in a string format) of only one failover region and one associated account.
 Key: `"failover-regions"`
@@ -154,7 +154,7 @@ Value: `"[{"region":"<REGION>", "accounts":[{"id":"<ACCOUNT_ID>"}]}]"`
     Type: Array of strings
   +  `additionalInfo`
 
-    Additional configuration parameters for an AWS Resilience Hub application. If you want to implement `additionalInfo` through the AWS Resilience Hub console rather than using an API call, see [Configure the application configuration parameters](https://docs.aws.amazon.com//resilience-hub/latest/userguide/app-config-param.html).
+    Additional configuration parameters for an AWS Resilience Hub application. If you want to implement `additionalInfo` through the AWS Resilience Hub console rather than using an API call, see [Configure the application configuration parameters](https://docs.aws.amazon.com/resilience-hub/latest/userguide/app-config-param.html).
 **Note**
 Currently, this parameter accepts a key-value mapping (in a string format) of only one failover region and one associated account.
 Key: `"failover-regions"`
@@ -213,7 +213,7 @@ This parameter accepts values in "eks-cluster/namespace" format.
   The AWS Resilience Hub application version.
 +  `additionalInfo`
 
-  Additional configuration parameters for an AWS Resilience Hub application. If you want to implement `additionalInfo` through the AWS Resilience Hub console rather than using an API call, see [Configure the application configuration parameters](https://docs.aws.amazon.com//resilience-hub/latest/userguide/app-config-param.html).
+  Additional configuration parameters for an AWS Resilience Hub application. If you want to implement `additionalInfo` through the AWS Resilience Hub console rather than using an API call, see [Configure the application configuration parameters](https://docs.aws.amazon.com/resilience-hub/latest/userguide/app-config-param.html).
 **Note**
 Currently, this parameter accepts a key-value mapping (in a string format) of only one failover region and one associated account.
 Key: `"failover-regions"`

@@ -35,8 +35,6 @@ To carry out tagging operations, you need the Amazon Resource Name (ARN) of the 
 
 The following table summarizes the different use cases and the tagging operations to use for them:
 
-****
-
 | Use case | Resource created with [Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Operations_Amazon_Bedrock.html) API operation | Resource created with [Amazon Bedrock Agents](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Operations_Agents_for_Amazon_Bedrock.html) API operation | Resource created with Amazon Bedrock Data Automation API |
 | --- | --- | --- | --- |
 | Tag a resource |  +  If the resource wasn't created yet, use the `tags` field when creating the resource. <br />+  If the resource was already created, make a [TagResource](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_TagResource.html) request with an [Amazon Bedrock control plane endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#br-cp).   |  +  If the resource wasn't created yet, use the `tags` field when creating the resource. <br />+  If the resource was already created, make a [TagResource](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_TagResource.html) request with an [Agents for Amazon Bedrock build-time endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#bra-bt).   |  +  If the resource wasn't created yet, use the `tags` field when creating the resource. <br />+  If the resource was already created, make a TagResource request with an Amazon Bedrock Data Automation Build time Endpoint.   |
@@ -122,8 +120,6 @@ The `bedrock-mantle` endpoint supports tagging projects, customized models, and 
 
 ### Setting tags
 <a name="tagging-mantle-setting"></a>
-
-****
 
 | Action | API call | Tag fields |
 | --- | --- | --- |

@@ -17,8 +17,6 @@ The following table describes the important changes to the documentation since t
 + **API version: 2015-08-14**
 + **Latest documentation update:** May 8, 2019
 
-****
-
 | Change | Description | Date |
 | --- | --- | --- |
 | Tagging Kinesis Data Analytics Applications | Use application tagging to determine per-application costs, control access, or for user-defined purposes. For more information, see [Using Tagging](how-tagging.md).  | May 8, 2019 |

@@ -41,8 +41,6 @@ SELECT name, is_policy_checked, is_expiration_checked FROM sys.sql_logins;
 
 All password policy parameters are dynamic and do not require DB reboot to take effect. The following table lists the DB parameters you can set to modify the password policy for SQL Server logins:
 
-****
-
 | DB parameter | Description | Allowed Values | Default Value |
 | --- | --- | --- | --- |
 | rds.password\_complexity\_enabled | Password complexity requirements must be satisfied when creating or changing passwords for SQL Server logins. The following constraints must be met: + The password must include characters from three of the following categories:  Latin lowercase letter (a through z) Latin uppercase letter (A through Z) Non-alphanumeric characters such as: exclamation point (\!), dollar sign ($), number sign (\#), or percent (%). <br />+ The password doesn't contain the account name of the user.  | 0,1 | 0 |

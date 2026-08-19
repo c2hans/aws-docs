@@ -168,8 +168,6 @@ Device Farm supports using service-linked roles in all of the regions where the 
 
 Device Farm does not support using service-linked roles in every region where the service is available. You can use the AWSServiceRoleForDeviceFarmTestGrid role in the following regions.
 
-****
-
 | Region name | Region identity | Support in Device Farm |
 | --- | --- | --- |
 | US East (N. Virginia) | us-east-1 | No |

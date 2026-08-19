@@ -33,8 +33,6 @@ For more information, see [Protection from dangling delegation records in RouteÂ
 ## Options
 <a name="eb3-terminateoptions"></a>
 
-****
-
 |  Name  |  Description  |
 | --- | --- |
 | `--all` | Terminates all environments in the application, the application's [application versions](applications-versions.md), and its [saved configurations](environment-configuration-savedconfig.md), and then deletes the application. |

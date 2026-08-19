@@ -90,7 +90,7 @@ To monitor the status of your `restore-object` request, use the following `head-
 aws s3api head-object --bucket {{amzn-s3-demo-bucket}} --key {{dir1/example.obj}}
 ```
 
-For more information, see [restore-object](https://docs.aws.amazon.com//cli/latest/reference/s3api/restore-object.html) in the *AWS CLI Command Reference*.
+For more information, see [restore-object](https://docs.aws.amazon.com/cli/latest/reference/s3api/restore-object.html) in the *AWS CLI Command Reference*.
 
 ### Using the REST API
 <a name="restoring-objects-rest"></a>

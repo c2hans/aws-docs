@@ -10,7 +10,7 @@ Route 53 health checks integrate with CloudWatch metrics so that you can do the
 + Review the status of a health check over a specified period of time.
 + Configure CloudWatch to send an Amazon SNS alert when the status of a health check is unhealthy. Note that several minutes might elapse between the time that a health check fails and the time that you receive the associated SNS notification.
 
-For more information, see [How Amazon Route 53 determines whether a health check is healthyHow Route 53 determines whether a health check is healthy](dns-failover-determining-health-of-endpoints.md).
+For more information, see [How Amazon Route 53 determines whether a health check is healthy](dns-failover-determining-health-of-endpoints.md).
 
 **Topics**
 + [View the status of your health check](#health-checks-monitoring-status)
@@ -230,7 +230,6 @@ For the alarm targets that are based on latency (**TCP connection time**, **Time
 Note that if you choose a Region, Route 53 measures latency only twice per minute, and the number of samples will be smaller than if you choose all regions. As a result, outlying values are more likely. To prevent spurious alarm notifications, we recommend that you specify a larger number of consecutive periods that the health check must fail before CloudWatch sends you a notification.
 **Fulfill condition**
 Use the following settings to determine when CloudWatch should trigger an alarm.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/Route53/latest/DeveloperGuide/monitoring-health-checks.html)
 **For at least {{x}} consecutive periods of {{y}} minutes/hours/day**
 Specify how many consecutive time periods that the specified value must meet the criteria before Route 53 sends notification. Then specify the length of the time period.

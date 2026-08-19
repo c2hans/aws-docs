@@ -14,8 +14,6 @@ Use to create an Amazon Simple Queue Service instance for messages to be shared 
 ## Change Type Details
 <a name="ct-1vbv99ko7bsrq-DMSc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1vbv99ko7bsrq |

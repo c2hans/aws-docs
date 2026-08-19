@@ -14,8 +14,6 @@ Create an Amazon Machine Image (AMI) based on an existing standalone EC2 instanc
 ## Change Type Details
 <a name="ct-3rqqu43krekby-DAAc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-3rqqu43krekby |

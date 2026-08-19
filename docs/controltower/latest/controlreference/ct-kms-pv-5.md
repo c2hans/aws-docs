@@ -22,7 +22,7 @@ This is a preventive control with elective guidance based on service control pol
 **Usage considerations**
 This control restricts creation of KMS keys to those that use a specific key material origin. It is suitable when enforcing a KMS key management strategy that requires all KMS keys to use imported key material.
 Before enforcing the exclusive use of keys with imported key material, carefully evaluate the trade-offs documented in the [Importing key material for AWS KMS keys](https://docs.aws.amazon.com/kms/latest/developerguide/importing-keys.html) section of the *AWS KMS Developer Guide*.
-This control supports configuration. It contains elements that are included by AWS Control Tower conditionally, based on the configuration you select. This control supports the following configuration parameters: **ExemptedPrincipalArns**. For more information, see [Configure controls with parameters](https://docs.aws.amazon.com//controltower/latest/controlreference/control-parameter-concepts.html).
+This control supports configuration. It contains elements that are included by AWS Control Tower conditionally, based on the configuration you select. This control supports the following configuration parameters: **ExemptedPrincipalArns**. For more information, see [Configure controls with parameters](https://docs.aws.amazon.com/controltower/latest/controlreference/control-parameter-concepts.html).
 
  The artifact for this control is the following service control policy (SCP).
 

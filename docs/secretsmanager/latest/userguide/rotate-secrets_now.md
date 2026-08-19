@@ -21,7 +21,7 @@ You can only rotate a secret that has rotation configured. To determine whether 
 <a name="rotate-secrets_now_cli"></a>
 
 **Example Rotate a secret immediately**
-The following [**rotate-secret**](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/rotate-secret.html) example starts an immediate rotation. The secret must already have rotation configured.
+The following [**rotate-secret**](https://docs.aws.amazon.com/cli/latest/reference/secretsmanager/rotate-secret.html) example starts an immediate rotation. The secret must already have rotation configured.
 
 ```
 $ aws secretsmanager rotate-secret \

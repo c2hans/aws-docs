@@ -23,7 +23,7 @@ Two common use cases for using this feature:
 +  An IAM role with permissions to access the Amazon S3 bucket. For more information, see [Create your IAM role for Amazon S3 access](bulk-import-create-from-s3.md#create-iam-role-for-s3-access).
 
 **Important considerations**
-+  **Data integrity**: The `StartImportTask` API is designed to work with graphs that are empty. If your graph contains data, you can first reset the graph using the [reset-graph](https://docs.aws.amazon.com//neptune-analytics/latest/apiref/API_ResetGraph.html) API. If the Import task finds that the graph is not empty the operation will fail. This operation will delete all data from the graph, so ensure you have backups if necessary. You can use the [ create-graph-snapshot](https://docs.aws.amazon.com//neptune-analytics/latest/apiref/API_CreateGraphSnapshot.html) API to create snapshot of your existing graph.
++  **Data integrity**: The `StartImportTask` API is designed to work with graphs that are empty. If your graph contains data, you can first reset the graph using the [reset-graph](https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_ResetGraph.html) API. If the Import task finds that the graph is not empty the operation will fail. This operation will delete all data from the graph, so ensure you have backups if necessary. You can use the [ create-graph-snapshot](https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_CreateGraphSnapshot.html) API to create snapshot of your existing graph.
 +  **Atomic Operation**: The data import is atomic, meaning it either completes fully or does not apply at all. If the import fails we would reset the state back to an empty graph.
 +  **Format Support**: Loading data supports the same data format as supported by `create-graph-using-import-task` and `neptune.load()` This API doesn’t support importing data from Neptune .
 +  **Queries**: Queries will stop working while the import is in progress. You will get a `Cannot execute any query until bulk import is complete` error until the import finishes.
@@ -82,7 +82,7 @@ Two common use cases for using this feature:
 
 1. The IAM role used does not have the correct permissions.
 
-   Verify that you have created the IAM role correctly with read permission to Amazon S3 - see [ Create your IAM role for Amazon S3 access](https://docs.aws.amazon.com//neptune-analytics/latest/userguide/bulk-import-create-from-s3.html#create-iam-role-for-s3-access).
+   Verify that you have created the IAM role correctly with read permission to Amazon S3 - see [ Create your IAM role for Amazon S3 access](https://docs.aws.amazon.com/neptune-analytics/latest/userguide/bulk-import-create-from-s3.html#create-iam-role-for-s3-access).
 
    ```
    export GRAPH_EXEC_ROLE="GraphExecutionRole"
@@ -92,7 +92,7 @@ Two common use cases for using this feature:
 
 1. The `AssumeRole` permission is not granted to Neptune Analytics through the AssumeRolePolicy.
 
-   Verify that you have attached the policy that allows Neptune Analytics to assume the IAM role to access the Amazon S3 bucket. See [ Create your IAM role for Amazon S3 access](https://docs.aws.amazon.com//neptune-analytics/latest/userguide/bulk-import-create-from-s3.html#create-iam-role-for-s3-access).
+   Verify that you have attached the policy that allows Neptune Analytics to assume the IAM role to access the Amazon S3 bucket. See [ Create your IAM role for Amazon S3 access](https://docs.aws.amazon.com/neptune-analytics/latest/userguide/bulk-import-create-from-s3.html#create-iam-role-for-s3-access).
 
    ```
    export GRAPH_EXEC_ROLE="GraphExecutionRole"   // Replace with your IAM role.
@@ -110,4 +110,4 @@ Two common use cases for using this feature:
      aws s3 cp <FileSourceLocation> <FileTargetLocation> --acl public-read
    ```
 
-    This setting can also be done through the Amazon S3 console or the AWS SDKs. For more details, refer to the documentation for [ Configuring ACLs](https://docs.aws.amazon.com//AmazonS3/latest/userguide/managing-acls.html).
+    This setting can also be done through the Amazon S3 console or the AWS SDKs. For more details, refer to the documentation for [ Configuring ACLs](https://docs.aws.amazon.com/AmazonS3/latest/userguide/managing-acls.html).

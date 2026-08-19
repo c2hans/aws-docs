@@ -10,7 +10,7 @@ This document is focused on customers that integrate Amazon IVS APIs and SDKs in
 ## Adopting Multitrack Video Streaming
 <a name="multitrack-video-setup-adopting"></a>
 
-To adopt multitrack video, there are two required [channel](https://docs.aws.amazon.com//ivs/latest/LowLatencyAPIReference/API_Channel.html) configurations and a recommended [thumbnail configuration](https://docs.aws.amazon.com//ivs/latest/LowLatencyAPIReference/API_ThumbnailConfiguration.html).
+To adopt multitrack video, there are two required [channel](https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_Channel.html) configurations and a recommended [thumbnail configuration](https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_ThumbnailConfiguration.html).
 
 ### Required: Configure Channel ContainerFormat
 <a name="multitrack-video-setup-adopting-required-required-channel-containerformat"></a>
@@ -35,7 +35,7 @@ A server-side algorithm scores and ranks the configurations, to deliver a config
 
 Finally, the broadcast software applies the configuration and starts sending multiple video tracks using the [enhanced RTMP](https://veovera.org/docs/enhanced/enhanced-rtmp-v2) protocol.
 
-To adopt multitrack video, you must configure `Channel.MultitrackInputConfiguration` and the sub-properties specified in [MultitrackInputConfiguration](https://docs.aws.amazon.com//ivs/latest/LowLatencyAPIReference/API_MultitrackInputConfiguration.html).
+To adopt multitrack video, you must configure `Channel.MultitrackInputConfiguration` and the sub-properties specified in [MultitrackInputConfiguration](https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_MultitrackInputConfiguration.html).
 + To balance cost and quality, determine the correct value for `Channel.MultitrackInputConfiguration.MaximumResolution`, to set a maximum input resolution on a per-channel basis. When the broadcast client calls GetClientConfiguration, this field determines the resolution of the largest possible input track. If any client sends a different number of tracks, or the per-track resolution, framerate, codec, or bitrate do not match the GetClientConfiguration response, the client will be disconnected.
 + To provide your broadcasters with flexibility in adoption, configure `Channel.MultitrackInputConfiguration.Policy` to `allow` or `require` broadcast clients to connect with multitrack input. When the client connects using RTMP, this field determines if the broadcaster is allowed or required to send multitrack video. You can choose to make it simpler for broadcasters to slowly adopt multitrack video flexibility (with `allow`) or require broadcasters to use multitrack clients to optimize for lower cost (with `require`).
 

@@ -25,8 +25,6 @@ The following sections show a sample IAM policy that grants the necessary permis
 
 This section provides a sample identity policy and a resource-based policy that you can configure for your OpenSearch domain when integrating with Amazon Bedrock Knowledge Bases. You must grant Amazon Bedrock permissions to perform these actions on the index that you provide your Knowledge Base.
 
-****
-
 | Action | Resource | Description |
 | --- | --- | --- |
 | es:ESHttpPost | arn:{{<partition>}}:es:{{<region>}}:{{<accountId>}}:domain/{{<domainName>}}/{{<indexName>}} | For inserting information to the index |

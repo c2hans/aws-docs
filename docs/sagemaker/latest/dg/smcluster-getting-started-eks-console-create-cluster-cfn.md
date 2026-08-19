@@ -28,7 +28,7 @@ If you choose **Submit**, you will not be able to deploy a cluster with the same
 
 1. In the terminal, navigate to the location of the parameter file `file://params.json`.
 
-1. Run the [create-stack](https://docs.aws.amazon.com//cli/latest/reference/cloudformation/create-stack.html) AWS CLI command to deploy the CloudFormation stack that will provision the configured resources and create the HyperPod cluster.
+1. Run the [create-stack](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack.html) AWS CLI command to deploy the CloudFormation stack that will provision the configured resources and create the HyperPod cluster.
 
    ```
    aws cloudformation create-stack
@@ -53,7 +53,7 @@ Follow these steps.
 
 1. Download a CloudFormation template for SageMaker HyperPod from the [sagemaker-hyperpod-cluster-setup](https://github.com/aws/sagemaker-hyperpod-cluster-setup) GitHub repository.
 
-1. Run the [create-stack](https://docs.aws.amazon.com//cli/latest/reference/cloudformation/create-stack.html) AWS CLI command to deploy the CloudFormation stack that will provision the configured resources and create the HyperPod cluster.
+1. Run the [create-stack](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack.html) AWS CLI command to deploy the CloudFormation stack that will provision the configured resources and create the HyperPod cluster.
 
    ```
    aws cloudformation create-stack

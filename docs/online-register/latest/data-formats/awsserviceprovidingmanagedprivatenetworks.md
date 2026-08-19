@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awss
 
 AWS service providing managed private networks provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="private-networks-GetDeviceIdentifier"></a>[GetDeviceIdentifier](https://docs.aws.amazon.com/private-networks/latest/APIReference/API_GetDeviceIdentifier.html) | Get a device identifier | Read |

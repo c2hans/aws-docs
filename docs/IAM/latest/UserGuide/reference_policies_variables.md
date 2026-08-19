@@ -324,8 +324,6 @@ In the following example, `aws:principaltag/Team` must be equal to `s3:ExistingO
 
 The values for `aws:username`, `aws:userid`, and `aws:PrincipalType` depend on what type of principal initiated the request. For example, the request could be made using the credentials of an IAM user, an IAM role, or the AWS account root user. The following table shows values for these keys for different types of principals.
 
-****
-
 | Principal | `aws:username` | `aws:userid` | `aws:PrincipalType` |
 | --- | --- | --- | --- |
 | AWS account root user | (not present) | AWS account ID | Account |

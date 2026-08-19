@@ -13,7 +13,7 @@ We recommend testing this migration in a non-production environment before apply
 ## Overview
 <a name="auth-to-iam-overview"></a>
 
-IAM authentication provides enhanced security by eliminating the need for long-lived passwords. Instead, applications generate short-lived authentication tokens (valid for up to 15 minutes) using the [AWS Signature Version 4 signing process](https://docs.aws.amazon.com//general/latest/gr/signature-version-4.html).
+IAM authentication provides enhanced security by eliminating the need for long-lived passwords. Instead, applications generate short-lived authentication tokens (valid for up to 15 minutes) using the [AWS Signature Version 4 signing process](https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html).
 
 ## Prerequisites
 <a name="auth-to-iam-prereqs"></a>
@@ -214,7 +214,7 @@ After completing Step 2, your cache supports both authentication methods. Verify
 
 **Generate an IAM authentication token**
 
-Generate a short-lived IAM authentication token using an [AWS SigV4 pre-signed request](https://docs.aws.amazon.com//general/latest/gr/sigv4-signed-request-examples.html). The following Python example demonstrates token generation.
+Generate a short-lived IAM authentication token using an [AWS SigV4 pre-signed request](https://docs.aws.amazon.com/general/latest/gr/sigv4-signed-request-examples.html). The following Python example demonstrates token generation.
 
 ```
 import boto3
@@ -283,7 +283,7 @@ ACL WHOAMI
 ### Step 5: Application integration
 <a name="auth-to-iam-app-integration"></a>
 
-For Java applications, use the default AWS Credentials provider chain to generate temporary security credentials. For more information, see [Authenticating with IAM](auth-iam.md). For other languages, generate the IAM authentication token using the [AWS Signature Version 4 signing process](https://docs.aws.amazon.com//general/latest/gr/signature-version-4.html) and pass it as the password in your client's `AUTH` command.
+For Java applications, use the default AWS Credentials provider chain to generate temporary security credentials. For more information, see [Authenticating with IAM](auth-iam.md). For other languages, generate the IAM authentication token using the [AWS Signature Version 4 signing process](https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html) and pass it as the password in your client's `AUTH` command.
 
 ## Completing the migration
 <a name="auth-to-iam-completing"></a>

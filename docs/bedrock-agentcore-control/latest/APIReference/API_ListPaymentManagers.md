@@ -47,6 +47,7 @@ Content-type: application/json
          "authorizerType": "string",
          "createdAt": "string",
          "description": "string",
+         "kmsKeyArn": "string",
          "lastUpdatedAt": "string",
          "name": "string",
          "paymentManagerArn": "string",

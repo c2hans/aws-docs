@@ -30,8 +30,6 @@ content-type: application/x-amz-json-1.0
 {"TableName":"Table1"}
 ```
 
-****
-
 |  Name  |  Description  |  Required |
 | --- | --- | --- |
 |  TableName  | The name of the table to describe. <br />Type: String  |  Yes  |
@@ -61,8 +59,6 @@ Content-Length: 543
     }
 }
 ```
-
-****
 
 |  Name  |  Description  |
 | --- | --- |

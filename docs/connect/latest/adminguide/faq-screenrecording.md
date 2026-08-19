@@ -22,9 +22,6 @@ This topic provides frequently asked questions about using Connect Customer scre
 + **Which Connect Customer channels are supported?**
 
   You can generate screen recordings for voice, chat, and task contacts. Screen recording is not supported for email contacts.
-+ **Do you capture the entire screen?**
-
-  Screen recording captures only the Connect Customer agent workspace tabs, not the entire desktop.
 + **Does screen recording support concurrent user sessions on Windows using Virtual Desktop Infrastructure (VDI) environments?**
 
   Yes, screen recording supports concurrent user sessions on Windows when using Connect Customer Client Application version 2.0.0 or later.

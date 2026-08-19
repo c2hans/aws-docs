@@ -45,16 +45,12 @@ Consider the following use case of utilizing Titan Image Generator as a creative
 
 The following tables sketch an example creative flow for designing an organic, modern living room.
 
-****
-
 | Text Prompt | Reference Image | Generated Image |
 | --- | --- | --- |
 | Relaxing modern living room that is simple but has lots of plants, interesting décor and art, overhead lighting fixtures, natural and organic design elements, large airy windows |  No reference image provided.  |  ![Living room with gray sofa, woven pendant lights, potted plants and greenery, patterned area rug, wood stools, and framed artwork.](http://docs.aws.amazon.com/ai/responsible-ai/titan-image-generator/images/image1.png)  |
 | Relaxing modern living room that is simple but has lots of plants, interesting décor and art, overhead lighting fixtures, natural and organic design elements, large airy windows<br /> **Negative prompt: **Multiple lighting fixtures |  ![Living room with gray sofa, woven pendant lights, potted plants and greenery, patterned area rug, wood stools, and framed artwork.](http://docs.aws.amazon.com/ai/responsible-ai/titan-image-generator/images/image1.png)  |  ![Living room with gray sofa, woven armchair, large pendant light, plants, framed artwork, and patterned area rug.](http://docs.aws.amazon.com/ai/responsible-ai/titan-image-generator/images/image2.png)  |
 
 The home designer liked the lighting fixture, artwork and couch that was generated.
-
-****
 
 |  |  |  |  |
 | --- |--- |--- |--- |

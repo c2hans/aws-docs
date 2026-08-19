@@ -9,8 +9,6 @@ You can create a custom function to verify passwords by using the Amazon RDS pro
 
 The `create_verify_function` procedure has the following parameters.
 
-****
-
 | Parameter name | Data type | Default | Required | Description |
 | --- | --- | --- | --- | --- |
 | `p_verify_function_name` | varchar2 | — | Yes | The name for your custom function. This function is created for you in the SYS schema. You assign this function to user profiles.  |

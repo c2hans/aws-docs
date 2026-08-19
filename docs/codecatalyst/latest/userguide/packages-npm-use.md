@@ -133,8 +133,6 @@ The following sections summarize the `npm` commands that are supported by CodeCa
 
 This section lists `npm` commands where the `npm` client makes one or more requests to the registry to which it is configured (for example, `npm config set registry`). These commands have been verified to function correctly when invoked against a CodeCatalyst package repository.
 
-****
-
 | Command | Description |
 | --- | --- |
 |  [bugs](https://docs.npmjs.com/cli/bugs)  | Guesses the location of a package’s bug tracker URL, and then it attempts to open it. |
@@ -156,8 +154,6 @@ This section lists `npm` commands where the `npm` client makes one or more reque
 <a name="supported-client-side-commands"></a>
 
 These commands don't require any direct interaction with a package repository, so CodeCatalyst does not require anything to support them.
-
-****
 
 | Command | Description |
 | --- | --- |
@@ -188,8 +184,6 @@ These commands don't require any direct interaction with a package repository, s
 <a name="unsupported-commands"></a>
 
 These `npm` commands are not supported by CodeCatalyst package repositories.
-
-****
 
 | Command | Description | Notes |
 | --- | --- | --- |

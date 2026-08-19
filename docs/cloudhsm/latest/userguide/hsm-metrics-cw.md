@@ -9,8 +9,6 @@ Use CloudWatch to monitor your AWS CloudHSM cluster in real time. The metrics ca
 
 The `AWS/CloudHSM` namespace includes the following metrics:
 
-****
-
 | Metric | Description |
 | --- | --- |
 | HsmUnhealthy  | The HSM instance is not performing properly. AWS CloudHSM automatically replaces unhealthy instances for you. You may choose to proactively expand cluster size to reduce performance impact while we are replacing the HSM. |

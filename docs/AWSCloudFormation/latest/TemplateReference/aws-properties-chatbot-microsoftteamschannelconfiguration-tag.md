@@ -8,7 +8,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 <a name="aws-properties-chatbot-microsoftteamschannelconfiguration-tag"></a>
 
 **Note**
-AWS Chatbot is now Amazon Q Developer. [Learn more](https://docs.aws.amazon.com//chatbot/latest/adminguide/service-rename.html)
+AWS Chatbot is now Amazon Q Developer. [Learn more](https://docs.aws.amazon.com/chatbot/latest/adminguide/service-rename.html)
 `Type` attribute values remain unchanged.
 
 The Tag type enables you to specify a key-value pair that can be used to store information about a Microsoft Teams channel configuration.

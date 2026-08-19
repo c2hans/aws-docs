@@ -14,8 +14,6 @@ Disable the Transit Gateway (TGW) attachment from propagating routes to the TGW 
 ## Change Type Details
 <a name="ct-2pxyajek47am2-MMNd-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2pxyajek47am2 |

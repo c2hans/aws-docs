@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon WorkSpaces provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="workspaces-DescribeAccount"></a>[DescribeAccount](https://docs.aws.amazon.com/workspaces/latest/api/API_DescribeAccount.html) | Retrieve the configuration of Bring Your Own License (BYOL) for WorkSpaces accounts | Read |

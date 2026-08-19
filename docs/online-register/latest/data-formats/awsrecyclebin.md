@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsr
 
 AWS Recycle Bin provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="rbin-GetRule"></a>[GetRule](https://docs.aws.amazon.com/recyclebin/latest/APIReference/API_GetRule.html) | Get detailed information about a Recycle Bin retention rule | Read |

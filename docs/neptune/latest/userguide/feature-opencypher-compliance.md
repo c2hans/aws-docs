@@ -45,7 +45,7 @@ Neptune supports the following clauses, except as noted:
 + `MERGE`   –   Neptune supports [custom ID values](access-graph-opencypher-extensions.md#opencypher-compliance-custom-ids) in `MERGE` queries.
 + {{`CALL[YIELD...]`}}   –   is **not** currently supported in Neptune.
 + `UNION, UNION ALL`   –   read-only queries are supported, but mutation queries are **not** currently supported.
-+  `USING`   –   `USING` is supported from engine version [1.3.2.0](https://docs.aws.amazon.com//neptune/latest/userguide/engine-releases-1.3.2.0.html). See [Query hints](https://docs.aws.amazon.com//neptune/latest/userguide/opencypher-query-hints.html) for more information.
++  `USING`   –   `USING` is supported from engine version [1.3.2.0](https://docs.aws.amazon.com/neptune/latest/userguide/engine-releases-1.3.2.0.html). See [Query hints](https://docs.aws.amazon.com/neptune/latest/userguide/opencypher-query-hints.html) for more information.
 
 ## Support for openCypher operators in Neptune
 <a name="opencypher-compliance-operators"></a>

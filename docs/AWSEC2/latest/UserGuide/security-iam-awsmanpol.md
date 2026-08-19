@@ -35,7 +35,7 @@ To view the permissions for this policy, see [AmazonEC2ImageReferencesAccessPoli
 ## AWS managed policy: AWSEC2CapacityReservationFleetRolePolicy
 <a name="security-iam-awsmanpol-AWSEC2CapacityReservationFleetRolePolicy"></a>
 
-This policy is attached to the service-linked role named **AWSServiceRoleForEC2CapacityReservationFleet** to allow the service to create, modify, and cancel Capacity Reservations in a Capacity Reservation Fleet on your behalf. For more information, see [Using service-linked roles for Capacity Reservation FleetUsing service-linked roles for EC2 Capacity Manager](using-service-linked-roles.md).
+This policy is attached to the service-linked role named **AWSServiceRoleForEC2CapacityReservationFleet** to allow the service to create, modify, and cancel Capacity Reservations in a Capacity Reservation Fleet on your behalf. For more information, see [Using service-linked roles for Capacity Reservation Fleet](using-service-linked-roles.md).
 
 To view the permissions for this policy, see [AWSEC2CapacityReservationFleetRolePolicy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSEC2CapacityReservationFleetRolePolicy.html) in the *AWS Managed Policy Reference*.
 
@@ -104,7 +104,7 @@ To view the permissions for this policy, see [EC2FastLaunchServiceRolePolicy](ht
 ## AWS managed policy: Ec2InstanceConnect
 <a name="Ec2InstanceConnect"></a>
 
-You can attach the `Ec2InstanceConnect` policy to your IAM identities. This policy grants permissions that allows customers to call EC2 Instance Connect to publish ephemeral keys to their EC2 instances and connect via ssh or the EC2 Instance Connect CLI.
+You can attach the `Ec2InstanceConnect` policy to your IAM identities. This policy grants permissions that allows customers to call EC2 Instance Connect to publish ephemeral keys to their EC2 instances and connect through SSH or the EC2 Instance Connect CLI.
 
 To view the permissions for this policy, see [Ec2InstanceConnect](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/EC2InstanceConnect.html) in the *AWS Managed Policy Reference*.
 

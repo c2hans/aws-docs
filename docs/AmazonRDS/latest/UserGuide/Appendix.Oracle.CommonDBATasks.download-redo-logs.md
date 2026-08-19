@@ -42,8 +42,6 @@ RDS automatically checks the available storage before downloading. If the reques
 
 To download a single archived redo log to the `/rdsdbdata/log/arch` directory, use `rdsadmin.rdsadmin_archive_log_download.download_log_with_seqnum`. This procedure has the following parameter.
 
-****
-
 | Parameter name | Data type | Default | Required | Description |
 | --- | --- | --- | --- | --- |
 | `seqnum` | number | — | Yes | The sequence number of the archived redo log. |
@@ -66,8 +64,6 @@ FROM   DUAL;
 <a name="Appendix.Oracle.CommonDBATasks.download-redo-logs.series"></a>
 
 To download a series of archived redo logs to the `/rdsdbdata/log/arch` directory, use `download_logs_in_seqnum_range`. Your download is limited to 300 logs per request. The `download_logs_in_seqnum_range` procedure has the following parameters.
-
-****
 
 | Parameter name | Data type | Default | Required | Description |
 | --- | --- | --- | --- | --- |

@@ -231,6 +231,8 @@ The gateway routes inference requests based on the `model` field in the request 
 
 1.  **Collision handling** – When multiple targets match the same model at the same specificity, the gateway defaults to the Amazon Bedrock target if one is among the matches. Otherwise, it distributes requests across the matching targets in round-robin order. To pin requests to a specific target, qualify the model with the target name as a prefix (for example, `bedrock/claude-opus-4-7`).
 
+To customize or override the target that a model routes to, you can rewrite the `model` field in a request interceptor. For more information, see [Customize model routing with a request interceptor](gateway-interceptors-examples.html#gateway-interceptors-examples-model-routing).
+
 ## Streaming
 <a name="gateway-target-inference-provider-streaming"></a>
 

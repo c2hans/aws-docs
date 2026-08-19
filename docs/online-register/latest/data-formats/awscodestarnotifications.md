@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsc
 
 AWS CodeStar Notifications provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="codestar-notifications-DescribeNotificationRule"></a>[DescribeNotificationRule](https://docs.aws.amazon.com/codestar-notifications/latest/APIReference/API_DescribeNotificationRule.html) | Get information about a notification rule | Read |

@@ -91,8 +91,6 @@ Other AWS services integrate with Spot to reduce overall compute costs without t
 
 Use the following table to determine which API to use when requesting Spot Instances.
 
-****
-
 | API | When to use? | Use case | Should I use this API? |
 | --- | --- | --- | --- |
 | [CreateAutoScalingGroup](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_CreateAutoScalingGroup.html) |  +  You need multiple instances with either a single configuration or a mixed configuration. <br />+  You want to automate the lifecycle management through a configurable API.   | Create an Auto Scaling group that manages the lifecycle of your instances while maintaining the desired number of instances. Supports horizontal scaling (adding more instances) between specified minimum and maximum limits. | Yes |

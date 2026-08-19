@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon Redshift provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="redshift-DescribeAccountAttributes"></a>[DescribeAccountAttributes](https://docs.aws.amazon.com/redshift/latest/APIReference/API_DescribeAccountAttributes.html) | Describe attributes attached to the specified AWS account | Read |

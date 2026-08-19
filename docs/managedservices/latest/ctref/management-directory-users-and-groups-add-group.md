@@ -14,8 +14,6 @@ Create an Active Directory (AD) group in the AMS managed AD. For multi-account l
 ## Change Type Details
 <a name="ct-3eutt7grkict4-MDUa-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-3eutt7grkict4 |

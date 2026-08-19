@@ -14,8 +14,6 @@ Create an AWS Systems Manager (SSM) patch baseline to define which patches are a
 ## Change Type Details
 <a name="ct-0kbey7hb00atp-DPSc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-0kbey7hb00atp |

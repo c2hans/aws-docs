@@ -57,8 +57,6 @@ The following tables list all supported platform branches for each platform. Onl
 ### Docker
 <a name="release-2021-05-26-linux.platforms.docker"></a>
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Docker  |  Docker Compose  |  Proxy Server  |
 | --- | --- | --- | --- | --- |
 |  ** Docker AL2 version 3.3.0** <br /> * 64bit Amazon Linux 2 v3.3.0 running Docker *  | 2.0.20210421 | 20.10.4 | 1.29.1 | nginx 1.18.0 |
@@ -67,16 +65,12 @@ The following tables list all supported platform branches for each platform. Onl
 ### Multicontainer Docker
 <a name="release-2021-05-26-linux.platforms.mcdocker"></a>
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Docker  |  ECS Agent  |
 | --- | --- | --- | --- |
 |  ** Multicontainer Docker version 2.26.1** <br /> * 64bit Amazon Linux 2018.03 v2.26.1 running Multi-container Docker 19.03.13-ce (Generic) *  | 2018.03.0 | 19.03.13-ce | 1.51.0 |
 
 ### Preconfigured Docker
 <a name="release-2021-05-26-linux.platforms.dockerpreconfig"></a>
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -85,8 +79,6 @@ The following tables list all supported platform branches for each platform. Onl
 ### Go
 <a name="release-2021-05-26-linux.platforms.go"></a>
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  AWS X‑Ray  |  Proxy Server  |
 | --- | --- | --- | --- | --- |
 |  ** Go 1 AL2 version 3.2.2** <br /> * 64bit Amazon Linux 2 v3.2.2 running Go 1 *  | 2.0.20210421 | Go 1.16.3 | 3.2.0 | nginx 1.18.0 |
@@ -94,8 +86,6 @@ The following tables list all supported platform branches for each platform. Onl
 
 ### Java SE
 <a name="release-2021-05-26-linux.platforms.javase"></a>
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  Tools  |  AWS X‑Ray  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- |
@@ -107,8 +97,6 @@ The following tables list all supported platform branches for each platform. Onl
 ### Tomcat
 <a name="release-2021-05-26-linux.platforms.java"></a>
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  AWS X‑Ray  |  Application Server  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Corretto 11 with Tomcat 8.5 AL2 version 4.1.8** <br /> * 64bit Amazon Linux 2 v4.1.8 running Tomcat 8.5 Corretto 11 *  | 2.0.20210421 | Corretto 11.0.11.9.1 | 3.2.0 | Tomcat 8.5.63 | nginx 1.18.0 (default), Apache 2.4.46 |
@@ -117,8 +105,6 @@ The following tables list all supported platform branches for each platform. Onl
 
 ### Node.js
 <a name="release-2021-05-26-linux.platforms.nodejs"></a>
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X‑Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -129,8 +115,6 @@ The following tables list all supported platform branches for each platform. Onl
 ### PHP
 <a name="release-2021-05-26-linux.platforms.PHP"></a>
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  Composer  |  Proxy Server  |
 | --- | --- | --- | --- | --- |
 |  ** PHP 8.0 AL2 version 3.2.1** <br /> * 64bit Amazon Linux 2 v3.2.1 running PHP 8.0 *  | 2.0.20210421 | PHP 8.0.2 | 2.0.13 | nginx 1.18.0 (default), Apache 2.4.46 |
@@ -138,8 +122,6 @@ The following tables list all supported platform branches for each platform. Onl
 
 ### Python
 <a name="release-2021-05-26-linux.platforms.python"></a>
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  Package Manager  |  Packager  |  meld3  |  AWS X‑Ray  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -149,8 +131,6 @@ The following tables list all supported platform branches for each platform. Onl
 
 ### Ruby
 <a name="release-2021-05-26-linux.platforms.ruby"></a>
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  Package Manager  |  Application Server  |  AWS X‑Ray  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- | --- |

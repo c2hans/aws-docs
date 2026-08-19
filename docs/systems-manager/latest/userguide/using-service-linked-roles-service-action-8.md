@@ -70,8 +70,6 @@ Use the IAM console, the AWS CLI, or the AWS API to delete the `AWSServiceRoleFo
 ## Supported Regions for the Systems Manager  `AWSServiceRoleForSystemsManagerJustInTimeAccess` service-linked role
 <a name="slr-regions-service-action-8"></a>
 
-****
-
 | AWS Region name | Region identity | Support in Systems Manager |
 | --- | --- | --- |
 | US East (N. Virginia) | us-east-1 | Yes |

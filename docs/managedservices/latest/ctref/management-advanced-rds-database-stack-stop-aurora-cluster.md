@@ -14,8 +14,6 @@ Stop an Aurora DB cluster, which is a provisioned capacity type and does not hav
 ## Change Type Details
 <a name="ct-37vqa0oggka3q-MARs-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-37vqa0oggka3q |

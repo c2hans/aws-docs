@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsd
 
 AWS DevOps Agent Service provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="aidevops-DescribePrivateConnection"></a>[DescribePrivateConnection](https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_DescribePrivateConnection.html) | Describe a private connection | Read |

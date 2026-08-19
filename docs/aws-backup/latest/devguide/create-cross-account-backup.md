@@ -67,7 +67,7 @@ For information about security, see [Security considerations for cross-account b
 
 To use cross-account backup, you must enable the cross-account backup feature. Then, you must "Allow" the access policy `backup:CopyIntoBackupVault` into your destination backup vault.
 
-Amazon EC2 offers [EC2 Allowed AMIs](https://docs.aws.amazon.com//AWSEC2/latest/UserGuide/ec2-allowed-amis.html). If this setting is enabled in your account, add your source account ID to your allowlist. Otherwise, the copy operation will fail with an error message, such as "Source AMI not found in Region".
+Amazon EC2 offers [EC2 Allowed AMIs](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-allowed-amis.html). If this setting is enabled in your account, add your source account ID to your allowlist. Otherwise, the copy operation will fail with an error message, such as "Source AMI not found in Region".
 
 **Enable cross-account backup**
 

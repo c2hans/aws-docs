@@ -23,7 +23,7 @@ The following table describes important additions and updates to the *AWS SDKs a
 | [Request compression](#doc-history) | Adding settings for request compression feature. | December 27, 2023 |
 | [Compatibility tables](#doc-history) | Compatibility tables for SDK and tool features updated to include SDK for Kotlin, SDK for Rust, and AWS Tools for PowerShell. | December 10, 2023 |
 | [Authentication updates](#doc-history) | Updates to supported methods of authentication for SDKs and tools. | July 1, 2023 |
-| [IAM best practices updates](#doc-history) | Updated guide to align with the IAM best practices. For more information, see [Security best practices in IAM](https://docs.aws.amazon.com//IAM/latest/UserGuide/best-practices.html). | February 27, 2023 |
+| [IAM best practices updates](#doc-history) | Updated guide to align with the IAM best practices. For more information, see [Security best practices in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html). | February 27, 2023 |
 | [SSO updates](#doc-history) | Updates to SSO credentials for the new SSO token configuration. | November 19, 2022 |
 | [Settings updates](#doc-history) | Updates to support table for General configuration and for Amazon S3 Multi-Region Access Points. | November 17, 2022 |
 | [Settings updates](#doc-history) | Updates to clarity of IMDS client and IMDS credentials. Updates to Environment variables. | November 4, 2022 |

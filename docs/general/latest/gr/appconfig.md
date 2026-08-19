@@ -126,8 +126,6 @@ The following table contains AWS Region-specific endpoints that AWS AppConfig Da
 ### Control plane default limits
 <a name="limits_appconfig_control_plane"></a>
 
-****
-
 | API name | Transactions per second | Adjustable |
 | --- | --- | --- |
 | Create\* | 10 | No |
@@ -143,8 +141,6 @@ The following table contains AWS Region-specific endpoints that AWS AppConfig Da
 
 ### Data plane default limits
 <a name="limits_appconfig_data_plane"></a>
-
-****
 
 | Action | API limit | Adjustable |
 | --- | --- | --- |

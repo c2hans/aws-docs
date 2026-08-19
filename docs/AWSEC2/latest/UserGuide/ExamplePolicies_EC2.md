@@ -1472,7 +1472,7 @@ This policy allows users to delete only the `environment=prod` tag on any resour
 
 The following policy allows users to attach, replace, and detach an IAM role to instances that have the tag `department=test`. Replacing or detaching an IAM role requires an association ID, therefore the policy also grants users permission to use the `ec2:DescribeIamInstanceProfileAssociations` action.
 
-Users must have permission to use the `iam:PassRole` action in order to pass the role to the instance.
+Users must have permission to use the `iam:PassRole` action to pass the role to the instance.
 
 ------
 #### [ JSON ]

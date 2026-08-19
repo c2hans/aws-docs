@@ -25,8 +25,6 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_iam-actions-as-permissions).
 
-****
-
 - **   AcceptDelegationRequest  **
   - **IAM action:**  [iam:AcceptDelegationRequest](#list_iam-action-AcceptDelegationRequest)
   - **Condition key:**
@@ -37,6 +35,7 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [iam:AttachRolePolicy](#list_iam-action-AttachRolePolicy)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Permissions management, Write
   - **IAM action:**  [iam:CreateRole](#list_iam-action-CreateRole)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [iam:GetRole](#list_iam-action-GetRole)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
+  - **IAM action:**  [iam:GetRoleTemplateVersion](#list_iam-action-GetRoleTemplateVersion)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
   - **IAM action:**  [iam:PutRolePermissionsBoundary](#list_iam-action-PutRolePermissionsBoundary)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Permissions management, Write
   - **IAM action:**  [iam:PutRolePolicy](#list_iam-action-PutRolePolicy)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Permissions management, Write
   - **IAM action:**  [iam:TagRole](#list_iam-action-TagRole)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
@@ -377,6 +376,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Read
 
+- **   GetAccountProperties  **
+  - **IAM action:**  [iam:GetAccountProperties](#list_iam-action-GetAccountProperties)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
 - **   GetAccountSummary  **
   - **IAM action:**  [iam:GetAccountSummary](#list_iam-action-GetAccountSummary)
   - **Condition key:**
@@ -481,6 +486,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   GetRolePolicy  **
   - **IAM action:**  [iam:GetRolePolicy](#list_iam-action-GetRolePolicy)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   GetRoleTemplateVersion  **
+  - **IAM action:**  [iam:GetRoleTemplateVersion](#list_iam-action-GetRoleTemplateVersion)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
@@ -744,10 +755,8 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Access level:** List
 
 - **   PutAccountProperties  **
-  - **IAM action:**  [iam:CreateServiceLinkedRole](#list_iam-action-CreateServiceLinkedRole)
-  - **Condition key:**
-  - **Possible value(s):**
-  - **Access level:** Write
+  - **IAM action:**  [iam:CreateServiceLinkedRole](#list_iam-action-CreateServiceLinkedRole)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [iam:PutAccountProperties](#list_iam-action-PutAccountProperties)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
 
 - **   PutGroupPolicy  **
   - **IAM action:**  [iam:PutGroupPolicy](#list_iam-action-PutGroupPolicy)
@@ -1046,8 +1055,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
 
-****
-
 - **   [AcceptDelegationRequest](https://docs.aws.amazon.com/IAM/latest/APIReference/API_AcceptDelegationRequest.html)  **
   - **Description:** Accepts a delegation request resource, granting the requested temporary access
   - **Resource types (\*required):** [delegation-request\*](#list_iam-resource-delegation-request)
@@ -1087,7 +1094,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
 - **   [AttachRolePolicy](https://docs.aws.amazon.com/IAM/latest/APIReference/API_AttachRolePolicy.html)  **
   - **Description:** Grants permission to attach a managed policy to the specified IAM role
   - **Resource types (\*required):** [role\*](#list_iam-resource-role)
-  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_iam-aws_ResourceTag___TagKey_)<br />[iam:PermissionsBoundary](#list_iam-iam_PermissionsBoundary)<br />[iam:PolicyARN](#list_iam-iam_PolicyARN)<br />[iam:ResourceTag/${TagKey}](#list_iam-iam_ResourceTag___TagKey_)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_iam-aws_ResourceTag___TagKey_)<br />[iam:PermissionsBoundary](#list_iam-iam_PermissionsBoundary)<br />[iam:PolicyARN](#list_iam-iam_PolicyARN)<br />[iam:ResourceTag/${TagKey}](#list_iam-iam_ResourceTag___TagKey_)<br />[iam:RoleTemplateARN](#list_iam-iam_RoleTemplateARN)
   - **Access level:** Permissions management, Write
 
 - **   [AttachUserPolicy](https://docs.aws.amazon.com/IAM/latest/APIReference/API_AttachUserPolicy.html)  **
@@ -1159,7 +1166,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
 - **   [CreateRole](https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateRole.html)  **
   - **Description:** Grants permission to create a new role
   - **Resource types (\*required):** [role\*](#list_iam-resource-role)
-  - **Condition keys:** [aws:RequestTag/${TagKey}](#list_iam-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_iam-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_iam-aws_TagKeys)<br />[iam:PermissionsBoundary](#list_iam-iam_PermissionsBoundary)<br />[iam:ResourceTag/${TagKey}](#list_iam-iam_ResourceTag___TagKey_)
+  - **Condition keys:** [aws:RequestTag/${TagKey}](#list_iam-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_iam-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_iam-aws_TagKeys)<br />[iam:PermissionsBoundary](#list_iam-iam_PermissionsBoundary)<br />[iam:ResourceTag/${TagKey}](#list_iam-iam_ResourceTag___TagKey_)<br />[iam:RoleTemplateARN](#list_iam-iam_RoleTemplateARN)
   - **Access level:** Write
 
 - **   [CreateSAMLProvider](https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateSAMLProvider.html)  **
@@ -1452,6 +1459,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:**
   - **Access level:** Read
 
+- **   [GetAccountProperties](https://docs.aws.amazon.com/IAM/latest/APIReference/API_GetAccountProperties.html)  **
+  - **Description:** Grants permission to retrieve account-level properties for IAM features
+  - **Resource types (\*required):**
+  - **Condition keys:** [iam:AccountPropertyNamespaces](#list_iam-iam_AccountPropertyNamespaces)
+  - **Access level:** Read
+
 - **   [GetAccountSummary](https://docs.aws.amazon.com/IAM/latest/APIReference/API_GetAccountSummary.html)  **
   - **Description:** Grants permission to retrieve information about IAM entity usage and IAM quotas in the AWS account
   - **Resource types (\*required):**
@@ -1558,13 +1571,19 @@ You can specify the following actions in the `Action` element of an IAM policy s
 - **   [GetRole](https://docs.aws.amazon.com/IAM/latest/APIReference/API_GetRole.html)  **
   - **Description:** Grants permission to retrieve information about the specified role, including the role's path, GUID, ARN, and the role's trust policy
   - **Resource types (\*required):** [role\*](#list_iam-resource-role)
-  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_iam-aws_ResourceTag___TagKey_)<br />[iam:PermissionsBoundary](#list_iam-iam_PermissionsBoundary)<br />[iam:ResourceTag/${TagKey}](#list_iam-iam_ResourceTag___TagKey_)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_iam-aws_ResourceTag___TagKey_)<br />[iam:PermissionsBoundary](#list_iam-iam_PermissionsBoundary)<br />[iam:ResourceTag/${TagKey}](#list_iam-iam_ResourceTag___TagKey_)<br />[iam:RoleTemplateARN](#list_iam-iam_RoleTemplateARN)
   - **Access level:** Read
 
 - **   [GetRolePolicy](https://docs.aws.amazon.com/IAM/latest/APIReference/API_GetRolePolicy.html)  **
   - **Description:** Grants permission to retrieve an inline policy document that is embedded with the specified IAM role
   - **Resource types (\*required):** [role\*](#list_iam-resource-role)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_iam-aws_ResourceTag___TagKey_)<br />[iam:ResourceTag/${TagKey}](#list_iam-iam_ResourceTag___TagKey_)
+  - **Access level:** Read
+
+- **   [GetRoleTemplateVersion](https://docs.aws.amazon.com/IAM/latest/APIReference/API_GetRoleTemplateVersion.html)  **
+  - **Description:** Grants permission to retrieve information about a specific version of a role template
+  - **Resource types (\*required):** [role-template\*](#list_iam-resource-role-template)
+  - **Condition keys:**
   - **Access level:** Read
 
 - **   [GetSAMLProvider](https://docs.aws.amazon.com/IAM/latest/APIReference/API_GetSAMLProvider.html)  **
@@ -1844,6 +1863,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:**
   - **Access level:** List
 
+- **   [PutAccountProperties](https://docs.aws.amazon.com/IAM/latest/APIReference/API_PutAccountProperties.html)  **
+  - **Description:** Grants permission to set account-level properties for IAM features
+  - **Resource types (\*required):**
+  - **Condition keys:** [iam:AccountPropertyNamespaces](#list_iam-iam_AccountPropertyNamespaces)
+  - **Access level:** Write
+
 - **   [PutGroupPolicy](https://docs.aws.amazon.com/IAM/latest/APIReference/API_PutGroupPolicy.html)  **
   - **Description:** Grants permission to create or update an inline policy document that is embedded in the specified IAM group
   - **Resource types (\*required):** [group\*](#list_iam-resource-group)
@@ -1853,13 +1878,13 @@ You can specify the following actions in the `Action` element of an IAM policy s
 - **   [PutRolePermissionsBoundary](https://docs.aws.amazon.com/IAM/latest/APIReference/API_PutRolePermissionsBoundary.html)  **
   - **Description:** Grants permission to set a managed policy as a permissions boundary for a role
   - **Resource types (\*required):** [role\*](#list_iam-resource-role)
-  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_iam-aws_ResourceTag___TagKey_)<br />[iam:PermissionsBoundary](#list_iam-iam_PermissionsBoundary)<br />[iam:ResourceTag/${TagKey}](#list_iam-iam_ResourceTag___TagKey_)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_iam-aws_ResourceTag___TagKey_)<br />[iam:PermissionsBoundary](#list_iam-iam_PermissionsBoundary)<br />[iam:ResourceTag/${TagKey}](#list_iam-iam_ResourceTag___TagKey_)<br />[iam:RoleTemplateARN](#list_iam-iam_RoleTemplateARN)
   - **Access level:** Permissions management, Write
 
 - **   [PutRolePolicy](https://docs.aws.amazon.com/IAM/latest/APIReference/API_PutRolePolicy.html)  **
   - **Description:** Grants permission to create or update an inline policy document that is embedded in the specified IAM role
   - **Resource types (\*required):** [role\*](#list_iam-resource-role)
-  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_iam-aws_ResourceTag___TagKey_)<br />[iam:PermissionsBoundary](#list_iam-iam_PermissionsBoundary)<br />[iam:ResourceTag/${TagKey}](#list_iam-iam_ResourceTag___TagKey_)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_iam-aws_ResourceTag___TagKey_)<br />[iam:PermissionsBoundary](#list_iam-iam_PermissionsBoundary)<br />[iam:ResourceTag/${TagKey}](#list_iam-iam_ResourceTag___TagKey_)<br />[iam:RoleTemplateARN](#list_iam-iam_RoleTemplateARN)
   - **Access level:** Permissions management, Write
 
 - **   [PutUserPermissionsBoundary](https://docs.aws.amazon.com/IAM/latest/APIReference/API_PutUserPermissionsBoundary.html)  **
@@ -1974,7 +1999,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
 - **   [TagRole](https://docs.aws.amazon.com/IAM/latest/APIReference/API_TagRole.html)  **
   - **Description:** Grants permission to add tags to an IAM role
   - **Resource types (\*required):** [role\*](#list_iam-resource-role)
-  - **Condition keys:** [aws:RequestTag/${TagKey}](#list_iam-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_iam-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_iam-aws_TagKeys)<br />[iam:ResourceTag/${TagKey}](#list_iam-iam_ResourceTag___TagKey_)
+  - **Condition keys:** [aws:RequestTag/${TagKey}](#list_iam-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_iam-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_iam-aws_TagKeys)<br />[iam:ResourceTag/${TagKey}](#list_iam-iam_ResourceTag___TagKey_)<br />[iam:RoleTemplateARN](#list_iam-iam_RoleTemplateARN)
   - **Access level:** Tagging, Write
 
 - **   [TagSAMLProvider](https://docs.aws.amazon.com/IAM/latest/APIReference/API_TagSAMLProvider.html)  **
@@ -2174,8 +2199,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 The following actions are defined by AWS Identity and Access Management (IAM) but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 - **   [PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  **
   - **Description:** Grants permission to pass a role to a service
   - **Resource types (\*required):** [role\*](#list_iam-resource-role)
@@ -2186,8 +2209,6 @@ The following actions are defined by AWS Identity and Access Management (IAM) bu
 <a name="list_iam-resources-for-iam-policies"></a>
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
-
-****
 
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
@@ -2201,6 +2222,7 @@ The following resource types are defined by this service and can be used in the 
 |  [oidc-provider](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_create_oidc.html)  | arn:${Partition}:iam::${Account}:oidc-provider/${OidcProviderName} | [aws:ResourceTag/${TagKey}](#list_iam-aws_ResourceTag___TagKey_) |
 |  [policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html)  | arn:${Partition}:iam::${Account}:policy/${PolicyNameWithPath} | [aws:ResourceTag/${TagKey}](#list_iam-aws_ResourceTag___TagKey_) |
 |  [role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html)  | arn:${Partition}:iam::${Account}:role/${RoleNameWithPath} | [aws:ResourceTag/${TagKey}](#list_iam-aws_ResourceTag___TagKey_)<br />[iam:ResourceTag/${TagKey}](#list_iam-iam_ResourceTag___TagKey_) |
+|  [role-template](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_role-template.html)  | arn:${Partition}:iam::aws:role-template/${AWSServicePrincipal}/${RoleTemplateName}:${RoleTemplateMajorVersion} |   |
 |  [saml-provider](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_saml.html)  | arn:${Partition}:iam::${Account}:saml-provider/${SamlProviderName} | [aws:ResourceTag/${TagKey}](#list_iam-aws_ResourceTag___TagKey_) |
 |  [server-certificate](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_server-certs.html)  | arn:${Partition}:iam::${Account}:server-certificate/${CertificateNameWithPath} | [aws:ResourceTag/${TagKey}](#list_iam-aws_ResourceTag___TagKey_) |
 |  [sms-mfa](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa.html)  | arn:${Partition}:iam::${Account}:sms-mfa/${MfaTokenIdWithPath} |   |
@@ -2211,14 +2233,13 @@ The following resource types are defined by this service and can be used in the 
 
 AWS Identity and Access Management (IAM) defines the following condition keys that can be used in the `Condition` element of an IAM policy.
 
-****
-
 | Condition keys | Description | Type |
 | --- | --- | --- |
 |   [aws:RequestTag/${TagKey}](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag)  | Filters access based on the tags that are passed in the request | String |
 |   [aws:ResourceTag/${TagKey}](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag)  | Filters access based on the tags associated with the resource | String |
 |   [aws:TagKeys](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys)  | Filters access based on the tag keys that are passed in the request | ArrayOfString |
 |   [iam:AWSServiceName](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_AWSServiceName)  | Filters access by the AWS service to which this role is attached | String |
+|   [iam:AccountPropertyNamespaces](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_AccountPropertyNamespaces)  | Filters access by the account property namespaces being read or modified | ArrayOfString |
 |   [iam:AssociatedResourceArn](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_AssociatedResourceArn)  | Filters access by the resource that the role will be used on behalf of | ARN |
 |   [iam:DelegationDuration](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_DelegationDuration)  | Filters access based on the requested delegation duration | String |
 |   [iam:DelegationRequestOwner](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_DelegationRequestOwner)  | Filters access based on the delegation request owner | ARN |
@@ -2232,6 +2253,7 @@ AWS Identity and Access Management (IAM) defines the following condition keys th
 |   [iam:PolicyARN](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_PolicyARN)  | Filters access by the ARN of an IAM policy | ARN |
 |   [iam:RegisterSecurityKey](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_RegisterSecurityKey)  | Filters access by the current state of MFA device enablement | String |
 |   [iam:ResourceTag/${TagKey}](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_ResourceTag)  | Filters access by the tags attached to an IAM entity (user or role) | String |
+|   [iam:RoleTemplateARN](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_RoleTemplateARN)  | Filters access by the role template ARN used in the request | ARN |
 |   [iam:ServiceSpecificCredentialAgeDays](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_ServiceSpecificCredentialAgeDays)  | Filters access by the duration until the credential's expiration | Numeric |
 |   [iam:ServiceSpecificCredentialServiceName](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_ServiceSpecificCredentialServiceName)  | Filters access by the service associated with the credential | String |
 |   [iam:TemplateArn](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_TemplateArn)  | Filters access based on the requested template ARN | ARN |

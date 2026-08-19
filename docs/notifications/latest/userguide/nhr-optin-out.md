@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/notifications/latest/userguide/nhr-optin
 
 Although most AWS Regions are active by default for your AWS account, certain Regions are activated only when you manually select them. This document refers to those Regions as *opt-in Regions*. In contrast, Regions that are active by default, as soon as your AWS account is created, are referred to as *commercial Regions*, or simply, *Regions*.
 
-If you choose to select an opt-in Region as your notification hub, enable it first by following the steps in [Enabling a Region](https://docs.aws.amazon.com//general/latest/gr/rande-manage.html#rande-manage-enable). Enabling or disabling an opt-in Region may impact your notifications experience. For a list of supported opt-in Regions, see [Opt-in Regions](supported-regions.md#opt-in-Regions).
+If you choose to select an opt-in Region as your notification hub, enable it first by following the steps in [Enabling a Region](https://docs.aws.amazon.com/general/latest/gr/rande-manage.html#rande-manage-enable). Enabling or disabling an opt-in Region may impact your notifications experience. For a list of supported opt-in Regions, see [Opt-in Regions](supported-regions.md#opt-in-Regions).
 
 ## Disabling a notification hub Region
 <a name="nhr-optout-hub"></a>

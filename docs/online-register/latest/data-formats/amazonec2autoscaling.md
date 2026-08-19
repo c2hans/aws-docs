@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon EC2 Auto Scaling provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="autoscaling-DescribeAccountLimits"></a>[DescribeAccountLimits](https://docs.aws.amazon.com/AutoScaling/latest/APIReference/API_DescribeAccountLimits.html) | Describe the current Auto Scaling resource limits for your AWS account | List |

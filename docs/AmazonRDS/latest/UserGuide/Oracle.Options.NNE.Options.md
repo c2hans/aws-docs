@@ -17,8 +17,6 @@ For Oracle Database 26ai, Amazon RDS supports a limited set of algorithms for th
 For `SQLNET.CRYPTO_CHECKSUM_TYPES_CLIENT` and `SQLNET.CRYPTO_CHECKSUM_TYPES_SERVER`, only `SHA256`, `SHA384`, and `SHA512` are supported.
 For `SQLNET.ENCRYPTION_TYPES_CLIENT` and `SQLNET.ENCRYPTION_TYPES_SERVER`, only `AES256` and `AES192` are supported.
 
-****
-
 | Option setting | Valid values | Default values | Description |
 | --- | --- | --- | --- |
 | `SQLNET.ALLOW_WEAK_CRYPTO_CLIENTS` | `TRUE`, `FALSE` | `TRUE` | The behavior of the server when a client using a non-secure cipher attempts to connect to the database. If `TRUE`, clients can connect even if they aren't patched with the July 2021 PSU. <br />If the setting is `FALSE`, clients can connect to the database only when they are patched with the July 2021 PSU. Before you set `SQLNET.ALLOW_WEAK_CRYPTO_CLIENTS` to `FALSE`, make sure that the following conditions are met:+  `SQLNET.ENCRYPTION_TYPES_SERVER` and `SQLNET.ENCRYPTION_TYPES_CLIENT` have one matching encryption method that is not `DES`, `3DES`, or `RC4` (all key lengths). <br />+  `SQLNET.CRYPTO_CHECKSUM_TYPES_SERVER` and `SQLNET.CRYPTO_CHECKSUM_TYPES_CLIENT` have one matching secure checksumming method that is not `MD5`. <br />+  The client is patched with the July 2021 PSU. If the client isn't patched, the client loses the connection and receives the `ORA-12269` error.  |

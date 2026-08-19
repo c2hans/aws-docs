@@ -22,4 +22,4 @@ IAM Identity Center administrators can allow users to self-register their own MF
 1. Choose **Save changes**.
 
 **Note**
-After you set up self-registration for your users, you might want to send them a link to the procedure [Registering your device for MFABefore you begin](user-device-registration.md). This topic provides instructions on how to set up their own MFA devices.
+After you set up self-registration for your users, you might want to send them a link to the procedure [Registering your device for MFA](user-device-registration.md). This topic provides instructions on how to set up their own MFA devices.

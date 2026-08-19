@@ -33,4 +33,4 @@ The following are instance and session performance metrics for single-session an
 | MetadataNoTokenRejected | The number of times an IMDSv1 request to the instance metadata service was rejected. This metric is available when the instance is configured to require IMDSv2. | [Fleet]<br />[ImageBuilder]<br />[AppBlockBuilder] | Sum | Count |
 
 **Note**
-The following metrics are available for all operating systems except Windows Desktop: `UDPPacketLossRate`, `TCPRetransmissionRate`, `BandwidthInbound`, `CongestionWindow`, `ConnectionDuration`, `MetadataNoToken`, and `MetadataNoTokenRejected`. All metrics are available for Windows Server operating system. None of the metrics are available for Windows Desktop operating system.
+All metrics are available for the Windows Server operating system. For the remaining set of supported operating systems, only the following metrics are available: `UDPPacketLossRate`, `TCPRetransmissionRate`, `BandwidthInbound`, `CongestionWindow`, `ConnectionDuration`, `MetadataNoToken`, and `MetadataNoTokenRejected`.

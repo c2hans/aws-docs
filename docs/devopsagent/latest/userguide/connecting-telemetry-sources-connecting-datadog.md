@@ -85,6 +85,8 @@ Activate DataDog in a specific Agent space and configure appropriate scoping
 
 1. Copy the Webhook URL and API Key (shown once at save; the API Key can't be viewed later — if you lose it, regenerate it from the webhook details on the Capabilities tab, which invalidates the previous key)
 
+**Note:** For instructions on retrieving or rotating webhook credentials, see [Managing webhook credentials](configuring-integrations-and-knowledge-invoking-devops-agent-through-webhook.md).
+
 A single Agent Space can use more than one Datadog registration. To add another registration, repeat these steps.
 
 ### Step 3: Configure webhooks

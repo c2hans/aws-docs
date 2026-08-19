@@ -10,10 +10,10 @@ AWS Control Tower is integrated with several other AWS services, such as AWS Ser
 **Note**
 If you have disabled IAM Identity Center in your landing zone settings, the SSO user parameters (`SSOUserEmail`, `SSOUserFirstName`, and `SSOUserLastName`) are not used during account provisioning. If desired, you can provide placeholder values for these required parameters and modify them later by following the instructions in [Update the provisioned product in Service Catalog](update-provisioned-product.md).
 
-The video shows you how to provision accounts in an automated, batch fashion, by calling the AWS Service Catalog APIs. For provisioning, you'll call the [`ProvisionProduct`](https://docs.aws.amazon.com//servicecatalog/latest/dg/API_ProvisionProduct.html) API from the AWS command line interface (CLI), and you'll specify a JSON file that contains the parameters for each account you'd like to set up. The video illustrates installing and using the [AWS Cloud9](https://docs.aws.amazon.com//cloud9/latest/user-guide/welcome.html) development environment to perform this work. The CLI commands would be the same if you use AWS Cloudshell instead of AWS Cloud9.
+The video shows you how to provision accounts in an automated, batch fashion, by calling the AWS Service Catalog APIs. For provisioning, you'll call the [`ProvisionProduct`](https://docs.aws.amazon.com/servicecatalog/latest/dg/API_ProvisionProduct.html) API from the AWS command line interface (CLI), and you'll specify a JSON file that contains the parameters for each account you'd like to set up. The video illustrates installing and using the [AWS Cloud9](https://docs.aws.amazon.com/cloud9/latest/user-guide/welcome.html) development environment to perform this work. The CLI commands would be the same if you use AWS Cloudshell instead of AWS Cloud9.
 
 **Note**
-You also can adapt this approach for automating account updates, by calling the [`UpdateProvisionedProduct`](https://docs.aws.amazon.com//servicecatalog/latest/dg/API_UpdateProvisionedProduct.html) API of AWS Service Catalog for each account. You can write a script to update the accounts, one by one.
+You also can adapt this approach for automating account updates, by calling the [`UpdateProvisionedProduct`](https://docs.aws.amazon.com/servicecatalog/latest/dg/API_UpdateProvisionedProduct.html) API of AWS Service Catalog for each account. You can write a script to update the accounts, one by one.
 
 As a completely different automation method, if you are familiar with Terraform, you can [provision accounts with AWS Control Tower Account Factory for Terraform (AFT)](taf-account-provisioning.md).
 
@@ -143,7 +143,7 @@ To enroll an existing member account using the `ProvisionProduct` API, the `AWSC
 }
 ```
 
-For more information, see the [API reference for Service Catalog](https://docs.aws.amazon.com//servicecatalog/latest/dg/API_ProvisionProduct.html).
+For more information, see the [API reference for Service Catalog](https://docs.aws.amazon.com/servicecatalog/latest/dg/API_ProvisionProduct.html).
 
 **Note**
 Notice that the format of the input string for the value of `ManagedOrganizationalUnit` has changed from `OU_NAME` to `OU_NAME (OU_ID)`. The video that follows does not mention this change.

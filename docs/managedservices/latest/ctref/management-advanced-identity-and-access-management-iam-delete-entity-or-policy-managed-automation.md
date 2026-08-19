@@ -14,8 +14,6 @@ Delete Identity and Access Management (IAM) users, roles or policies.
 ## Change Type Details
 <a name="ct-30j78u6li9aqr-MAId-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-30j78u6li9aqr |

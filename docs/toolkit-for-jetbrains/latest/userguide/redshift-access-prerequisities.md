@@ -16,8 +16,6 @@ Before you start can interacting with an Amazon Redshift cluster using AWS Toolk
 
 When connecting to a cluster using AWS Toolkit for JetBrains, users can choose to authenticate using IAM credentials or AWS Secrets Manager. The following table describes key features and information resources for both options:
 
-****
-
 | Authentication methods | How it works | More information |
 | --- | --- | --- |
 | Connect with IAM credentials | With IAM database authentication, you don't need to store user credentials in the database because authentication is managed externally using AWS Identity and Access Management (IAM) credentials.<br />By default, IAM database authentication is disabled on database instances. You can enable IAM database authentication (or disable it again) using the AWS Management Console, AWS CLI, or the API.  |  + [Identity and access management in Amazon Redshift](https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-iam-authentication-access-control.html) in the *Amazon Redshift Management Guide*.   |

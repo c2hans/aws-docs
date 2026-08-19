@@ -9,17 +9,17 @@ If you are planning to use customer managed key to encrypt your custom imported 
 
 1. Create a customer managed key with the AWS Key Management Service.
 
-1. Attach a [resource-based policy](https://docs.aws.amazon.com//IAM/latest/UserGuide/access_policies_identity-vs-resource.html) with permissions for the specified-roles to create and use custom imported models.
+1. Attach a [resource-based policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_identity-vs-resource.html) with permissions for the specified-roles to create and use custom imported models.
 
 **Create a customer managed key**
 
-First ensure that you have `CreateKey` permissions. Then follow the steps at [creating keys](https://docs.aws.amazon.com//kms/latest/developerguide/create-keys.html) to create a customer managed keys either in the AWS KMS console or the [CreateKey](https://docs.aws.amazon.com/kms/latest/APIReference/API_CreateKey.html) API operation. Make sure to create a symmetric encryption key.
+First ensure that you have `CreateKey` permissions. Then follow the steps at [creating keys](https://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html) to create a customer managed keys either in the AWS KMS console or the [CreateKey](https://docs.aws.amazon.com/kms/latest/APIReference/API_CreateKey.html) API operation. Make sure to create a symmetric encryption key.
 
 Creation of the key returns an `Arn` for the key that you can use as the `importedModelKmsKeyId ` when importing a custom model with custom model import.
 
 **Create a key policy and attach it to the customer managed key**
 
-Key policies are [resource-based policy](https://docs.aws.amazon.com//IAM/latest/UserGuide/access_policies_identity-vs-resource.html) that you attach to your customer managed key to control access to it. Every customer managed key must have exactly one key policy, which contains statements that determine who can use the key and how they can use it. You can specify a key policy when you create your customer managed key. You can modify the key policy at any time, but there might be a brief delay before the change becomes available throughout AWS KMS. For more information, see [Managing access to customer managed keys](https://docs.aws.amazon.com//kms/latest/developerguide/control-access-overview.html#managing-access) in the *AWS Key Management Service Developer Guide*.
+Key policies are [resource-based policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_identity-vs-resource.html) that you attach to your customer managed key to control access to it. Every customer managed key must have exactly one key policy, which contains statements that determine who can use the key and how they can use it. You can specify a key policy when you create your customer managed key. You can modify the key policy at any time, but there might be a brief delay before the change becomes available throughout AWS KMS. For more information, see [Managing access to customer managed keys](https://docs.aws.amazon.com/kms/latest/developerguide/control-access-overview.html#managing-access) in the *AWS Key Management Service Developer Guide*.
 
 **Encrypt an imported custom model**
 

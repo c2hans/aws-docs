@@ -123,8 +123,6 @@ The [Amazon Web Services](http://www.youtube.com/user/AmazonWebServices) channel
 
 The AWS Flow Framework for Ruby is no longer under active development. While existing code will continue to work indefinitely, there will be no new features or versions. This topic will cover usage and migration options to continue working with Amazon SWF, and information on how to migrate to Step Functions.
 
-****
-
 | Option | Description |
 | --- | --- |
 | [Continue to use the Ruby Flow Framework](#continue-to-use-ruby) | For now, the Ruby Flow Framework will continue to work. If you do nothing, your code will continue to function as it is. Plan to migrate off of the AWS Flow Framework for Ruby in the near future. |

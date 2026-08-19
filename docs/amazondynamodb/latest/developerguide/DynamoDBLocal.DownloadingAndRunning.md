@@ -19,7 +19,6 @@ Follow these steps to set up and run DynamoDB on your computer.
 **To set up DynamoDB on your computer**
 
 1. Download DynamoDB local for free from one of the following locations.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.DownloadingAndRunning.html)
 **Important**
  To run DynamoDB v2.6.0 or greater on your computer, you must have the Java Runtime Environment (JRE) version 17.x or newer. The application doesn't run on earlier JRE versions.

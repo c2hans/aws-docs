@@ -24,8 +24,6 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_ds-data-actions-as-permissions).
 
-****
-
 - **   AddGroupMember  **
   - **IAM action:**  [ds-data:AddGroupMember](#list_ds-data-action-AddGroupMember)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [ds:AccessDSData](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/UsingWithDS_IAM_ResourcePermissions.html)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Permissions management, Write
@@ -100,8 +98,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
 <a name="list_ds-data-actions-as-permissions"></a>
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
-
-****
 
 - **   [AddGroupMember](https://docs.aws.amazon.com/directoryservicedata/latest/DirectoryServiceDataAPIReference/API_AddGroupMember.html)  **
   - **Description:** Grants permission to add a member to a group on a directory
@@ -210,8 +206,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
 
-****
-
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
 |  [directory](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/IAM_Auth_Access_Overview.html)  | arn:${Partition}:ds:${Region}:${Account}:directory/${DirectoryId} | [aws:ResourceTag/${TagKey}](#list_ds-data-aws_ResourceTag___TagKey_) |
@@ -220,8 +214,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_ds-data-policy-keys"></a>
 
 AWS Directory Service Data defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

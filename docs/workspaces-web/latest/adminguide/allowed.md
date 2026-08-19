@@ -9,8 +9,6 @@ For users to be able to access web portals from their local browser, you must ad
 
 In the following table, replace {{{region}}} with the code of the operating web portal's Region. For example, s3.{{{region}}}.amazonaws.com should be s3.eu-west-1.amazonaws.com for a web portal the Europe (Ireland) region. For a list of Region codes, see [Amazon WorkSpaces Secure Browser endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/workspacesweb.html).
 
-****
-
 | Category | Domain or IP address |
 | --- | --- |
 | WorkSpaces Secure Browser streaming assets | s3.{{{region}}}.amazonaws.com<br />s3.amazonaws.com<br />appstream2.{{{region}}}.aws.amazon.com<br />\*.amazonappstream.com<br />\*.shortbread.aws.dev |

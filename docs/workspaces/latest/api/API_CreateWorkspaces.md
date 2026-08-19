@@ -42,6 +42,7 @@ Review your running mode to ensure you are using one that is optimal for your ne
                "Mode": "{{string}}",
                "PreferredProtocol": "{{string}}"
             },
+            "NestedVirtualizationEnabled": {{boolean}},
             "OperatingSystemName": "{{string}}",
             "Protocols": [ "{{string}}" ],
             "RootVolumeSizeGib": {{number}},
@@ -95,6 +96,7 @@ Required: Yes
                   "Mode": "string",
                   "PreferredProtocol": "string"
                },
+               "NestedVirtualizationEnabled": boolean,
                "OperatingSystemName": "string",
                "Protocols": [ "string" ],
                "RootVolumeSizeGib": number,
@@ -153,6 +155,7 @@ Required: Yes
                "Mode": "string",
                "PreferredProtocol": "string"
             },
+            "NestedVirtualizationEnabled": boolean,
             "OperatingSystemName": "string",
             "Protocols": [ "string" ],
             "RootVolumeSizeGib": number,

@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsi
 
 AWS Import Export Disk Service provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="importexport-GetShippingLabel"></a>[GetShippingLabel](https://docs.aws.amazon.com/AWSImportExport/latest/DG/WebGetShippingLabel.html) | This action generates a pre-paid shipping label that you will use to ship your device to AWS for processing. | Read |

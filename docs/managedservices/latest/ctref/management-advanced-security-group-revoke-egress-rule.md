@@ -14,8 +14,6 @@ Revoke the egress rule for the specified security group (SG). You must specify t
 ## Change Type Details
 <a name="ct-111fhplhx9axe-MASr-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-111fhplhx9axe |

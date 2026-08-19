@@ -14,8 +14,6 @@ Remove a certificate from the specified Network Load Balancer (NLB) listener. Us
 ## Change Type Details
 <a name="ct-3929xwf222jri-MANr-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-3929xwf222jri |

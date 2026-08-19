@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awse
 
 AWS Elastic Load Balancing provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="elasticloadbalancing-DescribeInstanceHealth"></a>[DescribeInstanceHealth](https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIReference/API_DescribeInstanceHealth.html) | Describe the state of the specified instances with respect to the specified load balancer | Read |

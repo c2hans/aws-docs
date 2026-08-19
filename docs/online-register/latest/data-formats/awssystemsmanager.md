@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awss
 
 AWS Systems Manager provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="ssm-DescribeActivations"></a>[DescribeActivations](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_DescribeActivations.html) | View details about a specified managed instance activation, such as when it was created and the number of instances registered using the activation | Read |

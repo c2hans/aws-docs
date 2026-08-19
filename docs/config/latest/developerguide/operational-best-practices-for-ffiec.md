@@ -9,8 +9,6 @@ Conformance packs provide a general-purpose compliance framework designed to ena
 
 The following provides a sample mapping between the Federal Financial Institutions Examination Council (FFIEC) Cyber Security Assessment Tool domains and AWS managed Config rules. Each Config rule applies to a specific AWS resource, and relates to one or more FFIEC Cyber Security Assessment Tool controls. A FFIEC Cyber Security Assessment Tool control can be related to multiple Config rules. Refer to the table below for more detail and guidance related to these mappings.
 
-****
-
 | Control ID  | Control Description  | AWS Config Rule  | Guidance  |
 | --- | --- | --- | --- |
 | D1.G.IT.B.1 | An inventory of organizational assets (for example, hardware, software, data, and systems hosted externally) is maintained. | [ec2-instance-managed-by-systems-manager](https://docs.aws.amazon.com/config/latest/developerguide/ec2-instance-managed-by-systems-manager.html) | An inventory of the software platforms and applications within the organization is possible by managing Amazon Elastic Compute Cloud (Amazon EC2) instances with AWS Systems Manager. Use AWS Systems Manager to provide detailed system configurations, operating system patch levels, services name and type, software installations, application name, publisher and version, and other details about your environment. |

@@ -14,8 +14,6 @@ Update the properties of an existing AWS Application Load Balancer (ALB) that wa
 ## Change Type Details
 <a name="ct-1a1zzgi2nb83d-MAAu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1a1zzgi2nb83d |

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/paymen
 # How AgentCore payments works
 <a name="payments-how-it-works"></a>
 
-Amazon Bedrock AgentCore payments offers payment connection, wallet management, payment limits, payment processing, and payment observability. Using the components and workflows described on this page, you can configure payment providers, connect to external wallet infrastructure, and enable your agents to autonomously pay for APIs, MCP servers, and web content using the x402 protocol.
+Amazon Bedrock AgentCore payments offers payment connection, wallet management, payment limits, payment processing, and payment observability. Using the components and workflows described on this page, you can configure payment providers, connect to external wallet infrastructure, and enable your agents to autonomously pay for APIs, MCP servers, and web content using the x402 protocol or the Machine Payments Protocol (MPP).
 
 ## PaymentManager
 <a name="payments-how-it-works-payment-manager"></a>
@@ -54,7 +54,7 @@ Payment sessions represent individual payment contexts between an agent and an e
 
 Payment instruments represent the end user’s payment credentials, such as a crypto wallet address. Each instrument is associated with a specific blockchain network and has an `INITIATED`, `ACTIVE`, `FAILED`, or `DELETED` status.
 
-At runtime, the agent creates a session and instrument, then calls `ProcessPayment` when the agent encounters a paid resource. The service orchestrates the full payment lifecycle (payment limit check, secure connection to wallet, and transaction signing across both x402 v1 and v2) through the configured PaymentConnector.
+At runtime, the agent creates a session and instrument, then calls `ProcessPayment` when the agent encounters a paid resource. The service orchestrates the full payment lifecycle (payment limit check, secure connection to wallet, and transaction signing across both x402 v1 and v2 and the Machine Payments Protocol (MPP)) through the configured PaymentConnector.
 
 For more information about data plane operations, see [Processing payments](payments-process-payment.md). For the complete API schemas, see [CreatePaymentSession](https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/API_CreatePaymentSession.html), [CreatePaymentInstrument](https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/API_CreatePaymentInstrument.html), and [ProcessPayment](https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/API_ProcessPayment.html) in the API Reference.
 
@@ -111,6 +111,8 @@ The following steps describe the runtime flow when an agent accesses a paid reso
 1.  **Verification and settlement** — The merchant verifies the payment proof and settles the transaction on-chain. Upon successful verification, the merchant returns the requested content.
 
 1.  **State update** — AgentCore payments commits the transaction and updates the session spending ledger. If any step fails, the payment limit reservation is released and the transaction is recorded as `FAILED`.
+
+When the agent uses the Machine Payments Protocol (MPP) instead of x402, the flow is the same except for the challenge and credential headers. With MPP, the merchant returns the payment challenge in the `WWW-Authenticate: Payment` header rather than an x402 payload. The agent then retries the original request with the signed credential in the `Authorization` header rather than the `X-PAYMENT` header.
 
 ## Observability
 <a name="payments-how-it-works-observability"></a>

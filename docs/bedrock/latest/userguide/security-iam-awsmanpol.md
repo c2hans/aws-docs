@@ -275,6 +275,7 @@ You can attach the [AmazonBedrockLimitedAccess](https://docs.aws.amazon.com/aws-
   + Creating and refining Automated Reasoning policies (create, build, refine, and test policies).
   + Deleting resources.
   + Invoking models on all resources.
+  + Retrieving and canceling responses that the Responses API stored.
 + The `DescribeKey` statement allows you to view information about KMS keys across all regions and accounts, as long as the policies on the keys permit you to do so.
 + The `APIsWithAllResourceAccess` statement allows you to:
   + List IAM roles.
@@ -349,6 +350,7 @@ View details about updates to AWS managed policies for Amazon Bedrock since this
 
 | Change | Description | Date |
 | --- | --- | --- |
+| [AmazonBedrockLimitedAccess](#security-iam-awsmanpol-AmazonBedrockLimitedAccess) – Update to an existing policy | Amazon Bedrock added the `bedrock:CancelInvoke` action so that a role can cancel a response that the [Responses API](bedrock-mantle.md#bedrock-mantle-responses) is still generating. `bedrock:GetInvoke` is already covered by the `bedrock:Get*` action in this policy. `bedrock:DeleteInvoke` is not included, because deleting a stored response destroys data — grant that action explicitly to the roles that need it. | August 13, 2026 |
 | [AmazonBedrockMantleFullAccess](#security-iam-awsmanpol-AmazonBedrockMantleFullAccess) – New policy | Amazon Bedrock added a new policy to grant full access to all Amazon Bedrock Mantle operations. | December 3, 2025 |
 | [AmazonBedrockMantleReadOnly](#security-iam-awsmanpol-AmazonBedrockMantleReadOnly) – New policy | Amazon Bedrock added a new policy to grant read-only access to Amazon Bedrock Mantle resources. | December 3, 2025 |
 | [AmazonBedrockMantleInferenceAccess](#security-iam-awsmanpol-AmazonBedrockMantleInferenceAccess) – New policy | Amazon Bedrock added a new policy to grant inference access to Amazon Bedrock Mantle models. | December 3, 2025 |

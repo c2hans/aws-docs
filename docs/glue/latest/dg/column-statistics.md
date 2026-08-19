@@ -26,6 +26,9 @@ You can configure to run column statistics generation task using AWS Glue consol
 **Note**
 If you're using Lake Formation permissions to control access to the table, the role assumed by the column statistics task requires full table access to generate statistics.
 
+**Note**
+Column statistics do not support Iceberg v3 data types, including VARIANT, UNKNOWN, Geography, and Geometry. Columns with these data types are skipped during statistics generation.
+
  The following video demonstrates how to enhance query performance using column statistics.
 
 [![AWS Videos](http://img.youtube.com/vi/zUHEXJdHUxs?si=HjyhpoALR6RXJz2i/0.jpg)](http://www.youtube.com/watch?v=zUHEXJdHUxs?si=HjyhpoALR6RXJz2i)

@@ -43,7 +43,13 @@ Provide a number to specify the maximum number of simultaneous destroy operation
  *Default value*: `1` <a name="ref-cli-cmd-destroy-options-exclusively"></a>
 
  `--exclusively, -e <BOOLEAN>`
-Only destroy requested stacks and don’t include dependencies.<a name="ref-cli-cmd-destroy-options-force"></a>
+Only destroy requested stacks and don’t include dependencies.<a name="ref-cli-cmd-destroy-options-express"></a>
+
+ `--express <BOOLEAN>`
+Destroy stacks using CloudFormation express mode. Express mode allows for faster deletions through CloudFormation by reporting stack operations as completed as soon as CloudFormation applies the resource configuration. However, CloudFormation reports success without waiting for resources to stabilize. Additionally, express mode does not perform rollback automatically and will leave stacks in a failed state if something goes wrong.
+For more information, see [express mode](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cloudformation-express-mode.html) in the * AWS CloudFormation User Guide*.
+Express mode does not wait for stabilization before reporting success and does not perform automatic rollback upon failure. We do not recommend express mode for production stack teardown. Express mode is targeted towards iterative deployments you would perform while developing your application.
+ *Default value*: `false` <a name="ref-cli-cmd-destroy-options-force"></a>
 
  `--force, -f <BOOLEAN>`
 Do not ask for confirmation before destroying the stacks.<a name="ref-cli-cmd-destroy-options-help"></a>

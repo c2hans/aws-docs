@@ -126,9 +126,21 @@ HTTP Status Code: 409
 The exception that occurs when the service encounters an unexpected internal error. This is a temporary condition that will resolve itself with retries. We recommend implementing exponential backoff retry logic in your application.
 HTTP Status Code: 500
 
+ ** ResourceNotFoundException **
+The exception that occurs when the specified resource does not exist. This can happen when using an invalid identifier or when trying to access a resource that has been deleted.
+HTTP Status Code: 404
+
  ** ServiceQuotaExceededException **
 The exception that occurs when the request would cause a service quota to be exceeded. Review your service quotas and either reduce your request rate or request a quota increase.
 HTTP Status Code: 402
+
+ ** SubscriptionRequiredException **
+Returned when you attempt a wallet operation against a Coinbase Marketplace connector whose account does not hold an active Marketplace subscription and is not within the legacy exception period. Subscribe to the Marketplace listing before you retry the operation.
+ ** productName **
+The name of the product that requires a Marketplace subscription.
+ ** subscriptionUrl **
+The URL to the Marketplace listing where you can subscribe.
+HTTP Status Code: 403
 
  ** ThrottlingException **
 The exception that occurs when the request was denied due to request throttling. This happens when you exceed the allowed request rate for an operation. Reduce the frequency of requests or implement exponential backoff retry logic in your application.

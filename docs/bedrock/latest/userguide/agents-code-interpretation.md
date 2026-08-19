@@ -36,8 +36,6 @@ To use the code interpretation in Amazon Bedrock, perform the following steps,
 
 Code Interpretation for Amazon Bedrock Agents is supported in the following Regions:
 
-****
-
 | Region |
 | --- |
 | US East (N.Virginia) |

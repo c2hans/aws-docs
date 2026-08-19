@@ -17,8 +17,6 @@ Following, you can find out about quotas when working with Amazon FSx for Lustre
 
 Following are the quotas for Amazon FSx for Lustre per AWS account, per AWS Region, which you can increase.
 
-****
-
 | Resource | Default | Description |
 | --- | --- | --- |
 | Lustre Persistent 1 file systems | 100 | The maximum number of Amazon FSx for Lustre Persistent 1 file systems that you can create in this account. |
@@ -52,8 +50,6 @@ For more information, see [Requesting a quota increase](https://docs.aws.amazon.
 <a name="limits-MFS-resources-file-system"></a>
 
 Following are the limits on Amazon FSx for Lustre resources for each file system in an AWS Region.
-
-****
 
 | Resource | Limit per file system |
 | --- | --- |

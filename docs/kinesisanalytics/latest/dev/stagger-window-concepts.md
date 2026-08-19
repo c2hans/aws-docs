@@ -50,8 +50,6 @@ In the following diagram, an application is counting the number of trades it rec
 
 The preceding diagram has the following events.
 
-****
-
 | ROWTIME | EVENT\_TIME | TICKER\_SYMBOL |
 | --- | --- | --- |
 | 11:00:20 | 11:00:10 | AMZN |
@@ -60,8 +58,6 @@ The preceding diagram has the following events.
 | 11:01:15 | 11:01:05 | AMZN |
 
 The result set from the tumbling window application looks similar to the following.
-
-****
 
 | ROWTIME | EVENT\_TIME | TICKER\_SYMBOL | COUNT |
 | --- | --- | --- | --- |
@@ -108,8 +104,6 @@ In the following diagram, events are aggregated by event time and ticker symbol 
 
 The preceding diagram has the following events, which are the same events as the tumbling window application analyzed:
 
-****
-
 | ROWTIME | EVENT\_TIME | TICKER\_SYMBOL |
 | --- | --- | --- |
 | 11:00:20 | 11:00:10 | AMZN |
@@ -118,8 +112,6 @@ The preceding diagram has the following events, which are the same events as the
 | 11:01:15 | 11:01:05 | AMZN |
 
 The result set from the stagger window application looks similar to the following.
-
-****
 
 | ROWTIME | EVENT\_TIME | TICKER\_SYMBOL | Count |
 | --- | --- | --- | --- |

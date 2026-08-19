@@ -189,7 +189,7 @@ Based on our experience working with many customers, the vast majority of trust 
     Resolve-DnsName -Name 'example.local' -DnsOnly
     ```
 
-You should also look through the message explanations in the [Trust creation status reasons guide](https://docs.aws.amazon.com//directoryservice/latest/admin-guide/ms_ad_troubleshooting_trust_creation.html) in the Directory Service documentation.
+You should also look through the message explanations in the [Trust creation status reasons guide](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_ad_troubleshooting_trust_creation.html) in the Directory Service documentation.
 
 ## Troubleshoot billing issues for user subscriptions
 <a name="billing_user_subscriptions"></a>

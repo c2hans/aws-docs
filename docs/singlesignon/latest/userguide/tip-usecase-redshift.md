@@ -9,7 +9,7 @@ The steps to enable trusted identity propagation depend on whether your users in
 
 ![Diagram of trusted identity propagation using Amazon Redshift, Quick, Lake Formation, and IAM Identity Center](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/rs-tip-diagram.png)
 
-When trusted identity propagation to Amazon Redshift is enabled, Redshift administrators can configure Redshift to [automatically create roles](https://docs.aws.amazon.com//redshift/latest/mgmt/redshift-iam-access-control-sso-autocreate.html) for IAM Identity Center as the identity provider, map Redshift roles to groups in IAM Identity Center, and use [Redshift role-based access control to grant access](https://docs.aws.amazon.com//redshift/latest/dg/r_tutorial-RBAC.html).
+When trusted identity propagation to Amazon Redshift is enabled, Redshift administrators can configure Redshift to [automatically create roles](https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-iam-access-control-sso-autocreate.html) for IAM Identity Center as the identity provider, map Redshift roles to groups in IAM Identity Center, and use [Redshift role-based access control to grant access](https://docs.aws.amazon.com/redshift/latest/dg/r_tutorial-RBAC.html).
 
 ## Supported client-facing applications
 <a name="redshift-mgn-apps-and-customer-apps"></a>
@@ -17,7 +17,7 @@ When trusted identity propagation to Amazon Redshift is enabled, Redshift admini
 **AWS managed applications**
 The following AWS managed client-facing applications support trusted identity propagation to Amazon Redshift:
 + [Amazon Redshift Query Editor V2](setting-up-tip-redshift.md)
-+ [Quick](https://docs.aws.amazon.com//quicksight/latest/user/redshift-trusted-identity-propagation.html)
++ [Quick](https://docs.aws.amazon.com/quicksight/latest/user/redshift-trusted-identity-propagation.html)
 
 **Note**
 If you are using Amazon Redshift Spectrum to access external databases or tables in AWS Glue Data Catalog, consider setting up [Lake Formation](tip-tutorial-lf.md) and [Amazon S3 Access Grants](tip-tutorial-s3.md) to provide fine-grain access control.
@@ -25,6 +25,6 @@ If you are using Amazon Redshift Spectrum to access external databases or tables
 **Customer managed applications**
 The following customer managed applications support trusted identity propagation to Amazon Redshift:
 + **Tableau** including Tableau Desktop, Tableau Server, and Tableau Prep
-  + To enable trusted identity propagation for users of Tableau, refer to [Integrate Tableau and Okta with Amazon Redshift using IAM Identity Center](https://aws.amazon.com/blogs//big-data/integrate-tableau-and-okta-with-amazon-redshift-using-aws-iam-identity-center/) in the *AWS Big Data Blog*.
+  + To enable trusted identity propagation for users of Tableau, refer to [Integrate Tableau and Okta with Amazon Redshift using IAM Identity Center](https://aws.amazon.com/blogs/big-data/integrate-tableau-and-okta-with-amazon-redshift-using-aws-iam-identity-center/) in the *AWS Big Data Blog*.
 + **SQL Clients** (DBeaver and DBVisualizer)
-  + To enable trusted identity propagation for users of SQL Clients (DBeaver and DBVisualizer), refer to [Integrate Identity Provider (IdP) with Amazon Redshift Query Editor V2 and SQL Client using IAM Identity Center for seamless Single Sign-On](https://aws.amazon.com/blogs//big-data/integrate-identity-provider-idp-with-amazon-redshift-query-editor-v2-and-sql-client-using-aws-iam-identity-center-for-seamless-single-sign-on/) in the *AWS Big Data Blog*.
+  + To enable trusted identity propagation for users of SQL Clients (DBeaver and DBVisualizer), refer to [Integrate Identity Provider (IdP) with Amazon Redshift Query Editor V2 and SQL Client using IAM Identity Center for seamless Single Sign-On](https://aws.amazon.com/blogs/big-data/integrate-identity-provider-idp-with-amazon-redshift-query-editor-v2-and-sql-client-using-aws-iam-identity-center-for-seamless-single-sign-on/) in the *AWS Big Data Blog*.

@@ -237,8 +237,6 @@ The following JSON objects show the minimal fields required in the [KnowledgeBas
 
 The following table describes the filter types that you can use:
 
-****
-
 | Field | Supported value data types | Filtered results |
 | --- | --- | --- |
 | equals | string, number, boolean | Attribute matches the value you provide |
@@ -252,8 +250,6 @@ The following table describes the filter types that you can use:
 | startsWith | string | Attribute starts with the string you provide (only supported for Amazon OpenSearch Serverless vector stores) |
 
 To combine filter types, you can use one of the following logical operators:
-
-****
 
 | Field | Maps to | Filtered results |
 | --- | --- | --- |

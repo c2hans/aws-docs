@@ -18,8 +18,6 @@ SageMaker offers two approaches for customizing Amazon Nova models:
 
 **Code-based experience** – Use the SageMaker Python SDK, Nova SDK and training recipes to customize models programmatically. This approach offers greater flexibility, allowing you to configure advanced hyperparameters, integrate with CI/CD pipelines, and automate training workflows. The code-based experience is recommended for production workloads, complex customization requirements, and teams with established MLOps practices.
 
-****
-
 | Approach | Best for | Key benefits |
 | --- | --- | --- |
 | UI-based | Experimentation, prototyping, quick iterations | Simple setup, guided workflow, no coding required |
@@ -35,8 +33,6 @@ AWS offers three platforms for customizing Amazon Nova models, each designed for
 **SageMaker training jobs** – Provides a fully managed environment for customizing Amazon Nova models where you don't need to create or maintain any clusters. The service automatically handles all infrastructure provisioning, scaling, and resource management, allowing you to focus on configuring your training parameters and submitting your job. This platform offers a balance between ease of use and flexibility, supporting techniques like Parameter Efficient Fine-tuning (PEFT), Full rank fine tuning, and Reinforcement Fine-Tuning (RFT).
 
 **SageMaker HyperPod** – Offers a specialized environment for large-scale distributed training by requiring you to create and manage EKS clusters with restricted instance groups (RIGs). This platform gives you maximum flexibility in configuring your training environment with specialized GPU instances and integrated Amazon FSx for Lustre storage, making it particularly well-suited for advanced distributed training scenarios, ongoing model development, and enterprise-scale customization workloads.
-
-****
 
 | Platform | Complexity | Flexibility | Best for |
 | --- | --- | --- | --- |

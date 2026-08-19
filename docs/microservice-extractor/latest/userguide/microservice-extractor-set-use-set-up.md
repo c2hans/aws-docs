@@ -17,7 +17,7 @@ Perform the following steps to set up AWS Microservice Extractor for .NET.
 **Note**
 Your source code never leaves your local system. Microservice Extractor will upload source code metadata to an Amazon S3 bucket you have designated from your AWS account. Microservice Extractor’s scalable backend will process source code metadata ephemerally and write the results in the same S3 bucket. Please see the Data Privacy FAQ for more information.
 
-1. Select either an AWS named profile or existing AWS CLI/SDK credentials. You can select an AWS named profile from the dropdown list, update an existing named profile, or **Add a named profile**. Microservice Extractor uses the credentials from your AWS profile to share your Microservice Extractor usage data with AWS to make the Microservice Extractor tool better. For more information about named profiles, see [Named profiles for the AWS CLI](https://docs.aws.amazon.com//cli/latest/userguide/cli-configure-files.html#cli-configure-files-using-profiles) in the *AWS CLI User Guide*.
+1. Select either an AWS named profile or existing AWS CLI/SDK credentials. You can select an AWS named profile from the dropdown list, update an existing named profile, or **Add a named profile**. Microservice Extractor uses the credentials from your AWS profile to share your Microservice Extractor usage data with AWS to make the Microservice Extractor tool better. For more information about named profiles, see [Named profiles for the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html#cli-configure-files-using-profiles) in the *AWS CLI User Guide*.
 **Note**
 When using Single Sign-on capabilities such as AWS IAM Identity Center be sure to choose the option for AWS CLI/SDK credentials.
 

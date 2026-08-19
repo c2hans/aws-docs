@@ -21,7 +21,7 @@ If the Firehose API encounters a timeout, perform the following steps to test en
     ```
     tcping firehose.us-east-2.amazonaws.com 443
     ```
-  + If it appears the network setting is correct and the following command fails, check whether the [Amazon CA (Certficate Authority)](https://docs.aws.amazon.com//acm/latest/userguide/acm-overview.html) is in the trust chain.
+  + If it appears the network setting is correct and the following command fails, check whether the [Amazon CA (Certficate Authority)](https://docs.aws.amazon.com/acm/latest/userguide/acm-overview.html) is in the trust chain.
 
     For example:
 

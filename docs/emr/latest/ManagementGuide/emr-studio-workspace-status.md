@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-studio-wo
 
 After you create an EMR Studio Workspace, it appears as a row in the **Workspaces** list in your Studio with its name, status, creation time, and last modified timestamp. The following table describes Workspace statuses.
 
-****
-
 | Status | Description |
 | --- | --- |
 | Starting | The Workspace is being prepared, but is not yet ready to use. You can't open a Workspace when its status is Starting. |

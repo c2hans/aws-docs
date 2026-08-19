@@ -13,7 +13,7 @@ When you hibernate an instance, Amazon EC2 signals the operating system to perfo
 
 You can hibernate an instance only if it's [enabled for hibernation](enabling-hibernation.md) and it meets the [hibernation prerequisites](hibernating-prerequisites.md).
 
-If an instance or application takes a long time to bootstrap and build a memory footprint in order to become fully productive, you can use hibernation to pre-warm the instance. To pre-warm the instance, you:
+If an instance or application takes a long time to bootstrap and build a memory footprint to become fully productive, you can use hibernation to pre-warm the instance. To pre-warm the instance, you:
 
 1. Launch it with hibernation enabled.
 

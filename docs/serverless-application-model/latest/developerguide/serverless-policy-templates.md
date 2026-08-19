@@ -100,8 +100,6 @@ The following example contains the AmazonSQSFullAcess policy and [DynamoDBCrudPo
 
 The following is a table of the available policy templates.
 
-****
-
 | Policy Template | Description |
 | --- | --- |
 | [AcmGetCertificatePolicy](serverless-policy-template-list.md#acm-get-certificate-policy) | Gives a permission to read a certificate from AWS Certificate Manager. |

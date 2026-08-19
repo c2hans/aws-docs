@@ -10,9 +10,9 @@ To update the server-side encryption type of more than one Amazon S3 object with
 ## Using the AWS CLI
 <a name="batch-ops-example-cli-update-job"></a>
 
-To run the following commands, you must have the AWS CLI installed and configured. If you don’t have the AWS CLI installed, see [Install or update to the latest version of the AWS CLI](https://docs.aws.amazon.com//cli/latest/userguide/getting-started-install.html) in the *AWS Command Line Interface User Guide*.
+To run the following commands, you must have the AWS CLI installed and configured. If you don’t have the AWS CLI installed, see [Install or update to the latest version of the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) in the *AWS Command Line Interface User Guide*.
 
-Alternatively, you can run AWS CLI commands from the console by using AWS CloudShell. AWS CloudShell is a browser-based, pre-authenticated shell that you can launch directly from the AWS Management Console. For more information, see [What is CloudShell?](https://docs.aws.amazon.com//cloudshell/latest/userguide/welcome.html) and [Getting started with AWS CloudShell](https://docs.aws.amazon.com//cloudshell/latest/userguide/getting-started.html) in the *AWS CloudShell User Guide*.
+Alternatively, you can run AWS CLI commands from the console by using AWS CloudShell. AWS CloudShell is a browser-based, pre-authenticated shell that you can launch directly from the AWS Management Console. For more information, see [What is CloudShell?](https://docs.aws.amazon.com/cloudshell/latest/userguide/welcome.html) and [Getting started with AWS CloudShell](https://docs.aws.amazon.com/cloudshell/latest/userguide/getting-started.html) in the *AWS CloudShell User Guide*.
 
 **Example 1 – Create a Batch Operations job that updates encrypted objects from one AWS KMS key to another KMS key**
 The following example shows how to create an S3 Batch Operations job that updates the encryption settings for multiple objects in your general purpose bucket. This command creates a job that changes objects encrypted with one AWS Key Management Service (AWS KMS) key to use a different KMS key. This job also generates and saves a manifest of the affected objects and creates a report of the results. To use this command, replace the `{{user input placeholders}}` with your own information.

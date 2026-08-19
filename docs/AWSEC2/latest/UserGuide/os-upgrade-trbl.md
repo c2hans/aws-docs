@@ -10,7 +10,7 @@ AWS provides upgrade support for issues or problems with the Upgrade Helper Serv
 After the upgrade, the instance might temporarily experience higher than average CPU utilization while the .NET Runtime Optimization service optimizes the .NET framework. This is expected behavior.
 
 If the instance has not passed all status checks after several hours, check the following.
-+ If you upgraded to Windows Server 2008 and all status checks fail after several hours, the upgrade may have failed and be presenting a prompt to **Click OK** to confirm rolling back. Because the console is not accessible at this state, there is no way to click the button. To get around this, perform a reboot via the Amazon EC2 console or API. The reboot takes ten minutes or more to initiate. The instance might become available after 25 minutes.
++ If you upgraded to Windows Server 2008 and all status checks fail after several hours, the upgrade may have failed and be presenting a prompt to **Click OK** to confirm rolling back. Because the console is not accessible at this state, there is no way to click the button. To get around this, perform a reboot through the Amazon EC2 console or API. The reboot takes ten minutes or more to initiate. The instance might become available after 25 minutes.
 + Remove applications or server roles from the server and try again.
 
 If the instance does not pass all status checks after removing applications or server roles from the server, do the following.

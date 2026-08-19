@@ -9,7 +9,7 @@ To make full use of Tag Editor, you might need additional permissions to tag res
 + Permissions for individual services so that you can tag resources from those services and include them in resource groups.
 + Permissions that are required to use the Tag Editor console.
 
-If you're an administrator, you can provide permissions for your users by creating policies through the AWS Identity and Access Management (IAM) service. You first create IAM roles, users, or groups, and then apply the policies with the permissions that they need. For information about creating and attaching IAM policies, see [Working with policies](https://docs.aws.amazon.com//IAM/latest/UserGuide/ManagingPolicies.html).
+If you're an administrator, you can provide permissions for your users by creating policies through the AWS Identity and Access Management (IAM) service. You first create IAM roles, users, or groups, and then apply the policies with the permissions that they need. For information about creating and attaching IAM policies, see [Working with policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/ManagingPolicies.html).
 
 ## Permissions for individual services
 <a name="rg-perms-individual-services"></a>
@@ -81,7 +81,7 @@ Alternatively, you could use a denylist strategy that allows access to all resou
 
 ### Adding Tag Editor permissions manually
 <a name="prereqs-permissions-manualadd"></a>
-+ `tag:*` (This permission allows all Tag Editor actions. If you instead want to restrict actions that are available to a user, you can replace the asterisk with a [specific action](https://docs.aws.amazon.com//IAM/latest/UserGuide/list_awsresourcegroups.html), or with a comma-separated list of actions.)
++ `tag:*` (This permission allows all Tag Editor actions. If you instead want to restrict actions that are available to a user, you can replace the asterisk with a [specific action](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awsresourcegroups.html), or with a comma-separated list of actions.)
 + `tag:GetResources`
 + `tag:TagResources`
 + `tag:UntagResources`
@@ -156,13 +156,13 @@ Now that the policy is saved in IAM, you can attach it to other principals, such
 
 AWS services support the following:
 + **Action-based policies** – For example, you can create a policy that allows users to perform `GetTagKeys` or `GetTagValues` operations, but no others.
-+ **Resource-level permissions in policies** – Many services support using [ARNs](https://docs.aws.amazon.com//general/latest/gr/aws-arns-and-namespaces.html) to specify individual resources in the policy.
++ **Resource-level permissions in policies** – Many services support using [ARNs](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html) to specify individual resources in the policy.
 + **Authorization based on tags** – Many services support using resource tags in the condition of a policy. For example, you can create a policy that allows users full access to a group that has the same tag as the users. For more information, see [What is ABAC for AWS?](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction_attribute-based-access-control.html) in the *AWS Identity and Access Management User Guide*.
 + **Temporary credentials** – Users can assume a role with a policy that allows Tag Editor operations.
 
 Tag Editor doesn't use any service-linked roles.
 
 For more information about how Tag Editor integrates with AWS Identity and Access Management (IAM), see the following topics in the *AWS Identity and Access Management User Guide*:
-+ [AWS services that work with IAM](https://docs.aws.amazon.com//IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.html#management_svcs)
++ [AWS services that work with IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.html#management_svcs)
 + [Actions, resources, and condition keys for Tag Editor](https://docs.aws.amazon.com/service-authorization/latest/reference/list_awstageditor.html)
-+ [Controlling access to AWS resources using policies](https://docs.aws.amazon.com//IAM/latest/UserGuide/access_controlling.html)
++ [Controlling access to AWS resources using policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_controlling.html)

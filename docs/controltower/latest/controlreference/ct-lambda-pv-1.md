@@ -21,7 +21,7 @@ This is a preventive control with elective guidance based on service control pol
 
 **Usage considerations**
 This control disallows creation and update of AWS Lambda function URL configurations. It does not prevent deletion of Lambda function URL configurations.
-This control supports configuration. It contains elements that are included by AWS Control Tower conditionally, based on the configuration you select. This control supports the following configuration parameters: **ExemptedPrincipalArns**. For more information, see [Configure controls with parameters](https://docs.aws.amazon.com//controltower/latest/controlreference/control-parameter-concepts.html).
+This control supports configuration. It contains elements that are included by AWS Control Tower conditionally, based on the configuration you select. This control supports the following configuration parameters: **ExemptedPrincipalArns**. For more information, see [Configure controls with parameters](https://docs.aws.amazon.com/controltower/latest/controlreference/control-parameter-concepts.html).
 
  The artifact for this control is the following service control policy (SCP).
 

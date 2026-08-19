@@ -13,7 +13,7 @@ You will need to establish an Amazon VPC peering connection to share your AWS Ma
 Before you begin the steps in this tutorial, you must first do the following:
 + Create two new AWS accounts for testing purposes in the same Region. When you create an AWS account, it automatically creates a dedicated virtual private cloud (VPC) in each account. Take note of the VPC ID in each account. You will need this later.
 + [Create an AWS Managed Microsoft AD](ms_ad_getting_started.md#ms_ad_getting_started_create_directory).
-+ When creating a VPC peering connection, both the directory account owner and directory consumer account will need the necessary permissions to create and accept the peering connection. For more information, see [Example: Create a VPC peering connection](https://docs.aws.amazon.com//vpc/latest/peering/security-iam.html#vpc-peering-iam-create) and [Example: Accept a VPC peering connection](https://docs.aws.amazon.com//vpc/latest/peering/security-iam.html#vpc-peering-iam-accept).
++ When creating a VPC peering connection, both the directory account owner and directory consumer account will need the necessary permissions to create and accept the peering connection. For more information, see [Example: Create a VPC peering connection](https://docs.aws.amazon.com/vpc/latest/peering/security-iam.html#vpc-peering-iam-create) and [Example: Accept a VPC peering connection](https://docs.aws.amazon.com/vpc/latest/peering/security-iam.html#vpc-peering-iam-accept).
 **Note**
 While there are many ways to connect Directory owner and Directory consumer account VPCs, this tutorial will use the VPC peering method. For additional VPC connectivity options, see [Network connectivity](ms_ad_directory_sharing.md#network_connectivity).
 

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/detective/latest/userguide/finding-group
 # Finding group summary powered by generative AI
 <a name="finding-group-summary"></a>
 
-By default, Amazon Detective automatically provides summaries of an individual finding group. The summaries are powered by generative artificial intelligence (generative AI) models hosted on [Amazon Bedrock](https://docs.aws.amazon.com//bedrock/latest/userguide/what-is-bedrock.html). Finding Group Summary is available at no extra cost if Detective is enabled.
+By default, Amazon Detective automatically provides summaries of an individual finding group. The summaries are powered by generative artificial intelligence (generative AI) models hosted on [Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html). Finding Group Summary is available at no extra cost if Detective is enabled.
 
 **Note**
 Beginning February 16th, 2026, Detective's Finding Group Summary feature will automatically select the optimal AWS region (from a grouping of regional endpoints within your geography) to process your finding group data and generate summaries using [Cross-region inference](#fg-summary-cross-region-inference).
@@ -14,7 +14,7 @@ If you do not wish to use this feature, you can disable it from Detective's cons
 By using finding groups, you can examine multiple security findings, as they relate to a potential security event, and identify potential threat actors. Finding group summaries for finding groups builds upon these capabilities. Finding group summaries consume the data for a finding group, rapidly analyze relationships between the findings and affected resources, and then summarize potential threats in natural language. You can leverage these summaries to identify larger security threats, improve investigation efficiency, and shorten the response timelines.
 
 **Note**
-Finding group summaries powered by generative AI may and not always provide completely accurate information. See [AWS Responsible AI Policy](https://aws.amazon.com//machine-learning/responsible-ai/policy/) for more information.
+Finding group summaries powered by generative AI may and not always provide completely accurate information. See [AWS Responsible AI Policy](https://aws.amazon.com/machine-learning/responsible-ai/policy/) for more information.
 
 ## Reviewing finding group summary
 <a name="using-fg-summary"></a>

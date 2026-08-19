@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/timestream/latest/developerguide/timestream-for-influx-getting-started-creating-db-instance.html
 ---
 
-For similar capabilities to Amazon Timestream for LiveAnalytics, consider Amazon Timestream for InfluxDB. It offers simplified data ingestion and single-digit millisecond query response times for real-time analytics. Learn more [here](https://docs.aws.amazon.com//timestream/latest/developerguide/timestream-for-influxdb.html).
+For similar capabilities to Amazon Timestream for LiveAnalytics, consider Amazon Timestream for InfluxDB. It offers simplified data ingestion and single-digit millisecond query response times for real-time analytics. Learn more [here](https://docs.aws.amazon.com/timestream/latest/developerguide/timestream-for-influxdb.html).
 
 # Creating and connecting to a Timestream for InfluxDB instance
 <a name="timestream-for-influx-getting-started-creating-db-instance"></a>
@@ -85,7 +85,7 @@ In this example, you will create a DB instance running the InfluxDB database eng
 1. Choose **Create InfluxDB database**.
 ![Empty InfluxDB databases page with no databases created and Create InfluxDB database button.](http://docs.aws.amazon.com/timestream/latest/developerguide/images/kronos/CreateInfluxDatabase.png)
 
-1. In the **Deployment settings** section, select **Cluster with read replicas**. Choose **View subscription options** to start a subscription for the read replica add-on. For more information, see [Read replica licensing through AWS MarketplaceRead replica licensing terminology](timestream-for-influx-rr-licensing.md).
+1. In the **Deployment settings** section, select **Cluster with read replicas**. Choose **View subscription options** to start a subscription for the read replica add-on. For more information, see [Read replica licensing through AWS Marketplace](timestream-for-influx-rr-licensing.md).
 
 1. In the **Database credentials** section, enter KronosTest-1 for **DB cluster name**.
 

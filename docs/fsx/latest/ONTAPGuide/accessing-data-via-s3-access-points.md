@@ -13,7 +13,7 @@ Each S3 access point attached to an FSx for ONTAP file system has an AWS Identit
 
 You use the Amazon FSx console, CLI, and API to [create an S3 access point and attach](fsxn-creating-access-points.md) it to an FSx for ONTAP volume. The access point allows you to access your file data using the S3 API, though your data continues to reside on your FSx for ONTAP file system and you can continue using the NFS and SMB protocols to access your data alongside the S3 API.
 
-Amazon S3 access points for FSx for ONTAP ﬁle systems deliver latency in the tens of milliseconds range, consistent with S3 bucket access. The throughput and requests per second you can drive to an Amazon FSx file system via the S3 API depends on the file system's provisioned throughput. For more information about file system performance capabilities, see [Amazon FSx for NetApp ONTAP performancePerformance](performance.md)
+Amazon S3 access points for FSx for ONTAP ﬁle systems deliver latency in the tens of milliseconds range, consistent with S3 bucket access. The throughput and requests per second you can drive to an Amazon FSx file system via the S3 API depends on the file system's provisioned throughput. For more information about file system performance capabilities, see [Amazon FSx for NetApp ONTAP performance](performance.md)
 
 **Topics**
 + [AWS Regions with Amazon S3 access points for FSx for ONTAP](#access-points-for-fsx-ontap-supported-regions)

@@ -94,7 +94,7 @@ Before you begin, make sure that you have an IAM role that grants the admin user
 
 You can add keys that already exist in AWS KMS to your Amazon Quick account, so that you can encrypt your Amazon Quick data.
 
-To learn more about how you can create a key to use in Amazon Quick, see the [AWS Key Management Service Developer Guide](https://docs.aws.amazon.com//kms/latest/developerguide/overview.html).
+To learn more about how you can create a key to use in Amazon Quick, see the [AWS Key Management Service Developer Guide](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html).
 
 **To add a new customer managed KMS key to your Amazon Quick account.**
 

@@ -14,8 +14,6 @@ Create an Amazon Elastic Compute Cloud (EC2) instance with up to five additional
 ## Change Type Details
 <a name="ct-1aqsjf86w6vxg-DAEc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1aqsjf86w6vxg |

@@ -12,7 +12,7 @@ Each domain validation requires a CNAME record in DNS. This is the same type of 
 ## How ACME domain validation relates to standard ACM validation
 <a name="acm-acme-dv-comparison"></a>
 
-Both mechanisms use the same CNAME record format and purpose: proving domain ownership by placing a specific record in DNS, as described in [AWS Certificate Manager DNS validationDNS validation](dns-validation.md). In both cases, the CNAME delegates ongoing domain validation to ACM. Because the record points to a target that ACM manages, ACM can re-validate domain ownership over time without further action from you. This is what lets ACM renew certificates automatically. The following list describes the key differences:
+Both mechanisms use the same CNAME record format and purpose: proving domain ownership by placing a specific record in DNS, as described in [AWS Certificate Manager DNS validation](dns-validation.md). In both cases, the CNAME delegates ongoing domain validation to ACM. Because the record points to a target that ACM manages, ACM can re-validate domain ownership over time without further action from you. This is what lets ACM renew certificates automatically. The following list describes the key differences:
 + With standard ACM validation, you establish the CNAME as part of a certificate request, such as a call to `RequestCertificate`.
 + ACME domain validation is a persistent ACM resource that an administrator configures in advance, independent of any individual certificate request.
 + ACME domain validation includes a configurable scope that lets you control whether the endpoint can issue certificates for the exact domain, its subdomains, or wildcard names. For more information, see [Domain validation scope](#acm-acme-dv-scope).

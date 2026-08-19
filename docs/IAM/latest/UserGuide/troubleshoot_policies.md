@@ -11,7 +11,7 @@ Policies are stored in AWS as JSON documents that are attached to principals as 
 
 You can create and edit customer managed policies in the AWS Management Console using both **Visual** and **JSON** editor options. When you view a policy in the AWS Management Console, you can see a summary of the permissions that are granted by that policy. You can use the visual editor and policy summaries to help you diagnose and fix common errors encountered while managing IAM policies.
 
-Keep in mind that all IAM policies are stored using syntax that begins with the rules of [JavaScript Object Notation](https://docs.aws.amazon.com/http://www.json.org) (JSON). You do not have to understand this syntax to create or manage your policies. You can create and edit a policy using the visual editor in the AWS Management Console. To learn more about JSON syntax in IAM policies, see [Grammar of the IAM JSON policy language](reference_policies_grammar.md).
+Keep in mind that all IAM policies are stored using syntax that begins with the rules of [JavaScript Object Notation](http://www.json.org) (JSON). You do not have to understand this syntax to create or manage your policies. You can create and edit a policy using the visual editor in the AWS Management Console. To learn more about JSON syntax in IAM policies, see [Grammar of the IAM JSON policy language](reference_policies_grammar.md).
 
 **Troubleshooting IAM Policy Topics**
 + [Troubleshoot using the visual editor](#troubleshoot_policies-viseditor)

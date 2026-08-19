@@ -14,8 +14,6 @@ Grant permissions to the computer object to update DNS records after failover. F
 ## Change Type Details
 <a name="ct-1eft8s6vdhz0w-MDDu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1eft8s6vdhz0w |

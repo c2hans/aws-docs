@@ -22,7 +22,7 @@ When you create an AWS IoT rule with this action, you must specify the following
 
 `headers`
 MQTT Version 5.0 headers information.
-For more information, see [RepublishAction](https://docs.aws.amazon.com//iot/latest/apireference/API_RepublishAction.html) and [MqttHeaders](https://docs.aws.amazon.com//iot/latest/apireference/API_MqttHeaders.html) in the *AWS API Reference*.
+For more information, see [RepublishAction](https://docs.aws.amazon.com/iot/latest/apireference/API_RepublishAction.html) and [MqttHeaders](https://docs.aws.amazon.com/iot/latest/apireference/API_MqttHeaders.html) in the *AWS API Reference*.
 
 `topic`
 The MQTT topic to which to republish the message.

@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/recording-inge
 This guide provides instructions for importing voice recordings from third-party voice systems into Connect Customer and generating conversational analytics.
 
 **Note**
-Recording ingestion is only available in [Amazon Connect Customer](https://docs.aws.amazon.com//connect/latest/adminguide/enable-nextgeneration-amazonconnect.html) instances.
+Recording ingestion is only available in [Amazon Connect Customer](https://docs.aws.amazon.com/connect/latest/adminguide/enable-nextgeneration-amazonconnect.html) instances.
 
 ## Common use cases
 <a name="recording-ingestion-use-cases"></a>

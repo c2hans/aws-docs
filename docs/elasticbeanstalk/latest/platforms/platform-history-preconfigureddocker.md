@@ -17,8 +17,6 @@ See the [Supported platforms](platforms-supported.md) page for information on th
 
 The following Elastic Beanstalk platform versions for Preconfigured Docker have been current since June 22, 2022:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  ** Glassfish 5.0 (Docker) version 2.18.6** <br /> * 64bit Amazon Linux 2018.03 v2.18.6 running GlassFish 5.0 Java 8 (Preconfigured - Docker) *  | 2018.03.0 | Docker 20.10.13 | Amazon Linux 2018.03 | Java 8 | nginx 1.18.0 | Glassfish 5.0 | public.ecr.aws/j5n5r1l6/aws-eb-glassfish:5.0-al-onbuild-2.11.3 |
@@ -27,8 +25,6 @@ The following Elastic Beanstalk platform versions for Preconfigured Docker have 
 <a name="platform-history-2022-05-26"></a>
 
 The following Elastic Beanstalk platform versions for Preconfigured Docker were current between May 26, 2022 and June 21, 2022:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -39,8 +35,6 @@ The following Elastic Beanstalk platform versions for Preconfigured Docker were 
 
 The following Elastic Beanstalk platform versions for Preconfigured Docker were current between April 29, 2022 and May 25, 2022:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  ** Glassfish 5.0 (Docker) version 2.18.4** <br /> * 64bit Amazon Linux 2018.03 v2.18.4 running GlassFish 5.0 Java 8 (Preconfigured - Docker) *  | 2018.03.0 | Docker 20.10.7 | Amazon Linux 2018.03 | Java 8 | nginx 1.18.0 | Glassfish 5.0 | public.ecr.aws/j5n5r1l6/aws-eb-glassfish:5.0-al-onbuild-2.11.3 |
@@ -49,8 +43,6 @@ The following Elastic Beanstalk platform versions for Preconfigured Docker were 
 <a name="platform-history-2022-03-31"></a>
 
 The following Elastic Beanstalk platform versions for Preconfigured Docker were current between March 31, 2022 and April 28, 2022:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -61,8 +53,6 @@ The following Elastic Beanstalk platform versions for Preconfigured Docker were 
 
 The following Elastic Beanstalk platform versions for Preconfigured Docker were current between March 2, 2022 and March 30, 2022:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  ** Glassfish 5.0 (Docker) version 2.18.2** <br /> * 64bit Amazon Linux v2.18.2 running GlassFish 5.0 Java 8 (Preconfigured - Docker) *  | 2018.03.0 | Docker 20.10.7 | Amazon Linux 2018.03 | Java 8 | nginx 1.18.0 | Glassfish 5.0 | public.ecr.aws/j5n5r1l6/aws-eb-glassfish:5.0-al-onbuild-2.11.3 |
@@ -71,8 +61,6 @@ The following Elastic Beanstalk platform versions for Preconfigured Docker were 
 <a name="platform-history-2022-02-11"></a>
 
 The following Elastic Beanstalk platform versions for Preconfigured Docker were current between February 11, 2022 and March 1, 2022:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -83,8 +71,6 @@ The following Elastic Beanstalk platform versions for Preconfigured Docker were 
 
 The following Elastic Beanstalk platform versions for Preconfigured Docker were current between February 3, 2022 and February 10, 2022:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  ** Glassfish 5.0 (Docker) version 2.17.4** <br /> * 64bit Amazon Linux v2.17.4 running GlassFish 5.0 Java 8 (Preconfigured - Docker) *  | 2018.03.0 | Docker 20.10.7 | Amazon Linux 2018.03 | Java 8 | nginx 1.18.0 | Glassfish 5.0 | amazon/aws-eb-glassfish:5.0-al-onbuild-2.11.1 |
@@ -93,8 +79,6 @@ The following Elastic Beanstalk platform versions for Preconfigured Docker were 
 <a name="platform-history-2021-12-21"></a>
 
 The following Elastic Beanstalk platform versions for Preconfigured Docker were current between December 21, 2021 and February 2, 2022:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -105,8 +89,6 @@ The following Elastic Beanstalk platform versions for Preconfigured Docker were 
 
 The following Elastic Beanstalk platform versions for Preconfigured Docker were current between November 24, 2021 and December 20, 2021:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  ** Glassfish 5.0 (Docker) version 2.17.2** <br /> * 64bit Amazon Linux v2.17.2 running GlassFish 5.0 Java 8 (Preconfigured - Docker) *  | 2018.03.0 | Docker 20.10.7 | Amazon Linux 2018.03 | Java 8 | nginx 1.18.0 | Glassfish 5.0 | amazon/aws-eb-glassfish:5.0-al-onbuild-2.11.1 |
@@ -115,8 +97,6 @@ The following Elastic Beanstalk platform versions for Preconfigured Docker were 
 <a name="platform-history-2021-10-21"></a>
 
 The following Elastic Beanstalk platform versions for Preconfigured Docker were current between October 21, 2021 and November 23, 2021:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -127,8 +107,6 @@ The following Elastic Beanstalk platform versions for Preconfigured Docker were 
 
 The following Elastic Beanstalk platform versions for Preconfigured Docker were current between October 6, 2021 and October 20, 2021:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  ** Glassfish 5.0 (Docker) version 2.17.0** <br /> * 64bit Amazon Linux v2.17.0 running GlassFish 5.0 Java 8 (Preconfigured - Docker) *  | 2018.03.0 | Docker 20.10.7 | Amazon Linux 2018.03 | Java 8 | nginx 1.18.0 | Glassfish 5.0 | amazon/aws-eb-glassfish:5.0-al-onbuild-2.11.1 |
@@ -137,8 +115,6 @@ The following Elastic Beanstalk platform versions for Preconfigured Docker were 
 <a name="platform-history-2021-10-03"></a>
 
 The following Elastic Beanstalk platform versions for Preconfigured Docker were current between October 3, 2021 and October 5, 2021:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -149,8 +125,6 @@ The following Elastic Beanstalk platform versions for Preconfigured Docker were 
 
 The following Elastic Beanstalk platform versions for Preconfigured Docker were current between July 30, 2021 and October 2, 2021:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  ** Glassfish 5.0 (Docker) version 2.16.11** <br /> * 64bit Amazon Linux v2.16.11 running GlassFish 5.0 Java 8 (Preconfigured - Docker) *  | 2018.03.0 | Docker 19.03.13-ce | Amazon Linux 2018.03 | Java 8 | nginx 1.18.0 | Glassfish 5.0 | amazon/aws-eb-glassfish:5.0-al-onbuild-2.11.1 |
@@ -159,8 +133,6 @@ The following Elastic Beanstalk platform versions for Preconfigured Docker were 
 <a name="platform-history-2021-07-21"></a>
 
 The following Elastic Beanstalk platform versions for Preconfigured Docker were current between July 21, 2021 and July 29, 2021:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -171,8 +143,6 @@ The following Elastic Beanstalk platform versions for Preconfigured Docker were 
 
 The following Elastic Beanstalk platform versions for Preconfigured Docker were current between July 8, 2021 and July 20, 2021:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  ** Glassfish 5.0 (Docker) version 2.16.9** <br /> * 64bit Amazon Linux v2.16.9 running GlassFish 5.0 Java 8 (Preconfigured - Docker) *  | 2018.03.0 | Docker 19.03.13-ce | Amazon Linux 2018.03 | Java 8 | nginx 1.18.0 | Glassfish 5.0 | amazon/aws-eb-glassfish:5.0-al-onbuild-2.11.1 |
@@ -181,8 +151,6 @@ The following Elastic Beanstalk platform versions for Preconfigured Docker were 
 <a name="platform-history-2021-05-26"></a>
 
 The following Elastic Beanstalk platform versions for Preconfigured Docker were current between May 26, 2021 and July 7, 2021:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -193,8 +161,6 @@ The following Elastic Beanstalk platform versions for Preconfigured Docker were 
 
 The following Elastic Beanstalk platform versions for Preconfigured Docker were current between April 21, 2021 and May 25, 2021:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  ** Glassfish 5.0 (Docker) version 2.16.7** <br /> * 64bit Amazon Linux v2.16.7 running GlassFish 5.0 Java 8 (Preconfigured - Docker) *  | 2018.03.0 | Docker 19.03.13-ce | Amazon Linux 2018.03 | Java 8 | nginx 1.18.0 | Glassfish 5.0 | amazon/aws-eb-glassfish:5.0-al-onbuild-2.11.1 |
@@ -203,8 +169,6 @@ The following Elastic Beanstalk platform versions for Preconfigured Docker were 
 <a name="platform-history-2021-03-30"></a>
 
 The following Elastic Beanstalk platform versions for Preconfigured Docker were current between March 30, 2021 and April 20, 2021:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -215,8 +179,6 @@ The following Elastic Beanstalk platform versions for Preconfigured Docker were 
 
 The following Elastic Beanstalk platform versions for Preconfigured Docker were current between March 1, 2021 and March 29, 2021:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  ** Glassfish 5.0 (Docker) version 2.16.5** <br /> * 64bit Amazon Linux v2.16.5 running GlassFish 5.0 Java 8 (Preconfigured - Docker) *  | 2018.03.0 | Docker 19.03.13-ce | Amazon Linux 2018.03 | Java 8 | nginx 1.18.0 | Glassfish 5.0 | amazon/aws-eb-glassfish:5.0-al-onbuild-2.11.1 |
@@ -225,8 +187,6 @@ The following Elastic Beanstalk platform versions for Preconfigured Docker were 
 <a name="platform-history-2021-01-28"></a>
 
 The following Elastic Beanstalk platform versions for Preconfigured Docker were current between January 28, 2021 and February 28, 2021:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -237,8 +197,6 @@ The following Elastic Beanstalk platform versions for Preconfigured Docker were 
 
 The following Elastic Beanstalk platform versions for Preconfigured Docker were current between December 30, 2020 and January 27, 2021:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  ** Glassfish 5.0 (Docker) version 2.16.3** <br /> * 64bit Amazon Linux v2.16.3 running GlassFish 5.0 Java 8 (Preconfigured - Docker) *  | 2018.03.0 | Docker 19.03.13-ce | Amazon Linux 2018.03 | Java 8 | nginx 1.18.0 | Glassfish 5.0 | amazon/aws-eb-glassfish:5.0-al-onbuild-2.11.1 |
@@ -247,8 +205,6 @@ The following Elastic Beanstalk platform versions for Preconfigured Docker were 
 <a name="platform-history-2020-12-07"></a>
 
 The following Elastic Beanstalk platform versions for Preconfigured Docker were current between December 7, 2020 and December 29, 2020:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -259,8 +215,6 @@ The following Elastic Beanstalk platform versions for Preconfigured Docker were 
 
 The following Elastic Beanstalk platform versions for Preconfigured Docker were current between November 11, 2020 and December 6, 2020:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  ** Glassfish 5.0 (Docker) version 2.16.1** <br /> * 64bit Amazon Linux v2.16.1 running GlassFish 5.0 Java 8 (Preconfigured - Docker) *  | 2018.03.0 | Docker 19.03.6-ce | Amazon Linux 2018.03 | Java 8 | nginx 1.18.0 | Glassfish 5.0 | amazon/aws-eb-glassfish:5.0-al-onbuild-2.11.1 |
@@ -269,8 +223,6 @@ The following Elastic Beanstalk platform versions for Preconfigured Docker were 
 <a name="platform-history-2020-10-07"></a>
 
 The following Elastic Beanstalk platform versions for Preconfigured Docker were current between October 7, 2020 and November 10, 2020:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -284,8 +236,6 @@ The following Elastic Beanstalk platform versions for Preconfigured Docker were 
 
 The following Elastic Beanstalk platform versions for Preconfigured Docker were current between September 10, 2020 and October 6, 2020:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  ** Glassfish 5.0 (Docker) version 2.15.4** <br /> * 64bit Amazon Linux v2.15.4 running GlassFish 5.0 Java 8 (Preconfigured - Docker) *  | 2018.03.0 | Docker 19.03.6-ce | Amazon Linux 2018.03 | Java 8 | nginx 1.16.1 | Glassfish 5.0 | amazon/aws-eb-glassfish:5.0-al-onbuild-2.11.1 |
@@ -297,8 +247,6 @@ The following Elastic Beanstalk platform versions for Preconfigured Docker were 
 <a name="platform-history-2020-08-07"></a>
 
 The following Elastic Beanstalk platform versions for Preconfigured Docker were current between August 7, 2020 and September 9, 2020:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -312,8 +260,6 @@ The following Elastic Beanstalk platform versions for Preconfigured Docker were 
 
 The following Elastic Beanstalk platform versions for Preconfigured Docker were current between July 6, 2020 and August 6, 2020:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  ** Glassfish 5.0 (Docker) version 2.15.2** <br /> * 64bit Amazon Linux v2.15.2 running GlassFish 5.0 Java 8 (Preconfigured - Docker) *  | 2018.03.0 | Docker 19.03.6-ce | Amazon Linux 2018.03 | Java 8 | nginx 1.16.1 | Glassfish 5.0 | amazon/aws-eb-glassfish:5.0-al-onbuild-2.11.1 |
@@ -325,8 +271,6 @@ The following Elastic Beanstalk platform versions for Preconfigured Docker were 
 <a name="platform-history-2020-06-05"></a>
 
 The following Elastic Beanstalk platform versions for Preconfigured Docker were current between June 5, 2020 and July 5, 2020:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -340,8 +284,6 @@ The following Elastic Beanstalk platform versions for Preconfigured Docker were 
 
 The following Elastic Beanstalk platform versions for Preconfigured Docker were current between May 4, 2020 and June 4, 2020:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  ** Glassfish 5.0 (Docker) version 2.15.0** <br /> * 64bit Amazon Linux v2.15.0 running GlassFish 5.0 Java 8 (Preconfigured - Docker) *  | 2018.03.0 | Docker 19.03.6-ce | Amazon Linux 2018.03 | Java 8 | nginx 1.16.1 | Glassfish 5.0 | amazon/aws-eb-glassfish:5.0-al-onbuild-2.11.1 |
@@ -353,8 +295,6 @@ The following Elastic Beanstalk platform versions for Preconfigured Docker were 
 <a name="platform-history-2020-03-27"></a>
 
 The following Elastic Beanstalk platform versions for Preconfigured Docker were current between March 27, 2020 and May 3, 2020:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -368,8 +308,6 @@ The following Elastic Beanstalk platform versions for Preconfigured Docker were 
 
 The following Elastic Beanstalk platform versions for Preconfigured Docker were current between February 28, 2020 and March 26, 2020:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  ** Glassfish 5.0 (Docker) version 2.14.2** <br /> * 64bit Amazon Linux v2.14.2 running GlassFish 5.0 Java 8 (Preconfigured - Docker) *  | 2018.03.0 | Docker 18.09.9-ce | Amazon Linux 2018.03 | Java 8 | nginx 1.16.1 | Glassfish 5.0 | amazon/aws-eb-glassfish:5.0-al-onbuild-2.11.1 |
@@ -381,8 +319,6 @@ The following Elastic Beanstalk platform versions for Preconfigured Docker were 
 <a name="platform-history-2020-01-21"></a>
 
 The following Elastic Beanstalk platform versions for Preconfigured Docker were current between January 21, 2020 and February 27, 2020:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -396,8 +332,6 @@ The following Elastic Beanstalk platform versions for Preconfigured Docker were 
 
 The following Elastic Beanstalk platform versions for Preconfigured Docker were current between November 25, 2019 and January 20, 2020:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  ** Glassfish 5.0 (Docker) version 2.14.0** <br /> * 64bit Amazon Linux v2.14.0 running GlassFish 5.0 Java 8 (Preconfigured - Docker) *  | 2018.03.0 | Docker 18.09.9-ce | Amazon Linux 2018.03 | Java 8 | nginx 1.16.1 | Glassfish 5.0 | amazon/aws-eb-glassfish:5.0-al-onbuild-2.11.1 |
@@ -409,8 +343,6 @@ The following Elastic Beanstalk platform versions for Preconfigured Docker were 
 <a name="platform-history-2019-10-17"></a>
 
 The following Elastic Beanstalk platform versions for Preconfigured Docker were current between October 17, 2019 and November 24, 2019:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -424,8 +356,6 @@ The following Elastic Beanstalk platform versions for Preconfigured Docker were 
 
 The following Elastic Beanstalk platform versions for Preconfigured Docker were current between September 6, 2019 and October 16, 2019:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  ** Glassfish 5.0 (Docker) version 2.12.17** <br /> * 64bit Amazon Linux v2.12.17 running GlassFish 5.0 Java 8 (Preconfigured - Docker) *  | 2018.03.0 | Docker 18.06.1-ce | Amazon Linux 2018.03 | Java 8 | nginx 1.14.1 | Glassfish 5.0 | amazon/aws-eb-glassfish:5.0-al-onbuild-2.11.1 |
@@ -437,8 +367,6 @@ The following Elastic Beanstalk platform versions for Preconfigured Docker were 
 <a name="platform-history-2019-08-08"></a>
 
 The following Elastic Beanstalk platform versions for Preconfigured Docker were current between August 8, 2019 and September 5, 2019:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -452,8 +380,6 @@ The following Elastic Beanstalk platform versions for Preconfigured Docker were 
 
 The following Elastic Beanstalk platform versions for Preconfigured Docker were current between June 17, 2019 and August 7, 2019:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  ** Glassfish 5.0 (Docker) version 2.12.14** <br /> * 64bit Amazon Linux v2.12.14 running GlassFish 5.0 Java 8 (Preconfigured - Docker) *  | 2018.03.0 | Docker 18.06.1-ce | Amazon Linux 2018.03 | Java 8 | nginx 1.14.1 | Glassfish 5.0 | amazon/aws-eb-glassfish:5.0-al-onbuild-2.11.1 |
@@ -462,8 +388,6 @@ The following Elastic Beanstalk platform versions for Preconfigured Docker were 
 |  ** Python 3.4 with uWSGI 2 (Docker) version 2.12.14** <br /> * 64bit Debian jessie v2.12.14 running Python 3.4 (Preconfigured - Docker) *  | 2018.03.0 | Docker 18.06.1-ce | Debian Jessie | Python 3.4 | nginx 1.14.1 | uWSGI 2.0.8 | amazon/aws-eb-python:3.4.2-onbuild-3.5.1 |
 
 The following Elastic Beanstalk platform versions for preconfigured Docker were current between June 14, 2019 and June 16, 2019:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -474,8 +398,6 @@ The following Elastic Beanstalk platform versions for preconfigured Docker were 
 
 The following Elastic Beanstalk platform versions for preconfigured Docker were current between June 7, 2019 and June 13, 2019:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  **Glassfish 5.0 (Docker) version 2.12.12** <br /> * 64bit Amazon Linux v2.12.12 running GlassFish 5.0 Java 8 (Preconfigured - Docker) *  | 2018.03.0 | Docker 18.06.1-ce | Amazon Linux 2018.03 | Java 8 | nginx 1.14.1 | Glassfish 5.0 | amazon/aws-eb-glassfish:5.0-al-onbuild-2.11.1 |
@@ -484,8 +406,6 @@ The following Elastic Beanstalk platform versions for preconfigured Docker were 
 |  **Python 3.4 with uWSGI 2 (Docker) version 2.12.12** <br /> * 64bit Debian jessie v2.12.12 running Python 3.4 (Preconfigured - Docker) *  | 2018.03.0 | Docker 18.06.1-ce | Debian Jessie | Python 3.4 | nginx 1.14.1 | uWSGI 2.0.8 | amazon/aws-eb-python:3.4.2-onbuild-3.5.1 |
 
 The following Elastic Beanstalk platform versions for preconfigured Docker were current between April 30, 2019 and June 6, 2019:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -496,8 +416,6 @@ The following Elastic Beanstalk platform versions for preconfigured Docker were 
 
 The following Elastic Beanstalk platform versions for preconfigured Docker were current between April 2, 2019 and April 29, 2019:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  **Glassfish 5.0 (Docker) version 2.12.10** <br /> * 64bit Amazon Linux v2.12.10 running GlassFish 5.0 Java 8 (Preconfigured - Docker) *  | 2018.03.0 | Docker 18.06.1-ce | Amazon Linux 2018.03 | Java 8 | nginx 1.14.1 | Glassfish 5.0 | amazon/aws-eb-glassfish:5.0-al-onbuild-2.11.1 |
@@ -506,8 +424,6 @@ The following Elastic Beanstalk platform versions for preconfigured Docker were 
 |  **Python 3.4 with uWSGI 2 (Docker) version 2.12.10** <br /> * 64bit Debian jessie v2.12.10 running Python 3.4 (Preconfigured - Docker) *  | 2018.03.0 | Docker 18.06.1-ce | Debian Jessie | Python 3.4 | nginx 1.14.1 | uWSGI 2.0.8 | amazon/aws-eb-python:3.4.2-onbuild-3.5.1 |
 
 The following Elastic Beanstalk platform versions for preconfigured Docker were current between February 21, 2019 and April 1, 2019:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -518,8 +434,6 @@ The following Elastic Beanstalk platform versions for preconfigured Docker were 
 
 The following Elastic Beanstalk platform versions for preconfigured Docker were current between February 11, 2019 and February 20, 2019:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  **Glassfish 5.0 (Docker) version 2.12.8** <br /> * 64bit Amazon Linux v2.12.8 running GlassFish 5.0 Java 8 (Preconfigured - Docker) *  | 2018.03.0 | Docker 18.06.1-ce | Amazon Linux 2018.03 | Java 8 | nginx 1.14.1 | Glassfish 5.0 | amazon/aws-eb-glassfish:5.0-al-onbuild-2.11.1 |
@@ -528,8 +442,6 @@ The following Elastic Beanstalk platform versions for preconfigured Docker were 
 |  **Python 3.4 with uWSGI 2 (Docker) version 2.12.8** <br /> * 64bit Debian jessie v2.12.8 running Python 3.4 (Preconfigured - Docker) *  | 2018.03.0 | Docker 18.06.1-ce | Debian Jessie | Python 3.4 | nginx 1.14.1 | uWSGI 2.0.8 | amazon/aws-eb-python:3.4.2-onbuild-3.5.1 |
 
 The following Elastic Beanstalk platform versions for preconfigured Docker were current between January 23, 2019 and February 10, 2019:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -540,8 +452,6 @@ The following Elastic Beanstalk platform versions for preconfigured Docker were 
 
 The following Elastic Beanstalk platform versions for preconfigured Docker were current between December 17, 2018 and January 22, 2019:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  **Glassfish 5.0 (Docker) version 2.12.6** <br /> * 64bit Amazon Linux v2.12.6 running GlassFish 5.0 Java 8 (Preconfigured - Docker) *  | 2018.03.0 | Docker 18.06.1-ce | Amazon Linux 2018.03 | Java 8 | nginx 1.12.1 | Glassfish 5.0 | amazon/aws-eb-glassfish:5.0-al-onbuild-2.11.1 |
@@ -550,8 +460,6 @@ The following Elastic Beanstalk platform versions for preconfigured Docker were 
 |  **Python 3.4 with uWSGI 2 (Docker) version 2.12.6** <br /> * 64bit Debian jessie v2.12.6 running Python 3.4 (Preconfigured - Docker) *  | 2018.03.0 | Docker 18.06.1-ce | Debian Jessie | Python 3.4 | nginx 1.12.1 | uWSGI 2.0.8 | amazon/aws-eb-python:3.4.2-onbuild-3.5.1 |
 
 The following Elastic Beanstalk platform versions for preconfigured Docker were current between November 16, 2018 and December 16, 2018:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -562,8 +470,6 @@ The following Elastic Beanstalk platform versions for preconfigured Docker were 
 
 The following Elastic Beanstalk platform versions for preconfigured Docker were current between October 29, 2018 and November 15, 2018:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  **Glassfish 5.0 (Docker) version 2.12.4** <br /> * 64bit Amazon Linux v2.12.4 running GlassFish 5.0 Java 8 (Preconfigured - Docker) *  | 2018.03.0 | Docker 18.06.1-ce | Amazon Linux 2018.03 | Java 8 | nginx 1.12.1 | Glassfish 5.0 | amazon/aws-eb-glassfish:5.0-al-onbuild-2.11.1 |
@@ -572,8 +478,6 @@ The following Elastic Beanstalk platform versions for preconfigured Docker were 
 |  **Python 3.4 with uWSGI 2 (Docker) version 2.12.4** <br /> * 64bit Debian jessie v2.12.4 running Python 3.4 (Preconfigured - Docker) *  | 2018.03.0 | Docker 18.06.1-ce | Debian Jessie | Python 3.4 | nginx 1.12.1 | uWSGI 2.0.8 | amazon/aws-eb-python:3.4.2-onbuild-3.5.1 |
 
 The following Elastic Beanstalk platform versions for preconfigured Docker were current between September 25, 2018 and October 28, 2018:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -584,8 +488,6 @@ The following Elastic Beanstalk platform versions for preconfigured Docker were 
 
 The following Elastic Beanstalk platform versions for preconfigured Docker were current between August 20, 2018 and September 24, 2018:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  **Glassfish 5.0 (Docker) version 2.12.2** <br /> * 64bit Amazon Linux v2.12.2 running GlassFish 5.0 Java 8 (Preconfigured - Docker) *  | 2018.03.0 | Docker 18.03.1-ce | Amazon Linux 2018.03 | Java 8 | nginx 1.12.1 | Glassfish 5.0 | amazon/aws-eb-glassfish:5.0-al-onbuild-2.11.1 |
@@ -594,8 +496,6 @@ The following Elastic Beanstalk platform versions for preconfigured Docker were 
 |  **Python 3.4 with uWSGI 2 (Docker) version 2.12.2** <br /> * 64bit Debian jessie v2.12.2 running Python 3.4 (Preconfigured - Docker) *  | 2018.03.0 | Docker 18.03.1-ce | Debian Jessie | Python 3.4 | nginx 1.12.1 | uWSGI 2.0.8 | amazon/aws-eb-python:3.4.2-onbuild-3.5.1 |
 
 The following Elastic Beanstalk platform versions for preconfigured Docker were current between August 15, 2018 and August 19, 2018:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -606,8 +506,6 @@ The following Elastic Beanstalk platform versions for preconfigured Docker were 
 
 The following Elastic Beanstalk platform versions for preconfigured Docker were current between July 27, 2018 and August 14, 2018:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  **Glassfish 5.0 (Docker) version 2.12.0** <br /> * 64bit Amazon Linux v2.12.0 running GlassFish 5.0 Java 8 (Preconfigured - Docker) *  | 2018.03.0 | Docker 18.03.1-ce | Amazon Linux 2018.03 | Java 8 | nginx 1.12.1 | Glassfish 5.0 | amazon/aws-eb-glassfish:5.0-al-onbuild-2.11.1 |
@@ -616,8 +514,6 @@ The following Elastic Beanstalk platform versions for preconfigured Docker were 
 |  **Python 3.4 with uWSGI 2 (Docker) version 2.12.0** <br /> * 64bit Debian jessie v2.12.0 running Python 3.4 (Preconfigured - Docker) *  | 2018.03.0 | Docker 18.03.1-ce | Debian Jessie | Python 3.4 | nginx 1.12.1 | uWSGI 2.0.8 | amazon/aws-eb-python:3.4.2-onbuild-3.5.1 |
 
 The following Elastic Beanstalk platform versions for preconfigured Docker were current between June 21, 2018 and July 26, 2018:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -631,8 +527,6 @@ The following Elastic Beanstalk platform versions for preconfigured Docker were 
 
 The following Elastic Beanstalk platform versions for preconfigured Docker were current between May 11, 2018 and June 20, 2018:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  **Glassfish 4.1 (Docker) version 2.10.0** <br /> * 64bit Debian jessie v2.10.0 running GlassFish 4.1 Java 8 (Preconfigured - Docker) *  | 2018.03.0 | Docker 17.12.1-ce | Debian Jessie | Java 8 | nginx 1.12.1 | Glassfish 4.1 | amazon/aws-eb-glassfish:4.1-jdk8-onbuild-3.5.1 |
@@ -642,8 +536,6 @@ The following Elastic Beanstalk platform versions for preconfigured Docker were 
 |  **Python 3.4 with uWSGI 2 (Docker) version 2.10.0** <br /> * 64bit Debian jessie v2.10.0 running Python 3.4 (Preconfigured - Docker) *  | 2018.03.0 | Docker 17.12.1-ce | Debian Jessie | Python 3.4 | nginx 1.12.1 | uWSGI 2.0.8 | amazon/aws-eb-python:3.4.2-onbuild-3.5.1 |
 
 The following Elastic Beanstalk platform versions for preconfigured Docker were current between April 2, 2018 and May 10, 2018:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -655,8 +547,6 @@ The following Elastic Beanstalk platform versions for preconfigured Docker were 
 
 The following Elastic Beanstalk platform versions for preconfigured Docker were current between March 22, 2018 and April 1, 2018:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  **Glassfish 4.1 (Docker) version 2.9.1** <br /> *64bit Debian jessie v2.9.1 running GlassFish 4.1 Java 8 (Preconfigured - Docker)*  | 2017.09.1 | Docker 17.12.0-ce | Debian Jessie | Java 8 | nginx 1.12.1 | Glassfish 4.1 | amazon/aws-eb-glassfish:4.1-jdk8-onbuild-3.5.1 |
@@ -666,8 +556,6 @@ The following Elastic Beanstalk platform versions for preconfigured Docker were 
 |  **Python 3.4 with uWSGI 2 (Docker) version 2.9.1** <br /> *64bit Debian jessie v2.9.1 running Python 3.4 (Preconfigured - Docker)*  | 2017.09.1 | Docker 17.12.0-ce | Debian Jessie | Python 3.4 | nginx 1.12.1 | uWSGI 2.0.8 | amazon/aws-eb-python:3.4.2-onbuild-3.5.1 |
 
 The following Elastic Beanstalk platform versions for preconfigured Docker were current between March 19, 2018 and March 21, 2018:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -679,8 +567,6 @@ The following Elastic Beanstalk platform versions for preconfigured Docker were 
 
 The following Elastic Beanstalk platform versions for preconfigured Docker were current between January 19, 2018 and March 18, 2018:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  **Glassfish 4.1 (Docker) version 2.8.4** <br /> *64bit Debian jessie v2.8.4 running GlassFish 4.1 Java 8 (Preconfigured - Docker)*  | 2017.09.1 | Docker 17.09.1-ce | Debian Jessie | Java 8 | nginx 1.12.1 | Glassfish 4.1 | amazon/aws-eb-glassfish:4.1-jdk8-onbuild-3.5.1 |
@@ -690,8 +576,6 @@ The following Elastic Beanstalk platform versions for preconfigured Docker were 
 |  **Python 3.4 with uWSGI 2 (Docker) version 2.8.4** <br /> *64bit Debian jessie v2.8.4 running Python 3.4 (Preconfigured - Docker)*  | 2017.09.1 | Docker 17.09.1-ce | Debian Jessie | Python 3.4 | nginx 1.12.1 | uWSGI 2.0.8 | amazon/aws-eb-python:3.4.2-onbuild-3.5.1 |
 
 The following Elastic Beanstalk platform versions for preconfigured Docker were current between January 10, 2018 and January 18, 2018:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -703,8 +587,6 @@ The following Elastic Beanstalk platform versions for preconfigured Docker were 
 
 The following Elastic Beanstalk platform versions for preconfigured Docker were current between January 6, 2018 and January 9, 2018:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  **Glassfish 4.1 (Docker) version 2.8.2** <br /> *64bit Debian jessie v2.8.2 running GlassFish 4.1 Java 8 (Preconfigured - Docker)*  | 2017.09.1 | Docker 17.06.2-ce | Debian Jessie | Java 8 | nginx 1.12.1 | Glassfish 4.1 | amazon/aws-eb-glassfish:4.1-jdk8-onbuild-3.5.1 |
@@ -714,8 +596,6 @@ The following Elastic Beanstalk platform versions for preconfigured Docker were 
 |  **Python 3.4 with uWSGI 2 (Docker) version 2.8.2** <br /> *64bit Debian jessie v2.8.2 running Python 3.4 (Preconfigured - Docker)*  | 2017.09.1 | Docker 17.06.2-ce | Debian Jessie | Python 3.4 | nginx 1.12.1 | uWSGI 2.0.8 | amazon/aws-eb-python:3.4.2-onbuild-3.5.1 |
 
 The following Elastic Beanstalk platform versions for preconfigured Docker were current between December 20, 2017 and January 5, 2018:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -727,8 +607,6 @@ The following Elastic Beanstalk platform versions for preconfigured Docker were 
 
 The following Elastic Beanstalk platform versions for preconfigured Docker were current between November 14, 2017 and December 19, 2017:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  **Glassfish 4.1 (Docker) version 2.8.0** <br /> *64bit Debian jessie v2.8.0 running GlassFish 4.1 Java 8 (Preconfigured - Docker)*  | 2017.09.1 | Docker 17.06.2-ce | Debian Jessie | Java 8 | nginx 1.12.1 | Glassfish 4.1 | amazon/aws-eb-glassfish:4.1-jdk8-onbuild-3.5.1 |
@@ -738,8 +616,6 @@ The following Elastic Beanstalk platform versions for preconfigured Docker were 
 |  **Python 3.4 with uWSGI 2 (Docker) version 2.8.0** <br /> *64bit Debian jessie v2.8.0 running Python 3.4 (Preconfigured - Docker)*  | 2017.09.1 | Docker 17.06.2-ce | Debian Jessie | Python 3.4 | nginx 1.12.1 | uWSGI 2.0.8 | amazon/aws-eb-python:3.4.2-onbuild-3.5.1 |
 
 The following Elastic Beanstalk platform versions for preconfigured Docker were current between September 25, 2017 and November 13, 2017:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -751,8 +627,6 @@ The following Elastic Beanstalk platform versions for preconfigured Docker were 
 
 The following Elastic Beanstalk platform versions for preconfigured Docker were current between August 30, 2017 and September 24, 2017:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  **Glassfish 4.1 (Docker) version 2.7.3** <br /> *64bit Debian jessie v2.7.3 running GlassFish 4.1 Java 8 (Preconfigured - Docker)*  | 2017.03.1 | Docker 17.03.1-ce | Debian Jessie | Java 8 | nginx 1.10.3 | Glassfish 4.1 | amazon/aws-eb-glassfish:4.1-jdk8-onbuild-3.5.1 |
@@ -762,8 +636,6 @@ The following Elastic Beanstalk platform versions for preconfigured Docker were 
 |  **Python 3.4 with uWSGI 2 (Docker) version 2.7.3** <br /> *64bit Debian jessie v2.7.3 running Python 3.4 (Preconfigured - Docker)*  | 2017.03.1 | Docker 17.03.1-ce | Debian Jessie | Python 3.4 | nginx 1.10.3 | uWSGI 2.0.8 | amazon/aws-eb-python:3.4.2-onbuild-3.5.1 |
 
 The following Elastic Beanstalk platform versions for preconfigured Docker were current between August 11, 2017 and August 29, 2017:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -775,8 +647,6 @@ The following Elastic Beanstalk platform versions for preconfigured Docker were 
 
 The following Elastic Beanstalk platform versions for preconfigured Docker were current between July 20, 2017 and August 10, 2017:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  **Glassfish 4.1 (Docker) version 2.7.1** <br /> *64bit Debian jessie v2.7.1 running GlassFish 4.1 Java 8 (Preconfigured - Docker)*  | 2017.03.1 | Docker 17.03.1-ce | Debian Jessie | Java 8 | nginx 1.10.3 | Glassfish 4.1 | amazon/aws-eb-glassfish:4.1-jdk8-onbuild-3.5.1 |
@@ -786,8 +656,6 @@ The following Elastic Beanstalk platform versions for preconfigured Docker were 
 |  **Python 3.4 with uWSGI 2 (Docker) version 2.7.1** <br /> *64bit Debian jessie v2.7.1 running Python 3.4 (Preconfigured - Docker)*  | 2017.03.1 | Docker 17.03.1-ce | Debian Jessie | Python 3.4 | nginx 1.10.3 | uWSGI 2.0.8 | amazon/aws-eb-python:3.4.2-onbuild-3.5.1 |
 
 The following Elastic Beanstalk platform versions for preconfigured Docker were current between June 27, 2017 and July 19, 2017:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -799,8 +667,6 @@ The following Elastic Beanstalk platform versions for preconfigured Docker were 
 
 The following Elastic Beanstalk platform versions for preconfigured Docker were current between May 19, 2017 and June 26, 2017:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  **Glassfish 4.1 (Docker) version 2.6.0** <br /> *64bit Debian jessie v2.6.0 running GlassFish 4.1 Java 8 (Preconfigured - Docker)*  | 2017.03.0 | Docker 1.12.6 | Debian Jessie | Java 8 | nginx 1.10.2 | Glassfish 4.1 | amazon/aws-eb-glassfish:4.1-jdk8-onbuild-3.5.1 |
@@ -810,8 +676,6 @@ The following Elastic Beanstalk platform versions for preconfigured Docker were 
 |  **Python 3.4 with uWSGI 2 (Docker) version 2.6.0** <br /> *64bit Debian jessie v2.6.0 running Python 3.4 (Preconfigured - Docker)*  | 2017.03.0 | Docker 1.12.6 | Debian Jessie | Python 3.4 | nginx 1.10.2 | uWSGI 2.0.8 | amazon/aws-eb-python:3.4.2-onbuild-3.5.1 |
 
 The following Elastic Beanstalk platform versions for preconfigured Docker were current between April 5, 2017 and May 18, 2017:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -823,8 +687,6 @@ The following Elastic Beanstalk platform versions for preconfigured Docker were 
 
 The following Elastic Beanstalk platform versions for preconfigured Docker were current between March 8, 2017 and April 4, 2017:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  **Glassfish 4.1 (Docker) version 2.5.1** <br /> *64bit Debian jessie v2.5.1 running GlassFish 4.1 Java 8 (Preconfigured - Docker)*  | 2016.09.0 | Docker 1.12.6 | Debian Jessie | Java 8 | nginx 1.10.1 | Glassfish 4.1 | amazon/aws-eb-glassfish:4.1-jdk8-onbuild-3.5.1 |
@@ -834,8 +696,6 @@ The following Elastic Beanstalk platform versions for preconfigured Docker were 
 |  **Python 3.4 with uWSGI 2 (Docker) version 2.5.1** <br /> *64bit Debian jessie v2.5.1 running Python 3.4 (Preconfigured - Docker)*  | 2016.09.0 | Docker 1.12.6 | Debian Jessie | Python 3.4 | nginx 1.10.1 | uWSGI 2.0.8 | amazon/aws-eb-python:3.4.2-onbuild-3.5.1 |
 
 The following Elastic Beanstalk platform versions for preconfigured Docker were current between January 28, 2017 and March 7, 2017:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -847,8 +707,6 @@ The following Elastic Beanstalk platform versions for preconfigured Docker were 
 
 The following Elastic Beanstalk platform versions for preconfigured Docker were current between January 16, 2017 and January 27, 2017:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  **Glassfish 4.1 (Docker) version 2.4.0** <br /> *64bit Debian jessie v2.4.0 running GlassFish 4.1 Java 8 (Preconfigured - Docker)*  | 2016.09.0 | Docker 1.12.6 | Debian Jessie | Java 8 | nginx 1.10.1 | Glassfish 4.1 | amazon/aws-eb-glassfish:4.1-jdk8-onbuild-3.5.1 |
@@ -858,8 +716,6 @@ The following Elastic Beanstalk platform versions for preconfigured Docker were 
 |  **Python 3.4 with uWSGI 2 (Docker) version 2.4.0** <br /> *64bit Debian jessie v2.4.0 running Python 3.4 (Preconfigured - Docker)*  | 2016.09.0 | Docker 1.12.6 | Debian Jessie | Python 3.4 | nginx 1.10.1 | uWSGI 2.0.8 | amazon/aws-eb-python:3.4.2-onbuild-3.5.1 |
 
 The following Elastic Beanstalk platform versions for preconfigured Docker were current between December 21, 2016 and January 15, 2017:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -871,8 +727,6 @@ The following Elastic Beanstalk platform versions for preconfigured Docker were 
 
 The following Elastic Beanstalk platform versions for preconfigured Docker were current between December 12, 2016 and December 21, 2016:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  **Glassfish 4.1 (Docker) version 2.2.2** <br /> *64bit Debian jessie v2.2.2 running GlassFish 4.1 Java 8 (Preconfigured - Docker)*  | 2016.09.0 | Docker 1.11.2 | Debian Jessie | Java 8 | nginx 1.10.1 | Glassfish 4.1 | amazon/aws-eb-glassfish:4.1-jdk8-onbuild-3.5.1 |
@@ -882,8 +736,6 @@ The following Elastic Beanstalk platform versions for preconfigured Docker were 
 |  **Python 3.4 with uWSGI 2 (Docker) version 2.2.2** <br /> *64bit Debian jessie v2.2.2 running Python 3.4 (Preconfigured - Docker)*  | 2016.09.0 | Docker 1.11.2 | Debian Jessie | Python 3.4 | nginx 1.10.1 | uWSGI 2.0.8 | amazon/aws-eb-python:3.4.2-onbuild-3.5.1 |
 
 The following Elastic Beanstalk platform versions for preconfigured Docker were current between October 28, 2016 and December 11, 2016:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -895,8 +747,6 @@ The following Elastic Beanstalk platform versions for preconfigured Docker were 
 
 The following Elastic Beanstalk platform versions for preconfigured Docker were current between August 24, 2016 and October 27, 2016:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  **Glassfish 4.1 (Docker) version 2.1.6** <br /> *64bit Debian jessie v2.1.6 running GlassFish 4.1 Java 8 (Preconfigured - Docker)*  | 2016.03.3 | Docker 1.11.2 | Debian Jessie | Java 8 | nginx 1.8.1 | Glassfish 4.1 | amazon/aws-eb-glassfish:4.1-jdk8-onbuild-3.5.1 |
@@ -906,8 +756,6 @@ The following Elastic Beanstalk platform versions for preconfigured Docker were 
 |  **Python 3.4 with uWSGI 2 (Docker) version 2.1.6** <br /> *64bit Debian jessie v2.1.6 running Python 3.4 (Preconfigured - Docker)*  | 2016.03.3 | Docker 1.11.2 | Debian Jessie | Python 3.4 | nginx 1.8.1 | uWSGI 2.0.8 | amazon/aws-eb-python:3.4.2-onbuild-3.5.1 |
 
 The following Elastic Beanstalk platform versions for preconfigured Docker were current between June 26, 2016 and August 24, 2016:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -919,8 +767,6 @@ The following Elastic Beanstalk platform versions for preconfigured Docker were 
 
 The following Elastic Beanstalk platform versions for preconfigured Docker were current between April 7, 2016 and June 26, 2016:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  **Glassfish 4.1 (Docker) version 2.1.0** <br /> *64bit Debian jessie v2.1.0 running GlassFish 4.1 Java 8 (Preconfigured - Docker)*  | 2016.03 | Docker 1.9.1 | Debian Jessie | Java 8 | nginx 1.8.1 | Glassfish 4.1 | amazon/aws-eb-glassfish:4.1-jdk8-onbuild-3.5.1 |
@@ -930,8 +776,6 @@ The following Elastic Beanstalk platform versions for preconfigured Docker were 
 |  **Python 3.4 with uWSGI 2 (Docker) version 2.1.0** <br /> *64bit Debian jessie v2.1.0 running Python 3.4 (Preconfigured - Docker)*  | 2016.03 | Docker 1.9.1 | Debian Jessie | Python 3.4 | nginx 1.8.1 | uWSGI 2.0.8 | amazon/aws-eb-python:3.4.2-onbuild-3.5.1 |
 
 The following Elastic Beanstalk platform versions for preconfigured Docker were current between February 26, 2016 and April 7, 2016:
-
-****
 
 |  Platform Version and *Solution Stack Name*  |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -943,8 +787,6 @@ The following Elastic Beanstalk platform versions for preconfigured Docker were 
 
 The following Elastic Beanstalk platform versions for preconfigured Docker were current between February 11, 2016 and February 26, 2016:
 
-****
-
 |  Platform Version and *Solution Stack Name*  |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | **Glassfish 4.1 (Docker) version 2.0.7**<br />*64bit Debian jessie v2.0.7 running GlassFish 4.1 Java 8 (Preconfigured - Docker)* | 2015.09 | Docker 1.9.1 | Debian Jessie | Java 8 | nginx 1.8.0 | Glassfish 4.1 | amazon/aws-eb-glassfish:4.1-jdk8-onbuild-3.5.1 |
@@ -954,8 +796,6 @@ The following Elastic Beanstalk platform versions for preconfigured Docker were 
 | **Python 3.4 with uWSGI 2 (Docker) version 2.0.7**<br />*64bit Debian jessie v2.0.7 running Python 3.4 (Preconfigured - Docker)* | 2015.09 | Docker 1.9.1 | Debian Jessie | Python 3.4 | nginx 1.8.0 | uWSGI 2.0.8 | amazon/aws-eb-python:3.4.2-onbuild-3.5.1 |
 
 The following Elastic Beanstalk platform versions for preconfigured Docker were current between January 11, 2016 and February 11, 2016:
-
-****
 
 |  Platform Version and *Solution Stack Name*  |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -967,8 +807,6 @@ The following Elastic Beanstalk platform versions for preconfigured Docker were 
 
 The following Elastic Beanstalk platform versions for preconfigured Docker were current between November 4, 2015 and January 11, 2016:
 
-****
-
 |  Platform Version and *Solution Stack Name*  |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | **Glassfish 4.1 (Docker) version 2.0.4**<br />*64bit Debian jessie v2.0.4 running GlassFish 4.1 Java 8 (Preconfigured - Docker)* | 2015.09 | Docker 1.7.1 | Debian Jessie | Java 1.8.0\_40 | nginx 1.8.0 | Glassfish 4.1 | amazon/aws-eb-glassfish:4.1-jdk8-onbuild-3.5.1 |
@@ -978,8 +816,6 @@ The following Elastic Beanstalk platform versions for preconfigured Docker were 
 | **Python 3.4 with uWSGI 2 (Docker) version 2.0.4**<br />*64bit Debian jessie v2.0.4 running Python 3.4 (Preconfigured - Docker)* | 2015.09 | Docker 1.7.1 | Debian Jessie | Python 3.4 | nginx 1.8.0 | uWSGI 2.0.8 | amazon/aws-eb-python:3.4.2-onbuild-3.5.1 |
 
 The following Elastic Beanstalk platform versions for preconfigured Docker were current between September 25, 2015 and November 4, 2015:
-
-****
 
 |  Platform Version and *Solution Stack Name*  |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -991,8 +827,6 @@ The following Elastic Beanstalk platform versions for preconfigured Docker were 
 
 The following Elastic Beanstalk platform versions for preconfigured Docker were current between September 18, 2015 and September 25, 2015:
 
-****
-
 |  Platform Version and *Solution Stack Name*  |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | **Glassfish 4.1 (Docker) version 2.0.1**<br />*64bit Debian jessie v2.0.1 running GlassFish 4.1 Java 8 (Preconfigured - Docker)* | 2015.03 | Docker 1.6.2 | Debian Jessie | Java 1.8.0\_40 | nginx 1.6.2 | Glassfish 4.1 | amazon/aws-eb-glassfish:4.1-jdk8-onbuild-3.5.1 |
@@ -1002,8 +836,6 @@ The following Elastic Beanstalk platform versions for preconfigured Docker were 
 | **Python 3.4 with uWSGI 2 (Docker) version 2.0.1**<br />*64bit Debian jessie v2.0.1 running Python 3.4 (Preconfigured - Docker)* | 2015.03 | Docker 1.6.2 | Debian Jessie | Python 3.4 | nginx 1.6.2 | uWSGI 2.0.8 | amazon/aws-eb-python:3.4.2-onbuild-3.5.1 |
 
 The following Elastic Beanstalk platform versions for preconfigured Docker were current between August 11, 2015 and September 18, 2015:
-
-****
 
 | Platform Version and *Solution Stack Name* | AMI | Platform | Container OS | Language | Proxy Server | Application Server | Docker Image |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -1015,8 +847,6 @@ The following Elastic Beanstalk platform versions for preconfigured Docker were 
 
 The following Elastic Beanstalk platform versions for preconfigured Docker were current between August 3, 2015 and August 11, 2015:
 
-****
-
 | Platform Version and *Solution Stack Name* | AMI | Platform | Container OS | Language | Proxy Server | Application Server | Docker Image |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | **Glassfish 4.1 (Docker) version 1.4.6**<br />*64bit Debian jessie v1.4.6 running GlassFish 4.1 Java 8 (Preconfigured - Docker)* | 2015.03 | Docker 1.6.2 | Debian Jessie | Java 1.8.0\_40 | nginx 1.6.2 | Glassfish 4.1 | amazon/aws-eb-glassfish:4.1-jdk8-onbuild-3.5.1 |
@@ -1027,8 +857,6 @@ The following Elastic Beanstalk platform versions for preconfigured Docker were 
 
 The following Elastic Beanstalk platform versions for preconfigured Docker were current between June 15, 2015 and August 3, 2015:
 
-****
-
 | Platform Version and *Solution Stack Name* | AMI | Platform | Container OS | Language | Proxy Server | Application Server | Docker Image |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | **Glassfish 4.1 (Docker) version 1.4.3**<br />*64bit Debian jessie v1.4.3 running GlassFish 4.1 Java 8 (Preconfigured - Docker)* | 2015.03 | Docker 1.6.2 | Debian Jessie | Java 1.8.0\_40 | nginx 1.6.2 | Glassfish 4.1 | amazon/aws-eb-glassfish:4.1-jdk8-onbuild-3.5.1 |
@@ -1038,8 +866,6 @@ The following Elastic Beanstalk platform versions for preconfigured Docker were 
 | **Python 3.4 with uWSGI 2 (Docker) version 1.4.3**<br />*64bit Debian jessie v1.4.3 running Python 3.4 (Preconfigured - Docker)* | 2015.03 | Docker 1.6.2 | Debian Jessie | Python 3.4 | nginx 1.6.2 | uWSGI 2.0.8 | amazon/aws-eb-python:3.4.2-onbuild-3.5.1 |
 
 The following Elastic Beanstalk platform versions for preconfigured Docker were current between May 27, 2015 and June 15, 2015:
-
-****
 
 |  **Preconfigured Docker Configurations**  |
 | --- |
@@ -1052,8 +878,6 @@ The following Elastic Beanstalk platform versions for preconfigured Docker were 
 | 64bit Debian Jessie v1.4.1 running Python 3.4 (Preconfigured - Docker) | 2015.03 | Debian Jessie | 1.6.0 | Python 3.4 | nginx 1.6.2 | uWSGI 2.0.8 | amazon/aws-eb-python:3.4.2-onbuild-3.5.1 |
 
 The following Elastic Beanstalk platform versions for preconfigured Docker were current between May 8, 2015 and May 26, 2015:
-
-****
 
 |  **Preconfigured Docker Container Types**  |
 | --- |
@@ -1069,8 +893,6 @@ The following Elastic Beanstalk platform versions for preconfigured Docker were 
 
 The following Elastic Beanstalk platform versions for preconfigured Docker were current between April 22, 2015 and May 7, 2015:
 
-****
-
 |  **Preconfigured Docker Container Types**  |
 | --- |
 | **Name** | **AMI** | **Container Operating System** | **Docker Version** | **Language** | **Proxy Server** | **Application Server** | **Docker Image Name** |
@@ -1082,8 +904,6 @@ The following Elastic Beanstalk platform versions for preconfigured Docker were 
 | 64bit Debian Jessie v1.3.1 running Python 3.4 (Preconfigured - Docker) | 2015.03 | Debian Jessie | 1.5.0 | Python 3.4 | nginx 1.6.2 | uWSGI 2.0.8 | amazon/aws-eb-python:3.4.2-onbuild-3.5.1 |
 
 The following Elastic Beanstalk platform versions for preconfigured Docker were current between March 24, 2015 and April 21, 2015:
-
-****
 
 |  **Preconfigured Docker Container Types**  |
 | --- |
@@ -1097,8 +917,6 @@ The following Elastic Beanstalk platform versions for preconfigured Docker were 
 
 The following Elastic Beanstalk platform versions for preconfigured Docker were current between February 17, 2015 and March 23, 2015:
 
-****
-
 |  **Preconfigured Docker Container Types**  |
 | --- |
 | **Name** | **AMI** | **Container Operating System** | **Docker Version** | **Language** | **Proxy Server** | **Application Server** | **Docker Image Name** |
@@ -1111,8 +929,6 @@ The following Elastic Beanstalk platform versions for preconfigured Docker were 
 
 The following Elastic Beanstalk platform versions for preconfigured Docker were current between February 6, 2015 and February 16, 2015:
 
-****
-
 |  **Preconfigured Docker Container Types**  |
 | --- |
 | **Name** | **AMI** | **Container Operating System** | **Docker Version** | **Language** | **Proxy Server** | **Docker Image Name** |
@@ -1121,8 +937,6 @@ The following Elastic Beanstalk platform versions for preconfigured Docker were 
 | 64bit Debian Jessie v1.1.0 running Go 1.4 (Preconfigured - Docker) | 2014.09 | Debian Jessie | 1.3.3 | Go 1.4.1 | nginx 1.6.2 | golang:1.4.1-onbuild |
 
 The following Elastic Beanstalk platform versions for preconfigured Docker were current between January 28, 2015 and February 5, 2015:
-
-****
 
 |  **Preconfigured Docker Container Types**  |
 | --- |
@@ -1136,8 +950,6 @@ The following Elastic Beanstalk platform versions for preconfigured Docker were 
 
 The following Elastic Beanstalk platform versions for preconfigured Docker were current between December 13, 2014 and January 27, 2015:
 
-****
-
 |  **Preconfigured Docker Container Types**  |
 | --- |
 | **Name** | **AMI** | **Container Operating System** | **Docker Version** | **Language** | **Proxy Server** | **Application Server** | **Docker Image Name** |
@@ -1150,8 +962,6 @@ The following Elastic Beanstalk platform versions for preconfigured Docker were 
 
 The following Elastic Beanstalk platform versions for preconfigured Docker were current between November 26, 2014 and December 12, 2014:
 
-****
-
 |  **Preconfigured Docker Container Types**  |
 | --- |
 | **Name** | **AMI** | **Container Operating System** | **Docker Version** | **Language** | **Proxy Server** | **Application Server** | **Docker Image Name** |
@@ -1161,8 +971,6 @@ The following Elastic Beanstalk platform versions for preconfigured Docker were 
 | 64bit Debian Jessie v1.0.1 running Python 3.4 (Preconfigured - Docker) | 2014.09 | Debian Jessie | 1.3.2 | Python 3.4 | nginx 1.6.2 | uWSGI 2.0.8 | amazon/aws-eb-python:3.4.2-onbuild-3.5.1 |
 
 The following Elastic Beanstalk preconfigured Docker container types were current prior to November 25, 2014:
-
-****
 
 |  **Preconfigured Docker Container Types**  |
 | --- |

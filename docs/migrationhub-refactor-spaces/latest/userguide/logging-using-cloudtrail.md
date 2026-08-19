@@ -23,7 +23,7 @@ For an ongoing record of events in your AWS account, including events for Refact
 + [Receiving CloudTrail log files from multiple Regions](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/receive-cloudtrail-log-files-from-multiple-regions.html)
 + [Receiving CloudTrail log files from multiple accounts](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-receive-logs-from-multiple-accounts.html)
 
-All Refactor Spaces actions are logged by CloudTrail and are documented in the [Refactor Spaces API Reference](https://docs.aws.amazon.com//migrationhub-refactor-spaces/latest/APIReference/Welcome.html). For example, calls to the `CreateEnvironment`, `GetEnvironment` and `ListEnvironments` actions generate entries in the CloudTrail log files.
+All Refactor Spaces actions are logged by CloudTrail and are documented in the [Refactor Spaces API Reference](https://docs.aws.amazon.com/migrationhub-refactor-spaces/latest/APIReference/Welcome.html). For example, calls to the `CreateEnvironment`, `GetEnvironment` and `ListEnvironments` actions generate entries in the CloudTrail log files.
 
 Every event or log entry contains information about who generated the request. The identity information helps you determine the following:
 + Whether the request was made with root or IAM user credentials.

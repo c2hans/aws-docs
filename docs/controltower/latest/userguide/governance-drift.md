@@ -39,7 +39,7 @@ AWS Control Tower reports *control drift* regarding controls implemented with re
 **Inheritance drift for baselines and controls**
 + **Enabled baseline drift**
 
-  When baseline configurations on a member account are different than those applied to the parent OU, AWS Control Tower reports inheritance drift for enabled baselines (resource configurations) on those OUs and accounts. For more information about baselines, see [Types of baselines](https://docs.aws.amazon.com//controltower/latest/userguide/types-of-baselines.html).
+  When baseline configurations on a member account are different than those applied to the parent OU, AWS Control Tower reports inheritance drift for enabled baselines (resource configurations) on those OUs and accounts. For more information about baselines, see [Types of baselines](https://docs.aws.amazon.com/controltower/latest/userguide/types-of-baselines.html).
   + [Inheritance drift on enabled baselines](#drift-enabled-baseline)
 + **Enabled control drift**
 
@@ -299,9 +299,9 @@ In the AWS Control Tower console, you can view this inherited drift status in th
 
 **View and resolve drift programmatically**
 
-To view drift status programmatically, you can call the [`ListEnabledBaselines`](https://docs.aws.amazon.com//controltower/latest/APIReference/API_ListEnabledBaselines.html) API to view statuses for the enabled baselines on your OUs. To view statuses for individual accounts programmatically with the `ListEnabledBaselines` API, use the `includeChildren` flag.
+To view drift status programmatically, you can call the [`ListEnabledBaselines`](https://docs.aws.amazon.com/controltower/latest/APIReference/API_ListEnabledBaselines.html) API to view statuses for the enabled baselines on your OUs. To view statuses for individual accounts programmatically with the `ListEnabledBaselines` API, use the `includeChildren` flag.
 
- You can resolve this type of drift programmatically, by calling the [`ResetEnabledBaseline`](https://docs.aws.amazon.com//controltower/latest/APIReference/API_ResetEnabledBaseline.html) API.
+ You can resolve this type of drift programmatically, by calling the [`ResetEnabledBaseline`](https://docs.aws.amazon.com/controltower/latest/APIReference/API_ResetEnabledBaseline.html) API.
 
 ## Inheritance drift on enabled controls
 <a name="drift-enabled-controls"></a>
@@ -319,9 +319,9 @@ In the AWS Control Tower console, you can view this inherited drift status in th
 
 **View and resolve drift programmatically**
 
-To view inherited drift status for enabled controls programmatically, you can call the [`ListEnabledControls`](https://docs.aws.amazon.com//controltower/latest/APIReference/API_ListEnabledControls.html) API to view statuses for the enabled controls on your OUs. To view statuses for individual accounts programmatically with the `ListEnabledControls` API, use the `includeChildren` flag.
+To view inherited drift status for enabled controls programmatically, you can call the [`ListEnabledControls`](https://docs.aws.amazon.com/controltower/latest/APIReference/API_ListEnabledControls.html) API to view statuses for the enabled controls on your OUs. To view statuses for individual accounts programmatically with the `ListEnabledControls` API, use the `includeChildren` flag.
 
- You can resolve this type of inheritance drift programmatically, by calling the [`ResetEnabledControl`](https://docs.aws.amazon.com//controltower/latest/APIReference/API_ResetEnabledControl.html) API.
+ You can resolve this type of inheritance drift programmatically, by calling the [`ResetEnabledControl`](https://docs.aws.amazon.com/controltower/latest/APIReference/API_ResetEnabledControl.html) API.
 
 ## EventBridge creation
 <a name="eventbridge-creation"></a>

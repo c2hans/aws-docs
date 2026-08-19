@@ -24,11 +24,11 @@ Complete the following procedure to edit a security group.
 1. The following tabs and corresponding settings are available:
    + **Security group details** – Choose **Edit** in the **Security group details** section to edit the name.
    + **Messaging** – Manage messaging features for members of the group.
-     + **Burn-on-read** – Controls the maximum value that users can set for their burn-on-read timers in their Wickr clients. For more information, see [ Set message expiration and burn timers in the Wickr client](https://docs.aws.amazon.com//wickr/latest/userguide/message-timers.html).
-     + **Expiration timer** – Controls the maximum value that users can set for their message expiration timer in their Wickr clients. For more information, see [ Set message expiration and burn timers in the Wickr client](https://docs.aws.amazon.com//wickr/latest/userguide/message-timers.html).
-     + **Message forwarding** – Controls whether users can forward messages in their Wickr clients. For more information, see [ Forward messages in the Wickr client](https://docs.aws.amazon.com//wickr/latest/userguide/message-forwarding.html).
+     + **Burn-on-read** – Controls the maximum value that users can set for their burn-on-read timers in their Wickr clients. For more information, see [ Set message expiration and burn timers in the Wickr client](https://docs.aws.amazon.com/wickr/latest/userguide/message-timers.html).
+     + **Expiration timer** – Controls the maximum value that users can set for their message expiration timer in their Wickr clients. For more information, see [ Set message expiration and burn timers in the Wickr client](https://docs.aws.amazon.com/wickr/latest/userguide/message-timers.html).
+     + **Message forwarding** – Controls whether users can forward messages in their Wickr clients. For more information, see [ Forward messages in the Wickr client](https://docs.aws.amazon.com/wickr/latest/userguide/message-forwarding.html).
      + **Quick responses** – Set a list of quick responses for users to respond to messages.
-     + **Secure shredder intensity** – Configure how frequently the secure shredder control runs for users. For more information, see [ Messaging](https://docs.aws.amazon.com//wickr/latest/enterpriseadminguide/messaging.html).
+     + **Secure shredder intensity** – Configure how frequently the secure shredder control runs for users. For more information, see [ Messaging](https://docs.aws.amazon.com/wickr/latest/enterpriseadminguide/messaging.html).
    + **Calling** – Manage calling features for members of the group.
      + **Enable audio calling** – Users can initiate audio calls.
      + **Enable video calling and screen sharing** – Users can start video calls or share screen during call.
@@ -54,7 +54,7 @@ Complete the following procedure to edit a security group.
      + **Global federation** – The ability to federate with either Wickr Enterprise users or AWS users in a different network who belong to other regions. For example, a user on a Wickr network in AWS Canada (Central) Region, and a user in a network in AWS Europe (London) Region will be able to communicate with each other when global federation is turned **ON** for both networks.
      + **Restricted federation** – Allow list specific AWS Wickr or Wickr Enterprise networks that users can federate with. When configured, users can only communicate with external users in allow listed networks. Both networks must allow list each other to use restricted federation.
 
-       For information on guest federation, see [ Enable or disable guest users in AWS Wickr network](https://docs.aws.amazon.com//wickr/latest/adminguide/guest-users-enable-disable.html).
-   + **ATAK plugin configuration** – For more information on enabling ATAK, see [ What is ATAK?](https://docs.aws.amazon.com//wickr/latest/adminguide/what-is-atak.html).
+       For information on guest federation, see [ Enable or disable guest users in AWS Wickr network](https://docs.aws.amazon.com/wickr/latest/adminguide/guest-users-enable-disable.html).
+   + **ATAK plugin configuration** – For more information on enabling ATAK, see [ What is ATAK?](https://docs.aws.amazon.com/wickr/latest/adminguide/what-is-atak.html).
 
 1. Choose **Save** to save edits you make to the security group details.

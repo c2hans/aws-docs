@@ -38,7 +38,7 @@ If you encounter this issue, check your email. You might have been sent confirma
 **Failed StackSets**: Another possible cause of landing zone launch failure is CloudFormation StackSet failure. AWS Security Token Service (STS) regions must be enabled in the management account for all AWS Regions that AWS Control Tower is governing, so that the provisioning can be successful; otherwise, stack sets will fail to launch.
 
 **Action to take**
-Be sure to enable all of your required AWS Security Token Service [ (STS) endpoint regions](https://console.aws.amazon.com//iam/home#/account_settings) before you launch AWS Control Tower.
+Be sure to enable all of your required AWS Security Token Service [ (STS) endpoint regions](https://console.aws.amazon.com/iam/home#/account_settings) before you launch AWS Control Tower.
 
 **To remediate failed stack sets and retry the setup**
 
@@ -69,7 +69,7 @@ Common reasons for a non-valid KMS key policy:
 **Action to take**
 Review your policy to check for these errors.
 
-For more information about AWS KMS key policies, see [Configure KMS keys](https://docs.aws.amazon.com//controltower/latest/userguide/configure-kms-keys.html) and [Backup prerequisites](https://docs.aws.amazon.com//controltower/latest/userguide/backup-prerequisites.html).
+For more information about AWS KMS key policies, see [Configure KMS keys](https://docs.aws.amazon.com/controltower/latest/userguide/configure-kms-keys.html) and [Backup prerequisites](https://docs.aws.amazon.com/controltower/latest/userguide/backup-prerequisites.html).
 
 ## Unable to Update Landing Zone
 <a name="unable-to-update-landing-zone"></a>
@@ -83,11 +83,11 @@ Landing zone updates may fail for several reasons.
 
 **Prerequisites not met**
 
-A landing zone update must meet the same prerequisites as a landing zone setup. Before you update, review the [pre-launch checks](https://docs.aws.amazon.com//controltower/latest/userguide/getting-started-prereqs.html).
+A landing zone update must meet the same prerequisites as a landing zone setup. Before you update, review the [pre-launch checks](https://docs.aws.amazon.com/controltower/latest/userguide/getting-started-prereqs.html).
 
 **AWS Config resources exist in Security OU accounts**
 
-Do not add AWS Config resources in your **Audit** and **Log archive** accounts. The landing zone update process cannot complete with these resources present. These restrictions are similar to those for enrolling an account or setting up a landing zone for the first time. For more information, see [Enroll accounts that have existing AWS Config resources](https://docs.aws.amazon.com//controltower/latest/userguide/existing-config-resources.html).
+Do not add AWS Config resources in your **Audit** and **Log archive** accounts. The landing zone update process cannot complete with these resources present. These restrictions are similar to those for enrolling an account or setting up a landing zone for the first time. For more information, see [Enroll accounts that have existing AWS Config resources](https://docs.aws.amazon.com/controltower/latest/userguide/existing-config-resources.html).
 
 **Closed accounts exist**
 
@@ -156,7 +156,7 @@ If the reason for the first enrollment failure was that you forgot to create the
 
 In this case, you must take two recovery steps before you can proceed with enrolling your existing account. First, you must terminate the Account Factory provisioned product through the AWS Service Catalog console. Next, you must use the AWS Organizations console to manually move the account out of the OU and back to the root. After that is done, create the `AWSControlTowerExecution` role in the account, and then fill in the **Enroll account** form again.
 
-Another possible cause of enrollment failure is that the account has existing AWS Config resources. In that case, see [Enroll accounts that have existing AWS Config resources](https://docs.aws.amazon.com//controltower/latest/userguide/existing-config-resources.html) for instructions on how you can modify your existing resources.
+Another possible cause of enrollment failure is that the account has existing AWS Config resources. In that case, see [Enroll accounts that have existing AWS Config resources](https://docs.aws.amazon.com/controltower/latest/userguide/existing-config-resources.html) for instructions on how you can modify your existing resources.
 
 ## Unable to Update an Account Factory Account
 <a name="unable-to-update-account"></a>
@@ -209,7 +209,7 @@ If AWS Config is enabled in any AWS Region supported by AWS Control Tower, you m
 
 **Common cause:** When the AWS Config service is enabled on an AWS account, it creates a configuration recorder and delivery channel with a default naming. If you disable the AWS Config service through the console, it does not delete the configuration recorder or the delivery channel. You must delete them through the CLI, or modify them for AWS Control Tower use. If the AWS Config service is enabled in any one of the Regions supported by AWS Control Tower, it can result in this failure.
 
-If the account has existing AWS Config resources, see [Enroll accounts that have existing AWS Config resources](https://docs.aws.amazon.com//controltower/latest/userguide/existing-config-resources.html) for instructions on how you can modify your existing resources.
+If the account has existing AWS Config resources, see [Enroll accounts that have existing AWS Config resources](https://docs.aws.amazon.com/controltower/latest/userguide/existing-config-resources.html) for instructions on how you can modify your existing resources.
 
 **Action to take:** Delete the configuration recorder and delivery channel in all supported regions. Disabling AWS Config is not enough, the configuration recorder and delivery channel must be deleted by means of the CLI. After you’ve deleted the configuration recorder and delivery channel from the CLI, you can try again to launch AWS Control Tower and enroll the account.
 
@@ -232,8 +232,8 @@ Here are some example AWS Config CLI commands you can use to determine the statu
 + `aws configservice delete-configuration-recorder --configuration-recorder-name {{NAME-FROM-DESCRIBE-OUTPUT}}`
 
 **For more information, see the AWS Config documentation**
-+  [Managing the Configuration Recorder (AWS CLI)](https://docs.aws.amazon.com//config/latest/developerguide/stop-start-recorder.html#managing-recorder_cli)
-+   [Managing the Delivery Channel](https://docs.aws.amazon.com//config/latest/developerguide/manage-delivery-channel.html)
++  [Managing the Configuration Recorder (AWS CLI)](https://docs.aws.amazon.com/config/latest/developerguide/stop-start-recorder.html#managing-recorder_cli)
++   [Managing the Delivery Channel](https://docs.aws.amazon.com/config/latest/developerguide/manage-delivery-channel.html)
 
 ## No Launch Paths Found Error
 <a name="no-launch-paths-found"></a>

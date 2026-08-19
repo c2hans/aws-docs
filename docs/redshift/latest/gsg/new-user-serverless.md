@@ -14,7 +14,7 @@ If you are a first-time user of Amazon Redshift Serverless, we recommend that yo
 ## Sign up for an AWS account
 <a name="sign-up-for-aws"></a>
 
-To get started with AWS, you need an AWS account. For information about creating an AWS account, see [Getting started with an AWS account](https://docs.aws.amazon.com//accounts/latest/reference/getting-started.html) in the *AWS Account Management Reference Guide*.
+To get started with AWS, you need an AWS account. For information about creating an AWS account, see [Getting started with an AWS account](https://docs.aws.amazon.com/accounts/latest/reference/getting-started.html) in the *AWS Account Management Reference Guide*.
 
 ## Creating a data warehouse with Amazon Redshift Serverless
 <a name="serverless-console-resource-creation"></a>
@@ -56,7 +56,7 @@ Now that you've set up your data warehouse with Amazon Redshift Serverless, you 
 1. To launch query editor v2 from the Amazon Redshift Serverless console, choose **Query data**. When you invoke query editor v2 from the Amazon Redshift Serverless console, a new browser tab opens with the query editor. The query editor v2 connects from your client machine to the Amazon Redshift Serverless environment.
 ![The query data button in the Amazon Redshift Serverless console launches query editor v2.](http://docs.aws.amazon.com/redshift/latest/gsg/images/serverless-query-data-button.png)
 
-1. For this guide, you'll use your AWS administrator account and the default AWS KMS key. For information about configuring the query editor v2, including which permissions are needed, see [Configuring your AWS account](https://docs.aws.amazon.com//redshift/latest/mgmt/query-editor-v2-getting-started.html) in the *Amazon Redshift Management Guide*. For information about configuring Amazon Redshift to use a customer managed key, or to change the KMS key that Amazon Redshift uses, see [ Changing the AWS KMS key for a namespace](https://docs.aws.amazon.com/redshift/latest/mgmt/serverless-workgroups-and-namespaces-rotate-kms-key.html).
+1. For this guide, you'll use your AWS administrator account and the default AWS KMS key. For information about configuring the query editor v2, including which permissions are needed, see [Configuring your AWS account](https://docs.aws.amazon.com/redshift/latest/mgmt/query-editor-v2-getting-started.html) in the *Amazon Redshift Management Guide*. For information about configuring Amazon Redshift to use a customer managed key, or to change the KMS key that Amazon Redshift uses, see [ Changing the AWS KMS key for a namespace](https://docs.aws.amazon.com/redshift/latest/mgmt/serverless-workgroups-and-namespaces-rotate-kms-key.html).
 
 1. To connect to a workgroup, choose the workgroup name in the tree-view panel.
 ![To connect to a workgroup, choose the workgroup name in the tree-view panel.](http://docs.aws.amazon.com/redshift/latest/gsg/images/serverless-connecting-to-a-workgroup.png)

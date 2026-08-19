@@ -30,7 +30,7 @@ You can use the console or the AWS CLI to register and publish an environment te
 
 **Use the console to register and publish a new environment template.**
 
-1. In the [AWS Proton console](https://console.aws.amazon.com//proton/), choose **Environment templates**.
+1. In the [AWS Proton console](https://console.aws.amazon.com/proton/), choose **Environment templates**.
 
 1. Choose **Create environment template**.
 
@@ -91,7 +91,7 @@ You can use the console or the AWS CLI to register and publish an environment te
 
 For more information, see [Versioned templates](ag-template-versions.md).
 
-1. In the [AWS Proton console](https://console.aws.amazon.com//proton/), choose **Environment Templates**.
+1. In the [AWS Proton console](https://console.aws.amazon.com/proton/), choose **Environment Templates**.
 
 1. In the list of environment templates, choose the name of the environment template that you want to create a major or minor version for.
 
@@ -304,7 +304,7 @@ You can use the console or the AWS CLI to register and publish a service templat
 
 **Use the console to register and publish a new service template.**
 
-1. In the [AWS Proton console](https://console.aws.amazon.com//proton/), choose **Service templates**.
+1. In the [AWS Proton console](https://console.aws.amazon.com/proton/), choose **Service templates**.
 
 1. Choose **Create service template**.
 
@@ -364,7 +364,7 @@ You can use the console or the AWS CLI to register and publish a service templat
 
 For more information, see [Versioned templates](ag-template-versions.md).
 
-1. In the [AWS Proton console](https://console.aws.amazon.com//proton/), choose **Service Templates**.
+1. In the [AWS Proton console](https://console.aws.amazon.com/proton/), choose **Service Templates**.
 
 1. In the list of service templates, choose the name of the service template that you want to create a major or minor version for.
 

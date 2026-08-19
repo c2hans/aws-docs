@@ -31,7 +31,7 @@ To learn more about IAM credentials or sign up for an account, visit the [AWS Co
 To install the AWS Toolkit for Visual Studio, find your version of Visual Studio from the following procedures and complete the necessary steps. Download links for all versions of the AWS Toolkit for Visual Studio can be found at the [AWS Toolkit for Visual Studio](https://aws.amazon.com/visualstudio/) landing page.
 
 **Note**
-If you encounter issues while installing the AWS Toolkit for Visual Studio, see the [Troubleshooting installation issues](https://docs.aws.amazon.com//toolkit-for-visual-studio/latest/user-guide/setup-troubleshoot.html) topic in this guide.
+If you encounter issues while installing the AWS Toolkit for Visual Studio, see the [Troubleshooting installation issues](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/setup-troubleshoot.html) topic in this guide.
 
 ### Installing the AWS Toolkit for Visual Studio for Visual Studio 2022
 <a name="install-2022"></a>

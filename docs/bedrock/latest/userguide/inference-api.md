@@ -15,7 +15,6 @@ Restrictions apply to the following operations: `InvokeModel`, `InvokeModelWithR
 
 For model inference, you need to determine the following parameters:
 + Model ID – The ID or Amazon Resource Name (ARN) of the model or inference profile to use in the `modelId` field for inference. The following table describes how to find IDs for different types of resources:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/inference-api.html)
 + Request body – Contains the inference parameters for a model and other configurations. Each base model has its own inference parameters. The inference parameters for a custom or provisioned model depends on the base model from which it was created. For more information, see [Inference request parameters and response fields for foundation models](model-parameters.md).
 
@@ -33,16 +32,12 @@ Restrictions apply to the following operations: `InvokeModel`, `InvokeModelWithR
 
 The following fields are required:
 
-****
-
 | Field | Use case |
 | --- | --- |
 | modelId | To specify the model, inference profile, or prompt from Prompt management to use. To learn how to find this value, see [Inference using Invoke API](#inference-api). |
 | body | To specify the inference parameters for a model. To see inference parameters for different models, see [Inference request parameters and response fields for foundation models](model-parameters.md). If you specify a prompt from Prompt management in the modelId field, omit this field (if you include it, it will be ignored). |
 
 The following fields are optional:
-
-****
 
 | Field | Use case |
 | --- | --- |
@@ -71,7 +66,7 @@ For the image and video examples, you'll be asked to use your own image and vide
 You might have to convert images or videos into a base64-encoded string or upload them to an Amazon S3 location. In the examples, you'll have to replace the placeholders with the actual base64-encoded string or S3 location.
 
 #### Generate text with a text prompt
-<a name="w2aac15c15c30c13c19c11"></a>
+<a name="w2aac15c15c24c13c19c11"></a>
 
 The following examples generate a text response to a text prompt using the Amazon Titan Text Premier model. Choose the tab for your preferred method, and then follow the steps:
 
@@ -147,7 +142,7 @@ print(response_text)
 ------
 
 #### Generate text with a text prompt using service tier
-<a name="w2aac15c15c30c13c19c13"></a>
+<a name="w2aac15c15c24c13c19c13"></a>
 
 The following examples generate a text response to a text prompt using the OpenAI GPT model with a service tier to prioritize the request. Choose the tab for your preferred method, and then follow the steps:
 
@@ -220,7 +215,7 @@ print(response_body)
 ------
 
 #### Generate an image with a text prompt
-<a name="w2aac15c15c30c13c19c15"></a>
+<a name="w2aac15c15c24c13c19c15"></a>
 
 The following code examples generate an image using a text prompt with the Stable Diffusion XL 1.0 model. Choose the tab for your preferred method, and then follow the steps:
 
@@ -311,7 +306,7 @@ print(f"The generated image has been saved to {image_path}")
 ------
 
 #### Generate embeddings from text
-<a name="w2aac15c15c30c13c19c19"></a>
+<a name="w2aac15c15c24c13c19c19"></a>
 
 The following examples use the Amazon Titan Text Embeddings V2 model to generate binary embeddings for a text input. Choose the tab for your preferred method, and then follow the steps:
 
@@ -418,7 +413,7 @@ if __name__ == "__main__":
 ------
 
 #### Generate embeddings from an image
-<a name="w2aac15c15c30c13c19c21"></a>
+<a name="w2aac15c15c24c13c19c21"></a>
 
 The following examples use the Amazon Titan Multimodal Embeddings G1 model to generate embeddings for an image input. Choose the tab for your preferred method, and then follow the steps:
 
@@ -564,7 +559,7 @@ if __name__ == "__main__":
 ------
 
 #### Generate a text response to an image with an accompanying text prompt
-<a name="w2aac15c15c30c13c19c23"></a>
+<a name="w2aac15c15c24c13c19c23"></a>
 
 Choose the tab for your preferred method, and then follow the steps:
 
@@ -723,7 +718,7 @@ if __name__ == "__main__":
 ------
 
 #### Generate a text response to a video uploaded to Amazon S3 with an accompanying text prompt
-<a name="w2aac15c15c30c13c19c25"></a>
+<a name="w2aac15c15c24c13c19c25"></a>
 
 The following examples show how to generate a response with the Amazon Nova Lite model, given a video you upload to an S3 bucket and an accompanying text prompt.
 
@@ -869,7 +864,7 @@ if __name__ == "__main__":
 ------
 
 #### Generate a text response to a video converted to a base64-encoded string with an accompanying text prompt
-<a name="w2aac15c15c30c13c19c27"></a>
+<a name="w2aac15c15c24c13c19c27"></a>
 
 The following examples show how to generate a response with the Amazon Nova Lite model, given a video converted to a base64-encoded string and an accompanying text prompt. Choose the tab for your preferred method, and then follow the steps:
 

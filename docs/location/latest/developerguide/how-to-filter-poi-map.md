@@ -5,12 +5,143 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/how-to-fi
 # How to filter POI on the map
 <a name="how-to-filter-poi-map"></a>
 
-Amazon Location Service allows you to select the POI (point-of-interest) categories relevant to your use case. Learn more about the standard map style, [Rich POI](https://docs.aws.amazon.com/location/latest/developerguide/standard-map-style.html#rich-poi)
+With Amazon Location Service, you can control which points of interest (POIs) appear on your map and how many are shown. The recommended approach uses the `PoiCategories` and `PoiDensity` query parameters in the [GetStyleDescriptor](https://docs.aws.amazon.com/location/latest/APIReference/API_geomaps_GetStyleDescriptor.html) API. Filtering is configured server-side, so maps display correctly with no additional client-side code — on web, mobile, and headless renderers alike.
 
-## Filter POI
-<a name="test-collapse-me"></a>
+For styles that do not support these parameters, you can use client-side layer visibility toggling as a fallback. For more information about supported styles and values, see [Rich POI](https://docs.aws.amazon.com/location/latest/developerguide/standard-map-style.html#standard-rich-poi).
 
-In this example, you display an interactive map that allows users to filter on POI categories.
+## Filter POI using GetStyleDescriptor (recommended)
+<a name="filter-poi-server-side"></a>
+
+Pass `PoiCategories` and `PoiDensity` as query parameters when requesting the style descriptor. Amazon Location Service returns a style that renders only the requested categories at the chosen density.
+
+------
+#### [ Filter by category ]
+
+Show only food and transportation POIs:
+
+```
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>POI Category Filter</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5.x/dist/maplibre-gl.css" />
+        <script src="https://unpkg.com/maplibre-gl@5.x/dist/maplibre-gl.js"></script>
+    </head>
+    <body style="margin: 0; padding: 0;">
+        <div id="map" style="width: 100%; height: 100vh;"></div>
+        <script>
+            const apiKey = "YOUR_API_KEY";
+            const region = "eu-central-1";
+            const mapStyle = "Standard";
+            const colorScheme = "Light";
+
+            // Filter to show only FoodAndDrink and Transportation POIs
+            // Each category is passed as a separate query parameter
+            const styleUrl = `https://maps.geo.${region}.amazonaws.com/v2/styles/${mapStyle}/descriptor?key=${apiKey}&color-scheme=${colorScheme}&poi-categories=FoodAndDrink&poi-categories=Transportation`;
+
+            const map = new maplibregl.Map({
+                container: "map",
+                style: styleUrl,
+                center: [-73.966148, 40.781803],
+                zoom: 15
+            });
+        </script>
+    </body>
+</html>
+```
+
+------
+#### [ Control density ]
+
+Reduce POI clutter by setting density to Sparse:
+
+```
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>POI Density Control</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5.x/dist/maplibre-gl.css" />
+        <script src="https://unpkg.com/maplibre-gl@5.x/dist/maplibre-gl.js"></script>
+    </head>
+    <body style="margin: 0; padding: 0;">
+        <div id="map" style="width: 100%; height: 100vh;"></div>
+        <script>
+            const apiKey = "YOUR_API_KEY";
+            const region = "eu-central-1";
+            const mapStyle = "Standard";
+            const colorScheme = "Light";
+
+            // Set POI density to Sparse for a cleaner map
+            const poiDensity = "Sparse";
+
+            const styleUrl = `https://maps.geo.${region}.amazonaws.com/v2/styles/${mapStyle}/descriptor?key=${apiKey}&color-scheme=${colorScheme}&poi-density=${poiDensity}`;
+
+            const map = new maplibregl.Map({
+                container: "map",
+                style: styleUrl,
+                center: [-73.966148, 40.781803],
+                zoom: 15
+            });
+        </script>
+    </body>
+</html>
+```
+
+------
+#### [ Combined ]
+
+Show only SightsAndMuseums and FoodAndDrink at Dense level — ideal for a tourist map:
+
+```
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>POI Tourist Map</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5.x/dist/maplibre-gl.css" />
+        <script src="https://unpkg.com/maplibre-gl@5.x/dist/maplibre-gl.js"></script>
+    </head>
+    <body style="margin: 0; padding: 0;">
+        <div id="map" style="width: 100%; height: 100vh;"></div>
+        <script>
+            const apiKey = "YOUR_API_KEY";
+            const region = "eu-central-1";
+            const mapStyle = "Standard";
+            const colorScheme = "Light";
+
+            // Combine category filtering with density control
+            // Each category is passed as a separate query parameter
+            const poiDensity = "Dense";
+
+            const styleUrl = `https://maps.geo.${region}.amazonaws.com/v2/styles/${mapStyle}/descriptor?key=${apiKey}&color-scheme=${colorScheme}&poi-categories=SightsAndMuseums&poi-categories=FoodAndDrink&poi-density=${poiDensity}`;
+
+            const map = new maplibregl.Map({
+                container: "map",
+                style: styleUrl,
+                center: [-73.966148, 40.781803],
+                zoom: 15
+            });
+        </script>
+    </body>
+</html>
+```
+
+------
+
+**Note**
+The `PoiCategories` and `PoiDensity` parameters are supported on the Standard and Hybrid styles.
+
+## Filter POI using client-side layer toggling (fallback)
+<a name="filter-poi-client-side"></a>
+
+For map styles that do not support server-side POI filtering, you can toggle MapLibre layer visibility on the client side. This approach requires knowledge of the specific layer names in the style descriptor.
+
+In this example, you display an interactive map that allows you to filter on POI categories by toggling layer visibility.
 
 ------
 #### [ Index.html ]

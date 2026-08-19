@@ -6,10 +6,11 @@ source_url: https://docs.aws.amazon.com/signin/latest/userguide/signin-doc-histo
 <a name="signin-doc-history"></a>
 
 The following table describes important additions to the AWS Sign-In documentation. We also update the documentation frequently to address the feedback that you send us.
-+ **Latest major documentation update: **June 10, 2026
++ **Latest major documentation update: **August 17, 2026
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [Sign in with a login you already own](https://docs.aws.amazon.com/signin/latest/userguide/sign-in-project.html) | Started the release of our new AWS sign in experience. Sign up for AWS (new) supports using a login you already own. We're currently releasing our new experience to a limited number of customers. You might not be able to access this experience yet. | August 17, 2026 |
 | [Support for Sign-in resource-based policies and resource control policies](https://docs.aws.amazon.com/signin/latest/userguide/console-access-control.html) | Added documentation for controlling AWS Management Console access by using Sign-in resource-based policies and resource control policies (RCPs), a new condition keys reference, the `AWSSignInResourcePolicyManagement` managed policy, and related troubleshooting. | June 10, 2026 |
 | [Support for Sign in with GitHub and Amazon](https://docs.aws.amazon.com/signin/latest/userguide/sign-in-builder-id.html) | AWS Sign-In now supports **Sign in with GitHub** and **Sign in with Amazon** so you can create an AWS Builder ID using your GitHub or Amazon Account. | March 10, 2026 |
 | [Support for Sign in with Apple](https://docs.aws.amazon.com/signin/latest/userguide/sign-in-builder-id.html) | AWS Sign-In now supports **Sign in with Apple** so you can create an AWS Builder ID using your Apple Account. AWS Builder ID topics updated and new troubleshooting topics added to [Troubleshooting AWS Builder ID issues](https://docs.aws.amazon.com/signin/latest/userguide/troubleshooting-builder-id-issues.html). | February 5, 2026 |

@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsa
 
 AWS Account Management provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="account-GetAccountInformation"></a>[GetAccountInformation](https://docs.aws.amazon.com/accounts/latest/reference/API_GetAccountInformation.html) | Retrieve the account information for an account | Read |

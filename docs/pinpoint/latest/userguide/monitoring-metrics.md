@@ -19,8 +19,6 @@ The following topics describe the metrics that Amazon Pinpoint exports to CloudW
 ## Metrics related to message delivery
 <a name="monitoring-metrics-delivery"></a>
 
-****
-
 | Metric | Description |
 | --- | --- |
 | `DirectSendMessagePermanentFailure` | The number of messages that weren't sent because of a permanent issue.<br />This type of issue usually occurs when an endpoint is expired or invalid. When this type of issue occurs, Amazon Pinpoint doesn't attempt to redeliver the message.<br />Units: *Count*<br />Dimensions: ApplicationId, Channel |
@@ -34,16 +32,12 @@ The following topics describe the metrics that Amazon Pinpoint exports to CloudW
 ## Metrics related to endpoints
 <a name="monitoring-metrics-endpoints"></a>
 
-****
-
 | Metric | Description |
 | --- | --- |
 | `EndpointRegistrationFailure` | The number of endpoint registrations submitted through an AWS SDK or the Amazon Pinpoint API that couldn't be imported. <br />This type of issue usually occurs when an incoming endpoint record is invalid.<br />Units: *Count*<br />Dimensions: ApplicationId |
 
 ## Metrics related to import jobs
 <a name="monitoring-metrics-import-jobs"></a>
-
-****
 
 | Metric | Description |
 | --- | --- |
@@ -54,8 +48,6 @@ The following topics describe the metrics that Amazon Pinpoint exports to CloudW
 ## Metrics related to one-time passwords
 <a name="monitoring-metrics-one-time-passwords"></a>
 
-****
-
 | Metric | Description |
 | --- | --- |
 | `OTPVerificationSuccess` | The number of One-Time Password (OTP) verification requests that succeeded.<br />Units: *Count*<br />Dimensions: ApplicationId |
@@ -65,8 +57,6 @@ The following topics describe the metrics that Amazon Pinpoint exports to CloudW
 
 ## Metrics related to events
 <a name="monitoring-metrics-events"></a>
-
-****
 
 | Metric | Description |
 | --- | --- |

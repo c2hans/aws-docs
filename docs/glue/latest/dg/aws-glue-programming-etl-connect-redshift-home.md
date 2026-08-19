@@ -68,20 +68,17 @@ The AWS Glue job needs a role to access the Amazon S3 bucket. You do not need IA
 1. Add a self-referencing rule to allow AWS Glue components to communicate. Specifically, add or confirm that there is a rule of **Type** `All TCP`, **Protocol** is `TCP`, **Port Range** includes all ports, and whose **Source** is the same security group name as the **Group ID**.
 
    The inbound rule looks similar to the following:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-etl-connect-redshift-home.html)
 
    For example:
 ![An example of a self-referencing inbound rule.](http://docs.aws.amazon.com/glue/latest/dg/images/SetupSecurityGroup-Start.png)
 
 1. Add a rule for outbound traffic also. Either open outbound traffic to all ports, for example:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-etl-connect-redshift-home.html)
 
    Or create a self-referencing rule where **Type** `All TCP`, **Protocol** is `TCP`, **Port Range** includes all ports, and whose **Destination** is the same security group name as the **Group ID**. If using an Amazon S3 VPC endpoint, also add an HTTPS rule for Amazon S3 access. The {{s3-prefix-list-id}} is required in the security group rule to allow traffic from the VPC to the Amazon S3 VPC endpoint.
 
    For example:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-etl-connect-redshift-home.html)
 
 ### Set up AWS Glue
@@ -128,7 +125,7 @@ You will need to manually provide `PhysicalConnectionRequirements` for your Amaz
 
 **Additional Prerequisites:**You will need the name of your Amazon Redshift table ({{redshift-table-name}}. You will need the JDBC connection information for the Amazon Redshift cluster storing that table. You will supply your connection information with {{host}}, {{port}}, {{redshift-database-name}}, {{username}} and {{password}}.
 
-You can retrieve your connection information from the Amazon Redshift console when working with Amazon Redshift clusters. When using Amazon Redshift serverless, consult [Connecting to Amazon Redshift Serverless](https://docs.aws.amazon.com//redshift/latest/mgmt/serverless-connecting.html) in the Amazon Redshift documentation.
+You can retrieve your connection information from the Amazon Redshift console when working with Amazon Redshift clusters. When using Amazon Redshift serverless, consult [Connecting to Amazon Redshift Serverless](https://docs.aws.amazon.com/redshift/latest/mgmt/serverless-connecting.html) in the Amazon Redshift documentation.
 
 **Configuration:** In your function options you will identify your connection parameters with `url`, `dbtable`, `user` and `password`. You will identify your Amazon S3 temporary directory with `redshift_tmp_dir`. You can specify your IAM role using `aws_iam_role` when you use `from_options`. The syntax is similar to connecting through the Data Catalog, but you put the parameters in the `connection_options` map.
 

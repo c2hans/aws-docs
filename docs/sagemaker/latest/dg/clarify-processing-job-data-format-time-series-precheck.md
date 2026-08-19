@@ -10,7 +10,7 @@ Amazon SageMaker Clarify is no longer open to new customers. Existing customers 
 
 You are advised to deploy your model to a SageMaker AI real-time inference endpoint and send requests to the endpoint. Manually examine the requests and responses to make sure that both are compliant with the requirements in the [Endpoint requests for time series data](clarify-processing-job-data-format-time-series-request-jsonlines.md) and [Endpoint response for time series data](clarify-processing-job-data-format-time-series-response-json.md) sections. If your model container supports batch requests, you can start with a single record request and then try two or more records.
 
-The following commands demonstrate how to request a response using the AWS CLI. The AWS CLI is pre-installed in Studio and SageMaker Notebook instances. To install the AWS CLI, follow the [installation guide](https://aws.amazon.com//cli/).
+The following commands demonstrate how to request a response using the AWS CLI. The AWS CLI is pre-installed in Studio and SageMaker Notebook instances. To install the AWS CLI, follow the [installation guide](https://aws.amazon.com/cli/).
 
 ```
 aws sagemaker-runtime invoke-endpoint \

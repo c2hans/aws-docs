@@ -11,9 +11,6 @@ The AWS SDK for Kotlin can provide all three common telemetry signals: metrics, 
 
 By default, only logging is enabled and other telemetry signals are disabled in the SDK. This topic explains how to enable and configure telemetry output.
 
-**Important**
- [`TelemetryProvider`](/smithy-kotlin/api/latest/telemetry-api/aws.smithy.kotlin.runtime.telemetry/-telemetry-provider/index.html) is currently an experimental API that must be opted in to use.
-
 ## Configure a `TelemetryProvider`
 <a name="observability-conf-telemetry-provider"></a>
 

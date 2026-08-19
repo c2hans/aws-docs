@@ -51,7 +51,7 @@ Secrets Manager generates a CloudTrail log entry when you delete a secret. For m
 <a name="manage_delete-secret_cli"></a>
 
 **Example Delete a secret**
-The following [`delete-secret`](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/delete-secret.html) example deletes a secret. You can recover the secret with [`restore-secret`](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/restore-secret.html) until the date and time in the DeletionDate response field. To delete a secret that is replicated to other regions, first remove its replicas with [`remove-regions-from-replication`](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/remove-regions-from-replication.html), and then call [`delete-secret`](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/delete-secret.html).
+The following [`delete-secret`](https://docs.aws.amazon.com/cli/latest/reference/secretsmanager/delete-secret.html) example deletes a secret. You can recover the secret with [`restore-secret`](https://docs.aws.amazon.com/cli/latest/reference/secretsmanager/restore-secret.html) until the date and time in the DeletionDate response field. To delete a secret that is replicated to other regions, first remove its replicas with [`remove-regions-from-replication`](https://docs.aws.amazon.com/cli/latest/reference/secretsmanager/remove-regions-from-replication.html), and then call [`delete-secret`](https://docs.aws.amazon.com/cli/latest/reference/secretsmanager/delete-secret.html).
 
 ```
 aws secretsmanager delete-secret \
@@ -60,7 +60,7 @@ aws secretsmanager delete-secret \
 ```
 
 **Example Delete a secret immediately**
-The following [`delete-secret`](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/delete-secret.html) example deletes a secret immediately without a recovery window. You can't recover this secret.
+The following [`delete-secret`](https://docs.aws.amazon.com/cli/latest/reference/secretsmanager/delete-secret.html) example deletes a secret immediately without a recovery window. You can't recover this secret.
 
 ```
 aws secretsmanager delete-secret \
@@ -69,7 +69,7 @@ aws secretsmanager delete-secret \
 ```
 
 **Example Delete a replica secret**
-The following [`remove-regions-from-replication`](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/remove-regions-from-replication.html) example deletes a replica secret in eu-west-3. To delete a primary secret that is replicated to other regions, first delete the replicas and then call [`delete-secret`](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/delete-secret.html).
+The following [`remove-regions-from-replication`](https://docs.aws.amazon.com/cli/latest/reference/secretsmanager/remove-regions-from-replication.html) example deletes a replica secret in eu-west-3. To delete a primary secret that is replicated to other regions, first delete the replicas and then call [`delete-secret`](https://docs.aws.amazon.com/cli/latest/reference/secretsmanager/delete-secret.html).
 
 ```
 aws secretsmanager remove-regions-from-replication \

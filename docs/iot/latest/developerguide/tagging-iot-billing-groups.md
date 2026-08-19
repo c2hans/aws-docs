@@ -10,20 +10,20 @@ AWS IoT doesn't allow you to directly apply tags to individual things, but it do
 AWS IoT Core for LoRaWAN resources, such as wireless devices and gateways, can't be added to billing groups. However, they can be associated with AWS IoT things, which can be added to billing groups.
 
 The following commands are available:
-+ [AddThingToBillingGroup](https://docs.aws.amazon.com//iot/latest/apireference/API_AddThingToBillingGroup) adds a thing to a billing group.
-+ [CreateBillingGroup](https://docs.aws.amazon.com//iot/latest/apireference/API_CreateBillingGroup) creates a billing group.
-+ [DeleteBillingGroup](https://docs.aws.amazon.com//iot/latest/apireference/API_DeleteBillingGroup) deletes the billing group.
-+ [DescribeBillingGroup](https://docs.aws.amazon.com//iot/latest/apireference/API_DescribeBillingGroup) returns information about a billing group.
-+ [ListBillingGroups](https://docs.aws.amazon.com//iot/latest/apireference/API_ListBillingGroups) lists the billing groups you have created.
-+ [ListThingsInBillingGroup](https://docs.aws.amazon.com//iot/latest/apireference/API_ListThingsInBillingGroup) lists the things you have added to the given billing group.
-+ [RemoveThingFromBillingGroup](https://docs.aws.amazon.com//iot/latest/apireference/API_RemoveThingFromBillingGroup) removes the given thing from the billing group.
-+ [UpdateBillingGroup](https://docs.aws.amazon.com//iot/latest/apireference/API_UpdateBillingGroup) updates information about the billing group.
-+ [CreateThing](https://docs.aws.amazon.com//iot/latest/apireference/API_CreateThing) allows you to specify a billing group for the thing when you create it.
-+ [DescribeThing](https://docs.aws.amazon.com//iot/latest/apireference/API_DescribeThing) returns the description of a thing including the billing group the thing belongs to, if any.
++ [AddThingToBillingGroup](https://docs.aws.amazon.com/iot/latest/apireference/API_AddThingToBillingGroup) adds a thing to a billing group.
++ [CreateBillingGroup](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateBillingGroup) creates a billing group.
++ [DeleteBillingGroup](https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteBillingGroup) deletes the billing group.
++ [DescribeBillingGroup](https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeBillingGroup) returns information about a billing group.
++ [ListBillingGroups](https://docs.aws.amazon.com/iot/latest/apireference/API_ListBillingGroups) lists the billing groups you have created.
++ [ListThingsInBillingGroup](https://docs.aws.amazon.com/iot/latest/apireference/API_ListThingsInBillingGroup) lists the things you have added to the given billing group.
++ [RemoveThingFromBillingGroup](https://docs.aws.amazon.com/iot/latest/apireference/API_RemoveThingFromBillingGroup) removes the given thing from the billing group.
++ [UpdateBillingGroup](https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateBillingGroup) updates information about the billing group.
++ [CreateThing](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateThing) allows you to specify a billing group for the thing when you create it.
++ [DescribeThing](https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeThing) returns the description of a thing including the billing group the thing belongs to, if any.
 
 The AWS IoT Wireless API provides these actions to associate wireless devices and gateways with AWS IoT things.
-+ [AssociateWirelessDeviceWithThing](https://docs.aws.amazon.com//iot-wireless/latest/apireference/API_AssociateWirelessDeviceWithThing.html)
-+ [AssociateWirelessGatewayWithThing](https://docs.aws.amazon.com//iot-wireless/latest/apireference/API_AssociateWirelessGatewayWithThing.html)
++ [AssociateWirelessDeviceWithThing](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_AssociateWirelessDeviceWithThing.html)
++ [AssociateWirelessGatewayWithThing](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_AssociateWirelessGatewayWithThing.html)
 
 ## Viewing cost allocation and usage data
 <a name="tagging-iot-billing-groups-costs"></a>

@@ -14,8 +14,6 @@ Update existing defined termination protection for EC2 instances.
 ## Change Type Details
 <a name="ct-03ms1d7xrck8w-MAEu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-03ms1d7xrck8w |

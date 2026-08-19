@@ -22,6 +22,11 @@ The following screenshot shows the Executive Summary tab of the Kiro User Activi
 
 ![The Kiro User Activity Dashboard Executive Summary tab showing Active Users](http://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashboards/images/images/dashboards/kiro-executive-view.png)
 
+## Demo Dashboard
+<a name="demo-dashboard"></a>
+
+Get more familiar with the Dashboard using the live, interactive demo dashboard following this [link](https://cid.workshops.aws.dev/demo?dashboard=kiro-user-activity&sheet=default).
+
 The dashboard has five tabs:
 +  **Executive Summary**:
   + Active Users, Total Messages, Credits Used, Overage Credits, New Users KPIs

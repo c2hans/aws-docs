@@ -414,7 +414,7 @@ You must start the migration with `CLIENT_VERSION_CONFIG_COMPATIBLE_WITH_2X_PHAS
 ### Step 4: KCL 3.5.x\+ configuration overview and recommendations
 <a name="step4-configuration-migration"></a>
 
-For a detailed description of the configurations introduced post KCL 1.x that are relevant in KCL 3.5.x\+ see [KCL configurations](https://docs.aws.amazon.com//streams/latest/dev/kcl-configuration.html) and [KCL migration client configuration](https://docs.aws.amazon.com//streams/latest/dev/kcl-migration.html#client-configuration).
+For a detailed description of the configurations introduced post KCL 1.x that are relevant in KCL 3.5.x\+ see [KCL configurations](https://docs.aws.amazon.com/streams/latest/dev/kcl-configuration.html) and [KCL migration client configuration](https://docs.aws.amazon.com/streams/latest/dev/kcl-migration.html#client-configuration).
 
 **Important**
 Instead of directly creating objects of `checkpointConfig`, `coordinatorConfig`, `leaseManagementConfig`, `metricsConfig`, `processorConfig` and `retrievalConfig`, we recommend using `ConfigsBuilder` to set configurations in KCL 3.5.x\+ and later versions to avoid Scheduler initialization issues. `ConfigsBuilder` provides a more flexible and maintainable way to configure your KCL application.
@@ -423,7 +423,7 @@ Instead of directly creating objects of `checkpointConfig`, `coordinatorConfig`,
 <a name="kcl3-configuration-overview"></a>
 
 `billingMode`
-In KCL version 1.x, the default value for `billingMode` is set to `PROVISIONED`. However, with KCL version 3.5.x\+, the default `billingMode` is `PAY_PER_REQUEST` (on-demand mode). We recommend that you use the on-demand capacity mode for your lease table to automatically adjust the capacity based on your usage. For guidance on using provisioned capacity for your lease tables, see [Best practices for the lease table with provisioned capacity mode](https://docs.aws.amazon.com//streams/latest/dev/kcl-migration-lease-table.html).
+In KCL version 1.x, the default value for `billingMode` is set to `PROVISIONED`. However, with KCL version 3.5.x\+, the default `billingMode` is `PAY_PER_REQUEST` (on-demand mode). We recommend that you use the on-demand capacity mode for your lease table to automatically adjust the capacity based on your usage. For guidance on using provisioned capacity for your lease tables, see [Best practices for the lease table with provisioned capacity mode](https://docs.aws.amazon.com/streams/latest/dev/kcl-migration-lease-table.html).
 
 `idleTimeBetweenReadsInMillis`
 In KCL version 1.x, the default value for `idleTimeBetweenReadsInMillis` is set to is 1,000 (or 1 second). KCL version 3.5.x\+ sets the default value for `idleTimeBetweenReadsInMillis` to 1,500 (or 1.5 seconds), but Amazon DynamoDB Streams Kinesis Adapter overrides the default value to 1,000 (or 1 second).
@@ -440,6 +440,6 @@ This configuration defines the interval between successive polls by the shard co
 ### Step 5: Migrate from KCL 2.x to KCL 3.5.x\+
 <a name="step5-kcl2-to-kcl3"></a>
 
-To ensure a smooth transition and compatibility with the latest Kinesis Client Library (KCL) version, follow steps 5-8 in the migration guide's instructions for [upgrading from KCL 2.x to KCL 3.5.x\+](https://docs.aws.amazon.com//streams/latest/dev/kcl-migration-from-2-3.html#kcl-migration-from-2-3-worker-metrics).
+To ensure a smooth transition and compatibility with the latest Kinesis Client Library (KCL) version, follow steps 5-8 in the migration guide's instructions for [upgrading from KCL 2.x to KCL 3.5.x\+](https://docs.aws.amazon.com/streams/latest/dev/kcl-migration-from-2-3.html#kcl-migration-from-2-3-worker-metrics).
 
-For common KCL 3.5.x\+ troubleshooting issues, see [Troubleshooting KCL consumer applications](https://docs.aws.amazon.com//streams/latest/dev/troubleshooting-consumers.html).
+For common KCL 3.5.x\+ troubleshooting issues, see [Troubleshooting KCL consumer applications](https://docs.aws.amazon.com/streams/latest/dev/troubleshooting-consumers.html).

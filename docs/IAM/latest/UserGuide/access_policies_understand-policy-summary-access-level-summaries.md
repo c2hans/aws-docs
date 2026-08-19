@@ -12,8 +12,6 @@ Policy summaries include an access level summary that describes the action permi
 
 The following example describes the access provided by a policy for the given services. For examples of full JSON policy documents and their related summaries, see [Examples of policy summaries](access_policies_policy-summary-examples.md).
 
-****
-
 | Service | Access level | This policy provides the following |
 | --- | --- | --- |
 | IAM | Full access | Access to all actions within the IAM service. |

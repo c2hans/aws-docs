@@ -31,7 +31,7 @@ You can configure other AWS services to further analyze and act upon the data co
 <a name="monitoring-cloudtrail_cli"></a>
 
 **Example Retrieve Secrets Manager events from CloudTrail logs**
-The following [`lookup-events`](https://docs.aws.amazon.com//cli/latest/reference/cloudtrail/lookup-events.html) example looks up Secrets Manager events.
+The following [`lookup-events`](https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/lookup-events.html) example looks up Secrets Manager events.
 
 ```
 aws cloudtrail lookup-events \

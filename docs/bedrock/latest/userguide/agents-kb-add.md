@@ -38,10 +38,8 @@ To associate a knowledge base with an agent, send an [AssociateAgentKnowledgeBas
 
 The following list describes the fields in the request:
 + The following fields are required:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/agents-kb-add.html)
 + The following fields are optional:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/agents-kb-add.html)
 
 ------

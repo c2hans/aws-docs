@@ -14,8 +14,6 @@ Create a resource share through Resource Access Manager(RAM) to share up to 20 R
 ## Change Type Details
 <a name="ct-1jy64y7yt71m4-DARc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1jy64y7yt71m4 |

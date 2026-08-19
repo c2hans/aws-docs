@@ -342,7 +342,7 @@ For either the default Amazon S3 bucket or the bucket that you specify, you have
 + The default AWS service-side encryption with an Amazon S3 managed key (SSE-S3)
 +  An AWS Key Management Service (AWS KMS) key that you specify
 
-An AWS KMS key is an encryption key that you create and manage. For more information on KMS keys, see [AWS Key Management Service](https://docs.aws.amazon.com//kms/latest/developerguide/overview.html).
+An AWS KMS key is an encryption key that you create and manage. For more information on KMS keys, see [AWS Key Management Service](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html).
 
 You can specify an AWS KMS key using either the key ARN or the ARN of your AWS account.
 
@@ -351,7 +351,7 @@ If you use the IAM managed policy, `AmazonSageMakerFullAccess`, to grant a role 
 Use the following procedures to learn how to add a new cluster.
 
 **Note**
-Data Wrangler uses the Amazon Redshift Data API with temporary credentials. To learn more about this API, refer to [Using the Amazon Redshift Data API](https://docs.aws.amazon.com//redshift/latest/mgmt/data-api.html) in the Amazon Redshift Management Guide.
+Data Wrangler uses the Amazon Redshift Data API with temporary credentials. To learn more about this API, refer to [Using the Amazon Redshift Data API](https://docs.aws.amazon.com/redshift/latest/mgmt/data-api.html) in the Amazon Redshift Management Guide.
 
 **To connect to a Amazon Redshift cluster**
 
@@ -1312,7 +1312,7 @@ With Snowflake as a data source in Data Wrangler, you can quickly connect to Sno
 
 Once connected, you can interactively query data stored in Snowflake, transform data with more than 300 preconfigured data transformations, understand data and identify potential errors and extreme values with a set of robust preconfigured visualization templates, quickly identify inconsistencies in your data preparation workflow, and diagnose issues before models are deployed into production. Finally, you can export your data preparation workflow to Amazon S3 for use with other SageMaker AI features such as Amazon SageMaker Autopilot, Amazon SageMaker Feature Store and Amazon SageMaker Pipelines.
 
-You can encrypt the output of your queries using an AWS Key Management Service key that you've created. For more information about AWS KMS, see [AWS Key Management Service](https://docs.aws.amazon.com//kms/latest/developerguide/overview.html).
+You can encrypt the output of your queries using an AWS Key Management Service key that you've created. For more information about AWS KMS, see [AWS Key Management Service](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html).
 
 **Topics**
 + [Administrator Guide](#data-wrangler-snowflake-admin)

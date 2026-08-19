@@ -178,8 +178,6 @@ This section lists the data types that the DocumentDB connector uses for schema 
 
 The schema inference feature of the DocumentDB connector attempts to infer values as belonging to one of the following data types. The table shows the corresponding data types for Amazon DocumentDB, Java, and Apache Arrow.
 
-****
-
 | Apache Arrow | Java or DocDB |
 | --- | --- |
 | VARCHAR | String |
@@ -197,8 +195,6 @@ The schema inference feature of the DocumentDB connector attempts to infer value
 <a name="connectors-docdb-glue-data-types"></a>
 
 If you use AWS Glue for supplemental metadata, you can configure the following data types. The table shows the corresponding data types for AWS Glue and Apache Arrow.
-
-****
 
 | AWS Glue | Apache Arrow |
 | --- | --- |

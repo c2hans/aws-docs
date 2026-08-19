@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsm
 
 AWS Marketplace Catalog provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="aws-marketplace-DescribeAssessment"></a>[DescribeAssessment](https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/API_DescribeAssessment.html) | Return the details of an existing assessment | Read |

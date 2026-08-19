@@ -230,7 +230,7 @@ For production bots, we recommend implementing all four approaches. They are not
 ### Monitor the host instance
 <a name="monitor-host"></a>
 
-Use the built-in Amazon EC2 `StatusCheckFailed` metric to detect host-level failures. On supported instance types, Amazon EC2 simplified automatic recovery is enabled by default and automatically migrates the instance to healthy hardware when a status check fails. The alarm below is informational – it notifies you that a recovery occurred, but no manual action is required. For more information, see [Recover your instance](https://docs.aws.amazon.com//AWSEC2/latest/UserGuide/ec2-instance-recover.html) in the *Amazon EC2 User Guide*.
+Use the built-in Amazon EC2 `StatusCheckFailed` metric to detect host-level failures. On supported instance types, Amazon EC2 simplified automatic recovery is enabled by default and automatically migrates the instance to healthy hardware when a status check fails. The alarm below is informational – it notifies you that a recovery occurred, but no manual action is required. For more information, see [Recover your instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-recover.html) in the *Amazon EC2 User Guide*.
 
 ```
 HostDownAlarm:
@@ -491,7 +491,7 @@ The WickrLogger library reads log settings from the `processes.json` file in you
 }
 ```
 
-The defaults are `info` level, 10 MB maximum file size, and 5 rotated files. Set `LOG_LEVEL` to `debug` temporarily when troubleshooting, then revert to `info` for normal operation. For more information, see [Logging API](https://docs.aws.amazon.com//wickr/latest/botguide/logging-api.html) in the *Wickr IO Bot Guide*.
+The defaults are `info` level, 10 MB maximum file size, and 5 rotated files. Set `LOG_LEVEL` to `debug` temporarily when troubleshooting, then revert to `info` for normal operation. For more information, see [Logging API](https://docs.aws.amazon.com/wickr/latest/botguide/logging-api.html) in the *Wickr IO Bot Guide*.
 
 **Note**
 Always revert `LOG_LEVEL` to `info` after troubleshooting. Running at `debug` level in production generates excessive log volume and, on older bot versions, may log sensitive values such as authentication challenge tokens.
@@ -549,7 +549,7 @@ Complete the initial bot setup (the `add` and `start` commands in the WickrIO co
 
 **Archive logs to Amazon S3**
 
-For compliance or long-term retention, export Amazon CloudWatch Logs data to Amazon S3. You can configure automatic export using a Amazon CloudWatch Logs subscription filter with Amazon Data Firehose, or perform one-time exports from the Amazon CloudWatch console. For more information, see [Export log data to Amazon S3](https://docs.aws.amazon.com//AmazonCloudWatch/latest/logs/S3Export.html) in the *Amazon CloudWatch Logs User Guide*.
+For compliance or long-term retention, export Amazon CloudWatch Logs data to Amazon S3. You can configure automatic export using a Amazon CloudWatch Logs subscription filter with Amazon Data Firehose, or perform one-time exports from the Amazon CloudWatch console. For more information, see [Export log data to Amazon S3](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/S3Export.html) in the *Amazon CloudWatch Logs User Guide*.
 
 Set a retention policy on the Amazon CloudWatch Logs log group to control costs. For most bot deployments, 30 to 90 days of log retention in Amazon CloudWatch Logs is sufficient for troubleshooting, with older logs archived to Amazon S3.
 
@@ -667,7 +667,7 @@ Possible causes:
 
 1. Verify that the Amazon EC2 security group allows outbound TCP port 443. In the Amazon EC2 console, select the instance, choose the **Security** tab, and review the outbound rules for the attached security group.
 
-1. Allowlist the required Wickr domains for your AWS Region. The bot host must be able to reach the messaging gateway domain on TCP port 443. For the full list of domains and IP addresses by Region, see [Ports and domains to allow list for your Wickr network](https://docs.aws.amazon.com//wickr/latest/adminguide/allow-list-ports-domains.html).
+1. Allowlist the required Wickr domains for your AWS Region. The bot host must be able to reach the messaging gateway domain on TCP port 443. For the full list of domains and IP addresses by Region, see [Ports and domains to allow list for your Wickr network](https://docs.aws.amazon.com/wickr/latest/adminguide/allow-list-ports-domains.html).
 
 1. If the host is behind a corporate proxy or web filter, verify that the proxy is not performing TLS inspection on Wickr traffic. The Wickr IO container requires a direct TLS connection to the messaging gateway. Configure a proxy bypass for the Wickr domains listed in the allowlist.
 
@@ -917,7 +917,7 @@ sudo docker run -it \
 
 **Enable automatic instance recovery**
 
-Amazon EC2 simplified automatic recovery is enabled by default on supported instance types. If the underlying hardware fails, AWS automatically migrates the instance to healthy hardware. The instance retains its ID, IP addresses, and attached EBS volumes. For more information, see [Automatic instance recovery](https://docs.aws.amazon.com//AWSEC2/latest/UserGuide/ec2-instance-recover.html) in the *Amazon EC2 User Guide*.
+Amazon EC2 simplified automatic recovery is enabled by default on supported instance types. If the underlying hardware fails, AWS automatically migrates the instance to healthy hardware. The instance retains its ID, IP addresses, and attached EBS volumes. For more information, see [Automatic instance recovery](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-recover.html) in the *Amazon EC2 User Guide*.
 
 **Automate bot recovery with health checks**
 

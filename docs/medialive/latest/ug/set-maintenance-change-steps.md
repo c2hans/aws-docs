@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/set-maintenance-chan
 
 There are two ways to change the maintenance window (red mark). You can edit the maintenance window, or you can seta specific date. The method to choose depends on your reasons for wanting the change. The following table compares the reason and period for the two methods. Read across each row to compare the two methods.
 
-****
-
 |  | Edit the maintenance window | Set a specific date |
 | --- | --- | --- |
 | Reason for change | Use this method if you're happy to wait until the next maintenance opening (purple bar), but the current day of the week and/or time doesn't suit your operations. | Use this method if you don't want to wait until the next maintenance opening (purple bar) for maintenance. You want to move the maintenance window earlier in the maintenance event period (green bar). |

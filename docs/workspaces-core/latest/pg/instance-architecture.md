@@ -19,4 +19,4 @@ This model differs significantly from Amazon WorkSpaces Core bundles, which rely
 ## API Operations
 <a name="api-operations"></a>
 
-For Amazon WorkSpaces Instances API information see [WorkSpaces Instances API Reference](https://docs.aws.amazon.com//workspaces-instances/latest/api/Welcome.html).
+For Amazon WorkSpaces Instances API information see [WorkSpaces Instances API Reference](https://docs.aws.amazon.com/workspaces-instances/latest/api/Welcome.html).

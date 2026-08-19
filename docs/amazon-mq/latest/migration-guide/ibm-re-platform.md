@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/migration-guide/ibm-re-
 
  The following procedure shows how you can migrate an [IBM MQ](ibm-mq-typical-architecture.md) to an equivalent Amazon MQ without impacting *App 1* or *App 2*:
 
-1. Create an [active/standby broker](https://docs.aws.amazon.com//amazon-mq/latest/developer-guide/active-standby-broker-deployment) in *us-east-1* and another in *us-east-2* named as **AMQ\_ORANGE** and **AMQ\_APPLE**.
+1. Create an [active/standby broker](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/active-standby-broker-deployment) in *us-east-1* and another in *us-east-2* named as **AMQ\_ORANGE** and **AMQ\_APPLE**.
 
 1. Create a *Network Bridge* between 2 brokers by adding a duplex network connector definition to one of the queues:
 
@@ -19,7 +19,7 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/migration-guide/ibm-re-
 
     After the reboot of **AMQ\_ORANGE**, there should be a Network Bridge created between both brokers as illustrated below: ![ActiveMQ Network Bridges table showing broker AMQ_APPLE with remote address and message statistics.](http://docs.aws.amazon.com/amazon-mq/latest/migration-guide/images/ibm-replatform-fig-1.PNG) ![ActiveMQ Network Bridges page showing remote broker AMQ_ORANGE with address and message statistics.](http://docs.aws.amazon.com/amazon-mq/latest/migration-guide/images/ibm-replatform-fig-2.PNG)
 **Note**
-Steps 1 and 2 can be replicated using a AWS CloudFormation template. For more information about using CloudFormation to set up Amazon MQ brokers, see the Amazon MQ [CloudFormation Template Reference](https://docs.aws.amazon.com//AWSCloudFormation/latest/TemplateReference/AWS_AmazonMQ.html).
+Steps 1 and 2 can be replicated using a AWS CloudFormation template. For more information about using CloudFormation to set up Amazon MQ brokers, see the Amazon MQ [CloudFormation Template Reference](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/AWS_AmazonMQ.html).
 
 1.  Log in to IBM MQ Queue Manager Host and list the queues/topics definitions. In **QM\_ORANGE**, you can list the queues and topics from IBM MQ using the following command:
 

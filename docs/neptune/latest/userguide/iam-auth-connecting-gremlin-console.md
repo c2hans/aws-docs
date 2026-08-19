@@ -13,7 +13,7 @@ Note that this is quite different from the typical situation where the `:remote`
 The following examples use `requestInterceptor()`, which was introduced in TinkerPop 3.6.6. If you are using a TinkerPop version earlier than 3.6.6 (but 3.5.5 or higher), use `handshakeInterceptor()` instead of `requestInterceptor()` in the code examples below.
 
 The following prerequisites are necessary:
-+ You must have the IAM credentials needed to sign the requests. See [Using the default credential provider chain](https://docs.aws.amazon.com//sdk-for-java/latest/developer-guide/credentials-chain.html) in the AWS SDK for Java Developer Guide.
++ You must have the IAM credentials needed to sign the requests. See [Using the default credential provider chain](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/credentials-chain.html) in the AWS SDK for Java Developer Guide.
 + You must have installed a Gremlin console version that is compatible with the version of the Neptune engine being used by your DB cluster.
 
 If you are using temporary credentials, they expire after a specified interval, as does the session token, so you must update your session token when you request new credentials. See [Using temporary security credentials to request access to AWS resources](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_use-resources.html) in the IAM User Guide.

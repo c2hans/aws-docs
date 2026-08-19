@@ -5,6 +5,8 @@ source_url: https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-ap
 # Understanding API modes of operation
 <a name="manage-acct-api-modes-of-operation"></a>
 
+This information is about understanding API modes of operation if you signed up for AWS using Sign up for AWS (advanced) or if you activated advanced features for your account. To compare sign-up options, see [Compare sign-up options](sign-up-for-aws.md).
+
 The API operations that work with an AWS account's attributes always work in one of two modes of operation:
 + **Standalone context** – this mode is used when a user or role in an account accesses or changes an account attribute in the ***same account***. The standalone context mode is automatically used when you ***don't*** include the `AccountId` parameter when you call one of the Account Management AWS CLI or AWS SDK operations.
 + **Organizations context** – this mode is used when a user or role in one account in an organization accesses or changes an account attribute in a different member account in the same organization. The organizations context mode is automatically used when you ***do*** include the `AccountId` parameter when you call one of the Account Management AWS CLI or AWS SDK operations. You can call the operations in this mode from only the management account of the organization, or the delegated admin account for Account Management.

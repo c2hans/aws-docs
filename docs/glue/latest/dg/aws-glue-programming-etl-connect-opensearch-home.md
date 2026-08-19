@@ -15,15 +15,15 @@ For more information about Amazon OpenSearch Service, see the [Amazon OpenSearch
 To connect to OpenSearch Service from AWS Glue, you will need to create and store your OpenSearch Service credentials in a AWS Secrets Manager secret, then associate that secret with a OpenSearch Service AWS Glue connection.
 
 **Prerequisites:**
-+ Identify the domain endpoint, {{aosEndpoint}} and port, {{aosPort}} you would like to read from, or create the resource by following instructions in the Amazon OpenSearch Service documentation. For more information on creating a domain, see [Creating and managing Amazon OpenSearch Service domains](https://docs.aws.amazon.com//opensearch-service/latest/developerguide/createupdatedomains.html) in the Amazon OpenSearch Service documentation.
++ Identify the domain endpoint, {{aosEndpoint}} and port, {{aosPort}} you would like to read from, or create the resource by following instructions in the Amazon OpenSearch Service documentation. For more information on creating a domain, see [Creating and managing Amazon OpenSearch Service domains](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/createupdatedomains.html) in the Amazon OpenSearch Service documentation.
 
-  An Amazon OpenSearch Service domain endpoint will have the following default form, https://search-{{domainName}}-{{unstructuredIdContent}}.{{region}}.es.amazonaws.com. For more information on identifying your domain endpoint, see [Creating and managing Amazon OpenSearch Service domains](https://docs.aws.amazon.com//opensearch-service/latest/developerguide/createupdatedomains.html) in the Amazon OpenSearch Service documentation.
+  An Amazon OpenSearch Service domain endpoint will have the following default form, https://search-{{domainName}}-{{unstructuredIdContent}}.{{region}}.es.amazonaws.com. For more information on identifying your domain endpoint, see [Creating and managing Amazon OpenSearch Service domains](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/createupdatedomains.html) in the Amazon OpenSearch Service documentation.
 
   Identify or generate HTTP basic authentication credentials, {{aosUser}} and {{aosPassword}} for your domain.
 
 **To configure a connection to OpenSearch Service:**
 
-1. In AWS Secrets Manager, create a secret using your OpenSearch Service credentials. To create a secret in Secrets Manager, follow the tutorial available in [ Create an AWS Secrets Manager secret ](https://docs.aws.amazon.com//secretsmanager/latest/userguide/create_secret.html) in the AWS Secrets Manager documentation. After creating the secret, keep the Secret name, {{secretName}} for the next step.
+1. In AWS Secrets Manager, create a secret using your OpenSearch Service credentials. To create a secret in Secrets Manager, follow the tutorial available in [ Create an AWS Secrets Manager secret ](https://docs.aws.amazon.com/secretsmanager/latest/userguide/create_secret.html) in the AWS Secrets Manager documentation. After creating the secret, keep the Secret name, {{secretName}} for the next step.
    + When selecting **Key/value pairs**, create a pair for the key `USERNAME` with the value {{aosUser}}.
    + When selecting **Key/value pairs**, create a pair for the key `PASSWORD` with the value {{aosPassword}}.
 

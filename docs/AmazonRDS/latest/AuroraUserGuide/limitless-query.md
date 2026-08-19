@@ -18,7 +18,7 @@ Performance depends on querying the database in a way that allows it to achieve 
 **Note**
 There can be specific cases, such as a [Cartesian product](https://www.postgresql.org/docs/current/queries-table-expressions.html#QUERIES-FROM) (cross join), where the query performs better by retrieving data separately from the shard.
 
-For more information on query execution plans, see [EXPLAIN](limitless-reference.DML-limitations.md#limitless-reference.DML-limitations.EXPLAIN) in the [Aurora PostgreSQL Limitless Database referenceLimitless Database reference](limitless-reference.md). For general information on queries, see [Queries](https://www.postgresql.org/docs/current/queries-overview.html) in the PostgreSQL documentation.
+For more information on query execution plans, see [EXPLAIN](limitless-reference.DML-limitations.md#limitless-reference.DML-limitations.EXPLAIN) in the [Aurora PostgreSQL Limitless Database reference](limitless-reference.md). For general information on queries, see [Queries](https://www.postgresql.org/docs/current/queries-overview.html) in the PostgreSQL documentation.
 
 **Topics**
 + [Single-shard queries in Aurora PostgreSQL Limitless Database](limitless-query.single-shard.md)

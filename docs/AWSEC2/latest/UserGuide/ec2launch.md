@@ -31,7 +31,7 @@ EC2Launch performs the following tasks by default during the initial instance bo
 + Executes user data (if specified). For more information about specifying user data, see [Run commands when you launch an EC2 instance with user data input](user-data.md).
 +  Sets persistent static routes to reach the metadata service and AWS KMS servers.
 **Important**
-If a custom AMI is created from this instance, these routes are captured as part of the OS configuration and any new instances launched from the AMI will retain the same routes, regardless of subnet placement. In order to update the routes, see [Update metadata/KMS routes for Server 2016 and later when launching a custom AMI](ec2launch-sysprep.md#update-metadata-KMS).
+If a custom AMI is created from this instance, these routes are captured as part of the OS configuration and any new instances launched from the AMI will retain the same routes, regardless of subnet placement. To update the routes, see [Update metadata/KMS routes for Server 2016 and later when launching a custom AMI](ec2launch-sysprep.md#update-metadata-KMS).
 
 The following tasks help to maintain backward compatibility with the EC2Config service. You can also configure EC2Launch to perform these tasks during startup:
 + Initialize secondary EBS volumes.

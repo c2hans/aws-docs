@@ -45,7 +45,7 @@ Specify a name for the new cluster. You can’t change the name after the cluste
 
 To add an instance group, choose **Add group**. Each instance group can be configured differently, and you can create a heterogeneous cluster that consists of multiple instance groups with various instance types. To deploy a cluster, you must add at least one instance group. Follow these steps to add an instance group.
 
-1. For **Instance group type**, choose **Standard** or **Restricted Instance Group (RIG)**. Typically, you will choose **Standard**, which provides a general purpose computing environment without additional security restrictions. **Restricted Instance Group (RIG)** is a specialized environment for foundational models customization such as Amazon Nova. For more information about setting up RIG for Amazon Nova model customization, see Amazon Nova customization on SageMaker HyperPod in the [Amazon Nova 1.0 user guide](https://docs.aws.amazon.com//nova/latest/userguide/nova-hp.html) or the [Amazon Nova 2.0 user guide](https://docs.aws.amazon.com//nova/latest/nova2-userguide/nova-hp.html).
+1. For **Instance group type**, choose **Standard** or **Restricted Instance Group (RIG)**. Typically, you will choose **Standard**, which provides a general purpose computing environment without additional security restrictions. **Restricted Instance Group (RIG)** is a specialized environment for foundational models customization such as Amazon Nova. For more information about setting up RIG for Amazon Nova model customization, see Amazon Nova customization on SageMaker HyperPod in the [Amazon Nova 1.0 user guide](https://docs.aws.amazon.com/nova/latest/userguide/nova-hp.html) or the [Amazon Nova 2.0 user guide](https://docs.aws.amazon.com/nova/latest/nova2-userguide/nova-hp.html).
 
 1. For **Name**, specify a name for the instance group.
 
@@ -113,7 +113,7 @@ Follow these steps to create or select an Amazon EKS cluster to use as an orches
 The VPC subnet you choose for HyperPod has to be private.
 After submitting a new EKS cluster creation request, wait until the EKS cluster becomes `Active`.
 
-1. For **Kubernetes version**, choose a version from the drop-down menu. For more information about Kubernetes versions, see [Understand the Kubernetes version lifecycle on EKS](https://docs.aws.amazon.com//eks/latest/userguide/kubernetes-versions.html) from the *Amazon EKS User Guide*.
+1. For **Kubernetes version**, choose a version from the drop-down menu. For more information about Kubernetes versions, see [Understand the Kubernetes version lifecycle on EKS](https://docs.aws.amazon.com/eks/latest/userguide/kubernetes-versions.html) from the *Amazon EKS User Guide*.
 
 1. For **Operators**, choose **Use default Helm charts and add-ons** or **Don't install operators**. The option defaults to **Use default Helm charts and add-ons**, which will be used to install operators on the EKS cluster. For more information about the default Helm charts and add-ons, see [`helm_chart`](https://github.com/aws/sagemaker-hyperpod-cli/tree/main/helm_chart/HyperPodHelmChart) from the GitHub repository. For more information, see [Installing packages on the Amazon EKS cluster using Helm](sagemaker-hyperpod-eks-install-packages-using-helm-chart.md).
 
@@ -126,7 +126,7 @@ To use HyperPod with EKS, you must install Helm charts and add-ons that enable o
 
 To add an instance group, choose **Add group**. Each instance group can be configured differently, and you can create a heterogeneous cluster that consists of multiple instance groups with various instance types. To deploy a cluster, you must add at least one instance group. Follow these steps to add an instance group.
 
-1. For **Instance group type**, choose **Standard** or **Restricted Instance Group (RIG)**. Typically, you will choose **Standard**, which provides a general purpose computing environment without additional security restrictions. **Restricted Instance Group (RIG)** is a specialized environment for foundational models customization such as Amazon Nova. For more information about setting up RIG for Amazon Nova model customization, see Amazon Nova customization on SageMaker HyperPod in the [Amazon Nova 1.0 user guide](https://docs.aws.amazon.com//nova/latest/userguide/nova-hp.html) or the [Amazon Nova 2.0 user guide](https://docs.aws.amazon.com//nova/latest/nova2-userguide/nova-hp.html).
+1. For **Instance group type**, choose **Standard** or **Restricted Instance Group (RIG)**. Typically, you will choose **Standard**, which provides a general purpose computing environment without additional security restrictions. **Restricted Instance Group (RIG)** is a specialized environment for foundational models customization such as Amazon Nova. For more information about setting up RIG for Amazon Nova model customization, see Amazon Nova customization on SageMaker HyperPod in the [Amazon Nova 1.0 user guide](https://docs.aws.amazon.com/nova/latest/userguide/nova-hp.html) or the [Amazon Nova 2.0 user guide](https://docs.aws.amazon.com/nova/latest/nova2-userguide/nova-hp.html).
 
 1. For **Name**, specify a name for the instance group.
 

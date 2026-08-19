@@ -169,6 +169,6 @@ Resources:
 
 ## See also
 <a name="aws-resource-xray-resourcepolicy--seealso"></a>
-+  [X-Ray resource-based policies](https://docs.aws.amazon.com//xray/latest/devguide/security_iam_service-with-iam.html#security_iam_service-with-iam-resource-based-policies)
-+  [Identity-based policies and resource-based policies](https://docs.aws.amazon.com//IAM/latest/UserGuide/access_policies_identity-vs-resource.html)
-+ [PutResourcePolicy](https://docs.aws.amazon.com//xray/latest/api/API_PutResourcePolicy.html) action in the X-Ray API Reference
++  [X-Ray resource-based policies](https://docs.aws.amazon.com/xray/latest/devguide/security_iam_service-with-iam.html#security_iam_service-with-iam-resource-based-policies)
++  [Identity-based policies and resource-based policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_identity-vs-resource.html)
++ [PutResourcePolicy](https://docs.aws.amazon.com/xray/latest/api/API_PutResourcePolicy.html) action in the X-Ray API Reference

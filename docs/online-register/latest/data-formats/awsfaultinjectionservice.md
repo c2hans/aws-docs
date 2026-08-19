@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsf
 
 AWS Fault Injection Service provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="fis-GetAction"></a>[GetAction](https://docs.aws.amazon.com/fis/latest/APIReference/API_GetAction.html) | Retrieve an AWS FIS action | Read |

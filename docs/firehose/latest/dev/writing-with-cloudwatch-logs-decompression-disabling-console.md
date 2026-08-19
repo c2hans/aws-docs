@@ -5,8 +5,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/dev/writing-with-cloudwa
 # Disable decompression on Firehose stream
 <a name="writing-with-cloudwatch-logs-decompression-disabling-console"></a>
 
-****
-
 To disable decompression on a data stream using the AWS Management Console
 
 1. Sign in to the AWS Management Console and open the Kinesis console at [https://console.aws.amazon.com/kinesis](https://console.aws.amazon.com/kinesis).

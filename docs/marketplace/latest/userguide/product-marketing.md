@@ -108,7 +108,7 @@ AWS Marketplace provides messaging guidance and branding assets to help you publ
 **Buy with AWS** enables AWS Marketplace sellers to display and sell AWS Marketplace products on their own websites. AWS Marketplace sellers can integrate with AWS Marketplace call-to-action (CTA) buttons and APIs to build AWS-powered software discovery and procurement experiences on seller-owned websites. These include web properties owned by AWS sellers, including independent software vendors (ISVs), Channel Partners (CPs), Distributors (DPs).
 
 **Note**
-For more information about Buy with AWS features, see [Buy with AWS](https://aws.amazon.com//partners/marketplace/buy-with-aws/).
+For more information about Buy with AWS features, see [Buy with AWS](https://aws.amazon.com/partners/marketplace/buy-with-aws/).
 
 The CTA buttons include:
 + Buy with AWS
@@ -126,10 +126,10 @@ Buy with AWS can provide the following benefits:
 <a name="buy-with-aws-prerequisites"></a>
 
 To enable Buy with AWS, you must:
-+ [Be registered as a seller](https://docs.aws.amazon.com//marketplace/latest/userguide/registration-process.html) in AWS Marketplace.
++ [Be registered as a seller](https://docs.aws.amazon.com/marketplace/latest/userguide/registration-process.html) in AWS Marketplace.
 + Be an authorized seller or reseller in AWS Marketplace and agreed to the [Service Terms for AWS Marketplace Sellers](https://aws.amazon.com/legal/seller-terms/).
-+ Adhere to the [AWS trademark guidelines](https://aws.amazon.com//trademark-guidelines/).
-+ Adhere to the [Buy with AWS Trademark License](https://aws.amazon.com//legal/buy-with-aws-trademarks-license/).
++ Adhere to the [AWS trademark guidelines](https://aws.amazon.com/trademark-guidelines/).
++ Adhere to the [Buy with AWS Trademark License](https://aws.amazon.com/legal/buy-with-aws-trademarks-license/).
 + Have at least one public SaaS product listing in AWS Marketplace.
 **Note**
 Currently, Buy with AWS supports only SaaS products.

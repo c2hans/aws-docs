@@ -11,7 +11,7 @@ You can expect to spend 20-30 minutes on this tutorial. If you are using an IoT 
 
 ![Getting started with AWS IoT Core page.](http://docs.aws.amazon.com/iot/latest/developerguide/images/iot-getting-started.png)
 
-This tutorial is best for developers who want to get started with AWS IoT Core so they can continue to explore more advanced features, such as the [rules engine](https://docs.aws.amazon.com//iot/latest/developerguide/iot-rules.html) and [shadows](https://docs.aws.amazon.com//iot/latest/developerguide/iot-device-shadows.html). This tutorial prepares you to continue learning about AWS IoT Core and how it interacts with other AWS services by explaining the steps in greater detail than [the quick start tutorial](iot-quick-start.md). If you are looking for just a quick, *Hello World*, experience, try the [Try the AWS IoT Core quick connect tutorial](iot-quick-start.md).
+This tutorial is best for developers who want to get started with AWS IoT Core so they can continue to explore more advanced features, such as the [rules engine](https://docs.aws.amazon.com/iot/latest/developerguide/iot-rules.html) and [shadows](https://docs.aws.amazon.com/iot/latest/developerguide/iot-device-shadows.html). This tutorial prepares you to continue learning about AWS IoT Core and how it interacts with other AWS services by explaining the steps in greater detail than [the quick start tutorial](iot-quick-start.md). If you are looking for just a quick, *Hello World*, experience, try the [Try the AWS IoT Core quick connect tutorial](iot-quick-start.md).
 
 After setting up your AWS account and AWS IoT console, you'll follow these steps to see how to connect a device and have it send messages to AWS IoT Core.
 

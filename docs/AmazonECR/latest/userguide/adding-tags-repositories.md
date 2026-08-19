@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/userguide/adding-tags-r
 
 You can add tags to a private repository.
 
-For information about names and best practices for tags, see [Tag naming limits and requirements](https://docs.aws.amazon.com//tag-editor/latest/userguide/tagging.html#tag-conventions) and [Best practices](https://docs.aws.amazon.com//tag-editor/latest/userguide/tagging.html#tag-best-practices) in the *Tagging AWS Resources User Guide*.
+For information about names and best practices for tags, see [Tag naming limits and requirements](https://docs.aws.amazon.com/tag-editor/latest/userguide/tagging.html#tag-conventions) and [Best practices](https://docs.aws.amazon.com/tag-editor/latest/userguide/tagging.html#tag-best-practices) in the *Tagging AWS Resources User Guide*.
 
 ## Adding tags to a repository (AWS Management Console)
 <a name="tag-resources-console"></a>

@@ -48,7 +48,7 @@ This section provides detailed information about the common errors you might enc
 **Cause: **The request processing has failed due to a server error
 
 **Solution:**
-+ We suggest employing AWS recommended approach of using [retries with exponential backoff](https://docs.aws.amazon.com//prescriptive-guidance/latest/cloud-design-patterns/retry-backoff.html) and random [jitter](https://aws.amazon.com/builders-library/timeouts-retries-and-backoff-with-jitter/) for improved reliability.
++ We suggest employing AWS recommended approach of using [retries with exponential backoff](https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/retry-backoff.html) and random [jitter](https://aws.amazon.com/builders-library/timeouts-retries-and-backoff-with-jitter/) for improved reliability.
 + If the issue persists, please contact [AWS Support Center](https://aws.amazon.com/support) and provide details about your request and the error you are encountering.
 
 ## InvalidAction
@@ -60,7 +60,7 @@ This section provides detailed information about the common errors you might enc
 
 **Solution:**
 + We suggest double-checking the spelling and formatting of the action name in your request.
-+ Verify that the action calling is supported by Amazon Bedrock and is correctly documented as shown in [Amazon Bedrock API Reference.](https://docs.aws.amazon.com//bedrock/latest/APIReference/API_Operations.html)
++ Verify that the action calling is supported by Amazon Bedrock and is correctly documented as shown in [Amazon Bedrock API Reference.](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Operations.html)
 + Make sure you are using the most up-to-date version of the AWS SDK or CLI.
 
 ## InvalidClientTokenId
@@ -136,10 +136,10 @@ This section provides detailed information about the common errors you might enc
 **Cause: **The service is temporarily unable to handle the request. 503 errors indicate that the service is experiencing high demand or temporary capacity constraints. This is not related to your account-level quotas or rate limits (which return 429 ThrottlingException).
 
 **Solution:**
-+ We suggest employing AWS recommended approach of using [retries with exponential backoff](https://docs.aws.amazon.com//prescriptive-guidance/latest/cloud-design-patterns/retry-backoff.html) and random [jitter](https://aws.amazon.com/builders-library/timeouts-retries-and-backoff-with-jitter/) for improved reliability.
++ We suggest employing AWS recommended approach of using [retries with exponential backoff](https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/retry-backoff.html) and random [jitter](https://aws.amazon.com/builders-library/timeouts-retries-and-backoff-with-jitter/) for improved reliability.
 + Consider switching to a different AWS Region if the issue persists in your current Region. Different Regions may have varying levels of load and availability.
-+ [Use Cross-Region inference](https://docs.aws.amazon.com//bedrock/latest/userguide/cross-region-inference.html) to route your requests by using compute across different AWS Regions.
-+ If you have high throughput requirements, we suggest exploring [Provisioned Throughput](https://docs.aws.amazon.com//bedrock/latest/userguide/prov-throughput.html) for your use case.
++ [Use Cross-Region inference](https://docs.aws.amazon.com/bedrock/latest/userguide/cross-region-inference.html) to route your requests by using compute across different AWS Regions.
++ If you have high throughput requirements, we suggest exploring [Provisioned Throughput](https://docs.aws.amazon.com/bedrock/latest/userguide/prov-throughput.html) for your use case.
 
 **Best practices**
 + Make sure your application can handle 503 status codes appropriately in your error handling and retry logic.
@@ -156,8 +156,8 @@ If you experience frequent 503 errors or if they significantly impact your opera
 
 **Solution:**
 + Check the Amazon Bedrock service quotas in the [Amazon Bedrock service quotas](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#limits_bedrock) console to learn about the limits allotted to your account.
-+ We suggest employing AWS recommended approach of using [retries with exponential backoff.](https://docs.aws.amazon.com//prescriptive-guidance/latest/cloud-design-patterns/retry-backoff.html) and random [jitter](https://aws.amazon.com/builders-library/timeouts-retries-and-backoff-with-jitter/) for improved reliability.
-+ If you have high throughput requirements, we suggest exploring [Provisioned Throughput](https://docs.aws.amazon.com//bedrock/latest/userguide/prov-throughput.html) for your use case.
++ We suggest employing AWS recommended approach of using [retries with exponential backoff.](https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/retry-backoff.html) and random [jitter](https://aws.amazon.com/builders-library/timeouts-retries-and-backoff-with-jitter/) for improved reliability.
++ If you have high throughput requirements, we suggest exploring [Provisioned Throughput](https://docs.aws.amazon.com/bedrock/latest/userguide/prov-throughput.html) for your use case.
 + Request for quota increase by contacting your account manager or [AWS Support](https://aws.amazon.com/support) if your workload traffic exceeds your account quotas.
 
 ## ValidationError
@@ -184,7 +184,7 @@ If you experience frequent 503 errors or if they significantly impact your opera
 + Please implement a fallback mechanism to use alternative models or endpoints when a primary resource is not found.
 
 **Best practices**
-+ Use [ListFoundationModels](https://docs.aws.amazon.com//bedrock/latest/APIReference/API_ListFoundationModels.html) to learn about the available Amazon Bedrock foundation models that you can use.
++ Use [ListFoundationModels](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_ListFoundationModels.html) to learn about the available Amazon Bedrock foundation models that you can use.
 + We suggest implementing a periodic synchronization process to update your local resource catalog.
 
 If you continue to experience issues after trying these solutions, contact [AWS Support](https://aws.amazon.com/support)for further assistance and guidance tailored to your specific use case.

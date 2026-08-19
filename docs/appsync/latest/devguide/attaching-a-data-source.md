@@ -12,7 +12,7 @@ The following section will show you how to attach a data source to your GraphQL 
 ## Types of data sources
 <a name="data-source-types"></a>
 
-Now that you have created a schema in the AWS AppSync console, you can attach a data source to it. When you initially create an API, there's an option to provision an Amazon DynamoDB table during the creation of the predefined schema. However, we won't be covering that option in this section. You can see an example of this in the [Launching a schema](https://docs.aws.amazon.com//appsync/latest/devguide/schema-launch-start.html) section.
+Now that you have created a schema in the AWS AppSync console, you can attach a data source to it. When you initially create an API, there's an option to provision an Amazon DynamoDB table during the creation of the predefined schema. However, we won't be covering that option in this section. You can see an example of this in the [Launching a schema](https://docs.aws.amazon.com/appsync/latest/devguide/schema-launch-start.html) section.
 
 Instead, we'll be looking at all of the data sources AWS AppSync supports. There are many factors that go into picking the right solution for your application. The sections below will provide some additional context for each data source. For general information about data sources, see [Data sources](https://docs.aws.amazon.com/appsync/latest/devguide/data-source-components.html).
 
@@ -348,8 +348,8 @@ You can limit access to all AWS AppSync APIs from a specific region, such as `us
 
 ------
 
-In the next section ([Configuring Resolvers](https://docs.aws.amazon.com//appsync/latest/devguide/resolver-config-overview.html)), we'll add our resolver business logic and attach it to the fields in our schema to process the data in our data source.
+In the next section ([Configuring Resolvers](https://docs.aws.amazon.com/appsync/latest/devguide/resolver-config-overview.html)), we'll add our resolver business logic and attach it to the fields in our schema to process the data in our data source.
 
-For more information regarding role policy configuration, see [Modifying a role](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_roles_manage_modify.html) in the *IAM User Guide*.
+For more information regarding role policy configuration, see [Modifying a role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_manage_modify.html) in the *IAM User Guide*.
 
 For more information regarding cross-account access of AWS Lambda resolvers for AWS AppSync, see [Building cross-account AWS Lambda resolvers for AWS AppSync](https://aws.amazon.com/blogs/mobile/appsync-lambda-cross-account/).

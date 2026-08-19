@@ -15,8 +15,6 @@ Data product related events are emitted in the AWS Region where the provider pub
 
 This topic provides detailed information about each event listed in the following table. The table includes events received by a subscriber when a provider adds a data set to a product, adds a revision to a product, revokes a revision to a product, or removes access to a product.
 
-****
-
 | Actions | Event received | Related topic |
 | --- | --- | --- |
 | Adds a file-based data set to a product and publishes it | Data Sets Published To Product | [Events for adding file-based data sets](#events-add-data-sets) |

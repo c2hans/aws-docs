@@ -14,8 +14,6 @@ Deregister one or multiple Amazon Machine Images (AMI)s and optionally delete al
 ## Change Type Details
 <a name="ct-26vhhlj9jmlpf-MAAd-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-26vhhlj9jmlpf |

@@ -434,4 +434,4 @@ If you don't adhere to the [rules for naming buckets](https://docs.aws.amazon.co
 + [Manage AWS services from CLI in CloudShell](working-with-aws-cli.md)
 + [Copying multiple files between your local machine and CloudShell](multiple-files-upload-download.md)
 + [AWS CloudShell Concepts](working-with-aws-cloudshell.md)
-+ [Customizing your AWS CloudShell experienceUsing AWS CloudShell in Amazon VPC](customizing-cshell.md)
++ [Customizing your AWS CloudShell experience](customizing-cshell.md)

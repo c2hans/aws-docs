@@ -20,8 +20,6 @@ When you transfer a domain that has a generic TLD (for example, .com) to Route 
 
 When you transfer a domain that has a geographic TLD (for example, .co.uk) to Route 53, the new expiration date for the domain depends on the TLD. Find your TLD in the following table to determine how transferring your domain affects the expiration date.
 
-****
-
 | Continent | Geographic TLDs and the effect of transferring a domain on the expiration date |
 | --- | --- |
 | Africa | **.co.za** – The expiration date remains the same. |

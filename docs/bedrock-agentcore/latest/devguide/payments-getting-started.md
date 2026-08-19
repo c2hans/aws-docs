@@ -28,7 +28,8 @@ The skill also wires payments into your agent with a framework-agnostic tool, so
 
 Before starting, make sure you have:
 +  ** AWS Account** with credentials configured (`aws configure`)
-+  **An AWS Region where AgentCore payments is available** — us-east-1, us-west-2, eu-central-1, or ap-southeast-2. See [Supported AWS Regions](agentcore-regions.md).
++  **An AWS Region where AgentCore payments is available** — See [Supported AWS Regions](agentcore-regions.md).
++  **A Coinbase AWS Marketplace subscription** (Coinbase only) — If you use Coinbase as your payment provider, you must subscribe to the [Coinbase Wallets for AgentCore Payments](https://aws.amazon.com/marketplace/pp/prodview-ia2zd5puqyi7g) listing in AWS Marketplace. With this subscription, your Coinbase wallet usage charges are consolidated into your monthly AWS bill based on Coinbase’s [pricing](https://docs.cdp.coinbase.com/wallets/pricing) on the Coinbase website. See [Subscribe to Coinbase Wallets for AgentCore Payments in AWS Marketplace](payments-marketplace-subscription.md).
 +  **Node.js 20\+** installed (the skill installs the AgentCore CLI automatically)
 +  **An agent that accesses a paid endpoint** — The skill enables your agent to pay for x402-protected APIs. For testing, you can use the sandbox endpoint `https://sandbox.node4all.com/v1/x402-test`.
 +  **The [Agent Toolkit for AWS](https://github.com/aws/agent-toolkit-for-aws) `aws-agents` plugin** installed in your AI coding agent:
@@ -86,7 +87,7 @@ The skill runs an automated process that provisions your payment infrastructure 
 1. Sets environment variables and runs a test payment against a paid endpoint
 
 Before running the connector command, obtain credentials from your provider:
-+  **Coinbase CDP** — API Key ID, API Key Secret, and Wallet Secret from the [Coinbase Developer Platform](https://portal.cdp.coinbase.com/) website (with Delegated signing enabled).
++  **Coinbase CDP** — API Key ID, API Key Secret, and Wallet Secret from the [Coinbase Developer Platform](https://docs.cdp.coinbase.com/api-reference/v2/authentication#1-create-client-api-key) website (with Delegated signing enabled). Coinbase also requires an active AWS Marketplace subscription to the **Coinbase Wallets for AgentCore Payments** listing. See [Subscribe to Coinbase Wallets for AgentCore Payments in AWS Marketplace](payments-marketplace-subscription.md).
 +  **Stripe Privy** — App ID, App Secret, Authorization ID, and Authorization Private Key from the [Privy dashboard](https://dashboard.privy.io/) website.
 
 A successful run shows the agent calling `x402_fetch`, detecting a `402`, settling payment via the AgentCore SDK, and the retry returning `200` with paid content.
@@ -102,7 +103,8 @@ This section walks you through each step manually using the AgentCore CLI, AWS C
 Before starting, make sure you have:
 +  ** AWS Account** with credentials configured (`aws configure`)
 +  **Python 3.10\+** installed
-+  **An AWS Region where AgentCore payments is available** — us-east-1, us-west-2, eu-central-1, or ap-southeast-2. See [Supported AWS Regions](agentcore-regions.md).
++  **A Coinbase AWS Marketplace subscription** (Coinbase only) — If you use Coinbase as your payment provider, you must subscribe to the [Coinbase Wallets for AgentCore Payments](https://aws.amazon.com/marketplace/pp/prodview-ia2zd5puqyi7g) listing in AWS Marketplace. With this subscription, your Coinbase wallet usage charges are consolidated into your monthly AWS bill based on Coinbase’s [pricing](https://docs.cdp.coinbase.com/wallets/pricing) on the Coinbase website. See [Subscribe to Coinbase Wallets for AgentCore Payments in AWS Marketplace](payments-marketplace-subscription.md).
++  **An AWS Region where AgentCore payments is available** — See [Supported AWS Regions](agentcore-regions.md).
 
 Install the required packages:
 
@@ -126,12 +128,14 @@ AgentCore payments connects to an external payment provider for wallet operation
 
 **Example**
 
-1. Log in to the [Coinbase Developer Platform](https://docs.cdp.coinbase.com/api-reference/v2/authentication) and create or select a project.
+1. Log in to the [Coinbase Developer Platform](https://docs.cdp.coinbase.com/api-reference/v2/authentication#1-create-client-api-key) and create or log in to your account. Select a project.
 
-1. Generate an API key and note the **API Key ID**, **API Key Secret**, and **Wallet Secret**.
+1. Navigate to your **API Keys dashboard**, choose **Create secret API Key**, and note the API Key ID and API Key Secret. Go back to your project.
 
-1. Under **Project** > **Wallets** > **Non-custodial Wallet** > **Security**, enable **Delegated signing**.
-You will use these three values in the next step:
+1. Under **Products** > **Wallets** > **Non-custodial Wallet** > **Security**, choose **Generate new** under **Generate Wallet secret** and note the Wallet Secret.
+
+1. Under **Products** > **Wallets** > **Non-custodial Wallet** > **Security**, enable **Delegated signing**.
+You will use these values in the next step:
 
 | Credential | Description |
 | --- | --- |

@@ -47,8 +47,6 @@ Consider the following use case of utilizing Amazon Nova Canvas as a creative to
 
  After continued experimentation in the Console, the customer should finalize their own measure of effectiveness based on the impact of errors, run a scaled-up test via the Console and use the results of human judgements (with multiple judgements per test prompt) to establish a benchmark effectiveness score.
 
-****
-
 | Input Image | Output Image |
 | --- | --- |
 |  ![Blue and yellow box of cornflakes](http://docs.aws.amazon.com/ai/responsible-ai/nova-canvas/images/cornflake-box.png)  |  ![Blue and yellow box of cornflakes and a small glass of milk placed amid some scattered cornflakes on a wooden table with windows in the background.](http://docs.aws.amazon.com/ai/responsible-ai/nova-canvas/images/generated-cornflake-box-setting.jpg)  |

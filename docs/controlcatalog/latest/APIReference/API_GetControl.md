@@ -57,15 +57,18 @@ Content-type: application/json
    "Behavior": "string",
    "CreateTime": number,
    "Description": "string",
+   "GovernedProviders": [ "string" ],
    "GovernedResources": [ "string" ],
    "Implementation": {
       "Identifier": "string",
       "Type": "string"
    },
    "Name": "string",
+   "ParameterRequirementSummary": "string",
    "Parameters": [
       {
-         "Name": "string"
+         "Name": "string",
+         "Requirement": "string"
       }
    ],
    "RegionConfiguration": {
@@ -107,10 +110,16 @@ Type: Timestamp
 A description of what the control does.
 Type: String
 
- ** [GovernedResources](#API_GetControl_ResponseSyntax) **   <a name="controlcatalog-GetControl-response-GovernedResources"></a>
-A list of AWS resource types that are governed by this control. This information helps you understand which controls can govern certain types of resources, and conversely, which resources are affected when the control is implemented. The resources are represented as AWS CloudFormation resource types. If `GovernedResources` cannot be represented by available CloudFormation resource types, it’s returned as an empty list.
+ ** [GovernedProviders](#API_GetControl_ResponseSyntax) **   <a name="controlcatalog-GetControl-response-GovernedProviders"></a>
+A list of providers whose resources are governed by this control. For example, a value of `AWS` indicates that the control governs AWS resources.
 Type: Array of strings
-Pattern: `[A-Za-z0-9]{2,64}::[A-Za-z0-9]{2,64}::[A-Za-z0-9]{2,64}`
+Length Constraints: Minimum length of 2. Maximum length of 64.
+Pattern: `[A-Z]{2,64}`
+
+ ** [GovernedResources](#API_GetControl_ResponseSyntax) **   <a name="controlcatalog-GetControl-response-GovernedResources"></a>
+A list of resource types that are governed by this control. This information helps you understand which controls can govern certain types of resources, and conversely, which resources are affected when the control is implemented. For AWS controls, the resources are represented as CloudFormation resource types. For non-AWS controls, the resources are represented in a provider-specific format. If `GovernedResources` cannot be represented by available resource types, it’s returned as an empty list.
+Type: Array of strings
+Pattern: `[A-Za-z0-9][A-Za-z0-9.:/_-]{1,254}`
 
  ** [Implementation](#API_GetControl_ResponseSyntax) **   <a name="controlcatalog-GetControl-response-Implementation"></a>
 Returns information about the control, as an `ImplementationDetails` object that shows the underlying implementation type for a control.
@@ -119,6 +128,11 @@ Type: [ImplementationDetails](API_ImplementationDetails.md) object
  ** [Name](#API_GetControl_ResponseSyntax) **   <a name="controlcatalog-GetControl-response-Name"></a>
 The display name of the control.
 Type: String
+
+ ** [ParameterRequirementSummary](#API_GetControl_ResponseSyntax) **   <a name="controlcatalog-GetControl-response-ParameterRequirementSummary"></a>
+A summary that indicates whether the control requires parameters, accepts optional parameters, or does not support parameters. Use this field to determine whether you need to supply parameter values when you enable the control.
+Type: String
+Valid Values: `REQUIRED | OPTIONAL | NONE`
 
  ** [Parameters](#API_GetControl_ResponseSyntax) **   <a name="controlcatalog-GetControl-response-Parameters"></a>
 Returns an array of `ControlParameter` objects that specify the parameters a control supports. An empty list is returned for controls that don’t support parameters.

@@ -39,7 +39,7 @@ One choice for the foundation of our DynamoDB schema is **single table design**.
 + All changed data will be propagated to DynamoDB Streams even if only a subset of entities need to be processed.
   + Thanks to Lambda event filters, this will not affect your bill when using Lambda, but will be an added cost when using the Kinesis Consumer Library
 + When using GraphQL, single table design will be more difficult to implement
-+ When using higher-level SDK clients like Java's [`DynamoDBMapper`](DynamoDBMapper.md) or [Enhanced Client](DynamoDBEnhanced.md), it can be more difficult to process results because items in the same response may be associated with different classes
++ When using higher-level SDK clients like Java's [`DynamoDBMapper`](DynamoDBMapper.md) or [Enhanced Client](DynamoDBEnhanced.md), it can be more difficult to process results because items in the same response might be associated with different classes
 
 **When to use**
 
@@ -64,7 +64,7 @@ The second choice for the foundation of our DynamoDB schema is multiple table de
 + Each table will have its own change data stream allowing for a dedicated Lambda function to be designed for each type of item rather than a single monolithic processor
 
 **Disadvantages**
-+ For access patterns that require data across multiple tables, multiple reads from DynamoDB will be required and data may need to be processed/joined on the client code.
++ For access patterns that require data across multiple tables, multiple reads from DynamoDB will be required and data might need to be processed/joined on the client code.
 + Operations and monitoring of multiple tables requires more CloudWatch alarms and each table must be scaled independently
 + Each tables permissions will need to be managed separately. The addition of tables in the future will require a change to any necessary IAM roles or policies
 

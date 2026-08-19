@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/export-public-certi
 # Export an AWS Certificate Manager public certificate
 <a name="export-public-certificate"></a>
 
-The following procedures walks you through how you can export an ACM public certificate in the ACM console. Alternatively, you can use the [`export-certificate`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/acm/export-certificate.html) AWS CLI or [ExportCertificate](https://docs.aws.amazon.com//acm/latest/APIReference/API_ExportCertificate.html) API action.
+The following procedures walks you through how you can export an ACM public certificate in the ACM console. Alternatively, you can use the [`export-certificate`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/acm/export-certificate.html) AWS CLI or [ExportCertificate](https://docs.aws.amazon.com/acm/latest/APIReference/API_ExportCertificate.html) API action.
 
 **Tip**
 If you need public certificates for customer-managed infrastructure (such as on-premises servers or Kubernetes clusters) and want to use industry-standard ACME clients to automate issuance and renewal, see [ACME certificate automation](acm-acme.md).
@@ -33,7 +33,7 @@ In the ACM console, you’re able to export .pem certificate files. You can conv
 ## Export a public certificate (AWS CLI)
 <a name="cli-procedures"></a>
 
-Use the [`export-certificate`](https://docs.aws.amazon.com/cli/latest/reference/acm/export-certificate.html) AWS CLI command or [ExportCertificate](https://docs.aws.amazon.com//acm/latest/APIReference/API_ExportCertificate.html) API action to export a public certificate and private key. You must assign a passphrase when you run the command. For added security, use a file editor to store your passphrase in a file, and then supply the passphrase by supplying the file. This prevents your passphrase from being stored in the command history and prevents others from seeing the passphrase as you type it in.
+Use the [`export-certificate`](https://docs.aws.amazon.com/cli/latest/reference/acm/export-certificate.html) AWS CLI command or [ExportCertificate](https://docs.aws.amazon.com/acm/latest/APIReference/API_ExportCertificate.html) API action to export a public certificate and private key. You must assign a passphrase when you run the command. For added security, use a file editor to store your passphrase in a file, and then supply the passphrase by supplying the file. This prevents your passphrase from being stored in the command history and prevents others from seeing the passphrase as you type it in.
 
 **Note**
 The file containing the passphrase must not end in a line terminator. You can check your password file like this:

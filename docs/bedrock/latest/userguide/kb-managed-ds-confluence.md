@@ -14,18 +14,19 @@ Atlassian Confluence is a collaborative work-management tool for sharing, storin
 + Inclusion content filters for spaces, pages, and blogs
 + Inclusion or exclusion content filters for MIME types
 + Incremental content syncs for added, updated, and deleted content
-+ Basic and OAuth 2.0 authentication
++ User-managed (3LO), Basic, and OAuth 2.0 authentication
 + Document-level access control (ACLs), with Basic authentication and Atlassian organization admin credentials
 
 ## Authentication methods
 <a name="kb-managed-confluence-auth-methods"></a>
 
-A Confluence data source supports two authentication methods. Choose one before you begin, because it determines the credentials you create and whether you can use document-level access control. We recommend Basic authentication for new data sources.
+A Confluence data source supports three authentication methods. Choose one before you begin, because it determines the credentials you create and whether you can use document-level access control. We recommend Basic authentication for new data sources.
 
 **Confluence authentication methods**
 
 | Method | How it authenticates | When to use | Setup |
 | --- | --- | --- | --- |
+| User-managed (3LO) (MANAGED\_OAUTH2) | You sign in to Confluence Cloud directly to authorize the connection, and Amazon Bedrock Managed Knowledge Base handles authentication. This is the simplest way to get started. | Getting started quickly, when you do not need document-level access control. Not supported with document-level access control. | [User-managed setup (3LO)](kb-managed-confluence-3lo-setup.md) |
 | Basic (BASIC) — recommended | The connector signs in with the email address and an Atlassian API token of a Confluence user. | Most data sources, and any data source that uses document-level access control. ACLs additionally require Atlassian organization admin credentials in the same secret. | [Set up Basic authentication](kb-managed-confluence-basic-setup.md) |
 | OAuth 2.0 (OAUTH2) | The connector authenticates as an Atlassian OAuth 2.0 (3LO) app, using an app key, app secret, access token, and refresh token. The access token is renewed automatically with the refresh token. | Use when you want a registered Atlassian app instead of an individual user account. Not supported with document-level access control. | [Set up OAuth 2.0 authentication](kb-managed-confluence-oauth2-setup.md) |
 
@@ -45,7 +46,7 @@ A Confluence data source supports two authentication methods. Choose one before 
 
 Setting up a Confluence data source involves the following steps:
 
-1. **Set up authentication.** Follow the page for your chosen method to create the credentials in Confluence and store them in AWS: [Set up Basic authentication for Confluence](kb-managed-confluence-basic-setup.md) or [Set up OAuth 2.0 authentication for Confluence](kb-managed-confluence-oauth2-setup.md).
+1. **Set up authentication.** Follow the page for your chosen method. With user-managed setup (3LO), you sign in to Confluence Cloud directly — see [User-managed setup (3LO)](kb-managed-confluence-3lo-setup.md). For the other methods, you create the credentials in Confluence and store them in AWS — see [Set up Basic authentication for Confluence](kb-managed-confluence-basic-setup.md) or [Set up OAuth 2.0 authentication for Confluence](kb-managed-confluence-oauth2-setup.md).
 
 1. **Connect the data source.** Create the Confluence data source in the knowledge base using the AWS Management Console or the API. See [Connect a Confluence data source](kb-managed-ds-confluence-connect.md).
 

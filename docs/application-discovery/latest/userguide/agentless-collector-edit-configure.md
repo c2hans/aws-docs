@@ -16,7 +16,7 @@ You configured the collector when you first set up Application Discovery Service
 
   1. For **Collector name**, enter a name to identify the collector. The name can contain spaces but it cannot contain special characters.
 
-  1. Under **Destination AWS account for discovery data**, enter the AWS access key and secret key for the AWS account to specify as the destination account to receive the data discovered by the collector. For information about the requirements for the IAM user, see [Deploying Application Discovery Service Agentless CollectorCreate an IAM user for Agentless Collector](agentless-collector-deploying.md#agentless-collector-gs-iam-user).
+  1. Under **Destination AWS account for discovery data**, enter the AWS access key and secret key for the AWS account to specify as the destination account to receive the data discovered by the collector. For information about the requirements for the IAM user, see [Deploying Application Discovery Service Agentless Collector](agentless-collector-deploying.md#agentless-collector-gs-iam-user).
 
      1. For **AWS access-key**, enter the access key of the AWS account IAM user that you're specifying as the destination account.
 

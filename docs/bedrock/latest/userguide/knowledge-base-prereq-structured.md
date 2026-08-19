@@ -40,8 +40,6 @@ If you've already created a query engine, you can skip this prerequisite. Otherw
 
 Depending on the Amazon Redshift query engine that you choose, you can configure certain permissions. The permissions that you configure depend on the authentication method. The following table shows the authentication methods that can be used for different query engines:
 
-****
-
 | Authentication method | Amazon Redshift Provisioned | Amazon Redshift Serverless |
 | --- | --- | --- |
 | IAM | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png)Yes | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png)Yes |
@@ -277,8 +275,6 @@ Make sure your data is stored in one of the following [supported structured data
 + AWS Glue Data Catalog (AWS Lake Formation)
 
 The following table summarizes the authentication methods available for the query engine, depending on your data store:
-
-****
 
 | Authentication method | Amazon Redshift | AWS Glue Data Catalog (AWS Lake Formation) |
 | --- | --- | --- |

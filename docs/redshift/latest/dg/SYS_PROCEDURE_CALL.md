@@ -24,6 +24,7 @@ SYS\_PROCEDURE\_CALL is visible to all users. Superusers can see all rows; regul
 | end\_time | timestamp | The time in UTC when the query finished running. The timestamp uses six digits of precision for fractional seconds, for example: 2009-06-12 11:29:19.131358. |
 | status | char(10) | The status of the stored procedure call. When the stored procedure was stopped by the system or canceled by the user, the value is canceled. If the stored procedure call runs to completion, the value is success. |
 | caller\_procedure\_query\_id | integer | If the stored procedure call was invoked by another stored procedure call, then this column contains the query ID of the outer call. Otherwise, the field is NULL. |
+| query\_uuid | character(36) | A globally unique identifier (UUID) of the query. |
 
 ## Sample queries
 <a name="SYS_PROCEDURE_CALL-sample-queries"></a>

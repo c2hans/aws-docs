@@ -70,7 +70,7 @@ The update from Amazon Linux 2 to AL2023 introduces significant changes that mig
 ## SageMaker HyperPod release notes: May 13, 2025
 <a name="sagemaker-hyperpod-release-notes-20250513"></a>
 
-SageMaker HyperPod releases the following for [Orchestrating SageMaker HyperPod clusters with SlurmSlurm orchestration](sagemaker-hyperpod-slurm.md).
+SageMaker HyperPod releases the following for [Orchestrating SageMaker HyperPod clusters with Slurm](sagemaker-hyperpod-slurm.md).
 
 **New features and improvements**
 + Released an updated AMI that supports Ubuntu 22.04 LTS for Slurm clusters. This release includes several system and software component upgrades to provide improved performance, updated features, and enhanced security.
@@ -93,7 +93,7 @@ SageMaker HyperPod releases the following for [Orchestrating SageMaker HyperPod 
 ## SageMaker HyperPod release notes: April 28, 2025
 <a name="sagemaker-hyperpod-release-notes-20250428"></a>
 
-SageMaker HyperPod releases the following for [Orchestrating SageMaker HyperPod clusters with SlurmSlurm orchestration](sagemaker-hyperpod-slurm.md) and [Orchestrating SageMaker HyperPod clusters with Amazon EKS](sagemaker-hyperpod-eks.md).
+SageMaker HyperPod releases the following for [Orchestrating SageMaker HyperPod clusters with Slurm](sagemaker-hyperpod-slurm.md) and [Orchestrating SageMaker HyperPod clusters with Amazon EKS](sagemaker-hyperpod-eks.md).
 
 **New features and improvements**
 + Upgraded NVIDIA driver from version 550.144.03 to 550.163.01. This upgrade is to address Common Vulnerabilities and Exposures (CVEs) present in the [NVIDIA GPU Display Security Bulletin for April 2025](https://nvidia.custhelp.com/app/answers/detail/a_id/5630).
@@ -111,7 +111,7 @@ SageMaker HyperPod releases the following for [Orchestrating SageMaker HyperPod 
 ## SageMaker HyperPod release notes: April 10, 2025
 <a name="sagemaker-hyperpod-release-notes-20250410"></a>
 
-SageMaker HyperPod releases the following for [Orchestrating SageMaker HyperPod clusters with SlurmSlurm orchestration](sagemaker-hyperpod-slurm.md).
+SageMaker HyperPod releases the following for [Orchestrating SageMaker HyperPod clusters with Slurm](sagemaker-hyperpod-slurm.md).
 
 **New features and improvements**
 + Added a Direct Preference Optimization (DPO) recipe tutorial for SageMaker HyperPod with Slurm orchestration. This fine-tuning tutorial provides step-by-step guidance for optimizing model alignment using the DPO method on GPU-powered SageMaker HyperPod Slurm clusters. For more information, see [HyperPod Slurm cluster DPO tutorial (GPU)](hyperpod-gpu-slurm-dpo-tutorial.md).
@@ -119,7 +119,7 @@ SageMaker HyperPod releases the following for [Orchestrating SageMaker HyperPod 
 ## SageMaker HyperPod release notes: April 03, 2025
 <a name="sagemaker-hyperpod-release-notes-20250403"></a>
 
-SageMaker HyperPod releases the following for [Orchestrating SageMaker HyperPod clusters with SlurmSlurm orchestration](sagemaker-hyperpod-slurm.md) and [Orchestrating SageMaker HyperPod clusters with Amazon EKS](sagemaker-hyperpod-eks.md).
+SageMaker HyperPod releases the following for [Orchestrating SageMaker HyperPod clusters with Slurm](sagemaker-hyperpod-slurm.md) and [Orchestrating SageMaker HyperPod clusters with Amazon EKS](sagemaker-hyperpod-eks.md).
 
 **New features and improvements**
 + Added a [Quickstart](sagemaker-hyperpod-quickstart.md) page for deploying SageMaker HyperPod clusters. The page leverages streamlined setup workflows from SageMaker HyperPod’s specialized workshops and automates deployment using prebuilt AWS CloudFormation templates. It supports infrastructure preferences like Slurm or Amazon EKS, for easy configuration and deployment of baseline clusters.
@@ -129,16 +129,16 @@ SageMaker HyperPod releases the following for [Orchestrating SageMaker HyperPod 
 ## SageMaker HyperPod release notes: March 16, 2025
 <a name="sagemaker-hyperpod-release-notes-20250316"></a>
 
-SageMaker HyperPod releases the following for [Orchestrating SageMaker HyperPod clusters with SlurmSlurm orchestration](sagemaker-hyperpod-slurm.md) and [Orchestrating SageMaker HyperPod clusters with Amazon EKS](sagemaker-hyperpod-eks.md).
+SageMaker HyperPod releases the following for [Orchestrating SageMaker HyperPod clusters with Slurm](sagemaker-hyperpod-slurm.md) and [Orchestrating SageMaker HyperPod clusters with Amazon EKS](sagemaker-hyperpod-eks.md).
 
 **New features and improvements**
-+ Added the following IAM condition keys for more granular access control in the [`CreateCluster`](https://docs.aws.amazon.com//sagemaker/latest/APIReference/API_CreateCluster.html) and [`UpdateCluster`](https://docs.aws.amazon.com//sagemaker/latest/APIReference/API_UpdateCluster.html) API operations.
++ Added the following IAM condition keys for more granular access control in the [`CreateCluster`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateCluster.html) and [`UpdateCluster`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateCluster.html) API operations.
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-release-notes.html)
 
 ## SageMaker HyperPod release notes: February 20, 2025
 <a name="sagemaker-hyperpod-release-notes-20250220"></a>
 
-SageMaker HyperPod releases the following for [Orchestrating SageMaker HyperPod clusters with SlurmSlurm orchestration](sagemaker-hyperpod-slurm.md) and [Orchestrating SageMaker HyperPod clusters with Amazon EKS](sagemaker-hyperpod-eks.md).
+SageMaker HyperPod releases the following for [Orchestrating SageMaker HyperPod clusters with Slurm](sagemaker-hyperpod-slurm.md) and [Orchestrating SageMaker HyperPod clusters with Amazon EKS](sagemaker-hyperpod-eks.md).
 
 **New features and improvements**
 + Added support for deleting instance groups from your SageMaker HyperPod cluster. For more information, see [Delete instance groups](smcluster-scale-down.md#smcluster-remove-instancegroup) from EKS-orchestrated clusters and [Scale down a cluster](sagemaker-hyperpod-operate-slurm-cli-command.md#sagemaker-hyperpod-operate-slurm-cli-command-scale-down) for Slurm-orchestrated clusters.
@@ -146,7 +146,7 @@ SageMaker HyperPod releases the following for [Orchestrating SageMaker HyperPod 
 ## SageMaker HyperPod release notes: February 18, 2025
 <a name="sagemaker-hyperpod-release-notes-20250218"></a>
 
-SageMaker HyperPod releases the following for [Orchestrating SageMaker HyperPod clusters with SlurmSlurm orchestration](sagemaker-hyperpod-slurm.md) and [Orchestrating SageMaker HyperPod clusters with Amazon EKS](sagemaker-hyperpod-eks.md).
+SageMaker HyperPod releases the following for [Orchestrating SageMaker HyperPod clusters with Slurm](sagemaker-hyperpod-slurm.md) and [Orchestrating SageMaker HyperPod clusters with Amazon EKS](sagemaker-hyperpod-eks.md).
 
 **New features**
 + This release of SageMaker HyperPod incorporates a security update from the Nvidia container toolkit (from version 1.17.3 to version 1.17.4). For more information, see [v1.17.4 release note](https://github.com/NVIDIA/nvidia-container-toolkit/releases/tag/v1.17.4).
@@ -158,7 +158,7 @@ For information about related AMI releases, see [SageMaker HyperPod AMI releases
 ## SageMaker HyperPod release notes: February 06, 2025
 <a name="sagemaker-hyperpod-release-notes-20250206"></a>
 
-SageMaker HyperPod releases the following for [Orchestrating SageMaker HyperPod clusters with SlurmSlurm orchestration](sagemaker-hyperpod-slurm.md) and [Orchestrating SageMaker HyperPod clusters with Amazon EKS](sagemaker-hyperpod-eks.md).
+SageMaker HyperPod releases the following for [Orchestrating SageMaker HyperPod clusters with Slurm](sagemaker-hyperpod-slurm.md) and [Orchestrating SageMaker HyperPod clusters with Amazon EKS](sagemaker-hyperpod-eks.md).
 
 **New features and improvements**
 + Enhanced SageMaker HyperPod multi-AZ support: You can specify different subnets and security groups, cutting across different Availability Zones, for individual instance groups within your cluster. For more information about SageMaker HyperPod multi-AZ support, see [Setting up SageMaker HyperPod clusters across multiple AZs](sagemaker-hyperpod-prerequisites.md#sagemaker-hyperpod-prerequisites-multiple-availability-zones).
@@ -172,7 +172,7 @@ SageMaker HyperPod releases the following for [Orchestrating SageMaker HyperPod 
 ## SageMaker HyperPod release notes: January 09, 2025
 <a name="sagemaker-hyperpod-release-notes-20250109"></a>
 
-SageMaker HyperPod releases the following for [Orchestrating SageMaker HyperPod clusters with Amazon EKS](sagemaker-hyperpod-eks.md) and [Orchestrating SageMaker HyperPod clusters with SlurmSlurm orchestration](sagemaker-hyperpod-slurm.md).
+SageMaker HyperPod releases the following for [Orchestrating SageMaker HyperPod clusters with Amazon EKS](sagemaker-hyperpod-eks.md) and [Orchestrating SageMaker HyperPod clusters with Slurm](sagemaker-hyperpod-slurm.md).
 
 **New features and improvements**
 + Added IPv6 support: Clusters can use IPv6 addressing when configured with IPv6-enabled VPC and subnets. For more information, see [Setting up SageMaker HyperPod with a custom Amazon VPC](sagemaker-hyperpod-prerequisites.md#sagemaker-hyperpod-prerequisites-optional-vpc).
@@ -180,7 +180,7 @@ SageMaker HyperPod releases the following for [Orchestrating SageMaker HyperPod 
 ## SageMaker HyperPod release notes: December 21, 2024
 <a name="sagemaker-hyperpod-release-notes-20241221"></a>
 
-SageMaker HyperPod releases the following for [Orchestrating SageMaker HyperPod clusters with Amazon EKS](sagemaker-hyperpod-eks.md) and [Orchestrating SageMaker HyperPod clusters with SlurmSlurm orchestration](sagemaker-hyperpod-slurm.md).
+SageMaker HyperPod releases the following for [Orchestrating SageMaker HyperPod clusters with Amazon EKS](sagemaker-hyperpod-eks.md) and [Orchestrating SageMaker HyperPod clusters with Slurm](sagemaker-hyperpod-slurm.md).
 
 **New features**
 + SageMaker HyperPod now supports the following instance types for both Slurm and Amazon EKS clusters.
@@ -198,7 +198,7 @@ SageMaker HyperPod releases the following for [Orchestrating SageMaker HyperPod 
 ## SageMaker HyperPod release notes: December 13, 2024
 <a name="sagemaker-hyperpod-release-notes-20241213"></a>
 
-SageMaker HyperPod releases the following for [Orchestrating SageMaker HyperPod clusters with Amazon EKS](sagemaker-hyperpod-eks.md) and [Orchestrating SageMaker HyperPod clusters with SlurmSlurm orchestration](sagemaker-hyperpod-slurm.md).
+SageMaker HyperPod releases the following for [Orchestrating SageMaker HyperPod clusters with Amazon EKS](sagemaker-hyperpod-eks.md) and [Orchestrating SageMaker HyperPod clusters with Slurm](sagemaker-hyperpod-slurm.md).
 
 **New feature**
 + SageMaker HyperPod releases a set of Amazon CloudWatch metrics to monitor the health and performance of SageMaker HyperPod Slurm clusters. These metrics are related to CPU, GPU, memory utilization, and cluster instance information such as node counts and failed nodes. This monitoring feature is enabled by default, and the metrics can be accessed under the `/aws/sagemaker/Clusters` CloudWatch namespace. You can also set up CloudWatch alarms based on these metrics to proactively detect and address potential issues within their Slurm-based HyperPod clusters. For more information, see [Amazon SageMaker HyperPod Slurm metrics](smcluster-slurm-metrics.md).
@@ -209,7 +209,7 @@ SageMaker HyperPod releases the following for [Orchestrating SageMaker HyperPod 
 ## SageMaker HyperPod release notes: November 24, 2024
 <a name="sagemaker-hyperpod-release-notes-20241124"></a>
 
-SageMaker HyperPod releases the following for [Orchestrating SageMaker HyperPod clusters with Amazon EKS](sagemaker-hyperpod-eks.md) and [Orchestrating SageMaker HyperPod clusters with SlurmSlurm orchestration](sagemaker-hyperpod-slurm.md).
+SageMaker HyperPod releases the following for [Orchestrating SageMaker HyperPod clusters with Amazon EKS](sagemaker-hyperpod-eks.md) and [Orchestrating SageMaker HyperPod clusters with Slurm](sagemaker-hyperpod-slurm.md).
 
 **New features**
 + Added support for configuring SageMaker HyperPod clusters across multiple Availability Zones. For more information about SageMaker HyperPod multi-AZ support, see [Setting up SageMaker HyperPod clusters across multiple AZs](sagemaker-hyperpod-prerequisites.md#sagemaker-hyperpod-prerequisites-multiple-availability-zones).
@@ -221,7 +221,7 @@ SageMaker HyperPod releases the following for [Orchestrating SageMaker HyperPod 
 ## SageMaker HyperPod release notes: November 15, 2024
 <a name="sagemaker-hyperpod-release-notes-20241115"></a>
 
-SageMaker HyperPod releases the following for [Orchestrating SageMaker HyperPod clusters with Amazon EKS](sagemaker-hyperpod-eks.md) and [Orchestrating SageMaker HyperPod clusters with SlurmSlurm orchestration](sagemaker-hyperpod-slurm.md). For more information, see and [SageMaker HyperPod AMI releases for Amazon EKS: November 15, 2024](sagemaker-hyperpod-release-ami-eks.md#sagemaker-hyperpod-release-ami-eks-20241115).
+SageMaker HyperPod releases the following for [Orchestrating SageMaker HyperPod clusters with Amazon EKS](sagemaker-hyperpod-eks.md) and [Orchestrating SageMaker HyperPod clusters with Slurm](sagemaker-hyperpod-slurm.md). For more information, see and [SageMaker HyperPod AMI releases for Amazon EKS: November 15, 2024](sagemaker-hyperpod-release-ami-eks.md#sagemaker-hyperpod-release-ami-eks-20241115).
 
 **New features and improvements**
 + Added support for trn1 and trn1n instance types for both Amazon EKS and Slurm orchestrated clusters.
@@ -244,7 +244,7 @@ Some logs are still stored in syslogs.
 ## SageMaker HyperPod release notes: November 11, 2024
 <a name="sagemaker-hyperpod-release-notes-20241111"></a>
 
-SageMaker HyperPod releases the following for [Orchestrating SageMaker HyperPod clusters with Amazon EKS](sagemaker-hyperpod-eks.md) and [Orchestrating SageMaker HyperPod clusters with SlurmSlurm orchestration](sagemaker-hyperpod-slurm.md).
+SageMaker HyperPod releases the following for [Orchestrating SageMaker HyperPod clusters with Amazon EKS](sagemaker-hyperpod-eks.md) and [Orchestrating SageMaker HyperPod clusters with Slurm](sagemaker-hyperpod-slurm.md).
 
 **New feature**
 + SageMaker HyperPod AMI now supports G6e instance types.
@@ -256,7 +256,7 @@ SageMaker HyperPod releases the following for [Orchestrating SageMaker HyperPod 
 ## SageMaker HyperPod release notes: October 31, 2024
 <a name="sagemaker-hyperpod-release-notes-20241031"></a>
 
-SageMaker HyperPod releases the following for [Orchestrating SageMaker HyperPod clusters with Amazon EKS](sagemaker-hyperpod-eks.md) and [Orchestrating SageMaker HyperPod clusters with SlurmSlurm orchestration](sagemaker-hyperpod-slurm.md).
+SageMaker HyperPod releases the following for [Orchestrating SageMaker HyperPod clusters with Amazon EKS](sagemaker-hyperpod-eks.md) and [Orchestrating SageMaker HyperPod clusters with Slurm](sagemaker-hyperpod-slurm.md).
 
 **New features**
 + Added scaling down SageMaker HyperPod clusters at the instance group level and instance level for both Amazon EKS and Slurm orchestrated clusters. For more information about scaling down Amazon EKS clusters, see [Scaling down a SageMaker HyperPod cluster](smcluster-scale-down.md). For more information about scaling down Slurm clusters, see *Scale down a cluster* in [Managing SageMaker HyperPod Slurm clusters using the AWS CLI](sagemaker-hyperpod-operate-slurm-cli-command.md).
@@ -265,7 +265,7 @@ SageMaker HyperPod releases the following for [Orchestrating SageMaker HyperPod 
 ## SageMaker HyperPod release notes: October 21, 2024
 <a name="sagemaker-hyperpod-release-notes-20241021"></a>
 
-SageMaker HyperPod releases the following for [Orchestrating SageMaker HyperPod clusters with Amazon EKS](sagemaker-hyperpod-eks.md) and [Orchestrating SageMaker HyperPod clusters with SlurmSlurm orchestration](sagemaker-hyperpod-slurm.md).
+SageMaker HyperPod releases the following for [Orchestrating SageMaker HyperPod clusters with Amazon EKS](sagemaker-hyperpod-eks.md) and [Orchestrating SageMaker HyperPod clusters with Slurm](sagemaker-hyperpod-slurm.md).
 
 **New feature**
 + SageMaker HyperPod now supports the P5e[n], G6, Gr6, and Trn2[n] instance types for both Slurm and Amazon EKS clusters.
@@ -277,7 +277,7 @@ SageMaker HyperPod releases the following for [Orchestrating SageMaker HyperPod 
 ## SageMaker HyperPod release notes: September 10, 2024
 <a name="sagemaker-hyperpod-release-notes-20240910"></a>
 
-SageMaker HyperPod releases the following for [Orchestrating SageMaker HyperPod clusters with Amazon EKS](sagemaker-hyperpod-eks.md) and [Orchestrating SageMaker HyperPod clusters with SlurmSlurm orchestration](sagemaker-hyperpod-slurm.md).
+SageMaker HyperPod releases the following for [Orchestrating SageMaker HyperPod clusters with Amazon EKS](sagemaker-hyperpod-eks.md) and [Orchestrating SageMaker HyperPod clusters with Slurm](sagemaker-hyperpod-slurm.md).
 
 **New features**
 + Added Amazon EKS support in SageMaker HyperPod. To learn more, see [Orchestrating SageMaker HyperPod clusters with Amazon EKS](sagemaker-hyperpod-eks.md).

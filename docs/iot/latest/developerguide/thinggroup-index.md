@@ -83,8 +83,6 @@ aws iot search-index --index-name "AWS_ThingGroups" --query-string "thingGroupNa
 
 You can specify the thing groups index as a resource ARN in an AWS IoT policy action, as follows.
 
-****
-
 | Action | Resource |
 | --- | --- |
 | `iot:SearchIndex` | An index ARN (for example, `arn:aws:iot:{{your-aws-region}}:index/AWS_ThingGroups`). |

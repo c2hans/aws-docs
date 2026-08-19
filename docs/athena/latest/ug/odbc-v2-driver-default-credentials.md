@@ -10,8 +10,6 @@ You can use the default credentials that you configure on your client system to 
 ## Authentication type
 <a name="odbc-v2-driver-default-credentials-authentication"></a>
 
-****
-
 | **Connection string name** | **Parameter type** | **Default value** | **Connection string example** |
 | --- | --- | --- | --- |
 | AuthenticationType | Required | IAM Credentials | AuthenticationType=Default Credentials; |

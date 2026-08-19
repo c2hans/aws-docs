@@ -29,8 +29,6 @@ AWS Transform has no API operations that can be used in the `Actions` element of
 
 The following actions are defined by AWS Transform but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 - **   [AccessTransformProfile](https://docs.aws.amazon.com/transform/latest/userguide/security_iam_permissions.html)  **
   - **Description:** Grants permission to invoke AccessTransformProfile on AWS Transform
   - **Resource types (\*required):** [profile\*](#list_transform-resource-profile)
@@ -168,8 +166,6 @@ The following actions are defined by AWS Transform but are not directly invocabl
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
 
-****
-
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
 |  [connector](https://docs.aws.amazon.com/transform/latest/userguide/security_iam_permissions.html)  | arn:${Partition}:transform:${Region}:${Account}:connector/${WorkspaceId}/${ConnectorId} | [aws:ResourceTag/${TagKey}](#list_transform-aws_ResourceTag___TagKey_) |
@@ -179,8 +175,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_transform-policy-keys"></a>
 
 AWS Transform defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

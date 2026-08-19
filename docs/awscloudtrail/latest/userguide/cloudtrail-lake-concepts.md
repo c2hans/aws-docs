@@ -45,7 +45,7 @@ An event data store’s *default retention period* is the default number of days
 An event data store’s *maximum retention period* represents the maximum number of days that you can keep data in an event data store.
 
 **Termination protection**
-By default, event data stores enable *termination protection*, which protects an event data store from being accidentally deleted. To delete an event data store with termination protection enabled, choose **Change termination protection** from the **Actions** menu on the event data store’s details page. Then you can proceed with deleting the event data store. For more information, see [Change termination protection with the consoleChange termination protection with the CloudTrail console](query-eds-termination-protection.md).
+By default, event data stores enable *termination protection*, which protects an event data store from being accidentally deleted. To delete an event data store with termination protection enabled, choose **Change termination protection** from the **Actions** menu on the event data store’s details page. Then you can proceed with deleting the event data store. For more information, see [Change termination protection with the console](query-eds-termination-protection.md).
 
 ## Integrations
 <a name="cloudtrail-lake-concepts-integrations"></a>

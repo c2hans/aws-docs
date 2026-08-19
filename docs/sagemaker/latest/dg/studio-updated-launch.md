@@ -25,8 +25,8 @@ As of November 30, 2023, the previous Amazon SageMaker Studio experience is now 
 
  Before you begin, complete the following prerequisites:
 + Onboard to a SageMaker AI domain with Studio access. If you don't have permissions to set Studio as the default experience for your domain, contact your administrator. For more information, see [Amazon SageMaker AI domain overview](gs-studio-onboard.md).
-+ Update the AWS CLI by following the steps in [Installing the current AWS CLI Version](https://docs.aws.amazon.com//cli/latest/userguide/install-cliv1.html#install-tool-bundled).
-+ From your local machine, run `aws configure` and provide your AWS credentials. For information about AWS credentials, see [Understanding and getting your AWS credentials](https://docs.aws.amazon.com//general/latest/gr/aws-sec-cred-types.html).
++ Update the AWS CLI by following the steps in [Installing the current AWS CLI Version](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv1.html#install-tool-bundled).
++ From your local machine, run `aws configure` and provide your AWS credentials. For information about AWS credentials, see [Understanding and getting your AWS credentials](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html).
 
 ## Service quotas for Studio
 <a name="studio-updated-launch-quotas"></a>
@@ -70,7 +70,7 @@ If your default quota is too low, you can request an increase.
 
 1. For pending requests, choose the status to open the receipt. When the status changes to **Quota requested**, you see the AWS Support case number.
 
-For more information about Amazon SageMaker AI quotas, see [Amazon SageMaker AI endpoints and quotas](https://docs.aws.amazon.com//general/latest/gr/sagemaker.html) in the AWS General Reference. For more information about requesting a quota increase, see [Requesting a quota increase](https://docs.aws.amazon.com//servicequotas/latest/userguide/request-quota-increase.html) in the Service Quotas User Guide.
+For more information about Amazon SageMaker AI quotas, see [Amazon SageMaker AI endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/sagemaker.html) in the AWS General Reference. For more information about requesting a quota increase, see [Requesting a quota increase](https://docs.aws.amazon.com/servicequotas/latest/userguide/request-quota-increase.html) in the Service Quotas User Guide.
 
 ## Launch from the Amazon SageMaker AI console
 <a name="studio-updated-launch-console"></a>

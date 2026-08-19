@@ -20,3 +20,4 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::Wisdom::MessageTemplate](aws-resource-wisdom-messagetemplate.md)
 + [AWS::Wisdom::MessageTemplateVersion](aws-resource-wisdom-messagetemplateversion.md)
 + [AWS::Wisdom::QuickResponse](aws-resource-wisdom-quickresponse.md)
++ [AWS::Wisdom::Session](aws-resource-wisdom-session.md)

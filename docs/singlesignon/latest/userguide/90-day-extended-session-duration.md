@@ -10,7 +10,7 @@ If your developers use Kiro as part of an integrated development environment (ID
 For considerations such as how IAM Identity Center identity sources might affect the extended session duration, see [Session duration considerations for using identity sources, the AWS CLI, and AWS SDKs](user-session-duration-prereqs-considerations.md).
 
 **Note**
-Kiro is accessible from consoles set to commercial AWS Regions that are enabled by default. If your IAM Identity Center instance is located in a Region where Kiro isn't currently accessible, enabling 90 day extended session duration won't override the default setting. This means that your session duration remains unchanged, whether you enable 90 day extended session duration or not. For information, [Supported AWS Regions for Kiro](https://docs.aws.amazon.com//amazonq/latest/qdeveloper-ug/regions.html).
+Kiro is accessible from consoles set to commercial AWS Regions that are enabled by default. If your IAM Identity Center instance is located in a Region where Kiro isn't currently accessible, enabling 90 day extended session duration won't override the default setting. This means that your session duration remains unchanged, whether you enable 90 day extended session duration or not. For information, [Supported AWS Regions for Kiro](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/regions.html).
 
 **To extend a session for Kiro**
 

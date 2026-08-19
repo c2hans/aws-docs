@@ -9,8 +9,6 @@ The content in an AWS Elemental MediaConnect source is always a transport stream
 
 Obtain identifying information from the content provider.
 
-****
-
 - **Video**
   - **Details:** The source content might contain more than one video rendition.If two video renditions are identical, look at the audios and captions in each program. Those might be different, in which case you should choose the video program that contains the audio or captions formats that you want.
   - **Information to obtain:** Obtain the PID or bitrate of the video rendition that you want.

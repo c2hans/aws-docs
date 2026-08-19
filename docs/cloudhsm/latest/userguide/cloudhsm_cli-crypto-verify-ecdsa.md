@@ -64,7 +64,11 @@ These examples show how to use **crypto verify ecdsa** to verify a signature tha
 **Example: Verify a Base64 encoded signature with Base64 encoded data**
 
 ```
-aws-cloudhsm > crypto verify ecdsa --hash-function sha256 --key-filter attr.label=ec-public --data YWJjMTIz --signature 4zki+FzjhP7Z/KqoQvh4ueMAxQQVp7FQguZ2wOS3Q5bzk+Hc5irV5iTkuxQbropPttVFZ8V6FgR2fz+sPegwCw==
+aws-cloudhsm > crypto verify ecdsa \
+    --hash-function sha256 \
+    --key-filter attr.label=ec-public \
+    --data YWJjMTIz \
+    --signature 4zki+FzjhP7Z/KqoQvh4ueMAxQQVp7FQguZ2wOS3Q5bzk+Hc5irV5iTkuxQbropPttVFZ8V6FgR2fz+sPegwCw==
 {
   "error_code": 0,
   "data": {
@@ -76,9 +80,13 @@ aws-cloudhsm > crypto verify ecdsa --hash-function sha256 --key-filter attr.labe
 **Example: Verify a signature file with a data file**
 
 ```
-aws-cloudhsm > crypto verify ecdsa --hash-function sha256 --key-filter attr.label=ec-public --data-path data.txt --signature-path signature-file
+aws-cloudhsm > crypto verify ecdsa \
+    --hash-function sha256 \
+    --key-filter attr.label=ec-public \
+    --data-path data.txt \
+    --signature-path signature-file
 {
-   "error_code": 0,
+  "error_code": 0,
   "data": {
     "message": "Signature verified successfully"
   }
@@ -89,7 +97,11 @@ aws-cloudhsm > crypto verify ecdsa --hash-function sha256 --key-filter attr.labe
 This command verifies whether the data located at `/home/data` was signed by a public key with the label `ecdsa-public` using the ECDSA signing mechanism to produce the signature located in `/home/signature`. Because the given arguments do not make up a true signing relationship, the command returns an error message.
 
 ```
-aws-cloudhsm > crypto verify ecdsa --hash-function sha256 --key-filter attr.label=ec-public --data aW52YWxpZA== --signature +ogk7M7S3iTqFg3SndJfd91dZFr5Qo6YixJl8JwcvqqVgsVuO6o+VKvTRjz0/V05kf3JJbBLr87Q+wLWcMAJfA==
+aws-cloudhsm > crypto verify ecdsa \
+    --hash-function sha256 \
+    --key-filter attr.label=ec-public \
+    --data aW52YWxpZA== \
+    --signature +ogk7M7S3iTqFg3SndJfd91dZFr5Qo6YixJl8JwcvqqVgsVuO6o+VKvTRjz0/V05kf3JJbBLr87Q+wLWcMAJfA==
 {
   "error_code": 1,
   "data": "Signature verification failed"

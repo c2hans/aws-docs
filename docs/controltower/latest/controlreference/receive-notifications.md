@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/controltower/latest/controlreference/rec
 <a name="receive-notifications"></a>
 
 **Note**
-AWS Control Tower will no longer be sending drift notifications to SNS topic for all customers on LZ4.0\+. For customers on LZ4.0\+ follow the [EventBridge Notification setup](https://docs.aws.amazon.com//controltower/latest/userguide/governance-drift.html#eventbridge-creation).
+AWS Control Tower will no longer be sending drift notifications to SNS topic for all customers on LZ4.0\+. For customers on LZ4.0\+ follow the [EventBridge Notification setup](https://docs.aws.amazon.com/controltower/latest/userguide/governance-drift.html#eventbridge-creation).
 
 To receive compliance change notifications in email sent to your audit account, subscribe to this Amazon SNS topic:
 
@@ -29,7 +29,7 @@ When subscribing, substitute your actual AWS Control Tower home Region and audit
 + All of these topics exist and receive notifications in the Audit account.
 +  By default, the Audit account email address is subscribed to the `aws-controltower-AggregateSecurityNotifications` SNS topic.
 + SNS topics in AWS Control Tower are extremely noisy, by design. For example, AWS Config sends a notification every time AWS Config discovers a new resource.
-+ Administrators who wish to filter out specific types of notifications from an SNS topic can create an AWS Lambda function and subscribe it to the SNS topic. Alternatively, you can set up an EventBridge rule to filter notifications, as described in this support article, [How can I be notified when an AWS resource is non-compliant using AWS Config?](https://aws.amazon.com//premiumsupport/knowledge-center/config-resource-non-compliant/)
++ Administrators who wish to filter out specific types of notifications from an SNS topic can create an AWS Lambda function and subscribe it to the SNS topic. Alternatively, you can set up an EventBridge rule to filter notifications, as described in this support article, [How can I be notified when an AWS resource is non-compliant using AWS Config?](https://aws.amazon.com/premiumsupport/knowledge-center/config-resource-non-compliant/)
 + AWS Config notifications contain a JSON object.
 + AWS Control Tower drift notifications appear in plain text.
 

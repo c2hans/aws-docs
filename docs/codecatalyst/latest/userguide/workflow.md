@@ -9,10 +9,10 @@ Amazon CodeCatalyst is no longer open to new customers. Existing customers can c
 
 After writing your application code in a [CodeCatalyst Dev Environment](devenvironment.md) and pushing it to your [CodeCatalyst source repository](source.md), you're ready to deploy it. The way to do this automatically is through a workflow.
 
-A *workflow* is an automated procedure that describes how to build, test, and deploy your code as part of a continuous integration and continuous delivery (CI/CD) system. A workflow defines a series of steps, or *actions*, to take during a workflow run. A workflow also defines the events, or *triggers*, that cause the workflow to start. To set up a workflow, you create a *workflow definition file* using the CodeCatalyst console's [visual or YAML editor](https://docs.aws.amazon.com//codecatalyst/latest/userguide/flows.html#workflow.editors).
+A *workflow* is an automated procedure that describes how to build, test, and deploy your code as part of a continuous integration and continuous delivery (CI/CD) system. A workflow defines a series of steps, or *actions*, to take during a workflow run. A workflow also defines the events, or *triggers*, that cause the workflow to start. To set up a workflow, you create a *workflow definition file* using the CodeCatalyst console's [visual or YAML editor](https://docs.aws.amazon.com/codecatalyst/latest/userguide/flows.html#workflow.editors).
 
 **Tip**
-For a quick look at how you might use workflows in a project, [create a project with a blueprint](https://docs.aws.amazon.com//codecatalyst/latest/userguide/projects-create.html#projects-create-console-template). Each blueprint deploys a functioning workflow that you can review, run, and experiment with.
+For a quick look at how you might use workflows in a project, [create a project with a blueprint](https://docs.aws.amazon.com/codecatalyst/latest/userguide/projects-create.html#projects-create-console-template). Each blueprint deploys a functioning workflow that you can review, run, and experiment with.
 
 ## About the workflow definition file
 <a name="workflow.example"></a>

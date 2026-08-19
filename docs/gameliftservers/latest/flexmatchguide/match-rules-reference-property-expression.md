@@ -28,8 +28,6 @@ A property expression identifies a specific value for a player, team, or match. 
 
 The following table illustrates some property expressions that build on the previous examples:
 
-****
-
 | Expression | Meaning | Resulting Type |
 | --- | --- | --- |
 | `teams[red].players[playerId]` | The player IDs of all players on the red team | List<string> |
@@ -41,8 +39,6 @@ The following table illustrates some property expressions that build on the prev
 <a name="match-rules-reference-property-expression-aggregation"></a>
 
 Property expressions can be used to aggregate team data by using the following functions or combinations of functions:
-
-****
 
 | Aggregation | Input | Meaning | Output |
 | --- | --- | --- | --- |
@@ -58,8 +54,6 @@ Property expressions can be used to aggregate team data by using the following f
 | All above | List<List<?>> | All operations on a nested list operate on each sublist individually to produce a list of results. | List<?> |
 
 The following table illustrates some valid property expressions that use aggregation functions:
-
-****
 
 | Expression | Meaning | Resulting Type |
 | --- | --- | --- |

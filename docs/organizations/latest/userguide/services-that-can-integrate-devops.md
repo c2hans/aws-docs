@@ -9,7 +9,7 @@ Amazon DevOps Guru analyzes operational data and application metrics and events
 
 Using DevOps Guru enables multi-account support with AWS Organizations, so you can designate a member account to manage insights across your entire organization. This delegated administrator can then view, sort, and filter insights from all accounts within your organization to develop a holistic view of the health of all monitored applications within your organization without the need for any additional customization.
 
-For more information, see [Monitor accounts across your organization](https://docs.aws.amazon.com//devops-guru/latest/userguide/getting-started-multi-account.html) in the *Amazon DevOps Guru User Guide*.
+For more information, see [Monitor accounts across your organization](https://docs.aws.amazon.com/devops-guru/latest/userguide/getting-started-multi-account.html) in the *Amazon DevOps Guru User Guide*.
 
 Use the following information to help you integrate Amazon DevOps Guru with AWS Organizations.
 
@@ -27,7 +27,7 @@ You can delete or modify this role only if you disable trusted access between De
 The service-linked role in the previous section can be assumed only by the service principals authorized by the trust relationships defined for the role. The service-linked roles used by DevOps Guru grant access to the following service principals:
 + `devops-guru.amazonaws.com`
 
-For more information, see [Using service-linked roles for DevOps Guru](https://docs.aws.amazon.com//devops-guru/latest/userguide/using-service-linked-roles.html) in the *Amazon DevOps Guru User Guide*.
+For more information, see [Using service-linked roles for DevOps Guru](https://docs.aws.amazon.com/devops-guru/latest/userguide/using-service-linked-roles.html) in the *Amazon DevOps Guru User Guide*.
 
 ## To enable trusted access with DevOps Guru
 <a name="integrate-enable-ta-devops"></a>
@@ -61,7 +61,7 @@ You can enable trusted access by using either the AWS Organizations console or t
 
 **To enable trusted service access using the DevOps Guru console**
 
-1. Sign in as administrator in the management account and open DevOps Guru console: [Amazon DevOps Guru console](https://console.aws.amazon.com//devops-guru/management-account)
+1. Sign in as administrator in the management account and open DevOps Guru console: [Amazon DevOps Guru console](https://console.aws.amazon.com/devops-guru/management-account)
 
 1. Choose **Enable trusted access**.
 
@@ -100,7 +100,7 @@ You can disable trusted access by using the AWS Organizations console.
 ## Enabling a delegated administrator account for DevOps Guru
 <a name="integrate-enable-da-devops"></a>
 
-The delegated administrator account for DevOps Guru can see the insights data from all the member accounts which are onboarded to DevOps Guru from the organization. For information on how a delegated administrator manages organization accounts, see [Monitor accounts across your organization](https://docs.aws.amazon.com//devops-guru/latest/userguide/getting-started-multi-account.html) in the *Amazon DevOps Guru User Guide*.
+The delegated administrator account for DevOps Guru can see the insights data from all the member accounts which are onboarded to DevOps Guru from the organization. For information on how a delegated administrator manages organization accounts, see [Monitor accounts across your organization](https://docs.aws.amazon.com/devops-guru/latest/userguide/getting-started-multi-account.html) in the *Amazon DevOps Guru User Guide*.
 
 Only an administrator in the organization management account can configure a delegated administrator for DevOps Guru.
 
@@ -114,7 +114,7 @@ Only a user or role in the Organizations management account can configure a memb
 
 **To configure a delegated administrator in the DevOps Guru console**
 
-1. Sign in as administrator in the management account and open DevOps Guru console: [Amazon DevOps Guru console](https://console.aws.amazon.com//devops-guru/management-account)
+1. Sign in as administrator in the management account and open DevOps Guru console: [Amazon DevOps Guru console](https://console.aws.amazon.com/devops-guru/management-account)
 
 1. Choose **Register delegated administrator**. You can choose either Management account or any member account as the delegated admin.
 
@@ -136,4 +136,4 @@ If you want to configure a delegated administrator account using the AWS CLI or 
 ## Disabling a delegated administrator for DevOps Guru
 <a name="integrate-disable-da-devops"></a>
 
- You can remove the delegated administrator using either the DevOps Guru console, or by using the Organizations `DeregisterDelegatedAdministrator` CLI or SDK operation. For information on how to remove a delegated administrator using the DevOps Guru console, see [Monitor accounts across your organization](https://docs.aws.amazon.com//devops-guru/latest/userguide/getting-started-multi-account.html) in the *Amazon DevOps Guru User Guide*.
+ You can remove the delegated administrator using either the DevOps Guru console, or by using the Organizations `DeregisterDelegatedAdministrator` CLI or SDK operation. For information on how to remove a delegated administrator using the DevOps Guru console, see [Monitor accounts across your organization](https://docs.aws.amazon.com/devops-guru/latest/userguide/getting-started-multi-account.html) in the *Amazon DevOps Guru User Guide*.

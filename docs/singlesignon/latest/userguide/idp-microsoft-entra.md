@@ -33,7 +33,7 @@ Attributes for access control is used in permission policies that determine wh
 
 **Nested Groups**
 
-The Microsoft Entra ID user provisioning service cannot read or provision users in nested groups. Only users that are immediate members of an explicitly assigned group can be read and provisioned. Microsoft Entra ID doesn't recursively unpack the group memberships of indirectly assigned users or groups (users or groups that are members of a group that is directly assigned). For more information, see [Assignment-based scoping](https://learn.microsoft.com/en-us/azure/active-directory/app-provisioning/how-provisioning-works#assignment-based-scoping) in the Microsoft documentation. Alternatively, you can use [IAM Identity Center configurable AD sync](https://aws.amazon.com/blogs//security/managing-identity-source-transition-for-aws-iam-identity-center/) to integrate Active Directory groups with IAM Identity Center.
+The Microsoft Entra ID user provisioning service cannot read or provision users in nested groups. Only users that are immediate members of an explicitly assigned group can be read and provisioned. Microsoft Entra ID doesn't recursively unpack the group memberships of indirectly assigned users or groups (users or groups that are members of a group that is directly assigned). For more information, see [Assignment-based scoping](https://learn.microsoft.com/en-us/azure/active-directory/app-provisioning/how-provisioning-works#assignment-based-scoping) in the Microsoft documentation. Alternatively, you can use [IAM Identity Center configurable AD sync](https://aws.amazon.com/blogs/security/managing-identity-source-transition-for-aws-iam-identity-center/) to integrate Active Directory groups with IAM Identity Center.
 
 **Dynamic Groups**
 
@@ -682,7 +682,7 @@ IAM Identity Center does not expect the email address to contain the {{\#EXT\#@d
 <a name="entra-scim-troubleshooting-resources"></a>
 + For general SCIM troubleshooting tips, see [Troubleshooting IAM Identity Center issues](troubleshooting.md).
 + For Microsoft Entra ID troubleshooting, see [Microsoft documentation](https://learn.microsoft.com/en-us/entra/identity/saas-apps/aws-single-sign-on-provisioning-tutorial#troubleshooting-tips).
-+ To learn more about federation across multiple AWS accounts, see [Securing AWS accounts with Azure Active Directory Federation](https://aws.amazon.com//blogs/apn/securing-aws-accounts-with-azure-active-directory-federation/).
++ To learn more about federation across multiple AWS accounts, see [Securing AWS accounts with Azure Active Directory Federation](https://aws.amazon.com/blogs/apn/securing-aws-accounts-with-azure-active-directory-federation/).
 
 The following resources can help you troubleshoot as you work with AWS:
 + [AWS re:Post](https://repost.aws/) - Find FAQs and links to other resources to help you troubleshoot issues.

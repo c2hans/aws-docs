@@ -52,7 +52,7 @@ The following `Parameters` are valid for the `AWS::ResourceGroups::Generic` serv
   ```
 + **`deletion-protection`**
 
-  This parameter specifies that the resource group can't be deleted unless it contains no members. For more information, see [Delete a host resource group](https://docs.aws.amazon.com//license-manager/latest/userguide/host-resource-groups.html#host-resource-group-delete) in the *License Manager User Guide*
+  This parameter specifies that the resource group can't be deleted unless it contains no members. For more information, see [Delete a host resource group](https://docs.aws.amazon.com/license-manager/latest/userguide/host-resource-groups.html#host-resource-group-delete) in the *License Manager User Guide*
 
   **Data type of values:** Array of string
 
@@ -88,7 +88,7 @@ Resource groups of this type are fully managed by the AppRegistry service, and c
 **Note**
 Because resource groups of this type are automatically created and maintained by AWS and not managed by the user, these resource groups do not count against your quota limit for the [maximum number of resource groups that you can create in your AWS account](https://console.aws.amazon.com/servicequotas/home/services/resource-groups/quotas).
 
-For more information, see [Using AppRegistry](https://docs.aws.amazon.com//servicecatalog/latest/adminguide/appregistry.html) in the *Service Catalog User Guide*.
+For more information, see [Using AppRegistry](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/appregistry.html) in the *Service Catalog User Guide*.
 
 When AppRegistry creates a service-linked resource group of this type, it also automatically creates a separate, additional [CloudFormation service-linked group](#about-slg-types-cloudformation) for each AWS CloudFormation stack associated with the application.
 
@@ -106,7 +106,7 @@ The following parameters are supported for the `AWS::AppRegistry::Application` s
   **Required:** Yes
 + **`Arn`**
 
-  This parameter specifies the [Amazon Resource Name (ARN)](https://docs.aws.amazon.com//general/latest/gr/aws-arns-and-namespaces.html) path of the application assigned by AppRegistry.
+  This parameter specifies the [Amazon Resource Name (ARN)](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html) path of the application assigned by AppRegistry.
 
   **Data type of values:** String
 
@@ -117,7 +117,7 @@ The following parameters are supported for the `AWS::AppRegistry::Application` s
 **Note**
 To change any of these elements, you must modify the application using the AppRegistry console or that service's AWS SDK and AWS CLI operations.
 
-This application resource group automatically includes as group members the [resource groups created for the CloudFormation stacks](#about-slg-types-cloudformation) that are associated with the AppRegistry application. You can use the [ListGroupResources](https://docs.aws.amazon.com//ARG/latest/APIReference/API_ListGroupResources.html) operation to see those child groups.
+This application resource group automatically includes as group members the [resource groups created for the CloudFormation stacks](#about-slg-types-cloudformation) that are associated with the AppRegistry application. You can use the [ListGroupResources](https://docs.aws.amazon.com/ARG/latest/APIReference/API_ListGroupResources.html) operation to see those child groups.
 
 The following example shows what the configuration section of a `AWS::AppRegistry::Application` service-linked group looks like.
 
@@ -155,7 +155,7 @@ AppRegistry automatically names the service-linked groups of this type that its 
 **Note**
 Because resource groups of this type are automatically created and maintained by AWS and not managed by the user, these resource groups do not count against your quota limit for the [maximum number of resource groups that you can create in your AWS account](https://console.aws.amazon.com/servicequotas/home/services/resource-groups/quotas).
 
-For more information, see [Using AppRegistry](https://docs.aws.amazon.com//servicecatalog/latest/adminguide/AppRegistry.html) in the *Service Catalog User Guide*.
+For more information, see [Using AppRegistry](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/AppRegistry.html) in the *Service Catalog User Guide*.
 
 AppRegistry automatically creates a service-linked resource group of this type for every CloudFormation stack that you associate with the AppRegistry application. These resource groups become child members of the parent [resource group for the AppRegistry application](#about-slg-types-appregistry).
 
@@ -173,7 +173,7 @@ The following parameters are supported for the `AWS::CloudFormation::Stack` serv
   **Required:** Yes
 + **`Arn`**
 
-  This parameter specifies the [Amazon Resource Name (ARN)](https://docs.aws.amazon.com//general/latest/gr/aws-arns-and-namespaces.html) path of the CloudFormation stack attached to the application in AppRegistry.
+  This parameter specifies the [Amazon Resource Name (ARN)](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html) path of the CloudFormation stack attached to the application in AppRegistry.
 
   **Data type of values:** String
 
@@ -213,7 +213,7 @@ The following example shows what the configuration section of an `AWS::CloudForm
 
 This `Configuration` type specifies that the resource group represents a common pool of capacity provided by the group's members. The members of this resource group are required to be Amazon EC2 capacity reservations. A resource group can include both capacity reservations that you own in your account and capacity reservations that are shared with you from other accounts by using AWS Resource Access Manager. This lets you launch an Amazon EC2 instance using this resource group as the value for the capacity reservation parameter. When you do this, the instance uses the available reserved capacity in the group.
 
-If the resource group has no available capacity, the instance launches as a stand alone on-demand instance outside of the pool unless you configure the resource group to use Amazon EC2 UltraServer Capacity Blocks. For more information, see [Working with Capacity Reservation groups](https://docs.aws.amazon.com//AWSEC2/latest/UserGuide/create-cr-group.html) in the *Amazon EC2 User Guide*.
+If the resource group has no available capacity, the instance launches as a stand alone on-demand instance outside of the pool unless you configure the resource group to use Amazon EC2 UltraServer Capacity Blocks. For more information, see [Working with Capacity Reservation groups](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/create-cr-group.html) in the *Amazon EC2 User Guide*.
 
 If you configure a service-linked resource group with a `Configuration` item of this type, then you must also specify separate `Configuration` items with the following values:
 + An `AWS::ResourceGroups::Generic` type with one parameter:
@@ -295,7 +295,7 @@ After adding `instance-type` and `reservation-type` to a resource group configur
 ## `AWS::EC2::HostManagement`
 <a name="about-slg-types-resourcegroups-ec2-hostmanagement"></a>
 
-This identifier specifies settings for Amazon EC2 host management and AWS License Manager that are enforced for the group's members. For more information, see [Host resource groups in AWS License Manager](https://docs.aws.amazon.com//license-manager/latest/userguide/host-resource-groups.html).
+This identifier specifies settings for Amazon EC2 host management and AWS License Manager that are enforced for the group's members. For more information, see [Host resource groups in AWS License Manager](https://docs.aws.amazon.com/license-manager/latest/userguide/host-resource-groups.html).
 
 If you configure a service-linked resource group with a `Configuration` item of this type, then you must also specify separate `Configuration` items with the following values:
 + An `AWS::ResourceGroups::Generic` type, with a parameter of `allowed-resource-types` and a single value of `AWS::EC2::Host`. This ensures that only Amazon EC2 dedicated hosts can be members of the group.
@@ -304,7 +304,7 @@ If you configure a service-linked resource group with a `Configuration` item of 
 The following parameters are supported for the `AWS::EC2::HostManagement` service-linked group type.
 + **`auto-allocate-host`**
 
-  This parameter specifies whether instances are launched onto a specific dedicated host, or onto any available host that has a matching configuration. For more information, see [Understanding auto-placement and affinity](https://docs.aws.amazon.com//AWSEC2/latest/UserGuide/how-dedicated-hosts-work.html#dedicated-hosts-understanding) in the *Amazon EC2 User Guide*.
+  This parameter specifies whether instances are launched onto a specific dedicated host, or onto any available host that has a matching configuration. For more information, see [Understanding auto-placement and affinity](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/how-dedicated-hosts-work.html#dedicated-hosts-understanding) in the *Amazon EC2 User Guide*.
 
   **Data type of values:** Boolean
 
@@ -352,7 +352,7 @@ The following parameters are supported for the `AWS::EC2::HostManagement` servic
   ```
 + **`auto-release-host`**
 
-  This parameter specifies whether a dedicated host in the group is automatically released after its last running instance is terminated. For more information, see [Releasing Dedicated Hosts](https://docs.aws.amazon.com//AWSEC2/latest/UserGuide/how-dedicated-hosts-work.html#dedicated-hosts-releasing) in the *Amazon EC2 User Guide*.
+  This parameter specifies whether a dedicated host in the group is automatically released after its last running instance is terminated. For more information, see [Releasing Dedicated Hosts](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/how-dedicated-hosts-work.html#dedicated-hosts-releasing) in the *Amazon EC2 User Guide*.
 
   **Data type of values:** Boolean
 
@@ -404,7 +404,7 @@ The following parameters are supported for the `AWS::EC2::HostManagement` servic
 
   **Data type of values:** An array of String.
 
-  **Permitted values:** Each must be a valid [Amazon EC2 instance type family identifier](https://docs.aws.amazon.com//AWSEC2/latest/UserGuide/instance-types.html#AvailableInstanceTypes), such as `C4`, `M5`, `P3dn`, or `R5d`.
+  **Permitted values:** Each must be a valid [Amazon EC2 instance type family identifier](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-types.html#AvailableInstanceTypes), such as `C4`, `M5`, `P3dn`, or `R5d`.
 
   **Required:** No
 
@@ -451,11 +451,11 @@ The following parameters are supported for the `AWS::EC2::HostManagement` servic
   ```
 + **`allowed-host-based-license-configurations`**
 
-  This parameter specifies the [Amazon Resource Name (ARN)](https://docs.aws.amazon.com//general/latest/gr/aws-arns-and-namespaces.html) paths of one or more core/socket based license configurations that you want applied to members of the group.
+  This parameter specifies the [Amazon Resource Name (ARN)](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html) paths of one or more core/socket based license configurations that you want applied to members of the group.
 
   **Data type of values:** An array of ARNs.
 
-  **Permitted values:** Each must be a valid [License Manager configuration ARN](https://docs.aws.amazon.com//service-authorization/latest/reference/about-service-linked-groups.xmllist_awslicensemanager.html#awslicensemanager-resources-for-iam-policies).
+  **Permitted values:** Each must be a valid [License Manager configuration ARN](https://docs.aws.amazon.com/service-authorization/latest/reference/about-service-linked-groups.xmllist_awslicensemanager.html#awslicensemanager-resources-for-iam-policies).
 
   **Required:** Conditional. You must specify either this parameter or `any-host-based-license-configuration`, but not both. They are mutually exclusive.
 

@@ -106,8 +106,6 @@ Now that you know the criteria by which you are evaluating your container option
 
 The following table highlights which services are optimized for which circumstances. Use the table to help determine which container services and tools are.
 
-****
-
 | Containers category | When would you use it? | Services |
 | --- |--- |--- |
 | Capacity | Use when you want to run your containers on self-managed or AWS managed compute. | [AWS Fargate](https://docs.aws.amazon.com/AmazonECS/latest/userguide/what-is-fargate.html)<br />[Amazon EC2](https://docs.aws.amazon.com/ec2/index.html)<br />[AWS Outposts](https://docs.aws.amazon.com/outposts/) |

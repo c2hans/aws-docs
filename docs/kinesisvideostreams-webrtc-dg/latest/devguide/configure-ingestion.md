@@ -12,7 +12,7 @@ If you want to delete a signaling channel or stream, you must unlink them first.
 ## Link signaling channel and stream
 <a name="ingestion-link"></a>
 
-Use the [UpdateMediaStorageConfiguration](https://docs.aws.amazon.com//kinesisvideostreams/latest/dg/API_UpdateMediaStorageConfiguration.html) API and input the ARNs for the Kinesis Video Streams resources that you want to link.
+Use the [UpdateMediaStorageConfiguration](https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/API_UpdateMediaStorageConfiguration.html) API and input the ARNs for the Kinesis Video Streams resources that you want to link.
 
 **Important**
 Once `StorageStatus` is enabled, direct peer-to-peer (master-viewer) connections no longer occur. Peers connect directly to the storage session. You must call the `JoinStorageSession` API to trigger an SDP offer send and establish a connection between a peer and the storage session.
@@ -23,18 +23,18 @@ Once `StorageStatus` is enabled, direct peer-to-peer (master-viewer) connections
 **Note**
 This operation isn't currently supported in the Kinesis Video Streams AWS Management Console.
 
-Open the AWS CloudShell terminal, which has the AWS CLI installed and configured. See the [AWS CloudShell User Guide](https://docs.aws.amazon.com//cloudshell/latest/userguide/welcome.html#how-to-get-started) for more information.
+Open the AWS CloudShell terminal, which has the AWS CLI installed and configured. See the [AWS CloudShell User Guide](https://docs.aws.amazon.com/cloudshell/latest/userguide/welcome.html#how-to-get-started) for more information.
 
 Follow the instructions in the AWS CLI tab.
 
 ------
 #### [ AWS CLI ]
 
-Verify that you have the AWS CLI installed and configured. For more information, see the [AWS Command Line Interface](https://docs.aws.amazon.com//cli/latest/userguide/) documentation.
+Verify that you have the AWS CLI installed and configured. For more information, see the [AWS Command Line Interface](https://docs.aws.amazon.com/cli/latest/userguide/) documentation.
 
-For installation instructions, see the [AWS Command Line Interface User Guide](https://docs.aws.amazon.com//cli/latest/userguide/getting-started-install.html#getting-started-install-instructions). After installation, [configure the AWS CLI](https://docs.aws.amazon.com//cli/latest/userguide/getting-started-quickstart.html#getting-started-quickstart-new) with credentials and region.
+For installation instructions, see the [AWS Command Line Interface User Guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html#getting-started-install-instructions). After installation, [configure the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-quickstart.html#getting-started-quickstart-new) with credentials and region.
 
-Alternatively, open the AWS CloudShell terminal, which has the AWS CLI installed and configured. See the [AWS CloudShell User Guide](https://docs.aws.amazon.com//cloudshell/latest/userguide/welcome.html#how-to-get-started) for more information.
+Alternatively, open the AWS CloudShell terminal, which has the AWS CLI installed and configured. See the [AWS CloudShell User Guide](https://docs.aws.amazon.com/cloudshell/latest/userguide/welcome.html#how-to-get-started) for more information.
 
 Run the `Update-Media-Storage-Configuration` command in the AWS CLI:
 
@@ -51,7 +51,7 @@ aws kinesisvideo update-media-storage-configuration \
 
 This code snippet shows you how to configure the signaling channel to ingest media to the specified Kinesis video stream using the AWS SDK for JavaScript v2. The syntax will differ from other AWS SDKs, but the general flow will be the same. View a complete code example on [GitHub](https://github.com/awslabs/amazon-kinesis-video-streams-webrtc-sdk-js/blob/master/examples/updateMediaStorageConfiguration.js).
 
-Create the Kinesis Video Streams client. This is the client used to call the [UpdateMediaStorageConfiguration](https://docs.aws.amazon.com//kinesisvideostreams/latest/dg/API_UpdateMediaStorageConfiguration.html) API.
+Create the Kinesis Video Streams client. This is the client used to call the [UpdateMediaStorageConfiguration](https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/API_UpdateMediaStorageConfiguration.html) API.
 
 ```
 const clientConfig = {
@@ -88,7 +88,7 @@ Expand the **WebRTC Ingestion and Storage** node, type the name of your stream, 
 **Important**
 You can't delete a signaling channel or stream until they are unlinked from each other.
 
-If you don't want the signaling channel's media ingested to the stream, use the [UpdateMediaStorageConfiguration](https://docs.aws.amazon.com//kinesisvideostreams/latest/dg/API_UpdateMediaStorageConfiguration.html) API to unlink the Kinesis Video Streams resources. After the channel is unlinked, direct peer-to-peer connections can resume.
+If you don't want the signaling channel's media ingested to the stream, use the [UpdateMediaStorageConfiguration](https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/API_UpdateMediaStorageConfiguration.html) API to unlink the Kinesis Video Streams resources. After the channel is unlinked, direct peer-to-peer connections can resume.
 
 ------
 #### [ AWS Management Console ]
@@ -96,18 +96,18 @@ If you don't want the signaling channel's media ingested to the stream, use the 
 **Note**
 This operation isn't currently supported in the Kinesis Video Streams AWS Management Console.
 
-Open the AWS CloudShell terminal, which has the AWS CLI installed and configured. See the [AWS CloudShell User Guide](https://docs.aws.amazon.com//cloudshell/latest/userguide/welcome.html#how-to-get-started) for more information.
+Open the AWS CloudShell terminal, which has the AWS CLI installed and configured. See the [AWS CloudShell User Guide](https://docs.aws.amazon.com/cloudshell/latest/userguide/welcome.html#how-to-get-started) for more information.
 
 Follow the instructions in the AWS CLI tab.
 
 ------
 #### [ AWS CLI ]
 
-Verify that you have the AWS CLI installed and configured. For more information, see the [AWS Command Line Interface](https://docs.aws.amazon.com//cli/latest/userguide/) documentation.
+Verify that you have the AWS CLI installed and configured. For more information, see the [AWS Command Line Interface](https://docs.aws.amazon.com/cli/latest/userguide/) documentation.
 
-For installation instructions, see the [AWS Command Line Interface User Guide](https://docs.aws.amazon.com//cli/latest/userguide/getting-started-install.html#getting-started-install-instructions). After installation, [configure the AWS CLI](https://docs.aws.amazon.com//cli/latest/userguide/getting-started-quickstart.html#getting-started-quickstart-new) with credentials and region.
+For installation instructions, see the [AWS Command Line Interface User Guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html#getting-started-install-instructions). After installation, [configure the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-quickstart.html#getting-started-quickstart-new) with credentials and region.
 
-Alternatively, open the AWS CloudShell terminal, which has the AWS CLI installed and configured. See the [AWS CloudShell User Guide](https://docs.aws.amazon.com//cloudshell/latest/userguide/welcome.html#how-to-get-started) for more information.
+Alternatively, open the AWS CloudShell terminal, which has the AWS CLI installed and configured. See the [AWS CloudShell User Guide](https://docs.aws.amazon.com/cloudshell/latest/userguide/welcome.html#how-to-get-started) for more information.
 
 Run the `Update-Media-Storage-Configuration` command in the AWS CLI:
 
@@ -124,7 +124,7 @@ aws kinesisvideo update-media-storage-configuration \
 
 This code snippet shows you how to configure the signaling channel to ingest media to the specified Kinesis video stream using the AWS SDK for JavaScript v2. The syntax will differ from other AWS SDKs, but the general flow will be the same. View a complete code example on [GitHub](https://github.com/awslabs/amazon-kinesis-video-streams-webrtc-sdk-js/blob/master/examples/updateMediaStorageConfiguration.js).
 
-Create the Kinesis Video Streams client. This is the client used to call the [UpdateMediaStorageConfiguration](https://docs.aws.amazon.com//kinesisvideostreams/latest/dg/API_UpdateMediaStorageConfiguration.html) API.
+Create the Kinesis Video Streams client. This is the client used to call the [UpdateMediaStorageConfiguration](https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/API_UpdateMediaStorageConfiguration.html) API.
 
 ```
 const clientConfig = {

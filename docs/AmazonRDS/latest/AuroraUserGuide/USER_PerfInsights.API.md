@@ -18,8 +18,6 @@ To use the Performance Insights API, enable Performance Insights on one of your 
 
 The Performance Insights API provides the following operations.
 
-****
-
 |  Performance Insights action  |  AWS CLI command  |  Description  |
 | --- | --- | --- |
 | [`CreatePerformanceAnalysisReport`](https://docs.aws.amazon.com/performance-insights/latest/APIReference/API_CreatePerformanceAnalysisReport.html) | [`aws pi create-performance-analysis-report`](https://docs.aws.amazon.com/cli/latest/reference/pi/CreatePerformanceAnalysisReport.html) | Creates a performance analysis report for a specific time period for the DB instance. The result is `AnalysisReportId` which is the unique identifier of the report. |

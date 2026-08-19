@@ -12,8 +12,6 @@ Amazon Q Business provides APIs to manage subscriptions in your Amazon Q Busines
 **Note**
 As of Dec 17, 2024, Amazon Q Business will recognize all email addresses as case-insensitive and recognize subaddresses as equivalent to the original email address. For example, JohnDoe@example.com, johndoe@example.com, and johndoe\+work@example.com will be considered the same email address. For assistance with applications or to report a concern, contact Support, sign into the [AWS Support Center](https://console.aws.amazon.com/support/home#/) .
 
-****
-
 | API action | API description | Relevant User Guide topic |
 | --- | --- | --- |
 | [CreateSubscription](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateSubscription.html) | Subscribes an IAM Identity Center user or a group to a pricing tier for an Amazon Q Business application  If you're using IAM federation to manage user and group access to Amazon Q Business, subscriptions are created automatically when a user logs in to their Amazon Q Business application.  | +  [Creating an IAM Identity Center-integrated Amazon Q Business application](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/create-app.html) <br />+  [Creating an IAM-federated Amazon Q Business application](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/create-application-iam.html)  |

@@ -494,7 +494,7 @@ stage.on(StageEvents.STAGE_STREAM_SEI_MESSAGE_RECEIVED, (participant, seiMessage
 ## Layered Encoding with Simulcast
 <a name="web-publish-subscribe-layered-encoding-simulcast"></a>
 
-Layered encoding with simulcast is an IVS real-time streaming feature that allows publishers to send multiple different quality layers of video, and subscribers to dynamically or manually change those layers. The feature is described more in the [Streaming Optimizations](https://docs.aws.amazon.com//ivs/latest/RealTimeUserGuide/real-time-streaming-optimization.html) document.
+Layered encoding with simulcast is an IVS real-time streaming feature that allows publishers to send multiple different quality layers of video, and subscribers to dynamically or manually change those layers. The feature is described more in the [Streaming Optimizations](https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/real-time-streaming-optimization.html) document.
 
 ### Configuring Layered Encoding (Publisher)
 <a name="web-layered-encoding-simulcast-configure-publisher"></a>
@@ -704,4 +704,4 @@ stage.on(StageEvents.STAGE_PARTICIPANT_STREAMS_ADDED, (participant, streams) => 
 })
 ```
 
-Optionally, you can composite a stage and broadcast it to an IVS low-latency channel, to reach a larger audience. See [Enabling Multiple Hosts on an Amazon IVS Stream](https://docs.aws.amazon.com//ivs/latest/LowLatencyUserGuide/multiple-hosts.html) in the IVS Low-Latency Streaming User Guide.
+Optionally, you can composite a stage and broadcast it to an IVS low-latency channel, to reach a larger audience. See [Enabling Multiple Hosts on an Amazon IVS Stream](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multiple-hosts.html) in the IVS Low-Latency Streaming User Guide.

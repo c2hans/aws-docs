@@ -9,8 +9,6 @@ Amazon Q Business is no longer open to new customers. For capabilities similar t
 
 The following table gives an overview of the Amazon FSx (Windows) connector and its supported features.
 
-****
-
 - ****Security****
   - **Feature:** Authentication type / **Support:** Ad Server authentication
   - **Feature:** Authentication credentials / **Support:** +  Amazon FSx (Windows) username <br />+  Amazon FSx (Windows) password

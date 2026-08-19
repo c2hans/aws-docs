@@ -14,8 +14,6 @@ Delete a standalone load balancer (application or network). The deletion include
 ## Change Type Details
 <a name="ct-2fuzb2l7hckrj-MSLd-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2fuzb2l7hckrj |

@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon FreeRTOS provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="freertos-DescribeHardwarePlatform"></a>[DescribeHardwarePlatform](https://docs.aws.amazon.com/freertos/latest/userguide/freertos-ocw.html) | Describe the hardware platform | Read |

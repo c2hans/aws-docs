@@ -11,8 +11,6 @@ The following provides a sample mapping between the UK National Cyber Security C
 
 This sample conformance pack template contains mappings to controls within the UK NCSC Cloud Security Principles ([National Cyber Security Centre \| Cloud security guidance](https://www.ncsc.gov.uk/collection/cloud-security/implementing-the-cloud-security-principles)), with such public sector information licensed under the Open Government Licence v3.0. The Open Government Licence should can be accessed here: [Open Government Licence for public sector information](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/).
 
-****
-
 | Control ID  | Control Description  | AWS Config Rule  | Guidance  |
 | --- | --- | --- | --- |
 | 1. Data in transit protection | User data transiting networks should be adequately protected against tampering and eavesdropping. | [elbv2-acm-certificate-required](https://docs.aws.amazon.com/config/latest/developerguide/elbv2-acm-certificate-required.html) | Because sensitive data can exist and to help protect data at transit, ensure encryption is enabled for your Elastic Load Balancing. Use AWS Certificate Manager to manage, provision and deploy public and private SSL/TLS certificates with AWS services and internal resources. |

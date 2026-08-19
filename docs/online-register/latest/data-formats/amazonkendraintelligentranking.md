@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon Kendra Intelligent Ranking provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="kendra-ranking-DescribeRescoreExecutionPlan"></a>[DescribeRescoreExecutionPlan](https://docs.aws.amazon.com/kendra/latest/dg/API_Ranking_DescribeRescoreExecutionPlan.html) | Describe a RescoreExecutionPlan | Read |

@@ -7,9 +7,9 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/exam
 
 The following example shows how bidirectional streaming works using Amazon Transcribe. Bidirectional streaming implies that there’s both a stream of data going to the service and being received back in real time. The example uses Amazon Transcribe streaming transcription to send an audio stream and receive a stream of transcribed text back in real time.
 
-See [Streaming Transcription](https://docs.aws.amazon.com//transcribe/latest/dg/streaming.html) in the Amazon Transcribe Developer Guide to learn more about this feature.
+See [Streaming Transcription](https://docs.aws.amazon.com/transcribe/latest/dg/streaming.html) in the Amazon Transcribe Developer Guide to learn more about this feature.
 
-See [Getting Started](https://docs.aws.amazon.com//transcribe/latest/dg/getting-started.html) in the Amazon Transcribe Developer Guide to get started using Amazon Transcribe.
+See [Getting Started](https://docs.aws.amazon.com/transcribe/latest/dg/getting-started.html) in the Amazon Transcribe Developer Guide to get started using Amazon Transcribe.
 
 ## Set up the microphone
 <a name="set-up-the-microphone"></a>
@@ -216,5 +216,5 @@ See the [complete example](https://github.com/awsdocs/aws-doc-sdk-examples/blob/
 
 ## More information
 <a name="more-info"></a>
-+  [How It Works](https://docs.aws.amazon.com//transcribe/latest/dg/how-it-works.html) in the Amazon Transcribe Developer Guide.
-+  [Getting Started With Streaming Audio](https://docs.aws.amazon.com//transcribe/latest/dg/getting-started.html) in the Amazon Transcribe Developer Guide.
++  [How It Works](https://docs.aws.amazon.com/transcribe/latest/dg/how-it-works.html) in the Amazon Transcribe Developer Guide.
++  [Getting Started With Streaming Audio](https://docs.aws.amazon.com/transcribe/latest/dg/getting-started.html) in the Amazon Transcribe Developer Guide.

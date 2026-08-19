@@ -63,14 +63,14 @@ To view examples of re:Post Private identity-based policies, see [AWS re:Post Pr
 ## re:Post Private resource-based policies
 <a name="security-with-iam-resource-based-policies"></a>
 
-Resource-based policies are JSON policy documents that you attach to a resource. Examples of resource-based policies are IAM role trust policies and Amazon S3 bucket policies. In services that support resource-based policies, service administrators can use them to control access to a specific resource. For the resource where the policy is attached, the policy defines what actions a specified principal can perform on that resource and under what conditions. You must [specify a principal](https://docs.aws.amazon.com//IAM/latest/UserGuide/reference_policies_elements_principal.html) in a resource-based policy. Principals can include accounts, users, roles, federated users, or AWS services. Resource-based policies are inline policies that are located in that service. You can't use AWS managed policies from IAM in a resource-based policy.
+Resource-based policies are JSON policy documents that you attach to a resource. Examples of resource-based policies are IAM role trust policies and Amazon S3 bucket policies. In services that support resource-based policies, service administrators can use them to control access to a specific resource. For the resource where the policy is attached, the policy defines what actions a specified principal can perform on that resource and under what conditions. You must [specify a principal](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_principal.html) in a resource-based policy. Principals can include accounts, users, roles, federated users, or AWS services. Resource-based policies are inline policies that are located in that service. You can't use AWS managed policies from IAM in a resource-based policy.
 
 re:Post Private doesn't support resource-based policies.
 
 ## Authorization based on tags
 <a name="security-with-iam-tags"></a>
 
-re:Post Private supports tagging resources or controlling access based on tags. For more information, see [Controlling access to AWS resources using tags](https://docs.aws.amazon.com//IAM/latest/UserGuide/access_tags.html).
+re:Post Private supports tagging resources or controlling access based on tags. For more information, see [Controlling access to AWS resources using tags](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_tags.html).
 
 ## re:Post Private IAM roles
 <a name="security-with-iam-roles"></a>
@@ -92,4 +92,4 @@ re:Post Private supports using temporary credentials.
 ## Service roles
 <a name="security-with-iam-roles-service"></a>
 
-This feature allows a service to assume a [service role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_terms-and-concepts.html#iam-term-service-role) for you. This role allows the service to access resources in other services to complete an action for you. For more information, see [Creating a role to delegate permissions to an AWS service](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_roles_create_for-service.html). Service roles appear in your IAM account and are owned by the account. This means that an IAM administrator can change the permissions for this role. However, doing so might break the functionality of the service.
+This feature allows a service to assume a [service role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_terms-and-concepts.html#iam-term-service-role) for you. This role allows the service to access resources in other services to complete an action for you. For more information, see [Creating a role to delegate permissions to an AWS service](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-service.html). Service roles appear in your IAM account and are owned by the account. This means that an IAM administrator can change the permissions for this role. However, doing so might break the functionality of the service.

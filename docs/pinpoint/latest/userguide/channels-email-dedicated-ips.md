@@ -9,8 +9,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/userguide/channels-email
 
 When you create a new Amazon Pinpoint account, your emails are sent from IP addresses that are shared with other Amazon Pinpoint users. For [an additional monthly charge](https://aws.amazon.com/pinpoint/pricing/#Dedicated_IP_Addresses), you can lease dedicated IP addresses that are reserved for your exclusive use. Both of these options offer unique benefits and drawbacks, which are summarized in the following table.
 
-****
-
 | Benefit | Shared IP addresses | Dedicated IP addresses |
 | --- | --- | --- |
 | [Ready to use with no additional setup](#channels-email-dedicated-ips-simplicity) | Yes | No |

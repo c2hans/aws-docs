@@ -19,8 +19,6 @@ To control whether HugePages are turned on for a DB instance automatically, you 
 
 HugePages are not turned on by default for the following DB instance classes.
 
-****
-
 | DB instance class family | DB instance classes with HugePages not turned on by default |
 | --- | --- |
 | db.m5 | db.m5.large |

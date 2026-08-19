@@ -9,16 +9,16 @@ This procedure manually joins an Amazon EC2 Mac instance to your AWS Managed Mic
 
 ## Prerequisites
 <a name="mac_instance_join_prerequisites"></a>
-+ Amazon EC2 Mac instances require [Amazon EC2 Dedicated Hosts](https://docs.aws.amazon.com//AWSEC2/latest/UserGuide/dedicated-hosts-overview.html). You must allocate a dedicated host and launch an instance onto the host. For more information, see [Launch a Mac instance](https://docs.aws.amazon.com//AWSEC2/latest/UserGuide/ec2-mac-instances.html#mac-instance-launch) in *Amazon EC2 User Guide*.
++ Amazon EC2 Mac instances require [Amazon EC2 Dedicated Hosts](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dedicated-hosts-overview.html). You must allocate a dedicated host and launch an instance onto the host. For more information, see [Launch a Mac instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-mac-instances.html#mac-instance-launch) in *Amazon EC2 User Guide*.
 + We recommend creating a DHCP option set for your AWS Managed Microsoft AD Active Directory. This will allow any instances in your Amazon VPC to point to the specified domain and DNS servers to resolve their domain names. See [Creating or changing a DHCP options set for AWS Managed Microsoft AD](dhcp_options_set.md) for more information.
 
 **Note**
-Dedicated Host pricing varies by the payment option that you select. For more information, see [Pricing and Billing](https://docs.aws.amazon.com//AWSEC2/latest/UserGuide/dedicated-hosts-billing.html) in *Amazon EC2 User Guide*.
+Dedicated Host pricing varies by the payment option that you select. For more information, see [Pricing and Billing](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dedicated-hosts-billing.html) in *Amazon EC2 User Guide*.
 
 ## Manually joining a Mac instance
 <a name="mac_instance_join_steps"></a>
 
-1. Use the following SSH command to connect to your Mac instance. For more information about connecting to your Mac instance, see [Connect to your Mac instance.](https://docs.aws.amazon.com//AWSEC2/latest/UserGuide/ec2-mac-instances.html#connect-to-mac-instance)
+1. Use the following SSH command to connect to your Mac instance. For more information about connecting to your Mac instance, see [Connect to your Mac instance.](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-mac-instances.html#connect-to-mac-instance)
 
    ```
    ssh -i {{/path/key-pair-name}}.pem ec2-user@{{my-instance-public-dns-name}}
@@ -30,7 +30,7 @@ Dedicated Host pricing varies by the payment option that you select. For more in
    sudo passwd {{ec2-user}}
    ```
 
-1. When prompted at the command line, provide a password for the {{ec2-user}} account. You can update your operating system and software by following the procedure in [Update the operating system and software](https://docs.aws.amazon.com//AWSEC2/latest/UserGuide/ec2-mac-instances.html#mac-instance-updates) in *Amazon EC2 User Guide*.
+1. When prompted at the command line, provide a password for the {{ec2-user}} account. You can update your operating system and software by following the procedure in [Update the operating system and software](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-mac-instances.html#mac-instance-updates) in *Amazon EC2 User Guide*.
 
 1. Use the following {{dsconfigad}} command to join your Mac instance to the AWS Managed Microsoft AD Active Directory domain. Make sure to replace the domain name, computer name, and organizational unit with your AWS Managed Microsoft AD Active Directory domain information. For more information, see [Configuring domain access in Directory Utility on Mac](https://support.apple.com/guide/directory-utility/configure-domain-access-diru11f4f748/mac) on Apple website.
 **Warning**
@@ -62,4 +62,4 @@ You have successfully joined your Mac instance to your AWS Managed Microsoft AD 
 
 When you first log in to your Mac instance, you should be provided with an option to log in as the "Other" user. At this point, you can use your Active Directory domain credentials to log in to the Mac instance. If you're not provided with "Other" on the log in screen after completing these steps, log in as ec2-user and then log out.
 
-To log in using the graphical user interface with a domain user, follow the steps in [Connect to your instance's graphical user interface (GUI)](https://docs.aws.amazon.com//AWSEC2/latest/UserGuide/ec2-mac-instances.html#mac-instance-vnc) in *Amazon EC2 User Guide*.
+To log in using the graphical user interface with a domain user, follow the steps in [Connect to your instance's graphical user interface (GUI)](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-mac-instances.html#mac-instance-vnc) in *Amazon EC2 User Guide*.

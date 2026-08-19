@@ -153,7 +153,7 @@ Items that you write in any replica Region are replicated to the other Regions a
 Vector indexes require on-demand capacity mode, which global tables also support. Create the vector index and the replica on a table that already uses on-demand capacity.
 
 Point-in-time recovery (PITR) and backups
-When you restore a table from a point-in-time recovery or an on-demand backup, DynamoDB restores the base table data and the vector index definition. As with global secondary indexes, DynamoDB rebuilds the vector index from the restored base table data rather than copying it byte-for-byte, so the index goes through backfilling before it is ready for search. Wait until `IndexStatus` is `ACTIVE` and `Backfilling` is `false` on the restored index before you run `SearchVectors`.
+When you restore a table from a point-in-time recovery or an on-demand backup, DynamoDB restores the base table data and the vector index definition. As with global secondary indexes, DynamoDB rebuilds the vector index from the restored base table data rather than copying it byte-for-byte, so the index goes through backfilling before it is ready for search. Wait until `IndexStatus` is `ACTIVE` and `Backfilling` is not `true` on the restored index before you run `SearchVectors`.
 
 Time to Live (TTL)
 You can use DynamoDB TTL on a table that has a vector index. When TTL deletes an expired item from the base table, DynamoDB removes the corresponding entry from the vector index, the same way a manual delete does. Expired items therefore stop appearing in `SearchVectors` results after the deletion propagates to the index.

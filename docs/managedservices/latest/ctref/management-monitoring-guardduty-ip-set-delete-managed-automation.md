@@ -14,8 +14,6 @@ Use to delete an Amazon GuardDuty IPSet instance which is a list of trusted IP a
 ## Change Type Details
 <a name="ct-1b8fudnqq7m8r-MMGd-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1b8fudnqq7m8r |

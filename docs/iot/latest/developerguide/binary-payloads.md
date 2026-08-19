@@ -181,7 +181,7 @@ After you create your descriptor files `<FILENAME>.desc`, upload the descriptor 
 ### Configure protobuf decoding in Rules
 <a name="binary-payloads-protobuf-steps"></a>
 
-After you upload the descriptor files to your Amazon S3 bucket, configure a [Rule](https://docs.aws.amazon.com//iot/latest/developerguide/iot-create-rule.html) that can decode your protobuf message payload format using the [decode(value, decodingScheme)](iot-sql-functions.md#iot-sql-decode-base64) SQL function. A detailed function signature and example can be found in the [decode(value, decodingScheme)](iot-sql-functions.md#iot-sql-decode-base64) SQL function of the *AWS IoT SQL reference*.
+After you upload the descriptor files to your Amazon S3 bucket, configure a [Rule](https://docs.aws.amazon.com/iot/latest/developerguide/iot-create-rule.html) that can decode your protobuf message payload format using the [decode(value, decodingScheme)](iot-sql-functions.md#iot-sql-decode-base64) SQL function. A detailed function signature and example can be found in the [decode(value, decodingScheme)](iot-sql-functions.md#iot-sql-decode-base64) SQL function of the *AWS IoT SQL reference*.
 
 The following is an example SQL expression using the [decode(value, decodingScheme)](iot-sql-functions.md#iot-sql-decode-base64) function:
 
@@ -200,7 +200,7 @@ After you complete the configuration, publish a message to AWS IoT Core on the t
 <a name="binary-payloads-protobuf-limitations"></a>
 
 AWS IoT Core Rules support protobuf with the following limitations:
-+ Decoding protobuf message payloads within [substitution templates](https://docs.aws.amazon.com//iot/latest/developerguide/iot-substitution-templates.html) is not supported.
++ Decoding protobuf message payloads within [substitution templates](https://docs.aws.amazon.com/iot/latest/developerguide/iot-substitution-templates.html) is not supported.
 + When decoding protobuf message payloads, you can use the [decode SQL function](iot-sql-functions.md#iot-sql-decode-base64) within a single SQL expression up to two times.
 + The maximum inbound payload size is 128 KiB (1KiB =1024 bytes), the maximum outbound payload size is 128 KiB, and the maximum size for a `FileDescriptorSet` object stored in an Amazon S3 bucket is 32 KiB.
 + Amazon S3 buckets encrypted with SSE-C encryption are not supported.
@@ -211,10 +211,10 @@ AWS IoT Core Rules support protobuf with the following limitations:
 Here are some best practices and troubleshooting tips.
 + Back up your proto files in the Amazon S3 bucket.
 
-  It's a good practice to back up your proto files in case something goes wrong. For example, if you incorrectly modify the proto files without backups when running protoc, this can cause issues in your production stack. There are multiple ways to back up your files in an Amazon S3 bucket. For example, you can [use versioning in S3 buckets](https://docs.aws.amazon.com//AmazonS3/latest/userguide/Versioning.html). For more information about how to back up files in Amazon S3 buckets, refer to the *[Amazon S3 Developer Guide](https://docs.aws.amazon.com//aws-backup/latest/devguide/recovery-points.html)*.
+  It's a good practice to back up your proto files in case something goes wrong. For example, if you incorrectly modify the proto files without backups when running protoc, this can cause issues in your production stack. There are multiple ways to back up your files in an Amazon S3 bucket. For example, you can [use versioning in S3 buckets](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Versioning.html). For more information about how to back up files in Amazon S3 buckets, refer to the *[Amazon S3 Developer Guide](https://docs.aws.amazon.com/aws-backup/latest/devguide/recovery-points.html)*.
 + Configure AWS IoT logging to view log entries.
 
-  It's a good practice to configure AWS IoT logging so that you can check AWS IoT logs for your account in CloudWatch. When a rule's SQL query calls an external function, AWS IoT Core Rules generates a log entry with an `eventType` of `FunctionExecution`, which contains the reason field that will help you troubleshoot failures. Possible errors include an Amazon S3 object not found, or invalid protobuf file descriptor. For more information about how to configure AWS IoT logging and see the log entries, see [Configure AWS IoT logging](https://docs.aws.amazon.com//iot/latest/developerguide/configure-logging.html) and [Rules engine log entries](https://docs.aws.amazon.com//iot/latest/developerguide/cwl-format.html#log-rules-fn-exec).
+  It's a good practice to configure AWS IoT logging so that you can check AWS IoT logs for your account in CloudWatch. When a rule's SQL query calls an external function, AWS IoT Core Rules generates a log entry with an `eventType` of `FunctionExecution`, which contains the reason field that will help you troubleshoot failures. Possible errors include an Amazon S3 object not found, or invalid protobuf file descriptor. For more information about how to configure AWS IoT logging and see the log entries, see [Configure AWS IoT logging](https://docs.aws.amazon.com/iot/latest/developerguide/configure-logging.html) and [Rules engine log entries](https://docs.aws.amazon.com/iot/latest/developerguide/cwl-format.html#log-rules-fn-exec).
 + Update `FileDescriptorSet` using a new object key and update the object key in your Rule.
 
   You can update `FileDescriptorSet` by uploading an updated descriptor file to your Amazon S3 bucket. Your updates to `FileDescriptorSet` can take up to 15 minutes to be reflected. To avoid this delay, it's a good practice to upload your updated `FileDescriptorSet` using a new object key, and update the object key in your Rule.

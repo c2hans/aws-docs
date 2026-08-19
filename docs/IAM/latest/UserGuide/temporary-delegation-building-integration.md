@@ -17,7 +17,7 @@ A delegation request progresses through the following states:
 
 | State | Description |
 | --- | --- |
-| Unassigned | Request created but not yet associated with a customer account and an IAM principal. The request may have been created without specifying a target account, or with a target account ID but not yet claimed by the account owner. |
+| Unassigned | Request created but not yet associated with a customer account and an IAM principal. The request might have been created without specifying a target account, or with a target account ID but not yet claimed by the account owner. |
 | Assigned | Request associated with a customer account and awaiting review |
 | Pending Approval | Customer has forwarded the request to an administrator for approval |
 | Accepted | Request approved by customer but exchange token not yet released |
@@ -194,8 +194,8 @@ The exchange token can only be redeemed by the product provider account that cre
 ### Access Duration
 <a name="temporary-delegation-access-duration"></a>
 
-The delegation period starts when customer releases the exchange token, not when the product provider redeems it. Once customer releases the token:
-+ The product provider receives the token via SNS notification
+The delegation period starts when customer releases the exchange token, not when the product provider redeems it. After the customer releases the token:
++ The product provider receives the token through an SNS notification
 + They can immediately exchange it for credentials
 + Credentials expire at: release time \+ approved duration
 + The product provider can exchange the token multiple times before expiration to obtain fresh credentials if needed

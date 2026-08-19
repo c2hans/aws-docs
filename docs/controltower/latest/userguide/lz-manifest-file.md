@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/lz-manifes
 
 The AWS Control Tower landing zone manifest file is a text file that describes your AWS Control Tower resources. The following sections show detailed definitions of entries in the landing zone manifest file.
 
-To see a full landing zone schema example, see [Landing zone schemas](https://docs.aws.amazon.com//controltower/latest/userguide/landing-zone-schemas.html).
+To see a full landing zone schema example, see [Landing zone schemas](https://docs.aws.amazon.com/controltower/latest/userguide/landing-zone-schemas.html).
 
 **governedRegions** – Regions to place under governance
 +  **Type:** List of strings

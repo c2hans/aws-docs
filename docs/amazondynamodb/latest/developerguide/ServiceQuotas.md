@@ -148,6 +148,7 @@ The following quotas apply to vector indexes.
 | Vector index write rate per partition key | 10 MBps | Yes (contact AWS Support) |
 | Number of inline filters per vector index | 18 | No |
 | Maximum base table size for vector index creation without allowlisting | 600 GB | Yes (contact AWS Support) |
+| Concurrent vector index creations or deletions per table | 1 | No |
 
 **Example.** With a 768-dimensional embedding (such as Cohere Embed v3) and 1 KB of non-vector item data, each item is approximately 4 KB. At this item size, the per-partition-key throughput limits support approximately 250,000 vectors examined per second (1 GBps ÷ 4 KB) and 2,500 vector writes per second (10 MBps ÷ 4 KB). As the number of vectors in a partition grows, each search examines more data and you will approach the search limit sooner. Throughput scales linearly across partition key values. If your workload exceeds these limits, contact AWS Support.
 

@@ -22,8 +22,6 @@ RUN pip install --no-cache-dir --upgrade pip && \
 ```
 
 The following Dockerfile instructions are used.
-
-****
 + `FROM` – Loads the application base image (`public.ecr.aws/panorama/panorama-application`).
 + `WORKDIR` – Set the working directory on the image. `/panorama` is used for application code and related files. This setting only persists during the build and does not affect the working directory for your application at runtime (`/`).
 + `COPY` – Copies files from a local path to a path on the image. `COPY . .` copies the files in the current directory (the package directory) to the working directory on the image. For example, the application code is copied from `packages/123456789012-SAMPLE_CODE-1.0/application.py` to `/panorama/application.py`.

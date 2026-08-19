@@ -453,8 +453,6 @@ The following example shows a `SELECT` event.
 
 The database activity event records are in a JSON object that contains the following information.
 
-****
-
 | JSON Field | Data Type | Description |
 | --- | --- | --- |
 | `type` | string | The type of JSON record. The value is `DatabaseActivityMonitoringRecords`. |
@@ -509,8 +507,6 @@ Take the following steps to decrypt the contents of the `databaseActivityEvents`
    +  The `databaseActivityEventList` field contains an array of audit records. The `type` fields in the array can be `record` or `heartbeat`.
 
 The audit log activity event record is a JSON object that contains the following information.
-
-****
 
 | JSON Field | Data Type | Description |
 | --- | --- | --- |

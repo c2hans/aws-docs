@@ -16,7 +16,7 @@ The **Space administrators** table shows users with the **Space administrator** 
 
 Members who accept a project invitation are added to the space by default. The **Project members** table shows all members in the space that have a role in a project.
 
-For more information about how to accept an invitation and sign in for the first time, see [Set up and sign in to CodeCatalystSet up and sign in to CodeCatalyst](setting-up-topnode.md).
+For more information about how to accept an invitation and sign in for the first time, see [Set up and sign in to CodeCatalyst](setting-up-topnode.md).
 
 **To invite a user to your space**
 

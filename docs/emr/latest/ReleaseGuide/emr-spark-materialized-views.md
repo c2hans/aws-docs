@@ -345,7 +345,9 @@ This command removes the materialized view definition from the AWS Glue Data Cat
 ## Permissions for materialized views
 <a name="emr-spark-materialized-views-permissions"></a>
 
-To create and manage materialized views, you must configure AWS Lake Formation permissions. The IAM role creating the materialized view (the definer role) requires specific permissions on source tables and target databases.
+To create and manage materialized views, you must configure permissions for the IAM role that creates the view (the definer role). Amazon EMR supports two permission models:
++ **IAM policies only** – If you manage your data lake with IAM policies, no AWS Lake Formation configuration is required.
++ **AWS Lake Formation** – If you already use AWS Lake Formation to govern your data lake, you can configure AWS Lake Formation permissions for materialized views.
 
 ### Required permissions for the definer role
 <a name="emr-spark-materialized-views-permissions-definer"></a>
@@ -472,7 +474,6 @@ Consider the following when using materialized views with Amazon EMR:
 + Materialized views require Amazon EMR release 7.12.0 or later.
 + Source tables must be Apache Iceberg tables registered in the AWS Glue Data Catalog. Apache Hive, Apache Hudi, and Linux Foundation Delta Lake tables are not supported at launch.
 + Source tables must reside in the same AWS Region and AWS account as the materialized view.
-+ All source tables must be governed by AWS Lake Formation. IAM-only permissions and hybrid access are not supported.
 + Materialized views cannot reference AWS Glue Data Catalog views, multi-dialect views, or other materialized views as source tables.
 + The view definer role must have full read access (SELECT or ALL permission) on all source tables without row, column, or cell filters applied.
 + Materialized views are eventually consistent with source tables. During the refresh window, queries may return stale data. Execute manual refresh for immediate consistency.

@@ -132,8 +132,6 @@ When testing, note the following:
 
 Use the following procedure to test automatic failover with the console.
 
-****
-
 1. Sign in to the AWS Management Console and open the MemoryDB console at [https://console.aws.amazon.com/memorydb/](https://console.aws.amazon.com/memorydb/).
 
 1. Choose the radio button to the left of the cluster you want to test. This cluster must have at least one replica node.

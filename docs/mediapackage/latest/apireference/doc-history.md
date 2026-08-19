@@ -8,8 +8,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/apireference/doc-his
 The following table describes important changes to this documentation.
 + **API version: latest**
 
-****
-
 | Change | Description | Date |
 | --- | --- | --- |
 | New createdAt field | MediaPackage now provides the date and time the PackagingGroup and PackagingConfiguration were created. | March 8, 2023 |

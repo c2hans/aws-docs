@@ -13,7 +13,7 @@ Install and configure software tools from AWS to your local environment to inter
 <a name="s3-snow-prereq"></a>
 
 Amazon S3 compatible storage on Snowball Edge requires you to have the Snowball Edge Client and the AWS CLI installed to your local environment. You can also use SDK for .NET and AWS Tools for Windows PowerShell to work with Amazon S3 compatible storage on Snowball Edge. AWS recommends using the following versions of these tools:
-+ **Snowball Edge Client** – Use the latest version. For more information, see [Downloading and installing the Snowball Edge Client](https://docs.aws.amazon.com//snowball/latest/developer-guide/using-client-commands.html#download-the-client) in this guide.
++ **Snowball Edge Client** – Use the latest version. For more information, see [Downloading and installing the Snowball Edge Client](https://docs.aws.amazon.com/snowball/latest/developer-guide/using-client-commands.html#download-the-client) in this guide.
 + **AWS CLI** – Version 2.11.15 or newer. For more information, see [Installing, updating, and uninstalling the AWS CLI](https://docs.aws.amazon.com/cli/v1/userguide/cli-chap-install.html) in the AWS Command Line Interface User Guide.
 + **SDK for .NET** – AWSSDK.S3Control 3.7.304.8 or newer. For more information, see [AWS SDK for .NET](https://docs.aws.amazon.com/sdk-for-net).
 + **AWS Tools for Windows PowerShell** – Version 4.1.476 or newer. For more information, see [AWS Tools for PowerShell User Guide](https://docs.aws.amazon.com/powershell/latest/userguide/).

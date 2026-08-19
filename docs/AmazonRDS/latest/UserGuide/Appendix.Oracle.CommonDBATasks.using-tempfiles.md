@@ -14,8 +14,6 @@ When you create a temporary tablespace on a primary DB instance, the read replic
 
 You can add a tempfile to the empty temporary tablespace, and store the tempfile in the instance store. To create a tempfile in the instance store, use the Amazon RDS procedure `rdsadmin.rdsadmin_util.add_inst_store_tempfile`. You can use this procedure only on a read replica. The procedure has the following parameters.
 
-****
-
 | Parameter name | Data type | Default | Required | Description |
 | --- | --- | --- | --- | --- |
 | `p_tablespace_name` | varchar | — | Yes | The name of the temporary tablespace on your read replica. |

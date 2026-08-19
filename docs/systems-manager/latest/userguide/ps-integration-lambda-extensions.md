@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/ps-inte
 
 Parameter Store enables you to securely store, organize, and retrieve configuration data at scale. It supports a wide range of use cases, from managing plain-text configuration values – such as database connection strings and application settings – to handling sensitive data like secrets for low-risk environments. Parameter Store is designed to simplify configuration management across environments, allowing teams to standardize how applications access critical data without hardcoding values or relying on fragmented storage solutions.
 
-If you manage credentials that require automatic rotation, cross-account access, or fine-grained audit logging, we recommend using [AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html). Secrets Manager is purpose-built for managing secrets such as database credentials, API keys, and supported third-party software-vended secrets. For more information, see [What is AWS Secrets Manager?](https://docs.aws.amazon.com//secretsmanager/latest/userguide/intro.html) in the *AWS Secrets Manager User Guide*.
+If you manage credentials that require automatic rotation, cross-account access, or fine-grained audit logging, we recommend using [AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html). Secrets Manager is purpose-built for managing secrets such as database credentials, API keys, and supported third-party software-vended secrets. For more information, see [What is AWS Secrets Manager?](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html) in the *AWS Secrets Manager User Guide*.
 
 To use Parameter Store parameters in AWS Lambda functions without using an SDK, you can use the AWS Parameters and Secrets Lambda Extension. This extension retrieves parameter values and caches them for future use. Using the Lambda extension can reduce your costs by reducing the number of API calls to Parameter Store. Using the extension can also improve latency because retrieving a cached parameter is faster than retrieving it from Parameter Store.
 
@@ -150,8 +150,6 @@ You can configure the extension by changing the following environment variables.
 
 **Note**
 AWS Lambda records operation details about the Lambda extension and Lambda function in Amazon CloudWatch Logs.
-
-****
 
 | Environment variable | Details | Required | Valid values | Default value |
 | --- | --- | --- | --- | --- |
@@ -297,8 +295,6 @@ The following tables provide extension ARNs for supported architectures and Regi
 
 Last updated: July 28, 2026
 
-****
-
 | Region | ARN |
 | --- | --- |
 | US East (Ohio) | `arn:aws:lambda:us-east-2:590474943231:layer:AWS-Parameters-and-Secrets-Lambda-Extension:109` |
@@ -345,8 +341,6 @@ Last updated: July 28, 2026
 <a name="arm64"></a>
 
 Last updated: July 28, 2026
-
-****
 
 | Region | ARN |
 | --- | --- |

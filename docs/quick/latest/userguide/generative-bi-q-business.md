@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/generative-bi-q-b
 # Augmenting Amazon Quick Sight insights with Amazon Q Business
 <a name="generative-bi-q-business"></a>
 
-Amazon Quick account admins can connect their Quick account to Amazon Q Business to augment insights with unstructured data sources. [Amazon Q Business](https://aws.amazon.com//q/business/) is a generative AI assistant that helps your team work smarter. It can answer questions, provide summaries, generate content, and securely complete tasks based on the information in your enterprise systems.
+Amazon Quick account admins can connect their Quick account to Amazon Q Business to augment insights with unstructured data sources. [Amazon Q Business](https://aws.amazon.com/q/business/) is a generative AI assistant that helps your team work smarter. It can answer questions, provide summaries, generate content, and securely complete tasks based on the information in your enterprise systems.
 
 When an Quick account is integrated with Amazon Q Business, users can now leverage this vast repository of organizational knowledge alongside their structured data analytics. This integration allows for more comprehensive and context-rich insights, as it combines quantitative data from Quick with qualitative information from various business documents and applications.
 

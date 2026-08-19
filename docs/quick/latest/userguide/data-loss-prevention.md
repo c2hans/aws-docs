@@ -41,7 +41,7 @@ Capabilities are the areas within Amazon Quick where Quick applies DLP enforceme
 + **Knowledge bases** – Content synced through SharePoint, OneDrive, and other connectors.
 
 Label inheritance
-In the label mapping configuration, you can assign a parent label an explicit action (Block or Warn) or leave it set to the default action. Sub-labels (child labels) inherit their parent label's action unless you explicitly override them. A label that you haven't explicitly mapped follows its mapped parent label's action if one exists. Otherwise, your default action applies.
+In the label mapping configuration, you can assign a parent label an explicit action (Block or Warn) or leave it set to the default action. Sub-labels (child labels) inherit their parent label's action. A label that you haven't explicitly mapped follows its mapped parent label's action if one exists. Otherwise, your default action applies.
 
 ## Prerequisites
 <a name="dlp-prerequisites"></a>
@@ -192,8 +192,7 @@ You can't continue to the next step until validation succeeds. Verify that the a
 ### Step 3: Label mapping
 <a name="dlp-step-label-mapping"></a>
 
-Scope enforcement to specific capabilities and map each sensitivity label to an action. The following example scopes enforcement to knowledge bases:
-+ **Capabilities** – Open the picker and select **Knowledge bases**. For this example, leave the other capabilities unselected. Any capability that another configuration already claims appears under **Enforced by another configuration** and you can't select it.
+Map each sensitivity label to an action:
 + **Default action** – Choose the action that Quick applies to any label that you don't explicitly map. The options are **Block**, **Warn**, or **Allow**. A conservative starting point is **Block**.
 + **Sensitivity labels** – Quick loads the current list of labels from your Purview tenant. For each label, choose its action. Sub-labels inherit their parent's action. Choose **Refresh** if you recently changed labels in Purview and want to pull the latest list.
 + **Provider outage action** – Choose what Quick does when Purview is unreachable: **Block** (fail closed – safest), **Warn**, or **Allow** (fail open). For a knowledge base that holds sensitive material, **Block** is the recommended provider outage action.
@@ -359,9 +358,6 @@ Confirm that the Secrets Manager secret exists in the same AWS account as Quick,
 
 The labels list is empty or outdated
 Use **Refresh** in Step 3 (Label mapping) to re-fetch the current label list from your Purview tenant.
-
-A capability is unavailable or not selectable
-Another DLP configuration already enforces this capability. Each capability can be claimed by only one configuration. Edit or delete the existing configuration first.
 
 Files are unexpectedly blocked during a knowledge base sync
 Check the Quick Observability report for the sync. A **BLOCKED** status can also indicate an internal failure rather than DLP enforcement. Check whether the file carries a label that you mapped to Block, whether the default action is Block, and the provider outage action if Purview was unreachable during the sync.

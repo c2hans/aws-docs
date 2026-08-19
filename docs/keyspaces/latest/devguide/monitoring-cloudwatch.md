@@ -23,8 +23,6 @@ To get started quickly with a preconfigured CloudWatch dashboard showing common 
 
 The metrics reported by Amazon Keyspaces provide information that you can analyze in different ways. The following list shows some common uses for the metrics. These are suggestions to get you started, not a comprehensive list. For more information about metrics and retention, see [Metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloudwatch_concepts.html#Metric).
 
-****
-
 |  How can I?  |  Relevant metrics  |
 | --- | --- |
 | How can I determine if any system errors occurred? | You can monitor `SystemErrors` to determine whether any requests resulted in a server error code. Typically, this metric should be equal to zero. If it isn't, you might want to investigate. |

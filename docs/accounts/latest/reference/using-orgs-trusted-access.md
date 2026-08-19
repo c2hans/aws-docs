@@ -5,9 +5,11 @@ source_url: https://docs.aws.amazon.com/accounts/latest/reference/using-orgs-tru
 # Enable trusted access for AWS Account Management
 <a name="using-orgs-trusted-access"></a>
 
+These instructions are for how to enable trusted access for AWS Account Management if you signed up for AWS using Sign up for AWS (advanced) or if you activated advanced features for your account. To compare sign-up options, see [Compare sign-up options](sign-up-for-aws.md).
+
 Enabling trusted access for AWS Account Management allows the administrator of the management account to modify the information and metadata (for example, primary or alternate contact details) specific to each member account in AWS Organizations. For more information, see [AWS Account Management and AWS Organizations](https://docs.aws.amazon.com/organizations/latest/userguide/services-that-can-integrate-account.html#integrate-enable-ta-account) in the *AWS Organizations User Guide*. For general information about how trusted access works, see [Using AWS Organizations with other AWS services](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services.html).
 
-After trusted access has been enabled, you can use the `accountID` parameter in those [Account Management API operations](https://docs.aws.amazon.com//accounts/latest/APIReference/API_Operations.html) that support it. You can use this parameter successfully only if you call the operation using credentials from the management account, or from the delegated admin account for your organization if you enable one. For more information, see [Enable a delegated admin account for AWS Account Management](using-orgs-delegated-admin.md).
+After trusted access has been enabled, you can use the `accountID` parameter in those [Account Management API operations](https://docs.aws.amazon.com/accounts/latest/APIReference/API_Operations.html) that support it. You can use this parameter successfully only if you call the operation using credentials from the management account, or from the delegated admin account for your organization if you enable one. For more information, see [Enable a delegated admin account for AWS Account Management](using-orgs-delegated-admin.md).
 
 Use the following procedure to enable trusted access for Account Management in your organization.
 

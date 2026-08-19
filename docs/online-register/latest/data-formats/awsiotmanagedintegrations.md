@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsi
 
 AWS IoT Managed Integrations provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="iotmanagedintegrations-GetAccountAssociation"></a>[GetAccountAssociation](https://docs.aws.amazon.com/iotmanagedintegrations/latest/APIReference/API_GetAccountAssociation.html) | Get information about an account association | Read |

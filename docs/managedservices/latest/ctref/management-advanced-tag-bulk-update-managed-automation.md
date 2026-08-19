@@ -14,8 +14,6 @@ Bulk add tags to existing, supported resources except those in AMS infrastructur
 ## Change Type Details
 <a name="ct-0k4b96aatyqgl-MATb-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-0k4b96aatyqgl |

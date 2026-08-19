@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Target.Redshif
 
 You can migrate data to Amazon Redshift databases using AWS Database Migration Service. Amazon Redshift is a fully managed, petabyte-scale data warehouse service in the cloud. With an Amazon Redshift database as a target, you can migrate data from all of the other supported source databases.
 
-You can use Amazon Redshift Serverless as a target for AWS DMS. For more information, see [Using AWS DMS with Amazon Redshift Serverless as a TargetAmazon Redshift Serverless](#CHAP_Target.Redshift.RSServerless) following.
+You can use Amazon Redshift Serverless as a target for AWS DMS. For more information, see [Using AWS DMS with Amazon Redshift Serverless as a Target](#CHAP_Target.Redshift.RSServerless) following.
 
  The Amazon Redshift cluster must be in the same AWS account and same AWS Region as the replication instance.
 

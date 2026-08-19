@@ -11,8 +11,6 @@ If you're looking for optional features that aren't added through RDS option gro
 
 Amazon RDS supports the following options for Microsoft SQL Server DB instances.
 
-****
-
 | Option | Option ID | Engine editions |
 | --- | --- | --- |
 | [Linked Servers with Oracle OLEDB](Appendix.SQLServer.Options.LinkedServers_Oracle_OLEDB.md) | `OLEDB_ORACLE` | SQL Server Enterprise Edition<br />SQL Server Standard Edition |

@@ -5,8 +5,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/aws-
 # Working with AWS CDK applications
 <a name="aws-cdk-apps"></a>
 
-****
-
 |  |
 | --- |
 | This is prerelease documentation for a feature in preview release. It is subject to change. |

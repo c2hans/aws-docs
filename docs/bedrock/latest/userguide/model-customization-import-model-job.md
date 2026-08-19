@@ -73,7 +73,7 @@ if you are using cross-account Amazon S3 or KMS keys, edit the service role poli
 
    1. Copy the ARN for the model that you want to use from the **ARN** column.
 
-1. Use your model for inference calls. For more information, see [Submit a single prompt with InvokeModelSubmit a single prompt with InvokeModel (moved)](inference-invoke.md). You can use the model with on demand throughput.
+1. Use your model for inference calls. For more information, see [Submit a single prompt with InvokeModel](inference-invoke.md). You can use the model with on demand throughput.
 
    You can also use your model in the Amazon Bedrock text [playground](playgrounds.md).
 
@@ -82,7 +82,7 @@ if you are using cross-account Amazon S3 or KMS keys, edit the service role poli
 
 **Request**
 
-Send a [CreateModelImportJob](https://docs.aws.amazon.com//bedrock/latest/APIReference/API_CreateModelImportJob.html) (see link for request and response format and field details) request with an [Amazon Bedrock control plane endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#br-cp) to submit a custom model import job. Minimally, you must provide the following fields.
+Send a [CreateModelImportJob](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_CreateModelImportJob.html) (see link for request and response format and field details) request with an [Amazon Bedrock control plane endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#br-cp) to submit a custom model import job. Minimally, you must provide the following fields.
 + `roleArn` – The ARN of the service role with permissions to import models. Amazon Bedrock can automatically create a role with the appropriate permissions if you use the console, or you can create a custom role by following the steps at [Create a service role for importing pre-trained models](model-import-iam-role.md).
 **Note**
 If you include a `vpcConfig` field, make sure that the role has the proper permissions to access the VPC. For an example, see [Attach VPC permissions to a custom model import role.](vpc-custom-model-import.md#vpc-data-access-role-cmi)
@@ -94,7 +94,7 @@ To prevent the request from completing more than once, include a `clientRequestT
 
 You can include the following optional fields for extra configurations.
 + `jobTags` and/or `importedModelTags` – Associate [tags](tagging.md) with the import job or the imported model.
-+ `importedModelKmsKeyId` – Include a [Encryption of custom model import](https://docs.aws.amazon.com//bedrock/latest/userguide/encryption-import-model.html) KMS key to encrypt your imported model.
++ `importedModelKmsKeyId` – Include a [Encryption of custom model import](https://docs.aws.amazon.com/bedrock/latest/userguide/encryption-import-model.html) KMS key to encrypt your imported model.
 + `vpcConfig` – Include the vpc configuration to [(Optional) Protect custom model import jobs using a VPC](vpc-custom-model-import.md).
 
 **Response**

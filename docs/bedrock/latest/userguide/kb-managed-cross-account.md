@@ -15,8 +15,6 @@ Resource-based policies are supported only for managed knowledge bases (type `MA
 
 The following actions can be used in a knowledge base resource policy:
 
-****
-
 | Action | Description |
 | --- | --- |
 | bedrock:Retrieve | Query the knowledge base and retrieve relevant results from the data sources. |
@@ -113,8 +111,6 @@ Resource policies support both `Allow` and `Deny` effects. An explicit `Deny` in
 <a name="kb-managed-cross-account-manage-policies"></a>
 
 To manage resource policies on knowledge bases, the knowledge base owner's IAM principal needs the following permissions:
-
-****
 
 | Action | Description |
 | --- | --- |

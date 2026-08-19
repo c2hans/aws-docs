@@ -34,6 +34,12 @@ To create an evaluation job that uses an LLM as a judge with Amazon Bedrock's bu
 + Anthropic Claude 3.5 Haiku – `anthropic.claude-3-5-haiku-20241022-v1:0`
 + Anthropic Claude Haiku 4.5 – `anthropic.claude-haiku-4-5-20251001-v1:0`
 + Anthropic Claude Opus 4.5 – `anthropic.claude-opus-4-5-20251101-v1:0`
++ OpenAI GPT-5.4 – `openai.gpt-5.4`
++ OpenAI GPT-5.5 – `openai.gpt-5.5`
++ Anthropic Claude Sonnet 4.6 – `anthropic.claude-sonnet-4-6`
++ Anthropic Claude Opus 4.6 – `anthropic.claude-opus-4-6-v1`
++ Anthropic Claude Opus 4.7 – `anthropic.claude-opus-4-7`
++ Anthropic Claude Opus 4.8 – `anthropic.claude-opus-4-8`
 + Anthropic Claude Sonnet 4.0 – `anthropic.claude-sonnet-4-20250514-v1:0`
 + Anthropic Claude Sonnet 4.5 – `anthropic.claude-sonnet-4-5-20250929-v1:0`
 + Meta Llama 3.1 70B Instruct – `meta.llama3-1-70b-instruct-v1:0`
@@ -61,6 +67,12 @@ To create an evaluation job that uses an LLM as a judge with custom metrics, you
 + Amazon Nova Premier – `amazon.nova-premier-v1:0`
 + Anthropic Claude Haiku 4.5 – `anthropic.claude-haiku-4-5-20251001-v1:0`
 + Anthropic Claude Opus 4.5 – `anthropic.claude-opus-4-5-20251101-v1:0`
++ OpenAI GPT-5.4 – `openai.gpt-5.4`
++ OpenAI GPT-5.5 – `openai.gpt-5.5`
++ Anthropic Claude Sonnet 4.6 – `anthropic.claude-sonnet-4-6`
++ Anthropic Claude Opus 4.6 – `anthropic.claude-opus-4-6-v1`
++ Anthropic Claude Opus 4.7 – `anthropic.claude-opus-4-7`
++ Anthropic Claude Opus 4.8 – `anthropic.claude-opus-4-8`
 + Anthropic Claude Sonnet 4.0 – `anthropic.claude-sonnet-4-20250514-v1:0`
 + Anthropic Claude Sonnet 4.5 – `anthropic.claude-sonnet-4-5-20250929-v1:0`
 
@@ -71,7 +83,7 @@ To create an evaluation job that uses an LLM as a judge with custom metrics, you
 
 You can use the following model types in Amazon Bedrock as the generator model in an evaluation job. You can also bring your own inference response data from non-Amazon Bedrock models.
 + Foundation models – [Using models with Bedrock](foundation-models-reference.md)
-+ Models invoked through the OpenAI Responses API on the `bedrock-mantle` endpoint – [Inference using Responses API](bedrock-mantle.md)
++ Models invoked through the OpenAI Responses API on the `bedrock-mantle` endpoint – [Responses API](bedrock-mantle.md)
 + Amazon Bedrock Marketplace models – [Amazon Bedrock Marketplace](amazon-bedrock-marketplace.md)
 + Customized foundation models – [Customize your model to improve its performance for your use case](custom-models.md)
 + Imported foundation models – [Use Custom model import to import a customized open-source model into Amazon Bedrock](model-customization-import-model.md)

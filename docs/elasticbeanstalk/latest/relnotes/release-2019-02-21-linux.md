@@ -62,16 +62,12 @@ This release provides new Linux-based platform versions for AWS Elastic Beanstal
 ### Packer Builder
 <a name="release-2019-02-21-linux.platforms.packer"></a>
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Packer Version  |
 | --- | --- | --- |
 |  **Elastic Beanstalk Packer Builder version 2.6.7** <br /> * 64bit Amazon Linux 2018.03 v2.6.7 running Packer 1.0.3 *  | 2018.03.0 | 1.0.3 |
 
 ### Single Container Docker
 <a name="release-2019-02-21-linux.platforms.docker"></a>
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Docker Version  |  Proxy Server  |
 | --- | --- | --- | --- |
@@ -80,16 +76,12 @@ This release provides new Linux-based platform versions for AWS Elastic Beanstal
 ### Multicontainer Docker
 <a name="release-2019-02-21-linux.platforms.mcdocker"></a>
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Docker Version  |  ECS Agent  |
 | --- | --- | --- | --- |
 |  **Multicontainer Docker 18.06 version 2.11.9** <br /> * 64bit Amazon Linux 2018.03 v2.11.9 running Multi-container Docker 18.06.1-ce (Generic) *  | 2018.03.0 | 18.06.1-ce | 1.25.2 |
 
 ### Preconfigured Docker
 <a name="release-2019-02-21-linux.platforms.dockerpreconfig"></a>
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -101,16 +93,12 @@ This release provides new Linux-based platform versions for AWS Elastic Beanstal
 ### Go
 <a name="release-2019-02-21-linux.platforms.go"></a>
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  AWS X‑Ray  |  Proxy Server  |
 | --- | --- | --- | --- | --- |
 |  **Go 1.11 version 2.10.1** <br /> * 64bit Amazon Linux 2018.03 v2.10.0 running Go 1.11.5 *  | 2018.03.0 | Go 1.11.5 | 3.0.0 | nginx 1.14.1 |
 
 ### Java SE
 <a name="release-2019-02-21-linux.platforms.javase"></a>
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  Tools  |  AWS X‑Ray  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- |
@@ -119,8 +107,6 @@ This release provides new Linux-based platform versions for AWS Elastic Beanstal
 
 ### Java with Tomcat
 <a name="release-2019-02-21-linux.platforms.java"></a>
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  AWS X‑Ray  |  Application Server  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- |
@@ -132,16 +118,12 @@ This release provides new Linux-based platform versions for AWS Elastic Beanstal
 ### Node.js
 <a name="release-2019-02-21-linux.platforms.nodejs"></a>
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X‑Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  **Node.js version 4.8.1** <br /> * 64bit Amazon Linux 2018.03 v4.8.1 running Node.js *  | 2018.03.0 | 10.15.1 (6.4.1), 10.15.0 (6.4.1), 10.14.1 (6.4.1), 8.15.0 (6.4.1), 8.14.0 (6.4.1), 7.10.1 (4.2.0), 6.16.0 (3.10.10), 6.15.1 (3.10.10), 5.12.0 (3.8.6), 4.9.1 (2.15.11), 4.8.7 (2.15.11)<br /> Default platform: 10.15.1 | nginx 1.14.1, Apache 2.4.37 | 2.14.5 | 3.0.0 |
 
 ### PHP
 <a name="release-2019-02-21-linux.platforms.PHP"></a>
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  Composer  |  Proxy Server  |
 | --- | --- | --- | --- | --- |
@@ -155,8 +137,6 @@ This release provides new Linux-based platform versions for AWS Elastic Beanstal
 ### Python
 <a name="release-2019-02-21-linux.platforms.python"></a>
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  Package Manager  |  Packager  |  meld3  |  AWS X‑Ray  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  **Python 3.6 version 2.8.1** <br /> * 64bit Amazon Linux 2018.03 v2.8.1 running Python 3.6 *  | 2018.03.0 | Python 3.6.7 | pip 9.0.3 | setuptools 28.8.0 | meld3 1.0.2 | 3.0.0 | Apache 2.4.37 with mod\_wsgi 3.5 |
@@ -166,8 +146,6 @@ This release provides new Linux-based platform versions for AWS Elastic Beanstal
 
 ### Ruby
 <a name="release-2019-02-21-linux.platforms.ruby"></a>
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  Package Manager  |  Application Server  |  AWS X‑Ray  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- | --- |

@@ -23,7 +23,7 @@ You can create an IAM role and attach it to an instance during or after launch. 
 
 1. Choose **Create role**.
 
-   The newly created role is automatically selected and will be attached to your instance via an instance profile when the instance launches.
+   The newly created role is automatically selected and will be attached to your instance through an instance profile when the instance launches.
 
 **Note**
 When you create a role using the console during instance launch, an instance profile with the same name as the role is automatically created. The instance profile is a container that passes IAM role information to the instance at launch.

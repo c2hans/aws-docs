@@ -14,8 +14,6 @@ Enable detailed monitoring for the specified EC2 instance. Detailed monitoring i
 ## Change Type Details
 <a name="ct-211l2gxvsrrhy-MAEe-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-211l2gxvsrrhy |

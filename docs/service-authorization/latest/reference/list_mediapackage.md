@@ -24,8 +24,6 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_mediapackage-actions-as-permissions).
 
-****
-
 - **   ConfigureLogs  **
   - **IAM action:**  [mediapackage:UpdateChannel](#list_mediapackage-action-UpdateChannel)
   - **Condition key:**
@@ -137,8 +135,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
 <a name="list_mediapackage-actions-as-permissions"></a>
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
-
-****
 
 - **   [ConfigureLogs](https://docs.aws.amazon.com/mediapackage/latest/apireference/channels-id-configure_logs.html#channels-id-configure_logsput)  **
   - **Description:** Grants permission to configure access logs for a Channel
@@ -262,8 +258,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
 
-****
-
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
 |  [channels](https://docs.aws.amazon.com/mediapackage/latest/ug/channels.html)  | arn:${Partition}:mediapackage:${Region}:${Account}:channels/${ChannelIdentifier} | [aws:ResourceTag/${TagKey}](#list_mediapackage-aws_ResourceTag___TagKey_) |
@@ -274,8 +268,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_mediapackage-policy-keys"></a>
 
 AWS Elemental MediaPackage defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

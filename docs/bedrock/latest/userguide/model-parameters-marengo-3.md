@@ -22,8 +22,6 @@ The TwelveLabs Marengo Embed 3.0 model supports the Amazon Bedrock Runtime opera
   + For a list of model IDs and to see the models and AWS Regions that TwelveLabs Marengo Embed 3.0 is supported in, search for the model in the table at [Supported foundation models in Amazon Bedrock](models-supported.md).
   + For a full list of inference profile IDs, see [Supported Regions and models for inference profiles](inference-profiles-support.md). The inference profile ID is based on the AWS Region.
 
-****
-
 | API operation | Supported model types | Input modalities | Output modalities |
 | --- | --- | --- | --- |
 | InvokeModel | US East (N. Virginia) – [Base models](models-supported.md) and [Inference profiles](inference-profiles-support.md)<br />Europe (Ireland) – [Inference profiles](inference-profiles-support.md)<br />Asia Pacific (Seoul) - [Base models](models-supported.md) | Text<br />Image<br />Multi-input (text with multiple images)<br />**Note:** Text and image interleaved is also supported. | Embedding |
@@ -33,8 +31,6 @@ The TwelveLabs Marengo Embed 3.0 model supports the Amazon Bedrock Runtime opera
 Use `InvokeModel` to generate embeddings for search query. Use `StartAsyncInvoke` to generate embeddings for assets at a large scale.
 
 The following quotas apply to the input:
-
-****
 
 | Input modality | Maximum |
 | --- | --- |

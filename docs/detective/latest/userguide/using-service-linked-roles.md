@@ -23,7 +23,7 @@ The AWSServiceRoleForDetective service-linked role trusts the following services
 
 The AWSServiceRoleForDetective service-linked role uses the managed policy [`AmazonDetectiveServiceLinkedRolePolicy`](security-iam-awsmanpol.md#security-iam-awsmanpol-amazondetectiveservicelinkedrolepolicy).
 
-For details about updates to the `AmazonDetectiveServiceLinkedRolePolicy` policy see [Amazon Detective updates to AWS managed policies](https://docs.aws.amazon.com//detective/latest/userguide/security-iam-awsmanpol.html#security-iam-awsmanpol-updates). For automatic alerts about changes to this policy, subscribe to the RSS feed on the [Detective document history](https://docs.aws.amazon.com//detective/latest/userguide/doc-history.html) page.
+For details about updates to the `AmazonDetectiveServiceLinkedRolePolicy` policy see [Amazon Detective updates to AWS managed policies](https://docs.aws.amazon.com/detective/latest/userguide/security-iam-awsmanpol.html#security-iam-awsmanpol-updates). For automatic alerts about changes to this policy, subscribe to the RSS feed on the [Detective document history](https://docs.aws.amazon.com/detective/latest/userguide/doc-history.html) page.
 
 You must configure permissions to allow an IAM entity (such as a user, group, or role) to create, edit, or delete a service-linked role. For more information, see [Service-linked role permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/using-service-linked-roles.html#service-linked-role-permissions) in the *IAM User Guide*.
 

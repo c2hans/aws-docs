@@ -20,7 +20,7 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-serial-conso
 ## AWS Regions
 <a name="sc-prereqs-regions"></a>
 
-Supported in all AWS Regions.
+Supported in all AWS Regions except the AWS European Sovereign Cloud.
 
 ## Wavelength Zones
 <a name="sc-prereqs-wavelength-zones-outposts"></a>

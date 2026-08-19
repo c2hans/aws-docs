@@ -14,8 +14,6 @@ Add an event notification to the specified S3 bucket through direct API calls. T
 ## Change Type Details
 <a name="ct-0o4zi9bzg74lp-MASa-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-0o4zi9bzg74lp |

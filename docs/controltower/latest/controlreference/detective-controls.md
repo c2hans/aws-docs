@@ -12,14 +12,14 @@ A detective control detects noncompliance of resources within your accounts, suc
 + When you enable controls on an organizational unit (OU) that is registered with AWS Control Tower, detective controls apply to enrolled accounts only, not to all member accounts in the OU, if some accounts are not enrolled in AWS Control Tower.
 
 **Note**
-For information about how detective controls are applied to nested OUs, in AWS Control Tower, see [Nested Ous and controls](https://docs.aws.amazon.com//controltower/latest/userguide/nested-ous.html#nested-ous-and-controls).
+For information about how detective controls are applied to nested OUs, in AWS Control Tower, see [Nested Ous and controls](https://docs.aws.amazon.com/controltower/latest/userguide/nested-ous.html#nested-ous-and-controls).
 
 ## More about detective controls
 <a name="more-about-detective"></a>
 
-Most of the AWS Control Tower **Strongly recommended** controls are detective. By default, **Strongly recommended** controls are not enabled. For more information, see [Strongly recommended controls](https://docs.aws.amazon.com//controltower/latest/controlreference/strongly-recommended-controls.html).
+Most of the AWS Control Tower **Strongly recommended** controls are detective. By default, **Strongly recommended** controls are not enabled. For more information, see [Strongly recommended controls](https://docs.aws.amazon.com/controltower/latest/controlreference/strongly-recommended-controls.html).
 
-Three of the AWS Control Tower **Elective** controls are detective. By default, **Elective** controls are not enabled. For more information, see [Elective controls](https://docs.aws.amazon.com//controltower/latest/controlreference/elective-controls.html).
+Three of the AWS Control Tower **Elective** controls are detective. By default, **Elective** controls are not enabled. For more information, see [Elective controls](https://docs.aws.amazon.com/controltower/latest/controlreference/elective-controls.html).
 
 **Detective controls with **Elective** guidance**
 Detect Whether MFA is Enabled for AWS IAM Users

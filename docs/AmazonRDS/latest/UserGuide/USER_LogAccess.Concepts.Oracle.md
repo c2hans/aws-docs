@@ -24,8 +24,6 @@ The Oracle database engine might rotate log files if they get very large. To ret
 
 The following table shows the retention schedule for Oracle alert logs, audit files, and trace files on Amazon RDS.
 
-****
-
 | Log type | Retention schedule |
 | --- | --- |
 | Alert logs |  The text alert log is rotated daily with 30-day retention managed by Amazon RDS. The XML alert log is retained for at least seven days. You can access this log by using the `ALERTLOG` view.  |
@@ -90,8 +88,6 @@ On a read replica, get the name of the BDUMP directory by querying `V$DATABASE.D
 <a name="USER_LogAccess.Concepts.Oracle.WorkingWithTracefiles.Generating"></a>
 
 Because there are no restrictions on `ALTER SESSION`, many standard methods to generate trace files in Oracle remain available to an Amazon RDS DB instance. The following procedures are provided for trace files that require greater access.
-
-****
 
 |  Oracle method  |  Amazon RDS method |
 | --- | --- |
@@ -172,8 +168,6 @@ Amazon RDS publishes each Oracle database log as a separate database stream in t
 | Oracle Management Agent log | None. You can't disable this log. | Enabled |
 
 This Oracle Management Agent log consists of the log groups shown in the following table.
-
-****
 
 | Log name | CloudWatch log group |
 | --- | --- |

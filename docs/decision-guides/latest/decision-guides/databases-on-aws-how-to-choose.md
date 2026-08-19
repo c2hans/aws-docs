@@ -124,8 +124,6 @@ Your primary operational considerations are where your data is going to be locat
 
 The following table summarizes vector capabilities across AWS database services to help you select the right option for your generative AI workload.
 
-****
-
 | Service | Vector capability | Latency | Best for |
 | --- | --- | --- | --- |
 | OpenSearch Service | Native k-NN | Low–Medium | RAG at scale, hybrid search, log analytics |
@@ -146,8 +144,6 @@ The following table summarizes vector capabilities across AWS database services 
 Now that you know the criteria for evaluating your database options, you're ready to choose which AWS database services might be a good fit for your organization.
 
 This table lists each AWS database engine along with its data model, use cases, and optimizations. Use it to help determine the database that is the best fit for your use case.
-
-****
 
 |  Database engine  |  Data model  |  When would you use it?  |  What is it optimized for?  |
 | --- |--- |--- |--- |
@@ -405,8 +401,6 @@ Prioritize based on the considerations covered in this guide, your own specific 
 
 ## Explore
 <a name="db-explore"></a>
-
-****
 
 |  |  |
 | --- |--- |

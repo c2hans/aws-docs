@@ -10,7 +10,7 @@ Before you can create AWS Managed Microsoft AD in your AWS test lab, you first n
 ## Create a key pair
 <a name="createkeypair2"></a>
 
-If you already have a key pair, you can skip this step. For more information about Amazon EC2 key pairs, see [Create key pairs](https://docs.aws.amazon.com//AWSEC2/latest/UserGuide/create-key-pairs.html).
+If you already have a key pair, you can skip this step. For more information about Amazon EC2 key pairs, see [Create key pairs](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/create-key-pairs.html).
 
 **To create a key pair**
 
@@ -37,8 +37,6 @@ All of the AWS CLI and PowerShell examples use the VPC information from below an
 
 In this step, you need to create two VPCs in the same account using the specified parameters in the following table. AWS Managed Microsoft AD supports the use of separate accounts with the [Share your AWS Managed Microsoft AD](ms_ad_directory_sharing.md) feature. The first VPC will be used for AWS Managed Microsoft AD. The second VPC will be used for resources that can be used later in [Tutorial: Creating a trust from AWS Managed Microsoft AD to a self-managed Active Directory installation on Amazon EC2](ms_ad_tutorial_test_lab_trust.md).
 
-****
-
 |  Managed Active Directory VPC information  |  On-premises VPC information  |
 | --- | --- |
 | Name tag: AWS-DS-VPC01<br />IPv4 CIDR block: 10.0.0.0/16<br />IPv6 CIDR block: No IPv6 CIDR Block<br />Tenancy: Default | Name tag: AWS-OnPrem-VPC01<br />IPv4 CIDR block: 10.100.0.0/16<br />IPv6 CIDR block: No IPv6 CIDR Block<br />Tenancy: Default |
@@ -48,8 +46,6 @@ For detailed instructions, see [Creating a VPC](https://docs.aws.amazon.com/vpc/
 **Step 2: Create two subnets per VPC**
 
 After you have created the VPCs you will need to create two subnets per VPC using the specified parameters in the following table. For this test lab each subnet will be a /24. This will allows up to 256 addresses to be issued per subnet. Each subnet must be a in a separate AZ. Putting each subnet in a separate in AZ is one of the [Prerequisites for creating a AWS Managed Microsoft AD](ms_ad_getting_started.md#ms_ad_getting_started_prereqs).
-
-****
 
 |  AWS-DS-VPC01 subnet Information:  |  AWS-OnPrem-VPC01 subnet information  |
 | --- | --- |
@@ -62,8 +58,6 @@ For detailed instructions, see [Creating a subnet in your VPC](https://docs.aws.
 
 Since we are using public VPCs you will need to create and attach an Internet gateway to your VPCs using the specified parameters in the following table. This will allow you to be able to connect to and manage your EC2 instances.
 
-****
-
 |  AWS-DS-VPC01 Internet Gateway information  |  AWS-OnPrem-VPC01 Internet Gateway information  |
 | --- | --- |
 | Name tag: AWS-DS-VPC01-IGW<br />VPC: vpc-xxxxxxxxxxxxxxxxx AWS-DS-VPC01 | Name tag: AWS-OnPrem-VPC01-IGW<br />VPC: vpc-xxxxxxxxxxxxxxxxx AWS-OnPrem-VPC01 |
@@ -73,8 +67,6 @@ For detailed instructions, see [Internet gateways](https://docs.aws.amazon.com/v
 **Step 4: Configure a VPC peering connection between AWS-DS-VPC01 and AWS-OnPrem-VPC01**
 
 Since you already created two VPCs earlier, you will need to network them together using VPC peering using the specified parameters in the following table. While there are many ways to connect your VPCs, this tutorial will use VPC Peering. AWS Managed Microsoft AD supports many solutions to connect your VPCs, some of these include [VPC peering](https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html), [Transit Gateway](https://docs.aws.amazon.com/vpc/latest/tgw/what-is-transit-gateway.html), and [VPN](https://docs.aws.amazon.com/vpc/latest/adminguide/Welcome.html).
-
-****
 
 |  |
 | --- |
@@ -88,8 +80,6 @@ In order for the Internet Gateways and VPC Peering Connection created in the pre
 
 You can easily find the correct route table for each VPC by filtering on the VPC name tag (AWS-DS-VPC01 or AWS-OnPrem-VPC01).
 
-****
-
 |  AWS-DS-VPC01 route 1 information  |  AWS-DS-VPC01 route 2 information  |  AWS-OnPrem-VPC01 route 1 Information  |  AWS-OnPrem-VPC01 route 2 Information  |
 | --- | --- | --- | --- |
 | Destination: 0.0.0.0/0<br />Target: igw-xxxxxxxxxxxxxxxxx AWS-DS-VPC01-IGW | Destination: 10.100.0.0/16<br />Target: pcx-xxxxxxxxxxxxxxxxx AWS-DS-VPC01&AWS-OnPrem-VPC01-Peer | Destination: 0.0.0.0/0<br />Target: igw-xxxxxxxxxxxxxxxxx AWS-Onprem-VPC01 | Destination: 10.0.0.0/16<br />Target: pcx-xxxxxxxxxxxxxxxxx AWS-DS-VPC01&AWS-OnPrem-VPC01-Peer |
@@ -101,15 +91,11 @@ For instructions on how to add routes to a VPC route table, see [Adding and remo
 
 By default, AWS Managed Microsoft AD creates a security group to manage traffic between its domain controllers. In this section, you will need to create 2 security groups (one for each VPC) which will be used to manage traffic within your VPC for your EC2 instances using the specified parameters in the following tables. You also add a rule that allows RDP (3389) inbound from anywhere and for all traffic types inbound from the local VPC. For more information, see [Amazon EC2 security groups for Windows instances](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/using-network-security.html).
 
-****
-
 |  AWS-DS-VPC01 security group information:  |
 | --- |
 | Security group name: AWS DS Test Lab Security Group<br />Description: AWS DS Test Lab Security Group<br />VPC: vpc-xxxxxxxxxxxxxxxxx AWS-DS-VPC01 |
 
 **Security Group Inbound Rules for AWS-DS-VPC01**
-
-****
 
 | Type | Protocol | Port range | Source | Type of traffic |
 | --- | --- | --- | --- | --- |
@@ -118,21 +104,15 @@ By default, AWS Managed Microsoft AD creates a security group to manage traffic 
 
 **Security Group Outbound Rules for AWS-DS-VPC01**
 
-****
-
 | Type | Protocol | Port range | Destination | Type of traffic |
 | --- | --- | --- | --- | --- |
 | All Traffic | All | All | 0.0.0.0/0 | All traffic |
-
-****
 
 | AWS-OnPrem-VPC01 security group information: |
 | --- |
 | Security group name: AWS OnPrem Test Lab Security Group.<br />Description: AWS OnPrem Test Lab Security Group.<br />VPC: vpc-xxxxxxxxxxxxxxxxx AWS-OnPrem-VPC01 |
 
 **Security Group Inbound Rules for AWS-OnPrem-VPC01**
-
-****
 
 | Type | Protocol | Port range | Source | Type of traffic |
 | --- | --- | --- | --- | --- |
@@ -154,8 +134,6 @@ By default, AWS Managed Microsoft AD creates a security group to manage traffic 
 | All Traffic | All | All | 10.100.0.0/16 | All local VPC traffic |
 
 **Security Group Outbound Rules for AWS-OnPrem-VPC01**
-
-****
 
 | Type | Protocol | Port range | Destination | Type of traffic |
 | --- | --- | --- | --- | --- |

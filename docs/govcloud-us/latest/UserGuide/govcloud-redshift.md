@@ -23,7 +23,7 @@ The following differences apply to Amazon Redshift:
 
 ## Documentation
 <a name="govcloud-rs-docs"></a>
-+  [Amazon Redshift documentation](https://docs.aws.amazon.com/http://aws.amazon.com/documentation/redshift/)
++  [Amazon Redshift documentation](http://aws.amazon.com/documentation/redshift/)
 
 ## Export-controlled content
 <a name="govcloud-redshift-itar"></a>

@@ -198,7 +198,7 @@ If you want CloudFront to respond to viewer requests from IPv4 and IPv6 IP addre
 ## Mutual authentication
 <a name="DownloadDistValuesMutualAuthentication"></a>
 
-Optional. You can choose to turn on mutual authentication for your CloudFront distribution. For more information, see [Mutual TLS authentication with CloudFront (Viewer mTLS)Origin mutual TLS with CloudFront](mtls-authentication.md).
+Optional. You can choose to turn on mutual authentication for your CloudFront distribution. For more information, see [Mutual TLS authentication with CloudFront (Viewer mTLS)](mtls-authentication.md).
 
 ## Enable IPv6 for custom origins (origin requests)
 <a name="DownloadDistValuesEnableIPv6-origin"></a>

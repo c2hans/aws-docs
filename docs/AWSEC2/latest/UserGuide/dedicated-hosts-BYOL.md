@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dedicated-hosts-
 
 Dedicated Hosts allow you to use your existing per-socket, per-core, or per-VM software licenses. When you bring your own license, you are responsible for managing your own licenses. However, Amazon EC2 has features that help you maintain license compliance, such as instance affinity and targeted placement.
 
-These are the general steps to follow in order to bring your own volume licensed machine image into Amazon EC2.
+These are the general steps to follow to bring your own volume licensed machine image into Amazon EC2.
 
 1. Verify that the license terms controlling the use of your machine images allow usage in a virtualized cloud environment. For more information about Microsoft Licensing, see [Amazon Web Services and Microsoft Licensing](https://aws.amazon.com/windows/faq/#licensing).
 

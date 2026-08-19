@@ -17,4 +17,4 @@ We recommend that you deploy AWS Control Tower as your foundational landing zone
 
 Source code for LZA is available in a [GitHub repository](https://github.com/awslabs/landing-zone-accelerator-on-aws).
 
-For more information on how to combine LZA and AWS Control Tower, see [the LZA implementation guide](https://docs.aws.amazon.com//solutions/latest/landing-zone-accelerator-on-aws/prerequisites.html).
+For more information on how to combine LZA and AWS Control Tower, see [the LZA implementation guide](https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerator-on-aws/prerequisites.html).

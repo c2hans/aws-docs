@@ -14,8 +14,6 @@ Remove the Service Principal Name (SPN) associated with a specified hostname or 
 ## Change Type Details
 <a name="ct-1078jhyxq32dp-MDCr-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1078jhyxq32dp |

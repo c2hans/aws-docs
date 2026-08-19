@@ -9,8 +9,6 @@ Amazon Q Business is no longer open to new customers. For capabilities similar t
 
 The following table gives an overview of the Amazon Q Business Box connector and its supported features.
 
-****
-
 - ****Security****
   - **Feature:** Authentication type / **Support:** Token with JWT Auth by Box
   - **Feature:** Authentication credentials / **Support:** +  Client ID <br />+  Client secret <br />+  Public Key ID <br />+  Private Key <br />+  Pass Phrase   Admin privileges required.

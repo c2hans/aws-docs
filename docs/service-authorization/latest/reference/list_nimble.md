@@ -24,8 +24,6 @@ References:
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
 
-****
-
 - **   [AcceptEulas](https://docs.aws.amazon.com/nimble-studio/latest/APIReference/API_AcceptEulas.html)  **
   - **Description:** Grants permission to accept EULAs
   - **Resource types (\*required):** [eula\*](#list_nimble-resource-eula)
@@ -337,8 +335,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 The following actions are defined by Amazon Nimble Studio but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 - **   [GetFeatureMap](https://docs.aws.amazon.com/nimble-studio/latest/userguide/security-iam-service-with-iam.html)  **
   - **Description:** Grants permission to allow Nimble Studio portal to show the appropriate features for this account
   - **Resource types (\*required):**
@@ -356,8 +352,6 @@ The following actions are defined by Amazon Nimble Studio but are not directly i
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
 
-****
-
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
 |  [eula](https://docs.aws.amazon.com/nimble-studio/latest/APIReference/API_Eula.html)  | arn:${Partition}:nimble:${Region}:${Account}:eula/${EulaId} |   |
@@ -373,8 +367,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_nimble-policy-keys"></a>
 
 Amazon Nimble Studio defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

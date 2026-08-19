@@ -7,13 +7,13 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_dat
 
 Data perimeter guardrails are meant to serve as always-on boundaries to help protect your data across a broad set of AWS accounts and resources. Data perimeters follow IAM security best practices to [establish permissions guardrails across multiple accounts](best-practices.md#bp-permissions-guardrails). These organization-wide permissions guardrails do not replace your existing fine-grained access controls. Instead, they work as **coarse-grained access controls** that help improve your security strategy by ensuring users, roles, and resources adhere to a set of defined security standards.
 
-A data perimeter is set of permission guardrails in your AWS environment which help ensure that only your trusted identities are accessing trusted resources from expected networks.
+A data perimeter is set of permission guardrails in your AWS environment which help make sure that only your trusted identities are accessing trusted resources from expected networks.
 + Trusted identities: Principals (IAM roles or users) in your AWS accounts and AWS services acting on your behalf.
 + Trusted resources: Resources owned by your AWS accounts or by AWS services acting on your behalf.
 + Expected networks: Your on-premises data centers and virtual private clouds (VPCs), or networks of AWS services acting on your behalf.
 
 **Note**
-In some cases, you may need to extend your data perimeter to also include access by your trusted business partners. You should consider all intended data access patterns when you create a definition of trusted identities, trusted resources, and expected networks specific to your company and your use of AWS services.
+In some cases, you might need to extend your data perimeter to also include access by your trusted business partners. You should consider all intended data access patterns when you create a definition of trusted identities, trusted resources, and expected networks specific to your company and your use of AWS services.
 
 Data perimeter controls should be treated as any other security control within the information security and risk management program. This means that you should perform a threat analysis to identify potential risks within your cloud environment, and then, based on your own risk acceptance criteria, select and implement appropriate data perimeter controls. To better inform the iterative risk-based approach to data perimeter implementation, you need to understand what security risks and threat vectors are addressed by data perimeter controls as well as your security priorities.
 
@@ -46,30 +46,30 @@ To enforce network perimeter controls, we recommend that you use `aws:VpceOrgID`
 ## Identity perimeter
 <a name="access_policies_data-perimeters-identity"></a>
 
-An identity perimeter is a set of coarse-grained preventative access controls that help ensure only trusted identities can access your resources and only trusted identities are allowed from your network. Trusted identities usually include principals (roles or users) in your AWS accounts and AWS services acting on your behalf. All other identities are considered untrusted and are prevented by the identity perimeter unless an explicit exception is granted.
+An identity perimeter is a set of coarse-grained preventative access controls that help make sure only trusted identities can access your resources and only trusted identities are allowed from your network. Trusted identities usually include principals (roles or users) in your AWS accounts and AWS services acting on your behalf. All other identities are considered untrusted and are prevented by the identity perimeter unless an explicit exception is granted.
 
-The following global condition keys help enforce identity perimeter controls based on your definition of trusted identities. Use these keys in resource control policies to restrict access to resources, or in [VPC endpoint policies](https://docs.aws.amazon.com//vpc/latest/privatelink/vpc-endpoints-access.html) to restrict access to your networks.
+The following global condition keys help enforce identity perimeter controls based on your definition of trusted identities. Use these keys in resource control policies to restrict access to resources, or in [VPC endpoint policies](https://docs.aws.amazon.com/vpc/latest/privatelink/vpc-endpoints-access.html) to restrict access to your networks.
 
 ### Identities owned by you
 <a name="data-perimeters-identity-owned-by-you"></a>
 
 You can use the following condition keys to define IAM principals that you create and manage in your AWS accounts.
-+ [aws:PrincipalOrgID](reference_policies_condition-keys.md#condition-keys-principalorgid) – You can use this condition key to ensure that IAM principals making the request belong to the specified organization in AWS Organizations.
-+ [aws:PrincipalOrgPaths](reference_policies_condition-keys.md#condition-keys-principalorgpaths) – You can use this condition key to ensure that the IAM user , IAM role, AWS STS federated user principal, SAML federated principal, OIDC federated principal, or AWS account root user making the request belong to the specified organizational unit (OU) in AWS Organizations.
-+ [aws:PrincipalAccount](reference_policies_condition-keys.md#condition-keys-principalaccount) – You can use this condition key to ensure resources can only be accessed by the principal account that you specify in the policy.
++ [aws:PrincipalOrgID](reference_policies_condition-keys.md#condition-keys-principalorgid) – You can use this condition key to make sure that IAM principals making the request belong to the specified organization in AWS Organizations.
++ [aws:PrincipalOrgPaths](reference_policies_condition-keys.md#condition-keys-principalorgpaths) – You can use this condition key to make sure that the IAM user , IAM role, AWS STS federated user principal, SAML federated principal, OIDC federated principal, or AWS account root user making the request belong to the specified organizational unit (OU) in AWS Organizations.
++ [aws:PrincipalAccount](reference_policies_condition-keys.md#condition-keys-principalaccount) – You can use this condition key to make sure resources can only be accessed by the principal account that you specify in the policy.
 
 ### Identities of AWS services acting on your behalf
 <a name="data-perimeters-identity-owned-by-service"></a>
 
 You can use the following condition keys to allow AWS services to use their own identities to access your resources when they act on your behalf.
-+ [aws:PrincipalIsAWSService](reference_policies_condition-keys.md#condition-keys-principalisawsservice) and [aws:SourceOrgID](reference_policies_condition-keys.md#condition-keys-sourceorgid) (or [aws:SourceOrgPaths](reference_policies_condition-keys.md#condition-keys-sourceorgpaths) and [aws:SourceAccount](reference_policies_condition-keys.md#condition-keys-sourceaccount)) – You can use these condition keys to ensure that when [AWS service principals](reference_policies_elements_principal.md#principal-services) access your resources, they do it only on behalf of a resource in the specified organization, organizational unit, or an account in AWS Organizations.
++ [aws:PrincipalIsAWSService](reference_policies_condition-keys.md#condition-keys-principalisawsservice) and [aws:SourceOrgID](reference_policies_condition-keys.md#condition-keys-sourceorgid) (or [aws:SourceOrgPaths](reference_policies_condition-keys.md#condition-keys-sourceorgpaths) and [aws:SourceAccount](reference_policies_condition-keys.md#condition-keys-sourceaccount)) – You can use these condition keys to make sure that when [AWS service principals](reference_policies_elements_principal.md#principal-services) access your resources, they do it only on behalf of a resource in the specified organization, organizational unit, or an account in AWS Organizations.
 
 For more information, see [ Establishing a data perimeter on AWS: Allow only trusted identities to access company data](https://aws.amazon.com/blogs/security/establishing-a-data-perimeter-on-aws-allow-only-trusted-identities-to-access-company-data/).
 
 ## Resource perimeter
 <a name="access_policies_data-perimeters-resource"></a>
 
-A resource perimeter is a set of coarse-grained preventative access controls that help ensure your identities can access only trusted resources and only trusted resources can be accessed from your network. Trusted resources usually include resources owned by your AWS accounts or by AWS services acting on your behalf.
+A resource perimeter is a set of coarse-grained preventative access controls that help make sure your identities can access only trusted resources and only trusted resources can be accessed from your network. Trusted resources usually include resources owned by your AWS accounts or by AWS services acting on your behalf.
 
 The following global condition keys help enforce resource perimeter controls based on your definition of trusted resources. Use these keys in [Service control policies (SCPs)](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html) to restrict which resources can be accessed by your identities, or in [ VPC endpoint policies](https://docs.aws.amazon.com/vpc/latest/privatelink/vpc-endpoints-access.html) to restrict which resources can be accessed from your networks.
 
@@ -77,19 +77,19 @@ The following global condition keys help enforce resource perimeter controls bas
 <a name="data-perimeters-resource-owned-by-you"></a>
 
 You can use the following condition keys to define AWS resources that you create and manage in your AWS accounts.
-+ [aws:ResourceOrgID](reference_policies_condition-keys.md#condition-keys-resourceorgid) – You can use this condition key to ensure the resource that is being accessed belongs to the specified organization in AWS Organizations.
-+ [aws:ResourceOrgPaths](reference_policies_condition-keys.md#condition-keys-resourceorgpaths) – You can use this condition key to ensure the resource that is being accessed belongs to the specified organizational unit(OU) in AWS Organizations.
-+ [aws:ResourceAccount](reference_policies_condition-keys.md#condition-keys-resourceaccount) – You can use this condition key to ensure the resource that is being accessed belongs to the specified AWS account.
++ [aws:ResourceOrgID](reference_policies_condition-keys.md#condition-keys-resourceorgid) – You can use this condition key to make sure the resource that is being accessed belongs to the specified organization in AWS Organizations.
++ [aws:ResourceOrgPaths](reference_policies_condition-keys.md#condition-keys-resourceorgpaths) – You can use this condition key to make sure the resource that is being accessed belongs to the specified organizational unit(OU) in AWS Organizations.
++ [aws:ResourceAccount](reference_policies_condition-keys.md#condition-keys-resourceaccount) – You can use this condition key to make sure the resource that is being accessed belongs to the specified AWS account.
 
 ### Resources of AWS services acting on your behalf
 <a name="data-perimeters-resource-owned-by-service"></a>
 
-In some cases, you may need to permit access to AWS owned resources, resources that do not belong to your organization and that are accessed by your principals or by AWS services acting on your behalf. For more information about these scenarios, see [ Establishing a data perimeter on AWS: Allow only trusted resources from my organization](https://aws.amazon.com/blogs/security/establishing-a-data-perimeter-on-aws-allow-only-trusted-resources-from-my-organization/).
+In some cases, you might need to permit access to AWS owned resources, resources that do not belong to your organization and that are accessed by your principals or by AWS services acting on your behalf. For more information about these scenarios, see [ Establishing a data perimeter on AWS: Allow only trusted resources from my organization](https://aws.amazon.com/blogs/security/establishing-a-data-perimeter-on-aws-allow-only-trusted-resources-from-my-organization/).
 
 ## Network perimeter
 <a name="access_policies_data-perimeters-network"></a>
 
-A network perimeter is a set of coarse-grained preventative access controls that help ensure your identities can access resources only from expected networks and your resources can only be accessed from expected networks. Expected networks usually include your on-premises data centers and virtual private clouds (VPCs) and networks of AWS services acting on your behalf.
+A network perimeter is a set of coarse-grained preventative access controls that help make sure your identities can access resources only from expected networks and your resources can only be accessed from expected networks. Expected networks usually include your on-premises data centers and virtual private clouds (VPCs) and networks of AWS services acting on your behalf.
 
 The following global condition keys help enforce network perimeter controls based on your definition of expected networks. Use these keys in [service control policies (SCPs)](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html) to restrict networks your identities can communicate from, or in [resource control policies (RCPs)](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_rcps.html) to constrain resource access to expected networks.
 
@@ -97,12 +97,12 @@ The following global condition keys help enforce network perimeter controls base
 <a name="data-perimeters-network-owned-by-you"></a>
 
 You can use the following condition keys to define networks your employees and applications are expected to use to access your resources, such as your corporate IP CIDR range and your VPCs.
-+ [aws:SourceIp](reference_policies_condition-keys.md#condition-keys-sourceip) – You can use this condition key to ensure the requester's IP address is within a specified IP range.
-+ [aws:SourceVpc](reference_policies_condition-keys.md#condition-keys-sourcevpc) – You can use this condition key to ensure the VPC endpoint the request travels through belongs to the specified VPC.
-+ [aws:SourceVpce](reference_policies_condition-keys.md#condition-keys-sourcevpce) – You can use this condition key to ensure the request travels through the specified VPC endpoint.
-+ [aws:VpceAccount](reference_policies_condition-keys.md#condition-keys-vpceaccount) – You can use this condition key to ensure requests come through VPC endpoints owned by the specified AWS account.
-+ [aws:VpceOrgPaths](reference_policies_condition-keys.md#condition-keys-vpceorgpaths) – You can use this condition key to ensure that requests come through VPC endpoints owned by accounts that belong to the specified organizational unit (OU) in AWS Organizations.
-+ [aws:VpceOrgID](reference_policies_condition-keys.md#condition-keys-vpceorgid) – You can use this condition key to ensure requests come through VPC endpoints owned by accounts in the specified organization in AWS Organizations.
++ [aws:SourceIp](reference_policies_condition-keys.md#condition-keys-sourceip) – You can use this condition key to make sure the requester's IP address is within a specified IP range.
++ [aws:SourceVpc](reference_policies_condition-keys.md#condition-keys-sourcevpc) – You can use this condition key to make sure the VPC endpoint the request travels through belongs to the specified VPC.
++ [aws:SourceVpce](reference_policies_condition-keys.md#condition-keys-sourcevpce) – You can use this condition key to make sure the request travels through the specified VPC endpoint.
++ [aws:VpceAccount](reference_policies_condition-keys.md#condition-keys-vpceaccount) – You can use this condition key to make sure requests come through VPC endpoints owned by the specified AWS account.
++ [aws:VpceOrgPaths](reference_policies_condition-keys.md#condition-keys-vpceorgpaths) – You can use this condition key to make sure that requests come through VPC endpoints owned by accounts that belong to the specified organizational unit (OU) in AWS Organizations.
++ [aws:VpceOrgID](reference_policies_condition-keys.md#condition-keys-vpceorgid) – You can use this condition key to make sure requests come through VPC endpoints owned by accounts in the specified organization in AWS Organizations.
 
 `aws:VpceAccount`, `aws:VpceOrgPaths`, and `aws:VpceOrgID` are particularly useful for implementing network perimeter controls that scale automatically with your VPC endpoint usage, without requiring updates to policies when you create new endpoints. See the [AWS global condition context keys](reference_policies_condition-keys.md) for the list of AWS services that support these keys.
 
@@ -110,8 +110,8 @@ You can use the following condition keys to define networks your employees and a
 <a name="data-perimeters-network-owned-by-service"></a>
 
 You can use the following condition keys to allow AWS services to access your resources from their networks when they act on your behalf.
-+ [aws:ViaAWSService](reference_policies_condition-keys.md#condition-keys-viaawsservice) – You can use this condition key to ensure that AWS services can make requests on behalf of your principal using [Forward access sessions](access_forward_access_sessions.md) (FAS).
-+ [aws:PrincipalIsAWSService](reference_policies_condition-keys.md#condition-keys-principalisawsservice) – You can use this condition key to ensure that AWS services can access your resources using [AWS service principals](reference_policies_elements_principal.md#principal-services).
++ [aws:ViaAWSService](reference_policies_condition-keys.md#condition-keys-viaawsservice) – You can use this condition key to make sure that AWS services can make requests on behalf of your principal using [Forward access sessions](access_forward_access_sessions.md) (FAS).
++ [aws:PrincipalIsAWSService](reference_policies_condition-keys.md#condition-keys-principalisawsservice) – You can use this condition key to make sure that AWS services can access your resources using [AWS service principals](reference_policies_elements_principal.md#principal-services).
 
  There are additional scenarios where you need to permit access to AWS services that access your resources from outside your network. For more information, see [Establishing a data perimeter on AWS: Allow access to company data only from expected networks](https://aws.amazon.com/blogs/security/establishing-a-data-perimeter-on-aws-allow-access-to-company-data-only-from-expected-networks/).
 

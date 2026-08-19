@@ -58,8 +58,6 @@ The `Resource` JSON policy element specifies the object or objects to which the 
 
 In the Amazon MQ, the primary AWS resources are an Amazon MQ message broker and its configuration. Amazon MQ brokers and configurations each have unique Amazon Resource Names (ARNs) associated with them, as shown in the following table.
 
-****
-
 | Resource Types | ARN | Condition Keys |
 | --- | --- | --- |
 |   brokers  |  arn:aws:mq:us-east-1:123456789012:broker:${brokerName}:${brokerId}  |  [aws:ResourceTag/${TagKey}](#amazonmq-aws_ResourceTag___TagKey_)  |
@@ -103,8 +101,6 @@ Administrators can use AWS JSON policies to specify who has access to what. That
 The `Condition` element specifies when statements execute based on defined criteria. You can create conditional expressions that use [condition operators](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html), such as equals or less than, to match the condition in the policy with values in the request. To see all AWS global condition keys, see [AWS global condition context keys](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html) in the *IAM User Guide*.
 
 Amazon MQ does not define any service-specific condition keys, but supports using some global condition keys. To see a list of Amazon MQ condition keys, see the table below or [Condition Keys for Amazon MQ](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonmq.html#amazonmq-policy-keys) in the *IAM User Guide*. To learn with which actions and resources you can use a condition key, see [Actions Defined by Amazon MQ](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonmq.html#amazonmq-actions-as-permissions).
-
-****
 
 | Condition Keys | Description | Type |
 | --- | --- | --- |

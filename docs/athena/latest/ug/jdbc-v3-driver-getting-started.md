@@ -131,8 +131,6 @@ The `PropertiesFileCredentialsProvider` is not supported in the JDBC 3.x driver.
 
 The following table shows the differences in the `LogLevel` parameters in the JDBC version 2 and version 3 drivers.
 
-****
-
 | JDBC driver version | Parameter name | Parameter type | Default value | Possible values | Connection string example |
 | --- | --- | --- | --- | --- | --- |
 | v2 | LogLevel | Optional | 0 | 0-6 | LogLevel=6; |

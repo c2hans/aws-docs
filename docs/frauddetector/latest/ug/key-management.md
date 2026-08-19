@@ -15,8 +15,8 @@ Amazon Fraud Detector encrypts your data using one of two types of keys:
 <a name="create-customer-managed-cmk"></a>
 
 You can create customer managed KMS key using either the AWS KMS console or the [CreateKey](https://docs.aws.amazon.com/kms/latest/APIReference/API_CreateKey.html) API. When creating the key make sure you,
-+ Select a symmetric encryption customer managed KMS key, Amazon Fraud Detector does not support asymmetric KMS keys. For more information, see [Asymmetric Keys in AWS KMS](https://docs.aws.amazon.com//kms/latest/developerguide/symmetric-asymmetric.html) in the AWS Key Management Service Developer Guide.
-+ Create single region KMS key. Amazon Fraud Detector does not support multi-region KMS keys. For more information, see [Multi-region keys in AWS KMS](https://docs.aws.amazon.com//kms/latest/developerguide/multi-region-keys-overview.html) in the AWS Key Management Service Developer Guide.
++ Select a symmetric encryption customer managed KMS key, Amazon Fraud Detector does not support asymmetric KMS keys. For more information, see [Asymmetric Keys in AWS KMS](https://docs.aws.amazon.com/kms/latest/developerguide/symmetric-asymmetric.html) in the AWS Key Management Service Developer Guide.
++ Create single region KMS key. Amazon Fraud Detector does not support multi-region KMS keys. For more information, see [Multi-region keys in AWS KMS](https://docs.aws.amazon.com/kms/latest/developerguide/multi-region-keys-overview.html) in the AWS Key Management Service Developer Guide.
 + Provide the following [key policy](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#key_permissions) to grant permissions to Amazon Fraud Detector to use the key.
 
   ```

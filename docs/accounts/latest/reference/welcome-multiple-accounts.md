@@ -5,6 +5,8 @@ source_url: https://docs.aws.amazon.com/accounts/latest/reference/welcome-multip
 # Benefits of using multiple AWS accounts
 <a name="welcome-multiple-accounts"></a>
 
+This information is about the benefits of using multiple AWS accounts if you signed up for AWS using Sign up for AWS (advanced) or if you activated advanced features for your account. To compare sign-up options, see [Compare sign-up options](sign-up-for-aws.md).
+
 AWS accounts form the foundational security boundary in the AWS Cloud. They serve as a container for resources, providing a critical layer of isolation that is essential for creating a secure, well-governed environment. For more information, see [What is an AWS account?](accounts-welcome.md).
 
 Separating your resources into separate AWS accounts helps you to support the following principles in your cloud environment:
@@ -26,6 +28,6 @@ Before you start adding multiple accounts, you'll want to develop a plan to mana
 AWS also offers AWS Control Tower, which adds layers of AWS managed automation to Organizations and automatically integrates it with other AWS services like AWS CloudTrail, AWS Config, Amazon CloudWatch, AWS Service Catalog, and others. These services can incur additional costs. For more information, see [AWS Control Tower pricing](https://aws.amazon.com/controltower/pricing).
 
 ### See also
-<a name="w2aab9c13c11b7"></a>
+<a name="w2aac11c23c15c13b7"></a>
 + [When to use AWS Organizations](using-orgs.md)
 + [When to use AWS Control Tower](when-to-use-control-tower.md)

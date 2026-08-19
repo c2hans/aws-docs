@@ -31,8 +31,6 @@ You can also choose to register a member account as a *delegated administrator* 
 
 For each task and account type, the following table indicates whether the IAM Identity Center administrative task can be performed by users in the account.
 
-****
-
 | IAM Identity Center administrative tasks | Member account | Delegated administrator account | Management account |
 | --- | --- | --- | --- |
 | Read users or groups (reading the group itself and the group's membership) | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/icon-yes.png) Yes |
@@ -67,7 +65,7 @@ You can also assign your users single sign-on access to applications. For inform
 ## End-user experience
 <a name="end-user-experience"></a>
 
-The *AWS access portal* provides IAM Identity Center users with single sign-on access to all their assigned AWS accounts and applications through a web portal. The AWS access portal is different from the [AWS Management Console](https://docs.aws.amazon.com//awsconsolehelpdocs/latest/gsg/learn-whats-new.html), which is a collection of service consoles for managing AWS resources.
+The *AWS access portal* provides IAM Identity Center users with single sign-on access to all their assigned AWS accounts and applications through a web portal. The AWS access portal is different from the [AWS Management Console](https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/learn-whats-new.html), which is a collection of service consoles for managing AWS resources.
 
 When you create a permission set, the name that you specify for the permission set appears in the AWS access portal as an available role. Users sign in to the AWS access portal, choose an AWS account, and then choose the role. After they choose the role, they can access AWS services by using the AWS Management Console or retrieve temporary credentials to access AWS services programmatically.
 
@@ -100,9 +98,9 @@ A *service-linked role* is a type of IAM role that is linked directly to an AWS 
 ### Limiting access to the identity store from member accounts
 <a name="limiting-access-from-member-accounts"></a>
 
-For the identity store service used by IAM Identity Center, users who have access to a member account can use API actions that require **Read** permissions. Member accounts have access to **Read** actions on both the **sso-directory** and **identitystore** namespaces. For more information, see [ Actions, resources, and condition keys for AWS IAM Identity Center directory](https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsiamidentitycenterdirectory.html) and [Actions, resources, and condition keys for AWS Identity Store](https://docs.aws.amazon.com//service-authorization/latest/reference/list_awsidentitystore.html) in the *Service Authorization Reference*.
+For the identity store service used by IAM Identity Center, users who have access to a member account can use API actions that require **Read** permissions. Member accounts have access to **Read** actions on both the **sso-directory** and **identitystore** namespaces. For more information, see [ Actions, resources, and condition keys for AWS IAM Identity Center directory](https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsiamidentitycenterdirectory.html) and [Actions, resources, and condition keys for AWS Identity Store](https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsidentitystore.html) in the *Service Authorization Reference*.
 
-To prevent users in member accounts from using API operations in the identity store, you can [attach a service control policy (SCP)](https://docs.aws.amazon.com//organizations/latest/userguide/orgs_manage_policies_scps_attach.html). An SCP is a type of organization policy that you can use to manage permissions in your organization. The following example SCP prevents users in member accounts from accessing any API operation in the identity store.
+To prevent users in member accounts from using API operations in the identity store, you can [attach a service control policy (SCP)](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps_attach.html). An SCP is a type of organization policy that you can use to manage permissions in your organization. The following example SCP prevents users in member accounts from accessing any API operation in the identity store.
 
 ```
         {
@@ -116,4 +114,4 @@ To prevent users in member accounts from using API operations in the identity st
 **Note**
 To ensure your AWS managed applications function well with your IAM Identity Center you should avoid applying this SCP to the AWS accounts where you deployed those applications. Also, if you use delegated administration, you should avoid applying this SCP to the delegated administration account. For more information, see [Best practices](delegated-admin.md#delegated-admin-best-practices).
 
-For more information, see [Service control policies (SCPs)](https://docs.aws.amazon.com//organizations/latest/userguide/orgs_manage_policies_scps.html) in the *AWS Organizations User Guide*.
+For more information, see [Service control policies (SCPs)](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html) in the *AWS Organizations User Guide*.

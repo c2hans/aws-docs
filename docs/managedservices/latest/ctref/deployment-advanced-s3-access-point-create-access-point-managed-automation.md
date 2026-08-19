@@ -14,8 +14,6 @@ Create an access point and associate it with the specified S3 bucket.
 ## Change Type Details
 <a name="ct-1elb1vtam0ka5-DASc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1elb1vtam0ka5 |

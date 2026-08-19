@@ -12,8 +12,6 @@ Metrics are updated every five minutes and automatically collected and pushed to
 
 The following table shows common uses for metrics reported by Amazon EMR. These are suggestions to get you started, not a comprehensive list. For a complete list of metrics reported by Amazon EMR, see [Metrics reported by Amazon EMR in CloudWatch](#UsingEMR_ViewingMetrics_MetricsReported).
 
-****
-
 | How do I? | Relevant metrics |
 | --- | --- |
 | Track the progress of my cluster | Look at the RunningMapTasks, RemainingMapTasks, RunningReduceTasks, and RemainingReduceTasks metrics.  |
@@ -22,7 +20,7 @@ The following table shows common uses for metrics reported by Amazon EMR. These 
 | Detect when a cluster runs out of storage | The HDFSUtilization metric monitors the cluster's combined HDFS capacity, and can require resizing the cluster to add more core nodes. For example, the HDFS utilization is high, which may affect jobs and cluster health.  |
 | Detect when a cluster is running at reduced capacity | The MRLostNodes metric tracks when one or more core or task nodes is unable to communicate with the master node. For example, the core or task node is unreachable by the master node. |
 
-For more information, see [Amazon EMR cluster terminates with NO\_SLAVE\_LEFT and core nodes FAILED\_BY\_MASTER](emr-cluster-NO_SLAVE_LEFT-FAILED_BY_MASTER.md) and [AWSSupport-AnalyzeEMRLogs](https://docs.aws.amazon.com//systems-manager-automation-runbooks/latest/userguide/automation-awssupport-analyzeemrlogs.html).
+For more information, see [Amazon EMR cluster terminates with NO\_SLAVE\_LEFT and core nodes FAILED\_BY\_MASTER](emr-cluster-NO_SLAVE_LEFT-FAILED_BY_MASTER.md) and [AWSSupport-AnalyzeEMRLogs](https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-awssupport-analyzeemrlogs.html).
 
 ## Access CloudWatch metrics for Amazon EMR
 <a name="UsingEMR_ViewingMetrics_Access"></a>
@@ -166,8 +164,6 @@ For clusters composed of instance fleets, the cluster capacity metrics are measu
 | +  `TaskUnitsRunning` <br />+  `TaskNodesRunning` <br />+  `TaskVCPURunning`   | The current number of TASK units/nodes/vCPUs running in a cluster.<br />Units: *Count* |
 
 Amazon EMR emits the following metrics at a one-minute granularity when you enable auto-termination using an auto-termination policy. Some metrics are only available for Amazon EMR versions 6.4.0 and later. To learn more about auto-termination, see [Using an auto-termination policy for Amazon EMR cluster cleanup](emr-auto-termination-policy.md).
-
-****
 
 | Metric | Description |
 | --- | --- |

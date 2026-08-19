@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-
 
 Maintaining near real-time aggregations and key metrics on top of rapidly changing data is becoming increasingly valuable to businesses for making rapid decisions. For example, a music library might want to showcase its most downloaded songs in near-real time, or an e-commerce platform might need to display trending products by category.
 
-Because DynamoDB doesn't natively support aggregation operations like `SUM` or `COUNT` across items, computing these values at read time would require scanning large numbers of items—which may be slow and expensive. Instead, you can *pre-compute* aggregations as data changes and store the results as regular items in your table. This pattern is called *materialized aggregation*.
+Because DynamoDB doesn't natively support aggregation operations like `SUM` or `COUNT` across items, computing these values at read time would require scanning large numbers of items—which might be slow and expensive. Instead, you can *pre-compute* aggregations as data changes and store the results as regular items in your table. This pattern is called *materialized aggregation*.
 
 **Topics**
 + [Example scenario and access patterns](#bp-gsi-aggregation-scenario)
@@ -26,7 +26,7 @@ Consider a music library application with the following requirements:
 + Users need to see the most downloaded songs for a given month with single-digit millisecond latency.
 + The application also needs to support queries like "top 10 songs this month" and "all songs downloaded in a given month."
 
-Computing download counts at read time by scanning all download records may be expensive at this scale. Instead, you can maintain a running count that updates as each download occurs, and store it in a way that supports efficient querying.
+Computing download counts at read time by scanning all download records might be expensive at this scale. Instead, you can maintain a running count that updates as each download occurs, and store it in a way that supports efficient querying.
 
 ## Why pre-compute aggregations
 <a name="bp-gsi-aggregation-why"></a>
@@ -107,7 +107,7 @@ def handler(event, context):
 ```
 
 **Note**
-If a Lambda execution fails after writing the updated aggregation value, the stream record may be retried. Because the `ADD` operation increments the count each time it runs, a retry would increment the count more than once for the same download, leaving you with an *approximate* value. For most analytics and leaderboard use cases, this small margin of error is acceptable. If you need exact counts, consider adding idempotency logic—for example, by using a condition expression that checks whether the specific `DownloadID` has already been processed.
+If a Lambda execution fails after writing the updated aggregation value, the stream record might be retried. Because the `ADD` operation increments the count each time it runs, a retry would increment the count more than once for the same download, leaving you with an *approximate* value. For most analytics and leaderboard use cases, this small margin of error is acceptable. If you need exact counts, consider adding idempotency logic—for example, by using a condition expression that checks whether the specific `DownloadID` has already been processed.
 
 ## Sparse GSI design
 <a name="bp-gsi-aggregation-sparse-gsi"></a>
@@ -174,6 +174,6 @@ aws dynamodb query \
 
 Keep the following in mind when implementing this pattern:
 + **Eventual consistency** – The aggregation values are updated asynchronously through DynamoDB Streams and Lambda. There is typically a delay of a few seconds between a download being recorded and the aggregation being updated. This means the GSI reflects near real-time data, not real-time data.
-+ **Lambda concurrency** – If your table has a high write volume, multiple Lambda invocations may attempt to update the same aggregation item concurrently. The atomic `ADD` operation handles this safely, but you should monitor Lambda concurrency and throttling metrics to ensure your function can keep up with the stream.
++ **Lambda concurrency** – If your table has a high write volume, multiple Lambda invocations might attempt to update the same aggregation item concurrently. The atomic `ADD` operation handles this safely, but you should monitor Lambda concurrency and throttling metrics to make sure your function can keep up with the stream.
 + **GSI write capacity** – Because the sparse GSI only contains aggregation items, it requires significantly less write capacity than the base table. However, you should still provision enough capacity (or use on-demand mode) to handle the rate of aggregation updates.
 + **Approximate counts** – As noted earlier, Lambda retries can cause counts to be slightly over-counted. For use cases that require exact counts, implement idempotency checks in the Lambda function.

@@ -77,7 +77,7 @@ The following table lists the languages supported by AI features in Connect Cust
 | Latvian (Latvia) | lv\_LV | ✓\* |  |  | ✓\* | ✓\* | ✓\* |  |  |  |  | ✓\* |
 | Lithuanian (Lithuania) | lt\_LT | ✓\* |  |  | ✓\* |  | ✓\* |  |  |  |  | ✓\* |
 | Macedonian (North Macedonia) | mk\_MK |  |  |  | ✓\* |  | ✓\* |  |  |  |  | ✓\* |
-| Malay (Malaysia) | ms\_MY | ✓\* | ✓\* |  | ✓\* | ✓\* | ✓\* |  |  |  |  | ✓\* |
+| Malay (Malaysia) | ms\_MY | ✓\* | ✓\* | ✓ | ✓\* | ✓\* | ✓\* |  |  |  |  | ✓\* |
 | Malayalam (India) | ml\_IN |  |  |  | ✓\* |  | ✓\* |  |  |  |  | ✓\* |
 | Marathi (India) | mr\_IN | ✓\* | ✓\* |  | ✓\* |  | ✓\* |  |  |  |  | ✓\* |
 | Norwegian (Norway) | no\_NO | ✓\* | ✓\* |  | ✓\* | ✓\* | ✓\* |  |  |  |  | ✓\* |

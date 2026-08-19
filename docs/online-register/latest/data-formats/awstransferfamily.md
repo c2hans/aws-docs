@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awst
 
 AWS Transfer Family provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="transfer-DescribeAccess"></a>[DescribeAccess](https://docs.aws.amazon.com/transfer/latest/userguide/API_DescribeAccess.html) | Describe an access assigned to a server | Read |

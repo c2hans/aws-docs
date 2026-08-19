@@ -14,8 +14,6 @@ Use to update an Amazon GuardDuty IPSet instance which is a list of trusted IP a
 ## Change Type Details
 <a name="ct-07jzw8bzd2on7-MMGu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-07jzw8bzd2on7 |

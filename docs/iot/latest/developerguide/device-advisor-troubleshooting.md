@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/device-advisor
 <a name="device-advisor-troubleshooting"></a>
 
 **Help us improve this topic**
- [Let us know what would help make it better](https://docs.aws.amazon.com//forms/aws-doc-feedback?hidden_service_name=IoT%20Docs&topic_url=http://docs.aws.amazon.com/en_us/iot/latest/developerguide/device-advisor-troubleshooting.html) General
+ [Let us know what would help make it better](https://docs.aws.amazon.com/forms/aws-doc-feedback?hidden_service_name=IoT%20Docs&topic_url=http://docs.aws.amazon.com/en_us/iot/latest/developerguide/device-advisor-troubleshooting.html) General
 
 Q: Can I run multiple test suites in parallel?
 A: Yes. Device Advisor now supports running multiple test suites on different devices using a Device-level endpoint. If you use the Account-level endpoint, you can run one suite at a time because one Device Advisor endpoint is available per account. For more information see [ Configure your device](https://docs.aws.amazon.com/iot/latest/developerguide/device-advisor-setting-up.html#da-configure-device).

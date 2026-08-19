@@ -33,7 +33,7 @@ Because secondary indexes consume storage and provisioned throughput, you should
 
 If you expect a lot of write activity on a table compared to reads, follow these best practices:
 + Consider projecting fewer attributes to minimize the size of items written to the index. However, this only applies if the size of projected attributes would otherwise be larger than a single write capacity unit (1 KB). For example, if the size of an index entry is only 200 bytes, DynamoDB rounds this up to 1 KB. In other words, as long as the index items are small, you can project more attributes at no extra cost.
-+ Avoid projecting attributes that you know will rarely be needed in queries. Every time you update an attribute that is projected in an index, you incur the extra cost of updating the index as well. You can still retrieve non-projected attributes in a `Query` at a higher provisioned throughput cost, but the query cost may be significantly lower than the cost of updating the index frequently.
++ Avoid projecting attributes that you know will rarely be needed in queries. Every time you update an attribute that is projected in an index, you incur the extra cost of updating the index as well. You can still retrieve non-projected attributes in a `Query` at a higher provisioned throughput cost, but the query cost might be significantly lower than the cost of updating the index frequently.
 + Specify `ALL` only if you want your queries to return the entire table item sorted by a different sort key. Projecting all attributes eliminates the need for table fetches, but in most cases, it doubles your costs for storage and write activity.
 
 Balance the need to keep your indexes as small as possible against the need to keep fetches to a minimum, as explained in the next section.
@@ -59,6 +59,6 @@ When you create a local secondary index, think about how much data will be writt
 If you can't avoid creating the local secondary index, you must anticipate the item collection size limit and take action before you exceed it. As a best practice, you should utilize the [`ReturnItemCollectionMetrics`](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/dynamodbv2/model/ReturnItemCollectionMetrics.html) parameter when writing items to monitor and alert on item collection sizes that approach the 10GB size limit. Exceeding the maximum item collection size will result in failed write attempts. You can mitigate the item collection size issues by monitoring and alerting on item collection sizes before they impact your application.
 
 **Note**
-Once created, you cannot delete a local secondary index.
+After a local secondary index is created, you cannot delete it.
 
 For strategies on working within the limit and taking corrective action, see [Item collection size limit](LSI.md#LSI.ItemCollections.SizeLimit).

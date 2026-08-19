@@ -28,7 +28,7 @@ A Role ARN from IAM
 An end-entity certificate from your certificate authority
 The certificate associated private key is required in most cases, except when inferred. For example when using OS certificate stores.
 A trust anchor configured in IAM Roles Anywhere
-For more information, see [Getting started](getting-started.md). For detailed examples of using the credential helper with the Java SDK, see [Using IAM Roles Anywhere credentials](https://docs.aws.amazon.com//sdk-for-java/latest/developer-guide/credentials-process.html#credentials-iam-roles-anywhere).
+For more information, see [Getting started](getting-started.md). For detailed examples of using the credential helper with the Java SDK, see [Using IAM Roles Anywhere credentials](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/credentials-process.html#credentials-iam-roles-anywhere).
 
 ## Credential Helper on GitHub
 <a name="credential-helper-github"></a>
@@ -388,19 +388,19 @@ The following example shows a the `config` file that sets the helper tool as the
     credential_process = ./aws_signing_helper credential-process --certificate {{/path/to/certificate}} --private-key {{/path/to/private-key}} --trust-anchor-arn arn:aws:rolesanywhere:{{region}}:{{account}}:trust-anchor/{{TA_ID}} --profile-arn arn:aws:rolesanywhere:{{region}}:{{account}}:profile/{{PROFILE_ID}} --role-arn arn:aws:iam::{{account}}:role/{{role-name-with-path}}
     region = {{region}}
 ```
- For using this profile with any AWS SDK not mentioned below, see 'Set a named profile' from [Using shared config and credentials files to globally configure AWS SDKs and tools](https://docs.aws.amazon.com//sdkref/latest/guide/file-format.html)
+ For using this profile with any AWS SDK not mentioned below, see 'Set a named profile' from [Using shared config and credentials files to globally configure AWS SDKs and tools](https://docs.aws.amazon.com/sdkref/latest/guide/file-format.html)
 
 **Example Python SDK**
  To specify your Roles Anywhere enabled profile for use with Python, see [Boto3: Shared credentials file](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/credentials.html#shared-credentials-file).
 
 **Example Java SDK**
- To specify your Roles Anywhere enabled profile for use with Java, see [Java 2.x: Use profiles](https://docs.aws.amazon.com//sdk-for-java/latest/developer-guide/credentials-profiles.html)
+ To specify your Roles Anywhere enabled profile for use with Java, see [Java 2.x: Use profiles](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/credentials-profiles.html)
 
 **Example C\# SDK**
- To specify your Roles Anywhere enabled profile for use with C\#, see [Examples for classes SharedCredentialsFile and AWSCredentialsFactory](https://docs.aws.amazon.com//sdk-for-net/v3/developer-guide/creds-locate.html#creds-locate-cred-shared-file)
+ To specify your Roles Anywhere enabled profile for use with C\#, see [Examples for classes SharedCredentialsFile and AWSCredentialsFactory](https://docs.aws.amazon.com/sdk-for-net/v3/developer-guide/creds-locate.html#creds-locate-cred-shared-file)
 
 **Example Go SDK**
- To specify your IAM Roles Anywhere enabled profile for use with Go, see the Specifying Profiles section in [Specifying Credentials](https://docs.aws.amazon.com//sdk-for-go/v2/developer-guide/configure-gosdk.html#specifying-credentials)
+ To specify your IAM Roles Anywhere enabled profile for use with Go, see the Specifying Profiles section in [Specifying Credentials](https://docs.aws.amazon.com/sdk-for-go/v2/developer-guide/configure-gosdk.html#specifying-credentials)
 
 ## serve command
 <a name="credential-helper-serve"></a>
@@ -593,7 +593,7 @@ $ aws s3 ls
 ```
 
 **Example Use with JavaScript SDK**
-To specify your Roles Anywhere enabled profile for use with JavaScript, see [Loading Credentials in Node.js from the Shared Credentials File](https://docs.aws.amazon.com//sdk-for-javascript/v2/developer-guide/loading-node-credentials-shared.html)
+To specify your Roles Anywhere enabled profile for use with JavaScript, see [Loading Credentials in Node.js from the Shared Credentials File](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/loading-node-credentials-shared.html)
 
 ## Credential Helper Changelog
 <a name="credential-helper-changelog"></a>

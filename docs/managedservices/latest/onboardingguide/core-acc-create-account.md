@@ -7,7 +7,7 @@ End of support notice: On June 30, 2027, AWS will end support for AMS Advanced. 
 # Create an AWS multi-account landing zone core account in AMS
 <a name="core-acc-create-account"></a>
 
-AMS multi-account landing zone requires the provisioning of a new Amazon Web Services (AWS) account to act as the management account in the AMS multi-account landing zone environment. To create an AWS account, follow these step-by-step instructions: [How do I create and activate a new Amazon Web Services account?](https://aws.amazon.com//premiumsupport/knowledge-center/create-and-activate-aws-account/)
+AMS multi-account landing zone requires the provisioning of a new Amazon Web Services (AWS) account to act as the management account in the AMS multi-account landing zone environment. To create an AWS account, follow these step-by-step instructions: [How do I create and activate a new Amazon Web Services account?](https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/)
 
 The simple steps are: Go to [Create Account](https://aws.amazon.com/resources/create-account/), and click **Sign Up Now** and, on the page that opens, click **Create a new AWS account**. Follow the on-screen instructions, which include receiving a phone call and entering a PIN using your phone keypad. You'll also need to enter a credit card. AMS uses this account as the management account, or payer account, for your new multi-account landing zone.
 

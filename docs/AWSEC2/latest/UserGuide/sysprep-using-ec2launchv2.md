@@ -121,7 +121,7 @@ Use the following procedure to create a standardized AMI using Windows Sysprep w
 
 1. Choose **Shutdown with Sysprep** or **Shutdown without Sysprep**.
 
-When you are asked to confirm that you want to run Windows Sysprep and shut down the instance, click **Yes**. EC2Launch v2 runs Windows Sysprep. Next, you are logged off the instance, and the instance shuts down. If you check the **Instances** page in the Amazon EC2 console, the instance state changes from `Running` to `Stopping` to `Stopped`. At this point, it's safe to create an AMI from this instance.
+When you are asked to confirm that you want to run Windows Sysprep and shut down the instance, choose **Yes**. EC2Launch v2 runs Windows Sysprep. Next, you are logged off the instance, and the instance shuts down. If you check the **Instances** page in the Amazon EC2 console, the instance state changes from `Running` to `Stopping` to `Stopped`. At this point, it's safe to create an AMI from this instance.
 
 You can manually invoke the Windows Sysprep tool from the command line using the following command:
 

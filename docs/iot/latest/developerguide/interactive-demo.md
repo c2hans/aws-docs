@@ -16,7 +16,7 @@ Expect to spend approximately 5-10 minutes on this demo. Giving yourself 10 minu
 
 **To run the AWS IoT Core interactive tutorial**
 
-1. Open the [AWS IoT home page](https://console.aws.amazon.com//iot/home#/home) in the AWS IoT console.
+1. Open the [AWS IoT home page](https://console.aws.amazon.com/iot/home#/home) in the AWS IoT console.
 
    On the **AWS IoT home page**, in the **Learning resources** window pane, choose **Start tutorial**.
 ![This is the AWS IoT console home page.](http://docs.aws.amazon.com/iot/latest/developerguide/images/aws-iot-learn-home-demo.png)

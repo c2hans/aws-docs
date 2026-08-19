@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/guide/tm-sw-default
 # Using the IoTSiteWiseDefaultWorkspace
 <a name="tm-sw-default-ws"></a>
 
-When you opt in to the [AWS IoT SiteWiseAWS IoT TwinMaker integration](https://docs.aws.amazon.com//iot-sitewise/latest/userguide/integrate-tm.html), a default workspace named `IoTSiteWiseDefaultWorkspace` is created and automatically synced with AWS IoT SiteWise.
+When you opt in to the [AWS IoT SiteWiseAWS IoT TwinMaker integration](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/integrate-tm.html), a default workspace named `IoTSiteWiseDefaultWorkspace` is created and automatically synced with AWS IoT SiteWise.
 
 You can also use the AWS IoT TwinMaker `CreateWorkspace` API to create a workspace named `IoTSiteWiseDefaultWorkspace`.
 

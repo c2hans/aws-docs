@@ -30,8 +30,6 @@ The following log levels are available:
 **Note**
 Each log level includes all messages from the levels below it. Higher log levels may impact performance and generate larger log files.
 
-****
-
 | **Connection string name** | **Parameter type** | **Default value** | **Connection string example** |
 | --- | --- | --- | --- |
 | LogLevel | Optional | OFF | LogLevel=INFO; |
@@ -45,8 +43,6 @@ Specifies path to the file where the ODBC driver logs are stored. You can use th
 Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Amazon Athena\ODBC\Driver
 ```
 
-****
-
 | **Connection string name** | **Parameter type** | **Default value** | **Connection string example** |
 | --- | --- | --- | --- |
 | LogPath | Optional | none | LogPath=C:\\Users\\{{username}}\\projects\\internal\\trunk\\; |
@@ -55,8 +51,6 @@ Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Amazon Athena\ODBC\Driver
 <a name="odbc-v2-driver-logging-options-use-aws-logger"></a>
 
 Specifies if AWS SDK logging is enabled. Specify 1 to enable, 0 to disable.
-
-****
 
 | **Connection string name** | **Parameter type** | **Default value** | **Connection string example** |
 | --- | --- | --- | --- |

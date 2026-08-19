@@ -29,8 +29,6 @@ Amazon Monitron has no API operations that can be used in the `Actions` element 
 
 The following actions are defined by Amazon Monitron but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 - **   [AssociateProjectAdminUser](https://docs.aws.amazon.com/Monitron/latest/user-guide/user-management-chapter.html)  **
   - **Description:** Grants permission to associate a user with the project as an administrator
   - **Resource types (\*required):** [project\*](#list_monitron-resource-project)
@@ -144,8 +142,6 @@ The following actions are defined by Amazon Monitron but are not directly invoca
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
 
-****
-
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
 |  [project](https://docs.aws.amazon.com/Monitron/latest/user-guide/projects-chapter.html)  | arn:${Partition}:monitron:${Region}:${Account}:project/${ResourceId} | [aws:ResourceTag/${TagKey}](#list_monitron-aws_ResourceTag___TagKey_) |
@@ -154,8 +150,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_monitron-policy-keys"></a>
 
 Amazon Monitron defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

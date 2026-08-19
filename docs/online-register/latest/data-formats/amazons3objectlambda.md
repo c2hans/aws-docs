@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon S3 Object Lambda provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="s3-object-lambda-GetObject"></a>[GetObject](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html) | Retrieve objects from Amazon S3 | Read |

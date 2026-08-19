@@ -423,7 +423,7 @@ AWS DMS maps any unlisted SQL source data type to a Gremlin `String`.
 </tbody>
 </table>
 
-For more information on the Gremlin data types for loading Neptune, see [Gremlin data types](https://docs.aws.amazon.com//neptune/latest/userguide/bulk-load-tutorial-format-gremlin.html#bulk-load-tutorial-format-gremlin-datatypes) in the *Neptune User Guide.*
+For more information on the Gremlin data types for loading Neptune, see [Gremlin data types](https://docs.aws.amazon.com/neptune/latest/userguide/bulk-load-tutorial-format-gremlin.html#bulk-load-tutorial-format-gremlin-datatypes) in the *Neptune User Guide.*
 
 ### SQL source to R2RML (RDF) target data type mappings
 <a name="CHAP_Target.Neptune.DataTypes.R2RML"></a>

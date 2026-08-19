@@ -39,8 +39,6 @@ Athena does not use the [versioning](https://docs.delta.io/latest/releases.html)
 
 The following table shows the Delta Lake reader versions and Delta Lake table reader features that Athena supports.
 
-****
-
 | Query type | Supported reader versions | Supported reader features |
 | --- | --- | --- |
 | DQL (SELECT statements) | <= 3 | [Column mapping](https://docs.delta.io/latest/delta-column-mapping.html), [timestampNtz](https://github.com/delta-io/delta/blob/master/PROTOCOL.md#timestamp-without-timezone-timestampntz), [deletion vectors](https://docs.delta.io/latest/delta-deletion-vectors.html) |

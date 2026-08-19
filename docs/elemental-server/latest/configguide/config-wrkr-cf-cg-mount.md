@@ -16,7 +16,6 @@ The mount folder becomes a mount share. It's mounted to `/data/mnt/{{folder}}`.
 1. On the AWS Elemental Server web interface, go to the **Settings** page and choose **Mount Points**.
 
 1. On the **Mount Points** page, complete the mount point fields as described in the following table and choose **Save**:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-server/latest/configguide/config-wrkr-cf-cg-mount.html)
 
 The newly mounted folder appears on the node after a few minutes.

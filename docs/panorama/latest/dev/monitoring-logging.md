@@ -14,8 +14,6 @@ AWS Panorama reports application and system events to Amazon CloudWatch Logs. Wh
 1. Open the [Log groups page of the CloudWatch Logs console](https://console.aws.amazon.com/cloudwatch/home#logsV2:log-groups).
 
 1. Find AWS Panorama application and appliance logs in the following groups:
-
-****
    + **Device logs** – `/aws/panorama/devices/{{device-id}}`
    + **Application logs** – `/aws/panorama/devices/{{device-id}}/applications/{{instance-id}}`
 

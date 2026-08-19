@@ -56,4 +56,4 @@ If your organization uses AWS:
 
 1. [Setting up and signing into Amazon Quick](setting-up.md) – Configure Quick for your organization.
 
-1. [Getting started with Amazon QuickGetting started](getting-started.md) – Start a conversation, explore features, and see what Quick can do.
+1. [Getting started with Amazon Quick](getting-started.md) – Start a conversation, explore features, and see what Quick can do.

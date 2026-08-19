@@ -383,8 +383,8 @@ The following services and resource types support enforcement with tag policies:
   <tr><td> <code>iam:saml-provider</code> </td><td> <ul><li>  <code>AWS::IAM::SAMLProvider</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
   <tr><td> <code>iam:oidc-provider</code> </td><td> <ul><li>  <code>AWS::IAM::OIDCProvider</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
   <tr><td> <code>iam:policy</code> </td><td> <ul><li>  <code>AWS::IAM::ManagedPolicy</code>  </li><li>  <code>AWS::IAM::Policy</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
-  <tr><td> <code>iam:role</code> </td><td> <ul><li>  <code>AWS::IAM::Role</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
-  <tr><td> <code>iam:user</code> </td><td> <ul><li>  <code>AWS::IAM::User</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>iam:role</code> </td><td> <ul><li>  <code>AWS::IAM::Role</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>Yes</code>* </td><td> <code>Yes</code> </td></tr>
+  <tr><td> <code>iam:user</code> </td><td> <ul><li>  <code>AWS::IAM::User</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>Yes</code>* </td><td> <code>Yes</code> </td></tr>
   <tr><td> <code>iam:instance-profile</code> </td><td> <ul><li>  <code>AWS::IAM::InstanceProfile</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
   <tr><td> <code>iam:ALL_SUPPORTED</code> </td><td> <ul><li>  <code>N/A</code>  </li></ul> </td><td> <code>No</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td><td> <code>Yes</code> </td></tr>
   <tr><td rowspan="4"> <code>AWS Identity and Access Management Roles Anywhere [nile]</code> </td><td> <code>nile:trust-anchor</code> </td><td> <ul><li>  <code>AWS::RolesAnywhere::TrustAnchor</code>  </li></ul> </td><td> <code>Yes</code> </td><td> <code>No</code> </td><td> <code>No</code> </td><td> <code>No</code> </td></tr>
@@ -1614,5 +1614,6 @@ The following services and resource types support enforcement with tag policies:
 </tbody>
 </table>
 
+\*For iam:role and iam:user, required tag keys in reporting mode currently only applies to resources deployed through CloudFormation, Terraform, and Pulumi. After you enable reporting mode, if you deploy these two resource types through infrastructure as code (IaC) without the required tags, a warning appears. For more information, see [Enforcing required tag keys with infrastructure as code](enforce-required-tag-keys-iac.md). However, these findings do not appear in the organization-wide compliance report.
 + See [Terraform documentation](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/guides/tag-policy-compliance) for resource type support in Terraform AWS Provider.
 + See [Pulumi documentation](https://www.pulumi.com/docs/insights/policy/integrations/aws-organizations-tag-policies/#aws-provider-types) for resource type support in Pulumi Cloud.

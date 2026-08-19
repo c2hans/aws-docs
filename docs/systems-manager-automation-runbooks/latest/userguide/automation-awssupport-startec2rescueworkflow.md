@@ -32,8 +32,6 @@ Here is a list of environment variables you can use in your offline scripts, dep
 
 Windows:
 
-****
-
 | Variable | Description | Example value |
 | --- | --- | --- |
 | $env:EC2RESCUE\_ACCOUNT\_ID | {{ global:ACCOUNT\_ID }} | 123456789012 |
@@ -60,8 +58,6 @@ Windows:
 | $script:EC2RESCUE\_OFFLINE\_WINDOWS\_INSTALL | Offline Windows Installation metadata | Customer Powershell Object |
 
 Linux:
-
-****
 
 | Variable | Description | Example value |
 | --- | --- | --- |

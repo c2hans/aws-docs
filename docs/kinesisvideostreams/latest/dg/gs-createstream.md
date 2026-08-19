@@ -14,7 +14,7 @@ This section contains the following procedures:
 ## Create a video stream using the console
 <a name="gs-createstream-console"></a>
 
-1. Open the console at [https://console.aws.amazon.com//kinesisvideo/home](https://console.aws.amazon.com//kinesisvideo/home).
+1. Open the console at [https://console.aws.amazon.com/kinesisvideo/home](https://console.aws.amazon.com/kinesisvideo/home).
 
 1. On the **Video streams** page, choose **Create video stream**.
 

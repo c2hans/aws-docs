@@ -9,8 +9,6 @@ Amazon Q Business is no longer open to new customers. For capabilities similar t
 
 The following table gives an overview of the Amazon Q Business Microsoft OneDrive new connector and its supported features.
 
-****
-
 - ****Security****
   - **Feature:** Authentication type / **Support:** OAuth 2.0 with Client Credentials Flow
   - **Feature:** [Access Control List (ACL)](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connector-concepts.html#connector-authorization) crawling / **Support:** Yes. For more information, see [ACL crawling](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/onedrive-new-acl-crawling.html).

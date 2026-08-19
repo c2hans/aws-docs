@@ -16,7 +16,7 @@ This section describes how to view pricing-related information and your current 
 ## View pricing information
 <a name="pricing-ipam-view"></a>
 
-IPAM is offered in two tiers: Free and Advanced Tier. For more information about the features available in each tier and the costs associated with the tiers, see the **IPAM** tab on the [Amazon VPC pricing page](https://aws.amazon.com//vpc/pricing/).
+IPAM is offered in two tiers: Free and Advanced Tier. For more information about the features available in each tier and the costs associated with the tiers, see the **IPAM** tab on the [Amazon VPC pricing page](https://aws.amazon.com/vpc/pricing/).
 
 ## View your current costs and usage using AWS Cost Explorer
 <a name="pricing-ipam-CE"></a>

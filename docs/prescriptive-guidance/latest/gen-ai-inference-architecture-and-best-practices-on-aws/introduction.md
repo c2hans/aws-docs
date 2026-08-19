@@ -13,7 +13,7 @@ Organizations that deploy generative AI (gen AI) models such as large language m
 + Optimize infrastructure costs.
 + Ensure high availability across deployments.
 
-This guide provides comprehensive prescriptive guidance on selecting and implementing appropriate AWS inference services, designing resilient architectures, and applying proven best practices. This guidance can help organizations achieve performant, cost-effective, and reliable gen AI deployments
+This guide provides comprehensive prescriptive guidance on selecting and implementing appropriate AWS inference services, designing resilient architectures, and applying proven best practices. This guidance can help organizations achieve performant, cost-effective, and reliable gen AI deployments.
 
 ## Intended audience
 <a name="intended-audience"></a>
@@ -36,3 +36,10 @@ The recommendations in this guide can help you achieve the following:
 + Learn about model and system optimization techniques for efficient inference deployment.
 + Review recommended security controls and learn about responsible AI (RAI) practices for production inference workloads.
 + Leverage the AWS Partner Network to accelerate time-to-market and model distribution.
+
+## Attachments
+<a name="attachments-1e4a4636-9247-4346-9ab7-62170783f8a2"></a>
+
+To access additional content that is associated with this document, download and unzip the following file:
+
+[attachment.zip](samples/attachment.zip)

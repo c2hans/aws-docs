@@ -14,8 +14,6 @@ Change the RDS parameter group. The RDS instance or cluster can be standalone or
 ## Change Type Details
 <a name="ct-0p1oqt4xcp1cv-MARu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-0p1oqt4xcp1cv |

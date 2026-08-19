@@ -10,8 +10,6 @@ The following table lists the current quota in Amazon DevOps Guru. This quota i
 ## Notifications
 <a name="notifications-quota"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Maximum number of Amazon Simple Notification Service topics you can specify at once | 2 |
@@ -19,16 +17,12 @@ The following table lists the current quota in Amazon DevOps Guru. This quota i
 ## CloudFormation stacks
 <a name="cnf-stack-quota"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Maximum number of AWS CloudFormation stacks you can specify | 1000 |
 
 ## DevOps Guru resource monitoring limits
 <a name="resource-monitoring-limits"></a>
-
-****
 
 | Resource description | Limit | Can be increased |
 | --- | --- | --- |

@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 `KmsKeyArn`  <a name="cfn-s3vectors-vectorbucket-encryptionconfiguration-kmskeyarn"></a>
 AWS Key Management Service (KMS) customer managed key ARN to use for the encryption configuration. This parameter is required if and only if `SseType` is set to `aws:kms`.
 You must specify the full ARN of the KMS key. Key IDs or key aliases aren't supported.
-Amazon S3 Vectors only supports symmetric encryption KMS keys. For more information, see [Asymmetric keys in AWS KMS](https://docs.aws.amazon.com//kms/latest/developerguide/symmetric-asymmetric.html) in the *AWS Key Management Service Developer Guide*.
+Amazon S3 Vectors only supports symmetric encryption KMS keys. For more information, see [Asymmetric keys in AWS KMS](https://docs.aws.amazon.com/kms/latest/developerguide/symmetric-asymmetric.html) in the *AWS Key Management Service Developer Guide*.
 *Required*: No
 *Type*: String
 *Pattern*: `^(arn:aws[-a-z0-9]*:kms:[-a-z0-9]*:[0-9]{12}:key/.+)$`

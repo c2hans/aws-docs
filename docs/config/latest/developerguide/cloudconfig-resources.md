@@ -27,8 +27,6 @@ The following related resources can help you as you work with this service.
 
 An AWS software development kit (SDK) makes it easier to build applications that access cost-effective, scalable, and reliable AWS infrastructure services. With AWS SDKs, you can get started in minutes with a single, downloadable package that includes the library, code samples, and reference documentation. The following table lists the available SDKs and third-party libraries you can use to access AWS Config programmatically.
 
-****
-
 | Type of Access | Description |
 | --- | --- |
 | AWS SDKs | AWS provides the following SDKs:+   [AWS SDK for C\+\+ Documentation](https://aws.amazon.com/documentation/sdk-for-cpp/)  <br />+   [AWS Mobile SDK for iOS Documentation](https://aws.amazon.com/documentation/sdk-for-ios/)  <br />+   [AWS SDK for Go Documentation](https://aws.amazon.com/documentation/sdk-for-go/)  <br />+   [AWS SDK for Java Documentation](https://aws.amazon.com/documentation/sdkforjava/)  <br />+   [AWS SDK for JavaScript Documentation](https://aws.amazon.com/documentation/sdk-for-javascript/)  <br />+   [AWS SDK for .NET Documentation](https://aws.amazon.com/documentation/sdkfornet/)  <br />+   [AWS SDK for PHP Documentation](https://aws.amazon.com/documentation/sdk-for-php/)  <br />+   [AWS SDK for Python (Boto) Documentation](http://docs.pythonboto.org/en/latest/)  <br />+   [AWS SDK for Ruby Documentation](https://aws.amazon.com/documentation/sdkforruby/)   |

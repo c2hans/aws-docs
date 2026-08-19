@@ -2,10 +2,12 @@
 source_url: https://docs.aws.amazon.com/accounts/latest/reference/getting-started.html
 ---
 
-# Getting started with an AWS account
+# Sign up for AWS (advanced)
 <a name="getting-started"></a>
 
-If you're new to AWS, you need to sign up for an AWS account. When you do so, AWS will create an account using the details you provide and assign it to you.
+If you're new to AWS, the first step is to sign up for an AWS account. When you follow the information for Sign up for AWS (advanced), AWS creates an account where you have complete control over account configuration and where your content is stored. Use this option if you have regulated workloads such as HIPAA, FedRAMP.
+
+To compare this sign up with Sign up for AWS (new), see [Compare sign-up options](sign-up-for-aws.md).
 
 To sign up for an AWS account, you'll need to provide the following information:
 + **Root user email address** – The email address is used as the sign-in name for the [root user](root-user.md) and is required for account recovery. You must be able to receive email messages that are sent to this address. Before you can perform certain tasks, you must verify that you have access to email sent to this address.
@@ -66,7 +68,7 @@ If this account is for a business, it's a best practice to enter a company phone
 
 1. After you receive the activation message, you can sign-in to the [AWS Management Console](https://console.aws.amazon.com/) to start using AWS services. For general information about how to manage your account settings, see [Configure your AWS account](managing-accounts.md).
 
-For multiple AWS accounts managed through AWS Organizations, assign administrative access to an administrative user in IAM Identity Center. For instructions, see [Set up AWS account access for an IAM Identity Center administrative user](https://docs.aws.amazon.com//singlesignon/latest/userguide/get-started-assign-account-access-admin-user.html) in the *IAM Identity Center User Guide*.
+For multiple AWS accounts managed through AWS Organizations, assign administrative access to an administrative user in IAM Identity Center. For instructions, see [Set up AWS account access for an IAM Identity Center administrative user](https://docs.aws.amazon.com/singlesignon/latest/userguide/get-started-assign-account-access-admin-user.html) in the *IAM Identity Center User Guide*.
 
 ------
 #### [ AWS CLI & SDKs ]
@@ -80,7 +82,7 @@ You can't create a standalone AWS account outside of an organization by using an
 ## Step 2: (Recommended) Install the AWS CLI
 <a name="getting-started-step2"></a>
 
-Install the AWS CLI by following the instructions at [Installing the AWS CLI](https://docs.aws.amazon.com//cli/latest/userguide/getting-started-install.html). You need version 2.32.0 or later.
+Install the AWS CLI by following the instructions at [Installing the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html). You need version 2.32.0 or later.
 
 You can use the AWS CLI to have an agent manage AWS resources on your behalf.
 
@@ -103,4 +105,14 @@ For more information about accessing your AWS account, see [Accessing your AWS a
 ## Step 3: (Recommended) Set up the AWS MCP Server
 <a name="getting-started-step3"></a>
 
-The AWS MCP Server is a managed server that gives agents access to AWS through the Model Context Protocol (MCP). Agents can search AWS documentation and retrieve service information without authentication. To execute AWS API calls, run Python scripts in a sandboxed environment, or follow curated skills, agents authenticate through your existing IAM credentials. For more information, see [What is the AWS Agent Toolkit?](https://docs.aws.amazon.com//agent-toolkit/latest/userguide/what-is-agent-toolkit.html)
+The AWS MCP Server is a managed server that gives agents access to AWS through the Model Context Protocol (MCP). Agents can search AWS documentation and retrieve service information without authentication. To execute AWS API calls, run Python scripts in a sandboxed environment, or follow curated skills, agents authenticate through your existing IAM credentials. For more information, see [What is the AWS Agent Toolkit?](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/what-is-agent-toolkit.html)
+
+After you complete the sign-up process, see the following topics:
++ [Related AWS services](accounts-related-services.md)
++ [Using the AWS account root user](root-user.md)
++ [Accessing your AWS account](accounts-access-account.md)
++ [Plan your AWS account governance structure](plan-acct-structure.md)
++ [Configure your AWS account](managing-accounts.md)
++ [Troubleshoot your AWS account](troubleshooting.md)
++ [Manage accounts in India](managing-accounts-india.md)
++ [Close an AWS account](manage-acct-closing.md)

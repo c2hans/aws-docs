@@ -29,8 +29,6 @@ AWS Marketplace Image Building Service has no API operations that can be used in
 
 The following actions are defined by AWS Marketplace Image Building Service but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 | Actions | Description | Resource types (\*required) | Condition keys | Access level |
 | --- | --- | --- | --- | --- |
 |   [DescribeBuilds](https://docs.aws.amazon.com/marketplace/latest/buyerguide/api-reference.html)  | Describes Image Builds identified by a build Id |  |   | Read |

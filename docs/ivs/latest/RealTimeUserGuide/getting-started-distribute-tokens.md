@@ -121,7 +121,7 @@ The JSON schemas for the JWT’s header and payload are described below. Alterna
 The header specifies:
 + `alg` is the signing algorithm. This is ES384, an ECDSA signature algorithm that uses the SHA-384 hash algorithm.
 + `typ` is the token type, JWT.
-+ `kid` is the ARN of the public key used to sign the token. It must be the same ARN returned from the [ GetPublicKey](https://docs.aws.amazon.com//ivs/latest/RealTimeAPIReference/API_GetPublicKey.html) API request.
++ `kid` is the ARN of the public key used to sign the token. It must be the same ARN returned from the [ GetPublicKey](https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_GetPublicKey.html) API request.
 
 ```
 {
@@ -207,7 +207,7 @@ When creating a participant token, you can optionally specify attributes and/or 
 + You can specify application-provided attributes to encode into the token and attach to a stage. Map keys and values can contain UTF-8 encoded text. The maximum length of this field is 1 KB total. *This field is exposed to all stage participants and should not be used for personally identifying, confidential, or sensitive information.*
 + You can specify capabilities enabled by the token. The default is `PUBLISH` and `SUBSCRIBE`, which allows the participant to send and receive audio and video, but you could issue tokens with a subset of capabilities. For example, you could issue a token with only the `SUBSCRIBE` capability for moderators. In that case, the moderators could see the participants that are sending video but not send their own video.
 
-For details, see [CreateParticipantToken](https://docs.aws.amazon.com//ivs/latest/RealTimeAPIReference/API_CreateParticipantToken.html).
+For details, see [CreateParticipantToken](https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_CreateParticipantToken.html).
 
 You can create participant tokens via the console or CLI for testing and development, but most likely you will want to create them with the AWS SDK in your production environment.
 

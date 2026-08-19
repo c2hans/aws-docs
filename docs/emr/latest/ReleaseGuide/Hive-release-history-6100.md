@@ -8,8 +8,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/Hive-release-his
 ## Amazon EMR 6.10.0 - Hive changes
 <a name="Hive-release-history-changes-6100"></a>
 
-****
-
 | Type | Description |
 | --- | --- |
 | Feature | Enable AWS Lake Formation based access controls for Apache Hive queries (write) [ via IAM Passthrough (HiveCLI/Steps API)](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-steps-runtime-roles.html). |

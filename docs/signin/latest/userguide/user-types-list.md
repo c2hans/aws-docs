@@ -12,6 +12,8 @@ How you sign in depends on what type of AWS user you are. You can manage an AWS 
 + [IAM user](#iam-user-type)
 + [IAM Identity Center user](#sso-user-type)
 + [Federated identity](#federated-identity-type)
++ [Project owner](#project-owner-type)
++ [Project team member](#project-team-member-type)
 + [AWS Builder ID user](#builder-id-type)
 
 ## Root user
@@ -24,12 +26,16 @@ Also referred to as the account owner or account root user. As the root user, yo
 
 For more information about IAM identities including the root user, see [IAM Identities (users, user groups, and roles)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id.html).
 
+This is only supported when you [Sign up for AWS (advanced)](https://docs.aws.amazon.com/accounts/latest/reference/getting-started.html).
+
 ## IAM user
 <a name="iam-user-type"></a>
 
 An IAM user is an entity you create in AWS. This user is an identity within your AWS account that's granted specific custom permissions. Your IAM user credentials consist of a name and password used to sign in to the [AWS Management Console](https://console.aws.amazon.com/). For step by step instructions on how to sign in, see [Sign in to the AWS Management Console as an IAM user](introduction-to-iam-user-sign-in-tutorial.md).
 
 For more information about IAM identities including the IAM user, see [IAM Identities (users, user groups, and roles)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id.html).
+
+This is only supported when you [Sign up for AWS (advanced)](https://docs.aws.amazon.com/accounts/latest/reference/getting-started.html).
 
 ## IAM Identity Center user
 <a name="sso-user-type"></a>
@@ -50,12 +56,36 @@ For step by step instructions on how to sign in, see [Sign in to your AWS access
 
 For more information about IAM Identity Center, see [What is IAM Identity Center?](https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html)
 
+This is only supported when you [Sign up for AWS (advanced)](https://docs.aws.amazon.com/accounts/latest/reference/getting-started.html).
+
 ## Federated identity
 <a name="federated-identity-type"></a>
 
 A federated identity is a user who can sign in using a well-known external identity provider (IdP), such as Login with Amazon, Facebook, Google, or any other [OpenID Connect (OIDC)](https://openid.net/connect/)-compatible IdP. With web identity federation, you can receive an authentication token, and then exchange that token for temporary security credentials in AWS that map to an IAM role with permissions to use the resources in your AWS account. You don't sign in with the AWS Management Console or AWS access portal. Instead, the external identity in use determines how you sign in.
 
 For more information, see [Sign in as a federated identity](federated-identity-overview.md).
+
+This is only supported when you [Sign up for AWS (advanced)](https://docs.aws.amazon.com/accounts/latest/reference/getting-started.html).
+
+## Project owner
+<a name="project-owner-type"></a>
+
+**Warning**
+We're currently releasing our new experience to a limited number of customers. You might not be able to access this experience yet.
+
+A project owner creates a project when they use our new AWS experience. A project owner signs in to AWS using a login they already have. AWS supports using Google, GitHub, Apple, or Amazon as logins to access a project. For more information, see [Create a project in AWS Settings](https://docs.aws.amazon.com/accounts/latest/reference/create-project.html).
+
+This is only supported when you sign in to our new AWS experience.
+
+## Project team member
+<a name="project-team-member-type"></a>
+
+**Warning**
+We're currently releasing our new experience to a limited number of customers. You might not be able to access this experience yet.
+
+A project team member can access a project shared with them. They receive an email from a project owner to access the project and can sign in to project using a login they already have. AWS supports using Google, GitHub, Apple, or Amazon as logins to access a project. For more information, see [Sign in to a project](sign-in-project.md).
+
+This is only supported when you sign in to our new AWS experience.
 
 ## AWS Builder ID user
 <a name="builder-id-type"></a>

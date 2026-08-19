@@ -32,6 +32,11 @@ The timestamp when the router output was created.
 Type: Timestamp
 Required: Yes
 
+ ** fabricConfiguration **   <a name="mediaconnect-Type-RouterOutput-fabricConfiguration"></a>
+The fabric configuration settings for the router output.
+Type: [FabricConfiguration](API_FabricConfiguration.md) object
+Required: Yes
+
  ** id **   <a name="mediaconnect-Type-RouterOutput-id"></a>
 The unique identifier of the router output.
 Type: String

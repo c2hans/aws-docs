@@ -46,8 +46,6 @@ The following table describes Amazon RDS for Oracle releases.
 
 The following table describes the important changes in each release of the *Amazon RDS for Oracle Release Notes* before March 22, 2022.
 
-****
-
 | Change | Description | Date changed |
 | --- | --- | --- |
 | Amazon RDS for Oracle supports the Oracle January 2022 RU and RUR | Amazon RDS for Oracle has released database engine version [21.0.0.0.ru-2022-01.rur-2022-01.r1](https://docs.aws.amazon.com/AmazonRDS/latest/OracleReleaseNotes/oracle-version-21-0.html#oracle-version-RU-RUR.21.0.0.0.ru-2022-01.rur-2022-01.r1) to support the January 2022 RU and RUR. | March 7, 2022 |

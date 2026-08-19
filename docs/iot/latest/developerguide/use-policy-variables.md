@@ -171,7 +171,7 @@ If your X.509 certificate doesn't include a particular certificate attribute but
 }
 ```
 
-You can also use the [Null condition operator](https://docs.aws.amazon.com//IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_Null) to ensure that the certificate policy variables used in a policy are populated during policy evaluation. The following policy document allows `iot:Connect` with certificates only when the Certificate Serial Number and Certificate Subject Common name attributes are present.
+You can also use the [Null condition operator](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_Null) to ensure that the certificate policy variables used in a policy are populated during policy evaluation. The following policy document allows `iot:Connect` with certificates only when the Certificate Serial Number and Certificate Subject Common name attributes are present.
 
 All of the certificate policy variables have String values, so all of the [String condition operators](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String) are supported.
 

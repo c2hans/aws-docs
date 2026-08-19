@@ -10,8 +10,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/color-space-con
 
 Elemental Live can read the color space information of any supported color space. It can convert the color space or pass through the color space as follows:
 
-****
-
 |  Supported color space   | Pass through | Convert  |
 | --- | --- | --- |
 | 601 | Yes | Yes, to any supported color space except Dolby Vision. |

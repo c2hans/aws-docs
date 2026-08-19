@@ -102,7 +102,7 @@ If you disable Security Hub CSPM, your custom control parameters are reset. If y
 
 **To revert to default control parameter values in one account and Region (API)**
 
-1. Invoke the [UpdateSecurityControl](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_UpdateSecurityControl.html) API.
+1. Invoke the [UpdateSecurityControl](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_UpdateSecurityControl.html) API.
 
 1. For `SecurityControlId`, provide the ARN or ID of the control whose parameters you want to revert.
 

@@ -29,7 +29,7 @@ To integrate Secrets Manager with GitLab, complete the following prerequisites:
 
 **Make GitLab your OIDC provider in the IAM console.**
 
-   In this step, you’ll make GitLab your OIDC provider in the IAM console. For more information, see [Create an OpenID Connect (OIDC) identity provider](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_roles_providers_create_oidc.html) and [GitLab documentation](https://docs.gitlab.com/ci/cloud_services/aws/).
+   In this step, you’ll make GitLab your OIDC provider in the IAM console. For more information, see [Create an OpenID Connect (OIDC) identity provider](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_create_oidc.html) and [GitLab documentation](https://docs.gitlab.com/ci/cloud_services/aws/).
 
    When creating the OIDC provider in the IAM console, use the following configurations:
 
@@ -41,7 +41,7 @@ To integrate Secrets Manager with GitLab, complete the following prerequisites:
 
 **Create an IAM role and policy**
 
-   You'll need to create an IAM role and policy. This role is assumed by GitLab with [AWS Security Token Service (STS)](https://docs.aws.amazon.com/STS/latest/APIReference/welcome.html). See [Create a role using custom trust policies](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_roles_create_for-custom.html) for more information.
+   You'll need to create an IAM role and policy. This role is assumed by GitLab with [AWS Security Token Service (STS)](https://docs.aws.amazon.com/STS/latest/APIReference/welcome.html). See [Create a role using custom trust policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-custom.html) for more information.
 
    1. In the IAM console, use the following settings when creating the IAM role:
       + Set `Trusted entity type` to **Web identity**.

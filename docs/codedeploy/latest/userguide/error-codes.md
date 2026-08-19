@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/error-codes.
 
 This topic provides reference information about CodeDeploy errors.
 
-****
-
 | Error Code | Description |
 | --- | --- |
 | `AGENT_ISSUE` | The deployment failed because of a problem with the CodeDeploy agent. Make sure the agent is installed and running on all instances in this deployment group.<br />Learn more:+  [Verify the CodeDeploy agent is running](codedeploy-agent-operations-verify.md) <br />+  [Install the CodeDeploy agent](codedeploy-agent-operations-install.md) <br />+  [Working with the CodeDeploy agent](codedeploy-agent.md)  |

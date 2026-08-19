@@ -14,8 +14,6 @@ The following table summarizes the CloudTrail events of IAM Identity Center, the
 **Note**
 There is an additional group of CloudTrail events, referred to as Sign-in, which AWS emits for signing in to AWS as an IAM Identity Center user. These events have no matching public APIs, and therefore aren't listed in the API references.
 
-****
-
 | CloudTrail events | Public APIs | Description | CloudTrail event sources |
 | --- | --- | --- | --- |
 | [IAM Identity Center](sso-info-in-cloudtrail.md#cloudtrail-events-iam-identity-center-operations) | [IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/APIReference/welcome.html) | The IAM Identity Center APIs enable the management of permission sets, applications, trusted token issuers, account and application assignments, IAM Identity Center instances, and tags. | sso.amazonaws.com |

@@ -12,8 +12,6 @@ Pro Tip: Use generative AI-powered Natural language- Semantic match if you previ
 ## How to use Natural language - semantic match
 <a name="use-natural-language-semantic-match"></a>
 
-****
-
 1. Log in to Connect Customer with a user that has permissions **Rules** and **Rules - Generative AI** permissions.
 
 1. On the navigation menu, choose **Analytics and optimization**, and then **Rules**.

@@ -22,7 +22,7 @@ The request uses the following URI parameters.
  ** [paymentConnectorId](#API_GetPaymentConnector_RequestSyntax) **   <a name="bedrockagentcorecontrol-GetPaymentConnector-request-uri-paymentConnectorId"></a>
 The unique identifier of the payment connector to retrieve.
 Length Constraints: Minimum length of 12. Maximum length of 211.
-Pattern: `([0-9a-z][-]?){1,100}-[0-9a-z]{10}`
+Pattern: `([0-9a-z_][-]?){1,100}-[0-9a-z]{10}`
 Required: Yes
 
  ** [paymentManagerId](#API_GetPaymentConnector_RequestSyntax) **   <a name="bedrockagentcorecontrol-GetPaymentConnector-request-uri-paymentManagerId"></a>
@@ -44,6 +44,7 @@ HTTP/1.1 200
 Content-type: application/json
 
 {
+   "authorizationUrl": "string",
    "createdAt": "string",
    "credentialProviderConfigurations": [
       { ... }
@@ -64,6 +65,12 @@ If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
 
+ ** [authorizationUrl](#API_GetPaymentConnector_ResponseSyntax) **   <a name="bedrockagentcorecontrol-GetPaymentConnector-response-authorizationUrl"></a>
+The URL that the user must open to complete OAuth consent. This field is only present when the payment connector status is `PENDING_AUTHENTICATION`.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 4096.
+Pattern: `https://[^\p{C}]*`
+
  ** [createdAt](#API_GetPaymentConnector_ResponseSyntax) **   <a name="bedrockagentcorecontrol-GetPaymentConnector-response-createdAt"></a>
 The timestamp when the payment connector was created.
 Type: Timestamp
@@ -71,13 +78,13 @@ Type: Timestamp
  ** [credentialProviderConfigurations](#API_GetPaymentConnector_ResponseSyntax) **   <a name="bedrockagentcorecontrol-GetPaymentConnector-response-credentialProviderConfigurations"></a>
 The credential provider configurations for the payment connector.
 Type: Array of [CredentialsProviderConfiguration](API_CredentialsProviderConfiguration.md) objects
-Array Members: Fixed number of 1 item.
+Array Members: Minimum number of 0 items. Maximum number of 1 item.
 
  ** [description](#API_GetPaymentConnector_ResponseSyntax) **   <a name="bedrockagentcorecontrol-GetPaymentConnector-response-description"></a>
 The description of the payment connector.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 4096.
-Pattern: `[a-zA-Z0-9\s]+`
+Pattern: `[^\p{C}]*`
 
  ** [lastUpdatedAt](#API_GetPaymentConnector_ResponseSyntax) **   <a name="bedrockagentcorecontrol-GetPaymentConnector-response-lastUpdatedAt"></a>
 The timestamp when the payment connector was last updated.
@@ -93,12 +100,12 @@ Pattern: `[a-zA-Z][a-zA-Z0-9_]{0,47}`
 The unique identifier of the payment connector.
 Type: String
 Length Constraints: Minimum length of 12. Maximum length of 211.
-Pattern: `([0-9a-z][-]?){1,100}-[0-9a-z]{10}`
+Pattern: `([0-9a-z_][-]?){1,100}-[0-9a-z]{10}`
 
  ** [status](#API_GetPaymentConnector_ResponseSyntax) **   <a name="bedrockagentcorecontrol-GetPaymentConnector-response-status"></a>
 The current status of the payment connector. Possible values include `CREATING`, `READY`, `UPDATING`, `DELETING`, `CREATE_FAILED`, `UPDATE_FAILED`, and `DELETE_FAILED`.
 Type: String
-Valid Values: `CREATING | UPDATING | DELETING | READY | CREATE_FAILED | UPDATE_FAILED | DELETE_FAILED`
+Valid Values: `CREATING | UPDATING | DELETING | READY | CREATE_FAILED | UPDATE_FAILED | DELETE_FAILED | AWS_MARKETPLACE_SUBSCRIPTION_REQUIRED | PENDING_AUTHENTICATION | PROVISIONING | AUTHENTICATION_EXPIRED | AUTHENTICATION_FAILED`
 
  ** [type](#API_GetPaymentConnector_ResponseSyntax) **   <a name="bedrockagentcorecontrol-GetPaymentConnector-response-type"></a>
 The type of the payment connector, which determines the payment provider integration.

@@ -320,7 +320,7 @@ The start an earth observation job returns an ARN along with other metadata.
 
 To get a list of all ongoing and current earth observation jobs use the `list_earth_observation_jobs` API. To monitor the status of a single earth observation job use the `get_earth_observation_job` API. To make this request, use the ARN created after submitting your EOJ request. To learn more, see [GetEarthObservationJob](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospatial_GetEarthObservationJob.html) in the *Amazon SageMaker AI API Reference*.
 
-To find the ARNs associated with your EOJs use the `list_earth_observation_jobs` API operation. To learn more, see [ListEarthObservationJobs](https://docs.aws.amazon.com//sagemaker/latest/APIReference/API_geospatial_ListEarthObservationJobs.html) in the *Amazon SageMaker AI API Reference*.
+To find the ARNs associated with your EOJs use the `list_earth_observation_jobs` API operation. To learn more, see [ListEarthObservationJobs](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospatial_ListEarthObservationJobs.html) in the *Amazon SageMaker AI API Reference*.
 
 ```
 # List all jobs in the account

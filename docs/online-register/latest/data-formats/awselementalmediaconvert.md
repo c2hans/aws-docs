@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awse
 
 AWS Elemental MediaConvert provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="mediaconvert-DescribeEndpoints"></a>[DescribeEndpoints](https://docs.aws.amazon.com/mediaconvert/latest/apireference/endpoints.html) | Subscribe to the AWS Elemental MediaConvert service, by sending a request for an account-specific endpoint. All transcoding requests must be sent to the endpoint that the service returns | List |

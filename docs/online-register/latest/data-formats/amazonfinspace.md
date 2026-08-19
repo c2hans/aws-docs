@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon FinSpace provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="finspace-GetEnvironment"></a>[GetEnvironment](https://docs.aws.amazon.com/finspace/latest/management-api/API_GetEnvironment.html) | Describe a FinSpace environment | Read |

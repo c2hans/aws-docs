@@ -14,8 +14,6 @@ Copy an Amazon Machine Image (AMI) in your AMS account.
 ## Change Type Details
 <a name="ct-046aizcwg5idf-DAAc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-046aizcwg5idf |

@@ -26,16 +26,12 @@ Review these breaking changes and update your application in your development en
 ### The Provider class and name have changed
 <a name="w2aac25c19c21c13b5"></a>
 
-****
-
 | What has changed | What it was in Client SDK 3 | What it is in Client SDK 5 | Example |
 | --- | --- | --- | --- |
 | Provider class and name | The JCE provider class in Client SDK 3 is called `CaviumProvider` and has the Provider name `Cavium`. | In Client SDK 5, the Provider class is called `CloudHsmProvider` and has the Provider name `CloudHSM`. | An example of how to initialize the `CloudHsmProvider` object is available in the [AWS CloudHSM GitHub sample repository](https://github.com/aws-samples/aws-cloudhsm-jce-examples/blob/sdk5/src/main/java/com/amazonaws/cloudhsm/examples/AESGCMEncryptDecryptRunner.java#L43-L50). |
 
 ### Explicit login has changed, implicit has not
 <a name="w2aac25c19c21c13b7"></a>
-
-****
 
 <table>
 <thead>
@@ -69,8 +65,6 @@ Review these breaking changes and update your application in your development en
 
 ### Key generation has changed
 <a name="w2aac25c19c21c13b9"></a>
-
-****
 
 | What has changed | What it was in Client SDK 3 | What it is in Client SDK 5 | Example |
 | --- | --- | --- | --- |

@@ -5,16 +5,16 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/thr
 # 3- Account limits exceeded
 <a name="throttling-account-limit-exceeded-mitigation"></a>
 
-On-demand tables do not have provisioned capacity levels to manage, but DynamoDB enforces account-level throughput limits to prevent runaway execution and ensure fair resource usage across all customers. These per-table account limits serve as adjustable safeguards, set for each account and Region combination. When your read or write consumption rate exceeds these limits, DynamoDB returns an `AccountLimitExceeded` throttling reason type in the throttling exception. The default per-table account limits automatically apply when tables do not have custom maximum throughput settings configured. You can optionally configure maximum throughput settings for finer cost control and predictability, or request quota increases through the [Quotas in Amazon DynamoDB](ServiceQuotas.md) console if your application requirements exceed the default limits.
+On-demand tables do not have provisioned capacity levels to manage, but DynamoDB enforces account-level throughput limits to prevent runaway execution and achieve fair resource usage across all customers. These per-table account limits serve as adjustable safeguards, set for each account and Region combination. When your read or write consumption rate exceeds these limits, DynamoDB returns an `AccountLimitExceeded` throttling reason type in the throttling exception. The default per-table account limits automatically apply when tables do not have custom maximum throughput settings configured. You can optionally configure maximum throughput settings for finer cost control and predictability, or request quota increases through the [Quotas in Amazon DynamoDB](ServiceQuotas.md) console if your application requirements exceed the default limits.
 
 ## Account limit exceeded mitigation measures
 <a name="throttling-account-limit-exceeded"></a>
 
-This section provides resolution guidance for account limit throttling scenarios. Before using this guide, ensure you have identified the specific throttling reasons from your application's exception handling, and determined the Amazon Resource Name (ARN) of the affected resource. For information on retrieving throttling reasons and identifying throttled resources, see [DynamoDB throttling diagnosis framework](throttling-diagnosing-workflow.md#throttling-diagnosing).
+This section provides resolution guidance for account limit throttling scenarios. Before using this guide, make sure you have identified the specific throttling reasons from your application's exception handling, and determined the Amazon Resource Name (ARN) of the affected resource. For information on retrieving throttling reasons and identifying throttled resources, see [DynamoDB throttling diagnosis framework](throttling-diagnosing-workflow.md#throttling-diagnosing).
 
 Before diving into specific throttling scenarios, first determine if action is actually needed:
 + **Evaluate performance impact:** Check if your application is still meeting its performance requirements despite the throttling. Many applications operate successfully at or near account limits, particularly during bulk operations or data migrations.
-+ **Review throttling patterns:** If throttling is intermittent and your application handles retries effectively, the current limits may be sufficient for your workload.
++ **Review throttling patterns:** If throttling is intermittent and your application handles retries effectively, the current limits might be sufficient for your workload.
 
 If your application performs acceptably even when occasionally hitting account limits, you might choose to simply monitor the situation rather than implementing immediate changes.
 
@@ -75,7 +75,7 @@ When troubleshooting account limit exceeded throttling events, several CloudWatc
 
 **Essential CloudWatch metrics**
 Monitor these key metrics to diagnose account limit throttling:
-+ **Account limit throttling events:** [`ReadAccountLimitThrottleEvents`](https://docs.aws.amazon.com//amazondynamodb/latest/developerguide/metrics-dimensions.html#ReadAccountLimitThrottleEvents) and [`WriteAccountLimitThrottleEvents`](https://docs.aws.amazon.com//amazondynamodb/latest/developerguide/metrics-dimensions.html#WriteAccountLimitThrottleEvents) track when requests are throttled due to account-level limits. [`ReadThrottleEvents`](https://docs.aws.amazon.com//amazondynamodb/latest/developerguide/metrics-dimensions.html#ReadThrottleEvents) and [`WriteThrottleEvents`](https://docs.aws.amazon.com//amazondynamodb/latest/developerguide/metrics-dimensions.html#WriteThrottleEvents) track when any read or write requests exceed the provisioned capacity.
++ **Account limit throttling events:** [`ReadAccountLimitThrottleEvents`](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/metrics-dimensions.html#ReadAccountLimitThrottleEvents) and [`WriteAccountLimitThrottleEvents`](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/metrics-dimensions.html#WriteAccountLimitThrottleEvents) track when requests are throttled due to account-level limits. [`ReadThrottleEvents`](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/metrics-dimensions.html#ReadThrottleEvents) and [`WriteThrottleEvents`](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/metrics-dimensions.html#WriteThrottleEvents) track when any read or write requests exceed the provisioned capacity.
 + **Capacity consumption by resource:** [`ConsumedReadCapacityUnits`](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/metrics-dimensions.html#ConsumedReadCapacityUnits) and [`ConsumedWriteCapacityUnits`](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/metrics-dimensions.html#ConsumedWriteCapacityUnits) for each table and GSI show individual resource usage.
 + **Account-wide consumption:** Use CloudWatch metric math expressions to sum consumed capacity across all tables and GSIs to monitor total account usage.
 
@@ -85,7 +85,7 @@ Monitor these key metrics to diagnose account limit throttling:
 ### Requesting per-table quota increases
 <a name="account-limit-request-per-table-quota"></a>
 
-If your applications need to operate beyond the current per-table throughput limits, you should submit a quota increase request using the procedure below. Each DynamoDB table in your AWS account (together with all its associated GSIs) is subject to these throughput quotas within a specific Region. These quotas represent the maximum read or write capacity that any individual table and its GSIs can collectively consume, and they apply independently to each table rather than as an aggregate across all tables in your account.
+If your applications need to operate beyond the current per-table throughput limits, you should submit a quota increase request using the procedure below. Each DynamoDB table in your AWS account (together with all its associated GSIs) is subject to these throughput quotas within a specific Region. These quotas represent the maximum read or write capacity that any individual table and its GSIs can collectively consume. They apply independently to each table rather than as an aggregate across all tables in your account.
 
 Optionally, you can also set lower limits on a per-table or per-GSI basis by configuring their maximum on-demand throughput settings.
 
@@ -112,7 +112,7 @@ Quota increases typically take 24-48 hours to process. Plan your requests accord
 Optimize your Global Secondary Index (GSI) projections and design to reduce capacity consumption and improve performance.
 
 **Selective projection strategies**
-If your queries only need to access a few attributes, projecting only those attributes reduces the amount of data written to the GSI when base table items change. For details on projection types, see [Projections for Global Secondary Indexes](https://docs.aws.amazon.com//amazondynamodb/latest/developerguide/GSI.html#GSI.Projections).
+If your queries only need to access a few attributes, projecting only those attributes reduces the amount of data written to the GSI when base table items change. For details on projection types, see [Projections for Global Secondary Indexes](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GSI.html#GSI.Projections).
 
 1. Analyze query patterns: Review your application's query patterns to identify which attributes are actually accessed through the GSI.
 
@@ -120,7 +120,7 @@ If your queries only need to access a few attributes, projecting only those attr
 
 1. Consider `KEYS_ONLY`: If your queries only need the key attributes, use `KEYS_ONLY` projection to minimize write volume.
 
-1. Balance read vs. write trade-offs: Projecting fewer attributes reduces write capacity consumption but may require additional base table reads.
+1. Balance read vs. write trade-offs: Projecting fewer attributes reduces write capacity consumption but might require additional base table reads.
 
 **Sparse GSI implementation**
 Sparse GSIs contain only items that have the indexed attribute, rather than all items from your base table. This reduces partition density and improves performance when you frequently query specific subsets of data.
@@ -131,4 +131,4 @@ Sparse GSIs contain only items that have the indexed attribute, rather than all 
 
 1. Use composite keys in sparse GSIs (e.g., status\#timestamp) to further distribute traffic within the subset of indexed items.
 
-For more information about implementing these strategies, see [Best Practices for Using Secondary Indexes in DynamoDB](https://docs.aws.amazon.com//amazondynamodb/latest/developerguide/bp-indexes.html).
+For more information about implementing these strategies, see [Best Practices for Using Secondary Indexes in DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-indexes.html).

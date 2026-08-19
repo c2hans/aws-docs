@@ -29,7 +29,7 @@ Specifies the account property namespaces being read or modified in the request.
 Works with [ARN operators](reference_policies_elements_condition_operators.md#Conditions_ARN).
 Specifies the ARN of the resource to which this role will be associated at the destination service. The resource usually belongs to the service to which the principal is passing the role. Sometimes, the resource might belong to a third service. For example, you might pass a role to Amazon EC2 Auto Scaling that they use on an Amazon EC2 instance. In this case, the condition would match the ARN of the Amazon EC2 instance.
 This condition key applies to only the [PassRole](id_roles_use_passrole.md) action in a policy. It can't be used to limit any other action.
-When using the `iam:AssociatedResourceArn` condition in a policy to restrict the [PassRole](id_roles_use_passrole.md) action, special considerations apply if the policy is intended to define access for the [AddRoleToInstanceProfile](https://docs.aws.amazon.com/IAM/latest/APIReference/API_AddRoleToInstanceProfile.html) action. In this case, you cannot specify a Region or instance ID in the EC2 instance ARN. The ARN value must be `arn:aws:ec2:*:CallerAccountId:instance/*`. Using any other ARN value may lead to unexpected evaluation results.
+When using the `iam:AssociatedResourceArn` condition in a policy to restrict the [PassRole](id_roles_use_passrole.md) action, special considerations apply if the policy is intended to define access for the [AddRoleToInstanceProfile](https://docs.aws.amazon.com/IAM/latest/APIReference/API_AddRoleToInstanceProfile.html) action. In this case, you cannot specify a Region or instance ID in the EC2 instance ARN. The ARN value must be `arn:aws:ec2:*:CallerAccountId:instance/*`. Using any other ARN value might lead to unexpected evaluation results.
 Use this condition key in an identity-based policy to allow an entity to pass a role, but only if that role is associated with the specified resource. For example, you can allow an IAM user or role to pass any role to the Amazon EC2 service to be used with instances in the AWS account. The IAM user or role would not be allowed to pass roles to other services.
 
 ```
@@ -192,7 +192,7 @@ Works with [string operators](reference_policies_elements_condition_operators.md
 Specifies the service principal of the service to which a role can be passed. This condition key applies to only the [PassRole](id_roles_use_passrole.md) action in a policy. It can't be used to limit any other action.
 When you use this condition key in a policy, specify the service using a service principal. A service principal is the name of a service that can be specified in the `Principal` element of a policy. This is the usual format: `SERVICE_NAME_URL.amazonaws.com`.
 You can use `iam:PassedToService` to restrict your users so that they can pass roles only to specific services. For example, a user might create a [service role](id_roles.md#iam-term-service-role) that trusts CloudWatch to write log data to an Amazon S3 bucket on their behalf. Then the user must attach a permissions policy and a trust policy to the new service role. In this case, the trust policy must specify `cloudwatch.amazonaws.com` in the `Principal` element. To view a policy that allows the user to pass the role to CloudWatch, see [IAM: Pass an IAM role to a specific AWS service](reference_policies_examples_iam-passrole-service.md).
-By using this condition key, you can ensure that users create service roles only for the services that you specify. For example, if a user with the preceding policy attempts to create a service role for Amazon EC2, the operation will fail. The failure occurs because the user does not have permission to pass the role to Amazon EC2.
+By using this condition key, you can make sure that users create service roles only for the services that you specify. For example, if a user with the preceding policy attempts to create a service role for Amazon EC2, the operation will fail. The failure occurs because the user does not have permission to pass the role to Amazon EC2.
 Sometimes you pass a role to a service that then passes the role to a different service. `iam:PassedToService` includes only the final service that assumes the role, not the intermediate service that passes the role.
 Some services do not support this condition key.
 
@@ -442,7 +442,7 @@ In this example, you allow users to manage only delegation requests that they ow
 ## Available keys for AWS OIDC federation
 <a name="condition-keys-wif"></a>
 
-You can use OIDC federation to give temporary security credentials to users who have been authenticated through an OpenID Connect compatible identity provider (IdP) to an IAM OpenID Connect (OIDC) identity provider in your AWS account. Examples of such providers include GitHub, Amazon Cognito, Login with Amazon, and Google. Identity tokens and access tokens from your own IdP may be used, as well as [service account tokens](https://docs.aws.amazon.com/eks/latest/userguide/service-accounts.html#service-account-tokens) granted to Amazon Elastic Kubernetes Service workloads.
+You can use OIDC federation to give temporary security credentials to users who have been authenticated through an OpenID Connect compatible identity provider (IdP) to an IAM OpenID Connect (OIDC) identity provider in your AWS account. Examples of such providers include GitHub, Amazon Cognito, Login with Amazon, and Google. Identity tokens and access tokens from your own IdP might be used, as well as [service account tokens](https://docs.aws.amazon.com/eks/latest/userguide/service-accounts.html#service-account-tokens) granted to Amazon Elastic Kubernetes Service workloads.
 
 You can use AWS OIDC condition context keys to write policies that limit the access of federated principals to resources that are associated with a specific provider, app, or user. These keys are typically used in the trust policy for a role. Define condition keys using the name of the OIDC provider (`token.actions.githubusercontent.com`) followed by a claim (`:aud`): `token.actions.githubusercontent.com:aud`.
 
@@ -534,7 +534,7 @@ The following example policy works for hybrid apps that do set the `azp` field. 
 **email**
 Works with [string operators](reference_policies_elements_condition_operators.md#Conditions_String).
 **Example**: `accounts.google.com:email`
-This condition key validates the user's email address. The value of this claim may not be unique to this account and could change over time, therefore you should not use this value as the primary identifier to verify your user record.
+This condition key validates the user's email address. The value of this claim might not be unique to this account and could change over time, therefore you should not use this value as the primary identifier to verify your user record.
 
 **oaud**
 Works with [string operators](reference_policies_elements_condition_operators.md#Conditions_String).
@@ -708,7 +708,7 @@ This key verifies the ID of the personal account that initiated the workflow run
 **job\_workflow\_ref**
 Works with [string operators](reference_policies_elements_condition_operators.md#Conditions_String).
 **Example** – `token.actions.githubusercontent.com:job_workflow_ref`
-This key contains the reference path to the reusable workflow for jobs using a reusable workflow. Use this to restrict access to specific workflows and to ensure only approved workflows can assume roles.
+This key contains the reference path to the reusable workflow for jobs using a reusable workflow. Use this to restrict access to specific workflows and to make sure only approved workflows can assume roles.
 
 **repository**
 Works with [string operators](reference_policies_elements_condition_operators.md#Conditions_String).
@@ -744,7 +744,7 @@ If the environment claim is included in your trust policy, an environment must b
 **enterprise\_id**
 Works with [string operators](reference_policies_elements_condition_operators.md#Conditions_String).
 **Example** – `token.actions.githubusercontent.com:enterprise_id`
-This key verifies the ID of the enterprise that contains the repository from where the workflow is running. Use this to ensure access is limited to repositories within your GitHub Enterprise organization.
+This key verifies the ID of the enterprise that contains the repository from where the workflow is running. Use this to make sure access is limited to repositories within your GitHub Enterprise organization.
 
 The following example trust policy uses custom claims in GitHub OIDC token to limit access to a role.
 
@@ -926,7 +926,7 @@ This key identifies the username of the user executing the CI/CD job. Usernames 
 **user\_email**
 Works with [string operators](reference_policies_elements_condition_operators.md#Conditions_String).
 **Example** – `gitlab.com:user_email`
-This key identifies the email address of the user executing the CI/CD job. The value of this claim may change over time; for a stable identifier, use `user_id` instead.
+This key identifies the email address of the user executing the CI/CD job. The value of this claim might change over time; for a stable identifier, use `user_id` instead.
 
 **user\_access\_level**
 Works with [string operators](reference_policies_elements_condition_operators.md#Conditions_String).
@@ -1251,7 +1251,7 @@ Some AWS services require that you have permission to get an AWS STS service bea
 
 **sts:IdentityTokenAudience**
 Works with [string operators](reference_policies_elements_condition_operators.md#Conditions_String).
-Use this key to specify the audience for which an IAM principal can request JSON Web Tokens (JWTs) using the [GetWebIdentityToken](https://docs.aws.amazon.com/STS/latest/APIReference/API_GetWebIdentityToken.html) API. When this condition key is present in an IAM policy, IAM principals can only request tokens for the audiences specified in the policy. External services validate the audience ("aud") claim in the JSON Web Token to ensure the token was intended for them.
+Use this key to specify the audience for which an IAM principal can request JSON Web Tokens (JWTs) using the [GetWebIdentityToken](https://docs.aws.amazon.com/STS/latest/APIReference/API_GetWebIdentityToken.html) API. When this condition key is present in an IAM policy, IAM principals can only request tokens for the audiences specified in the policy. External services validate the audience ("aud") claim in the JSON Web Token to make sure the token was intended for them.
 **Availability** – This key is present in requests to the GetWebIdentityToken API which is used to obtain JSON Web Tokens (JWTs) for authentication with external services.
 When you use this condition key in a policy, specify the audience value that matches the intended recipient's identifier (for example, https://api.example.com).
 The following example policy allows a principal to request tokens for the specified external services:

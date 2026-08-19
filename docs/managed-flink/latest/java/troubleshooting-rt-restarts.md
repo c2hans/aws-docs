@@ -55,7 +55,7 @@ The following conditions may cause your application to become unstable and repea
 
   If you do not provide the correct version of `jackson-module-jaxb-annotations` as an explicit dependency, your application loads it from the environment dependencies, and since the versions do not match, the application crashes at runtime.
 
-  For more information about using Apache Beam with Managed Service for Apache Flink, see [Use CloudFormationCreating an application using Apache Beam](examples-beam.md).
+  For more information about using Apache Beam with Managed Service for Apache Flink, see [Use CloudFormation](examples-beam.md).
 + **Application fails with java.io.IOException: Insufficient number of network buffers**
 
   This happens when an application does not have enough memory allocated for network buffers. Network buffers facilitate communication between subtasks. They are used to store records before transmission over a network, and to store incoming data before dissecting it into records and handing them to subtasks. The number of network buffers required scales directly with the parallelism and complexity of your job graph. There are a number of approaches to mitigate this issue:

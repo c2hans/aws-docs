@@ -173,6 +173,11 @@ Indicates whether newly launched EC2 instances are protected from termination wh
 Type: Boolean
 Required: No
 
+ ** Operator **
+The entity that manages the Auto Scaling group, if applicable. When set, only the designated operator can make changes to the group configuration.
+Type: [Operator](API_Operator.md) object
+Required: No
+
  ** PlacementGroup **
 The name of the placement group into which to launch EC2 instances for the Auto Scaling group.
 Type: String

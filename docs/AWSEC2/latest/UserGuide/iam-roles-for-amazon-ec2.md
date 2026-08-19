@@ -69,6 +69,7 @@ Instance identity roles are automatically created when an instance is launched, 
 <a name="iir-supported-services"></a>
 
 The following AWS services use the instance identity role:
++ **Amazon Bedrock AgentCore** – [AgentCore Runtime Instances](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-instances-how-it-works.html) use the instance identity role for setting up the instances during launch.
 + **Amazon EC2** – [EC2 Instance Connect](connect-linux-inst-eic.md) uses the instance identity role to update the host keys for a Linux instance.
 + **Amazon GuardDuty** – [GuardDuty Runtime Monitoring](https://docs.aws.amazon.com/guardduty/latest/ug/runtime-monitoring.html) uses the instance identity role to allow the runtime agent to send security telemetry to the GuardDuty VPC endpoint.
 + **AWS Lambda** – [Lambda Managed Instances](https://docs.aws.amazon.com/lambda/latest/dg/lambda-managed-instances.html) uses the instance identity role for lifecycle hooks, telemetry, and artifact distribution.

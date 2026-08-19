@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awss
 
 AWS Security Hub provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="securityhub-BatchGetAutomationRules"></a>[BatchGetAutomationRules](https://docs.aws.amazon.com/securityhub/latest/userguide/automation-rules) | Retrieve a list of details for automation rules from Security Hub based on rule Amazon Resource Names (ARNs) | Read |

@@ -700,7 +700,7 @@ In this step, you create a workflow that packages your Lambda source code and de
 
   Next, the test action transforms the XML reports into CodeCatalyst reports and displays them in the CodeCatalyst console, under the **Reports** tab of the test action.
 
-  For more information about the test action, see [Testing with workflowsTesting with workflows](test-workflow-actions.md).
+  For more information about the test action, see [Testing with workflows](test-workflow-actions.md).
 + A build action (`BuildBackend`) – On completion of the test action, the build action downloads and installs the AWS SAM CLI, packages the `hello-world` source, and copies the package to your Amazon S3 bucket, where the Lambda service expects it to be. The action also outputs a new AWS SAM template file called `sam-template-packaged.yml` and places it in an output artifact called `buildArtifact`.
 
   For more information about the build action, see [Building with workflows](build-workflow-actions.md).

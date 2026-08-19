@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-fre
 
 *Configuration data* is a collection of settings that influence the behavior of your application. A *configuration profile* includes, among other things, a URI that enables AWS AppConfig to locate your configuration data in its stored location and a configure type. With freeform configuration profiles, you can store your data in the AWS AppConfig hosted configuration store or any of the following AWS services and Systems Manager tools:
 
-****
-
 | Location | Supported file types |
 | --- | --- |
 | AWS AppConfig hosted configuration store | YAML, JSON, and text if added using the AWS Management Console. Any file type if added using the AWS AppConfig [CreateHostedConfigurationVersion](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_CreateHostedConfigurationVersion.html) API action. |

@@ -116,8 +116,6 @@ CodeCommit also supports policies based on session tags. For more information, s
 
 CodeCommit supports the use of session tags, which are key-value pair attributes that you pass when you assume an IAM role, use temporary credentials, or federate a user in AWS Security Token Service (AWS STS). You can also associate tags with an IAM user. You can use the information provided in these tags to make it easier to identify who made a change or caused an event. CodeCommit includes the values for tags with the following key names in CodeCommit events:
 
-****
-
 | Key name | Value |
 | --- | --- |
 | displayName | The human-readable name to display and associate with the user (for example, Mary Major or Saanvi Sarkar). |
@@ -126,8 +124,6 @@ CodeCommit supports the use of session tags, which are key-value pair attributes
 If this information is provided, CodeCommit includes it in events sent to Amazon EventBridge and Amazon CloudWatch Events. For more information, see [Monitoring CodeCommit events in Amazon EventBridge and Amazon CloudWatch Events](monitoring-events.md).
 
 To use session tagging, roles must have policies that include the `sts:TagSession` permission set to `Allow`. If you are using federated access, you can configure display name and email tag information as part of your setup. For example, if you're using Azure Active Directory, you might provide the following claim information:
-
-****
 
 | Claim name | Value |
 | --- | --- |

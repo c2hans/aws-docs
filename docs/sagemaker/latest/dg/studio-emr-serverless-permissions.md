@@ -9,7 +9,7 @@ In this section, we detail the roles and permissions required to list and connec
 
 The roles to which you must add the necessary permissions depend on whether Studio and your EMR Serverless applications reside in the same AWS account (*Single Account*) or in separate accounts (*Cross Account*). There are two types of roles involved:
 + Execution roles:
-  + [Runtime execution roles](https://docs.aws.amazon.com/http://emr/latest/EMR-Serverless-UserGuide/jobs-spark.html#spark-defaults-executionRoleArn) (Role-Based Access Control roles) used by EMR Serverless: These are the IAM roles used by the EMR Serverless job execution environments to access other AWS services and resources needed during runtime, such as Amazon S3 for data access, CloudWatch for logging, access to the AWS Glue Data Catalog or other services based on your workload requirements. We recommend creating these roles in the account where the EMR Serverless applications are running.
+  + [Runtime execution roles](http://emr/latest/EMR-Serverless-UserGuide/jobs-spark.html#spark-defaults-executionRoleArn) (Role-Based Access Control roles) used by EMR Serverless: These are the IAM roles used by the EMR Serverless job execution environments to access other AWS services and resources needed during runtime, such as Amazon S3 for data access, CloudWatch for logging, access to the AWS Glue Data Catalog or other services based on your workload requirements. We recommend creating these roles in the account where the EMR Serverless applications are running.
 
     To learn more about runtime roles, see [Job runtime roles](https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/security-iam-runtime-role.html) in the *EMR Serverless User Guide*.
 **Note**

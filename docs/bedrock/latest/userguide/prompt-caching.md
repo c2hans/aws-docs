@@ -91,7 +91,7 @@ You can use both 1-hour and 5-minute cache controls in the same request, but wit
 ## Cache Management for Models from OpenAI
 <a name="prompt-caching-openai"></a>
 
-OpenAI models on Amazon Bedrock support prompt caching through the Responses API on the `bedrock-mantle` endpoint. The caching behavior differs depending on the model generation.
+OpenAI models on Amazon Bedrock support prompt caching through the Responses API, which is available on both the `bedrock-runtime` and `bedrock-mantle` endpoints. The caching behavior differs depending on the model generation.
 
 ### GPT-5.6 models
 <a name="prompt-caching-openai-56"></a>
@@ -347,12 +347,12 @@ The following example shows how to structure the body of your InvokeModel reques
 
 ------
 
-For more information about sending an InvokeModel request, see [Submit a single prompt with InvokeModelSubmit a single prompt with InvokeModel (moved)](inference-invoke.md).
+For more information about sending an InvokeModel request, see [Submit a single prompt with InvokeModel](inference-invoke.md).
 
 ### Responses API
 <a name="prompt-caching-responses"></a>
 
-For OpenAI models on the `bedrock-mantle` endpoint, you use the Responses API with prompt caching parameters specific to the model generation. For GPT-5.6 models, you control caching with explicit breakpoints. For GPT-5.5 and earlier, caching is automatic.
+For OpenAI models, you use the Responses API — available on both the `bedrock-runtime` and `bedrock-mantle` endpoints — with prompt caching parameters specific to the model generation. For GPT-5.6 models, you control caching with explicit breakpoints. For GPT-5.5 and earlier, caching is automatic.
 
 **GPT-5.6 example with explicit cache breakpoints**
 

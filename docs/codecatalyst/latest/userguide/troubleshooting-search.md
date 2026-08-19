@@ -7,7 +7,7 @@ Amazon CodeCatalyst is no longer open to new customers. Existing customers can c
 # Troubleshooting problems with search in CodeCatalyst
 <a name="troubleshooting-search"></a>
 
-Consult the following sections to troubleshoot problems related to searching in CodeCatalyst. For more information about workflows, see [Search for code, issues, projects, and users in CodeCatalystSearch for code, issues, projects, and users](search.md).
+Consult the following sections to troubleshoot problems related to searching in CodeCatalyst. For more information about workflows, see [Search for code, issues, projects, and users in CodeCatalyst](search.md).
 
 **Topics**
 + [I can't find a user in my project](#troubleshooting-search-users)

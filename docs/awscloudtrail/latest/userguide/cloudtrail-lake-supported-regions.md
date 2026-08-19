@@ -10,8 +10,6 @@ AWS CloudTrail Lake will no longer be open to new customers starting May 31, 202
 
 Currently, CloudTrail Lake is supported in the following AWS Regions:
 
-****
-
 | Region Name | Region |
 | --- | --- |
 | US East (N. Virginia) | us-east-1 |

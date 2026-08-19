@@ -14,8 +14,6 @@ Enable or update S3 bucket encryption setting through direct API calls. The S3 b
 ## Change Type Details
 <a name="ct-128svy9nn2yj8-MASu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-128svy9nn2yj8 |

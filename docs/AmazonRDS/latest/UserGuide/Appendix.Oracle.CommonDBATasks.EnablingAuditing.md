@@ -14,8 +14,6 @@ Enabling auditing is supported for Oracle DB instances running the following ver
 
 The `audit_all_sys_aud_table` procedure has the following parameters.
 
-****
-
 | Parameter name | Data type | Default | Required | Description |
 | --- | --- | --- | --- | --- |
 | `p_by_access` | boolean | true | No | Set to `true` to audit `BY ACCESS`. Set to `false` to audit `BY SESSION`. |

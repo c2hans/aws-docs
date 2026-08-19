@@ -512,4 +512,4 @@ For details, see the `IVSRemoteStageStream` class in the [SDK reference document
 
 To broadcast a stage, create a separate `IVSBroadcastSession` and then follow the usual instructions for broadcasting with the SDK, described above. The `device` property on `IVSStageStream` will be either an `IVSImageDevice` or `IVSAudioDevice` as shown in the snippet above; these can be connected to the `IVSBroadcastSession.mixer` to broadcast the entire stage in a customizable layout.
 
-Optionally, you can composite a stage and broadcast it to an IVS low-latency channel, to reach a larger audience. See [Enabling Multiple Hosts on an Amazon IVS Stream](https://docs.aws.amazon.com//ivs/latest/LowLatencyUserGuide/multiple-hosts.html) in the IVS Low-Latency Streaming User Guide.
+Optionally, you can composite a stage and broadcast it to an IVS low-latency channel, to reach a larger audience. See [Enabling Multiple Hosts on an Amazon IVS Stream](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multiple-hosts.html) in the IVS Low-Latency Streaming User Guide.

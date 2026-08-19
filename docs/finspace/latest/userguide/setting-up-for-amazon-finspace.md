@@ -21,7 +21,7 @@ An Amazon FinSpace environment is created from an AWS account. In this section, 
 ## Sign up for an AWS account
 <a name="sign-up-for-aws"></a>
 
-To get started with AWS, you need an AWS account. For information about creating an AWS account, see [Getting started with an AWS account](https://docs.aws.amazon.com//accounts/latest/reference/getting-started.html) in the *AWS Account Management Reference Guide*.
+To get started with AWS, you need an AWS account. For information about creating an AWS account, see [Getting started with an AWS account](https://docs.aws.amazon.com/accounts/latest/reference/getting-started.html) in the *AWS Account Management Reference Guide*.
 
 ## (Optional) Attach managed policies for creating FinSpace environment
 <a name="optional-attach-managed-policies-for-creating-finspace-environment"></a>

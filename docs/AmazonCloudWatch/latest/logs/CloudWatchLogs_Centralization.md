@@ -29,6 +29,9 @@ The destination AWS account where replicated log data is stored. This account se
 **Backup region**
 An optional secondary region within the destination account where log data can be replicated for increased resiliency and disaster recovery purposes.
 
+**Tag propagation**
+An opt-in capability that propagates resource tags from source log groups to their corresponding destination log groups. Tag propagation uses a customer-managed IAM role in the destination account to add, update, and remove tags on destination log groups. You configure tag propagation by adding a `TagPropagationConfiguration` block to your centralization rule's destination configuration.
+
 **Encryption in CloudWatch Logs **
 Log group data is always encrypted in CloudWatch Logs. By default, CloudWatch Logs uses server-side encryption with 256-bit Advanced Encryption Standard Galois/Counter Mode (AES-GCM) to encrypt log data at rest. As an alternative, you can use AWS Key Management Service for this encryption. For more information, see [CloudWatch Logs Encryption documentation](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/encrypt-log-data-kms.html).
 + **How encryption works during centralization**: CloudWatch Logs centralization actively copies log data at ingestion time from source accounts to destination accounts. During this process, your data remains encrypted in transit using an AWS owned service key. Data at rest in both source and destination log groups is encrypted using your chosen encryption method (customer managed or AWS owned KMS keys). If you are using customer managed KMS key in your destination log groups, add the tag `LogsManaged = true` to the kms key for Centralization service to access it.
@@ -51,6 +54,83 @@ Once the centralization rule is enabled and log events are being replicated to t
 +  Trusted access must be enabled for CloudWatch, the management account and the destination account so provide access to the log data.
 **Note**
 It is recommended to enable trusted access through the console, which automatically creates the required service-linked role (SLR). If trusted access is enabled through other methods, the service-linked role will need to be created separately.
+
+#### Tag propagation prerequisites
+<a name="centralization-tag-propagation-prerequisites"></a>
+
+To enable tag propagation, you must complete the following additional setup:
+
+##### Create a customer-managed IAM role
+<a name="centralization-tag-propagation-role"></a>
+
+You must create a customer-managed IAM role in the destination account with the following configuration:
+
+##### Trust policy
+<a name="centralization-tag-propagation-trust-policy"></a>
+
+The role's trust policy must allow the centralization service-linked role to assume it. The following example trust policy grants the `AWSServiceRoleForObservabilityAdmin_LogsCentralization` service-linked role permission to assume the destination role. Replace `<destination-account-id>` with your destination account ID and `<organization-id>` with your AWS Organizations ID.
+
+```
+{
+  "Version": "2012-10-17",
+  "Statement": [{
+    "Effect": "Allow",
+    "Principal": {
+      "AWS": "arn:aws:iam::<destination-account-id>:role/aws-service-role/logs-centralization.observabilityadmin.amazonaws.com/AWSServiceRoleForObservabilityAdmin_LogsCentralization"
+    },
+    "Action": "sts:AssumeRole",
+    "Condition": {
+      "StringEquals": {
+        "sts:ExternalId": "<organization-id>"
+      }
+    }
+  }]
+}
+```
+
+##### Permissions policy
+<a name="centralization-tag-propagation-permissions-policy"></a>
+
+The role's permissions policy must grant tag operations on the destination log groups. The following example grants the minimum required permissions. Replace `<destination-account-id>` with your value. You can scope the `Resource` further to specific log group ARN patterns.
+
+```
+{
+  "Version": "2012-10-17",
+  "Statement": [{
+    "Effect": "Allow",
+    "Action": [
+      "logs:ListTagsForResource",
+      "logs:TagResource",
+      "logs:UntagResource"
+    ],
+    "Resource": "arn:aws:logs:*:<destination-account-id>:log-group:*"
+  }]
+}
+```
+
+##### Grant iam:PassRole permission
+<a name="centralization-tag-propagation-passrole"></a>
+
+You must have `iam:PassRole` permission on the destination role, scoped to the centralization service via the `iam:PassedToService` condition key. The following example grants permission to pass the role. Replace `<destination-account-id>` and `<your-tag-role-name>` with your values.
+
+**Note**
+This statement goes on your identity policy (the principal calling `CreateCentralizationRuleForOrganization` or `UpdateCentralizationRuleForOrganization`), not on the destination role itself.
+
+```
+{
+  "Version": "2012-10-17",
+  "Statement": [{
+    "Effect": "Allow",
+    "Action": "iam:PassRole",
+    "Resource": "arn:aws:iam::<destination-account-id>:role/<your-tag-role-name>",
+    "Condition": {
+      "StringEquals": {
+        "iam:PassedToService": "logs-centralization.observabilityadmin.amazonaws.com"
+      }
+    }
+  }]
+}
+```
 
 ### Customizing destination log group names
 <a name="centralization-destination-log-group-names"></a>
@@ -98,6 +178,7 @@ Result: `/centralized-logs`
 + Include the source account ID to easily identify which account logs came from.
 + Include the source region if you are centralizing from multiple regions.
 + Structure destination log group names to be under 512 characters. CloudWatch Logs enforces a maximum log group name length of 512 characters.
++ If you enable tag propagation, the pattern must contain all three attributes: `${source.logGroup}`, `${source.accountId}`, and `${source.region}`. This ensures each source log group maps to a unique destination log group.
 
 ### Creating a centralization rule
 <a name="create-centralization-rule"></a>
@@ -263,6 +344,13 @@ Rule health statuses include:
 
 When a rule is marked as UNHEALTHY, the `FailureReason` field provides details about the specific issue that needs to be addressed.
 
+#### Tag propagation health status
+<a name="centralization-tag-propagation-health"></a>
+
+Tag propagation has its own health status (`TagPropagationStatus`) that is independent of the overall `RuleHealth` for log delivery. If you misconfigure the destination role, your overall rule health is not affected — only tag propagation shows as unhealthy.
++ `Healthy`: The most recent tag-propagation attempt succeeded.
++ `Unhealthy`: The most recent tag-propagation attempt failed. Check the `TagPropagationFailureReason` field for details. See the troubleshooting section below for remediation steps.
+
 ### Monitoring centralization API calls with AWS CloudTrail
 <a name="centralization-cloudtrail"></a>
 
@@ -320,5 +408,10 @@ Log stream names have maximum length restrictions. When centralization replicate
 
 **Rule health status**
 Check the centralization rule health status in the console or using the `GetCentralizationRuleForOrganization` API. If the rule is marked as UNHEALTHY, review the `FailureReason` field for specific details about the issue.
+
+**Tag propagation health status**
+If `TagPropagationStatus` shows `Unhealthy`, check the `TagPropagationFailureReason` field:
++ `RoleNotAssumable`: The service cannot assume the destination role. Verify that the role's trust policy allows the centralization service-linked role to assume it and that the `sts:ExternalId` matches your organization ID.
++ `RoleLacksPermissions`: The role was assumed but the tag API call was denied. Ensure the role's permissions policy grants `logs:ListTagsForResource`, `logs:TagResource`, and `logs:UntagResource` on the destination log groups.
 
 To diagnose centralization issues, review the centralization rule health status in the console, check CloudWatch metrics for errors and throttling, and examine AWS CloudTrail logs for API call failures. For more information about centralization metrics, see [Centralization metrics and dimensions](CloudWatch-Logs-Monitoring-CloudWatch-Metrics.md#CloudWatchLogs-Centralization-Metrics).

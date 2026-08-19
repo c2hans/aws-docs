@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon Elastic Kubernetes Service provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="eks-AccessKubernetesApi"></a>[AccessKubernetesApi](https://docs.aws.amazon.com/eks/latest/userguide/view-workloads.html) | View Kubernetes objects via AWS EKS console | Read |

@@ -48,7 +48,7 @@ To publish an Amazon SageMaker AI product, you must specify a valid IAM role ARN
 
 **Setting the IAM role AddVersion/Create product**
 
-1. Follow the steps to create a role with a custom trust policy. For more information, see [Creating an IAM role using a custom trust policy (console)](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_roles_create_for-custom.html).
+1. Follow the steps to create a role with a custom trust policy. For more information, see [Creating an IAM role using a custom trust policy (console)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-custom.html).
 
 1. Enter the following for the custom trust policy statement:
 

@@ -38,8 +38,6 @@ Before using the command on macOS, install Docker for Mac, and ensure that boot2
 
 **eb local run**
 
-****
-
 |  Name  |  Description  |
 | --- | --- |
 | `--envvars {{key1=value1,key2=value2}}` | Sets environment variables that the EB CLI will pass to the local Docker containers. In multicontainer environments, all variables are passed to all containers. |
@@ -55,8 +53,6 @@ Before using the command on macOS, install Docker for Mac, and ensure that boot2
 **eb local setenv**
 
 **eb local printenv**
-
-****
 
 |  Name  |  Description  |
 | --- | --- |

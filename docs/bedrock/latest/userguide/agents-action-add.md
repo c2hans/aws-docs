@@ -50,7 +50,6 @@ To allow the Amazon Bedrock service principal to access the Lambda function, [at
      1. To request confirmation from the user before the function is invoked, select **Enabled**. Requesting confirmation before invoking the function may safeguard your application from taking actions due to malicious prompt injections.
 
      1. In the **Parameters** subsection, choose **Add parameter**. Define the following fields:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/agents-action-add.html)
 
      1. To add another parameter, choose **Add parameter**.
@@ -100,10 +99,8 @@ To create an action group, send a [CreateAgentActionGroup](https://docs.aws.amaz
 
 The following list describes the fields in the request:
 + The following fields are required:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/agents-action-add.html)
 + To define the parameters for the action group, you must specify one of the following fields (you can't specify both).
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/agents-action-add.html)
 
   The following shows the general format of the `functionSchema` and `apiSchema`:
@@ -153,10 +150,8 @@ The following list describes the fields in the request:
        }
        ```
 + To configure how the action group handles the invocation of the action group after eliciting parameters from the user, you must specify one of the following fields within the `actionGroupExecutor` field.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/agents-action-add.html)
 + The following fields are optional:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/agents-action-add.html)
 
   ```

@@ -58,8 +58,6 @@ You typically don't need to delete the AWSServiceRoleForCertificateManager SLR. 
 
 ACM supports using SLRs in all of the regions where both ACM and AWS Private CA are available. For more information, see [AWS Regions and Endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html).
 
-****
-
 | Region name | Region identity | Support in ACM |
 | --- | --- | --- |
 | US East (N. Virginia) | us-east-1 | Yes |

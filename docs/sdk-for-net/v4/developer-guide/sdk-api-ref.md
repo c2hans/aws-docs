@@ -13,7 +13,7 @@ For information about breaking changes and migrating your applications, see the 
 
 The AWS SDK for .NET provides an API that you can use to access AWS services. To see what classes and methods are available in the API, see the [AWS SDK for .NET API Reference](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/).
 
-In addition to the general reference given above, each of the examples under the [Guided code examplesHigh-level libraries and frameworks](tutorials-examples.md) section contains references to the specific methods and classes that are used in that example.
+In addition to the general reference given above, each of the examples under the [Guided code examples](tutorials-examples.md) section contains references to the specific methods and classes that are used in that example.
 
 ## About API reference versions
 <a name="about-api-versions"></a>

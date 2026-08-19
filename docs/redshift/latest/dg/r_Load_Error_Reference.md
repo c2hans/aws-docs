@@ -19,8 +19,8 @@ If any errors occur while loading data from a file, query the [STL\_LOAD\_ERRORS
 | 1202  | Input data had more columns than were defined in the DDL.  |
 | 1203  | Input data had fewer columns than were defined in the DDL.  |
 | 1204  | Input data exceeded the acceptable range for the data type.  |
-| 1205  | Date format is not valid. See [DATEFORMAT and TIMEFORMAT stringsExample](r_DATEFORMAT_and_TIMEFORMAT_strings.md) for valid formats.  |
-| 1206  | Timestamp format is not valid. See [DATEFORMAT and TIMEFORMAT stringsExample](r_DATEFORMAT_and_TIMEFORMAT_strings.md) for valid formats.  |
+| 1205  | Date format is not valid. See [DATEFORMAT and TIMEFORMAT strings](r_DATEFORMAT_and_TIMEFORMAT_strings.md) for valid formats.  |
+| 1206  | Timestamp format is not valid. See [DATEFORMAT and TIMEFORMAT strings](r_DATEFORMAT_and_TIMEFORMAT_strings.md) for valid formats.  |
 | 1207  | Data contained a value outside of the expected range of 0-9.  |
 | 1208  | FLOAT data type format error.  |
 | 1209  | DECIMAL data type format error.  |

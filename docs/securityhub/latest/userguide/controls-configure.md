@@ -37,7 +37,7 @@ Follow these steps to enable a Security Hub CSPM control in a *specific* standar
 
 **To enable a control in a specific standard**
 
-1. Run `[`ListSecurityControlDefinitions`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListSecurityControlDefinitions.html)`, and provide a standard ARN to get a list of available controls for a specific standard. To obtain a standard ARN, run [`DescribeStandards`](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_DescribeStandards.html). This API returns standard-agnostic security control IDs, not standard-specific control IDs.
+1. Run `[`ListSecurityControlDefinitions`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListSecurityControlDefinitions.html)`, and provide a standard ARN to get a list of available controls for a specific standard. To obtain a standard ARN, run [`DescribeStandards`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_DescribeStandards.html). This API returns standard-agnostic security control IDs, not standard-specific control IDs.
 
    **Example request:**
 

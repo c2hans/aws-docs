@@ -95,6 +95,11 @@ A client can initiate multiple `tools/call` requests within the same session, ev
 MCP server targets that send elicitation requests **should** wrap elicitation calls in try-catch blocks and handle the case where the client does not support elicitation. If the gateway’s client did not declare elicitation capability, the gateway does not declare it to the target. If the target sends an elicitation anyway, the gateway returns a `-32601` (Method not found) error to the target.
 Servers should implement a fallback path (such as using default values or skipping the operation) when elicitation is not available.
 
+## Securing the request state (version 2026-07-28 and later)
+<a name="gateway-mcp-elicitation-request-state-security"></a>
+
+On version `2026-07-28` and later, elicitation uses the multi round-trip requests (MRTR) pattern, which carries an opaque `requestState` between your client and your MCP server target. Securing that value is a shared responsibility: the gateway authorizes and forwards it without storing it, while your MCP server target must validate it and prevent one user from replaying another user’s request state. For the full shared responsibility model and the protection guidance your MCP server must follow, see [Securing the request state for elicitation and sampling](gateway-target-MCPservers.md#gateway-target-MCPservers-request-state) in the MCP server target considerations.
+
 ## Error handling
 <a name="gateway-mcp-elicitation-errors"></a>
 

@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon QuickSight provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="quicksight-BatchDescribeUserLimits"></a>[BatchDescribeUserLimits](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_BatchDescribeUserLimits.html) | Describe the effective resource limits for users | Read |

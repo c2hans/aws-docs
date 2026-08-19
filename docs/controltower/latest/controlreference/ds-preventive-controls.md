@@ -9,7 +9,7 @@ These preventive controls are designed to assist you with your digital sovereign
 
 This group of controls helps you comply with digital sovereignty regulatory requirements because they prevent actions, enforce configurations, and detect resource changes that affect data residency, granular access restriction, encryption, and resilience capabilities.
 + These controls are configurable. For more information about configurable controls, see [Controls with parameters](control-parameter-concepts.md).
-+ These are optional controls with Preventive guidance, implemented with AWS service control policies (SCPs). They are not deployed on any OU by default. You can enable them through the AWS Control Tower console, or through the AWS Control Tower [APIs](https://docs.aws.amazon.com//controltower/latest/APIReference/API_Operations.html)
++ These are optional controls with Preventive guidance, implemented with AWS service control policies (SCPs). They are not deployed on any OU by default. You can enable them through the AWS Control Tower console, or through the AWS Control Tower [APIs](https://docs.aws.amazon.com/controltower/latest/APIReference/API_Operations.html)
 
 In the AWS Control Tower console, you can view these controls together under the **Groups** tab on the **Categories** page.
 

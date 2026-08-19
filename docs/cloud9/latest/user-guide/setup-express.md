@@ -22,7 +22,7 @@ To use AWS Cloud9 as the only user in your AWS account, sign up for an AWS accou
 ### Sign up for an AWS account
 <a name="sign-up-for-aws"></a>
 
-To get started with AWS, you need an AWS account. For information about creating an AWS account, see [Getting started with an AWS account](https://docs.aws.amazon.com//accounts/latest/reference/getting-started.html) in the *AWS Account Management Reference Guide*.
+To get started with AWS, you need an AWS account. For information about creating an AWS account, see [Getting started with an AWS account](https://docs.aws.amazon.com/accounts/latest/reference/getting-started.html) in the *AWS Account Management Reference Guide*.
 
 ## Other ways to authenticate
 <a name="setup-express-sign-in-ide"></a>
@@ -58,13 +58,9 @@ IAM user access keys should be stored in the shared AWS `credentials` file on th
 ## Next steps
 <a name="setup-express-next-steps"></a>
 
-****
-
 |  **Task for learning**  |  **Topic**  |
 | --- | --- |
 | Learn how to use the AWS Cloud9 IDE. |  [Getting started: basic tutorials](tutorials-basic.md) and [Working with the IDE](ide.md)  |
-
-****
 
 |  **More advanced tasks**  |  **Topics**  |
 | --- | --- |

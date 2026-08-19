@@ -29,8 +29,6 @@ AWS Marketplace Procurement Systems Integration has no API operations that can b
 
 The following actions are defined by AWS Marketplace Procurement Systems Integration but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 | Actions | Description | Resource types (\*required) | Condition keys | Access level |
 | --- | --- | --- | --- | --- |
 |   [DescribeProcurementSystemConfiguration](https://docs.aws.amazon.com/marketplace/latest/buyerguide/procurement-systems-integration.html)  | Grants permission to describe the Procurement System integration configuration (e.g. Coupa) for the individual account, or for the entire AWS Organization if one exists. This action can only be performed by the master account if using an AWS Organization |  |   | Read |

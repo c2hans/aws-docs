@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/export-
 Dashboards provide flexible export options for offline analysis and sharing. You can export entire dashboards or individual widgets as PDF reports for immediate download, export individual widget data in CSV format for detailed analysis, or schedule automated email delivery of dashboard PDF reports to stakeholders.
 
 ## Export options
-<a name="w2aac13c23b5"></a>
+<a name="w2aab5c28c25b5"></a>
 + **PDF export:** Export your complete dashboard as a PDF file for offline viewing and sharing with stakeholders who don't have AWS console access. You can also export a single widget visualization into a PDF file.
 + **CSV export:** Export data from individual widgets in CSV format file for detailed analysis in spreadsheet applications.
 

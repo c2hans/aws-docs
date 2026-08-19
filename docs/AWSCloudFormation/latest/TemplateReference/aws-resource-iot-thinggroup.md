@@ -12,7 +12,7 @@ Creates a new thing group. A dynamic thing group is created if the resource temp
 **Note**
 This is a control plane operation. See [Authorization](https://docs.aws.amazon.com/iot/latest/developerguide/iot-authorization.html) for information about authorizing control plane actions.
 
-Requires permission to access the [CreateThingGroup](https://docs.aws.amazon.com//service-authorization/latest/reference/list_awsiot.html#awsiot-actions-as-permissions) action.
+Requires permission to access the [CreateThingGroup](https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsiot.html#awsiot-actions-as-permissions) action.
 
 ## Syntax
 <a name="aws-resource-iot-thinggroup-syntax"></a>

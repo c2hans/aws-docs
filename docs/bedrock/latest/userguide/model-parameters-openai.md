@@ -45,7 +45,6 @@ Use the request body fields in the following ways:
     + For each message whose role is `developer`, add the `content` a [SystemContentBlock](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_SystemContentBlock.html) in the `system` array.
     + For each message whose role is `user` or `assistant`, add the `content` to a [ContentBlock](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_ContentBlock.html) in the `content` field and specify the `role` in the `role` field of a [Message](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_Message.html) in the `messages` array.
   + Map the values for the following fields to the corresponding fields in the `inferenceConfig` object:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters-openai.html)
   + Include any other fields in the `additionalModelRequestFields` object.
 

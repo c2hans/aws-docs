@@ -15,8 +15,6 @@ This procedure applies to both types of user authentication—local authenticati
 
 Make sure you perform the configuration on the correct nodes.
 
-****
-
 | Node | Node where you perform this task |
 | --- | --- |
 | Primary Conductor Live node | Yes |
@@ -49,7 +47,6 @@ To enable user authentication, follow these steps.
 Enter the `configure` command twice, as shown. Don't enter a command that combines the `--https` and `--config-auth` options because HTTPS won't get enabled.
 
 1. Answer the authentication prompts as follows:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-cl3/latest/configguide/conductor-live-config-auth.html)
 
 1. After the configuration script has run, the following message appears. This message reminds you that users must include these additional HTTP headers in commands that they send.

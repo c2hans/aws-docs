@@ -18,7 +18,7 @@ This message indicates that Elastic Beanstalk was not able to fetch one or more 
 + If this event was triggered through the `RestartAppServer` operation, once the issue is fixed, retry the `RestartAppServer` call to resolve the issue.
 + If the event was triggered through an `UpdateEnvironment` call, retry the `UpdateEnvironment` operation.
 
-For examples of these commands, see [*AWS CLI examples for Elastic Beanstalk*](https://docs.aws.amazon.com//cli/latest/userguide/cli_elastic-beanstalk_code_examples.html). For more information about the API actions for these operations, see the *[AWS Elastic Beanstalk API Reference](https://docs.aws.amazon.com/elasticbeanstalk/latest/api/)*.
+For examples of these commands, see [*AWS CLI examples for Elastic Beanstalk*](https://docs.aws.amazon.com/cli/latest/userguide/cli_elastic-beanstalk_code_examples.html). For more information about the API actions for these operations, see the *[AWS Elastic Beanstalk API Reference](https://docs.aws.amazon.com/elasticbeanstalk/latest/api/)*.
 
 **Event:** *Instance deployment detected one or more multiline environment values, which are not supported for this platform*
 
@@ -26,4 +26,4 @@ Multiline variables are not supported for Amazon Linux 2 platforms, excluding Do
 
 **Event:** *CreateEnvironment fails when a secret is specified*
 
-When `CreateEnvironment` fails and you have secrets as environment variables, you need to address the underlying issue and then use `UpdateEnvironment` to complete the environment setup. Do not use `RestartAppServer`, as it will not be sufficient to bring the environment up in this situation. For examples of these commands, see [*AWS CLI examples for Elastic Beanstalk*](https://docs.aws.amazon.com//cli/latest/userguide/cli_elastic-beanstalk_code_examples.html). For more information about the API actions for these operations, see the *[AWS Elastic Beanstalk API Reference](https://docs.aws.amazon.com/elasticbeanstalk/latest/api/)*.
+When `CreateEnvironment` fails and you have secrets as environment variables, you need to address the underlying issue and then use `UpdateEnvironment` to complete the environment setup. Do not use `RestartAppServer`, as it will not be sufficient to bring the environment up in this situation. For examples of these commands, see [*AWS CLI examples for Elastic Beanstalk*](https://docs.aws.amazon.com/cli/latest/userguide/cli_elastic-beanstalk_code_examples.html). For more information about the API actions for these operations, see the *[AWS Elastic Beanstalk API Reference](https://docs.aws.amazon.com/elasticbeanstalk/latest/api/)*.

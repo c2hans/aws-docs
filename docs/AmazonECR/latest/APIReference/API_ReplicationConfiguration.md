@@ -13,7 +13,7 @@ The replication configuration for a registry.
  ** rules **   <a name="ECR-Type-ReplicationConfiguration-rules"></a>
 An array of objects representing the replication destinations and repository filters for a replication configuration.
 Type: Array of [ReplicationRule](API_ReplicationRule.md) objects
-Array Members: Minimum number of 0 items. Maximum number of 10 items.
+Array Members: Minimum number of 0 items. Maximum number of 25 items.
 Required: Yes
 
 ## See Also

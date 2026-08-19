@@ -19,7 +19,7 @@ Amazon EC2 uses the [EC2FastLaunchServiceRolePolicy](https://docs.aws.amazon.com
 + **AWS CloudFormation** – Allow EC2 Fast Launch to get a description of associated CloudFormation stacks.
 + **Amazon CloudWatch** – Post metric data associated with EC2 Fast Launch to the Amazon EC2 namespace.
 + **Amazon EC2** – Access is granted for EC2 Fast Launch to perform the following actions:
-  + Launch instances from an Amazon EC2 Windows Server AMI with EC2 Fast Launch enabled, in order to perform provisioning steps. Additionally specify resource pattern that allows `ec2:RunInstances` for an AMI that's associated with License Manager.
+  + Launch instances from an Amazon EC2 Windows Server AMI with EC2 Fast Launch enabled, to perform provisioning steps. Additionally specify resource pattern that allows `ec2:RunInstances` for an AMI that's associated with License Manager.
   + Stop and terminate an instance that was launched by EC2 Fast Launch after it creates the pre-provisioned snapshot.
   + Describe image and instance type resources used to launch instances from an Amazon EC2 Windows Server AMI with EC2 Fast Launch enabled and create snapshots from them.
   + Describe launch template resources and launch instances from a launch template.

@@ -15,7 +15,7 @@ AWS .NET Modernization Tools Porting Assistant (PA) for .NET, AWS App2Container 
 <a name="microservice-extractor-prerequisites-analysis-extraction"></a>
 
 To use Microservice Extractor to analyze and extract a monolithic application to deploy into smaller services, you must have the following:
-+ A valid AWS CLI profile to publish metrics. For information about how to configure an AWS CLI profile, see [Configuring the AWS CLI](https://docs.aws.amazon.com//cli/latest/userguide/cli-configure-files.html#cli-configure-files-using-profiles).
++ A valid AWS CLI profile to publish metrics. For information about how to configure an AWS CLI profile, see [Configuring the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html#cli-configure-files-using-profiles).
 + A monolithic application that must be one of the following:
   + A .NET Framework ASP.NET web service application hosted on IIS with the .NET Framework developer pack installed.
   + A .NET Core ASP.NET web service application with the developer pack installed.
@@ -37,7 +37,7 @@ To use Microservice Extractor to analyze and extract a monolithic application to
 
 To perform certain operations using AWS Microservice Extractor for .NET, your user must have the necessary permissions. This section includes the policies that your user must have, and also instructions for granting permissions to the user.
 
-You must use a valid AWS CLI profile to use the assessment tool and run the commands to complete an extraction. For information about how to configure your AWS CLI profile, see [Configuring the AWS CLI](https://docs.aws.amazon.com//cli/latest/userguide/cli-configure-files.html#cli-configure-files-using-profiles).
+You must use a valid AWS CLI profile to use the assessment tool and run the commands to complete an extraction. For information about how to configure your AWS CLI profile, see [Configuring the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html#cli-configure-files-using-profiles).
 
 ### How to provide access to your user
 <a name="microservice-extractor-iam-how-to-attach-policy"></a>
@@ -45,13 +45,13 @@ You must use a valid AWS CLI profile to use the assessment tool and run the comm
 To provide access, add permissions to your users, groups, or roles:
 + Users and groups in AWS IAM Identity Center:
 
-  Create a permission set. Follow the instructions in [Create a permission set](https://docs.aws.amazon.com//singlesignon/latest/userguide/howtocreatepermissionset.html) in the *AWS IAM Identity Center User Guide*.
+  Create a permission set. Follow the instructions in [Create a permission set](https://docs.aws.amazon.com/singlesignon/latest/userguide/howtocreatepermissionset.html) in the *AWS IAM Identity Center User Guide*.
 + Users managed in IAM through an identity provider:
 
-  Create a role for identity federation. Follow the instructions in [Create a role for a third-party identity provider (federation)](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_roles_create_for-idp.html) in the *IAM User Guide*.
+  Create a role for identity federation. Follow the instructions in [Create a role for a third-party identity provider (federation)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-idp.html) in the *IAM User Guide*.
 + IAM users:
-  + Create a role that your user can assume. Follow the instructions in [Create a role for an IAM user](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_roles_create_for-user.html) in the *IAM User Guide*.
-  + (Not recommended) Attach a policy directly to a user or add a user to a user group. Follow the instructions in [Adding permissions to a user (console)](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_users_change-permissions.html#users_change_permissions-add-console) in the *IAM User Guide*.
+  + Create a role that your user can assume. Follow the instructions in [Create a role for an IAM user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-user.html) in the *IAM User Guide*.
+  + (Not recommended) Attach a policy directly to a user or add a user to a user group. Follow the instructions in [Adding permissions to a user (console)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_change-permissions.html#users_change_permissions-add-console) in the *IAM User Guide*.
 
 ### Permissions to use the AWS Microservice Extractor for .NET assessment tool
 <a name="microservice-extractor-iam-assessment"></a>

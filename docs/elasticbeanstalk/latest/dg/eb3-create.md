@@ -39,8 +39,6 @@ Some interactive flow prompts are displayed only under certain conditions. For e
 
 None of these options are required. If you run **eb create** without any options, the EB CLI prompts you to enter or select a value for each setting.
 
-****
-
 |  Name  |  Description  |
 | --- | --- |
 | `-d`<br />or<br />`--branch_default` | Set the environment as the default environment for the current repository. |

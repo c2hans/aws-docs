@@ -14,8 +14,6 @@ Associate transit gateway (TGW) attachment to the transit gateway (TGW) route ta
 ## Change Type Details
 <a name="ct-3nmhh0qr338q6-MMNa-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-3nmhh0qr338q6 |

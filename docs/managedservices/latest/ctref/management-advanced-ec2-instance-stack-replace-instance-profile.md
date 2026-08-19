@@ -14,8 +14,6 @@ Replace the instance profile of an EC2 instance that is not part of an Auto Scal
 ## Change Type Details
 <a name="ct-37kcp2v1mriu6-MAEr-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-37kcp2v1mriu6 |

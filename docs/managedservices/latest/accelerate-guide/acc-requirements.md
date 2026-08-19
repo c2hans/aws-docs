@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 <a name="acc-requirements"></a>
 
 These are the supported and/or required resources for monitoring and incident management for Amazon EKS for AMS Accelerate
-+ **Supported Kubernetes versions:** See [Amazon EKS Kubernetes versions](https://docs.aws.amazon.com//eks/latest/userguide/kubernetes-versions.html) in the **Amazon EKS User Guide**.
++ **Supported Kubernetes versions:** See [Amazon EKS Kubernetes versions](https://docs.aws.amazon.com/eks/latest/userguide/kubernetes-versions.html) in the **Amazon EKS User Guide**.
 + **Node types:** Amazon EKS managed nodes are supported. Windows nodes and containers aren't supported.
 + **Kubernetes cluster access:** AMS requires system:masters RBAC cluster role and cluster user.
 + **SSM Agent on Amazon EC2 nodes:** Both Bottle Rocket and Amazon EKS AMIs have SSM Agent pre-installed. Be sure that SSM Agent is installed on your custom AMIs and Amazon EC2 nodes.

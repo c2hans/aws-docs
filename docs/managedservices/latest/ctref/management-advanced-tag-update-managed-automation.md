@@ -14,8 +14,6 @@ Add tags to, update tags on, or remove tags from, existing, supported, resources
 ## Change Type Details
 <a name="ct-0zko7t3rk2efb-MATu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-0zko7t3rk2efb |

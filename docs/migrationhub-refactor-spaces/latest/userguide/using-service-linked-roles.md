@@ -278,7 +278,7 @@ If you no longer need to use a feature or service that requires a service-linked
 **Note**
 If the Refactor Spaces service is using the role when you try to delete the resources, then the deletion might fail. If that happens, wait for a few minutes and try the operation again.
 
-To delete the Refactor Spaces resources used by AWSServiceRoleForMigrationHubRefactorSpaces, use the Refactor Spaces console to delete the resources, or use the delete API operations for the resources. For more information about the delete API operations, see [Refactor Spaces API Reference](https://docs.aws.amazon.com//migrationhub-refactor-spaces/latest/APIReference/Welcome.html).
+To delete the Refactor Spaces resources used by AWSServiceRoleForMigrationHubRefactorSpaces, use the Refactor Spaces console to delete the resources, or use the delete API operations for the resources. For more information about the delete API operations, see [Refactor Spaces API Reference](https://docs.aws.amazon.com/migrationhub-refactor-spaces/latest/APIReference/Welcome.html).
 
 **To manually delete the service-linked role using IAM**
 

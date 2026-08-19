@@ -25,8 +25,6 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_trustedadvisor-actions-as-permissions).
 
-****
-
 - **   BatchUpdateRecommendationResourceExclusion  **
   - **IAM action:**  [trustedadvisor:BatchUpdateRecommendationResourceExclusion](#list_trustedadvisor-action-BatchUpdateRecommendationResourceExclusion)
   - **Condition key:**
@@ -98,8 +96,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
 <a name="list_trustedadvisor-actions-as-permissions"></a>
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
-
-****
 
 - **   [BatchUpdateRecommendationResourceExclusion](https://docs.aws.amazon.com/awssupport/latest/user/get-started-with-aws-trusted-advisor-api.html)  **
   - **Description:** Grants permission to update one or more exclusion status for a list of recommendation resources
@@ -256,8 +252,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 The following actions are defined by AWS Trusted Advisor but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 - **   [DescribeAccount](https://docs.aws.amazon.com/awssupport/latest/user/security-trusted-advisor.html#trusted-advisor-operations)  **
   - **Description:** Grants permission to view the AWS Support plan and various AWS Trusted Advisor preferences
   - **Resource types (\*required):**
@@ -364,8 +358,6 @@ The following actions are defined by AWS Trusted Advisor but are not directly in
 <a name="list_trustedadvisor-resources-for-iam-policies"></a>
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
-
-****
 
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |

@@ -8,8 +8,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/dyna
 ## Create a client
 <a name="dynamodb-mapping-api-changes-client"></a>
 
-****
-
 | Use case | V1 | V2 |
 | --- | --- | --- |
 |  Normal instantiation |  <pre>AmazonDynamoDB standardClient = AmazonDynamoDBClientBuilder.standard()<br />    .withCredentials(credentialsProvider)<br />    .withRegion(Regions.US_EAST_1)<br />    .build();<br />DynamoDBMapper mapper = new DynamoDBMapper(standardClient);</pre>  |  <pre>DynamoDbClient standardClient = DynamoDbClient.builder()<br />    .credentialsProvider(ProfileCredentialsProvider.create())<br />    .region(Region.US_EAST_1)<br />    .build();<br />DynamoDbEnhancedClient enhancedClient = DynamoDbEnhancedClient.builder()<br />    .dynamoDbClient(standardClient)<br />    .build();</pre>  |
@@ -22,8 +20,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/dyna
 <a name="dynamodb-mapping-api-changes-mapping"></a>
 
 In V1, you specify a DynamoDB table name through a bean annotation. In V2, a factory method, `table()`, produces an instance of `DynamoDbTable` that represents the remote DynamoDB table. The first parameter of the `table()` method is the DynamoDB table name.
-
-****
 
 | Use case | V1 | V2 |
 | --- | --- | --- |

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/view-generativ
 <a name="view-generative-ai-contact-summaries"></a>
 
 **Note**
-**Powered by Amazon Bedrock**: AWS implements [automated abuse detection](https://docs.aws.amazon.com//bedrock/latest/userguide/abuse-detection.html). Because generative AI-powered post-contact summaries is built on Amazon Bedrock, users can take full advantage of the controls implemented in Amazon Bedrock to enforce safety, security, and the responsible use of artificial intelligence (AI).
+**Powered by Amazon Bedrock**: AWS implements [automated abuse detection](https://docs.aws.amazon.com/bedrock/latest/userguide/abuse-detection.html). Because generative AI-powered post-contact summaries is built on Amazon Bedrock, users can take full advantage of the controls implemented in Amazon Bedrock to enforce safety, security, and the responsible use of artificial intelligence (AI).
 
 You can save valuable time with generative AI-powered post-contact summaries that provide essential information from customer conversations in a structured, concise, and easy to read format. You can quickly review the summaries and understand the context instead of reading through transcripts and monitoring calls.
 

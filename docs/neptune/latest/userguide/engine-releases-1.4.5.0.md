@@ -47,8 +47,8 @@ As of 2025-04-09, engine version 1.4.5.0 is being generally deployed. Please not
 **openCypher improvements**
 +  CREATE, MERGE, and SET (mutations) performance improvements.
 +  CALL Subquery performance improvements.
-+  Support for HTTP trailing header support for multi-part openCypher responses. For more information, see [ Optional HTTP trailing headers](https://docs.aws.amazon.com//neptune/latest/userguide/access-graph-opencypher-queries.html#optional-http-trailing-headers).
-+  Added day, month, and year temporal function to openCypher. For more information, see [ Temporal functions](https://docs.aws.amazon.com//neptune/latest/userguide/access-graph-opencypher-extensions.html#temporal-functions).
++  Support for HTTP trailing header support for multi-part openCypher responses. For more information, see [ Optional HTTP trailing headers](https://docs.aws.amazon.com/neptune/latest/userguide/access-graph-opencypher-queries.html#optional-http-trailing-headers).
++  Added day, month, and year temporal function to openCypher. For more information, see [ Temporal functions](https://docs.aws.amazon.com/neptune/latest/userguide/access-graph-opencypher-extensions.html#temporal-functions).
 
   ```
   RETURN day(datetime('2021-06-03T01:48:14Z'))

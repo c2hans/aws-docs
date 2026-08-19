@@ -94,7 +94,7 @@ To receive the special designation that your product is deployed on AWS, update 
 
    1. If prompted, in the **Architecture diagram** section, choose **Choose file** to upload your architecture diagram in PNG or JPG format. For more information about diagrams, see [Creating architecture diagrams](saas-guidelines.md#arch-diagram).
 
-   1. If prompted, in the **Application plane**, choose where your application runs. For more information, see [Control plane vs. application plane](https://docs.aws.amazon.com//whitepapers/latest/saas-architecture-fundamentals/control-plane-vs.-application-plane.html).
+   1. If prompted, in the **Application plane**, choose where your application runs. For more information, see [Control plane vs. application plane](https://docs.aws.amazon.com/whitepapers/latest/saas-architecture-fundamentals/control-plane-vs.-application-plane.html).
 
 1. Choose **Update architecture details**.
 

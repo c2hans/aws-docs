@@ -43,8 +43,6 @@ You can use some resource-creating actions to specify tags for a resource when t
 
 The following table describes the Amazon EMR on EKS resources that can be tagged.
 
-****
-
 | Resource | Supports tags | Supports tag propagation | Supports tagging on creation (Amazon EMR on EKS API, AWS CLI, and AWS SDK)  | API for creation (tags can be added during creation) |
 | --- | --- | --- | --- | --- |
 | Virtual cluster | Yes | No. Tags associated with a virtual cluster do not propagate to job runs submitted to that virtual cluster.  | Yes | CreateVirtualCluster |
@@ -67,8 +65,6 @@ The following basic restrictions apply to tags:
 <a name="tag-resources-work-with-tags"></a>
 
 Use the following AWS CLI commands or Amazon EMR on EKS API operations to add, update, list, and delete the tags for your resources.
-
-****
 
 | Task | AWS CLI | API action |
 | --- | --- | --- |

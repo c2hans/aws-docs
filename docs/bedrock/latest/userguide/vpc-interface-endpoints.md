@@ -18,8 +18,6 @@ Before you set up an interface endpoint for Amazon Bedrock, review [Consideratio
 
 Amazon Bedrock supports making the following API calls through VPC endpoints.
 
-****
-
 | Category | Endpoint suffix |
 | --- | --- |
 | [Amazon Bedrock Control Plane API actions](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Operations_Amazon_Bedrock.html) | bedrock |

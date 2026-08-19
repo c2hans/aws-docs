@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-gu
 The following sections contain general troubleshooting information about the AWS Toolkit for Visual Studio and working with AWS services from the toolkit.
 
 **Note**
-Installation and set-up-specific troubleshooting information is available in the [Troubleshooting installation issues](https://docs.aws.amazon.com//toolkit-for-visual-studio/latest/user-guide/setup-troubleshoot.html) topic, located in this User Guide.
+Installation and set-up-specific troubleshooting information is available in the [Troubleshooting installation issues](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/setup-troubleshoot.html) topic, located in this User Guide.
 
 **Topics**
 + [Troubleshooting best practices](#general-troubleshoot-best-practice)
@@ -144,4 +144,4 @@ In addition to interfering with AWS Toolkit language servers, firewall settings 
 + `https://cognito-identity.us-east-1.amazonaws.com`
 + `https://oidc.us-east-1.amazonaws.com`
 
-For a detailed list of endpoints, see the [Updating firewalls and gateways to allow access](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/endpoints.html) topic in this User Guide. For detailed information about configuring a corporate proxy for Amazon Q, see the [Configuring a corporate proxy in Amazon Q](https://docs.aws.amazon.com//amazonq/latest/qdeveloper-ug/firewall.html#corp-proxy) topic in the *Amazon Q Developer User Guide*. If you continue to encounter firewall and proxy issues, then collect your AWS Toolkit Logs and reach out to the AWS Toolkit for Visual Studio team through the [AWS Toolkit for Visual Studio issues](https://github.com/aws/aws-toolkit-visual-studio/issues) section of the AWS Toolkit for Visual Studio GitHub repository. For details on collecting your AWS Toolkit Logs, review the information in the **Troubleshooting best practices** section of this User Guide topic.
+For a detailed list of endpoints, see the [Updating firewalls and gateways to allow access](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/endpoints.html) topic in this User Guide. For detailed information about configuring a corporate proxy for Amazon Q, see the [Configuring a corporate proxy in Amazon Q](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/firewall.html#corp-proxy) topic in the *Amazon Q Developer User Guide*. If you continue to encounter firewall and proxy issues, then collect your AWS Toolkit Logs and reach out to the AWS Toolkit for Visual Studio team through the [AWS Toolkit for Visual Studio issues](https://github.com/aws/aws-toolkit-visual-studio/issues) section of the AWS Toolkit for Visual Studio GitHub repository. For details on collecting your AWS Toolkit Logs, review the information in the **Troubleshooting best practices** section of this User Guide topic.

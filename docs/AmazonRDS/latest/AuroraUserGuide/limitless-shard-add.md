@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/limitle
 
 You can create a DB shard group in an existing DB cluster, for example if you're restoring a DB cluster or you had deleted the DB shard group.
 
-For more information on primary DB cluster and DB shard group requirements, see [Aurora PostgreSQL Limitless Database requirements and considerationsAurora PostgreSQL Limitless Database requirements and considerations](limitless-reqs-limits.md).
+For more information on primary DB cluster and DB shard group requirements, see [Aurora PostgreSQL Limitless Database requirements and considerations](limitless-reqs-limits.md).
 
 **Note**
 You can have only one DB shard group per cluster.

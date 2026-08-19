@@ -11,7 +11,7 @@ If you use MediaPackage with AWS Elemental MediaLive (for example), here's the f
 
 1. You create a channel group in MediaPackage, as described in [Creating a channel group in AWS Elemental MediaPackage](channel-group-create.md). When MediaPackage provisions the channel group, it creates an egress domain for all channels and origin endpoints within the channel group.
 
-1. You create a channel within the channel group as described in [Creating a channel in AWS Elemental MediaPackageCreating a channel](channels-create.md). When MediaPackage provisions the channel, it creates two ingest domains for the channel. If you're not using input redundancy, you can send a stream to either ingest domain. There's no requirement that you send content to both domains.
+1. You create a channel within the channel group as described in [Creating a channel in AWS Elemental MediaPackage](channels-create.md). When MediaPackage provisions the channel, it creates two ingest domains for the channel. If you're not using input redundancy, you can send a stream to either ingest domain. There's no requirement that you send content to both domains.
 
 1. You create an origin endpoint within the channel as described in [Creating an origin endpoint in AWS Elemental MediaPackage](endpoints-create.md).
 **Important**

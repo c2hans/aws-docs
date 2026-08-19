@@ -146,8 +146,6 @@ The encoding for the binary fields for `ListPublicKeys` is subject to change.
 
  **Request Parameters**
 
-****
-
 | Name | Description |
 | --- | --- |
 |  StartTime  | Optionally specifies, in UTC, the start of the time range to look up public keys for CloudTrail digest files. If StartTime is not specified, the current time is used, and the current public key is returned. <br />Type: DateTime  |
@@ -156,8 +154,6 @@ The encoding for the binary fields for `ListPublicKeys` is subject to change.
  **Response Elements**
 
 `PublicKeyList`, an array of `PublicKey` objects that contains:
-
-****
 
 |  |  |
 | --- |--- |

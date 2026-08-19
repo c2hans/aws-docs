@@ -91,6 +91,8 @@ Activate Dynatrace in a specific Agent space and configure appropriate scoping
 
 1. Copy the Webhook URL and Webhook Secret. You will use these in the Dynatrace **SRE Agents** app to complete the connection. See the [Getting Started section](https://www.dynatrace.com/hub/detail/community-cloudsreagents/) for details.
 
+**Note:** AWS DevOps Agent shows the webhook secret one time. If you lose it, rotate the webhook to generate a new secret. The webhook URL does not change. For instructions on managing webhook credentials, see [Managing webhook credentials](configuring-integrations-and-knowledge-invoking-devops-agent-through-webhook.md).
+
 A single Agent Space can use more than one Dynatrace registration, and more than one environment from each. To add another registration or environment, repeat these steps.
 
 ### Step 3: Configure your Dynatrace environment

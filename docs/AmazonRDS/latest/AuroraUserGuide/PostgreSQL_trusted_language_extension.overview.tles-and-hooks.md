@@ -165,7 +165,7 @@ CONTEXT:  PL/pgSQL function password_check.passcheck_hook(text,text,pgtle.passwo
 SQL statement "SELECT password_check.passcheck_hook($1::pg_catalog.text, $2::pg_catalog.text, $3::pgtle.password_types, $4::pg_catalog.timestamptz, $5::pg_catalog.bool)"
 ```
 
-You can drop this TLE extension and uninstall its source files if you want. For more information, see [Dropping your TLE extensions from a databaseDropping your TLE extensions from a database](PostgreSQL_trusted_language_extension-creating-TLE-extensions.dropping-TLEs.md).
+You can drop this TLE extension and uninstall its source files if you want. For more information, see [Dropping your TLE extensions from a database](PostgreSQL_trusted_language_extension-creating-TLE-extensions.dropping-TLEs.md).
 
 ### Password-check hook code listing
 <a name="PostgreSQL_trusted_language_extension-example-hook_code_listing"></a>

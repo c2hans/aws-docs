@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-config
 # Enabling DNSSEC signing and establishing a chain of trust
 <a name="dns-configuring-dnssec-enable-signing"></a>
 
-****
 The incremental steps apply to the hosted zone owner and the parent zone maintainer. This can be the same person, but if not, the zone owner should notify and work with the parent zone maintainer.
 
 We recommend following the steps in this article to have your zone signed and included in the chain of trust. The following steps minimize the risk of onboarding onto DNSSEC.

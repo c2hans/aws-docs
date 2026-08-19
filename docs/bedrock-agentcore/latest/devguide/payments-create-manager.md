@@ -10,11 +10,14 @@ A Payment Manager is the top-level resource that coordinates payment operations 
 This guide walks you through creating a Payment Manager and attaching a Payment Connector using the AWS Management Console or the AWS SDK. For the complete request and response schemas, see [CreatePaymentManager](https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIReference/API_CreatePaymentManager.html) and [CreatePaymentConnector](https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIReference/API_CreatePaymentConnector.html) in the API Reference.
 
 **Tip**
-You can automate the steps on this page with the AgentCore Payments skill in the AWS agent toolkit. The skill is part of the **aws-agents** plugin and lets an AI coding agent create your Payment Manager, connector, credential provider, payment instrument, and session using the `agentcore` CLI, and add an x402 payment tool to your agent. For details, see the [quickstart](payments-getting-started.md) and the [AWS agent toolkit on GitHub](https://github.com/aws/agent-toolkit-for-aws/tree/main).
+You can automate the steps on this page with the AgentCore Payments skill in the AWS agent toolkit. The skill is part of the **aws-agents** plugin and lets an AI coding agent create your Payment Manager, connector, credential provider, payment instrument, and session using the `agentcore` CLI, and add a process payment tool to your agent. For details, see the [quickstart](payments-getting-started.md) and the [AWS agent toolkit on GitHub](https://github.com/aws/agent-toolkit-for-aws/tree/main).
 
 Before you begin, ensure you have:
 + Completed the [Prerequisites](payments-prerequisites.md) (account, credentials, provider keys).
 + Set up the required [IAM roles](payments-iam-roles.md) (administrator role and service role).
+
+**Important**
+To create a Coinbase payment connector, your account must have an active AWS Marketplace subscription to the [Coinbase Wallets for AgentCore Payments](https://aws.amazon.com/marketplace/pp/prodview-ia2zd5puqyi7g) listing. With this subscription, your Coinbase wallet usage charges are consolidated into your monthly AWS bill based on Coinbase’s [pricing](https://docs.cdp.coinbase.com/wallets/pricing) on the Coinbase website. There are no additional charges or obligations for the subscription. If the subscription is missing, `CreatePaymentConnector` fails with a `SubscriptionRequiredException` (HTTP 403). This requirement applies only to Coinbase; other providers, such as Stripe (Privy), are not affected. For more information, see [Subscribe to Coinbase Wallets for AgentCore Payments in AWS Marketplace](payments-marketplace-subscription.md).
 
 ## Create a Payment Manager
 <a name="payments-create-manager-create"></a>
@@ -69,23 +72,41 @@ Payment connectors store the credentials and configuration needed to connect wit
 
 1. (Optional) Choose **Description** to expand the section, and then enter a description for the connector.
 
-1. In the **Add Outbound Auth** section, if you want to reuse a payment credential provider previously created in [AgentCore Identity](resource-providers.md#payment-credential-provider), select an existing outbound auth from the dropdown; or choose **create a new one** to create a new payment credential provider. If you choose to create a new one, see **Create a new outbound auth**.
+1. In the **Payment auth** section, if you want to reuse a payment auth (payment credential provider) previously created in [AgentCore Identity](resource-providers.md#payment-credential-provider), select an existing payment auth from the dropdown; or choose **create a new one** to create a new payment auth. If you choose to create a new one, see **Create payment auth**.
 
 1. (Optional) To add additional connectors, choose **\+ Add connector** and repeat the steps above.
-<a name="payments-setup-pm-console-outbound-auth"></a> **Create a new outbound auth**
-When you choose **create a new one** in the connector’s outbound auth section, a panel opens where you can configure a new payment credential provider.
+<a name="payments-setup-pm-console-outbound-auth"></a> **Create payment auth**
+When you choose **create a new one** in the connector’s **Payment auth** section, the **Create payment auth** panel opens. In this panel, you configure a new payment auth — a payment credential provider that is stored in AgentCore Identity.
 
-1. For **Name**, enter a name for the outbound auth. Valid characters are `a–z`, `A–Z`, `0–9`, `_` (underscore), and `-` (hyphen).
+1. For **Payment auth name**, enter a name for the payment auth. Valid characters are `a–z`, `A–Z`, `0–9`, `_` (underscore), and `-` (hyphen).
 
-1. For **Provider**, select a payment provider from the dropdown. The available providers are **Coinbase** and **Stripe (Privy)**.
-If you choose **Coinbase**, complete the following fields under **Payment provider configurations**:
+1. For **Payment provider**, select a payment provider from the dropdown. The available providers are **Coinbase** and **Stripe (Privy)**.
+If you choose **Coinbase**, choose how to provide the credentials for the payment auth:
++  **Quick create configurations - recommended** — Quick create allows you to link to your Coinbase CDP account and let AgentCore payments create the credentials for you without leaving the AgentCore console. It opens a window to sign up or sign in to your Coinbase CDP account. The service then provisions the Coinbase CDP API key and Wallet secret and stores them as a payment auth on your behalf. You do not generate or paste any keys.
++  **Use existing configurations** — Provide Coinbase CDP credentials that you generated yourself in the [Coinbase Developer Platform](https://docs.cdp.coinbase.com/api-reference/v2/authentication#1-create-client-api-key).
+ **Use Quick create**
+If you select **Quick create configurations - recommended**, AgentCore payments creates the payment auth for you after you authorize access through Coinbase. Complete the following steps:
+
+1. Select **Quick create configurations - recommended**.
+
+1. Choose **Create payment auth**. A Coinbase window opens and displays **Coinbase connection in progress**.
+
+1. In the Coinbase window, sign in or sign up with your email address and phone number, and then select or create a Coinbase CDP project.
+
+1. Review the requested access, and then authorize AgentCore payments to create and manage credentials for your Coinbase CDP project.
+
+1. When authorization finishes, the Coinbase window displays **Coinbase connected** and closes. AgentCore payments provisions the Coinbase CDP API key and Wallet secret. The service stores them securely in AWS Secrets Manager and creates the payment auth on your behalf.
+Quick create does not support linking to an existing project with a Wallet Secret. If the Coinbase project that you authorize already has a Wallet Secret, AgentCore payments stops without rotating it. Instead, select **Use existing configurations** and provide your credentials manually.
+ **Use existing configurations**
+If you select **Use existing configurations**, complete the following fields under **Payment provider configurations**, and then choose **Create payment auth**:
 
 1. For **API key ID**, enter the unique identifier for your Coinbase CDP account credentials.
 
 1. For **API key secret**, enter the private key used to authenticate and sign requests to Coinbase CDP.
 
 1. For **Wallet secret**, enter the asymmetric private key used to authenticate sensitive wallet write operations.
-If you choose **Stripe (Privy)**, complete the following fields under **Payment provider configurations**:
+If you select **Coinbase** as the provider, your account must have an active AWS Marketplace subscription to the [Coinbase Wallets for AgentCore Payments](https://aws.amazon.com/marketplace/pp/prodview-ia2zd5puqyi7g) listing. This is a one-time subscription for an AWS account. With this subscription, your Coinbase wallet usage charges are consolidated into your monthly AWS bill based on Coinbase’s [pricing](https://docs.cdp.coinbase.com/wallets/pricing) on the Coinbase website. Otherwise, connector creation fails with a `SubscriptionRequiredException` (HTTP 403). If you are not subscribed, the console displays a **Subscribe to Coinbase to enable billing through AWS ** alert with a **Subscribe** button that you can use to subscribe without leaving the wizard. For more information, see [Subscribe to Coinbase Wallets for AgentCore Payments in AWS Marketplace](payments-marketplace-subscription.md).
+If you choose **Stripe (Privy)**, complete the following fields under **Payment provider configurations**, and then choose **Create payment auth**:
 
 1. For **App ID**, enter the unique identifier for your Privy account credentials.
 
@@ -94,7 +115,6 @@ If you choose **Stripe (Privy)**, complete the following fields under **Payment 
 1. For **Authorization ID**, enter the unique identifier for the authorization entity.
 
 1. For **Authorization private key**, enter the private key used to sign authorization requests.
-After completing the provider configuration, choose **Add Outbound Auth**.
 <a name="payments-setup-pm-console-step6"></a> **Step 6: Create the Payment Manager**
 
 1. Review your configuration, and then choose **Create Payment Manager**.

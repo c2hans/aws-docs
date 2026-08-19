@@ -22,7 +22,7 @@ To complete this tutorial, you need an AWS account. If you don't have one, compl
 
 The following steps show you how to create an Amazon EC2 instance that will act as your virtual device in place of a physical device.
 
-If this is the first time you've created an Amazon EC2 instance, you might find the instructions in [Get started with Amazon EC2Linux instances](https://docs.aws.amazon.com//AWSEC2/latest/UserGuide/EC2_GetStarted.html) to be more helpful.
+If this is the first time you've created an Amazon EC2 instance, you might find the instructions in [Get started with Amazon EC2Linux instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html) to be more helpful.
 
 **To launch an instance**
 
@@ -127,7 +127,7 @@ This installs the latest LTS release of Node.js.
 
 Your Amazon EC2 instance comes preloaded with the AWS CLI. However, you must complete your AWS CLI profile. For more information on how to configure your CLI, see [Configuring the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html).
 
-1. The following example shows sample values. Replace them with your own values. You can find these values in your [AWS console in your account info under **Security credentials**](https://console.aws.amazon.com//iam/home#/security_credentials).
+1. The following example shows sample values. Replace them with your own values. You can find these values in your [AWS console in your account info under **Security credentials**](https://console.aws.amazon.com/iam/home#/security_credentials).
 
    In your **Amazon EC2 Instance Connect** window, enter this command:
 
@@ -447,4 +447,4 @@ You can see the sample app's messages as they pass through the message broker by
    node dist/index.js --topic topic_1 --ca_file ~/certs/Amazon-root-CA-1.pem --cert ~/certs/device.pem.crt --key ~/certs/private.pem.key --endpoint {{your-iot-endpoint}}
    ```
 
-For more information about MQTT and how AWS IoT Core supports the protocol, see [MQTT](https://docs.aws.amazon.com//iot/latest/developerguide/mqtt.html).
+For more information about MQTT and how AWS IoT Core supports the protocol, see [MQTT](https://docs.aws.amazon.com/iot/latest/developerguide/mqtt.html).

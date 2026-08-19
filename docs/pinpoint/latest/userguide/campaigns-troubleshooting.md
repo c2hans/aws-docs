@@ -31,7 +31,7 @@ For **dynamic segments**, the endpoint count can change over time based on the c
 ### Using recipients timezone
 <a name="troubleshooting-campaign-time"></a>
 
-When a campaign is scheduled to use a recipients’ local time ([isLocalTime](https://docs.aws.amazon.com//pinpoint/latest/apireference/apps-application-id-campaigns.html) set to true) for the Campaign, all endpoints must have a `Demographic.Timezone` attribute value formatted correctly in the endpoint definition, else the endpoint will not be targetedsuccessfully. This is because the [isLocalTime](https://docs.aws.amazon.com//pinpoint/latest/apireference/apps-application-id-campaigns.html) option bases the delivery time on each recipient's local time zone.
+When a campaign is scheduled to use a recipients’ local time ([isLocalTime](https://docs.aws.amazon.com/pinpoint/latest/apireference/apps-application-id-campaigns.html) set to true) for the Campaign, all endpoints must have a `Demographic.Timezone` attribute value formatted correctly in the endpoint definition, else the endpoint will not be targetedsuccessfully. This is because the [isLocalTime](https://docs.aws.amazon.com/pinpoint/latest/apireference/apps-application-id-campaigns.html) option bases the delivery time on each recipient's local time zone.
 
 ### Processing time
 <a name="troubleshooting-campaign-processing-time"></a>

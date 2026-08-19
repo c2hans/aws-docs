@@ -41,16 +41,12 @@ To copy a model to another Region, send a [CreateModelCopyJob](https://docs.aws.
 
 The following fields are required:
 
-****
-
 | Field | Brief description |
 | --- | --- |
 | sourceModelArn | The Amazon Resource Name (ARN) of the model to copy. |
 | targetModelName | A name for the model copy. |
 
 The following fields are optional:
-
-****
 
 | Field | Use-case |
 | --- | --- |

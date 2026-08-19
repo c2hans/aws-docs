@@ -32,7 +32,8 @@ After successful completion of the `RequestCertificate` action, there is a delay
    "ManagedBy": "{{string}}",
    "Options": {
       "CertificateTransparencyLoggingPreference": "{{string}}",
-      "Export": "{{string}}"
+      "Export": "{{string}}",
+      "ValidationMethod": "{{string}}"
    },
    "SubjectAlternativeNames": [ "{{string}}" ],
    "Tags": [

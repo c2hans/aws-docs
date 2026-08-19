@@ -18,10 +18,8 @@ The `NCryptGetProperty` function retrieves property values for a key storage obj
  `pszProperty ` [in]
 A pointer to a null-terminated Unicode string containing the property name to retrieve.
 When using `NCRYPT_PROV_HANDLE`, AWS CloudHSM Key Storage Provider (KSP) supports the following KSP identifiers:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/cloudhsm/latest/userguide/ksp-library-apis-get-property.html)
 When using `NCRYPT_KEY_HANDLE`, AWS CloudHSM Key Storage Provider (KSP) supports the following KSP identifiers:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/cloudhsm/latest/userguide/ksp-library-apis-get-property.html)
 Values are wide-character string literal, as indicated by L before the literal.
 
@@ -38,10 +36,8 @@ If the `pbOutput` is NULL, this stores the required size (in bytes).
 
 `dwFlags` [in]
 Flags to modify the function's behavior. You can use zero or:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/cloudhsm/latest/userguide/ksp-library-apis-get-property.html)
 When pszProperty is `NCRYPT_SECURITY_DESCR_PROPERTY`, use one or a combination of:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/cloudhsm/latest/userguide/ksp-library-apis-get-property.html)
 
 ## Return Value
@@ -50,8 +46,6 @@ When pszProperty is `NCRYPT_SECURITY_DESCR_PROPERTY`, use one or a combination o
 The function returns a status code to indicate success or failure.
 
 Common return codes include:
-
-****
 
 | Return code | Description |
 | --- | --- |

@@ -20,6 +20,6 @@ Your AWS account has the following quotas related to AWS B2B Data Interchange.
 | Maximum electronic data interchange (EDI) file size | 150 MB | No |
 | Maximum output JSON/XML file size | 512 MB | No |
 
-For more information about supported AWS Regions, endpoints, and service quotas, see [AWS B2B Data Interchange endpoints and quotas](https://docs.aws.amazon.com//general/latest/gr/b2bi-service.html) in the *Amazon Web Services General Reference*.
+For more information about supported AWS Regions, endpoints, and service quotas, see [AWS B2B Data Interchange endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/b2bi-service.html) in the *Amazon Web Services General Reference*.
 
 For information about troubleshooting quota-related issues, see [Troubleshooting AWS B2B Data Interchange](troubleshooting.md).

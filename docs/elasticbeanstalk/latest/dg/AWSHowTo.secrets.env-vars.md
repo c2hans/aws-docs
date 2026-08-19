@@ -194,7 +194,7 @@ aws elasticbeanstalk update-environment \
 ### Configuration using the AWS SDK
 <a name="AWSHowTo.secrets.configure-env-vars.aws-sdk"></a>
 
-You can configure secrets and parameters as environment variables using the [AWS SDKs](https://docs.aws.amazon.com//code-library/). Similar to the `update-environment` and `create-environment` AWS CLI commands mentioned in the previous section, you can use the [CreateEnvironment](https://docs.aws.amazon.com//elasticbeanstalk/latest/api/API_CreateEnvironment.html) and [UpdateEnvironment](https://docs.aws.amazon.com//elasticbeanstalk/latest/api/API_UpdateEnvironment.html) API actions. Use the `OptionSettings` request parameter to specify the options of the [aws:elasticbeanstalk:application:environmentsecrets](command-options-general.md#command-options-general-elasticbeanstalk-application-environmentsecrets) namespace.
+You can configure secrets and parameters as environment variables using the [AWS SDKs](https://docs.aws.amazon.com/code-library/). Similar to the `update-environment` and `create-environment` AWS CLI commands mentioned in the previous section, you can use the [CreateEnvironment](https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_CreateEnvironment.html) and [UpdateEnvironment](https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_UpdateEnvironment.html) API actions. Use the `OptionSettings` request parameter to specify the options of the [aws:elasticbeanstalk:application:environmentsecrets](command-options-general.md#command-options-general-elasticbeanstalk-application-environmentsecrets) namespace.
 
 ## Extracting JSON keys from Secrets Manager secrets
 <a name="AWSHowTo.secrets.json"></a>
@@ -262,7 +262,7 @@ This topic recommends best practices for your application to use environment sec
 ### Refreshing your environment variables
 <a name="AWSHowTo.secrets.rotating-secrets.refresh-env-vars"></a>
 
-To trigger your Elastic Beanstalk environment to refetch the latest values of the secrets from their secret stores, we recommend that you run either the `UpdateEnvironment` or `RestartAppServer` operation. You can run these operations using the Elastic Beanstalk console, the AWS CLI, or the Elastic Beanstalk API. For more information, see [*AWS CLI examples for Elastic Beanstalk*](https://docs.aws.amazon.com//cli/latest/userguide/cli_elastic-beanstalk_code_examples.html), or the [AWS Elastic Beanstalk API Reference](https://docs.aws.amazon.com/elasticbeanstalk/latest/api/).
+To trigger your Elastic Beanstalk environment to refetch the latest values of the secrets from their secret stores, we recommend that you run either the `UpdateEnvironment` or `RestartAppServer` operation. You can run these operations using the Elastic Beanstalk console, the AWS CLI, or the Elastic Beanstalk API. For more information, see [*AWS CLI examples for Elastic Beanstalk*](https://docs.aws.amazon.com/cli/latest/userguide/cli_elastic-beanstalk_code_examples.html), or the [AWS Elastic Beanstalk API Reference](https://docs.aws.amazon.com/elasticbeanstalk/latest/api/).
 
 ### Managing auto scaling effects on secret synchronization
 <a name="AWSHowTo.secrets.rotating-secrets.as-effects"></a>

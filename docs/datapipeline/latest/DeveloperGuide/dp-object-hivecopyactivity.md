@@ -78,20 +78,14 @@ The following example shows how to use `HiveCopyActivity` and `DynamoDBExportDat
 ## Syntax
 <a name="hivecopyactivity-syntax"></a>
 
-****
-
 | Object Invocation Fields | Description | Slot Type |
 | --- | --- | --- |
 | schedule | This object is invoked within the execution of a schedule interval. Users must specify a schedule reference to another object to set the dependency execution order for this object. Users can satisfy this requirement by explicitly setting a schedule on the object, for example, by specifying "schedule": {"ref": "DefaultSchedule"}. In most cases, it is better to put the schedule reference on the default pipeline object so that all objects inherit that schedule. Or, if the pipeline has a tree of schedules (schedules within the master schedule), users can create a parent object that has a schedule reference. For more information about example optional schedule configurations, see [https://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/dp-object-schedule.html](https://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/dp-object-schedule.html) | Reference Object, e.g. "schedule":{"ref":"myScheduleId"} |
-
-****
 
 | Required Group (One of the following is required) | Description | Slot Type |
 | --- | --- | --- |
 | runsOn | Specify cluster to run on. | Reference Object, e.g. "runsOn":{"ref":"myResourceId"} |
 | workerGroup | The worker group. This is used for routing tasks. If you provide a runsOn value and workerGroup exists, workerGroup is ignored. | String |
-
-****
 
 | Optional Fields | Description | Slot Type |
 | --- | --- | --- |
@@ -118,8 +112,6 @@ The following example shows how to use `HiveCopyActivity` and `DynamoDBExportDat
 | resizeClusterMaxInstances | A limit on the maximum number of instances that can be requested by the resize algorithm | Integer |
 | retryDelay | The timeout duration between two retry attempts. | Period |
 | scheduleType | Schedule type allows you to specify whether the objects in your pipeline definition should be scheduled at the beginning of interval or end of the interval. Time Series Style Scheduling means instances are scheduled at the end of each interval and Cron Style Scheduling means instances are scheduled at the beginning of each interval. An on-demand schedule allows you to run a pipeline one time per activation. This means you do not have to clone or re-create the pipeline to run it again. If you use an on-demand schedule it must be specified in the default object and must be the only scheduleType specified for objects in the pipeline. To use on-demand pipelines, you simply call the ActivatePipeline operation for each subsequent run. Values are: cron, ondemand, and timeseries. | Enumeration |
-
-****
 
 | Runtime Fields | Description | Slot Type |
 | --- | --- | --- |
@@ -148,8 +140,6 @@ The following example shows how to use `HiveCopyActivity` and `DynamoDBExportDat
 | @status | The status of this object. | String |
 | @version | Pipeline version the object was created with. | String |
 | @waitingOn | Description of list of dependencies this object is waiting on. | Reference Object, e.g. "waitingOn":{"ref":"myRunnableObjectId"} |
-
-****
 
 | System Fields | Description | Slot Type |
 | --- | --- | --- |

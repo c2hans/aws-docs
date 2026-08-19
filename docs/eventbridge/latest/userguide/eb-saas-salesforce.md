@@ -134,7 +134,7 @@ To send events to EventBridge, you first need to configure Amazon AppFlow to use
 
 1. For field mapping, select **Map all fields directly**. Alternatively, you can select the fields that are of interest from the **Source field name** list.
 
-   For more information about field mapping, see [Map data fields](https://docs.aws.amazon.com//appflow/latest/userguide/getting-started.html#map-fields).
+   For more information about field mapping, see [Map data fields](https://docs.aws.amazon.com/appflow/latest/userguide/getting-started.html#map-fields).
 
 1. Choose **Next**.
 

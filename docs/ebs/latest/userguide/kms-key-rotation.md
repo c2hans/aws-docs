@@ -17,4 +17,4 @@ When you use a rotated customer managed key to encrypt a new volume or snapshot,
 Automatic key rotation is supported only for symmetric customer managed keys with key material that AWS KMS creates.
 AWS KMS automatically rotates AWS managed keys every year. You can't enable or disable key rotation for AWS managed keys.
 
-For more information, see [ Rotating KMS key](https://docs.aws.amazon.com//kms/latest/developerguide/rotate-keys.html#rotate-keys-how-it-works) in the *AWS Key Management Service Developer Guide*.
+For more information, see [ Rotating KMS key](https://docs.aws.amazon.com/kms/latest/developerguide/rotate-keys.html#rotate-keys-how-it-works) in the *AWS Key Management Service Developer Guide*.

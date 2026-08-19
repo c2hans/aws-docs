@@ -8,8 +8,6 @@ End of support notice: On May 31, 2026, AWS will end support for AWS Panorama. A
 <a name="security-bestpractices"></a>
 
 Keep in mind the following best practices when using the AWS Panorama appliance.
-
-****
 + **Physically secure the appliance** – Install the appliance in an enclosed server rack or secure room. Limit physical access to the device to authorized personnel.
 + **Secure the appliance's network connection** – Connect the appliance to a router that limits access to internal and external resources. The appliance needs to connect to cameras, which can be on a secure internal network. It also needs to connect to AWS. Use the second Ethernet port only for physical redundancy, and configure the router to allow only required traffic.
 

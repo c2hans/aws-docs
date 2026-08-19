@@ -26,7 +26,7 @@ You can turn on Amazon S3 shuffling to run your AWS Glue jobs reliably without f
   ```
   --conf spark.shuffle.glue.s3ShuffleBucket=s3://glue-shuffle-123456789-us-east-1/glue-shuffle-data/
   ```
-+  Set the Amazon S3 storage lifecycle policies on the *prefix* (such as `glue-shuffle-data`) as the shuffle manager does not clean the files after the job is done. The intermediate shuffle and spilled data should be deleted after a job is finished. Users can set a short lifecycle policies on the prefix. Instructions for setting up an Amazon S3 lifecycle policy are available at [Setting lifecycle configuration on a bucket](https://docs.aws.amazon.com//AmazonS3/latest/userguide/how-to-set-lifecycle-configuration-intro.html) in the Amazon Simple Storage Service User Guide.
++  Set the Amazon S3 storage lifecycle policies on the *prefix* (such as `glue-shuffle-data`) as the shuffle manager does not clean the files after the job is done. The intermediate shuffle and spilled data should be deleted after a job is finished. Users can set a short lifecycle policies on the prefix. Instructions for setting up an Amazon S3 lifecycle policy are available at [Setting lifecycle configuration on a bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/how-to-set-lifecycle-configuration-intro.html) in the Amazon Simple Storage Service User Guide.
 
 ## Using AWS Glue Spark shuffle manager from the AWS console
 <a name="monitor-spark-shuffle-manager-using-console"></a>

@@ -12,7 +12,7 @@ To complete this step, you launch an Amazon EC2 instance using the Amazon Linux 
 + Make sure that the service role associated with the EC2 instance allows access to the Amazon S3 bucket where AMB Access certificates are stored and that it has required permissions for working with AMB Access resources. For more information, see [Example IAM Role Permissions Policy for Hyperledger Fabric Client EC2 Instance](security_iam_hyperledger_ec2_client.md).
 
 **Note**
-An AWS CloudFormation template to create a Hyperledger Fabric client is available in the [amazon-managed-blockchain-client-templates repository](https://github.com/awslabs/amazon-managed-blockchain-client-templates) on Github. For more information, see the [readme.md](https://github.com/awslabs/amazon-managed-blockchain-client-templates/blob/master/README.md) in that repository. For more information about using CloudFormation, see [Getting Started](https://docs.aws.amazon.com//AWSCloudFormation/latest/UserGuide/GettingStarted.Walkthrough.html) in the *AWS CloudFormation User Guide*.
+An AWS CloudFormation template to create a Hyperledger Fabric client is available in the [amazon-managed-blockchain-client-templates repository](https://github.com/awslabs/amazon-managed-blockchain-client-templates) on Github. For more information, see the [readme.md](https://github.com/awslabs/amazon-managed-blockchain-client-templates/blob/master/README.md) in that repository. For more information about using CloudFormation, see [Getting Started](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/GettingStarted.Walkthrough.html) in the *AWS CloudFormation User Guide*.
 
 ## Step 4.1: Install Packages
 <a name="get-started-client-install-packages"></a>

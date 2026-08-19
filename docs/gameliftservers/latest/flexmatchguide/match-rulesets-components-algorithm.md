@@ -21,7 +21,7 @@ To customize the match algorithm, add an `algorithm` component to your rule set 
 
 Use the following optional customizations to impact different stages of your matchmaking process.
 + [Add pre-batch sorting](#match-rulesets-components-algorithm-presort)
-+ [Form batches based on batchDistance attributes](https://docs.aws.amazon.com//gameliftservers/latest/flexmatchguide/match-rules-reference-ruletype.html#match-rules-reference-ruletype-batchdistance)
++ [Form batches based on batchDistance attributes](https://docs.aws.amazon.com/gameliftservers/latest/flexmatchguide/match-rules-reference-ruletype.html#match-rules-reference-ruletype-batchdistance)
 + [Prioritize backfill tickets](#match-rulesets-components-algorithm-backfill)
 + [Favor older tickets with expansions](#match-rulesets-components-algorithm-expansion)
 

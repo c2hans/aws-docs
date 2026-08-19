@@ -39,8 +39,6 @@ Lookout for Equipment takes this information in as two timestamps in a CSV file 
 
 The following is an example of such a CSV file.
 
-****
-
 | Row |  Timestamp 1 |  Timestamp 2 |
 | --- | --- | --- |
 | 1  | 1/1/2020 0:00  | 1/3/2020 0:00 |

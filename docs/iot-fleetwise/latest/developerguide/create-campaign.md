@@ -107,7 +107,7 @@ By default, an approved campaign is activated immediately and doesn't have a set
 
 Upload a .json file with details about the data collection scheme.
 
-1. To import information about the data collection scheme, choose **Choose files**. For more information about the required file format, see the [CreateCampaign](https://docs.aws.amazon.com//iot-fleetwise/latest/APIReference/API_CreateCampaign.html#API_CreateCampaign) API documentation.
+1. To import information about the data collection scheme, choose **Choose files**. For more information about the required file format, see the [CreateCampaign](https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_CreateCampaign.html#API_CreateCampaign) API documentation.
 **Note**
 AWS IoT FleetWise currently supports the .json file format extension.
 

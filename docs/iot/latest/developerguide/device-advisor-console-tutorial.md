@@ -25,7 +25,7 @@ To complete this tutorial, you need to [ create a thing and certificate](https:/
 
 Create a test suite suite so that you can run it for your devices and perform verification.
 
-1. In the [AWS IoT console](https://console.aws.amazon.com//iot), in the navigation pane, expand **Test**, **Device Advisor** and then choose **Test suites**.
+1. In the [AWS IoT console](https://console.aws.amazon.com/iot), in the navigation pane, expand **Test**, **Device Advisor** and then choose **Test suites**.
 ![The Device Advisor interface with options to create test suites for qualifying devices, running long duration tests, and custom test suites.](http://docs.aws.amazon.com/iot/latest/developerguide/images/da-testsuite.png)
 
    Choose **Create Test Suite**.
@@ -93,7 +93,7 @@ To add more test groups to the test suite, choose **Add test group**. Follow the
 ## Start a test suite run
 <a name="device-advisor-console-run-test-suite"></a>
 
-1. In the [AWS IoT console](https://console.aws.amazon.com//iot), in the navigation pane, expand **Test**, **Device Advisor**, and then choose **Test suites**.
+1. In the [AWS IoT console](https://console.aws.amazon.com/iot), in the navigation pane, expand **Test**, **Device Advisor**, and then choose **Test suites**.
 
 1. Choose the test suite for which you'd like to view the test suite details.
 ![The console that shows a single test suite named "Device advisor demo suite" created on May 11, 2021.](http://docs.aws.amazon.com/iot/latest/developerguide/images/da-test-suites.png)
@@ -118,7 +118,7 @@ To add more test groups to the test suite, choose **Add test group**. Follow the
 ## Stop a test suite run (optional)
 <a name="device-advisor-stop-test-run"></a>
 
-1. In the [AWS IoT console](https://console.aws.amazon.com//iot), in the navigation pane, expand **Test**, **Device Advisor**, and then choose **Test runs and results**.
+1. In the [AWS IoT console](https://console.aws.amazon.com/iot), in the navigation pane, expand **Test**, **Device Advisor**, and then choose **Test runs and results**.
 
 1. Choose the test suite in progress that you want to stop.
 ![The results of test runs on the Device Advisor console.](http://docs.aws.amazon.com/iot/latest/developerguide/images/da-test-suite-to-stop.PNG)
@@ -132,7 +132,7 @@ To add more test groups to the test suite, choose **Add test group**. Follow the
 ## View test suite run details and logs
 <a name="device-advisor-console-view-logs"></a>
 
-1. In the [AWS IoT console](https://console.aws.amazon.com//iot), in the navigation pane, expand **Test**, **Device Advisor** and then choose **Test runs and results**.
+1. In the [AWS IoT console](https://console.aws.amazon.com/iot), in the navigation pane, expand **Test**, **Device Advisor** and then choose **Test runs and results**.
 
    This page displays:
    + Number of IoT things

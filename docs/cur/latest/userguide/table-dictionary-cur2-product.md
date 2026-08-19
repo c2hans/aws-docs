@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/table-dictionary-cu
 
 Product columns contain data about the product that is being charged in the line item.
 
-****
-
 | Column name | Description | Data type |
 | --- | --- | --- |
 | product | A map column containing key-value pairs of multiple product attributes and their values for a given line item.<br />A product attribute only appears in the map column if it has a value that applies to the specific line item. Any product column that appeared in legacy CUR, but is not part of the CUR 2.0 static schema, appears in this map column. <br />The keys of this column can be queried as individual columns by using the dot operator. For more information, see [Data query](https://docs.aws.amazon.com/cur/latest/userguide/dataexports-data-query.html).<br />For some AWS services, the map includes additional service-specific attributes. For the list of these attributes and the services that populate them, see [Service-specific product attributes](#table-dictionary-cur2-product-service-attributes). | map <string, string> |
@@ -42,8 +40,6 @@ For certain AWS services, the product map column includes additional standardize
 These attributes let you filter, group, and compare costs along service-specific dimensions without parsing free-text description fields. For example, for Amazon Bedrock usage you can group costs by product.provider to compare spending across model providers, or by product.inference\_type to separate input token costs from output token costs.
 
 The **Applies to** column indicates which AWS service populates each attribute.
-
-****
 
 | Map key | Description | Example values | Applies to |
 | --- | --- | --- | --- |

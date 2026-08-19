@@ -9,8 +9,6 @@ This topic describes what happens when you send an email with SES, and the vario
 
 ![Email flow from sender through SES to receivers, showing bounce and complaint feedback loops.](http://docs.aws.amazon.com/ses/latest/dg/images/arch_overview-diagram.png)
 
-****
-
 1. A client application, acting as an email sender, makes a request to SES to send email to one or more recipients.
 
 1. If the request is valid, SES accepts the email.

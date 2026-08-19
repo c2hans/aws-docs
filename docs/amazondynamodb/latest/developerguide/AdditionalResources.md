@@ -64,7 +64,7 @@ For additional Prescriptive Guidance articles and videos for DynamoDB, see [Pres
 ## Knowledge Center articles
 <a name="AdditionalResources.KnowledgeCenter"></a>
 
-The AWS Knowledge Center articles and videos cover the most frequent questions and requests that we receive from AWS customers. The following are some current Knowledge Center articles on specific tasks that relate to DynamoDB:
+The AWS Knowledge Center articles and videos cover the most frequent questions and requests received from AWS customers. The following are some current Knowledge Center articles on specific tasks that relate to DynamoDB:
 
 **Cost optimization**
 + [How do I optimize costs with Amazon DynamoDB?](https://repost.aws/knowledge-center/dynamodb-optimize-costs)

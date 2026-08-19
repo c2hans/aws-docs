@@ -32,7 +32,8 @@ To declare this entity in your CloudFormation template, use the following syntax
   "Properties" : {
       "[Domain](#cfn-personalize-schema-domain)" : {{String}},
       "[Name](#cfn-personalize-schema-name)" : {{String}},
-      "[Schema](#cfn-personalize-schema-schema)" : {{String}}
+      "[Schema](#cfn-personalize-schema-schema)" : {{String}},
+      "[Tags](#cfn-personalize-schema-tags)" : {{[ Tag, ... ]}}
     }
 }
 ```
@@ -46,6 +47,8 @@ Properties:
   [Domain](#cfn-personalize-schema-domain): {{String}}
   [Name](#cfn-personalize-schema-name): {{String}}
   [Schema](#cfn-personalize-schema-schema): {{String}}
+  [Tags](#cfn-personalize-schema-tags): {{
+    - Tag}}
 ```
 
 ## Properties
@@ -72,6 +75,14 @@ The schema.
 *Required*: Yes
 *Type*: String
 *Maximum*: `10000`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`Tags`  <a name="cfn-personalize-schema-tags"></a>
+Property description not available.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-personalize-schema-tag.md)
+*Minimum*: `0`
+*Maximum*: `50`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values

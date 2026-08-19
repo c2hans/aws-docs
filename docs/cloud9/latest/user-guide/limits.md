@@ -18,8 +18,6 @@ The following table provides the default quotas for AWS Cloud9 for an AWS accoun
 
 These increases are not granted immediately, so it might take a couple of days for your increase to become effective.
 
-****
-
 | Resource | Default Limit | Adjustable |
 | --- | --- | --- |
 | Maximum number of AWS Cloud9 EC2 development environments |  +  100 per user <br />+  200 per account   | Yes |
@@ -36,8 +34,6 @@ When you download files from the AWS Cloud9 IDE to the local file system the spe
 
 ## Related AWS Service quotas
 <a name="limits-related"></a>
-
-****
 
 |  |  |
 | --- |--- |

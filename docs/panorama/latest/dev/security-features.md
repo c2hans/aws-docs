@@ -8,8 +8,6 @@ End of support notice: On May 31, 2026, AWS will end support for AWS Panorama. A
 <a name="security-features"></a>
 
 To protect your [applications, models](gettingstarted-concepts.md), and hardware against malicious code and other exploits, the AWS Panorama Appliance implements an extensive set of security features. These include but are not limited to the following.
-
-****
 + **Full-disk encryption** – The appliance implements Linux unified key setup (LUKS2) full-disk encryption. All system software and application data are encrypted with a key that is specific to your device. Even with physical access to the device, an attacker cannot inspect the contents of its storage.
 + **Memory layout randomization** – To protect against attacks that target executable code loaded into memory, the AWS Panorama Appliance uses address space layout randomization (ASLR). ASLR randomizes the location of operating system code as it is loaded into memory. This prevents the use of exploits that attempt to overwrite or run specific sections of code by predicting where it is stored at runtime.
 + **Trusted execution environment** – The appliance uses a trusted execution environment (TEE) based on ARM TrustZone, with isolated storage, memory, and processing resources. Keys and other sensitive data stored in the trust zone can only be accessed by a trusted application, which runs in a separate operating system within the TEE. The AWS Panorama Appliance software runs in the untrusted Linux environment alongside application code. It can only access cryptographic operations by making a request to the secure application.

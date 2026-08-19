@@ -14,8 +14,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/ug/aws-ground-stat
 
  The AWS Ground Station global network includes ground station locations that are not physically located in the [AWS Region ](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/) to which they are connected. The list of ground stations that you have access to can be retrieved via the AWS SDK [ ListGroundStation ](https://docs.aws.amazon.com/ground-station/latest/APIReference/API_ListGroundStations.html) response. As of June 16, 2026, AWS Ground Station no longer supports antenna resources in Seoul. The full list of ground station locations is presented below. Please refer to the onboarding guide to add or modify site approvals for your satellites.
 
-****
-
 | Ground Station Name | Ground Station Location | AWS Region Name | AWS Region Code | Notes |
 | --- | --- | --- | --- | --- |
 | Alaska 1 | Alaska, USA | US West (Oregon) | us-west-2 | Not physically located in an AWS region |

@@ -113,8 +113,6 @@ This example assumes there are no more entries in the price file where **Related
 
 As shown in the following table, the Free Tier offer with SKU `ABCD` is valid in the `Asia Pacific (Singapore)` and `US East (Ohio)` Regions, but not in `AWS GovCloud (US)`. The covered usage by Free Tier is 400,000 seconds total, used across both eligible Regions.
 
-****
-
 | SKU | StartingRage | EndingRange | Unit | RelatedTo | Location |
 | --- | --- | --- | --- | --- | --- |
 | ABCD | 0 | 400000 | seconds |  | Any |

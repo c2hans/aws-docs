@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsx
 
 AWS X-Ray provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="xray-BatchGetTraceSummaryById"></a>[BatchGetTraceSummaryById](https://docs.aws.amazon.com/xray/latest/devguide/security_iam_id-based-policy-examples.html#security_iam_id-based-policy-examples-console) | Retrieve metadata for a list of traces specified by ID | Read |

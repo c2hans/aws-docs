@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/apac
 
 Apache Kafka APIs for Amazon MSK clusters provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="kafka-cluster-DescribeCluster"></a>[DescribeCluster](https://docs.aws.amazon.com/msk/latest/developerguide/iam-access-control.html#actions) | Describe various aspects of the cluster, equivalent to Apache Kafka's DESCRIBE CLUSTER ACL | List |

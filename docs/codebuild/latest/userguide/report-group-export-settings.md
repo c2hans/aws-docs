@@ -13,7 +13,7 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/report-group-
 
 For more information, see [Data encryption](security-encryption.md).
 
-If you use the AWS CLI to update a report group, you can also update or add tags. For more information, see [Tag a report group in AWS CodeBuildTag a report group](how-to-tag-report-group.md).
+If you use the AWS CLI to update a report group, you can also update or add tags. For more information, see [Tag a report group in AWS CodeBuild](how-to-tag-report-group.md).
 
 **Note**
 The CodeBuild service role specified in the project is used for permissions to upload to the S3 bucket.

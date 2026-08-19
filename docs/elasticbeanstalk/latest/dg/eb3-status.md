@@ -22,8 +22,6 @@ If the root directory contains a `platform.yaml` file specifying a custom platfo
 ## Options
 <a name="eb3-statusoptions"></a>
 
-****
-
 |  Name  |  Description  |
 | --- | --- |
 | `-v`<br />or<br />`--verbose` | Provides more information about individual instances, such as their status with the Elastic Load Balancing load balancer. |

@@ -17,14 +17,14 @@ To learn more about CloudTrail, including how to configure and enable it, see th
 CloudTrail is enabled on your AWS account when you create the account. When supported event activity occurs in AWS Control Tower, that activity is recorded in a CloudTrail event along with other AWS service events in **Event history**. You can view, search, and download recent events in your AWS account. For more information, see [Viewing Events with CloudTrail Event History](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/view-cloudtrail-events.html).
 
 **Note**
-In AWS Control Tower releases before landing zone version 3.0, AWS Control Tower created a member account trail. When you update to release 3.0, your CloudTrail trail is updated to become an organization trail. For best practices when moving between trails, see [Creating an organizational trail](https://docs.aws.amazon.com//awscloudtrail/latest/userguide/creating-trail-organization.html#creating-an-organizational-trail-best-practice) in the CloudTrail User Guide.
+In AWS Control Tower releases before landing zone version 3.0, AWS Control Tower created a member account trail. When you update to release 3.0, your CloudTrail trail is updated to become an organization trail. For best practices when moving between trails, see [Creating an organizational trail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/creating-trail-organization.html#creating-an-organizational-trail-best-practice) in the CloudTrail User Guide.
 
 **Recommended: Create a trail**
 
 For an ongoing record of events in your AWS account, including events for AWS Control Tower, create a trail. A *trail* enables CloudTrail to deliver log files to an Amazon S3 bucket. By default, when you create a trail in the console, the trail applies to all AWS Regions. The trail logs events from all Regions in the AWS partition and delivers the log files to the Amazon S3 bucket that you specify. Additionally, you can configure other AWS services to further analyze and act upon the event data collected in CloudTrail logs. For more information, see the following:
 + [Overview for Creating a Trail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-create-and-update-a-trail.html)
-+  [Prepare for creating a trail](https://docs.aws.amazon.com//awscloudtrail/latest/userguide/creating-an-organizational-trail-prepare.html)
-+  [Managing CloudTrail costs](https://docs.aws.amazon.com//awscloudtrail/latest/userguide/cloudtrail-trail-manage-costs.html)
++  [Prepare for creating a trail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/creating-an-organizational-trail-prepare.html)
++  [Managing CloudTrail costs](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-trail-manage-costs.html)
 + [CloudTrail Supported Services and Integrations](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.html#cloudtrail-aws-service-specific-topics-integrations)
 + [Configuring Amazon SNS Notifications for CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/getting_notifications_top_level.html)
 + [Receiving CloudTrail Log Files from Multiple Regions](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/receive-cloudtrail-log-files-from-multiple-regions.html) and [Receiving CloudTrail Log Files from Multiple Accounts](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-receive-logs-from-multiple-accounts.html)
@@ -32,7 +32,7 @@ For an ongoing record of events in your AWS account, including events for AWS Co
 AWS Control Tower logs the following actions as events in CloudTrail log files:
 
 **Public APIs**
-+ For a full list of the AWS Control Tower public APIs and details about each one, see [The AWS Control Tower API Reference](https://docs.aws.amazon.com//controltower/latest/APIReference/Welcome.html). Calls to these public APIs are logged by AWS CloudTrail.
++ For a full list of the AWS Control Tower public APIs and details about each one, see [The AWS Control Tower API Reference](https://docs.aws.amazon.com/controltower/latest/APIReference/Welcome.html). Calls to these public APIs are logged by AWS CloudTrail.
 
 **Other APIs**
 + `SetupLandingZone`

@@ -14,8 +14,6 @@ Modify the default version for the instance metadata service (IMDS) at the accou
 ## Change Type Details
 <a name="ct-2o1knqxw39mkc-MAEu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2o1knqxw39mkc |

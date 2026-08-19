@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/incident-resp
 
 AWS provides several tools for monitoring your Elastic Beanstalk resources and responding to potential incidents. Monitoring is important for maintaining the reliability, availability, and performance of AWS Elastic Beanstalk and your AWS solutions. You should collect monitoring data from all of the parts of your AWS solution so that you can more easily debug a multipoint failure if one occurs.
 
-For more information about monitoring, see [Monitoring environments in Elastic BeanstalkMonitoring environments](environments-health.md).
+For more information about monitoring, see [Monitoring environments in Elastic Beanstalk](environments-health.md).
 
 For other Elastic Beanstalk security topics, see [AWS Elastic Beanstalk security](security.md).
 

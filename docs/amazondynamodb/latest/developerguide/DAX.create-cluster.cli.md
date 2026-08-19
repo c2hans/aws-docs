@@ -154,7 +154,7 @@ DAX is designed to run within an Amazon Virtual Private Cloud environment (Amazo
 
    In the output, note the subnet identifiers—for example, `subnet-11111111`.
 
-1. Create the subnet group. Ensure that you specify at least one subnet ID in the `--subnet-ids` parameter.
+1. Create the subnet group. Make sure that you specify at least one subnet ID in the `--subnet-ids` parameter.
 
    ```
    aws dax create-subnet-group \

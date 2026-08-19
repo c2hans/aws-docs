@@ -24,8 +24,6 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_secretsmanager-actions-as-permissions).
 
-****
-
 - **   BatchGetSecretValue  **
   - **IAM action:**  [secretsmanager:BatchGetSecretValue](#list_secretsmanager-action-BatchGetSecretValue)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
   - **IAM action:**  [secretsmanager:GetSecretValue](#list_secretsmanager-action-GetSecretValue)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
@@ -162,8 +160,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
 <a name="list_secretsmanager-actions-as-permissions"></a>
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
-
-****
 
 - **   [BatchGetSecretValue](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_BatchGetSecretValue.html)  **
   - **Description:** Grants permission to retrieve and decrypt a list of secrets
@@ -308,8 +304,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
 
-****
-
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
 |  [Secret](https://docs.aws.amazon.com/service-authorization/latest/reference/list_awssecretsmanager.html#awssecretsmanager-resources-for-iam-policies)  | arn:${Partition}:secretsmanager:${Region}:${Account}:secret:${SecretId} | [aws:RequestTag/${TagKey}](#list_secretsmanager-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_secretsmanager-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_secretsmanager-aws_TagKeys)<br />[secretsmanager:ResourceTag/tag-key](#list_secretsmanager-secretsmanager_ResourceTag_tag-key)<br />[secretsmanager:resource/AllowRotationLambdaArn](#list_secretsmanager-secretsmanager_resource_AllowRotationLambdaArn)<br />[secretsmanager:resource/Type](#list_secretsmanager-secretsmanager_resource_Type) |
@@ -318,8 +312,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_secretsmanager-policy-keys"></a>
 
 AWS Secrets Manager defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

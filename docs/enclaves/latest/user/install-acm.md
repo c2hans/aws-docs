@@ -69,7 +69,7 @@ After you launch the instance, make a note of the instance ID, as you'll need it
 
 **To launch an instance using the ACM for Nitro Enclaves AMI from AWS Marketplace**
 
-1. Open the [ACM for Nitro Enclaves](https://aws.amazon.com//marketplace/pp/B08S7NZFNF) page in the AWS Marketplace.
+1. Open the [ACM for Nitro Enclaves](https://aws.amazon.com/marketplace/pp/B08S7NZFNF) page in the AWS Marketplace.
 
 1. Find the ACM for Nitro Enclaves AMI for your Region, and note the AMI ID. You need the AMI ID for the next step.
 

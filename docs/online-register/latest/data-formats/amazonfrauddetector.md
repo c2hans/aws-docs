@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon Fraud Detector provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="frauddetector-BatchGetVariable"></a>[BatchGetVariable](https://docs.aws.amazon.com/frauddetector/latest/api/API_BatchGetVariable.html) | Get a batch of variables | List |

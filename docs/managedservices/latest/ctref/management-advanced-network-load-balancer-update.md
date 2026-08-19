@@ -14,8 +14,6 @@ Update the properties of an existing Network Load Balancer.
 ## Change Type Details
 <a name="ct-0wglhholzo0uw-MANu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-0wglhholzo0uw |

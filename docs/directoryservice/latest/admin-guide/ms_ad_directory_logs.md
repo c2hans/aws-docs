@@ -9,8 +9,6 @@ Security logs from AWS Managed Microsoft AD domain controller instances are arch
 
 AWS logs the following events for compliance.
 
-****
-
 | Monitoring category | Policy setting | Audit state |
 | --- | --- | --- |
 | Account Logon | Audit Credential Validation  | Success, Failure |

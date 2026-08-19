@@ -14,8 +14,6 @@ Associate security groups with an AWS resource.
 ## Change Type Details
 <a name="ct-12lyw7otiyr6f-MASa-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-12lyw7otiyr6f |

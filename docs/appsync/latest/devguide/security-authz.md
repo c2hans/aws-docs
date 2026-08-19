@@ -70,7 +70,7 @@ Unauthenticated APIs require more strict throttling than authenticated APIs. One
 ------
 #### [ CLI ]
 
-1. If you haven't already done so, configure your access to the AWS CLI. For more information, see [Configuration basics](https://docs.aws.amazon.com//cli/latest/userguide/cli-configure-quickstart.html).
+1. If you haven't already done so, configure your access to the AWS CLI. For more information, see [Configuration basics](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html).
 
 1. Create a GraphQL API object by running the [`update-graphql-api`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/appsync/update-graphql-api.html) command.
 

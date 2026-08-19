@@ -14,8 +14,6 @@ Add a specific, allowed, AWS service to your AMS account. This CT validates prer
 ## Change Type Details
 <a name="ct-1w8z66n899dct-MASa-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1w8z66n899dct |

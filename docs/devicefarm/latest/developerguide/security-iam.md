@@ -62,7 +62,7 @@ The following table outlines the Device Farm AWS managed policies.
 | Change | Description | Date |
 | --- | --- | --- |
 | [AWSDeviceFarmFullAccess](https://console.aws.amazon.com/iam/home?region=us-east-1#/policies/arn:aws:iam::aws:policy/AWSDeviceFarmFullAccess$jsonEditor) | Provides full access to all AWS Device Farm operations. | July 15, 2015 |
-| [AWSServiceRoleForDeviceFarmTestGrid](https://docs.aws.amazon.com//devicefarm/latest/testgrid/using-service-linked-roles.html) | Allows Device Farm to access AWS resources on your behalf. | May 20, 2021 |
+| [AWSServiceRoleForDeviceFarmTestGrid](https://docs.aws.amazon.com/devicefarm/latest/testgrid/using-service-linked-roles.html) | Allows Device Farm to access AWS resources on your behalf. | May 20, 2021 |
 
 ### Other policy types
 <a name="security_iam_access-manage-other-policies"></a>

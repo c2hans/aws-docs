@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/SQLServer.Pro
 
 The following are issues you might encounter when you use native backup and restore.
 
-****
-
 | Issue | Troubleshooting suggestions |
 | --- | --- |
 | Database backup/restore option is not enabled yet or is in the process of being enabled. Please try again later. | Make sure that you have added the `SQLSERVER_BACKUP_RESTORE` option to the DB option group associated with your DB instance. For more information, see [Adding the native backup and restore option](Appendix.SQLServer.Options.BackupRestore.md#Appendix.SQLServer.Options.BackupRestore.Add). |

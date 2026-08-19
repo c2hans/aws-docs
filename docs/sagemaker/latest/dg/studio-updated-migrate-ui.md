@@ -25,7 +25,7 @@ Before running these steps, complete the prerequisites in [Complete prerequisite
 
 Before migrating the domain, update the domain's execution role to grant users permissions to create applications.
 
-1. Create an AWS Identity and Access Management policy with one of the following contents by following the steps in [Creating IAM policies](https://docs.aws.amazon.com//IAM/latest/UserGuide/access_policies_create.html):
+1. Create an AWS Identity and Access Management policy with one of the following contents by following the steps in [Creating IAM policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html):
    + Use the following policy to grant permissions for all application types and spaces.
 **Note**
 If the domain uses the `SageMakerFullAccess` policy, you do not need to perform this action. `SageMakerFullAccess` grants permissions to create all applications.
@@ -190,7 +190,7 @@ Application type can be either `jupyterlab` or `codeeditor`.
 
 ------
 
-1. Attach the policy to the execution role of the domain. For instructions, follow the steps in [Adding IAM identity permissions (console)](https://docs.aws.amazon.com//IAM/latest/UserGuide/access_policies_manage-attach-detach.html#add-policies-console).
+1. Attach the policy to the execution role of the domain. For instructions, follow the steps in [Adding IAM identity permissions (console)](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html#add-policies-console).
 
 ## Step 2: Update VPC configuration
 <a name="studio-updated-migrate-vpc"></a>
@@ -453,7 +453,7 @@ Similarly, you can set Studio as the default experience when you create a domain
 
 You can set the default experience when creating a domain using the AWS CloudFormation. For an CloudFormation migration template, see [SageMaker Studio Administrator IaC Templates](https://github.com/aws-samples/sagemaker-studio-admin-iac-templates/tree/main?tab=readme-ov-file#phase-1-migration). For more information about creating a domain using CloudFormation, see [Creating Amazon SageMaker AI domain using CloudFormation](https://github.com/aws-samples/cloudformation-studio-domain?tab=readme-ov-file#creating-sagemaker-studio-domains-using-cloudformation).
 
-For information about the domain resource supported by AWS CloudFormation, see [AWS::SageMaker AI::Domain](https://docs.aws.amazon.com//AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-domain.html#cfn-sagemaker-domain-defaultusersettings).
+For information about the domain resource supported by AWS CloudFormation, see [AWS::SageMaker AI::Domain](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-domain.html#cfn-sagemaker-domain-defaultusersettings).
 
 After you migrate your default experience to Studio, you can give Studio access to Amazon S3 buckets. For example, you can include access to your Studio Classic default Amazon S3 bucket and additional Amazon S3 buckets. To do so, you must manually attach a [Cross-Origin Resource Sharing](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) (CORS) configuration to the Amazon S3 buckets. For information about how to manually attach the CORS policy to your Amazon S3 buckets, see [(Optional) Update your CORS policy to access Amazon S3 buckets](#studio-updated-migrate-cors).
 
@@ -475,13 +475,13 @@ The following procedure shows how to manually add a CORS configuration to an Ama
 
 **To add a CORS configuration to an Amazon S3 bucket**
 
-1. Verify that there is an Amazon S3 bucket in the same AWS Region as the existing domain with the following name. For instructions, see [Viewing the properties for an Amazon S3 bucket](https://docs.aws.amazon.com//AmazonS3/latest/userguide/view-bucket-properties.html).
+1. Verify that there is an Amazon S3 bucket in the same AWS Region as the existing domain with the following name. For instructions, see [Viewing the properties for an Amazon S3 bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/view-bucket-properties.html).
 
    ```
    sagemaker-{{region}}-{{account-id}}
    ```
 
-1. Add a CORS configuration with the following content to the default Amazon S3 bucket. For instructions, see [Configuring cross-origin resource sharing (CORS)](https://docs.aws.amazon.com//AmazonS3/latest/userguide/enabling-cors-examples.html).
+1. Add a CORS configuration with the following content to the default Amazon S3 bucket. For instructions, see [Configuring cross-origin resource sharing (CORS)](https://docs.aws.amazon.com/AmazonS3/latest/userguide/enabling-cors-examples.html).
 
    ```
    [

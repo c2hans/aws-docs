@@ -7,8 +7,6 @@ This is an earlier version of the AWS Well-Architected Framework. For the latest
 # COST05-BP04 Select software with cost-effective licensing
 <a name="cost_select_service_licensing"></a>
 
-****
-
 |  |
 | --- |
 | This best practice was updated with new guidance on December 6, 2023. |

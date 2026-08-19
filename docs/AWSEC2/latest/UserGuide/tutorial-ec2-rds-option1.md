@@ -55,11 +55,11 @@ In a production environment, you should configure your database to meet your spe
 
 1. Open the Amazon RDS console at [https://console.aws.amazon.com/rds/](https://console.aws.amazon.com/rds/).
 
-1. From the Region selector (at top right), choose an AWS Region. The database and the EC2 instance must be in the same Region in order to use the automatic connection feature in the EC2 console.
+1. From the Region selector (at top right), choose an AWS Region. The database and the EC2 instance must be in the same Region to use the automatic connection feature in the EC2 console.
 
 1. On the dashboard, choose **Create database**.
 
-1. Under **Choose a database creation method**, check that **Standard create** is selected. If you choose **Easy create**, the VPC selector is not available. You must ensure that your database is in the same VPC as your EC2 instance in order to use the automatic connection feature in the EC2 console.
+1. Under **Choose a database creation method**, check that **Standard create** is selected. If you choose **Easy create**, the VPC selector is not available. You must ensure that your database is in the same VPC as your EC2 instance to use the automatic connection feature in the EC2 console.
 
 1. Under **Engine options**, for **Engine type**, choose **MySQL**.
 
@@ -116,7 +116,7 @@ In a production environment, you should configure your instance to meet your spe
 
 1. Open the Amazon EC2 console at [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2/).
 
-1. From the Region selector (at top right), choose an AWS Region. The instance and the RDS database must be in the same Region in order to use the automatic connection feature in the EC2 console.
+1. From the Region selector (at top right), choose an AWS Region. The instance and the RDS database must be in the same Region to use the automatic connection feature in the EC2 console.
 
 1. On the **EC2 Dashboard**, choose **Launch instance**.
 
@@ -189,7 +189,7 @@ The objective of this task is to use the automatic connection feature in the EC2
 
 1. For **RDS database**, choose the RDS database that you created in Task 1.
 **Note**
-The EC2 instance and the RDS database must be in the same VPC in order to connect to each other.
+The EC2 instance and the RDS database must be in the same VPC to connect to each other.
 
 1. Choose **Connect**.
 

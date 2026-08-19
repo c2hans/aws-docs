@@ -43,8 +43,6 @@ CREATE TABLE iceberg_table (id bigint, data string, category string)
 
 The following table shows the available partition transform functions.
 
-****
-
 | Function | Description | Supported types |
 | --- | --- | --- |
 | year(ts) | Partition by year | date, timestamp |
@@ -63,8 +61,6 @@ This section describes table properties that you can specify as key-value pairs 
 
 ***format***
 
-****
-
 |  |  |
 | --- |--- |
 | Description | File data format |
@@ -72,8 +68,6 @@ This section describes table properties that you can specify as key-value pairs 
 | Default value | parquet |
 
 ***write\_compression***
-
-****
 
 |  |  |
 | --- |--- |
@@ -83,8 +77,6 @@ This section describes table properties that you can specify as key-value pairs 
 
 ***optimize\_rewrite\_data\_file\_threshold***
 
-****
-
 |  |  |
 | --- |--- |
 | Description | Data optimization specific configuration. If there are fewer data files that require optimization than the given threshold, the files are not rewritten. This allows the accumulation of more data files to produce files closer to the target size and skip unnecessary computation for cost saving. |
@@ -92,8 +84,6 @@ This section describes table properties that you can specify as key-value pairs 
 | Default value | 5 |
 
 ***optimize\_rewrite\_delete\_file\_threshold***
-
-****
 
 |  |  |
 | --- |--- |
@@ -103,8 +93,6 @@ This section describes table properties that you can specify as key-value pairs 
 
 ***vacuum\_min\_snapshots\_to\_keep***
 
-****
-
 |  |  |
 | --- |--- |
 | Description | Minimum number of snapshots to retain on a table's main branch.<br />This value takes precedence over the `vacuum_max_snapshot_age_seconds` property. If the minimum remaining snapshots are older than the age specified by `vacuum_max_snapshot_age_seconds`, the snapshots are kept, and the value of `vacuum_max_snapshot_age_seconds` is ignored. |
@@ -112,8 +100,6 @@ This section describes table properties that you can specify as key-value pairs 
 | Default value | 1 |
 
 ***vacuum\_max\_snapshot\_age\_seconds***
-
-****
 
 |  |  |
 | --- |--- |
@@ -123,8 +109,6 @@ This section describes table properties that you can specify as key-value pairs 
 
 ***vacuum\_max\_metadata\_files\_to\_keep***
 
-****
-
 |  |  |
 | --- |--- |
 | Description | The maximum number of previous metadata files to retain on the table's main branch. |
@@ -132,8 +116,6 @@ This section describes table properties that you can specify as key-value pairs 
 | Default value | 100 |
 
 ***write\_data\_path\_enabled***
-
-****
 
 |  |  |
 | --- |--- |

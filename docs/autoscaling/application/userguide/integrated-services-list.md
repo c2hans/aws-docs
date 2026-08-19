@@ -13,8 +13,6 @@ The following table lists the AWS services that you can use with Application Aut
 + **SDK access** – You can configure a compatible AWS service to start auto scaling using the AWS SDKs.
 + **CloudFormation access** – You can configure a compatible AWS service to start auto scaling using an CloudFormation stack template. For more information, see [Configure Application Auto Scaling resources using AWS CloudFormation](creating-resources-with-cloudformation.md).
 
-****
-
 | AWS service | Console access¹ | CLI access | SDK access | CloudFormation access |
 | --- | --- | --- | --- | --- |
 |  [WorkSpaces Applications](services-that-can-integrate-appstream.md)  |  ![](http://docs.aws.amazon.com/autoscaling/application/userguide/images/icon-yes.png) Yes  |  ![](http://docs.aws.amazon.com/autoscaling/application/userguide/images/icon-yes.png) Yes  |  ![](http://docs.aws.amazon.com/autoscaling/application/userguide/images/icon-yes.png) Yes  |  ![](http://docs.aws.amazon.com/autoscaling/application/userguide/images/icon-yes.png) Yes  |

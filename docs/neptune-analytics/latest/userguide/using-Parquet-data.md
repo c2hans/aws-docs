@@ -32,7 +32,7 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/using
 
  Unlike the property column headers of the CSV format, the property column headers of the Parquet format only need to have the property names, there is no need to have the type names nor the cardinality.
 
- There are however, some special column types in the Parquet format that requires annotation in the metadata, including `Any` type, `Date` type, and `dateTime` type. For more details of `Any` type, `Date` type, and `dateTime` type, please refer to [using CSV data](https://docs.aws.amazon.com//neptune-analytics/latest/userguide/using-CSV-data.html). The following object is an example of the metadata that has `Any` type column, `Date` type column and `dateTime` type column annotated:
+ There are however, some special column types in the Parquet format that requires annotation in the metadata, including `Any` type, `Date` type, and `dateTime` type. For more details of `Any` type, `Date` type, and `dateTime` type, please refer to [using CSV data](https://docs.aws.amazon.com/neptune-analytics/latest/userguide/using-CSV-data.html). The following object is an example of the metadata that has `Any` type column, `Date` type column and `dateTime` type column annotated:
 
 ```
 "metadata": {

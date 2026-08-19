@@ -15,7 +15,7 @@ Follow these steps to remediate a potentially compromised Amazon ECS cluster:
 
 1. **Evaluate the source of threat/malware**
 
-   Check for malware in container images. If malware is detected, review the container image being used. Use [ListTasks](https://docs.aws.amazon.com//AmazonECS/latest/APIReference/API_ListTasks.html) to identify all other running tasks that use the same potentially compromised image.
+   Check for malware in container images. If malware is detected, review the container image being used. Use [ListTasks](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ListTasks.html) to identify all other running tasks that use the same potentially compromised image.
 
 1. **Isolate impacted tasks**
 

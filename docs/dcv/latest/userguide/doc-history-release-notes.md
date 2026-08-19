@@ -78,16 +78,12 @@ This section provides an overview of the major updates, feature releases, and bu
 ### DCV 2025.0-21744 — April 1, 2026
 <a name="dcv-2025-0-21744"></a>
 
-****
-
 | Build numbers | New features | Changes and bug fixes |
 | --- | --- | --- |
 |  + nice-dcv-server (Windows and Linux): 20103<br />+ nice-dcv-server (macOS): 21744<br />+ nice-dcv-client (Windows): 9800<br />+ nice-dcv-viewer (macOS): 8846<br />+ nice-dcv-viewer (Linux): 8846<br />+ nice-dcv-web-viewer: 20103<br />+ nice-xdcv: 688<br />+ nice-dcv-gl: 1112<br />+ nice-dcv-gltest: 365<br />+ nice-dcv-simple-external-authenticator: 282  | Amazon DCV now supports macOS 26 (Tahoe) and includes a bootstrap daemon for the DCV agent launcher for DCV on EC2 Mac. |  +  Fixed `osgroup` in permissions file on macOS <br />+  Removed ‘Installer’ label from installer file.   |
 
 ### DCV 2025.0-20177 — November 11, 2025
 <a name="dcv-2025-0-20177"></a>
-
-****
 
 | Build numbers | New features |
 | --- | --- |
@@ -96,16 +92,12 @@ This section provides an overview of the major updates, feature releases, and bu
 ### DCV 2025.0-20103 — October 22, 2025
 <a name="dcv-2025-0-20103"></a>
 
-****
-
 | Build numbers | New features | Changes and bug fixes |
 | --- | --- | --- |
 |  + nice-dcv-server: 20103<br />+ nice-dcv-client (Windows): 9800<br />+ nice-dcv-viewer (macOS): 8846<br />+ nice-dcv-viewer (Linux): 8846<br />+ nice-dcv-web-viewer: 20103<br />+ nice-xdcv: 688<br />+ nice-dcv-gl: 1112<br />+ nice-dcv-gltest: 365<br />+ nice-dcv-simple-external-authenticator: 282  |  +  Standard WebAuthn redirection for Linux and enhanced WebAuthn redirection for Windows. <br />+  Server side keyboard layout support and for Windows clients connecting to Windows <br />+  Scroll wheel optimizations. <br />+  Support for Windows Server 2025. <br />+  Support for DCV Viewer on Ubuntu 22.04 ARM and Ubuntu 24.04 ARM. <br />+  DCV Viewer network performance improvements. <br />+  Improved perfomance of the codec used for lossless updates.   |  +  Support for DCV Server on Ubuntu 20.04 and SUSE Linux Enterprise 12 was discontinued. <br />+  Support for DCV Viewer on Ubuntu 20.04 was discontinued. <br />+  Security and performance improvements.   |
 
 ### DCV 2024.0-19030 — June 10, 2025
 <a name="dcv-2024-0-19030-2"></a>
-
-****
 
 | Build numbers | Changes and bug fixes |
 | --- | --- |
@@ -114,16 +106,12 @@ This section provides an overview of the major updates, feature releases, and bu
 ### DCV 2024.0-19030 — May 16, 2025
 <a name="dcv-2024-0-19030-1"></a>
 
-****
-
 | Build numbers | Changes and bug fixes |
 | --- | --- |
 |  + nice-dcv-server: 19030<br />+ nice-dcv-client (Windows): 9431<br />+ nice-dcv-viewer (macOS): 8004<br />+ nice-dcv-viewer (Linux): 8004<br />+ nice-dcv-web-viewer: 19030<br />+ nice-xdcv: 654<br />+ nice-dcv-gl: 1096<br />+ nice-dcv-gltest: 352<br />+ nice-dcv-simple-external-authenticator: 266  |  +  Allow to set the log level from the connection file. <br />+  Fixes for dead keys for Linux and MacOS Clients. <br />+  Fixes for WebAuthn. <br />+  Fixes for display scale factor, relative mouse and multiple webcams for MacOS Client. <br />+  Improvement of clipboard image handling for the Windows and MacOS Clients. <br />+  Other fixes and performance improvements.   |
 
 ### DCV 2024.0-19030 — March 31, 2025
 <a name="dcv-2024-0-19030"></a>
-
-****
 
 | Build numbers | Changes and bug fixes |
 | --- | --- |
@@ -132,16 +120,12 @@ This section provides an overview of the major updates, feature releases, and bu
 ### DCV 2024.0-18131 — October 31, 2024
 <a name="dcv-2024-0-18131"></a>
 
-****
-
 | Build numbers | Changes and bug fixes |
 | --- | --- |
 |  + nice-dcv-server: 18131<br />+ nice-dcv-client (Windows): 9254<br />+ nice-dcv-viewer (macOS): 7209<br />+ nice-dcv-viewer (Linux): 7209<br />+ nice-xdcv: 631<br />+ nice-dcv-gl: 1078<br />+ nice-dcv-gltest: 344<br />+ nice-dcv-simple-external-authenticator: 259  |  +  Fixed a problem with the installer of Amazon DCV server on Windows that could cause unistallation to fail. <br />+  Fixed a problem on Amazon DCV server on Linux that result on the mouse cursor being hidden when a physical display is connected. <br />+  Fixed a problem on the Windows native client that could result in local USB devices getting disconnected when using the USB redirection feature.  <br />+  Fixed a crash in the macOS related to the clipboard. <br />+  Fixed a crash in the macOS and Linux clients when connecting to a machine with multiple DCV sessions. <br />+  Fixed a problem in the macOS and Linux clients preventing print of large documents through the DCV PDF printer. <br />+  Fix rendering issues in the Web Client with Firefox 130 and newer.   |
 
 ### DCV 2024.0-17979 — October 1, 2024
 <a name="dcv-2024-0-17979"></a>
-
-****
 
 | Build numbers | New features | Changes and bug fixes |
 | --- | --- | --- |
@@ -150,16 +134,12 @@ This section provides an overview of the major updates, feature releases, and bu
 ### DCV 2023.1-17701 — September 10, 2024
 <a name="dcv-2023-1-17701sep"></a>
 
-****
-
 | Build numbers | Changes and bug fixes |
 | --- | --- |
 |  + nice-dcv-server: 17701<br />+ nice-dcv-client (Windows): 9210<br />+ nice-dcv-viewer (macOS): 6809<br />+ nice-dcv-viewer (Linux): 6809<br />+ nice-xdcv: 565<br />+ nice-dcv-gl: 1047<br />+ nice-dcv-gltest: 325<br />+ nice-dcv-simple-external-authenticator: 228  |  +  Support to retrieve Window handles in DCV extensions on Windows client.   |
 
 ### DCV 2023.1-17701 — August 20, 2024
 <a name="dcv-2023-1-17701"></a>
-
-****
 
 | Build numbers | Changes and bug fixes |
 | --- | --- |
@@ -168,16 +148,12 @@ This section provides an overview of the major updates, feature releases, and bu
 ### DCV 2023.1-16388 — July 3, 2024
 <a name="dcv-2023-1-16388jul"></a>
 
-****
-
 | Build numbers | Changes and bug fixes |
 | --- | --- |
 |  + nice-dcv-server: 16388<br />+ nice-dcv-client (Windows): 9127<br />+ nice-dcv-viewer (macOS): 6703<br />+ nice-dcv-viewer (Linux): 6703<br />+ nice-xdcv: 565<br />+ nice-dcv-gl: 1047<br />+ nice-dcv-gltest: 325<br />+ nice-dcv-simple-external-authenticator: 228  |  +  Bug fixes and performance improvements to native clients.   |
 
 ### DCV 2023.1-16388 — March 5, 2024
 <a name="dcv-2023-1-16388mar"></a>
-
-****
 
 | Build numbers | Changes and bug fixes |
 | --- | --- |
@@ -186,16 +162,12 @@ This section provides an overview of the major updates, feature releases, and bu
 ### DCV 2023.1-16388 — December 19, 2023
 <a name="dcv-2023-1-16388"></a>
 
-****
-
 | Build numbers | Changes and bug fixes |
 | --- | --- |
 |  + nice-dcv-server: 16388<br />+ nice-dcv-client (Windows): 8934<br />+ nice-dcv-viewer (macOS): 6203<br />+ nice-dcv-viewer (Linux): 6203<br />+ nice-xdcv: 565<br />+ nice-dcv-gl: 1047<br />+ nice-dcv-gltest: 325<br />+ nice-dcv-simple-external-authenticator: 228  |  +  Fixed a race condition in the agent startup on Windows which could cause streaming failures and excessive logging. <br />+  Fixed last interaction time reported in `dcv list-connections` when the idle timeout setting is changed at runtime. <br />+  Fixed a compatibility problem with NVIDIA GRID drivers 528.89 on Windows server. <br />+  Fixed video decoding problems in the Web Client that could result in streaming failures. <br />+  Fixed a problem with full screen on multiple monitors on the Windows client when display resolution change is disabled on the server. <br />+  Fixed a problem with webcam resolution on the Linux and macOS clients. <br />+  Fixed a problem with double and triple mouse click on the Linux and macOS clients. <br />+  Fixed a problem WebAuthN redirection on the Linux and macOS clients.   |
 
 ### DCV 2023.1-16220 — November 9, 2023
 <a name="dcv-2023-1-16220"></a>
-
-****
 
 | Build numbers | New features | Changes and bug fixes |
 | --- | --- | --- |
@@ -204,16 +176,12 @@ This section provides an overview of the major updates, feature releases, and bu
 ### DCV 2023.0-15487 — June 29, 2023
 <a name="dcv-2023-0-15487"></a>
 
-****
-
 | Build numbers | Changes and bug fixes |
 | --- | --- |
 |  + nice-dcv-server: 15487<br />+ nice-dcv-client (Windows): 8771<br />+ nice-dcv-viewer (macOS): 5629<br />+ nice-dcv-viewer (Linux): 5629<br />+ nice-xdcv: 551<br />+ nice-dcv-gl: 1039<br />+ nice-dcv-gltest: 318<br />+ nice-dcv-simple-external-authenticator: 208  |  +  Fixed a problem in the Web client which could cause wrong colors when using Chrome 114 or newer. <br />+  Fixed the el7 rpm packages of Amazon DCV server and Xdcv to avoid an error on uninstall. <br />+  Fixed a compatibility problem with NVIDIA GRID drivers 528.89 on Windows server. <br />+  Fixed a problem which could prevent the clipboard from working correctly on some Windows applications. <br />+  The dcv-gl package now requires the latest version of the Amazon DCV server package to ensure configuration is correct when the package is installed or updated. <br />+  Fixed a problem on Windows client that could result in the wrong resolution being used after a resize. <br />+  Fixed support for IPv6 addresses in the macOS and Linux clients. <br />+  The macOS client now allows to configure Control \+ click as a right click. <br />+  The Web client now allows the use of special keys and combinations when in full screen on supported browsers. <br />+  Updated the OpenSSL third party library.   |
 
 ### DCV 2023.0-15065 — May 3, 2023
 <a name="dcv-2023-0-15065"></a>
-
-****
 
 | Build numbers | Changes and bug fixes |
 | --- | --- |
@@ -222,16 +190,12 @@ This section provides an overview of the major updates, feature releases, and bu
 ### DCV 2023.0-15022 — April 21, 2023
 <a name="dcv-2023-0-15022"></a>
 
-****
-
 | Build numbers | Changes and bug fixes |
 | --- | --- |
 |  + nice-dcv-server: 15022<br />+ nice-dcv-client (Windows): 8671<br />+ nice-dcv-viewer (macOS): 5456<br />+ nice-dcv-viewer (Linux): 5456<br />+ nice-xdcv: 547<br />+ nice-dcv-gl: 1027<br />+ nice-dcv-gltest: 318<br />+ nice-dcv-simple-external-authenticator: 206  |  +  Fixed a concurrency problem which could prevent streaming from working correctly after a screen resize. <br />+  Fixed a race condition on the Amazon DCV server that could cause failures in QUIC connections. <br />+  Fixed a crash in Amazon DCV server related to applications with hidden cursors. <br />+  Fixed a problem with Japanese keyboard input on Windows server. <br />+  Improved audio/video synchronization for the Webcam stream. <br />+  Updated the ICU and libxml2 third party libraries. <br />+  Updated Xdcv to version 21.1.8 of XServer and fixed a problem with `XKB` that could prevent virtual sessions from starting. <br />+  Fixed a problem that could cause video decoding failure on Windows, macOS and Linux native clients. <br />+  Fixed problems with settings on the macOS and Linux native clients.   |
 
 ### DCV 2023.0-14852 — March 28, 2023
 <a name="dcv-2023-0-14852"></a>
-
-****
 
 | Build numbers | New features | Changes and bug fixes |
 | --- | --- | --- |
@@ -240,16 +204,12 @@ This section provides an overview of the major updates, feature releases, and bu
 ### DCV 2022.2-14521 — February 17, 2023
 <a name="dcv-2022-2-14521"></a>
 
-****
-
 | Build numbers | Changes and bug fixes |
 | --- | --- |
 |  + nice-dcv-server: 14521<br />+ nice-dcv-client (Windows): 8570<br />+ nice-dcv-viewer (macOS): 5125<br />+ nice-dcv-viewer (Linux): 4804<br />+ nice-xdcv: 519<br />+ nice-dcv-gl: 1012<br />+ nice-dcv-gltest: 307<br />+ nice-dcv-simple-external-authenticator: 198  |  +  Fixed problems with Japanese and Spanish keyboards on the macOS client. <br />+  Fixed a problem with numpad keys on the Windows Amazon DCV Server. <br />+  Fixed a memory leak with QUIC connections. <br />+  Improved stability of Windows Amazon DCV Client when using old video drivers. <br />+  Updated the OpenSSL and libsoup third party libraries. <br />+  Updated Xdcv to version 21.1.7 of XServer.   |
 
 ### DCV 2022.2-14357 — January 18, 2023
 <a name="dcv-2022-2-14357"></a>
-
-****
 
 | Build numbers | Changes and bug fixes |
 | --- | --- |
@@ -258,16 +218,12 @@ This section provides an overview of the major updates, feature releases, and bu
 ### DCV 2022.2-14175 — December 21, 2022
 <a name="dcv-2022-2-14175"></a>
 
-****
-
 | Build numbers | Changes and bug fixes |
 | --- | --- |
 |  + nice-dcv-server: 14175<br />+ nice-dcv-client (Windows): 8472<br />+ nice-dcv-viewer (macOS): 4804<br />+ nice-dcv-viewer (Linux): 4804<br />+ nice-xdcv: 487<br />+ nice-dcv-gl: 983<br />+ nice-dcv-gltest: 307<br />+ nice-dcv-simple-external-authenticator: 198  |  +  Fixed a leak of file descriptors in the server when using WebSocket connections. <br />+  Xdcv was updated to version 21.1.6 of XServer.   |
 
 ### DCV 2022.2-14126 — December 9, 2022
 <a name="dcv-2022-2-14126"></a>
-
-****
 
 | Build numbers | Changes and bug fixes |
 | --- | --- |
@@ -276,16 +232,12 @@ This section provides an overview of the major updates, feature releases, and bu
 ### DCV 2022.2-13907 — November 11, 2022
 <a name="dcv-2022-2-13907"></a>
 
-****
-
 | Build numbers | New features | Changes and bug fixes |
 | --- | --- | --- |
 |  + nice-dcv-server: 13907<br />+ nice-dcv-client (Windows): 8427<br />+ nice-dcv-viewer (macOS): 4653<br />+ nice-dcv-viewer (Linux): 4653<br />+ nice-xdcv: 481<br />+ nice-dcv-gl: 983<br />+ nice-dcv-gltest: 301<br />+ nice-dcv-simple-external-authenticator: 198  | Amazon DCV added the following features: +  Added support for full-screen on selected monitors for Amazon DCV client on Windows. <br />+  Added support for high pixel density displays native client on macOS. <br />+  Added printer redirection for Amazon DCV client on macOS and Linux. <br />+  Added support for time zone redirection for Amazon DCV Server on Windows. <br />+  Added a GNOME-Shell extension for Ubuntu 22.04 to support single sign on for console sessions. <br />+  Added VAAPI based encoder on AMD GPUs when using the open source drivers.   |  +  Updated Web client user interface to the Cloudscape design style. <br />+  Fixed memory leak inside the agent triggererd by client reconnection. <br />+  Added support for systems using GDM3 when using virtual sessions on Ubuntu 20.04. <br />+  Fixed problem intermittently causing black screen in virtual session on Ubuntu 20.04. <br />+  Fixed a problem in the Web client causing a missing clipboard update when changing tab. <br />+  Fixed a problem with the Enter key of the numeric keypad.   |
 
 ### DCV 2022.1-13300 — August 4, 2022
 <a name="dcv-2022-1-13300"></a>
-
-****
 
 | Build numbers | Changes and bug fixes |
 | --- | --- |
@@ -294,16 +246,12 @@ This section provides an overview of the major updates, feature releases, and bu
 ### DCV 2022.1-13216 — July 21, 2022
 <a name="dcv-2022-1-13216"></a>
 
-****
-
 | Build numbers | Changes and bug fixes |
 | --- | --- |
 |  + nice-dcv-server: 13216<br />+ nice-dcv-client (Windows): 8261<br />+ nice-dcv-viewer (macOS): 4251<br />+ nice-dcv-viewer (Linux): 4251<br />+ nice-xdcv: 433<br />+ nice-dcv-gl: 966<br />+ nice-dcv-gltest: 295<br />+ nice-dcv-simple-external-authenticator: 193  |  +  Fixed a problem in all clients that resulted in a failure to connect to Amazon DCV server 2019.1 and older. <br />+  Fixed a problem with SmartCard redirection on Windows server. <br />+  Fixed a problem that could cause the streaming to fail when connecting to a Amazon DCV server on a host with a GPU.   |
 
 ### DCV 2022.1-13067 — June 29, 2022
 <a name="dcv-2022-1-13067"></a>
-
-****
 
 | Build numbers | New features | Changes and bug fixes |
 | --- | --- | --- |
@@ -312,16 +260,12 @@ This section provides an overview of the major updates, feature releases, and bu
 ### DCV 2022.0-12760 — May 23, 2022
 <a name="dcv-2022-0-12760"></a>
 
-****
-
 | Build numbers | Changes and bug fixes |
 | --- | --- |
 |  + nice-dcv-server: 12760<br />+ nice-dcv-client (Windows): 8145<br />+ nice-dcv-viewer (macOS): 4131<br />+ nice-dcv-viewer (Linux): 4131<br />+ nice-xdcv: 424<br />+ nice-dcv-gl: 961<br />+ nice-dcv-gltest: 291<br />+ nice-dcv-simple-external-authenticator: 188  |  Changes: Fixed a problem preventing successful connection of the Web Client when specifying the web-url-path option. |
 
 ### DCV 2022.0-12627 — May 19, 2022
 <a name="dcv-2022-0-12627"></a>
-
-****
 
 | Build numbers | Changes and bug fixes |
 | --- | --- |
@@ -330,16 +274,12 @@ This section provides an overview of the major updates, feature releases, and bu
 ### DCV 2022.0-12123 — March 23, 2022
 <a name="dcv-2022-0-12123"></a>
 
-****
-
 | Build numbers | New features | Changes and bug fixes |
 | --- | --- | --- |
 |  + nice-dcv-server: 12123<br />+ nice-dcv-client (Windows): 7920<br />+ nice-dcv-viewer (macOS): 3973<br />+ nice-dcv-viewer (Linux): 3973<br />+ nice-xdcv: 424<br />+ nice-dcv-gl: 961<br />+ nice-dcv-gltest: 291<br />+ nice-dcv-simple-external-authenticator: 188  | Amazon DCV added the following features: +  Added option to enable high color accuracy to the macOS and Linux clients.   |  Changes: +  Improved bandwidth estimation and image quality when using the QUIC transport.  Fixes: +  Fixed visual artifacts in console sessions on Linux when using NVIDIA drivers 510.xx. <br />+  Fixed problem with DualShock 4 controllers connected via Bluetooth in the Windows native client. <br />+ Fixed possible crash in the macOS client when enabling the webcam.  |
 
 ### DCV 2022.0-11954 — February 23, 2022
 <a name="dcv-2022-0-11954"></a>
-
-****
 
 | Build numbers | New features | Changes and bug fixes |
 | --- | --- | --- |
@@ -348,16 +288,12 @@ This section provides an overview of the major updates, feature releases, and bu
 ### DCV 2021.3-11591 — December 20, 2021
 <a name="dcv-2021-3-11591"></a>
 
-****
-
 | Build numbers | New features | Changes and bug fixes |
 | --- | --- | --- |
 |  + nice-dcv-server: 11591<br />+ nice-dcv-client (Windows): 7801<br />+ nice-dcv-viewer (macOS): 3829<br />+ nice-dcv-viewer (Linux): 3829<br />+ nice-xdcv: 415<br />+ nice-dcv-gl: 952<br />+ nice-dcv-gltest: 284<br />+ nice-dcv-simple-external-authenticator: 176  | Amazon DCV added the following features: +  The user interface of the Web Client has been updated. <br />+  EC2 G5 and G5g instances are now supported. <br />+  Windows Server 2022 and Windows 11 are now supported operating systems.   |  + The init script for Linux virtual sessions does not load the user's bash profile anymore, thus avoiding recurring problems with environment variables overriding the system's default values.<br />+ The nice-dcv-ext-authenticator now requires Python 3.  |
 
 ### DCV 2021.2-11445 — November 18, 2021
 <a name="dcv-2021-2-11445"></a>
-
-****
 
 | Build numbers | Changes and bug fixes |
 | --- | --- |
@@ -366,16 +302,12 @@ This section provides an overview of the major updates, feature releases, and bu
 ### DCV 2021.2-11190 — October 11, 2021
 <a name="dcv-2021-2-11190"></a>
 
-****
-
 | Build numbers | Changes and bug fixes |
 | --- | --- |
 |  +  nice-dcv-server: 11190 <br />+  nice-dcv-client (Windows): 7788 <br />+  nice-dcv-viewer (macOS): 3776 <br />+  nice-dcv-viewer (Linux): 3776 <br />+  nice-xdcv: 411 <br />+  nice-dcv-gl: 946 <br />+  nice-dcv-gltest: 279 <br />+  nice-dcv-simple-external-authenticator: 160   |  Fixes: +  Fixed a problem in the Windows client which prevented the user from dismissing the certificate validation dialog when connecting to a server with an expired certificate. <br />+  Fixed a problem with the middle click button on Stylus pens not working as expected on native clients. <br />+  Fixed a regression in Xdcv which prevented legacy X11 fonts to be loaded. <br />+  Fixed a problem in the macOS and Linux clients with keyboard combinations not working correctly when using a keyboard layout which uses dead keys.   |
 
 ### DCV 2021.2-11135 — September 24, 2021
 <a name="dcv-2021-2-11135"></a>
-
-****
 
 | Build numbers | Changes and bug fixes |
 | --- | --- |
@@ -384,16 +316,12 @@ This section provides an overview of the major updates, feature releases, and bu
 ### DCV 2021.2-11048 — September 01, 2021
 <a name="dcv-2021-2-11048"></a>
 
-****
-
 | Build numbers | New features | Changes and bug fixes |
 | --- | --- | --- |
 |  + nice-dcv-server: 11048<br />+ nice-dcv-client (Windows): 7774<br />+ nice-dcv-viewer (macOS): 3690<br />+ nice-dcv-viewer (Linux): 3690<br />+ nice-xdcv: 406<br />+ nice-dcv-gl: 944<br />+ nice-dcv-gltest: 279<br />+ nice-dcv-simple-external-authenticator: 160  | Amazon DCV added the following features: +  Web client clipboard improvements. With these improvements, you can now copy and paste PNG format images using the Amazon DCV web client on Google Chrome and Microsoft Edge. <br />+  A screenshot blocking feature for the Windows and macOS clients. This feature adds an additional layer of security by preventing users from taking screenshots of Amazon DCV session content. When enabled, any screenshots that a user capture result in a blank screen. <br />+  Streaming quality improvements. Streaming quality improved specifically through better “build-to-lossless” performance when using the QUIC protocol. <br />+  A `certificate-validation-policy` option to specify the behavior of your client was addded. You can use it when the server presents an untrusted X.509 certificate, such as a self-signed certificate. <br />+  The number of channels configured in the Audio Driver at run time can be changed.  <br />+  The Pressure2K option was added to the `dcvinput` Xorg module. You can use this to change the pressure sensitivity range of the stylus from 0-65335 to 0-2048, for compatibility with applications, such as Mari and Nuke <br />+  Support for the experimental WebCodecs API on Google Chrome and Microsoft Edge was added. When you enable this API in the browser, the Amazon DCV web client can use it to accelerate video decoding and deliver higher frame rates.   |  Changes: + The Amazon DCV web client is now a separate package on Linux and an optional component in the Windows installer. With this change, customers can decide whether to deploy the web client.<br />+ The H.264 High Profile is now supported when the NVENC encoder is used. Using NVENC encoder with NVIDIA GPUs, you can reduce bandwidth usage while maintaining the same image quality.<br />+ Amazon DCV server now uses all available GPUs for compression on machines with more than one GPU.<br />+ All Windows drivers shipped with Amazon DCV are now WHQL certified.<br />+ OpenSSL was updated to version 1.1.1.<br />+  Xdcv was updated to version 1.20.13 of XServer.  Fixes: + Fixed a problem with numpad keys on macOS clients.<br />+ Fixed an issue that prevented some USB devices (for example, gamepads) to be properly redirected to Windows servers.<br />+ Fixed a bug where modifier keys couldn't be properly released on disconnection.<br />+ Fixed a crash in the Linux native client when using Ubuntu 20.04 and Intel GPUs.  |
 
 ### DCV 2021.1-10851 — July 30, 2021
 <a name="dcv-2021-1-10851"></a>
-
-****
 
 | Build numbers | Changes and bug fixes |
 | --- | --- |
@@ -402,16 +330,12 @@ This section provides an overview of the major updates, feature releases, and bu
 ### DCV 2021.1-10598 — June 10, 2021
 <a name="dcv-2021-1-10598"></a>
 
-****
-
 | Build numbers | Changes and bug fixes |
 | --- | --- |
 |  + nice-dcv-server: 10598<br />+ nice-dcv-client (Windows): 7713<br />+ nice-dcv-viewer (macOS): 3473<br />+ nice-dcv-viewer (Linux): 3473<br />+ nice-xdcv: 392<br />+ nice-dcv-gl: 937<br />+ nice-dcv-gltest: 275<br />+ nice-dcv-simple-external-authenticator: 154  |  + Fixed a problem in the Windows installer of the server to prefill the `session owner` field with the current user.<br />+ Improved the overall stability of the macOS and Linux clients.  |
 
 ### DCV 2021.1-10557 — May 31, 2021
 <a name="dcv-2021-1-10557"></a>
-
-****
 
 | Build numbers | New features | Changes and bug fixes |
 | --- | --- | --- |
@@ -420,16 +344,12 @@ This section provides an overview of the major updates, feature releases, and bu
 ### DCV 2021.0-10242 — April 12, 2021
 <a name="dcv-2021-0-10242"></a>
 
-****
-
 | Build numbers | New features | Changes and bug fixes |
 | --- | --- | --- |
 |  + nice-dcv-server: 10242<br />+ nice-dcv-client (Windows): 7643<br />+ nice-dcv-viewer (macOS): 3186<br />+ nice-dcv-viewer (Linux): 3294<br />+ nice-xdcv: 380<br />+ nice-dcv-gl: 912<br />+ nice-dcv-gltest: 266<br />+ nice-dcv-simple-external-authenticator: 134  |  + Added webcam redirection support for Windows Amazon DCV servers.<br />+ Added printer redirection support for Linux Amazon DCV servers.<br />+ Added support for M1 processors on macOS clients.<br />+ Added multi-monitor display support for macOS clients.  |  + Optimized GPU and CPU resource usage on Linux servers and on Amazon EC2 instances with an NVIDIA GPU.<br />+ Added support for GPU accelerated video encoding using AMD GPUs on Amazon EC2 G4ad instances for Linux Amazon DCV servers.<br />+ Optimized audio processing to reduce audio latency<br />+ Changed the default for clients to the QUIC protocol if the protocol is enabled on the server.<br />+ Added a new get-screenshot command to the DCV command line tool.<br />+ Added a force logout option that uses the `--logout-user` option of the `close-session` command. You can use this option when closing a console session.  |
 
 ### DCV 2020.2-9662 — December 04, 2020
 <a name="dcv-2020-2-9662"></a>
-
-****
 
 | Build numbers | Changes and bug fixes |
 | --- | --- |
@@ -438,16 +358,12 @@ This section provides an overview of the major updates, feature releases, and bu
 ### DCV 2020.2-9508 — November 11, 2020
 <a name="dcv-2020-2-9508"></a>
 
-****
-
 | Build numbers | New features | Changes and bug fixes |
 | --- | --- | --- |
 |  + nice-dcv-server: 9508<br />+ nice-dcv-client (Windows): 7459<br />+ nice-dcv-viewer (macOS): 2078<br />+ nice-dcv-viewer (Linux): 1737<br />+ nice-xdcv: 359<br />+ nice-dcv-gl: 881<br />+ nice-dcv-gltest: 259<br />+ nice-dcv-simple-external-authenticator: 125  |  + Added support for the QUIC (UDP-based) transport protocol.<br />+ Added support for SLES 15 and Ubuntu 20.4.<br />+ Added smart card support for Windows Amazon DCV servers.  |  + Changed the default the Amazon DCV frame rate limiter to 60 FPS for console sessions that are hosted on servers and EC2 instances with an NVIDIA GPU.<br />+ Optimized the GPU and CPU resources used on Windows Amazon DCV servers that are hosted on EC2 instances with an NVIDIA GPU.<br />+ Added the `list-endpoints` Amazon DCV CLI command. This lists the current active endpoints. <br />+ The `version` Amazon DCV CLI command supports the `--json` option.<br />+ On Linux servers, the ` create-session` Amazon DCV CLI command now supports the `--disable-login-monitor` option.<br />+ Improved compatibility with different display managers on Linux Amazon DCV servers.<br />+ Fixed several issues in the handling of keyboard input. <br />+ The USB devices allow list file is now dynamically reloaded.  |
 
 ### DCV 2020.1-9012 — September 30, 2020
 <a name="dcv-2020-1-9012sep"></a>
-
-****
 
 | Build numbers | Changes and bug fixes |
 | --- | --- |
@@ -456,16 +372,12 @@ This section provides an overview of the major updates, feature releases, and bu
 ### DCV 2020.1-9012 — August 24, 2020
 <a name="dcv-2020-1-9012"></a>
 
-****
-
 | Build numbers | Changes and bug fixes |
 | --- | --- |
 |  + nice-dcv-server: 9012<br />+ nice-dcv-client (Windows): 7342<br />+ nice-dcv-viewer (macOS): 1910<br />+ nice-dcv-viewer (Linux): 1545<br />+ nice-xdcv: 338<br />+ nice-dcv-gl: 840<br />+ nice-dcv-gltest: 246<br />+ nice-dcv-simple-external-authenticator: 111  |  + Fixed Amazon S3 access in AWS GovCloud Region<br />+ Web-based client improvements  |
 
 ### DCV 2020.1-8942 — August 03, 2020
 <a name="dcv-2020-1-8942"></a>
-
-****
 
 | Build numbers | New features | Changes and bug fixes |
 | --- | --- | --- |
@@ -474,16 +386,12 @@ This section provides an overview of the major updates, feature releases, and bu
 ### DCV 2020.0-8428 — April 16, 2020
 <a name="dcv-2020-0-8428"></a>
 
-****
-
 | Build numbers | New features | Changes and bug fixes |
 | --- | --- | --- |
 |  + nice-dcv-server: 8428<br />+ nice-dcv-client (Windows): 7238<br />+ nice-dcv-viewer (macOS): 1716<br />+ nice-dcv-viewer (Linux): 1358<br />+ nice-xdcv: 296<br />+ nice-dcv-gl: 759<br />+ nice-dcv-gltest: 229<br />+ nice-dcv-simple-external-authenticator: 87  |  + Added on-screen stylus and touch support on Linux server.<br />+ Added 7.1 surround sound playback support on Windows server to Windows native client.<br />+ Added hardware acceleration and stylus support on Linux native client.<br />+ Added a new API command to set display layout on the server side.<br />+ Added multi-monitor web client display support on the Microsoft Edge browser (version 79.0.309 or later).  |  + The toolbar grip on the Windows client can now be hidden while in full screen mode.<br />+ Added NTLM proxy support on Windows native client.<br />+ Improved support for Windows headless physical hosts using NVIDIA adapters.<br />+ Removed support for the legacy NVIDIA NvIFR library.<br />+ Added support for Windows Graphic Capture API on latest Windows 10.<br />+  Added support for Amazon EC2 <br />Instance Metadata Service (IMDS) v2 on EC2 instances. <br />+ DCV CLI provides new `on-client-connected`/`disconnected` commands to detect when a client connects or disconnects from a session.<br />+ Added support for specifying the host name to bind certificates for the external authenticator.<br />+ DCV-GL now uses the GL Vendor-Neutral Dispatch library (GLvnd) on systems that support it.  |
 
 ### DCV 2019.1-7644 — October 24, 2019
 <a name="dcv-2019-1-7644"></a>
-
-****
 
 | Build numbers | Changes and bug fixes |
 | --- | --- |
@@ -492,16 +400,12 @@ This section provides an overview of the major updates, feature releases, and bu
 ### DCV 2019.1-7423 — September 10, 2019
 <a name="dcv-2019-1-7423"></a>
 
-****
-
 | Build numbers | Changes and bug fixes |
 | --- | --- |
 |  + nice-dcv-server: 7423<br />+ nice-dcv-client (Windows): 7087<br />+ nice-dcv-viewer (macOS): 1535<br />+ nice-dcv-viewer (Linux): 1124<br />+ nice-xdcv: 226<br />+ nice-dcv-gl: 544<br />+ nice-dcv-gltest: 220<br />+ nice-dcv-simple-external-authenticator: 77 |  + Improved security for DCV server on Windows.<br />+ Fixed a rendering problem with Autodesk Maya on Linux.<br />+ Added improvements and bug fixes related to keyboard handling.  |
 
 ### DCV 2019.0-7318 — August 5, 2019
 <a name="dcv-2019-0-7318"></a>
-
-****
 
 | Build numbers | New features | Changes and bug fixes |
 | --- | --- | --- |
@@ -510,16 +414,12 @@ This section provides an overview of the major updates, feature releases, and bu
 ### DCV 2017.4-6898 — April 16, 2019
 <a name="dcv-2017-4-6898"></a>
 
-****
-
 | Build numbers | New features | Changes and bug fixes |
 | --- | --- | --- |
 |  + nice-dcv-server: 6898<br />+ nice-dcv-client (Windows): 6969<br />+ nice-dcv-viewer (macOS): 1376<br />+ nice-dcv-viewer (Linux): 804<br />+ nice-xdcv: 210<br />+ nice-dcv-gl: 490<br />+ nice-dcv-gltest: 216<br />+ nice-dcv-simple-external-authenticator: 70  |  + New native client for macOS.  |  + The Windows native client now uses hardware acceleration for decoding and rendering, if available in the system.<br />+ The `dcv` command line tool now uses the same options and output format on both Windows and Linux.<br />+ The `dcv` command line tool now reports information about licenses.<br />+ Clients now show a warning to the user before disconnection due to inactivity.<br />+ Improved support for keyboard combinations that use multiple modifiers.<br />+ Improved robustness of the interaction with the Reprise License Manager for communication failures.<br />+ The `dcvusers` command line tool now defaults to saving data to the `dcv` user home directory on Linux.<br />+ Followed the same ordering used by the `nvidia-smi` tool when using the NVENC hardware encoder with multiple GPUs on Linux.<br />+ The Linux client now receives and handles printed files from the Windows DCV printer.  |
 
 ### DCV 2017.3-6698 — February 24, 2019
 <a name="dcv-2017-3-6698"></a>
-
-****
 
 | Build numbers | New features | Changes and bug fixes |
 | --- | --- | --- |
@@ -528,16 +428,12 @@ This section provides an overview of the major updates, feature releases, and bu
 ### DCV 2017.2-6182 — October 8, 2018
 <a name="dcv-2017-2-6182"></a>
 
-****
-
 | Build numbers | New features | Changes and bug fixes |
 | --- | --- | --- |
 |  + nice-dcv-server: 6182<br />+ nice-dcv-client: 5890<br />+ nice-dcv-viewer (Linux): 503<br />+ nice-xdcv: 180<br />+ nice-dcv-gl: 427<br />+ nice-dcv-gltest: 201<br />+ nice-dcv-simple-external-authenticator: 58  |  + Added audio playback support on Linux virtual sessions.<br />+ Improved smart card performance.<br />+ Added file transfer support on the Linux client.  |  + Improvements and bug fixes related to keyboard handling.<br />+ Changing the log level in the configuration no longer requires a server restart.<br />+ The Windows server installer now skips installation of Microsoft C runtime redistributable if it's already installed.<br />+ When running on EC2, if accessing S3 for the license fails, a notification is displayed in the user interface.<br />+ The Linux `dcv` command line tool now supports `list-connections` and `describe-session` sub-commands and includes an option to emit JSON output.<br />+ Added a `cuda-devices` setting in the `display` section. This configures the server to distribute NVENC encoding over different CUDA devices.<br />+ Improved robustness of session creation code when handling multiple concurrent commands.<br />+ Increased the default clipboard limit to 20 MB.<br />+ The Windows client now detects legacy `.dcv` files and launches the DCV 2016 Endstation (if installed).<br />+ The DCV simple external authenticator now always uses the system Python interpreter instead of the one set in the environment.<br />+ Improved the read-back strategy of DCV-GL for improved performance and robustness.<br />+ DCV-GL now checks if a window changed size after a front buffer readback. This fixes a rendering problem with the Coot application.  |
 
 ### DCV 2017.1-5870 — August 6, 2018
 <a name="dcv-2017-1-5870"></a>
-
-****
 
 | Build numbers | New features | Changes and bug fixes |
 | --- | --- | --- |
@@ -546,16 +442,12 @@ This section provides an overview of the major updates, feature releases, and bu
 ### DCV 2017.1-5777 — June 29, 2018
 <a name="dcv-2017-1-5777"></a>
 
-****
-
 | Build numbers | New features | Changes and bug fixes |
 | --- | --- | --- |
 |  + nice-dcv-server: 5777<br />+ nice-dcv-client: 5777<br />+ nice-dcv-viewer (Linux): 438<br />+ nice-xdcv: 166<br />+ nice-dcv-gl: 366<br />+ nice-dcv-gltest: 189<br />+ nice-dcv-simple-external-authenticator: 51  |  + Added a Linux native client.<br />+ Added support for 3DConnexion mouses and USB storage devices.<br />+ Windows session locked automatically when the last client disconnects.  |  + Performance improvements in the Linux version.<br />+ Changed the default HW encoder on NVIDIA devices to NVENC to avoid problems with NvIFR in new NVIDIA drivers.<br />+ Improved smart card support on Linux.<br />+ Fixed file permissions for uploaded files when using Linux console sessions.  |
 
 ### DCV 2017.0-5600 — June 4, 2018
 <a name="dcv-2017-0-5600"></a>
-
-****
 
 | Build numbers | New features | Changes and bug fixes |
 | --- | --- | --- |
@@ -564,8 +456,6 @@ This section provides an overview of the major updates, feature releases, and bu
 ### DCV 2017.0-5121 — March 18, 2018
 <a name="dcv-2017-0-5121"></a>
 
-****
-
 | Build numbers | New features | Changes and bug fixes |
 | --- | --- | --- |
 |  + nice-dcv-server: 5121<br />+ nice-dcv-client: 5121<br />+ nice-xdcv: 146<br />+ nice-dcv-gl: 270<br />+ nice-dcv-gltest: 184<br />+ nice-dcv-simple-external-authenticator: 46  |  + Windows native client is now DPI aware.<br />+ Added support for relative mouse movement mode.   | + Prevented hang on Ansys cfx5solve on Linux.<br />+ Fixed possible agent hang on Windows 10.<br />+ Improved the Web Client user interface.<br />+ Normalized Windows user name when a domain is specified.<br />+ Fixed the external authenticator on RHEL6. |
@@ -573,16 +463,12 @@ This section provides an overview of the major updates, feature releases, and bu
 ### DCV 2017.0-4334 — January 24, 2018
 <a name="dcv-2017-0-4334"></a>
 
-****
-
 | Build numbers | Changes and bug fixes |
 | --- | --- |
 |  + nice-dcv-server: 4334<br />+ nice-dcv-client: 4334<br />+ nice-xdcv: 137<br />+ nice-dcv-gl: 254<br />+ nice-dcv-gltest: 184<br />+ nice-dcv-simple-external-authenticator: 45  | +  Improved keyboard handling. <br />+  Fixed DBus problem on RHEL6 where closing of a session doesn't allow a new one to be created. <br />+  Improved support for SOCKS5 proxy on the native client. <br />+  Addressed the bug that cause crashes on Headwave when running on virtual sessions and on Chimera when running on virtual sessions. <br />+  Improved font support on virtual sessions.  |
 
 ### DCV 2017.0-4100 — December 18, 2017
 <a name="dcv-2017-0-4100"></a>
-
-****
 
 | Build numbers |
 | --- |
@@ -592,8 +478,6 @@ This section provides an overview of the major updates, feature releases, and bu
 <a name="doc-history"></a>
 
 The following table describes the documentation for this release of Amazon DCV.
-
-****
 
 | Change | Description | Date |
 | --- | --- | --- |

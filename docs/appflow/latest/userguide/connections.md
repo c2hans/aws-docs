@@ -87,7 +87,7 @@ You can manage your connections in Amazon AppFlow by running commands with the A
   ```
 
 **To view the details for all of your connections**
-+ Run the [`describe-connector-profiles`](https://docs.aws.amazon.com//cli/latest/reference/appflow/describe-connector-profiles.html) command:
++ Run the [`describe-connector-profiles`](https://docs.aws.amazon.com/cli/latest/reference/appflow/describe-connector-profiles.html) command:
 
   ```
   $ aws appflow describe-connector-profiles
@@ -148,7 +148,7 @@ You can manage your connections in Amazon AppFlow by running commands with the A
 <a name="connections-"></a>
 
 You can manage your connections by using the following actions in the Amazon AppFlow API:
-+ [CreateConnectorProfile](https://docs.aws.amazon.com//appflow/1.0/APIReference/API_CreateConnectorProfile.html) – Creates a connection.
-+ [DescribeConnectorProfiles](https://docs.aws.amazon.com//appflow/1.0/APIReference/API_DescribeConnectorProfiles.html) – Provides details about your connections.
-+ [UpdateConnectorProfile](https://docs.aws.amazon.com//appflow/1.0/APIReference/API_UpdateConnectorProfile.html) – Edits a connection.
-+ [DeleteConnectorProfile](https://docs.aws.amazon.com//appflow/1.0/APIReference/API_DeleteConnectorProfile.html) – Deletes a connection.
++ [CreateConnectorProfile](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_CreateConnectorProfile.html) – Creates a connection.
++ [DescribeConnectorProfiles](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_DescribeConnectorProfiles.html) – Provides details about your connections.
++ [UpdateConnectorProfile](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_UpdateConnectorProfile.html) – Edits a connection.
++ [DeleteConnectorProfile](https://docs.aws.amazon.com/appflow/1.0/APIReference/API_DeleteConnectorProfile.html) – Deletes a connection.

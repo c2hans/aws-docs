@@ -14,8 +14,6 @@ Create service principal names (SPNs) for provided group managed service account
 ## Change Type Details
 <a name="ct-0ulaleq7ohuyq-DDCc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-0ulaleq7ohuyq |

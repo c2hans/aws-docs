@@ -17,8 +17,6 @@ When you set up OpsCenter, you enable default rules in Amazon EventBridge that a
 **Important**
 Your account is charged for OpsItems created by default rules. For more information, see [AWS Systems Manager Pricing](https://aws.amazon.com/systems-manager/pricing/).
 
-****
-
 | Rule name | Description |
 | --- | --- |
 | SSMOpsItems-Autoscaling-instance-launch-failure | This rule creates OpsItems when the launch of an EC2 auto scaling instance failed.  |

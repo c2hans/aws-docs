@@ -25,7 +25,7 @@ Resources:
             TargetIdentifier: arn:aws:organizations::123456789012:ou/o-ybfpt9XXXl/ou-XXXc-nlqXXXXX
 ```
 
-To create your stack through the CloudFormation console, edit the template to contain the control and target of your choice, then save the template with the file name `template.yaml`. Follow the CloudFormation wizard. When the wizard asks for a template file, enter the file you saved as `template.yaml`. For more information, see [Creating a stack on the Amazon CloudFormation console](https://docs.aws.amazon.com//AWSCloudFormation/latest/UserGuide/cfn-console-create-stack.html).
+To create your stack through the CloudFormation console, edit the template to contain the control and target of your choice, then save the template with the file name `template.yaml`. Follow the CloudFormation wizard. When the wizard asks for a template file, enter the file you saved as `template.yaml`. For more information, see [Creating a stack on the Amazon CloudFormation console](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-console-create-stack.html).
 
 **Note**
 The limit for `EnableControl` and `DisableControl` updates in AWS Control Tower is 100 concurrent operations.

@@ -14,8 +14,6 @@ Associate one or more secondary private IP addresses to the specified network in
 ## Change Type Details
 <a name="ct-1pvlhug439gl2-MAEa-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1pvlhug439gl2 |

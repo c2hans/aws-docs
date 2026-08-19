@@ -10,6 +10,7 @@ This section provides detailed information about supported SQL commands, focusin
 **Topics**
 + [`CREATE TABLE`](create-table-syntax-support.md)
 + [`ALTER TABLE`](alter-table-syntax-support.md)
++ [`CREATE INDEX`](create-index-syntax-support.md)
 + [`CREATE SEQUENCE`](create-sequence-syntax-support.md)
 + [`ALTER SEQUENCE`](alter-sequence-syntax-support.md)
 + [`DROP SEQUENCE`](drop-sequence-syntax-support.md)

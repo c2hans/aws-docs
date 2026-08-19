@@ -11,8 +11,6 @@ The usual Amazon EC2 quotas apply to instances launched by an EC2 Fleet or a Spo
 
 In addition, your AWS account has the following quotas related to EC2 Fleet and Spot Fleet:
 
-****
-
 | Quota description | Quota |
 | --- | --- |
 | The number of EC2 Fleets and Spot Fleets per Region of type maintain and request in the active, deleted\_running, and cancelled\_running states | 1,000 ¹ ² ³ |

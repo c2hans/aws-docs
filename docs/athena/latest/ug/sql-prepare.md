@@ -16,8 +16,6 @@ PREPARE statement_name FROM statement
 
 The following table describes the parameters.
 
-****
-
 | Parameter | Description |
 | --- | --- |
 | statement\_name | The name of the statement to be prepared. The name must be unique within the workgroup. |

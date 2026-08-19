@@ -13,7 +13,7 @@ The following sections describe how to set up IAM credentials to authenticate wi
 Before setting up IAM credentials to authenticate with your AWS account, note that:
 If you've already set IAM credentials through another AWS service (such as the AWS CLI), then the AWS Toolkit for Visual Studio automatically detects those credentials.
 AWS recommends using AWS IAM Identity Center authentication. For additional information about AWS IAM best practices, see the [Security best practice in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html) section of the *AWS Identity and Access Management User Guide*.
-To avoid security risks, don't use IAM users for authentication when developing purpose-built software or working with real data. Instead, use federation with an identity provider such as AWS IAM Identity Center. For more information see the [What is IAM Identity Center?](https://docs.aws.amazon.com//singlesignon/latest/userguide/what-is.html) in the *AWS IAM Identity Center User Guide*.
+To avoid security risks, don't use IAM users for authentication when developing purpose-built software or working with real data. Instead, use federation with an identity provider such as AWS IAM Identity Center. For more information see the [What is IAM Identity Center?](https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html) in the *AWS IAM Identity Center User Guide*.
 
 ## Creating an IAM user
 <a name="creating-iam-user"></a>

@@ -9,8 +9,6 @@ Conformance packs provide a general-purpose compliance framework designed to ena
 
 The following provides a sample mapping between the Payment Card Industry Data Security Standard (PCI DSS) 4.0 (Excluding global resource types) and AWS managed Config rules. Each AWS Config rule applies to a specific AWS resource, and relates to one or more PCI DSS controls. A PCI DSS control can be related to multiple Config rules. Refer to the table below for more detail and guidance related to these mappings.
 
-****
-
 | Control ID  | Control Description  | AWS Config Rule  | Guidance  |
 | --- | --- | --- | --- |
 | 1.2.5 |  Network security controls (NSCs) are configured and maintained. (PCI-DSS-v4.0) | [transfer-family-server-no-ftp](transfer-family-server-no-ftp.md) | Ensure that a server created with AWS Transfer Family does not use FTP for endpoint connection. The rule is NON\_COMPLIANT if the server protocol for endpoint connection is FTP-enabled. |

@@ -110,7 +110,7 @@ The ID of the AWS Key Management Service (AWS KMS) key used to encrypt Amazon FS
 + Amazon FSx for NetApp ONTAP
 + Amazon FSx for OpenZFS
 + Amazon FSx for Windows File Server
-If this ID isn't specified, the Amazon FSx-managed key for your account is used. For more information, see [Encrypt](https://docs.aws.amazon.com//kms/latest/APIReference/API_Encrypt.html) in the *AWS Key Management Service API Reference*.
+If this ID isn't specified, the Amazon FSx-managed key for your account is used. For more information, see [Encrypt](https://docs.aws.amazon.com/kms/latest/APIReference/API_Encrypt.html) in the *AWS Key Management Service API Reference*.
 *Required*: No
 *Type*: String
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)

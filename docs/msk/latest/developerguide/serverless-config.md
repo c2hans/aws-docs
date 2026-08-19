@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/serverless-con
 
 Amazon MSK sets broker configuration properties for serverless clusters. You can't change these broker configuration property settings. However, you can set or modify the following topic-level configuration properties. All other topic-level configuration properties are not configurable.
 
-****
-
 | Configuration property | Default | Editable | Maximum allowed value |
 | --- | --- | --- | --- |
 | [cleanup.policy](https://kafka.apache.org/documentation/#topicconfigs_cleanup.policy) | Delete | Yes, but only at topic creation time |  |

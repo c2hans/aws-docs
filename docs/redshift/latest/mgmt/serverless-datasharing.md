@@ -11,9 +11,9 @@ With *data sharing*, you have live access to data so that your users can see the
 
 You can share data for read purposes across different Amazon Redshift Serverless instances within or across AWS accounts.
 
-You can get started with data sharing by using either the SQL interface or the Amazon Redshift console. For more information, see [Data sharing in Amazon Redshift](https://docs.aws.amazon.com//redshift/latest/dg/datashare-overview.html) in the *Amazon Redshift Database Developer Guide*.
+You can get started with data sharing by using either the SQL interface or the Amazon Redshift console. For more information, see [Data sharing in Amazon Redshift](https://docs.aws.amazon.com/redshift/latest/dg/datashare-overview.html) in the *Amazon Redshift Database Developer Guide*.
 
-With data sharing, Amazon Redshift Serverless namespaces and provisioned clusters can share live data with each other, whether they are within an AWS account across AWS accounts, or across AWS Regions. For more information, see [Regions where data sharing is available](https://docs.aws.amazon.com//redshift/latest/dg/data_sharing_regions.html).
+With data sharing, Amazon Redshift Serverless namespaces and provisioned clusters can share live data with each other, whether they are within an AWS account across AWS accounts, or across AWS Regions. For more information, see [Regions where data sharing is available](https://docs.aws.amazon.com/redshift/latest/dg/data_sharing_regions.html).
 
 To get started sharing data within an AWS account, open the AWS Management Console, and then choose the Amazon Redshift console. Choose **Namespace configuration** and then **Datashares**.
 

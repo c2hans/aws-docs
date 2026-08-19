@@ -60,8 +60,6 @@ The `CREATE EXTERNAL TABLE` statement does not perform any validation on the `TB
 
 The following table shows DynamoDB data types and compatible Hive data types:
 
-****
-
 | DynamoDB Data Type | Hive Data Type |
 | --- | --- |
 | String | `STRING` |

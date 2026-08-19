@@ -27,7 +27,7 @@ Secrets Manager generates a CloudTrail log entry when you restore a secret. For 
 <a name="manage_restore-secret_CLI"></a>
 
 **Example Restore a previously deleted secret**
-The following [`restore-secret`](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/restore-secret.html) example restores a secret that was previously scheduled for deletion.
+The following [`restore-secret`](https://docs.aws.amazon.com/cli/latest/reference/secretsmanager/restore-secret.html) example restores a secret that was previously scheduled for deletion.
 
 ```
 aws secretsmanager restore-secret \

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/notifications/latest/userguide/resource-
 # Resource-level permissions in AWS User Notifications
 <a name="resource-level-permissions"></a>
 
-*Resource-level permissions* define the AWS resources that you allow assigned entities (users, groups, and roles) to perform actions on. You specifiy the Amazon Resource Name (ARN) of one or more resources as part of an IAM policy. You can then attach this policy to IAM entities. When the action doesn't act on a named resource, or when you grant permission to perform the action on all resources, the value of the resource in the policy is a wildcard (\*).
+*Resource-level permissions* define the AWS resources that you allow assigned entities (users, groups, and roles) to perform actions on. You specify the Amazon Resource Name (ARN) of one or more resources as part of an IAM policy. You can then attach this policy to IAM entities. When the action doesn't act on a named resource or you grant permission to perform the action on all resources, the value for the resource in the policy is a wildcard (\*).
 
 **Note**
 AWS User Notifications doesn't support *resource-based policies*, which are directly attached to AWS resources. For more information about the differences between policies and permissions, see [Identity-based policies and resource-based policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_identity-vs-resource.html) in the *IAM User Guide*.
@@ -15,7 +15,7 @@ AWS User Notifications doesn't support *resource-based policies*, which are dire
 ## Supported resource-level permissions for User Notifications API actions
 <a name="rlp-table"></a>
 
- This table describes the User Notifications API actions that currently support resource-level permissions, as well as the supported resources for each action, including their ARNs and ARN format.
+This table describes the User Notifications API actions that currently support resource-level permissions, as well as the supported resources for each action, including their ARNs and ARN format.
 
 - ** Managed Notification Configuration **
   - **API action:** GetManagedNotificationConfiguration / **Resource ARN format:** `arn:aws:notifications::{{accountId}}:managed-notification-configuration/category/{{category-name}}/sub-category/{{sub-category-name}}` / **Example:** `arn:aws:notifications::123456789012:managed-notification-configuration/category/AWS-Health/sub-category/Security`
@@ -74,7 +74,7 @@ AWS User Notifications doesn't support *resource-based policies*, which are dire
 ## Example 1: Full access
 <a name="admin-access-example"></a>
 
-This policy allows a user to call all available APIs.
+This policy allows a user to call all available API actions.
 
 ------
 #### [ JSON ]
@@ -102,7 +102,7 @@ This policy allows a user to call all available APIs.
 ## Example 2: ReadOnly access
 <a name="readonly-access-example"></a>
 
-This policy allows a user to use get and list API actions.
+This policy allows a user to call all get and list API actions.
 
 ------
 #### [ JSON ]
@@ -157,10 +157,10 @@ This policy denies a user the ability to update a notification configuration.
 
 ------
 
-## Example 4: Allow users to create notification configurations and associate emails to them
+## Example 4: Allow users to create notification configurations and associate emails with them
 <a name="create-ncs-example"></a>
 
-This policy allows users to create notification configurations and associate emails to those configurations.
+This policy allows users to create notification configurations and associate emails with those configurations.
 
 ------
 #### [ JSON ]
@@ -191,10 +191,10 @@ This policy allows users to create notification configurations and associate ema
 
 ------
 
-## Example 5: Allow users full create, read, update, and delete (CRUD) access.
+## Example 5: Allow users full create, read, update, and delete access
 <a name="crud-example"></a>
 
-This policy allows users full CRUD access.
+This policy allows users full create, read, update, and delete (CRUD) access.
 
 ------
 #### [ JSON ]
@@ -301,11 +301,6 @@ This policy grants a user full read-write access to AWS User Notifications by li
 
 This policy demonstrates least-privilege access by scoping managed notification permissions to a specific category (and optionally a specific sub-category) using resource-level ARNs. Replace the category (and optionally the sub-category) in the ARN to match your use case. This example uses AWS Health managed notifications.
 
-------
-#### [ JSON ]
-
-****
-
 ```
 {
   "Version":"2012-10-17",
@@ -326,10 +321,8 @@ This policy demonstrates least-privilege access by scoping managed notification 
         "notifications:GetManagedNotificationChildEvent",
         "notifications:ListManagedNotificationChildEvents"
       ],
-      "Resource": "arn:aws::notifications::123456789012:managed-notification-configuration/category/AWS-Health/sub-category/*"
+      "Resource": "arn:aws:notifications::123456789012:managed-notification-configuration/category/AWS-Health/sub-category/*"
     }
   ]
 }
 ```
-
-------

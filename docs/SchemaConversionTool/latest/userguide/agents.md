@@ -223,13 +223,11 @@ Use the following procedure to install extraction agents. Repeat this procedure 
 1. Download and install the latest version of Amazon Corretto 11. For more information, see [Downloads for Amazon Corretto 11](https://docs.aws.amazon.com/corretto/latest/corretto-11-ug/downloads-list.html) in the *Amazon Corretto 11 User Guide*.
 
 1. Locate the installer file for your extraction agent in a subfolder named agents. For each computer operating system, the correct file to install the extraction agent is shown following.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/agents.html)
 
 1. Install the extraction agent on a separate computer by copying the installer file to the new computer.
 
 1. Run the installer file. Use the instructions for your operating system, shown following.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/agents.html)
 
 1. Choose **Next**, accept the license agreement, and choose **Next**.
@@ -321,7 +319,6 @@ Extraction agents act as listeners. When you start an agent with this procedure,
 
 **To start your extraction agent**
 + On the computer that has the extraction agent installed, run the command listed following for your operating system.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/agents.html)
 
 To check the status of the agent, run the same command but replace `start` with `status`.
@@ -757,8 +754,6 @@ You can monitor and manage the data migration tasks and their subtasks in the **
 
 After your migration tasks complete, your data is ready. Use the following information to determine how to proceed based on the migration mode you chose and the location of your data.
 
-****
-
 | Migration mode | Data location |
 | --- | --- |
 | **Extract, upload and copy** | The data is already in your Amazon Redshift data warehouse. You can verify that the data is there, and start using it. For more information, see [Connecting to clusters from client tools and code](https://docs.aws.amazon.com/redshift/latest/mgmt/connecting-via-client-tools.html).  |
@@ -809,7 +804,6 @@ Partition3: WHERE LO_TAX > 15005.5 AND LO_TAX <= 25005.95
 1. Choose the table where you want to set up virtual partitioning. Open the context (right-click) menu for the table, and choose **Add virtual partitioning**.
 
 1. In the **Add virtual partitioning** dialog box, enter the information as follows.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/agents.html)
 
 1. Choose **OK**.
@@ -842,7 +836,6 @@ You can use the LIST partition type to filter the source data if you want to exc
 1. Choose the table where you want to set up virtual partitioning. Open the context (right-click) menu for the table, and choose **Add virtual partitioning**.
 
 1. In the **Add virtual partitioning** dialog box, enter the information as follows.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/agents.html)
 
 1. Choose **OK**.
@@ -871,7 +864,6 @@ PartitionN: WHERE LO_ORDERDATE >= USER_VALUE_N AND LO_ORDERDATE <= ‘2017-08-13
 1. Choose the table where you want to set up virtual partitioning. Open the context (right-click) menu for the table, and choose **Add virtual partitioning**.
 
 1. In the **Add virtual partitioning** dialog box, enter information as follows.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/agents.html)
 
 1. Choose **OK**.
@@ -940,8 +932,6 @@ Amazon Redshift doesn't support storing large binary objects (LOBs). However, if
 <a name="agents.BestPractices"></a>
 
 The following are some best practices and troubleshooting suggestions for using extraction agents.
-
-****
 
 | Issue | Troubleshooting suggestions |
 | --- | --- |

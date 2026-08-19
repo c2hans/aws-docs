@@ -19,9 +19,9 @@ To use [Rule-based redaction for screen recordings](rule-based-redaction-screen-
 
 ### Version information
 <a name="version-info"></a>
-+ Version: v3.0.3 (latest)
-+ Release date: July 30, 2026
-+ Download link: [AmazonConnectClientWin-v3.0.3](https://d4yqf2f7seiym.cloudfront.net/builds/AmazonConnectClientWin-v3.0.3.zip)
++ Version: v3.0.4 (latest)
++ Release date: August 13, 2026
++ Download link: [AmazonConnectClientWin-v3.0.4](https://d4yqf2f7seiym.cloudfront.net/builds/AmazonConnectClientWin-v3.0.4.zip)
 + Release note: This version adds support for rule-based redaction of agent screen recordings.
 
 The above link downloads the **AmazonConnectClientWin-[version].zip** file. The zip file contains the **Amazon.Connect.Client.Service.Setup.[version].msi** file. For installation instructions, see [Enable screen recording](enable-sr.md).

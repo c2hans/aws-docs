@@ -14,8 +14,6 @@ You can download the database drivers from the following locations.
 **Important**
 Download the latest version of the driver available. The following table includes the lowest version of database driver supported by AWS SCT.
 
-****
-
 | Database engine | Drivers | Download location |
 | --- | --- | --- |
 | Amazon Aurora MySQL-Compatible Edition | `mysql-connector-java-5.1.6.jar` |  [https://www.mysql.com/products/connector/](https://www.mysql.com/products/connector/)  |
@@ -54,7 +52,6 @@ You can use the following steps to install the JDBC drivers on your Linux system
    ```
 
 1. Install the JDBC driver for your database engine using the commands shown following.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CHAP_Installing.JDBCDrivers.html)
 
 ## Storing driver paths in the global settings

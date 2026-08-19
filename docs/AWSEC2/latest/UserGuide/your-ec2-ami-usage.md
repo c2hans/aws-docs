@@ -42,7 +42,7 @@ Amazon EC2 automatically deletes a report 30 days after creation. You can downlo
 ## Create an AMI usage report
 <a name="create-ami-usage-reports"></a>
 
-To view how your AMI is being used, you must first create an AMI usage report, specifying the accounts and resource types to report on. Once the report is created, you can view the contents of the report. You can also download the report from the EC2 console.
+To view how your AMI is being used, you must first create an AMI usage report, specifying the accounts and resource types to report on. After the report is created, you can view the contents of the report. You can also download the report from the EC2 console.
 
 ------
 #### [ Console ]

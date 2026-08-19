@@ -12,8 +12,6 @@ RDS for Oracle Database 11g is no longer supported. This information is only use
 
 To find what Oracle Patch Set Updates (PSUs) are applied to Amazon RDS for Oracle Database 11g Release 2 (11.2.0.4), see the following table.
 
-****
-
 |  Date  |  PSU  |
 | --- | --- |
 | 2020 October | [11.2.0.4.v26](#oracle-version-11.2.0.4.v26) |

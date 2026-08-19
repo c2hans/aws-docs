@@ -137,9 +137,9 @@ Note the following:
 
   For information about how to set up multiple accounts, see [Managing the AWS accounts in your organization](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_accounts.html) in the *AWS Organizations User Guide*.
 + When you set up your users, you assign them each an IAM role. This role determines the level of access that they have to your Amazon EFS file system.
-+ For details on mounting an Amazon EFS file system, see [Mounting Amazon EFS file systems](https://docs.aws.amazon.com//efs/latest/ug/mounting-fs.html).
++ For details on mounting an Amazon EFS file system, see [Mounting Amazon EFS file systems](https://docs.aws.amazon.com/efs/latest/ug/mounting-fs.html).
 
-For more details on how AWS Transfer Family and Amazon EFS work together, see [Using AWS Transfer Family to access files in your Amazon EFS file system](https://docs.aws.amazon.com//efs/latest/ug/using-aws-transfer-integration.html) in the *Amazon Elastic File System User Guide*.
+For more details on how AWS Transfer Family and Amazon EFS work together, see [Using AWS Transfer Family to access files in your Amazon EFS file system](https://docs.aws.amazon.com/efs/latest/ug/using-aws-transfer-integration.html) in the *Amazon Elastic File System User Guide*.
 
 ### Amazon EFS file ownership
 <a name="efs-file-ownership"></a>

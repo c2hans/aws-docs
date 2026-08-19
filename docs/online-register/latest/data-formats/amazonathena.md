@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon Athena provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="athena-BatchGetNamedQuery"></a>[BatchGetNamedQuery](https://docs.aws.amazon.com/athena/latest/APIReference/API_BatchGetNamedQuery.html) | Get information about one or more named queries | Read |

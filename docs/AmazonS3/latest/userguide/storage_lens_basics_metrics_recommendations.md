@@ -247,7 +247,7 @@ When you're updating your Storage Lens dashboard configuration through the API, 
 
 AWS Organizations is an AWS service that helps you aggregate all of your AWS accounts under one organization hierarchy. Amazon S3 Storage Lens works with AWS Organizations to provide a single view of object storage and activity across your Amazon S3 storage.
 
-For more information, see [Using Amazon S3 Storage Lens with AWS OrganizationsEnabling trusted access for S3 Storage Lens](storage_lens_with_organizations.md).
+For more information, see [Using Amazon S3 Storage Lens with AWS Organizations](storage_lens_with_organizations.md).
 + **Trusted access**
 
   Using your organization's management account, you must enable trusted access for S3 Storage Lens to aggregate storage metrics and usage data for all member accounts in your organization. You can then create dashboards or exports for your organization by using your management account or by giving delegated administrator access to other accounts in your organization.

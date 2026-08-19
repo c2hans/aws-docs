@@ -67,7 +67,7 @@ Choose your preferred runtime and follow the steps to create a function that ret
 
    ```
    import json
-   import os
+   import boto3
    import requests
 
    def lambda_handler(event, context):
@@ -75,8 +75,13 @@ Choose your preferred runtime and follow the steps to create a function that ret
            # Replace with the name or ARN of your secret
            secret_name = "{{arn:aws:secretsmanager:us-east-1:111122223333:secret:SECRET_NAME}}"
 
+           # Resolve the session token from the credential provider chain so that this
+           # works across all initialization modes, including SnapStart. Resolve inside
+           # the handler so the token stays fresh after a SnapStart restore.
+           session_token = boto3.Session().get_credentials().get_frozen_credentials().token
+
            secrets_extension_endpoint = f"http://localhost:2773/secretsmanager/get?secretId={secret_name}"
-           headers = {"X-Aws-Parameters-Secrets-Token": os.environ.get('AWS_SESSION_TOKEN')}
+           headers = {"X-Aws-Parameters-Secrets-Token": session_token}
 
            response = requests.get(secrets_extension_endpoint, headers=headers)
            print(f"Response status code: {response.status_code}")
@@ -137,17 +142,24 @@ Choose your preferred runtime and follow the steps to create a function that ret
 
    ```
    import http from 'http';
+   import { fromNodeProviderChain } from '@aws-sdk/credential-providers';
 
    export const handler = async (event) => {
        try {
            // Replace with the name or ARN of your secret
            const secretName = "{{arn:aws:secretsmanager:us-east-1:111122223333:secret:SECRET_NAME}}";
+
+           // Resolve the session token from the credential provider chain so that this
+           // works across all initialization modes, including SnapStart. Resolve inside
+           // the handler so the token stays fresh after a SnapStart restore.
+           const { sessionToken } = await fromNodeProviderChain()();
+
            const options = {
                hostname: 'localhost',
                port: 2773,
                path: `/secretsmanager/get?secretId=${secretName}`,
                headers: {
-                   'X-Aws-Parameters-Secrets-Token': process.env.AWS_SESSION_TOKEN
+                   'X-Aws-Parameters-Secrets-Token': sessionToken
                }
            };
 
@@ -238,6 +250,11 @@ Choose your preferred runtime and follow the steps to create a function that ret
                <artifactId>aws-lambda-java-core</artifactId>
                <version>1.2.1</version>
            </dependency>
+           <dependency>
+               <groupId>software.amazon.awssdk</groupId>
+               <artifactId>auth</artifactId>
+               <version>2.25.0</version>
+           </dependency>
        </dependencies>
 
        <build>
@@ -277,6 +294,8 @@ Choose your preferred runtime and follow the steps to create a function that ret
 
    import com.amazonaws.services.lambda.runtime.Context;
    import com.amazonaws.services.lambda.runtime.RequestHandler;
+   import software.amazon.awssdk.auth.credentials.DefaultCredentialsProvider;
+   import software.amazon.awssdk.auth.credentials.AwsSessionCredentials;
    import java.net.URI;
    import java.net.http.HttpClient;
    import java.net.http.HttpRequest;
@@ -284,6 +303,7 @@ Choose your preferred runtime and follow the steps to create a function that ret
 
    public class Hello implements RequestHandler<Object, String> {
        private final HttpClient client = HttpClient.newHttpClient();
+       private final DefaultCredentialsProvider credentialsProvider = DefaultCredentialsProvider.create();
 
        @Override
        public String handleRequest(Object input, Context context) {
@@ -292,9 +312,15 @@ Choose your preferred runtime and follow the steps to create a function that ret
                String secretName = "{{arn:aws:secretsmanager:us-east-1:111122223333:secret:SECRET_NAME}}";
                String endpoint = "http://localhost:2773/secretsmanager/get?secretId=" + secretName;
 
+               // Resolve the session token from the credential provider chain so that this
+               // works across all initialization modes, including SnapStart. Resolve inside
+               // the handler so the token stays fresh after a SnapStart restore.
+               AwsSessionCredentials credentials = (AwsSessionCredentials) credentialsProvider.resolveCredentials();
+               String sessionToken = credentials.sessionToken();
+
                HttpRequest request = HttpRequest.newBuilder()
                    .uri(URI.create(endpoint))
-                   .header("X-Aws-Parameters-Secrets-Token", System.getenv("AWS_SESSION_TOKEN"))
+                   .header("X-Aws-Parameters-Secrets-Token", sessionToken)
                    .GET()
                    .build();
 

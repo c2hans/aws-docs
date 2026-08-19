@@ -20,7 +20,7 @@ If you use IAM users instead of IAM roles, we strongly recommend enabling AWS [m
 
 **Learn more**
 + [AWS managed policies for job functions](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_job-functions.html)
-+ [Techniques for writing least privilege IAM policies](https://aws.amazon.com//blogs/security/techniques-for-writing-least-privilege-iam-policies/)
++ [Techniques for writing least privilege IAM policies](https://aws.amazon.com/blogs/security/techniques-for-writing-least-privilege-iam-policies/)
 
 ## Implementing least privileged permissions
 <a name="key-policy-least-privilege"></a>

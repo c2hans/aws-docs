@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon Redshift Serverless provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="redshift-serverless-DescribeOneTimeCredit"></a>[DescribeOneTimeCredit](https://aws.amazon.com/redshift/free-trial/) | See on the Amazon Redshift Serverless console the remaining number of free trial credits and their expiration date | Read |

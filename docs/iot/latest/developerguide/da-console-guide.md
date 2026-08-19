@@ -20,7 +20,7 @@ Europe (Ireland)
 
 **Getting started**
 
-1. In the [AWS IoT console's](https://console.aws.amazon.com//iot) navigation pane under **Test**, choose **Device Advisor**. Then, choose the **Start walkthrough** button on the console.
+1. In the [AWS IoT console's](https://console.aws.amazon.com/iot) navigation pane under **Test**, choose **Device Advisor**. Then, choose the **Start walkthrough** button on the console.
 ![Device Advisor is a fully managed test capability for IoT devices to validate secure interaction with AWS IoT Core, identify software issues, and get test results.](http://docs.aws.amazon.com/iot/latest/developerguide/images/da-console-gs.png)
 
 1. The **Getting started with Device Advisor** page provides an overview of the steps required to create a test suite and run tests against your device. You can also find the Device Advisor test endpoint for your account here. You must configure the firmware or software on the device used for testing to connect to this test endpoint.

@@ -49,8 +49,6 @@ As a result, when a resource configuration change is detected, AWS Config not on
 
 The following indirect resource relationships are supported in AWS Config.
 
-****
-
 | Resource type | is indirectly related to the resource type |
 | --- | --- |
 | AWS::EC2::RouteTable | AWS::EC2::Instance, AWS::EC2::NetworkInterface, AWS::EC2::Subnet, AWS::EC2::VPNGateway, AWS::EC2::VPC |
@@ -69,8 +67,6 @@ The following indirect resource relationships are supported in AWS Config.
 
 Below are the AWS services and the service's feature using indirect relationship.
 
-****
-
 | AWS feature | Scenario |
 | --- | --- |
 | AWS Config managed rule | [ec2-security-group-attached-to-eni](https://docs.aws.amazon.com/config/latest/developerguide/ec2-security-group-attached-to-eni.html) rule checks whether non-default security groups are attached to Elastic Network Interfaces (ENI).<br />Without an indirect relationship, you would need to create a custom rule to check if non-default security groups are attached to an ENI. |
@@ -86,8 +82,6 @@ For a direct relationship between resources (A→B), any configuration change to
 <a name="faq-6"></a>
 
 Below are the additional configuration items (CIs) generated due to indirect resource relationships.
-
-****
 
 | Configuration changes to the following resource types | will generate CIs for the following resources types |
 | --- | --- |

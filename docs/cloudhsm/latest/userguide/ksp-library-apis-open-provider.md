@@ -15,7 +15,6 @@ A pointer to a `NCRYPT_PROV_HANDLE` variable that stores the provider handle.
 
  `pszProviderName` [in]
 A pointer to a null-terminated Unicode string identifying the key storage provider. AWS CloudHSM Key Storage Provider (KSP) supports the following values:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/cloudhsm/latest/userguide/ksp-library-apis-open-provider.html)
 Values are wide-character string literal, as indicated by L before the literal.
 
@@ -28,8 +27,6 @@ Flags that modify the behavior of the function. No flags are defined for this fu
 The function returns a status code to indicate success or failure.
 
 Common return codes include:
-
-****
 
 | Return code | Description |
 | --- | --- |

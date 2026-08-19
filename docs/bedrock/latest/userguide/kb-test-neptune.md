@@ -29,7 +29,7 @@ When you query the knowledge base and generate responses, you can filter on meta
 The following are some considerations for using the `RetrievalFilter` API for Neptune Analytics graphs.
 + The `listContains` filter is not supported.
 + The list variant of the `stringContains` filter is not supported.
-+ For best practices on choosing filter types and designing metadata attributes for efficient filtering, see [Best practices for metadata filtering in GraphRAG](https://docs.aws.amazon.com//neptune-analytics/latest/userguide/best-practices-graphrag-filters.html).
++ For best practices on choosing filter types and designing metadata attributes for efficient filtering, see [Best practices for metadata filtering in GraphRAG](https://docs.aws.amazon.com/neptune-analytics/latest/userguide/best-practices-graphrag-filters.html).
 
 The following shows an example:
 

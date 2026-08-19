@@ -26,13 +26,13 @@ Required: Yes
 The unique identifier of the payment connector.
 Type: String
 Length Constraints: Minimum length of 12. Maximum length of 211.
-Pattern: `([0-9a-z][-]?){1,100}-[0-9a-z]{10}`
+Pattern: `([0-9a-z_][-]?){1,100}-[0-9a-z]{10}`
 Required: Yes
 
  ** status **   <a name="bedrockagentcorecontrol-Type-PaymentConnectorSummary-status"></a>
 The current status of the payment connector. Possible values include `CREATING`, `READY`, `UPDATING`, `DELETING`, `CREATE_FAILED`, `UPDATE_FAILED`, and `DELETE_FAILED`.
 Type: String
-Valid Values: `CREATING | UPDATING | DELETING | READY | CREATE_FAILED | UPDATE_FAILED | DELETE_FAILED`
+Valid Values: `CREATING | UPDATING | DELETING | READY | CREATE_FAILED | UPDATE_FAILED | DELETE_FAILED | AWS_MARKETPLACE_SUBSCRIPTION_REQUIRED | PENDING_AUTHENTICATION | PROVISIONING | AUTHENTICATION_EXPIRED | AUTHENTICATION_FAILED`
 Required: Yes
 
  ** type **   <a name="bedrockagentcorecontrol-Type-PaymentConnectorSummary-type"></a>

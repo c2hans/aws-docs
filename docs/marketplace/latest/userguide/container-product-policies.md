@@ -33,7 +33,7 @@ As a container product seller, you must adhere to the following policies:
 + Containers must not request AWS credentials to access AWS services. When your product needs to access AWS services, you must use one of the following:
   + IAM roles for service accounts, for Amazon Elastic Kubernetes Service (Amazon EKS) workloads.
   + IAM roles for tasks, for Amazon Elastic Container Service (Amazon ECS) workloads.
-+ Container-based products must only require least privileges to run. For more information, see [Security in Amazon Elastic Container Service](https://docs.aws.amazon.com//AmazonECS/latest/developerguide/security.html) and [Security in Amazon EKS](https://docs.aws.amazon.com//eks/latest/userguide/security.html).
++ Container-based products must only require least privileges to run. For more information, see [Security in Amazon Elastic Container Service](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/security.html) and [Security in Amazon EKS](https://docs.aws.amazon.com/eks/latest/userguide/security.html).
 + Container images should be configured to run with non-root privileges by default.
 + Containers must not contain any hardcoded secrets such as passwords(even hashed) for system users and services, private keys, credentials, etc.
 + Authentication in any services running inside the container must not use password-based authentication, even if the password is generated, reset, or defined by the user at launch. Null and blank passwords are not allowed as well.

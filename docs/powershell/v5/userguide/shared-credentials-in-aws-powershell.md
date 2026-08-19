@@ -27,8 +27,6 @@ The new profile types and access to the AWS shared credential file are supported
 
 The AWS shared credential file enables additional types of access. For example, you can access your AWS resources by using an IAM role instead of the long term credentials of an IAM user. To do this, you must have a standard profile that has permissions to assume the role. When you tell the AWS Tools for PowerShell to use a profile that specified a role, the AWS Tools for PowerShell looks up the profile identified by the `SourceProfile` parameter. Those credentials are used to request temporary credentials for the role specified by the `RoleArn` parameter. You can optionally require the use of an multi-factor authentication (MFA) device or an `ExternalId` code when the role is assumed by a third party.
 
-****
-
 | Parameter Name | Description |
 | --- | --- |
 | ExternalId | The user-defined external ID to be used when assuming a role, if required by the role. This is typically only required when you delegate access to your account to a third party. The third party must include the ExternalId as a parameter when assuming the assigned role. For more information, see [How to Use an External ID When Granting Access to Your AWS Resources to a Third Party](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-user_externalid.html) in the *IAM User Guide*. |
@@ -69,8 +67,6 @@ CreationDate           BucketName
 
 To set a credential profile type, understand which parameters provide the information required by the profile type.
 
-****
-
 | Credentials Type | Parameters you must use |
 | --- | --- |
 | **Basic**<br />These are the long term credentials for an IAM user | `-AccessKey` <br />`-SecretKey` |
@@ -81,8 +77,6 @@ To set a credential profile type, understand which parameters provide the inform
 <a name="the-profileslocation-common-parameter"></a>
 
 You can use `-ProfileLocation` to write to the shared credential file as well as instruct a cmdlet to read from the credential file. Adding the `-ProfileLocation` parameter controls whether Tools for Windows PowerShell uses the shared credential file or the .NET credential file. The following table describes how the parameter works in Tools for Windows PowerShell.
-
-****
 
 | Profile Location Value | Profile Resolution Behavior |
 | --- | --- |

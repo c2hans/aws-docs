@@ -15,8 +15,6 @@ The time zone set on the node is used as follows:
 
 Make sure you perform the configuration on the correct nodes.
 
-****
-
 | Node | Work on this node? |
 | --- | --- |
 | Primary Conductor Live node | Yes |

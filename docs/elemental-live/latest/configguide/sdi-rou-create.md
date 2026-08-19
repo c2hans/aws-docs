@@ -20,5 +20,4 @@ Create the router on the Elemental Live node.
    + LRC Protocol
 
 1. Complete the **Add New Router ** fields as described in the table and choose **Create**.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-live/latest/configguide/sdi-rou-create.html)

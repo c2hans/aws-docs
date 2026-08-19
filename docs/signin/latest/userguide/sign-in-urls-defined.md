@@ -5,21 +5,32 @@ source_url: https://docs.aws.amazon.com/signin/latest/userguide/sign-in-urls-def
 # Determine your sign-in URL
 <a name="sign-in-urls-defined"></a>
 
+**Warning**
+We're currently releasing our new experience to a limited number of customers. You might not be able to access this experience yet.
+
 Use one of the following URLs to access AWS depending on what kind of AWS user you are. For more information, see [Determine your user type](user-types-list.md).
 
 **Topics**
-+ [AWS account root user sign-in URL](#root-user-url)
++ [AWS account sign-in URL](#root-user-url)
++ [AWS Settings](#aws-settings-url)
 + [AWS access portal](#access-portal-url)
 + [IAM user sign-in URL](#IAM-user-url)
 + [Federated identity URL](#federated-identities-url)
 + [AWS Builder ID URL](#builder-id-url)
 
-## AWS account root user sign-in URL
+## AWS account sign-in URL
 <a name="root-user-url"></a>
 
-The root user accesses the AWS Management Console from the AWS sign-in page: `[https://console.aws.amazon.com/](https://console.aws.amazon.com/)`.
+If you need to access a project and sign in with a method you already have, like Google or GitHub, use the AWS account sign-in URL. You also need to use the AWS account sign-in URL if you want root user or IAM user access.
 
- This sign-in page also has the option of signing in as an IAM user.
+The URL is the following: `[https://console.aws.amazon.com/](https://console.aws.amazon.com/)`
+
+## AWS Settings
+<a name="aws-settings-url"></a>
+
+AWS Settings is available if you sign in using our new AWS experience. AWS Settings lets you access all projects you own, and projects shared with you. You can also use AWS Settings to modify your billing settings and invite team members.
+
+The URL is the following: `settings.aws.com`
 
 ## AWS access portal
 <a name="access-portal-url"></a>
@@ -72,4 +83,4 @@ For more information about federated identities, see [About web identity federat
 ## AWS Builder ID URL
 <a name="builder-id-url"></a>
 
-The URL for your AWS Builder ID profile is [https://profile.aws.amazon.com/](https://profile.aws.amazon.com/). When using your AWS Builder ID, the sign-in URL depends on what service you want to access. For example, to sign in to AWS Builder Center, open the [AWS Builder Center website](https://builder.aws.com).
+The URL for your AWS Builder ID profile is [https://profile.aws.amazon.com/](https://profile.aws.amazon.com/). When using your AWS Builder ID, the sign-in URL depends on what service you want to access. For example, to sign in to Amazon CodeCatalyst, go to [https://codecatalyst.aws/login](https://codecatalyst.aws/login).

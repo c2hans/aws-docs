@@ -7,8 +7,6 @@ This is an earlier version of the AWS Well-Architected Framework. For the latest
 # COST05-BP01 Identify organization requirements for cost
 <a name="cost_select_service_requirements"></a>
 
-****
-
 |  |
 | --- |
 | This best practice was updated with new guidance on December 6, 2023. |

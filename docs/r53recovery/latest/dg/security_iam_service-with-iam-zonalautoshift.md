@@ -108,10 +108,10 @@ Administrators can use AWS JSON policies to specify who has access to what. That
 The `Condition` element specifies when statements execute based on defined criteria. You can create conditional expressions that use [condition operators](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html), such as equals or less than, to match the condition in the policy with values in the request. To see all AWS global condition keys, see [AWS global condition context keys](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html) in the *IAM User Guide*.
 
 To see a list of ARC condition keys for zonal autoshift, see the following topics in the *Service Authorization Reference*:
-+ [ Condition keys for Amazon Route 53 Zonal Shift](https://docs.aws.amazon.com//service-authorization/latest/reference/list_amazonroute53applicationrecoverycontroller-zonalshift.html#amazonroute53applicationrecoverycontroller-zonalshift-policy-keys)
++ [ Condition keys for Amazon Route 53 Zonal Shift](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonroute53applicationrecoverycontroller-zonalshift.html#amazonroute53applicationrecoverycontroller-zonalshift-policy-keys)
 
 To see the actions and resources that you can use with a condition key, see the following topics in the *Service Authorization Reference*:
-+ [ Actions defined by Amazon Route 53 Zonal Shift](https://docs.aws.amazon.com//service-authorization/latest/reference/list_amazonroute53applicationrecoverycontroller-zonalshift.html#amazonroute53applicationrecoverycontroller-zonalshift-actions-as-permissions)
++ [ Actions defined by Amazon Route 53 Zonal Shift](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonroute53applicationrecoverycontroller-zonalshift.html#amazonroute53applicationrecoverycontroller-zonalshift-actions-as-permissions)
 
 To view examples of ARC identity-based policies for zonal autoshift, see [Identity-based policy examples for zonal autoshift in ARC](security_iam_id-based-policy-examples-zonalautoshift.md).
 
@@ -153,7 +153,7 @@ Temporary credentials provide short-term access to AWS resources and are automat
 When you use an IAM entity (user or role) to perform actions in AWS, you are considered a principal. Policies grant permissions to a principal. When you use some services, you might perform an action that then triggers another action in a different service. In this case, you must have permissions to perform both actions.
 
 To see whether an action requires additional dependent actions in a policy, see the following topic in the *Service Authorization Reference*:
-+ [ Amazon Route 53 Zonal Shift](https://docs.aws.amazon.com//service-authorization/latest/reference/list_amazonroute53applicationrecoverycontroller-zonalshift.html)
++ [ Amazon Route 53 Zonal Shift](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonroute53applicationrecoverycontroller-zonalshift.html)
 
 ## Service roles for ARC
 <a name="security_iam_service-with-iam-zonalautoshift-roles-service"></a>

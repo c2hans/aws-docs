@@ -11,7 +11,7 @@ The delegated administrator can get and export recommendations, set recommendati
 
 **Note**
 You can limit your delegated administrator’s access to Compute Optimizer actions by setting up appropriate IAM permissions in your IAM policy. For more information, see [Policies and permissions in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/PoliciesOverview.html).
-If you're the delegated administrator and you want to view org-level recommendations, see [ Policies to grant access to Compute Optimizer for a management account of an organization](https://docs.aws.amazon.com//compute-optimizer/latest/ug/security-iam.html#organization-account-access).
+If you're the delegated administrator and you want to view org-level recommendations, see [ Policies to grant access to Compute Optimizer for a management account of an organization](https://docs.aws.amazon.com/compute-optimizer/latest/ug/security-iam.html#organization-account-access).
 
 ## Procedure
 <a name="da-process"></a>

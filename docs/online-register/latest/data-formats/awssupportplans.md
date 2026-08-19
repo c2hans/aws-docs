@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awss
 
 AWS Support Plans provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="supportplans-GetSupportAgreement"></a>[GetSupportAgreement](https://docs.aws.amazon.com/awssupport/latest/user/security-support-plans.html) | View details about a support agreement for this AWS account | Read |

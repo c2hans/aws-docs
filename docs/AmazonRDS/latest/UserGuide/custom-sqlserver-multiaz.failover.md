@@ -12,8 +12,6 @@ You can force a failover manually when you reboot a DB instance with failover. F
 
 Amazon RDS handles failovers automatically so you can resume database operations as quickly as possible without administrative intervention. The primary DB instance switches over automatically to the standby replica if any of the conditions described in the following table occurs. You can view these failover reasons in the RDS event log.
 
-****
-
 | Failover reason | Description |
 | --- | --- |
 | `The operating system for the RDS Custom for SQL Server Multi-AZ DB instance is being patched in an offline operation` | A failover was triggered during the maintenance window for an OS patch or a security update. For more information, see [Maintaining a DB instance](USER_UpgradeDBInstance.Maintenance.md).  |

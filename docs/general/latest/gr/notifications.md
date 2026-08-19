@@ -59,8 +59,6 @@ The following are the service endpoints and service quotas for this service.
 ## Service quotas
 <a name="quotas_notifications"></a>
 
-****
-
 | Name | Default | Adjustable | Description |
 | --- | --- | --- | --- |
 | Notification configurations total for an AWS account | 50 notification configurations. | No | The maximum number of notification configurations that you can create in an AWS account. |

@@ -26,4 +26,4 @@ The `UserName` field contains the string `HIDDEN_DUE_TO_SECURITY_REASONS` when t
 **Tip**
 We recommend you use `userId` and `identityStoreArn` for identifying the user behind IAM Identity Center CloudTrail events. If you need to use the `userName` field, you can use the `userName` under the `additionalEventData` element that's emitted once per successful sign-in.
 
-For additional information on how you can use the `UserName` field, refer to [Correlating user events within the same user sessionCorrelating users between IAM Identity Center and external directories](sso-cloudtrail-use-cases.md#correlating-users).
+For additional information on how you can use the `UserName` field, refer to [Correlating user events within the same user session](sso-cloudtrail-use-cases.md#correlating-users).

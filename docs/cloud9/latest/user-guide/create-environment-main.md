@@ -72,7 +72,6 @@ Choosing a longer time period might result in more charges to your AWS account.
    + **Secure Shell (SSH)** – This method accesses the environment using SSH and requires open inbound ports.
 
 1. <a name="create-environment-vpc-step"></a>Choose **VPC Settings** to display the Amazon Virtual Private Cloud and Subnet for your environment. AWS Cloud9 uses Amazon Virtual Private Cloud (Amazon VPC) to communicate with the newly created Amazon EC2 instance. For this tutorial, we recommend that you don't change the preselected default settings. With the default settings, AWS Cloud9 attempts to use the default VPC with its single subnet in the same AWS account and Region as the new environment. Depending on how Amazon VPC is set up, follow one of the following set of instructions.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/cloud9/latest/user-guide/create-environment-main.html)
 **Important**
 If you selected **Existing compute** as your environment type, you can launch your instance into a public or private subnet.
@@ -80,7 +79,6 @@ If you selected **Existing compute** as your environment type, you can launch yo
 **Private subnet**: Create a NAT gateway to enable the instance to communicate with the internet and other AWS services.
 Currently, you can't use [AWS managed temporary credentials](security-iam.md#auth-and-access-control-temporary-managed-credentials) to allow the EC2 environment to access an AWS service on behalf of an AWS entity, such as an IAM user.
  For more information about configuring subnets, see [VPC settings for AWS Cloud9 Development Environments](vpc-settings.md).
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/cloud9/latest/user-guide/create-environment-main.html)
 
    For more information about these choices, see [VPC settings for AWS Cloud9 Development Environments](vpc-settings.md).
@@ -102,8 +100,6 @@ If your environment is using a proxy to access the internet, you must provide pr
 <a name="create-environment-code"></a>
 
 To use code to create an EC2 environment in AWS Cloud9, call the AWS Cloud9 create EC2 environment operation, as follows.
-
-****
 
 |  |  |
 | --- |--- |

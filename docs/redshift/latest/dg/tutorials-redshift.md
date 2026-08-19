@@ -12,7 +12,7 @@ Follow the steps in these tutorials to learn about Amazon Redshift features:
 |  |  |
 | --- |--- |
 | [Tutorial: Loading data from Amazon S3](tutorial-loading-data.md) |  In this tutorial, you walk through the process of loading data into your Amazon Redshift database tables from data files in an S3 bucket from beginning to end. |
-| [Tutorial: Querying nested data with Amazon Redshift SpectrumTutorial: Querying nested data with Amazon Redshift Spectrum ](tutorial-query-nested-data.md) |  In this tutorial, you use Redshift Spectrum to query nested data. Redshift Spectrum lets you query data in Parquet, ORC, JSON, or Ion file formats. |
+| [Tutorial: Querying nested data with Amazon Redshift Spectrum](tutorial-query-nested-data.md) |  In this tutorial, you use Redshift Spectrum to query nested data. Redshift Spectrum lets you query data in Parquet, ORC, JSON, or Ion file formats. |
 | [Tutorial: Configuring manual workload management (WLM) queues](tutorial-configuring-workload-management.md) |  In this tutorial, you configure Amazon Redshift to use manual workload management (WLM) queues. Amazon Redshift uses WLM queues to manage how resources are divided to run concurrent queries. You must configure Amazon Redshift to use manual WLM if you need to use multiple WLM WLM queues. |
 | [Tutorial: Using spatial SQL functions with Amazon Redshift](spatial-tutorial.md) | In this tutorial, you query data using spatial functions. You use spatial functions to query geometry and geography data. |
 | [Tutorials for Amazon Redshift ML](tutorials_for_amazon_redshift_ml.md) | In these tutorials, you create and use machine learning models. |

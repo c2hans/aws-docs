@@ -24,8 +24,6 @@ When you query federated data sources, note that the underlying data source migh
 
 An Amazon Redshift *database* is a group of Redshift *schemas* that contains a group of Redshift *tables*.
 
-****
-
 | Athena | Redshift |
 | --- | --- |
 | Redshift data source | A Redshift connector Lambda function configured to point to a Redshift database. |
@@ -44,8 +42,6 @@ For more information about this connector, see [Amazon Athena Redshift connector
 <a name="tables-qualifiers-cloudera-hive"></a>
 
 An Cloudera Hive *server* or *cluster* is a group of Cloudera Hive *databases* that contains a group of Cloudera Hive *tables*.
-
-****
 
 | Athena | Hive |
 | --- | --- |
@@ -66,8 +62,6 @@ For more information about this connector, see [Amazon Athena Cloudera Hive conn
 
 An Impala *server* or *cluster* is a group of Impala *databases* that contains a group of Impala *tables*.
 
-****
-
 | Athena | Impala |
 | --- | --- |
 | Impala data source | Impala connector Lambda function configured to point to an Impala server. |
@@ -86,8 +80,6 @@ For more information about this connector, see [Amazon Athena Cloudera Impala co
 <a name="tables-qualifiers-mysql"></a>
 
 A MySQL *server* is a group of MySQL *databases* that contains a group of MySQL *tables*.
-
-****
 
 | Athena | MySQL |
 | --- | --- |
@@ -108,8 +100,6 @@ For more information about this connector, see [Amazon Athena MySQL connector](c
 
 An Oracle *server* (or *database*) is a group of Oracle *schemas* that contains a group of Oracle *tables*.
 
-****
-
 | Athena | Oracle |
 | --- | --- |
 | Oracle data source | Oracle connector Lambda function configured to point to an Oracle server. |
@@ -128,8 +118,6 @@ For more information about this connector, see [Amazon Athena Oracle connector](
 <a name="tables-qualifiers-postgres"></a>
 
 A Postgres *server* (or *cluster*) is a group of Postgres *databases*. A Postgres *database* is a group of Postgres *schemas* that contains a group of Postgres *tables*.
-
-****
 
 | Athena | Postgres |
 | --- | --- |

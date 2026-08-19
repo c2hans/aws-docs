@@ -26,15 +26,13 @@ In AWS Control Tower, the primary resource is a *landing zone*. AWS Control Towe
 
 Resources and subresources in AWS have unique Amazon Resource Names (ARNs) associated with them, as shown in the following example.
 
-****
-
 | Resource Type | ARN Format |
 | --- | --- |
 | File system | arn:aws:elasticfilesystem:{{region}}:{{account-id}}:file-system/{{file-system-id}} |
 
 AWS Control Tower provides a set of API operations to work with AWS Control Tower resources. For a list of available operations, see AWS Control Tower [the AWS Control Tower API Reference](https://docs.aws.amazon.com/controltower/latest/APIReference/API_Operations.html).
 
-For more information about the CloudFormation resources in AWS Control Tower, see [the AWS CloudFormation User Guide](https://docs.aws.amazon.com//AWSCloudFormation/latest/UserGuide/AWS_ControlTower.html).
+For more information about the CloudFormation resources in AWS Control Tower, see [the AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/AWS_ControlTower.html).
 
 ## About resource ownership
 <a name="access-control-owner"></a>
@@ -47,11 +45,11 @@ The AWS account owns the resources that are created in the account, regardless o
 ## Specify policy elements: Actions, Effects, and Principals
 <a name="access-control-specify-controltower-actions"></a>
 
-You can set up and manage your landing zone through the AWS Control Tower console, or [the landing zone APIs](https://docs.aws.amazon.com//controltower/latest/APIReference/API_Operations.html). To set up your landing zone, you must be an IAM user with administrative permissions as defined in a IAM policy.
+You can set up and manage your landing zone through the AWS Control Tower console, or [the landing zone APIs](https://docs.aws.amazon.com/controltower/latest/APIReference/API_Operations.html). To set up your landing zone, you must be an IAM user with administrative permissions as defined in a IAM policy.
 
 The following elements are the most basic ones you can identify in a policy:
 + **Resource** – In a policy, you use an Amazon Resource Name (ARN) to identify the resource to which the policy applies. For more information, see [AWS Control Tower resources and operations](#access-control-resources).
-+ **Action** – You use action keywords to identify resource operations that you want to allow or deny. For information about types of actions available to be performed, see [Actions defined by AWS Control Tower](https://docs.aws.amazon.com//service-authorization/latest/reference/list_awscontroltower.html#awscontroltower-actions-as-permissions).
++ **Action** – You use action keywords to identify resource operations that you want to allow or deny. For information about types of actions available to be performed, see [Actions defined by AWS Control Tower](https://docs.aws.amazon.com/service-authorization/latest/reference/list_awscontroltower.html#awscontroltower-actions-as-permissions).
 + **Effect** – You specify the effect when the user requests the specific action—this can be either allow or deny. If you don't explicitly grant access to (allow) a resource, access is implicitly denied. You can also explicitly deny access to a resource, which you might do to make sure that a user cannot access it, even if a different policy grants access.
 + **Principal** – In identity-based policies (IAM policies), that user to which the policy is attached is the implicit principal. For resource-based policies, you specify the user, account, service, or other entity that you want to receive permissions (applies to resource-based policies only). AWS Control Tower doesn't support resource-based policies.
 

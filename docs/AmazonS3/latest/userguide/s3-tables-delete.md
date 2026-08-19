@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-dele
 You can delete a table by using the Amazon S3 REST API, AWS SDKs, AWS Command Line Interface (AWS CLI), or by using integrated query engines.
 
 **Note**
-S3 Tables doesn't support the `DROP TABLE` operation with `purge=false`. Some versions of Apache Spark always set this flag to `false` even when running `DROP TABLE PURGE` commands. To delete a table, you can retry `DROP TABLE` with `purge=true`, or use the S3 Tables [DeleteTable](https://docs.aws.amazon.com//AmazonS3/latest/API/API_s3TableBuckets_DeleteTable.html) REST API operation.
+S3 Tables doesn't support the `DROP TABLE` operation with `purge=false`. Some versions of Apache Spark always set this flag to `false` even when running `DROP TABLE PURGE` commands. To delete a table, you can retry `DROP TABLE` with `purge=true`, or use the S3 Tables [DeleteTable](https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3TableBuckets_DeleteTable.html) REST API operation.
 
 **Important**
  When you delete a table, you need to know the following:

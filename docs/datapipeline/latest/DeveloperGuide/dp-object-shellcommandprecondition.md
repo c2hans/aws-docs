@@ -25,14 +25,10 @@ The following is an example of this object type.
 ## Syntax
 <a name="shellcommandprecondition-syntax"></a>
 
-****
-
 | Required Group (One of the following is required) | Description | Slot Type |
 | --- | --- | --- |
 | command | The command to run. This value and any associated parameters must function in the environment from which you are running the Task Runner. | String |
 | scriptUri | An Amazon S3 URI path for a file to download and run as a shell command. Only one scriptUri or command field should be present. scriptUri cannot use parameters, use command instead. | String |
-
-****
 
 | Optional Fields | Description | Slot Type |
 | --- | --- | --- |
@@ -51,8 +47,6 @@ The following is an example of this object type.
 | scriptArgument | Argument to be passed to shell script | String |
 | stderr | The Amazon S3 path that receives redirected system error messages from the command. If you use the runsOn field, this must be an Amazon S3 path because of the transitory nature of the resource running your activity. However, if you specify the workerGroup field, a local file path is permitted. | String |
 | stdout | The Amazon S3 path that receives redirected output from the command. If you use the runsOn field, this must be an Amazon S3 path because of the transitory nature of the resource running your activity. However, if you specify the workerGroup field, a local file path is permitted. | String |
-
-****
 
 | Runtime Fields | Description | Slot Type |
 | --- | --- | --- |
@@ -74,8 +68,6 @@ The following is an example of this object type.
 | @status | The status of this object. | String |
 | @version | Pipeline version the object was created with. | String |
 | @waitingOn | Description of list of dependencies this object is waiting on. | Reference Object, e.g. "waitingOn":{"ref":"myRunnableObjectId"} |
-
-****
 
 | System Fields | Description | Slot Type |
 | --- | --- | --- |

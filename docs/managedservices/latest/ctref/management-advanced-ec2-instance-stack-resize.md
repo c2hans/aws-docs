@@ -14,8 +14,6 @@ Resize an existing EC2 instance in your account. The state of the instance can b
 ## Change Type Details
 <a name="ct-15mazjj88xc69-MAEr-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-15mazjj88xc69 |

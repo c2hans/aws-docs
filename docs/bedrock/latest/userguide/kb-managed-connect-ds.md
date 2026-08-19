@@ -18,8 +18,6 @@ To connect to a data source using the Amazon Bedrock API, send a [CreateDataSour
 
 **Required fields:**
 
-****
-
 | Field | Description |
 | --- | --- |
 | knowledgeBaseId | The ID of the knowledge base. |
@@ -39,8 +37,6 @@ Within `dataSourceConfiguration`, you must specify the following:
     For the full field reference, see [MediaExtractionConfiguration](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_MediaExtractionConfiguration.html) in the Amazon Bedrock API Reference.
 
 **Optional fields:**
-
-****
 
 | Field | Description |
 | --- | --- |

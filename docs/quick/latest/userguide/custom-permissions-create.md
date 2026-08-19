@@ -12,7 +12,7 @@ Custom permissions profiles can be created for Amazon Quick accounts that are in
 
 **To create a custom permissions profile**
 
-1. Open the [Quick console](https://aws.amazon.com//quicksight/).
+1. Open the [Quick console](https://aws.amazon.com/quicksight/).
 
 1. Choose **Manage Quick**.
 

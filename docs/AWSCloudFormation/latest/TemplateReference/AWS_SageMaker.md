@@ -46,6 +46,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::SageMaker::MonitoringScheduleAlert](aws-resource-sagemaker-monitoringschedulealert.md)
 + [AWS::SageMaker::NotebookInstance](aws-resource-sagemaker-notebookinstance.md)
 + [AWS::SageMaker::NotebookInstanceLifecycleConfig](aws-resource-sagemaker-notebookinstancelifecycleconfig.md)
++ [AWS::SageMaker::OptimizationJob](aws-resource-sagemaker-optimizationjob.md)
 + [AWS::SageMaker::PartnerApp](aws-resource-sagemaker-partnerapp.md)
 + [AWS::SageMaker::Pipeline](aws-resource-sagemaker-pipeline.md)
 + [AWS::SageMaker::PipelineExecution](aws-resource-sagemaker-pipelineexecution.md)

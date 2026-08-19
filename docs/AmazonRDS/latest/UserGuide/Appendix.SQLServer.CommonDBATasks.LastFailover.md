@@ -13,8 +13,6 @@ execute msdb.dbo.rds_failover_time;
 
 This procedure returns the following information.
 
-****
-
 | Output parameter | Description |
 | --- | --- |
 | errorlog\_available\_from | Shows the time from when error logs are available in the log directory. |

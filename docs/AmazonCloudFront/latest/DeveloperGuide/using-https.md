@@ -26,7 +26,7 @@ The process works basically the same way whether your origin is an Amazon S3 buc
 **Note**
 To help thwart SSL renegotiation-type attacks, CloudFront does not support renegotiation for viewer and origin requests.
 
-Alternatively, you can turn on mutual authentication for your CloudFront distribution. For more information, see [Mutual TLS authentication with CloudFront (Viewer mTLS)Origin mutual TLS with CloudFront](mtls-authentication.md).
+Alternatively, you can turn on mutual authentication for your CloudFront distribution. For more information, see [Mutual TLS authentication with CloudFront (Viewer mTLS)](mtls-authentication.md).
 
 For information about how to require HTTPS between viewers and CloudFront, and between CloudFront and your origin, see the following topics.
 

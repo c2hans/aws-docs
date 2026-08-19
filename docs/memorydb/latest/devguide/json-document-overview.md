@@ -10,8 +10,6 @@ MemoryDB supports a number of Valkey and Redis OSS commands for working with the
 ## Terminology
 <a name="json-terminology"></a>
 
-****
-
 | Term | Description |
 | --- | --- |
 | JSON document | refers to the value of a JSON key |
@@ -96,8 +94,6 @@ Results of some commands are sensitive which type of path syntax is used.
 
 **Enhanced Syntax**
 
-****
-
 | Symbol/Expression | Description |
 | --- | --- |
 | $ | the root element |
@@ -167,8 +163,6 @@ The below examples are built on [Goessner's](https://goessner.net/articles/JsonP
 }
 ```
 
-****
-
 | Path | Description |
 | --- | --- |
 | $.store.book[\*].author | the authors of all books in the store |
@@ -230,16 +224,12 @@ OK
 
 **Restricted syntax**
 
-****
-
 | Symbol/Expression | Description |
 | --- | --- |
 | . or [] | child operator |
 | [] | array subscript operator. Index is 0-based. |
 
 **Examples**
-
-****
 
 | Path | Description |
 | --- | --- |
@@ -257,8 +247,6 @@ All [Goessner](https://goessner.net/articles/JsonPath/) content cited in this do
 
 Each error message has a prefix. The following is a list of common error prefixes:
 
-****
-
 | Prefix | Description |
 | --- | --- |
 | ERR | a general error |
@@ -272,8 +260,6 @@ Each error message has a prefix. The following is a list of common error prefixe
 <a name="json-info-metrics"></a>
 
 The following JSON info metrics are provided:
-
-****
 
 | Info | Description |
 | --- | --- |

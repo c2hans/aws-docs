@@ -122,13 +122,13 @@ As new features are added to query editor v2, the AWS managed policies are updat
 To provide access, add permissions to your users, groups, or roles:
 + Users and groups in AWS IAM Identity Center:
 
-  Create a permission set. Follow the instructions in [Create a permission set](https://docs.aws.amazon.com//singlesignon/latest/userguide/howtocreatepermissionset.html) in the *AWS IAM Identity Center User Guide*.
+  Create a permission set. Follow the instructions in [Create a permission set](https://docs.aws.amazon.com/singlesignon/latest/userguide/howtocreatepermissionset.html) in the *AWS IAM Identity Center User Guide*.
 + Users managed in IAM through an identity provider:
 
-  Create a role for identity federation. Follow the instructions in [Create a role for a third-party identity provider (federation)](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_roles_create_for-idp.html) in the *IAM User Guide*.
+  Create a role for identity federation. Follow the instructions in [Create a role for a third-party identity provider (federation)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-idp.html) in the *IAM User Guide*.
 + IAM users:
-  + Create a role that your user can assume. Follow the instructions in [Create a role for an IAM user](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_roles_create_for-user.html) in the *IAM User Guide*.
-  + (Not recommended) Attach a policy directly to a user or add a user to a user group. Follow the instructions in [Adding permissions to a user (console)](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_users_change-permissions.html#users_change_permissions-add-console) in the *IAM User Guide*.
+  + Create a role that your user can assume. Follow the instructions in [Create a role for an IAM user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-user.html) in the *IAM User Guide*.
+  + (Not recommended) Attach a policy directly to a user or add a user to a user group. Follow the instructions in [Adding permissions to a user (console)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_change-permissions.html#users_change_permissions-add-console) in the *IAM User Guide*.
 
 **Note**
 If an AWS IAM Identity Center administrator removes all permission set associations for a particular permission set in the entire account, access to any query editor resources originally associated with the removed permission set are no longer accessible. If later the same permissions are recreated, a new internal identifier is created. Because the internal identifier has changed, access to query editor resources previously owned by a user cannot be accessed. We recommend that before administrators delete a permission set, that users of that permission set export query editor resources such as notebooks and queries as a backup.
@@ -183,9 +183,9 @@ Additionally, you can set the `TransitiveTagKeys` attribute to persist the tags 
 
 For more information about setting up query editor v2, see [Permissions required to use the query editor v2](redshift-iam-access-control-identity-based.md#redshift-policy-resources.required-permissions.query-editor-v2).
 
-For information about how to set up Active Directory Federation Services (AD FS), see the blog post: [ Federate access to Amazon Redshift query editor v2 with Active Directory Federation Services (AD FS)](https://aws.amazon.com/blogs//big-data/federate-access-to-amazon-redshift-query-editor-v2-with-active-directory-federation-services-ad-fs-part-3/).
+For information about how to set up Active Directory Federation Services (AD FS), see the blog post: [ Federate access to Amazon Redshift query editor v2 with Active Directory Federation Services (AD FS)](https://aws.amazon.com/blogs/big-data/federate-access-to-amazon-redshift-query-editor-v2-with-active-directory-federation-services-ad-fs-part-3/).
 
-For information about how to set up Okta, see the blog post: [ Federate single sign-on access to Amazon Redshift query editor v2 with Okta](https://aws.amazon.com/blogs//big-data/federate-single-sign-on-access-to-amazon-redshift-query-editor-v2-with-okta/).
+For information about how to set up Okta, see the blog post: [ Federate single sign-on access to Amazon Redshift query editor v2 with Okta](https://aws.amazon.com/blogs/big-data/federate-single-sign-on-access-to-amazon-redshift-query-editor-v2-with-okta/).
 
 **Note**
 When you connect to your cluster or workgroup using the **Federated user** connection option of the query editor v2, the Identity Provider (IdP) can supply custom principal tags for `RedshiftDbUser` and `RedshiftDbGroups`. Currently, AWS IAM Identity Center dosesn't support the passing custom principal tags directly to the query editor v2.

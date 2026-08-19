@@ -519,7 +519,7 @@ New support for `EXT-X-PROGRAM-DATE-TIME` tags in individual participant recordi
 ### Updated Real-Time Limit: Compositions
 <a name="oct14-25-rt-compositions-desc"></a>
 
-We updated the quota for "maximum concurrent Composition resources per account" from 5 to 20. It is documented in Service Quotas > [Other Quotas](https://docs.aws.amazon.com//ivs/latest/RealTimeUserGuide/service-quotas.html#quotas-other).
+We updated the quota for "maximum concurrent Composition resources per account" from 5 to 20. It is documented in Service Quotas > [Other Quotas](https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/service-quotas.html#quotas-other).
 
 ## October 2, 2025
 <a name="oct02-25-broadcast-web-rt"></a>
@@ -565,7 +565,7 @@ We updated the quota for "maximum concurrent Composition resources per account" 
 ### Server-Side Composition Custom Participant Ordering
 <a name="sep16-25-ssc-custom-participant-ordering"></a>
 
-New support for custom participant ordering for SSC provides granular control over participant positioning in both grid and Picture-in-Picture (PiP) layouts. See [Server-Side Composition](https://docs.aws.amazon.com//ivs/latest/RealTimeUserGuide/server-side-composition.html) (various changes, including adding `participantOrderAttribute` and "Custom Participant Ordering") and the [IVS Real-Time Streaming API Reference](https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/Welcome.html) (added `participantOrderAttribute` to the Composition object).
+New support for custom participant ordering for SSC provides granular control over participant positioning in both grid and Picture-in-Picture (PiP) layouts. See [Server-Side Composition](https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/server-side-composition.html) (various changes, including adding `participantOrderAttribute` and "Custom Participant Ordering") and the [IVS Real-Time Streaming API Reference](https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/Welcome.html) (added `participantOrderAttribute` to the Composition object).
 
 ## September 11, 2025
 <a name="sep11-25-broadcast-mobile-rt"></a>
@@ -601,7 +601,7 @@ New support for custom participant ordering for SSC provides granular control ov
 ### Interface VPC Endpoints
 <a name="sep10-25-interface-vpc-endpoints-rt-desc"></a>
 
-New support for interface VPC (Virtual Private Cloud) endpoints enables you to establish a secure private connection between your Amazon VPC and IVS, for workloads that require secure, live video ingestion. This keeps your IVS ingest traffic within the AWS network and off the public internet. Interface VPC endpoints are powered by AWS PrivateLink, an AWS technology that enables private communication between AWS services, using an elastic network interface with private IPs in your Amazon VPC. See [Private Ingest](https://docs.aws.amazon.com//ivs/latest/LowLatencyUserGuide/private-ingest-ll.html) in the *IVS Low-Latency Streaming User Guide* and [Private Ingest to Stages](https://docs.aws.amazon.com//ivs/latest/RealTimeUserGuide/rt-rtmp-publishing.html#private-ingest-stages) in the *IVS Real-Time Streaming User Guide*.
+New support for interface VPC (Virtual Private Cloud) endpoints enables you to establish a secure private connection between your Amazon VPC and IVS, for workloads that require secure, live video ingestion. This keeps your IVS ingest traffic within the AWS network and off the public internet. Interface VPC endpoints are powered by AWS PrivateLink, an AWS technology that enables private communication between AWS services, using an elastic network interface with private IPs in your Amazon VPC. See [Private Ingest](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/private-ingest-ll.html) in the *IVS Low-Latency Streaming User Guide* and [Private Ingest to Stages](https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/rt-rtmp-publishing.html#private-ingest-stages) in the *IVS Real-Time Streaming User Guide*.
 
 ## September 4, 2025
 <a name="sep04-25-broadcast-web-rt"></a>
@@ -685,7 +685,7 @@ On [June 23](#jun23-25-rt-concurrent-limits), we introduced two new adjustable s
 ### New Real-Time Limit: Concurrent Participant Replications
 <a name="jul15-25-rt-participant-replications-desc"></a>
 
-We've introduced a new non-adjustable service quota, for the maximum number of concurrent replications per participant across all stages in an AWS Region. It is documented in Service Quotas > [Other Quotas](https://docs.aws.amazon.com//ivs/latest/RealTimeUserGuide/service-quotas.html#quotas-other).
+We've introduced a new non-adjustable service quota, for the maximum number of concurrent replications per participant across all stages in an AWS Region. It is documented in Service Quotas > [Other Quotas](https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/service-quotas.html#quotas-other).
 
 ## July 10, 2025
 <a name="jul10-25-broadcast-mobile-rt"></a>
@@ -731,11 +731,11 @@ We've introduced a new non-adjustable service quota, for the maximum number of c
 ### New Real-Time Metrics and Limits: Concurrent Publishers and Subscriptions
 <a name="jun23-25-rt-concurrent-limits-new"></a>
 
-We've introduced two new adjustable service quotas, for the maximum number of concurrent publishers and concurrent subscriptions across all stages in an AWS Region. They are documented in Service Quotas > [Other Quotas](https://docs.aws.amazon.com//ivs/latest/RealTimeUserGuide/service-quotas.html#quotas-other). These quotas give you more control over total usage across your account. Previously, IVS enforced limits only on the number of publishers and subscribers *per stage*. This made it hard to set safeguards at the account level and could result in higher usage and associated costs than expected, especially for customers creating many stages.
+We've introduced two new adjustable service quotas, for the maximum number of concurrent publishers and concurrent subscriptions across all stages in an AWS Region. They are documented in Service Quotas > [Other Quotas](https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/service-quotas.html#quotas-other). These quotas give you more control over total usage across your account. Previously, IVS enforced limits only on the number of publishers and subscribers *per stage*. This made it hard to set safeguards at the account level and could result in higher usage and associated costs than expected, especially for customers creating many stages.
 
 **Note:** We will start enforcing these new quotas on July 23, to allow 30 days for you to review your usage and request service-quota increases if needed.
 
-We also added two new CloudWatch metrics, `ConcurrentPublishers` and `ConcurrentSubscriptions`. These metrics help you monitor usage across all stages and assess whether you are approaching the default limits. They are documented in Monitoring Real-Time Streaming > [CloudWatch Metrics](https://docs.aws.amazon.com//ivs/latest/RealTimeUserGuide/stage-health.html#stage-health-cloudwatch-metrics). We recommend setting up [CloudWatch alarms](https://docs.aws.amazon.com/servicequotas/latest/userguide/configure-cloudwatch.html) to alert you when your usage is close to a quota limit.
+We also added two new CloudWatch metrics, `ConcurrentPublishers` and `ConcurrentSubscriptions`. These metrics help you monitor usage across all stages and assess whether you are approaching the default limits. They are documented in Monitoring Real-Time Streaming > [CloudWatch Metrics](https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/stage-health.html#stage-health-cloudwatch-metrics). We recommend setting up [CloudWatch alarms](https://docs.aws.amazon.com/servicequotas/latest/userguide/configure-cloudwatch.html) to alert you when your usage is close to a quota limit.
 
 ## June 20, 2025
 <a name="jun20-25-rt"></a>
@@ -877,8 +877,8 @@ Participant replication allows you to copy a participant from one stage to anoth
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.29.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.29.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.29.0/android/)+  Added a simulcast publisher controls feature. See "Configuring Layered Encoding (Publisher)" in the [Android Broadcast SDK Guide](https://docs.aws.amazon.com//ivs/latest/RealTimeUserGuide/android-publish-subscribe.html#android-layered-encoding-simulcast-configure-publisher). <br />+  Bug fixes and stability improvements.  |
-| [iOS Broadcast SDK 1.29.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.29.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.29.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.29.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.29.0/ios/)+  Added a simulcast publisher controls feature. See "Configuring Layered Encoding (Publisher)" in the [iOS Broadcast SDK Guide](https://docs.aws.amazon.com//ivs/latest/RealTimeUserGuide/ios-publish-subscribe.html#ios-layered-encoding-simulcast-configure-publisher). <br />+  Bug fixes and stability improvements.  |
+| [Android Broadcast SDK 1.29.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.29.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.29.0/android/)+  Added a simulcast publisher controls feature. See "Configuring Layered Encoding (Publisher)" in the [Android Broadcast SDK Guide](https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/android-publish-subscribe.html#android-layered-encoding-simulcast-configure-publisher). <br />+  Bug fixes and stability improvements.  |
+| [iOS Broadcast SDK 1.29.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.29.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.29.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.29.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.29.0/ios/)+  Added a simulcast publisher controls feature. See "Configuring Layered Encoding (Publisher)" in the [iOS Broadcast SDK Guide](https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/ios-publish-subscribe.html#ios-layered-encoding-simulcast-configure-publisher). <br />+  Bug fixes and stability improvements.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1290-rt-sdk-size-android"></a>
@@ -905,7 +905,7 @@ Participant replication allows you to copy a participant from one stage to anoth
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.23.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Added a simulcast publisher controls feature. See "Configuring Layered Encoding (Publisher)" in the [Web Broadcast SDK Guide](https://docs.aws.amazon.com//ivs/latest/RealTimeUserGuide/web-publish-subscribe.html#web-layered-encoding-simulcast-configure-publisher). <br />+  Improved time to publish latency. This impacts the timing of the `PUBLISHED` event. <br />+  Fixed a bug where the SDK fired join category errors via the [ERROR](broadcast-web-error-handling.md) callback when connection to the stage was lost but potentially recoverable (specifically, `FAILED` and `TIMEOUT` errors for the `JOIN_ERROR` category). <br />+  Fixed a bug with the `insertSeiMessage` operation where a strategy refresh could result in subsequent invocations of `insertSeiMessage` failing to send the SEI message.  |
+| [Web Broadcast SDK 1.23.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Added a simulcast publisher controls feature. See "Configuring Layered Encoding (Publisher)" in the [Web Broadcast SDK Guide](https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/web-publish-subscribe.html#web-layered-encoding-simulcast-configure-publisher). <br />+  Improved time to publish latency. This impacts the timing of the `PUBLISHED` event. <br />+  Fixed a bug where the SDK fired join category errors via the [ERROR](broadcast-web-error-handling.md) callback when connection to the stage was lost but potentially recoverable (specifically, `FAILED` and `TIMEOUT` errors for the `JOIN_ERROR` category). <br />+  Fixed a bug with the `insertSeiMessage` operation where a strategy refresh could result in subsequent invocations of `insertSeiMessage` failing to send the SEI message.  |
 
 ## April 2, 2025
 <a name="apr02-25-rt"></a>
@@ -1137,7 +1137,7 @@ This is the first release of new functionality. If your stage is configured for 
 This release allows you to enable/disable the recording of thumbnails for a live session and modify the interval at which thumbnails are generated for the live session. This is the first release of this new functionality. See:
 +  [Individual Participant Recording](rt-individual-participant-recording.md) — We updated examples and JSON metadata information, and we added pricing information and "Thumbnail-Only Recordings."
 + [Composite Recording](rt-composite-recording.md) — We updated examples and JSON metadata information, and we added pricing information.
-+ [API Reference RT](https://docs.aws.amazon.com//ivs/latest/RealTimeAPIReference/Welcome.html) — We made several changes:
++ [API Reference RT](https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/Welcome.html) — We made several changes:
   + Modified the S3DestinationConfiguration object: added `thumbnailConfigurations`. This affects the GetComposition response and StartComposition request and response.
   + Modified the AutoParticipantRecordingConfiguration object: added `thumbnailConfiguration` and added `NONE` as a valid value for `mediaTypes`. This affects the CreateStage request and response, GetStage response, and UpdateStage request and response.
   + Added two objects: CompositionThumbnailConfiguration and ParticipantThumbnailConfiguration.
@@ -1362,7 +1362,7 @@ You can now generate participant tokens on your own server application by using 
 ### Individual Participant Recording
 <a name="june-20-ind-part-rec-details"></a>
 
-Individual participant recording allows IVS real-time streaming customers to record IVS stage publishers individually into S3 buckets. See [Recording](rt-recording.md), [Individual Participant Recording](rt-individual-participant-recording.md), and changes in the [Real-Time Streaming API Reference](https://docs.aws.amazon.com//ivs/latest/RealTimeAPIReference/Welcome.html). (For specific documentation changes, see the [Document History](doc-history.md).)
+Individual participant recording allows IVS real-time streaming customers to record IVS stage publishers individually into S3 buckets. See [Recording](rt-recording.md), [Individual Participant Recording](rt-individual-participant-recording.md), and changes in the [Real-Time Streaming API Reference](https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/Welcome.html). (For specific documentation changes, see the [Document History](doc-history.md).)
 
 ## June 13, 2024
 <a name="jun13-24-broadcast-ai-rt"></a>
@@ -1818,10 +1818,10 @@ IVS server-side composition enables clients to offload the composition and broad
 + [Using Amazon EventBridge with IVS Real-Time Streaming](eventbridge.md) – We added new metrics.
 + [Server-Side Composition](server-side-composition.md) – This new document includes an overview and setup instructions.
 + [Service Quotas (Real-Time Streaming)](service-quotas.md) – We added new call-rate limits and other quotas.
-+ [Real-Time Streaming API Reference](https://docs.aws.amazon.com//ivs/latest/RealTimeAPIReference/Welcome.html) – We added 8 Composition and EncoderConfiguration endpoints and 11 objects (ChannelDestinationConfiguration, Composition, CompositionSummary, Destination, DestinationConfiguration, DestinationSummary, EncoderConfiguration, EncoderConfigurationSummary, GridConfiguration, LayoutConfiguration, and Video).
++ [Real-Time Streaming API Reference](https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/Welcome.html) – We added 8 Composition and EncoderConfiguration endpoints and 11 objects (ChannelDestinationConfiguration, Composition, CompositionSummary, Destination, DestinationConfiguration, DestinationSummary, EncoderConfiguration, EncoderConfigurationSummary, GridConfiguration, LayoutConfiguration, and Video).
 
 In the *IVS Low-Latency Streaming User Guide*, see:
-+ [Enabling Multiple Hosts on an IVS Stream](https://docs.aws.amazon.com//ivs/latest/LowLatencyUserGuide/multiple-hosts.html) – We added "Broadcasting a Stage: Client-Side versus Server-Side Composition" and updated "4. Broadcast the Stage."
++ [Enabling Multiple Hosts on an IVS Stream](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multiple-hosts.html) – We added "Broadcasting a Stage: Client-Side versus Server-Side Composition" and updated "4. Broadcast the Stage."
 
 ## October 16, 2023
 <a name="oct16-23-rt"></a>

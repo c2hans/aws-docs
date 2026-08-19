@@ -68,7 +68,7 @@ After you set up to use Lightsail, you can walk through [Getting started with vi
 <a name="related-services"></a>
 
 You can provision Lightsail resources, such as instances and disks, directly using Lightsail. In addition, you can provision resources using other AWS services, such as the following:
-+ [Amazon EC2](https://docs.aws.amazon.com//ec2)
++ [Amazon EC2](https://docs.aws.amazon.com/ec2)
 
   Provides resizeable computing capacity—literally, servers in Amazon's data centers—that you use to build and host your software systems. To compare Lightsail and Amazon EC2, see [Amazon Lightsail or Amazon EC2](https://docs.aws.amazon.com/decision-guides/latest/lightsail-or-ec2/lightsail-or-ec2.html).
 + [Amazon EC2 Auto Scaling](https://docs.aws.amazon.com/autoscaling)

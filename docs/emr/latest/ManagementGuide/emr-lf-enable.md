@@ -70,7 +70,7 @@ To use a runtime role for your EMR cluster, you must create a security configura
    --security-configuration file://lf-runtime-roles-sec-cfg.json
    ```
 
-   Alternatively, you can use the [Amazon EMR console](https://console.aws.amazon.com//emr) to create a security configuration with custom settings.
+   Alternatively, you can use the [Amazon EMR console](https://console.aws.amazon.com/emr) to create a security configuration with custom settings.
 
 ## Step 2: Launch an Amazon EMR cluster
 <a name="emr-lf-launch-cluster"></a>
@@ -135,7 +135,7 @@ Lake Formation permissions control access to AWS Glue Data Catalog resources, Am
 
 You can now use runtime roles and Lake Formation to apply table and column level permissions. You can also use a source identity to control actions and monitor operations with AWS CloudTrail.
 
-For each IAM role that you plan to use as a runtime role, set the following trust policy, replacing `EMR_EC2_DefaultRole` with your instance profile role. To modify the trust policy of an IAM role, see [Modifying a role trust policy](https://docs.aws.amazon.com//IAM/latest/UserGuide/roles-managingrole-editing-console.html).
+For each IAM role that you plan to use as a runtime role, set the following trust policy, replacing `EMR_EC2_DefaultRole` with your instance profile role. To modify the trust policy of an IAM role, see [Modifying a role trust policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/roles-managingrole-editing-console.html).
 
 ```
 {

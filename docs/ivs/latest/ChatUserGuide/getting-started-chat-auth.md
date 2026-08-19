@@ -21,7 +21,7 @@ Each token can be used only once to establish a connection for an end user. If a
 
 When an end user wants to connect to a chat room, the client should ask the server application for a token. The server application creates a token and passes it back to the client. Tokens should be created for end users on demand.
 
-To create a chat auth token, follow the instructions below. When you create a chat token, use the request fields to pass data about the chat end user and the end user’s messaging capabilities; for details, see [CreateChatToken](https://docs.aws.amazon.com//ivs/latest/ChatAPIReference/API_CreateChatToken.html) in the *IVS Chat API Reference*.
+To create a chat auth token, follow the instructions below. When you create a chat token, use the request fields to pass data about the chat end user and the end user’s messaging capabilities; for details, see [CreateChatToken](https://docs.aws.amazon.com/ivs/latest/ChatAPIReference/API_CreateChatToken.html) in the *IVS Chat API Reference*.
 
 ## AWS SDK Instructions
 <a name="auth-sdk"></a>

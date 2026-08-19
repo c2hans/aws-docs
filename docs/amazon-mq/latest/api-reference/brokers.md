@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/api-reference/brokers.h
 # Brokers
 <a name="brokers"></a>
 
-This is a collection of brokers. A broker is a message broker environment running on Amazon MQ. It is the basic building block of Amazon MQ. For more information, see [Broker instance types](https://docs.aws.amazon.com//amazon-mq/latest/developer-guide/broker-instance-types.html) in the *Amazon MQ Developer Guide*.
+This is a collection of brokers. A broker is a message broker environment running on Amazon MQ. It is the basic building block of Amazon MQ. For more information, see [Broker instance types](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/broker-instance-types.html) in the *Amazon MQ Developer Guide*.
 
 ## URI
 <a name="brokers-url"></a>
@@ -63,7 +63,7 @@ To create a broker, you must either use the `AmazonMQFullAccess` IAM policy or i
 +  `ec2:DescribeSubnets`
 +  `ec2:DescribeVpcs`
 
-For more information, see [Create an IAM User and Get Your AWS Credentials](https://docs.aws.amazon.com//amazon-mq/latest/developer-guide/amazon-mq-setting-up.html#create-iam-user) and [Never Modify or Delete the Amazon MQ Elastic Network Interface](https://docs.aws.amazon.com//amazon-mq/latest/developer-guide/connecting-to-amazon-mq.html#never-modify-delete-elastic-network-interface) in the *Amazon MQ Developer Guide*.
+For more information, see [Create an IAM User and Get Your AWS Credentials](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-mq-setting-up.html#create-iam-user) and [Never Modify or Delete the Amazon MQ Elastic Network Interface](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/connecting-to-amazon-mq.html#never-modify-delete-elastic-network-interface) in the *Amazon MQ Developer Guide*.
 
 **Responses**
 
@@ -297,7 +297,7 @@ Creates a broker.
 | deploymentMode | [DeploymentMode](#brokers-model-deploymentmode) | True | Required. The broker's deployment mode. |
 | encryptionOptions | [EncryptionOptions](#brokers-model-encryptionoptions) | False | Encryption options for the broker.  |
 | engineType | [EngineType](#brokers-model-enginetype) | True | Required. The type of broker engine. Currently, Amazon MQ supports `ACTIVEMQ` and `RABBITMQ`. |
-| engineVersion | string | False | The broker engine version. Defaults to the latest available version for the specified broker engine type. For more information, see the [ActiveMQ version management](https://docs.aws.amazon.com//amazon-mq/latest/developer-guide/activemq-version-management.html) and the [RabbitMQ version management](https://docs.aws.amazon.com//amazon-mq/latest/developer-guide/rabbitmq-version-management.html) sections in the Amazon MQ Developer Guide. |
+| engineVersion | string | False | The broker engine version. Defaults to the latest available version for the specified broker engine type. For more information, see the [ActiveMQ version management](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/activemq-version-management.html) and the [RabbitMQ version management](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/rabbitmq-version-management.html) sections in the Amazon MQ Developer Guide. |
 | hostInstanceType | string | True | Required. The broker's instance type. |
 | ldapServerMetadata | [LdapServerMetadataInput](#brokers-model-ldapservermetadatainput) | False | Optional. The metadata of the LDAP server used to authenticate and authorize connections to the broker. Does not apply to RabbitMQ brokers. |
 | logs | [Logs](#brokers-model-logs) | False | Enables Amazon CloudWatch logging for brokers. |
@@ -305,7 +305,7 @@ Creates a broker.
 | publiclyAccessible | boolean | True | Enables connections from applications outside of the VPC that hosts the broker's subnets. Set to `false` by default, if no value is provided. |
 | securityGroups | Array of type string | False | The list of rules (1 minimum, 125 maximum) that authorize connections to brokers. |
 | storageConfiguration | [BrokerStorageConfiguration](#brokers-model-brokerstorageconfiguration) | False | The broker's storage configuration. |
-| storageSize | integer | False | The broker's storage size in GB. Applies only to RabbitMQ version 4.x brokers with `CLUSTER_MULTI_AZ` deployment mode on `mq.m7g` instance types. If not specified, the broker uses the default storage size for the instance type. For more information about allowed storage size ranges, see [Instance types](https://docs.aws.amazon.com//amazon-mq/latest/developer-guide/rmq-broker-instance-types.html) in the *Amazon MQ Developer Guide*. |
+| storageSize | integer | False | The broker's storage size in GB. Applies only to RabbitMQ version 4.x brokers with `CLUSTER_MULTI_AZ` deployment mode on `mq.m7g` instance types. If not specified, the broker uses the default storage size for the instance type. For more information about allowed storage size ranges, see [Instance types](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/rmq-broker-instance-types.html) in the *Amazon MQ Developer Guide*. |
 | storageType | [BrokerStorageType](#brokers-model-brokerstoragetype) | False | The broker's storage type. |
 | subnetIds | Array of type string | False | The list of groups that define which subnets and IP ranges the broker can use from different Availability Zones. If you specify more than one subnet, the subnets must be in different Availability Zones. Amazon MQ will not be able to create VPC endpoints for your broker with multiple subnets in the same Availability Zone. A SINGLE\_INSTANCE deployment requires one subnet (for example, the default subnet). An ACTIVE\_STANDBY\_MULTI\_AZ Amazon MQ for ActiveMQ deployment requires two subnets. A CLUSTER\_MULTI\_AZ Amazon MQ for RabbitMQ deployment has no subnet requirements when deployed with public accessibility. Deployment without public accessibility requires at least one subnet.  If you specify subnets in a [shared VPC](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-sharing.html) for a RabbitMQ broker, the associated VPC to which the specified subnets belong must be owned by your AWS account. Amazon MQ will not be able to create VPC endpoints in VPCs that are not owned by your AWS account.  |
 | tags | object | False | Create tags when creating the broker. |

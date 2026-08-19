@@ -42,7 +42,7 @@ Depending on which orchestrator you choose, permissions needed for the cluster a
 ## IAM permissions for cluster creation
 <a name="sagemaker-hyperpod-prerequisites-iam-cluster-creation"></a>
 
-Creating HyperPod clusters requires the IAM permissions outlined in the following policy example. If your AWS account has [`AdministratorAccess`](https://docs.aws.amazon.com//aws-managed-policy/latest/reference/AdministratorAccess.html) permissions, these permissions are granted by default.
+Creating HyperPod clusters requires the IAM permissions outlined in the following policy example. If your AWS account has [`AdministratorAccess`](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AdministratorAccess.html) permissions, these permissions are granted by default.
 
 ------
 #### [ JSON ]

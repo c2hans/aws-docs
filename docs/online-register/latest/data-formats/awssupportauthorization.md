@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awss
 
 AWS Support Authorization provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="supportauthz-GetAction"></a>[GetAction](https://docs.aws.amazon.com/supportauthz/latest/APIReference/API_GetAction.html) | Retrieve details about a support action | Read |

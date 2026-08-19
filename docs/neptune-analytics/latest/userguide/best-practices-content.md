@@ -52,7 +52,7 @@ MATCH (n:foo) WHERE id(n) = "second" RETURN n
 MATCH (n:foo) WHERE id(n) = "third" RETURN n
 ```
 
- You can determine if the query is using a cached plan by observing the `plan cache hits:` value in the output of the [ openCypher explain endpoint](https://docs.aws.amazon.com//neptune-analytics/latest/userguide/query-explain.html).
+ You can determine if the query is using a cached plan by observing the `plan cache hits:` value in the output of the [ openCypher explain endpoint](https://docs.aws.amazon.com/neptune-analytics/latest/userguide/query-explain.html).
 
 ## Use flattened maps instead of nested maps in UNWIND clause
 <a name="best-practices-content-3"></a>
@@ -394,7 +394,7 @@ params = {persons: [{id: '1', name: 'john', age: 25, employer: 'Amazon'},
 
  Neptune Analytics allows users to explicitly assign IDs on nodes. The ID must be globally unique in the dataset and deterministic to be useful. A deterministic ID can be used as a lookup or a filtering mechanism just like properties; however, using an ID is much more optimized from query execution perspective than using properties. There are several benefits to using custom IDs -
 +  Properties can be null for an existing entity, but the ID must exist. This allows the query engine to use an optimized join during execution.
-+  When concurrent mutation queries are executed, the chances of [ concurrent modification exceptions](https://docs.aws.amazon.com//neptune/latest/userguide/transactions-exceptions.html) (CMEs) are reduced significantly when IDs are used to access nodes because fewer locks are taking on IDs than properties due to their enforced uniqueness.
++  When concurrent mutation queries are executed, the chances of [ concurrent modification exceptions](https://docs.aws.amazon.com/neptune/latest/userguide/transactions-exceptions.html) (CMEs) are reduced significantly when IDs are used to access nodes because fewer locks are taking on IDs than properties due to their enforced uniqueness.
 +  Using IDs avoids the chance of creating duplicate data as Neptune enforces uniqueness on IDs, unlike properties.
 
  The following query example uses a custom ID:

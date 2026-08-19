@@ -10,7 +10,7 @@ Mutual TLS Authentication (Mutual Transport Layer Security Authentication — mT
 ## Viewer mTLS vs Origin mTLS
 <a name="viewer-mtls-vs-origin-mtls"></a>
 
-Mutual authentication (mTLS) can be enabled between viewers and your CloudFront distribution (viewer mTLS) and/or also between your CloudFront distribution and the origin (origin mTLS). This documentation pertains to origin mTLS configuration. For viewer mTLS configuration refer to: [Mutual TLS authentication with CloudFront (Viewer mTLS)Origin mutual TLS with CloudFront](mtls-authentication.md).
+Mutual authentication (mTLS) can be enabled between viewers and your CloudFront distribution (viewer mTLS) and/or also between your CloudFront distribution and the origin (origin mTLS). This documentation pertains to origin mTLS configuration. For viewer mTLS configuration refer to: [Mutual TLS authentication with CloudFront (Viewer mTLS)](mtls-authentication.md).
 
 Origin mTLS enables CloudFront to authenticate itself to your origin servers using client certificates. With origin mTLS, you can ensure that only your authorized CloudFront distributions can establish connections with your application servers, helping protect against unauthorized access attempts.
 

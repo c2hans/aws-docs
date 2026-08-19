@@ -31,7 +31,7 @@ For each data stream in your AWS account, you can switch between the on-demand a
 In the **Configuration** tab, choose **Edit warm throughput** and enter a target throughput value (in MB/s) that is higher than the stream's current capacity. The stream immediately provisions capacity to at least the specified warm throughput, ensuring it can handle the expected traffic without throttling. For example, if you forecast an upcoming event to peak around 200 MB/s, set the warm throughput to 200 MB/s ahead of time at no additional cost.
 
 **To decrease ingest capacity**
-If the stream has significantly scaled beyond the warm throughput value, set the warm throughput to a lower value to trigger a scale-down. The stream scales to the requested number or the capacity needed to support peak data ingest usage observed within the last hour, whichever is higher. This ensures the stream always retains enough capacity to handle recent traffic patterns.
+If the stream has scaled significantly beyond its warm throughput value, reconfigure the warm throughput to that value or lower to trigger a scale-down. The stream scales to the requested number or the capacity needed to support peak data ingest usage observed within the last hour, whichever is higher. This ensures the stream always retains enough capacity to handle recent traffic patterns.
 
    Using warm throughput does not incur any additional cost. For more information, see [On-demand Advantage mode features and use cases](how-do-i-size-a-stream.md#ondemand-advantage-mode).
 
@@ -72,7 +72,7 @@ aws kinesis update-stream-warm-throughput \
     --warm-throughput-mi-bps=200
 ```
 
-To lower capacity, set `warm-throughput-mi-bps` to a lower value:
+To lower capacity, reconfigure `warm-throughput-mi-bps` to the same or a lower value:
 
 ```
 aws kinesis update-stream-warm-throughput \

@@ -9,8 +9,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/developerguide/journey-r
 
 You can query standard execution metrics to assess the status of participants in each type of individual activity for an Amazon Pinpoint journey or campaign. To query data for these metrics, use the [Journey run activity execution metrics](https://docs.aws.amazon.com/pinpoint/latest/apireference/apps-application-id-journeys-journey-id-runs-run-id-activities-journey-activity-id-execution-metrics.html) or [Campaign Metrics](https://docs.aws.amazon.com/pinpoint/latest/apireference/apps-application-id-campaigns-campaign-id-kpis-daterange-kpi-name.html) resource of the Amazon Pinpoint API. The following table lists the fields that appear in the query results for each type of activity.
 
-****
-
 | Metric Name | Applies to Journeys, Campaigns, or Both | Description |
 | --- | --- | --- |
 | ENDPOINT\_PRODUCED | Both | The number of endpoints initially produced from the segment or event before any filtering. |

@@ -16,4 +16,4 @@ For more information about developing solutions with Step Functions, see the * [
 **Important**
 If you use the Step Functions API actions using AWS SDK integrations, make sure the API actions are in camel case and parameter names are in Pascal case. For example, you might use Step Functions API action `startSyncExecution` and specify its parameter as `StateMachineArn`.
 
-This document was last published on August 13, 2026.
+This document was last published on August 18, 2026.

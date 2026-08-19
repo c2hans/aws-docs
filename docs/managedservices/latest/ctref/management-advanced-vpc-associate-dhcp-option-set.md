@@ -14,8 +14,6 @@ This automation document associates a DHCP Option Set with an AWS VPC after vali
 ## Change Type Details
 <a name="ct-0c2g2npbyyrny-MAVa-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-0c2g2npbyyrny |

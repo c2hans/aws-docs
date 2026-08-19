@@ -19,8 +19,6 @@ Before you begin working with runbooks, configure roles and, optionally, EventBr
 
 The `AWS-UpdateLinuxAmi` runbook accepts the following input parameters.
 
-****
-
 | Parameter | Type | Description |
 | --- | --- | --- |
 | SourceAmiId | String | (Required) The source AMI ID. |

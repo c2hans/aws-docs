@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::QuickSight::Agent CustomPromptInputParameters
 <a name="aws-properties-quicksight-agent-custompromptinputparameters"></a>
 
-<a name="aws-properties-quicksight-agent-custompromptinputparameters-description"></a>The `CustomPromptInputParameters` property type specifies Property description not available. for an [AWS::QuickSight::Agent](aws-resource-quicksight-agent.md).
+The parameters for configuring a custom prompt for an agent.
 
 ## Syntax
 <a name="aws-properties-quicksight-agent-custompromptinputparameters-syntax"></a>
@@ -42,7 +42,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-quicksight-agent-custompromptinputparameters-properties"></a>
 
 `CustomInstructions`  <a name="cfn-quicksight-agent-custompromptinputparameters-custominstructions"></a>
-Property description not available.
+Custom instructions for the agent's behavior.
 *Required*: No
 *Type*: String
 *Minimum*: `5`
@@ -50,7 +50,7 @@ Property description not available.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Identity`  <a name="cfn-quicksight-agent-custompromptinputparameters-identity"></a>
-Property description not available.
+Instructions that define the agent's identity and persona.
 *Required*: No
 *Type*: String
 *Minimum*: `5`
@@ -58,7 +58,7 @@ Property description not available.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `OutputStyle`  <a name="cfn-quicksight-agent-custompromptinputparameters-outputstyle"></a>
-Property description not available.
+Instructions for the desired output style.
 *Required*: No
 *Type*: String
 *Minimum*: `5`
@@ -66,7 +66,7 @@ Property description not available.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ResponseLength`  <a name="cfn-quicksight-agent-custompromptinputparameters-responselength"></a>
-Property description not available.
+Instructions for the desired response length.
 *Required*: No
 *Type*: String
 *Minimum*: `5`
@@ -74,7 +74,7 @@ Property description not available.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Tone`  <a name="cfn-quicksight-agent-custompromptinputparameters-tone"></a>
-Property description not available.
+Instructions for the desired tone of responses.
 *Required*: No
 *Type*: String
 *Minimum*: `5`

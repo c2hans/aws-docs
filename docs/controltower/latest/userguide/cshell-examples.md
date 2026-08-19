@@ -37,8 +37,8 @@ Before performing these procedures, unless it's otherwise indicated, you must be
 Do not delete the AWS Control Tower resources for AWS Config. Loss of these resources can cause AWS Control Tower to enter an inconsistent state.
 
 **For more information, see the AWS Config documentation**
-   +  [Managing the Configuration Recorder (AWS CLI)](https://docs.aws.amazon.com//config/latest/developerguide/stop-start-recorder.html#managing-recorder_cli)
-   +   [Managing the Delivery Channel](https://docs.aws.amazon.com//config/latest/developerguide/manage-delivery-channel.html)
+   +  [Managing the Configuration Recorder (AWS CLI)](https://docs.aws.amazon.com/config/latest/developerguide/stop-start-recorder.html#managing-recorder_cli)
+   +   [Managing the Delivery Channel](https://docs.aws.amazon.com/config/latest/developerguide/manage-delivery-channel.html)
 
 1. This example shows AWS CLI commands you'd enter from AWS CloudShell to enable or disable trusted access for AWS Organizations. For AWS Control Tower you do not need to enable or disable trusted access for AWS Organizations, it is just an example. However, you may need to enable or disable trusted access for other AWS services if you're automating or customizing actions in AWS Control Tower.
 

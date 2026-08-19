@@ -178,7 +178,7 @@ To use fine-grained access control commands to control access to table data in a
    db2 "connect to rdsadmin user {{master_username}} using {{master_password}}"
    ```
 
-1. Run various fine-grained access control commands by calling `rdsadmin.fgac_command`. For more information, see [rdsadmin.fgac\_commandParameters](db2-sp-managing-databases.md#db2-sp-fgac-command).
+1. Run various fine-grained access control commands by calling `rdsadmin.fgac_command`. For more information, see [rdsadmin.fgac\_command](db2-sp-managing-databases.md#db2-sp-fgac-command).
 
    ```
    db2 "call rdsadmin.fgac_command(

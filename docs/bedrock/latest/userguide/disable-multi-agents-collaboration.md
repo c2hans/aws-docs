@@ -39,8 +39,6 @@ To apply the changes to the working draft, send a [PrepareAgent](https://docs.aw
 
 You must minimally include the following fields:
 
-****
-
 | Field | Use case |
 | --- | --- |
 | agentResourceRoleArn | To specify an ARN of the service role with permissions to call API operations on the agent |

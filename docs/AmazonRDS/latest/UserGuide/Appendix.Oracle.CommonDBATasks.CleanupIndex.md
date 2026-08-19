@@ -9,8 +9,6 @@ To clean up failed online index builds, use the Amazon RDS procedure `rdsadmin.r
 
 The `online_index_clean` procedure has the following parameters.
 
-****
-
 | Parameter name | Data type | Default | Required | Description |
 | --- | --- | --- | --- | --- |
 | `object_id` | binary\_integer | `ALL_INDEX_ID` | No | The object ID of the index. Typically, you can use the object ID from the ORA-08104 error text. |

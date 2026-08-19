@@ -14,8 +14,6 @@ Update the instance size for an RDP or SSH customer bastion in an AMS account.
 ## Change Type Details
 <a name="ct-2x14cv67uym46-MABu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2x14cv67uym46 |

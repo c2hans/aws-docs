@@ -15,7 +15,7 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/monit
  For more information, see the CloudTrail userIdentity element.
 
  The following examples demonstrate CloudTrail logs of these event types:
-+  [ CreateGraph ](https://docs.aws.amazon.com//neptune-analytics/latest/apiref/API_CreateGraph.html)
++  [ CreateGraph ](https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_CreateGraph.html)
 
   ```
   {
@@ -78,7 +78,7 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/monit
   "eventCategory": "Management"
   }
   ```
-+  [ CreateGraph (Access Denied) ](https://docs.aws.amazon.com//neptune-analytics/latest/apiref/API_CreateGraph.html)
++  [ CreateGraph (Access Denied) ](https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_CreateGraph.html)
 
   ```
   {
@@ -130,7 +130,7 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/monit
   "recipientAccountId": "111122223333",
   "eventCategory": "Management"
   ```
-+  [ ListGraphs ](https://docs.aws.amazon.com//neptune-analytics/latest/apiref/API_ListGraphs.html)
++  [ ListGraphs ](https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_ListGraphs.html)
 
   ```
   {
@@ -173,7 +173,7 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/monit
   "eventCategory": "Management"
   }
   ```
-+  [ GetGraphSummary ](https://docs.aws.amazon.com//neptune-analytics/latest/apiref/API_GetGraphSummary.html)
++  [ GetGraphSummary ](https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_GetGraphSummary.html)
 
   ```
   {
@@ -239,7 +239,7 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/monit
   "eventCategory": "Data"
   }
   ```
-+  [ ExecuteQuery ](https://docs.aws.amazon.com//neptune-analytics/latest/apiref/API_ExecuteQuery.html)
++  [ ExecuteQuery ](https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_ExecuteQuery.html)
 
   ```
   {

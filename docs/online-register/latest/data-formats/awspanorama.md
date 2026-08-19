@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsp
 
 AWS Panorama provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="panorama-DescribeApplicationInstance"></a>[DescribeApplicationInstance](https://docs.aws.amazon.com/panorama/latest/api/API_DescribeApplicationInstance.html) | View details about an AWS Panorama application instance | Read |

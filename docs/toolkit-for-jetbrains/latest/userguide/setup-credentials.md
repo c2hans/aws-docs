@@ -14,19 +14,19 @@ The following sections describe how to set up new IAM Credentials.
 **Important**
 Before setting up IAM credentials to authenticate with your AWS account, note that:
 If you've already set IAM credentials through another AWS service (such as the AWS CLI), then the AWS Toolkit for JetBrains automatically detects those credentials and makes them available.
-AWS recommends using IAM Identity Center authentication. For additional information about AWS IAM best practices, see the [Security best practice in IAM](https://docs.aws.amazon.com//IAM/latest/UserGuide/best-practices.html) section of the AWS *Identity and Access Management* User Guide.
-To avoid security risks, don't use IAM users for authentication when developing purpose-built software or working with real data. Instead, use federation with an identity provider such as [What is IAM Identity Center?](https://docs.aws.amazon.com//singlesignon/latest/userguide/what-is.html) in the *AWS IAM Identity Center User Guide*.
+AWS recommends using IAM Identity Center authentication. For additional information about AWS IAM best practices, see the [Security best practice in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html) section of the AWS *Identity and Access Management* User Guide.
+To avoid security risks, don't use IAM users for authentication when developing purpose-built software or working with real data. Instead, use federation with an identity provider such as [What is IAM Identity Center?](https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html) in the *AWS IAM Identity Center User Guide*.
 
 ## Prerequisites
 <a name="prereqs"></a>
 
 Before you can configure the AWS Toolkit for JetBrains to authenticate with IAM user credentials, the following prerequisites must be met. If you've already set up IAM user credentials through another service (such as the AWS Command Line Interface), then you can skip the prerequisite steps and proceed to the following sections.
 
-1. **Create an IAM user**. For detailed instructions on how to create an IAM user, see [Step 1: Create your IAM user](https://docs.aws.amazon.com//sdkref/latest/guide/access-iam-users.html#step1authIamUser) in the *AWS SDKs and Tools Reference Guide*.
+1. **Create an IAM user**. For detailed instructions on how to create an IAM user, see [Step 1: Create your IAM user](https://docs.aws.amazon.com/sdkref/latest/guide/access-iam-users.html#step1authIamUser) in the *AWS SDKs and Tools Reference Guide*.
 
-1. **Get your IAM user access keys**. For detailed instructions on how to get your IAM user access keys, see [Step 2: Get your access keys](https://docs.aws.amazon.com//sdkref/latest/guide/access-iam-users.html#stepGetKeys) in the *AWS SDKs and Tools Reference Guide*.
+1. **Get your IAM user access keys**. For detailed instructions on how to get your IAM user access keys, see [Step 2: Get your access keys](https://docs.aws.amazon.com/sdkref/latest/guide/access-iam-users.html#stepGetKeys) in the *AWS SDKs and Tools Reference Guide*.
 
-1. **Optional: Update the shared credentials file**. For detailed instructions on how to update the shared credentials file, see [Step 3: Update the shared credentials file](https://docs.aws.amazon.com//sdkref/latest/guide/access-iam-users.html#stepauthIamUser) in the *AWS SDKs and Tools Reference Guide*.
+1. **Optional: Update the shared credentials file**. For detailed instructions on how to update the shared credentials file, see [Step 3: Update the shared credentials file](https://docs.aws.amazon.com/sdkref/latest/guide/access-iam-users.html#stepauthIamUser) in the *AWS SDKs and Tools Reference Guide*.
 **Note**
 If the optional prerequisite **Step 3: Update the shared credentials file** has been completed, the AWS Toolkit for JetBrains automatically detects your credentials during the **Creating a shared credentials file from the AWS Toolkit for JetBrains** procedure described in the following section.
 

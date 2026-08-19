@@ -264,6 +264,7 @@ The following information can help you troubleshoot specific issues with your Wo
 + [My WorkSpace is unexpectedly crashing or rebooting](#crash_web_access)
 + [The same username has more than one WorkSpace, but the user can log in to only one of the WorkSpaces](#multiple_workspaces_same_username)
 + [I'm having trouble using Docker with Amazon WorkSpaces](#docker_support)
++ [Troubleshooting nested virtualization](#troubleshoot-nested-virtualization)
 + [I receive ThrottlingException errors to some of my API calls](#throttled-api-calls)
 + [My WorkSpace keeps disconnecting when I let it run in the background](#workspaces-disconnecting)
 + [SAML 2.0 federation isn't working. My users are not authorized to stream their WorkSpaces desktop.](#saml-federation-not-working)
@@ -819,10 +820,29 @@ Deleting a WorkSpace is a permanent action and cannot be undone. The WorkSpace u
 <a name="docker_support"></a>
 
 **Windows WorkSpaces**
-Nested virtualization (including the use of Docker) is not supported on Windows WorkSpaces. For more information, see the [ Docker documentation](https://docs.docker.com/docker-for-windows/troubleshoot/#running-docker-desktop-in-nested-virtualization-scenarios).
+Nested virtualization is now supported on Windows WorkSpaces. Enable nested virtualization to use Docker Desktop on your Windows WorkSpace. For more information, see [Nested virtualization for WorkSpaces Personal](https://docs.aws.amazon.com/workspaces/latest/adminguide/nested-virtualization.html). We recommend using a Power bundle with 4 vCPU or higher for optimal Docker Desktop performance.
+
+If Docker Desktop still won't start after enabling nested virtualization, verify that the **Nested Virtualization** field shows `Enabled` in the **Summary** section of the Amazon WorkSpaces console, or run the AWS CLI `describe-workspaces` command and confirm that `NestedVirtualizationEnabled` is set to `true`.
 
 **Linux WorkSpaces**
-To use Docker on Linux WorkSpaces, make sure that the CIDR blocks used by Docker don't overlap with the CIDR blocks used in the two elastic network interfaces (ENIs) associated with the WorkSpace. If you encounter problems with using Docker on Linux WorkSpaces, contact Docker for assistance.
+Nested virtualization is now supported on Linux WorkSpaces. Enable nested virtualization to use Docker on your Linux WorkSpace. For more information, see [Nested virtualization for WorkSpaces Personal](https://docs.aws.amazon.com/workspaces/latest/adminguide/nested-virtualization.html). The WorkSpace reboots after enabling nested virtualization. Make sure that the CIDR blocks used by Docker don't overlap with the CIDR blocks used in the two elastic network interfaces (ENIs) associated with the WorkSpace. We recommend using a Power bundle with 4 vCPU or higher for optimal Docker performance.
+
+If Docker doesn't work after enabling nested virtualization, verify that the **Nested Virtualization** field shows `Enabled` in the **Summary** section of the Amazon WorkSpaces console, or run the AWS CLI `describe-workspaces` command and confirm that `NestedVirtualizationEnabled` is set to `true`. Also confirm that your WorkSpace is using the DCV (WSP) protocol.
+
+### Troubleshooting nested virtualization
+<a name="troubleshoot-nested-virtualization"></a>
+
+**Enable Nested Virtualization is not visible in the Actions menu**
+The **Enable Nested Virtualization** option is not available on GPU WorkSpaces or on WorkSpaces running older operating systems such as Windows Server 2016 or Windows 10. Validate that your WorkSpace meets the prerequisites described in [Nested virtualization for WorkSpaces Personal](https://docs.aws.amazon.com/workspaces/latest/adminguide/nested-virtualization.html).
+
+**My WorkSpace reboots after enabling nested virtualization**
+This is expected behavior. A reboot is required to enable nested virtualization on the WorkSpace.
+
+**Docker Desktop or WSL2 won't start after enabling nested virtualization**
+Verify that the **Nested Virtualization** field shows `Enabled` in the **Summary** section of the Amazon WorkSpaces console, or run the AWS CLI `describe-workspaces` command and confirm that `NestedVirtualizationEnabled` is set to `true`. Also confirm that your WorkSpace is using the DCV (WSP) protocol.
+
+**My AutoStop WorkSpace performs a full reboot instead of hibernating**
+This is a known limitation on WorkSpaces running Windows Server 2025, Windows 11 24H2, or Windows 11 25H2 with nested virtualization enabled. When the AutoStop timeout is reached, the WorkSpace performs a full reboot instead of hibernating, and in-memory data is not preserved. If you require hibernation behavior, use an AlwaysOn WorkSpace instead. To disable nested virtualization, choose **Actions**, **Disable Nested Virtualization**, or use the AWS CLI `modify-workspace-properties` command with `NestedVirtualizationEnabled` set to `false`.
 
 ### I receive ThrottlingException errors to some of my API calls
 <a name="throttled-api-calls"></a>
@@ -932,7 +952,7 @@ To launch Amazon WorkSpaces using a directory in a Region that is not currently 
 If you receive errors when running AWS Command Line Interface commands, ensure you’re using the most recent AWS CLI version. For more information, see [Confirm that you're running a recent version of the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-troubleshooting.html#general-latest).
 
 #### Step 1: Create virtual private cloud (VPC) peering with another VPC in your account
-<a name="w2aac11c41b9c93b7"></a>
+<a name="w2aac11c41b9c95b7"></a>
 
 1. Create the VPC peering connection with a VPC in a different Region. For more information, see [ Create with VPCs in the same account and different Regions](https://docs.aws.amazon.com/vpc/latest/peering/create-vpc-peering-connection.html#same-account-different-region).
 
@@ -941,12 +961,12 @@ If you receive errors when running AWS Command Line Interface commands, ensure y
 1. After you activate the VPC peering connection, you can view your VPC peering connections using the Amazon VPC console, the AWS CLI, or an API.
 
 #### Step 2: Update route tables for VPC peering in both Regions
-<a name="w2aac11c41b9c93b9"></a>
+<a name="w2aac11c41b9c95b9"></a>
 
  Update your route tables to turn on communication with the peer VPC over IPv4 or IPv6. For more information, see [Update your route tables for a VPC peering connection](https://docs.aws.amazon.com/vpc/latest/peering/vpc-peering-routing.html).
 
 #### Step 3: Create an AD Connector and register Amazon WorkSpaces
-<a name="w2aac11c41b9c93c11"></a>
+<a name="w2aac11c41b9c95c11"></a>
 
 1.  To review the AD Connector prerequisites, see [ AD Connector prerequisites](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/prereq_connector.html).
 
@@ -962,12 +982,12 @@ If you receive errors when running AWS Command Line Interface commands, ensure y
 <a name="firefox_al2"></a>
 
 #### Step 1: Verify auto-update is enabled
-<a name="w2aac11c41b9c95b3"></a>
+<a name="w2aac11c41b9c97b3"></a>
 
 To verify that autoupdate is enabled, run the command `systemctl status *os-update-mgmt.timer | grep enabled` on your WorkSpace. In the output, there should be two lines with the word `enabled` on them.
 
 #### Step 2: Initiate an update
-<a name="w2aac11c41b9c95b5"></a>
+<a name="w2aac11c41b9c97b5"></a>
 
 Firefox usually updates automatically in Amazon Linux 2 WorkSpaces along with all other software packages in the system during the maintenance window. However, this depends on the type of WorkSpaces you are using.
 + For AlwaysOn WorkSpaces, the weekly maintenance window is on Sunday 00h00 to 04h00, in the time zone of the WorkSpace.
@@ -985,7 +1005,7 @@ You can also download the necessary RPM packages from Amazon Linux 2 repositorie
 The exact file name will change based on the package version.
 
 #### Step 3: Verify Firefox repository is used
-<a name="w2aac11c41b9c95b7"></a>
+<a name="w2aac11c41b9c97b7"></a>
 
 Amazon Linux Extras automatically provides Firefox updates for Amazon Linux 2 WorkSpaces. Amazon Linux 2 WorkSpaces created after July 31, 2023 will already have the Firefox Extra repository activated. To verify that your WorkSpace is using the Firefox Extra repository, run the following command.
 

@@ -23,9 +23,9 @@ Enabling trusted identity propagation includes tasks performed by an IAM Identit
 
 The following tasks needed to be complete by the IAM Identity Center administrator:
 
-1. **Create an [IAM role](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_roles.html)** in the account where the Amazon Redshift cluster or Serverless instance exists with the following permission policy. For more information, see [IAM Role creation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html).
+1. **Create an [IAM role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html)** in the account where the Amazon Redshift cluster or Serverless instance exists with the following permission policy. For more information, see [IAM Role creation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html).
 
-   1. The following policy examples includes the necessary permissions to complete this tutorial. To use this policy, replace the {{italicized placeholder text}} in the example policy with your own information. For additional directions, see [Create a policy](https://docs.aws.amazon.com//IAM/latest/UserGuide/access_policies_create.html) or [Edit a policy](https://docs.aws.amazon.com//IAM/latest/UserGuide/access_policies_manage-edit.html).
+   1. The following policy examples includes the necessary permissions to complete this tutorial. To use this policy, replace the {{italicized placeholder text}} in the example policy with your own information. For additional directions, see [Create a policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html) or [Edit a policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-edit.html).
 
      **Permission policy:**
 
@@ -170,4 +170,4 @@ The following tasks needed to be complete by the IAM Identity Center administrat
 ## Tasks performed by an Amazon Redshift administrator
 <a name="setting-up-tip-redshift-admin-tasks"></a>
 
-Enabling trusted identity propagation to Amazon Redshift requires an Amazon Redshift cluster administrator or Amazon Redshift Serverless administrator to perform a number of tasks in the Amazon Redshift console. For more information, see [Integrate Identity Provider (IdP) with Amazon Redshift Query Editor V2 and SQL Client using IAM Identity Center for seamless Single Sign-On](https://aws.amazon.com/blogs//big-data/integrate-identity-provider-idp-with-amazon-redshift-query-editor-v2-and-sql-client-using-aws-iam-identity-center-for-seamless-single-sign-on/) in the *AWS Big Data Blog*.
+Enabling trusted identity propagation to Amazon Redshift requires an Amazon Redshift cluster administrator or Amazon Redshift Serverless administrator to perform a number of tasks in the Amazon Redshift console. For more information, see [Integrate Identity Provider (IdP) with Amazon Redshift Query Editor V2 and SQL Client using IAM Identity Center for seamless Single Sign-On](https://aws.amazon.com/blogs/big-data/integrate-identity-provider-idp-with-amazon-redshift-query-editor-v2-and-sql-client-using-aws-iam-identity-center-for-seamless-single-sign-on/) in the *AWS Big Data Blog*.

@@ -18,8 +18,6 @@ To use the Performance Insights API, enable Performance Insights on one of your 
 
 The Performance Insights API provides the following operations.
 
-****
-
 |  Performance Insights action  |  AWS CLI command  |  Description  |
 | --- | --- | --- |
 | [`DescribeDimensionKeys`](https://docs.aws.amazon.com/performance-insights/latest/APIReference/API_DescribeDimensionKeys.html) | [`aws pi describe-dimension-keys`](https://docs.aws.amazon.com/cli/latest/reference/pi/describe-dimension-keys.html) | Retrieves the top N dimension keys for a metric for a specific time period. |

@@ -296,9 +296,9 @@ For control findings, this field provides the title of the control. This field d
 
 One or more finding types in the format of `{{namespace}}/{{category}}/{{classifier}}` that classify a finding. This field doesn't reference a standard if you turn on [consolidated control findings](controls-findings-create-update.md#consolidated-control-findings).
 
-`Types` should be updated only by using the [`BatchUpdateFindings`](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_BatchUpdateFindings.html) API.
+`Types` should be updated only by using the [`BatchUpdateFindings`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateFindings.html) API.
 
-Finding providers who want to provide a value for `Types` should use the `Types` attribute under [`FindingProviderFields`](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_FindingProviderFields.html).
+Finding providers who want to provide a value for `Types` should use the `Types` attribute under [`FindingProviderFields`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_FindingProviderFields.html).
 
 In the following list, the top-level bullets are namespaces, the second-level bullets are categories, and the third-level bullets are classifiers. We recommend that finding providers use defined namespaces to help sort and group findings. The defined categories and classifiers may also be used, but are not required. Only the Software and Configuration Checks namespace has defined classifiers.
 
@@ -397,7 +397,7 @@ This timestamp reflects the time when the finding record was last or most recent
 
 When you update the finding record, you must update this timestamp to the current timestamp. Upon creation of a finding record, the `CreatedAt` and `UpdatedAt` timestamps must be the same. After an update to the finding record, the value of this field must be more recent than all of the previous values that it contained.
 
-Note that `UpdatedAt` cannot be updated by using the [`BatchUpdateFindings`](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_BatchUpdateFindings.html) operation. You can update it only by using [`BatchImportFindings`](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_BatchImportFindings.html) operation.
+Note that `UpdatedAt` cannot be updated by using the [`BatchUpdateFindings`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateFindings.html) operation. You can update it only by using [`BatchImportFindings`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html) operation.
 
 **Example**
 

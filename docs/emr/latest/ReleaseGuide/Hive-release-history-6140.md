@@ -8,8 +8,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/Hive-release-his
 ## Amazon EMR 6.14.0 - Hive changes
 <a name="Hive-release-history-changes-6140"></a>
 
-****
-
 | Type | Description |
 | --- | --- |
 | Improvement | [HIVE-26762](https://issues.apache.org/jira/browse/HIVE-26762): Remove operand pruning in `HiveFilterSetOpTransposeRule` |

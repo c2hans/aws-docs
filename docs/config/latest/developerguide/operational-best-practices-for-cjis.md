@@ -9,8 +9,6 @@ Conformance packs provide a general-purpose compliance framework designed to ena
 
 The following provides a sample mapping between the Criminal Justice Information Services (CJIS) Compliance Requirements and AWS managed Config rules. Each Config rule applies to a specific AWS resource, and relates to one or more CJIS controls. A CJIS control can be related to multiple Config rules. Refer to the table below for more detail and guidance related to these mappings.
 
-****
-
 | Control ID  | Control Description  | AWS Config Rule  | Guidance  |
 | --- | --- | --- | --- |
 | 5.2 | Security Awareness Training | security-awareness-program-exists (Process Check) | Establish and maintain a security awareness program for your organization. Security awareness programs educate employees on how to protect their organization from various security breaches or incidents.  |

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/ecr-
 # Creating an App Runner service through Amazon ECR
 <a name="ecr-apprunner"></a>
 
-The following topic describes how to create and launch an AWS App Runner service from the Amazon Elastic Container Registry (Amazon ECR) node, in the AWS Toolkit for Visual Studio Code. For detailed information about the AWS App Runner and Amazon ECR services, see the [AWS App Runner](https://docs.aws.amazon.com//apprunner/latest/dg/what-is-apprunner.html) and [Amazon ECR](https://docs.aws.amazon.com/AmazonECR/latest/userguide/what-is-ecr.html) User Guides.
+The following topic describes how to create and launch an AWS App Runner service from the Amazon Elastic Container Registry (Amazon ECR) node, in the AWS Toolkit for Visual Studio Code. For detailed information about the AWS App Runner and Amazon ECR services, see the [AWS App Runner](https://docs.aws.amazon.com/apprunner/latest/dg/what-is-apprunner.html) and [Amazon ECR](https://docs.aws.amazon.com/AmazonECR/latest/userguide/what-is-ecr.html) User Guides.
 
 ## Prerequisites
 <a name="ecr-apprunner-prereq"></a>

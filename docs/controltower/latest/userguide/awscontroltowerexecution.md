@@ -24,9 +24,9 @@ Purpose of the `AWSControlTowerExecution` role:
 How the `AWSControlTowerExecution` role works with OUs:
 
 The `AWSControlTowerExecution` role ensures that your selected AWS Control Tower controls apply automatically to every individual account, in each OU, in your organization, as well as to every new account you create in AWS Control Tower. As a result:
-+ You can provide compliance and security reports more easily, based on the auditing and logging features embodied by AWS Control Tower [controls](https://docs.aws.amazon.com//controltower/latest/userguide/guardrails.html).
++ You can provide compliance and security reports more easily, based on the auditing and logging features embodied by AWS Control Tower [controls](https://docs.aws.amazon.com/controltower/latest/userguide/guardrails.html).
 + Your security and compliance teams can verify that all requirements are met, and that no organizational drift has occurred.
 
-For more information about drift, see [Detect and resolve drift in AWS Control Tower](https://docs.aws.amazon.com//controltower/latest/userguide/drift.html).
+For more information about drift, see [Detect and resolve drift in AWS Control Tower](https://docs.aws.amazon.com/controltower/latest/userguide/drift.html).
 
 To summarize, the `AWSControlTowerExecution` role and its associated policy gives you flexible control of security and compliance across your entire organization. Therefore, breaches of security or protocol are less likely to occur.

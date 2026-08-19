@@ -11,7 +11,7 @@ Learn how to create SageMaker HyperPod clusters orchestrated by Amazon EKS using
 
    1. Ensure that you have an existing Amazon EKS cluster up and running. For detailed instructions about how to set up an Amazon EKS cluster, see [Create an Amazon EKS cluster](https://docs.aws.amazon.com/eks/latest/userguide/create-cluster.html) in the *Amazon EKS User Guide*.
 
-   1. Install the Helm chart as instructed in [Installing packages on the Amazon EKS cluster using Helm](sagemaker-hyperpod-eks-install-packages-using-helm-chart.md). If you create a [Amazon Nova SageMaker HyperPod cluster](https://docs.aws.amazon.com//nova/latest/nova2-userguide/nova-hp-cluster.html), you will need a separate Helm chart.
+   1. Install the Helm chart as instructed in [Installing packages on the Amazon EKS cluster using Helm](sagemaker-hyperpod-eks-install-packages-using-helm-chart.md). If you create a [Amazon Nova SageMaker HyperPod cluster](https://docs.aws.amazon.com/nova/latest/nova2-userguide/nova-hp-cluster.html), you will need a separate Helm chart.
 
 1. Prepare a lifecycle configuration script and upload to an Amazon S3 bucket, such as `s3://{{amzn-s3-demo-bucket}}/{{Lifecycle-scripts}}/{{base-config}}/`.
 
@@ -161,7 +161,7 @@ When running the `create-cluster` command with the `--cli-input-json` parameter,
 
    This should return the ARN of the new cluster.
 **Important**
-You can use the [update-cluster](https://docs.aws.amazon.com//cli/latest/reference/ecs/update-cluster.html) operation to remove a restricted instance group (RIG). When a RIG is scaled down to 0, the FSx for Lustre file system won't be deleted. To completely remove the FSx for Lustre file system, you must remove the RIG entirely.
+You can use the [update-cluster](https://docs.aws.amazon.com/cli/latest/reference/ecs/update-cluster.html) operation to remove a restricted instance group (RIG). When a RIG is scaled down to 0, the FSx for Lustre file system won't be deleted. To completely remove the FSx for Lustre file system, you must remove the RIG entirely.
 Removing a RIG will not delete any artifacts stored in the service-managed Amazon S3 bucket. However, you should ensure all artifacts in the FSx for Lustre file system are fully synchronized to Amazon S3 before removal. We recommend waiting at least 30 minutes after job completion to ensure complete synchronization of all artifacts from the FSx for Lustre file system to the service-managed Amazon S3 bucket.
 **Important**
 When using an onboarded On-Demand Capacity Reservation (ODCR), you must map your instance group to the same Availability Zone ID (AZ ID) as the ODCR by setting `OverrideVpcConfig` with a subnet in the matching AZ ID.

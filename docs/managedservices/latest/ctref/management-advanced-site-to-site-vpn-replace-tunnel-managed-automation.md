@@ -14,8 +14,6 @@ Replace an existing Site-to-Site VPN tunnel, optionally applying maintenance.
 ## Change Type Details
 <a name="ct-2sav5hzk5twk4-MASr-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2sav5hzk5twk4 |

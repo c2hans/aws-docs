@@ -39,7 +39,7 @@ The diagram illustrates the following resources that you'll create:
 + You'll create the RDS database in a private subnet.
 
   When you use the RDS console to create the RDS database and automatically connect the EC2 instance, the VPC, DB subnet group, and public access settings for the database are automatically selected. The RDS database is automatically created in a private subnet within the same VPC as the EC2 instance.
-+ Internet users can connect to the EC2 instance by using SSH or HTTP/HTTPS via an Internet gateway.
++ Internet users can connect to the EC2 instance by using SSH or HTTP/HTTPS through an Internet gateway.
 + Internet users cannot connect directly to the RDS database; only the EC2 instance is connected to the RDS database.
 + When you use the automatic connection feature to allow traffic between the EC2 instance and the RDS database, the following security groups are automatically created and added:
   + Security group **ec2-rds-{{x}}** is created and added to the EC2 instance. It has one outbound rule that references the **rds-ec2-{{x}}** security group as its destination. This allows traffic from the EC2 instance to reach the RDS database with the **rds-ec2-{{x}}** security group.

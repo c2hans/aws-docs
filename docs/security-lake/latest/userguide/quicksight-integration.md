@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/userguide/quicksigh
 
 **Integration type:** Subscriber
 
-[Amazon Quick](https://docs.aws.amazon.com//quicksight/latest/user/welcome.html) is a cloud-scale business intelligence (BI) service that you can use to deliver easy-to-understand insights to the people who you work with, wherever they are. Quick connects to your data in the cloud and combines data from many different sources. Quick gives decision-makers the opportunity to explore and interpret information in an interactive visual environment. They have secure access to dashboards from any device on your network and from mobile devices.
+[Amazon Quick](https://docs.aws.amazon.com/quicksight/latest/user/welcome.html) is a cloud-scale business intelligence (BI) service that you can use to deliver easy-to-understand insights to the people who you work with, wherever they are. Quick connects to your data in the cloud and combines data from many different sources. Quick gives decision-makers the opportunity to explore and interpret information in an interactive visual environment. They have secure access to dashboards from any device on your network and from mobile devices.
 
 ## Quick dashboard
 <a name="quicksight-integration-dashboard"></a>

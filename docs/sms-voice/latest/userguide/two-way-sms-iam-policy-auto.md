@@ -28,7 +28,7 @@ Although AWS End User Messaging SMS data is encrypted, you can use Amazon SNS to
 
 You need to perform some additional setup steps to use encrypted Amazon SNS topics with two-way messaging.
 
-The following example statement uses the, optional but recommended, `SourceAccount` and `SourceArn` conditions to avoid the confused deputy problem and only the AWS End User Messaging SMS owner account has access. For more information on the confused deputy problem, see [The confused deputy problem](https://docs.aws.amazon.com//IAM/latest/UserGuide/confused-deputy.html) in the *[IAM user guide](https://docs.aws.amazon.com//IAM/latest/UserGuide/introduction.html)*.
+The following example statement uses the, optional but recommended, `SourceAccount` and `SourceArn` conditions to avoid the confused deputy problem and only the AWS End User Messaging SMS owner account has access. For more information on the confused deputy problem, see [The confused deputy problem](https://docs.aws.amazon.com/IAM/latest/UserGuide/confused-deputy.html) in the *[IAM user guide](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html)*.
 
 First, the key that you use must be *symmetric*. Encrypted Amazon SNS topics don't support asymmetric AWS KMS keys.
 

@@ -93,8 +93,6 @@ AWS emits all records for Amazon MSK in addition to the following:
 
 For Studio notebooks, AWS emits the following metrics at the application level: `KPUs`, `cpuUtilization`, `heapMemoryUtilization`, `oldGenerationGCTime`, `oldGenerationGCCount`, and `threadCount`. In addition, it emits the metrics shown in the following table, also at the application level.
 
-****
-
 | Metric | Unit | Description | Prometheus name |
 | --- | --- | --- | --- |
 | zeppelinCpuUtilization | Percentage | Overall percentage of CPU utilization in the Apache Zeppelin server. | process\_cpu\_usage |

@@ -301,7 +301,7 @@ option_settings:
 ### Using the AWS SDK
 <a name="environments-cfg-elbv2-ipv6-dualstack.enable.sdk"></a>
 
-You can configure dual-stack using the [AWS SDKs](https://docs.aws.amazon.com//code-library/). Similar to the `update-environment` and `create-environment` AWS CLI commands mentioned in the previous section, you can use the [CreateEnvironment](https://docs.aws.amazon.com//elasticbeanstalk/latest/api/API_CreateEnvironment.html) and [UpdateEnvironment](https://docs.aws.amazon.com//elasticbeanstalk/latest/api/API_UpdateEnvironment.html) API actions. Use the `OptionSettings` request parameter to specify the options of the [aws:elbv2:loadbalancer](command-options-general.md#command-options-general-elbv2) namespace.
+You can configure dual-stack using the [AWS SDKs](https://docs.aws.amazon.com/code-library/). Similar to the `update-environment` and `create-environment` AWS CLI commands mentioned in the previous section, you can use the [CreateEnvironment](https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_CreateEnvironment.html) and [UpdateEnvironment](https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_UpdateEnvironment.html) API actions. Use the `OptionSettings` request parameter to specify the options of the [aws:elbv2:loadbalancer](command-options-general.md#command-options-general-elbv2) namespace.
 
 **Note**
 This configuration depends on the timing of data propagation at several points. Consider the following timing requirements when you configure your load balancer and test the changes.

@@ -27,9 +27,7 @@ To learn how to disable code interpretation, choose the tab for your preferred m
 ------
 #### [ API ]
 
-To disable code interpretation, send an [UpdateAgentActionGroup](https://docs.aws.amazon.com//bedrock/latest/APIReference/API_agent_UpdateAgentActionGroup.html) request (see link for request and response formats and field details) with an [Agents for Amazon Bedrock build-time endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#bra-bt) and specify the following fields:
-
-****
+To disable code interpretation, send an [UpdateAgentActionGroup](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_UpdateAgentActionGroup.html) request (see link for request and response formats and field details) with an [Agents for Amazon Bedrock build-time endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#bra-bt) and specify the following fields:
 
 | Field | Short description |
 | --- | --- |
@@ -50,4 +48,4 @@ UpdateAgentActionGroup:
 
 ------
 
-After you've disabled code interpretation for your agent, make sure to send a [PrepareAgent](https://docs.aws.amazon.com//bedrock/latest/APIReference/API_agent_PrepareAgent.html) request (see link for request and response formats and field details) with an [Agents for Amazon Bedrock build-time endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#bra-bt).
+After you've disabled code interpretation for your agent, make sure to send a [PrepareAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_PrepareAgent.html) request (see link for request and response formats and field details) with an [Agents for Amazon Bedrock build-time endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#bra-bt).

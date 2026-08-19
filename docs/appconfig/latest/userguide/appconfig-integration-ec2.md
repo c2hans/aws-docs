@@ -200,8 +200,6 @@ You can configure AWS AppConfig Agent for Amazon EC2 by specifying the following
 **Note**
 The following table includes a **Sample values** column. Depending on your monitor resolution, you might need to scroll to the bottom of the table and then scroll to the right to view the column.
 
-****
-
 | Environment variable | Details | Default value | Sample value(s) |
 | --- | --- | --- | --- |
 | `ACCESS_TOKEN` | This environment variable defines a token that must be provided when requesting configuration data from the agent HTTP server. The value of the token must be set in the HTTP request authorization header with an authorization type of `Bearer`. Here is an example.<pre>GET /applications/my_app/...<br />                  Host: localhost:2772<br />                  Authorization: Bearer <token value></pre> | None | MyAccessToken |

@@ -25,8 +25,6 @@ AWS AppConfig supports all of the versions listed in [Older extension versions](
 
 The following table describes changes made to recent versions of the AWS AppConfig Lambda extension.
 
-****
-
 | Version | Launch date | Notes |
 | --- | --- | --- |
 | 2.0.20159 | 07/13/2026 | Added support for AWS AppConfig experimentation. |

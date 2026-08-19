@@ -14,8 +14,6 @@ You can use AWS Glue to perform read and write operations on Iceberg tables in A
 
 The following table lists the version of Iceberg included in each AWS Glue version.
 
-****
-
 | AWS Glue version | Supported Iceberg version |
 | --- | --- |
 | 5.1 | 1.10.0 |

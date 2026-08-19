@@ -14,8 +14,6 @@ Create a public AWS Certificate Manager (ACM) certificate with email or DNS vali
 ## Change Type Details
 <a name="ct-3ll9hnadql9s1-DAAc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-3ll9hnadql9s1 |

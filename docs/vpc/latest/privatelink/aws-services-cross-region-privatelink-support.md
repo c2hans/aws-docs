@@ -32,7 +32,7 @@ Choose the link in the **AWS service** column to see the service documentation. 
 - ** [Amazon Data Firehose](https://docs.aws.amazon.com/firehose/latest/dev/vpc.html) **
   - com.amazonaws.{{region}}.kinesis-firehose
 
-- ** [Amazon Managed Service for Apache Flink](https://docs.aws.amazon.com//managed-flink/latest/java/vpc-internet.html) **
+- ** [Amazon Managed Service for Apache Flink](https://docs.aws.amazon.com/managed-flink/latest/java/vpc-internet.html) **
   - com.amazonaws.{{region}}.kinesisanalytics
   - com.amazonaws.{{region}}.kinesisanalytics-fips
 

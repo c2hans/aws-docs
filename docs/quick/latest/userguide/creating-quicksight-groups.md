@@ -16,7 +16,7 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/creating-quicksig
 **Note**
 If your Amazon Quick account is integrated with IAM Identity Center (recommended), groups are not managed in the Quick application. Instead, groups are managed in IAM Identity Center or in the third-party identity provider that you configured in IAM Identity Center. Groups are synced automatically between Quick and IAM Identity Center.
 
-Admins with IAM credentials who have access to the Quick console can organize sets of users into groups that make it easier to manage access and security. For example, you can create a group of users that you can share Amazon Quick assets with all at once. You can create and manage groups using the Amazon Quick console or the AWS Command Line Interface (AWS CLI). You can create up to 10,000 groups in a namespace. If you want to create more than 10,000 groups in a namespace, contact [AWS Support](https://aws.amazon.com//contact-us/).
+Admins with IAM credentials who have access to the Quick console can organize sets of users into groups that make it easier to manage access and security. For example, you can create a group of users that you can share Amazon Quick assets with all at once. You can create and manage groups using the Amazon Quick console or the AWS Command Line Interface (AWS CLI). You can create up to 10,000 groups in a namespace. If you want to create more than 10,000 groups in a namespace, contact [AWS Support](https://aws.amazon.com/contact-us/).
 
 Use the topics below to create, and modify groups with in the Amazon Quick console or with the Amazon Quick APIs.
 

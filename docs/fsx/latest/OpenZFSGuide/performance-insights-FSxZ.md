@@ -32,4 +32,4 @@ Amazon FSx provides actionable recommendations that you can use to optimize your
 </tbody>
 </table>
 
-For more information about file system performance, see [Performance for Amazon FSx for OpenZFSPerformance](performance.md).
+For more information about file system performance, see [Performance for Amazon FSx for OpenZFS](performance.md).

@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/timestream/latest/developerguide/timestream-for-influx-create-rr-cluster.html
 ---
 
-For similar capabilities to Amazon Timestream for LiveAnalytics, consider Amazon Timestream for InfluxDB. It offers simplified data ingestion and single-digit millisecond query response times for real-time analytics. Learn more [here](https://docs.aws.amazon.com//timestream/latest/developerguide/timestream-for-influxdb.html).
+For similar capabilities to Amazon Timestream for LiveAnalytics, consider Amazon Timestream for InfluxDB. It offers simplified data ingestion and single-digit millisecond query response times for real-time analytics. Learn more [here](https://docs.aws.amazon.com/timestream/latest/developerguide/timestream-for-influxdb.html).
 
 # Creating a Timestream for InfluxDB read replica cluster
 <a name="timestream-for-influx-create-rr-cluster"></a>
@@ -118,8 +118,6 @@ aws timestream-influxdb create-db-cluster \
 <a name="timestream-for-influx-rr-create-settings"></a>
 
 For details about settings that you choose when you create a read replica cluster, see the following table. For more information about the AWS CLI options, see [create-db-cluster](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/timestream-influxdb/create-db-cluster.html). For more information about the Amazon Timestream for InfluxDB API parameters, see [CreateDbCluster](https://docs.aws.amazon.com/ts-influxdb/latest/ts-influxdb-api/API_CreateDbCluster.html).
-
-****
 
 | Console setting | Setting description | CLI option and Timestream for InfluxDB API parameter |
 | --- | --- | --- |

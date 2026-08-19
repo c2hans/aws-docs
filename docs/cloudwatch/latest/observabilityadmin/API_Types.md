@@ -45,6 +45,7 @@ The following data types are supported:
 +  [Source](API_Source.md)
 +  [SourceLogsConfiguration](API_SourceLogsConfiguration.md)
 +  [SourceMetricsConfiguration](API_SourceMetricsConfiguration.md)
++  [TagPropagationConfiguration](API_TagPropagationConfiguration.md)
 +  [TelemetryConfiguration](API_TelemetryConfiguration.md)
 +  [TelemetryDestinationConfiguration](API_TelemetryDestinationConfiguration.md)
 +  [TelemetryPipeline](API_TelemetryPipeline.md)

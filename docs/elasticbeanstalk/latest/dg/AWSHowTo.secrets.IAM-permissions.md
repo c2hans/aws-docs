@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.secr
 
 You must grant the necessary permissions to your environment’s EC2 instances to fetch the secrets and parameters for AWS Secrets Manager and AWS Systems Manager Parameter Store. Permissions are provided to the EC2 instances via an EC2 [instance profile role.](iam-instanceprofile.md)
 
-The following sections list the specific permissions that you need to add to an EC2 instance profile, depending on which service you use. Follow the steps provided in [Update the permissions policy for a role](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_roles_update-role-permissions.html) in the *IAM User Guide* to add these permissions.
+The following sections list the specific permissions that you need to add to an EC2 instance profile, depending on which service you use. Follow the steps provided in [Update the permissions policy for a role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_update-role-permissions.html) in the *IAM User Guide* to add these permissions.
 
 **IAM permissions for the ECS managed Docker platform**
 The ECS managed Docker platform requires additional IAM permissions to the ones provided in this topic. For more information about all of the required permissions for your ECS managed Docker platform environment to support Elastic Beanstalk environment variables integration with secrets, see [Execution Role ARN format](create_deploy_docker_v2config.md#create_deploy_docker_v2config_executionRoleArn_format).

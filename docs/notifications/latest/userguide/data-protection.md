@@ -23,7 +23,7 @@ We strongly recommend that you never put confidential or sensitive information, 
 ### Encryption at rest
 <a name="encryption-rest"></a>
 
-User Notifications protects sensitive data by encrypting it at rest using AWS owned KMS keys. This key is owned by User Notifications. Encrypting data helps to ensure that sensitive data that is saved on disks isn't readable by any user or application without a valid key. For more information, see [How AWS services use AWS KMS](https://docs.aws.amazon.com//kms/latest/developerguide/service-integration.html) in the *AWS Key Management Service Developer Guide*.
+User Notifications protects sensitive data by encrypting it at rest using AWS owned KMS keys. This key is owned by User Notifications. Encrypting data helps to ensure that sensitive data that is saved on disks isn't readable by any user or application without a valid key. For more information, see [How AWS services use AWS KMS](https://docs.aws.amazon.com/kms/latest/developerguide/service-integration.html) in the *AWS Key Management Service Developer Guide*.
 
 #### Data encrypted with AWS owned key
 <a name="aws-owned-key"></a>

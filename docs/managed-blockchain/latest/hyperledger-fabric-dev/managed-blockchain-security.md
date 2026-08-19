@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/managed-blockchain/latest/hyperledger-fa
 
 Amazon Managed Blockchain (AMB) utilizes AWS features and the features of the open-source framework running on AMB Access to provide data protection as well as authentication and access control.
 
-This chapter covers security information specific to AMB Access Hyperledger Fabric. For security information specific to AMB Access Ethereum, see [AMB Access Ethereum Security](https://docs.aws.amazon.com//managed-blockchain/latest/ethereum-dev/security.html) in the *Amazon Managed Blockchain (AMB) Access Ethereum Developer Guide*.
+This chapter covers security information specific to AMB Access Hyperledger Fabric. For security information specific to AMB Access Ethereum, see [AMB Access Ethereum Security](https://docs.aws.amazon.com/managed-blockchain/latest/ethereum-dev/security.html) in the *Amazon Managed Blockchain (AMB) Access Ethereum Developer Guide*.
 
 **Topics**
 + [Data Protection for Amazon Managed Blockchain (AMB) Hyperledger Fabric](managed-blockchain-data-protection.md)

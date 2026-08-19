@@ -72,7 +72,7 @@ The following are other AWS services that Security Lake uses:
 + [AWS Lake Formation](https://docs.aws.amazon.com/lake-formation/latest/dg/what-is-lake-formation.html) – Security Lake creates a separate Lake Formation table for each source that contributes data to Security Lake. Lake Formation tables contain information about data from each source, including schema, partition, and data location information. Subscribers have the option to consume data by querying the Lake Formation tables.
 + [AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html) – Security Lake uses Lambda functions to support extract, transform, and load (ETL) jobs on raw data and to register partitions for source data in AWS Glue.
 + [Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html) – Security Lake stores your data as Amazon S3 objects. Storage classes and retention settings are based on Amazon S3 offerings. Security Lake doesn't support Amazon S3 Select.
-+ [Amazon Simple Queue Service](https://docs.aws.amazon.com//AWSSimpleQueueService/latest/SQSDeveloperGuide/welcome.html) – Security Lake uses Amazon SQS to enable event-driven processing and manage notifications.
++ [Amazon Simple Queue Service](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/welcome.html) – Security Lake uses Amazon SQS to enable event-driven processing and manage notifications.
 
 Security Lake collects data from custom sources in addition to the following AWS services:
 + AWS CloudTrail management and data events (S3, Lambda)

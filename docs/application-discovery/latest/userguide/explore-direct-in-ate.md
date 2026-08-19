@@ -9,7 +9,7 @@ AWS Application Discovery Service is no longer open to new customers. Alternativ
 
 After you turn on data exploration in Amazon Athena, you can begin exploring and working with detailed current data that was discovered by your agents by querying the data directly in Athena. You can use the data to generate spreadsheets, run a cost analysis, port the query to a visualization program to diagram network dependencies, and more.
 
-The following instructions explain how to explore your agent data directly in the Athena console. If you don’t have any data in Athena or have not enabled data exploration in Amazon Athena, you will be prompted by a dialog box to enable data exploration in Amazon Athena , as explained in [Turning on data exploration in Amazon AthenaTurning on data exploration](ce-prep-agents.md).
+The following instructions explain how to explore your agent data directly in the Athena console. If you don’t have any data in Athena or have not enabled data exploration in Amazon Athena, you will be prompted by a dialog box to enable data exploration in Amazon Athena , as explained in [Turning on data exploration in Amazon Athena](ce-prep-agents.md).
 
 **To explore agent-discovered data directly in Athena**
 
@@ -34,4 +34,4 @@ Under **Tables** the following tables represent the datasets grouped by the agen
    SELECT * FROM network_interface_agent;
    ```
 
-   For more example queries, see [Using predefined queries in Amazon AthenaUsing predefined queries](predefined-queries.md).
+   For more example queries, see [Using predefined queries in Amazon Athena](predefined-queries.md).

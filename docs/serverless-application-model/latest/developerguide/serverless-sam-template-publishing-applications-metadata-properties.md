@@ -15,8 +15,6 @@ CloudFormation [intrinsic functions](https://docs.aws.amazon.com/AWSCloudFormati
 
 This table provides information about the properties of the `Metadata` section of the AWS SAM template. This section is required to publish applications to the AWS Serverless Application Repository using the AWS SAM CLI.
 
-****
-
 | Property | Type | Required | Description |
 | --- | --- | --- | --- |
 | Name | String | TRUE | The name of the application.<br />Minimum length=1. Maximum length=140.<br />Pattern: `"[a-zA-Z0-9\\-]+";` |

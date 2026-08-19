@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/nova-eval-in
 
 The SageMaker Inspect AI container runs LLM model evaluations on SageMaker Training Jobs. The container uses [Inspect AI](https://inspect.ai-safety-institute.org.uk/) to provide a standardized evaluation process for models deployed to SageMaker inference endpoints or Amazon Bedrock — including Amazon Nova 1.0 (Micro, Lite, Pro) and 2.0 (Lite 2) models.
 
-Previous [evaluation approaches](https://docs.aws.amazon.com//nova/latest/nova2-userguide/nova-model-evaluation.html) (based on [lighteval](https://github.com/huggingface/lighteval)) tightly coupled offline inference and evaluation logic, which limited flexibility in how models could be served and tested. The Inspect AI container decouples evaluation logic from inference entirely.
+Previous [evaluation approaches](https://docs.aws.amazon.com/nova/latest/nova2-userguide/nova-model-evaluation.html) (based on [lighteval](https://github.com/huggingface/lighteval)) tightly coupled offline inference and evaluation logic, which limited flexibility in how models could be served and tested. The Inspect AI container decouples evaluation logic from inference entirely.
 
 ## Overview
 <a name="nova-eval-container-overview"></a>
@@ -323,7 +323,7 @@ output:
 ### Option B: Create endpoint, evaluate, then clean up
 <a name="nova-eval-container-option-b"></a>
 
-Use this option to have the container deploy a Amazon Nova base or fine-tuned model, run evaluations, and tear down the endpoint automatically. This is the recommended approach for one-off evaluation runs. Retrieve the latest SageMaker inference container from the [Amazon Nova SageMaker Inference container images](https://docs.aws.amazon.com//nova/latest/userguide/nova-model-sagemaker-inference.html#nova-sagemaker-inference-container-images) documentation.
+Use this option to have the container deploy a Amazon Nova base or fine-tuned model, run evaluations, and tear down the endpoint automatically. This is the recommended approach for one-off evaluation runs. Retrieve the latest SageMaker inference container from the [Amazon Nova SageMaker Inference container images](https://docs.aws.amazon.com/nova/latest/userguide/nova-model-sagemaker-inference.html#nova-sagemaker-inference-container-images) documentation.
 
 ```
 inference_provider:
@@ -375,7 +375,7 @@ output:
 ### Option C: Evaluate through Amazon Bedrock Runtime
 <a name="nova-eval-container-option-c"></a>
 
-Use this option to evaluate a model available through Amazon Bedrock Runtime without managing an endpoint. For more information about Amazon Bedrock endpoint options, see [Amazon Bedrock endpoints](https://docs.aws.amazon.com//bedrock/latest/userguide/endpoints.html).
+Use this option to evaluate a model available through Amazon Bedrock Runtime without managing an endpoint. For more information about Amazon Bedrock endpoint options, see [Amazon Bedrock endpoints](https://docs.aws.amazon.com/bedrock/latest/userguide/endpoints.html).
 
 ```
 inference_provider:
@@ -410,7 +410,7 @@ output:
 ### Option D: Evaluate through Amazon Bedrock Mantle
 <a name="nova-eval-container-option-d"></a>
 
-[Amazon Bedrock Mantle](https://docs.aws.amazon.com//bedrock/latest/userguide/inference-chat-completions-mantle.html) provides an OpenAI-compatible inference endpoint for models available through Amazon Bedrock. This option does not require a stored credential. The container generates a short-lived bearer token from your execution role's IAM credentials and automatically refreshes it between benchmarks.
+[Amazon Bedrock Mantle](https://docs.aws.amazon.com/bedrock/latest/userguide/inference-chat-completions-mantle.html) provides an OpenAI-compatible inference endpoint for models available through Amazon Bedrock. This option does not require a stored credential. The container generates a short-lived bearer token from your execution role's IAM credentials and automatically refreshes it between benchmarks.
 
 ```
 inference_provider:
@@ -447,7 +447,7 @@ Add the following permission to your execution role (see [Step 1: Set up IAM per
 }
 ```
 
-For permissions guidance, see [Amazon Bedrock inference permissions](https://docs.aws.amazon.com//bedrock/latest/userguide/inference.html) and [API key permissions control](https://docs.aws.amazon.com//bedrock/latest/userguide/api-keys-permissions.html) in the Amazon Bedrock documentation.
+For permissions guidance, see [Amazon Bedrock inference permissions](https://docs.aws.amazon.com/bedrock/latest/userguide/inference.html) and [API key permissions control](https://docs.aws.amazon.com/bedrock/latest/userguide/api-keys-permissions.html) in the Amazon Bedrock documentation.
 
 ### Option E: Evaluate an OpenAI-compatible endpoint
 <a name="nova-eval-container-option-e"></a>
@@ -463,7 +463,7 @@ HTTPS is required for all endpoints that use bearer token authentication. HTTP i
 #### Using AWS Secrets Manager (recommended)
 <a name="nova-eval-container-option-e-secrets"></a>
 
-[AWS Secrets Manager](https://docs.aws.amazon.com//secretsmanager/latest/userguide/intro.html) provides encrypted storage, access auditing through CloudTrail, and automatic rotation for API keys and other secrets. Store the API key in Secrets Manager and reference it by ARN in the recipe. The container fetches the key at runtime and auto-refreshes between benchmarks.
+[AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html) provides encrypted storage, access auditing through CloudTrail, and automatic rotation for API keys and other secrets. Store the API key in Secrets Manager and reference it by ARN in the recipe. The container fetches the key at runtime and auto-refreshes between benchmarks.
 
 ```
 inference_provider:
@@ -502,7 +502,7 @@ Add the following permission to your execution role (see [Step 1: Set up IAM per
 #### Using environment variables
 <a name="nova-eval-container-option-e-env"></a>
 
-The API key can be passed through the environment variable `INFERENCE_API_KEY`. Check with your runtime environment documentation for how environment variables are passed and the security implications. For SageMaker Training Jobs, environment variables are visible in [DescribeTrainingJob](https://docs.aws.amazon.com//sagemaker/latest/APIReference/API_HyperParameterTrainingJobDefinition.html) API responses and limited to 512 characters. For more information, see [SageMaker Training Job environment variables](https://docs.aws.amazon.com//sagemaker/latest/dg/automatic-model-tuning-define-metrics-variables.html#automatic-model-tuning-define-variables).
+The API key can be passed through the environment variable `INFERENCE_API_KEY`. Check with your runtime environment documentation for how environment variables are passed and the security implications. For SageMaker Training Jobs, environment variables are visible in [DescribeTrainingJob](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_HyperParameterTrainingJobDefinition.html) API responses and limited to 512 characters. For more information, see [SageMaker Training Job environment variables](https://docs.aws.amazon.com/sagemaker/latest/dg/automatic-model-tuning-define-metrics-variables.html#automatic-model-tuning-define-variables).
 
 ```
 inference_provider:
@@ -965,11 +965,11 @@ When using a SageMaker Inference endpoint for agentic evaluations, configure the
 | ENABLE\_TOOL\_CALLING | True | Activates tool calling support on the inference endpoint |
 | CONTEXT\_LENGTH | Sufficient for multi-turn | Set to a value large enough to accommodate multi-turn conversations with tool results |
 
-For information about setting up Amazon Nova endpoints on SageMaker Inference, see [Deploy Amazon Nova models on SageMaker](https://docs.aws.amazon.com//nova/latest/userguide/deploy-sagemaker.html). For information about container features and configuration, see [Container features](https://docs.aws.amazon.com//nova/latest/userguide/container-features.html).
+For information about setting up Amazon Nova endpoints on SageMaker Inference, see [Deploy Amazon Nova models on SageMaker](https://docs.aws.amazon.com/nova/latest/userguide/deploy-sagemaker.html). For information about container features and configuration, see [Container features](https://docs.aws.amazon.com/nova/latest/userguide/container-features.html).
 
 **Amazon Bedrock endpoints**
 
-For Amazon Bedrock endpoints, tool calling is natively supported for compatible models. For more information, see [Tool use with Amazon Bedrock](https://docs.aws.amazon.com//bedrock/latest/userguide/tool-use.html).
+For Amazon Bedrock endpoints, tool calling is natively supported for compatible models. For more information, see [Tool use with Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/tool-use.html).
 
 **Getting started with agentic evaluations**
 
@@ -982,8 +982,8 @@ To run agentic evaluations, complete the following prerequisites:
 1. Configure your recipe with appropriate `timeout` and `max_tokens` values for multi-turn interactions
 
 **Amazon Bedrock endpoint**
-+ For full setup and deployment, see [Amazon Bedrock endpoints](https://docs.aws.amazon.com//bedrock/latest/userguide/endpoints.html).
-+ For tool calling support, see the client-side tool calling section in [Tool use with Amazon Bedrock](https://docs.aws.amazon.com//bedrock/latest/userguide/tool-use.html).
++ For full setup and deployment, see [Amazon Bedrock endpoints](https://docs.aws.amazon.com/bedrock/latest/userguide/endpoints.html).
++ For tool calling support, see the client-side tool calling section in [Tool use with Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/tool-use.html).
 
 **Sample notebooks**
 
@@ -1086,7 +1086,7 @@ When you use a SageMaker Inference endpoint, all data stays within your AWS acco
 
 **Amazon Bedrock**
 
-When you use Amazon Bedrock as the inference provider, your data is subject to the AWS AI Services Opt-Out Policy. To prevent your data from being used to improve AWS AI services, enable the opt-out policy at the AWS Organizations level. For more information, see [AI services opt-out policies](https://docs.aws.amazon.com//organizations/latest/userguide/orgs_manage_policies_ai-opt-out.html).
+When you use Amazon Bedrock as the inference provider, your data is subject to the AWS AI Services Opt-Out Policy. To prevent your data from being used to improve AWS AI services, enable the opt-out policy at the AWS Organizations level. For more information, see [AI services opt-out policies](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_ai-opt-out.html).
 
 | Inference provider | Opt-out required | Details |
 | --- | --- | --- |

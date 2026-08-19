@@ -29,8 +29,6 @@ You can access AWS Transform MGN through the AWS Management Console or through t
 
 The following AWS Regions are supported by AWS Transform MGN:
 
-****
-
 | Region name | Region identity | Support in AWS Transform MGN |
 | --- | --- | --- |
 | US East (Ohio) | us-east-2 | Yes |

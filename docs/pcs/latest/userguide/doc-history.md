@@ -7,10 +7,18 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/doc-history.html
 
 The following table describes the important changes to the documentation for AWS PCS.
 
-****
-
 | Date | Change | Documentation updates | API versions updated |
 | --- | --- | --- | --- |
+| August 14, 2026 | Updated node lifecycle actions best practices | Added guidance that AWS PCS does not support rebooting the instance during a lifecycle action script. | Not applicable |
+| August 11, 2026 | Updated AWS PCS agent to version 1.5.1 | Added AWS PCS agent version 1.5.1-1 in the user guide. | Not applicable |
+| August 11, 2026 | Documented rolling update limitation for Slurm CLI Filter Plugins | Added a limitation to the cluster version update page: clusters that use Slurm CLI Filter Plugins don't support rolling updates. | Not applicable |
+| August 6, 2026 | Getting started tutorial uses node lifecycle actions | Updated the getting started tutorial so that compute node groups mount shared storage and forward node logs with node lifecycle actions instead of launch template user data. | Not applicable |
+| August 6, 2026 | New topic: collect Slurm metrics with a managed Prometheus collector | Added a task-oriented guide for configuring a managed Prometheus collector to scrape Slurm OpenMetrics from a AWS PCS cluster controller. | Not applicable |
+| July 29, 2026 | Updated Slurm installers | Updated the user guide for Slurm installers. Added version 25.11.7-1. | Not applicable |
+| July 28, 2026 | Updated Capacity Blocks for ML description | Updated the description of Amazon EC2 Capacity Blocks for ML on the Capacity Reservations page. | Not applicable |
+| July 28, 2026 | Updated node lifecycle actions documentation | Removed an unsupported recommendation from the node lifecycle actions page. Added a note to the configure-cloudwatch-logs vetted script clarifying that the script preserves existing Amazon CloudWatch agent configuration. | Not applicable |
+| July 23, 2026 | Document constraints on QOS queue settings | Added constraint on QOS existence in accounting database for QOS queue settings. | Not applicable |
+| July 23, 2026 | Updated AWS PCS agent to version 1.5.0 | Added AWS PCS agent version 1.5.0-1 in the user guide. This version adds support for node lifecycle actions. | 2026-07-23 |
 | July 20, 2026 | AWS PCS released in Asia Pacific (Seoul) | AWS PCS is now available in Asia Pacific (Seoul) (ap-northeast-2).<br />CloudFormation templates are available to get started in the Asia Pacific (Seoul) AWS Region. For more information, see [Use CloudFormation to create a sample AWS PCS cluster](get-started-cfn-create.md) and [CloudFormation templates to create a sample AWS PCS cluster](get-started-cfn-sample-templates.md). |  Not applicable  |
 | July 15, 2026 | Updated Slurm installers | Updated the user guide for Slurm installers. Added versions 23.11.10-5, 24.05.8-3, 24.11.7-2, 25.05.8-1, 25.05.8-2, 25.11.6-1, and 25.11.6-2. AWS PCS marked the 24.05 versions as deprecated. For more information, see [Software installers to build custom AMIs for AWS PCS](working-with_ami_installers.md). |  Not applicable  |
 | July 14, 2026 | Option 1 rolling update: single-version AMI now sufficient | Updated the Option 1 (rolling update) procedure to reflect that single-version AMIs are now supported. For more information, see [Update the scheduler version of an AWS PCS cluster](working-with_clusters_version_update_procedure.md). |  Not applicable  |

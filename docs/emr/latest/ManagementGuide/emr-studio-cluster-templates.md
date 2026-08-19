@@ -179,5 +179,4 @@ Before you create a cluster template, make sure you have IAM permissions to acce
    1. Expand the **Groups, roles, and users** tab and choose **Add groups, roles, users**.
 
    1. Search for your EMR Studio IAM role in the **Roles** tab, select your role, and choose **Add access**.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-studio-cluster-templates.html)

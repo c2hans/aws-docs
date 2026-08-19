@@ -14,8 +14,6 @@ Remediate the drift (out-of-band changes) in a stack, bringing the stack in sync
 ## Change Type Details
 <a name="ct-3kinq0u4l33zf-MCSr-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-3kinq0u4l33zf |
@@ -34,7 +32,7 @@ Remediate the drift (out-of-band changes) in a stack, bringing the stack in sync
 #### Drift remediation supported resources (ct-3kinq0u4l33zf)
 <a name="drift-remeditate-faqs-sr"></a>
 
-These are the resources that are supported by the drift remediation change type, (ct-3kinq0u4l33zf).   For remediation of any resource, use the "managed automation" (ct-34sxfo53yuzah) change type instead.
+These are the resources that are supported by the drift remediation change type, (ct-3kinq0u4l33zf).
 
 ```
 AWS::EC2::Instance

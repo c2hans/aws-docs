@@ -14,8 +14,6 @@ Add an S3 replication rule to the specified S3 bucket.
 ## Change Type Details
 <a name="ct-31eb7rrxb7qju-MASa-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-31eb7rrxb7qju |

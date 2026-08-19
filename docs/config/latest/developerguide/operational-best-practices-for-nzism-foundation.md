@@ -15,8 +15,6 @@ The Foundation part of this conformance pack can be deployed to the Sydney and g
 
 The NZISM is licensed under the Creative Commons Attribution 4.0 New Zealand licence, available at [https://creativecommons.org/licenses/by/4.0/](https://creativecommons.org/licenses/by/4.0/). Copyright information can be found at [NZISM New Zealand Information Security Manual \| Legal, Privacy, and Copyright](https://www.nzism.gcsb.govt.nz/legal-privacy-and-copyright/).
 
-****
-
 | Control ID  | Control Description  | AWS Config Rule  | Guidance  |
 | --- | --- | --- | --- |
 | 1149 | Software security, Standard Operating Environments, Developing hardened SOEs (14.1.8.C.01.) | [ec2-instance-managed-by-systems-manager](ec2-instance-managed-by-systems-manager.md) | An inventory of the software platforms and applications within the organization is possible by managing Amazon Elastic Compute Cloud (Amazon EC2) instances with AWS Systems Manager. Use AWS Systems Manager to provide detailed system configurations, operating system patch levels, services name and type, software installations, application name, publisher and version, and other details about your environment. |

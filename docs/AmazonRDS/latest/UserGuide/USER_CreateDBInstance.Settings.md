@@ -9,8 +9,6 @@ In the following table, you can find details about settings that you choose when
 
 You can create a DB instance using the console, the [create-db-instance](https://docs.aws.amazon.com/cli/latest/reference/rds/create-db-instance.html) CLI command, or the [CreateDBInstance](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBInstance.html) RDS API operation.
 
-****
-
 | Console setting | Setting description | CLI option and RDS API parameter | Supported DB engines |
 | --- | --- | --- | --- |
 | **Allocated storage** | The amount of storage to allocate for your DB instance (in gibibytes). In some cases, allocating a higher amount of storage for your DB instance than the size of your database can improve I/O performance.<br />For more information, see [Amazon RDS DB instance storage](CHAP_Storage.md).  | **CLI option:**<br />`--allocated-storage`<br />**API parameter:**<br /> `AllocatedStorage` | All |

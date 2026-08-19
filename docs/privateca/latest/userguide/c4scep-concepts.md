@@ -13,7 +13,7 @@ The following are the key concepts for Connector for SCEP:
 The required information provided to a CA in order to have a digital certificate issued. This information contains a public key as well as an identity.
 
 **Challenge password**
-The SCEP protocol uses challenge passwords to authenticate a request before issuing a certificate from a CA. Connector for SCEP handles SCEP challenge passwords based on the connector type. For more information, see [Configure your MDM system for Connector for SCEPConfigure your MDM system](using-connector-for-scep-with-mdm.md).
+The SCEP protocol uses challenge passwords to authenticate a request before issuing a certificate from a CA. Connector for SCEP handles SCEP challenge passwords based on the connector type. For more information, see [Configure your MDM system for Connector for SCEP](using-connector-for-scep-with-mdm.md).
 
 **Certificate revocation**
 Certificate revocation is the process of revoking an issued certificate before its expiration date. You can revoke the private CA certificate associated to a connector by calling [RevokeCertificate](https://docs.aws.amazon.com/privateca/latest/APIReference/API_RevokeCertificate.html) in the API, AWS SDK, AWS Command Line Interface, or AWS CloudFormation.

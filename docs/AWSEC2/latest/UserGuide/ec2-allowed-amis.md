@@ -301,7 +301,7 @@ We recommend pairing `ImageNames` with `ImageProviders` for better control and s
 
 1. **Enable Allowed AMIs**
 
-   Once you've confirmed that the criteria will not adversely affect expected business processes, enable Allowed AMIs.
+   After you've confirmed that the criteria will not adversely affect expected business processes, enable Allowed AMIs.
 
 1. **Monitor instance launches**
 

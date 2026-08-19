@@ -14,8 +14,6 @@ Add RDP or SSH bastion ingress Classless Inter-Domain Routing (CIDR) allow lists
 ## Change Type Details
 <a name="ct-36zubwzxp44a4-MABa-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-36zubwzxp44a4 |

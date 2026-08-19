@@ -10,53 +10,7 @@ Amazon Bedrock is a fully managed service that provides secure, enterprise-grade
 ## Quickstart
 <a name="quickstart"></a>
 
-Read the [Quickstart](getting-started.md) to write your first API call using Amazon Bedrock in under five minutes.
-
-------
-#### [ Messages API ]
-
-```
-import anthropic
-
-client = anthropic.Anthropic()
-
-response = client.messages.create(
-    model="anthropic.claude-opus-4-7",
-    max_tokens=1024,
-    messages=[{"role": "user", "content": "Can you explain the features of Amazon Bedrock?"}]
-)
-print(response)
-```
-
-------
-#### [ Responses API ]
-
-```
-from openai import OpenAI
-
-client = OpenAI()
-
-response = client.responses.create(
-    model="openai.gpt-oss-120b",
-    input="Can you explain the features of Amazon Bedrock?"
-    )
-print(response)
-```
-
-------
-#### [ Chat Completions API ]
-
-```
-from openai import OpenAI
-
-client = OpenAI()
-
-response = client.chat.completions.create(
-    model="openai.gpt-oss-120b",
-    messages=[{"role": "user", "content": "Can you explain the features of Amazon Bedrock?"}]
-    )
-print(response)
-```
+Read the [Quickstart](getting-started.md) to write your first API call using Amazon Bedrock in under five minutes. For new applications, we recommend the `bedrock-runtime` endpoint.
 
 ------
 #### [ Converse API ]
@@ -94,6 +48,52 @@ response = client.invoke_model(
     })
  )
  print(json.loads(response['body'].read()))
+```
+
+------
+#### [ Responses API ]
+
+```
+from openai import OpenAI
+
+client = OpenAI()
+
+response = client.responses.create(
+    model="openai.gpt-oss-120b",
+    input="Can you explain the features of Amazon Bedrock?"
+    )
+print(response)
+```
+
+------
+#### [ Chat Completions API ]
+
+```
+from openai import OpenAI
+
+client = OpenAI()
+
+response = client.chat.completions.create(
+    model="openai.gpt-oss-120b",
+    messages=[{"role": "user", "content": "Can you explain the features of Amazon Bedrock?"}]
+    )
+print(response)
+```
+
+------
+#### [ Messages API ]
+
+```
+import anthropic
+
+client = anthropic.Anthropic()
+
+response = client.messages.create(
+    model="anthropic.claude-opus-4-7",
+    max_tokens=1024,
+    messages=[{"role": "user", "content": "Can you explain the features of Amazon Bedrock?"}]
+)
+print(response)
 ```
 
 ------

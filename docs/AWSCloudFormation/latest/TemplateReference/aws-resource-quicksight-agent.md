@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::QuickSight::Agent
 <a name="aws-resource-quicksight-agent"></a>
 
-<a name="aws-resource-quicksight-agent-description"></a>The `AWS::QuickSight::Agent` resource Property description not available. for QuickSight.
+Creates an agent in Amazon QuickSight.
 
 ## Syntax
 <a name="aws-resource-quicksight-agent-syntax"></a>
@@ -89,7 +89,7 @@ The lifecycle state of the agent. Valid values are `PREVIEW` and `PUBLISHED`.
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `AwsAccountId`  <a name="cfn-quicksight-agent-awsaccountid"></a>
-Property description not available.
+The ID of the AWS account that contains the agent.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^[0-9]{12}$`
@@ -98,7 +98,7 @@ Property description not available.
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `CustomPromptInput`  <a name="cfn-quicksight-agent-custompromptinput"></a>
-Property description not available.
+The custom prompt configuration for the agent.
 *Required*: No
 *Type*: [CustomPromptInput](aws-properties-quicksight-agent-custompromptinput.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -142,7 +142,7 @@ A list of starter prompts that are displayed to users when they begin interactin
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Tags`  <a name="cfn-quicksight-agent-tags"></a>
-Property description not available.
+Contains a map of the key-value pairs for the resource tag or tags assigned to the agent.
 *Required*: No
 *Type*: Array of [AgentTag](aws-properties-quicksight-agent-agenttag.md)
 *Maximum*: `200`

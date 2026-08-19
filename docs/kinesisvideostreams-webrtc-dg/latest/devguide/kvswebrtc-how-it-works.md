@@ -83,10 +83,10 @@ If either of the applications can't find an IP/port pair that passes connectivit
 Kinesis Video Streams with WebRTC includes the following components:
 + **Control plane**
 
-  The control plane component is responsible for creating and maintaining the Kinesis Video Streams with WebRTC signaling channels. For more information, see the [Amazon Kinesis Video Streams API Reference](https://docs.aws.amazon.com//kinesisvideostreams/latest/dg/API_Operations_Amazon_Kinesis_Video_Streams.html).
+  The control plane component is responsible for creating and maintaining the Kinesis Video Streams with WebRTC signaling channels. For more information, see the [Amazon Kinesis Video Streams API Reference](https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/API_Operations_Amazon_Kinesis_Video_Streams.html).
 + **Signaling**
 
-  The signaling component manages the WebRTC signaling endpoints that allow applications to securely connect with each other for peer-to-peer live media streaming. The signaling component includes the [Amazon Kinesis Video Signaling REST APIs](https://docs.aws.amazon.com//kinesisvideostreams/latest/dg/API_Operations_Amazon_Kinesis_Video_Signaling_Channels.html) and a set of [Websocket APIs](https://docs.aws.amazon.com//kinesisvideostreams-webrtc-dg/latest/devguide/kvswebrtc-websocket-apis.html).
+  The signaling component manages the WebRTC signaling endpoints that allow applications to securely connect with each other for peer-to-peer live media streaming. The signaling component includes the [Amazon Kinesis Video Signaling REST APIs](https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/API_Operations_Amazon_Kinesis_Video_Signaling_Channels.html) and a set of [Websocket APIs](https://docs.aws.amazon.com/kinesisvideostreams-webrtc-dg/latest/devguide/kvswebrtc-websocket-apis.html).
 + **STUN**
 
   This component manages STUN endpoints that enable applications to discover their public IP address when they are located behind a NAT or a firewall.

@@ -22,7 +22,7 @@ You can view, search, and download recent events in your AWS account. For more i
 ## Use AWS CloudTrail to audit users who connect to an instance using EC2 Instance Connect Endpoint
 <a name="ec2-instance-connect-endpoint-audit-users-cloudtrail"></a>
 
-Connection attempts to instances via EC2 Instance Connect Endpoint are logged in CloudTrail in **Event history**. When a connection to an instance is initiated through an EC2 Instance Connect Endpoint, the connection is logged as a CloudTrail management event with the `eventName` of `OpenTunnel`.
+Connection attempts to instances through EC2 Instance Connect Endpoint are logged in CloudTrail in **Event history**. When a connection to an instance is initiated through an EC2 Instance Connect Endpoint, the connection is logged as a CloudTrail management event with the `eventName` of `OpenTunnel`.
 
 You can create Amazon EventBridge rules that route the CloudTrail event to a target. For more information, see the [Amazon EventBridge User Guide](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html).
 

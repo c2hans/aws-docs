@@ -29,7 +29,7 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/inspect-er
 
 To handle and diagnose errors produced during a transfer job, see the following procedure about using the `GetMetadataTransferJob` API action:
 
-1. After creating and running a transfer job, call [GetMetadataTransferJob](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_GetMetadataTransferJob.html):
+1. After creating and running a transfer job, call [GetMetadataTransferJob](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_GetMetadataTransferJob.html):
 
    ```
    aws iottwinmaker get-metadata-transfer-job \
@@ -39,7 +39,7 @@ To handle and diagnose errors produced during a transfer job, see the following 
 
 1. Once you see the state of the job turn to `COMPLETED`, you can start verifying the results of the job.
 
-1. When you call `GetMetadataTransferJob`, it returns an object called [`MetadataTransferJobProgress`](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_MetadataTransferJobProgress.html).
+1. When you call `GetMetadataTransferJob`, it returns an object called [`MetadataTransferJobProgress`](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_MetadataTransferJobProgress.html).
 
    The MetadataTransferJobProgress object contains the following parameters:
    + **failedCount:** Indicates the count of assets that failed during the transfer process.

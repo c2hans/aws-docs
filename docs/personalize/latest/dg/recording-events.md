@@ -13,7 +13,7 @@ If your domain use case or custom recipe supports [real-time personalization](us
 
 How you record real-time events depends on the type of interactions data you are importing:
 + For *item interactions*, you record real-time events with the [PutEvents](API_UBS_PutEvents.md) API operation. Amazon Personalize appends this data to the [item interaction](interactions-datasets.md) data in your dataset group. For more information, see [Recording real-time item interaction events](recording-item-interaction-events.md).
-+ For *action interactions*, you record real-time events with the [PutActionInteractions](API_UBS_PutActionInteractions.md) API operation. Amazon Personalize appends this data to the [Action interactions dataset](action-interactions-datasets.md) in your dataset group. Only the PERSONALIZED\_ACTIONS recipes use action interactions data. For more information, see [Recording real-time action interaction eventsRecording action interaction events](recording-action-interaction-events.md).
++ For *action interactions*, you record real-time events with the [PutActionInteractions](API_UBS_PutActionInteractions.md) API operation. Amazon Personalize appends this data to the [Action interactions dataset](action-interactions-datasets.md) in your dataset group. Only the PERSONALIZED\_ACTIONS recipes use action interactions data. For more information, see [Recording real-time action interaction events](recording-action-interaction-events.md).
 
 **Topics**
 + [How real-time events influence recommendations](#recorded-events-influence-recommendations)

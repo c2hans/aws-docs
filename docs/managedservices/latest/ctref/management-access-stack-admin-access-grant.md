@@ -14,8 +14,6 @@ Request admin access for one or more users for one or more stacks. The maximum a
 ## Change Type Details
 <a name="ct-1dmlg9g1l91h6-MASg-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1dmlg9g1l91h6 |

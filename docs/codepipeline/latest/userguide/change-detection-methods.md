@@ -10,8 +10,6 @@ When you add a source action to your pipeline, the actions work with additional 
 **Note**
 The CodeCommit and S3 source actions require either a configured change detection resource (an EventBridge rule) or use the option to poll the repository for source changes. For pipelines with a Bitbucket, GitHub, or GitHub Enterprise Server source action, you do not have to set up a webhook or default to polling. The connections action manages change detection for you.
 
-****
-
 | Source | Uses additional resources? | Steps |
 | --- | --- | --- |
 | Amazon S3 with CloudTrail resources | This source action uses an event rule and additional CloudTrail resources. When you use the CLI or CloudFormation to create this action, you also create and manage these resources. | See [Create a pipeline, stages, and actions](pipelines-create.md) and [Connecting to Amazon S3 source actions that use EventBridge and AWS CloudTrail](create-cloudtrail-S3-source.md)  |

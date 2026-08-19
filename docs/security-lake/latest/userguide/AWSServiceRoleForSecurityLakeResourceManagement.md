@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/userguide/AWSServic
 
 Security Lake uses the service-linked role named `AWSServiceRoleForSecurityLakeResourceManagement` to perform ongoing monitoring and performance improvements, which can reduce latency and costs. This service-linked role trusts the `resource-management.securitylake.amazonaws.com` service to assume the role. Enabling `AWSServiceRoleForSecurityLakeResourceManagement` will also grant it access to Lake Formation and automatically register your Security Lake managed S3 buckets with Lake Formation across all Regions for improved security.
 
- The permissions policy for the role, which is an AWS managed policy named `SecurityLakeResourceManagementServiceRolePolicy`, allows access to manage resources created by Security Lake; including managing the metadata in your data lake. For more information about, AWS managed policies for Amazon Security Lake, see [AWS managed policies for Amazon Security Lake](https://docs.aws.amazon.com//security-lake/latest/userguide/security-iam-awsmanpol.html#security-iam-awsmanpol-SecurityLakeServiceLinkedRole-ResourceManagement.html).
+ The permissions policy for the role, which is an AWS managed policy named `SecurityLakeResourceManagementServiceRolePolicy`, allows access to manage resources created by Security Lake; including managing the metadata in your data lake. For more information about, AWS managed policies for Amazon Security Lake, see [AWS managed policies for Amazon Security Lake](https://docs.aws.amazon.com/security-lake/latest/userguide/security-iam-awsmanpol.html#security-iam-awsmanpol-SecurityLakeServiceLinkedRole-ResourceManagement.html).
 
 This service-linked role allows Security Lake to monitor the health of the resources deployed by Security Lake (S3 Bucket, AWS Glue tables, Amazon SQS Queue, Metastore Manager (MSM) Lambda Function, and EventBridge rules) to your account. Some examples of operations that Security Lake can perform with this service-linked role are:
 + Apache Iceberg manifest file compaction, which improves query performance and lowers Lambda MSM processing times and costs.
@@ -140,11 +140,11 @@ The following example shows how the Role ARN will look like. You must edit the R
 
 `"AWS": "arn:[partition]:iam::[accountid]:role/aws-service-role/resource-management.securitylake.amazonaws.com/AWSServiceRoleForSecurityLakeResourceManagement"`
 
-You can also use the [CreateServiceLinkedRole](https://docs.aws.amazon.com//IAM/latest/APIReference/API_CreateServiceLinkedRole.html) API call. In the request, specify the `AWSServiceName` as `resource-management.securitylake.amazonaws.com`.
+You can also use the [CreateServiceLinkedRole](https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateServiceLinkedRole.html) API call. In the request, specify the `AWSServiceName` as `resource-management.securitylake.amazonaws.com`.
 
 ------
 
-After enabling the `AWSServiceRoleForSecurityLakeResourceManagement` role, if you are using AWS KMS Customer Managed Key (CMK) for encryption, you must allow the service-linked role to write encrypted objects to S3 buckets in the AWS Regions where CMK exists. In the AWS KMS console, add the following policy to the KMS key in the AWS Regions where CMK exists. For the details on how to change the KMS key policy, see [Key policies in AWS KMS](https://docs.aws.amazon.com//kms/latest/developerguide/key-policies.html) in the AWS Key Management Service Developer Guide.
+After enabling the `AWSServiceRoleForSecurityLakeResourceManagement` role, if you are using AWS KMS Customer Managed Key (CMK) for encryption, you must allow the service-linked role to write encrypted objects to S3 buckets in the AWS Regions where CMK exists. In the AWS KMS console, add the following policy to the KMS key in the AWS Regions where CMK exists. For the details on how to change the KMS key policy, see [Key policies in AWS KMS](https://docs.aws.amazon.com/kms/latest/developerguide/key-policies.html) in the AWS Key Management Service Developer Guide.
 
 ```
 {

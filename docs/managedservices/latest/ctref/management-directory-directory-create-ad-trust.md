@@ -14,8 +14,6 @@ Create a one-way trust between On-Prem Domain and (AWS) Managed Active Directory
 ## Change Type Details
 <a name="ct-0x6dylrnfjgz5-MDDc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-0x6dylrnfjgz5 |

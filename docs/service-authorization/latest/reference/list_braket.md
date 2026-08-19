@@ -25,8 +25,6 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_braket-actions-as-permissions).
 
-****
-
 - **   CancelJob  **
   - **IAM action:**  [braket:CancelJob](#list_braket-action-CancelJob)
   - **Condition key:**
@@ -128,8 +126,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
 <a name="list_braket-actions-as-permissions"></a>
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
-
-****
 
 - **   [CancelJob](https://docs.aws.amazon.com/braket/latest/APIReference/API_CancelJob.html)  **
   - **Description:** Grants permission to cancel a job
@@ -241,8 +237,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 The following actions are defined by Amazon Braket but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 | Actions | Description | Resource types (\*required) | Condition keys | Access level |
 | --- | --- | --- | --- | --- |
 |   [AcceptUserAgreement](${UserGuideDocPage})  | Grants permission to accept the Amazon Braket user agreement |  |   | Write |
@@ -253,8 +247,6 @@ The following actions are defined by Amazon Braket but are not directly invocabl
 <a name="list_braket-resources-for-iam-policies"></a>
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
-
-****
 
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
@@ -267,8 +259,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_braket-policy-keys"></a>
 
 Amazon Braket defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

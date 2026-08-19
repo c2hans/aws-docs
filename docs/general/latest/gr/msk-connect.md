@@ -56,8 +56,6 @@ The following are the service endpoints and service quotas for this service.
 ## Service quotas
 <a name="msk-connect_quotas"></a>
 
-****
-
 | Dimension | Quota |
 | --- | --- |
 | Maximum custom plugins | 100 |

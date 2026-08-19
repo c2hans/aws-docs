@@ -26,8 +26,6 @@ exec msdb.dbo.rds_tlog_backup_copy_to_S3
 
 The following input parameters are available:
 
-****
-
 | Parameter | Description |
 | --- | --- |
 | `@db_name` | The name of the database to copy transaction log backups for |
@@ -44,8 +42,6 @@ You can specify a set of either the time, LSN, or sequence ID parameters. Only o
 You can also specify just a single parameter in any of the sets. For example, by providing a value for only the `backup_file_end_time` parameter, all available transaction log backup files prior to that time within the seven-day limit will be copied to your Amazon S3 bucket.
 
 Following are the valid input parameter combinations for the `rds_tlog_backup_copy_to_S3` stored procedure.
-
-****
 
 | Parameters provided | Expected result |
 | --- | --- |

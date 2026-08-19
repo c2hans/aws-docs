@@ -9,8 +9,6 @@ You can automate your release process by using AWS CodePipeline to test your cod
 
 The following table lists tasks and the methods available for performing them. Using the AWS SDKs to accomplish these tasks is outside the scope of this topic.
 
-****
-
 | Task | Available approaches | Approaches described in this topic |
 | --- | --- | --- |
 | Create a continuous delivery (CD) pipeline with CodePipeline that automates builds with CodeBuild |  +  CodePipeline console <br />+  AWS CLI <br />+  AWS SDKs   |  +  [Use the CodePipeline console](how-to-create-pipeline-console.md) <br />+  [Use the AWS CLI](how-to-create-pipeline-cli.md) <br />+  You can adapt the information in this topic to use the AWS SDKs. For more information, see the `create-pipeline` action documentation for your programming language in the [SDKs](https://aws.amazon.com/tools/#sdk) section of *Tools for Amazon Web Services* or see `[CreatePipeline](https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_CreatePipeline.html)` in the *AWS CodePipeline API Reference*.   |

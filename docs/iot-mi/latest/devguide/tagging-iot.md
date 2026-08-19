@@ -17,16 +17,16 @@ You can search for and filter resources based on the tags you add or apply. You 
 For ease of use, the Tag Editor in the AWS Management Console provides a central, unified way to create and manage your tags. For more information, see [Working with Tag Editor](https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/tag-editor.html) in [ Working with the AWS Management Console](https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/getting-started.html).
 
 You can also work with tags using the AWS CLI and the managed integrations API. You can associate tags with managed things, provisioning profiles, credential lockers, and over-the-air (OTA) tasks when you create them by using the `Tags` field in the following commands:
-+ [CreateManagedThing](https://docs.aws.amazon.com//iot-mi/latest/APIReference/API_CreateManagedThing.html)
-+ [CreateProvisioningProfile](https://docs.aws.amazon.com//iot-mi/latest/APIReference/API_CreateProvisioningProfile.html)
-+ [CreateCredentialLocker](https://docs.aws.amazon.com//iot-mi/latest/APIReference/API_CreateCredentialLocker.html)
-+ [CreateOtaTask](https://docs.aws.amazon.com//iot-mi/latest/APIReference/API_CreateOtaTask.html)
-+ [CreateAccountAssociation](https://docs.aws.amazon.com//iot-mi/latest/APIReference/API_CreateAccountAssociation.html)
++ [CreateManagedThing](https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_CreateManagedThing.html)
++ [CreateProvisioningProfile](https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_CreateProvisioningProfile.html)
++ [CreateCredentialLocker](https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_CreateCredentialLocker.html)
++ [CreateOtaTask](https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_CreateOtaTask.html)
++ [CreateAccountAssociation](https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_CreateAccountAssociation.html)
 
 You can add, modify, or delete tags for existing resources that support tagging by using the following commands:
-+ [TagResource](https://docs.aws.amazon.com//iot-mi/latest/APIReference/API_TagResource)
-+ [ListTagsForResource](https://docs.aws.amazon.com//iot-mi/latest/APIReference/API_ListTagsForResource)
-+ [UntagResource](https://docs.aws.amazon.com//iot-mi/latest/APIReference/API_UntagResource)
++ [TagResource](https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_TagResource)
++ [ListTagsForResource](https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_ListTagsForResource)
++ [UntagResource](https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_UntagResource)
 
 You can edit tag keys and values, and you can remove tags from a resource at any time. You can set the value of a tag to an empty string, but you can't set the value of a tag to null. If you add a tag that has the same key as an existing tag on that resource, the new value overwrites the old value. If you delete a resource, any tags associated with the resource are also deleted.
 

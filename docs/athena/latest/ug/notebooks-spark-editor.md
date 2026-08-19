@@ -64,8 +64,6 @@ The icons in the menu at the top of the notebook editor offer the following opti
 
 The following are some common notebook editor command mode keyboard shortcuts. These shortcuts are available after pressing **ESC** to enter command mode. To see a full list of commands available in the editor, press **ESC \+ H**.
 
-****
-
 | Key | Action |
 | --- | --- |
 | 1 - 6 | Change the cell type to markdown and set the heading level to the number typed |

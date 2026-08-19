@@ -223,17 +223,11 @@ With multi-Region user pools, you can fail over managed login, federated login, 
 ### Failover for managed login, federation, and machine-to-machine authorization
 <a name="user-pool-multi-region-failover-managed-login"></a>
 
-Failover is available when your primary user pool has a [custom domain](cognito-user-pools-add-custom-domain.md) or a [prefix domain](cognito-user-pools-assign-domain-prefix.md). With a custom domain, Amazon Cognito handles routing between the primary and replica automatically. With a prefix domain, each user pool has its own Region-isolated prefix domain. Custom domains can be served from either the primary or additional replica and Region.
+Failover is available when your primary user pool has a [custom domain](cognito-user-pools-add-custom-domain.md) or a [prefix domain](cognito-user-pools-assign-domain-prefix.md). Your user pool domain serves the OAuth 2.0 resources, including the [authorize](authorization-endpoint.md) and [token](token-endpoint.md) endpoints, and handles IdP responses from third-party federation providers, including OIDC, SAML, and social providers.
 
-Your user pool domain serves the OAuth 2.0 resources, including the [authorize](authorization-endpoint.md) and [token](token-endpoint.md) endpoints, and handles IdP responses from third-party federation providers, including OIDC, SAML, and social providers.
-
-To configure failover, set up a [health check](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-failover.html) in Route 53. You determine what triggers a healthy or unhealthy state. The health check isn't directly tied to your DNS CNAME record, but it controls whether traffic routes to your primary or replica user pool.
+To enable failover, set up a [health check](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-failover.html) in Route 53 and set the `Routing` field on your domain. You determine what triggers a healthy or unhealthy state. When the health check is in an unhealthy state, Amazon Cognito serves managed login pages and authentication operations from the secondary replica user pool. When the health check enters a healthy state, Amazon Cognito begins routing traffic back to the primary replica.
 
 The DNS record for your custom domain can use Route 53 or any third-party DNS provider. Ensure you have a valid CNAME record in your DNS provider pointing to your target alias, which is a CloudFront distribution. You can find the alias target on the **Domain** page in the Amazon Cognito console.
-
-When the health check is in an unhealthy state, Amazon Cognito serves managed login pages and authentication operations for the custom domain from the secondary replica user pool. When the health check enters a healthy state, Amazon Cognito begins routing traffic back to the primary replica.
-
-Each user pool has its own prefix domain, as these are Region-isolated. If federation is configured with third-party IdPs, then there must be two application configurations for each prefix endpoint. As a best practice, use a custom domain to ensure Amazon Cognito handles routing to and from managed login automatically based on the Route 53 health check status.
 
 **To update the health check ID in the console**
 

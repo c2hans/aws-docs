@@ -34,8 +34,6 @@ Docker is a container platform that allows you to define your own software stack
 
 See [Deploying Elastic Beanstalk Applications from Docker Containers](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_docker.html) in the *AWS Elastic Beanstalk Developer Guide* for more information about the Docker platform.
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  ECS Agent  |  Docker  |  Docker Compose  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Docker AL2023 version 4.13.6** <br /> * 64bit Amazon Linux 2023 v4.13.6 running Docker *  | 2023.12.20260803 |  | 25.0.16 | 5.4.0 | nginx 1.30.4 |
@@ -48,8 +46,6 @@ See [Deploying Elastic Beanstalk Applications from Docker Containers](https://do
 
 Elastic Beanstalk supports the following Go platform versions.
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  AWS X-Ray  |  Proxy Server  |
 | --- | --- | --- | --- | --- |
 |  ** Go 1 AL2023 version 4.9.6** <br /> * 64bit Amazon Linux 2023 v4.9.6 running Go 1 *  | 2023.12.20260803 | Go 1.25.12 | 3.6.7 | nginx 1.30.4 |
@@ -60,8 +56,6 @@ Elastic Beanstalk supports the following Go platform versions.
 <a name="platforms-supported.javase"></a>
 
 Elastic Beanstalk supports the following Java SE platform versions.
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  Tools  |  AWS X-Ray  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- |
@@ -77,8 +71,6 @@ Elastic Beanstalk supports the following Java SE platform versions.
 <a name="platforms-supported.java"></a>
 
 Elastic Beanstalk supports the following Tomcat platform versions.
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  AWS X-Ray  |  Application Server  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- |
@@ -97,8 +89,6 @@ Elastic Beanstalk supports the following Tomcat platform versions.
 <a name="platforms-supported.dotnetlinux"></a>
 
 Elastic Beanstalk supports the following .NET Core on Linux platform versions.
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
@@ -128,34 +118,30 @@ Elastic Beanstalk supports the following .NET on Windows Server platform version
 ### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
-|  ** Windows Server 2025 with IIS 10.0 version 2.23.3**  |  * 64bit Windows Server 2025 v2.23.3 running IIS 10.0 *  | .NET 10.0.10, supports 10.0.10, 9.0.18, 8.0.29<br />.NET Framework 4.8.1, supports 4.x, 2.0 | IIS 10.0 |
-|  ** Windows Server Core 2025 with IIS 10.0 version 2.23.3**  |  * 64bit Windows Server Core 2025 v2.23.3 running IIS 10.0 *  | .NET 10.0.10, supports 10.0.10, 9.0.18, 8.0.29<br />.NET Framework 4.8.1, supports 4.x, 2.0 | IIS 10.0 |
-|  ** Windows Server 2022 with IIS 10.0 version 2.23.3**  |  * 64bit Windows Server 2022 v2.23.3 running IIS 10.0 *  | .NET 10.0.10, supports 10.0.10, 9.0.18, 8.0.29<br />.NET Framework 4.8.1, supports 4.x, 2.0 | IIS 10.0 |
-|  ** Windows Server Core 2022 with IIS 10.0 version 2.23.3**  |  * 64bit Windows Server Core 2022 v2.23.3 running IIS 10.0 *  | .NET 10.0.10, supports 10.0.10, 9.0.18, 8.0.29<br />.NET Framework 4.8.1, supports 4.x, 2.0 | IIS 10.0 |
-|  ** Windows Server 2019 with IIS 10.0 version 2.23.3**  |  * 64bit Windows Server 2019 v2.23.3 running IIS 10.0 *  | .NET 10.0.10, supports 10.0.10, 9.0.18, 8.0.29<br />.NET Framework 4.8, supports 4.x, 2.0 | IIS 10.0 |
-|  ** Windows Server Core 2019 with IIS 10.0 version 2.23.3**  |  * 64bit Windows Server Core 2019 v2.23.3 running IIS 10.0 *  | .NET 10.0.10, supports 10.0.10, 9.0.18, 8.0.29<br />.NET Framework 4.8, supports 4.x, 2.0 | IIS 10.0 |
-|  ** Windows Server 2016 with IIS 10.0 version 2.23.3**  |  * 64bit Windows Server 2016 v2.23.3 running IIS 10.0 *  | .NET 10.0.10, supports 10.0.10, 9.0.18, 8.0.29<br />.NET Framework 4.8, supports 4.x, 2.0 | IIS 10.0 |
-|  ** Windows Server Core 2016 with IIS 10.0 version 2.23.3**  |  * 64bit Windows Server Core 2016 v2.23.3 running IIS 10.0 *  | .NET 10.0.10, supports 10.0.10, 9.0.18, 8.0.29<br />.NET Framework 4.8, supports 4.x, 2.0 | IIS 10.0 |
+|  ** Windows Server 2025 with IIS 10.0 version 2.23.4**  |  * 64bit Windows Server 2025 v2.23.4 running IIS 10.0 *  | .NET 10.0.11, supports 10.0.11, 9.0.19, 8.0.30<br />.NET Framework 4.8.1, supports 4.x, 2.0 | IIS 10.0 |
+|  ** Windows Server Core 2025 with IIS 10.0 version 2.23.4**  |  * 64bit Windows Server Core 2025 v2.23.4 running IIS 10.0 *  | .NET 10.0.11, supports 10.0.11, 9.0.19, 8.0.30<br />.NET Framework 4.8.1, supports 4.x, 2.0 | IIS 10.0 |
+|  ** Windows Server 2022 with IIS 10.0 version 2.23.4**  |  * 64bit Windows Server 2022 v2.23.4 running IIS 10.0 *  | .NET 10.0.11, supports 10.0.11, 9.0.19, 8.0.30<br />.NET Framework 4.8.1, supports 4.x, 2.0 | IIS 10.0 |
+|  ** Windows Server Core 2022 with IIS 10.0 version 2.23.4**  |  * 64bit Windows Server Core 2022 v2.23.4 running IIS 10.0 *  | .NET 10.0.11, supports 10.0.11, 9.0.19, 8.0.30<br />.NET Framework 4.8.1, supports 4.x, 2.0 | IIS 10.0 |
+|  ** Windows Server 2019 with IIS 10.0 version 2.23.4**  |  * 64bit Windows Server 2019 v2.23.4 running IIS 10.0 *  | .NET 10.0.11, supports 10.0.11, 9.0.19, 8.0.30<br />.NET Framework 4.8, supports 4.x, 2.0 | IIS 10.0 |
+|  ** Windows Server Core 2019 with IIS 10.0 version 2.23.4**  |  * 64bit Windows Server Core 2019 v2.23.4 running IIS 10.0 *  | .NET 10.0.11, supports 10.0.11, 9.0.19, 8.0.30<br />.NET Framework 4.8, supports 4.x, 2.0 | IIS 10.0 |
+|  ** Windows Server 2016 with IIS 10.0 version 2.23.4**  |  * 64bit Windows Server 2016 v2.23.4 running IIS 10.0 *  | .NET 10.0.11, supports 10.0.11, 9.0.19, 8.0.30<br />.NET Framework 4.8, supports 4.x, 2.0 | IIS 10.0 |
+|  ** Windows Server Core 2016 with IIS 10.0 version 2.23.4**  |  * 64bit Windows Server Core 2016 v2.23.4 running IIS 10.0 *  | .NET 10.0.11, supports 10.0.11, 9.0.19, 8.0.30<br />.NET Framework 4.8, supports 4.x, 2.0 | IIS 10.0 |
 
 ### More details
 <a name="platforms-supported.net.details"></a>
 
-****
-
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
-|  ** Windows Server 2025 with IIS 10.0 version 2.23.3**  | 2026.07.15 |  | 2.5.1 | 3.3.4793.0 | 4.0 | 3.6.6 |
-|  ** Windows Server Core 2025 with IIS 10.0 version 2.23.3**  | 2026.07.15 |  | 2.5.1 | 3.3.4793.0 | 4.0 | 3.6.6 |
-|  ** Windows Server 2022 with IIS 10.0 version 2.23.3**  | 2026.07.15 | 3.7.1252.1 | 2.5.1 | 3.3.4793.0 | 4.0 | 3.6.6 |
-|  ** Windows Server Core 2022 with IIS 10.0 version 2.23.3**  | 2026.07.15 | 3.7.1252.1 | 2.5.1 | 3.3.4793.0 | 4.0 | 3.6.6 |
-|  ** Windows Server 2019 with IIS 10.0 version 2.23.3**  | 2026.07.15 | 3.7.1252.1 | 2.5.1 | 3.3.4793.0 | 4.0 | 3.6.6 |
-|  ** Windows Server Core 2019 with IIS 10.0 version 2.23.3**  | 2026.07.15 | 3.7.1252.1 | 2.5.1 | 3.3.4793.0 | 4.0 | 3.6.6 |
-|  ** Windows Server 2016 with IIS 10.0 version 2.23.3**  | 2026.07.15 | 3.7.1252.1 | 2.5.1 | 3.3.4793.0 | 4.0 | 3.6.6 |
-|  ** Windows Server Core 2016 with IIS 10.0 version 2.23.3**  | 2026.07.15 | 3.7.1252.1 | 2.5.1 | 3.3.4793.0 | 4.0 | 3.6.6 |
+|  ** Windows Server 2025 with IIS 10.0 version 2.23.4**  | 2026.08.12 |  | 2.5.2 | 3.3.4851.0 | 4.0 | 3.6.7 |
+|  ** Windows Server Core 2025 with IIS 10.0 version 2.23.4**  | 2026.08.12 |  | 2.5.2 | 3.3.4851.0 | 4.0 | 3.6.7 |
+|  ** Windows Server 2022 with IIS 10.0 version 2.23.4**  | 2026.08.12 | 3.7.1252.1 | 2.5.2 | 3.3.4851.0 | 4.0 | 3.6.7 |
+|  ** Windows Server Core 2022 with IIS 10.0 version 2.23.4**  | 2026.08.12 | 3.7.1252.1 | 2.5.2 | 3.3.4851.0 | 4.0 | 3.6.7 |
+|  ** Windows Server 2019 with IIS 10.0 version 2.23.4**  | 2026.08.12 | 3.7.1252.1 | 2.5.2 | 3.3.4851.0 | 4.0 | 3.6.7 |
+|  ** Windows Server Core 2019 with IIS 10.0 version 2.23.4**  | 2026.08.12 | 3.7.1252.1 | 2.5.2 | 3.3.4851.0 | 4.0 | 3.6.7 |
+|  ** Windows Server 2016 with IIS 10.0 version 2.23.4**  | 2026.08.12 | 3.7.1252.1 | 2.5.2 | 3.3.4851.0 | 4.0 | 3.6.7 |
+|  ** Windows Server Core 2016 with IIS 10.0 version 2.23.4**  | 2026.08.12 | 3.7.1252.1 | 2.5.2 | 3.3.4851.0 | 4.0 | 3.6.7 |
 
 ## Node.js
 <a name="platforms-supported.nodejs"></a>
@@ -164,13 +150,10 @@ Each Node.js platform version on Amazon Linux 2 supports multiple Node.js langua
 
 Elastic Beanstalk supports the following Node.js platform versions.
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 24 AL2023 version 6.11.6** <br /> * 64bit Amazon Linux 2023 v6.11.6 running Node.js 24 *  | 2023.12.20260803 | 24.19.0 (11.17.0)<br /> Default version: v24.19.0 | nginx 1.30.4 (default), Apache 2.4.68 | 2.50.1 | 3.6.7 |
 |  ** Node.js 22 AL2023 version 6.11.6** <br /> * 64bit Amazon Linux 2023 v6.11.6 running Node.js 22 *  | 2023.12.20260803 | 22.23.2 (10.9.8)<br /> Default version: v22.23.2 | nginx 1.30.4 (default), Apache 2.4.68 | 2.50.1 | 3.6.7 |
-|  ** Node.js 20 AL2023 version 6.11.6** <br /> * 64bit Amazon Linux 2023 v6.11.6 running Node.js 20 *  | 2023.12.20260803 | 20.20.2 (10.8.2)<br /> Default version: 20.20.2 | nginx 1.30.4 (default), Apache 2.4.68 | 2.50.1 | 3.6.7 |
 
  For information about platform versions scheduled for retirement as published in [Platform Support Policy](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/platforms-support-policy.html), see [Node.js](platforms-retiring.md#platforms-retiring.nodejs) on the *Retiring Platform Versions* page. For information about previous platform versions, see [Node.js platform history](platform-history-nodejs.md).
 
@@ -184,8 +167,6 @@ When this happens, attempting to update to a new version of the platform that do
 <a name="platforms-supported.PHP"></a>
 
 Elastic Beanstalk supports the following PHP platform versions.
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  Package Manager  |  Proxy Server  |
 | --- | --- | --- | --- | --- |
@@ -201,30 +182,24 @@ Elastic Beanstalk supports the following PHP platform versions.
 
 Elastic Beanstalk supports the following Python platform versions.
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  Package Manager  |  AWS X-Ray  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Python 3.14 AL2023 version 4.13.6** <br /> * 64bit Amazon Linux 2023 v4.13.6 running Python 3.14 *  | 2023.12.20260803 | Python 3.14.7 | pip 26.2.1, pipenv 2026.7.1 | 3.6.7 | nginx 1.30.4 (default), Apache 2.4.68 |
 |  ** Python 3.13 AL2023 version 4.13.6** <br /> * 64bit Amazon Linux 2023 v4.13.6 running Python 3.13 *  | 2023.12.20260803 | Python 3.13.15 | pip 26.2.1, pipenv 2026.7.1 | 3.6.7 | nginx 1.30.4 (default), Apache 2.4.68 |
 |  ** Python 3.12 AL2023 version 4.13.6** <br /> * 64bit Amazon Linux 2023 v4.13.6 running Python 3.12 *  | 2023.12.20260803 | Python 3.12.13 | pip 26.2.1, pipenv 2026.7.1 | 3.6.7 | nginx 1.30.4 (default), Apache 2.4.68 |
 |  ** Python 3.11 AL2023 version 4.13.6** <br /> * 64bit Amazon Linux 2023 v4.13.6 running Python 3.11 *  | 2023.12.20260803 | Python 3.11.15 | pip 26.2.1, pipenv 2026.7.1 | 3.6.7 | nginx 1.30.4 (default), Apache 2.4.68 |
-|  ** Python 3.9 AL2023 version 4.13.6** <br /> * 64bit Amazon Linux 2023 v4.13.6 running Python 3.9 *  | 2023.12.20260803 | Python 3.9.25 | pip 26.0.1, pipenv 2025.0.4 | 3.6.7 | nginx 1.30.4 (default), Apache 2.4.68 |
 
- For information about platform versions scheduled for retirement as published in [Platform Support Policy](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/platforms-support-policy.html), see [Python](platforms-retiring.md#platforms-retiring.python) on the *Retiring Platform Versions* page. For information about previous platform versions, see [Python platform history](platform-history-python.md).
+ For information about previous platform versions, see [Python platform history](platform-history-python.md).
 
 ## Ruby
 <a name="platforms-supported.ruby"></a>
 
 Elastic Beanstalk supports the following Ruby platform versions.
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  Package Manager  |  Application Server  |  AWS X-Ray  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- | --- |
 |  ** Ruby 4.0 AL2023 version 4.14.6** <br /> * 64bit Amazon Linux 2023 v4.14.6 running Ruby 4.0 *  | 2023.12.20260803 | Ruby 4.0.6 | RubyGems 4.0.16 | Puma 8.0.2 | 3.6.7 | nginx 1.30.4 |
 |  ** Ruby 3.4 AL2023 version 4.14.6** <br /> * 64bit Amazon Linux 2023 v4.14.6 running Ruby 3.4 *  | 2023.12.20260803 | Ruby 3.4.10-p104 | RubyGems 3.6.9 | Puma 8.0.2 | 3.6.7 | nginx 1.30.4 |
 |  ** Ruby 3.3 AL2023 version 4.14.6** <br /> * 64bit Amazon Linux 2023 v4.14.6 running Ruby 3.3 *  | 2023.12.20260803 | Ruby 3.3.12-p206 | RubyGems 3.5.22 | Puma 8.0.2 | 3.6.7 | nginx 1.30.4 |
-|  ** Ruby 3.2 AL2023 version 4.14.6** <br /> * 64bit Amazon Linux 2023 v4.14.6 running Ruby 3.2 *  | 2023.12.20260803 | Ruby 3.2.8 | RubyGems 3.4.19 | Puma 8.0.2 | 3.6.7 | nginx 1.30.4 |
 
  For information about platform versions scheduled for retirement as published in [Platform Support Policy](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/platforms-support-policy.html), see [Ruby](platforms-retiring.md#platforms-retiring.ruby) on the *Retiring Platform Versions* page. For information about previous platform versions, see [Ruby platform history](platform-history-ruby.md).

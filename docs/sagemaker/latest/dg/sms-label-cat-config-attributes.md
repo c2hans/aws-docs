@@ -503,8 +503,6 @@ The following table lists elements you can and must include in your label catego
 **Note**
 The parameter `annotationType` is only supported for video frame labeling jobs.
 
-****
-
 |  Parameter  |  Required  |  Accepted Values  |  Description  |
 | --- | --- | --- | --- |
 | frameAttributes | No | A list of JSON objects.<br />**Required Parameters in each JSON Object:**<br />`name`, `type`, `description`<br />`minimum` and `maximum` are required if `type` is `"number"`<br />**Optional Parameters in each JSON Object:**<br />`enum`, `editsAllowed`, `isRequired` | Use this parameter to create a frame attribute that is applied to all frames or 3D point clouds in your labeling job.See the third table in this section for more information.  |
@@ -519,8 +517,6 @@ The parameter `annotationType` is only supported for video frame labeling jobs.
 
 The following table describes the parameters that you can and must use to create a list of `Labels`. Each parameter should be included in a JSON object.
 
-****
-
 | Parameter | Required | Accepted Values | Description |
 | --- | --- | --- | --- |
 | label | Yes | String | The name of the label category that is displayed to workers. Each label category name must be unique. |
@@ -531,8 +527,6 @@ The following table describes the parameters that you can and must use to create
 <a name="sms-category-attributes-schema"></a>
 
 The following table describes the parameters that you can and must use to create a frame attributes using `frameAttributes` and label category attribute using the `categoryGlobalAttributes` and `categoryAttributes` parameters.
-
-****
 
 |  Parameter  |  Required  |  Accepted Values  |  Description  |
 | --- | --- | --- | --- |
@@ -548,8 +542,6 @@ The following table describes the parameters that you can and must use to create
 <a name="sms-point-cloud-label-cat-limits"></a>
 
 You can specify up to 10 label category attributes per class. This 10-attribute quotas includes global label category attributes. For example, if you create four global label category attributes, and then assign three label category attributes to label `X`, that label will have 4\+3=7 label category attributes in total. For all label category and label category attribute limits, refer to the following table.
-
-****
 
 |  Type  |  Min  |  Max  |
 | --- | --- | --- |

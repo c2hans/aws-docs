@@ -20,7 +20,7 @@ This section helps administrators troubleshoot network and connectivity issues w
 
 Verify the following before troubleshooting:
 + You have access to your organization's network configuration (firewall rules, proxy settings, VPN configuration).
-+ You have reviewed the [Wickr network requirements](https://docs.aws.amazon.com//wickr/latest/adminguide/allow-list-ports-domains.html) (required domains and ports).
++ You have reviewed the [Wickr network requirements](https://docs.aws.amazon.com/wickr/latest/adminguide/allow-list-ports-domains.html) (required domains and ports).
 + You have confirmed whether the issue affects all users, specific users, or specific locations.
 + You have confirmed whether affected users can connect on a non-corporate network (cellular data or home WiFi).
 
@@ -40,7 +40,7 @@ Users cannot connect on corporate WiFi but can connect on cellular data. Multipl
 
 Resolution
 
-1. Review the full list of required domains and ports in [Network requirements for Wickr](https://docs.aws.amazon.com//wickr/latest/adminguide/allow-list-ports-domains.html).
+1. Review the full list of required domains and ports in [Network requirements for Wickr](https://docs.aws.amazon.com/wickr/latest/adminguide/allow-list-ports-domains.html).
 
 1. Allowlist all required domains in your firewall. Wickr requires HTTPS (TCP 443) for messaging and signaling, and UDP ports for voice and video calling.
 
@@ -63,7 +63,7 @@ Resolution
 
 1. Verify your proxy supports WebSocket connections (required for Wickr messaging).
 
-1. Configure a proxy bypass (PAC file exception or direct connection rule) for Wickr domains listed in the [network requirements](https://docs.aws.amazon.com//wickr/latest/adminguide/allow-list-ports-domains.html).
+1. Configure a proxy bypass (PAC file exception or direct connection rule) for Wickr domains listed in the [network requirements](https://docs.aws.amazon.com/wickr/latest/adminguide/allow-list-ports-domains.html).
 
 1. Review proxy logs for blocked or failed connections to Wickr domains.
 
@@ -79,7 +79,7 @@ Certificate errors in Wickr. "Secure connection failed" errors. Wickr works on n
 
 Resolution
 
-1. **Preferred:** Bypass SSL inspection for Wickr domains. Configure your SSL inspection appliance to exclude the domains listed in the [network requirements](https://docs.aws.amazon.com//wickr/latest/adminguide/allow-list-ports-domains.html). This maintains Wickr's end-to-end encryption.
+1. **Preferred:** Bypass SSL inspection for Wickr domains. Configure your SSL inspection appliance to exclude the domains listed in the [network requirements](https://docs.aws.amazon.com/wickr/latest/adminguide/allow-list-ports-domains.html). This maintains Wickr's end-to-end encryption.
 
 1. **Alternative:** Install your organization's root CA certificate on user devices. This allows Wickr to trust the intercepted certificate chain. Contact your IT security team for the certificate and installation instructions.
 
@@ -101,7 +101,7 @@ Wickr works without VPN but not with VPN connected. Connection drops when VPN co
 
 Resolution
 
-1. Configure split tunneling to route Wickr traffic directly (bypassing the VPN tunnel) for the domains listed in the [network requirements](https://docs.aws.amazon.com//wickr/latest/adminguide/allow-list-ports-domains.html).
+1. Configure split tunneling to route Wickr traffic directly (bypassing the VPN tunnel) for the domains listed in the [network requirements](https://docs.aws.amazon.com/wickr/latest/adminguide/allow-list-ports-domains.html).
 
 1. If split tunneling is not permitted, ensure the VPN allows both TCP 443 and the UDP ports listed in the network requirements.
 
@@ -116,7 +116,7 @@ Diagnostic
 Ask the affected user to enable TCP calling as a test (or administratively enable/force TCP through the console for all users): **Settings**, **Calling**, enable **TCP calling**. If calls succeed with TCP enabled, UDP is blocked.
 
 Resolution
-Allowlist the UDP ports listed in the [network requirements](https://docs.aws.amazon.com//wickr/latest/adminguide/allow-list-ports-domains.html) in your firewall and VPN configuration.
+Allowlist the UDP ports listed in the [network requirements](https://docs.aws.amazon.com/wickr/latest/adminguide/allow-list-ports-domains.html) in your firewall and VPN configuration.
 TCP calling is a diagnostic tool, not a permanent solution. Call quality is reduced when using TCP.
 
 ### DNS resolution failures
@@ -134,7 +134,7 @@ If the domain does not resolve, the issue is DNS configuration.
 
 Resolution
 
-1. Verify your DNS servers can resolve the domains listed in the [network requirements](https://docs.aws.amazon.com//wickr/latest/adminguide/allow-list-ports-domains.html).
+1. Verify your DNS servers can resolve the domains listed in the [network requirements](https://docs.aws.amazon.com/wickr/latest/adminguide/allow-list-ports-domains.html).
 
 1. If using DNS filtering or a DNS firewall, add exceptions for Wickr domains.
 
@@ -152,5 +152,5 @@ Use the following questions to narrow down the cause:
 
 ## Additional resources
 <a name="troubleshoot-network-resources"></a>
-+ [Network requirements for AWS Wickr](https://docs.aws.amazon.com//wickr/latest/adminguide/allow-list-ports-domains.html) (required domains and ports)
-+ [End-user network troubleshooting](https://docs.aws.amazon.com//wickr/latest/userguide/troubleshoot-network.html) (share with affected users)
++ [Network requirements for AWS Wickr](https://docs.aws.amazon.com/wickr/latest/adminguide/allow-list-ports-domains.html) (required domains and ports)
++ [End-user network troubleshooting](https://docs.aws.amazon.com/wickr/latest/userguide/troubleshoot-network.html) (share with affected users)

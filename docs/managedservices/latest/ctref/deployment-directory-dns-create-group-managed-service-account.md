@@ -14,8 +14,6 @@ Create a new Active Directory (AD) Group Managed Service Account (gMSA). For mul
 ## Change Type Details
 <a name="ct-2qhl8j1pjnbgn-DDDc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2qhl8j1pjnbgn |

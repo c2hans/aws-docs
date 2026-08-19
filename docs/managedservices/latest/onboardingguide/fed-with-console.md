@@ -9,8 +9,6 @@ End of support notice: On June 30, 2027, AWS will end support for AMS Advanced. 
 
 The IAM roles and SAML identity provider (Trusted Entity) detailed in the following table have been provisioned as part of your account onboarding. These roles allow you to submit and monitor RFCs, service requests, and incident reports, as well as get information on your VPCs and stacks.
 
-****
-
 | Role | Identity Provider | Permissions |
 | --- | --- | --- |
 | Customer\_ReadOnly\_Role | SAML | For standard AMS accounts. Allows you to submit RFCs to make changes to AMS-managed infrastructure, as well as create service requests and incidents. |
@@ -39,8 +37,6 @@ After creating the relying party trust as per the blog post, configure the claim
   ```
 
 When using AD FS, you must create Active Directory security groups for each role in the format shown in the following table (customer\_managed\_ad\_user\_role is for AMS Managed AD accounts only):
-
-****
 
 | Group | Role |
 | --- | --- |

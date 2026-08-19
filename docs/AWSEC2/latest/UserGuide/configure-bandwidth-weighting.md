@@ -24,7 +24,7 @@ The following are some considerations that might affect your bandwidth weighting
 + The networking multi-flow bandwidth specification for traffic that goes through an internet gateway or a local gateway is adjusted to 50% of the baseline bandwidth of the configured option or 5 Gbps, where applicable. For more information, see [Amazon EC2 instance network bandwidth](ec2-instance-network-bandwidth.md).
 
   The following example is based on an instance type that has a default baseline bandwidth of 40 Gbps, and a default border bandwidth of 20 Gbps. If you choose `vpc-1` bandwidth weighting for this instance, the weighted baseline bandwidth changes to 50 Gbps, and the border bandwidth changes to 25 Gbps.
-+ This feature is available in all commercial regions, aligned with EC2 instance availablilty and support.
++ This feature is available in all commercial Regions, aligned with EC2 instance availablilty and support.
 + This feature adds no additional cost to your EC2 instance.
 
 ## Supported instance types for bandwidth weighting

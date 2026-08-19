@@ -14,8 +14,6 @@ Create an AWS Elastic File System (EFS) stack from backup.
 ## Change Type Details
 <a name="ct-0g690ekkyfm79-DAEc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-0g690ekkyfm79 |

@@ -14,7 +14,7 @@ Information about the compliance as defined by the resource type. For example, f
 The compliance type. For example, Association (for a State Manager association), Patch, or Custom:`string` are all valid compliance types.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 100.
-Pattern: `[A-Za-z0-9_\-]\w+|Custom:[a-zA-Z0-9_\-]\w+`
+Pattern: `^([A-Za-z0-9_\-]\w+|Custom:[a-zA-Z0-9_\-]\w+)$`
 Required: No
 
  ** Details **   <a name="systemsmanager-Type-ComplianceItem-Details"></a>

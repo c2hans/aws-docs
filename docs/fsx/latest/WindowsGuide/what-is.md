@@ -97,7 +97,7 @@ If you are a first-time user of Amazon FSx, we recommend that you read the follo
 
 1. If you're ready to create your first Amazon FSx file system, try the [Getting started with Amazon FSx for Windows File Server](getting-started.md).
 
-1. For information about performance, see [FSx for Windows File Server performancePerformance](performance.md).
+1. For information about performance, see [FSx for Windows File Server performance](performance.md).
 
 1. For Amazon FSx security details, see [Security in Amazon FSx](security.md).
 

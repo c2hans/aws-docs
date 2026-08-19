@@ -20,7 +20,7 @@ Step Functions does not terminate an Amazon EMR cluster automatically if executi
 **Note**
 As of `emr-5.28.0`, you can specify the parameter `StepConcurrencyLevel` when creating a cluster to allow multiple steps to run in parallel on a single cluster. You can use the Step Functions `Map` and `Parallel` states to submit work in parallel to the cluster.
 
-The availability of Amazon EMR service integration is subject to the availability of Amazon EMR APIs. See [Amazon EMR](https://docs.aws.amazon.com//govcloud-us/latest/UserGuide/govcloud-emr.html) documentation for limitations in special regions.
+The availability of Amazon EMR service integration is subject to the availability of Amazon EMR APIs. See [Amazon EMR](https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-emr.html) documentation for limitations in special regions.
 
 **Note**
 For integration with Amazon EMR, Step Functions has a hard-coded 60 seconds job polling frequency for the first 10 minutes and 300 seconds after that.

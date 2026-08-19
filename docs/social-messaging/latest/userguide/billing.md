@@ -24,8 +24,6 @@ There are two possible billing items for each WhatsApp message: the `MetaTemplat
 
 When you send a template message, you are billed for one WhatsApp `MetaTemplateMessageFee` and one AWS `MessageFee`. The following table provides the descriptions and possible values for the fields in the usage type. For more information about AWS End User Messaging Social pricing, see [WhatsApp](https://aws.amazon.com/end-user-messaging/pricing/) in AWS End User Messaging Pricing.
 
-****
-
 | Field | Description | Possible values |
 | --- | --- | --- |
 | {{Region code}} | The AWS Region prefix that indicates where the WhatsApp message was sent or received from. |  +  **USE1** – US East (N. Virginia) Region <br />+  **USE2** – US East (Ohio) Region <br />+  **USW2** – US West (Oregon) Region <br />+  **APS3** – Asia Pacific (Mumbai) Region <br />+  **APS5** – Asia Pacific (Hyderabad) Region <br />+  **APS1** – Asia Pacific (Singapore) Region <br />+  **APS2** – Asia Pacific (Sydney) Region <br />+  **APS6** – Asia Pacific (New Zealand) Region <br />+  **EU** – Europe (Ireland) Region  <br />+  **EUW2** – Europe (London) Region <br />+  **APN1** – Asia Pacific (Tokyo) Region <br />+  **APN2** – Asia Pacific (Seoul) Region <br />+  **EUC1** – Europe (Frankfurt) Region <br />+  **EUN1** – Europe (Stockholm) Region <br />+  **EUS2** – Europe (Spain) Region <br />+  **MEC1** – Middle East (UAE) Region <br />+  **MES1** – Middle East (Bahrain) Region <br />+  **MXC1** – Mexico (Central) Region <br />+  **SAE1** – South America (São Paulo) Region <br />+  **AFS1** – Africa (Cape Town) Region <br />+  **CAN1** – Canada (Central) Region <br />+  **CAW1** – Canada West (Calgary) Region   |

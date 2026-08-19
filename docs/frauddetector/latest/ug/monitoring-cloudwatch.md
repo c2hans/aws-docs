@@ -17,7 +17,7 @@ You can monitor Amazon Fraud Detector using CloudWatch, which collects raw data 
 <a name="using-metrics"></a>
 
 To use metrics, you must specify the following information:
-+ The metric namespace. A *namespace* is a CloudWatch container Amazon Fraud Detector uses to publish its metrics into. If you are using the CloudWatch [ListMetrics](https://docs.aws.amazon.com//AmazonCloudWatch/latest/APIReference/API_ListMetrics.html) API or the [list-metrics](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudwatch/list-metrics.html) command to view the metrics for Amazon Fraud Detector, specify `AWS/FraudDetector` for the namespace.
++ The metric namespace. A *namespace* is a CloudWatch container Amazon Fraud Detector uses to publish its metrics into. If you are using the CloudWatch [ListMetrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_ListMetrics.html) API or the [list-metrics](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudwatch/list-metrics.html) command to view the metrics for Amazon Fraud Detector, specify `AWS/FraudDetector` for the namespace.
 + The metric dimension. A *dimension* is a name-value pair that helps you to uniquely identify a metric, for example, `DetectorId` can be a dimension name. Specifying a metric dimension is optional.
 + The metric name, such as `GetEventPrediction`.
 

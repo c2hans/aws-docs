@@ -16,8 +16,6 @@ Before you can connect to an Amazon RDS database using AWS Toolkit for JetBrains
 
 When connecting to a database using AWS Toolkit for JetBrains, users can choose to authenticate using IAM credentials or Secrets Manager. The following table describes key features and information resources for both options:
 
-****
-
 | Authentication methods | How it works | More information |
 | --- | --- | --- |
 | Connect with IAM credentials | With IAM database authentication, you don't need to store user credentials in the database because authentication is managed externally using AWS Identity and Access Management (IAM) credentials.<br />By default, IAM database authentication is disabled on DB instances. You can enable IAM database authentication (or disable it again) using the AWS Management Console, AWS CLI, or the API.  |  + [Identity and access management in Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.IAM.html) in the *Amazon RDS User Guide*. <br />+ AWS Knowledge Center article: [How do I allow users to authenticate to an Amazon RDS MySQL DB instance using their IAM credentials?](https://aws.amazon.com/premiumsupport/knowledge-center/users-connect-rds-iam)  |

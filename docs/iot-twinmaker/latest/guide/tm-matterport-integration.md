@@ -25,7 +25,7 @@ For more information about using Matterport, read Matterport's documentation on 
 
 This integration enables you to do the following:
 + Use your Matterport tags and spaces in the AWS IoT TwinMaker app kit.
-+ View your imported matterport data in your AWS IoT TwinMaker Grafana dashboard. For more information on using AWS IoT TwinMaker and Grafana, read the [Grafana dashboard integration](https://docs.aws.amazon.com//iot-twinmaker/latest/guide/grafana-integration.html) documentation.
++ View your imported matterport data in your AWS IoT TwinMaker Grafana dashboard. For more information on using AWS IoT TwinMaker and Grafana, read the [Grafana dashboard integration](https://docs.aws.amazon.com/iot-twinmaker/latest/guide/grafana-integration.html) documentation.
 + Import your Matterport spaces into your AWS IoT TwinMaker scenes.
 + Select and import your Matterport tags that you'd like to bind to data in your AWS IoT TwinMaker scene.
 + Automatically surface your Matterport space and tag changes in your AWS IoT TwinMaker scene and approve which to synchronize.
@@ -143,14 +143,14 @@ You must add a tag. Tags are required when adding 3rd party secrets into AWS Sec
 
    The **Value** field is optional. Once you have provided a **Key**, you can select **Add** to move on to the next step.
 
-1. Choose **Next** to move on to the **Configure rotation** page. Setting up a secret rotation is optional. If you wish to finish adding your secret and don’t need a rotation, choose **Next** again. For more information on secret rotation, see [Rotate AWS Secrets Manager secrets](https://docs.aws.amazon.com//secretsmanager/latest/userguide/rotating-secrets.html).
+1. Choose **Next** to move on to the **Configure rotation** page. Setting up a secret rotation is optional. If you wish to finish adding your secret and don’t need a rotation, choose **Next** again. For more information on secret rotation, see [Rotate AWS Secrets Manager secrets](https://docs.aws.amazon.com/secretsmanager/latest/userguide/rotating-secrets.html).
 
 1. Confirm your secret configuration on the **Review** page. Once you're ready to add your secret, choose **Store**.
 
 For more information about using AWS Secrets Manager, see the following AWS Secrets Manager documentation:
-+ [Create and manage secrets with AWS Secrets Manager](https://docs.aws.amazon.com//secretsmanager/latest/userguide/managing-secrets.html)
-+ [What is AWS Secrets Manager?](https://docs.aws.amazon.com//secretsmanager/latest/userguide/intro.html)
-+ [Rotate AWS Secrets Manager secrets](https://docs.aws.amazon.com//secretsmanager/latest/userguide/rotating-secrets.html)
++ [Create and manage secrets with AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/managing-secrets.html)
++ [What is AWS Secrets Manager?](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html)
++ [Rotate AWS Secrets Manager secrets](https://docs.aws.amazon.com/secretsmanager/latest/userguide/rotating-secrets.html)
 
 Now you are ready to import your Matterport assets into AWS IoT TwinMaker scenes. See the procedure in the following section, [Import Matterport spaces into AWS IoT TwinMaker scenes](#tm-matterport-integration-tm-console)
 
@@ -182,7 +182,7 @@ If you see a message that states **No connections**, navigate to the [AWS IoT Tw
 
 1. You have successfully integrated AWS IoT TwinMaker with Matterport, and now your AWS IoT TwinMaker scene has both your imported Matterport space and tags. You can work within this scene as you would with any other AWS IoT TwinMaker scene.
 
-For more information on working with AWS IoT TwinMaker scenes, see [ Creating and editing AWS IoT TwinMaker scenes](https://docs.aws.amazon.com//iot-twinmaker/latest/guide/scenes.html).
+For more information on working with AWS IoT TwinMaker scenes, see [ Creating and editing AWS IoT TwinMaker scenes](https://docs.aws.amazon.com/iot-twinmaker/latest/guide/scenes.html).
 
 ## Use Matterport spaces in your AWS IoT TwinMaker Grafana dashboard
 <a name="tm-matterport-grafana"></a>
@@ -192,9 +192,9 @@ Once you have imported your Matterport space into an AWS IoT TwinMaker scene, yo
 If you have not configured AWS IoT TwinMaker with Grafana yet, complete the Grafana integration process first. You have two choices when integrating AWS IoT TwinMaker with Grafana. You can use a self-managed Grafana instance or you can use Amazon Managed Grafana.
 
 See the following documentation to learn more about the Grafana options and integration process:
-+ [AWS IoT TwinMaker Grafana dashboard integration](https://docs.aws.amazon.com//iot-twinmaker/latest/guide/grafana-integration.html).
-+ [Amazon Managed Grafana](https://docs.aws.amazon.com//iot-twinmaker/latest/guide/amazon-managed-grafana.html).
-+ [Self-managed Grafana](https://docs.aws.amazon.com//iot-twinmaker/latest/guide/self-managed-grafana.html).
++ [AWS IoT TwinMaker Grafana dashboard integration](https://docs.aws.amazon.com/iot-twinmaker/latest/guide/grafana-integration.html).
++ [Amazon Managed Grafana](https://docs.aws.amazon.com/iot-twinmaker/latest/guide/amazon-managed-grafana.html).
++ [Self-managed Grafana](https://docs.aws.amazon.com/iot-twinmaker/latest/guide/self-managed-grafana.html).
 
 ## Use Matterport spaces in your AWS IoT TwinMaker web application
 <a name="tm-matterport-app-kit"></a>

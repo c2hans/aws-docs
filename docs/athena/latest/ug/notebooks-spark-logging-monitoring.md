@@ -9,8 +9,6 @@ From the release Apache Spark version 3.5 onwards, you can specify managed, Amaz
 
 With managed logging and S3 logging, the following table lists the log locations and UI availability that you can expect if you choose those options.
 
-****
-
 | Option | Event logs | Container logs | Application UI |
 | --- | --- | --- | --- |
 | Managed logging (default) | Stored in managed S3 bucket | Stored in managed S3 bucket | Supported |

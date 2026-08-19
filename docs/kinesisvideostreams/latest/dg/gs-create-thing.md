@@ -65,7 +65,7 @@ At this point you've created:
 ------
 #### [ AWS Management Console ]
 
-   In [AWS CloudShell](https://docs.aws.amazon.com//cloudshell/latest/userguide/getting-started.html), run the following command:
+   In [AWS CloudShell](https://docs.aws.amazon.com/cloudshell/latest/userguide/getting-started.html), run the following command:
 
    ```
    aws iot describe-endpoint --endpoint-type iot:CredentialProvider
@@ -113,4 +113,4 @@ At this point you've created:
      https://{{your-credential-provider-endpoint}}/role-aliases/{{your-role-alias-name}}/credentials
    ```
 
-   For more information, see [How to use a certificate to get a security token](https://docs.aws.amazon.com//iot/latest/developerguide/authorizing-direct-aws.html#authorizing-direct-aws.walkthrough).
+   For more information, see [How to use a certificate to get a security token](https://docs.aws.amazon.com/iot/latest/developerguide/authorizing-direct-aws.html#authorizing-direct-aws.walkthrough).

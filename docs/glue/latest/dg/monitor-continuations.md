@@ -27,8 +27,6 @@ The job bookmarks feature has additional functionalities when accessed through A
 
 The job bookmark option is passed as a parameter when the job is started. The following table describes the options for setting job bookmarks on the AWS Glue console.
 
-****
-
 | Job bookmark | Description |
 | --- | --- |
 | Enable | Causes the job to update the state after a run to keep track of previously processed data. If your job has a source with job bookmark support, it will keep track of processed data, and when a job runs, it processes new data since the last checkpoint. |

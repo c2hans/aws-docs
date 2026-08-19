@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/datazone/latest/userguide/security-iam-a
 <a name="security-iam-awsmanpol-AmazonDataZoneSageMakerEnvironmentRolePermissionsBoundary"></a>
 
 **Note**
-This policy is a *permissions boundary*. A permissions boundary sets the maximum permissions that an identity-based policy can grant to an IAM entity. You should not use and attach Amazon DataZone permissions boundary policies on your own. Amazon DataZone permissions boundary policies should only be attached to Amazon DataZone managed roles. For more information on permissions boundaries, see [Permissions boundaries for IAM entities](https://docs.aws.amazon.com//IAM/latest/UserGuide/access_policies_boundaries.html) in the IAM User Guide.
+This policy is a *permissions boundary*. A permissions boundary sets the maximum permissions that an identity-based policy can grant to an IAM entity. You should not use and attach Amazon DataZone permissions boundary policies on your own. Amazon DataZone permissions boundary policies should only be attached to Amazon DataZone managed roles. For more information on permissions boundaries, see [Permissions boundaries for IAM entities](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_boundaries.html) in the IAM User Guide.
 
 When you create an Amazon SageMaker environment via the Amazon DataZone data portal, Amazon DataZone applies this permissions boundary to the IAM roles that are produced during environment creation. The permissions boundary limits the scope of the roles that Amazon DataZone creates and any roles that you add.
 

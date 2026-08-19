@@ -16,4 +16,4 @@ This video (8:02) describes how to set up better network infrastructure security
 
 [![AWS Videos](http://img.youtube.com/vi/wocz0drq8-8/0.jpg)](http://www.youtube.com/watch?v=wocz0drq8-8)
 
-For more information, see the [documentation on how to set up AWS WAF](https://docs.aws.amazon.com//waf/latest/developerguide/setting-up-waf.html).
+For more information, see the [documentation on how to set up AWS WAF](https://docs.aws.amazon.com/waf/latest/developerguide/setting-up-waf.html).

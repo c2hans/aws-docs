@@ -10,7 +10,7 @@ This chapter covers the AWS service limitations and quotas that you should keep 
 For more information about limitations that are specific to controls, see [Control limitations](control-limitations.md).
 
 **The Controls Reference Guide**
-Detailed information about AWS Control Tower controls has been moved to [the AWS Control Tower Controls Reference Guide](https://docs.aws.amazon.com//controltower/latest/controlreference/introduction.html).
+Detailed information about AWS Control Tower controls has been moved to [the AWS Control Tower Controls Reference Guide](https://docs.aws.amazon.com/controltower/latest/controlreference/introduction.html).
 
 ## Known limitations in AWS Control Tower
 <a name="controltower-limits"></a>

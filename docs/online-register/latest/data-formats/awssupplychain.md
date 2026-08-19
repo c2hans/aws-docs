@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awss
 
 AWS Supply Chain provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="scn-DescribeInstance"></a>[DescribeInstance](https://docs.aws.amazon.com/service-authorization/latest/reference/list_awssupplychain.html) | View details of an AWS Supply Chain instance | Read |

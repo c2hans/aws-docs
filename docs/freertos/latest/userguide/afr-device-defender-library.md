@@ -19,7 +19,6 @@ The library is written in C and designed to be compliant with [ISO C90](https://
 
 The AWS IoT Device Defender library can be freely used and is distributed under the [MIT open source license](https://freertos.org/a00114.html).
 
-****
 <a name="defender-memory-estimate"></a>
 <table>
 <thead>

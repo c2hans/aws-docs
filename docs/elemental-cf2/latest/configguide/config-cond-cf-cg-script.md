@@ -32,7 +32,6 @@ If you have a redundant Conductor File configuration, perform this procedure on 
    ```
 
 1. The following prompts appear. Complete each prompt as follows.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-cf2/latest/configguide/config-cond-cf-cg-script.html)
 
 **Configuring the Conductor File Nodes**

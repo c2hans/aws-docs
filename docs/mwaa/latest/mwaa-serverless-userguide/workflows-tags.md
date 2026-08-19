@@ -25,8 +25,6 @@ Tags are not automatically assigned to your resources. After you add a tag to a 
 
 The following table describes the Amazon MWAA Serverless resources that can be tagged.
 
-****
-
 | Resource | Supports tags | Supports tag propagation | Supports tagging on creation (Amazon MWAA Serverless API, AWS CLI, and AWS SDK)  | API for creation (tags can be added during creation) |
 | --- | --- | --- | --- | --- |
 | Workflow | Yes | No. Tags associated with a workflow do not propagate to tasks within the workflow. | Yes | CreateWorkflow |
@@ -48,8 +46,6 @@ The following basic limitations apply to tags:
 <a name="using-tags"></a>
 
 Use the following AWS CLI commands or Amazon MWAA Serverless API operations to add, update, list, and delete the tags for your workflows.
-
-****
 
 | Resource | Supports tags | Supports tag propagation |
 | --- | --- | --- |

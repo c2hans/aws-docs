@@ -29,8 +29,6 @@ Amazon CodeWhisperer has no API operations that can be used in the `Actions` ele
 
 The following actions are defined by Amazon CodeWhisperer but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 - **   [AllowVendedLogDeliveryForResource](https://docs.aws.amazon.com/codewhisperer/latest/userguide/monitoring-overview.html)  **
   - **Description:** Grants permission to configure vended log delivery for CodeWhisperer customization resource
   - **Resource types (\*required):** [customization\*](#list_codewhisperer-resource-customization)
@@ -144,8 +142,6 @@ The following actions are defined by Amazon CodeWhisperer but are not directly i
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
 
-****
-
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
 |  [customization](https://docs.aws.amazon.com/codewhisperer/latest/userguide/as-whisper-admin.html#about-customizations)  | arn:${Partition}:codewhisperer:${Region}:${Account}:customization/${Identifier} | [aws:ResourceTag/${TagKey}](#list_codewhisperer-aws_ResourceTag___TagKey_) |
@@ -155,8 +151,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_codewhisperer-policy-keys"></a>
 
 Amazon CodeWhisperer defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

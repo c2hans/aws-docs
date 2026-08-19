@@ -33,7 +33,7 @@ If you use [account access manager](https://docs.aws.amazon.com/IAM/latest/UserG
 ### User background sessions
 <a name="user-background-sessions-concept"></a>
 
-User background sessions are extended-duration sessions designed for applications that need to run processes for hours or days without interruption. Currently, this session type applies primarily to [Amazon SageMaker Studio](https://docs.aws.amazon.com//sagemaker/latest/dg/studio-updated.html), where data scientists might run machine learning training jobs that take many hours to complete.
+User background sessions are extended-duration sessions designed for applications that need to run processes for hours or days without interruption. Currently, this session type applies primarily to [Amazon SageMaker Studio](https://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated.html), where data scientists might run machine learning training jobs that take many hours to complete.
 
 For information about configuring user background session duration, see [User background sessions](user-background-sessions.md).
 

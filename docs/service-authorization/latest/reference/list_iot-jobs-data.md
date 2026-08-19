@@ -24,8 +24,6 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_iot-jobs-data-actions-as-permissions).
 
-****
-
 - **   DescribeJobExecution  **
   - **IAM action:**  [iotjobsdata:DescribeJobExecution](#list_iot-jobs-data-action-DescribeJobExecution)
   - **Condition key:**
@@ -61,8 +59,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
 
-****
-
 - **   [DescribeJobExecution](https://docs.aws.amazon.com/iot/latest/apireference/API_iot-jobs-data_DescribeJobExecution.html)  **
   - **Description:** Grants permission to describe a job execution
   - **Resource types (\*required):** [thing\*](#list_iot-jobs-data-resource-thing)
@@ -92,8 +88,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
 
-****
-
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
 |  [thing](https://docs.aws.amazon.com/iot/latest/developerguide/thing-registry.html)  | arn:${Partition}:iot:${Region}:${Account}:thing/${ThingName} |   |
@@ -102,8 +96,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_iot-jobs-data-policy-keys"></a>
 
 AWS IoT Jobs DataPlane defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

@@ -127,8 +127,6 @@ Now that you know the criteria by which you will evaluate your cost management o
 
 The following table highlights which services are optimized for which circumstances. Use the table to help determine the service that is the best fit for your organization and use case.
 
-****
-
 | Service category | What is it optimized for? | Cost management services |
 | --- |--- |--- |
 |  **Plan and evaluate**  |  **Services optimized for improving planning, to create accurate forecasting of variable usage.**  |  |

@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/userguide/response-h
 
 Use the following AWS Elemental MediaPackage response headers to help you build your workflows. For more information about response headers associated with manifest monitoring, see [Monitoring manifest update time](https://docs.aws.amazon.com/mediapackage/latest/userguide/monitoring-manifest-last-updated.html).
 
-****
-
 | Header name | Value | Description |
 | --- | --- | --- |
 | `CMSD-Static` | For accepted key/value pairs, see [CMSD headers from AWS Elemental MediaPackage](cmsd.md). | A variety of Common Media Server Data (CMSD) information about the manifests and segment response objects.  |

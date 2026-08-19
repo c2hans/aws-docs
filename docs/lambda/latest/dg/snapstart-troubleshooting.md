@@ -66,12 +66,12 @@ Try to publish the function version again.
 ### Common cause
 <a name="snapstart-401-unauthorized-cause"></a>
 
-This error occurs when using the [AWS Systems Manager Parameter Store and AWS Secrets Manager extension](with-secrets-manager.md) with Lambda SnapStart.
+This error occurs when you use the [AWS Systems Manager Parameter Store and AWS Secrets Manager extension](with-secrets-manager.md) with Lambda SnapStart. When your function uses SnapStart, it obtains credentials from a container endpoint, and Lambda doesn't set the `AWS_SESSION_TOKEN` environment variable. If your function sets the `X-Aws-Parameters-Secrets-Token` header from that environment variable, the header is empty and the extension rejects the request.
 
 ### Resolution
 <a name="snapstart-401-unauthorized-resolution"></a>
 
-The AWS Systems Manager Parameter Store and AWS Secrets Manager extension isn't compatible with SnapStart. The extension generates credentials for communicating with AWS Secrets Manager during function initialization, which causes expired credential errors when used with SnapStart.
+To fix this error, use the AWS SDK credential provider chain to retrieve the session token instead of reading the `AWS_SESSION_TOKEN` environment variable directly. Set the `X-Aws-Parameters-Secrets-Token` header to the token returned by the provider chain. The credential provider chain returns the correct session token in all initialization modes, including SnapStart. For example code, see [Use Secrets Manager secrets in Lambda functions](with-secrets-manager.md).
 
 ## UnknownHostException (Java)
 <a name="snapstart-dns-caching"></a>

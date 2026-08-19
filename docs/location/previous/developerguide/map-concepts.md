@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/map-con
 <a name="map-concepts"></a>
 
 **Note**
-We released a new version of the Maps API, see the updated [Maps Developer Guide](https://docs.aws.amazon.com//location/latest/developerguide/maps.html) for revised information.
+We released a new version of the Maps API, see the updated [Maps Developer Guide](https://docs.aws.amazon.com/location/latest/developerguide/maps.html) for revised information.
 
 The Amazon Location Service *Map* resource gives you access to the underlying basemap data for a map. You use the Map resource with a map rendering library to add an interactive map to your application. You can add other functionality to your map, such as markers (or pins), routes, and polygon areas, as needed for your application.
 
@@ -60,7 +60,7 @@ In the Amazon Location Service console, you can filter the styles shown to just 
 
 A custom layer is an additional layer you can enable for a map style. Currently only the VectorEsriNavigation map style supports the `POI` custom layer.
 
-When you enable the `POI` custom layer it adds a richer set of places, such as shops, services, restaurants, attractions, and other points of interest to your map. By default, the custom layer is `unset`. For more information see, [MapConfiguration](https://docs.aws.amazon.com//location/previous/APIReference/API_MapConfiguration.html) in the Location API reference.
+When you enable the `POI` custom layer it adds a richer set of places, such as shops, services, restaurants, attractions, and other points of interest to your map. By default, the custom layer is `unset`. For more information see, [MapConfiguration](https://docs.aws.amazon.com/location/previous/APIReference/API_MapConfiguration.html) in the Location API reference.
 
 ## Map rendering
 <a name="map-rendering-concepts"></a>

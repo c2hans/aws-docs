@@ -20,8 +20,6 @@ When using Git, **eb use** sets the default environment for the current branch. 
 ## Options
 <a name="eb3-useoptions"></a>
 
-****
-
 |  Name  |  Description  |
 | --- | --- |
 | `--source codecommit/{{repository-name}}/{{branch-name}}` | CodeCommit repository and branch. |

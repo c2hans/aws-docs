@@ -80,7 +80,7 @@ When the upgrade is complete, you can test your application functionality by lau
 ### Prerequisites
 <a name="automated-prereq-windows"></a>
 
-In order to automate your Windows Server upgrade with the AWS Systems Manager Automation document, you must perform the following tasks:
+To automate your Windows Server upgrade with the AWS Systems Manager Automation document, you must perform the following tasks:
 + Create an IAM role with the specified IAM policies to allow Systems Manager to perform automation tasks on your Amazon EC2 instances and verify that you meet the prerequisites to use Systems Manager. For more information, see [Creating a role to delegate permissions to an AWS service](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-service.html) in the *AWS Identity and Access Management User Guide*.
 + [Select the option for how you want the automation to be run](#automated-execution-option). The options for execution are **Simple execution**, **Rate control**, **Multi-account and Region**, and **Manual execution**. For more information about these options, see [Execution options](#automated-execution-option).
 + Verify that SSM Agent is installed on your instance. For more information see [Installing and configuring SSM Agent on Amazon EC2 instances for Windows Server](https://docs.aws.amazon.com/systems-manager/latest/userguide/ssm-agent-windows.html).
@@ -95,7 +95,7 @@ In order to automate your Windows Server upgrade with the AWS Systems Manager Au
 
   1. Create a 6 GB Amazon EBS volume in the same Availability Zone where the instance is running. Attach the volume to the instance. Mount it, for example, as drive D.
 
-  1. Right-click the ISO and mount it to an instance as, for example, drive E.
+  1. Open the context (right-click) menu for the ISO and mount it to an instance as, for example, drive E.
 
   1. Copy the content of the ISO from drive E:\\ to drive D:\\
 
@@ -147,7 +147,7 @@ Follow these steps to upgrade your Windows Server instance using the [AWSEC2-Clo
 
      **Type:** String
 
-     (Required) This is the subnet for the upgrade process and where your source EC2 instance resides. Verify that the subnet has outbound connectivity to AWS services, including Amazon S3, and also to Microsoft (in order to download patches).
+     (Required) This is the subnet for the upgrade process and where your source EC2 instance resides. Verify that the subnet has outbound connectivity to AWS services, including Amazon S3, and also to Microsoft (to download patches).
    + `KeepPreUpgradedBackUp`
 
      **Type:** String
@@ -186,7 +186,7 @@ When the upgrade is complete, you can test your application functionality by lau
 ### Prerequisites
 <a name="automated-prereq-sql"></a>
 
-In order to automate your SQL Server upgrade with the AWS Systems Manager Automation document, you must perform the following tasks:
+To automate your SQL Server upgrade with the AWS Systems Manager Automation document, you must perform the following tasks:
 + Create an IAM role with the specified IAM policies to allow Systems Manager to perform automation tasks on your Amazon EC2 instances and verify that you meet the prerequisites to use Systems Manager. For more information, see [Creating a role to delegate permissions to an AWS service](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-service.html) in the *AWS Identity and Access Management User Guide*.
 + [Select the option for how you want the automation to be run](#automated-execution-option). The options for execution are **Simple execution**, **Rate control**, **Multi-account and Region**, and **Manual execution**. For more information about these options, see [Execution options](#automated-execution-option).
 + The Amazon EC2 instance must use Windows Server 2008 R2 or later and SQL Server 2008 or later.
@@ -201,7 +201,7 @@ In order to automate your SQL Server upgrade with the AWS Systems Manager Automa
 
     1. Create a 6 GB Amazon EBS volume in the same Availability Zone where the instance is running. Attach the volume to the instance. Mount it, for example, as drive D.
 
-    1. Right-click the ISO and mount it to an instance as, for example, drive E.
+    1. Open the context (right-click) menu for the ISO and mount it to an instance as, for example, drive E.
 
     1. Copy the content of the ISO from drive E:\\ to drive D:\\
 
@@ -260,7 +260,7 @@ Follow these steps to upgrade your SQL Server using the [AWSEC2-CloneInstanceAnd
 
      **Type:** String
 
-     (Required) This is the subnet for the upgrade process and where your source EC2 instance resides. Verify that the subnet has outbound connectivity to AWS services, including Amazon S3, and also to Microsoft (in order to download patches).
+     (Required) This is the subnet for the upgrade process and where your source EC2 instance resides. Verify that the subnet has outbound connectivity to AWS services, including Amazon S3, and also to Microsoft (to download patches).
    + `KeepPreUpgradedBackUp`
 
      **Type:** String

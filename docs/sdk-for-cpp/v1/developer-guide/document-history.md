@@ -14,7 +14,7 @@ This topic lists important changes to the AWS SDK for C\+\+ Developer Guide. For
 | [Amazon S3 Encryption Client V3 Migration](s3-encryption-migration-v2-v3.md) | Added information about migrating from V2 to V3 of the Amazon S3 encryption client. | December 2, 2024 |
 | [Custom libcrypto](#document-history) | Added content for custom libcrypto usage. Removed CMake maximum limitation. Updated available CMake parameters. | February 20, 2024 |
 | [Table of contents](#document-history) | Updated table of contents to make code examples more accessible. | June 1, 2023 |
-| [IAM best practices updates](#document-history) | Updated guide to align with the IAM best practices. For more information, see [Security best practices in IAM](https://docs.aws.amazon.com//IAM/latest/UserGuide/best-practices.html). | March 1, 2023 |
+| [IAM best practices updates](#document-history) | Updated guide to align with the IAM best practices. For more information, see [Security best practices in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html). | March 1, 2023 |
 | [Removing nuget](#document-history) | Removing mention of nuget as a viable package manager option because the latest version available is too old. | December 2, 2022 |
 | [Updates to Getting Started](#document-history) | Updated vcpkg content to clearly communicate that is not supported by AWS and is an external option. Updated instructions on building the SDK for Windows with curl. | October 18, 2022 |
 | [Updates to `ClientConfiguration`](#document-history) | Updated the structure of the `ClientConfiguration` to accurately reflect latest API. | September 22, 2022 |

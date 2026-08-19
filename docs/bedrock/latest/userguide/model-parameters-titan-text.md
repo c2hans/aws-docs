@@ -46,13 +46,10 @@ The following parameters are required:
 
 The `textGenerationConfig` is optional. You can use it to configure the following [inference parameters](inference-parameters.md):
 + **temperature** – Use a lower value to decrease randomness in responses.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters-titan-text.html)
 + **topP** – Use a lower value to ignore less probable options and decrease the diversity of responses. The minimum value is exclusive of 0 — use a very small value such as 0.0001 instead.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters-titan-text.html)
 + **maxTokenCount** – Specify the maximum number of tokens to generate in the response. Maximum token limits are strictly enforced.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters-titan-text.html)
 + **stopSequences** – Specify a character sequence to indicate where the model should stop.
 
@@ -85,7 +82,7 @@ The response body contains the following fields:
 ------
 #### [ InvokeModelWithResponseStream Response ]
 
-Each chunk of text in the body of the response stream is in the following format. You must decode the `bytes` field (see [Submit a single prompt with InvokeModelSubmit a single prompt with InvokeModel (moved)](inference-invoke.md) for an example).
+Each chunk of text in the body of the response stream is in the following format. You must decode the `bytes` field (see [Submit a single prompt with InvokeModel](inference-invoke.md) for an example).
 
 ```
 {

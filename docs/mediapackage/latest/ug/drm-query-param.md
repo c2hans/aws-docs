@@ -46,8 +46,6 @@ If you have query parameters other than those listed, use a CDN such as Amazon C
 
 The following table contains additional common error conditions.
 
-****
-
 | Error condition | Example | HTTP status code |
 | --- | --- | --- |
 | A list parameter is not found and is not part of a constrained list | ?aws.manifestfilter=audio\_language:dahlia | 200 |

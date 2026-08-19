@@ -38,7 +38,7 @@ Before you use IAM roles to delegate resource access across AWS accounts, it's i
 + IAM roles and resource-based policies delegate access across accounts only within a single partition. For example, assume that you have an account in US West (N. California) in the standard `aws` partition. You also have an account in China (Beijing) in the `aws-cn` partition. You can't use an Amazon S3 resource-based policy in your account in China (Beijing) to allow access for users in your standard `aws` account.
 + You can use AWS IAM Identity Center to facilitate single sign-on (SSO) for external AWS accounts (accounts outside your AWS Organizations) using Security Assertion Markup Language (SAML). For details, see [ Integrate external AWS accounts into AWS IAM Identity Center for central access management with independent billing using SAML 2.0](https://community.aws/content/2dIMI8N7w7tGxbE0KQMrkSBfae4/aws-iam-identity-center-integration-with-external-aws-accounts-for-independent-billing?lang=en)
 + You can associate roles to AWS resources like Amazon EC2 instances or AWS Lambda functions. For details, see [Create a role to delegate permissions to an AWS service](id_roles_create_for-service.md).
-+ If you want to have an application assume a role in another AWS account, you can use the AWS SDK for cross account role assumption. For more information, see [Authentication and access](https://docs.aws.amazon.com//sdkref/latest/guide/access.html) in the *AWS SDKs and Tools Reference Guide*.
++ If you want to have an application assume a role in another AWS account, you can use the AWS SDK for cross account role assumption. For more information, see [Authentication and access](https://docs.aws.amazon.com/sdkref/latest/guide/access.html) in the *AWS SDKs and Tools Reference Guide*.
 + Switching roles using the AWS Management Console only works with accounts that do not require an `ExternalId`. For example, assume that you grant access to your account to a third party and require an `ExternalId` in a `Condition` element in your permissions policy. In that case, the third party can access your account only by using the AWS API or a command line tool. The third party cannot use the console because it must supply a value for `ExternalId`. For more information about this scenario, see [Access to AWS accounts owned by third parties](id_roles_common-scenarios_third-party.md), and [How to enable cross account access to the AWS Management Console](https://aws.amazon.com/blogs/security/how-to-enable-cross-account-access-to-the-aws-management-console) in the AWS Security Blog.
 
 ## Prerequisites
@@ -47,7 +47,6 @@ Before you use IAM roles to delegate resource access across AWS accounts, it's i
 This tutorial assumes that you have the following already in place:
 + **Two** separate AWS accounts that you can use, one to represent the **Originating** account, and one to represent the **Destination** account.
 + Users and roles in the **Originating** account created and configured as follows:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_cross-account-with-roles.html)
 + You do not need to create any users in the **Destination** account.
 + An Amazon S3 bucket created in the **Destination** account. You can call it `amzn-s3-demo-bucket-shared-container` in this tutorial, but because S3 bucket names must be globally unique, you must use a bucket with a different name.
@@ -294,7 +293,7 @@ IAM provides two ways that David can use to enter the **Switch Role** page:
 ### Switch roles (AWS CLI)
 <a name="switch-cli-tutorial_cross-account-with-roles"></a>
 
- If David needs to work in the **Destination** environment at the command line, he can do so by using the [AWS CLI](https://docs.aws.amazon.com/http://aws.amazon.com/cli/). He runs the `aws sts assume-role` command and passes the role ARN to get temporary security credentials for that role. He then configures those credentials in environment variables so subsequent AWS CLI commands work using the role's permissions. While David uses the role, he cannot use his power-user privileges in the **Originating** account, because only one set of permissions can be in effect at a time.
+ If David needs to work in the **Destination** environment at the command line, he can do so by using the [AWS CLI](http://aws.amazon.com/cli/). He runs the `aws sts assume-role` command and passes the role ARN to get temporary security credentials for that role. He then configures those credentials in environment variables so subsequent AWS CLI commands work using the role's permissions. While David uses the role, he cannot use his power-user privileges in the **Originating** account, because only one set of permissions can be in effect at a time.
 
 Note that all access keys and tokens are examples only and cannot be used as shown. Replace with the appropriate values from your live environment.
 
@@ -356,7 +355,7 @@ David's default environment uses the `David` user credentials from his default p
 
    At this point, any following commands run under the permissions of the role identified by those credentials. In David's case, the `UpdateData` role.
 **Important**
-You can save your frequently used configuration settings and credentials in files that are maintained by the AWS CLI. For more information, see [Using existing configuration and credentials files](https://docs.aws.amazon.com//cli/latest/userguide/getting-started-quickstart.html#getting-started-quickstart-existing) in the *AWS Command Line Interface User Guide*.
+You can save your frequently used configuration settings and credentials in files that are maintained by the AWS CLI. For more information, see [Using existing configuration and credentials files](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-quickstart.html#getting-started-quickstart-existing) in the *AWS Command Line Interface User Guide*.
 
 1. Run the command to access the resources in the Destination account. In this example, David lists the contents of their S3 bucket with the following command.
 

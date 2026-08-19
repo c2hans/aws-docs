@@ -90,8 +90,6 @@ Route 53 doesn't support tag-based condition keys.
 
 The following table shows the Route 53 service-specific condition keys that apply to Route 53.
 
-****
-
 | Route 53 Condition Key | API operations | Value type | Description |
 | --- | --- | --- | --- |
 | route53:ChangeResourceRecordSetsNormalizedRecordNames | [ChangeResourceRecordSets](https://docs.aws.amazon.com/Route53/latest/APIReference/API_ChangeResourceRecordSets.html) | Multi-valued | Represents a list of DNS record names in the request of ChangeResourceRecordSets. To get the expected behavior, DNS names in the IAM policy must be normalized as follows: +  All letters must be lowercase. <br />+  The DNS name must be without the trailing dot. <br />+  Characters other than a to z, 0 to 9, - (hyphen), \_ (underscore), and . (period, as a delimiter between labels) must use escape codes in the format \\three-digit octal code.  |

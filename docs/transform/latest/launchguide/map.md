@@ -33,10 +33,6 @@ The following training video explains how to tag resources in AWS.
 
 [![AWS Videos](http://img.youtube.com/vi/HmXkLtSYHtk/0.jpg)](http://www.youtube.com/watch?v=HmXkLtSYHtk)
 
-Vea el vídeo [Etiquetado de recursos en AWS para mejorar operaciones en la nube ](https://youtu.be/cVGf81f9-n8) en español.
-
-[![AWS Videos](http://img.youtube.com/vi/cVGf81f9-n8/0.jpg)](http://www.youtube.com/watch?v=cVGf81f9-n8)
-
 ## MAP tagging best practices
 <a name="map-tagging-best-practices"></a>
 + **Tagging with CloudFormation:**

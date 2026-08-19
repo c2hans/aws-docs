@@ -29,8 +29,6 @@ To get an ARN using the console, navigate to the resource that you want an ARN f
 
 To use the AWS CLI to get an ARN for a particular Neptune resource, use the `describe` command for that resource. The following table shows each AWS CLI command and the ARN property that is used with the command to get an ARN.
 
-****
-
 | AWS CLI Command | ARN Property |
 | --- | --- |
 |  [describe-event-subscriptions](https://docs.aws.amazon.com/cli/latest/reference/neptune/describe-event-subscriptions.html)  | EventSubscriptionArn |
@@ -65,8 +63,6 @@ For Windows:
 <a name="tagging-arns-api"></a>
 
 To get an ARN for a particular Neptune resource, call the following API actions and use the ARN properties shown.
-
-****
 
 | Neptune API Action | ARN Property |
 | --- | --- |

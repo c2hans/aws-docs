@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsp
 
 AWS Price List provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="pricing-DescribeServices"></a>[DescribeServices](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_pricing_DescribeServices.html) | Retrieve service details for all (paginated) services (if serviceCode is not set) or service detail for a particular service (if given serviceCode) | Read |

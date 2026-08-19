@@ -27,4 +27,4 @@ You can choose the home Region from the Migration Hub console or by using the Ho
 
 After you set your home Region, you can view it on the **Settings** page.
 
-After your home Region is set, it can only be changed by contacting [AWS Support](https://aws.amazon.com//contact-us). For more information, see [Changing your AWS Migration Hub home Region](change-home-region.md).
+After your home Region is set, it can only be changed by contacting [AWS Support](https://aws.amazon.com/contact-us). For more information, see [Changing your AWS Migration Hub home Region](change-home-region.md).

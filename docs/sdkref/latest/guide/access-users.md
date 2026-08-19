@@ -12,7 +12,7 @@ Using AWS access keys is an option for authentication when using AWS SDKs and to
 
  We recommend configuring your SDK or tool to use [Using IAM Identity Center to authenticate AWS SDK and tools](access-sso.md) to use extended session duration options.
 
-However, to set up the SDK or tool's temporary credentials directly, see [Using short-term credentials to authenticate AWS SDKs and toolsShort-term credentials](access-temp-idc.md).
+However, to set up the SDK or tool's temporary credentials directly, see [Using short-term credentials to authenticate AWS SDKs and tools](access-temp-idc.md).
 
 ## Use long-term credentials
 <a name="credentials-long-term"></a>

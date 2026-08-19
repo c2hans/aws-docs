@@ -30,4 +30,4 @@ Note that the settings that you choose for the voice channel also apply to the S
 
 1. Choose **Save changes**.
 
-1. On the **SMS and voice** page, under **Number settings**, refer to the table to determine whether any phone numbers that are already associated with your account can be used to send voice messages. If there are, the **Voice** column displays **Enabled** next to each phone number that you can use to send voice messages. If there aren't, [Request a phone number](https://docs.aws.amazon.com//sms-voice/latest/userguide/phone-numbers-request.html) in the *AWS End User Messaging SMS User Guide*.
+1. On the **SMS and voice** page, under **Number settings**, refer to the table to determine whether any phone numbers that are already associated with your account can be used to send voice messages. If there are, the **Voice** column displays **Enabled** next to each phone number that you can use to send voice messages. If there aren't, [Request a phone number](https://docs.aws.amazon.com/sms-voice/latest/userguide/phone-numbers-request.html) in the *AWS End User Messaging SMS User Guide*.

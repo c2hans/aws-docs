@@ -27,7 +27,7 @@ A fleet displays a warning icon for fleets that were created more than 90 days a
 + **Active instances** – The number of EC2 instances in use for the fleet.
 + **Desired instances** – The number of EC2 instances to keep active.
 + **Game sessions** – The number of active game sessions running in the fleet. The data is delayed by five minutes.
-+ **Player sessons** – The number of active player sessions in the fleet. The data is delayed by five minutes.
++ **Player sessions** – The number of active player sessions in the fleet. The data is delayed by five minutes.
 
 ------
 #### [ AWS SDK ]

@@ -10,7 +10,7 @@ This sample project demonstrates how to create and start an EMR Serverless appli
 This sample project creates the state machine, the supporting AWS resources, and configures the related IAM permissions. Explore this sample project to learn about running EMR Serverless jobs using Step Functions state machines, or use it as a starting point for your own projects.
 
 **Important**
-EMR Serverless does not have a free pricing tier. Running the sample project will incur costs. You can find pricing information on the [Amazon EMR Serverless pricing](https://aws.amazon.com//emr/pricing/) page.
+EMR Serverless does not have a free pricing tier. Running the sample project will incur costs. You can find pricing information on the [Amazon EMR Serverless pricing](https://aws.amazon.com/emr/pricing/) page.
 In addition, the availability of EMR Serverless service integration is subject to the availability of EMR Serverless APIs. Because of this, this sample project might not work correctly or be available in some AWS Regions. See the [Other considerations](https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/considerations.html) topic for information about availability of EMR Serverless in AWS Regions.
 
 ## Step 1: Create the state machine

@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsc
 
 AWS CloudTrail provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="cloudtrail-DescribeQuery"></a>[DescribeQuery](https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_DescribeQuery.html) | List details for the query | Read |

@@ -28,6 +28,8 @@ The **Subscriptions** page in the AWS Marketplace section of the Image Builder c
 + The product name. This is linked to the product detail page in AWS Marketplace. The product detail page for your subscribed product opens in a new tab in your browser.
 + The **Publisher**. This is linked to the publisher detail page in AWS Marketplace. The publisher detail page opens in a new tab in your browser.
 + The **Version** that you subscribed to.
+**Note**
+Image Builder derives the version for an AWS Marketplace image from the product listing's recommended version when that version is available. If the listing doesn't provide a parseable version, Image Builder derives a date-based version from the AMI creation date. For example, the derived version might look like `2026.8.11/1`. As a result, the Image Builder version for the product can reflect a date instead of the vendor's version string.
 + If there are any **Associated components** included with your subscribed product, Image Builder displays a link to the component detail.
 
 At the top of the page, you can search for a specific product by name, or you can page through your results with the pagination controls. To use a subscribed image product in a new recipe, select a subscribed product and choose **Create new recipe**. Image Builder pre-selects the first product in your list by default.
@@ -96,6 +98,8 @@ Open the **Create recipe** page and select an AWS Marketplace image product to u
    You can also search for other image products that are available in AWS Marketplace directly from the **AWS Marketplace** tab. Choose **Add products**, or open the **AWS Marketplace** tab directly. For more information about how to set filters and search in the AWS Marketplace, see [Discover AWS Marketplace image products from the Image Builder console](#integ-marketplace-find).
 
 1. Enter remaining details as usual. If any or your product subscriptions include build components, you can select them from the **Build components** list. Select `AWS Marketplace` from the component owner type list to see them, or select `Third party managed` for the CIS component.
+**Note**
+If your base image is a CIS-published AWS Marketplace image product, Image Builder verifies CIS hardening component compatibility. Choose the CIS component that matches the benchmark and operating system of your base image to avoid a recipe validation error.
 
 1. Choose **Create recipe**.
 

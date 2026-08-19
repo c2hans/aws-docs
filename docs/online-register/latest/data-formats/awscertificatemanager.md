@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsc
 
 AWS Certificate Manager provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="acm-DescribeAcmeAccount"></a>[DescribeAcmeAccount](https://docs.aws.amazon.com/acm/latest/APIReference/API_DescribeAcmeAccount.html) | Retrieve details of an ACME account | Read |
@@ -24,6 +22,7 @@ AWS Certificate Manager provides the following APIs for data retrieval.
 | <a name="acm-ListAcmeDomainValidations"></a>[ListAcmeDomainValidations](https://docs.aws.amazon.com/acm/latest/APIReference/API_ListAcmeDomainValidations.html) | List ACME domain validations | List |
 | <a name="acm-ListAcmeEndpoints"></a>[ListAcmeEndpoints](https://docs.aws.amazon.com/acm/latest/APIReference/API_ListAcmeEndpoints.html) | List ACME endpoints | List |
 | <a name="acm-ListAcmeExternalAccountBindings"></a>[ListAcmeExternalAccountBindings](https://docs.aws.amazon.com/acm/latest/APIReference/API_ListAcmeExternalAccountBindings.html) | List ACME external account bindings | List |
+| <a name="acm-ListCertificateDomainValidations"></a>[ListCertificateDomainValidations](https://docs.aws.amazon.com/acm/latest/APIReference/API_ListCertificateDomainValidations.html) | List domain validation methods for a certificate | List |
 | <a name="acm-ListCertificates"></a>[ListCertificates](https://docs.aws.amazon.com/acm/latest/APIReference/API_ListCertificates.html) | Retrieve a list of certificates for specific certificate parameters | List |
 | <a name="acm-ListTagsForCertificate"></a>[ListTagsForCertificate](https://docs.aws.amazon.com/acm/latest/APIReference/API_ListTagsForCertificate.html) | Lists the tags that have been associated with a certificate | Read |
 | <a name="acm-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/acm/latest/APIReference/API_ListTagsForResource.html) | List tags for a resource | Read |

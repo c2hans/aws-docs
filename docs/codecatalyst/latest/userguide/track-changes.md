@@ -37,9 +37,9 @@ Tracking deployment status by commit is only supported with [CodeCatalyst reposi
    A list of commits appears.
 
    For each commit, you can view the following:
-   + Commit information such as ID, author, message, and when it was committed. For more information, see [Store and collaborate on code with source repositories in CodeCatalystStore and collaborate on code with source repositories](source.md).
+   + Commit information such as ID, author, message, and when it was committed. For more information, see [Store and collaborate on code with source repositories in CodeCatalyst](source.md).
    + The status of deployments to each environment. For more information, see [Deploying into AWS accounts and VPCs](deploy-environments.md).
-   + Test and code coverage results. For more information, see [Testing with workflowsTesting with workflows](test-workflow-actions.md).
+   + Test and code coverage results. For more information, see [Testing with workflows](test-workflow-actions.md).
 **Note**
 Software Composition Analysis (SCA) results are not displayed.
 

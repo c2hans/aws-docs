@@ -9,8 +9,6 @@ The [Matter connectivity standard](https://github.com/project-chip/connectedhome
 
 To assist with troubleshooting, the Matter developers provide a certificate verification tool called [chip-cert](https://github.com/project-chip/connectedhomeip/tree/master/src/tools/chip-cert). Errors that the tool reports are listed in the following table with remediations.
 
-****
-
 | Error code | Meaning | Remediation |
 | --- | --- | --- |
 | 0x00000305  | `BasicConstraints`, `KeyUsage`, and `ExtensionKeyUsage` extensions must be marked critical. | Ensure that you have selected the correct template for your use case. |

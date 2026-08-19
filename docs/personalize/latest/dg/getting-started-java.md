@@ -409,7 +409,7 @@ public static String createPersonalCompaign(PersonalizeClient personalizeClient,
 }
 ```
 
-For more information about Amazon Personalize campaigns, see [Deploying an Amazon Personalize solution version with a campaignCreating a campaign](campaigns.md).
+For more information about Amazon Personalize campaigns, see [Deploying an Amazon Personalize solution version with a campaign](campaigns.md).
 
 #### Step 6: Get recommendations
 <a name="getting-started-java-get-recommendations"></a>

@@ -14,8 +14,6 @@ Create an Amazon DynamoDB stack from backup.
 ## Change Type Details
 <a name="ct-1h1tuxn2oxrtf-DADc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1h1tuxn2oxrtf |

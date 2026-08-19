@@ -32,7 +32,7 @@ The following topics describe how to use Amazon Q chat and topics you can chat a
 ## Add permissions
 <a name="add-permissions-chat"></a>
 
-For an IAM policy that grants permissions needed for chatting with Amazon Q, see [Allow users to chat with Amazon QAllow users to use Amazon Q CLI with AWS CloudShell](id-based-policy-examples-users.md#id-based-policy-examples-allow-chat).
+For an IAM policy that grants permissions needed for chatting with Amazon Q, see [Allow users to chat with Amazon Q](id-based-policy-examples-users.md#id-based-policy-examples-allow-chat).
 
 ## Start a conversation
 <a name="start-conversation"></a>

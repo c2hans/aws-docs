@@ -29,21 +29,15 @@ A ShellScriptConfig with arguments:
 
 This object includes the following fields.
 
-****
-
 | Optional Fields | Description | Slot Type |
 | --- | --- | --- |
 | parent | Parent of the current object from which slots are inherited. | Reference Object, for example, "parent":{"ref":"myBaseObjectId"} |
 | scriptArgument | A list of arguments to use with the shell script. | String |
 | scriptUri | The script URI in Amazon S3 that should be downloaded and run. | String |
 
-****
-
 | Runtime Fields | Description | Slot Type |
 | --- | --- | --- |
 | @version | Pipeline version that the object was created with. | String |
-
-****
 
 | System Fields | Description | Slot Type |
 | --- | --- | --- |

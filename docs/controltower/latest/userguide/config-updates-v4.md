@@ -10,7 +10,7 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/config-upd
  Enabling AWS CloudTrail integration on landing zone 4.0 for the first time will create new S3 buckets each time with prefix `aws-controltower-cloudtrail`
   +  Data Location Changes: Existing customers upgrading from previously shared to dedicated resources will have AWS Config and AWS CloudTrail data in different S3 buckets. Established customer workflows and tools may need updates to access data from new bucket locations.
   +  AWS CloudTrail will continue to stay in the same existing bucket, but AWS Config data will be in a new S3 bucket created by AWS Control Tower.
-  +  Customers can set-up cross-bucket replication if they wish to centralize different logs to a single bucket. Please see [ S3 documentation ](https://docs.aws.amazon.com//AmazonS3/latest/userguide/replication.html) for more information.
+  +  Customers can set-up cross-bucket replication if they wish to centralize different logs to a single bucket. Please see [ S3 documentation ](https://docs.aws.amazon.com/AmazonS3/latest/userguide/replication.html) for more information.
   +  If you have enrolled accounts with pre-existing AWS Config Delivery Channels not created by AWS Control Tower in Regions governed by AWS Control Tower, update the Delivery Channels' S3 bucket name to the new S3 bucket with prefix `aws-controltower-config-logs-` in the AWS Config integration account to be consistent with AWS Control Tower configurations on landing zone 4.0. See more details in [Enroll accounts that have existing AWS Config resources](existing-config-resources.md).
 +  **AWS Config integration on landing zone version 4.0: ** When migrating to landing zone 4.0 with AWS Config integration enabled, customers would see the following changes -
 
@@ -22,10 +22,10 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/config-upd
 
   1.  Since Configuration Aggregator is service-linked, controls associated with deleted aggregators will be automatically removed.
 
-     1. [Disallow Changes to Tags Created by AWS Control Tower for AWS Config Resources](https://docs.aws.amazon.com//controltower/latest/controlreference/mandatory-controls.html#cloudwatch-disallow-config-changes)
+     1. [Disallow Changes to Tags Created by AWS Control Tower for AWS Config Resources](https://docs.aws.amazon.com/controltower/latest/controlreference/mandatory-controls.html#cloudwatch-disallow-config-changes)
 
-     1. [Disallow Deletion of AWS Config Aggregation Authorizations Created by AWS Control Tower](https://docs.aws.amazon.com//controltower/latest/controlreference/mandatory-controls.html#config-aggregation-authorization-policy)
-+  **New `ConfigBaseline` baseline: ** There is now a separate `ConfigBaseline` at the OU level for detective controls support without requiring the comprehensive `AWSControlTowerBaseline`. See list of [ baseline types at the OU level](https://docs.aws.amazon.com//controltower/latest/userguide/types-of-baselines.html#ou-baseline-types) for more information. For existing customers that are using the default landing zone, all service integrations are now optional, with the caveat of dependency requirements outlined in [Key changes](key-changes-lz-v4.md).
+     1. [Disallow Deletion of AWS Config Aggregation Authorizations Created by AWS Control Tower](https://docs.aws.amazon.com/controltower/latest/controlreference/mandatory-controls.html#config-aggregation-authorization-policy)
++  **New `ConfigBaseline` baseline: ** There is now a separate `ConfigBaseline` at the OU level for detective controls support without requiring the comprehensive `AWSControlTowerBaseline`. See list of [ baseline types at the OU level](https://docs.aws.amazon.com/controltower/latest/userguide/types-of-baselines.html#ou-baseline-types) for more information. For existing customers that are using the default landing zone, all service integrations are now optional, with the caveat of dependency requirements outlined in [Key changes](key-changes-lz-v4.md).
 +  **Service-Linked Config Aggregator: **Replaces organization and account aggregators in the AWS Config central aggregator account.
   +  When upgrading to landing zone 4.0 with AWS Config integration enabled, customers need to have `organizations:ListDelegatedAdministrators` permissions
 

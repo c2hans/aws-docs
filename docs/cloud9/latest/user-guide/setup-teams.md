@@ -108,8 +108,6 @@ In the preceding command, replace `MyGroup` with the name of the group. Replace 
 ## Next steps
 <a name="setup-teams-next-steps"></a>
 
-****
-
 |  **Task**  |  **See this topic**  |
 | --- | --- |
 | Create an AWS Cloud9 development environment, and then use the AWS Cloud9 IDE to work with code in your new environment. |  [Creating an environment](create-environment.md)  |

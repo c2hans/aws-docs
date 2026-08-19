@@ -37,7 +37,7 @@ IAM Identity Center uses `SessionNotOnOrAfter` attribute from SAML assertions to
 
 If you are using the AWS CLI, AWS SDKs, or other AWS development tools to access AWS services programmatically, the following prerequisites must be met to set session duration for the AWS access portal and the AWS managed applications.
 + You must [configure the AWS access portal session duration](user-interactive-sessions.md) in the IAM Identity Center console.
-+ You must define a profile for single sign-on settings in your shared AWS config file. This profile is used to connect to the AWS access portal. We recommend that you use the SSO token provider configuration. With this configuration, your AWS SDK or tool can automatically retrieve refreshed authentication tokens. For more information, see [SSO token provider configuration](https://docs.aws.amazon.com//sdkref/latest/guide/feature-sso-credentials.html#sso-token-config) in the *AWS SDK and Tools Reference Guide*.
++ You must define a profile for single sign-on settings in your shared AWS config file. This profile is used to connect to the AWS access portal. We recommend that you use the SSO token provider configuration. With this configuration, your AWS SDK or tool can automatically retrieve refreshed authentication tokens. For more information, see [SSO token provider configuration](https://docs.aws.amazon.com/sdkref/latest/guide/feature-sso-credentials.html#sso-token-config) in the *AWS SDK and Tools Reference Guide*.
 + Users must run a version of the AWS CLI or an SDK that supports session management.
 
 ### Minimum versions of the AWS CLI that support session management
@@ -54,8 +54,6 @@ For account access use cases, if your users are running the AWS CLI, if you refr
 <a name="min-supported-sdks-session-duration"></a>
 
 Following are the minimum versions of the SDKs that support IAM Identity Center session management.
-
-****
 
 | SDK | Minimum version |
 | --- | --- |

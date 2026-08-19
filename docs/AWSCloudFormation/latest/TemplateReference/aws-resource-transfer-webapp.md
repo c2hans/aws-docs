@@ -59,7 +59,7 @@ Properties:
 
 `AccessEndpoint`  <a name="cfn-transfer-webapp-accessendpoint"></a>
 The `AccessEndpoint` is the URL that you provide to your users for them to interact with the Transfer Family web app. You can specify a custom URL or use the default value.
-Before you enter a custom URL for this parameter, follow the steps described in [Update your access endpoint with a custom URL](https://docs.aws.amazon.com//transfer/latest/userguide/webapp-customize.html).
+Before you enter a custom URL for this parameter, follow the steps described in [Update your access endpoint with a custom URL](https://docs.aws.amazon.com/transfer/latest/userguide/webapp-customize.html).
 *Required*: No
 *Type*: String
 *Minimum*: `1`
@@ -77,7 +77,7 @@ It is recommended that you use `VPC` as the `EndpointType`. With this endpoint t
 
 `IdentityProviderDetails`  <a name="cfn-transfer-webapp-identityproviderdetails"></a>
 You can provide a structure that contains the details for the identity provider to use with your web app.
-For more details about this parameter, see [Configure your identity provider for Transfer Family web apps](https://docs.aws.amazon.com//transfer/latest/userguide/webapp-identity-center.html).
+For more details about this parameter, see [Configure your identity provider for Transfer Family web apps](https://docs.aws.amazon.com/transfer/latest/userguide/webapp-identity-center.html).
 *Required*: Yes
 *Type*: [IdentityProviderDetails](aws-properties-transfer-webapp-identityproviderdetails.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

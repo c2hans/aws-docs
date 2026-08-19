@@ -6,8 +6,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/machine-learnin
 <a name="machine-learning-params"></a>
 
 The `params` object in an export request can contain various fields, as described in the [`params` documentation](export-params-fields.md). The following ones are most relevant for exporting machine-learning training data:
-
-****
 + **`endpoint`**   –   Use `endpoint` to specify an endpoint of a Neptune instance in your DB cluster that the export process can query to extract data.
 + **`profile`**   –   The `profile` field in the `params` object must be set to **`neptune-ml`**.
 

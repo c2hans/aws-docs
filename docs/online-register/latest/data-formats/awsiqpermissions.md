@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsi
 
 AWS IQ Permissions provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="iq-permission-GetPermissionRequest"></a>[GetPermissionRequest](https://aws.amazon.com/iq/) | Get a permission request | Read |

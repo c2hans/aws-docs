@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon DocumentDB Elastic Clusters provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="docdb-elastic-GetCluster"></a>[GetCluster](https://docs.aws.amazon.com/documentdb/latest/developerguide/API_elastic_GetCluster.html) | View details about a cluster | Read |

@@ -44,7 +44,7 @@ The Amazon Interactive Video Services (IVS) Chat Client Messaging SDK is for dev
 ## Support
 <a name="chat-sdk-support"></a>
 
-If you encounter an error or other issue with your chat room, determine the unique room identifier via the IVS Chat API (see [ListRooms](https://docs.aws.amazon.com//ivs/latest/ChatAPIReference/API_ListRooms.html)).
+If you encounter an error or other issue with your chat room, determine the unique room identifier via the IVS Chat API (see [ListRooms](https://docs.aws.amazon.com/ivs/latest/ChatAPIReference/API_ListRooms.html)).
 
 Share this chat room identifier with AWS support. With it, they can get information to help troubleshoot your issue.
 
@@ -79,9 +79,9 @@ Also, version 1.x will be supported until the end of 2023 or when 3.x is release
 <a name="chat-sdk-chat-apis"></a>
 
 On the server side (not managed by the SDKs), there are two APIs, each with its own responsibilities:
-+ **Data plane** — The [IVS Chat Messaging API](https://docs.aws.amazon.com//ivs/latest/chatmsgapireference/welcome.html) is a WebSockets API designed to be used by front-end applications (iOS, Android, macOS, etc) that are driven by a token-based authentication scheme. Using a previously generated chat token, you connect to already existing chat rooms using this API.
++ **Data plane** — The [IVS Chat Messaging API](https://docs.aws.amazon.com/ivs/latest/chatmsgapireference/welcome.html) is a WebSockets API designed to be used by front-end applications (iOS, Android, macOS, etc) that are driven by a token-based authentication scheme. Using a previously generated chat token, you connect to already existing chat rooms using this API.
 
   *The Amazon IVS Chat Client Messaging SDKs are concerned only with the data plane. The SDKs assume that you are already generating chat tokens through your backend. Retrieval of these tokens is assumed to be managed by your front-end application, not the SDKs.*
-+ **Control plane** — The [IVS Chat Control Plane API](https://docs.aws.amazon.com//ivs/latest/ChatAPIReference/Welcome.html) provides an interface for your own *backend applications* to manage and create chat rooms as well as the users who join them. Think of this as the admin panel for your app's chat experience that is managed by *your own backend*. There are control-plane operations that are responsible for creating the *chat token* that the data plane needs to authenticate to a chat room.
++ **Control plane** — The [IVS Chat Control Plane API](https://docs.aws.amazon.com/ivs/latest/ChatAPIReference/Welcome.html) provides an interface for your own *backend applications* to manage and create chat rooms as well as the users who join them. Think of this as the admin panel for your app's chat experience that is managed by *your own backend*. There are control-plane operations that are responsible for creating the *chat token* that the data plane needs to authenticate to a chat room.
 
   **Important:** *The IVS Chat Client Messaging SDKs do not call any control-plane operations. You must have your backend set up to create chat tokens for you. Your front-end application must communicate with your backend to retrieve this chat token.*

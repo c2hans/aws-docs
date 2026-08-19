@@ -11,8 +11,6 @@ When you installed the software on the individual nodes in an AWS Elemental Cond
 
 Make sure you perform the configuration on the correct nodes.
 
-****
-
 | Node | Work on this node? |
 | --- | --- |
 | Primary Conductor Live node | Yes |

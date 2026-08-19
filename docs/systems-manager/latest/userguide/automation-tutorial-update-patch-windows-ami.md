@@ -20,8 +20,6 @@ Updates to AWS Systems Manager SSM Agent are typically rolled out to different r
 
 The `AWS-UpdateWindowsAmi` runbook accepts the following input parameters.
 
-****
-
 | Parameter | Type | Description |
 | --- | --- | --- |
 | SourceAmiId | String | (Required) The source AMI ID. You can automatically reference the latest Windows Server AMI ID by using a Systems Manager Parameter Store *public* parameter. For more information, see [Query for the latest Windows AMI IDs using AWS Systems Manager Parameter Store](https://aws.amazon.com/blogs/mt/query-for-the-latest-windows-ami-using-systems-manager-parameter-store/). |

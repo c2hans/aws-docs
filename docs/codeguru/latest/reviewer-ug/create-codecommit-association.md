@@ -60,7 +60,7 @@ You can create an AWS CodeCommit repository association using the Amazon CodeGur
 ## Create a CodeCommit repository association (CodeCommit console)
 <a name="create-codecommit-association-other-console"></a>
 
-You can [connect to CodeGuru Reviewer directly from the CodeCommit console.](https://docs.aws.amazon.com//codecommit/latest/userguide/how-to-amazon-codeguru-reviewer.html#how-to-amazon-codeguru-reviewer-associate) This allows you to create a CodeCommit repository association with CodeGuru Reviewer without leaving your CodeCommit repository context.
+You can [connect to CodeGuru Reviewer directly from the CodeCommit console.](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-amazon-codeguru-reviewer.html#how-to-amazon-codeguru-reviewer-associate) This allows you to create a CodeCommit repository association with CodeGuru Reviewer without leaving your CodeCommit repository context.
 
 ## Create a CodeCommit repository association (AWS CLI)
 <a name="create-codecommit-association-cli"></a>

@@ -55,7 +55,7 @@ You can start with monitoring, evaluate your posture, and add delegated RPKI lat
 | Delegated RPKI (automated ROA management) | No | Yes |
 | On-premises ROA management (routing policy registrations) | No | Yes |
 
-For pricing details, see the IPAM tab on the [Amazon VPC pricing page](https://aws.amazon.com//vpc/pricing/).
+For pricing details, see the IPAM tab on the [Amazon VPC pricing page](https://aws.amazon.com/vpc/pricing/).
 
 ## Supported Regional Internet Registries
 <a name="monitor-bgp-route-security-rirs"></a>

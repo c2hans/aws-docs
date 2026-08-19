@@ -185,7 +185,7 @@ Access points must be configured to use **Network origin: Internet** as RDS does
 ```
 
 **Example permissions policy for native backup and restore using access points for directory buckets without encryption support**
-Directory buckets use a different, [session-based authorization mechanism](https://docs.aws.amazon.com//AmazonS3/latest/userguide/s3-express-authenticating-authorizing.html) than general purpose buckets, so the only required permission for native backup restore is the bucket-level “s3express:CreateSession” permission. To configure object-level access, you must use [access points for directory buckets](https://docs.aws.amazon.com//AmazonS3/latest/userguide/access-points-directory-buckets-policies.html).
+Directory buckets use a different, [session-based authorization mechanism](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-express-authenticating-authorizing.html) than general purpose buckets, so the only required permission for native backup restore is the bucket-level “s3express:CreateSession” permission. To configure object-level access, you must use [access points for directory buckets](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-points-directory-buckets-policies.html).
 Access points must be configured to use **Network origin: Internet** as RDS does not publish private VPCs. S3 traffic from RDS instances does not go through the public internet since it goes through private VPCs.
 ****
 

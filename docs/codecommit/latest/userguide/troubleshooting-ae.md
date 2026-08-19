@@ -10,7 +10,7 @@ The following information might help you troubleshoot access errors when connect
 **Topics**
 + [Access error: I am prompted for a user name and password when I connect to a CodeCommit repository from Windows](#troubleshooting-ae1w)
 + [Access error: Public key denied when connecting to a CodeCommit repository](#troubleshooting-ae2)
-+ [Access error: “Rate Exceeded” or “429” message when connecting to a CodeCommit repository](#troubleshooting-ae3)
++ [Access error: "Rate Exceeded" or "429" message when connecting to a CodeCommit repository](#troubleshooting-ae3)
 
 ## Access error: I am prompted for a user name and password when I connect to a CodeCommit repository from Windows
 <a name="troubleshooting-ae1w"></a>
@@ -32,10 +32,10 @@ The following information might help you troubleshoot access errors when connect
 
 **Possible fixes:** The most common reason for this error is that you have not completed setup for SSH connections. Configure a public and private SSH key pair, and then associate the public key with your IAM user. For more information about configuring SSH, see [For SSH connections on Linux, macOS, or Unix](setting-up-ssh-unixes.md) and [For SSH connections on Windows](setting-up-ssh-windows.md).
 
-## Access error: “Rate Exceeded” or “429” message when connecting to a CodeCommit repository
+## Access error: "Rate Exceeded" or "429" message when connecting to a CodeCommit repository
 <a name="troubleshooting-ae3"></a>
 
-**Problem:** When you try to communicate with a CodeCommit repository, a message appears that says “Rate Exceeded” or with an error code of “429”. Communication either slows significantly or fails.
+**Problem:** When you try to communicate with a CodeCommit repository, a message appears that says "Rate Exceeded" or with an error code of "429". Communication either slows significantly or fails.
 
 **Cause:** All calls to CodeCommit, whether from an application, the AWS CLI, a Git client, or the AWS Management Console, are subject to a maximum number of requests per second and overall active requests. You cannot exceed the maximum allowed request rate for an Amazon Web Services account in any AWS Region. If requests exceed the maximum rate, you receive an error and further calls are temporarily throttled for your Amazon Web Services account. During the throttling period, your connections to CodeCommit are slowed and might fail.
 

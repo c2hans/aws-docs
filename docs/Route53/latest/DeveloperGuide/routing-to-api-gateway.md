@@ -31,11 +31,11 @@ To get started, you need the following:
   + [Setting up custom domain names for HTTP APIs](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-custom-domain-names.html) in the *Amazon API Gateway Developer Guide*.
   + [Setting up custom domain names for REST APIs](https://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-custom-domains.html) in the *Amazon API Gateway Developer Guide*.
   + [Setting up custom domain names for WebSocket APIs](https://docs.aws.amazon.com/apigateway/latest/developerguide/websocket-api-custom-domain-names.html) in the *Amazon API Gateway Developer Guide*.
-  + [Custom domain names for private APIs in API Gateway](https://docs.aws.amazon.com//apigateway/latest/developerguide/apigateway-private-custom-domains.html) in the *Amazon API Gateway Developer Guide*.
+  + [Custom domain names for private APIs in API Gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-private-custom-domains.html) in the *Amazon API Gateway Developer Guide*.
 + A registered domain name. You can use Amazon Route 53 as your domain registrar or you can use a different registrar.
 + Route 53 as the DNS service for the domain. If you register your domain name by using Route 53, we automatically configure Route 53 as the DNS service for the domain.
 
-  For information about using Route 53 as the DNS service provider for your domain, see [Making Amazon Route 53 the DNS service for an existing domainMaking Route 53 the DNS service for an existing domain](MigratingDNS.md).
+  For information about using Route 53 as the DNS service provider for your domain, see [Making Amazon Route 53 the DNS service for an existing domain](MigratingDNS.md).
 
 ## Configuring Route 53 to route traffic to an API Gateway endpoint
 <a name="routing-to-api-gateway-config"></a>

@@ -14,8 +14,6 @@ Enable Direct Change mode (DCM). DCM grants native AWS access to provision and u
 ## Change Type Details
 <a name="ct-3rd4781c2nnhp-MMDe-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-3rd4781c2nnhp |

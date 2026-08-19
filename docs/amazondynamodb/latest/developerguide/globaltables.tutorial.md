@@ -37,7 +37,7 @@ Follow these steps to create a global table using the console. The following exa
 
 1. From the **Available replication Regions** dropdown, choose **US West (Oregon)**.
 
-   The console checks to ensure that a table with the same name doesn't exist in the selected Region. If a table with the same name does exist, you must delete the existing table before you can create a new replica table in that Region.
+   The console checks to make sure that a table with the same name doesn't exist in the selected Region. If a table with the same name does exist, you must delete the existing table before you can create a new replica table in that Region.
 
 1. Choose **Create Replica**. This starts the table creation process in US West (Oregon);.
 

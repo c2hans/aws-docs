@@ -126,8 +126,6 @@ A unit of read capacity represents one strongly consistent read per second (or t
 
 Ultimately, the throughput and the costs required for your sessions table will correlate with your expected traffic and session size. The following table explains the amount of read and write operations that are performed on your DynamoDB table for each of the session functions.
 
-****
-
 |  |  |
 | --- |--- |
 | Read via `session_start()`  |  +  1 read operation (only 0.5 if `consistent_read` is `false`). <br />+  (Conditional) 1 write operation to delete the session if it is expired.   |

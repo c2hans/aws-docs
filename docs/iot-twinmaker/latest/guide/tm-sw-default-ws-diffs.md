@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/guide/tm-sw-default
 <a name="tm-sw-default-ws-diffs"></a>
 
 **Important**
-New AWS IoT SiteWise features, such as [`CompositionModel`](https://docs.aws.amazon.com//iot-sitewise/latest/userguide/custom-composite-models.html), are only available in `IoTSiteWiseDefaultWorkspace`. We encourage you to use a default workspace instead of custom workspace.
+New AWS IoT SiteWise features, such as [`CompositionModel`](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/custom-composite-models.html), are only available in `IoTSiteWiseDefaultWorkspace`. We encourage you to use a default workspace instead of custom workspace.
 
 When using the `IoTSiteWiseDefaultWorkspace`, there are a few notable differences from using a custom workspace with asset sync.
 + When you create a default workspace, the Amazon S3 location and IAM role are optional.

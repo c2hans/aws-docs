@@ -264,9 +264,9 @@ For example, if you specify port 2000 for the input, MediaConnect will also rese
 When using RTP with FEC enabled for failover/merge on a router input, MediaConnect automatically reserves three ports: the port you specify, plus the ports that are \+2 and \+4 from that.
 For example, if you specify port 2000 for the input, MediaConnect will also reserve ports 2002 and 2004 for the FEC streams.
 
-1. Under **Transit encryption key configuration**, choose how to encrypt content as it moves through the router's internal network.
+1. Under **Transit encryption key configuration**, choose how to encrypt content as it moves through the router fabric.
 **Note**
-This encryption applies only to content moving through the router matrix. It is separate from any encryption you configure between your source and input, or between your output and destination.
+This encryption applies only to content moving through the router fabric. It is separate from any encryption you configure between your source and input, or between your output and destination.
 
    1. **Automatic encryption key** - Choose this if you want automatic key management (recommended in most cases). With this option, MediaConnect will handle key creation and rotation for you.
 
@@ -420,6 +420,12 @@ This option requires a MediaLive input that's been set up for router integration
             1. For **Secret ARN**, enter the ARN of the secret in Secrets Manager that contains your encryption key.
 **Important**
  The content of the secret must be an AES-256 key in hexadecimal format. The key must have 64 digits.
+
+1. Under **Router fabric configuration**, choose an option for **Recovery latency mode**:
+
+   1. **Balanced** - Choose this if you want MediaConnect to optimize for stream quality. This is the default mode.
+
+   1. **Low latency** - Choose this if you want to reduce latency. This mode can reduce stream quality under adverse network conditions.
 
 1. Under **Maintenance configuration**, choose an option:
 

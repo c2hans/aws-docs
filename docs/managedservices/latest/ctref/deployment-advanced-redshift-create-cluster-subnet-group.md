@@ -14,8 +14,6 @@ Use to create a Redshift cluster subnet group.
 ## Change Type Details
 <a name="ct-0q43l40hxrzum-DARc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-0q43l40hxrzum |

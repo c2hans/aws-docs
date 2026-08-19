@@ -12,7 +12,7 @@ In terms of provisioned throughput, a copy operation from a DynamoDB table count
 Before you can load data from a DynamoDB table, you must first create an Amazon Redshift table to serve as the destination for the data. Keep in mind that you are copying data from a NoSQL environment into a SQL environment, and that there are certain rules in one environment that do not apply in the other. Here are some of the differences to consider:
 + DynamoDB table names can contain up to 255 characters, including '.' (dot) and '-' (dash) characters, and are case-sensitive. Amazon Redshift table names are limited to 127 characters, cannot contain dots or dashes and are not case-sensitive. In addition, table names cannot conflict with any Amazon Redshift reserved words.
 + DynamoDB does not support the SQL concept of NULL. You need to specify how Amazon Redshift interprets empty or blank attribute values in DynamoDB, treating them either as NULLs or as empty fields.
-+ DynamoDB data types do not correspond directly with those of Amazon Redshift. You need to ensure that each column in the Amazon Redshift table is of the correct data type and size to accommodate the data from DynamoDB.
++ DynamoDB data types do not correspond directly with those of Amazon Redshift. You need to make sure that each column in the Amazon Redshift table is of the correct data type and size to accommodate the data from DynamoDB.
 
 Here is an example COPY command from Amazon Redshift SQL:
 

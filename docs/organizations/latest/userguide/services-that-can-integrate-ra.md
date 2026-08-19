@@ -21,7 +21,7 @@ The following [service-linked role](https://docs.aws.amazon.com/IAM/latest/UserG
 You can delete or modify this role only if you disable trusted access between Reachability Analyzer and Organizations, or if you remove the member account from the organization.
 + `AWSServiceRoleForReachabilityAnalyzer`
 
-For more information, see [Cross-account analyses for Reachability Analyzer](https://docs.aws.amazon.com//vpc/latest/reachability/multi-account.html) in the *Reachability Analyzer user guide*.
+For more information, see [Cross-account analyses for Reachability Analyzer](https://docs.aws.amazon.com/vpc/latest/reachability/multi-account.html) in the *Reachability Analyzer user guide*.
 
 ## Service principals used by the service-linked roles
 <a name="integrate-enable-svcprin-ra"></a>
@@ -41,7 +41,7 @@ Reachability Analyzer requires trusted access to AWS Organizations before you ca
 **Important**
 You can enable trusted access using either the Reachability Analyzer console or the Organizations console. However, we strongly recommend that you use the Reachability Analyzer console or the `EnableMultiAccountAnalysisForAwsOrganization` API to enable integration with Organizations. This lets Reachability Analyzer perform any configuration that it requires, such as creating resources needed by the service.
 Granting trusted access creates the service-linked role ` AWSServiceRoleForReachabilityAnalyzer` in the management account and in all of the member accounts in the organization. Reachability Analyzer uses the service-linked role to allow management, and the delegated administrator to run connectivity analyses between any resources in the organization. Reachability Analyzer is able to take snapshots of the networking elements of the accounts in an organization in order to answer connectivity queries.
-For more information, and for instructions on enabling trusted access through Reachability Analyzer, see [Cross-account analyses for Reachability Analyzer](https://docs.aws.amazon.com//vpc/latest/reachability/multi-account.html) in the *Reachability Analyzer user guide*.
+For more information, and for instructions on enabling trusted access through Reachability Analyzer, see [Cross-account analyses for Reachability Analyzer](https://docs.aws.amazon.com/vpc/latest/reachability/multi-account.html) in the *Reachability Analyzer user guide*.
 
 You can enable trusted access by using either the AWS Organizations console, by running a AWS CLI command, or by calling an API operation in one of the AWS SDKs.
 
@@ -82,12 +82,12 @@ You can use the following AWS CLI commands or API operations to enable trusted s
 
 For information about the permissions needed to disable trusted access, see [Permissions required to disable trusted access](orgs_integrate_services.md#orgs_trusted_access_disable_perms).
 
-You can disable trusted access using either the Reachability Analyzer console (recommended), or the Organizations console. To disable trusted access using the Reachability Analyzer console, see [Cross-account analyses for Reachability Analyzer](https://docs.aws.amazon.com//vpc/latest/reachability/multi-account.html) in the *Reachability Analyzer user guide*.
+You can disable trusted access using either the Reachability Analyzer console (recommended), or the Organizations console. To disable trusted access using the Reachability Analyzer console, see [Cross-account analyses for Reachability Analyzer](https://docs.aws.amazon.com/vpc/latest/reachability/multi-account.html) in the *Reachability Analyzer user guide*.
 
 ## Enabling a delegated administrator account for Reachability Analyzer
 <a name="integrate-enable-da-ra"></a>
 
-The delegated administrator account is able to run connectivity analyses across any of the resources in the organization. For more information, see [Integrate Reachability Analyzer with AWS Organizations](https://docs.aws.amazon.com//vpc/latest/ipam/enable-integ-ipam.html) in the *Reachability Analyzer user guide*.
+The delegated administrator account is able to run connectivity analyses across any of the resources in the organization. For more information, see [Integrate Reachability Analyzer with AWS Organizations](https://docs.aws.amazon.com/vpc/latest/ipam/enable-integ-ipam.html) in the *Reachability Analyzer user guide*.
 
 Only an administrator in the organization management account can configure a delegated administrator for Reachability Analyzer.
 
@@ -96,7 +96,7 @@ You can specify a delegated administrator account from the Reachability Analyzer
 **Minimum permissions**
 Only a user or role in the Organizations management account can configure a member account as a delegated administrator for Reachability Analyzer in the organization
 
-To configure a delegated administrator using the Reachability Analyzer console, see [Integrate Reachability Analyzer with AWS Organizations](https://docs.aws.amazon.com//vpc/latest/ipam/enable-integ-ipam.html) in the *Reachability Analyzer user guide*.
+To configure a delegated administrator using the Reachability Analyzer console, see [Integrate Reachability Analyzer with AWS Organizations](https://docs.aws.amazon.com/vpc/latest/ipam/enable-integ-ipam.html) in the *Reachability Analyzer user guide*.
 
 ## Disabling a delegated administrator for Reachability Analyzer
 <a name="integrate-disable-da-ra"></a>
@@ -105,4 +105,4 @@ Only an administrator in the organization management account can configure a del
 
 You can remove the delegated administrator using either the Reachability Analyzer console or API, or by using the Organizations `DeregisterDelegatedAdministrator` CLI or SDK operation.
 
- To disable the delegated admin Reachability Analyzer account using the Reachability Analyzer console, see [Cross-account analyses for Reachability Analyzer](https://docs.aws.amazon.com//vpc/latest/reachability/multi-account.html) in the *Reachability Analyzer user guide*.
+ To disable the delegated admin Reachability Analyzer account using the Reachability Analyzer console, see [Cross-account analyses for Reachability Analyzer](https://docs.aws.amazon.com/vpc/latest/reachability/multi-account.html) in the *Reachability Analyzer user guide*.

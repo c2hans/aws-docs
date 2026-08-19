@@ -30,6 +30,10 @@ For information about zero-ETL integrations, see [Zero-ETL integrations](https:/
 | refresh\_interval | integer | The approximate time interval, in seconds, to refresh data from the zero-ETL source to the target database. |
 | source\_database | character(128) | The name of the source database. |
 | is\_history\_mode | boolean | A TRUE value indicates that history mode is on. A FALSE indicates that history mode is off. |
+| latest\_detected\_change\_time | timestamp | The time (UTC) when the latest source change for this integration database was staged in the replication queue. |
+| latest\_applied\_change\_time | timestamp | The time (UTC) of the last successful ingestion on Amazon Redshift for this target database. |
+| auto\_remediation | boolean | A TRUE value indicates that automatic remediation of duplicate rows is enabled. A FALSE value indicates that it is disabled. |
+| latest\_shipped\_source\_commit\_time | timestamp | The time (UTC), on the source database clock, of the latest source change available for Amazon Redshift to ingest into this target database. |
 
 ## Sample queries
 <a name="r_SVV_INTEGRATION-sample-queries"></a>

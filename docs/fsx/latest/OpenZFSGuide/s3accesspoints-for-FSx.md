@@ -13,7 +13,7 @@ Each S3 access point attached to an FSx for OpenZFS file system has an AWS Ident
 
 You use the Amazon FSx console, CLI, and API to [create an S3 access point and attach](fsxz-creating-access-points.md) it to an FSx for OpenZFS volume. You can simultaneously access your file data from the S3 access point using the S3 API, and from clients using the industry-standard Network File System (NFS) protocol (v3, v4.0, v4.1, v4.2). Your data continues to reside on the FSx for OpenZFS file system.
 
-Amazon S3 access points for FSx for OpenZFS ﬁle systems deliver latency in the tens of milliseconds range, consistent with S3 bucket access. Performance scales with your Amazon FSx ﬁle system’s provisioned throughput, with maximum throughput and requests per second bound by your underlying Amazon FSx ﬁle system conﬁguration. For more information about file system performance capabilities, see [Performance for Amazon FSx for OpenZFSPerformance](performance.md)
+Amazon S3 access points for FSx for OpenZFS ﬁle systems deliver latency in the tens of milliseconds range, consistent with S3 bucket access. Performance scales with your Amazon FSx ﬁle system’s provisioned throughput, with maximum throughput and requests per second bound by your underlying Amazon FSx ﬁle system conﬁguration. For more information about file system performance capabilities, see [Performance for Amazon FSx for OpenZFS](performance.md)
 
 **Topics**
 + [Access points naming rules, restrictions, and limitations](access-point-restrictions-limitations-naming-rules.md)

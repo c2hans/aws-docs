@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/ivs/latest/BroadcastSWIntegAPIReference/
 # ClientConfigurationStatus
 <a name="structures-ClientConfigurationStatus"></a>
 
-Object specifying errors or warnings to be exposed to the broadcaster. Refer to [Handling Warnings and Errors](https://docs.aws.amazon.com//ivs/latest/LowLatencyUserGuide/multitrack-video-sw-integration.html#multitrack-video-sw-integration-auto-stream-use-getclientconfig-errors) for more information.
+Object specifying errors or warnings to be exposed to the broadcaster. Refer to [Handling Warnings and Errors](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multitrack-video-sw-integration.html#multitrack-video-sw-integration-auto-stream-use-getclientconfig-errors) for more information.
 
 ## Contents
 <a name="structures-ClientConfigurationStatus-contente"></a>

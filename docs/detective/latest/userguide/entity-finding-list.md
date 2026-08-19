@@ -23,4 +23,4 @@ If you navigated to the entity profile from a finding overview, then that findin
 
 From the finding details, to navigate back to the finding overview, choose **See all related entities**.
 
-You can also archive the finding. For more details, see [Archiving an Amazon GuardDuty finding](https://docs.aws.amazon.com//detective/latest/userguide/finding-update-status.html).
+You can also archive the finding. For more details, see [Archiving an Amazon GuardDuty finding](https://docs.aws.amazon.com/detective/latest/userguide/finding-update-status.html).

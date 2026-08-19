@@ -38,7 +38,10 @@ By default, both operations are served entirely from within the AWS service boun
 ### Supported models
 <a name="web-search-supported-models"></a>
 
-Web Search is available for OpenAI GPT models served through the Amazon Bedrock `bedrock-mantle` endpoint, using the Responses API. It is currently supported on `openai.gpt-5.4`, `openai.gpt-5.5`, and `openai.gpt-5.6` (luna, terra, and sol). For Web Search pricing, refer to the [Amazon Bedrock pricing page](https://aws.amazon.com/bedrock/pricing/).
+Web Search is available for OpenAI GPT models served through the Amazon Bedrock `bedrock-mantle` endpoint, using the Responses API. It is currently supported on the GPT-5.6 family — `openai.gpt-5.6-sol`, `openai.gpt-5.6-terra`, and `openai.gpt-5.6-luna` — as well as the earlier `openai.gpt-5.4` and `openai.gpt-5.5`. Examples in this guide use `openai.gpt-5.6-terra`. For Web Search pricing, refer to the [Amazon Bedrock pricing page](https://aws.amazon.com/bedrock/pricing/).
+
+**Note**
+Web Search is a server-side tool, so it isn't available when you call the Responses API on the `bedrock-runtime` endpoint. To use it, call the Responses API on `bedrock-mantle`. For the other differences between the two endpoints, see [Using the Responses API on the bedrock-runtime endpoint](bedrock-mantle.md#bedrock-mantle-responses-runtime).
 
 ### Regional availability
 <a name="web-search-regional-availability"></a>
@@ -89,7 +92,7 @@ Set `"external_web_access": false` on the tool. This does not require the `Exter
 
 ```
 response = client.responses.create(
-    model="openai.gpt-5.5",
+    model="openai.gpt-5.6-terra",
     input="Summarize recent guidance on AWS Lambda cold starts.",
     tools=[{"type": "web_search", "external_web_access": False}],
 )
@@ -100,7 +103,7 @@ curl "https://bedrock-mantle.us-west-2.api.aws/openai/v1/responses" \
   -H "Authorization: Bearer $OPENAI_API_KEY" \
   -H "Content-Type: application/json" \
   -d '{
-    "model": "openai.gpt-5.5",
+    "model": "openai.gpt-5.6-terra",
     "input": "Summarize recent guidance on AWS Lambda cold starts.",
     "tools": [{"type": "web_search", "external_web_access": false}]
   }'
@@ -110,6 +113,15 @@ curl "https://bedrock-mantle.us-west-2.api.aws/openai/v1/responses" \
 <a name="web-search-enable-external"></a>
 
 Grant `bedrock-websearch:ExternalWebAccess` to the request identity and leave `external_web_access` at its default of `true`. This configuration governs whether search and fetch may reach the external web. Today, retrieval is served entirely from the Amazon Bedrock web index and cache, so no request data leaves the AWS boundary even when this permission is granted. In a future release, this configuration may allow search and fetch to retrieve content from the live external web, at which point request data may leave the AWS boundary. External web access is disabled by default (that is, `bedrock-websearch:ExternalWebAccess` is disallowed), and any future change will require allowing `bedrock-websearch:ExternalWebAccess` as an explicit opt-in before it takes effect. External web access remains under your control: it applies only because you granted the permission and left the parameter enabled.
+
+## Using Web Search with Codex
+<a name="web-search-codex"></a>
+
+Codex, OpenAI's coding agent, connects to Amazon Bedrock through the `bedrock-mantle` endpoint and can use Web Search on supported models. Web Search is available in the Codex desktop app and the CLI version 0.147.0 or later.
+
+Using Web Search with Codex does not require additional IAM setup beyond the standard Web Search permissions. The IAM identity behind your API key must be allowed to call the Web Search actions `bedrock-websearch:InvokeSearch` and `bedrock-websearch:InvokeFetch`. These actions are granted by the [AmazonBedrockFullAccess](security-iam-awsmanpol.md#security-iam-awsmanpol-AmazonBedrockFullAccess) policy. For the required permissions and example policies, see [Identity and access management for Web Search](security-web-search.md).
+
+On supported Amazon Bedrock models, Codex uses text-only Web Search, returning titles, URLs, and content snippets from the Amazon Bedrock web index and cache. Codex sets `external_web_access` to `false` on each request, so your request data stays within the AWS boundary. For details, see [Controlling external web access](#web-search-controlling-external).
 
 ## Code examples
 <a name="web-search-code-examples"></a>
@@ -123,7 +135,7 @@ from openai import OpenAI
 client = OpenAI()
 
 response = client.responses.create(
-    model="openai.gpt-5.5",
+    model="openai.gpt-5.6-terra",
     input="What are the most significant AWS launches announced this month?",
     tools=[{"type": "web_search", "external_web_access": False}],
 )
@@ -183,7 +195,7 @@ curl "https://bedrock-mantle.us-west-2.api.aws/openai/v1/responses" \
   -H "Authorization: Bearer $OPENAI_API_KEY" \
   -H "Content-Type: application/json" \
   -d '{
-    "model": "openai.gpt-5.5",
+    "model": "openai.gpt-5.6-terra",
     "input": "What are the most significant AWS launches announced this month?",
     "tools": [{"type": "web_search", "external_web_access": false}]
   }'
@@ -200,7 +212,7 @@ from openai import OpenAI
 client = OpenAI()
 
 response = client.responses.create(
-    model="openai.gpt-5.5",
+    model="openai.gpt-5.6-terra",
     input="What are the most significant AWS launches announced this month?",
     tools=[{"type": "web_search", "external_web_access": False}],
 )
@@ -237,7 +249,7 @@ from openai import OpenAI
 client = OpenAI()
 
 stream = client.responses.create(
-    model="openai.gpt-5.5",
+    model="openai.gpt-5.6-terra",
     input="What are the most significant AWS launches announced this month?",
     tools=[{"type": "web_search", "external_web_access": False}],
     stream=True,

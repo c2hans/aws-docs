@@ -42,7 +42,7 @@ Amazon EC2 supports the following platforms for Reserved Instances:
 
 **Considerations**
 + If you bring your existing subscription (BYOS) for **Red Hat Enterprise Linux**, **SUSE Linux**, or **Ubuntu Pro**, you must choose an offering for the **Linux/Unix** platform.
-+ Reserved Instances are not supported on instances running **macOS** or Ubuntu Pro (EC2 subscription-included, i.e., not BYOS). For saving with On-Demand instance pricing, we recommend that you use macOS and Ubuntu Pro (EC2 subscription-included) instances with Savings Plans. For more information, see [Savings Plans User Guide](https://docs.aws.amazon.com/savingsplans/latest/userguide/what-is-savings-plans.html).
++ Reserved Instances are not supported on instances running **macOS** or Ubuntu Pro (EC2 subscription-included, that is, not BYOS). For saving with On-Demand instance pricing, we recommend that you use macOS and Ubuntu Pro (EC2 subscription-included) instances with Savings Plans. For more information, see [Savings Plans User Guide](https://docs.aws.amazon.com/savingsplans/latest/userguide/what-is-savings-plans.html).
 
 To ensure that an instance runs in a specific Reserved Instance, the platform of the Reserved Instance must match the platform of the AMI used to launch the instance. For Linux AMIs, it is important to check whether the AMI platform uses the general value **Linux/UNIX** or a more specific value like **SUSE Linux**.
 

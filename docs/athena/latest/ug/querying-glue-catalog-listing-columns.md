@@ -20,8 +20,6 @@ WHERE  table_schema = 'rdspostgresql'
 ```
 The following table shows sample results.
 
-****
-
 |  | table\_catalog | table\_schema | table\_name | column\_name | ordinal\_position | column\_default | is\_nullable | data\_type | comment | extra\_info |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | awsdatacatalog | rdspostgresql | rdspostgresqldb1\_public\_account | password | 1 |  | YES | varchar |  |  |
@@ -41,8 +39,6 @@ WHERE  table_schema = 'default'
        AND table_name = 'arrayview'
 ```
 The following table shows sample results.
-
-****
 
 |  | table\_catalog | table\_schema | table\_name | column\_name | ordinal\_position | column\_default | is\_nullable | data\_type | comment | extra\_info |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -65,8 +61,6 @@ WHERE  table_schema = 'default'
        AND column_name='sid'
 ```
 The following table shows a sample result.
-
-****
 
 |  | table\_catalog | table\_schema | table\_name | column\_name | ordinal\_position | column\_default | is\_nullable | data\_type | comment | extra\_info |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |

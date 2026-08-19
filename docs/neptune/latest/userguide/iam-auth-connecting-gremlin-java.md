@@ -18,7 +18,7 @@ The following examples use `requestInterceptor()`, which was introduced in Tinke
 </dependency>
 ```
 
- The Amazon Neptune SigV4 Signer supports both versions 1.x and 2.x of the AWS Java SDK. The following examples use 2.x, where `DefaultCredentialsProvider` is a `software.amazon.awssdk.auth.credentials.AwsCredentialsProvider` instance. If you are upgrading from 1.x to 2.x, see the [Credentials provider changes](https://docs.aws.amazon.com//sdk-for-java/latest/developer-guide/migration-client-credentials.html) in the AWS SDK for Java 2.x documentation.
+ The Amazon Neptune SigV4 Signer supports both versions 1.x and 2.x of the AWS Java SDK. The following examples use 2.x, where `DefaultCredentialsProvider` is a `software.amazon.awssdk.auth.credentials.AwsCredentialsProvider` instance. If you are upgrading from 1.x to 2.x, see the [Credentials provider changes](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/migration-client-credentials.html) in the AWS SDK for Java 2.x documentation.
 
 ```
 import software.amazon.awssdk.auth.credentials.DefaultCredentialsProvider;
@@ -57,7 +57,7 @@ try {
 ## Cross account IAM authentication
 <a name="iam-auth-connecting-gremlin-java-cross-account"></a>
 
- Amazon Neptune supports cross account IAM authentication through the use of role assumption, also sometimes referred to as [ role chaining](https://docs.aws.amazon.com//neptune/latest/userguide/bulk-load-tutorial-chain-roles.html#bulk-load-tutorial-chain-cross-account). To provide access to a Neptune cluster from an application hosted in a different AWS account:
+ Amazon Neptune supports cross account IAM authentication through the use of role assumption, also sometimes referred to as [ role chaining](https://docs.aws.amazon.com/neptune/latest/userguide/bulk-load-tutorial-chain-roles.html#bulk-load-tutorial-chain-cross-account). To provide access to a Neptune cluster from an application hosted in a different AWS account:
 +  Create a new IAM user or role in the application AWS account, with a trust policy that allows the user or role to assume another IAM role. Assign this role to the compute hosting the application (EC2 instance, Lambda function, ECS Task, etc.).
 
 ------
@@ -106,7 +106,7 @@ try {
   ```
 
 ------
-+  Use the following code example as guidance on how to use these two roles to allow the application to access Neptune. In this example, the application account role will be assumed via the [DefaultCredentialProviderChain](https://docs.aws.amazon.com//sdk-for-java/v1/developer-guide/credentials.html) when creating the `STSclient`. The `STSclient` is then used via the `STSAssumeRoleSessionCredentialsProvider` to assume the role hosted in the Neptune database AWS account.
++  Use the following code example as guidance on how to use these two roles to allow the application to access Neptune. In this example, the application account role will be assumed via the [DefaultCredentialProviderChain](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/credentials.html) when creating the `STSclient`. The `STSclient` is then used via the `STSAssumeRoleSessionCredentialsProvider` to assume the role hosted in the Neptune database AWS account.
 
   ```
   public static void main( String[] args )

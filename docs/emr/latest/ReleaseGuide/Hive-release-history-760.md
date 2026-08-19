@@ -8,8 +8,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/Hive-release-his
 ## Amazon EMR 7.6.0 - Hive changes
 <a name="Hive-release-history-changes-760"></a>
 
-****
-
 | Type | Description |
 | --- | --- |
 | Improvement | Added fast S3 prefix listing feature for ORC non ACID partitioned tables |
@@ -20,8 +18,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/Hive-release-his
 
 ### Amazon EMR 7.6.0 - New configurations
 <a name="Hive-release-history-changes-760-new-configs"></a>
-
-****
 
 | Classification | Name | Default | Description |
 | --- | --- | --- | --- |

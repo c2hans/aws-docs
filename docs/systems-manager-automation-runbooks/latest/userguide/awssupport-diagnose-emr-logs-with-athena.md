@@ -250,9 +250,9 @@ Follow these steps to configure the automation:
 
 Systems Manager Automation
 + [Run this Automation (console)](https://console.aws.amazon.com/systems-manager/documents/AWSSupport-DiagnoseEMRLogsWithAthena/description)
-+ [Run an automation](https://docs.aws.amazon.com//systems-manager/latest/userguide/automation-working-executing.html)
-+ [Setting up an Automation](https://docs.aws.amazon.com//systems-manager/latest/userguide/automation-setup.html)
++ [Run an automation](https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-working-executing.html)
++ [Setting up an Automation](https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-setup.html)
 + [Support Automation Workflows landing page](https://aws.amazon.com/premiumsupport/technology/saw/)
 
 AWS service documentation
-+ Refer to[Troubleshooting Amazon EMR Clusters](https://docs.aws.amazon.com//emr/latest/ManagementGuide/emr-troubleshoot.html) for more information
++ Refer to[Troubleshooting Amazon EMR Clusters](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-troubleshoot.html) for more information

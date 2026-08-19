@@ -11,7 +11,7 @@ This guide provides developer-focused information about using the Amazon S3 REST
 
 You can use any toolkit that supports HTTP to use the REST API. You can even use a browser to fetch objects, as long as they are anonymously readable.
 
-The REST API uses the standard HTTP headers and status codes, so that standard browsers and toolkits work as expected. In some areas, we have added functionality to HTTP (for example, we added headers to support access control). In these cases, we have done our best to add the new functionality in a way that matched the style of standard HTTP usage.
+The REST API uses the standard HTTP headers and status codes, so that standard browsers and toolkits work as expected. In some areas, we added functionality to HTTP (for example, we added headers to support access control). In these cases, we added the new functionality in a way that matches the style of standard HTTP usage.
 
 **Note**
 Support for SOAP over HTTP is deprecated, but it is still available over HTTPS. However, new Amazon S3 features will not be supported for SOAP. We recommend that you use either this REST API or the AWS SDKs at the following link:
@@ -50,13 +50,13 @@ The `PUT` request header is limited to 8 KB in size. Within the PUT request head
 
 If you'd like to make your own REST API calls instead of using one of the above alternatives, there are some things to keep in mind.
 + To make direct REST API calls from your code, create a signature using valid credentials and include the signature in your request. For information about various authentication methods and signature calculations, see [Authenticating Requests (AWS Signature Version 4)](sig-v4-authenticating-requests.md).
-+ The REST API uses standard HTTP headers and status codes, so standard browsers and toolkits work as expected. In some areas, we have added functionality to HTTP (for example, we added headers to support access control). In these cases, we have done our best to add the new functionality in a way that matches the style of standard HTTP usage. For more information about making requests, see [Making requests](MakingRequests.md).
++ The REST API uses standard HTTP headers and status codes, so standard browsers and toolkits work as expected. In some areas, we added functionality to HTTP (for example, we added headers to support access control). In these cases, we added the new functionality in a way that matches the style of standard HTTP usage. For more information about making requests, see [Making requests](MakingRequests.md).
 
 ## Permissions
 <a name="Permissions"></a>
 
 You can have valid credentials to authenticate your requests, but unless you have S3 permissions from the account owner or bucket owner you cannot create or access Amazon S3 resources. These permissions are typically granted through an AWS Identity and Access Management (IAM) [policy](https://docs.aws.amazon.com/AmazonS3/latest/userguide/security-iam.html#security_iam_access-manage), such as a bucket policy. For example, you must have permissions to create an S3 bucket or get an object in a bucket. For a complete list of S3 permissions, see [Actions, resources, and condition keys for Amazon S3](/service-authorization/latest/reference/list_amazons3.html).
 
-For more information about the permissions to S3 API operations by S3 resource types, see [Required permissions for Amazon S3 API operations](https://docs.aws.amazon.com//AmazonS3/latest/userguide/using-with-s3-policy-actions.html) in the *Amazon Simple Storage Service User Guide*.
+For more information about the permissions to S3 API operations by S3 resource types, see [Required permissions for Amazon S3 API operations](https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-with-s3-policy-actions.html) in the *Amazon Simple Storage Service User Guide*.
 
 If you use the root user credentials of your AWS account, you have all the permissions. However, using root user credentials is not recommended. Instead, we recommend that you create AWS Identity and Access Management (IAM) roles in your account and manage user permissions. For more information, see [Access Management](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-management.html) in the *Amazon Simple Storage Service User Guide*.

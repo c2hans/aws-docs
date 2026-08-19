@@ -13,8 +13,6 @@ Size flexibility means that you can move freely between configurations within th
 
 You can compare usage for different reserved node sizes by using normalized units. For example, one hour of usage on two db.r6g.4xlarge nodes is equivalent to 16 hours of usage on one db.r6g.large. The following table shows the number of normalized units for each node size:
 
-****
-
 | Node size | Normalized units (Redis OSS) | Normalized units (Valkey) |
 | --- | --- | --- |
 | small | 1 | .7 |

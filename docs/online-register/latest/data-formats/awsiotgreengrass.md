@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsi
 
 AWS IoT Greengrass provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="greengrass-Discover"></a>[Discover](https://docs.aws.amazon.com/greengrass/latest/developerguide/gg-discover-api.html) | Retrieve information required to connect to a Greengrass core | Read |

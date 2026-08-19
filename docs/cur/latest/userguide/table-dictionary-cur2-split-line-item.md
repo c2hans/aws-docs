@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/table-dictionary-cu
 
 Columns under the **split\_line\_item** header are fields that appear in Data Exports if you've opted in to the split cost allocation data feature. For more information, see [Understanding split cost allocation data](https://docs.aws.amazon.com/cur/latest/userguide/split-cost-allocation-data.html). The feature is limited to Amazon ECS (including Fargate), AWS Batch, and Amazon EKS only.
 
-****
-
 | Column name | Description | Data type |
 | --- | --- | --- |
 | split\_line\_item\_actual\_usage | **Table configuration:** Added by: INCLUDE SPLIT COST ALLOCATION DATA<br />The usage for vCPU, memory, or accelerator resources (based on lineItem/UsageType) you incurred for the specified time period for the Amazon ECS task or Kubernetes pod. | double |

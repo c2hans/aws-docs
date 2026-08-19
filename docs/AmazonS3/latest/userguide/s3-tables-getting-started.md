@@ -89,7 +89,7 @@ If your table creation was successful, the name of your new table appears in the
 To use the following AWS CLI example commands to create a namespace in your table bucket, and then create a new table with a schema under that namespace, replace the `{{user input placeholder}}` values with your own.
 
 **Prerequisites**
-+ Attach the [`AmazonS3TablesFullAccess`](https://docs.aws.amazon.com//aws-managed-policy/latest/reference/AmazonS3TablesFullAccess.html) policy to your IAM identity.
++ Attach the [`AmazonS3TablesFullAccess`](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonS3TablesFullAccess.html) policy to your IAM identity.
 + Install AWS CLI version 2.23.10 or higher. For more information, see [Installing or updating the latest version of the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) in the *AWS Command Line Interface User Guide*.
 
 1. Create a new namespace in your table bucket by running the following command:

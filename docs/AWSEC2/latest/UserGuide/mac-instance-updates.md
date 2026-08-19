@@ -44,7 +44,7 @@ Due to an update in the network driver configuration, ENA driver version 1.0.2 i
 
    1. Setup the VNC client using [Connect to your instance's graphical user interface (GUI)](connect-to-mac-instance.md#mac-instance-vnc).
 
-   1. Once you have connected to your instance using the Screen Sharing application, go to the **Applications** folder and open the ENA application.
+   1. After you have connected to your instance using the Screen Sharing application, go to the **Applications** folder and open the ENA application.
 
    1. Choose **Activate**
 

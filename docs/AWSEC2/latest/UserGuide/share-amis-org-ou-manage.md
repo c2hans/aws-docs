@@ -70,7 +70,7 @@ Get-EC2ImageAttribute `
 You can share an AMI with an organization or OU.
 
 **Note**
-You do not need to share the Amazon EBS snapshots that an AMI references in order to share the AMI. Only the AMI itself needs to be shared, and the system automatically provides the instance with access to the referenced EBS snapshots for the launch. However, you do need to share the KMS keys used to encrypt snapshots that the AMI references. For more information, see [Allow organizations and OUs to use a KMS key](allow-org-ou-to-use-key.md).
+You do not need to share the Amazon EBS snapshots that an AMI references to share the AMI. Only the AMI itself needs to be shared, and the system automatically provides the instance with access to the referenced EBS snapshots for the launch. However, you do need to share the KMS keys used to encrypt snapshots that the AMI references. For more information, see [Allow organizations and OUs to use a KMS key](allow-org-ou-to-use-key.md).
 
 ------
 #### [ Console ]

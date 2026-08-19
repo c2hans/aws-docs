@@ -86,6 +86,7 @@ Content-type: application/json
             "logGroup": "string",
             "logStream": "string"
          },
+         "maxTaskHours": number,
          "overview": "string",
          "serviceRole": "string",
          "sourceCode": [

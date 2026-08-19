@@ -11,7 +11,7 @@ You can use the MediaPackage console, the AWS CLI, or the MediaPackage API to re
 
 **To reset an endpoint (console)**
 
-1. Access the channel that the endpoint is associated with, as described in [Viewing channel details in AWS Elemental MediaPackageViewing channel details](channels-view.md).
+1. Access the channel that the endpoint is associated with, as described in [Viewing channel details in AWS Elemental MediaPackage](channels-view.md).
 
    The console shows all existing origin endpoints that are configured in MediaPackage.
 

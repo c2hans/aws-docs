@@ -132,7 +132,7 @@ Length Constraints: Minimum length of 1. Maximum length of 100.
 Required: Yes
 
  ** [ParticipantDetails](#API_StartOutboundChatContact_RequestSyntax) **   <a name="connect-StartOutboundChatContact-request-ParticipantDetails"></a>
-The customer's details.
+The details of the participant, including their display name.
 Type: [ParticipantDetails](API_ParticipantDetails.md) object
 Required: No
 

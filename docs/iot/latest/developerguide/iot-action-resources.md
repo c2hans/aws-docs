@@ -11,7 +11,7 @@ To specify a resource for an AWS IoT Core policy action, use the Amazon Resource
 arn:{{partition}}:iot:{{region}}:{{AWS-account-ID}}:{{Resource-type}}/{{Resource-name}}
 ```
 
-The following table shows the resource to specify for each action type. The ARN examples are for the account ID `123456789012`, in the partition `aws`, and specific to the region `us-east-1`. For more information about the formats for ARNs, see [Amazon Resource Names (ARNs)](https://docs.aws.amazon.com//IAM/latest/UserGuide/reference-arns.html) from the AWS Identity and Access Management User Guide.
+The following table shows the resource to specify for each action type. The ARN examples are for the account ID `123456789012`, in the partition `aws`, and specific to the region `us-east-1`. For more information about the formats for ARNs, see [Amazon Resource Names (ARNs)](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference-arns.html) from the AWS Identity and Access Management User Guide.
 
 | Action | Resource type | Resource name | ARN example |
 | --- | --- | --- | --- |

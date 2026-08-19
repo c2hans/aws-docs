@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-tag-r
 # Add a tag to a repository
 <a name="how-to-tag-repository-add"></a>
 
-Adding tags to a repository can help you identify and organize your AWS resources and manage access to them. First, you add one or more tags (key-value pairs) to a repository. Keep in mind that there are limits on the number of tags you can have on a repository. There are restrictions on the characters you can use in the key and value fields. For more information, see [Limits](limits.md#limits-tags). After you have tags, you can create IAM policies to manage access to the repository based on these tags. You can use the the CodeCommit console or the AWS CLI to add tags to a repository.
+Adding tags to a repository can help you identify and organize your AWS resources and manage access to them. First, you add one or more tags (key-value pairs) to a repository. Keep in mind that there are limits on the number of tags you can have on a repository. There are restrictions on the characters you can use in the key and value fields. For more information, see [Limits](limits.md#limits-tags). After you have tags, you can create IAM policies to manage access to the repository based on these tags. You can use the CodeCommit console or the AWS CLI to add tags to a repository.
 
 **Important**
 Adding tags to a repository can impact access to that repository. Before you add a tag to a repository, make sure to review any IAM policies that might use tags to control access to resources such as repositories. For examples of tag-based access policies, see [Example 5: Deny or allow actions on repositories with tags](customer-managed-policies.md#identity-based-policies-example-5).

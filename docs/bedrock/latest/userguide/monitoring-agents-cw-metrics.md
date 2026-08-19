@@ -9,8 +9,6 @@ The following table describes runtime metrics provided by Amazon Bedrock Agents 
 
 **Runtime metrics**
 
-****
-
 | Metric name | Unit | Description |
 | --- | --- | --- |
 | InvocationCount | SampleCount | Number of requests to the API operation |
@@ -30,8 +28,6 @@ The following table describes runtime metrics provided by Amazon Bedrock Agents 
 You can view agent dimensions in the CloudWatch console based on the table below:
 
 **Dimension**
-
-****
 
 | Dimension name | Dimension values | Available for the following metrics |
 | --- | --- | --- |

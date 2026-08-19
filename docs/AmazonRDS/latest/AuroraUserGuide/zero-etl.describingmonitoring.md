@@ -64,7 +64,7 @@ To view zero-ETL integration using the Amazon RDS API, use the [`DescribeIntegra
 ## Monitoring integrations using system tables for Amazon Redshift
 <a name="zero-etl.monitoring"></a>
 
-Amazon Redshift has system tables and views that contain information about how the system is functioning. You can query these system tables and views the same way that you would query any other database table. For more information about system tables and views in Amazon Redshift, see [System tables and views reference](https://docs.aws.amazon.com//redshift/latest/dg/cm_chap_system-tables.html) in the *Amazon Redshift Database Developer Guide*.
+Amazon Redshift has system tables and views that contain information about how the system is functioning. You can query these system tables and views the same way that you would query any other database table. For more information about system tables and views in Amazon Redshift, see [System tables and views reference](https://docs.aws.amazon.com/redshift/latest/dg/cm_chap_system-tables.html) in the *Amazon Redshift Database Developer Guide*.
 
 You can query the following system views and tables to get information about your Aurora zero-ETL integrations:
 +  [SVV\_INTEGRATION](https://docs.aws.amazon.com/redshift/latest/dg/r_SVV_INTEGRATION.html) – Provides configuration details for your integrations.

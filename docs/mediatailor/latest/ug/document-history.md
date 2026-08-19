@@ -61,8 +61,8 @@ The following table describes important changes to this documentation.
 | [Ad ID decoration in manifests documentation](ad-id-decoration.md) | Added a section that describes ad ID decoration in manifests. | April 24, 2023 |
 | [Added AFTER\_LIVE\_EDGE suppression mode](ad-rules.md#working-with-ad-suppression) | `AFTER_LIVE_EDGE` ad suppression mode is now available in addition to `BEFORE_LIVE_EDGE` mode. | February 21, 2023 |
 | [New As Run log](as-run-log.md) | New topic on the As Run log. | January 19, 2023 |
-| [IAM best-practices updates](setting-up.md) | Updated guide to align with the IAM best practices. For more information, see [Security best practices in IAM](https://docs.aws.amazon.com//IAM/latest/UserGuide/best-practices.html). | December 27, 2022 |
-| [IAM best-practices updates](security.md) | Updated guide to align with the IAM best practices. For more information, see [Security best practices in IAM](https://docs.aws.amazon.com//IAM/latest/UserGuide/best-practices.html). | December 27, 2022 |
+| [IAM best-practices updates](setting-up.md) | Updated guide to align with the IAM best practices. For more information, see [Security best practices in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html). | December 27, 2022 |
+| [IAM best-practices updates](security.md) | Updated guide to align with the IAM best practices. For more information, see [Security best practices in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html). | December 27, 2022 |
 | [New segmentation UPID private data variables](variables-session.md) | MediaTailor now supports additional session variables `scte.segmentation_upid.private_data.{index}` that split colon-delimited private data from segmentation UPID type 12 (MPU). | December 22, 2022 |
 | [Updated quotas content](quotas.md) | Updated and reorganized quotas information. | September 13, 2022 |
 | [Added and corrected channel assembly quotas](quotas.md#channel-assembly-quotas) | Added quotas for live sources, segment delivery configurations, manifest requests, and channel transactions in the MediaTailor channel assembly service. | September 13, 2022 |

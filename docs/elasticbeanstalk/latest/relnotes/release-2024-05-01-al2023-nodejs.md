@@ -56,8 +56,6 @@ Be aware that at the time these release notes are published, the new platform ve
 ### Node.js
 <a name="release-2024-05-01-nodejs-al2023.platforms.nodejs"></a>
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 20 AL2023 version 6.1.4** <br /> * 64bit Amazon Linux 2023 v6.1.4 running Node.js 20 *  | 2023.4.20240429 | 20.12.2 (10.5.0)<br /> Default version: 20.12.2 | nginx 1.24.0 (default), Apache 2.4.59 | 2.40.1 | 3.2.0 |

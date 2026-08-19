@@ -14,8 +14,6 @@ An upgrade to an RU is called a minor version upgrade. Even though the string `r
 
 To find out which RUs are applied to Amazon RDS for Oracle Database 21c (21.0.0), see the following table.
 
-****
-
 |  Date  |  Name  |
 | --- | --- |
 | 2026 April | [Version 21.0.0.0.ru-2026-04.rur-2026-04.r1](#oracle-version-RU-RUR.21.0.0.0.ru-2026-04.rur-2026-04.r1) |

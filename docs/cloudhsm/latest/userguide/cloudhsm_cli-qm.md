@@ -14,8 +14,6 @@ In the CloudHSM CLI, **quorum** is a parent category for a group of commands tha
 
 Each service type is further broken down into a qualifying service name, which contains a specific set of quorum supported service operations that can be performed.
 
-****
-
 | Service name | Service type | Service operations |
 | --- | --- | --- |
 | user | Admin |  + user create<br />+ user delete<br />+ user change-password<br />+ user change-mfa  |

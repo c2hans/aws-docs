@@ -14,8 +14,6 @@ Create an IAM identity provider using the SAML metadata document file that you s
 ## Change Type Details
 <a name="ct-3hox8uwjgze1f-DAIc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-3hox8uwjgze1f |

@@ -108,8 +108,6 @@ The following table describes important changes to the AWS IoT Greengrass Develo
 
 The following table describes important changes to the AWS IoT Greengrass Developer Guide before July 2018.
 
-****
-
 | Change | Description | Date |
 | --- | --- | --- |
 | AWS IoT Greengrass Version 1.5.0 Released | New features:+  Local machine learning inference using cloud-trained models. For more information, see [Perform machine learning inference](ml-inference.md). <br />+  Greengrass Lambda functions support binary input data, in addition to JSON. <br />For more information, see [AWS IoT Greengrass Core versions](what-is-gg.md#ggc-versions). | March 29, 2018 |

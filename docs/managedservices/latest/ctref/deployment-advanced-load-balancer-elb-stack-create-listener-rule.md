@@ -14,8 +14,6 @@ Create a listener rule for the specific listener. Application Load Balancer list
 ## Change Type Details
 <a name="ct-18weo4vv83ynk-DALc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-18weo4vv83ynk |

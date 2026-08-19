@@ -245,16 +245,16 @@ The request is generally identified as malformed. For more information, see the 
 The request is not authorized to access the stream data files in the storage medium, such as Amazon S3. For more information, see the error message.
 
 **BlockSizeOutOfBounds**
-The block size is out of bounds. Refer to the "**MQTT-based File Delivery**" section in [AWS IoT Core Service Quotas](https://docs.aws.amazon.com//general/latest/gr/iot-core.html#limits_iot).
+The block size is out of bounds. Refer to the "**MQTT-based File Delivery**" section in [AWS IoT Core Service Quotas](https://docs.aws.amazon.com/general/latest/gr/iot-core.html#limits_iot).
 
 **OffsetOutOfBounds**
-The offset is out of bounds. Refer to the "**MQTT-based File Delivery**" section in [AWS IoT Core Service Quotas](https://docs.aws.amazon.com//general/latest/gr/iot-core.html#limits_iot).
+The offset is out of bounds. Refer to the "**MQTT-based File Delivery**" section in [AWS IoT Core Service Quotas](https://docs.aws.amazon.com/general/latest/gr/iot-core.html#limits_iot).
 
 **BlockCountLimitExceeded**
-The number of request block(s) is out of bounds. Refer to the "**MQTT-based File Delivery**" section in [AWS IoT Core Service Quotas](https://docs.aws.amazon.com//general/latest/gr/iot-core.html#limits_iot).
+The number of request block(s) is out of bounds. Refer to the "**MQTT-based File Delivery**" section in [AWS IoT Core Service Quotas](https://docs.aws.amazon.com/general/latest/gr/iot-core.html#limits_iot).
 
 **BlockBitmapLimitExceeded**
-The size of the request bitmap is out of bounds. Refer to the "**MQTT-based File Delivery**" section in [AWS IoT Core Service Quotas](https://docs.aws.amazon.com//general/latest/gr/iot-core.html#limits_iot).
+The size of the request bitmap is out of bounds. Refer to the "**MQTT-based File Delivery**" section in [AWS IoT Core Service Quotas](https://docs.aws.amazon.com/general/latest/gr/iot-core.html#limits_iot).
 
 **ResourceNotFound**
 The requested stream, files, file versions or blocks were not found. Refer to the error message for more details.

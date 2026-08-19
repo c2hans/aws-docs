@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon Managed Blockchain provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="managedblockchain-GetAccessor"></a>[GetAccessor](https://docs.aws.amazon.com/managed-blockchain/latest/APIReference/API_GetAccessor.html) | Return detailed information about an Amazon Managed Blockchain accessor | Read |

@@ -11,6 +11,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::EKS::AccessEntry](aws-resource-eks-accessentry.md)
 + [AWS::EKS::Addon](aws-resource-eks-addon.md)
 + [AWS::EKS::Capability](aws-resource-eks-capability.md)
++ [AWS::EKS::CertificateAuthority](aws-resource-eks-certificateauthority.md)
 + [AWS::EKS::Cluster](aws-resource-eks-cluster.md)
 + [AWS::EKS::FargateProfile](aws-resource-eks-fargateprofile.md)
 + [AWS::EKS::IdentityProviderConfig](aws-resource-eks-identityproviderconfig.md)

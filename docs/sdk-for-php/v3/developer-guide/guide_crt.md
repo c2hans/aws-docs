@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/guide_crt
 # Use the AWS Common Runtime (AWS CRT) extension in the SDK for PHP
 <a name="guide_crt"></a>
 
-The [AWS CRT libraries](https://docs.aws.amazon.com//sdkref/latest/guide/common-runtime.html) provide basic functionality with good performance and minimal footprint for several AWS SDKs. This topic discusses when the AWS CRT is used by the SDK for PHP and how to install the AWS CRT extension.
+The [AWS CRT libraries](https://docs.aws.amazon.com/sdkref/latest/guide/common-runtime.html) provide basic functionality with good performance and minimal footprint for several AWS SDKs. This topic discusses when the AWS CRT is used by the SDK for PHP and how to install the AWS CRT extension.
 
 ## When you need the AWS CRT extension installed
 <a name="php-crt-uses"></a>

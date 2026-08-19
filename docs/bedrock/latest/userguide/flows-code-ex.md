@@ -17,16 +17,12 @@ To create a flow, send a [CreateFlow](https://docs.aws.amazon.com/bedrock/latest
 
 The following fields are required:
 
-****
-
 | Field | Basic description |
 | --- | --- |
 | name | A name for the flow. |
 | executionRoleArn | The ARN of the [service role with permissions to create and manage flows](flows-permissions.md). |
 
 The following fields are optional:
-
-****
 
 | Field | Use case |
 | --- | --- |

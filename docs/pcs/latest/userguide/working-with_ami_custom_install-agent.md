@@ -28,7 +28,7 @@ Install the agent that configures the instances launched by AWS PCS for use with
 1. Download the AWS PCS agent installation files. The installation files are packaged into a compressed tarball (`.tar.gz`) file. To download the latest *stable* version, use the following command. Substitute {{region}} with the AWS Region where you launched your temporary instance, such as `us-east-1`.
 
    ```
-   curl https://aws-pcs-repo-{{region}}.s3.{{region}}.amazonaws.com/aws-pcs-agent/aws-pcs-agent-v1.5.0-1.tar.gz -o aws-pcs-agent-v1.5.0-1.tar.gz
+   curl https://aws-pcs-repo-{{region}}.s3.{{region}}.amazonaws.com/aws-pcs-agent/aws-pcs-agent-v1.5.1-1.tar.gz -o aws-pcs-agent-v1.5.1-1.tar.gz
    ```
 
    You can also get the latest version by replacing the version number with `latest` in the preceding command (for example: `aws-pcs-agent-v1-latest.tar.gz`).
@@ -61,14 +61,14 @@ Don't run the AWS PCS agent installation script if the fingerprint doesn't match
    1. Download the signature file and verify the signature of the AWS PCS software tarball file. Replace {{region}} with the AWS Region where you launched your temporary instance, such as `us-east-1`.
 
       ```
-      wget https://aws-pcs-repo-{{region}}.s3.{{region}}.amazonaws.com/aws-pcs-agent/aws-pcs-agent-v1.5.0-1.tar.gz.sig && \
-          gpg --verify ./aws-pcs-agent-v1.5.0-1.tar.gz.sig
+      wget https://aws-pcs-repo-{{region}}.s3.{{region}}.amazonaws.com/aws-pcs-agent/aws-pcs-agent-v1.5.1-1.tar.gz.sig && \
+          gpg --verify ./aws-pcs-agent-v1.5.1-1.tar.gz.sig
       ```
 
       The output should be similar to the following:
 
       ```
-      gpg: assuming signed data in './aws-pcs-agent-v1.5.0-1.tar.gz'
+      gpg: assuming signed data in './aws-pcs-agent-v1.5.1-1.tar.gz'
       gpg: Signature made Thu 06 Nov 2025 11:10:36 AM CET using RSA key ID ECC0AE5C
       gpg: Good signature from "AWS PCS Packages (AWS PCS Packages)"
       gpg: WARNING: This key is not certified with a trusted signature!
@@ -84,7 +84,7 @@ Don't run the AWS PCS software installation script if the fingerprint doesn't ma
 1. Extract the files from the compressed `.tar.gz` file and navigate to the extracted directory.
 
    ```
-   tar -xf aws-pcs-agent-v1.5.0-1.tar.gz && \
+   tar -xf aws-pcs-agent-v1.5.1-1.tar.gz && \
        cd aws-pcs-agent
    ```
 
@@ -104,6 +104,6 @@ Don't run the AWS PCS software installation script if the fingerprint doesn't ma
 
    ```
    AGENT_INSTALL_DATE='Fri Dec 13 12:28:43 UTC 2024'
-   AGENT_VERSION='1.5.0'
+   AGENT_VERSION='1.5.1'
    AGENT_RELEASE='1'
    ```

@@ -9,8 +9,6 @@ Conformance packs provide a general-purpose compliance framework designed to ena
 
 The following provides a sample mapping between the NIST 800-172 and AWS managed Config rules. Each Config rule applies to a specific AWS resource, and relates to one or more NIST 800-172 controls. A NIST 800-172 control can be related to multiple Config rules. Refer to the table below for more detail and guidance related to these mappings.
 
-****
-
 | Control ID  | Control Description  | AWS Config Rule  | Guidance  |
 | --- | --- | --- | --- |
 | 3.1.3e | Employ [Assignment: organization-defined secure information transfer solutions] to control information flows between security domains on connected systems. | [alb-http-drop-invalid-header-enabled](https://docs.aws.amazon.com/config/latest/developerguide/alb-http-drop-invalid-header-enabled.html) | Ensure that your Elastic Load Balancers (ELB) are configured to drop http headers. Because sensitive data can exist, enable encryption in transit to help protect that data. |

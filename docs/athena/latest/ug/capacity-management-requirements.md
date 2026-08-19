@@ -32,8 +32,6 @@ Athena determines the number of DPUs required by a DML query when the query is s
 
 To determine how much capacity you might require to run multiple queries at the same time, consider the general guidelines in the following table:
 
-****
-
 | Concurrent queries | DPUs required |
 | --- | --- |
 | 10 | 40 or more |

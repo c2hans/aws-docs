@@ -120,10 +120,8 @@ The AWS CLI doesn't support [InvokeAgent](https://docs.aws.amazon.com/bedrock/la
 
 The following fields exist in the request:
 + Minimally, provide the following required fields:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/agents-test.html)
 + The following fields are optional:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/agents-test.html)
 
 The response is returned in an event stream. Each event contains a `chunk`, which contains part of the response in the `bytes` field, which must be decoded. The following objects may also be returned:

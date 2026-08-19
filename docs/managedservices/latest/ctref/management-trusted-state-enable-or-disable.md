@@ -14,8 +14,6 @@ Enable or disable the Trusted Remediator service. Can only be used in the Truste
 ## Change Type Details
 <a name="ct-10nh4ztyxu8kz-MTSe-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-10nh4ztyxu8kz |

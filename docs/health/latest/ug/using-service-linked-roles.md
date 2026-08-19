@@ -21,7 +21,7 @@ For more information about the AWS managed policies, see [AWS managed policies f
 ## Creating a service-linked role for AWS Health
 <a name="create-service-linked-role"></a>
 
-You don't need to create the AWSServiceRoleForHealth\_Organizations service-linked role. When you call the [EnableHealthServiceAccessForOrganization](https://docs.aws.amazon.com//health/latest/APIReference/API_EnableHealthServiceAccessForOrganization.html) operation, AWS Health creates the this service-linked role in the account for you.
+You don't need to create the AWSServiceRoleForHealth\_Organizations service-linked role. When you call the [EnableHealthServiceAccessForOrganization](https://docs.aws.amazon.com/health/latest/APIReference/API_EnableHealthServiceAccessForOrganization.html) operation, AWS Health creates the this service-linked role in the account for you.
 
 You must manually create the AWSServiceRoleForHealth\_EventProcessor service-linked role in your account. For more information, see [Creating a service-linked role](https://docs.aws.amazon.com/IAM/latest/UserGuide/using-service-linked-roles.html#create-service-linked-role) in the *IAM User Guide*.
 
@@ -33,7 +33,7 @@ AWS Health doesn't allow you to edit the service-linked role. After you create a
 ## Deleting a service-linked role for AWS Health
 <a name="delete-service-linked-role"></a>
 
-To delete the AWSServiceRoleForHealth\_Organizations role, you must first call the [DisableHealthServiceAccessForOrganization](https://docs.aws.amazon.com//health/latest/APIReference/API_DisableHealthServiceAccessForOrganization.html) operation. You can then delete the role through the IAM console, IAM API, or AWS Command Line Interface (AWS CLI).
+To delete the AWSServiceRoleForHealth\_Organizations role, you must first call the [DisableHealthServiceAccessForOrganization](https://docs.aws.amazon.com/health/latest/APIReference/API_DisableHealthServiceAccessForOrganization.html) operation. You can then delete the role through the IAM console, IAM API, or AWS Command Line Interface (AWS CLI).
 
 To delete the AWSServiceRoleForHealth\_EventProcessor role, contact AWS Support and ask that they offboard your workloads from AWS Incident Detection and Response. After this process completes, you can then delete either role through the IAM console, IAM API, or AWS CLI.
 

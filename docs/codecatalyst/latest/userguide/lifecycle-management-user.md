@@ -37,7 +37,7 @@ Occasionally, lifecycle pull requests might generate merge conflicts. These can 
 ## Opting out of lifecycle management changes
 <a name="opt-out-lm"></a>
 
-Users can remove a blueprint from a project to disassociate all references to the blueprint and opt out of lifecycle updates. For safety reasons, this doesn’t remove or impact any of the project’s code or resources, including what was added from the blueprint. For more information, see [Disassociating a blueprint from a project to stop updatesDisassociating a blueprint from a project](disassociate-bp.md).
+Users can remove a blueprint from a project to disassociate all references to the blueprint and opt out of lifecycle updates. For safety reasons, this doesn’t remove or impact any of the project’s code or resources, including what was added from the blueprint. For more information, see [Disassociating a blueprint from a project to stop updates](disassociate-bp.md).
 
 ## Overriding a blueprint's lifecycle management in a project
 <a name="override-updates-lm"></a>

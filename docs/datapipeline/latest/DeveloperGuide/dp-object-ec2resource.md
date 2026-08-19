@@ -67,20 +67,14 @@ The following example object launches an EC2 instance into a nondefault VPC, wit
 ## Syntax
 <a name="ec2resource-syntax"></a>
 
-****
-
 | Required Fields | Description | Slot Type |
 | --- | --- | --- |
 | resourceRole | The IAM role that controls the resources that the Amazon EC2 instance can access. | String |
 | role | The IAM role that AWS Data Pipeline uses to create the EC2 instance. | String |
 
-****
-
 | Object Invocation Fields | Description | Slot Type |
 | --- | --- | --- |
 | schedule | This object is invoked within the execution of a schedule interval. <br />To set the dependency execution order for this object,specify a schedule reference to another object. You can do this in one of the following ways:+  To ensure that all objects in the pipeline inherit the schedule, set a schedule on the object explicitly: `"schedule": {"ref": "DefaultSchedule"}`. In most cases, it is useful to put the schedule reference on the default pipeline object, so that all objects inherit that schedule. <br />+  If the pipeline has schedules nested within the master schedule, you can create a parent object that has a schedule reference. For more information about example optional schedule configurations, see [https://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/dp-object-schedule.html](https://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/dp-object-schedule.html)  | Reference Object, for example "schedule":{"ref":"myScheduleId"} |
-
-****
 
 | Optional Fields | Description | Slot Type |
 | --- | --- | --- |
@@ -121,8 +115,6 @@ The following example object launches an EC2 instance into a nondefault VPC, wit
 | useOnDemandOnLastAttempt | On the last attempt to request a Spot Instance, make a request for On-Demand Instances rather than a Spot Instance. This ensures that if all previous attempts have failed, the last attempt is not interrupted. | Boolean |
 | workerGroup | This field is not allowed on this object. | String |
 
-****
-
 | Runtime Fields | Description | Slot Type |
 | --- | --- | --- |
 | @activeInstances | List of the currently scheduled active instance objects. | Reference Object, for example, "activeInstances":{"ref":"myRunnableObjectId"} |
@@ -151,8 +143,6 @@ The following example object launches an EC2 instance into a nondefault VPC, wit
 | @status | The status of this object. | String |
 | @version | The pipeline version with which the object was created. | String |
 | @waitingOn | Description of the list of dependencies on which this object is waiting. | Reference Object, for example, "waitingOn":{"ref":"myRunnableObjectId"} |
-
-****
 
 | System Fields | Description | Slot Type |
 | --- | --- | --- |

@@ -10,6 +10,11 @@ The configuration for pre-roll ad insertion.
 ## Contents
 <a name="API_LivePreRollConfiguration_Contents"></a>
 
+ ** AdDecisionServerConfiguration **   <a name="mediatailor-Type-LivePreRollConfiguration-AdDecisionServerConfiguration"></a>
+The configuration for the ad decision server (ADS) for live pre-roll ads. The configuration contains settings that control how MediaTailor processes VAST responses for pre-roll ad breaks.
+Type: [PreRollAdDecisionServerConfiguration](API_PreRollAdDecisionServerConfiguration.md) object
+Required: No
+
  ** AdDecisionServerUrl **   <a name="mediatailor-Type-LivePreRollConfiguration-AdDecisionServerUrl"></a>
 The URL for the ad decision server (ADS) for pre-roll ads. This includes the specification of static parameters and placeholders for dynamic parameters. AWS Elemental MediaTailor substitutes player-specific and session-specific parameters as needed when calling the ADS. Alternately, for testing, you can provide a static VAST URL. The maximum length is 25,000 characters.
 Type: String

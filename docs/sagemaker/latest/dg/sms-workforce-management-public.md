@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sms-workforce-manage
 **Note**
 Amazon SageMaker Mechanical Turk is no longer open to new customers. Existing customers can continue to use the service as normal. AWS continues to invest in security and availability improvements for Mechanical Turk, but we do not plan to introduce new features.
 
-The Amazon Mechanical Turk (Mechanical Turk) workforce provides the most workers for your [Amazon SageMaker Ground Truth](https://docs.aws.amazon.com//sagemaker/latest/dg/a2i.html) labeling job and [Amazon Augmented AI](https://docs.aws.amazon.com//sagemaker/latest/dg/a2i-use-augmented-ai-a2i-human-review-loops.html) human review task. The Amazon Mechanical Turk workforce is a world-wide resource. Workers are available 24 hours a day, 7 days a week. You typically get the fastest turnaround for your human review tasks and labeling jobs when you use the Amazon Mechanical Turk workforce.
+The Amazon Mechanical Turk (Mechanical Turk) workforce provides the most workers for your [Amazon SageMaker Ground Truth](https://docs.aws.amazon.com/sagemaker/latest/dg/a2i.html) labeling job and [Amazon Augmented AI](https://docs.aws.amazon.com/sagemaker/latest/dg/a2i-use-augmented-ai-a2i-human-review-loops.html) human review task. The Amazon Mechanical Turk workforce is a world-wide resource. Workers are available 24 hours a day, 7 days a week. You typically get the fastest turnaround for your human review tasks and labeling jobs when you use the Amazon Mechanical Turk workforce.
 
 Any Amazon Mechanical Turk workforce billing is handled as part of your Ground Truth or Amazon Augmented AI billing. You do not need to create a separate Mechanical Turk account to use the Amazon Mechanical Turk workforce.
 

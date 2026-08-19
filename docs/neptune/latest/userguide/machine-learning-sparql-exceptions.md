@@ -4,8 +4,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/machine-learnin
 
 # List of exceptions for Neptune ML SPARQL inference queries
 <a name="machine-learning-sparql-exceptions"></a>
-
-****
 + **`BadRequestException`**   –   *Message*: `The SERVICE http://aws.amazon.com/neptune/vocab/v01/services/ml#inference expects at least 1 value for the parameter {{(parameter name)}}, found zero.`
 + **`BadRequestException`**   –   *Message*: `The SERVICE http://aws.amazon.com/neptune/vocab/v01/services/ml#inference expects at most 1 value for the parameter {{(parameter name)}}, found {{(a number)}} values.`
 + **`BadRequestException`**   –   *Message*: `Invalid predicate {{(predicate name)}} provided for external service http://aws.amazon.com/neptune/vocab/v01/services/ml#inference query.`

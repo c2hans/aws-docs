@@ -78,5 +78,5 @@ Several encryption mechanisms are enabled with in-transit encryption. These are 
   + HTTP protocol communication with user interfaces such as Spark History Server and HTTPS-enabled file servers is encrypted using Spark's SSL configuration. For more information, see [SSL Configuration](https://spark.apache.org/docs/latest/security.html#ssl-configuration) in Spark documentation.
 
   For more information, see [Spark security settings](http://spark.apache.org/docs/latest/security.html).
-+ You should allow only encrypted connections over HTTPS (TLS) using [the aws:SecureTransport condition](https://docs.aws.amazon.com//IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_Boolean) on Amazon S3 bucket IAM policies.
++ You should allow only encrypted connections over HTTPS (TLS) using [the aws:SecureTransport condition](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_Boolean) on Amazon S3 bucket IAM policies.
 + Query results that stream to JDBC or ODBC clients are encrypted using TLS.

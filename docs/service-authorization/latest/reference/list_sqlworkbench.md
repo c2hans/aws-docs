@@ -29,8 +29,6 @@ AWS SQL Workbench has no API operations that can be used in the `Actions` elemen
 
 The following actions are defined by AWS SQL Workbench but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 - **   [AssociateConnectionWithChart](https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html)  **
   - **Description:** Grants permission to associate connection to a chart
   - **Resource types (\*required):** [chart\*](#list_sqlworkbench-resource-chart) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_sqlworkbench-aws_ResourceTag___TagKey_)
@@ -516,8 +514,6 @@ The following actions are defined by AWS SQL Workbench but are not directly invo
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
 
-****
-
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
 |  [chart](https://docs.aws.amazon.com/redshift/latest/mgmt/query-editor-v2.html)  | arn:${Partition}:sqlworkbench:${Region}:${Account}:chart/${ResourceId} | [aws:ResourceTag/${TagKey}](#list_sqlworkbench-aws_ResourceTag___TagKey_) |
@@ -529,8 +525,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_sqlworkbench-policy-keys"></a>
 
 AWS SQL Workbench defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

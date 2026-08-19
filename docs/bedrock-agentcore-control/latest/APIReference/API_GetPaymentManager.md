@@ -42,6 +42,7 @@ Content-type: application/json
    "authorizerType": "string",
    "createdAt": "string",
    "description": "string",
+   "kmsKeyArn": "string",
    "lastUpdatedAt": "string",
    "name": "string",
    "paymentManagerArn": "string",
@@ -84,7 +85,13 @@ Type: Timestamp
 The description of the payment manager.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 4096.
-Pattern: `[a-zA-Z0-9\s]+`
+Pattern: `[^\p{C}]*`
+
+ ** [kmsKeyArn](#API_GetPaymentManager_ResponseSyntax) **   <a name="bedrockagentcorecontrol-GetPaymentManager-response-kmsKeyArn"></a>
+The Amazon Resource Name (ARN) of the AWS KMS key used to encrypt sensitive payment manager data at rest, if configured.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 2048.
+Pattern: `arn:aws(|-cn|-us-gov):kms:[a-zA-Z0-9-]*:[0-9]{12}:key/[a-zA-Z0-9-]{36}`
 
  ** [lastUpdatedAt](#API_GetPaymentManager_ResponseSyntax) **   <a name="bedrockagentcorecontrol-GetPaymentManager-response-lastUpdatedAt"></a>
 The timestamp when the payment manager was last updated.

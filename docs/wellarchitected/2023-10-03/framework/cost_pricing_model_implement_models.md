@@ -7,8 +7,6 @@ This is an earlier version of the AWS Well-Architected Framework. For the latest
 # COST07-BP04 Implement pricing models for all components of this workload
 <a name="cost_pricing_model_implement_models"></a>
 
-****
-
 |  |
 | --- |
 | This best practice was updated with new guidance on December 6, 2023. |

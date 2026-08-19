@@ -9,8 +9,6 @@ Amazon RDS supports Oracle Enterprise Manager (OEM). OEM is the Oracle product l
 
 Amazon RDS supports OEM on Oracle Database 19c non-CDBs or CDBs, 21c CDBs, and 26ai CDBs. The following table describes the supported OEM options.
 
-****
-
 | Option | Option ID | Supported OEM releases |
 | --- | --- | --- |
 | [OEM Database Express](Appendix.Oracle.Options.OEM_DBControl.md) | `OEM` | OEM Database Express 19c |

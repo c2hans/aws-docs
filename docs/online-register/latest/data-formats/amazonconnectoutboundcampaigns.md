@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon Connect Outbound Campaigns provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="connect-campaigns-DescribeCampaign"></a>[DescribeCampaign](https://docs.aws.amazon.com/connect/latest/adminguide/enable-outbound-campaigns.html) | Describe a specific campaign | Read |

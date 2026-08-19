@@ -78,8 +78,6 @@ This time the script looks for the files that are in `/home/elemental`, and rest
 
 As a result of the restore command, the following data from the backup is restored on the nodes:
 
-****
-
 | Node | Worker nodes | Secondary Conductor | Primary Conductor |
 | --- | --- | --- | --- |
 | Licenses | Yes | Yes | Yes |

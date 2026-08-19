@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsr
 
 AWS Resource Explorer provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="resource-explorer-2-BatchGetView"></a>[BatchGetView](https://docs.aws.amazon.com/resource-explorer/latest/apireference/API_BatchGetView.html) | Retrieve details about views that you specify by a list of ARNs | Read |

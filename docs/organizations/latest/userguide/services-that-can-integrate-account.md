@@ -114,7 +114,7 @@ Only a user or role in the Organizations management account can configure a memb
 **Note**
 You can designate only one member account as a delegated administrator for Account Management in your organization.
 
-For general instructions on how to configure a delegation policy, see [Create a resource-based delegation policy with AWS OrganizationsUpdate a resource-based delegation policy with AWS Organizations](orgs-policy-delegate.md).
+For general instructions on how to configure a delegation policy, see [Create a resource-based delegation policy with AWS Organizations](orgs-policy-delegate.md).
 
 ------
 #### [ AWS CLI, AWS API ]

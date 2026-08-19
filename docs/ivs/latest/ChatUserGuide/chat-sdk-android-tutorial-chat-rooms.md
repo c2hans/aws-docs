@@ -581,7 +581,7 @@ dependencies {
 }
 ```
 
-To retrieve a chat token, we need to make a POST HTTP request from our `chatterbox` app. We define the request in an interface for Retrofit to implement. (See [Retrofit documentation](https://square.github.io/retrofit/). Also familiarize yourself with the [CreateChatToken](https://docs.aws.amazon.com//ivs/latest/ChatAPIReference/API_CreateChatToken.html#API_CreateChatToken_RequestBody) operation specification.)
+To retrieve a chat token, we need to make a POST HTTP request from our `chatterbox` app. We define the request in an interface for Retrofit to implement. (See [Retrofit documentation](https://square.github.io/retrofit/). Also familiarize yourself with the [CreateChatToken](https://docs.aws.amazon.com/ivs/latest/ChatAPIReference/API_CreateChatToken.html#API_CreateChatToken_RequestBody) operation specification.)
 
 **Kotlin**:
 

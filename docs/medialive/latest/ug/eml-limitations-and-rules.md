@@ -18,8 +18,6 @@ MediaLive also includes quotas, which you can change. For more information about
 ## Limits for inputs
 <a name="limits-inputs"></a>
 
-****
-
 - **Input number, push inputs**
   - You can attach 0 to 2 push inputs to a channel.
 
@@ -54,8 +52,6 @@ MediaLive also includes quotas, which you can change. For more information about
 ## Limits for outputs
 <a name="limits-outputs"></a>
 
-****
-
 - **Output, types**
   - Maximum of one Archive output groups in a channel. Maximum of one MediaConnect Router output group in a channel.<br />Maximum of five outputs in a MediaConnect Router output group.<br />Maximum of 100 Mbps on a MediaConnect Router output.<br />MediaConnect Router output groups are not yet supported in opt-in regions.<br />For information about output types, see [Output types supported in MediaLive](outputs-supported-containers.md).
 
@@ -75,8 +71,6 @@ MediaLive also includes quotas, which you can change. For more information about
 
 ## Limits for other features
 <a name="limits-other-features"></a>
-
-****
 
 - **Color space, 3D LUT files in a channel**
   - Maximum of 8 files in each channel.For information about using 3D LUT files when converting color space, see [Getting ready to use 3D LUTs files with MediaLive](color-space-process-with-lut.md).
@@ -119,8 +113,6 @@ MediaLive also includes quotas, which you can change. For more information about
 <a name="limits-api"></a>
 
 The following limits exist for API requests. For information about the current maximums (quotas) and about how to request an increase on any quota, see the [Service Quotas](https://console.aws.amazon.com/servicequotas/home?region=us-east-1#!/services/medialive/quotas) console.
-
-****
 
 - **Frequency of API requests, not including requests to the [thumbnails](thumbnails.md) API**
   - Maximum 20 steady-state TPS (transactions per second). <br />This limit is not a quota that you can increase.

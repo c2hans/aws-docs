@@ -14,8 +14,6 @@ Detach an EBS volume from an EC2 instance. For Linux instances, use this change 
 ## Change Type Details
 <a name="ct-2d55p1d7z6w3d-MAEd-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2d55p1d7z6w3d |

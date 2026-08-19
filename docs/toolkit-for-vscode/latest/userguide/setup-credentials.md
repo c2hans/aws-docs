@@ -14,13 +14,13 @@ The following sections describe how to set up IAM credentials to authenticate wi
 **Important**
 Before setting up IAM credentials to authenticate with your AWS account, note that:
 If you've already set IAM credentials through another AWS service (such as the AWS CLI), then the AWS Toolkit for Visual Studio Code automatically detects those credentials and makes them available in VS Code.
-AWS recommends using IAM Identity Center authentication. For additional information about AWS IAM best practices, see the [Security best practice in IAM](https://docs.aws.amazon.com//IAM/latest/UserGuide/best-practices.html) section of the AWS *Identity and Access Management* User Guide.
-To avoid security risks, don't use IAM users for authentication when developing purpose-built software or working with real data. Instead, use federation with an identity provider such as [What is IAM Identity Center?](https://docs.aws.amazon.com//singlesignon/latest/userguide/what-is.html) in the *AWS IAM Identity Center User Guide*.
+AWS recommends using IAM Identity Center authentication. For additional information about AWS IAM best practices, see the [Security best practice in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html) section of the AWS *Identity and Access Management* User Guide.
+To avoid security risks, don't use IAM users for authentication when developing purpose-built software or working with real data. Instead, use federation with an identity provider such as [What is IAM Identity Center?](https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html) in the *AWS IAM Identity Center User Guide*.
 
 ## Creating an IAM user
 <a name="setup-credentials-iam"></a>
 
-Before you can set up the AWS Toolkit for Visual Studio Code to authenticate with your AWS account, you need to complete **Step 1: Create your IAM user** and **Step 2: Get your access keys** in the [Authenticate using long-term credentials](https://docs.aws.amazon.com//sdkref/latest/guide/access-iam-users.html) topic in the *AWS SDKs and Tools Reference Guide*.
+Before you can set up the AWS Toolkit for Visual Studio Code to authenticate with your AWS account, you need to complete **Step 1: Create your IAM user** and **Step 2: Get your access keys** in the [Authenticate using long-term credentials](https://docs.aws.amazon.com/sdkref/latest/guide/access-iam-users.html) topic in the *AWS SDKs and Tools Reference Guide*.
 
 **Note**
 **Step 3: Update the shared credentials file** in the *AWS SDKs and Tools Reference Guide* is optional.

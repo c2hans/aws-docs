@@ -14,8 +14,6 @@ Share an AMI with multiple AMS accounts or Organizational Units (OUs).
 ## Change Type Details
 <a name="ct-1eiczxw8ihc18-MAAs-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1eiczxw8ihc18 |

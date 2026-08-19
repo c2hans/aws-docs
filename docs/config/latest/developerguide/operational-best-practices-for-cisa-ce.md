@@ -9,8 +9,6 @@ Conformance packs provide a general-purpose compliance framework designed to ena
 
 The following provides a sample mapping between the Cybersecurity & Infrastructure Security Agency (CISA) Cyber Essentials (CE) and AWS managed Config rules. Each AWS Config rule applies to a specific AWS resource, and relates to one or more CISA CE controls. A CISA CE control can be related to multiple AWS Config rules. Refer to the table below for more detail and guidance related to these mappings.
 
-****
-
 | Control ID  | Control Description  | AWS Config Rule  | Guidance  |
 | --- | --- | --- | --- |
 | Your Staff-1 | Develop a culture of awareness to encourage employees to make good choices online. | security-awareness-program-exists(Process Check) | Establish and maintain a security awareness program for your organization. Security awareness programs educate employees on how to protect their organization from various security breaches or incidents.  |

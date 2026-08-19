@@ -72,8 +72,6 @@ You must save the file with a `.json` extension and the inventory you define mus
 
 After you create the file, you must save it on the node. The following table shows the location where custom inventory JSON files must be stored on the node.
 
-****
-
 | Operating system | Path |
 | --- | --- |
 | Linux | /var/lib/amazon/ssm/{{node-id}}/inventory/custom |
@@ -241,8 +239,6 @@ The output of this command doesn't show the deletion progress. For this reason, 
 <a name="delete-custom-inventory-status"></a>
 
 You can check the status of a delete operation by using the `describe-inventory-deletions` AWS CLI command. You can specify a deletion ID to view the status of a specific delete operation. Or, you can omit the deletion ID to view a list of all deletions run in the last 30 days.
-
-****
 
 1. Run the following command to view the status of a deletion operation. The system returned the deletion ID in the delete-inventory summary.
 

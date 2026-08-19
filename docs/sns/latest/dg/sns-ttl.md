@@ -14,8 +14,6 @@ The TTL message attribute is used to specify expiration metadata about a message
 
 The following is a list of the TTL message attributes for push notification services that you can use to set when using the AWS SDKs or query API:
 
-****
-
 | Push notification service | TTL message attribute |
 | --- | --- |
 | Amazon Device Messaging (ADM) | AWS.SNS.MOBILE.ADM.TTL |

@@ -89,7 +89,7 @@ An Amazon EC2 launch template AWS PCS uses to launch compute nodes.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `IamInstanceProfileArn`  <a name="cfn-pcs-computenodegroup-iaminstanceprofilearn"></a>
-The Amazon Resource Name (ARN) of the IAM instance profile used to pass an IAM role when launching EC2 instances. The role contained in your instance profile must have the `pcs:RegisterComputeNodeGroupInstance` permission and the role name must start with `AWSPCS` or must have the path `/aws-pcs/`. For more information, see [IAM instance profiles for AWS PCS](https://docs.aws.amazon.com//pcs/latest/userguide/security-instance-profiles.html) in the *AWS PCS User Guide*.
+The Amazon Resource Name (ARN) of the IAM instance profile used to pass an IAM role when launching EC2 instances. The role contained in your instance profile must have the `pcs:RegisterComputeNodeGroupInstance` permission and the role name must start with `AWSPCS` or must have the path `/aws-pcs/`. For more information, see [IAM instance profiles for AWS PCS](https://docs.aws.amazon.com/pcs/latest/userguide/security-instance-profiles.html) in the *AWS PCS User Guide*.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^arn:aws([a-zA-Z-]{0,10})?:iam::[0-9]{12}:instance-profile/.{1,128}$`
@@ -175,4 +175,4 @@ The generated unique ID of the compute node group.
 `Status`  <a name="Status-fn::getatt"></a>
 The provisioning status of the compute node group.
 The provisioning status doesn't indicate the overall health of the compute node group.
-The resource enters the `SUSPENDING` and `SUSPENDED` states when the scheduler is beyond end of life and we have suspended the cluster. When in these states, you can't use the cluster. The cluster controller is down and all compute instances are terminated. The resources still count toward your service quotas. You can delete a resource if its status is `SUSPENDED`. For more information, see [Frequently asked questions about Slurm versions in AWS PCS](https://docs.aws.amazon.com//pcs/latest/userguide/slurm-versions_faq.html) in the *AWS PCS User Guide*.
+The resource enters the `SUSPENDING` and `SUSPENDED` states when the scheduler is beyond end of life and we have suspended the cluster. When in these states, you can't use the cluster. The cluster controller is down and all compute instances are terminated. The resources still count toward your service quotas. You can delete a resource if its status is `SUSPENDED`. For more information, see [Frequently asked questions about Slurm versions in AWS PCS](https://docs.aws.amazon.com/pcs/latest/userguide/slurm-versions_faq.html) in the *AWS PCS User Guide*.

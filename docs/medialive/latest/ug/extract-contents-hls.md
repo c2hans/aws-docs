@@ -9,8 +9,6 @@ The content in an HLS container is always a transport stream (TS) that contains 
 
 Obtain identifying information from the content provider.
 
-****
-
 |  Asset  |  Details  | Information to obtain |
 | --- | --- | --- |
 | Video | You don't need identifying information. MediaLive always extracts the single video asset. |  |

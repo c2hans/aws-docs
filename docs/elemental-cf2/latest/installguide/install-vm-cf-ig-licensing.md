@@ -9,8 +9,6 @@ This is version 2.18 of the AWS Elemental Conductor File documentation. This is 
 
 Install a valid license file for each AWS Elemental system using the following steps described in the following table. Detailed instructions for each step follow.
 
-****
-
 | Step | Where to Perform Step | Start Step With | Finish Step With |
 | --- | --- | --- | --- |
 | Step a: Retrieve Activation Code | Your workstation | Activation email | Activation code |

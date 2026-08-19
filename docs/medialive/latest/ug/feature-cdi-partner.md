@@ -21,8 +21,6 @@ When you create a CDI input, you must decide whether you need to create a *regul
 
 The following table describes the type of input to create depending on the workflow.
 
-****
-
 - **No (single-pipeline channel)**
   - **You want to set up this input for automatic input failover:** No / **Type of inputs to create:** One [regular CDI input](input-create-cdi-push.md).
   - **You want to set up this input for automatic input failover:** Yes / **Type of inputs to create:** One set of partner CDI inputs—two CDI inputs set up as partners.

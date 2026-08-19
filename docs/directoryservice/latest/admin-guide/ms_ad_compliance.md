@@ -12,8 +12,6 @@ You can use AWS Managed Microsoft AD to support your Active Directory–aware ap
 
 AWS Managed Microsoft AD has undergone auditing for the following standards and is eligible for use as part of solutions for which you need to obtain compliance certification.
 
-****
-
 |  |  |
 | --- |--- |
 | ![FedRamp Logo](http://docs.aws.amazon.com/directoryservice/latest/admin-guide/images/FedRAMP.png) | AWS Managed Microsoft AD meets Federal Risk and Authorization Management Program (FedRAMP) security requirements and has received a FedRAMP Joint Authorization Board (JAB) Provisional Authority to Operate (P-ATO) at the FedRAMP Moderate and High Baseline. For more information about FedRAMP, see [FedRAMP compliance](https://aws.amazon.com/compliance/fedramp/). |

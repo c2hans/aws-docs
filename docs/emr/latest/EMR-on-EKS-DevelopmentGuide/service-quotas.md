@@ -10,8 +10,6 @@ The following are the service endpoints and service quotas for Amazon EMR on EKS
 ## Service endpoints
 <a name="service-endpoints"></a>
 
-****
-
 | AWS Region name | Code | Endpoint | Protocol |
 | --- | --- | --- | --- |
 | US East (N. Virginia) | us-east-1 | emr-containers.us-east-1.amazonaws.com | HTTPS |
@@ -50,8 +48,6 @@ The following are the service endpoints and service quotas for Amazon EMR on EKS
 <a name="service-quota-reference"></a>
 
 Amazon EMR on EKS throttles the following API requests for each AWS account on a per-Region basis. For more information about how throttling is applied, see [API Request Throttling](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/throttling.html) in the *Amazon EC2 API Reference*. You can request an increase to API throttling quotas for your AWS account, following the guide that follows.
-
-****
 
 | API action | Bucket maximum capacity | Bucket refill rate (per second) |
 | --- | --- | --- |

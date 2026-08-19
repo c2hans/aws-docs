@@ -9,8 +9,6 @@ If you plan to include captions in an output group, you must determine if MediaL
 
 Obtain the following information about the captions source.
 
-****
-
 <table>
 <thead>
   <tr><th>Information to obtain</th><th>Verify the following</th></tr>

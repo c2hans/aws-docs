@@ -8,10 +8,10 @@ AWS Application Discovery Service is no longer open to new customers. Alternativ
 <a name="gen-prep-agents"></a>
 
 The following are the prerequisites and the tasks that you must perform before you can successfully install the AWS Application Discovery Agent (Discovery Agent).
-+ You must set an [AWS Migration Hub home region](https://docs.aws.amazon.com//migrationhub/latest/ug/home-region.html) before you begin installing Discovery Agent.
++ You must set an [AWS Migration Hub home region](https://docs.aws.amazon.com/migrationhub/latest/ug/home-region.html) before you begin installing Discovery Agent.
 + If you have a *1.x* version of the agent installed, it must be removed before installing the latest version.
 + If the host that the agent is being installed on runs Linux, then verify that the host at least supports the Intel i686 CPU architecture (also known as the P6 micro architecture).
-+ Generate [access keys](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_credentials_access-keys.html) needed to install Discovery Agent.
++ Generate [access keys](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html) needed to install Discovery Agent.
 + Verify that your operating system (OS) environment is supported:
   + **Linux**
     + Amazon Linux 2012.03, 2015.03

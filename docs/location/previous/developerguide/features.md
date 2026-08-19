@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/feature
 <a name="features"></a>
 
 **Note**
-We released a new version of the Places, Maps, and Routes APIs, see the updated [Developer Guide](https://docs.aws.amazon.com//location/latest/developerguide/what-is.html) for revised information and new topics, such as [Geofences](https://docs.aws.amazon.com//location/latest/developerguide/geofences.html) and [Trackers](https://docs.aws.amazon.com//location/latest/developerguide/trackers.html).
+We released a new version of the Places, Maps, and Routes APIs, see the updated [Developer Guide](https://docs.aws.amazon.com/location/latest/developerguide/what-is.html) for revised information and new topics, such as [Geofences](https://docs.aws.amazon.com/location/latest/developerguide/geofences.html) and [Trackers](https://docs.aws.amazon.com/location/latest/developerguide/trackers.html).
 
 Amazon Location offers a comprehensive set of features to enhance your location-based applications and services. This page provides an overview of the key capabilities available, including interactive maps, geocoding for address conversion, geofencing to monitor spatial boundaries, device tracking for asset management, and routing algorithms for optimized travel planning. Leveraging these features, you can build rich, location-aware experiences tailored to your specific use cases, whether it's delivering real-time location intelligence, enabling location-based services, or optimizing logistics and transportation operations.
 

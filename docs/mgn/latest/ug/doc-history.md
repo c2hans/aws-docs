@@ -11,8 +11,6 @@ The following is the latest major policy updates for AWS Transform MGN. We also 
 
 For additional details regarding new features and major updates, [see the MGN release notes](mgn-release-notes.md).
 
-****
-
 | Change | Description | Date |
 | --- | --- | --- |
 | Added Amazon Linux 2023 with kernel 6.18 support | Added Amazon Linux 2023 with kernel 6.18 to the list of supported Linux operating systems. | August 5, 2026 |

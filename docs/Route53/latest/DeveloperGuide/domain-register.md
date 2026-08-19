@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-reg
 **Register a new domain or update name servers for an existing domain**
 You can use Amazon Route 53 with domains you register with Route 53, and with domains you have registered with other DNS providers. Depending on your DNS provider, choose one of the following procedures to register and use a new domain with Route 53:
 + For registering a new domain, see [To register a new domain using Route 53](#domain-register-procedure-section).
-+ For an existing domain, see [Making Amazon Route 53 the DNS service for an existing domainMaking Route 53 the DNS service for an existing domain](MigratingDNS.md).
++ For an existing domain, see [Making Amazon Route 53 the DNS service for an existing domain](MigratingDNS.md).
 + For moving a domain to another registrar, see [update name servers when you want to use another DNS service](domain-register-other-dns-service.md).
 
 **Considerations for domain registration**

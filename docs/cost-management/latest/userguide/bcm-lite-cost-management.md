@@ -1,0 +1,20 @@
+---
+source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/bcm-lite-cost-management.html
+---
+
+# Using AWS Billing and Cost Management console with our new AWS experience
+<a name="bcm-lite-cost-management"></a>
+
+**Warning**
+We're currently releasing our new experience to a limited number of customers. You might not be able to access this experience yet.
+
+When you sign up for AWS using [Sign up for AWS (new)](https://docs.aws.amazon.com/accounts/latest/reference/sign-in-new.html), you use AWS Settings to set up your billing, create spend limits to control your costs, and retrieve and pay invoices. You use AWS Billing and Cost Management to create budgets, analyze, and optimize your costs.
+
+Sign up for AWS (advanced) supports many features for billing and cost management, but some of them aren't required for customers who have an AWS environment with preconfigured defaults. The following table shows what you can do in the AWS Billing and Cost Management console, in the AWS Settings console, and what's not available for this experience. If you want to use any of the features that are not available, you need to [Sign up for AWS (advanced)](https://docs.aws.amazon.com/accounts/latest/reference/getting-started.html), or [activate advanced features](https://docs.aws.amazon.com/accounts/latest/reference/activate-advanced-features.html) for your account.
+
+| Included in the AWS Billing and Cost Management console | Included in AWS Settings | Not available in this experience |
+| --- | --- | --- |
+|  + [Budgets](bcm-lite-use-budget.md)<br />+ [Cost Explorer](bcm-lite-cost-explorer.md)<br />+ [Cost Optimization Hub](bcm-lite-coh-savings.md)<br />+ [Free Tier](https://docs.aws.amazon.com/accounts/latest/reference/bcm-lite-free-tier.html)  |  + [Invoices](https://docs.aws.amazon.com/accounts/latest/reference/view-billing-history.html)<br />+ [Payment methods](https://docs.aws.amazon.com/accounts/latest/reference/manage-payment-method.html)<br />+ [Tax settings](https://docs.aws.amazon.com/accounts/latest/reference/manage-tax-registration.html)<br />+ [Credits](https://docs.aws.amazon.com/accounts/latest/reference/view-redeem-credits.html)<br />+ [Spend limits](https://docs.aws.amazon.com/accounts/latest/reference/create-spend-limit.html)  |  + [Savings Plans](https://docs.aws.amazon.com/savingsplans/latest/userguide/what-is-savings-plans.html)<br />+ [Reserved Instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-reserved-instances.html)<br />+ [Cost Anomaly Detection](https://docs.aws.amazon.com/cost-management/latest/userguide/manage-ad.html)<br />+ [Cost Categories](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/manage-cost-categories.html)<br />+ [Data Exports / CUR](https://docs.aws.amazon.com/cur/latest/userguide/what-is-cur.html)<br />+ [Billing and Cost Management Dashboards](https://docs.aws.amazon.com/cost-management/latest/userguide/bcm-dashboards.html)<br />+ [Billing Views](https://docs.aws.amazon.com/cost-management/latest/userguide/billing-view-getting-started.html)<br />+ [Billing Conductor](https://docs.aws.amazon.com/billingconductor/latest/userguide/what-is-billingconductor.html)<br />+ [Console Pricing Calculator](https://docs.aws.amazon.com/pricing-calculator/latest/userguide/what-is-pricing-calculator.html)<br />+ [Carbon Footprint Tool](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/what-is-ccft.html)<br />+ [Budget Reports](https://docs.aws.amazon.com/cost-management/latest/userguide/reporting-cost-budget.html)  |
+
+**Note**
+If you have active sessions for a project and for an IAM user, you might get redirected to the AWS Billing and Cost Management console. To use the AWS Billing and Cost Management console, sign out of any AWS account that you access as an IAM user.

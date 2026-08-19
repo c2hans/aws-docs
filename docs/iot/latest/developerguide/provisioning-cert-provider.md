@@ -7,12 +7,12 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/provisioning-c
 
 You can create an AWS IoT Core certificate provider to sign certificate signing requests (CSRs) in AWS IoT fleet provisioning. A certificate provider references a Lambda function and the [`CreateCertificateFromCsr` MQTT API for fleet provisioning](https://docs.aws.amazon.com/iot/latest/developerguide/fleet-provision-api.html#create-cert-csr). The Lambda function accepts a CSR and returns a signed client certificate.
 
-When you don't have a certificate provider with your AWS account, the [CreateCertificateFromCsr MQTT API](https://docs.aws.amazon.com//iot/latest/developerguide/fleet-provision-api.html#create-cert-csr) is called in fleet provisioning to generate the certificate from a CSR. After you create a certificate provider, the behavior of the [CreateCertificateFromCsr MQTT API](https://docs.aws.amazon.com//iot/latest/developerguide/fleet-provision-api.html#create-cert-csr) will change and all calls to this MQTT API will invoke the certificate provider to issue the certificate.
+When you don't have a certificate provider with your AWS account, the [CreateCertificateFromCsr MQTT API](https://docs.aws.amazon.com/iot/latest/developerguide/fleet-provision-api.html#create-cert-csr) is called in fleet provisioning to generate the certificate from a CSR. After you create a certificate provider, the behavior of the [CreateCertificateFromCsr MQTT API](https://docs.aws.amazon.com/iot/latest/developerguide/fleet-provision-api.html#create-cert-csr) will change and all calls to this MQTT API will invoke the certificate provider to issue the certificate.
 
 With AWS IoT Core certificate provider, you can implement solutions that utilize private certificate authorities (CAs) such as [AWS Private CA](https://docs.aws.amazon.com/privateca/latest/userguide/PcaWelcome.html), other publicly trusted CAs, or your own Public Key Infrastructure (PKI) to sign the CSR. In addition, you can use certificate provider to customize your client certificate's fields such as validity periods, signing algorithms, issuers, and extensions.
 
 **Important**
-You can only create one certificate provider per AWS account. The signing behavior change applies to the entire fleet that calls the [CreateCertificateFromCsr MQTT API](https://docs.aws.amazon.com//iot/latest/developerguide/fleet-provision-api.html#create-cert-csr) until you delete the certificate provider from your AWS account.
+You can only create one certificate provider per AWS account. The signing behavior change applies to the entire fleet that calls the [CreateCertificateFromCsr MQTT API](https://docs.aws.amazon.com/iot/latest/developerguide/fleet-provision-api.html#create-cert-csr) until you delete the certificate provider from your AWS account.
 
 **Topics**
 + [How self-managed certificate signing works in fleet provisioning](#provisioning-cert-provider-how-it-works)
@@ -28,13 +28,13 @@ You can only create one certificate provider per AWS account. The signing behavi
 ### Key concepts
 <a name="provisioning-cert-provider-concepts"></a>
 
-The following concepts provide details that can help you understand how self-managed certificate signing works in AWS IoT fleet provisioning. For more information, see [Provisioning devices that don't have device certificates using fleet provisioning](https://docs.aws.amazon.com//iot/latest/developerguide/provision-wo-cert.html).
+The following concepts provide details that can help you understand how self-managed certificate signing works in AWS IoT fleet provisioning. For more information, see [Provisioning devices that don't have device certificates using fleet provisioning](https://docs.aws.amazon.com/iot/latest/developerguide/provision-wo-cert.html).
 
 **AWS IoT fleet provisioning**
 With AWS IoT fleet provisioning (short for fleet provisioning), AWS IoT Core generates and securely delivers device certificates to your devices when they connect to AWS IoT Core for the first time. You can use fleet provisioning to connect devices that don't have device certificates to AWS IoT Core.
 
 **Certificate signing request (CSR)**
-In the process of fleet provisioning, a device makes a request to AWS IoT Core through the [fleet provisioning MQTT APIs](https://docs.aws.amazon.com//iot/latest/developerguide/fleet-provision-api.html). This request includes a certificate signing request (CSR), which will be signed to create a client certificate.
+In the process of fleet provisioning, a device makes a request to AWS IoT Core through the [fleet provisioning MQTT APIs](https://docs.aws.amazon.com/iot/latest/developerguide/fleet-provision-api.html). This request includes a certificate signing request (CSR), which will be signed to create a client certificate.
 
 **AWS managed certificate signing in fleet provisioning**
 AWS managed is the default setting for certificate signing in fleet provisioning. With AWS managed certificate signing, AWS IoT Core will sign CSRs using its own CAs.
@@ -53,7 +53,7 @@ The following diagram is a simplified illustration of how self-certificate signi
 ![AWS IoT Core certificate provider for fleet provisioning](http://docs.aws.amazon.com/iot/latest/developerguide/images/provisioning-cert-provider.png)
 
 + When a new IoT device is manufactured or introduced to the fleet, it needs client certificates to authenticate itself with AWS IoT Core.
-+ As part of the fleet provisioning process, the device makes a request to AWS IoT Core for client certificates through the [fleet provisioning MQTT APIs](https://docs.aws.amazon.com//iot/latest/developerguide/fleet-provision-api.html). This request includes a certificate signing request (CSR).
++ As part of the fleet provisioning process, the device makes a request to AWS IoT Core for client certificates through the [fleet provisioning MQTT APIs](https://docs.aws.amazon.com/iot/latest/developerguide/fleet-provision-api.html). This request includes a certificate signing request (CSR).
 + AWS IoT Core invokes the certificate provider and passes the CSR as input to the provider.
 + The certificate provider takes the CSR as input and issues a client certificate.
 
@@ -126,9 +126,9 @@ def lambda_handler(event, context):
 Certificates returned by the Lambda function must have the same subject name and public key as the Certificate Signing Request (CSR).
 The Lambda function must finish running in 5 seconds.
 The Lambda function must be in the same AWS account and Region as the certificate provider resource.
-The AWS IoT service principal must be granted the invoke permission to the Lambda function. To avoid [confused deputy issues](https://docs.aws.amazon.com//IAM/latest/UserGuide/confused-deputy.html), we recommend that you set `sourceArn` and `sourceAccount` for the invoke permissions. For more information, see [Cross-service confused deputy prevention](https://docs.aws.amazon.com//iot/latest/developerguide/cross-service-confused-deputy-prevention.html).
+The AWS IoT service principal must be granted the invoke permission to the Lambda function. To avoid [confused deputy issues](https://docs.aws.amazon.com/IAM/latest/UserGuide/confused-deputy.html), we recommend that you set `sourceArn` and `sourceAccount` for the invoke permissions. For more information, see [Cross-service confused deputy prevention](https://docs.aws.amazon.com/iot/latest/developerguide/cross-service-confused-deputy-prevention.html).
 
-The following resource-based policy example for [Lambda](https://docs.aws.amazon.com//lambda/latest/dg/access-control-resource-based.html) grants AWS IoT the permission to invoke the Lambda function:
+The following resource-based policy example for [Lambda](https://docs.aws.amazon.com/lambda/latest/dg/access-control-resource-based.html) grants AWS IoT the permission to invoke the Lambda function:
 
 ****
 
@@ -187,14 +187,14 @@ The following shows an example output for this command:
 }
 ```
 
-For more information, see `[CreateCertificateProvider](https://docs.aws.amazon.com//iot/latest/apireference/API_CreateCertificateProvider.html)` from the *AWS IoT* *API Reference*.
+For more information, see `[CreateCertificateProvider](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateCertificateProvider.html)` from the *AWS IoT* *API Reference*.
 
 ### AWS Management Console
 <a name="provisioning-self-certificate-signing-console"></a>
 
 To choose self-managed certificate signing using AWS Management Console, follow the steps:
 
-1. Go to the [AWS IoT console](https://console.aws.amazon.com//iot/home).
+1. Go to the [AWS IoT console](https://console.aws.amazon.com/iot/home).
 
 1. On the left navigation, under **Security**, choose **Certificate signing**.
 
@@ -233,7 +233,7 @@ The following shows an example output for this command:
 }
 ```
 
-For more information, see `[CreateCertificateProvider](https://docs.aws.amazon.com//iot/latest/apireference/API_CreateCertificateProvider.html)` from the *AWS IoT* *API Reference*.
+For more information, see `[CreateCertificateProvider](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateCertificateProvider.html)` from the *AWS IoT* *API Reference*.
 
 ### Update certificate provider
 <a name="provisioning-update-cert-provider"></a>
@@ -256,7 +256,7 @@ The following shows an example output for this command:
 }
 ```
 
-For more information, see `[UpdateCertificateProvider](https://docs.aws.amazon.com//iot/latest/apireference/API_UpdateCertificateProvider.html)` from the *AWS IoT** API Reference*.
+For more information, see `[UpdateCertificateProvider](https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateCertificateProvider.html)` from the *AWS IoT** API Reference*.
 
 ### Describe certificate provider
 <a name="provisioning-describe-cert-provider"></a>
@@ -281,7 +281,7 @@ The following shows an example output for this command:
 }
 ```
 
-For more information, see `[DescribeCertificateProvider](https://docs.aws.amazon.com//iot/latest/apireference/API_DescribeCertificateProvider.html)` from the *AWS IoT* *API Reference*.
+For more information, see `[DescribeCertificateProvider](https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeCertificateProvider.html)` from the *AWS IoT* *API Reference*.
 
 ### Delete certificate provider
 <a name="provisioning-delete-cert-provider"></a>
@@ -294,7 +294,7 @@ aws iot delete-certificate-provider --certificateProviderName {{my-certificate-p
 
 This command doesn't produce any output.
 
-For more information, see `[DeleteCertificateProvider](https://docs.aws.amazon.com//iot/latest/apireference/API_DeleteCertificateProvider.html)` from the *AWS IoT* *API Reference*.
+For more information, see `[DeleteCertificateProvider](https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteCertificateProvider.html)` from the *AWS IoT* *API Reference*.
 
 ### List certificate provider
 <a name="provisioning-list-cert-provider"></a>
@@ -318,4 +318,4 @@ The following shows an example output for this command:
 }
 ```
 
-For more information, see [`ListCertificateProvider`](https://docs.aws.amazon.com//iot/latest/apireference/API_ListCertificateProviders.html) from the *AWS IoT* *API Reference*.
+For more information, see [`ListCertificateProvider`](https://docs.aws.amazon.com/iot/latest/apireference/API_ListCertificateProviders.html) from the *AWS IoT* *API Reference*.

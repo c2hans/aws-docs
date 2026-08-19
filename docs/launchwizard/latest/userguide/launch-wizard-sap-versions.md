@@ -15,8 +15,6 @@ source_url: https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wiz
 
 The following table provides details of the operating systems supported by Launch Wizard for SAP deployments.
 
-****
-
 | Operating system | Supported deployment patterns |
 | --- | --- |
 | Red Hat Enterprise Linux (RHEL)\* 8.4, 8.6, 8.8, 9.0, 9.2, and 9.4 | All |
@@ -33,8 +31,6 @@ Operating system versions are supported on the basis of SAP component types. For
 <a name="launch-wizard-sap-versions-databases"></a>
 
 The following table provides details of the database versions supported by Launch Wizard for SAP deployments.
-
-****
 
 | Database | Versions | Service Pack Stack |
 | --- | --- | --- |
@@ -58,8 +54,6 @@ For more information on the supported operating systems for SAP service pack sta
 ### Applications supported with SAP HANA database
 <a name="applications-hana"></a>
 
-****
-
 | Applications | Versions |
 | --- | --- |
 | SAP NetWeaver on ABAP | [750](https://userapps.support.sap.com/sap/support/pam?hash=s%3D%26filter%3D%26o%3Dmost_viewed%257Cdesc%26st%3Dl%26rpp%3D20%26page%3D1%26pvnr%3D73554900100900000414%26pt%3Dg%257Cd%26ainstnr%3D73554900104900001064%26fclfilter%3D) and [752](https://userapps.support.sap.com/sap/support/pam?hash=s%3D%26filter%3Dfavorites%257CT%26o%3Dname%257Casc%26st%3Dl%26rpp%3D20%26page%3D1%26pvnr%3D73554900100900001597%26pt%3Dt%257CPLTFRM%26ainstnr%3D73554900104900003577%26fclfilter%3DG1%257CSAP%2520HANA%2520DATABASE%253BG2%257CLINUX%2520ON%2520X86_64) |
@@ -71,8 +65,6 @@ For more information on the supported operating systems for SAP service pack sta
 
 ### Applications supported with SAP ASE database
 <a name="applications-ase"></a>
-
-****
 
 | Applications | Versions |
 | --- | --- |

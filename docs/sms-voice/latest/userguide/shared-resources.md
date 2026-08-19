@@ -124,7 +124,7 @@ Consumers can use and view phone number, pool, opt-out list, or sender IDs.
 
 The owner of the resource is billed for the resource. Consumers aren't billed for resources shared with them but are billed for using resources to send messages. There aren't extra costs associated with sharing a resource.
 
-Consumers are billed for sending a message with [send-text-message](https://docs.aws.amazon.com/cli/latest/reference/pinpoint-sms-voice-v2/send-text-message.html), [send-media-message](https://docs.aws.amazon.com/cli/latest/reference/pinpoint-sms-voice-v2/send-media-message.html) or [send-voice-message](https://docs.aws.amazon.com/cli/latest/reference/pinpoint-sms-voice-v2/send-voice-message.html) and this counts against the consumers spending limits. For more information about pricing or spending limits, see [AWS End User Messaging Pricing](https://aws.amazon.com//end-user-messaging/pricing/) and [Set an SMS, MMS or voice spending limit in AWS End User Messaging SMS](spend-limit.md).
+Consumers are billed for sending a message with [send-text-message](https://docs.aws.amazon.com/cli/latest/reference/pinpoint-sms-voice-v2/send-text-message.html), [send-media-message](https://docs.aws.amazon.com/cli/latest/reference/pinpoint-sms-voice-v2/send-media-message.html) or [send-voice-message](https://docs.aws.amazon.com/cli/latest/reference/pinpoint-sms-voice-v2/send-voice-message.html) and this counts against the consumers spending limits. For more information about pricing or spending limits, see [AWS End User Messaging Pricing](https://aws.amazon.com/end-user-messaging/pricing/) and [Set an SMS, MMS or voice spending limit in AWS End User Messaging SMS](spend-limit.md).
 
 ## Instance quotas
 <a name="sharing-quotas"></a>

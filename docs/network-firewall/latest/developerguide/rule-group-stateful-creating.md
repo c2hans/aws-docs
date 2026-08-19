@@ -21,7 +21,7 @@ This section provides guidance for creating a stateful rule group.
    + Choose **Strict order** (recommended) to provide your rules in the order that you want them to be evaluated. You can then choose one or more default actions for packets that don't match any rules.
    + Choose **Action order** to have the stateful rules engine determine the evaluation order of your rules. The default action for this rule order is **Pass**, followed by **Drop**, **Reject**, and **Alert** actions. This option was previously named **Default** order.
 
-   For more information about stateful default actions for rule groups, see [Action orderAction order](suricata-rule-evaluation-order.md#suricata-default-rule-evaluation-order).
+   For more information about stateful default actions for rule groups, see [Action order](suricata-rule-evaluation-order.md#suricata-default-rule-evaluation-order).
 
    For more information about stateful rule groups, see [Working with stateful rule groups in AWS Network Firewall](stateful-rule-groups-ips.md).
 

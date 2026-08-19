@@ -16,7 +16,7 @@ For more information about security on AWS IoT Greengrass devices, see [Security
 
 To complete this tutorial, you need the following:
 + A Linux-compatible device with TPM 2.0 hardware or [NitroTPM](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/nitrotpm.html)
-+ A developer machine with Greengrass Nucleus Lite installed. For more information, see [Install the AWS IoT Greengrass Core software (console)](https://docs.aws.amazon.com//greengrass/v2/developerguide/install-greengrass-v2-console.html).
++ A developer machine with Greengrass Nucleus Lite installed. For more information, see [Install the AWS IoT Greengrass Core software (console)](https://docs.aws.amazon.com/greengrass/v2/developerguide/install-greengrass-v2-console.html).
 + Instructions in this tutorial are defined for Ubuntu 24.04 LTS.
 + Any Linux distribution that can support the [Linux TPM2 Software Stack](https://tpm2-software.github.io/) can support this mechanism.
 + A developer machine with [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) installed and configured with permissions to:
@@ -29,7 +29,7 @@ This tutorial contains instructions on how to use the TPM2 chip as a Hardware Se
 ## Step 1: Set up a NitroTPM instance
 <a name="lite-tpm-step1"></a>
 
-1. Set up a NitroTPM instance. For more information, see [NitroTPM](https://docs.aws.amazon.com//AWSEC2/latest/UserGuide/enable-nitrotpm-support-on-ami.html).
+1. Set up a NitroTPM instance. For more information, see [NitroTPM](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/enable-nitrotpm-support-on-ami.html).
 
 1. Launch final instance using the custom AMI created in the previous step.
 **Important**

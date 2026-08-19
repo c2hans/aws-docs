@@ -108,3 +108,16 @@ When you restore an Amazon Redshift Serverless namespace from a snapshot or reco
 + If table-level filters were changed after the snapshot was taken, the restored target uses the current filters from the integration, not the filters at the time of the snapshot.
 + To opt out of maintaining integrations during a restore, uncheck the **Maintain Integrations** box on the restore page in the AWS Management Console, or if you are using the AWS CLI, set the `--no-maintain-integration` parameter when calling the [restore-from-snapshot](https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/API_RestoreFromSnapshot.html) or [restore-from-recovery-point](https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/API_RestoreFromRecoveryPoint.html) API operation. When you opt out, integrations enter the `FAILED` state after the restore. You can delete the integrations and recreate them.
 + This feature applies to Amazon Redshift Serverless only when restored to the same serverless namespace. Snapshot restores on provisioned clusters do not maintain zero-ETL integrations.
+
+## Considerations when resizing a zero-ETL integration target
+<a name="zero-etl-considerations-resize"></a>
+
+When you resize an Amazon Redshift provisioned cluster that is the target of a zero-ETL integration, the resize can cause the integration tables to resynchronize. Whether resynchronization occurs depends on the type of resize:
++ An elastic resize that changes only the number of nodes (an in-place resize) does not affect zero-ETL integrations. Tables remain synchronized.
++ An elastic resize that changes the node type causes all tables in zero-ETL integrations on the cluster to resynchronize. Any classic resize also triggers resynchronization. This happens because these resize operations temporarily change the distribution style of tables while the service redistributes data onto the new cluster configuration. For more information, see [Resizing a cluster](https://docs.aws.amazon.com/redshift/latest/mgmt/resizing-cluster.html).
+
+The following considerations apply when a resize triggers resynchronization:
++ The integration remains active, and resynchronization starts automatically after the resize completes. You don't need to take any action.
++ While a table is resynchronizing, you can't query it in Amazon Redshift. To keep tables queryable during resynchronization, set the `QUERY_ALL_STATES` parameter to `TRUE` on the destination database before you start the resize. Data returned during resynchronization might be stale until the resynchronization completes. For more information, see [CREATE DATABASE](https://docs.aws.amazon.com/redshift/latest/dg/r_CREATE_DATABASE.html) and [ALTER DATABASE](https://docs.aws.amazon.com/redshift/latest/dg/r_ALTER_DATABASE.html) in the *Amazon Redshift Database Developer Guide*.
++ Resynchronization can take 20–25 minutes or more, depending on the size of the source database.
++ You can monitor the state of integration tables using the [SVV\_INTEGRATION\_TABLE\_STATE](https://docs.aws.amazon.com/redshift/latest/dg/r_SVV_INTEGRATION_TABLE_STATE.html) system view. Tables show the `ResyncRequired` or `ResyncInitiated` state until resynchronization completes and they return to `Synced`.

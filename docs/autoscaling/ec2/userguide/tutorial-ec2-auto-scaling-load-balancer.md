@@ -206,7 +206,7 @@ After you have created the Auto Scaling group with the load balancer attached, t
 
 Now that you have completed this tutorial, you can learn more:
 + Amazon EC2 Auto Scaling determines whether an instance is healthy based on the status of the health checks that your Auto Scaling group uses. If you enable load balancer health checks and an instance fails the health checks, your Auto Scaling group considers the instance unhealthy and replaces it. For more information, see [Health checks](ec2-auto-scaling-health-checks.md).
-+ You can expand your application to an additional Availability Zone in the same Region to increase fault tolerance if there is a service disruption. For more information, see [Add an Availability ZoneRemove an Availability Zone](as-add-az-console.md).
++ You can expand your application to an additional Availability Zone in the same Region to increase fault tolerance if there is a service disruption. For more information, see [Add an Availability Zone](as-add-az-console.md).
 + You can configure your Auto Scaling group to use a target tracking scaling policy. This automatically increases or decreases the number of instances as the demand on your instances changes. This allows the group to handle changes in the amount of traffic that your application receives. For more information, see [Target tracking scaling policies](as-scaling-target-tracking.md).
 
 ## Step 5: Clean up

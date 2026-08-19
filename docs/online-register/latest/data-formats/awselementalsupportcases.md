@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awse
 
 AWS Elemental Support Cases provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="elemental-support-cases-GetCase"></a>[GetCase](https://docs.aws.amazon.com/elemental-appliances-software) | Describe a support case in your account | Read |

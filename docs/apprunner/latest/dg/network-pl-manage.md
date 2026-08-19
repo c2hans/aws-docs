@@ -13,7 +13,7 @@ Manage the Private endpoint for the incoming traffic using one of the following 
 
 **Note**
 If your App Runner application requires source IP/CIDR incoming traffic control rules, you must use security group rules for private endpoints instead of [WAF web ACLs](waf.md). This is because we currently don’t support forwarding request source IP data to App Runner private services associated with WAF. As a result, source IP rules for App Runner private services that are associated with WAF web ACLs do not adhere to IP based rules.
-To learn more about infrastructure security and security groups, including best practices, see the following topics in the *Amazon VPC User Guide*: [Control network traffic](https://docs.aws.amazon.com/vpc/latest/userguide/infrastructure-security.html#control-network-traffic) and [Control traffic to your AWS resources using security groups](https://docs.aws.amazon.com//vpc/latest/userguide/vpc-security-groups.html).
+To learn more about infrastructure security and security groups, including best practices, see the following topics in the *Amazon VPC User Guide*: [Control network traffic](https://docs.aws.amazon.com/vpc/latest/userguide/infrastructure-security.html#control-network-traffic) and [Control traffic to your AWS resources using security groups](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-groups.html).
 
 ## App Runner console
 <a name="network-pl-manage.console"></a>
@@ -46,7 +46,7 @@ When you [create a service](manage-create.md) using the App Runner console, or w
 1. Choose security group from the drop-down list. Adding security groups provides an additional layer of security to the VPC interface endpoint. It’s recommended to choose two or more security groups. If you don’t choose a security group, App Runner assigns a default security group to the VPC interface endpoint. Ensure that the security group rules don't block the resources that want to communicate with your App Runner service. The security group rules must allow resources that will interact with your App Runner service.
 **Note**
 If your App Runner application requires source IP/CIDR incoming traffic control rules, you must use security group rules for private endpoints instead of [WAF web ACLs](waf.md). This is because we currently don’t support forwarding request source IP data to App Runner private services associated with WAF. As a result, source IP rules for App Runner private services that are associated with WAF web ACLs do not adhere to IP based rules.
-To learn more about infrastructure security and security groups, including best practices, see the following topics in the *Amazon VPC User Guide*: [Control network traffic](https://docs.aws.amazon.com/vpc/latest/userguide/infrastructure-security.html#control-network-traffic) and [Control traffic to your AWS resources using security groups](https://docs.aws.amazon.com//vpc/latest/userguide/vpc-security-groups.html).
+To learn more about infrastructure security and security groups, including best practices, see the following topics in the *Amazon VPC User Guide*: [Control network traffic](https://docs.aws.amazon.com/vpc/latest/userguide/infrastructure-security.html#control-network-traffic) and [Control traffic to your AWS resources using security groups](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-groups.html).
 
 1. Choose the required subnets from the drop-down list. It is recommended to select at least two subnets for each Availability Zone from which you’ll access the App Runner service.
 **Note**
@@ -95,7 +95,7 @@ After your App Runner service is created, you can edit the VPC interface endpoin
 1.  Choose the required **Security groups** and **Subnets** and click **Update**. The page showing the VPC interface endpoint details opens with the message of successful update of the VPC interface endpoint on the top bar.
 **Note**
 If your App Runner application requires source IP/CIDR incoming traffic control rules, you must use security group rules for private endpoints instead of [WAF web ACLs](waf.md). This is because we currently don’t support forwarding request source IP data to App Runner private services associated with WAF. As a result, source IP rules for App Runner private services that are associated with WAF web ACLs do not adhere to IP based rules.
-To learn more about infrastructure security and security groups, including best practices, see the following topics in the *Amazon VPC User Guide*: [Control network traffic](https://docs.aws.amazon.com/vpc/latest/userguide/infrastructure-security.html#control-network-traffic) and [Control traffic to your AWS resources using security groups](https://docs.aws.amazon.com//vpc/latest/userguide/vpc-security-groups.html).
+To learn more about infrastructure security and security groups, including best practices, see the following topics in the *Amazon VPC User Guide*: [Control network traffic](https://docs.aws.amazon.com/vpc/latest/userguide/infrastructure-security.html#control-network-traffic) and [Control traffic to your AWS resources using security groups](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-groups.html).
 
 ### Delete VPC interface endpoint
 <a name="network-pl-manage.console.delete"></a>
@@ -130,7 +130,7 @@ For information on permissions required to make your service private, see [Permi
 1. Create a VPC interface endpoint, an AWS PrivateLink resource, to connect to App Runner. To do this, specify subnets and security groups to associate with the application. The following is an example of creating a VPC interface endpoint.
 **Note**
 If your App Runner application requires source IP/CIDR incoming traffic control rules, you must use security group rules for private endpoints instead of [WAF web ACLs](waf.md). This is because we currently don’t support forwarding request source IP data to App Runner private services associated with WAF. As a result, source IP rules for App Runner private services that are associated with WAF web ACLs do not adhere to IP based rules.
-To learn more about infrastructure security and security groups, including best practices, see the following topics in the *Amazon VPC User Guide*: [Control network traffic](https://docs.aws.amazon.com/vpc/latest/userguide/infrastructure-security.html#control-network-traffic) and [Control traffic to your AWS resources using security groups](https://docs.aws.amazon.com//vpc/latest/userguide/vpc-security-groups.html).
+To learn more about infrastructure security and security groups, including best practices, see the following topics in the *Amazon VPC User Guide*: [Control network traffic](https://docs.aws.amazon.com/vpc/latest/userguide/infrastructure-security.html#control-network-traffic) and [Control traffic to your AWS resources using security groups](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-groups.html).
 **Example**
 
    ```

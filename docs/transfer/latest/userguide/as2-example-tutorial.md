@@ -86,7 +86,6 @@ If you prefer to manage keys with a GUI, [Portecle](http://portecle.sourceforge.
 
    The `-subj` argument consists of the following values.
 
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/transfer/latest/userguide/as2-example-tutorial.html)
 
 1. Create a signing key and an encryption key for your local profile.
@@ -218,7 +217,7 @@ In the previous commands, replace {{MYCORP}} with the name of your organization,
 This procedure explains how to create an AS2-enabled server by using the Transfer Family AWS CLI.
 
 **Note**
- Many of the example steps use commands that load parameters from a file. For more details about using files to load parameters, see [ How to load parameters from a file](https://docs.aws.amazon.com//cli/latest/userguide/cli-usage-parameters-file.html).
+ Many of the example steps use commands that load parameters from a file. For more details about using files to load parameters, see [ How to load parameters from a file](https://docs.aws.amazon.com/cli/latest/userguide/cli-usage-parameters-file.html).
 
 If you want to use the console instead, see [Create an AS2 server using the Transfer Family console](create-as2-transfer-server.md#create-server-as2-console).
 

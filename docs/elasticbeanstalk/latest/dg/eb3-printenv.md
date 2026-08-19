@@ -20,8 +20,6 @@ Prints all the environment properties in the command window.
 ## Options
 <a name="eb3-printenvoptions"></a>
 
-****
-
 |  Name  |  Description  |
 | --- | --- |
 | [Common options](eb3-cmd-options.md) |  |

@@ -61,7 +61,7 @@ Each Quick feature combines the components above in different ways:
 | I want to... | Go to |
 | --- | --- |
 | Set up Quick for my organization | [Setting up and signing into Amazon Quick](setting-up.md) |
-| Start using Quick | [Getting started with Amazon QuickGetting started](getting-started.md) |
+| Start using Quick | [Getting started with Amazon Quick](getting-started.md) |
 | Build dashboards and visualize data | [Visualize, analyze, and share data with analyses, dashboards, and reports in Amazon Quick Sight](quick-bi.md) |
 | Automate tasks | [Using Amazon Quick automations](using-amazon-quick-automations.md) |
 | Research a topic | [Using Amazon Quick Research](using-amazon-quick-research.md) |

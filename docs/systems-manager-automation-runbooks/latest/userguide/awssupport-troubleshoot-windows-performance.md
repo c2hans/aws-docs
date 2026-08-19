@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 
  **Description**
 
- The runbook `AWSSupport-TroubleshootWindowsPerformance` helps troubleshoot ongoing performance issues on Amazon Elastic Compute Cloud (Amazon EC2) Windows instance. The runbook captures logs from the target instance and analyzes CPU, memory, disk, and network performance metrics. Optionally, the automation can capture a process dump to help you determine the potential cause of performance degradation. The automation also captures the event and system logs by using the latest [`EC2Rescue`](https://docs.aws.amazon.com//AWSEC2/latest/WindowsGuide/Windows-Server-EC2Rescue.html) tool, if you allow this runbook to install it.
+ The runbook `AWSSupport-TroubleshootWindowsPerformance` helps troubleshoot ongoing performance issues on Amazon Elastic Compute Cloud (Amazon EC2) Windows instance. The runbook captures logs from the target instance and analyzes CPU, memory, disk, and network performance metrics. Optionally, the automation can capture a process dump to help you determine the potential cause of performance degradation. The automation also captures the event and system logs by using the latest [`EC2Rescue`](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/Windows-Server-EC2Rescue.html) tool, if you allow this runbook to install it.
 
  **How does it work?**
 
@@ -23,7 +23,7 @@ To execute this runbook, the Amazon EC2 Windows instance must be managed by AWS 
 To execute this runbook, the Amazon EC2 Windows instance must be running on versions Windows 8.1 / Windows Server 2012 R2 (6.3) or newer with PowerShell 4.0 or above. For more information, see [Windows Operating System version](https://learn.microsoft.com/en-us/windows/win32/sysinfo/operating-system-version).
 For the generation of performance logs, at least 10 GB of free space on the root device is required. If the root disk is larger than 100 GB, the free space must be greater than 10% of the disk size. If you dump a process during execution, the free space must be greater than 10 GB plus the total memory size consumed by the process when the process consumes more than 10 GB memory.
 The logs generated on the root device are not deleted automatically.
-The runbook does not uninstall the `EC2Rescue` tool. For more information, see [Use `EC2Rescue` for Windows Server](https://docs.aws.amazon.com//AWSEC2/latest/WindowsGuide/Windows-Server-EC2Rescue.html).
+The runbook does not uninstall the `EC2Rescue` tool. For more information, see [Use `EC2Rescue` for Windows Server](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/Windows-Server-EC2Rescue.html).
 It is best practice to run this automation during a performance impact. You can also run it periodically using an AWS Systems Manager State Manager association or by scheduling AWS Systems Manager Maintenance Windows.
 
  [Run this Automation (console)](https://console.aws.amazon.com/systems-manager/automation/execute/AWSSupport-TroubleshootWindowsPerformance)
@@ -163,6 +163,6 @@ Follow these steps to configure the automation:
 
 Systems Manager Automation
 + [Run this Automation (console)](https://console.aws.amazon.com/systems-manager/documents/AWSSupport-TroubleshootWindowsPerformance/description)
-+ [Run an automation](https://docs.aws.amazon.com//systems-manager/latest/userguide/automation-working-executing.html)
-+ [Setting up an Automation](https://docs.aws.amazon.com//systems-manager/latest/userguide/automation-setup.html)
++ [Run an automation](https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-working-executing.html)
++ [Setting up an Automation](https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-setup.html)
 + [Support Automation Workflows landing page](https://aws.amazon.com/premiumsupport/technology/saw/)

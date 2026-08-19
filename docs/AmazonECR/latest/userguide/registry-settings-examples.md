@@ -97,7 +97,7 @@ For cross-account replication to occur, the destination account must configure a
 ## Example: Specifying multiple rules in a configuration
 <a name="registry-settings-examples-multiple-rules"></a>
 
-The following shows an example for configuring multiple replication rules for your registry. This example configures replication for the {{ 111122223333}} account with one rule that replicates repositories with a prefix of `prod` to the `us-west-2` Region and repositories with a prefix of `test` to the `us-east-2` Region. A replication configuration may contain up to 10 rules, with each rule specifying up to 25 destinations.
+The following shows an example for configuring multiple replication rules for your registry. This example configures replication for the {{ 111122223333}} account with one rule that replicates repositories with a prefix of `prod` to the `us-west-2` Region and repositories with a prefix of `test` to the `us-east-2` Region. A replication configuration may contain up to 25 rules, with each rule specifying up to 25 destinations.
 
 ```
 {

@@ -15,6 +15,11 @@ Details of a full document expansion action.
 Type: [AgenticRetrieveFullDocExpansionDetails](API_agent-runtime_AgenticRetrieveFullDocExpansionDetails.md) object
 Required: No
 
+ ** memoryRetrieve **   <a name="bedrock-Type-agent-runtime_AgenticRetrieveAction-memoryRetrieve"></a>
+The details of a long-term memory retrieval that the agent chose to perform.
+Type: [AgenticRetrieveMemoryRetrieveDetails](API_agent-runtime_AgenticRetrieveMemoryRetrieveDetails.md) object
+Required: No
+
  ** retrieve **   <a name="bedrock-Type-agent-runtime_AgenticRetrieveAction-retrieve"></a>
 Details of the retrieve action.
 Type: [AgenticRetrieveActionDetails](API_agent-runtime_AgenticRetrieveActionDetails.md) object

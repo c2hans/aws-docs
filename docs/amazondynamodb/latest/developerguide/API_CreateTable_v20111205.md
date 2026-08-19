@@ -41,8 +41,6 @@ content-type: application/x-amz-json-1.0
 }
 ```
 
-****
-
 |  Name  |  Description  |  Required |
 | --- | --- | --- |
 |  TableName  | The name of the table to create.<br />Allowed characters are a-z, A-Z, 0-9, '\_' (underscore), '-' (dash), and '.' (dot). Names can be between 3 and 255 characters long.<br />Type: String |  Yes  |
@@ -76,8 +74,6 @@ Date: Tue, 12 Jul 2011 21:31:03 GMT
 }
 ```
 
-****
-
 |  Name  |  Description  |
 | --- | --- |
 | TableDescription  | A container for the table properties. |
@@ -91,8 +87,6 @@ Date: Tue, 12 Jul 2011 21:31:03 GMT
 
 ## Special errors
 <a name="API_CreateTable_SpecialErrors"></a>
-
-****
 
 |  Error  |  Description  |
 | --- | --- |

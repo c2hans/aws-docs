@@ -44,4 +44,4 @@ DynamoDB Standard-IA table class is best suited for tables whose storage cost is
 When deciding between the two table classes, there are some additional factors worth considering as part of your decision.
 
 **Reserved capacity**
-Purchasing reserved capacity for tables using the Standard-IA table class is currently not supported. When transitioning from a Standard table with reserved capacity to a Standard-IA table without reserved capacity, you may not see a cost benefit.
+Purchasing reserved capacity for tables using the Standard-IA table class is currently not supported. When transitioning from a Standard table with reserved capacity to a Standard-IA table without reserved capacity, you might not see a cost benefit.

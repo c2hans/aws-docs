@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon Inspector provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="inspector-DescribeAssessmentRuns"></a>[DescribeAssessmentRuns](https://docs.aws.amazon.com/inspector/latest/APIReference/API_DescribeAssessmentRuns.html) | Describe the assessment runs that are specified by the ARNs of the assessment runs | Read |

@@ -28,7 +28,7 @@ Specifies the AWS secret key used as part of the credentials to authenticate the
 **`aws_session_token` - shared AWS `config` file setting`aws_session_token` - shared AWS `credentials` file setting *(recommended method)*`AWS_SESSION_TOKEN` - environment variable`aws.sessionToken` - JVM system property: Java/Kotlin only**
 Specifies an AWS session token used as part of the credentials to authenticate the user. You receive this value as part of the temporary credentials returned by successful requests to assume a role. A session token is required only if you manually specify temporary security credentials. However, we recommend you always use temporary security credentials instead of long-term credentials. For security recommendations, see [Security best practices in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html).
 
-For instructions on how to obtain these values, see [Using short-term credentials to authenticate AWS SDKs and toolsShort-term credentials](access-temp-idc.md).
+For instructions on how to obtain these values, see [Using short-term credentials to authenticate AWS SDKs and tools](access-temp-idc.md).
 
 Example of setting these required values in the `config` or `credentials` file:
 

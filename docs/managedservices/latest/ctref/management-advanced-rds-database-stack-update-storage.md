@@ -14,8 +14,6 @@ Change the RDS instance storage type, capacity or IOPS through direct API calls.
 ## Change Type Details
 <a name="ct-0loed9dzig1ze-MARu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-0loed9dzig1ze |

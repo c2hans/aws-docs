@@ -14,8 +14,6 @@ CUR 2.0 provides the following improvements over CUR:
 
 The following table outlines the differences between CUR 2.0 and legacy CUR in more detail:
 
-****
-
 |  | CUR 2.0 | Legacy CUR |
 | --- | --- | --- |
 | Data schema | Fixed schema.<br />For the complete column list, see [Cost and Usage Report (CUR) 2.0](https://docs.aws.amazon.com/cur/latest/userguide/table-dictionary-cur2.html). | Dynamic schema based on AWS usage and activity.<br />For the partial column list, see [Data dictionary](https://docs.aws.amazon.com/cur/latest/userguide/data-dictionary.html). |

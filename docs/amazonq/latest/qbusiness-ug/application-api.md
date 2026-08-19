@@ -9,8 +9,6 @@ Amazon Q Business is no longer open to new customers. For capabilities similar t
 
 All Amazon Q Business application environment actions are supported both on the console and using APIs.
 
-****
-
 | API action | API description | Relevant User Guide topic |
 | --- | --- | --- |
 | [CreateApplication](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateApplication.html) | Creates an Amazon Q Business application | +  [Creating an IAM Identity Center-integrated Amazon Q Business application](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/create-app.html) <br />+  [Creating an IAM federated Amazon Q Business application](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/create-app-iam.html) <br />+  [Creating an Quick-integrated Amazon Q Business application](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/create-application-quicksight.html)  |

@@ -18,7 +18,6 @@ The handle of the key to export.
 
 `pszBlobType` [in]
 A null-terminated Unicode string that specifies the BLOB type to export. AWS CloudHSM Key Storage Provider (KSP) supports the following values:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/cloudhsm/latest/userguide/ksp-library-apis-export-key.html)
 
 `pParameterList` [in, unused]
@@ -35,7 +34,6 @@ A DWORD variable address that stores the number of bytes copied to the `pbOutput
 
 `dwFlags` [in]
 Flags that modify how the function works. You can use zero or the following:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/cloudhsm/latest/userguide/ksp-library-apis-export-key.html)
 
 ## Return Value
@@ -44,8 +42,6 @@ Flags that modify how the function works. You can use zero or the following:
 The function returns a status code to indicate success or failure.
 
 Common return codes include:
-
-****
 
 | Return code | Description |
 | --- | --- |

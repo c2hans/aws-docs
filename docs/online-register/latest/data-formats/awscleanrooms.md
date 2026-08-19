@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsc
 
 AWS Clean Rooms provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="cleanrooms-BatchGetCollaborationAnalysisTemplate"></a>[BatchGetCollaborationAnalysisTemplate](https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_BatchGetCollaborationAnalysisTemplate.html) | View details of analysisTemplates associated to the collaboration | Read |

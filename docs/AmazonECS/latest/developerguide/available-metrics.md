@@ -9,8 +9,6 @@ You can use CloudWatch usage metrics to provide visibility into your accounts us
 
 Amazon ECS sends metrics to CloudWatch at one-minute intervals. These metrics are collected for resources that have tasks in the `RUNNING` state. If a cluster, service, or other resource has no running tasks, no metrics will be reported for that resource during that period. For example, if you have a cluster with one service but that service has no tasks in a `RUNNING` state, there will be no metrics sent to CloudWatch. Similarly, if you have two services and one of them has running tasks while the other doesn't, only the metrics for the service with running tasks would be sent.
 
-****
-
 | Metric | Description | Valid Dimension | Useful Statistics | Unit |
 | --- | --- | --- | --- | --- |
 | CPUReservation | The percentage of CPU units that are reserved in the cluster or service.<br />The CPU reservation ( filtered by `ClusterName`) is measured as the total CPU units that are reserved by Amazon ECS tasks on the cluster, divided by the total CPU units for all of the Amazon EC2 instances registered in the cluster. Only Amazon EC2 instances in `ACTIVE` or `DRAINING` status will affect CPU reservation metrics. The metric is only supported for tasks hosted on an Amazon EC2 instance. |  ClusterName. | Average, Minimum, Maximum | Percent |
@@ -39,8 +37,6 @@ Amazon ECS sends metrics to CloudWatch at one-minute intervals. These metrics ar
 <a name="ecs-metrics-dimensions"></a>
 
 Amazon ECS metrics use the `AWS/ECS` namespace and provide metrics for the following dimensions. Amazon ECS only sends metrics for resources that have tasks in the `RUNNING` state. For example, if you have a cluster with one service in it but that service has no tasks in a `RUNNING` state, there will be no metrics sent to CloudWatch. If you have two services and one of them has running tasks and the other doesn't, only the metrics for the service with running tasks would be sent.
-
-****
 
 | Dimension | Definition |
 | --- | --- |

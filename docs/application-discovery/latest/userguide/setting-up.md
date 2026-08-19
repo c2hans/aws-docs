@@ -14,7 +14,7 @@ Before you use AWS Application Discovery Service for the first time, complete th
 ## Sign up for an AWS account
 <a name="sign-up-for-aws"></a>
 
-To get started with AWS, you need an AWS account. For information about creating an AWS account, see [Getting started with an AWS account](https://docs.aws.amazon.com//accounts/latest/reference/getting-started.html) in the *AWS Account Management Reference Guide*.
+To get started with AWS, you need an AWS account. For information about creating an AWS account, see [Getting started with an AWS account](https://docs.aws.amazon.com/accounts/latest/reference/getting-started.html) in the *AWS Account Management Reference Guide*.
 
 ## Create IAM users
 <a name="setting-up-iam"></a>
@@ -25,7 +25,7 @@ To get started with AWS, you need an AWS account. For information about creating
 ### Creating an IAM Non-Administrative User
 <a name="setting-up-iam-non-admin"></a>
 
-When creating non-administrative IAM users, follow the security best practice [ Grant Least Privilege](https://docs.aws.amazon.com//IAM/latest/UserGuide/best-practices.html#grant-least-privilege), granting users minimum permissions.
+When creating non-administrative IAM users, follow the security best practice [ Grant Least Privilege](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#grant-least-privilege), granting users minimum permissions.
 
 Use IAM managed policies to define the level of access to Application Discovery Service by non-administrative IAM users. For information about Application Discovery Service managed policies, see [AWS managed policies for AWS Application Discovery Service](security-iam-awsmanpol.md).
 
@@ -52,4 +52,4 @@ You need to choose an AWS Migration Hub home Region in the AWS account that you'
 
 1. In the Migration Hub console navigation pane, choose **Settings** and the choose a home Region.
 
-   Your Migration Hub data is stored in your home Region for purposes of discovery, planning, and migration tracking. For more information, see [The Migration Hub Home Region](https://docs.aws.amazon.com//migrationhub/latest/ug/home-region.html).
+   Your Migration Hub data is stored in your home Region for purposes of discovery, planning, and migration tracking. For more information, see [The Migration Hub Home Region](https://docs.aws.amazon.com/migrationhub/latest/ug/home-region.html).

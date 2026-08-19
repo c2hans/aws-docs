@@ -31,8 +31,6 @@ After you [fulfill the prerequisites](share-model-prereq.md), you can share a mo
 
 To share a model, send a [CreateResourceShare](https://docs.aws.amazon.com/ram/latest/APIReference/API_CreateResourceShare.html) request with an [AWS Resource Access Manager endpoint](https://docs.aws.amazon.com/general/latest/gr/ram.html). Minimally, provide the following fields:
 
-****
-
 | Field | Use case |
 | --- | --- |
 | Name | To provide a name for the resource share. |

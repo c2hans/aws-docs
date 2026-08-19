@@ -15,7 +15,7 @@ End of support notice: On October 7, 2026, AWS will end support for AWS Proton. 
 
 ## Step 1: Open the AWS Proton console
 <a name="ag-getting-started-step1"></a>
-+ Open the [AWS Proton console](https://console.aws.amazon.com//proton/)
++ Open the [AWS Proton console](https://console.aws.amazon.com/proton/)
 
 ## Step 2: Prepare to use the example templates
 <a name="ag-getting-started-step2"></a>
@@ -166,7 +166,7 @@ In the navigation pane, choose **Environments**.
 ## Step 6: Optional - Create a service and deploy an application
 <a name="ag-getting-started-step6"></a>
 
-1. Open the [AWS Proton console](https://console.aws.amazon.com//proton/).
+1. Open the [AWS Proton console](https://console.aws.amazon.com/proton/).
 
 1. In the navigation pane, choose **Services**.
 
@@ -221,7 +221,7 @@ In the navigation pane, choose **Environments**.
 ## Step 7: Clean up.
 <a name="ag-getting-started-step7"></a>
 
-1. Open the [AWS Proton console](https://console.aws.amazon.com//proton/).
+1. Open the [AWS Proton console](https://console.aws.amazon.com/proton/).
 
 1.
 

@@ -95,7 +95,7 @@ if using `ImageUrl` field for GCM , pinpoint sends the field as data notificatio
 ------
 #### [ Safari (AWS CLI) ]
 
-You can use AWS End User Messaging Push to send messages to macOS computers that use Apple's Safari web browser. To send a message to the Safari browser, you must specify the raw message content, and you must include a specific attribute in the message payload. You can do this by [creating a push notification template with a raw message payload](https://docs.aws.amazon.com//pinpoint/latest/userguide/message-templates-creating-push.html#message-templates-creating-push-raw), or by specifying the raw message content directly in a [campaign](https://docs.aws.amazon.com//pinpoint/latest/userguide/campaigns-message.html#campaigns-message-push) message, in the *Amazon Pinpoint User Guide*.
+You can use AWS End User Messaging Push to send messages to macOS computers that use Apple's Safari web browser. To send a message to the Safari browser, you must specify the raw message content, and you must include a specific attribute in the message payload. You can do this by [creating a push notification template with a raw message payload](https://docs.aws.amazon.com/pinpoint/latest/userguide/message-templates-creating-push.html#message-templates-creating-push-raw), or by specifying the raw message content directly in a [campaign](https://docs.aws.amazon.com/pinpoint/latest/userguide/campaigns-message.html#campaigns-message-push) message, in the *Amazon Pinpoint User Guide*.
 
 **Note**
 This special attribute is required for sending to macOS laptop and desktop computers that use the Safari web browser. It isn't required for sending to iOS devices such as iPhones and iPads.

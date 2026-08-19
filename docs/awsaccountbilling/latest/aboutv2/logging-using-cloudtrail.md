@@ -16,8 +16,6 @@ To learn more about CloudTrail, including how to configure and enable it, see th
 
 This section shows a full list of the CloudTrail events related to Billing and Cost Management.
 
-****
-
 | Event name | Definition | Event source |
 | --- | --- | --- |
 | `AddPurchaseOrder` | Logs the creation of a purchase order. | purchase-orders.amazonaws.com |
@@ -79,8 +77,6 @@ This section shows a full list of the CloudTrail events related to Billing and C
 <a name="billing-payments-cloudtrail-events"></a>
 
 This section shows a full list of the CloudTrail events for the **Payments** feature in the AWS Billing console. These CloudTrail events use `payments.amazonaws.com` instead of `billingconsole.amazonaws.com`.
-
-****
 
 | Event name | Definition |
 | --- | --- |
@@ -160,8 +156,6 @@ This section shows a full list of the CloudTrail events for the **Tax settings**
 <a name="billing-invoice-cloudtrail-events"></a>
 
 This section shows a full list of the CloudTrail events for the **Invoicing** feature in the AWS Billing console. These CloudTrail events use `invoicing.amazonaws.com`.
-
-****
 
 | Event name | Definition |
 | --- | --- |

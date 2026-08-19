@@ -14,8 +14,6 @@ Delete an existing stack and its resources from your account. The effects of del
 ## Change Type Details
 <a name="ct-0q0bic0ywqk6c-MSSd-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-0q0bic0ywqk6c |

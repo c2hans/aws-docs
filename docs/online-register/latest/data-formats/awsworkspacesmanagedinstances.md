@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsw
 
 AWS WorkSpaces Managed Instances provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="workspaces-instances-GetWorkspaceInstance"></a>[GetWorkspaceInstance](https://docs.aws.amazon.com/workspaces/latest/api/API_GetWorkspaceInstance.html) | Get details for a specific workspace managed instance in your account | Read |

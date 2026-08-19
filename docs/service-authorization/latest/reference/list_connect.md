@@ -25,8 +25,6 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_connect-actions-as-permissions).
 
-****
-
 - **   ActivateEvaluationForm  **
   - **SDK client:** connect
   - **IAM action:**  [connect:ActivateEvaluationForm](#list_connect-action-ActivateEvaluationForm)
@@ -2538,8 +2536,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
 
-****
-
 - **   [ActivateEvaluationForm](https://docs.aws.amazon.com/connect/latest/APIReference/API_ActivateEvaluationForm.html)  **
   - **Description:** Grants permission to activate an evaluation form in the specified Amazon Connect instance. After the evaluation form is activated, it is available to start new evaluations based on the form
   - **Resource types (\*required):** [evaluation-form\*](#list_connect-resource-evaluation-form)
@@ -4868,8 +4864,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 The following actions are defined by Amazon Connect but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 - **   [AssociateCustomerProfilesDomain](https://docs.aws.amazon.com/console/connect/amazon-connect-console/grant-instance-permissions)  **
   - **Description:** Grants permission to associate a Customer Profiles domain for an existing Amazon Connect instance
   - **Resource types (\*required):** [instance\*](#list_connect-resource-instance)
@@ -4923,8 +4917,6 @@ The following actions are defined by Amazon Connect but are not directly invocab
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
 
-****
-
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
 |  [agent-status](https://docs.aws.amazon.com/connect/latest/adminguide/metrics-agent-status.html)  | arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/agent-state/${AgentStatusId} | [aws:ResourceTag/${TagKey}](#list_connect-aws_ResourceTag___TagKey_) |
@@ -4975,8 +4967,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_connect-policy-keys"></a>
 
 Amazon Connect defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

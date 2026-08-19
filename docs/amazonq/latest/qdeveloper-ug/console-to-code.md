@@ -55,12 +55,38 @@ Even if you perform your actions in different parts of the console and they use 
 <a name="console-to-code-services-that-support"></a>
 
 Currently, Console-to-Code is available to record your actions when using the AWS management console with the following services:
-+ Amazon DynamoDB
-+ AWS IoT
-+ Amazon Cognito
 + Amazon EC2
 + Amazon VPC
++ Amazon DynamoDB
++ Amazon Cognito
++ AWS IoT
 + Amazon RDS
++ Amazon CloudWatch
++ AWS Batch
++ Amazon Simple Queue Service (Amazon SQS)
++ AWS CloudFormation
++ EC2 Image Builder
++ AWS Systems Manager
++ Amazon Athena
++ Amazon EventBridge
++ Amazon Elastic Container Registry (Amazon ECR)
++ Amazon Simple Notification Service (Amazon SNS)
++ AWS Secrets Manager
++ Amazon ElastiCache
++ AWS Step Functions
++ Amazon Elastic Kubernetes Service (Amazon EKS)
++ AWS Lambda
++ Amazon Elastic Container Service (Amazon ECS)
++ Amazon API Gateway
++ Amazon S3
++ Amazon CloudFront
++ AWS WAF
++ AWS Shield
++ AWS Firewall Manager
++ Amazon Bedrock
++ AWS CodeCommit
++ AWS CodeDeploy
++ AWS CodeBuild
 
 ## Granting permissions to use Console-to-Code
 <a name="console-to-code-permissions"></a>

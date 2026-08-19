@@ -23,8 +23,6 @@ The features you have access to depend on the IDE where you use Amazon Q. The fo
 
 If no language support is specified, the IDE supports languages listed in the [Supported languages](q-language-ide-support.md) topic.
 
-****
-
 | Feature | VSCode | JetBrains | Eclipse | Visual Studio |
 | --- | --- | --- | --- | --- |
 |  [Chat](q-in-IDE-chat.md)  | Yes | Yes | Yes | Yes |

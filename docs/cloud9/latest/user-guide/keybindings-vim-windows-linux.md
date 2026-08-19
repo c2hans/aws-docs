@@ -31,8 +31,6 @@ The following is a list of Vim keyboard mode keybindings for Windows / Linux ope
 ## General
 <a name="keybindings-vim-windows-linux-general"></a>
 
-****
-
 | Description | Keybinding | Command |
 | --- | --- | --- |
 | Add the selection as a watch expression |  `Ctrl-Shift-C`  |  `addwatchfromselection`  |
@@ -75,8 +73,6 @@ The following is a list of Vim keyboard mode keybindings for Windows / Linux ope
 ## Tabs
 <a name="keybindings-vim-windows-linux-tabs"></a>
 
-****
-
 | Description | Keybinding | Command |
 | --- | --- | --- |
 | Close all open tabs in the current pane, except the current tab |  `Ctrl-Alt-W`  |  `closeallbutme`  |
@@ -114,8 +110,6 @@ The following is a list of Vim keyboard mode keybindings for Windows / Linux ope
 ## Panels
 <a name="keybindings-vim-windows-linux-panels"></a>
 
-****
-
 | Description | Keybinding | Command |
 | --- | --- | --- |
 | Show the **Go** window in **Go to Anything** mode |  `Ctrl-E\|Ctrl-P`  |  `gotoanything`  |
@@ -128,8 +122,6 @@ The following is a list of Vim keyboard mode keybindings for Windows / Linux ope
 
 ## Code Editor
 <a name="keybindings-vim-windows-linux-code-editor"></a>
-
-****
 
 | Description | Keybinding | Command |
 | --- | --- | --- |
@@ -224,8 +216,6 @@ The following is a list of Vim keyboard mode keybindings for Windows / Linux ope
 ## emmet
 <a name="keybindings-vim-windows-linux-emmet"></a>
 
-****
-
 | Description | Keybinding | Command |
 | --- | --- | --- |
 | Evaluate a simple math expression (such as `2*4` or `10/2`), and output its result |  `Shift-Ctrl-Y`  |  `emmet_evaluate_math_expression`  |
@@ -238,8 +228,6 @@ The following is a list of Vim keyboard mode keybindings for Windows / Linux ope
 ## Terminal
 <a name="keybindings-vim-windows-linux-terminal"></a>
 
-****
-
 | Description | Keybinding | Command |
 | --- | --- | --- |
 | Open a new **Terminal** tab |  `Alt-T`  |  `openterminal`  |
@@ -247,8 +235,6 @@ The following is a list of Vim keyboard mode keybindings for Windows / Linux ope
 
 ## Run and Debug
 <a name="keybindings-vim-windows-linux-run-debug"></a>
-
-****
 
 | Description | Keybinding | Command |
 | --- | --- | --- |

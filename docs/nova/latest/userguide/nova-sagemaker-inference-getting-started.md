@@ -11,14 +11,14 @@ This guide shows you how to deploy customized Amazon Nova models on SageMaker re
 <a name="nova-sagemaker-inference-prerequisites"></a>
 
 The following are prerequisites to deploy Amazon Nova models on SageMaker inference:
-+ Create an AWS account - If you don't have one already, see [Creating an AWS account](https://docs.aws.amazon.com//sagemaker/latest/dg/gs-set-up.html#sign-up-for-aws).
++ Create an AWS account - If you don't have one already, see [Creating an AWS account](https://docs.aws.amazon.com/sagemaker/latest/dg/gs-set-up.html#sign-up-for-aws).
 + Required IAM permissions - Ensure your IAM user or role has the following managed policies attached:
   + `AmazonSageMakerFullAccess`
   + `AmazonS3FullAccess`
 + Required SDKs/CLI versions - The following SDK versions have been tested and validated with Amazon Nova models on SageMaker inference:
   + SageMaker Python SDK v3.0.0\+ (`sagemaker>=3.0.0`) for resource-based API approach
   + Boto3 version 1.35.0\+ (`boto3>=1.35.0`) for direct API calls. The examples in this guide use this approach.
-+ Service quota increase - Request an Amazon SageMaker service quota increase for the ML instance type you plan to use for your SageMaker Inference endpoint (for example, `ml.p5.48xlarge for endpoint usage`). For a list of supported instance types, see [Supported models and instances](nova-model-sagemaker-inference.md#nova-sagemaker-inference-supported). To request an increase, see [Requesting a quota increase](https://docs.aws.amazon.com//servicequotas/latest/userguide/request-quota-increase.html). For information about SageMaker instance quotas, see [SageMaker endpoints and quotas](https://docs.aws.amazon.com//general/latest/gr/sagemaker.html).
++ Service quota increase - Request an Amazon SageMaker service quota increase for the ML instance type you plan to use for your SageMaker Inference endpoint (for example, `ml.p5.48xlarge for endpoint usage`). For a list of supported instance types, see [Supported models and instances](nova-model-sagemaker-inference.md#nova-sagemaker-inference-supported). To request an increase, see [Requesting a quota increase](https://docs.aws.amazon.com/servicequotas/latest/userguide/request-quota-increase.html). For information about SageMaker instance quotas, see [SageMaker endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/sagemaker.html).
 
 **Tip**
 For a quick end-to-end deployment, you can run the [Custom Nova Model SageMaker Inference notebook](https://github.com/aws-samples/amazon-nova-samples/blob/main/customization/Nova_2.0/05_deployment/Custom-Nova-Model-SageMaker-Inference.ipynb) to deploy a customized Amazon Nova model on SageMaker inference in a single notebook.
@@ -54,7 +54,7 @@ export AWS_SECRET_ACCESS_KEY=your_secret_key
 ```
 
 **Note**
-For more information about AWS credentials, see [Configuration and credential file settings](https://docs.aws.amazon.com//cli/latest/userguide/cli-configure-files.html).
+For more information about AWS credentials, see [Configuration and credential file settings](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html).
 
 **Initialize AWS clients**
 
@@ -161,7 +161,7 @@ for role in sagemaker_roles:
 **Important**
 The execution role must have trust relationship with `sagemaker.amazonaws.com` and permissions to access Amazon S3 and SageMaker resources.
 
-For more information about SageMaker execution roles, see [SageMaker Roles](https://docs.aws.amazon.com//sagemaker/latest/dg/sagemaker-roles.html).
+For more information about SageMaker execution roles, see [SageMaker Roles](https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-roles.html).
 
 ## Step 3: Configure model parameters
 <a name="nova-sagemaker-inference-step3"></a>

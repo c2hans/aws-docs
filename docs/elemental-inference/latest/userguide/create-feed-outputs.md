@@ -64,7 +64,8 @@ The following example searches for basketball games on `2026-03-03` and `2026-03
 
 ```
 $ awscurl --service "elemental-inference" --region <{{region}}> \
-  -X POST "https://<{{data-endpoint}}>/v1/fixtures" \
+  -X POST "https://elemental-inference.<{{region}}>.amazonaws.com/v1/fixtures" \
+  -H "Content-Type: application/json" \
   -d '{
     "sport": "basketball",
     "startDate": "2026-03-03",
@@ -91,6 +92,18 @@ The response returns the matching games. Note the `fixtureId` of the game that y
     }
   ]
 }
+```
+
+**CLI example**
+
+The following example makes the same request using the AWS CLI:
+
+```
+aws elemental-inference search-fixtures \
+  --sport "basketball" \
+  --start-date "2026-03-03" \
+  --end-date "2026-03-04" \
+  --filters '[{"name": "COMPETITOR", "values": ["Comets"]}]'
 ```
 
 ##### Request parameters

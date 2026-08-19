@@ -51,7 +51,7 @@ The following considerations apply to DB shard groups in Aurora PostgreSQL Limit
 
   To change a shard key, delete and then re-create it.
 + The repeatable read, read committed, and read uncommitted isolation levels are supported. You can't set the isolation level to serializable.
-+ Some SQL commands aren't supported. For more information, see [Aurora PostgreSQL Limitless Database referenceLimitless Database reference](limitless-reference.md).
++ Some SQL commands aren't supported. For more information, see [Aurora PostgreSQL Limitless Database reference](limitless-reference.md).
 + Not all PostgreSQL extensions are supported. For more information, see [Extensions](limitless-reference.DDL-limitations.md#limitless-reference.DDL-limitations.Extensions).
 + When creating a shard group, or when adding new shard group nodes (shards or routers), those nodes are created in one of the Availability Zones (AZs) available to the DB cluster. You can't choose a specific AZ for individual nodes.
 + If you use a compute redundancy of 2 (two compute standbys for the DB shard group), make sure that your DB subnet group has at least three AZs.

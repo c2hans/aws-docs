@@ -34,19 +34,13 @@ The following is an example of this object type. This object references two othe
 ### Syntax
 <a name="mysqldatanode-syntax"></a>
 
-****
-
 | Required Fields | Description | Slot Type |
 | --- | --- | --- |
 | table | The name of the table in the MySQL database. | String |
 
-****
-
 | Object Invocation Fields | Description | Slot Type |
 | --- | --- | --- |
 | schedule | This object is invoked within the execution of a schedule interval. Users must specify a schedule reference to another object to set the dependency execution order for this object. Users can satisfy this requirement by explicitly setting a schedule on the object, for example, by specifying "schedule": {"ref": "DefaultSchedule"}. In most cases, it is better to put the schedule reference on the default pipeline object so that all objects inherit that schedule. Or, if the pipeline has a tree of schedules (schedules within the master schedule), users can create a parent object that has a schedule reference. For more information about example optional schedule configurations, see [https://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/dp-object-schedule.html](https://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/dp-object-schedule.html) | Reference Object, e.g. "schedule":{"ref":"myScheduleId"} |
-
-****
 
 | Optional Fields | Description | Slot Type |
 | --- | --- | --- |
@@ -73,8 +67,6 @@ The following is an example of this object type. This object references two othe
 | schemaName | The name of the schema holding the table | String |
 | selectQuery | A SQL statement to fetch data from the table. | String |
 | workerGroup | The worker group. This is used for routing tasks. If you provide a runsOn value and workerGroup exists, workerGroup is ignored. | String |
-
-****
 
 | Runtime Fields | Description | Slot Type |
 | --- | --- | --- |
@@ -103,8 +95,6 @@ The following is an example of this object type. This object references two othe
 | @status | The status of this object. | String |
 | @version | Pipeline version the object was created with. | String |
 | @waitingOn | Description of list of dependencies this object is waiting on. | Reference Object, e.g. "waitingOn":{"ref":"myRunnableObjectId"} |
-
-****
 
 | System Fields | Description | Slot Type |
 | --- | --- | --- |

@@ -15,8 +15,6 @@ With a Bedrock Managed Knowledge Base, Amazon Bedrock manages the ingestion, sto
 
 The following table summarizes the key differences between Bedrock Managed and Customer-managed Knowledge Bases:
 
-****
-
 | Feature | Bedrock Managed | Customer-Managed |
 | --- | --- | --- |
 | Agentic retrieval | Supported | Not supported |

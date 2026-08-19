@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/tutorial-stock-data-k
 # Implement the producer
 <a name="tutorial-stock-data-kplkcl-producer"></a>
 
-The application in the [Tutorial: Process real-time stock data using KPL and KCL 1.x[Tutorial: Process real-time stock data using KPL and KCL 1.x](tutorial-stock-data-kplkcl.md)](tutorial-stock-data-kplkcl.md) uses the real-world scenario of stock market trade monitoring. The following principles briefly explain how this scenario maps to the producer and supporting code structure.
+The application in the [Tutorial: Process real-time stock data using KPL and KCL 1.x](tutorial-stock-data-kplkcl.md) uses the real-world scenario of stock market trade monitoring. The following principles briefly explain how this scenario maps to the producer and supporting code structure.
 
 Refer to the source code and review the following information.
 

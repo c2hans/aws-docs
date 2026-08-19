@@ -55,8 +55,6 @@ Create a configuration file for the bond interface and name it after the bond.
 **Bonding modes**
 The following table describes the bonding modes that are available.
 
-****
-
 | Bonding Mode Option | Mode Name | Description |
 | --- | --- | --- |
 | mode=0 | Round robin | Transmissions are received and sent sequentially on each bonded interface, beginning with the first one available. |

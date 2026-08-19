@@ -20,8 +20,6 @@ When your number receives an SMS message, AWS End User Messaging SMS sends a JSO
 
 The incoming message payload contains the following information:
 
-****
-
 | Property | Description |
 | --- | --- |
 | `originationNumber` | The phone number that sent the incoming message to you (in other words, your customer's phone number). |

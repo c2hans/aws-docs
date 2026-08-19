@@ -25,8 +25,6 @@ Each action has a corresponding `bearerTokenType` condition key that you can use
 
 The following table summarizes how to prevent an identity from generating or using Amazon Bedrock API keys:
 
-****
-
 | Purpose | Long-term key | Short-term key |
 | --- | --- | --- |
 | Prevent generation of keys | Attach a policy that denies the iam:CreateServiceSpecificCredential action to an IAM identity. | N/A |

@@ -14,8 +14,6 @@ Deactivates AWS IAM Access key ID for the specified user and conditionally delet
 ## Change Type Details
 <a name="ct-37qquo9wbpa8x-MAId-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-37qquo9wbpa8x |

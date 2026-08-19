@@ -145,8 +145,6 @@ PS C:\migrations_workspace >   eb migrate cleanup --force
 
 None of these options are required. If you run **eb migrate** without any options, the EB CLI will execute in the non-interactive mode. With **eb migrate --interactive**, the EB CLI prompts you to enter or select a value for required settings.
 
-****
-
 |  Name  |  Description  |
 | --- | --- |
 | `-a` {{application-name}}<br />or<br />`--application-name` {{application-name}} | Name for the new Elastic Beanstalk application.<br />Type: String<br />Default: EBMigratedApp |

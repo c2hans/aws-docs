@@ -25,6 +25,11 @@ The encryption configuration for centralization destination log groups.
 Type: [LogsEncryptionConfiguration](API_LogsEncryptionConfiguration.md) object
 Required: No
 
+ ** TagPropagationConfiguration **   <a name="cwoa-Type-DestinationLogsConfiguration-TagPropagationConfiguration"></a>
+Specifies the tag propagation configuration for this centralization rule. When present, `LogGroupNameConfiguration` must use a `LogGroupNamePattern` that contains `${source.logGroup}`, `${source.accountId}`, and `${source.region}`.
+Type: [TagPropagationConfiguration](API_TagPropagationConfiguration.md) object
+Required: No
+
 ## See Also
 <a name="API_DestinationLogsConfiguration_SeeAlso"></a>
 

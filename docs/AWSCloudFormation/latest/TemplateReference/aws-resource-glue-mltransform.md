@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[Name](#cfn-glue-mltransform-name)" : {{String}},
       "[NumberOfWorkers](#cfn-glue-mltransform-numberofworkers)" : {{Integer}},
       "[Role](#cfn-glue-mltransform-role)" : {{String}},
-      "[Tags](#cfn-glue-mltransform-tags)" : {{[ [`Tag`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html), ... ]}},
+      "[Tags](#cfn-glue-mltransform-tags)" : {{{{{Key}}: {{Value}}, ...}}},
       "[Timeout](#cfn-glue-mltransform-timeout)" : {{Integer}},
       "[TransformEncryption](#cfn-glue-mltransform-transformencryption)" : {{TransformEncryption}},
       "[TransformParameters](#cfn-glue-mltransform-transformparameters)" : {{TransformParameters}},
@@ -54,7 +54,7 @@ Properties:
   [NumberOfWorkers](#cfn-glue-mltransform-numberofworkers): {{Integer}}
   [Role](#cfn-glue-mltransform-role): {{String}}
   [Tags](#cfn-glue-mltransform-tags): {{
-    - [`Tag`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)}}
+    {{Key}}: {{Value}}}}
   [Timeout](#cfn-glue-mltransform-timeout): {{Integer}}
   [TransformEncryption](#cfn-glue-mltransform-transformencryption): {{
     TransformEncryption}}
@@ -136,7 +136,8 @@ The name or Amazon Resource Name (ARN) of the IAM role with the required permiss
 `Tags`  <a name="cfn-glue-mltransform-tags"></a>
 The tags to use with this machine learning transform. You may use tags to limit access to the machine learning transform. For more information about tags in AWS Glue, see [AWS Tags in AWS Glue](https://docs.aws.amazon.com/glue/latest/dg/monitor-tags.html) in the developer guide.
 *Required*: No
-*Type*: Array of [`Tag`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)
+*Type*: Object of String
+*Pattern*: `.*`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Timeout`  <a name="cfn-glue-mltransform-timeout"></a>
@@ -151,7 +152,7 @@ The encryption-at-rest settings of the transform that apply to accessing user da
 Additionally, imported labels and trained transforms can now be encrypted using a customer provided KMS key.
 *Required*: No
 *Type*: [TransformEncryption](aws-properties-glue-mltransform-transformencryption.md)
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `TransformParameters`  <a name="cfn-glue-mltransform-transformparameters"></a>
 The algorithm-specific parameters that are associated with the machine learning transform.
@@ -186,3 +187,9 @@ For more information about using the `Ref` function, see [`Ref`](https://docs.aw
 
 ### Fn::GetAtt
 <a name="aws-resource-glue-mltransform-return-values-fn--getatt"></a>
+
+####
+<a name="aws-resource-glue-mltransform-return-values-fn--getatt-fn--getatt"></a>
+
+`TransformId`  <a name="TransformId-fn::getatt"></a>
+The unique transform ID that is generated for the machine learning transform. The ID is guaranteed to be unique and does not change.

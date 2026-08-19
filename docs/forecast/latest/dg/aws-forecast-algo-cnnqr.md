@@ -46,8 +46,6 @@ To facilitate learning time-dependent patterns, such as spikes during weekends, 
 
 CNN-QR automatically includes these feature time series based on the data frequency and the size of training data. The following table lists the features that can be derived for each supported basic time frequency.
 
-****
-
 | Frequency of the Time Series | Derived Features |
 | --- | --- |
 | Minute | minute-of-hour, hour-of-day, day-of-week, day-of-month, day-of-year |

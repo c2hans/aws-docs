@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/neptu
 # neptune.read()
 <a name="neptune-read"></a>
 
- Neptune supports a `CALL` procedure `neptune.read` to read data from Amazon S3 and then run an openCypher query (read, insert, update) using the data. The procedure yields each row in the file as a declared result variable row. It uses the IAM credentials of the caller to access the data in Amazon S3. See [ Create your IAM role for Amazon S3 access](https://docs.aws.amazon.com//neptune-analytics/latest/userguide/bulk-import-create-from-s3.html#create-iam-role-for-s3-access) to set up the permissions. The AWS region of the Amazon S3 bucket must be in the same region where Neptune Analytics instance is located. Currently, cross-region reads are not supported.
+ Neptune supports a `CALL` procedure `neptune.read` to read data from Amazon S3 and then run an openCypher query (read, insert, update) using the data. The procedure yields each row in the file as a declared result variable row. It uses the IAM credentials of the caller to access the data in Amazon S3. See [ Create your IAM role for Amazon S3 access](https://docs.aws.amazon.com/neptune-analytics/latest/userguide/bulk-import-create-from-s3.html#create-iam-role-for-s3-access) to set up the permissions. The AWS region of the Amazon S3 bucket must be in the same region where Neptune Analytics instance is located. Currently, cross-region reads are not supported.
 
  **Syntax**
 
@@ -25,7 +25,7 @@ YIELD row
 +  **source** (required) - Amazon S3 URI to a **single** object. Amazon S3 prefix to multiple objects is not supported.
 +  **format** (required) - `parquet` and `csv` are supported.
   +  More details on the supported Parquet format can be found in [Supported Parquet column types](parquet-column-types.md).
-  +  For more information on the supported csv format, see [Gremlin load data format](https://docs.aws.amazon.com//neptune/latest/userguide/bulk-load-tutorial-format-gremlin.html).
+  +  For more information on the supported csv format, see [Gremlin load data format](https://docs.aws.amazon.com/neptune/latest/userguide/bulk-load-tutorial-format-gremlin.html).
 +  **concurrency** (optional) - Type: 0 or greater integer. Default: 0. Specifies the number of threads to be used for reading the file. If the value is 0, the maximum number of threads allowed by the resource will be used. For Parquet, it is recommended to be set to a number of row groups.
 
 **Outputs**

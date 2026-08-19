@@ -27,6 +27,6 @@ For example, if you create an Amazon EC2 instance, and the API requires you to c
 
 AWS Config records separate changes for resource relationships that are *indirect* relationships. For example, AWS Config generates two CIs if you create a security group and add an associated Amazon EC2 instance that's part of the security group.
 
-For more information about direct and indirect relationships, see [What is a direct and an indirect relationship with respect to a resource?](https://docs.aws.amazon.com//config/latest/developerguide/faq.html#faq-0)
+For more information about direct and indirect relationships, see [What is a direct and an indirect relationship with respect to a resource?](https://docs.aws.amazon.com/config/latest/developerguide/faq.html#faq-0)
 
-You can find [a list of resource relationships](https://docs.aws.amazon.com//config/latest/developerguide/resource-config-reference.html) in the AWS Config documentation.
+You can find [a list of resource relationships](https://docs.aws.amazon.com/config/latest/developerguide/resource-config-reference.html) in the AWS Config documentation.

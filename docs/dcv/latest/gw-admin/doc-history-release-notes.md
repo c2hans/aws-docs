@@ -36,16 +36,12 @@ This section provides an overview of the major updates, feature releases, and bu
 ### 2025.0-886— April 1, 2026
 <a name="gw-2025-0-886"></a>
 
-****
-
 | Build numbers | New features | Changes and bug fixes |
 | --- | --- | --- |
 | 886 | Add domain name support for StatsD metrics endpoints (IPv4 only supported, IPv6 addresses will log a warning) |  +  Bug fixes related to connection negotiation   |
 
 ### 2025.0-870— October 22, 2025
 <a name="gw-2025-0-870"></a>
-
-****
 
 | Build numbers | Changes and bug fixes |
 | --- | --- |
@@ -54,16 +50,12 @@ This section provides an overview of the major updates, feature releases, and bu
 ### 2024.0-848— May 16, 2025
 <a name="gw-2024-0-848"></a>
 
-****
-
 | Build numbers | Changes and bug fixes |
 | --- | --- |
 | 848 |  +  Fixes and performance improvements.   |
 
 ### 2024.0-777— October 31, 2024
 <a name="gw-2024-0-777"></a>
-
-****
 
 | Build numbers | Changes and bug fixes |
 | --- | --- |
@@ -72,16 +64,12 @@ This section provides an overview of the major updates, feature releases, and bu
 ### 2023.1-710— March 6, 2024
 <a name="gw-2023-1-710"></a>
 
-****
-
 | Build numbers | Changes and bug fixes |
 | --- | --- |
 | 710 |  +  Minor bug fixes   |
 
 ### 2023.1-705— February 26, 2024
 <a name="gw-2023-1-705"></a>
-
-****
 
 | Build numbers | Changes and bug fixes |
 | --- | --- |
@@ -90,16 +78,12 @@ This section provides an overview of the major updates, feature releases, and bu
 ### 2023.1-692— January 29, 2024
 <a name="gw-2023-1-692"></a>
 
-****
-
 | Build numbers | Changes and bug fixes |
 | --- | --- |
 | 692 |  +  Updated SSRF/XSS <br />+  Bug fixes and security improvements   |
 
 ### 2023.1-671— November 9, 2023
 <a name="gw-2023-1-671"></a>
-
-****
 
 | Build numbers | Changes and bug fixes |
 | --- | --- |
@@ -108,16 +92,12 @@ This section provides an overview of the major updates, feature releases, and bu
 ### 2023.0-531— March 28, 2023
 <a name="gw-2023-0-531"></a>
 
-****
-
 | Build numbers | Changes and bug fixes |
 | --- | --- |
 | 531 |  +  Added new metrics. <br />+  Fixed a bug preventing the start of the Amazon DCV Connection Gateway on Graviton instances.   |
 
 ### 2022.2-427— November 11, 2022
 <a name="gw-2022-2-427"></a>
-
-****
 
 | Build numbers | Changes and bug fixes |
 | --- | --- |
@@ -126,16 +106,12 @@ This section provides an overview of the major updates, feature releases, and bu
 ### 2022.1-377— June 29, 2022
 <a name="gw-2022-1-377"></a>
 
-****
-
 | Build numbers | New features | Changes and bug fixes |
 | --- | --- | --- |
 | 377 |  +  Added support for Ubuntu 22.04 and Rocky Linux 8.5 and higher.   |  +  Fixed a problem preventing QUIC connections to be closed when an error occurs in the server.   |
 
 ### 2022.0-351— May 19, 2022
 <a name="gw-2022-0-351"></a>
-
-****
 
 | Build numbers | Changes and bug fixes |
 | --- | --- |
@@ -144,8 +120,6 @@ This section provides an overview of the major updates, feature releases, and bu
 ### 2022.0-322— March 23, 2022
 <a name="gw-2022-0-322"></a>
 
-****
-
 | Build numbers | Changes and bug fixes |
 | --- | --- |
 | 322 |  +  Handle HTTP DELETE method for DCV resources.   |
@@ -153,16 +127,12 @@ This section provides an overview of the major updates, feature releases, and bu
 ### 2022.0-310— February 23, 2022
 <a name="gw-2022-0-310"></a>
 
-****
-
 | Build numbers | Changes and bug fixes |
 | --- | --- |
 | 310 |  +  It is now possible to configure the Amazon DCV Connection Gateway to listen on a specific network interface or on specific IPv4 or IPv6 addresses. <br />+  Leverage systemd sandboxing features when they are available. <br />+  Support session resolver URLs with a path.   |
 
 ### 2021.3-251— December 20, 2021
 <a name="gw-2021-3-251"></a>
-
-****
 
 | Build numbers | Changes and bug fixes |
 | --- | --- |
@@ -172,8 +142,6 @@ This section provides an overview of the major updates, feature releases, and bu
 <a name="doc-history"></a>
 
 The following table describes the documentation for this release of Amazon DCV Connection Gateway.
-
-****
 
 | Change | Description | Date |
 | --- | --- | --- |

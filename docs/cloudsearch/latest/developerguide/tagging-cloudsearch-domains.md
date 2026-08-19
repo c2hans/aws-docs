@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/taggin
 
 Use Amazon CloudSearch tags to attach metadata to your search domains. AWS does not apply any semantic meaning to your tags; tags are interpreted strictly as character strings. All tags contain the following elements.
 
-****
-
 | Tag Element | Description |
 | --- | --- |
 | Tag key | The tag key is the required name of the tag. Tag keys must be unique for the domain to which they are attached. For a list of basic restrictions on tag keys and values, see [Tag Restrictions](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/allocation-tag-restrictions.html). |

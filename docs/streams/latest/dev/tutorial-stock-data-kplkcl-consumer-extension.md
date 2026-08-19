@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/tutorial-stock-data-k
 # (Optional) Extend the consumer
 <a name="tutorial-stock-data-kplkcl-consumer-extension"></a>
 
-The application in the [Tutorial: Process real-time stock data using KPL and KCL 1.x[Tutorial: Process real-time stock data using KPL and KCL 1.x](tutorial-stock-data-kplkcl.md)](tutorial-stock-data-kplkcl.md) might already be sufficient for your purposes. This optional section shows how you can extend the consumer code for a slightly more elaborate scenario.
+The application in the [Tutorial: Process real-time stock data using KPL and KCL 1.x](tutorial-stock-data-kplkcl.md) might already be sufficient for your purposes. This optional section shows how you can extend the consumer code for a slightly more elaborate scenario.
 
 If you want to know about the biggest sell orders each minute, you can modify the `StockStats` class in three places to accommodate this new priority.
 

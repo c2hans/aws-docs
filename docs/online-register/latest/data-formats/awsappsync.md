@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsa
 
 AWS AppSync provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="appsync-EvaluateCode"></a>[EvaluateCode](https://docs.aws.amazon.com/appsync/latest/APIReference/API_EvaluateCode.html) | Evaluate code with a runtime and context | Read |

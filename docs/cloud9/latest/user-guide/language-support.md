@@ -9,8 +9,6 @@ source_url: https://docs.aws.amazon.com/cloud9/latest/user-guide/language-suppor
 
 The AWS Cloud9 IDE supports many programming languages. The following table lists the languages that are supported and to what level.
 
-****
-
 | Language | Syntax highlighting 1  | Run UI 2  | Outline view | Code hints and linting | Code completion | Debugging 3  |
 | --- | --- | --- | --- | --- | --- | --- |
 | C\+\+ | ✓ | ✓ | ✓ |  | ✓ 5  | ✓ 4  |
@@ -54,8 +52,6 @@ The AWS Cloud9 IDE supports many programming languages. The following table list
 <a name="programming-language-support"></a>
 
 The table below outlines which versions of programming languages are supported on specific AMIs in the AWS Cloud9 IDE. Ubuntu 18 went EOL in 2023 and as a result the programming language versions cannot be updated in AWS Cloud9.
-
-****
 
 | *Language* | *Amazon Linux 2023*  | *Amazon Linux 2*  | *Ubuntu 18* | *Ubuntu 22* |
 | --- | --- | --- | --- | --- |

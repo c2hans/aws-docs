@@ -50,8 +50,6 @@ To create a batch inference job, send a [CreateModelInvocationJob](https://docs.
 
 The following fields are required:
 
-****
-
 | Field | Use case |
 | --- | --- |
 | jobName | To specify a name for the job. |
@@ -61,8 +59,6 @@ The following fields are required:
 | outputDataConfig | To specify the S3 location to write the model responses to. |
 
 The following fields are optional:
-
-****
 
 | Field | Use case |
 | --- | --- |

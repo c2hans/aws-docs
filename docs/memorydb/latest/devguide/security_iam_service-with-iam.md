@@ -237,7 +237,7 @@ This section shows example policies for implementing fine-grained access control
 
 ------
 
-   In cases where you are setting ‘Deny’ based policies, it is recommended to use the [StringEqualsIgnoreCase](https://docs.aws.amazon.com//IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String) operator to avoid all calls with a specific user authentication mode type irrespective of the case.
+   In cases where you are setting ‘Deny’ based policies, it is recommended to use the [StringEqualsIgnoreCase](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String) operator to avoid all calls with a specific user authentication mode type irrespective of the case.
 
 ------
 #### [ JSON ]

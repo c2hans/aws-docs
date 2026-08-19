@@ -19,8 +19,6 @@ Quick administrators can perform the following tasks with shared folders.
 
 The following table summarizes the actions that a Quick user can take when working with unrestricted shared folders based on their role.
 
-****
-
 | Action | Owner | Contributor | Viewer |
 | --- | --- | --- | --- |
 | Share an asset in a folder with users that don't have access to the folder | ![](http://docs.aws.amazon.com/quick/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/quick/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/quick/latest/userguide/images/negative_icon.png) No |
@@ -50,8 +48,6 @@ Restricted shared folders provide an additional security boundary that restricts
 + Administrators can assign folder contributor and viewer permissions to users with the `UpdateFolderPermissions` API operation. For more information about the `UpdateFolderPermissions` API operation, see [UpdateFolderPermissions](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdateFolderPermissions.html).
 
 The following table summarizes the actions that a Quick Sight user can take when working with restricted shared folders based on their role.
-
-****
 
 | Action | Contributor | Viewer |
 | --- | --- | --- |

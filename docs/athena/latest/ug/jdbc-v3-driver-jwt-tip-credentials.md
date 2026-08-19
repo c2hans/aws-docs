@@ -14,8 +14,6 @@ With trusted identity propagation, identity context is added to an IAM role to i
 
 The credentials provider that will be used to authenticate requests to AWS. Set the value of this parameter to `JWT_TIP`.
 
-****
-
 | Parameter name | Alias | Parameter type | Default value | Value to use |
 | --- | --- | --- | --- | --- |
 | CredentialsProvider | AWSCredentialsProviderClass (deprecated) | Required | none | JWT\_TIP |
@@ -24,8 +22,6 @@ The credentials provider that will be used to authenticate requests to AWS. Set 
 <a name="jdbc-v3-driver-jwt-tip-web-identity-token"></a>
 
 The JWT token obtained from an external federated identity provider. This token will be used to authenticate with Athena. Token Caching is enabled by default and allows the same Identity Center access token to be used across driver connections. We recommend to provide a fresh JWT token upon "Testing Connection" as the exchanged token is present only during driver instance is active.
-
-****
 
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
@@ -36,8 +32,6 @@ The JWT token obtained from an external federated identity provider. This token 
 
 The Amazon Resource Name (ARN) of the Amazon Athena workgroup. For more information about workgroups, see [WorkGroup](https://docs.aws.amazon.com/athena/latest/APIReference/API_WorkGroup.html).
 
-****
-
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
 | WorkGroupArn | none | Required | primary |
@@ -46,8 +40,6 @@ The Amazon Resource Name (ARN) of the Amazon Athena workgroup. For more informat
 <a name="jdbc-v3-driver-jwt-tip-application-role-arn"></a>
 
 The ARN of the role to assume. This role is used for JWT exchange, getting IAM Identity Center customer managed application ARN through workgroup tags, and getting access role ARN. For more information about assuming roles, see [AssumeRole](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html).
-
-****
 
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
@@ -58,8 +50,6 @@ The ARN of the role to assume. This role is used for JWT exchange, getting IAM I
 
 The name of the session when authenticating with JWT credentials. It can be any name of your choice.
 
-****
-
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
 | JwtRoleSessionName | role\_session\_name (deprecated) | Required | none |
@@ -68,8 +58,6 @@ The name of the session when authenticating with JWT credentials. It can be any 
 <a name="jdbc-v3-driver-jwt-tip-session-duration"></a>
 
 The duration, in seconds, of the role session. For more information, see [AssumeRoleWithWebIdentity](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRoleWithWebIdentity.html).
-
-****
 
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
@@ -80,8 +68,6 @@ The duration, in seconds, of the role session. For more information, see [Assume
 
 The ARN of the role to assume. This is the role assumed by the Athena service to make calls on the behalf of you. For more information about assuming roles, see [AssumeRole](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html) in the *AWS Security Token Service API Reference*.
 
-****
-
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
 | AccessRoleArn | none | Optional | none |
@@ -90,8 +76,6 @@ The ARN of the role to assume. This is the role assumed by the Athena service to
 <a name="jdbc-v3-driver-jwt-tip-customer-idc-application-arn"></a>
 
 The ARN of IAM Identity Center customer managed application. For more information, see [customer managed applications](https://docs.aws.amazon.com/singlesignon/latest/userguide/customermanagedapps.html).
-
-****
 
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |

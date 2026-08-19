@@ -49,8 +49,6 @@ You can project other base table attributes into the index if you want. When you
 
 In a DynamoDB table, each key value must be unique. However, the key values in a global secondary index do not need to be unique. To illustrate, suppose that a game named Comet Quest is especially difficult, with many new users trying but failing to get a score above zero. The following is some data that could represent this.
 
-****
-
 | UserId | GameTitle | TopScore |
 | --- | --- | --- |
 | 123 | Comet Quest | 0 |
@@ -64,8 +62,6 @@ When this data is added to the `GameScores` table, DynamoDB propagates it to `Ga
 Only the items with the specified key values appear in the response. Within that set of data, the items are in no particular order.
 
 A global secondary index only tracks data items where its key attributes actually exist. For example, suppose that you added another new item to the `GameScores` table, but only provided the required primary key attributes.
-
-****
 
 | UserId | GameTitle |
 | --- | --- |

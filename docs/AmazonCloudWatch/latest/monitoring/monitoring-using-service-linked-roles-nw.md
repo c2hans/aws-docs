@@ -56,4 +56,4 @@ After you delete `AWSServiceRoleForNetworkMonitor ` Network Synthetic Monitor wi
 ## Supported Regions for the Network Synthetic Monitor service-linked role
 <a name="slr-regions"></a>
 
-Network Synthetic Monitor supports the service-linked role in all of AWS Regions where the service is available. For more information, see [AWS endpoints](https://docs.aws.amazon.com//general/latest/gr/rande.html) in the *AWS General Reference*.
+Network Synthetic Monitor supports the service-linked role in all of AWS Regions where the service is available. For more information, see [AWS endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html) in the *AWS General Reference*.

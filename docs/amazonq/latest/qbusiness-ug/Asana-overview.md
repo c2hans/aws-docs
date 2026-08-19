@@ -9,8 +9,6 @@ Amazon Q Business is no longer open to new customers. For capabilities similar t
 
 The following table gives an overview of the Amazon Q Business Asana connector and its supported features.
 
-****
-
 | Category | Feature | Support |
 | --- | --- | --- |
 | Security | Authentication type | Service Account and PAT |

@@ -60,7 +60,7 @@ To add a new phone number to your existing WABA
 
       1. Tags are pairs of keys and values that you can optionally apply to your AWS resources to control access or usage. Choose **Add new tag** and enter a key-value pair to attach.
 
-1. A WABA can have one message and event destination to log events for the WABA and all resources associated to the WABA. To enable event logging, including logging of receiving a customer message, turn on **Message and event publishing**. For more information, see [Message and event destinations in AWS End User Messaging SocialMessage and event destinations](managing-event-destinations.md).
+1. A WABA can have one message and event destination to log events for the WABA and all resources associated to the WABA. To enable event logging, including logging of receiving a customer message, turn on **Message and event publishing**. For more information, see [Message and event destinations in AWS End User Messaging Social](managing-event-destinations.md).
 **Important**
 You must enable **Message and event publishing** to be able to respond to customer messages.
 

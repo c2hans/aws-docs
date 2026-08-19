@@ -23,7 +23,7 @@ Create an Amazon SNS topic to serve as an *event target* for the *event rule* th
 
 **Create an Amazon SNS topic**
 
-1. Log in and open the [Amazon SNS console](https://console.aws.amazon.com//sns/v3/).
+1. Log in and open the [Amazon SNS console](https://console.aws.amazon.com/sns/v3/).
 
 1. In the navigation pane, choose **Topics**, **Create topic**.
 
@@ -50,7 +50,7 @@ Register an *event rule* that captures status changes for your AWS Proton servic
 
 **Create an event rule.**
 
-1. Open the [Amazon EventBridge console](https://console.aws.amazon.com//events/).
+1. Open the [Amazon EventBridge console](https://console.aws.amazon.com/events/).
 
 1. In the navigation pane, choose **Events**, **Rules**.
 
@@ -72,7 +72,7 @@ Register an *event rule* that captures status changes for your AWS Proton servic
 
          The **Event pattern** appears in a text editor.
 
-      1. Open the [AWS Proton console](https://console.aws.amazon.com//proton/).
+      1. Open the [AWS Proton console](https://console.aws.amazon.com/proton/).
 
       1. In the navigation pane, choose **Services**.
 
@@ -107,7 +107,7 @@ Register an *event rule* that captures status changes for your AWS Proton servic
 
 Verify that your *event rule* is working by adding an instance to your AWS Proton service.
 
-1. Switch to the [AWS Proton console](https://console.aws.amazon.com//proton/).
+1. Switch to the [AWS Proton console](https://console.aws.amazon.com/proton/).
 
 1. In the navigation pane, choose **Services**.
 
@@ -176,7 +176,7 @@ Delete your Amazon SNS topic and subscription and delete your EventBridge rule.
 
 **Delete your Amazon SNS topic and subscription.**
 
-1. Navigate to the [Amazon SNS console](https://console.aws.amazon.com//sns/v3/).
+1. Navigate to the [Amazon SNS console](https://console.aws.amazon.com/sns/v3/).
 
 1. In the navigation panel, choose **Subscriptions**.
 
@@ -190,7 +190,7 @@ Delete your Amazon SNS topic and subscription and delete your EventBridge rule.
 
 **Delete your EventBridge rule.**
 
-1. Navigate to the [Amazon EventBridge console](https://console.aws.amazon.com//events/).
+1. Navigate to the [Amazon EventBridge console](https://console.aws.amazon.com/events/).
 
 1. In the navigation pane, choose **Events**, **Rules**.
 
@@ -200,7 +200,7 @@ Delete your Amazon SNS topic and subscription and delete your EventBridge rule.
 
 **Delete the added service instance.**
 
-1. Navigate to the [AWS Proton console](https://console.aws.amazon.com//proton/).
+1. Navigate to the [AWS Proton console](https://console.aws.amazon.com/proton/).
 
 1. In the navigation pane, choose **Services**.
 

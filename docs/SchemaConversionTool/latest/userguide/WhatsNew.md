@@ -71,8 +71,6 @@ You can subscribe to an RSS feed to be notified of updates to this documentation
 
 The following table describes the important changes to the AWS Schema Conversion Tool (AWS SCT) user guide prior to January 2018.
 
-****
-
 | Version | Change | Description | Date changed |
 | --- | --- | --- | --- |
 | 1.0.608 | FIPS endpoint support for Amazon S3 | You can now request AWS SCT to connect to Amazon S3 and Amazon Redshift by using FIPS endpoints to comply with Federal Information Processing Standard security requirements. For more information, see [Storing AWS credentials](CHAP_UserInterface.Profiles.md#CHAP_UserInterface.Profiles.Storing).  | November 17, 2017 |

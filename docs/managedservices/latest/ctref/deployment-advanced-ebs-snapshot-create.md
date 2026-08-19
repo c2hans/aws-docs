@@ -14,8 +14,6 @@ Create an Elastic Block Store (EBS) snapshot from an EBS volume. The volume must
 ## Change Type Details
 <a name="ct-3mlsibqhugrf1-DAEc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-3mlsibqhugrf1 |

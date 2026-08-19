@@ -53,4 +53,4 @@ You can learn about the endpoints and service quotas in the following pages:
 ## AWS Glossary
 <a name="aws-glossary"></a>
 
-For the latest AWS terminology, see the [AWS Glossary](https://docs.aws.amazon.com//glossary/latest/reference/glos-chap.html).
+For the latest AWS terminology, see the [AWS Glossary](https://docs.aws.amazon.com/glossary/latest/reference/glos-chap.html).

@@ -57,4 +57,4 @@ An IDE might add files to your project folder that you might not want to commit 
 If you just want to begin coding and don't need all of the features of an IDE, consider [installing Sublime Text](http://www.sublimetext.com/).
 
 **Note**
-On May 31, 2023, the [AWS Toolkit for Eclipse](https://docs.aws.amazon.com//toolkit-for-eclipse/v1/user-guide/welcome.html) reached end of life and is no longer supported by AWS. For additional details regarding the end of life cycle for the AWS Toolkit for Eclipse, see the [README.md](https://github.com/aws/aws-toolkit-eclipse) file on the AWS Toolkit for Eclipse GitHub repository.
+On May 31, 2023, the [AWS Toolkit for Eclipse](https://docs.aws.amazon.com/toolkit-for-eclipse/v1/user-guide/welcome.html) reached end of life and is no longer supported by AWS. For additional details regarding the end of life cycle for the AWS Toolkit for Eclipse, see the [README.md](https://github.com/aws/aws-toolkit-eclipse) file on the AWS Toolkit for Eclipse GitHub repository.

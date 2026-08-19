@@ -67,7 +67,7 @@ A top-level account within AWS is identified as a [Management Account](https://d
 
  **Account Types and Naming Standards**: Recommends standardized naming conventions and hierarchical organization for Management Accounts, Security Accounts, Shared Services Accounts, and Workload Accounts, with clear reference methods for both console and programmatic access.
 
- **Modern Root Access Management**: Describes how to leverage [AWS Organizations' centralized root access management](https://docs.aws.amazon.com//organizations/latest/userguide/orgs_manage_accounts_access.html) capabilities to eliminate long-term root credentials while maintaining necessary administrative capabilities through temporary, task-scoped root sessions.
+ **Modern Root Access Management**: Describes how to leverage [AWS Organizations' centralized root access management](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_accounts_access.html) capabilities to eliminate long-term root credentials while maintaining necessary administrative capabilities through temporary, task-scoped root sessions.
 
  **Configuration Management**: Provides guidance for implementing organization-wide configuration baselines using [AWS Config rules](https://docs.aws.amazon.com/config/latest/developerguide/evaluate-config.html), [Service Control Policies (SCPs)](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html), and automated drift detection to help maintain consistent security posture across all administrative accounts.
 

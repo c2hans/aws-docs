@@ -15,15 +15,15 @@ AWS AppSync allows you to define and configure GraphQL schemas. The following se
 <a name="schema-structure"></a>
 
 **Tip**
-We recommend reviewing the [Schemas](https://docs.aws.amazon.com//appsync/latest/devguide/schema-components.html) section before continuing.
+We recommend reviewing the [Schemas](https://docs.aws.amazon.com/appsync/latest/devguide/schema-components.html) section before continuing.
 
 GraphQL is a powerful tool for implementing API services. According to [GraphQL's website](https://graphql.org/), GraphQL is the following:
 
 "*GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data. GraphQL provides a complete and understandable description of the data in your API, gives clients the power to ask for exactly what they need and nothing more, makes it easier to evolve APIs over time, and enables powerful developer tools.*"
 
-This section covers the very first part of your GraphQL implementation, the schema. Using the quote above, a schema plays the role of "providing a complete and understandable description of the data in your API". In other words, a GraphQL schema is a textual representation of your service's data, operations, and the relations between them. The schema is considered the main entry point for your GraphQL service implementation. Unsurprisingly, it's often one of the first things you make in your project. We recommend reviewing the [Schemas](https://docs.aws.amazon.com//appsync/latest/devguide/schema-components.html) section before continuing.
+This section covers the very first part of your GraphQL implementation, the schema. Using the quote above, a schema plays the role of "providing a complete and understandable description of the data in your API". In other words, a GraphQL schema is a textual representation of your service's data, operations, and the relations between them. The schema is considered the main entry point for your GraphQL service implementation. Unsurprisingly, it's often one of the first things you make in your project. We recommend reviewing the [Schemas](https://docs.aws.amazon.com/appsync/latest/devguide/schema-components.html) section before continuing.
 
-To quote the [Schemas](https://docs.aws.amazon.com//appsync/latest/devguide/schema-components.html) section, GraphQL schemas are written in the *Schema Definition Language* (SDL). SDL is composed of types and fields with an established structure:
+To quote the [Schemas](https://docs.aws.amazon.com/appsync/latest/devguide/schema-components.html) section, GraphQL schemas are written in the *Schema Definition Language* (SDL). SDL is composed of types and fields with an established structure:
 + **Types**: Types are how GraphQL defines the shape and behavior of the data. GraphQL supports a multitude of types that will be explained later in this section. Each type that's defined in your schema will contain its own scope. Inside the scope will be one or more fields that can contain a value or logic that will be used in your GraphQL service. Types fill many different roles, the most common being objects or scalars (primitive value types).
 + **Fields**: Fields exist within the scope of a type and hold the value that's requested from the GraphQL service. These are very similar to variables in other programming languages. The shape of the data you define in your fields will determine how the data is structured in a request/response operation. This allows developers to predict what will be returned without knowing how the backend of the service is implemented.
 
@@ -63,7 +63,7 @@ type Book {
 }
 ```
 
-As you can see, the type representations are very close to the diagram. However, the methods are where it gets a bit trickier. These will be placed in one of a few special object types as a field. Their special object categorization depends on their behavior. GraphQL contains three fundamental special object types: queries, mutations, and subscriptions. For more information, see [Special objects](https://docs.aws.amazon.com//appsync/latest/devguide/graphql-types.html#special-object-components).
+As you can see, the type representations are very close to the diagram. However, the methods are where it gets a bit trickier. These will be placed in one of a few special object types as a field. Their special object categorization depends on their behavior. GraphQL contains three fundamental special object types: queries, mutations, and subscriptions. For more information, see [Special objects](https://docs.aws.amazon.com/appsync/latest/devguide/graphql-types.html#special-object-components).
 
 Because `getAuthor` and `getBook` are both requesting data, they will be placed in a `Query` special object type:
 
@@ -203,10 +203,10 @@ Your schema will be in a file called `schema.graphql`. AWS AppSync allows users 
 #### [ CLI ]
 
 **Note**
-When using the CLI, make sure you have the correct permissions to access and create resources in the service. You may want to set [least-privilege](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#grant-least-privilege) policies for non-admin users who need to access the service. For more information about AWS AppSync policies, see [Identity and access management for AWS AppSync](https://docs.aws.amazon.com//appsync/latest/devguide/security-iam.html).
+When using the CLI, make sure you have the correct permissions to access and create resources in the service. You may want to set [least-privilege](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#grant-least-privilege) policies for non-admin users who need to access the service. For more information about AWS AppSync policies, see [Identity and access management for AWS AppSync](https://docs.aws.amazon.com/appsync/latest/devguide/security-iam.html).
 Additionally, we recommend reading the console version first if you haven't done so already.
 
-1. If you haven't already done so, [install](https://docs.aws.amazon.com//cli/latest/userguide/cli-chap-getting-started.html) the AWS CLI, then add your [configuration](https://docs.aws.amazon.com//cli/latest/userguide/cli-configure-quickstart.html).
+1. If you haven't already done so, [install](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html) the AWS CLI, then add your [configuration](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html).
 
 1. Create a GraphQL API object by running the [`create-graphql-api`](https://docs.aws.amazon.com/cli/latest/reference/appsync/create-graphql-api.html) command.
 
@@ -345,7 +345,7 @@ These next few sections will be using the **schema editor**, so keep this open.
   }
   ```
 **Note**
-In this step, we added a generic object type with a required `id` field stored as `ID`, a `title` field stored as a `String`, and a `date` field stored as an `AWSDateTime`. To see a list of types and fields and what they do, see [Schemas](https://docs.aws.amazon.com//appsync/latest/devguide/schema-components.html). To see a list of scalars and what they do, see the [Type reference](https://docs.aws.amazon.com/appsync/latest/devguide/type-reference.html).
+In this step, we added a generic object type with a required `id` field stored as `ID`, a `title` field stored as a `String`, and a `date` field stored as an `AWSDateTime`. To see a list of types and fields and what they do, see [Schemas](https://docs.aws.amazon.com/appsync/latest/devguide/schema-components.html). To see a list of scalars and what they do, see the [Type reference](https://docs.aws.amazon.com/appsync/latest/devguide/type-reference.html).
 
 ------
 #### [ CLI ]
@@ -389,7 +389,7 @@ We recommend reading the console version first if you haven't done so already.
   }
   ```
 **Note**
-In this step, we added a generic object type with a required `id` field stored as `ID`, a `title` field stored as a `String`, and a `date` field stored as an `AWSDateTime`. To see a list of types and fields and what they do, see [Schemas](https://docs.aws.amazon.com//appsync/latest/devguide/schema-components.html). To see a list of scalars and what they do, see [Type reference](https://docs.aws.amazon.com/appsync/latest/devguide/type-reference.html).
+In this step, we added a generic object type with a required `id` field stored as `ID`, a `title` field stored as a `String`, and a `date` field stored as an `AWSDateTime`. To see a list of types and fields and what they do, see [Schemas](https://docs.aws.amazon.com/appsync/latest/devguide/schema-components.html). To see a list of scalars and what they do, see [Type reference](https://docs.aws.amazon.com/appsync/latest/devguide/type-reference.html).
 On a further note, you may have realized that entering the definition directly works for smaller types but is infeasible for adding larger or multiple types. You can opt to add everything in a `.graphql` file and then [pass it as the input](https://docs.aws.amazon.com/cli/latest/userguide/cli-usage-parameters-file.html).
 
 ------

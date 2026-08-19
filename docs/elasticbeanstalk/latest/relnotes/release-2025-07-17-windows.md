@@ -64,8 +64,6 @@ Be aware that at the time these release notes are published, the new platform ve
 #### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2025 with IIS 10.0 version 2.19.3**  |  * 64bit Windows Server 2025 v2.19.3 running IIS 10.0 *  | .NET 9.0.7, supports 9.0.7, 8.0.18<br />.NET Framework 4.8.1, supports 4.x, 2.0 | IIS 10.0 |
@@ -79,8 +77,6 @@ Be aware that at the time these release notes are published, the new platform ve
 
 #### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Config  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |

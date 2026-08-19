@@ -97,8 +97,6 @@ saphana://${{{jdbc_connection_string}}}
 
 You can use a multiplexer to connect to multiple database instances with a single Lambda function. Requests are routed by catalog name. Use the following classes in Lambda.
 
-****
-
 | Handler | Class |
 | --- | --- |
 | Composite handler | SaphanaMuxCompositeHandler |
@@ -108,16 +106,12 @@ You can use a multiplexer to connect to multiple database instances with a singl
 ##### Multiplexing handler parameters
 <a name="connectors-sap-hana-multiplexing-handler-parameters"></a>
 
-****
-
 | Parameter | Description |
 | --- | --- |
 | ${{catalog}}\_connection\_string | Required. A database instance connection string. Prefix the environment variable with the name of the catalog used in Athena. For example, if the catalog registered with Athena is mysaphanacatalog, then the environment variable name is mysaphanacatalog\_connection\_string. |
 | default | Required. The default connection string. This string is used when the catalog is lambda:${{{AWS\_LAMBDA\_FUNCTION\_NAME}}}. |
 
 The following example properties are for a Saphana MUX Lambda function that supports two database instances: `saphana1` (the default), and `saphana2`.
-
-****
 
 | Property | Value |
 | --- | --- |
@@ -162,8 +156,6 @@ Currently, the SAP HANA connector recognizes the `user` and `password` JDBC prop
 
 You can use the following single connection metadata and record handlers to connect to a single SAP HANA instance.
 
-****
-
 | Handler type | Class |
 | --- | --- |
 | Composite handler | SaphanaCompositeHandler |
@@ -173,8 +165,6 @@ You can use the following single connection metadata and record handlers to conn
 ##### Single connection handler parameters
 <a name="connectors-sap-hana-single-connection-handler-parameters"></a>
 
-****
-
 | Parameter | Description |
 | --- | --- |
 | default | Required. The default connection string. |
@@ -182,8 +172,6 @@ You can use the following single connection metadata and record handlers to conn
 The single connection handlers support one database instance and must provide a `default` connection string parameter. All other connection strings are ignored.
 
 The following example property is for a single SAP HANA instance supported by a Lambda function.
-
-****
 
 | Property | Value |
 | --- | --- |
@@ -193,8 +181,6 @@ The following example property is for a single SAP HANA instance supported by a 
 <a name="connectors-sap-hana-spill-parameters"></a>
 
 The Lambda SDK can spill data to Amazon S3. All database instances accessed by the same Lambda function spill to the same location.
-
-****
 
 | Parameter | Description |
 | --- | --- |
@@ -206,8 +192,6 @@ The Lambda SDK can spill data to Amazon S3. All database instances accessed by t
 <a name="connectors-sap-hana-data-type-support"></a>
 
 The following table shows the corresponding data types for JDBC and Apache Arrow.
-
-****
 
 | JDBC | Arrow |
 | --- | --- |
@@ -230,8 +214,6 @@ The following table shows the corresponding data types for JDBC and Apache Arrow
 
 In addition to the JDBC to Arrow conversions, the connector performs certain other conversions to make the SAP HANA source and Athena data types compatible. These conversions help ensure that queries get executed successfully. The following table shows these conversions.
 
-****
-
 | Source data type (SAP HANA) | Converted data type (Athena) |
 | --- | --- |
 | DECIMAL | BIGINT |
@@ -245,8 +227,6 @@ All other unsupported data types are converted to `VARCHAR`.
 <a name="connectors-sap-hana-partitions-and-splits"></a>
 
 A partition is represented by a single partition column of type `Integer`. The column contains partition names of the partitions defined on an SAP HANA table. For a table that does not have partition names, \* is returned, which is equivalent to a single partition. A partition is equivalent to a split.
-
-****
 
 | Name | Type | Description |
 | --- | --- | --- |

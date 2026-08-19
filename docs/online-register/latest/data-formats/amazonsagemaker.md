@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon SageMaker provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="sagemaker-AccessModelPackage"></a>[AccessModelPackage](https://docs.aws.amazon.com/sagemaker/latest/APIReference/) | Access model package that can be used in Amazon SageMaker training or hosting services | Read |

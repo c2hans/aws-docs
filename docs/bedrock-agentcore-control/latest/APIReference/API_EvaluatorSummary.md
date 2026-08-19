@@ -18,25 +18,27 @@ Required: Yes
  ** evaluatorArn **   <a name="bedrockagentcorecontrol-Type-EvaluatorSummary-evaluatorArn"></a>
  The Amazon Resource Name (ARN) of the evaluator.
 Type: String
-Pattern: `arn:aws[a-zA-Z-]*:bedrock-agentcore:[a-z0-9-]+:[0-9]{12}:evaluator\/[a-zA-Z][a-zA-Z0-9-_]{0,99}-[a-zA-Z0-9]{10}$|^arn:aws[a-zA-Z-]*:bedrock-agentcore:::evaluator/Builtin.[a-zA-Z0-9_-]+`
+Pattern: `arn:aws[a-zA-Z-]*:bedrock-agentcore:[a-z0-9-]+:[0-9]{12}:evaluator\/[a-zA-Z][a-zA-Z0-9-_]{0,99}-[a-zA-Z0-9]{10}$|^arn:aws[a-zA-Z-]*:bedrock-agentcore:::evaluator/(Builtin|ThirdParty)\.[a-zA-Z0-9._-]+`
 Required: Yes
 
  ** evaluatorId **   <a name="bedrockagentcorecontrol-Type-EvaluatorSummary-evaluatorId"></a>
  The unique identifier of the evaluator.
 Type: String
-Pattern: `(Builtin.[a-zA-Z0-9_-]+|[a-zA-Z][a-zA-Z0-9-_]{0,99}-[a-zA-Z0-9]{10})`
+Length Constraints: Minimum length of 1. Maximum length of 111.
+Pattern: `(Builtin\.[a-zA-Z0-9._-]+|ThirdParty\.[a-zA-Z0-9_-]+\.[a-zA-Z0-9_-]+|[a-zA-Z][a-zA-Z0-9-_]{0,99}-[a-zA-Z0-9]{10})`
 Required: Yes
 
  ** evaluatorName **   <a name="bedrockagentcorecontrol-Type-EvaluatorSummary-evaluatorName"></a>
  The name of the evaluator.
 Type: String
-Pattern: `(Builtin.[a-zA-Z0-9_-]+|[a-zA-Z][a-zA-Z0-9_]{0,47})`
+Length Constraints: Minimum length of 1. Maximum length of 48.
+Pattern: `(Builtin\.[a-zA-Z0-9._-]+|ThirdParty\.[a-zA-Z0-9_-]+\.[a-zA-Z0-9_-]+|[a-zA-Z][a-zA-Z0-9_]{0,47})`
 Required: Yes
 
  ** evaluatorType **   <a name="bedrockagentcorecontrol-Type-EvaluatorSummary-evaluatorType"></a>
  The type of evaluator, indicating whether it is a built-in evaluator provided by the service or a custom evaluator created by the user.
 Type: String
-Valid Values: `Builtin | Custom | CustomCode`
+Valid Values: `Builtin | ThirdParty | Custom | CustomCode | CustomDerived`
 Required: Yes
 
  ** status **   <a name="bedrockagentcorecontrol-Type-EvaluatorSummary-status"></a>
@@ -72,6 +74,12 @@ Required: No
  ** lockedForModification **   <a name="bedrockagentcorecontrol-Type-EvaluatorSummary-lockedForModification"></a>
  Whether the evaluator is locked for modification due to being referenced by active online evaluation configurations.
 Type: Boolean
+Required: No
+
+ ** provider **   <a name="bedrockagentcorecontrol-Type-EvaluatorSummary-provider"></a>
+ The source of the evaluator's logic: AWS, a third-party library, or you.
+Type: String
+Valid Values: `AWS | DeepEval | AutoEval | Custom`
 Required: No
 
 ## See Also

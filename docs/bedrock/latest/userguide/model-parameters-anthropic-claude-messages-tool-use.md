@@ -11,7 +11,7 @@ Several functions below are offered in beta as indicated. These features are mad
 With Anthropic Claude models, you can specify a tool that the model can use to answer a message. For example, you could specify a tool that gets the most popular song on a radio station. If the user passes the message *What's the most popular song on WZPZ?*, the model determines that the tool you specified can help answer the question. In its response, the model requests that you run the tool on its behalf. You then run the tool and pass the tool result to the model, which then generates a response for the original message. For more information, see [Tool use (function calling)](https://docs.anthropic.com/en/docs/tool-use) in the Anthropic Claude documentation.
 
 **Tip**
-We recommend that you use the Converse API for integrating tool use into your application. For more information, see [Use a tool to complete an Amazon Bedrock model response](tool-use.md).
+We recommend that you use the Responses API or Messages API for integrating tool use into your application. For more information, see [Use a tool to complete an Amazon Bedrock model response](tool-use.md).
 
 **Important**
 Claude Sonnet 4.5 now preserves intentional formatting in tool call string parameters. Previously, trailing newlines in string parameters were sometimes incorrectly stripped. This fix ensures that tools requiring precise formatting (like text editors) receive parameters exactly as intended. This is a behind-the-scenes improvement with no API changes required. However, tools with string parameters may now receive values with trailing newlines that were previously stripped.
