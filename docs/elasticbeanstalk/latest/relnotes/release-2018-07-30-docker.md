@@ -27,16 +27,12 @@ This release applies security updates to the Single Container Docker and Preconf
 ### Single Container Docker
 <a name="release-2018-07-30-docker.platforms.docker"></a>
 
-****
-
 |  Configuration and *Solution Stack Name*   |  AMI  |  Docker Version  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  **Single Container Docker 18.03 version 2.12.0** <br /> * 64bit Amazon Linux 2018.03 v2.12.0 running Docker 18.03.1-ce *  | 2018.03.0 | 18.03.1-ce | nginx 1.12.1 |
 
 ### Preconfigured Docker
 <a name="release-2018-07-30-docker.platforms.dockerpreconfig"></a>
-
-****
 
 |  Configuration and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |

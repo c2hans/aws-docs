@@ -25,6 +25,8 @@ The following differences apply to AWS Glue:
 |  [AWS Glue Version 3.0](https://docs.aws.amazon.com/glue/latest/dg/migrating-version-30.html)  | Yes | Yes |
 |  [AWS Glue Version 4.0](https://docs.aws.amazon.com/glue/latest/dg/migrating-version-40.html)  | Yes | Yes |
 |  [AWS Glue Version 5.0](https://docs.aws.amazon.com/glue/latest/dg/migrating-version-50.html)  | Yes.<br />However, the following features are not available: Connection v2 support for DB connectors, {smlong} Unified Studio, {smlong} Lakehouse, and Data Lineage | Yes.<br />However, the following features are not available: Connection v2 support for DB connectors, {smlong} Unified Studio, {smlong} Lakehouse, and Data Lineage |
+|  [AWS Glue Version 5.1](https://docs.aws.amazon.com/glue/latest/dg/migrating-version-51.html)  | Yes | Yes |
+|  [AWS Glue Version 6.0](https://docs.aws.amazon.com/glue/latest/dg/migrating-version-60.html)  | Yes | Yes |
 |  **Workers**  |  |  |
 |  [G1/G2 workers](https://docs.aws.amazon.com/glue/latest/dg/add-job.html)  | Yes | Yes |
 |  [G4/G8 workers](https://docs.aws.amazon.com/glue/latest/dg/add-job.html)  | No | No |

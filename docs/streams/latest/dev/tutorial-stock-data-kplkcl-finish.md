@@ -41,4 +41,4 @@ As a stream is continuously processed, its output can be sent to other destinati
 <a name="tutorial-stock-data-kplkcl-next-steps"></a>
 + For more information about using Kinesis Data Streams API operations, see [Develop producers using the Amazon Kinesis Data Streams API with the AWS SDK for Java](developing-producers-with-sdk.md), [Develop shared-throughput consumers with the AWS SDK for Java](developing-consumers-with-sdk.md), and [Create and manage Kinesis data streams](working-with-streams.md).
 + For more information about the Kinesis Client Library, see [Develop KCL 1.x consumers](developing-consumers-with-kcl.md).
-+ For more information about how to optimize your application, see [Optimize Amazon Kinesis Data Streams consumersOptimize Kinesis Data Streams consumers](advanced-consumers.md).
++ For more information about how to optimize your application, see [Optimize Amazon Kinesis Data Streams consumers](advanced-consumers.md).

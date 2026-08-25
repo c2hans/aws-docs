@@ -204,7 +204,7 @@ If you want to update the credentials for a plugin, you must delete your current
 <a name="wiz-configure-user-permissions"></a>
 
 To use plugins, the following permissions are required:
-+ Permissions to chat with Amazon Q in the console. For an example IAM policy that grants permissions needed to chat, see [Allow users to chat with Amazon QAllow users to use Amazon Q CLI with AWS CloudShell](id-based-policy-examples-users.md#id-based-policy-examples-allow-chat).
++ Permissions to chat with Amazon Q in the console. For an example IAM policy that grants permissions needed to chat, see [Allow users to chat with Amazon Q](id-based-policy-examples-users.md#id-based-policy-examples-allow-chat).
 + The `q:UsePlugin` permission.
 
 When you grant an IAM identity access to a configured Wiz plugin, the identity gains access to any resources in the Wiz account retrievable by the plugin. Wiz user permissions are not detected by the plugin. If you want to control access to a plugin, you can do so by specifying the plugin ARN in an IAM policy.

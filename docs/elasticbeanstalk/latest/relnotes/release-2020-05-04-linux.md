@@ -57,16 +57,12 @@ Be aware that at the time these release notes are published, the new platform ve
 ### Single Container Docker
 <a name="release-2020-05-04-linux.platforms.docker"></a>
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Docker Version  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Single Container Docker version 2.15.0** <br /> * 64bit Amazon Linux 2018.03 v2.15.0 running Docker 19.03.6-ce *  | 2018.03.0 | 19.03.6-ce | nginx 1.16.1 |
 
 ### Multicontainer Docker
 <a name="release-2020-05-04-linux.platforms.mcdocker"></a>
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Docker Version  |  ECS Agent  |
 | --- | --- | --- | --- |
@@ -75,8 +71,6 @@ Be aware that at the time these release notes are published, the new platform ve
 ### Preconfigured Docker
 <a name="release-2020-05-04-linux.platforms.dockerpreconfig"></a>
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  ** Glassfish 5.0 (Docker) version 2.15.0** <br /> * 64bit Amazon Linux v2.15.0 running GlassFish 5.0 Java 8 (Preconfigured - Docker) *  | 2018.03.0 | Docker 19.03.6-ce | Amazon Linux 2018.03 | Java 8 | nginx 1.16.1 | Glassfish 5.0 | amazon/aws-eb-glassfish:5.0-al-onbuild-2.11.1 |
@@ -84,16 +78,12 @@ Be aware that at the time these release notes are published, the new platform ve
 ### Go
 <a name="release-2020-05-04-linux.platforms.go"></a>
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  AWS X‑Ray  |  Proxy Server  |
 | --- | --- | --- | --- | --- |
 |  ** Go 1.14 version 2.15.3** <br /> * 64bit Amazon Linux 2018.03 v2.15.3 running Go 1.14.2 *  | 2018.03.0 | Go 1.14.2 | 3.1.0 | nginx 1.16.1 |
 
 ### Java SE
 <a name="release-2020-05-04-linux.platforms.javase"></a>
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  Tools  |  AWS X‑Ray  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- |
@@ -103,8 +93,6 @@ Be aware that at the time these release notes are published, the new platform ve
 ### Tomcat
 <a name="release-2020-05-04-linux.platforms.java"></a>
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  AWS X‑Ray  |  Application Server  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Java 8 with Tomcat 8.5 version 3.3.6** <br /> * 64bit Amazon Linux 2018.03 v3.3.6 running Tomcat 8.5 Java 8 *  | 2018.03.0 | Java 1.8.0\_242 | 3.1.0 | Tomcat 8.5.51 | Apache 2.4.41 (default), Apache 2.2.34, Nginx 1.16.1 |
@@ -113,16 +101,12 @@ Be aware that at the time these release notes are published, the new platform ve
 ### Node.js
 <a name="release-2020-05-04-linux.platforms.nodejs"></a>
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X‑Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js version 4.14.3** <br /> * 64bit Amazon Linux 2018.03 v4.14.3 running Node.js *  | 2018.03.0 | 12.16.2(6.14.4), 12.16.1 (6.13.4), 12.15.0 (6.13.4), 12.14.1 (6.13.4), 12.14.0 (6.13.4), 10.20.0(6.14.4), 10.19.0 (6.13.4), 10.18.1 (6.13.4), 10.18.0 (6.13.4), 10.17.0 (6.11.3), 10.16.3 (6.9.0), 10.16.2 (6.9.0), 10.16.1 (6.9.0), 10.16.0 (6.9.0), 10.15.3 (6.4.1), 10.15.1 (6.4.1), 10.15.0 (6.4.1), 10.14.1 (6.4.1), 8.17.0 (6.13.4), 8.16.2 (6.4.1), 8.16.1 (6.4.1), 8.16.0 (6.4.1), 8.15.1 (6.4.1), 8.15.0 (6.4.1), 8.14.0 (6.4.1), 7.10.1 (4.2.0), 6.17.1 (3.10.10), 6.17.0 (3.10.10), 6.16.0 (3.10.10), 6.15.1 (3.10.10), 5.12.0 (3.8.6), 4.9.1 (2.15.11), 4.8.7 (2.15.11)<br /> Default version: 12.16.2 | nginx 1.16.1, Apache 2.4.41 | 2.14.6 | 3.1.0 |
 
 ### PHP
 <a name="release-2020-05-04-linux.platforms.PHP"></a>
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  Composer  |  Proxy Server  |
 | --- | --- | --- | --- | --- |
@@ -132,16 +116,12 @@ Be aware that at the time these release notes are published, the new platform ve
 ### Python
 <a name="release-2020-05-04-linux.platforms.python"></a>
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  Package Manager  |  Packager  |  meld3  |  AWS X‑Ray  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  ** Python 3.6 version 2.9.10** <br /> * 64bit Amazon Linux 2018.03 v2.9.10 running Python 3.6 *  | 2018.03.0 | Python 3.6.10 | pip 9.0.3 | setuptools 28.8.0 | meld3 1.0.2 | 3.1.0 | Apache 2.4.41 with mod\_wsgi 3.5 |
 
 ### Ruby
 <a name="release-2020-05-04-linux.platforms.ruby"></a>
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  Package Manager  |  Application Server  |  AWS X‑Ray  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- | --- |

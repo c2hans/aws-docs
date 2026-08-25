@@ -41,7 +41,7 @@ aws secretsmanager get-resource-policy \
 ```
 
 **Example Delete a resource policy**
-The following [`delete-resource-policy`](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/delete-resource-policy.html) example deletes the resource-based policy attached to a secret.
+The following [`delete-resource-policy`](https://docs.aws.amazon.com/cli/latest/reference/secretsmanager/delete-resource-policy.html) example deletes the resource-based policy attached to a secret.
 
 ```
 aws secretsmanager delete-resource-policy \
@@ -49,7 +49,7 @@ aws secretsmanager delete-resource-policy \
 ```
 
 **Example Add a resource policy**
-The following [`put-resource-policy`](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/put-resource-policy.html) example adds a permissions policy to a secret, checking first that the policy does not provide broad access to the secret. The policy is read from a file. For more information, see [Loading AWS CLI parameters from a file](https://docs.aws.amazon.com//cli/latest/userguide/cli-usage-parameters-file.html) in the AWS CLI User Guide.
+The following [`put-resource-policy`](https://docs.aws.amazon.com/cli/latest/reference/secretsmanager/put-resource-policy.html) example adds a permissions policy to a secret, checking first that the policy does not provide broad access to the secret. The policy is read from a file. For more information, see [Loading AWS CLI parameters from a file](https://docs.aws.amazon.com/cli/latest/userguide/cli-usage-parameters-file.html) in the AWS CLI User Guide.
 
 ```
 aws secretsmanager put-resource-policy \

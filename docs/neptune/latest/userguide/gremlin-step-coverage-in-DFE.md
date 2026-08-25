@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/gremlin-step-co
 # Gremlin step coverage in DFE
 <a name="gremlin-step-coverage-in-DFE"></a>
 
- Gremlin DFE is an experimental feature and can be used by either enabling the instance parameter or using the `Neptune#useDFE` query hint. For more information please refer to [ Using Gremlin with the Neptune DFE query engine](https://docs.aws.amazon.com//neptune/latest/userguide/gremlin-with-dfe.html).
+ Gremlin DFE is an experimental feature and can be used by either enabling the instance parameter or using the `Neptune#useDFE` query hint. For more information please refer to [ Using Gremlin with the Neptune DFE query engine](https://docs.aws.amazon.com/neptune/latest/userguide/gremlin-with-dfe.html).
 
  The following steps are available to use in Gremlin DFE.
 

@@ -182,7 +182,7 @@ Also remember that if you have an SNS topic that receives messages from Director
 ### Apply directory service settings
 <a name="ds-settings"></a>
 
-AWS Managed Microsoft AD allows you to tailor your security configuration to meet your compliance and security requirements. AWS Managed Microsoft AD deploys and maintains the configuration to all domain controllers in your directory, including when adding new regions or additional domain controllers. You can configure and apply these security settings for all your new and existing directories. You can do this in the console by following the steps in [Edit directory security settings](ms_ad_directory_settings.md#edit-ds-settings) or through the [UpdateSettings API](https://docs.aws.amazon.com//directoryservice/latest/devguide/API_UpdateSettings.html).
+AWS Managed Microsoft AD allows you to tailor your security configuration to meet your compliance and security requirements. AWS Managed Microsoft AD deploys and maintains the configuration to all domain controllers in your directory, including when adding new regions or additional domain controllers. You can configure and apply these security settings for all your new and existing directories. You can do this in the console by following the steps in [Edit directory security settings](ms_ad_directory_settings.md#edit-ds-settings) or through the [UpdateSettings API](https://docs.aws.amazon.com/directoryservice/latest/devguide/API_UpdateSettings.html).
 
 For more information, see [Editing AWS Managed Microsoft AD directory security settings](ms_ad_directory_settings.md).
 

@@ -13,8 +13,6 @@ The `ARN` column in the table below specifies the Amazon Resource Name (ARN) for
 
 The` Condition Keys `column specifies condition context keys that you can include in an IAM policy statement only when both this resource and a compatible supporting action are included in the statement.
 
-****
-
 | Resource Types | ARN | Condition Keys |
 | --- | --- | --- |
 | `cluster`<br />(a DB cluster) | arn:{{partition}}:rds:{{region}}:{{account-id}}:cluster:{{instance-name}} | [aws:ResourceTag/{{tag-key}}](iam-admin-condition-keys.md#admin-aws_ResourceTag)<br />[rds:cluster-tag/{{tag-key}}](iam-admin-condition-keys.md#admin-rds_cluster-tag) |

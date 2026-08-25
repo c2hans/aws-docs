@@ -23,7 +23,7 @@ This topic defines the flow block for specifying which flow to run when a call i
 
     For more information about creating post-contact surveys, see this blog: [Easily create and visualize post chat surveys with Connect Customer and Amazon Lex](https://aws.amazon.com/blogs/contact-center/easily-create-and-visualize-post-chat-surveys-with-amazon-connect-and-amazon-lex/). And check out this workshop: [Building a contact survey solution for Connect Customer](https://catalog.workshops.aws/amazon-connect-contact-survey/en-US).
   + In a chat scenario, if a customer stops responding to the chat, use this block to decide whether to run the disconnect flow and call a [Wait](wait.md) block, or end the conversation.
-  + In task scenarios where a task may not be completed in 7 days, use this block to run a disconnect flow to determine whether the task should be re-queued, or completed/[disconnected](disconnect-hang-up.md) by a flow action.
+  + In task scenarios where a task might not be completed in 7 days, use this block to run a disconnect flow to determine whether the task should be re-queued, or completed/[disconnected](disconnect-hang-up.md) by a flow action.
 
 **Tip**
 It's not possible to play a audio prompt to the agent or invoke a flow when the customer disconnects. After the customer disconnects, the flow ends and the agents starts After Call Work (ACW) for that contact.

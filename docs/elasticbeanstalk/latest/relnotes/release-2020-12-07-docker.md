@@ -25,8 +25,6 @@ This release applies a fix for an elevated privilege vulnerability to all Elasti
 ### Docker
 <a name="release-2020-12-07-docker.platforms.docker"></a>
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Docker Version  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Docker AL2 version 3.2.2** <br /> * 64bit Amazon Linux 2 v3.2.2 running Docker *  | 2.0.20201130 | 19.03.13-ce | nginx 1.18.0 |
@@ -35,16 +33,12 @@ This release applies a fix for an elevated privilege vulnerability to all Elasti
 ### Multicontainer Docker
 <a name="release-2020-12-07-docker.platforms.mcdocker"></a>
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Docker Version  |  ECS Agent  |
 | --- | --- | --- | --- |
 |  ** Multicontainer Docker version 2.24.0** <br /> * 64bit Amazon Linux 2018.03 v2.24.0 running Multi-container Docker 19.03.13-ce (Generic) *  | 2018.03.0 | 19.03.13-ce | 1.47.0 |
 
 ### Preconfigured Docker
 <a name="release-2020-12-07-docker.platforms.dockerpreconfig"></a>
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
 | --- | --- | --- | --- | --- | --- | --- | --- |

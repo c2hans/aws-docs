@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsi
 
 AWS IoT TwinMaker provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="iottwinmaker-ExecuteQuery"></a>[ExecuteQuery](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_ExecuteQuery.html) | Execute query | Read |

@@ -56,8 +56,6 @@ Before creating your first DB instance, you should complete the steps in the set
 
 The following are the common management tasks you perform with an Amazon RDS for SQL Server DB instance, with links to relevant documentation for each task.
 
-****
-
 | Task area | Description | Relevant documentation |
 | --- | --- | --- |
 | **Instance classes, storage, and PIOPS** | If you are creating a DB instance for production purposes, you should understand how instance classes, storage types, and Provisioned IOPS work in Amazon RDS.  | [DB instance class support for Microsoft SQL Server](SQLServer.Concepts.General.InstanceClasses.md)<br />[Amazon RDS storage types](CHAP_Storage.md#Concepts.Storage) |
@@ -149,8 +147,6 @@ Amazon RDS for SQL Server supports HIPAA for the following versions and editions
 + SQL Server 2016 Enterprise, Standard, and Web Editions
 
 To enable HIPAA support on your DB instance, set up the following three components.
-
-****
 
 | Component | Details |
 | --- | --- |

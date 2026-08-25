@@ -59,3 +59,11 @@ Use this parameter to add an existing AWS instance to AWS Elastic Disaster Recov
 **--dualstack**
  Use this parameter to configure the agent to use Elastic Disaster Recovery dual-stack API endpoints. When you specify this parameter, the agent communicates with Elastic Disaster Recovery through `drs.{region}.api.aws` instead of `drs.{region}.amazonaws.com`, and with Amazon S3 through `s3.dualstack.{region}.amazonaws.com` instead of `s3.{region}.amazonaws.com`.
 This parameter enables IPv6 support for API communication between the agent and AWS services, with IPv4 as a fallback. This parameter does not set the **IP version** in the replication configuration settings, which determines the Internet Protocol version used for data replication. For more information about the **IP version** setting, see [IP version](data-routing.md#ip-version).
+
+**Environment variable credentials**
+Instead of passing credentials as command line parameters, you can set the following environment variables:
+`AWS_ACCESS_KEY_ID`
+`AWS_SECRET_ACCESS_KEY`
+`AWS_SESSION_TOKEN` (required when using temporary credentials)
+If you set these environment variables and do not provide credential command line parameters, the installer uses the environment variable values. If you provide both command line parameters and environment variables, the installer uses the command line parameters.
+On Linux, use `sudo -E` to preserve the environment variables when running the installer as root.

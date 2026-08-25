@@ -25,7 +25,7 @@ Required: No
  ** AssociationVersion **   <a name="systemsmanager-Type-Association-AssociationVersion"></a>
 The association version.
 Type: String
-Pattern: `([$]LATEST)|([1-9][0-9]*)`
+Pattern: `^(([$]LATEST)|([1-9][0-9]*))$`
 Required: No
 
  ** DocumentVersion **   <a name="systemsmanager-Type-Association-DocumentVersion"></a>

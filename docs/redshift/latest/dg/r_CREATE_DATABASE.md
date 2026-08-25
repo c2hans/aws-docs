@@ -26,6 +26,7 @@ CREATE DATABASE database_name
       [ REFRESH_INTERVAL <interval> ]
       [ TRUNCATECOLUMNS [=] { TRUE | FALSE } ]
       [ HISTORY_MODE [=] {TRUE | FALSE} ]
+      [ AUTO_REMEDIATION [=] { TRUE | FALSE } ]
     ]
     [ WITH ]
     [ OWNER [=] db_owner ]
@@ -69,6 +70,10 @@ The TRUNCATECOLUMNS clause sets whether zero-ETL integration tables continue wit
 HISTORY\_MODE [=] {TRUE \| FALSE}
 A clause that specifies whether Amazon Redshift will set history mode for all new tables in the specified database. This option is only applicable for databases created for zero-ETL integration.
 The HISTORY\_MODE clause can be set to `TRUE` or `FALSE`. The default is `FALSE`. For information about HISTORY\_MODE, see [History mode](https://docs.aws.amazon.com/redshift/latest/mgmt/zero-etl-history-mode.html) in the *Amazon Redshift Management Guide*.
+
+AUTO\_REMEDIATION [=] { TRUE \| FALSE }
+Specifies whether Amazon Redshift automatically resynchronizes tables that are affected by duplicate rows. When set to `TRUE`, Amazon Redshift marks affected tables for resynchronization without requiring manual intervention. The default is `FALSE`.
+You can monitor which tables have been flagged by querying [SVV\_INTEGRATION\_TABLE\_STATE](r_SVV_INTEGRATION_TABLE_STATE.md). The current setting is visible in the `auto_remediation` column of [SVV\_INTEGRATION](r_SVV_INTEGRATION.md).
 
 WITH
 Optional keyword.

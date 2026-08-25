@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/rolesanywhere/latest/userguide/authentic
 # The IAM Roles Anywhere authentication signing process
 <a name="authentication-sign-process"></a>
 
-The signing process is identical to SigV4, with the exception of the keys used, the signature algorithm, and the addition of headers related to the X.509 certificate and trust chain. For more information, see [AWS Signature Version 4 for API requests](https://docs.aws.amazon.com//IAM/latest/UserGuide/reference_sigv.html), which should be treated as authoritative unless specifically addressed in this user guide.
+The signing process is identical to SigV4, with the exception of the keys used, the signature algorithm, and the addition of headers related to the X.509 certificate and trust chain. For more information, see [AWS Signature Version 4 for API requests](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_sigv.html), which should be treated as authoritative unless specifically addressed in this user guide.
 
 **Topics**
 + [Task 1: Create a canonical request](#authentication-task1)

@@ -14,8 +14,6 @@ Delete tags from existing, supported resources except those in AMS infrastructur
 ## Change Type Details
 <a name="ct-1erytvmumckoa-MATd-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1erytvmumckoa |

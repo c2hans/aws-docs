@@ -14,8 +14,6 @@ Create an Amazon Relational Database Service (RDS) from a backup. When you resto
 ## Change Type Details
 <a name="ct-0pgvtw5rpcsb6-DARc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-0pgvtw5rpcsb6 |

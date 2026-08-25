@@ -9,8 +9,6 @@ The following table describes the important changes to the documentation since t
 + **Latest API version:** 2017-11-29
 + **Latest documentation update:** January 6, 2025
 
-****
-
 | Change | Description | Date |
 | --- | --- | --- |
 | C\+\+ on Raspberry Pi | Refreshed documentation for using the C\+\+ producer SDK on Raspberry Pi. | January 6, 2025 |

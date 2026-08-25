@@ -25,4 +25,4 @@ For each Azure VM to onboard, the Automation performs the following steps:
 
 1. Deletes the hybrid activation, which is no longer needed after registration completes.
 
-VM onboarding requires two IAM roles. The Automation dispatch role is assumed by State Manager to launch the Automation workflow. The Automation assume role is used by the workflow to create activations and authenticate with Azure. If you enable onboarding through the AWS Management Console, Systems Manager can create these roles automatically. For details about the required trust policies and permissions, see [IAM roles created by the Systems Manager console](cloud-connector-console-iam-roles.md).
+VM onboarding requires two IAM roles. The automation dispatch role is assumed by State Manager to launch the Automation workflow. The automation assume role is used by the workflow to create activations and authenticate with Azure. If you enable onboarding through the AWS Management Console, Systems Manager can create these roles automatically. For details about the required trust policies and permissions, see [IAM roles created by the Systems Manager console](cloud-connector-console-iam-roles.md).

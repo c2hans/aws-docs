@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/monitor
 
  If your Aurora cluster is running Aurora serverless or provisioned instances, you can use Performance Insights with RDS Data API.
 
- For more information about how to use Performance Insights with Aurora, see [Monitoring DB load with Performance Insights on Amazon Aurora](USER_PerfInsights.md).
+ For more information about how to use Performance Insights with Aurora, see [Monitoring DB load with Amazon CloudWatch Database Insights on Amazon Aurora](USER_PerfInsights.md).
 
 ## How RDS Data API queries are represented in Performance Insights
 <a name="data-api-pi-monitoring"></a>

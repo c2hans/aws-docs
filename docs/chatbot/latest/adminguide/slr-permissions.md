@@ -119,8 +119,6 @@ If you delete the Amazon Q Developer in chat applications service-linked role, a
 
 AWSServiceRoleForAWSChatbot doesn't support using service-linked roles in every AWS Region where the service is available. The following table shows the Regions where you can use the **AWSServiceRoleForAWSChatbot**.
 
-****
-
 | Region Name | Region Identity | Supported in Amazon Q Developer |
 | --- | --- | --- |
 | US East (N. Virginia) | us-east-1 | Yes |

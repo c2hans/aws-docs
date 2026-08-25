@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsp
 
 AWS Proton provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="proton-GetAccountRoles"></a>[GetAccountRoles](https://docs.aws.amazon.com/proton/latest/APIReference/API_GetAccountRoles.html) | Get account roles. DEPRECATED - use GetAccountSettings instead | Read |

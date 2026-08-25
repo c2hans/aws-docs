@@ -30,7 +30,7 @@ Asia Pacific (Sydney)
 
 Follow these steps to deploy the MCP server template and connect it to your OpenSearch domain.
 
-1. Open the [Amazon OpenSearch Service console](https://console.aws.amazon.com//aos/home ).
+1. Open the [Amazon OpenSearch Service console](https://console.aws.amazon.com/aos/home ).
 
 1. In the left navigation pane, choose **Integrations**.
 

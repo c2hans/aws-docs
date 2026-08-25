@@ -17,7 +17,7 @@ You can create one personal connection for one user identity (CodeCatalyst alias
 You can use your personal connections in CodeCatalyst to create a GitHub repository for a project, choose a GitHub source repository for a blueprint, and manage pull requests in CodeCatalyst for your GitHub repository.
 
 **Note**
-The use of personal connections for associating blueprints with a GitHub repository is not the same as use of extensions in CodeCatalyst to link a GitHub repository. For more information about extensions, see [Add functionality to projects with extensions in CodeCatalystAdd functionality to projects with extensions](extensions.md).
+The use of personal connections for associating blueprints with a GitHub repository is not the same as use of extensions in CodeCatalyst to link a GitHub repository. For more information about extensions, see [Add functionality to projects with extensions in CodeCatalyst](extensions.md).
 
 ## Creating personal connections
 <a name="ipa-settings-connections-create"></a>

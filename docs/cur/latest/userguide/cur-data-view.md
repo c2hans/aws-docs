@@ -30,21 +30,15 @@ The legacy AWS Cost and Usage Report page supports reports only for billing grou
 
 1. Open the Billing and Cost Management console at [https://console.aws.amazon.com/costmanagement/](https://console.aws.amazon.com/costmanagement/).
 
-1. In the navigation pane, under **Legacy Pages**, choose **Cost and Usage Reports**.
+1. In the navigation pane, choose **Data Exports**.
 
-1. In the **Report table**, choose **Settings**.
+1. Choose **Create export**.
 
-1. Turn on the **Pro forma** data view.
+1. On the **Create export** page, under **Export details**, choose **Legacy CUR export**.
 
-1. Choose **Enable**.
+1. For **Export name**, enter a name for your report.
 
-1. Choose **Create report**.
-
-1. For **Report name**, enter a name for your report.
-
-1. For **Data view**, choose **pro forma**.
-
-1. Choose a billing group.
+1. For **Billing view**, choose the appropriate values for **Type** and **View** that correspond to your billing group.
 
 1. For **Additional report details**, choose **Include resource IDs** to include the IDs of each individual resources in the report.
 

@@ -14,8 +14,6 @@ Request Read-Only access for one or more users for one or more stacks. The maxim
 ## Change Type Details
 <a name="ct-199h35t7uz6jl-MASg-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-199h35t7uz6jl |

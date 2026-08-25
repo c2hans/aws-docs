@@ -12,8 +12,6 @@ This authentication type is used on Amazon EC2 instances. An *instance profile* 
 
 The credentials provider that will be used to authenticate requests to AWS. Set the value of this parameter to `InstanceProfile`.
 
-****
-
 | Parameter name | Alias | Parameter type | Default value | Value to use |
 | --- | --- | --- | --- | --- |
 | CredentialsProvider | AWSCredentialsProviderClass (deprecated) | Required | none | InstanceProfile |

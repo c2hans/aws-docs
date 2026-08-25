@@ -24,8 +24,6 @@ You can create some signed URLs using canned policies and create some signed URL
 
 When you create a signed URL, you write a policy statement in JSON format that specifies the restrictions on the signed URL, for example, how long the URL is valid. You can use either a canned policy or a custom policy. Here's how canned and custom policies compare:
 
-****
-
 | Description | Canned policy | Custom policy |
 | --- | --- | --- |
 | You can reuse the policy statement for multiple files. To reuse the policy statement, you must use wildcard characters in the `Resource` object. For more information, see [Values that you specify in the policy statement for a signed URL that uses a custom policy](private-content-creating-signed-url-custom-policy.md#private-content-custom-policy-statement-values).)  | No | Yes |

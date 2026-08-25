@@ -26,3 +26,18 @@ The following example of a VPC endpoint policy specifies that all users that hav
     ]
 }
 ```
+
+For an MLflow App, use the `sagemaker:CallMlflowAppApi` action and the MLflow App resource ARN. Use the following example to grant access to the MLflow App that you specify. The policy denies access to all other MLflow Apps.
+
+```
+{
+    "Statement": [
+        {
+            "Action": "sagemaker:CallMlflowAppApi",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Resource": "arn:aws:sagemaker:{{AWS Region}}:{{111122223333}}:mlflow-app/*"
+        }
+    ]
+}
+```

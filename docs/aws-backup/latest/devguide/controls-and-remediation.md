@@ -170,7 +170,7 @@ You can configure encryption for resource types that support full AWS Backup man
 + Resources by type
 + Single resource
 
-**Remediation**: [Lock a backup vault](https://docs.aws.amazon.com//aws-backup/latest/devguide/vault-lock.html#lock-backup-vault-cli) to set its name, change either its minimum retention days, maximum retention days, or both. Can also include `ChangeableForDays` for a vault lock in compliance mode.
+**Remediation**: [Lock a backup vault](https://docs.aws.amazon.com/aws-backup/latest/devguide/vault-lock.html#lock-backup-vault-cli) to set its name, change either its minimum retention days, maximum retention days, or both. Can also include `ChangeableForDays` for a vault lock in compliance mode.
 
 ## Last recovery point was created
 <a name="last-recovery-point-created-control"></a>

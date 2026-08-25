@@ -15,8 +15,6 @@ Apache Hudi 0.10.1 for AWS Glue 3.0 doesn't support Hudi Merge on Read (MoR) tab
 
 The following table lists the Hudi version that is included in each AWS Glue version.
 
-****
-
 | AWS Glue version | Supported Hudi version |
 | --- | --- |
 | 5.1 | 1.0.2 |

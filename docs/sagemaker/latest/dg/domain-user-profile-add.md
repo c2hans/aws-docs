@@ -28,13 +28,13 @@ You can add user profiles to a domain from the SageMaker AI console by following
 
 1. Use the default name for your user profile or add a custom name.
 
-1. For **Execution role**, choose an option from the role selector. If you choose **Enter a custom IAM role ARN**, the role must have, at a minimum, an attached trust policy that grants SageMaker AI permission to assume the role. For more information, see [SageMaker AI Roles](https://docs.aws.amazon.com//sagemaker/latest/dg/sagemaker-roles.html).
+1. For **Execution role**, choose an option from the role selector. If you choose **Enter a custom IAM role ARN**, the role must have, at a minimum, an attached trust policy that grants SageMaker AI permission to assume the role. For more information, see [SageMaker AI Roles](https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-roles.html).
 
    If you choose **Create a new role**, the **Create an IAM role** dialog box opens:
 
    1. For **S3 buckets you specify**, specify additional Amazon S3 buckets that users of your notebooks can access. If you don't want to add access to more buckets, choose **None**.
 
-   1. Choose **Create role**. SageMaker AI creates a new IAM role, `AmazonSageMaker-ExecutionPolicy`, with the [AmazonSageMakerFullAccess](https://console.aws.amazon.com//iam/home?#/policies/arn:aws:iam::aws:policy/AmazonSageMakerFullAccess) policy attached.
+   1. Choose **Create role**. SageMaker AI creates a new IAM role, `AmazonSageMaker-ExecutionPolicy`, with the [AmazonSageMakerFullAccess](https://console.aws.amazon.com/iam/home?#/policies/arn:aws:iam::aws:policy/AmazonSageMakerFullAccess) policy attached.
 
 1. (Optional) Add tags to the user profile. All resources that the user profile creates will have a domain ARN tag and a user profile ARN tag. The domain ARN tag is based on domain ID, while the user profile ARN tag is based on the user profile name.
 

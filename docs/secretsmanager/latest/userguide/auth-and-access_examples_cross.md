@@ -8,28 +8,28 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/auth-and
 To allow users in one account to access secrets in another account (*cross-account access*), you must allow access both in a resource policy and in an identity policy. This is different than granting access to identities in the same account as the secret.
 
 Cross-account permission is effective only for the following operations:
-+ [CancelRotateSecret](https://docs.aws.amazon.com//secretsmanager/latest/apireference/API_CancelRotateSecret.html)
-+ [DeleteResourcePolicy](https://docs.aws.amazon.com//secretsmanager/latest/apireference/API_DeleteResourcePolicy.html)
-+ [DeleteSecret](https://docs.aws.amazon.com//secretsmanager/latest/apireference/API_DeleteSecret.html)
-+ [DescribeSecret](https://docs.aws.amazon.com//secretsmanager/latest/apireference/API_DescribeSecret.html)
-+ [GetRandomPassword](https://docs.aws.amazon.com//secretsmanager/latest/apireference/API_GetRandomPassword.html)
-+ [GetResourcePolicy](https://docs.aws.amazon.com//secretsmanager/latest/apireference/API_GetResourcePolicy.html)
-+ [GetSecretValue](https://docs.aws.amazon.com//secretsmanager/latest/apireference/API_GetSecretValue.html)
-+ [ListSecretVersionIds](https://docs.aws.amazon.com//secretsmanager/latest/apireference/API_ListSecretVersionIds.html)
-+ [PutResourcePolicy](https://docs.aws.amazon.com//secretsmanager/latest/apireference/API_PutResourcePolicy.html)
-+ [PutSecretValue](https://docs.aws.amazon.com//secretsmanager/latest/apireference/API_PutSecretValue.html)
-+ [RemoveRegionsFromReplication](https://docs.aws.amazon.com//secretsmanager/latest/apireference/API_RemoveRegionsFromReplication.html)
-+ [ReplicateSecretToRegions](https://docs.aws.amazon.com//secretsmanager/latest/apireference/API_ReplicateSecretToRegions.html)
-+ [RestoreSecret](https://docs.aws.amazon.com//secretsmanager/latest/apireference/API_RestoreSecret.html)
-+ [RotateSecret](https://docs.aws.amazon.com//secretsmanager/latest/apireference/API_RotateSecret.html)
-+ [StopReplicationToReplica](https://docs.aws.amazon.com//secretsmanager/latest/apireference/API_StopReplicationToReplica.html)
-+ [TagResource](https://docs.aws.amazon.com//secretsmanager/latest/apireference/API_TagResource.html)
-+ [UntagResource](https://docs.aws.amazon.com//secretsmanager/latest/apireference/API_UntagResource.html)
-+ [UpdateSecret](https://docs.aws.amazon.com//secretsmanager/latest/apireference/API_UpdateSecret.html)
-+ [UpdateSecretVersionStage](https://docs.aws.amazon.com//secretsmanager/latest/apireference/API_UpdateSecretVersionStage.html)
-+ [ValidateResourcePolicy](https://docs.aws.amazon.com//secretsmanager/latest/apireference/API_ValidateResourcePolicy.html)
++ [CancelRotateSecret](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_CancelRotateSecret.html)
++ [DeleteResourcePolicy](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_DeleteResourcePolicy.html)
++ [DeleteSecret](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_DeleteSecret.html)
++ [DescribeSecret](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_DescribeSecret.html)
++ [GetRandomPassword](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_GetRandomPassword.html)
++ [GetResourcePolicy](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_GetResourcePolicy.html)
++ [GetSecretValue](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_GetSecretValue.html)
++ [ListSecretVersionIds](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_ListSecretVersionIds.html)
++ [PutResourcePolicy](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_PutResourcePolicy.html)
++ [PutSecretValue](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_PutSecretValue.html)
++ [RemoveRegionsFromReplication](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_RemoveRegionsFromReplication.html)
++ [ReplicateSecretToRegions](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_ReplicateSecretToRegions.html)
++ [RestoreSecret](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_RestoreSecret.html)
++ [RotateSecret](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_RotateSecret.html)
++ [StopReplicationToReplica](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_StopReplicationToReplica.html)
++ [TagResource](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_TagResource.html)
++ [UntagResource](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_UntagResource.html)
++ [UpdateSecret](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_UpdateSecret.html)
++ [UpdateSecretVersionStage](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_UpdateSecretVersionStage.html)
++ [ValidateResourcePolicy](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_ValidateResourcePolicy.html)
 
-You can use the `BlockPublicPolicy` parameter with the [PutResourcePolicy](https://docs.aws.amazon.com//secretsmanager/latest/apireference/API_PutResourcePolicy.html) action to help protect your resources by preventing public access from being granted through the resource policies that are directly attached to your secrets. You can also use [IAM Access Analyzer](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#bp-preview-access) to verify cross-account access.
+You can use the `BlockPublicPolicy` parameter with the [PutResourcePolicy](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_PutResourcePolicy.html) action to help protect your resources by preventing public access from being granted through the resource policies that are directly attached to your secrets. You can also use [IAM Access Analyzer](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#bp-preview-access) to verify cross-account access.
 
 You must also allow the identity to use the KMS key that the secret is encrypted with. This is because you can't use the AWS managed key (`aws/secretsmanager`) for cross-account access. Instead, you must encrypt your secret with a KMS key that you create, and then attach a key policy to it. There is a charge for creating KMS keys. To change the encryption key for a secret, see [Modify an AWS Secrets Manager secret](manage_update-secret.md).
 
@@ -82,7 +82,7 @@ The following example policies assume you have a secret and encryption key in *A
   ```
 
 **Step 3: Attach an identity policy to the identity in *Account2***
-+ The following policy allows {{ApplicationRole}} in {{Account2}} to access the secret in {{Account1}} and decrypt the secret value by using the encryption key which is also in {{Account1}}. To use this policy, see [Identity-based policies](auth-and-access_iam-policies.md). You can find the ARN for your secret in the Secrets Manager console on the secret details page under **Secret ARN**. Alternatively, you can call [`describe-secret`](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/describe-secret.html).
++ The following policy allows {{ApplicationRole}} in {{Account2}} to access the secret in {{Account1}} and decrypt the secret value by using the encryption key which is also in {{Account1}}. To use this policy, see [Identity-based policies](auth-and-access_iam-policies.md). You can find the ARN for your secret in the Secrets Manager console on the secret details page under **Secret ARN**. Alternatively, you can call [`describe-secret`](https://docs.aws.amazon.com/cli/latest/reference/secretsmanager/describe-secret.html).
 
 ------
 #### [ JSON ]

@@ -65,7 +65,7 @@ A DAX cluster supports a maximum of 500 DynamoDB tables. If you go beyond 500 ta
 ## Regions and availability zones
 <a name="DAX.concepts.regions-and-azs"></a>
 
-A DAX cluster in an AWS Region can only interact with DynamoDB tables that are in the same Region. For this reason, ensure that you launch your DAX cluster in the correct Region. If you have DynamoDB tables in other Regions, you must launch DAX clusters in those Regions too.
+A DAX cluster in an AWS Region can only interact with DynamoDB tables that are in the same Region. For this reason, make sure that you launch your DAX cluster in the correct Region. If you have DynamoDB tables in other Regions, you must launch DAX clusters in those Regions too.
 
 Each Region is designed to be completely isolated from the other Regions. Within each Region are multiple Availability Zones. By launching your nodes in different Availability Zones, you can achieve the greatest possible fault tolerance.
 
@@ -77,7 +77,7 @@ A DAX cluster can be deployed with one or two nodes for development or test work
 ## Parameter groups
 <a name="DAX.concepts.parameter-groups"></a>
 
-*Parameter groups* are used to manage runtime settings for DAX clusters. DAX has several parameters that you can use to optimize performance (such as defining a TTL policy for cached data). A parameter group is a named set of parameters that you can apply to a cluster. You can thereby ensure that all the nodes in that cluster are configured in exactly the same way.
+*Parameter groups* are used to manage runtime settings for DAX clusters. DAX has several parameters that you can use to optimize performance (such as defining a TTL policy for cached data). A parameter group is a named set of parameters that you can apply to a cluster. You can thereby make sure that all the nodes in that cluster are configured in exactly the same way.
 
 ## Security groups
 <a name="DAX.concepts.security-groups"></a>
@@ -139,8 +139,6 @@ You can also request that notifications be sent to a specific Amazon Simple Noti
 Every cluster has a weekly maintenance window to apply system changes. As changes are applied sequentially, an existing node is replaced and a new node with the applied changes is added to the cluster. During this period, your application might observe transient errors or throttles. Therefore, we recommend that you schedule the maintenance window during your lowest usage time and adjust this schedule periodically as needed. You can specify a time range of up to 24 hours in duration during which any maintenance activities that you request should occur.
 
 If you don't specify a preferred maintenance window when you create or modify a cache cluster, DAX assigns a 60-minute maintenance window on a random weekday. This 60-minute maintenance window is randomly selected from an 8-hour block of time for each AWS Region. The following table lists the time blocks for each Region from which the default maintenance windows are assigned.
-
-****
 
 | Region code | Region name | Maintenance window |
 | --- | --- | --- |

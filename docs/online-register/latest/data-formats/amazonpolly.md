@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon Polly provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="polly-DescribeVoices"></a>[DescribeVoices](https://docs.aws.amazon.com/polly/latest/dg/API_DescribeVoices.html) | Describe the list of voices that are available for use when requesting speech synthesis | List |

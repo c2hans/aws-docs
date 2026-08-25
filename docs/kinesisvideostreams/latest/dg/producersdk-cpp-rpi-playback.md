@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/producersd
 # Play back media from your Kinesis video stream
 <a name="producersdk-cpp-rpi-playback"></a>
 
-Open the [Kinesis Video Streams console](https://console.aws.amazon.com//kinesisvideo/home/) and select the **Stream name** for the stream you created.
+Open the [Kinesis Video Streams console](https://console.aws.amazon.com/kinesisvideo/home/) and select the **Stream name** for the stream you created.
 
 The video stream that is sent from the Raspberry Pi appears in the console.
 

@@ -53,8 +53,6 @@ SELECT invoker_principal()
 
 The following table shows an example result.
 
-****
-
 | \# | \_col0 |
 | --- | --- |
 | 1 | arn:aws:iam::{{111122223333}}:role/Admin |

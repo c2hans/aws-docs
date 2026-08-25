@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/developerguide/WhatsNew
 
 The following table describes the important changes to the documentation since the last release of the *Amazon Simple Workflow Service Developer Guide*.
 
-****
-
 | Change | Description | Date Changed |
 | --- | --- | --- |
 | Documentation-only update | Amazon SWF now includes a section about AWS User Notifications, an AWS service that acts as a central location for your AWS notifications in the AWS Management Console. For more information, see [Using AWS User Notifications with Amazon Simple Workflow Service](using-user-notifications-swf.md). | May 4, 2023 |

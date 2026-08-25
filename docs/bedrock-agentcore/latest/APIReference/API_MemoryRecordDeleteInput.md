@@ -17,6 +17,13 @@ Length Constraints: Minimum length of 40. Maximum length of 50.
 Pattern: `mem-[a-zA-Z0-9-_]*`
 Required: Yes
 
+ ** namespace **   <a name="BedrockAgentCore-Type-MemoryRecordDeleteInput-namespace"></a>
+The namespace of the memory record being deleted. This value is used for IAM condition key authorization.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 1024.
+Pattern: `[a-zA-Z0-9/*][a-zA-Z0-9-_/*]*(?::[a-zA-Z0-9-_/*]+)*[a-zA-Z0-9-_/*]*`
+Required: No
+
 ## See Also
 <a name="API_MemoryRecordDeleteInput_SeeAlso"></a>
 

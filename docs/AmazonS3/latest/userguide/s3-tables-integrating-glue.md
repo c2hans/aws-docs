@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-inte
 # Running ETL jobs on Amazon S3 tables with AWS Glue
 <a name="s3-tables-integrating-glue"></a>
 
-AWS Glue is a serverless data integration service that makes it easy for analytics users to discover, prepare, move, and integrate data from multiple sources. You can use AWS Glue jobs to run extract, transform, and load (ETL) pipelines to load data into your data lakes. For more information about AWS Glue, see [What is AWS Glue?](https://docs.aws.amazon.com//glue/latest/dg/what-is-glue.html) in the *AWS Glue Developer Guide*.
+AWS Glue is a serverless data integration service that makes it easy for analytics users to discover, prepare, move, and integrate data from multiple sources. You can use AWS Glue jobs to run extract, transform, and load (ETL) pipelines to load data into your data lakes. For more information about AWS Glue, see [What is AWS Glue?](https://docs.aws.amazon.com/glue/latest/dg/what-is-glue.html) in the *AWS Glue Developer Guide*.
 
 An AWS Glue job encapsulates a script that connects to your source data, processes it, and then writes it out to your data target. Typically, a job runs extract, transform, and load (ETL) scripts. Jobs can run scripts designed for Apache Spark runtime environments. You can monitor job runs to understand runtime metrics such as completion status, duration, and start time.
 
@@ -22,7 +22,7 @@ Choose your access method based on your specific AWS Glue ETL job requirements:
 + **Amazon S3 Tables Catalog for Apache Iceberg** – Use only for legacy applications or specific programmatic scenarios that require the Java client library. This method is not recommended for new AWS Glue ETL job implementations due to additional `JAR` dependency management and complexity.
 
 **Note**
-S3 Tables is supported on [AWS Glue version 5.0 or higher](https://docs.aws.amazon.com//glue/latest/dg/release-notes.html).
+S3 Tables is supported on [AWS Glue version 5.0 or higher](https://docs.aws.amazon.com/glue/latest/dg/release-notes.html).
 
 ## Step 1 – Prerequisites
 <a name="glue-etl-prereqs"></a>
@@ -34,7 +34,7 @@ Before you can query tables from a AWS Glue job you must configure an IAM role t
 
 Prerequisites required to use the S3 Tables AWS analytics integration to run AWS Glue jobs.
 + [Integrate your table buckets with AWS analytics services](s3-tables-integrating-aws.md).
-+ [Create an IAM role for AWS Glue](https://docs.aws.amazon.com//glue/latest/dg/create-an-iam-role.html).
++ [Create an IAM role for AWS Glue](https://docs.aws.amazon.com/glue/latest/dg/create-an-iam-role.html).
   + Attach the `AmazonS3TablesFullAccess` managed policy to the role.
   + Attach the `AmazonS3FullAccess` managed policy to the role.
 
@@ -42,7 +42,7 @@ Prerequisites required to use the S3 Tables AWS analytics integration to run AWS
 #### [ Amazon S3 Tables Iceberg REST endpoint ]
 
 Prerequisites to use the Amazon S3 Tables Iceberg REST endpoint to run AWS Glue ETL jobs.
-+ [Create an IAM role for AWS Glue](https://docs.aws.amazon.com//glue/latest/dg/create-an-iam-role.html).
++ [Create an IAM role for AWS Glue](https://docs.aws.amazon.com/glue/latest/dg/create-an-iam-role.html).
   + Attach the `AmazonS3TablesFullAccess` managed policy to the role.
   + Attach the `AmazonS3FullAccess` managed policy to the role.
 
@@ -50,7 +50,7 @@ Prerequisites to use the Amazon S3 Tables Iceberg REST endpoint to run AWS Glue
 #### [ Amazon S3 Tables Catalog for Apache Iceberg ]
 
 Prerequisites use the Amazon S3 Tables Catalog for Apache Iceberg to run AWS Glue ETL jobs.
-+ [Create an IAM role for AWS Glue](https://docs.aws.amazon.com//glue/latest/dg/create-an-iam-role.html).
++ [Create an IAM role for AWS Glue](https://docs.aws.amazon.com/glue/latest/dg/create-an-iam-role.html).
   + Attach the `AmazonS3TablesFullAccess` managed policy to the role.
   + Attach the `AmazonS3FullAccess` managed policy to the role.
   + To use the Amazon S3 Tables Catalog for Apache Iceberg you need to download the client catalog JAR and upload it to an S3 bucket.

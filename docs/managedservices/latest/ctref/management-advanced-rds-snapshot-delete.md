@@ -14,8 +14,6 @@ Delete DB instance or cluster snapshots. This document only supports deletion of
 ## Change Type Details
 <a name="ct-0idxb0xsg1ui6-MARd-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-0idxb0xsg1ui6 |

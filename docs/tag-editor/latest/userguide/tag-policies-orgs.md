@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/tag-editor/latest/userguide/tag-policies
 # AWS Organizations tag policies
 <a name="tag-policies-orgs"></a>
 
-A [*tag policy*](https://docs.aws.amazon.com//organizations/latest/userguide/orgs_manage_policies_tag-policies.html) is a type of policy that you create in AWS Organizations. You can use tag policies to help standardize tags across the resources in your organization's accounts. To use tag policies, we recommend that you follow the workflows described in [Getting started with tag policies](https://docs.aws.amazon.com//organizations/latest/userguide/orgs_manage_policies_tag-policies-getting-started.html) in the *AWS Organizations User Guide*. As mentioned on that page, the recommended workflows include finding and correcting noncompliant tags. To accomplish these tasks, you use the Tag Editor console.
+A [*tag policy*](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_tag-policies.html) is a type of policy that you create in AWS Organizations. You can use tag policies to help standardize tags across the resources in your organization's accounts. To use tag policies, we recommend that you follow the workflows described in [Getting started with tag policies](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_tag-policies-getting-started.html) in the *AWS Organizations User Guide*. As mentioned on that page, the recommended workflows include finding and correcting noncompliant tags. To accomplish these tasks, you use the Tag Editor console.
 
 ## Prerequisites and permissions
 <a name="tag-policies-prereqs"></a>
@@ -23,9 +23,9 @@ Before you can evaluate compliance with tag policies in Tag Editor, you must mee
 
 Evaluating compliance with tag policies requires the following:
 + You must first enable the feature in AWS Organizations, and create and attach tag policies. For more information, see the following pages in the *AWS Organizations User Guide*:
-  + [Prerequisites and permissions for managing tag policies](https://docs.aws.amazon.com//organizations/latest/userguide/orgs_manage_policies_tag-policies-prereqs.html)
-  + [Enabling tag policies](https://docs.aws.amazon.com//organizations/latest/userguide/orgs_manage_policies_enable-disable.html)
-  + [Getting started with tag policies](https://docs.aws.amazon.com//organizations/latest/userguide/orgs_manage_policies_tag-policies-getting-started.html)
+  + [Prerequisites and permissions for managing tag policies](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_tag-policies-prereqs.html)
+  + [Enabling tag policies](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_enable-disable.html)
+  + [Getting started with tag policies](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_tag-policies-getting-started.html)
 + To [**find noncompliant tags on an account's resources**](tag-policies-orgs-finding-noncompliant-tags.md), you need sign-in credentials for that account and the permissions listed in [Permissions for evaluating compliance for an account](#tag-policies-permissions-account).
 + To [**evaluate organization-wide compliance**](tag-policies-orgs-evaluating-org-wide-compliance.md), you need sign-in credentials for the organization's management account and the permissions listed in [Permissions for evaluating organization-wide compliance](#tag-policies-permissions-org). You can request the compliance report from only the AWS Region US East (N. Virginia) .
 

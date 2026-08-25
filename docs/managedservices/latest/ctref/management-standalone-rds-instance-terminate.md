@@ -14,8 +14,6 @@ Terminate a standalone DB instance or cluster. The automation checks that the DB
 ## Change Type Details
 <a name="ct-3glr80c15rp7z-MSRt-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-3glr80c15rp7z |

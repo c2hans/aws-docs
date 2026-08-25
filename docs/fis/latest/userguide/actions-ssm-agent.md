@@ -263,7 +263,7 @@ arn:aws:ssm:*region*::document/AWSFIS-Run-Network-Latency-Sources
 + **DelayMilliseconds** – Optional. The delay, in milliseconds. The default is 200.
 + **JitterMilliseconds** – Optional. The jitter, in milliseconds. The default is 10.
 + **FlowsPercent** – Optional. The percentage of network flows that will be affected by the action. The default is 100%.
-+ **Sources** – Required. The sources, separated by commas, without spaces. The possible values are: an IPv4 address, an IPv4 CIDR block, a domain name, an AZ name (us-east-1a), an AZ ID (use1-az1), ALL, `DYNAMODB`, and `S3`. If you specify `DYNAMODB` or `S3`, this applies only to the Regional endpoint in the current Region.
++ **Sources** – Required. The sources, separated by commas, without spaces. The possible values are: an IPv4 address, an IPv4 CIDR block, a domain name, an AZ name (us-east-1a), an AZ ID (use1-az1), ALL, `DYNAMODB`, and `S3`. If you specify `DYNAMODB` or `S3`, this applies only to the Regional endpoint in the current Region. IPv6 traffic is not impaired by this document.
 + **TrafficType** – Optional. The type of traffic. The possible values are `ingress` and `egress`. The default is `ingress`.
 + **DurationSeconds** – Required. The duration of the network latency test, in seconds.
 + **InstallDependencies** – Optional. If the value is `True`, Systems Manager installs the required dependencies on the target instances if they are not already installed. The default is `True`. The dependencies are **atd**, **dig**, **jq**, **lsof**, and **tc**.
@@ -318,7 +318,7 @@ arn:aws:ssm:*region*::document/AWSFIS-Run-Network-Packet-Loss-Sources
 + **Interface** – Optional. The network interfaces, separated by commas. ALL and DEFAULT values are supported. The default is `DEFAULT`, which will target the primary network interface for the Operating System.
 + **LossPercent** – Optional. The percentage of packet loss. The default is 7%.
 + **FlowsPercent** – Optional. The percentage of network flows that will be affected by the action. The default is 100%.
-+ **Sources** – Required. The sources, separated by commas, without spaces. The possible values are: an IPv4 address, an IPv4 CIDR block, a domain name, an AZ name (us-east-1a), an AZ ID (use1-az1), ALL, `DYNAMODB`, and `S3`. If you specify `DYNAMODB` or `S3`, this applies only to the Regional endpoint in the current Region.
++ **Sources** – Required. The sources, separated by commas, without spaces. The possible values are: an IPv4 address, an IPv4 CIDR block, a domain name, an AZ name (us-east-1a), an AZ ID (use1-az1), ALL, `DYNAMODB`, and `S3`. If you specify `DYNAMODB` or `S3`, this applies only to the Regional endpoint in the current Region. IPv6 traffic is not impaired by this document.
 + **TrafficType** – Optional. The type of traffic. The possible values are `ingress` and `egress`. The default is `ingress`.
 + **DurationSeconds** – Required. The duration of the network packet loss test, in seconds.
 + **InstallDependencies** – Optional. If the value is `True`, Systems Manager installs the required dependencies on the target instances. The default is `True`. The dependencies are **atd**, **dig**, **jq**, **lsof**, and **tc**.

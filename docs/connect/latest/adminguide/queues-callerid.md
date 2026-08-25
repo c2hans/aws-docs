@@ -31,16 +31,21 @@ The following image shows an **Edit queue** page with an arrow pointing to the *
 The **Outbound caller ID name** is set to the value that is passed from the SIP header. For example, `Alice<sip:alice@example.com>`.
 
 **Important**
-Per SIP protocol RFC3261, the following characters are reserved: **; / ? : @ & = \+ $ ,**. Do not use these characters in the caller ID name. When these characters are included, outbound calls may fail or the caller ID name may display inaccurately.
+Per SIP protocol RFC3261, the following characters are reserved: **; / ? : @ & = \+ $ ,**. Do not use these characters in the caller ID name. When these characters are included, outbound calls might fail or the caller ID name might display inaccurately.
 Connect Customer runs on a SIP-only infrastructure through our carrier partners. However, the caller ID name can be delivered to your customers only if the call path across the public telephony network is all on SIP. Because your customers are on many different networks outside of what Connect Customer controls, the caller ID name is not guaranteed to be delivered to your customers. Depending on the country this will be up to 75% effective.
 To guarantee your caller ID name is delivered to customers, see [Optimize your reputation for outbound calling in Connect Customer](optimize-outbound-calling.md) for information about achieving it by using partner solutions.
 
 ### Outbound caller ID number
 <a name="using-call-number-block"></a>
 
-Only phone numbers that you've [claimed](get-connect-number.md) or [ported to Connect Customer](port-phone-number.md) can be used as your caller ID number. Outbound calls without proper identification may be blocked in certain countries such as UK and Australia.
+Only phone numbers that you've [claimed](get-connect-number.md) or [ported to Connect Customer](port-phone-number.md) can be used as your caller ID number. Outbound calls without proper identification might be blocked in certain countries such as UK and Australia.
 
-To use an external phone number as your outbound caller ID number, contact Support to see if it's possible. The phone number needs to be in a [ country we support](https://d1v2gagwb6hfe1.cloudfront.net/Amazon_Connect_Telecoms_Coverage.pdf) for custom caller ID and you'll need to provide [proof of ownership](phone-number-requirements.md).
+To use an external phone number as your outbound caller ID number, you must meet the following requirements:
++ Verify that the phone number is in a country that supports custom caller ID. Check the [Amazon Connect Telecoms Coverage Guide](https://d1v2gagwb6hfe1.cloudfront.net/Amazon_Connect_Telecoms_Coverage.pdf) on the AWS website (PDF) to confirm.
++ Provide [proof of ownership](phone-number-requirements.md), such as a recent invoice from your current carrier showing the number. In the US, the carrier might also require Customer Service Records (CSRs).
++ Contact Support to activate the number for custom caller ID use before you configure it.
+
+To request custom outbound caller ID, open an Support case:
 
 1. Choose [Account and billing](https://console.aws.amazon.com/support/home#/case/create?issueType=customer-service&serviceCode=service-connect-number-management) to access a pre-populated form in the Support console. You must be signed in to your AWS account to access the form.
 
@@ -79,11 +84,11 @@ You can set the caller ID number as follows:
 + **Queue:** If no caller ID number is specified in the [Call phone number](call-phone-number.md) block, then the caller ID in the queue settings is used.
 
 **Important**
-Telecom regulations in various countries limit the telephone numbers that you can use to make outbound calls. If you set up a number and you can't make outbound calls, check the [Connect Customer Telecoms Country Coverage Guide](https://d1v2gagwb6hfe1.cloudfront.net/Amazon_Connect_Telecoms_Coverage.pdf) and [Region requirements for ordering and porting phone numbers in Connect Customer](phone-number-requirements.md) to ensure that you have correct type of number.
+Telecom regulations in various countries limit the telephone numbers that you can use to make outbound calls. If you set up a number and you can't make outbound calls, check the [Connect Customer Telecoms Country Coverage Guide](https://d1v2gagwb6hfe1.cloudfront.net/Amazon_Connect_Telecoms_Coverage.pdf) and [Region requirements for ordering and porting phone numbers in Connect Customer](phone-number-requirements.md) to make sure that you have correct type of number.
 Telecom regulations in certain countries require the carrier to identify the caller and block unidentifiable outbound calls. Make sure you set the Caller ID in your configurations to avoid call failures.
 For example:
 **In Australia**: The caller ID must be an Connect Customer provided DID (Direct Inward Dialing) phone number. If a toll free number or a number not provided by Connect Customer is used in the caller ID, local telephony suppliers may reject outbound calls due to local anti-fraud requirements.
-**In the UK**: The caller ID must be a valid E164 phone number. If the phone number is not provided in the caller ID, local telephony suppliers may reject outbound calls due to local anti-fraud requirements.
+**In the UK**: The caller ID must be a valid E164 phone number. If the phone number is not provided in the caller ID, local telephony suppliers might reject outbound calls due to local anti-fraud requirements.
 
 ### Anonymous caller ID
 <a name="anonymous-caller-id"></a>
@@ -98,7 +103,7 @@ A valid caller ID is required because:
 ### Toll-free numbers for caller ID
 <a name="tfn-callerid"></a>
 
-Toll-free numbers for outbound communications have a number of limitations. For example, using a toll-free number to dial other toll-free numbers in the United States can result in the number being filtered, blocked, or not properly routed to the destination by carriers. Toll-free numbers may be terminated at a higher than expected rate. If you know you need to call toll-free numbers in the United States you must use DIDs to guarantee call delivery.
+Toll-free numbers for outbound communications have a number of limitations. For example, using a toll-free number to dial other toll-free numbers in the United States can result in the number being filtered, blocked, or not properly routed to the destination by carriers. Toll-free numbers might be terminated at a higher than expected rate. If you know you need to call toll-free numbers in the United States you must use DIDs to guarantee call delivery.
 
 If you use toll-free numbers outside of the US, refer to the [Connect Customer Telecoms Country Coverage Guide](https://d1v2gagwb6hfe1.cloudfront.net/Amazon_Connect_Telecoms_Coverage.pdf) to see which countries support toll-free numbers as outbound. For example, for Australia the **National Outbound** column indicates that toll-free numbers are not supported.
 
@@ -108,12 +113,14 @@ Toll-free products are designed to be national products and used within a countr
 ## How outbound parameters are selected
 <a name="how-outbound-parameters-selected"></a>
 
-If the call is placed with an external quick connect or quick connect number pad, the outbound caller ID and caller name depends on if the agent is on an active call or not.
+If the call is placed using a quick connect or the number pad, the outbound caller ID and caller name depends on if the agent is on an active call or not.
 + If the agent is on an active call, the original queue that the call is serviced from provides the outbound caller ID and caller name.
 + If the agent isn't on an active call, the outbound queue of the agent's [routing profile](routing-profiles.md) provides the outbound caller ID and caller name.
 
 **Note**
 You can override the outbound caller ID for direct outbound calls (when the agent is not on an active call) by using the [Call phone number](call-phone-number.md) block in a [custom outbound whisper flow](https://repost.aws/knowledge-center/connect-custom-outbound-whisper-flows). This override does not apply to transfers initiated while the agent is on an active call. In that case, the caller ID comes from the inbound queue that serviced the original call and cannot be overridden by the outbound whisper flow. To control caller ID for transfers, use a [Transfer to phone number](transfer-to-phone-number.md) block with a caller ID explicitly configured.
+
+If you use [queued callbacks](setup-queued-cb.md), configure an **Outbound caller ID number** on the queue associated with the callback. Without a valid caller ID, callbacks display as anonymous to the recipient. You can also use an outbound whisper flow to override the queue's caller ID for callbacks.
 
 ## How to set the caller ID number dynamically
 <a name="using-dynamic-caller-id"></a>
@@ -139,7 +146,9 @@ To express a US phone number in E.164 format, add the '\+' prefix and the countr
 In the UK and many other countries internationally, local dialing requires the addition of a 0 in front of the subscriber number. However, to use E.164 formatting, this 0 must be removed. A number such as 020 718 xxxxx in the UK would be formatted as \+44 20 718 xxxxx. When you place calls from the CCP using Connect Customer the CCP provides the correct formatting for numbers automatically.
 
 **Important**
-Phone numbers must be formatted in E.164 or they will not work. They will also result in a breach of [Connect Customer Service Terms and conditions](https://aws.amazon.com/service-terms/) for acceptable use which may result in your service being suspended.
+Phone numbers must be formatted in E.164 or they will not work. They will also result in a breach of [Connect Customer Service Terms and conditions](https://aws.amazon.com/service-terms/) for acceptable use which might result in your service being suspended.
+
+Connect Customer transmits caller ID to carriers in E.164 format (the international telephone numbering standard). The recipient's carrier and handset control how the number appears—with or without country code, and grouped with spaces. Connect Customer does not control this display. You don't need any special configuration for national format display. The conversion happens automatically when the recipient is in the same country as the number.
 
 ## How to specify a custom caller ID number using a [Call phone number](call-phone-number.md) block
 <a name="call-number-block-how-it-works"></a>
@@ -158,8 +167,8 @@ Phone numbers must be formatted in E.164 or they will not work. They will also r
    + To use a number from your instance, choose **Select a number from your instance**, and then search for or select the number to use from the drop-down.
    + Choose **Use attribute** to use a contact attribute to provide the value for the caller ID number. You can use either a **User Defined** attribute you create using a [Set contact attributes](set-contact-attributes.md) block, or an **External** attribute returned from an AWS Lambda function. The value of any attribute you use must be a phone number claimed for your instance and be in E.164 format. If the number used from an attribute is not in E.164 format, the number set for the **Outbound caller ID number** for the queue is used.
 **Important**
-The value of any attribute you use must be a phone number claimed for your instance. The number must be in E.164 format. If the number used from an attribute is not in E.164 format, calls may be terminated by the destination networks.
-It is your responsibility to ensure the numbers you are using are legally permissible. Certain numbers, such as \+44870 numbers in the UK, are not legally permissible. You must ensure you're not using them.
+The value of any attribute you use must be a phone number claimed for your instance. The number must be in E.164 format. If the number used from an attribute is not in E.164 format, calls might be terminated by the destination networks.
+It is your responsibility to ensure the numbers you are using are legally permissible. Certain numbers, such as \+44870 numbers in the UK, are not legally permissible. You must make sure you're not using them.
 
 1. Add any additional blocks to complete your flow, and connect the **Success** branch of the [Call phone number](call-phone-number.md) block to the next block in the flow.
 

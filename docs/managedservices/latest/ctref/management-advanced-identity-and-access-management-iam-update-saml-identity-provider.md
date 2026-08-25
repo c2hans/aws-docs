@@ -14,8 +14,6 @@ Update IAM identity provider using the SAML metadata document file that you stor
 ## Change Type Details
 <a name="ct-379uwo67vbvng-MAIu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-379uwo67vbvng |

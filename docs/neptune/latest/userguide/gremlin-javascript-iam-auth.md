@@ -13,7 +13,7 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/gremlin-javascr
 ## Prerequisites
 <a name="gremlin-javascript-iam-auth-prereqs"></a>
 +  An Amazon Neptune cluster with IAM authentication enabled.
-+  Node 13 or later (refer to minimal versions for Gremlin JavaScript and [AWS SDK for Javascript v3](https://docs.aws.amazon.com//AWSJavaScriptSDK/v3/latest/introduction/#release-cadence)).
++  Node 13 or later (refer to minimal versions for Gremlin JavaScript and [AWS SDK for Javascript v3](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/introduction/#release-cadence)).
 +  AWS credentials configured (via environment variables, shared credentials file, or IAM role).
 
 ## Create a basic connection

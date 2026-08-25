@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-data-delivery-iceberg-schema-mapping.html
 ---
 
-# Glue Schema Registry to Iceberg schema type mapping
+# Schema type mapping
 <a name="msk-data-delivery-iceberg-schema-mapping"></a>
 
 When you register a schema in the AWS Glue Schema Registry, the Channel maps the JSON Schema types to Iceberg column types as follows.

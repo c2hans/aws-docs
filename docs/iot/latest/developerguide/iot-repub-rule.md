@@ -84,7 +84,7 @@ With this rule, devices that only need the device's ID and the temperature data 
 
 **To create a rule that republishes an MQTT message**
 
-1. Open [the **Rules** hub of the AWS IoT console](https://console.aws.amazon.com//iot/home#/rulehub).
+1. Open [the **Rules** hub of the AWS IoT console](https://console.aws.amazon.com/iot/home#/rulehub).
 
 1. In **Rules**, choose **Create** and start creating your new rule.
 
@@ -152,11 +152,11 @@ With this rule, devices that only need the device's ID and the temperature data 
 
 To test your new rule, you'll use the MQTT client to publish and subscribe to the MQTT messages used by this rule.
 
-Open the [MQTT client in the AWS IoT console](https://console.aws.amazon.com//iot/home#/test) in a new window. This will let you edit the rule without losing the configuration of your MQTT client. The MQTT client does not retain any subscriptions or message logs if you leave it to go to another page in the console.
+Open the [MQTT client in the AWS IoT console](https://console.aws.amazon.com/iot/home#/test) in a new window. This will let you edit the rule without losing the configuration of your MQTT client. The MQTT client does not retain any subscriptions or message logs if you leave it to go to another page in the console.
 
 **To use the MQTT client to test your rule**
 
-1. In the [MQTT client in the AWS IoT console](https://console.aws.amazon.com//iot/home#/test), subscribe to the input topics, in this case, `device/+/data`.
+1. In the [MQTT client in the AWS IoT console](https://console.aws.amazon.com/iot/home#/test), subscribe to the input topics, in this case, `device/+/data`.
 
    1. In the MQTT client, under **Subscriptions**, choose **Subscribe to a topic**.
 
@@ -229,7 +229,7 @@ Open the [MQTT client in the AWS IoT console](https://console.aws.amazon.com//io
       }
       ```
 
-      Notice that the `device_id` value is a quoted string and the `temperature` value is numeric. This is because the [`topic()`](https://docs.aws.amazon.com//iot/latest/developerguide/iot-sql-functions.html#iot-function-topic) function extracted the string from the input message's topic name while the `temperature` value uses the numeric value from the input message's payload.
+      Notice that the `device_id` value is a quoted string and the `temperature` value is numeric. This is because the [`topic()`](https://docs.aws.amazon.com/iot/latest/developerguide/iot-sql-functions.html#iot-function-topic) function extracted the string from the input message's topic name while the `temperature` value uses the numeric value from the input message's payload.
 
       If you want to make the `device_id` value a numeric value, replace `topic(2)` in the rule query statement with:
 

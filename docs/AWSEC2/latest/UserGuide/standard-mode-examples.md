@@ -58,8 +58,8 @@ At 0 hours on the graph, the T2 instance is launched as `standard` and immediate
 
 ![In period 1 for the T2 standard, the credit balance is 102 credits.](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/t2-graph1.png)
 
-|  |  |
-| --- |--- |
+| Metric | Value |
+| --- | --- |
 | Credit Spend Rate | 0 credits per 24 hours (0% CPU utilization) |
 | Credit Earn Rate | 72 credits per 24 hours |
 | Credit Discard Rate | 0 credits per 24 hours |
@@ -77,8 +77,8 @@ For the next 12 hours, the instance continues to remain idle and earn credits, b
 
 ![The credit balance has reached its limit of 72 accrued earned credits.](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/t2-graph2.png)
 
-|  |  |
-| --- |--- |
+| Metric | Value |
+| --- | --- |
 | Credit Spend Rate | 0 credits per 24 hours (0% CPU utilization) |
 | Credit Earn Rate | 72 credits per 24 hours (3 credits per hour) |
 | Credit Discard Rate | 72 credits per 24 hours (100% of credit earn rate) |
@@ -94,8 +94,8 @@ For the next 25 hours, the instance uses 2% CPU, which requires 30 credits. In t
 
 ![Newly earned credits are discarded because the credit balance is already at its limit.](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/t2-graph3.png)
 
-|  |  |
-| --- |--- |
+| Metric | Value |
+| --- | --- |
 | Credit Spend Rate | 28.8 credits per 24 hours (1.2 credits per hour, 2% CPU utilization, 40% of credit earn rate)—30 credits over 25 hours |
 | Credit Earn Rate | 72 credits per 24 hours |
 | Credit Discard Rate | 72 credits per 24 hours (100% of credit earn rate) |
@@ -113,8 +113,8 @@ The balance does not decrease because the credit earn rate is higher than the cr
 
 ![The balance plateaus at 72 credits, because there are no accrued launch credits.](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/t2-graph4.png)
 
-|  |  |
-| --- |--- |
+| Metric | Value |
+| --- | --- |
 | Credit Spend Rate | 28.8 credits per 24 hours (1.2 credits per hour, 2% CPU utilization, 40% of credit earn rate)—13.2 credits over 11 hours |
 | Credit Earn Rate | 72 credits per 24 hours |
 | Credit Discard Rate | 43.2 credits per 24 hours (60% of credit earn rate) |
@@ -130,8 +130,8 @@ For the next three hours, the instance bursts at 20% CPU utilization, which requ
 
 ![At the end of three hours, the credit balance is 45 accrued earned credits.](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/t2-graph5.png)
 
-|  |  |
-| --- |--- |
+| Metric | Value |
+| --- | --- |
 | Credit Spend Rate | 288 credits per 24 hours (12 credits per hour, 20% CPU utilization, 400% of credit earn rate)—36 credits over 3 hours |
 | Credit Earn Rate | 72 credits per 24 hours (9 credits over 3 hours) |
 | Credit Discard Rate | 0 credits per 24 hours |
@@ -151,8 +151,8 @@ In this period, there are no accrued launch credits, and the number of accrued e
 
 ![The instance earns more credits than it spends.](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/t2-graph6.png)
 
-|  |  |
-| --- |--- |
+| Metric | Value |
+| --- | --- |
 | Credit Spend Rate | 28.8 credits per 24 hours (1.2 credits per hour, 2% CPU utilization, 40% of credit earn rate)—18 credits over 15 hours |
 | Credit Earn Rate | 72 credits per 24 hours (45 credits over 15 hours) |
 | Credit Discard Rate | 0 credits per 24 hours |
@@ -170,8 +170,8 @@ In Period 2, the credit balance included 30 accrued launch credits. The launch c
 
 ![Earned credits that exceed the limit are discarded.](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/t2-graph7.png)
 
-|  |  |
-| --- |--- |
+| Metric | Value |
+| --- | --- |
 | Credit Spend Rate | 0 credits per 24 hours (0% CPU utilization) |
 | Credit Earn Rate | 72 credits per 24 hours |
 | Credit Discard Rate | 72 credits per 24 hours (100% of credit earn rate) |

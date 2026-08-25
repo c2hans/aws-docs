@@ -26,7 +26,7 @@ If you find that you want to retrieve the data in a snapshot or a recovery point
 
 When you restore a serverless snapshot to a provisioned cluster, you must choose the node type to use, such as RG or RA3, and the number of nodes, letting you control settings at the cluster or node level.
 
-To restore a provisioned cluster snapshot to a serverless namespace, start from the Redshift provisioned console, choose the snapshot to restore, then choose **Restore from snapshot**, **Restore to serverless namespace**. Amazon Redshift converts tables with interleaved keys into compound sort keys when you restore a provisioned cluster snapshot to a serverless namespace. For more information about sort keys, see [Working with sort keys](https://docs.aws.amazon.com//redshift/latest/dg/t_Sorting_data.html).
+To restore a provisioned cluster snapshot to a serverless namespace, start from the Redshift provisioned console, choose the snapshot to restore, then choose **Restore from snapshot**, **Restore to serverless namespace**. Amazon Redshift converts tables with interleaved keys into compound sort keys when you restore a provisioned cluster snapshot to a serverless namespace. For more information about sort keys, see [Working with sort keys](https://docs.aws.amazon.com/redshift/latest/dg/t_Sorting_data.html).
 
 If you want to add additional context, you can tag snapshots and recovery points with key-value pairs that provide metadata and information to snapshots and recovery points. For more information about tagging resources, see [Tagging resources overview](https://docs.aws.amazon.com/redshift/latest/mgmt/serverless-tagging-resources.html).
 

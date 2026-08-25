@@ -14,8 +14,6 @@ Use to create a Database Migration Service (DMS) replication subnet group. Resou
 ## Change Type Details
 <a name="ct-2q5azjd8p1ag5-DADc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2q5azjd8p1ag5 |

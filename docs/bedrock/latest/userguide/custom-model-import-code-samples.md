@@ -309,7 +309,7 @@ To run inference on your newly imported model, you must provide the ARN of the i
 aws bedrock list-imported-models
 ```
 
-The response contains the model name and the model ARN. Use the model ARN to invoke the imported model. For more information, see [Submit a single prompt with InvokeModelSubmit a single prompt with InvokeModel (moved)](inference-invoke.md).
+The response contains the model name and the model ARN. Use the model ARN to invoke the imported model. For more information, see [Submit a single prompt with InvokeModel](inference-invoke.md).
 
 ```
 {
@@ -425,7 +425,7 @@ The response returns the `modelArn` along with other details of the imported mod
     ]
 ```
 
-Use the model ARN to invoke the imported model. For more information, see [Submit a single prompt with InvokeModelSubmit a single prompt with InvokeModel (moved)](inference-invoke.md).
+Use the model ARN to invoke the imported model. For more information, see [Submit a single prompt with InvokeModel](inference-invoke.md).
 
 To delete your imported model, use the following command using the model name or the model ARN of the imported model you want to delete.
 

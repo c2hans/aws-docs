@@ -92,26 +92,26 @@ The OpenSSL Provider requires **hsm2m.medium** cluster types and minimum CloudHS
    ```
 
 ------
-#### [ Ubuntu 24.04 ]
+#### [ Ubuntu 26.04 LTS ]
 
-   Install the OpenSSL Provider for Ubuntu 24.04 on x86\_64 architecture:
-
-   ```
-   $ wget https://s3.amazonaws.com/cloudhsmv2-software/CloudHsmClient/Noble/cloudhsm-openssl-provider_latest_u24.04_amd64.deb
-   ```
+   Install the OpenSSL Provider for Ubuntu 26.04 LTS on x86\_64 architecture:
 
    ```
-   $ sudo dpkg -i ./cloudhsm-openssl-provider_latest_u24.04_amd64.deb
-   ```
-
-   Install the OpenSSL Provider for Ubuntu 24.04 on ARM64 architecture:
-
-   ```
-   $ wget https://s3.amazonaws.com/cloudhsmv2-software/CloudHsmClient/Noble/cloudhsm-openssl-provider_latest_u24.04_arm64.deb
+   $ wget https://s3.amazonaws.com/cloudhsmv2-software/CloudHsmClient/Resolute/cloudhsm-openssl-provider_latest_u26.04_amd64.deb
    ```
 
    ```
-   $ sudo dpkg -i ./cloudhsm-openssl-provider_latest_u24.04_arm64.deb
+   $ sudo dpkg -i ./cloudhsm-openssl-provider_latest_u26.04_amd64.deb
+   ```
+
+   Install the OpenSSL Provider for Ubuntu 26.04 LTS on ARM64 architecture:
+
+   ```
+   $ wget https://s3.amazonaws.com/cloudhsmv2-software/CloudHsmClient/Resolute/cloudhsm-openssl-provider_latest_u26.04_arm64.deb
+   ```
+
+   ```
+   $ sudo dpkg -i ./cloudhsm-openssl-provider_latest_u26.04_arm64.deb
    ```
 
 ------

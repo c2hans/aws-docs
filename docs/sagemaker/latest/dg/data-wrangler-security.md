@@ -480,7 +480,7 @@ You can encrypt the data that you export using one of the following methods:
 
 On the **Export data** page, specify a value for the **AWS KMS key ID or ARN**.
 
-For more information on using AWS KMS keys, see [Protecting Data Using Server-Side Encryption with AWS KMS keys Stored in AWSAWS Key Management Service (SSE-KMS) ](https://docs.aws.amazon.com//AmazonS3/latest/userguide/UsingKMSEncryption.html).
+For more information on using AWS KMS keys, see [Protecting Data Using Server-Side Encryption with AWS KMS keys Stored in AWSAWS Key Management Service (SSE-KMS) ](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingKMSEncryption.html).
 
 ## Amazon AppFlow Permissions
 <a name="data-wrangler-appflow-permissions"></a>

@@ -13,7 +13,7 @@ When you customize AI prompts or AI agents in Amazon Connect, the model associat
 ## Prerequisites
 <a name="upgrade-models-prerequisites"></a>
 
-Before upgrading models, ensure you have the following:
+Before upgrading models, make sure you have the following:
 + An Amazon Connect instance with AI agent designer enabled.
 + An admin account, or an account with AI agent designer permissions in its security profile.
 + Familiarity with [AI prompts](create-ai-prompts.md), [AI agents](create-ai-agents.md), and [default system AI prompts and agents](default-ai-system.md).
@@ -50,7 +50,7 @@ Custom prompts do not automatically receive model upgrades. You must manually up
 <a name="upgrade-models-scenario-1-partial-overrides"></a>
 
 Some AI agent types support multiple prompt types. For example, an Answer recommendation AI agent supports three prompt types: intent labeling generation, query reformulation, and answer generation. If you set only some of these to custom prompts and left the rest unset, the following applies:
-+ Prompt types you explicitly set (via the admin website or CLI) are pinned to the specific prompt version you chose. They do not change unless you update them. Follow the upgrade steps below for each custom prompt.
++ Prompt types you explicitly set (through the admin website or CLI) are pinned to the specific prompt version you chose. They do not change unless you update them. Follow the upgrade steps below for each custom prompt.
 + Prompt types you left unset are not stored in the AI agent configuration. At runtime, Amazon Connect resolves them from the current system defaults. These types always use the latest system prompt versions, including any model upgrades. No action is required for unset prompt types.
 
 ### Upgrade using the admin website
@@ -188,7 +188,7 @@ This converts that prompt type into a Scenario 1 configuration.
 ## Scenario 3: Updating Default AI Agent Configurations
 <a name="upgrade-models-scenario-3"></a>
 
-The *Default AI Agent Configurations* section on the *AI agents* overview page controls which AI agent version is active for each use case (Answer Recommendation, Manual Search, Self Service, etc.).
+The *Default AI Agent Configurations* section on the *AI agents* overview page controls which AI agent version is active for each use case (Answer Recommendation, Manual Search, Self Service).
 
 When an Amazon Connect instance is created, each use case is automatically configured with a specific system AI agent version. These versions are pinned — they do not auto-update when Amazon Connect publishes new system AI agent versions or when you publish new custom AI agent versions. You must manually select the new version.
 

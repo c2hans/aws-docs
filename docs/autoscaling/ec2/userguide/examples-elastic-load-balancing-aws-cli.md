@@ -104,7 +104,7 @@ For more information, see [Health checks for instances in an Auto Scaling group]
 ## Change your Availability Zones
 <a name="example-specify-availability-zones"></a>
 
-Changing your Availability Zones has some limitations that you should be aware of. For more information, see [Add an Availability ZoneRemove an Availability Zone](as-add-az-console.md).
+Changing your Availability Zones has some limitations that you should be aware of. For more information, see [Add an Availability Zone](as-add-az-console.md).
 
 **To change the Availability Zones for an Application Load Balancer or Network Load Balancer**
 

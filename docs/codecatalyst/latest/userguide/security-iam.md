@@ -218,8 +218,6 @@ This section provides a permissions reference for actions used with the account 
 
  The following permissions are required for working with account connections.
 
-****
-
 | CodeCatalyst permissions for account connections | Required permissions | Resources |
 | --- | --- | --- |
 | AcceptConnection | Required to accept a request to connect this account to a CodeCatalyst space. This is an IAM policy permission only, not an API action. | Supports only a wildcard (\*) in the policy `Resource` element. |
@@ -241,8 +239,6 @@ This section provides a permissions reference for actions used with the account 
 <a name="permissions-reference-applications"></a>
 
  The following permissions are required for working with IAM Identity Center applications.
-
-****
 
 | CodeCatalyst permissions for IAM Identity Center applications | Required permissions | Resources |
 | --- | --- | --- |

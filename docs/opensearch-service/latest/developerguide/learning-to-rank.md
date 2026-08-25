@@ -54,8 +54,6 @@ A judgment list is a collection of examples that a machine learning model learns
 
 In this example, we have a judgment list for a movie dataset. A grade of 4 indicates a perfect match. A grade of 0 indicates the worst match.
 
-****
-
 | Grade | Keyword | Doc ID | Movie name |
 | --- | --- | --- | --- |
 | 4 | rambo | 7555 | Rambo |

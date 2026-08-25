@@ -108,7 +108,7 @@ If you are using temporary credentials, you'll also need to provide your `AWS_SE
    ./kvs_gstreamer_sample {{YourStreamName}} {{YourRtspUrl}}
    ```
 
-1. Sign into the AWS Management Console and open the [Kinesis Video Streams console](https://console.aws.amazon.com//kinesisvideo/home/).
+1. Sign into the AWS Management Console and open the [Kinesis Video Streams console](https://console.aws.amazon.com/kinesisvideo/home/).
 
    View the stream.
 

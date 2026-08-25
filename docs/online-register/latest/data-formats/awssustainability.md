@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awss
 
 AWS Sustainability provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="sustainability-GetCarbonFootprintSummary"></a>[GetCarbonFootprintSummary](https://docs.aws.amazon.com/cur/latest/userguide/dataexports-create-standard.html) | Access carbon footprint data from AWS Data Exports | Read |

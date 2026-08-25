@@ -12,7 +12,7 @@ Amazon ECR endpoints are designated by attributes beyond IPv4-only endpoint or d
 + **Type** – Endpoint selection depends on whether you're using the AWS SDK or OCI-compatible and Docker command line interfaces.
 + **Security** – In select Regions Amazon ECR offers FIPS-compliant endpoints. For more information about a list of FIPS-compliant Amazon ECR endpoints, see [Federal Information Processing Standard (FIPS) 140-3](https://aws.amazon.com/compliance/fips/).
 
-For more information about service endpoints supported by IPv4, dual-stack, Docker, and OCI client, which handles Amazon ECR API calls from AWS CLI and AWS SDKs see, [ Service endpoints](https://docs.aws.amazon.com//general/latest/gr/ecr.html#ecr_region).
+For more information about service endpoints supported by IPv4, dual-stack, Docker, and OCI client, which handles Amazon ECR API calls from AWS CLI and AWS SDKs see, [ Service endpoints](https://docs.aws.amazon.com/general/latest/gr/ecr.html#ecr_region).
 
 ## Getting started with making requests over IPv6
 <a name="ipv6-access-getting-started"></a>
@@ -62,7 +62,7 @@ ping ecr.us-west-2.api.aws
 
 You can make Amazon ECR API calls over IPv6 using dual-stack endpoints. The functionality and performance of Amazon ECR API operations remain consistent whether you use IPv4 or IPv6.
 
-When you use the AWS Command Line Interface (AWS CLI) and AWS SDKs, you can enable IPv6 either by using a parameter or flag to switch to a dual-stack endpoint, or by directly specifying the dual-stack endpoint in your config file to override the default Amazon ECR endpoint. You can also make configuration changes by using a command, which sets `use_dualstack_endpoint` to true in the default profile. For more information about `use_dualstack_endpoint`, see [Dual-stack and FIPS endpoints](https://docs.aws.amazon.com//sdkref/latest/guide/feature-endpoints.html).
+When you use the AWS Command Line Interface (AWS CLI) and AWS SDKs, you can enable IPv6 either by using a parameter or flag to switch to a dual-stack endpoint, or by directly specifying the dual-stack endpoint in your config file to override the default Amazon ECR endpoint. You can also make configuration changes by using a command, which sets `use_dualstack_endpoint` to true in the default profile. For more information about `use_dualstack_endpoint`, see [Dual-stack and FIPS endpoints](https://docs.aws.amazon.com/sdkref/latest/guide/feature-endpoints.html).
 
 **Example Making configuration changes by using a command**  <a name="ecr-private-config-changes"></a>
  `aws configure set default.ecr.use_dualstack_endpoint true`

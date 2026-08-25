@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsp
 
 AWS Parallel Computing Service provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="pcs-GetCluster"></a>[GetCluster](https://docs.aws.amazon.com/pcs/latest/APIReference/API_GetCluster.html) | Get cluster properties | Read |

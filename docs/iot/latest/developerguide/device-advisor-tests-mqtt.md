@@ -56,7 +56,7 @@ The payload content and the payload size are configurable for this test case. If
 **"Device connect retries with jitter backoff - No CONNACK response"**  <a name="MQTT_ConnectJitterBackoff"></a>
 Validates that the device under test uses the proper jitter backoff when reconnecting with the broker for at least five times. The broker logs the timestamp of the device under test's CONNECT request, performs packet validation, pauses without sending a CONNACK to the device under test, and waits for the device under test to resend the request. The sixth connection attempt is allowed to pass through and CONNACK is allowed to flow back to the device under test.
 The preceding process is performed again. In total, this test case requires the device to connect at least 12 times in total. The collected timestamps are used to validate that jitter backoff is used by the device under test. If the device under test has a strictly exponential backoff delay, this test case will pass with warnings.
-We recommend implementation of the [Exponential Backoff And Jitter](https://aws.amazon.com/blogs//architecture/exponential-backoff-and-jitter/) mechanism on the device under test to pass this test case.
+We recommend implementation of the [Exponential Backoff And Jitter](https://aws.amazon.com/blogs/architecture/exponential-backoff-and-jitter/) mechanism on the device under test to pass this test case.
 *API test case definition:*
 `EXECUTION_TIMEOUT` has a default value of 5 minutes. We recommend a timeout value of 4 minutes.
 
@@ -78,7 +78,7 @@ We recommend implementation of the [Exponential Backoff And Jitter](https://aws.
 
 **"Device connect retries with exponential backoff - No CONNACK response"**
 Validates that the device under test uses the proper exponential backoff when reconnecting with the broker for at least five times. The broker logs the timestamp of the device under test's CONNECT request, performs packet validation, pauses without sending a CONNACK to the client device, and waits for the device under test to resend the request. The collected timestamps are used to validate that an exponential backoff is used by the device under test.
-We recommend implementation of the [Exponential Backoff And Jitter](https://aws.amazon.com/blogs//architecture/exponential-backoff-and-jitter/) mechanism on the device under test to pass this test case.
+We recommend implementation of the [Exponential Backoff And Jitter](https://aws.amazon.com/blogs/architecture/exponential-backoff-and-jitter/) mechanism on the device under test to pass this test case.
 *API test case definition:*
 `EXECUTION_TIMEOUT` has a default value of 5 minutes. We recommend a timeout value of 4 minutes.
 
@@ -100,7 +100,7 @@ We recommend implementation of the [Exponential Backoff And Jitter](https://aws.
 
 **"Device re-connect with jitter backoff - After server disconnect"**
 Validates if a device under test uses necessary jitter and backoff while reconnecting after it's been disconnected from the server. Device Advisor disconnects the device from the server for at least five times and observes the device's behavior for MQTT reconnection. Device Advisor logs the timestamp of the CONNECT request for the device under test, performs packet validation, pauses without sending a CONNACK to the client device, and waits for the device under test to resend the request. The collected timestamps are used to validate that the device under test uses jitter and backoff while reconnecting. If the device under test has a strictly exponential backoff or doesn't implement a proper jitter backoff mechanism, this test case will pass with warnings. If the device under test has implemented either a linear backoff or a constant backoff mechanism, the test will fail.
-To pass this test case, we recommend implementing the [Exponential Backoff And Jitter](https://aws.amazon.com/blogs//architecture/exponential-backoff-and-jitter/) mechanism on the device under test.
+To pass this test case, we recommend implementing the [Exponential Backoff And Jitter](https://aws.amazon.com/blogs/architecture/exponential-backoff-and-jitter/) mechanism on the device under test.
 *API test case definition:*
 `EXECUTION_TIMEOUT` has a default value of 5 minutes. We recommend a timeout value of 4 minutes.
 The number of reconnection attempts to validate for backoff can be changed by specifying the `RECONNECTION_ATTEMPTS`. The number must be between 5 and 10. The default value is 5.
@@ -124,7 +124,7 @@ The number of reconnection attempts to validate for backoff can be changed by sp
 
 **"Device re-connect with jitter backoff - On unstable connection"**
 Validates if a device under test uses necessary jitter and backoff while reconnecting on an unstable connection. Device Advisor disconnects the device from the server after five successful connections, and observes the device's behavior for MQTT reconnection. Device Advisor logs the timestamp of the CONNECT request for the device under test, performs packet validation, sends back CONNACK, disconnects, log the timestamp of the disconnection, and waits for the device under test to resend the request. The collected timestamps are used to validate that the device under test uses jitter and backoff while reconnecting after successful but unstable connections. If the device under test has a strictly exponential backoff or doesn't implement a proper jitter backoff mechanism, this test case will pass with warnings. If the device under test has implemented either a linear backoff or a constant backoff mechanism, the test will fail.
-To pass this test case, we recommend implementing the [Exponential Backoff And Jitter](https://aws.amazon.com/blogs//architecture/exponential-backoff-and-jitter/) mechanism on the device under test.
+To pass this test case, we recommend implementing the [Exponential Backoff And Jitter](https://aws.amazon.com/blogs/architecture/exponential-backoff-and-jitter/) mechanism on the device under test.
 *API test case definition:*
 `EXECUTION_TIMEOUT` has a default value of 5 minutes. We recommend a timeout value of 4 minutes.
 The number of reconnection attempts to validate for backoff can be changed by specifying the `RECONNECTION_ATTEMPTS`. The number must be between 5 and 10. The default value is 5.

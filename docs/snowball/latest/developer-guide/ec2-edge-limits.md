@@ -16,8 +16,6 @@ The storage available for compute resources is a separate resource from the dedi
 
 A Snowball Edge compute-optimized device can run up to 20 AMIs and 10 volumes per instance.
 
-****
-
 | Instance type | vCPU cores | Memory (GiB) | Supported device option |
 | --- | --- | --- | --- |
 | sbe1.small | 1 | 1 | storage optimized |

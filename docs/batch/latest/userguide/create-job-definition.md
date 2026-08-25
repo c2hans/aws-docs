@@ -12,5 +12,6 @@ You can create a multi-node parallel job definition on Amazon Elastic Container 
 **Topics**
 + [Create a single-node job definition on Amazon EC2 resources](create-job-definition-EC2.md)
 + [Create a single-node job definition on Fargate resources](create-job-definition-Fargate.md)
++ [Create a job definition on Amazon ECS Managed Instances](create-job-definition-ecs-managed-instances.md)
 + [Create a single-node job definition on Amazon EKS resources](create-job-definition-eks.md)
 + [Create a single-node job definition with multiple containers on Amazon EC2 resources](create-job-definition-single-node-multi-container.md)

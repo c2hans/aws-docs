@@ -36,4 +36,4 @@ If you delete a premium free trial network, you won't be able to create another 
 
    It can take a few minutes for the network to delete.
 **Note**
-Data retained by your data retention configuration (if enabled) will not be deleted when you delete your network. For more information, see [ Data retention for AWS Wickr](https://docs.aws.amazon.com//wickr/latest/adminguide/data-retention.html).
+Data retained by your data retention configuration (if enabled) will not be deleted when you delete your network. For more information, see [ Data retention for AWS Wickr](https://docs.aws.amazon.com/wickr/latest/adminguide/data-retention.html).

@@ -109,7 +109,7 @@ Chat logs can contain sensitive or personally identifiable data.
 + **Who controls it** – An administrator configures the delivery destination (CloudWatch Logs, Amazon S3, or Firehose). IAM permissions are required to set up delivery. When a destination uses a customer managed KMS key, the key policy must allow the delivery service principal.
 + **What to verify** – Before configuring log delivery, verify the encryption and access policies at the destination, the retention policies at the destination, and that personnel with access to the destination understand that chat logs can contain sensitive data.
 
-For more information, see [Monitoring Amazon Quick usage using CloudWatch Logs](monitoring-quicksuite-chat-feedback-cloudwatch.md).
+For more information, see [Monitoring Amazon Quick using CloudWatch Logs](monitoring-cloudwatch-logs.md).
 
 ## Cross-Region inference
 <a name="outbound-connections-cross-region-inference"></a>

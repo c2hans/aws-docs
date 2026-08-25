@@ -9,7 +9,7 @@ AWS Service Catalog enables IT administrators to create, manage, and distribute 
 
 You can control the users that have access to specific products, which allows you to enforce compliance with organizational business standards, manage product lifecycles, and help users find and launch products with confidence. For more information, see *[Service Catalog Administrator Guide](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/)*.
 
-In AWS Control Tower, your central cloud administrators and your end users can provision custom accounts in your landing zone using AWS Service Catalog products, called *custom blueprints*. For more information, see [Step2. Create the AWS Service Catalog product](https://docs.aws.amazon.com//controltower/latest/userguide/afc-setup-steps.html#step-2-create-blueprint-product).
+In AWS Control Tower, your central cloud administrators and your end users can provision custom accounts in your landing zone using AWS Service Catalog products, called *custom blueprints*. For more information, see [Step2. Create the AWS Service Catalog product](https://docs.aws.amazon.com/controltower/latest/userguide/afc-setup-steps.html#step-2-create-blueprint-product).
 
 You can interact with AWS Control Tower accounts through the AWS Service Catalog console and APIs. For more information, see [Interact with AWS Control Tower accounts from AWS Service Catalog](handle-accounts-with-service-catalog.md)
 

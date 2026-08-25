@@ -153,7 +153,7 @@ In this section, you use the CodeCommit console to create the CodeCommit reposit
 
 1. Open the CodeCommit console at [https://console.aws.amazon.com/codesuite/codecommit/home](https://console.aws.amazon.com/codesuite/codecommit/home).
 
-1. In the region selector, choose the AWS Region where you want to create the repository. For more information, see [Regions and Git connection endpoints](regions.md).
+1. In the Region selector, choose the AWS Region where you want to create the repository. For more information, see [Regions and Git connection endpoints](regions.md).
 
 1. On the **Repositories** page, choose **Create repository**.
 
@@ -311,7 +311,7 @@ After you have created an IAM user to be used to access CodeCommit using the pol
 
 1. Open the CodeCommit console at [https://console.aws.amazon.com/codesuite/codecommit/home](https://console.aws.amazon.com/codesuite/codecommit/home).
 
-1. In the region selector, choose the AWS Region where the repository was created. Repositories are specific to an AWS Region. For more information, see [Regions and Git connection endpoints](regions.md).
+1. In the Region selector, choose the AWS Region where the repository was created. Repositories are specific to an AWS Region. For more information, see [Regions and Git connection endpoints](regions.md).
 
 1. On the **Repositories** page, choose the repository you want to share.
 

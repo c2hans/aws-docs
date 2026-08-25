@@ -14,8 +14,6 @@ Attach instance or instances to the target group (ALB and NLB).
 ## Change Type Details
 <a name="ct-3sk74t8igor0s-MATa-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-3sk74t8igor0s |

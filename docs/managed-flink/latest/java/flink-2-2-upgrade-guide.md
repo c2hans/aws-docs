@@ -67,7 +67,7 @@ It is highly recommended to create a replica of your production application and 
 **Update application code**
 
 Update your application code to be compatible with Flink 2.2:
-+ **Update Flink dependencies** to version 2.2.0 in your `pom.xml` or `build.gradle`
++ **Update Flink dependencies** to version 2.2.1 in your `pom.xml` or `build.gradle`
 + **Update connector dependencies** to Flink 2.2-compatible versions (see [Connector availability](flink-2-2.md#flink-2-2-connectors))
 + **Remove deprecated API usage**:
   + Replace DataSet API with DataStream API or Table API/SQL

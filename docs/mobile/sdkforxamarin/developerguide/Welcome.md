@@ -7,14 +7,14 @@ The AWS Mobile SDK for Xamarin is now included in the AWS SDK for .NET. This gui
 # What is the AWS Mobile SDK for .NET and Xamarin?
 <a name="Welcome"></a>
 
-The AWS Mobile SDK for Xamarin is included in the SDK for .NET. For more information, see the [*AWS SDK for .NET Developer Guide*](https://docs.aws.amazon.com//sdk-for-net/latest/developer-guide/welcome.html).
+The AWS Mobile SDK for Xamarin is included in the SDK for .NET. For more information, see the [*AWS SDK for .NET Developer Guide*](https://docs.aws.amazon.com/sdk-for-net/latest/developer-guide/welcome.html).
 
 This guide is no longer updated—it references the archived version of the Mobile SDK for Xamarin.
 
 ## Related guides and topics
 <a name="related-xamarin-links"></a>
 + For front-end and mobile app development, we recommend using [AWS Amplify](https://aws.amazon.com/amplify).
-+ For special considerations for using the AWS SDK for .NET for your Xamarin apps, see [Special considerations for Xamarin support](https://docs.aws.amazon.com//sdk-for-net/latest/developer-guide/xamarin-special.html) in the *AWS SDK for .NET Developer Guide*.
++ For special considerations for using the AWS SDK for .NET for your Xamarin apps, see [Special considerations for Xamarin support](https://docs.aws.amazon.com/sdk-for-net/latest/developer-guide/xamarin-special.html) in the *AWS SDK for .NET Developer Guide*.
 + For reference purposes, you can find the archived version of the [AWS Mobile SDK for Xamarin](https://github.com/amazon-archives/aws-sdk-xamarin) on GitHub.
 
 ## Archived reference content

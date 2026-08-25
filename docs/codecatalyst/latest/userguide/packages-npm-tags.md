@@ -21,8 +21,6 @@ By default, npm uses the `latest` tag to identify the current version of a packa
 
 When `npm` requests the tags for a package and versions of that package are also present in an upstream repository, CodeCatalyst merges the tags before returning them to the client. For example, a repository named `R` has an upstream repository named `U`. The following table shows the tags for a package named `web-helper` that's present in both repositories.
 
-****
-
 | Repository | Package name | Package tags |
 | --- | --- | --- |
 | R | `web-helper` |  *latest* (alias for version 1.0.0) |
@@ -31,8 +29,6 @@ When `npm` requests the tags for a package and versions of that package are also
 In this case, when the npm client fetches the tags for the `web-helper` package from repository `R`, it receives both the *latest* and *alpha* tags. The versions the tags point to won't change.
 
 When the same tag is present on the same package in both the upstream and local repository, CodeCatalyst uses the tag that was *last updated*. For example, suppose that the tags on *webhelper* have been modified to look like the following.
-
-****
 
 | Repository | Package name | Package tags | Last updated |
 | --- | --- | --- | --- |

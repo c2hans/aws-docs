@@ -17,8 +17,6 @@ Learn about quotas when working with Amazon File Cache.
 
 The following are quotas for Amazon File Cache per AWS account, per AWS Region, which you can increase.
 
-****
-
 | Resource | Default | Description |
 | --- | --- | --- |
 | Lustre Cache\_1 caches | 100 | The maximum number of Amazon File Cache caches with cache type `Lustre` and deployment type `Cache_1` that you can create in this account. |
@@ -42,8 +40,6 @@ For more information, see [Requesting a quota increase](https://docs.aws.amazon.
 <a name="limits-file-cache-resources"></a>
 
 The following are limits on Amazon File Cache resources for each cache in an AWS Region.
-
-****
 
 | Resource | Limit per cache |
 | --- | --- |

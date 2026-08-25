@@ -12,7 +12,7 @@ For an end to end walkthrough using PyIceberg, see [Access data in Amazon S3 Tab
 **Prerequisites**
 + [Integrate your table buckets with AWS analytics services](s3-tables-integrating-aws.md)
 + [Create a table namespace](s3-tables-namespace-create.md)
-+ [Have access to a data lake administrator account](https://docs.aws.amazon.com//lake-formation/latest/dg/initial-lf-config.html#create-data-lake-admin)
++ [Have access to a data lake administrator account](https://docs.aws.amazon.com/lake-formation/latest/dg/initial-lf-config.html#create-data-lake-admin)
 
 ## Create an IAM role for your client
 <a name="glue-endpoint-create-iam-role"></a>

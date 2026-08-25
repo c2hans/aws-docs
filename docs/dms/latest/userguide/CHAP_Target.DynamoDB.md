@@ -295,8 +295,6 @@ The following example shows the structure of the source database and the desired
 
 The structure of the Oracle data is as follows:
 
-****
-
 <table>
 <thead>
   <tr><th>FirstName</th><th>LastName</th><th>StoreId</th><th>HomeAddress</th><th>HomePhone</th><th>WorkAddress</th><th>WorkPhone</th><th>DateOfBirth</th></tr>
@@ -308,8 +306,6 @@ The structure of the Oracle data is as follows:
 </table>
 
 The structure of the DynamoDB data is as follows:
-
-****
 
 <table>
 <thead>

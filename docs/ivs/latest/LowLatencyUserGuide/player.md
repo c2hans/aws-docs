@@ -24,7 +24,7 @@ Key features of the Amazon IVS player are:
 
 The Amazon IVS player does not support casting with Airplay, but developers can implement Airplay by transitioning sessions to AVPlayer. However, latency on AVPlayer is higher than in the Amazon IVS player SDK, so the switch will not be seamless. An example of how to accomplish this transition is provided [here](https://github.com/aws-samples/sample-for-airplay-on-ivs).
 
-Casting with Chromecast can be implemented outside the player using the default Chromecast receiver apps. However, latency in those apps is higher than in the Amazon IVS player SDK, so the switch will not be seamless. Also see our documentation on the Amazon IVS Broadcast SDK: for [Low-Latency Streaming](broadcast.md) and for [ Real-Time Streaming](https://docs.aws.amazon.com//ivs/latest/RealTimeUserGuide/broadcast.html).
+Casting with Chromecast can be implemented outside the player using the default Chromecast receiver apps. However, latency in those apps is higher than in the Amazon IVS player SDK, so the switch will not be seamless. Also see our documentation on the Amazon IVS Broadcast SDK: for [Low-Latency Streaming](broadcast.md) and for [ Real-Time Streaming](https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/broadcast.html).
 
 ## Browser & Platform Requirements
 <a name="player-browser-platform-requirements"></a>
@@ -82,7 +82,7 @@ IVS supports a minimum of 4 major iOS versions and 6 major Android versions. Our
 ### iOS Safari
 <a name="player-reducing-latency-ios-safari"></a>
 
-In iOS Safari, you can reduce latency to approximately 6-8 seconds by using the IVS player and configuring it to use a service worker. See [Set Up Service Worker](https://docs.aws.amazon.com//ivs/latest/LowLatencyUserGuide/web-getting-started.html#web-service-worker) in the *Player SDK: Web Guide* for implementation details and a reference sample.
+In iOS Safari, you can reduce latency to approximately 6-8 seconds by using the IVS player and configuring it to use a service worker. See [Set Up Service Worker](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/web-getting-started.html#web-service-worker) in the *Player SDK: Web Guide* for implementation details and a reference sample.
 
 **Note**: Getting the lowest latency requires an IVS stream with the keyframe interval set to 2 seconds.
 

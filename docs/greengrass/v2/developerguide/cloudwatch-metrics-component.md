@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/cloudwatch-
 # CloudWatch metrics
 <a name="cloudwatch-metrics-component"></a>
 
-The Amazon CloudWatch metrics component (`aws.greengrass.Cloudwatch`) publishes custom metrics from Greengrass core devices to Amazon CloudWatch. The component enables components to publish CloudWatch metrics, which you can use to monitor and analyze the Greengrass core device's environment. For more information, see [Using Amazon CloudWatch metrics](https://docs.aws.amazon.com//AmazonCloudWatch/latest/monitoring/working_with_metrics.html) in the *Amazon CloudWatch User Guide*.
+The Amazon CloudWatch metrics component (`aws.greengrass.Cloudwatch`) publishes custom metrics from Greengrass core devices to Amazon CloudWatch. The component enables components to publish CloudWatch metrics, which you can use to monitor and analyze the Greengrass core device's environment. For more information, see [Using Amazon CloudWatch metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/working_with_metrics.html) in the *Amazon CloudWatch User Guide*.
 
 To publish a CloudWatch metric with this component, publish a message to a topic where this component subscribes. By default, this component subscribes to the `cloudwatch/metric/put` [local publish/subscribe](ipc-publish-subscribe.md) topic. You can specify other topics, including AWS IoT Core MQTT topics, when you deploy this component.
 
@@ -177,7 +177,7 @@ You can set the `UseInstaller` configuration to `true` to install these librarie
   }
   ```<a name="connector-component-legacy-subscription-router-dependency-replace"></a>
   + Replace {{region}} with the AWS Region that you use.
-  + Replace {{version}} with the version of the Lambda function that this component runs. To find the Lambda function version, you must view the recipe for the version of this component that you want to deploy. Open this component's details page in the [AWS IoT Greengrass console](https://console.aws.amazon.com//greengrass), and look for the **Lambda function** key-value pair. This key-value pair contains the name and version of the Lambda function.
+  + Replace {{version}} with the version of the Lambda function that this component runs. To find the Lambda function version, you must view the recipe for the version of this component that you want to deploy. Open this component's details page in the [AWS IoT Greengrass console](https://console.aws.amazon.com/greengrass), and look for the **Lambda function** key-value pair. This key-value pair contains the name and version of the Lambda function.
 
 **Important**  <a name="connector-component-legacy-subscription-router-dependency-note"></a>
 You must update the Lambda function version on the legacy subscription router every time you deploy this component. This ensures that you use the correct Lambda function version for the component version that you deploy.
@@ -200,7 +200,7 @@ This component must be able to perform outbound requests to the following endpoi
 ## Dependencies
 <a name="cloudwatch-metrics-component-dependencies"></a>
 
-When you deploy a component, AWS IoT Greengrass also deploys compatible versions of its dependencies. This means that you must meet the requirements for the component and all of its dependencies to successfully deploy the component. This section lists the dependencies for the [released versions](#cloudwatch-metrics-component-changelog) of this component and the semantic version constraints that define the component versions for each dependency. You can also view the dependencies for each version of the component in the [AWS IoT Greengrass console](https://console.aws.amazon.com//greengrass). On the component details page, look for the **Dependencies** list.
+When you deploy a component, AWS IoT Greengrass also deploys compatible versions of its dependencies. This means that you must meet the requirements for the component and all of its dependencies to successfully deploy the component. This section lists the dependencies for the [released versions](#cloudwatch-metrics-component-changelog) of this component and the semantic version constraints that define the component versions for each dependency. You can also view the dependencies for each version of the component in the [AWS IoT Greengrass console](https://console.aws.amazon.com/greengrass). On the component details page, look for the **Dependencies** list.
 
 ------
 #### [ 4.0.0 - 3.0.0 ]

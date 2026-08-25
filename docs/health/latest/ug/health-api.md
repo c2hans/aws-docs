@@ -43,8 +43,6 @@ For IPv6-only requests, we recommend performing a DNS lookup on the global endpo
 
 The following table represents the default configuration.
 
-****
-
 | Description | Signing Region | Endpoint | Protocol |
 | --- | --- | --- | --- |
 | Active | us-east-1 | health.us-east-1.amazonaws.com (IPv4-only)<br />health.us-east-1.api.aws (IPv4 and IPv6 supported) | HTTPS |

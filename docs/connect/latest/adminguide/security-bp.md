@@ -50,7 +50,7 @@ We recommend reviewing each AWS service in your solution against the security re
 ## Data Security in Connect Customer
 <a name="datasecurity-bp"></a>
 
-During your security journey, your security teams may require a deeper understanding of how data is handled in Connect Customer. See the following resources:
+During your security journey, your security teams might require a deeper understanding of how data is handled in Connect Customer. See the following resources:
 + [Detailed network paths for Connect Customer](detailed-network-paths.md)
 + [Infrastructure security in Connect Customer](infrastructure-security.md)
 + [Compliance validation in Connect Customer](compliance-validation.md)
@@ -70,11 +70,11 @@ There are four types of Connect Customer personas, based on the activities being
 
 ![Types of Connect Customer personas.](http://docs.aws.amazon.com/connect/latest/adminguide/images/architecture/amazonconnectpersonas.png)
 
-1. AWS administrator – AWS administrators create or modify Connect Customer resources and may also delegate administrative access to other principals by using the AWS Identity and Access Management (IAM) service. The scope of this persona is focused on creating and administering your Connect Customer instance.
+1. AWS administrator – AWS administrators create or modify Connect Customer resources and might also delegate administrative access to other principals by using the AWS Identity and Access Management (IAM) service. The scope of this persona is focused on creating and administering your Connect Customer instance.
 
 1. Connect Customer administrator – Service administrators determine which Connect Customer features and resources employees should access within the Connect Customer admin website. The service administrator assigns security profiles to determine who can access the Connect Customer admin website and what tasks they can perform. The scope of this persona is focused on creating and administering your Connect Customer contact center.
 
-1. Connect Customer agent – Agents interact with Connect Customer to perform their job duties. Service users may be contact center agents or supervisors.
+1. Connect Customer agent – Agents interact with Connect Customer to perform their job duties. Service users might be contact center agents or supervisors.
 
 1. Connect Customer Service contact – The customer who interacts with your Connect Customer contact center.
 
@@ -103,7 +103,7 @@ In addition to storing users in Connect Customer, you can [enable single sign-on
 ### Access to Integrated Applications
 <a name="accessintegratedapps"></a>
 
-Steps within your flows may need credentials to access information in external applications and systems. To provide credentials to access other AWS services in a secure way, use IAM roles. An IAM role is an entity that has its own set of permissions, but that isn't a user or group. Roles also don't have their own permanent set of credentials and are automatically rotated.
+Steps within your flows might need credentials to access information in external applications and systems. To provide credentials to access other AWS services in a secure way, use IAM roles. An IAM role is an entity that has its own set of permissions, but that isn't a user or group. Roles also don't have their own permanent set of credentials and are automatically rotated.
 
 Credentials such as API keys should be stored outside of your flow application code, where they can be retrieved programmatically. To accomplish this, you can use AWS Secrets Manager or an existing third-party solution. Secrets Manager enables you to replace hardcoded credentials in your code, including passwords, with an API call to Secrets Manager to retrieve the secret programmatically.
 
@@ -123,7 +123,7 @@ Fraud detection and prevention for incoming contacts can be implemented by custo
 ## Infrastructure protection
 <a name="infrastructureprotection"></a>
 
-Although there is no infrastructure to manage in Connect Customer, there could be scenarios where your Connect Customer instance needs to interact with other components or applications deployed in infrastructure residing on-premises. Consequently, it is important to ensure that networking boundaries are considered under this assumption. Review and implement specific Connect Customer infrastructure security considerations. Also, review contact center agent and supervisor desktops or VDI solutions for security considerations.
+Although there is no infrastructure to manage in Connect Customer, there could be scenarios where your Connect Customer instance needs to interact with other components or applications deployed in infrastructure residing on-premises. Consequently, it is important to make sure that networking boundaries are considered under this assumption. Review and implement specific Connect Customer infrastructure security considerations. Also, review contact center agent and supervisor desktops or VDI solutions for security considerations.
 
 You can configure a Lambda function to connect to private subnets in a virtual private cloud (VPC) in your account. Use Amazon Virtual Private Cloud to create a private network for resources such as databases, cache instances, or internal services. Connect Customer your function to the VPC to access private resources during execution.
 
@@ -143,12 +143,12 @@ You can specify AWS KMS keys to be used for encryption including bring your own 
 ### Protecting Data Using Client-Side Encryption
 <a name="protectingdata"></a>
 
-Your use case may require encryption of sensitive data that is collected by flows. For example, to gather appropriate personal information to customize the customer experience when they interact with your IVR. To do this you can use public-key cryptography with the [AWS Encryption SDK](https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/introduction.html). The AWS Encryption SDK is a client-side encryption library designed to make it efficient for everyone to encrypt and decrypt data using open standards and best practices.
+Your use case might require encryption of sensitive data that is collected by flows. For example, to gather appropriate personal information to customize the customer experience when they interact with your IVR. To do this you can use public-key cryptography with the [AWS Encryption SDK](https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/introduction.html). The AWS Encryption SDK is a client-side encryption library designed to make it efficient for everyone to encrypt and decrypt data using open standards and best practices.
 
 ### Input validation
 <a name="inputvalidation"></a>
 
-Perform input validation to ensure that only properly formed data is entering the flow. This should happen as early as possible in the flow. For example, when prompting a customer to say or enter a telephone number, they may or may not include the country code.
+Perform input validation to make sure that only properly formed data is entering the flow. This should happen as early as possible in the flow. For example, when prompting a customer to say or enter a telephone number, they might or might not include the country code.
 
 ## Connect Customer security vectors
 <a name="securityvectors"></a>
@@ -169,9 +169,9 @@ Connect Customer security can be divided into three logical layers as illustrate
    + Integrations with other AWS services: Identify each AWS service in the use case as well as any third-party integration points applicable for this use case.
    + Connect Customer can integrate with AWS Lambda functions that run inside of a customer VPC through the [VPC endpoints for Lambda](https://docs.aws.amazon.com/lambda/latest/dg/configuration-vpc.html).
 
-1. **External**: The External layer includes contact points including chat, click-to-call endpoints, and the PSTN for voice calls, integrations you may have with legacy contact center solutions in a Hybrid contact center architecture, and integrations you may have with other third-party solutions. Any entry point or exit point for a third party in your workload is considered the external layer.
+1. **External**: The External layer includes contact points including chat, click-to-call endpoints, and the PSTN for voice calls, integrations you might have with legacy contact center solutions in a Hybrid contact center architecture, and integrations you might have with other third-party solutions. Any entry point or exit point for a third party in your workload is considered the external layer.
 
-   This layer also covers integrations customers may have with other third-party solutions and applications such as CRM systems, work force management (WFM), and reporting and visualization tools and applications, such as Tableau and Kibana. You should consider the following areas when securing the external layer:
+   This layer also covers integrations customers might have with other third-party solutions and applications such as CRM systems, work force management (WFM), and reporting and visualization tools and applications, such as Tableau and Kibana. You should consider the following areas when securing the external layer:
    + You can [create contact filters for repeat and fraudulent contacts](https://aws.amazon.com/blogs/contact-center/how-to-protect-against-spam-calls-for-click-to-dial/) using AWS Lambda to write contact details to DynamoDB from within your flow, including ANI, IP address for click-to-dial and chat endpoints, and any other identifying information to track how many contact requests occur during a given period of time. This approach allows you to query and add contacts to deny lists, automatically disconnecting them if they exceed reasonable levels.
    + ANI Fraud detection solutions using [Connect Customer telephony metadata](connect-attrib-list.md#telephony-call-metadata-attributes) and [partner solutions](https://aws.amazon.com/connect/partners/) can be used to protect against caller ID spoofing.
    + [Connect Customer Voice ID](voice-id.md) and other voice biometric partner solutions can be used to enhance and streamline the authentication process. Active voice biometric authentication allows contacts the option to speak specific phrases and use those for voice signature authentication. Passive voice biometrics allow contacts to register their unique voiceprint and use their voiceprint to authenticate with any voice input that meets sufficient length requirements for authentication.

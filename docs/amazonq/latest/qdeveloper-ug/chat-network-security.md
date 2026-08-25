@@ -5,8 +5,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/chat-networ
 # Chatting about your network security
 <a name="chat-network-security"></a>
 
-****
-
 |  |
 | --- |
 | Chatting about network security is in preview, and is subject to change. |

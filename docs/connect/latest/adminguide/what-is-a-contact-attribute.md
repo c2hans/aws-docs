@@ -33,7 +33,7 @@ Here are some common use cases for where contact attributes are used:
 + Identify which agent is interacting with a customer so that a post call survey can be associated with a contact.
 + Identify the number of contacts in a queue to decide if the contact should be routed to a different queue.
 + Get the corresponding media streaming ARN to store in a database.
-+ Use the customer phone number to identify the status of a customer (for example, are they a member), or the status of their order (shipped, delayed, etc.) to route them to the appropriate queue.
++ Use the customer phone number to identify the status of a customer (for example, are they a member), or the status of their order (shipped, delayed) to route them to the appropriate queue.
 + Based on a customer interaction with a bot, identify the slot (for example, the type of flowers to order) to be used in a flow.
 
 ## Types of contact attributes

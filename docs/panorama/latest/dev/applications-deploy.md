@@ -32,8 +32,6 @@ $ pip3 install --upgrade awscli panoramacli
 ```
 
 To build application images with the AWS Panorama Application CLI, you need Docker. On Linux, `qemu` and related system libraries are required as well. For more information on installing and configuring the AWS Panorama Application CLI, see the README file in the project's GitHub repository.
-
-****
 + [github.com/aws/aws-panorama-cli](https://github.com/aws/aws-panorama-cli)
 
 For instructions on setting up a build environment in Windows with WSL2, see [Setting up a development environment in Windows](applications-devenvwindows.md).

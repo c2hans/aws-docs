@@ -41,6 +41,9 @@ Note that when your query text length is over 4000 characters, STL\_QUERYTEXT on
 | query  | integer | Query ID. The query column can be used to join other system tables and views. |
 | sequence  | integer  | When a single statement contains more than 200 characters, additional rows are logged for that statement. Sequence 0 is the first row, 1 is the second, and so on.  |
 | text  | character(200)  | SQL text, in 200-character increments. This field might contain special characters such as backslash (\\\\) and newline (\\n).  |
+| user\_query\_id  | bigint  | The query identifier of the user-submitted query, as recorded in the query\_id column of [SYS\_QUERY\_TEXT](SYS_QUERY_TEXT.md).  |
+| child\_query\_sequence  | integer  | The sequence number of the rewritten child query under the user query, starting with 1.  |
+| query\_uuid | character(36) | A globally unique identifier (UUID) of the query. |
 
 ## Sample queries
 <a name="r_STL_QUERYTEXT-sample-queries"></a>

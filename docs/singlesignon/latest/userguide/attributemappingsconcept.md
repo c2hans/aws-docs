@@ -18,8 +18,6 @@ IAM Identity Center also manages a set of attributes for you under the **Attribu
 
 The following table lists all external identity provider (IdP) attributes supported and can be mapped to attributes you can use when configuring [Attributes for access control](attributesforaccesscontrol.md) in IAM Identity Center. When using SAML assertions, you can use whichever attributes your IdP supports.
 
-****
-
 | Supported attributes in your IdP |
 | --- |
 | ${path:userName} |
@@ -51,8 +49,6 @@ The following table lists all external identity provider (IdP) attributes suppor
 
 The following table lists the default mappings for user attributes in IAM Identity Center to the user attributes in your Microsoft AD directory. IAM Identity Center only supports the list of attributes in the **User attribute in IAM Identity Center** column.
 
-****
-
 | User attribute in IAM Identity Center  | Maps to this attribute in your Active Directory |
 | --- | --- |
 | displayname | ${displayname} |
@@ -65,8 +61,6 @@ The following table lists the default mappings for user attributes in IAM Identi
 | username | ${userprincipalname} |
 
 \* The email attribute in IAM Identity Center must be unique within the directory.
-
-****
 
 | Group attribute in IAM Identity Center  | Maps to this attribute in your Active Directory |
 | --- | --- |
@@ -84,8 +78,6 @@ The following table lists the default mappings for user attributes in IAM Identi
 <a name="supporteddirectoryattributes"></a>
 
 The following table lists all Microsoft AD directory attributes that are supported and that can be mapped to user attributes in IAM Identity Center.
-
-****
 
 | Supported attributes in your Microsoft AD directory |
 | --- |
@@ -110,8 +102,6 @@ The following table lists all Microsoft AD directory attributes that are support
 <a name="supportedssoattributes"></a>
 
 The following table lists all IAM Identity Center attributes that are supported and that can be mapped to user attributes in your Microsoft AD directory. After you set up your application attribute mappings, you can use these same IAM Identity Center attributes to map to actual attributes used by that application.
-
-****
 
 | Supported attributes in IAM Identity Center for Active Directory |
 | --- |

@@ -31,7 +31,7 @@ For the endpoints supported by each service, see [Service endpoints and quotas](
 
 Specifies an API action for the service. For example, the DynamoDB `CreateTable` action or the Amazon EC2 `DescribeInstances` action.
 
-For the actions supported by each service, see the [Service Authorization Reference](https://docs.aws.amazon.com//service-authorization/latest/reference/reference.html).
+For the actions supported by each service, see the [Service Authorization Reference](https://docs.aws.amazon.com/service-authorization/latest/reference/reference.html).
 
 ## Action parameters
 <a name="parameters"></a>

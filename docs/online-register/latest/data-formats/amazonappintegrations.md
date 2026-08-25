@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon AppIntegrations provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="app-integrations-GetApplication"></a>[GetApplication](https://docs.aws.amazon.com/appintegrations/latest/APIReference/API_GetApplication.html) | View details about Application | Read |

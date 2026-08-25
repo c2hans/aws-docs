@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/ipv6-kms.html
 # Dual-stack endpoint support
 <a name="ipv6-kms"></a>
 
-AWS KMS provides a dual-stack public endpoint that supports both IPv4 and IPv6 clients. A dual-stack endpoint enables clients to communicate with AWS KMS using either IPv4 or IPv6 addresses. For more information on the AWS KMS endpoints, see [AWS Key Management Service endpoints and quotas.](https://docs.aws.amazon.com//general/latest/gr/kms.html)
+AWS KMS provides a dual-stack public endpoint that supports both IPv4 and IPv6 clients. A dual-stack endpoint enables clients to communicate with AWS KMS using either IPv4 or IPv6 addresses. For more information on the AWS KMS endpoints, see [AWS Key Management Service endpoints and quotas.](https://docs.aws.amazon.com/general/latest/gr/kms.html)
 
 The AWS KMS dual-stack public endpoint at `https://kms.{{your-region}}.api.aws` supports both IPv4 and IPv6 clients. AWS KMS is also privately accessible over IPv4 and IPv6 from your virtual private cloud (VPC) using AWS PrivateLink. For more information about creating private interface VPC endpoints for AWS KMS, see [Connect to AWS KMS through a VPC endpoint](kms-vpc-endpoint.md).
 

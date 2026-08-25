@@ -15,6 +15,6 @@ Identity Resolution automatically finds similar profiles and helps you consolida
 
 Each time an Identity Resolution Job runs, it displays metrics on the **Customer Profiles** page. The metrics show the number of profiles it reviewed, the number of match groups found, and the number of profiles consolidated.
 
-Additional charges may apply for enabling Identity Resolution. For more information, see [Connect Customer pricing](https://aws.amazon.com/connect/pricing/).
+Additional charges might apply for enabling Identity Resolution. For more information, see [Connect Customer pricing](https://aws.amazon.com/connect/pricing/).
 
 ![The Connect Customer Customer Profiles page, the Enable Identity Resolution button.](http://docs.aws.amazon.com/connect/latest/adminguide/images/customer-profiles-enable-ir.png)

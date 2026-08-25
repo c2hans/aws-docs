@@ -14,8 +14,6 @@ Create a transit gateway (TGW) route table. Use this change type for multi-accou
 ## Change Type Details
 <a name="ct-3dscwaeyi6cup-DMNc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-3dscwaeyi6cup |

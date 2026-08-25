@@ -107,7 +107,7 @@ To increase the visibility of Amazon Inspector findings, you can use EventBridge
 ### Step 1. Set up an Amazon SNS topic and endpoint
 <a name="findings-managing-eventbridge-tutorial-SNS"></a>
 
-To set up automatic alerts, you must first set up a topic in Amazon Simple Notification Service and add an endpoint. For more information, refer to the [SNS guide](https://docs.aws.amazon.com//sns/latest/dg/sns-getting-started.html).
+To set up automatic alerts, you must first set up a topic in Amazon Simple Notification Service and add an endpoint. For more information, refer to the [SNS guide](https://docs.aws.amazon.com/sns/latest/dg/sns-getting-started.html).
 
 This procedure establishes where you want to send Amazon Inspector findings data. The SNS topic can be added to an EventBridge event rule during or after the creation of the event rule.
 

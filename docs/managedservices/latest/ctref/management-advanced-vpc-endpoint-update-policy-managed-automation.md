@@ -14,8 +14,6 @@ Update the policy for a VPC endpoint. After you update the policy, it takes a fe
 ## Change Type Details
 <a name="ct-128mp7mbxobd0-MAVu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-128mp7mbxobd0 |

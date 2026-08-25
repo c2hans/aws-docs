@@ -15,6 +15,7 @@ Amazon MSK Provisioned clusters offer a wide range of features and capabilities 
 + [Amazon MSK broker sizes](broker-instance-sizes.md)
 + [Storage management for Standard brokers](msk-storage-management.md)
 + [Amazon MSK Provisioned configuration](msk-configuration.md)
++ [Configure custom domain names for your Amazon MSK cluster](custom-domain-names.md)
 + [Intelligent rebalancing for clusters](intelligent-rebalancing.md)
 + [Patching on MSK Provisioned clusters](patching-impact.md)
 + [Broker offline and client failover](troubleshooting-offlinebroker-clientfailover.md)

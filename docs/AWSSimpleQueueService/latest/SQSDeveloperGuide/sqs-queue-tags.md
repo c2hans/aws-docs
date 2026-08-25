@@ -13,8 +13,6 @@ You can use cost allocation tags to organize your AWS bill to reflect your own c
 
 Each tag consists of a key-value pair that you define. For example, you can easily identify your *production* and *testing* queues if you tag your queues as follows:
 
-****
-
 | Queue | Key | Value |
 | --- | --- | --- |
 | MyQueueA | QueueType | Production |

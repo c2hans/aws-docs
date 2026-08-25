@@ -14,8 +14,6 @@ Manages AWS Network Firewall egress rules by converting simple parameters (sourc
 ## Change Type Details
 <a name="ct-2lo1hs6ks7chl-MMNm-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2lo1hs6ks7chl |

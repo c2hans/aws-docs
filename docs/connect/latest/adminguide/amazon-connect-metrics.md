@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/connect/latest/adminguide/amazon-connect-metrics.html
 ---
 
-# Metrics, dashboards, and reports in Connect Customer
+# Metrics, dashboards, and insights in Connect Customer
 <a name="amazon-connect-metrics"></a>
 
 In Connect Customer, data about contacts are captured in contact records. This data can include the amount of time a contact spends in each state: customer on hold, customer in queue, agent interaction time.
@@ -19,6 +19,7 @@ For detailed information about the activity of agents in your contact center, us
 + [Custom metric primitives](metric-primitive-definitions.md)
 + [Assign permissions](dashboard-required-permissions.md)
 + [Dashboards](dashboards.md)
++ [Manager assistant](manager-assistant.md)
 + [Real-time metrics reports](real-time-metrics-reports.md)
 + [Historical metrics reports](historical-metrics.md)
 + [Login/Logout reports for agents in Connect Customer](login-logout-reports.md)

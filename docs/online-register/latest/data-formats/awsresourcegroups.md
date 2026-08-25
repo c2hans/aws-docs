@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsr
 
 AWS Resource Groups provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="resource-groups-GetAccountSettings"></a>[GetAccountSettings](https://docs.aws.amazon.com/ARG/latest/APIReference/API_GetAccountSettings.html) | Get the current status of optional features in Resource Groups | Read |

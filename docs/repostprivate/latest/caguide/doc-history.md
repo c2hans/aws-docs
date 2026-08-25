@@ -19,6 +19,6 @@ The following table describes the documentation releases for AWS re:Post Private
 | [Guide structure review and improvements](#doc-history) | The structure of the guide was reviewed and improvements were made to improve the customer experience related to finding information for specific scenarios. | September 24, 2024 |
 | [Update](#doc-history) | Added US East (N. Virginia), Asia Pacific (Sydney), Canada (Central), and Europe (Ireland) to supported Regions | May 10, 2024 |
 | [Update](#doc-history) | Added Asia Pacific (Singapore) to supported Regions | March 6, 2024 |
-| [Update](#doc-history) | Added information to indicate that re:Post Private [supports only organization intances of IAM Identity Center](https://docs.aws.amazon.com//repostprivate/latest/caguide/onboard-iam-identity-center.html) | January 16, 2024 |
-| [New resources](#doc-history) | Added documentation for [AWS managed policies for AWS re:Post Private](https://docs.aws.amazon.com//repostprivate/latest/caguide/security-with-iam-managed-policy.html) | November 26, 2023 |
+| [Update](#doc-history) | Added information to indicate that re:Post Private [supports only organization intances of IAM Identity Center](https://docs.aws.amazon.com/repostprivate/latest/caguide/onboard-iam-identity-center.html) | January 16, 2024 |
+| [New resources](#doc-history) | Added documentation for [AWS managed policies for AWS re:Post Private](https://docs.aws.amazon.com/repostprivate/latest/caguide/security-with-iam-managed-policy.html) | November 26, 2023 |
 | [Initial release](#doc-history) | Initial release of the re:Post Private Console Administration Guide | November 26, 2023 |

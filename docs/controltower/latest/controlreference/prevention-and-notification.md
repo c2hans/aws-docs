@@ -8,13 +8,13 @@ source_url: https://docs.aws.amazon.com/controltower/latest/controlreference/pre
 You can enable certain controls and subscribe to certain SNS notifications that help you maintain compliance in AWS Control Tower.
 
 **Note**
-AWS Control Tower will no longer be sending drift notifications to SNS topic for all customers on LZ4.0\+. For customers on LZ4.0\+ follow the [EventBridge Notification setup](https://docs.aws.amazon.com//controltower/latest/userguide/governance-drift.html#eventbridge-creation).
+AWS Control Tower will no longer be sending drift notifications to SNS topic for all customers on LZ4.0\+. For customers on LZ4.0\+ follow the [EventBridge Notification setup](https://docs.aws.amazon.com/controltower/latest/userguide/governance-drift.html#eventbridge-creation).
 
 **Drift monitoring protection**
 
 AWS Control Tower provides passive and active methods of drift monitoring protection for preventive controls.
 + **Passive protection:** AWS Organizations monitors and logs preventive control (SCP) drift.
-+ **Active protection:** The AWS Control Tower [drift monitoring service](https://docs.aws.amazon.com//controltower/latest/userguide/drift.html#scp-invariance-scans) actively scans the preventive control SCPs, on a regular basis.
++ **Active protection:** The AWS Control Tower [drift monitoring service](https://docs.aws.amazon.com/controltower/latest/userguide/drift.html#scp-invariance-scans) actively scans the preventive control SCPs, on a regular basis.
 
 AWS Control Tower notifies you by means of SNS messaging, if drift is detected.
 
@@ -37,7 +37,7 @@ For information about how to receive appropriate drift and control compliance no
 
 **The `aws-controltower-AllConfigNotifications` topic:**
 + The `AWS::Config::DeliveryChannel` resource is configured to send notifications about configuration changes to this topic.
-+ The possible types of notifications that AWS Config can send are defined in the [**Amazon SNS Topic** section](https://docs.aws.amazon.com//config/latest/developerguide/how-does-config-work.html#delivery-channel) of the AWS Config documentation.
++ The possible types of notifications that AWS Config can send are defined in the [**Amazon SNS Topic** section](https://docs.aws.amazon.com/config/latest/developerguide/how-does-config-work.html#delivery-channel) of the AWS Config documentation.
 + The `AWS::CloudTrail::Trail` resource is configured to send notifications of log file delivery to this topic.
 + You may subscribe to this topic.
 

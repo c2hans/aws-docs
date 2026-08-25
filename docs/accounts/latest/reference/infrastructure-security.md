@@ -5,6 +5,8 @@ source_url: https://docs.aws.amazon.com/accounts/latest/reference/infrastructure
 # Infrastructure security in AWS Account Management
 <a name="infrastructure-security"></a>
 
+The following information is relevant for all AWS accounts.
+
 As managed services, AWS services running in your AWS account are protected by the AWS global network security. For information about AWS security services and how AWS protects infrastructure, see [AWS Cloud Security](https://aws.amazon.com/security/). To design your AWS environment using the best practices for infrastructure security, see [Infrastructure Protection](https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/infrastructure-protection.html) in *Security Pillar AWS Well‐Architected Framework*.
 
 You use AWS published API calls to access account settings through the network. Clients must support the following:

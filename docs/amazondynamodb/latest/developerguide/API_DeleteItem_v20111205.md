@@ -41,8 +41,6 @@ content-type: application/x-amz-json-1.0
 }
 ```
 
-****
-
 |  Name  |  Description  |  Required |
 | --- | --- | --- |
 |  TableName  | The name of the table containing the item to delete.<br />Type: String |  Yes  |
@@ -74,8 +72,6 @@ Date: Tue, 12 Jul 2011 21:31:03 GMT
 }
 ```
 
-****
-
 |  Name  |  Description  |
 | --- | --- |
 |  Attributes  | If the `ReturnValues` parameter is provided as `ALL_OLD` in the request, DynamoDB returns an array of attribute name-value pairs (essentially, the deleted item). Otherwise, the response contains an empty set. <br />Type: Array of attribute name-value pairs. |
@@ -83,8 +79,6 @@ Date: Tue, 12 Jul 2011 21:31:03 GMT
 
 ## Special errors
 <a name="API_DeleteItem_SpecialErrors"></a>
-
-****
 
 |  Error  |  Description  |
 | --- | --- |

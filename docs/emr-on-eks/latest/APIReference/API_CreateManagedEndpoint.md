@@ -44,6 +44,7 @@ Content-type: application/json
          },
          "persistentAppUI": "{{string}}",
          "s3MonitoringConfiguration": {
+            "encryptionKeyArn": "{{string}}",
             "logUri": "{{string}}"
          }
       }
@@ -51,6 +52,7 @@ Content-type: application/json
    "executionRoleArn": "{{string}}",
    "name": "{{string}}",
    "releaseLabel": "{{string}}",
+   "sessionIdleTimeoutInMinutes": {{number}},
    "tags": {
       "{{string}}" : "{{string}}"
    },
@@ -114,6 +116,11 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
 Pattern: `[\.\-_/A-Za-z0-9]+`
 Required: Yes
+
+ ** [sessionIdleTimeoutInMinutes](#API_CreateManagedEndpoint_RequestSyntax) **   <a name="emroneks-CreateManagedEndpoint-request-sessionIdleTimeoutInMinutes"></a>
+The number of idle minutes before the managed endpoint session times out.
+Type: Integer
+Required: No
 
  ** [tags](#API_CreateManagedEndpoint_RequestSyntax) **   <a name="emroneks-CreateManagedEndpoint-request-tags"></a>
 The tags of the managed endpoint.

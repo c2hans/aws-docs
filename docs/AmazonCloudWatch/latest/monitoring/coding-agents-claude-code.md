@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/coding-agents-claude-code.html
 ---
 
-# Set up OpenTelemetry for Claude Code
+# Set up Claude Code OpenTelemetry metrics for Amazon CloudWatch
 <a name="coding-agents-claude-code"></a>
 
 Claude Code emits OpenTelemetry (OTel) metrics about token usage, sessions, code edits, tool calls, and cost. When you send these metrics to Amazon CloudWatch, they populate the Claude Code tab of the Coding Agent Insights dashboards. For more information about the dashboards, see [Coding Agent Insights](coding-agents-insights.md).
@@ -11,7 +11,7 @@ Claude Code configures its OTel exporter through environment variables. Two setu
 
 ## Choose a setup path
 <a name="coding-agents-claude-code-paths"></a>
-+ **Bearer token** — Claude Code sends OTLP metrics directly to the CloudWatch native OTLP endpoint, authenticating with an `Authorization: Bearer` header. Identity and organizational attributes are supplied through the `OTEL_RESOURCE_ATTRIBUTES` environment variable. This path needs no collector and is the fastest way for an individual developer or a small team to get started. See [Set up Claude Code with a bearer token](coding-agents-claude-code-bearer-token.md).
++ **Bearer token** — Claude Code sends OTLP metrics directly to the CloudWatch native OTLP endpoint, authenticating with an `Authorization: Bearer` header. Identity and organizational attributes are supplied through the `OTEL_RESOURCE_ATTRIBUTES` environment variable. This path needs no collector and is the fastest way for an individual developer or a small team to get started. See [Bearer token](coding-agents-claude-code-bearer-token.md).
 + **Enterprise rollout with Claude apps gateway** — For organizations that need centralized control over developer access, identity federation, and telemetry collection. Deploy a self-hosted gateway that sits between your developers' Claude Code clients and your model provider. Developers sign in with your corporate IdP instead of holding API keys or cloud credentials. The gateway holds the upstream credential, enforces model access and managed settings by IdP group, and relays usage telemetry to your observability stack. Supports Amazon Bedrock, Claude Platform on AWS, Google Cloud, and Microsoft Foundry as upstreams. See [Set up Claude Code with the Claude apps gateway](coding-agents-claude-code-gateway.md).
 
 **Note**
@@ -21,5 +21,5 @@ For the complete, continually updated guidance, including deployment templates a
 
 **Topics**
 + [Choose a setup path](#coding-agents-claude-code-paths)
-+ [Set up Claude Code with a bearer token](coding-agents-claude-code-bearer-token.md)
++ [Set up Claude Code metrics in Amazon CloudWatch with a bearer token](coding-agents-claude-code-bearer-token.md)
 + [Set up Claude Code with the Claude apps gateway](coding-agents-claude-code-gateway.md)

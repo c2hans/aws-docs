@@ -32,9 +32,9 @@ Lambda managed instances and OCI image function types are not supported by Lambd
 <a name="w2aac17c43c19b9b5"></a>
 
 Before you begin, the following prerequisites must be met.
-+ You must have valid AWS credentials configured in the AWS Toolkit. For additional details about installing the AWS Toolkit and configuring your credentials, see the [Getting started](https://docs.aws.amazon.com//toolkit-for-vscode/latest/userguide/setting-up.html) topic in this user guide.
-+ A Lambda function has been deployed to your AWS account. For details on deploying a Lambda function, see the [Create your first Lambda function](https://docs.aws.amazon.com//lambda/latest/dg/getting-started.html) topic in the *AWS Lambda* Developer Guide.
-+ You must have appropriate AWS Identity and Access Management (IAM) policy and permissions to debug your function. For additional details on Lambda permissions, see the [AWS managed policies for AWS Lambda](https://docs.aws.amazon.com//lambda/latest/dg/security-iam-awsmanpol.html) topic in the *AWS Lambda* Developer Guide. The following is an example of a policy that contains the minimum required permissions for working with Lambda remote debugging in the AWS Toolkit.
++ You must have valid AWS credentials configured in the AWS Toolkit. For additional details about installing the AWS Toolkit and configuring your credentials, see the [Getting started](https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/setting-up.html) topic in this user guide.
++ A Lambda function has been deployed to your AWS account. For details on deploying a Lambda function, see the [Create your first Lambda function](https://docs.aws.amazon.com/lambda/latest/dg/getting-started.html) topic in the *AWS Lambda* Developer Guide.
++ You must have appropriate AWS Identity and Access Management (IAM) policy and permissions to debug your function. For additional details on Lambda permissions, see the [AWS managed policies for AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/security-iam-awsmanpol.html) topic in the *AWS Lambda* Developer Guide. The following is an example of a policy that contains the minimum required permissions for working with Lambda remote debugging in the AWS Toolkit.
 **Note**
 Remote debugging is enabled through AWS AWS IoT Secure Tunneling. This allows your local debugger to establish a secure connection to the Lambda runtime environment.
 
@@ -228,7 +228,7 @@ There are two options to resolve the code-signing configuration issue.
 
 Update the code-signing configuration by setting `UntrustedArtifactOnDeployment : Warn`, then re-enable it back to `Enforced` after the debugging process is complete.
 
-For more information, see the [UpdateCodeSigningConfig](https://docs.aws.amazon.com//lambda/latest/api/API_UpdateCodeSigningConfig.html) reference in the *AWS Lambda API Reference*.
+For more information, see the [UpdateCodeSigningConfig](https://docs.aws.amazon.com/lambda/latest/api/API_UpdateCodeSigningConfig.html) reference in the *AWS Lambda API Reference*.
 
 #### Using a signed debug layer
 <a name="troubleshooting-code-signing-configuration-signed-debug-layer"></a>
@@ -290,7 +290,7 @@ The following is a list of supported regions.
 ### Lambda RequestEntityTooLargeException
 <a name="troubleshooting-storage-limit"></a>
 
-Lambda functions have a 5-layer limit and a 250MB combined limit for function code and all attached layers. The remote debugging layer is approximately 40MB, which may cause your function to exceed this limit if you have a large function package or multiple layers. For additional details, see the [Lambda: InvalidParameterValueException or RequestEntityTooLargeException](https://docs.aws.amazon.com//lambda/latest/dg/troubleshooting-deployment.html#troubleshooting-deployment-InvalidParameterValueException1) topic section in the *AWS Lambda Developer Guide*.
+Lambda functions have a 5-layer limit and a 250MB combined limit for function code and all attached layers. The remote debugging layer is approximately 40MB, which may cause your function to exceed this limit if you have a large function package or multiple layers. For additional details, see the [Lambda: InvalidParameterValueException or RequestEntityTooLargeException](https://docs.aws.amazon.com/lambda/latest/dg/troubleshooting-deployment.html#troubleshooting-deployment-InvalidParameterValueException1) topic section in the *AWS Lambda Developer Guide*.
 
 The following list describes ways to troubleshoot and correct this error.
 + **Reduce function size**: Optimize your function code and remove unnecessary dependencies.

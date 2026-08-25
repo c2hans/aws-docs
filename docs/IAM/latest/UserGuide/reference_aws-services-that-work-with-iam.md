@@ -525,7 +525,7 @@ Devices connected to AWS IoT are authenticated by using X.509 certificates or us
 ### AWS Lambda
 <a name="swwiam_footnotes_lambda"></a>
 
-Lambda supports attribute-based access control (ABAC) for functions, event source mappings, and code signing configurations. Layers are not supported. For more information, see [Using attribute-based access control in Lambda](https://docs.aws.amazon.com//lambda/latest/dg/attribute-based-access-control.html).
+Lambda supports attribute-based access control (ABAC) for functions, event source mappings, and code signing configurations. Layers are not supported. For more information, see [Using attribute-based access control in Lambda](https://docs.aws.amazon.com/lambda/latest/dg/attribute-based-access-control.html).
 
 Lambda doesn't have service-linked roles, but Lambda@Edge does. For more information, see [Service-Linked Roles for Lambda@Edge](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/lambda-edge-permissions.html#using-service-linked-roles) in the *Amazon CloudFront Developer Guide*.
 

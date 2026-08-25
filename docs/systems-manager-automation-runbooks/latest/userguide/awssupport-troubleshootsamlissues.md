@@ -89,7 +89,7 @@ Example Policy:
 
 Follow these steps to configure the automation:
 
-1. Before using this runbook, you need to capture and store a Base64-encoded SAML response (txt file) in an S3 bucket. Instructions for capturing SAML responses can be found in [this document](https://docs.aws.amazon.com//IAM/latest/UserGuide/troubleshoot_saml_view-saml-response.html)
+1. Before using this runbook, you need to capture and store a Base64-encoded SAML response (txt file) in an S3 bucket. Instructions for capturing SAML responses can be found in [this document](https://docs.aws.amazon.com/IAM/latest/UserGuide/troubleshoot_saml_view-saml-response.html)
 
 1. Navigate to [`AWSSupport-TroubleshootSAMLIssues`](https://console.aws.amazon.com/systems-manager/documents/AWSSupport-TroubleshootSAMLIssues/description) in Systems Manager under Documents.
 
@@ -157,6 +157,6 @@ Follow these steps to configure the automation:
 
 Systems Manager Automation
 + [Run this Automation (console)](https://console.aws.amazon.com/systems-manager/automation/execute/AWSSupport-TroubleshootSAMLIssues)
-+ [Run an automation](https://docs.aws.amazon.com//systems-manager/latest/userguide/automation-working-executing.html)
-+ [Setting up an Automation](https://docs.aws.amazon.com//systems-manager/latest/userguide/automation-setup.html)
++ [Run an automation](https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-working-executing.html)
++ [Setting up an Automation](https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-setup.html)
 + [Support Automation Workflows landing page](https://aws.amazon.com/premiumsupport/technology/saw/)

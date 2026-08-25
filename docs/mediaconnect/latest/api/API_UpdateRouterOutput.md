@@ -16,6 +16,9 @@ Content-type: application/json
 
 {
    "configuration": { ... },
+   "fabricConfiguration": {
+      "recoveryLatencyMode": "{{string}}"
+   },
    "maintenanceConfiguration": { ... },
    "maximumBitrate": {{number}},
    "name": "{{string}}",
@@ -43,6 +46,11 @@ The request accepts the following data in JSON format.
 The updated configuration settings for the router output. Changing the type of the configuration is not supported.
 Type: [RouterOutputConfiguration](API_RouterOutputConfiguration.md) object
  **Note: **This object is a Union. Only one member of this object can be specified or returned.
+Required: No
+
+ ** [fabricConfiguration](#API_UpdateRouterOutput_RequestSyntax) **   <a name="mediaconnect-UpdateRouterOutput-request-fabricConfiguration"></a>
+The updated fabric configuration settings for the router output. You cannot update the fabric configuration while the output has an active route. You must unroute the output before updating the fabric configuration.
+Type: [FabricConfiguration](API_FabricConfiguration.md) object
 Required: No
 
  ** [maintenanceConfiguration](#API_UpdateRouterOutput_RequestSyntax) **   <a name="mediaconnect-UpdateRouterOutput-request-maintenanceConfiguration"></a>
@@ -87,6 +95,9 @@ Content-type: application/json
       "availabilityZone": "string",
       "configuration": { ... },
       "createdAt": "string",
+      "fabricConfiguration": {
+         "recoveryLatencyMode": "string"
+      },
       "id": "string",
       "ipAddress": "string",
       "maintenanceConfiguration": { ... },

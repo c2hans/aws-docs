@@ -49,8 +49,6 @@ You can configure notifications to be sent when the state changes for:
 **Note**
 Events emitted by EventBridge contain the `detail-type` parameter, which is converted to `detailType` when events are processed.
 
-****
-
 - **CodePipeline Pipeline Execution State Change**
   - **State:** CANCELED / **Description:** The pipeline execution was canceled because the pipeline structure was updated.
   - **State:** FAILED / **Description:** The pipeline execution was not completed successfully.

@@ -29,6 +29,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::Glue::SchemaVersion](aws-resource-glue-schemaversion.md)
 + [AWS::Glue::SchemaVersionMetadata](aws-resource-glue-schemaversionmetadata.md)
 + [AWS::Glue::SecurityConfiguration](aws-resource-glue-securityconfiguration.md)
++ [AWS::Glue::Session](aws-resource-glue-session.md)
 + [AWS::Glue::Table](aws-resource-glue-table.md)
 + [AWS::Glue::TableOptimizer](aws-resource-glue-tableoptimizer.md)
 + [AWS::Glue::TableVersion](aws-resource-glue-tableversion.md)

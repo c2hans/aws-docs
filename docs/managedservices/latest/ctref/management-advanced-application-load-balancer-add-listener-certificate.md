@@ -14,8 +14,6 @@ Add a certificate to the specified Application Load Balancer (ALB) listener. Use
 ## Change Type Details
 <a name="ct-3g6fq83nxg1a7-MAAa-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-3g6fq83nxg1a7 |

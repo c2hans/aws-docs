@@ -364,8 +364,6 @@ The output from the preceding **quorum token-sign list-quorum-values** command s
 
 Each service type is further broken down into a qualifying service name, which contains a specific set of quorum supported service operations that can be performed.
 
-****
-
 | Service name | Service type | Service operations |
 | --- | --- | --- |
 | user | Admin |  + user create<br />+ user delete<br />+ user change-password<br />+ user change-mfa  |

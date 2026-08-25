@@ -11,8 +11,6 @@ The following provides a sample mapping between Spain Esquema Nacional de Seguri
 
 This sample conformance pack template contains mappings to controls within the Spain ENS Low framework, as last updated on 2020/10/23.
 
-****
-
 | Control ID  | AWS Config Rule  | Guidance  |
 | --- | --- | --- |
 | Anexo II 4.1.2.a); b); c) | [dynamodb-table-encrypted-kms](https://docs.aws.amazon.com/config/latest/developerguide/dynamodb-table-encrypted-kms.html) | Ensure that encryption is enabled for your Amazon DynamoDB tables. Because sensitive data can exist at rest in these tables, enable encryption at rest to help protect that data. By default, DynamoDB tables are encrypted with an AWS owned customer master key (CMK). |

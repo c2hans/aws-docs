@@ -9,7 +9,6 @@ Follow these instructions to download NoSQL Workbench and DynamoDB local for Ama
 
 **To download NoSQL Workbench and DynamoDB local**
 + Download the appropriate version of NoSQL Workbench for your operating system.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/workbench.settingup.html)
 
 **Note**

@@ -12,8 +12,6 @@ You can use your Amazon ECR private repositories to host container images and ar
 
 The following table shows the IAM role to use, for each launch type, that provides the required permissions for your tasks to pull from an Amazon ECR private repository. Amazon ECS provides managed IAM policies that include the required permissions.
 
-****
-
 | Launch type | IAM role | AWS managed IAM policy |
 | --- | --- | --- |
 | Amazon ECS on Amazon EC2 instances | Use the container instance IAM role, which is associated with the Amazon EC2 instance registered to your Amazon ECS cluster. For more information, see [Container instance IAM role](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/instance_IAM_role.html) in the *Amazon Elastic Container Service Developer Guide*. | `AmazonEC2ContainerServiceforEC2Role`<br />For more information, see [AmazonEC2ContainerServiceforEC2Role](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/security-iam-awsmanpol.html#security-iam-awsmanpol-AmazonEC2ContainerServiceforEC2Role) in the *Amazon Elastic Container Service Developer Guide* |

@@ -32,12 +32,12 @@ This chapter provides the details of various resilience checks performed by AWS 
 ## Amazon Elastic File System
 <a name="resilience-check-efs"></a>
 
-This section lists all the resilience checks and recommendations that are specific to Amazon Elastic File System. For more information about Amazon Elastic File System, see the [Amazon Elastic File System documentation](https://docs.aws.amazon.com//efs).
+This section lists all the resilience checks and recommendations that are specific to Amazon Elastic File System. For more information about Amazon Elastic File System, see the [Amazon Elastic File System documentation](https://docs.aws.amazon.com/efs).
 
 ### Filesystem type
 <a name="one-az-deployment"></a>
 
-AWS Resilience Hub checks filesystem type: Regional or One Zone. The filesystem type affects its resiliency in the event of Infrastructure or AZ disruptions. For more information about filesystem types, see [Availability and durability of Amazon EFS file systems](https://docs.aws.amazon.com//efs/latest/ug/features.html#availability-durability).
+AWS Resilience Hub checks filesystem type: Regional or One Zone. The filesystem type affects its resiliency in the event of Infrastructure or AZ disruptions. For more information about filesystem types, see [Availability and durability of Amazon EFS file systems](https://docs.aws.amazon.com/efs/latest/ug/features.html#availability-durability).
 
 ### Filesystem Backup
 <a name="filesystem-backup"></a>
@@ -52,7 +52,7 @@ AWS Resilience Hub checks if an in-Region or cross-Region Amazon EFS data replic
 ## Amazon Relational Database Service and Amazon Aurora
 <a name="resilience-check-rds"></a>
 
-This section lists all the resilience checks and recommendations that are specific for Amazon Relational Database Service and Amazon Aurora. For more information about Amazon Relational Database Service and Amazon Aurora, see [Amazon Relational Database Service documentation](https://docs.aws.amazon.com//rds/).
+This section lists all the resilience checks and recommendations that are specific for Amazon Relational Database Service and Amazon Aurora. For more information about Amazon Relational Database Service and Amazon Aurora, see [Amazon Relational Database Service documentation](https://docs.aws.amazon.com/rds/).
 
 ### Single-AZ deployment
 <a name="one-az-deployment-rds"></a>
@@ -95,7 +95,7 @@ AWS Resilience Hub checks RTO and RPO targets defined in the resiliency policy d
 ## Amazon Simple Storage Service
 <a name="resilience-check-s3"></a>
 
-This section lists all the resilience checks and recommendations that are specific for Amazon Simple Storage Service (Amazon S3). For more information about Amazon S3, see [Amazon S3 documentation](https://docs.aws.amazon.com//s3).
+This section lists all the resilience checks and recommendations that are specific for Amazon Simple Storage Service (Amazon S3). For more information about Amazon S3, see [Amazon S3 documentation](https://docs.aws.amazon.com/s3).
 
 ### Versioning
 <a name="versioning-s3"></a>
@@ -123,7 +123,7 @@ AWS Resilience Hub checks if a Same Region Replication (SRR) and Cross Region Re
 ## Amazon DynamoDB
 <a name="resilience-check-ddb"></a>
 
-This section lists all the resilience checks and recommendations that are specific for Amazon DynamoDB. For more information about Amazon DynamoDB, see [Amazon DynamoDB documentation](https://docs.aws.amazon.com//dynamodb).
+This section lists all the resilience checks and recommendations that are specific for Amazon DynamoDB. For more information about Amazon DynamoDB, see [Amazon DynamoDB documentation](https://docs.aws.amazon.com/dynamodb).
 
 ### Scheduled backup
 <a name="scheduled-bckp-ddb"></a>
@@ -143,7 +143,7 @@ AWS Resilience Hub checks if the deployed Amazon DynamoDB table is defined as a 
 ## Amazon Elastic Compute Cloud
 <a name="resilience-checks-ec2"></a>
 
-This section lists all the resilience checks and recommendations that are specific for Amazon Elastic Compute Cloud. For more information about Amazon Elastic Compute Cloud, see [Amazon Elastic Compute Cloud documentation](https://docs.aws.amazon.com//ec2).
+This section lists all the resilience checks and recommendations that are specific for Amazon Elastic Compute Cloud. For more information about Amazon Elastic Compute Cloud, see [Amazon Elastic Compute Cloud documentation](https://docs.aws.amazon.com/ec2).
 
 ### Stateful instance
 <a name="stateful-instance-ec2"></a>
@@ -169,7 +169,7 @@ AWS Resilience Hub identifies Amazon EC2 Fleet and verifies if it is defined as 
 ## Amazon EBS
 <a name="resilience-checks-ebs"></a>
 
-This section lists all the resilience checks and recommendations that are specific to Amazon EBS. For more information about Amazon EBS, see [Amazon EBS documentation](https://docs.aws.amazon.com//ebs/).
+This section lists all the resilience checks and recommendations that are specific to Amazon EBS. For more information about Amazon EBS, see [Amazon EBS documentation](https://docs.aws.amazon.com/ebs/).
 
 ### Scheduled backup
 <a name="scheduled-backup-ebs"></a>
@@ -192,7 +192,7 @@ AWS Resilience Hub identifies an Amazon EBS volume is considered a stateful volu
 ## AWS Lambda
 <a name="resilience-checks-lambda"></a>
 
-This section lists all the resilience checks and recommendations that are specific to AWS Lambda. For more information about AWS Lambda, see [AWS Lambda documentation](https://docs.aws.amazon.com//lambda/).
+This section lists all the resilience checks and recommendations that are specific to AWS Lambda. For more information about AWS Lambda, see [AWS Lambda documentation](https://docs.aws.amazon.com/lambda/).
 
 ### Customer Amazon VPC Access
 <a name="customer-vpc-access-lambda"></a>
@@ -207,7 +207,7 @@ AWS Resilience Hub checks if an AWS Lambda function has a dead-letter queue (DLQ
 ## Amazon Elastic Kubernetes Service
 <a name="resilience-checks-eks"></a>
 
-This section lists all the resilience checks and recommendations that are specific to Amazon Elastic Kubernetes Service (Amazon EKS). For more information about Amazon EKS, see [Amazon EKS documentation](https://docs.aws.amazon.com//eks/).
+This section lists all the resilience checks and recommendations that are specific to Amazon Elastic Kubernetes Service (Amazon EKS). For more information about Amazon EKS, see [Amazon EKS documentation](https://docs.aws.amazon.com/eks/).
 
 ### Multi-AZ deployment
 <a name="multi-az-eks"></a>
@@ -233,7 +233,7 @@ AWS Resilience Hub checks if the following best practices are used for deploymen
 ## Amazon Simple Notification Service
 <a name="resilience-checks-sns"></a>
 
-This section lists all the resilience checks and recommendations that are specific to Amazon Simple Notification Service (Amazon SNS). For more information about Amazon SNS, see [Amazon SNS documentation](https://docs.aws.amazon.com//sns/).
+This section lists all the resilience checks and recommendations that are specific to Amazon Simple Notification Service (Amazon SNS). For more information about Amazon SNS, see [Amazon SNS documentation](https://docs.aws.amazon.com/sns/).
 
 ### Topic subscriptions
 <a name="topic-subscriptions-sns"></a>
@@ -243,7 +243,7 @@ AWS Resilience Hub checks if Amazon SNS topic has at least 1 subscription attach
 ## Amazon Simple Queue Service
 <a name="resilience-checks-sqs"></a>
 
-This section lists all the resilience checks and recommendations that are specific to Amazon Simple Queue Service (Amazon SQS). For more information about Amazon SQS, see [Amazon SQS documentation](https://docs.aws.amazon.com//sqs/).
+This section lists all the resilience checks and recommendations that are specific to Amazon Simple Queue Service (Amazon SQS). For more information about Amazon SQS, see [Amazon SQS documentation](https://docs.aws.amazon.com/sqs/).
 
 ### Dead-letter queue
 <a name="dlq-sqs"></a>
@@ -253,7 +253,7 @@ AWS Resilience Hub checks if the Amazon SQS queue has a DLQ associated to it to 
 ## Amazon Elastic Container Service
 <a name="resilience-checks-ecs"></a>
 
-This section lists all the resilience checks and recommendations that are specific to Amazon Elastic Container Service (Amazon ECS). For more information about Amazon ECS, see [Amazon ECS documentation](https://docs.aws.amazon.com//ecs/).
+This section lists all the resilience checks and recommendations that are specific to Amazon Elastic Container Service (Amazon ECS). For more information about Amazon ECS, see [Amazon ECS documentation](https://docs.aws.amazon.com/ecs/).
 
 ### Multi-AZ deployment
 <a name="multi-az-ecs"></a>
@@ -263,7 +263,7 @@ AWS Resilience Hub checks if Amazon ECS tasks or services are running in multipl
 ## Elastic Load Balancing
 <a name="resilience-checks-elb"></a>
 
-This section lists all the resilience checks and recommendations that are specific to Elastic Load Balancing. For more information about Elastic Load Balancing, see [Elastic Load Balancing documentation](https://docs.aws.amazon.com//elasticloadbalancing/).
+This section lists all the resilience checks and recommendations that are specific to Elastic Load Balancing. For more information about Elastic Load Balancing, see [Elastic Load Balancing documentation](https://docs.aws.amazon.com/elasticloadbalancing/).
 
 ### Multi-AZ deployment
 <a name="multi-az-deployment-elb"></a>
@@ -275,7 +275,7 @@ An additional Elastic Load Balancing in a different Region is required if your p
 ## Amazon API Gateway
 <a name="resilience-checks-abp"></a>
 
-This section lists all the resilience checks and recommendations that are specific to Amazon API Gateway. For more information about Amazon API Gateway, see [Amazon API Gateway documentation](https://docs.aws.amazon.com//apigateway).
+This section lists all the resilience checks and recommendations that are specific to Amazon API Gateway. For more information about Amazon API Gateway, see [Amazon API Gateway documentation](https://docs.aws.amazon.com/apigateway).
 
 ### Cross-Region deployment
 <a name="cross-region-deployment-abp"></a>
@@ -290,7 +290,7 @@ AWS Resilience Hub checks if your API is defined as private within Amazon API Ga
 ## Amazon DocumentDB
 <a name="resilience-checks-docdb"></a>
 
-This section lists all the checks and recommendations that are specific to Amazon DocumentDB. For more information about Amazon DocumentDB, see [Amazon DocumentDB documentation](https://docs.aws.amazon.com//documentdb/).
+This section lists all the checks and recommendations that are specific to Amazon DocumentDB. For more information about Amazon DocumentDB, see [Amazon DocumentDB documentation](https://docs.aws.amazon.com/documentdb/).
 
 ### Multi-AZ deployment
 <a name="multi-az-deployment-ddb"></a>
@@ -310,7 +310,7 @@ AWS Resilience Hub checks if manual snapshots are regularly created for an Amazo
 ## NAT Gateway
 <a name="resilience-checks-nat-gateway"></a>
 
-This section lists all the checks and recommendations that are specific to NAT Gateway. For more information about NAT Gateways, see [NAT Gateways](https://docs.aws.amazon.com//vpc/latest/userguide/vpc-nat-gateway.html).
+This section lists all the checks and recommendations that are specific to NAT Gateway. For more information about NAT Gateways, see [NAT Gateways](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-gateway.html).
 
 ### Multi-AZ deployment
 <a name="multi-az-deployment-nat"></a>
@@ -320,7 +320,7 @@ AWS Resilience Hub checks if NAT Gateway is deployed in multiple AZs. An additio
 ## Amazon Route 53
 <a name="resilience-checks-r53"></a>
 
-This section lists all the checks and recommendations that are specific to Amazon Route 53. For more information about Amazon Route 53, see [Amazon Route 53 documentation](https://docs.aws.amazon.com//route53/).
+This section lists all the checks and recommendations that are specific to Amazon Route 53. For more information about Amazon Route 53, see [Amazon Route 53 documentation](https://docs.aws.amazon.com/route53/).
 
 ### Multi-AZ deployment
 <a name="multi-az-deployment-r53"></a>
@@ -330,7 +330,7 @@ AWS Resilience Hub checks if Amazon Route 53 hosted zone record is defined with
 ## Amazon Application Recovery Controller (ARC)
 <a name="resilience-checks-r53arc"></a>
 
-This section lists all the checks and recommendations that are specific to Amazon Application Recovery Controller (ARC) (ARC). For more information about ARC, see [ARC documentation](https://docs.aws.amazon.com//amazonarc/).
+This section lists all the checks and recommendations that are specific to Amazon Application Recovery Controller (ARC) (ARC). For more information about ARC, see [ARC documentation](https://docs.aws.amazon.com/amazonarc/).
 
 ### Multi-AZ deployment
 <a name="multi-az-deployment-r53arc"></a>
@@ -340,12 +340,12 @@ AWS Resilience Hub checks if similar resources are deployed in multiple Regions 
 ## Amazon FSx for Windows File Server
 <a name="resilience-checks-fsx"></a>
 
-This section lists all the checks and recommendations that are specific to Amazon FSx for Windows File Server. For more information about Amazon FSx for Windows File Server, see [Amazon FSx for Windows File Server documentation](https://docs.aws.amazon.com//fsx/).
+This section lists all the checks and recommendations that are specific to Amazon FSx for Windows File Server. For more information about Amazon FSx for Windows File Server, see [Amazon FSx for Windows File Server documentation](https://docs.aws.amazon.com/fsx/).
 
 ### Filesystem type
 <a name="filesystem-type-fsx"></a>
 
-AWS Resilience Hub checks the filesystem type: `Regional` or `One Zone`. Filesystem type affects its resiliency in the event of Infrastructure or AZ disruptions. For more information about filesystem types, see [Amazon EFS](https://docs.aws.amazon.com//efs/latest/ug/availability-durability.html).
+AWS Resilience Hub checks the filesystem type: `Regional` or `One Zone`. Filesystem type affects its resiliency in the event of Infrastructure or AZ disruptions. For more information about filesystem types, see [Amazon EFS](https://docs.aws.amazon.com/efs/latest/ug/availability-durability.html).
 
 ### Filesystem Backup
 <a name="filesystem-backup-fsx"></a>
@@ -362,7 +362,7 @@ AWS DataSync scheduled data replication task can improve estimated workload RTO 
 ## AWS Step Functions
 <a name="resilience-checks-step-func"></a>
 
-This section lists all the checks and recommendations that are specific to AWS Step Functions. For more information about AWS Step Functions, see [AWS Step Functions documentation](https://docs.aws.amazon.com//step-functions/).
+This section lists all the checks and recommendations that are specific to AWS Step Functions. For more information about AWS Step Functions, see [AWS Step Functions documentation](https://docs.aws.amazon.com/step-functions/).
 
 ### Versioning and alias
 <a name="versioning-alias-step-func"></a>
@@ -379,7 +379,7 @@ AWS Resilience Hub checks if AWS Step Functions workflow of the same workflow ty
 
 This section lists all the checks and recommendations that are specific to Amazon ElastiCache (Redis OSS).
 
-For more information about Amazon ElastiCache (Redis OSS), see [Amazon ElastiCache documentation](https://docs.aws.amazon.com//elasticache/).
+For more information about Amazon ElastiCache (Redis OSS), see [Amazon ElastiCache documentation](https://docs.aws.amazon.com/elasticache/).
 
 ### Single-AZ deployment
 <a name="single-az-elstc-cache-srvrless"></a>

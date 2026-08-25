@@ -8,10 +8,10 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/howtodeleg
 Assigning single sign-on access to the management account using the IAM Identity Center console is a privileged action. By default, only an AWS account root user or a user who has the **AWSSSOMasterAccountAdministrator** and **IAMFullAccess** AWS managed policies attached, can assign single sign-on access to the management account. The **AWSSSOMasterAccountAdministrator** and **IAMFullAccess** policies manage single sign-on access to the management account within an AWS Organizations organization.
 
 Alternatively, you can use AWS CLI to create, attach policies to, and assign permission sets. The following lists the commands for each step:
-+ To create a permission set: [create-permission-set](https://docs.aws.amazon.com//cli/latest/reference/sso-admin/create-permission-set.html)
-+ To attach AWS Managed Policy to a permission set: [attach-managed-policy-to-permission-set](https://docs.aws.amazon.com//cli/latest/reference/sso-admin/attach-managed-policy-to-permission-set.html)
-+ To attach customer managed policy to a permission set: [attach-customer-managed-policy-to-permission-set](https://docs.aws.amazon.com//cli/latest/reference/sso-admin/attach-customer-managed-policy-reference-to-permission-set.html)
-+ To assign a permission set to a principal: [create-account-assignment](https://docs.aws.amazon.com//cli/latest/reference/sso-admin/create-account-assignment.html)
++ To create a permission set: [create-permission-set](https://docs.aws.amazon.com/cli/latest/reference/sso-admin/create-permission-set.html)
++ To attach AWS Managed Policy to a permission set: [attach-managed-policy-to-permission-set](https://docs.aws.amazon.com/cli/latest/reference/sso-admin/attach-managed-policy-to-permission-set.html)
++ To attach customer managed policy to a permission set: [attach-customer-managed-policy-to-permission-set](https://docs.aws.amazon.com/cli/latest/reference/sso-admin/attach-customer-managed-policy-reference-to-permission-set.html)
++ To assign a permission set to a principal: [create-account-assignment](https://docs.aws.amazon.com/cli/latest/reference/sso-admin/create-account-assignment.html)
 
 Use the following steps to delegate permissions to manage single sign-on access to users and groups in your directory.
 

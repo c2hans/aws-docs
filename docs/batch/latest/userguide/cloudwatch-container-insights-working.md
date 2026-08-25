@@ -7,6 +7,9 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/cloudwatch-contai
 
 Complete the following steps to turn on Container Insights for AWS Batch compute environments.
 
+------
+#### [ AWS Management Console ]
+
 1. Open the [AWS Batch console](https://console.aws.amazon.com/batch/home).
 
 1. Choose **Environments**.
@@ -17,14 +20,96 @@ Complete the following steps to turn on Container Insights for AWS Batch compute
 **Tip**
 You can select a default interval to aggregate the metrics or create a custom interval.
 
-By default, the following metrics are displayed. For a full list of Amazon ECS Container Insights metrics, see [Amazon ECS Container Insights Metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Container-Insights-metrics-ECS.html) in the *Amazon CloudWatch User Guide*.
-+ **`TaskCount`** – The number of AWS Batch jobs running in the cluster. In the AWS Batch console, this metric is displayed as "Job Count" because AWS Batch jobs run as Amazon ECS tasks.
-+ **`ContainerInstanceCount`** – The number of Amazon Elastic Compute Cloud instances that run the Amazon ECS agent and are registered in the compute environment.
-+ **`MemoryReserved`** – The memory that's reserved by compute environment jobs. This metric is collected only for the jobs that have a defined memory reservation in their job definition.
-+ **`MemoryUtilized`** – The memory that's being used by compute environment jobs. This metric is collected only for jobs that have a defined memory reservation in their job definition.
-+ **`CpuReserved`** – The CPU units that are reserved by compute environment jobs. This metric is collected only for jobs that have a defined CPU reservation in their job definition.
-+ **`CpuUtilized`** – The CPU units used by jobs in the compute environment. This metric is collected only for jobs that have a defined CPU reservation in their job definition.
-+ **`NetworkRxBytes`** - The number of bytes that are received. This metric is available only for containers in jobs that use the `awsvpc` or bridge network modes.
-+ **`NetworkTxBytes`** – The number of bytes that are transmitted. This metric is available only for containers in jobs that use the `awsvpc` or bridge network modes.
-+ **`StorageReadBytes`** – The number of bytes that are read from storage.
-+ **`StorageWriteBytes`** – The number of bytes that are written to storage.
+------
+#### [ AWS CLI ]
+
+**Enable Container Insights when creating a compute environment**
+
+Use the `--ecs-settings` parameter with `create-compute-environment` to enable Container Insights on a new compute environment.
+
+```
+$ aws batch create-compute-environment \
+    --compute-environment-name {{my-compute-env}} \
+    --type MANAGED \
+    --state ENABLED \
+    --ecs-settings containerInsights=ENHANCED \
+    --compute-resources type=FARGATE,maxvCpus=256,subnets={{subnet-a123456b}},securityGroupIds={{sg-a12b3456}}
+```
+
+Valid values for `containerInsights` are `ENABLED`, `ENHANCED`, and `DISABLED`.
+
+**Enable Container Insights on an existing compute environment**
+
+Use `update-compute-environment` to enable or change Container Insights on an existing compute environment.
+
+```
+$ aws batch update-compute-environment \
+    --compute-environment {{my-compute-env}} \
+    --ecs-settings containerInsights=ENHANCED
+```
+
+**Verify the Container Insights setting**
+
+Use `describe-compute-environments` to verify the current setting.
+
+```
+$ aws batch describe-compute-environments \
+    --compute-environments {{my-compute-env}} \
+    --query "computeEnvironments[0].ecsSettings"
+```
+
+The following shows the output when Container Insights is enabled.
+
+```
+{
+    "containerInsights": "ENHANCED"
+}
+```
+
+**Note**
+If Container Insights has never been set on the compute environment, the `ecsSettings` field is absent from the response.
+
+------
+#### [ API ]
+
+Use the `ecsSettings` parameter in your [CreateComputeEnvironment](https://docs.aws.amazon.com/batch/latest/APIReference/API_CreateComputeEnvironment.html) or [UpdateComputeEnvironment](https://docs.aws.amazon.com/batch/latest/APIReference/API_UpdateComputeEnvironment.html) request.
+
+**Create a compute environment with Container Insights**
+
+Include `ecsSettings` in the request body:
+
+```
+{
+    "computeEnvironmentName": "{{my-compute-env}}",
+    "type": "MANAGED",
+    "state": "ENABLED",
+    "ecsSettings": {
+        "containerInsights": "ENHANCED"
+    },
+    "computeResources": {
+        "type": "FARGATE",
+        "maxvCpus": 256,
+        "subnets": ["{{subnet-a123456b}}"],
+        "securityGroupIds": ["{{sg-a12b3456}}"]
+    }
+}
+```
+
+**Update Container Insights on an existing compute environment**
+
+```
+{
+    "computeEnvironment": "{{my-compute-env}}",
+    "ecsSettings": {
+        "containerInsights": "ENHANCED"
+    }
+}
+```
+
+For more information, see [CreateComputeEnvironment](https://docs.aws.amazon.com/batch/latest/APIReference/API_CreateComputeEnvironment.html) and [UpdateComputeEnvironment](https://docs.aws.amazon.com/batch/latest/APIReference/API_UpdateComputeEnvironment.html) in the *AWS Batch API Reference*.
+
+------
+
+**Important**
+After you set a Container Insights value on a compute environment, you cannot revert to the default (unset) behavior, where the Container Insights setting is managed outside of AWS Batch. To change the Container Insights mode, you must call `UpdateComputeEnvironment` with the new value.
+This also means that if you set this property in a CloudFormation template, a stack rollback cannot revert the setting to its previous unset state.

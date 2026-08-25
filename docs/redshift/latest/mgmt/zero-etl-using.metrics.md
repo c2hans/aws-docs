@@ -12,6 +12,8 @@ You can use the metrics in the Amazon Redshift console and Amazon CloudWatch to 
 Depending on the source data of zero-ETL integrations, Amazon Redshift provides metrics on the integration details page for an integration. Possible metrics include the following types:
 + From the **Integration metrics** tab, graphs of the following are available:
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/mgmt/zero-etl-using.metrics.html)
+**Note**
+For integrations that replicate multiple databases, the `IntegrationLatestDetectedChange` and `IntegrationLatestAppliedChange` metrics report the minimum value across all databases. This represents the least recently updated database. Per-database values are available in the `latest_detected_change_time` and `latest_applied_change_time` columns of [SVV\_INTEGRATION](https://docs.aws.amazon.com/redshift/latest/dg/r_SVV_INTEGRATION.html).
 + From the **Table statistics** tab, you can view the list of tables that are currently active or have errors. The statistics on this tab are as follows (depending on source type):
   + **Schema name** – The name of the schema that the table is in.
   + **Table name** – The name of the table in the source database.

@@ -8,9 +8,9 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/assi
 You can assign an existing IAM role to an AWS Managed Microsoft AD user or group. To do this, make sure you have completed the following.
 
 **Prerequisites**
-+ [ Create an AWS Managed Microsoft AD](https://docs.aws.amazon.com//directoryservice/latest/admin-guide/ms_ad_getting_started.html#ms_ad_getting_started_create_directory).
-+ [Create an IAM user](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_users_create.html) or [create a IAM group](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_groups_create.html).
-+ [Create a role](https://docs.aws.amazon.com//directoryservice/latest/admin-guide/create_role.html) that has a trust relationship with Directory Service. For existing IAM roles, you will need to [edit the trust relationship for an existing role](https://docs.aws.amazon.com//directoryservice/latest/admin-guide/edit_trust.html).
++ [ Create an AWS Managed Microsoft AD](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_ad_getting_started.html#ms_ad_getting_started_create_directory).
++ [Create an IAM user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html) or [create a IAM group](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_groups_create.html).
++ [Create a role](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/create_role.html) that has a trust relationship with Directory Service. For existing IAM roles, you will need to [edit the trust relationship for an existing role](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/edit_trust.html).
 
 **Important**
 Access for AWS Managed Microsoft AD users in nested groups within your directory are not supported. Members of the parent group have console access, but members of child groups do not.

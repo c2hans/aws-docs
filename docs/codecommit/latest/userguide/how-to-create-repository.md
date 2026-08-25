@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-creat
 # Create an AWS CodeCommit repository
 <a name="how-to-create-repository"></a>
 
-Use the AWS CodeCommit console or the AWS Command Line Interface (AWS CLI) to create an empty CodeCommit repository. To add tags to a respository after you create it, see [Add a tag to a repository](how-to-tag-repository-add.md).
+Use the AWS CodeCommit console or the AWS Command Line Interface (AWS CLI) to create an empty CodeCommit repository. To add tags to a repository after you create it, see [Add a tag to a repository](how-to-tag-repository-add.md).
 
 These instructions assume that you have completed the steps in [Setting up ](setting-up.md).
 
@@ -23,7 +23,7 @@ Depending on your usage, you might be charged for creating or accessing a reposi
 
 1. Open the CodeCommit console at [https://console.aws.amazon.com/codesuite/codecommit/home](https://console.aws.amazon.com/codesuite/codecommit/home).
 
-1. In the region selector, choose the AWS Region where you want to create the repository. For more information, see [Regions and Git connection endpoints](regions.md).
+1. In the Region selector, choose the AWS Region where you want to create the repository. For more information, see [Regions and Git connection endpoints](regions.md).
 
 1. On the **Repositories** page, choose **Create repository**.
 

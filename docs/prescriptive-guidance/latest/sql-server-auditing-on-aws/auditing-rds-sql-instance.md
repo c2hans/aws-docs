@@ -11,7 +11,10 @@ This section provides information about auditing options for SQL Server on Amazo
 <a name="rds-prerequisites"></a>
 + An Amazon Simple Storage Service (Amazon S3) bucket for storing the audit files
 + An AWS Identity and Access Management (IAM) [role for accessing the S3 bucket](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.SQLServer.Options.Audit.html#Appendix.SQLServer.Options.Audit.IAM)
-+ A database login with the `ALTER ANY SERVER AUDIT` or `CONTROL SERVER` permission
++ Ensure database login has the `ALTER ANY SERVER AUDIT` permission
++ An option group with the `SQLSERVER_AUDIT` option
++ (Optional) The `PUBLISH_TO_CLOUDWATCH` option in the option group, to stream audit logs to Amazon CloudWatch
++ (Optional) The `ENABLE_COMPRESSION` option in the option group, to compress audit logs
 
 ## Supported versions
 <a name="rds-versions"></a>
@@ -26,6 +29,13 @@ C2 audit mode is a parameter in the Amazon RDS for SQL Server DB parameter group
 
 **Important**
 Microsoft plans to remove C2 audit mode in a future version of SQL Server. We recommend that you avoid using this feature.
+
+## Audit file storage options
+<a name="audit-file-storage-options"></a>
+
+Amazon RDS for SQL Server stores audit log files locally and can send them to an Amazon S3 bucket, with an option to also forward logs to Amazon CloudWatch.
++ When you enable the audit on the instance, Amazon RDS creates the `.sqlaudit` files under the local server path `D:\rdsdbdata\SQLAudit`.
++ Amazon RDS sends audit log files to an Amazon S3 bucket by default, with the option to also forward them to Amazon CloudWatch (log streams) — or to both destinations simultaneously.
 
 ## Creating and viewing audits
 <a name="rds-creating-viewing"></a>

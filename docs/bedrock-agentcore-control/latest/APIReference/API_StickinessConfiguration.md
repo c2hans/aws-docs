@@ -16,6 +16,13 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
 Required: Yes
 
+ ** compositeIdentifier **   <a name="bedrockagentcorecontrol-Type-StickinessConfiguration-compositeIdentifier"></a>
+Additional headers to include in session affinity routing. When set, requests are only considered part of the same session if both the `identifier` and all composite identifier values match.
+Type: Array of strings
+Array Members: Minimum number of 1 item. Maximum number of 5 items.
+Length Constraints: Minimum length of 1. Maximum length of 256.
+Required: No
+
  ** timeout **   <a name="bedrockagentcorecontrol-Type-StickinessConfiguration-timeout"></a>
 The session stickiness timeout, in seconds. After this duration of inactivity, the session affinity expires. Valid values range from 1 to 86400.
 Type: Integer

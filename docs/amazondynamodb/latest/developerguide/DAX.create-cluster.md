@@ -45,8 +45,6 @@ The `iam:CreateRole`, `iam:CreatePolicy`, `iam:AttachRolePolicy`, and `iam:PassR
 
 If your user policy is missing the `iam:CreateRole`, `iam:CreatePolicy`, and `iam:AttachPolicy` permissions, you will get error messages. The following table lists these messages and describes how to correct the problems.
 
-****
-
 | If you see this error message... | Do the following: |
 | --- | --- |
 | User: arn:aws:iam::{{accountID}}:user/{{userName}} is not authorized to perform: iam:CreateRole on resource: arn:aws:iam::{{accountID}}:role/service-role/{{roleName}}  | Add iam:CreateRole to your user policy. |

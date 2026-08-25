@@ -15,7 +15,7 @@ Following are the possible category outcomes when a rule or category is evaluate
 
 1. **The contact analysis was completed but a specific category was not evaluated**. When a category fails to be evaluated, it doesn't mean the category doesn't apply to the contact (based on its criteria), but rather that conversational analytics completed the contact analysis without evaluating this specific category.
 
-The following image shows that failed categories are denoted with their dashed borders, transparent backgrounds, error icons, and failed prefixes. When you hover over a failed category, details about why the category failed to evaluate are displayed.
+The following image shows that failed categories are denoted with their dashed borders, transparent backgrounds, error icons, and failed prefixes. When you pause on a failed category, details about why the category failed to evaluate are displayed.
 
 ![The failed categories on the Contact details page.](http://docs.aws.amazon.com/connect/latest/adminguide/images/failed-categories1.png)
 
@@ -25,7 +25,7 @@ These failed categories only exist from rules with the semantic match condition.
 
 1. **Failed safety guidelines**: Category processing failed because it did not satisfy security and quality guardrails.
 
-We recommend adding more conditions to your semantic match rules to narrow down the number of contacts it may apply to. This will help avoid quota exceeded failures.
+We recommend adding more conditions to your semantic match rules to narrow down the number of contacts it might apply to. This will help avoid quota exceeded failures.
 
 ## Conversational analytics post-contact analysis output customer S3 file
 <a name="failed-categories-output-file"></a>

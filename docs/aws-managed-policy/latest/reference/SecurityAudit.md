@@ -18,13 +18,13 @@ You can attach `SecurityAudit` to your users, groups, and roles.
 <a name="SecurityAudit-details"></a>
 + **Type**: AWS managed policy
 + **Creation time**: February 06, 2015, 18:41 UTC
-+ **Edited time:** July 21, 2026, 17:42 UTC
++ **Edited time:** August 17, 2026, 15:27 UTC
 + **ARN**: `arn:aws:iam::aws:policy/SecurityAudit`
 
 ## Policy version
 <a name="SecurityAudit-version"></a>
 
-**Policy version:** v91 (default)
+**Policy version:** v92 (default)
 
 The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request.
 
@@ -108,6 +108,7 @@ The policy's default version is the version that defines the permissions for the
         "backup:ListTags",
         "batch:DescribeComputeEnvironments",
         "batch:DescribeJobDefinitions",
+        "bedrock:GetAgent",
         "bedrock:GetAgentAlias",
         "bedrock:GetAgentKnowledgeBase",
         "bedrock:GetCustomModel",
@@ -255,6 +256,7 @@ The policy's default version is the version that defines the permissions for the
         "cloudformation:DescribeStack*",
         "cloudformation:GetStackPolicy",
         "cloudformation:GetTemplate",
+        "cloudformation:ListStackResources",
         "cloudformation:ListStack*",
         "cloudfront:Get*",
         "cloudfront:List*",
@@ -492,6 +494,7 @@ The policy's default version is the version that defines the permissions for the
         "glue:GetDatabases",
         "glue:GetDataCatalogEncryptionSettings",
         "glue:GetDevEndpoints",
+        "glue:GetJobBookmark",
         "glue:GetJobs",
         "glue:GetResourcePolicy",
         "glue:GetSecurityConfiguration",
@@ -602,6 +605,7 @@ The policy's default version is the version that defines the permissions for the
         "lambda:GetFunctionConcurrency",
         "lambda:GetFunctionConfiguration",
         "lambda:GetFunctionEventInvokeConfig",
+        "lambda:GetFunctionUrlConfig",
         "lambda:GetLayerVersionPolicy",
         "lambda:GetPolicy",
         "lambda:GetRuntimeManagementConfig",
@@ -947,6 +951,7 @@ The policy's default version is the version that defines the permissions for the
         "sso-directory:ListExternalIdPConfigurationsForDirectory",
         "states:DescribeStateMachine",
         "states:ListStateMachines",
+        "states:ListTagsForResource",
         "storagegateway:DescribeBandwidthRateLimit",
         "storagegateway:DescribeCache",
         "storagegateway:DescribeCachediSCSIVolumes",
@@ -1085,5 +1090,5 @@ The policy's default version is the version that defines the permissions for the
 <a name="SecurityAudit-learn-more"></a>
 + [Create a permission set using AWS managed policies in IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/howtocreatepermissionset.html)
 + [Adding and removing IAM identity permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html)
-+ [Understand versioning for IAM policies](https://docs.aws.amazon.com//IAM/latest/UserGuide/access_policies_managed-versioning.html)
-+ [Get started with AWS managed policies and move toward least-privilege permissions](https://docs.aws.amazon.com//IAM/latest/UserGuide/best-practices.html#bp-use-aws-defined-policies)
++ [Understand versioning for IAM policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-versioning.html)
++ [Get started with AWS managed policies and move toward least-privilege permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#bp-use-aws-defined-policies)

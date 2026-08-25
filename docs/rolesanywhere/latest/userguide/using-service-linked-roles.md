@@ -131,8 +131,6 @@ If IAM Roles Anywhere is using the role when you try to delete the resources, th
 
 IAM Roles Anywhere supports using service-linked roles in all of the regions where the service is available. For more information, see [AWS regions and endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html).
 
-****
-
 | Region name | Region identity | Support in IAM Roles Anywhere |
 | --- | --- | --- |
 | US East (N. Virginia) | us-east-1 | Yes |

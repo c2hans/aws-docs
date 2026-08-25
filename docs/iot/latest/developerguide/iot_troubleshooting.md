@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/iot_troublesho
 <a name="iot_troubleshooting"></a>
 
 **Help us improve this topic**
- [Let us know what would help make it better](https://docs.aws.amazon.com//forms/aws-doc-feedback?hidden_service_name=IoT%20Docs&topic_url=http://docs.aws.amazon.com/en_us/iot/latest/developerguide/iot_troubleshooting.html)
+ [Let us know what would help make it better](https://docs.aws.amazon.com/forms/aws-doc-feedback?hidden_service_name=IoT%20Docs&topic_url=http://docs.aws.amazon.com/en_us/iot/latest/developerguide/iot_troubleshooting.html)
 
 The following information might help you troubleshoot common issues in AWS IoT.
 

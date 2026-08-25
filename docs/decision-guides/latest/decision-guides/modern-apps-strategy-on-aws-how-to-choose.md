@@ -127,8 +127,6 @@ AWS offers different container options, such as Amazon ECS, serverless container
 
 The following comparison table can help you determine your approach based on your workload requirements. You might choose pieces of both approaches, or have different teams that use different approaches. It is not uncommon to see very large organizations have departments with different strategies.
 
-****
-
 | Modern application approach | When would you use it? | What workload is it optimized for? | Serverless services |
 | --- |--- |--- |--- |
 | Serverless | Use when AWS managed services and tools are your first choice, such as AWS Lambda, AWS App Runner, and Amazon ECS. | Optimized for enabling developers to focus solely on writing code without the need to manage or provision servers, minimizing operational overhead. | [Amazon ECS](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html)<br />[AWS App Runner](https://docs.aws.amazon.com/apprunner/latest/dg/what-is-apprunner.html)<br />[AWS Fargate](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Fargate.html)<br />[AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html) |

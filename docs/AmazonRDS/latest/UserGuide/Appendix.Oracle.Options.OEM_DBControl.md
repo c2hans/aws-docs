@@ -20,8 +20,6 @@ Oracle Enterprise Manager Database Express (EM Express) is desupported in Oracle
 
 Amazon RDS supports the following settings for the OEM option.
 
-****
-
 | Option setting | Valid values | Description |
 | --- | --- | --- |
 | **Port** | An integer value | The port on the RDS for Oracle DB instance that listens for EM Express. The default is 5500. |

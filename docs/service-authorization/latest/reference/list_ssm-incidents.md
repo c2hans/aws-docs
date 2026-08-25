@@ -24,8 +24,6 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_ssm-incidents-actions-as-permissions).
 
-****
-
 - **   BatchGetIncidentFindings  **
   - **IAM action:**  [ssm-incidents:BatchGetIncidentFindings](#list_ssm-incidents-action-BatchGetIncidentFindings)
   - **Condition key:**
@@ -212,8 +210,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
 <a name="list_ssm-incidents-actions-as-permissions"></a>
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
-
-****
 
 - **   [BatchGetIncidentFindings](https://docs.aws.amazon.com/incident-manager/latest/APIReference/API_BatchGetIncidentFindings.html)  **
   - **Description:** Grants permission to retrieve details about specified findings for an incident record
@@ -409,8 +405,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
 
-****
-
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
 |  [incident-record](https://docs.aws.amazon.com/incident-manager/latest/userguide/tracking-details.html)  | arn:${Partition}:ssm-incidents::${Account}:incident-record/${ResponsePlan}/${IncidentRecord} | [aws:ResourceTag/${TagKey}](#list_ssm-incidents-aws_ResourceTag___TagKey_) |
@@ -421,8 +415,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_ssm-incidents-policy-keys"></a>
 
 AWS Systems Manager Incident Manager defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

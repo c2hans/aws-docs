@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/table-dictionary-cu
 
 Reservation columns contain data about a reservation that applies to the line item.
 
-****
-
 | Column name | Description | Data type |
 | --- | --- | --- |
 | reservation\_amortized\_upfront\_cost\_for\_usage | The initial upfront payment for all upfront RIs and partial upfront RIs amortized for usage time. The value is equal to: RIAmortizedUpfrontFeeForBillingPeriod \* The normalized usage amount for DiscountedUsage line items / The normalized usage amount for the RIFee. Because there are no upfront payments for no upfront RIs, the value for a no upfront RI is 0. We don't provide this value for Dedicated Host reservations at this time. The change will be made in a future update. | double |

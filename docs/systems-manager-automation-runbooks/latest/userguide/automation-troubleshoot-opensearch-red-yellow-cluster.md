@@ -7,16 +7,16 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 
  **Description**
 
- `AWSSupport-TroubleshootOpenSearchRedYellowCluster` automation runbook is used to identify the cause for [red](https://docs.aws.amazon.com//opensearch-service/latest/developerguide/handling-errors.html#handling-errors-red-cluster-status) or [yellow](https://docs.aws.amazon.com//opensearch-service/latest/developerguide/handling-errors.html#handling-errors-yellow-cluster-status) cluster health status and guide you through changing the cluster back to green.
+ `AWSSupport-TroubleshootOpenSearchRedYellowCluster` automation runbook is used to identify the cause for [red](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/handling-errors.html#handling-errors-red-cluster-status) or [yellow](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/handling-errors.html#handling-errors-yellow-cluster-status) cluster health status and guide you through changing the cluster back to green.
 
  **How does it work?**
 
  The runbook `AWSSupport-TroubleshootOpenSearchRedYellowCluster` helps you troubleshoot the cause of red or yellow cluster and provides the next steps to resolve this issue by analyzing the cluster configuration and resource utilization.
 
  The runbook performs the following steps:
-+  Calls the [DescribeDomain](https://docs.aws.amazon.com//opensearch-service/latest/APIReference/API_DescribeDomain.html) API against the target domain to get the cluster configuration.
-+  Checks if the OpenSearch Service domain is internet-based (public) or [Amazon Virtual Private Cloud (VPC)-based](https://docs.aws.amazon.com//opensearch-service/latest/developerguide/vpc.html).
-+  Creates a public or [Amazon VPC-based](https://docs.aws.amazon.com//lambda/latest/dg/foundation-networking.html) AWS Lambda function depending on the cluster configuration. Note: The Lambda function contains the troubleshooting code that run the OpenSearch Service APIs against the cluster to determine why the cluster is in red or yellow state.
++  Calls the [DescribeDomain](https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_DescribeDomain.html) API against the target domain to get the cluster configuration.
++  Checks if the OpenSearch Service domain is internet-based (public) or [Amazon Virtual Private Cloud (VPC)-based](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/vpc.html).
++  Creates a public or [Amazon VPC-based](https://docs.aws.amazon.com/lambda/latest/dg/foundation-networking.html) AWS Lambda function depending on the cluster configuration. Note: The Lambda function contains the troubleshooting code that run the OpenSearch Service APIs against the cluster to determine why the cluster is in red or yellow state.
 +  Deletes the Lambda function.
 +  Displays the checks performed and the next recommended steps to resolve the red or yellow cluster issue.
 
@@ -66,10 +66,10 @@ The `LambdaExecutionRole` parameter requires the following actions to successful
 
 Overview of `LambdaExecutionRole` policy:
 
- The following is an example of a Lambda function's execution role (AWS Identity and Access Management (IAM) role) that grants the function permission to access AWS services and resources required by this runbook. For more information, see [Lambda execution role](https://docs.aws.amazon.com//lambda/latest/dg/lambda-intro-execution-role.html).
+ The following is an example of a Lambda function's execution role (AWS Identity and Access Management (IAM) role) that grants the function permission to access AWS services and resources required by this runbook. For more information, see [Lambda execution role](https://docs.aws.amazon.com/lambda/latest/dg/lambda-intro-execution-role.html).
 
 **Note**
- The `ec2:DescribeNetworkInterfaces`, `ec2:CreateNetworkInterface`, and `ec2:DeleteNetworkInterface` are only required if your OpenSearch Service cluster is [Amazon VPC-based](https://docs.aws.amazon.com//opensearch-service/latest/developerguide/vpc.html) to allow the Lambda function to create and manage the Amazon VPC network interfaces. For more information, see [Connecting outbound networking to resources in a Amazon VPC](https://docs.aws.amazon.com//lambda/latest/dg/configuration-vpc.html#vpc-permissions) and [Lambda execution role](https://docs.aws.amazon.com//lambda/latest/dg/lambda-intro-execution-role.html).
+ The `ec2:DescribeNetworkInterfaces`, `ec2:CreateNetworkInterface`, and `ec2:DeleteNetworkInterface` are only required if your OpenSearch Service cluster is [Amazon VPC-based](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/vpc.html) to allow the Lambda function to create and manage the Amazon VPC network interfaces. For more information, see [Connecting outbound networking to resources in a Amazon VPC](https://docs.aws.amazon.com/lambda/latest/dg/configuration-vpc.html#vpc-permissions) and [Lambda execution role](https://docs.aws.amazon.com/lambda/latest/dg/lambda-intro-execution-role.html).
 
 ------
 #### [ JSON ]
@@ -136,7 +136,7 @@ Follow these steps to configure the automation:
      The utilization threshold percentage used to compare the CPUUtilization and JVMMemoryPressure metrics. Default value is 80.
 ![Input parameters form with fields for AutomationAssumeRole, LambdaExecutionRole, DomainName, and UtilizationThreshold.](http://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/images/awssupport-troubleshoot-opensearch-red-yellow-cluster_input_paramters.png)
 
-1. If you have enabled [fine-grained access control](https://docs.aws.amazon.com//opensearch-service/latest/developerguide/fgac.html) on an OpenSearch Service cluster, make sure that the `LambdaExecutionRole` role arn is mapped to a role with at least `cluster_monitor` permission.
+1. If you have enabled [fine-grained access control](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/fgac.html) on an OpenSearch Service cluster, make sure that the `LambdaExecutionRole` role arn is mapped to a role with at least `cluster_monitor` permission.
 ![Permissions tab showing Cluster permissions section with cluster_monitor permission selected.](http://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/images/awssupport-troubleshoot-opensearch-red-yellow-cluster_permissions.png)
 ![Backend roles field showing an AWS IAM role ARN with Remove button and Map button.](http://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/images/awssupport-troubleshoot-opensearch-red-yellow-cluster_backend_roles.png)
 
@@ -176,9 +176,9 @@ Follow these steps to configure the automation:
 
 Systems Manager Automation
 + [Run this Automation (console)](https://console.aws.amazon.com/systems-manager/automation/execute/AWSSupport-TroubleshootOpenSearchRedYellowCluster)
-+ [Run an automation](https://docs.aws.amazon.com//systems-manager/latest/userguide/automation-working-executing.html)
-+ [Setting up an Automation](https://docs.aws.amazon.com//systems-manager/latest/userguide/automation-setup.html)
++ [Run an automation](https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-working-executing.html)
++ [Setting up an Automation](https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-setup.html)
 + [Support Automation Workflows landing page](https://aws.amazon.com/premiumsupport/technology/saw/)
 
 AWS service documentation
-+ Refer to[Troubleshooting Amazon OpenSearch Service](https://docs.aws.amazon.com//opensearch-service/latest/developerguide/handling-errors.html) for more information
++ Refer to[Troubleshooting Amazon OpenSearch Service](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/handling-errors.html) for more information

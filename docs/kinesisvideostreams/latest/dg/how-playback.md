@@ -13,7 +13,7 @@ You can view a Kinesis video stream using the following methods:
 + **MPEG-DASH** – [Dynamic Adaptive Streaming over HTTP (DASH)](https://en.wikipedia.org/wiki/Dynamic_Adaptive_Streaming_over_HTTP), also known as MPEG-DASH, is an adaptive bitrate streaming protocol that enables high quality streaming of media content over the internet delivered from conventional HTTP web servers.
 
   You can use MPEG-DASH for live playback. Latency is typically between 3–5 seconds, but it can be between 1–10 seconds, depending on the use case, player, and network conditions. You can use a third-party player (such as [dash.js](https://github.com/Dash-Industry-Forum/dash.js/wiki) or [Google Shaka Player](https://github.com/google/shaka-player)) to display the video stream by providing the MPEG-DASH streaming session URL, either programmatically or manually.
-+ **GetClip** – You can use the `GetClip` API to download a clip (in an MP4 file) containing the archived, on-demand media from the specified video stream over the specified time range. For more information, see the [GetClip](https://docs.aws.amazon.com//kinesisvideostreams/latest/dg/API_reader_GetClip.html) API Reference.
++ **GetClip** – You can use the `GetClip` API to download a clip (in an MP4 file) containing the archived, on-demand media from the specified video stream over the specified time range. For more information, see the [GetClip](https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/API_reader_GetClip.html) API Reference.
 
 **Topics**
 + [Video playback track requirements](video-playback-requirements.md)

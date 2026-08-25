@@ -18,7 +18,7 @@ Traditional local testing with Selenium involves tests that start a WebDriver co
 When you use Selenium Server (or Selenium Grid), you create a `RemoteWebDriver` instance that acts as a stand-in for your browser-specific `WebDriver`.
 
 **Important**
-We recommend that you follow the standard security advice of granting least privilege—that is, granting only the permissions required to perform a task—when you configure the AWS SDK and AWS CLI with credentials. For more information, see [AWS Security Credentials](https://docs.aws.amazon.com//general/latest/gr/aws-security-credentials.html) and [IAM Best Practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html).
+We recommend that you follow the standard security advice of granting least privilege—that is, granting only the permissions required to perform a task—when you configure the AWS SDK and AWS CLI with credentials. For more information, see [AWS Security Credentials](https://docs.aws.amazon.com/general/latest/gr/aws-security-credentials.html) and [IAM Best Practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html).
 
 **To migrate**
 
@@ -80,7 +80,7 @@ To update your project configuration, see [Configuring your project to use Amazo
 
 1. Modify your environment to include your AWS access and secret keys. The steps vary depending on your configuration, but involve setting two environment variables:
 **Important**
-We recommend that you follow the standard security advice of granting least privilege—that is, granting only the permissions required to perform a task—when you configure the AWS SDK and AWS CLI with credentials. For more information, see [AWS Security Credentials](https://docs.aws.amazon.com//general/latest/gr/aws-security-credentials.html) and [IAM Best Practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html).
+We recommend that you follow the standard security advice of granting least privilege—that is, granting only the permissions required to perform a task—when you configure the AWS SDK and AWS CLI with credentials. For more information, see [AWS Security Credentials](https://docs.aws.amazon.com/general/latest/gr/aws-security-credentials.html) and [IAM Best Practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html).
 
    ```
    AWS_ACCESS_KEY_ID={{AKIAIOSFODNN7EXAMPLE}}
@@ -88,8 +88,6 @@ We recommend that you follow the standard security advice of granting least priv
    ```
 
 1.
-
-****
 
    Instead of creating a `WebDriver` for your browser (for example, `GeckoDriver`) create a `RemoteWebDriver` and get a URL from the desktop browser testing feature.
 

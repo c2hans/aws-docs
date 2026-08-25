@@ -15,8 +15,6 @@ Set the `credential_source` parameter in your AWS profile configuration to the a
 ## Authentication type
 <a name="odbc-v2-driver-iam-profile-authentication-type"></a>
 
-****
-
 | **Connection string name** | **Parameter type** | **Default value** | **Connection string example** |
 | --- | --- | --- | --- |
 | AuthenticationType | Required | IAM Credentials | AuthenticationType=IAM Profile; |
@@ -25,8 +23,6 @@ Set the `credential_source` parameter in your AWS profile configuration to the a
 <a name="odbc-v2-driver-iam-profile-aws-profile"></a>
 
 The profile name to use for your ODBC connection. For more information about profiles, see [Using named profiles](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html#cli-configure-files-using-profiles) in the *AWS Command Line Interface User Guide*.
-
-****
 
 | **Connection string name** | **Parameter type** | **Default value** | **Connection string example** |
 | --- | --- | --- | --- |
@@ -37,8 +33,6 @@ The profile name to use for your ODBC connection. For more information about pro
 
 The Amazon Resource Name (ARN) of the role to assume. The preferred role parameter is used when the custom credentials provider is specified by the `plugin_name` parameter in your profile configuration. For more information about ARN roles, see [AssumeRole](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html) in the *AWS Security Token Service API Reference*.
 
-****
-
 | **Connection string name** | **Parameter type** | **Default value** | **Connection string example** |
 | --- | --- | --- | --- |
 | preferred\_role | Optional | none | preferred\_role=arn:aws:IAM::123456789012:id/user1; |
@@ -48,8 +42,6 @@ The Amazon Resource Name (ARN) of the role to assume. The preferred role paramet
 
 The duration, in seconds, of the role session. For more information about session duration, see [AssumeRole](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html) in the *AWS Security Token Service API Reference*. The session duration parameter is used when the custom credentials provider is specified by the `plugin_name` parameter in your profile configuration.
 
-****
-
 | **Connection string name** | **Parameter type** | **Default value** | **Connection string example** |
 | --- | --- | --- | --- |
 | duration | Optional | 900 | duration=900; |
@@ -58,8 +50,6 @@ The duration, in seconds, of the role session. For more information about sessio
 <a name="odbc-v2-driver-iam-profile-plugin-name"></a>
 
 Specifies the name of a custom credentials provider used in a named profile. This parameter can take the same values as those in the **Authentication Type** field of the ODBC Data Source Administrator, but is used only by `AWSProfile` configuration.
-
-****
 
 | **Connection string name** | **Parameter type** | **Default value** | **Connection string example** |
 | --- | --- | --- | --- |

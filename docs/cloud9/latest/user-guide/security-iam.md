@@ -402,8 +402,6 @@ AWS Identity and Access Management is used to manage the permissions that allow 
 
 In AWS Cloud9, the primary resource is an AWS Cloud9 development environment. In a policy, you use an Amazon Resource Name (ARN) to identify the resource that the policy applies to. The following table lists environment ARNs. For more information, see [Amazon Resource Names (ARNs) and AWS Service Namespaces](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference-arns.html) in the *Amazon Web Services General Reference*.
 
-****
-
 | Resource type | ARN format |
 | --- | --- |
 | Environment |  `arn:aws:cloud9:REGION_ID:ACCOUNT_ID:environment:ENVIRONMENT_ID `  |
@@ -1338,8 +1336,6 @@ The [Public API operations](#callable-api) table lists API operations that can b
 
 ## AWS managed temporary credentials
 <a name="auth-and-access-control-temporary-managed-credentials"></a>
-
-****
 
 |  |
 | --- |

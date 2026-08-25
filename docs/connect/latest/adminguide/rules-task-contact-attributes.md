@@ -19,6 +19,6 @@ The Rules engine generates a task. The contact record for the task inherits the 
 
 The voice contact record appears as the **Previous contact ID**.
 
-The flow that you specify in the rule should be designed to use the contact attributes and route the task to the appropriate owner. For example, you may want to route tasks where **CustomerType = VIP** to a specific agent.
+The flow that you specify in the rule should be designed to use the contact attributes and route the task to the appropriate owner. For example, you might want to route tasks where **CustomerType = VIP** to a specific agent.
 
 For more information, see [Use contact attributes](connect-contact-attributes.md).

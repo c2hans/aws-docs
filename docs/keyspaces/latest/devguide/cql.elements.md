@@ -62,8 +62,6 @@ Amazon Keyspaces supports the following data types:
 ### String types
 <a name="cql.data-types.string"></a>
 
-****
-
 | Data type | Description |
 | --- | --- |
 | `ascii` | Represents an ASCII character string. |
@@ -72,8 +70,6 @@ Amazon Keyspaces supports the following data types:
 
 ### Numeric types
 <a name="cql.data-types.numeric"></a>
-
-****
 
 | Data type | Description |
 | --- | --- |
@@ -97,8 +93,6 @@ In cases where a counter update fails (for example, because of timeouts or loss 
 ### Blob type
 <a name="cql.data-types.blob"></a>
 
-****
-
 | Data type | Description |
 | --- | --- |
 | `blob` | Represents arbitrary bytes. |
@@ -106,16 +100,12 @@ In cases where a counter update fails (for example, because of timeouts or loss 
 ### Boolean type
 <a name="cql.data-types.boolean"></a>
 
-****
-
 | Data type | Description |
 | --- | --- |
 | `boolean` | Represents true or false. |
 
 ### Time-related types
 <a name="cql.data-types.time"></a>
-
-****
 
 | Data type | Description |
 | --- | --- |
@@ -125,8 +115,6 @@ In cases where a counter update fails (for example, because of timeouts or loss 
 
 ### Collection types
 <a name="cql.data-types.collection"></a>
-
-****
 
 | Data type | Description |
 | --- | --- |
@@ -163,8 +151,6 @@ The `tuple` data type represents a bounded group of literal elements. You can us
 ### Other types
 <a name="cql.data-types.other"></a>
 
-****
-
 | Data type | Description |
 | --- | --- |
 | `inet` | A string representing an IP address, in either IPv4 or IPv6 format. |
@@ -197,8 +183,6 @@ To review how many UDTs are supported per keyspace, supported levels of nesting,
 Amazon Keyspaces offers the same JSON data type mappings as Apache Cassandra. The following table describes the data types Amazon Keyspaces accepts in `INSERT JSON` statements and the data types Amazon Keyspaces uses when returning data with the `SELECT JSON` statement.
 
 For single-field data types such as `float`, `int`, `UUID`, and `date`, you also can insert data as a `string`. For compound data types and collections, such as `tuple`, `map`, and `list`, you can also insert data as JSON or as an encoded `JSON string`.
-
-****
 
 | JSON data type | Data types accepted in `INSERT JSON` statements | Data types returned in `SELECT JSON` statements | Notes |
 | --- | --- | --- | --- |

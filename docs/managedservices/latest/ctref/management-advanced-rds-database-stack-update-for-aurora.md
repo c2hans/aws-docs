@@ -14,8 +14,6 @@ Modify the properties of an existing AWS Relational Database Service (RDS) Auror
 ## Change Type Details
 <a name="ct-2dphvdy1krpj6-MARu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2dphvdy1krpj6 |

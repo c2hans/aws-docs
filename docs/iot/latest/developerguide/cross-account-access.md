@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/cross-account-
 
 AWS IoT Core allows you to enable a principal to publish or subscribe to a topic that is defined in an AWS account not owned by the principal. You configure cross account access by creating an IAM policy and IAM role and then attaching the policy to the role.
 
-First, create a customer managed IAM policy as described in [Creating IAM Policies](https://docs.aws.amazon.com//IAM/latest/UserGuide/access_policies_create.html), just like you would for other users and certificates in your AWS account.
+First, create a customer managed IAM policy as described in [Creating IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html), just like you would for other users and certificates in your AWS account.
 
 For devices registered in AWS IoT Core registry, the following policy grants permission to devices connect to AWS IoT Core using a client ID that matches the device's thing name and to publish to the `my/topic/{{thing-name}} ` where {{thing-name}} is the device's thing name:
 
@@ -69,7 +69,7 @@ For devices not registered in AWS IoT Core registry, the following policy grants
 }
 ```
 
-Next, follow the steps in [Creating a role to delegate permissions to an IAM user](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_roles_create_for-user.html). Enter the account ID of the AWS account with which you want to share access. Then, in the final step, attach the policy you just created to the role. If, at a later time, you need to modify the AWS account ID to which you are granting access, you can use the following trust policy format to do so:
+Next, follow the steps in [Creating a role to delegate permissions to an IAM user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-user.html). Enter the account ID of the AWS account with which you want to share access. Then, in the final step, attach the policy you just created to the role. If, at a later time, you need to modify the AWS account ID to which you are granting access, you can use the following trust policy format to do so:
 
 ****
 

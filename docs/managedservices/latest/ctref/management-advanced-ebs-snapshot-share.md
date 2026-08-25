@@ -14,8 +14,6 @@ Share an Elastic Block Store (EBS) snapshot with another AMS account. If the des
 ## Change Type Details
 <a name="ct-3gg0id58rn82h-MAEs-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-3gg0id58rn82h |

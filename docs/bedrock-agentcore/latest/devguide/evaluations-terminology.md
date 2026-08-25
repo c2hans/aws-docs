@@ -14,6 +14,7 @@ Understanding key concepts and terminology is essential for effectively using Ag
 + [Session](#session)
 + [Trace](#trace)
 + [Tool Call](#tool-call)
++ [Skill](#skill)
 + [Reference Free Large Language Models (LLMs) as judges](#llms-as-judges)
 
 ## Agent Framework
@@ -51,6 +52,11 @@ A trace is a complete record of a single agent execution or request. A trace con
 <a name="tool-call"></a>
 
 A tool call is a span that represents an agent’s invocation of an external function, API, or capability. Tool call spans typically capture information such as the tool name, input parameters, execution time, and output. Tool call details are used to evaluate whether the agent selected and used tools correctly and efficiently.
+
+## Skill
+<a name="skill"></a>
+
+A skill is a reusable instruction file that an agent loads at runtime to help with a task. Skills follow the open [Agent Skills](https://agentskills.io) standard for skill file structure. At runtime the agent selects a skill from a catalog it was shown, or reads the `SKILL.md` file directly from the filesystem. AgentCore Evaluations detects skill invocations from an agent’s traces. To evaluate them, use the [built-in skill evaluators](skill-evaluators.md) or custom TOOL\_CALL evaluators that reference the [skill placeholders](create-evaluator.md).
 
 ## Reference Free Large Language Models (LLMs) as judges
 <a name="llms-as-judges"></a>

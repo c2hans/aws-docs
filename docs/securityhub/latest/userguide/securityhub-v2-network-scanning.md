@@ -185,6 +185,16 @@ Identified application or protocol running on the port.
 
  When you add the exclusion tag, Network Scanning stops future scans and closes active findings for that resource. Removing the tag makes the resource eligible for scanning again.
 
+## Supported ports
+<a name="network-scanning-supported-ports"></a>
+
+ Network Scanning scans the following well-known TCP ports on eligible resources.
+
+```
+21, 22, 23, 25, 53, 80, 110, 143, 443, 445, 1433, 3306, 3389, 5432,
+5900, 6379, 8080, 8443, 9200, 27017
+```
+
 ## Scan traffic
 <a name="network-scanning-traffic"></a>
 

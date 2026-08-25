@@ -83,7 +83,7 @@ If the access pattern is to query a large dataset and filter out a large amount 
 
 **Step 3: Address access patterns 5 (`updateCharacterAttributes`) and 6 (`updateItemCount`) **
 
-We address access patterns 5 (`updateCharacterAttributes`) and 6 (`updateItemCount`) using this step. When the player needs to modify the character, such as reducing the currency, or modifying the quantity of a certain weapon in their items, use [`UpdateItem`](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_UpdateItem.html) to implement these access patterns. To update a player's currency but ensure it never goes below a minimum amount, we can add a [DynamoDB condition expression CLI example](Expressions.ConditionExpressions.md) to reduce the balance only if it's greater than or equal to the minimum amount. Here is a pseudocode example:
+We address access patterns 5 (`updateCharacterAttributes`) and 6 (`updateItemCount`) using this step. When the player needs to modify the character, such as reducing the currency, or modifying the quantity of a certain weapon in their items, use [`UpdateItem`](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_UpdateItem.html) to implement these access patterns. To update a player's currency but make sure it never goes below a minimum amount, we can add a [DynamoDB condition expression CLI example](Expressions.ConditionExpressions.md) to reduce the balance only if it's greater than or equal to the minimum amount. Here is a pseudocode example:
 
 ```
 UpdateExpression: "SET currency = currency - :amount"

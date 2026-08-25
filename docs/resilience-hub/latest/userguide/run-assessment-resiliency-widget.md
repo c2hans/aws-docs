@@ -36,7 +36,7 @@ For applications created in **myApplications** widget, you can now run resilienc
    + Creates and assigns a new resiliency policy with pre-defined values for recovery time objective (RTO) and recovery point objective (RPO). That is, four hours for RTO and one hour for RPO. After you generate an assessment, you can modify the resiliency policy or assign a different policy from the AWS Resilience Hub console. For more information about updating resiliency policy and attaching a different policy, see [ Managing resiliency policies](https://docs.aws.amazon.com/resilience-hub/latest/userguide/resiliency-policies.html?icmpid=docs_resiliencehub_help_panel_resiliency_policies).
    + Assesses the resilience of the application against RTO and RPO, and continuously monitors resources and configuration changes, and publishes the results.
 **Note**
-Before starting assessments, it is advisable to evaluate the potential costs involved in running assessments using AWS Resilience Hub. For detailed pricing information, see the [AWS Resilience Hub pricing](https://aws.amazon.com//resilience-hub/pricing?icmpid=docs_resiliencehub_help_panel_resiliency_policies_hp).<a name="rerun-res-widget"></a>
+Before starting assessments, it is advisable to evaluate the potential costs involved in running assessments using AWS Resilience Hub. For detailed pricing information, see the [AWS Resilience Hub pricing](https://aws.amazon.com/resilience-hub/pricing?icmpid=docs_resiliencehub_help_panel_resiliency_policies_hp).<a name="rerun-res-widget"></a>
 
 **To rerun a resiliency assessment for an existing **myApplications** application from **Resiliency** widget**
 

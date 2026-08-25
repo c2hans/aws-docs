@@ -14,8 +14,6 @@ Create an Amazon Machine Image (AMI) from an EC2 Instance in an Auto Scaling gro
 ## Change Type Details
 <a name="ct-3e3prksxmdhw8-DAAc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-3e3prksxmdhw8 |

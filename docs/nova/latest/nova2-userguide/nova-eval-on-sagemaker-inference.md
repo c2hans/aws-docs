@@ -267,6 +267,6 @@ def my_benchmark():
 <a name="nova-eval-sagemaker-related-resources"></a>
 + [Inspect AI Documentation](https://inspect.ai-safety-institute.org.uk/)
 + [Inspect Evals Repository](https://github.com/UKGovernmentBEIS/inspect_evals)
-+ [SageMaker Developer Guide](https://docs.aws.amazon.com//sagemaker/latest/dg/whatis.html)
-+ [Deploy Models for Inference](https://docs.aws.amazon.com//sagemaker/latest/dg/deploy-model.html)
-+ [Configuring the AWS CLI](https://docs.aws.amazon.com//cli/latest/userguide/cli-chap-configure.html)
++ [SageMaker Developer Guide](https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html)
++ [Deploy Models for Inference](https://docs.aws.amazon.com/sagemaker/latest/dg/deploy-model.html)
++ [Configuring the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html)

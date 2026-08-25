@@ -59,7 +59,7 @@ By default, all new solutions use automatic training. With automatic training, y
 1. Choose **Create solution**. After you create a solution, Amazon Personalize starts creating your first solution version within an hour. When training starts, you can monitor it in the **Solution versions** section on the details page for you solution. Automatically created solution versions have a **Training type** of AUTOMATIC.
 
     When the solution version is ACTIVE, you are ready to use it to get recommendations. How you use an active solution version depends on how you get recommendations:
-   +  For real-time recommendations, you deploy an ACTIVE solution version with an Amazon Personalize campaign. You use the campaign to get recommendations for your users. See [Deploying an Amazon Personalize solution version with a campaignCreating a campaign](campaigns.md).
+   +  For real-time recommendations, you deploy an ACTIVE solution version with an Amazon Personalize campaign. You use the campaign to get recommendations for your users. See [Deploying an Amazon Personalize solution version with a campaign](campaigns.md).
    + For batch recommendations, you specify an ACTIVE solution version when you create a batch inference job or batch segment job. See [Getting batch item recommendations](getting-batch-recommendations.md) or [Getting batch user segments](getting-user-segments.md).
 
 ## Creating a solution (AWS CLI)
@@ -87,7 +87,7 @@ aws personalize create-solution \
 After you create the solution, record the solution ARN for future use. With automatic training, solution version creation starts within one hour after the solution is ACTIVE. If you manually create a solution version within the hour, the solution skips the first automatic training. After training starts, you can get the solution version's Amazon Resource Name (ARN) with the [ListSolutionVersions](https://docs.aws.amazon.com/personalize/latest/dg/API_ListSolutionVersions.html) API operation. To get its status, use the [DescribeSolutionVersion](https://docs.aws.amazon.com/personalize/latest/dg/API_DescribeSolutionVersion.html) API operation.
 
  When the solution version is ACTIVE, you are ready to use it to get recommendations. How you use an active solution version depends on how you get recommendations:
-+  For real-time recommendations, you deploy an ACTIVE solution version with an Amazon Personalize campaign. You use the campaign to get recommendations for your users. See [Deploying an Amazon Personalize solution version with a campaignCreating a campaign](campaigns.md).
++  For real-time recommendations, you deploy an ACTIVE solution version with an Amazon Personalize campaign. You use the campaign to get recommendations for your users. See [Deploying an Amazon Personalize solution version with a campaign](campaigns.md).
 + For batch recommendations, you specify an ACTIVE solution version when you create a batch inference job or batch segment job. See [Getting batch item recommendations](getting-batch-recommendations.md) or [Getting batch user segments](getting-user-segments.md).
 
 ## Creating a solution (AWS SDKs)
@@ -198,5 +198,5 @@ solution_version_arn = wait_for_training_to_start(solution_arn)
 ```
 
  When the solution version is ACTIVE, you are ready to use it to get recommendations. How you use an active solution version depends on how you get recommendations:
-+  For real-time recommendations, you deploy an ACTIVE solution version with an Amazon Personalize campaign. You use the campaign to get recommendations for your users. See [Deploying an Amazon Personalize solution version with a campaignCreating a campaign](campaigns.md).
++  For real-time recommendations, you deploy an ACTIVE solution version with an Amazon Personalize campaign. You use the campaign to get recommendations for your users. See [Deploying an Amazon Personalize solution version with a campaign](campaigns.md).
 + For batch recommendations, you specify an ACTIVE solution version when you create a batch inference job or batch segment job. See [Getting batch item recommendations](getting-batch-recommendations.md) or [Getting batch user segments](getting-user-segments.md).

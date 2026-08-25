@@ -35,7 +35,7 @@ Follow these steps to turn off automatic enablement of the default standards by 
 ------
 #### [ Security Hub CSPM API ]
 
-To turn off automatic enablement of the default standards programmatically, from the Security Hub CSPM administrator account, use the [UpdateOrganizationConfiguration](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_UpdateOrganizationConfiguration.html) operation of the Security Hub CSPM API. In your request, specify `NONE` for the `AutoEnableStandards` parameter.
+To turn off automatic enablement of the default standards programmatically, from the Security Hub CSPM administrator account, use the [UpdateOrganizationConfiguration](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_UpdateOrganizationConfiguration.html) operation of the Security Hub CSPM API. In your request, specify `NONE` for the `AutoEnableStandards` parameter.
 
 If you're using the AWS CLI, run the [update-organization-configuration](https://docs.aws.amazon.com/cli/latest/reference/securityhub/update-organization-configuration.html) command to turn off automatic enablement of the default standards. For the `auto-enable-standards` parameter, specify `NONE`. For example, the following command automatically enables Security Hub CSPM for new member accounts, and turns off automatic enablement of the default standards for the accounts.
 

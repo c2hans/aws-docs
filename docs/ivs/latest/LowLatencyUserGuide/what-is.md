@@ -37,7 +37,7 @@ Observed latency can vary between users due to:
 + Individual components in the streaming chain.
 + Streaming protocols and output formats.
 
-For more information, see [Reducing Latency](https://docs.aws.amazon.com//ivs/latest/LowLatencyUserGuide/streaming-config.html#streaming-config-reducing-latency) in *Amazon IVS Streaming Configuration*.
+For more information, see [Reducing Latency](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/streaming-config.html#streaming-config-reducing-latency) in *Amazon IVS Streaming Configuration*.
 
 ## Global Solution, Regional Control
 <a name="what-is-aws"></a>
@@ -63,7 +63,7 @@ When you use resources (e.g., create a channel), you must specify the region in 
 | If you use the ... | You specify the region by ... |
 | --- | --- |
 | Amazon IVS console  | Using the Select a Region drop-down in the top right of the navigation bar. |
-| Amazon IVS API | Using the appropriate service endpoint. See the [Amazon IVS Low-Latency Streaming API Reference](https://docs.aws.amazon.com//ivs/latest/LowLatencyAPIReference/Welcome.html).<br />(If you access the API through an SDK, set up the SDK’s `region` parameter. See [Tools to Build on AWS](https://aws.amazon.com/developer/tools/).) |
+| Amazon IVS API | Using the appropriate service endpoint. See the [Amazon IVS Low-Latency Streaming API Reference](https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/Welcome.html).<br />(If you access the API through an SDK, set up the SDK’s `region` parameter. See [Tools to Build on AWS](https://aws.amazon.com/developer/tools/).) |
 | AWS CLI | Either:+  Appending `--region <aws-region>` to your CLI command. <br />+  Putting the region in your local AWS configuration file.  |
 
 *Remember, regardless of the region in which a channel was created, you can stream to Amazon IVS from anywhere, and viewers can watch from anywhere.*

@@ -30,7 +30,8 @@ The request uses the following URI parameters.
 
  ** [evaluatorId](#API_UpdateEvaluator_RequestSyntax) **   <a name="bedrockagentcorecontrol-UpdateEvaluator-request-uri-evaluatorId"></a>
  The unique identifier of the evaluator to update.
-Pattern: `(Builtin.[a-zA-Z0-9_-]+|[a-zA-Z][a-zA-Z0-9-_]{0,99}-[a-zA-Z0-9]{10})`
+Length Constraints: Minimum length of 1. Maximum length of 111.
+Pattern: `(Builtin\.[a-zA-Z0-9._-]+|ThirdParty\.[a-zA-Z0-9_-]+\.[a-zA-Z0-9_-]+|[a-zA-Z][a-zA-Z0-9-_]{0,99}-[a-zA-Z0-9]{10})`
 Required: Yes
 
 ## Request Body
@@ -95,12 +96,13 @@ The following data is returned in JSON format by the service.
  ** [evaluatorArn](#API_UpdateEvaluator_ResponseSyntax) **   <a name="bedrockagentcorecontrol-UpdateEvaluator-response-evaluatorArn"></a>
  The Amazon Resource Name (ARN) of the updated evaluator.
 Type: String
-Pattern: `arn:aws[a-zA-Z-]*:bedrock-agentcore:[a-z0-9-]+:[0-9]{12}:evaluator\/[a-zA-Z][a-zA-Z0-9-_]{0,99}-[a-zA-Z0-9]{10}$|^arn:aws[a-zA-Z-]*:bedrock-agentcore:::evaluator/Builtin.[a-zA-Z0-9_-]+`
+Pattern: `arn:aws[a-zA-Z-]*:bedrock-agentcore:[a-z0-9-]+:[0-9]{12}:evaluator\/[a-zA-Z][a-zA-Z0-9-_]{0,99}-[a-zA-Z0-9]{10}$|^arn:aws[a-zA-Z-]*:bedrock-agentcore:::evaluator/(Builtin|ThirdParty)\.[a-zA-Z0-9._-]+`
 
  ** [evaluatorId](#API_UpdateEvaluator_ResponseSyntax) **   <a name="bedrockagentcorecontrol-UpdateEvaluator-response-evaluatorId"></a>
  The unique identifier of the updated evaluator.
 Type: String
-Pattern: `(Builtin.[a-zA-Z0-9_-]+|[a-zA-Z][a-zA-Z0-9-_]{0,99}-[a-zA-Z0-9]{10})`
+Length Constraints: Minimum length of 1. Maximum length of 111.
+Pattern: `(Builtin\.[a-zA-Z0-9._-]+|ThirdParty\.[a-zA-Z0-9_-]+\.[a-zA-Z0-9_-]+|[a-zA-Z][a-zA-Z0-9-_]{0,99}-[a-zA-Z0-9]{10})`
 
  ** [status](#API_UpdateEvaluator_ResponseSyntax) **   <a name="bedrockagentcorecontrol-UpdateEvaluator-response-status"></a>
  The status of the evaluator update operation.

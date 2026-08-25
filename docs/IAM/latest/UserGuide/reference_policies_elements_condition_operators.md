@@ -32,8 +32,6 @@ String condition operators let you construct `Condition` elements that restrict 
 +  **Policy variables** – [Supported](reference_policies_variables.md)
 + **Wildcards** – [Supported](#Conditions_String-wildcard)
 
-****
-
 | Condition operator | Description |
 | --- | --- |
 |  `StringEquals`  | Exact matching, case sensitive |
@@ -225,8 +223,6 @@ Numeric condition operators let you construct `Condition` elements that restrict
 +  **Policy variables** – Not supported
 + **Wildcards** – Not supported
 
-****
-
 | Condition operator | Description |
 | --- | --- |
 |  `NumericEquals`  | Matching |
@@ -262,11 +258,9 @@ If the key that you specify in a policy condition is not present in the request 
 ## Date condition operators
 <a name="Conditions_Date"></a>
 
-Date condition operators let you construct `Condition` elements that restrict access based on comparing a key to a date/time value. You use these condition operators with [`aws:CurrentTime`](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-currenttime) key or [`aws:EpochTime`](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-epochtime) key. You must specify date/time values with one of the [W3C implementations of the ISO 8601 date formats](https://docs.aws.amazon.com/http://www.w3.org/TR/NOTE-datetime) or in epoch (UNIX) time.
+Date condition operators let you construct `Condition` elements that restrict access based on comparing a key to a date/time value. You use these condition operators with [`aws:CurrentTime`](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-currenttime) key or [`aws:EpochTime`](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-epochtime) key. You must specify date/time values with one of the [W3C implementations of the ISO 8601 date formats](http://www.w3.org/TR/NOTE-datetime) or in epoch (UNIX) time.
 +  **Policy variables** – Not supported
 + **Wildcards** – Not supported
-
-****
 
 | Condition operator | Description |
 | --- | --- |
@@ -312,8 +306,6 @@ Boolean conditions let you construct `Condition` elements that restrict access b
 If a key contains multiple values, boolean operators can be qualified with set operators `ForAllValues` and `ForAnyValue`. For more information on the evaluation logic of multiple context keys or values, see [Set operators for multivalued context keys](reference_policies_condition-single-vs-multi-valued-context-keys.md#reference_policies_condition-multi-valued-context-keys).
 +  **Policy variables** – [Supported](reference_policies_variables.md)
 + **Wildcards** – Not supported
-
-****
 
 | Condition operator | Description |
 | --- | --- |
@@ -385,8 +377,6 @@ Some AWS services support IPv6, using :: to represent a range of 0s. To learn wh
 +  **Policy variables** – Not supported
 + **Wildcards** – Not supported
 
-****
-
 | Condition operator | Description |
 | --- | --- |
 |  `IpAddress`  | The specified IP address or range |
@@ -448,8 +438,6 @@ The `aws:SourceIp` condition key works only in a JSON policy if you are calling 
 Amazon Resource Name (ARN) condition operators let you construct `Condition` elements that restrict access based on comparing a key to an ARN. The ARN is considered a string.
 +  **Policy variables** – [Supported](reference_policies_variables.md)
 + **Wildcards** – [Supported](reference_policies_elements_resource.md#reference_policies_elements_resource_wildcards)
-
-****
 
 | Condition operator | Description |
 | --- | --- |

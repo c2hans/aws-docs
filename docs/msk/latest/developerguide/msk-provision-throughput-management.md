@@ -22,8 +22,6 @@ Amazon EC2 egress throughput is impacted by the number of consumer groups and co
 
 For volume sizes of 10 GiB or larger, you can provision storage throughput of 250 MiB per second or greater. 250 MiB per second is the default. To provision storage throughput, you must choose broker size kafka.m5.4xlarge or larger (or kafka.m7g.2xlarge or larger), and you can specify maximum throughput as shown in the following table.
 
-****
-
 | broker size | Maximum storage throughput (MiB/second) |
 | --- | --- |
 | kafka.m5.4xlarge | 593 |
@@ -54,8 +52,6 @@ For information about the `VolumeReadBytes` and `VolumeWriteBytes` metrics, see 
 You can update your Amazon MSK configuration either before or after you turn on provisioned throughput. However, you won't see the desired throughput until you perform both actions: update the `num.replica.fetchers` configuration parameter and turn on provisioned throughput.
 
 In the default Amazon MSK configuration, `num.replica.fetchers` has a value of 2. To update your `num.replica.fetchers`, you can use the suggested values from the following table. These values are for guidance purposes. We recommend that you adjust these values based on your use case.
-
-****
 
 | broker size | num.replica.fetchers |
 | --- | --- |

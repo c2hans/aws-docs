@@ -232,3 +232,10 @@ Amazon MWAA Serverless currently supports a specific set of [Apache Airflow oper
 <a name="operators-workflows"></a>
 + `MwaaServerlessCreateWorkflowOperator`: Creates a workflow in Amazon MWAA Serverless.
 + `MwaaServerlessStartWorkflowRunOperator`: Starts a workflow run in Amazon MWAA Serverless.
+
+## Python and Bash
+<a name="operators-python-bash"></a>
+
+In addition to AWS service operators, Amazon MWAA Serverless supports the following Apache Airflow core operators for running custom code as part of your workflows. For instructions on using these operators, see [Using Python and Bash operators](operators-python-bash-detail.md).
++ `PythonOperator`: Runs a Python callable as a task. Provide your Python modules as code when creating or updating a workflow.
++ `BashOperator`: Runs a Bash command or shell script as a task.

@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon EventBridge Scheduler provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="scheduler-GetSchedule"></a>[GetSchedule](https://docs.aws.amazon.com/scheduler/latest/APIReference/API_GetSchedule.html) | View details about an Amazon EventBridge Scheduler schedule | Read |

@@ -9,8 +9,6 @@ To change the default displayed values for full redaction on your Amazon RDS Ora
 
 The `dbms_redact_upd_full_rdct_val` procedure has the following parameters.
 
-****
-
 | Parameter name | Data type | Default | Required | Description |
 | --- | --- | --- | --- | --- |
 | `p_number_val` | number | Null | No | Modifies the default value for columns of the `NUMBER` data type. |

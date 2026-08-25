@@ -50,7 +50,7 @@ To view recommender metrics in the console, you navigate to the details page for
 
 1. In **Solution versions**, choose your solution version to view its details page. The metrics are listed on the **Solution version metrics** tab in the bottom pane. For definitions of metrics, see [Metric definitions](#metric-definitions).
 
-   Now that you have evaluated your solution version, you can create a campaign by deploying the solution version with the best metrics for your use case. For more information about deploying a solution, see [Deploying an Amazon Personalize solution version with a campaignCreating a campaign](campaigns.md).
+   Now that you have evaluated your solution version, you can create a campaign by deploying the solution version with the best metrics for your use case. For more information about deploying a solution, see [Deploying an Amazon Personalize solution version with a campaign](campaigns.md).
 
 ### Retrieving solution version metrics (AWS CLI)
 <a name="retrieve-metrics-cli"></a>
@@ -80,7 +80,7 @@ The following is an example the output from a solution version created using the
 }
 ```
 
-For explanations of each metric, see [Metric definitions](#metric-definitions). Now that you have evaluated your solution version, you can create a campaign by deploying the solution version with the best metrics for your use case. For more information about deploying a solution, see [Deploying an Amazon Personalize solution version with a campaignCreating a campaign](campaigns.md).
+For explanations of each metric, see [Metric definitions](#metric-definitions). Now that you have evaluated your solution version, you can create a campaign by deploying the solution version with the best metrics for your use case. For more information about deploying a solution, see [Deploying an Amazon Personalize solution version with a campaign](campaigns.md).
 
 ### Retrieving solution version metrics (AWS SDKs)
 <a name="retrieve-metrics-sdks"></a>
@@ -141,7 +141,7 @@ The following is an example the output from a solution version created using the
 }
 ```
 
-For explanations of each metric, see [Metric definitions](#metric-definitions). Now that you have evaluated your solution version, you can create a campaign by deploying the solution version with the best metrics for your use case. For more information about deploying a solution, see [Deploying an Amazon Personalize solution version with a campaignCreating a campaign](campaigns.md).
+For explanations of each metric, see [Metric definitions](#metric-definitions). Now that you have evaluated your solution version, you can create a campaign by deploying the solution version with the best metrics for your use case. For more information about deploying a solution, see [Deploying an Amazon Personalize solution version with a campaign](campaigns.md).
 
 ## Metric definitions
 <a name="metric-definitions"></a>

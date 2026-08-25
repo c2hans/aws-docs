@@ -15,8 +15,6 @@ We recommend that you frequently check your sending statistics to ensure that yo
 
 The following procedure shows you how to view your sending quotas using the Amazon SES console.
 
-****
-
 1. Sign in to the AWS Management Console and open the Amazon SES console at [https://console.aws.amazon.com/ses/](https://console.aws.amazon.com/ses/).
 
 1. In the navigation pane, choose **Account dashboard**. Your sending quotas are shown under **Sending Limits**. Total emails sent, remaining sends, and percentage of sending quota used is displayed under **Daily email usage**.

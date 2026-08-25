@@ -15,8 +15,6 @@ Some of the parameter names in this section have aliases. The aliases are functi
 
 The credentials provider that will be used to authenticate requests to AWS. Set the value of this parameter to `AzureAD`.
 
-****
-
 | Parameter name | Alias | Parameter type | Default value | Value to use |
 | --- | --- | --- | --- | --- |
 | CredentialsProvider | AWSCredentialsProviderClass (deprecated) | Required | none | AzureAD |
@@ -25,8 +23,6 @@ The credentials provider that will be used to authenticate requests to AWS. Set 
 <a name="jdbc-v3-driver-azure-ad-user"></a>
 
 The email address of the Azure AD user to use for authentication with Azure AD.
-
-****
 
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
@@ -37,8 +33,6 @@ The email address of the Azure AD user to use for authentication with Azure AD.
 
 The password for the Azure AD user.
 
-****
-
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
 | Password | PWD (deprecated) | Required | none |
@@ -47,8 +41,6 @@ The password for the Azure AD user.
 <a name="jdbc-v3-driver-azure-ad-tenant-id"></a>
 
 The tenant ID of your Azure AD application.
-
-****
 
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
@@ -59,8 +51,6 @@ The tenant ID of your Azure AD application.
 
 The client ID of your Azure AD application.
 
-****
-
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
 | AzureAdClientId | client\_id (deprecated) | Required | none |
@@ -69,8 +59,6 @@ The client ID of your Azure AD application.
 <a name="jdbc-v3-driver-azure-ad-client-secret"></a>
 
 The client secret of your Azure AD application.
-
-****
 
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
@@ -81,8 +69,6 @@ The client secret of your Azure AD application.
 
 The Amazon Resource Name (ARN) of the role to assume. For information about ARN roles, see [AssumeRole](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html) in the *AWS Security Token Service API Reference*.
 
-****
-
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
 | PreferredRole | preferred\_role (deprecated) | Optional | none |
@@ -92,8 +78,6 @@ The Amazon Resource Name (ARN) of the role to assume. For information about ARN 
 
 The duration, in seconds, of the role session. For more information, see [AssumeRole](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html) in the *AWS Security Token Service API Reference*.
 
-****
-
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
 | RoleSessionDuration | Duration (deprecated) | Optional | 3600 |
@@ -102,8 +86,6 @@ The duration, in seconds, of the role session. For more information, see [Assume
 <a name="jdbc-v3-driver-lake-formation-enabled"></a>
 
 Specifies whether to use the [AssumeDecoratedRoleWithSAML](https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_AssumeDecoratedRoleWithSAML.html) Lake Formation API action to retrieve temporary IAM credentials instead of the [AssumeRoleWithSAML](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRoleWithSAML.html) AWS STS API action.
-
-****
 
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |

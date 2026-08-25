@@ -729,7 +729,8 @@ This example illustrates one usage of BatchDescribeEntities.
                     "Type": "PartnerTargetingRule",
                     "Id": "partner_targeting_rule_id_placeholder",
                     "ResellerAccountId": "123456789012",
-                    "ResellerLegalName": "ChannelCAPICP.Inc"
+                    "ResellerLegalName": "ChannelCAPICP.Inc",
+                    "ResellerRole": "ChannelPartner"
                 }
                 ]
             }
@@ -895,7 +896,8 @@ This example illustrates one usage of BatchDescribeEntities.
                     "Type": "PartnerTargetingRule",
                     "Id": "partner_targeting_rule_id_placeholder",
                     "ResellerAccountId": "123456789012",
-                    "ResellerLegalName": "ChannelCAPICP.Inc"
+                    "ResellerLegalName": "ChannelCAPICP.Inc",
+                    "ResellerRole": "Distributor"
                 }
                 ]
             }

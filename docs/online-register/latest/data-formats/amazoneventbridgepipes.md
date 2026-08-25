@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon EventBridge Pipes provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="pipes-DescribePipe"></a>[DescribePipe](https://docs.aws.amazon.com/eventbridge/latest/pipes-reference/API_DescribePipe.html) | Describe a pipe | Read |

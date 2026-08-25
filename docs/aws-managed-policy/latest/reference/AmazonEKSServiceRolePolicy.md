@@ -18,13 +18,13 @@ This policy is attached to a service-linked role that allows the service to perf
 <a name="AmazonEKSServiceRolePolicy-details"></a>
 + **Type**: Service-linked role policy
 + **Creation time**: February 21, 2020, 20:10 UTC
-+ **Edited time:** July 10, 2026, 18:57 UTC
++ **Edited time:** August 21, 2026, 17:17 UTC
 + **ARN**: `arn:aws:iam::aws:policy/aws-service-role/AmazonEKSServiceRolePolicy`
 
 ## Policy version
 <a name="AmazonEKSServiceRolePolicy-version"></a>
 
-**Policy version:** v26 (default)
+**Policy version:** v27 (default)
 
 The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request.
 
@@ -78,6 +78,7 @@ The policy's default version is the version that defines the permissions for the
         "ec2:GetSecurityGroupsForVpc",
         "eks:DescribeCluster",
         "ec2:DescribeIpamPools",
+        "ec2:DescribeTrunkInterfaceAssociations",
         "elasticloadbalancing:DescribeListenerAttributes",
         "elasticloadbalancing:DescribeListenerCertificates",
         "elasticloadbalancing:DescribeListeners",
@@ -370,5 +371,5 @@ The policy's default version is the version that defines the permissions for the
 
 ## Learn more
 <a name="AmazonEKSServiceRolePolicy-learn-more"></a>
-+ [Understand versioning for IAM policies](https://docs.aws.amazon.com//IAM/latest/UserGuide/access_policies_managed-versioning.html)
-+ [Get started with AWS managed policies and move toward least-privilege permissions](https://docs.aws.amazon.com//IAM/latest/UserGuide/best-practices.html#bp-use-aws-defined-policies)
++ [Understand versioning for IAM policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-versioning.html)
++ [Get started with AWS managed policies and move toward least-privilege permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#bp-use-aws-defined-policies)

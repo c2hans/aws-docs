@@ -37,8 +37,6 @@ The following is an example of this object type.
 ## Syntax
 <a name="regex-syntax"></a>
 
-****
-
 | Optional Fields | Description | Slot Type |
 | --- | --- | --- |
 | column | Column name with datatype specified by each field for the data described by this data node. Ex: hostname STRING For multiple values, use column names and data types separated by a space. | String |
@@ -46,13 +44,9 @@ The following is an example of this object type.
 | outputFormat | The column fields retrieved by inputRegEx, but referenced as %1$s %2$s using Java formatter syntax. | String |
 | parent | Parent of the current object from which slots will be inherited. | Reference Object, e.g. "parent":{"ref":"myBaseObjectId"} |
 
-****
-
 | Runtime Fields | Description | Slot Type |
 | --- | --- | --- |
 | @version | Pipeline version the object was created with. | String |
-
-****
 
 | System Fields | Description | Slot Type |
 | --- | --- | --- |

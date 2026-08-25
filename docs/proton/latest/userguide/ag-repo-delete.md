@@ -19,7 +19,7 @@ Deleting a repository link only removes the registered link that AWS Proton has 
 
 **In the repository detail page.**
 
-1. In the [AWS Proton console](https://console.aws.amazon.com//proton/), choose **Repositories**.
+1. In the [AWS Proton console](https://console.aws.amazon.com/proton/), choose **Repositories**.
 
 1. In the list of repositories, choose the radio button to the left of the repository that you want to delete.
 

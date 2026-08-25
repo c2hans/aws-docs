@@ -32,7 +32,7 @@ When you create an interface endpoint for DAX:
 
 1. This architecture allows you to use VPC security groups to manage access to the endpoints.
 
-1. Applications can access both DynamoDB and DAX through their respective interface endpoints within a VPC, while also allowing on-premises applications to connect via Direct Connect or VPN.
+1. Applications can access both DynamoDB and DAX through their respective interface endpoints within a VPC, while also allowing on-premises applications to connect through Direct Connect or VPN.
 
 1. This provides a consistent connectivity model across both services, simplifies architecture, and improves security by keeping traffic within the AWS network.
 
@@ -83,5 +83,5 @@ For more information about AWS PrivateLink and VPC endpoints, see the following 
 + [AWS PrivateLink for DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/privatelink-interface-endpoints.html)
 + [AWS PrivateLink for DynamoDB Streams](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/privatelink-streams.html)
 + [Connect your VPC to services using AWS PrivateLink](https://docs.aws.amazon.com/vpc/latest/userguide/endpoint-services-overview.html)
-+ [Simplify private connectivity to DynamoDB with AWS PrivateLink](https://aws.amazon.com/blogs//database/simplify-private-connectivity-to-amazon-dynamodb-with-aws-privatelink)
++ [Simplify private connectivity to DynamoDB with AWS PrivateLink](https://aws.amazon.com/blogs/database/simplify-private-connectivity-to-amazon-dynamodb-with-aws-privatelink)
 + [AWS PrivateLink Whitepaper](https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/aws-privatelink.html)

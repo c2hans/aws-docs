@@ -17,8 +17,6 @@ When you transfer data into Amazon Simple Storage Service (Amazon S3) using a Sn
 
  The following table highlights the regions where AWS Snowball Edge is available.
 
-****
-
 | Region | Snowball Edge availability |
 | --- | --- |
 | US East (Ohio) | ✓ |

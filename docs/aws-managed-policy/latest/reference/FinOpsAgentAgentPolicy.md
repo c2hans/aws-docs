@@ -18,13 +18,13 @@ You can attach `FinOpsAgentAgentPolicy` to your users, groups, and roles.
 <a name="FinOpsAgentAgentPolicy-details"></a>
 + **Type**: AWS managed policy
 + **Creation time**: June 03, 2026, 19:57 UTC
-+ **Edited time:** June 03, 2026, 19:57 UTC
++ **Edited time:** August 19, 2026, 19:27 UTC
 + **ARN**: `arn:aws:iam::aws:policy/FinOpsAgentAgentPolicy`
 
 ## Policy version
 <a name="FinOpsAgentAgentPolicy-version"></a>
 
-**Policy version:** v1 (default)
+**Policy version:** v2 (default)
 
 The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request.
 
@@ -111,7 +111,44 @@ The policy's default version is the version that defines the permissions for the
         "cloudwatch:GetMetricStatistics",
         "cloudwatch:ListMetrics",
         "logs:StartQuery",
-        "logs:GetQueryResults"
+        "logs:GetQueryResults",
+        "billing:GetBillingView",
+        "billing:ListBillingViews",
+        "billing:ListSourceViewsForBillingView",
+        "billing:GetResourcePolicy",
+        "billingconductor:ListBillingGroups",
+        "billingconductor:ListAccountAssociations",
+        "billingconductor:ListBillingGroupCostReports",
+        "billingconductor:GetBillingGroupCostReport",
+        "billingconductor:ListCustomLineItems",
+        "billingconductor:ListCustomLineItemVersions",
+        "billingconductor:ListResourcesAssociatedToCustomLineItem",
+        "billingconductor:ListPricingRules",
+        "billingconductor:ListPricingPlans",
+        "billingconductor:ListPricingRulesAssociatedToPricingPlan",
+        "billingconductor:ListPricingPlansAssociatedWithPricingRule",
+        "invoicing:ListInvoiceSummaries",
+        "invoicing:ListInvoiceUnits",
+        "invoicing:GetInvoiceUnit",
+        "invoicing:BatchGetInvoiceProfile",
+        "invoicing:ListProcurementPortalPreferences",
+        "invoicing:GetProcurementPortalPreference",
+        "aco-automation:GetAutomationEvent",
+        "aco-automation:GetAutomationRule",
+        "aco-automation:GetEnrollmentConfiguration",
+        "aco-automation:ListAccounts",
+        "aco-automation:ListAutomationEvents",
+        "aco-automation:ListAutomationEventSteps",
+        "aco-automation:ListAutomationEventSummaries",
+        "aco-automation:ListAutomationRules",
+        "aco-automation:ListRecommendedActions",
+        "aco-automation:ListRecommendedActionSummaries",
+        "aco-automation:ListAutomationRulePreview",
+        "aco-automation:ListAutomationRulePreviewSummaries",
+        "aco-automation:ListTagsForResource",
+        "billing:GetCredits",
+        "billing:GetCreditAllocationHistory",
+        "health:DescribeEvents"
       ],
       "Resource" : "*"
     },
@@ -156,5 +193,5 @@ The policy's default version is the version that defines the permissions for the
 <a name="FinOpsAgentAgentPolicy-learn-more"></a>
 + [Create a permission set using AWS managed policies in IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/howtocreatepermissionset.html)
 + [Adding and removing IAM identity permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html)
-+ [Understand versioning for IAM policies](https://docs.aws.amazon.com//IAM/latest/UserGuide/access_policies_managed-versioning.html)
-+ [Get started with AWS managed policies and move toward least-privilege permissions](https://docs.aws.amazon.com//IAM/latest/UserGuide/best-practices.html#bp-use-aws-defined-policies)
++ [Understand versioning for IAM policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-versioning.html)
++ [Get started with AWS managed policies and move toward least-privilege permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#bp-use-aws-defined-policies)

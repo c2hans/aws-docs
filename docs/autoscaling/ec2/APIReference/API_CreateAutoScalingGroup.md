@@ -194,6 +194,11 @@ Indicates whether newly launched instances are protected from termination by Ama
 Type: Boolean
 Required: No
 
+ ** Operator **
+The entity that manages the Auto Scaling group. If you specify this parameter, Amazon EC2 Auto Scaling passes the operator identity to EC2 for instance launches and only allows the designated operator to make changes to the Auto Scaling group. All mutating API calls from non-operator callers are rejected with an `AccessDenied` exception.
+Type: [Operator](API_Operator.md) object
+Required: No
+
  ** PlacementGroup **
 The name of the placement group into which to launch your instances. For more information, see [Placement groups](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html) in the *Amazon EC2 User Guide*.
 A *cluster* placement group is a logical grouping of instances within a single Availability Zone. You cannot specify multiple Availability Zones and a cluster placement group.

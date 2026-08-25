@@ -74,7 +74,7 @@ The **Staging area subnet** setting defines which VPC Subnet that the Replicatio
 
  By default, AWS Elastic Disaster Recovery utilizes the t3.small instance type, and should work well for most common workloads. We recommend monitoring the Cloudwatch metrics of a replication server, if your Source Server is experiencing frequent Lag or Backlog. Metrics to monitor include EBSWriteBytes or EBSWriteOps, which may indicate the **Replication server instance type** is improperly sized to protect your source server.
 
- AWS Elastic Disaster Recovery supports replicating Source Servers with up to 60 volumes, however the **Replication server instance type** must also support an equal or greater number of EBS Volume attachments. We recommend reviewing the [ Dedicated Amazon EBS volume limit Documentation](https://docs.aws.amazon.com//AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit) to ensure an appropriately sized EC2 Instance Type is selected.
+ AWS Elastic Disaster Recovery supports replicating Source Servers with up to 60 volumes, however the **Replication server instance type** must also support an equal or greater number of EBS Volume attachments. We recommend reviewing the [ Dedicated Amazon EBS volume limit Documentation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit) to ensure an appropriately sized EC2 Instance Type is selected.
 
 ------
 #### [ DRS Console ]

@@ -12,7 +12,7 @@ The AMS program requires the provisioning of a new Amazon Web Services (AWS) acc
 ## Sign up for an AWS account
 <a name="sign-up-for-aws"></a>
 
-To get started with AWS, you need an AWS account. For information about creating an AWS account, see [Getting started with an AWS account](https://docs.aws.amazon.com//accounts/latest/reference/getting-started.html) in the *AWS Account Management Reference Guide*.
+To get started with AWS, you need an AWS account. For information about creating an AWS account, see [Getting started with an AWS account](https://docs.aws.amazon.com/accounts/latest/reference/getting-started.html) in the *AWS Account Management Reference Guide*.
 
 **Note**
 If you already have an account, you can go to the [AWS Pricing](https://aws.amazon.com/pricing/) page and click **Create a Free Account**. *Be sure to sign up* for the **EC2 Service**, at least. Signing up for one service allows you access to all services in AWS. You are charged only for the services that you use.

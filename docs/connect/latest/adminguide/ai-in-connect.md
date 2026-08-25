@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/ai-in-connect.
 # AI in Connect Customer
 <a name="ai-in-connect"></a>
 
-Connect Customer includes features that use AI, such as contact summarization, semantic rule matching, and performance evaluations. These features use AI models via [Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html).
+Connect Customer includes features that use AI, such as contact summarization, semantic rule matching, and performance evaluations. These features use AI models through [Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html).
 
 ## Amazon Bedrock
 <a name="ai-bedrock"></a>
@@ -22,9 +22,9 @@ For many features, Connect Customer fully manages the underlying AI, including m
 ## Cross-region inference
 <a name="ai-cross-region-inference"></a>
 
-Model inference is the process of a model generating an output (response) from a given input (prompt). To use an optimal model for each feature, Connect Customer may use [cross-region inference](https://docs.aws.amazon.com/bedrock/latest/userguide/cross-region-inference.html) for data processing. This means Connect Customer will automatically select the optimal AWS Region to process inference requests. The available AWS Regions vary based on the region of your Connect Customer instance. All data is transmitted encrypted across Amazon's secure network and does not traverse the public internet.
+Model inference is the process of a model generating an output (response) from a given input (prompt). To use an optimal model for each feature, Connect Customer might use [cross-region inference](https://docs.aws.amazon.com/bedrock/latest/userguide/cross-region-inference.html) for data processing. This means Connect Customer will automatically select the optimal AWS Region to process inference requests. The available AWS Regions vary based on the Region of your Connect Customer instance. All data is transmitted encrypted across Amazon's secure network and does not traverse the public internet.
 
-The following tables lists the Inference regions that a Connect Customer instance may use:
+The following tables lists the Inference regions that a Connect Customer instance might use:
 
 | Connect Customer Instance Region | Inference Regions |
 | --- | --- |

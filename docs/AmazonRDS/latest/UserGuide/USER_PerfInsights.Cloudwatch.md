@@ -17,7 +17,7 @@ Performance Insights automatically publishes some metrics to Amazon CloudWatch. 
 **Note**
 These metrics are published to CloudWatch only if there is load on the DB instance.
 
-You can examine these metrics using the CloudWatch console, the AWS CLI, or the CloudWatch API. You can also examine other Performance Insights counter metrics using a special metric math function. For more information, see [Querying other Performance Insights counter metrics in CloudWatch](#USER_PerfInsights.Cloudwatch.ExtraMetrics).
+You can examine these metrics using the CloudWatch console, the AWS CLI, or the CloudWatch API. You can also examine other detailed per-query and database counter metrics using a special metric math function. For more information, see [Querying other detailed database metrics in CloudWatch](#USER_PerfInsights.Cloudwatch.ExtraMetrics).
 
 For example, you can get the statistics for the `DBLoad` metric by running the [get-metric-statistics](https://docs.aws.amazon.com/cli/latest/reference/cloudwatch/get-metric-statistics.html) command.
 
@@ -80,12 +80,12 @@ This example generates output similar to the following.
 
 For more information about CloudWatch, see [What is Amazon CloudWatch?](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html) in the *Amazon CloudWatch User Guide*.
 
-## Querying other Performance Insights counter metrics in CloudWatch
+## Querying other detailed database metrics in CloudWatch
 <a name="USER_PerfInsights.Cloudwatch.ExtraMetrics"></a>
 
 **Note**
-If you enable the Advanced mode of Database Insights, Amazon RDS publishes Performance Insights counter metrics to Amazon CloudWatch. With Database Insights, you don't need to use the `DB_PERF_INSIGHTS` metric math function. You can use the CloudWatch Database Insights dashboard to search, query, and set alarms for Performance Insights counter metrics.
+If you enable the Advanced mode of Database Insights, Amazon RDS publishes detailed per-query and database counter metrics to Amazon CloudWatch. With Database Insights, you don't need to use the `DB_PERF_INSIGHTS` metric math function. You can use the CloudWatch Database Insights dashboard to search, query, and set alarms for these metrics.
 
-You can query, alarm, and graphs on RDS Performance Insights metrics from CloudWatch. You can access information about your DB instance by using the `DB_PERF_INSIGHTS` metric math function for CloudWatch. This function allows you to use the Performance Insights metrics that are not directly reported to CloudWatch to create a new time series.
+You can query, set alarms on, and graph detailed per-query and database counter metrics from CloudWatch. You can access information about your DB instance by using the `DB_PERF_INSIGHTS` metric math function for CloudWatch. This function allows you to use the metrics that are not directly reported to CloudWatch to create a new time series.
 
-You can use the new Metric Math function by clicking on the **Add Math** drop-down menu in the **Select metric** screen in the CloudWatch console. You can use it to create alarms and graphs on Performance Insights metrics or on combinations of CloudWatch and Performance Insights metrics, including high-resolution alarms for sub-minute metrics. You can also use the function programmatically by including the Metric Math expression in a [`get-metric-data`](https://docs.aws.amazon.com/cli/latest/reference/cloudwatch/get-metric-data.html) request. For more information, see [Metric math syntax and functions](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/using-metric-math.html#metric-math-syntax-functions-list) and [Create an alarm on Performance Insights counter metrics from an AWS database](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_alarm_database_performance_insights.html).
+You can use the new Metric Math function by clicking on the **Add Math** drop-down menu in the **Select metric** screen in the CloudWatch console. You can use it to create alarms and graphs on database counter metrics or on combinations of CloudWatch and these metrics, including high-resolution alarms for sub-minute metrics. You can also use the function programmatically by including the Metric Math expression in a [`get-metric-data`](https://docs.aws.amazon.com/cli/latest/reference/cloudwatch/get-metric-data.html) request. For more information, see [Metric math syntax and functions](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/using-metric-math.html#metric-math-syntax-functions-list) and [Create an alarm on Performance Insights counter metrics from an AWS database](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_alarm_database_performance_insights.html).

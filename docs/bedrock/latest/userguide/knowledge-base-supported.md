@@ -41,8 +41,6 @@ Amazon Bedrock Knowledge Bases supports vector embeddings using the following fo
 
 Embedding models support the following vector types.
 
-****
-
 | Model name | Supported vector type | Supported number of dimensions |
 | --- | --- | --- |
 | Amazon Titan Embeddings G1 - Text | Floating-point | 1536 |

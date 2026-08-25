@@ -10,7 +10,7 @@ To make full use of Resource Groups and Tag Editor, you might need additional pe
 + Permissions that are required to use the Tag Editor console
 + Permissions that are required to use the AWS Resource Groups console and API.
 
-If you are an administrator, you can provide permissions for your users by creating policies through the AWS Identity and Access Management (IAM) service. You first create your principals, such as IAM roles or users, or associate external identities with your AWS environment using a service like AWS IAM Identity Center. Then you apply policies with the permissions that your users need. For information about creating and attaching IAM policies, see [Working with policies](https://docs.aws.amazon.com//IAM/latest/UserGuide/ManagingPolicies.html).
+If you are an administrator, you can provide permissions for your users by creating policies through the AWS Identity and Access Management (IAM) service. You first create your principals, such as IAM roles or users, or associate external identities with your AWS environment using a service like AWS IAM Identity Center. Then you apply policies with the permissions that your users need. For information about creating and attaching IAM policies, see [Working with policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/ManagingPolicies.html).
 
 ## Permissions for individual services
 <a name="rg-perms-individual-services"></a>
@@ -18,9 +18,9 @@ If you are an administrator, you can provide permissions for your users by creat
 **Important**
 This section describes permissions that are required if you want to tag resources from other service consoles and APIs, and add those resources to resource groups.
 
-As described in [Resources and their group types](resource-groups.md#resource-groups-intro), each resource group represents a collection of resources of specified types that share one or more tag keys or values. To add tags to a resource, you need the permissions required for the service to which the resource belongs. For example, to tag Amazon EC2 instances, your must have permissions to the tagging actions in that service's API, such as those listed in the [Amazon EC2 User Guide](https://docs.aws.amazon.com//AWSEC2/latest/UserGuide/Using_Tags.html#Using_Tags_CLI).
+As described in [Resources and their group types](resource-groups.md#resource-groups-intro), each resource group represents a collection of resources of specified types that share one or more tag keys or values. To add tags to a resource, you need the permissions required for the service to which the resource belongs. For example, to tag Amazon EC2 instances, your must have permissions to the tagging actions in that service's API, such as those listed in the [Amazon EC2 User Guide](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html#Using_Tags_CLI).
 
-To make full use of the Resource Groups feature, you need other permissions that allow you to access a service's console and interact with the resources there. For examples of such policies for Amazon EC2, see [Example policies for working in the Amazon EC2 console](https://docs.aws.amazon.com//AWSEC2/latest/UserGuide/iam-policies-ec2-console.html) in the *Amazon EC2 User Guide*.
+To make full use of the Resource Groups feature, you need other permissions that allow you to access a service's console and interact with the resources there. For examples of such policies for Amazon EC2, see [Example policies for working in the Amazon EC2 console](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-policies-ec2-console.html) in the *Amazon EC2 User Guide*.
 
 ## Required permissions for Resource Groups and Tag Editor
 <a name="gettingstarted-prereqs-permissions-te"></a>
@@ -79,7 +79,7 @@ Alternatively, you could use a "deny list" strategy that allows access to all re
 
 ### Adding Resource Groups and Tag Editor permissions manually
 <a name="prereqs-permissions-manualadd"></a>
-+ `resource-groups:*` (This permission allows all Resource Groups actions. If you instead want to restrict actions that are available to a user, you can replace the asterisk with a [specific Resource Groups action](https://docs.aws.amazon.com//IAM/latest/UserGuide/list_awsresourcegroups.html), or to a comma-separated list of actions)
++ `resource-groups:*` (This permission allows all Resource Groups actions. If you instead want to restrict actions that are available to a user, you can replace the asterisk with a [specific Resource Groups action](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awsresourcegroups.html), or to a comma-separated list of actions)
 + `cloudformation:DescribeStacks`
 + `cloudformation:ListStackResources`
 + `tag:GetResources`

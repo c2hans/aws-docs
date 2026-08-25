@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/getting-started/c
 
 Service periods can be added to any channel relationship using Partner Central Channel Management.
 
-1. **Initiate the service period** – Channel Partners create service period invitations on specific relationships, specifying the minimum notice requirement (14, 30, or 60 days).
+1. **Initiate the service period** – Channel Partners create service period invitations on specific relationships, specifying the minimum notice requirement (14, 30, 60, or 90 days).
 
 1. **Customer notification** – A channel handshake is automatically created and the end-customer's AWS management account receives an email notification with a unique response link.
 

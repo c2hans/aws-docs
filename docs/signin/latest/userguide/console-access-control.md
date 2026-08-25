@@ -28,7 +28,7 @@ For complete documentation on resource control policies, including organization-
 AWS Sign-In resource-based policies and RCPs apply to the following authentication methods:
 + **AWS Management Console** – Direct sign-in using the console login page.
 + **Federated identity providers** – Sign-in through SAML or OIDC federation.
-+ **Applications integrated with AWS Sign-In** – Amazon Connect, Amazon QuickSight, AWS Health Dashboard, Amazon AppStream, Amazon Lightsail, AWS IQ.
++ **Applications integrated with AWS Sign-In** – Amazon Connect, Amazon QuickSight, AWS Health Dashboard, Amazon AppStream, Amazon Lightsail.
 
 **Note**
 Console access through the IAM Identity Center portal is not currently compatible with AWS Sign-In policies that restrict access based on network condition keys. Enabling network-based restrictions will block console access for user in IAM Identity Center users.

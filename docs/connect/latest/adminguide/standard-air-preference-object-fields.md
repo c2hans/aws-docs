@@ -22,7 +22,7 @@ The following table lists all the fields in the Customer Profiles standard air p
 | Status | String | The current status of the preference |
 | ReferenceId | String | The id to the object referenced |
 | ReferenceType | String | The type of object referenced |
-| TravelType | String | The type of travel (e.g., direct flights) |
+| TravelType | String | The type of travel (for example, direct flights) |
 | Transfer | String | The preferred type of transfer |
 | ArrivalAirport | String | The preferred arrival airport |
 | ArrivalTerminal | String | The preferred arrival airport terminal |
@@ -67,7 +67,7 @@ For example, you can use `_airPreferenceId` as a key name with the [SearchProfil
 
 | Standard airPreference field | Data type | Description |
 | --- | --- | --- |
-| Type | String | The type of contact (e.g. personal, emergency) |
+| Type | String | The type of contact (for example, personal, emergency) |
 | PreferenceLevel | String | Priority level of this contact |
 | PhoneNumber | String | Phone number |
 | Relationship | String | The relationship to the profile |
@@ -95,7 +95,7 @@ For example, you can use `_airPreferenceId` as a key name with the [SearchProfil
 
 | Standard airPreference field | Data type | Description |
 | --- | --- | --- |
-| Method | String | Communication method (e.g., SMS, Email) |
+| Method | String | Communication method (for example, SMS, Email) |
 | PreferenceLevel | String | Level of preference for communication method |
 
 **Language data type**
@@ -112,11 +112,11 @@ For example, you can use `_airPreferenceId` as a key name with the [SearchProfil
 | Standard airPreference field | Data type | Description |
 | --- | --- | --- |
 | PreferenceLevel | String | Priority of seat preferences |
-| Direction | String | The Preferred seat direction (e.g., front, back) |
-| Location | String | The Preferred seat location (e.g., window, aisle) |
-| Position | String | The Seat position (e.g., left, right) |
+| Direction | String | The Preferred seat direction (for example, front, back) |
+| Location | String | The Preferred seat location (for example, window, aisle) |
+| Position | String | The Seat position (for example, left, right) |
 | Row | String | The desired seat row |
-| ClassOfService | String | The travel class (e.g., Economy, Business) |
+| ClassOfService | String | The travel class (for example, Economy, Business) |
 | NeighborFree | String | Preference for a seat without neighbors |
 | Infant | String | Preference for infant seat |
 | ExtraSeat | String | Preference for extra seat |
@@ -187,7 +187,7 @@ For example, you can use `_airPreferenceId` as a key name with the [SearchProfil
 | Standard airPreference field | Data type | Description |
 | --- | --- | --- |
 | Name | String | Name of payment method |
-| Type | String | Type of payment (e.g., credit card, PayPal) |
+| Type | String | Type of payment (for example, credit card, PayPal) |
 | PreferenceLevel | String | Payment method preference level |
 | UsageContext | String | Where the payment method is used |
 
@@ -211,14 +211,14 @@ For example, you can use `_airPreferenceId` as a key name with the [SearchProfil
 | Standard airPreference field | Data type | Description |
 | --- | --- | --- |
 | PreferenceLevel | String | Level of preference for ticket distribution |
-| Method | String | Ticket delivery method (e.g., email, physical) |
+| Method | String | Ticket delivery method (for example, email, physical) |
 | TicketTime | String | Preferred time for ticket delivery |
 
 **Marketing data type**
 
 | Standard airPreference field | Data type | Description |
 | --- | --- | --- |
-| ChannelType | String | Type of marketing channel (e.g., SMS, Email) |
+| ChannelType | String | Type of marketing channel (for example, SMS, Email) |
 | OptIn | String | Opt-in status for marketing |
 | Frequency | String | Frequency of marketing communications |
 | StartDate | String | Start date of marketing preference |
@@ -229,8 +229,8 @@ For example, you can use `_airPreferenceId` as a key name with the [SearchProfil
 | Standard airPreference field | Data type | Description |
 | --- | --- | --- |
 | Oxygen | String | (Airline supplied, passenger owned, concentrator, etc) |
-| MedicalEquipment | String | Details on medical equipment (e.g., CPAP machine, oxygen concentrator). |
-| Assistance | String | Specifies whether the traveler needs general medical assistance during travel (e.g., in-flight support, help with medication). |
+| MedicalEquipment | String | Details on medical equipment (for example, CPAP machine, oxygen concentrator). |
+| Assistance | String | Specifies whether the traveler needs general medical assistance during travel (for example, in-flight support, help with medication). |
 | Stretcher | String | If the traveler requires a stretcher during flight, typically used for medical transport cases. |
 | WheelChair | String | Wheelchair details (non-spillable, wet cell, immobile, RampNeeded, stairsAssistance, airline provided, etc) |
 
@@ -239,6 +239,6 @@ For example, you can use `_airPreferenceId` as a key name with the [SearchProfil
 | Standard airPreference field | Data type | Description |
 | --- | --- | --- |
 | Animal | String | Indicates if the traveler is traveling with a service animal or pet, and includes relevant specifications or restrictions. (inHold, Cabin) |
-| BaggageType | String | Specifies the preferred type of baggage handling (e.g., carry-on only, checked baggage, oversized). |
+| BaggageType | String | Specifies the preferred type of baggage handling (for example, carry-on only, checked baggage, oversized). |
 | Assistance | String | Indicates whether the traveler requires assistance with carrying or managing their baggage, such as airport porter services or curbside luggage help. |
 | PreferenceLevel | String | Level of preference for Baggage fields |

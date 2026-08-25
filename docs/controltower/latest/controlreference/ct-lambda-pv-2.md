@@ -22,7 +22,7 @@ This is a preventive control with elective guidance based on service control pol
 **Usage considerations**
 This control limits cross-account access to AWS Lambda functions by restricting the allowed IAM principals in a Lambda function resource policy to those in the same account as the Lambda function. Allow listing AWS service principals is not supported by this control.
 Permissions to AWS Lambda functions and related URL(s) are governed by this control.
-This control supports configuration. It contains elements that are included by AWS Control Tower conditionally, based on the configuration you select. This control supports the following configuration parameters: **ExemptedPrincipalArns**. For more information, see [Configure controls with parameters](https://docs.aws.amazon.com//controltower/latest/controlreference/control-parameter-concepts.html).
+This control supports configuration. It contains elements that are included by AWS Control Tower conditionally, based on the configuration you select. This control supports the following configuration parameters: **ExemptedPrincipalArns**. For more information, see [Configure controls with parameters](https://docs.aws.amazon.com/controltower/latest/controlreference/control-parameter-concepts.html).
 
  The artifact for this control is the following service control policy (SCP).
 

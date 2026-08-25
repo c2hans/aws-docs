@@ -35,27 +35,19 @@ The following is an example of this object type.
 ## Syntax
 <a name="shellcommandactivity-syntax"></a>
 
-****
-
 | Object Invocation Fields | Description | Slot Type |
 | --- | --- | --- |
 | schedule | This object is invoked within the execution of a `schedule` interval.<br />To set the dependency execution order for this object, specify a `schedule` reference to another object. <br />To satisfy this requirement, explicitly set a `schedule` on the object, for example, by specifying `"schedule": {"ref": "DefaultSchedule"}`. <br />In most cases, it is better to put the `schedule` reference on the default pipeline object so that all objects inherit that schedule. If the pipeline consists of a tree of schedules (schedules within the master schedule), create a parent object that has a schedule reference. <br />To spread the load, AWS Data Pipeline creates physical objects slightly ahead of schedule, but runs them on schedule. <br />For more information about example optional schedule configurations, see [https://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/dp-object-schedule.html](https://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/dp-object-schedule.html) | Reference Object, e.g. "schedule":{"ref":"myScheduleId"} |
-
-****
 
 | Required Group (One of the following is required) | Description | Slot Type |
 | --- | --- | --- |
 | command | The command to run. Use $ to reference positional parameters and scriptArgument to specify the parameters for the command. This value and any associated parameters must function in the environment from which you are running the Task Runner. | String |
 | scriptUri | An Amazon S3 URI path for a file to download and run as a shell command. Specify only one scriptUri, or command field. scriptUri cannot use parameters, use command instead. | String |
 
-****
-
 | Required Group (One of the following is required) | Description | Slot Type |
 | --- | --- | --- |
 | runsOn | The computational resource to run the activity or command, for example, an Amazon EC2 instance or an Amazon EMR cluster. | Reference Object, e.g. "runsOn":{"ref":"myResourceId"} |
 | workerGroup | Used for routing tasks. If you provide a runsOn value and workerGroup exists, workerGroup is ignored. | String |
-
-****
 
 | Optional Fields | Description | Slot Type |
 | --- | --- | --- |
@@ -81,8 +73,6 @@ The following is an example of this object type.
 | stage | Determines whether staging is enabled and allows your shell commands to have access to the staged-data variables, such as ${INPUT1\_STAGING\_DIR} and ${OUTPUT1\_STAGING\_DIR}. | Boolean |
 | stderr | The path that receives redirected system error messages from the command. If you use the runsOn field, this must be an Amazon S3 path because of the transitory nature of the resource running your activity. However, if you specify the workerGroup field, a local file path is permitted. | String |
 | stdout | The Amazon S3 path that receives redirected output from the command. If you use the runsOn field, this must be an Amazon S3 path because of the transitory nature of the resource running your activity. However, if you specify the workerGroup field, a local file path is permitted. | String |
-
-****
 
 | Runtime Fields | Description | Slot Type |
 | --- | --- | --- |
@@ -111,8 +101,6 @@ The following is an example of this object type.
 | @status | The status of the object. | String |
 | @version | The AWS Data Pipeline version used to create the object. | String |
 | @waitingOn | The description of the list of dependencies this object is waiting on. | Reference Object, e.g. "waitingOn":{"ref":"myRunnableObjectId"} |
-
-****
 
 | System Fields | Description | Slot Type |
 | --- | --- | --- |

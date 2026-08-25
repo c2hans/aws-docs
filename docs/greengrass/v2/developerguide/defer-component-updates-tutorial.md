@@ -30,5 +30,5 @@ You can expect to spend 20–30 minutes on this tutorial.
 You've completed this tutorial. The Hello World component defers or acknowledges updates based on the core device's battery level. For more information about the topics that this tutorial explores, see the following:
 + [Develop AWS IoT Greengrass components](develop-greengrass-components.md)
 + [Deploy AWS IoT Greengrass components to devices](manage-deployments.md)
-+ [Use the AWS IoT Device SDK to communicate with the Greengrass nucleus, other components, and AWS IoT CoreCommunicate with the Greengrass nucleus, other components, and AWS IoT Core](interprocess-communication.md)
++ [Use the AWS IoT Device SDK to communicate with the Greengrass nucleus, other components, and AWS IoT Core](interprocess-communication.md)
 + [AWS IoT Greengrass Development Kit Command-Line Interface](greengrass-development-kit-cli.md)

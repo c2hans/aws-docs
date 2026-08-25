@@ -14,8 +14,6 @@ Use to create a Network Load Balancer.
 ## Change Type Details
 <a name="ct-2qldv4h9osmau-DANc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2qldv4h9osmau |

@@ -28,7 +28,6 @@ When you query S3 Express One Zone with Athena, consider the following points.
 + No table modifying DDL statements for Apache Iceberg (that is, no `ALTER TABLE` statements) are supported for S3 Express One Zone.
 + Lake Formation is not supported with S3 Express One Zone buckets.
 + The following file and table formats are unsupported or have limited support. If formats aren't listed, but are supported for Athena (such as Parquet, ORC, and JSON), then they're also supported for use with S3 Express One Zone storage.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/athena/latest/ug/querying-express-one-zone.html)
 
 ## Get started

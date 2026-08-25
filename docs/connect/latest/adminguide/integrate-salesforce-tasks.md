@@ -36,7 +36,7 @@ Verify that you have enabled **Change Data Capture** in Salesforce. The followin
 1. After you verify Salesforce requirements, on the **Select application** page, choose **Next**.
 
 1. On the **Establish connection** page, choose one of the following:
-   + **Use an existing connection**. This allows you to reuse existing EventBridge resources that are linked to Amazon AppFlow flows that you may have created in your AWS account.
+   + **Use an existing connection**. This allows you to reuse existing EventBridge resources that are linked to Amazon AppFlow flows that you might have created in your AWS account.
    + **Create a new connection**: Enter the information required by the external application.
 
      1. Enter your application instance URL. This URL is used for deep-linking into the tasks created in your external application.

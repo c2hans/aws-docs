@@ -145,7 +145,7 @@ It will typically take about 24 hours for the first delivery of AWS Data Exports
 #### Backfill Data Export
 <a name="backfill-data-export"></a>
 
-You can now [create a Support Case](https://support.console.aws.amazon.com/support/home#/case/create), requesting a [backfill](https://docs.aws.amazon.com/cur/latest/userguide/troubleshooting.html#backfill-data) of your reports (CUR or FOCUS) with up to 36 months of historical data. Case must be created from each of your Source Accounts (Typically Management/Payer Accounts).
+You can now [create a Support Case](https://support.console.aws.amazon.com/support/home#/case/create), requesting a [backfill](https://docs.aws.amazon.com/cur/latest/userguide/troubleshooting.html#backfill-data) of your reports (CUR or FOCUS) with up to 14 months of historical data. Case must be created from each of your Source Accounts (Typically Management/Payer Accounts).
 
 ##### Support ticket example
 <a name="collapsible-section-id-data-exports-4"></a>

@@ -34,25 +34,25 @@ This tutorial takes about 60 minutes to complete.
 You'll need your AWS account and AWS IoT console to complete this tutorial.
 
   The account you use for this tutorial works best when it includes at least these AWS managed policies:
-  + [`IAMFullAccess`](https://console.aws.amazon.com//iam/home#/policies/arn:aws:iam::aws:policy/IAMFullAccess$jsonEditor)
-  + [`AWSIoTFullAccess`](https://console.aws.amazon.com//iam/home#/policies/arn:aws:iam::aws:policy/AWSIoTFullAccess$jsonEditor)
-  + [`AWSLambda_FullAccess`](https://console.aws.amazon.com//iam/home#/policies/arn:aws:iam::aws:policy/AWSLambda_FullAccess$jsonEditor)
+  + [`IAMFullAccess`](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/IAMFullAccess$jsonEditor)
+  + [`AWSIoTFullAccess`](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/AWSIoTFullAccess$jsonEditor)
+  + [`AWSLambda_FullAccess`](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/AWSLambda_FullAccess$jsonEditor)
 **Important**
 The IAM policies used in this tutorial are more permissive than you should follow in a production implementation. In a production environment, make sure that your account and resource policies grant only the necessary permissions.
 When you create IAM policies for production, determine what access users and roles need, and then design the policies that allow them to perform only those tasks.
-For more information, see [Security best practices in IAM](https://docs.aws.amazon.com//IAM/latest/UserGuide/best-practices.html)
+For more information, see [Security best practices in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)
 +
 
 **Installed the AWS CLI**
-For information about how to install the AWS CLI, see [Installing the AWS CLI](https://docs.aws.amazon.com//cli/latest/userguide/cli-chap-install.html). This tutorial requires AWS CLI version `aws-cli/2.1.3 Python/3.7.4 Darwin/18.7.0 exe/x86_64` or later.
+For information about how to install the AWS CLI, see [Installing the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html). This tutorial requires AWS CLI version `aws-cli/2.1.3 Python/3.7.4 Darwin/18.7.0 exe/x86_64` or later.
 +
 
 **OpenSSL tools**
 The examples in this tutorial use [LibreSSL 2.6.5](https://www.libressl.org/). You can also use [OpenSSL v1.1.1i](https://www.openssl.org/) tools for this tutorial.
 +
 
-**Reviewed the [AWS Lambda](https://docs.aws.amazon.com//lambda/latest/dg/welcome.html) overview**
-If you haven't used AWS Lambda before, review [AWS Lambda](https://docs.aws.amazon.com//lambda/latest/dg/welcome.html) and [Getting started with Lambda](https://docs.aws.amazon.com//lambda/latest/dg/getting-started.html) to learn its terms and concepts.
+**Reviewed the [AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html) overview**
+If you haven't used AWS Lambda before, review [AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html) and [Getting started with Lambda](https://docs.aws.amazon.com/lambda/latest/dg/getting-started.html) to learn its terms and concepts.
 +
 
 **Reviewed how to build requests in Postman**
@@ -65,7 +65,7 @@ Your AWS account can have only a limited number of custom authorizers configured
 ## Step 1: Create a Lambda function for your custom authorizer
 <a name="custom-auth-tutorial-define"></a>
 
-Custom authentication in AWS IoT Core uses [authorizer resources](https://docs.aws.amazon.com//iot/latest/apireference/API_AuthorizerDescription.html) that you create to authenticate and authorize clients. The function you'll create in this section authenticates and authorizes clients as they connect to AWS IoT Core and access AWS IoT resources.
+Custom authentication in AWS IoT Core uses [authorizer resources](https://docs.aws.amazon.com/iot/latest/apireference/API_AuthorizerDescription.html) that you create to authenticate and authorize clients. The function you'll create in this section authenticates and authorizes clients as they connect to AWS IoT Core and access AWS IoT resources.
 
 The Lambda function does the following:
 + If a request comes from **test-invoke-authorizer**, it returns an IAM policy with a `Deny` action.
@@ -73,7 +73,7 @@ The Lambda function does the following:
 
 **To create the Lambda function for your custom authorizer**
 
-1. In the [Lambda](https://console.aws.amazon.com//lambda/home#) console, open [Functions](https://console.aws.amazon.com//lambda/home#/functions).
+1. In the [Lambda](https://console.aws.amazon.com/lambda/home#) console, open [Functions](https://console.aws.amazon.com/lambda/home#/functions).
 
 1. Choose **Create function**.
 
@@ -87,7 +87,7 @@ The Lambda function does the following:
 
 1. Choose **Create function**.
 
-   Lambda creates a Node.js function and an [execution role](https://docs.aws.amazon.com//lambda/latest/dg/lambda-intro-execution-role.html) that grants the function permission to upload logs. The Lambda function assumes the execution role when you invoke your function and uses the execution role to create credentials for the AWS SDK and to read data from event sources.
+   Lambda creates a Node.js function and an [execution role](https://docs.aws.amazon.com/lambda/latest/dg/lambda-intro-execution-role.html) that grants the function permission to upload logs. The Lambda function assumes the execution role when you invoke your function and uses the execution role to create credentials for the AWS SDK and to read data from event sources.
 
 1. To see the function's code and configuration in the [AWS Cloud9](https://docs.aws.amazon.com/cloud9/latest/user-guide/welcome.html) editor, choose **custom-auth-function** in the designer window, and then choose **index.js** in the navigation pane of the editor.
 
@@ -255,7 +255,7 @@ For this tutorial, you only need to create one custom authorizer. This section d
 
 **To create a custom authorizer (console)**
 
-1. Open the [Custom authorizer page of the AWS IoT console](https://console.aws.amazon.com//iot/home#/authorizerhub), and choose **Create Authorizer**.
+1. Open the [Custom authorizer page of the AWS IoT console](https://console.aws.amazon.com/iot/home#/authorizerhub), and choose **Create Authorizer**.
 
 1. In **Create Authorizer**:
 
@@ -349,7 +349,7 @@ For this tutorial, you only need to create one custom authorizer. This section d
 ### Authorize the custom authorizer resource
 <a name="custom-auth-tutorial-authorizer-permission"></a>
 
-In this section, you'll grant permission the custom authorizer resource that you just created permission to run the Lambda function. To grant the permission, you can use the [add-permission](https://docs.aws.amazon.com//cli/latest/reference/lambda/add-permission.html) CLI command.
+In this section, you'll grant permission the custom authorizer resource that you just created permission to run the Lambda function. To grant the permission, you can use the [add-permission](https://docs.aws.amazon.com/cli/latest/reference/lambda/add-permission.html) CLI command.
 
 **Grant permission to your Lambda function using the AWS CLI**
 
@@ -522,7 +522,7 @@ In the previous step, you sent simulated device messages to AWS IoT by using Pos
 
 **To see the test messages authorized by your custom authorizer**
 
-1. In the AWS IoT console, open the [MQTT test client](https://console.aws.amazon.com//iot/home#/test).
+1. In the AWS IoT console, open the [MQTT test client](https://console.aws.amazon.com/iot/home#/test).
 
 1. In the **Subscribe to topic** tab, in **Topic filter**, enter **test/cust-auth/topic**, which is the message topic used in the Postman example from the previous section.
 
@@ -571,7 +571,7 @@ If you'd like repeat this tutorial, you might need to remove some of your custom
 
 **To remove a custom authorizer (console)**
 
-1. Open the [Custom authorizer page of the AWS IoT console](https://console.aws.amazon.com//iot/home#/authorizerhub), and in the list of custom authorizers, find the custom authorizer to remove.
+1. Open the [Custom authorizer page of the AWS IoT console](https://console.aws.amazon.com/iot/home#/authorizerhub), and in the list of custom authorizers, find the custom authorizer to remove.
 
 1. Open the Custom authorizer details page and, from the **Actions** menu, choose **Edit**.
 

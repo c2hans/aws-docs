@@ -11,6 +11,7 @@ In the CloudHSM CLI, **key** is a parent category for a group of commands that, 
 + [key generate-asymmetric-pair](cloudhsm_cli-key-generate-asymmetric-pair.md)
   + [key generate-asymmetric-pair rsa](cloudhsm_cli-key-generate-asymmetric-pair-rsa.md)
   + [key generate-asymmetric-pair ec](cloudhsm_cli-key-generate-asymmetric-pair-ec.md)
+  + [key generate-asymmetric-pair ml-dsa](cloudhsm_cli-key-generate-asymmetric-pair-mldsa.md)
 + [key generate-symmetric](cloudhsm_cli-key-generate-symmetric.md)
   + [key generate-symmetric aes](cloudhsm_cli-key-generate-symmetric-aes.md)
   + [key generate-symmetric generic-secret](cloudhsm_cli-key-generate-symmetric-generic-secret.md)

@@ -21,7 +21,7 @@ The following sections cover the steps to build a C2C (Cloud-to-Cloud) connector
 <a name="c2c-connector-prerequisites"></a>
 
 Before you create a C2C (Cloud-to-Cloud) connector, you need the following:
-+ An AWS account to host your C2C connector and to register it through managed integrations. For more information, see [Create an AWS account](https://docs.aws.amazon.com//accounts/latest/reference/manage-acct-creating.html).
++ An AWS account to host your C2C connector and to register it through managed integrations. For more information, see [Create an AWS account](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-creating.html).
 + When you build your connector, you need certain IAM permissions (see Required Permissions section below).
 + Determine which authorization type your connector will support. Managed Integrations supports OAuth 2.0 authorization and General Authorization.
 

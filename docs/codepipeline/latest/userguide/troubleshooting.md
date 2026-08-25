@@ -354,8 +354,6 @@ An example of a minor change at the end of the parameter name for CodeCommit wou
 
 This applies to source actions that use CWE events for change detection as follows:
 
-****
-
 | Source action | Parameters / trigger identifiers (console) |
 | --- | --- |
 | Amazon ECR | **Repository name**<br />**Image tag** |

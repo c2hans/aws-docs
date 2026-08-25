@@ -9,6 +9,7 @@ The following table describes the releases for Reachability Analyzer.
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [AWS managed policy updates](https://docs.aws.amazon.com/vpc/latest/reachability/security-iam-awsmanpol.html#security-iam-awsmanpol-updates) | Reachability Analyzer added read-only permissions to two existing AWS managed policies. | August 14, 2026 |
 | [Removed Amazon Q network troubleshooting](#doc-history) | Reachability Analyzer no longer supports Amazon Q troubleshooting. | June 10, 2025 |
 | [Filter a resource from analysis](https://docs.aws.amazon.com/vpc/latest/reachability/getting-started.html#path-filters) | Added a new option to Reachability Analyzer that allows you to filter an AWS resource from analysis. | May 8, 2025 |
 | [AWS managed policy updates](https://docs.aws.amazon.com/vpc/latest/reachability/security-iam-awsmanpol.html) | Reachability Analyzer updated one existing policy. | September 10, 2024 |

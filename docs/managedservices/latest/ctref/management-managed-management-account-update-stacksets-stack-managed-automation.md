@@ -14,8 +14,6 @@ Update an existing AWS CloudFormation (CFN) StackSets stack to deploy, or to upd
 ## Change Type Details
 <a name="ct-1v9g9n30woc8h-MMMu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1v9g9n30woc8h |

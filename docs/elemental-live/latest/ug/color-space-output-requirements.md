@@ -13,8 +13,6 @@ You can include any color space in any video in any supported output type. The m
 
 There are specific requirements for converting to HDR10 or Dolby Vision outputs.
 
-****
-
 | Requirement | Applies to converting to HDR10 | Applies to converting to Dolby Vision |
 | --- | --- | --- |
 | Codec must be HEVC. | Yes | Yes |

@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-data-delivery-iceberg-attributes.html
 ---
 
-# S3 Tables table attributes
+# Table attributes
 <a name="msk-data-delivery-iceberg-attributes"></a>
 
 The Iceberg table a Channel creates has the following attributes (designed for governance and compliance):

@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon Cognito Sync provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="cognito-sync-DescribeDataset"></a>[DescribeDataset](https://docs.aws.amazon.com/cognitosync/latest/APIReference/API_DescribeDataset.html) | Get metadata about a dataset by identity and dataset name | Read |

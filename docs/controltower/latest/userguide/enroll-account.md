@@ -53,7 +53,7 @@ You can change the default behavior for new accounts by configuring Account Fact
 ## Enroll accounts with AWS Config resources
 <a name="example-config-cli-commands"></a>
 
-The account to be enrolled must not have existing AWS Config resources. See [Enroll accounts that have existing AWS Config resources](https://docs.aws.amazon.com//controltower/latest/userguide/existing-config-resources.html).
+The account to be enrolled must not have existing AWS Config resources. See [Enroll accounts that have existing AWS Config resources](https://docs.aws.amazon.com/controltower/latest/userguide/existing-config-resources.html).
 
 Here are some example AWS Config CLI commands you can use to determine the status of your existing account's AWS Config resources, such as the configuration recorder and delivery channel.
 

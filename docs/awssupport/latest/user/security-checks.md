@@ -992,7 +992,7 @@ Password content requirements increase the overall security of your AWS environm
 **Recommended Action**
 If some content requirements are not enabled, consider enabling them. If no password policy is enabled, create and configure one. See [Setting an Account Password Policy for IAM Users](https://docs.aws.amazon.com/IAM/latest/UserGuide/Using_ManagingPasswordPolicies.html).
 To access the AWS Management Console, IAM users need passwords. As a best practice, AWS highly recommends that instead of creating IAM users, you use federation. Federation allows users to use their existing corporate credentials to log into the AWS Management Console. Use IAM Identity Center to create or federate the user, and then assume an IAM role into an account.
-To learn more about identity providers and federation, see [Identity providers and federation](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_roles_providers.html) in the IAM User Guide. To learn more about IAM Identity Center, see the [IAM Identity Center User Guide](https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html).
+To learn more about identity providers and federation, see [Identity providers and federation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers.html) in the IAM User Guide. To learn more about IAM Identity Center, see the [IAM Identity Center User Guide](https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html).
 
 **Additional Resources**
 [Managing Passwords](https://docs.aws.amazon.com/IAM/latest/UserGuide/Credentials-ManagingPasswords.html)
@@ -1047,7 +1047,7 @@ For your AWS Organizations member accounts, we recommend that you centrally mana
 + Green: No root user credentials (root password) exist or MFA is enabled for the account.
 
 **Recommended action**
-**If this is a member account in AWS Organizations:** Log in to your management account, enable the root access management feature in IAM, and remove your root user credentials from this member account. See [Centralize root access for member accounts](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_root-enable-root-access.html).
+**If this is a member account in AWS Organizations:** Log in to your management account, enable the root access management feature in IAM, and remove your root user credentials from this member account. See [Centralize root access for member accounts](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-enable-root-access.html).
 **If this is a standalone or management account in AWS Organizations:** Log in to your root account and activate an MFA device. For more information, see [Check MFA status](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa_checking-status.html) and [AWS Multi-factor authentication in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa.html)
 
 **Additional resources**

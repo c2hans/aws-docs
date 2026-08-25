@@ -25,7 +25,7 @@ This topic explains authenticating requests using Signature Version 2. Amazon S3
 **Note**
  The content in this section does not apply to HTTP POST. For more information, see [Browser-based uploads using POST (AWS signature version 2)](UsingHTTPPOST.md).
 
- The Amazon S3 REST API uses a custom HTTP scheme based on a keyed-HMAC (Hash Message Authentication Code) for authentication. To authenticate a request, you first concatenate selected elements of the request to form a string. You then use your AWS secret access key to calculate the HMAC of that string. Informally, we call this process "signing the request," and we call the output of the HMAC algorithm the signature, because it simulates the security properties of a real signature. Finally, you add this signature as a parameter of the request by using the syntax described in this section.
+ The Amazon S3 REST API uses a custom HTTP scheme based on a keyed-HMAC (Hash Message Authentication Code) for authentication. To authenticate a request, you first concatenate selected elements of the request to form a string. You then use your AWS secret access key to calculate the HMAC of that string. Informally, this process is called "signing the request," and the output of the HMAC algorithm is the signature, because it simulates the security properties of a real signature. Finally, you add this signature as a parameter of the request by using the syntax described in this section.
 
  When the system receives an authenticated request, it fetches the AWS secret access key that you claim to have and uses it in the same way to compute a signature for the message it received. It then compares the signature it calculated against the signature presented by the requester. If the two signatures match, the system concludes that the requester must have access to the AWS secret access key and therefore acts with the authority of the principal to whom the key was issued. If the two signatures do not match, the request is dropped and the system responds with an error message.
 
@@ -86,7 +86,7 @@ Following is pseudogrammar that illustrates the construction of the `Authorizati
 ## Request canonicalization for signing
 <a name="RESTAuthenticationRequestCanonicalization"></a>
 
- Recall that when the system receives an authenticated request, it compares the computed request signature with the signature provided in the request in `StringToSign`. For that reason, you must compute the signature by using the same method used by Amazon S3. We call the process of putting a request in an agreed-upon form for signing *canonicalization*.
+ Recall that when the system receives an authenticated request, it compares the computed request signature with the signature provided in the request in `StringToSign`. For that reason, you must compute the signature by using the same method used by Amazon S3. The process of putting a request in an agreed-upon form for signing *canonicalization*.
 
 ## Constructing the CanonicalizedResource element
 <a name="ConstructingTheCanonicalizedResourceElement"></a>
@@ -95,7 +95,7 @@ Following is pseudogrammar that illustrates the construction of the `Authorizati
 
 1.  Start with an empty string (`""`).
 
-1. If the request specifies a bucket using the HTTP Host header (virtual hosted-style), append the bucket name preceded by a `"/"` (e.g., "/bucketname"). For path-style requests and requests that don't address a bucket, do nothing. For more information about virtual hosted-style requests, see [Virtual hosting of buckets ](https://docs.aws.amazon.com//AmazonS3/latest/userguide/VirtualHosting.html).
+1. If the request specifies a bucket using the HTTP Host header (virtual hosted-style), append the bucket name preceded by a `"/"` (e.g., "/bucketname"). For path-style requests and requests that don't address a bucket, do nothing. For more information about virtual hosted-style requests, see [Virtual hosting of buckets ](https://docs.aws.amazon.com/AmazonS3/latest/userguide/VirtualHosting.html).
 
    For a virtual hosted-style request "https://awsexamplebucket1.s3.us-west-1.amazonaws.com/photos/puppy.jpg", the `CanonicalizedResource` is "/awsexamplebucket1".
 
@@ -119,7 +119,7 @@ Following is pseudogrammar that illustrates the construction of the `Authorizati
 
 Elements of the CanonicalizedResource that come from the HTTP Request-URI should be signed literally as they appear in the HTTP request, including URL-Encoding meta characters.
 
-The `CanonicalizedResource` might be different than the HTTP Request-URI. In particular, if your request uses the HTTP `Host` header to specify a bucket, the bucket does not appear in the HTTP Request-URI. However, the `CanonicalizedResource` continues to include the bucket. Query string parameters might also appear in the Request-URI but are not included in `CanonicalizedResource`. For more information, see [Virtual hosting of buckets ](https://docs.aws.amazon.com//AmazonS3/latest/userguide/VirtualHosting.html).
+The `CanonicalizedResource` might be different than the HTTP Request-URI. In particular, if your request uses the HTTP `Host` header to specify a bucket, the bucket does not appear in the HTTP Request-URI. However, the `CanonicalizedResource` continues to include the bucket. Query string parameters might also appear in the Request-URI but are not included in `CanonicalizedResource`. For more information, see [Virtual hosting of buckets ](https://docs.aws.amazon.com/AmazonS3/latest/userguide/VirtualHosting.html).
 
 ## Constructing the CanonicalizedAmzHeaders element
 <a name="RESTAuthenticationConstructingCanonicalizedAmzHeaders"></a>
@@ -242,7 +242,7 @@ This example deletes an object from the 'awsexamplebucket1' bucket using the pat
 | --- | --- |
 |  <pre>DELETE /awsexamplebucket1/photos/puppy.jpg HTTP/1.1<br />User-Agent: dotnet<br />Host: s3.us-west-1.amazonaws.com<br />Date: Tue, 27 Mar 2007 21:20:27 +0000<br /><br />x-amz-date: Tue, 27 Mar 2007 21:20:26 +0000<br />{{Authorization: AWS AKIAIOSFODNN7EXAMPLE:XbyTlbQdu9Xw5o8P4iMwPktxQd8=}}</pre>  |  <pre>DELETE\n<br />\n<br />\n<br />Tue, 27 Mar 2007 21:20:26 +0000\n<br />/awsexamplebucket1/photos/puppy.jpg</pre>  |
 
- Note how we used the alternate 'x-amz-date' method of specifying the date (because our client library prevented us from setting the date, say). In this case, the `x-amz-date` takes precedence over the `Date` header. Therefore, date entry in the signature must contain the value of the `x-amz-date` header.
+ Note how the alternate 'x-amz-date' method of specifying the date (because our client library prevented us from setting the date, say). In this case, the `x-amz-date` takes precedence over the `Date` header. Therefore, date entry in the signature must contain the value of the `x-amz-date` header.
 
 ### Upload
 <a name="RESTAuthenticationExamples-6"></a>
@@ -288,7 +288,7 @@ Some toolkits silently insert headers that you do not know about beforehand, suc
 
 You can authenticate certain types of requests by passing the required information as query-string parameters instead of using the `Authorization` HTTP header. This is useful for enabling direct third-party browser access to your private Amazon S3 data without proxying the request. The idea is to construct a "presigned" request and encode it as a URL that an end-user's browser can retrieve. Additionally, you can limit a presigned request by specifying an expiration time.
 
-For more information about using query parameters to authenticate requests, see [Authenticating Requests: Using Query Parameters (AWS Signature Version 4)](https://docs.aws.amazon.com/AmazonS3/latest/API/sigv4-query-string-auth.html) in the *Amazon Simple Storage Service API Reference*. For examples of using the AWS SDKs to generating presigned URLs, see [Sharing objects with presigned URLs ](https://docs.aws.amazon.com//AmazonS3/latest/userguide/ShareObjectPreSignedURL.html).
+For more information about using query parameters to authenticate requests, see [Authenticating Requests: Using Query Parameters (AWS Signature Version 4)](https://docs.aws.amazon.com/AmazonS3/latest/API/sigv4-query-string-auth.html) in the *Amazon Simple Storage Service API Reference*. For examples of using the AWS SDKs to generating presigned URLs, see [Sharing objects with presigned URLs ](https://docs.aws.amazon.com/AmazonS3/latest/userguide/ShareObjectPreSignedURL.html).
 
 ### Creating a signature
 <a name="CreatingASignature"></a>
@@ -335,7 +335,7 @@ In the query string authentication method, you do not use the `Date` or the `x-a
 | --- | --- |
 |  <pre>GET /photos/puppy.jpg?AWSAccessKeyId=AKIAIOSFODNN7EXAMPLE&<br />    Signature=NpgCjnDzrM%2BWFzoENXmpNDUsSn8%3D&<br />    Expires=1175139620 HTTP/1.1<br /><br />Host: awsexamplebucket1.s3.us-west-1.amazonaws.com</pre>  |  <pre>GET\n<br />\n<br />\n<br />1175139620\n<br /><br />/awsexamplebucket1/photos/puppy.jpg</pre>  |
 
-We assume that when a browser makes the GET request, it won't provide a Content-MD5 or a Content-Type header, nor will it set any x-amz- headers, so those parts of the `StringToSign` are left blank.
+This example assumes that when a browser makes the GET request, it won't provide a Content-MD5 or a Content-Type header, nor will it set any x-amz- headers, so those parts of the `StringToSign` are left blank.
 
 #### Using Base64 encoding
 <a name="S3_Authentication_Base64"></a>

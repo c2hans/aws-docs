@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/roles-and-respo
 
 The following are the roles and their associated responsibilities for enabling third-party application integration with AWS Lake Formation.
 
-****
-
 | Role | Responsibility |
 | --- | --- |
 | The customer |  +   Enable Lake Formation application integration setting (see [Registering a third-party query engine](register-query-engine.md)). <br />+   Explicitly registers approved third parties with Lake Formation (see [Registering a third-party query engine](register-query-engine.md)). <br />+   Tests and validates third-party solutions with Lake Formation permissions. <br />+   Monitors and audits third-party usage of Lake Formation credential vending API operations.   |

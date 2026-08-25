@@ -360,6 +360,8 @@ The following data types are supported by Amazon SageMaker Service:
 +  [HyperParameterTuningResourceConfig](API_HyperParameterTuningResourceConfig.md)
 +  [IamIdentity](API_IamIdentity.md)
 +  [IamPolicyConstraints](API_IamPolicyConstraints.md)
++  [IdcConfigInput](API_IdcConfigInput.md)
++  [IdcConfigOutput](API_IdcConfigOutput.md)
 +  [IdentityProviderOAuthSetting](API_IdentityProviderOAuthSetting.md)
 +  [IdleSettings](API_IdleSettings.md)
 +  [Image](API_Image.md)

@@ -137,7 +137,7 @@ Required: No
  ** [AssociationVersion](#API_UpdateAssociation_RequestSyntax) **   <a name="systemsmanager-UpdateAssociation-request-AssociationVersion"></a>
 This parameter is provided for concurrency control purposes. You must specify the latest association version in the service. If you want to ensure that this request succeeds, either specify `$LATEST`, or omit this parameter.
 Type: String
-Pattern: `([$]LATEST)|([1-9][0-9]*)`
+Pattern: `^(([$]LATEST)|([1-9][0-9]*))$`
 Required: No
 
  ** [AutomationTargetParameterName](#API_UpdateAssociation_RequestSyntax) **   <a name="systemsmanager-UpdateAssociation-request-AutomationTargetParameterName"></a>

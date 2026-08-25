@@ -10,11 +10,11 @@ Recommendations for your AWS resources are displayed in the following pages of t
 + The **resource details** page lists the top recommendation options for a specific resource, along with utilization metric graphs for the resource. You can access this page from the recommendations page.
 
 The recommendations and resource details pages are available for each of the following AWS resources that are supported by Compute Optimizer:
-+ [ Amazon EC2 instances](https://docs.aws.amazon.com//compute-optimizer/latest/ug/view-ec2-recommendations.html)
-+ [ EC2 Auto Scaling groups](https://docs.aws.amazon.com//compute-optimizer/latest/ug/view-asg-recommendations.html)
-+  [ Amazon EBS volumes](https://docs.aws.amazon.com//compute-optimizer/latest/ug/view-ebs-recommendations.html)
-+  [AWS Lambda functions](https://docs.aws.amazon.com//compute-optimizer/latest/ug/view-lambda-recommendations.html)
-+  [ Amazon ECS services on Fargate](https://docs.aws.amazon.com//compute-optimizer/latest/ug/view-ecs-recommendations.html)
-+  [ Commercial software licenses](https://docs.aws.amazon.com//compute-optimizer/latest/ug/view-license-recommendations.html)
-+  [ Amazon RDS DB instances](https://docs.aws.amazon.com//compute-optimizer/latest/ug/view-rds-recommendations.html)
-+  [ Idle resources](https://docs.aws.amazon.com//compute-optimizer/latest/ug/view-idle-recommendations.html)
++ [ Amazon EC2 instances](https://docs.aws.amazon.com/compute-optimizer/latest/ug/view-ec2-recommendations.html)
++ [ EC2 Auto Scaling groups](https://docs.aws.amazon.com/compute-optimizer/latest/ug/view-asg-recommendations.html)
++  [ Amazon EBS volumes](https://docs.aws.amazon.com/compute-optimizer/latest/ug/view-ebs-recommendations.html)
++  [AWS Lambda functions](https://docs.aws.amazon.com/compute-optimizer/latest/ug/view-lambda-recommendations.html)
++  [ Amazon ECS services on Fargate](https://docs.aws.amazon.com/compute-optimizer/latest/ug/view-ecs-recommendations.html)
++  [ Commercial software licenses](https://docs.aws.amazon.com/compute-optimizer/latest/ug/view-license-recommendations.html)
++  [ Amazon RDS DB instances](https://docs.aws.amazon.com/compute-optimizer/latest/ug/view-rds-recommendations.html)
++  [ Idle resources](https://docs.aws.amazon.com/compute-optimizer/latest/ug/view-idle-recommendations.html)

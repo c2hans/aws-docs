@@ -45,7 +45,7 @@ The ability to search for in-progress contacts varies by channel (see [Contact e
 
 You can search for contacts in a particular contact state using **Timestamp type** within the **Time range** filter. For example, you can search for task contacts that are scheduled for the next day by selecting **Contact status = In progress**, **Timestamp type = Scheduled** and the appropriate date within **Time range**.
 
-The following timestamp types are supported: initiated, connected (to agent), disconnected and scheduled. When you search for contacts using a certain ** Timestamp type**, the search results do not contain contacts that do not have that timestamp populated, e.g. if you search for a contact with **Timestamp type = Disconnected** and **Contact status = In progress**, then you will only view contacts that are in After Contact Work state.
+The following timestamp types are supported: initiated, connected (to agent), disconnected and scheduled. When you search for contacts using a certain ** Timestamp type**, the search results do not contain contacts that do not have that timestamp populated, for example, if you search for a contact with **Timestamp type = Disconnected** and **Contact status = In progress**, then you will only view contacts that are in After Contact Work state.
 
 **Important**
 The **Time range** filter on the **Contact search** page has **Timestamp type** set to ** Initiated** by default. Before the Timestamp type selection was introduced, the Timestamp type used by the **Time range** filter was **Disconnected**.
@@ -61,8 +61,8 @@ You can choose on a Contact ID within the **Contact search** results to view det
 ### Important things to know
 <a name="important-view-inprogress-contacts"></a>
 + The **Contact details** page for an in-progress contact shows data available at the time **Contact details** page was opened. It does not automatically refresh as the contact progresses. You need to refresh the page manually using your browser.
-+ Certain fields on **Contact search** and **** may have missing or inconsistent information while the contact is in progress. After a contact is completed, information is eventually made consistent with the underlying contact record, after the page is manually refreshed.
-+ There may be a delay between the contact being **Completed** and the contact being marked as **Completed** on the contact record.
++ Certain fields on **Contact search** and **** might have missing or inconsistent information while the contact is in progress. After a contact is completed, information is eventually made consistent with the underlying contact record, after the page is manually refreshed.
++ There might be a delay between the contact being **Completed** and the contact being marked as **Completed** on the contact record.
 
 ## Review real-time transcripts
 <a name="review-realtime-transcripts"></a>

@@ -20,7 +20,7 @@ While your account is in the sandbox, you can use all of the SMS sending methods
 + You have a monthly MMS spending limit of $1.00 (USD).
 + You can send SMS and MMS messages only to verified destination phone numbers. You can add up to 10 verified numbers.
 + The rules and restrictions for sending SMS and MMS messages to each destination country apply. For example, to send a message to a recipient in the United States, you must first request and register a US number.
-+ To verify that you own a phone number, we send a verification code to that number. While the standard fees for each SMS message typically apply, we waive the fee for the first verification code for each phone number. For more information about SMS pricing, see the [AWS End User Messaging Pricing](https://aws.amazon.com//end-user-messaging/pricing/) page.
++ To verify that you own a phone number, we send a verification code to that number. While the standard fees for each SMS message typically apply, we waive the fee for the first verification code for each phone number. For more information about SMS pricing, see the [AWS End User Messaging Pricing](https://aws.amazon.com/end-user-messaging/pricing/) page.
 **Note**
 Message and data rates apply for messages that you receive. We send one message per verification request.
 + You can delete a destination phone number. However, you must wait 24 hours after adding a phone number before you can delete it.

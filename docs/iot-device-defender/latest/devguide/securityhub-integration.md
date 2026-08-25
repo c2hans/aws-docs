@@ -24,7 +24,7 @@ With the AWS IoT Device Defender integration with Security Hub CSPM, you can sen
 
 Before you integrate AWS IoT Device Defender with Security Hub CSPM, you must first enable Security Hub CSPM. For information about how to enable Security Hub CSPM, see [Setting up Security Hub](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-settingup.html) in the *AWS Security Hub User Guide*.
 
-After you enable both AWS IoT Device Defender and Security Hub CSPM, open the [Integrations page in the Security Hub CSPM console](https://console.aws.amazon.com//securityhub/home#/integrations), and then choose **Accept findings** for Audit, Detect, or both. AWS IoT Device Defender begins sending findings to Security Hub CSPM.
+After you enable both AWS IoT Device Defender and Security Hub CSPM, open the [Integrations page in the Security Hub CSPM console](https://console.aws.amazon.com/securityhub/home#/integrations), and then choose **Accept findings** for Audit, Detect, or both. AWS IoT Device Defender begins sending findings to Security Hub CSPM.
 
 ## How AWS IoT Device Defender sends findings to Security Hub CSPM
 <a name="securityhub-integration-sending-findings"></a>

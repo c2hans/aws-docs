@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/tag-editor/latest/userguide/tags-in-iam-
 # Using tags in IAM permission policies
 <a name="tags-in-iam-policies"></a>
 
-[AWS Identity and Access Management (IAM)](https://docs.aws.amazon.com//IAM/latest/UserGuide/) is the AWS service that you use to create and manage permissions policies that determine who can access your AWS resources. Every attempt to access an AWS service or read or write an AWS resource is access controlled by an IAM policy.
+[AWS Identity and Access Management (IAM)](https://docs.aws.amazon.com/IAM/latest/UserGuide/) is the AWS service that you use to create and manage permissions policies that determine who can access your AWS resources. Every attempt to access an AWS service or read or write an AWS resource is access controlled by an IAM policy.
 
 These policies allow you to provide granular access to your resources. One of the features you can use to fine tune this access is the [`Condition`](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html) element of the policy. This element lets you specify the conditions that must match the request to determine if the request can proceed. Among the things you can check with the `Condition` element are the following:
 + Tags that are attached to the user or role making the request.
@@ -14,11 +14,11 @@ These policies allow you to provide granular access to your resources. One of th
 ## Tags and attribute-based access control
 <a name="tagging-and-abac"></a>
 
-Tags can be an important part of your AWS access control strategy. For information about using tags as the attributes in an attribute-based access control (ABAC) strategy, see [Controlling access to AWS resources using tags](https://docs.aws.amazon.com//IAM/latest/UserGuide/access_tags.html) and [Controlling access to and for IAM users and roles using tags](https://docs.aws.amazon.com//IAM/latest/UserGuide/access_iam-tags.html), both in the *IAM User Guide*.
+Tags can be an important part of your AWS access control strategy. For information about using tags as the attributes in an attribute-based access control (ABAC) strategy, see [Controlling access to AWS resources using tags](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_tags.html) and [Controlling access to and for IAM users and roles using tags](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_iam-tags.html), both in the *IAM User Guide*.
 
-There is a comprehensive tutorial that shows how to grant access to different projects and groups using tags at [IAM tutorial: Define permissions to access AWS resources based on tags](https://docs.aws.amazon.com//IAM/latest/UserGuide/tutorial_attribute-based-access-control.html) in the *AWS Identity and Access Management User Guide*.
+There is a comprehensive tutorial that shows how to grant access to different projects and groups using tags at [IAM tutorial: Define permissions to access AWS resources based on tags](https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_attribute-based-access-control.html) in the *AWS Identity and Access Management User Guide*.
 
-If you use a SAML-based identity provider (IdP) for single sign-in, you can attach tags to the assumed roles providing access to your users. For more information, see [IAM tutorial: Use SAML session tags for ABAC](https://docs.aws.amazon.com//IAM/latest/UserGuide/tutorial_abac-saml.html) in the *AWS Identity and Access Management User Guide*.
+If you use a SAML-based identity provider (IdP) for single sign-in, you can attach tags to the assumed roles providing access to your users. For more information, see [IAM tutorial: Use SAML session tags for ABAC](https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_abac-saml.html) in the *AWS Identity and Access Management User Guide*.
 
 ## Tag-related condition keys
 <a name="tags-condition-keys"></a>
@@ -32,10 +32,10 @@ For complete details about a condition key and how to use it, see the page linke
 
 | Condition key name | Description |
 | --- | --- |
-| [aws:PrincipalTag](https://docs.aws.amazon.com//IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-principaltag) | Compares the tag attached to the principal (IAM role or user) making the request with the tag that you specify in the policy. |
-| [aws:RequestTag](https://docs.aws.amazon.com//IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag) | Compares the tag key-value pair that was passed to the request as a parameter with the tag key-value pair that you specify in the policy. |
-| [aws:ResourceTag](https://docs.aws.amazon.com//IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag) | Compares the key-value pair that is attached to the resource with the tag key-value pair that you specify in the policy. |
-| [aws:TagKeys](https://docs.aws.amazon.com//IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys) | Compares only the tag keys in the request with the keys that you specify in the policy.  |
+| [aws:PrincipalTag](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-principaltag) | Compares the tag attached to the principal (IAM role or user) making the request with the tag that you specify in the policy. |
+| [aws:RequestTag](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag) | Compares the tag key-value pair that was passed to the request as a parameter with the tag key-value pair that you specify in the policy. |
+| [aws:ResourceTag](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag) | Compares the key-value pair that is attached to the resource with the tag key-value pair that you specify in the policy. |
+| [aws:TagKeys](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys) | Compares only the tag keys in the request with the keys that you specify in the policy.  |
 
 ## Example IAM policies that use tags
 <a name="tags-iam-policy-examples"></a>
@@ -89,6 +89,6 @@ The following example IAM permissions policy lets the user stop a running Amazon
 }
 ```
 This example is an example of [attribute-based access control (ABAC)](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction_attribute-based-access-control.html). For more information and additional examples of using IAM policies to implement a tag-based access control strategy, see the following topics in the *AWS Identity and Access Management User Guide*:
-+ [Controlling access to AWS resources using tags](https://docs.aws.amazon.com//IAM/latest/UserGuide/access_tags.html)
-+ [Controlling access to and for IAM users and roles using tags](https://docs.aws.amazon.com//IAM/latest/UserGuide/access_iam-tags.html)
-+ [IAM tutorial: Define permissions to access AWS resources based on tags](https://docs.aws.amazon.com//IAM/latest/UserGuide/tutorial_attribute-based-access-control.html) – Shows how to grant access to different projects and groups using multiple tags.
++ [Controlling access to AWS resources using tags](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_tags.html)
++ [Controlling access to and for IAM users and roles using tags](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_iam-tags.html)
++ [IAM tutorial: Define permissions to access AWS resources based on tags](https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_attribute-based-access-control.html) – Shows how to grant access to different projects and groups using multiple tags.

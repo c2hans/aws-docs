@@ -14,8 +14,6 @@ Create a Redshift cluster with the same configration as the source snapshot.
 ## Change Type Details
 <a name="ct-3jrqmeq7j0wke-DARc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-3jrqmeq7j0wke |

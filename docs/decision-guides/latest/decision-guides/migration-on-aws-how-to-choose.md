@@ -197,8 +197,6 @@ Now that you have reviewed the key criteria to consider in your migration to AWS
 
 The following table walks you through the relevant services on AWS that will help you to achieve a successful migration.
 
-****
-
 | Migration category | What is it optimized for? | Migration services |
 | --- |--- |--- |
 | Assess and mobilize | These services are optimized to accelerate decision-making and discover on-premises assets to plan your AWS migration. | [Experience-Based Acceleration (EBA)](https://aws.amazon.com/experience-based-acceleration/)<br />[AWS Migration Acceleration Program](https://aws.amazon.com/migration-acceleration-program/)<br />[Optimization and Licensing Assessment](https://aws.amazon.com/optimization-and-licensing-assessment/)<br />[AWS Transform](https://docs.aws.amazon.com/transform/latest/userguide/getting-started.html) |

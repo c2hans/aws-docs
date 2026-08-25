@@ -18,8 +18,6 @@ The following table describes the differences between the tiers.
 
 The following table describes the differences between parameter tiers.
 
-****
-
 | Feature or use case | Standard | Advanced |
 | --- | --- | --- |
 | Use case | Best for most configuration data and low-scale workloads. This is the default. | Best when you need higher limits, larger values, or parameter policies. |

@@ -2,40 +2,42 @@
 source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/remediate-code-scan-findings.html
 ---
 
-# Remediate code review findings
+# Remediate Continuum code review findings
 <a name="remediate-code-scan-findings"></a>
 
-After reviewing security findings from a code review, you can use AWS Security Agent to generate code fixes for findings in GitHub repository sources. For private repositories, AWS Security Agent opens a pull request with the proposed fix. For public repositories, AWS Security Agent attaches a downloadable diff to the finding that you can apply locally. Findings from S3 sources must be remediated manually.
+After reviewing security findings from a code review, you can use AWS Security Agent to generate code fixes. Supported sources include connected third-party source code providers (such as GitHub, GitLab, or Bitbucket) and Amazon S3. For a connected private repository, AWS Security Agent opens a pull request (or a merge request, for GitLab) with the proposed fix. For Amazon S3 sources, it attaches a downloadable code diff that you can apply locally. For the list of supported providers and how to connect them, see [How integrations work with Agent Spaces](about-integrations.md).
 
 ## Prerequisites
 <a name="_prerequisites"></a>
 
 Before you begin, ensure you have:
 + A completed code review run with findings
-+ GitHub repositories connected as a source for the code review
++ A source for the code review — a connected source code repository (see [How integrations work with Agent Spaces](about-integrations.md)) or source code uploaded to Amazon S3
 + Access to the AWS Security Agent web application
 + Familiarity with your application’s architecture and security requirements
 
-## How code remediation works
-<a name="_how_code_remediation_works"></a>
+## How Continuum code remediation works
+<a name="_how_continuum_code_remediation_works"></a>
 
 When you trigger code remediation for a finding, AWS Security Agent analyzes the finding and its code locations, then generates a code fix. How the fix is delivered depends on the source:
-+  **Private GitHub repositories** – AWS Security Agent submits a pull request to the relevant repository. The pull request includes a description of the security issue and the changes made.
-+  **Public GitHub repositories** – AWS Security Agent attaches a suggested diff to the finding so the vulnerability isn’t disclosed before it’s fixed. You can download the diff from the web application and apply it locally with `git apply /path/to/code_remediation_changes.diff`.
-+  **S3 sources** – Code remediation is not available. Use the finding’s description, code locations, and risk reasoning to apply fixes manually.
++  **Connected private repository** – AWS Security Agent opens a pull request (or a merge request, for GitLab) on the repository. It includes a description of the security issue and the changes made. This applies to the source code providers you’ve connected — see [How integrations work with Agent Spaces](about-integrations.md).
++  **Amazon S3 source** – AWS Security Agent attaches a suggested code diff to the finding. Because there’s no connected repository to open a pull request against, download the code diff from the web application and apply it locally with `git apply /path/to/code_remediation_changes.diff`.
++  **Public repository** – To avoid disclosing the vulnerability before it’s fixed, AWS Security Agent doesn’t open a pull request. Delivery depends on the provider. For example, public GitHub repositories receive a downloadable code diff. Automated remediation isn’t available for public GitLab or Bitbucket repositories. See the provider’s connection topic for details.
 
 **Important**
 Pull requests created by AWS Security Agent are visible to all users who have read access to the repository. Review the changes before merging to ensure they align with your application’s requirements.
 
-## Automatic code remediation
-<a name="_automatic_code_remediation"></a>
+## Continuum automatic code remediation
+<a name="_continuum_automatic_code_remediation"></a>
 
-If you enabled **automatic code remediation** when creating the code review, AWS Security Agent generates fixes for all eligible findings as soon as the review completes. You don’t need to take any additional action — pull requests appear in your connected private GitHub repositories, and diffs appear on findings from public GitHub repositories, as the run finalizes.
+If you enabled **automatic code remediation** when creating the code review, AWS Security Agent generates fixes for all eligible findings as soon as the review completes. You don’t need to take any additional action. AWS Security Agent delivers each fix the same way as an on-demand fix, using the delivery methods described earlier in this topic.
 
-## Manual code remediation
-<a name="_manual_code_remediation"></a>
+Automatic code remediation covers both connected source code repositories and Amazon S3 sources.
 
-If automatic code remediation is disabled, you can trigger remediation for individual findings from GitHub sources.
+## Continuum manual code remediation
+<a name="_continuum_manual_code_remediation"></a>
+
+You can trigger remediation for an individual finding on demand, whether its source is a connected repository or an Amazon S3 upload. Use this when automatic code remediation is disabled, or to remediate a specific finding.
 
 1. Navigate to the **Findings** tab of a completed code review run.
 
@@ -43,16 +45,16 @@ If automatic code remediation is disabled, you can trigger remediation for indiv
 
 1. In the finding detail panel, choose **Remediate code**.
 
-1. AWS Security Agent generates a code fix and either submits a pull request to the repository or attaches a downloadable diff to the finding, depending on the repository’s visibility.
+1. AWS Security Agent generates a code fix and delivers it based on the source: a pull request or merge request for a connected private repository, or a downloadable code diff for an Amazon S3 source.
 
 ## Review remediation pull requests
 <a name="_review_remediation_pull_requests"></a>
 
-After AWS Security Agent submits a remediation pull request to a private GitHub repository:
+After AWS Security Agent submits a remediation pull request (or merge request) to a connected private repository:
 
-1. Navigate to your GitHub repository.
+1. Navigate to the repository on your source code provider.
 
-1. Locate the pull request created by AWS Security Agent.
+1. Locate the pull request (or merge request) created by AWS Security Agent.
 
 1. Review the changes, including:
    + The description explaining the security finding and fix
@@ -67,17 +69,17 @@ After merging remediation pull requests, start a new code review run to verify t
 ## Apply remediation diffs
 <a name="_apply_remediation_diffs"></a>
 
-For findings from public GitHub repositories, apply the downloadable diff locally.
+For findings delivered as a downloadable code diff (Amazon S3 sources, and public repositories where supported), apply the diff locally.
 
-1. In the finding detail panel, download the diff from the **Code remediation** section.
+1. In the finding detail panel, download the code diff from the **Code remediation** section.
 
-1. In your local clone of the repository, run `git apply /path/to/code_remediation_changes.diff`.
+1. In your local copy of the source code, run `git apply /path/to/code_remediation_changes.diff`.
 
 1. Review the applied changes, test them against your application, and commit them through your normal development workflow.
 
 ## Limitations
 <a name="_limitations"></a>
-+ Code remediation is only available for findings from GitHub repository sources. Findings from S3 sources must be remediated manually.
++ Code remediation is available for findings from connected source code repositories and Amazon S3 sources, both automatically and on demand. For public repositories, availability varies by provider — see [How integrations work with Agent Spaces](about-integrations.md) and the provider’s connection topic.
 + AWS Security Agent generates fixes based on its analysis of the vulnerability. Review all changes before merging or committing them to ensure they’re appropriate for your application.
 + Some complex findings may require manual intervention beyond the automated fix.
 
@@ -85,7 +87,7 @@ For findings from public GitHub repositories, apply the downloadable diff locall
 <a name="_next_steps"></a>
 
 After remediating findings:
-+ Review and merge pull requests in your GitHub repositories, or commit applied diffs through your normal workflow
++ Review and merge pull requests (or merge requests) in your connected repositories, or commit applied diffs through your normal workflow
 + Run a new code review to verify fixes and check for remaining issues
 + Resolve findings in the web application after confirming remediation
-+ Adjust your code review sources or settings as needed (see [Enable code review](enable-code-review-scan.md))
++ Adjust your code review sources or settings as needed (see [Enable Continuum code review](enable-code-review-scan.md))

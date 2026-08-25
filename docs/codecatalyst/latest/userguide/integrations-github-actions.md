@@ -93,7 +93,7 @@ The high-level steps to add a GitHub Action to a CodeCatalyst workflow are as fo
    + If you chose to add a curated action, configure it. For more information, see [Adding a curated GitHub Action](integrations-github-action-add-curated.md).
    + If you chose to add a non-curated action, within the **GitHub Actions** action, you **paste the GitHub Action’s YAML code**. You can find this code on the details page of your chosen GitHub Action in the [GitHub Marketplace](https://github.com/marketplace/actions). You will likely need to modify the code slightly to have it work in CodeCatalyst. For more information, see [Adding the 'GitHub Actions' action](integrations-github-action-add.md).
 
-1. (Optional) Within the workflow, **you add other actions** like the build and test actions. For more information, see [Build, test, and deploy with workflowsBuild, test, and deploy with workflows](workflow.md).
+1. (Optional) Within the workflow, **you add other actions** like the build and test actions. For more information, see [Build, test, and deploy with workflows](workflow.md).
 
 1. You **start the workflow** either manually or automatically through a trigger. The workflow runs the GitHub Action and any other actions in the workflow. For more information, see [Starting a workflow run manually](workflows-manually-start.md).
 

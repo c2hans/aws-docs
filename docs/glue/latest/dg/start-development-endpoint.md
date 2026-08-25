@@ -17,8 +17,6 @@ Make sure you set up your DNS environment for AWS Glue. For more information, se
 
 To enable AWS Glue to access required resources, add a row in your subnet route table to associate a prefix list for Amazon S3 to the VPC endpoint. A prefix list ID is required for creating an outbound security group rule that allows traffic from a VPC to access an AWS service through a VPC endpoint. To ease connecting to a notebook server that is associated with this development endpoint, from your local machine, add a row to the route table to add an internet gateway ID. For more information, see [VPC Endpoints](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-endpoints.html). Update the subnet routes table to be similar to the following table:
 
-****
-
 | Destination | Target |
 | --- | --- |
 | 10.0.0.0/16 | local |
@@ -40,7 +38,6 @@ To enable AWS Glue to access required resources, add a row in your subnet route 
 1. Add a self-referencing rule to allow AWS Glue components to communicate. Specifically, add or confirm that there is a rule of **Type** `All TCP`, **Protocol** is `TCP`, **Port Range** includes all ports, and whose **Source** is the same security group name as the **Group ID**.
 
    The inbound rule looks similar to this:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/glue/latest/dg/start-development-endpoint.html)
 
    The following shows an example of a self-referencing inbound rule:
@@ -49,7 +46,6 @@ To enable AWS Glue to access required resources, add a row in your subnet route 
 1. Add a rule to for outbound traffic also. Either open outbound traffic to all ports, or create a self-referencing rule of **Type** `All TCP`, **Protocol** is `TCP`, **Port Range** includes all ports, and whose **Source** is the same security group name as the **Group ID**.
 
    The outbound rule looks similar to one of these rules:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/glue/latest/dg/start-development-endpoint.html)
 
 ## Setting up Amazon EC2 for a notebook server
@@ -68,7 +64,6 @@ To enable AWS Glue to access required resources, add a row in your subnet route 
 1. In the security group pane, navigate to the **Inbound** tab.
 
 1. Add inbound rules similar to this:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/glue/latest/dg/start-development-endpoint.html)
 
    The following shows an example of the inbound rules for the security group:

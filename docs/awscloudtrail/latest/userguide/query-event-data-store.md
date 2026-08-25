@@ -12,8 +12,6 @@ When you create an event data store in CloudTrail Lake, you choose the type of e
 
 The following table shows the supported event categories for each event data store type. The **eventCategory** column shows the value that you would specify in the advanced event selectors to collect events of that type.
 
-****
-
 | Event type (console) | eventCategory (API) | Description |
 | --- | --- | --- |
 | CloudTrail events | `Management`<br />`Data`<br />`NetworkActivity` | This event data store type can collect CloudTrail management events, data events, and network activity events. For more information, see [Create an event data store for CloudTrail events](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/query-event-data-store-cloudtrail.html). |

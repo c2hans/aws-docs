@@ -9,8 +9,6 @@ Amazon Q Business is no longer open to new customers. For capabilities similar t
 
 The following table gives an overview of the Amazon Q Business Slack connector and its supported features.
 
-****
-
 - ****Security****
   - **Feature:** Authentication type / **Support:** Token based authentication
   - **Feature:** Authentication credentials / **Support:** +  Slack workspace ID  <br />+  Either Slack Bot token or User token <br />User token lets you make API requests on behalf of the user. Bot token lets you make API requests as a Slack bot.

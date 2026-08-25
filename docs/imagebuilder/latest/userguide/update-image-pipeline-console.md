@@ -31,7 +31,7 @@ The section at the top of the page summarizes key details for the pipeline that 
 
 **Detail tabs**
 + **Output images** – Shows output images that the pipeline has produced.
-+ **Image recipe** – Shows recipe details. After you create a recipe, you cannot edit it. You must create a new version of the recipe from the **Image recipes** page in the Image Builder console, or by using Image Builder commands in the AWS CLI. For more information, see [Manage recipes in Image BuilderRecipes](manage-recipes.md).
++ **Image recipe** – Shows recipe details. After you create a recipe, you cannot edit it. You must create a new version of the recipe from the **Image recipes** page in the Image Builder console, or by using Image Builder commands in the AWS CLI. For more information, see [Manage recipes in Image Builder](manage-recipes.md).
 + **Infrastructure configuration** – Shows editable information for configuring your build pipeline infrastructure.
 + **Distribution settings** – Shows editable information for AMI distribution.
 + **EventBridge rules** – For the selected **Event Bus**, shows EventBridge rules that target the current pipeline. Includes **Create event bus** and **Create rule** actions that link to the EventBridge console. For more information about this tab, see [Use EventBridge](ev-rules-for-pipeline.md).

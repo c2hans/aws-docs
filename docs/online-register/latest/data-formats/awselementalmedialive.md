@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awse
 
 AWS Elemental MediaLive provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="medialive-DescribeAccountConfiguration"></a>[DescribeAccountConfiguration](https://docs.aws.amazon.com/medialive/latest/ug/starting-stopping-deleting-a-channel.html) | View the account configuration of the customer | Read |

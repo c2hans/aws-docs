@@ -7,16 +7,12 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/data-ap
 
 The Amazon RDS Data API provides the following operations to perform SQL statements.
 
-****
-
 |  Data API operation  |  AWS CLI command  |  Description  |
 | --- | --- | --- |
 | [`ExecuteStatement`](https://docs.aws.amazon.com/rdsdataservice/latest/APIReference/API_ExecuteStatement.html) | [`aws rds-data execute-statement`](https://docs.aws.amazon.com/cli/latest/reference/rds-data/execute-statement.html) | Runs a SQL statement on a database. |
 | [`BatchExecuteStatement`](https://docs.aws.amazon.com/rdsdataservice/latest/APIReference/API_BatchExecuteStatement.html) | [`aws rds-data batch-execute-statement`](https://docs.aws.amazon.com/cli/latest/reference/rds-data/batch-execute-statement.html) | Runs a batch SQL statement over an array of data for bulk update and insert operations. You can run a data manipulation language (DML) statement with an array of parameter sets. A batch SQL statement can provide a significant performance improvement over individual insert and update statements. |
 
 You can use either operation to run individual SQL statements or to run transactions. For transactions, Data API provides the following operations.
-
-****
 
 |  Data API operation  |  AWS CLI command  |  Description  |
 | --- | --- | --- |
@@ -25,8 +21,6 @@ You can use either operation to run individual SQL statements or to run transact
 | [`RollbackTransaction`](https://docs.aws.amazon.com/rdsdataservice/latest/APIReference/API_RollbackTransaction.html) | [`aws rds-data rollback-transaction`](https://docs.aws.amazon.com/cli/latest/reference/rds-data/rollback-transaction.html) | Performs a rollback of a transaction. |
 
 The operations for performing SQL statements and supporting transactions have the following common Data API parameters and AWS CLI options. Some operations support other parameters or options.
-
-****
 
 |  Data API operation parameter  |  AWS CLI command option  |  Required  |  Description  |
 | --- | --- | --- | --- |
@@ -85,8 +79,6 @@ RDS Data API supports the following Aurora PostgreSQL array types:
 + `UUID[]`
 
 You can use parameters in Data API calls to `ExecuteStatement` and `BatchExecuteStatement`, and when you run the AWS CLI commands `execute-statement` and `batch-execute-statement`. To use a parameter, you specify a name-value pair in the `SqlParameter` data type. You specify the value with the `Field` data type. The following table maps Java Database Connectivity (JDBC) data types to the data types that you specify in Data API calls.
-
-****
 
 |  JDBC data type  |  Data API data type  |
 | --- | --- |

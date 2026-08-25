@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsp
 
 AWS Partner Central provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="partnercentral-GetAllianceLeadContact"></a>[GetAllianceLeadContact](https://docs.aws.amazon.com/partner-central/latest/APIReference/API_account_GetAllianceLeadContact.html) | Retrieve alliance lead contact information in AWS Partner Central | Read |

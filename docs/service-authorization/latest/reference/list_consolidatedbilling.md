@@ -29,8 +29,6 @@ AWS Consolidated Billing has no API operations that can be used in the `Actions`
 
 The following actions are defined by AWS Consolidated Billing but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 | Actions | Description | Resource types (\*required) | Condition keys | Access level |
 | --- | --- | --- | --- | --- |
 |   [GetAccountBillingRole](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html)  | Grants permission to get account role (Payer, Linked, Regular) |  |   | Read |

@@ -27,4 +27,4 @@ When you create accounts from the AWS Control Tower console with Account Factory
 **Note**
 When provisioning an account, the account requester always must have the `CreateAccount` and the `DescribeCreateAccountStatus` permissions. This permission set is part of the **Admin** role, and it is given automatically when a requester assumes the **Admin** role. If you delegate permission to provision accounts, you may need to add these permissions directly for the account requestors.
 
-For general information about permissions required in AWS Control Tower, see [Using identity-based policies (IAM policies) for AWS Control Tower](access-control-managing-permissions.md). For information about roles and accounts in AWS Control Tower, see [Roles and accounts](https://docs.aws.amazon.com//controltower/latest/userguide/roles.html).
+For general information about permissions required in AWS Control Tower, see [Using identity-based policies (IAM policies) for AWS Control Tower](access-control-managing-permissions.md). For information about roles and accounts in AWS Control Tower, see [Roles and accounts](https://docs.aws.amazon.com/controltower/latest/userguide/roles.html).

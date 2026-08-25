@@ -21,8 +21,6 @@ Table configurations are user-controlled properties that a user can set to chang
 
 CUR 2.0 has the following table configurations:
 
-****
-
 | Configuration name | Description | Valid values |
 | --- | --- | --- |
 | TIME\_GRANULARITY | This configuration changes the cost and usage line items in the CUR 2.0 table to have different time granularities.<br />For example, selecting "HOURLY" will make all line items represent a single hour of usage. | HOURLY, DAILY, MONTHLY |

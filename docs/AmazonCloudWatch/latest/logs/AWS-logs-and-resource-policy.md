@@ -11,7 +11,7 @@ Even when you publish logs directly to Amazon S3 or Firehose, CloudWatch deliver
 
 Some AWS services use a common infrastructure to send their logs. To enable logging from these services, you must be logged in as a user that has certain permissions. Additionally, you must grant permissions to AWS to enable the logs to be sent.
 
-For services that require these permissions, there are two versions of the permissions needed. The services that require these extra permissions are noted as **Supported [V1 Permissions]** and **Supported [V2 Permissions]** in the [Supported log destinations](AWS-logs-destinations-table.md). For information about these required permissions, see the sections after the table.
+For services that require these permissions, there are two versions of the permissions needed. The services that require these extra permissions are noted as **Supported (V1 permissions)** and **Supported (V2 permissions)** in the [Supported log destinations](AWS-logs-destinations-table.md). For information about these required permissions, see the sections after the table.
 | Service | Guide |
 | --- | --- |
 | Amazon API Gateway | [Guide](https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-logging.html) |

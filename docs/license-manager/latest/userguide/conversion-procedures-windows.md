@@ -76,7 +76,7 @@ You might need to update the AWS CLI to run certain commands and receive all req
    aws ec2 describe-instances --instance-ids {{<instance-id>}} --query "Reservations[*].Instances[*].{InstanceId: InstanceId, PlatformDetails: PlatformDetails, ProductCode: ProductCode, UsageOperation: UsageOperation, UsageOperationUpdateTime: UsageOperationUpdateTime}"
    ```
 
-1. The following is an example response to the `describe-instances` command. Note that the `UsageOperation` value is the billing information code associated with the license. The `UsageOperationUpdateTime` is the time when the billing code was updated. For more information, see [DescribeInstances](https://docs.aws.amazon.com//AWSEC2/latest/APIReference/API_DescribeInstances.html) in the *Amazon EC2 API reference*.
+1. The following is an example response to the `describe-instances` command. Note that the `UsageOperation` value is the billing information code associated with the license. The `UsageOperationUpdateTime` is the time when the billing code was updated. For more information, see [DescribeInstances](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeInstances.html) in the *Amazon EC2 API reference*.
 
    ```
    "InstanceId": "i-0123456789abcdef",
@@ -92,7 +92,7 @@ The usage operation for Windows Server with SQL Server Enterprise BYOL is the sa
 
 When you convert Windows Server from license included to BYOL, License Manager does not automatically activate Windows. You must switch the KMS server for your instance from the AWS KMS server to your own KMS server.
 **Important**
-In order to convert from license included to BYOL, the original Amazon EC2 instance must be launched from your own virtual machine (VM) image. For more information about converting a VM to Amazon EC2, see [VM Import/Export](https://docs.aws.amazon.com//vm-import/latest/userguide/vmimport-image-import.html#import-vm-image). Instances that were originally launched from an Amazon Machine Image (AMI) are not eligible for license conversion to BYOL.
+In order to convert from license included to BYOL, the original Amazon EC2 instance must be launched from your own virtual machine (VM) image. For more information about converting a VM to Amazon EC2, see [VM Import/Export](https://docs.aws.amazon.com/vm-import/latest/userguide/vmimport-image-import.html#import-vm-image). Instances that were originally launched from an Amazon Machine Image (AMI) are not eligible for license conversion to BYOL.
 
 Check your Microsoft license agreement to determine what methods you can use to activate Microsoft Windows Server. For example, if you are using a KMS server, you must obtain the address of your KMS server from the original BYOL configuration of the instance.
 

@@ -63,7 +63,7 @@ Avoid including sensitive information, such as account numbers, in the bucket na
 
    1. Choose **Advanced settings**, **Enable**.
 **Important**
-Enabling Object Lock will permanently allow objects in this bucket to be locked. To learn more, refer to [Locking Objects Using Amazon S3 Object Lock](https://docs.aws.amazon.com//AmazonS3/latest/dev/object-lock.html) in the *Amazon Simple Storage Service User Guide*.
+Enabling Object Lock will permanently allow objects in this bucket to be locked. To learn more, refer to [Locking Objects Using Amazon S3 Object Lock](https://docs.aws.amazon.com/AmazonS3/latest/dev/object-lock.html) in the *Amazon Simple Storage Service User Guide*.
 
    1. Choose the acknowledgement.
 
@@ -72,5 +72,5 @@ Enabling Object Lock will permanently allow objects in this bucket to be locked.
 ## What's next?
 <a name="mwaa-s3-bucket-next-up"></a>
 + Learn how to create the required Amazon VPC network for an environment in [Create the VPC network](vpc-create.md).
-+ Learn how to how to manage access permissions in [How do I set ACL bucket permissions?](https://docs.aws.amazon.com//AmazonS3/latest/user-guide/set-bucket-permissions.html)
-+ Learn how to delete a storage bucket in [How do I delete an S3 Bucket?](https://docs.aws.amazon.com//AmazonS3/latest/user-guide/delete-bucket.html).
++ Learn how to how to manage access permissions in [How do I set ACL bucket permissions?](https://docs.aws.amazon.com/AmazonS3/latest/user-guide/set-bucket-permissions.html)
++ Learn how to delete a storage bucket in [How do I delete an S3 Bucket?](https://docs.aws.amazon.com/AmazonS3/latest/user-guide/delete-bucket.html).

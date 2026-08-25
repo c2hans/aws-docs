@@ -16,7 +16,7 @@ You can enable session holding in your firewall policy when you have an associat
 
 Without session holding, Network Firewall immediately initiates TCP/TLS handshakes with downstream servers when client connections begin. This means the handshake between the firewall and downstream server occurs before SNI information is available. While deny rules can still block connections after evaluation, downstream servers receive the initial connection attempts.
 
-With session holding, Network Firewall waits for SNI information from the client's TLS handshake before initiating downstream connections. This lets the firewall evaluate TLS SNI-based rules first, preventing any connection attempts to blocked domains from reaching downstream servers. Alert logs based on TLS rules in this configuration will not contain the SNI that was accessed upon rule match.
+With session holding, Network Firewall waits for SNI information from the client's TLS handshake before initiating downstream connections. This lets the firewall evaluate TLS SNI-based rules first, preventing any connection attempts to blocked domains from reaching downstream servers.
 
 **Rule evaluation**
 Session holding affects how Network Firewall evaluates TLS.SNI and HTTP rules.
@@ -27,3 +27,6 @@ With session holding, Network Firewall evaluates TLS.SNI rules first while holdi
 
 **Tip**
 For best results with session holding, configure TLS rules that match on SNI in a deny list format. Use HTTP-based rules to process connections that aren't in the deny list.
+
+**Note**
+With session holding enabled, both `TLS.SNI`-based rules and L3/L4 rules become match candidates. This applies to the packet that contains the `TLS.SNI` when the Client Hello is sent. Because Network Firewall treats this packet as belonging to a not-established flow, Network Firewall can match rules that use keywords such as `flow:not_established`. Your L3/L4 rules must account for this flow state to avoid unexpected behavior.

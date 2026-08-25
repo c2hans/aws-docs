@@ -64,4 +64,4 @@ We strongly recommend using the Network Manager console to disable trusted acces
 
 When you designate a member account as a delegated administrator for the organization, users and roles from that account can perform administrative actions for Network Manager that otherwise can be performed only by users or roles in the organization's management account. This helps you to separate management of the organization from management of Network Manager.
 
-For instructions on how to designate a member account as a delegated administrator of Network Manager in the organization, see [Register a delegated administrator](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacksets-orgs-delegated-admin.html) in the *Amazon VPC User Guide*.
+For instructions on how to designate a member account as a delegated administrator of Network Manager in the organization, see [Register a delegated administrator](https://docs.aws.amazon.com/network-manager/latest/tgwnm/nm-delegate-admin.html) in the *Amazon VPC User Guide*.

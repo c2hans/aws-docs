@@ -26,7 +26,7 @@ If a segment import fails, you might see the following error message or similar:
 
 ****Issue and solution****
 + Large export jobs may fail when performing this action from the console.
-+ As a workaround for this limitation, the segment can be exported to an Amazon S3 bucket using the [CreateExportJob](https://docs.aws.amazon.com//pinpoint/latest/apireference/apps-application-id-jobs-export.html#apps-application-id-jobs-exportpost) API through the command line reference (CLI) or SDK.
++ As a workaround for this limitation, the segment can be exported to an Amazon S3 bucket using the [CreateExportJob](https://docs.aws.amazon.com/pinpoint/latest/apireference/apps-application-id-jobs-export.html#apps-application-id-jobs-exportpost) API through the command line reference (CLI) or SDK.
 
 ## Endpoint count for a dynamic segment
 <a name="troubleshooting-dynamic-segment"></a>
@@ -44,7 +44,7 @@ If the new endpoint has a channel type of ADM, GCM, APNS, APNS\_VOICE, APNS\_VOI
 
 ****Issue and solution****
 + You might see this error when creating new endpoints or editing existing ones using the [update-endpoint](https://docs.aws.amazon.com/cli/latest/reference/pinpoint/update-endpoint.html) API, and the specific endpoint exceeds the maximum number of 15 endpoint addresses.
-+ This limit is currently a hard limit with the service. It can't be increased. For more information, see [Endpoint quotas](https://docs.aws.amazon.com//pinpoint/latest/developerguide/quotas.html#quotas-endpoint).
++ This limit is currently a hard limit with the service. It can't be increased. For more information, see [Endpoint quotas](https://docs.aws.amazon.com/pinpoint/latest/developerguide/quotas.html#quotas-endpoint).
 
 ## BadRequestException when calling the UpdateEndpointsBatch or UpdateEndpoints operation: Too many custom attributes
 <a name="troubleshooting-attributes"></a>

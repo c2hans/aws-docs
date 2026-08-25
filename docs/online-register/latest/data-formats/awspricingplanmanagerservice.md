@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsp
 
 AWS PricingPlanManager Service provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="pricingplanmanager-GetSubscription"></a>[GetSubscription](https://docs.aws.amazon.com/PricingPlanManager/latest/UserGuide/security-pricing-plan.html) | Get the details for a subscription | Read |

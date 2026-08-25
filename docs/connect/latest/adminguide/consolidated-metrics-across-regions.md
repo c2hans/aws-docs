@@ -26,4 +26,4 @@ The consolidated view is available across:
 **Note**
 Agent and contact metrics are consolidated across Regions. Other metrics such as analytics remain Region-specific.
 
-For more information about Connect Customer reporting, see [Metrics, dashboards, and reports in Connect Customer](amazon-connect-metrics.md).
+For more information about Connect Customer reporting, see [Metrics, dashboards, and insights in Connect Customer](amazon-connect-metrics.md).

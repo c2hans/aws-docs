@@ -142,7 +142,7 @@ Following are the required and optional YAML fields for AI prompts that use the 
 +  **messages** – (Required) List of input messages.
   +  **role** – (Required) The role of the conversation turn. Valid values are user and assistant.
   +  **content** – (Required) The content of the conversation turn.
-+  **tools** - (Optional) List of tools that the model may use.
++  **tools** - (Optional) List of tools that the model might use.
   +  **name** – (Required) The name of the tool.
   +  **description** – (Required) The description of the tool.
   +  **input\_schema** – (Required) A [JSON Schema](https://json-schema.org/) object defining the expected parameters for the tool.

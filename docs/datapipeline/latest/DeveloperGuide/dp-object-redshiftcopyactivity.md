@@ -160,26 +160,18 @@ For a tutorial, see [Copy Data to Amazon Redshift Using AWS Data Pipeline](dp-co
 ## Syntax
 <a name="redshiftcopyactivity-syntax"></a>
 
-****
-
 | Required Fields | Description | Slot Type |
 | --- | --- | --- |
 | insertMode |  Determines what AWS Data Pipeline does with pre-existing data in the target table that overlaps with rows in the data to be loaded.<br />Valid values are: `KEEP_EXISTING`, `OVERWRITE_EXISTING`, `TRUNCATE` and `APPEND`.<br />`KEEP_EXISTING` adds new rows to the table, while leaving any existing rows unmodified.<br />`KEEP_EXISTING` and ` OVERWRITE_EXISTING` use the primary key, sort, and distribution keys to identify which incoming rows to match with existing rows. See [Updating and Inserting New Data](https://docs.aws.amazon.com/redshift/latest/dg/t_updating-inserting-using-staging-tables-.html) in the Amazon Redshift *Database Developer Guide*. <br />`TRUNCATE` deletes all the data in the destination table before writing the new data.<br /> `APPEND` adds all records to the end of the Redshift table. `APPEND` does not require a primary, distribution key, or sort key so items that may be potential duplicates may be appended. | Enumeration |
-
-****
 
 | Object Invocation Fields | Description | Slot Type |
 | --- | --- | --- |
 | schedule | This object is invoked within the execution of a schedule interval. <br />Specify a schedule reference to another object to set the dependency execution order for this object. <br />In most cases, we recommend to put the schedule reference on the default pipeline object so that all objects inherit that schedule. For example, you can explicitly set a schedule on the object by specifying `"schedule": {"ref": "DefaultSchedule"}`. <br />If the master schedule in your pipeline contains nested schedules, create a parent object that has a schedule reference. <br />For more information about example optional schedule configurations, see [Schedule](https://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/dp-object-schedule.html).  | Reference Object, such as: "schedule":{"ref":"myScheduleId"} |
 
-****
-
 | Required Group (One of the following is required) | Description | Slot Type |
 | --- | --- | --- |
 | runsOn | The computational resource to run the activity or command. For example, an Amazon EC2 instance or Amazon EMR cluster. | Reference Object, e.g. "runsOn":{"ref":"myResourceId"} |
 | workerGroup | The worker group. This is used for routing tasks. If you provide a runsOn value and workerGroup exists, workerGroup is ignored. | String |
-
-****
 
 | Optional Fields | Description | Slot Type |
 | --- | --- | --- |
@@ -204,8 +196,6 @@ For a tutorial, see [Copy Data to Amazon Redshift Using AWS Data Pipeline](dp-co
 | retryDelay | The timeout duration between two retry attempts. | Period |
 | scheduleType | Allows you to specify whether the schedule for objects in your pipeline. Values are: `cron`, `ondemand`, and `timeseries`.<br />The `timeseries` scheduling means instances are scheduled at the end of each interval.<br />The `Cron` scheduling means instances are scheduled at the beginning of each interval. <br />An `ondemand` schedule allows you to run a pipeline one time per activation. This means you do not have to clone or re-create the pipeline to run it again.<br /> To use `ondemand` pipelines, call the `ActivatePipeline` operation for each subsequent run. <br />If you use an `ondemand` schedule, you must specify it in the default object, and it must be the only `scheduleType` specified for objects in the pipeline. | Enumeration |
 | transformSql | The `SQL SELECT` expression used to transform the input data. <br />Run the `transformSql` expression on the table named `staging`. <br />When you copy data from DynamoDB or Amazon S3, AWS Data Pipeline creates a table called "staging" and initially loads data in there. Data from this table is used to update the target table. <br />The output schema of `transformSql` must match the final target table's schema.<br />If you specify the `transformSql` option, a second staging table is created from the specified SQL statement. The data from this second staging table is then updated in the final target table. | String |
-
-****
 
 | Runtime Fields | Description | Slot Type |
 | --- | --- | --- |
@@ -234,8 +224,6 @@ For a tutorial, see [Copy Data to Amazon Redshift Using AWS Data Pipeline](dp-co
 | @status | The status of this object. | String |
 | @version | Pipeline version the object was created with. | String |
 | @waitingOn | Description of list of dependencies this object is waiting on. | Reference Object: "waitingOn":{"ref":"myRunnableObjectId"} |
-
-****
 
 | System Fields | Description | Slot Type |
 | --- | --- | --- |

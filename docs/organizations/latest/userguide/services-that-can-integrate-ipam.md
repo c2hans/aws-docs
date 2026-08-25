@@ -19,7 +19,7 @@ Use the following information to help you integrate Amazon VPC IP Address Manage
 The following service-linked role is automatically created in your organization's management account and each member account when you integrate IPAM with AWS Organizations either by using the IPAM console or using IPAM's `EnableIpamOrganizationAdminAccount` API.
 + `AWSServiceRoleForIPAM`
 
-For more information, see [ Service-linked roles for IPAM](https://docs.aws.amazon.com//vpc/latest/ipam/iam-ipam-slr.html) in the *Amazon VPC IPAM User Guide*.
+For more information, see [ Service-linked roles for IPAM](https://docs.aws.amazon.com/vpc/latest/ipam/iam-ipam-slr.html) in the *Amazon VPC IPAM User Guide*.
 
 ## Service principals used by the service-linked roles
 <a name="integrate-enable-svcprin-ipam"></a>
@@ -38,9 +38,9 @@ IPAM requires trusted access to AWS Organizations before you can designate a mem
 
 You can enable trusted access using only Amazon VPC IP Address Manager (IPAM) tools.
 
-If you integrate IPAM with AWS Organizations using the IPAM console or using the IPAM `EnableIpamOrganizationAdminAccount` API, you automatically grant trusted access to IPAM. Granting trusted access creates the service-linked role ` AWSServiceRoleForIPAM` in the management account and in all of the member accounts in the organization. IPAM uses the service-linked role to monitor CIDRs associated with EC2 networking resources in your organization and to store metrics related to IPAM in Amazon CloudWatch. For more information, see [Service-linked roles for IPAM](https://docs.aws.amazon.com//vpc/latest/ipam/iam-ipam-slr.html) in the *Amazon VPC IPAM User Guide*.
+If you integrate IPAM with AWS Organizations using the IPAM console or using the IPAM `EnableIpamOrganizationAdminAccount` API, you automatically grant trusted access to IPAM. Granting trusted access creates the service-linked role ` AWSServiceRoleForIPAM` in the management account and in all of the member accounts in the organization. IPAM uses the service-linked role to monitor CIDRs associated with EC2 networking resources in your organization and to store metrics related to IPAM in Amazon CloudWatch. For more information, see [Service-linked roles for IPAM](https://docs.aws.amazon.com/vpc/latest/ipam/iam-ipam-slr.html) in the *Amazon VPC IPAM User Guide*.
 
- For instructions about enabling trusted access, see [Integrate IPAM with AWS Organizations](https://docs.aws.amazon.com//vpc/latest/ipam/enable-integ-ipam.html) in the *Amazon VPC IPAM User Guide*.
+ For instructions about enabling trusted access, see [Integrate IPAM with AWS Organizations](https://docs.aws.amazon.com/vpc/latest/ipam/enable-integ-ipam.html) in the *Amazon VPC IPAM User Guide*.
 
 **Note**
  You can't enable trusted access with IPAM using the AWS Organizations console or with the [`EnableAWSServiceAccess`](https://docs.aws.amazon.com/organizations/latest/APIReference/API_EnableAWSServiceAccess.html) API.
@@ -78,7 +78,7 @@ Use the following AWS CLI commands or API operations to disable trusted service 
 ## Enabling a delegated administrator account for IPAM
 <a name="integrate-enable-da-ipam"></a>
 
-The delegated administrator account for IPAM is responsible for creating the IPAM and IP address pools, managing and monitoring IP address usage in the organization, and sharing IP address pools across member accounts. For more information, see [Integrate IPAM with AWS Organizations](https://docs.aws.amazon.com//vpc/latest/ipam/enable-integ-ipam.html) in the *Amazon VPC IPAM User Guide*.
+The delegated administrator account for IPAM is responsible for creating the IPAM and IP address pools, managing and monitoring IP address usage in the organization, and sharing IP address pools across member accounts. For more information, see [Integrate IPAM with AWS Organizations](https://docs.aws.amazon.com/vpc/latest/ipam/enable-integ-ipam.html) in the *Amazon VPC IPAM User Guide*.
 
 Only an administrator in the organization management account can configure a delegated administrator for IPAM.
 
@@ -87,7 +87,7 @@ You can specify a delegated administrator account from the IPAM console, or by u
 **Minimum permissions**
 Only a user or role in the Organizations management account can configure a member account as a delegated administrator for IPAM in the organization
 
-To configure a delegated administrator using the IPAM console, see [Integrate IPAM with AWS Organizations](https://docs.aws.amazon.com//vpc/latest/ipam/enable-integ-ipam.html) in the *Amazon VPC IPAM User Guide*.
+To configure a delegated administrator using the IPAM console, see [Integrate IPAM with AWS Organizations](https://docs.aws.amazon.com/vpc/latest/ipam/enable-integ-ipam.html) in the *Amazon VPC IPAM User Guide*.
 
 ## Disabling a delegated administrator for IPAM
 <a name="integrate-disable-da-ipam"></a>
@@ -96,4 +96,4 @@ Only an administrator in the organization management account can configure a del
 
  To remove a delegated administrator using the AWS AWS CLI, see [disable-ipam-organization-admin-account](https://docs.aws.amazon.com/cli/latest/reference/ec2/disable-ipam-organization-admin-account.html) in the *AWS AWS CLI Command Reference*.
 
- To disable the delegated admin IPAM account using the IPAM console, see [Integrate IPAM with AWS Organizations](https://docs.aws.amazon.com//vpc/latest/ipam/enable-integ-ipam.html) in the *Amazon VPC IPAM User Guide*.
+ To disable the delegated admin IPAM account using the IPAM console, see [Integrate IPAM with AWS Organizations](https://docs.aws.amazon.com/vpc/latest/ipam/enable-integ-ipam.html) in the *Amazon VPC IPAM User Guide*.

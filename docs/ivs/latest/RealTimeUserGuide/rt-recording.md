@@ -32,7 +32,7 @@ Thumbnail recording for IVS real-time streaming can be set up for both individua
 + For individual participant recordings, use the `thumbnailConfiguration` property.
 + For composite recordings, use the `thumbnailConfigurations` property.
 
-Thumbnail intervals range from 1 to 86400 seconds (24 hours); by default, thumbnail recording is disabled. For details, see the [Amazon IVS Real-Time Streaming API Reference](https://docs.aws.amazon.com//ivs/latest/RealTimeAPIReference/Welcome.html).
+Thumbnail intervals range from 1 to 86400 seconds (24 hours); by default, thumbnail recording is disabled. For details, see the [Amazon IVS Real-Time Streaming API Reference](https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/Welcome.html).
 
 A thumbnail configuration includes a `storage` field, which can be set to `SEQUENTIAL` and/or `LATEST`. The `storage` field determines the S3 storage behavior for the thumbnails:
 + `SEQUENTIAL` saves all thumbnails in a serial manner. This is the default.

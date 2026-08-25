@@ -20,6 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 {
   "[EncryptionConflictResolutionStrategy](#cfn-observabilityadmin-organizationcentralizationrule-logsencryptionconfiguration-encryptionconflictresolutionstrategy)" : {{String}},
+  "[EncryptionScope](#cfn-observabilityadmin-organizationcentralizationrule-logsencryptionconfiguration-encryptionscope)" : {{String}},
   "[EncryptionStrategy](#cfn-observabilityadmin-organizationcentralizationrule-logsencryptionconfiguration-encryptionstrategy)" : {{String}},
   "[KmsKeyArn](#cfn-observabilityadmin-organizationcentralizationrule-logsencryptionconfiguration-kmskeyarn)" : {{String}}
 }
@@ -30,6 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
   [EncryptionConflictResolutionStrategy](#cfn-observabilityadmin-organizationcentralizationrule-logsencryptionconfiguration-encryptionconflictresolutionstrategy): {{String}}
+  [EncryptionScope](#cfn-observabilityadmin-organizationcentralizationrule-logsencryptionconfiguration-encryptionscope): {{String}}
   [EncryptionStrategy](#cfn-observabilityadmin-organizationcentralizationrule-logsencryptionconfiguration-encryptionstrategy): {{String}}
   [KmsKeyArn](#cfn-observabilityadmin-organizationcentralizationrule-logsencryptionconfiguration-kmskeyarn): {{String}}
 ```
@@ -42,6 +44,16 @@ Conflict resolution strategy for centralization if the encryption strategy is se
 *Required*: No
 *Type*: String
 *Allowed values*: `ALLOW | SKIP`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`EncryptionScope`  <a name="cfn-observabilityadmin-organizationcentralizationrule-logsencryptionconfiguration-encryptionscope"></a>
+Determines which newly created destination log groups are encrypted with the configured `KmsKeyArn` when `EncryptionStrategy` is `CUSTOMER_MANAGED`.
+If you set this to `ENCRYPTED_SOURCE_ONLY` (the default), only destination log groups whose source log group is encrypted with a customer managed KMS key use the configured `KmsKeyArn`. Destination log groups derived from AWS owned encrypted source log groups remain AWS owned encrypted.
+If you set this to `NEW_DESTINATION_LOG_GROUPS`, every new destination log group created by this rule uses the configured `KmsKeyArn`, regardless of the source log group's encryption posture.
+This field is not valid when `EncryptionStrategy` is `AWS_OWNED`.
+*Required*: No
+*Type*: String
+*Allowed values*: `ENCRYPTED_SOURCE_ONLY | NEW_DESTINATION_LOG_GROUPS`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `EncryptionStrategy`  <a name="cfn-observabilityadmin-organizationcentralizationrule-logsencryptionconfiguration-encryptionstrategy"></a>

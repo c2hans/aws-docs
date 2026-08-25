@@ -14,8 +14,6 @@ Enable Developer Mode (Dev Mode). Dev mode provides you with elevated permission
 ## Change Type Details
 <a name="ct-3gjfayulf5hhs-MMDe-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-3gjfayulf5hhs |

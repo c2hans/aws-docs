@@ -14,6 +14,9 @@ AWS WAF reports metrics once a minute. AWS WAF provides metrics and dimensions i
 You can see summary information for AWS WAF metrics through the AWS WAF console, in the protection pack (web ACL)'s traffic overview tab. For more information, go to the console or see [Traffic overview dashboards for protection packs (web ACLs)](web-acl-dashboards.md).
 
 You can see the following metrics for protection packs (web ACLs), rules, rule groups, and labels.
+
+**Note**
+If your Application Load Balancer is associated with a protection pack (web ACL) that has no rules or other active configurations, AWS WAF does not provide sampled requests or publish CloudWatch metrics for that Application Load Balancer. For more information about this behavior and how to enable observability features, see [AWS WAF Distributed Denial of Service (DDoS) prevention](waf-anti-ddos.md).
 + **Your rules** – Metrics are grouped by the rule action. For example, when you test a rule in Count mode, its matches are listed as `Count` metrics for the protection pack (web ACL).
 + **Your rule groups** – The metrics for your rule groups are listed under the rule group metrics.
 + **Rule groups owned by another account** – Rule group metrics are generally visible only to the rule group owner. However, if you override the rule action for a rule, the metrics for that rule will be listed under your protection pack (web ACL) metrics. Additionally, labels added by any rule group are listed in your protection pack (web ACL) metrics.

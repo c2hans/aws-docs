@@ -199,8 +199,6 @@ For more information about policy variables, see [IAM policy elements: Variables
 
 The following table summarizes which IAM identity you attach a permissions policy to, depending on your EMR Studio authentication mode. For instructions on how to attach a policy, see [Adding and removing IAM identity permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html).
 
-****
-
 | If you use... | Attach the policy to... |
 | --- | --- |
 | IAM authentication | Your IAM identities (users, groups of users, or roles). For example, you can attach a permissions policy to a user in your AWS account. |

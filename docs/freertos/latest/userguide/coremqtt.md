@@ -30,7 +30,6 @@ When using MQTT connections in IoT applications, we recommended that you use a s
 
 This MQTT library doesn't have platform dependencies, such as threading or synchronization. This library does have [proofs](https://www.cprover.org/cbmc/) that demonstrate safe memory use and no heap allocation, which makes it suitable for IoT microcontrollers, but also fully portable to other platforms. It can be freely used, and is distributed under the [MIT open source license](https://freertos.org/a00114.html).
 
-****
 <a name="coreMQTT-memory-estimate"></a>
 <table>
 <thead>

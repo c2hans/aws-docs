@@ -65,4 +65,4 @@ Your AWS account has the following quotas related to Amazon EBS.
   + `2500` — `us-east-1`, `us-west-2`, `eu-west-1`, and `ap-northeast-1`
   + `500` — all other Regions
 
-  This limit applies to instance launch requests that you make, and to instance launch requests made by AWS services, such as Amazon EMR, on your behalf. If your instance launch request fails as a result of exceeding this limit, we recommend that you adjust the EBS volume configuration in the launch request to ensure the number of volumes is below the limit, or that you work with your technical account manager (TAM) to explore other options for launching your cluster without exceeding the limit.
+  This limit applies to instance launch requests that you make, and to instance launch requests made by AWS services, such as Amazon EMR, on your behalf. If your instance launch request fails as a result of exceeding this limit, adjust the EBS volume configuration in the launch request to reduce the number of volumes below the limit. Alternatively, work with your technical account manager (TAM) to explore other options for launching your cluster.

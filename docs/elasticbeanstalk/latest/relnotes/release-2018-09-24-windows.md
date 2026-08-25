@@ -43,8 +43,6 @@ This release applies Windows September 2018 security updates to the Windows Serv
 #### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Configuration  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  **Windows Server 2016 with IIS 10.0 version 1.2.0**  |  * 64bit Windows Server 2016 v1.2.0 running IIS 10.0 *  | .NET Core 2.1.4, supports 2.1.4, 2.0.9, 1.1.9, 1.0.12<br />.NET Framework 4.7.2, supports 4.x, 2.0, 1.x | IIS 10.0 |
@@ -60,8 +58,6 @@ This release applies Windows September 2018 security updates to the Windows Serv
 
 #### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Configuration  |  AMI version  |  AWS SDK for .NET  |  EC2Config  |  SSM Agent  |  Web Deploy  |  AWS X‑Ray  |
 | --- | --- | --- | --- | --- | --- | --- |

@@ -104,7 +104,7 @@ Security configuration for your GraphQL API. For allowed values (such as `API_KE
 
 `EnhancedMetricsConfig`  <a name="cfn-appsync-graphqlapi-enhancedmetricsconfig"></a>
 Enables and controls the enhanced metrics feature. Enhanced metrics emit granular data on API usage and performance such as AppSync request and error counts, latency, and cache hits/misses. All enhanced metric data is sent to your CloudWatch account, and you can configure the types of data that will be sent.
-Enhanced metrics can be configured at the resolver, data source, and operation levels. For more information, see [Monitoring and logging](https://docs.aws.amazon.com//appsync/latest/devguide/monitoring.html#cw-metrics) in the *AWS AppSync User Guide*.
+Enhanced metrics can be configured at the resolver, data source, and operation levels. For more information, see [Monitoring and logging](https://docs.aws.amazon.com/appsync/latest/devguide/monitoring.html#cw-metrics) in the *AWS AppSync User Guide*.
 *Required*: No
 *Type*: [EnhancedMetricsConfig](aws-properties-appsync-graphqlapi-enhancedmetricsconfig.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

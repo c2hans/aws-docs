@@ -10,7 +10,6 @@ The following API actions are available for rules:
 + [DeleteRule](https://docs.aws.amazon.com/connect/latest/APIReference/API_DeleteRule.html)
 + [DescribeRule](https://docs.aws.amazon.com/connect/latest/APIReference/API_DescribeRule.html)
 + [ListRules](https://docs.aws.amazon.com/connect/latest/APIReference/API_ListRules.html)
-+ [SearchRules](https://docs.aws.amazon.com/connect/latest/APIReference/API_SearchRules.html)
 + [UpdateRule](https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateRule.html)
 
 To create a CloudFormation template for rules, see the following topic:

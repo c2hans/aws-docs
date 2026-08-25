@@ -27,7 +27,7 @@ A single exposure finding contains issues identified in multiple remediation top
   + [The Amazon S3 bucket has public read access](#public-read-allowed)
   + [The Amazon S3 bucket has public write access](#public-write-allowed)
 + [Sensitive data traits for Amazon S3 buckets](#sensitive-data)
-  + [Sensitive data traits for Amazon S3 buckets](#sensitive-data-present)
+  + [The Amazon S3 bucket contains sensitive data](#sensitive-data-present)
 
 ## Misconfiguration traits for Amazon S3 buckets
 <a name="s3-bucket-misconfiguration"></a>
@@ -143,10 +143,10 @@ Take one or more of the following actions to address this exposure:
 
  Here are the sensitive data traits for Amazon S3 buckets and suggested remediation steps.
 
-### Sensitive data traits for Amazon S3 buckets
+### The Amazon S3 bucket contains sensitive data
 <a name="sensitive-data-present"></a>
 
- When Macie identifies sensitive data in your Amazon S3 buckets, it indicates potential security and compliance exposures that require immediate attention.
+ A data security scan has confirmed that sensitive data is present in the Amazon S3 bucket. An integrated data security product sets this trait when it inspects the objects in the bucket and identifies content that requires protection. Security Hub reports the trait the same way regardless of which product performed the inspection.
 
 Sensitive data can include:
 + Credentials
@@ -156,10 +156,13 @@ Sensitive data can include:
 
  If sensitive data is exposed through misconfiguration or unauthorized access, it could lead to compliance violations, data breaches, identity theft, or financial loss. Following security best practices, ensure proper classification of data and continuous monitoring of sensitive data in your Amazon S3 buckets.
 
-**Remediation: Implement controls for sensitive data**
- In the exposure finding, choose the **Open resource **. Review the type of sensitive data detected and its location in the bucket. For help interpreting Macie findings, see [Types of Macie findings](https://docs.aws.amazon.com/macie/latest/user/findings-types.html) in the *Amazon Macie User Guide*.
+**Remediation**
+ To clear this trait, remove the sensitive data from the bucket. If your workload requires the bucket to store sensitive data, implement the following security controls to reduce the risk of exposure.
+
+**Review the sensitive data in the bucket**
+ In the exposure finding, choose **Open resource**. Review the data security finding that reported the sensitive data to determine which objects or prefixes contain it. If the detection came from Macie, the finding type describes the category of sensitive data. For more information, see [Types of Macie findings](https://docs.aws.amazon.com/macie/latest/user/findings-types.html) in the *Amazon Macie User Guide*.
 
  Based on the type of sensitive data discovered, implement the appropriate security controls:
 +  **Restrict access to the bucket** – Review bucket permissions to make sure they follow the principle of least privilege. Use IAM policies, bucket policies, and ACLs to restrict access. For more information, see [Identity and Access Management for Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/security-iam.html) in the *Amazon S3 User Guide*.
 +  **Enable server-side encryption** – Enable server-side encryption with KMS keys keys for additional protection. For more information, see [Using server-side encryption with AWS KMS keys (SSE-KMS)](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingKMSEncryption.html) in the *Amazon S3 User Guide*.
-+  **Use AWS Glue DataBrew** – Use Glue DataBrew for data preparation and cleaning. For more information, see[What is AWS Glue DataBrew](https://docs.aws.amazon.com/databrew/latest/dg/what-is.html) in the *AWS Glue DataBrew Developer Guide*.
++  **Redact or transform the sensitive data** – If the objects do not need to retain sensitive values, use AWS Glue DataBrew to prepare the data. Apply the masking, replacement, or hashing transformations that remove those values before downstream systems consume the data. Write the prepared output to a separate bucket that has its own access controls. For more information, see [What is AWS Glue DataBrew](https://docs.aws.amazon.com/databrew/latest/dg/what-is.html) in the *AWS Glue DataBrew Developer Guide*.

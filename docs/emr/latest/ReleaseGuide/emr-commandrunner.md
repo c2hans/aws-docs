@@ -70,8 +70,6 @@ aws emr add-steps \
 
 The following table identifies additional tools that you can run using `command-runner.jar`.
 
-****
-
 | Tool name | Description |
 | --- | --- |
 | hadoop-streaming | Submits an Hadoop streaming program. In the console and some SDKs, this is a streaming step. |

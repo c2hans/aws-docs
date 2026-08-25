@@ -24,8 +24,6 @@ References:
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
 
-****
-
 - **   [CreateDataset](https://docs.aws.amazon.com/lookout-for-vision/latest/APIReference/API_CreateDataset.html)  **
   - **Description:** Grants permission to create a dataset manifest
   - **Resource types (\*required):**
@@ -163,8 +161,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 The following actions are defined by Amazon Lookout for Vision but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 | Actions | Description | Resource types (\*required) | Condition keys | Access level |
 | --- | --- | --- | --- | --- |
 |   [DescribeTrialDetection](https://docs.aws.amazon.com/lookout-for-vision/latest/developer-guide/trial-detection.html)  | Grants permission to provides state information about a running anomaly detection job |  |   | Read |
@@ -176,8 +172,6 @@ The following actions are defined by Amazon Lookout for Vision but are not direc
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
 
-****
-
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
 |  [model](https://docs.aws.amazon.com/lookout-for-vision/latest/developer-guide/model-create-project.html)  | arn:${Partition}:lookoutvision:${Region}:${Account}:model/${ProjectName}/${ModelVersion} | [aws:ResourceTag/${TagKey}](#list_lookoutvision-aws_ResourceTag___TagKey_) |
@@ -187,8 +181,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_lookoutvision-policy-keys"></a>
 
 Amazon Lookout for Vision defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

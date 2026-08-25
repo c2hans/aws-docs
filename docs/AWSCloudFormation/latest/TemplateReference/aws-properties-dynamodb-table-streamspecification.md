@@ -20,7 +20,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 {
   "[ResourcePolicy](#cfn-dynamodb-table-streamspecification-resourcepolicy)" : {{ResourcePolicy}},
-  "[StreamViewType](#cfn-dynamodb-table-streamspecification-streamviewtype)" : {{String}}
+  "[StreamViewType](#cfn-dynamodb-table-streamspecification-streamviewtype)" : {{String}},
+  "[Tags](#cfn-dynamodb-table-streamspecification-tags)" : {{[ Tag, ... ]}}
 }
 ```
 
@@ -31,6 +32,8 @@ To declare this entity in your CloudFormation template, use the following syntax
   [ResourcePolicy](#cfn-dynamodb-table-streamspecification-resourcepolicy): {{
     ResourcePolicy}}
   [StreamViewType](#cfn-dynamodb-table-streamspecification-streamviewtype): {{String}}
+  [Tags](#cfn-dynamodb-table-streamspecification-tags): {{
+    - Tag}}
 ```
 
 ## Properties
@@ -53,4 +56,11 @@ In a CloudFormation template, you can provide the policy in JSON or YAML format 
 *Required*: Yes
 *Type*: String
 *Allowed values*: `NEW_IMAGE | OLD_IMAGE | NEW_AND_OLD_IMAGES | KEYS_ONLY`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`Tags`  <a name="cfn-dynamodb-table-streamspecification-tags"></a>
+Specifies the tags to apply to the DynamoDB stream. Stream tags are independent of table tags.
+For an overview on tagging DynamoDB resources, see [Tagging for DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Tagging.html) in the *Amazon DynamoDB Developer Guide*.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-dynamodb-table-tag.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

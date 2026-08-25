@@ -74,8 +74,6 @@ See [Region availability for Directory Service](regions.md) for a list of suppor
 
 You can choose directory services with the features and scalability that best meets your needs. Use the following table to help you determine which AWS Directory Service directory option works best for your organization.
 
-****
-
 | What do you need to do? | Recommended AWS Directory Service options |
 | --- | --- |
 | I need Active Directory or LDAP for my applications in the cloud | Use **AWS Directory Service for Microsoft Active Directory** (Standard Edition or Enterprise Edition) if you need an actual Microsoft Active Directory in the AWS Cloud that supports Active Directory–aware workloads, or AWS applications and services such as Amazon WorkSpaces and Amazon Quick, or you need LDAP support for Linux applications.<br />Use **AWS Directory Service for Microsoft Active Directory** (Hybrid Edition) to extend your existing self-managed AD into the AWS Cloud with AWS Directory Service<br />Use **AD Connector** if you only need to allow your on-premises users to log in to AWS applications and services with their Active Directory credentials. You can also use AD Connector to join Amazon EC2 instances to your existing Active Directory domain.<br />Use **Simple AD** if you need a low-scale, low-cost directory with basic Active Directory compatibility that supports Samba 4–compatible applications, or you need LDAP compatibility for LDAP-aware applications. |
@@ -96,4 +94,4 @@ A basic understanding of Amazon EC2 is essential to using Directory Service. We 
 ## Sign up for an AWS account
 <a name="sign-up-for-aws"></a>
 
-To get started with AWS, you need an AWS account. For information about creating an AWS account, see [Getting started with an AWS account](https://docs.aws.amazon.com//accounts/latest/reference/getting-started.html) in the *AWS Account Management Reference Guide*.
+To get started with AWS, you need an AWS account. For information about creating an AWS account, see [Getting started with an AWS account](https://docs.aws.amazon.com/accounts/latest/reference/getting-started.html) in the *AWS Account Management Reference Guide*.

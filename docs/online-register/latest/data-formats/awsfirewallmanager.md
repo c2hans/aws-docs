@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsf
 
 AWS Firewall Manager provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="fms-GetAdminAccount"></a>[GetAdminAccount](https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_GetAdminAccount.html) | Return the AWS Organizations account that is associated with AWS Firewall Manager as the AWS Firewall Manager administrator | Read |

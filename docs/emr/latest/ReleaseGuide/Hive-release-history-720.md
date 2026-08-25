@@ -8,8 +8,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/Hive-release-his
 ## Amazon EMR 7.2.0 - Hive changes
 <a name="Hive-release-history-changes-720"></a>
 
-****
-
 | Type | Description |
 | --- | --- |
 | Upgrade | [ Parquet 1.13.1](https://github.com/apache/parquet-java/blob/apache-parquet-1.13.1/CHANGES.md) – Parquet is upgraded to 113.1. |
@@ -21,8 +19,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/Hive-release-his
 
 ### Amazon EMR 7.2.0 - New configurations
 <a name="Hive-release-history-changes-720-new-configs"></a>
-
-****
 
 | Classification | Name | Default | Description |
 | --- | --- | --- | --- |

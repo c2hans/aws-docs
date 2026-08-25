@@ -9,8 +9,6 @@ This procedure applies to both RTMP push and pull inputs from the internet, and 
 
 Obtain identifying information from the content provider.
 
-****
-
 |  Asset  |  Details  | Information to obtain |
 | --- | --- | --- |
 | Video | You don't need identifying information. MediaLive always extracts the single video asset. | None |

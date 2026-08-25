@@ -12,4 +12,4 @@ Compute Optimizer analyzes the following CloudWatch and Amazon ECS utilization m
 |  CPUUtilization  | The percentage of CPU capacity that's used in the service. |
 |  MemoryUtilization  | The percentage of memory that's used in the service. |
 
-For more information about these metrics, see [Amazon ECS CloudWatch metrics](https://docs.aws.amazon.com//AmazonECS/latest/userguide/cloudwatch-metrics.html) in the *Amazon ECS User Guide for AWS Fargate*.
+For more information about these metrics, see [Amazon ECS CloudWatch metrics](https://docs.aws.amazon.com/AmazonECS/latest/userguide/cloudwatch-metrics.html) in the *Amazon ECS User Guide for AWS Fargate*.

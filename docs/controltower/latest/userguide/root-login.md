@@ -9,11 +9,11 @@ Certain administrative tasks require that you must sign in as a root user. You c
 
 **You must sign in as a root user to perform the following actions:**
 + Change certain account settings, including the account name, root user password, or email address. For more information, see [Update and move accounts with AWS Control Tower](updating-account-factory-accounts.md).
-+ To [close an AWS account](https://docs.aws.amazon.com//awsaccountbilling/latest/aboutv2/close-account.html).
++ To [close an AWS account](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/close-account.html).
 + For more information about actions that require root user login credentials, see [Tasks that require root user credentials](https://docs.aws.amazon.com/accounts/latest/reference/root-user-tasks.html) in the *AWS Account Management Reference Guide*.
 
 **Note**
-To change or enable your [AWS Support plan, you must be signed in as the root user *or* be a user with the appropriate IAM permissions. ](https://docs.aws.amazon.com//controltower/latest/userguide/troubleshooting.html#getting-support).
+To change or enable your [AWS Support plan, you must be signed in as the root user *or* be a user with the appropriate IAM permissions. ](https://docs.aws.amazon.com/controltower/latest/userguide/troubleshooting.html#getting-support).
 
 **To sign in as root user**
 

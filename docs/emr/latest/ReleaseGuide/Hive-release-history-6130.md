@@ -8,8 +8,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/Hive-release-his
 ## Amazon EMR 6.13.0 - Hive changes
 <a name="Hive-release-history-changes-6130"></a>
 
-****
-
 | Type | Description |
 | --- | --- |
 | Improvement | Upgrade Python Scripts to Support Python3 |

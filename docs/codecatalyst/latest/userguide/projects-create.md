@@ -72,7 +72,7 @@ The **Bitbucket repositories** extension isn't compatible with Bitbucket Data Ce
 The **GitLab repositories** extension isn't compatible with GitLab self-managed project repositories.
 You can't use the **Write description for me** or **Summarize comments** features with linked repositories. These features are only available in pull requests in CodeCatalyst.
 
-For more information, see [Add functionality to projects with extensions in CodeCatalystAdd functionality to projects with extensions](extensions.md).
+For more information, see [Add functionality to projects with extensions in CodeCatalyst](extensions.md).
 
 **To install the third-party extension**
 
@@ -144,7 +144,7 @@ After installing the **GitHub repositories**, **Bitbucket repositories**, or **G
 ## Creating a project with a blueprint
 <a name="projects-create-console-template"></a>
 
-You can provision all of your project resources and sample code with a project blueprint. For information about blueprints, see the [Creating a comprehensive project with CodeCatalyst blueprintsCreating a comprehensive project with blueprints](project-blueprints.md).
+You can provision all of your project resources and sample code with a project blueprint. For information about blueprints, see the [Creating a comprehensive project with CodeCatalyst blueprints](project-blueprints.md).
 
 **To create a project with a blueprint**
 
@@ -161,7 +161,7 @@ This functionality requires that generative AI features are enabled for the spac
 
 1. Under **Name your project**, enter the name that you want to assign to your project and its associated resource names. The name must be unique within your space.
 
-1. (Optional) By default, the source code created by the blueprint is stored in a CodeCatalyst repository. Alternatively, you can choose to store the blueprint's source code in a third-party repository. For more information, see [Add functionality to projects with extensions in CodeCatalystAdd functionality to projects with extensions](extensions.md).
+1. (Optional) By default, the source code created by the blueprint is stored in a CodeCatalyst repository. Alternatively, you can choose to store the blueprint's source code in a third-party repository. For more information, see [Add functionality to projects with extensions in CodeCatalyst](extensions.md).
 **Important**
 CodeCatalyst doesn't support detecting changes in the default branch for linked repositories. To change the default branch for a linked repository, you must first unlink it from CodeCatalyst, change the default branch, and then link it again. For more information, see [Linking GitHub repositories, Bitbucket repositories, GitLab project repositories, and Jira projects in CodeCatalyst](extensions-link.md).
 As a best practice, always make sure you have the latest version of the extension before you link a repository.
@@ -197,7 +197,7 @@ You can use Amazon Q to help you create a project with a blueprint that creates 
 Amazon Q also creates issues for requirements that can't be addressed by a suggested blueprint. Additionally, you can assign those issues to Amazon Q. If you assign the issue to Amazon Q, it will attempt to create a draft solution for you to evaluate. This can help you and your team to focus and optimize work on issues that require your attention, while Amazon Q works on a solution for problems you don't have resources to address immediately.
 
 **Note**
-**Powered by Amazon Bedrock**: AWS implements [automated abuse detection](https://docs.aws.amazon.com//bedrock/latest/userguide/abuse-detection.html). Because the **Write description for me**, **Create content summary**, **Recommend tasks**, **Use Amazon Q to create or add features to a project**, and **Assign issues to Amazon Q** feature with Amazon Q Developer Agent for software development features are built on Amazon Bedrock, users can take full advantage of the controls implemented in Amazon Bedrock to enforce safety, security, and the responsible use of artificial intelligence (AI).
+**Powered by Amazon Bedrock**: AWS implements [automated abuse detection](https://docs.aws.amazon.com/bedrock/latest/userguide/abuse-detection.html). Because the **Write description for me**, **Create content summary**, **Recommend tasks**, **Use Amazon Q to create or add features to a project**, and **Assign issues to Amazon Q** feature with Amazon Q Developer Agent for software development features are built on Amazon Bedrock, users can take full advantage of the controls implemented in Amazon Bedrock to enforce safety, security, and the responsible use of artificial intelligence (AI).
 
 The following are some best practices to help you create projects and add blueprints with Amazon Q.
 
@@ -206,7 +206,7 @@ Generative AI features are only available in the US West (Oregon) Region.
 + **Use the default prompts provided by Amazon Q **. Amazon Q does best with choosing blueprints from the provided prompts.
 + **Use the configuration options suggested by Amazon Q to preview the blueprints**. Choose a blueprint to preview the sample code and resources that will be created by the blueprint.
 + **Use a space that is enabled for Amazon Q **. To create a project with Amazon Q, or to add functionality to a project with blueprints using Amazon Q, use a space that is enabled for generative AI features. For more information, see [ Enabling or disabling generative AI features for a space](https://docs.aws.amazon.com/codecatalyst/latest/adminguide/managing-generative-ai-features.html#managing-generative-ai-features-enable-disable).
-+ **Get more information about blueprints recommended by Amazon Q**. You might want to find out more about the kind of project resources, sample code, and components that are created with a specific recommended blueprint. For more information about available blueprints in CodeCatalyst, see [Creating a comprehensive project with CodeCatalyst blueprintsCreating a comprehensive project with blueprints](project-blueprints.md).
++ **Get more information about blueprints recommended by Amazon Q**. You might want to find out more about the kind of project resources, sample code, and components that are created with a specific recommended blueprint. For more information about available blueprints in CodeCatalyst, see [Creating a comprehensive project with CodeCatalyst blueprints](project-blueprints.md).
 + **Allow Amazon Q to work with issues**. Allow Amazon Q to create issues for you, assign those issues, and track them. For more information, see [Tutorial: Using CodeCatalyst generative AI features to speed up your development work](getting-started-project-assistance.md).
 + **Unassign Amazon Q from issues that are no longer worked on**. After you complete the example, unassign Amazon Q from any issues no longer being worked on. If Amazon Q has finished its work on an issue or could not find a solution, make sure to unassign Amazon Q to avoid reaching the maximum quota for generative AI features. For more information, see [Managing generative AI features](https://docs.aws.amazon.com/codecatalyst/latest/adminguide/managing-generative-ai-features.html) and [Pricing](https://codecatalyst.aws/explore/pricing).
 + **View usage for Amazon Q**. You can view usage of generative AI features at the user level. Go to **My settings** to manage generative AI quotas and view usage by your Builder ID or single sign-on (SSO) identity. For more information, see [ Viewing usage of generative AI features in a space](https://docs.aws.amazon.com/codecatalyst/latest/adminguide/managing-generative-ai-features.html#managing-generative-ai-features-view-usage).
@@ -229,9 +229,9 @@ After your project is ready, you can add resources and tasks.
 + To learn about the CI/CD workflows created with your project, see [Getting started with workflows](workflows-getting-started.md).
 + To work with build actions similar to those in your new project that deploy build artifacts to an Amazon S3 bucket, see [Building with workflows](build-workflow-actions.md) and [Tutorial: Upload artifacts to Amazon S3](build-deploy.md).
 + To start with an empty project and work with deploying a similar serverless application with an CloudFormation stack deployment, see [Tutorial: Deploy a serverless application](deploy-tut-lambda.md).
-+ To add an issues planning board, see [Track and organize work with issues in CodeCatalystTrack and organize work with issues](issues.md).
++ To add an issues planning board, see [Track and organize work with issues in CodeCatalyst](issues.md).
 + To view the project overview, project status, recent team activity, and assigned work, see [Getting a list of projects](projects-view.md).
-+ To view source code or create a pull request, see [Store and collaborate on code with source repositories in CodeCatalystStore and collaborate on code with source repositories](source.md).
++ To view source code or create a pull request, see [Store and collaborate on code with source repositories in CodeCatalyst](source.md).
 + To set up notifications that send status alerts for workflow run success or failure, see [Sending Slack and email notifications from CodeCatalyst](notifications-manage.md).
 + To invite members to your project, see [Granting users project permissions](projects-members.md).
-+ To set up Dev Environments, see [Write and modify code with Dev Environments in CodeCatalystWrite and modify code with Dev Environments](devenvironment.md).
++ To set up Dev Environments, see [Write and modify code with Dev Environments in CodeCatalyst](devenvironment.md).

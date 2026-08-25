@@ -29,8 +29,6 @@ AWS Backup storage has no API operations that can be used in the `Actions` eleme
 
 The following actions are defined by AWS Backup storage but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 | Actions | Description | Resource types (\*required) | Condition keys | Access level |
 | --- | --- | --- | --- | --- |
 |   [CommitBackupJob](https://docs.aws.amazon.com/aws-backup/latest/devguide/backup-data-transfer.html)  | Grants permission to commit backup job |  |   | Write |

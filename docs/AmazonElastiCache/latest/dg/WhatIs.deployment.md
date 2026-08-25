@@ -56,4 +56,4 @@ Create your own node-based cluster if:
 | Pricing model | Pay-per-use, based on data stored in GB-hours and requests in ElastiCache Processing Units (ECPU). See pricing details [here](https://aws.amazon.com/elasticache/pricing/). | Pay-per-hour, based on cache node usage. See pricing details [here](https://aws.amazon.com/elasticache/pricing/). |
 
 Related topics:
-+ [Creating and managing a node-based ElastiCache clusterCreating and managing a node-based ElastiCache cluster](designing-elasticache-cluster.md)
++ [Creating and managing a node-based ElastiCache cluster](designing-elasticache-cluster.md)

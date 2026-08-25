@@ -273,7 +273,7 @@ meetingSession.audioVideo.realtimeSubscribeToReceiveDataMessage(topic, callback)
 ### Listen for stop events
 <a name="listen-for-stop-events"></a>
 
-You can listen for events when a Contact's participation ends through the `audioVideoDidStop` observer. Specific status codes may vary by platform.
+You can listen for events when a Contact's participation ends through the `audioVideoDidStop` observer. Specific status codes might vary by platform.
 
 #### Call reaches capacity
 <a name="call-reaches-capacity"></a>

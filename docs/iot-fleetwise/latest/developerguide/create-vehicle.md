@@ -14,7 +14,7 @@ You can use the AWS IoT FleetWise console or API to create a vehicle.
 
 **Important**
 Before you start, check the following:
-You must have a vehicle model and the status of the vehicle model must be `ACTIVE`. For more information, see [Manage AWS IoT FleetWise vehicle modelsVehicle models](vehicle-models.md).
+You must have a vehicle model and the status of the vehicle model must be `ACTIVE`. For more information, see [Manage AWS IoT FleetWise vehicle models](vehicle-models.md).
 Your vehicle model must be associated with a decoder manifest, and the status of the decoder manifest must be `ACTIVE`. For more information, see [Manage AWS IoT FleetWise decoder manifests](decoder-manifests.md).
 
 **Topics**

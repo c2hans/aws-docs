@@ -7,11 +7,11 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/quick-acco
 
 Two common ways exist to enroll an individual AWS account into AWS Control Tower.
 
-1. After you select the *auto-enrollment* feature in the **Settings** page, you can create an AWS account outside of AWS Control Tower and move it directly into a registered OU. For more information, see [Move and enroll accounts automatically](https://docs.aws.amazon.com//controltower/latest/userguide/account-auto-enrollment.html). This option is available for landing zone versions 3.1 and later.
+1. After you select the *auto-enrollment* feature in the **Settings** page, you can create an AWS account outside of AWS Control Tower and move it directly into a registered OU. For more information, see [Move and enroll accounts automatically](https://docs.aws.amazon.com/controltower/latest/userguide/account-auto-enrollment.html). This option is available for landing zone versions 3.1 and later.
 
 1. You can enroll an existing account from the AWS Control Tower console manually.
 
-**The following sections describe the second option,** which requres no previous configuration of your AWS Control Tower environment. The AWS account must fulfill the required [prerequisites](https://docs.aws.amazon.com//controltower/latest/userguide/enrollment-prerequisites.html).
+**The following sections describe the second option,** which requres no previous configuration of your AWS Control Tower environment. The AWS account must fulfill the required [prerequisites](https://docs.aws.amazon.com/controltower/latest/userguide/enrollment-prerequisites.html).
 
 **View your eligible accounts in the console:**
 
@@ -24,7 +24,7 @@ Next, follow the steps for enrolling an individual account, as shown in the [Ste
 ## Considerations for enrolling from the console
 <a name="enroll-from-console"></a>
 + The **Enroll account** feature available in the AWS Control Tower console is intended for enrolling existing AWS accounts so that they are governed by AWS Control Tower. For more information, see [Enroll an existing AWS account](https://docs.aws.amazon.com/controltower/latest/userguide/enroll-account.html).
-+ The console-based **Enroll account** capability is available when your landing zone is not in a state of [drift](https://docs.aws.amazon.com//controltower/latest/userguide/drift.html). If your landing zone is in a state of drift, you may not be able to use the **Enroll account** capability successfully. You'll need to provision new accounts through Account Factory or another method, until your landing zone drift has been resolved.
++ The console-based **Enroll account** capability is available when your landing zone is not in a state of [drift](https://docs.aws.amazon.com/controltower/latest/userguide/drift.html). If your landing zone is in a state of drift, you may not be able to use the **Enroll account** capability successfully. You'll need to provision new accounts through Account Factory or another method, until your landing zone drift has been resolved.
 + When you enroll accounts from the AWS Control Tower console, you must be signed into an account with a user that has the `AWSServiceCatalogEndUserFullAccess` policy enabled, along with **Administrator** access permissions to use the AWS Control Tower console, and you cannot be signed in as the root user.
 + Accounts that you enroll may be updated by means of the AWS Control Tower Account Factory, as you would update any other account. Update procedures are given in the section called [Update and move accounts with AWS Control Tower](updating-account-factory-accounts.md).
 
@@ -51,13 +51,13 @@ After the **AdministratorAccess** access permission (policy) is in place in your
 + To enroll an existing account, the `AWSControlTowerExecution` role must be present in the account you're enrolling.
 + Your IAM principal may lack the necessary permissions to provision an account.
 + AWS Security Token Service (AWS STS) is disabled in your AWS account in your home Region, or in any Region supported by AWS Control Tower.
-+ You may be signed in as an IAM user or role that needs to be added to the Account Factory Portfolio in AWS Service Catalog. The user or role must be added before you'll have access to Account Factory so you can create or enroll an account in AWS Control Tower. If the appropriate user or role is not added to the Account Factory portfolio, you’ll receive an error when you attempt to add an account. For instructions on how to grant access to AWS Service Catalog portfolios, see [Granting access to users](https://docs.aws.amazon.com//servicecatalog/latest/adminguide/catalogs_portfolios_users.html).
++ You may be signed in as an IAM user or role that needs to be added to the Account Factory Portfolio in AWS Service Catalog. The user or role must be added before you'll have access to Account Factory so you can create or enroll an account in AWS Control Tower. If the appropriate user or role is not added to the Account Factory portfolio, you’ll receive an error when you attempt to add an account. For instructions on how to grant access to AWS Service Catalog portfolios, see [Granting access to users](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/catalogs_portfolios_users.html).
 + You may be signed in as root.
 + The account you're trying to enroll may have AWS Config settings that are residual. In particular, the account may have a configuration recorder or delivery channel. These must be deleted or modified through the AWS CLI before you can enroll an account. For more information, see [Enroll accounts that have existing AWS Config resources](existing-config-resources.md) and [Interact with AWS Control Tower through AWS CloudShell](cshell-examples.md).
 + If the account belongs to another OU with a management account, including another AWS Control Tower OU, you must terminate the account in its current OU before it can join another OU. Existing resources must be removed in the original OU. Otherwise, enrollment will fail.
 + Account provisioning and enrollment fails if your destination OU’s SCPs don’t allow you to create all of the resources required for that account. For example, an SCP in your destination OU may block resource creation without certain tags. In this case, account provisioning or enrollment fails, because AWS Control Tower does not support tagging of resources. For help, contact your account representative, or Support.
 
-For more information about how AWS Control Tower works with roles when you're creating new accounts or enrolling existing accounts, see [Roles and accounts](https://docs.aws.amazon.com//controltower/latest/userguide/roles.html).
+For more information about how AWS Control Tower works with roles when you're creating new accounts or enrolling existing accounts, see [Roles and accounts](https://docs.aws.amazon.com/controltower/latest/userguide/roles.html).
 
 **Tip**
 If you cannot confirm that an existing AWS account meets the enrollment prerequisites, you can set up an **Enrollment OU** and enroll the account into that OU. After enrollment is successful, you can move the account to the desired OU. If enrollment happens to fail, no other accounts or OUs are affected by the failure.
@@ -65,7 +65,7 @@ If you cannot confirm that an existing AWS account meets the enrollment prerequi
 If you have doubts that your existing accounts and their configurations are compatible with AWS Control Tower, you can follow the best practice recommended in the following section.
 
 **Recommended: You can set up a two-step approach to account enrollment**
-+ First, use an AWS Config *conformance pack* to evaluate how your accounts may be affected by some AWS Control Tower controls. To determine how enrollment into AWS Control Tower may affect your accounts, see [ Extend AWS Control Tower governance using AWS Config conformance packs](https://aws.amazon.com//blogs/mt/extend-aws-control-tower-governance-using-aws-config-conformance-packs/).
++ First, use an AWS Config *conformance pack* to evaluate how your accounts may be affected by some AWS Control Tower controls. To determine how enrollment into AWS Control Tower may affect your accounts, see [ Extend AWS Control Tower governance using AWS Config conformance packs](https://aws.amazon.com/blogs/mt/extend-aws-control-tower-governance-using-aws-config-conformance-packs/).
 + Next, you may wish to enroll the account. If the compliance results are satisfactory, the migration path is easier because you can enroll the account without unexpected consequences.
 + After you've done your evaluation, if you decide to set up an AWS Control Tower landing zone, you may need to remove the AWS Config delivery channel and configuration recorder that were created for your evaluation. Then you'll be able to set up AWS Control Tower successfully.
 

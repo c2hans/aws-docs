@@ -30,7 +30,7 @@ Here are some types of AWS Config resources that your account could have already
 **Note**
 If you attempt to enroll an account that has existing Config resources, without having the account added to the allow list, enrollment will fail. Thereafter, if you subsequently try to add that same account to the allow list, AWS Control Tower cannot validate that the account is provisioned correctly. You must deprovision the account from AWS Control Tower before you can request the allow list and then enroll it. If you only move the account to a different AWS Control Tower OU, it causes governance drift, which also prevents the account from being added to the allow list.
 
- For a blog that describes an automated approach to enrolling accounts with existing AWS Config resources, see [Automate enrollment of accounts with existing AWS Config resources into AWS Control Tower](https://aws.amazon.com//blogs/mt/automate-enrollment-of-accounts-with-existing-aws-config-resources-into-aws-control-tower/).
+ For a blog that describes an automated approach to enrolling accounts with existing AWS Config resources, see [Automate enrollment of accounts with existing AWS Config resources into AWS Control Tower](https://aws.amazon.com/blogs/mt/automate-enrollment-of-accounts-with-existing-aws-config-resources-into-aws-control-tower/).
 
 **This process has 5 main steps.**
 

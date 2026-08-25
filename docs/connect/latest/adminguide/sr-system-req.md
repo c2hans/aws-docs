@@ -21,7 +21,7 @@ Here are the minimum system requirements for agent devices to perform screen rec
 + Chrome OS version 140 or higher enrolled in a Google Enterprise Domain
 
 **Note**
-When Windows multi-session configuration is enabled allowing multiple agents to use a single Windows host, ensure that the agent's workstation has the recommended resource availability for each concurrent session.
+When Windows multi-session configuration is enabled allowing multiple agents to use a single Windows host, make sure that the agent's workstation has the recommended resource availability for each concurrent session.
 
 ## Network requirements
 <a name="network-requirements"></a>
@@ -43,7 +43,7 @@ We recommend the wildcard `connect-recording-staging-*.s3.dualstack.your-region-
 
 If you prefer not to use wildcards, the full list of endpoints is available at [https://screenrecording.connect.aws/config/connect-recording-endpoint-allowlist.json](https://screenrecording.connect.aws/config/connect-recording-endpoint-allowlist.json)
 
-This list may be updated in the future. Refer to the `createDate` field at the top of the file to check for updates.
+This list might be updated in the future. Refer to the `createDate` field at the top of the file to check for updates.
 
 #### Browser extension updates (required for rule-based redaction)
 <a name="firewall-browser-extension-updates"></a>

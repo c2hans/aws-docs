@@ -6,8 +6,8 @@ source_url: https://docs.aws.amazon.com//solutions/account-assessment-for-aws-or
 
 Investigate resource-based policy dependencies for your AWS Organizations accounts
 
-- **Version**: 1.1.12
-- **Released**: 7/2026
+- **Version**: 1.1.13
+- **Released**: 8/2026
 - **Author**: AWS
 - **Est. deployment time**: 30 mins
 - **Estimated cost**: [See details](/solutions/latest/account-assessment-for-aws-organizations/plan-your-deployment.html)

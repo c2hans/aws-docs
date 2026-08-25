@@ -14,8 +14,6 @@ Enable and configure cross-account backup and monitoring in a management account
 ## Change Type Details
 <a name="ct-2yja7ihh30ply-MABe-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2yja7ihh30ply |

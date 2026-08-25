@@ -29,7 +29,7 @@ A general-purpose connector is designed to work with mobile device endpoints tha
 ## AWS Private CA Connector for SCEP for Microsoft Intune
 <a name="connector-for-scep-how-it-works-intune"></a>
 
-AWS Private CA Connector for SCEP for Microsoft Intune is designed for use with Microsoft Intune. With the Connector for SCEP for Microsoft Intune connector type, you'll use Microsoft Intune to manage your SCEP challenge passwords. For more information about using Connector for SCEP with Microsoft Intune, see [Configure Microsoft Intune for Connector for SCEPConfigure Microsoft Intune](connector-for-scep-intune.md).
+AWS Private CA Connector for SCEP for Microsoft Intune is designed for use with Microsoft Intune. With the Connector for SCEP for Microsoft Intune connector type, you'll use Microsoft Intune to manage your SCEP challenge passwords. For more information about using Connector for SCEP with Microsoft Intune, see [Configure Microsoft Intune for Connector for SCEP](connector-for-scep-intune.md).
 
 To use Connector for SCEP with Microsoft Intune, you must enable specific functionalities using the Microsoft Intune API, and possess a valid Microsoft Intune license. You should also review the [Microsoft Intune® App Protection Policies](https://learn.microsoft.com/en-us/mem/intune/apps/app-protection-policy).
 

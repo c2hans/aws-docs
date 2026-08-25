@@ -15,6 +15,15 @@ If your function has a function URL, you can specify the `FunctionUrlAuthType` p
 
 This resource adds a statement to a resource-based permission policy for the function. For more information about function policies, see [Lambda Function Policies](https://docs.aws.amazon.com/lambda/latest/dg/access-control-resource-based.html).
 
+**Don't use both permission resource types**
+With the `AWS::Lambda::ResourcePolicy` resource, you can add a complete JSON resource-based policy to a function.
+Using both `AWS::Lambda::Permission` and `AWS::Lambda::ResourcePolicy` to set permissions on a function can result in errors. Permissions defined in `AWS::Lambda::Permission` can be unintentionally overwritten, whether in a single CloudFormation stack or across multiple stacks. Don't use both resource types to set permissions on a function.
+We recommend using the `AWS::Lambda::ResourcePolicy` resource to set access permissions. With this resource, you have more flexibility and fine-grained control than `AWS::Lambda::Permission`. To migrate existing permissions for a function from `AWS::Lambda::Permission` to `AWS::Lambda::ResourcePolicy`, do the following:
+Set a `Retain`[deletion policy](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-deletionpolicy.html) on the `AWS::Lambda::Permission` resources you want to migrate. This is necessary so that Lambda does not delete statements with the same statement ID when you delete these resources.
+Use the [GetResourcePolicy](https://docs.aws.amazon.com/lambda/latest/api/API_GetResourcePolicy.html)Lambda API to retrieve the resource-based policy currently attached to the function.
+Use this policy to create a new `AWS::Lambda::ResourcePolicy` resource.
+Delete all the existing `AWS::Lambda::Permission` resources for the function.
+
 ## Syntax
 <a name="aws-resource-lambda-permission-syntax"></a>
 

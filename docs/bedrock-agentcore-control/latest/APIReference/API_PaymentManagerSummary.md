@@ -66,7 +66,14 @@ Required: No
 The description of the payment manager.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 4096.
-Pattern: `[a-zA-Z0-9\s]+`
+Pattern: `[^\p{C}]*`
+Required: No
+
+ ** kmsKeyArn **   <a name="bedrockagentcorecontrol-Type-PaymentManagerSummary-kmsKeyArn"></a>
+The Amazon Resource Name (ARN) of the AWS KMS key used to encrypt sensitive payment manager data at rest, if configured.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 2048.
+Pattern: `arn:aws(|-cn|-us-gov):kms:[a-zA-Z0-9-]*:[0-9]{12}:key/[a-zA-Z0-9-]{36}`
 Required: No
 
 ## See Also

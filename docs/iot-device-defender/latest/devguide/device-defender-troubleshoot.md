@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/iot-device-defender/latest/devguide/devi
 <a name="device-defender-troubleshoot"></a>
 
 **Help us improve this topic**
- [Let us know what would help make it better](https://docs.aws.amazon.com//forms/aws-doc-feedback?hidden_service_name=IoT%20Docs&topic_url=http://docs.aws.amazon.com/en_us/iot/latest/developerguide/device-defender-troubleshoot.html) General
+ [Let us know what would help make it better](https://docs.aws.amazon.com/forms/aws-doc-feedback?hidden_service_name=IoT%20Docs&topic_url=http://docs.aws.amazon.com/en_us/iot/latest/developerguide/device-defender-troubleshoot.html) General
 
 Q: Are there any prerequisites for using AWS IoT Device Defender?
 A: If you want to use device-reported metrics, you must first deploy an agent on your AWS IoT connected devices or device gateways. Devices must provide a consistent client identifier or thing name.Audit

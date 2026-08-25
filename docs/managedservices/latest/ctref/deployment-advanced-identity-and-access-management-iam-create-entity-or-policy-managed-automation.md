@@ -14,8 +14,6 @@ Create Identity and Access Management (IAM) user, role, or policy.
 ## Change Type Details
 <a name="ct-3dpd8mdd9jn1r-DAIc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-3dpd8mdd9jn1r |

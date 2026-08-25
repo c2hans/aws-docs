@@ -33,8 +33,6 @@ Move from x86 to Graviton to save costs.
 
 The following table shows the full mapping of recommended actions and resource type.
 
-****
-
 - **Purchase Savings Plans**
   - **Resource type:** Compute Savings Plans / **Conditions:** All / **Implementation effort:** Very low / **Resource restart needed:** No / **Rollback possible:** No
   - **Resource type:** EC2 Instance Savings Plans / **Conditions:** All / **Implementation effort:** Very low / **Resource restart needed:** No / **Rollback possible:** No

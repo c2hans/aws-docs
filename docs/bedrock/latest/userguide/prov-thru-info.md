@@ -27,8 +27,6 @@ To retrieve information about a specific Provisioned Throughput, send a [GetProv
 
 To list information about all the Provisioned Throughputs in an account, send a [ListProvisionedModelThroughputs](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_ListProvisionedModelThroughputs.html) request with an [Amazon Bedrock control plane endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#br-cp). You can specify the following optional parameters to control the number of results:
 
-****
-
 | Field | Short description |
 | --- | --- |
 | maxResults | The maximum number of results to return in a response. |

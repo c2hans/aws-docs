@@ -21,7 +21,7 @@ For most TLDs, you need to get an authorization code from the current registrar 
 For information about the cost to register domains or transfer them to Route 53, see [Amazon Route 53 Pricing for Domain Registration](https://d32ze2gidvkk54.cloudfront.net/Amazon_Route_53_Domain_Registration_Pricing_20140731.pdf).
 
 **Using Route 53 as your DNS service**
-You can use Route 53 as the DNS service for any domain, even if the TLD for the domain isn't included on the following lists. For more information about Route 53 as a DNS service, see [How internet traffic is routed to your website or web application](welcome-dns-service.md). For information about how to transfer DNS service for your domain to Route 53, see [Making Amazon Route 53 the DNS service for an existing domainMaking Route 53 the DNS service for an existing domain](MigratingDNS.md).
+You can use Route 53 as the DNS service for any domain, even if the TLD for the domain isn't included on the following lists. For more information about Route 53 as a DNS service, see [How internet traffic is routed to your website or web application](welcome-dns-service.md). For information about how to transfer DNS service for your domain to Route 53, see [Making Amazon Route 53 the DNS service for an existing domain](MigratingDNS.md).
 
 **Internationalized domain names**
 Not all TLDs support internationalized domain names (IDNs), meaning domain names that include characters other than ASCII characters a-z, 0-9, and - (hyphen). The listing for each TLD indicates whether that TLD supports IDNs. For more information about internationalized domain names, see [DNS domain name format](DomainNameFormat.md).

@@ -9,6 +9,7 @@ The following table describes the important changes to the documentation since t
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [Added Amazon ECS Managed Instances compute environments](https://docs.aws.amazon.com/batch/latest/userguide/ecs_managed_instances.html) | Added support for Amazon ECS Managed Instances as a new compute environment type. Amazon ECS Managed Instances provides fully managed Amazon EC2 capacity with broader compute flexibility than Fargate, including GPU instances, bare metal, and specific instance type selection. | August 24, 2026 |
 | [Updated BatchServiceRolePolicy](https://docs.aws.amazon.com/batch/latest/userguide/security-iam-awsmanpol.html#security-iam-awsmanpol-updates) | Updated the `BatchServiceRolePolicy` managed policy to add Amazon ECS capacity provider permissions, cluster update permissions, and tagging permissions for capacity provider resources. | August 5, 2026 |
 | [Updated AWSBatchServiceRolePolicyForSageMaker](https://docs.aws.amazon.com/batch/latest/userguide/security-iam-awsmanpol.html#security-iam-awsmanpol-updates) | Updated the `AWSBatchServiceRolePolicyForSageMaker` managed policy to add `sagemaker:DeleteTrainingJob` permission. | April 16, 2026 |
 | [Added default\_x86\_64 and default\_arm64](https://docs.aws.amazon.com/batch/latest/userguide/create-compute-environment-managed-ec2.html) | Added new `default_x86_64` and `default_arm64` for **Allowed instance types**. | August 15, 2025 |

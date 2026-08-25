@@ -260,8 +260,6 @@ The following table describes the important changes to the documentation for AWS
 
 The following table describes the documentation release history of AWS CloudTrail prior to June 29, 2018.
 
-****
-
 | Change | Description | Release Date |
 | --- | --- | --- |
 | Added service support | This release supports Amazon RDS Performance Insights. For more information, see [CloudTrail Supported Services and Integrations](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.html). | June 21, 2018 |

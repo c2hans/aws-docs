@@ -12,8 +12,6 @@ CloudTrail Lake supports Amazon CloudWatch metrics. CloudWatch is a monitoring s
 
  The `AWS/CloudTrail` namespace includes the following metrics for CloudTrail Lake.
 
-****
-
 | Metric | Description | Units |
 | --- | --- | --- |
 | HourlyDataIngested | The amount of data ingested into the event data store during the last hour. This metric is updated every hour.<br />This metric is available for all event data store types. | Bytes |

@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 
  The `AWSSupport-TroubleshootVPN` runbook helps you to trace and resolve errors in an AWS Site-to-Site VPN connection. The automation includes several automated checks designed to trace `IKEv1` or `IKEv2` errors related to AWS Site-to-Site VPN connection tunnels. The automation tries to match specific errors and its corresponding resolution form a list of common issues.
 
- **Note: **This automation does not rectify the errors. It runs for the mentioned time range and scans the log group for errors in [VPN CloudWatch logs group](https://docs.aws.amazon.com//vpn/latest/s2svpn/log-contents.html).
+ **Note: **This automation does not rectify the errors. It runs for the mentioned time range and scans the log group for errors in [VPN CloudWatch logs group](https://docs.aws.amazon.com/vpn/latest/s2svpn/log-contents.html).
 
  **How does it work?**
 
@@ -170,9 +170,9 @@ Follow these steps to configure the automation:
 
 Systems Manager Automation
 + [Run this Automation (console)](https://console.aws.amazon.com/systems-manager/automation/execute/AWSPremiumSupport-DDoSResiliencyAssessment)
-+ [Run an automation](https://docs.aws.amazon.com//systems-manager/latest/userguide/automation-working-executing.html)
-+ [Setting up an Automation](https://docs.aws.amazon.com//systems-manager/latest/userguide/automation-setup.html)
++ [Run an automation](https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-working-executing.html)
++ [Setting up an Automation](https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-setup.html)
 + [Support Automation Workflows landing page](https://aws.amazon.com/premiumsupport/technology/saw/)
 
 AWS service documentation
-+ [Contents of Site-to-Site VPN logs](https://docs.aws.amazon.com//vpn/latest/s2svpn/log-contents.html)
++ [Contents of Site-to-Site VPN logs](https://docs.aws.amazon.com/vpn/latest/s2svpn/log-contents.html)

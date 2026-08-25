@@ -37,7 +37,7 @@ If you set up custom, non-Terraform integrations before you provision your accou
 **Note**
 The AFT feature described in this section is intended for advanced users who understand the functioning of AWS Step Functions. As an alternative, we recommend that you work with the global helpers in the account customizations stage.
 
-The AFT account provisioning framework calls an AWS Step Functions state machine, which you define, to implement your customizations. Refer to the [AWS Step Functions documentation](https://docs.aws.amazon.com//step-functions/latest/dg/welcome.html) to learn more about the possible state machine integrations.
+The AFT account provisioning framework calls an AWS Step Functions state machine, which you define, to implement your customizations. Refer to the [AWS Step Functions documentation](https://docs.aws.amazon.com/step-functions/latest/dg/welcome.html) to learn more about the possible state machine integrations.
 
 Here are some common integrations.
 + AWS Lambda functions in the language of your choice
@@ -58,7 +58,7 @@ These types of integrations are not part of AWS Control Tower, and they cannot b
 
 **Step 1: Modify the state machine definition**
 
-Modify the example `customizations.asl.json` state machine definition. The example is available in the `git` repository you set up for storing AFT account provisioning customizations, in your [post-deployment steps](https://docs.aws.amazon.com//controltower/latest/userguide/aft-post-deployment.html). Refer to the [AWS Step Functions Developer Guide](https://docs.aws.amazon.com//step-functions/latest/dg/welcome.html) to learn more about state machine definitions.
+Modify the example `customizations.asl.json` state machine definition. The example is available in the `git` repository you set up for storing AFT account provisioning customizations, in your [post-deployment steps](https://docs.aws.amazon.com/controltower/latest/userguide/aft-post-deployment.html). Refer to the [AWS Step Functions Developer Guide](https://docs.aws.amazon.com/step-functions/latest/dg/welcome.html) to learn more about state machine definitions.
 
 **Step 2: Include the corresponding Terraform configuration**
 

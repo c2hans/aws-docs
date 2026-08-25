@@ -86,8 +86,6 @@ The certificate signing request (CSR) must include a public key. The key can be 
 
 The table below shows how key algorithms are supported:
 
-****
-
 | Key algorithm | Certificate signing algorithm | TLS version | Supported? Yes or No |
 | --- | --- | --- | --- |
 | RSA with a key size of at least 2048 bits | All | TLS 1.2 TLS 1.3 | Yes |
@@ -95,6 +93,6 @@ The table below shows how key algorithms are supported:
 | RSA-PSS with a key size of at least 2048 bits | All | TLS 1.2 | No |
 | RSA-PSS with a key size of at least 2048 bits | All | TLS 1.3 | Yes |
 
-To create a certificate using [CreateCertificateFromCSR](https://docs.aws.amazon.com//iot/latest/apireference/API_CreateCertificateFromCsr.html), you can use a supported key algorithm to generate a public key for your CSR. To register your own certificate using [RegisterCertificate](https://docs.aws.amazon.com//iot/latest/apireference/API_RegisterCertificate.html) or [RegisterCertificateWithoutCA](https://docs.aws.amazon.com//iot/latest/apireference/API_RegisterCertificateWithoutCA.html), you can use a supported key algorithm to generate a public key for the certificate.
+To create a certificate using [CreateCertificateFromCSR](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateCertificateFromCsr.html), you can use a supported key algorithm to generate a public key for your CSR. To register your own certificate using [RegisterCertificate](https://docs.aws.amazon.com/iot/latest/apireference/API_RegisterCertificate.html) or [RegisterCertificateWithoutCA](https://docs.aws.amazon.com/iot/latest/apireference/API_RegisterCertificateWithoutCA.html), you can use a supported key algorithm to generate a public key for the certificate.
 
-For more information, see [Security policies](https://docs.aws.amazon.com//iot/latest/developerguide/transport-security.html#tls-policy-table).
+For more information, see [Security policies](https://docs.aws.amazon.com/iot/latest/developerguide/transport-security.html#tls-policy-table).

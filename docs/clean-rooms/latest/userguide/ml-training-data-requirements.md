@@ -9,7 +9,7 @@ To successfully create a lookalike model, your training data must meet the follo
 + The training data must be in Parquet, CSV, or JSON format.
 **Note**
 Zstandard (ZSTD) compressed Parquet data is not supported.
-+ Your training data must be cataloged in AWS Glue. For more information, see [Getting started with the AWS Glue Data Catalog](https://docs.aws.amazon.com//glue/latest/dg/start-data-catalog.html) in the AWS Glue Developer Guide. We recommend using AWS Glue crawlers to create your tables because the schema is inferred automatically.
++ Your training data must be cataloged in AWS Glue. For more information, see [Getting started with the AWS Glue Data Catalog](https://docs.aws.amazon.com/glue/latest/dg/start-data-catalog.html) in the AWS Glue Developer Guide. We recommend using AWS Glue crawlers to create your tables because the schema is inferred automatically.
 + The Amazon S3 bucket that contains the training data and seed data is in the same AWS region as your other Clean Rooms ML resources.
 + The training data must contain at least 100,000 unique user IDs with at least two item interactions each.
 + The training data must contain at least 1 million records.

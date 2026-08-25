@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/chat-persisten
 # Enable customers to resume chat conversations in Connect Customer
 <a name="chat-persistence"></a>
 
-Customers often start a chat, then leave the conversation and return later to continue chatting. This may happen many times over the course of several days, months, or even years. To support long running chats like these, you enable persistent chat.
+Customers often start a chat, then leave the conversation and return later to continue chatting. This might happen many times over the course of several days, months, or even years. To support long running chats like these, you enable persistent chat.
 
 With persistent chat, customers can resume previous conversations with the context, metadata, and transcripts carried forward. They don't need to repeat themselves when they return to a chat, and agents have access to the entire conversation history.
 

@@ -14,8 +14,6 @@ Add an Active Directory (AD) group in the trusted domain to an AD group in the A
 ## Change Type Details
 <a name="ct-1i20abktsm05v-MDUa-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1i20abktsm05v |

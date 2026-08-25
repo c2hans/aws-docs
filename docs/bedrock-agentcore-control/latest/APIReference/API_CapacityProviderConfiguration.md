@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 # CapacityProviderConfiguration
 <a name="API_CapacityProviderConfiguration"></a>
 
-The configuration for a capacity provider that supplies compute resources to the AgentCore Runtime. Specify this configuration to run the AgentCore Runtime on Amazon EC2 instances in your account.
+Configuration for customer-managed compute capacity for the AgentCore Runtime. A capacity provider runs the AgentCore Runtime on the Instances compute type, using AWS managed compute in your account.
 
 ## Contents
 <a name="API_CapacityProviderConfiguration_Contents"></a>
@@ -14,7 +14,7 @@ The configuration for a capacity provider that supplies compute resources to the
 The Amazon Resource Name (ARN) of the capacity provider to use for the AgentCore Runtime.
 Type: String
 Pattern: `arn:aws(-[^:]+)?:bedrock-agentcore:[a-z0-9-]+:[0-9]{12}:capacity-provider/[a-zA-Z][a-zA-Z0-9_]{0,47}-[a-zA-Z0-9]{10}`
-Required: No
+Required: Yes
 
 ## See Also
 <a name="API_CapacityProviderConfiguration_SeeAlso"></a>

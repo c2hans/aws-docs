@@ -89,4 +89,4 @@ The following application-specific encryption features are available with Amazon
 + Hive
   + Communication between the AWS Glue metastore and EMR Serverless applications happens via TLS.
 
-You should allow only encrypted connections over HTTPS (TLS) using [the aws:SecureTransport condition](https://docs.aws.amazon.com//IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_Boolean) on Amazon S3 bucket IAM policies.
+You should allow only encrypted connections over HTTPS (TLS) using [the aws:SecureTransport condition](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_Boolean) on Amazon S3 bucket IAM policies.

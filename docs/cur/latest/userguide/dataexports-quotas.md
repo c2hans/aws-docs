@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/dataexports-quotas.
 
 The following table describes the current quotas and restrictions within Data Exports.
 
-****
-
 | Quota type | Quota value |
 | --- | --- |
 | Number of exports of CUR 2.0 (COST\_AND\_USAGE\_REPORT) | 5 |

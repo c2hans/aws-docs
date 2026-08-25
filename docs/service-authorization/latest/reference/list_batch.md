@@ -16,6 +16,7 @@ References:
 **Topics**
 + [API operations defined by AWS Batch](#list_batch-operations)
 + [Actions defined by AWS Batch](#list_batch-actions-as-permissions)
++ [Permission-only actions for AWS Batch](#list_batch-permission-only-actions)
 + [Resource types defined by AWS Batch](#list_batch-resources-for-iam-policies)
 + [Condition keys for AWS Batch](#list_batch-policy-keys)
 
@@ -23,8 +24,6 @@ References:
 <a name="list_batch-operations"></a>
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_batch-actions-as-permissions).
-
-****
 
 - **   CancelJob  **
   - **IAM action:**  [batch:CancelJob](#list_batch-action-CancelJob)
@@ -34,6 +33,7 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   CreateComputeEnvironment  **
   - **IAM action:**  [batch:CreateComputeEnvironment](#list_batch-action-CreateComputeEnvironment)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [batch:SetCapacityTags](#list_batch-action-SetCapacityTags)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
   - **IAM action:**  [batch:TagResource](#list_batch-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
   - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** batch.amazonaws.com, ec2.amazonaws.com, ecs.amazonaws.com, spotfleet.amazonaws.com / **Access level:** Write
 
@@ -283,8 +283,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
 <a name="list_batch-actions-as-permissions"></a>
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
-
-****
 
 - **   [CancelJob](https://docs.aws.amazon.com/batch/latest/APIReference/API_CancelJob.html)  **
   - **Description:** Grants permission to cancel a job in an AWS Batch job queue in your account
@@ -584,12 +582,21 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_batch-aws_ResourceTag___TagKey_)<br />[batch:SchedulingPriority](#list_batch-batch_SchedulingPriority)
   - **Access level:** Write
 
+## Permission-only actions for AWS Batch
+<a name="list_batch-permission-only-actions"></a>
+
+The following actions are defined by AWS Batch but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
+
+- **   [SetCapacityTags](IAM_policies.html)  **
+  - **Description:** Grants permission to set capacity tags on an AWS Batch compute environment in your account
+  - **Resource types (\*required):** [compute-environment\*](#list_batch-resource-compute-environment)
+  - **Condition keys:** [aws:RequestTag/${TagKey}](#list_batch-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_batch-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_batch-aws_TagKeys)
+  - **Access level:** Tagging, Write
+
 ## Resource types defined by AWS Batch
 <a name="list_batch-resources-for-iam-policies"></a>
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
-
-****
 
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
@@ -608,8 +615,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_batch-policy-keys"></a>
 
 AWS Batch defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

@@ -9,8 +9,6 @@ The pipeline type is determined by the set of characteristics and features suppo
 
 The following is a summary of the use cases and characteristics available for each type of pipeline.
 
-****
-
 |  | V1 type | V2 type | Characteristics |  |  |
 | --- | --- | --- | --- | --- | --- |
 | Use cases |  +  Standard deployments   |  +  Deployments with configuration from passing pipeline-level variables at runtime <br />+  Deployments where pipelines are configured to start on Git tags   |

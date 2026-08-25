@@ -8,6 +8,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 <a name="AWS_CloudFormation"></a>
 
 **Resource types**
++ [AWS::CloudFormation::ChangeSet](aws-resource-cloudformation-changeset.md)
 + [AWS::CloudFormation::CustomResource](aws-resource-cloudformation-customresource.md)
 + [AWS::CloudFormation::GeneratedTemplate](aws-resource-cloudformation-generatedtemplate.md)
 + [AWS::CloudFormation::GuardHook](aws-resource-cloudformation-guardhook.md)

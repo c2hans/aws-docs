@@ -22,7 +22,7 @@ To create a new adapter version with the console:
 + Review each document, clicking “**Submit and next**”.
 + After you review all annotations, choose **Train adapter** to start training the new adapter.
 
-The number of successful trainings that can be performed per month is limited per AWS account. Refer to [Set Quotas in Amazon TextractModifying Default Quotas in Amazon Textract](limits-quotas-explained.md) for more information regarding limits.
+The number of successful trainings that can be performed per month is limited per AWS account. Refer to [Set Quotas in Amazon Textract](limits-quotas-explained.md) for more information regarding limits.
 
 To create an adapter version with the AWS CLI or AWS SDK:
 + If you haven't already done so, install and configure the AWS CLI and the AWS SDKs. For more information, see [Step 2: Set Up the AWS CLI and AWS SDKs](setup-awscli-sdk.md).

@@ -21,6 +21,7 @@ This topic lists the AWS Regions where Connect Customer features are available.
 + [Customer authentication](#customerauthentication_region)
 + [Customer Profiles](#customerprofiles_region)
 + [Customer Profiles calculated attributes API](#customerprofiles_calculatedattributesregion)
++ [External Tool](#externaltool_region)
 + [Forecasting & agent scheduling](#optimization_region)
 + [Amazon Connect agentic voice](#gv_region)
 + [Global Resiliency](#gr_region)
@@ -169,7 +170,7 @@ This topic lists the AWS Regions where Connect Customer features are available.
 | --- | --- | --- | --- |
 | US East (N. Virginia) | us-east-1 | contact-lens.us-east-1.amazonaws.com | HTTPS |
 | US West (Oregon) | us-west-2 | contact-lens.us-west-2.amazonaws.com | HTTPS |
-| Africa (Cape Town) | af-south-1 | Real-time voice API is not available in this Region | N/A |
+| Africa (Cape Town) | af-south-1 | contact-lens.af-south-1.amazonaws.com | HTTPS |
 | Asia Pacific (Seoul) | ap-northeast-2 | contact-lens.ap-northeast-2.amazonaws.com | HTTPS |
 | Asia Pacific (Singapore) | ap-southeast-1 | contact-lens.ap-southeast-1.amazonaws.com | HTTPS |
 | Asia Pacific (Sydney) | ap-southeast-2 | contact-lens.ap-southeast-2.amazonaws.com | HTTPS |
@@ -186,7 +187,7 @@ This topic lists the AWS Regions where Connect Customer features are available.
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | US East (N. Virginia) | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Recording, Streaming |
 | US West (Oregon) | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Recording, Streaming |
-| Africa (Cape Town) | - | - | - | Yes | Yes | Yes | - | Yes | - | Yes | - | Recording |
+| Africa (Cape Town) | - | Yes | - | Yes | Yes | Yes | Yes | Yes | - | Yes | - | Recording |
 | Asia Pacific (Seoul) | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | - | Yes | Yes | Recording |
 | Asia Pacific (Singapore) | - | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Recording |
 | Asia Pacific (Sydney) | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Recording, Streaming |
@@ -240,6 +241,18 @@ The calculated attributes API is available in the following AWS Regions:
 + Europe (Frankfurt)
 + Europe (London)
 
+## External Tool
+<a name="externaltool_region"></a>
++ US East (N. Virginia)
++ US West (Oregon)
++ Asia Pacific (Tokyo)
++ Asia Pacific (Seoul)
++ Asia Pacific (Singapore)
++ Asia Pacific (Sydney)
++ Canada (Central)
++ Europe (Frankfurt)
++ Europe (London)
+
 ## Forecasting & agent scheduling
 <a name="optimization_region"></a>
 + US East (N. Virginia)
@@ -286,6 +299,7 @@ The calculated attributes API is available in the following AWS Regions:
 + Canada (Central)
 + Europe (Frankfurt)
 + Europe (London)
++ AWS GovCloud (US-West)
 
 ## Live media streaming
 <a name="livemediastreaming_region"></a>
@@ -318,7 +332,7 @@ The phone numbers that outbound campaigns can call are based on the AWS Region w
 + From instances created in Asia Pacific (Seoul) you can call all phone numbers based in South Korea.
 + From instances created in Asia Pacific (Tokyo) you can call all phone numbers based in Japan.
 + From instances created in Asia Pacific (Singapore) you can call all phone numbers based in Singapore, Thailand, Malaysia, Philippines, and Vietnam.
-+ From instances created in Asia Pacific (Sydney) you can call phone numbers based in Australia and New Zealand. There are a few specific restrictions explained in [ Make predictive and progressive calls using Connect Customer outbound campaigns](https://aws.amazon.com/blogs//contact-center/make-predictive-and-progressive-calls-using-amazon-connect-high-volume-outbound-communications/)).
++ From instances created in Asia Pacific (Sydney) you can call phone numbers based in Australia and New Zealand. There are a few specific restrictions explained in [ Make predictive and progressive calls using Connect Customer outbound campaigns](https://aws.amazon.com/blogs/contact-center/make-predictive-and-progressive-calls-using-amazon-connect-high-volume-outbound-communications/)).
 + From instances created in Europe (Frankfurt) or Europe (London) you can call all phone numbers based in the Belgium, Denmark, France, Germany, Ireland, Italy, Netherlands, Poland, Portugal, Spain, and UK.
 + From instances created in Africa (Cape Town) you can call all phone numbers that are based in South Africa.
 + No other combinations are supported. For example, you can't make campaign calls from Europe (London) to US phone numbers, or from Europe (Frankfurt) to New Zealand phone numbers.

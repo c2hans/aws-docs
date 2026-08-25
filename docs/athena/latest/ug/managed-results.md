@@ -16,8 +16,6 @@ With managed query results, you can run SQL queries without providing an Amazon 
 
 ## Considerations and limitations
 <a name="managed-results-considerations"></a>
-
-****
 + Access to query results is managed at the workgroup level in Athena. For this, you need explicit permissions to `GetQueryResults` and `GetQueryResultsStream` IAM actions on the specific workgroup. The `GetQueryResults` action determines who can retrieve the results of a completed query in a paginated format, while the `GetQueryResultsStream` action determines who can stream the results of a completed query (commonly used by Athena drivers).
 + You cannot download query result files larger than 200 MB from the console. Use the `UNLOAD` statement to write results larger than 200 MB to a location that you can download separately.
 + Managed query results feature does not support [Query result reuse](reusing-query-results.md).

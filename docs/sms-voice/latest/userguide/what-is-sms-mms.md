@@ -21,11 +21,9 @@ AWS End User Messaging SMS uses the `pinpoint-sms-voice-v2` API namespace.
 
 There are several other documents that are companions to this document. The following documents provide reference information related to the AWS End User Messaging SMS APIs:
 + [AWS End User Messaging SMS and Voice v2 API](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/Welcome.html)
-+ [AWS End User Messaging SMS and Voice v2 AWS CLI reference](https://docs.aws.amazon.com//cli/latest/reference/pinpoint-sms-voice-v2/)
++ [AWS End User Messaging SMS and Voice v2 AWS CLI reference](https://docs.aws.amazon.com/cli/latest/reference/pinpoint-sms-voice-v2/)
 
 AWS End User Messaging SMS includes an API (called the AWS End User Messaging SMS and Voice v2 API) that was designed for sending SMS, MMS and voice messages. While the Amazon Pinpoint API is focused on sending messages through scheduled and event-driven campaigns and journeys, the AWS End User Messaging SMS and Voice v2 API provides dedicated features and capabilities for sending SMS, MMS, and voice messages directly to individual recipients. You can use AWS End User Messaging SMS and Voice API v2 independently of the Amazon Pinpoint campaign and journey features, or you can use both at the same time to accommodate different use cases. If you already use Amazon Pinpoint to send SMS, MMS, or voice messages, your account is already configured to use this API. Here are some key feature differences between the two APIs.
-
-****
 
 | APIs | Amazon Pinpoint API | AWS End User Messaging SMS and Voice v2 API |
 | --- | --- | --- |

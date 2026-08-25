@@ -11,8 +11,6 @@ You can use AWS Glue to perform read and write operations on Delta Lake tables i
 
 The following table lists the version of Delta Lake included in each AWS Glue version.
 
-****
-
 | AWS Glue version | Supported Delta Lake version |
 | --- | --- |
 | 5.1 | 3.3.2 |

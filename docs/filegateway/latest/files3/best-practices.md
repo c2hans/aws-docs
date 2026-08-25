@@ -45,7 +45,7 @@ If your gateway or data center becomes inaccessible for some reason, you can rec
 
 For File Gateway, you map a new to the Amazon S3 bucket that contains the data you want to recover.
 
-1. Create and activate a new File Gateway on an Amazon EC2 host. For more information, see [Deploy a default Amazon EC2 host for S3 File GatewayDeploy a customized Amazon EC2 host for S3 File Gateway](ec2-gateway-file.md).
+1. Create and activate a new File Gateway on an Amazon EC2 host. For more information, see [Deploy a default Amazon EC2 host for S3 File Gateway](ec2-gateway-file.md).
 
 1. Create a new on the EC2 gateway you created. For more information, see [Create a file share](https://docs.aws.amazon.com/filegateway/latest/files3/GettingStartedCreateFileShare.html).
 

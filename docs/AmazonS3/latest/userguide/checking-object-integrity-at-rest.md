@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/checking-objec
 # Checking object integrity for data at rest in Amazon S3
 <a name="checking-object-integrity-at-rest"></a>
 
-If you need to verify the content of datasets stored in Amazon S3, the S3 Batch Operations [Compute checksum](https://docs.aws.amazon.com//AmazonS3/latest/userguide/batch-ops-compute-checksums.html) operation calculates both full object or composite checksums for objects at rest. The **Compute checksum** operation uses Batch Operations to asynchronously calculate the checksum values for a group of objects and automatically generates a consolidated integrity report, without creating new copies of your data, or restoring or downloading any data.
+If you need to verify the content of datasets stored in Amazon S3, the S3 Batch Operations [Compute checksum](https://docs.aws.amazon.com/AmazonS3/latest/userguide/batch-ops-compute-checksums.html) operation calculates both full object or composite checksums for objects at rest. The **Compute checksum** operation uses Batch Operations to asynchronously calculate the checksum values for a group of objects and automatically generates a consolidated integrity report, without creating new copies of your data, or restoring or downloading any data.
 
 With the **Compute checksum** operation, you can efficiently verify billions of objects with a single job request. For each **Compute checksum** job request, S3 calculates the checksum values, and includes it in an automatically generated integrity report (also known as a completion report). You can then use the completion report to validate the integrity of your dataset.
 

@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsd
 
 AWS Data Exchange provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="dataexchange-GetAsset"></a>[GetAsset](https://docs.aws.amazon.com/data-exchange/latest/apireference/API_GetAsset.html) | Get information about an asset and to export it (for example, in a Job) | Read |

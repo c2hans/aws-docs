@@ -45,6 +45,7 @@ The following data types are supported:
 +  [EncodingParametersRequest](API_EncodingParametersRequest.md)
 +  [Encryption](API_Encryption.md)
 +  [Entitlement](API_Entitlement.md)
++  [FabricConfiguration](API_FabricConfiguration.md)
 +  [FailoverConfig](API_FailoverConfig.md)
 +  [FailoverRouterInputConfiguration](API_FailoverRouterInputConfiguration.md)
 +  [FailoverRouterInputIndexedStreamDetails](API_FailoverRouterInputIndexedStreamDetails.md)

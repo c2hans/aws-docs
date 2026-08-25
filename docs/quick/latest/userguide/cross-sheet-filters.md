@@ -30,8 +30,6 @@ If you have no controls created from these filters, see [Deleting filters in ana
 
 If you have controls created then:
 
-****
-
 1. Follow the instructions at [Deleting filters in analyses](https://docs.aws.amazon.com/quicksight/latest/user/delete-a-filter-data-prep.html#delete-a-filter-data-prep-analyses).
 
 1. If you choose **Delete Filter and Controls**, the controls will be deleted from all pages. This may impact the layout of your analysis. Alternatively, you can remove these controls individually.
@@ -39,8 +37,6 @@ If you have controls created then:
 **Downscoping**
 
 If you want to remove a cross-sheet filter, you can also do this by changing the filter scope:
-
-****
 
 1. Follow the instructions at [Editing filters in analyses](https://docs.aws.amazon.com/quicksight/latest/user/edit-a-filter-data-prep.html#edit-a-filter-data-prep-analyses) to get to the filter.
 

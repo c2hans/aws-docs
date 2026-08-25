@@ -215,7 +215,7 @@ You can set this parameter at the cluster level so that all instances remain con
   + Examine ORM transaction configurations
   + Consider alternative error handling strategies that don't require savepoints
 + **Optimize transaction design** – Restructure transactions to avoid excessive nesting and reduce the likelihood of subtransaction overflow conditions.
-+ **Reduce long-running transactions** – Long-running transactions can exacerbate subtransaction issues by holding onto subtransaction information longer. Monitor Performance Insights metrics and configure the `idle_in_transaction_session_timeout` parameter to automatically terminate idle transactions.
-+ Monitor Performance Insights metrics – Track metrics including `idle_in_transaction_count` (number of sessions in idle in transaction state) and `idle_in_transaction_max_time` (duration of the longest running idle transaction) to detect long-running transactions.
++ **Reduce long-running transactions** – Long-running transactions can exacerbate subtransaction issues by holding onto subtransaction information longer. Monitor detailed per-query and database counter metrics and configure the `idle_in_transaction_session_timeout` parameter to automatically terminate idle transactions.
++ Monitor detailed per-query and database counter metrics – Track metrics including `idle_in_transaction_count` (number of sessions in idle in transaction state) and `idle_in_transaction_max_time` (duration of the longest running idle transaction) to detect long-running transactions.
 + Configure `idle_in_transaction_session_timeout` – Set this parameter in your parameter group to automatically terminate idle transactions after a specified duration.
 + Proactive monitoring – Monitor for high occurrences of `LWLock:SubtransBuffer` and `LWLock:SubtransSLRU` wait events to detect subtransaction-related contention before it becomes critical.

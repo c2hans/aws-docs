@@ -22,28 +22,23 @@ AWS does not allow the installation of monitoring agents on AWS Managed Microsof
   The following AWS Security group rules are created by default:
 
   **Inbound Rules**
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_ad_getting_started_what_gets_created.html)
 
   **Outbound Rules**
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_ad_getting_started_what_gets_created.html)
 + For more information about the ports and protocols used by Active Directory, see [Service overview and network port requirements for Windows](https://learn.microsoft.com/en-US/troubleshoot/windows-server/networking/service-overview-and-network-port-requirements#system-services-ports) in Microsoft documentation.
 + Creates a directory administrator account with the user name Admin and the specified password. This account is located under the Users OU (For example, Corp > Users). You use this account to manage your directory in the AWS Cloud. For more information, see [AWS Managed Microsoft AD Administrator account and group permissions](ms_ad_getting_started_admin_account.md).
 **Important**
 Be sure to save this password. Directory Service does not store this password, and it cannot be retrieved. However, you can reset a password from the Directory Service console or by using the [ResetUserPassword](https://docs.aws.amazon.com/directoryservice/latest/devguide/API_ResetUserPassword.html) API.
 + Creates the following three organizational units (OUs) under the domain root:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_ad_getting_started_what_gets_created.html)
 + Creates the following groups in the AWS Delegated Groups OU:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_ad_getting_started_what_gets_created.html)
 **Note**
 You can add to these AWS Delegated Groups.
 + Creates and applies the following Group Policy Objects (GPOs):
 **Note**
 You do not have permissions to delete, modify, or unlink these GPOs. This is by design as they are reserved for AWS use. You may link them to OUs that you control if needed.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_ad_getting_started_what_gets_created.html)
 
   If you would like to see the settings of each GPO, you can view them from a domain joined Windows instance with the [Group policy management console (GPMC)](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753298(v=ws.10)) enabled.

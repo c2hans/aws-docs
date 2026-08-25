@@ -64,7 +64,6 @@ If you want full control over your Studio's settings, you can choose **Custom**,
 1. Choose the Workspace to add to the Studio. You can add up to 3 Workspaces.
 
 1. Under **Authentication**, choose an authentication mode for the Studio and provide information according to the following table. To learn more about authentication for EMR Studio, see [Choose an authentication mode for Amazon EMR Studio](emr-studio-authentication.md).
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-studio-create-studio.html)
 
 1. For VPC, choose an Amazon Virtual Private Cloud (**VPC**) for the Studio from the dropdown list.
@@ -72,7 +71,6 @@ If you want full control over your Studio's settings, you can choose **Custom**,
 1. Under **Subnets**, select a maximum of five subnets in your VPC to associate with the Studio. You have the option to add more subnets after you create the Studio.
 
 1. For **Security groups**, choose either the default security groups or custom security groups. For more information, see [Define security groups to control EMR Studio network traffic](emr-studio-security-groups.md).
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-studio-create-studio.html)
 
 1. Add tags to your Studio and other resources. For more information about tags, see [Tag clusters](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-plan-tags.html).

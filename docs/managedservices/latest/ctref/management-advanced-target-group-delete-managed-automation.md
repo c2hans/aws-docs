@@ -14,8 +14,6 @@ Delete target groups that are not attached to any load balancer. Before deleting
 ## Change Type Details
 <a name="ct-0akjahmgqhu4u-MATd-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-0akjahmgqhu4u |

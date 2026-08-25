@@ -39,7 +39,7 @@ The request accepts the following data in JSON format.
  ** [CaCertificate](#API_CreateProvisioningProfile_RequestSyntax) **   <a name="managedintegrations-CreateProvisioningProfile-request-CaCertificate"></a>
 The body of the PEM-encoded certificate authority (CA) certificate.
 Type: String
-Pattern: `-----BEGIN CERTIFICATE-----.*(.|\n)*-----END CERTIFICATE-----\n?`
+Pattern: `-----BEGIN CERTIFICATE-----[\s\S]*-----END CERTIFICATE-----\n?`
 Required: No
 
  ** [ClaimCertificate](#API_CreateProvisioningProfile_RequestSyntax) **   <a name="managedintegrations-CreateProvisioningProfile-request-ClaimCertificate"></a>

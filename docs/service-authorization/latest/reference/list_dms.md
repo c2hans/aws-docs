@@ -25,8 +25,6 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_dms-actions-as-permissions).
 
-****
-
 - **   AddTagsToResource  **
   - **IAM action:**  [dms:AddTagsToResource](#list_dms-action-AddTagsToResource)
   - **Condition key:**
@@ -102,6 +100,7 @@ The following table maps API operations to the IAM actions they authorize. Only 
 - **   CreateReplicationInstance  **
   - **IAM action:**  [dms:AddTagsToResource](#list_dms-action-AddTagsToResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
   - **IAM action:**  [dms:CreateReplicationInstance](#list_dms-action-CreateReplicationInstance)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** dms.amazonaws.com / **Access level:** Write
 
 - **   CreateReplicationSubnetGroup  **
   - **IAM action:**  [dms:AddTagsToResource](#list_dms-action-AddTagsToResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
@@ -546,10 +545,8 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Access level:** Write
 
 - **   ModifyReplicationInstance  **
-  - **IAM action:**  [dms:ModifyReplicationInstance](#list_dms-action-ModifyReplicationInstance)
-  - **Condition key:**
-  - **Possible value(s):**
-  - **Access level:** Write
+  - **IAM action:**  [dms:ModifyReplicationInstance](#list_dms-action-ModifyReplicationInstance)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** dms.amazonaws.com / **Access level:** Write
 
 - **   ModifyReplicationSubnetGroup  **
   - **IAM action:**  [dms:ModifyReplicationSubnetGroup](#list_dms-action-ModifyReplicationSubnetGroup)
@@ -716,8 +713,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
 <a name="list_dms-actions-as-permissions"></a>
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
-
-****
 
 - **   [AddTagsToResource](https://docs.aws.amazon.com/dms/latest/APIReference/API_AddTagsToResource.html)  **
   - **Description:** Grants permission to add metadata tags to DMS resources, including replication instances, endpoints, security groups, and migration tasks
@@ -1467,8 +1462,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 The following actions are defined by AWS Database Migration Service but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 - **   [CreateOutboundIntegration](https://docs.aws.amazon.com/dms/latest/APIReference/Welcome.html)  **
   - **Description:** Grants permission to DMS to create resources for zero-ETL integrations with self managed databases
   - **Resource types (\*required):**
@@ -1516,8 +1509,6 @@ The following actions are defined by AWS Database Migration Service but are not 
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
 
-****
-
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
 |  [Certificate](https://docs.aws.amazon.com/dms/latest/APIReference/API_Certificate.html)  | arn:${Partition}:dms:${Region}:${Account}:cert:\* | [aws:ResourceTag/${TagKey}](#list_dms-aws_ResourceTag___TagKey_)<br />[dms:cert-tag/${TagKey}](#list_dms-dms_cert-tag___TagKey_) |
@@ -1538,8 +1529,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_dms-policy-keys"></a>
 
 AWS Database Migration Service defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

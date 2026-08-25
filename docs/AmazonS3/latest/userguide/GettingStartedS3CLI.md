@@ -410,11 +410,11 @@ Deleting a bucket can't be undone. Bucket names are unique. If you delete your b
 In the preceding examples, you learned how to perform some basic Amazon S3 tasks using the AWS CLI.
 
 The following topics explain the learning paths that you can use to gain a deeper understanding of Amazon S3 so that you can implement it in your applications.
-+ [Understand common use casesLearn from tutorials](GetStartedWithS3.md#s3-use-cases)
++ [Understand common use cases](GetStartedWithS3.md#s3-use-cases)
 + [Control access to your buckets and objects](GetStartedWithS3.md#control-access-resources)
 + [Protect and monitor your storage](GetStartedWithS3.md#manage-monitor-storage)
 + [Develop with Amazon S3](GetStartedWithS3.md#develop-with-s3)
-+ [Understand common use casesLearn from tutorials](GetStartedWithS3.md#s3-getting-started-tutorials-list)
++ [Understand common use cases](GetStartedWithS3.md#s3-getting-started-tutorials-list)
 + [Explore training and support](GetStartedWithS3.md#explore-training-and-support)
 
 The following list shows common AWS CLI commands for Amazon S3:

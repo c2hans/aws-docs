@@ -9,8 +9,6 @@ Amazon CloudWatch is a monitoring service for AWS resources. You can use CloudWa
 
 AWS Private CA supports the following CloudWatch metrics.
 
-****
-
 | Metric | Namespace | Description |
 | --- | --- | --- |
 | CRLGenerated | AWS/ACMPrivateCA | A certificate revocation list (CRL) was generated. This metric applies only to a private CA. |

@@ -27,7 +27,7 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/louva
 
 **Note**
  There can only be one Louvain algorithm call running at a time.
- Louvain is expected to run a long time, hence please set the query timeout to be a large number to avoid query timeout. See [ query-timeout-milliseconds](https://docs.aws.amazon.com//neptune-analytics/latest/userguide/query-APIs-execute-query.html#query-APIs-execute-query-input) for more information on setting upper bounds on query run time.
+ Louvain is expected to run a long time, hence please set the query timeout to be a large number to avoid query timeout. See [ query-timeout-milliseconds](https://docs.aws.amazon.com/neptune-analytics/latest/userguide/query-APIs-execute-query.html#query-APIs-execute-query-input) for more information on setting upper bounds on query run time.
 
 ## `.louvain`  syntax
 <a name="louvain-syntax"></a>
@@ -159,7 +159,6 @@ RETURN n, community
 ```
 
 **Warning**
- It is not good practice to use MATCH(n) without restriction in query integrations. Keep in mind that every node returned by the MATCH(n) clause invokes the algorithm once, which can result in a very long-running query if a large number of nodes is returned. Use LIMIT or put conditions on the MATCH clause to restrict its output appropriately.
  The Louvain algorithm requires exclusive processing. Neptune will process only one Louvain algorithm execution at a time. Any subsequent algorithm requests submitted before the completion of an active process will result in an error response.
 
 ## Sample `.louvain` output

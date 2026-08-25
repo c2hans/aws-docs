@@ -14,8 +14,6 @@ Create a Database Migration Service (DMS) target endpoint for kafka.
 ## Change Type Details
 <a name="ct-1mrqxscu15apz-DADc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1mrqxscu15apz |

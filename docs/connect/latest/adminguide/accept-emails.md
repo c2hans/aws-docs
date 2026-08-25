@@ -53,7 +53,7 @@ To accept an incoming email contact:
 ![The CCP showing an accepted email contact with email header, message body, and action buttons.](http://docs.aws.amazon.com/connect/latest/adminguide/images/email-ccp-accepted-contact.png)
 
 **Note**
-If you don't accept the email contact within the configured timeout period, it will be returned to the queue and may be offered to another agent.
+If you don't accept the email contact within the configured timeout period, it will be returned to the queue and might be offered to another agent.
 
 ## Email contact interface in the CCP
 <a name="accept-emails-interface"></a>
@@ -118,7 +118,7 @@ To view or download an attachment:
 ![The attachments section displaying attached files with file names, sizes, and download buttons.](http://docs.aws.amazon.com/connect/latest/adminguide/images/email-ccp-attachments.png)
 
 **Important**
-Attachments are stored in your organization's Amazon S3 bucket. Ensure you have the necessary permissions to access attachments. If attachment scanning is configured, only attachments that pass security scans will be available for download.
+Attachments are stored in your organization's Amazon S3 bucket. Make sure you have the necessary permissions to access attachments. If attachment scanning is configured, only attachments that pass security scans will be available for download.
 
 ## Composing and sending email responses
 <a name="accept-emails-responding"></a>

@@ -14,8 +14,6 @@ Request deletion of the specified NAT gateways. This operation requires manual r
 ## Change Type Details
 <a name="ct-1rexstryxye1b-MANd-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1rexstryxye1b |

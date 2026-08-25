@@ -55,7 +55,6 @@ Sign in to the AWS Management Console with the same account you used in [Getting
 1. Choose **Create Stack**.
 
 1. In **Choose a template**, choose **Specify an Amazon S3 template URL**. In the box, type the location of the CloudFormation template for your Region, and then choose **Next**.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/codedeploy/latest/userguide/instances-ec2-create-cloudformation-template.html)
 
 1. In the **Stack name** box, type a name for the stack (for example, **CodeDeployDemoStack**).
@@ -108,7 +107,6 @@ To verify the CodeDeploy agent is running on the Amazon EC2 instances, see [Mana
    {{keyName}} is the instance key pair name. Type the key pair name only, not the key pair file extension.
 
    {{template-url}} is the location of the CloudFormation template for your Region:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/codedeploy/latest/userguide/instances-ec2-create-cloudformation-template.html)
 
    This command creates a CloudFormation stack named **CodeDeployDemoStack**, using the CloudFormation template in the specified Amazon S3 bucket. The Amazon EC2 instance is based on the t1.micro instance type, but you can use any type. It is tagged with the value **CodeDeployDemo**, but you can tag it with any value. It has the specified instance key pair applied.

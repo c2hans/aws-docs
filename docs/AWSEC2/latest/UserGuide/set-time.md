@@ -34,7 +34,7 @@ For the configuration instructions, see [Hardware Packet Timestamping](https://g
 ## Leap seconds
 <a name="leap-seconds"></a>
 
-Leap seconds, introduced in 1972, are occasional one-second adjustments to UTC time to factor in irregularities in the earth’s rotation in order to accommodate differences between International Atomic Time (TAI) and solar time (Ut1). To manage leap seconds on behalf of customers, we designed leap second smearing within the Amazon Time Sync Service. For more information, see [Look Before You Leap – The Coming Leap Second and AWS](https://aws.amazon.com/blogs/aws/look-before-you-leap-the-coming-leap-second-and-aws/).
+Leap seconds, introduced in 1972, are occasional one-second adjustments to UTC time to factor in irregularities in the earth’s rotation to accommodate differences between International Atomic Time (TAI) and solar time (Ut1). To manage leap seconds on behalf of customers, we designed leap second smearing within the Amazon Time Sync Service. For more information, see [Look Before You Leap – The Coming Leap Second and AWS](https://aws.amazon.com/blogs/aws/look-before-you-leap-the-coming-leap-second-and-aws/).
 
 Leap seconds are going away, and we are in full support of the decision made at the [27th General Conference on Weights and Measures to abandon leap seconds by or before 2035](https://www.bipm.org/en/cgpm-2022/resolution-4).
 

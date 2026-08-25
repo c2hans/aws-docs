@@ -14,8 +14,6 @@ Describe (generate a detailed list) of existing schedules used in AMS Resource S
 ## Change Type Details
 <a name="ct-2ptn20pq7ur3x-MASd-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2ptn20pq7ur3x |

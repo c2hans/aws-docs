@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/channel-t
 
 There are four channel types: `STANDARD`, `ADVANCED_SD`, `ADVANCED_HD`, and `BASIC`. When you create a channel, the default type is `STANDARD`.
 
-There are two types of video processing, *transcoding* and *transmuxing*. This is determined by the channel type, whether the channel is configured for multitrack video input, and whether the broadcaster uses a multitrack-enabled client. (Multitrack video is configured with the `multitrackInputConfiguration` API property of the [Channel](https://docs.aws.amazon.com//ivs/latest/LowLatencyAPIReference/API_Channel.html) data type.)
+There are two types of video processing, *transcoding* and *transmuxing*. This is determined by the channel type, whether the channel is configured for multitrack video input, and whether the broadcaster uses a multitrack-enabled client. (Multitrack video is configured with the `multitrackInputConfiguration` API property of the [Channel](https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_Channel.html) data type.)
 + Video on `STANDARD` (without multitrack input) and `ADVANCED` channels is transcoded: multiple qualities are generated from the original input, to automatically give viewers the best experience for their devices and network conditions. Transcoding allows higher playback quality across a range of download speeds. Transcoding is the best option for broadcasters with limited first-mile internet connectivity and/or limited device capabilities (e.g., mobile phones instead of desktop PCs).
 + Video on `STANDARD` (with multitrack input enabled and the broadcaster using a multitrack-enabled client) and `BASIC` channels is transmuxed: Amazon IVS delivers the original input to viewers. Similar to transcoding, transmuxed multitrack input delivers viewers the best experience for their devices and network conditions.
 
@@ -40,7 +40,7 @@ All transcoded channels have *transcode* presets, which determine which renditio
 ### Multitrack Video Input
 <a name="channel-types-standard-with-multitrack"></a>
 
-`STANDARD` channels are transmuxed when the input is multitrack video. The highest video resolution produced is limited by the `multitrackInputConfiguration.maximumResolution` property. The specific renditions are dynamic depending on the [broadcaster’s system and environmental requirements](https://docs.aws.amazon.com//ivs/latest/LowLatencyUserGuide/multitrack-video-setup.html#multitrack-video-setup-broadcaster-system).
+`STANDARD` channels are transmuxed when the input is multitrack video. The highest video resolution produced is limited by the `multitrackInputConfiguration.maximumResolution` property. The specific renditions are dynamic depending on the [broadcaster’s system and environmental requirements](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multitrack-video-setup.html#multitrack-video-setup-broadcaster-system).
 
 For all video renditions, audio is source passthrough.
 

@@ -37,9 +37,11 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-e
 ### Considerations for moving accounts into your organization
 <a name="considerations-for-moving-accounts-into-your-organization"></a>
 
- If you plan to move an account from an existing organization, you must first remove the account from the organization. For more information, refer to Removing a member account from your organization. Once an account is removed from an organization, it is referred to as a standalone account.
+ With direct account transfers, you can move an account from one organization to another. You do not need to remove it from its current organization or operate it as a standalone account first. The destination organization sends an invitation, and the migrating account accepts it using the same AWS Organizations console experience and APIs. You retain access to governance features and consolidated billing before and after the transfer. For more information, see [Migrate an account to another organization with AWS Organizations](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_account_migration.html).
 
- Moving a standalone account that does not have dependencies on other accounts is a straightforward process. In this case, there's generally no need to migrate or modify the existing workloads in the account to be moved. For more information, refer to [Inviting an account to join your organization.](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_accounts_invites.html)
+ If you instead want an account to leave its organization and operate as a standalone account, that option is still available to you and requires the `organizations:LeaveOrganization` permission.
+
+ Moving an account that does not have dependencies on other accounts is a straightforward process. In this case, there's generally no need to migrate or modify the existing workloads in the account to be moved. For more information, see [Inviting an account to join your organization](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_accounts_invites.html).
 
  If the standalone account to be moved has dependencies on other accounts, then you should evaluate those dependencies to determine if they should be addressed before moving the account.
 

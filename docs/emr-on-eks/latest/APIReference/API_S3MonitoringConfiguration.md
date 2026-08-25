@@ -17,6 +17,13 @@ Length Constraints: Minimum length of 1. Maximum length of 10280.
 Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDBFF-\uDC00\uDFFF\r\n\t]*`
 Required: Yes
 
+ ** encryptionKeyArn **   <a name="emroneks-Type-S3MonitoringConfiguration-encryptionKeyArn"></a>
+The Amazon Resource Name (ARN) of the encryption key for logs.
+Type: String
+Length Constraints: Minimum length of 3. Maximum length of 2048.
+Pattern: `^(arn:(aws[a-zA-Z0-9-]*):kms:.+:(\d{12})?:key\/[(0-9a-zA-Z)-?]+|\$\{[a-zA-Z]\w*\})$`
+Required: No
+
 ## See Also
 <a name="API_S3MonitoringConfiguration_SeeAlso"></a>
 

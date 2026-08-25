@@ -24,34 +24,14 @@ To set up AWS IoT credentials, see [Controlling access to Kinesis Video Streams 
 
 The `iot-credentials` parameter value must start with `iot-certificate,` and be followed by a comma-separated list of the following {{key}}={{value}} pairs.
 
-****
-
 | Key | Required | Description |
 | --- | --- | --- |
-| ca-path | Yes | File path to the CA certificate used to establish trust with the backend service through TLS.
-
-**Example**
-**Example:** ` /{{file}}/{{path}}/{{to}}/certificate.pem` |
-| cert-path | Yes | File path to the X.509 certificate.
-
-**Example**
-**Example:** `/{{file}}/{{path}}/{{to}}/{{certificateID}}-certificate.pem.crt` |
-| endpoint | Yes | The AWS IoT Core credential endpoint provider endpoint for your AWS account. See the [AWS IoT Developer Guide](https://docs.aws.amazon.com//iot/latest/developerguide/authorizing-direct-aws.html).
-
-**Example**
-**Example:** `{{credential-account-specific-prefix}}.credentials.iot.{{aws-region}}.amazonaws.com` |
-| key-path | Yes | File path to the private key used in the public/private key pair.
-
-**Example**
-**Example:** `/{{file}}/{{path}}/{{to}}/{{certificateID}}-private.pem.key` |
-| role-aliases | Yes | The name of the role alias pointing to the AWS IAM role to use when connecting to AWS IoT Core.
-
-**Example**
-**Example:** `{{KvsCameraIoTRoleAlias}}` |
-| iot-thing-name | No | The `iot-thing-name` is optional. If `iot-thing-name` is not provided, the `stream-name` parameter value is used.
-
-**Example**
-**Example:** `{{kvs_example_camera}}` |
+| ca-path | Yes | File path to the CA certificate used to establish trust with the backend service through TLS.**Example:** ` /{{file}}/{{path}}/{{to}}/certificate.pem` |
+| cert-path | Yes | File path to the X.509 certificate. **Example:** `/{{file}}/{{path}}/{{to}}/{{certificateID}}-certificate.pem.crt` |
+| endpoint | Yes | The AWS IoT Core credential endpoint provider endpoint for your AWS account. See the [AWS IoT Developer Guide](https://docs.aws.amazon.com/iot/latest/developerguide/authorizing-direct-aws.html).**Example:** `{{credential-account-specific-prefix}}.credentials.iot.{{aws-region}}.amazonaws.com` |
+| key-path | Yes | File path to the private key used in the public/private key pair. **Example:** `/{{file}}/{{path}}/{{to}}/{{certificateID}}-private.pem.key` |
+| role-aliases | Yes | The name of the role alias pointing to the AWS IAM role to use when connecting to AWS IoT Core. **Example:** `{{KvsCameraIoTRoleAlias}}` |
+| iot-thing-name | No | The `iot-thing-name` is optional. If `iot-thing-name` is not provided, the `stream-name` parameter value is used.**Example:** `{{kvs_example_camera}}` |
 
 **Example**
 **Example:**
@@ -65,8 +45,6 @@ gst-launch-1.0 -v ... ! kvssink stream-name="{{YourStream}}" aws-region="{{YourR
 
 To have `kvssink` use credentials from the environment, set the following environment variables:
 
-****
-
 | Environment Variable Name | Required | Description |
 | --- | --- | --- |
 | AWS\_ACCESS\_KEY\_ID | Yes | The AWS access key that's used to access Amazon Kinesis Video Streams. |
@@ -79,8 +57,6 @@ Setting the environment variable changes the value used until the end of your sh
 <a name="collapsible-section-3"></a>
 
 To specify credentials directly as a `kvssink` parameter, set the following parameters:
-
-****
 
 | `kvssink` Parameter Name | Required | Description |
 | --- | --- | --- |
@@ -107,8 +83,6 @@ gst-launch-1.0 -v ... ! kvssink stream-name="{{YourStream}}" aws-region="{{YourR
 
 **Important**
 If you've selected one of the previous methods, you can't use the `credential-path` `kvssink` parameter.
-
-****
 
 | `kvssink` Parameter Name | Required | Description |
 | --- | --- | --- |
@@ -144,8 +118,6 @@ The following is the region lookup order:
 <a name="kvssink-optional-parameters"></a>
 
 The `kvssink` element has the following optional parameters. For more information about these parameters, see [Kinesis video stream structures](producer-reference-structures-stream.md).
-
-****
 
 | Parameter | Description | Unit/ Type | Default |
 | --- | --- | --- | --- |

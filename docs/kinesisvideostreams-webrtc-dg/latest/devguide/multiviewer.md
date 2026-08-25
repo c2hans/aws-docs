@@ -98,10 +98,10 @@ The workflow for a typical multiviewer session with ingestion is:
 <a name="multiviewer-apis"></a>
 
 Multiviewer uses the same API operations as WebRTC Ingestion. The key APIs include:
-+ [UpdateMediaStorageConfiguration](https://docs.aws.amazon.com//kinesisvideostreams/latest/dg/API_UpdateMediaStorageConfiguration.html) - Links a signaling channel to a stream for ingestion
-+ [JoinStorageSession](https://docs.aws.amazon.com//kinesisvideostreams/latest/dg/API_webrtc_JoinStorageSession.html) - Initiates an ingestion session from the camera device
-+ [JoinStorageSessionAsViewer](https://docs.aws.amazon.com//kinesisvideostreams/latest/dg/API_webrtc_JoinStorageSessionAsViewer.html) - Allows viewers to join an active ingestion session
-+ [DescribeMediaStorageConfiguration](https://docs.aws.amazon.com//kinesisvideostreams/latest/dg/API_DescribeMediaStorageConfiguration.html) - Retrieves the current media storage configuration
++ [UpdateMediaStorageConfiguration](https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/API_UpdateMediaStorageConfiguration.html) - Links a signaling channel to a stream for ingestion
++ [JoinStorageSession](https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/API_webrtc_JoinStorageSession.html) - Initiates an ingestion session from the camera device
++ [JoinStorageSessionAsViewer](https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/API_webrtc_JoinStorageSessionAsViewer.html) - Allows viewers to join an active ingestion session
++ [DescribeMediaStorageConfiguration](https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/API_DescribeMediaStorageConfiguration.html) - Retrieves the current media storage configuration
 
 For detailed API usage examples, see [Establish a WebRTC connection with the storage session](getting-started-ingestion.md#ingestion-establish-connection).
 

@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon Managed Grafana provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="grafana-DescribeWorkspace"></a>[DescribeWorkspace](https://docs.aws.amazon.com/grafana/latest/userguide/AMG-and-IAM.html) | Describe a workspace | Read |

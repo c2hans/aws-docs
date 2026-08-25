@@ -80,7 +80,6 @@ You can include only one segment in the **Journey entry** activity. If you need 
    You can also optionally choose **Refresh on segment update**. If you enable this feature, new endpoints are added to the journey when the segment is updated. For this feature to work as expected, you must also choose a refresh interval.
 
    The following table describes how changes to segment membership are handled in various situations.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/pinpoint/latest/userguide/journeys-entry-activity.html)
 
 1. (Optional) For **Description**, enter text that describes the activity. When you save the activity, this text appears as its label.

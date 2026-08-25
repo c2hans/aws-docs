@@ -35,11 +35,11 @@ You can also use the AWS Toolkit for JetBrains to work with AWS Lambda functions
 <a name="welcome-using"></a>
 
 You can use the AWS Toolkit for JetBrains to do the following:
-+ Create, deploy, update, and delete AWS Serverless Application Model (AWS SAM) applications. For more information on working with AWS SAM through the AWS Toolkit for JetBrains, see the [AWS Serverless](https://docs.aws.amazon.com//toolkit-for-jetbrains/latest/userguide/sam.html) topic located in this User Guide.
-+ Remotely and locally create, update, run, and debug AWS Lambda functions. To learn more about working with the AWS Lambda service through the AWS Toolkit for JetBrains, see the [AWS Lambda](https://docs.aws.amazon.com//toolkit-for-jetbrains/latest/userguide/building-lambda) topic located in this User Guide.
-+ View event logs for, and delete AWS CloudFormation stacks. For additional information on working with CloudFormation and the AWS Toolkit for JetBrains, see the [AWS CloudFormation](https://docs.aws.amazon.com//toolkit-for-jetbrains/latest/userguide/cloudformation.html) topic in this User Guide.
-+ Debug code in AWS clusters using Amazon Elastic Container Service. For more information on working with Amazon ECS with the AWS Toolkit for JetBrains, see the [Amazon Elastic Container Service](https://docs.aws.amazon.com//toolkit-for-jetbrains/latest/userguide/ecs.html) topic in this User Guide.
-+ Work with Amazon EventBridge schemas, to learn more see the [Amazon EventBridge Scheduler](https://docs.aws.amazon.com//toolkit-for-jetbrains/latest/userguide/eventbridge.html) topic in this User Guide.
++ Create, deploy, update, and delete AWS Serverless Application Model (AWS SAM) applications. For more information on working with AWS SAM through the AWS Toolkit for JetBrains, see the [AWS Serverless](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/sam.html) topic located in this User Guide.
++ Remotely and locally create, update, run, and debug AWS Lambda functions. To learn more about working with the AWS Lambda service through the AWS Toolkit for JetBrains, see the [AWS Lambda](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/building-lambda) topic located in this User Guide.
++ View event logs for, and delete AWS CloudFormation stacks. For additional information on working with CloudFormation and the AWS Toolkit for JetBrains, see the [AWS CloudFormation](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/cloudformation.html) topic in this User Guide.
++ Debug code in AWS clusters using Amazon Elastic Container Service. For more information on working with Amazon ECS with the AWS Toolkit for JetBrains, see the [Amazon Elastic Container Service](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/ecs.html) topic in this User Guide.
++ Work with Amazon EventBridge schemas, to learn more see the [Amazon EventBridge Scheduler](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/eventbridge.html) topic in this User Guide.
 
 ## Related information
 <a name="welcome-related"></a>

@@ -14,8 +14,6 @@ Create Identity and Access Management (IAM) role or policy with read-write permi
 ## Change Type Details
 <a name="ct-1n9gfnog5x7fl-DAIc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1n9gfnog5x7fl |

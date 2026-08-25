@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsu
 
 AWS User Notifications Contacts provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="notifications-contacts-GetEmailContact"></a>[GetEmailContact](https://docs.aws.amazon.com/notifications/latest/userguide/resource-level-permissions.html) | Get an email contact associated with the given ARN | Read |

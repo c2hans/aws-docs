@@ -16,7 +16,7 @@ Batch inference does not support tool calling (function calling) or structured o
 See the following resources for general information about batch inference:
 + To see pricing for batch inference, see [Amazon Bedrock pricing](https://aws.amazon.com/bedrock/pricing/).
 + To see quotas for batch inference, see [Amazon Bedrock endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/bedrock.html) in the AWS General Reference.
-+ To receive notifications when batch inference jobs complete or change state instead of polling, see [Monitor Amazon Bedrock job state changes using Amazon EventBridgeMonitor event changes](monitoring-eventbridge.md).
++ To receive notifications when batch inference jobs complete or change state instead of polling, see [Monitor Amazon Bedrock job state changes using Amazon EventBridge](monitoring-eventbridge.md).
 
 **Topics**
 + [Supported Regions and models for batch inference](batch-inference-supported.md)

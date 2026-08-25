@@ -24,7 +24,7 @@ The following differences apply to Amazon MemoryDB:
 
 ## Documentation
 <a name="govcloud-mdb-docs"></a>
-+  [Amazon MemoryDB documentation](https://docs.aws.amazon.com/http://docs.aws.amazon.com/memorydb/)
++  [Amazon MemoryDB documentation](http://docs.aws.amazon.com/memorydb/)
 
 ## Export-controlled content
 <a name="govcloud-mdb-itar"></a>

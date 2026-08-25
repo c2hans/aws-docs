@@ -13,8 +13,6 @@ After you create a guardrail, you can apply with the following features:
 
 The following table describes how to include a guardrail for each of these features using the AWS Management Console or the Amazon Bedrock API.
 
-****
-
 | Use case | Console | API |
 | --- | --- | --- |
 | Model inference | Select the guardrail when [using a playground](playgrounds.md). | Specify in the header in an [InvokeModel](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_InvokeModel.html) or [InvokeModelWithResponseStream](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_InvokeModelWithResponseStream.html) request or include in the guardrailConfig field in the body of a [Converse](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_Converse.html) or [ConverseStream](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_ConverseStream.html) request. |

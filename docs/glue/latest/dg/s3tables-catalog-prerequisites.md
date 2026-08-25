@@ -52,9 +52,9 @@ The following IAM policy provides the minimum permissions required to enable S3 
         "glue:GetTable"
       ],
       "Resource": [
-        "arn:aws:glue:{{region}}:{{account-id}}:catalog/s3tablescatalog",
-        "arn:aws:glue:{{region}}:{{account-id}}:database/s3tablescatalog/*/*",
-        "arn:aws:glue:{{region}}:{{account-id}}:table/s3tablescatalog/*/*/*"
+        "arn:aws:glue:{{us-east-1}}:{{123456789012}}:catalog/s3tablescatalog",
+        "arn:aws:glue:{{us-east-1}}:{{123456789012}}:database/s3tablescatalog/*/*",
+        "arn:aws:glue:{{us-east-1}}:{{123456789012}}:table/s3tablescatalog/*/*/*"
       ]
     },
     {
@@ -68,8 +68,8 @@ The following IAM policy provides the minimum permissions required to enable S3 
         "s3tables:GetTableData"
       ],
       "Resource": [
-        "arn:aws:s3tables:{{region}}:{{account-id}}:bucket/*",
-        "arn:aws:s3tables:{{region}}:{{account-id}}:bucket/*/table/*"
+        "arn:aws:s3tables:{{us-east-1}}:{{123456789012}}:bucket/*",
+        "arn:aws:s3tables:{{us-east-1}}:{{123456789012}}:bucket/*/table/*"
       ]
     }
   ]

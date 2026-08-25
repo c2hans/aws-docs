@@ -57,7 +57,8 @@ The following table lists the system case fields:
 | Date/Time Opened | created\_datetime | date-time | The date and time the case was opened. | Connect Customer |
 | Date/Time Updated | last\_updated\_datetime | date-time | The date and time the case was last updated. | Connect Customer |
 | Last Updated User | last\_updated\_user | user | The identity of the user who performed the last update on the case. | Connect Customer |
-| Reference number | reference\_number | text | The reference number is an alphanumeric value used to identify a case. If you don't assign a reference number when creating a case, Connect Customer automatically generates a 9-character alphanumeric value (for example, `3CWPF7R2N`).<br />For cases created after September 2026, reference numbers are unique within a Connect Customer Cases domain. Reference numbers are not case-sensitive. | Connect Customer |
+| Reference number | reference\_number | text | A friendly identifier for the case. By default, Cases automatically generates an 8-digit numeric reference number. However, you should treat this value as a string, since you can override the reference number through API to pass in a value with 1–50 alphanumeric characters, for example to carry over an existing identifier from an upstream system.<br />Reference numbers (unlike the Case ID) are not guaranteed to be unique. We recommend that you identify the customer and then collect the reference number to correctly find the right case. | Connect Customer |
+| Reference ID (coming later in 2026) | reference\_id | text | An identifier for the case that is unique within a Cases domain, so you can use it to look up a case directly.<br />By default, Cases automatically generates a 9-character alphanumeric reference ID. However, you can override the reference ID through API to pass in a value with 1–50 alphanumeric characters, for example to carry over an existing identifier from an upstream system. Reference IDs are not case-sensitive. | Connect Customer |
 | Status | status | single-select | Current status of the case | Agent |
 | Summary | summary | text | Summary of the case | Agent |
 | Title | title | text | Title of the case | Agent |
@@ -104,7 +105,7 @@ Single-select options have two parts:
 
 1. Option name (shown to agents): The label that is displayed to agents in the agent application.
 
-1. Option value (internal reference): The data that's collected. For example, for AWS Region, you may want to display **US West (Oregon)** but collect the data as **PDX**.
+1. Option value (internal reference): The data that's collected. For example, for AWS Region, you might want to display **US West (Oregon)** but collect the data as **PDX**.
 
    Field options appear to the agent in alphabetical order.
 

@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/WorkbenchDocum
 
 The following table describes the important changes in each release of the *NoSQL Workbench* client-side application.
 
-****
-
 | Change | Description | Date |
 | --- | --- | --- |
 | NoSQL Workbench for Amazon Keyspaces – GA. | NoSQL Workbench for Amazon Keyspaces is generally available. | October 28, 2020 |

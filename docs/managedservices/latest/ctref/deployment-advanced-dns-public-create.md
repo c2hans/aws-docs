@@ -14,8 +14,6 @@ Create a new Route 53 DNS resource record set and a new public hosted zone for a
 ## Change Type Details
 <a name="ct-0vzsr2nyraedl-DADc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-0vzsr2nyraedl |

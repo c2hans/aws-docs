@@ -51,8 +51,6 @@ As another example, when switching from QUEUED or SUPERSEDED to PARALLEL mode, y
 
 The following table provides more detail.
 
-****
-
 | Mode change | Pending and active execution details | Pipeline state details |
 | --- | --- | --- |
 | SUPERSEDED to SUPERSEDED / SUPERSEDED to QUEUED |  +  Active executions are canceled after in-progress actions complete. <br />+  Pending executions are canceled.   | The pipeline state, such as canceled, is preserved between the version of the first mode and the second mode. |

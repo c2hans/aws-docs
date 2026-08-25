@@ -5,6 +5,8 @@ source_url: https://docs.aws.amazon.com/signin/latest/userguide/troubleshooting-
 # Troubleshooting AWS account sign-in issues
 <a name="troubleshooting-sign-in-issues"></a>
 
+This troubleshooting information is for issues related to AWS account sign-in (advanced). If you use our new AWS experience and have access to AWS Settings and projects, use [Troubleshooting our new AWS experience issues](troubleshooting-sign-in-new.md) to troubleshoot.
+
 Use the information here to help you troubleshoot sign-in and other AWS account issues. For step-by-step directions on signing in to an AWS account, see [Sign in to the AWS Management Console](how-to-sign-in.md).
 
 If none of the troubleshooting topics help you address your sign-in issue, you can create a case with Support by filling out this form: [I'm an AWS customer and I'm looking for billing or account support](https://support.aws.amazon.com/#/contacts/aws-account-support/). As a security best practice, Support can't discuss the details of any AWS account other than the account that you're signed in to. AWS Support also can't change the credentials associated with an account for any reason.
@@ -96,8 +98,6 @@ IAM users must contact their administrator for assistance with MFA devices. Supp
 <a name="troubleshoot-firewalls"></a>
 
 If you can't see your sign-in page, the domain might be blocked by a firewall. Contact your network administrator to add the following domains or URL endpoints to your web-content filtering solution allow-lists depending on what type of user you are and how you sign in.
-
-****
 
 |  |  |
 | --- |--- |

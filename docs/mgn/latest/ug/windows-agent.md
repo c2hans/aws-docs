@@ -36,8 +36,6 @@ If you need to validate the installer hash, the correct hash can be found here: 
 ## AWS Replication Agent download URL for Windows for each supported AWS Region
 <a name="installer-download-table"></a>
 
-****
-
 | Region name | Region identity | Download Link |
 | --- | --- | --- |
 | US East (Ohio) | us-east-2 | **IPv4 - **https://aws-application-migration-service-us-east-2.s3.us-east-2.amazonaws.com/latest/windows/AwsReplicationWindowsInstaller.exe<br />**Dual-stack - **https://aws-application-migration-service-us-east-2.s3.dualstack.us-east-2.amazonaws.com/latest/windows/AwsReplicationWindowsInstaller.exe |
@@ -85,8 +83,6 @@ If you need to validate the installer hash, the correct hash is here:
  `https://aws-application-migration-service-hashes-<REGION>.s3.<REGION>.amazonaws.com/latest/windows/AwsReplicationWindowsInstaller.exe.sha512`
  Replace `<REGION>` with the AWS Region into which you are replicating, for example: us-east-1:
 `https://aws-application-migration-service-hashes-us-east-1.s3.us-east-1.amazonaws.com/latest/windows/AwsReplicationWindowsInstaller.exe.sha512 `
-
-****
 
 | Region name | Region identity | SHA512 Hash Download Link |
 | --- | --- | --- |

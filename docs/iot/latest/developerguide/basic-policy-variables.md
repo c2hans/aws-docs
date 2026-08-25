@@ -141,4 +141,4 @@ The following policy denies devices to connect to the specified domain.
 }
 ```
 
-For more information about policy conditional operator, see [IAM JSON policy elements: Condition operators](https://docs.aws.amazon.com//IAM/latest/UserGuide/reference_policies_elements_condition_operators.html). For more information about domain configurations, see [What is a domain configuration?](https://docs.aws.amazon.com//iot/latest/developerguide/iot-custom-endpoints-configurable.html).
+For more information about policy conditional operator, see [IAM JSON policy elements: Condition operators](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html). For more information about domain configurations, see [What is a domain configuration?](https://docs.aws.amazon.com/iot/latest/developerguide/iot-custom-endpoints-configurable.html).

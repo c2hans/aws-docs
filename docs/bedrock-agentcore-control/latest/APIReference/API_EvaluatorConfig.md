@@ -19,6 +19,11 @@ Type: [CodeBasedEvaluatorConfig](API_CodeBasedEvaluatorConfig.md) object
  **Note: **This object is a Union. Only one member of this object can be specified or returned.
 Required: No
 
+ ** derived **   <a name="bedrockagentcorecontrol-Type-EvaluatorConfig-derived"></a>
+ The configuration for an evaluator derived from an existing base evaluator (a built-in or third-party evaluator), run on your own model. The base evaluator supplies the prompt and scoring.
+Type: [DerivedEvaluatorConfig](API_DerivedEvaluatorConfig.md) object
+Required: No
+
  ** llmAsAJudge **   <a name="bedrockagentcorecontrol-Type-EvaluatorConfig-llmAsAJudge"></a>
  The LLM-as-a-Judge configuration that uses a language model to evaluate agent performance based on custom instructions and rating scales.
 Type: [LlmAsAJudgeEvaluatorConfig](API_LlmAsAJudgeEvaluatorConfig.md) object

@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awso
 
 AWS Outposts provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="outposts-GetCapacityTask"></a>[GetCapacityTask](https://docs.aws.amazon.com/outposts/latest/APIReference/API_GetCapacityTask.html) | Get information about the specified capacity task | Read |

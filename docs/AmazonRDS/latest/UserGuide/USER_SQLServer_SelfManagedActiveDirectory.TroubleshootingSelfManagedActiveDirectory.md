@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_SQLServe
 
 The following are issues you might encounter when you set up or modify self-managed AD.
 
-****
-
 | Error Code | Description | Common causes | Troubleshooting suggestions |
 | --- | --- | --- | --- |
 | Error 2 / 0x2 | The system cannot find the file specified. | The format or location for the Organizational Unit (OU) specified with the `—domain-ou` parameter is invalid. The domain service account specified via AWS Secrets Manager lack the permissions required to join the OU. | Review the `—domain-ou` parameter. Ensure the domain service account has the correct permissions to the OU. For more information, see [Configure your AD domain service account](USER_SQLServer_SelfManagedActiveDirectory.Requirements.md#USER_SQLServer_SelfManagedActiveDirectory.Requirements.DomainAccountConfig).  |

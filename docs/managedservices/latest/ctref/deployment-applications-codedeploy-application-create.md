@@ -14,8 +14,6 @@ Use to create an AWS CodeDeploy application resource with the specified name.
 ## Change Type Details
 <a name="ct-0ah3gwb9seqk2-DACc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-0ah3gwb9seqk2 |

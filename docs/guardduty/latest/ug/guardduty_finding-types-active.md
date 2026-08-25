@@ -169,7 +169,7 @@ The following table shows all of the active finding types, grouped by their sour
 | [Execution:Kubernetes/MaliciousFile](findings-malware-protection.md#execution-malware-kubernetes-maliciousfile) | Kubernetes | EBS Malware Protection | Varies depending on the detected threat |
 | [Execution:Kubernetes/SuspiciousFile](findings-malware-protection.md#execution-malware-kubernetes-suspiciousfile) | Kubernetes | EBS Malware Protection | Varies depending on the detected threat |
 | [Execution:EC2/MaliciousFile\!Snapshot](findings-malware-protection-backup.md#execution-malware-ec2-maliciousfile-snapshot) | Amazon EBS | Malware Protection for Backup | Varies depending on the detected threat |
-| [Execution:EC2/MaliciousFile\!AMIA malicious file has been detected in an EC2 AMI.](findings-malware-protection-backup.md#execution-malware-ec2-maliciousfile-ami) | Amazon EC2 | Malware Protection for Backup | Varies depending on the detected threat |
+| [Execution:EC2/MaliciousFile\!AMI](findings-malware-protection-backup.md#execution-malware-ec2-maliciousfile-ami) | Amazon EC2 | Malware Protection for Backup | Varies depending on the detected threat |
 | [Execution:EC2/MaliciousFile\!RecoveryPoint](findings-malware-protection-backup.md#execution-malware-ec2-maliciousfile-recoverypoint) | AWS Backup | Malware Protection for Backup | Varies depending on the detected threat |
 | [Execution:S3/MaliciousFile\!RecoveryPoint](findings-malware-protection-backup.md#execution-malware-s3-maliciousfile-recoverypoint) | AWS Backup | Malware Protection for Backup | Varies depending on the detected threat |
 | [Object:S3/MaliciousFile](gdu-malware-protection-s3-finding-types.md#s3-object-s3-malicious-file) | S3Object | Malware Protection for S3 | High |

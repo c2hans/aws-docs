@@ -53,7 +53,7 @@ The payment vendor for the credential provider. Valid values are `CoinbaseCDP`.
 *Required*: Yes
 *Type*: String
 *Allowed values*: `CoinbaseCDP | StripePrivy`
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Name`  <a name="cfn-bedrockagentcore-paymentcredentialprovider-name"></a>
 A unique name for the payment credential provider.

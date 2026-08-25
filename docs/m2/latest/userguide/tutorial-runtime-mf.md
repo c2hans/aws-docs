@@ -725,7 +725,7 @@ Other valid accounts are `0000000011` and `00000000020`.
 If you no longer need the resources that you created for this tutorial, delete them to avoid additional charges. To do so, complete the following steps:
 + If necessary, stop the application.
 + Delete the application. For more information, see [Delete an AWS Mainframe Modernization application](applications-m2-delete.md).
-+ Delete the runtime environment. For more information, see [Delete an AWS Mainframe Modernization runtime environmentDelete a runtime environment](delete-environments-m2.md).
++ Delete the runtime environment. For more information, see [Delete an AWS Mainframe Modernization runtime environment](delete-environments-m2.md).
 + Delete the Amazon S3 buckets that you created for this tutorial. For more information, see [Deleting a bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/delete-bucket.html) in the *Amazon S3 User Guide*.
 + Delete the AWS Secrets Manager secret that you created for this tutorial. For more information, see [Delete a secret](https://docs.aws.amazon.com/secretsmanager/latest/userguide/manage_delete-secret.html).
 + Delete the KMS key that you created for this tutorial. For more information, see [Deleting AWS KMS keys](https://docs.aws.amazon.com/kms/latest/developerguide/deleting-keys.html).

@@ -14,8 +14,6 @@ Offboard the specified application account. Run this from the management account
 ## Change Type Details
 <a name="ct-0vdiy51oyrhhm-MMMo-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-0vdiy51oyrhhm |

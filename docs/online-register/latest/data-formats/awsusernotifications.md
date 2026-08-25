@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsu
 
 AWS User Notifications provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="notifications-GetEventRule"></a>[GetEventRule](https://docs.aws.amazon.com/notifications/latest/APIReference/API_GetEventRule.html) | Get an EventRule | Read |

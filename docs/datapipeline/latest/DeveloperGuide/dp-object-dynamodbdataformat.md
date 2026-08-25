@@ -83,20 +83,14 @@ The following example shows how to use `DynamoDBDataFormat` to assign a schema t
 ## Syntax
 <a name="dynamodbdataformat-syntax"></a>
 
-****
-
 | Optional Fields | Description | Slot Type |
 | --- | --- | --- |
 | column | The column name with data type specified by each field for the data described by this data node. For example, hostname STRING. For multiple values, use column names and data types separated by a space. | String |
 | parent | The parent of the current object from which slots will be inherited. | Reference Object, such as "parent":{"ref":"myBaseObjectId"} |
 
-****
-
 | Runtime Fields | Description | Slot Type |
 | --- | --- | --- |
 | @version | The pipeline version uses to create the object. | String |
-
-****
 
 | System Fields | Description | Slot Type |
 | --- | --- | --- |

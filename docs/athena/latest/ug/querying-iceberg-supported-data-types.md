@@ -27,8 +27,6 @@ For more information about Iceberg table types, see the [schemas page for Iceber
 
 The following table shows the relationship between Athena data types and Iceberg table data types.
 
-****
-
 <table>
 <thead>
   <tr><th>Iceberg type</th><th>Athena type</th><th>Notes</th></tr>

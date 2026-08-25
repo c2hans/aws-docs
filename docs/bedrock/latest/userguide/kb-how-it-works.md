@@ -23,8 +23,6 @@ Binary vectors, which use only 1 bit per dimension, aren't as costly on storage 
 
 The following example shows a piece of text in three representations:
 
-****
-
 | Representation | Value |
 | --- | --- |
 | Text | "Amazon Bedrock uses high-performing foundation models from leading AI companies and Amazon." |

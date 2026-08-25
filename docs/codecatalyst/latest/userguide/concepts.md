@@ -47,14 +47,14 @@ Users who have been added to the SSO users and groups for the IAM Identity Cente
 
 A *project* represents a collaborative effort in CodeCatalyst that supports development teams and tasks. After you have a project, you can add, update, or remove users and resources, customize your project dashboard, and monitor the progress of your team's work. You can have multiple projects within a space.
 
-For more information about projects, see [Organize work with projects in CodeCatalystOrganize work with projects](projects.md).
+For more information about projects, see [Organize work with projects in CodeCatalyst](projects.md).
 
 ## Blueprints
 <a name="templates-concept"></a>
 
 A *blueprint* is a project synthesizer that generates and extends application support files and dependencies for you, along with creating your CodeCatalyst project in the console. You choose a project type from a selection of blueprints in CodeCatalyst, view the README file, and preview the project repository and resources that will be generated. Your project is generated from the base configuration specified by the blueprint. You synthesize to the project blueprint periodically, which updates your project files, such as software dependencies, and regenerates resources. Projects use a tool called Projen to synthesize projects by syncing the latest project updates and generating support files. These files may include `package.json`, `Makefile`, `eslint`, and more based on your application type and language. Project blueprints can generate files supporting AWS resources such as CDK constructs, CloudFormation templates, and AWS Serverless Application Model templates.
 
-For more information about project blueprints, see [Creating a comprehensive project with CodeCatalyst blueprintsCreating a comprehensive project with blueprints](project-blueprints.md).
+For more information about project blueprints, see [Creating a comprehensive project with CodeCatalyst blueprints](project-blueprints.md).
 
 ## Account connections
 <a name="account-connections-concept"></a>
@@ -77,7 +77,7 @@ For more information about VPC connections, see [ Managing Amazon Virtual Privat
 
 An AWS Builder ID is a personal identity you can use to sign up and sign in to CodeCatalyst and other participating applications. It is not the same as an AWS account. Your AWS Builder ID manages metadata such as user alias and email address. Your AWS Builder ID is a unique identity that supports users across all spaces in CodeCatalyst. For information about accessing your AWS Builder ID profile, see [Updating a profile](your-profile.md). To learn more about AWS Builder ID, see [AWS Builder ID](https://docs.aws.amazon.com/general/latest/gr/aws_builder_id.html) in the AWS General Reference.
 
-For more information about signing up and signing in, see [Set up and sign in to CodeCatalystSet up and sign in to CodeCatalyst](setting-up-topnode.md).
+For more information about signing up and signing in, see [Set up and sign in to CodeCatalyst](setting-up-topnode.md).
 
 ## User profiles in CodeCatalyst
 <a name="user-profile-concept"></a>
@@ -86,7 +86,7 @@ You access your CodeCatalyst user profile by choosing the profile option from th
 
 You access your AWS Builder ID by viewing your CodeCatalyst profile and then choosing to go to AWS Builder ID. You will be redirected to your AWS Builder ID profile page. Your profile's full name, email address, and password are managed by your AWS Builder ID, and you can edit that information using the AWS Builder ID page. You entered this information when you signed up. When you are ready to set up MFA to use an authenticator application for signing in, you will use the AWS Builder ID page. For more information about viewing your AWS Builder ID profile, see [Updating a profile](your-profile.md).
 
-For more information about signing up and signing in, see [Set up and sign in to CodeCatalystSet up and sign in to CodeCatalyst](setting-up-topnode.md).
+For more information about signing up and signing in, see [Set up and sign in to CodeCatalyst](setting-up-topnode.md).
 
 ## Source repositories
 <a name="source-repositories-concept"></a>
@@ -114,12 +114,12 @@ A *Dev Environment* is a cloud-based development environment that you can use in
 ## Workflows
 <a name="workflow-concept"></a>
 
-A *workflow* is an automated procedure that describes how to build, test, and deploy your code as part of a continuous integration and continuous delivery (CI/CD) system. A workflow defines a series of steps, or *actions*, to take during a workflow run. A workflow also defines the events, or *triggers*, that cause the workflow to start. To set up a workflow, you create a *workflow definition file* using the CodeCatalyst console's [visual or YAML editor](https://docs.aws.amazon.com//codecatalyst/latest/userguide/flows.html#workflow.editors).
+A *workflow* is an automated procedure that describes how to build, test, and deploy your code as part of a continuous integration and continuous delivery (CI/CD) system. A workflow defines a series of steps, or *actions*, to take during a workflow run. A workflow also defines the events, or *triggers*, that cause the workflow to start. To set up a workflow, you create a *workflow definition file* using the CodeCatalyst console's [visual or YAML editor](https://docs.aws.amazon.com/codecatalyst/latest/userguide/flows.html#workflow.editors).
 
 **Tip**
-For a quick look at how you might use workflows in a project, [create a project with a blueprint](https://docs.aws.amazon.com//codecatalyst/latest/userguide/projects-create.html#projects-create-console-template). Each blueprint deploys a functioning workflow that you can review, run, and experiment with.
+For a quick look at how you might use workflows in a project, [create a project with a blueprint](https://docs.aws.amazon.com/codecatalyst/latest/userguide/projects-create.html#projects-create-console-template). Each blueprint deploys a functioning workflow that you can review, run, and experiment with.
 
-For more information about workflows, see [Build, test, and deploy with workflowsBuild, test, and deploy with workflows](workflow.md).
+For more information about workflows, see [Build, test, and deploy with workflows](workflow.md).
 
 ## Actions
 <a name="action-concept"></a>
@@ -133,7 +133,7 @@ For more information about actions, see [Configuring workflow actions](workflows
 
 An *issue* is a record that tracks the work related to your project. You can create an issue for a feature, a task, a bug, or any other body of work related to your project. If you're using agile development, an issue can also describe an epic or user story.
 
-For more information about issues, see [Track and organize work with issues in CodeCatalystTrack and organize work with issues](issues.md).
+For more information about issues, see [Track and organize work with issues in CodeCatalyst](issues.md).
 
 ## Personal access tokens (PATs)
 <a name="personal-access-token-concept"></a>

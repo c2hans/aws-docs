@@ -24,8 +24,6 @@ MediaConnect currently offers three flow sizes: Medium, Large and Large 4x. Medi
 
 Use this table to compare flow sizes and select the one that meets your needs.
 
-****
-
 <table>
 <thead>
   <tr><th></th><th></th><th colspan="2">Transport Streams</th><th colspan="2">NDI</th><th colspan="2">CDI</th></tr>

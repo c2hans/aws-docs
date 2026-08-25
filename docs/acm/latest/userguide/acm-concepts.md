@@ -125,8 +125,6 @@ Certificate:
 
 The public end-entity certificates issued by ACM derive their trust from the following Amazon root CAs:
 
-****
-
 |  Distinguished name  | Encryption algorithm |
 | --- | --- |
 | CN=Amazon Root CA 1,O=Amazon,C=US | 2048-bit RSA (RSA\_2048) |
@@ -189,7 +187,7 @@ All public certificates issued by ACM are automatically recorded in certificate 
 ## Domain Name System
 <a name="concept-dns"></a>
 
-The Domain Name System (DNS) is a hierarchical distributed naming system for computers and other resources connected to the internet or a private network. DNS is primarily used to translate textual domain names, such as `aws.amazon.com`, into numerical IP (Internet Protocol) addresses of the form `111.122.133.144`. The DNS database for your domain, however, contains a number of records that can be used for other purposes. For example, with ACM you can use a CNAME record to validate that you own or control a domain when you request a certificate. For more information, see [AWS Certificate Manager DNS validationDNS validation](dns-validation.md).
+The Domain Name System (DNS) is a hierarchical distributed naming system for computers and other resources connected to the internet or a private network. DNS is primarily used to translate textual domain names, such as `aws.amazon.com`, into numerical IP (Internet Protocol) addresses of the form `111.122.133.144`. The DNS database for your domain, however, contains a number of records that can be used for other purposes. For example, with ACM you can use a CNAME record to validate that you own or control a domain when you request a certificate. For more information, see [AWS Certificate Manager DNS validation](dns-validation.md).
 
 ## Domain Names
 <a name="concept-dn"></a>

@@ -8,12 +8,12 @@ Amazon Monitron is no longer open to new customers. Existing customers can conti
 <a name="data-export-lambda-v2"></a>
 
 **Topics**
-+ [Step 1: Create the [IAM role](https://docs.aws.amazon.com//lambda/latest/dg/lambda-intro-execution-role.html) that gives your function permission to access AWS resources](#data-export-lambda-v2-1)
++ [Step 1: Create the [IAM role](https://docs.aws.amazon.com/lambda/latest/dg/lambda-intro-execution-role.html) that gives your function permission to access AWS resources](#data-export-lambda-v2-1)
 + [Step 2: Create the Lambda function](#create-lambda-function-v2)
 + [Step 3: Configure the Lambda function](#configure-lambda-function-v2)
 + [Step 4: Enable Kinesis trigger in AWS Lambda console](#configure-kinesis-trigger-v2)
 
-## Step 1: Create the [IAM role](https://docs.aws.amazon.com//lambda/latest/dg/lambda-intro-execution-role.html) that gives your function permission to access AWS resources
+## Step 1: Create the [IAM role](https://docs.aws.amazon.com/lambda/latest/dg/lambda-intro-execution-role.html) that gives your function permission to access AWS resources
 <a name="data-export-lambda-v2-1"></a>
 
 1. Open the [roles page](https://console.aws.amazon.com/iam/home?#/roles) in the IAM console.

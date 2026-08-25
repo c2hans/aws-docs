@@ -130,7 +130,7 @@ If the console displays “No service updates found”, it means the ElastiCache
 
 You can stop updates to clusters if needed. For example, you might want to stop updates if you have an unexpected surge to your clusters that are undergoing updates. Or you might want to stop updates if they're taking too long and interrupting your business flow at a peak time.
 
-The [Stopping](https://docs.aws.amazon.com//AmazonElastiCache/latest/APIReference/API_BatchStopUpdateAction.html) operation immediately interrupts all updates to those clusters and any nodes that are yet to be updated. It continues to completion any nodes that have an **in progress** status. However, it ceases updates to other nodes in the same cluster that have an **update available** status and reverts them to a **Stopping** status.
+The [Stopping](https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/API_BatchStopUpdateAction.html) operation immediately interrupts all updates to those clusters and any nodes that are yet to be updated. It continues to completion any nodes that have an **in progress** status. However, it ceases updates to other nodes in the same cluster that have an **update available** status and reverts them to a **Stopping** status.
 
 When the **Stopping** workflow is complete, the nodes that have a **Stopping** status change to a **Stopped** status. Depending on the workflow of the update, some clusters won't have any nodes updated. Other clusters might include some nodes that are updated and others that still have an **update available** status.
 
@@ -165,4 +165,4 @@ aws elasticache batch-stop-update-action \
   --cache-cluster-ids {{my-cache-cluster-1 my-cache-cluster-2}}
 ```
 
-For more information, see [BatchStopUpdateAction](https://docs.aws.amazon.com//AmazonElastiCache/latest/APIReference/API_BatchStopUpdateAction.html).
+For more information, see [BatchStopUpdateAction](https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/API_BatchStopUpdateAction.html).

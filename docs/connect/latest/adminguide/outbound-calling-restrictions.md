@@ -28,7 +28,7 @@ UIFN numbers are designed to be used for inbound calls only. They cannot be used
 
 If you are using Amazon Connect to redirect calls: If you are receiving calls with Anonymous (withheld CLI), you must use a Connect Customer number for the transfer.
 
-**Important:** Anonymous calls (calls without caller ID) are increasingly blocked by carriers as anti-spam measures and may violate telecommunications regulations in many countries. Always configure a valid caller ID number from your Amazon Connect instance to ensure reliable call delivery.
+**Important:** Anonymous calls (calls without caller ID) are increasingly blocked by carriers as anti-spam measures and might violate telecommunications regulations in many countries. Always configure a valid caller ID number from your Amazon Connect instance to ensure reliable call delivery.
 
 See [Set up outbound caller ID in Connect Customer](queues-callerid.md).
 
@@ -91,7 +91,7 @@ To request the ability to call Chinese telephone numbers (\+86), perform the fol
   + The number must be a DID provided by Connect Customer. No other number is acceptable.
   + The number cannot be a DID provided by Hong Kong, Macau, Taiwan, China, or Singapore.
 **Note**
-The preceding list may change at any time.
+The preceding list might change at any time.
 + Any number used to call Chinese telephone numbers must be able to called back. You must also implement a call back message that clearly states the name of the company that is associated with the phone number.
 + You must provide a detailed description of your use case, and confirm that you meet the [eligibility criteria](#criteria-cr) described in this topic.
 

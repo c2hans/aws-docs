@@ -25,8 +25,6 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_codeguru-reviewer-actions-as-permissions).
 
-****
-
 - **   AssociateRepository  **
   - **IAM action:**  [codeguru-reviewer:AssociateRepository](#list_codeguru-reviewer-action-AssociateRepository)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [codeguru-reviewer:TagResource](#list_codeguru-reviewer-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
@@ -113,8 +111,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
 <a name="list_codeguru-reviewer-actions-as-permissions"></a>
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
-
-****
 
 - **   [AssociateRepository](https://docs.aws.amazon.com/codeguru/latest/reviewer-api/API_AssociateRepository.html)  **
   - **Description:** Grants permission to associates a repository with Amazon CodeGuru Reviewer
@@ -205,8 +201,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 The following actions are defined by Amazon CodeGuru Reviewer but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 | Actions | Description | Resource types (\*required) | Condition keys | Access level |
 | --- | --- | --- | --- | --- |
 |   [CreateConnectionToken](https://docs.aws.amazon.com/codeguru/latest/reviewer-api/Welcome.html)  | Grants permission to perform webbased oauth handshake for 3rd party providers |  |   | Read |
@@ -218,8 +212,6 @@ The following actions are defined by Amazon CodeGuru Reviewer but are not direct
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
 
-****
-
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
 |  [association](https://docs.aws.amazon.com/codeguru/latest/reviewer-ug/working-with-repositories.html)  | arn:${Partition}:codeguru-reviewer:${Region}:${Account}:association:${ResourceId} | [aws:ResourceTag/${TagKey}](#list_codeguru-reviewer-aws_ResourceTag___TagKey_) |
@@ -229,8 +221,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_codeguru-reviewer-policy-keys"></a>
 
 Amazon CodeGuru Reviewer defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

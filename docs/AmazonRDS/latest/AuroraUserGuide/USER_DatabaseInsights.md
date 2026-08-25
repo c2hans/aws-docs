@@ -25,3 +25,4 @@ For information about pricing, see [Amazon CloudWatch Pricing](https://aws.amazo
 + [Turning on the Standard mode of Database Insights for Amazon Aurora](USER_DatabaseInsights.TurningOnStandard.md)
 + [Configuring your database to monitor slow SQL queries with Database Insights for Amazon Aurora](USER_DatabaseInsights.SlowSQL.md)
 + [Considerations for Database Insights for Amazon Aurora](USER_DatabaseInsights.Considerations.md)
++ [Monitoring DB load with Amazon CloudWatch Database Insights on Amazon Aurora](USER_PerfInsights.md)

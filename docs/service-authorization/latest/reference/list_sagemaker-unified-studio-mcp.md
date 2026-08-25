@@ -29,8 +29,6 @@ Amazon SageMaker Unified Studio MCP has no API operations that can be used in th
 
 The following actions are defined by Amazon SageMaker Unified Studio MCP but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 | Actions | Description | Resource types (\*required) | Condition keys | Access level |
 | --- | --- | --- | --- | --- |
 |   [AuthorizeVpce](https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/)  | Grants permission to use MCP service VPC endpoint |  |   | Read |

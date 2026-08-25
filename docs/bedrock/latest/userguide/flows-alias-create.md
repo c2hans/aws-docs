@@ -33,8 +33,6 @@ To create an alias to point to a version of your flow, send a [CreateFlowAlias](
 
 The following fields are required:
 
-****
-
 | Field | Basic description |
 | --- | --- |
 | flowIdentifier | The ARN or ID of the flow for which to create an alias. |
@@ -42,8 +40,6 @@ The following fields are required:
 | routingConfiguration | Specify the version to map the alias to in the flowVersion field. |
 
 The following fields are optional:
-
-****
 
 | Field | Use-case |
 | --- | --- |

@@ -25,8 +25,6 @@ To complete this tutorial, you must first have set up the following:
 
 In this example configuration, we will set up and use a Git repository for storage.
 
-****
-
 1. Initialize match in your project:
 
    ```
@@ -91,8 +89,6 @@ The command execution will be interactive and fastlane will ask to set pass phra
 
 Create or add the application file as appropriate for your project.
 
-****
-
 1. Create or add the [Gymfile](http://docs.fastlane.tools/actions/gym/#gymfile), [Appfile](http://docs.fastlane.tools/advanced/Appfile/), [Snapfile](http://docs.fastlane.tools/actions/snapshot/#snapfile), [Deliverfile](http://docs.fastlane.tools/actions/deliver/#editing-the-deliverfile) based on your project build requirements.
 
 1. Commit the changes to your remote repository.
@@ -101,8 +97,6 @@ Create or add the application file as appropriate for your project.
 <a name="sample-fastlane-github-secrets"></a>
 
 Create three secrets for storing the fastlane session cookie and matching pass phrase. For more information about creating secrets in Secrets Manager, see [Create an AWS Secrets Manager secret](https://docs.aws.amazon.com/secretsmanager/latest/userguide/create_secret.html).
-
-****
 
 1. Access your fastlane session cookie as follows.
 
@@ -144,8 +138,6 @@ While creating the above secrets in Secrets Manager, remember to give a secret n
 
 Create the compute fleet for your project.
 
-****
-
 1. In the console, go to CodeBuild and create a new compute fleet.
 
 1. Choose `macOS` as the operating system and select an appropriate compute type and image.
@@ -154,8 +146,6 @@ Create the compute fleet for your project.
 <a name="sample-fastlane-github-project"></a>
 
 Create your project in CodeBuild.
-
-****
 
 1. Open the AWS CodeBuild console at [https://console.aws.amazon.com/codesuite/codebuild/home](https://console.aws.amazon.com/codesuite/codebuild/home).
 

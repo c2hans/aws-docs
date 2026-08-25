@@ -13,8 +13,6 @@ You can't drop an existing temporary tablespace on a read replica. You can chang
 
 To drop the tempfiles, use the Amazon RDS procedure `rdsadmin.rdsadmin_util. drop_replica_tempfiles`. You can use this procedure only on read replicas. The `drop_replica_tempfiles` procedure has the following parameters.
 
-****
-
 | Parameter name | Data type | Default | Required | Description |
 | --- | --- | --- | --- | --- |
 | `p_tablespace_name` | varchar | — | Yes | The name of the temporary tablespace on your read replica. |

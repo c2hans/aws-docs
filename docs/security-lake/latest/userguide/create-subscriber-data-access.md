@@ -26,7 +26,7 @@ Choose one of the following access methods to create a subscriber with access to
 
 1. For **Data access method**, choose **S3** to set up data access for the subscriber.
 
-1. For **Subscriber credentials**, provide the subscriber's AWS account ID and [external ID](https://docs.aws.amazon.com//security-lake/latest/userguide/prereqs-creating-subscriber.html#subscriber-external-id).
+1. For **Subscriber credentials**, provide the subscriber's AWS account ID and [external ID](https://docs.aws.amazon.com/security-lake/latest/userguide/prereqs-creating-subscriber.html#subscriber-external-id).
 
 1. (Optional) For **Notification details**, if you want Security Lake to create an Amazon SQS queue that the subscriber can poll for object notifications, select **SQS queue**. If you want Security Lake to send notifications through EventBridge to an HTTPS endpoint, select **Subscription endpoint**.
 
@@ -36,7 +36,7 @@ Choose one of the following access methods to create a subscriber with access to
 
    1. For **Service Access**, create a new IAM role or use an existing IAM role that gives EventBridge permission to invoke API destinations and send object notifications to the correct endpoints.
 
-      For information about creating a new IAM role, see [Create IAM role to invoke EventBridge API destinations](https://docs.aws.amazon.com//security-lake/latest/userguide/prereqs-creating-subscriber.html#iam-role-subscriber).
+      For information about creating a new IAM role, see [Create IAM role to invoke EventBridge API destinations](https://docs.aws.amazon.com/security-lake/latest/userguide/prereqs-creating-subscriber.html#iam-role-subscriber).
 
 1. (Optional) For **Tags**, enter as many as 50 tags to assign to the subscriber.
 
@@ -92,7 +92,7 @@ $ aws securitylake create-subscriber-notification \
 --configuration httpsNotificationConfiguration={"targetRoleArn"="{{arn:aws:iam::XXX:role/service-role/RoleName}}", "endpoint"="{{https://account-management.$3.$2.securitylake.aws.dev/v1/datalake}}"}
 ```
 
-To get the `subscriberID`, use the [ListSubscribers](https://docs.aws.amazon.com//security-lake/latest/APIReference/API_ListSubscribers.html) operation of the Security Lake API. If you're using the AWS Command Line Interface (AWS CLI), run the [list-subscriber](https://docs.aws.amazon.com/cli/latest/reference/securitylake/list-subscribers.html) command.
+To get the `subscriberID`, use the [ListSubscribers](https://docs.aws.amazon.com/security-lake/latest/APIReference/API_ListSubscribers.html) operation of the Security Lake API. If you're using the AWS Command Line Interface (AWS CLI), run the [list-subscriber](https://docs.aws.amazon.com/cli/latest/reference/securitylake/list-subscribers.html) command.
 
 ```
 $ aws securitylake list-subscribers

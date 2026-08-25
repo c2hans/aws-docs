@@ -34,7 +34,6 @@ The following image shows a flow consisting of a single prompt, defined inline i
       1. (Optional) If supported by the model, you can configure prompt **Caching** for the prompt message. For more information, see [Create and design a flow in Amazon Bedrock](flows-create.md).
 
    1. Expand the **Inputs** section. The names for the inputs are prefilled by the variables in the prompt message. Configure the inputs as follows:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/flows-ex-prompt.html)
 
       This configuration means that the prompt node expects a JSON object containing a field called `genre` that will be mapped to the `genre` input and a field called `number` that will be mapped to the `number` input.

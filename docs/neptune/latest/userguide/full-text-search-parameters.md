@@ -122,8 +122,6 @@ If you set `maxResults` to a value higher than the OpenSearch `index.max_result_
 
   If no `sortOrder` parameter accompanies `sortBy`, descending (`DESC`) order from greatest to least is used.
 + **`sortOrder`**   –   An optional parameter that lets you specify whether OpenSearch results are sorted from least to greatest or from greatest to least (the default):
-
-****
   + `ASC`   –   Ascending order, from least to greatest.
   + `DESC`   –   Descending order, from greatest to least.
 

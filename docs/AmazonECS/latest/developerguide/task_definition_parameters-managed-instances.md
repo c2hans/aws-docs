@@ -571,7 +571,7 @@ If a health check succeeds within the `startPeriod`, then the container is consi
 `cpu`
 Type: Integer
 Required: No
-The number of `cpu` units the Amazon ECS container agent reserves for the container. On Linux, this parameter maps to `CpuShares` in the [Create a container](https://docs.docker.com/reference/api/engine/version/v1.38/#operation/ContainerCreate) section.
+The number of `cpu` units the Amazon ECS container agent reserves for the container. On Linux, this parameter maps to `CpuShares` in the [Create a container](https://docs.docker.com/reference/api/engine/latest/#operation/ContainerCreate) section.
 This field is optional for tasks that run on Amazon ECS Managed Instances. The total amount of CPU reserved for all the containers that are within a task must be lower than the task-level `cpu` value.
 Linux containers share unallocated CPU units with other containers on the container instance with the same ratio as their allocated amount. For example, assume that you run a single-container task on a single-core instance type with 512 CPU units specified for that container. Moreover, that task is the only task running on the container instance. In this example, the container can use the full 1,024 CPU unit share at any given time. However, assume then that you launched another copy of the same task on that container instance. Each task is guaranteed a minimum of 512 CPU units when needed. Similarly, if the other container isn't using the remaining CPU, each container can float to higher CPU usage. However, if both tasks were 100% active all of the time, they are limited to 512 CPU units.
 On Linux container instances, the Docker daemon on the container instance uses the CPU value to calculate the relative CPU share ratios for running containers. The minimum valid CPU share value that the Linux kernel allows is 2, and the maximum valid CPU share value that the Linux kernel allows is 262144. However, the CPU parameter isn't required, and you can use CPU values below two and above 262144 in your container definitions. For CPU values below two (including null) and above 262144, the behavior varies based on your Amazon ECS container agent version:
@@ -625,7 +625,7 @@ The command that's passed to the container. This parameter maps to `Cmd` in the 
 `workingDirectory`
 Type: String
 Required: No
-The working directory to run commands inside the container in. This parameter maps to `WorkingDir` in the [Create a container](https://docs.docker.com/reference/api/engine/version/v1.38/#operation/ContainerCreate) section of the [Docker Remote API](https://docs.docker.com/reference/api/engine/version/v1.38/) and the `--workdir` option to [**docker run**](https://docs.docker.com/reference/cli/docker/container/run/).
+The working directory to run commands inside the container in. This parameter maps to `WorkingDir` in the [Create a container](https://docs.docker.com/reference/api/engine/latest/#operation/ContainerCreate) section of the [Docker Remote API](https://docs.docker.com/reference/api/engine/latest/) and the `--workdir` option to [**docker run**](https://docs.docker.com/reference/cli/docker/container/run/).
 
 ```
 "workingDirectory": "string"

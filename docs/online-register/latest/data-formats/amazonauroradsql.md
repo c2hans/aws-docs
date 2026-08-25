@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon Aurora DSQL provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="dsql-GetBackupJob"></a>[GetBackupJob](https://docs.aws.amazon.com/aurora-dsql/latest/userguide/backup-aurora-dsql.html) | Get the status of an Aurora DSQL cluster backup job | Read |

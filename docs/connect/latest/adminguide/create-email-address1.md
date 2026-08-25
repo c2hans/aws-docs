@@ -17,7 +17,7 @@ You can create up to 100 email addresses.
 
 1. On the navigation menu, choose **Channels**, **Email addresses**.
 
-1. Choose a domain from the dropdown list. The list contains the auto-generated domain that was created when you enabled the email channel for your instance. It may also display up to five custom domains if you added them.
+1. Choose a domain from the dropdown list. The list contains the auto-generated domain that was created when you enabled the email channel for your instance. It might also display up to five custom domains if you added them.
 
 1. Under **Additional information**, you can optionally add the following:
    + **Friendly sender name**

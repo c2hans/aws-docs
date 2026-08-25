@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/servicequotas/latest/userguide/gs-reques
 **Note**
 If you are searching for service quotas for a specific AWS service, review [Service endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/aws-service-information.html) in the *AWS General Reference guide*.
 
-Service Quotas enables you to review the AWS default value and applied values of a particular *quota*. Certain resource-level quotas, such as `Instances per domain` for Amazon OpenSearch Service, also display applied quota values per resource. Refer to [Terminology in Service Quotas](https://docs.aws.amazon.com//servicequotas/latest/userguide/intro.html#intro_getting-started) for detailed definitions of these values.
+Service Quotas enables you to review the AWS default value and applied values of a particular *quota*. Certain resource-level quotas, such as `Instances per domain` for Amazon OpenSearch Service, also display applied quota values per resource. Refer to [Terminology in Service Quotas](https://docs.aws.amazon.com/servicequotas/latest/userguide/intro.html#intro_getting-started) for detailed definitions of these values.
 
 Your account's actual quota value may be less than the AWS default quota value if you recently created the account, or if you use the account minimally.
 

@@ -19,7 +19,7 @@ Value Length Constraints: Minimum length of 0. Maximum length of 32767.
 Required: No
 
  ** ParticipantDetails **   <a name="connect-Type-NewSessionDetails-ParticipantDetails"></a>
-The customer's details.
+The details of the participant, including their display name.
 Type: [ParticipantDetails](API_ParticipantDetails.md) object
 Required: No
 

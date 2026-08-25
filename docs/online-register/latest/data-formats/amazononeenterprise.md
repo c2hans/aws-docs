@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon One Enterprise provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="one-GetDeviceConfigurationTemplate"></a>[GetDeviceConfigurationTemplate](https://docs.aws.amazon.com/one-enterprise/latest/userguide/create-config-template.html) | View a Device Configuration Template | Read |

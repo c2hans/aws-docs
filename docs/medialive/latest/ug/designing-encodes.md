@@ -16,8 +16,6 @@ After you have performed this procedure, you will have a list of video, audio, a
 + [Plan the encodes](plan-encodes.md)
 + [Identify encode sharing opportunities](plan-encode-sharing.md)
 
-****
-
 | Encode nickname |  Characteristics of the encode  | Source | Opportunity | Action |
 | --- | --- | --- | --- | --- |
 | VideoA | AVC 1920x1080, 5 Mbps | HEVC  |  | Create this encode from scratch. |

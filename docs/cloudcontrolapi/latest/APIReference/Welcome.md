@@ -9,4 +9,4 @@ This is the API Reference for AWS Cloud Control API. With Cloud Control API, you
 
 For more information, see the [AWS Cloud Control API User Guide](https://docs.aws.amazon.com/cloudcontrolapi/latest/userguide/what-is-cloudcontrolapi.html).
 
-This document was last published on August 13, 2026.
+This document was last published on August 24, 2026.

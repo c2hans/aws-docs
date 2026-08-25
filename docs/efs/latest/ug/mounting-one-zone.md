@@ -74,7 +74,7 @@ If you are using `/etc/fstab` to mount an EFS file system using One Zone storage
 us-east-1a.fs-abc123def456a7890.efs.us-east-1.amazonaws.com:/ efs-one-zone nfs4 nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=2,noresvport,_netdev 0 0
 ```
 
-For more information about how to edit the `/etc/fstab` file, and the values used in this command, see [Automatically mounting EFS file systemsEnabling automatic mounting on EC2 Linux or Mac instances using NFS](nfs-automount-efs.md).
+For more information about how to edit the `/etc/fstab` file, and the values used in this command, see [Automatically mounting EFS file systems](nfs-automount-efs.md).
 
 ## Mounting file systems with One Zone file system on other AWS compute instances
 <a name="mounting-one-zone-other-compute-instances"></a>

@@ -81,7 +81,7 @@ For further guidance to resolve this issue, check the following:
 
 1. Verify which Availability Zones support your chosen instance type using the [describe-instance-type-offerings](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-instance-type-offerings.html) command or from the Amazon EC2 console by checking the **Availability Zones** value on the networking pane of the **Instance types** page.
 
-1. Update or remove the subnet for any unsupported zones in the settings of your Auto Scaling group using the [update-auto-scaling-group](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/autoscaling/update-auto-scaling-group.html) command. For more information, see [Add an Availability ZoneRemove an Availability Zone](as-add-az-console.md).
+1. Update or remove the subnet for any unsupported zones in the settings of your Auto Scaling group using the [update-auto-scaling-group](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/autoscaling/update-auto-scaling-group.html) command. For more information, see [Add an Availability Zone](as-add-az-console.md).
 
 ## Your Spot request price of 0.015 is lower than the minimum required Spot request fulfillment price of 0.0735...
 <a name="ts-as-instancelaunchfailure-7"></a>
@@ -192,7 +192,7 @@ For more information, see [Example 2: Key policy sections that allow cross-accou
 
 **Solution**: To resolve the issue, try the following:
 + Wait a few minutes for Amazon EC2 Auto Scaling to find capacity for this instance type in other enabled Availability Zones.
-+ Expand your Auto Scaling group to additional Availability Zones. For more information, see [Add an Availability ZoneRemove an Availability Zone](as-add-az-console.md).
++ Expand your Auto Scaling group to additional Availability Zones. For more information, see [Add an Availability Zone](as-add-az-console.md).
 + Follow the best practice of using a diverse set of instance types so that you're not reliant on one specific instance type. For more information, see [Auto Scaling groups with multiple instance types and purchase options](ec2-auto-scaling-mixed-instances-groups.md).
 
 ## The requested reservation does not have sufficient compatible and available capacity for this request. Launching EC2 instance failed.
@@ -224,7 +224,7 @@ With Capacity Blocks, you are constrained by the amount of capacity originally p
 
 **Solution**: To resolve the issue, try the following:
 + Wait a few minutes; capacity can shift frequently. Amazon EC2 Auto Scaling continues to automatically make the launch request until capacity becomes available.
-+ Expand your Auto Scaling group to additional Availability Zones. For more information, see [Add an Availability ZoneRemove an Availability Zone](as-add-az-console.md).
++ Expand your Auto Scaling group to additional Availability Zones. For more information, see [Add an Availability Zone](as-add-az-console.md).
 + Follow the best practice of using a diverse set of instance types so that you're not reliant on one specific instance type. For more information, see [Auto Scaling groups with multiple instance types and purchase options](ec2-auto-scaling-mixed-instances-groups.md).
 
 ## <number of instances> instance(s) are already running. Launching EC2 instance failed.

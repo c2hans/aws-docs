@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsr
 
 AWS RTB Fabric provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="rtbfabric-GetCertificateAssociation"></a>[GetCertificateAssociation](https://docs.aws.amazon.com/rtb-fabric/latest/api/API_GetCertificateAssociation.html) | Retrieve details of a certificate association with a responder gateway | Read |

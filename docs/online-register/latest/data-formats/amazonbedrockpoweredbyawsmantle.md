@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon Bedrock Powered by AWS Mantle provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="bedrock-mantle-CallWithBearerToken"></a>[CallWithBearerToken](#welcome) | Make API calls using bearer token authentication | List |

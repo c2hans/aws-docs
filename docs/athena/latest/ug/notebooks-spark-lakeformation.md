@@ -10,12 +10,12 @@ With the release version Apache Spark version 3.5, you can leverage AWS Lake For
 ## Step 1: Enable Full Table Access in Lake Formation
 <a name="notebooks-spark-lakeformation-enable-fta"></a>
 
-To use Full Table Access (FTA) mode, you must allow Athena Spark to access data without the IAM session tag validation in AWS Lake Formation. To enable, follow the steps in [Application integration for full table access](https://docs.aws.amazon.com//lake-formation/latest/dg/fta-app-integration.html).
+To use Full Table Access (FTA) mode, you must allow Athena Spark to access data without the IAM session tag validation in AWS Lake Formation. To enable, follow the steps in [Application integration for full table access](https://docs.aws.amazon.com/lake-formation/latest/dg/fta-app-integration.html).
 
 ### Step 1.1: Register data locations in Lake Formation using user defined role
 <a name="notebooks-spark-lakeformation-register-locations"></a>
 
-You must use a user-defined role to register data locations in AWS Lake Formation. See [Requirements for roles used to register locations](https://docs.aws.amazon.com//lake-formation/latest/dg/registration-role.html) for details.
+You must use a user-defined role to register data locations in AWS Lake Formation. See [Requirements for roles used to register locations](https://docs.aws.amazon.com/lake-formation/latest/dg/registration-role.html) for details.
 
 ## Step 2: Setup IAM permissions for the execution role for the session
 <a name="notebooks-spark-lakeformation-iam-permissions"></a>

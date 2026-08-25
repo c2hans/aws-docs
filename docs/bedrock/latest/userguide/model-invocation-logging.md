@@ -18,7 +18,7 @@ The following operations can log model invocations.
 + [InvokeModelWithResponseStream](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_InvokeModelWithResponseStream.html)
 
 **Note**
-Model invocation logging is only supported for calls made through the `bedrock-runtime` endpoint. Calls made through other endpoints, such as the Responses API on the `bedrock-mantle` endpoint, are not currently captured by invocation logging.
+Model invocation logging is only supported for calls made through the `bedrock-runtime` endpoint. This includes the OpenAI-compatible Responses and Chat Completions APIs on that endpoint. Calls made through other endpoints, such as the same APIs on `bedrock-mantle`, are not currently captured by invocation logging.
 
 When [using the Converse API](conversation-inference-call.md), any image or document data that you pass is logged in Amazon S3 (if you have [enabled](#model-invocation-logging-console) delivery and image logging in Amazon S3).
 
@@ -248,8 +248,6 @@ Each invocation log entry is a JSON object with the following structure. The for
 ```
 
 The following table describes the fields in a log entry:
-
-****
 
 | Field | Description |
 | --- | --- |

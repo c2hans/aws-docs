@@ -23,7 +23,7 @@ Choose the tab for the console you are using.
 
 1. In the navigation pane, choose **Health checks**.
 
-1. For an overview of the status of all of your health checks—healthy or unhealthy—view the **Status** column. For more information, see [How Amazon Route 53 determines whether a health check is healthyHow Route 53 determines whether a health check is healthy](dns-failover-determining-health-of-endpoints.md).
+1. For an overview of the status of all of your health checks—healthy or unhealthy—view the **Status** column. For more information, see [How Amazon Route 53 determines whether a health check is healthy](dns-failover-determining-health-of-endpoints.md).
 
 1. For all health checks except calculated health checks, you can view the status of the Route 53 health checkers that are checking the health of a specified endpoint.
 
@@ -50,7 +50,7 @@ Either the current status of the health check or the reason for the last health 
 
 1. In the navigation pane, choose **Health Checks**.
 
-1. For an overview of the status of all of your health checks—healthy or unhealthy—view the **Status** column. For more information, see [How Amazon Route 53 determines whether a health check is healthyHow Route 53 determines whether a health check is healthy](dns-failover-determining-health-of-endpoints.md).
+1. For an overview of the status of all of your health checks—healthy or unhealthy—view the **Status** column. For more information, see [How Amazon Route 53 determines whether a health check is healthy](dns-failover-determining-health-of-endpoints.md).
 
 1. For all health checks except calculated health checks, you can view the status of the Route 53 health checkers that are checking the health of a specified endpoint. Select the health check.
 

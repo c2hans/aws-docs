@@ -90,9 +90,9 @@ To troubleshoot performance issues, it's important to understand the baseline pe
 
 If you use Multi-AZ DB clusters, monitor the time difference between the latest transaction on the writer DB instance and the latest applied transaction on a reader DB instance. This difference is called *replica lag*. For more information, see [Replica lag and Multi-AZ DB clusters](multi-az-db-clusters-concepts.md#multi-az-db-clusters-concepts-replica-lag).
 
-You can view the combined Performance Insights and CloudWatch metrics in the Performance Insights dashboard and monitor your DB instance. To use this monitoring view, Performance Insights must be turned on for your DB instance. For information about this monitoring view, see [Viewing combined metrics with the Performance Insights dashboard](Viewing_Unifiedmetrics.md).
+You can view the combined Performance Insights and CloudWatch metrics in the Performance Insights dashboard and monitor your DB instance. To use this monitoring view, Performance Insights must be turned on for your DB instance. For information about this monitoring view, see [Database Insights](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_DatabaseInsights.html).
 
-You can create a performance analysis report for a specific time period and view the insights identified and the recommendations to resolve the issues. For more information see, [Creating a performance analysis report in Performance Insights](USER_PerfInsights.UsingDashboard.AnalyzePerformanceTimePeriod.md).
+You can create a performance analysis report for a specific time period and view the insights identified and the recommendations to resolve the issues. For more information, see [Database Insights](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_DatabaseInsights.html).
 
 **To view performance metrics**
 

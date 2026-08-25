@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsw
 
 AWS Well-Architected Tool provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="wellarchitected-ExportLens"></a>[ExportLens](https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_ExportLens.html) | Export an existing lens | Read |

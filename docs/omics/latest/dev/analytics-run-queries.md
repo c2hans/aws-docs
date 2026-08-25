@@ -15,7 +15,7 @@ You can perform queries on your variant store using Amazon Athena. Note that gen
 
 The following example shows how to run a simple query.
 
-1. Open the Athena Query editor: [Athena Query editor](https://console.aws.amazon.com//athena)
+1. Open the Athena Query editor: [Athena Query editor](https://console.aws.amazon.com/athena)
 
 1. Under **Workgroup**, select the workgroup that you created during setup.
 
@@ -38,7 +38,7 @@ The following example shows how to run a complex query. To run this query, impor
 
 **Run a complex query**
 
-1. Open the Athena Query editor: [Athena Query editor](https://console.aws.amazon.com//athena)
+1. Open the Athena Query editor: [Athena Query editor](https://console.aws.amazon.com/athena)
 
 1. Under**Workgroup**, select the workgroup that you created during setup.
 

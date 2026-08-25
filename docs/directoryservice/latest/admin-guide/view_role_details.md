@@ -8,10 +8,10 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/view
 To view the AWS Managed Microsoft AD users and groups assigned to an IAM role, perform the following steps.
 
 **Prerequisites**
-+ [ Create an AWS Managed Microsoft AD](https://docs.aws.amazon.com//directoryservice/latest/admin-guide/ms_ad_getting_started.html#ms_ad_getting_started_create_directory).
-+ [Create an IAM user](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_users_create.html) or [create a IAM group](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_groups_create.html).
-+ [Create a role](https://docs.aws.amazon.com//directoryservice/latest/admin-guide/create_role.html) that has a trust relationship with Directory Service. For existing IAM roles, you will need to [edit the trust relationship for an existing role](https://docs.aws.amazon.com//directoryservice/latest/admin-guide/edit_trust.html).
-+ [Assign your users or groups to an existing IAM role](https://docs.aws.amazon.com//directoryservice/latest/admin-guide/assign_role.html).
++ [ Create an AWS Managed Microsoft AD](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_ad_getting_started.html#ms_ad_getting_started_create_directory).
++ [Create an IAM user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html) or [create a IAM group](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_groups_create.html).
++ [Create a role](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/create_role.html) that has a trust relationship with Directory Service. For existing IAM roles, you will need to [edit the trust relationship for an existing role](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/edit_trust.html).
++ [Assign your users or groups to an existing IAM role](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/assign_role.html).
 
 **To view AWS Managed Microsoft AD users and group assigned to an IAM role**
 

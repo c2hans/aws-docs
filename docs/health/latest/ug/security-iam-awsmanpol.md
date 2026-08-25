@@ -116,7 +116,7 @@ For a list of changes to the policy, see [AWS Health updates to AWS managed poli
 ## AWS managed policy: AWSHealthFullAccess
 <a name="security-iam-awsmanpol-AWSHealthFullAccess"></a>
 
-AWS Health uses the [AWSHealthFullAccess](https://console.aws.amazon.com//iam/home?#/policies/arn:aws:iam::aws:policy/AWSHealthFullAccess$jsonEditor) AWS managed policy. The policy grants entities (IAM users or roles) access to the AWS Health console. For more information, see [Using the AWS Health console](security_iam_id-based-policy-examples.md#security_iam_id-based-policy-examples-console).
+AWS Health uses the [AWSHealthFullAccess](https://console.aws.amazon.com/iam/home?#/policies/arn:aws:iam::aws:policy/AWSHealthFullAccess$jsonEditor) AWS managed policy. The policy grants entities (IAM users or roles) access to the AWS Health console. For more information, see [Using the AWS Health console](security_iam_id-based-policy-examples.md#security_iam_id-based-policy-examples-console).
 
  **Permissions details**
 

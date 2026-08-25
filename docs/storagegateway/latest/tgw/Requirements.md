@@ -40,6 +40,9 @@ When deploying your gateway on Amazon Elastic Compute Cloud (Amazon EC2), the in
 **Note**
 The Storage Gateway AMI is only compatible with x86-based instances that use Intel or AMD processors. ARM-based instances that use Graviton processors are not supported.
 
+**Note**
+The Storage Gateway AMI requires an Amazon EC2 instance type that supports UEFI boot mode. If you choose an instance type that supports only legacy BIOS boot, the instance cannot start and does not pass its health checks. Before you launch your gateway, confirm that your chosen instance type supports UEFI boot. To check which boot modes an instance type supports, call the [DescribeInstanceTypes](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeInstanceTypes.html) Amazon EC2 API operation. Then review the `SupportedBootModes` field in the response. UEFI boot support might also vary by Availability Zone.
+
 For Tape Gateway, your Amazon EC2 instance should dedicate the following amounts of RAM depending on the cache size you plan to use for your gateway:
 + 16 GiB of reserved RAM for gateways with cache size up to 16 TiB
 + 32 GiB of reserved RAM for gateways with cache size 16 TiB to 32 TiB
@@ -51,7 +54,7 @@ Use one of the following instance types recommended for your gateway type.
 + General-purpose instance family – **m5 or m6** instance type.
 + Compute-optimized instance family – **c5, c6, or c7** instance types. Choose the **2xlarge** instance size or higher to meet the required RAM requirements.
 + Memory-optimized instance family – **r5, r6, or r7** instance types.
-+ Storage-optimized instance family – **i3, i4, or i7** instance types.
++ Storage-optimized instance family – **i4 or i7** instance types.
 
 ### Storage requirements
 <a name="requirements-storage"></a>
@@ -100,7 +103,7 @@ Tape Gateway requires specific ports to be allowed through your network security
 | Web browser |  Storage Gateway VM |  AWS | TCP HTTPS | 443 | ✓ | ✓ | ✓ | AWS Management Console (all other operations) |
 | DNS |  Storage Gateway VM |  Domain Name Service (DNS) server | TCP & UDP DNS | 53 | ✓ | ✓ | ✓ |  Used for communication between a Storage Gateway VM and the DNS server for IP name resolution. |
 | NTP |  Storage Gateway VM |  Network Time Protocol (NTP) server | TCP & UDP NTP | 123 | ✓ | ✓ | ✓ | Used by on-premises systems to synchronize VM time to the host time. A Storage Gateway VM is configured to use the following NTP servers:+ 0.amazon.pool.ntp.org<br />+ 1.amazon.pool.ntp.org<br />+ 2.amazon.pool.ntp.org<br />+ 3.amazon.pool.ntp.orgNot required for gateways hosted on Amazon EC2. |
-| Storage Gateway |  Storage Gateway VM |  Support Endpoint | TCP SSH | 22 | ✓ | ✓ | ✓ | Allows Support to access your gateway to help you with troubleshooting gateway issues. You don't need this port open for the normal operation of your gateway, but it is required for troubleshooting. For a list of support endpoints, see [Support endpoints](https://docs.aws.amazon.com//general/latest/gr/awssupport.html). |
+| Storage Gateway |  Storage Gateway VM |  Support Endpoint | TCP SSH | 22 | ✓ | ✓ | ✓ | Allows Support to access your gateway to help you with troubleshooting gateway issues. You don't need this port open for the normal operation of your gateway, but it is required for troubleshooting. For a list of support endpoints, see [Support endpoints](https://docs.aws.amazon.com/general/latest/gr/awssupport.html). |
 | Storage Gateway |  Storage Gateway VM |  AWS | TCP HTTPS | 443 | ✓ | ✓ | ✓ | Management control |
 | Amazon CloudFront |  Storage Gateway VM | AWS | TCP HTTPS | 443 | ✓ | ✓ | ✓ | For activation |
 | VPC |  Storage Gateway VM | AWS | TCP HTTPS | 443 | ✓ | ✓ | ✓\* | Management control<br />\*Required only when using VPC endpoints |
@@ -183,12 +186,6 @@ Depending on your gateway's AWS Region, replace {{region}} in the service endpoi
 **Standard endpoints**
 These endpoints support IPv4 traffic between your gateway appliance and AWS.
 
-The following service endpoint is required by all gateways for head-bucket operations.
-
-```
-bucket-name.s3.{{region}}.amazonaws.com:443
-```
-
 The following service endpoints are required by all gateways for control path (`anon-cp`, `client-cp`, `proxy-app`) and data path (`dp-1`) operations.
 
 ```
@@ -213,12 +210,6 @@ storagegateway.us-west-2.amazonaws.com:443
 **Dual-stack endpoints**
 These endpoints support both IPv4 and IPv6 traffic between your gateway appliance and AWS.
 
-The following dual-stack service endpoint is required by all gateways for head-bucket operations.
-
-```
-bucket-name.s3.dualstack.{{region}}.amazonaws.com:443
-```
-
 The following dual-stack service endpoints are required by all gateways for control path (activation, controlplane, proxy) and data path (dataplane) operations.
 
 ```
@@ -239,6 +230,45 @@ The following example is a gateway dual-stack service endpoint in the US West (O
 ```
 storagegateway.us-west-2.api.aws:443
 ```
+
+**FIPS endpoints**
+These endpoints support IPv4 traffic between your gateway appliance and AWS, and comply with Federal Information Processing Standards (FIPS).
+
+FIPS gateways require the following service endpoints for control path (`anon-cp`, `client-cp`, `proxy-app`) and data path (`dp-1`) operations.
+
+```
+anon-cp.storagegateway-fips.{{region}}.amazonaws.com:443
+client-cp.storagegateway-fips.{{region}}.amazonaws.com:443
+proxy-app.storagegateway-fips.{{region}}.amazonaws.com:443
+dp-1.storagegateway-fips.{{region}}.amazonaws.com:443
+```
+
+Use the following gateway service endpoint to make API calls.
+
+```
+storagegateway-fips.{{region}}.amazonaws.com:443
+```
+
+**Dual-stack FIPS endpoints**
+These endpoints support both IPv4 and IPv6 traffic between your gateway appliance and AWS, and comply with FIPS.
+
+FIPS gateways require the following dual-stack service endpoints for control path (activation, controlplane, proxy) and data path (dataplane) operations.
+
+```
+activation-storagegateway-fips.{{region}}.api.aws:443
+controlplane-storagegateway-fips.{{region}}.api.aws:443
+proxy-storagegateway-fips.{{region}}.api.aws:443
+dataplane-storagegateway-fips.{{region}}.api.aws:443
+```
+
+Use the following gateway dual-stack service endpoint to make API calls.
+
+```
+storagegateway-fips.{{region}}.api.aws:443
+```
+
+**Note**
+FIPS endpoints are available only in some AWS Regions. For more information, see [Storage Gateway endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/sg.html) in the *AWS General Reference*.
 
 **NTP Servers**
 A Storage Gateway VM requires network access to the following NTP servers.

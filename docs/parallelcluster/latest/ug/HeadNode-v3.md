@@ -477,7 +477,7 @@ If `false`, every user in the head node has access to the head node's IMDS.
 The following users are permitted access to the head node's IMDS:
 + root user
 + cluster administrative user (`pc-cluster-admin` by default)
-+ operating system specific default user (`ec2-user` on Amazon Linux 2, Amazon Linux 2023 and Red Hat, and `ubuntu` on Ubuntu 22.04 and Ubuntu 24.04)
++ operating system specific default user (`ec2-user` on Amazon Linux 2023 and Red Hat, and `ubuntu` on Ubuntu 22.04 and Ubuntu 24.04)
 The default is `true`.
 The `default` users are responsible for ensuring a cluster has the permissions it needs to interact with AWS resources. If you disable `default` user IMDS access, AWS ParallelCluster can't manage the compute nodes and stops working. Don't disable `default` user IMDS access.
 When a user is granted access to the head node's IMDS, they can use the permissions included in the [head node's instance profile](iam-roles-in-parallelcluster-v3.md). For example, they can use these permissions to launch Amazon EC2 instances or to read the password for an AD domain that the cluster is configured to use for authentication.

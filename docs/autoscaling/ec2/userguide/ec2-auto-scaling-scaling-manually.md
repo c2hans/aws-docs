@@ -13,7 +13,7 @@ Sometimes, you may want to temporarily disable scaling policies and scheduled ac
 
 **Topics**
 + [Change the desired capacity of an existing Auto Scaling group](#change-desired-capacity)
-+ [Terminate an instance in your Auto Scaling group (AWS CLI)](#terminate-an-instance-aws-cli)
++ [Terminate instances in your Auto Scaling group (AWS CLI)](#terminate-an-instance-aws-cli)
 
 ## Change the desired capacity of an existing Auto Scaling group
 <a name="change-desired-capacity"></a>
@@ -148,10 +148,12 @@ Notice that `DesiredCapacity` shows the new value. Your Auto Scaling group has l
 
 ------
 
-## Terminate an instance in your Auto Scaling group (AWS CLI)
+## Terminate instances in your Auto Scaling group (AWS CLI)
 <a name="terminate-an-instance-aws-cli"></a>
 
-There are times when you might want to manually scale in your Auto Scaling group but want to terminate a specific instance. You can manually scale in your Auto Scaling group by using the [terminate-instance-in-auto-scaling-group](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/autoscaling/terminate-instance-in-auto-scaling-group.html) command and specifying the ID of the instance you want to terminate and the `--should-decrement-desired-capacity` option as shown in the following example.
+There are times when you might want to manually scale in your Auto Scaling group but want to terminate specific instances. You can terminate one or more instances by using the [terminate-instance-in-auto-scaling-group](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/autoscaling/terminate-instance-in-auto-scaling-group.html) command.
+
+To terminate a single instance, specify the instance ID with the `--instance-id` option and the `--should-decrement-desired-capacity` option as shown in the following example.
 
 ```
 aws autoscaling terminate-instance-in-auto-scaling-group \
@@ -176,6 +178,61 @@ The following is example output, which provides details about the scaling activi
     ]
 }
 ```
+
+To terminate multiple instances in a single request, specify the instance IDs with the `--instance-ids` option and specify the group with the `--auto-scaling-group-name` option. You can terminate up to 100 instances per request. The following example terminates three instances.
+
+```
+aws autoscaling terminate-instance-in-auto-scaling-group \
+  --instance-ids {{i-061c63c5eb45f0416}} {{i-0b11f4eb2b3e987df}} {{i-09b21afe8ef4dab66}} \
+  --auto-scaling-group-name {{my-asg}} \
+  --should-decrement-desired-capacity
+```
+
+The following is example output.
+
+```
+{
+    "Activities": [
+        {
+            "ActivityId": "a1b2c3d4-e5f6-7890-abcd-111111111111",
+            "AutoScalingGroupName": "my-asg",
+            "Description": "Terminating EC2 instance: i-061c63c5eb45f0416",
+            "Cause": "At 2024-01-15T10:30:00Z instance i-061c63c5eb45f0416 was taken out of service in response to a user request, shrinking the capacity from 5 to 4.",
+            "StartTime": "2024-01-15T10:30:00.000000+00:00",
+            "StatusCode": "InProgress",
+            "Progress": 0,
+            "Details": "{\"Subnet ID\":\"subnet-6194ea3b\",\"Availability Zone\":\"us-west-2a\"}"
+        },
+        {
+            "ActivityId": "a1b2c3d4-e5f6-7890-abcd-222222222222",
+            "AutoScalingGroupName": "my-asg",
+            "Description": "Terminating EC2 instance: i-0b11f4eb2b3e987df",
+            "Cause": "At 2024-01-15T10:30:00Z instance i-0b11f4eb2b3e987df was taken out of service in response to a user request, shrinking the capacity from 4 to 3.",
+            "StartTime": "2024-01-15T10:30:00.000000+00:00",
+            "StatusCode": "InProgress",
+            "Progress": 0,
+            "Details": "{\"Subnet ID\":\"subnet-6194ea3b\",\"Availability Zone\":\"us-west-2b\"}"
+        },
+        {
+            "ActivityId": "a1b2c3d4-e5f6-7890-abcd-333333333333",
+            "AutoScalingGroupName": "my-asg",
+            "Description": "Terminating EC2 instance: i-09b21afe8ef4dab66",
+            "Cause": "At 2024-01-15T10:30:00Z instance i-09b21afe8ef4dab66 was taken out of service in response to a user request, shrinking the capacity from 3 to 2.",
+            "StartTime": "2024-01-15T10:30:00.000000+00:00",
+            "StatusCode": "InProgress",
+            "Progress": 0,
+            "Details": "{\"Subnet ID\":\"subnet-6194ea3b\",\"Availability Zone\":\"us-west-2c\"}"
+        }
+    ]
+}
+```
+
+When you use batch termination, note the following behaviors:
++ You can specify up to 100 instances per request.
++ All instances must belong to the Auto Scaling group that you specify with `--auto-scaling-group-name`.
++ If any instance fails validation, the entire request is rejected and no instances are terminated.
++ You cannot specify both `--instance-id` and `--instance-ids` in the same request.
++ Lifecycle hooks fire for each instance in the batch.
 
 This option is not available in the console. However, you can use the **Instances** page of the Amazon EC2 console to terminate an instance in your Auto Scaling group. When you do so, Amazon EC2 Auto Scaling detects that the instance is no longer running and replaces it automatically as part of the health check process. It takes a minute or two after you terminate the instance before a new instance launches. For information about how to terminate an instance, see [Terminate an instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/terminating-instances.html) in the *Amazon EC2 User Guide*.
 

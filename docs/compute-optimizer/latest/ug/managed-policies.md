@@ -258,7 +258,7 @@ This policy includes the following:
 ------
 
 **Note**
-The following policy statement only grants read-only access to Compute Optimizer for a management account of an organization to view org-level recommendations. If you're the delegated administrator and you want to view org-level recommendations, see [ Policies to grant access to Compute Optimizer for a management account of an organization](https://docs.aws.amazon.com//compute-optimizer/latest/ug/security-iam.html#organization-account-access).
+The following policy statement only grants read-only access to Compute Optimizer for a management account of an organization to view org-level recommendations. If you're the delegated administrator and you want to view org-level recommendations, see [ Policies to grant access to Compute Optimizer for a management account of an organization](https://docs.aws.amazon.com/compute-optimizer/latest/ug/security-iam.html#organization-account-access).
 
 ## AWS managed policy: ComputeOptimizerAutomationServiceRolePolicy
 <a name="security-iam-awsmanpol-ComputeOptimizerAutomationServiceRolePolicy"></a>

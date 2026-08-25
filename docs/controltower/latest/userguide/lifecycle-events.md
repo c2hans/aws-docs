@@ -9,8 +9,8 @@ Some events logged by AWS Control Tower are *lifecycle events*. A lifecycle even
 
 **Characteristics of AWS Control Tower lifecycle events**
 + For each lifecycle event, the event log shows whether the originating Control Tower action completed successfully, or failed.
-+ AWS CloudTrail automatically records each lifecycle event as a *non-API AWS service event*. For more information, see [ the AWS CloudTrail User Guide.](https://docs.aws.amazon.com//awscloudtrail/latest/userguide/non-api-aws-service-events.html)
-+ Each lifecycle event also is delivered to the Amazon EventBridge and Amazon CloudWatch Events services. **Note:** To receive lifecycle events in EventBridge, you must have an active AWS CloudTrail trail with logging enabled. For more information about AWS service events delivered via AWS CloudTrail, see [AWS service events delivered via AWS CloudTrail](https://docs.aws.amazon.com//eventbridge/latest/userguide/eb-service-event-cloudtrail.html) in the Amazon EventBridge User Guide.
++ AWS CloudTrail automatically records each lifecycle event as a *non-API AWS service event*. For more information, see [ the AWS CloudTrail User Guide.](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/non-api-aws-service-events.html)
++ Each lifecycle event also is delivered to the Amazon EventBridge and Amazon CloudWatch Events services. **Note:** To receive lifecycle events in EventBridge, you must have an active AWS CloudTrail trail with logging enabled. For more information about AWS service events delivered via AWS CloudTrail, see [AWS service events delivered via AWS CloudTrail](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-service-event-cloudtrail.html) in the Amazon EventBridge User Guide.
 
 **Lifecycle events in AWS Control Tower offer two primary benefits:**
 + Because a lifecycle event registers the completion of an AWS Control Tower action, you can create an Amazon EventBridge rule or Amazon CloudWatch Events rule that can trigger the next steps in your automation workflow, based on the state of the lifecycle event.
@@ -30,7 +30,7 @@ You can view lifecycle events from the **Activities** page in your AWS Control T
 + To navigate to the **Activities** page, choose **Activities** from the left navigation pane.
 + To get more details about a specific event, select the event and then choose the **View details** button at the upper right.
 
- For more information about how to integrate AWS Control Tower lifecycle events into your workflows, see this blog post, [Using lifecycle events to track AWS Control Tower actions and trigger automated workflows](https://aws.amazon.com//blogs/mt/using-lifecycle-events-to-track-aws-control-tower-actions-and-trigger-automated-workflows/).
+ For more information about how to integrate AWS Control Tower lifecycle events into your workflows, see this blog post, [Using lifecycle events to track AWS Control Tower actions and trigger automated workflows](https://aws.amazon.com/blogs/mt/using-lifecycle-events-to-track-aws-control-tower-actions-and-trigger-automated-workflows/).
 
 **Expected behavior of CreateManagedAccount and UpdateManagedAccount lifecycle events**
 

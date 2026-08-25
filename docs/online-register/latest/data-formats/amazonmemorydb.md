@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon MemoryDB provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="memorydb-DescribeAcls"></a>[DescribeAcls](https://docs.aws.amazon.com/memorydb/latest/APIReference/API_DescribeAcls.html) | Grants permissions to retrieve information about access control lists | Read |

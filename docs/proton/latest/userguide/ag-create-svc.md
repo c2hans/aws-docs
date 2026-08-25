@@ -54,7 +54,7 @@ The following procedures show how to use the AWS Proton console or AWS CLI to cr
 
 **Create a service as shown in the following console steps.**
 
-1. In the [AWS Proton console](https://console.aws.amazon.com//proton/), choose **Services**.
+1. In the [AWS Proton console](https://console.aws.amazon.com/proton/), choose **Services**.
 
 1. Choose **Create service**.
 

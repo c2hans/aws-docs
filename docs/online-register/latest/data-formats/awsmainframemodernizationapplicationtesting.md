@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsm
 
 AWS Mainframe Modernization Application Testing provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="apptest-GetTestCase"></a>[GetTestCase](https://docs.aws.amazon.com/apptest/latest/APIReference/API_GetTestCase.html) | Get a test case | Read |

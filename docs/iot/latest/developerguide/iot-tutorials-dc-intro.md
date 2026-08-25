@@ -55,7 +55,7 @@ The tutorials describe the software and hardware required; however, the tutorial
 **A local host computer to download and store files on**
 For the Raspberry Pi, this is usually a personal computer or laptop that can read and write to microSD memory cards. The local host computer must:
     + Be connected to the Internet.
-    + Have the [AWS CLI](https://aws.amazon.com//cli/) installed and configured.
+    + Have the [AWS CLI](https://aws.amazon.com/cli/) installed and configured.
     + Have a web browser that supports the AWS console.
   +
 

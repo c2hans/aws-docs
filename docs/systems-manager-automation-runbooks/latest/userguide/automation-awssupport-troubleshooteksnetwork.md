@@ -20,7 +20,7 @@ Use this runbook to troubleshoot connectivity to the following destination types
 + **DNS**: A domain name, internal or external to the cluster or Amazon VPC.
 
 **Important**
-In addition to the following IAM permissions, the AutomationAssumeRole must have access to the Amazon EKS clusters using the [supported Amazon EKS API access methods](https://docs.aws.amazon.com//eks/latest/userguide/grant-k8s-access.html). For clusters using access entries, the `AmazonEKSViewPolicy` access policy is the minimum required policy.
+In addition to the following IAM permissions, the AutomationAssumeRole must have access to the Amazon EKS clusters using the [supported Amazon EKS API access methods](https://docs.aws.amazon.com/eks/latest/userguide/grant-k8s-access.html). For clusters using access entries, the `AmazonEKSViewPolicy` access policy is the minimum required policy.
 
  [Run this Automation (console)](https://console.aws.amazon.com/systems-manager/automation/execute/AWSSupport-TroubleshootEKSNetwork)
 
@@ -603,6 +603,6 @@ Permissions required for `AWSSupport-CollectEKSLinuxNodeStatistics`:
 <a name="automation-awssupport-troubleshooteksnetwork-references"></a>
 
 Systems Manager Automation
-+ For more information, see [Run an automation](https://docs.aws.amazon.com//systems-manager/latest/userguide/automation-working-executing.html).
-+ For more information, see [Set up Automation](https://docs.aws.amazon.com//systems-manager/latest/userguide/automation-setup.html).
++ For more information, see [Run an automation](https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-working-executing.html).
++ For more information, see [Set up Automation](https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-setup.html).
 + For more information, see [Support Automation Workflows](https://aws.amazon.com/premiumsupport/technology/saw/).

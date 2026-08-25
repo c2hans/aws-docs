@@ -12,6 +12,7 @@ From Apache Kafka version 3.7.x on Amazon MSK, you can create clusters that use 
 **Topics**
 + [ZooKeeper mode](#msk-get-connection-string)
 + [KRaft mode](#kraft-intro)
++ [Migrate from ZooKeeper to KRaft mode](zk-to-kraft-migration.md)
 
 ## ZooKeeper mode
 <a name="msk-get-connection-string"></a>
@@ -94,7 +95,7 @@ To get the Apache ZooKeeper connection string using the API, see [DescribeCluste
 Amazon MSK introduced support for KRaft (Apache Kafka Raft) in Kafka version 3.7.x. The Apache Kafka community developed KRaft to replace [Apache ZooKeeper](#msk-get-connection-string) for metadata management in Apache Kafka clusters. In KRaft mode, cluster metadata is propagated within a group of Kafka controllers, which are part of the Kafka cluster, instead of across ZooKeeper nodes. KRaft controllers are included at no additional cost to you, and require no additional setup or management from you. See [KIP-500](https://cwiki.apache.org/confluence/display/KAFKA/KIP-500%3A+Replace+ZooKeeper+with+a+Self-Managed+Metadata+Quorum) for more information about KRaft.
 
 Here are some points to note about KRaft mode on MSK:
-+ KRaft mode is only available for new clusters. You cannot switch metadata modes once the cluster is created.
++ You can migrate existing ZooKeeper-based clusters to KRaft mode using the `UpdateClusterKafkaVersion` API. For more information, see [Migrate from ZooKeeper to KRaft mode](zk-to-kraft-migration.md).
 + On the MSK console, you can create a Kraft-based cluster by choosing Kafka version 3.7.x and selecting the KRaft checkbox in the cluster creation window.
 + To create a cluster in KRaft mode using the MSK API [`CreateCluster`](https://docs.aws.amazon.com/msk/1.0/apireference/clusters.html#CreateCluster) or [`CreateClusterV2`](https://docs.aws.amazon.com/MSK/2.0/APIReference/v2-clusters.html#CreateClusterV2) operations, you should use `3.7.x.kraft` as the version. Use `3.7.x` as the version to create a cluster in ZooKeeper mode.
 + The number of partitions per broker is the same on KRaft and ZooKeeper based clusters. However, KRaft allows you to host more partitions per cluster by provisioning [more brokers in a cluster](https://docs.aws.amazon.com/msk/latest/developerguide/limits.html).

@@ -50,8 +50,6 @@ Resources created in Amazon Web Services are each uniquely identified with an Am
 
 The following table shows the format that you should use when constructing an ARN for a particular Amazon RDS resource type.
 
-****
-
 | Resource type | ARN format |
 | --- | --- |
 | DB instance  | arn:aws:rds:{{<region>}}:{{<account>}}:db:{{<name>}}<br />For example:<pre>arn:aws:rds:{{us-east-2}}:{{123456789012}}:db:{{my-mysql-instance-1}}</pre> |

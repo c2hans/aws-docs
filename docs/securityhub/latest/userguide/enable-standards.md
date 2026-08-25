@@ -61,7 +61,7 @@ To enable the standard in additional Regions, repeat the preceding steps in each
 ------
 #### [ Security Hub CSPM API ]
 
-To enable a standard programmatically in a single account and Region, use the [BatchEnableStandards](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_BatchEnableStandards.html) operation. Or, if you're using the AWS Command Line Interface (AWS CLI), run the [batch-enable-standards](https://docs.aws.amazon.com/cli/latest/reference/securityhub/batch-enable-standards.html) command.
+To enable a standard programmatically in a single account and Region, use the [BatchEnableStandards](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchEnableStandards.html) operation. Or, if you're using the AWS Command Line Interface (AWS CLI), run the [batch-enable-standards](https://docs.aws.amazon.com/cli/latest/reference/securityhub/batch-enable-standards.html) command.
 
 In your request, use the `StandardsArn` parameter to specify the Amazon Resource Name (ARN) of the standard that you want to enable. Also specify the Region that your request applies to. For example, the following command enables the AWS Foundational Security Best Practices (FSBP) standard:
 
@@ -75,7 +75,7 @@ Where {{arn:aws:securityhub:{{us-east-1::standards/aws-foundational-security-bes
 
 To obtain the ARN for a standard, use the [DescribeStandards](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_DescribeStandards.html) operation or, if you're using the AWS CLI, run the [describe-standards](https://docs.aws.amazon.com/cli/latest/reference/securityhub/describe-standards.html) command.
 
-To first review a list of standards that are currently enabled in your account, you can use the [GetEnabledStandards](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_GetEnabledStandards.html) operation. If you're using the AWS CLI, you can run the [get-enabled-standards](https://docs.aws.amazon.com/cli/latest/reference/securityhub/get-enabled-standards.html) command to retrieve this list.
+To first review a list of standards that are currently enabled in your account, you can use the [GetEnabledStandards](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetEnabledStandards.html) operation. If you're using the AWS CLI, you can run the [get-enabled-standards](https://docs.aws.amazon.com/cli/latest/reference/securityhub/get-enabled-standards.html) command to retrieve this list.
 
 ------
 

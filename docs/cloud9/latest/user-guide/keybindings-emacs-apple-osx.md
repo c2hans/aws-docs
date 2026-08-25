@@ -31,8 +31,6 @@ The following is a list of Emacs keyboard mode keybindings for MacOS operating s
 ## General
 <a name="keybindings-emacs-apple-osx-general"></a>
 
-****
-
 | Description | Keybinding | Command |
 | --- | --- | --- |
 | Add the selection as a watch expression |  `Command-Shift-C`  |  `addwatchfromselection`  |
@@ -75,8 +73,6 @@ The following is a list of Emacs keyboard mode keybindings for MacOS operating s
 ## Tabs
 <a name="keybindings-emacs-apple-osx-tabs"></a>
 
-****
-
 | Description | Keybinding | Command |
 | --- | --- | --- |
 | Close all open tabs in the current pane, except the current tab |  `Option-Control-W`  |  `closeallbutme`  |
@@ -114,8 +110,6 @@ The following is a list of Emacs keyboard mode keybindings for MacOS operating s
 ## Panels
 <a name="keybindings-emacs-apple-osx-panels"></a>
 
-****
-
 | Description | Keybinding | Command |
 | --- | --- | --- |
 | Show the **Go** window in **Go to Anything** mode |  `Command-E\|Command-P`  |  `gotoanything`  |
@@ -128,8 +122,6 @@ The following is a list of Emacs keyboard mode keybindings for MacOS operating s
 
 ## Code Editor
 <a name="keybindings-emacs-apple-osx-code-editor"></a>
-
-****
 
 | Description | Keybinding | Command |
 | --- | --- | --- |
@@ -226,8 +218,6 @@ The following is a list of Emacs keyboard mode keybindings for MacOS operating s
 ## emmet
 <a name="keybindings-emacs-apple-osx-emmet"></a>
 
-****
-
 | Description | Keybinding | Command |
 | --- | --- | --- |
 | Evaluate a simple math expression (such as `2*4` or `10/2`), and output its result |  `Shift-Command-Y`  |  `emmet_evaluate_math_expression`  |
@@ -240,8 +230,6 @@ The following is a list of Emacs keyboard mode keybindings for MacOS operating s
 ## Terminal
 <a name="keybindings-emacs-apple-osx-terminal"></a>
 
-****
-
 | Description | Keybinding | Command |
 | --- | --- | --- |
 | Open a new **Terminal** tab |  `Option-T`  |  `openterminal`  |
@@ -249,8 +237,6 @@ The following is a list of Emacs keyboard mode keybindings for MacOS operating s
 
 ## Run and Debug
 <a name="keybindings-emacs-apple-osx-run-debug"></a>
-
-****
 
 | Description | Keybinding | Command |
 | --- | --- | --- |

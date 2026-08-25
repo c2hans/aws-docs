@@ -75,7 +75,7 @@ Follow these steps to enable AI agents for self-service:
 ## Custom actions for self-service
 <a name="custom-actions-for-connect-ai-agents-self-service"></a>
 
-You can extend AI agents's capabilities by adding custom tools. These tools can:
+You can extend the capabilities of AI agents by adding custom tools. These tools can:
 + Surface next best actions for customers.
 + Delegate tasks to existing Amazon Lex bots.
 + Handle specialized use cases.

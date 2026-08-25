@@ -9,8 +9,6 @@ Amazon Q Business is no longer open to new customers. For capabilities similar t
 
 Amazon Q Business supports data source connector configuration through both the console and the APIs.
 
-****
-
 | API action | API description | Relevant User Guide topic |
 | --- | --- | --- |
 | [CreateDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) | Creates and connects Amazon Q Business data source | [Configuring Amazon Q Business data source connectors](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/data-sources.html) |

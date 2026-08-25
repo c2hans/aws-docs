@@ -25,8 +25,6 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_dynamodb-actions-as-permissions).
 
-****
-
 - **   BatchExecuteStatement  **
   - **SDK client:** dynamodb
   - **IAM action:**  [dynamodb:PartiQLDelete](#list_dynamodb-action-PartiQLDelete)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
@@ -471,8 +469,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
 
-****
-
 - **   [BatchGetItem](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_BatchGetItem.html)  **
   - **Description:** Grants permission to return the attributes of one or more items from one or more tables
   - **Resource types (\*required):** [table\*](#list_dynamodb-resource-table)
@@ -523,7 +519,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [DeleteResourcePolicy](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_DeleteResourcePolicy.html)  **
   - **Description:** Grants permission to delete the resource-based policy attached to the resource
-  - **Resource types (\*required):** [stream\*](#list_dynamodb-resource-stream) / **Condition keys:**
+  - **Resource types (\*required):** [stream\*](#list_dynamodb-resource-stream) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_dynamodb-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [table\*](#list_dynamodb-resource-table) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_dynamodb-aws_ResourceTag___TagKey_)
   - **Access level:** Permissions management, Write
 
@@ -596,7 +592,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
 - **   [DescribeStream](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_streams_DescribeStream.html)  **
   - **Description:** Grants permission to return information about a stream, including the current status of the stream, its Amazon Resource Name (ARN), the composition of its shards, and its corresponding DynamoDB table
   - **Resource types (\*required):** [stream\*](#list_dynamodb-resource-stream)
-  - **Condition keys:**
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_dynamodb-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
 - **   [DescribeTable](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_DescribeTable.html)  **
@@ -644,19 +640,19 @@ You can specify the following actions in the `Action` element of an IAM policy s
 - **   [GetRecords](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_streams_GetRecords.html)  **
   - **Description:** Grants permission to retrieve the stream records from a given shard
   - **Resource types (\*required):** [stream\*](#list_dynamodb-resource-stream)
-  - **Condition keys:**
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_dynamodb-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
 - **   [GetResourcePolicy](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_GetResourcePolicy.html)  **
   - **Description:** Grants permission to view a resource-based policy for a resource
-  - **Resource types (\*required):** [stream\*](#list_dynamodb-resource-stream) / **Condition keys:**
+  - **Resource types (\*required):** [stream\*](#list_dynamodb-resource-stream) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_dynamodb-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [table\*](#list_dynamodb-resource-table) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_dynamodb-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
 - **   [GetShardIterator](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_streams_GetShardIterator.html)  **
   - **Description:** Grants permission to return a shard iterator
   - **Resource types (\*required):** [stream\*](#list_dynamodb-resource-stream)
-  - **Condition keys:**
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_dynamodb-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
 - **   [ImportTable](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_ImportTable.html)  **
@@ -709,7 +705,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [ListTagsOfResource](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_ListTagsOfResource.html)  **
   - **Description:** Grants permission to list all tags on an Amazon DynamoDB resource
-  - **Resource types (\*required):** [stream](#list_dynamodb-resource-stream) / **Condition keys:**
+  - **Resource types (\*required):** [stream\*](#list_dynamodb-resource-stream) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_dynamodb-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [table\*](#list_dynamodb-resource-table) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_dynamodb-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
@@ -745,7 +741,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [PutResourcePolicy](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_PutResourcePolicy.html)  **
   - **Description:** Grants permission to attach a resource-based policy to the resource
-  - **Resource types (\*required):** [stream\*](#list_dynamodb-resource-stream) / **Condition keys:**
+  - **Resource types (\*required):** [stream\*](#list_dynamodb-resource-stream) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_dynamodb-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [table\*](#list_dynamodb-resource-table) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_dynamodb-aws_ResourceTag___TagKey_)
   - **Access level:** Permissions management, Write
 
@@ -781,13 +777,13 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [TagResource](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_TagResource.html)  **
   - **Description:** Grants permission to associate a set of tags with an Amazon DynamoDB resource
-  - **Resource types (\*required):** [stream](#list_dynamodb-resource-stream) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_dynamodb-aws_RequestTag___TagKey_)<br />[aws:TagKeys](#list_dynamodb-aws_TagKeys)
+  - **Resource types (\*required):** [stream\*](#list_dynamodb-resource-stream) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_dynamodb-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_dynamodb-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_dynamodb-aws_TagKeys)
   - **Resource types (\*required):** [table\*](#list_dynamodb-resource-table) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_dynamodb-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_dynamodb-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_dynamodb-aws_TagKeys)
   - **Access level:** Tagging, Write
 
 - **   [UntagResource](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_UntagResource.html)  **
   - **Description:** Grants permission to remove the association of tags from an Amazon DynamoDB resource
-  - **Resource types (\*required):** [stream](#list_dynamodb-resource-stream) / **Condition keys:** [aws:TagKeys](#list_dynamodb-aws_TagKeys)
+  - **Resource types (\*required):** [stream\*](#list_dynamodb-resource-stream) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_dynamodb-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_dynamodb-aws_TagKeys)
   - **Resource types (\*required):** [table\*](#list_dynamodb-resource-table) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_dynamodb-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_dynamodb-aws_TagKeys)
   - **Access level:** Tagging, Write
 
@@ -849,8 +845,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 <a name="list_dynamodb-permission-only-actions"></a>
 
 The following actions are defined by Amazon DynamoDB but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
-
-****
 
 - **   [AssociateTableReplica](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/globaltables_MA_security.html)  **
   - **Description:** Grants permission to create multi account global table replica
@@ -959,8 +953,6 @@ The following actions are defined by Amazon DynamoDB but are not directly invoca
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
 
-****
-
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
 |  [backup](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/backuprestore_HowItWorks.html)  | arn:${Partition}:dynamodb:${Region}:${Account}:table/${TableName}/backup/${BackupName} |   |
@@ -968,15 +960,13 @@ The following resource types are defined by this service and can be used in the 
 |  [global-table](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/globaltables_HowItWorks.html)  | arn:${Partition}:dynamodb::${Account}:global-table/${GlobalTableName} |   |
 |  [import](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/S3DataImport.HowItWorks.html)  | arn:${Partition}:dynamodb:${Region}:${Account}:table/${TableName}/import/${ImportName} |   |
 |  [index](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.CoreComponents.html#HowItWorks.CoreComponents.PrimaryKey)  | arn:${Partition}:dynamodb:${Region}:${Account}:table/${TableName}/index/${IndexName} | [aws:ResourceTag/${TagKey}](#list_dynamodb-aws_ResourceTag___TagKey_) |
-|  [stream](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.CoreComponents.html#HowItWorks.CoreComponents.Streams)  | arn:${Partition}:dynamodb:${Region}:${Account}:table/${TableName}/stream/${StreamLabel} |   |
+|  [stream](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.CoreComponents.html#HowItWorks.CoreComponents.Streams)  | arn:${Partition}:dynamodb:${Region}:${Account}:table/${TableName}/stream/${StreamLabel} | [aws:ResourceTag/${TagKey}](#list_dynamodb-aws_ResourceTag___TagKey_) |
 |  [table](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.CoreComponents.html#HowItWorks.CoreComponents.TablesItemsAttributes)  | arn:${Partition}:dynamodb:${Region}:${Account}:table/${TableName} | [aws:ResourceTag/${TagKey}](#list_dynamodb-aws_ResourceTag___TagKey_) |
 
 ## Condition keys for Amazon DynamoDB
 <a name="list_dynamodb-policy-keys"></a>
 
 Amazon DynamoDB defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

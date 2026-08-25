@@ -83,7 +83,7 @@ The *topic name* is the MQTT topic that your device subscribes to.
 
 1. Under **Select trusted entity**, choose **Custom trust policy**.
 
-1. Enter the following trust policy into the **Custom trust policy** box. To protect against the confused deputy problem, add the global condition context keys `[aws:SourceArn](https://docs.aws.amazon.com//IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourcearn)` and `[aws:SourceAccount](https://docs.aws.amazon.com//IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourceaccount)` to the policy.
+1. Enter the following trust policy into the **Custom trust policy** box. To protect against the confused deputy problem, add the global condition context keys `[aws:SourceArn](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourcearn)` and `[aws:SourceAccount](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourceaccount)` to the policy.
 **Important**
 Your `aws:SourceArn` must comply with the `format: arn:aws:iotdeviceadvisor:{{region:account-id}}:*.` Make sure that `{{region}}` matches your AWS IoT Region and `{{account-id}}` matches your customer account ID. For more information, see [Cross-service confused deputy prevention](https://docs.aws.amazon.com/iot/latest/developerguide/security-best-practices.html#cross-service-confused-deputy-prevention-DA).
 ****
@@ -158,7 +158,6 @@ We recommend that you create an IAM user to use when you run Device Advisor test
 1. Users need programmatic access if they want to interact with AWS outside of the AWS Management Console. The way to grant programmatic access depends on the type of user that's accessing AWS.
 
    To grant users programmatic access, choose one of the following options.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot/latest/developerguide/device-advisor-setting-up.html)
 
 1. Choose **Next: Permissions**.
@@ -166,13 +165,13 @@ We recommend that you create an IAM user to use when you run Device Advisor test
 1. To provide access, add permissions to your users, groups, or roles:
    + Users and groups in AWS IAM Identity Center:
 
-     Create a permission set. Follow the instructions in [Create a permission set](https://docs.aws.amazon.com//singlesignon/latest/userguide/howtocreatepermissionset.html) in the *AWS IAM Identity Center User Guide*.
+     Create a permission set. Follow the instructions in [Create a permission set](https://docs.aws.amazon.com/singlesignon/latest/userguide/howtocreatepermissionset.html) in the *AWS IAM Identity Center User Guide*.
    + Users managed in IAM through an identity provider:
 
-     Create a role for identity federation. Follow the instructions in [Create a role for a third-party identity provider (federation)](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_roles_create_for-idp.html) in the *IAM User Guide*.
+     Create a role for identity federation. Follow the instructions in [Create a role for a third-party identity provider (federation)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-idp.html) in the *IAM User Guide*.
    + IAM users:
-     + Create a role that your user can assume. Follow the instructions in [Create a role for an IAM user](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_roles_create_for-user.html) in the *IAM User Guide*.
-     + (Not recommended) Attach a policy directly to a user or add a user to a user group. Follow the instructions in [Adding permissions to a user (console)](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_users_change-permissions.html#users_change_permissions-add-console) in the *IAM User Guide*.
+     + Create a role that your user can assume. Follow the instructions in [Create a role for an IAM user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-user.html) in the *IAM User Guide*.
+     + (Not recommended) Attach a policy directly to a user or add a user to a user group. Follow the instructions in [Adding permissions to a user (console)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_change-permissions.html#users_change_permissions-add-console) in the *IAM User Guide*.
 
 1. Enter the name of the custom-managed policy that you created in the search box. Then, select the check box for **Policy name**.
 

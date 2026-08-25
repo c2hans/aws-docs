@@ -61,7 +61,7 @@ The following is an overview of how to set up a data source with `UserGroupResol
 
 1. If you want to use token-based user access control to filter search results on user context, set [UserContextPolicy](https://docs.aws.amazon.com/kendra/latest/APIReference/API_UpdateIndex.html#Kendra-UpdateIndex-request-UserContextPolicy) to `USER_TOKEN` when you call `UpdateIndex`. Otherwise, Amazon Kendra crawls the access control list for each of your documents for most data source connectors. You can also filter search results on user context in the [Query](https://docs.aws.amazon.com/kendra/latest/APIReference/API_Query.html) API by providing user and group information in `UserContext`. You can also map users to their groups using [PutPrincipalMapping](https://docs.aws.amazon.com/kendra/latest/APIReference/API_PutPrincipalMapping.html) so that you only need to provide the user ID when you issue the query.
 
-1. Create an [IAM role](https://docs.aws.amazon.com//kendra/latest/dg/iam-roles.html#iam-roles-ds) that gives permission to access your data source.
+1. Create an [IAM role](https://docs.aws.amazon.com/kendra/latest/dg/iam-roles.html#iam-roles-ds) that gives permission to access your data source.
 
 1. [Configure](https://docs.aws.amazon.com/kendra/latest/APIReference/API_DataSourceConfiguration.html) your data source. You must provide the required connection information to connect to your data source.
 

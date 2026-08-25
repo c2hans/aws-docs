@@ -25,8 +25,6 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_route53profiles-actions-as-permissions).
 
-****
-
 - **   AssociateProfile  **
   - **IAM action:**  [route53profiles:AssociateProfile](#list_route53profiles-action-AssociateProfile)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [route53profiles:TagResource](#list_route53profiles-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
@@ -123,8 +121,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
 <a name="list_route53profiles-actions-as-permissions"></a>
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
-
-****
 
 - **   [AssociateProfile](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53profiles_AssociateProfile.html)  **
   - **Description:** Grants permission to associates a Profile to the customer VPC
@@ -227,8 +223,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 The following actions are defined by Amazon Route 53 Profiles but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 - **   [GetProfilePolicy](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/sharing-profiles.html)  **
   - **Description:** Grants permission to read the RAM access control policy for a Profile
   - **Resource types (\*required):** [profile\*](#list_route53profiles-resource-profile)
@@ -246,8 +240,6 @@ The following actions are defined by Amazon Route 53 Profiles but are not direct
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
 
-****
-
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
 |  [profile](https://docs.aws.amazon.com/Route53/latest/APIReference/#access-control-resources)  | arn:${Partition}:route53profiles:${Region}:${Account}:profile/${ResourceId} | [aws:ResourceTag/${TagKey}](#list_route53profiles-aws_ResourceTag___TagKey_) |
@@ -257,8 +249,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_route53profiles-policy-keys"></a>
 
 Amazon Route 53 Profiles defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

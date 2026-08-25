@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/iot-expresslink/archive/v1.1.1/programme
 
 The following table describes important changes to the AWS IoT ExpressLink Programmer's Guide starting with v1.0. We also update the documentation to address any errors found or feedback received.
 
-****
-
 | Change | Description | Date |
 | --- | --- | --- |
 | version 1.0 | Initial release. | June 20, 2022 |

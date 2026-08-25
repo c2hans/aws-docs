@@ -22,8 +22,6 @@ PROCEDURE import_xtts_metadata(
 ## Parameters
 <a name="rdsadmin_transport_util_import_xtts_metadata-parameters"></a>
 
-****
-
 | Parameter name | Data type | Default | Required | Description |
 | --- | --- | --- | --- | --- |
 | `p_datapump_metadata_file` | `SYS.DBA_DATA_FILES.FILE_NAME%TYPE` | — | Yes | The name of the Oracle Data Pump file that contains the metadata for your transportable tablespaces. |

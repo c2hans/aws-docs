@@ -18,7 +18,7 @@ You can view the instances types that support EBS optimization in each Region.
 
 1. Add the filter **EBS optimization support = default**.
 
-1. (Optional) Click the **Preferences** icon and then turn on the relevant columns, such as **EBS Maximum IOPS** and **EBS Baseline IOPS**.
+1. (Optional) Choose the **Preferences** icon and then turn on the relevant columns, such as **EBS Maximum IOPS** and **EBS Baseline IOPS**.
 
 1. (Optional) Add filters to further scope to specific instance types of interest.
 

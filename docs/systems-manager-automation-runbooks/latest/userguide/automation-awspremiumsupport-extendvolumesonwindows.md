@@ -10,9 +10,9 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 The `AWSPremiumSupport-ExtendVolumesOnWindows` runbook extends the Amazon Elastic Block Store (Amazon EBS) volumes, their partitions, and filesystems on a target Amazon Elastic Compute Cloud (Amazon EC2) instance.
 
 **Important considerations**
-**Operation Impact and Volume States**: Amazon EBS volume modifications occur in three phases: `modifying`, `optimizing`, and `completed`. This automation proceeds with filesystem extension when the volume reaches the `optimizing` state. During the `optimizing` state you might experience temporary performance impact and potential filesystem-level disruptions during partition resizing. You can [Monitor the progress of Amazon EBS volume modifications](https://docs.aws.amazon.com//ebs/latest/userguide/monitoring-volume-modifications.html).
+**Operation Impact and Volume States**: Amazon EBS volume modifications occur in three phases: `modifying`, `optimizing`, and `completed`. This automation proceeds with filesystem extension when the volume reaches the `optimizing` state. During the `optimizing` state you might experience temporary performance impact and potential filesystem-level disruptions during partition resizing. You can [Monitor the progress of Amazon EBS volume modifications](https://docs.aws.amazon.com/ebs/latest/userguide/monitoring-volume-modifications.html).
 **Cost and Limitations**: Increasing an Amazon EBS volume size will result in higher monthly storage costs. For more information, see the [Amazon EBS Pricing](https://aws.amazon.com/ebs/pricing). The backup AMI and associated snapshots created by this runbook will incur additional charges based on their size and the length of time that you keep them. For some volume types, if you need to maintain the same IOPS per GB ratio after expansion, you may need to modify the provisioned IOPS.
-**Backup and Recovery**: The runbook creates a backup AMI before making any changes to the volumes. The AMI and associated snapshots are not automatically removed from your account. You should manually remove these backups if no longer required. In case of failure, volumes can be recovered from the snapshots of the associated AMI as described in [Replace an Amazon EBS volume using a snapshot](https://docs.aws.amazon.com//AWSEC2/latest/UserGuide/ebs-restoring-volume.html).
+**Backup and Recovery**: The runbook creates a backup AMI before making any changes to the volumes. The AMI and associated snapshots are not automatically removed from your account. You should manually remove these backups if no longer required. In case of failure, volumes can be recovered from the snapshots of the associated AMI as described in [Replace an Amazon EBS volume using a snapshot](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-restoring-volume.html).
 
  **How does it work?**
 
@@ -148,7 +148,7 @@ Follow these steps to configure the automation:
 
 Systems Manager Automation
 + [Run this Automation (console)](https://console.aws.amazon.com/systems-manager/documents/AWSPremiumSupport-ExtendVolumesOnWindows/description)
-+ [Run an automation](https://docs.aws.amazon.com//systems-manager/latest/userguide/automation-working-executing.html)
-+ [Setting up an Automation](https://docs.aws.amazon.com//systems-manager/latest/userguide/automation-setup.html)
++ [Run an automation](https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-working-executing.html)
++ [Setting up an Automation](https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-setup.html)
 + [Support Automation Workflows](https://aws.amazon.com/premiumsupport/technology/saw/)
-+ [Request Amazon EBS volume modifications](https://docs.aws.amazon.com//AWSEC2/latest/UserGuide/requesting-ebs-volume-modifications.html)
++ [Request Amazon EBS volume modifications](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/requesting-ebs-volume-modifications.html)

@@ -24,7 +24,7 @@ For help finding your instance name, see [Find your Connect Customer instance na
 ## Option 2: Embed Cases into a custom agent application
 <a name="cases-access-embed"></a>
 
-When you embed your Contact Control Panel (CCP), you have the option of showing or hiding the pre-built CCP user interface. For example, you may want to develop a custom agent application that has a user interface you design, with customized buttons to accept and reject calls. Or, you may want to embed the pre-built CCP that's included with Connect Customer into another custom app.
+When you embed your Contact Control Panel (CCP), you have the option of showing or hiding the pre-built CCP user interface. For example, you might want to develop a custom agent application that has a user interface you design, with customized buttons to accept and reject calls. Or, you might want to embed the pre-built CCP that's included with Connect Customer into another custom app.
 
  You can display the pre-built CCP user interface, or hide it and build your own. In both scenarios, you can incorporate Cases into your agent application by using public APIs provided by Connect Customer. These APIs are built to provide you the flexibility to create the functionality and user experience that you want. For more information, see the [Cases API documentation](https://docs.aws.amazon.com/cases/latest/APIReference/Welcome.html).
 

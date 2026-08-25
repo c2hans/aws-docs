@@ -10,7 +10,7 @@ Use the following information to help you diagnose and fix common issues that yo
 ## I'm not authorized to perform an action in Amazon Connect Decisions
 <a name="troubleshooting-iam-not-authorized"></a>
 
-If the AWS Management Console that you're not authorized to perform an action, then you must contact your administrator for assistance. Your administrator is the person that provided you with your user name and password.
+If the AWS Management Console tells you that you're not authorized to perform an action, then you must contact your administrator for assistance. Your administrator is the person that provided you with your user name and password.
 
 The following example error occurs when the `mateojackson` IAM user tries to use the console to view details about a fictional `my-example-widget` resource but doesn't have the fictional `scn:GetWidget` permissions.
 

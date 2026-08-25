@@ -19,7 +19,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
-  "[HttpRequest](#cfn-mediatailor-playbackconfiguration-addecisionserverconfiguration-httprequest)" : {{HttpRequest}}
+  "[HttpRequest](#cfn-mediatailor-playbackconfiguration-addecisionserverconfiguration-httprequest)" : {{HttpRequest}},
+  "[VastResponse](#cfn-mediatailor-playbackconfiguration-addecisionserverconfiguration-vastresponse)" : {{VastResponse}}
 }
 ```
 
@@ -29,6 +30,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
   [HttpRequest](#cfn-mediatailor-playbackconfiguration-addecisionserverconfiguration-httprequest): {{
     HttpRequest}}
+  [VastResponse](#cfn-mediatailor-playbackconfiguration-addecisionserverconfiguration-vastresponse): {{
+    VastResponse}}
 ```
 
 ## Properties
@@ -38,4 +41,10 @@ To declare this entity in your CloudFormation template, use the following syntax
 The HTTP request configuration parameters for the ad decision server.
 *Required*: Yes
 *Type*: [HttpRequest](aws-properties-mediatailor-playbackconfiguration-httprequest.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`VastResponse`  <a name="cfn-mediatailor-playbackconfiguration-addecisionserverconfiguration-vastresponse"></a>
+The settings that control how MediaTailor processes VAST responses from the ad decision server.
+*Required*: No
+*Type*: [VastResponse](aws-properties-mediatailor-playbackconfiguration-vastresponse.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

@@ -9,8 +9,6 @@ Conformance packs provide a general-purpose compliance framework designed to ena
 
 The following provides a sample mapping between the Federal Risk and Authorization Management Program (FedRAMP) Low Baseline Controls and AWS managed Config rules. Each Config rule applies to a specific AWS resource, and relates to one or more FedRAMP controls. A FedRAMP control can be related to multiple Config rules. Refer to the table below for more detail and guidance related to these mappings.
 
-****
-
 | Control ID  | Control Description  | AWS Config Rule  | Guidance  |
 | --- | --- | --- | --- |
 | AC-2 | ACCOUNT MANAGEMENT | [codebuild-project-logging-enabled](https://docs.aws.amazon.com/config/latest/developerguide/codebuild-project-logging-enabled.html) | Ensure AWS CodeBuild project logging is enabled so that your build output logs are sent to either Amazon CloudWatch or Amazon Simple Storage Service (Amazon S3). Build output logs provide detailed information about your build project. |

@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsm
 
 AWS Marketplace Vendor Insights provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="vendor-insights-GetDataSource"></a>[GetDataSource](https://docs.aws.amazon.com/marketplace/latest/userguide/vendor-insights-seller-controlling-access.html) | Retrieve the details of an existing data source | Read |

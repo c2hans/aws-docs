@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsb
 
 AWS Billing Console provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="aws-portal-GetConsoleActionSetEnforced"></a>[GetConsoleActionSetEnforced](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html#user-permissions) | View whether existing or fine-grained IAM actions are being used to control authorization to Billing, Cost Management, and Account consoles | Read |

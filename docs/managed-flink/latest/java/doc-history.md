@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/doc-history.ht
 
 The following table describes the important changes to the documentation since the last release of Managed Service for Apache Flink.
 
-****
-
 | Change | Description | Date |
 | --- | --- | --- |
 | Support for Apache Flink version 2.2 | Amazon Managed Service for Apache Flink now supports Apache Flink version 2.2. This is a major version upgrade with breaking changes. Review breaking changes and new features in [Amazon Managed Service for Apache Flink 2.2](flink-2-2.md). | March 31, 2026 |
@@ -19,9 +17,9 @@ The following table describes the important changes to the documentation since t
 | Support for Apache Flink 1.11.1 | Managed Service for Apache Flink now supports applications that use Apache Flink 1.11.1. Create Kinesis Data Analytics applications using the Apache Flink Table API. For more information, see [Create an application](how-creating-apps.md).  | November 19, 2020 |
 | Apache Flink Dashboard | Use the Apache Flink Dashboard to monitor application health and performance. For more information, see [Use the Apache Flink Dashboard](how-dashboard.md).  | November 19, 2020 |
 | EFO Consumer | Create applications that use an Enhanced Fan-Out (EFO) consumer to read from a Kinesis Data Stream. For more information, see [EFO Consumer](earlier.md#examples-efo).  | October 6, 2020 |
-| Apache Beam | Create applications that use Apache Beam to process streaming data. For more information, see [Use CloudFormationCreating an application using Apache Beam](examples-beam.md).  | September 15, 2020 |
+| Apache Beam | Create applications that use Apache Beam to process streaming data. For more information, see [Use CloudFormation](examples-beam.md).  | September 15, 2020 |
 | Performance | How to troubleshoot application performance issues, and how to create a performant application. For more information, see [](performance.md).  | July 21, 2020 |
-| Custom Keystore | How to access an Amazon MSK cluster that uses a custom keystore for encryption in transit. For more information, see [Custom TruststoreLegacy SourceFunction APIs](earlier.md#example-keystore).  | June 10, 2020 |
+| Custom Keystore | How to access an Amazon MSK cluster that uses a custom keystore for encryption in transit. For more information, see [Custom Truststore](earlier.md#example-keystore).  | June 10, 2020 |
 | CloudWatch Alarms | Recommendations for creating CloudWatch alarms with Managed Service for Apache Flink. For more information, see [](monitoring-metrics-alarms.md).  | June 5, 2020 |
 | New CloudWatch Metrics | Managed Service for Apache Flink now emits 22 metrics to Amazon CloudWatch Metrics. For more information, see [](metrics-dimensions.md).  | May 12, 2020 |
 | Custom CloudWatch Metrics | Define application-specific metrics and emit them to Amazon CloudWatch Metrics. For more information, see [](monitoring-metrics-custom.md).  | May 12, 2020 |

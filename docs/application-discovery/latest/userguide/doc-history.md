@@ -30,8 +30,6 @@ The following table describes important changes to the *Application Discovery Se
 
 The following table describes documentation releases for the *Application Discovery Service User Guide* before January 18, 2019:
 
-****
-
 | Change | Description | Date |
 | --- | --- | --- |
 | New Feature | Updated docs to support data exploration in Amazon Athena and added Troubleshooting chapter. | August 09, 2018 |

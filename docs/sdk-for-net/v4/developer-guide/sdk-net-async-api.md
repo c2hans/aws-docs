@@ -62,4 +62,7 @@ private static async Task<ListBucketsResponse> ListBucketsAsync()
 
 Notice the special `Task<>` syntax that's needed in `Main` when you use this pattern. In addition, you must use the **`Result`** member of the response to get the data.
 
-You can see full examples of asynchronous calls to AWS service clients in the [Creating a simple application](quick-start.md) section ([Simple cross-platform app](quick-start-s3-1-cross.md) and [Simple Windows-based app](quick-start-s3-1-winvs.md)) and in [Guided code examplesHigh-level libraries and frameworks](tutorials-examples.md).
+**Warning**
+Blocking on an asynchronous call with `Result`, `Wait()`, or `GetAwaiter().GetResult()` is a *sync-over-async* pattern. It is acceptable only in a simple console `Main` that has no `SynchronizationContext`. In ASP.NET, Windows Forms, WPF, and Blazor WebAssembly, this pattern can starve the thread pool or deadlock. Either outcome causes your application to hang. Prefer declaring `Main` as `async` and using `await`, as shown in the first example. For details, see [Use async/await correctly](net-dg-performance.md#net-dg-performance-async).
+
+You can see full examples of asynchronous calls to AWS service clients in the [Creating a simple application](quick-start.md) section ([Simple cross-platform app](quick-start-s3-1-cross.md) and [Simple Windows-based app](quick-start-s3-1-winvs.md)) and in [Guided code examples](tutorials-examples.md).

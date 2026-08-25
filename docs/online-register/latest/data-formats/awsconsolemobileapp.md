@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsc
 
 AWS Management Console Mobile App provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="consoleapp-GetDeviceIdentity"></a>[GetDeviceIdentity](https://docs.aws.amazon.com/consolemobileapp/latest/userguide/permissions-policies.html) | Retrieve the device identity for a Console Mobile App device | Read |

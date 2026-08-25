@@ -45,8 +45,6 @@ You can tag EC2 instances in bulk. Use [Tag Editor](https://docs.aws.amazon.com/
 
 This Quick Start template configures Resource Tagger to add the tag `ams:rt:ams-managed=true` to all EC2 instances in the account, excluding instances that you add the `ExcludeFromAMSQuickStartMonitoring=true` tag to. Use the following parameters to control the optional parts of this stack according to your requirements:
 
-****
-
 - **EnableBackup**
   - **Value:** 'true' (default) / **Effect:** All AMS-managed EC2 instances (`ams:rt:ams-managed=true`) are tagged with `ams:rt:backup-orchestrator=true` for backup daily at 4AM UTC as per the default [AMS Backup Plan](https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/acc-backup-select-plan.html#acc-backup-plan-default).<br />For all RDS instances and clusters, the template applies the `ams:rt:backup-orchestrator-enhanced=true` ["continuous backup"](https://docs.aws.amazon.com/aws-backup/latest/devguide/point-in-time-recovery.html#point-in-time-recovery-rds) with [maximum retention(31 days)](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingWithAutomatedBackups.BackupRetention.html) as per the [Enhanced backup plan](https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/acc-backup-select-plan.html#acc-backup-plan-enhanced).<br />If this changes your PITR retention period, the database might be restarted in some cases, for example if there are other pending configuration updates.
   - **Value:** 'false' / **Effect:** No instances are targeted for backup by this quick start template.

@@ -23,7 +23,7 @@ To get started, you need the following:
 + A registered domain name. You can use Amazon Route 53 as your domain registrar, or you can use a different registrar.
 + Route 53 as the DNS service for the domain. If you register your domain name by using Route 53, we automatically configure Route 53 as the DNS service for the domain.
 
-  For information about using Route 53 as the DNS service provider for your domain, see [Making Amazon Route 53 the DNS service for an existing domainMaking Route 53 the DNS service for an existing domain](MigratingDNS.md).
+  For information about using Route 53 as the DNS service provider for your domain, see [Making Amazon Route 53 the DNS service for an existing domain](MigratingDNS.md).
 + Associated the custom domain to your App Runner service. For more information, see [Managing custom domain names for App Runner](https://docs.aws.amazon.com/apprunner/latest/dg/manage-custom-domains.html).
 + Configure the certificate validation record returned by App Runner to you Route 53 hosted zone to start the domain validation process. For more information, see [DNS validation in the AWS Certificate Manager](https://docs.aws.amazon.com/acm/latest/userguide/dns-validation.html) in the *AWS Certificate Manager User Guide.*
 

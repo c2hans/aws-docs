@@ -9,8 +9,6 @@ Amazon Q Business is no longer open to new customers. For capabilities similar t
 
 The following table gives an overview of the Amazon Q Business ServiceNow Online connector and its supported features.
 
-****
-
 - ****Security****
   - **Feature:** Authentication type / **Support:** Basic, OAuth 2.0 with Resource Owner Password Flow
   - **Feature:** Authentication credentials / **Support:** +  ServiceNow Online host URL <br />+  User name <br />+  Password <br />+  ServiceNow Online version  +  ServiceNow Online host URL <br />+  User name <br />+  Password <br />+  Client ID <br />+  Client secret <br />+  ServiceNow Online version   ServiceNow Online admin privileges required.

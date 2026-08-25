@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 # CreateCapacityProvider
 <a name="API_CreateCapacityProvider"></a>
 
-Creates a capacity provider. A capacity provider defines the Amazon EC2 infrastructure for AgentCore Runtime, including the operating system, allowed instance types, networking, and storage. You provide the IAM role that AgentCore uses to launch and manage the instances.
+Creates a capacity provider. A capacity provider defines the Amazon EC2 infrastructure for AgentCore Runtime, including the operating system, allowed instance types, networking, and storage. It also specifies the IAM permissions that AgentCore uses to manage those instances.
 
 The capacity provider name must be unique within your account. After you create the capacity provider, it enters a `CREATING` state and transitions to `READY` when it is available for use.
 
@@ -54,7 +54,7 @@ Type: [ComputeConfiguration](API_ComputeConfiguration.md) object
 Required: Yes
 
  ** [description](#API_CreateCapacityProvider_RequestSyntax) **   <a name="bedrockagentcorecontrol-CreateCapacityProvider-request-description"></a>
-An optional description of the capacity provider. If you do not specify a description, the service creates the capacity provider without one.
+An optional description of the capacity provider. If you don't specify a description, the service creates the capacity provider without one.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 4096.
 Required: No
@@ -72,7 +72,7 @@ Type: [PermissionsConfiguration](API_PermissionsConfiguration.md) object
 Required: Yes
 
  ** [tags](#API_CreateCapacityProvider_RequestSyntax) **   <a name="bedrockagentcorecontrol-CreateCapacityProvider-request-tags"></a>
-A map of tag keys and values to associate with the capacity provider. If you do not specify tags, the capacity provider is created with no tags.
+A map of tag keys and values to associate with the capacity provider. If you don't specify tags, the capacity provider is created with no tags.
 Type: String to string map
 Map Entries: Minimum number of 0 items. Maximum number of 50 items.
 Key Length Constraints: Minimum length of 1. Maximum length of 128.

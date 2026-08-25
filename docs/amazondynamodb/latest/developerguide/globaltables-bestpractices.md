@@ -23,7 +23,7 @@ You should enable deletion protection on global table replicas you want protecte
 CloudFormation does not currently support the coordination of multi-Region resources like global tables across stacks. If you define each replica of a global table in a separate Regional stack, you will encounter errors due to detected drift across stacks when performing replica updates. To avoid this issue, you should choose one Region as the reference Region for deploying your global tables and define all of your global table's replicas in that Region's stack.
 
 **Important**
-You cannot convert a resource of type `AWS::DynamoDB::Table` into a resource of type `AWS::DynamoDB::GlobalTable` by changing its type in your template. Attempting to convert a single-Region table to a global table by changing its CloudFormation resource type may result in the deletion of your DynamoDB table.
+You cannot convert a resource of type `AWS::DynamoDB::Table` into a resource of type `AWS::DynamoDB::GlobalTable` by changing its type in your template. Attempting to convert a single-Region table to a global table by changing its CloudFormation resource type might result in the deletion of your DynamoDB table.
 
 You can use the `AWS::DynamoDB::GlobalTable` resource to create a table in a single Region. This table will be deployed like any other single-Region table. If you later update the stack to add other Regions to a resource, replicas will be added to the table and it will safely be converted to a global table.
 
@@ -43,7 +43,7 @@ When you add a replica in a new Region to a global table, the provisioned capaci
 ## Backups and Point-in-Time Recovery
 <a name="globaltables-bestpractices-backups"></a>
 
-Enabling automated backups and Point-in-Time Recovery (PITR) for one replica in a global table may be sufficient to meet your disaster recovery objectives. Replica backups created with AWS-Backup can be automatically replicated across Regions for greater resilience. Consider your disaster recovery plan goals in the context of multi-Region high availability when choosing your backup and PITR enablement strategy.
+Enabling automated backups and Point-in-Time Recovery (PITR) for one replica in a global table might be sufficient to meet your disaster recovery objectives. Replica backups created with AWS-Backup can be automatically replicated across Regions for greater resilience. Consider your disaster recovery plan goals in the context of multi-Region high availability when choosing your backup and PITR enablement strategy.
 
 ## Designing for multi-Region high availability
 <a name="globaltables-bestpractices-multiregion"></a>

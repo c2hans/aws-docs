@@ -55,7 +55,7 @@ In this tutorial, the VPC setup contains two VPCs, both with public and private 
 
 **To set up Transit Gateway in the environment owner account**
 
-1. [Create a Transit Gateway](https://docs.aws.amazon.com//vpc/latest/tgw/tgw-transit-gateways.html#create-tgw) in this account with all the defaults. For more information, see [Getting started with transit gateways](https://docs.aws.amazon.com/vpc/latest/tgw/tgw-getting-started.html) in the *Amazon VPC Transit Gateways user guide*.
+1. [Create a Transit Gateway](https://docs.aws.amazon.com/vpc/latest/tgw/tgw-transit-gateways.html#create-tgw) in this account with all the defaults. For more information, see [Getting started with transit gateways](https://docs.aws.amazon.com/vpc/latest/tgw/tgw-getting-started.html) in the *Amazon VPC Transit Gateways user guide*.
 
 1. Create a VPC attachment to the VPC with all the defaults.
 

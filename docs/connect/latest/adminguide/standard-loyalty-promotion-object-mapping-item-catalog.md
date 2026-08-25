@@ -22,7 +22,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/standard-loyal
 | Attributes | Map<String, String> | Additional Item Attributes |
 
 **Note**
-You can only delete domain object type via APIs. You can delete item catalog integration after all recommenders have been deleted first. This prevents data dependency issues.
+You can only delete domain object type through APIs. You can delete item catalog integration after all recommenders have been deleted first. This prevents data dependency issues.
 **Steps to delete:**
 1. Delete all existing recommenders in your domain
 2. Navigate to the item catalog integration.

@@ -24,13 +24,9 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_codestar-notifications-actions-as-permissions).
 
-****
-
 - **   CreateNotificationRule  **
-  - **IAM action:**  [codestar-notifications:CreateNotificationRule](#list_codestar-notifications-action-CreateNotificationRule)
-  - **Condition key:**
-  - **Possible value(s):**
-  - **Access level:** Write
+  - **IAM action:**  [codestar-notifications:CreateNotificationRule](#list_codestar-notifications-action-CreateNotificationRule)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [codestar-notifications:TagResource](#list_codestar-notifications-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
 - **   DeleteNotificationRule  **
   - **IAM action:**  [codestar-notifications:DeleteNotificationRule](#list_codestar-notifications-action-DeleteNotificationRule)
@@ -108,8 +104,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
 <a name="list_codestar-notifications-actions-as-permissions"></a>
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
-
-****
 
 - **   [CreateNotificationRule](https://docs.aws.amazon.com/codestar-notifications/latest/APIReference/API_CreateNotificationRule.html)  **
   - **Description:** Grants permission to create a notification rule for a resource
@@ -194,8 +188,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
 
-****
-
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
 |  [notificationrule](https://docs.aws.amazon.com/codestar-notifications/latest/userguide/security_iam_service-with-iam.html)  | arn:${Partition}:codestar-notifications:${Region}:${Account}:notificationrule/${NotificationRuleId} | [aws:ResourceTag/${TagKey}](#list_codestar-notifications-aws_ResourceTag___TagKey_) |
@@ -204,8 +196,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_codestar-notifications-policy-keys"></a>
 
 AWS CodeStar Notifications defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

@@ -15,14 +15,16 @@ To request a quota increase, see [Requesting a quota increase](https://docs.aws.
 
 Your AWS account has the following quotas related to Deadline Cloud.
 
+Compute for service-managed fleets counts against the Deadline Cloud vCPU and GPU quotas in the following table, not against your Amazon Elastic Compute Cloud (Amazon EC2) service quotas. Your Amazon EC2 quotas apply only to [customer-managed fleets](https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/manage-cmf.html), because those workers run on instances in your own account.
+
 The following table includes quotas for persistent storage volumes used by service-managed fleets. For more information about persistent storage, see [Persistent storage for service-managed fleets](volumes.md).
 
 | Name | Default | Adjustable | Description |
 | --- | --- | --- | --- |
-| Associated members per farm | Each supported Region: 75 | No | The maximum number of members that can be associated to each farm in the current AWS Region. |
-| Associated members per fleet | Each supported Region: 75 | No | The maximum number of members that can be associated to each fleet in the current AWS Region. |
-| Associated members per job | Each supported Region: 75 | No | The maximum number of members that can be associated to each job in the current AWS Region. |
-| Associated members per queue | Each supported Region: 75 | No | The maximum number of members that can be associated to each queue in the current AWS Region. |
+| Associated members per farm | Each supported Region: 75 | No | The maximum number of principals (users or groups) that can be associated to each farm in the current AWS Region. Each associated group counts as one member, regardless of how many users it contains. |
+| Associated members per fleet | Each supported Region: 75 | No | The maximum number of principals (users or groups) that can be associated to each fleet in the current AWS Region. Each associated group counts as one member, regardless of how many users it contains. |
+| Associated members per job | Each supported Region: 75 | No | The maximum number of principals (users or groups) that can be associated to each job in the current AWS Region. Each associated group counts as one member, regardless of how many users it contains. |
+| Associated members per queue | Each supported Region: 75 | No | The maximum number of principals (users or groups) that can be associated to each queue in the current AWS Region. Each associated group counts as one member, regardless of how many users it contains. |
 | Budgets per farm | Each supported Region: 20 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/deadline/quotas/L-86C1F13E)  | The maximum number of budgets per farm in the current AWS Region |
 | Farms per region | Each supported Region: 2 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/deadline/quotas/L-2DEF7E07)  | The maximum number of farms that can be created in the current AWS Region. |
 | Fleets per farm | Each supported Region: 5 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/deadline/quotas/L-55A8E463)  | The maximum number of fleets that can be created for each farm in the current AWS Region. |

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_Delet
 # DeleteVirtualCluster
 <a name="API_DeleteVirtualCluster"></a>
 
-Deletes a virtual cluster. Virtual cluster is a managed entity on Amazon EMR on EKS. You can create, describe, list and delete virtual clusters. They do not consume any additional resource in your system. A single virtual cluster maps to a single Kubernetes namespace. Given this relationship, you can model virtual clusters the same way you model Kubernetes namespaces to meet your requirements.
+Deletes a virtual cluster. Virtual cluster is a managed entity on Amazon EMR on EKS. You can create, update, describe, list and delete virtual clusters. They do not consume any additional resource in your system. A single virtual cluster maps to a single Kubernetes namespace. Given this relationship, you can model virtual clusters the same way you model Kubernetes namespaces to meet your requirements.
 
 ## Request Syntax
 <a name="API_DeleteVirtualCluster_RequestSyntax"></a>

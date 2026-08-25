@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/timestream/latest/developerguide/timestream-for-influxdb.html
 ---
 
-For similar capabilities to Amazon Timestream for LiveAnalytics, consider Amazon Timestream for InfluxDB. It offers simplified data ingestion and single-digit millisecond query response times for real-time analytics. Learn more [here](https://docs.aws.amazon.com//timestream/latest/developerguide/timestream-for-influxdb.html).
+For similar capabilities to Amazon Timestream for LiveAnalytics, consider Amazon Timestream for InfluxDB. It offers simplified data ingestion and single-digit millisecond query response times for real-time analytics. Learn more [here](https://docs.aws.amazon.com/timestream/latest/developerguide/timestream-for-influxdb.html).
 
 # What is Timestream for InfluxDB?
 <a name="timestream-for-influxdb"></a>
@@ -68,8 +68,6 @@ The following terminology describes the hardware specifications for DB instance 
 
   The network speed relative to other DB instance classes. In the following table, you can find hardware details about the Amazon Timestream for InfluxDB instance classes.
 
-****
-
 | Instances Class | vCPU | Memory (GiB) | Storage Type | Network bandwidth(Gbps) |
 | --- | --- | --- | --- | --- |
 | db.influx.medium | 1 | 8 | Influx IOPS Included | 10 |
@@ -110,8 +108,6 @@ The optimal configuration of a Timestream for InfluxDB instance depends on vario
   + They typically takes a few hundred milliseconds to a couple of thousand milliseconds to execute.
   + The CPU favors query performance primarily.
 
-****
-
 | Max \# of series | Writes (lines per second) | Reads (Queries per second) | Instance class | Storage Type |
 | --- | --- | --- | --- | --- |
 | <100K | \~50,000 | <10 | db.influx.large | Influx IO Included 3K |
@@ -143,8 +139,6 @@ To create or work with an Amazon Timestream for InfluxDB DB instance in a specif
 <a name="timestream-for-influx-dbi-regions-availability"></a>
 
 The following table shows the AWS Regions where Amazon Timestream for InfluxDB is currently available and the endpoint for each Region.
-
-****
 
 | AWS Region name | Region | Endpoint | Protocol |
 | --- | --- | --- | --- |
@@ -248,8 +242,6 @@ Turn on multi-factor authentication (MFA) for your root user. For instructions, 
 Users need programmatic access if they want to interact with AWS outside of the AWS Management Console. The way to grant programmatic access depends on the type of user that's accessing AWS.
 
 To grant users programmatic access, choose one of the following options:
-
-****
 
 | Which user needs programmatic access? | To | By |
 | --- | --- | --- |

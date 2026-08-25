@@ -66,11 +66,11 @@ If you're the delegated Security Hub CSPM administrator for an organization that
 
 **To create a new configuration policy with custom control parameter values**
 
-1. Invoke the [CreateConfigurationPolicy](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_CreateConfigurationPolicy.html) API from the delegated administrator account in the home Region.
+1. Invoke the [CreateConfigurationPolicy](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_CreateConfigurationPolicy.html) API from the delegated administrator account in the home Region.
 
 1. For the `SecurityControlCustomParameters` object, provide the identifier of each control that you want to customize.
 
-1. For the `Parameters` object, provide the name of each parameter that you want to customize. For each parameter that you customize, provide `CUSTOM` for `ValueType`. For `Value`, provide the data type of the parameter and the custom value. The `Value` field can't be empty when `ValueType` is `CUSTOM`. If your request omits a parameter that the control supports, that parameter retains its current value. You can find supported parameters, data types, and valid values for a control by invoking the [GetSecurityControlDefinition](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_GetSecurityControlDefinition.html) API.
+1. For the `Parameters` object, provide the name of each parameter that you want to customize. For each parameter that you customize, provide `CUSTOM` for `ValueType`. For `Value`, provide the data type of the parameter and the custom value. The `Value` field can't be empty when `ValueType` is `CUSTOM`. If your request omits a parameter that the control supports, that parameter retains its current value. You can find supported parameters, data types, and valid values for a control by invoking the [GetSecurityControlDefinition](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetSecurityControlDefinition.html) API.
 
 **To customize control parameter values in an existing configuration policy**
 
@@ -80,7 +80,7 @@ If you're the delegated Security Hub CSPM administrator for an organization that
 
 1. For the `SecurityControlCustomParameters` object, provide the identifier of each control that you want to customize.
 
-1. For the `Parameters` object, provide the name of each parameter that you want to customize. For each parameter that you customize, provide `CUSTOM` for `ValueType`. For `Value`, provide the data type of the parameter and the custom value. If your request omits a parameter that the control supports, that parameter retains its current value. You can find supported parameters, data types, and valid values for a control by invoking the [GetSecurityControlDefinition](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_GetSecurityControlDefinition.html) API.
+1. For the `Parameters` object, provide the name of each parameter that you want to customize. For each parameter that you customize, provide `CUSTOM` for `ValueType`. For `Value`, provide the data type of the parameter and the custom value. If your request omits a parameter that the control supports, that parameter retains its current value. You can find supported parameters, data types, and valid values for a control by invoking the [GetSecurityControlDefinition](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetSecurityControlDefinition.html) API.
 
 For example, the following AWS CLI command creates a new configuration policy with a custom value for the `daysToExpiration` parameter of `ACM.1`. This example is formatted for Linux, macOS, or Unix, and it uses the backslash (\\) line-continuation character to improve readability.
 
@@ -123,11 +123,11 @@ Choose your preferred method, and follow the steps to customize control paramete
 
 **To customize control parameter values in one account and Region (API)**
 
-1. Invoke the [UpdateSecurityControl](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_UpdateSecurityControl.html) API.
+1. Invoke the [UpdateSecurityControl](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_UpdateSecurityControl.html) API.
 
 1. For `SecurityControlId`, provide the ID of the control that you want to customize.
 
-1. For the `Parameters` object, provide the name of each parameter that you want to customize. For each parameter that you customize, provide `CUSTOM` for `ValueType`. For `Value`, provide the data type of the parameter and the custom value. If your request omits a parameter that the control supports, that parameter retains its current value. You can find supported parameters, data types, and valid values for a control by invoking the [GetSecurityControlDefinition](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_GetSecurityControlDefinition.html) API.
+1. For the `Parameters` object, provide the name of each parameter that you want to customize. For each parameter that you customize, provide `CUSTOM` for `ValueType`. For `Value`, provide the data type of the parameter and the custom value. If your request omits a parameter that the control supports, that parameter retains its current value. You can find supported parameters, data types, and valid values for a control by invoking the [GetSecurityControlDefinition](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetSecurityControlDefinition.html) API.
 
 1. Optionally, for `LastUpdateReason`, provide a reason for customizing the control parameters.
 

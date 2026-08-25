@@ -327,7 +327,7 @@ This control checks whether a Classic Load Balancer has been configured to span 
 ### Remediation
 <a name="elb-10-remediation"></a>
 
- To add Availability Zones to a Classic Load Balancer, see [Add or remove subnets for your Classic Load Balancer](https://docs.aws.amazon.com//elasticloadbalancing/latest/classic/elb-manage-subnets.html) in the *User Guide for Classic Load Balancers*.
+ To add Availability Zones to a Classic Load Balancer, see [Add or remove subnets for your Classic Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/elb-manage-subnets.html) in the *User Guide for Classic Load Balancers*.
 
 ## [ELB.12] Application Load Balancer should be configured with defensive or strictest desync mitigation mode
 <a name="elb-12"></a>
@@ -354,7 +354,7 @@ HTTP Desync issues can lead to request smuggling and make applications vulnerabl
 ### Remediation
 <a name="elb-12-remediation"></a>
 
-To update desync mitigation mode of an Application Load Balancer, see [Desync mitigation mode](https://docs.aws.amazon.com//elasticloadbalancing/latest/application/application-load-balancers.html#desync-mitigation-mode) in the *User Guide for Application Load Balancers*.
+To update desync mitigation mode of an Application Load Balancer, see [Desync mitigation mode](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/application-load-balancers.html#desync-mitigation-mode) in the *User Guide for Application Load Balancers*.
 
 ## [ELB.13] Application, Network and Gateway Load Balancers should span multiple Availability Zones
 <a name="elb-13"></a>
@@ -384,7 +384,7 @@ Elastic Load Balancing automatically distributes your incoming traffic across mu
 ### Remediation
 <a name="elb-13-remediation"></a>
 
-To add an Availability Zone to an Application Load Balancer, see [Availability Zones for your Application Load Balancer](https://docs.aws.amazon.com//elasticloadbalancing/latest/application/load-balancer-subnets.html) in the *User Guide for Application Load Balancers*. To add an Availability Zone to an Network Load Balancer, see [Network Load Balancers](https://docs.aws.amazon.com//elasticloadbalancing/latest/network/network-load-balancers.html#availability-zones) in the *User Guide for Network Load Balancers*. To add an Availability Zone to a Gateway Load Balancer, see [Create a Gateway Load Balancer](https://docs.aws.amazon.com//elasticloadbalancing/latest/gateway/create-load-balancer.html) in the *User Guide for Gateway Load Balancers*.
+To add an Availability Zone to an Application Load Balancer, see [Availability Zones for your Application Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-subnets.html) in the *User Guide for Application Load Balancers*. To add an Availability Zone to an Network Load Balancer, see [Network Load Balancers](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/network-load-balancers.html#availability-zones) in the *User Guide for Network Load Balancers*. To add an Availability Zone to a Gateway Load Balancer, see [Create a Gateway Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/gateway/create-load-balancer.html) in the *User Guide for Gateway Load Balancers*.
 
 ## [ELB.14] Classic Load Balancer should be configured with defensive or strictest desync mitigation mode
 <a name="elb-14"></a>

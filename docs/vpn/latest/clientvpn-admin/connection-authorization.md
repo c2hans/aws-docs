@@ -23,7 +23,7 @@ The following are the requirements and considerations for the client connect han
 + The Lambda function is invoked synchronously. It's invoked after device and user authentication, and before the authorization rules are evaluated.
 + If the Lambda function is invoked for a new connection and the Client VPN service does not get an expected response from the function, the Client VPN service denies the connection request. For example, this can occur if the Lambda function is throttled, times out, or encounters other unexpected errors, or if the function's response is not in a valid format.
 + We recommend that you configure [provisioned concurrency](https://docs.aws.amazon.com/lambda/latest/dg/configuration-concurrency.html) for the Lambda function to enable it to scale without fluctuations in latency.
-+ If you update your Lambda function, existing connections to the Client VPN endpoint are not affected. You can terminate the existing connections, and then instruct your clients to establish new connections. For more information, see [Terminate an AWS Client VPN client connectionTerminate a client connection](cvpn-working-connections-disassociate.md).
++ If you update your Lambda function, existing connections to the Client VPN endpoint are not affected. You can terminate the existing connections, and then instruct your clients to establish new connections. For more information, see [Terminate an AWS Client VPN client connection](cvpn-working-connections-disassociate.md).
 + If clients use the AWS provided client to connect to the Client VPN endpoint, they must use version 1.2.6 or later for Windows, and version 1.2.4 or later for macOS. For more information, see [Connect using the AWS provided client](https://docs.aws.amazon.com/vpn/latest/clientvpn-user/connect-aws-client-vpn-connect.html).
 
 ## Lambda interface
@@ -108,7 +108,7 @@ AWS Client VPN automatically creates a service-linked role in your account calle
 ## Monitor connection authorization failures
 <a name="connection-authorization-monitoring"></a>
 
-You can view the connection authorization status of connections to the Client VPN endpoint. For more information, see [View AWS Client VPN client connectionsView client connections](cvpn-working-connections-view.md).
+You can view the connection authorization status of connections to the Client VPN endpoint. For more information, see [View AWS Client VPN client connections](cvpn-working-connections-view.md).
 
 When the client connect handler is used for posture assessment, you can also view the posture compliance statuses of devices that connect to your Client VPN endpoint in the connection logs. For more information, see [Connection logging for an AWS Client VPN endpoint](connection-logging.md).
 

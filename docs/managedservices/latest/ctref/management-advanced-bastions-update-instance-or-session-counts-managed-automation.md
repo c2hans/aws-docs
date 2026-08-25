@@ -14,8 +14,6 @@ Update the number of RDP and SSH Bastion instances. Optionally update the sessio
 ## Change Type Details
 <a name="ct-1962s5oczal9z-MABu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1962s5oczal9z |

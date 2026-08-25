@@ -45,7 +45,7 @@ The following permissions policy limits a user to only reading objects that have
 ```
 
 **Example 2: Restrict which object tag keys that users can add**
-The following permissions policy grants a user permissions to perform the `s3:PutObjectTagging` action, which allows user to add tags to an existing object. The condition uses the `s3:RequestObjectTagKeys` condition key to specify the allowed tag keys, such as `Owner` or `CreationDate`. For more information, see [Creating a condition that tests multiple key values](https://docs.aws.amazon.com//IAM/latest/UserGuide/reference_policies_multi-value-conditions.html) in the *IAM User Guide*.
+The following permissions policy grants a user permissions to perform the `s3:PutObjectTagging` action, which allows user to add tags to an existing object. The condition uses the `s3:RequestObjectTagKeys` condition key to specify the allowed tag keys, such as `Owner` or `CreationDate`. For more information, see [Creating a condition that tests multiple key values](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_multi-value-conditions.html) in the *IAM User Guide*.
 The policy ensures that every tag key specified in the request is an authorized tag key. The `ForAnyValue` qualifier in the condition ensures that at least one of the specified keys must be present in the request.
 ****
 

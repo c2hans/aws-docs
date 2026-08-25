@@ -185,8 +185,6 @@ If you don't coerce any of the source data types, the embedded `ContactDetails` 
 
  However, you can add transformation rules to coerce `ContactAddress` and `ContactPhoneNumbers` to JSON arrays, as shown in the following table.
 
-****
-
 | Original source column name | Renamed source column |
 | --- | --- |
 | ContactAddress | array\_ContactAddress |
@@ -288,8 +286,6 @@ When a source record is deleted, AWS DMS deletes the corresponding document from
 <a name="CHAP_Target.DocumentDB.data-mapping.ongoing-replication.ddl"></a>
 
 With ongoing replication, any changes to source data structures (such as tables, columns, and so on) are propagated to their counterparts in Amazon DocumentDB. In relational databases, these changes are initiated using data definition language (DDL) statements. You can see how AWS DMS propagates these changes to Amazon DocumentDB in the following table.
-
-****
 
 | DDL at source | Effect at Amazon DocumentDB target |
 | --- | --- |

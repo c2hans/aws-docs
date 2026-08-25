@@ -172,7 +172,7 @@ The line magic looks like this:
 
 Retrieves [status information](access-graph-status.md) from the notebook's host endpoint ([%graph\_notebook\_config](#notebooks-line-magics-graph-notebook-config) shows the host endpoint).
 
- For Neptune DB hosts, status information will be fetched from the [health status endpoint](https://docs.aws.amazon.com//neptune/latest/userguide/access-graph-status.html). For Neptune Analytics hosts, the status will be retrieved via the [GetGraph API](https://docs.aws.amazon.com//neptune-analytics/latest/apiref/API_GetGraph.html). See [%get\_graph](#notebooks-line-magics-get-graph) for more information.
+ For Neptune DB hosts, status information will be fetched from the [health status endpoint](https://docs.aws.amazon.com/neptune/latest/userguide/access-graph-status.html). For Neptune Analytics hosts, the status will be retrieved via the [GetGraph API](https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_GetGraph.html). See [%get\_graph](#notebooks-line-magics-get-graph) for more information.
 
 ## The `%gremlin_status` line magic
 <a name="notebooks-line-magics-gremlin-status"></a>
@@ -282,7 +282,7 @@ It accepts the following parameters:
 ## The `%reset_graph` line magic
 <a name="notebooks-line-magics-reset-graph"></a>
 
- The `%reset_graph` (or `%_graph_reset`) line magic executes a [ResetGraph](https://docs.aws.amazon.com//neptune-analytics/latest/apiref/API_ResetGraph.html) call against the Neptune Analytics endpoint. It accepts the following optional line input:
+ The `%reset_graph` (or `%_graph_reset`) line magic executes a [ResetGraph](https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_ResetGraph.html) call against the Neptune Analytics endpoint. It accepts the following optional line input:
 +  -ns or --no-skip-snapshot - If present, a final graph snapshot will be created before the graph data is deleted.
 +  --silent – If present, no output is displayed after the reset call is submitted.
 +  --store-to – Used to specify a variable to which to store the ResetGraph response.
@@ -290,7 +290,7 @@ It accepts the following parameters:
 ## The `%get_graph` line magic
 <a name="notebooks-line-magics-get-graph"></a>
 
- The `%get_graph` line magic retrieves information about a graph via the [GetGraph API](https://docs.aws.amazon.com//neptune-analytics/latest/apiref/API_GetGraph.html). This magic is functionally identical to [%status](#notebooks-line-magics-status) when used with Neptune Analytics.
+ The `%get_graph` line magic retrieves information about a graph via the [GetGraph API](https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_GetGraph.html). This magic is functionally identical to [%status](#notebooks-line-magics-status) when used with Neptune Analytics.
 
 ## The `%degreeDistribution` line magic
 <a name="notebooks-line-magics-degreeDistribution"></a>
@@ -586,8 +586,6 @@ ${export_params}
 <a name="notebooks-cell-magics-neptune_ml-forms"></a>
 
 The `%%neptune_ml` cell magic can be used in the following forms:
-
-****
 + **`%%neptune_ml export start`**   –   Starts a Neptune ML export process.
 + **`%%neptune_ml dataprocessing start`**   –   Starts a Neptune ML dataprocessing job.
 + **`%%neptune_ml training start`**   –   Starts a Neptune ML model-training job.

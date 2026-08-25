@@ -84,7 +84,7 @@ If you disable trusted access by using the AWS Health console or tools then you 
 **To disable trusted access using the AWS Health console**
 You can disable trusted access with one of the following options:
 + Use the AWS Health console. For more information, see [Disabling organizational view (console) ](https://docs.aws.amazon.com/health/latest/ug/enable-organizational-view-in-health-console.html#disabling-organizational-view-console) in the *AWS Health User Guide*.
-+ Use the AWS CLI. For more information, see [Disabling organizational view (CLI) ](https://docs.aws.amazon.com//health/latest/ug/enable-organizational-view-from-aws-command-line.html#disabling-organizational-view) in the *AWS Health User Guide*.
++ Use the AWS CLI. For more information, see [Disabling organizational view (CLI) ](https://docs.aws.amazon.com/health/latest/ug/enable-organizational-view-from-aws-command-line.html#disabling-organizational-view) in the *AWS Health User Guide*.
 + Call the [DisableHealthServiceAccessForOrganization](https://docs.aws.amazon.com/health/latest/APIReference/API_DisableHealthServiceAccessForOrganization.html) API operation.
 
 You can disable trusted access by running a Organizations AWS CLI command, or by calling an Organizations API operation in one of the AWS SDKs.

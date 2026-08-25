@@ -93,7 +93,7 @@ If the VPC Resolver service is using the role when you try to delete the resourc
 
 1. In the **Delete query logging configuration** text box, select **Stop logging queries**.
 
-   This will disassociate the configuration from the VPC. You can also disassociate the query logging configuration programmatically. For more information, see [disassociate-resolver-query-log-config](https://docs.aws.amazon.com//cli/latest/reference/route53resolver/disassociate-resolver-query-log-config.html).
+   This will disassociate the configuration from the VPC. You can also disassociate the query logging configuration programmatically. For more information, see [disassociate-resolver-query-log-config](https://docs.aws.amazon.com/cli/latest/reference/route53resolver/disassociate-resolver-query-log-config.html).
 
 1. After logging queries has stopped, you can optionally type **delete** in the field and choose **Delete** to delete the query logging configuration. However, this is not necessary for deleting the resources used by `AWSServiceRoleForRoute53Resolver`.
 
@@ -105,8 +105,6 @@ Use the IAM console, the AWS CLI, or the AWS API to delete the `AWSServiceRoleFo
 <a name="slr-regions"></a>
 
 VPC Resolver does not support using service-linked roles in every Region where the service is available. You can use the `AWSServiceRoleForRoute53Resolver` role in the following Regions.
-
-****
 
 | Region name | Region identity | Support in VPC Resolver |
 | --- | --- | --- |

@@ -14,8 +14,6 @@ Start an Amazon Relational Database Service (RDS) database (DB) instance.
 ## Change Type Details
 <a name="ct-3s3ik03uzw19t-MARs-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-3s3ik03uzw19t |

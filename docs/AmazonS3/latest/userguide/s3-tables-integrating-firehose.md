@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-inte
 # Streaming data to tables with Amazon Data Firehose
 <a name="s3-tables-integrating-firehose"></a>
 
-Amazon Data Firehose is a fully managed service for delivering real-time [streaming data](https://aws.amazon.com//streaming-data/) to destinations such as Amazon S3, Amazon Redshift, Amazon OpenSearch Service, Splunk, Apache Iceberg tables, and custom HTTP endpoints or HTTP endpoints owned by supported third-party service providers. With Amazon Data Firehose, you don't need to write applications or manage resources. You configure your data producers to send data to Firehose, and it automatically delivers the data to the destination that you specified. You can also configure Firehose to transform your data before delivering it. To learn more about Amazon Data Firehose, see [What is Amazon Data Firehose?](https://docs.aws.amazon.com//firehose/latest/dev/what-is-this-service.html)
+Amazon Data Firehose is a fully managed service for delivering real-time [streaming data](https://aws.amazon.com/streaming-data/) to destinations such as Amazon S3, Amazon Redshift, Amazon OpenSearch Service, Splunk, Apache Iceberg tables, and custom HTTP endpoints or HTTP endpoints owned by supported third-party service providers. With Amazon Data Firehose, you don't need to write applications or manage resources. You configure your data producers to send data to Firehose, and it automatically delivers the data to the destination that you specified. You can also configure Firehose to transform your data before delivering it. To learn more about Amazon Data Firehose, see [What is Amazon Data Firehose?](https://docs.aws.amazon.com/firehose/latest/dev/what-is-this-service.html)
 
 Complete these steps to set up Firehose streaming to tables in S3 table buckets:
 
@@ -20,7 +20,7 @@ Complete these steps to set up Firehose streaming to tables in S3 table buckets:
 ## Creating a role for Firehose to use S3 tables as a destination
 <a name="firehose-role-s3tables"></a>
 
-Firehose needs an IAM [service role](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_roles_create_for-service.html) with specific permissions to access AWS Glue tables and write data to S3 tables. You need this provide this IAM role when you create a Firehose stream.
+Firehose needs an IAM [service role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-service.html) with specific permissions to access AWS Glue tables and write data to S3 tables. You need this provide this IAM role when you create a Firehose stream.
 
 1. Open the IAM console at [https://console.aws.amazon.com/iam/](https://console.aws.amazon.com/iam/).
 
@@ -138,7 +138,7 @@ Firehose needs an IAM [service role](https://docs.aws.amazon.com//IAM/latest/Use
 
    This policy has a statements that allow access to Kinesis Data Streams, invoking Lambda functions and access to AWS KMS keys. If you don't use any of these resources, you can remove the respective statements.
 
-   If error logging is enabled, Firehose also sends data delivery errors to your CloudWatch log group and streams. For this, you must configure log group and log stream names. For log group and log stream names, see [Monitor Amazon Data Firehose Using CloudWatch Logs](https://docs.aws.amazon.com//firehose/latest/dev/controlling-access.html#using-iam-iceberg).
+   If error logging is enabled, Firehose also sends data delivery errors to your CloudWatch log group and streams. For this, you must configure log group and log stream names. For log group and log stream names, see [Monitor Amazon Data Firehose Using CloudWatch Logs](https://docs.aws.amazon.com/firehose/latest/dev/controlling-access.html#using-iam-iceberg).
 
 1. After you create the policy, create an IAM role with **AWS service** as the **Trusted entity type**.
 
@@ -209,7 +209,7 @@ To provide routing information to Firehose when you configure a stream, you use 
    + For tables in the **Current account**, select your S3 Tables catalog from the **Catalog** dropdown.
    + For tables in a **Cross-account**, enter the **Catalog ARN** of the catalog you want to stream to in another account.
 
-1. Configure database and table names using **Unique Key configuration**, JSONQuery expressions, or in a Lambda function. For more information, refer to [Route incoming records to a single Iceberg table](https://docs.aws.amazon.com/firehose/latest/dev/apache-iceberg-format-input-record.html) and [Route incoming records to different Iceberg tables](https://docs.aws.amazon.com//firehose/latest/dev/apache-iceberg-format-input-record-different.html) in the *Amazon Data Firehose Developer Guide*.
+1. Configure database and table names using **Unique Key configuration**, JSONQuery expressions, or in a Lambda function. For more information, refer to [Route incoming records to a single Iceberg table](https://docs.aws.amazon.com/firehose/latest/dev/apache-iceberg-format-input-record.html) and [Route incoming records to different Iceberg tables](https://docs.aws.amazon.com/firehose/latest/dev/apache-iceberg-format-input-record-different.html) in the *Amazon Data Firehose Developer Guide*.
 
 1. Under **Backup settings**, specify a **S3 backup bucket**.
 

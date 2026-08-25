@@ -27,7 +27,7 @@ The following are the common management tasks you perform with an Amazon RDS for
 
 Following is a list of other sections in this guide that can help you understand and use important features of RDS for PostgreSQL:
 +  [Understanding PostgreSQL roles and permissions](Appendix.PostgreSQL.CommonDBATasks.Roles.md)
-+  [Controlling user access to the PostgreSQL databaseControlling user access to PostgreSQL](Appendix.PostgreSQL.CommonDBATasks.Access.md)
++  [Controlling user access to the PostgreSQL database](Appendix.PostgreSQL.CommonDBATasks.Access.md)
 +  [Working with parameters on your RDS for PostgreSQL DB instance](Appendix.PostgreSQL.CommonDBATasks.Parameters.md)
 +  [Understanding logging mechanisms supported by RDS for PostgreSQL](Appendix.PostgreSQL.CommonDBATasks.md#Appendix.PostgreSQL.CommonDBATasks.Auditing)
 +  [Working with PostgreSQL autovacuum on Amazon RDS for PostgreSQL](Appendix.PostgreSQL.CommonDBATasks.Autovacuum.md)

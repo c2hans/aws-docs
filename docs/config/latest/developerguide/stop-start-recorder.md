@@ -36,7 +36,7 @@ You can have only one customer managed configuration recorder for each AWS accou
 
 The default for a customer managed configuration recorder is to record all supported resource types, excluding the following global IAM resource types: `AWS::IAM::Group`, `AWS::IAM::Policy`, `AWS::IAM::Role`, and `AWS::IAM::User` You can specify which resource types you want to include or exclude from recording.
 
-For more information, see [Recording AWS Resources with AWS ConfigConsiderations](select-resources.md).
+For more information, see [Recording AWS Resources with AWS Config](select-resources.md).
 
 **You are charged service usage fees for using the customer managed configuration recorder**
 

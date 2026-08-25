@@ -122,8 +122,6 @@ The following table describes the important changes in each release of the *AMS 
 
 The following table describes the important changes to the documentation of the AMS Accelerate guide prior to March 2024.
 
-****
-
 - **Improvements for AMS Accelerate CloudTrail trail onboarding **
   - **Description:** Improvements for AMS Accelerate CloudTrail trail onboarding:+ Collect all bucket policies in a single block<br />+ Remove the second AWS Organization ID in the policy statements<br />+ Clarify customer environment requirements<br />For more information, see [Review and update your configurations to enable AMS Accelerate to use your CloudTrail trail](acc-onb-trail-choices.md).
   - **Date:** February 23, 2024

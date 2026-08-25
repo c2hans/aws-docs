@@ -90,7 +90,7 @@ Use the following procedure to connect to your Linux instance using PuTTY. You n
 
 1. In the **Category** pane, expand **Connection**, **SSH**, and **Auth**. Choose **Credentials**.
 
-1. Next to **Private key file for authentication**, choose **Browse**. In the **Select private key file** dialog box, select the `.ppk` file that you generated for your key pair. You can either double-click the file or choose **Open** in the **Select private key file** dialog box.
+1. Next to **Private key file for authentication**, choose **Browse**. In the **Select private key file** dialog box, select the `.ppk` file that you generated for your key pair. You can either open the file or choose **Open** in the **Select private key file** dialog box.
 
 1. (Optional) If you plan to connect to this instance again after this session, you can save the session information for future use. In the **Category** pane, choose **Session**. Enter a name for the session in **Saved Sessions**, and then choose **Save**.
 

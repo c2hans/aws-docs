@@ -16,7 +16,7 @@ Below is the IAM policy needed to create, update, or delete instances through th
 
 ```
 {
-    "Version": "2012-10-17",
+    "Version": "2012-10-17"		 	 	 ,
     "Statement": [
         {
             "Action": "scn:*",

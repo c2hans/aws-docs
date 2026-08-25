@@ -14,8 +14,6 @@ Use to update patch configuration.
 ## Change Type Details
 <a name="ct-34alumbtv2b9p-MASu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-34alumbtv2b9p |

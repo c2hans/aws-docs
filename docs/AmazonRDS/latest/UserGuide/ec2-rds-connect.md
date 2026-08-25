@@ -40,8 +40,6 @@ If the DB instance and EC2 instance are in different Availability Zones, your ac
 
 When you set up a connection to an EC2 instance, Amazon RDS acts according to the current configuration of the security groups associated with the RDS database and EC2 instance, as described in the following table.
 
-****
-
 | Current RDS security group configuration | Current EC2 security group configuration | RDS action |
 | --- | --- | --- |
 | There are one or more security groups associated with the RDS database with a name that matches the pattern `rds-ec2-{{n}}` (where `{{n}}` is a number). A security group that matches the pattern hasn't been modified. This security group has only one inbound rule with the VPC security group of the EC2 instance as the source. | There are one or more security groups associated with the EC2 instance with a name that matches the pattern `ec2-rds-{{n}}` (where `{{n}}` is a number). A security group that matches the pattern hasn't been modified. This security group has only one outbound rule with the VPC security group of the RDS database as the source. | RDS takes no action.<br />A connection was already configured automatically between the EC2 instance and RDS database. Because a connection already exists between the EC2 instance and the RDS database, the security groups aren't modified. |

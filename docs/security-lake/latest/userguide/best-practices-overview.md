@@ -29,7 +29,7 @@ For more information, see [Integration with AWS Security Hub CSPM](securityhub-i
 ## Delete AWS Lambda
 <a name="Lambda"></a>
 
-When deleting a AWS Lambda function, we recommend against disabling it first. Disabling a Lambda function before deletion could interfere with data querying capabilities and potentially impact other functionalities. It's best to delete the Lambda function directly without disabling it. For more information on deleting Lambda function, see [AWS Lambda developer guide](https://docs.aws.amazon.com//lambda/latest/dg/example_lambda_DeleteFunction_section.html).
+When deleting a AWS Lambda function, we recommend against disabling it first. Disabling a Lambda function before deletion could interfere with data querying capabilities and potentially impact other functionalities. It's best to delete the Lambda function directly without disabling it. For more information on deleting Lambda function, see [AWS Lambda developer guide](https://docs.aws.amazon.com/lambda/latest/dg/example_lambda_DeleteFunction_section.html).
 
 ## Monitor for Security Lake events
 <a name="monitor-cloudwatch-metrics"></a>

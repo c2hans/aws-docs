@@ -46,7 +46,7 @@ When you add a dataset to an analysis, every calculated field that exists in the
 
 1. When finished, choose **Save**.
 
-For more information about how to create formulas using the available functions in Quick Sight, see [Calculated field function and operator reference for Amazon QuickFunctions and operators](calculated-field-reference.md).
+For more information about how to create formulas using the available functions in Quick Sight, see [Calculated field function and operator reference for Amazon Quick](calculated-field-reference.md).
 
 ## Adding calculated fields to a dataset
 <a name="using-the-calculated-field-editor"></a>
@@ -200,8 +200,6 @@ When your dataset uses SPICE query mode and a calculated field is materialized, 
 **Unary operators**
 
 The following table shows which data type is output based on the operator you use and the data type of the value that you input. For example, if you input an integer to an `abs` calculation, the output value's data type is integer.
-
-****
 
 - **`abs`**
   - **Input type:** Decimal-fixed / **Output type:** Decimal-fixed

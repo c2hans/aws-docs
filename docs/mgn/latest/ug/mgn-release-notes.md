@@ -9,8 +9,8 @@ NEW - You can now accelerate your migration and modernization with AWS Transform
 
 ## August 2026
 <a name="release-notes-aug-2026"></a>
-
-Added support for Amazon Linux 2023 with kernel 6.18.
++ Added support for Amazon Linux 2023 with kernel 6.18.
++ Added support for Oracle Linux 9.6.
 
 ## July 2026
 <a name="release-notes-jul-2026"></a>

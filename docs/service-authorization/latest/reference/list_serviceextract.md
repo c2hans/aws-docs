@@ -29,8 +29,6 @@ AWS Microservice Extractor for .NET has no API operations that can be used in th
 
 The following actions are defined by AWS Microservice Extractor for .NET but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 | Actions | Description | Resource types (\*required) | Condition keys | Access level |
 | --- | --- | --- | --- | --- |
 |   [GetConfig](https://docs.aws.amazon.com/microservice-extractor/latest/userguide/what-is-microservice-extractor.html)  | Grants permission to get required configuration for the AWS Microservice Extractor for .NET desktop client |  |   | Read |

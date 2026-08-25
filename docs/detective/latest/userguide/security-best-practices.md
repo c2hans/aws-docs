@@ -14,7 +14,7 @@ For Detective, the security best practices are associated with managing the acco
 
 When inviting member accounts to your Detective behavior graph, only invite accounts that you oversee.
 
-Limit access to the behavior graph. Users with the [AmazonDetectiveFullAccess](https://docs.aws.amazon.com//detective/latest/userguide/security-iam-awsmanpol.html#security-iam-awsmanpol-amazondetectivefullaccess) policy can grant access to all Detective actions. Principals with these permissions can manage member accounts, add tags to their behavior graph, and use Detective for investigation. When a user has access to a behavior graph, they can see all of the findings for the member accounts. Such findings might expose sensitive security information.
+Limit access to the behavior graph. Users with the [AmazonDetectiveFullAccess](https://docs.aws.amazon.com/detective/latest/userguide/security-iam-awsmanpol.html#security-iam-awsmanpol-amazondetectivefullaccess) policy can grant access to all Detective actions. Principals with these permissions can manage member accounts, add tags to their behavior graph, and use Detective for investigation. When a user has access to a behavior graph, they can see all of the findings for the member accounts. Such findings might expose sensitive security information.
 
 ## Best practices for member accounts
 <a name="security-best-practices-member-accounts"></a>

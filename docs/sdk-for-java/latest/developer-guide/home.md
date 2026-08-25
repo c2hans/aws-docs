@@ -39,7 +39,7 @@ For information about maintenance and support for SDK major versions and their u
 
 In addition to this guide, the following are valuable online resources for AWS SDK for Java developers:
 +  [AWS SDK for Java 2.x API Reference](https://sdk.amazonaws.com/java/api/latest/)
-+  [Java developer blog](https://aws.amazon.com/blogs//developer/category/programing-language/java/)
++  [Java developer blog](https://aws.amazon.com/blogs/developer/category/programing-language/java/)
 +  [Java development topic in AWS re:Post](https://repost.aws/topics/TAeLiug9wVSxO2AZWyjH70Cw/java-development)
 +  [SDK source](https://github.com/aws/aws-sdk-java-v2) on GitHub
 + [AWS SDK Code Examples library](https://docs.aws.amazon.com/code-library/latest/ug/what-is-code-library.html)

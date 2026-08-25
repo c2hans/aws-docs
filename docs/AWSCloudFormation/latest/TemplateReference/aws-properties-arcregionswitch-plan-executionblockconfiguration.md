@@ -34,6 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[ParallelConfig](#cfn-arcregionswitch-plan-executionblockconfiguration-parallelconfig)" : {{ParallelExecutionBlockConfiguration}},
   "[RdsCreateCrossRegionReadReplicaConfig](#cfn-arcregionswitch-plan-executionblockconfiguration-rdscreatecrossregionreadreplicaconfig)" : {{RdsCreateCrossRegionReplicaConfiguration}},
   "[RdsPromoteReadReplicaConfig](#cfn-arcregionswitch-plan-executionblockconfiguration-rdspromotereadreplicaconfig)" : {{RdsPromoteReadReplicaConfiguration}},
+  "[RdsSwitchoverReadReplicaConfig](#cfn-arcregionswitch-plan-executionblockconfiguration-rdsswitchoverreadreplicaconfig)" : {{RdsSwitchoverReadReplicaConfiguration}},
   "[RegionSwitchPlanConfig](#cfn-arcregionswitch-plan-executionblockconfiguration-regionswitchplanconfig)" : {{RegionSwitchPlanConfiguration}},
   "[Route53HealthCheckConfig](#cfn-arcregionswitch-plan-executionblockconfiguration-route53healthcheckconfig)" : {{Route53HealthCheckConfiguration}}
 }
@@ -73,6 +74,8 @@ To declare this entity in your CloudFormation template, use the following syntax
     RdsCreateCrossRegionReplicaConfiguration}}
   [RdsPromoteReadReplicaConfig](#cfn-arcregionswitch-plan-executionblockconfiguration-rdspromotereadreplicaconfig): {{
     RdsPromoteReadReplicaConfiguration}}
+  [RdsSwitchoverReadReplicaConfig](#cfn-arcregionswitch-plan-executionblockconfiguration-rdsswitchoverreadreplicaconfig): {{
+    RdsSwitchoverReadReplicaConfiguration}}
   [RegionSwitchPlanConfig](#cfn-arcregionswitch-plan-executionblockconfiguration-regionswitchplanconfig): {{
     RegionSwitchPlanConfiguration}}
   [Route53HealthCheckConfig](#cfn-arcregionswitch-plan-executionblockconfiguration-route53healthcheckconfig): {{
@@ -170,6 +173,12 @@ An Amazon RDS create cross-Region replica execution block.
 An Amazon RDS promote read replica execution block.
 *Required*: No
 *Type*: [RdsPromoteReadReplicaConfiguration](aws-properties-arcregionswitch-plan-rdspromotereadreplicaconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`RdsSwitchoverReadReplicaConfig`  <a name="cfn-arcregionswitch-plan-executionblockconfiguration-rdsswitchoverreadreplicaconfig"></a>
+Property description not available.
+*Required*: No
+*Type*: [RdsSwitchoverReadReplicaConfiguration](aws-properties-arcregionswitch-plan-rdsswitchoverreadreplicaconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `RegionSwitchPlanConfig`  <a name="cfn-arcregionswitch-plan-executionblockconfiguration-regionswitchplanconfig"></a>

@@ -2,15 +2,15 @@
 source_url: https://docs.aws.amazon.com/MAP/latest/userguide/DBA-tags.html
 ---
 
-# Database and analytic tags
+# Database and analytics tags
 <a name="DBA-tags"></a>
 
-Use the following tables for migration plans whose Migration Tracking and Incentive Guide includes database and analytic MAP credits.
+Use the following tables for migration plans whose Migration Tracking and Incentive Guide includes database and analytics MAP credits.
 
 ## Short MPE IDs
 <a name="dba-short-ids"></a>
 
-**Database and analytic tags with short IDs**
+**Database and analytics tags with short IDs**
 
 | Source | Destination | Tag key | Tag value |
 | --- | --- | --- | --- |
@@ -24,7 +24,7 @@ Use the following tables for migration plans whose Migration Tracking and Incent
 ## Long MPE IDs
 <a name="dba-long-ids"></a>
 
-**Database and analytic tags with long IDs**
+**Database and analytics tags with long IDs**
 
 | Source | Destination | Tag key | Tag value |
 | --- | --- | --- | --- |
@@ -48,7 +48,7 @@ If your destination database is changed from EC2 to any AWS DB&A service after y
 ### Short MPE IDs
 <a name="dba-special-short-ids"></a>
 
-**EC2 to database and analytic tags with short IDs after migration**
+**EC2 to database and analytics tags with short IDs after migration**
 
 | Source | Destination | Tag key | Tag value |
 | --- | --- | --- | --- |
@@ -58,7 +58,7 @@ If your destination database is changed from EC2 to any AWS DB&A service after y
 ### Long MPE IDs
 <a name="dba-special-long-ids"></a>
 
-**EC2 to database and analytic tags with long IDs after migration**
+**EC2 to database and analytics tags with long IDs after migration**
 
 | Source | Destination | Tag key | Tag value |
 | --- | --- | --- | --- |

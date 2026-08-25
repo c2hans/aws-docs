@@ -54,8 +54,6 @@ The AWS SDK for Java 2.x simplifies and enhances buffering functionality with th
 ## Key configuration parameters
 <a name="migration-sqs-auto-batching-params"></a>
 
-****
-
 | Parameter | v1 | v2 |
 | --- | --- | --- |
 | Maximum batch size | maxBatchSize (default 10 requests per batch) | maxBatchSize (default 10 requests per batch) |

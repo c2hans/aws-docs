@@ -12,8 +12,6 @@ For information about all the actions that are part of IAM access control for Am
 **Note**
 Actions are denied by default. You must explicitly allow every action that you want to authorize the client to perform.
 
-****
-
 | Use case | Required actions |
 | --- | --- |
 | Admin | `kafka-cluster:*` |

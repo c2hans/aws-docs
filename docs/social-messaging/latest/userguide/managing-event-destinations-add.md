@@ -56,7 +56,7 @@ You can use Amazon SNS topics that are encrypted using AWS KMS keys for an addit
 **Note**
 Amazon SNS FIFO topics are not supported.
 
-The example statement uses the, optional but recommended, `SourceAccount` and `SourceArn` conditions to avoid the confused deputy problem and only the AWS End User Messaging Social owner account has access. For more information on the confused deputy problem, see [The confused deputy problem](https://docs.aws.amazon.com//IAM/latest/UserGuide/confused-deputy.html) in the *[IAM user guide](https://docs.aws.amazon.com//IAM/latest/UserGuide/introduction.html)*.
+The example statement uses the, optional but recommended, `SourceAccount` and `SourceArn` conditions to avoid the confused deputy problem and only the AWS End User Messaging Social owner account has access. For more information on the confused deputy problem, see [The confused deputy problem](https://docs.aws.amazon.com/IAM/latest/UserGuide/confused-deputy.html) in the *[IAM user guide](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html)*.
 
 The key that you use must be *symmetric*. Encrypted Amazon SNS topics don't support asymmetric AWS KMS keys.
 
@@ -87,7 +87,7 @@ The key policy must be modified to allow AWS End User Messaging Social to use th
 ## IAM policies for Amazon SNS topics
 <a name="managing-event-destinations-sns-policies"></a>
 
-To use an existing IAM role or to create a new role, attach the following policy to that role so that AWS End User Messaging Social can assume it. For information about how to modify the trust relationship of a role, see [Modifying a Role](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_roles_manage.html) in the [*IAM user guide*](https://docs.aws.amazon.com//IAM/latest/UserGuide/introduction.html).
+To use an existing IAM role or to create a new role, attach the following policy to that role so that AWS End User Messaging Social can assume it. For information about how to modify the trust relationship of a role, see [Modifying a Role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_manage.html) in the [*IAM user guide*](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html).
 
 The following is the **permission policy** for the IAM role. The permission policy allows for publishing to Amazon SNS topics.
 
@@ -113,7 +113,7 @@ In the following IAM permission policy, make the following changes:
 ## IAM policies for Connect Customer
 <a name="managing-event-destinations-amazon-connect-policies"></a>
 
-If you want AWS End User Messaging Social to use an existing IAM role or if you create a new role, attach the following policies to that role so that AWS End User Messaging Social can assume it. For information about how to modify an existing trust relationship of a role, see [Modifying a Role](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_roles_manage.html) in the [*IAM user guide*](https://docs.aws.amazon.com//IAM/latest/UserGuide/introduction.html). This role is used for both sending events and importing phone numbers from AWS End User Messaging Social into Connect Customer.
+If you want AWS End User Messaging Social to use an existing IAM role or if you create a new role, attach the following policies to that role so that AWS End User Messaging Social can assume it. For information about how to modify an existing trust relationship of a role, see [Modifying a Role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_manage.html) in the [*IAM user guide*](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html). This role is used for both sending events and importing phone numbers from AWS End User Messaging Social into Connect Customer.
 
 To create new IAM polices, do the following:
 
@@ -187,4 +187,4 @@ To create new IAM polices, do the following:
 ## Next steps
 <a name="managing-event-destinations_next_steps"></a>
 
-Once you have set up your Amazon SNS topic, you must subscribe an endpoint to the topic. The endpoint will start to receive messages published to the associated topic. For more information on subscribing to a topic, see [Subscribing to an Amazon SNS topic](https://docs.aws.amazon.com//sns/latest/dg/sns-create-subscribe-endpoint-to-topic.html) in the *Amazon SNS Developer Guide*.
+Once you have set up your Amazon SNS topic, you must subscribe an endpoint to the topic. The endpoint will start to receive messages published to the associated topic. For more information on subscribing to a topic, see [Subscribing to an Amazon SNS topic](https://docs.aws.amazon.com/sns/latest/dg/sns-create-subscribe-endpoint-to-topic.html) in the *Amazon SNS Developer Guide*.

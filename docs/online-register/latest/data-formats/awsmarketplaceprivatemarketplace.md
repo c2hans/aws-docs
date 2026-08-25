@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsm
 
 AWS Marketplace Private Marketplace provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="aws-marketplace-DescribePrivateMarketplaceRequests"></a>[DescribePrivateMarketplaceRequests](https://docs.aws.amazon.com/marketplace/latest/buyerguide/private-marketplace.html) | Describe requests and associated products in the Private Marketplace. This action can be performed by any account in an AWS Organization, provided the user has permissions to do so, and the Organization's Service Control Policies allow it | List |

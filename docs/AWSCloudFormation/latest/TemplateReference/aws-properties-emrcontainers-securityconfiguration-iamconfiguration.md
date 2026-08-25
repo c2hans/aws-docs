@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::EMRContainers::SecurityConfiguration IAMConfiguration
 <a name="aws-properties-emrcontainers-securityconfiguration-iamconfiguration"></a>
 
-<a name="aws-properties-emrcontainers-securityconfiguration-iamconfiguration-description"></a>The `IAMConfiguration` property type specifies Property description not available. for an [AWS::EMRContainers::SecurityConfiguration](aws-resource-emrcontainers-securityconfiguration.md).
+Contains the IAM settings for a security configuration, including the system role used for authentication.
 
 ## Syntax
 <a name="aws-properties-emrcontainers-securityconfiguration-iamconfiguration-syntax"></a>
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-emrcontainers-securityconfiguration-iamconfiguration-properties"></a>
 
 `SystemRole`  <a name="cfn-emrcontainers-securityconfiguration-iamconfiguration-systemrole"></a>
-Property description not available.
+The Amazon Resource Name (ARN) of the system role used by the security configuration.
 *Required*: No
 *Type*: String
 *Pattern*: `^arn:(aws|aws-us-gov|aws-cn|aws-iso|aws-iso-b):iam::\d{12}:role/.+$`

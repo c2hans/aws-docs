@@ -33,8 +33,6 @@ Be aware that at the time these release notes are published, the new platform ve
 ### Ruby
 <a name="release-2023-04-18-ruby.platforms.ruby"></a>
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  Package Manager  |  Application Server  |  AWS X-Ray  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- | --- |
 |  ** Ruby 3.0 AL2 version 3.6.6** <br /> * 64bit Amazon Linux 2 v3.6.6 running Ruby 3.0 *  | 2.0.20230404 | Ruby 3.0.6-p216 | RubyGems 3.4.10 | Puma 6.2.1 | 3.2.0 | nginx 1.22.1 |

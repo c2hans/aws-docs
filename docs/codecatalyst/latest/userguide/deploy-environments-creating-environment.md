@@ -12,7 +12,7 @@ Use the following instructions to create an environment that you can later assoc
 **Before you begin**
 
 You need the following:
-+ A CodeCatalyst space. For more information, see [Set up and sign in to CodeCatalystSet up and sign in to CodeCatalyst](setting-up-topnode.md).
++ A CodeCatalyst space. For more information, see [Set up and sign in to CodeCatalyst](setting-up-topnode.md).
 + A CodeCatalyst project. For more information, see [Creating a project with a blueprint](projects-create.md#projects-create-console-template).
 + An AWS account connection that includes the IAM roles your workflow action will need to access AWS. For information about creating an account connection, see [Allowing access to AWS resources with connected AWS accounts](ipa-connect-account.md). You can use a maximum of one account connection per environment.
 **Note**

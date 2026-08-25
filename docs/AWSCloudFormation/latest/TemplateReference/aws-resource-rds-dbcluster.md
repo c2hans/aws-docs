@@ -30,7 +30,7 @@ Update the stack.
 
 Currently, when you are updating the stack for an Aurora Serverless DB cluster, you can't include changes to any other properties when you specify one of the following properties: `PreferredBackupWindow`, `PreferredMaintenanceWindow`, and `Port`. This limitation doesn't apply to provisioned DB clusters.
 
-For more information about updating other properties of this resource, see ` [ModifyDBCluster](https://docs.aws.amazon.com//AmazonRDS/latest/APIReference/API_ModifyDBCluster.html) `. For more information about updating stacks, see [AWS CloudFormation Stacks Updates](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks.html).
+For more information about updating other properties of this resource, see ` [ModifyDBCluster](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBCluster.html) `. For more information about updating stacks, see [AWS CloudFormation Stacks Updates](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks.html).
 
  **Deleting DB clusters**
 
@@ -221,7 +221,7 @@ A list of Availability Zones (AZs) where instances in the DB cluster can be crea
 Valid for: Aurora DB clusters only
 *Required*: No
 *Type*: Array of String
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 `BacktrackWindow`  <a name="cfn-rds-dbcluster-backtrackwindow"></a>
 The target backtrack window, in seconds. To disable backtracking, set this value to `0`.

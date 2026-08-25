@@ -14,8 +14,6 @@ Update the list of customer-defined denied actions for Automated IAM Provisionin
 ## Change Type Details
 <a name="ct-2r9xvd3sdsic0-MMAu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2r9xvd3sdsic0 |

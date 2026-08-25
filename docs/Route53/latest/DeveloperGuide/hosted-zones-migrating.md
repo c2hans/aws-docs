@@ -137,8 +137,6 @@ You should lower the NS TTL in the new zone as well, similar to Lower TTL settin
 
 If your zone contains a large number of records, you can export the records you want to migrate to a file, edit the file, and then use the edited file to create records in the new hosted zone. The following procedure uses AWS CLI commands, though third-party tools are also available for this purpose.<a name="hosted-zones-migrating-create-file-procedure"></a>
 
-****
-
 1. Run the following command:
 
    ```

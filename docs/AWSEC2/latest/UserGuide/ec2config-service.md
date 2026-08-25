@@ -46,10 +46,10 @@ EC2Config runs initial startup tasks when the instance is first started and then
 + Execute the specified user data (and Cloud-Init, if it's installed). For more information about specifying user data, see [Run commands when you launch an EC2 instance with user data input](user-data.md).
 
 EC2Config performs the following tasks every time the instance starts:
-+ Change the host name to match the private IP address in Hex notation (this task is disabled by default and must be enabled in order to run at instance start).
++ Change the host name to match the private IP address in Hex notation (this task is disabled by default and must be enabled to run at instance start).
 + Configure the key management server (AWS KMS), check for Windows activation status, and activate Windows as necessary.
 + Mount all Amazon EBS volumes and instance store volumes, and map volume names to drive letters.
-+ Write event log entries to the console to help with troubleshooting (this task is disabled by default and must be enabled in order to run at instance start).
++ Write event log entries to the console to help with troubleshooting (this task is disabled by default and must be enabled to run at instance start).
 + Write to the console that Windows is ready.
 + Add a custom route to the primary network adapter to enable the following IP addresses when a single NIC or multiple NICs are attached: `169.254.169.250`, `169.254.169.251`, and `169.254.169.254`. These addresses are used by Windows Activation and when you access instance metadata.
 **Note**

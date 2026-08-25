@@ -40,8 +40,6 @@ The descriptions of the numbered footnotes ([*n*]) are at the end of this topic.
 **Note**
 You might need to scroll horizontally or vertically to see all of the data in this table.
 
-****
-
 | API | Enabled | Disabled |  **Pending deletion** **Pending replica deletion**  | Pending import | Unavailable | Creating | Updating |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | CancelKeyDeletion | ![Red circle with slash over icon representing no sharing or sharing prohibited.](http://docs.aws.amazon.com/kms/latest/developerguide/images/icon-disabled-pending-deletion.png)[4] | ![Red circle with slash over icon representing no sharing or sharing prohibited.](http://docs.aws.amazon.com/kms/latest/developerguide/images/icon-disabled-pending-deletion.png)[4] | ![Green checkmark icon indicating success or completion.](http://docs.aws.amazon.com/kms/latest/developerguide/images/icon-successful.png) | ![Red circle with slash over icon representing no sharing or sharing prohibited.](http://docs.aws.amazon.com/kms/latest/developerguide/images/icon-disabled-pending-deletion.png)[4] | ![Red circle with slash over icon representing no sharing or sharing prohibited.](http://docs.aws.amazon.com/kms/latest/developerguide/images/icon-disabled-pending-deletion.png)[4], [13] | ![Red circle with slash over icon representing no sharing or sharing prohibited.](http://docs.aws.amazon.com/kms/latest/developerguide/images/icon-disabled-pending-deletion.png)[4] | ![Red circle with slash over icon representing no sharing or sharing prohibited.](http://docs.aws.amazon.com/kms/latest/developerguide/images/icon-disabled-pending-deletion.png)[4] |

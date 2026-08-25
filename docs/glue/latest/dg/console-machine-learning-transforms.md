@@ -71,12 +71,12 @@ If the status is Failed, an error message is displayed describing the reason for
  You can view, delete, set up and teach, or tune a transform on the AWS Glue console. Select the check box next to the transform in the list, choose **Action**, and then choose the action that you want to take.
 
 ### Creating a new ML transform
-<a name="w2aac37c11c24c23c11b5"></a>
+<a name="w2aac37c11c28c23c11b5"></a>
 
  To add a new machine learning transform, choose **Create transform**. Follow the instructions in the **Add job** wizard. For more information, see [Record matching with AWS Lake Formation FindMatches](machine-learning.md).
 
 #### Step 1. Set transform properties.
-<a name="w2aac37c11c24c23c11b5b7"></a>
+<a name="w2aac37c11c28c23c11b5b7"></a>
 
 1. Enter the name and description (optional).
 
@@ -87,14 +87,14 @@ If the status is Failed, an error message is displayed describing the reason for
 1. Optionally, set Tags. Tags are labels that you can assign to an AWS resource. Each tag consists of a key and an optional value. Tags can be used to search and filter your resource or track your AWS costs.
 
 #### Step 2. Choose table and primary key.
-<a name="w2aac37c11c24c23c11b5b9"></a>
+<a name="w2aac37c11c28c23c11b5b9"></a>
 
 1. Choose the AWS Glue Catalog database and table.
 
 1. Choose a primary key from the selected table. The primary key column typically contains a unique identifier for every record in the data source.
 
 #### Step 3. Select tuning options.
-<a name="w2aac37c11c24c23c11b5c11"></a>
+<a name="w2aac37c11c28c23c11b5c11"></a>
 
 1.  For **Recall vs. precision**, choose the tuning value to tune the transform to favor recall or precision. By default, **Balanced** is selected, but you can choose to favor recall or favor precision, or choose **Custom** and enter a value between 0.0 and 1.0 (inclusive).
 
@@ -103,7 +103,7 @@ If the status is Failed, an error message is displayed describing the reason for
 1.  For **Match enforcement**, choose **Force output to match labels** if you want to teach the ML transform by forcing the output to match the labels used.
 
 #### Step 4. Review and create.
-<a name="w2aac37c11c24c23c11b5c13"></a>
+<a name="w2aac37c11c28c23c11b5c13"></a>
 
 1.  Review the options for steps 1 – 3.
 
@@ -134,7 +134,7 @@ The **Transform properties** page includes attributes of your transform. It show
 + **Spark version** is related to the AWS Glue version you chose in the **Task run properties** when adding the transform. AWS Glue 1.0 and Spark 2.4 is recommended for most customers. For more information, see [AWS Glue Versions](https://docs.aws.amazon.com/glue/latest/dg/release-notes.html#release-notes-versions).
 
 ### History, Estimate quality and Tags tabs
-<a name="w2aac37c11c24c23c13b5"></a>
+<a name="w2aac37c11c28c23c13b5"></a>
 
  Transform details include the information that you defined when you created the transform. To view the details of a transform, select the transform in the **Machine learning transforms** list, and review the information on the following tabs:
 + History
@@ -182,7 +182,7 @@ AWS Glue estimates the quality of your transform by presenting the internal mach
 You can tune this filtering method primarily by specifying the **Lower Cost-Accuracy** tuning value. As the tuning value gets closer to favor **Accuracy**, the system does a more thorough and expensive search for pairs of records that might be matches. More pairs of records are fed to your machine-learned model, and your `ML transform`'s end-to-end or true recall gets closer to the estimated recall metric. As a result, changes in the end-to-end quality of your matches as a result of changes in the cost/accuracy tradeoff for your matches will typically not be reflected in the quality estimate.
 
 #### Tags
-<a name="w2aac37c11c24c23c13b5c13"></a>
+<a name="w2aac37c11c28c23c13b5c13"></a>
 
  Tags are labels that you can assign to an AWS resource. Each tag consists of a key and an optional value. Tags can be used to search and filter your resource or track your AWS costs.
 

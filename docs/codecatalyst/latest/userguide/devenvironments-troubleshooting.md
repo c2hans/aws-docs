@@ -7,7 +7,7 @@ Amazon CodeCatalyst is no longer open to new customers. Existing customers can c
 # Troubleshooting problems with Dev Environments
 <a name="devenvironments-troubleshooting"></a>
 
-Consult the following sections to troubleshoot problems related to Dev Environments. For more information about Dev Environments, see [Write and modify code with Dev Environments in CodeCatalystWrite and modify code with Dev Environments](devenvironment.md).
+Consult the following sections to troubleshoot problems related to Dev Environments. For more information about Dev Environments, see [Write and modify code with Dev Environments in CodeCatalyst](devenvironment.md).
 
 **Topics**
 + [My Dev Environment creation didn't succeed due to a problem with quotas](#troubleshooting-devenvironments-create)

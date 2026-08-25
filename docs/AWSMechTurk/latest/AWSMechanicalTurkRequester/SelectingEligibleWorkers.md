@@ -28,8 +28,6 @@ The `QualificationRequirement` data structure comprises four attributes: `Qualif
 
 The `Comparator` attribute specifies how the qualification type is evaluated and is typically used with a value. The following table illustrates the values that can be used for `Comparator` and the required value attribute, if any. The existence `Comparators` don't require a value attribute since they are only used to evaluate if the qualification type has been assigned, not the value that has been associated with it.
 
-****
-
 | Type  | Values  | Required value attribute  |  Example  |
 | --- | --- | --- | --- |
 |  Existence  |  Exists  |  None  | Only include workers that have been assigned the qualification type, regardless of value.  |

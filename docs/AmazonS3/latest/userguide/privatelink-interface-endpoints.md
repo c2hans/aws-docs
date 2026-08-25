@@ -141,12 +141,12 @@ If you have a gateway endpoint in your VPC, you can automatically route in-VPC r
 
 **Important**
 To take advantage of the lowest cost network path when using **Enable private DNS only for inbound endpoints**, a gateway endpoint must be present in your VPC. The presence of a gateway endpoint helps ensure that in-VPC traffic always routes over the AWS private network when the **Enable private DNS only for inbound endpoints** option is selected. You must maintain this gateway endpoint while you have the **Enable private DNS only for inbound endpoints** option selected. If you want to delete your gateway endpoint you must first clear **Enable private DNS only for inbound endpoints**.
-If you want to update an existing interface endpoint to **Enable private DNS only for inbound endpoints**, first confirm that your VPC has an S3 gateway endpoint. For more information about gateway endpoints and managing private DNS names, see [Gateway VPC endpoints](https://docs.aws.amazon.com//vpc/latest/privatelink/vpce-gateway.html) and [Manage DNS names](https://docs.aws.amazon.com//vpc/latest/privatelink/manage-dns-names.html) respectively in the *AWS PrivateLink Guide*.
+If you want to update an existing interface endpoint to **Enable private DNS only for inbound endpoints**, first confirm that your VPC has an S3 gateway endpoint. For more information about gateway endpoints and managing private DNS names, see [Gateway VPC endpoints](https://docs.aws.amazon.com/vpc/latest/privatelink/vpce-gateway.html) and [Manage DNS names](https://docs.aws.amazon.com/vpc/latest/privatelink/manage-dns-names.html) respectively in the *AWS PrivateLink Guide*.
 When enabling **Private DNS for inbound resolver only**, the `dnsRecordIpType` of the gateway endpoint must either match that of interface endpoint or be **service defined**.
 
 The **Enable private DNS only for inbound endpoints** option is available only for services that support gateway endpoints.
 
-For more information about creating a VPC endpoint that uses **Enable private DNS only for inbound endpoints**, see [Create an interface endpoint](https://docs.aws.amazon.com//vpc/latest/privatelink/create-interface-endpoint.html) in the *AWS PrivateLink Guide*.
+For more information about creating a VPC endpoint that uses **Enable private DNS only for inbound endpoints**, see [Create an interface endpoint](https://docs.aws.amazon.com/vpc/latest/privatelink/create-interface-endpoint.html) in the *AWS PrivateLink Guide*.
 
 **Using the VPC console**
 
@@ -242,7 +242,7 @@ aws s3 ls s3://{{my-bucket}}/ --region {{us-east-1}} --endpoint-url https://buck
   aws s3api list-objects-v2 --bucket arn:aws:s3:{{us-east-1:123456789012:accesspoint/accesspointexamplename}} --region {{us-east-1}} --endpoint-url https://accesspoint.{{vpce-1a2b3c4d-5e6f.s3.us-east-1.vpce.amazonaws.com}}
   ```
 
-  If you can't run the command successfully, update your AWS CLI to the latest version and try again. For more information on the update instructions, see [ Installing or updating the latest version of the AWS CLI](https://docs.aws.amazon.com//cli/latest/userguide/getting-started-install.html#getting-started-install-instructions) in the *AWS Command Line Interface User Guide*.
+  If you can't run the command successfully, update your AWS CLI to the latest version and try again. For more information on the update instructions, see [ Installing or updating the latest version of the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html#getting-started-install-instructions) in the *AWS Command Line Interface User Guide*.
 + **Method 2** – Using the alias of the access point with the regional bucket endpoint
 
   In the following example, replace the access point alias `{{accesspointexamplename-8tyekmigicmhun8n9kwpfur39dnw4use1a-s3alias}}`, the Region `{{us-east-1}}`, and the VPC endpoint ID `{{vpce-1a2b3c4d-5e6f.s3.us-east-1.vpce.amazonaws.com}}` with your own information.

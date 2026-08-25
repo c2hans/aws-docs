@@ -25,15 +25,15 @@ For details, see the S3 documentation on [controlling ownership of objects](http
 
 Below, we describe one possible workflow that uses EventBridge events to start a composition that broadcasts the stage to an IVS channel when a participant publishes. Alternatively, you can start and stop compositions based on your own app logic. See [Composite Recording](rt-composite-recording.md) for another example which showcases the use of server-side composition to record a stage directly to an S3 bucket.
 
-1. Create an IVS channel. See [Getting Started with Amazon IVS Low-Latency Streaming](https://docs.aws.amazon.com//ivs/latest/LowLatencyUserGuide/getting-started.html).
+1. Create an IVS channel. See [Getting Started with Amazon IVS Low-Latency Streaming](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/getting-started.html).
 
 1. Create an IVS stage and participant tokens for each publisher.
 
-1. Create an [EncoderConfiguration](https://docs.aws.amazon.com//ivs/latest/RealTimeAPIReference/API_EncoderConfiguration.html).
+1. Create an [EncoderConfiguration](https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_EncoderConfiguration.html).
 
-1. Join the stage and publish to it. (See the "Publishing and Subscribing" sections of the real-time streaming broadcast SDK guides: [Web](https://docs.aws.amazon.com//ivs/latest/RealTimeUserGuide/web-publish-subscribe.html), [Android](https://docs.aws.amazon.com//ivs/latest/RealTimeUserGuide/android-publish-subscribe.html), and [iOS](https://docs.aws.amazon.com//ivs/latest/RealTimeUserGuide/ios-publish-subscribe.html).)
+1. Join the stage and publish to it. (See the "Publishing and Subscribing" sections of the real-time streaming broadcast SDK guides: [Web](https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/web-publish-subscribe.html), [Android](https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/android-publish-subscribe.html), and [iOS](https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/ios-publish-subscribe.html).)
 
-1. When you receive a Participant Published EventBridge event, call [StartComposition](https://docs.aws.amazon.com//ivs/latest/RealTimeAPIReference/API_StartComposition.html) with your desired layout configuration.
+1. When you receive a Participant Published EventBridge event, call [StartComposition](https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_StartComposition.html) with your desired layout configuration.
 
 1. Wait for a few seconds and see the composited view in the channel playback.
 
@@ -127,4 +127,4 @@ The response is:
 }
 ```
 
-**Note**: You need to have publisher participants actively publishing to the stage to keep the composition alive. For more information, see the "Publishing and Subscribing" sections of the real-time streaming broadcast SDK guides: [Web](https://docs.aws.amazon.com//ivs/latest/RealTimeUserGuide/web-publish-subscribe.html), [Android](https://docs.aws.amazon.com//ivs/latest/RealTimeUserGuide/android-publish-subscribe.html), and [iOS](https://docs.aws.amazon.com//ivs/latest/RealTimeUserGuide/ios-publish-subscribe.html). You must create a distinct stage token for each participant.
+**Note**: You need to have publisher participants actively publishing to the stage to keep the composition alive. For more information, see the "Publishing and Subscribing" sections of the real-time streaming broadcast SDK guides: [Web](https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/web-publish-subscribe.html), [Android](https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/android-publish-subscribe.html), and [iOS](https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/ios-publish-subscribe.html). You must create a distinct stage token for each participant.

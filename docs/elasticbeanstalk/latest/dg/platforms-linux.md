@@ -33,7 +33,7 @@ You can migrate your application from an Elastic Beanstalk AL1 or AL2 platform b
 ### Amazon Linux 2023
 <a name="platforms-linux.versions.al2023"></a>
 
-AWS announced the [general availability](https://aws.amazon.com//blogs/aws/amazon-linux-2023-a-cloud-optimized-linux-distribution-with-long-term-support/) of Amazon Linux 2023 in March of 2023. The *Amazon Linux 2023 User Guide* summarizes key differences between Amazon Linux 2 and Amazon Linux 2023. For more information, see [Comparing Amazon Linux 2 and Amazon Linux 2023](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html) in the user guide.
+AWS announced the [general availability](https://aws.amazon.com/blogs/aws/amazon-linux-2023-a-cloud-optimized-linux-distribution-with-long-term-support/) of Amazon Linux 2023 in March of 2023. The *Amazon Linux 2023 User Guide* summarizes key differences between Amazon Linux 2 and Amazon Linux 2023. For more information, see [Comparing Amazon Linux 2 and Amazon Linux 2023](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html) in the user guide.
 
 There is a high degree of compatibility between Elastic Beanstalk Amazon Linux 2 and Amazon Linux 2023 platforms. Although there are some differences to note:
 + **Instance Metadata Service Version 1 (IMDSv1)** – The [DisableIMDSv1](command-options-general.md#command-options-general-autoscalinglaunchconfiguration) option setting defaults to `true` on AL2023 platforms. The default is `false` on AL2 platforms.

@@ -33,6 +33,7 @@ AWS provides the following base images for Python:
 
 | Tags | Runtime | Operating system | Dockerfile | Deprecation |
 | --- | --- | --- | --- | --- |
+| 3.15 | Python 3.15 | Amazon Linux 2023 | [Dockerfile for Python 3.15 on GitHub](https://github.com/aws/aws-lambda-base-images/blob/python3.15/Dockerfile.python3.15) |  Not scheduled  |
 | 3.14 | Python 3.14 | Amazon Linux 2023 | [Dockerfile for Python 3.14 on GitHub](https://github.com/aws/aws-lambda-base-images/blob/python3.14/Dockerfile.python3.14) |  Jun 30, 2029  |
 | 3.13 | Python 3.13 | Amazon Linux 2023 | [Dockerfile for Python 3.13 on GitHub](https://github.com/aws/aws-lambda-base-images/blob/python3.13/Dockerfile.python3.13) |  Jun 30, 2029  |
 | 3.12 | Python 3.12 | Amazon Linux 2023 | [Dockerfile for Python 3.12 on GitHub](https://github.com/aws/aws-lambda-base-images/blob/python3.12/Dockerfile.python3.12) |  Oct 31, 2028  |

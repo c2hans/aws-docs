@@ -8,8 +8,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/Hive-release-his
 ## Amazon EMR 6.9.0 - Hive changes
 <a name="Hive-release-history-changes-690"></a>
 
-****
-
 | Type | Description |
 | --- | --- |
 | Upgrade | Upgrade Jetty to [9.4.48.v20220622](https://github.com/eclipse/jetty.project/releases/tag/jetty-9.4.48.v20220622) |

@@ -47,6 +47,16 @@ This view shows your infrastructure at different levels of granularity based on 
 + **Components** – Shows individual components within containers and their relationships.
 + **All Resources** – Shows the complete view with all discovered resources and their relationships.
 
+## Exporting the topology
+<a name="exporting-the-topology"></a>
+
+You can export the current topology view from the Topology page in the Operator Web App using the **Download** menu. Three formats are available:
++ **PNG** – A raster image of the topology graph as currently displayed, useful for sharing in documents, tickets, or presentations.
++ **JSON** – A structured representation of the topology's resources and relationships that you can process programmatically or archive.
++ **Mermaid** – The topology expressed as [Mermaid](https://mermaid.js.org/) diagram source on the Mermaid website. You can embed it in Markdown-based documentation or render it in any tool that supports Mermaid.
+
+The export reflects the view currently selected in the **Show** menu, so you can download any of the available views, such as System, Container, or Components.
+
 ## Resource discovery
 <a name="resource-discovery"></a>
 

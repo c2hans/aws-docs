@@ -136,4 +136,4 @@ If a user belongs to multiple groups that are mapped to different roles, they ke
 After you downgrade a user, they lose access to the capabilities included only with the Amazon Quick Enterprise subscription. Before you downgrade, make sure any assets the user owns that you want to keep are transferred to another user. Changes to users or groups can take up to five minutes to propagate.
 
 **Note**
-For questions about billing adjustments or refunds related to a subscription change, contact [AWS Support](https://aws.amazon.com//contact-us/).
+For questions about billing adjustments or refunds related to a subscription change, contact [AWS Support](https://aws.amazon.com/contact-us/).

@@ -18,8 +18,6 @@ The following table summarizes the key value pairs found in the JSON output from
 
 The proceeding sections provide more granular details about each key value pair.
 
-****
-
 | Parameter | Example | Description |
 | --- | --- | --- |
 | `flowDefinitionArn` |  arn:aws:sagemaker:us-west-2:{{111122223333}}:flow-definition/{{flow-definition-name}}  | The ARN of the human review workflow (flow definition) that created the human loop. |

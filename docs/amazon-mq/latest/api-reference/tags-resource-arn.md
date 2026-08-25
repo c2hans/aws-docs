@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/api-reference/tags-reso
 # Tag
 <a name="tags-resource-arn"></a>
 
-A tag is a key-value pair associated with a resource. You can use these metadata tags to identify the purpose of a broker or configuration. For more information see [Tagging resources](https://docs.aws.amazon.com//amazon-mq/latest/developer-guide/amazon-mq-tagging.html) in the Amazon MQ Developer Guide.
+A tag is a key-value pair associated with a resource. You can use these metadata tags to identify the purpose of a broker or configuration. For more information see [Tagging resources](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-mq-tagging.html) in the Amazon MQ Developer Guide.
 
 ## URI
 <a name="tags-resource-arn-url"></a>

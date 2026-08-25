@@ -69,7 +69,7 @@ To complete this tutorial, you must meet the following prerequisites:
     }
     ```
   + <a name="sm-req-iam-sagemanakeredgedevicefleetpolicy"></a>The [AmazonSageMakerEdgeDeviceFleetPolicy](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/service-role/AmazonSageMakerEdgeDeviceFleetPolicy) IAM managed policy.
-  + The [AmazonSageMakerFullAccess](https://console.aws.amazon.com//iamv2/home?region=us-east-1#/policies/details/arn%3Aaws%3Aiam%3A%3Aaws%3Apolicy%2FAmazonSageMakerFullAccess?section=policy_permissions) IAM managed policy.
+  + The [AmazonSageMakerFullAccess](https://console.aws.amazon.com/iamv2/home?region=us-east-1#/policies/details/arn%3Aaws%3Aiam%3A%3Aaws%3Apolicy%2FAmazonSageMakerFullAccess?section=policy_permissions) IAM managed policy.
   + The `s3:GetObject` action for the S3 bucket that contains your component artifacts, as shown in the following IAM policy example.
 
 ------

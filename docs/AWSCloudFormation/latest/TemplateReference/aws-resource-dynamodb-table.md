@@ -101,7 +101,7 @@ Properties:
 `AttributeDefinitions`  <a name="cfn-dynamodb-table-attributedefinitions"></a>
 A list of attributes that describe the key schema for the table and indexes.
 This property is required to create a DynamoDB table.
-Update requires: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt). Replacement if you edit an existing AttributeDefinition.
+You can add an `AttributeDefinition` without interruption. Changing the type of an existing `AttributeDefinition` requires replacement of the table.
 *Required*: Conditional
 *Type*: Array of [AttributeDefinition](aws-properties-dynamodb-table-attributedefinition.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

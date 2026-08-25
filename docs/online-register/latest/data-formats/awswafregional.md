@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsw
 
 AWS WAF Regional provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="waf-regional-GetByteMatchSet"></a>[GetByteMatchSet](https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_GetByteMatchSet.html) | Retrieve a ByteMatchSet | Read |

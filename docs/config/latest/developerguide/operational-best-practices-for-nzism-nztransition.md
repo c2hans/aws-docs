@@ -15,8 +15,6 @@ The Foundation part of this conformance pack can be deployed to the Sydney and g
 
 The NZISM is licensed under the Creative Commons Attribution 4.0 New Zealand licence, available at [https://creativecommons.org/licenses/by/4.0/](https://creativecommons.org/licenses/by/4.0/). Copyright information can be found at [NZISM New Zealand Information Security Manual \| Legal, Privacy, and Copyright](https://www.nzism.gcsb.govt.nz/legal-privacy-and-copyright/).
 
-****
-
 | Control ID  | Control Description  | AWS Config Rule  | Guidance  |
 | --- | --- | --- | --- |
 | 1661 | Software security, Web Application Development, Agency website content (14.5.6.C.01.) | [cloudfront-default-root-object-configured](cloudfront-default-root-object-configured.md) | This control checks whether an Amazon CloudFront distribution is configured to return a specific object that is the default root object. The control fails if the CloudFront distribution does not have a default root object configured. A user might sometimes request the distribution's root URL instead of an object in the distribution. When this happens, specifying a default root object can help you to avoid exposing the contents of your web distribution. This rule must be applied in the us-east-1 region. Deploy with template parameter DeployEdgeRules = true |

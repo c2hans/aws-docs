@@ -46,7 +46,7 @@ You create a list by specifying a list name. You can optionally provide a descri
 **Important**
 If your list contains IP addresses, make sure to assign **IP\_ADDRESS** as the variable type. If you don’t assign a variable type, Amazon Fraud Detector assumes the list to be of **FREE\_FORM\_TEXT** variable type.
 
-The following example uses [CreateList](https://docs.aws.amazon.com//frauddetector/latest/api/API_CreateList.html) API operation to create an `allow_email_ids` list by providing a description, a variable type, and by adding four list entries.
+The following example uses [CreateList](https://docs.aws.amazon.com/frauddetector/latest/api/API_CreateList.html) API operation to create an `allow_email_ids` list by providing a description, a variable type, and by adding four list entries.
 
 ```
 import boto3

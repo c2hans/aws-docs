@@ -27,7 +27,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/blue-green-deployment
 
  Use the following procedure to promote the green environment to serve production traffic.
 
-1. Navigate to the environment's dashboard in the [Elastic Beanstalk console](https://console.aws.amazon.com//elasticbeanstalk/).
+1. Navigate to the environment's dashboard in the [Elastic Beanstalk console](https://console.aws.amazon.com/elasticbeanstalk/).
 
 1. In the **Actions** menu, choose **Swap Environment URL.**
 

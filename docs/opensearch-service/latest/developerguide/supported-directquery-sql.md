@@ -218,8 +218,6 @@ For information about the limits that apply when querying CloudWatch Logs from O
 **Note**
 To see which AWS data source integrations support this SQL command, see [Supported OpenSearch SQL commands and functions](#supported-directquery-sql).
 
-****
-
 | Function | Description |
 | --- | --- |
 | ascii(str) | Returns the numeric value of the first character of str. |
@@ -1364,8 +1362,6 @@ SELECT upper('Feathers');
 **Note**
 To see which AWS data source integrations support this SQL command, see [Supported OpenSearch SQL commands and functions](#supported-directquery-sql).
 
-****
-
 | Function | Description |
 | --- | --- |
 | add\_months(start\_date, num\_months) | Returns the date that is num\_months after start\_date. |
@@ -2363,8 +2359,6 @@ ORDER BY department;
 **Note**
 To see which AWS data source integrations support this SQL command, see [Supported OpenSearch SQL commands and functions](#supported-directquery-sql).
 
-****
-
 | Function | Description |
 | --- | --- |
 | coalesce(expr1, expr2, ...) | Returns the first non-null argument if exists. Otherwise, null. |
@@ -2454,8 +2448,6 @@ SELECT CASE WHEN 1 < 0 THEN 1 WHEN 2 < 0 THEN 2.0 END;
 
 **Note**
 To see which AWS data source integrations support this SQL command, see [Supported OpenSearch SQL commands and functions](#supported-directquery-sql).
-
-****
 
 | Function | Description |
 | --- | --- |
@@ -2623,8 +2615,6 @@ SELECT to_json(array(map('a', 1)));
 
 **Note**
 To see which AWS data source integrations support this SQL command, see [Supported OpenSearch SQL commands and functions](#supported-directquery-sql).
-
-****
 
 | Function | Description |
 | --- | --- |
@@ -3120,8 +3110,6 @@ ORDER BY id;
 **Note**
 To see which AWS data source integrations support this SQL command, see [Supported OpenSearch SQL commands and functions](#supported-directquery-sql).
 
-****
-
 | Function | Description |
 | --- | --- |
 | bigint(expr) | Casts the value `expr` to the target data type `bigint`. |
@@ -3155,8 +3143,6 @@ SELECT cast(field as int);
 
 **Note**
 To see which AWS data source integrations support this SQL command, see [Supported OpenSearch SQL commands and functions](#supported-directquery-sql).
-
-****
 
 | Function | Description |
 | --- | --- |
@@ -3545,8 +3531,6 @@ SELECT false or NULL;
 **Note**
 To see which AWS data source integrations support this SQL command, see [Supported OpenSearch SQL commands and functions](#supported-directquery-sql).
 
-****
-
 | Function | Description |
 | --- | --- |
 | element\_at(array, index) | Returns element of array at given (1-based) index. |
@@ -3674,8 +3658,6 @@ SELECT try_element_at(map(1, 'a', 2, 'b'), 2);
 
 **Note**
 To see which AWS data source integrations support this SQL command, see [Supported OpenSearch SQL commands and functions](#supported-directquery-sql).
-
-****
 
 | Function | Description |
 | --- | --- |
@@ -4556,8 +4538,6 @@ SELECT width_bucket(INTERVAL '1' DAY, INTERVAL '0' DAY, INTERVAL '10' DAY, 10);
 
 **Note**
 To see which AWS data source integrations support these SQL functions, see [Supported OpenSearch SQL commands and functions](#supported-directquery-sql).
-
-****
 
 | Function | Description |
 | --- | --- |

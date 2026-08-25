@@ -119,7 +119,7 @@ Follow the steps below for every Lambda function that you want to impact:
 ## Configure an AWS FIS experiment
 <a name="configure-fis-experiment-lambda-actions"></a>
 
-Before running your experiment, ensure that you have attached the Amazon S3 write access policy that you created in the prerequisites to the experiment roles that will use AWS FIS Lambda actions. For more information on how to set up an AWS FIS experiment, see [Managing AWS FIS experiment templatesManaging your AWS FIS experiments](experiments.md).
+Before running your experiment, ensure that you have attached the Amazon S3 write access policy that you created in the prerequisites to the experiment roles that will use AWS FIS Lambda actions. For more information on how to set up an AWS FIS experiment, see [Managing AWS FIS experiment templates](experiments.md).
 
 ## Logging
 <a name="lambda-actions-logging"></a>
@@ -262,4 +262,4 @@ The following is a list of environment variables for the AWS FIS Lambda extensio
 + `AWS_FIS_SLOW_POLL_INTERVAL_SECONDS` ‐ Optional. If set will override the polling interval (in seconds) while the extension is not injecting faults and waiting for a fault configuration to be added to configuration location. Defaults to `60`.
 + `AWS_FIS_PROXY_RUNTIME_API_ENDPOINT` ‐ Optional. If set will override the value of `AWS_LAMBDA_RUNTIME_API` to define where the AWS FIS extension interacts with the AWS Lambda runtime API to control function invocation. Expects IP:PORT, for example, `127.0.0.1:9000`. For more information on `AWS_LAMBDA_RUNTIME_API`, see [Using the Lambda runtime API for custom runtimes ](https://docs.aws.amazon.com/lambda/latest/dg/runtimes-api.html) in the *AWS Lambda user guide.*
 + `AWS_FIS_PROXY_LISTENER_PORT` ‐ Optional. Defines the port on which the AWS FIS Lambda extension exposes an AWS Lambda runtime API proxy that can be used by another extension or the runtime. Defaults to `9100`.
-+ `AWS_FIS_POLL_MAX_WAIT_MILLISECONDS` ‐ Optional. If set to non-zero value, this variable defines the number of milliseconds the extension will wait for an in-flight async poll to finish before evaluating fault configurations and starting the invocation of the runtime. Defaults to `0`.
++ `AWS_FIS_POLL_MAX_WAIT_MILLISECONDS` ‐ Optional. If set to a non-zero value, this variable defines the number of milliseconds the extension will wait for an in-flight async poll to finish before evaluating fault configurations and starting the invocation of the runtime. Defaults to `0`. When using `preventExecution` set to `true` in the `aws:lambda:invocation-error` action, we recommend setting this variable to at least `2000` (2 seconds) to ensure the extension has up-to-date fault configuration before deciding whether to block function execution.

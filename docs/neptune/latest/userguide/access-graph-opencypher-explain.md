@@ -6,8 +6,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/access-graph-op
 <a name="access-graph-opencypher-explain"></a>
 
 The openCypher `explain` feature is a self-service tool in Amazon Neptune that helps you understand the execution approach taken by the Neptune engine. To invoke explain, you pass a parameter to an openCypher [HTTPS](access-graph-opencypher-queries.md) request with `explain={{mode}}`, where the `mode` value can be one of the following:
-
-****
 + **`static`**   –   In `static` mode, `explain` prints only the static structure of the query plan. It doesn't actually run the query.
 + **`dynamic`**   –   In `dynamic` mode, `explain` also runs the query, and includes dynamic aspects of the query plan. These may include the number of intermediate bindings flowing through the operators, the ratio of incoming bindings to outgoing bindings, and the total time taken by each operator.
 + **`details`**   –   In `details` mode, `explain` prints the information shown in dynamic mode plus additional details, such as the actual openCypher query string and the estimated range count for the pattern underlying a join operator.

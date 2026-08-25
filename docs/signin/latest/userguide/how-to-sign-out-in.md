@@ -2,15 +2,49 @@
 source_url: https://docs.aws.amazon.com/signin/latest/userguide/how-to-sign-out-in.html
 ---
 
-# Sign out of AWS
+# Sign out of your AWS account
 <a name="how-to-sign-out-in"></a>
 
 How you sign out of your AWS account depends on what type of AWS user you are. You can be an account root user, an IAM user, a user in IAM Identity Center, a federated identity, or an AWS Builder ID user. If you're not sure what kind of user you are, see [Determine your user type](user-types-list.md).
 
 **Topics**
++ [Sign out of a project](#sign-out-project)
++ [Sign out of AWS Settings](#sign-out-aws-settings)
 + [Sign out of the AWS Management Console](#console-signing-out-root-IAM-users)
 + [Sign out of your AWS access portal](#aws-access-portal-signing-out-iam-identity-center-user)
 + [Sign out of AWS Builder ID](#sign-out-all-aws_builder_id)
+
+## Sign out of a project
+<a name="sign-out-project"></a>
+
+**Warning**
+We're currently releasing our new experience to a limited number of customers. You might not be able to access this experience yet.
+
+You can sign out of projects if you signed up for AWS using our new AWS experience. If you created an AWS account using [Sign up for AWS (advanced)](https://docs.aws.amazon.com/accounts/latest/reference/getting-started.html), you don't have a project.
+
+**To sign out of a project**
+
+1. After you're signed in to the AWS Management Console, your project name is shown in the upper right corner.
+
+1. In the navigation bar on the upper right, choose your project name.
+
+1. Choose **Sign out**.
+
+1. You are returned to the AWS Management Console webpage.
+
+## Sign out of AWS Settings
+<a name="sign-out-aws-settings"></a>
+
+**Warning**
+We're currently releasing our new experience to a limited number of customers. You might not be able to access this experience yet.
+
+You can sign out of AWS Settings if you signed up for AWS using our new AWS experience. If you created an AWS account using [Sign up for AWS (advanced)](https://docs.aws.amazon.com/accounts/latest/reference/getting-started.html), you don't have access to AWS Settings.
+
+**To sign out of AWS Settings**
+
+1. In the left navigation pane, choose **Sign Out**.
+
+1. You are returned to the AWS sign in page.
 
 ## Sign out of the AWS Management Console
 <a name="console-signing-out-root-IAM-users"></a>

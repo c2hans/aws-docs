@@ -184,7 +184,7 @@ If you chose to create an A/B testing campaign, you can apply a different templa
 <a name="campaigns-message-sms"></a>
 
 **Important**
-If you send SMS messages to recipients in India using a Sender ID, you must complete additional steps. For more information, see [India sender ID registration process](https://docs.aws.amazon.com//sms-voice/latest/userguide/registrations-sms-senderid-india.html) in the *AWS End User Messaging SMS User Guide*.
+If you send SMS messages to recipients in India using a Sender ID, you must complete additional steps. For more information, see [India sender ID registration process](https://docs.aws.amazon.com/sms-voice/latest/userguide/registrations-sms-senderid-india.html) in the *AWS End User Messaging SMS User Guide*.
 
 **To configure an SMS message**
 
@@ -212,11 +212,11 @@ This campaign-level setting overrides your default message type, which you set o
 
 1. (Optional) For **Sender ID**, enter the alphanumeric Sender ID that you want to use to send this message.
 **Important**
-Sender IDs are only supported in certain countries. In some countries, you must register your Sender ID with government or regulatory entities before you can use it. Only specify a Sender ID if you know that Sender IDs are supported in the countries of your recipients. For more information about Sender ID availability and requirements, see [Supported countries and regions (SMS channel)](https://docs.aws.amazon.com//sms-voice/latest/userguide/phone-numbers-sms-by-country.html) in the *AWS End User Messaging SMS User Guide*.
+Sender IDs are only supported in certain countries. In some countries, you must register your Sender ID with government or regulatory entities before you can use it. Only specify a Sender ID if you know that Sender IDs are supported in the countries of your recipients. For more information about Sender ID availability and requirements, see [Supported countries and regions (SMS channel)](https://docs.aws.amazon.com/sms-voice/latest/userguide/phone-numbers-sms-by-country.html) in the *AWS End User Messaging SMS User Guide*.
 
 1. For **Message**, enter the body of the message.
 **Tip**
-SMS messages can contain a limited number of characters. Long messages are split into multiple message parts, and you're charged separately for each of those parts. The maximum number of characters that you can include depends on the characters that you use in your messages. For more information, see [SMS character limits](https://docs.aws.amazon.com//sms-voice/latest/userguide/sms-limitations-character.html) in the *AWS End User Messaging SMS User Guide*.
+SMS messages can contain a limited number of characters. Long messages are split into multiple message parts, and you're charged separately for each of those parts. The maximum number of characters that you can include depends on the characters that you use in your messages. For more information, see [SMS character limits](https://docs.aws.amazon.com/sms-voice/latest/userguide/sms-limitations-character.html) in the *AWS End User Messaging SMS User Guide*.
 
 1. (Optional) If you created this campaign as an A/B test campaign (as opposed to a standard campaign), repeat the steps in this section for each treatment. You can switch between treatments by using the tabs at the top of the **SMS details** section.
 

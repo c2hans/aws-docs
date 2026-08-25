@@ -9,7 +9,7 @@ Amazon DynamoDB zero-ETL integration with Amazon Redshift enables seamless analy
 
 To set up the integration, simply specify a DynamoDB table as the source and an Amazon Redshift database as the target. On activation, the integration exports the full DynamoDB table to populate the Amazon Redshift database. The time it takes for this initial process to complete depends on the DynamoDB table size. The zero-ETL integration then incrementally replicates updates from DynamoDB to Amazon Redshift every 15-30 minutes using DynamoDB incremental exports. This means the replicated DynamoDB data in Amazon Redshift is kept up-to-date automatically.
 
-Once configured, users can analyze the DynamoDB data in Amazon Redshift using standard SQL clients and tools, without impacting DynamoDB table performance. By eliminating cumbersome ETL, this zero-ETL integration provides a fast, easy way to unlock insights from DynamoDB through Amazon Redshift analytics and machine learning capabilities.
+After it is configured, you can analyze the DynamoDB data in Amazon Redshift using standard SQL clients and tools, without impacting DynamoDB table performance. By eliminating cumbersome ETL, this zero-ETL integration provides a fast, easy way to unlock insights from DynamoDB through Amazon Redshift analytics and machine learning capabilities.
 
 **Topics**
 + [Prerequisites before creating a DynamoDB zero-ETL integration with Amazon Redshift](#RedshiftforDynamoDB-zero-etl-prereqs)
@@ -83,7 +83,7 @@ Once configured, users can analyze the DynamoDB data in Amazon Redshift using st
 
 ------
 
-   You may also need to configure the resource policy on your Amazon Redshift data warehouse. For more information, see [Configure authorization using the Amazon Redshift API](https://docs.aws.amazon.com/redshift/latest/mgmt/zero-etl-using.redshift-iam.html#zero-etl-using.resource-policies).
+   You might also need to configure the resource policy on your Amazon Redshift data warehouse. For more information, see [Configure authorization using the Amazon Redshift API](https://docs.aws.amazon.com/redshift/latest/mgmt/zero-etl-using.redshift-iam.html#zero-etl-using.resource-policies).
 
 1.
 

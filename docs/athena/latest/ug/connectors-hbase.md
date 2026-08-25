@@ -137,8 +137,6 @@ The following image shows a table configured in AWS Glue that uses a combination
 
 The connector retrieves all HBase values as the basic byte type. Then, based on how you defined your tables in AWS Glue Data Catalog, it maps the values into one of the Apache Arrow data types in the following table.
 
-****
-
 | AWS Glue data type | Apache Arrow data type |
 | --- | --- |
 | int | INT |

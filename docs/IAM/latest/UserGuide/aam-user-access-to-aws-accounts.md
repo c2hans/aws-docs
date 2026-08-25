@@ -12,11 +12,11 @@ This topic describes how users access the AWS accounts assigned to them with acc
 
 You can access your assigned AWS accounts in several ways:
 
-1. Your administrator may provide you with an account access portal URL (for example, `https://aa-gyxmap389.account-access.us-east-2.app.aws` or a vanity URL).
+1. Your administrator might provide you with an account access portal URL (for example, `https://aa-gyxmap389.account-access.us-east-2.app.aws` or a vanity URL).
 
-1. Your administrator may provide you with the URL for the main AWS access portal which displays all AWS applications assigned to you, including the account access portal.
+1. Your administrator might provide you with the URL for the main AWS access portal which displays all AWS applications assigned to you, including the account access portal.
 
-1. Your organization may have enabled you to launch the account access portal from an external identity provider portal or another portal outside AWS.
+1. Your organization might have enabled you to launch the account access portal from an external identity provider portal or another portal outside AWS.
 
 ## Access AWS accounts with a web browser
 <a name="aam-access-accounts-in-web-browser"></a>

@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon EKS MCP Server provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="eks-mcp-CallReadOnlyTool"></a>[CallReadOnlyTool](https://docs.aws.amazon.com/eks/latest/userguide/eks-mcp-tool-configurations.html) | Call read-only tools in MCP service | Read |

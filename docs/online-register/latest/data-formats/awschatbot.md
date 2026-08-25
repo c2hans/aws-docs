@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsc
 
 AWS Chatbot provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="chatbot-DescribeChimeWebhookConfigurations"></a>[DescribeChimeWebhookConfigurations](https://docs.aws.amazon.com/chatbot/latest/APIReference/API_DescribeChimeWebhookConfigurations.html) | List all AWS Chatbot Chime Webhook Configurations in an AWS Account | Read |

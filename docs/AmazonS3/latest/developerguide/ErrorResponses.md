@@ -171,7 +171,7 @@ The following table lists Amazon S3 error codes.
   - **SOAP fault code prefix:** Client
 
 - **`EntityTooLarge`**
-  - **Description:** Your proposed upload exceeds the maximum allowed object size. For more information, see [Amazon Simple Storage Service endpoints and quotas](https://docs.aws.amazon.com//general/latest/gr/s3.html) in the AWS General Reference. / **HTTP status code:** 400 Bad Request / **SOAP fault code prefix:** Client
+  - **Description:** Your proposed upload exceeds the maximum allowed object size. For more information, see [Amazon Simple Storage Service endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/s3.html) in the AWS General Reference. / **HTTP status code:** 400 Bad Request / **SOAP fault code prefix:** Client
   - **Description:** Your proposed download exceeds the maximum allowed size.  / **HTTP status code:** 405 Method Not Allowed / **SOAP fault code prefix:** Client
 
 - **`ExpiredToken`**
@@ -660,22 +660,22 @@ The following table lists Amazon S3 error codes.
   - **SOAP fault code prefix:** Client
 
 - **`TooManyAccessPoints`**
-  - **Description:** You have attempted to create more access points than are allowed for an account. For more information, see [Amazon Simple Storage Service endpoints and quotas](https://docs.aws.amazon.com//general/latest/gr/s3.html) in the AWS General Reference.
+  - **Description:** You have attempted to create more access points than are allowed for an account. For more information, see [Amazon Simple Storage Service endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/s3.html) in the AWS General Reference.
   - **HTTP status code:** 400 Bad Request
   - **SOAP fault code prefix:** Client
 
 - **`TooManyBuckets`**
-  - **Description:** You have attempted to create more buckets than are allowed for an account. For more information, see [Amazon Simple Storage Service endpoints and quotas](https://docs.aws.amazon.com//general/latest/gr/s3.html) in the AWS General Reference.
+  - **Description:** You have attempted to create more buckets than are allowed for an account. For more information, see [Amazon Simple Storage Service endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/s3.html) in the AWS General Reference.
   - **HTTP status code:** 400 Bad Request
   - **SOAP fault code prefix:** Client
 
 - **`TooManyMultiRegionAccessPointregionsError`**
-  - **Description:** You have attempted to create a Multi-Region Access Point with more Regions than are allowed for an account. For more information, see [Amazon Simple Storage Service endpoints and quotas](https://docs.aws.amazon.com//general/latest/gr/s3.html) in the AWS General Reference.
+  - **Description:** You have attempted to create a Multi-Region Access Point with more Regions than are allowed for an account. For more information, see [Amazon Simple Storage Service endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/s3.html) in the AWS General Reference.
   - **HTTP status code:** 400 Bad Request
   - **SOAP fault code prefix:** Client
 
 - **`TooManyMultiRegionAccessPoints`**
-  - **Description:** You have attempted to create more Multi-Region Access Points than are allowed for an account. For more information, see [Amazon Simple Storage Service endpoints and quotas](https://docs.aws.amazon.com//general/latest/gr/s3.html) in the AWS General Reference.
+  - **Description:** You have attempted to create more Multi-Region Access Points than are allowed for an account. For more information, see [Amazon Simple Storage Service endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/s3.html) in the AWS General Reference.
   - **HTTP status code:** 400 Bad Request
   - **SOAP fault code prefix:** Client
 
@@ -839,15 +839,15 @@ The following table contains special errors that `SELECT Object Content` might r
 | ParseUnsupportedToken | The SQL expression contains an unsupported token. | 400 | Client |
 | TruncatedInput | Object decompression failed. Check that the object is properly compressed using the format specified in the request. | 400 | Client |
 | UnauthorizedAccess | You are not authorized to perform this operation. | 401 | Client |
-| UnrecognizedFormatException | We encountered a record type that is not valid. | 400 | Client |
-| UnsupportedFunction | We encountered an unsupported SQL function. | 400 | Client |
+| UnrecognizedFormatException | The record type is not valid. | 400 | Client |
+| UnsupportedFunction | S3 encountered an unsupported SQL function. | 400 | Client |
 | UnsupportedParquetType | The specified Parquet type is not supported. | 400 | Client |
 | UnsupportedRangeHeader | A range header is not supported for this operation. | 400 | Client |
 | UnsupportedScanRangeInput | Scan range queries are not supported on this type of object. | 400 | Client |
-| UnsupportedSqlOperation | We encountered an unsupported SQL operation. | 400 | Client |
-| UnsupportedSqlStructure | We encountered an unsupported SQL structure. Check the SQL Reference. | 400 | Client |
-| UnsupportedStorageClass | We encountered a storage class that is not supported. Only STANDARD, STANDARD\_IA, and ONEZONE\_IA storage classes are supported. | 400 | Client |
-| UnsupportedSyntax | We encountered syntax that is not valid. | 400 | Client |
+| UnsupportedSqlOperation | S3 encountered an unsupported SQL operation. | 400 | Client |
+| UnsupportedSqlStructure | S3 encountered an unsupported SQL structure. Check the SQL Reference. | 400 | Client |
+| UnsupportedStorageClass | The storage class is not supported. Only STANDARD, STANDARD\_IA, and ONEZONE\_IA storage classes are supported. | 400 | Client |
+| UnsupportedSyntax | The syntax is not valid. | 400 | Client |
 | UnsupportedTypeForQuerying | Your query contains an unsupported type for comparison (e.g. verifying that a Parquet INT96 column type is greater than 0). | 400 | Client |
 | ValueParseFailure | A timestamp parse failure occurred in the SQL expression. | 400 | Client |
 

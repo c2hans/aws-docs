@@ -14,8 +14,6 @@ Create a stack with an Auto Scaling Group, and an Elastic Load Balancer (ELB) wi
 ## Change Type Details
 <a name="ct-3w4lxdl3pqxob-DSHc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-3w4lxdl3pqxob |

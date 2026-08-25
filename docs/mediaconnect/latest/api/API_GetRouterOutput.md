@@ -42,6 +42,9 @@ Content-type: application/json
       "availabilityZone": "string",
       "configuration": { ... },
       "createdAt": "string",
+      "fabricConfiguration": {
+         "recoveryLatencyMode": "string"
+      },
       "id": "string",
       "ipAddress": "string",
       "maintenanceConfiguration": { ... },

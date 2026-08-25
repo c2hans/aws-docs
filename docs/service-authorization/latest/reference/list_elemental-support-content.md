@@ -29,8 +29,6 @@ AWS Elemental Support Content has no API operations that can be used in the `Act
 
 The following actions are defined by AWS Elemental Support Content but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 | Actions | Description | Resource types (\*required) | Condition keys | Access level |
 | --- | --- | --- | --- | --- |
 |   [Query](https://docs.aws.amazon.com/elemental-appliances-software)  | Grants permission to search support content |  |   | Read |

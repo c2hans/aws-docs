@@ -67,8 +67,6 @@ The following tables list *only supported* platform branches. They do not list p
 #### Configuration basics
 <a name="platforms-supported.net.basics"></a>
 
-****
-
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** Windows Server 2025 with IIS 10.0 version 2.22.1**  |  * 64bit Windows Server 2025 v2.22.1 running IIS 10.0 *  | .NET 10.0.2, supports 10.0.2, 9.0.12, 8.0.23<br />.NET Framework 4.8.1, supports 4.x, 2.0 | IIS 10.0 |
@@ -82,8 +80,6 @@ The following tables list *only supported* platform branches. They do not list p
 
 #### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |

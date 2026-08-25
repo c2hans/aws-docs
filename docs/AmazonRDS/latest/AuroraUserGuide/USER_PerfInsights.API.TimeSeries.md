@@ -16,7 +16,7 @@ All metrics returned by `GetResourceMetrics` are standard time-series metrics, w
 **Note**
 `GetResourceMetrics` can also return the `db.sampleload` metric, but the `db.load` metric is appropriate in most cases.
 
-For information about the counter metrics returned by `GetResourceMetrics`, see [Performance Insights counter metrics](USER_PerfInsights_Counters.md).
+For information about the counter metrics returned by `GetResourceMetrics`, see [Detailed Database Metrics](USER_PerfInsights_Counters.md).
 
 The following calculations are supported for the metrics:
 + Average – The average value for the metric over a period of time. Append `.avg` to the metric name.

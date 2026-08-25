@@ -76,6 +76,6 @@ The following list provides the IPv4 and dual-stack domains and URL endpoints to
 <a name="allowlist-considerations"></a>
 
 In addition to the allowlist requirements for the AWS access portal, the other services and applications you use might require allowlisting of domains.
-+ To access AWS accounts, the AWS Management Console, and the IAM Identity Center console from your AWS access portal, you must allowlist additional domains. Refer to [Troubleshooting](https://docs.aws.amazon.com//awsconsolehelpdocs/latest/gsg/troubleshooting.html) in the *AWS Management Console Getting Started Guide* for a list of AWS Management Console domains.
++ To access AWS accounts, the AWS Management Console, and the IAM Identity Center console from your AWS access portal, you must allowlist additional domains. Refer to [Troubleshooting](https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/troubleshooting.html) in the *AWS Management Console Getting Started Guide* for a list of AWS Management Console domains.
 + To access AWS managed applications from your AWS access portal, you must allowlist their respective domains. Refer to the respective service documentation for guidance.
 + If you use external software, such as external IdPs (for example, Okta and Microsoft Entra ID), you'll need to include their domains in your allowlists.

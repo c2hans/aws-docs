@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/ts-cw.html
 # Troubleshoot issues with your Connect Customer communications widget
 <a name="ts-cw"></a>
 
-This topic is for developers who need to investigate issues that may occur when configuring a communications widget in the Connect Customer admin website.
+This topic is for developers who need to investigate issues that might occur when configuring a communications widget in the Connect Customer admin website.
 
 **Topics**
 + ["Something went wrong"](#sww)
@@ -57,7 +57,7 @@ amazon_connect('authenticate', function(callback) {
 
 For instructions on implementing JWT, see [Step 3: Confirm and copy communications widget code and security keys](add-chat-to-website.md#confirm-and-copy-chat-widget-script).
 
-If you have implemented the callback already, the following scenarios may still cause a 401:
+If you have implemented the callback already, the following scenarios might still cause a 401:
 + Invalid signature
 + Expired token
 

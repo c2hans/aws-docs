@@ -14,8 +14,6 @@ Use to create an Amazon GuardDuty ThreatIntelSet instance, which is a list of kn
 ## Change Type Details
 <a name="ct-25v6r7t8gvkq5-DMGc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-25v6r7t8gvkq5 |

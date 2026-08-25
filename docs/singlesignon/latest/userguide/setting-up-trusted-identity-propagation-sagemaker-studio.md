@@ -26,7 +26,7 @@ To set up trusted identity propagation from SageMaker Studio, the SageMaker Stud
 SageMaker Studio uses domains to organize user profiles, applications, and their associated resources. To enable trusted identity propagation, you must create a SageMaker Studio domain or modify an existing domain as described in the following procedure.
 
 1. Open the SageMaker AI console, navigate to **Domains**, and do either of the following.
-   + **Create a new SageMaker Studio domain by using [Setup for organizations](https://docs.aws.amazon.com//sagemaker/latest/dg/onboard-custom.html#onboard-custom-instructions).**
+   + **Create a new SageMaker Studio domain by using [Setup for organizations](https://docs.aws.amazon.com/sagemaker/latest/dg/onboard-custom.html#onboard-custom-instructions).**
 
      Choose **Set up for organizations**, and then do the following:
      + Choose **AWS Identity Center** as the authentication method.
@@ -35,23 +35,23 @@ SageMaker Studio uses domains to organize user profiles, applications, and their
      + Select an existing domain that uses IAM Identity Center for authentication.
 **Important**
 Trusted identity propagation is only supported in SageMaker Studio domains that use IAM Identity Center for authentication. If the domain uses IAM for authentication, you can't change the authentication method, and therefore you can't enable trusted identity propagation.
-     + [Edit domain settings](https://docs.aws.amazon.com//sagemaker/latest/dg/domain-edit). Edit the **Authentication and permissions** settings to enable trusted identity propagation.
+     + [Edit domain settings](https://docs.aws.amazon.com/sagemaker/latest/dg/domain-edit). Edit the **Authentication and permissions** settings to enable trusted identity propagation.
 
 1. Proceed to [Step 2: Configure the default domain execution role](#setting-up-trusted-identity-propagation-sagemaker-studio-domain-execution-role). This role is required for users of a SageMaker Studio domain to access other AWS services such as Amazon S3.
 
 ## Step 2: Configure the default domain execution role and role trust policy
 <a name="setting-up-trusted-identity-propagation-sagemaker-studio-domain-execution-role"></a>
 
-A *domain execution role* is an [IAM role](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_roles) that a SageMaker Studio domain assumes on behalf of all users in the domain. The permissions that you assign to this role determine what actions SageMaker Studio can perform.
+A *domain execution role* is an [IAM role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles) that a SageMaker Studio domain assumes on behalf of all users in the domain. The permissions that you assign to this role determine what actions SageMaker Studio can perform.
 
 1. To create or select a domain execution role, do either of the following:
-   + **Create or select a role by using [Setup for organizations](https://docs.aws.amazon.com//sagemaker/latest/dg/onboard-custom.html#onboard-custom-instructions).**
+   + **Create or select a role by using [Setup for organizations](https://docs.aws.amazon.com/sagemaker/latest/dg/onboard-custom.html#onboard-custom-instructions).**
      + Open the SageMaker AI console and follow the console guidance in **Step 2: Configure roles and ML activities** to create a new domain execution role or select an existing role.
      + Complete the rest of the setup steps to create your SageMaker Studio domain.
    + **Create an execution role manually.**
-     + Open the IAM console and [create the execution role yourself](https://docs.aws.amazon.com//sagemaker/latest/dg/sagemaker-roles.html#sagemaker-roles-create-execution-role).
+     + Open the IAM console and [create the execution role yourself](https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-roles.html#sagemaker-roles-create-execution-role).
 
-1. [Update the trust policy](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_roles_update-role-trust-policy.html) that is attached to the domain execution role so that it includes the following two actions: [`sts:AssumeRole`](https://docs.aws.amazon.com//STS/latest/APIReference/API_AssumeRole.html) and [`sts:SetContext`](https://docs.aws.amazon.com//IAM/latest/UserGuide/reference_policies_iam-condition-keys.html). For information about how to find the execution role for your SageMaker Studio domain, see [Get domain execution role](https://docs.aws.amazon.com//sagemaker/latest/dg/sagemaker-roles.html#sagemaker-roles-get-execution-role-domain).
+1. [Update the trust policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_update-role-trust-policy.html) that is attached to the domain execution role so that it includes the following two actions: [`sts:AssumeRole`](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html) and [`sts:SetContext`](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html). For information about how to find the execution role for your SageMaker Studio domain, see [Get domain execution role](https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-roles.html#sagemaker-roles-get-execution-role-domain).
 
    A *trust policy* specifies the identity that can assume a role. This policy is required to allow the SageMaker Studio service to assume the domain execution role. Add these two actions so that they appear as follows in your policy.
 
@@ -100,12 +100,12 @@ To use Amazon S3 Access Grants, you must have a permissions policy attached (eit
 }
 ```
 
-If you don't have a policy that contains these permissions, follow the instructions in [Adding and removing IAM identity permissions](https://docs.aws.amazon.com//IAM/latest/UserGuide/access_policies_manage-attach-detach.html) in the *AWS Identity and Access Management User Guide*.
+If you don't have a policy that contains these permissions, follow the instructions in [Adding and removing IAM identity permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html) in the *AWS Identity and Access Management User Guide*.
 
 ## Step 4: Assign groups and users to the domain
 <a name="setting-up-trusted-identity-propagation-sagemaker-studio-assign-users-groups-to-domain"></a>
 
-Assign groups and users to the SageMaker Studio domain by following the steps in [Add groups and users](https://docs.aws.amazon.com//sagemaker/latest/dg/domain-groups-add.html).
+Assign groups and users to the SageMaker Studio domain by following the steps in [Add groups and users](https://docs.aws.amazon.com/sagemaker/latest/dg/domain-groups-add.html).
 
 ## Step 5: Set up Amazon S3 Access Grants
 <a name="setting-up-trusted-identity-propagation-sagemaker-studio-set-up-s3-access-grants"></a>
@@ -174,4 +174,4 @@ When trusted identity propagation is enabled, actions appear in CloudTrail event
 
 If an administrator sets **MaxRuntimeInSeconds** for long-running training or processing jobs that is lower than the user background session duration, SageMaker Studio runs the job for the minimum of either **MaxRuntimeInSeconds ** or the user background session duration.
 
-For more information about **MaxRuntimeInSeconds**, see the guidance for the `CreateTrainingJob` [StoppingCondition](https://docs.aws.amazon.com//sagemaker/latest/APIReference/API_CreateTrainingJob.html#sagemaker-CreateTrainingJob-request-StoppingCondition) parameter in the *Amazon SageMaker API Reference*.
+For more information about **MaxRuntimeInSeconds**, see the guidance for the `CreateTrainingJob` [StoppingCondition](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateTrainingJob.html#sagemaker-CreateTrainingJob-request-StoppingCondition) parameter in the *Amazon SageMaker API Reference*.

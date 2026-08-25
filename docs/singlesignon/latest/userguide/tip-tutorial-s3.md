@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/tip-tutori
 # Setting up Amazon S3 Access Grants with IAM Identity Center
 <a name="tip-tutorial-s3"></a>
 
-[Amazon S3 Access Grants](https://docs.aws.amazon.com//AmazonS3/latest/userguide/access-grants-get-started.html) provides the flexibility to grant identity-based fine-grain access control to S3 locations. You can use Amazon S3 Access Grants to grant Amazon S3 bucket access directly to your corporate users and groups. Follow these steps to enable S3 Access Grants with IAM Identity Center and achieve trusted identity propagation.
+[Amazon S3 Access Grants](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-grants-get-started.html) provides the flexibility to grant identity-based fine-grain access control to S3 locations. You can use Amazon S3 Access Grants to grant Amazon S3 bucket access directly to your corporate users and groups. Follow these steps to enable S3 Access Grants with IAM Identity Center and achieve trusted identity propagation.
 
 ## Prerequisites
 <a name="tip-tutorial-s3-prereqs"></a>
@@ -18,20 +18,20 @@ Before you can get started with this tutorial, you'll need to set up the followi
 
 **If you already have an Amazon S3 Access Grants instance with a registered location, follow these steps:**
 
-1. [Associate your IAM Identity Center instance](https://docs.aws.amazon.com//AmazonS3/latest/userguide/access-grants-instance-idc.html).
+1. [Associate your IAM Identity Center instance](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-grants-instance-idc.html).
 
 1. [Create a grant](#tip-tutorial-s3-create-grant).
 
 **If you have not created an Amazon S3 Access Grants yet, follow these steps:**
 
-1. [**Create an S3 Access Grants instance**](https://docs.aws.amazon.com//AmazonS3/latest/userguide/access-grants-instance-create.html) - You can create one S3 Access Grants instance per AWS Region. When you create the S3 Access Grants instance, make sure to check the **Add IAM Identity Center instance** box and provide the ARN of your IAM Identity Center instance. Select **Next**.
+1. [**Create an S3 Access Grants instance**](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-grants-instance-create.html) - You can create one S3 Access Grants instance per AWS Region. When you create the S3 Access Grants instance, make sure to check the **Add IAM Identity Center instance** box and provide the ARN of your IAM Identity Center instance. Select **Next**.
 
    The following image shows the Create S3 Access Grants instance page in the Amazon S3 Access Grants console:
 ![Create S3 Access Grants instance page in S3 Access Grants console.](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/s3-tutorial-step-1.1.png)
 
-1. **Register a location** - After you create an [create an Amazon S3 Access Grants instance](https://docs.aws.amazon.com//AmazonS3/latest/userguide/access-grants-instance-create.html) in an AWS Region in your account, you [register an S3 location](https://docs.aws.amazon.com//AmazonS3/latest/userguide/access-grants-location-register.html) in that instance. An S3 Access Grants location maps the default S3 region (`S3://`), a bucket, or a prefix to an IAM role. S3 Access Grants assumes this Amazon S3 role to vend temporary credentials to the grantee that is accessing that particular location. You must first register at least one location in your S3 Access Grants instance before you can create an access grant.
+1. **Register a location** - After you create an [create an Amazon S3 Access Grants instance](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-grants-instance-create.html) in an AWS Region in your account, you [register an S3 location](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-grants-location-register.html) in that instance. An S3 Access Grants location maps the default S3 region (`S3://`), a bucket, or a prefix to an IAM role. S3 Access Grants assumes this Amazon S3 role to vend temporary credentials to the grantee that is accessing that particular location. You must first register at least one location in your S3 Access Grants instance before you can create an access grant.
 
-   For the **Location scope**, specify `s3://`, which includes all of your buckets in that Region. This is the recommended location scope for most use cases. If you have an advanced access management use case, you can set the location scope to a specific bucket `s3://{{bucket}}`or prefix within a bucket `s3://{{bucket}}/{{prefix-with-path}}`. For more information, see [Register a location](https://docs.aws.amazon.com//AmazonS3/latest/userguide/access-grants-location-register.html) in the *Amazon Simple Storage Service User Guide*.
+   For the **Location scope**, specify `s3://`, which includes all of your buckets in that Region. This is the recommended location scope for most use cases. If you have an advanced access management use case, you can set the location scope to a specific bucket `s3://{{bucket}}`or prefix within a bucket `s3://{{bucket}}/{{prefix-with-path}}`. For more information, see [Register a location](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-grants-location-register.html) in the *Amazon Simple Storage Service User Guide*.
 **Note**
 Ensure the S3 locations of the AWS Glue tables you want to grant access to are included in this path.
 
@@ -41,7 +41,7 @@ Ensure the S3 locations of the AWS Glue tables you want to grant access to are i
 
    1. **Permission policy**
 
-      To use these policies, replace the {{italicized placeholder text}} in the example policy with your own information. For additional directions, see [Create a policy](https://docs.aws.amazon.com//IAM/latest/UserGuide/access_policies_create.html) or [Edit a policy](https://docs.aws.amazon.com//IAM/latest/UserGuide/access_policies_manage-edit.html).
+      To use these policies, replace the {{italicized placeholder text}} in the example policy with your own information. For additional directions, see [Create a policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html) or [Edit a policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-edit.html).
 
 ------
 #### [ JSON ]
@@ -140,7 +140,7 @@ Ensure the S3 locations of the AWS Glue tables you want to grant access to are i
 
    1. **Trust policy**
 
-       In the IAM role trust policy, give the S3 Access Grants service (`access-grants.s3.amazonaws.com`) principal access to the IAM role that you created. To do so, you can create a JSON file that contains the following statements. To add the trust policy to your account, see [Create a role using custom trust policies](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_roles_create_for-custom.html).
+       In the IAM role trust policy, give the S3 Access Grants service (`access-grants.s3.amazonaws.com`) principal access to the IAM role that you created. To do so, you can create a JSON file that contains the following statements. To add the trust policy to your account, see [Create a role using custom trust policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-custom.html).
 
 ------
 #### [ JSON ]
@@ -191,11 +191,11 @@ Ensure the S3 locations of the AWS Glue tables you want to grant access to are i
 ## Create an Amazon S3 Access Grant
 <a name="tip-tutorial-s3-create-grant"></a>
 
-If you have an Amazon S3 Access Grants instance with a registered location and you have associated your IAM Identity Center instance with it, you can [create a grant](https://docs.aws.amazon.com//AmazonS3/latest/userguide/access-grants-grant-create.html). In the S3 console **Create Grant** page, complete the following:
+If you have an Amazon S3 Access Grants instance with a registered location and you have associated your IAM Identity Center instance with it, you can [create a grant](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-grants-grant-create.html). In the S3 console **Create Grant** page, complete the following:
 
 **Create a grant**
 
-1. Select the location created in the previous step. You can reduce the scope of the grant by adding a sub-prefix. The sub-prefix can be a `bucket`, `bucket/prefix`, or an object in the bucket. For more information, see [Subprefix](https://docs.aws.amazon.com//AmazonS3/latest/userguide/access-grants-grant-create.html#subprefix) in the *Amazon Simple Storage Service User Guide*.
+1. Select the location created in the previous step. You can reduce the scope of the grant by adding a sub-prefix. The sub-prefix can be a `bucket`, `bucket/prefix`, or an object in the bucket. For more information, see [Subprefix](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-grants-grant-create.html#subprefix) in the *Amazon Simple Storage Service User Guide*.
 
 1. Under **Permissions and access**, select **Read** and or **Write** depending on your needs.
 

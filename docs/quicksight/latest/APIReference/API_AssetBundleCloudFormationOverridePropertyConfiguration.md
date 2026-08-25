@@ -60,6 +60,12 @@ Type: Array of [AssetBundleExportJobThemeOverrideProperties](API_AssetBundleExpo
 Array Members: Minimum number of 1 item. Maximum number of 50 items.
 Required: No
 
+ ** TopicsV2 **   <a name="QS-Type-AssetBundleCloudFormationOverridePropertyConfiguration-TopicsV2"></a>
+An optional list of structures that controls how `Topic` resources are parameterized in the returned CloudFormation template.
+Type: Array of [AssetBundleExportJobTopicV2OverrideProperties](API_AssetBundleExportJobTopicV2OverrideProperties.md) objects
+Array Members: Minimum number of 1 item. Maximum number of 50 items.
+Required: No
+
  ** VPCConnections **   <a name="QS-Type-AssetBundleCloudFormationOverridePropertyConfiguration-VPCConnections"></a>
 An optional list of structures that control how `VPCConnection` resources are parameterized in the returned CloudFormation template.
 Type: Array of [AssetBundleExportJobVPCConnectionOverrideProperties](API_AssetBundleExportJobVPCConnectionOverrideProperties.md) objects

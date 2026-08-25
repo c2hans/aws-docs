@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/getti
 # Best practices
 <a name="gettingStarted-connecting-best-practices"></a>
 
- Ensure the streams have been consumed and closed to be able to re-use client connections in the SDK. See the [ SDK for Java developer guide ](https://docs.aws.amazon.com//sdk-for-java/latest/developer-guide/best-practices.html#bestpractice2) for more information.
+ Ensure the streams have been consumed and closed to be able to re-use client connections in the SDK. See the [ SDK for Java developer guide ](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/best-practices.html#bestpractice2) for more information.
 
  **CLI and SDK**
 

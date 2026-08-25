@@ -22,7 +22,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/installguide/instal
    + -l is a letter, not a number.
 
 1. You are prompted as described in the table below.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-cl3/latest/installguide/install-vm-cl3-ig-install-sw.html)
 
    The software is installed. This message confirms both installation and configuration are complete:

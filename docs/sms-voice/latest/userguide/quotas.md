@@ -157,8 +157,6 @@ The following quotas apply to SMS messages sent using 10DLC phone numbers. 10DLC
 
 The following quotas apply to protect configurations.
 
-****
-
 | Resource | Default quota | Eligible for increase |
 | --- | --- | --- |
 | Number of protect configurations | 25 per account | [Yes](#quotas-increase-aws-service) |
@@ -167,8 +165,6 @@ The following quotas apply to protect configurations.
 <a name="quotas-registrations"></a>
 
 The following quotas apply to registrations.
-
-****
 
 | Resource | Default quota | Eligible for increase |
 | --- | --- | --- |
@@ -179,8 +175,6 @@ The following quotas apply to registrations.
 <a name="quotas-rcs"></a>
 
 The following quotas apply to RCS messaging.
-
-****
 
 | Resource | Default quota | Eligible for increase |
 | --- | --- | --- |

@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awse
 
 AWS Elemental MediaPackage VOD provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="mediapackage-vod-DescribeAsset"></a>[DescribeAsset](https://docs.aws.amazon.com/mediapackage-vod/latest/apireference/assets-id.html#assets-idget) | View the details of an asset in AWS Elemental MediaPackage | Read |

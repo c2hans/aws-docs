@@ -97,7 +97,7 @@ The following table shows models that are currently in the Legacy state or are p
 - **Anthropic**
   - **Model name:** Claude Sonnet 4
   - **Model ID:** anthropic.claude-sonnet-4-20250514-v1:0
-  - **Regions:** ap-northeast-1, eu-central-1, eu-north-1, eu-south-1, eu-south-2, eu-west-1, eu-west-3, us-east-1, us-east-2, us-west-1, us-west-2, ap-east-2, ap-northeast-2, ap-northeast-3, ap-south-1, ap-south-2, me-central-1, ap-southeast-1, ap-southeast-2, ap-southeast-3, ap-southeast-4, ap-southeast-5, ap-southeast-7, il-central-1
+  - **Regions:** ap-northeast-1, eu-central-1, eu-north-1, eu-south-1, eu-south-2, eu-west-1, eu-west-3, us-east-1, us-east-2, us-west-1, us-west-2, ap-east-2, ap-northeast-2, ap-northeast-3, ap-south-1, ap-south-2, ap-southeast-1, ap-southeast-2, ap-southeast-3, ap-southeast-4, ap-southeast-5, ap-southeast-7, il-central-1
   - **Legacy date:** April 14, 2026
   - **EOL date:** October 14, 2026
   - **Public extended access start date:** July 14, 2026
@@ -108,41 +108,12 @@ The following table shows models that are currently in the Legacy state or are p
   - **Regions:** ap-northeast-1, ap-southeast-2, eu-central-1, eu-west-1, eu-west-2, eu-west-3, us-east-1, us-east-2, us-west-2 / **Legacy date:** March 10, 2026 / **EOL date:** September 10, 2026 / **Public extended access start date:** June 10, 2026
   - **Regions:** us-gov-east-1, us-gov-west-1 / **Legacy date:** March 10, 2026 / **EOL date:** September 10, 2026 / **Public extended access start date:** June 10, 2026
 
-- **Anthropic**
-  - **Model name:** Claude 3 Sonnet
-  - **Model ID:** anthropic.claude-3-sonnet-20240229-v1:0
-  - **Regions:** eu-west-1, eu-west-3, us-east-1, us-west-2 / **Legacy date:** January 30, 2026 / **EOL date:** July 30, 2026 / **Public extended access start date:** —
-  - **Regions:** ap-northeast-1, ap-northeast-2, ap-southeast-2 / **Legacy date:** January 30, 2026 / **EOL date:** July 30, 2026 / **Public extended access start date:** April 30, 2026
-
-- **Anthropic**
-  - **Model name:** Claude 3.5 Sonnet
-  - **Model ID:** anthropic.claude-3-5-sonnet-20240620-v1:0
-  - **Regions:** ap-northeast-1, ap-southeast-2 / **Legacy date:** January 30, 2026 / **EOL date:** July 30, 2026 / **Public extended access start date:** April 30, 2026
-  - **Regions:** us-gov-east-1, us-gov-west-1 / **Legacy date:** January 30, 2026 / **EOL date:** July 30, 2026 / **Public extended access start date:** April 30, 2026
-
-- **Anthropic**
-  - **Model name:** Claude 3.5 Sonnet v2
-  - **Model ID:** anthropic.claude-3-5-sonnet-20241022-v2:0
-  - **Regions:** ap-northeast-1, ap-northeast-3, ap-south-2, ap-southeast-2
-  - **Legacy date:** January 30, 2026
-  - **EOL date:** July 30, 2026
-  - **Public extended access start date:** April 30, 2026
-
-- **Anthropic**
-  - **Model name:** Claude 3.7 Sonnet
-  - **Model ID:** anthropic.claude-3-7-sonnet-20250219-v1:0
-  - **Regions:** us-gov-east-1, us-gov-west-1
-  - **Legacy date:** January 30, 2026
-  - **EOL date:** July 30, 2026
-  - **Public extended access start date:** April 30, 2026
-
-- **Cohere**
-  - **Model name:** Command R
-  - **Model ID:** cohere.command-r-v1:0
-  - **Regions:** us-east-1, us-west-2
-  - **Legacy date:** February 19, 2026
-  - **EOL date:** August 19, 2026
-  - **Public extended access start date:** May 19, 2026
+- **Command R**
+  - **Model name:** cohere.command-r-v1:0
+  - **Model ID:** us-east-1, us-west-2
+  - **Regions:** February 19, 2026
+  - **Legacy date:** August 19, 2026
+  - **EOL date:** May 19, 2026
 
 - **Cohere**
   - **Model name:** Command R\+

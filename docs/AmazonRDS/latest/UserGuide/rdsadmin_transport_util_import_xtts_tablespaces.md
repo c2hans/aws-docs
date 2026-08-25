@@ -21,8 +21,6 @@ FUNCTION import_xtts_tablespaces(
 ## Parameters
 <a name="rdsadmin_transport_util_import_xtts_tablespaces-parameters"></a>
 
-****
-
 | Parameter name | Data type | Default | Required | Description |
 | --- | --- | --- | --- | --- |
 | `p_tablespace_list` | `CLOB` | — | Yes | The list of tablespaces to import. |

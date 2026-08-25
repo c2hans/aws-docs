@@ -9,12 +9,21 @@ This page lists the current and previous versions of AWS Elastic Beanstalk's .NE
 
 See the [Supported platforms](platforms-supported.md) page for information on the latest version of each platform supported by Elastic Beanstalk. Detailed release notes are available for recent releases at [AWS Elastic Beanstalk Release Notes](https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/).
 
-## August 11, 2026 – present
+## August 24, 2026 – present
+<a name="platform-history-2026-08-24"></a>
+
+The following Elastic Beanstalk platform versions for .NET Core on Linux have been current since August 24, 2026:
+
+|  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
+| --- | --- | --- | --- | --- |
+|  ** .NET 10 on AL2023 version 3.11.7** <br /> * 64bit Amazon Linux 2023 v3.11.7 running .NET 10 *  | .NET 10.0.11, supports 10.0.11 | nginx 1.30.4 | 2023.12.20260817 | 3.6.7 |
+|  ** .NET 9 on AL2023 version 3.11.7** <br /> * 64bit Amazon Linux 2023 v3.11.7 running .NET 9 *  | .NET 9.0.19, supports 9.0.19 | nginx 1.30.4 | 2023.12.20260817 | 3.6.7 |
+|  ** .NET 8 on AL2023 version 3.11.7** <br /> * 64bit Amazon Linux 2023 v3.11.7 running .NET 8 *  | .NET 8.0.30, supports 8.0.30 | nginx 1.30.4 | 2023.12.20260817 | 3.6.7 |
+
+## August 11, 2026 – August 23, 2026
 <a name="platform-history-2026-08-11"></a>
 
-The following Elastic Beanstalk platform versions for .NET Core on Linux have been current since August 11, 2026:
-
-****
+The following Elastic Beanstalk platform versions for .NET Core on Linux were current between August 11, 2026 and August 23, 2026:
 
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
@@ -27,8 +36,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux have be
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between August 6, 2026 and August 10, 2026:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET 10 on AL2023 version 3.11.5** <br /> * 64bit Amazon Linux 2023 v3.11.5 running .NET 10 *  | .NET 10.0.10, supports 10.0.10 | nginx 1.30.3 | 2023.12.20260727 | 3.6.5 |
@@ -39,8 +46,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 <a name="platform-history-2026-07-29"></a>
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between July 29, 2026 and August 5, 2026:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
@@ -54,8 +59,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between July 16, 2026 and July 28, 2026:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET 10 on AL2023 version 3.11.4** <br /> * 64bit Amazon Linux 2023 v3.11.4 running .NET 10 *  | .NET 10.0.10, supports 10.0.10 | nginx 1.30.3 | 2023.12.20260710 | 3.6.5 |
@@ -67,8 +70,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 <a name="platform-history-2026-07-08"></a>
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between July 8, 2026 and July 15, 2026:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
@@ -82,8 +83,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between June 29, 2026 and July 7, 2026:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET 10 on AL2023 version 3.11.3** <br /> * 64bit Amazon Linux 2023 v3.11.3 running .NET 10 *  | .NET 10.0.9, supports 10.0.9 | nginx 1.30.2 | 2023.12.20260622 | 3.6.5 |
@@ -95,8 +94,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 <a name="platform-history-2026-06-12"></a>
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between June 12, 2026 and June 28, 2026:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
@@ -110,8 +107,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between May 28, 2026 and June 11, 2026:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET 10 on AL2023 version 3.11.1** <br /> * 64bit Amazon Linux 2023 v3.11.1 running .NET 10 *  | .NET 10.0.8, supports 10.0.8 | nginx 1.30.1 | 2023.11.20260526 | 3.6.4 |
@@ -123,8 +118,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 <a name="platform-history-2026-05-19"></a>
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between May 19, 2026 and May 27, 2026:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
@@ -138,8 +131,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between May 7, 2026 and May 18, 2026:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET 10 on AL2023 version 3.10.3** <br /> * 64bit Amazon Linux 2023 v3.10.3 running .NET 10 *  | .NET 10.0.7, supports 10.0.7 | nginx 1.28.3 | 2023.11.20260505 | 3.6.2 |
@@ -151,8 +142,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 <a name="platform-history-2026-05-04"></a>
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between May 4, 2026 and May 6, 2026:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
@@ -166,8 +155,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between April 9, 2026 and May 3, 2026:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET 10 on AL2023 version 3.10.1** <br /> * 64bit Amazon Linux 2023 v3.10.1 running .NET 10 *  | .NET 10.0.5, supports 10.0.5 | nginx 1.28.2 | 2023.11.20260406 | 3.6.2 |
@@ -179,8 +166,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 <a name="platform-history-2026-03-31"></a>
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between March 31, 2026 and April 8, 2026:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
@@ -194,8 +179,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between March 11, 2026 and March 30, 2026:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET 10 on AL2023 version 3.9.0** <br /> * 64bit Amazon Linux 2023 v3.9.0 running .NET 10 *  | .NET 10.0.3, supports 10.0.3 | nginx 1.28.2 | 2023.10.20260302 | 3.6.2 |
@@ -207,8 +190,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 <a name="platform-history-2026-02-26"></a>
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between February 26, 2026 and March 10, 2026:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
@@ -222,8 +203,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between February 12, 2026 and February 25, 2026:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET 10 on AL2023 version 3.7.3** <br /> * 64bit Amazon Linux 2023 v3.7.3 running .NET 10 *  | .NET 10.0.3, supports 10.0.3 | nginx 1.28.1 | 2023.10.20260202 | 3.6.1 |
@@ -235,8 +214,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 <a name="platform-history-2026-01-30"></a>
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between January 30, 2026 and February 11, 2026:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
@@ -250,8 +227,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between January 15, 2026 and January 29, 2026:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET 10 on AL2023 version 3.7.1** <br /> * 64bit Amazon Linux 2023 v3.7.1 running .NET 10 *  | .NET 10.0.1, supports 10.0.1 | nginx 1.28.0 | 2023.10.20260105 | 3.6.1 |
@@ -263,8 +238,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 <a name="platform-history-2026-01-13"></a>
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between January 13, 2026 and January 14, 2026:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
@@ -278,8 +251,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between December 16, 2025 and January 12, 2026:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET 10 on AL2023 version 3.7.0** <br /> * 64bit Amazon Linux 2023 v3.7.0 running .NET 10 *  | .NET 10.0.1, supports 10.0.1 | nginx 1.28.0 | 2023.9.20251208 | 3.6.1 |
@@ -292,8 +263,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between November 20, 2025 and December 15, 2025:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET 9 on AL2023 version 3.6.0** <br /> * 64bit Amazon Linux 2023 v3.6.0 running .NET 9 *  | .NET 9.0.11, supports 9.0.11 | nginx 1.28.0 | 2023.9.20251117 | 3.6.1 |
@@ -304,8 +273,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 <a name="platform-history-2025-11-05"></a>
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between November 5, 2025 and November 19, 2025:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
@@ -318,8 +285,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between October 27, 2025 and November 4, 2025:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET 9 on AL2023 version 3.5.7** <br /> * 64bit Amazon Linux 2023 v3.5.7 running .NET 9 *  | .NET 9.0.10, supports 9.0.10 | nginx 1.28.0 | 2023.9.20251014 | 3.3.15 |
@@ -330,8 +295,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 <a name="platform-history-2025-10-16"></a>
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between October 16, 2025 and October 26, 2025:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
@@ -344,8 +307,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between October 7, 2025 and October 15, 2025:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET 9 on AL2023 version 3.5.6** <br /> * 64bit Amazon Linux 2023 v3.5.6 running .NET 9 *  | .NET 9.0.9, supports 9.0.9 | nginx 1.28.0 | 2023.9.20250929 | 3.3.15 |
@@ -356,8 +317,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 <a name="platform-history-2025-09-16"></a>
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between September 16, 2025 and October 6, 2025:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
@@ -370,8 +329,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between August 22, 2025 and September 15, 2025:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET 9 on AL2023 version 3.5.4** <br /> * 64bit Amazon Linux 2023 v3.5.4 running .NET 9 *  | .NET 9.0.8, supports 9.0.8 | nginx 1.28.0 | 2023.8.20250818 | 3.3.15 |
@@ -382,8 +339,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 <a name="platform-history-2025-08-20"></a>
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between August 20, 2025 and August 21, 2025:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
@@ -396,8 +351,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between August 7, 2025 and August 19, 2025:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET 9 on AL2023 version 3.5.3** <br /> * 64bit Amazon Linux 2023 v3.5.3 running .NET 9 *  | .NET 9.0.8, supports 9.0.8 | nginx 1.28.0 | 2023.8.20250804 | 3.3.15 |
@@ -408,8 +361,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 <a name="platform-history-2025-07-31"></a>
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between July 31, 2025 and August 6, 2025:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
@@ -422,8 +373,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between July 30, 2025 and July 30, 2025:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET 9 on AL2023 version 3.5.1** <br /> * 64bit Amazon Linux 2023 v3.5.1 running .NET 9 *  | .NET 9.0.7, supports 9.0.7 | nginx 1.28.0 | 2023.8.20250707 | 3.3.15 |
@@ -434,8 +383,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 <a name="platform-history-2025-07-17"></a>
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between July 17, 2025 and July 29, 2025:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
@@ -448,8 +395,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between June 27, 2025 and July 16, 2025:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET 9 on AL2023 version 3.5.0** <br /> * 64bit Amazon Linux 2023 v3.5.0 running .NET 9 *  | .NET 9.0.6, supports 9.0.6 | nginx 1.28.0 | 2023.7.20250623 | 3.3.14 |
@@ -460,8 +405,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 <a name="platform-history-2025-06-26"></a>
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between June 26, 2025 and June 26, 2025:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
@@ -474,8 +417,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between May 20, 2025 and June 25, 2025:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET 9 on AL2023 version 3.4.2** <br /> * 64bit Amazon Linux 2023 v3.4.2 running .NET 9 *  | .NET 9.0.5, supports 9.0.5 | nginx 1.26.3 | 2023.7.20250512 | 3.3.14 |
@@ -486,8 +427,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 <a name="platform-history-2025-04-24"></a>
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between April 24, 2025 and May 19, 2025:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
@@ -500,8 +439,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between April 22, 2025 and April 23, 2025:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET 9 on AL2023 version 3.4.1** <br /> * 64bit Amazon Linux 2023 v3.4.1 running .NET 9 *  | .NET 9.0.4, supports 9.0.4 | nginx 1.26.3 | 2023.7.20250414 | 3.3.14 |
@@ -513,8 +450,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between April 8, 2025 and April 21, 2025:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET 9 on AL2023 version 3.4.0** <br /> * 64bit Amazon Linux 2023 v3.4.0 running .NET 9 *  | .NET 9.0.3, supports 9.0.3 | nginx 1.26.3 | 2023.6.20250317 | 3.3.14 |
@@ -525,8 +460,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 <a name="platform-history-2025-03-28"></a>
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between March 28, 2025 and April 7, 2025:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
@@ -540,8 +473,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between February 27, 2025 and March 27, 2025:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET 9 on AL2023 version 3.3.1** <br /> * 64bit Amazon Linux 2023 v3.3.1 running .NET 9 *  | .NET 9.0.2, supports 9.0.2 | nginx 1.26.3 | 2023.6.20250218 | 3.3.14 |
@@ -553,8 +484,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 <a name="platform-history-2025-02-25"></a>
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between February 25, 2025 and February 26, 2025:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
@@ -568,8 +497,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between January 28, 2025 and February 24, 2025:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET 9 on AL2023 version 3.3.0** <br /> * 64bit Amazon Linux 2023 v3.3.0 running .NET 9 *  | .NET 9.0.1, supports 9.0.1 | nginx 1.26.2 | 2023.6.20250123 | 3.3.13 |
@@ -582,8 +509,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between January 3, 2025 and January 27, 2025:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET 8 on AL2023 version 3.2.2** <br /> * 64bit Amazon Linux 2023 v3.2.2 running .NET 8 *  | .NET 8.0.11, supports 8.0.11 | nginx 1.26.2 | 2023.6.20241212 | 3.3.13 |
@@ -594,8 +519,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 <a name="platform-history-2024-12-19"></a>
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between December 19, 2024 and January 2, 2025:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
@@ -608,8 +531,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between November 21, 2024 and December 18, 2024:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET 8 on AL2023 version 3.2.1** <br /> * 64bit Amazon Linux 2023 v3.2.1 running .NET 8 *  | .NET 8.0.11, supports 8.0.11 | nginx 1.26.2 | 2023.6.20241111 | 3.3.13 |
@@ -620,8 +541,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 <a name="platform-history-2024-11-19"></a>
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between November 19, 2024 and November 20, 2024:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
@@ -634,8 +553,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between November 8, 2024 and November 18, 2024:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET 8 on AL2023 version 3.2.0** <br /> * 64bit Amazon Linux 2023 v3.2.0 running .NET 8 *  | .NET 8.0.10, supports 8.0.10 | nginx 1.26.2 | 2023.6.20241031 | 3.3.13 |
@@ -646,8 +563,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 <a name="platform-history-2024-10-10"></a>
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between October 10, 2024 and November 7, 2024:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
@@ -660,8 +575,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between October 8, 2024 and October 9, 2024:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET 8 on AL2023 version 3.1.7** <br /> * 64bit Amazon Linux 2023 v3.1.7 running .NET 8 *  | .NET 8.0.8, supports 8.0.8 | nginx 1.24.0 | 2023.5.20241001 | 3.3.13 |
@@ -672,8 +585,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 <a name="platform-history-2024-10-04"></a>
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between October 4, 2024 and October 7, 2024:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
@@ -686,8 +597,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between September 12, 2024 and October 3, 2024:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET 8 on AL2023 version 3.1.6** <br /> * 64bit Amazon Linux 2023 v3.1.6 running .NET 8 *  | .NET 8.0.8, supports 8.0.8 | nginx 1.24.0 | 2023.5.20240903 | 3.3.13 |
@@ -698,8 +607,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 <a name="platform-history-2024-09-10"></a>
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between September 10, 2024 and September 11, 2024:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
@@ -712,8 +619,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between August 16, 2024 and September 9, 2024:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET 8 on AL2023 version 3.1.5** <br /> * 64bit Amazon Linux 2023 v3.1.5 running .NET 8 *  | .NET 8.0.7, supports 8.0.7 | nginx 1.24.0 | 2023.5.20240805 | 3.3.12 |
@@ -724,8 +629,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 <a name="platform-history-2024-08-12"></a>
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between August 12, 2024 and August 15, 2024:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
@@ -738,8 +641,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between July 29, 2024 and August 11, 2024:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET 8 on AL2023 version 3.1.4** <br /> * 64bit Amazon Linux 2023 v3.1.4 running .NET 8 *  | .NET 8.0.7, supports 8.0.7 | nginx 1.24.0 | 2023.5.20240722 | 3.3.12 |
@@ -750,8 +651,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 <a name="platform-history-2024-07-18"></a>
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between July 18, 2024 and July 28, 2024:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
@@ -764,8 +663,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between July 3, 2024 and July 17, 2024:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET 8 on AL2023 version 3.1.3** <br /> * 64bit Amazon Linux 2023 v3.1.3 running .NET 8 *  | .NET 8.0.6, supports 8.0.6 | nginx 1.24.0 | 2023.5.20240701 | 3.3.12 |
@@ -776,8 +673,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 <a name="platform-history-2024-06-18"></a>
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between June 18, 2024 and July 2, 2024:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
@@ -790,8 +685,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between June 13, 2024 and June 17, 2024:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET 8 on AL2023 version 3.1.2** <br /> * 64bit Amazon Linux 2023 v3.1.2 running .NET 8 *  | .NET 8.0.6, supports 8.0.6 | nginx 1.24.0 | 2023.4.20240611 | 3.2.0 |
@@ -802,8 +695,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 <a name="platform-history-2024-05-28"></a>
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between May 28, 2024 and June 12, 2024:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
@@ -816,8 +707,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between May 17, 2024 and May 27, 2024:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET 8 on AL2023 version 3.1.1** <br /> * 64bit Amazon Linux 2023 v3.1.1 running .NET 8 *  | .NET 8.0.5, supports 8.0.5 | nginx 1.24.0 | 2023.4.20240513 | 3.2.0 |
@@ -829,8 +718,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between April 26, 2024 and May 16, 2024:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET 6 on AL2023 version 3.0.6** <br /> * 64bit Amazon Linux 2023 v3.0.6 running .NET 6 *  | .NET 6.0.27, supports 6.0.27 | nginx 1.24.0 | 2023.4.20240416 | 3.2.0 |
@@ -840,8 +727,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 <a name="platform-history-2024-04-23"></a>
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between April 23, 2024 and April 25, 2024:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
@@ -853,8 +738,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between March 28, 2024 and April 22, 2024:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET 6 on AL2023 version 3.0.5** <br /> * 64bit Amazon Linux 2023 v3.0.5 running .NET 6 *  | .NET 6.0.27, supports 6.0.27 | nginx 1.24.0 | 2023.4.20240319 | 3.2.0 |
@@ -864,8 +747,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 <a name="platform-history-2024-03-26"></a>
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between March 26, 2024 and March 27, 2024:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
@@ -877,8 +758,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between February 28, 2024 and March 25, 2024:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET 6 on AL2023 version 3.0.4** <br /> * 64bit Amazon Linux 2023 v3.0.4 running .NET 6 *  | .NET 6.0.26, supports 6.0.26 | nginx 1.24.0 | 2023.3.20240219 | 3.2.0 |
@@ -888,8 +767,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 <a name="platform-history-2024-02-22"></a>
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between February 22, 2024 and February 27, 2024:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
@@ -901,8 +778,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between January 29, 2024 and February 21, 2024:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET 6 on AL2023 version 3.0.3** <br /> * 64bit Amazon Linux 2023 v3.0.3 running .NET 6 *  | .NET 6.0.26, supports 6.0.26 | nginx 1.24.0 | 2023.3.20240122 | 3.2.0 |
@@ -912,8 +787,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 <a name="platform-history-2024-01-25"></a>
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between January 25, 2024 and January 28, 2024:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
@@ -925,8 +798,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between December 19, 2023 and January 24, 2024:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET 6 on AL2023 version 3.0.2** <br /> * 64bit Amazon Linux 2023 v3.0.2 running .NET 6 *  | .NET 6.0.25, supports 6.0.25 | nginx 1.24.0 | 2023.3.20231211 | 3.2.0 |
@@ -936,8 +807,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 <a name="platform-history-2023-12-15"></a>
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between December 15, 2023 and December 18, 2023:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
@@ -949,8 +818,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between November 17, 2023 and December 14, 2023:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET 6 on AL2023 version 3.0.1** <br /> * 64bit Amazon Linux 2023 v3.0.1 running .NET 6 *  | .NET 6.0.23, supports 6.0.23 | nginx 1.24.0 | 2023.2.20231113 | 3.2.0 |
@@ -960,8 +827,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 <a name="platform-history-2023-11-15"></a>
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between November 15, 2023 and November 16, 2023:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
@@ -973,8 +838,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between October 24, 2023 and November 14, 2023:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET 6 on AL2023 version 3.0.0** <br /> * 64bit Amazon Linux 2023 v3.0.0 running .NET 6 *  | .NET 6.0.23, supports 6.0.23 | nginx 1.24.0 | 2023.2.20231016 | 3.2.0 |
@@ -984,8 +847,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 <a name="platform-history-2023-10-19"></a>
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between October 19, 2023 and October 23, 2023:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
@@ -997,8 +858,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between October 6, 2023 and October 18, 2023:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET Core on AL2 version 2.6.0** <br /> * 64bit Amazon Linux 2 v2.6.0 running .NET Core *  | .NET 6.0.22, supports 6.0.22 | nginx 1.22.1 | 2.0.20230926 | 3.2.0 |
@@ -1007,8 +866,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 <a name="platform-history-2023-09-05"></a>
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between September 5, 2023 and October 5, 2023:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
@@ -1019,8 +876,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between July 28, 2023 and September 4, 2023:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET Core on AL2 version 2.5.6** <br /> * 64bit Amazon Linux 2 v2.5.6 running .NET Core *  | .NET 6.0.20, supports 6.0.20, 3.1.32 | nginx 1.22.1 | 2.0.20230719 | 3.2.0 |
@@ -1029,8 +884,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 <a name="platform-history-2023-06-30"></a>
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between June 30, 2023 and July 27, 2023:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
@@ -1041,8 +894,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between May 31, 2023 and June 29, 2023:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET Core on AL2 version 2.5.4** <br /> * 64bit Amazon Linux 2 v2.5.4 running .NET Core *  | .NET 6.0.16, supports 6.0.16, 3.1.32 | nginx 1.22.1 | 2.0.20230515 | 3.2.0 |
@@ -1051,8 +902,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 <a name="platform-history-2023-04-28"></a>
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between April 28, 2023 and May 30, 2023:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
@@ -1063,8 +912,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between April 3, 2023 and April 27, 2023:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET Core on AL2 version 2.5.2** <br /> * 64bit Amazon Linux 2 v2.5.2 running .NET Core *  | .NET 6.0.15, supports 6.0.15, 3.1.32 | nginx 1.22.1 | 2.0.20230320 | 3.2.0 |
@@ -1073,8 +920,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 <a name="platform-history-2023-03-07"></a>
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between March 7, 2023 and April 2, 2023:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
@@ -1085,8 +930,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between February 1, 2023 and March 6, 2023:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET Core on AL2 version 2.5.0** <br /> * 64bit Amazon Linux 2 v2.5.0 running .NET Core *  | .NET 6.0.13, supports 6.0.13, 3.1.32 | nginx 1.22.1 | 2.0.20230119 | 3.2.0 |
@@ -1095,8 +938,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 <a name="platform-history-2022-12-29"></a>
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between December 29, 2022 and January 31, 2023:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
@@ -1107,8 +948,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between December 6, 2022 and December 28, 2022:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET Core on AL2 version 2.4.2** <br /> * 64bit Amazon Linux 2 v2.4.2 running .NET Core *  | .NET 6.0.11, supports 6.0.11, 5.0.17, 3.1.31 | nginx 1.22.0 | 2.0.20221103 | 3.2.0 |
@@ -1117,8 +956,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 <a name="platform-history-2022-11-04"></a>
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between November 4, 2022 and December 5, 2022:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
@@ -1129,8 +966,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between October 3, 2022 and November 3, 2022:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET Core on AL2 version 2.4.0** <br /> * 64bit Amazon Linux 2 v2.4.0 running .NET Core *  | .NET 6.0.9, supports 6.0.9, 5.0.17, 3.1.29 | nginx 1.20.0 | 2.0.20220912 | 3.2.0 |
@@ -1139,8 +974,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 <a name="platform-history-2022-08-31"></a>
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between August 31, 2022 and October 2, 2022:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
@@ -1151,8 +984,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between August 8, 2022 and August 30, 2022:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET Core on AL2 version 2.3.4** <br /> * 64bit Amazon Linux 2 v2.3.4 running .NET Core *  | .NET 6.0.7, supports 6.0.7, 5.0.17, 3.1.27 | nginx 1.20.0 | 2.0.20220719 | 3.2.0 |
@@ -1161,8 +992,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 <a name="platform-history-2022-06-29"></a>
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between June 29, 2022 and August 7, 2022:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
@@ -1173,8 +1002,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between June 22, 2022 and June 28, 2022:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET Core on AL2 version 2.3.3** <br /> * 64bit Amazon Linux 2 v2.3.3 running .NET Core *  | .NET 6.0.6, supports 6.0.6, 5.0.17, 3.1.26 | nginx 1.20.0 | 2.0.20220606 | 3.2.0 |
@@ -1183,8 +1010,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 <a name="platform-history-2022-05-26"></a>
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between May 26, 2022 and June 21, 2022:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
@@ -1195,8 +1020,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between April 29, 2022 and May 25, 2022:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET Core on AL2 version 2.3.1** <br /> * 64bit Amazon Linux 2 v2.3.1 running .NET Core *  | .NET 6.0.4, supports 6.0.4, 5.0.16, 3.1.24 | nginx 1.20.0 | 2.0.20220419 | 3.2.0 |
@@ -1205,8 +1028,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 <a name="platform-history-2022-03-31"></a>
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between March 31, 2022 and April 28, 2022:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
@@ -1217,8 +1038,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between March 2, 2022 and March 30, 2022:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET Core on AL2 version 2.2.11** <br /> * 64bit Amazon Linux 2 v2.2.11 running .NET Core *  | .NET 5.0.14, supports 5.0.14, 3.1.22, 2.1.30 | nginx 1.20.0 | 2.0.20220207 | 3.2.0 |
@@ -1227,8 +1046,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 <a name="platform-history-2022-02-03"></a>
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between February 3, 2022 and March 1, 2022:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
@@ -1239,8 +1056,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between December 21, 2021 and February 2, 2022:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET Core on AL2 version 2.2.9** <br /> * 64bit Amazon Linux 2 v2.2.9 running .NET Core *  | .NET 5.0.13, supports 5.0.13, 3.1.22, 2.1.30 | nginx 1.20.0 | 2.0.20211201 | 3.2.0 |
@@ -1249,8 +1064,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 <a name="platform-history-2021-11-19"></a>
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between November 19, 2021 and December 20, 2021:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
@@ -1261,8 +1074,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between October 21, 2021 and November 18, 2021:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET Core on AL2 version 2.2.7** <br /> * 64bit Amazon Linux 2 v2.2.7 running .NET Core *  | .NET 5.0.11, supports 5.0.11, 3.1.20, 2.1.30 | nginx 1.20.0 | 2.0.20211001 | 3.2.0 |
@@ -1271,8 +1082,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 <a name="platform-history-2021-10-03"></a>
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between October 3, 2021 and October 20, 2021:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
@@ -1283,8 +1092,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between September 2, 2021 and October 2, 2021:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET Core on AL2 version 2.2.5** <br /> * 64bit Amazon Linux 2 v2.2.5 running .NET Core *  | .NET 5.0.9, supports 5.0.9, 3.1.18, 2.1.30 | nginx 1.20.0 | 2.0.20210721 | 3.2.0 |
@@ -1293,8 +1100,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 <a name="platform-history-2021-07-30"></a>
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between July 30, 2021 and September 1, 2021:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
@@ -1305,8 +1110,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between July 21, 2021 and July 29, 2021:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET Core on AL2 version 2.2.3** <br /> * 64bit Amazon Linux 2 v2.2.3 running .NET Core *  | .NET 5.0.8, supports 5.0.8, 3.1.17, 2.1.28 | nginx 1.20.0 | 2.0.20210701 | 3.2.0 |
@@ -1315,8 +1118,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 <a name="platform-history-2021-07-07"></a>
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between July 7, 2021 and July 20, 2021:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
@@ -1327,8 +1128,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between June 11, 2021 and July 6, 2021:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET Core on AL2 version 2.2.1** <br /> * 64bit Amazon Linux 2 v2.2.1 running .NET Core *  | .NET 5.0.6, supports 5.0.6, 3.1.15, 2.1.28 | nginx 1.20.0 | 2.0.20210525 | 3.2.0 |
@@ -1337,8 +1136,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 <a name="platform-history-2021-06-01"></a>
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between June 1, 2021 and June 10, 2021:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
@@ -1349,8 +1146,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between May 3, 2021 and May 31, 2021:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET Core on AL2 version 2.1.5** <br /> * 64bit Amazon Linux 2 v2.1.5 running .NET Core *  | .NET 5.0.5, supports 5.0.5, 3.1.14, 2.1.27 | nginx 1.18.0 | 2.0.20210421 | 3.2.0 |
@@ -1359,8 +1154,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 <a name="platform-history-2021-03-31"></a>
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between March 31, 2021 and May 2, 2021:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
@@ -1371,8 +1164,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between February 26, 2021 and March 30, 2021:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET Core on AL2 version 2.1.3** <br /> * 64bit Amazon Linux 2 v2.1.2 running .NET Core *  | .NET 5.0.3, supports 5.0.3, 3.1.12, 2.1.25 | nginx 1.18.0 | 2.0.20210219 | 3.2.0 |
@@ -1381,8 +1172,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 <a name="platform-history-2021-01-29"></a>
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between January 29, 2021 and February 25, 2021:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
@@ -1393,8 +1182,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between December 29, 2020 and January 28, 2021:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET Core on AL2 version 2.1.1** <br /> * 64bit Amazon Linux 2 v2.1.1 running .NET Core *  | .NET 5.0.1, supports 5.0.1, 3.1.10, 2.1.23 | nginx 1.18.0 | 2.0.20201218 | 3.2.0 |
@@ -1403,8 +1190,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 <a name="platform-history-2020-11-20"></a>
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between November 20, 2020 and December 28, 2020:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
@@ -1415,8 +1200,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between November 10, 2020 and November 19, 2020:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET Core on AL2 version 2.0.4** <br /> * 64bit Amazon Linux 2 v2.0.4 running .NET Core *  | .NET Core 3.1.9, supports 3.1.9, 2.1.23 | nginx 1.18.0 | 2.0.20200917 | 3.2.0 |
@@ -1425,8 +1208,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 <a name="platform-history-2020-10-06"></a>
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between October 6, 2020 and November 9, 2020:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
@@ -1437,8 +1218,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between September 3, 2020 and October 5, 2020:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET Core on AL2 version 2.0.2** <br /> * 64bit Amazon Linux 2 v2.0.2 running .NET Core *  | .NET Core 3.1.7, supports 3.1.7, 2.1.21 | nginx 1.18.0 | 2.0.20200827 | 3.2.0 |
@@ -1448,8 +1227,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between August 4, 2020 and September 2, 2020:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET Core on AL2 version 2.0.1** <br /> * 64bit Amazon Linux 2 v2.0.1 running .NET Core *  | .NET Core 3.1.6, supports 3.1.6, 2.1.20 | nginx 1.18.0 | 2.0.20200723 | 3.2.0 |
@@ -1458,8 +1235,6 @@ The following Elastic Beanstalk platform versions for .NET Core on Linux were cu
 <a name="platform-history-2020-06-23"></a>
 
 The following Elastic Beanstalk platform versions for .NET Core on Linux were current between June 23, 2020 and August 3, 2020:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |

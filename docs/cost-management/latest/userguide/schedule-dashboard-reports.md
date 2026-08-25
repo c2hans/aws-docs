@@ -12,6 +12,7 @@ Each scheduled report is configured with a delivery frequency (daily, weekly, or
 When changes are made to a dashboard, they are automatically reflected in subsequent scheduled deliveries without requiring reconfiguration of the report.
 
 **Note**
+Scheduled email delivery is available only for dashboards that you create. To schedule email delivery for a Managed Dashboard, first duplicate it as a custom dashboard, then configure the scheduled report on your custom copy.
 To schedule email delivery, you need permissions for `bcm-dashboards:CreateScheduledReport`.
 
 **Note**

@@ -90,9 +90,11 @@ Length Constraints: Minimum length of 2. Maximum length of 50.
 Pattern: `(?!.* {2})[a-zA-Z][a-zA-Z0-9 _-]{0,48}[a-zA-Z0-9_-]`
 
  ** [type](#API_bcmDashboards_GetDashboard_ResponseSyntax) **   <a name="awscostmanagement-bcmDashboards_GetDashboard-response-type"></a>
-Indicates the dashboard type.
+The dashboard type. The following values are valid:
++  `CUSTOM` – A dashboard that you create and manage.
++  `AWS_MANAGED` – A predefined, read-only dashboard that AWS authors and maintains. You cannot modify, delete, share, tag, or schedule reports for an `AWS_MANAGED` dashboard.
 Type: String
-Valid Values: `CUSTOM`
+Valid Values: `CUSTOM | AWS_MANAGED`
 
  ** [updatedAt](#API_bcmDashboards_GetDashboard_ResponseSyntax) **   <a name="awscostmanagement-bcmDashboards_GetDashboard-response-updatedAt"></a>
 The timestamp when the dashboard was last modified.

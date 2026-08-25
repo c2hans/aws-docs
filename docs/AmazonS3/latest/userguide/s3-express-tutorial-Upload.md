@@ -27,7 +27,7 @@ You can also manually upload objects to your directory bucket.
 
 1. Under **Checksums**, choose the **Checksum function** that you want to use.
 **Note**
- We recommend using CRC32 and CRC32C for the best performance with the S3 Express One Zone storage class. For more information, see [S3 additional checksum best practices](https://docs.aws.amazon.com//AmazonS3/latest/userguide/s3-express-optimizing-performance-design-patterns.html#s3-express-optimizing--checksums.html).
+ We recommend using CRC32 and CRC32C for the best performance with the S3 Express One Zone storage class. For more information, see [S3 additional checksum best practices](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-express-optimizing-performance-design-patterns.html#s3-express-optimizing--checksums.html).
 
    (Optional) If you're uploading a single object that's less than 16 MB in size, you can also specify a pre-calculated checksum value. When you provide a pre-calculated value, Amazon S3 compares it with the value that it calculates by using the selected checksum function. If the values don't match, the upload won't start.
 

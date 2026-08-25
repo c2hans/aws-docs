@@ -52,8 +52,6 @@ Here is example JSON for a manifest with two configurations. The first configura
 **How to supply an agent manifest**
 You can store the manifest as a file in a location where AWS AppConfig Agent can read it. Or, you can store the manifest as an AWS AppConfig configuration and point the agent to it. To supply an agent manifest, you must set a `MANIFEST` environment variable with one of the following values:
 
-****
-
 | Manifest location | Environment variable value | Use case |
 | --- | --- | --- |
 | File | file:/path/to/agent-manifest.json | Use this method if your manifest won't change often. |

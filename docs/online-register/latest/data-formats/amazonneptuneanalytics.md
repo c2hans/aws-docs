@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon Neptune Analytics provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="neptune-graph-GetEngineStatus"></a>[GetEngineStatus](https://docs.aws.amazon.com/neptune-analytics/latest/apiref/#GetEngineStatus) | Get the engine status of the graph | Read |

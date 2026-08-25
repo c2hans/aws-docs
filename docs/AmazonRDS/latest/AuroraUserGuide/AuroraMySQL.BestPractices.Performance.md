@@ -55,7 +55,7 @@ Aurora MySQL can use the asynchronous key prefetch (AKP) feature to improve the 
 
 To take advantage of the AKP feature, a query must use both BKA and MRR. Typically, such a query occurs when the JOIN clause of a query uses a secondary index, but also needs some columns from the primary index. For example, you can use AKP when a JOIN clause represents an equijoin on index values between a small outer and large inner table, and the index is highly selective on the larger table. AKP works in concert with BKA and MRR to perform a secondary to primary index lookup during the evaluation of the JOIN clause. AKP identifies the rows required to run the query during the evaluation of the JOIN clause. It then uses a background thread to asynchronously load the pages containing those rows into memory before running the query.
 
-AKP is available for Aurora MySQL version 2.10 and higher, and version 3. For more information about Aurora MySQL versions, see [Database engine updates for Amazon Aurora MySQLLong-term support (LTS) and beta releases for Amazon Aurora MySQL](AuroraMySQL.Updates.md).
+AKP is available for Aurora MySQL version 2.10 and higher, and version 3. For more information about Aurora MySQL versions, see [Database engine updates for Amazon Aurora MySQL](AuroraMySQL.Updates.md).
 
 ### Enabling asynchronous key prefetch
 <a name="Aurora.BestPractices.AKP.Enabling"></a>

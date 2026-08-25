@@ -11,3 +11,5 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::Kendra::DataSource](aws-resource-kendra-datasource.md)
 + [AWS::Kendra::Faq](aws-resource-kendra-faq.md)
 + [AWS::Kendra::Index](aws-resource-kendra-index.md)
++ [AWS::Kendra::QuerySuggestionsBlockList](aws-resource-kendra-querysuggestionsblocklist.md)
++ [AWS::Kendra::Thesaurus](aws-resource-kendra-thesaurus.md)

@@ -678,15 +678,15 @@ aws cloudwatch get-metric-statistics --metric-name "FreeableMemory" \
 ## Monitoring Aurora serverless performance with Performance Insights
 <a name="aurora-serverless-v2.viewing.performance-insights"></a>
 
- You can use Performance Insights to monitor the performance of Aurora serverless DB instances. For Performance Insights procedures, see [Monitoring DB load with Performance Insights on Amazon Aurora](USER_PerfInsights.md).
+ You can use Performance Insights to monitor the performance of Aurora serverless DB instances. For Performance Insights procedures, see [Monitoring DB load with Amazon CloudWatch Database Insights on Amazon Aurora](USER_PerfInsights.md).
 
- The following new Performance Insights counters apply to Aurora serverless DB instances:
+ The following new detailed per-query and database counter metrics, exposed through the Performance Insights API, apply to Aurora serverless DB instances:
 +  `os.general.serverlessDatabaseCapacity` – The current capacity of the DB instance in ACUs. The value corresponds to the `ServerlessDatabaseCapacity` CloudWatch metric for the DB instance.
 +  `os.general.acuUtilization` – The percentage of current capacity out of the maximum configured capacity. The value corresponds to the `ACUUtilization` CloudWatch metric for the DB instance.
 +  `os.general.maxConfiguredAcu` – The maximum capacity that you configured for this Aurora serverless DB instance. It's measured in ACUs.
 +  `os.general.minConfiguredAcu` – The minimum capacity that you configured for this Aurora serverless DB instance. It's measured in ACUs
 
- For the full list of Performance Insights counters, see [Performance Insights counter metrics](USER_PerfInsights_Counters.md).
+ For the full list of detailed per-query and database counter metrics, see [Detailed Database Metrics](USER_PerfInsights_Counters.md).
 
  When `vCPU` values are shown for an Aurora serverless DB instance in Performance Insights, those values represent estimates based on the ACU value for the DB instance. At the default interval of one minute, any fractional vCPU values are rounded up to the nearest whole number. For longer intervals, the vCPU value shown is the average of the integer vCPU values for each minute.
 

@@ -14,8 +14,6 @@ Add an Active Directory (AD) user to an AD group in the AMS managed AD. For mult
 ## Change Type Details
 <a name="ct-24pi85mjtza8k-MDUa-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-24pi85mjtza8k |

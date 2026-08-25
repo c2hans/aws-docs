@@ -22,7 +22,7 @@ The source code reviewed by CodeGuru Reviewer is not stored. For more informatio
 ## Provide feedback using the CodeGuru Reviewer console
 <a name="provide-feedback-in-console"></a>
 
-You can provide feedback for recommendations on incremental code reviews or full repository analysis code reviews [using the **Code reviews** page](https://docs.aws.amazon.com//codeguru/latest/reviewer-ug/give-feedback-from-code-review-details.html) of the CodeGuru Reviewer console. Choose the name of a code review to view details and recommendations from that code review. Then choose the thumbs-up or thumbs-down icon under each recommendation to indicate whether the recommendation was helpful.
+You can provide feedback for recommendations on incremental code reviews or full repository analysis code reviews [using the **Code reviews** page](https://docs.aws.amazon.com/codeguru/latest/reviewer-ug/give-feedback-from-code-review-details.html) of the CodeGuru Reviewer console. Choose the name of a code review to view details and recommendations from that code review. Then choose the thumbs-up or thumbs-down icon under each recommendation to indicate whether the recommendation was helpful.
 
 ## Provide feedback using pull request comments
 <a name="provide-feedback-in-pull-requests"></a>

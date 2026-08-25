@@ -14,8 +14,6 @@ Update an existing Active Directory (AD) Group Managed Service Account (gMSA). F
 ## Change Type Details
 <a name="ct-15gyrpzjx1yac-MDDu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-15gyrpzjx1yac |

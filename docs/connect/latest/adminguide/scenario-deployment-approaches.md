@@ -49,14 +49,14 @@ Outbound campaigns are typically driven by contact data exported from CRMs and s
 ## Hybrid
 <a name="hybrid"></a>
 
-If you have requirements to transfer contacts between Connect Customer and legacy contact center technologies, you can use a Hybrid model architecture to pass contact data with the transfer. For example, a sales business unit on a legacy contact center platform may need to transfer a call to the service business unit that’s been migrated to Connect Customer. Without a Hybrid architecture, call details will be lost and may require the contact to repeat information. This could increase handle times and may result in contact calling again for the same purpose.
+If you have requirements to transfer contacts between Connect Customer and legacy contact center technologies, you can use a Hybrid model architecture to pass contact data with the transfer. For example, a sales business unit on a legacy contact center platform might need to transfer a call to the service business unit that’s been migrated to Connect Customer. Without a Hybrid architecture, call details will be lost and might require the contact to repeat information. This could increase handle times and might result in contact calling again for the same purpose.
 
 Hybrid architectures require you to claim as many phone numbers as your expected maximum concurrent contacts and an intermediary state database accessible by both Connect Customer and your legacy contact center platform. When a transfer is required to the other platform, you will use one of these phone numbers as a unique identifier, flag it as in-use in your intermediary database, insert your contact details, and use that number as your ANI or DNIS when you transfer the contact. When the contact is received by the other contact center platform, you will query the intermediary database for the contact details based on the unique ANI or DNIS you used. Hybrid architectures are typically used as an interim migration step because of the additional cost and complexity associated.
 
 ### IVR-only
 <a name="ivr-only"></a>
 
-You may choose to use Connect Customer to drive the contact’s IVR experience while your agent population remains on your legacy contact center platform. With this approach, you can use Connect Customer flows to drive self-service and routing logic, and, if necessary, transfer the contact to the target agent or agent queue on your legacy contact center platform.
+You might choose to use Connect Customer to drive the contact’s IVR experience while your agent population remains on your legacy contact center platform. With this approach, you can use Connect Customer flows to drive self-service and routing logic, and, if necessary, transfer the contact to the target agent or agent queue on your legacy contact center platform.
 
 ![A customer Interactive Voice Response experience.](http://docs.aws.amazon.com/connect/latest/adminguide/images/architecture/hybridivr.png)
 
@@ -74,7 +74,7 @@ In this diagram, the contact dials a phone number claimed with your legacy conta
 ### Mixed
 <a name="mixed"></a>
 
-In this scenario, you may have your IVR and agents operating in parallel on Connect Customer and your legacy contact center platform to allow for site, agent group, or line-of-business migrations.
+In this scenario, you might have your IVR and agents operating in parallel on Connect Customer and your legacy contact center platform to allow for site, agent group, or line-of-business migrations.
 
 ![A hybrid Agent only and Interactive Voice Response experience.](http://docs.aws.amazon.com/connect/latest/adminguide/images/architecture/hybridmixed.png)
 
@@ -86,12 +86,12 @@ When you are evaluating Connect Customer for new or existing workloads, there ar
 ### New workload
 <a name="new-workload"></a>
 
-You may decrease risk associated with changes to existing business units and increase flexibility and digital innovation potential by adopting a net new workload on Connect Customer. Net new workloads that do not require the Hybrid model architecture are less complex, are not affected by change in business process or agent routine, and have a faster time to market. Adopting a net new workload allows you to take advantage of usage-based, pay-as-you-go pricing. Your contact center resources are available to create a new experience for their end users, test and implement it to evaluate the platform, gain confidence, and build the skills and operational mechanisms to prepare for larger migration across existing workloads.
+You might decrease risk associated with changes to existing business units and increase flexibility and digital innovation potential by adopting a net new workload on Connect Customer. Net new workloads that do not require the Hybrid model architecture are less complex, are not affected by change in business process or agent routine, and have a faster time to market. Adopting a net new workload allows you to take advantage of usage-based, pay-as-you-go pricing. Your contact center resources are available to create a new experience for their end users, test and implement it to evaluate the platform, gain confidence, and build the skills and operational mechanisms to prepare for larger migration across existing workloads.
 
 ### IVR First
 <a name="ivr-first"></a>
 
-You may choose to use Connect Customer to drive the contact’s IVR experience while your agent population remains on your legacy contact center platform. With this approach, you can use Connect Customer Flows to drive self-service and routing logic, and, if necessary, transfer the contact to the target agent or agent queue on your legacy contact center platform.
+You might choose to use Connect Customer to drive the contact’s IVR experience while your agent population remains on your legacy contact center platform. With this approach, you can use Connect Customer Flows to drive self-service and routing logic, and, if necessary, transfer the contact to the target agent or agent queue on your legacy contact center platform.
 
 ### IVR Last
 <a name="ivr-last"></a>
@@ -101,12 +101,12 @@ With this approach, your legacy contact center IVR drives the contact’s IVR se
 ### Line of business segmentation
 <a name="lob-segmentation"></a>
 
-If your lines of business have separate IVRs or don’t require contact transfers to legacy contact center platforms, you may want to consider a line of business migration approach. For example, selecting your service desk for internal support as your first line of business to migrate. After migrating your service desk IVR and agent population to Connect Customer, you may choose to forward your existing contact to Connect Customer, porting the endpoint after testing and business validation is completed.
+If your lines of business have separate IVRs or don’t require contact transfers to legacy contact center platforms, you might want to consider a line of business migration approach. For example, selecting your service desk for internal support as your first line of business to migrate. After migrating your service desk IVR and agent population to Connect Customer, you might choose to forward your existing contact to Connect Customer, porting the endpoint after testing and business validation is completed.
 
 ### Site or agent group segmentation
 <a name="agent-segmentation"></a>
 
-If your contact center has a global footprint, services contacts from multiple countries, or is managed independently by a respective geography or location, you may want to consider a migration approach based on a physical site or geography of agents. Each agent population and/or geography can have its own unique requirements and considerations that may not apply globally. Approaching your migration this way will allow each site or agent group to gain the skills they need to continue to operate independently before moving onto the next.
+If your contact center has a global footprint, services contacts from multiple countries, or is managed independently by a respective geography or location, you might want to consider a migration approach based on a physical site or geography of agents. Each agent population or geography can have its own unique requirements and considerations that might not apply globally. Approaching your migration this way will allow each site or agent group to gain the skills they need to continue to operate independently before moving onto the next.
 
 ## Virtual desktop infrastructure (VDI)
 <a name="vdi"></a>

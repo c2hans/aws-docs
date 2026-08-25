@@ -9,7 +9,7 @@ To find a recording of a specific contact, you only need the contact ID. You don
 
 **Tip**
 We recommend using the contact ID to search for recordings.
-Even though many call recordings for specific contact IDs may be named with the contact ID prefix itself (for example, 123456-aaaa-bbbb-3223-2323234.wav), there is no guarantee that the contact IDs and name of the contact recording file always match. By using **Contact ID** for your search on the **Contact search** page, you can find the correct recording by referring the audio file on the contact's record.
+Even though many call recordings for specific contact IDs might be named with the contact ID prefix itself (for example, 123456-aaaa-bbbb-3223-2323234.wav), there is no guarantee that the contact IDs and name of the contact recording file always match. By using **Contact ID** for your search on the **Contact search** page, you can find the correct recording by referring the audio file on the contact's record.
 
 **To search for recordings**
 

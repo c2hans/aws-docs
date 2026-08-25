@@ -19,8 +19,6 @@ If you try to set up a second SDI router, the configuration of the second router
 
 Make sure you perform the configuration on the correct nodes.
 
-****
-
 | Node | Work on this node? |
 | --- | --- |
 | Primary Conductor Live node | You configure the router from the primary Conductor Live.  |

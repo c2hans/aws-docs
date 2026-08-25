@@ -15,7 +15,7 @@ The *remaining limit* is how much you have spent for the current month sending m
 
 You can adjust your enforced limit to increase or decrease your spending without having to contact Support.
 
-To set up billing alarms for your spending, see [Monitoring spending](monitor-spending.md). For more information about configuring the AWS CLI, see [Configure the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html) in the [AWS Command Line Interface User Guide](https://docs.aws.amazon.com/cli/latest/userguide/). For more information about SMS, MMS, or origination identity pricing, see [AWS End User Messaging Pricing](https://aws.amazon.com//end-user-messaging/pricing/).
+To set up billing alarms for your spending, see [Monitoring spending](monitor-spending.md). For more information about configuring the AWS CLI, see [Configure the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html) in the [AWS Command Line Interface User Guide](https://docs.aws.amazon.com/cli/latest/userguide/). For more information about SMS, MMS, or origination identity pricing, see [AWS End User Messaging Pricing](https://aws.amazon.com/end-user-messaging/pricing/).
 
 ------
 #### [ View your spending limits (console) ]

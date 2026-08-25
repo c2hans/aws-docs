@@ -15,9 +15,9 @@ Currently, Connect Customer Tasks can be used in compliance with [GDPR](https://
 ## What is a task?
 <a name="what-is-a-task"></a>
 
-In a business a *task* is a unit of work that an agent must complete. This includes work that may have originated in external applications. In Connect Customer this unit of work is a contact. It's routed, prioritized, assigned, and tracked just like a voice or chat contact. Everything that is applicable to a voice or chat contact is also applicable to a task contact.
+In a business a *task* is a unit of work that an agent must complete. This includes work that might have originated in external applications. In Connect Customer this unit of work is a contact. It's routed, prioritized, assigned, and tracked just like a voice or chat contact. Everything that is applicable to a voice or chat contact is also applicable to a task contact.
 
-Agents handle tasks in their Contact Control Panel (CCP), again just like any other contact. When assigned a task, agents see a notification with the description of the task, information associated with the tasks, and links to any applications that they might need to complete the task. The following image shows what an agent's CCP may look like when they manage tasks.
+Agents handle tasks in their Contact Control Panel (CCP), again just like any other contact. When assigned a task, agents see a notification with the description of the task, information associated with the tasks, and links to any applications that they might need to complete the task. The following image shows what an agent's CCP might look like when they manage tasks.
 
 ![A task in the Contact Control Panel.](http://docs.aws.amazon.com/connect/latest/adminguide/images/tasks-introduction.png)
 
@@ -200,7 +200,7 @@ The following data is captured in the contact data model.
 ### Manage tasks to custom service levels (SL)
 <a name="tasks-custom-sl"></a>
 
-While voice and chats may have short service level times based on seconds or minutes, you may have some tasks with service levels that are hours or days. You can create custom service level durations that are appropriate to each of your channels. For more information, see [custom service levels](metrics-definitions.md#custom-service-levels).
+While voice and chats might have short service level times based on seconds or minutes, you might have some tasks with service levels that are hours or days. You can create custom service level durations that are appropriate to each of your channels. For more information, see [custom service levels](metrics-definitions.md#custom-service-levels).
 
 ## When do tasks end?
 <a name="when-do-tasks-end"></a>

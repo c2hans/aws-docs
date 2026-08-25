@@ -122,7 +122,7 @@ CREATE INDEX idx_event_type ON  data_mart.events(event_type);
 ## Configuring partitions using the create\_parent function
 <a name="PostgreSQL_Partitions.create_parent"></a>
 
-After you enable the `pg_partman` extension, use the `create_parent` function to configure partitions inside the partition maintenance schema. The following example uses the `events` table example created in [Enabling the pg\_partman extensionConfiguring partition maintenance using the run\_maintenance\_proc function](#PostgreSQL_Partitions.enable). Call the `create_parent` function as follows.
+After you enable the `pg_partman` extension, use the `create_parent` function to configure partitions inside the partition maintenance schema. The following example uses the `events` table example created in [Enabling the pg\_partman extension](#PostgreSQL_Partitions.enable). Call the `create_parent` function as follows.
 
 ```
 SELECT partman.create_parent(
@@ -147,7 +147,7 @@ For a complete description of the `create_parent` function, see [Creation Functi
 
 You can run partition maintenance operations to automatically create new partitions, detach partitions, or remove old partitions. Partition maintenance relies on the `run_maintenance_proc` function of the `pg_partman` extension and the `pg_cron` extension, which initiates an internal scheduler. The `pg_cron` scheduler automatically executes SQL statements, functions, and procedures defined in your databases.
 
-The following example uses the `events` table example created in [Enabling the pg\_partman extensionConfiguring partition maintenance using the run\_maintenance\_proc function](#PostgreSQL_Partitions.enable) to set partition maintenance operations to run automatically. As a prerequisite, add `pg_cron` to the `shared_preload_libraries` parameter in the DB instance's parameter group.
+The following example uses the `events` table example created in [Enabling the pg\_partman extension](#PostgreSQL_Partitions.enable) to set partition maintenance operations to run automatically. As a prerequisite, add `pg_cron` to the `shared_preload_libraries` parameter in the DB instance's parameter group.
 
 ```
 CREATE EXTENSION pg_cron;

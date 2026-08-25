@@ -14,8 +14,6 @@ Create a new DNS CNAME record in AWS Managed Microsoft Active Directory (AD). CN
 ## Change Type Details
 <a name="ct-2murl5xzbxoxf-MDDa-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2murl5xzbxoxf |

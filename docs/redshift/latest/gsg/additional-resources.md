@@ -24,4 +24,4 @@ For more information about Amazon Redshift Serverless, we recommend that you con
   + [Querying nested data with Amazon Redshift Spectrum](https://docs.aws.amazon.com/redshift/latest/dg/tutorial-query-nested-data.html): This tutorial describes how to use Redshift Spectrum to query nested data in Parquet, ORC, JSON, and Ion file formats using external tables.
   + [Configuring manual workload management (WLM) queues](https://docs.aws.amazon.com/redshift/latest/dg/tutorial-configuring-workload-management.html): This tutorial describes how to configure manual workload management (WLM) in Amazon Redshift.
   + [Getting started with Amazon Redshift ML](https://docs.aws.amazon.com/redshift/latest/dg/getting-started-machine-learning.html): This section describes how users can create, train, and deploy machine learning models using familiar SQL commands.
-+ [What's new](https://aws.amazon.com//redshift/whats-new): This webpage lists Amazon Redshift new features and product updates.
++ [What's new](https://aws.amazon.com/redshift/whats-new): This webpage lists Amazon Redshift new features and product updates.

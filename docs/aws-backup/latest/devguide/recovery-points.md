@@ -12,7 +12,7 @@ AWS Backup saves recovery points in backup vaults, which you can organize accord
 Each recovery point has a unique ID. The unique ID is at the end of the recovery point's Amazon Resource Name (ARN). For examples of recovery point ARNs and unique IDs, see the table in [Resources and operations](access-control.md#access-control-resources).
 
 **Important**
-To avoid additional charges, configure your retention policy with a warm storage duration of **at least one week**. For more information, see [Metering, costs, and billing for AWS BackupMetering, costs, and billing](metering-and-billing.md).
+To avoid additional charges, configure your retention policy with a warm storage duration of **at least one week**. For more information, see [Metering, costs, and billing for AWS Backup](metering-and-billing.md).
 
 The following sections provide an overview of the basic backup management tasks in AWS Backup.
 

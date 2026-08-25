@@ -18,13 +18,13 @@ This policy is attached to a service-linked role that allows the service to perf
 <a name="AWSReachabilityAnalyzerServiceRolePolicy-details"></a>
 + **Type**: Service-linked role policy
 + **Creation time**: November 23, 2022, 17:12 UTC
-+ **Edited time:** September 10, 2024, 16:04 UTC
++ **Edited time:** August 14, 2026, 17:17 UTC
 + **ARN**: `arn:aws:iam::aws:policy/aws-service-role/AWSReachabilityAnalyzerServiceRolePolicy`
 
 ## Policy version
 <a name="AWSReachabilityAnalyzerServiceRolePolicy-version"></a>
 
-**Policy version:** v4 (default)
+**Policy version:** v5 (default)
 
 The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request.
 
@@ -66,7 +66,11 @@ The policy's default version is the version that defines the permissions for the
         "ec2:DescribeTransitGatewayRouteTables",
         "ec2:DescribeTransitGatewayVpcAttachments",
         "ec2:DescribeTransitGateways",
+        "ec2:DescribeTransitGatewayPolicyTables",
+        "ec2:GetTransitGatewayPolicyTableEntries",
+        "ec2:GetTransitGatewayPolicyTableAssociations",
         "ec2:DescribeVpcEndpointServiceConfigurations",
+        "ec2:DescribeAddresses",
         "ec2:DescribeVpcEndpoints",
         "ec2:DescribeVpcPeeringConnections",
         "ec2:DescribeVpcs",
@@ -84,6 +88,7 @@ The policy's default version is the version that defines the permissions for the
         "elasticloadbalancing:DescribeTargetGroups",
         "elasticloadbalancing:DescribeTargetHealth",
         "network-firewall:DescribeFirewall",
+        "network-firewall:DescribeFirewallMetadata",
         "network-firewall:DescribeFirewallPolicy",
         "network-firewall:DescribeResourcePolicy",
         "network-firewall:DescribeRuleGroup",
@@ -125,5 +130,5 @@ The policy's default version is the version that defines the permissions for the
 
 ## Learn more
 <a name="AWSReachabilityAnalyzerServiceRolePolicy-learn-more"></a>
-+ [Understand versioning for IAM policies](https://docs.aws.amazon.com//IAM/latest/UserGuide/access_policies_managed-versioning.html)
-+ [Get started with AWS managed policies and move toward least-privilege permissions](https://docs.aws.amazon.com//IAM/latest/UserGuide/best-practices.html#bp-use-aws-defined-policies)
++ [Understand versioning for IAM policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-versioning.html)
++ [Get started with AWS managed policies and move toward least-privilege permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#bp-use-aws-defined-policies)

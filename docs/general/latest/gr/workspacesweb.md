@@ -30,8 +30,6 @@ The following are the service endpoints and service quotas for this service.
 ## Service quotas
 <a name="workspacesweb-quotas"></a>
 
-****
-
 | Name | Default | Adjustable | Description |
 | --- | --- | --- | --- |
 | Maximum concurrent sessions for the standard.regular instance type in the specified region | Each supported Region: 25 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/workspaces-web/quotas) | The maximum number of concurrent sessions that you can use for the standard.regular instance type in this account in the specified Region. |

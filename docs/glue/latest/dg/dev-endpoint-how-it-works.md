@@ -22,8 +22,6 @@ The Spark jobs run based on the [Spark configuration](https://spark.apache.org/d
 
 By default, Spark allocates cluster resources to a Livy session based on the Spark cluster configuration. In the AWS Glue development endpoints, the cluster configuration depends on the worker type. Here's a table which explains the common configurations per worker type.
 
-****
-
 |  | Standard | G.1X | G.2X |
 | --- | --- | --- | --- |
 |  spark.driver.memory  | 5G | 10G | 20G |
@@ -32,8 +30,6 @@ By default, Spark allocates cluster resources to a Livy session based on the Spa
 |  spark.dynamicAllocation.enabled  | TRUE | TRUE | TRUE |
 
 The maximum number of Spark executors is automatically calculated by combination of DPU (or `NumberOfWorkers`) and worker type.
-
-****
 
 |  | Standard | G.1X | G.2X |
 | --- | --- | --- | --- |

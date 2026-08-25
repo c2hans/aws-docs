@@ -10,8 +10,6 @@ Each output on a flow must be sent to a different destination. The parameters th
 **Note**
 Some protocols require additional ports for error correction. For outputs that use these protocols, AWS Elemental MediaConnect automatically reserves the additional ports. The protocol defines specifically which ports must be reserved. For example, some protocols require port\+2 and port\+4 for error correction. If you specify port 5000 for the output, the service assigns ports 5000, 5002, and 5004.
 
-****
-
 | Protocol | Destination definition | Ports required |
 | --- | --- | --- |
 | CDI | Ports for each media stream | The ports that you specify for each media stream. These are the only ports needed for the output. |

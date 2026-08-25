@@ -33,6 +33,6 @@ View the following topics to learn more about destinations and path filters in M
 + [Understand AWS IoT SiteWise Edge destinations](gw-destinations.md#source-destination)
 + [Add an AWS IoT SiteWise Edge real-time destination](destinations-real-time.md)
 + [Add an AWS IoT SiteWise buffered destination using Amazon S3](destinations-buffered.md)
-+ [Understand path filters for AWS IoT SiteWise Edge destinationsUnderstand path filters](gw-destinations.md#destinations-path-filters)
++ [Understand path filters for AWS IoT SiteWise Edge destinations](gw-destinations.md#destinations-path-filters)
 + [Add path filters to AWS IoT SiteWise Edge destinations](destinations-add-path-filters.md)
 + [Manage AWS IoT SiteWise Edge destinations](destinations-manage.md)

@@ -156,7 +156,6 @@ The Amazon S3 paths to additional Python modules that AWS Glue adds to the Pytho
 
 **`--job-bookmark-option`**
 Controls the behavior of a job bookmark. The following option values can be set.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-etl-glue-arguments.html)
 For example, to enable a job bookmark, pass the following argument.
 

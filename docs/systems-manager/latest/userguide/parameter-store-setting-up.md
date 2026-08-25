@@ -26,8 +26,6 @@ This section also explains how to create Amazon EventBridge rules that let you r
 
  The following table describes the IAM permissions required for different Parameter Store actions.
 
-****
-
 | Action | Required IAM privilege | Reference information |
 | --- | --- | --- |
 | Create or update a parameter | ssm:PutParameter | [PutParameter](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_PutParameter.html) |

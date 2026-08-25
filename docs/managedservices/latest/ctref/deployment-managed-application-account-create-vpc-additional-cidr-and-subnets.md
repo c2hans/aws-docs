@@ -14,8 +14,6 @@ Create an additional VPC CIDR, or subnets, or both, for an existing application 
 ## Change Type Details
 <a name="ct-2ha68tpd7nr3y-DMAc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2ha68tpd7nr3y |

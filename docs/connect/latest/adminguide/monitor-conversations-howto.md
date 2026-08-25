@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/monitor-conver
 # Listen to live conversations or read live chats in Connect Customer
 <a name="monitor-conversations-howto"></a>
 
-Before you can listen to live conversations or read live chats, the Connect Customer admin needs to [enable](monitor-conversations.md) the feature, [assign you permissions](monitor-conversations-permissions.md), and ensure you are assigned to a routing profile that supports the channel being monitored. After that's done, you can do these steps.
+Before you can listen to live conversations or read live chats, the Connect Customer admin needs to [enable](monitor-conversations.md) the feature, [assign you permissions](monitor-conversations-permissions.md), and make sure you are assigned to a routing profile that supports the channel being monitored. After that's done, you can do these steps.
 
 For information about how many people can listen in to a conversation or follow a chat, see [Connect Customer feature specifications](feature-limits.md).
 

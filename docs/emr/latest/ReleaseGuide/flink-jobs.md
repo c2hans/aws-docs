@@ -28,7 +28,6 @@ Submit the Flink session with the `flink-yarn-session` command in an existing cl
 1. In the cluster details page, choose **Steps**, **Add Step**.
 
 1. Use the guidelines that follow to enter the parameters, and then choose **Add**.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/emr/latest/ReleaseGuide/flink-jobs.html)
 
 **To submit a Flink job on an existing cluster with the AWS CLI**

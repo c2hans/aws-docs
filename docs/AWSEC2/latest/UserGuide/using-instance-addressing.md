@@ -119,7 +119,7 @@ When your instance receives an IPv6 address during launch, the address is associ
 
 An IPv6 address persists when you stop and start, or hibernate and start, your instance, and is released when you terminate your instance. You cannot reassign an IPv6 address while it's assigned to another network interface—you must first unassign it.
 
-You can control whether instances are reachable via their IPv6 addresses by controlling the routing for your subnet or by using security group and network ACL rules. For more information, see [Internetwork traffic privacy](https://docs.aws.amazon.com/IAM/latest/UserGuide/access.html) in the *Amazon VPC User Guide*.
+You can control whether instances are reachable through their IPv6 addresses by controlling the routing for your subnet or by using security group and network ACL rules. For more information, see [Internetwork traffic privacy](https://docs.aws.amazon.com/IAM/latest/UserGuide/access.html) in the *Amazon VPC User Guide*.
 
 For more information about reserved IPv6 address ranges, see [IANA IPv6 Special-Purpose Address Registry](http://www.iana.org/assignments/iana-ipv6-special-registry/iana-ipv6-special-registry.xhtml) and [RFC4291](https://tools.ietf.org/html/rfc4291).
 

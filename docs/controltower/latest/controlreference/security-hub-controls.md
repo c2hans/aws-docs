@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/controltower/latest/controlreference/sec
 
 AWS Control Tower is integrated with AWS Security Hub CSPM to provide detective controls that help you monitor your AWS environment. The integration is accomplished with a Security Hub CSPM standard, called the **Service-Managed Standard: AWS Control Tower**.
 
-The **Service-Managed Standard: AWS Control Tower** supports a subset of controls in the **AWS Foundational Security Best Practices (FSBP)** standard. To learn more about this standard and to view the available controls, see [Service-Managed Standard: AWS Control Tower](https://docs.aws.amazon.com//securityhub/latest/userguide/service-managed-standard-aws-control-tower.html#aws-control-tower-standard-controls). For more general information about Security Hub CSPM standards, see [Security standards and controls in Security Hub CSPM](https://docs.aws.amazon.com//securityhub/latest/userguide/securityhub-standards.html), in the *AWS Security Hub User Guide*.
+The **Service-Managed Standard: AWS Control Tower** supports a subset of controls in the **AWS Foundational Security Best Practices (FSBP)** standard. To learn more about this standard and to view the available controls, see [Service-Managed Standard: AWS Control Tower](https://docs.aws.amazon.com/securityhub/latest/userguide/service-managed-standard-aws-control-tower.html#aws-control-tower-standard-controls). For more general information about Security Hub CSPM standards, see [Security standards and controls in Security Hub CSPM](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-standards.html), in the *AWS Security Hub User Guide*.
 
 This standard is available only for AWS Control Tower customers who have created the standard in the AWS Control Tower console. AWS Control Tower creates the standard for you when you enable the first Security Hub CSPM control in the AWS Control Tower console. When you enable the first control, if you haven’t already enabled Security Hub CSPM, AWS Control Tower also enables Security Hub CSPM for you.
 
@@ -22,14 +22,14 @@ After you create this standard, you can view the Security Hub CSPM detective con
 
 To see what Security Hub CSPM controls are supported by AWS Control Tower, you can use one of the following methods:
 + AWS Control Tower console where you can filter for `"Control owner = AWS Security Hub"`
-+ AWS Control Catalog API (call the [ListControls](https://docs.aws.amazon.com//controlcatalog/latest/APIReference/API_ListControls.html) API) with a filter for `Implementations.Types` set to `AWS::SecurityHub::SecurityControl`
-+ AWS CLI (run the [list-controls](https://docs.aws.amazon.com//cli/latest/reference/controlcatalog/list-controls.html) command) with a filter for `Implementations.Types` set to `AWS::SecurityHub::SecurityControl`. Example CLI command:
++ AWS Control Catalog API (call the [ListControls](https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_ListControls.html) API) with a filter for `Implementations.Types` set to `AWS::SecurityHub::SecurityControl`
++ AWS CLI (run the [list-controls](https://docs.aws.amazon.com/cli/latest/reference/controlcatalog/list-controls.html) command) with a filter for `Implementations.Types` set to `AWS::SecurityHub::SecurityControl`. Example CLI command:
 
   ```
   aws controlcatalog list-controls --filter '{"Implementations":{"Types":["AWS::SecurityHub::SecurityControl"]}}'
   ```
 
-To identify a Security Hub CSPM control by control ID in AWS Control Tower, you can use the field `Implementation.Identifier`. This field maps to Security Hub CSPM control ID and can be used to filter for a specific control ID. To retrieve control metadata for a specific Security Hub CSPM control (say, "CodeBuild.1") in AWS Control Tower, you can use the [ListControls](https://docs.aws.amazon.com//controlcatalog/latest/APIReference/API_ListControls.html) API:
+To identify a Security Hub CSPM control by control ID in AWS Control Tower, you can use the field `Implementation.Identifier`. This field maps to Security Hub CSPM control ID and can be used to filter for a specific control ID. To retrieve control metadata for a specific Security Hub CSPM control (say, "CodeBuild.1") in AWS Control Tower, you can use the [ListControls](https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_ListControls.html) API:
 
 ```
 aws controlcatalog list-controls --filter '{"Implementations":{"Identifiers":["CodeBuild.1"],"Types":["AWS::SecurityHub::SecurityControl"]}}'
@@ -49,7 +49,7 @@ If you deactivate a Service-Managed Standard control by means of the Security Hu
 ## Deprecated controls
 <a name="w2aac17c23c15c23b1"></a>
 
-The control named **[SH.S3.4] S3 buckets should have server-side encryption enabled** is deprecated, effective July 18, 2023. It was removed from the controls library on August 18, 2023. For more information, see [AWS Control Tower deprecates two controls](https://docs.aws.amazon.com//controltower/latest/userguide/2023-all.html#deprecate-2controls).
+The control named **[SH.S3.4] S3 buckets should have server-side encryption enabled** is deprecated, effective July 18, 2023. It was removed from the controls library on August 18, 2023. For more information, see [AWS Control Tower deprecates two controls](https://docs.aws.amazon.com/controltower/latest/userguide/2023-all.html#deprecate-2controls).
 
 The control named **[SH.RDS.18] RDS instances should be deployed in a VPC** is deprecated, effective April 28, 2025, and is to be removed from the Control Catalog.
 
@@ -75,11 +75,11 @@ When drift is reported, you can remediate the situation by choosing **Re-registe
 ## Manage controls
 <a name="w2aac17c23c15c29a"></a>
 
-You can enable and manage some Security Hub CSPM controls from AWS Control Tower, with the [Security Hub CSPM Service-managed Standard: AWS Control Tower](https://docs.aws.amazon.com//controltower/latest/userguide/security-hub-controls.html).
+You can enable and manage some Security Hub CSPM controls from AWS Control Tower, with the [Security Hub CSPM Service-managed Standard: AWS Control Tower](https://docs.aws.amazon.com/controltower/latest/userguide/security-hub-controls.html).
 
 ## Unsupported Regions
 <a name="sh-unsupported-regions"></a>
 
-It is important to know that some Security Hub CSPM controls do not operate in certain AWS Regions where AWS Control Tower is available, because those Regions do not support the required underlying functionality. As a result, when you deploy an Security Hub CSPM control through AWS Control Tower, the control may not be operating in all Regions that you govern with AWS Control Tower. For more information about the Security Hub CSPM controls that cannot be deployed in certain Regions, see the [Security Hub CSPM controls reference documentation](https://docs.aws.amazon.com//securityhub/latest/userguide/securityhub-controls-reference.html).
+It is important to know that some Security Hub CSPM controls do not operate in certain AWS Regions where AWS Control Tower is available, because those Regions do not support the required underlying functionality. As a result, when you deploy an Security Hub CSPM control through AWS Control Tower, the control may not be operating in all Regions that you govern with AWS Control Tower. For more information about the Security Hub CSPM controls that cannot be deployed in certain Regions, see the [Security Hub CSPM controls reference documentation](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-controls-reference.html).
 
- You can view the most updated list of the Regions for each control in the AWS Control Tower console, or by calling the [`GetControl`](https://docs.aws.amazon.com//controlcatalog/latest/APIReference/API_GetControl.html) API.
+ You can view the most updated list of the Regions for each control in the AWS Control Tower console, or by calling the [`GetControl`](https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_GetControl.html) API.

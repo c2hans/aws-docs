@@ -14,8 +14,6 @@ Delete a SAML identity provider (IdP). The given IdP must not be referenced in a
 ## Change Type Details
 <a name="ct-01zl37gmuk4q2-MAId-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-01zl37gmuk4q2 |

@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-managed-ds-c
 After you set up authentication and store your credentials in an AWS Secrets Manager secret, create the Confluence data source in your knowledge base. This page describes how to create the data source with the AWS Management Console or the API, followed by a reference for the connector parameters you can configure.
 
 **Note**
-Complete authentication setup first. See [Set up Basic authentication for Confluence](kb-managed-confluence-basic-setup.md) or [Set up OAuth 2.0 authentication for Confluence](kb-managed-confluence-oauth2-setup.md). You need the secret ARN and the Confluence host URL.
+Complete authentication setup first. See [User-managed setup (3LO)](kb-managed-confluence-3lo-setup.md) (simplest), [Set up Basic authentication for Confluence](kb-managed-confluence-basic-setup.md), or [Set up OAuth 2.0 authentication for Confluence](kb-managed-confluence-oauth2-setup.md). For user-managed setup (3LO), you sign in through the console and Amazon Bedrock creates the secret for you (with a system-generated ARN); you provide the Confluence host URL but not a secret. For the other methods, you need the secret ARN and the Confluence host URL.
 
 ## Create the data source
 <a name="kb-managed-ds-confluence-create"></a>
@@ -24,7 +24,7 @@ Complete authentication setup first. See [Set up Basic authentication for Conflu
 
 1. Under **Source**, enter your Confluence URL (for example, `https://example.atlassian.net`).
 
-1. Under **Authentication**, select **Basic authentication** or **OAuth 2.0 authentication**.
+1. Under **Authentication**, select **User-managed setup (3LO)**, **Basic authentication**, or **OAuth 2.0 authentication**. For user-managed setup (3LO), optionally enter a **secret name prefix**, then choose **Sign in** to sign in to Confluence Cloud. You do not provide a secret. Amazon Bedrock creates a secret with a system-generated ARN to store the token. For details, see [User-managed setup (3LO)](kb-managed-confluence-3lo-setup.md).
 
 1. Select or create an AWS Secrets Manager secret to store your credentials.
 
@@ -39,7 +39,7 @@ Complete authentication setup first. See [Set up Basic authentication for Conflu
 ------
 #### [ API ]
 
-To create a Confluence data source, send a [CreateDataSource](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateDataSource.html) request with an Agents for Amazon Bedrock build-time endpoint. The following AWS Command Line Interface example creates a data source that uses Basic authentication. To use OAuth 2.0 instead, change `authType` to `OAUTH2`. To enable document-level access control, set `aclEnabled` to `true`. For a description of each field, see the connector parameters reference that follows.
+To create a Confluence data source, send a [CreateDataSource](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateDataSource.html) request with an Agents for Amazon Bedrock build-time endpoint. The following AWS Command Line Interface example creates a data source that uses Basic authentication. To use OAuth 2.0 instead, change `authType` to `OAUTH2`. For user-managed setup (3LO), set `authType` to `MANAGED_OAUTH2`. You cannot create a 3LO secret through the API: first sign in through the console to create the secret, then set `secretArn` to that secret's ARN (see [User-managed setup (3LO)](kb-managed-confluence-3lo-setup.md)). To enable document-level access control, set `aclEnabled` to `true`. For a description of each field, see the connector parameters reference that follows.
 
 ```
 aws bedrock-agent create-data-source \
@@ -96,7 +96,7 @@ If you omit `aclEnabled`, the default depends on `authType`: `BASIC` defaults to
 | --- | --- | --- |
 | secretArn | Yes | The ARN of the AWS Secrets Manager secret containing your Confluence credentials. |
 | type | Yes | The Confluence deployment type. Set to SAAS. Confluence Server and Data Center are not supported. |
-| authType | Yes | The authentication type. Set to BASIC or OAUTH2. See [Authentication methods](kb-managed-ds-confluence.md#kb-managed-confluence-auth-methods). |
+| authType | Yes | The authentication type. Set to MANAGED\_OAUTH2 (user-managed setup, 3LO), BASIC, or OAUTH2. See [Authentication methods](kb-managed-ds-confluence.md#kb-managed-confluence-auth-methods). |
 | hostUrl | Yes | The base URL of your Confluence Cloud instance (for example, https://example.atlassian.net). |
 
 **dataEntityConfiguration (optional)**

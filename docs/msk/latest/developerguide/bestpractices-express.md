@@ -50,7 +50,7 @@ The following table lists the recommended maximum throughput per broker for each
 
 We recommend that you maintain the total CPU utilization for your brokers (defined as CPU User \+ CPU System) under 60%. When you have at least 40% of your cluster's total CPU available, Apache Kafka can redistribute CPU load across brokers in the cluster when necessary. This may be required due to planned or unplanned events. An example of a planned event is a cluster version upgrade during which MSK updates brokers in a cluster by restarting them one at a time. An example of an unplanned event is a hardware failure in a broker or, in the worst case, an AZ failure where all brokers in an AZ are affected. When brokers with partition lead replicas go offline, Apache Kafka reassigns partition leadership to redistribute work to other brokers in the cluster. By following this best practice, you can ensure you have enough CPU headroom in your cluster to tolerate operational events like these.
 
-You can use [Using math expressions with CloudWatch metrics](https://docs.aws.amazon.com///AmazonCloudWatch/latest/monitoring/using-metric-math.html) in the *Amazon CloudWatch User Guide* to create a composite metric that is CPU User \+ CPU System. Set an alarm that gets triggered when the composite metric reaches an average CPU utilization of 60%. When this alarm is triggered, scale the cluster using one of the following options:
+You can use [Using math expressions with CloudWatch metrics](https://docs.aws.amazon.com//AmazonCloudWatch/latest/monitoring/using-metric-math.html) in the *Amazon CloudWatch User Guide* to create a composite metric that is CPU User \+ CPU System. Set an alarm that gets triggered when the composite metric reaches an average CPU utilization of 60%. When this alarm is triggered, scale the cluster using one of the following options:
 + Option 1: [Update your broker size](msk-update-broker-type.md) to the next larger size. Keep in mind that when you update the broker size in the cluster, Amazon MSK takes brokers offline in a rolling fashion and temporarily reassigns partition leadership to other brokers.
 + Option 2: [Expand your cluster by adding brokers](msk-update-broker-count.md), then reassigning existing partitions using the partition reassignment tool named `kafka-reassign-partitions.sh`.
 
@@ -77,8 +77,6 @@ For information about the recommended number of partitions (including leader and
 <a name="monitor-connection-count"></a>
 
 The client connections to your brokers consume system resources such as memory and CPU. Depending on your authentication mechanism, you should monitor to ensure you are within the applicable limits. To handle retries on failed connections, you can set the `reconnect.backoff.ms` configuration parameter on the client side. For example, if you want a client to retry connections after 1 second, set `reconnect.backoff.ms` to `1000`. For more information about configuring retries, see [Apache Kafka documentation](bestpractices-kafka-client.md#bestpractices-kafka-client-client-availability).
-
-****
 
 | Dimension | Quota |
 | --- | --- |

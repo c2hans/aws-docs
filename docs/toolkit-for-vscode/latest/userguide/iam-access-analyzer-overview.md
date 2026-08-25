@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/iam-
 # Working with AWS IAM Access Analyzer
 <a name="iam-access-analyzer-overview"></a>
 
-The following sections describe how to perform IAM policy validation and custom policy checks in the AWS Toolkit for Visual Studio Code. For additional details, see the following topics in the AWS Identity and Access Management User Guide: [IAM Access Analyzer policy validation](https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-policy-validation.html) and [IAM Access Analyzer custom policy checks](https://docs.aws.amazon.com//IAM/latest/UserGuide/access-analyzer-custom-policy-checks.html).
+The following sections describe how to perform IAM policy validation and custom policy checks in the AWS Toolkit for Visual Studio Code. For additional details, see the following topics in the AWS Identity and Access Management User Guide: [IAM Access Analyzer policy validation](https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-policy-validation.html) and [IAM Access Analyzer custom policy checks](https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-custom-policy-checks.html).
 
 ## Prerequisites
 <a name="w2aac17c39c13b5"></a>

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/stream-he
 # Monitoring Amazon IVS Low-Latency Streaming
 <a name="stream-health"></a>
 
-You can monitor Amazon Interactive Video Service (IVS) resources using Amazon CloudWatch. CloudWatch collects and processes raw data from Amazon IVS into readable, near real-time metrics. These statistics are kept for 15 months, so you can gain a historical perspective on how your web application or service performs. You can set alarms for certain thresholds and send notifications or take actions when those thresholds are met. For details, see the [CloudWatch User Guide](https://docs.aws.amazon.com//AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html).
+You can monitor Amazon Interactive Video Service (IVS) resources using Amazon CloudWatch. CloudWatch collects and processes raw data from Amazon IVS into readable, near real-time metrics. These statistics are kept for 15 months, so you can gain a historical perspective on how your web application or service performs. You can set alarms for certain thresholds and send notifications or take actions when those thresholds are met. For details, see the [CloudWatch User Guide](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html).
 
 The timestamp on a metric represents the start of the period during which metric data is accumulated. For example, suppose you get a per-minute `LiveDeliveredTime` metric sum of 300 seconds at 01:02:00. This would mean that 5 minutes’ worth of video was served to viewers during the 1-minute period from 01:02:00 to 01:02:59.
 
@@ -24,8 +24,8 @@ For current information on data retention, search for "retention period" in [Ama
 + You must have an AWS account with sufficient IAM permissions to interface with the Stream Health APIs and CloudWatch metrics. For specific steps, see [Getting Started with IVS Low-Latency Streaming](getting-started.md).
 + You must create a channel and start a stream. Relevant information is in the [IVS Low-Latency Streaming User Guide](what-is.md):
   + For instructions on creating a channel, see [Create a Channel](getting-started-create-channel.md) in *Getting Started with IVS Low-Latency Streaming*.
-  + For instructions on starting a stream, see [Set Up Streaming Software](https://docs.aws.amazon.com//ivs/latest/LowLatencyUserGuide/getting-started-set-up-streaming.html) in *Getting Started with IVS Low-Latency Streaming*.
-  + For encoder-configuration details, see [Amazon IVS Streaming Configuration](https://docs.aws.amazon.com//ivs/latest/LowLatencyUserGuide/streaming-config.html).
+  + For instructions on starting a stream, see [Set Up Streaming Software](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/getting-started-set-up-streaming.html) in *Getting Started with IVS Low-Latency Streaming*.
+  + For encoder-configuration details, see [Amazon IVS Streaming Configuration](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/streaming-config.html).
 
 ## Access Stream Session Data
 <a name="stream-health-session-data"></a>
@@ -257,7 +257,7 @@ You also can access your stream session’s CloudWatch chart from the stream ses
 ### CLI Instructions
 <a name="stream-health-cloudwatch-metrics-cli"></a>
 
-You also can access the metrics using the AWS CLI. This requires that you first download and configure the CLI on your machine. For details, see the [AWS Command Line Interface User Guide](https://docs.aws.amazon.com//cli/latest/userguide/cli-chap-welcome.html).
+You also can access the metrics using the AWS CLI. This requires that you first download and configure the CLI on your machine. For details, see the [AWS Command Line Interface User Guide](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html).
 
 Then, to access Amazon IVS low-latency streaming metrics using the AWS CLI:
 + At a command prompt, run:

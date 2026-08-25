@@ -33,8 +33,6 @@ For a list of beta program platform versions, see [Elastic Beanstalk Platform Ve
 ### Java SE
 <a name="release-2019-11-25-al2beta.platforms.javase"></a>
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  Tools  |  Proxy Server  |
 | --- | --- | --- | --- | --- |
 |  ** (BETA) Corretto 11 version 0.1.0** <br /> * 64bit Amazon Linux 2 v0.1.0 running Corretto 11 (BETA) *  | 2.0.20191116 | Corretto 11.0.5.10.1 | Ant 1.10.7, Gradle 5.6.2, Maven 3.6.2 | nginx 1.16.1 |

@@ -17,8 +17,6 @@ SageMaker AI AutoGluon-Tabular supports single-instance CPU and single-instance 
 
  The following table outlines a variety of sample notebooks that address different use cases of Amazon SageMaker AI AutoGluon-Tabular algorithm.
 
-****
-
 | **Notebook Title** | **Description** |
 | --- | --- |
 | [Tabular classification with Amazon SageMaker AI AutoGluon-Tabular algorithm](https://github.com/aws/amazon-sagemaker-examples/blob/main/introduction_to_amazon_algorithms/autogluon_tabular/Amazon_Tabular_Classification_AutoGluon.ipynb) | This notebook demonstrates the use of the Amazon SageMaker AI AutoGluon-Tabular algorithm to train and host a tabular classification model. |

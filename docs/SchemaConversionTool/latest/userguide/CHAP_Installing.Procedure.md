@@ -18,11 +18,9 @@ You can install AWS SCT on the following operating systems:
    + [Fedora Linux (.rpm)](https://s3.amazonaws.com/publicsctdownload/Fedora/aws-schema-conversion-tool-1.0.latest.zip)
 
 1. Extract the AWS SCT installer file for your operating system, shown following.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CHAP_Installing.Procedure.html)
 
 1. Run the AWS SCT installer file extracted in the previous step. Use the instructions for your operating system, shown following.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CHAP_Installing.Procedure.html)
 
 1. Download the Java Database Connectivity (JDBC) drivers for your source and target database engines. For instructions and download links, see [Installing JDBC drivers for AWS Schema Conversion Tool](CHAP_Installing.JDBCDrivers.md).

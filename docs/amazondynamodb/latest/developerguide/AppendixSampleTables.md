@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/App
 
 The *Amazon DynamoDB Developer Guide* uses sample tables to illustrate various aspects of DynamoDB.
 
-****
-
 | Table name | Primary key |
 | --- | --- |
 | ProductCatalog | Simple primary key:+  `Id` (Number)  |
@@ -17,8 +15,6 @@ The *Amazon DynamoDB Developer Guide* uses sample tables to illustrate various a
 | Reply | Composite primary key:+  `Id` (String) <br />+   `ReplyDateTime` (String)  |
 
 The *Reply* table has a global secondary index named *PostedBy-Message-Index*. This index will facilitate queries on two non-key attributes of the *Reply* table.
-
-****
 
 | Index name | Primary key |
 | --- | --- |

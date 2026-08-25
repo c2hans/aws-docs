@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon Managed Workflows for Apache Airflow provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="airflow-GetEnvironment"></a>[GetEnvironment](https://docs.aws.amazon.com/mwaa/latest/API/API_GetEnvironment.html) | View details about an Amazon MWAA environment | Read |

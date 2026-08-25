@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/how-zeppelin-i
 
 Managed Service for Apache Flink creates an IAM role for you when you create a Studio notebook through the AWS Management Console. It also associates with that role a policy that allows the following access:
 
-****
-
 | Service | Access  |
 | --- | --- |
 | CloudWatch Logs | List |

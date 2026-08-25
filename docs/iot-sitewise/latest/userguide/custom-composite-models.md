@@ -27,8 +27,6 @@ Inline custom composite models provide a way to organize your asset model by gro
 
 For example, suppose you want to model a robot asset. The robot includes a servomotor, a power supply, and a battery. Each of those constituent parts has its own properties that you want to include in the model. You might define an asset model called `robot_model` that has properties such as the following.
 
-****
-
 |  |
 | --- |
 |  +  `robot_model`  `servo_status` *(integer)* `servo_position` *(double)* `powersupply_status` *(integer)* `powersupply_temperature` *(double)* `battery_status` *(integer)* `battery_charge` *(double)*    |
@@ -36,8 +34,6 @@ For example, suppose you want to model a robot asset. The robot includes a servo
 However, in some cases, there might be many subassemblies, or the subassemblies themselves might have many properties. In these cases, there might be so many properties that they become cumbersome to reference and maintain in a single flat list at the model root, like in the preceding example.
 
 To deal with such situations, you can use an inline custom composite model to group properties. An inline custom composite model is a custom composite model that defines its own properties. For example, you could model your robot like the following.
-
-****
 
 |  |
 | --- |
@@ -62,27 +58,19 @@ For example, suppose that your industrial installation has many types of equipme
 
 To model the robot from the previous example in this way, you could define servo motors, power supplies, and batteries as component models, like this.
 
-****
-
 |  |
 | --- |
 |  +  `servo_component_model`  `status` *(integer)* `position` *(double)*    |
 
-****
-
 |  |
 | --- |
 |  +  `powersupply_component_model`  `status` *(integer)* `temperature` *(double)*    |
-
-****
 
 |  |
 | --- |
 |  +  `battery__component_model`  `status` *(integer)* `charge` *(double)*    |
 
 You could then define asset models, such as `robot_model`, that reference these components. Multiple asset models can reference the same component model. You can also reference the same component model multiple times in one asset model, such as if your robot has multiple servomotors in it.
-
-****
 
 |  |
 | --- |

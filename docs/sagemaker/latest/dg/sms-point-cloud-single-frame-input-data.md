@@ -131,8 +131,6 @@ When you create an input manifest file, you must collapse your JSON objects to f
 
 The following table shows the parameters you can include in your input manifest file:
 
-****
-
 |  Parameter  |  Required  |  Accepted Values  |  Description  |
 | --- | --- | --- | --- |
 | `source-ref` | Yes | String<br />**Accepted string value format**: <br />`s3://{{<bucket-name>}}/{{<folder-name>}}/{{point-cloud-frame-file}}` | The Amazon S3 location of a single point cloud frame. |
@@ -152,8 +150,6 @@ Ground Truth uses extrinsic matrices to project labels to and from the 3D scene 
 
 The following table provides more information about the `position` and orientation (`heading`) parameters that are required when you provide ego-vehicle information.
 
-****
-
 |  Parameter  |  Required  |  Accepted Values  |  Description  |
 | --- | --- | --- | --- |
 | `position` | Yes | JSON object<br />**Required Parameters**:<br />`x`, `y`, and `z`. Enter numbers for these parameters.  | The translation vector of the ego vehicle in the world coordinate system.  |
@@ -167,8 +163,6 @@ If you want to include video camera data with a frame, use the following paramet
 If you include camera images, you must include information about the camera `position` and `heading` used the capture the images in the world coordinate system.
 
 If your images are distorted, Ground Truth can automatically undistort them using information you provide about the image in your input manifest file, including distortion coefficients (`k1`, `k2`, `k3`, `k4`, `p1`, `p1`), the camera model and the camera intrinsic matrix. The intrinsic matrix is made up of focal length (`fx`, `fy`), and the principal point (`cx`, `cy)`. See [Intrinsic Matrix](sms-point-cloud-sensor-fusion-details.md#sms-point-cloud-intrinsic) to learn how Ground Truth uses the camera intrinsic. If distortion coefficients are not included, Ground Truth will not undistort an image.
-
-****
 
 |  Parameter  |  Required  |  Accepted Values  |  Description  |
 | --- | --- | --- | --- |

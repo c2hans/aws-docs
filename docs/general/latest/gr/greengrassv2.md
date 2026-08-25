@@ -46,8 +46,6 @@ The following table contains AWS Region-specific Amazon Trust Services (ATS) end
 
 To look up your account-specific endpoint, use the [aws iot describe-endpoint --endpoint-type iot:Data-ATS](https://docs.aws.amazon.com/cli/latest/reference/iot/describe-endpoint.html) command.
 
-****
-
 | Region name | Region | Endpoint | Protocol |
 | --- | --- | --- | --- |
 | US East (Ohio) | us-east-2 | prefix-ats.iot.us-east-2.amazonaws.com | HTTPS, MQTT |
@@ -77,8 +75,6 @@ Legacy Verisign endpoints are currently supported for [some Regions](#greengrass
 AWS IoT Greengrass uses the AWS IoT Core Region-specific ATS endpoints for data plane operations, such as [ResolveComponentCandidates](https://docs.aws.amazon.com/greengrass/v2/APIReference/API_ResolveComponentCandidates.html). For a complete list, see [AWS IoT Core - data plane endpoints](iot-core.md#iot-core-data-plane-endpoints). You must set `greengrassDataPlaneEndpoint` to **iotdata**. For more information, see [AWS IoT Greengrass nucleus configuration](https://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-nucleus-component.html#greengrass-nucleus-component-configuration).
 
 We recommend you use the AWS IoT endpoints for data plane operations. For backwards compatibility, AWS IoT Greengrass supports the following legacy endpoints.
-
-****
 
 | Region name | Region | Endpoint | Protocol |
 | --- | --- | --- | --- |
@@ -113,8 +109,6 @@ When using legacy Verisign endpoints, you must use Verisign root CA certificates
 ------
 #### [ AWS IoT device operations (legacy endpoints) ]
 
-****
-
 | Region name | Region | Endpoint | Protocol |
 | --- | --- | --- | --- |
 | US East (N. Virginia) | us-east-1 | prefix.iot.us-east-1.amazonaws.com | HTTPS, MQTT |
@@ -128,8 +122,6 @@ To look up your account-specific legacy endpoint, use the [aws iot describe-endp
 
 ------
 #### [ Data plane operations (legacy endpoints) ]
-
-****
 
 | Region name | Region | Endpoint | Protocol |
 | --- | --- | --- | --- |

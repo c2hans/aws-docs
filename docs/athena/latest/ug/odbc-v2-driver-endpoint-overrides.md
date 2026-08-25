@@ -10,8 +10,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/odbc-v2-driver-endpoint
 
 The `endpointOverride ClientConfiguration` class uses this value override the default HTTP endpoint for the Amazon Athena client. For more information, see [AWS Client configuration](https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/client-config.html) in the *AWS SDK for C\+\+ Developer Guide*.
 
-****
-
 | **Connection string name** | **Parameter type** | **Default value** | **Connection string example** |
 | --- | --- | --- | --- |
 | EndpointOverride | Optional | none | EndpointOverride=athena.us-west-2.amazonaws.com; |
@@ -20,8 +18,6 @@ The `endpointOverride ClientConfiguration` class uses this value override the de
 <a name="odbc-v2-driver-endpoint-overrides-athena-streaming"></a>
 
 The `ClientConfiguration.endpointOverride` method uses this value to override the default HTTP endpoint for the Amazon Athena streaming client. For more information, [AWS Client configuration](https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/client-config.html) in the *AWS SDK for C\+\+ Developer Guide*. The Athena Streaming service is available through port 444.
-
-****
 
 | **Connection string name** | **Parameter type** | **Default value** | **Connection string example** |
 | --- | --- | --- | --- |
@@ -32,8 +28,6 @@ The `ClientConfiguration.endpointOverride` method uses this value to override th
 
 The `ClientConfiguration.endpointOverride` method uses this value to override the default HTTP endpoint for the AWS STS client. For more information, see [AWS Client configuration](https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/client-config.html) in the *AWS SDK for C\+\+ Developer Guide*.
 
-****
-
 | **Connection string name** | **Parameter type** | **Default value** | **Connection string example** |
 | --- | --- | --- | --- |
 | StsEndpointOverride | Optional | none | StsEndpointOverride=sts.us-west-1.amazonaws.com; |
@@ -42,8 +36,6 @@ The `ClientConfiguration.endpointOverride` method uses this value to override th
 <a name="odbc-v2-driver-endpoint-overrides-lake-formation"></a>
 
 The `ClientConfiguration.endpointOverride` method uses this value to override the default HTTP endpoint for the Lake Formation client. For more information, see [AWS Client configuration](https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/client-config.html) in the *AWS SDK for C\+\+ Developer Guide*.
-
-****
 
 | **Connection string name** | **Parameter type** | **Default value** | **Connection string example** |
 | --- | --- | --- | --- |
@@ -54,8 +46,6 @@ The `ClientConfiguration.endpointOverride` method uses this value to override th
 
 The `ClientConfiguration.endpointOverride` method uses this value to override the default HTTP endpoint for the SSO client. For more information, see [AWS Client configuration](https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/client-config.html) in the *AWS SDK for C\+\+ Developer Guide*.
 
-****
-
 | **Connection string name** | **Parameter type** | **Default value** | **Connection string example** |
 | --- | --- | --- | --- |
 | SSOEndpointOverride | Optional | none | SSOEndpointOverride=portal.sso.us-east-2.amazonaws.com; |
@@ -64,8 +54,6 @@ The `ClientConfiguration.endpointOverride` method uses this value to override th
 <a name="odbc-v2-driver-endpoint-overrides-sso-oidc"></a>
 
 The `ClientConfiguration.endpointOverride` method uses this value to override the default HTTP endpoint for the SSO OIDC client. For more information, see [AWS Client configuration](https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/client-config.html) in the *AWS SDK for C\+\+ Developer Guide*.
-
-****
 
 | **Connection string name** | **Parameter type** | **Default value** | **Connection string example** |
 | --- | --- | --- | --- |
@@ -76,8 +64,6 @@ The `ClientConfiguration.endpointOverride` method uses this value to override th
 
 The `ClientConfiguration.endpointOverride` method uses this value to override the default HTTP endpoint for SSO Admin client. For more information, see [ClientConfiguration](https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/client-config.html).
 
-****
-
 | **Connection string name** | **Parameter type** | **Default value** | **Connection string example** |
 | --- | --- | --- | --- |
 | SSOAdminEndpointOverride | Optional | none | SSOAdminEndpointOverride=sso.us-east-2.amazonaws.com |
@@ -87,8 +73,6 @@ The `ClientConfiguration.endpointOverride` method uses this value to override th
 
 The `ClientConfiguration.endpointOverride` method uses this value to override the default HTTP endpoint for S3 client. The endpoint that the driver will use to download query results when it uses the Amazon S3 fetcher. If this parameter is not specified, the driver uses a default Amazon S3 endpoint. For more information, see [ClientConfiguration](https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/client-config.html).
 
-****
-
 | **Connection string name** | **Parameter type** | **Default value** | **Connection string example** |
 | --- | --- | --- | --- |
 | S3EndpointOverride | Optional | none | S3EndpointOverride=s3.us-east-2.amazonaws.com |
@@ -97,8 +81,6 @@ The `ClientConfiguration.endpointOverride` method uses this value to override th
 <a name="odbc-v2-driver-endpoint-overrides-sagemaker"></a>
 
 The `ClientConfiguration.endpointOverride` method uses this value to override the default HTTP endpoint for the DataZone client. For more information, see [ClientConfiguration](https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/client-config.html).
-
-****
 
 | **Connection string name** | **Parameter type** | **Default value** | **Connection string example** |
 | --- | --- | --- | --- |

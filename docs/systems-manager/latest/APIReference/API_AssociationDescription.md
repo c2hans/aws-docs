@@ -42,7 +42,7 @@ Required: No
  ** AssociationVersion **   <a name="systemsmanager-Type-AssociationDescription-AssociationVersion"></a>
 The association version.
 Type: String
-Pattern: `([$]LATEST)|([1-9][0-9]*)`
+Pattern: `^(([$]LATEST)|([1-9][0-9]*))$`
 Required: No
 
  ** AutomationTargetParameterName **   <a name="systemsmanager-Type-AssociationDescription-AutomationTargetParameterName"></a>

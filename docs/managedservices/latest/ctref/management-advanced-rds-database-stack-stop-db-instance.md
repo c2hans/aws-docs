@@ -14,8 +14,6 @@ Stop an Amazon Relational Database Service (RDS) database (DB) instance. After s
 ## Change Type Details
 <a name="ct-2r2bffv9u6q4m-MARs-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2r2bffv9u6q4m |

@@ -70,6 +70,10 @@ Required: No
       "Reason": "string"
    },
    "ExecutionRoleArn": "string",
+   "IdcConfig": {
+      "ApplicationArn": "string",
+      "InstanceArn": "string"
+   },
    "KmsKeyId": "string",
    "LastModifiedTime": number,
    "MaintenanceConfig": {
@@ -101,9 +105,11 @@ Length Constraints: Minimum length of 1. Maximum length of 128.
 Pattern: `arn:aws[a-z\-]*:sagemaker:[a-z0-9\-]*:[0-9]{12}:partner-app\/app-[A-Z0-9]{12}`
 
  ** [AuthType](#API_DescribePartnerApp_ResponseSyntax) **   <a name="sagemaker-DescribePartnerApp-response-AuthType"></a>
-The authorization type that users use to access the SageMaker Partner AI App.
+The authorization type that users use to access the SageMaker Partner AI App. Valid values:
++  `IAM`: Users access the SageMaker Partner AI App with their AWS IAM identity.
++  `IDC`: Users access the SageMaker Partner AI App with their AWS IAM Identity Center identity.
 Type: String
-Valid Values: `IAM`
+Valid Values: `IAM | IDC`
 
  ** [AvailableUpgrade](#API_DescribePartnerApp_ResponseSyntax) **   <a name="sagemaker-DescribePartnerApp-response-AvailableUpgrade"></a>
 A map of available minor version upgrades for the SageMaker Partner AI App. The key is the semantic version number, and the value is a list of release notes for that version. A null value indicates no upgrades are available.
@@ -139,6 +145,10 @@ The ARN of the IAM role associated with the SageMaker Partner AI App.
 Type: String
 Length Constraints: Minimum length of 20. Maximum length of 2048.
 Pattern: `arn:aws[a-z\-]*:iam::\d{12}:role/?[a-zA-Z_0-9+=,.@\-_/]+`
+
+ ** [IdcConfig](#API_DescribePartnerApp_ResponseSyntax) **   <a name="sagemaker-DescribePartnerApp-response-IdcConfig"></a>
+Contains the AWS IAM Identity Center configuration for the SageMaker Partner AI App, including the Identity Center instance and the Identity Center application that SageMaker creates for the app. The service returns this field for apps that use `IDC` authorization.
+Type: [IdcConfigOutput](API_IdcConfigOutput.md) object
 
  ** [KmsKeyId](#API_DescribePartnerApp_ResponseSyntax) **   <a name="sagemaker-DescribePartnerApp-response-KmsKeyId"></a>
 The AWS KMS customer managed key used to encrypt the data at rest associated with SageMaker Partner AI Apps.

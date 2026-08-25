@@ -14,8 +14,6 @@ Modify the retention period for Amazon CloudWatch log groups. This change perfor
 ## Change Type Details
 <a name="ct-0vfx8rwd1mcnn-MMCm-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-0vfx8rwd1mcnn |

@@ -329,7 +329,7 @@ For more information about creating roles and assigning policies and trust relat
 ## Modify your workspace IAM role to use the Athena data connector
 <a name="athena-tabular-data-connector-ws-IAM"></a>
 
-To use the [AWS IoT TwinMaker Athena tabular data connector](https://docs.aws.amazon.com//iot-twinmaker/latest/guide/athena-tabular-data-connector.html), you must update your AWS IoT TwinMaker workspace IAM role. Add the following permissions to your workspace IAM role:
+To use the [AWS IoT TwinMaker Athena tabular data connector](https://docs.aws.amazon.com/iot-twinmaker/latest/guide/athena-tabular-data-connector.html), you must update your AWS IoT TwinMaker workspace IAM role. Add the following permissions to your workspace IAM role:
 
 **Note**
 This IAM change only works for Athena tabular data stored with AWS Glue and Amazon S3. To use Athena with other data sources, you must configure an IAM role for Athena, see [Identity and access management in Athena](https://docs.aws.amazon.com/athena/latest/ug/security-iam-athena.html).

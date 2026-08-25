@@ -24,8 +24,6 @@ References:
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
 
-****
-
 - **   [ArchiveAgent](https://docs.aws.amazon.com/claude-platform/latest/userguide/iam-actions.html#iam-actions)  **
   - **Description:** Grants permission to archive a managed agent
   - **Resource types (\*required):** [workspace\*](#list_aws-external-anthropic-resource-workspace)
@@ -445,8 +443,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 The following actions are defined by Claude Platform on AWS but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 | Actions | Description | Resource types (\*required) | Condition keys | Access level |
 | --- | --- | --- | --- | --- |
 |   [CallWithBearerToken](https://docs.aws.amazon.com/claude-platform/latest/userguide/iam-actions.html)  | Grants permission to make API calls using bearer token authentication |  | [aws-external-anthropic:BearerTokenType](#list_aws-external-anthropic-aws-external-anthropic_BearerTokenType) | List |
@@ -456,8 +452,6 @@ The following actions are defined by Claude Platform on AWS but are not directly
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
 
-****
-
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
 |  [workspace](https://docs.aws.amazon.com/claude-platform/latest/userguide/workspaces.html#workspaces)  | arn:${Partition}:aws-external-anthropic:${Region}:${Account}:workspace/${ResourceId} | [aws:ResourceTag/${TagKey}](#list_aws-external-anthropic-aws_ResourceTag___TagKey_) |
@@ -466,8 +460,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_aws-external-anthropic-policy-keys"></a>
 
 Claude Platform on AWS defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

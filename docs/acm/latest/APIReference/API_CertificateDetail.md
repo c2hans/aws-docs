@@ -186,6 +186,11 @@ Type: String
 Valid Values: `IMPORTED | AMAZON_ISSUED | PRIVATE`
 Required: No
 
+ ** UpdateSummary **   <a name="ACM-Type-CertificateDetail-UpdateSummary"></a>
+Contains information about the most recent update to the certificate. This field exists only when the certificate type is `AMAZON_ISSUED` and a certificate update has been requested.
+Type: [UpdateSummary](API_UpdateSummary.md) object
+Required: No
+
 ## See Also
 <a name="API_CertificateDetail_SeeAlso"></a>
 

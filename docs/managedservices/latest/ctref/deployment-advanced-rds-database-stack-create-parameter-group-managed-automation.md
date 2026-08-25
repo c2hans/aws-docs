@@ -14,8 +14,6 @@ Create a custom RDS parameter group and optionally attach it to an existing RDS 
 ## Change Type Details
 <a name="ct-3da2lxapopb86-DARc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-3da2lxapopb86 |

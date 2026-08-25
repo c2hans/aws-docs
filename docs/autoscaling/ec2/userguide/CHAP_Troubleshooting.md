@@ -102,7 +102,7 @@ The following pages provide additional information for troubleshooting issues wi
 + [Verify a scaling activity for an Auto Scaling group](as-verify-scaling-activity.md)
 + [View monitoring graphs in the Amazon EC2 Auto Scaling console](viewing-monitoring-graphs.md)
 + [Health checks for instances in an Auto Scaling group](ec2-auto-scaling-health-checks.md)
-+ [Considerations and limitations for lifecycle hooksConsiderations and limitations](lifecycle-hooks.md#lifecycle-hook-considerations)
++ [Considerations and limitations for lifecycle hooks](lifecycle-hooks.md#lifecycle-hook-considerations)
 +  [Complete a lifecycle action in an Auto Scaling group](completing-lifecycle-hooks.md)
 +  [Provide network connectivity for your Auto Scaling instances using Amazon VPC](asg-in-vpc.md)
 + [Temporarily remove instances from your Auto Scaling group](as-enter-exit-standby.md)

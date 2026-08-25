@@ -25,8 +25,6 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_connecthealth-actions-as-permissions).
 
-****
-
 - **   ActivateSubscription  **
   - **IAM action:**  [health-agent:ActivateSubscription](#list_connecthealth-action-ActivateSubscription)
   - **Condition key:**
@@ -126,8 +124,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
 <a name="list_connecthealth-actions-as-permissions"></a>
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
-
-****
 
 - **   [ActivateSubscription](https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_ActivateSubscription.html)  **
   - **Description:** Grants permission to activate a subscription to enable billing for a user
@@ -241,8 +237,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 <a name="list_connecthealth-permission-only-actions"></a>
 
 The following actions are defined by Amazon Connect Health but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
-
-****
 
 - **   [CancelAppointment](https://docs.aws.amazon.com/connecthealth/latest/userguide/patient-engagement-overview.html)  **
   - **Description:** Grants permission to cancel an appointment
@@ -424,8 +418,6 @@ The following actions are defined by Amazon Connect Health but are not directly 
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
 
-****
-
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
 |  [Agent](https://docs.aws.amazon.com/connecthealth/latest/userguide/agent-customization.html)  | arn:${Partition}:health-agent:${Region}:${Account}:domain/${DomainId}/agent/${AgentId} | [aws:ResourceTag/${TagKey}](#list_connecthealth-aws_ResourceTag___TagKey_) |
@@ -439,8 +431,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_connecthealth-policy-keys"></a>
 
 Amazon Connect Health defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

@@ -11,8 +11,6 @@ The following provides a sample mapping between the European Union Agency for Cy
 
 This sample conformance pack template contains mappings to controls adapted from the ENISA Cybersecurity guide for SMEs. The ENISA Cybersecurity guide for SMEs is available at [Cybersecurity guide for SMEs - 12 steps to securing your business](https://www.enisa.europa.eu/publications/cybersecurity-guide-for-smes).
 
-****
-
 | Control ID  | Control Description  | AWS Config Rule  | Guidance  |
 | --- | --- | --- | --- |
 | 1\_DEVELOP GOOD CYBERSECURITY CULTURE: PUBLISH CYBERSECURITY POLICIES |  Clear and specific rules should be outlined in cybersecurity | security-awareness-program-exists(Process Check) | Establish and maintain a security awareness program for your organization. Security awareness programs educate employees on how to protect their organization from various security breaches or incidents.  |

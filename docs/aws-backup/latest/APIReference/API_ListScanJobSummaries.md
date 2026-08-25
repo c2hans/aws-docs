@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_ListS
 # ListScanJobSummaries
 <a name="API_ListScanJobSummaries"></a>
 
-This is a request for a summary of scan jobs created or running within the most recent 30 days.
+This is a request for a summary of scan jobs created or running within the most recent 14 days.
 
 ## Request Syntax
 <a name="API_ListScanJobSummaries_RequestSyntax"></a>

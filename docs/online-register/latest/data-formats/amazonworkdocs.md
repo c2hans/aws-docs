@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon WorkDocs provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="workdocs-CheckAlias"></a>[CheckAlias](https://docs.aws.amazon.com/workdocs/latest/adminguide/cloud_quick_start.html) | Check an alias | Read |

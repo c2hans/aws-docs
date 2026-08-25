@@ -59,12 +59,12 @@ source_url: https://docs.aws.amazon.com/corretto/latest/corretto-8-ug/amazon-lin
 ```
 java -version
 ```
-Expected output for 8u502:
+Expected output for 8u504:
 
 ```
-openjdk version "1.8.0_502"
-OpenJDK Runtime Environment Corretto-8.502.07.1 (build 1.8.0_502-b07)
-OpenJDK 64-Bit Server VM Corretto-8.502.07.1 (build 25.502-b07, mixed mode)
+openjdk version "1.8.0_504"
+OpenJDK Runtime Environment Corretto-8.504.01.1 (build 1.8.0_504-b01)
+OpenJDK 64-Bit Server VM Corretto-8.504.01.1 (build 25.504-b01, mixed mode)
 ```
 
  If you see a version string that doesn't mention `Corretto`, run the following command to change the default `java` or `javac` providers.
@@ -78,25 +78,4 @@ If using the JDK you should also run:
 
 ```
 sudo alternatives --config javac
-```
-
-## Uninstall Amazon Corretto 8
-<a name="amazon-linux-uninstall"></a>
-
-You can uninstall Amazon Corretto 8 with the following commands.
-
-Uninstall JRE:
-
-**Example**
-
-```
-sudo yum remove java-1.8.0-amazon-corretto
-```
-
-Uninstall JDK:
-
-**Example**
-
-```
-sudo yum remove java-1.8.0-amazon-corretto-devel
 ```

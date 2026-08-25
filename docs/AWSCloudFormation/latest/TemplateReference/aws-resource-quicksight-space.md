@@ -118,13 +118,13 @@ Property description not available.
 <a name="aws-resource-quicksight-space-return-values-fn--getatt-fn--getatt"></a>
 
 `Arn`  <a name="Arn-fn::getatt"></a>
-Property description not available.
+The Amazon Resource Name (ARN) of the space.
 
 `CreatedAt`  <a name="CreatedAt-fn::getatt"></a>
 The date and time that the space was created.
 
 `CreatedBy`  <a name="CreatedBy-fn::getatt"></a>
-The user who created the space.
+The user name of the principal who created the space.
 
 `UpdatedAt`  <a name="UpdatedAt-fn::getatt"></a>
 The date and time that the space was last updated.

@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon S3 Tables provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="s3tables-GetNamespace"></a>[GetNamespace](https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_GetNamespace.html) | Get a namespace | Read |

@@ -23,8 +23,6 @@ When you use table formats other than Apache Hive with Athena for Spark, conside
 
 The following table shows supported non-Hive table versions in Amazon Athena for Apache Spark.
 
-****
-
 | Table format | Supported version |
 | --- | --- |
 | Apache Iceberg | 1.2.1 |

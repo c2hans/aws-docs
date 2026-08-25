@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/launch-agents-se
 # Windows Service administration for EC2Launch v2 and EC2Config agents
 <a name="launch-agents-service-admin"></a>
 
-If you've logged into your instance as a user with administrative rights, you can manage the EC2Launch v2 and EC2Config launch agents just as you would any other Windows service. EC2Launch v1 is a set of PowerShell scripts that is managed via scheduled task by default. This section covers service administration for EC2Launch v2 and EC2Config.
+If you've logged into your instance as a user with administrative rights, you can manage the EC2Launch v2 and EC2Config launch agents just as you would any other Windows service. EC2Launch v1 is a set of PowerShell scripts that is managed through a scheduled task by default. This section covers service administration for EC2Launch v2 and EC2Config.
 
 To apply updated settings to your instance, you can stop and restart the EC2Launch v2 agent or the EC2Config service launch agent from the Microsoft Management Console (MMC) interface for Services. Similarly, when you install a new version of the launch agent, you must stop the agent first, then restart it when the installation is complete.
 

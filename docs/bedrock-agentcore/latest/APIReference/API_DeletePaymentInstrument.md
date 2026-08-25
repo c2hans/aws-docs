@@ -79,7 +79,7 @@ The following data is returned in JSON format by the service.
  ** [status](#API_DeletePaymentInstrument_ResponseSyntax) **   <a name="BedrockAgentCore-DeletePaymentInstrument-response-status"></a>
 The status of the instrument after deletion. Always DELETED for successful soft delete.
 Type: String
-Valid Values: `INITIATED | ACTIVE | FAILED | DELETED`
+Valid Values: `INITIATED | ACTIVE | FAILED | DELETED | BLOCKED`
 
 ## Errors
 <a name="API_DeletePaymentInstrument_Errors"></a>

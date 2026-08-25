@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/step
 # Working with AWS Step Functions Workflow Studio
 <a name="stepfunctions-workflowstudio"></a>
 
-The following sections describe how to work with AWS Step Functions Workflow Studio in the AWS Toolkit for Visual Studio Code. For detailed information about AWS Step Functions Workflow Studio, see the [Developing workflows](https://docs.aws.amazon.com//step-functions/latest/dg/developing-workflows.html) topic in the *AWS Step Functions* Developer Guide
+The following sections describe how to work with AWS Step Functions Workflow Studio in the AWS Toolkit for Visual Studio Code. For detailed information about AWS Step Functions Workflow Studio, see the [Developing workflows](https://docs.aws.amazon.com/step-functions/latest/dg/developing-workflows.html) topic in the *AWS Step Functions* Developer Guide
 
 ## Opening Workflow Studio
 <a name="w2aac17c55b9b5"></a>
@@ -25,7 +25,7 @@ To work with Workflow Studio in VS Code, the extension of your `Amazon State Lan
 Workflow Studio has two modes for working with your `ASL` files containing a state machine definition: **Design** mode and **Code** mode. **Design** mode provides a graphic interface to visualize your workflows as you build prototypes. **Code** mode has an integrated code editor where you can view, write, and edit the `ASL` definitions in your workflows.
 
 **Note**
-For detailed information about each of the UI sections in both Design and Code modes, see the [Using Workflow Studio](https://docs.aws.amazon.com//step-functions/latest/dg/workflow-studio.html) topic in the *AWS Step Functions* Developer Guide. Not all Workflow Studio features are available in the AWS Toolkit, such as **Config mode**, for example.
+For detailed information about each of the UI sections in both Design and Code modes, see the [Using Workflow Studio](https://docs.aws.amazon.com/step-functions/latest/dg/workflow-studio.html) topic in the *AWS Step Functions* Developer Guide. Not all Workflow Studio features are available in the AWS Toolkit, such as **Config mode**, for example.
 
 The **Design** mode UI has 7 main sections, as labeled and described in the following image.
 

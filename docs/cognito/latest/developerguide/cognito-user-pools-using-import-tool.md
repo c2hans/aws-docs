@@ -612,7 +612,7 @@ Amazon Cognito supports the following password hashing algorithms for import:
 The bcrypt adaptive hash function. Amazon Cognito extracts all required parameters (salt, cost factor) from the hash string.
 **Format:** `$2<a/b/x/y>$[cost]$[22-char salt][31-char hash]`
 **Example:** `$2b$10$CtA.Rcu/szzn9U00wpUjOuN3vrgJRZycv4aOzcP3GzqzO8UDPEFq6`
-**Maximum cost factor:** 10
+**Maximum cost factor:** 12
 
 `SCRYPT`
 The scrypt password-based key derivation function. Amazon Cognito extracts all required parameters from the hash string.

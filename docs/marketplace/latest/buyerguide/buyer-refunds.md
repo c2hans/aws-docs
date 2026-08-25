@@ -21,9 +21,12 @@ In the AWS Marketplace console, the term *billing adjustment* is used as the umb
 ## How billing adjustments and cancellations work
 <a name="buyer-how-adjustments-work"></a>
 
-How you request a cancellation or billing adjustment depends on your agreement type:
-+ **For subscriptions with usage-based pricing (pay-as-you-go) or public contracts within 48 hours of purchase**, you can cancel directly from the AWS Marketplace console using self-service cancellation. For more information, see [Canceling product subscriptions](cancel-subscription.md). If you also need a billing adjustment (refund), contact the seller and ask them to initiate one on your behalf.
-+ **For all other agreement types**, the seller must initiate both cancellation and billing adjustment requests. Contact the seller to start the process.
+How you cancel a subscription depends on your agreement type. For cancellation steps, see [Canceling product subscriptions](cancel-subscription.md).
+
+Refunds (billing adjustments) are initiated by the seller of record, with one exception:
++ **If you canceled a public contract within 48 hours of purchase**, AWS Customer Service can process a full refund directly, without seller involvement. Contact AWS Customer Service to request the refund. Refunds aren't automatic — you must request them — and the 48 hours applies to when you canceled, not when you request the refund.
++ **For subscriptions with pay-as-you-go (usage-based) pricing**, canceling stops future charges, but you remain responsible for usage you already incurred. Canceling within 48 hours doesn't refund those charges. If you think a charge is incorrect because of a metering error, contact the seller of record.
++ **For all other refunds** (no cancellation, a cancellation more than 48 hours after purchase, or any private offer), the seller initiates the refund. These refunds follow the seller's refund policy and aren't guaranteed. Find the seller's refund policy and contact information on the product detail page, then ask the seller to start the process.
 
 Once the seller initiates a request:
 + **For billing adjustments:** The adjustment is processed automatically without requiring your approval. You receive an email notification and an Amazon EventBridge event when the adjustment is processed.

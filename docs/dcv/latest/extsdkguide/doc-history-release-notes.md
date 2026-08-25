@@ -23,16 +23,12 @@ This section provides release notes for the Amazon DCV Extension SDK by release 
 ### 1.1.0 — October 22, 2025
 <a name="1.1.0"></a>
 
-****
-
 | Version | Release notes |
 | --- | --- |
 |  +  Semantic version: 1.0.0   |  +  Added field `handle` to structure `StreamingView`. <br />+  Added field `ext_sdk_version` to structure `GetDcvInfoResponse`.   |
 
 ### 1.0.0 — April 3, 2023
 <a name="1.0.0"></a>
-
-****
 
 | Version | Release notes |
 | --- | --- |
@@ -42,8 +38,6 @@ This section provides release notes for the Amazon DCV Extension SDK by release 
 <a name="doc-history"></a>
 
 The following table describes the documentation for this release of Amazon DCV Extension SDK.
-
-****
 
 | Change | Description | Date |
 | --- | --- | --- |

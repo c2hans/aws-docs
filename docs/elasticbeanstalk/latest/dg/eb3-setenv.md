@@ -23,8 +23,6 @@ If the `value` contains a [special character](http://tldp.org/LDP/abs/html/speci
 ## Options
 <a name="eb3-setenvoptions"></a>
 
-****
-
 |  Name  |  Description  |
 | --- | --- |
 | --timeout | The number of minutes before the command times out. |

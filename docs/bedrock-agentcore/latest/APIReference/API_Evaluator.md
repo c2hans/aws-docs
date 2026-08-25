@@ -13,7 +13,8 @@ An evaluator to run against sessions during batch evaluation.
  ** evaluatorId **   <a name="BedrockAgentCore-Type-Evaluator-evaluatorId"></a>
 The unique identifier of the evaluator. Can reference built-in evaluators (e.g., `Builtin.Helpfulness`) or custom evaluators.
 Type: String
-Pattern: `(Builtin.[a-zA-Z0-9_-]+|[a-zA-Z][a-zA-Z0-9-_]{0,99}-[a-zA-Z0-9]{10})`
+Length Constraints: Minimum length of 1. Maximum length of 111.
+Pattern: `(Builtin\.[a-zA-Z0-9._-]+|ThirdParty\.[a-zA-Z0-9_-]+\.[a-zA-Z0-9_-]+|[a-zA-Z][a-zA-Z0-9-_]{0,99}-[a-zA-Z0-9]{10})`
 Required: Yes
 
 ## See Also

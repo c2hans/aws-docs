@@ -14,8 +14,6 @@ Disable AMS Resource Scheduler in the account. This will prevent resources from 
 ## Change Type Details
 <a name="ct-14v49adibs4db-MASd-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-14v49adibs4db |

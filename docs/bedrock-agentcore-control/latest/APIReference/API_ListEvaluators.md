@@ -50,6 +50,7 @@ Content-type: application/json
          "kmsKeyArn": "string",
          "level": "string",
          "lockedForModification": boolean,
+         "provider": "string",
          "status": "string",
          "updatedAt": number
       }

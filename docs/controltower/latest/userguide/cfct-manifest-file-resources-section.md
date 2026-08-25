@@ -92,7 +92,7 @@ If you provide an Amazon S3 URL, verify that the bucket policy allows read acces
    }
    ```
 
-   You'll replace the {{AccountId}} variable shown in the example with the AWS account ID for the management account that is deploying CfCT. For more examples, refer to [Bucket policy examples](https://docs.aws.amazon.com//AmazonS3/latest/userguide/example-bucket-policies.html) in the Amazon Simple Storage Service User Guide.
+   You'll replace the {{AccountId}} variable shown in the example with the AWS account ID for the management account that is deploying CfCT. For more examples, refer to [Bucket policy examples](https://docs.aws.amazon.com/AmazonS3/latest/userguide/example-bucket-policies.html) in the Amazon Simple Storage Service User Guide.
 
 **parameters** – Specifies the name and value for CloudFormation parameters.
 + **Type:** MapList
@@ -131,7 +131,7 @@ parameters:
 
     **Type:** List of string `OU names` to indicate that this resource will be deployed into a given OU list. If you provide an OU that doesn’t contain accounts and the **accounts** property is not added, CfCT only creates the stack set.
 **Note**
-The organization’s management account ID is not an allowed value. CfCT does not support deploying stack instances into the organization’s management account, by default. If you have a special use case, see [Root OU](https://docs.aws.amazon.com//controltower/latest/userguide/cfct-root-ou.html).
+The organization’s management account ID is not an allowed value. CfCT does not support deploying stack instances into the organization’s management account, by default. If you have a special use case, see [Root OU](https://docs.aws.amazon.com/controltower/latest/userguide/cfct-root-ou.html).
 
 **export\_outputs** – List of name/value pairs that denote SSM parameter keys. These SSM parameter keys allow you to store template outputs into the SSM parameter store. The output is intended for reference by other resources, defined earlier in the manifest file.
 
@@ -141,7 +141,7 @@ export_outputs: # List of SSM parameters
     value: [String]
 ```
 + **Type:** List of **name** and **value** key pairs. The **name** contains the `name` string of an SSM parameter store key, and **value** contains the parameter's `value` string.
-+ **Valid Values:** Any string or the `$[output_{{CfnOutput-Logical-ID}}]` variable where {{CfnOutput-Logical-ID}} corresponds to the template output variable. For more information about the Outputs section in an CloudFormation template, see [**Outputs**](https://docs.aws.amazon.com//AWSCloudFormation/latest/UserGuide/outputs-section-structure.html) in the *CloudFormation User Guide*.
++ **Valid Values:** Any string or the `$[output_{{CfnOutput-Logical-ID}}]` variable where {{CfnOutput-Logical-ID}} corresponds to the template output variable. For more information about the Outputs section in an CloudFormation template, see [**Outputs**](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/outputs-section-structure.html) in the *CloudFormation User Guide*.
 + **Required:** No
 
 For example, the following code snippet stores the template `VPCID` output variable into the SSM parameter key that's named `/org/member/audit/vpc_id`.

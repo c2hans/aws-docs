@@ -15,7 +15,7 @@ You can use other methods if you do not want to or cannot use Git credentials fo
 + [Setting up using other methods](#setting-up-other)
 + [Compatibility for CodeCommit, Git, and other components](#setting-up-compat)
 
-For information about using CodeCommit and Amazon Virtual Private Cloud, see [Using AWS CodeCommit with interface VPC endpoints](codecommit-and-interface-VPC.md) .
+For information about using CodeCommit and Amazon Virtual Private Cloud, see [Using AWS CodeCommit with interface VPC endpoints](codecommit-and-interface-VPC.md).
 
 ## View and manage your credentials
 <a name="setting-up-view-credentials"></a>

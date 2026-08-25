@@ -96,7 +96,7 @@ You can use the following tools to generate ICE candidates:
 
 With both of these tools. you can enter the `STUN` and `TURN` server information to gather candidates.
 
-To obtain the `TURN` server information and necessary credentials for Kinesis Video Streams with WebRTC, you can call the [GetIceServerConfig API operation](https://docs.aws.amazon.com//kinesisvideostreams/latest/dg/API_AWSAcuitySignalingService_GetIceServerConfig.html).
+To obtain the `TURN` server information and necessary credentials for Kinesis Video Streams with WebRTC, you can call the [GetIceServerConfig API operation](https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/API_AWSAcuitySignalingService_GetIceServerConfig.html).
 
 The following AWS CLI calls demonstrate how to obtain this information to use in these two tools.
 
@@ -108,7 +108,7 @@ aws kinesisvideo get-signaling-channel-endpoint \
     --single-master-channel-endpoint-configuration Protocols=WSS,HTTPS,Role=MASTER
 ```
 
-The output from the [`get-signaling-channel-endpoint`](https://docs.aws.amazon.com//kinesisvideostreams/latest/dg/API_GetSignalingChannelEndpoint.html) command returns a response that looks like this:
+The output from the [`get-signaling-channel-endpoint`](https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/API_GetSignalingChannelEndpoint.html) command returns a response that looks like this:
 
 ```
 {

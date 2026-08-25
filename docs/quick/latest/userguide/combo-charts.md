@@ -35,8 +35,6 @@ Bars and lines show up to 2,500 data points on the axis for visuals that don't u
 
 To understand the features supported by combo charts, use the following table.
 
-****
-
 | Feature | Supported? | Comments | For more information |
 | --- | --- | --- | --- |
 | Changing the legend display | Yes, with exceptions | Multi-measure combo charts display a legend, and single-measure combo charts don't. | [Legends on visual types in Quick](customizing-visual-legend.md) |

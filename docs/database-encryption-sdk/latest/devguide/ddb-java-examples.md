@@ -5,8 +5,6 @@ source_url: https://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/
 # Java examples
 <a name="ddb-java-examples"></a>
 
-****
-
 |  |
 | --- |
 | Our client-side encryption library was renamed to the AWS Database Encryption SDK. This developer guide still provides information on the [DynamoDB Encryption Client](legacy-dynamodb-encryption-client.md). |

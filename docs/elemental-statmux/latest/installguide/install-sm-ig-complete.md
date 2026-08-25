@@ -9,8 +9,6 @@ This is version 2.20 of the AWS Elemental Statmux documentation. This is the lat
 
 You have now installed and performed basic configuration of AWS Elemental Statmux. To complete the configuration, refer to the following:
 
-****
-
 | Scenario | Guide |
 | --- | --- |
 | AWS Elemental Statmux in a stand-alone configuration. Statmux is not managed by AWS Elemental Conductor Live 3. | [AWS Elemental Statmux Configuration Guide](https://docs.aws.amazon.com/elemental-statmux/latest/configguide) |

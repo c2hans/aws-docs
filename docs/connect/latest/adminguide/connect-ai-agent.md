@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/connect-ai-age
 
 |  |
 | --- |
-| **Powered by Amazon Bedrock**: AI agents is built on Amazon Bedrock and includes [automated abuse detection](https://docs.aws.amazon.com//bedrock/latest/userguide/abuse-detection.html) implemented in Amazon Bedrock to enforce safety, security, and the responsible use of artificial intelligence (AI). |
+| **Powered by Amazon Bedrock**: AI agents is built on Amazon Bedrock and includes [automated abuse detection](https://docs.aws.amazon.com/bedrock/latest/userguide/abuse-detection.html) implemented in Amazon Bedrock to enforce safety, security, and the responsible use of artificial intelligence (AI). |
 
 AI agents dynamically navigate your organization's resources to find solutions and take action to resolve customer needs. They handle many issues on their own, but also work in collaboration with your workforce to deliver personal, effortless customer experiences.
 

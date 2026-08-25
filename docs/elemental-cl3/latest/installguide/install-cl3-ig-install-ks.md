@@ -16,7 +16,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/installguide/instal
    ```
 
 1. Use the arrow keys to select each option and complete the field, using the instructions in the following table as a guide.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-cl3/latest/installguide/install-cl3-ig-install-ks.html)
 
    The operating system is installed.

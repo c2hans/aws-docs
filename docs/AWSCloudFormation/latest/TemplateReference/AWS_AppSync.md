@@ -20,3 +20,4 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::AppSync::GraphQLSchema](aws-resource-appsync-graphqlschema.md)
 + [AWS::AppSync::Resolver](aws-resource-appsync-resolver.md)
 + [AWS::AppSync::SourceApiAssociation](aws-resource-appsync-sourceapiassociation.md)
++ [AWS::AppSync::Type](aws-resource-appsync-type.md)

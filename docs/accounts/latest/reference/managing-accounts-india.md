@@ -5,6 +5,8 @@ source_url: https://docs.aws.amazon.com/accounts/latest/reference/managing-accou
 # Manage accounts in India
 <a name="managing-accounts-india"></a>
 
+This information is about managing accounts in India if you signed up for AWS using Sign up for AWS (advanced) or if you activated advanced features for your account. To compare sign-up options, see [Compare sign-up options](sign-up-for-aws.md).
+
 If you sign up for a new AWS account and choose India for your contact and billing address, your user agreement is with Amazon Web Services India Private Limited (AWS India), a local AWS seller in India. AWS India manages your billing, and your invoice total is listed in Indian rupees (INR) instead of US dollars (USD). For information about managing an AWS account, see [Configure your AWS account](managing-accounts.md).
 
 If your account is with AWS India, follow the procedures in this topic to manage your account. This topic explains how to sign up for an AWS India account, edit information about your AWS India account, manage customer verification, and add or edit your Permanent Account Number (PAN).
@@ -79,7 +81,7 @@ If you have completed customer verification and you edit the name, address, or d
 
 In compliance with Indian Computer Emergency Response Team (CERT-In) regulations, AWS is required to collect and validate your identity information before granting you new or continued access to AWS services. Your identity must be verified using the name from the India billing or contact address you provided. During verification, AWS will check if the document number is valid and if the name you provide matches the name associated with the document you use for customer verification. The name that you choose between your contact or billing information must exactly match the name that appears on the document.
 
-To update your billing name and address, see the [Payment preferences](https://console.aws.amazon.com//billing/home?#/paymentpreferences) page. To update your contact name and address, see [Update the primary contact for your AWS account](manage-acct-update-contact-primary.md). If you edit any information you previously used for customer verification, such as the name or India-based address from your billing or contact information, you may need to update and re-submit your customer verification information.
+To update your billing name and address, see the [Payment preferences](https://console.aws.amazon.com/billing/home?#/paymentpreferences) page. To update your contact name and address, see [Update the primary contact for your AWS account](manage-acct-update-contact-primary.md). If you edit any information you previously used for customer verification, such as the name or India-based address from your billing or contact information, you may need to update and re-submit your customer verification information.
 
 ### Check your customer verification status
 <a name="check-verification-status"></a>

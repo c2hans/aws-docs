@@ -119,4 +119,4 @@ The following is the updated profile.
 ```
 
 **Note**
-You can also set the AWS Region in other locations and by using other methods. For more information, see [Setting the AWS Region for the AWS SDK for .NETAWS Region](net-dg-region-selection.md).
+You can also set the AWS Region in other locations and by using other methods. For more information, see [Setting the AWS Region for the AWS SDK for .NET](net-dg-region-selection.md).

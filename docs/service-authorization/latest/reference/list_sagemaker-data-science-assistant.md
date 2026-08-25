@@ -29,8 +29,6 @@ Amazon SageMaker data science assistant has no API operations that can be used i
 
 The following actions are defined by Amazon SageMaker data science assistant but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 | Actions | Description | Resource types (\*required) | Condition keys | Access level |
 | --- | --- | --- | --- | --- |
 |   [SendConversation](https://docs.aws.amazon.com/sagemaker-dsa/APIReference/)  | Grants permission to start a conversation with SageMaker data science assistant |  |   | Write |

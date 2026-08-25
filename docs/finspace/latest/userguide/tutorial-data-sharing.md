@@ -33,7 +33,7 @@ If you want to disable data view sharing for your FinSpace environment, you need
 
 To enable access to the shared data view, first you need to create a resource link. A resource link is a Data Catalog object that is a link to a shared database or table.
 
-After you create a resource link and grant data permissions, you can use integrated services to run queries on the shared databases or tables. For more information on resource links, see the [AWS Lake Formation Developer Guide](https://docs.aws.amazon.com//lake-formation/latest/dg/resource-links-about.html).
+After you create a resource link and grant data permissions, you can use integrated services to run queries on the shared databases or tables. For more information on resource links, see the [AWS Lake Formation Developer Guide](https://docs.aws.amazon.com/lake-formation/latest/dg/resource-links-about.html).
 
 **To create a resource link to a shared database**
 

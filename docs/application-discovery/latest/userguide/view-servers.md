@@ -19,4 +19,4 @@ You can get a general view and a detailed view of the servers discovered by the 
 
 1. For more detail about a server, choose its server link in the **Server info** column. Doing so displays a screen that describes the server.
 
-The server's detail screen displays system information and performance metrics. You can also find a button to export network dependencies and processes information. To export detailed server information, see [Using AWS Migration Hub to export server dataExporting server data](export-server-data.md).
+The server's detail screen displays system information and performance metrics. You can also find a button to export network dependencies and processes information. To export detailed server information, see [Using AWS Migration Hub to export server data](export-server-data.md).

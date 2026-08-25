@@ -80,8 +80,6 @@ The `AWS/SMSVoice` namespace includes the following message feedback metrics.
 
 The `AWS/SMSVoice` namespace includes the following Protect metrics.
 
-****
-
 | Metric name | Description | Unit | Meaningful Statistics |
 | --- | --- | --- | --- |
 | TextMessagesBlockedByProtect | Number of text messages blocked due to country mode block rules. <br />**TextMessagesBlockedByProtect** will have a value of 1 if the message is blocked by protect and 0 if the message is not blocked. <br />The percentage of SMS messages blocked by Protect can be determined by `100 * AVG(TextMessagesBlockedByProtect)`. | Count |  +  Sum <br />+  Average <br />+  Sample Count   |
@@ -91,8 +89,6 @@ The `AWS/SMSVoice` namespace includes the following Protect metrics.
 <a name="cw-metrics-message-dimensions"></a>
 
 You can use the following dimensions to refine the metrics listed in the previous tables. These dimensions allow you to filter and group the metrics based on specific attributes of your SMS and voice messages.
-
-****
 
 | Dimension | Description |
 | --- | --- |

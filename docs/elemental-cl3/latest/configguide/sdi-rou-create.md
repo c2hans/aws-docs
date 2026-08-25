@@ -18,5 +18,4 @@ Perform this procedure on the primary Conductor Live node.
    + LRC Protocol
 
 1. Complete the **Add New Router ** fields as described in the table and choose **Add**.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-cl3/latest/configguide/sdi-rou-create.html)

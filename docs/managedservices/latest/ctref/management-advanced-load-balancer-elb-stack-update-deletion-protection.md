@@ -14,8 +14,6 @@ Update the deletion protection setting for Elastic Load Balancers (Application, 
 ## Change Type Details
 <a name="ct-28yh0fnzhubnh-MALu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-28yh0fnzhubnh |

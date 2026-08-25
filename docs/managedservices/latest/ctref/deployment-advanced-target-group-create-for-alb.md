@@ -14,8 +14,6 @@ Use to create a target group for an Application Load Balancer.
 ## Change Type Details
 <a name="ct-1r19m51jeijlk-DATc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1r19m51jeijlk |

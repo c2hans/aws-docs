@@ -13,3 +13,4 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::Organizations::OrganizationalUnit](aws-resource-organizations-organizationalunit.md)
 + [AWS::Organizations::Policy](aws-resource-organizations-policy.md)
 + [AWS::Organizations::ResourcePolicy](aws-resource-organizations-resourcepolicy.md)
++ [AWS::Organizations::Root](aws-resource-organizations-root.md)

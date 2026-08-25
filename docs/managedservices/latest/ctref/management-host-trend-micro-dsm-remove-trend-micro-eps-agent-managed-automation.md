@@ -14,8 +14,6 @@ For Bring Your Own EPS (BYOEPS) only. Remove the Trend Micro EPS agent installed
 ## Change Type Details
 <a name="ct-2iz9nvw8zlhst-MHTr-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2iz9nvw8zlhst |

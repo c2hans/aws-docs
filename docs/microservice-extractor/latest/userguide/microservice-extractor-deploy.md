@@ -23,4 +23,4 @@ To deploy the extracted service as an independent service, perform the following
 
 1. Push the Docker container image to Amazon Elastic Container Registry (Amazon ECR).
 
-1. Use CloudFormation to deploy the container image hosted in Amazon ECR to Amazon Elastic Container Service (ECS). For more information, see [Using Amazon ECR with Amazon ECS](https://docs.aws.amazon.com//AmazonECS/latest/developerguide/ecr-repositories.html) and [Creating Amazon ECS resources with CloudFormation](https://docs.aws.amazon.com//AmazonECS/latest/developerguide/creating-resources-with-cloudformation.html).
+1. Use CloudFormation to deploy the container image hosted in Amazon ECR to Amazon Elastic Container Service (ECS). For more information, see [Using Amazon ECR with Amazon ECS](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecr-repositories.html) and [Creating Amazon ECS resources with CloudFormation](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/creating-resources-with-cloudformation.html).

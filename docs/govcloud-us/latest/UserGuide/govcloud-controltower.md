@@ -89,7 +89,7 @@ For more information about AWS Control Tower, see the [AWS Control Tower Documen
 
 The account in the commercial Region is a member of the organization whose credentials made the request, automatically, but the account in the AWS GovCloud (US) Regions is a standalone account until you invite it to an organization in that same Region.
 
-Before creating accounts in the AWS GovCloud (US) Regions from AWS Control Tower, make sure that you meet specific U.S. regulatory requirements as described in [Signing Up for AWS GovCloud (US).](https://docs.aws.amazon.com//govcloud-us/latest/ug-west/getting-started-sign-up.html)
+Before creating accounts in the AWS GovCloud (US) Regions from AWS Control Tower, make sure that you meet specific U.S. regulatory requirements as described in [Signing Up for AWS GovCloud (US).](https://docs.aws.amazon.com/govcloud-us/latest/ug-west/getting-started-sign-up.html)
 
 For more information about getting started with AWS GovCloud (US) see [AWS GovCloud (US) Sign Up](https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/getting-started-sign-up.html).
 
@@ -127,7 +127,7 @@ The following diagram shows how account access works, so that you can invite sta
 
 1. Alternatively, another ** AWS GovCloud (US) Account 2** user can sign into **Account 2** with the IAM user credentials you provided, then view and accept the invitation.
 
-For more information, see the procedure described in [Sending Invitations to AWS Accounts](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_accounts_invites.html#orgs_manage_accounts_invite-account) in the [AWS Organizations User Guide](https://docs.aws.amazon.com//organizations/latest/userguide/orgs_introduction.html) to invite the account in the AWS GovCloud (US) Regions to the AWS GovCloud (US) organization.
+For more information, see the procedure described in [Sending Invitations to AWS Accounts](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_accounts_invites.html#orgs_manage_accounts_invite-account) in the [AWS Organizations User Guide](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html) to invite the account in the AWS GovCloud (US) Regions to the AWS GovCloud (US) organization.
 
 ## Setting up your landing zone
 <a name="govcloud-landing-zone-setup-overview"></a>

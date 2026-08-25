@@ -39,7 +39,7 @@ Export data from the edge to AWS IoT SiteWise in real time, or in batches using 
 
 Destinations enhance flexibility and scalability in your AWS IoT SiteWise environment. Destinations implement a centralized data management model, where sources publish data to a central system. Destinations determine where your data is sent using path filters. Destinations can subscribe to multiple path filters.
 
-MQTT-enabled gateways, whether self-hosted or running on Siemens Industrial Edge, use MQTT for local communication and come with a default real-time destination which has filters set to `#`. This means that, by default, all messages on all topics are published to the AWS IoT SiteWise real-time destination. For more information, see [Understand path filters for AWS IoT SiteWise Edge destinationsUnderstand path filters](#destinations-path-filters). You can add one real-time destination in each gateway.
+MQTT-enabled gateways, whether self-hosted or running on Siemens Industrial Edge, use MQTT for local communication and come with a default real-time destination which has filters set to `#`. This means that, by default, all messages on all topics are published to the AWS IoT SiteWise real-time destination. For more information, see [Understand path filters for AWS IoT SiteWise Edge destinations](#destinations-path-filters). You can add one real-time destination in each gateway.
 
 ### Destination types
 <a name="destination-types"></a>

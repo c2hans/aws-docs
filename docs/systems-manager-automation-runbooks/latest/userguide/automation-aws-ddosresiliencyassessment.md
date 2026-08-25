@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 
  **How does it work?**
 
-This runbook contains a series of checks for the various types of resources that are enabled for public access and if they have protections configured as per the recommendations in the [AWS DDoS Best Practices Whitepaper](https://docs.aws.amazon.com//pdfs/whitepapers/latest/aws-best-practices-ddos-resiliency/aws-best-practices-ddos-resiliency.pdf). The runbook performs the following:
+This runbook contains a series of checks for the various types of resources that are enabled for public access and if they have protections configured as per the recommendations in the [AWS DDoS Best Practices Whitepaper](https://docs.aws.amazon.com/pdfs/whitepapers/latest/aws-best-practices-ddos-resiliency/aws-best-practices-ddos-resiliency.pdf). The runbook performs the following:
 + Checks if a subscription to AWS Shield Advanced is enabled.
 + If enabled, it finds if there are any Shield Advanced protected resources.
 + It finds all the global and regional resources in the AWS account and checks if these are Shield protected.
@@ -265,9 +265,9 @@ The `AutomationAssumeRole` parameter requires the following actions to use the r
 
 Systems Manager Automation
 + [Run this Automation (console)](https://console.aws.amazon.com/systems-manager/automation/execute/AWSPremiumSupport-DDoSResiliencyAssessment)
-+ [Run an automation](https://docs.aws.amazon.com//systems-manager/latest/userguide/automation-working-executing.html)
-+ [Setting up an Automation](https://docs.aws.amazon.com//systems-manager/latest/userguide/automation-setup.html)
++ [Run an automation](https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-working-executing.html)
++ [Setting up an Automation](https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-setup.html)
 + [Support Automation Workflows landing page](https://aws.amazon.com/premiumsupport/technology/saw/)
 
 AWS service documentation
-+ [AWS Shield Advanced](https://docs.aws.amazon.com//waf/latest/developerguide/ddos-advanced-summary.html)
++ [AWS Shield Advanced](https://docs.aws.amazon.com/waf/latest/developerguide/ddos-advanced-summary.html)

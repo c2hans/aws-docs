@@ -25,8 +25,6 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_quicksight-actions-as-permissions).
 
-****
-
 - **   BatchCreateTopicReviewedAnswer  **
   - **IAM action:**  [quicksight:BatchCreateTopicReviewedAnswer](#list_quicksight-action-BatchCreateTopicReviewedAnswer)
   - **Condition key:**
@@ -191,10 +189,8 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [quicksight:SetGroupMapping](#list_quicksight-action-SetGroupMapping)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
 
 - **   CreateSpace  **
-  - **IAM action:**  [quicksight:CreateSpace](#list_quicksight-action-CreateSpace)
-  - **Condition key:**
-  - **Possible value(s):**
-  - **Access level:** Write
+  - **IAM action:**  [quicksight:CreateSpace](#list_quicksight-action-CreateSpace)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [quicksight:TagResource](#list_quicksight-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
 - **   CreateTemplate  **
   - **IAM action:**  [quicksight:CreateTemplate](#list_quicksight-action-CreateTemplate)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
@@ -1690,11 +1686,21 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Permissions management, Write
 
+- **   UpdateTopicPermissionsV2  **
+  - **IAM action:**  [quicksight:UpdateTopicPermissions](#list_quicksight-action-UpdateTopicPermissions)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Permissions management, Write
+
 - **   UpdateTopicRefreshSchedule  **
   - **IAM action:**  [quicksight:UpdateTopicRefreshSchedule](#list_quicksight-action-UpdateTopicRefreshSchedule)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
+
+- **   UpdateTopicV2  **
+  - **IAM action:**  [quicksight:PassDataSet](#list_quicksight-action-PassDataSet)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
+  - **IAM action:**  [quicksight:UpdateTopic](#list_quicksight-action-UpdateTopic)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
 
 - **   UpdateUser  **
   - **IAM action:**  [quicksight:UpdateUser](#list_quicksight-action-UpdateUser)
@@ -1714,8 +1720,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
 <a name="list_quicksight-actions-as-permissions"></a>
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
-
-****
 
 - **   [BatchCreateTopicReviewedAnswer](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_BatchCreateTopicReviewedAnswer.html)  **
   - **Description:** Grants permission to create reviewed answers for a topic
@@ -3539,8 +3543,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 The following actions are defined by Amazon QuickSight but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 - **   [AccountConfigurations](https://docs.aws.amazon.com/quicksight/latest/user/accessing-data-sources.html)  **
   - **Description:** Grants permission to enable setting default access to AWS resources
   - **Resource types (\*required):**
@@ -3810,8 +3812,6 @@ The following actions are defined by Amazon QuickSight but are not directly invo
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
 
-****
-
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
 |  [account](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_AccountInfo.html)  | arn:${Partition}:quicksight:${Region}:${Account}:account/${ResourceId} |   |
@@ -3856,8 +3856,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_quicksight-policy-keys"></a>
 
 Amazon QuickSight defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

@@ -71,7 +71,7 @@ Connect Customer Voice ID stores customer voiceprints which cannot be reverse-en
 
 You can update the KMS key in the Voice ID domain by using the `update-domain` command in AWS Command Line Interface (AWS CLI), or the [UpdateDomain](https://docs.aws.amazon.com/voiceid/latest/APIReference/API_UpdateDomain.html) Voice ID API.
 
-When you change the KMS key, an asynchronous process will be triggered to re-encrypt the old data with the new KMS key. After this process completes, all of your domain's data will be encrypted under the new KMS key, and you may safely retire the old key. For more information, see [UpdateDomain](https://docs.aws.amazon.com/voiceid/latest/APIReference/API_UpdateDomain.html).
+When you change the KMS key, an asynchronous process will be triggered to re-encrypt the old data with the new KMS key. After this process completes, all of your domain's data will be encrypted under the new KMS key, and you can safely retire the old key. For more information, see [UpdateDomain](https://docs.aws.amazon.com/voiceid/latest/APIReference/API_UpdateDomain.html).
 
 Voice ID creates a grant to the customer managed key that grants it access to the key. For more information, see [How Connect Customer Voice ID uses grants in AWS KMS](#voiceid-uses-grants).
 

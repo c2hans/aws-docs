@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon Cognito Identity provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="cognito-identity-DescribeIdentity"></a>[DescribeIdentity](https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_DescribeIdentity.html) | Return metadata related to the given identity, including when the identity was created and any associated linked logins | Read |

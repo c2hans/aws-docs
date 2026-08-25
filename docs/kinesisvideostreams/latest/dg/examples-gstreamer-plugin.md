@@ -43,7 +43,7 @@ On macOS, you can only stream video from a network camera when running GStreamer
 
 To run GStreamer with the Kinesis Video Streams producer SDK element as a sink, use the `gst-launch-1.0` command. Use upstream elements that are appropriate for the GStreamer plugin to use. For example, [v4l2src](https://gstreamer.freedesktop.org/documentation/video4linux2/v4l2src.html?gi-language=c#v4l2src-page) for v4l2 devices on Linux systems, or [rtspsrc](https://gstreamer.freedesktop.org/documentation/rtsp/rtspsrc.html#rtspsrc-page) for RTSP devices. Specify `kvssink` as the sink (final destination of the pipeline) to send video to the Producer SDK.
 
-In addition to [providing credentials](https://docs.aws.amazon.com//kinesisvideostreams/latest/dg/examples-gstreamer-plugin-parameters.html#credentials-to-kvssink) and [providing a region](https://docs.aws.amazon.com//kinesisvideostreams/latest/dg/examples-gstreamer-plugin-parameters.html#kvssink-region), the `kvssink`element has the following required parameter:
+In addition to [providing credentials](https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/examples-gstreamer-plugin-parameters.html#credentials-to-kvssink) and [providing a region](https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/examples-gstreamer-plugin-parameters.html#kvssink-region), the `kvssink`element has the following required parameter:
 + `stream-name` – The name of the destination Kinesis Video Streams.
 
 For information about `kvssink` optional parameters, see [GStreamer element parameter reference](examples-gstreamer-plugin-parameters.md).

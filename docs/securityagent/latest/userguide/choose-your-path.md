@@ -11,13 +11,13 @@ Find the right starting point for what you want to do with AWS Security Agent. U
 | --- | --- | --- |
 | Understand what AWS Security Agent does before setting it up | Everyone |  [What is AWS Security Agent?](what-is.md)  |
 | Set up the service and create an Agent Space | Admin |  [Set up AWS Security Agent](setup-security-agent.md)  |
-| Test my live or deployed application for exploitable vulnerabilities | User |  [Quickstart: Run a penetration test](quickstart.md)  |
-| Scan my source code for vulnerabilities and policy violations | User |  [Quickstart: Run a code review](quickstart-code-review.md)  |
-| Model how my application could be attacked (STRIDE) | User |  [Quickstart: Run a threat model](quickstart-threat-model.md)  |
-| Get security feedback on a design before I write code | User |  [Create a design review](perform-design-review.md)  |
-| Scan code without leaving my IDE (Kiro or Claude Code) | Developer |  [Run code security scans from your IDE](code-review-ide-integration.md)  |
-| Scan only my changed lines before merging | Developer |  [Run a differential code scan with S3](run-diff-scan-s3.md)  |
-| Get automatic security comments on pull requests and merge requests | Admin |  [Enable code review](enable-code-review-scan.md)  |
+| Test my live or deployed application for exploitable vulnerabilities | User |  [Quickstart: Run a Continuum penetration test](quickstart.md)  |
+| Scan my source code for vulnerabilities and policy violations | User |  [Quickstart: Run a Continuum code review](quickstart-code-review.md)  |
+| Model how my application could be attacked (STRIDE) | User |  [Quickstart: Run a Continuum threat model](quickstart-threat-model.md)  |
+| Get security feedback on a design before I write code | User |  [Create a Continuum design review](perform-design-review.md)  |
+| Scan code without leaving my IDE (Kiro or Claude Code) | Developer |  [Run Continuum code security scans from your IDE](code-review-ide-integration.md)  |
+| Scan only my changed lines before merging | Developer |  [Run a Continuum differential code scan with S3](run-diff-scan-s3.md)  |
+| Get automatic security comments on pull requests and merge requests | Admin |  [Enable Continuum code review](enable-code-review-scan.md)  |
 | Review findings and decide what to fix first | User |  [Penetration test](review-penetration-findings.md), [Code review](review-code-scan-findings.md), [Threat model](review-threat-model-findings.md), [Design review](review-design-findings.md)  |
 
 **Note**

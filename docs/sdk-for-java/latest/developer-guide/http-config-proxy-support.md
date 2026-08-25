@@ -83,7 +83,7 @@ SdkHttpClient httpClient = ApacheHttpClient.builder()
     .build();
 ```
 
-2The `NO_PROXY` environment variable supports a mix of "\|" and "," separators between host names. Host names may include the "\*" wildcard.
+2The `NO_PROXY` environment variable supports a mix of "\|" and "," separators between host names. For supported wildcard formats, see [nonProxyHosts wildcard behavior](#http-config-proxy-nonproxyhosts-behavior).
 
 ## Use a combination of settings
 <a name="http-config-proxy-support-combo"></a>
@@ -178,3 +178,48 @@ Password = EnvironmentPassword
 UserName = EnvironmentUser
 Non ProxyHost = environmentnonproxy.host, environmentnonproxy2.host:1234
 ```
+
+## nonProxyHosts wildcard behavior
+<a name="http-config-proxy-nonproxyhosts-behavior"></a>
+
+With `nonProxyHosts`, you can specify the hosts that bypass the proxy. Set this value through the `ProxyConfiguration` builder, the `http.nonProxyHosts` system property, or the `NO_PROXY` environment variable. Each source supports the following entry formats.
++ **Exact host**: `example.com` (matches only the specified host)
++ **Leading wildcard**: `*.example.com` (matches the domain and all subdomains)
++ **Bare wildcard**: `*` (bypasses all hosts)
++ **CIDR range**: `10.0.0.0/8` (matches all IP addresses in the range)
+
+### Behavior differences across HTTP clients
+<a name="http-config-proxy-nonproxyhosts-behavior-diffs"></a>
+
+The HTTP client type and entry source affect two important matching behaviors.
+
+#### Builder entries compared with external settings
+<a name="http-config-proxy-nonproxyhosts-builder-vs-external"></a>
+
+When you supply wildcard entries (`*.example.com` or `*`) through the `nonProxyHosts(Set)` or `addNonProxyHost(String)` methods on the `ProxyConfiguration` builder, wildcards work only with the AWS CRT-based HTTP clients (`AwsCrtHttpClient` and `AwsCrtAsyncHttpClient`).
+
+The Apache, Netty, and URLConnection-based clients throw a `PatternSyntaxException` for wildcard entries that you supply through the builder.
+
+When entries come from the `http.nonProxyHosts` system property or the `NO_PROXY` environment variable, wildcards work with all clients.
+
+**Important**
+If you need wildcards to work across all HTTP clients, use the `http.nonProxyHosts` system property or the `NO_PROXY` environment variable instead of the builder.
+
+#### Root-domain matching for leading wildcard entries
+<a name="http-config-proxy-nonproxyhosts-root-domain"></a>
+
+The AWS CRT-based clients and the other HTTP clients handle the `*.example.com` pattern differently:
++ **CRT-based clients**: `*.example.com` matches both the root domain (`example.com`) and subdomains (for example, `api.example.com`).
++ **Apache, Netty, and URLConnection-based clients**: `*.example.com` matches only subdomains. The root domain `example.com` doesn't match, and the SDK routes it through the proxy.
+
+### Summary of wildcard behavior by entry source
+<a name="http-config-proxy-nonproxyhosts-summary-table"></a>
+
+The following table summarizes the matching behavior when you supply entries through the `http.nonProxyHosts` system property or the `NO_PROXY` environment variable. All clients support wildcards from these sources.
+
+| Entry format | Non-CRT clients (Apache, Netty, and URLConnection) | CRT-based clients |
+| --- | --- | --- |
+| Exact host (`example.com`) | Honored | Honored |
+| Leading wildcard (`*.example.com`) | Honored (subdomains only) | Honored (root domain and subdomains) |
+| Bare wildcard (`*`) | Honored | Honored |
+| CIDR range (`10.0.0.0/8`) | Honored | Honored |

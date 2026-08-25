@@ -17,8 +17,6 @@ By default, AWS IoT FleetWise uses AWS managed keys to protect your data in the 
 
 AWS IoT FleetWise supports server-side encryption with customer managed keys stored in AWS KMS to encrypt data for the following resources.
 
-****
-
 - **Signal catalog**
   - **Data type:**  / **Fields that are encrypted at rest with customer managed keys:** description
   - **Data type:** Attribute / **Fields that are encrypted at rest with customer managed keys:** description, allowedValues, defaultValue, min, max

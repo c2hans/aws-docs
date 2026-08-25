@@ -21,8 +21,6 @@ You must be in the US East (N. Virginia) (us-east-1) Region to manage service li
 
 The following are overall quotas for Global Accelerator.
 
-****
-
 | Entity | Quota |
 | --- | --- |
 | Standard accelerators per AWS account | 20<br />You can [ request a quota increase](https://console.aws.amazon.com/servicequotas/home?region=us-east-1#!/services/globalaccelerator/quotas). |
@@ -39,8 +37,6 @@ The following are overall quotas for Global Accelerator.
 <a name="limits-global-accelerator-endpoints"></a>
 
 The following are Global Accelerator quotas that apply to the number of endpoints in endpoint groups.
-
-****
 
 | Entity | Description | Quota |
 | --- | --- | --- |

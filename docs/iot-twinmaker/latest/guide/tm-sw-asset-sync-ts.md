@@ -19,7 +19,7 @@ A sync job has one of the following statuses depending on its state.
 + The sync job `ACTIVE` state means the initialization step is done. The job is now ready to sync any new updates from AWS IoT SiteWise.
 + The sync job `ERROR` state indicates an error with any of the preceding states. Review the error message. There may be an issue with the IAM role setup. If you want to use a new IAM role, delete the sync job that had the error and create a new one with the new role.
 
-Sync errors appear in the model source page, which is accessed from the **Entity model sources** table in your workspace. The model source page displays a list of resources that failed to sync. Most errors are automatically retried by the sync job, but if the resource requires an action, then it remains in the `ERROR` state. You can also obtain a list of errors by using the [ ListSyncResources](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_ListSyncResources.html) API.
+Sync errors appear in the model source page, which is accessed from the **Entity model sources** table in your workspace. The model source page displays a list of resources that failed to sync. Most errors are automatically retried by the sync job, but if the resource requires an action, then it remains in the `ERROR` state. You can also obtain a list of errors by using the [ ListSyncResources](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_ListSyncResources.html) API.
 
 To see all the listed errors for the current source, use the following procedure.
 

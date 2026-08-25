@@ -57,7 +57,7 @@ You can't specify a value in the day-of-month and in the day-of-week fields in t
 
 **Wildcards for cron expressions**
 The following table shows the wildcard values that cron expressions support.
-Cron expressions that lead to rates faster than five (5) minute aren't supported. Support for specifying both a day-of-week and a day-of-month value isn't complete. Use the question mark (?) character in one of these fields.
+Systems Manager doesn't support cron expressions that lead to rates faster than 5 minutes for maintenance windows. For State Manager associations, you must use a scheduling interval of at least 30 minutes. For more information about association scheduling limitations, see [Cron and rate expressions for associations](#reference-cron-and-rate-expressions-association). Support for specifying both a day-of-week and a day-of-month value isn't complete. Use the question mark (?) character in one of these fields.
 **Supported wildcards for cron expressions**
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/systems-manager/latest/userguide/reference-cron-and-rate-expressions.html)
 
@@ -76,6 +76,9 @@ If the value is equal to `1`, then the unit must be singular. Similarly, for val
 <a name="reference-cron-and-rate-expressions-association"></a>
 
 This section includes examples of cron and rate expressions for State Manager associations. Before you create one of these expressions, be aware of the following information:
+
+**Important**
+For State Manager associations, you must use a scheduling interval of at least 30 minutes. You can't use cron or rate expressions that result in intervals shorter than 30 minutes. For example, you can't use `cron(0/5 * * * ? *)` (every 5 minutes) or `rate(15 minutes)`. The 5-minute minimum described in the general cron expressions section applies to maintenance windows only, not to associations.
 + Associations support the following cron expressions: Every 1/2, 1, 2, 4, 8, or 12 hours; every day, every week, or every specified day and time of the week; a specific day in a specific week of the month, or the last `x` day of the month at a specific time.
 + Associations support the following rate expressions: intervals of 30 minutes or greater and less than 31 days.
 + If you specify the optional `Seconds` field, its value can be 0 (zero). For example: `cron(0 */30 * * * ? *)`

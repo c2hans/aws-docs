@@ -24,8 +24,6 @@ The application can be any AWS service that is integrated with IAM Identity Cent
 
 For more information, see [Tasks for setting up a trusted token issuer](#setuptrustedtokenissuer-tasks).
 
-****
-
 | Role | Performs these tasks | Coordinates with |
 | --- | --- | --- |
 | IAM Identity Center administrator | Adds the external IdP as a trusted token issuer to the IAM Identity Center console.<br />Helps set up the correct attribute mapping between IAM Identity Center and the external IdP.<br />Notifies the AWS service administrator when the trusted token issuer is added to the IAM Identity Center console. | External IdP (trusted token issuer) administrator<br />AWS service administrator |

@@ -57,8 +57,6 @@ If you want to specify a FIPS endpoint, you can use an alias to simplify your co
 
 The following table lists the alias for each of the four available FIPS endpoints:
 
-****
-
 | Region name | Region | Endpoint | Alias |
 | --- | --- | --- | --- |
 | US East (N. Virginia) | us-east-1 | codebuild-fips.us-east-1.amazonaws.com | us-east-1-fips |

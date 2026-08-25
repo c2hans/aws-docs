@@ -448,4 +448,4 @@ update_dynamodb_item(
 
 ------
 
-The TTL examples discussed in this introduction demonstrate a method to ensure only recently updated items are kept in a table. Updated items have their lifespan extended, whereas items not updated post-creation expire and are deleted at no cost, reducing storage and maintaining clean tables.
+The TTL examples discussed in this introduction demonstrate a method to make sure only recently updated items are kept in a table. Updated items have their lifespan extended, whereas items not updated post-creation expire and are deleted at no cost, reducing storage and maintaining clean tables.

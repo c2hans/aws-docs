@@ -168,7 +168,7 @@ See the [complete example](https://github.com/awsdocs/aws-doc-sdk-examples/blob/
 
 ## More information
 <a name="more-information"></a>
-+  [Using Amazon CloudWatch alarms](https://docs.aws.amazon.com//AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html) in the Amazon CloudWatch User Guide
-+  [PutMetricAlarm](https://docs.aws.amazon.com//AmazonCloudWatch/latest/APIReference/API_PutMetricAlarm.html) in the Amazon CloudWatch API Reference
-+  [DescribeAlarms](https://docs.aws.amazon.com//AmazonCloudWatch/latest/APIReference/API_DescribeAlarms.html) in the Amazon CloudWatch API Reference
-+  [DeleteAlarms](https://docs.aws.amazon.com//AmazonCloudWatch/latest/APIReference/API_DeleteAlarms.html) in the Amazon CloudWatch API Reference
++  [Using Amazon CloudWatch alarms](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html) in the Amazon CloudWatch User Guide
++  [PutMetricAlarm](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_PutMetricAlarm.html) in the Amazon CloudWatch API Reference
++  [DescribeAlarms](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_DescribeAlarms.html) in the Amazon CloudWatch API Reference
++  [DeleteAlarms](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_DeleteAlarms.html) in the Amazon CloudWatch API Reference

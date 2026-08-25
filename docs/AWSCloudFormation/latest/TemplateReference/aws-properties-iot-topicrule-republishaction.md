@@ -41,7 +41,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-iot-topicrule-republishaction-properties"></a>
 
 `Headers`  <a name="cfn-iot-topicrule-republishaction-headers"></a>
-MQTT Version 5.0 headers information. For more information, see [MQTT](https://docs.aws.amazon.com//iot/latest/developerguide/mqtt.html) in the IoT Core Developer Guide.
+MQTT Version 5.0 headers information. For more information, see [MQTT](https://docs.aws.amazon.com/iot/latest/developerguide/mqtt.html) in the IoT Core Developer Guide.
 *Required*: No
 *Type*: [RepublishActionHeaders](aws-properties-iot-topicrule-republishactionheaders.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

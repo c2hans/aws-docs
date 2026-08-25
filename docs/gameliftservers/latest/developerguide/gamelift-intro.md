@@ -94,4 +94,4 @@ Use the [AWS Management Console for Amazon GameLift Servers](https://console.aws
 The Amazon GameLift Servers SDKs contain the libraries required to establish communication between your game clients, game servers, and game services and the Amazon GameLift Servers service. For more information, see [Get Amazon GameLift Servers development tools](gamelift-supported.md).
 
 **AWS CloudFormation**
-Use AWS CloudFormation to model, provision, and manage AWS resources for your game hosting solution by treating infrastructue as code. Create templates that describe the resources, and CloudFormation automates the tasks of configuring and deploying resources to the locations you specify.
+Use AWS CloudFormation to model, provision, and manage AWS resources for your game hosting solution by treating infrastructure as code. Create templates that describe the resources, and CloudFormation automates the tasks of configuring and deploying resources to the locations you specify.

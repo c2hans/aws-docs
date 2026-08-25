@@ -16,7 +16,7 @@ The Network Firewall logs contain the following information:
     + Alert log events using the EVE output type `alert`.
     + If the firewall that's associated with the log uses TLS inspection and the firewall's traffic uses SSL/TLS, Network Firewall adds the custom field `"tls_inspected": true` to the log. If your firewall doesn't use TLS inspection, Network Firewall omits this field.
 
-    For detailed information about these Suricata events, see [EVE JSON Output](https://docs.suricata.io/en/suricata-7.0.8/output/eve/eve-json-output.html?highlight=EVE) in the [Suricata User Guide](https://docs.suricata.io/en/suricata-7.0.8/index.html).
+    For detailed information about these Suricata events, see [EVE JSON Output](https://docs.suricata.io/en/suricata-8.0.3/output/eve/eve-json-output.html?highlight=EVE) in the [Suricata User Guide](https://docs.suricata.io/en/suricata-8.0.3/index.html).
   + **TLS events** – TLS events are produced by a dedicated stateful TLS engine, which is separate from Suricata. TLS events have the output type `tls`. The logs have a JSON structure that's similar to the Suricata EVE output.
 
     These events require the firewall to be configured for TLS inspection. For information, see [Inspecting SSL/TLS traffic with TLS inspection configurations in AWS Network Firewall](tls-inspection-configurations.md).
@@ -24,8 +24,11 @@ The Network Firewall logs contain the following information:
     TLS logs report the following types of errors:
     + TLS errors, with the custom field `"tls_error":` containing the error details. Currently, this category includes Server Name Indication (SNI) mismatches and SNI naming errors. Typically these errors are caused by problems with customer traffic or with the customer's client or server. For example, errors caused when the client hello SNI is NULL or doesn't match the subject name in the server certificate.
     + Revocation check errors, with the custom field `"revocation_check":` containing the check failure details. These report outbound traffic that fails the server certificate revocation check during TLS inspection. This requires the firewall to be configured with TLS inspection for outbound traffic, and for the TLS inspection to be configured to check the certificate revocation status. The logs include the revocation check status, the action taken, and the SNI that the revocation check was for. For information about configuring certificate revocation checking, see [Using SSL/TLS certificates with TLS inspection configurations in AWS Network Firewall](tls-inspection-certificate-requirements.md).
+  + **aws\_metadata** – The AWS-specific metadata associated with the alert event.
+    + **resource\_arn** – The Amazon Resource Name (ARN) of the rule group or firewall policy that generated the alert.
+  + **alert.metadata.container\_association** – The container association linked to the alert. This field appears when the traffic involves a container workload.
 
-  For detailed information about these Suricata events, see [EVE JSON Output](https://docs.suricata.io/en/suricata-7.0.8/output/eve/eve-json-output.html?highlight=EVE) in the [Suricata User Guide](https://docs.suricata.io/en/suricata-7.0.8/index.html).
+  For detailed information about these Suricata events, see [EVE JSON Output](https://docs.suricata.io/en/suricata-8.0.3/output/eve/eve-json-output.html?highlight=EVE) in the [Suricata User Guide](https://docs.suricata.io/en/suricata-8.0.3/index.html).
 
 **Example alert log entry**
 The following listing shows an example alert log entry for Network Firewall.
@@ -51,12 +54,15 @@ The following listing shows an example alert log entry for Network Firewall.
               "signature":"test_tcp",
               "category":"",
               "severity":1
+          },
+          "aws_metadata":{
+              "resource_arn":"arn:aws:network-firewall:us-east-1:111122223333:stateful-rulegroup/example-rule-group"
           }
       }
   }
 ```
 
-**Example alert log entry with URL and Domain Category enabled**
+**Example alert log entry with URL and Domain Category enabled and Container Association**
 
 ```
 {
@@ -76,7 +82,10 @@ The following listing shows an example alert log entry for Network Firewall.
             "rev": 0,
             "signature": "",
             "action": "blocked",
-            "category": ""
+            "category": "",
+            "metadata": {
+                "container_association": ["my-container-association"]
+            }
         },
         "flow_id": 643336554233439,
         "dest_ip": "64.233.180.147",
@@ -116,7 +125,10 @@ The following listing shows an example alert log entry for Network Firewall.
         },
         "dest_port": 443,
         "timestamp": "2025-12-31T00:55:22.870721+0000",
-        "direction": "to_server"
+        "direction": "to_server",
+        "aws_metadata": {
+            "resource_arn": "arn:aws:network-firewall:us-east-1:111122223333:stateful-rulegroup/example-rule-group"
+        }
     }
 }
 ```

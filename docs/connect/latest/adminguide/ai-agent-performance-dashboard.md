@@ -168,7 +168,7 @@ The following image shows an example **Knowledge base usage** table.
 ## AI agent performance trend
 <a name="ai-agent-performance-trend"></a>
 
-The AI agent performance trend is a time-series chart that displays the AI agent invocation success rate (blue bars), Faithfulness score (red line), and Tool use accuracy (green line) over a given time period broken down by intervals (15min, daily, weekly, monthly). You can configure different time range intervals by using the "Interval" button directly in the widget. The intervals that you may select depend on the page-level time range filter.
+The AI agent performance trend is a time-series chart that displays the AI agent invocation success rate (blue bars), Faithfulness score (red line), and Tool use accuracy (green line) over a given time period broken down by intervals (15min, daily, weekly, monthly). You can configure different time range intervals by using the "Interval" button directly in the widget. The intervals that you might select depend on the page-level time range filter.
 
 For example:
 + If you select the "Today" time range filter on your dashboard, you can only see an interval of 15min for the last 24 hours.
@@ -260,7 +260,7 @@ The following image shows an example **AI prompt performance** table.
 ## Proactive intents trend
 <a name="proactive-intents-trend"></a>
 
-The proactive intents trend chart shows the Proactive intents detected (blue bars), against Proactive intent engagement rate (red line) and Proactive intent response rate (green line) over a given time period broken down by intervals (15min, daily, weekly, monthly). You can configure different time range intervals by using the "Interval" button directly in the widget. The intervals that you may select depend on the page-level time range filter.
+The proactive intents trend chart shows the Proactive intents detected (blue bars), against Proactive intent engagement rate (red line) and Proactive intent response rate (green line) over a given time period broken down by intervals (15min, daily, weekly, monthly). You can configure different time range intervals by using the "Interval" button directly in the widget. The intervals that you might select depend on the page-level time range filter.
 
 **Metrics displayed:**
 + **Proactive intents detected**:

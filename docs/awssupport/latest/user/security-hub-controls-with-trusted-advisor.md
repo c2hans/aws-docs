@@ -163,7 +163,7 @@ Some AWS services are global and aren't specific to a Region, such as IAM and Am
 
 For Security Hub CSPM checks that evaluate resources for global services, you might see more than one item for affected resources. For example, if the `Hardware MFA should be enabled for the root user` check identifies that your account hasn't activated this feature, then you will see multiple Regions in the table for the same resource.
 
-You can configure Security Hub CSPM and AWS Config so that multiple Regions won't appear for the same resource. For more information, see [AWS Foundational Best Practices controls that you might want to disable](https://docs.aws.amazon.com//securityhub/latest/userguide/securityhub-standards-fsbp-to-disable.html).
+You can configure Security Hub CSPM and AWS Config so that multiple Regions won't appear for the same resource. For more information, see [AWS Foundational Best Practices controls that you might want to disable](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-standards-fsbp-to-disable.html).
 
 ### I turned off Security Hub CSPM or AWS Config in a Region
 <a name="disable-security-hub-regions"></a>
@@ -180,4 +180,4 @@ When the `RecordState` status changes to `ARCHIVED` for a finding, Trusted Advis
 ### I still can't view my Security Hub CSPM findings
 <a name="security-hub-contact-support"></a>
 
-If you still have issues with this feature, you can create a technical support case in the [AWS Support Center](https://console.aws.amazon.com//support/home).
+If you still have issues with this feature, you can create a technical support case in the [AWS Support Center](https://console.aws.amazon.com/support/home).

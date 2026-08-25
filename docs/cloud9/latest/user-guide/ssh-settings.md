@@ -25,8 +25,6 @@ If you want to create an EC2 environment instead, see [Creating an EC2 Environme
 
 You must create an SSH environment instead of an EC2 environment whenever you have any of the following requirements:
 
-****
-
 |  **Requirement**  |  **Directions**  |
 | --- | --- |
 | You don't want to incur additional charges to your AWS account for using AWS Cloud compute instances. So, you decide to connect AWS Cloud9 to an existing cloud compute instance outside of AWS or your own server instead. |  1.  Make sure your instance or server meets the [requirements](#ssh-settings-requirements) that are described later in this topic. <br />2.  [Create an SSH environment](create-environment.md) for AWS Cloud9 to connect your instance or server to.   |

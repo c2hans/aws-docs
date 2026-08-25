@@ -29,8 +29,6 @@ To get information about an agent version, send a [GetAgentVersion](https://docs
 
 To list information about an agent's versions, send a [ListAgentVersions](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_ListAgentVersions.html) request with an [Agents for Amazon Bedrock build-time endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#bra-bt) and specify the `agentId`. You can specify the following optional parameters:
 
-****
-
 | Field | Short description |
 | --- | --- |
 | maxResults | The maximum number of results to return in a response. |

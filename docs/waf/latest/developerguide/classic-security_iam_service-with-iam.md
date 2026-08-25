@@ -109,8 +109,6 @@ In AWS WAF Classic, the resources are *web ACLs* and *rules*. AWS WAF Classic al
 
 These resources and conditions have unique Amazon Resource Names (ARNs) associated with them, as shown in the following table.
 
-****
-
 | Name in AWS WAF Console | Name in AWS WAF SDK/CLI | ARN Format  |
 | --- | --- | --- |
 | Web ACL | WebACL | `arn:aws:waf::{{account}}:{{webacl}}/{{ID}}` |

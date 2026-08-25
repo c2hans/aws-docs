@@ -53,7 +53,7 @@ Here’s an example showing both normal and redacted thinking blocks:
 Seeing redacted thinking blocks in your output is expected behavior. The model can still use this redacted reasoning to inform its responses while maintaining safety guardrails.
 If you need to test redacted thinking handling in your application, you can use this special test string as your prompt: `ANTHROPIC_MAGIC_STRING_TRIGGER_REDACTED_THINKING_46C9A13E193C177646C7398A98432ECCCE4C1253D5E2D82641AC0E52CC2876CB`
 
-When passing `thinking` and `redacted_thinking` blocks back to the API in a multi-turn conversation, you must include the complete unmodified block back to the API for the last assistant turn. This is critical for maintaining the model’s reasoning flow. We suggest always passing back all thinking blocks to the API. For more details, see the [Extended thinking with tool usePreserve thinking blocks](claude-messages-extended-thinking.md#claude-messages-extended-thinking-tool-use-thinking-blocks).
+When passing `thinking` and `redacted_thinking` blocks back to the API in a multi-turn conversation, you must include the complete unmodified block back to the API for the last assistant turn. This is critical for maintaining the model’s reasoning flow. We suggest always passing back all thinking blocks to the API. For more details, see the [Extended thinking with tool use](claude-messages-extended-thinking.md#claude-messages-extended-thinking-tool-use-thinking-blocks).
 
 The following example uses the **InvokeModelWithResponseStream** API to demonstrate the request and response structure when using thinking tokens with redactions.
 

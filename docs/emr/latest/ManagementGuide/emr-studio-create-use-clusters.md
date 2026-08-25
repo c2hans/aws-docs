@@ -158,7 +158,6 @@ If you enabled trusted identity propagation with IAM Identity Center for your St
 **To create an EMR cluster by providing a cluster configuration**
 
 1. Choose a starting point.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-studio-create-use-clusters.html)
 
 1. Enter a **Cluster name**. Naming the cluster helps you find it later in the EMR Studio Clusters list.

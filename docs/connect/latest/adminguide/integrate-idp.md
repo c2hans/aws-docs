@@ -17,7 +17,7 @@ You must enable SAML for your Connect Customer instance to use Connect Customer 
 + Agent failover is only supported when using the global sign-in endpoint.
 + To perform the steps in this topic, you'll need your instance ID. For instructions about how to find it, see [Find your Connect Customer instance ID or ARN](find-instance-arn.md).
 + You will also need to know the source Region of your Connect Customer instances. For instructions about how to find it, see [How to find the source Region of your Connect Customer instances](create-replica-connect-instance.md#how-to-find-source-region-of-instances).
-+ If you are embedding your Connect application within an iframe, you must ensure that your domain is present in the list of Approved Origins in both your source and replica instance in order for global sign-in to work.
++ If you are embedding your Connect application within an iframe, you must make sure that your domain is present in the list of Approved Origins in both your source and replica instance in order for global sign-in to work.
 
   To configure Approved Origins at the instance level, follow the steps in [Use an allowlist for integrated applications in Connect Customer](app-integration.md).
 + Agents must exist in *both* your source and replica Connect Customer instances and have the same username as the role session name from your identity provider (IdP). Otherwise, you will receive a `UserNotOnboardedException` exception and risk losing agent redundancy capabilities between your instances.

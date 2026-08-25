@@ -119,6 +119,30 @@ The valid values are `Encryption Up`, which means that there is an active Connec
 Type: String
 Required: No
 
+ ** prefixPoolSizeIpv4 **   <a name="DX-Type-Connection-prefixPoolSizeIpv4"></a>
+The total number of inbound IPv4 route prefixes you can allocate across the virtual interfaces on the connection. Not applicable to hosted connections or interconnects.
+Type: Integer
+Valid Range: Minimum value of 0.
+Required: No
+
+ ** prefixPoolSizeIpv6 **   <a name="DX-Type-Connection-prefixPoolSizeIpv6"></a>
+The total number of inbound IPv6 route prefixes you can allocate across the virtual interfaces on the connection. Not applicable to hosted connections or interconnects.
+Type: Integer
+Valid Range: Minimum value of 0.
+Required: No
+
+ ** prefixPoolUnallocatedCountIpv4 **   <a name="DX-Type-Connection-prefixPoolUnallocatedCountIpv4"></a>
+The number of inbound IPv4 route prefixes in the connection prefix pool not yet allocated to a virtual interface. Not applicable to hosted connections or interconnects.
+Type: Integer
+Valid Range: Minimum value of 0.
+Required: No
+
+ ** prefixPoolUnallocatedCountIpv6 **   <a name="DX-Type-Connection-prefixPoolUnallocatedCountIpv6"></a>
+The number of inbound IPv6 route prefixes in the connection prefix pool not yet allocated to a virtual interface. Not applicable to hosted connections or interconnects.
+Type: Integer
+Valid Range: Minimum value of 0.
+Required: No
+
  ** providerName **   <a name="DX-Type-Connection-providerName"></a>
 The name of the service provider associated with the connection.
 Type: String

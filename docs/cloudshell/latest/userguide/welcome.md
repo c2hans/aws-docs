@@ -71,7 +71,7 @@ Safe Paste is enabled by default. This security feature requires that you verify
 ### Customization options
 <a name="shell-customization"></a>
 
-You can customize your AWS CloudShell experience to your exact preference. For example, you can change the screen layouts (multiple tabs), displayed text sizes, and toggle between the light and dark interface themes. For more information, see [Customizing your AWS CloudShell experienceUsing AWS CloudShell in Amazon VPC](customizing-cshell.md).
+You can customize your AWS CloudShell experience to your exact preference. For example, you can change the screen layouts (multiple tabs), displayed text sizes, and toggle between the light and dark interface themes. For more information, see [Customizing your AWS CloudShell experience](customizing-cshell.md).
 
 You can also extend your shell environment by [installing your own software](vm-specs.md#installing-software) and [modifying your shell with scripts](vm-specs.md#modifying-shell-scripts).
 
@@ -97,5 +97,5 @@ For more information, see [Service quotas and restrictions for AWS CloudShell](l
 + [Getting started with AWS CloudShell](getting-started.md)
 + [AWS CloudShell Concepts](working-with-aws-cloudshell.md)
 + [Manage AWS services from CLI in CloudShell](working-with-aws-cli.md)
-+ [Customizing your AWS CloudShell experienceUsing AWS CloudShell in Amazon VPC](customizing-cshell.md)
++ [Customizing your AWS CloudShell experience](customizing-cshell.md)
 + [AWS CloudShell compute environment: specifications and software](vm-specs.md)

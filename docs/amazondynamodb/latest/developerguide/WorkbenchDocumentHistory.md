@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Wor
 
 The following table describes the important changes in each release of the *NoSQL Workbench* client tool.
 
-****
-
 | Version | Change | Description | Date |
 | --- | --- | --- | --- |
 | 3.20.2 | Bug fixes | Improved error handling when DynamoDB local fails to start or is canceled, and fixes to the Data Modeler for DynamoDB access patterns. | April 6, 2026 |

@@ -13,8 +13,6 @@ Any SQL operators that are not included in this list are not currently supported
 ## Arithmetic operators
 <a name="ql-operators.arithmetic"></a>
 
-****
-
 | Operator | Description |
 | --- | --- |
 | \+ | Add |
@@ -22,8 +20,6 @@ Any SQL operators that are not included in this list are not currently supported
 
 ## Comparison operators
 <a name="ql-operators.comparison"></a>
-
-****
 
 | Operator | Description |
 | --- | --- |
@@ -37,8 +33,6 @@ Any SQL operators that are not included in this list are not currently supported
 
 ## Logical operators
 <a name="ql-operators.logical"></a>
-
-****
 
 | Operator | Description |
 | --- | --- |

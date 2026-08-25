@@ -32,8 +32,6 @@ The AWS CloudFormation stack performs the following steps:
 
 1. Sets up an API Gateway REST API with the following endpoint/method/content type combination:
 
-****
-
 | API Resource Path | HTTP Method | Supported Content Type |
 | --- | --- | --- |
 | /v1/users | POST | application/json |

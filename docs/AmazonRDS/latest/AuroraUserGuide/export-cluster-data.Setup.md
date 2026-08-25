@@ -50,7 +50,7 @@ If you plan to use the AWS Management Console to export your DB cluster, you can
    + `arn:aws:s3:::{{amzn-s3-demo-bucket}}`
    + `arn:aws:s3:::{{amzn-s3-demo-bucket}}/*`
 
-   For more information about creating an IAM policy for Amazon Aurora, see [Creating and using an IAM policy for IAM database access](UsingWithRDS.IAMDBAuth.IAMPolicy.md). See also [Tutorial: Create and attach your first customer managed policy](https://docs.aws.amazon.com//IAM/latest/UserGuide/tutorial_managed-policies.html) in the *IAM User Guide*.
+   For more information about creating an IAM policy for Amazon Aurora, see [Creating and using an IAM policy for IAM database access](UsingWithRDS.IAMDBAuth.IAMPolicy.md). See also [Tutorial: Create and attach your first customer managed policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_managed-policies.html) in the *IAM User Guide*.
 
    The following AWS CLI command creates an IAM policy named `ExportPolicy` with these options. It grants access to a bucket named {{amzn-s3-demo-bucket}}.
 **Note**
@@ -79,7 +79,7 @@ After you create the policy, note the ARN of the policy. You need the ARN for a 
    }'
    ```
 
-1. Create an IAM role, so that Aurora can assume this IAM role on your behalf to access your Amazon S3 buckets. For more information, see [Creating a role to delegate permissions to an IAM user](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_roles_create_for-user.html) in the *IAM User Guide*.
+1. Create an IAM role, so that Aurora can assume this IAM role on your behalf to access your Amazon S3 buckets. For more information, see [Creating a role to delegate permissions to an IAM user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-user.html) in the *IAM User Guide*.
 
    The following example shows using the AWS CLI command to create a role named `rds-s3-export-role`.
 

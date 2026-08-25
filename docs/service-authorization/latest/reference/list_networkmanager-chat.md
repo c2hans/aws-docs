@@ -29,8 +29,6 @@ AWS Network Manager Chat has no API operations that can be used in the `Actions`
 
 The following actions are defined by AWS Network Manager Chat but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 | Actions | Description | Resource types (\*required) | Condition keys | Access level |
 | --- | --- | --- | --- | --- |
 |   [CancelMessageResponse](https://docs.aws.amazon.com/vpc/latest/reachability/security_iam_required-API-permissions.html)  | Grants permission to cancel a response to a message |  |   | Write |

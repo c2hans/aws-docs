@@ -9,8 +9,6 @@ You can use the AWS Schema Conversion Tool (AWS SCT) to migrate extract, transfo
 
 Currently, AWS SCT supports the conversion of ETL scripts to objects to AWS Glue and Amazon Redshift RSQL, as shown in the following table.
 
-****
-
 | Source | Target |
 | --- | --- |
 | Informatica ETL scripts | Informatica |

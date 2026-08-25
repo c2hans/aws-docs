@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/continu
 The Jenkins CI plugin provides AWS Device Farm functionality from your own Jenkins continuous integration (CI) server. For more information, see [Jenkins (software)](https://en.wikipedia.org/wiki/Jenkins_%28software%29).
 
 **Note**
-To download the Jenkins plugin, go to [GitHub](https://github.com/awslabs/aws-device-farm-jenkins-plugin) and follow the instructions in [Step 1: Installing the Jenkins CI plugin for AWS Device FarmInstalling the Jenkins CI plugin](#jenkins-ci-installing-the-plugin).
+To download the Jenkins plugin, go to [GitHub](https://github.com/awslabs/aws-device-farm-jenkins-plugin) and follow the instructions in [Step 1: Installing the Jenkins CI plugin for AWS Device Farm](#jenkins-ci-installing-the-plugin).
 
 This section contains a series of procedures to set up and use the Jenkins CI plugin with AWS Device Farm.
 

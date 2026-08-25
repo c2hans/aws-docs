@@ -25,7 +25,7 @@ This tutorial provides a walkthrough from a blueprint author's perspective and a
 ## Prerequisites
 <a name="blueprint-getting-started-prerequisites"></a>
 
-To create and update a custom blueprint, you must have completed the tasks in [Set up and sign in to CodeCatalystSet up and sign in to CodeCatalyst](setting-up-topnode.md) as follows:
+To create and update a custom blueprint, you must have completed the tasks in [Set up and sign in to CodeCatalyst](setting-up-topnode.md) as follows:
 + Have an AWS Builder ID for signing in to CodeCatalyst.
 + Belong to a space and have the **Space administrator** or **Power user** role assigned to you in that space. For more information, see [Creating a space](spaces-create.md), [Granting users space permissions](spaces-members.md), and [Space administrator role](ipa-role-types.md#ipa-role-space-admin).
 

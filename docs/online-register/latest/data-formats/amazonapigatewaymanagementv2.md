@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon API Gateway Management V2 provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="apigateway-GetAccessLogSettings"></a>[GetAccessLogSettings](https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/api-reference.html) | Read a particular resource | Read |

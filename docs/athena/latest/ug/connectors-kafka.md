@@ -97,7 +97,6 @@ Use the parameters in this section to configure the Athena Kafka connector.
 + **schema\_registry\_url** – The URL address for the schema registry (for example, `http://schema-registry.example.org:8081`). Applies to the `AVRO` and `PROTOBUF` data formats. Athena only supports Confluent schema registry.
 + **secrets\_manager\_secret** – The name of the AWS secret in which the credentials are saved.
 + **Spill parameters** – Lambda functions temporarily store ("spill") data that do not fit into memory to Amazon S3. All database instances accessed by the same Lambda function spill to the same location. Use the parameters in the following table to specify the spill location.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/athena/latest/ug/connectors-kafka.html)
 + **Subnet IDs** – One or more subnet IDs that correspond to the subnet that the Lambda function can use to access your data source.
   + **Public Kafka cluster or standard Confluent Cloud cluster** – Associate the connector with a private subnet that has a NAT Gateway.
@@ -113,8 +112,6 @@ If you deploy the connector into a VPC in order to access private resources and 
 <a name="connectors-kafka-data-type-support"></a>
 
 The following table shows the corresponding data types supported for Kafka and Apache Arrow.
-
-****
 
 | Kafka | Arrow |
 | --- | --- |
@@ -344,8 +341,6 @@ You can use a variety of methods to authenticate to your Apache Kafka cluster, i
 
 The following table shows the authentication types for the connector and the security protocol and SASL mechanism for each. For more information, see the [Security](https://kafka.apache.org/documentation/#security) section of the Apache Kafka documentation.
 
-****
-
 | auth\_type | security.protocol | sasl.mechanism | Cluster type compatibility |
 | --- | --- | --- | --- |
 | SASL\_SSL\_PLAIN | SASL\_SSL | PLAIN |  +  Self-managed Kafka <br />+  Confluent Platform <br />+  Confluent Cloud   |
@@ -362,8 +357,6 @@ If the cluster is SSL authenticated, you must generate the trust store and key s
 For information on creating a secret in Secrets Manager, see [Create an AWS Secrets Manager secret](https://docs.aws.amazon.com/secretsmanager/latest/userguide/create_secret.html).
 
 To use this authentication type, set the environment variables as shown in the following table.
-
-****
 
 | Parameter | Value |
 | --- | --- |
@@ -394,8 +387,6 @@ For more information about using SSL with Kafka, see [Encryption and Authenticat
 If your cluster uses SCRAM authentication, provide the Secrets Manager key that is associated with the cluster when you deploy the connector. The user's AWS credentials (secret key and access key) are used to authenticate with the cluster.
 
 Set the environment variables as shown in the following table.
-
-****
 
 | Parameter | Value |
 | --- | --- |

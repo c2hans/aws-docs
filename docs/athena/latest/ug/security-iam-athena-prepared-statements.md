@@ -21,8 +21,6 @@ athena:DeletePreparedStatement
 
 Use these permissions as shown in the following table.
 
-****
-
 | To do this | Use these permissions |
 | --- | --- |
 | Run a PREPARE query | athena:StartQueryExecution athena:CreatePreparedStatement |

@@ -17,8 +17,6 @@ To use a cross-region inference profile for a teacher model in a Distillation jo
 ## Choose teacher and student models for distillation
 <a name="prequisites-teacher-student-models"></a>
 
-****
-
 | Model Type | Selection Criteria | Key Considerations | Requirements |
 | --- | --- | --- | --- |
 | Teacher Model | Choose a teacher model that's significantly larger and more capable than the student model, and whose accuracy you want to achieve for your use case. | To make distillation more effective, choose a model that's already trained on tasks similar to your use case. For some teacher models, you can choose a Cross-Region inference profile. | Must have permissions to invoke inference profiles and models in each Region. See cross-region inference documentation for policy examples. |
@@ -34,8 +32,6 @@ The following table shows which models and AWS Regions Amazon Bedrock Model Dist
 **Important**
 Distillation is not currently available for Anthropic models on Amazon Bedrock. There is no confirmed timeline for when Anthropic distillation will be restored. For currently supported teacher–student combinations, see the table below.
 
-****
-
 - **Amazon**
   - **Teacher:** Nova Pro / **Teacher ID:** amazon.nova-pro-v1:0 / **Inference profile support:** Both / **Student:** Nova Lite<br />Nova Micro / **Student ID:** amazon.nova-lite-v1:0:300k<br />amazon.nova-micro-v1:0:128k / **Region:** US East (N. Virginia)
   - **Teacher:** Nova Premier / **Teacher ID:** amazon.nova-premier-v1:0 / **Inference profile support:** Inference profile only / **Student:** Nova Lite<br />Nova Micro<br />Nova Pro / **Student ID:** amazon.nova-lite-v1:0:300k<br />amazon.nova-micro-v1:0:128k<br />amazon.nova-pro-v1:0:300k / **Region:** US East (N. Virginia)
@@ -46,4 +42,4 @@ Distillation is not currently available for Anthropic models on Amazon Bedrock. 
   - **Teacher:** Llama 3.3 70B / **Teacher ID:** meta.llama3-3-70b-instruct-v1:0 / **Inference profile support:** Inference profile only / **Student:** Llama 3.1 8B<br />Llama 3.2 1B<br />Llama 3.2 3B / **Student ID:** meta.llama3-1-8b-instruct-v1:0:128k<br />meta.llama3-2-1b-instruct-v1:0:128k<br />meta.llama3-2-3b-instruct-v1:0:128k / **Region:** US West (Oregon)
 
 **Note**
-For Claude  and Llama models, the distillation job is run in US West (Oregon). You can either buy [provisioned throughput](https://docs.aws.amazon.com//bedrock/latest/userguide/prov-throughput.html) in US West (Oregon) or [copy distilled model](https://docs.aws.amazon.com//bedrock/latest/userguide/copy-model.html) to another Region and then buy [provisioned throughput](https://docs.aws.amazon.com//bedrock/latest/userguide/prov-throughput.html).
+For Claude  and Llama models, the distillation job is run in US West (Oregon). You can either buy [provisioned throughput](https://docs.aws.amazon.com/bedrock/latest/userguide/prov-throughput.html) in US West (Oregon) or [copy distilled model](https://docs.aws.amazon.com/bedrock/latest/userguide/copy-model.html) to another Region and then buy [provisioned throughput](https://docs.aws.amazon.com/bedrock/latest/userguide/prov-throughput.html).

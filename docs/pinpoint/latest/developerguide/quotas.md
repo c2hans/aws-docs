@@ -51,8 +51,6 @@ The maximum number of requests varies by quota type and API operation. Amazon Pi
 
 The following table lists the rate and burst quotas for the Amazon Pinpoint API.
 
-****
-
 | Operation | Default burst/rate quota (Requests per second) |
 | --- | --- |
 | CreateCampaign | 25 |
@@ -296,12 +294,12 @@ The following quota applies to the [Segments](https://docs.aws.amazon.com/pinpoi
 ## SMS quotas
 <a name="quotas-sms"></a>
 
-For SMS quotas, see [SMS quotas](https://docs.aws.amazon.com//sms-voice/latest/userguide/quotas.html#quotas-sms) in the AWS End User Messaging SMS user guide.
+For SMS quotas, see [SMS quotas](https://docs.aws.amazon.com/sms-voice/latest/userguide/quotas.html#quotas-sms) in the AWS End User Messaging SMS user guide.
 
 ## 10DLC quotas
 <a name="quotas-10dlc"></a>
 
-For 10DLC quotas, see [10DLC quotas](https://docs.aws.amazon.com//sms-voice/latest/userguide/quotas.html#quotas-10dlc) in the AWS End User Messaging SMS user guide.
+For 10DLC quotas, see [10DLC quotas](https://docs.aws.amazon.com/sms-voice/latest/userguide/quotas.html#quotas-10dlc) in the AWS End User Messaging SMS user guide.
 
 ## Voice quotas
 <a name="quotas-voice"></a>

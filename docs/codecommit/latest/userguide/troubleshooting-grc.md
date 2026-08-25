@@ -59,6 +59,6 @@ For more information about remote helpers and Git, see the [Git documentation](h
 
 **Problem:** When you try to run the `pip install git-remote-codecommit` command, you see an error indicating that the environment is externally managed.
 
-**Possible fixes:** The most common reason for this error is that you're running a distrobution (distro) of Python that define an EXTERNALLY-MANAGED marker file. The best solution for this is to create and use a virtual environment.
+**Possible fixes:** The most common reason for this error is that you're running a distribution (distro) of Python that defines an EXTERNALLY-MANAGED marker file. The best solution for this is to create and use a virtual environment.
 
 For more information about externally managed environments and Python, see [Externally Managed Environments](https://packaging.python.org/en/latest/specifications/externally-managed-environments/#externally-managed-environments) and [Install packages in a virtual environment using pip and venv](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/) in the Python documentation.

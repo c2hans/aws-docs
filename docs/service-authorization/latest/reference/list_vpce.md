@@ -29,8 +29,6 @@ AWS PrivateLink has no API operations that can be used in the `Actions` element 
 
 The following actions are defined by AWS PrivateLink but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 - **   [AllowMultiRegion](https://docs.aws.amazon.com/vpc/latest/privatelink/security_iam_service-with-iam.html)  **
   - **Description:** Grants permission to manage multi-region VPC endpoints and VPC endpoint service configurations
   - **Resource types (\*required):** [vpc-endpoint](#list_vpce-resource-vpc-endpoint) / **Condition keys:**
@@ -41,8 +39,6 @@ The following actions are defined by AWS PrivateLink but are not directly invoca
 <a name="list_vpce-resources-for-iam-policies"></a>
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
-
-****
 
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |

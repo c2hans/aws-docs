@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/netw
 
 Network Flow Monitor provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="networkflowmonitor-GetMonitor"></a>[GetMonitor](https://docs.aws.amazon.com/networkflowmonitor/2.0/APIReference/API_GetMonitor.html) | Get information about a monitor | Read |

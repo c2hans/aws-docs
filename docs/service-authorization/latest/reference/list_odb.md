@@ -25,8 +25,6 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_odb-actions-as-permissions).
 
-****
-
 - **   AcceptMarketplaceRegistration  **
   - **IAM action:**  [odb:AcceptMarketplaceRegistration](#list_odb-action-AcceptMarketplaceRegistration)
   - **Condition key:**
@@ -64,6 +62,10 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [odb:CreateDbNode](#list_odb-action-CreateDbNode)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [odb:TagResource](#list_odb-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
+- **   CreateExascaleDbStorageVault  **
+  - **IAM action:**  [odb:CreateExascaleDbStorageVault](#list_odb-action-CreateExascaleDbStorageVault)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [odb:TagResource](#list_odb-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+
 - **   CreateOdbNetwork  **
   - **IAM action:**  [odb:CreateOdbNetwork](#list_odb-action-CreateOdbNetwork)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [odb:TagResource](#list_odb-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
@@ -99,6 +101,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
 - **   DeleteCloudVmCluster  **
   - **IAM action:**  [odb:DeleteCloudVmCluster](#list_odb-action-DeleteCloudVmCluster)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [odb:DeleteDbNode](#list_odb-action-DeleteDbNode)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+
+- **   DeleteExascaleDbStorageVault  **
+  - **IAM action:**  [odb:DeleteExascaleDbStorageVault](#list_odb-action-DeleteExascaleDbStorageVault)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
 
 - **   DeleteOdbNetwork  **
   - **IAM action:**  [odb:DeleteOdbNetwork](#list_odb-action-DeleteOdbNetwork)
@@ -174,6 +182,18 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   GetDbServer  **
   - **IAM action:**  [odb:GetDbServer](#list_odb-action-GetDbServer)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   GetExadbVmCluster  **
+  - **IAM action:**  [odb:GetExadbVmCluster](#list_odb-action-GetExadbVmCluster)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   GetExascaleDbStorageVault  **
+  - **IAM action:**  [odb:GetExascaleDbStorageVault](#list_odb-action-GetExascaleDbStorageVault)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
@@ -276,6 +296,24 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   ListDbSystemShapes  **
   - **IAM action:**  [odb:ListDbSystemShapes](#list_odb-action-ListDbSystemShapes)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
+- **   ListExadbVmClusters  **
+  - **IAM action:**  [odb:ListExadbVmClusters](#list_odb-action-ListExadbVmClusters)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
+- **   ListExascaleDbStorageVaults  **
+  - **IAM action:**  [odb:ListExascaleDbStorageVaults](#list_odb-action-ListExascaleDbStorageVaults)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
+- **   ListGiMinorVersions  **
+  - **IAM action:**  [odb:ListGiMinorVersions](#list_odb-action-ListGiMinorVersions)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** List
@@ -392,6 +430,18 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   UpdateExadbVmCluster  **
+  - **IAM action:**  [odb:UpdateExadbVmCluster](#list_odb-action-UpdateExadbVmCluster)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   UpdateExascaleDbStorageVault  **
+  - **IAM action:**  [odb:UpdateExascaleDbStorageVault](#list_odb-action-UpdateExascaleDbStorageVault)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   UpdateOdbNetwork  **
   - **IAM action:**  [odb:UpdateOdbNetwork](#list_odb-action-UpdateOdbNetwork)
   - **Condition key:**
@@ -409,8 +459,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
 
-****
-
 - **   [AcceptMarketplaceRegistration](https://docs.aws.amazon.com/odb/latest/APIReference/API_AcceptMarketplaceRegistration.html)  **
   - **Description:** Grants permission to register the Amazon Web Services Marketplace token for your Amazon Web Services account to activate your Oracle Database@Amazon Web Services subscription
   - **Resource types (\*required):**
@@ -421,6 +469,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Description:** Grants permission to associate an AWS Identity and Access Management (IAM) service role with a specified resource to enable AWS service integration
   - **Resource types (\*required):** [cloud-autonomous-vm-cluster](#list_odb-resource-cloud-autonomous-vm-cluster) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_odb-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [cloud-vm-cluster](#list_odb-resource-cloud-vm-cluster) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_odb-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
+- **   [AssociateVirtualMachinesToExadbVmCluster](https://docs.aws.amazon.com/odb/latest/APIReference/API_AssociateVirtualMachinesToExadbVmCluster.html)  **
+  - **Description:** Grants permission to associate virtual machines to a specified Exadb VM cluster
+  - **Resource types (\*required):** [exadb-vm-cluster\*](#list_odb-resource-exadb-vm-cluster)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_odb-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
 - **   [CreateAutonomousDatabase](https://docs.aws.amazon.com/odb/latest/APIReference/API_CreateAutonomousDatabase.html)  **
@@ -457,6 +511,18 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Description:** Grants permission to create a VM cluster on the specified Exadata infrastructure
   - **Resource types (\*required):** [cloud-exadata-infrastructure\*](#list_odb-resource-cloud-exadata-infrastructure) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_odb-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_odb-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_odb-aws_TagKeys)
   - **Resource types (\*required):** [odb-network\*](#list_odb-resource-odb-network) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_odb-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_odb-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_odb-aws_TagKeys)
+  - **Access level:** Write
+
+- **   [CreateExadbVmCluster](https://docs.aws.amazon.com/odb/latest/APIReference/API_CreateExadbVmCluster.html)  **
+  - **Description:** Grants permission to create an Exadb VM cluster in the specified Exascale DB storage vault
+  - **Resource types (\*required):** [exascale-db-storage-vault\*](#list_odb-resource-exascale-db-storage-vault) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_odb-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_odb-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_odb-aws_TagKeys)
+  - **Resource types (\*required):** [odb-network\*](#list_odb-resource-odb-network) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_odb-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_odb-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_odb-aws_TagKeys)
+  - **Access level:** Write
+
+- **   [CreateExascaleDbStorageVault](https://docs.aws.amazon.com/odb/latest/APIReference/API_CreateExascaleDbStorageVault.html)  **
+  - **Description:** Grants permission to create an Exascale DB storage vault
+  - **Resource types (\*required):**
+  - **Condition keys:** [aws:RequestTag/${TagKey}](#list_odb-aws_RequestTag___TagKey_)<br />[aws:TagKeys](#list_odb-aws_TagKeys)
   - **Access level:** Write
 
 - **   [CreateOdbNetwork](https://docs.aws.amazon.com/odb/latest/APIReference/API_CreateOdbNetwork.html)  **
@@ -501,6 +567,18 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_odb-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
+- **   [DeleteExadbVmCluster](https://docs.aws.amazon.com/odb/latest/APIReference/API_DeleteExadbVmCluster.html)  **
+  - **Description:** Grants permission to delete a specified Exadb VM cluster
+  - **Resource types (\*required):** [exadb-vm-cluster\*](#list_odb-resource-exadb-vm-cluster)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_odb-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
+- **   [DeleteExascaleDbStorageVault](https://docs.aws.amazon.com/odb/latest/APIReference/API_DeleteExascaleDbStorageVault.html)  **
+  - **Description:** Grants permission to delete a specified Exascale DB storage vault
+  - **Resource types (\*required):** [exascale-db-storage-vault\*](#list_odb-resource-exascale-db-storage-vault)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_odb-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
 - **   [DeleteOdbNetwork](https://docs.aws.amazon.com/odb/latest/APIReference/API_DeleteOdbNetwork.html)  **
   - **Description:** Grants permission to delete the specified ODB network
   - **Resource types (\*required):** [odb-network\*](#list_odb-resource-odb-network)
@@ -517,6 +595,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Description:** Grants permission to disassociate an AWS Identity and Access Management (IAM) service role from a specified resource to disable AWS service integration
   - **Resource types (\*required):** [cloud-autonomous-vm-cluster](#list_odb-resource-cloud-autonomous-vm-cluster) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_odb-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [cloud-vm-cluster](#list_odb-resource-cloud-vm-cluster) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_odb-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
+- **   [DisassociateVirtualMachinesFromExadbVmCluster](https://docs.aws.amazon.com/odb/latest/APIReference/API_DisassociateVirtualMachinesFromExadbVmCluster.html)  **
+  - **Description:** Grants permission to disassociate virtual machines from a specified Exadb VM cluster
+  - **Resource types (\*required):** [exadb-vm-cluster\*](#list_odb-resource-exadb-vm-cluster)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_odb-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
 - **   [FailoverAutonomousDatabase](https://docs.aws.amazon.com/odb/latest/APIReference/API_FailoverAutonomousDatabase.html)  **
@@ -576,6 +660,18 @@ You can specify the following actions in the `Action` element of an IAM policy s
 - **   [GetDbServer](https://docs.aws.amazon.com/odb/latest/APIReference/API_GetDbServer.html)  **
   - **Description:** Grants permission to get information about the specified database server
   - **Resource types (\*required):** [cloud-exadata-infrastructure\*](#list_odb-resource-cloud-exadata-infrastructure)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_odb-aws_ResourceTag___TagKey_)
+  - **Access level:** Read
+
+- **   [GetExadbVmCluster](https://docs.aws.amazon.com/odb/latest/APIReference/API_GetExadbVmCluster.html)  **
+  - **Description:** Grants permission to get information about a specified Exadb VM cluster
+  - **Resource types (\*required):** [exadb-vm-cluster\*](#list_odb-resource-exadb-vm-cluster)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_odb-aws_ResourceTag___TagKey_)
+  - **Access level:** Read
+
+- **   [GetExascaleDbStorageVault](https://docs.aws.amazon.com/odb/latest/APIReference/API_GetExascaleDbStorageVault.html)  **
+  - **Description:** Grants permission to get information about a specified Exascale DB storage vault
+  - **Resource types (\*required):** [exascale-db-storage-vault\*](#list_odb-resource-exascale-db-storage-vault)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_odb-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
@@ -681,8 +777,26 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:**
   - **Access level:** List
 
+- **   [ListExadbVmClusters](https://docs.aws.amazon.com/odb/latest/APIReference/API_ListExadbVmClusters.html)  **
+  - **Description:** Grants permission to list information about the Exadb VM clusters owned by your Amazon Web Services account or only the ones in the specified Exascale DB storage vault
+  - **Resource types (\*required):** [exascale-db-storage-vault](#list_odb-resource-exascale-db-storage-vault)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_odb-aws_ResourceTag___TagKey_)
+  - **Access level:** List
+
+- **   [ListExascaleDbStorageVaults](https://docs.aws.amazon.com/odb/latest/APIReference/API_ListExascaleDbStorageVaults.html)  **
+  - **Description:** Grants permission to list information about the Exascale DB storage vaults owned by your Amazon Web Services account
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** List
+
 - **   [ListFlexComponents](https://docs.aws.amazon.com/odb/latest/APIReference/API_ListFlexComponents.html)  **
   - **Description:** Grants permission to list information about the flex components that are available for a DB system shape
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** List
+
+- **   [ListGiMinorVersions](https://docs.aws.amazon.com/odb/latest/APIReference/API_ListGiMinorVersions.html)  **
+  - **Description:** Grants permission to list information about the minor versions of Oracle Grid Infrastructure (GI) software that are available for a VM cluster for the specified GI version and shape
   - **Resource types (\*required):**
   - **Condition keys:**
   - **Access level:** List
@@ -719,6 +833,8 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [cloud-exadata-infrastructure](#list_odb-resource-cloud-exadata-infrastructure) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_odb-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [cloud-vm-cluster](#list_odb-resource-cloud-vm-cluster) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_odb-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [db-node](#list_odb-resource-db-node) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_odb-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [exadb-vm-cluster](#list_odb-resource-exadb-vm-cluster) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_odb-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [exascale-db-storage-vault](#list_odb-resource-exascale-db-storage-vault) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_odb-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [odb-network](#list_odb-resource-odb-network) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_odb-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [odb-peering-connection](#list_odb-resource-odb-peering-connection) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_odb-aws_ResourceTag___TagKey_)
   - **Access level:** Read
@@ -785,6 +901,8 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [cloud-exadata-infrastructure](#list_odb-resource-cloud-exadata-infrastructure) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_odb-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_odb-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_odb-aws_TagKeys)
   - **Resource types (\*required):** [cloud-vm-cluster](#list_odb-resource-cloud-vm-cluster) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_odb-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_odb-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_odb-aws_TagKeys)
   - **Resource types (\*required):** [db-node](#list_odb-resource-db-node) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_odb-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_odb-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_odb-aws_TagKeys)
+  - **Resource types (\*required):** [exadb-vm-cluster](#list_odb-resource-exadb-vm-cluster) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_odb-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_odb-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_odb-aws_TagKeys)
+  - **Resource types (\*required):** [exascale-db-storage-vault](#list_odb-resource-exascale-db-storage-vault) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_odb-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_odb-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_odb-aws_TagKeys)
   - **Resource types (\*required):** [odb-network](#list_odb-resource-odb-network) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_odb-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_odb-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_odb-aws_TagKeys)
   - **Resource types (\*required):** [odb-peering-connection](#list_odb-resource-odb-peering-connection) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_odb-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_odb-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_odb-aws_TagKeys)
   - **Access level:** Tagging, Write
@@ -797,6 +915,8 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [cloud-exadata-infrastructure](#list_odb-resource-cloud-exadata-infrastructure) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_odb-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_odb-aws_TagKeys)
   - **Resource types (\*required):** [cloud-vm-cluster](#list_odb-resource-cloud-vm-cluster) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_odb-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_odb-aws_TagKeys)
   - **Resource types (\*required):** [db-node](#list_odb-resource-db-node) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_odb-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_odb-aws_TagKeys)
+  - **Resource types (\*required):** [exadb-vm-cluster](#list_odb-resource-exadb-vm-cluster) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_odb-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_odb-aws_TagKeys)
+  - **Resource types (\*required):** [exascale-db-storage-vault](#list_odb-resource-exascale-db-storage-vault) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_odb-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_odb-aws_TagKeys)
   - **Resource types (\*required):** [odb-network](#list_odb-resource-odb-network) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_odb-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_odb-aws_TagKeys)
   - **Resource types (\*required):** [odb-peering-connection](#list_odb-resource-odb-peering-connection) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_odb-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_odb-aws_TagKeys)
   - **Access level:** Tagging, Write
@@ -819,6 +939,18 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_odb-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
+- **   [UpdateExadbVmCluster](https://docs.aws.amazon.com/odb/latest/APIReference/API_UpdateExadbVmCluster.html)  **
+  - **Description:** Grants permission to update properties of a specified Exadb VM cluster
+  - **Resource types (\*required):** [exadb-vm-cluster\*](#list_odb-resource-exadb-vm-cluster)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_odb-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
+- **   [UpdateExascaleDbStorageVault](https://docs.aws.amazon.com/odb/latest/APIReference/API_UpdateExascaleDbStorageVault.html)  **
+  - **Description:** Grants permission to update properties of a specified Exascale DB storage vault
+  - **Resource types (\*required):** [exascale-db-storage-vault\*](#list_odb-resource-exascale-db-storage-vault)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_odb-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
 - **   [UpdateOdbNetwork](https://docs.aws.amazon.com/odb/latest/APIReference/API_UpdateOdbNetwork.html)  **
   - **Description:** Grants permission to update properties of a specified ODB network
   - **Resource types (\*required):** [odb-network\*](#list_odb-resource-odb-network)
@@ -835,8 +967,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 <a name="list_odb-permission-only-actions"></a>
 
 The following actions are defined by AWS Service - Oracle Database@AWS but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
-
-****
 
 - **   [CreateDbNode](API_CreateDbNode.html)  **
   - **Description:** Grants permission to create a DB Node
@@ -871,18 +1001,21 @@ The following actions are defined by AWS Service - Oracle Database@AWS but are n
 - **   [DeleteResourcePolicy](API_DeleteResourcePolicy.html)  **
   - **Description:** Grants permission to delete a resource policy
   - **Resource types (\*required):** [cloud-exadata-infrastructure\*](#list_odb-resource-cloud-exadata-infrastructure) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_odb-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [exascale-db-storage-vault\*](#list_odb-resource-exascale-db-storage-vault) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_odb-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [odb-network\*](#list_odb-resource-odb-network) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_odb-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
 - **   [GetResourcePolicy](API_GetResourcePolicy.html)  **
   - **Description:** Grants permission to get a resource policy
   - **Resource types (\*required):** [cloud-exadata-infrastructure\*](#list_odb-resource-cloud-exadata-infrastructure) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_odb-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [exascale-db-storage-vault\*](#list_odb-resource-exascale-db-storage-vault) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_odb-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [odb-network\*](#list_odb-resource-odb-network) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_odb-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
 - **   [PutResourcePolicy](API_PutResourcePolicy.html)  **
   - **Description:** Grants permission to update a resource policy
   - **Resource types (\*required):** [cloud-exadata-infrastructure\*](#list_odb-resource-cloud-exadata-infrastructure) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_odb-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [exascale-db-storage-vault\*](#list_odb-resource-exascale-db-storage-vault) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_odb-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [odb-network\*](#list_odb-resource-odb-network) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_odb-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
@@ -903,8 +1036,6 @@ The following actions are defined by AWS Service - Oracle Database@AWS but are n
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
 
-****
-
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
 |  [autonomous-database](https://docs.aws.amazon.com/odb/latest/APIReference/API_AutonomousDatabase.html)  | arn:${Partition}:odb:${Region}:${Account}:autonomous-database/${AutonomousDatabaseId} | [aws:ResourceTag/${TagKey}](#list_odb-aws_ResourceTag___TagKey_) |
@@ -913,6 +1044,8 @@ The following resource types are defined by this service and can be used in the 
 |  [cloud-exadata-infrastructure](https://docs.aws.amazon.com/odb/latest/APIReference/API_CloudExadataInfrastructure.html)  | arn:${Partition}:odb:${Region}:${Account}:cloud-exadata-infrastructure/${CloudExadataInfrastructureId} | [aws:ResourceTag/${TagKey}](#list_odb-aws_ResourceTag___TagKey_) |
 |  [cloud-vm-cluster](https://docs.aws.amazon.com/odb/latest/APIReference/API_CloudVmCluster.html)  | arn:${Partition}:odb:${Region}:${Account}:cloud-vm-cluster/${CloudVmClusterId} | [aws:ResourceTag/${TagKey}](#list_odb-aws_ResourceTag___TagKey_) |
 |  [db-node](https://docs.aws.amazon.com/odb/latest/APIReference/API_DbNode.html)  | arn:${Partition}:odb:${Region}:${Account}:db-node/${DbNodeId} | [aws:ResourceTag/${TagKey}](#list_odb-aws_ResourceTag___TagKey_) |
+|  [exadb-vm-cluster](https://docs.aws.amazon.com/odb/latest/APIReference/API_ExadbVmCluster.html)  | arn:${Partition}:odb:${Region}:${Account}:exadb-vm-cluster/${ExadbVmClusterId} | [aws:ResourceTag/${TagKey}](#list_odb-aws_ResourceTag___TagKey_) |
+|  [exascale-db-storage-vault](https://docs.aws.amazon.com/odb/latest/APIReference/API_ExascaleDbStorageVault.html)  | arn:${Partition}:odb:${Region}:${Account}:exascale-db-storage-vault/${ExascaleDbStorageVaultId} | [aws:ResourceTag/${TagKey}](#list_odb-aws_ResourceTag___TagKey_) |
 |  [odb-network](https://docs.aws.amazon.com/odb/latest/APIReference/API_OdbNetwork.html)  | arn:${Partition}:odb:${Region}:${Account}:odb-network/${OdbNetworkId} | [aws:ResourceTag/${TagKey}](#list_odb-aws_ResourceTag___TagKey_) |
 |  [odb-peering-connection](https://docs.aws.amazon.com/odb/latest/APIReference/API_OdbPeeringConnection.html)  | arn:${Partition}:odb:${Region}:${Account}:odb-peering-connection/${OdbPeeringConnectionId} | [aws:ResourceTag/${TagKey}](#list_odb-aws_ResourceTag___TagKey_) |
 
@@ -920,8 +1053,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_odb-policy-keys"></a>
 
 AWS Service - Oracle Database@AWS defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

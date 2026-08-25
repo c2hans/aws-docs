@@ -25,8 +25,6 @@ The function signatures are defined in `ota_pal.h` and start with the prefix `ot
 **Note**
 The exact name of the PAL is technically open ended, but to be compatible with the qualification tests, the name should conform to the ones specified below.
 
-****
-
 |  Version 1   |  Version 3   |  Notes   |
 | --- | --- | --- |
 | `OTA_Err_t prvPAL_CreateFileForRx( OTA_FileContext_t * const *C* );` | `OtaPalStatus_t otaPal_CreateFileForRx( OtaFileContext_t * const *pFileContext* );` | Create a new receive file for the data chunks as they come in. |
@@ -80,8 +78,6 @@ The exact name of the PAL is technically open ended, but to be compatible with t
 
 ### Data Types
 <a name="porting-migration-ota-pal-data-types"></a>
-
-****
 
 |  Version 1   |  File  |  Version 3   |  File  |  Notes   |
 | --- | --- | --- | --- | --- |

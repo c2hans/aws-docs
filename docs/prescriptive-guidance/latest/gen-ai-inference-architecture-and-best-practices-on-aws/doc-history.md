@@ -12,3 +12,4 @@ The following table describes significant changes to this guide.
 | Change | Description | Date |
 | --- |--- |--- |
 | Initial publication | — | December 18, 2025 |
+| Updates | Includes latest AWS service information | August 18, 2026 |

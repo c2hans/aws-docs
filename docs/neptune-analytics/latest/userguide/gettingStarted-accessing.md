@@ -10,7 +10,7 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/getti
 ## Using a notebook
 <a name="gettingStarted-accessing-notebook"></a>
 
- You can access to your Neptune Analytics graph through a Neptune workbench, which provides visualization tools on top of Neptune Analytics which can help with interpreting query results. For more information on how to set up and use a graph notebook, see the [notebooks](https://docs.aws.amazon.com//neptune-analytics/latest/userguide/notebooks.html) section in the Neptune Analytics user guide.
+ You can access to your Neptune Analytics graph through a Neptune workbench, which provides visualization tools on top of Neptune Analytics which can help with interpreting query results. For more information on how to set up and use a graph notebook, see the [notebooks](https://docs.aws.amazon.com/neptune-analytics/latest/userguide/notebooks.html) section in the Neptune Analytics user guide.
 
  **Example**
 
@@ -136,7 +136,7 @@ MATCH (n) RETURN n LIMIT 1
 
  The Node.js code sample below uses the JavaScript SDK to submit a query that returns a single node and prints the result.
 
-1.  Follow the [ installation instructions ](https://docs.aws.amazon.com//sdk-for-javascript/v3/developer-guide/getting-started-nodejs.html) to install Node.js and set up your package structure. For this example, install the Neptune graph client package instead of the Amazon S3 client package: `npm install @aws-sdk/client-neptune-graph`.
+1.  Follow the [ installation instructions ](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/getting-started-nodejs.html) to install Node.js and set up your package structure. For this example, install the Neptune graph client package instead of the Amazon S3 client package: `npm install @aws-sdk/client-neptune-graph`.
 
 1.  Create a file in that directory structure named `queryExample.js`.
 
@@ -168,9 +168,9 @@ MATCH (n) RETURN n LIMIT 1
 
  The tutorial below sets up a project that uses the Java SDK to submit a query that returns a single node and prints the result.
 
-1.  To get started with the Java SDK, follow the [ installation instructions ](https://docs.aws.amazon.com//sdk-for-java/latest/developer-guide/setup.html#setup-envtools) to install Java and set up a build tool that supports Maven central. This example will use [Apache Maven](https://maven.apache.org/).
+1.  To get started with the Java SDK, follow the [ installation instructions ](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/setup.html#setup-envtools) to install Java and set up a build tool that supports Maven central. This example will use [Apache Maven](https://maven.apache.org/).
 
-1.  Follow the [steps](https://docs.aws.amazon.com//sdk-for-java/latest/developer-guide/get-started.html#get-started-projectsetup) to create a project using Maven based on the quickstart template. When executing these steps, please make the following modifications:
+1.  Follow the [steps](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/get-started.html#get-started-projectsetup) to create a project using Maven based on the quickstart template. When executing these steps, please make the following modifications:
 **Note**
  When generating the project from the template, specify a version of the Java SDK that includes the Neptune graph service APIs. For this example, use 2.25.7 as your archetype version.
 
@@ -184,7 +184,7 @@ MATCH (n) RETURN n LIMIT 1
     Running the command above will present you with several prompts. When asked to provide a 'service' (i.e., the service whose client and APIs you plan to use for this tutorial), please enter `neptunegraph` as the service name. An updated table of prompts and values can be found below:
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/neptune-analytics/latest/userguide/gettingStarted-accessing.html)
 
-1.  After generating the project structure, you should see three Maven-generated classes defined in the `getstarted/src/main/java/org/example/` directory: `App.java`, `DependencyFactory.java`, and `Handler.java`. For details on each of these classes, see step 3 in the [ SDK for Java ](https://docs.aws.amazon.com//sdk-for-java/latest/developer-guide/get-started.html#get-started-code) guide. Since this example uses the `neptunegraph` service, the Maven-generated code in the DependencyFactor and Handler classes will be using a different client than the code samples provided there. Refer to the Neptune graph-specific equivalents of the auto-generated classes below:
+1.  After generating the project structure, you should see three Maven-generated classes defined in the `getstarted/src/main/java/org/example/` directory: `App.java`, `DependencyFactory.java`, and `Handler.java`. For details on each of these classes, see step 3 in the [ SDK for Java ](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/get-started.html#get-started-code) guide. Since this example uses the `neptunegraph` service, the Maven-generated code in the DependencyFactor and Handler classes will be using a different client than the code samples provided there. Refer to the Neptune graph-specific equivalents of the auto-generated classes below:
 
    1.  Maven-generated `App.java` - this file is the same regardless of the service used.
 

@@ -10,8 +10,6 @@ This topic details the changes in the SDK for Java Amazon Elastic Compute Cloud 
 ## High-level changes
 <a name="migration-imds-high-level-changes"></a>
 
-****
-
 | Change | v1 | v2 |
 | --- | --- | --- |
 |  <br />Maven dependencies |  <pre><dependencyManagement><br />    <dependencies><br />        <dependency><br />            <groupId>com.amazonaws</groupId><br />            <artifactId>aws-java-sdk-bom</artifactId><br />            <version>{{1.12.5871}}</version><br />            <type>pom</type><br />            <scope>import</scope><br />        </dependency><br />    </dependencies><br /></dependencyManagement><br /><dependencies><br />    <dependency><br />        <groupId>com.amazonaws</groupId><br />        <artifactId>aws-java-sdk-core</artifactId><br />    </dependency><br /></dependencies></pre>  |  <pre><dependencyManagement><br />    <dependencies><br />        <dependency><br />            <groupId>software.amazon.awssdk</groupId><br />            <artifactId>bom</artifactId><br />            <version>{{2.27.212}}</version><br />            <type>pom</type><br />            <scope>import</scope><br />        </dependency><br />    </dependencies><br /></dependencyManagement><br /><dependencies><br />    <dependency><br />        <groupId>software.amazon.awssdk</groupId><br />        <artifactId>imds</artifactId><br />    </dependency><br />    <dependency><br />        <groupId>software.amazon.awssdk</groupId><br />        <artifactId>apache-client3</artifactId><br />    </dependency><br /></dependencies></pre>  |
@@ -28,13 +26,11 @@ This topic details the changes in the SDK for Java Amazon Elastic Compute Cloud 
 
 In v1, you use static methods that accept no parameters to request metadata for an EC2 resource. In contrast, you need to specify the path to the EC2 resource as a parameter in v2. The following table shows the different approaches.
 
-****
-
 | v1 | v2 |
 | --- | --- |
 |  <pre>String userMetaData = EC2MetadataUtils.getUserData();</pre>  |  <pre>Ec2MetadataClient client = Ec2MetadataClient.create();<br />Ec2MetadataResponse response = <br />                client.get("/latest/user-data");<br />String userMetaData = <br />                response.asString();</pre>  |
 
-Refer to the [instance metadata categories](https://docs.aws.amazon.com//AWSEC2/latest/UserGuide/instancedata-data-categories.html) to find the path you need to supply to request a piece of metadata.
+Refer to the [instance metadata categories](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instancedata-data-categories.html) to find the path you need to supply to request a piece of metadata.
 
 **Note**
 When you use an instance metadata client in v2, you should aim to use the same client for all request to retrieve metadata.
@@ -45,13 +41,11 @@ When you use an instance metadata client in v2, you should aim to use the same c
 ### JSON data
 <a name="migration-imds-behavior-json"></a>
 
-On EC2, the locally running Instance Metadata Service (IMDS) returns some metadata as JSON formatted strings. One such example is the dynamic metadata of an [instance identity document](https://docs.aws.amazon.com//AWSEC2/latest/UserGuide/instance-identity-documents.html).
+On EC2, the locally running Instance Metadata Service (IMDS) returns some metadata as JSON formatted strings. One such example is the dynamic metadata of an [instance identity document](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-identity-documents.html).
 
 The v1 API contains separate methods for each piece of instance identity metadata, whereas the v2 API directly returns the JSON string. To work with the JSON string, you can use the [Document API ](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/core/document/package-summary.html) to parse the response and navigate the JSON structure.
 
 The following table compares how you retrieve metadata of an instance identity document in v1 and v2.
-
-****
 
 | Use case | v1 | v2 |
 | --- | --- | --- |
@@ -63,8 +57,6 @@ The following table compares how you retrieve metadata of an instance identity d
 <a name="migration-imds-behavior-endpoint-res"></a>
 
 The following table shows the locations that the SDK checks to resolve the endpoint to IMDS. The locations are listed in descending priority.
-
-****
 
 | v1 | v2 |
 | --- | --- |
@@ -92,8 +84,6 @@ Ec2MetadataClient client = Ec2MetadataClient
 With v2, you can specify an endpoint-mode to configure the metadata client to use the default endpoint values for IPv4 or IPv6. Endpoint-mode is not available for v1. The default value used for IPv4 is `http://169.254.169.254` and `http://[fd00:ec2::254]` for IPv6.
 
 The following table shows the different ways that you can set the endpoint mode in order of descending priority.
-
-****
 
 |  |  | Possible values |
 | --- | --- | --- |
@@ -124,8 +114,6 @@ Amazon EC2 defines two approaches to access instance metadata:
 
 The following table compares how the Java SDKs work with IMDS.
 
-****
-
 | v1 | v2 |
 | --- | --- |
 | IMDSv2 is used by default | Always uses IMDSv2 |
@@ -137,8 +125,6 @@ The SDK for Java 2.x supports only IMDSv2 and does not fall back to IMDSv1.
 <a name="migration-imds-config-diffs"></a>
 
 The following table lists the differing configuration options.
-
-****
 
 | Configuration | v1 | v2 |
 | --- | --- | --- |

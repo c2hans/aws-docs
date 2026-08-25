@@ -24,7 +24,7 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/manag
 ------
 #### [ CLI/API ]
 
- You can call the [delete-graph](https://docs.aws.amazon.com//cli/latest/reference/neptune-graph/delete-graph.html) CLI command, or the [DeleteGraph](https://docs.aws.amazon.com//neptune-analytics/latest/apiref/API_DeleteGraph.html) API operation. You can choose the following options to preserve the data from the graph in case it is needed later.
+ You can call the [delete-graph](https://docs.aws.amazon.com/cli/latest/reference/neptune-graph/delete-graph.html) CLI command, or the [DeleteGraph](https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_DeleteGraph.html) API operation. You can choose the following options to preserve the data from the graph in case it is needed later.
 +  Create a final snapshot of the graph
 +  Retain automated backups
 

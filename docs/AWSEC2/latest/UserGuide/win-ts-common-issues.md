@@ -215,7 +215,7 @@ The following procedure describes how to edit the Windows Registry using Registr
 
 1. Run the `select disk` DiskPart command and specify the disk number for the volume with the disk signature collision.
 **Tip**
-To check the disk number for the volume with the disk signature collision, use the **Disk Management** utility. Open a command prompt, type `compmgmt.msc` and press **Enter**. In the left-hand navigation panel, double-click **Disk Management**. In the **Disk Management** utility, check the disk number for the offline volume with the disk signature collision.
+To check the disk number for the volume with the disk signature collision, use the **Disk Management** utility. Open a command prompt, type `compmgmt.msc` and press **Enter**. In the left-hand navigation panel, open **Disk Management**. In the **Disk Management** utility, check the disk number for the offline volume with the disk signature collision.
 
    ```
    DISKPART> select disk {{1}}

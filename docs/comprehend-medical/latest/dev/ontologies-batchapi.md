@@ -34,8 +34,6 @@ You can run a batch analysis job using either the Amazon Comprehend Medical cons
 ### Performing batch analysis using the console
 <a name="batch-api-ontology-linking-console"></a>
 
-****
-
 1. Upload your data into an S3 bucket.
 
 1. To start a new analysis job, select the type of analysis you will be performing. Then, provide the name of the S3 bucket that contains the input files and the name of the S3 bucket where you want to send the output files.

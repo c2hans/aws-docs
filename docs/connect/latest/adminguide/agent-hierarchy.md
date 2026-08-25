@@ -23,7 +23,7 @@ You can also configure hierarchies with up to five levels, and segment agents or
 To create agent hierarchies, you need to be assigned to a security profile that has the **Users and Permissions** - **Agent hierarchy** - **Create** permission.
 
 **Note**
-Since agent hierarchies may include location and skill set data, you also need **Agent hierarchy** - **View** permission to view the agent hierarchy information in a real-time metrics report.
+Since agent hierarchies might include location and skill set data, you also need **Agent hierarchy** - **View** permission to view the agent hierarchy information in a real-time metrics report.
 
 The following image shows the **Users and Permissions - Agent hierarchy** permissions on the **Security profile permissions** page.
 
@@ -74,7 +74,7 @@ After you create hierarchy levels, you can add the groups that call within each,
 1. Choose **Add child Neighborhood** to add groups to Level 4, as shown in the following image. We added Hollywood to Los Angeles.
 ![The Add child option for level 4 Add a child Neighborhood.](http://docs.aws.amazon.com/connect/latest/adminguide/images/agent-hierarchy-addchild-neighborhood.png)
 
-Choose **View historical changes** to view the change history. You can filter changes by date (between two dates) or by user name. If you cannot see the link, ensure that you have the proper permissions to view these changes.
+Choose **View historical changes** to view the change history. You can filter changes by date (between two dates) or by user name. If you cannot see the link, make sure that you have the proper permissions to view these changes.
 
 ## Delete an agent hierarchy
 <a name="delete-agent-hierarchy"></a>

@@ -12,7 +12,7 @@ When AWS Control Tower evaluates the compliance of resources, it reports the com
 Compliance reporting is intended to let cloud administrators know when the resources associated with the accounts in their organization are compliant with established policies. When the resources are in compliance, builders can provision new AWS accounts quickly in a few clicks.
 
 When we talk about compliance in AWS Control Tower, we do not intend the same meaning as compliance with governmental regulations, such as data privacy or health information standards. However, AWS Control Tower can assist your organization to comply with many governmental regulations, sometimes referred to as *frameworks*.
-+ For more information about how AWS Control Tower helps you maintain compliance with governmental regulations and industry standards, see [Compliance Validation](https://docs.aws.amazon.com//controltower/latest/userguide/compliance-validation.html).
++ For more information about how AWS Control Tower helps you maintain compliance with governmental regulations and industry standards, see [Compliance Validation](https://docs.aws.amazon.com/controltower/latest/userguide/compliance-validation.html).
 + For more information about how you can verify AWS Control Tower resource compliance during CloudFormation stack creation, see this blog post, [How AWS Control Tower users can proactively verify compliance in AWS CloudFormationstacks](https://aws.amazon.com/blogs/mt/how-aws-control-tower-users-can-proactively-verify-compliance-in-aws-cloudformation-stacks/).
 
 For ongoing governance, administrators can enable pre-configured controls—clearly defined rules for security, operations, and compliance. These controls can:

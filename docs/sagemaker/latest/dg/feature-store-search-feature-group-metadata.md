@@ -14,8 +14,6 @@ The following table shows the searchable fields and whether you can use the cons
 
 You can search for features using either Amazon SageMaker Studio Classic or the [`Search`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Search.html) operation in the SageMaker API. The following table lists all of the searchable metadata and whether you can search for it in the console. Tags are searchable for your own feature groups but are not searchable for feature groups made discoverable to you.
 
-****
-
 | Searchable metadata | API field name | Searchable in the console? | Searchable with cross account? |
 | --- | --- | --- | --- |
 | All Tags | AllTags | Yes | No |

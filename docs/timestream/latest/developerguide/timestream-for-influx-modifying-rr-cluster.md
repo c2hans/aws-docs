@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/timestream/latest/developerguide/timestream-for-influx-modifying-rr-cluster.html
 ---
 
-For similar capabilities to Amazon Timestream for LiveAnalytics, consider Amazon Timestream for InfluxDB. It offers simplified data ingestion and single-digit millisecond query response times for real-time analytics. Learn more [here](https://docs.aws.amazon.com//timestream/latest/developerguide/timestream-for-influxdb.html).
+For similar capabilities to Amazon Timestream for LiveAnalytics, consider Amazon Timestream for InfluxDB. It offers simplified data ingestion and single-digit millisecond query response times for real-time analytics. Learn more [here](https://docs.aws.amazon.com/timestream/latest/developerguide/timestream-for-influxdb.html).
 
 # Modifying a read replica cluster for Amazon Timestream for InfluxDB
 <a name="timestream-for-influx-modifying-rr-cluster"></a>
@@ -58,8 +58,6 @@ aws timestream-influxdb update-db-cluster \
 <a name="timestream-for-influx-rr-modify-settings"></a>
 
 For details about settings that you can use to modify a read replica cluster, see the following table. For more information about the AWS CLI options, see [update-db-cluster](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/timestream-influxdb/update-db-cluster.html).
-
-****
 
 | Console setting | Setting description | CLI option and Timestream for InfluxDB API parameter |
 | --- | --- | --- |

@@ -31,7 +31,7 @@ The following video demonstrates movements around the 3D point cloud and in the 
 
 ![Gif showing movements around the 3D point cloud showing a street scene.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/pointcloud/gifs/object_tracking/nav_general_UI.gif)
 
-Additional view options and features are available. See the [worker instruction page](https://docs.aws.amazon.com//sagemaker/latest/dg/sms-point-cloud-worker-instructions-object-tracking.html) for a comprehensive overview of the Worker UI.
+Additional view options and features are available. See the [worker instruction page](https://docs.aws.amazon.com/sagemaker/latest/dg/sms-point-cloud-worker-instructions-object-tracking.html) for a comprehensive overview of the Worker UI.
 
 ## Worker tools
 <a name="sms-point-cloud-object-tracking-worker-tools"></a>

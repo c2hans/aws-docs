@@ -16,8 +16,6 @@ You can add searchable parameters and descriptions to make your features more di
 
 You can search for features using either the console or by using the [`Search`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Search.html) API operation in SageMaker AI. The following table lists all of the searchable metadata and whether you can search for it in the console or with the API.
 
-****
-
 | Searchable metadata | API field name | Searchable in the console? |
 | --- | --- | --- |
 | All Parameters | AllParameters | Yes |

@@ -54,7 +54,7 @@ Audit notifications that are triggered within a member account also can send ale
 
 For more information about the roles and resources available in the audit account, see [Audit account resources](shared-account-resources.md#audit-account-resources).
 
-For more information about programmatic auditing, see [Programmatic roles and trust relationships for the AWS Control Tower audit account](https://docs.aws.amazon.com//controltower/latest/userguide/roles-how.html#stacksets-and-roles).
+For more information about programmatic auditing, see [Programmatic roles and trust relationships for the AWS Control Tower audit account](https://docs.aws.amazon.com/controltower/latest/userguide/roles-how.html#stacksets-and-roles).
 
 **Important**
 The email address you provide for the audit account receives **AWS Notification - Subscription Confirmation** emails from every AWS Region supported by AWS Control Tower. To receive compliance emails in your audit account, you must choose the **Confirm subscription** link within each email from each AWS Region supported by AWS Control Tower.

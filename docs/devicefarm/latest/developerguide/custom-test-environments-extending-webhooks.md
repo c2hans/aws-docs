@@ -28,6 +28,6 @@ phases:
 **Note**
 Maintaining any API keys or other authentication tokens used in your test package is your responsibility. We recommend that you keep any form of security credential out of source control, use credentials with the fewest possible privileges, and use revokable, short-lived tokens whenever possible. To verify security requirements, see the documentation for the third-party APIs that you use.
 
-If you plan on using AWS services as a part of your test execution suite, you should use IAM temporary credentials, generated outside of your test suite and included in your test package. These credentials should have the fewest granted permissions and shortest lifespan possible. For more information on creating temporary credentials, see [Requesting temporary security credentials](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_credentials_temp_request.html) in the *IAM User Guide*.
+If you plan on using AWS services as a part of your test execution suite, you should use IAM temporary credentials, generated outside of your test suite and included in your test package. These credentials should have the fewest granted permissions and shortest lifespan possible. For more information on creating temporary credentials, see [Requesting temporary security credentials](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_request.html) in the *IAM User Guide*.
 
 For more ways to extend your test suite and optimize your tests, see [Extending custom test environments in Device Farm](custom-test-environments-extending.md).

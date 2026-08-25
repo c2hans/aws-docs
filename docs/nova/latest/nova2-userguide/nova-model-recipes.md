@@ -60,8 +60,6 @@ cd recipes_collection/recipes/
 
 The Amazon Nova customization recipes are in the following folders.
 
-****
-
 | Recipe type | Folder |
 | --- | --- |
 | SFT (Full-rank and PEFT) | [fine-tuning/nova](https://github.com/aws/sagemaker-hyperpod-recipes/tree/main/recipes_collection/recipes/fine-tuning/nova) |
@@ -76,7 +74,7 @@ To access specialized Amazon Nova Forge recipes for SageMaker HyperPod jobs, ple
 ## Available models and algorithms
 <a name="nova-model-algorithm"></a>
 
-The following table summarizes the availability of customization for Amazon Nova 2.0 models and supported algorithms using SageMaker. For Amazon Nova 1.0 model customization, see the [Amazon Nova 1.0 recipes](https://docs.aws.amazon.com//nova/latest/userguide/nova-model-recipes.html).
+The following table summarizes the availability of customization for Amazon Nova 2.0 models and supported algorithms using SageMaker. For Amazon Nova 1.0 model customization, see the [Amazon Nova 1.0 recipes](https://docs.aws.amazon.com/nova/latest/userguide/nova-model-recipes.html).
 
 | Model name | Model ID | Fine-tuning | Notes |
 | --- |--- |--- |--- |
@@ -86,8 +84,6 @@ The following table summarizes the availability of customization for Amazon Nova
 <a name="nova-model-recipes-reference-novalite2"></a>
 
 The table below lists detailed information of the Amazon Nova 2.0 Lite recipes reference. Scroll horizontally to view the full table, including Image URIs and compute instance types.
-
-****
 
 | Model | Category/Sub-category | Technique | Recipe Name | Image URI (Training Jobs) | Image URI (SageMaker HyperPod) | Compute Instance |
 | --- | --- | --- | --- | --- | --- | --- |

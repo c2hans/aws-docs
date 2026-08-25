@@ -136,7 +136,8 @@ This policy grants necessary permissions to the Amazon EBS CSI Driver Operator t
  **Permissions details**
 
 This policy includes the following permissions that allow the Amazon EBS Driver Operator to complete the following tasks:
-+  `ec2` — Create, modify, attach, detach, and delete Amazon EBS volumes that are attached to Amazon EC2 instances. Create and delete Amazon EBS volume snapshots and list Amazon EC2 instances, volumes, and snapshots.
++  `ec2` – Create, modify, attach, detach, and delete Amazon EBS volumes on Amazon EC2 instances. Create, delete, and copy Amazon EBS volume snapshots. Lock snapshots for immutability and compliance use cases. Enable fast snapshot restores for quicker volume creation from snapshots. Add and remove tags on ROSA-managed and customer-designated Amazon EBS volumes, snapshots, and instances. Describe Amazon EC2 instances, volumes, snapshots, instance types, and Availability Zones.
++  `kms` – Read an AWS KMS key for encrypted Amazon EBS volumes. Decrypt and re-encrypt Amazon EBS volume data using customer-managed AWS KMS keys. Generate data encryption keys for new encrypted volumes. Create grants that delegate AWS KMS operations to Amazon EC2 for volume and snapshot lifecycle management. These permissions apply only to AWS KMS keys that you designate for ROSA use.
 
 To view the full JSON policy document, see [ROSAAmazonEBSCSIDriverOperatorPolicy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ROSAAmazonEBSCSIDriverOperatorPolicy.html) in the * AWS Managed Policy Reference Guide*.
 
@@ -275,6 +276,7 @@ View details about updates to AWS managed policies for ROSA since this service b
 
 | Change | Description | Date |
 | --- | --- | --- |
+| ROSAAmazonEBSCSIDriverOperatorPolicy — Policy updated | We updated ROSAAmazonEBSCSIDriverOperatorPolicy to extend the Amazon EBS CSI driver to the release-1.61 feature set. With this update, the Amazon EBS CSI Driver Operator can copy and lock Amazon EBS snapshots and enable fast snapshot restores. It can also use customer-managed AWS KMS keys for encrypted volume operations. To learn more, see [AWS managed policy: ROSAAmazonEBSCSIDriverOperatorPolicy](#security-iam-awsmanpol-rosaamazonebscsidriveroperatorpolicy). | August 18, 2026 |
 | ROSANodePoolManagementPolicy — Policy updated |  AWS updated ROSANodePoolManagementPolicy so the NodePool controller can describe EC2 instance types and handle spot-instance interruption messages from customer-tagged Amazon SQS queues. These SQS actions apply only to queues that carry the `red-hat: "true"` resource tag. To learn more, see [AWS managed policy: ROSANodePoolManagementPolicy](#security-iam-awsmanpol-rosanodepoolmanagementpolicy). | July 28, 2026 |
 | ROSAControlPlaneOperatorPolicy — Policy updated |  AWS updated ROSAControlPlaneOperatorPolicy. With this update, the Control Plane Operator can add and remove tags on Red Hat-managed security groups (`ec2:DeleteTags`). A safeguard prevents the operator from removing the `red-hat-managed` tag itself. To learn more, see [AWS managed policy: ROSAControlPlaneOperatorPolicy](#security-iam-awsmanpol-rosacontrolplaneoperatorpolicy). | July 28, 2026 |
 | ROSAKarpenterControllerPolicy — New policy added |  AWS released a new policy to enable the Karpenter controller to dynamically provision, scale, and manage EC2 worker nodes for ROSA with hosted control planes clusters. To learn more, see [AWS managed policy: ROSAKarpenterControllerPolicy](#security-iam-awsmanpol-rosakarpentercontrollerpolicy). | July 22, 2026 |

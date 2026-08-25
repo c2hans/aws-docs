@@ -7,8 +7,6 @@ This is an earlier version of the AWS Well-Architected Framework. For the latest
 # COST08-BP02 Select components to optimize data transfer cost
 <a name="cost_data_transfer_optimized_components"></a>
 
-****
-
 |  |
 | --- |
 | This best practice was updated with new guidance on December 6, 2023. |

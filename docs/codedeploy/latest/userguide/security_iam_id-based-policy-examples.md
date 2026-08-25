@@ -17,8 +17,6 @@ In CodeDeploy, identity-based policies are used to manage permissions to the var
 
 The capabilities controlled by resource policies vary depending on the resource type, as outlined in the following table:
 
-****
-
 |  Resource types  |  Capabilities  |
 | --- | --- |
 | All | View and list details about resources |

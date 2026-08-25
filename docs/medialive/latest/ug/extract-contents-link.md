@@ -9,8 +9,6 @@ The content in an AWS Elemental Link source is always a transport stream (TS) th
 
 Obtain identifying information from the content provider.
 
-****
-
 - **Video**
   - **Details:** You don't need identifying information. MediaLive always extracts the single video asset.
   - **Format of information to obtain:** None

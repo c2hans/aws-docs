@@ -12,8 +12,6 @@ This section contains release notes for AWS SCT, starting with version 1.0.640.
 
 Release notes for AWS Schema Conversion Tool.
 
-****
-
 | Source | Target | What's new, enhanced, or fixed | Availability in AWS DMS Schema Conversion Tool (SCT) | Availability in AWS DMS Schema Conversion |
 | --- | --- | --- | --- | --- |
 | All | All | Java update from version 11 to version 17. | Yes | Yes |

@@ -14,7 +14,7 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/choose-client-
 
 For instructions on migrating from Client SDK 3 to Client SDK 5, see [Migrating from AWS CloudHSM Client SDK 3 to Client SDK 5](client-sdk-migration.md).
 
-This topic describes Client SDK 3. To see what version of Client SDK you're using, see [Check your AWS CloudHSM Client SDK versionTo check the client daemon version](check-client_version.md).
+This topic describes Client SDK 3. To see what version of Client SDK you're using, see [Check your AWS CloudHSM Client SDK version](check-client_version.md).
 
 To download, see [Downloads for AWS CloudHSM Client SDK](client-history.md).
 

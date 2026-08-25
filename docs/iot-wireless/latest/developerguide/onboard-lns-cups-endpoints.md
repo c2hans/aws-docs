@@ -17,7 +17,7 @@ The CUPS endpoints are of the format `{{account-specific-prefix}}.cups.lorawan.{
 
 For more information, see [Using CUPS and LNS protocols](lorawan-manage-gateways.md#lorawan-cups-lns-protocols).
 
-To find the Data Plane API endpoints for your AWS account and Region, use the [**get-service-endpoint**](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotwireless/get-service-endpoint.html) CLI command shown here, or the [`GetServiceEndpoint`](https://docs.aws.amazon.com//iotwireless/latest/apireference/API_GetServiceEndpoint.html) REST API. For more information, see [AWS IoT Core for LoRaWAN Data Plane API Endpoints](https://docs.aws.amazon.com/general/latest/gr/iot-core.html#iot-core.html#iot-wireless-data-plane-endpoints).
+To find the Data Plane API endpoints for your AWS account and Region, use the [**get-service-endpoint**](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotwireless/get-service-endpoint.html) CLI command shown here, or the [`GetServiceEndpoint`](https://docs.aws.amazon.com/iotwireless/latest/apireference/API_GetServiceEndpoint.html) REST API. For more information, see [AWS IoT Core for LoRaWAN Data Plane API Endpoints](https://docs.aws.amazon.com/general/latest/gr/iot-core.html#iot-core.html#iot-wireless-data-plane-endpoints).
 
 You can connect your LoRaWAN gateway on premises to communicate with AWS IoT Core for LoRaWAN endpoints. To establish this connection, first connect your on premises gateway to your AWS account in your VPC by using a VPN connection. You can then communicate with the data plane interface endpoints in the AWS IoT Core for LoRaWAN VPC that are powered by privatelink.
 

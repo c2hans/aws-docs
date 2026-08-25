@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/add-chat-to-we
 
 To support your customers through chat, you can add a communications widget to your website that is hosted by Connect Customer. You can configure the communications widget in the Connect Customer admin website. You can customize the font and colors, and secure the widget so that it can be launched only from your website. When finished, you will have a short code snippet that you add to your website.
 
-Because Connect Customer hosts the widget, it ensures that the latest version is always live on your website.
+Because Connect Customer hosts the widget, it makes sure that the latest version is always live on your website.
 
 **Tip**
 Use of the communications widget is subject to default service quotas, such as the number of required characters for each message. Before launching your communications widget into production, make sure that your service quotas are set for your organization's needs. For more information, see [Connect Customer service quotas](amazon-connect-service-limits.md).

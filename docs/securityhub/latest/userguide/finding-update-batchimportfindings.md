@@ -5,9 +5,9 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/finding-upd
 # BatchImportFindings for finding providers
 <a name="finding-update-batchimportfindings"></a>
 
-Finding providers can use the [BatchImportFindings](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_BatchImportFindings.html) operation to create new findings in AWS Security Hub CSPM. They can also use this operation to update findings that they created. Finding providers can't update findings that they didn't create.
+Finding providers can use the [BatchImportFindings](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html) operation to create new findings in AWS Security Hub CSPM. They can also use this operation to update findings that they created. Finding providers can't update findings that they didn't create.
 
-Customers, SIEMs, ticketing, SOAR, and other types of tools must use the [BatchUpdateFindings](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_BatchUpdateFindings.html) operation to make updates related to their investigation of findings from finding providers. For more information, see [BatchUpdateFindings for customers](finding-update-batchupdatefindings.md).
+Customers, SIEMs, ticketing, SOAR, and other types of tools must use the [BatchUpdateFindings](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateFindings.html) operation to make updates related to their investigation of findings from finding providers. For more information, see [BatchUpdateFindings for customers](finding-update-batchupdatefindings.md).
 
 When Security Hub CSPM receives a `BatchImportFindings` request to create or update a finding, it automatically generates a **Security Hub Findings - Imported** event in Amazon EventBridge. You can take automated action on that event. For more information, see [Using EventBridge for automated response and remediation](securityhub-cloudwatch-events.md).
 

@@ -51,8 +51,6 @@ The events with event code `EC2 provisioning - Insufficient Instance Capacity` p
 **Note**
 The instance fleets configuration is available only in Amazon EMR releases 4.8.0 and later, excluding 5.0.0 and 5.0.3.
 
-****
-
 | State or state change | Severity | Event type | Event code | Message |
 | --- | --- | --- | --- | --- |
 | From `PROVISIONING` to `WAITING` | INFO  |  | none | Provisioning for instance fleet `InstanceFleetID` in Amazon EMR cluster `ClusterId (ClusterName)` is complete. Provisioning started at `Time` and took `Num` minutes. The instance fleet now has On-Demand capacity of `Num` and Spot capacity of `Num`. Target On-Demand capacity was `Num`, and target Spot capacity was `Num`. |
@@ -67,8 +65,6 @@ The instance fleets configuration is available only in Amazon EMR releases 4.8.0
 ## Instance fleet reconfiguration events
 <a name="emr-cloudwatch-instance-fleet-events-reconfig"></a>
 
-****
-
 | State or state change | Severity | Message |
 | --- | --- | --- |
 | Instance Fleet Reconfiguration Requested | INFO  | A user has requested to reconfigure the instance fleet `InstanceFleetID` in Amazon EMR cluster `ClusterId` (`ClusterName`). |
@@ -82,8 +78,6 @@ The instance fleets configuration is available only in Amazon EMR releases 4.8.0
 
 ## Instance fleet resize events
 <a name="emr-cloudwatch-instance-fleet-resize-events"></a>
-
-****
 
 | Event type | Severity | Event code | Message |
 | --- | --- | --- | --- |
@@ -103,8 +97,6 @@ The provisioning timeout events are emitted when Amazon EMR stops provisioning S
 ## Instance group events
 <a name="emr-cloudwatch-instance-group-events"></a>
 
-****
-
 | Event type | Severity | Event code | Message |
 | --- | --- | --- | --- |
 | From `RESIZING` to `Running` | INFO  | none | The resizing operation for instance group `InstanceGroupID` in Amazon EMR cluster `ClusterId (ClusterName)` is complete. It now has an instance count of `Num`. The resize started at `Time` and took `Num` minutes to complete. |
@@ -123,8 +115,6 @@ With Amazon EMR version 5.21.0 and later, you can override cluster configuration
 
 The following table lists Amazon EMR events for the reconfiguration operation, along with the state or state change that the event indicates, the severity of the event, and event messages.
 
-****
-
 | State or state change | Severity | Message |
 | --- | --- | --- |
 | RUNNING  | INFO  | A reconfiguration for instance group `InstanceGroupID` in the Amazon EMR cluster `ClusterId (ClusterName)` was initiated by user at `Time`. Version of requested configuration is `Num`. |
@@ -140,8 +130,6 @@ The following table lists Amazon EMR events for the reconfiguration operation, a
 ## Automatic scaling policy events
 <a name="emr-cloudwatch-autoscale-events"></a>
 
-****
-
 | State or state change | Severity | Message |
 | --- | --- | --- |
 | PENDING  | INFO  | An Auto Scaling policy was added to instance group `InstanceGroupID` in Amazon EMR cluster `ClusterId (ClusterName)` at `Time`. The policy is pending attachment.<br />- or - <br />The Auto Scaling policy for instance group `InstanceGroupID` in Amazon EMR cluster `ClusterId (ClusterName)` was updated at `Time`. The policy is pending attachment. |
@@ -151,8 +139,6 @@ The following table lists Amazon EMR events for the reconfiguration operation, a
 
 ## Step events
 <a name="emr-cloudwatch-step-events"></a>
-
-****
 
 | State or state change | Severity | Message |
 | --- | --- | --- |

@@ -9,12 +9,12 @@ source_url: https://docs.aws.amazon.com/redshift/latest/gsg/new-user.html
 
 If you are a first-time user of Amazon Redshift, we recommend that you read the following sections to help you get started using provisioned clusters. The basic flow of Amazon Redshift is to create provisioned resources, connect to Amazon Redshift, load sample data, and then run queries on the data. In this guide, you can choose to load sample data from Amazon Redshift or from an Amazon S3 bucket. The sample data is used throughout the Amazon Redshift documentation to demonstrate features.
 
- This tutorial demonstrates how to use Amazon Redshift provisioned clusters, which are AWS data warehouse objects for which you manage system resources. You can also use Amazon Redshift with serverless workgroups, which are data warehouse objects that scale automatically in response to usage. To get started using Redshift Serverless, see [Get started with Amazon Redshift Serverless data warehousesGet started with serverless data warehouses](new-user-serverless.md).
+ This tutorial demonstrates how to use Amazon Redshift provisioned clusters, which are AWS data warehouse objects for which you manage system resources. You can also use Amazon Redshift with serverless workgroups, which are data warehouse objects that scale automatically in response to usage. To get started using Redshift Serverless, see [Get started with Amazon Redshift Serverless data warehouses](new-user-serverless.md).
 
 After you have created and signed in to the Amazon Redshift provisioned console, you can create and manage Amazon Redshift objects, including clusters, nodes, and databases. You can also run queries, view queries, and perform other SQL data definition language (DDL) and data manipulation language (DML) operations with a SQL client.
 
 **Important**
-The cluster that you provision for this exercise runs in a live environment. As long as it's running, it accrues charges to your AWS account. For pricing information, see the [Amazon Redshift pricing page](https://aws.amazon.com//redshift/pricing/).
+The cluster that you provision for this exercise runs in a live environment. As long as it's running, it accrues charges to your AWS account. For pricing information, see the [Amazon Redshift pricing page](https://aws.amazon.com/redshift/pricing/).
 To avoid unnecessary charges, delete your cluster when you are done with it. The final section of this chapter explains how to do so.
 
 Sign in to the AWS Management Console and open the Amazon Redshift console at [https://console.aws.amazon.com/redshiftv2/](https://console.aws.amazon.com/redshiftv2/).
@@ -56,7 +56,7 @@ In this tutorial, you perform the following steps.
 ## Sign up for an AWS account
 <a name="sign-up-for-aws"></a>
 
-To get started with AWS, you need an AWS account. For information about creating an AWS account, see [Getting started with an AWS account](https://docs.aws.amazon.com//accounts/latest/reference/getting-started.html) in the *AWS Account Management Reference Guide*.
+To get started with AWS, you need an AWS account. For information about creating an AWS account, see [Getting started with an AWS account](https://docs.aws.amazon.com/accounts/latest/reference/getting-started.html) in the *AWS Account Management Reference Guide*.
 
 ## Determine firewall rules
 <a name="rs-gsg-prereq-firewall-rules"></a>

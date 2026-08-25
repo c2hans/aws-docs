@@ -54,8 +54,6 @@ If you want to restrict the user to specific email addresses, you can use a `Con
 **Note**
 These email address condition keys apply only to the APIs noted in the following table.
 
-****
-
 | Condition Key | Description | API |
 | --- | --- | --- |
 | `ses:Recipients` | Restricts the recipient addresses, which include the To:, "CC", and "BCC" addresses. | `SendEmail`, `SendRawEmail` |

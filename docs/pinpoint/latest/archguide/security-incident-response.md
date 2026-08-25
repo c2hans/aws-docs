@@ -25,4 +25,4 @@ Many of these checks can help you assess the security posture of your Amazon Pin
 + Accessing permissions for your Amazon Simple Storage Service (Amazon S3) buckets, which might contain files that you import into Amazon Pinpoint to build segments.
 + Using AWS Identity and Access Management (IAM) users, groups, and roles to control access to Amazon Pinpoint resources.
 + Identifying IAM configurations and policy settings that might compromise the security of your AWS environment and Amazon Pinpoint resources.
-For more information, see [AWS Trusted Advisor](https://docs.aws.amazon.com//awssupport/latest/user/trusted-advisor.html) in the *Support User Guide*.
+For more information, see [AWS Trusted Advisor](https://docs.aws.amazon.com/awssupport/latest/user/trusted-advisor.html) in the *Support User Guide*.

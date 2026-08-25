@@ -20,8 +20,6 @@ To build a AWS Panorama application, you use Docker, command-line tools, and Pyt
 <a name="applications-devenvwindows-prerequisites"></a>
 
 To follow this tutorial, you need a version of Windows that supports Windows Subsystem for Linux 2 (WSL 2).
-
-****
 + Windows 10 version 1903 and higher (Build 18362 and higher) or Windows 11
 + Windows features
   + Windows Subsystem for Linux
@@ -29,8 +27,6 @@ To follow this tutorial, you need a version of Windows that supports Windows Sub
   + Virtual machine platform
 
 This tutorial was developed with the following software versions.
-
-****
 + Ubuntu 20.04
 + Python 3.8.5
 + Docker 20.10.8

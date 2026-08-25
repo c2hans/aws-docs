@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ad_d
 # AWS Directory Service Data attributes
 <a name="ad_data_attributes"></a>
 
- This topic describes how to work with attributes in the [AWS Directory Service Data API Reference](https://docs.aws.amazon.com//directoryservicedata/latest/DirectoryServiceDataAPIReference/Welcome.html).
+ This topic describes how to work with attributes in the [AWS Directory Service Data API Reference](https://docs.aws.amazon.com/directoryservicedata/latest/DirectoryServiceDataAPIReference/Welcome.html).
 
 ## Request Attributes
 <a name="ad_data-attributes-request"></a>

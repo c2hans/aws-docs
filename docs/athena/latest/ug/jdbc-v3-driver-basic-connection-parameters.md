@@ -12,8 +12,6 @@ The following sections describe the basic connection parameters for the JDBC 3.x
 
 The AWS Region where queries will be run. For a list of regions, see [Amazon Athena endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/athena.html).
 
-****
-
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
 | Region | AwsRegion (deprecated) | Mandatory (but if not provided, will be searched using the [DefaultAwsRegionProviderChain](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/regions/providers/DefaultAwsRegionProviderChain.html))  | none |
@@ -22,8 +20,6 @@ The AWS Region where queries will be run. For a list of regions, see [Amazon Ath
 <a name="jdbc-v3-driver-catalog"></a>
 
 The catalog that contains the databases and the tables that will be accessed with the driver. For information about catalogs, see [DataCatalog](https://docs.aws.amazon.com/athena/latest/APIReference/API_DataCatalog.html).
-
-****
 
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
@@ -34,8 +30,6 @@ The catalog that contains the databases and the tables that will be accessed wit
 
 The database where queries will run. Tables that are not explicitly qualified with a database name are resolved to this database. For information about databases, see [Database](https://docs.aws.amazon.com/athena/latest/APIReference/API_Database.html).
 
-****
-
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
 | Database | Schema | Optional | default |
@@ -45,8 +39,6 @@ The database where queries will run. Tables that are not explicitly qualified wi
 
 The workgroup in which queries will run. For information about workgroups, see [WorkGroup](https://docs.aws.amazon.com/athena/latest/APIReference/API_WorkGroup.html).
 
-****
-
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
 | WorkGroup | none | Optional | primary |
@@ -55,8 +47,6 @@ The workgroup in which queries will run. For information about workgroups, see [
 <a name="jdbc-v3-driver-output-location"></a>
 
 The location in Amazon S3 where query results will be stored. For information about output location, see [ResultConfiguration](https://docs.aws.amazon.com/athena/latest/APIReference/API_ResultConfiguration.html).
-
-****
 
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |

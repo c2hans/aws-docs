@@ -45,7 +45,7 @@ This error is caused by misconfigured DNS records, or DNS records that have not 
 
 **Fix**
 Confirm that the **A** or **AAAA** DNS records are present in the DNS zone, and that they point to the public IP address of your instance. For more information, see [DNS in Lightsail](understanding-dns-in-amazon-lightsail.md).
-When you add or update DNS records that point traffic from your apex domain (`example.com`) and its `www` subdomains (`www.example.com`), they will need to propagate throughout the Internet's DNS. You can verify that your DNS changes have taken effect by using tools such as [nslookup](https://aws.amazon.com/blogs//messaging-and-targeting/how-to-check-your-domain-verification-settings/), or [DNS Lookup](https://mxtoolbox.com/DnsLookup.aspx) from *MxToolbox*.
+When you add or update DNS records that point traffic from your apex domain (`example.com`) and its `www` subdomains (`www.example.com`), they will need to propagate throughout the Internet's DNS. You can verify that your DNS changes have taken effect by using tools such as [nslookup](https://aws.amazon.com/blogs/messaging-and-targeting/how-to-check-your-domain-verification-settings/), or [DNS Lookup](https://mxtoolbox.com/DnsLookup.aspx) from *MxToolbox*.
 Allow time for any DNS record changes to propagate through the internet's DNS, which may take several hours.
 
 ## DNS records do not match. Confirm that the domain's DNS records point to the public IP address of your instance, and allow time for DNS changes to propagate.
@@ -104,7 +104,7 @@ This error is caused by misconfigured DNS records, or DNS records that have not 
 
 **Fix**
 Verify that the **A** or **AAAA** DNS records are present in the DNS zone, and that they point to the public IP address of your instance. For more information, see [DNS in Lightsail](understanding-dns-in-amazon-lightsail.md).
-When you add or update DNS records that point traffic from your apex domain (`example.com`) and its `www` subdomains (`www.example.com`), they will need to propagate throughout the Internet. You can verify that your DNS changes have taken effect by using tools such as [nslookup](https://aws.amazon.com/blogs//messaging-and-targeting/how-to-check-your-domain-verification-settings/), or [DNS Lookup](https://mxtoolbox.com/DnsLookup.aspx) from *MxToolbox*.
+When you add or update DNS records that point traffic from your apex domain (`example.com`) and its `www` subdomains (`www.example.com`), they will need to propagate throughout the Internet. You can verify that your DNS changes have taken effect by using tools such as [nslookup](https://aws.amazon.com/blogs/messaging-and-targeting/how-to-check-your-domain-verification-settings/), or [DNS Lookup](https://mxtoolbox.com/DnsLookup.aspx) from *MxToolbox*.
 Allow time for any DNS record changes to propagate through the internet's DNS, which may take several hours.
 
 ## Certbot failed to authenticate some domains

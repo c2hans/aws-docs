@@ -8,9 +8,9 @@ End of support notice: On June 30, 2027, AWS will end support for AWS re:Post Pr
 <a name="repost-manage-permissions"></a>
 
 You must create an AWS Identity and Access Management (IAM) role to manage access to Support case creation and management from AWS re:Post Private. This role performs the following Support actions for you:
-+ [CreateCase](https://docs.aws.amazon.com//awssupport/latest/APIReference/API_CreateCase.html)
-+ [AddCommunicationToCase](https://docs.aws.amazon.com//awssupport/latest/APIReference/API_AddCommunicationToCase.html)
-+ [ResolveCase](https://docs.aws.amazon.com//awssupport/latest/APIReference/API_ResolveCase.html)
++ [CreateCase](https://docs.aws.amazon.com/awssupport/latest/APIReference/API_CreateCase.html)
++ [AddCommunicationToCase](https://docs.aws.amazon.com/awssupport/latest/APIReference/API_AddCommunicationToCase.html)
++ [ResolveCase](https://docs.aws.amazon.com/awssupport/latest/APIReference/API_ResolveCase.html)
 
 After you create the IAM role, attach an IAM policy to this role so that the role has the required permissions to complete these actions. You choose this role when you create your private re:Post in the re:Post Private console.
 
@@ -156,7 +156,7 @@ After you create the policy, you must create an IAM role, and then attach the po
 
 1. Review the trust policy and permissions.
 
-1. (Optional) You can use tags as key–value pairs to add metadata to the role. For more information about using tags in IAM, see [Tagging IAM resources](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_tags.html).
+1. (Optional) You can use tags as key–value pairs to add metadata to the role. For more information about using tags in IAM, see [Tagging IAM resources](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_tags.html).
 
 1. Choose **Create role**. You can now choose this role when you configure a private re:Post in the re:Post Private console. See [Create a new private re:Post](create-new-repost.md).
 

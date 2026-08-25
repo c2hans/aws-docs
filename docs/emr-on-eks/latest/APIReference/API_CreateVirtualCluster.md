@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_Creat
 # CreateVirtualCluster
 <a name="API_CreateVirtualCluster"></a>
 
-Creates a virtual cluster. Virtual cluster is a managed entity on Amazon EMR on EKS. You can create, describe, list and delete virtual clusters. They do not consume any additional resource in your system. A single virtual cluster maps to a single Kubernetes namespace. Given this relationship, you can model virtual clusters the same way you model Kubernetes namespaces to meet your requirements.
+Creates a virtual cluster. Virtual cluster is a managed entity on Amazon EMR on EKS. You can create, update, describe, list and delete virtual clusters. They do not consume any additional resource in your system. A single virtual cluster maps to a single Kubernetes namespace. Given this relationship, you can model virtual clusters the same way you model Kubernetes namespaces to meet your requirements.
 
 ## Request Syntax
 <a name="API_CreateVirtualCluster_RequestSyntax"></a>
@@ -22,7 +22,12 @@ Content-type: application/json
       "type": "{{string}}"
    },
    "name": "{{string}}",
+   "schedulerConfiguration": {
+      "maxConcurrentJobRuns": {{number}},
+      "maxInQueueJobRuns": {{number}}
+   },
    "securityConfigurationId": "{{string}}",
+   "sessionEnabled": {{boolean}},
    "tags": {
       "{{string}}" : "{{string}}"
    }
@@ -58,11 +63,21 @@ Length Constraints: Minimum length of 1. Maximum length of 64.
 Pattern: `[\.\-_/#A-Za-z0-9]+`
 Required: Yes
 
+ ** [schedulerConfiguration](#API_CreateVirtualCluster_RequestSyntax) **   <a name="emroneks-CreateVirtualCluster-request-schedulerConfiguration"></a>
+The scheduler configuration (concurrency and queue limits) to apply to the virtual cluster at creation time. When omitted, no limits are applied.
+Type: [SchedulerConfiguration](API_SchedulerConfiguration.md) object
+Required: No
+
  ** [securityConfigurationId](#API_CreateVirtualCluster_RequestSyntax) **   <a name="emroneks-CreateVirtualCluster-request-securityConfigurationId"></a>
 The ID of the security configuration.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
 Pattern: `[0-9a-z]+`
+Required: No
+
+ ** [sessionEnabled](#API_CreateVirtualCluster_RequestSyntax) **   <a name="emroneks-CreateVirtualCluster-request-sessionEnabled"></a>
+Indicates whether the virtual cluster has session support enabled.
+Type: Boolean
 Required: No
 
  ** [tags](#API_CreateVirtualCluster_RequestSyntax) **   <a name="emroneks-CreateVirtualCluster-request-tags"></a>

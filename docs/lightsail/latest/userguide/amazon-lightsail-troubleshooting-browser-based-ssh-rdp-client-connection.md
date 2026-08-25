@@ -7,6 +7,8 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 
 You might get an error message when trying to connect to an instance using the browser-based SSH or RDP clients available in the Amazon Lightsail console. The possible reasons for this error are discussed in the following sections.
 
+If you get a numeric error code (for example, 515 or 519) when connecting through the browser, see [Troubleshoot Lightsail Connect errors](amazon-lightsail-troubleshooting-connect-errors.md).
+
 ## Error message: Can’t connect
 <a name="error-cant-connect-reset-record"></a>
 

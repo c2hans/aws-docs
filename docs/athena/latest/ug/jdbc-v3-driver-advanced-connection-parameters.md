@@ -33,8 +33,6 @@ Note the following points:
 
 The type of encryption to be used for query results as they are stored in Amazon S3. For information about query result encryption, see [EncryptionConfiguration](https://docs.aws.amazon.com/athena/latest/APIReference/API_EncryptionConfiguration.html) in the *Amazon Athena API Reference*.
 
-****
-
 | Parameter name | Alias | Parameter type | Default value | Possible values |
 | --- | --- | --- | --- | --- |
 | EncryptionOption | S3OutputEncOption (deprecated) | Optional | none | SSE\_S3, SSE\_KMS, CSE\_KMS |
@@ -43,8 +41,6 @@ The type of encryption to be used for query results as they are stored in Amazon
 <a name="jdbc-v3-driver-kms-key"></a>
 
 The KMS key ARN or ID, if `SSE_KMS` or `CSE_KMS` is chosen as the encryption option. For more information, see [EncryptionConfiguration](https://docs.aws.amazon.com/athena/latest/APIReference/API_EncryptionConfiguration.html) in the *Amazon Athena API Reference*.
-
-****
 
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
@@ -62,8 +58,6 @@ The default result fetcher, `auto`, downloads query results directly from Amazon
 
 Using the `auto` fetcher is recommended in most situations. If your IAM policies, or S3 bucket policies use the [s3:CalledVia](security-iam-athena-calledvia.md) condition to limit access to S3 objects requests from Athena, the `auto` fetcher first attempts to download the results from S3 and then falls back to use the `GetQueryResultsStream` API. In this situation, you can set the ResultFetcher to `GetQueryResultsStream` to avoid an extra API call.
 
-****
-
 | Parameter name | Alias | Parameter type | Default value | Possible values |
 | --- | --- | --- | --- | --- |
 | ResultFetcher | none | Optional | auto | auto, S3, GetQueryResults, GetQueryResultsStream |
@@ -72,8 +66,6 @@ Using the `auto` fetcher is recommended in most situations. If your IAM policies
 <a name="jdbc-v3-driver-fetch-size"></a>
 
 The value of this parameter is used as the minimum for internal buffers and as the target page size when fetching results. The value 0 (zero) means that the driver should use its defaults as described below. The maximum value is 1,000,000.
-
-****
 
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
@@ -90,8 +82,6 @@ The value of this parameter is used as the minimum for internal buffers and as t
 
 The account ID of the expected s3 bucket owner. If the account ID that you provide does not match the actual owner of the bucket, the request fails. For more information about verifying s3 bucket owner, see [Verifying bucket ownership](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-owner-condition.html#bucket-owner-condition-use).
 
-****
-
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
 | ExpectedBucketOwner | none | Optional | none |
@@ -100,8 +90,6 @@ The account ID of the expected s3 bucket owner. If the account ID that you provi
 <a name="jdbc-v3-driver-acl"></a>
 
 Indicates that an Amazon S3 canned ACL should be set to control ownership of stored query results. For more information about `AclOption`, see [AclConfiguration](https://docs.aws.amazon.com/athena/latest/APIReference/API_AclConfiguration.html).
-
-****
 
 | Parameter name | Alias | Parameter type | Default value | Possible values |
 | --- | --- | --- | --- | --- |
@@ -115,8 +103,6 @@ Indicates that an Amazon S3 canned ACL should be set to control ownership of sto
 
 Specifies whether previous results for the same query can be reused when a query is run. For information about query result reuse, see [ResultReuseByAgeConfiguration](https://docs.aws.amazon.com/athena/latest/APIReference/API_ResultReuseByAgeConfiguration.html).
 
-****
-
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
 | EnableResultReuseByAge | none | Optional | FALSE |
@@ -125,8 +111,6 @@ Specifies whether previous results for the same query can be reused when a query
 <a name="jdbc-v3-driver-result-reuse-max-age"></a>
 
 The maximum age, in minutes, of a previous query result that Athena should consider for reuse. For information about result reuse max age, see [ResultReuseByAgeConfiguration](https://docs.aws.amazon.com/athena/latest/APIReference/API_ResultReuseByAgeConfiguration.html).
-
-****
 
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
@@ -140,8 +124,6 @@ The maximum age, in minutes, of a previous query result that Athena should consi
 
 The minimum time, in milliseconds, to wait before polling Athena for the query execution status.
 
-****
-
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
 | MinQueryExecutionPollingIntervalMillis | MinQueryExecutionPollingInterval (deprecated) | Optional | 100 |
@@ -151,8 +133,6 @@ The minimum time, in milliseconds, to wait before polling Athena for the query e
 
 The maximum time, in milliseconds, to wait before polling Athena for the query execution status.
 
-****
-
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
 | MaxQueryExecutionPollingIntervalMillis | MaxQueryExecutionPollingInterval (deprecated) | Optional | 5000 |
@@ -161,8 +141,6 @@ The maximum time, in milliseconds, to wait before polling Athena for the query e
 <a name="jdbc-v3-driver-query-execution-polling-interval-multiplier"></a>
 
 The factor for increasing the polling period. By default, polling will begin with the value for `MinQueryExecutionPollingIntervalMillis` and double with each poll until it reaches the value for `MaxQueryExecutionPollingIntervalMillis`.
-
-****
 
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
@@ -180,8 +158,6 @@ Note the following points:
 + If the `https://` or `http://` protocols are not specified in the provided URL, the driver inserts the `https://` prefix.
 + If this parameter is not specified, the driver uses a default endpoint.
 
-****
-
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
 | AthenaEndpoint | EndpointOverride (deprecated) | Optional | none |
@@ -196,8 +172,6 @@ Note the following points:
 + If a port is not specified in the provided URL, the driver inserts the streaming service port 444.
 + If the `AthenaStreamingEndpoint` parameter is not specified, the driver uses the `AthenaEndpoint` override. If neither the `AthenaStreamingEndpoint` nor the `AthenaEndpoint` override is specified, the driver uses a default streaming endpoint.
 
-****
-
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
 | AthenaStreamingEndpoint | StreamingEndpointOverride (deprecated) | Optional | none |
@@ -209,8 +183,6 @@ The endpoint that the driver will use for the Lake Formation service when using 
 
 Note the following points:
 + If the `https://` or `http://` protocols are not specified in the provided URL, the driver inserts the `https://` prefix.
-
-****
 
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
@@ -224,8 +196,6 @@ The endpoint that the driver will use to download query results when it uses the
 Note the following points:
 + If the `https://` or `http://` protocols are not specified in the provided URL, the driver inserts the `https://` prefix.
 
-****
-
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
 | S3Endpoint | None | Optional | none |
@@ -238,8 +208,6 @@ The endpoint that the driver will use for the AWS STS service when using the AWS
 Note the following points:
 + If the `https://` or `http://` protocols are not specified in the provided URL, the driver inserts the `https://` prefix.
 
-****
-
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
 | StsEndpoint | StsEndpointOverride(deprecated) | Optional | none |
@@ -248,8 +216,6 @@ Note the following points:
 <a name="jdbc-v3-driver-athena-sso-oidc-endpoint-override"></a>
 
 The endpoint that the driver will use when using `ClientConfiguration.endpointOverride` to override the default HTTP endpoint for SSO OIDC client. For more information, see [ClientConfiguration](https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/client-config.html).
-
-****
 
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
@@ -260,8 +226,6 @@ The endpoint that the driver will use when using `ClientConfiguration.endpointOv
 
 The endpoint that the driver will use when using `ClientConfiguration.endpointOverride` to override the default HTTP endpoint for SSO Admin client. For more information, see [ClientConfiguration](https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/client-config.html).
 
-****
-
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
 | SsoAdminEndpoint |  | Optional | none |
@@ -270,8 +234,6 @@ The endpoint that the driver will use when using `ClientConfiguration.endpointOv
 <a name="jdbc-v3-driver-athena-sso-endpoint-override"></a>
 
 The endpoint that the driver will use when using `ClientConfiguration.endpointOverride` to override the default HTTP endpoint for SSO client. For more information, see [ClientConfiguration](https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/client-config.html).
-
-****
 
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
@@ -288,8 +250,6 @@ The URL of the proxy host. Use this parameter if you require Athena requests to 
 **Note**
  Make sure to include the protocol `https://` or `http://` at the beginning of the URL for `ProxyHost`.
 
-****
-
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
 | ProxyHost | none | Optional | none |
@@ -298,8 +258,6 @@ The URL of the proxy host. Use this parameter if you require Athena requests to 
 <a name="jdbc-v3-driver-proxy-port"></a>
 
 The port to be used on the proxy host. Use this parameter if you require Athena requests to go through a proxy.
-
-****
 
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
@@ -310,8 +268,6 @@ The port to be used on the proxy host. Use this parameter if you require Athena 
 
 The username to authenticate on the proxy server. Use this parameter if you require Athena requests to go through a proxy.
 
-****
-
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
 | ProxyUsername | ProxyUID (deprecated) | Optional | none |
@@ -320,8 +276,6 @@ The username to authenticate on the proxy server. Use this parameter if you requ
 <a name="jdbc-v3-driver-proxy-password"></a>
 
 The password to authenticate on the proxy server. Use this parameter if you require Athena requests to go through a proxy.
-
-****
 
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
@@ -332,8 +286,6 @@ The password to authenticate on the proxy server. Use this parameter if you requ
 
 A set of host names that the driver connects to without using a proxy when proxying is enabled (that is, when the `ProxyHost` and `ProxyPort` connection parameters are set). The hosts should be separated by the pipe (`|`) character (for example, `host1.com|host2.com`).
 
-****
-
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
 | ProxyExemptHosts | NonProxyHosts | Optional | none |
@@ -342,8 +294,6 @@ A set of host names that the driver connects to without using a proxy when proxy
 <a name="jdbc-v3-driver-proxy-enabled-for-identity-providers"></a>
 
 Specifies whether a proxy should be used when the driver connects to an identity provider.
-
-****
 
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
@@ -362,8 +312,6 @@ Specifies the level for the driver logging. Nothing is logged unless the `LogPat
 **Note**
 We recommend setting only the `LogPath` parameter unless you have special requirements. Setting only the `LogPath` parameter enables logging and uses the default `TRACE` log level. The `TRACE` log level provides the most detailed logging.
 
-****
-
 | Parameter name | Alias | Parameter type | Default value | Possible values |
 | --- | --- | --- | --- | --- |
 | LogLevel | none | Optional | TRACE | OFF, ERROR, WARN, INFO, DEBUG, TRACE |
@@ -372,8 +320,6 @@ We recommend setting only the `LogPath` parameter unless you have special requir
 <a name="jdbc-v3-driver-logging-parameters-log-path"></a>
 
 The path to a directory on the computer that runs the driver where driver logs will be stored. A log file with a unique name will be created within the specified directory. If set, enables driver logging.
-
-****
 
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
@@ -387,8 +333,6 @@ The name of the application that uses the driver. If a value for this parameter 
 **Note**
 You can also set the application name by calling `setApplicationName` on the `DataSource` object.
 
-****
-
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
 | ApplicationName | none | Optional | none |
@@ -397,8 +341,6 @@ You can also set the application name by calling `setApplicationName` on the `Da
 <a name="jdbc-v3-driver-connection-test"></a>
 
 If set to `TRUE`, the driver performs a connection test each time a JDBC connection is created, even if a query is not executed on the connection.
-
-****
 
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
@@ -412,8 +354,6 @@ A connection test submits a `SELECT 1` query to Athena to verify that the connec
 
 The maximum number of times the driver should resend a retriable request to Athena.
 
-****
-
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
 | NumRetries | MaxErrorRetry (deprecated) | Optional | none |
@@ -422,8 +362,6 @@ The maximum number of times the driver should resend a retriable request to Athe
 <a name="jdbc-v3-driver-networktimeoutmillis"></a>
 
 The network timeout controls the amount of time that the driver waits for a network connection to be established. This includes the time it takes to send API requests. In rare circumstances, it may be useful to change the network timeout. For example, you might want to increase the timeout for long garbage collection pauses. Setting this connection parameter is equivalent to using the `setNetworkTimeout` method on a `Connection` object.
-
-****
 
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |

@@ -7,13 +7,13 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/agentic-voice-
 
 Amazon Connect agentic voice is a next-generation speech experience that delivers expressive voice capabilities and enhanced automatic speech recognition (ASR). It integrates natively with your existing Amazon Connect contact flows and bot configurations.
 
+**Before you begin**
+Make sure that Amazon Connect Customer is enabled for your instance. Amazon Connect agentic voice is the default voice provider for Amazon Connect Customer. Both ASR and voice share the same **Amazon Connect agentic voice** provider selection in their respective configuration panels.
+
 This guide walks you through:
 + Configuring enhanced speech recognition (ASR) for your bots
 + Configuring voice using the Set Voice contact flow block
 + Selecting a language and voice, and previewing audio samples
-
-**Note**
-To use Amazon Connect agentic voice features, make sure Amazon Connect Customer is enabled for your instance. Amazon Connect agentic voice is the default voice provider for Amazon Connect Customer. Both ASR and voice share the same **Amazon Connect agentic voice** provider selection in their respective configuration panels.
 
 ## Advanced Speech Recognition (ASR) configuration
 <a name="agentic-voice-asr-configuration"></a>
@@ -89,7 +89,7 @@ With Amazon Connect agentic voice selected as the provider:
 ### Step 3: Save and publish
 <a name="agentic-voice-set-voice-save-publish"></a>
 
-Once you are satisfied with your selection:
+After you are satisfied with your selection:
 
 1. Choose **Save** to apply the voice configuration to the block.
 

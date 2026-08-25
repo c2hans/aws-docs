@@ -12,8 +12,6 @@ Your AWS account has the following quotas related to User Notifications.
 ## Service quotas
 <a name="quotas_uno"></a>
 
-****
-
 | Name | Default | Adjustable | Description |
 | --- | --- | --- | --- |
 | Notification configurations total for an AWS account | 50 notification configurations. | No | The maximum number of notification configurations that you can create in an AWS account. |

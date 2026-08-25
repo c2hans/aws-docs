@@ -32,7 +32,7 @@ In each **Control details** page of the console, you can find the following deta
 + **Deployable Regions** – Regions in which the control is available to be deployed.
 
 **Note**
- The control **State** and status information is available in the console only. It is not available from the [public API](https://docs.aws.amazon.com//controltower/latest/APIReference/API_Operations.html). To view the status of a control, navigate to the **Control details** page in the AWS Control Tower console.
+ The control **State** and status information is available in the console only. It is not available from the [public API](https://docs.aws.amazon.com/controltower/latest/APIReference/API_Operations.html). To view the status of a control, navigate to the **Control details** page in the AWS Control Tower console.
 
 **Open the tabs**
 + In the **About** tab, you can view the relationship of the control with other controls. We provide recommendations about how certain controls can work together with other controls to provide best security for your AWS environment.

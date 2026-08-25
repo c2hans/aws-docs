@@ -90,8 +90,6 @@ To penalize special tokens, add those fields to any of the penalty objects. For 
 
 The following table shows the minimum, maximum, and default values for the numerical parameters.
 
-****
-
 - **Randomness and diversity**
   - **Parameter:** Temperature / **JSON object format:** temperature / **Minimum:** 0 / **Maximum:** 1 / **Default:** 0.5
   - **Parameter:** Top P / **JSON object format:** topP / **Minimum:** 0 / **Maximum:** 1 / **Default:** 0.5

@@ -55,8 +55,6 @@ All label categories must be unique. You cannot specify duplicate label categori
 
 The following label category limits apply to labeling jobs. Quotas for label categories depend on whether you use the SageMaker API operation `CreateLabelingJob` or the console to create a labeling job.
 
-****
-
 | Labeling Job Task Type | Label Category Quota - API | Label Category Quota - Console |
 | --- | --- | --- |
 | Image classification (Multi-label) | 50 | 50 |
@@ -91,8 +89,6 @@ The following quotas apply for question-answer pairs that you provide in the lab
 
 The following quotas apply for 3D point cloud and video frame labeling job input data.
 
-****
-
 | Labeling Job Task Type | Input Data Quota |
 | --- | --- |
 | Video frame object detection  |  2,000 video frames (images) per sequence  |
@@ -108,8 +104,6 @@ When you create a video frame or 3D point cloud labeling job, you can add one or
 Each label category attribute has a single label category attribute `name`, and a list of one or more options (values) to choose from. To learn more, see [Worker user interface (UI)](sms-point-cloud-general-information.md#sms-point-cloud-worker-task-ui) for 3D point cloud labeling jobs and [Worker user interface (UI)](sms-video-overview.md#sms-video-worker-task-ui) for video frame labeling jobs.
 
  The following quotas apply to the number of label category attributes names and values you can specify for labeling jobs.
-
-****
 
 | Labeling Job Task Type | Label Category Attribute (name) Quota | Label Category Attribute Values Quota |
 | --- | --- | --- |

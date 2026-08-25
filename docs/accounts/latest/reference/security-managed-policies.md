@@ -5,6 +5,8 @@ source_url: https://docs.aws.amazon.com/accounts/latest/reference/security-manag
 # AWS managed policies for AWS Account Management
 <a name="security-managed-policies"></a>
 
+This information is most relevant for AWS accounts that you create when you use our advanced AWS experience or if you activated advanced features for your account. To learn about how access control works for our new AWS experience, see [Compare access management](sign-up-for-aws.md#compare-access-management).
+
 **Topics**
 + [AWSAccountManagementReadOnlyAccess](#security-managed-policies-AWSAccountManagementReadOnlyAccess)
 + [AWSAccountManagementFullAccess](#security-managed-policies-AWSAccountManagementFullAccess)

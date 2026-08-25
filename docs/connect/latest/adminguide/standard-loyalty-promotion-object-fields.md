@@ -13,7 +13,7 @@ The following table lists all the fields in the Customer Profiles standard loyal
 | --- | --- | --- |
 | PromotionId | String | Unique identifier of the standard loyalty promotion. |
 | PromotionName | String | Display name of the promotion. |
-| PromotionType | String | The type or category of promotion (e.g., bonus, tier boost, voucher). |
+| PromotionType | String | The type or category of promotion (for example, bonus, tier boost, voucher). |
 | ProgramType | String | Indicates the type of loyalty program the promotion is tied to. |
 | ProgramRef | String | Reference ID to the related loyalty program. |
 | PartnerId | String | Reference ID of a partner organization involved in the promotion. |
@@ -23,8 +23,8 @@ The following table lists all the fields in the Customer Profiles standard loyal
 | EnrolledDate | String | Date the user enrolled in the promotion. |
 | EndDate | String | When the promotion ends. |
 | Amount | String | Associated monetary or point value with the promotion. |
-| Period | String | Time period of the promotion (e.g., weekly, monthly, campaign-based). |
-| Status | String | Current status of the promotion (e.g., active, expired, completed). |
+| Period | String | Time period of the promotion (for example, weekly, monthly, campaign-based). |
+| Status | String | Current status of the promotion (for example, active, expired, completed). |
 | CreatedDate | String | Date the promotion record was created. |
 | CreatedBy | String | User or system that created the promotion record. |
 | UpdatedDate | String | Last date the promotion record was updated. |
@@ -54,9 +54,9 @@ The following table lists all the fields in the Customer Profiles standard loyal
 
 | Standard loyaltyPromotion field | Type | Description |
 | --- | --- | --- |
-| Type | String | The type of incentive (e.g., bonusPoints, voucher, tierUpgrade). |
+| Type | String | The type of incentive (for example, bonusPoints, voucher, tierUpgrade). |
 | Value | String | Value of the incentive, such as point amount or voucher value. |
-| Unit | String | The unit for the incentive value (e.g., points, %, USD). |
+| Unit | String | The unit for the incentive value (for example, points, %, USD). |
 
 **TriggerLimit data type**
 

@@ -10,8 +10,6 @@ This topic details the changes in the IAM Policy Builder API from version 1 (v1)
 ## High-level changes
 <a name="migration-iam-policy-builder-high-level"></a>
 
-****
-
 | Change | v1 | v2 |
 | --- | --- | --- |
 |  <br />Maven dependencies |  <pre><dependencyManagement><br />    <dependencies><br />        <dependency><br />            <groupId>com.amazonaws</groupId><br />            <artifactId>aws-java-sdk-bom</artifactId><br />            <version>{{1.12.5871}}</version><br />            <type>pom</type><br />            <scope>import</scope><br />        </dependency><br />    </dependencies><br /></dependencyManagement><br /><dependencies><br />    <dependency><br />        <groupId>com.amazonaws</groupId><br />        <artifactId>aws-java-sdk-core</artifactId><br />    </dependency><br /></dependencies></pre>  |  <pre><dependencyManagement><br />    <dependencies><br />        <dependency><br />            <groupId>software.amazon.awssdk</groupId><br />            <artifactId>bom</artifactId><br />            <version>{{2.27.212}}</version><br />            <type>pom</type><br />            <scope>import</scope><br />        </dependency><br />    </dependencies><br /></dependencyManagement><br /><dependencies><br />    <dependency><br />        <groupId>software.amazon.awssdk</groupId><br />        <artifactId>iam-policy-builder</artifactId><br />    </dependency><br /></dependencies></pre>  |
@@ -22,8 +20,6 @@ This topic details the changes in the IAM Policy Builder API from version 1 (v1)
 
 ## API changes
 <a name="migration-iam-policy-builder-api"></a>
-
-****
 
 | Setting | v1 | v2 |
 | --- | --- | --- |

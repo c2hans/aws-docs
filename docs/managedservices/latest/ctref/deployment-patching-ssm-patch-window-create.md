@@ -14,8 +14,6 @@ Create an AWS Systems Manager (SSM) patch window for patching to take place on i
 ## Change Type Details
 <a name="ct-0el2j07llrxs7-DPSc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-0el2j07llrxs7 |

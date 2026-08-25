@@ -9,8 +9,6 @@ Conformance packs provide a general-purpose compliance framework designed to ena
 
  The following provides a sample mapping between NIST 1800-25 and AWS managed Config rules. Each AWS Config applies to a specific AWS resource,and relates to one or more NIST 1800-25 controls. A NIST 1800-25 control can be related to multiple AWS Config rules. Refer to the table below for more detail and guidance related to these mappings.
 
-****
-
 | Control ID  | Control Description  | AWS Config Rule  | Guidance  |
 | --- | --- | --- | --- |
 | ID.AM-2 | Software platforms and applications within the organization are inventoried | [ec2-instance-managed-by-systems-manager](https://docs.aws.amazon.com/config/latest/developerguide/ec2-instance-managed-by-systems-manager.html) | An inventory of the software platforms and applications within the organization is possible by managing Amazon Elastic Compute Cloud (Amazon EC2) instances with AWS Systems Manager. Use AWS Systems Manager to provide detailed system configurations, operating system patch levels, services name and type, software installations, application name, publisher and version, and other details about your environment. |

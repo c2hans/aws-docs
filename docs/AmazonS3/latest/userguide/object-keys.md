@@ -13,7 +13,7 @@ The object key name consists of a sequence of Unicode characters encoded in UTF-
 + Certain characters might require special handling when they're used in object key names. For more information, see [Object key naming guidelines](#object-key-guidelines).
 
 **Note**
-Object key names with the value `"soap"` aren't supported for [virtual-hosted-style requests](https://docs.aws.amazon.com/AmazonS3/latest/userguide/VirtualHosting.html#virtual-hosted-style-access). For object key name values where `"soap"` is used, a [path-style URL](https://docs.aws.amazon.com//AmazonS3/latest/userguide/VirtualHosting.html#path-style-access) must be used instead.
+Object key names with the value `"soap"` aren't supported for [virtual-hosted-style requests](https://docs.aws.amazon.com/AmazonS3/latest/userguide/VirtualHosting.html#virtual-hosted-style-access). For object key name values where `"soap"` is used, a [path-style URL](https://docs.aws.amazon.com/AmazonS3/latest/userguide/VirtualHosting.html#path-style-access) must be used instead.
 
 ## Choosing object key names
 <a name="object-key-choose"></a>

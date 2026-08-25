@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb3-cmd-optio
 
 You can use the following options with all EB CLI commands.
 
-****
-
 |  Name  |  Description  |
 | --- | --- |
 |  `--debug`  | Print information for debugging. |

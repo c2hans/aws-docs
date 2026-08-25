@@ -239,8 +239,6 @@ When editing a template, you can engineer the prompt with the following tools:
 
 You can enable or disable any step in the agent sequence. The following table shows the default state for each step and whether it differs by model:
 
-****
-
 | Prompt template | Default setting | Models |
 | --- | --- | --- |
 | Pre-processing | Disabled | All supported models |

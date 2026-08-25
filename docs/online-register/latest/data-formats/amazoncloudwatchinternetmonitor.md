@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon CloudWatch Internet Monitor provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="internetmonitor-GetHealthEvent"></a>[GetHealthEvent](https://docs.aws.amazon.com/internet-monitor/latest/api/API_GetHealthEvent.html) | Get information about a health event for a specified monitor | Read |

@@ -206,8 +206,6 @@ You can use the IAM API to delete a service-linked role. Because a service-linke
 
 Amazon EMR supports using the AWSServiceRoleForEMRCleanup service-linked role in the following Regions.
 
-****
-
 | Region name | Region identity | Support in Amazon EMR |
 | --- | --- | --- |
 | US East (N. Virginia) | us-east-1 | Yes |

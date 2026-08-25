@@ -14,8 +14,6 @@ Modify the properties of an Amazon Relational Database Service (RDS) DB instance
 ## Change Type Details
 <a name="ct-12w49boaiwtzp-MARu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-12w49boaiwtzp |

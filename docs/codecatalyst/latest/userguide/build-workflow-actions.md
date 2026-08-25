@@ -39,7 +39,7 @@ The high-level steps to build an application or resource are as follows.
 
 1. In the workflow, you add a **build action** that compiles and packages your application or resource source code. Optionally, you can also have the build action run unit tests, generate reports, and deploy your application if you don't want to use a test or deploy action for these purposes. For more on the test and deploy actions, see [Adding the build action](build-add-action.md).
 
-1. (Optional) In the workflow, you **add a test action** and a **deploy action** to test and deploy your application or resource. You can choose from several pre-configured actions to deploy your application to different targets, such as Amazon ECS. For more information, see [Testing with workflowsTesting with workflows](test-workflow-actions.md), and [Deploying with workflowsDeploying with workflows](deploy.md).
+1. (Optional) In the workflow, you **add a test action** and a **deploy action** to test and deploy your application or resource. You can choose from several pre-configured actions to deploy your application to different targets, such as Amazon ECS. For more information, see [Testing with workflows](test-workflow-actions.md), and [Deploying with workflows](deploy.md).
 
 1. You **start the workflow** either manually or automatically through a trigger. The workflow runs the build, test, and deploy actions in sequence to build, test, and deploy your application and resources to the target. For more information, see [Starting a workflow run manually](workflows-manually-start.md).
 

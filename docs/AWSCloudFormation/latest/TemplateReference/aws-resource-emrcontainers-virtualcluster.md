@@ -73,7 +73,7 @@ The ID of the security configuration.
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `SessionEnabled`  <a name="cfn-emrcontainers-virtualcluster-sessionenabled"></a>
-Property description not available.
+Specifies whether the virtual cluster has session support enabled.
 *Required*: No
 *Type*: Boolean
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)

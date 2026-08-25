@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awss
 
 AWS Signin provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="signin-Authenticate"></a>[Authenticate](https://docs.aws.amazon.com/signin/latest/APIReference/API_Authenticate.html) | Authenticate to the AWS Management Console | Read |

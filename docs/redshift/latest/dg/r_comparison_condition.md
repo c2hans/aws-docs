@@ -32,7 +32,7 @@ The ALL predicate is not supported.
 The ALL keyword is synonymous with NOT IN (see [IN condition](r_in_condition.md) condition) and returns true if the expression is not included in the results of the subquery. Amazon Redshift supports only the <> or \!= (not equals) condition for ALL. Other comparison conditions are not supported.
 
 IS TRUE/FALSE/UNKNOWN
-Non-zero values equate to TRUE, 0 equates to FALSE, and null equates to UNKNOWN. See the [Boolean typeHLLSKETCH type](r_Boolean_type.md) data type.
+Non-zero values equate to TRUE, 0 equates to FALSE, and null equates to UNKNOWN. See the [Boolean type](r_Boolean_type.md) data type.
 
 ## Examples
 <a name="r_comparison_condition-examples"></a>

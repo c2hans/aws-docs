@@ -112,7 +112,7 @@ After you switch over a blue/green deployment, consider updating the resource ID
 + If you perform filtering using the RDS API and resource IDs, adjust the resource IDs used in filtering after switchover.
 + If you use CloudTrail for auditing resources, adjust the consumers of the CloudTrail to track the new resource IDs after switchover. For more information, see [Monitoring Amazon Aurora API calls in AWS CloudTrail](logging-using-cloudtrail.md).
 + If you use Database Activity Streams for resources in the blue environment, adjust your application to monitor database events for the new stream after switchover. For more information, see [Supported Regions and Aurora DB engines for database activity streams](Concepts.Aurora_Fea_Regions_DB-eng.Feature.DBActivityStreams.md).
-+ If you use the Performance Insights API, adjust the resource IDs in calls to the API after switchover. For more information, see [Monitoring DB load with Performance Insights on Amazon Aurora](USER_PerfInsights.md).
++ If you use the Performance Insights API, adjust the resource IDs in calls to the API after switchover. For more information, see [Monitoring DB load with Amazon CloudWatch Database Insights on Amazon Aurora](USER_PerfInsights.md).
 
   You can monitor a database with the same name after switchover, but it doesn't contain the data from before the switchover.
 + If you use resource IDs in IAM policies, make sure you add the resource IDs of the newly transitioned resources when necessary. For more information, see [Identity and access management for Amazon Aurora](UsingWithRDS.IAM.md).

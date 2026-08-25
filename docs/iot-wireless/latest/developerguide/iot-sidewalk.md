@@ -40,7 +40,7 @@ Using AWS IoT Core for Amazon Sidewalk, you can:
 You can onboard your Sidewalk end devices to AWS IoT by using the console or the AWS IoT Wireless API operations. After your devices are onboarded, their messages are sent to AWS IoT Core. You can then start developing your business applications on the AWS Cloud, which uses the data from your Amazon Sidewalk end devices.
 
 **Using the console**
-To onboard your Sidewalk end devices, sign in to the AWS Management Console and navigate to the [Devices](https://console.aws.amazon.com//iot/home#/wireless/devices) page on the AWS IoT console. After your devices are onboarded, you can view and manage them on this page of the IoT console.
+To onboard your Sidewalk end devices, sign in to the AWS Management Console and navigate to the [Devices](https://console.aws.amazon.com/iot/home#/wireless/devices) page on the AWS IoT console. After your devices are onboarded, you can view and manage them on this page of the IoT console.
 
 **Using the API or CLI**
 You can onboard both Sidewalk and LoRaWAN devices by using the [AWS IoT Wireless API operations](https://docs.aws.amazon.com/iot-wireless/latest/apireference/). The AWS IoT Wireless APIs are part of the AWS IoT Core and are supported by the AWS SDK. For more information, see [AWS SDKs and Toolkits](https://aws.amazon.com/developer/tools/).

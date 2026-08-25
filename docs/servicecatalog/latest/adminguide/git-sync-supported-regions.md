@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/adminguide/git-syn
 
 AWS Service Catalog supports Git-synced produtcs in AWS Regions as indicated in the table below.
 
-****
-
 | AWS Region name | AWS Region identity | Support for Git-synced products |
 | --- | --- | --- |
 | US East (N. Virginia) | us-east-1 | Yes |

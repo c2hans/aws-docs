@@ -57,10 +57,10 @@ If you attach custom policies to an Elastic Beanstalk service role, verify that 
 **Required permissions for Amazon EC2 launch templates**
 + `ec2:RunInstances`
 + `ec2:CreateLaunchTemplate`
-+ `ec2:CreateLaunchTemplateVersions`
++ `ec2:CreateLaunchTemplateVersion`
 + `ec2:DeleteLaunchTemplate`
 + `ec2:DeleteLaunchTemplateVersions`
-+ `ec2:DescribeLaunchTemplate`
++ `ec2:DescribeLaunchTemplates`
 + `ec2:DescribeLaunchTemplateVersions`
 
 The following example IAM policy includes these permissions.
@@ -73,10 +73,10 @@ The following example IAM policy includes these permissions.
       "Action": [
         "ec2:RunInstances",
         "ec2:CreateLaunchTemplate",
-        "ec2:CreateLaunchTemplateVersions",
+        "ec2:CreateLaunchTemplateVersion",
         "ec2:DeleteLaunchTemplate",
         "ec2:DeleteLaunchTemplateVersions",
-        "ec2:DescribeLaunchTemplate",
+        "ec2:DescribeLaunchTemplates",
         "ec2:DescribeLaunchTemplateVersions"
       ],
       "Resource": [

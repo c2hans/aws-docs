@@ -120,7 +120,7 @@ With RDS Proxy connection pooling, the connection attempts increase at the start
 
 ![Performance Insights showing benefit of RDS Proxy for connection pooling.](http://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/images/postgres_connection_pooling_PI_3.png)
 
-For more information about using Performance Insights with your Aurora PostgreSQL DB cluster, see [Monitoring DB load with Performance Insights on Amazon Aurora](USER_PerfInsights.md). To analyze the metrics, see [Analyzing metrics with the Performance Insights dashboard](USER_PerfInsights.UsingDashboard.md).
+For more information about using Performance Insights with your Aurora PostgreSQL DB cluster, see [Monitoring DB load with Amazon CloudWatch Database Insights on Amazon Aurora](USER_PerfInsights.md). To analyze the metrics, see [Database Insights](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_DatabaseInsights.html).
 
 ## Demonstrating the benefits of connection pooling
 <a name="AuroraPostgreSQL.BestPractices.connection_pooling.demo-benefit-pooling"></a>

@@ -12,8 +12,6 @@ The following sections describe each of the main connection parameters.
 
 Specifies the name of your data source.
 
-****
-
 | **Connection string name** | **Parameter type** | **Default value** | **Connection string example** |
 | --- | --- | --- | --- |
 | DSN | Optional for DSN-less connection types | none | DSN=AmazonAthenaOdbcUsWest1; |
@@ -22,8 +20,6 @@ Specifies the name of your data source.
 <a name="odbc-v2-driver-main-connection-parameters-description"></a>
 
 Contains description of your data source.
-
-****
 
 | **Connection string name** | **Parameter type** | **Default value** | **Connection string example** |
 | --- | --- | --- | --- |
@@ -34,8 +30,6 @@ Contains description of your data source.
 
 Specifies the data catalog name. For more information about catalogs, see [DataCatalog](https://docs.aws.amazon.com/athena/latest/APIReference/API_DataCatalog.html) in the Amazon Athena API Reference.
 
-****
-
 | **Connection string name** | **Parameter type** | **Default value** | **Connection string example** |
 | --- | --- | --- | --- |
 | Catalog | Optional | AwsDataCatalog | Catalog=AwsDataCatalog; |
@@ -44,8 +38,6 @@ Specifies the data catalog name. For more information about catalogs, see [DataC
 <a name="odbc-v2-driver-region"></a>
 
 Specifies the AWS Region. For information about AWS Regions, see [Regions and Availability Zones](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/).
-
-****
 
 | **Connection string name** | **Parameter type** | **Default value** | **Connection string example** |
 | --- | --- | --- | --- |
@@ -56,8 +48,6 @@ Specifies the AWS Region. For information about AWS Regions, see [Regions and Av
 
 Specifies the database name. For more information about databases, see [Database](https://docs.aws.amazon.com/athena/latest/APIReference/API_Database.html) in the *Amazon Athena API Reference*.
 
-****
-
 | **Connection string name** | **Parameter type** | **Default value** | **Connection string example** |
 | --- | --- | --- | --- |
 | Schema | Optional | default | Schema=default; |
@@ -67,8 +57,6 @@ Specifies the database name. For more information about databases, see [Database
 
 Specifies the workgroup name. For more information about workgroups, see [WorkGroup](https://docs.aws.amazon.com/athena/latest/APIReference/API_WorkGroup.html) in the *Amazon Athena API Reference*.
 
-****
-
 | **Connection string name** | **Parameter type** | **Default value** | **Connection string example** |
 | --- | --- | --- | --- |
 | Workgroup | Optional | primary | Workgroup=primary; |
@@ -77,8 +65,6 @@ Specifies the workgroup name. For more information about workgroups, see [WorkGr
 <a name="odbc-v2-driver-output-location"></a>
 
 Specifies the location in Amazon S3 where query results are stored. For more information about output location, see [ResultConfiguration](https://docs.aws.amazon.com/athena/latest/APIReference/API_ResultConfiguration.html) in the *Amazon Athena API Reference*.
-
-****
 
 | **Connection string name** | **Parameter type** | **Default value** | **Connection string example** |
 | --- | --- | --- | --- |
@@ -91,8 +77,6 @@ Specifies the location in Amazon S3 where query results are stored. For more inf
 
 Specifies encryption option. For more information about encryption options, see [EncryptionConfiguration](https://docs.aws.amazon.com/athena/latest/APIReference/API_EncryptionConfiguration.html) in the *Amazon Athena API Reference*.
 
-****
-
 | **Connection string name** | **Parameter type** | **Default value** | **Possible values** | **Connection string example** |
 | --- | --- | --- | --- | --- |
 | S3OutputEncOption | Optional | none | NOT\_SET, SSE\_S3, SSE\_KMS, CSE\_KMS | S3OutputEncOption=SSE\_S3; |
@@ -101,8 +85,6 @@ Specifies encryption option. For more information about encryption options, see 
 <a name="odbc-v2-driver-kms-key"></a>
 
 Specifies a KMS key for encryption. For more information about encryption configuration for KMS Keys, see [EncryptionConfiguration](https://docs.aws.amazon.com/athena/latest/APIReference/API_EncryptionConfiguration.html) in the *Amazon Athena API Reference*.
-
-****
 
 | **Connection string name** | **Parameter type** | **Default value** | **Connection string example** |
 | --- | --- | --- | --- |

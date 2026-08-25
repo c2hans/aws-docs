@@ -10,8 +10,6 @@ ElastiCache supports a number of Valkey and Redis OSS commands for working with 
 ## Terminology
 <a name="json-terminology"></a>
 
-****
-
 | Term | Description |
 | --- | --- |
 | JSON document | Refers to the value of a JSON key. |
@@ -98,8 +96,6 @@ Results of some commands are sensitive to which type of path syntax is used.
 
 **Enhanced syntax**
 
-****
-
 | Symbol/Expression | Description |
 | --- | --- |
 | $ | The root element. |
@@ -169,8 +165,6 @@ The following examples are built on [Goessner's](https://goessner.net/articles/J
 }
 ```
 
-****
-
 | Path | Description |
 | --- | --- |
 | $.store.book[\*].author | The authors of all books in the store. |
@@ -232,16 +226,12 @@ OK
 
 **Restricted syntax**
 
-****
-
 | Symbol/Expression | Description |
 | --- | --- |
 | . or [] | Child operator. |
 | [] | Array subscript operator. Index is 0-based. |
 
 **Examples**
-
-****
 
 | Path | Description |
 | --- | --- |
@@ -259,8 +249,6 @@ All [Goessner](https://goessner.net/articles/JsonPath/) content cited in this do
 
 Each error message has a prefix. The following is a list of common error prefixes.
 
-****
-
 | Prefix | Description |
 | --- | --- |
 | ERR | A general error. |
@@ -274,8 +262,6 @@ Each error message has a prefix. The following is a list of common error prefixe
 <a name="json-info-metrics"></a>
 
 The following JSON info metrics are provided:
-
-****
 
 | Info | Description |
 | --- | --- |
@@ -317,7 +303,7 @@ Arithmetic commands `NUMINCRBY` and `NUMMULTBY`:
 + If at least one of the numbers is a floating point, the result is a 64-bit IEEE double precision floating point number.
 + If the result exceeds the range of 64-bit IEEE double, the command returns an `OVERFLOW` error.
 
-For a detailed list of available commands, see [Supported Valkey and Redis OSS commandsJSON commands](json-list-commands.md).
+For a detailed list of available commands, see [Supported Valkey and Redis OSS commands](json-list-commands.md).
 
 ### Direct array filtering
 <a name="json-direct-array-filtering"></a>

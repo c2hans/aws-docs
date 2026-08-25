@@ -22,8 +22,6 @@ Amazon Q Business offers two types of indexes: starter index and enterprise inde
 
 The following table outlines the features of both index types.
 
-****
-
 | Starter index | Enterprise index |
 | --- | --- |
 |  **Ideal use case**+  Proof-of-concept or developer workloads <br /> **Features**+  Runs in 1 Availability Zone (AZ) – See [Availability Zones](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/) (data centers in AWS regions) +  Includes up to 20,000 document capacity or 200 MB of total extracted text (whichever is reached first)\* <br />+  Includes up to 100 hours of data source connector usage (time that it takes to scan and index new, updated, or deleted documents)  |  **Ideal use case**+  Production workloads <br /> **Features**+  Runs in 3 Availability Zone (AZ) – See [Availability Zones](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/) (data centers in AWS regions) +  Includes up to 20,000 document capacity or 200 MB of total extracted text (whichever is reached first)\* <br />+  Includes up to 100 hours of data source connector usage (time that it takes to scan and index new, updated, or deleted documents) <br />+  Includes customer managed key encryption support  |
@@ -45,8 +43,6 @@ As of July 1, 2024, Amazon Q Apps only available to Amazon Q Business Pro users.
 
 **Topics**
 + [Amazon Q Business Lite users must upgrade to Amazon Q Business Pro to continue using Q Apps](#lite-user-changes)
-
-****
 
 | Amazon Q Business Lite Plan | Amazon Q Business Pro Plan |
 | --- | --- |

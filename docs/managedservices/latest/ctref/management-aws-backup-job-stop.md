@@ -14,8 +14,6 @@ Stop an AWS Backup service running, or scheduled, backup job.
 ## Change Type Details
 <a name="ct-1895yr1p87noq-MABs-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1895yr1p87noq |

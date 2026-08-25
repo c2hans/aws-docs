@@ -9,8 +9,6 @@ Amazon Q Business is no longer open to new customers. For capabilities similar t
 
 The following table gives an overview of the Amazon Q Business Microsoft OneDrive original connector and its supported features.
 
-****
-
 - ****Security****
   - **Feature:** Authentication type / **Support:** OAuth 2.0 with Client Credentials Flow
   - **Feature:** Authentication credentials / **Support:** +  Microsoft OneDrive Client ID <br />+  Microsoft OneDrive Client secret

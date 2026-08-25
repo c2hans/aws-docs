@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsr
 
 AWS Route53 Global Resolver provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="route53globalresolver-GetAccessSource"></a>[GetAccessSource](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53globalresolver_GetAccessSource) | Get an access source | Read |

@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/redshift/latest/mgmt/connecting-via-clie
 # Connecting from client tools and code
 <a name="connecting-via-client-tools"></a>
 
-Amazon Redshift provides Amazon Redshift query editor v2 to connect to your clusters and workgroups. For more information, see [Querying a database using the query editor v2Querying a database using the Amazon Redshift query editor v2](query-editor-v2.md).
+Amazon Redshift provides Amazon Redshift query editor v2 to connect to your clusters and workgroups. For more information, see [Querying a database using the query editor v2](query-editor-v2.md).
 
 This section provides some options for third-party tools to connect. Additionally, it describes how to connect to your cluster programmatically.
 

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/get-queue-metr
 # Flow block in Connect Customer: Get metrics
 <a name="get-queue-metrics"></a>
 
-By default, this block returns queue metrics for the current queue. You can optionally choose to return metrics for a different queue/channel combination, or contact-level metrics such as the contact's position in queue. Metrics are returned as attributes that can be referenced via JSONPath or the Check contact attributes block.
+By default, this block returns queue metrics for the current queue. You can optionally choose to return metrics for a different queue/channel combination, or contact-level metrics such as the contact's position in queue. Metrics are returned as attributes that can be referenced through JSONPath or the Check contact attributes block.
 
 ## Description
 <a name="get-metrics-description"></a>
@@ -59,7 +59,7 @@ The following image shows the **Properties** page of the **Get metrics** block. 
 
 ![The properties page of the Get metrics block.](http://docs.aws.amazon.com/connect/latest/adminguide/images/get-metrics-properties1.png)
 
-You can retrieve metrics by channel, and/or by queue or agent.
+You can retrieve metrics by channel, or by queue or agent.
 + If you don't specify a channel, it returns metrics for all channels.
 + If you don't specify a queue, it returns metrics for the current queue.
 + Dynamic attributes can only return metrics for one channel.

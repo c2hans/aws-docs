@@ -17,6 +17,7 @@ OAI doesn't support these features or it requires extra workarounds in those sce
 **Notes**
 When you use CloudFront OAC with Amazon S3 bucket origins, you must set **Amazon S3 Object Ownership** to **Bucket owner enforced**, the default for new Amazon S3 buckets. If you require ACLs, use the **Bucket owner preferred** setting to maintain control over objects uploaded via CloudFront.
 If your origin is an Amazon S3 bucket configured as a [website endpoint](https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteEndpoints.html), you must set it up with CloudFront as a custom origin. That means you can't use OAC (or OAI). OAC doesn't support origin redirect by using Lambda@Edge.
+If you use an Amazon S3 Multi-Region Access Point as your CloudFront origin, see [Restrict access to an Amazon S3 Multi-Region Access Point origin](private-content-restricting-access-to-s3-mrap.md). S3 Multi-Region Access Points require a different OAC configuration.
 
 The following topics describe how to use OAC with an Amazon S3 origin.
 

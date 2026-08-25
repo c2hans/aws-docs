@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 # DeleteIdNamespace
 <a name="API_DeleteIdNamespace"></a>
 
-Deletes the `IdNamespace` with a given name.
+Deletes the `IdNamespace` with a given name. This operation returns a `ResourceNotFoundException` if an ID namespace with the given name does not exist.
 
 ## Request Syntax
 <a name="API_DeleteIdNamespace_RequestSyntax"></a>
@@ -65,6 +65,10 @@ HTTP Status Code: 403
  ** InternalServerException **
 This exception occurs when there is an internal failure in the AWS Entity Resolution service.
 HTTP Status Code: 500
+
+ ** ResourceNotFoundException **
+The resource couldn't be found.
+HTTP Status Code: 404
 
  ** ThrottlingException **
 The request was denied due to request throttling.

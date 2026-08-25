@@ -11,7 +11,7 @@ P-states control the desired performance (in CPU frequency) from a core. P-state
 
 You might want to change the C-state or P-state settings to increase processor performance consistency, reduce latency, or tune your instance for a specific workload. The default C-state and P-state settings provide maximum performance, which is optimal for most workloads. However, if your application would benefit from reduced latency at the cost of higher single- or dual-core frequencies, or from consistent performance at lower frequencies as opposed to bursty Turbo Boost frequencies, consider experimenting with the C-state or P-state settings that are available to these instances.
 
-For information about Amazon EC2 instance types that provide the ability for the operating system to control processor C-states and P-states, see [Processor state control for your Amazon EC2 instance](https://docs.aws.amazon.com//AWSEC2/latest/UserGuide/processor_state_control.html) in the *Amazon EC2 User Guide*.
+For information about Amazon EC2 instance types that provide the ability for the operating system to control processor C-states and P-states, see [Processor state control for your Amazon EC2 instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/processor_state_control.html) in the *Amazon EC2 User Guide*.
 
 The following sections describe the different processor state configurations and how to monitor the effects of your configuration. These procedures were written for, and apply to Amazon Linux; however, they might also work for other Linux distributions with a Linux kernel version of 3.9 or newer.
 

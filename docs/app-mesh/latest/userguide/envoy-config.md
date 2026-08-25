@@ -60,7 +60,7 @@ Toggles Envoy’s administration interface to accept `IPv6` traffic, which allow
 ### Agent variables
 <a name="agent-variables"></a>
 
-Use these environment variables to configure the AWS App Mesh Agent for Envoy. For more information, see App Mesh [Agent for Envoy](https://docs.aws.amazon.com//app-mesh/latest/userguide/appnet-agent.html).
+Use these environment variables to configure the AWS App Mesh Agent for Envoy. For more information, see App Mesh [Agent for Envoy](https://docs.aws.amazon.com/app-mesh/latest/userguide/appnet-agent.html).
 
 `APPNET_ENVOY_RESTART_COUNT`
 Specifies the number of times that the Agent restarts the Envoy proxy process within a running task or pod if it exits. The Agent also logs the exit status every time Envoy exits to ease troubleshooting. The default value of this variable is `0`. When the default value is set, the Agent doesn't attempt to restart the process.

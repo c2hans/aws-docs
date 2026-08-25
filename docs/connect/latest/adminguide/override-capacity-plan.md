@@ -30,7 +30,7 @@ You might want to do this, for example, to give your team of agents a buffer.
 
 1. Make your changes, and save the template file with a different name. Return to the **Upload override** dialog box (you might need to choose **Actions**, **Upload plan override** to redisplay the dialog box), choose **Upload CSV**, and then choose **Override**.
 
-1. After you upload the .csv file, the metrics in the **Required FTEs (without Shrinkage)** row are automatically re-calculated and updated. Hover over the blue triangle to see the original value, as shown in the following image.
+1. After you upload the .csv file, the metrics in the **Required FTEs (without Shrinkage)** row are automatically re-calculated and updated. Pause on the blue triangle to see the original value, as shown in the following image.
 ![The Plan Outputs section showing a triangle indicator that displays the original value for the required FTEs.](http://docs.aws.amazon.com/connect/latest/adminguide/images/wfm-capacity-planning-override-without-shrinkage-blue.png)
 
 1. The rest of the metrics are updated automatically to reflect the latest change for **Required FTEs (without Shrinkage)**.

@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/enable-code-review-scan.html
 ---
 
-# Enable code review
+# Enable Continuum code review
 <a name="enable-code-review-scan"></a>
 
 Configure your Agent Space to enable code review by connecting source code from GitHub repositories or S3 buckets. Code review analyzes your source code for security vulnerabilities and compliance with your organization’s custom security requirements.
@@ -12,7 +12,7 @@ Setting up code review configurations is an Agent Space-wide operation. The inte
 After completing setup, users can create and run code reviews in the AWS Security Agent web application to scan repositories and S3 sources for security issues.
 
 **Note**
-If you already have GitHub repositories connected to your Agent Space (for example, through penetration testing setup), code review is already enabled. You can skip this setup and go directly to the web application to create code reviews. See [Create a code review](perform-code-review-scan.md).
+If you already have GitHub repositories connected to your Agent Space (for example, through penetration testing setup), code review is already enabled. You can skip this setup and go directly to the web application to create code reviews. See [Create a Continuum code review](perform-code-review-scan.md).
 
 ## Prerequisites
 <a name="_prerequisites"></a>
@@ -25,8 +25,8 @@ Before you begin, ensure you have:
 + Permissions to configure integrations for your Agent Space
 + (Optional) At least one security requirement enabled in a security requirement pack if you plan to use security requirement validation (see [Manage security requirements](security-requirements.md))
 
-## Access the code review setup wizard
-<a name="_access_the_code_review_setup_wizard"></a>
+## Access the Continuum code review setup wizard
+<a name="_access_the_continuum_code_review_setup_wizard"></a>
 
 Navigate to the code review setup for your Agent Space.
 
@@ -37,7 +37,7 @@ Navigate to the code review setup for your Agent Space.
    + The **Code review** tab, then choose **Enable code review**
 
 **Tip**
-If you would like AWS Security Agent to address code review feedback automatically, enable **Code remediation** as well. See [Enable users to start remediation of penetration test and code review findings](enable-remediate-findings.md) for details.
+If you would like AWS Security Agent to address code review feedback automatically, enable **Code remediation** as well. See [Enable users to start remediation of Continuum penetration test and code review findings](enable-remediate-findings.md) for details.
 
 You are directed to the **Setup code review configurations** wizard.
 
@@ -87,9 +87,9 @@ When **Code review comments** is enabled for a repository:
 **Note**
 Pull request comments are only available for private GitHub repositories.
 
-When **Code remediation** is enabled for a repository, web application users can start remediation for both code review and penetration test findings on that repository, and AWS Security Agent delivers each fix as a pull request. For more information, see [Enable users to start remediation of penetration test and code review findings](enable-remediate-findings.md).
+When **Code remediation** is enabled for a repository, web application users can start remediation for both code review and penetration test findings on that repository, and AWS Security Agent delivers each fix as a pull request. For more information, see [Enable users to start remediation of Continuum penetration test and code review findings](enable-remediate-findings.md).
 
-For more information about how pull request findings appear in GitHub and how to respond to them, see [Review code security findings in pull requests](review-code-findings-github.md).
+For more information about how pull request findings appear in GitHub and how to respond to them, see [Review Continuum code security findings in pull requests](review-code-findings-github.md).
 
 ### Add S3 buckets
 <a name="_add_s3_buckets"></a>
@@ -108,8 +108,8 @@ You can add up to 10 S3 resources. S3 buckets are shared across capabilities inc
 **Tip**
 You can add S3 buckets that contain source code, configuration files, infrastructure-as-code templates, or other artifacts you want AWS Security Agent to analyze for security issues.
 
-### Configure code review settings
-<a name="_configure_code_review_settings"></a>
+### Configure Continuum code review settings
+<a name="_configure_continuum_code_review_settings"></a>
 
 Configure the types of security issues AWS Security Agent analyzes during code reviews. This setting applies to all repositories and sources with code review enabled in this Agent Space.
 
@@ -166,8 +166,8 @@ After completing the code review setup wizard:
 + Users can launch the web application and create code reviews to scan connected repositories and S3 sources.
 + You can modify your configuration at any time by choosing **Edit configuration** on the **Code review** tab.
 
-## Edit code review configuration
-<a name="_edit_code_review_configuration"></a>
+## Edit Continuum code review configuration
+<a name="_edit_continuum_code_review_configuration"></a>
 
 To modify your code review configuration after initial setup:
 
@@ -185,7 +185,7 @@ To modify your code review configuration after initial setup:
 <a name="_next_steps"></a>
 
 After setting up code review configurations:
-+ Launch the web application to create and run code reviews (see [Create a code review](perform-code-review-scan.md))
++ Launch the web application to create and run code reviews (see [Create a Continuum code review](perform-code-review-scan.md))
 + Connect additional GitHub repositories or S3 buckets as your codebase grows
 + Configure security requirement packs for organization-specific validation (see [Manage security requirements](security-requirements.md))
-+ Review how pull request findings appear in GitHub (see [Review code security findings in pull requests](review-code-findings-github.md))
++ Review how pull request findings appear in GitHub (see [Review Continuum code security findings in pull requests](review-code-findings-github.md))

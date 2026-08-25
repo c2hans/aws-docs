@@ -34,7 +34,7 @@ The project name can contain up to 64 alphanumeric characters. It can also inclu
    + **Default message type** – The category of messages that you plan to send. Choose **Transactional** for time-sensitive content, such as alerts and one-time passwords, or choose **Promotional** for marketing-related content.
    + **Account spending limit** – The maximum amount of money, in US Dollars, that you want to spend sending SMS messages per calendar month. If your monthly spending exceeds this value, Amazon Pinpoint and other AWS services stop sending SMS messages from your account.
 **Note**
-If you haven't used Amazon Pinpoint or Amazon SNS to send SMS messages from your AWS account, your account will have a default spending quota of $1.00 (USD). You can request an increase to this account-wide quota. For more information, see [Requesting increases to your monthly SMS or Voice spending quota](https://docs.aws.amazon.com//sms-voice/latest/userguide/awssupport-spend-threshold.html) in the *AWS End User Messaging SMS User Guide*.
+If you haven't used Amazon Pinpoint or Amazon SNS to send SMS messages from your AWS account, your account will have a default spending quota of $1.00 (USD). You can request an increase to this account-wide quota. For more information, see [Requesting increases to your monthly SMS or Voice spending quota](https://docs.aws.amazon.com/sms-voice/latest/userguide/awssupport-spend-threshold.html) in the *AWS End User Messaging SMS User Guide*.
    + **Default sender ID** – The identity that appears on recipients' devices when they receive messages. Support for sender ID capabilities varies by country or region.
 **Important**
 These settings apply to your entire AWS account. When you change these settings, they apply to all other Amazon Pinpoint projects in your account, and to other AWS services that you use to send SMS messages, such as Amazon SNS.
@@ -46,7 +46,7 @@ These settings apply to your entire AWS account. When you change these settings,
 
 You've created a project that's enabled for SMS messaging. Now you can use Amazon Pinpoint to send SMS messages.
 
-Some SMS options, such as dedicated origination numbers or sender IDs, are unavailable until you contact Support. For more information, see [Requesting support for SMS and voice messaging](https://docs.aws.amazon.com//sms-voice/latest/userguide/awssupport.html) in the *AWS End User Messaging SMS User Guide*.
+Some SMS options, such as dedicated origination numbers or sender IDs, are unavailable until you contact Support. For more information, see [Requesting support for SMS and voice messaging](https://docs.aws.amazon.com/sms-voice/latest/userguide/awssupport.html) in the *AWS End User Messaging SMS User Guide*.
 
 To engage an audience segment with an SMS campaign, see [Amazon Pinpoint campaigns](campaigns.md).
 

@@ -25,8 +25,6 @@ To get information about a flow, send a [GetFlow](https://docs.aws.amazon.com/be
 
 To list information about your flows, send a [ListFlows](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_ListFlows.html) request with an [Agents for Amazon Bedrock build-time endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#bra-bt). You can specify the following optional parameters:
 
-****
-
 | Field | Short description |
 | --- | --- |
 | maxResults | The maximum number of results to return in a response. |

@@ -91,8 +91,6 @@ The serial interface commands involved in the implementation of the OTA and Host
 ### 7.2.2 OTA codes:
 <a name="elpg-ota-codes"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | 0 | No OTA in progress. |

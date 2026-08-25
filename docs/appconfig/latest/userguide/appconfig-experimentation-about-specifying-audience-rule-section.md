@@ -125,8 +125,6 @@ The following operators are supported in audience expressions.
 
 Logical operators
 
-****
-
 | Operator | Description | Example |
 | --- | --- | --- |
 | and | Returns true if all conditions are true | `(and (eq $region "us") (eq $system "iPhone"))` |
@@ -134,8 +132,6 @@ Logical operators
 | not | Returns true if the condition is false | `(not (eq $region "eu-west-1"))` |
 
 Comparison operators
-
-****
 
 | Operator | Description | Example |
 | --- | --- | --- |
@@ -147,8 +143,6 @@ Comparison operators
 | gte | Greater than or equal | `(gte $appVersion 5.0)` |
 
 String and set operators
-
-****
 
 | Operator | Description | Example |
 | --- | --- | --- |

@@ -13,7 +13,7 @@ For an example, see [Using Data to Refine Permissions for an Organizational Unit
 
 IAM lets you centrally manage root user credentials and perform privileged tasks on member accounts. After you enable root access management, which enables trusted access for IAM in AWS Organizations, you can centrally secure the root user credentials of member accounts. Member accounts can't sign in to their root user or perform password recovery for their root user. The management account or a delegated administrator account for IAM can also perform some privileged tasks on member accounts using short-term root access. Short-term privileged sessions give you temporary credentials that you can scope to take privileged actions on a member account in your organization.
 
-For more information, see [Centrally manage root access for member accounts](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_root-user.html#id_root-user-access-management) in the *IAM User Guide*.
+For more information, see [Centrally manage root access for member accounts](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html#id_root-user-access-management) in the *IAM User Guide*.
 
 Use the following information to help you integrate AWS Identity and Access Management with AWS Organizations.
 
@@ -72,7 +72,7 @@ You can use the following AWS CLI commands or API operations to disable trusted 
 ## Enabling a delegated administrator account for IAM
 <a name="integrate-enable-da-iam"></a>
 
-When you designate a member account as a delegated administrator for the organization, users and roles from that account can perform privileged tasks on member accounts that otherwise can be performed only by users or roles in the organization's management account. For more information, see [Perform a privileged task on an Organizations member account](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_root-user-privileged-task.html) in the IAM User Guide.
+When you designate a member account as a delegated administrator for the organization, users and roles from that account can perform privileged tasks on member accounts that otherwise can be performed only by users or roles in the organization's management account. For more information, see [Perform a privileged task on an Organizations member account](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user-privileged-task.html) in the IAM User Guide.
 
 Only an administrator in the organization management account can configure a delegated administrator for IAM.
 

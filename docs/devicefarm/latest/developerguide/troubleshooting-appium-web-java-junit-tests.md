@@ -289,4 +289,4 @@ In the following example, the package's name is **zip-with-dependencies.zip**.
 **Note**
 Your tests may not execute correctly if the JUnit version specified in your test package is lower than the minimum version 4.10 we support.
 
-   For more information, see [Automatically run Appium tests in Device FarmIntegrating Appium tests with Device Farm](test-types-appium.md).
+   For more information, see [Automatically run Appium tests in Device Farm](test-types-appium.md).

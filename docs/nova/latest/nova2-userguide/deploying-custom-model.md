@@ -19,7 +19,7 @@ You deploy a custom model from the **Custom models** page as follows. You can al
 
 **To deploy a custom model**
 
-1. Sign in to the AWS Management Console using an [IAM role with Amazon Bedrock permissions](https://docs.aws.amazon.com//bedrock/latest/userguide/getting-started.html), and open the Amazon Bedrock console at [https://console.aws.amazon.com/nova/](https://console.aws.amazon.com/nova/).
+1. Sign in to the AWS Management Console using an [IAM role with Amazon Bedrock permissions](https://docs.aws.amazon.com/bedrock/latest/userguide/getting-started.html), and open the Amazon Bedrock console at [https://console.aws.amazon.com/nova/](https://console.aws.amazon.com/nova/).
 
 1. From the left navigation pane, choose **Custom models** under **Foundation models**.
 

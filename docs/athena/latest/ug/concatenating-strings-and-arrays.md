@@ -18,8 +18,6 @@ SELECT 'This' || ' is' || ' a' || ' test.' AS Concatenated_String
 
 This query returns:
 
-****
-
 | \# | Concatenated\_String |
 | --- | --- |
 | 1 | `This is a test.` |
@@ -31,8 +29,6 @@ SELECT concat('This', ' is', ' a', ' test.') AS Concatenated_String
 ```
 
 This query returns:
-
-****
 
 | \# | Concatenated\_String |
 | --- | --- |
@@ -46,8 +42,6 @@ SELECT concat_ws(' ', 'This', 'is', 'a', 'test.') as Concatenated_String
 
 This query returns:
 
-****
-
 | \# | Concatenated\_String |
 | --- | --- |
 | 1 | `This is a test.` |
@@ -60,8 +54,6 @@ FROM {{my_table}}
 ```
 
 This query returns:
-
-****
 
 | \# | Concatenated\_String |
 | --- | --- |
@@ -79,8 +71,6 @@ SELECT ARRAY [4,5] || ARRAY[ ARRAY[1,2], ARRAY[3,4] ] AS items
 ```
 
 This query returns:
-
-****
 
 | \# | items |
 | --- | --- |
@@ -100,8 +90,6 @@ FROM dataset
 ```
 
 This query returns:
-
-****
 
 | \# | welcome\_msg |
 | --- | --- |

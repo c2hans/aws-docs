@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 # DeleteSchemaMapping
 <a name="API_DeleteSchemaMapping"></a>
 
-Deletes the `SchemaMapping` with a given name. This operation will succeed even if a schema with the given name does not exist. This operation will fail if there is a `MatchingWorkflow` object that references the `SchemaMapping` in the workflow's `InputSourceConfig`.
+Deletes the `SchemaMapping` with a given name. This operation returns a `ResourceNotFoundException` if a schema with the given name does not exist. This operation will fail if there is a `MatchingWorkflow` object that references the `SchemaMapping` in the workflow's `InputSourceConfig`.
 
 ## Request Syntax
 <a name="API_DeleteSchemaMapping_RequestSyntax"></a>
@@ -69,6 +69,10 @@ HTTP Status Code: 400
  ** InternalServerException **
 This exception occurs when there is an internal failure in the AWS Entity Resolution service.
 HTTP Status Code: 500
+
+ ** ResourceNotFoundException **
+The resource couldn't be found.
+HTTP Status Code: 404
 
  ** ThrottlingException **
 The request was denied due to request throttling.

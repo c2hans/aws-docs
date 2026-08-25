@@ -64,8 +64,6 @@ The following table describes important updates to the AWS Health documentation,
 ## Earlier updates
 <a name="earlier-updates"></a>
 
-****
-
 | Change | Description | Date |
 | --- | --- | --- |
 | Updated the organizational view topic to include examples. | See [Aggregating AWS Health events across accounts](aggregate-events.md). | June 3, 2020 |

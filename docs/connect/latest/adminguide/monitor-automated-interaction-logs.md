@@ -68,6 +68,6 @@ If no audio recording is available, the Play option does not appear.
 
 1. See where bot intents are detected and resolved.
 
-1. Knowledge base citation reference is available under the Prompt (inference span) under Span details, when configured and available. To ensure you have your citations configured, see [Knowledge base retrieval configuration](https://docs.aws.amazon.com/connect/latest/adminguide/multiple-knowledge-base-setup-and-content-segmentation.html#add-citation-data-ai-agent-trace).
+1. Knowledge base citation reference is available under the Prompt (inference span) under Span details, when configured and available. To make sure you have your citations configured, see [Knowledge base retrieval configuration](https://docs.aws.amazon.com/connect/latest/adminguide/multiple-knowledge-base-setup-and-content-segmentation.html#add-citation-data-ai-agent-trace).
 
 1. To learn more about enabling AI agent traces, see [AI agent traces](ai-agent-traces.md).

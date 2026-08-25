@@ -13,5 +13,6 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::MediaTailor::Function](aws-resource-mediatailor-function.md)
 + [AWS::MediaTailor::LiveSource](aws-resource-mediatailor-livesource.md)
 + [AWS::MediaTailor::PlaybackConfiguration](aws-resource-mediatailor-playbackconfiguration.md)
++ [AWS::MediaTailor::PrefetchSchedule](aws-resource-mediatailor-prefetchschedule.md)
 + [AWS::MediaTailor::SourceLocation](aws-resource-mediatailor-sourcelocation.md)
 + [AWS::MediaTailor::VodSource](aws-resource-mediatailor-vodsource.md)

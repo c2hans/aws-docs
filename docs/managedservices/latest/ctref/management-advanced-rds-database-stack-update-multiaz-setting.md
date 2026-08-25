@@ -14,8 +14,6 @@ Change the DB instance MultiAZ value through direct API calls. The MultiAZ setti
 ## Change Type Details
 <a name="ct-36jq7gvwyty8h-MARu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-36jq7gvwyty8h |

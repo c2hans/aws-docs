@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awss
 
 AWS Systems Manager Incident Manager provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="ssm-incidents-BatchGetIncidentFindings"></a>[BatchGetIncidentFindings](https://docs.aws.amazon.com/incident-manager/latest/APIReference/API_BatchGetIncidentFindings.html) | Retrieve details about specified findings for an incident record | Read |

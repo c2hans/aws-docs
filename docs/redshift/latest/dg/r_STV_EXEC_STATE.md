@@ -36,6 +36,7 @@ Some or all of the data in this table can also be found in the SYS monitoring vi
 | num\_parts  | integer  | Number of partitions a hash table is divided into during a hash step. A positive number in this column does not imply that the hash step ran as a disk-based operation. Check the value in the IS\_DISKBASED column to see if the hash step was disk-based.  |
 | is\_rrscan  | char(1)  | If true (t), indicates that range-restricted scan was used on the step. Default is false (f).  |
 | is\_delayed\_scan  | char(1)  | If true (t), indicates that delayed scan was used on the step. Default is false (f).  |
+| query\_uuid | character(36) | A globally unique identifier (UUID) of the query. |
 
 ## Sample queries
 <a name="r_STV_EXEC_STATE-sample-queries"></a>

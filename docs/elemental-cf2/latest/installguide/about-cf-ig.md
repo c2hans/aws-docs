@@ -9,8 +9,6 @@ This is version 2.18 of the AWS Elemental Conductor File documentation. This is 
 
 This guide describes how to install AWS Elemental Conductor File software for the first time. The table lists the reference documents for the different types of installation:
 
-****
-
 | Installation type | Description |
 | --- | --- |
 | Node-locked licenses on AWS Elemental appliances | You received AWS Elemental Appliance edition hardware, which comes with the appropriate licenses already installed. For your worker nodes, see [AWS Elemental Server Installation Guide](https://docs.aws.amazon.com/elemental-server/latest/installguide) as well. |

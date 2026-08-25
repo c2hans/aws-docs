@@ -7,6 +7,8 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/drs-service-release
 
 ## August 2026
 <a name="release-notes-august-2026"></a>
++ AWS Elastic Disaster Recovery now supports **recovery plans**. With recovery plans, you can recover groups of source servers in a defined order, with wait times between groups. A recovery plan contains up to 20 ordered steps and up to 100 source servers. Each server step recovers its servers in parallel and must finish before the next step begins, and each server can be marked critical or optional to control whether its failure stops the plan. You can run a plan as a drill or as a recovery, follow its progress per step and per server, and retry, skip, or cancel steps while it runs. Recovery plans are available in the AWS Elastic Disaster Recovery console and through the AWS Elastic Disaster Recovery API. For more information, see [Orchestrating recovery with recovery plans](recovery-plans.md).
++ [AWS managed policy update](security-iam-awsmanpol.md) – We updated the AWSElasticDisasterRecoveryReadOnlyAccess policy with new read-only permissions for recovery plans and recovery plan executions.
 + AWS Elastic Disaster Recovery automatically preserves Unified Extensible Firmware Interface (UEFI) boot mode for Linux source servers that boot using UEFI firmware. Previously, AWS Elastic Disaster Recovery converted Linux UEFI source servers to legacy Basic Input/Output System (BIOS) during recovery and drill launches. With this change, your recovered instances launch with the same UEFI boot mode as your source servers. This eliminates the need for post-launch boot configuration adjustments.
 + With AWS Elastic Disaster Recovery, you can now protect source servers that have volumes of up to 64 TiB, increased from 16 TiB. To replicate a volume larger than 16 TiB, choose the gp3 staging disk type.
 + For gp3 staging disks that you configure manually, you can now provision up to 80,000 IOPS and 2,000 MiB/s of throughput, increased from 16,000 IOPS and 1,000 MiB/s.
@@ -42,7 +44,7 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/drs-service-release
 
 ## July 2024
 <a name="release-notes-july-2024"></a>
-+ AWS Elastic Disaster Recovery now supports [Flexible Instance Types](https://docs.aws.amazon.com//drs/latest/userguide/flexible-instance-types.html).
++ AWS Elastic Disaster Recovery now supports [Flexible Instance Types](https://docs.aws.amazon.com/drs/latest/userguide/flexible-instance-types.html).
 + [AWS managed policy updates](security-iam-awsmanpol.md) – Created managed policy revisions to support FlexibleInstances feature for DRS. The following managed policies were updated:
   + AWSElasticDisasterRecoveryConsoleFullAccess\_v2
   + AWSElasticDisasterRecoveryReadOnlyAccess

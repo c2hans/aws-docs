@@ -25,8 +25,6 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_customer-profiles-actions-as-permissions).
 
-****
-
 - **   AddProfileKey  **
   - **IAM action:**  [profile:AddProfileKey](#list_customer-profiles-action-AddProfileKey)
   - **Condition key:**
@@ -86,10 +84,8 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [profile:TagResource](#list_customer-profiles-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
 - **   CreateRecommenderSchema  **
-  - **IAM action:**  [profile:CreateRecommenderSchema](#list_customer-profiles-action-CreateRecommenderSchema)
-  - **Condition key:**
-  - **Possible value(s):**
-  - **Access level:** Write
+  - **IAM action:**  [profile:CreateRecommenderSchema](#list_customer-profiles-action-CreateRecommenderSchema)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [profile:TagResource](#list_customer-profiles-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
 - **   CreateSegmentDefinition  **
   - **IAM action:**  [profile:CreateSegmentDefinition](#list_customer-profiles-action-CreateSegmentDefinition)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
@@ -643,8 +639,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
 <a name="list_customer-profiles-actions-as-permissions"></a>
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
-
-****
 
 - **   [AddProfileKey](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_AddProfileKey.html)  **
   - **Description:** Grants permission to add a profile key
@@ -1329,8 +1323,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 The following actions are defined by Amazon Connect Customer Profiles but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 - **   [CreateSnapshot](${UserGuideDocPage}set-up-bulk-export.html)  **
   - **Description:** Grants permission to create a snapshot in the domain
   - **Resource types (\*required):** [domains\*](#list_customer-profiles-resource-domains)
@@ -1347,8 +1339,6 @@ The following actions are defined by Amazon Connect Customer Profiles but are no
 <a name="list_customer-profiles-resources-for-iam-policies"></a>
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
-
-****
 
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
@@ -1369,8 +1359,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_customer-profiles-policy-keys"></a>
 
 Amazon Connect Customer Profiles defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

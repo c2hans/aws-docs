@@ -113,7 +113,7 @@ Some of the reasons in the following list might not be applicable to this specif
 + IMMUTABLE\_POLICY: You specified a policy that is managed by AWS and can't be modified.
 + INPUT\_REQUIRED: You must include a value for all required parameters.
 + INVALID\_EMAIL\_ADDRESS\_TARGET: You specified an invalid email address for the invited account owner.
-+ INVALID\_END\_DATE: The selected withdrawal date doesn't meet the terms of your partner agreement. Visit AWS Partner Central to view your partner agreements or contact your AWS Partner for help.
++ INVALID\_END\_DATE: The selected withdrawal date doesn't meet the minimum notice period required by your partner agreement. Visit AWS Partner Central or contact your AWS Channel Partner for help.
 + INVALID\_ENUM: You specified an invalid value.
 + INVALID\_ENUM\_POLICY\_TYPE: You specified an invalid policy type string.
 + INVALID\_FULL\_NAME\_TARGET: You specified a full name that contains invalid characters.

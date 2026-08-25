@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awss
 
 AWS Shield network security director provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="network-security-director-GetFinding"></a>[GetFinding](https://docs.aws.amazon.com/network-security-director/latest/APIReference/API_GetFinding.html) | Get a finding | Read |

@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/IoTCore-ST-VPC
 
 AWS IoT Device Management secure tunneling supports interface VPC endpoints. You can use VPC endpoints to keep traffic between your VPC and AWS IoT Secure Tunneling within the AWS network, without requiring an internet gateway, NAT device, VPN connection, or AWS Direct Connect connection.
 
-Interface VPC endpoints are powered by [AWS PrivateLink](https://docs.aws.amazon.com//vpc/latest/privatelink/what-is-privatelink.html), a technology that enables you to privately access services by using private IP addresses. For more information, see [Access an AWS service using an interface VPC endpoint](https://docs.aws.amazon.com//vpc/latest/privatelink/create-interface-endpoint.html) in the AWS PrivateLink Guide.
+Interface VPC endpoints are powered by [AWS PrivateLink](https://docs.aws.amazon.com/vpc/latest/privatelink/what-is-privatelink.html), a technology that enables you to privately access services by using private IP addresses. For more information, see [Access an AWS service using an interface VPC endpoint](https://docs.aws.amazon.com/vpc/latest/privatelink/create-interface-endpoint.html) in the AWS PrivateLink Guide.
 
 **Topics**
 + [Prerequisites](#Create-ST-VPC-endpoints-prereq)
@@ -39,7 +39,7 @@ You can create VPC endpoints for both secure tunneling control plane and proxy s
 
 **To create a VPC endpoint for secure tunneling**
 
-1. Follow the steps in [Creating an interface endpoint](https://docs.aws.amazon.com//vpc/latest/privatelink/create-interface-endpoint.html) in the Amazon VPC Developer Guide
+1. Follow the steps in [Creating an interface endpoint](https://docs.aws.amazon.com/vpc/latest/privatelink/create-interface-endpoint.html) in the Amazon VPC Developer Guide
 
 1. For **Service name**, choose one of the following options based on your endpoint type:
 
@@ -211,4 +211,4 @@ After you create and configure your VPC endpoints for AWS IoT Secure Tunneling, 
 + Monitor VPC endpoint usage through Amazon CloudWatch metrics.
 + Review and update your VPC endpoint policies as needed for your security requirements.
 
-For more information about AWS IoT Device Management secure tunneling, see [AWS IoT Secure Tunneling](https://docs.aws.amazon.com//iot/latest/developerguide/secure-tunneling.html).
+For more information about AWS IoT Device Management secure tunneling, see [AWS IoT Secure Tunneling](https://docs.aws.amazon.com/iot/latest/developerguide/secure-tunneling.html).

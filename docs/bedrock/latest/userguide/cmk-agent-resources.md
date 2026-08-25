@@ -10,23 +10,21 @@ You can at any time create a customer managed key to encrypt your agent’s info
 **Note**
 The following agent resources will only be encrypted for the agents created after January 22, 2025.
 
-****
-
-- **[CreateAgent](https://docs.aws.amazon.com//bedrock/latest/APIReference/API_agent_CreateAgent.html)**
+- **[CreateAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateAgent.html)**
   - **CMK enabled fields:** instruction / **Description:** Instructs the agent on what it should do and how it should interact with users
   - **CMK enabled fields:** basePromptTemplate / **Description:** Defines the prompt template with which to replace the default prompt template
 
-- **[CreateAgentActionGroup](https://docs.aws.amazon.com//bedrock/latest/APIReference/API_agent_CreateAgentActionGroup.html)**
+- **[CreateAgentActionGroup](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateAgentActionGroup.html)**
   - **CMK enabled fields:** description / **Description:** Description of the action group
-  - **CMK enabled fields:** [apiSchema](https://docs.aws.amazon.com//bedrock/latest/APIReference/API_agent_APISchema.html) / **Description:** Contains either the details of the apiSchema for the agent action group or the JSON or YAML-formatted payload defining the schema
-  - **CMK enabled fields:** [s3](https://docs.aws.amazon.com//bedrock/latest/APIReference/API_agent_APISchema.html) / **Description:** Contains details about the Amazon S3 object containing the apiSchema for the agent action group
+  - **CMK enabled fields:** [apiSchema](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_APISchema.html) / **Description:** Contains either the details of the apiSchema for the agent action group or the JSON or YAML-formatted payload defining the schema
+  - **CMK enabled fields:** [s3](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_APISchema.html) / **Description:** Contains details about the Amazon S3 object containing the apiSchema for the agent action group
   - **CMK enabled fields:** functionSchema / **Description:** Contains details of the function schema for the agent action group or the JSON-YAML formatted payload defining the schema
 
-- **[AssociateAgentKnowledgeBase](https://docs.aws.amazon.com//bedrock/latest/APIReference/API_agent_AssociateAgentKnowledgeBase.html)**
+- **[AssociateAgentKnowledgeBase](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_AssociateAgentKnowledgeBase.html)**
   - **CMK enabled fields:** description
   - **Description:** Description of what the agent should use the knowledge base for
 
-- **[AssociateAgentCollaborator](https://docs.aws.amazon.com//bedrock/latest/APIReference/API_agent_AssociateAgentCollaborator.html)**
+- **[AssociateAgentCollaborator](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_AssociateAgentCollaborator.html)**
   - **CMK enabled fields:** collaborationInstruction
   - **Description:** Instructions for the collaborator agent
 
@@ -143,4 +141,4 @@ Amazon Bedrock agents do not support re-encryption of versioned agents when the 
 
 Make sure you are not deleting or removing permissions for any keys for a versioned agent if using it to serve production data.
 
-To view and verify the keys being used by a version, call [GetAgentVersion](https://docs.aws.amazon.com//bedrock/latest/APIReference/API_agent_GetAgentVersion.html) and check the `customerEncryptionKeyArn` in the response.
+To view and verify the keys being used by a version, call [GetAgentVersion](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_GetAgentVersion.html) and check the `customerEncryptionKeyArn` in the response.

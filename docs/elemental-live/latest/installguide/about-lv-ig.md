@@ -13,8 +13,6 @@ This guide applies to all versions of the software that are currently available 
 
 This guide describes how to install AWS Elemental Live software for the first time. The following table identifies the guide to read for the type of hardware you have obtained.
 
-****
-
 | Type of hardware | Description | Section in this guide |
 | --- | --- | --- |
 | AWS Elemental appliances | You obtained an AWS Elemental appliance. This hardware comes with the software and the appropriate licenses already installed. You don't need to perform any installation. Instead, you need to complete setup of the appliance. See the [AWS Elemental Live Configuration Guide](https://docs.aws.amazon.com/elemental-live/latest/configguide/). | None |

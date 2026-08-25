@@ -14,8 +14,6 @@ Use to update an Amazon GuardDuty ThreatIntelSet instance which is a list of tru
 ## Change Type Details
 <a name="ct-2rnjx5yd6jgpt-MMGu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2rnjx5yd6jgpt |

@@ -53,12 +53,12 @@ These procedures describe how to register a certificate from a certificate autho
 <a name="register-CA-cert-console"></a>
 
 **Note**
-To register a CA certificate in the console, start in the console at [Register CA certificate](https://console.aws.amazon.com//iot/home#/create/cacertificate). You can register your CA in Multi-account mode and without the need to provide a verification certificate or access to the private key. A CA can be registered in Multi-account mode by multiple AWS accounts in the same AWS Region. You can register your CA in Single-account mode by providing a verification certificate and proof of ownership of CA’s private key.
+To register a CA certificate in the console, start in the console at [Register CA certificate](https://console.aws.amazon.com/iot/home#/create/cacertificate). You can register your CA in Multi-account mode and without the need to provide a verification certificate or access to the private key. A CA can be registered in Multi-account mode by multiple AWS accounts in the same AWS Region. You can register your CA in Single-account mode by providing a verification certificate and proof of ownership of CA’s private key.
 
 ### Register a CA certificate (CLI)
 <a name="register-CA-cert-cli"></a>
 
-You can register a CA certificate in `DEFAULT` mode or `SNI_ONLY` mode. A CA can be registered in `DEFAULT` mode by one AWS account in one AWS Region. A CA can be registered in `SNI_ONLY` mode by multiple AWS accounts in the same AWS Region. For more information about CA certificate mode, see [certificateMode](https://docs.aws.amazon.com//iot/latest/apireference/API_CACertificateDescription.html#iot-Type-CACertificateDescription-certificateMode).
+You can register a CA certificate in `DEFAULT` mode or `SNI_ONLY` mode. A CA can be registered in `DEFAULT` mode by one AWS account in one AWS Region. A CA can be registered in `SNI_ONLY` mode by multiple AWS accounts in the same AWS Region. For more information about CA certificate mode, see [certificateMode](https://docs.aws.amazon.com/iot/latest/apireference/API_CACertificateDescription.html#iot-Type-CACertificateDescription-certificateMode).
 
 **Note**
 We recommend that you register a CA in `SNI_ONLY` mode. You don't need to provide a verification certificate or access to the private key, and you can register the CA by multiple AWS accounts in the same AWS Region.
@@ -195,7 +195,7 @@ To see the status of the CA certificate, use the **describe-ca-certificate** com
 
 **Note**
 This procedure is only for use if you are registering a CA certificate from the AWS IoT console.
-If you did not come to this procedure from the AWS IoT console, start the CA certificate registration process in the console at [Register CA certificate](https://console.aws.amazon.com//iot/home#/create/cacertificate).
+If you did not come to this procedure from the AWS IoT console, start the CA certificate registration process in the console at [Register CA certificate](https://console.aws.amazon.com/iot/home#/create/cacertificate).
 
 Make sure you have the following available on the same computer before you continue:
 + The root CA's certificate file (referenced in the following example as `{{root_CA_cert_filename.pem}}`)

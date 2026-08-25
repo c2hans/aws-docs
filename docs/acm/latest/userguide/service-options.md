@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/service-options.htm
 
 AWS offers several ways to issue and manage X.509 certificates. Choose the option that best fits your use case.
 
-****
-
 |  | **ACM** | **ACM with ACME** | **AWS Private CA (direct issuance)** |
 | --- | --- | --- | --- |
 | Best for | Public or private certificates for AWS integrated services (Elastic Load Balancing, CloudFront, API Gateway) | Public certificates for customer-managed infrastructure (on-premises, Kubernetes, hybrid) | Private certificates where you supply the CSR and manage the private key yourself |

@@ -51,8 +51,6 @@ The list of eligible `X$` tables can change over time. To make sure that your li
 
 To create an `RDS_X$` view on an eligible `X$` table, use the RDS procedure `rdsadmin.rdsadmin_util.create_sys_x$_view`. You can only create views for the tables listed in the output of `rdsadmin.rdsadmin_util.list_allowed_sys_x$_views`. The `create_sys_x$_view` procedure accepts the following parameters.
 
-****
-
 | Parameter name | Data type | Default | Required | Description |
 | --- | --- | --- | --- | --- |
 | `p_x$_tbl` | varchar2 | Null | Yes | A valid `X$` table name. The value must be one of the `X$` tables reported by `list_allowed_sys_x$_views`. |
@@ -112,8 +110,6 @@ X$KCBWBPD                      VALID
 <a name="Appendix.Oracle.CommonDBATasks.drop-X-dollar"></a>
 
 To drop a `SYS.RDS_X$` view, use the RDS procedure `rdsadmin.rdsadmin_util.drop_sys_x$_view`. You can only drop views listed in the output of `rdsadmin.rdsadmin_util.list_allowed_sys_x$_views`. The `drop_sys_x$_view` procedure accepts the following parameter.
-
-****
 
 | Parameter name | Data type | Default | Required | Description |
 | --- | --- | --- | --- | --- |

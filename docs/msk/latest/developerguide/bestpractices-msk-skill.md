@@ -14,7 +14,7 @@ The skill covers the following areas, each of which maps to best practices docum
 
 |  | Best practice area | What the skill helps you do |
 | --- | --- | --- |
-| 1 | [Best practices for Standard brokersClient-side considerations](bestpractices.md) (Standard) | Assess partition counts per broker, recommend instance sizes, evaluate num.io.threads and num.network.threads tuning for m5.4xl\+ and m7g.4xl\+ instances |
+| 1 | [Best practices for Standard brokers](bestpractices.md) (Standard) | Assess partition counts per broker, recommend instance sizes, evaluate num.io.threads and num.network.threads tuning for m5.4xl\+ and m7g.4xl\+ instances |
 | 2 | [Best practices for Express brokers](bestpractices-express.md) (Express) | Calculate required broker count based on per-broker throughput limits, recommend Express instance types for target ingress/egress, evaluate partition counts against Express quotas |
 | 3 | [Monitor CPU usage](bestpractices.md#bestpractices-monitor-cpu) | Diagnose broker resource saturation, differentiate between broker-side and client-side root causes and misconfigurations, and determine when scaling is needed |
 | 4 | [Monitor disk space](bestpractices.md#bestpractices-monitor-disk-space) | Assess storage usage for Standard brokers, identify high-growth topics, recommend EBS expansion or retention adjustments. For Express, monitor storage utilization (storage is fully managed) for cost optimization |

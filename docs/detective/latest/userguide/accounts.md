@@ -13,7 +13,7 @@ Each behavior graph contains data from one or more accounts. A behavior graph ca
 
 If you are integrated with AWS Organizations, then the organization management account designates the Detective administrator account for the organization. That Detective administrator account then becomes the administrator account for the organization behavior graph. The Detective administrator account can enable any organization account as a member account in the organization behavior graph. Organization accounts cannot remove themselves from the organization behavior graph.
 
-Detective charges each account for the data that it contributes to each behavior graph. For information on tracking the volume of data for each account in a behavior graph, see [Forecasting and monitoring Amazon Detective costs](https://docs.aws.amazon.com//detective/latest/userguide/tracking-usage-logging.html).
+Detective charges each account for the data that it contributes to each behavior graph. For information on tracking the volume of data for each account in a behavior graph, see [Forecasting and monitoring Amazon Detective costs](https://docs.aws.amazon.com/detective/latest/userguide/tracking-usage-logging.html).
 
 **Topics**
 + [Account restrictions and recommendations in Detective](accounts-restrictions-recommendations.md)

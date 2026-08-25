@@ -10,7 +10,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 Additional settings that directly map to SlurmDBD settings.
 
 **Important**
-AWS PCS supports a subset of SlurmDBD settings. For more information, see [Configuring custom SlurmDBD settings in AWS PCS](https://docs.aws.amazon.com//pcs/latest/userguide/slurmdbd-custom-settings.html) in the *AWS PCS User Guide*.
+AWS PCS supports a subset of SlurmDBD settings. For more information, see [Configuring custom SlurmDBD settings in AWS PCS](https://docs.aws.amazon.com/pcs/latest/userguide/slurmdbd-custom-settings.html) in the *AWS PCS User Guide*.
 
 ## Syntax
 <a name="aws-properties-pcs-cluster-slurmdbdcustomsetting-syntax"></a>
@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-pcs-cluster-slurmdbdcustomsetting-properties"></a>
 
 `ParameterName`  <a name="cfn-pcs-cluster-slurmdbdcustomsetting-parametername"></a>
-AWS PCS supports custom SlurmDBD settings for clusters. For more information, see [Configuring custom SlurmDBD settings in AWS PCS](https://docs.aws.amazon.com//pcs/latest/userguide/slurmdbd-custom-settings.html) in the *AWS PCS User Guide*.
+AWS PCS supports custom SlurmDBD settings for clusters. For more information, see [Configuring custom SlurmDBD settings in AWS PCS](https://docs.aws.amazon.com/pcs/latest/userguide/slurmdbd-custom-settings.html) in the *AWS PCS User Guide*.
 *Required*: Yes
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

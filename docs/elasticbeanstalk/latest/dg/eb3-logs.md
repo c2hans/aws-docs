@@ -46,8 +46,6 @@ eb logs --analyze [{{environment-name}}]
 ## Options
 <a name="eb3-logsoptions"></a>
 
-****
-
 |  Name  |  Description  |
 | --- | --- |
 | `-cw [enable \| disable]`<br />or<br />`--cloudwatch-logs [enable \| disable]` | Enables or disables log streaming to CloudWatch Logs. If no argument is supplied, log streaming is enabled. If the `--cloudwatch-log-source` (`-cls`) option isn't specified in addition, instance log streaming is enabled or disabled. |

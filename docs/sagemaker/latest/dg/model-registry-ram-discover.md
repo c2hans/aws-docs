@@ -105,6 +105,6 @@ Different combinations of actions can be attached to the resource policy. For cu
 
    1. Review the displayed share configuration and then choose **Create resource share**.
 
-1. Accept the resource share invitation from the consumer account. Once the model owner creates the resource share and principal associations, the specified resource consumer accounts receive an invitation to join the resource share. The resource consumer accounts can view and accept the invitations in the [Shared with me: Resource shares](https://console.aws.amazon.com/ram/home#SharedResourceShares:) page in the AWS RAM console. For more information about accepting and viewing resources in AWS RAM, see [Access AWS resources shared with you](https://docs.aws.amazon.com//ram/latest/userguide/working-with-shared.html).
+1. Accept the resource share invitation from the consumer account. Once the model owner creates the resource share and principal associations, the specified resource consumer accounts receive an invitation to join the resource share. The resource consumer accounts can view and accept the invitations in the [Shared with me: Resource shares](https://console.aws.amazon.com/ram/home#SharedResourceShares:) page in the AWS RAM console. For more information about accepting and viewing resources in AWS RAM, see [Access AWS resources shared with you](https://docs.aws.amazon.com/ram/latest/userguide/working-with-shared.html).
 
 ------

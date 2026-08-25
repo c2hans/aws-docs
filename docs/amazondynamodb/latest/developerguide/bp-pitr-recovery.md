@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-
 
 The following are the best practices for using point-in-time recovery (PITR) to return a table to a previous state.
 
-Use these best practices if you notice mistaken writes to your table that you want to reverse. There are two approaches discussed here.
+Use these best practices if you notice mistaken writes to your table that you want to reverse. You can either restore the full table from a point in time, or roll back specific unwanted writes in-place.
 
 **Topics**
 + [Recovery by initiating a table restore](bp-pitr-recovery-table-restore.md)

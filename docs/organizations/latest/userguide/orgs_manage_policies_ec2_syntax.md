@@ -80,7 +80,7 @@ The following are the available fields for this attribute:
   + `"enabled"`: Exclusions can be created by the account.
   + `"disabled"`: Exclusions cannot be created by the account.
 **Note**
-You can use the attribute to configure if exclusions are allowed, but you cannot create exclusions with this attribute itself. To create exclusions, you must create them in the account that owns the VPC. For more information about creating VPC BPA exclusions, see [Create and delete exclusions](https://docs.aws.amazon.com//vpc/latest/userguide/security-vpc-bpa.html#security-vpc-bpa-exclusions) in the *Amazon VPC User Guide*.
+You can use the attribute to configure if exclusions are allowed, but you cannot create exclusions with this attribute itself. To create exclusions, you must create them in the account that owns the VPC. For more information about creating VPC BPA exclusions, see [Create and delete exclusions](https://docs.aws.amazon.com/vpc/latest/userguide/security-vpc-bpa.html#security-vpc-bpa-exclusions) in the *Amazon VPC User Guide*.
 
 **Considerations**
 

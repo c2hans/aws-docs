@@ -178,7 +178,7 @@ The example covers authoring the various required CloudFormation infrastructure 
 
 1. Create a directly defined component. AWS Proton assumes the component role that the administrator defined to provision the component.
 
-   In the AWS Proton console, on the [Components](https://console.aws.amazon.com//proton/#/components) page, choose **Create component**. For **Component settings**, enter a **Component name** and an optional **Component description**. For **Component attachment**, choose **Attach the component to a service instance.** Select your environment, service, and service instance. For **Component source**, choose **CloudFormation**, and then choose the component IaC file.
+   In the AWS Proton console, on the [Components](https://console.aws.amazon.com/proton/#/components) page, choose **Create component**. For **Component settings**, enter a **Component name** and an optional **Component description**. For **Component attachment**, choose **Attach the component to a service instance.** Select your environment, service, and service instance. For **Component source**, choose **CloudFormation**, and then choose the component IaC file.
 **Note**
 You don't need to provide a manifest—the console creates one for you.
 

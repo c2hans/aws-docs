@@ -14,8 +14,6 @@ Deploy a revision of an existing AWS CodeDeploy application, which are source fi
 ## Change Type Details
 <a name="ct-2edc3sd1sqmrb-DACd-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2edc3sd1sqmrb |

@@ -218,7 +218,7 @@ All of the considerations for performing replication within an AWS Region apply 
 
   For the Db2 DB engine, you must specify a custom parameter group for the replica. For replicas that use the BYOL model, this custom parameter group must include your IBM Site ID and IBM Customer ID. You can specify this custom parameter group for the replica by using the AWS Management Console, the AWS CLI, or the RDS API. For more information, see [IBM IDs for bring your own license (BYOL) for Db2](db2-licensing.md#db2-prereqs-ibm-info).
 
-  For the MySQL and Oracle DB engines, you can specify a custom parameter group for the read replica in the `--db-parameter-group-name` option of the AWS CLI command [create-db-instance-read-replica](https://docs.aws.amazon.com//cli/latest/reference/rds/create-db-instance-read-replica.html). You can't specify a custom parameter group when you use the AWS Management Console.
+  For the MySQL and Oracle DB engines, you can specify a custom parameter group for the read replica in the `--db-parameter-group-name` option of the AWS CLI command [create-db-instance-read-replica](https://docs.aws.amazon.com/cli/latest/reference/rds/create-db-instance-read-replica.html). You can't specify a custom parameter group when you use the AWS Management Console.
 + The read replica uses the default security group.
 + For Db2, MariaDB, Microsoft SQL Server, MySQL, and Oracle DB instances, when the source DB instance for a cross-Region read replica is deleted, the read replica is promoted.
 + For PostgreSQL DB instances, when the source DB instance for a cross-Region read replica is deleted, the replication status of the read replica is set to `terminated`. The read replica isn't promoted.

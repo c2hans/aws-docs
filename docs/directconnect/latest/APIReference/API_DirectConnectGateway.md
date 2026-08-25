@@ -51,6 +51,12 @@ Type: Array of [Tag](API_Tag.md) objects
 Array Members: Minimum number of 1 item.
 Required: No
 
+ ** totalPrefixPoolAllocations **   <a name="DX-Type-DirectConnectGateway-totalPrefixPoolAllocations"></a>
+The total number of inbound route prefixes allocated to the attachments on the Direct Connect gateway. The count combines the IPv4 and IPv6 address families.
+Type: Integer
+Valid Range: Minimum value of 0.
+Required: No
+
 ## See Also
 <a name="API_DirectConnectGateway_SeeAlso"></a>
 

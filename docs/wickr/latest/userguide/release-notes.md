@@ -9,6 +9,13 @@ This guide provides documentation for AWS Wickr. For Wickr Enterprise, which is 
 
 To help you keep track of the ongoing updates and improvements to Wickr, we publish release notices that describe recent changes.
 
+## August 2026
+<a name="august-2026-updates"></a>
++ Enhancements
+  + **Device sync for password-based accounts** - You can now transfer your account and message history to a new device by scanning a QR code or entering a verification code. Previously, device sync required single sign-on (SSO). For more information, see [AWS Wickr Device sync](device-sync.md).
+  + **Need Help link** - A help link is now available on the sign-in and registration screens to provide quick access to support resources.
+  + Performance improvements and bug fixes.
+
 ## June 2026
 <a name="june-2026-updates"></a>
 + Enhancements

@@ -96,7 +96,7 @@ If no audio recording is available, the Play option does not appear.
 ![AI agent invocation activity showing trace details.](http://docs.aws.amazon.com/connect/latest/adminguide/images/ai-agent-traces-invocation.png)
 
 + When your AI agent calls a Prompt (executed through an inference span), the AI agent is invoking an LLM through Amazon Bedrock. The trace details show model reasoning and tool call information.
-+ Knowledge base citation reference is available under the Prompt (inference span) under Span details, when configured and available. To ensure you have your citations configured, see [Knowledge base retrieval configuration](https://docs.aws.amazon.com/connect/latest/adminguide/multiple-knowledge-base-setup-and-content-segmentation.html#add-citation-data-ai-agent-trace).
++ Knowledge base citation reference is available under the Prompt (inference span) under Span details, when configured and available. To make sure you have your citations configured, see [Knowledge base retrieval configuration](https://docs.aws.amazon.com/connect/latest/adminguide/multiple-knowledge-base-setup-and-content-segmentation.html#add-citation-data-ai-agent-trace).
 + For each tool call, you can view the Tool metadata along with the input parameters passed into the tool call.
 + Latency for each span is displayed on the right to each activity.
 + Choose the **AI agent** or **Prompt** hyperlink to navigate to the AI agent configuration page or the AI agent prompt page, respectively.
@@ -105,7 +105,7 @@ If no audio recording is available, the Play option does not appear.
 
 ![AI agent span details with knowledge base citations.](http://docs.aws.amazon.com/connect/latest/adminguide/images/ai-agent-traces-prompt-details-2.png)
 
-The following labels may appear in the trace:
+The following labels might appear in the trace:
 + **ESC:** Stands for Escalate. Shows you when the AI agent escalated to a human agent.
 + **ERR:** Stands for Error. When the span received an error status. A status description provides the error details. This can include errors such as:
   + **AI barge in:** The end-customer interrupted during AI reasoning or response generation, causing the model inference to stop before the AI agent completed its response.

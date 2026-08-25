@@ -12,7 +12,7 @@ Account access manager enables you to assign AWS account access to your workforc
 
 To access the AWS accounts assigned to them, your workforce users can navigate directly to the account access portal using a bookmark, or launch it from within the AWS access portal.
 
-Your users may interact with two user portals:
+Your users might interact with two user portals:
 
 **Account access portal**
 This is a portal (URL) that allows workforce users to access the AWS accounts assigned to them using account access manager. This portal (URL) can be bookmarked for direct access and is also available in the AWS access portal as an AWS managed application.

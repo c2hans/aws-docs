@@ -217,7 +217,7 @@ The number of read capacity units consumed over the specified time period for bo
 The `TableName` dimension returns the `ConsumedReadCapacityUnits` for the table, but not for any global secondary indexes. To view `ConsumedReadCapacityUnits` for a global secondary index, you must specify both `TableName` and `GlobalSecondaryIndexName`.
 
 **Note**
- This means that short, intense spikes in capacity consumption lasting just a second may not be accurately reflected in the CloudWatch graph, potentially leading to a lower apparent consumption rate for that minute.
+ This means that short, intense spikes in capacity consumption lasting just a second might not be accurately reflected in the CloudWatch graph, potentially leading to a lower apparent consumption rate for that minute.
  Use the `Sum` statistic to calculate the consumed throughput. For example, get the `Sum` value over a span of one minute, and divide it by the number of seconds in a minute (60) to calculate the average `ConsumedReadCapacityUnits` per second. You can compare the calculated value to the provisioned throughput value that you provide DynamoDB.
 
 Units: `Count`
@@ -591,7 +591,7 @@ Valid Statistics:
 The requests to DynamoDB or Amazon DynamoDB Streams that generate an HTTP 500 status code during the specified time period. An HTTP 500 usually indicates an internal service error.
 
 **Note**
-When DynamoDB returns a system error (HTTP 500), most AWS SDKs automatically perform a configurable number of retries. If the issue resolves during a retry, your application continues without seeing the error, and you may notice increased client-side perceived latency. If the error persists after all retries, it propagates to your application code.
+When DynamoDB returns a system error (HTTP 500), most AWS SDKs automatically perform a configurable number of retries. If the issue resolves during a retry, your application continues without seeing the error, and you might notice increased client-side perceived latency. If the error persists after all retries, it propagates to your application code.
 
 **Note**
 The HTTP 500 errors that AWS FIS injects during a fault injection experiment are also counted in `SystemErrors`, in addition to being counted in `FaultInjectionServiceInducedErrors`. As a result, alarms on `SystemErrors` fire while an experiment is running. To distinguish experiment-induced errors from organic service errors, compare `SystemErrors` with `FaultInjectionServiceInducedErrors` for the same period.

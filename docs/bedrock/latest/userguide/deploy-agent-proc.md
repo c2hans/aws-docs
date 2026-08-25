@@ -39,11 +39,9 @@ The following procedure shows you how to create an alias and a version for your 
   To create an alias for an agent, send a [CreateAgentAlias](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateAgentAlias.html) request with an [Agents for Amazon Bedrock build-time endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#bra-bt).
 
   The following fields are required:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/deploy-agent-proc.html)
 
   The following fields are optional:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/deploy-agent-proc.html)
 
   ```

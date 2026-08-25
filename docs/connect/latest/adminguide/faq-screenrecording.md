@@ -22,9 +22,6 @@ This topic provides frequently asked questions about using Connect Customer scre
 + **Which Connect Customer channels are supported?**
 
   You can generate screen recordings for voice, chat, and task contacts. Screen recording is not supported for email contacts.
-+ **Do you capture the entire screen?**
-
-  Screen recording captures only the Connect Customer agent workspace tabs, not the entire desktop.
 + **Does screen recording support concurrent user sessions on Windows using Virtual Desktop Infrastructure (VDI) environments?**
 
   Yes, screen recording supports concurrent user sessions on Windows when using Connect Customer Client Application version 2.0.0 or later.
@@ -53,7 +50,7 @@ During a video call or screen sharing session, agents are able to see the custom
    Screen recording is designed to work with custom CCP and agent workspace built with the [Connect Customer Streams JS library](https://github.com/amazon-connect/amazon-connect-streams). We recommend testing your custom solution before deploying screen recording in production.
 + **Can I use screen recording anywhere in the world?**
 
-  Screen recording is available in AWS GovCloud (US) and all AWS commercial Regions where Connect Customer is available. However, your use of screen recording may be subject to compliance with privacy and other laws. Please consult your compliance team before enabling this capability for your agents.
+  Screen recording is available in AWS GovCloud (US) and all AWS commercial Regions where Connect Customer is available. However, your use of screen recording might be subject to compliance with privacy and other laws. Please consult your compliance team before enabling this capability for your agents.
 
   To use screen recording in AWS GovCloud (US-West) requires client version 2.0.3 or later.
 + **Are agents alerted when screen recording is enabled for a contact?**
@@ -61,7 +58,7 @@ During a video call or screen sharing session, agents are able to see the custom
   By default Connect Customer doesn't provide a notification feature. However, you can use the [Connect Customer Streams JS library](https://github.com/amazon-connect/amazon-connect-streams/blob/master/cheat-sheet.md) to create a notice or other visual indicator on an agent's desktop to signal that screen recording is in use.
 + **What happens if an agent closes the browser during a contact, or immediately after a contact ends?**
 
-  If the browser is closed at the beginning of contact before any screen capture data can be uploaded to Connect Customer, the final screen recording may not be published. If the browser is closed immediately after a contact ends but before the final screen capture data can be uploaded, the screen recording is published when the agent next logs in to CCP.
+  If the browser is closed at the beginning of contact before any screen capture data can be uploaded to Connect Customer, the final screen recording might not be published. If the browser is closed immediately after a contact ends but before the final screen capture data can be uploaded, the screen recording is published when the agent next logs in to CCP.
 + **Does screen recording STOP when an agent places a customer on hold?**
 
   No, the screen recording continues recording when an agent places a customer on hold.
@@ -82,7 +79,7 @@ During a video call or screen sharing session, agents are able to see the custom
   You can use the [Distribute by percentage](distribute-by-percentage.md) block in the flow to enable a percentage of contacts for screen recording.
 + **What is the average size of a screen recording file per minute in S3?**
 
-  The average size of screen recording is 1.5MB/minute. This size can vary depending on factors like video encoding etc.
+  The average size of screen recording is 1.5MB/minute. This size can vary depending on factors like video encoding.
 + **What is the frame rate for screen recording and is this configurable?**
 
   The screen is recorded at 5 frames per second and this is not configurable.
@@ -91,7 +88,13 @@ During a video call or screen sharing session, agents are able to see the custom
   Screen recording uses OpenH264 codec.
 + **Is there a way to choose which audio (redacted or unredacted) gets used for screen recording?**
 
-  By default, the screen recording uses the unredacted audio. If you enable [rule-based redaction](rule-based-redaction-screen-recording.md) for the contact, the redacted screen recording is stitched with the redacted call recording when conversational analytics call recording redaction is also enabled for the contact, and has no audio otherwise.
+  By default, the screen recording uses unredacted audio.
+
+  To preserve screen content and use redacted call audio, enable screen recording and [rule-based redaction](configure-rule-based-redaction.md) in the contact flow. Select **Denylist** and leave the URL and window title rule lists empty. Enable conversational analytics call recording redaction for the contact.
+
+  The resulting redacted screen recording preserves screen content and contains redacted audio. Without conversational analytics call recording redaction, the redacted screen recording has no audio.
+
+  Grant the **Screen recording (redacted) - Access** permission to anyone who needs access to the redacted recording. Remove the **Screen recording - Access** permission from anyone who must not access the original recording.
 + **Is there a service limit for screen recording?**
 
   No, there is no service limit or quota for screen recording service.
@@ -106,13 +109,13 @@ During a video call or screen sharing session, agents are able to see the custom
   No, the same key should be used at bucket level and also as part of instance data storage configuration.
 + **Where are screen recordings stored?**
 
-  Screen recordings are delivered to your Amazon S3 bucket under the following prefix:
+  Screen recordings are delivered to your Amazon S3 bucket under your configured prefix:
 
   ```
-  s3://{{your-bucket}}/connect/{{your-instance-alias}}/ScreenRecordings/{{year}}/{{month}}/{{day}}/{{contact-id}}_{{UTC-timestamp}}.mp4
+  s3://{{your-bucket}}/{{your-prefix}}/{{year}}/{{month}}/{{day}}/{{contact-id}}_{{UTC-timestamp}}.mp4
   ```
 
-  By default, the path prefix is `ScreenRecordings`, but this prefix is configurable.
+  Here, {{your-prefix}} is the Amazon S3 prefix configured for your instance. The console default is `connect/{{your-instance-alias}}/ScreenRecordings`, and the prefix is configurable.
 
 ### Performance
 <a name="faq-sr-performance"></a>
@@ -121,7 +124,7 @@ During a video call or screen sharing session, agents are able to see the custom
   We recommend 500 Kbps bandwidth for screen recording, regardless of the number of concurrent contacts. The system requirements specify 600 Kbps total network bandwidth to account for additional agent workstation traffic.
 + **Why do I see higher CPU usage after installing screen recording client application on my windows machine?**
 
-  Screen recording in general is a CPU intensive application and hence CPU use increase is expected. We recommend ensuring you provide sufficient resources as documented in [System requirements](sr-system-req.md#sr-requirements) to avoid any resource contention issues.
+  Screen recording in general is a CPU intensive application and hence CPU use increase is expected. We recommend making sure you provide sufficient resources as documented in [System requirements](sr-system-req.md#sr-requirements) to avoid any resource contention issues.
 
 ## Rule-based redaction FAQ
 <a name="faq-sr-rule-based-redaction"></a>
@@ -158,7 +161,7 @@ During a video call or screen sharing session, agents are able to see the custom
   + Each browser window is evaluated independently. A matching window is masked; non-matching windows remain visible.
   + For multiple tabs in the same window, redaction follows the visible tab. If the visible tab matches a rule, the whole window is masked. If a matching page is open but is not the visible tab, that window is not masked.
   + A matching window stays masked whenever it is visible, even if the agent is working in another window beside it. Only the visible portion is masked — if the matching window is covered, minimized, or on an inactive tab, there is nothing on screen to mask.
-  + On the first contact after an agent begins their session, if a matching page was opened before the extension observed it, that window may briefly not be masked at the start of the recording. Redaction applies as soon as the agent selects any tab in the window, and subsequent contacts are unaffected.
+  + On the first contact after an agent begins their session, if a matching page was opened before the extension observed it, that window might briefly not be masked at the start of the recording. Redaction applies as soon as the agent selects any tab in the window, and subsequent contacts are unaffected.
 + **Does rule-based redaction pause or stop the recording when a matching window is detected?**
 
   No. The agent's screen is captured continuously throughout the contact. Matching windows are masked only in the final redacted recording that is produced after the contact ends; the capture itself is never paused.
@@ -177,7 +180,7 @@ During a video call or screen sharing session, agents are able to see the custom
 + **What happens if the Connect Customer browser extension fails or is not running?**
 
   Because redaction is applied after the contact ends, the extension does no real-time video processing during the contact — it only reports page URLs and window titles — so it is unlikely to affect the responsiveness of the agent's desktop. The possible failure cases are:
-  + If the extension is not installed or not running, URLs are not reported, so URL rules cannot match and browser pages that should be redacted by URL may appear in the recording. Window title rules do not depend on the extension and continue to work.
+  + If the extension is not installed or not running, URLs are not reported, so URL rules cannot match and browser pages that should be redacted by URL might appear in the recording. Window title rules do not depend on the extension and continue to work.
   + The extension does not connect to Connect Customer directly; it communicates with the Connect Customer Client Application on the agent's workstation. If the Connect Customer Client Application is not running, screen recording does not function at all — not only redaction.
   + If the extension fails to report a matching URL during a contact, that page is not masked in the final output, and the unredacted recording still contains the full capture.
 
@@ -193,11 +196,13 @@ During a video call or screen sharing session, agents are able to see the custom
   No. The redaction configuration is fixed for the duration of a contact.
 + **Where are redacted recordings stored?**
 
-  Redacted recordings are stored in the same Amazon S3 bucket as unredacted recordings, under a separate prefix:
+  Redacted recordings are stored in the same Amazon S3 bucket as the unredacted recordings, as a sibling of the unredacted file. The redacted key is rooted at the parent of your configured prefix, under a fixed `Analysis/ScreenRecordings/Redacted/` path.
 
   ```
-  s3://{{your-bucket}}/connect/{{your-instance-alias}}/Analysis/ScreenRecordings/Redacted/{{year}}/{{month}}/{{day}}/{{contact-id}}_screen_recording_redacted_{{UTC-timestamp}}.mp4
+  s3://{{your-bucket}}/{{your-prefix-parent}}/Analysis/ScreenRecordings/Redacted/{{year}}/{{month}}/{{day}}/{{contact-id}}_screen_recording_redacted_{{UTC-timestamp}}.mp4
   ```
+
+  In this path, {{your-prefix-parent}} is your configured screen recordings prefix with its last segment removed. For example, with the console default prefix `connect/{{your-instance-alias}}/ScreenRecordings`, redacted recordings are stored under `connect/{{your-instance-alias}}/Analysis/ScreenRecordings/Redacted/`.
 + **How can I audit whether a specific contact was recorded with redaction enabled?**
 
   The flow that applied the redaction configuration is captured in the contact record. For information about accessing contact records, see [Contact records data model](https://docs.aws.amazon.com/connect/latest/adminguide/ctr-data-model.html).
@@ -209,7 +214,7 @@ During a video call or screen sharing session, agents are able to see the custom
 <a name="faq-rbr-performance"></a>
 + **Does enabling rule-based redaction delay when a recording is available?**
 
-  Your unredacted screen recording is unaffected — it is captured, delivered, and available on the same timeline as before. Redaction runs as a separate post-processing step, so the redacted recording becomes available once both the redacted screen recording and the redacted call recording have finished processing.
+  Your unredacted screen recording is unaffected — it is captured, delivered, and available on the same timeline as before. Redaction runs as a separate post-processing step, so the redacted recording becomes available after both the redacted screen recording and the redacted call recording have finished processing.
 + **How much CPU and memory does the browser extension add?**
 
   The browser extension is lightweight — it only reports page URLs and window titles to the Connect Customer Client Application — and adds roughly 1% additional CPU and memory usage on top of the existing screen recording baseline. The most resource-intensive component remains the screen capture process in the Connect Customer Client Application. Follow the minimum system requirements in [System requirements](sr-system-req.md#sr-requirements).

@@ -23,4 +23,4 @@ Use the steps in this section to download and install the Amazon Redshift ODBC d
 1. Follow the steps in the installer to complete the driver installation process. To perform the installation, agree to the terms of the license agreement.
 
 **Important**
-When you have finished installing the driver, configure it for use on your system. For more information on driver configuration, see [Use an ODBC driver manager to configure the driverUse an ODBC driver manager to configure the driver](odbc-driver-configure-mac.md).
+When you have finished installing the driver, configure it for use on your system. For more information on driver configuration, see [Use an ODBC driver manager to configure the driver](odbc-driver-configure-mac.md).

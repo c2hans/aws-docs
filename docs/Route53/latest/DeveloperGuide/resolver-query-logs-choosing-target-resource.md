@@ -62,4 +62,4 @@ For more information, see the [Amazon Data Firehose Developer Guide](https://doc
 
 For information about the pricing for Resolver query logging, see [Amazon CloudWatch pricing](https://aws.amazon.com/cloudwatch/pricing/).
 
-CloudWatch Vended Logs charges apply when using VPC Resolver logs, even when logs are published directly to Amazon S3. For more information, see [*Logs pricing* at Amazon CloudWatch pricing](https://aws.amazon.com//cloudwatch/pricing/#Vended_Logs).
+CloudWatch Vended Logs charges apply when using VPC Resolver logs, even when logs are published directly to Amazon S3. For more information, see [*Logs pricing* at Amazon CloudWatch pricing](https://aws.amazon.com/cloudwatch/pricing/#Vended_Logs).

@@ -15,7 +15,7 @@ Dynamic thing groups differ from static thing groups in the following ways:
 + Dynamic thing groups can't be part of a hierarchy.
 + Dynamic thing groups can't have policies applied to them.
 + You use a different set of commands to create, update, and delete dynamic thing groups. For all other operations, you use the same commands for both types of thing groups.
-+ The number of dynamic groups per AWS account is [limited](https://docs.aws.amazon.com//general/latest/gr/iot_device_management.html#thing-group-limits).
++ The number of dynamic groups per AWS account is [limited](https://docs.aws.amazon.com/general/latest/gr/iot_device_management.html#thing-group-limits).
 + Don't use personally identifiable information in your thing group name. The thing group name can appear in unencrypted communications and reports.
 
 For more information about static thing groups, see [Static thing groups](thing-groups.md).
@@ -34,22 +34,22 @@ For example, if your device fleet requires a firmware update to minimize the ris
 
 You may also have multiple device models with different firmware or operating system, necessitating different versions of new software updates. This is the most common use case for dynamic groups with continuous jobs, where you can create a dynamic group for each device model, firmware and OS combination. You can then set up continuous jobs to each of these dynamic groups to push software updates as devices automatically become members of these groups based on the defined criteria.
 
-For more information about specifying thing groups as job targets, see [CreateJob](https://docs.aws.amazon.com//iot/latest/apireference/API_CreateJob.html).
+For more information about specifying thing groups as job targets, see [CreateJob](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateJob.html).
 
 ### Use dynamic group membership changes to perform desired actions
 <a name="dynamic-thing-group-use-cases-actions"></a>
 
-Each time a device is added to or removed from a dynamic thing group, a notification is sent to an MQTT topic as part of [registry event](https://docs.aws.amazon.com//iot/latest/developerguide/registry-events.html) updates. You can configure [AWS IoT Core rules](https://docs.aws.amazon.com//iot/latest/developerguide/iot-rules.html) to interact with AWS services based on the dynamic group membership updates and take desired actions. Example actions include writing to Amazon DynamoDB, invoking a Lambda function, or sending a notification to Amazon SNS.
+Each time a device is added to or removed from a dynamic thing group, a notification is sent to an MQTT topic as part of [registry event](https://docs.aws.amazon.com/iot/latest/developerguide/registry-events.html) updates. You can configure [AWS IoT Core rules](https://docs.aws.amazon.com/iot/latest/developerguide/iot-rules.html) to interact with AWS services based on the dynamic group membership updates and take desired actions. Example actions include writing to Amazon DynamoDB, invoking a Lambda function, or sending a notification to Amazon SNS.
 
 ### Add devices to a dynamic thing group for automatic violation detection
 <a name="dynamic-thing-group-use-cases-dd"></a>
 
-AWS IoT Device Defender Detect customers can define a [security profile](https://docs.aws.amazon.com//iot/latest/developerguide/device-defender-detect.html) on a dynamic thing group. Devices of the dynamic thing group are automatically detected for violations by the security profile defined on the group.
+AWS IoT Device Defender Detect customers can define a [security profile](https://docs.aws.amazon.com/iot/latest/developerguide/device-defender-detect.html) on a dynamic thing group. Devices of the dynamic thing group are automatically detected for violations by the security profile defined on the group.
 
 ### Set log levels on dynamic thing groups to observe devices with fine-grained logging
 <a name="dynamic-thing-group-use-cases-log"></a>
 
-You can specify a log level on a dynamic thing group. This is useful if you only want to customize logging level and detail for devices that meet certain criteria. For example, if you suspect devices with certain firmware version are causing errors on a specific rule's published topic, you might want to set detailed logging to debug these issues. In this case, you can create a dynamic group for all devices that have this firmware version, which we assume is stored as a registry attribute or in a device shadow. You can then set a debug level, with logging target defined as this dynamic thing group. For more information about fine-grained logging, see [Monitor AWS IoT using CloudWatch Logs](https://docs.aws.amazon.com//iot/latest/developerguide/cloud-watch-logs.html#fine-grained-logging). For more information about how to specify a logging level for a specific thing group, see [Configure resource-specific logging in AWS IoT](https://docs.aws.amazon.com//iot/latest/developerguide/configure-logging.html#fine-logging-cli).
+You can specify a log level on a dynamic thing group. This is useful if you only want to customize logging level and detail for devices that meet certain criteria. For example, if you suspect devices with certain firmware version are causing errors on a specific rule's published topic, you might want to set detailed logging to debug these issues. In this case, you can create a dynamic group for all devices that have this firmware version, which we assume is stored as a registry attribute or in a device shadow. You can then set a debug level, with logging target defined as this dynamic thing group. For more information about fine-grained logging, see [Monitor AWS IoT using CloudWatch Logs](https://docs.aws.amazon.com/iot/latest/developerguide/cloud-watch-logs.html#fine-grained-logging). For more information about how to specify a logging level for a specific thing group, see [Configure resource-specific logging in AWS IoT](https://docs.aws.amazon.com/iot/latest/developerguide/configure-logging.html#fine-logging-cli).
 
 ## Create a dynamic thing group
 <a name="create-dynamic-thing-group"></a>
@@ -158,8 +158,8 @@ The **DeleteDynamicThingGroup** command doesn't produce any output.
 <a name="dynamic-static-thing-group-limitations"></a>
 
 Dynamic thing groups and static thing groups share the following limitations:
-+ The number of attributes that a thing group can have is [limited](https://docs.aws.amazon.com//general/latest/gr/iot_device_management.html#thing-group-limits).
-+ The number of groups to which a thing can belong is [limited](https://docs.aws.amazon.com//general/latest/gr/iot_device_management.html#thing-group-limits).
++ The number of attributes that a thing group can have is [limited](https://docs.aws.amazon.com/general/latest/gr/iot_device_management.html#thing-group-limits).
++ The number of groups to which a thing can belong is [limited](https://docs.aws.amazon.com/general/latest/gr/iot_device_management.html#thing-group-limits).
 + You can't rename thing groups.
 + Thing group names can't contain international characters, such as û, é, and ñ.
 
@@ -179,7 +179,7 @@ If you have permissions to query the fleet index, you can access the data of thi
 ### The number of dynamic thing groups is limited
 <a name="dynamic-thing-groups-limited"></a>
 
-The number of dynamic thing groups is [limited](https://docs.aws.amazon.com//general/latest/gr/iot_device_management.html#thing-group-limits).
+The number of dynamic thing groups is [limited](https://docs.aws.amazon.com/general/latest/gr/iot_device_management.html#thing-group-limits).
 
 ### Successful commands can log errors
 <a name="log-errors"></a>
@@ -191,7 +191,7 @@ An [error log entry](https://docs.aws.amazon.com/iot/latest/apireference/cwl-for
 + A thing is removed from a dynamic thing group to add it to another group.
 
 When a thing becomes eligible to be added to a dynamic thing group, consider the following:
-+ Is the thing already in as many groups as it can be? (See [limits](https://docs.aws.amazon.com//general/latest/gr/iot_device_management.html#thing-limits))
++ Is the thing already in as many groups as it can be? (See [limits](https://docs.aws.amazon.com/general/latest/gr/iot_device_management.html#thing-limits))
   + **NO: **The thing is added to the dynamic thing group.
   + **YES:** Is the thing a member of any dynamic thing groups?
     + **NO:** The thing can't be added to the dynamic thing group, an error is logged, and an [`AddThingToDynamicThingGroupsFailed` metric](metrics_dimensions.md#iot-metrics) is generated.
@@ -204,7 +204,7 @@ When a thing in a dynamic thing group no longer meets the search query, the thin
 ### With `overrideDynamicGroups` enabled, static groups take priority over dynamic groups
 <a name="membership-limit"></a>
 
-The number of groups to which a thing can belong is [limited](https://docs.aws.amazon.com//general/latest/gr/iot_device_management.html#thing-limits). When you use the [AddThingToThingGroup](https://docs.aws.amazon.com/iot/latest/apireference/API_AddThingToThingGroup.html) or [UpdateThingGroupsForThing](https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateThingGroupsForThing.html) commands to update thing membership, adding the `--overrideDynamicGroups` parameter gives static thing groups priority over dynamic thing groups.
+The number of groups to which a thing can belong is [limited](https://docs.aws.amazon.com/general/latest/gr/iot_device_management.html#thing-limits). When you use the [AddThingToThingGroup](https://docs.aws.amazon.com/iot/latest/apireference/API_AddThingToThingGroup.html) or [UpdateThingGroupsForThing](https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateThingGroupsForThing.html) commands to update thing membership, adding the `--overrideDynamicGroups` parameter gives static thing groups priority over dynamic thing groups.
 
 When you add a thing to a static thing group, consider the following:
 + Does the thing already belong to the maximum number of groups?
@@ -218,7 +218,7 @@ When you add a thing to a static thing group, consider the following:
 ### Older dynamic thing groups take priority over newer ones
 <a name="group-priorities"></a>
 
-The number of groups to which a thing can belong is [limited](https://docs.aws.amazon.com//general/latest/gr/iot_device_management.html#thing-limits). When a create or update operation creates additional group eligibility for a thing and the thing has reached its group limit, removal from another dynamic thing group can occur to enable this addition. For more information about how this occurs, see [Successful commands can log errors](#log-errors) and [With `overrideDynamicGroups` enabled, static groups take priority over dynamic groups](#membership-limit) for examples.
+The number of groups to which a thing can belong is [limited](https://docs.aws.amazon.com/general/latest/gr/iot_device_management.html#thing-limits). When a create or update operation creates additional group eligibility for a thing and the thing has reached its group limit, removal from another dynamic thing group can occur to enable this addition. For more information about how this occurs, see [Successful commands can log errors](#log-errors) and [With `overrideDynamicGroups` enabled, static groups take priority over dynamic groups](#membership-limit) for examples.
 
 When a thing is removed from a dynamic thing group, an error is logged and an event is raised.
 

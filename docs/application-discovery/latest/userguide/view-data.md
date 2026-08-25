@@ -9,7 +9,7 @@ AWS Application Discovery Service is no longer open to new customers. Alternativ
 
 For both the Application Discovery Service Agentless Collector (Agentless Collector) and AWS Discovery Agent (Discovery Agent), after the data collection process starts, you can use the console to view their collected data about your servers and VMs. Data appears in the console approximately 15 minutes after data collection starts. You can also view this data in CSV format by exporting the collected data by making API calls using the AWS CLI.
 
-To view collected data about discovered servers in the console, follow the steps in [Viewing servers in the AWS Migration Hub consoleViewing servers](view-servers.md). To learn more about using the console to view, sort, and tag servers discovered by your Agentless Collectors or Discovery Agents, see [Discovering data with the AWS Migration Hub console](console-walkthrough.md).
+To view collected data about discovered servers in the console, follow the steps in [Viewing servers in the AWS Migration Hub console](view-servers.md). To learn more about using the console to view, sort, and tag servers discovered by your Agentless Collectors or Discovery Agents, see [Discovering data with the AWS Migration Hub console](console-walkthrough.md).
 
 The Agentless Collector database and analytics data collection module uploads the collected data to the Amazon S3 bucket. You can view the data from this bucket in the AWS DMS console. To view collected data about discovered database and analytics servers, follow the steps in [Viewing your collected data](agentless-collector-gs-view-collected-data.md).
 

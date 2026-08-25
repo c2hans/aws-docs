@@ -176,4 +176,4 @@ With this change, you or your backup administrator can create access policies fo
 
 Charges for backups (including storage, data transfers, restores, and early deletion) appear under “Backup” in your AWS bill. Previously, charges appeared under “DynamoDB” in your bill.
 
-This change ensures that you can use AWS Backup billing to centrally monitor your backup costs. See [Metering, costs, and billing for AWS BackupMetering, costs, and billing](metering-and-billing.md) for more information.
+This change ensures that you can use AWS Backup billing to centrally monitor your backup costs. See [Metering, costs, and billing for AWS Backup](metering-and-billing.md) for more information.

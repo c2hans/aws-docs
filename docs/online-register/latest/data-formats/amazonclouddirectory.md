@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon Cloud Directory provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="clouddirectory-BatchRead"></a>[BatchRead](https://docs.aws.amazon.com/directoryservice/latest/APIReference/API_BatchRead.html) | Perform all the read operations in a batch. Each individual operation inside BatchRead needs to be granted permissions explicitly | Read |

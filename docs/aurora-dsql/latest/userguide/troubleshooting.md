@@ -15,6 +15,7 @@ The following topics provide troubleshooting advice for errors and issues that y
 + [Troubleshooting SQL errors](#troubleshooting-sql)
 + [Troubleshooting concurrency control responses](#troubleshooting-occ)
 + [Troubleshooting SSL/TLS connections](#troubleshooting-ssl-tls)
++ [Troubleshooting missing metrics from the Amazon CloudWatch Database Insights console](#troubleshooting-database-insights)
 
 ## Troubleshooting connection errors
 <a name="troubleshooting-connections"></a>
@@ -81,7 +82,7 @@ To grant access to a database role, you must be connected to your cluster with t
 
 Any database roles you create must have the `LOGIN` permission.
 
-To address this error, make sure that you’ve created the PostgreSQL Role with the `LOGIN` permission. For more information, see [CREATE ROLE](https://www.postgresql.org/docs/current/sql-createrole.html) and [ALTER ROLE](https://www.postgresql.org/docs/current/sql-alterrole.html) in the PostgreSQL documentation.
+To address this error, make sure that you've created the PostgreSQL Role with the `LOGIN` permission. For more information, see [CREATE ROLE](https://www.postgresql.org/docs/current/sql-createrole.html) and [ALTER ROLE](https://www.postgresql.org/docs/current/sql-alterrole.html) in the PostgreSQL documentation.
 
 **ERROR: role <role> cannot be dropped because some objects depend on it**
 
@@ -101,11 +102,11 @@ To create an index on a table with existing rows, you must use the `CREATE INDEX
 ## Troubleshooting concurrency control responses
 <a name="troubleshooting-occ"></a>
 
-**OC000 “ERROR: change conflicts with another transaction (OC000)”**
+**OC000 "ERROR: change conflicts with another transaction (OC000)"**
 
 This transaction attempted to modify the same tuples as another concurrent transaction. This indicates contention on the modified tuples. To learn more, refer to [ Concurrency control in Aurora DSQL ](https://docs.aws.amazon.com/aurora-dsql/latest/userguide/working-with-concurrency-control.html).
 
-**OC001 “ERROR: schema has been updated by another transaction (OC001)”**
+**OC001 "ERROR: schema has been updated by another transaction (OC001)"**
 
 Your session had a cached copy of the schema catalog at version V1, loaded at time T1.
 
@@ -135,3 +136,23 @@ This error occurs with PostgreSQL clients below version 14. Upgrade your Postgre
 **SSL error: unregistered scheme (Windows)**
 
 This is a known issue with the Windows psql client when using system certificates. Use the downloaded certificate file method described in the [Connecting from Windows](configure-root-certificates.md#connect-windows) instructions.
+
+## Troubleshooting missing metrics from the Amazon CloudWatch Database Insights console
+<a name="troubleshooting-database-insights"></a>
+
+### Aurora DSQL cluster not appearing in the Amazon CloudWatch Database Insights console
+<a name="troubleshooting-database-insights-symptom"></a>
+
+Amazon CloudWatch Database Insights populates its cluster selector using activity data from Aurora DSQL database insights. For more information about Aurora DSQL database insights, see [Monitoring Aurora DSQL clusters with Aurora DSQL Database Insights](dsql-db-insights.md). A cluster becomes visible in Database Insights only after the cluster has generated load within the last eight days that was captured by Aurora DSQL active session history (DASH) sampler.
+
+DASH uses 1-second sampling, which might miss fast, infrequent transactions that complete in milliseconds.
+
+Use the following steps to confirm whether this explains what you're seeing:
+
+1. Confirm that you have run transactions on the cluster within the last eight days. A cluster that has been idle longer than that doesn't appear in Database Insights regardless of how you used it previously. To check for recent activity, view the `TotalTransactions` metric for your cluster in CloudWatch. For more information about this metric, see [Observability and performance](cloudwatch-monitoring.md#observability-performance).
+
+1. Run a sustained workload against the cluster so that at least one session stays active. Examples include a load-testing script, a batch of inserts, or a long-running query. Because DASH samples once per second, a brief workload might not be captured, so the more continuous the activity, the more likely it is to appear.
+
+1. Wait a few minutes after running that workload, then refresh the Database Insights console.
+
+1. Verify that you're viewing the same AWS Region and account where the cluster was created. Selecting the wrong Region or account is a common reason a cluster appears to be missing.

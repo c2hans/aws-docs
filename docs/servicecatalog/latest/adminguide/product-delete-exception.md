@@ -14,8 +14,6 @@ If you closed the **Deleting products** window prior to receiving the failed res
 
 In the **Delete product** window, review the Associations table **Status** column. Identify the failed resource disassociation exception and the suggested resolutions:
 
-****
-
 | Status exception type | Cause | Resolution |
 | --- | --- | --- |
 | Product prod-\*\*\*\* | AWS Service Catalog could not delete the product because the product still has associated TagOptions, budgets, at least one ProvisioningArtifact with associated actions, the product is still assigned to a Portfolio, the product has users, or the product has constraints.  | Attempt to delete the product again. |

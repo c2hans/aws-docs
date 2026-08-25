@@ -46,13 +46,13 @@ For help finding your instance name, see [Find your Connect Customer instance na
 ## Grant microphone access in Chrome, Firefox, or Edge
 <a name="accessing-microphone"></a>
 
-If agents experience problems with their microphone, they may need to grant microphone access in their browser. Choose one of the following articles to get the steps appropriate for your browser:
+If agents experience problems with their microphone, they might need to grant microphone access in their browser. Choose one of the following articles to get the steps appropriate for your browser:
 + [Use your camera and microphone in Chrome](https://support.google.com/chrome/answer/2693767?hl=en)
 + [Firefox Page Info window](https://support.mozilla.org/en-US/kb/firefox-page-info-window)
 + *How to allow a website to use your camera or microphone while browsing in Microsoft Edge* in the article [Windows camera, microphone, and privacy](https://support.microsoft.com/en-us/windows/windows-camera-microphone-and-privacy-a83257bc-e990-d54a-d212-b5e41beba857)
 
 **Important**
-A change introduced in Google Chrome version 64 may result in issues with receiving calls if you are using an embedded Contact Control Panel (CCP) softphone using the Connect Customer Streams library. If you are experiencing issues with your microphone when using Chrome version 64, you can resolve the issue by building and deploying the latest version of the [Connect Customer Streams API](https://github.com/aws/amazon-connect-streams/blob/master/Documentation.md#downloading-streams), following the steps under *Downloading Streams*.
+A change introduced in Google Chrome version 64 might result in issues with receiving calls if you are using an embedded Contact Control Panel (CCP) softphone using the Connect Customer Streams library. If you are experiencing issues with your microphone when using Chrome version 64, you can resolve the issue by building and deploying the latest version of the [Connect Customer Streams API](https://github.com/aws/amazon-connect-streams/blob/master/Documentation.md#downloading-streams), following the steps under *Downloading Streams*.
 You can also resolve the issue by using Firefox or Edge as your browser.
 
 ## How to get help for CCP issues

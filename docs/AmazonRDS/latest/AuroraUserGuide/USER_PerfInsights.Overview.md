@@ -2,23 +2,12 @@
 source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_PerfInsights.Overview.html
 ---
 
-# Overview of Performance Insights on Amazon Aurora
+# Overview of Database Insights on Amazon Aurora
 <a name="USER_PerfInsights.Overview"></a>
 
-**Important**
- AWS has announced the end-of-life date for Performance Insights: July 31, 2026. After this date, Amazon RDS will no longer support the Performance Insights console experience. The Performance Insights console will redirect to CloudWatch Database Insights. Flexible retention periods (1–24 months) and their associated pricing are preserved in Standard mode of Database Insights at the same cost as Performance Insights today. The Performance Insights API will continue to exist with no changes. Costs for the Performance Insights API will appear in your AWS bill with the cost of CloudWatch Database Insights.
- We recommend that you review your DB clusters using Performance Insights and choose the Database Insights mode that best fits your needs before July 31, 2026. For core monitoring with flexible retention, Standard mode of Database Insights preserves your existing experience and pricing. For advanced capabilities including fleet-level monitoring, lock diagnostics, and execution plan capture, see [Turning on the Advanced mode of Database Insights for Amazon Aurora](USER_DatabaseInsights.TurningOnAdvanced.md).
- If you take no action, DB clusters using Performance Insights will default to using the Standard mode of Database Insights with your existing retention period configured. Your CloudFormation templates, Terraform configurations, and deployment scripts will continue to work exactly as they do today – all Performance Insights API parameters, including retention period settings, are fully preserved. After July 31, 2026, only the Advanced mode of Database Insights will support execution plans and on-demand analysis.
- With CloudWatch Database Insights, you can monitor database load for your fleet of databases and analyze and troubleshoot performance at scale. For more information about Database Insights, see [Monitoring Amazon Aurora databases with CloudWatch Database Insights](USER_DatabaseInsights.md) or [Register for upcoming workshops](https://aws-experience.com/amer/smb/events/series/Cloud-Operations-Enablement) to learn more. For current pricing information, see [Amazon CloudWatch Pricing](https://aws.amazon.com/cloudwatch/pricing/).
-
-By default, RDS enables Performance Insights in the console create wizard for all Amazon RDS engines. If you turn on Performance Insights at the DB cluster level, RDS enables Performance Insights for every DB instance in the cluster. If you have more than one database on a DB instance, Performance Insights aggregates performance data.
-
-You can find an overview of Performance Insights for Amazon Aurora in the following video.
-
-[![AWS Videos](http://img.youtube.com/vi/yOeWcPBT458/0.jpg)](http://www.youtube.com/watch?v=yOeWcPBT458)
+By default, RDS enables Database Insights in Advanced mode, which includes lock diagnostics, execution plan capture, and fleet-level monitoring.
 
 **Topics**
 + [Database load](USER_PerfInsights.Overview.ActiveSessions.md)
 + [Maximum CPU](USER_PerfInsights.Overview.MaxCPU.md)
-+ [Amazon Aurora DB engine, Region, and instance class support for Performance Insights](USER_PerfInsights.Overview.Engines.md)
-+ [Pricing and data retention for Performance Insights](USER_PerfInsights.Overview.cost.md)
++ [Pricing and data retention for Database Insights](USER_PerfInsights.Overview.cost.md)

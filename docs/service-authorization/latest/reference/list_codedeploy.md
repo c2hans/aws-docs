@@ -25,8 +25,6 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_codedeploy-actions-as-permissions).
 
-****
-
 - **   AddTagsToOnPremisesInstances  **
   - **IAM action:**  [codedeploy:AddTagsToOnPremisesInstances](#list_codedeploy-action-AddTagsToOnPremisesInstances)
   - **Condition key:**
@@ -301,8 +299,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
 <a name="list_codedeploy-actions-as-permissions"></a>
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
-
-****
 
 - **   [AddTagsToOnPremisesInstances](https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_AddTagsToOnPremisesInstances.html)  **
   - **Description:** Grants permission to add tags to one or more on-premises instances
@@ -591,8 +587,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 The following actions are defined by AWS CodeDeploy but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 | Actions | Description | Resource types (\*required) | Condition keys | Access level |
 | --- | --- | --- | --- | --- |
 |   [CreateCloudFormationDeployment](https://docs.aws.amazon.com/codedeploy/latest/APIReference/codedeploy/latest/userguide/deployments-create-ecs-cfn.html)  | Grants permission to create CloudFormation deployment to cooperate ochestration for a CloudFormation stack update |  |   | Write |
@@ -601,8 +595,6 @@ The following actions are defined by AWS CodeDeploy but are not directly invocab
 <a name="list_codedeploy-resources-for-iam-policies"></a>
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
-
-****
 
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
@@ -615,8 +607,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_codedeploy-policy-keys"></a>
 
 AWS CodeDeploy defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

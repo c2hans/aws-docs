@@ -14,8 +14,6 @@ Create an IAM service-linked role linked to an AWS service that you specify.
 ## Change Type Details
 <a name="ct-2eof6j3mlcwhf-DAIc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2eof6j3mlcwhf |

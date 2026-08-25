@@ -14,8 +14,6 @@ Accept a directory sharing request sent from the directory owner account. This i
 ## Change Type Details
 <a name="ct-13xvbj5pqg253-MDDa-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-13xvbj5pqg253 |

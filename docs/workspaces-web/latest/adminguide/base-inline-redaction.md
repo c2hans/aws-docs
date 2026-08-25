@@ -13,8 +13,6 @@ To fine-tune the way redaction is applied across URLs without changing the defau
 
 The following is a list of data types and their corresponding built-in pattern IDs:
 
-****
-
 | builtInPatternId | Data type |
 | --- | --- |
 | awsAccessKey:  | AWS Access Key |

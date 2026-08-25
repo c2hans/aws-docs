@@ -14,9 +14,9 @@ When creating a new assessment run, you can choose to run some or all of the ind
 
 AWS DMS supports premigration assessment runs for the following relational source and target database engines:
 + [Oracle assessments](CHAP_Tasks.AssessmentReport.Oracle.md)
-+ [Sql Server assessmentsCheck if the DMS user has the VIEW SERVER STATE permission.](CHAP_Tasks.AssessmentReport.SqlServer.md)
++ [Sql Server assessments](CHAP_Tasks.AssessmentReport.SqlServer.md)
 + [MySQL assessments](CHAP_Tasks.AssessmentReport.MySQL.md) (includes MariaDB and Amazon Aurora MySQL-Compatible Edition)
-+ [PostgreSQL assessmentsValidate the source database parameter `max_slot_wal_keep_size`](CHAP_Tasks.AssessmentReport.PG.md) (includes Amazon Aurora PostgreSQL-Compatible Edition)
++ [PostgreSQL assessments](CHAP_Tasks.AssessmentReport.PG.md) (includes Amazon Aurora PostgreSQL-Compatible Edition)
 + [MariaDB assessments](CHAP_Tasks.AssessmentReport.MariaDB.md)
 + [Db2 LUW Assessments](CHAP_Tasks.AssessmentReport.Db2.md)
 

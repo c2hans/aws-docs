@@ -17,7 +17,7 @@ To query a catalog, you must first set the permissions for the catalog using AWS
 database@namespace.schema.table
 ```
 
-For general information on querying Amazon Redshift data warehouses, see [ Query a database](https://docs.aws.amazon.com//redshift/latest/mgmt/query-databases.html) in the *Amazon Redshift Management Guide*.
+For general information on querying Amazon Redshift data warehouses, see [ Query a database](https://docs.aws.amazon.com/redshift/latest/mgmt/query-databases.html) in the *Amazon Redshift Management Guide*.
 
 ------
 #### [ Querying using the query editor v2 ]

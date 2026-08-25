@@ -36,8 +36,6 @@ Your Kinesis Data Analytics application can't access or modify the error stream 
 
 The error stream has the following schema:
 
-****
-
 |  |  |  |
 | --- |--- |--- |
 | *Field* | *Data Type* | *Notes* |

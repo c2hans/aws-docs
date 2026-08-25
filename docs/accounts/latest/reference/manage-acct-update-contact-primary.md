@@ -5,6 +5,8 @@ source_url: https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-up
 # Update the primary contact for your AWS account
 <a name="manage-acct-update-contact-primary"></a>
 
+These instructions are for how to update the primary contact for your AWS account if you signed up for AWS using Sign up for AWS (advanced) or if you activated advanced features for your account. To compare sign-up options, see [Compare sign-up options](sign-up-for-aws.md).
+
 You can update the primary contact information associated with your account, including your contact's full name, company name, mailing address, telephone number, and website address.
 
 You edit the primary account contact differently, depending on whether or not the accounts are standalone, or part of an organization:
@@ -108,7 +110,7 @@ To edit your primary contact details in any AWS member account in your organizat
 <a name="update-primary-contact-requirement"></a>
 
 To update primary contact with the AWS Organizations console, you need to do some preliminary settings:
-+ Your organization must enable *all features* to manage settings on your member accounts. This allows admin control over the member accounts. This is set by default when you create your organization. If your organization is set to *consolidated billing* only, and you want to enable all features, see [Enabling all features for an organization](https://docs.aws.amazon.com//organizations/latest/userguide/orgs_manage_org_support-all-features.html).
++ Your organization must enable *all features* to manage settings on your member accounts. This allows admin control over the member accounts. This is set by default when you create your organization. If your organization is set to *consolidated billing* only, and you want to enable all features, see [Enabling all features for an organization](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_org_support-all-features.html).
 + You need to enable trusted access for the AWS Account Management service. To set this up, see [Enable trusted access for AWS Account Management](using-orgs-trusted-access.md).
 
 ------

@@ -90,8 +90,6 @@ datalakegentwo://${{{jdbc_connection_string}}}
 
 You can use a multiplexer to connect to multiple database instances with a single Lambda function. Requests are routed by catalog name. Use the following classes in Lambda.
 
-****
-
 | Handler | Class |
 | --- | --- |
 | Composite handler | DataLakeGen2MuxCompositeHandler |
@@ -101,16 +99,12 @@ You can use a multiplexer to connect to multiple database instances with a singl
 ##### Multiplexing handler parameters
 <a name="connectors-adls-gen2-multiplexing-handler-parameters"></a>
 
-****
-
 | Parameter | Description |
 | --- | --- |
 | ${{catalog}}\_connection\_string | Required. A database instance connection string. Prefix the environment variable with the name of the catalog used in Athena. For example, if the catalog registered with Athena is mydatalakegentwocatalog, then the environment variable name is mydatalakegentwocatalog\_connection\_string. |
 | default | Required. The default connection string. This string is used when the catalog is lambda:${{{AWS\_LAMBDA\_FUNCTION\_NAME}}}. |
 
 The following example properties are for a DataLakeGen2 MUX Lambda function that supports two database instances: `datalakegentwo1` (the default), and `datalakegentwo2`.
-
-****
 
 | Property | Value |
 | --- | --- |
@@ -153,8 +147,6 @@ datalakegentwo://jdbc:sqlserver://{{hostname}}:{{port}};databaseName={{database_
 
 You can use the following single connection metadata and record handlers to connect to a single Azure Data Lake Storage Gen2 instance.
 
-****
-
 | Handler type | Class |
 | --- | --- |
 | Composite handler | DataLakeGen2CompositeHandler |
@@ -164,8 +156,6 @@ You can use the following single connection metadata and record handlers to conn
 ##### Single connection handler parameters
 <a name="connectors-adls-gen2-single-connection-handler-parameters"></a>
 
-****
-
 | Parameter | Description |
 | --- | --- |
 | default | Required. The default connection string. |
@@ -173,8 +163,6 @@ You can use the following single connection metadata and record handlers to conn
 The single connection handlers support one database instance and must provide a `default` connection string parameter. All other connection strings are ignored.
 
 The following example property is for a single Azure Data Lake Storage Gen2 instance supported by a Lambda function.
-
-****
 
 | Property | Value |
 | --- | --- |
@@ -184,8 +172,6 @@ The following example property is for a single Azure Data Lake Storage Gen2 inst
 <a name="connectors-adls-gen2-spill-parameters"></a>
 
 The Lambda SDK can spill data to Amazon S3. All database instances accessed by the same Lambda function spill to the same location.
-
-****
 
 | Parameter | Description |
 | --- | --- |
@@ -197,8 +183,6 @@ The Lambda SDK can spill data to Amazon S3. All database instances accessed by t
 <a name="connectors-adls-gen2-data-type-support"></a>
 
 The following table shows the corresponding data types for ADLS Gen2 and Arrow.
-
-****
 
 | ADLS Gen2 | Arrow |
 | --- | --- |

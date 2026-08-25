@@ -60,6 +60,13 @@ Content-type: application/json
          "EventBridgeAction": {
             "Name": "{{string}}"
          },
+         "ExtractInformationAction": {
+            "RulesExtractionDefinitions": [
+               {
+                  "Identifier": "{{string}}"
+               }
+            ]
+         },
          "SendNotificationAction": {
             "Content": "{{string}}",
             "ContentType": "{{string}}",

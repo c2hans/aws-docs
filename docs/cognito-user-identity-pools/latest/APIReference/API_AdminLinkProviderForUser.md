@@ -53,7 +53,6 @@ The existing user in the user pool that you want to assign to the external IdP u
 For a native username \+ password user, the `ProviderAttributeValue` for the `DestinationUser` should be the username in the user pool. For a federated user, it should be the provider-specific `user_id`.
 The `ProviderAttributeName` of the `DestinationUser` is ignored.
 The `ProviderName` should be set to `Cognito` for users in Cognito user pools.
-All attributes in the DestinationUser profile must be mutable. If you have assigned the user any immutable custom attributes, the operation won't succeed.
 Type: [ProviderUserIdentifierType](API_ProviderUserIdentifierType.md) object
 Required: Yes
 

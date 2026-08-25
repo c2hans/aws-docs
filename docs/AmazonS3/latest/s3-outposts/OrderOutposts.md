@@ -15,6 +15,6 @@ For more information, see the following topics.
 ## Order a new Outpost
 <a name="SettingUpS3OutpostsNewOutpost"></a>
 
-If you need to order a new Outpost with S3 capacity, see [AWS Outposts rack pricing](https://aws.amazon.com//outposts/pricing/) to understand the capacity options for Amazon Elastic Compute Cloud (Amazon EC2), Amazon Elastic Block Store (Amazon EBS), and Amazon S3.
+If you need to order a new Outpost with S3 capacity, see [AWS Outposts rack pricing](https://aws.amazon.com/outposts/pricing/) to understand the capacity options for Amazon Elastic Compute Cloud (Amazon EC2), Amazon Elastic Block Store (Amazon EBS), and Amazon S3.
 
 After you select your configuration, follow the steps in [Create an Outpost and order Outpost capacity](https://docs.aws.amazon.com/outposts/latest/userguide/order-outpost-capacity.html) in the *AWS Outposts User Guide.*

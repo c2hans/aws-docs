@@ -23,7 +23,7 @@ Before you start using flow operations, review the following key definitions.
 + [Viewing flow operations in Network Firewall](flow-operations-view.md)
 
 **Note**
-This section and others that describe Suricata-based concepts are not intended to replace or duplicate information from the Suricata documentation. For more Suricata-specific information, see the [Suricata documentation](https://docs.suricata.io/en/suricata-7.0.8/).
+This section and others that describe Suricata-based concepts are not intended to replace or duplicate information from the Suricata documentation. For more Suricata-specific information, see the [Suricata documentation](https://docs.suricata.io/en/suricata-8.0.3/).
 
 ## Caveats and considerations for flow operations
 <a name="flow-operations-caveats"></a>

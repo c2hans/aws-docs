@@ -11,7 +11,7 @@ To enable Detective integration with Security Lake, you must attach the followin
 
 Attach the following inline policies to the role. Replace `athena-results-bucket` with your Amazon S3 bucket name if you want to use your own Amazon S3 bucket to store the Athena query results. If you want Detective to automatically generate an Amazon S3 bucket to store the Athena query result, remove the entire `S3ObjectPermissions` from the IAM policy.
 
-If you do not have the required permissions to attach this policy to your IAM identity, contact your AWS administrator. If you have the required permissions but an issue occurs, see [Troubleshoot access denied error messages](https://docs.aws.amazon.com//IAM/latest/UserGuide/troubleshoot_access-denied.html) in the IAM User Guide.
+If you do not have the required permissions to attach this policy to your IAM identity, contact your AWS administrator. If you have the required permissions but an issue occurs, see [Troubleshoot access denied error messages](https://docs.aws.amazon.com/IAM/latest/UserGuide/troubleshoot_access-denied.html) in the IAM User Guide.
 
 ------
 #### [ JSON ]

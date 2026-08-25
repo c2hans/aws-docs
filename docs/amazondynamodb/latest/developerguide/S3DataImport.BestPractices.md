@@ -39,14 +39,14 @@ If your average item size is very small (below 200 bytes), the import process mi
 ## Do not modify S3 objects during active imports
 <a name="S3DataImport.BestPractices.NoModification"></a>
 
-Ensure that your source S3 objects remain unchanged while an import operation is in progress. If an S3 object is modified during an import, the operation will fail with error code `ObjectModifiedInS3DuringImport` and the message "The S3 object could not be imported because it was overwritten."
+Make sure that your source S3 objects remain unchanged while an import operation is in progress. If an S3 object is modified during an import, the operation will fail with error code `ObjectModifiedInS3DuringImport` and the message "The S3 object could not be imported because it was overwritten."
 
 If you encounter this error, restart the import operation with a stable version of your S3 object. To avoid this issue, wait for the current import to complete before making changes to the source files.
 
 ## Consider importing without any Global Secondary Indexes
 <a name="S3DataImport.BestPractices.GSI"></a>
 
-The duration of an import task may depend on the presence of one or multiple global secondary indexes (GSIs). If you plan to establish indexes with partition keys that have low cardinality, you may see a faster import if you defer index creation until after the import task is finished (rather than including them in the import job).
+The duration of an import task might depend on the presence of one or multiple global secondary indexes (GSIs). If you plan to establish indexes with partition keys that have low cardinality, you might see a faster import if you defer index creation until after the import task is finished (rather than including them in the import job).
 
 **Note**
 Creating a GSI does not incur write charges, whether it is created during or after the import.

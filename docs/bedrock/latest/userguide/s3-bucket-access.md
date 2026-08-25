@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/s3-bucket-acces
 
 Multiple Amazon Bedrock features require access to data that is stored in Amazon S3 buckets. To access this data, you must configure the following permissions:
 
-****
-
 | Use case | Permissions |
 | --- | --- |
 | Permissions to retrieve data from S3 bucket | s3:GetObjects3:ListBucket |
@@ -16,7 +14,7 @@ Multiple Amazon Bedrock features require access to data that is stored in Amazon
 | Permissions to decrypt KMS key that encrypted the S3 bucket | kms:Decryptkms:DescribeKey<br />kms:GenerateDataKey (required for write operations to buckets with default SSE-KMS encryption) |
 
 The identities or resources to which you need to attach the above permissions depends on the following factors:
-+ Multiple features in Amazon Bedrock use [service roles](security-iam-sr.md). If a feature uses a service role, you must configure the permissions such that the service role, rather than the user's IAM identity, has access to the S3 data. Some Amazon Bedrock features can automatically create a service role for you and attach the required [identity-based permissions](https://docs.aws.amazon.com//IAM/latest/UserGuide/access_policies.html#policies_id-based) to the service role, if you use the AWS Management Console.
++ Multiple features in Amazon Bedrock use [service roles](security-iam-sr.md). If a feature uses a service role, you must configure the permissions such that the service role, rather than the user's IAM identity, has access to the S3 data. Some Amazon Bedrock features can automatically create a service role for you and attach the required [identity-based permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html#policies_id-based) to the service role, if you use the AWS Management Console.
 + Some features in Amazon Bedrock allow an identity to access an S3 bucket in a different account. If S3 data needs to be accessed from a different account, the bucket owner must include the above [resource-based permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html#policies_resource-based) in an [S3 bucket policy](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html) attached to the S3 bucket.
 
 The following describes how to determine where you need to attach the necessary permissions to access S3 data:
@@ -48,7 +46,7 @@ This topic provides a template for a policy to attach to an IAM identity. The po
 
 1. Permissions to retrieve data from an S3 bucket. This statement also includes a condition using the `s3:prefix` [condition key](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3.html#amazons3-policy-keys) to restrict access to a specific folder in the bucket. For more information about this condition, see the **User policy** section in [Example 2: Getting a list of objects in a bucket with a specific prefix](https://docs.aws.amazon.com/AmazonS3/latest/userguide/amazon-s3-policy-keys.html#condition-key-bucket-ops-2).
 
-1. (If you need to write data to an S3 location) Permissions to write data to an S3 bucket. This statement also includes a condition using the `aws:ResourceAccount` [condition key](https://docs.aws.amazon.com//IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourceaccount) to restrict access to requests sent from a specific AWS account.
+1. (If you need to write data to an S3 location) Permissions to write data to an S3 bucket. This statement also includes a condition using the `aws:ResourceAccount` [condition key](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourceaccount) to restrict access to requests sent from a specific AWS account.
 
 1. (If the S3 bucket is encrypted with an KMS key) Permissions to describe and decrypt the KMS key that encrypted the S3 bucket.
 **Note**

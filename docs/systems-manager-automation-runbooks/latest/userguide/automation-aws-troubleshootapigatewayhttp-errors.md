@@ -11,13 +11,13 @@ The **AWSSupport-TroubleshootAPIGatewayHttpErrors** runbook helps troubleshoot 5
 
 **Important**
 This runbook has the following limitations:
-Logging must be enabled. See [Set up Amazon CloudWatch API logging using the API Gateway console](https://docs.aws.amazon.com//apigateway/latest/developerguide/set-up-logging.html#set-up-access-logging-using-console).
+Logging must be enabled. See [Set up Amazon CloudWatch API logging using the API Gateway console](https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-logging.html#set-up-access-logging-using-console).
 Logs must have been enabled prior to the error(s) occurring. Log capturing and analysis cannot be done retrospectively.
 Errors covered: 500, 502, 503, 504, 401, 403, 429.
 Only REST APIs are supported. WebSocket and HTTP (v2) are not covered by this runbook.
 
 **Important**
-Using this runbook might incur extra charges against your AWS account for the Amazon CloudWatch Logs captured by your REST API, and CloudWatch Logs Insights used in the analysis. See [Amazon CloudWatch Pricing](https://aws.amazon.com/cloudwatch/pricing/) for more details on the charges that may be incurred. If the `aws:deletestack` step fails, go to the CloudFormation console to manually delete the stack. The stack name created by this runbook begins with `AWSSupport-TroubleshootAPIGatewayHttpErrors`. For information about deleting CloudFormation stacks, see [Deleting a stack](https://docs.aws.amazon.com//AWSCloudFormation/latest/UserGuide/cfn-console-delete-stack.html) in the AWS CloudFormation User Guide.
+Using this runbook might incur extra charges against your AWS account for the Amazon CloudWatch Logs captured by your REST API, and CloudWatch Logs Insights used in the analysis. See [Amazon CloudWatch Pricing](https://aws.amazon.com/cloudwatch/pricing/) for more details on the charges that may be incurred. If the `aws:deletestack` step fails, go to the CloudFormation console to manually delete the stack. The stack name created by this runbook begins with `AWSSupport-TroubleshootAPIGatewayHttpErrors`. For information about deleting CloudFormation stacks, see [Deleting a stack](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-console-delete-stack.html) in the AWS CloudFormation User Guide.
 
  **How does it work?**
 
@@ -155,6 +155,6 @@ Follow these steps to configure the automation:
 
 Systems Manager Automation
 + [Run this Automation (console)](https://console.aws.amazon.com/systems-manager/documents/AWSSupport-TroubleshootAPIGatewayHttpErrors/description)
-+ [Run an automation](https://docs.aws.amazon.com//systems-manager/latest/userguide/automation-working-executing.html)
-+ [Setting up an Automation](https://docs.aws.amazon.com//systems-manager/latest/userguide/automation-setup.html)
++ [Run an automation](https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-working-executing.html)
++ [Setting up an Automation](https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-setup.html)
 + [Support Automation Workflows](https://aws.amazon.com/premiumsupport/technology/saw/)

@@ -421,7 +421,7 @@ You can now delete the resources that you created for this tutorial, unless you 
 
 **To delete the MySQL DB instance**
 
-1. Open the [Databases page](https://console.aws.amazon.com//rds/home#databases:) of the Amazon RDS console.
+1. Open the [Databases page](https://console.aws.amazon.com/rds/home#databases:) of the Amazon RDS console.
 
 1. Select the database you created.
 

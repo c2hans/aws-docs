@@ -40,8 +40,6 @@ Calling API methods using the AWS Toolkit might result in changes to resources t
 
 You can invoke a Lambda function on AWS using the AWS Toolkit.
 
-****
-
 1. In the **AWS Explorer**, choose the name of the Lambda function you want to invoke, and then open its context menu.
 
 1. Choose **Invoke on AWS**.
@@ -208,8 +206,6 @@ You can also delete a Lambda function using the same context (right-click) menu.
 
 **Warning**
 Do not use this procedure to delete Lambda functions that are associated with [CloudFormation](https://docs.aws.amazon.com/cloudformation/). For example, do not delete the Lambda function that was created when [creating a serverless application](serverless-apps-toolkit.md#sam-create) earlier in this guide. These functions must be deleted through the CloudFormation stack.
-
-****
 
 1. In the **AWS Explorer**, choose the name of the Lambda function you want to delete, and then open its context (right-menu).
 

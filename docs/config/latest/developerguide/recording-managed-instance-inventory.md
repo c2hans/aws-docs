@@ -31,7 +31,7 @@ You can also use AWS Config rules to monitor software configuration changes and 
 
 **To enable recording of software configuration changes in AWS Config:**
 
-1. Turn on recording for all supported resource types or selectively record the managed instance inventory resource type in AWS Config. For more information, see [Recording AWS Resources with AWS ConfigConsiderations](select-resources.md).
+1. Turn on recording for all supported resource types or selectively record the managed instance inventory resource type in AWS Config. For more information, see [Recording AWS Resources with AWS Config](select-resources.md).
 
 1. Launch an Amazon EC2 instance with an instance profile for Systems Manager that includes the **AmazonSSMManagedInstanceCore** managed policy. This AWS managed policy enables an instance to use Systems Manager service core functionality.
 

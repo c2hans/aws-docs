@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/api-reference/configura
 # Configuration Revisions
 <a name="configurations-configuration-id-revisions"></a>
 
-This is a collection of configuration revisions. To keep track of the changes you make to your configuration, you can create configuration revisions. For more information, see [Configuration](https://docs.aws.amazon.com//amazon-mq/latest/developer-guide/configuration.html) in the Amazon MQ Developer Guide.
+This is a collection of configuration revisions. To keep track of the changes you make to your configuration, you can create configuration revisions. For more information, see [Configuration](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/configuration.html) in the Amazon MQ Developer Guide.
 
 **Important**
 Making changes to a configuration does not apply the changes to the broker immediately. To apply your changes, you must wait for the next maintenance window or reboot the broker.

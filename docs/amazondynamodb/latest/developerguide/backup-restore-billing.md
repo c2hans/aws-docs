@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bac
 # Understanding Amazon DynamoDB billing for backups
 <a name="backup-restore-billing"></a>
 
-This guide provides details about how DynamoDB billing works for backups. We'll break down the various components that contribute to the overall cost, providing clear explanations and practical examples.
+This guide provides details about how DynamoDB billing works for backups. The following sections break down the various components that contribute to the overall cost, providing clear explanations and practical examples.
 
 DynamoDB offers on-demand backups and point-in-time recovery (PITR) backups to help protect your DynamoDB data from disaster events and offers data archiving for long-term retention.
 
@@ -62,18 +62,18 @@ To answer this important 2-part question, let’s set up an example scenario usi
 + **Current 1st of Month Total** (`TimedBackupStorage-ByteHrs`, Checked on the 1st): $18,000
 + **Changes in DynamoDB Usage Month-to-Month**: None
 
-Using the information above, we can see that 300 backups were created in the previous month with a policy to maintain them for 30 days. On the 1st of a new month, all of these backups still remain as they've not yet hit the end of their recovery period. However, with each passing day, the oldest sets of backups will begin to drop off, as shown here:
+Using the information above, you can see that 300 backups were created in the previous month with a policy to maintain them for 30 days. On the 1st of a new month, all of these backups still remain as they've not yet hit the end of their recovery period. However, with each passing day, the oldest sets of backups will begin to drop off, as shown here:
 
 **DynamoDB backup dropoff table**
 
 | New month | Day 1 | Day 2 | Day 3 | Day 4 | Day 5 |
 | --- | --- | --- | --- | --- | --- |
 | Total previous month backups carried over | 300 | 290 | 280 | 270 | 260 |
-+ On the 1st, we can see 300 backups @ $60/mo per backup, totaling $18,000 of `TimedBackupStorage-ByteHrs` applied. This is in contrast to the previous month, where the entire month’s total was $18,600.
++ On the 1st, there are 300 backups @ $60/mo per backup, totaling $18,000 of `TimedBackupStorage-ByteHrs` applied. This is in contrast to the previous month, where the entire month’s total was $18,600.
 + On the 2nd, 10 of those backups will have expired and drop off. When this occurs, the applied charge for those backups will be adjusted to **Actual Usage** instead of **Assumed Usage**. This results in those 10 backups, previously with an applied charge on the 1st of $600 (10 Backups x 30 Days) being adjusted down to $20 (10 Backups x 1 Day).
 + The following day, the next block of 10 will expire and drop, shifting their usage from 30 days down to 2 days, reducing their charge to $40 (10 Backups x 2 Days).
 
-With every passing day, we’ll see that larger-than-previous-month spike begin to shrink. If we expand this to cover the entire month, we’ll observe the following:
+With every passing day, you notice that larger-than-previous-month spike begins to shrink. If you expand this to cover the entire month, you can observe the following:
 
 **DynamoDB Backup Charges (1st of Month) Progression**
 

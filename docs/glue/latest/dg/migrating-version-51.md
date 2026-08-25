@@ -105,7 +105,6 @@ Note the following changes:
 + Support Iceberg format version 3. The following features are supported:
   + Row Lineage tracking.
   + Deletion vectors. Learn more in [ blog post](https://aws.amazon.com/blogs/big-data/unlock-the-power-of-apache-iceberg-v3-deletion-vectors-on-amazon-emr/)
-  + Table encryption keys.
   + Default value support for columns.
 + Support Spark-native FGAC writes on AWS Lake Formation registered tables.
 + Athena SQL compatibility - Cannot read Iceberg V3 tables created by EMR Spark due to error: `GENERIC_INTERNAL_ERROR: Cannot read unsupported version 3`

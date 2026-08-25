@@ -13,7 +13,6 @@ This is version 2.20 of the AWS Elemental Statmux documentation. This is the lat
 During the kickstart part of a clean install, all the files on the node are permanently deleted. Therefore, you must first copy important files to another location. These files appear in the list in the table below.
 
 1. Locate the following files on the node, in the /home/elemental directory:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-statmux/latest/upgradeguide/clean-install-sm-upg-ready.html)
 
 1. Copy these files to a directory on another system, using the protocol compatible with your equipment. For example:

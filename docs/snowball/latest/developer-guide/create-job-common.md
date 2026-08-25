@@ -101,9 +101,9 @@ When using Amazon S3 compatible storage on Snowball Edge, you can manage and cre
 
 1. In the **Compute using EC2-compatible instances - *optional*** section, choose Amazon EC2-compatible AMIs from your account to include on the device. Or, in the search field, enter all or part the name of an AMI to filter the list of available AMIs on your entry, then choose the AMI.
 
-   To learn about configuring an AMI for secure shell (SSH), see [Configuring an AMI for a Snowball Edge and SSH](https://docs.aws.amazon.com//snowball/latest/developer-guide/ssh-ec2-edge.html)
+   To learn about configuring an AMI for secure shell (SSH), see [Configuring an AMI for a Snowball Edge and SSH](https://docs.aws.amazon.com/snowball/latest/developer-guide/ssh-ec2-edge.html)
 
-   For more information, see [Adding an AMI When Ordering Your Device](https://docs.aws.amazon.com//snowball/latest/developer-guide/using-ami.html#add-ami-order) in this guide.
+   For more information, see [Adding an AMI When Ordering Your Device](https://docs.aws.amazon.com/snowball/latest/developer-guide/using-ami.html#add-ami-order) in this guide.
 
    This feature incurs additional charges. For more information, see [AWS Snowball Edge Pricing.](https://aws.amazon.com/snowball/pricing/)
 
@@ -214,8 +214,6 @@ Select the **Next**.
 After you provide all the necessary information for your AWS Snowball Edge job, review the job and create it. After you create the job, AWS will begin preparing the Snowball Edge for shipment to you.
 
 Jobs are subject to export control laws in specific countries and might require an export license. US export and re-export laws also apply. Diversion from the country and US laws and regulations is prohibited.
-
-****
 
 1. In the **Job summary** page, review all the sections before you create the job. If you want to make changes, choose **Edit** for the appropriate section, and edit the information.
 

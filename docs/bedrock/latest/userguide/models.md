@@ -7,9 +7,12 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/models.html
 
 Amazon Bedrock supports a wide catalog of foundation models from leading providers. This chapter explains where each model is available, which APIs and endpoints support it, how to access it, and how to manage models throughout their lifecycle. For an overview of all available models with their capabilities and pricing, see [Models at a glance](model-cards.md).
 
+**Tip**
+For new applications, we recommend the `bedrock-runtime` endpoint. See [Endpoints supported by Amazon Bedrock](endpoints.md) for details.
+
 **In this chapter**
-+ [API compatibility by models](models-api-compatibility.md) – Which APIs (InvokeModel, Converse, Chat Completions, Responses, Messages) each model supports.
-+ [Endpoint availability by models](models-endpoint-availability.md) – Which endpoints (`bedrock-runtime`, `bedrock-mantle`) each model is hosted on.
++ [API compatibility](models-api-compatibility.md) – Which APIs (InvokeModel, Converse, Chat Completions, Responses, Messages) each model supports.
++ [Endpoint availability](models-endpoint-availability.md) – Which endpoints (`bedrock-runtime`, `bedrock-mantle`) each model is hosted on.
 + [Regional availability by models](models-region-compatibility.md) – AWS Regions and cross-Region inference profiles each model is available in.
 + [Regional availability by endpoints](endpoints-region-availability.md) – AWS Regions where each Amazon Bedrock endpoint (`bedrock-runtime`, `bedrock-mantle`) is available.
 + [Get list of models](models-get-info.md) – Programmatically list and discover available models on each endpoint.

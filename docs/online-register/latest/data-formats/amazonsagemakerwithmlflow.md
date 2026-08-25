@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon SageMaker with MLflow provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="sagemaker-mlflow-AccessUI"></a>[AccessUI](${APIReferenceDocPage}) | Access the MLflow UI | Read |

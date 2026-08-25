@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/tags-operations.html
 
 Use the following tag operations to add, remove, or list tags on a resource.
 
-****
-
 | API | CLI | Action description |
 | --- | --- | --- |
 | TagResource | tag-resource | Add or overwrite one or more tags on the resource that has the specified ARN. |

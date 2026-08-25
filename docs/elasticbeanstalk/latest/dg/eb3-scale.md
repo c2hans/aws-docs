@@ -20,8 +20,6 @@ Scales the environment to always run on a specified number of instances, setting
 ## Options
 <a name="eb3-scaleoptions"></a>
 
-****
-
 |  Name  |  Description  |
 | --- | --- |
 | --timeout | The number of minutes before the command times out. |

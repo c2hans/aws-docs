@@ -10,7 +10,12 @@ The following topic lists error messages that occur during the upload of Instrum
 **Note**
 For important considerations when using Instrumentation tests in AWS Device Farm, see [Instrumentation for Android and AWS Device Farm](test-types-android-instrumentation.md).
 
-## INSTRUMENTATION\_TEST\_PACKAGE\_UNZIP\_FAILED
+## Upload errors
+<a name="troubleshooting-instrumentation-tests-upload"></a>
+
+The following errors can occur when you upload your Instrumentation tests.
+
+### INSTRUMENTATION\_TEST\_PACKAGE\_UNZIP\_FAILED
 <a name="INSTRUMENTATION_TEST_PACKAGE_UNZIP_FAILED"></a>
 
 If you see the following message, follow these steps to fix the issue.
@@ -48,7 +53,7 @@ Make sure that you can unzip the test package without errors. In the following e
 
    For more information, see [Instrumentation for Android and AWS Device Farm](test-types-android-instrumentation.md).
 
-## INSTRUMENTATION\_TEST\_PACKAGE\_AAPT\_DEBUG\_BADGING\_FAILED
+### INSTRUMENTATION\_TEST\_PACKAGE\_AAPT\_DEBUG\_BADGING\_FAILED
 <a name="INSTRUMENTATION_TEST_PACKAGE_AAPT_DEBUG_BADGING_FAILED"></a>
 
 If you see the following message, follow these steps to fix the issue.
@@ -91,7 +96,7 @@ In the following example, the package's name is **app-debug-androidTest-unaligne
 
   For more information, see [Instrumentation for Android and AWS Device Farm](test-types-android-instrumentation.md).
 
-## INSTRUMENTATION\_TEST\_PACKAGE\_INSTRUMENTATION\_RUNNER\_VALUE\_MISSING
+### INSTRUMENTATION\_TEST\_PACKAGE\_INSTRUMENTATION\_RUNNER\_VALUE\_MISSING
 <a name="INSTRUMENTATION_TEST_PACKAGE_INSTRUMENTATION_RUNNER_VALUE_MISSING"></a>
 
 If you see the following message, follow these steps to fix the issue.
@@ -127,7 +132,7 @@ In the following example, the package's name is **app-debug-androidTest-unaligne
 
   For more information, see [Instrumentation for Android and AWS Device Farm](test-types-android-instrumentation.md).
 
-## INSTRUMENTATION\_TEST\_PACKAGE\_AAPT\_DUMP\_XMLTREE\_FAILED
+### INSTRUMENTATION\_TEST\_PACKAGE\_AAPT\_DUMP\_XMLTREE\_FAILED
 <a name="INSTRUMENTATION_TEST_PACKAGE_AAPT_DUMP_XMLTREE_FAILED"></a>
 
 If you see the following message, follow these steps to fix the issue.
@@ -176,7 +181,7 @@ In the following example, the package's name is **app-debug-androidTest-unaligne
 
   For more information, see [Instrumentation for Android and AWS Device Farm](test-types-android-instrumentation.md).
 
-## INSTRUMENTATION\_TEST\_PACKAGE\_TEST\_PACKAGE\_NAME\_VALUE\_MISSING
+### INSTRUMENTATION\_TEST\_PACKAGE\_TEST\_PACKAGE\_NAME\_VALUE\_MISSING
 <a name="INSTRUMENTATION_TEST_PACKAGE_TEST_PACKAGE_NAME_VALUE_MISSING"></a>
 
 If you see the following message, follow these steps to fix the issue.
@@ -206,3 +211,44 @@ In the following example, the package's name is **app-debug-androidTest-unaligne
   ```
 
   For more information, see [Instrumentation for Android and AWS Device Farm](test-types-android-instrumentation.md).
+
+## Test insights
+<a name="troubleshooting-instrumentation-tests-insights"></a>
+
+When you opt in to test insights, Device Farm generates a summarized report for your run and each job under it. If the service cannot generate the report, the insights report status is `SKIPPED` or `ERRORED`, and the report message explains why. The following messages can occur when generating insights for Instrumentation tests.
+
+### The job did not run to completion
+<a name="ti-instrumentation-job-not-complete"></a>
+
+`Unable to generate test insights because the job was {{status}}.`
+
+The job ended in a non-successful state (where {{status}} is `STOPPED`, `ERRORED`, or `SKIPPED`), so there was no result to summarize. A run that ends in a failed state still receives insights.
+
+To resolve this issue, investigate why the job did not run to completion. In many cases, the `message` field of the job itself might explain why the job didn't complete.
+
+### The results contained no test cases
+<a name="ti-instrumentation-no-test-cases"></a>
+
+`Test insights could not be generated. The test spec output file was parsed successfully but contained no test cases.`
+
+The results artifact parsed successfully but contained zero test cases.
+
+To resolve this issue, verify that your test suite includes at least one test case and that results are stored correctly under `$DEVICEFARM_LOG_DIR`.
+
+### The test output exceeds the maximum supported size
+<a name="ti-instrumentation-output-too-large"></a>
+
+`Unable to generate test insights: test output "test spec output" exceeds the maximum supported size of 1GB.`
+
+The test spec output is larger than 1 GB.
+
+To resolve this issue, investigate commands that are generating large numbers of lines in your test spec output. Then, remove or modify them.
+
+### No instrumentation output was found in the test spec output
+<a name="ti-instrumentation-no-instrumentation-output"></a>
+
+`Unable to generate test insights. No instrumentation test output was found in the test spec output file.`
+
+The test spec output file was present but contained no instrumentation output lines.
+
+To resolve this issue, ensure that your framework emits instrumentation output to `stdout` in the test spec file.

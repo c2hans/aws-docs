@@ -56,6 +56,11 @@ The CloudWatch Logs configuration for the code review job.
 Type: [CloudWatchLog](API_CloudWatchLog.md) object
 Required: No
 
+ ** maxTaskHours **   <a name="securityagent-Type-CodeReviewJob-maxTaskHours"></a>
+The maximum number of billable task hours allowed for this code review job. If the cumulative task hours reach this limit, the job is gracefully stopped.
+Type: Double
+Required: No
+
  ** overview **   <a name="securityagent-Type-CodeReviewJob-overview"></a>
 An overview of the code review job results.
 Type: String

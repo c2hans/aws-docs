@@ -44,15 +44,28 @@ A timestamp that notes the time when the control was released (start of its life
 Type: Timestamp
 Required: No
 
- ** GovernedResources **   <a name="controlcatalog-Type-ControlSummary-GovernedResources"></a>
-A list of AWS resource types that are governed by this control. This information helps you understand which controls can govern certain types of resources, and conversely, which resources are affected when the control is implemented. The resources are represented as AWS CloudFormation resource types. If `GovernedResources` cannot be represented by available CloudFormation resource types, it’s returned as an empty list.
+ ** GovernedProviders **   <a name="controlcatalog-Type-ControlSummary-GovernedProviders"></a>
+A list of providers whose resources are governed by this control. For example, a value of `AWS` indicates that the control governs AWS resources.
 Type: Array of strings
-Pattern: `[A-Za-z0-9]{2,64}::[A-Za-z0-9]{2,64}::[A-Za-z0-9]{2,64}`
+Length Constraints: Minimum length of 2. Maximum length of 64.
+Pattern: `[A-Z]{2,64}`
+Required: No
+
+ ** GovernedResources **   <a name="controlcatalog-Type-ControlSummary-GovernedResources"></a>
+A list of resource types that are governed by this control. This information helps you understand which controls can govern certain types of resources, and conversely, which resources are affected when the control is implemented. For AWS controls, the resources are represented as CloudFormation resource types. For non-AWS controls, the resources are represented in a provider-specific format. If `GovernedResources` cannot be represented by available resource types, it’s returned as an empty list.
+Type: Array of strings
+Pattern: `[A-Za-z0-9][A-Za-z0-9.:/_-]{1,254}`
 Required: No
 
  ** Implementation **   <a name="controlcatalog-Type-ControlSummary-Implementation"></a>
 An object of type `ImplementationSummary` that describes how the control is implemented.
 Type: [ImplementationSummary](API_ImplementationSummary.md) object
+Required: No
+
+ ** ParameterRequirementSummary **   <a name="controlcatalog-Type-ControlSummary-ParameterRequirementSummary"></a>
+A summary that indicates whether the control requires parameters, accepts optional parameters, or does not support parameters. Use this field to determine whether you need to supply parameter values when you enable the control.
+Type: String
+Valid Values: `REQUIRED | OPTIONAL | NONE`
 Required: No
 
  ** Severity **   <a name="controlcatalog-Type-ControlSummary-Severity"></a>

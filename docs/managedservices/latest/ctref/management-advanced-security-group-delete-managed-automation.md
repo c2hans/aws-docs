@@ -14,8 +14,6 @@ Disassociate a security group from the specified AWS resources and optionally de
 ## Change Type Details
 <a name="ct-3cp96z7r065e4-MASd-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-3cp96z7r065e4 |

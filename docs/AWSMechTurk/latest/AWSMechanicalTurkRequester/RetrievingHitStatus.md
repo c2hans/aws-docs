@@ -15,8 +15,6 @@ You can use the values `NumberOfAssignmentsAvailable` and `NumberOfAssignmentsPe
 
  The following example shows the HIT status values through the lifecycle of a HIT with `MaxAssignments` set to 5.
 
-****
-
 | Step  | `HITStatus`  | Number Of assignments available  | Number Of assignments pending  |
 | --- | --- | --- | --- |
 | Initial state  |  Assignable  |  5  |  0  |

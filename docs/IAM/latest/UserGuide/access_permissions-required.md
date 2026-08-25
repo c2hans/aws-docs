@@ -93,7 +93,7 @@ Some tasks, such as deleting a group, involve multiple actions: You must first r
 ## Permissions for working in the AWS Management Console
 <a name="Credentials-Permissions-overview-console"></a>
 
-The preceding examples show policies that allow a user to perform the actions with the [AWS CLI](https://docs.aws.amazon.com/http://aws.amazon.com/cli/) or the [AWS SDKs](https://docs.aws.amazon.com/http://aws.amazon.com/tools/).
+The preceding examples show policies that allow a user to perform the actions with the [AWS CLI](http://aws.amazon.com/cli/) or the [AWS SDKs](http://aws.amazon.com/tools/).
 
 As users work with the console, the console issues requests to IAM to list groups, users, roles, and policies, and to get the policies associated with a group, user, or role. The console also issues requests to get AWS account information and information about the principal. The principal is the user making requests in the console.
 

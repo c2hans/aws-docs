@@ -127,8 +127,6 @@ These operations are only available through use of the AWS CLI or SDK, as the Ca
 
 The Israel (Tel Aviv) Region supports only the following operations for the following features.
 
-****
-
 | Feature | Operations |
 | --- | --- |
 | Face detection | [DetectFaces](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DetectFaces.html) |

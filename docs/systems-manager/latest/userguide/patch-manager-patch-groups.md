@@ -76,8 +76,6 @@ The full process is explained below the illustration.
 
 In this example, we have three groups of EC2 instances for Windows Server with the following tags applied:
 
-****
-
 | EC2 instances group | Tags |
 | --- | --- |
 | Group 1 | `key=OS,value=Windows`<br />`key=PatchGroup,value=DEV` |
@@ -85,8 +83,6 @@ In this example, we have three groups of EC2 instances for Windows Server with t
 | Group 3 | `key=OS,value=Windows`<br />`key=PatchGroup,value=QA` |
 
 For this example, we also have these two Windows Server patch baselines:
-
-****
 
 | Patch baseline ID | Default | Associated patch group |
 | --- | --- | --- |

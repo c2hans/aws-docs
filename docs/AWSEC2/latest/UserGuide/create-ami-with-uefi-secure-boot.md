@@ -288,7 +288,7 @@ You can create the variable store *offline* without a running instance by using 
    https://github.com/awslabs/python-uefivars
    ```
 
-1. Create a new variable store from your keys by running the following command. This will create a base64-encoded binary blob in {{your\_binary\_blob}}.bin. The tool also supports updating a binary blob via the `-I` parameter.
+1. Create a new variable store from your keys by running the following command. This will create a base64-encoded binary blob in {{your\_binary\_blob}}.bin. The tool also supports updating a binary blob by using the `-I` parameter.
 
    ```
    ./uefivars.py -i none -o aws -O {{your_binary_blob}}.bin -P PK.esl -K KEK.esl --db db.esl --dbx dbx.esl

@@ -17,7 +17,7 @@ Before you can log in to the Contact Control Panel (CCP), your administrator mus
 
 After you have that information, here's how to log in and get started.
 
-1. Ensure that your USB headset is securely connected to your computer.
+1. Make sure that your USB headset is securely connected to your computer.
 
 1. Using Chrome or Firefox, open the CCP by using the URL that you received from your administrator.
 

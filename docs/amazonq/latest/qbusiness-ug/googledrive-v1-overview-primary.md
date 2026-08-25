@@ -9,8 +9,6 @@ Amazon Q Business is no longer open to new customers. For capabilities similar t
 
 The following table gives an overview of the Amazon Q Business Google Drive connector and its supported features.
 
-****
-
 - ****Security****
   - **Feature:** Authentication type / **Support:** Google Service Account, OAuth 2.0 with Refresh Token Flow
   - **Feature:** Authentication credentials / **Support:** +  Admin account email <br />+  Client email <br />+  Private key  +  Client ID <br />+  Client secret <br />+  Refresh token   Admin privileges required.

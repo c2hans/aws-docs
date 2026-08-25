@@ -42,8 +42,6 @@ The following table contains AWS Region-specific Amazon Trust Services (ATS) end
 
 To look up your account-specific endpoint, use the [aws iot describe-endpoint --endpoint-type iot:Data-ATS](https://docs.aws.amazon.com/cli/latest/reference/iot/describe-endpoint.html) command.
 
-****
-
 | Region Name | Region | Endpoint | Protocol |
 | --- | --- | --- | --- |
 | US East (Ohio) | us-east-2 | *prefix*-ats.iot.us-east-2.amazonaws.com | HTTPS, MQTT |
@@ -68,8 +66,6 @@ Legacy Verisign endpoints are currently supported for [some Regions](#greengrass
 <a name="greengrass-runtime-endpoints"></a>
 
 The following table contains AWS Region-specific ATS endpoints for device discovery operations using the [AWS IoT Greengrass Discovery API](https://docs.aws.amazon.com/greengrass/v1/developerguide/gg-discover-api.html). This is a data plane API.
-
-****
 
 | Region Name | Region | Endpoint | Protocol |
 | --- | --- | --- | --- |
@@ -101,8 +97,6 @@ When using legacy Verisign endpoints, you must use Verisign root CA certificates
 ------
 #### [ AWS IoT Device Operations (Legacy Endpoints) ]
 
-****
-
 | Region Name | Region | Endpoint | Protocol |
 | --- | --- | --- | --- |
 | US East (N. Virginia) | us-east-1 | prefix.iot.us-east-1.amazonaws.com | HTTPS, MQTT |
@@ -116,8 +110,6 @@ To look up your account-specific legacy endpoint, use the [aws iot describe-endp
 
 ------
 #### [ Discovery Operations (Legacy Endpoints) ]
-
-****
 
 | Region Name | Region | Endpoint | Protocol |
 | --- | --- | --- | --- |
@@ -135,8 +127,6 @@ To look up your account-specific legacy endpoint, use the [aws iot describe-endp
 
 ### AWS IoT Greengrass Cloud API
 <a name="gg_cloud_limits"></a>
-
-****
 
 | Description | Default |
 | --- | --- |
@@ -174,8 +164,6 @@ This quota applies per AWS account. For example, in the US East (N. Virginia) Re
 
 ### AWS IoT Greengrass Core
 <a name="gg_core_limits"></a>
-
-****
 
 | Description | Default |
 | --- | --- |

@@ -13,6 +13,7 @@ You can use Amazon MSK to create a custom MSK configuration where you set the fo
 | auto.create.topics.enable | Enables topic auto-creation on the server. |
 | compression.type | The final compression type for a given topic. You can set this property to the standard compression codecs (gzip, snappy, lz4, and zstd). It additionally accepts uncompressed. This value is equivalent to no compression. If you set the value to producer, it means retain the original compression codec that the producer sets. |
 | connections.max.idle.ms | Idle connections timeout in milliseconds. The server socket processor threads close the connections that are idle for more than the value that you set for this property. |
+| custom.advertised.listeners | Configures custom domain names for client-facing listeners on your Amazon MSK cluster. Amazon MSK automatically applies the configuration to every broker, including new brokers added during scaling or replacement. Works on both ZooKeeper and KRaft clusters. Format example: `LISTENER_NAME://b-{broker_id}.kafka.mycompany.com:9000+{broker_id}`.<br />The allowed listener names are `CLIENT`, `CLIENT_SECURE`, `CLIENT_SECURE_PUBLIC`, `CLIENT_SASL_SCRAM`, `CLIENT_SASL_SCRAM_PUBLIC`, `CLIENT_IAM`, and `CLIENT_IAM_PUBLIC`.<br />For more information, see [Configure custom domain names for your Amazon MSK cluster](custom-domain-names.md). |
 | default.replication.factor | The default replication factor for automatically created topics. |
 | delete.topic.enable | Enables the delete topic operation. If you turn off this setting, you can't delete a topic through the admin tool. |
 | group.initial.rebalance.delay.ms | Amount of time the group coordinator waits for more data consumers to join a new group before the group coordinator performs the first rebalance. A longer delay means potentially fewer rebalances, but this increases the time until processing begins. |
@@ -68,7 +69,7 @@ When you update your existing MSK cluster with a custom MSK configuration, Amazo
 In addition to the configuration properties that Amazon MSK provides, you can dynamically set cluster-level and broker-level configuration properties that don't require a broker restart. You can dynamically set some configuration properties. These are the properties not marked as read-only in the table under [Broker Configs](https://kafka.apache.org/documentation/#brokerconfigs) in the Apache Kafka documentation. For information on dynamic configuration and example commands, see [Updating Broker Configs](https://kafka.apache.org/documentation/#dynamicbrokerconfigs) in the Apache Kafka documentation.
 
 **Note**
-You can set the `advertised.listeners` property, but not the `listeners` property.
+You can set custom listeners to override the default Amazon MSK listeners using the `custom.advertised.listeners` configuration property, which works on both ZooKeeper and KRaft clusters. For more information, see [Configure custom domain names for your Amazon MSK cluster](custom-domain-names.md).
 
 ## Topic-level Amazon MSK configuration
 <a name="msk-topic-confinguration"></a>

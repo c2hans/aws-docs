@@ -10,7 +10,7 @@ This topic defines the flow block for routing customers randomly to a queue base
 ## Description
 <a name="distribute-by-percentage-description"></a>
 + This block is useful for doing A/B testing. It routes customers randomly based on a percentage.
-+ Contacts are distributed randomly, so exact percentage splits may or may not occur.
++ Contacts are distributed randomly, so exact percentage splits might or might not occur.
 
 ## Supported channels
 <a name="distribute-by-percentage-channels"></a>

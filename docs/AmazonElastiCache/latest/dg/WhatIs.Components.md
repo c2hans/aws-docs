@@ -117,8 +117,6 @@ Replication from the API and CLI perspective uses different terminology to maint
 
 In the following table, you can find a comparison of the features of Valkey or Redis OSS (cluster mode disabled) and Valkey or Redis OSS (cluster mode enabled) replication groups.
 
-****
-
 <table>
 <thead>
   <tr><th></th><th> Valkey or Redis OSS cluster with cluster mode disabled</th><th> Valkey or Redis OSS cluster with cluster mode enabled</th></tr>

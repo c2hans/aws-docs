@@ -20,7 +20,6 @@ Perform these on the Conductor Live appliance, either directly at the appliance 
    where -l is a letter, not a number.
 
 1. Follow the prompts:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-cl3/latest/installguide/install-cl3-ig-install-sw.html)
 
    Then the software is installed. Finally, this message appears:

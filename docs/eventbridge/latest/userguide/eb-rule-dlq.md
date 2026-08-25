@@ -67,7 +67,7 @@ Each message in your DLQ will include the following custom attributes:
 <a name="eb-dlq-considerations"></a>
 
 Consider the following when configuring a DLQ for EventBridge.
-+ Only [standard queues](https://docs.aws.amazon.com//AWSSimpleQueueService/latest/SQSDeveloperGuide/standard-queues.html) are supported. You can't use a FIFO queue for a DLQ in EventBridge.
++ Only [standard queues](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/standard-queues.html) are supported. You can't use a FIFO queue for a DLQ in EventBridge.
 + EventBridge includes event metadata and message attributes in the message, including: the Error Code, Error Message, the Exhausted Retry Condition, Rule ARN, Retry Attempts, and the Target ARN. You can use these values to identify an event and the cause of the failure.
 + Permissions for DLQs in the same account:
   + If you add a target to a rule using the console, and you choose an Amazon SQS queue in the same account, a [resource-based policy](eb-use-resource-based.md) that grants EventBridge access to the queue is attached to the queue for you.

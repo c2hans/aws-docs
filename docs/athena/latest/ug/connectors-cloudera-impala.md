@@ -83,8 +83,6 @@ impala://${{{jdbc_connection_string}}}
 
 You can use a multiplexer to connect to multiple database instances with a single Lambda function. Requests are routed by catalog name. Use the following classes in Lambda.
 
-****
-
 | Handler | Class |
 | --- | --- |
 | Composite handler | ImpalaMuxCompositeHandler |
@@ -94,16 +92,12 @@ You can use a multiplexer to connect to multiple database instances with a singl
 ##### Multiplexing handler parameters
 <a name="connectors-cloudera-impala-multiplexing-handler-parameters"></a>
 
-****
-
 | Parameter | Description |
 | --- | --- |
 | ${{catalog}}\_connection\_string | Required. An Impala cluster connection string for an Athena catalog. Prefix the environment variable with the name of the catalog used in Athena. For example, if the catalog registered with Athena is myimpalacatalog, then the environment variable name is myimpalacatalog\_connection\_string. |
 | default | Required. The default connection string. This string is used when the catalog is lambda:${{{AWS\_LAMBDA\_FUNCTION\_NAME}}}. |
 
 The following example properties are for a Impala MUX Lambda function that supports two database instances: `impala1` (the default), and `impala2`.
-
-****
 
 | Property | Value |
 | --- | --- |
@@ -148,8 +142,6 @@ Currently, Cloudera Impala recognizes the `UID` and `PWD` JDBC properties.
 
 You can use the following single connection metadata and record handlers to connect to a single Cloudera Impala instance.
 
-****
-
 | Handler type | Class |
 | --- | --- |
 | Composite handler | ImpalaCompositeHandler |
@@ -159,8 +151,6 @@ You can use the following single connection metadata and record handlers to conn
 ##### Single connection handler parameters
 <a name="connectors-cloudera-impala-single-connection-handler-parameters"></a>
 
-****
-
 | Parameter | Description |
 | --- | --- |
 | default | Required. The default connection string. |
@@ -168,8 +158,6 @@ You can use the following single connection metadata and record handlers to conn
 The single connection handlers support one database instance and must provide a `default` connection string parameter. All other connection strings are ignored.
 
 The following example property is for a single Cloudera Impala instance supported by a Lambda function.
-
-****
 
 | Property | Value |
 | --- | --- |
@@ -179,8 +167,6 @@ The following example property is for a single Cloudera Impala instance supporte
 <a name="connectors-cloudera-impala-spill-parameters"></a>
 
 The Lambda SDK can spill data to Amazon S3. All database instances accessed by the same Lambda function spill to the same location.
-
-****
 
 | Parameter | Description |
 | --- | --- |
@@ -192,8 +178,6 @@ The Lambda SDK can spill data to Amazon S3. All database instances accessed by t
 <a name="connectors-cloudera-impala-data-type-support"></a>
 
 The following table shows the corresponding data types for JDBC, Cloudera Impala, and Arrow.
-
-****
 
 | JDBC | Cloudera Impala | Arrow |
 | --- | --- | --- |

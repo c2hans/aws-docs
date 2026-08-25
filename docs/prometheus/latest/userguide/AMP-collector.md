@@ -19,5 +19,6 @@ The following topics provide more information about how to use an Amazon Managed
 **Topics**
 + [Set up managed collectors for Amazon EKS](AMP-collector-how-to.md)
 + [Set up managed Prometheus collectors for Amazon MSK](prom-msk-integration.md)
++ [Set up managed Prometheus collectors for Amazon OpenSearch Service](prom-opensearch-integration.md)
 + [What are Prometheus-compatible metrics?](prom-compatible-metrics.md)
 + [Monitor collectors with vended logs](AMP-collector-vended-logs.md)

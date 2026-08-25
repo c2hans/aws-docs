@@ -81,6 +81,11 @@ The name of the finding.
 Type: String
 Required: No
 
+ ** originalFindingId **   <a name="securityagent-Type-Finding-originalFindingId"></a>
+The identifier of the original finding that this revalidation finding was produced from.
+Type: String
+Required: No
+
  ** pentestId **   <a name="securityagent-Type-Finding-pentestId"></a>
 The unique identifier of the pentest associated with the finding.
 Type: String
@@ -94,6 +99,11 @@ Required: No
  ** reasoning **   <a name="securityagent-Type-Finding-reasoning"></a>
 The reasoning behind the finding, explaining why it was identified as a vulnerability.
 Type: String
+Required: No
+
+ ** revalidationJobIds **   <a name="securityagent-Type-Finding-revalidationJobIds"></a>
+The list of pentest job identifiers for revalidation jobs that retested this finding.
+Type: Array of strings
 Required: No
 
  ** riskLevel **   <a name="securityagent-Type-Finding-riskLevel"></a>

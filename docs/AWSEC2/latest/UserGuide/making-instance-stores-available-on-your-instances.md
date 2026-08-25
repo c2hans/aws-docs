@@ -72,7 +72,7 @@ You can view the instance store volumes using Windows Disk Management. For more 
 
 1. If you are prompted to initialize the volume, choose the volume to initialize, select the required partition type depending on your use case, and then choose **OK**.
 
-1. In the list of volumes, right-click the volume to mount, and then choose **New Simple Volume**.
+1. In the list of volumes, open the context (right-click) menu for the volume to mount, and then choose **New Simple Volume**.
 
 1. On the wizard, choose **Next**.
 
@@ -83,6 +83,6 @@ You can view the instance store volumes using Windows Disk Management. For more 
    + To mount the volume as a folder, choose **Mount in the following empty NTFS folder** and then choose **Browse** to create or select the folder to use.
    + To mount the volume without a drive letter or path, choose **Do not assign a drive letter or drive path**.
 
-1. On the Format Partition screen, specify whether or not to format the volume. If you choose to format the volume, choose the required file system and unit size, and specify a volume label.
+1. On the Format Partition screen, specify whether to format the volume. If you choose to format the volume, choose the required file system and unit size, and specify a volume label.
 
 1. Choose **Next**, **Finish**.

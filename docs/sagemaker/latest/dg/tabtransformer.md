@@ -17,8 +17,6 @@ SageMaker AI TabTransformer supports single-instance CPU and single-instance GPU
 
 The following table outlines a variety of sample notebooks that address different use cases of Amazon SageMaker AI TabTransformer algorithm.
 
-****
-
 | **Notebook Title** | **Description** |
 | --- | --- |
 | [Tabular classification with Amazon SageMaker AI TabTransformer algorithm](https://github.com/aws/amazon-sagemaker-examples/blob/main/introduction_to_amazon_algorithms/tabtransformer_tabular/Amazon_Tabular_Classification_TabTransformer.ipynb) | This notebook demonstrates the use of the Amazon SageMaker AI TabTransformer algorithm to train and host a tabular classification model.  |

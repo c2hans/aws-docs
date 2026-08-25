@@ -611,7 +611,7 @@ You can now delete the resources that you created for this tutorial, unless you 
 
 **To delete the DynamoDB table**
 
-1. Open the [Tables page](https://console.aws.amazon.com//dynamodb/home#tables:) of the DynamoDB console.
+1. Open the [Tables page](https://console.aws.amazon.com/dynamodb/home#tables:) of the DynamoDB console.
 
 1. Select the table you created.
 

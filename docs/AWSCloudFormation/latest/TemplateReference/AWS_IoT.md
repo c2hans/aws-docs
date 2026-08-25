@@ -34,6 +34,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::IoT::SecurityProfile](aws-resource-iot-securityprofile.md)
 + [AWS::IoT::SoftwarePackage](aws-resource-iot-softwarepackage.md)
 + [AWS::IoT::SoftwarePackageVersion](aws-resource-iot-softwarepackageversion.md)
++ [AWS::IoT::Stream](aws-resource-iot-stream.md)
 + [AWS::IoT::Thing](aws-resource-iot-thing.md)
 + [AWS::IoT::ThingGroup](aws-resource-iot-thinggroup.md)
 + [AWS::IoT::ThingPrincipalAttachment](aws-resource-iot-thingprincipalattachment.md)

@@ -30,8 +30,8 @@ If you are using before discount rates, tiered pricing is only accounted for if 
 <a name="pc-rates-discounts-after"></a>
 
 AWS Pricing Calculator offers two ways to estimate costs that account for your organization's discounts:
-+ [After discounts](https://docs.aws.amazon.com//cost-management/latest/userguide/pc-rates-discounts.html#pc-rates-after)
-+ [After discounts and purchase commitments](https://docs.aws.amazon.com//cost-management/latest/userguide/pc-rates-discounts.html#pc-rates-discounts-after-commitments)
++ [After discounts](https://docs.aws.amazon.com/cost-management/latest/userguide/pc-rates-discounts.html#pc-rates-after)
++ [After discounts and purchase commitments](https://docs.aws.amazon.com/cost-management/latest/userguide/pc-rates-discounts.html#pc-rates-discounts-after-commitments)
 
 These options help you understand how different types of discounts impact your estimated costs, whether from usage-based discounts alone or combined with commitment-based savings.
 
@@ -62,7 +62,7 @@ After discounts aren't available to any product launched after the 15th of the c
 ### After discounts and purchase commitments
 <a name="pc-rates-discounts-after-commitments"></a>
 
-The After discounts and purchase commitments rate calculates the effective pricing based on your usage patterns. For a specific AWS resource (SKU), the total cost combines various pricing models and commitment terms, including 1-year and 3-year Compute Savings Plans, Instance Savings Plans, Convertible RIs, and Standard RIs with no upfront payment options. For each commitment type, the calculation multiplies the coverage percentage by the corresponding commitment rate for that SKU. Any remaining On-Demand usage is calculated by multiplying the On-Demand coverage percentage by the SKU's After discount rate. For an example of how a purchase commitment applies to your usage, see [ Understanding how Savings Plans apply to your usage](https://docs.aws.amazon.com//savingsplans/latest/userguide/sp-applying.html).
+The After discounts and purchase commitments rate calculates the effective pricing based on your usage patterns. For a specific AWS resource (SKU), the total cost combines various pricing models and commitment terms, including 1-year and 3-year Compute Savings Plans, Instance Savings Plans, Convertible RIs, and Standard RIs with no upfront payment options. For each commitment type, the calculation multiplies the coverage percentage by the corresponding commitment rate for that SKU. Any remaining On-Demand usage is calculated by multiplying the On-Demand coverage percentage by the SKU's After discount rate. For an example of how a purchase commitment applies to your usage, see [ Understanding how Savings Plans apply to your usage](https://docs.aws.amazon.com/savingsplans/latest/userguide/sp-applying.html).
 
 For EC2 instances, the calculation considers your previous month's usage patterns and determines coverage percentages based on whether the instance family was used in the same AWS Region, in different Regions, or not used at all. For example, if you used m5.2xlarge instances in a specific Region last month, the formula will calculate coverage based on that Region's specific usage patterns. If there was no usage of a particular instance family, the formula defaults to using the overall EC2 usage patterns across all Regions to determine coverage percentages. All these coverage percentages (including On-Demand usage) must add up to 100%.
 
@@ -76,7 +76,7 @@ After discount and purchase commitments aren't available to any product launched
 ## Purchase commitments
 <a name="pc-rates-discounts-commitments"></a>
 
-The purchase commitments supported by AWS Pricing Calculator are Amazon EC2 Reserved Instances (RIs) and Compute and EC2 Instance Savings Plans. For more information, see [Compute and EC2 Instance Savings Plans](https://aws.amazon.com//savingsplans/compute-pricing/) and [Amazon EC2 Reserved Instances](https://aws.amazon.com/ec2/pricing/reserved-instances/).
+The purchase commitments supported by AWS Pricing Calculator are Amazon EC2 Reserved Instances (RIs) and Compute and EC2 Instance Savings Plans. For more information, see [Compute and EC2 Instance Savings Plans](https://aws.amazon.com/savingsplans/compute-pricing/) and [Amazon EC2 Reserved Instances](https://aws.amazon.com/ec2/pricing/reserved-instances/).
 
 You can use Pricing Calculator to model the impact of adding new Savings Plans or Reserved Instances, or removing existing commitments as part of a bill scenario. This allows you to see how these commitments would affect your overall estimated AWS costs.
 

@@ -51,7 +51,7 @@ All AMIs must comply with the following policies:
 
 In addition to [general policies](#general-policies), AMIs providing SSH (Secure Shell) access must comply with the following security policies:
 + AMIs must not allow password-based authentication using SSH. To ensure this, in your `sshd_config` file, set `PasswordAuthentication` to `no`.
-+ AMIs must disable password-based remote logins for superuser accounts. For more information, see [Disable password-based remote logins for the root user](https://docs.aws.amazon.com//AWSEC2/latest/UserGuide/building-shared-amis.html#public-amis-disable-password-logins-for-root).
++ AMIs must disable password-based remote logins for superuser accounts. For more information, see [Disable password-based remote logins for the root user](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/building-shared-amis.html#public-amis-disable-password-logins-for-root).
 + AMIs must not contain authorized public keys for SSH access.
 + SSH on AMIs must be accessible to AWS Marketplace internal vetting procedures.
   + The SSH service must listen on the TCP port specified for AMI scanning. For more information, see [Add a new version](https://docs.aws.amazon.com/marketplace/latest/userguide/single-ami-versions.html#single-ami-adding-version).
@@ -69,7 +69,7 @@ In addition to [general policies](#general-policies), AMIs based on Linux and ot
 In addition to [general policies](#general-policies), Windows-based AMIs must comply with the following security policies:
 + AMIs must not contain guest accounts.
 + Only administrator accounts may be granted remote desktop access to an instance.
-+ Windows AMIs must generate administrator passwords by enabling these options in [EC2Launch](https://docs.aws.amazon.com//AWSEC2/latest/UserGuide/ec2launch-v2.html) (or [EC2Config](https://docs.aws.amazon.com//AWSEC2/latest/UserGuide/ec2config-service.html) for Windows 2016 and older):
++ Windows AMIs must generate administrator passwords by enabling these options in [EC2Launch](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2launch-v2.html) (or [EC2Config](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2config-service.html) for Windows 2016 and older):
   + `Ec2SetPassword`
   + `Ec2WindowsActivate`
   + `Ec2HandleUserData`

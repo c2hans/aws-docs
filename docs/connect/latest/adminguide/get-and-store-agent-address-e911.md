@@ -9,11 +9,11 @@ The first step in setting up E911 for your Connect Customer instance is to get a
 
 ![Connect Customer E911 address storage process.](http://docs.aws.amazon.com/connect/latest/adminguide/images/e911-workflow.png)
 
-1. Since agents may be working from different locations (for example, office building, home, or coffee shop), it's critical that the most recently validated address is passed along with the emergency outbound call.
+1. Since agents might be working from different locations (for example, office building, home, or coffee shop), it's critical that the most recently validated address is passed along with the emergency outbound call.
 
    1. Store a validated address when you first set up an agent on Connect Customer, based on the agent's usual location.
 
-   1. Prompt the agent to update their address at the start of their shift to help ensure that the emergency outbound call has their latest address.
+   1. Prompt the agent to update their address at the start of their shift to help make sure that the emergency outbound call has their latest address.
 
    1. Check addresses against a database of valid street addresses (Master Street Address Guide).
 

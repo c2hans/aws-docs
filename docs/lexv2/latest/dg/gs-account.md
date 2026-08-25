@@ -57,7 +57,7 @@ If you encounter issues during account setup, here are common solutions:
 + **Console Access Issues** – Make sure you're signing in with the correct IAM user URL for your account, not the root AWS console. For more information about IAM best practices, see the Security section in this guide.
 + **Region Availability** – Amazon Lex V2 is not available in all AWS regions. Check the [Amazon Lex endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/lex.html) to confirm availability in your preferred region. For information about supported locales, see [Languages and locales supported by Amazon Lex V2](how-languages.md).
 + **Free Tier Limits** – Monitor your usage to stay within free tier limits: 10,000 text requests and 5,000 speech requests per month. For detailed pricing information, see [Amazon Lex Pricing](https://aws.amazon.com/lex/pricing/).
-+ **Quota Limits** – If you encounter service limits, review the current quotas and request increases if needed. For more information, see [Guidelines and best practicesQuotas](quotas.md).
++ **Quota Limits** – If you encounter service limits, review the current quotas and request increases if needed. For more information, see [Guidelines and best practices](quotas.md).
 
 For additional troubleshooting help, see the Monitoring section in this guide for information about error logs and debugging.
 

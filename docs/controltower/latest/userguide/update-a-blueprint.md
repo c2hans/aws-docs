@@ -25,7 +25,7 @@ The following procedures describe how to update custom blueprints and how to dep
 
 AWS Control Tower allows blueprint updates when the provisioned product is in the `AVAILABLE` state. If your provisioned product is in a `TAINTED` state, the update will fail. We recommend the following workaround:
 
-1. In the AWS Service Catalog console, manually update the `TAINTED` provisioned product to change the state to `AVAILABLE`. For more information, see [Updating provisioned products](https://docs.aws.amazon.com//servicecatalog/latest/userguide/enduser-update.html).
+1. In the AWS Service Catalog console, manually update the `TAINTED` provisioned product to change the state to `AVAILABLE`. For more information, see [Updating provisioned products](https://docs.aws.amazon.com/servicecatalog/latest/userguide/enduser-update.html).
 
 1. Then, follow the update account process from AWS Control Tower to fix the blueprint deployment error.
 

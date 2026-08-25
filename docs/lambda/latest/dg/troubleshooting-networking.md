@@ -36,7 +36,7 @@ If some of your TCP connections are timing out, see [VPC: TCP or UDP connection 
 <a name="troubleshooting-networking-tcp-udp"></a>
 
 **Note**
-This issue applies only if your subnet uses a [network access control list (ACL)](https://docs.aws.amazon.com//vpc/latest/userguide/vpc-network-acls.html#nacl-basics). Network ACLs aren't required for Lambda to connect to your subnets.
+This issue applies only if your subnet uses a [network access control list (ACL)](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html#nacl-basics). Network ACLs aren't required for Lambda to connect to your subnets.
 
 **Issue:** *Lambda intermittently loses connection to your VPC subnets, which you have configured a network access control list (ACL) for.*
 

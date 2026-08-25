@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/devops-guru-f
 
 Amazon DevOps Guru is a fully managed operations service that helps developers and operators improve the performance and availability of their applications. DevOps Guru offloads the tasks associated with identifying operational issues so that you can quickly implement recommendations to improve your application. For more information, see [What is Amazon DevOps Guru?](https://docs.aws.amazon.com/devops-guru/latest/userguide/welcome.html) in the *Amazon DevOps Guru User Guide*.
 
-DevOps Guru detects, analyzes, and makes recommendations for existing operational issues for all Amazon RDS DB engines. DevOps Guru for RDS extends this capability by applying machine learning to Performance Insights metrics for RDS for PostgreSQL databases. These monitoring features allow DevOps Guru for RDS to detect and diagnose performance bottlenecks and recommend specific corrective actions. DevOps Guru for RDS can also detect problematic conditions in your RDS for PostgreSQL database before they occur.
+DevOps Guru detects, analyzes, and makes recommendations for existing operational issues for all Amazon RDS DB engines. DevOps Guru for RDS extends this capability by applying machine learning to detailed per-query and database counter metrics (exposed through the Performance Insights API) for RDS for PostgreSQL databases. These monitoring features allow DevOps Guru for RDS to detect and diagnose performance bottlenecks and recommend specific corrective actions. DevOps Guru for RDS can also detect problematic conditions in your RDS for PostgreSQL database before they occur.
 
 You can now view these recommendations in RDS console. For more information, see [Recommendations from Amazon RDS](monitoring-recommendations.md).
 
@@ -44,7 +44,7 @@ To detect performance issues and help you resolve bottlenecks, DevOps Guru for 
 ## How DevOps Guru for RDS works
 <a name="devops-guru-for-rds.how-it-works"></a>
 
-DevOps Guru for RDS collects data about your RDS for PostgreSQL databases from Amazon RDS Performance Insights. The most important metric is `DBLoad`. DevOps Guru for RDS consumes the Performance Insights metrics, analyzes them with machine learning, and publishes insights to the dashboard.
+DevOps Guru for RDS collects data about your RDS for PostgreSQL databases from Amazon RDS Performance Insights. The most important metric is `DBLoad`. DevOps Guru for RDS consumes these detailed per-query and database counter metrics, analyzes them with machine learning, and publishes insights to the dashboard.
 
 An *insight* is a collection of related anomalies that were detected by DevOps Guru.
 
@@ -100,14 +100,14 @@ To view alerts from DevOps Guru in the RDS console, your AWS Identity and Acces
   + The AWS managed policy `AmazonRDSFullAccess`
   + A customer managed policy that includes `pi:GetResourceMetrics` and `pi:DescribeDimensionKeys`
 
-For more information, see [Configuring access policies for Performance Insights](USER_PerfInsights.access-control.md).
+For more information, see [Configuring access policies for Database Insights](USER_PerfInsights.access-control.md).
 
 ### Turning on Performance Insights for your RDS for PostgreSQL DB instances
 <a name="devops-guru-for-rds.configuring.performance-insights"></a>
 
 DevOps Guru for RDS relies on Performance Insights for its data. Without Performance Insights, DevOps Guru publishes anomalies, but doesn't include the detailed analysis and recommendations.
 
-When you create or modify a RDS for PostgreSQL DB instance, you can turn on Performance Insights. For more information, see [Turning Performance Insights on and off for Amazon RDS](USER_PerfInsights.Enabling.md).
+When you create or modify a RDS for PostgreSQL DB instance, you can turn on Performance Insights. For more information, see [Enabling and disabling detailed per-query and database counter metrics](USER_PerfInsights.Enabling.md).
 
 ### Turning on DevOps Guru and specifying resource coverage
 <a name="devops-guru-for-rds.configuring.coverage"></a>
@@ -201,7 +201,7 @@ If you turn on DevOps Guru from the RDS console when you create a database, RDS
 
 You can specify your DevOps Guru resource coverage on the DevOps Guru console. Follow the step described in [Specify your DevOps Guru resource coverage](https://docs.aws.amazon.com/devops-guru/latest/userguide/choose-coverage.html) in the *Amazon DevOps Guru User Guide*. When you edit your analyzed resources, choose one of the following options:
 + Choose **All account resources** to analyze all supported resources, including the RDS for PostgreSQL databases, in your AWS account and Region.
-+ Choose **CloudFormation stacks** to analyze the RDS for PostgreSQL databases that are in stacks you choose. For more information, see [Use AWS CloudFormation stacks to identify resources in your DevOps Guru applications](https://docs.aws.amazon.com//devops-guru/latest/userguide/working-with-cfn-stacks.html) in the *Amazon DevOps Guru User Guide*.
++ Choose **CloudFormation stacks** to analyze the RDS for PostgreSQL databases that are in stacks you choose. For more information, see [Use AWS CloudFormation stacks to identify resources in your DevOps Guru applications](https://docs.aws.amazon.com/devops-guru/latest/userguide/working-with-cfn-stacks.html) in the *Amazon DevOps Guru User Guide*.
 + Choose **Tags** to analyze the RDS for PostgreSQL databases that you have tagged. For more information, see [Use tags to identify resources in your DevOps Guru applications](https://docs.aws.amazon.com/devops-guru/latest/userguide/working-with-resource-tags.html) in the *Amazon DevOps Guru User Guide*.
 
 For more information, see [Enable DevOps Guru](https://docs.aws.amazon.com/devops-guru/latest/userguide/getting-started-enable-service.html) in the *Amazon DevOps Guru User Guide*.

@@ -14,8 +14,6 @@ Create a new AWS managed prefix list. A prefix list is a set of one or more CIDR
 ## Change Type Details
 <a name="ct-1bw3q0obl5y75-DAPc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1bw3q0obl5y75 |

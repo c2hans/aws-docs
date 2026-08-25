@@ -2283,7 +2283,7 @@ This control checks whether your Amazon EC2 instance is configured **not** to as
 + For examples of PASS and FAIL CloudFormation Templates related to this control, see: [CT.EC2.PR.8 example templates](#ct-ec2-pr-8-templates)
 
 **This control is incompatible with AWS Cloud9**
-A compatibility issue exists with AWS Cloud9 and this AWS Control Tower proactive control, [[CT.EC2.PR.8] Require an Amazon EC2 instance to set **AssociatePublicIpAddress** to **false** on a new network interface created by means of the **NetworkInterfaces** property in the **AWS::EC2::Instance** resource](#ct-ec2-pr-8-description). If this control is enabled, you cannot create an Amazon EC2 environment in AWS Cloud9. For more information, see [Troubleshooting AWS Cloud9](https://docs.aws.amazon.com//cloud9/latest/user-guide/troubleshooting.html#control-tower-rule).
+A compatibility issue exists with AWS Cloud9 and this AWS Control Tower proactive control, [[CT.EC2.PR.8] Require an Amazon EC2 instance to set **AssociatePublicIpAddress** to **false** on a new network interface created by means of the **NetworkInterfaces** property in the **AWS::EC2::Instance** resource](#ct-ec2-pr-8-description). If this control is enabled, you cannot create an Amazon EC2 environment in AWS Cloud9. For more information, see [Troubleshooting AWS Cloud9](https://docs.aws.amazon.com/cloud9/latest/user-guide/troubleshooting.html#control-tower-rule).
 
 **Explanation**
 

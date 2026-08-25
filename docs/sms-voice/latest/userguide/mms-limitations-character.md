@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/mms-limitatio
 
 A single MMS media file can be up to 2 MB for all image types (gif, jpeg, png) and 600 KB in size for all audio and video media file types. The text message body of an MMS can contain 1600 from any character set. Unlike SMS, MMS message are not broken into multiple parts when they are sent. If you are sending large text message you may get better throughput sending an MMS message since they are not broken into multiple parts.
 
-****
-
 | File type | MIME types | Maximum file size |
 | --- | --- | --- |
 | Graphics Interchange Format | `image/gif` | 2 MB |

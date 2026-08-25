@@ -78,7 +78,7 @@ $ aws rtbfabric create-requester-gateway \
 ### Updating gateway description
 <a name="updating-requester-gateway-description"></a>
 
-You can update the gateway description using the RTB Fabric API. For more information, see the [AWS RTB Fabric API Reference](https://docs.aws.amazon.com//rtb-fabric/latest/api/).
+You can update the gateway description using the RTB Fabric API. For more information, see the [AWS RTB Fabric API Reference](https://docs.aws.amazon.com/rtb-fabric/latest/api/).
 
 ## Searching for requester gateways
 <a name="searching-requester-gateways"></a>

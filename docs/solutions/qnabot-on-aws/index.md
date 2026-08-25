@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com//solutions/qnabot-on-aws//index.html
 
 Quickly create more capable and compelling conversational AI experiences across multiple channels, such as contact centers and social media
 
-- **Version**: 7.4.5
+- **Version**: 7.4.6
 - **Released**: 08/2026
 - **Author**: AWS
 - **Est. deployment time**: 30-45 mins

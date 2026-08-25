@@ -10,7 +10,7 @@ Amazon CodeCatalyst is no longer open to new customers. Existing customers can c
 You can view pull requests for a project in the Amazon CodeCatalyst console. The project summary page displays all open pull requests for a project. To view all pull requests regardless of state, navigate to the pull requests page for your project. When viewing a pull request, you can choose to have a summary of all comments left on changes to the pull request created for you.
 
 **Note**
-**Powered by Amazon Bedrock**: AWS implements [automated abuse detection](https://docs.aws.amazon.com//bedrock/latest/userguide/abuse-detection.html). Because the **Write description for me**, **Create content summary**, **Recommend tasks**, **Use Amazon Q to create or add features to a project**, and **Assign issues to Amazon Q** feature with Amazon Q Developer Agent for software development features are built on Amazon Bedrock, users can take full advantage of the controls implemented in Amazon Bedrock to enforce safety, security, and the responsible use of artificial intelligence (AI).<a name="pull-requests-view-open-project"></a>
+**Powered by Amazon Bedrock**: AWS implements [automated abuse detection](https://docs.aws.amazon.com/bedrock/latest/userguide/abuse-detection.html). Because the **Write description for me**, **Create content summary**, **Recommend tasks**, **Use Amazon Q to create or add features to a project**, and **Assign issues to Amazon Q** feature with Amazon Q Developer Agent for software development features are built on Amazon Bedrock, users can take full advantage of the controls implemented in Amazon Bedrock to enforce safety, security, and the responsible use of artificial intelligence (AI).<a name="pull-requests-view-open-project"></a>
 
 **To view open pull requests**
 
@@ -39,8 +39,8 @@ This functionality requires that generative AI features are enabled for the spac
 1. To view the code changes in the pull request, choose **Changes**. You can quickly view how many files have changes in the pull request, and what files in the pull request have comments on them, in **Files changed**. The number of comments shown next to a folder indicates the number of comments on files in that folder. Expand the folder to view the number of comments for each file in the folder. You can also view any comments left on specific lines of code.
 
 **Note**
-Not all changes in a pull request can be displayed in the console. For example, you cannot view Git submodules in the console, so you cannot view differences in a submodule in a pull request. Some differences might be too large to display. For more information, see [Quotas for source repositories in CodeCatalyst](source-quotas.md) and [Viewing a fileViewing the history of changes to a file](source-files-view.md).
+Not all changes in a pull request can be displayed in the console. For example, you cannot view Git submodules in the console, so you cannot view differences in a submodule in a pull request. Some differences might be too large to display. For more information, see [Quotas for source repositories in CodeCatalyst](source-quotas.md) and [Viewing a file](source-files-view.md).
 
 1. To view quality reports for this pull request, choose **Reports**.
 **Note**
-A workflow must be configured to generate reports in order for them to show up in your pull requests. For more information, see [Testing with workflowsTesting with workflows](test-workflow-actions.md).
+A workflow must be configured to generate reports in order for them to show up in your pull requests. For more information, see [Testing with workflows](test-workflow-actions.md).

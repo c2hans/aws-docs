@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::SecurityLake::Subscriber CustomLogSource
 <a name="aws-properties-securitylake-subscriber-customlogsource"></a>
 
-Third-party custom log source that meets the requirements to be added to Amazon Security Lake. For more details, see [Custom log source](https://docs.aws.amazon.com//security-lake/latest/userguide/custom-sources.html#iam-roles-custom-sources) in the *Amazon Security Lake User Guide*.
+Third-party custom log source that meets the requirements to be added to Amazon Security Lake. For more details, see [Custom log source](https://docs.aws.amazon.com/security-lake/latest/userguide/custom-sources.html#iam-roles-custom-sources) in the *Amazon Security Lake User Guide*.
 
 ## Syntax
 <a name="aws-properties-securitylake-subscriber-customlogsource-syntax"></a>

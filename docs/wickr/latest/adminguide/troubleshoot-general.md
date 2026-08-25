@@ -19,11 +19,11 @@ The following are troubleshooting tips to help you solve general issues for AWS 
 
 Verify the following before troubleshooting:
 + You are using the correct Wickr product for your organization: **AWS Wickr**, **AWS WickrGov** (GovCloud), or **Wickr Enterprise** (self-hosted). If you're unsure, contact your network administrator.
-+ You are running a supported client version. AWS Wickr supports the current version and the previous 2–3 versions. To check your version, open Wickr and choose **Settings**, **About**. To update, see [Check for updates](https://docs.aws.amazon.com//wickr/latest/userguide/updates.html).
++ You are running a supported client version. AWS Wickr supports the current version and the previous 2–3 versions. To check your version, open Wickr and choose **Settings**, **About**. To update, see [Check for updates](https://docs.aws.amazon.com/wickr/latest/userguide/updates.html).
 + You have the correct authentication method for your organization (SSO or non-SSO).
 + You have saved your user password and Wickr recovery key in a secure location.
-+ Your network allows communication with required [Wickr domains and ports](https://docs.aws.amazon.com//wickr/latest/adminguide/allow-list-ports-domains.html).
-+ Your device meets [system requirements](https://docs.aws.amazon.com//wickr/latest/userguide/system-requirements.html).
++ Your network allows communication with required [Wickr domains and ports](https://docs.aws.amazon.com/wickr/latest/adminguide/allow-list-ports-domains.html).
++ Your device meets [system requirements](https://docs.aws.amazon.com/wickr/latest/userguide/system-requirements.html).
 
 ## Collect diagnostic information
 <a name="diagnostic-info"></a>

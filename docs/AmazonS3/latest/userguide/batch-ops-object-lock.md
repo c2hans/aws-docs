@@ -23,7 +23,7 @@ To use the following examples, replace the {{`user input placeholders`}} with yo
 
    read -d '' {{batch_operations_trust_policy}} <<EOF
    {
-     "Version": "2012-10-17"		 	 	 ,		 	 	 TCX5-2025-waiver;,
+     "Version": "2012-10-17",
      "Statement": [
        {
          "Effect": "Allow",
@@ -54,7 +54,7 @@ To use the following examples, replace the {{`user input placeholders`}} with yo
    ```
    read -d '' {{batch_operations_permissions}} <<EOF
    {
-       "Version": "2012-10-17"		 	 	 ,		 	 	 TCX5-2025-waiver;,
+       "Version": "2012-10-17",
        "Statement": [
            {
                "Effect": "Allow",

@@ -44,7 +44,7 @@ Before deleting a CEV, make sure it isn't being used by any of the following:
 **Note**
 You can't delete a CEV if there are any resources associated with it.
 
-To delete a custom engine version, use the [ delete-custom-db-engine-version](https://docs.aws.amazon.com//cli/latest/reference/rds/delete-custom-db-engine-version.html) command.
+To delete a custom engine version, use the [ delete-custom-db-engine-version](https://docs.aws.amazon.com/cli/latest/reference/rds/delete-custom-db-engine-version.html) command.
 + `--engine`: Specify `sqlserver-dev-ee` (Enterprise Edition capabilities) or `sqlserver-dev-se` (Standard Edition capabilities, SQL Server 2025 only)
 + `--engine-version`: The exact CEV version identifier to delete
 + `--region`: AWS Region where the CEV exists

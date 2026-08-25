@@ -81,7 +81,7 @@ For each element in a resource type, the FHIR specification defines a cardinalit
   FROM Patient
   ```
 
-To learn more about accessing and searching JSON, see [Querying JSON](https://docs.aws.amazon.com//athena/latest/ug/querying-JSON.html) in the *Athena User Guide*.
+To learn more about accessing and searching JSON, see [Querying JSON](https://docs.aws.amazon.com/athena/latest/ug/querying-JSON.html) in the *Athena User Guide*.
 
 Athena Data Manipulation Language (DML) query statements are based on Trino. Athena does not support all of Trino's features, and there are *significant* differences. To learn more, see [DML queries, functions, and operators](https://docs.aws.amazon.com/athena/latest/ug/functions-operators-reference-section.html) in the *Amazon Athena User Guide*.
 

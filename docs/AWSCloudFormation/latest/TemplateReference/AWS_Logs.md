@@ -21,5 +21,6 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::Logs::QueryDefinition](aws-resource-logs-querydefinition.md)
 + [AWS::Logs::ResourcePolicy](aws-resource-logs-resourcepolicy.md)
 + [AWS::Logs::ScheduledQuery](aws-resource-logs-scheduledquery.md)
++ [AWS::Logs::StorageTierPolicy](aws-resource-logs-storagetierpolicy.md)
 + [AWS::Logs::SubscriptionFilter](aws-resource-logs-subscriptionfilter.md)
 + [AWS::Logs::Transformer](aws-resource-logs-transformer.md)

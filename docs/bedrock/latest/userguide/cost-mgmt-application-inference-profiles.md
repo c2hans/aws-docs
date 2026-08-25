@@ -9,6 +9,9 @@ Application inference profiles (AIPs) let you attribute Amazon Bedrock costs by 
 
 For workloads using Responses and Chat Completions on the `bedrock-mantle` endpoint, use [Projects](cost-mgmt-projects.md) instead.
 
+**Important**
+Application inference profiles aren't supported by the Responses and Chat Completions APIs, on either endpoint. A request to those APIs that names an application inference profile as its inference target is rejected with a 400 error. Use an AIP with the [InvokeModel](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_InvokeModel.html) and [Converse](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_Converse.html) APIs, and attribute Responses and Chat Completions usage with [IAM principal attribution](cost-mgmt-iam-principal-tracking.md) or [Per-request metadata tagging](cost-mgmt-request-metadata.md) instead. System, geographic, and global inference profiles work normally with all of these APIs.
+
 ## How cost attribution works
 <a name="cost-mgmt-aip-how-it-works"></a>
 

@@ -36,7 +36,7 @@ To create an active-passive failover configuration with one primary record and o
 ### Configuring active-passive failover with multiple primary and secondary resources
 <a name="dns-failover-types-active-passive-multiple-resources"></a>
 
-You can also associate multiple resources with the primary record, the secondary record, or both. In this configuration, Route 53 considers the primary failover record to be healthy as long as at least one of the associated resources is healthy. For more information, see [How Amazon Route 53 chooses records when health checking is configuredHow Route 53 chooses records when health checking is configured](health-checks-how-route-53-chooses-records.md).
+You can also associate multiple resources with the primary record, the secondary record, or both. In this configuration, Route 53 considers the primary failover record to be healthy as long as at least one of the associated resources is healthy. For more information, see [How Amazon Route 53 chooses records when health checking is configured](health-checks-how-route-53-chooses-records.md).
 
 To configure active-passive failover with multiple resources for the primary or secondary record, perform the following tasks.
 

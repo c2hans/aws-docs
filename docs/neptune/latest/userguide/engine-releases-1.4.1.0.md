@@ -21,7 +21,7 @@ MATCH (n:movie) WHERE n.runtime>=$minutes RETURN n
 
 ## New features in this engine release
 <a name="engine-releases-1.4.1.0-features"></a>
-+  Added support for `CALL` subquery with a read-only subquery, allowing execution of operations within a defined scope. A `CALL` subquery is executed once for each incoming row and the variables returned in a subquery are available to the outer scope of the enclosing query. Variables from outer scope can be imported into a `CALL` subquery using an importing `WITH` clause. For more information, see [ CALL subquery support in Neptune](https://docs.aws.amazon.com//neptune/latest/userguide/access-graph-opencypher-extensions.html#call-subquery-support).
++  Added support for `CALL` subquery with a read-only subquery, allowing execution of operations within a defined scope. A `CALL` subquery is executed once for each incoming row and the variables returned in a subquery are available to the outer scope of the enclosing query. Variables from outer scope can be imported into a `CALL` subquery using an importing `WITH` clause. For more information, see [ CALL subquery support in Neptune](https://docs.aws.amazon.com/neptune/latest/userguide/access-graph-opencypher-extensions.html#call-subquery-support).
 
   ```
   MATCH (origin:airport {code:"AUS"})-[:route]->(stopover)
@@ -33,21 +33,21 @@ MATCH (n:movie) WHERE n.runtime>=$minutes RETURN n
   }
   RETURN stopover, destination
   ```
-+  Added openCypher functions. We are introducing eight new functions to help with strings, collections operations and collection sorting. These include: `textIndexOf`, `collToSet`, `collSubtract`, `collIntersection`, `collSort`, `collSortMaps`, `collSortMulti`, and `collSortNodes`. See [ Neptune openCypher functions](https://docs.aws.amazon.com//neptune/latest/userguide/access-graph-opencypher-extensions.html#opencypher-compliance-new-functions) for the description, input parameters, output and examples.
++  Added openCypher functions. We are introducing eight new functions to help with strings, collections operations and collection sorting. These include: `textIndexOf`, `collToSet`, `collSubtract`, `collIntersection`, `collSort`, `collSortMaps`, `collSortMulti`, and `collSortNodes`. See [ Neptune openCypher functions](https://docs.aws.amazon.com/neptune/latest/userguide/access-graph-opencypher-extensions.html#opencypher-compliance-new-functions) for the description, input parameters, output and examples.
 
 ## Improvements in this engine release
 <a name="engine-releases-1.4.1.0-improvements"></a>
 
 **Gremlin Improvements**
-+  New lab mode parameter `AccurateQRCMemoryEstimation`. [Gremlin query result cache](https://docs.aws.amazon.com//neptune/latest/userguide/gremlin-results-cache.html), when enabled, allows caching of query results on the database. By default an approximate estimate is used to determine the size of the result cached. With this lab mode param `AccurateQRCMemoryEstimation` enabled, the size estimation for cached results will use an accurate size estimate instead of approximate.
++  New lab mode parameter `AccurateQRCMemoryEstimation`. [Gremlin query result cache](https://docs.aws.amazon.com/neptune/latest/userguide/gremlin-results-cache.html), when enabled, allows caching of query results on the database. By default an approximate estimate is used to determine the size of the result cached. With this lab mode param `AccurateQRCMemoryEstimation` enabled, the size estimation for cached results will use an accurate size estimate instead of approximate.
 +  Fixed an issue with "not" filter optimization in Gremlin queries executing on default execution engine. This issue affected queries when edges are filtered using not() step combined with either of outV()/inV()/otherV() steps. Sample queries include:
   +  `g.E().hasLabel("knows").not(outV().hasId("5"))`
   +  `g.V().has('airport','code','SDF').outE().where(not(otherV().has(id, within('1','5','7')))).count()`
 
 **openCypher improvements**
 +  Improved performance for queries which use large static lists or maps. Certain queries with UNWIND over a large list of nested maps used to insert / upsert a node with properties see significant performance improvements.
-+  Introduces a new openCypher query hint to instruct engine to assume consistent datatypes for values used in the query. See [AssumeConsistentDataTypes](https://docs.aws.amazon.com//neptune/latest/userguide/opencypher-query-hints-AssumeConsistentDataTypes.html) for details about the new openCypher query hint.
-+  Introduces a set of [ new openCypher functions](https://docs.aws.amazon.com//neptune/latest/userguide/access-graph-opencypher-extensions.html#opencypher-compliance-new-functions) for handling text and collection values.
++  Introduces a new openCypher query hint to instruct engine to assume consistent datatypes for values used in the query. See [AssumeConsistentDataTypes](https://docs.aws.amazon.com/neptune/latest/userguide/opencypher-query-hints-AssumeConsistentDataTypes.html) for details about the new openCypher query hint.
++  Introduces a set of [ new openCypher functions](https://docs.aws.amazon.com/neptune/latest/userguide/access-graph-opencypher-extensions.html#opencypher-compliance-new-functions) for handling text and collection values.
 
 ## Defects fixed in this engine release
 <a name="engine-releases-1.4.1.0-defects"></a>

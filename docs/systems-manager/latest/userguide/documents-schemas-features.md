@@ -34,8 +34,6 @@ You must keep AWS Systems Manager SSM Agent on your instances updated with the l
 
 The following table lists the differences between major schema versions.
 
-****
-
 | Version 1.2 | Version 2.2 (latest version) | Details |
 | --- | --- | --- |
 | runtimeConfig | mainSteps | In version 2.2, the `mainSteps` section replaces `runtimeConfig`. The `mainSteps` section allows Systems Manager to run steps in sequence. |

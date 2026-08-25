@@ -18,4 +18,4 @@ Use the Amazon Q in Connect APIs to create an assistant and a knowledge base, fo
 
 For more information, see [Use Amazon Q in Connect for generative AI powered agent assistance in real-time](https://docs.aws.amazon.com/connect/latest/adminguide/amazon-q-connect.html) in the *Connect Customer Administrator Guide*.
 
-This document was last published on August 13, 2026.
+This document was last published on August 24, 2026.

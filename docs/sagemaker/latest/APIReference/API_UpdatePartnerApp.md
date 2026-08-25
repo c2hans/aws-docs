@@ -27,9 +27,13 @@ Updates all of the SageMaker Partner AI Apps in an account.
    },
    "AppVersion": "{{string}}",
    "Arn": "{{string}}",
+   "AuthType": "{{string}}",
    "ClientToken": "{{string}}",
    "EnableAutoMinorVersionUpgrade": {{boolean}},
    "EnableIamSessionBasedIdentity": {{boolean}},
+   "IdcConfig": {
+      "InstanceArn": "{{string}}"
+   },
    "MaintenanceConfig": {
       "MaintenanceWindowStart": "{{string}}"
    },
@@ -69,6 +73,14 @@ Length Constraints: Minimum length of 1. Maximum length of 128.
 Pattern: `arn:aws[a-z\-]*:sagemaker:[a-z0-9\-]*:[0-9]{12}:partner-app\/app-[A-Z0-9]{12}`
 Required: Yes
 
+ ** [AuthType](#API_UpdatePartnerApp_RequestSyntax) **   <a name="sagemaker-UpdatePartnerApp-request-AuthType"></a>
+The authorization type that users use to access the SageMaker Partner AI App. Use this parameter to migrate an existing SageMaker Partner AI App from `IAM` authorization to `IDC` authorization. Valid values:
++  `IAM`: Users access the SageMaker Partner AI App with their AWS IAM identity.
++  `IDC`: Users access the SageMaker Partner AI App with their AWS IAM Identity Center identity. Specify the Identity Center instance to use in `IdcConfig`.
+Type: String
+Valid Values: `IAM | IDC`
+Required: No
+
  ** [ClientToken](#API_UpdatePartnerApp_RequestSyntax) **   <a name="sagemaker-UpdatePartnerApp-request-ClientToken"></a>
 A unique token that guarantees that the call to this API is idempotent.
 Type: String
@@ -84,6 +96,11 @@ Required: No
  ** [EnableIamSessionBasedIdentity](#API_UpdatePartnerApp_RequestSyntax) **   <a name="sagemaker-UpdatePartnerApp-request-EnableIamSessionBasedIdentity"></a>
 When set to `TRUE`, the SageMaker Partner AI App sets the AWS IAM session name or the authenticated IAM user as the identity of the SageMaker Partner AI App user.
 Type: Boolean
+Required: No
+
+ ** [IdcConfig](#API_UpdatePartnerApp_RequestSyntax) **   <a name="sagemaker-UpdatePartnerApp-request-IdcConfig"></a>
+Specifies the AWS IAM Identity Center configuration for the SageMaker Partner AI App. Specify this parameter when `AuthType` is `IDC`. Apps that use `IAM` authorization don't use this parameter.
+Type: [IdcConfigInput](API_IdcConfigInput.md) object
 Required: No
 
  ** [MaintenanceConfig](#API_UpdatePartnerApp_RequestSyntax) **   <a name="sagemaker-UpdatePartnerApp-request-MaintenanceConfig"></a>

@@ -23,6 +23,7 @@ SYS\_DATASHARE\_CROSS\_REGION\_USAGE is visible only to superusers. For more inf
 | end\_time | time | The time in UTC that the data transfer ended. |
 | transferred\_data | bigint | The number of bytes of data transferred from a producer Region to a consumer Region. |
 | source\_region | char(25) | The producer Region that the query transferred data from. |
+| query\_uuid | character(36) | A globally unique identifier (UUID) of the query. |
 
 ## Sample queries
 <a name="r_SYS_DATASHARE_CROSS_REGION_USAGE-sample-queries"></a>

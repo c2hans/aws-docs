@@ -32,7 +32,8 @@ Prior to performing a failback, ensure that you meet all [replication network re
 + The server on which the Failback Client is run must have at least 4 GB of dedicated RAM.
 + The recovery instance used as a source for failback must have permissions to access the DRS service via API calls. This is done using instance profile for the underlying EC2 instance. The instance profile must include the AWSElasticDisasterRecoveryRecoveryInstancePolicy in addition to any other policy you require the EC2 instance to have. By default, the launch settings that DRS creates for source servers already have an instance profile defined that includes that policy and that instance profile will be used when launching a Recovery Instance.
 + Be sure to deactivate secure boot on the server on which the Failback Client is run.
-+ Ensure the hardware clock on the server on which the Failback Client is run is set to UTC rather than Local Time.
++ Make sure that the hardware clock on the server on which the Failback Client is run is set to UTC rather than Local Time.
++ The Failback Client uses chrony for time synchronization, which requires outbound UDP port 123 connectivity to a Network Time Protocol (NTP) server. If your network firewall blocks UDP port 123, make sure that the system clock is accurate before booting the Failback Client. Time skew can cause Transport Layer Security (TLS) certificate validation failures.
 
 ### Failback AWS credentials
 <a name="failback-performing-credentials"></a>
@@ -273,6 +274,8 @@ To ensure that the original source server has not been deleted and still exists,
 
 **Note**
  After failing back to the original source server, you don't need to reinstall the DRS agent to start replication back to AWS.
+
+When you fail back to the original source server, replication includes only the delta changes made after recovery. As a result, the failback completes faster. When failing back to a new server that was not the original source, the Failback Client fully synchronizes all data. This process takes longer depending on the total volume size.
 
 If the original source server is healthy and you decide to fail back to it, it will undergo a rescan until it reaches the **Ready** status.
 

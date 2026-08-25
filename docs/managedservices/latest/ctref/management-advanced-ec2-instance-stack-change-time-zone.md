@@ -14,8 +14,6 @@ Change the time zone of an EC2 instance. To reboot the EC2 instance after changi
 ## Change Type Details
 <a name="ct-3g9dbtun44mal-MAEc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-3g9dbtun44mal |

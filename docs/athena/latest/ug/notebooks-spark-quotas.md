@@ -12,8 +12,6 @@ The default values are the initial quotas set by AWS, which are separate from th
 
 The following table lists the service quotas for Amazon Athena for Apache Spark.
 
-****
-
 | Name | Default | Adjustable | Version | Description |
 | --- | --- | --- | --- | --- |
 | Apache Spark DPU concurrency | 160 | No | PySpark Version 3 | The maximum number of data processing units (DPUs) that you can consume concurrently for Apache Spark calculations for a single account in the current AWS Region. A DPU is a relative measure of processing power that consists of 4 vCPUs of compute capacity and 16 GB of memory. |

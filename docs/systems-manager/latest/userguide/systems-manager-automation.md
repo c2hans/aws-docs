@@ -84,8 +84,6 @@ Automation offers these benefits:
 
 An *automation* consists of all of the tasks that are defined in a runbook, and are performed by the Automation service. Automation uses the following components to run automations.
 
-****
-
 | Concept | Details |
 | --- | --- |
 | Automation runbook | A Systems Manager Automation runbook defines the automation (the actions that Systems Manager performs on your managed nodes and AWS resources). Automation includes several pre-defined runbooks that you can use to perform common tasks like restarting one or more Amazon EC2 instances or creating an Amazon Machine Image (AMI). You can create your own runbooks as well. Runbooks use YAML or JSON, and they include steps and parameters that you specify. Steps run in sequential order. For more information, see [Creating your own runbooks](automation-documents.md).<br />Runbooks are Systems Manager documents of type `Automation`, as opposed to `Command`, `Policy`, `Session` documents. Runbooks support schema version 0.3. Command documents use schema version 1.2, 2.0, or 2.2. Policy documents use schema version 2.0 or later. |

@@ -9,9 +9,9 @@ This section provides information about the auto-record-to-S3 feature of Amazon 
 
 | For details on ... | See ... |
 | --- | --- |
-| Setting up and stopping video recording |  [Create a Channel with Optional Recording](https://docs.aws.amazon.com//ivs/latest/LowLatencyUserGuide/getting-started-create-channel.html) in *Getting Started with Amazon IVS* |
-| The API | [IVS API Reference](https://docs.aws.amazon.com//ivs/latest/LowLatencyAPIReference/Welcome.html) |
-| Costs |  [Amazon IVS Costs](https://docs.aws.amazon.com//ivs/latest/LowLatencyUserGuide/costs.html) |
+| Setting up and stopping video recording |  [Create a Channel with Optional Recording](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/getting-started-create-channel.html) in *Getting Started with Amazon IVS* |
+| The API | [IVS API Reference](https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/Welcome.html) |
+| Costs |  [Amazon IVS Costs](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/costs.html) |
 
 ## S3 Prefix
 <a name="r2s3-prefix"></a>
@@ -78,7 +78,7 @@ The auto-record-to-S3 feature supports [byte-range playlist](https://datatracker
 ## Thumbnails
 <a name="r2s3-thumbnails"></a>
 
-The `thumbnailConfiguration` property on a recording configuration allows you to enable or disable the recording of thumbnails for a live session and modify the interval at which thumbnails are generated for the live session. Thumbnail intervals may range from 1 second to 60 seconds; by default, thumbnail recording is enabled, at an interval of 60 seconds. For details, see the [Amazon IVS Low-Latency Streaming API Reference](https://docs.aws.amazon.com//ivs/latest/LowLatencyAPIReference/Welcome.html).
+The `thumbnailConfiguration` property on a recording configuration allows you to enable or disable the recording of thumbnails for a live session and modify the interval at which thumbnails are generated for the live session. Thumbnail intervals may range from 1 second to 60 seconds; by default, thumbnail recording is enabled, at an interval of 60 seconds. For details, see the [Amazon IVS Low-Latency Streaming API Reference](https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/Welcome.html).
 
 Thumbnail configuration also may include the `storage` field (`SEQUENTIAL` and/or `LATEST`) and a resolution (`LOWEST_RESOLUTION`, `SD`, `HD`, or `FULL_HD`). Below are the resolutions for each option:
 
@@ -113,7 +113,7 @@ For multiple streams to record to the same S3 prefix, certain conditions must be
 **Notes:**
 + At most 20 streams are merged, after which a new S3 prefix is created.
 + After 48 hours, a new S3 prefix is created. For example, if the first broadcast lasts for 48 hours and another broadcast is started within the `recordingReconnectWindowSeconds` interval, the next broadcast *is not* merged into the first S3 prefix.
-+ Rapid reconnects can result in a new broadcast starting before the previous broadcast is finished writing to S3, in which case the new broadcast *is not* merged into the previous S3 prefix. (Usually, writing to S3 completes within 10 seconds of a broadcast ending.) Rapid reconnects can occur in several scenarios, including: 1) quick mobile app background/foreground transitions, 2) when stream takeover isn't possible while using the auto-reconnect feature of IVS mobile broadcast SDKs, and 3) when calling [StopStream](https://docs.aws.amazon.com//ivs/latest/LowLatencyAPIReference/API_StopStream.html) triggers an automatic reconnect from the streaming-client software.
++ Rapid reconnects can result in a new broadcast starting before the previous broadcast is finished writing to S3, in which case the new broadcast *is not* merged into the previous S3 prefix. (Usually, writing to S3 completes within 10 seconds of a broadcast ending.) Rapid reconnects can occur in several scenarios, including: 1) quick mobile app background/foreground transitions, 2) when stream takeover isn't possible while using the auto-reconnect feature of IVS mobile broadcast SDKs, and 3) when calling [StopStream](https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_StopStream.html) triggers an automatic reconnect from the streaming-client software.
 
 ### Known Issue
 <a name="r2s3-merge-fragmented-streams-known-issue"></a>

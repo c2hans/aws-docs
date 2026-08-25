@@ -74,8 +74,6 @@ CloudWatch aggregates the following DAX metrics at one-minute intervals:
 
 Not all statistics, such as `Average` or `Sum`, are applicable for every metric. However, all of these values are available through the DAX console, or by using the CloudWatch console, AWS CLI, or AWS SDKs for all metrics. In the following table, each metric has a list of valid statistics that are applicable to that metric.
 
-****
-
 | Metric | Description |
 | --- | --- |
 | CPUUtilization | The percentage of CPU utilization of the node or cluster.<br />Units: `Percent`<br />Valid Statistics:+  `Minimum` <br />+  `Maximum` <br />+  `Average`  |
@@ -122,8 +120,6 @@ The `CPUCreditUsage`, `CPUCreditBalance`, `CPUSurplusCreditBalance`, and `CPUSur
 <a name="dax-metric-dimensions"></a>
 
 The metrics for DAX are qualified by the values for the account, cluster ID, or cluster ID and node ID combination. You can use the CloudWatch console to retrieve DAX data along any of the dimensions in the following table.
-
-****
 
 |  Dimension  |  CloudWatch Metric Namespace  |  Description  |
 | --- | --- | --- |

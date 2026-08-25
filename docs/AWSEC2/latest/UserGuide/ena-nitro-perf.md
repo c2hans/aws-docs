@@ -119,7 +119,7 @@ Updates to security groups, route tables, and access control lists all need to b
 Internet Control Message Protocol (ICMP) is a network layer protocol that network devices use to diagnose network communication issues. These packets always use the full flow.
 
 **Asymmetric L2 flows**
-NitroV3 and earlier platforms do not use hardware acceleration for traffic between two ENIs in the same subnet where one ENI is using the default gateway router and the other is not. NitroV4 and later platforms utilize hardware acceleration in this scenario. For better performance on NitroV3 or earlier platforms, ensure that either the default gateway router used matches between both ENIs, or those ENIs are in different subnets.
+NitroV3 and earlier platforms do not use hardware acceleration for traffic between two ENIs in the same subnet where one ENI is using the default gateway router and the other is not. NitroV4 and later platforms use hardware acceleration in this scenario. For better performance on NitroV3 or earlier platforms, ensure that either the default gateway router used matches between both ENIs, or those ENIs are in different subnets.
 
 ## Maximize network performance on your Nitro system
 <a name="ena-nitro-perf-maximize"></a>

@@ -10,8 +10,6 @@ The following table lists references for all available conditions that can be us
 **Note**
 For SDK users, to apply the same rule to multiple columns use the [ColumnSelectors](https://docs.aws.amazon.com/databrew/latest/APIReference/API_ColumnSelector.html) attribute of a [Rule](https://docs.aws.amazon.com/databrew/latest/APIReference/API_Rule.html) and specify validated columns using either their names or a regular expression. In this case, you should use implicit *CheckExpression*. For example, `“> :val”` to compare values in each of the selected columns with the provided value. DataBrew uses implicit syntax for defining [FilterExpression](https://docs.aws.amazon.com/databrew/latest/APIReference/API_FilterExpression.html) in dynamic datasets. If you want to specify column(s) for each check individually, don't set the *ColumnSelectors* attribute. Instead, provide an explicit expression. For example, `“:col > :val”` as a *CheckExpression* in a *Rule*.
 
-****
-
 - **Aggregate dataset conditions**
   - **Data quality check:** Number of rows / **Additional parameters:**  / **Comparison type:** Numeric comparison against custom value / **SDK syntax example:** `"CheckExpression": "AGG(ROWS_COUNT) > :val", "SubstitutionMap": {":val", "10000"}`
   - **Data quality check:** Number of columns / **Additional parameters:**  / **Comparison type:** Numeric comparison against custom value / **SDK syntax example:** `"CheckExpression": "AGG(COLUMNS_COUNT) == :val", "SubstitutionMap": {":val", "20"}`
@@ -43,8 +41,6 @@ DataBrew supports the following operations for numeric comparison: *Is equals (=
 The following string comparisons are supported: *Starts with*, *Doesn’t start with*, *Ends with*, *Doesn’t end with*, *Contains*, *Doesn’t contain*, *Is equals*, *Is not equals*, *Matches*, *Doesn’t match*.
 
 The following table displays available statistics that you can use for Value distribution statistics and Numerical statistics:
-
-****
 
 - **Value distribution statistics**
   - **Statistics name:** Min / **Additional parameters:**  / **SDK syntax:** "CheckExpression": "AGG(MAX) < :val", "SubstitutionMap": {":val", "100"}

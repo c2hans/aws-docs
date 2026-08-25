@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-managed-ds-o
 After you set up authentication and store your credentials in an AWS Secrets Manager secret, create the OneDrive data source in your knowledge base. This page describes how to create the data source with the AWS Management Console or the API, followed by a reference for the connector parameters you can configure.
 
 **Note**
-Complete authentication setup first. See [Set up Microsoft Entra App ID authentication for OneDrive](kb-managed-onedrive-entra-setup.md) (recommended) or [Set up OAuth 2.0 authentication for OneDrive](kb-managed-onedrive-oauth2-setup.md). You need the secret ARN, your tenant ID, and (for document-level access control) the Amazon S3 location of your certificate.
+Complete authentication setup first. See [User-managed setup (3LO)](kb-managed-onedrive-3lo-setup.md) (simplest), [Set up Microsoft Entra App ID authentication for OneDrive](kb-managed-onedrive-entra-setup.md) (recommended for document-level access control), or [Set up OAuth 2.0 authentication for OneDrive](kb-managed-onedrive-oauth2-setup.md). For user-managed setup (3LO), you sign in through the console and Amazon Bedrock creates the secret for you (with a system-generated ARN); you do not provide a secret or tenant ID. For the other methods, you need the secret ARN, your tenant ID, and (for document-level access control) the Amazon S3 location of your certificate.
 
 ## Create the data source
 <a name="kb-managed-ds-onedrive-create"></a>
@@ -22,9 +22,9 @@ Complete authentication setup first. See [Set up Microsoft Entra App ID authenti
 
 1. Select **OneDrive** from the data source dropdown.
 
-1. Under **Source**, enter your **OneDrive Tenant ID**.
+1. Under **Source**, enter your **OneDrive Tenant ID**. If you use user-managed setup (3LO), you don't provide a tenant ID.
 
-1. Under **Authentication**, select **Microsoft Entra ID App** or **OAuth 2.0 authentication**.
+1. Under **Authentication**, select **User-managed setup (3LO)**, **Microsoft Entra ID App**, or **OAuth 2.0 authentication**. For user-managed setup (3LO), optionally enter a **secret name prefix**. Then choose **Sign in** to sign in to OneDrive and authorize the connection. You do not provide a secret or tenant ID. Amazon Bedrock creates a secret with a system-generated ARN to store the token. For details, see [User-managed setup (3LO)](kb-managed-onedrive-3lo-setup.md).
 
 1. Select or create an AWS Secrets Manager secret to store your credentials.
 
@@ -97,7 +97,7 @@ To enable document-level access control, set `aclEnabled` to `true` and add `cer
 }
 ```
 
-For an `OAUTH2` data source, set `authType` to `OAUTH2` and omit `certificateS3Path`.
+For an `OAUTH2` data source, set `authType` to `OAUTH2` and omit `certificateS3Path`. For user-managed setup (3LO), set `authType` to `MANAGED_OAUTH2` and omit `certificateS3Path`. You cannot create a 3LO secret through the API: first sign in through the console to create the secret, then set `secretArn` to that secret's ARN. For details, see [User-managed setup (3LO)](kb-managed-onedrive-3lo-setup.md).
 
 For managed knowledge bases, `CreateDataSource` is asynchronous: the data source status transitions from `CREATING` to `AVAILABLE` when the operation completes.
 
@@ -114,7 +114,7 @@ The data source configuration uses the following connector parameters. To connec
 | --- | --- | --- |
 | secretArn | Yes | The ARN of the AWS Secrets Manager secret containing your OneDrive credentials. |
 | tenantId | Yes | The Microsoft Entra (Azure AD) tenant ID. |
-| authType | Yes | The authentication type: ENTRA\_APP\_ID (recommended) or OAUTH2. See [Authentication methods](kb-managed-ds-onedrive.md#kb-managed-onedrive-auth-methods). |
+| authType | Yes | The authentication type: MANAGED\_OAUTH2 (user-managed setup, 3LO), ENTRA\_APP\_ID (recommended), or OAUTH2. See [Authentication methods](kb-managed-ds-onedrive.md#kb-managed-onedrive-auth-methods). |
 | certificateS3Path | Conditional | Required when aclEnabled is true (Microsoft Entra App ID authentication). Contains s3BucketName and s3KeyName for the .p12 certificate file in Amazon S3. Not used for content-only crawling or with OAUTH2. |
 
 **dataEntityConfiguration**

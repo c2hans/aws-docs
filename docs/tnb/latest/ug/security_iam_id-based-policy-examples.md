@@ -43,7 +43,7 @@ As an administrator, you own and manage the resources that AWS TNB creates as de
 
 A IAM service role allows AWS TNB to make calls to resources on your behalf to instantiate and manage your networks. If you specify a service role, AWS TNB uses that role’s credential.
 
-You create the service role and its permission policy with the IAM service. For more information about creating a service role, see [Creating a role to delegate permissions to an AWS service](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_roles_create_for-service.html) in the *IAM User Guide*.
+You create the service role and its permission policy with the IAM service. For more information about creating a service role, see [Creating a role to delegate permissions to an AWS service](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-service.html) in the *IAM User Guide*.
 
 ### AWS TNB service role
 <a name="tnb-service-role"></a>

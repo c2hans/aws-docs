@@ -52,7 +52,6 @@ Use the applicable procedure to resend confirmation or authorization emails.
 1. Check the spam folder in your email application for an email from one of the following email addresses.
 
    If too much time has passed, the link won't work any longer, but you'll know where to look for the confirmation email when we send you another one.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-click-email-link.html)
 **Note**
 The emails might contain links to www.registrar.amazon. These links are safe to use.
@@ -87,7 +86,6 @@ If the current registrar for the domain won't let you turn off privacy protectio
 1. Check the spam folder in your email application for an email from one of the following email addresses.
 
    If too much time has passed, the link won't work any longer, but you'll know where to look for the authorization email when we send you another one.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-click-email-link.html)
 **Note**
 The emails might contain links to www.registrar.amazon. These links are safe to use.
@@ -114,7 +112,6 @@ For the first 15 days after you request a transfer, you can determine the status
 1. Check the spam folder in your email application for an email from one of the following email addresses.
 
    If too much time has passed, the link won't work any longer, but you'll know where to look for the authorization email when we send you another one.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-click-email-link.html)
 **Note**
 The emails might contain links to www.registrar.amazon. These links are safe to use.

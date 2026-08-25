@@ -169,7 +169,7 @@ In this example event, an unreferenced merge commit has been created in a reposi
 ## commentOnCommitCreated event
 <a name="commentOnCommitCreated"></a>
 
-In this example event, a federated user named `Mary_Major` commented on a commit. In this example, her federated identity provider configured session tags for `displayName` and `emailAddress`. That information is included in the event.
+In this example event, a federated user named `Mary_Major` commented on a commit. In this example, their federated identity provider configured session tags for `displayName` and `emailAddress`. That information is included in the event.
 
 ```
 {
@@ -235,7 +235,7 @@ In this example event, a user who assumed a role named `Admin` with a session na
 ## commentOnPullRequestCreated event
 <a name="commentOnPullRequestCreated"></a>
 
-In this example event, a federated user named `Saanvi_Sarkar` commented on a pull request. In this example, her federated identity provider configured session tags for `displayName` and `emailAddress`. That information is included in the event.
+In this example event, a federated user named `Saanvi_Sarkar` commented on a pull request. In this example, their federated identity provider configured session tags for `displayName` and `emailAddress`. That information is included in the event.
 
 ```
 {
@@ -269,7 +269,7 @@ In this example event, a federated user named `Saanvi_Sarkar` commented on a pul
 ## commentOnPullRequestUpdated event
 <a name="commentOnPullRequestUpdated"></a>
 
-In this example event, a federated user named `Saanvi_Sarkar` edited a comment on a pull request. In this example, her federated identity provider configured session tags for `displayName` and `emailAddress`. That information is included in the event.
+In this example event, a federated user named `Saanvi_Sarkar` edited a comment on a pull request. In this example, their federated identity provider configured session tags for `displayName` and `emailAddress`. That information is included in the event.
 
 ```
 {
@@ -929,7 +929,7 @@ In this example event, an approval for a pull request has been revoked by a user
 ## pullRequestApprovalRuleUpdated event
 <a name="pullRequestApprovalRuleUpdated"></a>
 
-In this example event, an approval rule for a pull request has been edited by a user with an IAM user name of `Mary_Major`. She is also the user who authored the pull request.
+In this example event, an approval rule for a pull request has been edited by a user with an IAM user name of `Mary_Major`. This user also authored the pull request.
 
 ```
 {

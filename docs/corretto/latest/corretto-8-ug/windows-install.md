@@ -22,7 +22,7 @@ source_url: https://docs.aws.amazon.com/corretto/latest/corretto-8-ug/windows-in
 
 1.  Once the install wizard is finished, set the `JAVA_HOME` and `PATH` environment variables.
 
-   Set `JAVA_HOME` to the installation location, noting that the directory contains the currently-installed version. For example, if the default directory is used for 8u502, then set `JAVA_HOME` as `C:\Program Files\Amazon Corretto\jdk1.8.0_502`.
+   Set `JAVA_HOME` to the installation location, noting that the directory contains the currently-installed version. For example, if the default directory is used for 8u504, then set `JAVA_HOME` as `C:\Program Files\Amazon Corretto\jdk1.8.0_504`.
 
    Add `%JAVA_HOME%\bin` to the current `PATH` variable.
 
@@ -30,9 +30,9 @@ source_url: https://docs.aws.amazon.com/corretto/latest/corretto-8-ug/windows-in
 **Example**
 
    ```
-   openjdk version "1.8.0_502"
-   OpenJDK Runtime Environment Corretto-8.502.07.1 (build 1.8.0_502-b07)
-   OpenJDK 64-Bit Server VM Corretto-8.502.07.1 (build 25.502-b07, mixed mode)
+   openjdk version "1.8.0_504"
+   OpenJDK Runtime Environment Corretto-8.504.01.1 (build 1.8.0_504-b01)
+   OpenJDK 64-Bit Server VM Corretto-8.504.01.1 (build 25.504-b01, mixed mode)
    ```
 
 ## Uninstall Amazon Corretto 8

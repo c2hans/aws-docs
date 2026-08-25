@@ -12,7 +12,7 @@ The AWS Proton dashboard provides a summary of AWS Proton resources in your AWS 
 ## View the dashboard in the AWS Proton console
 <a name="w2aac28b9b7"></a>
 
-To view the AWS Proton dashboard, open the [AWS Proton console](https://console.aws.amazon.com//proton/), and then, in the navigation pane, choose **Dashboard**.
+To view the AWS Proton dashboard, open the [AWS Proton console](https://console.aws.amazon.com/proton/), and then, in the navigation pane, choose **Dashboard**.
 
 ### Resources
 <a name="w2aac28b9b7b9"></a>

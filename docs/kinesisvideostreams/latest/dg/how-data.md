@@ -26,8 +26,6 @@ The following sections describe the components of MKV-formatted data produced by
 
 The following MKV header elements are used by `StreamDefinition` (defined in `StreamDefinition.h`).
 
-****
-
 | Element | Description | Typical values |
 | --- | --- | --- |
 | stream\_name | Corresponds to the name of the Kinesis video stream. | my-stream |
@@ -63,13 +61,11 @@ The following MKV header elements are used by `StreamDefinition` (defined in `St
 
 The following MKV track elements are used by `StreamDefinition` (defined in `StreamDefinition.h`).
 
-****
-
 | Element | Description | Typical Values |
 | --- | --- | --- |
 | track\_name  | User-defined track name. For example, "audio" for the audio track.  | audio |
 | codec\_id | Codec id for the track. For example, "A\_AAC" for an audio track. | A\_AAC |
-| cpd | Data provided by the encoder used to decode the frame data. This data can include frame width and height in pixels, which is needed by many downstream consumers. In the [C\+\+ producer library](https://docs.aws.amazon.com//kinesisvideostreams/latest/dg/producer-sdk-cpp.html), the gMkvTrackVideoBits array in MkvStatics.cpp includes pixel width and height for the frame.  |  |
+| cpd | Data provided by the encoder used to decode the frame data. This data can include frame width and height in pixels, which is needed by many downstream consumers. In the [C\+\+ producer library](https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/producer-sdk-cpp.html), the gMkvTrackVideoBits array in MkvStatics.cpp includes pixel width and height for the frame.  |  |
 | cpd\_size | The size of the data in the codecPrivateData parameter. |  |
 | track\_type | The type of the track. For example, you can use the enum value of MKV\_TRACK\_INFO\_TYPE\_AUDIO for audio. | MKV\_TRACK\_INFO\_TYPE\_AUDIO |
 

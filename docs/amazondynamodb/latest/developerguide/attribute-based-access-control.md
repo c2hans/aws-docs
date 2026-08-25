@@ -52,10 +52,8 @@ The following example allows the [UpdateItem](https://docs.aws.amazon.com/amazon
 + [Why should I use ABAC?](#why-use-abac)
 + [Condition keys to implement ABAC with DynamoDB](#condition-keys-implement-abac)
 + [Considerations for using ABAC with DynamoDB](#abac-considerations)
-+ [Enabling ABAC in DynamoDB](abac-enable-ddb.md)
-+ [Using ABAC with DynamoDB tables and indexes](abac-implementation-ddb-tables.md)
-+ [Examples for using ABAC with DynamoDB tables and indexes](abac-example-use-cases.md)
-+ [Troubleshooting common ABAC errors for DynamoDB tables and indexes](abac-troubleshooting.md)
++ [Using attribute-based access control with DynamoDB tables and indexes](abac-tables.md)
++ [Using attribute-based access control with DynamoDB Streams](abac-streams.md)
 
 ## Why should I use ABAC?
 <a name="why-use-abac"></a>
@@ -78,6 +76,6 @@ You can use the following condition keys in your AWS policies to control the lev
 <a name="abac-considerations"></a>
 
 When you use ABAC with DynamoDB tables or indexes, the following considerations apply:
-+ Tagging and ABAC aren't supported for DynamoDB Streams.
++ For information about using ABAC with DynamoDB Streams, see [Using attribute-based access control with DynamoDB Streams](abac-streams.md).
 + Tagging and ABAC aren't supported for DynamoDB backups. To use ABAC with backups, we recommend that you use [AWS Backup](https://docs.aws.amazon.com/aws-backup/latest/devguide/whatisbackup.html).
 + Tags aren't preserved in restored tables. You need to add tags to restored tables before you can use tag-based conditions in your policies.

@@ -224,7 +224,7 @@ Instead of creating the AMI from the Amazon EC2 console, you can use Systems Man
 
 1. Extract the contents of the upgrade package to a location of your choice.
 
-1. Double-click the **Upgrade.bat** file. If you get a security warning, choose **Run**.
+1. Open the **Upgrade.bat** file. If you get a security warning, choose **Run**.
 
 1. In the **Upgrade Drivers** dialog box, review the information and choose **Yes** if you are ready to start the upgrade.
 
@@ -275,7 +275,7 @@ If you create an AMI, make sure you do the following:
 
 1. Extract the contents of the upgrade package to a location of your choice.
 
-1. Double-click the **Upgrade.bat** file. If you get a security warning, choose **Run**.
+1. Open the **Upgrade.bat** file. If you get a security warning, choose **Run**.
 
 1. In the **Upgrade Drivers** dialog box, review the information and choose **Yes** if you are ready to start the upgrade.
 

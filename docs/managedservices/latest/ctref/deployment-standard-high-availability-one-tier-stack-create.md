@@ -14,8 +14,6 @@ Use to create an Application Load Balancer and an Auto Scaling Group.
 ## Change Type Details
 <a name="ct-09t6q7j9v5hrn-DSHc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-09t6q7j9v5hrn |

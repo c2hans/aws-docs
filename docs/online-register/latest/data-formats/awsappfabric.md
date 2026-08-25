@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsa
 
 AWS AppFabric provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="appfabric-GetAppAuthorization"></a>[GetAppAuthorization](https://docs.aws.amazon.com/appfabric/latest/api/API_GetAppAuthorization.html) | View details about app authorizations | Read |

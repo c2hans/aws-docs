@@ -24,7 +24,7 @@ When a contact event takes place, there are three distinct default templates tha
 
 When the CTR-NoInferred template is used and a contact event, such as a phone call takes place, a specific process is initiated to handle the data. Initially, the system uses the `_ctrContactId` key to search for an existing profile associated with the contact event. If a matching profile is found, the contact event is automatically associated with that profile. However, if no existing profile is found using the `_ctrContactId` key, the system proceeds to search for a profile using a secondary key called `_phone`. This key is used to locate an existing profile based on the phone number associated with the contact event. When a matching profile is found, the contact event is automatically associated with that profile.
 
-In cases where neither the `_ctrContactId` key nor the `_phone` key yield an existing profile, the system creates a new inferred profile. This inferred profile is then populated with the meta-data from the contact event, ensuring that the information is captured and stored within the system.
+In cases where neither the `_ctrContactId` key nor the `_phone` key yield an existing profile, the system creates a new inferred profile. This inferred profile is then populated with the meta-data from the contact event, making sure that the information is captured and stored within the system.
 
 This process ensures efficient handling of contact events, promoting auto-association with existing profiles and enabling the creation of inferred profiles when necessary. By using these mechanisms, organizations can maintain a comprehensive record of customer interactions and effectively manage their contact event data within the system.
 
@@ -43,7 +43,7 @@ When a contact event, such as a phone call, takes place, the CTR-AutoAssociateOn
 
 However, if no existing profile is found using the `_ctrContactId` key, the template employs a secondary search mechanism using the `_phone` key. It searches for an existing profile associated with the same phone number as the contact event. If a matching profile is found, the contact event is auto-associated with that profile.
 
-The purpose of using the CTR-AutoAssociateOnly template is to enable automatic association with existing profiles while maintaining strict control over profile creation. Unlike the CTR-NoInferred template, this template prevents the creation of inferred profiles when no match is found. It ensures that profiles are only created manually, providing organizations with a higher level of control and accuracy in profile management.
+The purpose of using the CTR-AutoAssociateOnly template is to enable automatic association with existing profiles while maintaining strict control over profile creation. Unlike the CTR-NoInferred template, this template prevents the creation of inferred profiles when no match is found. It makes sure that profiles are only created manually, providing organizations with a higher level of control and accuracy in profile management.
 
 By using the CTR-AutoAssociateOnly template, organizations can use auto-association while adhering to specific rules regarding profile creation. This approach allows for streamlined contact event handling and precise control over the profile ecosystem, ensuring accurate data representation and facilitating efficient customer management.
 
@@ -56,7 +56,7 @@ By using the CTR-AutoAssociateOnly template, organizations can use auto-associat
 
 The CTR template relies solely on the `_ctrContactId` key to search for an existing profile, and it automatically associates the contact event with the profile if a match is found. However, in cases where no existing profile is found, the template creates an inferred profile and populates it with the contact event meta-data.
 
-Although this behavior ensures that contact events are captured even when no pre-existing profile exists, it can potentially result in the creation of numerous inferred profiles. This abundance of inferred profiles may lead to the issue of duplicate profiles within the system.
+Although this behavior makes sure that contact events are captured even when no pre-existing profile exists, it can potentially result in the creation of numerous inferred profiles. This abundance of inferred profiles might lead to the issue of duplicate profiles within the system.
 
 To address this concern and promote better profile management practices, we highly recommend using the CTR-NoInferred template as the default option. By using the CTR-NoInferred template, the system eliminates the creation of inferred profiles, thereby reducing the occurrence of duplicate profiles. This template allows for a more streamlined and efficient handling of contact events, resulting in improved data integrity and accuracy.
 

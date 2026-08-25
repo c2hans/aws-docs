@@ -20,7 +20,7 @@ This page applies to customers that have not opted in to Enhanced EC2 Scanning.
 
 To scan a Windows instance, Amazon Inspector requires the instance to meet the following criteria:
 + The instance is an SSM managed instance. For instructions about setting up your instance for scanning, see [Configuring the SSM Agent](scanning-ec2.md#configure-ssm).
-+ The instance operating system is one of the supported Windows operating systems. For a complete list of supported operating systems, see [Amazon EC2 instances status valuesSupported operating systems: Amazon EC2 scanning](supported.md#supported-os-ec2).
++ The instance operating system is one of the supported Windows operating systems. For a complete list of supported operating systems, see [Amazon EC2 instances status values](supported.md#supported-os-ec2).
 + The instance has the Amazon Inspector SSM plugin installed. Amazon Inspector automatically installs the Amazon Inspector SSM plugin for managed instances upon discovery. See the next topic for details about the plugin.
 
 **Note**

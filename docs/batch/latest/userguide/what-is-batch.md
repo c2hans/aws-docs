@@ -11,7 +11,7 @@ As a fully managed service, AWS Batch helps you to run batch computing workloads
 
 ![Showing the layers of AWS Batch for workloads, orchestration, and capacity](http://docs.aws.amazon.com/batch/latest/userguide/images/batch-diagram.png)
 
-AWS Batch provides all of the necessary functionality to run high-scale, compute-intensive workloads on top of AWS managed container orchestration services, Amazon ECS and Amazon EKS. AWS Batch is able to scale compute capacity on Amazon EC2 instances and Fargate resources.
+AWS Batch provides all of the necessary functionality to run high-scale, compute-intensive workloads on top of AWS managed container orchestration services, Amazon ECS and Amazon EKS. AWS Batch is able to scale compute capacity on Amazon EC2 instances, Fargate resources, and Amazon ECS Managed Instances.
 
 AWS Batch provides a fully managed service for batch workloads, and delivers the operational capabilities to optimize these types of workloads for throughput, speed, resource efficiency, and cost.
 
@@ -36,9 +36,10 @@ If you are a first-time user of AWS Batch, we recommend that you begin by readin
 ## Related services
 <a name="related-services"></a>
 
-AWS Batch is a fully managed batch computing service that plans, schedules, and runs your containerized batch ML, simulation, and analytics workloads across the full range of AWS compute offerings, such as Amazon ECS, Amazon EKS, AWS Fargate, and Spot or On-Demand Instances. For more information about each managed compute service, see:
+AWS Batch is a fully managed batch computing service that plans, schedules, and runs your containerized batch ML, simulation, and analytics workloads across the full range of AWS compute offerings, such as Amazon ECS, Amazon EKS, AWS Fargate, Amazon ECS Managed Instances, and Spot or On-Demand Instances. For more information about each managed compute service, see:
 + [Amazon EC2 *User Guide*](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html)
 + [AWS Fargate* Developer Guide*](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Fargate.html)
++ [Amazon ECS Managed Instances *Developer Guide*](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ManagedInstances.html)
 + [Amazon EKS *User Guide*](https://docs.aws.amazon.com/eks/latest/userguide/what-is-eks.html)
 + [Amazon SageMaker AI* Developer Guide*](https://docs.aws.amazon.com/sagemaker/latest/dg/gs.htm)
 

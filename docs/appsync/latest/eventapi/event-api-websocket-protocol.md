@@ -20,7 +20,7 @@ The following diagram demonstrates the WebSocket protocol message flow between t
 ![The WebSocket protocol message flow overview.](http://docs.aws.amazon.com/appsync/latest/eventapi/images/WebSocket-protocol.png)
 
 In the preceeding diagram, the following WebSocket steps occur in the message flow.
-+ A client establishes a WebSocket connection with the AWS AppSync real-time endpoint. If there is a network error, the client should do a jittered exponential backoff. For more information, see [Exponential backoff and jitter](https://aws.amazon.com/blogs//architecture/exponential-backoff-and-jitter/) on the *AWS Architecture Blog*.
++ A client establishes a WebSocket connection with the AWS AppSync real-time endpoint. If there is a network error, the client should do a jittered exponential backoff. For more information, see [Exponential backoff and jitter](https://aws.amazon.com/blogs/architecture/exponential-backoff-and-jitter/) on the *AWS Architecture Blog*.
 + After successfully establishing the WebSocket connection, the client can optionally send a `connection_init` message.
   + The client waits for a `connection_ack` message from AWS AppSync. This message includes a `connectionTimeoutMs` parameter, which is the maximum wait time in milliseconds for a "ka" (keep-alive) message.
 + AWS AppSync sends "ka" messages periodically. The client keeps track of the time that it received each "ka" message. If the client doesn't receive a "ka" message within `connectionTimeoutMs` milliseconds, the client should close the connection.

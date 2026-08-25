@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/contact-lens.h
 <a name="contact-lens"></a>
 
 **Note**
-**Powered by Amazon Bedrock**: AWS implements [automated abuse detection](https://docs.aws.amazon.com//bedrock/latest/userguide/abuse-detection.html). Because Connect Customer conversational analytics is built on Amazon Bedrock, users can take full advantage of the controls implemented in Amazon Bedrock to enforce safety, security, and the responsible use of artificial intelligence (AI).
+**Powered by Amazon Bedrock**: AWS implements [automated abuse detection](https://docs.aws.amazon.com/bedrock/latest/userguide/abuse-detection.html). Because Connect Customer conversational analytics is built on Amazon Bedrock, users can take full advantage of the controls implemented in Amazon Bedrock to enforce safety, security, and the responsible use of artificial intelligence (AI).
 
 Connect Customer conversational analytics provides contact center analytics and quality management capabilities that enable you to monitor, measure, and continuously improve contact quality and agent performance for a better overall customer experience.
 + [Analyze conversations using conversational analytics](analyze-conversations.md). You can uncover trends and improve customer service by understanding sentiment, conversation characteristics, emerging contact themes, self-service user experiences, and agent compliance risks.

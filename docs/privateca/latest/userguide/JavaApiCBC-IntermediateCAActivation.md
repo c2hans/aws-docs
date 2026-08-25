@@ -15,7 +15,7 @@ The example calls the following AWS Private CA API actions:
 + [ImportCertificateAuthorityCertificate](https://docs.aws.amazon.com/privateca/latest/APIReference/API_ImportCertificateAuthorityCertificate.html)
 + [GetCertificateAuthorityCertificate](https://docs.aws.amazon.com/privateca/latest/APIReference/API_GetCertificateAuthorityCertificate.html)
 
-If problems occur, see [Troubleshoot AWS Private CA Matter-compliant certificate errorsMatter-compliant certificate errors](TroubleshootPcaMatter.md) in the Troubleshooting section.
+If problems occur, see [Troubleshoot AWS Private CA Matter-compliant certificate errors](TroubleshootPcaMatter.md) in the Troubleshooting section.
 
 ```
 package com.amazonaws.samples.matter;

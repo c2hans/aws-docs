@@ -12,8 +12,6 @@ AWS Private CA can report the following status values. The table shows the CA ca
 **Note**
 For all status values except `DELETED` and `FAILED`, you are billed for the CA.
 
-****
-
 <table>
 <thead>
   <tr><th>Status</th><th>Issue certificates</th><th>Validate certs with OCSP</th><th>Generate CRLs</th><th>Generate audits</th><th>You can update the CA cert</th><th>Certificates can be revoked</th><th>You are billed for the CA</th></tr>

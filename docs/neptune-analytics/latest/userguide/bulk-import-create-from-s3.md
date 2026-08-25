@@ -26,7 +26,7 @@ ec2:DescribeVpcEndpoints
 ec2:DescribeVpcs
 ec2:ModifyVpcEndpoint
 route53:AssociateVPCWithHostedZone
- For more information about required permissions, see [ Actions defined by Neptune Analytics](https://docs.aws.amazon.com//service-authorization/latest/reference/list_amazonneptuneanalytics.html#amazonneptuneanalytics-actions-as-permissions).
+ For more information about required permissions, see [ Actions defined by Neptune Analytics](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonneptuneanalytics.html#amazonneptuneanalytics-actions-as-permissions).
 
 ## Copy the data files to an Amazon S3 bucket
 <a name="create-bucket-copy-data"></a>
@@ -94,7 +94,7 @@ Your IAM role is now ready for import.
 ## Use the CreateGraphUsingImportTask API to import from Amazon S3
 <a name="use-createGraphUsingImportTask-to-import"></a>
 
- You can perform this operation from the Neptune console as well as from AWS CLI/SDK. For more information on different parameters, see [https://docs.aws.amazon.com//neptune-analytics/latest/apiref/API_CreateGraphUsingImportTask.html](https://docs.aws.amazon.com//neptune-analytics/latest/apiref/API_CreateGraphUsingImportTask.html)
+ You can perform this operation from the Neptune console as well as from AWS CLI/SDK. For more information on different parameters, see [https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_CreateGraphUsingImportTask.html](https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_CreateGraphUsingImportTask.html)
 
 **Via CLI/SDK**
 

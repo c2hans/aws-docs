@@ -572,11 +572,11 @@ The turns in completed conversations for which the invoking resource (flow or fl
 <a name="supported-metric-filters"></a>
 
 - ** Contact **
-  - **Metric Level Filter Key:** Initiation method / **Metric Level Filter Key Description:** Indicates how the contact was initiated. / **Metric Level Filter Values:** Example: INBOUND, OUTBOUND, TRANSFER, QUEUE\_TRANSFER, CALLBACK, API, etc.<br />Please refer to the InitiationMethod section of ContactTraceRecord in the Amazon Connect Administrator Guide for more filter values.
-  - **Metric Level Filter Key:** Disconnect reason / **Metric Level Filter Key Description:** Indicates how the contact was terminated. / **Metric Level Filter Values:** A few examples of filter values are AGENT\_DISCONNECT, CUSTOMER\_DISCONNECT, TRANSFER, THIRD\_PARTY\_DISCONNECT, BARGED, CONTACT\_FLOW\_DISCONNECT, etc.<br />Please refer to ContactTraceRecord in the Amazon Connect Administrator Guide for more filter values.
+  - **Metric Level Filter Key:** Initiation method / **Metric Level Filter Key Description:** Indicates how the contact was initiated. / **Metric Level Filter Values:** Example: INBOUND, OUTBOUND, TRANSFER, QUEUE\_TRANSFER, CALLBACK, API.<br />For more filter values, see the InitiationMethod section of ContactTraceRecord in the Amazon Connect Administrator Guide.
+  - **Metric Level Filter Key:** Disconnect reason / **Metric Level Filter Key Description:** Indicates how the contact was terminated. / **Metric Level Filter Values:** A few examples of filter values are AGENT\_DISCONNECT, CUSTOMER\_DISCONNECT, TRANSFER, THIRD\_PARTY\_DISCONNECT, BARGED, CONTACT\_FLOW\_DISCONNECT.<br />For more filter values, see ContactTraceRecord in the Amazon Connect Administrator Guide.
   - **Metric Level Filter Key:** Channel / **Metric Level Filter Key Description:** How the contact reached your contact center. / **Metric Level Filter Values:** Valid values: Voice, Chat, Task, Email
-  - **Metric Level Filter Key:** ValidationTestType (Represented as **Contact source** in the custom metric builder) / **Metric Level Filter Key Description:** Represents the testing and simulation type. This field remains empty for non-simulated contacts. You can use this attribute in the analytics dashboard to filter out actual customer contacts or to identify whether a contact is simulated within your contact record object. / **Metric Level Filter Values:** Please refer to **connect:ValidationTestType** table row in the [SegmentAttributes](https://docs.aws.amazon.com/connect/latest/adminguide/connect-attrib-list.html#attribs-segment-attributes) section for valid list of values.
-  - **Metric Level Filter Key:** Subtype / **Metric Level Filter Key Description:** Represents the subtype of the channel used for the contact. / **Metric Level Filter Values:** Please refer to **connect:Subtype** table row in the [SegmentAttributes](https://docs.aws.amazon.com/connect/latest/adminguide/connect-attrib-list.html#attribs-segment-attributes) section for valid list of values.
+  - **Metric Level Filter Key:** ValidationTestType (Represented as **Contact source** in the custom metric builder) / **Metric Level Filter Key Description:** Represents the testing and simulation type. This field remains empty for non-simulated contacts. You can use this attribute in the analytics dashboard to filter out actual customer contacts or to identify whether a contact is simulated within your contact record object. / **Metric Level Filter Values:** For valid values, see the **connect:ValidationTestType** table row in the [SegmentAttributes](https://docs.aws.amazon.com/connect/latest/adminguide/connect-attrib-list.html#attribs-segment-attributes) section.
+  - **Metric Level Filter Key:** Subtype / **Metric Level Filter Key Description:** Represents the subtype of the channel used for the contact. / **Metric Level Filter Values:** For valid values, see the **connect:Subtype** table row in the [SegmentAttributes](https://docs.aws.amazon.com/connect/latest/adminguide/connect-attrib-list.html#attribs-segment-attributes) section.
   - **Metric Level Filter Key:** User defined attribute keys / **Metric Level Filter Key Description:** Represents any user defined predefined attribute that has been enabled for analytics. / **Metric Level Filter Values:** Navigate to the [predefined attributes page](https://docs.aws.amazon.com/connect/latest/adminguide/predefined-attributes.html) for the user defined attribute to understand what values are available.
   - **Metric Level Filter Key:** Feature / **Metric Level Filter Key Description:** Identifies if conversational analytics is enabled on the flow. / **Metric Level Filter Values:** Contacts analyzed by conversational analytics
   - **Metric Level Filter Key:** Is abandoned / **Metric Level Filter Key Description:** This is true when the contact was abandoned by customer while waiting in queue, false otherwise.<br />Please note if a contact was scheduled for a callback it would not be considered as abandoned. / **Metric Level Filter Values:** True or False
@@ -607,19 +607,19 @@ The turns in completed conversations for which the invoking resource (flow or fl
 
 - ** Agent **
   - **Metric Level Filter Key:** Channel / **Metric Level Filter Key Description:** How the contact reached your contact center. / **Metric Level Filter Values:** Valid values: Voice, Chat, Task, Email
-  - **Metric Level Filter Key:** Initiation Method / **Metric Level Filter Key Description:** Indicates how the contact was initiated. (Only supported for Agent Connecting Time) / **Metric Level Filter Values:** Example: INBOUND, OUTBOUND, TRANSFER, QUEUE\_TRANSFER, CALLBACK, API, etc.<br />Please refer to the InitiationMethod section of [ContactTraceRecord](https://docs.aws.amazon.com/connect/latest/adminguide/ctr-data-model.html#ctr-ContactTraceRecord) in the Amazon Connect Administrator Guide for more filter values.
+  - **Metric Level Filter Key:** Initiation Method / **Metric Level Filter Key Description:** Indicates how the contact was initiated. (Only supported for Agent Connecting Time) / **Metric Level Filter Values:** Example: INBOUND, OUTBOUND, TRANSFER, QUEUE\_TRANSFER, CALLBACK, API.<br />For more filter values, see the InitiationMethod section of [ContactTraceRecord](https://docs.aws.amazon.com/connect/latest/adminguide/ctr-data-model.html#ctr-ContactTraceRecord) in the Connect Customer Administrator Guide.
 
 - ** Current Contact **
   - **Metric Level Filter Key:** Channel / **Metric Level Filter Key Description:** How the contact reached your contact center. / **Metric Level Filter Values:** Valid values: Voice, Chat, Task, Email
-  - **Metric Level Filter Key:** Initiation Method / **Metric Level Filter Key Description:** Indicates how the contact was initiated. / **Metric Level Filter Values:** Example: Inbound, Outbound, Transfer, Queue transfer, Callback, API, etc.<br />Please refer to the InitiationMethod section of [ContactTraceRecord](https://docs.aws.amazon.com/connect/latest/adminguide/ctr-data-model.html#ctr-ContactTraceRecord) in the Amazon Connect Administrator Guide for more filter values.
-  - **Metric Level Filter Key:** ValidationTestType (Represented as **Contact Source** in the custom metric builder) / **Metric Level Filter Key Description:** Represents the testing and simulation type. This field remains empty for non-simulated contacts. You can use this attribute in the analytics dashboard to filter out actual customer contacts or to identify whether a contact is simulated within your contact record object. / **Metric Level Filter Values:** Please refer to **connect:ValidationTestType** table row in the [SegmentAttributes](https://docs.aws.amazon.com/connect/latest/adminguide/connect-attrib-list.html#attribs-segment-attributes) section for valid list of values.
-  - **Metric Level Filter Key:** Subtype / **Metric Level Filter Key Description:** Represents the subtype of the channel used for the contact. / **Metric Level Filter Values:** Please refer to **connect:Subtype** table row in the [SegmentAttributes](https://docs.aws.amazon.com/connect/latest/adminguide/connect-attrib-list.html#attribs-segment-attributes) section for valid list of values.
+  - **Metric Level Filter Key:** Initiation Method / **Metric Level Filter Key Description:** Indicates how the contact was initiated. / **Metric Level Filter Values:** Example: Inbound, Outbound, Transfer, Queue transfer, Callback, API.<br />For more filter values, see the InitiationMethod section of [ContactTraceRecord](https://docs.aws.amazon.com/connect/latest/adminguide/ctr-data-model.html#ctr-ContactTraceRecord) in the Amazon Connect Administrator Guide.
+  - **Metric Level Filter Key:** ValidationTestType (Represented as **Contact Source** in the custom metric builder) / **Metric Level Filter Key Description:** Represents the testing and simulation type. This field remains empty for non-simulated contacts. You can use this attribute in the analytics dashboard to filter out actual customer contacts or to identify whether a contact is simulated within your contact record object. / **Metric Level Filter Values:** For valid values, see the **connect:ValidationTestType** table row in the [SegmentAttributes](https://docs.aws.amazon.com/connect/latest/adminguide/connect-attrib-list.html#attribs-segment-attributes) section.
+  - **Metric Level Filter Key:** Subtype / **Metric Level Filter Key Description:** Represents the subtype of the channel used for the contact. / **Metric Level Filter Values:** For valid values, see the **connect:Subtype** table row in the [SegmentAttributes](https://docs.aws.amazon.com/connect/latest/adminguide/connect-attrib-list.html#attribs-segment-attributes) section.
   - **Metric Level Filter Key:** User defined attribute keys / **Metric Level Filter Key Description:** Represents any user defined predefined attribute that has been enabled for analytics. / **Metric Level Filter Values:** Navigate to the [predefined attributes page](https://docs.aws.amazon.com/connect/latest/adminguide/predefined-attributes.html) for the user defined attribute to understand what values are available.
 
 - ** Current Agent **
   - **Metric Level Filter Key:** Channel / **Metric Level Filter Key Description:** How the contact reached your contact center. / **Metric Level Filter Values:** Valid values: Voice, Chat, Task, Email
-  - **Metric Level Filter Key:** Initiation Method / **Metric Level Filter Key Description:** Indicates how the contact was initiated. (Only supported for Contacts active) / **Metric Level Filter Values:** Example: Inbound, Outbound, Transfer, Callback, Api, Webrtc Api, Queue Transfer, Monitor, Disconnect, External Outbound, Agent Reply, Flow, Campaign Preview.<br />Refer to [Contact object](https://docs.aws.amazon.com/connect/latest/adminguide/agent-event-stream-model.html#Contact) for the allowed values.
-  - **Metric Level Filter Key:** contactStatus (Represented as Agent Contact State in the custom metric builder) / **Metric Level Filter Key Description:** Contact states are events that appear in the lifecycle of a contact. You can locate them in two places: the real-time metrics reports and the agent event stream. (Only supported for Agents online) / **Metric Level Filter Values:** Example: Incoming, Pending, Connected, etc.<br />Please refer to [Contact states in the agent event stream](https://docs.aws.amazon.com/connect/latest/adminguide/about-contact-states.html) in the Amazon Connect Administrator Guide for more filter values.
+  - **Metric Level Filter Key:** Initiation Method / **Metric Level Filter Key Description:** Indicates how the contact was initiated. (Only supported for Contacts active) / **Metric Level Filter Values:** Example: Inbound, Outbound, Transfer, Callback, Api, Webrtc Api, Queue Transfer, Monitor, Disconnect, External Outbound, Agent Reply, Flow, Campaign Preview.<br />For a list of allowed values, see [Contact object](https://docs.aws.amazon.com/connect/latest/adminguide/agent-event-stream-model.html#Contact).
+  - **Metric Level Filter Key:** contactStatus (Represented as Agent Contact State in the custom metric builder) / **Metric Level Filter Key Description:** Contact states are events that appear in the lifecycle of a contact. You can locate them in two places: the real-time metrics reports and the agent event stream. (Only supported for Agents online) / **Metric Level Filter Values:** Example: Incoming, Pending, Connected.<br />For more filter values, see [Contact states in the agent event stream](https://docs.aws.amazon.com/connect/latest/adminguide/about-contact-states.html) in the Amazon Connect Administrator Guide.
 
 - ** Flow **
   - **Metric Level Filter Key:** Flow outcome / **Metric Level Filter Key Description:** Indicates the terminal outcome of the flow execution. / **Metric Level Filter Values:** Example: ENDED\_FLOW\_EXECUTION, DISCONNECTED\_PARTICIPANT, DROPPED, and so on. For more filter values, see the InitiationMethod section of [ContactTraceRecord](https://docs.aws.amazon.com/connect/latest/adminguide/ctr-data-model.html#ctr-ContactTraceRecord) in the Amazon Connect Administrator Guide.
@@ -680,12 +680,12 @@ The turns in completed conversations for which the invoking resource (flow or fl
   - **Grouping Key:** FLOWS\_RESOURCE\_ID / **Grouping Dashboard Display Name:** Flow
   - **Grouping Key:** FLOWS\_MODULE\_RESOURCE\_ID / **Grouping Dashboard Display Name:** Flow module
   - **Grouping Key:** INITIATION\_METHOD / **Grouping Dashboard Display Name:** Initiation method
-  - **Grouping Key:** FLOWS\_RESOURCE\_TYPE / **Grouping Dashboard Display Name:** Only available via API
-  - **Grouping Key:** RESOURCE\_PUBLISHED\_TIMESTAMP / **Grouping Dashboard Display Name:** Only available via API
-  - **Grouping Key:** FLOWS\_NEXT\_RESOURCE\_ID / **Grouping Dashboard Display Name:** Only available via API
-  - **Grouping Key:** FLOWS\_NEXT\_RESOURCE\_TYPE / **Grouping Dashboard Display Name:** Only available via API
-  - **Grouping Key:** FLOWS\_OUTCOME\_TYPE / **Grouping Dashboard Display Name:** Only available via API
-  - **Grouping Key:** FLOWS\_NEXT\_RESOURCE\_QUEUE\_ID / **Grouping Dashboard Display Name:** Only available via API
+  - **Grouping Key:** FLOWS\_RESOURCE\_TYPE / **Grouping Dashboard Display Name:** Only available through API
+  - **Grouping Key:** RESOURCE\_PUBLISHED\_TIMESTAMP / **Grouping Dashboard Display Name:** Only available through API
+  - **Grouping Key:** FLOWS\_NEXT\_RESOURCE\_ID / **Grouping Dashboard Display Name:** Only available through API
+  - **Grouping Key:** FLOWS\_NEXT\_RESOURCE\_TYPE / **Grouping Dashboard Display Name:** Only available through API
+  - **Grouping Key:** FLOWS\_OUTCOME\_TYPE / **Grouping Dashboard Display Name:** Only available through API
+  - **Grouping Key:** FLOWS\_NEXT\_RESOURCE\_QUEUE\_ID / **Grouping Dashboard Display Name:** Only available through API
 
 - ** Bot **
   - **Grouping Key:** CHANNEL / **Grouping Dashboard Display Name:** Channel
@@ -697,17 +697,17 @@ The turns in completed conversations for which the invoking resource (flow or fl
   - **Grouping Key:** BOT\_LOCALE / **Grouping Dashboard Display Name:** Bot locale
   - **Grouping Key:** INITIATION\_METHOD / **Grouping Dashboard Display Name:** Initiation method
   - **Grouping Key:** BOT\_INTENT\_NAME / **Grouping Dashboard Display Name:** Bot intent (Bot Intents category only)
-  - **Grouping Key:** FLOW\_ACTION\_ID / **Grouping Dashboard Display Name:** Only available via API
-  - **Grouping Key:** INVOKING\_RESOURCE\_PUBLISHED\_TIMESTAMP / **Grouping Dashboard Display Name:** Only available via API
-  - **Grouping Key:** PARENT\_FLOWS\_RESOURCE\_ID / **Grouping Dashboard Display Name:** Only available via API
-  - **Grouping Key:** INVOKING\_RESOURCE\_TYPE / **Grouping Dashboard Display Name:** Only available via API
+  - **Grouping Key:** FLOW\_ACTION\_ID / **Grouping Dashboard Display Name:** Only available through API
+  - **Grouping Key:** INVOKING\_RESOURCE\_PUBLISHED\_TIMESTAMP / **Grouping Dashboard Display Name:** Only available through API
+  - **Grouping Key:** PARENT\_FLOWS\_RESOURCE\_ID / **Grouping Dashboard Display Name:** Only available through API
+  - **Grouping Key:** INVOKING\_RESOURCE\_TYPE / **Grouping Dashboard Display Name:** Only available through API
 
 ## Supported top-level metric filters per metric primitive category
 <a name="supported-metric-filters-top-level"></a>
 
 - ** Contact **
   - **Top Level Filter Key:** AGENT / **Top Level Filter Dashboard Display Name:** Agent / **Filter Key Description:** Valid input to this key is Agent ARNs
-  - **Top Level Filter Key:** AGENT\_HIERARCHY\_LEVEL\_FIVE / **Top Level Filter Dashboard Display Name:** Agent hierarchy level five / **Filter Key Description:** Valid input to this filter, is an Agent Hierarchy Level ARN.<br />Read more about [Agent Hierarchy Level](https://docs.aws.amazon.com/connect/latest/adminguide/agent-hierarchy.html#new-agent-hierarchy).
+  - **Top Level Filter Key:** AGENT\_HIERARCHY\_LEVEL\_FIVE / **Top Level Filter Dashboard Display Name:** Agent hierarchy level five / **Filter Key Description:** Valid input to this filter, is an Agent Hierarchy Level ARN.<br />For more information, see [Agent Hierarchy Level](https://docs.aws.amazon.com/connect/latest/adminguide/agent-hierarchy.html#new-agent-hierarchy).
   - **Top Level Filter Key:** AGENT\_HIERARCHY\_LEVEL\_FOUR / **Top Level Filter Dashboard Display Name:** Agent hierarchy level four
   - **Top Level Filter Key:** AGENT\_HIERARCHY\_LEVEL\_THREE / **Top Level Filter Dashboard Display Name:** Agent hierarchy level three
   - **Top Level Filter Key:** AGENT\_HIERARCHY\_LEVEL\_TWO / **Top Level Filter Dashboard Display Name:** Agent hierarchy level two
@@ -716,14 +716,14 @@ The turns in completed conversations for which the invoking resource (flow or fl
   - **Top Level Filter Key:** QUEUE / **Top Level Filter Dashboard Display Name:** Queue / **Filter Key Description:** Valid inputs to this key are Queue ARNs
   - **Top Level Filter Key:** Q\_CONNECT\_ENABLED / **Top Level Filter Dashboard Display Name:** Amazon Q / **Filter Key Description:** `TRUE` and `FALSE` are the only valid filter values. This filter helps identify whether or not agent assist is enabled as part of the flow.
   - **Top Level Filter Key:** ROUTING\_PROFILE / **Top Level Filter Dashboard Display Name:** Routing profile / **Filter Key Description:** Valid input is Routing Profile ARNs. Please read below docs for more details:+  [How Amazon Connect uses routing profiles](https://docs.aws.amazon.com/connect/latest/adminguide/concepts-routing.html) <br />+  [Contact Trace Record Data Model](https://docs.aws.amazon.com/connect/latest/adminguide/ctr-data-model.html#ctr-Agent)
-  - **Top Level Filter Key:** contact/segmentAttributes/connect:Subtype / **Top Level Filter Dashboard Display Name:** Subtype / **Filter Key Description:** Please refer to **connect:Subtype** table row in the [SegmentAttributes](https://docs.aws.amazon.com/connect/latest/adminguide/connect-attrib-list.html#attribs-segment-attributes) section for valid list of values.
-  - **Top Level Filter Key:** contact/segmentAttributes/connect:ValidationTestType / **Top Level Filter Dashboard Display Name:** Contact source / **Filter Key Description:** Please refer to **connect:ValidationTestType** table row in the [SegmentAttributes](https://docs.aws.amazon.com/connect/latest/adminguide/connect-attrib-list.html#attribs-segment-attributes) section for valid list of values.
+  - **Top Level Filter Key:** contact/segmentAttributes/connect:Subtype / **Top Level Filter Dashboard Display Name:** Subtype / **Filter Key Description:** For valid values, see the **connect:Subtype** table row in the [SegmentAttributes](https://docs.aws.amazon.com/connect/latest/adminguide/connect-attrib-list.html#attribs-segment-attributes) section.
+  - **Top Level Filter Key:** contact/segmentAttributes/connect:ValidationTestType / **Top Level Filter Dashboard Display Name:** Contact source / **Filter Key Description:** For valid values, see the **connect:ValidationTestType** table row in the [SegmentAttributes](https://docs.aws.amazon.com/connect/latest/adminguide/connect-attrib-list.html#attribs-segment-attributes) section.
   - **Top Level Filter Key:** User defined attribute key  / **Top Level Filter Dashboard Display Name:** User defined attribute key / **Filter Key Description:** Navigate to the [predefined attributes page](https://docs.aws.amazon.com/connect/latest/adminguide/predefined-attributes.html) for the user defined attribute to understand what values are available.
   - **Top Level Filter Key:** FEATURE / **Top Level Filter Dashboard Display Name:** N/A / **Filter Key Description:** Identifies if conversational analytics is enabled on the flow.contact\_lens\_conversational\_analytics is the only valid value
 
 - ** Agent **
   - **Top Level Filter Key:** AGENT / **Top Level Filter Dashboard Display Name:** Agent / **Filter Key Description:** Valid input to this key is Agent ARNs
-  - **Top Level Filter Key:** AGENT\_HIERARCHY\_LEVEL\_FIVE / **Top Level Filter Dashboard Display Name:** Agent hierarchy level five / **Filter Key Description:** Valid input to this filter, is an Agent Hierarchy Level ARN.<br />Read more about [Agent Hierarchy Level](https://docs.aws.amazon.com/connect/latest/adminguide/agent-hierarchy.html#new-agent-hierarchy).
+  - **Top Level Filter Key:** AGENT\_HIERARCHY\_LEVEL\_FIVE / **Top Level Filter Dashboard Display Name:** Agent hierarchy level five / **Filter Key Description:** Valid input to this filter, is an Agent Hierarchy Level ARN.<br />For more information, see [Agent Hierarchy Level](https://docs.aws.amazon.com/connect/latest/adminguide/agent-hierarchy.html#new-agent-hierarchy).
   - **Top Level Filter Key:** AGENT\_HIERARCHY\_LEVEL\_FOUR / **Top Level Filter Dashboard Display Name:** Agent hierarchy level four
   - **Top Level Filter Key:** AGENT\_HIERARCHY\_LEVEL\_THREE / **Top Level Filter Dashboard Display Name:** Agent hierarchy level three
   - **Top Level Filter Key:** AGENT\_HIERARCHY\_LEVEL\_TWO / **Top Level Filter Dashboard Display Name:** Agent hierarchy level two
@@ -736,9 +736,9 @@ The turns in completed conversations for which the invoking resource (flow or fl
   - **Top Level Filter Key:** Channels / **Top Level Filter Dashboard Display Name:** Channel / **Filter Key Description:** Valid values: Voice, Chat, Task, Email
   - **Top Level Filter Key:** RoutingProfiles / **Top Level Filter Dashboard Display Name:** Routing profile / **Filter Key Description:** Valid input is Routing Profile ARNs. Please read below docs for more details:+  [How Amazon Connect uses routing profiles](https://docs.aws.amazon.com/connect/latest/adminguide/concepts-routing.html) <br />+  [Contact Trace Record Data Model](https://docs.aws.amazon.com/connect/latest/adminguide/ctr-data-model.html#ctr-Agent)
   - **Top Level Filter Key:** Queues / **Top Level Filter Dashboard Display Name:** Queue / **Filter Key Description:** Valid input to this key is Queue ARNs or QueueId's
-  - **Top Level Filter Key:** RoutingStepExpressions / **Top Level Filter Dashboard Display Name:** Routing step expression / **Filter Key Description:** Accepts a filter value up to 3,000 characters in length. Filter values are case-sensitive. JSON object key order and whitespace may be arbitrary; array order and tree structure must be preserved.<br />Please read the below references for more info:+  [Routing step expression guide](https://docs.aws.amazon.com/connect/latest/APIReference/API_Expression.html) <br />+  [Routing step expression examples](https://docs.aws.amazon.com/connect/latest/APIReference/API_GetCurrentMetricData.html#API_GetCurrentMetricData_Examples)
-  - **Top Level Filter Key:** Subtypes / **Top Level Filter Dashboard Display Name:** Subtype / **Filter Key Description:** Please refer to connect:Subtype table row in the [SegmentAttributes](https://docs.aws.amazon.com/connect/latest/adminguide/connect-attrib-list.html#attribs-segment-attributes) section for valid list of values.
-  - **Top Level Filter Key:** ValidationTestTypes / **Top Level Filter Dashboard Display Name:** Contact source / **Filter Key Description:** Please refer to connect:ValidationTestType table row in the [SegmentAttributes](https://docs.aws.amazon.com/connect/latest/adminguide/connect-attrib-list.html#attribs-segment-attributes) section for valid list of values.
+  - **Top Level Filter Key:** RoutingStepExpressions / **Top Level Filter Dashboard Display Name:** Routing step expression / **Filter Key Description:** Accepts a filter value up to 3,000 characters in length. Filter values are case-sensitive. JSON object key order and whitespace might be arbitrary; array order and tree structure must be preserved.<br />Please read the below references for more info:+  [Routing step expression guide](https://docs.aws.amazon.com/connect/latest/APIReference/API_Expression.html) <br />+  [Routing step expression examples](https://docs.aws.amazon.com/connect/latest/APIReference/API_GetCurrentMetricData.html#API_GetCurrentMetricData_Examples)
+  - **Top Level Filter Key:** Subtypes / **Top Level Filter Dashboard Display Name:** Subtype / **Filter Key Description:** For valid values, see the connect:Subtype table row in the [SegmentAttributes](https://docs.aws.amazon.com/connect/latest/adminguide/connect-attrib-list.html#attribs-segment-attributes) section.
+  - **Top Level Filter Key:** ValidationTestTypes / **Top Level Filter Dashboard Display Name:** Contact source / **Filter Key Description:** For valid values, see the connect:ValidationTestType table row in the [SegmentAttributes](https://docs.aws.amazon.com/connect/latest/adminguide/connect-attrib-list.html#attribs-segment-attributes) section.
 
 - ** Current Agent **
   - **Top Level Filter Key:** Channels / **Top Level Filter Dashboard Display Name:** Channel / **Filter Key Description:** Valid values: Voice, Chat, Task, Email
@@ -750,12 +750,12 @@ The turns in completed conversations for which the invoking resource (flow or fl
   - **Top Level Filter Key:** FLOWS\_RESOURCE\_ID / **Top Level Filter Dashboard Display Name:** Flow / **Filter Key Description:** Valid input is Flow ARNs
   - **Top Level Filter Key:** FLOWS\_MODULE\_RESOURCE\_ID / **Top Level Filter Dashboard Display Name:** Flow module / **Filter Key Description:** Valid input is Flow Module ARNs
   - **Top Level Filter Key:** INITIATION\_METHOD / **Top Level Filter Dashboard Display Name:** Initiation method / **Filter Key Description:** Indicates how the contact was initiated.
-  - **Top Level Filter Key:** FLOWS\_RESOURCE\_TYPE / **Top Level Filter Dashboard Display Name:** Only available via API / **Filter Key Description:** Valid values: Flow, Module
-  - **Top Level Filter Key:** RESOURCE\_PUBLISHED\_TIMESTAMP / **Top Level Filter Dashboard Display Name:** Only available via API / **Filter Key Description:** Timestamp when the flow resource was published.
-  - **Top Level Filter Key:** FLOWS\_NEXT\_RESOURCE\_ID / **Top Level Filter Dashboard Display Name:** Only available via API / **Filter Key Description:** ARN of the next resource.
-  - **Top Level Filter Key:** FLOWS\_NEXT\_RESOURCE\_TYPE / **Top Level Filter Dashboard Display Name:** Only available via API / **Filter Key Description:** Type of resource the flow transitioned to.
-  - **Top Level Filter Key:** FLOWS\_OUTCOME\_TYPE / **Top Level Filter Dashboard Display Name:** Only available via API / **Filter Key Description:** Indicates the terminal outcome of the flow.
-  - **Top Level Filter Key:** FLOWS\_NEXT\_RESOURCE\_QUEUE\_ID / **Top Level Filter Dashboard Display Name:** Only available via API / **Filter Key Description:** ARN of the next queue resource.
+  - **Top Level Filter Key:** FLOWS\_RESOURCE\_TYPE / **Top Level Filter Dashboard Display Name:** Only available through API / **Filter Key Description:** Valid values: Flow, Module
+  - **Top Level Filter Key:** RESOURCE\_PUBLISHED\_TIMESTAMP / **Top Level Filter Dashboard Display Name:** Only available through API / **Filter Key Description:** Timestamp when the flow resource was published.
+  - **Top Level Filter Key:** FLOWS\_NEXT\_RESOURCE\_ID / **Top Level Filter Dashboard Display Name:** Only available through API / **Filter Key Description:** ARN of the next resource.
+  - **Top Level Filter Key:** FLOWS\_NEXT\_RESOURCE\_TYPE / **Top Level Filter Dashboard Display Name:** Only available through API / **Filter Key Description:** Type of resource the flow transitioned to.
+  - **Top Level Filter Key:** FLOWS\_OUTCOME\_TYPE / **Top Level Filter Dashboard Display Name:** Only available through API / **Filter Key Description:** Indicates the terminal outcome of the flow.
+  - **Top Level Filter Key:** FLOWS\_NEXT\_RESOURCE\_QUEUE\_ID / **Top Level Filter Dashboard Display Name:** Only available through API / **Filter Key Description:** ARN of the next queue resource.
 
 - ** Bot **
   - **Top Level Filter Key:** CHANNEL / **Top Level Filter Dashboard Display Name:** Channel / **Filter Key Description:** Valid values: Voice, Chat, Task, Email
@@ -767,10 +767,10 @@ The turns in completed conversations for which the invoking resource (flow or fl
   - **Top Level Filter Key:** BOT\_LOCALE / **Top Level Filter Dashboard Display Name:** Bot locale / **Filter Key Description:** Locale configuration of the bot.
   - **Top Level Filter Key:** INITIATION\_METHOD / **Top Level Filter Dashboard Display Name:** Initiation method / **Filter Key Description:** Indicates how the contact was initiated.
   - **Top Level Filter Key:** BOT\_INTENT\_NAME / **Top Level Filter Dashboard Display Name:** Bot intent (Bot Intents category only) / **Filter Key Description:** Name of the specific bot intent.
-  - **Top Level Filter Key:** FLOW\_ACTION\_ID / **Top Level Filter Dashboard Display Name:** Only available via API / **Filter Key Description:** Flow action identifier that invoked the bot.
-  - **Top Level Filter Key:** PARENT\_FLOWS\_RESOURCE\_ID / **Top Level Filter Dashboard Display Name:** Only available via API / **Filter Key Description:** ARN of the parent flow resource.
-  - **Top Level Filter Key:** INVOKING\_RESOURCE\_TYPE / **Top Level Filter Dashboard Display Name:** Only available via API / **Filter Key Description:** Valid values: Flow, Module
-  - **Top Level Filter Key:** INVOKING\_RESOURCE\_PUBLISHED\_TIMESTAMP / **Top Level Filter Dashboard Display Name:** Only available via API / **Filter Key Description:** Timestamp when the invoking resource was published.
+  - **Top Level Filter Key:** FLOW\_ACTION\_ID / **Top Level Filter Dashboard Display Name:** Only available through API / **Filter Key Description:** Flow action identifier that invoked the bot.
+  - **Top Level Filter Key:** PARENT\_FLOWS\_RESOURCE\_ID / **Top Level Filter Dashboard Display Name:** Only available through API / **Filter Key Description:** ARN of the parent flow resource.
+  - **Top Level Filter Key:** INVOKING\_RESOURCE\_TYPE / **Top Level Filter Dashboard Display Name:** Only available through API / **Filter Key Description:** Valid values: Flow, Module
+  - **Top Level Filter Key:** INVOKING\_RESOURCE\_PUBLISHED\_TIMESTAMP / **Top Level Filter Dashboard Display Name:** Only available through API / **Filter Key Description:** Timestamp when the invoking resource was published.
 
 ## Guidelines for Metric Primitive creation and usage with out-of-the-box metrics
 <a name="metric-primitive-guidelines"></a>
@@ -784,9 +784,9 @@ Each metric primitive can only use a specific filter attribute once. If you appl
 
 **Metric primitives must be from the same category**
 
-Metric primitives are organized into categories based on what they measure (e.g., Contact metrics, Agent metrics, Queue metrics). You can only combine primitives within the same category in a single custom metric. When selecting a metric primitive, you'll see its category in the dropdown. If a metric appears disabled (grayed out), hover over it to see the why, it must be from a different category than your first selection.
-+ (e.g., Contact metrics, Agent metrics, Queue metrics). You can only combine primitives within the same category in a single custom metric. When selecting a metric primitive, you'll see its category in the dropdown. If a metric appears disabled (grayed out), hover over it to see why—typically because it's from a different category than your first selection.
-+ When selecting a metric primitive, you'll see its category in the dropdown. If a metric appears disabled (grayed out), hover over it to see why—typically because it's from a different category than your first selection.
+Metric primitives are organized into categories based on what they measure (for example, Contact metrics, Agent metrics, Queue metrics). You can only combine primitives within the same category in a single custom metric. When selecting a metric primitive, you'll see its category in the dropdown. If a metric appears disabled (grayed out), pause on it to see the why, it must be from a different category than your first selection.
++ (for example, Contact metrics, Agent metrics, Queue metrics). You can only combine primitives within the same category in a single custom metric. When selecting a metric primitive, you'll see its category in the dropdown. If a metric appears disabled (grayed out), pause on it to see why—typically because it's from a different category than your first selection.
++ When selecting a metric primitive, you'll see its category in the dropdown. If a metric appears disabled (grayed out), pause on it to see why—typically because it's from a different category than your first selection.
 
 **Arithmetic operations on metric primitives require consistent filters**
 
@@ -810,8 +810,8 @@ Example:
 Not every metric primitive supports all statistic operations (SUM, AVG, MIN, MAX). Using an unsupported statistic will cause an error.
 
 Some metrics are only meaningful with certain calculations:
-+ **Count-based metrics** (e.g., Contacts Created): supports SUM, as AVG does not make sense
-+ **Duration metrics** (e.g., Contact Handle Time): support AVG, SUM, MIN, MAX
++ **Count-based metrics** (for example, Contacts Created): supports SUM, as AVG does not make sense
++ **Duration metrics** (for example, Contact Handle Time): support AVG, SUM, MIN, MAX
 
 **A custom metric must have 1 to 5 components**
 
@@ -824,13 +824,13 @@ A custom metric using a metric primitive of **Current Contact** or **Current Age
 
 **A statistic operation can support at most contain 10 elements (either components or constants)**
 
-Each statistic operation (SUM, AVG, etc.) can contain a maximum of 10 elements.
+Each statistic operation (SUM, AVG) can contain a maximum of 10 elements.
 
 **What Counts as an Element?**
 
 Both of these count toward the 10-element limit:
-+ **Component identifiers** (e.g., Metric\_1, Metric\_2)
-+ **Constants/numbers** (e.g., 100, 0.5)
++ **Component identifiers** (for example, Metric\_1, Metric\_2)
++ **Constants/numbers** (for example, 100, 0.5)
 
 ### Guidelines for using custom metrics with out-of-the-box metrics
 <a name="using-custom-metrics-guidelines"></a>

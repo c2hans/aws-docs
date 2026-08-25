@@ -17,8 +17,6 @@ The following sections summarize the npm commands that are supported, by CodeArt
 
 This section lists npm commands where the npm client makes one or more requests to the registry it's been configured with (for example, with `npm config set registry` ). These commands have been verified to function correctly when invoked against a CodeArtifact repository.
 
-****
-
 | Command | Description |
 | --- | --- |
 |  [bugs](https://docs.npmjs.com/cli/bugs)  | Tries to guess the location of a package's bug tracker URL, and then tries to open it. |
@@ -40,8 +38,6 @@ This section lists npm commands where the npm client makes one or more requests 
 <a name="supported-client-side-commands"></a>
 
 These commands don't require any direct interaction with a repository, so CodeArtifact does not need to do anything to support them.
-
-****
 
 | Command | Description |
 | --- | --- |
@@ -71,8 +67,6 @@ These commands don't require any direct interaction with a repository, so CodeAr
 <a name="unsupported-commands"></a>
 
 These npm commands are not supported by CodeArtifact repositories.
-
-****
 
 | Command | Description | Notes |
 | --- | --- | --- |

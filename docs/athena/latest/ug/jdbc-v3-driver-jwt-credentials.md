@@ -12,8 +12,6 @@ With this authentication type, you can use a JSON web token (JWT) obtained from 
 
 The credentials provider that will be used to authenticate requests to AWS. Set the value of this parameter to `JWT`.
 
-****
-
 | Parameter name | Alias | Parameter type | Default value | Value to use |
 | --- | --- | --- | --- | --- |
 | CredentialsProvider | AWSCredentialsProviderClass (deprecated) | Required | none | JWT |
@@ -22,8 +20,6 @@ The credentials provider that will be used to authenticate requests to AWS. Set 
 <a name="jdbc-v3-driver-jwt-web-identity-token"></a>
 
 The JWT token obtained from an external federated identity provider. This token will be used to authenticate with Athena.
-
-****
 
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
@@ -34,8 +30,6 @@ The JWT token obtained from an external federated identity provider. This token 
 
 The Amazon Resource Name (ARN) of the role to assume. For information about assuming roles, see [AssumeRole](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html) in the *AWS Security Token Service API Reference*.
 
-****
-
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
 | JwtRoleArn | role\_arn (deprecated) | Required | none |
@@ -45,8 +39,6 @@ The Amazon Resource Name (ARN) of the role to assume. For information about assu
 
 The name of the session when you use JWT credentials for authentication. The name can be any name that you choose.
 
-****
-
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
 | JwtRoleSessionName | role\_session\_name (deprecated) | Required | none |
@@ -55,8 +47,6 @@ The name of the session when you use JWT credentials for authentication. The nam
 <a name="jdbc-v3-driver-jwt-role-session-duration"></a>
 
 The duration, in seconds, of the role session. For more information, see [AssumeRoleWithWebIdentity](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRoleWithWebIdentity.html) in the *AWS Security Token Service API Reference*.
-
-****
 
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |

@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awse
 
 AWS Elemental MediaTailor provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="mediatailor-DescribeChannel"></a>[DescribeChannel](https://docs.aws.amazon.com/mediatailor/latest/apireference/channel-channelname.html) | Retrieve the channel with the specified channel name | Read |

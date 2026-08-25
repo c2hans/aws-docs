@@ -57,4 +57,4 @@ The AWS re:Post Private service has the following quotas:
 | Token refill rate for UntagResource API requests | Each supported Region: 10 | No | UntagResource throttle token refill rate per second. |
 | Token refill rate for UpdateSpace API requests | Each supported Region: 10 | No | UpdateSpace throttle token refill rate per second. |
 
-For more information, see [re:Post Private quotas](https://docs.aws.amazon.com//repostprivate/latest/caguide/quotas.html).
+For more information, see [re:Post Private quotas](https://docs.aws.amazon.com/repostprivate/latest/caguide/quotas.html).

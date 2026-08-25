@@ -33,7 +33,7 @@ For more information, see [Required permissions for using custom IAM policies to
 1. On the instances page, choose the instance alias. The instance alias is also your **instance name**, which appears in your Connect Customer URL. The following image shows the **Connect Customer virtual contact center instances** page, with a box around the instance alias.
 ![The Connect Customer virtual contact center instances page, the instance alias.](http://docs.aws.amazon.com/connect/latest/adminguide/images/instance.png)
 
-1. On the left navigation menu, choose **Cases** under the **Applications** section. If you don't see this option, it may not be available in your Region. For information about where Cases is available, see [Cases availability by Region](regions.md#cases_region).
+1. On the left navigation menu, choose **Cases** under the **Applications** section. If you don't see this option, it might not be available in your Region. For information about where Cases is available, see [Cases availability by Region](regions.md#cases_region).
 
 1. Choose **Enable cases** to get started.
 
@@ -61,7 +61,7 @@ After your cases domain is created, do the following:
 
 1. Optionally, [enable attachments](enable-attachments.md) across your Connect Customer instance. This step allows your agents to upload files to cases. For more information on the Files API, see the [StartAttachedFileUpload](https://docs.aws.amazon.com/connect/latest/APIReference/API_StartAttachedFileUpload.html) API documentation.
 **Note**
-Ensure that you have the `cases:CreateRelatedItem ` permission for your IAM entity. For more information on Cases permissions, see [Actions, resources, and condition keys for Connect Customer Cases](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonconnectcases.html).
+Make sure that you have the `cases:CreateRelatedItem ` permission for your IAM entity. For more information on Cases permissions, see [Actions, resources, and condition keys for Connect Customer Cases](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonconnectcases.html).
 
 1. Optionally, add the [Cases](cases-block.md) block to your flows. This block enables you to get, update, or create cases automatically.
 

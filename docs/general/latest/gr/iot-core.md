@@ -17,8 +17,8 @@ The following are the service endpoints and service quotas for this service.
 The following sections describe the service endpoints for AWS IoT Core.
 
 **Note**
-You can use these endpoints to perform the operations in the [AWS IoT API Reference](https://docs.aws.amazon.com/iot/latest/apireference/). The endpoints in the following sections are different from the device endpoints, which provide devices an MQTT publish/subscribe interface and a subset of the API operations. For more information about the data, credential access, and job management endpoints used by devices, see [AWS IoT device endpoints](https://docs.aws.amazon.com//iot/latest/developerguide/connect-to-iot.html#iot-device-endpoint-intro).
-For information about connecting to and using the AWS IoT endpoints, see [Connecting devices to AWS IoT](https://docs.aws.amazon.com//iot/latest/developerguide/connect-to-iot.html) in the *AWS IoT Developer Guide*.
+You can use these endpoints to perform the operations in the [AWS IoT API Reference](https://docs.aws.amazon.com/iot/latest/apireference/). The endpoints in the following sections are different from the device endpoints, which provide devices an MQTT publish/subscribe interface and a subset of the API operations. For more information about the data, credential access, and job management endpoints used by devices, see [AWS IoT device endpoints](https://docs.aws.amazon.com/iot/latest/developerguide/connect-to-iot.html#iot-device-endpoint-intro).
+For information about connecting to and using the AWS IoT endpoints, see [Connecting devices to AWS IoT](https://docs.aws.amazon.com/iot/latest/developerguide/connect-to-iot.html) in the *AWS IoT Developer Guide*.
 
 **Topics**
 + [AWS IoT Core - control plane endpoints](#iot-core-control-plane-endpoints)
@@ -62,7 +62,7 @@ The following table contains AWS Region-specific endpoints for AWS IoT Core - 
 ### AWS IoT Core - data plane endpoints
 <a name="iot-core-data-plane-endpoints"></a>
 
-The AWS IoT Core - data plane endpoints are specific to each AWS account and AWS Region. To find the AWS IoT Core - data plane endpoint for your AWS account and AWS Region, use the [**describe-endpoint**](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/describe-endpoint.html) CLI command shown here, or the [`DescribeEndpoint`](https://docs.aws.amazon.com//iot/latest/apireference/API_DescribeEndpoint.html) REST API.
+The AWS IoT Core - data plane endpoints are specific to each AWS account and AWS Region. To find the AWS IoT Core - data plane endpoint for your AWS account and AWS Region, use the [**describe-endpoint**](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/describe-endpoint.html) CLI command shown here, or the [`DescribeEndpoint`](https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeEndpoint.html) REST API.
 
 ```
 aws iot describe-endpoint --endpoint-type iot:Data-ATS
@@ -110,14 +110,14 @@ The following table contains generic representations of the AWS account-specific
 <a name="iot-core-credential-provider-endpoints"></a>
 
 **Note**
-If you are an existing user of AWS IoT Core credential provider and your endpoint was previously created, the endpoint likely only supports IPv4 address by default. For dual-stack support (to support both IPv4 and IPv6 connectivity) for your credential provider endpoint, contact [AWS Support](https://docs.aws.amazon.com//awssupport/latest/user/getting-started.html).
+If you are an existing user of AWS IoT Core credential provider and your endpoint was previously created, the endpoint likely only supports IPv4 address by default. For dual-stack support (to support both IPv4 and IPv6 connectivity) for your credential provider endpoint, contact [AWS Support](https://docs.aws.amazon.com/awssupport/latest/user/getting-started.html).
 New credential provider endpoints support both IPv4 and IPv6 (dual-stack) by default.
 To find out whether your endpoint currently supports IPv6, you can run the following command:
 **For Linux** – `dig +short AAAA {{account-specific-prefix}}.credentials.iot.{{aws-region}}.amazonaws.com`
 **For Windows** – `nslookup -type=AAAA {{account-specific-prefix}}.credentials.iot.{{aws-region}}.amazonaws.com`
 If this command returns no results, your endpoint does not currently support IPv6.
 
-The AWS IoT Core credential provider endpoints are specific to each AWS account and AWS Region. To find the credential provider endpoint for your AWS account and AWS Region, use the [**describe-endpoint**](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/describe-endpoint.html) CLI command shown here, or the [`DescribeEndpoint`](https://docs.aws.amazon.com//iot/latest/apireference/API_DescribeEndpoint.html) REST API.
+The AWS IoT Core credential provider endpoints are specific to each AWS account and AWS Region. To find the credential provider endpoint for your AWS account and AWS Region, use the [**describe-endpoint**](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/describe-endpoint.html) CLI command shown here, or the [`DescribeEndpoint`](https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeEndpoint.html) REST API.
 
 ```
 aws iot describe-endpoint --endpoint-type iot:CredentialProvider
@@ -160,7 +160,7 @@ The following table contains generic representations of the AWS account-specific
 ### AWS IoT FIPS endpoints
 <a name="iot-core-fips-endpoints"></a>
 
-AWS IoT provides endpoints that support the [Federal Information Processing Standard (FIPS) 140-2](https://aws.amazon.com//compliance/fips/). Choose the appropriate FIPS compliant endpoint to access AWS IoT features in your AWS Region from [FIPS Endpoints by Service](https://aws.amazon.com//compliance/fips/#FIPS_Endpoints_by_Service). For more information about the FIPS endpoints provided by AWS IoT, see [Connecting to AWS IoT FIPS endpoints](https://docs.aws.amazon.com//iot/latest/developerguide/iot-connect-fips.html).
+AWS IoT provides endpoints that support the [Federal Information Processing Standard (FIPS) 140-2](https://aws.amazon.com/compliance/fips/). Choose the appropriate FIPS compliant endpoint to access AWS IoT features in your AWS Region from [FIPS Endpoints by Service](https://aws.amazon.com/compliance/fips/#FIPS_Endpoints_by_Service). For more information about the FIPS endpoints provided by AWS IoT, see [Connecting to AWS IoT FIPS endpoints](https://docs.aws.amazon.com/iot/latest/developerguide/iot-connect-fips.html).
 
 ## Service quotas
 <a name="limits_iot"></a>
@@ -527,7 +527,7 @@ The limits listed below are per AWS Regions.
 | ListSubscriptions requests per second per client ID | AWS IoT Core restricts ListSubscriptions requests from the same account and client ID to 1 request per second. | 1 | 1 | No |
 | [`ListSubscriptions API TPS`](https://console.aws.amazon.com/servicequotas/home/services/iotcore/quotas/L-AB85397C) | The maximum number of ListSubscriptions API requests per second per account. | 100 | 100 | Yes |
 | [`SendDirectMessage API TPS`](https://console.aws.amazon.com/servicequotas/home/services/iotcore/quotas/L-889910A2) | The maximum number of SendDirectMessage API requests per second per account. | 20000 | 2000 | Yes |
-| [`Connection inactivity (keep-alive interval)`](https://console.aws.amazon.com/servicequotas/home/services/iotcore/quotas/L-E77027EF) | The default keep-alive interval is used when a client requests a keep-alive interval of zero or > 1200 seconds. If a client requests a keep-alive interval < 30 seconds but more than zero, the server treats the client as though it requested a keep-alive interval of 30 seconds. In VPC endpoints, MQTT keep alive periods can not exceed 230 seconds. | 1200 Seconds | 1200 Seconds | No |
+| [`Connection inactivity (keep-alive interval)`](https://console.aws.amazon.com/servicequotas/home/services/iotcore/quotas/L-E77027EF) | The default keep-alive interval is used when a client requests a keep-alive interval of zero or > 1200 seconds. If a client requests a keep-alive interval < 30 seconds but more than zero, the server treats the client as though it requested a keep-alive interval of 30 seconds. | 1200 Seconds | 1200 Seconds | No |
 | [`Inbound publish requests per second per account`](https://console.aws.amazon.com/servicequotas/home/services/iotcore/quotas/L-4B33E451) | Inbound publish requests counts all messages that IoT Core processes before routing them to the clients or rules engine. Ex: A single message published on reserved topic can result in publishing 3 additional messages for shadow update, documents and delta, hence counted as 4 requests; whereas on an unreserved topic like a/b is counted as 1 request. | 20000 | 2000 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/iotcore/quotas/L-4B33E451) |
 | [`MQTT payload size`](https://console.aws.amazon.com/servicequotas/home/services/iotcore/quotas/L-13573643) | The payload for every publish request can be no larger than 128 KB. AWS IoT Core rejects publish and connect requests larger than this size. | 128 Kilobytes | 128 Kilobytes | No |
 | [`Maximum MQTT5 Content Type size`](https://console.aws.amazon.com/servicequotas/home/services/iotcore/quotas/L-037A5A45) | The maximum size for MQTT5 Content Type (UTF-8 string). | 256 Bytes | 256 Bytes | No |
@@ -561,7 +561,7 @@ The limits listed below are per AWS Regions.
 | [`Topic size`](https://console.aws.amazon.com/servicequotas/home/services/iotcore/quotas/L-ECD9BEEF) | The topic passed to AWS IoT Core when sending a publish request can be no larger than 256 bytes of UTF-8 encoded characters. This excludes the first 3 mandatory segments for Basic Ingest topics ($AWS/rules/rule-name/). | 256 Bytes | 256 Bytes | No |
 | [`WebSocket connection duration`](https://console.aws.amazon.com/servicequotas/home/services/iotcore/quotas/L-3F401592) | The WebSocket connection lifetime is 24 hours. If the lifetime is exceeded, The WebSocket connection will be closed. | 86400 Seconds | 86400 Seconds | No |
 
-**\***Select AWS Regions: Europe (Stockholm), Middle East (Bahrain), Middle East (UAE), Europe (Paris), Asia Pacific (Hong Kong), AWS GovCloud (US-East), AWS GovCloud (US-West), US West (N. California), Canada (Central), China (Ningxia), Asia Pacific (Malaysia), Europe (Spain)
+**\***Select AWS Regions: Europe (Stockholm), Middle East (Bahrain), Middle East (UAE), Europe (Paris), Asia Pacific (Hong Kong), AWS GovCloud (US-East), AWS GovCloud (US-West), US West (N. California), Canada (Central), China (Ningxia), Asia Pacific (Malaysia), Europe (Spain), South America (São Paulo), Europe (Milan), Israel (Tel Aviv)
 
 ### AWS IoT Core credential provider limits and quotas
 <a name="credential-provider-limits"></a>

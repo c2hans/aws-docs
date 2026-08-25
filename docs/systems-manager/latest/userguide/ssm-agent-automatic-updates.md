@@ -15,8 +15,6 @@ SSM Agent on the Bottlerocket operating system can't be updated using the System
 **macOS version requirement**
 If an instance is running macOS version 11.0 (Big Sur) or later, the instance must have the SSM Agent version 3.1.941.0 or higher to run the AWS-UpdateSSMAgent document. If the instance is running a version of SSM Agent released before 3.1.941.0, update your SSM Agent to run the AWS-UpdateSSMAgent by running `brew update` and `brew upgrade amazon-ssm-agent` commands.
 
-****
-
 | Method | Details |
 | --- | --- |
 | Automated update on all managed nodes (Recommended) | You can configure all managed nodes in your AWS account to automatically check for and download new versions of SSM Agent. To do this, choose **Auto update SSM Agent** on the **Settings** tab in Fleet Manager, as described later in this topic.  |

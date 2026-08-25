@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/exam
 # Work with Amazon Simple Queue Service message queues
 <a name="examples-sqs-message-queues"></a>
 
-A *message queue* is the logical container used for sending messages reliably in Amazon Simple Queue Service. There are two types of queues: *standard* and *first-in, first-out* (FIFO). To learn more about queues and the differences between these types, see the [Amazon Simple Queue Service Developer Guide](https://docs.aws.amazon.com//AWSSimpleQueueService/latest/SQSDeveloperGuide/welcome.html).
+A *message queue* is the logical container used for sending messages reliably in Amazon Simple Queue Service. There are two types of queues: *standard* and *first-in, first-out* (FIFO). To learn more about queues and the differences between these types, see the [Amazon Simple Queue Service Developer Guide](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/welcome.html).
 
 This topic describes how to create, list, delete, and get the URL of an Amazon Simple Queue Service queue by using the AWS SDK for Java.
 

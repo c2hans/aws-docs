@@ -9,8 +9,6 @@ Amazon Q Business is no longer open to new customers. For capabilities similar t
 
 If you use the console to create your Amazon Q Business application, a web experience is created automatically and connected to your chosen data source.
 
-****
-
 | API action | API description | Relevant User Guide topic |
 | --- | --- | --- |
 | [CreateWebExperience](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateWebExperience.html) | Creates an Amazon Q Business web experience | [Creating a web experience](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/supported-exp-actions.html#create-experience) |

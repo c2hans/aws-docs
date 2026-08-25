@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsc
 
 AWS Control Catalog provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="controlcatalog-GetControl"></a>[GetControl](https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_GetControl.html) | Return details about a specific control | Read |

@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/getting-started-wor
 
 **Important**
 As a [best practice](best-practices.md#lock-away-credentials), we recommend you require your human users to use [temporary credentials](id_credentials_temp.md) when accessing AWS.
-Alternatively, you can manage your user identities, including your administrative user, with [AWS IAM Identity Center](https://docs.aws.amazon.com//singlesignon/latest/userguide/getting-started.html). We recommend you use IAM Identity Center to manage access to your accounts and permissions within those accounts. If you are using an external identity provider, you can also configure the access permissions for user identities in IAM Identity Center.
+Alternatively, you can manage your user identities, including your administrative user, with [AWS IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/getting-started.html). We recommend you use IAM Identity Center to manage access to your accounts and permissions within those accounts. If you are using an external identity provider, you can also configure the access permissions for user identities in IAM Identity Center.
 
 If your use case requires IAM users with programmatic access and long-term credentials, we recommend that you establish procedures to update access keys when needed. For more information, see [Update access keys](id-credentials-access-keys-update.md).
 
@@ -119,7 +119,7 @@ You can use this same process to give additional workloads programmatic access t
 
 1. Create an IAM user group named **AutomationGroup**, attach the AWS managed policy `PowerUserAccess` to the group, and then add the **Automation** user to the group.
 **Note**
-An *AWS managed policy* is a standalone policy that is created and administered by AWS. Each policy has its own Amazon Resource Name (ARN) that includes the policy name. For example, `arn:aws:iam::aws:policy/IAMReadOnlyAccess` is an AWS managed policy. For more information about ARNs, see [IAM ARNs](reference_identifiers.md#identifiers-arns). For a list of AWS managed policies for AWS services, see [AWS managed policies](https://docs.aws.amazon.com//aws-managed-policy/latest/reference/policy-list.html).
+An *AWS managed policy* is a standalone policy that is created and administered by AWS. Each policy has its own Amazon Resource Name (ARN) that includes the policy name. For example, `arn:aws:iam::aws:policy/IAMReadOnlyAccess` is an AWS managed policy. For more information about ARNs, see [IAM ARNs](reference_identifiers.md#identifiers-arns). For a list of AWS managed policies for AWS services, see [AWS managed policies](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/policy-list.html).
    + [aws iam create-group](https://docs.aws.amazon.com/cli/latest/reference/iam/create-group.html)
 
      ```

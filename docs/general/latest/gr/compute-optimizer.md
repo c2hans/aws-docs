@@ -48,7 +48,7 @@ The following are the service endpoints and service quotas for this service.
 |  AWS GovCloud (US-West) | us-gov-west-1 |  compute-optimizer-fips.us-gov-west-1.amazonaws.com  | HTTPS |
 
 **Note**
-AWS Compute Optimizer offers dual stack endpoints so that you can access the service using IPv4 and IPv6 requests. For more information, see [Dual stack endpoints](https://docs.aws.amazon.com//general/latest/gr/rande.html#dual-stack-endpoints).
+AWS Compute Optimizer offers dual stack endpoints so that you can access the service using IPv4 and IPv6 requests. For more information, see [Dual stack endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html#dual-stack-endpoints).
 
 ## Service quotas
 <a name="limits-compute-optimzier"></a>

@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/getting-started-red
 
 Using *least-privilege permissions* is an IAM best practice recommendation. The concept of least-privilege permissions is to grant users the permissions required to perform a task and no additional permissions. As you get set up, consider how you are going to support least-privilege permissions. The root user, the administrative user, and the emergency access IAM user have powerful permissions that aren't required for everyday tasks. While you are learning about AWS and testing out different services we recommend that you create at least one additional user in IAM Identity Center with lesser permissions that you can use in different scenarios. You can use IAM policies to define the actions that can be taken on specific resources under specific conditions and then connect to those resources with your lesser privileged account.
 
-If you are using IAM Identity Center, consider using IAM Identity Center permissions sets to get started. To learn more, see [Create a permission set](https://docs.aws.amazon.com//singlesignon/latest/userguide/howtocreatepermissionset.html) in the *IAM Identity Center User Guide*.
+If you are using IAM Identity Center, consider using IAM Identity Center permissions sets to get started. To learn more, see [Create a permission set](https://docs.aws.amazon.com/singlesignon/latest/userguide/howtocreatepermissionset.html) in the *IAM Identity Center User Guide*.
 
 If you aren't using IAM Identity Center, use IAM roles to define the permissions for different IAM entities. To learn more, see [IAM role creation](id_roles_create.md).
 

@@ -5,13 +5,14 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/using
 # Using CSV data
 <a name="using-CSV-data"></a>
 
- Neptune Analytics, like [Neptune Database](https://docs.aws.amazon.com//neptune/latest/userguide/bulk-load-tutorial-format.html), supports two csv formats for loading graph data: [csv](https://docs.aws.amazon.com//neptune/latest/userguide/bulk-load-tutorial-format-gremlin.html) and [opencypher](https://docs.aws.amazon.com//neptune/latest/userguide/bulk-load-tutorial-format-opencypher.html). Both are csv-based formats with a specified schema. A csv file must contain a header row and the column values. The remainder of the files are interpreted based on the corresponding header column. The header could contain predefined system column names and user-defined column names, annotated with predefined datatypes and cardinality.
+ Neptune Analytics, like [Neptune Database](https://docs.aws.amazon.com/neptune/latest/userguide/bulk-load-tutorial-format.html), supports two csv formats for loading graph data: [csv](https://docs.aws.amazon.com/neptune/latest/userguide/bulk-load-tutorial-format-gremlin.html) and [opencypher](https://docs.aws.amazon.com/neptune/latest/userguide/bulk-load-tutorial-format-opencypher.html). Both are csv-based formats with a specified schema. A csv file must contain a header row and the column values. The remainder of the files are interpreted based on the corresponding header column. The header could contain predefined system column names and user-defined column names, annotated with predefined datatypes and cardinality.
 
 ## Behavioral differences from Neptune csv (opencypher) format
 <a name="using-CSV-data-differences"></a>
 
 **Edge files**:
 +  The `~id` (`:ID`) column in `edge` (`relationship`) files in `CSV` (`opencypher`) format is not supported. It is ignored if provided in any of the `edge` (`relationship`) files.
++  If the `~label` (`:TYPE`) column is missing from an edge file, or if the `~label` value for a row is empty, the edge is assigned the default label `"edge"`. Unlike vertices, edges always have a label in Neptune Analytics.
 
 **Vertex files**:
 +  Only explicitly provided labels are associated with the vertices. If the label provided is empty, the vertex is added without a label. If a row contains just the vertex id without any labels or properties then the row is ignored, and no vertex is added. For more information about vertices, see [vertices](query-openCypher-data-model.md#query-openCypher-data-model-vertices).
@@ -45,7 +46,7 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/using
 **Important**
  The `dimension` must match the dimension of the embeddings in the vertex files.
 
- For more details of loading embeddings, refer to [vector-index](https://docs.aws.amazon.com//neptune-analytics/latest/userguide/vector-index.html).
+ For more details of loading embeddings, refer to [vector-index](https://docs.aws.amazon.com/neptune-analytics/latest/userguide/vector-index.html).
 
 ### Any type
 <a name="using-CSV-data-any-type"></a>

@@ -14,8 +14,6 @@ Create an AWS KMS Customer Master Key (CMK) using SSM automation document with p
 ## Change Type Details
 <a name="ct-1d84keiri1jhg-DAKc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1d84keiri1jhg |

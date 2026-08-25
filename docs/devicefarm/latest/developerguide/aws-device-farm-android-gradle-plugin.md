@@ -234,8 +234,8 @@ If you are using [device slots](how-to-purchase-device-slots.md), the device slo
 <a name="configuring-test-types-appium"></a>
 
 Device Farm provides support for Appium Java JUnit and TestNG for Android.
-+ [Appium (under Java (JUnit))](https://docs.aws.amazon.com//devicefarm/latest/developerguide/test-types-appium.html)
-+ [Appium (under Java (TestNG))](https://docs.aws.amazon.com//devicefarm/latest/developerguide/test-types-appium.html)
++ [Appium (under Java (JUnit))](https://docs.aws.amazon.com/devicefarm/latest/developerguide/test-types-appium.html)
++ [Appium (under Java (TestNG))](https://docs.aws.amazon.com/devicefarm/latest/developerguide/test-types-appium.html)
 
 You can choose `useTestNG()` or `useJUnit()`. `JUnit` is the default and does not need to be explicitly specified.
 

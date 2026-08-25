@@ -9,8 +9,6 @@ This is version 2.20 of the AWS Elemental Statmux documentation. This is the lat
 
 This guide describes how to install AWS Elemental Statmux software for the first time. These are the reference documents for each installation type.
 
-****
-
 | Installation type | Description |
 | --- | --- |
 | Node-locked licenses on AWS Elemental appliances | You received AWS Elemental Appliance edition hardware, which comes with the appropriate licenses already installed. To complete setup of each node, see the getting started guide that came in your product box or [Cabling Setup](https://docs.aws.amazon.com/elemental-onprem/latest/pdf/DOC-1991.pdf). If you're using AWS Elemental Conductor Live 3 to control your Statmux nodes, see [AWS Elemental Conductor Live 3 Installation Guide](https://docs.aws.amazon.com/elemental-cl3/latest/installguide) as well. |

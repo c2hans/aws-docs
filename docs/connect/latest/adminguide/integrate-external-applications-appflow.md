@@ -110,7 +110,7 @@ For more detailed information on data mappings, see [Object type mapping](https:
 ### Set up integrations to ingest your customer data from an external application
 <a name="integrate-ea-appflow-integ"></a>
 
-Once the data mapping set up is done for an external application, you will set up the Data source integration to ingest your customer data.
+After the data mapping set up is done for an external application, you will set up the Data source integration to ingest your customer data.
 
 1. Log into your AWS Management Console, select **Connect Customer**. and choose Customer Profiles under your connect instance alias.
 

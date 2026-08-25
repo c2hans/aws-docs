@@ -118,6 +118,8 @@ Your restore destination bucket must have versioning turned on. AWS Backup notif
       1. If you **Enter AWS KMS key ARN**, type in the ARN into the text box. Alternatively, choose **Create key**.
 
 1. In the **Restore role** pane, choose the IAM role that AWS Backup will assume for this restore.
+**Note**
+If role manager is enabled in your account, AWS Backup selects the default service role for you, and a **Customize** option is available. For more information, see [IAM role creation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html) in the *IAM User Guide*.
 
 1. Choose **Restore backup**. The **Restore jobs** pane appears. A message at the top of the page provides information about the restore job.
 

@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/producer-s
 Before you set up the C\+\+ producer SDK, ensure that you have the following prerequisites:
 + **Credentials:** In the sample code, you provide credentials by specifying a profile that you set up in your AWS credentials profile file. If you haven't already done so, first set up your credentials profile.
 
-  For more information, see [Set up AWS Credentials and Region for Development](https://docs.aws.amazon.com//sdk-for-java/v1/developer-guide/setup-credentials.html).
+  For more information, see [Set up AWS Credentials and Region for Development](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/setup-credentials.html).
 + **Certificate store integration:** The Kinesis Video Streams producer library must establish trust with the service it calls. This is done through validating the certificate authorities (CAs) in the public certificate store. On Linux-based models, this store is located in the `/etc/ssl`/ directory.
 
   Download the certificate from the following location to your certificate store:

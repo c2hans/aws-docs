@@ -12,7 +12,7 @@ Voice ID generates events for every transaction: enrollment, authentication, or 
 
 You can create an analytics pipeline for Voice ID authentication outcomes and detection of fraudsters in a watchlist by using EventBridge to monitor Voice ID events. Using the schema available in this topic, you can configure EventBridge rules to listen and filter for Voice ID events that are relevant, and then process them through Amazon Data Firehose to store in a data warehouse of your choice.
 
- For example, you may want near real-time tracking of Voice ID analysis. To do that, you can pull all the `Evaluate-Session` events, and get the `authenticationResult` and `fraudDetectionResult`.
+ For example, you might want near real-time tracking of Voice ID analysis. To do that, you can pull all the `Evaluate-Session` events, and get the `authenticationResult` and `fraudDetectionResult`.
 
 Events are emitted on a [best effort](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-service-event.html) basis.
 

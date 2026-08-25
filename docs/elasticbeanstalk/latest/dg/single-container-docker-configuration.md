@@ -55,7 +55,7 @@ Valid keys and values for the `Dockerrun.aws.json v1` file include the following
 
 **Authentication**
 (Required only for private repositories) Specifies the Amazon S3 object storing the `.dockercfg` file.
-See [Authenticating with image repositoriesUsing AWS Secrets Manager](docker-configuration.remote-repo.md#docker-configuration.remote-repo.dockerrun-aws) in *Using images from a private repository* later in this chapter.
+See [Authenticating with image repositories](docker-configuration.remote-repo.md#docker-configuration.remote-repo.dockerrun-aws) in *Using images from a private repository* later in this chapter.
 
 **Image**
 Specifies the Docker base image on an existing Docker repository from which you're building a Docker container. Specify the value of the **Name** key in the format {{<organization>/<image name>}} for images on Docker Hub, or {{<site>/<organization name>/<image name>}} for other sites.

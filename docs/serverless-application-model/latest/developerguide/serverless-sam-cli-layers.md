@@ -38,8 +38,6 @@ When you invoke your function using one of the `sam local` commands, the layers 
 
 The following table shows the default cache directory locations for different operating systems.
 
-****
-
 | OS | Location |
 | --- | --- |
 | Windows 7 | C:\\Users\\<user>\\AppData\\Roaming\\AWS SAM |

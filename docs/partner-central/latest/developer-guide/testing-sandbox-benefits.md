@@ -180,6 +180,8 @@ For example:
 ## Additional testing notes
 <a name="additional-testing-notes"></a>
 
+Note the following when testing in the sandbox:
+
 1. To test other actions, set `"catalog": "Sandbox"` in the payload.
 
 1. The Benefit IDs in Sandbox catalog and AWS catalog are different. Make `GetBenefit` API call with `"catalog": "Sandbox"` to get Benefit Identifier in the Sandbox.

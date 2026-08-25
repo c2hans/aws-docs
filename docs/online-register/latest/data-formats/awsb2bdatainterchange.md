@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsb
 
 AWS B2B Data Interchange provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="b2bi-GetCapability"></a>[GetCapability](https://docs.aws.amazon.com/b2bi/latest/APIReference/API_GetCapability.html) | Get a capability | Read |

@@ -53,8 +53,6 @@ To initialize AWS Elastic Disaster Recovery manually, create the following IAM r
 
 Creation of each role must include the following parameters:
 
-****
-
 | Role name | Path | Trusted Entity |
 | --- | --- | --- |
 |  **AWSElasticDisasterRecoveryAgentRole**  | /service-role/ | drs.amazonaws.com |

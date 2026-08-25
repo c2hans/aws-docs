@@ -43,7 +43,7 @@ You can use the dropdown list to indicate which resource totals you want to view
 The **Evaluate your AWS resource configuration using Config rules** message may appear on the **Dashboard** for the following reasons:
 You haven't set up AWS Config Rules for your AWS account. You can choose **Add rule** to go to the **Rules** page.
 AWS Config is still evaluating your resources against your rules. You can refresh the page to see the latest evaluation results.
- AWS Config evaluated your resources against your rules and did not find any resources in scope. You can specify the resources for AWS Config to record in the **Settings** page. For more information, see [Recording AWS Resources with AWS ConfigConsiderations](select-resources.md).
+ AWS Config evaluated your resources against your rules and did not find any resources in scope. You can specify the resources for AWS Config to record in the **Settings** page. For more information, see [Recording AWS Resources with AWS Config](select-resources.md).
 
 ## AWS Config Usage and Success Metrics
 <a name="aws-config-dashboard-metrics"></a>

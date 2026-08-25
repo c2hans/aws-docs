@@ -41,7 +41,7 @@ The minimum healthy instance type:
 + FLEET\_PERCENT: The minimum number of healthy instance as a percentage of the total number of instance in the deployment.
 In an example of nine instance, if a HOST\_COUNT of six is specified, deploy to up to three instances at a time. The deployment is successful if six or more instances are deployed to successfully. Otherwise, the deployment fails. If a FLEET\_PERCENT of 40 is specified, deploy to up to five instance at a time. The deployment is successful if four or more instance are deployed to successfully. Otherwise, the deployment fails.
 In a call to `GetDeploymentConfig`, CodeDeployDefault.OneAtATime returns a minimum healthy instance type of MOST\_CONCURRENCY and a value of 1. This means a deployment to only one instance at a time. (You cannot set the type to MOST\_CONCURRENCY, only to HOST\_COUNT or FLEET\_PERCENT.) In addition, with CodeDeployDefault.OneAtATime, AWS CodeDeploy attempts to ensure that all instances but one are kept in a healthy state during the deployment. Although this allows one instance at a time to be taken offline for a new deployment, it also means that if the deployment to the last instance fails, the overall deployment is still successful.
-For more information, see [AWS CodeDeploy Instance Health](https://docs.aws.amazon.com//codedeploy/latest/userguide/instances-health.html) in the *AWS CodeDeploy User Guide*.
+For more information, see [AWS CodeDeploy Instance Health](https://docs.aws.amazon.com/codedeploy/latest/userguide/instances-health.html) in the *AWS CodeDeploy User Guide*.
 *Required*: Yes
 *Type*: String
 *Allowed values*: `HOST_COUNT | FLEET_PERCENT`

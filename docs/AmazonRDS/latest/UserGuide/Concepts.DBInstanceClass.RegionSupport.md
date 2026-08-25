@@ -43,8 +43,6 @@ You can use the [Amazon RDS Pricing](https://aws.amazon.com/rds/pricing/) page t
 
 You can use the AWS CLI to determine which DB instance classes are supported for specific DB engines and DB engine versions in an AWS Region. The following table shows the valid DB engine values.
 
-****
-
 | Engine names | Engine values in CLI commands | More information about versions |
 | --- | --- | --- |
 | Db2 | `db2-ae`<br />`db2-ce`<br />`db2-se` | [Db2 on Amazon RDS versions](Db2.Concepts.VersionMgmt.md) |
@@ -54,7 +52,7 @@ You can use the AWS CLI to determine which DB instance classes are supported for
 | Oracle | `oracle-ee`<br />`oracle-se2` | [*Amazon RDS for Oracle Release Notes*](https://docs.aws.amazon.com/AmazonRDS/latest/OracleReleaseNotes/Welcome.html) |
 | PostgreSQL | `postgres` | [Available PostgreSQL database versions](PostgreSQL.Concepts.General.DBVersions.md) |
 
-For information about AWS Region names, see [AWS RegionsAvailability Zones](Concepts.RegionsAndAvailabilityZones.md#Concepts.RegionsAndAvailabilityZones.Regions).
+For information about AWS Region names, see [AWS Regions](Concepts.RegionsAndAvailabilityZones.md#Concepts.RegionsAndAvailabilityZones.Regions).
 
 The following examples demonstrate how to determine DB instance class support in an AWS Region using the [describe-orderable-db-instance-options](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-orderable-db-instance-options.html) AWS CLI command.
 

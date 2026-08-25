@@ -14,8 +14,6 @@ Deploy the AMS Resource Scheduler solution in the account. The AMS Resource Sche
 ## Change Type Details
 <a name="ct-0ywnhc8e5k9z5-DASd-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-0ywnhc8e5k9z5 |

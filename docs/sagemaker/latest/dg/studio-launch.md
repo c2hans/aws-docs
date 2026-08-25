@@ -30,7 +30,7 @@ The process to navigate to Studio Classic from the Amazon SageMaker AI Console d
 ### Prerequisite
 <a name="studio-launch-console-prerequisites"></a>
 
- To complete this procedure, you must onboard to a domain by following the steps in [Onboard to Amazon SageMaker AI domain](https://docs.aws.amazon.com//sagemaker/latest/dg/gs-studio-onboard.html).
+ To complete this procedure, you must onboard to a domain by following the steps in [Onboard to Amazon SageMaker AI domain](https://docs.aws.amazon.com/sagemaker/latest/dg/gs-studio-onboard.html).
 
 ### Launch Studio Classic if Studio is your default experience
 <a name="studio-launch-console-updated"></a>
@@ -116,9 +116,9 @@ You can use the AWS Command Line Interface (AWS CLI) to launch Amazon SageMaker 
  **Prerequisites**
 
  Before you begin, complete the following prerequisites:
-+  Onboard to Amazon SageMaker AI domain. For more information, see [Onboard to Amazon SageMaker AI domain](https://docs.aws.amazon.com//sagemaker/latest/dg/gs-studio-onboard.html).
-+  Update the AWS CLI by following the steps in [Installing the current AWS CLI Version](https://docs.aws.amazon.com//cli/latest/userguide/install-cliv1.html#install-tool-bundled).
-+  From your local machine, run `aws configure` and provide your AWS credentials. For information about AWS credentials, see [Understanding and getting your AWS credentials](https://docs.aws.amazon.com//general/latest/gr/aws-sec-cred-types.html).
++  Onboard to Amazon SageMaker AI domain. For more information, see [Onboard to Amazon SageMaker AI domain](https://docs.aws.amazon.com/sagemaker/latest/dg/gs-studio-onboard.html).
++  Update the AWS CLI by following the steps in [Installing the current AWS CLI Version](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv1.html#install-tool-bundled).
++  From your local machine, run `aws configure` and provide your AWS credentials. For information about AWS credentials, see [Understanding and getting your AWS credentials](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html).
 
 The following code snippet demonstrates how to launch Amazon SageMaker Studio Classic from the AWS CLI using a presigned domain URL. For more information, see [create-presigned-domain-url](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sagemaker/create-presigned-domain-url.html).
 

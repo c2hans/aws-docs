@@ -15,7 +15,7 @@ This section tells you how to deploy Customizations for AWS Control Tower (CfCT)
 
  Create a repository within your GitHub account, the default name used in the template is `custom-control-tower-configuration`. Consider making the target repository *private*. You'll define your customizations in a `yaml` file called `manifest.yaml` in the [ deployment folder](https://github.com/aws-solutions/aws-control-tower-customizations/tree/main/deployment) of the CfCT repository.
 
-The [*CfCT customization guide*](https://docs.aws.amazon.com//controltower/latest/userguide/cfct-customizations-dev-guide.html) provides detailed guidance on creating a `manifest.yaml` to configure your customizations.
+The [*CfCT customization guide*](https://docs.aws.amazon.com/controltower/latest/userguide/cfct-customizations-dev-guide.html) provides detailed guidance on creating a `manifest.yaml` to configure your customizations.
 
 ## Create the GitHub conection
 <a name="create-github-cfct-connection"></a>

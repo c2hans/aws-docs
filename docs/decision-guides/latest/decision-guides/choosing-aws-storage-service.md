@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/decision-guides/latest/decision-guides/c
 | --- |--- |
 | **Purpose** | Help determine which AWS storage service is the best fit for your organization. |
 | **Last updated** | June 26, 2024 |
-| **Covered services** |  +  [Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/GetStartedWithS3.html) <br />+  [Amazon EBS](https://docs.aws.amazon.com/ebs/latest/userguide/what-is-ebs.html) <br />+  [Amazon EFS](https://docs.aws.amazon.com/efs/latest/ug/getting-started.html) <br />+  [Amazon FSx](https://docs.aws.amazon.com/fsx/latest/WindowsGuide/getting-started.html) <br />+  [Amazon File Cache](https://docs.aws.amazon.com/fsx/latest/FileCacheGuide/getting-started.html) <br />+  [AWS Backup](https://docs.aws.amazon.com/aws-backup/latest/devguide/getting-started.html) <br />+  [AWS DataSync](https://docs.aws.amazon.com/datasync/latest/userguide/getting-started.html) <br />+  [AWS Snow Family](https://docs.aws.amazon.com/snowball/) <br />+  [AWS Storage Gateway](https://docs.aws.amazon.com//storagegateway/) <br />+  [AWS Transfer Family](https://docs.aws.amazon.com/transfer/latest/userguide/getting-started.html)   |
+| **Covered services** |  +  [Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/GetStartedWithS3.html) <br />+  [Amazon EBS](https://docs.aws.amazon.com/ebs/latest/userguide/what-is-ebs.html) <br />+  [Amazon EFS](https://docs.aws.amazon.com/efs/latest/ug/getting-started.html) <br />+  [Amazon FSx](https://docs.aws.amazon.com/fsx/latest/WindowsGuide/getting-started.html) <br />+  [Amazon File Cache](https://docs.aws.amazon.com/fsx/latest/FileCacheGuide/getting-started.html) <br />+  [AWS Backup](https://docs.aws.amazon.com/aws-backup/latest/devguide/getting-started.html) <br />+  [AWS DataSync](https://docs.aws.amazon.com/datasync/latest/userguide/getting-started.html) <br />+  [AWS Snow Family](https://docs.aws.amazon.com/snowball/) <br />+  [AWS Storage Gateway](https://docs.aws.amazon.com/storagegateway/) <br />+  [AWS Transfer Family](https://docs.aws.amazon.com/transfer/latest/userguide/getting-started.html)   |
 
 ## Introduction
 <a name="intro"></a>
@@ -151,8 +151,6 @@ Now that you know the criteria you should use to evaluate your storage options, 
 
 The following table highlights which storage options are optimized for which circumstances. Use it to help determine the one that is the best fit for your use case.
 
-****
-
 | Storage type | What is it optimized for? | Storage services or tools |
 | --- |--- |--- |
 | Block | Applications requiring low-latency, high-performance durable storage attached to single Amazon EC2 instances or containers, such as databases and general-purpose local instance storage. | [Amazon EBS](https://docs.aws.amazon.com/ebs/latest/userguide/what-is-ebs.html)<br />[ Amazon EC2 instance store ](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) |
@@ -164,8 +162,6 @@ The following table highlights which storage options are optimized for which cir
 | Hybrid/Edge | Deliver low-latency data to on-premises applications and providing on-premises applications access to cloud-backed storage. | [AWS Storage Gateway Tape Gateway](https://docs.aws.amazon.com/storagegateway/latest/tgw/WhatIsStorageGateway.html)<br />[AWS Storage Gateway Volume Gateway](https://docs.aws.amazon.com/storagegateway/latest/vgw/WhatIsStorageGateway.html) |
 
 The following table provides a detailed look at your online and offline options.
-
-****
 
 | Migration options | When speed is the priority | When bandwidth is important | Storage services or tools |
 | --- |--- |--- |--- |

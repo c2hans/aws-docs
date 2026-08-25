@@ -22,8 +22,6 @@ If you make this user a read/write member, a dialog box is displayed, containing
 
 To use code to change the access role of an environment member, call the AWS Cloud9 update environment membership operation, as follows.
 
-****
-
 |  |  |
 | --- |--- |
 | AWS CLI |  [update-environment-membership](https://docs.aws.amazon.com/cli/latest/reference/cloud9/update-environment-membership.html)  |

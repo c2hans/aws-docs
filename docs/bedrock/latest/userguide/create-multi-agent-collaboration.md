@@ -27,7 +27,7 @@ You can create multi-agent collaboration in the Amazon Bedrock console, using th
 #### [ Console ]
 
 **Step 1: Create collaborator agents**
-+ Follow instructions to [Create and configure an agent](https://docs.aws.amazon.com//bedrock/latest/userguide/agents-create.html). Make sure to configure each collaborator agent to perform a specific task.
++ Follow instructions to [Create and configure an agent](https://docs.aws.amazon.com/bedrock/latest/userguide/agents-create.html). Make sure to configure each collaborator agent to perform a specific task.
 
 **Step 2: Create a new supervisor agent or assign supervisor role to an existing agent**
 
@@ -85,7 +85,7 @@ You can create multi-agent collaboration in the Amazon Bedrock console, using th
 Complete the following steps to create a multi-agent collaboration team,
 
 **Step 1: Create collaborator agents**
-+ Follow instructions to [Create and configure an agent](https://docs.aws.amazon.com//bedrock/latest/userguide/agents-create.html). Make sure to configure each collaborator agent to perform a specific task.
++ Follow instructions to [Create and configure an agent](https://docs.aws.amazon.com/bedrock/latest/userguide/agents-create.html). Make sure to configure each collaborator agent to perform a specific task.
 
 **Step 2: Create a new supervisor agent or assign supervisor role to an existing agent**
 + To create a new supervisor agent, send a [CreateAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateAgent.html) request (see link for request and response formats and field details) with an [Agents for Amazon Bedrock build-time endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#bra-bt).
@@ -93,11 +93,9 @@ Complete the following steps to create a multi-agent collaboration team,
   To assign a supervisor role to an existing agent, send an [UpdateAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_UpdateAgent.html) request with an [Agents for Amazon Bedrock build-time endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#bra-bt). Because all fields will be overwritten, include both fields that you want to update as well as fields that you want to keep the same.
 
   You must minimally include the following fields:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/create-multi-agent-collaboration.html)
 
   The following fields are optional:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/create-multi-agent-collaboration.html)
 
   The response returns an [CreateAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Agent.html) object that contains details about your newly created supervisor agent. If your agent fails to be created, the [CreateAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Agent.html) object in the response returns a list of `failureReasons` and a list of `recommendedActions` for you to troubleshoot.
@@ -106,7 +104,6 @@ Complete the following steps to create a multi-agent collaboration team,
 + To associate collaborator agents with the supervisor agent, send a `AssociateAgentCollaborator` request (see link for request and response formats and field details) with an [Agents for Amazon Bedrock build-time endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#bra-bt).
 
   You must minimally include the following fields:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/create-multi-agent-collaboration.html)
 
 **Step 4: Prepare and test your multi-agent collaborator team**

@@ -49,8 +49,6 @@ For existing SPICE datasets that contain fields that can be converted to the `De
 
 The following table lists data types that are supported when using the following data sources with Amazon Quick Sight.
 
-****
-
 | Database engine or source | Numeric data types | String data types | Datetime data types | Boolean data types |
 | --- | --- | --- | --- | --- |
 |  **Amazon Athena, Presto, Starburst, Trino** |  +  bigint <br />+  decimal <br />+  double <br />+  integer <br />+  real <br />+  smallint <br />+  tinyint   |  +  char <br />+  varchar   |  +  date <br />+  timestamp   |  +  boolean   |

@@ -37,7 +37,7 @@ Follow these steps to run a Detective Investigation from the **Investigations pa
 
       1. From the **Select resource type** drop-down list, choose AWS role or AWS user.
 
-      1. Enter the **Resource ARN** of the IAM resource. For more details about Resource ARNs, see [Amazon Resource Names (ARNs)](https://docs.aws.amazon.com//IAM/latest/UserGuide/reference-arns.html) in the IAM User Guide.
+      1. Enter the **Resource ARN** of the IAM resource. For more details about Resource ARNs, see [Amazon Resource Names (ARNs)](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference-arns.html) in the IAM User Guide.
 
    1. `Find a resource to investigate from the Search page` – You can search all of your IAM resources from the Detective **Search** page.
 
@@ -56,7 +56,7 @@ Follow these steps to run a Detective Investigation from the **Investigations pa
 ------
 #### [ API ]
 
-To run an investigation programmatically, use the [StartInvestigation](https://docs.aws.amazon.com//detective/latest/APIReference/API_StartInvestigation.html) operation of the Detective API. To run an investigation using the AWS Command Line Interface (AWS CLI) run the [start-investigation](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/detective/start-investigation.html) command.
+To run an investigation programmatically, use the [StartInvestigation](https://docs.aws.amazon.com/detective/latest/APIReference/API_StartInvestigation.html) operation of the Detective API. To run an investigation using the AWS Command Line Interface (AWS CLI) run the [start-investigation](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/detective/start-investigation.html) command.
 
 In your request, use these parameters to run an investigation in Detective:
 + `GraphArn` – Specify the Amazon Resource Name (ARN) of the behavior graph.

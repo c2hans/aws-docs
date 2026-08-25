@@ -111,8 +111,6 @@ This is especially important if the service role you use for your pipelines was 
 
 The following table shows when support was added for other AWS services.
 
-****
-
 | AWS service | CodePipeline support date |
 | --- | --- |
 | CodePipeline invoke action support added. See [Service role policy permissions for the CodePipeline invoke action](action-reference-PipelineInvoke.md#action-reference-PipelineInvoke-permissions-action). | March 14, 2025 |

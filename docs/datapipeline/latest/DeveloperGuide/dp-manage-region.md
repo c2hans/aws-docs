@@ -50,8 +50,6 @@ The following table lists the regions that you can choose and the associated reg
 **Note**
 The following list includes regions in which AWS Data Pipeline can orchestrate workflows and launch Amazon EMR or Amazon EC2 resources. AWS Data Pipeline may not be supported in these regions. For information about regions in which AWS Data Pipeline is supported, see [AWS Regions and Endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html#datapipeline_region).
 
-****
-
 | Region Name | Region Code |
 | --- | --- |
 | US East (N. Virginia) | us-east-1 |

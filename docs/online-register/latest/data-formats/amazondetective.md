@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon Detective provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="detective-BatchGetGraphMemberDatasources"></a>[BatchGetGraphMemberDatasources](https://docs.aws.amazon.com/detective/latest/APIReference/API_BatchGetGraphMemberDatasources.html) | Retrieve the datasource package history for the specified member accounts in a behavior graph managed by this account | Read |

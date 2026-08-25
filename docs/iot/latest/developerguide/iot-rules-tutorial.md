@@ -25,21 +25,21 @@ This tutorial shows how to republish an MQTT message received from the weather s
 +
 
 **[Tutorial: Sending an Amazon SNS notification](iot-sns-rule.md)**
-This tutorial shows how to send an SNS message when a value from a weather sensor device exceeds a specific value. It builds on the concepts presented in the previous tutorial and adds how to work with another AWS service, the [Amazon Simple Notification Service](https://docs.aws.amazon.com//sns/latest/dg/welcome.html) (Amazon SNS).
+This tutorial shows how to send an SNS message when a value from a weather sensor device exceeds a specific value. It builds on the concepts presented in the previous tutorial and adds how to work with another AWS service, the [Amazon Simple Notification Service](https://docs.aws.amazon.com/sns/latest/dg/welcome.html) (Amazon SNS).
 
-  If you're new to Amazon SNS, review its [Getting started](https://docs.aws.amazon.com//sns/latest/dg/sns-getting-started.html) exercises before you start this tutorial.
+  If you're new to Amazon SNS, review its [Getting started](https://docs.aws.amazon.com/sns/latest/dg/sns-getting-started.html) exercises before you start this tutorial.
 +
 
 **[Tutorial: Storing device data in a DynamoDB table](iot-ddb-rule.md)**
-This tutorial shows how to store the data from the weather sensor devices in a database table. It uses the rule query statement and substitution templates to format the message data for the destination service, [Amazon DynamoDB](https://docs.aws.amazon.com//amazondynamodb/latest/developerguide/Introduction.html).
+This tutorial shows how to store the data from the weather sensor devices in a database table. It uses the rule query statement and substitution templates to format the message data for the destination service, [Amazon DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html).
 
-  If you're new to DynamoDB, review its [Getting started](https://docs.aws.amazon.com//amazondynamodb/latest/developerguide/GettingStartedDynamoDB.html) exercises before you start this tutorial.
+  If you're new to DynamoDB, review its [Getting started](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GettingStartedDynamoDB.html) exercises before you start this tutorial.
 +
 
 **[Tutorial: Formatting a notification by using an AWS Lambda function](iot-lambda-rule.md)**
-This tutorial shows how to call a Lambda function to reformat the device data and then send it as a text message. It adds a Python script and AWS SDK functions in an [AWS Lambda](https://docs.aws.amazon.com//lambda/latest/dg/welcome.html) function to format with the message payload data from the weather sensor devices and send a text message.
+This tutorial shows how to call a Lambda function to reformat the device data and then send it as a text message. It adds a Python script and AWS SDK functions in an [AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html) function to format with the message payload data from the weather sensor devices and send a text message.
 
-  If you're new to Lambda, review its [Getting started](https://docs.aws.amazon.com//lambda/latest/dg/getting-started.html) exercises before you start this tutorial.
+  If you're new to Lambda, review its [Getting started](https://docs.aws.amazon.com/lambda/latest/dg/getting-started.html) exercises before you start this tutorial.
 
 **AWS IoT rule overview**
 All of these tutorials create AWS IoT rules.

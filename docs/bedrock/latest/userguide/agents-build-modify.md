@@ -26,7 +26,7 @@ After you’ve created your agent, you can optionally use *Conversational Builde
 
 **Configure and invoke an agent dynamically at runtime**
 
-You can configure and invoke an inline Amazon Bedrock agent dynamically at runtime using [InvokeInlineAgent](https://docs.aws.amazon.com//bedrock/latest/APIReference/API_agent-runtime_InvokeInlineAgent.html) API. Using an inline agent provides you with flexibility to specify your agent capabilities like foundation models, instructions, action groups, guardrails, and knowledge bases at the same time you invoke your agent. You do not need to pre-define agent capabilities before you can use it. For more information, see [Configure an inline agent at runtime](agents-create-inline.md).
+You can configure and invoke an inline Amazon Bedrock agent dynamically at runtime using [InvokeInlineAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeInlineAgent.html) API. Using an inline agent provides you with flexibility to specify your agent capabilities like foundation models, instructions, action groups, guardrails, and knowledge bases at the same time you invoke your agent. You do not need to pre-define agent capabilities before you can use it. For more information, see [Configure an inline agent at runtime](agents-create-inline.md).
 
 **Use pre-built templates to jumpstart the use of agents for your use case**
 

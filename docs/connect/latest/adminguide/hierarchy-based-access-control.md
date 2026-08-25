@@ -54,11 +54,11 @@ Each key represents the ID of a given hierarchy group in a specific level of the
 
 1. Enforce hierarchy-based access control based on **the user's hierarchy**
 
-   This option ensures that the user being given access can only manage users that belong to this hierarchy. For example, enabling this configuration for a given user enables them to manage other users that either belong to their hierarchy group or a child hierarchy group.
+   This option makes sure that the user being given access can only manage users that belong to this hierarchy. For example, enabling this configuration for a given user enables them to manage other users that either belong to their hierarchy group or a child hierarchy group.
 
 1. Enforce hierarchy-based access control based on **a specific hierarchy **
 
-   This option ensures that the user being given access can only manage users that belong to the hierarchy defined in the security profile. For example, enabling this configuration for a given user enables them to manage other users that either belong to the hierarchy group specified in the security profile or a child hierarchy group.
+   This option makes sure that the user being given access can only manage users that belong to the hierarchy defined in the security profile. For example, enabling this configuration for a given user enables them to manage other users that either belong to the hierarchy group specified in the security profile or a child hierarchy group.
 
 ## Configuration limitations
 <a name="hierarchy-based-access-control-config-limitations"></a>
@@ -75,10 +75,10 @@ Service linked roles are required to configure hierarchy-based access control. I
 <a name="hierarchy-based-access-control-best-practices"></a>
 + Review the [AWS shared responsibility model](https://aws.amazon.com/compliance/shared-responsibility-model/).
 
-  Applying hierarchy-based access control is an advanced configuration feature that is supported by Connect Customer and that follows the AWS shared responsibility model. It is important to ensure that you are correctly configuring your instance to comply with your desired authorization needs.
-+ Ensure that you have enabled at least *view* permissions for the resources that you enable hierarchy-based access control for.
+  Applying hierarchy-based access control is an advanced configuration feature that is supported by Connect Customer and that follows the AWS shared responsibility model. It is important to make sure that you are correctly configuring your instance to comply with your desired authorization needs.
++ Make sure that you have enabled at least *view* permissions for the resources that you enable hierarchy-based access control for.
 
-  This will ensure that you avoid permission inconsistencies that result in denied access requests. Hierarchy-based access controls are enabled at the resource level, which means that each resource can be restricted independently.
+  This will make sure that you avoid permission inconsistencies that result in denied access requests. Hierarchy-based access controls are enabled at the resource level, which means that each resource can be restricted independently.
 + Carefully review the permissions that are granted when hierarchy-based access control is enforced.
 
   For example, enabling hierarchy restricted access to users and view/edit permissions security profiles would allow a user to create/update a security profile with privileges that supersede the intended user access control settings.
@@ -90,4 +90,4 @@ Service linked roles are required to configure hierarchy-based access control. I
 + Disable access to the following functionality when you apply hierarchy-based access controls in the Connect Customer admin website.
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/hierarchy-based-access-control.html)
 
-  If you do not disable access to these resources, users with hierarchy-based access controls on a particular resource that view these pages in the Connect Customer admin website may see an unrestricted list of users. For more information about how to manage permissions, see [List of security profile permissions](security-profile-list.md).
+  If you do not disable access to these resources, users with hierarchy-based access controls on a particular resource that view these pages in the Connect Customer admin website might see an unrestricted list of users. For more information about how to manage permissions, see [List of security profile permissions](security-profile-list.md).

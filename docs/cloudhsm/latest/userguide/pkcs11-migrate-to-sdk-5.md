@@ -19,8 +19,6 @@ Review these breaking changes and update your application in your development en
 ### Wrap mechanisms have changed
 <a name="w2aac25c19c15b9b5"></a>
 
-****
-
 | Client SDK 3 mechanism | Equivalent Client SDK 5 mechanism |
 | --- | --- |
 | `CKM_AES_KEY_WRAP` | `CKM_CLOUDHSM_AES_KEY_WRAP_PKCS5_PAD` |

@@ -14,8 +14,6 @@ Update an existing schedule to be used in AMS Resource Scheduler.
 ## Change Type Details
 <a name="ct-3u61cd4edns0x-MASu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-3u61cd4edns0x |

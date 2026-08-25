@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/transform-C
 
 Review the following information for details about current and past releases of the Amazon Q Developer command line transformation tool. The table includes the download link, release date, and release notes for each version.
 
-****
-
 | Version | Release date | Release notes |
 | --- | --- | --- |
 |  [1.2.2 (latest)](https://desktop-release.codewhisperer.us-east-1.amazonaws.com/amzn_qct_cli/amzn_qct_cli-1.2.2.zip)  | February 26, 2026 | Added promotional banner for AWS Transform custom to QCT CLI. Banner display on transform command execution and help text. New --skip-banner flag to suppress banner output. |

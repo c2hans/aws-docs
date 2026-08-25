@@ -388,7 +388,7 @@ You can use IAM policies to restrict who can create or modify Neptune clusters w
 
 ------
 
-More about the `rds:PublicAccessEnabled` IAM condition key: [ Amazon RDS Service Authorization Reference](https://docs.aws.amazon.com//service-authorization/latest/reference/list_amazonrds.html#amazonrds-rds_PubliclyAccessible)
+More about the `rds:PublicAccessEnabled` IAM condition key: [ Amazon RDS Service Authorization Reference](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonrds.html#amazonrds-rds_PubliclyAccessible)
 
 ## CloudFormation support
 <a name="neptune-public-endpoints-cloudformation"></a>

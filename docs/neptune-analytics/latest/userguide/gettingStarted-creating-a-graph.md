@@ -37,7 +37,7 @@ ec2:DescribeVpcEndpoints
 ec2:DescribeVpcs
 ec2:ModifyVpcEndpoint
 route53:AssociateVPCWithHostedZone
- For more information about required permissions, see [ Actions defined by Neptune Analytics](https://docs.aws.amazon.com//service-authorization/latest/reference/list_amazonneptuneanalytics.html#amazonneptuneanalytics-actions-as-permissions).
+ For more information about required permissions, see [ Actions defined by Neptune Analytics](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonneptuneanalytics.html#amazonneptuneanalytics-actions-as-permissions).
 ![Image showing the AWS console, with the available options and settings configurations.](http://docs.aws.amazon.com/neptune-analytics/latest/userguide/images/getting-started/gettingStartedStep7.png)
 
 1.  Additionally, you can select vector search configuration for the graph. For more information on vector search configuration, see [Vector indexing](vector-index.md).
@@ -81,7 +81,7 @@ aws neptune-graph list-graphs
 ------
 #### [ CloudFormation ]
 
- Instead of using the console to create your Neptune graph, you can use CloudFormation to provision AWS resources by treating infrastructure as code. To help you organize your AWS resources into smaller and more manageable units, you can use the CloudFormation nested stack functionality. For more information, see [ Creating a stack on the AWS CloudFormation console](https://docs.aws.amazon.com//AWSCloudFormation/latest/UserGuide/cfn-console-create-stack.html) and [ working with nested stacks](https://docs.aws.amazon.com//AWSCloudFormation/latest/UserGuide/using-cfn-nested-stacks.html).
+ Instead of using the console to create your Neptune graph, you can use CloudFormation to provision AWS resources by treating infrastructure as code. To help you organize your AWS resources into smaller and more manageable units, you can use the CloudFormation nested stack functionality. For more information, see [ Creating a stack on the AWS CloudFormation console](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-console-create-stack.html) and [ working with nested stacks](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-nested-stacks.html).
 
  CloudFormation is free, but the resources that CloudFormation creates are live. You incur the standard usage fees for these resources until you terminate them. The total charges will be minimal. For information about how you might minimize any charges, see [AWS free tier](http://aws.amazon.com/free/).
 

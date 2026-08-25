@@ -71,11 +71,6 @@ If Deny policies are necessary, you will need to allowlist the required roles fo
 
 These elements can look like:
 
-------
-#### [ JSON ]
-
-****
-
 ```
 {
     "Version":"2012-10-17",
@@ -90,6 +85,7 @@ These elements can look like:
               "kms:ListKeys",
               "kms:DescribeKey",
               "kms:GenerateDataKey",
+              "kms:Decrypt",
               "kms:ListAliases"
           ],
           "Resource": "*"
@@ -119,8 +115,6 @@ These elements can look like:
     ]
 }
 ```
-
-------
 
 For customer managed keys, ensure these permissions are included in the key policy. You can view and update the key policy using the steps below.
 

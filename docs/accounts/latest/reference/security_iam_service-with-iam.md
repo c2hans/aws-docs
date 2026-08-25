@@ -5,6 +5,8 @@ source_url: https://docs.aws.amazon.com/accounts/latest/reference/security_iam_s
 # How AWS Account Management works with IAM
 <a name="security_iam_service-with-iam"></a>
 
+This information is most relevant for AWS accounts that you create when you use our advanced AWS experience. To learn about how access control works for our new AWS experience, see [Compare access management](sign-up-for-aws.md#compare-access-management).
+
 Before you use IAM to manage access to Account Management, learn what IAM features are available to use with Account Management.
 
 **IAM features you can use with AWS Account Management**

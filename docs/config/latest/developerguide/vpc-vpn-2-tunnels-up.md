@@ -7,6 +7,9 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/vpc-vpn-2-t
 
 Checks if both virtual private network (VPN) tunnels provided by AWS Site-to-Site VPN are in UP status. The rule is NON\_COMPLIANT if one or both tunnels are in DOWN status.
 
+**Note**
+Tunnel state transitions may take up to 24 hours to be detected.
+
 **Identifier:** VPC\_VPN\_2\_TUNNELS\_UP
 
 **Resource Types:** AWS::EC2::VPNConnection

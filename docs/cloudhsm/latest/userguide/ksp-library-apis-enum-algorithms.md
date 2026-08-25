@@ -15,7 +15,6 @@ The `NCryptEnumAlgorithms` function retrieves the names of algorithms that the K
 
  `dwAlgOperations` [in]
 A set of values that specify which algorithm classes to enumerate. You can use zero to enumerate all algorithms, or combine one or more of these values:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/cloudhsm/latest/userguide/ksp-library-apis-enum-algorithms.html)
 
 `pdwAlgCount` [out]
@@ -26,7 +25,6 @@ The address of an `NCryptAlgorithmName` structure pointer that stores an array o
 
 `dwFlags` [in]
 Flags to modify the function's behavior. Use zero or the following value:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/cloudhsm/latest/userguide/ksp-library-apis-enum-algorithms.html)
 
 ## Return Value
@@ -35,8 +33,6 @@ Flags to modify the function's behavior. Use zero or the following value:
 The function returns a status code to indicate success or failure.
 
 Common return codes include:
-
-****
 
 | Return code | Description |
 | --- | --- |

@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/lamb
 
 Build, test, and debug your serverless applications with LocalStack support in the AWS Toolkit for Visual Studio Code. LocalStack is an AWS Cloud emulator that allows for local testing of serverless applications.
 
-For additional information about AWS Lambda, see the [AWS Lambda](https://docs.aws.amazon.com//lambda/latest/dg/welcome.html) *Developer Guide*. To learn more about LocalStack, visit their website [LocalStack](https://www.localstack.cloud/).
+For additional information about AWS Lambda, see the [AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html) *Developer Guide*. To learn more about LocalStack, visit their website [LocalStack](https://www.localstack.cloud/).
 
 ## Prerequisites
 <a name="prereq"></a>
@@ -160,7 +160,7 @@ You can start LocalStack using any of the following methods:
 
  To start working with LocalStack in VS Code, you need a sample serverless application. If you already have an existing application in your AWS account you can deploy it locally using LocalStack or you can create a new application with AWS Serverless Land.
 
-For additional information about creating an application with Serverless Land in the AWS Toolkit, see the [Working with AWS Serverless Land](https://docs.aws.amazon.com//toolkit-for-vscode/latest/userguide/serverlessland-overview.html) topic in this User Guide. For detailed information about Serverless Land, see the [Serverless Land](https://serverlessland.com/) web-application main landing page.
+For additional information about creating an application with Serverless Land in the AWS Toolkit, see the [Working with AWS Serverless Land](https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/serverlessland-overview.html) topic in this User Guide. For detailed information about Serverless Land, see the [Serverless Land](https://serverlessland.com/) web-application main landing page.
 
 ## Testing and debugging Lambda functions with LocalStack
 <a name="test-debug"></a>
@@ -171,4 +171,4 @@ Testing and debugging your Lambda functions in the LocalStack VS Code extension 
 The testing and debugging features described in this section are not available for LocalStack Community edition.
 To work with LocalStack in VS Code, connect to your LocalStack profile in the AWS Toolkit. When your LocalStack profile is active, the VS Code status bar shows **AWS: profile:localstack (custom endpoint)** with a check mark.
 
-For detailed information about working with your Lambda functions in the AWS Toolkit, see the [Working with AWS Lambda functions](https://docs.aws.amazon.com//toolkit-for-vscode/latest/userguide/remote-lambda.html) topic in this user guide.
+For detailed information about working with your Lambda functions in the AWS Toolkit, see the [Working with AWS Lambda functions](https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/remote-lambda.html) topic in this user guide.

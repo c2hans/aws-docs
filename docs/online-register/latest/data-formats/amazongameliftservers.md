@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon GameLift Servers provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="gamelift-DescribeAlias"></a>[DescribeAlias](https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_DescribeAlias.html) | Retrieve properties for an alias | Read |

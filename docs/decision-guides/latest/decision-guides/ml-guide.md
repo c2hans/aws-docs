@@ -113,8 +113,6 @@ source_url: https://docs.aws.amazon.com/decision-guides/latest/decision-guides/m
 
  AWS builds foundation models (FMs) with responsible AI in mind at each stage of its development process. Throughout design, development, deployment, and operations we consider a range of factors including:
 
-****
-
 1.  Accuracy (how closely a summary matches the underlying document; whether a biography is factually correct)
 
 1.  Fairness, (whether outputs treat demographic groups similarly)

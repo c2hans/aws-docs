@@ -12,8 +12,6 @@ You can view detail information about one or more clusters using the MemoryDB co
 
 The following procedure details how to view the details of a MemoryDB cluster using the MemoryDB console.
 
-****
-
 1. Sign in to the AWS Management Console and open the MemoryDB console at [https://console.aws.amazon.com/memorydb/](https://console.aws.amazon.com/memorydb/).
 
 1. To see details of a cluster, choose the radio button to the left of the cluster's name and then choose **View details**. You can also click directly on the cluster to view the cluster details page.

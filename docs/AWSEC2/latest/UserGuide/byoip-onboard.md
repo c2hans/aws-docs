@@ -162,7 +162,7 @@ It can take up to a day to deprovision an address range.
 
 1. Validate the self-signed x.509 key pair
 
-   Validate that the certificate has been uploaded and is valid via the whois command.
+   Validate that the certificate has been uploaded and is valid through the whois command.
 
    For ARIN, use `whois -h whois.arin.net r + {{2001:0DB8:6172::/48}}` to look up the RDAP record for your address range. Check the `Public Comments` section for the `NetRange` (network range) in the command output. The certificate should be added in the `Public Comments` section for the address range.
 

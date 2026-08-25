@@ -22,7 +22,7 @@ The following differences apply to Amazon Simple Queue Service:
 
 ## Documentation
 <a name="govcloud-sqs-docs"></a>
-+  [Amazon SQS documentation](https://docs.aws.amazon.com/http://aws.amazon.com/documentation/sqs/)
++  [Amazon SQS documentation](http://aws.amazon.com/documentation/sqs/)
 
 ## Export-controlled content
 <a name="govcloud-sqs-itar"></a>

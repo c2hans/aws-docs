@@ -15,6 +15,7 @@ Creates an MLflow Tracking Server using a general purpose Amazon S3 bucket as th
    "AccountDefaultStatus": "{{string}}",
    "ArtifactStoreUri": "{{string}}",
    "DefaultDomainIdList": [ "{{string}}" ],
+   "KmsKeyId": "{{string}}",
    "ModelRegistrationMode": "{{string}}",
    "Name": "{{string}}",
    "RoleArn": "{{string}}",
@@ -53,6 +54,13 @@ List of SageMaker domain IDs for which this MLflow App is used as the default.
 Type: Array of strings
 Length Constraints: Minimum length of 0. Maximum length of 63.
 Pattern: `d-(-*[a-z0-9]){1,61}`
+Required: No
+
+ ** [KmsKeyId](#API_CreateMlflowApp_RequestSyntax) **   <a name="sagemaker-CreateMlflowApp-request-KmsKeyId"></a>
+The ID of the AWS KMS key used to encrypt the data at rest associated with the MLflow App. If you don't specify a value, the MLflow App is not encrypted with a customer-managed key.
+Type: String
+Length Constraints: Minimum length of 0. Maximum length of 2048.
+Pattern: `[a-zA-Z0-9:/_-]*`
 Required: No
 
  ** [ModelRegistrationMode](#API_CreateMlflowApp_RequestSyntax) **   <a name="sagemaker-CreateMlflowApp-request-ModelRegistrationMode"></a>

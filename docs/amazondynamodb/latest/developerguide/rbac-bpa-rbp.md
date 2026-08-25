@@ -14,7 +14,7 @@ BPA helps protect your resources by preventing public access from being granted 
 Identity-based policies attached to associated AWS principals (for example, IAM roles)
 Resource-based policies attached to associated AWS resources (for example, AWS Key Management Service (KMS) keys)
 
-You must ensure that the [principal](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_principal.html) doesn't include a `*` entry or that one of the specified condition keys restrict access from principals to the resource. If the resource-based policy grants public access to your table, indexes, or stream across AWS accounts, DynamoDB will block you from creating or modifying the policy until the specification within the policy is corrected and deemed non-public.
+You must make sure that the [principal](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_principal.html) doesn't include a `*` entry or that one of the specified condition keys restrict access from principals to the resource. If the resource-based policy grants public access to your table, indexes, or stream across AWS accounts, DynamoDB will block you from creating or modifying the policy until the specification within the policy is corrected and deemed non-public.
 
 You can make a policy non-public by specifying one or more principals inside the `Principal` block. The following resource-based policy example blocks public access by specifying two principals.
 

@@ -14,8 +14,6 @@ Delete the virtual private cloud (VPC) in a managed landing zone application acc
 ## Change Type Details
 <a name="ct-2paw0y79kvr3l-MMAd-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2paw0y79kvr3l |

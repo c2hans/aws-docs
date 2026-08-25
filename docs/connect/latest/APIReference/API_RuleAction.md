@@ -13,7 +13,7 @@ Information about the action to be performed when a rule is triggered.
  ** ActionType **   <a name="connect-Type-RuleAction-ActionType"></a>
 The type of action that creates a rule.
 Type: String
-Valid Values: `CREATE_TASK | ASSIGN_CONTACT_CATEGORY | GENERATE_EVENTBRIDGE_EVENT | SEND_NOTIFICATION | CREATE_CASE | UPDATE_CASE | ASSIGN_SLA | END_ASSOCIATED_TASKS | SUBMIT_AUTO_EVALUATION`
+Valid Values: `CREATE_TASK | ASSIGN_CONTACT_CATEGORY | GENERATE_EVENTBRIDGE_EVENT | SEND_NOTIFICATION | CREATE_CASE | UPDATE_CASE | ASSIGN_SLA | END_ASSOCIATED_TASKS | SUBMIT_AUTO_EVALUATION | EXTRACT_INFORMATION`
 Required: Yes
 
  ** AssignContactCategoryAction **   <a name="connect-Type-RuleAction-AssignContactCategoryAction"></a>
@@ -43,6 +43,11 @@ Required: No
 Information about the EventBridge action.
 Supported only for `TriggerEventSource` values: `OnPostCallAnalysisAvailable` \| `OnRealTimeCallAnalysisAvailable` \| `OnRealTimeChatAnalysisAvailable` \| `OnPostChatAnalysisAvailable` \| `OnContactEvaluationSubmit` \| `OnMetricDataUpdate`
 Type: [EventBridgeActionDefinition](API_EventBridgeActionDefinition.md) object
+Required: No
+
+ ** ExtractInformationAction **   <a name="connect-Type-RuleAction-ExtractInformationAction"></a>
+Information about the extract information action.
+Type: [ExtractInformationActionDefinition](API_ExtractInformationActionDefinition.md) object
 Required: No
 
  ** SendNotificationAction **   <a name="connect-Type-RuleAction-SendNotificationAction"></a>

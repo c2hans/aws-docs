@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/parallelcluster/latest/ug/terraform-what
 Beginning with AWS ParallelCluster 3.8.0, you can deploy clusters and custom images using [Terraform](https://www.terraform.io/). To begin using this feature, see [Terraform Provider for AWS ParallelCluster](https://registry.terraform.io/providers/aws-tf/aws-parallelcluster/latest) from the Terraform Registry.
 
 **Note**
-You must have [ParallelCluster API](https://docs.aws.amazon.com//parallelcluster/latest/ug/api-reference-v3.html) deployed in your account to use the provider.
+You must have [ParallelCluster API](https://docs.aws.amazon.com/parallelcluster/latest/ug/api-reference-v3.html) deployed in your account to use the provider.
 
 Use the following chart to determine the compatibility between the provider and the AWS ParallelCluster versions:
 

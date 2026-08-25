@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/integrat
 
 Amazon Aurora is a fully managed relational database engine that's compatible with MySQL and PostgreSQL.
 
-To manage master user credentials for Aurora, Aurora can create a [managed secret](service-linked-secrets.md) for you. You are charged for that secret. Aurora also [manages rotation](rotate-secrets_managed.md) for these credentials. For more information, see [Password management with Amazon Aurora and AWS Secrets Manager](https://docs.aws.amazon.com//AmazonRDS/latest/AuroraUserGuide/rds-secrets-manager.html) in the *Amazon Aurora User Guide*.
+To manage master user credentials for Aurora, Aurora can create a [managed secret](service-linked-secrets.md) for you. You are charged for that secret. Aurora also [manages rotation](rotate-secrets_managed.md) for these credentials. For more information, see [Password management with Amazon Aurora and AWS Secrets Manager](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/rds-secrets-manager.html) in the *Amazon Aurora User Guide*.
 
 For other Aurora credentials, see [Create an AWS Secrets Manager secret](create_secret.md).
 

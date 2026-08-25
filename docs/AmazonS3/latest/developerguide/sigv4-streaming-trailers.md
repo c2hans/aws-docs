@@ -237,7 +237,7 @@ The trailing checksum header name
 A colon (`:`)
 The base64-encoded trailing checksum value
 A newline character (`\n`).
-In this example, where we are using the `crc32c` hash algorithm, with the base64-encoded checksum value `sOO8/Q==`, we can represent the computation as follows: `hash('x-amz-checksum-crc32c:sOO8/Q==\n')`.
+In this example, where you are using the `crc32c` hash algorithm, with the base64-encoded checksum value `sOO8/Q==`, you can represent the computation as follows: `hash('x-amz-checksum-crc32c:sOO8/Q==\n')`.
 
    1. Chunk signature:
 

@@ -17,7 +17,7 @@ Use VPC Route Server peer logging when you need to:
 + **S3**: Data ingestion and archival charges for vended logs apply when you publish route server peer logs to Amazon S3.
 + **Data Firehose**: Standard ingestion and delivery charges apply.
 
-Vended logs are logs from specific AWS services that are available at volume tiered pricing and delivered to CloudWatch Logs, Amazon S3, or Amazon Data Firehose. For more information, open [Amazon CloudWatch Pricing](https://aws.amazon.com//cloudwatch/pricing/), select **Logs** and find **Vended Logs**.
+Vended logs are logs from specific AWS services that are available at volume tiered pricing and delivered to CloudWatch Logs, Amazon S3, or Amazon Data Firehose. For more information, open [Amazon CloudWatch Pricing](https://aws.amazon.com/cloudwatch/pricing/), select **Logs** and find **Vended Logs**.
 
 ## Example log format
 <a name="example-log-format"></a>

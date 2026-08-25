@@ -34,7 +34,7 @@ Both synchronous and asynchronous APIs for flexibility in different application 
 + AWS credentials configured (see the AWS documentation for credential setup options)
 
 **Important**
-This guide creates AWS resources that may incur charges. DynamoDB uses pay-per-request billing by default, and Amazon S3 charges apply if you enable large checkpoint offloading. Follow the [Clean up](#langgraph-cleanup) section to delete resources when you are done.
+This guide creates AWS resources that might incur charges. DynamoDB uses pay-per-request billing by default, and Amazon S3 charges apply if you enable large checkpoint offloading. Follow the [Clean up](#langgraph-cleanup) section to delete resources when you are done.
 
 ## Installation
 <a name="langgraph-installation"></a>

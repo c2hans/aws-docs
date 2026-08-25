@@ -101,8 +101,6 @@ Stream manager clients use the AWS IoT Greengrass Core SDK to communicate with s
 
 You use the [STREAM\_MANAGER\_AUTHENTICATE\_CLIENT](configure-stream-manager.md#STREAM_MANAGER_AUTHENTICATE_CLIENT) parameter to set the client authentication mode. You can configure this parameter from the console or AWS IoT Greengrass API. Changes take effect after the group is deployed.
 
-****
-
 |   | Enabled | Disabled |
 | --- | --- | --- |
 | Parameter value | `true` (default and recommended) | `false` |

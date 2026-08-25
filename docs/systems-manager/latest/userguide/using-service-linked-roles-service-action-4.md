@@ -87,8 +87,6 @@ Use the IAM console, the AWS CLI, or the AWS API to delete the `AWSServiceRoleFo
 
 Systems Manager does not support using service-linked roles in every Region where the service is available. You can use the AWSServiceRoleForAmazonSSM\_OpsInsights role in the following Regions.
 
-****
-
 | Region name | Region identity | Support in Systems Manager |
 | --- | --- | --- |
 | US East (N. Virginia) | us-east-1 | Yes |

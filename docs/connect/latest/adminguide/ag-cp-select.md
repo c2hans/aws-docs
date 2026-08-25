@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/ag-cp-select.h
 # Accept incoming contacts with Connect Customer Customer Profiles
 <a name="ag-cp-select"></a>
 
-When a call or chat is connected to your Contact Control Panel (CCP), Connect Customer Customer Profiles, in the same browser window, automatically populates the customer profile that may match the incoming phone number for a voice interaction and *Name* for a chat interaction.
+When a call or chat is connected to your Contact Control Panel (CCP), Connect Customer Customer Profiles, in the same browser window, automatically populates the customer profile that might match the incoming phone number for a voice interaction and *Name* for a chat interaction.
 
 **Tip**
 You can change autopopulation behavior if you wish. For more information, see [ Use contact attributes to autopopulate customer profiles](https://docs.aws.amazon.com/connect/latest/adminguide/auto-pop-customer-profile.html).
@@ -23,9 +23,9 @@ Before agents can access customer profiles, the Connect Customer administrator m
 ## Example 1: Auto-populate the customer profile
 <a name="example1-select-customer-profile"></a>
 
-As soon as Connect Customer Customer Profiles matches the phone number (voice) or customer name (chat) with an existing customer profile, it automatically displays the profile even though you may not have accepted the contact yet.
+As soon as Connect Customer Customer Profiles matches the phone number (voice) or customer name (chat) with an existing customer profile, it automatically displays the profile even though you might not have accepted the contact yet.
 
-The following image shows what your Contact Control Panel (CCP) may look like when there's an incoming chat. A customer profile has been found that matches the customer, and Connect Customer is loading the data.
+The following image shows what your Contact Control Panel (CCP) might look like when there's an incoming chat. A customer profile has been found that matches the customer, and Connect Customer is loading the data.
 
 ![The Customer profile tab, incoming chat.](http://docs.aws.amazon.com/connect/latest/adminguide/images/customer-profiles-incoming-chat-example1.png)
 
@@ -64,7 +64,7 @@ When there are no incoming contacts, you can search for customer profiles using 
 ## Example 4: Autopopulate results in multiple profiles found
 <a name="example4-autopop-multiple-customer-profiles"></a>
 
-In some cases, multiple profiles may be returned for the same call or chat. Use the profile information to verify the customer's identity. For example, ask the customer to verify their email address or account number, and then associate the contact with the right customer profile. Agents can also ask customers for additional information they can use in search and identify the right profile in order to associate it to the interaction.
+In some cases, multiple profiles might be returned for the same call or chat. Use the profile information to verify the customer's identity. For example, ask the customer to verify their email address or account number, and then associate the contact with the right customer profile. Agents can also ask customers for additional information they can use in search and identify the right profile in order to associate it to the interaction.
 
 ![Autopopulated results in multiple profiles for the same call or chat.](http://docs.aws.amazon.com/connect/latest/adminguide/images/example4-autopop-cp-1.png)
 

@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/timestream/latest/developerguide/data-ingestion-from-s3.html
 ---
 
-For similar capabilities to Amazon Timestream for LiveAnalytics, consider Amazon Timestream for InfluxDB. It offers simplified data ingestion and single-digit millisecond query response times for real-time analytics. Learn more [here](https://docs.aws.amazon.com//timestream/latest/developerguide/timestream-for-influxdb.html).
+For similar capabilities to Amazon Timestream for LiveAnalytics, consider Amazon Timestream for InfluxDB. It offers simplified data ingestion and single-digit millisecond query response times for real-time analytics. Learn more [here](https://docs.aws.amazon.com/timestream/latest/developerguide/timestream-for-influxdb.html).
 
 # Ingesting data from Amazon S3 to Timestream for InfluxDB automation
 <a name="data-ingestion-from-s3"></a>
@@ -13,7 +13,7 @@ The workflow for completing a migration is separated into four stages:
 
 1. Unload data using Timestream for LiveAnalytics export tool.
 
-1. [Data transformation](https://github.com/awslabs/amazon-timestream-tools/blob/mainline/tools/python/liveanalytics_migration_scripts/targets/timestream_for_influxdb/transform/README.md): Converting Timestream for LiveAnalytics data into InfluxDB line protocol format (Based on the schema defined after the cardinality assessment) using [Amazon Athena](https://docs.aws.amazon.com//athena/latest/ug/when-should-i-use-ate.html).
+1. [Data transformation](https://github.com/awslabs/amazon-timestream-tools/blob/mainline/tools/python/liveanalytics_migration_scripts/targets/timestream_for_influxdb/transform/README.md): Converting Timestream for LiveAnalytics data into InfluxDB line protocol format (Based on the schema defined after the cardinality assessment) using [Amazon Athena](https://docs.aws.amazon.com/athena/latest/ug/when-should-i-use-ate.html).
 
 1. [Data ingestion](https://github.com/awslabs/amazon-timestream-tools/blob/mainline/tools/python/liveanalytics_migration_scripts/targets/timestream_for_influxdb/ingestion/README.md): Ingest the line protocol dataset to your Timestream for InfluxDB instance.
 
@@ -33,11 +33,11 @@ The following table shows how Timestream for LiveAnalytics data is mapped to lin
 
 | Timestream for LiveAnalytics Concept | Line Protocol Concept |
 | --- | --- |
-| [Table Name](https://docs.aws.amazon.com//timestream/latest/developerguide/API_Table.html) | [Measurement](https://docs.influxdata.com/influxdb/v2/reference/syntax/line-protocol/#measurement) |
-| [Dimensions](https://docs.aws.amazon.com//timestream/latest/developerguide/API_Dimension.html) | [Tags](https://docs.influxdata.com/influxdb/v2/reference/syntax/line-protocol/#tag-set) |
-| [Measure name](https://docs.aws.amazon.com//timestream/latest/developerguide/data-modeling.html#data-modeling-measurenamemulti) | Tag (Optional) |
-| [Measures](https://docs.aws.amazon.com//timestream/latest/developerguide/API_MeasureValue.html) | [Fields](https://docs.influxdata.com/influxdb/v2/reference/syntax/line-protocol/#field-set) |
-| [Time](https://docs.aws.amazon.com///timestream/latest/developerguide/writes.html#writes.data-types) | [Timestamp](https://docs.influxdata.com/influxdb/v2/reference/syntax/line-protocol/#timestamp) |
+| [Table Name](https://docs.aws.amazon.com/timestream/latest/developerguide/API_Table.html) | [Measurement](https://docs.influxdata.com/influxdb/v2/reference/syntax/line-protocol/#measurement) |
+| [Dimensions](https://docs.aws.amazon.com/timestream/latest/developerguide/API_Dimension.html) | [Tags](https://docs.influxdata.com/influxdb/v2/reference/syntax/line-protocol/#tag-set) |
+| [Measure name](https://docs.aws.amazon.com/timestream/latest/developerguide/data-modeling.html#data-modeling-measurenamemulti) | Tag (Optional) |
+| [Measures](https://docs.aws.amazon.com/timestream/latest/developerguide/API_MeasureValue.html) | [Fields](https://docs.influxdata.com/influxdb/v2/reference/syntax/line-protocol/#field-set) |
+| [Time](https://docs.aws.amazon.com//timestream/latest/developerguide/writes.html#writes.data-types) | [Timestamp](https://docs.influxdata.com/influxdb/v2/reference/syntax/line-protocol/#timestamp) |
 
 **Prerequisites and Installation**
 

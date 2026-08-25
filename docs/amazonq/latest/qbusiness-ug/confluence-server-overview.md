@@ -9,8 +9,6 @@ Amazon Q Business is no longer open to new customers. For capabilities similar t
 
 The following table gives an overview of the Amazon Q Business Confluence (Server/Data Center) connector and its supported features.
 
-****
-
 - ****Security****
   - **Feature:** Authentication type / **Support:** Basic, OAuth 2.0 with Refresh Token Flow, Personal Access Token
   - **Feature:** Authentication credentials / **Support:** For Basic authentication:+  Confluence Server/Data Center username <br />+  Confluence Server/Data Center password <br />For OAuth 2.0 authentication with Refresh Token Flow:+  App key <br />+  App secret <br />+  Access token <br />+  [Refresh token](https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/)  Access and refresh tokens expire in 1 hour. For information on regenerating tokens, see [Atlassian Developer Documentation](https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/#faq1).  <br />Personal Access Token+  Personal Access Token

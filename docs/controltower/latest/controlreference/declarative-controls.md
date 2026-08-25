@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/controltower/latest/controlreference/dec
 # Controls implemented with declarative policies
 <a name="declarative-controls"></a>
 
-This section provides information about AWS Control Tower controls that are implemented by *declarative policies* from AWS Organizations. These are *preventive* controls. For more information about how declarative policies work as preventive controls in AWS Control Tower, see [Declarative policies](https://docs.aws.amazon.com//organizations/latest/userguide/orgs_manage_policies_declarative.html) in the AWS Organizations documentation.
+This section provides information about AWS Control Tower controls that are implemented by *declarative policies* from AWS Organizations. These are *preventive* controls. For more information about how declarative policies work as preventive controls in AWS Control Tower, see [Declarative policies](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_declarative.html) in the AWS Organizations documentation.
 
 Declarative policies help you deﬁne and enforce your required conﬁguration for specified AWS services, across your entire organization, at the OU level. When a declarative policy is applied, the conﬁguration is maintained continuously.
 

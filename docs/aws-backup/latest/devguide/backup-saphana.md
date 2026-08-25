@@ -264,7 +264,7 @@ If you encounter errors during your workflow, consult the following example erro
 
   **Confirm the registration status:**
 
-  1. Log into the [SSM console](https://console.aws.amazon.com//systems-manager)
+  1. Log into the [SSM console](https://console.aws.amazon.com/systems-manager)
 
   1. Select **Run Command** from the left side navigation.
 

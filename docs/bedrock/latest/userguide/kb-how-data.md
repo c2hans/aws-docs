@@ -66,8 +66,6 @@ If you connect your knowledge base to a structured data store, you don't need to
 
 As an example, a database repository contains the following table with information about customers and their purchases:
 
-****
-
 | Customer ID | Amount purchased in 2020 | Amount purchased in 2021 | Amount purchased in 2022 | Total purchased amount to date |
 | --- | --- | --- | --- | --- |
 | 1 | 200 | 300 | 500 | 1000 |

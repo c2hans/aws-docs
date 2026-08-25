@@ -14,8 +14,6 @@ Share a snapshot of an Amazon Relational Database Service (RDS) database (DB) in
 ## Change Type Details
 <a name="ct-2u5rcyv5h34zn-MARs-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2u5rcyv5h34zn |

@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::EC2::TransitGatewayPolicyTableEntry
 <a name="aws-resource-ec2-transitgatewaypolicytableentry"></a>
 
-Describes a transit gateway policy table entry
+Creates an entry in a transit gateway policy table to route matching traffic to a specified route table.
 
 ## Syntax
 <a name="aws-resource-ec2-transitgatewaypolicytableentry-syntax"></a>
@@ -82,4 +82,4 @@ Property description not available.
 <a name="aws-resource-ec2-transitgatewaypolicytableentry-return-values-fn--getatt-fn--getatt"></a>
 
 `State`  <a name="State-fn::getatt"></a>
-Property description not available.
+The state of the transit gateway policy table entry.

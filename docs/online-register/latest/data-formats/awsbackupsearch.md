@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsb
 
 AWS Backup Search provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="backup-search-GetSearchJob"></a>[GetSearchJob](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BKS_GetSearchJob.html) | Get details of a search job | Read |

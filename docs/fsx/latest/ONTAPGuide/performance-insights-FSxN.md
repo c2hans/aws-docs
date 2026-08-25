@@ -36,4 +36,4 @@ Amazon FSx provides actionable recommendations that you can use to optimize your
 During an SSD decrease operation, write-heavy workloads could experience a temporary performance degradation as the operation consumes disk and network resources. To minimize performance impact, maintain adequate headroom by ensuring ongoing workloads don't consistently consume more than 50% CPU, 50% disk throughput, or 50% SSD IOPS before initiating an SSD decrease operation.
 Brief I/O pauses of up to 60 seconds might occur for each volume as client access is redirected to the new set of disks. These pauses are expected and normal during the cutover phase of the operation.
 
-For more information about file system performance, see [Amazon FSx for NetApp ONTAP performancePerformance](performance.md).
+For more information about file system performance, see [Amazon FSx for NetApp ONTAP performance](performance.md).

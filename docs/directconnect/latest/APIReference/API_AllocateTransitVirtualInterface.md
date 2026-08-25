@@ -98,6 +98,8 @@ Required: Yes
       "location": "string",
       "mtu": number,
       "ownerAccount": "string",
+      "prefixPoolAllocatedCountIpv4": number,
+      "prefixPoolAllocatedCountIpv6": number,
       "rateLimit": "string",
       "region": "string",
       "routeFilterPrefixes": [

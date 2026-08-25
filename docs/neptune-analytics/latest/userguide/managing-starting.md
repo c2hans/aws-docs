@@ -19,7 +19,7 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/manag
 ------
 #### [ CLI/API ]
 
- You can call the `start-graph` CLI command, or the [StartGraph](https://docs.aws.amazon.com//neptune-analytics/latest/apiref/API_StartGraph.html) API operation. The graph must be in the `STOPPED` state to be started.
+ You can call the `start-graph` CLI command, or the [StartGraph](https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_StartGraph.html) API operation. The graph must be in the `STOPPED` state to be started.
 
 ```
 aws neptune-graph start-graph --graph-identifier g-sample

@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/login-logout-r
 The Login/Logout report displays the login and logout information for the users in your contact center (for example, agents, managers, and administrators). For each user session, the login and logout times are displayed as a row in the report. You can use the report to determine the time users were logged in to Connect Customer. The report also displays the amount of time for each session that user was logged in to Connect Customer.
 
 **Topics**
-+ [Why your Login/Logout report may appear incorrect](#login-logout-incorrect)
++ [Why your Login/Logout report might appear incorrect](#login-logout-incorrect)
 + [Report limit: 10,000 rows](#login-logout-considerations)
 + [Required permissions](#loginlogout-report-permissions)
 + [Generate a Login/Logout report](#loginlogout-report-generate)
@@ -19,20 +19,20 @@ The Login/Logout report displays the login and logout information for the users 
 + [Delete a Saved Login/Logout report](#loginlogout-report-delete)
 + [Tag-based and hierarchy-based access controls](#login-logout-tag-based-access-control)
 
-## Why your Login/Logout report may appear incorrect
+## Why your Login/Logout report might appear incorrect
 <a name="login-logout-incorrect"></a>
 
-You may observe that the data in your Login/Logout report appears incorrect. For example:
+You might observe that the data in your Login/Logout report appears incorrect. For example:
 + The report doesn't show any data, or is missing data, even though everyone on your team is logged in.
 + The report shows users are logged in although you know they are **Offline** and their CCP window is closed.
 
-These issues are usually because users are not actually logged out. They aren't choosing the **Logout** button. For example, they may be changing their status to **Offline** and then closing their CCP window.
+These issues are usually because users are not actually logged out. They aren't choosing the **Logout** button. For example, they might be changing their status to **Offline** and then closing their CCP window.
 
 To log out, in the CCP or the agent workspace, they need to choose **Settings**, scroll down the page, and choose **Logout**. These buttons are shown in the following image.
 
 ![The Contact Control Panel, the Settings icon, the Logout option.](http://docs.aws.amazon.com/connect/latest/adminguide/images/logout-ccp.png)
 
-A few other reasons a report may appear incorrect:
+A few other reasons a report might appear incorrect:
 + The report includes login and logout events that occur within the specified time range. If a user logs in and out outside of that time range, those events will not be captured in the report.
 + In an SSO scenario, if agents are automatically logged out due to session timeout, or if they simply close the browser without choosing the **Logout** button, those logout events will not be registered in the report. The report only captures explicit logout actions performed by the user.
 
@@ -158,7 +158,7 @@ To generate a report with the same settings on a regular basis, you can schedule
 
 1. Choose **Login/Logout report**.
 
-1. Hover the mouse pointer over the row containing the name of the report to schedule, and choose the **Schedule report** icon.
+1. Pause the mouse pointer on the row containing the name of the report to schedule, and choose the **Schedule report** icon.
 
 1. On the **Schedule report** page, under **Recurrence**, for **Generate this report**, choose whether to generate the report **Daily** or **Weekly**.
 
@@ -193,7 +193,7 @@ Too many reports in your report library? If you no longer want to use a saved re
 
 1. Choose **Analytics and optimization**, **Saved reports**.
 
-1. Hover over the row for the report to delete, and choose the **Delete** icon.
+1. Pause on the row for the report to delete, and choose the **Delete** icon.
 
 1. Choose **Delete** again.
 

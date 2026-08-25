@@ -49,8 +49,8 @@ The following table shows the minor versions of MariaDB 11.8 that Amazon RDS cur
 | --- | --- | --- | --- |
 | 11.8.8 | 27 May 2026 | 5 June 2026 | June 2027 |
 | 11.8.6 | 4 February 2026 | 10 February 2026 | February 2027 |
-| 11.8.5 | 14 November 2025 | 20 November 2025 | November 2026 |
-| 11.8.3 | 6 August 2025 | 25 August 2025 | September 2026 |
+| 11.8.5 | 14 November 2025 | 20 November 2025 | 31 October 2026 |
+| 11.8.3 | 6 August 2025 | 25 August 2025 | 31 October 2026 |
 
 The following table shows the minor versions of MariaDB 11.4 that Amazon RDS currently supports.
 
@@ -58,12 +58,9 @@ The following table shows the minor versions of MariaDB 11.4 that Amazon RDS cur
 | --- | --- | --- | --- |
 | 11.4.12 | 27 May 2026 | 5 June 2026 | June 2027 |
 | 11.4.10 | 4 February 2026 | 10 February 2026 | February 2027 |
-| 11.4.9 | 6 November 2025 | 18 November 2025 | November 2026 |
-| 11.4.8 | 6 August 2025 | 13 August 2025 | September 2026 |
-| 11.4.7 | 22 May 2025 | 4 June 2025 | September 2026 |
-| 11.4.5 | 4 February 2025 | 24 February 2025 | May 2026 |
-| 11.4.4 | 1 November 2024 | 20 December 2024 | May 2026 |
-| 11.4.3 | 8 August 2024 | 15 October 2024 | May 2026 |
+| 11.4.9 | 6 November 2025 | 18 November 2025 | 31 October 2026 |
+| 11.4.8 | 6 August 2025 | 13 August 2025 | 31 October 2026 |
+| 11.4.7 | 22 May 2025 | 4 June 2025 | 31 October 2026 |
 
 The following table shows the minor versions of MariaDB 10.11 that Amazon RDS currently supports.
 
@@ -71,25 +68,19 @@ The following table shows the minor versions of MariaDB 10.11 that Amazon RDS cu
 | --- | --- | --- | --- |
 | 10.11.18 | 27 May 2026 | 5 June 2026 | June 2027 |
 | 10.11.16 | 4 February 2026 | 10 February 2026 | February 2027 |
-| 10.11.15 | 6 November 2025 | 18 November 2025 | November 2026 |
-| 10.11.14 | 6 August 2025 | 13 August 2025 | September 2026 |
-| 10.11.13 | 22 May 2025 | 4 June 2025 | September 2026 |
-| 10.11.11 | 4 February 2025 | 24 February 2025 | May 2026 |
-| 10.11.10 | 1 November 2024 | 20 December 2024 | May 2026 |
-| 10.11.9 | 8 August 2024 | 4 September 2024 | May 2026 |
+| 10.11.15 | 6 November 2025 | 18 November 2025 | 31 October 2026 |
+| 10.11.14 | 6 August 2025 | 13 August 2025 | 31 October 2026 |
+| 10.11.13 | 22 May 2025 | 4 June 2025 | 31 October 2026 |
 
 The following table shows the minor versions of MariaDB 10.6 that Amazon RDS currently supports.
 
 | MariaDB engine version | Community release date | RDS release date | RDS end of standard support date |
 | --- | --- | --- | --- |
-| 10.6.27 | 27 May 2026 | 5 June 2026 | November 2026 |
-| 10.6.25 | 4 February 2026 | 10 February 2026 | November 2026 |
+| 10.6.27 | 27 May 2026 | 5 June 2026 | 31 December 2026 |
+| 10.6.25 | 4 February 2026 | 10 February 2026 | 31 December 2026 |
 | 10.6.24 | 6 November 2025 | 18 November 2025 | November 2026 |
 | 10.6.23 | 6 August 2025 | 13 August 2025 | November 2026 |
 | 10.6.22 | 6 May 2025 | 20 May 2025 | November 2026 |
-| 10.6.21 | 4 February 2025 | 24 February 2025 | May 2026 |
-| 10.6.20 | 1 November 2024 | 20 December 2024 | May 2026 |
-| 10.6.19 | 8 August 2024 | 4 September 2024 | May 2026 |
 
 The following table shows the minor versions of MariaDB 10.5 that Amazon RDS currently supports.
 
@@ -97,7 +88,6 @@ The following table shows the minor versions of MariaDB 10.5 that Amazon RDS cur
 | --- | --- | --- | --- |
 | 10.5.29 | 6 May 2025 | 20 May 2025 | August 2026 |
 | 10.5.28 | 4 February 2025 | 24 February 2025 | August 2026 |
-| 10.5.27 | 1 November 2024 | 20 December 2024 | May 2026 |
 
 You can specify any currently supported MariaDB version when creating a new DB instance. You can specify the major version (such as MariaDB 10.5), and any supported minor version for the specified major version. If no version is specified, Amazon RDS defaults to a supported version, typically the most recent version. If a major version is specified but a minor version is not, Amazon RDS defaults to a recent release of the major version you have specified. To see a list of supported versions, as well as defaults for newly created DB instances, use the [`describe-db-engine-versions`](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-engine-versions.html) AWS CLI command.
 
@@ -384,8 +374,8 @@ You can also view information about support dates for major engine versions by r
 | MariaDB 11.8 | 6 August 2025 | 25 August 2025 | June 2028 | June 2028 |
 | MariaDB 11.4 | 8 August 2024 | 15 October 2024 | May 2029 | May 2029 |
 | MariaDB 10.11 | 16 February 2023 | 21 August 2023 | 16 February 2028 | February 2028 |
-| MariaDB 10.6 | 6 July 2021 | 3 February 2022 | 6 July 2026 | November 2026 |
-| MariaDB 10.5 | 24 June 2020 | 21 January 2021 | 24 June 2025 | August 2026 |
+| MariaDB 10.6 | 6 July 2021 | 3 February 2022 | 6 July 2026 | 31 December 2026 |
+| MariaDB 10.5 | 24 June 2020 | 21 January 2021 | 24 June 2025 | 31 August 2026 |
 
 ## Working with the Database Preview environment
 <a name="mariadb-working-with-the-database-preview-environment"></a>

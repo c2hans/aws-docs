@@ -35,7 +35,7 @@ To be able to assign case ownership to users or queues, agents need permissions 
 + **Audit History**: Manage who can access the audit history of cases in the agent application.
   + **View Audit History**: Allows the user to view the audit history of cases in the agent application.
 + **Cases**: Manage who can access cases by using the agent application.
-  + **View case**: Allows the user to view and search cases in the agent application. This includes viewing case data (for example, status, title, summary), contact history (for example, calls, chats, tasks with information such as start time, end time, duration, etc.), and comments.
+  + **View case**: Allows the user to view and search cases in the agent application. This includes viewing case data (for example, status, title, summary), contact history (for example, calls, chats, tasks with information such as start time, end time, duration), and comments.
   + **Edit case**: Allows the user to edit cases, which includes editing case data (for example, update case status), add comments, and associate contacts to cases.
   + **Create case**: Allows the user to create new cases, and associate contacts to cases.
   + **Delete case**: Allows the user to delete any case in the domain.

@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsu
 
 AWS User Subscriptions provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="user-subscriptions-GetAutoTopUpRule"></a>[GetAutoTopUpRule](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/security_iam_permissions.html) | Get a User subscription auto-top-up rule | Read |

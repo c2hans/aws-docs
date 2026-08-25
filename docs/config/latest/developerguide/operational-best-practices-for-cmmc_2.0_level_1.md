@@ -9,8 +9,6 @@ Conformance packs provide a general-purpose compliance framework designed to ena
 
 The following provides a sample mapping between the Cybersecurity Maturity Model Certification (CMMC) 2.0 Level 1 and AWS managed Config rules. Each Config rule applies to a specific AWS resource, and relates to one or more CMMC 2.0 Level 1 controls. A CMMC 2.0 Level 1 control can be related to multiple Config rules. Refer to the table below for more detail and guidance related to these mappings.
 
-****
-
 | Control ID  | Control Description  | AWS Config Rule  | Guidance  |
 | --- | --- | --- | --- |
 | AC.L1-3.1.1 | Limit information system access to authorized users, processes acting on behalf of authorized users, or devices (including other information systems). | [access-keys-rotated](https://docs.aws.amazon.com/config/latest/developerguide/access-keys-rotated.html) | The credentials are audited for authorized devices, users, and processes by ensuring IAM access keys are rotated as specified by the organizational policy. Changing the access keys on a regular schedule is a security best practice. It shortens the period an access key is active and reduces the business impact if the keys are compromised. This rule requires an access key rotation value (Config Default: 90). The actual value should reflect your organization's policies. |

@@ -40,7 +40,7 @@ You can connect to Bitbucket, GitHub, GitHub Enterprise and GitHub Enterprise Se
 
 **To set up a CodeStar connection.**
 
-1. Open the [AWS Proton console](https://console.aws.amazon.com//proton/).
+1. Open the [AWS Proton console](https://console.aws.amazon.com/proton/).
 
 1. In the navigation pane, select **Settings** and then **Repository connections** to take you to the **Connections** page in **Developer Tools** **Settings**. The page displays a list of connections.
 
@@ -58,7 +58,7 @@ With [AWS-managed provisioning](ag-works-prov-methods.md#ag-works-prov-methods-d
 
 **To create pipeline service roles using the console**
 
-1. Open the [AWS Proton console](https://console.aws.amazon.com//proton/).
+1. Open the [AWS Proton console](https://console.aws.amazon.com/proton/).
 
 1. In the navigation pane, choose **Settings**, and then choose **Account settings**.
 

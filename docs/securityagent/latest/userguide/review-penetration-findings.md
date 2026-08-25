@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/review-penetration-findings.html
 ---
 
-# Review findings from a penetration test
+# Review findings from a Continuum penetration test
 <a name="review-penetration-findings"></a>
 
 Monitor penetration test execution in real time on the Penetration Test Logs page after AWS Security Agent starts a penetration test. AWS Security Agent logs every action during the penetration test. After completion, review the penetration test summary, which includes application overview, coverage with identified endpoints, and risk assessment of security findings.
@@ -16,8 +16,8 @@ Before you begin, ensure you have:
 + A completed or in-progress penetration test run
 + Access to the AWS Security Agent web application
 
-## Step 1: Access the penetration test run
-<a name="_step_1_access_the_penetration_test_run"></a>
+## Step 1: Access the Continuum penetration test run
+<a name="_step_1_access_the_continuum_penetration_test_run"></a>
 
 Navigate to your penetration test run to view overview, logs and findings pages.
 
@@ -46,8 +46,8 @@ Track the progress of your penetration test run using the step indicator.
 **Note**
 Each step displays a status indicator (Complete, In progress, or Pending). Findings are discovered and validated throughout the testing process, with new vulnerabilities appearing as each phase completes.
 
-## Step 3: Navigate to the penetration test run overview tab
-<a name="_step_3_navigate_to_the_penetration_test_run_overview_tab"></a>
+## Step 3: Navigate to the Continuum penetration test run overview tab
+<a name="_step_3_navigate_to_the_continuum_penetration_test_run_overview_tab"></a>
 
 1. Run Summary section provides test status, duration and other high level details. It also provides a dashboard of security findings categorized by severity level and risk-types
 
@@ -55,8 +55,8 @@ Each step displays a status indicator (Complete, In progress, or Pending). Findi
 
 1. Discovered endpoints by AWS Security Agent provides a list of all endpoints discovered and tested by the AWS Security agent during the penetration test run
 
-## Step 4: Navigate to the penetration test logs tab
-<a name="_step_4_navigate_to_the_penetration_test_logs_tab"></a>
+## Step 4: Navigate to the Continuum penetration test logs tab
+<a name="_step_4_navigate_to_the_continuum_penetration_test_logs_tab"></a>
 
 Access detailed logs of all actions AWS Security Agent executed during the penetration test.
 
@@ -271,10 +271,11 @@ After reviewing your penetration test findings:
 + Create tracking tickets in your issue management system with links to finding details and evidence
 + Implement fixes and security controls to address identified vulnerabilities
 + Monitor the penetration test run progress indicator for newly discovered vulnerabilities
-+ Schedule a follow-up penetration test to verify that vulnerabilities have been properly remediated
++ Revalidate a finding after you deploy a fix to confirm whether it is still exploitable. See [Revalidate Continuum penetration test findings](revalidate-findings.md).
++ Schedule a follow-up penetration test to verify that broader changes have not introduced new vulnerabilities
 + Update your application security testing process and threat model based on findings
 + Review CVSS metrics to understand your application’s overall security posture
 
-For more information about performing penetration tests, see [Create a penetration test](perform-penetration-test.md).
+For more information about performing penetration tests, see [Create a Continuum penetration test](perform-penetration-test.md).
 
 For more information about understanding the Security Agent lifecycle, see [Understand the resource hierarchy and lifecycle](understand-lifecycle.md).

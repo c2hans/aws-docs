@@ -25,7 +25,8 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[ConnectorType](#cfn-bedrockagentcore-paymentconnector-connectortype)" : {{String}},
       "[CredentialProviderConfigurations](#cfn-bedrockagentcore-paymentconnector-credentialproviderconfigurations)" : {{[ CredentialsProviderConfiguration, ... ]}},
       "[Description](#cfn-bedrockagentcore-paymentconnector-description)" : {{String}},
-      "[PaymentManagerId](#cfn-bedrockagentcore-paymentconnector-paymentmanagerid)" : {{String}}
+      "[PaymentManagerId](#cfn-bedrockagentcore-paymentconnector-paymentmanagerid)" : {{String}},
+      "[ProvisionMode](#cfn-bedrockagentcore-paymentconnector-provisionmode)" : {{String}}
     }
 }
 ```
@@ -42,6 +43,7 @@ Properties:
     - CredentialsProviderConfiguration}}
   [Description](#cfn-bedrockagentcore-paymentconnector-description): {{String}}
   [PaymentManagerId](#cfn-bedrockagentcore-paymentconnector-paymentmanagerid): {{String}}
+  [ProvisionMode](#cfn-bedrockagentcore-paymentconnector-provisionmode): {{String}}
 ```
 
 ## Properties
@@ -59,13 +61,13 @@ The type of payment connector, which determines the payment provider integration
 *Required*: Yes
 *Type*: String
 *Allowed values*: `CoinbaseCDP | StripePrivy`
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `CredentialProviderConfigurations`  <a name="cfn-bedrockagentcore-paymentconnector-credentialproviderconfigurations"></a>
 The credential provider configurations for the payment connector. These configurations specify how the connector authenticates with the payment provider.
-*Required*: Yes
+*Required*: No
 *Type*: Array of [CredentialsProviderConfiguration](aws-properties-bedrockagentcore-paymentconnector-credentialsproviderconfiguration.md)
-*Minimum*: `1`
+*Minimum*: `0`
 *Maximum*: `1`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
@@ -85,6 +87,13 @@ The unique identifier of the payment manager to create the connector for.
 *Pattern*: `^([0-9a-z][-]?){1,100}-[0-9a-z]{10}$`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
+`ProvisionMode`  <a name="cfn-bedrockagentcore-paymentconnector-provisionmode"></a>
+Property description not available.
+*Required*: No
+*Type*: String
+*Allowed values*: `MANUAL | QUICK_CREATE`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
 ## Return values
 <a name="aws-resource-bedrockagentcore-paymentconnector-return-values"></a>
 
@@ -100,6 +109,9 @@ For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::
 
 ####
 <a name="aws-resource-bedrockagentcore-paymentconnector-return-values-fn--getatt-fn--getatt"></a>
+
+`AuthorizationUrl`  <a name="AuthorizationUrl-fn::getatt"></a>
+Property description not available.
 
 `ConnectorCreatedAt`  <a name="ConnectorCreatedAt-fn::getatt"></a>
 The timestamp when the payment connector was created.

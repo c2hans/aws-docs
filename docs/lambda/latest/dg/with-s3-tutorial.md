@@ -945,7 +945,7 @@ You can now delete the resources that you created for this tutorial, unless you 
 
 **To delete the S3 bucket**
 
-1. Open the [Amazon S3 console.](https://console.aws.amazon.com//s3/home#)
+1. Open the [Amazon S3 console.](https://console.aws.amazon.com/s3/home#)
 
 1. Select the bucket you created.
 

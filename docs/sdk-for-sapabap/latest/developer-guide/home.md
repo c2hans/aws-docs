@@ -46,7 +46,7 @@ AWS SDK for SAP ABAP is available to you at no additional cost. You only pay for
 In addition to this guide, the following online resources are available for SDK for SAP ABAP.
 +  [AWS SDK for SAP ABAP Knowledge MCP Server](https://docs.aws.amazon.com/sdk-for-sapabap/latest/developer-guide/mcp-server.html) – Connect your AI-enabled IDE to generate accurate ABAP code for AWS integrations.
 + [AWS SDK Code Example Library](http://docs.aws.amazon.com/code-samples/latest/catalog/)
-+  [SAP on AWS documentation](https://aws.amazon.com//sap/docs/)
++  [SAP on AWS documentation](https://aws.amazon.com/sap/docs/)
 +  [AWS developer blog](http://aws.amazon.com/blogs/developer/category/developer-tools/)
 +  [AWS developer forums](http://forums.aws.amazon.com/forum.jspa?forumID=53)
 +  [@awsdevelopers](https://twitter.com/awsdevelopers)(Twitter)

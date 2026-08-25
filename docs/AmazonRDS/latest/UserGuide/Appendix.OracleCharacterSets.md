@@ -22,8 +22,6 @@ The following table lists the Oracle DB character sets that are supported in Ama
 **Note**
 The character set for a CDB is always AL32UTF8. You can set a different character set for the PDB only.
 
-****
-
 | Value | Description |
 | --- | --- |
 | AL32UTF8 | Unicode 5.0 UTF-8 Universal character set (default) |

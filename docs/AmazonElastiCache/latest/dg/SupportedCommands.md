@@ -10,7 +10,7 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/SupportedCom
 
 **Supported Valkey and Redis OSS commands**
 
-The following Valkey and Redis OSS commands are supported by serverless caches. In addition to these commands, these [Supported Valkey and Redis OSS commandsJSON commands](json-list-commands.md) are also supported.
+The following Valkey and Redis OSS commands are supported by serverless caches. In addition to these commands, these [Supported Valkey and Redis OSS commands](json-list-commands.md) are also supported.
 
 For information on Bloom Filter commands see [Bloom filter commands](BloomFilters.md#SupportedCommandsBloom)
 

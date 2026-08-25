@@ -9,8 +9,6 @@ Amazon Q Business is no longer open to new customers. For capabilities similar t
 
 The following table gives an overview of the Salesforce Online connector and its supported features.
 
-****
-
 - ****Security****
   - **Feature:** Authentication type / **Support:** OAuth 2.0 with Resource Owner Password Flow Note that Require Proof Key for Code Exchange (PKCE) is not supported and must be disabled.
   - **Feature:** Authentication credentials / **Support:** +  Salesforce authentication URL <br />+  Username Client secret <br />+  Password username <br />+  Security token  <br />+  Consumer key <br />+  Consumer secret

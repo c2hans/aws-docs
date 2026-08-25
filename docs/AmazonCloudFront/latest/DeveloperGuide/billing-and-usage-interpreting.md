@@ -26,8 +26,6 @@ This table doesn't include charges for transferring your objects from an Amazon 
 The first column lists charges that appear in your AWS bill report and explains what each means.
  The second column lists items that appear in the AWS usage report and shows the correlation between bill charges and usage report items.
 
-****
-
 | CloudFront charges in your AWS bill | Values in the UsageType column in the AWS usage report |
 | --- | --- |
 | {{region}}**-DataTransfer-Out-Bytes**<br />Total bytes served from CloudFront edge locations in {{region}} in response to user `GET` and `HEAD` requests. | {{region}}**-Out-Bytes-HTTP-Static:**<br />Bytes served via HTTP for objects with TTL ≥ 3,600 seconds.<br />{{region}}**-Out-Bytes-HTTPS-Static:**<br />Bytes served via HTTPS for objects with TTL ≥ 3,600 seconds.<br />{{region}}**-Out-Bytes-HTTP-Dynamic:**<br />Bytes served via HTTP for objects with TTL < 3,600 seconds.<br />{{region}}**-Out-Bytes-HTTPS-Dynamic:**<br />Bytes served via HTTPS for objects with TTL < 3,600 seconds.<br />{{region}}**-Out-Bytes-HTTP-Proxy:**<br />Bytes returned from CloudFront to viewers via HTTP in response to `DELETE`, `OPTIONS`, `PATCH`, `POST`, and `PUT` requests.<br />{{region}}**-Out-Bytes-HTTPS-Proxy:**<br />Bytes returned from CloudFront to viewers via HTTPS in response to `DELETE`, `OPTIONS`, `PATCH`, `POST`, and `PUT` requests. <br />This includes bytes returned from CloudFront to viewers via gRPC. |

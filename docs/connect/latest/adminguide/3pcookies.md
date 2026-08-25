@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/3pcookies.html
 # Allow the Connect Customer Contact Control Panel (CCP) to access cookies
 <a name="3pcookies"></a>
 
-When logging into the CCP you may see one of these banners:
+When logging into the CCP you might see one of these banners:
 
 ![A Grant access banner.](http://docs.aws.amazon.com/connect/latest/adminguide/images/3pcookies-default-grant-access.png)
 
@@ -19,7 +19,7 @@ Connect Customer uses cookies for authentication. Google Chrome requires you to 
 
 1. At the next prompt, choose **Allow**.
 
-You may need to repeat these steps periodically, for example, if your organization requires it every 30 days.
+You might need to repeat these steps periodically, for example, if your organization requires it every 30 days.
 
 ## What happens if you don't choose Grant access when prompted?
 <a name="deny"></a>

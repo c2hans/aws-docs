@@ -14,8 +14,6 @@ Create an AWS Relational Database Service (RDS) Aurora stack using either multi-
 ## Change Type Details
 <a name="ct-2jvzjwunghrhy-DARc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2jvzjwunghrhy |

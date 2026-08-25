@@ -14,8 +14,6 @@ Use to update properties of an existing Target Group for a Network Load Balancer
 ## Change Type Details
 <a name="ct-1x66wvkjw2zp5-MATu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1x66wvkjw2zp5 |

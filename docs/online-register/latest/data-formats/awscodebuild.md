@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsc
 
 AWS CodeBuild provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="codebuild-BatchGetBuildBatches"></a>[BatchGetBuildBatches](https://docs.aws.amazon.com/codebuild/latest/APIReference/API_BatchGetBuildBatches.html) | Get information about one or more build batches | Read |

@@ -9,8 +9,6 @@ Amazon Q Business is no longer open to new customers. For capabilities similar t
 
 The following table gives an overview of the Amazon Q Business AEM (Cloud) connector and its supported features.
 
-****
-
 - ****Security****
   - **Feature:** Authentication type / **Support:** Basic, OAuth 2.0 with Client Credentials Flow
   - **Feature:** Authentication credentials / **Support:** +  AEM (Cloud) host URL <br />+  Username of AEM user <br />+  Password of AEM user  +  AEM (Cloud) host URL <br />+  Client ID <br />+  Client secret <br />+  Private key <br />+  Organization ID <br />+  Technical Account ID <br />+  Adobe Identity Management System (IMS) host   Admin privileges required.

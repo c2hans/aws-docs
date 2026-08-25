@@ -44,6 +44,21 @@ Content-type: application/json
    "Items": [
       {
          "Arn": "string",
+         "ConcurrentExecutorConfiguration": {
+            "FunctionList": [
+               {
+                  "Alias": "string",
+                  "FunctionId": "string",
+                  "RunCondition": "string"
+               }
+            ],
+            "MaxConcurrency": number,
+            "Output": {
+               "string" : "string"
+            },
+            "Runtime": "string",
+            "TimeoutMilliseconds": number
+         },
          "CustomOutputConfiguration": {
             "Output": {
                "string" : "string"
@@ -69,6 +84,7 @@ Content-type: application/json
          "SequentialExecutorConfiguration": {
             "FunctionList": [
                {
+                  "Alias": "string",
                   "FunctionId": "string",
                   "RunCondition": "string"
                }

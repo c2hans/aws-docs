@@ -14,7 +14,7 @@ Compliance summary information for a specific resource.
 The compliance type.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 100.
-Pattern: `[A-Za-z0-9_\-]\w+|Custom:[a-zA-Z0-9_\-]\w+`
+Pattern: `^([A-Za-z0-9_\-]\w+|Custom:[a-zA-Z0-9_\-]\w+)$`
 Required: No
 
  ** CompliantSummary **   <a name="systemsmanager-Type-ResourceComplianceSummaryItem-CompliantSummary"></a>

@@ -11,4 +11,4 @@ You can use the Amazon Connect Health API to programmatically manage domains, co
 
 We recommend that you use the AWS SDKs to make programmatic API calls to Amazon Connect Health.
 
-This document was last published on August 13, 2026.
+This document was last published on August 24, 2026.

@@ -11,8 +11,6 @@ Internet Monitor aggregates CloudWatch metrics about traffic to your application
 
 Internet Monitor publishes data for your monitor at 5 minute intervals, and then makes the data available in several ways. The following table lists scenarios for accessing Internet Monitor data, and describes features of the data that is collected for each one.
 
-****
-
 | Feature | CloudWatch Logs | Export to S3 | Query interface | CloudWatch dashboard |
 | --- | --- | --- | --- | --- |
 | Enabled by default | Yes | No | Yes | Yes |

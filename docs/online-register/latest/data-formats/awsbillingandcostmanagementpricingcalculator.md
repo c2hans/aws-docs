@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsb
 
 AWS Billing And Cost Management Pricing Calculator provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="bcm-pricing-calculator-GetBillEstimate"></a>[GetBillEstimate](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_AWSBCMPricingCalculator_GetBillEstimate.html) | Retrieve details of a bill estimate including estimated cost | Read |

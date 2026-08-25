@@ -128,6 +128,7 @@ Required: No
                "Mode": "string",
                "PreferredProtocol": "string"
             },
+            "NestedVirtualizationEnabled": boolean,
             "OperatingSystemName": "string",
             "Protocols": [ "string" ],
             "RootVolumeSizeGib": number,

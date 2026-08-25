@@ -644,8 +644,6 @@ The following section outlines troubleshooting issues related to the application
 
 If your web browser allows this granularity, you can enable third-party cookies only for AWS Cloud9. To do this, specify the following domains, depending on the supported AWS Regions where you want to use AWS Cloud9.
 
-****
-
 |  **AWS Region**  |  **Domains**  |
 | --- | --- |
 | US East (N. Virginia) |  `*.vfs.cloud9.us-east-1.amazonaws.com` <br /> `vfs.cloud9.us-east-1.amazonaws.com`  |

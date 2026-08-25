@@ -14,8 +14,6 @@ Modify the properties of an existing Amazon Simple Notification Service (SNS) to
 ## Change Type Details
 <a name="ct-0zzf0fjz76jmb-MMSu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-0zzf0fjz76jmb |

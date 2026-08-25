@@ -30,6 +30,8 @@ Exporting the Carbon emissions table requires the IAM permission `sustainability
 
    1. For **CUR 2.0**:
 
+      1. For **Billing view**, choose the appropriate values for **Type** and **View** that correspond to your billing group.
+
       1. Select **Include resource IDs** to include the IDs of each individual resource in the export.
 **Note**
 Including resource IDs creates individual line items for each of your resources. This might increase the size of your export significantly, based on your AWS usage.
@@ -86,9 +88,9 @@ Overwrite is not supported for exports of cost optimization recommendations.
    + This account
    + Another account
 
-1. If you choose **This Account **for **S3 bucket **name, choose **Configure **and do one of the following:
+1. If you choose **This Account** for **S3 bucket** name, choose **Configure** and do one of the following:
    + Select existing bucket.
-   + Choose **Create a bucket **enter **S3 bucket name **and then choose the **Region **where you want to create a new bucket
+   + Choose **Create a bucket**, enter **S3 bucket name**, and then choose the **Region** where you want to create a new bucket.
    + Review the **Bucket policy**. If you are selecting an existing bucket, you need to acknowledge that Data Exports will overwrite your existing S3 bucket policy. The new policy will allow both CUR and Data Exports to deliver exports.
 
 1. If you choose **Another account** enter **S3 bucket**, **S3 bucket owner**, which is the AWS account that owns the bucket, and **Region**

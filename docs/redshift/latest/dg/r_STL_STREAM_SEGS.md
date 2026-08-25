@@ -25,6 +25,7 @@ STL\_STREAM\_SEGS only contains queries run on main provisioned clusters. It doe
 | query  | integer | Query ID. The query column can be used to join other system tables and views. |
 | stream  | integer  | The set of concurrent segments of a query.  |
 | segment | integer | Number that identifies the query segment. |
+| query\_uuid | character(36) | A globally unique identifier (UUID) of the query. |
 
 ## Sample queries
 <a name="r_STL_STREAM_SEGS-sample-queries"></a>

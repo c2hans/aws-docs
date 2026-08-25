@@ -10,8 +10,6 @@ Amazon Kinesis Video Streams with WebRTC is not yet supported in the AWS GovClou
 
 Amazon Kinesis Video Streams with WebRTC is available in the following regions:
 
-****
-
 | Region Name | AWS Region Code |
 | --- | --- |
 | US East (Ohio) | us-east-2 |

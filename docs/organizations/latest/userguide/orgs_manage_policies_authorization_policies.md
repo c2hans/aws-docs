@@ -38,8 +38,6 @@ RCPs provide an ability to control which identities can access your resources. F
 
 The following table details general use cases for using an SCP and RCPs
 
-****
-
 |  | **Impacts** |
 | --- |--- |
 | **Use case** | **Policy type** | **Your identities** | **External identities** | **Your Resources** | **External resources (target of the request)** |

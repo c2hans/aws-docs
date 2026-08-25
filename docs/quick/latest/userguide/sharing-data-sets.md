@@ -26,6 +26,6 @@ If you have owner permissions on a dataset, use the following procedure to share
 
 1. For the **Permissions** column, choose a role for each user or group to give them permissions on the dataset.
 
-   Choose **Viewer** to allow the user to create analyses and datasets from the dataset. Choose **Owner** to allow the user to do that and also refresh, edit, delete, and reshare the dataset.
+   Choose **User** to allow them to create analyses and datasets from the dataset. Choose **Owner** to allow them to do that and also refresh, edit, delete, and reshare the dataset.
 
    Users receive emails with a link to the dataset. Groups don't receive invitation emails.

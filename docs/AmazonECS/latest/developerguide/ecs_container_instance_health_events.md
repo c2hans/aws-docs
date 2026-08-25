@@ -25,6 +25,12 @@ The container agent monitors required daemon tasks on the container instance. If
 
 Availability: Amazon ECS Managed Instances launch type.
 
+**The Amazon ECS container agent loses connectivity to the Amazon ECS control plane.**
+
+Amazon ECS continuously monitors the connectivity between the container agent and the Amazon ECS control plane. When a container instance remains disconnected beyond a threshold, Amazon ECS marks the instance as impaired.
+
+Availability: Amazon ECS Managed Instances, AWS Fargate, and Amazon EC2 launch types.
+
 **The overall health status of the container instance changes.**
 
 Amazon ECS computes an overall health status from the individual health check results. When the overall status transitions, an event is generated.
@@ -129,6 +135,39 @@ Container instance health change events are delivered in the following format. F
                 "lastStatusChange": "2026-04-11T00:48:53Z",
                 "lastUpdated": "2026-04-11T00:48:09Z",
                 "statusReason": "Daemon task: EXAMPLE-4af2-4b3c-b9c1-EXAMPLEb2bbf is unhealthy"
+            }
+        ]
+    }
+}
+```
+
+**Sample agent connectivity health event**
+
+```
+{
+    "version": "0",
+    "id": "EXAMPLE-7d2a-9f1c-4b6e-EXAMPLE9c8d1",
+    "detail-type": "ECS Container Instance Health Change",
+    "source": "aws.ecs",
+    "account": "123456789012",
+    "time": "2026-07-29T22:34:13Z",
+    "region": "us-west-2",
+    "resources": [
+        "arn:aws:ecs:us-west-2:123456789012:container-instance/my-cluster/a1b2c3d4EXAMPLE"
+    ],
+    "detail": {
+        "clusterArn": "arn:aws:ecs:us-west-2:123456789012:cluster/my-cluster",
+        "containerInstanceArn": "arn:aws:ecs:us-west-2:123456789012:container-instance/my-cluster/a1b2c3d4EXAMPLE",
+        "capacityProviderName": "my-capacity-provider",
+        "ec2InstanceId": "i-0abcdef1234567890",
+        "overallStatus": "IMPAIRED",
+        "healthChecks": [
+            {
+                "type": "AGENT_CONNECTIVITY",
+                "status": "IMPAIRED",
+                "lastStatusChange": "2026-07-29T22:34:13Z",
+                "lastUpdated": "2026-07-29T22:34:09Z",
+                "statusReason": "Agent disconnected since 2026-07-29T22:34:13Z"
             }
         ]
     }

@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/run-com
 # AWS Systems Manager Run Command
 <a name="run-command"></a>
 
-Using Run Command, you can remotely and securely manage the configuration of your managed nodes. A *managed node* is any Amazon Elastic Compute Cloud (Amazon EC2) instance or non-EC2 machine in your [hybrid and multicloud](operating-systems-and-machine-types.md#supported-machine-types) environment that has been configured for Systems Manager. With Run Command, you can automate common administrative tasks and perform one-time configuration changes at scale. You can use Run Command from the AWS Management Console, the AWS Command Line Interface (AWS CLI), AWS Tools for Windows PowerShell, or the AWS SDKs. Run Command is offered at no additional cost. To get started with Run Command, open the [Systems Manager console](https://console.aws.amazon.com//systems-manager/run-command). In the navigation pane, choose **Run Command**.
+Using Run Command, you can remotely and securely manage the configuration of your managed nodes. A *managed node* is any Amazon Elastic Compute Cloud (Amazon EC2) instance or non-EC2 machine in your [hybrid and multicloud](operating-systems-and-machine-types.md#supported-machine-types) environment that has been configured for Systems Manager. With Run Command, you can automate common administrative tasks and perform one-time configuration changes at scale. You can use Run Command from the AWS Management Console, the AWS Command Line Interface (AWS CLI), AWS Tools for Windows PowerShell, or the AWS SDKs. Run Command is offered at no additional cost. To get started with Run Command, open the [Systems Manager console](https://console.aws.amazon.com/systems-manager/run-command). In the navigation pane, choose **Run Command**.
 
 This section includes the following topics.
 + [Setting up Run Command](run-command-setting-up.md)
@@ -22,8 +22,6 @@ The Run Command API follows an eventual consistency model, due to the distribute
 
 **Getting Started**
 The following table includes information to help you get started with Run Command.
-
-****
 
 | Topic | Details |
 | --- | --- |

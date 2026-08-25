@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/integrated
 
 AWS Control Tower is a service that's built on top of other AWS services, to assist you in setting up a well-architected environment. This chapter provides a brief overview of these services, including configuration information about the underlying services and how they work in AWS Control Tower.
 
-For more information about how to measure a well-architected environment, learn about the [AWS Well-Architected Tool](https://docs.aws.amazon.com//wellarchitected/latest/userguide/intro.html). Also see the [Management and Governance Cloud Environment Guide](https://docs.aws.amazon.com//wellarchitected/latest/management-and-governance-guide/management-and-governance-cloud-environment-guide.html).
+For more information about how to measure a well-architected environment, learn about the [AWS Well-Architected Tool](https://docs.aws.amazon.com/wellarchitected/latest/userguide/intro.html). Also see the [Management and Governance Cloud Environment Guide](https://docs.aws.amazon.com/wellarchitected/latest/management-and-governance-guide/management-and-governance-cloud-environment-guide.html).
 
 **Topics**
 + [AWS Backup options available](with-backup.md)

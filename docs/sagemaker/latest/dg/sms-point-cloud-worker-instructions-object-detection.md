@@ -29,8 +29,6 @@ If you see cuboids have already been added to the 3D point cloud when you open y
 
 To edit a cuboid, including moving, re-orienting, and changing cuboid dimensions, you must use shortcut keys. You can see a full list of shortcut keys in the **Shortcuts** menu in your UI. The following are important key-combinations that you should become familiar with before starting your labeling task.
 
-****
-
 | Mac Command | Windows Command | Action |
 | --- | --- | --- |
 | Cmd \+ Drag | Ctrl \+ Drag | Modify the dimensions of the cuboid. |

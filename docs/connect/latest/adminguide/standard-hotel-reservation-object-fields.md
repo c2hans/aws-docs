@@ -14,8 +14,8 @@ The following table lists all the fields in the Customer Profiles standard hotel
 | ReservationId | String | Unique identifier of the stanndard hotel reservation |
 | ConfirmationNumber | String | Confirmation number provided by the hotel or booking engine |
 | PreferenceRef | String | The identifier referencing the Preference object for the reservation |
-| Status | String | Current status of the reservation (e.g., confirmed, cancelled) |
-| TripType | String | Purpose or nature of the trip (e.g., leisure, business) |
+| Status | String | Current status of the reservation (for example, confirmed, cancelled) |
+| TripType | String | Purpose or nature of the trip (for example, leisure, business) |
 | BrandCode | String | Code representing the hotel brand |
 | HotelCode | String | Code identifying the specific hotel |
 | PhoneNumber | String | Contact phone number for the reservation |
@@ -103,9 +103,9 @@ The following table lists all the fields in the Customer Profiles standard hotel
 
 | Standard hotelReservation field | Type | Description |
 | --- | --- | --- |
-| Type | String | Payment method type (e.g., credit, debit, voucher) |
+| Type | String | Payment method type (for example, credit, debit, voucher) |
 | CreditCardToken | String | Tokenized credit card number |
-| CreditCardType | String | Type of credit card (e.g., Visa, Amex) |
+| CreditCardType | String | Type of credit card (for example, Visa, Amex) |
 | CreditCardExpiration | String | Credit card expiration date |
 | Cvv | String | Card verification value |
 | NameOnCreditCard | String | Name printed on the credit card |
@@ -119,9 +119,9 @@ The following table lists all the fields in the Customer Profiles standard hotel
 
 | Standard hotelReservation field | Type | Description |
 | --- | --- | --- |
-| Code | String | ISO code for the currency (e.g., USD) |
-| Name | String | Full name of the currency (e.g., US Dollar) |
-| Symbol | String | Symbol of the currency (e.g., $) |
+| Code | String | ISO code for the currency (for example, USD) |
+| Name | String | Full name of the currency (for example, US Dollar) |
+| Symbol | String | Symbol of the currency (for example, $) |
 
 **Cancellation data type**
 
@@ -136,7 +136,7 @@ The following table lists all the fields in the Customer Profiles standard hotel
 | --- | --- | --- |
 | CreationChannelId | String | ID for the channel through which the reservation was made |
 | LastUpdatedChannelId | String | ID for the channel that last updated the reservation |
-| Method | String | Method used for booking (e.g., web, mobile app) |
+| Method | String | Method used for booking (for example, web, mobile app) |
 
 **RatePlan data type**
 
@@ -150,7 +150,7 @@ The following table lists all the fields in the Customer Profiles standard hotel
 
 | Standard hotelReservation field | Type | Description |
 | --- | --- | --- |
-| ServiceType | String | Type of service (e.g., spa, breakfast) |
+| ServiceType | String | Type of service (for example, spa, breakfast) |
 | Description | String | Description of the service |
 | Cost | String | Cost of the service |
 

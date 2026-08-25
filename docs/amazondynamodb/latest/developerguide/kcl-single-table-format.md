@@ -115,7 +115,7 @@ After the migration reaches the COMPLETE state, the application operates exclusi
 <a name="kcl-single-table-best-practices"></a>
 
 Follow these best practices when you adopt single table format:
-+ After Phase 1 deployment, verify that the coordinator state entry `TableMigration3.5` reaches `DEPLOYED` status. Ensure there are no regressions before proceeding to Phase 2.
++ After Phase 1 deployment, verify that the coordinator state entry `TableMigration3.5` reaches `DEPLOYED` status. Make sure that there are no regressions before proceeding to Phase 2.
 + Monitor the `TableMigrationStatus` in the `TableMigration3.5` coordinator state entry to track progress through the DEPLOYED, PENDING, and COMPLETE states. The status is stored in the coordinator state table as a separate entry (not in the lease table) until the migration reaches COMPLETE.
 + Make sure the bake time before moving to COMPLETE is sufficient, because after that even a code rollback does not switch back to multiple tables. The application functions only in single table mode.
 + After the migration reaches COMPLETE, manually delete the old worker metrics and coordinator state tables. KCL does not delete these tables automatically—it only stops using them.

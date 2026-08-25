@@ -69,17 +69,74 @@ If you enable a stream within a CloudFormation template and also define a policy
 <a name="aws-properties-dynamodb-globaltable-resourcepolicy--examples--Attaching_a_resource-based_policy_to_a_table_created_using_the_::DynamoDB::GlobalTable_resource.--json"></a>
 
 ```
-{ "AWSTemplateFormatVersion": "2010-09-09", "Resources": {
-            "GlobalMusicCollection": { "Type": "AWS::DynamoDB::GlobalTable", "Properties": {
-            "TableName": "MusicCollection", "AttributeDefinitions": [{ "AttributeName": "Artist",
-            "AttributeType": "S" }], "KeySchema": [{ "AttributeName": "Artist", "KeyType": "HASH"
-            }], "BillingMode": "PAY_PER_REQUEST", "StreamSpecification": { "StreamViewType":
-            "NEW_AND_OLD_IMAGES" }, "Replicas": [ { "Region": "us-east-1", "ResourcePolicy": {
-            "PolicyDocument": { "Version": "2012-10-17",		 	 	  "Statement": [{ "Principal": { "AWS": [
-            "arn:aws:iam::111122223333:user/foobar" ] }, "Effect": "Allow", "Action":
-            "dynamodb:GetItem", "Resource": "*" }] } }, "ReplicaStreamSpecification": {
-            "ResourcePolicy": { "PolicyDocument": { "Version": "2012-10-17",		 	 	  "Statement": [{
-            "Principal": { "AWS": "arn:aws:iam::111122223333:user/foobar" }, "Effect": "Allow",
-            "Action": [ "dynamodb:GetRecords", "dynamodb:GetShardIterator",
-            "dynamodb:DescribeStream" ], "Resource": "*" }] } } } } ] } } } }
+{
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Resources": {
+    "GlobalMusicCollection": {
+      "Type": "AWS::DynamoDB::GlobalTable",
+      "Properties": {
+        "TableName": "MusicCollection",
+        "AttributeDefinitions": [
+          {
+            "AttributeName": "Artist",
+            "AttributeType": "S"
+          }
+        ],
+        "KeySchema": [
+          {
+            "AttributeName": "Artist",
+            "KeyType": "HASH"
+          }
+        ],
+        "BillingMode": "PAY_PER_REQUEST",
+        "StreamSpecification": {
+          "StreamViewType": "NEW_AND_OLD_IMAGES"
+        },
+        "Replicas": [
+          {
+            "Region": "us-east-1",
+            "ResourcePolicy": {
+              "PolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                  {
+                    "Principal": {
+                      "AWS": [
+                        "arn:aws:iam::111122223333:user/foobar"
+                      ]
+                    },
+                    "Effect": "Allow",
+                    "Action": "dynamodb:GetItem",
+                    "Resource": "*"
+                  }
+                ]
+              }
+            },
+            "ReplicaStreamSpecification": {
+              "ResourcePolicy": {
+                "PolicyDocument": {
+                  "Version": "2012-10-17",
+                  "Statement": [
+                    {
+                      "Principal": {
+                        "AWS": "arn:aws:iam::111122223333:user/foobar"
+                      },
+                      "Effect": "Allow",
+                      "Action": [
+                        "dynamodb:GetRecords",
+                        "dynamodb:GetShardIterator",
+                        "dynamodb:DescribeStream"
+                      ],
+                      "Resource": "*"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}
 ```

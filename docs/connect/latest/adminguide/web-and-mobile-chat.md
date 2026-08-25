@@ -77,7 +77,7 @@ Here's how you build this scenario:
 
 During an ongoing chat session, there's no limit to the number of times a customer can leave and rejoin an existing ongoing chat session. To accomplish this, use the [Wait](wait.md) block. For example, you might wait 12 hours for the customer to resume the chat before ending the chat session. If the customer tries to resume the chat after 12 hours, in the flow you can have an Amazon Lex bot ask if they're contacting you about the same issue or a different one.
 
-By specifying a wait time that's significantly shorter than the chat duration, you help ensure that customers have a good experience. For instance, for a 25-hour duration chat, it's possible for the customer to resume a chat after 24 hours and 58 minutes, and then be cut off after two minutes because the conversation ends at the 25-hour limit.
+By specifying a wait time that's significantly shorter than the chat duration, you help make sure that customers have a good experience. For instance, for a 25-hour duration chat, it's possible for the customer to resume a chat after 24 hours and 58 minutes, and then be cut off after two minutes because the conversation ends at the 25-hour limit.
 
 **Tip**
 If you're using Amazon Lex with chat, note that the default session timeout for an Amazon Lex session is 5 minutes. The total duration for a session can't exceed 24 hours. To change the session timeout, see [Setting the Session Timeout](https://docs.aws.amazon.com/lex/latest/dg/context-mgmt.html#context-mgmt-session-timeoutg) in the *Amazon Lex Developer Guide*.
@@ -85,7 +85,7 @@ If you're using Amazon Lex with chat, note that the default session timeout for 
 ## Pricing
 <a name="web-and-mobile-chat-pricing"></a>
 
-Chat is charged on a per use basis. There are no required up-front payments, long-term commitments, or minimum monthly fees. You pay per chat message, independently of the number of agents or customers using it. Regional pricing may vary. For more information, see [Connect Customer pricing](https://aws.amazon.com/connect/pricing/).
+Chat is charged on a per use basis. There are no required up-front payments, long-term commitments, or minimum monthly fees. You pay per chat message, independently of the number of agents or customers using it. Regional pricing might vary. For more information, see [Connect Customer pricing](https://aws.amazon.com/connect/pricing/).
 
 ## More information
 <a name="chat-more-info"></a>

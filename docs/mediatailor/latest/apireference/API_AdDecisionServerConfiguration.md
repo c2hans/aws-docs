@@ -15,6 +15,11 @@ The HTTP request configuration parameters for the ad decision server.
 Type: [HttpRequest](API_HttpRequest.md) object
 Required: No
 
+ ** VastResponse **   <a name="mediatailor-Type-AdDecisionServerConfiguration-VastResponse"></a>
+The settings that control how MediaTailor processes VAST responses from the ad decision server.
+Type: [VastResponse](API_VastResponse.md) object
+Required: No
+
 ## See Also
 <a name="API_AdDecisionServerConfiguration_SeeAlso"></a>
 

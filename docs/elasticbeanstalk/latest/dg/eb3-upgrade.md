@@ -22,8 +22,6 @@ If the root directory contains a `platform.yaml` file specifying a custom platfo
 ## Options
 <a name="eb3-upgradeoptions"></a>
 
-****
-
 |  Name  |  Description  |
 | --- | --- |
 | `--force` | Upgrades without requiring you to confirm the environment name before starting the upgrade process. |

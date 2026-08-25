@@ -14,8 +14,6 @@ Create an Amazon Relational Database Service (RDS) DB instance. To provision an 
 ## Change Type Details
 <a name="ct-2z60dyvto9g6c-DARc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2z60dyvto9g6c |

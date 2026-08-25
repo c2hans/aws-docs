@@ -134,7 +134,7 @@ The following is an example JSON request to a Lambda function:
 The request is divided into two parts:
 + Contact data—This is always passed by Connect Customer for every contact. Some parameters are optional.
 
-  This section may include attributes that have been previously associated with a contact, such as when using a **Set contact attributes** block in a flow. This map may be empty if there aren't any saved attributes.
+  This section might include attributes that have been previously associated with a contact, such as when using a **Set contact attributes** block in a flow. This map might be empty if there aren't any saved attributes.
 
   The following image shows where these attributes would appear in the properties page of a **Set contact attributes**.
 ![The properties page of the Set contact attributes block.](http://docs.aws.amazon.com/connect/latest/adminguide/images/lambda-setAttribute.png)
@@ -270,7 +270,7 @@ If response validation is set to JSON, then Lambda function can return even a ne
 }
 ```
 
-You may return any result as long as they are simple key-value pairs.
+You can return any result as long as they are simple key-value pairs.
 
 ## Consume the Lambda function response
 <a name="process-function-response"></a>

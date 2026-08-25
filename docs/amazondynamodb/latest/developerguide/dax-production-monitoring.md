@@ -16,5 +16,5 @@ AWS has improved the `CPUUtilization` metric's granularity. You might observe ch
 +  Network bytes consumption, so that you can determine if you should use more nodes or a larger node type in your cluster. To monitor consumption, you can set alerts on `BaselineNetworkBytesInUtilization` and `BaselineNetworkBytesOutUtilization` metrics available in CloudWatch, which indicates percentage consumption of available network bandwidth for your instance type, for ingress and egress traffic respectively.
 + Cache memory utilization and evicted size, so that you can determine whether the cluster's node type has sufficient memory to hold your working set, and if not, switch to a larger node type.
 **Note**
- In case of a large number of cache misses and writes, cache memory utilization can increase up to 100% and may cause availability downtime.
+ In case of a large number of cache misses and writes, cache memory utilization can increase up to 100% and might cause availability downtime.
 +  Client connections, so that you can monitor for any unexplained spikes in connections to the cluster.

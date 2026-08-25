@@ -21,8 +21,6 @@ To connect to a data source using the Amazon Bedrock API, send a [CreateDataSour
 
 The following fields are required:
 
-****
-
 | Field | Basic description |
 | --- | --- |
 | knowledgeBaseId | The ID of the knowledge base. |
@@ -30,8 +28,6 @@ The following fields are required:
 | dataSourceConfiguration | Specify the data source service or type in the type field and include the corresponding field. For more details about service-specific configurations, select the topic for the service from the topics at the bottom of this page. |
 
 The following fields are optional:
-
-****
 
 | Field | Use case |
 | --- | --- |

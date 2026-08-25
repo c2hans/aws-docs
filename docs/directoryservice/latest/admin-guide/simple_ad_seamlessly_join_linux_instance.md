@@ -33,10 +33,10 @@ For information about how to process and delegate permissions to your service ac
 ### Create the secrets to store the domain service account
 <a name="-create-secrets"></a>
 
-You can use AWS Secrets Manager to store the domain service account. For more information, see [Create an AWS Secrets Manager secret](https://docs.aws.amazon.com//secretsmanager/latest/userguide/create_secret.html).
+You can use AWS Secrets Manager to store the domain service account. For more information, see [Create an AWS Secrets Manager secret](https://docs.aws.amazon.com/secretsmanager/latest/userguide/create_secret.html).
 
 **Note**
-There are fees associated with Secrets Manager. For more information see, [Pricing](https://docs.aws.amazon.com//secretsmanager/latest/userguide/intro.html#asm_pricing) in the *AWS Secrets Manager User Guide*.
+There are fees associated with Secrets Manager. For more information see, [Pricing](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html#asm_pricing) in the *AWS Secrets Manager User Guide*.
 
 **To create secrets and store the domain service account information**
 
@@ -201,7 +201,7 @@ AmazonSSMDirectoryServiceAccess provides the permissions to join instances to an
 1. In the **Application and OS Image (Amazon Machine Image)** section, choose a Linux AMI you wish to launch.
 **Note**
 The AMI used must have AWS Systems Manager (SSM Agent) version 2.3.1644.0 or higher. To check the installed SSM Agent version in your AMI by launching an instance from that AMI, see [Getting the currently installed SSM Agent version](https://docs.aws.amazon.com/systems-manager/latest/userguide/ssm-agent-get-version.html). If you need to upgrade the SSM Agent, see [Installing and configuring SSM Agent on EC2 instances for Linux](https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-install-ssm-agent.html).
-SSM uses the `aws:domainJoin` plugin when joining a Linux instance to a Active Directory domain. The plugin changes the hostname for the Linux instances to the format EC2AMAZ-{{XXXXXXX}}. For more information about `aws:domainJoin`, see [AWS Systems Manager command document plugin reference](https://docs.aws.amazon.com//systems-manager/latest/userguide/documents-command-ssm-plugin-reference.html#aws-domainJoin) in the *AWS Systems Manager User Guide*.
+SSM uses the `aws:domainJoin` plugin when joining a Linux instance to a Active Directory domain. The plugin changes the hostname for the Linux instances to the format EC2AMAZ-{{XXXXXXX}}. For more information about `aws:domainJoin`, see [AWS Systems Manager command document plugin reference](https://docs.aws.amazon.com/systems-manager/latest/userguide/documents-command-ssm-plugin-reference.html#aws-domainJoin) in the *AWS Systems Manager User Guide*.
 
 1. In the **Instance type** section, choose the instance type you would like to use from **Instance type** dropdown list.
 
@@ -213,7 +213,7 @@ This is the only chance for you to save the private key file.
 
 1. Choose one of the public subnets in your VPC from the **Subnet** dropdown list. The subnet you choose must have all external traffic routed to an internet gateway. If this is not the case, you won't be able to connect to the instance remotely.
 
-   For more information on how to connect to a internet gateway, see [Connect to the internet using an internet gateway](https://docs.aws.amazon.com//vpc/latest/userguide/VPC_Internet_Gateway.html) in the *Amazon VPC User Guide*.
+   For more information on how to connect to a internet gateway, see [Connect to the internet using an internet gateway](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Internet_Gateway.html) in the *Amazon VPC User Guide*.
 
 1. Under **Auto-assign public IP**, choose **Enable**.
 

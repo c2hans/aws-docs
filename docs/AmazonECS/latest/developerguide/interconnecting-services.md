@@ -43,8 +43,6 @@ If you need an application to connect to other applications that run in Amazon E
 
 The following table covers the compatibility between these options and the task network modes. In the table, "client" refers to the application that's making the connections from inside an Amazon ECS task.
 
-****
-
 | Interconnection Options | Bridged | `awsvpc` | Host |
 | --- | --- | --- | --- |
 | Service discovery | yes, but requires clients be aware of SRV records in DNS without hostPort. | yes | yes, but requires clients be aware of SRV records in DNS without hostPort. |

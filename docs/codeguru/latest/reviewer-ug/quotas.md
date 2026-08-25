@@ -12,8 +12,6 @@ The following table lists the current quota in Amazon CodeGuru Reviewer. This qu
 ## Repositories
 <a name="limits-reviewer-all"></a>
 
-****
-
 <table>
 <thead>
   <tr><th>Resource</th><th>Default</th></tr>
@@ -32,8 +30,6 @@ The following table lists the current quota in Amazon CodeGuru Reviewer. This qu
 <a name="limits-tags"></a>
 
 Tag limits apply to tags on CodeGuru Reviewer associated repository resources.
-
-****
 
 | Resource | Default |
 | --- | --- |

@@ -18,6 +18,12 @@ POST /v2/email/outbound-emails HTTP/1.1
 Content-type: application/json
 
 {
+   "ConfigurationOverrides": {
+      "Tracking": {
+         "ClickTrackingEnabled": "{{string}}",
+         "OpenTrackingEnabled": "{{string}}"
+      }
+   },
    "ConfigurationSetName": "{{string}}",
    "Content": {
       "Raw": {
@@ -118,6 +124,11 @@ The request does not use any URI parameters.
 <a name="API_SendEmail_RequestBody"></a>
 
 The request accepts the following data in JSON format.
+
+ ** [ConfigurationOverrides](#API_SendEmail_RequestSyntax) **   <a name="SES-SendEmail-request-ConfigurationOverrides"></a>
+An object that overrides, for this message only, settings that would otherwise apply to it. Each setting that you don't override keeps the value that already applies.
+Type: [ConfigurationOverrides](API_ConfigurationOverrides.md) object
+Required: No
 
  ** [ConfigurationSetName](#API_SendEmail_RequestSyntax) **   <a name="SES-SendEmail-request-ConfigurationSetName"></a>
 The name of the configuration set to use when sending the email.

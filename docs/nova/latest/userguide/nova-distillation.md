@@ -45,7 +45,7 @@ The data augmentation phase uses SageMaker Training Jobs to generate high-qualit
 ### IAM role
 <a name="nova-distillation-training-job-data-augment-iam"></a>
 
-To create IAM roles and attach policies, see [Creating roles and attaching policies (console)](https://docs.aws.amazon.com//IAM/latest/UserGuide/access_policies_job-functions_create-policies.html). If you use AWS CLI, follow instructions in [create-role](https://docs.aws.amazon.com//cli/latest/reference/iam/create-role.html) and [attach-role-policy](https://docs.aws.amazon.com//cli/latest/reference/iam/attach-role-policy.html). For more information, see [How to use SageMaker AI execution roles](https://docs.aws.amazon.com//sagemaker/latest/dg/sagemaker-roles.html) from the *SageMaker AI Developer Guide*.
+To create IAM roles and attach policies, see [Creating roles and attaching policies (console)](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_job-functions_create-policies.html). If you use AWS CLI, follow instructions in [create-role](https://docs.aws.amazon.com/cli/latest/reference/iam/create-role.html) and [attach-role-policy](https://docs.aws.amazon.com/cli/latest/reference/iam/attach-role-policy.html). For more information, see [How to use SageMaker AI execution roles](https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-roles.html) from the *SageMaker AI Developer Guide*.
 
 The following are example commands for your reference.
 
@@ -137,7 +137,7 @@ aws iam put-role-policy \
 ### Amazon VPC configuration
 <a name="nova-distillation-training-job-data-augment-vpc"></a>
 
-To create Amazon VPC configuration for SageMaker Training Jobs using the AWS Management Console, follow instructions in [Configure Your private VPC for SageMaker AI training (console)](https://docs.aws.amazon.com//sagemaker/latest/dg/train-vpc.html).
+To create Amazon VPC configuration for SageMaker Training Jobs using the AWS Management Console, follow instructions in [Configure Your private VPC for SageMaker AI training (console)](https://docs.aws.amazon.com/sagemaker/latest/dg/train-vpc.html).
 
 **Create a new Amazon VPC**
 
@@ -212,7 +212,7 @@ You need two types of Amazon S3 storage. Customer-managed Amazon S3 bucket store
 
 Service-managed Amazon S3 bucket stores model weights. A service-managed Amazon S3 bucket is created automatically during your first training job. It has restricted access controls with specific paths accessible via manifest files only.
 
-To create a bucket in a specific AWS Region, use the [create-bucket](https://docs.aws.amazon.com//cli/latest/reference/s3api/create-bucket.html) CLI command.
+To create a bucket in a specific AWS Region, use the [create-bucket](https://docs.aws.amazon.com/cli/latest/reference/s3api/create-bucket.html) CLI command.
 
 Example command to create an Amazon S3 bucket with AWS KMS encryption. Replace `{kms_key_arn}` with your AWS KMS key ARN. You'll need to create a AWS KMS key first if you haven't already done so.
 
@@ -235,7 +235,7 @@ aws s3api create-bucket \
 
 Before you start a training job, prepare your data.
 
-**Data format requirement -** Your input dataset must be in JSONL format with each line containing a sample in converse format for more information follow [Preparing data for distilling understanding models](https://docs.aws.amazon.com//nova/latest/userguide/custom-distill-prepare.html).
+**Data format requirement -** Your input dataset must be in JSONL format with each line containing a sample in converse format for more information follow [Preparing data for distilling understanding models](https://docs.aws.amazon.com/nova/latest/userguide/custom-distill-prepare.html).
 
 **Dataset constraints**
 + Minimum prompts: 100
@@ -252,8 +252,6 @@ aws s3 cp /path/to/input-data/ s3://customer-input-data-bucket/ —recursive
 **Data augmentation recipe**
 
 You can get the distillation recipe from the [SageMaker HyperPod recipes](https://github.com/aws/sagemaker-hyperpod-recipes/tree/main/recipes_collection/recipes) repository. The distillation recipe is under the directory: `recipes-collection/recipes/fine-tuning/nova`. The data augmentation process is controlled by a YAML configuration file. Below is a detailed explanation of each parameter. All are required fields.
-
-****
 
 | Parameter | Description |
 | --- | --- |
@@ -290,11 +288,11 @@ Model selection
 Performance optimization
 + Start with recommended temperature (0.7) and top\_p (0.9)
 + Validate augmented data quality before fine-tuning
-+ Follow the guidelines in [Selecting hyperparameters](https://docs.aws.amazon.com//nova/latest/userguide/customize-fine-tune-hyperparameters.html) to adjust the hyperparameters
++ Follow the guidelines in [Selecting hyperparameters](https://docs.aws.amazon.com/nova/latest/userguide/customize-fine-tune-hyperparameters.html) to adjust the hyperparameters
 
 **Starting a job with PySDK**
 
-The following sample notebook demonstrates how to run a SageMaker training job for distillation. For more information, see [Use a SageMaker AI estimator to run a training job](https://docs.aws.amazon.com//sagemaker/latest/dg/docker-containers-adapt-your-own-private-registry-estimator.html).
+The following sample notebook demonstrates how to run a SageMaker training job for distillation. For more information, see [Use a SageMaker AI estimator to run a training job](https://docs.aws.amazon.com/sagemaker/latest/dg/docker-containers-adapt-your-own-private-registry-estimator.html).
 
 ```
 import os

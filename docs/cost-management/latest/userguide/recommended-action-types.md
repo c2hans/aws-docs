@@ -20,8 +20,6 @@ The following table provides an overview of the different recommended actions, o
 **Note**
 \* These action types are always visible. Additional action types require the `bcm-recommended-actions:ListRecommendedActions` permission. For more information, see [Billing and Cost Management recommended actions policies](https://docs.aws.amazon.com/cost-management/latest/userguide/billing-permissions-ref.html#allows-recommended-actions-access).
 
-****
-
 - ****Critical alerts****
   - **Feature:** PAYMENTS / **Action type:** Payments past due / **Recommended action:** Make a payment / **Example:** You have USD $603.23, EUR €50.02 past due. To avoid potential disruption in using AWS services, please make a payment.
   - **Feature:** PAYMENTS / **Action type:** Invalid payment method / **Recommended action:** Verify payment method / **Example:** Your default payment method is invalid. To avoid payment failures and potential disruption in using AWS services, please contact your bank to determine the reason and visit the payments page to verify your payment method.

@@ -14,8 +14,6 @@ Use to create an Amazon ElastiCache cluster (one or more cache nodes) that uses 
 ## Change Type Details
 <a name="ct-0xi6q7uwuwrqe-DACc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-0xi6q7uwuwrqe |

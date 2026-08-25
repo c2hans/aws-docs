@@ -58,7 +58,7 @@ If you can't update your indexing configuration due to incompatible fleet metric
 ## Troubleshooting location indexing and geoqueries
 <a name="fleet-index-geoquery-troubleshooting"></a>
 
-To troubleshoot mismatched type errors in location indexing and geoqueries, you can enable CloudWatch logs. For more information about how to monitor AWS IoT using CloudWatch, follow [the step-by-step guide](https://docs.aws.amazon.com//iot/latest/developerguide/cloud-watch-logs.html).
+To troubleshoot mismatched type errors in location indexing and geoqueries, you can enable CloudWatch logs. For more information about how to monitor AWS IoT using CloudWatch, follow [the step-by-step guide](https://docs.aws.amazon.com/iot/latest/developerguide/cloud-watch-logs.html).
 
 When you index location data using geoqueries, the location fields you specify in `geoLocations` must match the location fields you pass to `UpdateIndexingConfiguration`. If there's a mismatch, fleet indexing sends a mismatched type error to CloudWatch. The error log contains the field name, the value that could not be converted, and the thing name for the device.
 

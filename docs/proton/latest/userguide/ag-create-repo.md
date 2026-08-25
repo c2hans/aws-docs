@@ -14,7 +14,7 @@ You can create a link to your repository using the console or CLI. When you crea
 
 **Create a link to your repository as shown in the following console steps.**
 
-1. In the [AWS Proton console](https://console.aws.amazon.com//proton/), choose **Repositories**.
+1. In the [AWS Proton console](https://console.aws.amazon.com/proton/), choose **Repositories**.
 
 1. Choose **Create repository**.
 

@@ -11,7 +11,7 @@ When you set up your landing zone, one of the shared accounts created is the *lo
 
 As a best practice, you should collect monitoring data from all of the parts of your AWS setup into your logs, so that you can more easily debug a multi-point failure if one occurs. AWS provides several tools for monitoring your resources and activity in your landing zone.
 
-For example, the status of your controls is monitored constantly. You can see their status at a glance in the AWS Control Tower console, or programmatically by means of [the AWS Control Tower APIs](https://docs.aws.amazon.com//controltower/latest/APIReference/API_Operations.html). The health and status of the accounts you provisioned in Account Factory also is monitored constantly.
+For example, the status of your controls is monitored constantly. You can see their status at a glance in the AWS Control Tower console, or programmatically by means of [the AWS Control Tower APIs](https://docs.aws.amazon.com/controltower/latest/APIReference/API_Operations.html). The health and status of the accounts you provisioned in Account Factory also is monitored constantly.
 
 **View logged actions from the Activities page**
 

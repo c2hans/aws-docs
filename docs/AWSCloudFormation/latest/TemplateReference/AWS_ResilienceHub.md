@@ -9,4 +9,5 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 **Resource types**
 + [AWS::ResilienceHub::App](aws-resource-resiliencehub-app.md)
++ [AWS::ResilienceHub::RecommendationTemplate](aws-resource-resiliencehub-recommendationtemplate.md)
 + [AWS::ResilienceHub::ResiliencyPolicy](aws-resource-resiliencehub-resiliencypolicy.md)

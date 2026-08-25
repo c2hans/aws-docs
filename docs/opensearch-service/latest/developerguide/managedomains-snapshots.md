@@ -22,8 +22,6 @@ If your cluster enters red status, all automated snapshots fail while the cluste
 
 To create snapshots manually, you need to work with IAM and Amazon S3. Make sure you meet the following prerequisites before you attempt to take a snapshot:
 
-****
-
 | Prerequisite  | Description |
 | --- | --- |
 | S3 bucket | Create an S3 bucket to store manual snapshots for your OpenSearch Service domain. For instructions, see [Creating a general purpose bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/create-bucket-overview.html) in the *Amazon Simple Storage Service User Guide*.<br />Remember the name of the bucket to use it in the following places:+  The `Resource` statement of the IAM policy attached to your IAM role <br />+  The Python client used to register a snapshot repository (if you use this method)  Do not apply an Amazon Glacier lifecycle rule to this bucket. Manual snapshots don't support the Amazon Glacier storage class.  |

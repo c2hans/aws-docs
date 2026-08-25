@@ -43,7 +43,7 @@ You can increase your provisioned SSD IOPS after you create the file system. Kee
      +  Choose **Recommended throughput capacity** if you want Amazon FSx to automatically choose the throughput capacity based on the amount of storage capacity that you chose.
      +  Choose **Specify throughput capacity** if you want to specify the amount of throughput capacity. If you choose this option, a **Throughput capacity** dropdown appears and is populated based on the deployment type that you chose. You can also choose the number of HA pairs (up to 12). For more information, see [Managing high-availability (HA) pairs](HA-pairs.md).
 
-     Throughput capacity is the sustained speed at which the file server that hosts your file system can serve data. For more information, see [Amazon FSx for NetApp ONTAP performancePerformance](performance.md).
+     Throughput capacity is the sustained speed at which the file server that hosts your file system can serve data. For more information, see [Amazon FSx for NetApp ONTAP performance](performance.md).
 
 1. In the **Networking** section, provide the following information:
    + For **Virtual Private Cloud (VPC)**, choose the VPC that you want to associate with your file system.
@@ -53,7 +53,7 @@ You can increase your provisioned SSD IOPS after you create the file system. Kee
    + (Multi-AZ only) For **VPC route tables**, specify the VPC route tables to create your file system's endpoints. Select all VPC route tables associated with the subnets in which your clients are located. By default, Amazon FSx selects your VPC's default route table. For more information, see [Accessing data from outside the deployment VPC](supported-fsx-clients.md#access-from-outside-deployment-vpc).
 **Note**
 Amazon FSx manages these route tables for Multi-AZ file systems using tag-based authentication. These route tables are tagged with `Key: AmazonFSx; Value: ManagedByAmazonFSx`. When creating FSx for ONTAP Multi-AZ file systems using CloudFormation we recommend that you add the `Key: AmazonFSx; Value: ManagedByAmazonFSx` tag manually.
-   + For **Network type**, select either **IPv4** (for only IPv4 support) or **Dual-stack** (for both IPv4 and IPv6 support). You can change the network type of an existing file system at any time. For more information, see [Changing network typeTo change a file system's network type (console)](manage-network-type.md#change-network-type).
+   + For **Network type**, select either **IPv4** (for only IPv4 support) or **Dual-stack** (for both IPv4 and IPv6 support). You can change the network type of an existing file system at any time. For more information, see [Changing network type](manage-network-type.md#change-network-type).
 **Note**
 If you intend to create an FSx for ONTAP file system that uses dual-stack mode, you must first assign an Amazon-provided IPv6 CIDR block to your VPC and subnets. For more information, see [Add IPv6 support for your VPC](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-migrate-ipv6-add.html) in the *Amazon Virtual Private Cloud User Guide*.
    + (Multi-AZ only) **Endpoint IPv4 address range** specifies the IPv4 address range in which the endpoints to access your file system are created.

@@ -149,11 +149,9 @@ Sign in with the same user that you set up in [Getting started with CodeDeploy](
 1. In **Revision location**, enter the location of the sample application for your operating system and Region.
 
    **For Amazon Linux and RHEL Amazon EC2 instances**
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/codedeploy/latest/userguide/tutorials-auto-scaling-group-create-deployment.html)
 
    **For Windows Server Amazon EC2 instances**
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/codedeploy/latest/userguide/tutorials-auto-scaling-group-create-deployment.html)
 
     **For Ubuntu Server Amazon EC2 instances**

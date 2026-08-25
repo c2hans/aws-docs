@@ -37,8 +37,6 @@ Oracle Database 26ai (26.0.0.0) includes several new parameters and parameters w
 
 The following table shows the new Amazon RDS parameters for Oracle Database 26ai (26.0.0.0).
 
-****
-
 |  Name  |  Range of values  | Default value |  Modifiable  |  Description  |
 | --- | --- | --- | --- | --- |
 | [allow\_legacy\_reco\_protocol](https://docs.oracle.com/en/database/oracle/oracle-database/26/refrn/ALLOW_LEGACY_RECO_PROTOCOL.html) | `TRUE \| FALSE` | `TRUE` | N | Specifies whether the distributed transaction recovery process (RECO) uses the legacy recovery protocol or the upgraded protocol. |
@@ -97,8 +95,6 @@ The following table shows the new Amazon RDS parameters for Oracle Database 26ai
 
 The `compatible` parameter has a new maximum value for Oracle Database 26ai (26.0.0.0) on Amazon RDS. The following table shows the new default value.
 
-****
-
 |  Parameter name  |  Oracle Database 26ai (26.0.0.0) maximum value  |
 | --- | --- |
 | [ compatible](https://docs.oracle.com/en/database/oracle/oracle-database/26/refrn/COMPATIBLE.html) | 23.6.0 |
@@ -133,8 +129,6 @@ Oracle Database 21c (21.0.0.0) includes several new parameters and parameters wi
 
 The following table shows the new Amazon RDS parameters for Oracle Database 21c (21.0.0.0).
 
-****
-
 |  Name  |  Range of values  | Default value |  Modifiable  |  Description  |
 | --- | --- | --- | --- | --- |
 |  <br />[blockchain\_table\_max\_no\_drop](https://docs.oracle.com/en/database/oracle/oracle-database/21/refrn/BLOCKCHAIN_TABLE_MAX_NO_DROP.html#GUID-26AF15B2-5621-4602-AA6E-D92842E4285C)<br />  | `NONE \| 0` | `NONE` | Y | Lets you control the maximum amount of idle time that can be specified when creating a blockchain table. |
@@ -157,8 +151,6 @@ The following table shows the new Amazon RDS parameters for Oracle Database 21c 
 <a name="Oracle.Concepts.FeatureSupport.21c.parameters.compatible"></a>
 
 The `compatible` parameter has a new maximum value for Oracle Database 21c (21.0.0.0) on Amazon RDS. The following table shows the new default value.
-
-****
 
 |  Parameter name  |  Oracle Database 21c (21.0.0.0) maximum value  |
 | --- | --- |
@@ -194,8 +186,6 @@ Oracle Database 19c (19.0.0.0) includes several new parameters and parameters wi
 
 The following table shows the new Amazon RDS parameters for Oracle Database 19c (19.0.0.0).
 
-****
-
 |  Name  |  Values  |  Modifiable  |  Description  |
 | --- | --- | --- | --- |
 |  [ lob\_signature\_enable](https://docs.oracle.com/en/database/oracle/oracle-database/19/refrn/lob_signature_enable.html#GUID-62997AB5-1084-4C9A-8258-8CB695C7A1D6)  | TRUE, FALSE (default) | Y | Enables or disables the LOB locator signature feature. |
@@ -205,8 +195,6 @@ The following table shows the new Amazon RDS parameters for Oracle Database 19c 
 <a name="Oracle.Concepts.FeatureSupport.19c.Parameters.compatible"></a>
 
 The `compatible` parameter has a new maximum value for Oracle Database 19c (19.0.0.0) on Amazon RDS. The following table shows the new default value.
-
-****
 
 |  Parameter name  |  Oracle Database 19c (19.0.0.0) maximum value  |
 | --- | --- |

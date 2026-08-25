@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/root-user-best-prac
 # Root user best practices for your AWS account
 <a name="root-user-best-practices"></a>
 
-When you first create an AWS account, you begin with a default set of credentials with complete access to all AWS resources in your account. This identity is called the [AWS account root user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html). We strongly recommend you don’t access the AWS account root user unless you have a [task that requires root user credentials](https://docs.aws.amazon.com/IAM/latest/UserGuide/root-user-tasks.html#root-user-tasks). You need to secure your root user credentials and your account recovery mechanisms to help ensure you don’t expose your highly privileged credentials for unauthorized use.
+When you first create an AWS account, you begin with a default set of credentials with complete access to all AWS resources in your account. This identity is called the [AWS account root user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html). We strongly recommend you don’t access the AWS account root user unless you have a [task that requires root user credentials](https://docs.aws.amazon.com/IAM/latest/UserGuide/root-user-tasks.html#root-user-tasks). You need to secure your root user credentials and your account recovery mechanisms to help make sure you don’t expose your highly privileged credentials for unauthorized use.
 
 For multiple AWS accounts managed through AWS Organizations, we recommend removing root user credentials from member accounts to help prevent unauthorized use. You can remove the root user password, access keys, signing certificates, and deactivate and delete multi-factor authentication (MFA). Member accounts can't sign in to their root user or perform password recovery for their root user. For more information, see [Centrally manage root access for member accounts](id_root-user.md#id_root-user-access-management).
 
@@ -65,7 +65,7 @@ Since only a few tasks require the root user and you typically perform those tas
 ## Use multi-person approval for root user sign-in wherever possible
 <a name="ru-bp-multi"></a>
 
-Consider using multi-person approval to ensure that no one person can access both MFA and password for the root user. Some companies add an additional layer of security by setting up one group of administrators with access to the password, and another group of administrators with access to MFA. One member from each group must come together to sign in as the root user.
+Consider using multi-person approval to make sure that no one person can access both MFA and password for the root user. Some companies add an additional layer of security by setting up one group of administrators with access to the password, and another group of administrators with access to MFA. One member from each group must come together to sign in as the root user.
 
 ## Use a group email address for root user credentials
 <a name="ru-bp-group"></a>
@@ -75,10 +75,10 @@ Use an email address that is managed by your business and forwards received mess
 ## Restrict access to account recovery mechanisms
 <a name="ru-bp-recovery"></a>
 
-Ensure you develop a process to manage root user credential recovery mechanisms in case you need access to it during an emergency such as takeover of your administrative account.
-+ Ensure you have access to your root user email inbox so that you can [reset a lost or forgotten root user password](https://docs.aws.amazon.com/IAM/latest/UserGuide/reset-root-password.html).
+Make sure you develop a process to manage root user credential recovery mechanisms in case you need access to it during an emergency such as takeover of your administrative account.
++ Make sure you have access to your root user email inbox so that you can [reset a lost or forgotten root user password](https://docs.aws.amazon.com/IAM/latest/UserGuide/reset-root-password.html).
 + If MFA for your AWS account root user is lost, damaged, or not working, you can sign in using another MFA registered to the same root user credentials. If you lost access to all your MFAs, you need both the phone number and the email used to register your account, to be up to date and accessible to recover your MFA. For details, see [Recovering a root user MFA device](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa_lost-or-broken.html#root-mfa-lost-or-broken).
-+ If you choose not to store your root user password and MFA, then the phone number registered in your account can be used as an alternate way to recover root user credentials. Ensure you have access to the contact phone number, keep the phone number updated, and limit who has access to manage the phone number.
++ If you choose not to store your root user password and MFA, then the phone number registered in your account can be used as an alternate way to recover root user credentials. Make sure you have access to the contact phone number, keep the phone number updated, and limit who has access to manage the phone number.
 
 No one person should have access to both the email inbox and phone number since both are verification channels to recover your root user password. It is important to have two groups of individuals managing these channels. One group having access to your primary email address and another group having access to the primary phone number to recover access to your account as root user.
 
@@ -109,7 +109,7 @@ If the member accounts in your organization have root user credentials enabled, 
 ## Monitor access and usage
 <a name="ru-bp-monitor"></a>
 
-We recommend you use your current tracking mechanisms to monitor, alert, and report the sign in and use of root user credentials, including alerts that announce root user sign-in and usage. The following services can help to ensure that root user credential usage is tracked and perform security checks that can help prevent unauthorized use.
+We recommend you use your current tracking mechanisms to monitor, alert, and report the sign in and use of root user credentials, including alerts that announce root user sign-in and usage. The following services can help to make sure that root user credential usage is tracked and perform security checks that can help prevent unauthorized use.
 
 **Note**
 CloudTrail logs different sign-in events for the root user and privileged root user sessions. These privileged sessions allow tasks that require root user credentials to be performed in member accounts in your organization. You can use the sign-in event to identify the actions taken by the management account or a delegated administrator using [`sts:AssumeRoot`](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRoot.html). For more information, see [Track privileged tasks in CloudTrail](cloudtrail-track-privileged-tasks.md).

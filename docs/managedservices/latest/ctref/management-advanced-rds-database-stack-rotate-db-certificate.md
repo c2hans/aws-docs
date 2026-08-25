@@ -14,8 +14,6 @@ Rotate the DB certificate on an Amazon Relational Database Service (RDS) databas
 ## Change Type Details
 <a name="ct-1ezarc5xph3tq-MARr-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1ezarc5xph3tq |

@@ -24,7 +24,7 @@ To provide periodic updates to Connect Customer Customer Profiles, you can integ
 ![The Select data source page.](http://docs.aws.amazon.com/connect/latest/adminguide/images/customer-profiles-cp-salesforce-source.png)
 
 1. On the **Establish connection** page, choose one of the following:
-   + **Use existing connection**: This allows you to reuse existing Amazon AppFlow resources you may have created in your AWS account..
+   + **Use existing connection**: This allows you to reuse existing Amazon AppFlow resources you might have created in your AWS account..
    + **Create new connection**: Enter the information required by the external application.
 ![The Establish connection page.](http://docs.aws.amazon.com/connect/latest/adminguide/images/customer-profiles-enable-establish-connection.png)
 

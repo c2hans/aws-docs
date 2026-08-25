@@ -36,9 +36,9 @@ All re:Post Private actions are logged by CloudTrail and are documented in the [
 + [UpdateSpace](https://docs.aws.amazon.com/repostprivate/latest/APIReference/API_UpdateSpace.html)
 
 re:Post Private supports logging the following Support actions as events in the CloudTrail log files:
-+ [CreateCase](https://docs.aws.amazon.com//awssupport/latest/APIReference/API_CreateCase.html)
-+ [AddCommunicationToCase](https://docs.aws.amazon.com//awssupport/latest/APIReference/API_AddCommunicationToCase.html)
-+ [ResolveCase](https://docs.aws.amazon.com//awssupport/latest/APIReference/API_ResolveCase.html)
++ [CreateCase](https://docs.aws.amazon.com/awssupport/latest/APIReference/API_CreateCase.html)
++ [AddCommunicationToCase](https://docs.aws.amazon.com/awssupport/latest/APIReference/API_AddCommunicationToCase.html)
++ [ResolveCase](https://docs.aws.amazon.com/awssupport/latest/APIReference/API_ResolveCase.html)
 
 Every event or log entry contains information about who generated the request. The identity information helps you determine the following:
 + Whether the request was made with root or AWS Identity and Access Management (IAM) user credentials.

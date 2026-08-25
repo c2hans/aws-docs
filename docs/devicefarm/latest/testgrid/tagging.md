@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/testgrid/tagging.html
 AWS Device Farm works with the AWS Resource Groups Tagging API. This API allows you to manage resources in your AWS account with *tags*. You can add tags to resources, such as projects and test runs.
 
 You can use tags to:
-+ Organize your AWS bill to reflect your own cost structure. To do this, sign up to get your AWS account bill with tag key values included. Then, to see the cost of combined resources, organize your billing information according to resources with the same tag key values. For example, you can tag several resources with an application name, and then organize your billing information to see the total cost of that application across several services. For more information, see [Cost Allocation and Tagging](https://docs.aws.amazon.com//awsaccountbilling/latest/aboutv2/cost-alloc-tags.html) in *About AWS Billing and Cost Management*.
++ Organize your AWS bill to reflect your own cost structure. To do this, sign up to get your AWS account bill with tag key values included. Then, to see the cost of combined resources, organize your billing information according to resources with the same tag key values. For example, you can tag several resources with an application name, and then organize your billing information to see the total cost of that application across several services. For more information, see [Cost Allocation and Tagging](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html) in *About AWS Billing and Cost Management*.
 + Control access through IAM policies. To do so, create a policy that allows access to a resource or set of resources using a tag value condition.
 + Identify and manage runs that have certain properties as tags, such as the branch used for testing.
 
@@ -22,7 +22,7 @@ You can use tags to:
 ## Tagging resources
 <a name="tagging-resources"></a>
 
-The AWS Resource Group Tagging API allows you to add, remove, or modify tags on resources. For more information, see the [AWS Resource Group Tagging API Reference](https://docs.aws.amazon.com//resourcegroupstagging/latest/APIReference/Welcome.html).
+The AWS Resource Group Tagging API allows you to add, remove, or modify tags on resources. For more information, see the [AWS Resource Group Tagging API Reference](https://docs.aws.amazon.com/resourcegroupstagging/latest/APIReference/Welcome.html).
 
 To tag a resource, use the [`TagResources`](https://docs.aws.amazon.com/resourcegroupstagging/latest/APIReference/API_TagResources.html) operation from the `resourcegroupstaggingapi` endpoint. This operation takes a list of ARNs from supported services and a list of key-value pairs. The value is optional. An empty string indicates that there should be no value for that tag. For example, the following Python example tags a series of project ARNs with the tag `build-config` with the value `release`:
 
@@ -46,7 +46,7 @@ To look up resources by their tags, use the `GetResources` operation from the `r
 + Tag value
 + Resource type (for example, `devicefarm:run`)
 
-For more information, see the [AWS Resource Group Tagging API Reference](https://docs.aws.amazon.com//resourcegroupstagging/latest/APIReference/Welcome.html).
+For more information, see the [AWS Resource Group Tagging API Reference](https://docs.aws.amazon.com/resourcegroupstagging/latest/APIReference/Welcome.html).
 
 The following example looks up Device Farm desktop browser testing sessions (`devicefarm:testgrid-session` resources) with the tag `stack` that have the value `production`:
 

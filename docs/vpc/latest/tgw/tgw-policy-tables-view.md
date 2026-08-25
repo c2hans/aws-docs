@@ -122,5 +122,5 @@ The following filters are supported for `GetTransitGatewayPolicyTableEntries`.
 | policy-rule.source-port | Filter by source port range |
 | policy-rule.destination-port | Filter by destination port range |
 | policy-rule.protocol | Filter by protocol |
-| policy-rule.meta-data.key | Filter by metadata key (reserved for future MetaData-enabled entries) |
-| policy-rule.meta-data.value | Filter by metadata value (reserved for future MetaData-enabled entries) |
+| policy-rule.meta-data.key | Filter by metadata key |
+| policy-rule.meta-data.value | Filter by metadata value |

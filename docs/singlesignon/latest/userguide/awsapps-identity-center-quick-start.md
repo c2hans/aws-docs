@@ -17,7 +17,7 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-id
 <a name="awsapps-quick-start-set-up-access-prerequisites"></a>
 
 Before you enable IAM Identity Center, confirm the following:
-+ **You have an AWS account** – If you do not have an AWS account, see [Getting started with an AWS account](https://docs.aws.amazon.com//accounts/latest/reference/getting-started.html) in the *AWS Account Management Reference Guide.*
++ **You have an AWS account** – If you do not have an AWS account, see [Getting started with an AWS account](https://docs.aws.amazon.com/accounts/latest/reference/getting-started.html) in the *AWS Account Management Reference Guide.*
 + **The AWS managed application works with IAM Identity Center** – Review the list of [AWS managed applications that you can use with IAM Identity Center](awsapps-that-work-with-identity-center.md) to confirm that the AWS managed application you want to test works with IAM Identity Center.
 + **You’ve reviewed Regional considerations** – Make sure that the AWS managed application you want to test is supported in the AWS Region where you enable IAM Identity Center. For more information, see the documentation for the AWS managed application.
 **Note**

@@ -20,7 +20,7 @@ AWS Controllers for Kubernetes (ACK) extends the Kubernetes API to manage AWS re
 
 1. If the `exportTo` field is specified and the certificate is eligible for renewal, updates the Kubernetes Secret with renewed certificates before expiration.
 
-Publicly issued certificates require [domain validation](https://docs.aws.amazon.com//acm/latest/userguide/dns-validation.html) before ACM can issue them. You can use the [ACK service controller for Amazon Route 53](https://github.com/aws-controllers-k8s/route53-controller) to automatically create the required DNS validation CNAME records in your hosted zone.
+Publicly issued certificates require [domain validation](https://docs.aws.amazon.com/acm/latest/userguide/dns-validation.html) before ACM can issue them. You can use the [ACK service controller for Amazon Route 53](https://github.com/aws-controllers-k8s/route53-controller) to automatically create the required DNS validation CNAME records in your hosted zone.
 
 ## Certificate usage options
 <a name="kubernetes-ack-certificate-usage"></a>
@@ -34,7 +34,7 @@ You can use ACM certificates with Kubernetes in a few ways:
 1. *Ingress termination (with export)*: Export certificates from ACM and store them in Kubernetes Secrets for TLS termination at the Ingress level. This enables you to use certificates directly within your Kubernetes workloads.
 
 **Note**
-For use cases that require private certificates, see [AWS Private CA Connector for Kubernetes](https://docs.aws.amazon.com//privateca/latest/userguide/PcaKubernetes-concepts.html), a cert-manager plugin.
+For use cases that require private certificates, see [AWS Private CA Connector for Kubernetes](https://docs.aws.amazon.com/privateca/latest/userguide/PcaKubernetes-concepts.html), a cert-manager plugin.
 
 ## Prerequisites
 <a name="kubernetes-ack-prerequisites"></a>
@@ -84,7 +84,7 @@ Use Helm to install the ACK service controller for ACM in your Amazon EKS cluste
    $ kubectl get pods -n ack-system
    ```
 
-For more information about pod identity associations, see [EKS Pod Identity](https://docs.aws.amazon.com//eks/latest/userguide/pod-identities.html) in the *Amazon EKS User Guide*.
+For more information about pod identity associations, see [EKS Pod Identity](https://docs.aws.amazon.com/eks/latest/userguide/pod-identities.html) in the *Amazon EKS User Guide*.
 
 ## Example: Terminate TLS at the Ingress
 <a name="kubernetes-ack-example"></a>

@@ -44,7 +44,7 @@ Required: No
  ** type **   <a name="AmazonEKS-Type-Update-type"></a>
 The type of the update.
 Type: String
-Valid Values: `VersionUpdate | EndpointAccessUpdate | LoggingUpdate | ConfigUpdate | AssociateIdentityProviderConfig | DisassociateIdentityProviderConfig | AssociateEncryptionConfig | AddonUpdate | VpcConfigUpdate | AccessConfigUpdate | UpgradePolicyUpdate | ZonalShiftConfigUpdate | AutoModeUpdate | RemoteNetworkConfigUpdate | DeletionProtectionUpdate | CapabilityUpdate | ControlPlaneScalingConfigUpdate | VendedLogsUpdate | ControlPlaneEgressUpdate | VersionRollback | ControlPlaneComponentConfigUpdate`
+Valid Values: `VersionUpdate | EndpointAccessUpdate | LoggingUpdate | ConfigUpdate | AssociateIdentityProviderConfig | DisassociateIdentityProviderConfig | AssociateEncryptionConfig | AddonUpdate | VpcConfigUpdate | AccessConfigUpdate | UpgradePolicyUpdate | ZonalShiftConfigUpdate | AutoModeUpdate | RemoteNetworkConfigUpdate | DeletionProtectionUpdate | CapabilityUpdate | ControlPlaneScalingConfigUpdate | VendedLogsUpdate | ControlPlaneEgressUpdate | VersionRollback | ControlPlaneComponentConfigUpdate | CertificateAuthorityUpdate`
 Required: No
 
 ## See Also

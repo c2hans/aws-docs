@@ -14,8 +14,6 @@ Add tags to existing, supported resources except those in AMS infrastructure sta
 ## Change Type Details
 <a name="ct-0176f0n99vcps-DATc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-0176f0n99vcps |

@@ -9,8 +9,6 @@ The following entries describe important changes made to the AWS Global Accelera
 + **API version: latest**
 + **Latest documentation update: **April 17, 2024
 
-****
-
 | Change | Description | Date |
 | --- | --- | --- |
 | Adds support in new AWS Region | Support in the following AWS Region has been added for Global Accelerator: Canada West (Calgary). For more information, see [AWS Region availability for AWS Global Accelerator](https://docs.aws.amazon.com/global-accelerator/latest/dg/preserve-client-ip-address.regions.html). | April 17, 2024 |

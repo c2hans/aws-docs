@@ -130,8 +130,6 @@ The 30-minute maintenance window is selected at random from an 8-hour block of t
 
 The following table shows the time blocks for each AWS Region from which default maintenance windows are assigned.
 
-****
-
 | Region Name | Region | Time Block |
 | --- | --- | --- |
 | US East (N. Virginia) | us-east-1 | 03:00–11:00 UTC |
@@ -340,7 +338,7 @@ To return a list of resources that have at least one pending update, call the Am
 
 The **Auto minor version upgrade** setting specifies whether Aurora automatically applies upgrades to your DB cluster. These upgrades include new minor versions containing additional features and patches containing bug fixes.
 
-Automatic minor version upgrades periodically update your database to recent database engine versions. However, the upgrade might not always include the latest database engine version. If you need to keep your databases on specific versions at particular times, we recommend that you manually upgrade to the database versions that you need according to your required schedule. In cases of critical security issues or when a version reaches its end-of-support date, Amazon Aurora might apply a minor version upgrade even if you haven't enabled the **Auto minor version upgrade** option. For more information, see the upgrade documentation for your specific database engine.
+Automatic minor version upgrades periodically update your database to recent database engine versions. However, the upgrade might not always include the latest database engine version. If you need to keep your databases on specific versions at particular times, we recommend that you manually upgrade to the database versions that you need according to your required schedule. In cases of critical security issues or when a version reaches its end-of-support date, Amazon Aurora will apply a minor version upgrade even if you haven't enabled the **Auto minor version upgrade** option. For more information, see the upgrade documentation for your specific database engine.
 
 See [Upgrading the minor version or patch level of an Aurora MySQL DB cluster](AuroraMySQL.Updates.Patching.md) and [Performing a minor version upgrade](USER_UpgradeDBInstance.PostgreSQL.MinorUpgrade.md).
 
@@ -372,7 +370,7 @@ Automatic upgrades occur during the maintenance window. If the individual DB ins
 
 For more information about engine updates for Aurora PostgreSQL, see [Database engine updates for Amazon Aurora PostgreSQL](AuroraPostgreSQL.Updates.md).
 
-For more information about the **Auto minor version upgrade** setting for Aurora MySQL, see [Enabling automatic upgrades between minor Aurora MySQL versions](AuroraMySQL.Updates.AMVU.md). For general information about engine updates for Aurora MySQL, see [Database engine updates for Amazon Aurora MySQLLong-term support (LTS) and beta releases for Amazon Aurora MySQL](AuroraMySQL.Updates.md).
+For more information about the **Auto minor version upgrade** setting for Aurora MySQL, see [Enabling automatic upgrades between minor Aurora MySQL versions](AuroraMySQL.Updates.AMVU.md). For general information about engine updates for Aurora MySQL, see [Database engine updates for Amazon Aurora MySQL](AuroraMySQL.Updates.md).
 
 **Topics**
 

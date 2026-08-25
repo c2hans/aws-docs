@@ -63,7 +63,7 @@ Each Connect Customer instance can be associated with only one domain at a time.
   + `social-messaging:GetLinkedWhatsAppBusinessAccountPhoneNumber`
 
   The Social APIs are restricted to your phone number resources that are enabled for Connect Customer. A phone number is tagged with `AmazonConnectEnabled : True` when it is imported into a Connect Customer instance.
-+ Action: Connect Customer Messaging WhatsApp message template integration. Grants Connect Customer permission to call AWS End User Messaging Social APIs. An AWS account's WhatsApp business accounts may be listed. Additionally, the templates of a WhatsApp business account may be listed and a template's details may be retrieved as long as the WhatsApp business account is tagged `AmazonConnectEnabled: True`.
++ Action: Connect Customer Messaging WhatsApp message template integration. Grants Connect Customer permission to call AWS End User Messaging Social APIs. An AWS account's WhatsApp business accounts might be listed. Additionally, the templates of a WhatsApp business account might be listed and a template's details might be retrieved as long as the WhatsApp business account is tagged `AmazonConnectEnabled: True`.
   + `social-messaging:ListLinkedWhatsAppBusinessAccounts`
   + `social-messaging:GetWhatsAppMessageTemplate`
   + `social-messaging:ListWhatsAppMessageTemplates`

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/delete-acc
 # Close an account created in Account Factory
 <a name="delete-account"></a>
 
-Accounts created in Account Factory are AWS accounts. For information about closing AWS accounts, see [Closing an account](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/close-account.html) in the [*AWS Account Management Reference Guide*](https://docs.aws.amazon.com//accounts/latest/reference/manage-acct-closing.html ).
+Accounts created in Account Factory are AWS accounts. For information about closing AWS accounts, see [Closing an account](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/close-account.html) in the [*AWS Account Management Reference Guide*](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-closing.html ).
 
 **Note**
  Closing an AWS account is not the same as unenrolling an account from AWS Control Tower—these are separate actions. You must unenroll the account before you close it.
@@ -15,7 +15,7 @@ Accounts created in Account Factory are AWS accounts. For information about clos
 
 You can close your AWS Control Tower member accounts from your organization’s management account without a requirement to sign in to each member account individually with root credentials, by means of AWS Organizations. You cannot close your management account in this way, however.
 
-When you call the AWS Organizations [CloseAccount API](https://docs.aws.amazon.com//organizations/latest/APIReference/API_CloseAccount.html), or close an account in the AWS Organizations console, the member account is isolated for 90 days, as any AWS account would be. The account shows a **Suspended** status in AWS Control Tower and AWS Organizations. If you attempt to work with the account during that 90 days, AWS Control Tower gives an error message.
+When you call the AWS Organizations [CloseAccount API](https://docs.aws.amazon.com/organizations/latest/APIReference/API_CloseAccount.html), or close an account in the AWS Organizations console, the member account is isolated for 90 days, as any AWS account would be. The account shows a **Suspended** status in AWS Control Tower and AWS Organizations. If you attempt to work with the account during that 90 days, AWS Control Tower gives an error message.
 
 **Note**
 If an OU has suspended accounts, EnabledControl operations will fail for regional controls on the target.
@@ -27,4 +27,4 @@ We recommend, as a best practice, to unenroll a member account before you close 
 **Note**
 If you do not unenroll the account before you close it, you must delete the account's provisioned product in AWS Service Catalog after those 90 days are finished.
 
-For more information, see the AWS Organizations documentation about the [CloseAccount API](https://docs.aws.amazon.com//organizations/latest/APIReference/API_CloseAccount.html).
+For more information, see the AWS Organizations documentation about the [CloseAccount API](https://docs.aws.amazon.com/organizations/latest/APIReference/API_CloseAccount.html).

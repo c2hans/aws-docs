@@ -18,7 +18,7 @@ This guide helps you accomplish common tasks like finding relevant datasets, run
 
 ## Prerequisites
 <a name="lakehouse-get-started-prerequisites"></a>
-+ Your administrator must grant you access to the [lakehouse architecture](https://docs.aws.amazon.com//sagemaker-unified-studio/latest/userguide/getting-started-access-the-portal.html).
++ Your administrator must grant you access to the [lakehouse architecture](https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/getting-started-access-the-portal.html).
 
   If you don't have access to it, contact your administrator. For more information, see [https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/getting-started-access-the-portal.html](https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/getting-started-access-the-portal.html).
 + You must have a Amazon SageMaker Unified Studio project and with the proper project membership role.
@@ -28,7 +28,7 @@ This guide helps you accomplish common tasks like finding relevant datasets, run
 ## Create a project
 <a name="lakehouse-create-project"></a>
 
-You can create a project from a project profile, which defines a template for projects in your domain. To use lakehouse architecture, your project must be created using either [Data analytics and AI-ML model development](https://docs.aws.amazon.com//sagemaker-unified-studio/latest/adminguide/data-analytics-ai-model-development.html) or [SQL analytics](https://docs.aws.amazon.com//sagemaker-unified-studio/latest/adminguide/project-profiles.html) project profile. For more information about creating a project, see [Create a project](https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/getting-started-create-a-project.html) from lakehouse architecture User Guide.
+You can create a project from a project profile, which defines a template for projects in your domain. To use lakehouse architecture, your project must be created using either [Data analytics and AI-ML model development](https://docs.aws.amazon.com/sagemaker-unified-studio/latest/adminguide/data-analytics-ai-model-development.html) or [SQL analytics](https://docs.aws.amazon.com/sagemaker-unified-studio/latest/adminguide/project-profiles.html) project profile. For more information about creating a project, see [Create a project](https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/getting-started-create-a-project.html) from lakehouse architecture User Guide.
 
 When using lakehouse architecture, you can create the following resources in the lakehouse:
 
@@ -77,9 +77,9 @@ You can query data using supported query editor.
 
 1. From a selected database, choose a table. Then choose the three dot menu to the right of the table to view supported tools for data query.
 
-1. Choose **Query with Athena**. This opens the **Data explorer** page where you can run SQL queries. You might find information in [SQL reference for Athena](https://docs.aws.amazon.com//athena/latest/ug/ddl-sql-reference.html) helpful.
+1. Choose **Query with Athena**. This opens the **Data explorer** page where you can run SQL queries. You might find information in [SQL reference for Athena](https://docs.aws.amazon.com/athena/latest/ug/ddl-sql-reference.html) helpful.
 
-1. Choose **Query with Amazon Redshift**. This opens the **Data explorer** page where you can run SQL queries. You might find information in [Querying a database using the query editor v2](https://docs.aws.amazon.com//redshift/latest/mgmt/query-editor-v2.html) helpful.
+1. Choose **Query with Amazon Redshift**. This opens the **Data explorer** page where you can run SQL queries. You might find information in [Querying a database using the query editor v2](https://docs.aws.amazon.com/redshift/latest/mgmt/query-editor-v2.html) helpful.
 
 To subscribe an asset, see [Request subscription to assets in Amazon SageMaker Unified Studio](https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/subscribe-to-data-assets-managed.html).
 

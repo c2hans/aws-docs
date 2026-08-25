@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon CloudWatch Observability Access Manager provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="oam-GetLink"></a>[GetLink](https://docs.aws.amazon.com/OAM/latest/APIReference/API_GetLink.html) | Retrieve complete information about one cross-account monitoring link | Read |

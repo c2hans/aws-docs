@@ -14,8 +14,6 @@ Create a new AWS secret access key and corresponding AWS access key ID for the s
 ## Change Type Details
 <a name="ct-2hhqzgxvkcig8-DAIc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2hhqzgxvkcig8 |

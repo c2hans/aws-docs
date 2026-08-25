@@ -14,8 +14,6 @@ Change the DNS resolution in your Amazon VPC by enabling Route 53 as the default
 ## Change Type Details
 <a name="ct-2tqi3kjcusen4-MMDm-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2tqi3kjcusen4 |

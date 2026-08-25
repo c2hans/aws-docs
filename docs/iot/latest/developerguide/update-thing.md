@@ -25,4 +25,4 @@ $ aws iot describe-thing --thing-name "MyLightBulb"
 }
 ```
 
-For more information, see [update-thing](https://docs.aws.amazon.com//cli/latest/reference/iot/update-thing.html) from the AWS CLI Command Reference.
+For more information, see [update-thing](https://docs.aws.amazon.com/cli/latest/reference/iot/update-thing.html) from the AWS CLI Command Reference.

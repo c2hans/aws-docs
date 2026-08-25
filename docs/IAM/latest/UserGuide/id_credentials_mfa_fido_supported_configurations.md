@@ -28,8 +28,6 @@ The FIDO Alliance maintains a list of all [FIDO2 products](https://fidoalliance.
 
 The availability of FIDO2 security devices that run in a web browser depends on the combination of browser and operating system. The following browsers currently support the use of security keys:
 
-****
-
 | Web browser | macOS 10.15\+ | Windows 10 | Linux | iOS 14.5\+ | Android 7\+ |
 | --- | --- | --- | --- | --- | --- |
 | Chrome | Yes | Yes | Yes | Yes | No |

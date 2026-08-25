@@ -25,9 +25,9 @@ The following is the overview of the automation process:
 
 1. To improve accuracy, you can provide additional evaluation criteria within [instructions to evaluators](create-evaluation-forms.md#step-sections). For more information, see [Guidelines to improve generative AI accuracy](#guidelines-to-improve-generative-ai-accuracy).
 
-1. Once you have a good understanding of which questions can be accurately answered with generative AI, you can do a broader rollout by pre-configuring on the evaluation form, whether a question will receive an automated answer using generative AI.
+1. After you have a good understanding of which questions can be accurately answered with generative AI, you can do a broader rollout by pre-configuring on the evaluation form, whether a question will receive an automated answer using generative AI.
 
-1. Once you have setup automation, any user performing evaluations using the evaluation form will get automated generative AI answers to the pre-configured questions (without requiring additional permissions). For more information, see [Step 6: Enable automated evaluations](create-evaluation-forms.md#step-automate).
+1. After you have setup automation, any user performing evaluations using the evaluation form will get automated generative AI answers to the pre-configured questions (without requiring additional permissions). For more information, see [Step 6: Enable automated evaluations](create-evaluation-forms.md#step-automate).
 
 1. You can setup automation such that an evaluator first reviews the generative AI answers before submission or you can automatically fill and submit evaluations.
 
@@ -65,7 +65,7 @@ If AI is not able to identify which of the provided answer options is appropriat
 ## Set up automated evaluations using generative AI on the evaluation form
 <a name="set-up-automated-evals-on-eval-form-with-generative-ai"></a>
 
-You can pre-configure on an evaluation form whether a question will be automatically answered using generative AI. Then, if you start an evaluation using the evaluation form on the Connect Customer UI, answers to these questions will get automatically filled using generative AI (without requiring you to choose Ask AI). You can also use generative AI to automatically fill and submit evaluations. For automatically submitted evaluations, you can use generative AI to answer up to 10 questions per contact (see [Conversational analytics service quotas](amazon-connect-service-limits.md#contactlens-quotas)). Note that this limit does not apply to automation using contact categories or metrics (for example, longest hold duration, etc.).
+You can pre-configure on an evaluation form whether a question will be automatically answered using generative AI. Then, if you start an evaluation using the evaluation form on the Connect Customer UI, answers to these questions will get automatically filled using generative AI (without requiring you to choose Ask AI). You can also use generative AI to automatically fill and submit evaluations. For automatically submitted evaluations, you can use generative AI to answer up to 10 questions per contact (see [Conversational analytics service quotas](amazon-connect-service-limits.md#contactlens-quotas)). Note that this limit does not apply to automation using contact categories or metrics (for example, longest hold duration).
 
 To learn more about setting up automated evaluations using generative AI, see [Guidelines to improve generative AI accuracy](#guidelines-to-improve-generative-ai-accuracy).
 
@@ -74,7 +74,7 @@ To learn more about setting up automated evaluations using generative AI, see [G
 
 By default, if you do not set the language of an evaluation form, the generative AI model automatically detects the language of your evaluation form questions and tries to provide answers in the same language, if the AI model understands that language. By default, generative AI answer justifications are typically provided in English.
 
-To consistently receive both AI-generated answers and answer justifications in your preferred language, you can set the language of an evaluation form, choosing from **English**, **Spanish**, **Portuguese**, **French**, **German**, **Italian**, **Chinese**, **Japanese**, and** Korean**. By explicitly setting the language of an evaluation, you can also perform cross-language evaluations, where generative AI fills a evaluation form in English, even when the conversation transcript is in another language, say Spanish. This enables multilingual contact centers to use a standardized evaluation framework across languages.
+To consistently receive both AI-generated answers and answer justifications in your preferred language, you can set the language of an evaluation form, choosing from **English**, **Spanish**, **Portuguese**, **French**, **German**, **Italian**, **Chinese**, **Japanese**, **Korean**, and **Malay**. By explicitly setting the language of an evaluation, you can also perform cross-language evaluations, where generative AI fills a evaluation form in English, even when the conversation transcript is in another language, say Spanish. This enables multilingual contact centers to use a standardized evaluation framework across languages.
 
 To set the language of the evaluation form:
 
@@ -95,7 +95,7 @@ To set the language of the evaluation form:
 **Dos**
 + Use generative AI to answer questions that only require the conversation transcript. Examples are questions on soft skills, questions that check for call flow, or compliance statements, among others.
 + Split complex questions into multiple simpler ones. For example, instead of "Did the agent exhibit active listening?", ask two questions: "Did the agent understand the customer's problem the first time, without the customer needing to repeat themselves?" and "Did the agent summarize the issue after the customer explained it?".
-+ Use conditionally enabled questions to enable or disable questions that are only applicable in certain situations. For example, you may have one question, "Did the customer buy a product during the conversation?", and a subsequent conditionally enabled question, "Did the agent provide mandatory fee disclosures before completing the sale?". For more details, see [Step 4: Conditionally enable questions](create-evaluation-forms.md#step-conditionally-enable-questions).
++ Use conditionally enabled questions to enable or disable questions that are only applicable in certain situations. For example, you might have one question, "Did the customer buy a product during the conversation?", and a subsequent conditionally enabled question, "Did the agent provide mandatory fee disclosures before completing the sale?". For more details, see [Step 4: Conditionally enable questions](create-evaluation-forms.md#step-conditionally-enable-questions).
 
 **Don'ts**
 + Don't use generative AI to answer questions that need information outside the conversation transcript. Generative AI cannot analyze screen recordings, access your internal or third-party systems such as CRM applications, or evaluate conversations across multiple contacts.
@@ -115,7 +115,7 @@ To set the language of the evaluation form:
 + Make it clear who is being evaluated. "Did the agent avoid the usage of profanity?" can be read as asking whether profanity occurred anywhere, returning "No" even when only the customer used it. Ask "Did the agent use profanity?" instead.
 + Phrase questions positively. Use "Did the agent greet the customer?" rather than "Did the agent skip the greeting?". Phrasing questions positively provides better AI-evaluation reasoning and references.
 + Specify when the answer is **Not Applicable** (N/A). For example: *The answer is N/A if the call resulted in a transfer.*
-+ In the **Instructions to evaluators**, explain when AI should select each answer option. For "Did the agent give a resolution timeframe?", add the instruction: *Answer is Yes if the agent gave a resolution timeframe, No otherwise.* Not explaining each option may result in AI selecting **Not Applicable**, even if the question is not optional.
++ In the **Instructions to evaluators**, explain when AI should select each answer option. For "Did the agent give a resolution timeframe?", add the instruction: *Answer is Yes if the agent gave a resolution timeframe, No otherwise.* Not explaining each option might result in AI selecting **Not Applicable**, even if the question is not optional.
 + Clarify whether all or any of the specified agent behaviors is required. "The agent must ask the customer's name and phone number" fails if the agent asked for the name but not the phone number.
 + Include examples for non-standard scenarios, not just the standard call flow. If you expect the agent to say "It typically takes 3 to 5 business days" on a standard call, you should also include callback phrasing like "I'll call you back within 30 minutes with an update". Standard-flow-only examples lead to inconsistent answers on callbacks, escalations, and transfers.
 + Give auto-fail questions the most attention, since one failing answer affects the whole form's evaluation score. Cover edge cases and non-standard scenarios. For more on scoring, see [Step 5: Assign scores and ranges to answers](create-evaluation-forms.md#step-assignscores).
@@ -123,7 +123,7 @@ To set the language of the evaluation form:
 **Don'ts**
 + Don't use double quotes unless you need exact wording. If the instruction checks for `"Have a nice day"`, the AI won't match *Have a nice afternoon*. Write instead: `The agent wished the customer a nice day`.
 + Don't use acronyms. Spell out the full term, for example "CFPB", so the AI can interpret it correctly.
-+ Don't use proper nouns likely to be misspelled in the transcript. A product name like *Klarity Pay* may be transcribed differently, preventing a match.
++ Don't use proper nouns likely to be misspelled in the transcript. A product name like *Klarity Pay* might be transcribed differently, preventing a match.
 + Don't use vague questions. Instead of "Did the agent use appropriate language?", ask "Did the agent use profanity?".
 + Don't use long verbatim scripts. Checking for `"Thank you for calling ABC Bank. How may I assist you?"` rarely matches, since minor transcription differences break the full script.
 
@@ -132,7 +132,7 @@ To set the language of the evaluation form:
 
 **Dos**
 + Use simple, short answer options, such as **Yes**, **No**, and **Partial**.
-+ Enable the **Optional question** setting when a question may not apply. This lets evaluators skip the question or mark it **Not Applicable**.
++ Enable the **Optional question** setting when a question might not apply. This lets evaluators skip the question or mark it **Not Applicable**.
 
 **Don'ts**
 + Don't use spelling errors or special characters in answer options, as they can reduce the accuracy of generative AI answers.

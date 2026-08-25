@@ -14,8 +14,6 @@ Share a specified directory in your AWS account (directory owner) with another A
 ## Change Type Details
 <a name="ct-369odosk0pd9w-MDDs-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-369odosk0pd9w |

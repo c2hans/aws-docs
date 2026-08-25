@@ -17,7 +17,7 @@ For information about Amazon RDS DB engine support for each DB instance class, s
 + [Hardware specifications for the burstable-performance instance classes](#hardware-specifications.burstable-inst-classes)
 
 **Note**
-RDS for SQL Server supports Optimize CPU starting with 7th generation instance classes (such as db.m7i and db.r7i). The vCPU counts documented below may differ for these instance classes. For accurate vCPU counts, refer to [DB instance classes that support Optimize CPUDB instance class support](SQLServer.Concepts.General.OptimizeCPU.Support.md).
+RDS for SQL Server supports Optimize CPU starting with 7th generation instance classes (such as db.m7i and db.r7i). The vCPU counts documented below may differ for these instance classes. For accurate vCPU counts, refer to [DB instance classes that support Optimize CPU](SQLServer.Concepts.General.OptimizeCPU.Support.md).
 
 ## Hardware terminology for DB instance classes
 <a name="Concepts.DBInstanceClass.hardware-terminology"></a>

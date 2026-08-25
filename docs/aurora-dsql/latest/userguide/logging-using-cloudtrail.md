@@ -53,7 +53,7 @@ Amazon Aurora DSQL logs the following Aurora DSQL backup and restore operations 
 + `StopRestoreJob`
 + `GetRestoreJob`
 
-For more on protecting your Aurora DSQL clusters using AWS Backup, see [Backup and restore for Amazon Aurora DSQLBackup and restore](backup-aurora-dsql.md) .
+For more on protecting your Aurora DSQL clusters using AWS Backup, see [Backup and restore for Amazon Aurora DSQL](backup-aurora-dsql.md) .
 
 **AWS KMS** logs
 

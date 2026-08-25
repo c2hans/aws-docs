@@ -16,8 +16,6 @@ You can access RDS for Db2 diagnostic logs and notify logs by using the Amazon R
 
 Log files are rotated each day and whenever your DB instance is restarted. The following is the retention schedule for RDS for Db2 logs on Amazon RDS.
 
-****
-
 | Log type | Retention schedule |
 | --- | --- |
 | Diagnostic logs | Db2 deletes logs outside of the retention settings in the instance-level configuration. Amazon RDS sets the `diagsize` parameter to 1000. |

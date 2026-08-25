@@ -16,6 +16,9 @@ Rebuilding a WorkSpace causes the following to occur:
   When you rebuild a WorkSpace, new snapshots are also taken soon after the rebuild is finished (often within 30 minutes).
 + The primary elastic network interface is recreated. The WorkSpace receives a new private IP address.
 
+**Note**
+The nested virtualization setting is preserved during a WorkSpace rebuild. If nested virtualization was enabled before the rebuild, it remains enabled on the rebuilt WorkSpace.
+
 **Important**
 After January 14, 2020, WorkSpaces created from a public Windows 7 bundle can no longer be rebuilt. You might want to consider migrating your Windows 7 WorkSpaces to Windows 10. For more information, see [Migrate a WorkSpace in WorkSpaces Personal](migrate-workspaces.md).
 

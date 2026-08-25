@@ -55,8 +55,6 @@ If your web server or content delivery network does not support setting up redir
 
 When you request a certificate and specify HTTP validation, ACM provides redirect information in the following format:
 
-****
-
 | Domain Name | Redirect From | Redirect To |
 | --- | --- | --- |
 | example.com | http://example.com/.well-known/pki-validation/a79865eb4cd1a6ab990a45779b4e0b96.txt | https://validation.{{region}}.acm-validations.aws/{{a424c7224e9b}}/.well-known/pki-validation/{{a79865eb4cd1a6ab990a45779b4e0b96}}.txt |

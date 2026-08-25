@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/parallelcluster/latest/ug/tutorials_05_m
 # (Optional) Manage AD users and groups
 <a name="tutorials_05_multi-user-ad-step2"></a>
 
-In this step, you manage users and groups from an Amazon EC2 Amazon Linux 2 instance that's joined to the Active Delivery (AD) domain.
+In this step, you manage users and groups from an Amazon EC2 Amazon Linux 2023 instance that's joined to the Active Directory (AD) domain.
 
 If you followed the *automated* path, restart and log in to the AD joined instance that was created as part of the automation.
 
@@ -21,7 +21,7 @@ In these steps, you use the [adcli](https://www.mankier.com/package/adcli) and [
 
 1. After the status checks pass, select the instance and choose **Connect** and SSH in to the instance.
 
-**Manage users and groups when logged into an Amazon EC2 Amazon Linux 2 instance that's joined the AD**
+**Manage users and groups when logged into an Amazon EC2 Amazon Linux 2023 instance that's joined to the AD**
 
 When you run the `adcli` commands with the ` -U "Admin"` option, you're prompted to enter the AD `Admin` password. You include the AD `Admin` password as part of the `ldapsearch` commands.
 

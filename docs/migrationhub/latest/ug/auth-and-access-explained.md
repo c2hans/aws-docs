@@ -29,8 +29,6 @@ When granting permissions, you decide who is getting the permissions, the resour
 
  In AWS Migration Hub, the primary resource is a Migration Hub *ProgressUpdateStream*. This resource has an unique Amazon Resource Name (ARN) associated with it as shown in the following table.
 
-****
-
 | Resource Type | ARN Format  |
 | --- | --- |
 | ProgressUpdateStream | arn:aws:mgh:{{region}}:{{account-id}}:ProgressUpdateStreamName:{{resource-name}} |

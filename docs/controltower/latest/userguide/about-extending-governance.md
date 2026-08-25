@@ -16,7 +16,7 @@ Here's what to expect when you set up your AWS Control Tower landing zone in an 
 + You can **Enroll** additional existing AWS accounts into an OU that's governed by AWS Control Tower, so that controls apply to those accounts.
 +  You can add more OUs in AWS Control Tower and you can **Register** existing OUs.
 
-To check other prerequisites for registration and enrollment, see [Getting Started with AWS Control Tower](https://docs.aws.amazon.com//controltower/latest/userguide/getting-started-with-control-tower.html).
+To check other prerequisites for registration and enrollment, see [Getting Started with AWS Control Tower](https://docs.aws.amazon.com/controltower/latest/userguide/getting-started-with-control-tower.html).
 
 Here's more detail about how AWS Control Tower controls **do not** apply to your OUs in AWS organizations that don't have AWS Control Tower landing zones set up:
 + New accounts created outside of AWS Control Tower Account Factory are not bound by the registered OU's controls.

@@ -119,8 +119,6 @@ In Amazon Glacier, the primary resource is a *vault*. Amazon Glacier supports p
 
 For all Amazon Glacier actions, `Resource` specifies the vault on which you want to grant the permissions. These resources have unique Amazon Resource Names (ARNs) associated with them as shown in the following table, and you can use a wildcard character (\*) in the ARN to match vault names that start with the same prefix.
 
-****
-
 | Resource Type | ARN Format |
 | --- | --- |
 | Vaults | arn:aws:glacier:{{region}}:{{account-id}}:vaults/{{vault-name}} |

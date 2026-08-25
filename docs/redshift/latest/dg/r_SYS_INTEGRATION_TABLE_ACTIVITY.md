@@ -11,7 +11,7 @@ SYS\_INTEGRATION\_TABLE\_ACTIVITY displays details of insert, delete, and update
 
 A superuser can see all rows in this table.
 
-For more information, see [zero-ETL integrations](https://docs.aws.amazon.com//redshift/latest/mgmt/zero-etl-using.html).
+For more information, see [zero-ETL integrations](https://docs.aws.amazon.com/redshift/latest/mgmt/zero-etl-using.html).
 
 ## Table columns
 <a name="r_SYS_INTEGRATION_TABLE_ACTIVITY-table-columns"></a>

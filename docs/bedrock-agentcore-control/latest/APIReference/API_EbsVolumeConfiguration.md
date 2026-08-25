@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 # EbsVolumeConfiguration
 <a name="API_EbsVolumeConfiguration"></a>
 
-The configuration for an Amazon EBS-backed persistent volume that retains data across agent runtime restarts. To remove the volume, delete the session.
+The configuration for an Amazon EBS-backed persistent volume. The service creates persistent volumes when a session first launches, and the volumes survive instance termination. The volumes persist until you delete the session.
 
 ## Contents
 <a name="API_EbsVolumeConfiguration_Contents"></a>

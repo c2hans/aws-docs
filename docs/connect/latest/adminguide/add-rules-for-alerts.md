@@ -34,7 +34,7 @@ The following image shows a sample real-time transcript.
 
 1. Choose **Add condition**, and then choose the type of match:
    + **Exact Match**: Finds only the exact words or phrases.
-   + **Pattern Match**: Finds matches that may be less than 100 percent exact. You can also specify the distance between words. For example, you might look for contacts where the word "credit" was mentioned, but you do not want to see any mention of the words "credit card." You can define a pattern matching category to look for the word "credit" that is not within a one-word distance of the word "card."
+   + **Pattern Match**: Finds matches that might be less than 100 percent exact. You can also specify the distance between words. For example, you might look for contacts where the word "credit" was mentioned, but you do not want to see any mention of the words "credit card." You can define a pattern matching category to look for the word "credit" that is not within a one-word distance of the word "card."
 **Tip**
 Semantic Match isn't available for real-time analysis.
 
@@ -44,7 +44,7 @@ Semantic Match isn't available for real-time analysis.
 1. Choose **Add**. Each word or phrase separated by a comma gets its own line.
 ![A words and phrases rule with multiple phrases, each on its own line.](http://docs.aws.amazon.com/connect/latest/adminguide/images/contact-lens-add-alert-rules-2.png)
 
-   The logic that conversational analytics uses to read these words or phrases is: (Talk OR to OR your OR manager) OR (this OR is OR not OR helpful) OR (speak OR to OR your OR supervisor), etc.
+   The logic that conversational analytics uses to read these words or phrases is: (Talk OR to OR your OR manager) OR (this OR is OR not OR helpful) OR (speak OR to OR your OR supervisor).
 
 1. To add more words or phrases, choose **Add group of words or phrases**. In the following image, the first group of words or phrases are what the agent might utter. The second group is what the customer might utter.
 ![A words and phrases rule with multiple phrases for customer and agent.](http://docs.aws.amazon.com/connect/latest/adminguide/images/contact-lens-add-category-rules-script3.png)

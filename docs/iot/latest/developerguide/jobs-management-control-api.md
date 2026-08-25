@@ -383,7 +383,7 @@ Creates a job. You can provide the job document as a link to a file in an Amazon
 
 A job can be made *continuous* by setting the optional `targetSelection` parameter to `CONTINUOUS` (the default is `SNAPSHOT`). A continuous job can be used to onboard or upgrade devices as they are added to a group because it continues to run and is launched on newly added things. This can occur even after the things in the group at the time the job was created have completed the job.
 
-A job can have an optional [TimeoutConfig](https://docs.aws.amazon.com//iot/latest/apireference/API_TimeoutConfig.html), which sets the value of the in-progress timer. The in-progress timer can't be updated and applies to all executions of the job.
+A job can have an optional [TimeoutConfig](https://docs.aws.amazon.com/iot/latest/apireference/API_TimeoutConfig.html), which sets the value of the in-progress timer. The in-progress timer can't be updated and applies to all executions of the job.
 
 The following validations are performed on arguments to the `CreateJob` API:
 + The `targets` argument must be a list of valid thing or thing group ARNs. All things and thing groups must be in your AWS account.

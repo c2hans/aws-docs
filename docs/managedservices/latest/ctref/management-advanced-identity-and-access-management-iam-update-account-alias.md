@@ -14,8 +14,6 @@ Update an existing AWS account alias. Note that an AWS account can have only one
 ## Change Type Details
 <a name="ct-3skaisgnq0pf8-MAIu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-3skaisgnq0pf8 |

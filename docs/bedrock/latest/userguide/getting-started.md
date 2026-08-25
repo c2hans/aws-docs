@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/getting-started
 # Quickstart
 <a name="getting-started"></a>
 
-Get started with Amazon Bedrock in minutes. The following steps walk you through running your first inference request using the Anthropic-native [Messages API](model-parameters-anthropic-claude-messages.md), the OpenAI-compatible APIs: [Responses API](bedrock-mantle.md) and [Chat Completions API](inference-chat-completions.md), and the [Invoke](inference-invoke.md) and [Converse API](conversation-inference.md). For a complete list of APIs, see [Build](build.md). After you complete these steps, you can send inference requests to any supported foundation model.
+Get started with Amazon Bedrock in minutes. For new applications, we recommend the [`bedrock-runtime`](endpoints.md) endpoint. The following steps walk you through running your first inference request using the Anthropic-native [Messages API](inference-messages-api.md), the OpenAI-compatible [Responses API](bedrock-mantle.md) and [Chat Completions API](inference-chat-completions.md), and the [Converse](conversation-inference.md) and [Invoke](inference-invoke.md) APIs. For a complete list of APIs, see [Build](build.md). After you complete these steps, you can send inference requests to any supported foundation model.
 
 **To run your first inference request**
 
@@ -25,7 +25,7 @@ Get started with Amazon Bedrock in minutes. The following steps walk you through
 #### [ Messages API ]
 
    ```
-   pip install boto3 anthropic
+   pip install anthropic aws-bedrock-token-generator
    ```
 
 ------
@@ -50,8 +50,8 @@ Get started with Amazon Bedrock in minutes. The following steps walk you through
 #### [ Messages API ]
 
    ```
-   ANTHROPIC_API_KEY="<provide your Bedrock API key>"
-   ANTHROPIC_BASE_URL="https://bedrock-mantle.<your-region>.api.aws/anthropic"
+   AWS_BEARER_TOKEN_BEDROCK="<provide your Bedrock API key>"
+   ANTHROPIC_BASE_URL="https://bedrock-runtime.<your-region>.amazonaws.com/anthropic"
    ```
 
 ------
@@ -59,7 +59,7 @@ Get started with Amazon Bedrock in minutes. The following steps walk you through
 
    ```
    OPENAI_API_KEY="<provide your Bedrock API key>"
-   OPENAI_BASE_URL="https://bedrock-mantle.<your-region>.api.aws/v1"
+   OPENAI_BASE_URL="https://bedrock-runtime.<your-region>.amazonaws.com/openai/v1"
    ```
 
 ------
@@ -81,12 +81,15 @@ Get started with Amazon Bedrock in minutes. The following steps walk you through
 #### [ Messages API ]
 
       ```
-      import anthropic
+      from anthropic import Anthropic
+      from aws_bedrock_token_generator import provide_token
 
-      client = anthropic.Anthropic()
+      token = provide_token(region="us-east-1")
+
+      client = Anthropic(api_key=token)
 
       response = client.messages.create(
-          model="anthropic.claude-opus-4-7",
+          model="global.anthropic.claude-opus-5",
           max_tokens=1024,
           messages=[{"role": "user", "content": "Can you explain the features of Amazon Bedrock?"}]
       )
@@ -102,7 +105,7 @@ Get started with Amazon Bedrock in minutes. The following steps walk you through
       client = OpenAI()
 
       response = client.responses.create(
-          model="openai.gpt-oss-120b",
+          model="openai.gpt-5.6-sol",
           input="Can you explain the features of Amazon Bedrock?"
           )
       print(response)
@@ -117,7 +120,7 @@ Get started with Amazon Bedrock in minutes. The following steps walk you through
       client = OpenAI()
 
       response = client.chat.completions.create(
-          model="openai.gpt-oss-120b",
+          model="openai.gpt-5.6-sol",
           messages=[{"role": "user", "content": "Can you explain the features of Amazon Bedrock?"}]
           )
       print(response)
@@ -131,7 +134,7 @@ Get started with Amazon Bedrock in minutes. The following steps walk you through
 
       client = boto3.client('bedrock-runtime', region_name='us-east-1')
       response = client.converse(
-          modelId='anthropic.claude-opus-4-7',
+          modelId='global.anthropic.claude-opus-5',
           messages=[
               {
                   'role': 'user',
@@ -151,7 +154,7 @@ Get started with Amazon Bedrock in minutes. The following steps walk you through
 
       client = boto3.client('bedrock-runtime', region_name='us-east-1')
       response = client.invoke_model(
-          modelId='anthropic.claude-opus-4-7',
+          modelId='global.anthropic.claude-opus-5',
           body=json.dumps({
                   'anthropic_version': 'bedrock-2023-05-31',
                   'messages': [{ 'role': 'user', 'content': 'Can you explain the features of Amazon Bedrock?'}],
@@ -173,7 +176,7 @@ Get started with Amazon Bedrock in minutes. The following steps walk you through
 
       You should see the output of your inference request.
 
-To learn more about using other APIs and endpoints, see [Build](build.md).
+To learn more about using other APIs and endpoints, see [Build](build.md) and [Endpoints supported by Amazon Bedrock](endpoints.md).
 
 ## Next steps
 <a name="getting-started-next-steps"></a>

@@ -48,6 +48,10 @@ Content-type: application/json
       },
       "arn": "string",
       "certificateAuthority": {
+         "active": {
+            "activatedBy": "string",
+            "id": "string"
+         },
          "data": "string"
       },
       "clientRequestToken": "string",

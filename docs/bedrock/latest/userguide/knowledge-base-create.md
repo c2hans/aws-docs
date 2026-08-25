@@ -96,8 +96,6 @@ If you prefer to let Amazon Bedrock create and manage a vector store for you, us
 
 The following fields are required:
 
-****
-
 | Field | Basic description |
 | --- | --- |
 | name | A name for the knowledge base |
@@ -106,8 +104,6 @@ The following fields are required:
 | storageConfiguration | (Only required if you're connecting to an unstructured data source). Contains configurations for the data source service that you choose. |
 
 The following fields are optional:
-
-****
 
 | Field | Use case |
 | --- | --- |

@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsl
 
 AWS Launch Wizard provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="launchwizard-DescribeAdditionalNode"></a>[DescribeAdditionalNode](https://docs.aws.amazon.com/launchwizard/) | Describe an additional node | Read |

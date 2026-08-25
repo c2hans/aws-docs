@@ -9,7 +9,7 @@ The following procedure describes how to use the **EC2 Service Properties** syst
 
 1. Launch and connect to your Windows instance.
 
-1. From the **Start** menu, click **All Programs**, and then click **EC2ConfigService Settings**.
+1. From the **Start** menu, choose **All Programs**, and then choose **EC2ConfigService Settings**.
 ![EC2Config service properties shown in the General tab.](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/EC2ConfigProperties_General.png)
 
 1. On the **General** tab of the **EC2 Service Properties** system dialog, you can enable or disable the following settings.
@@ -21,7 +21,7 @@ If you have a large script, we recommend that you use user data to download the 
 For more information, see [User data execution](user-data.md#user-data-execution).
  **Event Log**
 Use this setting to display event log entries on the console during boot for easy monitoring and debugging.
-Click **Settings** to specify filters for the log entries sent to the console. The default filter sends the three most recent error entries from the system event log to the console.
+Choose **Settings** to specify filters for the log entries sent to the console. The default filter sends the three most recent error entries from the system event log to the console.
  **Wallpaper Information**
 Use this setting to display system information on the desktop background. The following is an example of the information displayed on the desktop background.
 
@@ -31,7 +31,7 @@ The information displayed on the desktop background is controlled by the setting
  **Enable Hibernation**
 Use this setting to allow EC2 to signal the operating system to perform hibernation.
 
-1. Click the **Storage** tab. You can enable or disable the following settings.
+1. Choose the **Storage** tab. You can enable or disable the following settings.
 ![Storage tab within EC2 Service Properties.](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/EC2ConfigProperties_Storage.png)
  **Root Volume**
 This setting dynamically extends Disk 0/Volume 0 to include any unpartitioned space. This can be useful when the instance is booted from a root volume that has a custom size.
@@ -39,10 +39,10 @@ This setting dynamically extends Disk 0/Volume 0 to include any unpartitioned sp
 This setting formats and mounts all volumes attached to the instance during start.
  **Drive Letter Mapping**
 The system maps the volumes attached to an instance to drive letters. For Amazon EBS volumes, the default is to assign drive letters going from D: to Z:. For instance store volumes, the default depends on the driver. AWS PV drivers and Citrix PV drivers assign instance store volumes drive letters going from Z: to A:. Red Hat drivers assign instance store volumes drive letters going from D: to Z:.
-To choose the drive letters for your volumes, click **Mappings**. In the **DriveLetterSetting** dialog box, specify the **Volume Name** and **Drive Letter** values for each volume, click **Apply**, and then click **OK**. We recommend that you select drive letters that avoid conflicts with drive letters that are likely to be in use, such as drive letters in the middle of the alphabet.
+To choose the drive letters for your volumes, choose **Mappings**. In the **DriveLetterSetting** dialog box, specify the **Volume Name** and **Drive Letter** values for each volume, choose **Apply**, and then choose **OK**. We recommend that you select drive letters that avoid conflicts with drive letters that are likely to be in use, such as drive letters in the middle of the alphabet.
 
 ![DriveLetterSetting dialog box.](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/EC2ConfigProperties_driver_letter_mapping.png)
 
 After you specify a drive letter mapping and attach a volume with same label as one of the volume names that you specified, EC2Config automatically assigns your specified drive letter to that volume. However, the drive letter mapping fails if the drive letter is already in use. Note that EC2Config doesn't change the drive letters of volumes that were already mounted when you specified the drive letter mapping.
 
-1. To save your settings and continue working on them later, click **OK** to close the **EC2 Service Properties** system dialog. If you have finished customizing your instance and want to create an AMI from that instance, see [Create an Amazon EC2 AMI using Windows Sysprep](ami-create-win-sysprep.md).
+1. To save your settings and continue working on them later, choose **OK** to close the **EC2 Service Properties** system dialog. If you have finished customizing your instance and want to create an AMI from that instance, see [Create an Amazon EC2 AMI using Windows Sysprep](ami-create-win-sysprep.md).

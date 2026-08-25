@@ -64,7 +64,7 @@ When you export your data flow to a location such as Amazon Simple Storage Servi
 | ml.m5.12xlarge | 48 | 192 GiB |
 | ml.m5.24xlarge | 96 | 384 GiB |
 
-For more information about the cost per hour for using the available instance types, see [SageMaker Pricing](https://aws.amazon.com//sagemaker/pricing/).
+For more information about the cost per hour for using the available instance types, see [SageMaker Pricing](https://aws.amazon.com/sagemaker/pricing/).
 
 ## The Data Flow UI
 <a name="data-wrangler-data-flow-ui"></a>

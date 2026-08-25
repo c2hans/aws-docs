@@ -14,7 +14,7 @@ After careful consideration, we have decided to discontinue Amazon Kinesis Data 
 <a name="sch-dis"></a>
 
 **Note**
-After September 12, 2023, you will not able to create new applications using Kinesis Data Firehose as a source if you do not already use Kinesis Data Analytics for SQL. For more information, see [Limits](https://docs.aws.amazon.com//kinesisanalytics/latest/dev/limits.html).
+After September 12, 2023, you will not able to create new applications using Kinesis Data Firehose as a source if you do not already use Kinesis Data Analytics for SQL. For more information, see [Limits](https://docs.aws.amazon.com/kinesisanalytics/latest/dev/limits.html).
 
 Providing an input schema that describes how records on the streaming input map to an in-application stream can be cumbersome and error prone. You can use the [DiscoverInputSchema](API_DiscoverInputSchema.md) API (called the *discovery API*) to infer a schema. Using random samples of records on the streaming source, the API can infer a schema (that is, column names, data types, and position of the data element in the incoming data).
 
@@ -40,8 +40,6 @@ After discovery completes, you can update the schema using the console to add or
 
 ### Examples of Discovery-Suggested Column Names
 <a name="sch-dis-column-names-examples"></a>
-
-****
 
 | Source Stream Column Name | Discovery-Suggested Column Name |
 | --- | --- |

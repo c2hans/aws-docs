@@ -113,7 +113,7 @@ A ✔ mark indicates that AWS CloudHSM supports the mechanism for the function. 
 **Table 3.3, Maximum data set size**
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/cloudhsm/latest/userguide/pkcs11-v3-mechanisms.html)
 + [4] When performing AES-GCM encryption, the HSM does not accept initialization vector (IV) data from the application. You must use an IV that it generates. The 12-byte IV provided by the HSM is written into the memory reference pointed to by the pIV element of the `CK_GCM_PARAMS` parameters structure that you supply. To prevent user confusion, PKCS \#11 SDK in version 1.1.1 and later ensures that pIV points to a zeroized buffer when AES-GCM encryption is initialized.
-+ [5] **Client SDK 3 only**. Mechanism is implemented to support SSL/TLS offload cases and is executed only partially within the HSM. Before using this mechanism, see "Issue: ECDH key derivation is executed only partially within the HSM" in [Known issues for the PKCS \#11 library for AWS CloudHSMKnown issues for the PKCS \#11 library](ki-pkcs11-sdk.md). `CKM_ECDH1_DERIVE` does not support the secp521r1 (P-521) curve.
++ [5] **Client SDK 3 only**. Mechanism is implemented to support SSL/TLS offload cases and is executed only partially within the HSM. Before using this mechanism, see "Issue: ECDH key derivation is executed only partially within the HSM" in [Known issues for the PKCS \#11 library for AWS CloudHSM](ki-pkcs11-sdk.md). `CKM_ECDH1_DERIVE` does not support the secp521r1 (P-521) curve.
 + [6] The following `CK_MECHANISM_TYPE` and `CK_RSA_PKCS_MGF_TYPE` are supported as `CK_RSA_PKCS_OAEP_PARAMS` for `CKM_RSA_PKCS_OAEP`:
   + `CKM_SHA_1` using `CKG_MGF1_SHA1`
   + `CKM_SHA224` using `CKG_MGF1_SHA224`

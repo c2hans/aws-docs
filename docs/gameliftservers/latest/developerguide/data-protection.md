@@ -47,7 +47,7 @@ Direct communication between game clients and game servers is as follows:
 + For Amazon GameLift Servers Realtime with TLS certificate generation enabled, traffic between game client and Realtime servers using the client SDK for Realtime is encrypted in flight. TCP traffic is encrypted using TLS 1.2, and UDP traffic is encrypted using DTLS 1.2.
 
 **Note**
-To meet Certificate Authority requirements for TLS certificates, Amazon GameLift Servers will adjust the maximum certificate lifetimes for fleets configured to generate a certificate. Certificate lifetimes begin on fleet creation and will be changed on the following schedule:
+To meet Certificate Authority requirements for TLS certificates, Amazon GameLift Servers will adjust the maximum certificate lifetimes for fleets configured to generate a certificate. Certificate lifetimes begin on fleet creation and change on the following schedule:
 Until March 11, 2026, the maximum lifetime for a TLS certificate issued is 398 days.
 As of March 1, 2026, the maximum lifetime for a TLS certificate issued will be 200 days.
 As of March 1, 2027, the maximum lifetime for a TLS certificate issued will be 100 days.

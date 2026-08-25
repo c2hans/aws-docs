@@ -94,7 +94,7 @@ Use SFT when you can assemble high-quality prompt and response pairs that closel
 
 Don't use SFT when the gap is knowledge rather than behavior. It doesn't teach the model new facts, jargon, or recent events. In those cases, use retrieval-augmented generation to bring external knowledge at inference. Avoid SFT when you can measure quality but can't label a single right answer. Use reinforcement fine-tuning with verifiable rewards or an LLM-as-a-judge to optimize those rewards directly. If your needs or content change frequently, rely on retrieval and tool use rather than retraining the model.
 
-The following table summarizes the customization techniques available on SageMaker Training Jobs for Amazon Nova 2.0 models. For Amazon Nova 1.0 customization on SageMaker Training Jobs, see the [Amazon Nova 1.0 guide](https://docs.aws.amazon.com//nova/latest/userguide/nova-model-training-job.html).
+The following table summarizes the customization techniques available on SageMaker Training Jobs for Amazon Nova 2.0 models. For Amazon Nova 1.0 customization on SageMaker Training Jobs, see the [Amazon Nova 1.0 guide](https://docs.aws.amazon.com/nova/latest/userguide/nova-model-training-job.html).
 
 **Supported techniques on SageMaker Training Jobs**
 

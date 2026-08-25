@@ -30,8 +30,6 @@ Be aware that at the time these release notes are published, the new platform ve
 ### Docker
 <a name="release-2022-05-06-docker.platforms.docker"></a>
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Docker  |  Docker Compose  |  Proxy Server  |
 | --- | --- | --- | --- | --- |
 |  ** Docker AL2 version 3.4.15** <br /> * 64bit Amazon Linux 2 v3.4.15 running Docker *  | 2.0.20220426 | 20.10.13-2 | 1.29.2 | nginx 1.20.0 |

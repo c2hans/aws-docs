@@ -17,8 +17,8 @@ The following are the service endpoints and service quotas for this service.
 The following sections describe the service endpoints for AWS IoT Wireless. AWS IoT Core for Amazon Sidewalk can only be used in the AWS Region `us-east-1`. You can use these endpoints to perform the operations in the [AWS IoT Wireless API Reference](https://docs.aws.amazon.com/iot-wireless/latest/apireference/).
 
 For information about:
-+ Connecting to and using the LoRaWAN gateways and devices, see [Connecting gateways and devices to AWS IoT Core for LoRaWAN](https://docs.aws.amazon.com//iot/latest/developerguide/connect-iot-lorawan-getting-started.html) in the *AWS IoT Developer Guide*.
-+ Connecting to and using the Amazon Sidewalk end devices, see [Connecting Sidewalk end devices to AWS IoT Core for Amazon Sidewalk](https://docs.aws.amazon.com//iot/latest/developerguide/iot-sidewalk-onboard.html) in the *AWS IoT Developer Guide*.
++ Connecting to and using the LoRaWAN gateways and devices, see [Connecting gateways and devices to AWS IoT Core for LoRaWAN](https://docs.aws.amazon.com/iot/latest/developerguide/connect-iot-lorawan-getting-started.html) in the *AWS IoT Developer Guide*.
++ Connecting to and using the Amazon Sidewalk end devices, see [Connecting Sidewalk end devices to AWS IoT Core for Amazon Sidewalk](https://docs.aws.amazon.com/iot/latest/developerguide/iot-sidewalk-onboard.html) in the *AWS IoT Developer Guide*.
 
 **Topics**
 + [AWS IoT Core for LoRaWAN - control plane endpoints](#iot-lorawan-control-plane-endpoints)

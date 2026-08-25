@@ -56,7 +56,7 @@ The configuration for an execution block in a workflow.
 The type of an execution block in a workflow.
 *Required*: Yes
 *Type*: String
-*Allowed values*: `ARCRegionSwitchPlan | ARCRoutingControl | AuroraGlobalDatabase | AuroraProvisionedScaling | AuroraServerlessScaling | CustomActionLambda | DocumentDb | EC2AutoScaling | ECSServiceScaling | EKSResourceScaling | LambdaEventSourceMapping | ManualApproval | NeptuneGlobalDatabase | Parallel | RdsCreateCrossRegionReplica | RdsPromoteReadReplica | Route53HealthCheck`
+*Allowed values*: `ARCRegionSwitchPlan | ARCRoutingControl | AuroraGlobalDatabase | AuroraProvisionedScaling | AuroraServerlessScaling | CustomActionLambda | DocumentDb | EC2AutoScaling | ECSServiceScaling | EKSResourceScaling | LambdaEventSourceMapping | ManualApproval | NeptuneGlobalDatabase | Parallel | RdsCreateCrossRegionReplica | RdsPromoteReadReplica | RdsSwitchoverReadReplica | Route53HealthCheck`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Name`  <a name="cfn-arcregionswitch-plan-step-name"></a>

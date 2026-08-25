@@ -149,9 +149,10 @@ Type: String to string map
 Required: No
 
  ** type **   <a name="Batch-Type-ComputeResourceUpdate-type"></a>
-The type of compute environment: `EC2`, `SPOT`, `FARGATE`, or `FARGATE_SPOT`. For more information, see [Compute environments](https://docs.aws.amazon.com/batch/latest/userguide/compute_environments.html) in the * AWS Batch User Guide*.
+The type of compute environment: `EC2`, `SPOT`, `FARGATE`, `FARGATE_SPOT`, or `ECS_MANAGED_INSTANCES`. For more information, see [Compute environments](https://docs.aws.amazon.com/batch/latest/userguide/compute_environments.html) in the * AWS Batch User Guide*.
  If you choose `SPOT`, you must also specify an Amazon EC2 Spot Fleet role with the `spotIamFleetRole` parameter. For more information, see [Amazon EC2 spot fleet role](https://docs.aws.amazon.com/batch/latest/userguide/spot_fleet_IAM_role.html) in the * AWS Batch User Guide*.
 When updating a compute environment, changing the type of a compute environment requires an infrastructure update of the compute environment. For more information, see [Updating compute environments](https://docs.aws.amazon.com/batch/latest/userguide/updating-compute-environments.html) in the * AWS Batch User Guide*.
+You cannot change the type to or from `ECS_MANAGED_INSTANCES`.
 Type: String
 Valid Values: `EC2 | SPOT | FARGATE | FARGATE_SPOT`
 Required: No

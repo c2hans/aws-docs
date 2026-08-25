@@ -101,7 +101,7 @@ If you do not create the instance in the same Availability Zone as the affected 
 
     **HKEY\_LOCAL\_MACHINE\\{{your\_temporary\_key\_name}}\\ControlSet001\\Control\\Class\\4d36e96a-e325-11ce-bfc1-08002be10318**
 
-1. For each key, double-click **UpperFilters**, enter a value of XENFILT, and then choose **OK**.
+1. For each key, open **UpperFilters**, enter a value of XENFILT, and then choose **OK**.
 ![Registry key for affected volume.](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/troubleshooting-server2012R2-regedit.png)
 
 1. Locate the following key:
@@ -190,7 +190,7 @@ Disabling TCP offloading may reduce the network performance of your instance.
 
 1. Choose **Change adapter settings**.
 
-1. Right-click **Citrix PV Ethernet Adapter \#0** and select **Properties**.
+1. Open the context (right-click) menu for **Citrix PV Ethernet Adapter \#0** and select **Properties**.
 ![Local area connection properties.](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/citrix-local-area-conn.png)
 
 1. In the **Local Area Connection Properties** dialog box, choose **Configure** to open the **Citrix PV Ethernet Adapter \#0 Properties** dialog box.
@@ -222,7 +222,7 @@ To determine whether you have the updated Citrix Xen guest agent, check whether 
 
 You can be affected by this issue if you are using Windows instances running AWS PV drivers that leverage more than 20,000 IOPS, and you experience bug check code `0x9E: USER_MODE_HEALTH_MONITOR`.
 
-Disk reads and writes (IOs) in the AWS PV drivers occur in two phases: **IO preparation** and **IO completion**. By default, the preparation phase runs on a single arbitrary core. The completion phase runs on core `0`. The amount of computation required to process an IO varies based on it size and other properties. Some IOs use more computation in the preparation phase, and others in the completion phase. When an instance drives more than 20,000 IOPS, the preparation or completion phase may result in a bottleneck, where the CPU upon which it runs is at 100% capacity. Whether or not the preparation or completion phase becomes a bottleneck depends on the properties of the IOs used by the application.
+Disk reads and writes (IOs) in the AWS PV drivers occur in two phases: **IO preparation** and **IO completion**. By default, the preparation phase runs on a single arbitrary core. The completion phase runs on core `0`. The amount of computation required to process an IO varies based on it size and other properties. Some IOs use more computation in the preparation phase, and others in the completion phase. When an instance drives more than 20,000 IOPS, the preparation or completion phase may result in a bottleneck, where the CPU upon which it runs is at 100% capacity. Whether the preparation or completion phase becomes a bottleneck depends on the properties of the IOs used by the application.
 
 Starting with AWS PV drivers 8.4.0, the load of the preparation phase and the completion phase can be distributed across multiple cores, eliminating bottlenecks. Each application uses different IO properties. Therefore, applying one of the following configurations may raise, lower, or not impact the performance of your application. After you apply any of these configurations, monitor the application to verify that it is meeting your desired performance.
 
@@ -255,7 +255,7 @@ Starting with AWS PV drivers 8.4.0, the load of the preparation phase and the co
 
    1. Select **CPU** in the left pane.
 
-   1. Right-click on the graph in the main pane and select **Change graph to**>**Logical processors** to display each individual core.
+   1. Open the context (right-click) menu for the graph in the main pane and select **Change graph to**>**Logical processors** to display each individual core.
 
    1. Depending on how many cores are on your instance, you may see lines displaying CPU load over time, or you may just see a number.
       + If you see graphs displaying load over time, look for CPUs where the box is almost entirely shaded.
@@ -306,7 +306,7 @@ We recommend that you do not distribute IO preparation without also distributing
 
 **Allow driver to choose whether to distribute completion**
 
-   Set `NotiferDistributed` registry key to allow the PV storage driver to choose whether or not to distribute IO completion.
+   Set `NotiferDistributed` registry key to allow the PV storage driver to choose whether to distribute IO completion.
 
    1. Connect to your instance using RDP.
 

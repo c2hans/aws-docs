@@ -27,8 +27,6 @@ To retrieve information about a specific custom model, send a [GetCustomModel](h
 
 To list information about all the custom models in an account, send a [ListCustomModels](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_ListCustomModels.html) request with an [Amazon Bedrock control plane endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#br-cp). To control the number of results that are returned, you can specify the following optional parameters:
 
-****
-
 | Field | Short description |
 | --- | --- |
 | maxResults | The maximum number of results to return in a response. |

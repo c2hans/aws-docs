@@ -78,12 +78,12 @@ When using the agent-based scan method, Amazon Inspector initiates new vulnerabi
 
 Amazon Inspector updates the **Last scanned** field for an EC2 instance when an initial scan is completed. After this, the **Last scanned** field is updated when Amazon Inspector evaluates SSM inventory (every 30 minutes by default), or when an instance is re-scanned because a new CVE impacting that instance was added to the Amazon Inspector database.
 
-You can check when an EC2 instance was last scanned for vulnerabilities from the Instances tab on the **Account management** page or by using the [ListCoverage](https://docs.aws.amazon.com//inspector/v2/APIReference/API_ListCoverage.html) command.
+You can check when an EC2 instance was last scanned for vulnerabilities from the Instances tab on the **Account management** page or by using the [ListCoverage](https://docs.aws.amazon.com/inspector/v2/APIReference/API_ListCoverage.html) command.
 
 ### Configuring the SSM Agent
 <a name="configure-ssm"></a>
 
-In order for Amazon Inspector to detect software vulnerabilities for an Amazon EC2 instance using the agent-based scan method, the instance must be a [managed instance](https://docs.aws.amazon.com//systems-manager/latest/userguide/managed_instances.html) in Amazon EC2 Systems Manager (SSM). An SSM managed instance has the SSM Agent installed and running, and SSM has permission to manage the instance. If you are already using SSM to manage your instances, no other steps are needed for agent-based scans.
+In order for Amazon Inspector to detect software vulnerabilities for an Amazon EC2 instance using the agent-based scan method, the instance must be a [managed instance](https://docs.aws.amazon.com/systems-manager/latest/userguide/managed_instances.html) in Amazon EC2 Systems Manager (SSM). An SSM managed instance has the SSM Agent installed and running, and SSM has permission to manage the instance. If you are already using SSM to manage your instances, no other steps are needed for agent-based scans.
 
 The SSM Agent is installed by default on EC2 instances created from some Amazon Machine Images (AMIs). For more information, see [About SSM Agent](https://docs.aws.amazon.com/systems-manager/latest/userguide/prereqs-ssm-agent.html) in the *AWS Systems Manager User Guide*. However, even if it's installed, you may need to activate the SSM Agent manually, and grant SSM permission to manage your instance.
 
@@ -98,7 +98,7 @@ You can also automate SSM management of all your EC2 instances, without the use 
 
 1. If it's not already installed by your operating system vendor, install the SSM Agent. For more information, see [Working with SSM Agent](https://docs.aws.amazon.com/systems-manager/latest/userguide/ssm-agent.html).
 
-1. Use the AWS CLI to verify that the SSM Agent is running. For more information, see [Checking SSM Agent status and starting the agent](https://docs.aws.amazon.com//systems-manager/latest/userguide/ssm-agent-status-and-restart.html).
+1. Use the AWS CLI to verify that the SSM Agent is running. For more information, see [Checking SSM Agent status and starting the agent](https://docs.aws.amazon.com/systems-manager/latest/userguide/ssm-agent-status-and-restart.html).
 
 1. Grant permission for SSM to manage your instance. You can grant permission by creating an IAM instance profile and attaching it to your instance. We recommend using the [AmazonSSMManagedInstanceCore](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSSMManagedInstanceCore.html) policy, because this policy has the permissions for SSM Distributor, SSM Inventory and SSM State manager, that Amazon Inspector needs for scans. For instructions on creating an instance profile with these permissions and attaching it to an instance, see [Configure instance permissions for Systems Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/setup-instance-permissions.html#instance-profile-add-permissions).
 
@@ -176,7 +176,7 @@ When your account is configured for **Hybrid scanning**, Amazon Inspector perfor
 
 Amazon Inspector updates the **Last scanned** field for an Amazon EC2 instance whenever it scans extracted snapshots from an instance after an agentless scan.
 
-You can check when an EC2 instance was last scanned for vulnerabilities from the Instances tab on the Account management page or by using the [ListCoverage](https://docs.aws.amazon.com//inspector/v2/APIReference/API_ListCoverage.html) command.
+You can check when an EC2 instance was last scanned for vulnerabilities from the Instances tab on the Account management page or by using the [ListCoverage](https://docs.aws.amazon.com/inspector/v2/APIReference/API_ListCoverage.html) command.
 
 ## Managing scan mode
 <a name="scan-mode"></a>
@@ -216,4 +216,4 @@ Your EC2 scan mode determines which scan methods Amazon Inspector will use when 
 
 Amazon Inspector scans supported Mac, Windows, and Linux instances for vulnerabilities in operating system packages. For Linux instances, Amazon Inspector can produce findings for application programming language packages using [Amazon Inspector deep inspection for Linux-based Amazon EC2 instances](deep-inspection.md). For Mac and Windows instances only operating system packages are scanned.
 
-For information about supported operating systems, including which operating systems can be scanned without an SSM agent, see [Amazon EC2 instances status valuesSupported operating systems: Amazon EC2 scanning](supported.md#supported-os-ec2).
+For information about supported operating systems, including which operating systems can be scanned without an SSM agent, see [Amazon EC2 instances status values](supported.md#supported-os-ec2).

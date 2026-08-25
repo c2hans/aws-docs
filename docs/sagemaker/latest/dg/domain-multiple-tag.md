@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/domain-multiple-tag.
 # Automatic tag propagation
 <a name="domain-multiple-tag"></a>
 
-Tags allow you to categorize and label your resources based on various criteria, such as project, team, environment (For example, dev, staging, prod), or any other custom metadata. You can tag resources by your domain automatically when they are created within your domain. This makes it easier to identify and manage your resources across your domains. You can also use these tags for cost allocation using AWS Billing and Cost Management. For more information, see [Using AWS cost allocation tags](https://docs.aws.amazon.com//awsaccountbilling/latest/aboutv2/cost-alloc-tags.html).
+Tags allow you to categorize and label your resources based on various criteria, such as project, team, environment (For example, dev, staging, prod), or any other custom metadata. You can tag resources by your domain automatically when they are created within your domain. This makes it easier to identify and manage your resources across your domains. You can also use these tags for cost allocation using AWS Billing and Cost Management. For more information, see [Using AWS cost allocation tags](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html).
 
 By default, any SageMaker AI resources that support tagging and are created from within the Amazon SageMaker Studio or Amazon SageMaker Studio Classic UI after 11/30/2022 are automatically tagged with a domain ARN tag. The domain ARN tag is based on the domain ID of the domain that the resource is created in.
 

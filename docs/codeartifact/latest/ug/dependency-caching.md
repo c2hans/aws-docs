@@ -17,8 +17,6 @@ cache:
 
 For other tools, use the cache folders shown in this table.
 
-****
-
 | Tool | Cache directory |
 | --- | --- |
 |  ** `mvn` **  |  `/root/.m2/**/*`  |

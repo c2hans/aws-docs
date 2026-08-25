@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon WorkSpaces AgentAccess MCP Server provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="agentaccess-mcp-CheckConnectionStatus"></a>[CheckConnectionStatus](https://docs.aws.amazon.com/appstream2/latest/developerguide/) | Check the connection status of a streaming session | Read |

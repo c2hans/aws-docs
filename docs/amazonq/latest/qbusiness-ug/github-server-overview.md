@@ -9,8 +9,6 @@ Amazon Q Business is no longer open to new customers. For capabilities similar t
 
 The following table gives an overview of the Amazon Q Business GitHub (Server) connector and its supported features.
 
-****
-
 - ****Security****
   - **Feature:** Authentication type / **Support:** OAuth token, Personal token
   - **Feature:** Authentication credentials / **Support:** +  GitHub token

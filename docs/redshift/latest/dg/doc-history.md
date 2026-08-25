@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/doc-history.html
 <a name="doc-history"></a>
 
 **Note**
-For a description of new features in Amazon Redshift, see [What's new](https://aws.amazon.com//redshift/whats-new).
+For a description of new features in Amazon Redshift, see [What's new](https://aws.amazon.com/redshift/whats-new).
 
 The following table describes the important documentation changes to the *Amazon Redshift Database Developer Guide* after May 2018. For notification about updates to this documentation, you can subscribe to an RSS feed.
 
@@ -103,8 +103,6 @@ For more information about new features, including a list of fixes and the assoc
 <a name="doc-history.earlier-updates"></a>
 
 The following table describes the important changes in each release of the *Amazon Redshift Database Developer Guide* before June 2018.
-
-****
 
 | Change | Description | Date changed |
 | --- | --- | --- |

@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/ksp-library--k
 
 The AWS CloudHSM Key Storage Provider (KSP) supports the following key types with Client SDK 5.
 
-****
-
 | Key Type | Description |
 | --- | --- |
 | EC | Generate keys with the secp256r1 (P-256), secp384r1 (P-384), and secp521r1 (P-521) curves. |

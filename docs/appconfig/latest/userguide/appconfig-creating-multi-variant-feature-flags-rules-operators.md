@@ -9,8 +9,6 @@ A variant rule is an expression comprised of one or more operands and an operato
 
 **Operands**
 
-****
-
 | Type | Description | Example |
 | --- | --- | --- |
 | String | A sequence of UTF-8 characters, enclosed in double-quotes. |  <pre>"apple", "Ḽơᶉëᶆ ȋṕšᶙṁ"</pre>  |
@@ -22,8 +20,6 @@ A variant rule is an expression comprised of one or more operands and an operato
 
 **Comparison operators**
 
-****
-
 | Operator | Description | Example |
 | --- | --- | --- |
 | eq | Determines whether a context value is equal to a given value. |  <pre>(eq $state "Virginia")</pre>  |
@@ -34,8 +30,6 @@ A variant rule is an expression comprised of one or more operands and an operato
 
 **Logical operators**
 
-****
-
 | Operator | Description | Example |
 | --- | --- | --- |
 | and | Determines if both operands are true. |  <pre>(and <br />    (eq $state "Virginia") <br />    (gt $age 65)<br />)</pre>  |
@@ -43,8 +37,6 @@ A variant rule is an expression comprised of one or more operands and an operato
 | not | Reverses the value of an expression. |  <pre>(not (eq $state "Virginia"))</pre>  |
 
 **Custom operators**
-
-****
 
 | Operator | Description | Example |
 | --- | --- | --- |

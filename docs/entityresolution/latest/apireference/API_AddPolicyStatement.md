@@ -70,7 +70,7 @@ The AWS service or AWS account that can access the resource defined as ARN.
 Type: Array of strings
 Array Members: Minimum number of 1 item.
 Length Constraints: Minimum length of 12. Maximum length of 64.
-Pattern: `(\d{12})|([a-z0-9\.]+)`
+Pattern: `((\d{12})|([a-z0-9\.]+))`
 Required: Yes
 
 ## Response Syntax

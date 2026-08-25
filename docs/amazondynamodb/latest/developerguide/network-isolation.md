@@ -46,7 +46,7 @@ For more information, see [Tutorial: Using a VPC endpoint for DynamoDB](#vpc-end
 
 In order to enable access to the DynamoDB service through a VPC subnet's gateway endpoint, you must have owner account permissions for that VPC subnet.
 
- Once the VPC subnet’s gateway endpoint has been granted access to DynamoDB, any AWS account with access to that subnet can use DynamoDB. This means all account users within the VPC subnet can use any DynamoDB tables which they have access to. This includes DynamoDB tables associated with a different account than the VPC subnet. The VPC subnet owner can still restrict any particular user within the subnet from using the DynamoDB service through the gateway endpoint, at their discretion.
+ After the VPC subnet’s gateway endpoint has been granted access to DynamoDB, any AWS account with access to that subnet can use DynamoDB. This means all account users within the VPC subnet can use any DynamoDB tables which they have access to. This includes DynamoDB tables associated with a different account than the VPC subnet. The VPC subnet owner can still restrict any particular user within the subnet from using the DynamoDB service through the gateway endpoint, at their discretion.
 
 ### Tutorial: Using a VPC endpoint for DynamoDB
 <a name="vpc-endpoints-dynamodb-tutorial"></a>
@@ -105,7 +105,7 @@ In this step, you launch an Amazon EC2 instance in your default Amazon VPC. You 
    Make a note of this public DNS name, because you will need it in the next step in this tutorial ([Step 2: Configure your Amazon EC2 instance](#vpc-endpoints-dynamodb-tutorial.configure-ec2-instance)).
 
 **Note**
-It will take a few minutes for your Amazon EC2 instance to become available. Before you go on to the next step, ensure that the **Instance State** is `running` and that all of its **Status Checks** have passed.
+It will take a few minutes for your Amazon EC2 instance to become available. Before you go on to the next step, make sure that the **Instance State** is `running` and that all of its **Status Checks** have passed.
 
 #### Step 2: Configure your Amazon EC2 instance
 <a name="vpc-endpoints-dynamodb-tutorial.configure-ec2-instance"></a>

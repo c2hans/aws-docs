@@ -25,8 +25,6 @@ SELECT * from msdb.dbo.rds_fn_list_tlog_backup_metadata('mydatabasename') WHERE 
 
 The `rds_fn_list_tlog_backup_metadata` function returns the following output:
 
-****
-
 | Column name | Data type | Description |
 | --- | --- | --- |
 | `db_name` | sysname | The database name provided to list the transaction log backups for. |

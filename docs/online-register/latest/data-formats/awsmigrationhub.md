@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsm
 
 AWS Migration Hub provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="mgh-DescribeApplicationState"></a>[DescribeApplicationState](https://docs.aws.amazon.com/migrationhub/latest/ug/API_DescribeApplicationState.html) | Get an Application Discovery Service Application's state | Read |

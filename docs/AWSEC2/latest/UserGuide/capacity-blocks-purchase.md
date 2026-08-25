@@ -12,7 +12,7 @@ To reserve a Capacity Block, you first need to find a block of time when capacit
 
 To search for an available Capacity Block offering, you specify a reservation duration and instance count. You must specify reservation durations in ** 1-day increments up to 14 days, and in 7-day increments up to 182 days**. Each Capacity Block can have up to 64 instances, and you can have up to 256 instances across Capacity Blocks.
 
-When you request a Capacity Block that matches your specifications, we provide the details of up to 6 available blocks. All Capacity Blocks end at 11:30AM UTC, so the blocks starting on the same day will have durations that are the closest match to your desired duration. One block will have a duration that is slightly less than your desired duration, while the other will have a duration slightly greater than your desired duration.
+When you request a Capacity Block that matches your specifications, the details of up to 6 available blocks are returned. All Capacity Blocks end at 11:30AM UTC, so the blocks starting on the same day will have durations that are the closest match to your desired duration. One block will have a duration that is slightly less than your desired duration, while the other will have a duration slightly greater than your desired duration.
 
 The offering details include the start time of the reservation, the Availability Zone for the reservation, and the price of the reservation. For more information, see [Capacity Blocks pricing and billing](capacity-blocks-pricing-billing.md).
 

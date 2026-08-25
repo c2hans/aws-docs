@@ -41,9 +41,9 @@ VPC connectivity from CodeCatalyst actions makes it possible to:
 
 The high-level steps to add and use a VPC connection are as follows:
 
-1. In the AWS Management Console, **create an Amazon Virtual Private Cloud (VPC)** or use an existing VPC. A VPC is a virtual network that provides extra security to your application by isolating it from the public internet and allows you to securely run your workflow actions in CodeCatalyst. In order for your VPC to work with CodeCatalyst, it must have a certain configuration. For more information, see [Amazon VPC setup requirementsVPC requirements](managing-vpcs.set-up.md#managing-vpcs.requirements).
+1. In the AWS Management Console, **create an Amazon Virtual Private Cloud (VPC)** or use an existing VPC. A VPC is a virtual network that provides extra security to your application by isolating it from the public internet and allows you to securely run your workflow actions in CodeCatalyst. In order for your VPC to work with CodeCatalyst, it must have a certain configuration. For more information, see [Amazon VPC setup requirements](managing-vpcs.set-up.md#managing-vpcs.requirements).
 
-1. In your CodeCatalyst space settings, **create a VPC connection**. A *VPC connection* is a CodeCatalyst resource which contains all of the configurations needed for a workflow to access a VPC. For more information, see [Adding VPC connections for a spaceAdding VPC connections for a space](managing-vpcs.add.md).
+1. In your CodeCatalyst space settings, **create a VPC connection**. A *VPC connection* is a CodeCatalyst resource which contains all of the configurations needed for a workflow to access a VPC. For more information, see [Adding VPC connections for a space](managing-vpcs.add.md).
 
 1. Associate this VPC connection with an **environment** to use with your workflow actions. For more information, see [ Associating a VPC connection with an environment](https://docs.aws.amazon.com/codecatalyst/latest/userguide/deploy-environments-associate-vpc.html) in the *CodeCatalyst User Guide*.
 

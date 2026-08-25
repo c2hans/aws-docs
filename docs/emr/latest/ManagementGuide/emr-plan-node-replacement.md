@@ -78,7 +78,7 @@ Linux line continuation characters (\\) are included for readability. They can b
   --instance-count {{3}} --unhealthy-node-replacement
   ```
 
-  For more information about using Amazon EMR commands in the AWS CLI, see [Amazon EMR AWS CLI commands](https://docs.aws.amazon.com//cli/latest/reference/emr).
+  For more information about using Amazon EMR commands in the AWS CLI, see [Amazon EMR AWS CLI commands](https://docs.aws.amazon.com/cli/latest/reference/emr).
 
 ------
 

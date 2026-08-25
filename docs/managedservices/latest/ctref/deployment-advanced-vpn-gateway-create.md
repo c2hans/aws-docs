@@ -14,8 +14,6 @@ Create a virtual private network (VPN) gateway (the endpoint on the VPC side of 
 ## Change Type Details
 <a name="ct-0qbikxr9okwvy-DAVc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-0qbikxr9okwvy |

@@ -23,8 +23,6 @@ You can find a shard's name using the AWS Management Console, the AWS CLI or the
 
 The following procedure uses the AWS Management Console to find a MemoryDB's cluster's shard names.
 
-****
-
 1. Sign in to the AWS Management Console and open the MemoryDB console at [https://console.aws.amazon.com/memorydb/](https://console.aws.amazon.com/memorydb/).
 
 1. On the left navigation pane, choose **Clusters**.

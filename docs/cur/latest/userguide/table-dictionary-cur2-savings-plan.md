@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/table-dictionary-cu
 
 Saving Plan columns contain data about savings plans that apply to the line item.
 
-****
-
 | Column name | Description | Data type |
 | --- | --- | --- |
 | savings\_plan\_amortized\_upfront\_commitment\_for\_billing\_period | The amount of upfront fee a Savings Plan subscription is costing you for the billing period. The initial upfront payment for **All Upfront Savings Plan** and **Partial Upfront Savings Plan** amortized over the current month. For **No Upfront Savings Plan**, the value is `0`. | double |

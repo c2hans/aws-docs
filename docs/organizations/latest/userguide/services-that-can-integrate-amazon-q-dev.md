@@ -39,7 +39,7 @@ To enable trusted access for Amazon Q Developer, use this procedure.
 
 1. Choose **Save**.
 
-For more information, see [ Enabling trusted access](https://docs.aws.amazon.com//amazonq/latest/qdeveloper-ug/q-admin-setup-subscribe-general.html#q-admin-trusted-access) in the *Amazon Q Developer user guide*.
+For more information, see [ Enabling trusted access](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/q-admin-setup-subscribe-general.html#q-admin-trusted-access) in the *Amazon Q Developer user guide*.
 
 ## Disabling trusted access with Amazon Q Developer
 <a name="integrate-disable-ta-amazon-q-dev"></a>
@@ -54,4 +54,4 @@ To disable trusted access for Amazon Q Developer, use this procedure.
 
 1. Choose **Save**.
 
-For more information, see [ Enabling trusted access](https://docs.aws.amazon.com//amazonq/latest/qdeveloper-ug/q-admin-setup-subscribe-general.html#q-admin-trusted-access) in the *Amazon Q Developer user guide*.
+For more information, see [ Enabling trusted access](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/q-admin-setup-subscribe-general.html#q-admin-trusted-access) in the *Amazon Q Developer user guide*.

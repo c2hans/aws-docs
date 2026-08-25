@@ -75,8 +75,6 @@ The following table describes RDS for PostgreSQL releases.
 
 The following table describes the important changes in each release of the *Amazon RDS for PostgreSQL Release Notes* before March 22, 2022.
 
-****
-
 | Change | Description | Date changed |
 | --- | --- | --- |
 | Amazon RDS for PostgreSQL versions 14.2, 13.6, 12.10, 11.15, and 10.20 | RDS for PostgreSQL now supports versions 14.2, 13.6, 12.10, 11.15, and 10.20. Version 14.2 and 13.6 add support for two new foreign data wrappers. The `mysql_fdw` extension lets PostgreSQL work with data stored in MySQL, MariaDB, and Aurora MySQL databases. The `tds_fdw` extension lets PostgreSQL work with data stored in SQL Server databases. For more information, see [Working with the supported foreign data wrappers for Amazon RDS for PostgreSQL](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.PostgreSQL.CommonDBATasks.Extensions.foreign-data-wrappers.html).  | March 12, 2022 |

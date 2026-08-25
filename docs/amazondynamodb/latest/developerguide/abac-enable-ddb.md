@@ -26,7 +26,7 @@ To enable ABAC for your account, we recommend that you first audit your policies
 ## Auditing your policies before enabling ABAC
 <a name="policy-audit-for-abac"></a>
 
-Before you enable ABAC for your account, audit your policies to confirm that the tag-based conditions which might exist in the policies within your account are set up as intended. Auditing your policies will help avoid surprises from authorization changes with your DynamoDB workflows after ABAC is enabled. To view examples of using attribute-based conditions with tags, and the before and after behavior of ABAC implementation, see [Examples for using ABAC with DynamoDB tables and indexesExample use cases](abac-example-use-cases.md).
+Before you enable ABAC for your account, audit your policies to confirm that the tag-based conditions which might exist in the policies within your account are set up as intended. Auditing your policies will help avoid surprises from authorization changes with your DynamoDB workflows after ABAC is enabled. To view examples of using attribute-based conditions with tags, and the before and after behavior of ABAC implementation, see [Examples for using ABAC with DynamoDB tables and indexes](abac-example-use-cases.md).
 
 ## IAM permissions required to enable ABAC
 <a name="required-permissions-abac"></a>

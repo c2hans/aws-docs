@@ -190,7 +190,7 @@ Launch templates are optional, except for the following specific cases, where yo
 
   Use the launch template that includes your metadata configuration from the EC2 console, or when you run the [enable-fast-launch](https://docs.aws.amazon.com/cli/latest/reference/ec2/enable-fast-launch.html) command in the AWS CLI, or call the [EnableFastLaunch](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_EnableFastLaunch.html) API action.
 
-Amazon EC2 EC2 Fast Launch doesn't support the following configuration when you use a launch template. If you use a launch template for EC2 Fast Launch, you must not specify any of the following:
+EC2 Fast Launch doesn't support the following configuration when you use a launch template. If you use a launch template for EC2 Fast Launch, you must not specify any of the following:
 + User data scripts
 + Termination protection
 + Disabled metadata
@@ -254,3 +254,16 @@ Use the [Enable-EC2FastLaunch](https://docs.aws.amazon.com/powershell/latest/ref
 ------
 
 For more information about EC2 launch templates, see [Store instance launch parameters in Amazon EC2 launch templates](ec2-launch-templates.md).
+
+## Permissions checks for EC2 Fast Launch
+<a name="win-fast-launch-permissions"></a>
+
+When you enable EC2 Fast Launch with a launch template, you can specify a numbered version of the template. You can also use the `$Latest` or `$Default` version. If you use one of the aliases, the alias can override the `ec2:RunInstances` and `iam:PassRole` permissions that you intended to restrict.
+
+When you enable EC2 Fast Launch, Amazon EC2 checks your permissions against the current launch template version. `$Latest` and `$Default` each resolve to a specific version at that time. This check runs before Amazon EC2 enables the feature. It validates the permissions required to launch instances, such as the `ec2:RunInstances` and `iam:PassRole` permissions. To do this, EC2 Fast Launch issues a `RunInstances` dry run call that checks your permissions without launching an instance. If your permissions don't allow a required action, Amazon EC2 fails the request and returns an error that describes the missing permission. Amazon EC2 does not enable EC2 Fast Launch.
+
+After this initial check is complete, EC2 Fast Launch creates the pre-provisioned snapshots in the background. It then launches instances by using the permissions of its service-linked role. Each time it launches an instance, it uses the version that `$Latest` or `$Default` resolves to at that time. This is true even if the version has changed after the initial check. It does not recheck your permissions. As a result, someone who can update the launch template could pass an IAM role or instance profile to an instance. This can happen even if they don't have the `iam:PassRole` permission for that role.
+
+To make sure that Amazon EC2 always uses the version it validated when you enabled the feature, specify a numbered launch template version. Do not use `$Latest` or `$Default`.
+
+If you configure EC2 Fast Launch to use the `$Latest` or `$Default` launch template version, we recommend that you limit who can create and manage launch template versions. Use IAM policies to restrict access to actions such as `ec2:CreateLaunchTemplateVersion` and `ec2:ModifyLaunchTemplate`.

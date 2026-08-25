@@ -39,6 +39,6 @@ The elements of the DASH manifest are nested within the `MPD` (media presentatio
 + `S` - Describes when the segment is available (`t` value), the duration of the segment (`d` value), and a count of how many additional consecutive segments have this same duration (`r` value). There are one or more segments in the `SegmentTimeline`.
 
 MediaPackage can modify how some of these elements are presented in the output manifest. You can use the following treatment options on the output live manifest:
-+ Separate the manifest into multiple periods, to allow ad breaks. See [DASH manifest options in AWS Elemental MediaPackageMulti-period DASH in AWS Elemental MediaPackage](multi-period.md).
++ Separate the manifest into multiple periods, to allow ad breaks. See [DASH manifest options in AWS Elemental MediaPackage](multi-period.md).
 + Reduce the length of the manifest to make processing and playback more efficient. See [Compacted DASH manifests](compacted.md).
 + Control what segment information is used in the media URL in the `SegmentTemplate` properties. See [DASH manifest segment template format](segtemp-format.md).

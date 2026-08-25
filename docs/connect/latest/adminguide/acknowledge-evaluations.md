@@ -16,13 +16,13 @@ This topic explains the steps for agents to view and acknowledge an evaluation.
 1. After you have received a performance evaluation for a contact, use your agent account to log in to the Connect Customer admin website at https://{{instance name}}.my.connect.aws/.
 
 1. Access the contact evaluation that you want to acknowledge. There are a few ways you can do this:
-   + Someone may have shared the contact URL with you.
+   + Someone might have shared the contact URL with you.
 
    - OR -
-   + You may have been assigned a task or received an email notification containing the URL for the contact that received an evaluations.
+   + You might have been assigned a task or received an email notification containing the URL for the contact that received an evaluations.
 
    - OR -
-   + You may have the contact ID and evaluation form name. You can use this information to search for the contact that received the evaluations using the following steps.
+   + You might have the contact ID and evaluation form name. You can use this information to search for the contact that received the evaluations using the following steps.
 
      1. On the navigation pane, choose **Analytics and optimization**, **Contact search**.
 

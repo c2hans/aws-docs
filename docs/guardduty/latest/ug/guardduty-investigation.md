@@ -23,7 +23,7 @@ GuardDuty Investigation is available in the following 10 commercial AWS Regions 
 GuardDuty Investigation supports the following three types of analysis:
 + **Finding analysis** – Analyzes specific GuardDuty findings, when you specify the finding ID (32-character hexadecimal). For preview, GuardDuty Investigation supports all Extended Threat Detection (XTD) findings and select findings from the foundational, S3, and Runtime plans.
 + **Account analysis** – Analyzes the threat posture of an AWS account, when you provide the 12-digit AWS account ID.
-+ **Organization analysis** – Analyzes your organization's threat posture. For preview, it analyzes up to 100 accounts.
++ **Organization analysis** – Analyzes your organization's threat posture.
 
 ## Cross-Region inference
 <a name="guardduty-investigation-cross-region-inference"></a>
@@ -163,7 +163,7 @@ Example output:
 The trigger prompt must describe what to investigate. GuardDuty determines the analysis type based on the content of your prompt:
 + **Finding analysis** – Include exactly one finding ID (32-character hexadecimal string) in the prompt. The finding must exist and belong to the caller's account or a member account. You cannot include multiple finding IDs in a single prompt.
 + **Account analysis** – Include exactly one 12-digit AWS account ID in the prompt. The caller must be the administrator of that account. You cannot include multiple account IDs in a single prompt.
-+ **Organization analysis** – Describe an organization-wide security concern in your prompt. The investigation analyzes signals across the organization (up to 100 accounts).
++ **Organization analysis** – Describe an organization-wide security concern in your prompt. The investigation analyzes signals across the organization.
 
 GuardDuty uses AI to interpret your free-form prompt and determine the appropriate analysis scope. If you include a finding ID, it performs finding analysis. If you include an account ID, it performs account analysis. If your prompt describes an organization-wide concern, it performs organization analysis. If the prompt does not match a specific analysis type, the investigation defaults to analyzing the caller's own account.
 

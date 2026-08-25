@@ -100,7 +100,7 @@ For example, for a 1-year Partial Upfront `t2.small` Reserved Instance, assume t
 
 1. In the navigation pane, choose **Reserved Instances**.
 
-1. To display the **Upfront price** column, choose settings ( ![](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/settings-icon.png) ) in the top-right corner, turn on **Upfront price**, and choose **Confirm**.
+1. To display the **Upfront price** column, choose settings ( ![Settings icon](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/settings-icon.png) ) in the top-right corner, turn on **Upfront price**, and choose **Confirm**.
 
 **To view the fixed price values for Reserved Instances using the command line**
 + [describe-reserved-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-reserved-instances.html) (AWS CLI)

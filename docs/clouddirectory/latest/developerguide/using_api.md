@@ -28,8 +28,6 @@ When reading data from Cloud Directory, you must specify either an Eventually Co
 
 The following table lists all of the Cloud Directory APIs and how they can impact billing for your AWS account.
 
-****
-
 | API | Eventually Consistent Read 1 | Strongly Consistent Read 2 | Write 3 | Metadata 4 |
 | --- | --- | --- | --- | --- |
 | AddFacetToObject |  |  | X |  |

@@ -26,7 +26,7 @@ This section covers the steps that a manager takes to review past recordings and
 
 1. Filter the list of contacts by date, agent login, phone number, or other criteria. Choose **Search**.
 **Tip**
-We recommend using the **Contact ID **filter to [search for recordings](search-recordings.md). This is the best way to ensure you get the right recording for the contact. Many recordings have the same name as the contact ID, but not all.
+We recommend using the **Contact ID **filter to [search for recordings](search-recordings.md). This is the best way to make sure you get the right recording for the contact. Many recordings have the same name as the contact ID, but not all.
 
 1. Conversations that were recorded have icons in the **Recording/Transcript** column, as shown in the following image. If you don't have the appropriate permissions, you won't see these icons.
 ![The voice recording icons play, download, and delete on the Contact search results page.](http://docs.aws.amazon.com/connect/latest/adminguide/images/recording-icons.png)
@@ -68,7 +68,7 @@ IVR recordings and logs enable you to monitor and improve your automated experie
 
 1. On the navigation menu, choose **Analytics and optimization, Contact search**.
 
-1. Search for the contact you want to review, e.g. use can search by contact queues, the name of the initial flow for the contact, or user-defined [custom contact attributes](search-custom-attributes.md).
+1. Search for the contact you want to review, for example, use can search by contact queues, the name of the initial flow for the contact, or user-defined [custom contact attributes](search-custom-attributes.md).
 
 1. Choose the contact ID to view the **Contact details** page.
 

@@ -83,6 +83,12 @@ Length Constraints: Minimum length of 1. Maximum length of 255.
 Pattern: `^(.)+$`
 Required: No
 
+ ** ResellerRole **   <a name="AWSMarketplaceService-Type-ResaleAuthorizationSummary-ResellerRole"></a>
+The reseller role of the ResaleAuthorization.
+Type: String
+Valid Values: `ChannelPartner | Distributor`
+Required: No
+
  ** Status **   <a name="AWSMarketplaceService-Type-ResaleAuthorizationSummary-Status"></a>
 The status of the ResaleAuthorization.
 Type: String

@@ -11,8 +11,6 @@ The cluster must be in the `ACTIVE` state for you to update its security setting
 
 If you turn on authentication using IAM, SASL, or TLS, you must also turn on encryption between clients and brokers. The following table shows the possible combinations.
 
-****
-
 | Authentication | Client-broker encryption options | Broker-broker encryption |
 | --- | --- | --- |
 | Unauthenticated | TLS, PLAINTEXT, TLS\_PLAINTEXT | Can be on or off. |

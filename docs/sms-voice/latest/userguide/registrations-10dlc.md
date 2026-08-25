@@ -8,8 +8,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/registrations
 **Important**
 The following table has the expected times for each 10DLC registration step based on if your business is located in the United States or internationally.
 
-****
-
 | 10DLC registration step | US based companies | International based companies |
 | --- | --- | --- |
 | Register your brand/company | 1-2 business days | Up to 3 weeks |
@@ -62,4 +60,4 @@ Throughput rates for 10DLC are determined by the US mobile carriers in cooperati
 ## 10DLC registration and monthly fees
 <a name="registrations-10dlc-fees"></a>
 
-There are registration and monthly fees associated with using 10DLC, such as registering your company and 10DLC campaign. These are separate from any other monthly or AWS fees. For more information about 10DLC fees, see the [AWS End User Messaging Pricing](https://aws.amazon.com//end-user-messaging/pricing/) page.
+There are registration and monthly fees associated with using 10DLC, such as registering your company and 10DLC campaign. These are separate from any other monthly or AWS fees. For more information about 10DLC fees, see the [AWS End User Messaging Pricing](https://aws.amazon.com/end-user-messaging/pricing/) page.

@@ -91,7 +91,7 @@ If you don't own both the account that you're transferring the domain from and t
 
 To migrate the existing hosted zone to the new account, see [Migrating a hosted zone to a different AWS account](hosted-zones-migrating.md).
 
-To create a new hosted zone, see [Making Amazon Route 53 the DNS service for an existing domainMaking Route 53 the DNS service for an existing domain](MigratingDNS.md). This topic is typically used when you're transferring domains from another registrar to Route 53, but the process is the same when you're transferring domains from one AWS account to another.
+To create a new hosted zone, see [Making Amazon Route 53 the DNS service for an existing domain](MigratingDNS.md). This topic is typically used when you're transferring domains from another registrar to Route 53, but the process is the same when you're transferring domains from one AWS account to another.
 
 **Important**
 **White-label name servers:** If your domain uses white-label name servers (custom name server hostnames like ns1.example.com), additional steps are required:

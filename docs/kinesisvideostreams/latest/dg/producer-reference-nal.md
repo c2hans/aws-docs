@@ -17,8 +17,6 @@ The codec private data (CPD), which is SPS/PPS (Sequence Parameter Set/Picture P
 
 The flags tell the SDK to adapt the NALUs to AVCC or Annex-B for frame data and CPD as follows:
 
-****
-
 | Flag | Adaptation |
 | --- | --- |
 | NAL\_ADAPTATION\_FLAG\_NONE | No adaptation. |

@@ -41,8 +41,6 @@ Returns 0 when the copy is successful. Raises exceptions for invalid inputs.
 
 **Parameters**
 
-****
-
 | Parameter | Description |
 | --- | --- |
 | source\_sql\_hash  | The sql\_hash ID associated with the plan\_hash to copy to the target query. |
@@ -74,8 +72,6 @@ Returns 0 if the delete was successful or -1 if the delete failed.
 
 **Parameters**
 
-****
-
 | Parameter | Description |
 | --- | --- |
 | sql\_hash  | The sql\_hash ID of the plan's managed SQL statement. |
@@ -102,8 +98,6 @@ apg_plan_mgmt.evolve_plan_baselines(
 The number of plans that were not faster than the best approved plan.
 
 **Parameters**
-
-****
 
 | Parameter | Description |
 | --- | --- |
@@ -146,8 +140,6 @@ Returns runtime statistics for the specified SQL statements. Use without `explai
 
 **Parameters**
 
-****
-
 | Parameter | Description |
 | --- | --- |
 | sql\_hash  | The sql\_hash ID of the plan's managed SQL statement. |
@@ -179,8 +171,6 @@ apg_plan_mgmt.plan_last_used(
 Returns the `last_used` date.
 
 **Parameters**
-
-****
 
 | Parameter | Description |
 | --- | --- |
@@ -233,8 +223,6 @@ Returns 0 if the setting was successful or -1 if the setting failed.
 
 **Parameters**
 
-****
-
 | Parameter | Description |
 | --- | --- |
 | sql\_hash | The sql\_hash ID of the plan's managed SQL statement. |
@@ -261,8 +249,6 @@ apg_plan_mgmt.set_plan_status(
 Returns 0 if the setting was successful or -1 if the setting failed.
 
 **Parameters**
-
-****
 
 | Parameter | Description |
 | --- | --- |
@@ -319,8 +305,6 @@ apg_plan_mgmt.validate_plans(
 The number of invalid plans.
 
 **Parameters**
-
-****
 
 | Parameter | Description |
 | --- | --- |

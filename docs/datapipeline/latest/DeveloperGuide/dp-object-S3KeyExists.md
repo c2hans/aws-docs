@@ -32,14 +32,10 @@ You can also use `S3KeyExists` as a precondition on the second pipeline that wai
 ## Syntax
 <a name="S3KeyExists-syntax"></a>
 
-****
-
 | Required Fields | Description | Slot Type |
 | --- | --- | --- |
 | role | Specifies the role to be used to execute the precondition. | String |
 | s3Key | The Amazon S3 key. | String |
-
-****
 
 | Optional Fields | Description | Slot Type |
 | --- | --- | --- |
@@ -55,8 +51,6 @@ You can also use `S3KeyExists` as a precondition on the second pipeline that wai
 | preconditionTimeout | The period from start after which precondition is marked as failed if still not satisfied. | Period |
 | reportProgressTimeout | Timeout for remote work successive calls to reportProgress. If set, then remote activities that do not report progress for the specified period may be considered stalled and are retried. | Period |
 | retryDelay | The timeout duration between two successive attempts. | Period |
-
-****
 
 | Runtime Fields | Description | Slot Type |
 | --- | --- | --- |
@@ -80,8 +74,6 @@ You can also use `S3KeyExists` as a precondition on the second pipeline that wai
 | @status | The status of this object. | String |
 | @version | Pipeline version the object was created with. | String |
 | @waitingOn | Description of list of dependencies this object is waiting on. | Reference Object, e.g. "waitingOn":{"ref":"myRunnableObjectId"} |
-
-****
 
 | System Fields | Description | Slot Type |
 | --- | --- | --- |

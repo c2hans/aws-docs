@@ -21,7 +21,7 @@ A single exposure finding contains issues identified in multiple remediation top
   + [The Azure virtual machine has an open network security group](#open-security-group)
   + [The Azure virtual machine has a security rule that allows SSH or RDP access](#remote-access-allowed)
   + [The role associated with the Azure virtual machine has an administrative access role assignment](#administrative-access-policy)
-  + [The Azure virtual machine has an End-Of-Life operating system](#end-of-life-operating-system-detected)
+  + [The Azure virtual machine has an end-of-life operating system](#end-of-life-operating-system-detected)
 + [Reachability traits for Azure virtual machines](#azure-vm-reachability)
   + [The Azure virtual machine is reachable over the internet](#internet-reachable)
 + [Vulnerability traits for Azure virtual machines](#vulnerability)
@@ -79,7 +79,7 @@ Take one or more of the following actions to address this exposure:
 **Implement least privilege access**
  Replace administrative role assignments with the least-privileged built-in role that grants only the permissions the workload requires. Assign it at the narrowest scope (resource or resource group) that meets your needs. When creating custom roles, specify `Actions` and `DataActions` explicitly instead of using a wildcard. For more information, see [Best practices for Azure RBAC](https://learn.microsoft.com/en-us/azure/role-based-access-control/best-practices) in the Microsoft Azure documentation.
 
-### The Azure virtual machine has an End-Of-Life operating system
+### The Azure virtual machine has an end-of-life operating system
 <a name="end-of-life-operating-system-detected"></a>
 
  The Azure virtual machine runs an end-of-life operating system that is no longer supported or maintained by its vendor. When an operating system reaches end of life, the vendor stops releasing security updates and advisories, which leaves known vulnerabilities permanently unpatched and exposes the virtual machine to attack. Following security best practices, upgrade to a supported operating system version.

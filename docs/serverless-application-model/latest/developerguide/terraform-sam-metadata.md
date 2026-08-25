@@ -16,8 +16,6 @@ This page contains reference information for the **sam metadata resource** resou
 ## Arguments
 <a name="terraform-sam-metadata-arguments"></a>
 
-****
-
 | Argument | Description |
 | --- | --- |
 | built\_output\_path | The path to your AWS Lambda function's built artifacts. |

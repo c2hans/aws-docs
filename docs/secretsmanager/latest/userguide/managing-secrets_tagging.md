@@ -108,7 +108,7 @@ If the **Save** button is not enabled, the tag key or value might not meet the t
 <a name="managing-secrets_taggging-cli-examples"></a>
 
 **Example Add a tag to a secret**
-The following [`tag-resource`](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/tag-resource.html) example shows how to attach a tag with shorthand syntax.
+The following [`tag-resource`](https://docs.aws.amazon.com/cli/latest/reference/secretsmanager/tag-resource.html) example shows how to attach a tag with shorthand syntax.
 
 ```
 aws secretsmanager tag-resource \
@@ -117,7 +117,7 @@ aws secretsmanager tag-resource \
 ```
 
 **Example Add multiple tags to a secret**
-The following [`tag-resource`](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/tag-resource.html) example attaches two key-value tags to a secret.
+The following [`tag-resource`](https://docs.aws.amazon.com/cli/latest/reference/secretsmanager/tag-resource.html) example attaches two key-value tags to a secret.
 
 ```
 aws secretsmanager tag-resource \
@@ -126,7 +126,7 @@ aws secretsmanager tag-resource \
 ```
 
 **Example Remove tags from a secret**
-The following [`untag-resource`](https://docs.aws.amazon.com//cli/latest/reference/secretsmanager/untag-resource.html) example removes two tags from a secret. For each tag, both key and value are removed.
+The following [`untag-resource`](https://docs.aws.amazon.com/cli/latest/reference/secretsmanager/untag-resource.html) example removes two tags from a secret. For each tag, both key and value are removed.
 
 ```
 aws secretsmanager untag-resource \

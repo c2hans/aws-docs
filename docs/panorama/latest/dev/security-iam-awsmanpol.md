@@ -16,8 +16,6 @@ You cannot change the permissions defined in AWS managed policies. If AWS update
 For more information, see [AWS managed policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html#aws-managed-policies) in the *IAM User Guide*.
 
 AWS Panorama provides the following managed policies. For the full contents and change history of each policy, see the linked pages in the IAM console.
-
-****
 + [AWSPanoramaFullAccess](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/AWSPanoramaFullAccess) – Provides full access to AWS Panorama, AWS Panorama access points in Amazon S3, appliance credentials in AWS Secrets Manager, and appliance logs in Amazon CloudWatch. Includes permission to create a [service-linked role](permissions-services.md) for AWS Panorama.
 + [AWSPanoramaServiceLinkedRolePolicy](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/service-role/AWSPanoramaServiceLinkedRolePolicy) – Allows AWS Panorama to manage resources in AWS IoT, AWS Secrets Manager, and AWS Panorama.
 + [AWSPanoramaApplianceServiceRolePolicy](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/service-role/AWSPanoramaApplianceServiceRolePolicy) – Allows an AWS Panorama Appliance to upload logs to CloudWatch, and to get objects from Amazon S3 access points created by AWS Panorama.

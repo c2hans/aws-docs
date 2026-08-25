@@ -27,33 +27,23 @@ The following is an example of this object type.
 ## Syntax
 <a name="sqlactivity-syntax"></a>
 
-****
-
 | Required Fields | Description | Slot Type |
 | --- | --- | --- |
 | database | The database on which to run the supplied SQL script. | Reference Object, e.g. "database":{"ref":"myDatabaseId"} |
 
-****
-
 | Object Invocation Fields | Description | Slot Type |
 | --- | --- | --- |
 | schedule | This object is invoked within the execution of a schedule interval. You must specify a schedule reference to another object to set the dependency execution order for this object. You can set a schedule explicitly on the object, for example, by specifying `"schedule": {"ref": "DefaultSchedule"}`. <br />In most cases, it is better to put the schedule reference on the default pipeline object so that all objects inherit that schedule. <br />If the pipeline has a tree of schedules nested within the master schedule, create a parent object that has a schedule reference. For more information about example optional schedule configurations, see [https://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/dp-object-schedule.html](https://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/dp-object-schedule.html) | Reference Object, e.g. "schedule":{"ref":"myScheduleId"} |
-
-****
 
 | Required Group (One of the following is required) | Description | Slot Type |
 | --- | --- | --- |
 | script | The SQL script to run. You must specify script or scriptUri. When the script is stored in Amazon S3, then script is not evaluated as an expression. Specifying multiple values for scriptArgument is helpful when the script is stored in Amazon S3. | String |
 | scriptUri | A URI specifying the location of an SQL script to execute in this activity. | String |
 
-****
-
 | Required Group (One of the following is required) | Description | Slot Type |
 | --- | --- | --- |
 | runsOn | The computational resource to run the activity or command. For example, an Amazon EC2 instance or Amazon EMR cluster. | Reference Object, e.g. "runsOn":{"ref":"myResourceId"} |
 | workerGroup | The worker group. This is used for routing tasks. If you provide a runsOn value and workerGroup exists, workerGroup is ignored. | String |
-
-****
 
 | Optional Fields | Description | Slot Type |
 | --- | --- | --- |
@@ -77,8 +67,6 @@ The following is an example of this object type.
 | retryDelay | The timeout duration between two retry attempts. | Period |
 | scheduleType | Schedule type allows you to specify whether the objects in your pipeline definition should be scheduled at the beginning of interval or end of the interval. Values are: `cron`, `ondemand`, and `timeseries`.<br /> `timeseries` scheduling means instances are scheduled at the end of each interval.<br />`cron` scheduling means instances are scheduled at the beginning of each interval. <br />An `ondemand` schedule allows you to run a pipeline one time per activation. This means you do not have to clone or re-create the pipeline to run it again. If you use an `ondemand` schedule, it must be specified in the default object and must be the only `scheduleType` specified for objects in the pipeline. To use `ondemand` pipelines, call the `ActivatePipeline` operation for each subsequent run. | Enumeration |
 | scriptArgument | A list of variables for the script. You can alternatively put expressions directly into the script field. Multiple values for scriptArgument are helpful when the script is stored in Amazon S3. Example: \#{format(@scheduledStartTime, "YY-MM-DD HH:MM:SS"}\\n\#{format(plusPeriod(@scheduledStartTime, "1 day"), "YY-MM-DD HH:MM:SS"} | String |
-
-****
 
 | Runtime Fields | Description | Slot Type |
 | --- | --- | --- |
@@ -107,8 +95,6 @@ The following is an example of this object type.
 | @status | The status of this object. | String |
 | @version | Pipeline version the object was created with. | String |
 | @waitingOn | Description of list of dependencies this object is waiting on. | Reference Object, e.g. "waitingOn":{"ref":"myRunnableObjectId"} |
-
-****
 
 | System Fields | Description | Slot Type |
 | --- | --- | --- |

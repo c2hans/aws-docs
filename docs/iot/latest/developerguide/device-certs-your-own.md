@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/device-certs-y
 AWS IoT supports client certificates signed by any root or intermediate certificate authorities (CA). AWS IoT uses CA certificates to verify the ownership of certificates. To use device certificates signed by a CA that’s not Amazon’s CA, the CA’s certificate must be registered with AWS IoT so that we can verify the device certificate’s ownership.
 
 AWS IoT supports multiple ways for bringing your own certificates (BYOC):
-+ First, register the CA that’s used for signing the client certificates and then register individual client certificates. If you want to register the device or client to its client certificate when it first connects to AWS IoT (also known as [Just-in-Time Provisioning](https://docs.aws.amazon.com//iot/latest/developerguide/jit-provisioning.html)), you must register the signing CA with AWS IoT and activate auto-registration.
++ First, register the CA that’s used for signing the client certificates and then register individual client certificates. If you want to register the device or client to its client certificate when it first connects to AWS IoT (also known as [Just-in-Time Provisioning](https://docs.aws.amazon.com/iot/latest/developerguide/jit-provisioning.html)), you must register the signing CA with AWS IoT and activate auto-registration.
 + If you can’t register the signing CA, you can choose to register client certificates without CA. For devices registered without CA, you’ll need to present [Server Name Indication (SNI)](https://www.rfc-editor.org/rfc/rfc3546#section-3.1) when you connect them to AWS IoT.
 
 **Note**

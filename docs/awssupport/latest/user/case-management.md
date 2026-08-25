@@ -14,7 +14,7 @@ In the AWS Management Console, you can create three types of customer cases in S
 + **Technical** support cases connect you to technical support for help with service-related technical issues and, in some cases, third-party applications. If you have Basic Support, you can't create a technical support case.
 **Notes**
 To change your support plan, see [Change AWS Support Plans](changing-support-plans.md).
-To close your account, see [Closing an Account](https://docs.aws.amazon.com//awsaccountbilling/latest/aboutv2/close-account.html) in the *AWS Billing User Guide*.
+To close your account, see [Closing an Account](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/close-account.html) in the *AWS Billing User Guide*.
 To find common troubleshooting topics for AWS services, see [Troubleshooting resources](troubleshooting.md).
 If you're a customer of an AWS Partner that is part of the AWS Partner Network, and you use Resold Support, contact your AWS Partner directly for any billing related issues. AWS Support can't assist with non-technical issues for Resold Support, such as billing and account management. For more information, see the following topics:
 [How AWS Partners can determine AWS Support plans in an organization](https://aws.amazon.com/blogs/mt/aws-partners-determine-aws-support-plans-in-organization/)
@@ -40,8 +40,6 @@ The following table lists the severity levels, response times, and example probl
 If you have a AWS Business Support\+, AWS Enterprise Support, or AWS Unified Operations plan, you can reassign your support case severity level to reflect changes to urgency and business impact. For example, you can change your support case from **System impaired** to **Production system impaired**. When you change the case severity, AWS Support receives notification and routes the case according to the new severity level. For more information, see [Changing the severity level of your support case](#change-severity-for-support-cases).
 If you have a Basic Support plan, then you can't change the severity level for a support case after you create it. If your situation changes, work with the Support agent.
 For more information about the severity level, see the [AWS Support API Reference](https://docs.aws.amazon.com/awssupport/latest/APIReference/API_SeverityLevel.html).
-
-****
 
 | Severity | Severity level code | First-response time | Description and support plan |
 | --- | --- | --- | --- |

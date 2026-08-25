@@ -14,8 +14,6 @@ Create a stack by pointing to a customized CloudFormation (CFN) template in an S
 ## Change Type Details
 <a name="ct-36cn2avfrrj9v-DISc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-36cn2avfrrj9v |

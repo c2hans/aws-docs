@@ -56,7 +56,7 @@ In this configuration, both of the following must be true before Route 53 will 
 + The health check associated with the latency alias record must pass.
 + At least one weighted record must be considered healthy, either because it's associated with a health check that passes or because it's not associated with a health check. In the latter case, Route 53 always considers the weighted record healthy.
 
-In the following illustration, the health check for the latency alias record on the top left failed. As a result, Route 53 stops responding to queries using any of the weighted records that the latency alias record refers to even if they're all healthy. Route 53 begins to consider these weighted records again only when the health check for the latency alias record is healthy again. (For exceptions, see [How Amazon Route 53 chooses records when health checking is configuredHow Route 53 chooses records when health checking is configured](health-checks-how-route-53-chooses-records.md).)
+In the following illustration, the health check for the latency alias record on the top left failed. As a result, Route 53 stops responding to queries using any of the weighted records that the latency alias record refers to even if they're all healthy. Route 53 begins to consider these weighted records again only when the health check for the latency alias record is healthy again. (For exceptions, see [How Amazon Route 53 chooses records when health checking is configured](health-checks-how-route-53-chooses-records.md).)
 
 ![DNS configuration that includes an alias record with both Evaluate Target Health set to Yes and a health check on the alias record.](http://docs.aws.amazon.com/Route53/latest/DeveloperGuide/images/hc-latency-alias-weighted-alias-hc-failed.png)
 

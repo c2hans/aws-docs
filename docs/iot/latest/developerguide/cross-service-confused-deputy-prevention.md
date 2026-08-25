@@ -84,7 +84,7 @@ The role with the following trust policy can only be assumed by the IoT principa
 ### JITP
 <a name="cross-service-confused-deputy-prevention-JITP"></a>
 
-In [just-in-time provisioning (JITP)](https://docs.aws.amazon.com//iot/latest/developerguide/jit-provisioning.html), you can either use provisioning template as a resource separate from the CA or define the template body and the role as part of the CA certificate configuration. The value of `aws:SourceArn` in the AWS IoT role trust policy depends on how you define the provisioning template.
+In [just-in-time provisioning (JITP)](https://docs.aws.amazon.com/iot/latest/developerguide/jit-provisioning.html), you can either use provisioning template as a resource separate from the CA or define the template body and the role as part of the CA certificate configuration. The value of `aws:SourceArn` in the AWS IoT role trust policy depends on how you define the provisioning template.
 
 #### Defining provisioning template as a separate resource
 <a name="cross-service-confused-deputy-prevention-JITP-template"></a>
@@ -134,7 +134,7 @@ To work around this, i.e., to specify the provisioning role trust policy to the 
 ### Credential provider
 <a name="cross-service-confused-deputy-prevention-credential-provider"></a>
 
-For [AWS IoT Core credential provider](https://docs.aws.amazon.com//iot/latest/developerguide/authorizing-direct-aws.html), use the same AWS account you use to create the role alias in `aws:SourceAccount`, and specify a statement that matches the resource ARN of the rolealias resource type in `aws:SourceArn`. When creating an IAM role for use with AWS IoT Core credential provider, you must include in the `aws:SourceArn` condition the ARNs of any role aliases that might need to assume the role, thereby authorizing the cross-service `sts:AssumeRole` request.
+For [AWS IoT Core credential provider](https://docs.aws.amazon.com/iot/latest/developerguide/authorizing-direct-aws.html), use the same AWS account you use to create the role alias in `aws:SourceAccount`, and specify a statement that matches the resource ARN of the rolealias resource type in `aws:SourceArn`. When creating an IAM role for use with AWS IoT Core credential provider, you must include in the `aws:SourceArn` condition the ARNs of any role aliases that might need to assume the role, thereby authorizing the cross-service `sts:AssumeRole` request.
 
 The role with the following trust policy can only be assumed by the principal of AWS IoT Core credential provider (`credentials.iot.amazonaws.com`) for the roleAlias specified in the `SourceArn`. If a principal attempts to retrieve credentials for a role alias other than what's specified in the `aws:SourceArn` condition, the request will be denied, even if that other role alias references the same IAM role.
 

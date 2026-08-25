@@ -68,6 +68,15 @@ Content-type: application/json
          }
       ]
    },
+   "namespaceKeys": [
+      {
+         "key": "{{string}}",
+         "validation": {
+            "allowedValues": [ "{{string}}" ],
+            "regexPattern": "{{string}}"
+         }
+      }
+   ],
    "streamDeliveryResources": {
       "resources": [
          { ... }
@@ -127,6 +136,12 @@ The memory strategies to add, modify, or delete.
 Type: [ModifyMemoryStrategies](API_ModifyMemoryStrategies.md) object
 Required: No
 
+ ** [namespaceKeys](#API_UpdateMemory_RequestSyntax) **   <a name="bedrockagentcorecontrol-UpdateMemory-request-namespaceKeys"></a>
+The namespace variable key definitions with validation rules for this memory. This value fully replaces the existing set — any key you omit is removed. Any referenced `namespaceKey` omission will throw ValidationException.
+Type: Array of [NamespaceKeyEntry](API_NamespaceKeyEntry.md) objects
+Array Members: Minimum number of 1 item. Maximum number of 5 items.
+Required: No
+
  ** [streamDeliveryResources](#API_UpdateMemory_RequestSyntax) **   <a name="bedrockagentcorecontrol-UpdateMemory-request-streamDeliveryResources"></a>
 Configuration for streaming memory record data to external resources.
 Type: [StreamDeliveryResources](API_StreamDeliveryResources.md) object
@@ -157,6 +172,15 @@ Content-type: application/json
       "managedByResourceArn": "string",
       "memoryExecutionRoleArn": "string",
       "name": "string",
+      "namespaceKeys": [
+         {
+            "key": "string",
+            "validation": {
+               "allowedValues": [ "string" ],
+               "regexPattern": "string"
+            }
+         }
+      ],
       "status": "string",
       "strategies": [
          {

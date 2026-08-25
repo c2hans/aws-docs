@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/rcs-billing.h
 # RCS billing and pricing model
 <a name="rcs-billing"></a>
 
-RCS messaging in AWS End User Messaging uses a pricing model with two cost components: an AWS message fee and a carrier fee that is passed through with no markup. This chapter explains the pricing structure for RCS messaging. For current rates, see [AWS End User Messaging Pricing](https://aws.amazon.com//end-user-messaging/pricing/).
+RCS messaging in AWS End User Messaging uses a pricing model with two cost components: an AWS message fee and a carrier fee that is passed through with no markup. This chapter explains the pricing structure for RCS messaging. For current rates, see [AWS End User Messaging Pricing](https://aws.amazon.com/end-user-messaging/pricing/).
 
 AWS End User Messaging charges for RCS messages only when they are successfully delivered to the recipient's device. You are not charged for delivery attempts that fail. If an RCS message fails and falls back to SMS, you are charged for the SMS message that is delivered, not for the failed RCS attempt.
 
@@ -48,7 +48,7 @@ The total cost per message is the message transport fee plus the carrier fee. In
 **Note**
 RCS messages are charged only for delivered messages. This differs from SMS, which charges for requested messages.
 
-For current per-segment rates, see [AWS End User Messaging Pricing](https://aws.amazon.com//end-user-messaging/pricing/).
+For current per-segment rates, see [AWS End User Messaging Pricing](https://aws.amazon.com/end-user-messaging/pricing/).
 
 ## Pricing for countries outside the United States
 <a name="rcs-billing-row-pricing"></a>
@@ -66,7 +66,7 @@ Each outbound or inbound RCS message in these countries has two cost components:
 **Note**
 RCS messages are charged only for delivered messages. This differs from SMS, which charges for requested messages.
 
-For current rates, see [AWS End User Messaging Pricing](https://aws.amazon.com//end-user-messaging/pricing/).
+For current rates, see [AWS End User Messaging Pricing](https://aws.amazon.com/end-user-messaging/pricing/).
 
 ## Conversational pricing
 <a name="rcs-billing-conversational"></a>
@@ -88,7 +88,7 @@ At send time, AWS End User Messaging cannot determine whether a message will bec
 
 When a message is part of an active conversation session, its delivery event reports a `totalMessagePrice` and `totalCarrierFee` of `0.0` and includes a `conversationSessionFee` field with the one-time session fee. AWS End User Messaging also sends a `CONVERSATION_STARTED` event when a session begins. For details on these events and fields, see [RCS message events](rcs-events.md).
 
-Conversational pricing is available in a specific set of countries outside the United States. For the list of supported countries and current session fees, see [AWS End User Messaging Pricing](https://aws.amazon.com//end-user-messaging/pricing/).
+Conversational pricing is available in a specific set of countries outside the United States. For the list of supported countries and current session fees, see [AWS End User Messaging Pricing](https://aws.amazon.com/end-user-messaging/pricing/).
 
 ## Registration fees
 <a name="rcs-billing-registration-fees"></a>
@@ -104,7 +104,7 @@ An annual fee for verifying your brand identity. Brand vetting confirms that you
 **Monthly agent maintenance fee**
 A recurring monthly fee for maintaining your active AWS RCS Agent registration with the RCS infrastructure provider.
 
-These registration fees are carrier pass-through charges. For current registration fee amounts, see [AWS End User Messaging Pricing](https://aws.amazon.com//end-user-messaging/pricing/).
+These registration fees are carrier pass-through charges. For current registration fee amounts, see [AWS End User Messaging Pricing](https://aws.amazon.com/end-user-messaging/pricing/).
 
 **Important**
 RCS registration fees are excluded from Enterprise Discount Program (EDP) discounts. These fees are pass-through charges from the RCS infrastructure provider and are not eligible for AWS volume discounts.
@@ -157,7 +157,7 @@ Content must be legal in all 50 states and federally. Illegal content includes, 
 **Tier 3 — Other violations**
 All other commercial messaging violations that breach federal, state, or local laws, regulations, or carrier codes of conduct on prohibited content.
 
-For more information about content violation fee amounts, see [AWS End User Messaging Pricing](https://aws.amazon.com//end-user-messaging/pricing/).
+For more information about content violation fee amounts, see [AWS End User Messaging Pricing](https://aws.amazon.com/end-user-messaging/pricing/).
 
 ## Bill transparency
 <a name="rcs-billing-transparency"></a>

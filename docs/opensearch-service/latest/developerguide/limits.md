@@ -317,8 +317,6 @@ The following table shows the minimum and maximum sizes for EBS volumes for each
 
 The following table shows the maximum size of HTTP request payloads.
 
-****
-
 | Instance type | Maximum size of HTTP request payloads |
 | --- | --- |
 | t2.micro.search | 10 MiB |
@@ -561,8 +559,6 @@ The following table shows the maximum size of HTTP request payloads.
 
 The following section lists the maximum shard sizes for various instance families.
 
-****
-
 | Instance type | Multi-AZ without Standby | Multi-AZ with Standby |
 | --- | --- | --- |
 | R5, C5, M5, C7i, M7i, R7i | N/A | 65 GiB |
@@ -577,8 +573,6 @@ To request a quota increase, contact [AWS Support](https://aws.amazon.com/premiu
 <a name="shard-count"></a>
 
 The following section lists the maximum shard count for OpenSearch versions.
-
-****
 
 | Engine Version | Limit | Notes |
 | --- | --- | --- |

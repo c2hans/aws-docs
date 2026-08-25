@@ -10,8 +10,6 @@ This page describes the information displayed in the key sections of your Bill e
 **Note**
 If you run a bill estimate by specifying Reserved Instances and Savings Plans sharing group preference, you will see a section at the top of the bill estimate page that will tell you the benefit sharing preference and Cost category you used. It will allow you to go the Bill preferences page to make these changes directly.
 
-****
-
 | Estimate section | Description |
 | --- | --- |
 | Estimate details | Displays when the estimate was created, expiration date, and the AWS account that created the estimate. |

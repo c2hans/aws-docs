@@ -19,6 +19,7 @@ Refer to the following built-in stored procedures for information about their sy
 
 **Topics**
 + [rdsadmin.create\_database](#db2-sp-create-database)
++ [rdsadmin.copy\_active\_logs](#db2-sp-copy-active-logs)
 + [rdsadmin.deactivate\_database](#db2-sp-deactivate-database)
 + [rdsadmin.activate\_database](#db2-sp-activate-database)
 + [rdsadmin.reactivate\_database](#db2-sp-reactivate-database)
@@ -142,6 +143,51 @@ The following example creates a database called `TESTJP` with a correct combinat
 
 ```
 db2 "call rdsadmin.create_database('TESTJP', 4096, 'IBM-437', 'JP', 'SYSTEM')"
+```
+
+## rdsadmin.copy\_active\_logs
+<a name="db2-sp-copy-active-logs"></a>
+
+Copies RDS for Db2 database active logs to Amazon S3. The logs are uploaded to a directory under the location that you configured for `ARCHIVE_LOG_COPY_TARGET_S3_ARN`.
+
+### Syntax
+<a name="db2-sp-copy-active-logs-syntax"></a>
+
+```
+db2 "call rdsadmin.copy_active_logs(
+    ?,
+    '{{database_name}}')"
+```
+
+### Parameters
+<a name="db2-sp-copy-active-logs-parameters"></a>
+
+The following output parameter is required:
+
+?
+A parameter marker that outputs an error message. This parameter only accepts `?`.
+
+The following input parameter is required:
+
+{{database\_name}}
+The name of the database to copy active logs for. The data type is `varchar`.
+
+### Usage notes
+<a name="db2-sp-copy-active-logs-usage-notes"></a>
+
+Before calling `rdsadmin.copy_active_logs`, you must configure archive log copy for the database. For more information, see [Copying archive logs to Amazon S3](db2-managing-databases.md#db2-copying-archive-logs-to-s3).
+
+Active log files are uploaded to your Amazon S3 bucket under {{s3\_prefix}}`rds-archive-log-copy/`{{dbi\_resource\_id}}`/`{{database\_name}}`-`{{database\_unique\_id}}`/active_logs_task_`{{task\_id}}`/`. The Amazon S3 prefix uses the configuration for `ARCHIVE_LOG_COPY_TARGET_S3_ARN`.
+
+For information about checking the status of copying active logs, see [rdsadmin.get\_task\_status](db2-user-defined-functions.md#db2-udf-get-task-status).
+
+### Examples
+<a name="db2-sp-copy-active-logs-examples"></a>
+
+The following example copies active logs for a database called `TESTDB`.
+
+```
+db2 "call rdsadmin.copy_active_logs(?, 'TESTDB')"
 ```
 
 ## rdsadmin.deactivate\_database
@@ -847,11 +893,12 @@ The name of the Amazon S3 bucket where your backup resides. The data type is `va
 
 {{s3\_prefix}}
 The prefix to use for file matching during download. The data type is `varchar`.
-If this parameter is empty, then all files in the S3 bucket will be downloaded. The following example is an example prefix:
+If this parameter is empty, then all files in the S3 bucket will be downloaded. The following is an example prefix:
 
 ```
-backupfolder/SAMPLE.0.rdsdb.DBPART000.20230615010101
+logsfolder/
 ```
+The S3 prefix must point to a location that contains only Db2 archive log files in the standard naming format (`S{{sequence}}.LOG`, for example `S0000001.LOG`). If the prefix contains non-archive-log files, such as backup images, metadata files, or other objects, the rollforward operation fails with an error. Use a dedicated S3 prefix for archive logs that is separate from your backup files.
 
 The following input parameters are optional:
 
@@ -883,6 +930,9 @@ If you set `complete_rollforward` to `FALSE`, then your database is in a `ROLL-F
 
 For information about checking the status of rolling forward the database, see [rdsadmin.rollforward\_status](#db2-sp-rollforward-status).
 
+**Important**
+The S3 prefix that you specify for `rdsadmin.rollforward_database` must contain only archive log files in the `S{{sequence}}.LOG` format. Don't place backup images, metadata files, or other non-log objects at the same S3 prefix that you use for rollforward. If non-archive-log files are present in the prefix, the rollforward operation fails. Store your archive logs in a dedicated prefix that is separate from your database backup files.
+
 ### Examples
 <a name="db2-sp-rollforward-database-examples"></a>
 
@@ -908,10 +958,13 @@ db2 "call rdsadmin.rollforward_database(
     ?,
     'TESTDB',
     'amzn-s3-demo-bucket',
-    'logsfolder/',
+    'archiveLogs/',
     'END_OF_BACKUP',
     'TRUE')"
 ```
+
+**Note**
+The `archiveLogs/` prefix must contain only archive log files in the `S{{sequence}}.LOG` format.
 
 **Example 3: Not bringing database with transaction logs online **
 
@@ -922,10 +975,13 @@ db2 "call rdsadmin.rollforward_database(
     ?,
     'TESTDB',
     null,
-    'onlinebackup/TESTDB',
+    'archiveLogs/TESTDB',
     'END_OF_LOGS',
     'FALSE')"
 ```
+
+**Note**
+When `s3_bucket_name` is null, the rollforward uses log files already present on the DB instance from a previous restore with included logs. When you specify an `s3_prefix`, ensure that it contains only archive log files.
 
 **Example 4: Not bringing database with additional transaction logs online **
 

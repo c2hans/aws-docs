@@ -163,6 +163,12 @@ For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::
 ####
 <a name="aws-resource-connect-queue-return-values-fn--getatt-fn--getatt"></a>
 
+`LastModifiedRegion`  <a name="LastModifiedRegion-fn::getatt"></a>
+The AWS Region where this resource was last modified.
+
+`LastModifiedTime`  <a name="LastModifiedTime-fn::getatt"></a>
+The timestamp when this resource was last modified.
+
 `QueueArn`  <a name="QueueArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the queue.
 

@@ -26,6 +26,11 @@ Content-type: application/json
    },
    "clientToken": "{{string}}",
    "eventTimestamp": {{number}},
+   "extractionConfig": {
+      "namespaceVariables": {
+         "{{string}}" : "{{string}}"
+      }
+   },
    "extractionMode": "{{string}}",
    "metadata": {
       "{{string}}" : { ... }
@@ -75,6 +80,11 @@ The timestamp when the event occurred. If not specified, the current time is use
 Type: Timestamp
 Required: Yes
 
+ ** [extractionConfig](#API_CreateEvent_RequestSyntax) **   <a name="BedrockAgentCore-CreateEvent-request-extractionConfig"></a>
+The extraction configuration for long-term memory records. Use this parameter to specify namespace variable keys and their values for namespace substitution during extraction.
+Type: [ExtractionConfig](API_ExtractionConfig.md) object
+Required: No
+
  ** [extractionMode](#API_CreateEvent_RequestSyntax) **   <a name="BedrockAgentCore-CreateEvent-request-extractionMode"></a>
 Controls long-term memory extraction for this event. When set to `SKIP`, the event is stored in short-term memory but is excluded from long-term memory extraction. If not specified, the event is processed for extraction as usual.
 Type: String
@@ -90,7 +100,7 @@ Key Pattern: `[a-zA-Z0-9\s._:/=+@-]*`
 Required: No
 
  ** [payload](#API_CreateEvent_RequestSyntax) **   <a name="BedrockAgentCore-CreateEvent-request-payload"></a>
-The content payload of the event. This can include conversational data or binary content.
+The content payload of the event. This can include conversational data, JSON data, or binary content.
 Type: Array of [PayloadType](API_PayloadType.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 100 items.
 Required: Yes

@@ -5,14 +5,14 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/resetpassw
 # Resetting your AWS access portal user password
 <a name="resetpassword-accessportal"></a>
 
-The AWS access portal provides [IAM Identity Center](what-is.md) users with single sign-on access to all their assigned AWS accounts and cloud applications through a web portal. The AWS access portal is different from the [AWS Management Console](https://docs.aws.amazon.com//awsconsolehelpdocs/latest/gsg/learn-whats-new.html), which is a collection of service consoles for managing AWS resources.
+The AWS access portal provides [IAM Identity Center](what-is.md) users with single sign-on access to all their assigned AWS accounts and cloud applications through a web portal. The AWS access portal is different from the [AWS Management Console](https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/learn-whats-new.html), which is a collection of service consoles for managing AWS resources.
 
-Use this procedure to reset your IAM Identity Center user password for the AWS access portal. Learn more about [User types](https://docs.aws.amazon.com//signin/latest/userguide/user-types-list.html) in the *AWS Sign-In User Guide*.
+Use this procedure to reset your IAM Identity Center user password for the AWS access portal. Learn more about [User types](https://docs.aws.amazon.com/signin/latest/userguide/user-types-list.html) in the *AWS Sign-In User Guide*.
 
 **Considerations**
 The reset your password functionality for your AWS access portal is only available for users of Identity Center instances that are using Identity Center directory or [AWS Managed Microsoft AD](gs-ad.md) as their identity source. If your user is connected to an external identity provider or [AD Connector](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/directory_ad_connector.html), user password resets must be done from the external identity provider or connected Active Directory.
 + If your identity source is an **IAM Identity Center directory**, see [Password requirements when managing identities in IAM Identity Center](password-requirements.md).
-+ If your identity source is an **AWS Managed Microsoft AD**, see [Password requirements when resetting a password in AWS Managed Microsoft AD](https://docs.aws.amazon.com//directoryservice/latest/admin-guide/ms_ad_password_policies.html#how_password_policies_applied).
++ If your identity source is an **AWS Managed Microsoft AD**, see [Password requirements when resetting a password in AWS Managed Microsoft AD](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_ad_password_policies.html#how_password_policies_applied).
 
 **To reset your password to the AWS access portal**
 
@@ -20,7 +20,7 @@ The reset your password functionality for your AWS access portal is only availab
 
    If you do not have your AWS access portal URL, check your email. You should have been emailed an invitation to join AWS IAM Identity Center that includes a specific sign-in URL to the AWS access portal. Alternatively, your administrator might have directly provided you with a one-time password and the AWS access portal URL. If you cannot locate this information, ask your administrator to send it to you.
 
-   For more information about signing into the AWS access portal, see [Sign in to the AWS access portal](https://docs.aws.amazon.com//signin/latest/userguide/iam-id-center-sign-in-tutorial.html) in the *AWS Sign-In User Guide*.
+   For more information about signing into the AWS access portal, see [Sign in to the AWS access portal](https://docs.aws.amazon.com/signin/latest/userguide/iam-id-center-sign-in-tutorial.html) in the *AWS Sign-In User Guide*.
 
 1. Enter your **Username**, and then choose **Next**.
 

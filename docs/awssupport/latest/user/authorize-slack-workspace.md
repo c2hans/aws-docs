@@ -11,7 +11,7 @@ After you authorize your workspace and give the AWS Support App permission to ac
 Your Slack channel inherits permissions from the IAM role. All users in the Slack channel have the same permissions that are specified in the IAM policy attached to the role. For example, if your IAM policy grants full read and write permissions to your support cases, anyone in your Slack channel can create, update, and resolve your support cases. If your IAM policy allows the role read-only permissions, then users in your Slack channel can only view your support cases.
 We recommend that you add the Slack workspaces and channels that you need to manage your support operations. We recommend that you configure private channels and only invite required users.
 
- You must authorize each Slack workspace that you want to use for your AWS account. If you have multiple AWS accounts, you must sign in to each account and repeat the following procedure to authorize the workspace. If your account belongs to an organization in AWS Organizations and you want to authorize multiple accounts, skip to [ Authorize multiple accounts](https://docs.aws.amazon.com//awssupport/latest/user/authorize-slack-workspace.html#authorize-multiple-accounts).
+ You must authorize each Slack workspace that you want to use for your AWS account. If you have multiple AWS accounts, you must sign in to each account and repeat the following procedure to authorize the workspace. If your account belongs to an organization in AWS Organizations and you want to authorize multiple accounts, skip to [ Authorize multiple accounts](https://docs.aws.amazon.com/awssupport/latest/user/authorize-slack-workspace.html#authorize-multiple-accounts).
 
 **To authorize the Slack workspace for your AWS account**
 

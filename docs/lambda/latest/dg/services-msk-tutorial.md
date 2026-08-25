@@ -27,7 +27,7 @@ For more information about implementing solutions using the Amazon API Gateway W
 
 An AWS account with the following preconfigured resources:
 
-**To fulfill these prerequisites, we recommend following [Getting started using Amazon MSK](https://docs.aws.amazon.com//msk/latest/developerguide/getting-started.html) in the Amazon MSK documentation.**
+**To fulfill these prerequisites, we recommend following [Getting started using Amazon MSK](https://docs.aws.amazon.com/msk/latest/developerguide/getting-started.html) in the Amazon MSK documentation.**
 + An Amazon MSK cluster. See [Create an Amazon MSK cluster](https://docs.aws.amazon.com/msk/latest/developerguide/create-cluster.html) in *Getting started using Amazon MSK*.
 + The following configuration:
   + Ensure **IAM role-based authentication** is **Enabled** in your cluster security settings. This improves your security by limiting your Lambda function to only access the Amazon MSK resources needed. This is enabled by default on new Amazon MSK clusters.
@@ -73,7 +73,7 @@ Your event source mapping belongs to your Amazon MSK cluster security group. In 
 
 **To configure interface Amazon VPC endpoints to connect Lambda and Amazon MSK**
 
-1. Create a security group for your interface Amazon VPC endpoints, {{endpointSecurityGroup}}, that allows inbound TCP traffic on 443 from {{clusterSecurityGroups}}. Follow the procedure in [Create a security group](https://docs.aws.amazon.com//AWSEC2/latest/UserGuide/working-with-security-groups.html#creating-security-group) in the Amazon EC2 documentation to create a security group. Then, follow the procedure in [Add rules to a security group](https://docs.aws.amazon.com//AWSEC2/latest/UserGuide/working-with-security-groups.html#adding-security-group-rule) in the Amazon EC2 documentation to add appropriate rules.
+1. Create a security group for your interface Amazon VPC endpoints, {{endpointSecurityGroup}}, that allows inbound TCP traffic on 443 from {{clusterSecurityGroups}}. Follow the procedure in [Create a security group](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/working-with-security-groups.html#creating-security-group) in the Amazon EC2 documentation to create a security group. Then, follow the procedure in [Add rules to a security group](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/working-with-security-groups.html#adding-security-group-rule) in the Amazon EC2 documentation to add appropriate rules.
 
    **Create a security group with the following information:**
 
@@ -81,7 +81,7 @@ Your event source mapping belongs to your Amazon MSK cluster security group. In 
    + For **Type**, select **HTTPS**.
    + For **Source**, select one of {{clusterSecurityGroups}}.
 
-1.  Create an endpoint connecting the Lambda service to the Amazon VPC containing your Amazon MSK cluster. Follow the procedure in [Create an interface endpoint](https://docs.aws.amazon.com//vpc/latest/privatelink/create-interface-endpoint.html).
+1.  Create an endpoint connecting the Lambda service to the Amazon VPC containing your Amazon MSK cluster. Follow the procedure in [Create an interface endpoint](https://docs.aws.amazon.com/vpc/latest/privatelink/create-interface-endpoint.html).
 
    **Create an interface endpoint with the following information:**
    + For **Service name**, select `com.amazonaws.{{regionName}}.lambda`, where {{regionName}} hosts your Lambda function.
@@ -108,7 +108,7 @@ Your event source mapping belongs to your Amazon MSK cluster security group. In 
      ```
    + Ensure **Enable DNS name** remains set.
 
-1.  Create an endpoint connecting the AWS STS service to the Amazon VPC containing your Amazon MSK cluster. Follow the procedure in [Create an interface endpoint](https://docs.aws.amazon.com//vpc/latest/privatelink/create-interface-endpoint.html).
+1.  Create an endpoint connecting the AWS STS service to the Amazon VPC containing your Amazon MSK cluster. Follow the procedure in [Create an interface endpoint](https://docs.aws.amazon.com/vpc/latest/privatelink/create-interface-endpoint.html).
 
    **Create an interface endpoint with the following information:**
    + For **Service name**, select AWS STS.
@@ -139,7 +139,7 @@ Your event source mapping belongs to your Amazon MSK cluster security group. In 
    + Allow all inbound and outbound TCP traffic on 9098 to all of {{clusterSecurityGroups}}, including within itself.
    + Allow all outbound TCP traffic on 443.
 
-   Some of this traffic is allowed by default security group rules, so if your cluster is attached to a single security group, and that group has default rules, additional rules are not necessary. To adjust security group rules, follow the procedures in [Add rules to a security group](https://docs.aws.amazon.com//AWSEC2/latest/UserGuide/working-with-security-groups.html#adding-security-group-rule) in the Amazon EC2 documentation.
+   Some of this traffic is allowed by default security group rules, so if your cluster is attached to a single security group, and that group has default rules, additional rules are not necessary. To adjust security group rules, follow the procedures in [Add rules to a security group](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/working-with-security-groups.html#adding-security-group-rule) in the Amazon EC2 documentation.
 
    **Add rules to your security groups with the following information:**
    + For each inbound rule or outbound rule for port 9098, provide

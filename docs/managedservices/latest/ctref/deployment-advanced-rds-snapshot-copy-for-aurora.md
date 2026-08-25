@@ -14,8 +14,6 @@ Create a copy of an Amazon Relational Database Service (Amazon RDS) DB Cluster s
 ## Change Type Details
 <a name="ct-19fdy7np55xiu-DARc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-19fdy7np55xiu |

@@ -30,7 +30,7 @@ You can set up network connectivity between an Amazon EC2 instance and a Documen
 
 **To create a rule in a VPC security group that allows connections from another security group, do the following:**
 
-1. Sign in to the AWS Management Console and open the Amazon VPC console at [https://console.aws.amazon.com/vpc](https://console.aws.amazon.com//vpc).
+1. Sign in to the AWS Management Console and open the Amazon VPC console at [https://console.aws.amazon.com/vpc](https://console.aws.amazon.com/vpc).
 
 1. In the navigation pane, locate and choose **Security groups**.
 

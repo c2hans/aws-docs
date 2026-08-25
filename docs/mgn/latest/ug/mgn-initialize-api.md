@@ -32,8 +32,6 @@ You must complete both steps to finalize the service initialization process.
 
 To initialize MGN with the API, create the following IAM roles through the [IAM CreateRoleAPI](https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateRole.html). Learn more about [creating IAM roles in the AWS IAM documentation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html). Creation of each role must include the following parameters:
 
-****
-
 <table>
 <thead>
   <tr><th>Role name</th><th colspan="3">Trusted entities</th></tr>

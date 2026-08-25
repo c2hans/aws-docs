@@ -13,8 +13,6 @@ To create an agent with Amazon Bedrock, you set up the following components:
 
 You can minimally create an agent that only has a name. To **Prepare** an agent so that you can [test](agents-test.md) or [deploy](agents-deploy.md) it, you must minimally configure the following components:
 
-****
-
 | Configuration | Description |
 | --- | --- |
 | Agent resource role | The ARN of the [service role with permissions to call API operations on the agent](agents-permissions.md) |
@@ -112,8 +110,6 @@ To create an agent, send a [CreateAgent](https://docs.aws.amazon.com/bedrock/lat
 
 To prepare your agent and test or deploy it, so that you can [test](agents-test.md) or [deploy](agents-deploy.md) it, you must minimally include the following fields (if you prefer, you can skip these configurations and configure them later by sending an [UpdateAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_UpdateAgent.html) request):
 
-****
-
 | Field | Use case |
 | --- | --- |
 | agentResourceRoleArn | To specify an ARN of the service role with permissions to call API operations on the agent |
@@ -121,8 +117,6 @@ To prepare your agent and test or deploy it, so that you can [test](agents-test.
 | instruction | To provide instructions to tell the agent what to do. Used in the $instructions$ placeholder of the orchestration prompt template. |
 
 The following fields are optional:
-
-****
 
 | Field | Use case |
 | --- | --- |

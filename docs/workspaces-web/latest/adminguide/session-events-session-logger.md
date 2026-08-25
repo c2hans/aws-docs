@@ -19,8 +19,6 @@ The following fields are included in all events:
 + **Client IP**
 + **Session ID**
 
-****
-
 | Name | Description | Additional fields included in the event |
 | --- | --- | --- |
 | SessionStart | A secure browser session was launched, but the user has not connected yet. |  |

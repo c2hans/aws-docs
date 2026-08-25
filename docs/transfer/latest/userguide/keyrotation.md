@@ -12,7 +12,7 @@ For automated SSH key rotation using infrastructure as code, see [Transfer Famil
 
 There are two methods used to perform SSH key rotation:
 + On the console, you can upload a new SSH public key and delete an existing SSH public key.
-+ Using the API, you can update existing users by using the [DeleteSshPublicKey](https://docs.aws.amazon.com//transfer/latest/APIReference/API_DeleteSshPublicKey.html) API to delete a user's Secure Shell (SSH) public key and the [ImportSshPublicKey](https://docs.aws.amazon.com/transfer/latest/APIReference/API_ImportSshPublicKey.html) API to add a new Secure Shell (SSH) public key to the user's account.
++ Using the API, you can update existing users by using the [DeleteSshPublicKey](https://docs.aws.amazon.com/transfer/latest/APIReference/API_DeleteSshPublicKey.html) API to delete a user's Secure Shell (SSH) public key and the [ImportSshPublicKey](https://docs.aws.amazon.com/transfer/latest/APIReference/API_ImportSshPublicKey.html) API to add a new Secure Shell (SSH) public key to the user's account.
 
 ------
 #### [ Console ]

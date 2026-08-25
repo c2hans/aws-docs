@@ -47,7 +47,7 @@ If you want the users' email recorded in your logs, it must be added explicitly 
 ## Enabling user conversation logging with the Amazon CloudWatch Logs API operations
 <a name="cws-logs-enable-logging-api"></a>
 
-To enable user conversation logging with the Amazon CloudWatch Logs API operations, you call the PutDeliverySource, PutDeliveryDesintation, and CreateDelivery API operations. For information about quotas for these API operations, see [Service quotas](https://docs.aws.amazon.com//general/latest/gr/cwl_region.html#limits_cloudwatch_events).
+To enable user conversation logging with the Amazon CloudWatch Logs API operations, you call the PutDeliverySource, PutDeliveryDesintation, and CreateDelivery API operations. For information about quotas for these API operations, see [Service quotas](https://docs.aws.amazon.com/general/latest/gr/cwl_region.html#limits_cloudwatch_events).
 
 **Note**
 To enable conversation logging, you need the Amazon Resource Name (ARN) of your environment. To get this ARN, you can use the Amazon Q Business console or the [GetApplication](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_GetApplication.html) API operation. An ARN follows this format: `arn:aws:qbusiness:region:account-id:application/application-id`.

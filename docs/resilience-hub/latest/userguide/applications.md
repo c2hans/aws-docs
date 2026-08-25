@@ -29,7 +29,7 @@ To view the **Applications** page, choose **Applications** from the navigation p
 + **Estimated workload RPO** – Indicates the maximum possible estimated workload RPO of your application. This value is the maximum estimated workload RTO of all the disruption types from the last successful assessment.
 + **Last assessment time** – Indicates the date and time your application was last assessed successfully.
 + **Creation time** – The date and time that the application was created.
-+ **ARN** – The Amazon Resource Name (ARN) of your application. For more information about ARNs, see [Amazon Resource Names (ARNs)](https://docs.aws.amazon.com//general/latest/gr/aws-arns-and-namespaces.html) in the *AWS General Reference*.
++ **ARN** – The Amazon Resource Name (ARN) of your application. For more information about ARNs, see [Amazon Resource Names (ARNs)](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html) in the *AWS General Reference*.
 
 **Note**
 AWS Resilience Hub can fully assess the resiliency of cross-Region Amazon ECS resources only if you are using Amazon ECR for the image repository.

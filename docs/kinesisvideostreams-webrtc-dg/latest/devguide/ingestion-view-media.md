@@ -19,7 +19,7 @@ Expand the **Media playback** section. If the video is still uploading, it will 
 ## Consume media data using HLS
 <a name="ingestion-consume-hls"></a>
 
-You can create a client application that consumes data from a Kinesis video stream using HLS. For information about creating an application that consumes media data using HLS, see [Kinesis Video Streams playback](https://docs.aws.amazon.com//kinesisvideostreams/latest/dg/how-playback.html).
+You can create a client application that consumes data from a Kinesis video stream using HLS. For information about creating an application that consumes media data using HLS, see [Kinesis Video Streams playback](https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/how-playback.html).
 
 ## View media using the sample media viewer application
 <a name="ingestion-view-application"></a>

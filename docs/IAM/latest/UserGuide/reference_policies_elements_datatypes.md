@@ -16,8 +16,6 @@ This section lists the data types that are supported when you specify values in 
 
 The following table maps each data type to the serialization. Note that all policies must be in UTF-8. For information about the JSON data types, see [RFC 4627](https://datatracker.ietf.org/doc/html/rfc4627).
 
-****
-
 | Type | JSON |
 | --- | --- |
 | String | String |
@@ -25,7 +23,7 @@ The following table maps each data type to the serialization. Note that all poli
 | Float | Number |
 | Boolean | true false |
 | Null | null |
-| Date | String adhering to the [W3C Profile of ISO 8601](https://docs.aws.amazon.com/http://www.w3.org/TR/NOTE-datetime) |
+| Date | String adhering to the [W3C Profile of ISO 8601](http://www.w3.org/TR/NOTE-datetime) |
 | IpAddress | String adhering to [RFC 4632](https://datatracker.ietf.org/doc/html/rfc4632) |
 | List | Array |
 | Object | Object |

@@ -86,7 +86,7 @@ After you add an AWS service as a source, Security Lake automatically starts col
 **Important**
 If you don't have the required role permissions to enable the new version of the AWS log source in the specified Region, contact your Security Lake administrator. For more information, see [Update role permissions](https://docs.aws.amazon.com/security-lake/latest/userguide/internal-sources.html#update-role-permissions).
 
-   For your subscribers to ingest the selected version of the data source, you must also update your subscriber settings. For the details on how to edit a subscriber, see [Subscriber management in Amazon Security Lake](https://docs.aws.amazon.com//security-lake/latest/userguide/subscriber-management.html).
+   For your subscribers to ingest the selected version of the data source, you must also update your subscriber settings. For the details on how to edit a subscriber, see [Subscriber management in Amazon Security Lake](https://docs.aws.amazon.com/security-lake/latest/userguide/subscriber-management.html).
 
    Optionally, you can choose to ingest the latest version only and disable all previous source versions used for data ingestion.
 

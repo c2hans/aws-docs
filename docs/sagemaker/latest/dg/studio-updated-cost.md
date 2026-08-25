@@ -17,4 +17,4 @@ The following do incur costs:
 
 For information about how Amazon SageMaker Studio Classic is billed, see [Amazon SageMaker Studio Classic Pricing](studio-pricing.md).
 
-For more information about billing along with pricing examples, see [Amazon SageMaker Pricing](https://aws.amazon.com//sagemaker/pricing/).
+For more information about billing along with pricing examples, see [Amazon SageMaker Pricing](https://aws.amazon.com/sagemaker/pricing/).

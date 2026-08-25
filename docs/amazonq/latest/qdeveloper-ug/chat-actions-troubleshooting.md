@@ -19,4 +19,4 @@ Amazon Q currently accepts English prompts for the issues shown in the following
 | Amazon EKS | Application Load Balancer (ALB) ingress controller issues; managed add-on issues | I have an ALB ingress controller in my EKS cluster, and am seeing a failure with the error message 'WebIdentityErr:failed to retrieve credentials'. The AWS region is us-west-2.<br />There seems to be an issue with the add-ons in my EKS cluster called my-eks-cluster, in the us-west-2 region. |
 | Amazon ECR | Secondary account access issues | I'm having difficulty granting access to an Amazon ECR image repository from a different AWS account. Specifically, I need to allow account 222222222222 to push and pull images from the repository named "my-ecr-repo" in my account (111111111111) in the region (us-west-2). |
 
-For Amazon Q to troubleshoot your resources, you'll need the same permissions as those outlined in [Chatting about your resources with Amazon Q DeveloperChatting about your resources](chat-actions.md).
+For Amazon Q to troubleshoot your resources, you'll need the same permissions as those outlined in [Chatting about your resources with Amazon Q Developer](chat-actions.md).

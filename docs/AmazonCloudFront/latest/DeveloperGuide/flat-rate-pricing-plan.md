@@ -230,8 +230,6 @@ When your hosted zone is attached to your plan, you get:
 
 1. An additional monthly allowance for other DNS record types
 
-****
-
 |  | Free | Pro | Business | Premium |
 | --- | --- | --- | --- | --- |
 | DNS queries to ALIAS records (CloudFront and [other supported AWS services](https://aws.amazon.com/route53/pricing/)) per month | No limit | No limit | No limit | No limit |
@@ -447,8 +445,6 @@ You must have a AWS WAF Web ACL associated with your distribution if you're usin
 <a name="pricing-plan-disallowed-features"></a>
 
 You can't subscribe distributions to a pricing plan if their configuration contains the following unsupported features. You can disable the unsupported feature and use an alternative option, or keep pay-as-you-go for your distribution.
-
-****
 
 <table>
 <thead>

@@ -12,7 +12,7 @@ Use the `AWS::XRay::SamplingRule` resource to specify a sampling rule, which con
 **Note**
 `SamplingRule.Version` can only be set when creating a sampling rule. Updating the version will cause the update to fail.
 
-Services retrieve rules with [GetSamplingRules](https://docs.aws.amazon.com//xray/latest/api/API_GetSamplingRules.html), and evaluate each rule in ascending order of *priority* for each request. If a rule matches, the service records a trace, borrowing it from the reservoir size. After 10 seconds, the service reports back to X-Ray with [GetSamplingTargets](https://docs.aws.amazon.com//xray/latest/api/API_GetSamplingTargets.html) to get updated versions of each in-use rule. The updated rule contains a trace quota that the service can use instead of borrowing from the reservoir.
+Services retrieve rules with [GetSamplingRules](https://docs.aws.amazon.com/xray/latest/api/API_GetSamplingRules.html), and evaluate each rule in ascending order of *priority* for each request. If a rule matches, the service records a trace, borrowing it from the reservoir size. After 10 seconds, the service reports back to X-Ray with [GetSamplingTargets](https://docs.aws.amazon.com/xray/latest/api/API_GetSamplingTargets.html) to get updated versions of each in-use rule. The updated rule contains a trace quota that the service can use instead of borrowing from the reservoir.
 
 ## Syntax
 <a name="aws-resource-xray-samplingrule-syntax"></a>
@@ -203,6 +203,6 @@ Resources:
 
 ## See also
 <a name="aws-resource-xray-samplingrule--seealso"></a>
-+  [Configuring sampling rules in the X-Ray console](https://docs.aws.amazon.com//xray/latest/devguide/xray-console-sampling.html)
-+  [Using sampling rules with the X-Ray API](https://docs.aws.amazon.com//xray/latest/devguide/xray-api-sampling.html)
-+ [CreateSamplingRule](https://docs.aws.amazon.com//xray/latest/api/API_CreateSamplingRule.html) action in the X-Ray API Reference
++  [Configuring sampling rules in the X-Ray console](https://docs.aws.amazon.com/xray/latest/devguide/xray-console-sampling.html)
++  [Using sampling rules with the X-Ray API](https://docs.aws.amazon.com/xray/latest/devguide/xray-api-sampling.html)
++ [CreateSamplingRule](https://docs.aws.amazon.com/xray/latest/api/API_CreateSamplingRule.html) action in the X-Ray API Reference

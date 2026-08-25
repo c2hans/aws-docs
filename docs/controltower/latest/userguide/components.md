@@ -14,7 +14,7 @@ If you have an existing AWS CodeCommit repository, you can configure it as a sou
 
 Based on your input to the CloudFormation template, CfCT can create an [AWS CodeCommit](https://aws.amazon.com/codecommit/) repository with the same sample configuration that's explained in the Amazon Simple Storage Service section.
 
-To clone the CfCT AWS CodeCommit repository to your local computer, you must create credentials that give you temporary access to the repository, as explained in the [AWS CodeCommit User Guide](https://docs.aws.amazon.com//codecommit/latest/userguide/temporary-access.html#temporary-access-configure-credentials). For information about version compatibility, see [Setting up for AWS CodeCommit](https://docs.aws.amazon.com//console/codecommit/connect-tc-alert-np).
+To clone the CfCT AWS CodeCommit repository to your local computer, you must create credentials that give you temporary access to the repository, as explained in the [AWS CodeCommit User Guide](https://docs.aws.amazon.com/codecommit/latest/userguide/temporary-access.html#temporary-access-configure-credentials). For information about version compatibility, see [Setting up for AWS CodeCommit](https://docs.aws.amazon.com/console/codecommit/connect-tc-alert-np).
 
 **Note**
 If you do not already use CodeCommit, your only option is to set up the Amazon S3 bucket as the storage location for your configuration package. CodeCommit is not available if you are deploying CfCT for the first time.

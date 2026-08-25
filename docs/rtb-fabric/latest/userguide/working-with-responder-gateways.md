@@ -152,7 +152,7 @@ $ aws rtbfabric create-responder-gateway \
 ### Logging
 <a name="responder-gateway-logging"></a>
 
-When logging is configured, default sampling behavior applies. Service logs capture all error logs (`error_log` sampling rate of 1) and no filter logs (`filter_log` sampling rate of 0). To modify sampling rates after creation, see [UpdateLink](https://docs.aws.amazon.com//rtb-fabric/latest/api/) in the *AWS RTB Fabric API Reference*.
+When logging is configured, default sampling behavior applies. Service logs capture all error logs (`error_log` sampling rate of 1) and no filter logs (`filter_log` sampling rate of 0). To modify sampling rates after creation, see [UpdateLink](https://docs.aws.amazon.com/rtb-fabric/latest/api/) in the *AWS RTB Fabric API Reference*.
 
 ## Creating an external responder gateway
 <a name="creating-external-responder-gateway"></a>

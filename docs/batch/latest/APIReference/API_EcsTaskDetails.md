@@ -56,7 +56,7 @@ Type: String
 Required: No
 
  ** runtimePlatform **   <a name="Batch-Type-EcsTaskDetails-runtimePlatform"></a>
-An object that represents the compute environment architecture for AWS Batch jobs on Fargate.
+An object that represents the compute environment architecture for AWS Batch jobs on Fargate or Amazon ECS Managed Instances. Contains the operating system family and CPU architecture of the task.
 Type: [RuntimePlatform](API_RuntimePlatform.md) object
 Required: No
 

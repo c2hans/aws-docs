@@ -16,8 +16,6 @@ Tree maps show up to 100 data points for the **Group by** field. For more inform
 
 To understand the features supported by tree maps, use the following table.
 
-****
-
 | Feature | Supported? | Comments | For more information |
 | --- | --- | --- | --- |
 | Changing the legend display | Yes |  | [Legends on visual types in Quick](customizing-visual-legend.md) |

@@ -63,8 +63,6 @@ Use the IAM console, the AWS CLI, or the AWS API to delete the AWSServiceRoleFor
 
 SES does not support using service-linked roles in every Region where the service is available. You can use the AWSServiceRoleForAmazonSES role in the following Regions.
 
-****
-
 | Region name | Region identity | Support in SES |
 | --- | --- | --- |
 | US East (N. Virginia) | us-east-1 | Yes |

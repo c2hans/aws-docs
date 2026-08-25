@@ -11,6 +11,7 @@ The following table describes the important changes in each release of the *AMS 
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [Deprecated change type](#doc-history-ct) | Removed the following deprecated change type from the AMS Change Type Reference guide:+ Management \| Custom Stack \| Stack From CloudFormation Template \| Remediate drift (managed automation) (ct-34sxfo53yuzah)<br />+ Management \| Standard stacks \| Stack \| Remediate drift (managed automation) (ct-34sxfo53yuzah) | August 18, 2026 |
 | [Updated Tips: Computer object \| Remove, EC2 stack \| Create](#doc-history-ct) | Updated the Tips section for the following change types:+ [Management \| Directory Service \| Computer object \| Remove (ct-3d0lrfb8eckuu)](https://docs.aws.amazon.com/managedservices/latest/ctref/management-directory-computer-object-remove.html)<br />+ [Deployment \| Advanced stack components \| EC2 stack \| Create (ct-14027q0sjyt1h)](https://docs.aws.amazon.com/managedservices/latest/ctref/deployment-advanced-ec2-stack-create.html)<br />+ [Deployment \| Advanced stack components \| EC2 stack \| Create (with additional volumes) (ct-1aqsjf86w6vxg)](https://docs.aws.amazon.com/managedservices/latest/ctref/deployment-advanced-ec2-stack-create-with-additional-volumes.html)<br />Added tip to remove stale Active Directory computer objects before provisioning instances to prevent RFC rejection, broken domain join, and DNS record conflicts. | August 6, 2026 |
 | [Added Network Firewall \| Manage Firewall Rules change type](https://docs.aws.amazon.com/managedservices/latest/ctref/management-managed-network-firewall-manage-firewall-rules-managed-automation.html) | Added new change type ct-2lo1hs6ks7chl for managing AWS Network Firewall egress rules. Classification: Management \| Managed firewall \| Network firewall \| Manage firewall rules (managed automation). | July 6, 2026 |
 | [End of support notice](#doc-history-ct) | End of support notice: On June 30, 2027, AWS will end support for AMS Advanced. After June 30, 2027, you will no longer be able to access the AMS Advanced console or AMS Advanced resources. For more information, see [AMS Advanced end of support](https://docs.aws.amazon.com/managedservices/latest/userguide/SunsetPlan.html). | June 30, 2026 |
@@ -106,8 +107,6 @@ The following table describes the important changes in each release of the *AMS 
 
 The following table describes the important changes to the documentation of the *AMS Change Type Reference Guide* prior to March 2024.
 + **API version: 2019-05-21**
-
-****
 
 <table>
 <thead>
@@ -252,7 +251,7 @@ The following table describes the important changes to the documentation of the 
   <tr><td>Deployment | Advanced stack components | Identity and Access Management (IAM) | Create EC2 instance profile (ct-117rmp64d5mvb) and Deployment | Advanced stack components | Identity and Access Management (IAM) | Create Lambda execution role (ct-1k3oui719dcju)<br />New Version: 2.0. Updated to make JSON copy-paste easier.</td><td><a href="schemas.md#ct-117rmp64d5mvb-schema-section">ct-117rmp64d5mvb</a> and <a href="schemas.md#ct-1k3oui719dcju-schema-section">ct-1k3oui719dcju</a></td></tr>
   <tr><td>Deployment | Advanced stack components | RDS database stack | Create (ct-2z60dyvto9g6c)<br />Added a new value for the <b>RDSDBEngine</b> parameter: mariadb.</td><td><a href="schemas.md#ct-2z60dyvto9g6c-schema-section">ct-2z60dyvto9g6c</a></td></tr>
   <tr><td>Deployment | Advanced stack components | RDS database stack | Update (ct-12w49boaiwtzp)<br />Extended the expected duration time to 360 minutes from 60 minutes.</td><td><a href="schemas.md#ct-12w49boaiwtzp-schema-section">ct-12w49boaiwtzp</a></td></tr>
-  <tr><td>Updated CTs "Additional Information"</td><td>Added an important note about limitations on the resources that can be remediated.</td><td><a href="schemas.md#ct-34sxfo53yuzah-schema-section">ct-34sxfo53yuzah</a></td></tr>
+  <tr><td>Updated CTs "Additional Information"</td><td>Added an important note about limitations on the resources that can be remediated.</td><td>ct-34sxfo53yuzah</td></tr>
   <tr><td rowspan="6">New CTs:</td><td>Management | AWS service | Self-provisioned service | Add Self-Service Provisioning service (no review required)</td><td><a href="schemas.md#ct-1w8z66n899dct-schema-section">ct-1w8z66n899dct</a></td></tr>
   <tr><td>Deployment | Advanced stack components | Identity and Access Management (IAM) | Create service-linked role</td><td><a href="schemas.md#ct-2eof6j3mlcwhf-schema-section">ct-2eof6j3mlcwhf</a></td></tr>
   <tr><td>Management | Advanced stack components | ACM | Delete certificate</td><td><a href="schemas.md#ct-1q8q56cmwqj9m-schema-section">ct-1q8q56cmwqj9m</a></td></tr>

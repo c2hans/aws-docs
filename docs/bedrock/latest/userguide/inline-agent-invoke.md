@@ -8,21 +8,17 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/inline-agent-in
 **Note**
 Configuring and invoking an inline agent feature is in preview release for Amazon Bedrock and is subject to change.
 
-Before you invoke your inline agent, make sure you've completed the [Prerequisites](https://docs.aws.amazon.com//bedrock/latest/userguide/inline-agent-prereq.html).
+Before you invoke your inline agent, make sure you've completed the [Prerequisites](https://docs.aws.amazon.com/bedrock/latest/userguide/inline-agent-prereq.html).
 
-To invoke an inline agent, send a [InvokeInlineAgent](https://docs.aws.amazon.com//bedrock/latest/APIReference/API_agent-runtime_InvokeInlineAgent.html) API request with an [Agents for Amazon Bedrock runtime endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#bra-rt) and minimally include the following fields.
-
-****
+To invoke an inline agent, send a [InvokeInlineAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeInlineAgent.html) API request with an [Agents for Amazon Bedrock runtime endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#bra-rt) and minimally include the following fields.
 
 | Field | Use case |
 | --- | --- |
 | instruction | Provide instructions that tell the inline agent what it should do and how it should interact with users. |
-| foundationModel | Specify a [foundation model](https://docs.aws.amazon.com//bedrock/latest/userguide/foundation-models-reference.html) or [cross-Region inference profile](cross-region-inference.md) ID to use for orchestration by the inline agent you create. For example, anthropic.claude-3-7-sonnet-20250219-v1:0 or us.anthropic.claude-3-7-sonnet-20250219-v1:0. |
+| foundationModel | Specify a [foundation model](https://docs.aws.amazon.com/bedrock/latest/userguide/foundation-models-reference.html) or [cross-Region inference profile](cross-region-inference.md) ID to use for orchestration by the inline agent you create. For example, anthropic.claude-3-7-sonnet-20250219-v1:0 or us.anthropic.claude-3-7-sonnet-20250219-v1:0. |
 | sessionId | An unique identifier of the session. Use the same value across requests to continue same conversation. |
 
 The following fields are optional:
-
-****
 
 | Field | Use case |
 | --- | --- |

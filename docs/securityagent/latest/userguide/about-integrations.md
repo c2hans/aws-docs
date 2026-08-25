@@ -44,4 +44,4 @@ For self-hosted providers that are not reachable over the public internet, you c
 ## Next steps
 <a name="_next_steps"></a>
 + Register a provider from the **Integrations** page. See the connect topic for your provider, such as [Connect AWS Security Agent to GitHub repositories](connect-github.md).
-+ Connect resources to an Agent Space and configure capabilities. See [Enable code review](enable-code-review-scan.md) and [Enable penetration test](enable-penetration-test.md).
++ Connect resources to an Agent Space and configure capabilities. See [Enable Continuum code review](enable-code-review-scan.md) and [Enable Continuum penetration test](enable-penetration-test.md).

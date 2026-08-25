@@ -25,7 +25,7 @@ Use the following procedure to exclude quotas from Automatic Management monitori
 
 See the following AWS CLI examples for adding supported AWS services to the Automatic Management exclusion list. You'll need to include the AWS service code and Service Quotas code in your commands.
 + **Finding supported AWS services code**
-  + Use [ListServices](https://docs.aws.amazon.com//servicequotas/2019-06-24/apireference/API_ListServices.html) to list AWS services supported by Service Quotas. The response includes the `ServiceCode` and `ServiceName` for each service. For example, the `ServiceCode` for Amazon DynamoDB is `dynamodb`.
+  + Use [ListServices](https://docs.aws.amazon.com/servicequotas/2019-06-24/apireference/API_ListServices.html) to list AWS services supported by Service Quotas. The response includes the `ServiceCode` and `ServiceName` for each service. For example, the `ServiceCode` for Amazon DynamoDB is `dynamodb`.
 + **Finding Service Quotas codes**
   + Use [ListServiceQuotas](https://docs.aws.amazon.com/servicequotas/2019-06-24/apireference/API_ListServiceQuotas.html) to list AWS services Service Quotas codes. You can specify the service with the request parameter `ServiceCode`. The response includes the `QuotaName`, `QuotaCode`, `Value`, and `QuotaAppliedAtLevel`.
 

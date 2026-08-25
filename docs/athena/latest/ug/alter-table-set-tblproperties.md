@@ -22,7 +22,6 @@ ALTER TABLE table_name SET TBLPROPERTIES ('property_name' = 'property_value' [ ,
 **SET TBLPROPERTIES ('property\_name' = 'property\_value' [ , ... ])**
 Specifies the metadata properties to add as `property_name` and the value for each as `property value`. If `property_name` already exists, its value is set to the newly specified `property_value`.
 The following predefined table properties have special uses.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/athena/latest/ug/alter-table-set-tblproperties.html)
 
 ## Examples

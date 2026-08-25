@@ -10,7 +10,7 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/foundation-arch.html
 + x86\_64 – 64-bit x86 architecture, for x86-based processors.
 
 **Note**
-The arm64 architecture is available in most AWS Regions. For more information, see [AWS Lambda Pricing](https://aws.amazon.com//lambda/pricing/#aws-element-9ccd9262-b656-4d9c-8a72-34ee6b662135). In the memory prices table, choose the **Arm Price** tab, and then open the **Region** dropdown list to see which AWS Regions support arm64 with Lambda.
+The arm64 architecture is available in most AWS Regions. For more information, see [AWS Lambda Pricing](https://aws.amazon.com/lambda/pricing/#aws-element-9ccd9262-b656-4d9c-8a72-34ee6b662135). In the memory prices table, choose the **Arm Price** tab, and then open the **Region** dropdown list to see which AWS Regions support arm64 with Lambda.
 For an example of how to create a function with arm64 architecture, see [AWS Lambda Functions Powered by AWS Graviton2 Processor](https://aws.amazon.com/blogs/aws/aws-lambda-functions-powered-by-aws-graviton2-processor-run-your-functions-on-arm-and-get-up-to-34-better-price-performance/).
 
 **Topics**

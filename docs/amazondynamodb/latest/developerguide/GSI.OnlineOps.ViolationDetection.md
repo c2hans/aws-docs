@@ -46,8 +46,6 @@ The Violation Detector command line accepts the following options:
 
 At runtime, the Violation Detector tool requires a configuration file. The parameters in this file determine which DynamoDB resources that Violation Detector can access, and how much provisioned throughput it can consume. The following table describes these parameters.
 
-****
-
 | Parameter name | Description | Required? |
 | --- | --- | --- |
 | `awsCredentialsFile` | The fully qualified name of a file containing your AWS credentials. The credentials file must be in the following format:<pre>accessKey = {{access_key_id_goes_here}}<br />secretKey = {{secret_key_goes_here}} </pre> | Yes |
@@ -72,8 +70,6 @@ At runtime, the Violation Detector tool requires a configuration file. The param
 
 To detect index key violations, use Violation Detector with the `--detect` command line option. To show how this option works, consider the `ProductCatalog` table. The following is a list of items in the table. Only the primary key (`Id`) and the `Price` attribute are shown.
 
-****
-
 | Id (primary key) | Price |
 | --- | --- |
 | 101 |  5  |
@@ -86,8 +82,6 @@ To detect index key violations, use Violation Detector with the `--detect` comma
 | 205 |  500  |
 
 All of the values for `Price` are of type `Number`. However, because DynamoDB is schemaless, it is possible to add an item with a non-numeric `Price`. For example, suppose that you add another item to the `ProductCatalog` table.
-
-****
 
 | Id (primary key) | Price |
 | --- | --- |

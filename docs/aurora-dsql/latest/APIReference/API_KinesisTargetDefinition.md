@@ -21,7 +21,7 @@ Required: Yes
 The ARN of the Kinesis stream.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2048.
-Pattern: `arn:aws.*:kinesis:.*:\d{12}:stream/\S+`
+Pattern: `arn:aws[a-zA-Z\-]*:kinesis:[a-zA-Z0-9\-]*:\d{12}:stream/[a-zA-Z0-9+=,.@_/\-]+`
 Required: Yes
 
 ## See Also

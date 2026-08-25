@@ -14,8 +14,6 @@ This method of streaming data is extremely flexible. You can [index object metad
 
 Before proceeding, you must have the following resources.
 
-****
-
 | Prerequisite | Description |
 | --- | --- |
 | Amazon S3 bucket | For more information, see [Create your first S3 bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/CreatingABucket.html) in the Amazon Simple Storage Service User Guide. The bucket must reside in the same Region as your OpenSearch Service domain. |

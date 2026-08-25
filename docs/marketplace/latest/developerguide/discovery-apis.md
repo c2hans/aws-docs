@@ -51,7 +51,7 @@ All Discovery API operations use the HTTP `POST` method with a JSON request body
 ## Response format
 <a name="discovery-response-format"></a>
 
-All responses are returned in JSON format. Successful responses return HTTP status code 200. Error responses include an error type and message. For details, see [Common Errors](https://docs.aws.amazon.com//marketplace/latest/APIReference/CommonErrors.html).
+All responses are returned in JSON format. Successful responses return HTTP status code 200. Error responses include an error type and message. For details, see [Common Errors](https://docs.aws.amazon.com/marketplace/latest/APIReference/CommonErrors.html).
 
 ## Using the AWS SDK
 <a name="discovery-using-sdk"></a>

@@ -24,8 +24,6 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_codeguruprofiler-actions-as-permissions).
 
-****
-
 - **   AddNotificationChannels  **
   - **IAM action:**  [codeguru-profiler:AddNotificationChannels](#list_codeguruprofiler-action-AddNotificationChannels)
   - **Condition key:**
@@ -166,8 +164,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
 <a name="list_codeguruprofiler-actions-as-permissions"></a>
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
-
-****
 
 - **   [AddNotificationChannels](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_AddNotificationChannels.html)  **
   - **Description:** Grants permission to add up to 2 topic ARNs of existing AWS SNS topics to publish notifications
@@ -312,8 +308,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
 
-****
-
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
 |  [ProfilingGroup](https://docs.aws.amazon.com/codeguru/latest/profiler-ug/working-with-profiling-groups.html)  | arn:${Partition}:codeguru-profiler:${Region}:${Account}:profilingGroup/${ProfilingGroupName} | [aws:ResourceTag/${TagKey}](#list_codeguruprofiler-aws_ResourceTag___TagKey_) |
@@ -322,8 +316,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_codeguruprofiler-policy-keys"></a>
 
 Amazon CodeGuru Profiler defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

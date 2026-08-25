@@ -55,9 +55,9 @@ This event is generated for outbound calls (including [Connect Customer outbound
 
     In these cases, the COMPLETED event is published immediately after the DISCONNECT event with the same data.
 **Note**
-For chat contacts, if an agent switches their status to offline without properly clearing the contact in Contact Control Panel (CCP), the following issues may occur:
+For chat contacts, if an agent switches their status to offline without properly clearing the contact in Contact Control Panel (CCP), the following issues might occur:
 The COMPLETED event might not be delivered.
-The AfterContactWorkEndTimestamp may show discrepancies.
+The AfterContactWorkEndTimestamp might show discrepancies.
 + DISCONNECTED - A voice call, chat, task, or email is disconnected. For outbound calls, the dial attempt is not successful, the attempt is connected but the call is not picked up, or the attempt results in a [SIT tone](https://en.wikipedia.org/wiki/Special_information_tone).
 
   A disconnect event is when:
@@ -110,7 +110,7 @@ The date and time when the agent started doing After Contact Work for the contac
 Type: String (yyyy-MM-dd'T'HH:mm:ss.SSS'Z')
 
 **AfterContactWorkEndTimestamp**
-The date and time when the agent ended After Contact Work for the contact, in UTC time. In cases when agent finishes doing AfterContactWork for chat contacts and switches their activity status to offline or equivalent without clearing the contact in CCP, discrepancies may be noticed for `AfterContactWorkEndTimestamp`.
+The date and time when the agent ended After Contact Work for the contact, in UTC time. In cases when agent finishes doing AfterContactWork for chat contacts and switches their activity status to offline or equivalent without clearing the contact in CCP, discrepancies might be noticed for `AfterContactWorkEndTimestamp`.
 Type: String (yyyy-MM-dd'T'HH:mm:ss.SSS'Z')
 
 **AfterContactWorkDuration**
@@ -295,7 +295,7 @@ Members: SegmentAttributeName, SegmentAttributeValue
 Type: String to string map
 
 **CustomerId**
-The customer's identification number. For example, the CustomerId may be a customer number from your CRM. You can create a Lambda function to pull the unique customer ID of the caller from your CRM system. If you enable Connect Customer Voice ID capability, this attribute is populated with the CustomerSpeakerId of the caller.
+The customer's identification number. For example, the CustomerId might be a customer number from your CRM. You can create a Lambda function to pull the unique customer ID of the caller from your CRM system. If you enable Connect Customer Voice ID capability, this attribute is populated with the CustomerSpeakerId of the caller.
 Type: String
 
 **ChatMetrics**
@@ -369,12 +369,12 @@ Type: AttributeCondition
 Information about the global resiliency configuration for the contact, including traffic distribution details.
 
 **ActiveRegion**
-The current AWS region in which the contact is active. This indicates where the contact is being processed in real-time.
+The current AWS Region in which the contact is active. This indicates where the contact is being processed in real-time.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 1024.
 
 **OriginRegion**
-The AWS region where the contact was originally created and initiated. This may differ from the `ActiveRegion` if the contact has been transferred across regions.
+The AWS Region where the contact was originally created and initiated. This might differ from the `ActiveRegion` if the contact has been transferred across regions.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 1024.
 

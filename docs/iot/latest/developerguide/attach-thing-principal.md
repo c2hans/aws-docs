@@ -5,9 +5,9 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/attach-thing-p
 # Attach a principal to a thing
 <a name="attach-thing-principal"></a>
 
-A physical device can use a principal to communicate with AWS IoT. A principal can be an X.509 certificate or an Amazon Cognito ID. You can associate a certificate or an Amazon Cognito ID with the thing in the registry that represents your device, by running the [attach-thing-principal](https://docs.aws.amazon.com//cli/latest/reference/iot/attach-thing-principal.html) command.
+A physical device can use a principal to communicate with AWS IoT. A principal can be an X.509 certificate or an Amazon Cognito ID. You can associate a certificate or an Amazon Cognito ID with the thing in the registry that represents your device, by running the [attach-thing-principal](https://docs.aws.amazon.com/cli/latest/reference/iot/attach-thing-principal.html) command.
 
-To attach a certificate or an Amazon Cognito ID to your thing, use the [attach-thing-principal](https://docs.aws.amazon.com//cli/latest/reference/iot/attach-thing-principal.html) command:
+To attach a certificate or an Amazon Cognito ID to your thing, use the [attach-thing-principal](https://docs.aws.amazon.com/cli/latest/reference/iot/attach-thing-principal.html) command:
 
 ```
 $ aws iot attach-thing-principal \
@@ -29,4 +29,4 @@ $ aws iot attach-thing-principal \
 
 If the attachment is successful, the **AttachThingPrincipal** command does not produce any output. To describe the attachment, use list-thing-principals-v2 CLI command.
 
-For more information, see [AttachThingPrincipal](https://docs.aws.amazon.com//iot/latest/apireference/API_AttachThingPrincipal.html) from the *AWS IoT Core API Reference*.
+For more information, see [AttachThingPrincipal](https://docs.aws.amazon.com/iot/latest/apireference/API_AttachThingPrincipal.html) from the *AWS IoT Core API Reference*.

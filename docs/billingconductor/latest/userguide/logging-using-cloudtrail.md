@@ -14,8 +14,6 @@ To learn more about CloudTrail, see the [AWS CloudTrail User Guide](https://docs
 
 This section shows a full list of the CloudTrail events related to Billing and Cost Management.
 
-****
-
 | Event name | Definition |
 | --- | --- |
 | `AssociateAccounts` | Logs the association of accounts to a billing group. |

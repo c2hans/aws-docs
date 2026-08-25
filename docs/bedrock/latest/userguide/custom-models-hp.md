@@ -18,8 +18,6 @@ The Amazon Nova Lite, Amazon Nova Micro, and Amazon Nova Pro models support the 
 
 The number of epochs you specify increases your model customization cost by processing more tokens. Each epoch processes the entire training dataset once. For information about pricing, see [Amazon Bedrock pricing](https://aws.amazon.com/bedrock/pricing).
 
-****
-
 | Hyperparameter (console) | Hyperparameter (API) | Definition | Type | Minimum | Maximum | Default |
 | --- | --- | --- | --- | --- | --- | --- |
 | Epochs | epochCount | The number of iterations through the entire training dataset | integer | 1 | 5 | 2 |
@@ -35,8 +33,6 @@ The learning rate will gradually increase to the set value during warm up. There
 
 The Amazon Nova Canvas model supports the following hyperparameters for model customization.
 
-****
-
 | Hyperparameter (console) | Hyperparameter (API) | Definition | Minimum | Maximum | Default |
 | --- | --- | --- | --- | --- | --- |
 | Batch size | batchSize | Number of samples processed before updating model parameters | 8 | 192 | 8 |
@@ -48,8 +44,6 @@ The Amazon Nova Canvas model supports the following hyperparameters for model cu
 
 Amazon Titan Text Premier model supports the following hyperparameters for model customization. The number of epochs you specify increases your model customization cost by processing more tokens. Each epoch processes the entire training dataset once. For information about pricing, see [Amazon Bedrock pricing](https://aws.amazon.com/bedrock/pricing).
 
-****
-
 | Hyperparameter (console) | Hyperparameter (API) | Definition | Type | Minimum | Maximum | Default |
 | --- | --- | --- | --- | --- | --- | --- |
 | Epochs | epochCount | The number of iterations through the entire training dataset | integer | 1 | 5 | 2 |
@@ -58,8 +52,6 @@ Amazon Titan Text Premier model supports the following hyperparameters for model
 | Learning rate warmup steps | learningRateWarmupSteps | The number of iterations over which the learning rate is gradually increased to the specified rate | integer | 0 | 20 | 5 |
 
 Amazon Titan Text models, such as Lite and Express, support the following hyperparameters for model customization. The number of epochs you specify increases your model customization cost by processing more tokens. Each epoch processes the entire training dataset once. For information about pricing, see [Amazon Bedrock pricing](https://aws.amazon.com/bedrock/pricing).
-
-****
 
 | Hyperparameter (console) | Hyperparameter (API) | Definition | Type | Minimum | Maximum | Default |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -76,8 +68,6 @@ The Amazon Titan Image Generator G1 model supports the following hyperparameters
 **Note**
 `stepCount` has no default value and must be specified. `stepCount` supports the value `auto`. `auto` prioritizes model performance over training cost by automatically determining a number based on the size of your dataset. Training job costs depend on the number that `auto` determines. To understand how job cost is calculated and to see examples, see [Amazon Bedrock Pricing](https://aws.amazon.com/bedrock/pricing).
 
-****
-
 | Hyperparameter (console) | Hyperparameter (API) | Definition | Minimum | Maximum | Default |
 | --- | --- | --- | --- | --- | --- |
 | Batch size | batchSize | Number of samples processed before updating model parameters | 8 | 192 | 8 |
@@ -92,8 +82,6 @@ The Amazon Titan Multimodal Embeddings G1 model supports the following hyperpara
 **Note**
 `epochCount` has no default value and must be specified. `epochCount` supports the value `Auto`. `Auto` prioritizes model performance over training cost by automatically determining a number based on the size of your dataset. Training job costs depend on the number that `Auto` determines. To understand how job cost is calculated and to see examples, see [Amazon Bedrock Pricing](https://aws.amazon.com/bedrock/pricing).
 
-****
-
 | Hyperparameter (console) | Hyperparameter (API) | Definition | Type | Minimum | Maximum | Default |
 | --- | --- | --- | --- | --- | --- | --- |
 | Epochs | epochCount | The number of iterations through the entire training dataset | integer | 1 | 100 | N/A |
@@ -104,8 +92,6 @@ The Amazon Titan Multimodal Embeddings G1 model supports the following hyperpara
 <a name="cm-hp-anth-claude-3"></a>
 
 Anthropic Claude 3 models support the following hyperparameters for model customization. The number of epochs you specify increases your model customization cost by processing more tokens. Each epoch processes the entire training dataset once. For information about pricing, see [Amazon Bedrock pricing](https://aws.amazon.com/bedrock/pricing).
-
-****
 
 | Console Name | API Name | Definition | Default | Minimum | Maximum |
 | --- | --- | --- | --- | --- | --- |
@@ -124,8 +110,6 @@ The Cohere Command and Cohere Command Light models support the following hyperpa
 
 **Note**
 The `epochCount` quota is adjustable.
-
-****
 
 | Hyperparameter (console) | Hyperparameter (API) | Definition | Type | Minimum | Maximum | Default |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -146,8 +130,6 @@ The Meta Llama 3.1 8B and 70B models support the following hyperparameters for m
 **Note**
 The `epochCount` quota is adjustable.
 
-****
-
 | Hyperparameter (console) | Hyperparameter (API) | Definition | Minimum | Maximum | Default |
 | --- | --- | --- | --- | --- | --- |
 | Epochs | epochCount | The number of iterations through the entire training dataset | 1 | 10 | 5 |
@@ -160,8 +142,6 @@ The `epochCount` quota is adjustable.
 The Meta Llama 3.2 1B, 3B, 11B, and 90B models support the following hyperparameters for model customization. The number of epochs you specify increases your model customization cost by processing more tokens. Each epoch processes the entire training dataset once. For information about pricing, see [Amazon Bedrock pricing](https://aws.amazon.com/bedrock/pricing). For more information, see [Customize your model to improve its performance for your use case](custom-models.md).
 
  For information about fine tuning Meta Llama models, see the Meta documentation at [https://ai.meta.com/llama/get-started/\#fine-tuning](https://ai.meta.com/llama/get-started/#fine-tuning).
-
-****
 
 | Hyperparameter (console) | Hyperparameter (API) | Definition | Minimum | Maximum | Default |
 | --- | --- | --- | --- | --- | --- |

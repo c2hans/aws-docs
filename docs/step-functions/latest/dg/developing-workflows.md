@@ -46,7 +46,7 @@ The following table shows ASL-based definition format support by tool.
 
 YAML single line comments in the state machine definition of a template will not be carried forward into the created resource’s definition. If you need to persist a comment, you should use the `Comment` property within the state machine definition. For information, see [State machine structure](statemachine-structure.md).
 
-With CloudFormation and AWS SAM, you can upload your state machine definitions to Amazon S3 (JSON or YAML format) and provide the definition's Amazon S3 location in the template. For information see the [AWS::StepFunctions::StateMachine S3Location](https://docs.aws.amazon.com//AWSCloudFormation/latest/UserGuide/aws-properties-stepfunctions-statemachine-s3location.html) page.
+With CloudFormation and AWS SAM, you can upload your state machine definitions to Amazon S3 (JSON or YAML format) and provide the definition's Amazon S3 location in the template. For information see the [AWS::StepFunctions::StateMachine S3Location](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-stepfunctions-statemachine-s3location.html) page.
 
 The following example CloudFormation templates show how you can provide the same state machine definition using different input formats.
 

@@ -5,6 +5,8 @@ source_url: https://docs.aws.amazon.com/accounts/latest/reference/vpc-iam.html
 # Amazon Virtual Private Cloud endpoint policies for Account Management
 <a name="vpc-iam"></a>
 
+The following information is relevant for all AWS accounts.
+
 You can create a Amazon VPC endpoint policy for Account Management in which you specify the following:
 + The principal that can perform actions.
 + The actions that the principals can perform.

@@ -9,8 +9,6 @@ For Amazon ECS Managed Instances running NVIDIA GPU-enabled Amazon EC2 instance 
 
 The following Xid codes are included. For the complete list and descriptions, see the [NVIDIA Xid Errors](https://docs.nvidia.com/deploy/xid-errors/index.html) documentation.
 
-****
-
 | Xid | Error type |
 | --- | --- |
 | 8 | GPU stopped processing |

@@ -14,8 +14,6 @@ Delete AD DNS conditional forwarder for a remote domain. For multi-account landi
 ## Change Type Details
 <a name="ct-1icghmq38rnsn-MDDd-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1icghmq38rnsn |

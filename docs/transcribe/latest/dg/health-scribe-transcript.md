@@ -17,6 +17,6 @@ In addition, the following insights are provided for each conversation turn:
   + **Objective** — Information observed by the clinician through physical exam, lab, imaging, or diagnostic tests.
   + **Assessment and Plan** — Information that relates to the doctor's assessment and treatment plan.
   + **Visit Flow Management** — Information related to small talk or transitions.
-+ **Insights** — Extract clinically relevant entities (`ClinicalEntity`) present in the conversation. AWS HealthScribe detects all clinical entities supported by [Amazon Comprehend Medical](https://aws.amazon.com//comprehend/medical).
++ **Insights** — Extract clinically relevant entities (`ClinicalEntity`) present in the conversation. AWS HealthScribe detects all clinical entities supported by [Amazon Comprehend Medical](https://aws.amazon.com/comprehend/medical).
 
 For an example of a transcript from a transcription job, see the transcript output in [Transcription job output examples](starting-health-scribe-job.md#health-scribe-output-example). For an example of a transcript from streaming, see the transcript output in [Streaming transcription output examples](health-scribe-streaming-setting-up.md#health-scribe-streaming-output-example).

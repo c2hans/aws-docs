@@ -16,7 +16,7 @@ Before you use IAM to manage access to Tag Editor, you should understand what IA
 ## Tag Editor identity-based policies
 <a name="security_iam_service-with-iam-id-based-policies-arg-te"></a>
 
-With IAM identity-based policies, you can specify allowed or denied actions and resources in addition to the conditions under which actions are allowed or denied. Tag Editor supports specific actions, resources, and condition keys. To learn about all of the elements that you use in a JSON policy, see [IAM JSON policy elements reference](https://docs.aws.amazon.com//IAM/latest/UserGuide/reference_policies_elements.html) in the *IAM User Guide*.
+With IAM identity-based policies, you can specify allowed or denied actions and resources in addition to the conditions under which actions are allowed or denied. Tag Editor supports specific actions, resources, and condition keys. To learn about all of the elements that you use in a JSON policy, see [IAM JSON policy elements reference](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html) in the *IAM User Guide*.
 
 ### Actions
 <a name="security_iam_service-with-iam-id-based-policies-actions-arg-te"></a>
@@ -83,30 +83,30 @@ Tag Editor does not support resource-based policies because it doesn't define an
 
 Authorization based on tags is part of the security strategy called attribute-based access control (ABAC).
 
-To control access to a resource based on its tags, you provide tag information in the [condition element](https://docs.aws.amazon.com//IAM/latest/UserGuide/reference_policies_elements_condition.html) of a policy using the `aws:ResourceTag/{{key-name}}`, `aws:RequestTag/{{key-name}}`, or `aws:TagKeys` condition keys. You can apply tags to a resource when you are creating or updating the resource.
+To control access to a resource based on its tags, you provide tag information in the [condition element](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html) of a policy using the `aws:ResourceTag/{{key-name}}`, `aws:RequestTag/{{key-name}}`, or `aws:TagKeys` condition keys. You can apply tags to a resource when you are creating or updating the resource.
 
 To view an example identity-based policy for limiting access to a resource based on the tags on that resource, see [Viewing groups based on tags](security_iam_id-based-policy-examples.md#security_iam_policy-examples-view-tags). For more information about attribute-based access control (ABAC), see [What is ABAC for AWS?](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction_attribute-based-access-control.html) in the *IAM User Guide*.
 
 ## Tag Editor IAM roles
 <a name="security_iam_roles"></a>
 
-An [IAM role](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_roles.html) is an entity within your AWS account that has specific permissions. Tag Editor does not have or use service roles.
+An [IAM role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html) is an entity within your AWS account that has specific permissions. Tag Editor does not have or use service roles.
 
 ### Using temporary credentials with Tag Editor
 <a name="security_iam_roles-tempcreds"></a>
 
-In Tag Editor, you can use temporary credentials to sign in with federation, assume an IAM role, or to assume a cross-account role. You obtain temporary security credentials by calling AWS STS API operations such as [AssumeRole](https://docs.aws.amazon.com//STS/latest/APIReference/API_AssumeRole.html) or [GetFederationToken](https://docs.aws.amazon.com//STS/latest/APIReference/API_GetFederationToken.html).
+In Tag Editor, you can use temporary credentials to sign in with federation, assume an IAM role, or to assume a cross-account role. You obtain temporary security credentials by calling AWS STS API operations such as [AssumeRole](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html) or [GetFederationToken](https://docs.aws.amazon.com/STS/latest/APIReference/API_GetFederationToken.html).
 
 ### Service-linked roles
 <a name="security_iam_roles-service-linked"></a>
 
-[Service-linked roles](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_roles_terms-and-concepts.html#iam-term-service-linked-role) allow AWS services to access resources in other services to complete an action on your behalf.
+[Service-linked roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_terms-and-concepts.html#iam-term-service-linked-role) allow AWS services to access resources in other services to complete an action on your behalf.
 
 Tag Editor does not have or use service-linked roles.
 
 ### Service roles
 <a name="security_iam_roles-service"></a>
 
-This feature allows a service to assume a [service role](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_roles_terms-and-concepts.html#iam-term-service-role) on your behalf.
+This feature allows a service to assume a [service role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_terms-and-concepts.html#iam-term-service-role) on your behalf.
 
 Tag Editor does not have or use service roles.

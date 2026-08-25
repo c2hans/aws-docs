@@ -138,8 +138,6 @@ Each `Scan` response contains the `ScannedCount` and `Count` for the items that 
 
 You can `Scan` any table or secondary index. `Scan` operations consume read capacity units, as follows.
 
-****
-
 | If you `Scan` a... | DynamoDB consumes read capacity units from... |
 | --- | --- |
 | Table | The table's provisioned read capacity. |

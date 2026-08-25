@@ -33,8 +33,6 @@ The function returns a status code to indicate success or failure.
 
 Common return codes include:
 
-****
-
 | Return code | Description |
 | --- | --- |
 | ERROR\_SUCCESS | The operation completed successfully. |

@@ -16,11 +16,11 @@ By default, AWS HealthScribe provides encryption at rest to protect sensitive cu
   + Creating key aliases
   + Scheduling keys for deletion
 
-  For more information, see [customer managed key](https://docs.aws.amazon.com//kms/latest/developerguide/concepts.html#customer-cmk) in the AWS Key Management Service Developer Guide.
+  For more information, see [customer managed key](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#customer-cmk) in the AWS Key Management Service Developer Guide.
 
 **Note**
-AWS HealthScribe automatically enables encryption at rest using AWS-owned keys to protect personally identifiable data at no charge. However, AWS KMS charges apply for using a customer managed key. For more information about pricing, see [AWS Key Management Service pricing](https://aws.amazon.com//kms/pricing/).
- For more information on AWS KMS, see [What is AWS Key Management Service](https://docs.aws.amazon.com//kms/latest/developerguide/overview.html).
+AWS HealthScribe automatically enables encryption at rest using AWS-owned keys to protect personally identifiable data at no charge. However, AWS KMS charges apply for using a customer managed key. For more information about pricing, see [AWS Key Management Service pricing](https://aws.amazon.com/kms/pricing/).
+ For more information on AWS KMS, see [What is AWS Key Management Service](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html).
 
 **Topics**
 + [Creating a customer managed key](health-scribe-encryption-customer.md)
@@ -32,22 +32,22 @@ AWS HealthScribe automatically enables encryption at rest using AWS-owned keys t
 <a name="health-scribe-encryption-managed"></a>
 
  You can specify a customer managed key as a second layer encryption for transcription jobs or streaming.
-+ For transcription jobs, you specify your key in the [OutputEncryptionKMSKeyId](https://docs.aws.amazon.com//transcribe/latest/APIReference/API_StartMedicalScribeJob.html#transcribe-StartMedicalScribeJob-request-OutputEncryptionKMSKeyId) of your [StartMedicalScribeJob](https://docs.aws.amazon.com//transcribe/latest/APIReference/API_StartMedicalScribeJob.html) API operation.
-+ For streaming, you specify the key in the [MedicalScribeEncryptionSettings](https://docs.aws.amazon.com//transcribe/latest/APIReference/API_streaming_MedicalScribeEncryptionSettings.html) in your [MedicalScribeConfigurationEvent](https://docs.aws.amazon.com//transcribe/latest/APIReference/API_streaming_MedicalScribeConfigurationEvent.html).
++ For transcription jobs, you specify your key in the [OutputEncryptionKMSKeyId](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartMedicalScribeJob.html#transcribe-StartMedicalScribeJob-request-OutputEncryptionKMSKeyId) of your [StartMedicalScribeJob](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartMedicalScribeJob.html) API operation.
++ For streaming, you specify the key in the [MedicalScribeEncryptionSettings](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_streaming_MedicalScribeEncryptionSettings.html) in your [MedicalScribeConfigurationEvent](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_streaming_MedicalScribeConfigurationEvent.html).
 
 ## AWS KMS encryption context
 <a name="health-scribe-encryption-context"></a>
 
- AWS KMS encryption context is a map of plain text, non-secret key:value pairs. This map represents additional authenticated data, known as encryption context pairs, which provide an added layer of security for your data. AWS HealthScribe requires a symmetric encryption key to encrypt AWS HealthScribe output into a customer-specified Amazon S3 bucket. To learn more, see [Asymmetric keys in AWS KMS](https://docs.aws.amazon.com//kms/latest/developerguide/symmetric-asymmetric.html).
+ AWS KMS encryption context is a map of plain text, non-secret key:value pairs. This map represents additional authenticated data, known as encryption context pairs, which provide an added layer of security for your data. AWS HealthScribe requires a symmetric encryption key to encrypt AWS HealthScribe output into a customer-specified Amazon S3 bucket. To learn more, see [Asymmetric keys in AWS KMS](https://docs.aws.amazon.com/kms/latest/developerguide/symmetric-asymmetric.html).
 
  When creating your encryption context pairs, *do not* include sensitive information. Encryption context is not secret — it is visible in plain text within your CloudTrail logs (so you can use it to identify and categorize your cryptographic operations). Your encryption context pair can include special characters, such as underscores (`_`), dashes (`-`), slashes (`/`, `\`) and colons (`:`).
 
 **Tip**
  It can be useful to relate the values in your encryption context pair to the data being encrypted. Although not required, we recommend you use non-sensitive metadata related to your encrypted content, such as file names, header values, or unencrypted database fields.
- To use output encryption with the API, set the [KMSEncryptionContext](https://docs.aws.amazon.com//transcribe/latest/APIReference/API_StartMedicalScribeJob.html#transcribe-StartMedicalScribeJob-request-KMSEncryptionContext) parameter in the [StartMedicalScribeJob](https://docs.aws.amazon.com//transcribe/latest/APIReference/API_StartMedicalScribeJob.html) operation. In order to provide encryption context for the output encryption operation, the [OutputEncryptionKMSKeyId](https://docs.aws.amazon.com//transcribe/latest/APIReference/API_StartMedicalScribeJob.html#transcribe-StartMedicalScribeJob-request-OutputEncryptionKMSKeyId) parameter must reference a symmetric AWS KMS key ID.
-For streaming, you specify the key value pairs for the `KmsEncryptionContext` in the [MedicalScribeEncryptionSettings](https://docs.aws.amazon.com//transcribe/latest/APIReference/API_streaming_MedicalScribeEncryptionSettings.html) in your [MedicalScribeConfigurationEvent](https://docs.aws.amazon.com//transcribe/latest/APIReference/API_streaming_MedicalScribeConfigurationEvent.html).
- You can use [AWS KMS condition keys](https://docs.aws.amazon.com//kms/latest/developerguide/policy-conditions.html#conditions-kms) with IAM policies to control access to a symmetric encryption AWS KMS key based on the encryption context that was used in the request for a [cryptographic operation](https://docs.aws.amazon.com//kms/latest/developerguide/concepts.html#cryptographic-operations). For an example encryption context policy, see [AWS KMS encryption context policy](https://docs.aws.amazon.com//transcribe/latest/dg/security_iam_id-based-policy-examples.html#kms-context-policy).
- Using encryption context is optional, but recommended. For more information, see [Encryption context](https://docs.aws.amazon.com//kms/latest/developerguide/concepts.html#encrypt_context).
+ To use output encryption with the API, set the [KMSEncryptionContext](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartMedicalScribeJob.html#transcribe-StartMedicalScribeJob-request-KMSEncryptionContext) parameter in the [StartMedicalScribeJob](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartMedicalScribeJob.html) operation. In order to provide encryption context for the output encryption operation, the [OutputEncryptionKMSKeyId](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_StartMedicalScribeJob.html#transcribe-StartMedicalScribeJob-request-OutputEncryptionKMSKeyId) parameter must reference a symmetric AWS KMS key ID.
+For streaming, you specify the key value pairs for the `KmsEncryptionContext` in the [MedicalScribeEncryptionSettings](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_streaming_MedicalScribeEncryptionSettings.html) in your [MedicalScribeConfigurationEvent](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_streaming_MedicalScribeConfigurationEvent.html).
+ You can use [AWS KMS condition keys](https://docs.aws.amazon.com/kms/latest/developerguide/policy-conditions.html#conditions-kms) with IAM policies to control access to a symmetric encryption AWS KMS key based on the encryption context that was used in the request for a [cryptographic operation](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#cryptographic-operations). For an example encryption context policy, see [AWS KMS encryption context policy](https://docs.aws.amazon.com/transcribe/latest/dg/security_iam_id-based-policy-examples.html#kms-context-policy).
+ Using encryption context is optional, but recommended. For more information, see [Encryption context](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#encrypt_context).
 
 ### AWS HealthScribe encryption context
 <a name="hscribe-context-details"></a>

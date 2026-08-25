@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-gu
 # Creating an AMI from an Amazon EC2 Instance
 <a name="tkv-create-ami-from-instance"></a>
 
-You can create an Amazon Machine Image (AMI) with the AWS Toolkit for Visual Studio. For more detailed information about AMIs, see the [Amazon Machine Images (AMI)](https://docs.aws.amazon.com//AWSEC2/latest/WindowsGuide/AMIs.html) topic in the *Amazon Elastic Compute Cloud for Windows Instances* User Guide.
+You can create an Amazon Machine Image (AMI) with the AWS Toolkit for Visual Studio. For more detailed information about AMIs, see the [Amazon Machine Images (AMI)](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/AMIs.html) topic in the *Amazon Elastic Compute Cloud for Windows Instances* User Guide.
 
  To create an AMI from an exiting Amazon EC2 instance, complete the following procedure.
 

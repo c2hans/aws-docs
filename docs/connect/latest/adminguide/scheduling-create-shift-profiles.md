@@ -20,7 +20,7 @@ Use shift profiles to create templates for weekly shifts. The template includes 
 1. In the **Schedule Window** section, complete the section as follows:
    + For **Work status**, choose one of the following options:
      + **Working**: This means when Connect Customer generates the schedule, it must schedule the staff to work between the specified hours and minutes.
-     + **Flex**: This means if Connect Customer predicts enough contact volume to warrant scheduling the agent, it may schedule them to work between the specified hours and minutes.
+     + **Flex**: This means if Connect Customer predicts enough contact volume to warrant scheduling the agent, it might schedule them to work between the specified hours and minutes.
 
      The following image shows the **Schedule Window** section of the **Add shift profile** page. It shows examples of Flex, Working (with a shift length of 8 hours and 30 minutes), and the Default activity.
 ![The Schedule Window section of the Add shift profile page.](http://docs.aws.amazon.com/connect/latest/adminguide/images/wfm-schedule-flex.png)

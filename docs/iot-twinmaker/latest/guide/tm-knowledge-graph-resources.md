@@ -437,7 +437,7 @@ aws iottwinmaker execute-query \
 --max-results 50
 ```
 + The `LIMIT` keyword affects the query and limits the resulting rows. If you need to control the number of results returned per API call without limiting the total number of returned results, use `LIMIT`.
-+ `max-results` is an optional parameter for the [ExecuteQuery API action](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_ExecuteQuery.html). `max-results` only applies to the API and how results are read within the bounds of the above query.
++ `max-results` is an optional parameter for the [ExecuteQuery API action](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_ExecuteQuery.html). `max-results` only applies to the API and how results are read within the bounds of the above query.
 
   Using `max-results` in a query allows you to reduce the number of displayed results without limiting the actual number of returned results.
 The query below iterates through the next page of results. This query uses the `ExecuteQuery` API call to return rows 51-100, where the next page of results is specified by the `next-token`– in this case the token is: `"H7kyGmvK376L"`.
@@ -449,11 +449,9 @@ aws iottwinmaker execute-query \
 --max-results 50
 --next-token "H7kyGmvK376L"
 ```
-+ The `next-token` string specifies the next page of results. For more information, see the [ ExecuteQuery](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_ExecuteQuery.html#API_ExecuteQuery_RequestSyntax) API action.
++ The `next-token` string specifies the next page of results. For more information, see the [ ExecuteQuery](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_ExecuteQuery.html#API_ExecuteQuery_RequestSyntax) API action.
 
 AWS IoT TwinMaker knowledge graph query has the following limits:
-
-****
 
 | Limit Name | Quota | Adjustable |
 | --- | --- | --- |

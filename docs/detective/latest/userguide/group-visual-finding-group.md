@@ -10,7 +10,7 @@ Amazon Detective provides an interactive visualization of finding groups. This v
 Detective finding groups with aggregated findings are a cluster of findings that are connected to the same type of resource. With aggregated findings, you can quickly assess the makeup of a finding group and interpret security issues faster. In the finding groups details panel, similar findings are combined and you can expand the findings to view relatively similar findings together. For example, an evidence node, which has informational findings and medium findings of the same type are aggregated. Currently, you can view the title, source, type, and severity of finding groups with aggregated findings.
 
 From this interactive panel, you can:
-+ Use **Run investigation** to generate an investigation report. The generated report details anomalous behavior that indicates compromise. For more details, see [Detective Investigations](https://docs.aws.amazon.com//detective/latest/userguide/investigations-about.html).
++ Use **Run investigation** to generate an investigation report. The generated report details anomalous behavior that indicates compromise. For more details, see [Detective Investigations](https://docs.aws.amazon.com/detective/latest/userguide/investigations-about.html).
 + View more details on finding groups with aggregated findings to analyze the involved evidence, entities, and findings.
 + View the labels for the entities and findings to identify the affected entities with potential security issues. You can toggle off the **Label**.
 + Rearrange the entities and findings to better understand their interconnectedness. Isolate entities and findings from a group by moving the selected item in the finding group.

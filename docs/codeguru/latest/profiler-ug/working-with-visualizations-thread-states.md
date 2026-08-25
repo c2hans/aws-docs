@@ -19,8 +19,6 @@ Custom view – You can choose to select the thread states for frames to include
 ## Example of differences between CPU view and latency view
 <a name="working-with-visualizations-thread-states-example"></a>
 
-****
-
 | CPU view | Latency view |
 | --- | --- |
 |  ![Image: CPU view.](http://docs.aws.amazon.com/codeguru/latest/profiler-ug/images/cpu-visualization.png)  |  ![Image: Latency view.](http://docs.aws.amazon.com/codeguru/latest/profiler-ug/images/latency-visualization.png)  |

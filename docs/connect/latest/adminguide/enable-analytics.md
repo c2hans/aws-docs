@@ -79,7 +79,7 @@ After conversational analytics is enabled for your instance, you can add [Set re
 
    1. **Real-time analytics**: conversational analytics provides both real-time insights during the call, and post-call analytics after the conversation has ended and After Contact Work (ACW) is complete.
 
-      If you choose this option, we recommend setting up alerts based on keywords and phrases that the customer may utter during the call. conversational analytics analyzes the conversation real-time to detect the specified keywords or phrases, and alerts supervisors. From there, supervisors can listen in on the live call and provide guidance to the agent to help them resolve the issue faster.
+      If you choose this option, we recommend setting up alerts based on keywords and phrases that the customer might utter during the call. conversational analytics analyzes the conversation real-time to detect the specified keywords or phrases, and alerts supervisors. From there, supervisors can listen in on the live call and provide guidance to the agent to help them resolve the issue faster.
 
       For information about setting up alerts, see [Alert supervisors in real-time for calls](add-rules-for-alerts.md).
 
@@ -196,7 +196,7 @@ To disable sentiment analysis for all agents and customers, deselect the **Enabl
 ## Dynamically enable redaction based on the customer's language
 <a name="dynamically-enable-analytics-contact-flow"></a>
 
-You can dynamically enable the redaction of the output files based on the language of the customer. For example, for customers using en-US, you may want only a redacted file whereas for those using en-GB, you may want both the original and redacted output files.
+You can dynamically enable the redaction of the output files based on the language of the customer. For example, for customers using en-US, you might want only a redacted file whereas for those using en-GB, you might want both the original and redacted output files.
 + Redaction: choose one of the following (they are case sensitive)
   + None
   + RedactedOnly
@@ -225,7 +225,7 @@ You can set these attributes in the following ways:
 ## Design a flow for key highlights
 <a name="call-summarization-agent"></a>
 
-Transcripts are visible to agents using the Contact Control Panel (CCP) depending on whether conversational analytics is enabled in the [Set recording and analytics behavior](set-recording-behavior.md) in the inbound flow, and/or a transfer flow.
+Transcripts are visible to agents using the Contact Control Panel (CCP) depending on whether conversational analytics is enabled in the [Set recording and analytics behavior](set-recording-behavior.md) in the inbound flow, or a transfer flow.
 
 This section provides three use cases for enabling conversational analytics in the [Set recording and analytics behavior](set-recording-behavior.md) block, and describes how they affect the agent's experience with key highlights.
 

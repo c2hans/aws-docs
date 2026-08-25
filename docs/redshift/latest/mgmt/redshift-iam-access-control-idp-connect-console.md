@@ -22,6 +22,9 @@ You have an option to use an account instance of AWS IAM Identity Center, provid
 **Note**
 Setting up a trusted token issuer isn't required for all external connections. Connecting to your Redshift database with Amazon Redshift query editor v2 doesn't require trusted-token issuer configuration. But it can apply for third-party applications such as dashboards or custom applications that authenticate with your identity provider.
 + *Configuring an IAM role or roles* – The sections that follow mention permissions that must be configured. You will have to add permissions per IAM best practices. Specific permissions are detailed in the procedures that follow.
++ *Network configuration for enhanced VPC routing* – If enhanced VPC routing is turned on, your VPC must be able to reach the AWS IAM Identity Center services. Interface VPC endpoints are the recommended way to provide this connectivity.
+**Note**
+Set up this connectivity before users sign in. For more information about using enhanced VPC routing with AWS IAM Identity Center, see [Using AWS IAM Identity Center authentication with enhanced VPC routing](redshift-iam-access-control-idp-connect-evr.md).
 
 For more information, see [Getting Started with AWS IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/get-started-enable-identity-center.html).
 

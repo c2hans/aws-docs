@@ -14,8 +14,6 @@ Use to reboot an RDS DB instance.
 ## Change Type Details
 <a name="ct-0bpxsrtu16igp-MARr-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-0bpxsrtu16igp |

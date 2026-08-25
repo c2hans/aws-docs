@@ -21,7 +21,7 @@ The following instructions describe how to set up a HyperPod Slurm cluster in St
 
       Tag Key = “`hyperpod-cluster-filesystem`”, Tag Value = “`fs-id`”.
 
-   1. Tag your [Amazon Managed Grafana](https://docs.aws.amazon.com/grafana/latest/userguide/what-is-Amazon-Managed-Service-Grafana.html) workspace to your Studio domain. This will be used to quickly link to your Grafana workspace directly from your cluster in Studio. To do so, add the following tag to your cluster to identify it with your Grafana workspace ID, `ws-id`.
+   1. Tag your [Amazon Managed Grafana](https://docs.aws.amazon.com/grafana/latest/userguide/what-is-Amazon-Managed-Service-Grafana.html) workspace to your Studio domain. Use this tag to link to your Grafana workspace directly from your cluster in Studio. Add the following tag to your cluster to identify it with your Grafana workspace ID, `ws-id`.
 
       Tag Key = “`grafana-workspace`”, Tag Value = “`ws-id`”.
 

@@ -34,8 +34,6 @@ Before you complete these steps on a macOS and depending on the version of the m
 
 Complete the following steps:
 
-****
-
 1. Install cmake:
    + On macOS, run `brew install cmake pkg-config srtp`
    + on Ubuntu, run `sudo apt-get install pkg-config cmake libcap2 libcap-dev`

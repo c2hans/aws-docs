@@ -79,8 +79,6 @@ To filter on a Boolean attribute, compare it to a Boolean value by using the `=`
 
 Use the following functions to determine whether an attribute exists in an item, or to evaluate the value of an attribute. These function names are case sensitive. For a nested attribute, you must provide its full document path.
 
-****
-
 | Function | Description |
 | --- | --- |
 | `attribute_exists ({{path}})` | True if the item contains the attribute specified by `path`.<br />An attribute whose stored value is the null type (`NULL`) is still considered to exist, so `attribute_exists` returns true for it. This is different from an attribute that is absent from the item. Some SDKs and object mappers omit attributes that have a null value in your application instead of storing the `NULL` type, in which case the attribute is not present and `attribute_exists` returns false.<br />Example: Check whether an item in the `Product` table has a side view picture.+  `attribute_exists (#Pictures.#SideView)`  |

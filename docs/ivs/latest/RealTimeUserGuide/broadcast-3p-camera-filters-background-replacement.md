@@ -20,7 +20,7 @@ Background replacement is a type of camera filter that enables live-stream creat
 ## Web
 <a name="background-replacement-web"></a>
 
-This section assumes you are already familiar with [publishing and subscribing to video using the Web Broadcast SDK](https://docs.aws.amazon.com//ivs/latest/RealTimeUserGuide/getting-started-pub-sub-web.html).
+This section assumes you are already familiar with [publishing and subscribing to video using the Web Broadcast SDK](https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/getting-started-pub-sub-web.html).
 
 To replace the background of a live stream with a custom image, use the [selfie segmentation model](https://developers.google.com/mediapipe/solutions/vision/image_segmenter#selfie-model) with [MediaPipe Image Segmenter](https://developers.google.com/mediapipe/solutions/vision/image_segmenter). This is a machine-learning model that identifies which pixels in the video frame are in the foreground or background. You can then use the results from the model to replace the background of a live stream, by copying foreground pixels from the video feed to a custom image representing the new background.
 

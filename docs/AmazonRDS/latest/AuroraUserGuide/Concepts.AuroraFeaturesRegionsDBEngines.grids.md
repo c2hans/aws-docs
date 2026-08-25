@@ -20,7 +20,7 @@ Some of these features are Aurora-only capabilities. For example, Aurora Serverl
 + [IAM database authentication](Concepts.Aurora_Fea_Regions_DB-eng.Feature.IAMdbauth.md)
 + [Kerberos authentication](Concepts.Aurora_Fea_Regions_DB-eng.Feature.KerberosAuthentication.md)
 + [Aurora machine learning](Concepts.Aurora_Fea_Regions_DB-eng.Feature.Aurora_ML.md)
-+ [Performance Insights](Concepts.Aurora_Fea_Regions_DB-eng.Feature.PerfInsights.md)
++ [Database Insights](Concepts.Aurora_Fea_Regions_DB-eng.Feature.PerfInsights.md)
 + [Zero-ETL integrations](Concepts.Aurora_Fea_Regions_DB-eng.Feature.Zero-ETL.md)
 + [RDS Proxy](Concepts.Aurora_Fea_Regions_DB-eng.Feature.RDS_Proxy.md)
 + [Secrets Manager integration](Concepts.Aurora_Fea_Regions_DB-eng.Feature.SecretsManager.md)

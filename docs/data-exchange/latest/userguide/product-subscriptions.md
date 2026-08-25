@@ -35,7 +35,7 @@ If you enable auto-renew, and the product's offer terms have changed at the time
 
 Visit the **Entitled data sets **page to find and access all of your entitled data sets in a specific AWS Region, based on your active subscriptions.
 
-When you subscribe to a data product, we might share your contact information with the provider. For more information, see [Security on AWS Marketplace](https://docs.aws.amazon.com//marketplace/latest/buyerguide/buyer-security.html#what-information-do-you-share-with-the-software-seller-about-the-customers-of-a-product.html) in the *AWS Marketplace Buyer Guide*.
+When you subscribe to a data product, we might share your contact information with the provider. For more information, see [Security on AWS Marketplace](https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-security.html#what-information-do-you-share-with-the-software-seller-about-the-customers-of-a-product.html) in the *AWS Marketplace Buyer Guide*.
 
 When you purchase a data product on AWS Data Exchange that has an upfront commitment, you will receive an invoice from Amazon Web Services (AWS) immediately. You can see charges for each data product by name in the Detail section of the invoice. You will receive separate bills for usage of AWS infrastructure and analytics services such as Amazon Simple Storage Service (Amazon S3) or Amazon Athena. For more information about AWS Billing and Cost Management, see [ Paying for products](https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-paying-for-products.html) in the *AWS Marketplace Buyer Guide*.
 

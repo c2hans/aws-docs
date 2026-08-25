@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/supported-frameworks-strands.html
 ---
 
-# Strands Agents
+# Set up Strands Agents telemetry for AgentCore Evaluations
 <a name="supported-frameworks-strands"></a>
 
 This page explains how to instrument a [Strands Agents](https://strandsagents.com/latest/) agent, how spans are identified, and how evaluation fields are extracted.

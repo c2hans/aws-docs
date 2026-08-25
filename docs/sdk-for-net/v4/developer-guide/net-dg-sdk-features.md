@@ -19,6 +19,7 @@ For information about developing software for specific AWS services along with c
 
 **Topics**
 + [Asynchronous programming](sdk-net-async-api.md)
++ [Performance best practices](net-dg-performance.md)
 + [Pagination](paginators.md)
 + [Support for HTTP 2](http2-support.md)
 + [Additional tools](sdk-features-additional-tools.md)

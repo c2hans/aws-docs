@@ -19,7 +19,7 @@ File shares that are exported through the gateway for NFS file shares support PO
 A File Gateway can host one or more file shares of different types. You can have multiple NFS and SMB file shares on a File Gateway.
 
 **Important**
-To create a file share, a File Gateway requires you to activate AWS Security Token Service (AWS STS). If AWS STS isn't activated in the AWS Region where you create your File Gateway, activate it. For information about how to activate AWS STS, see [Activating and deactivating AWS Security Token Service in an AWS Region](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_credentials_temp_enable-regions.html#sts-regions-activate-deactivate) in the *AWS Identity and Access Management User Guide*.
+To create a file share, a File Gateway requires you to activate AWS Security Token Service (AWS STS). If AWS STS isn't activated in the AWS Region where you create your File Gateway, activate it. For information about how to activate AWS STS, see [Activating and deactivating AWS Security Token Service in an AWS Region](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_enable-regions.html#sts-regions-activate-deactivate) in the *AWS Identity and Access Management User Guide*.
 
 **Topics**
 + [Avoiding unanticipated costs when uploading gateway data](avoid-unanticipated-costs.md)

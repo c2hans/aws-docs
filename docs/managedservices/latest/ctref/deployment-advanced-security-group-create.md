@@ -14,8 +14,6 @@ Create a security group with limited scope. For complex security groups, use the
 ## Change Type Details
 <a name="ct-3pc215bnwb6p7-DASc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-3pc215bnwb6p7 |

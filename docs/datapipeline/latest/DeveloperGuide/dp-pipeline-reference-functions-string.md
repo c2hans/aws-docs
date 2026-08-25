@@ -9,8 +9,6 @@ AWS Data Pipeline is no longer available to new customers. Existing customers of
 
  The following functions are available for working with string values.
 
-****
-
 | Function | Description |
 | --- | --- |
 | \+ | Concatenation. Non-string values are first converted to strings.<br />Example: `#{"hel" + "lo"}`<br />Result: `"hello"` |

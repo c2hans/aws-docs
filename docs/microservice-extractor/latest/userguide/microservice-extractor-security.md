@@ -40,9 +40,9 @@ We strongly recommend that you never put confidential or sensitive information, 
 
  Microservice Extractor automatically enables server-side encryption with Amazon managed keys for new object uploads.
 
- Unless you specify otherwise, objects use SSE-S3 by default to encrypt objects. However, you can choose to configure the service to use server-side encryption with AWS Key Management Service (AWS KMS) keys (SSE-KMS) instead. For more information, see [Specifying server-side encryption with AWS KMS (SSE-KMS)](https://docs.aws.amazon.com//AmazonS3/latest/userguide/specifying-kms-encryption.html) in S3 User Guide.
+ Unless you specify otherwise, objects use SSE-S3 by default to encrypt objects. However, you can choose to configure the service to use server-side encryption with AWS Key Management Service (AWS KMS) keys (SSE-KMS) instead. For more information, see [Specifying server-side encryption with AWS KMS (SSE-KMS)](https://docs.aws.amazon.com/AmazonS3/latest/userguide/specifying-kms-encryption.html) in S3 User Guide.
 
- AWS KMS is a service that combines secure, highly available hardware and software to provide a key management system scaled for the cloud. Microservice Extractor uses server-side encryption with AWS KMS (SSE-KMS) to encrypt your data. Also, when SSE-KMS is requested for the object, the object checksum as part of the object's metadata, is stored in encrypted form. For more information about checksum, see [Checking object integrity](https://docs.aws.amazon.com//AmazonS3/latest/userguide/checking-object-integrity.html) in S3 User Guide.
+ AWS KMS is a service that combines secure, highly available hardware and software to provide a key management system scaled for the cloud. Microservice Extractor uses server-side encryption with AWS KMS (SSE-KMS) to encrypt your data. Also, when SSE-KMS is requested for the object, the object checksum as part of the object's metadata, is stored in encrypted form. For more information about checksum, see [Checking object integrity](https://docs.aws.amazon.com/AmazonS3/latest/userguide/checking-object-integrity.html) in S3 User Guide.
 
  If you use KMS keys, you can use AWS KMS through the AWS Management Console or the AWS KMS API to centrally create, view, edit, monitor, enable or disable, rotate, and schedule deletion of KMS keys, and define the policies that control how and by whom KMS keys can be used.
 
@@ -50,7 +50,7 @@ Audit their usage to prove that they are being used correctly. Auditing is suppo
 
  The security controls in AWS KMS can help you meet encryption-related compliance requirements. You can use these KMS keys to protect your data in Microservice Extractor. When you use SSE-KMS encryption, the AWS KMS keys must be in the same Region as selected in the tool.
 
- There are additional charges for using AWS KMS keys. For more information, see [AWS KMS key concepts](https://docs.aws.amazon.com//kms/latest/developerguide/concepts.html) in the AWS Key Management Service Developer Guide and [AWS KMS pricing](https://aws.amazon.com//kms/pricing/).
+ There are additional charges for using AWS KMS keys. For more information, see [AWS KMS key concepts](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html) in the AWS Key Management Service Developer Guide and [AWS KMS pricing](https://aws.amazon.com/kms/pricing/).
 
 **Encryption in transit**
 Microservice Extractor makes requests to the server over the Transport Layer Security protocol (TLS).

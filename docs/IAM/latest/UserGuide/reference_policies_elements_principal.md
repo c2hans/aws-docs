@@ -281,7 +281,7 @@ When an AWS service in an opt-in Region makes a cross-region request to another 
 
 `{{service-name}}.{{{region}}}.amazonaws.com`
 
-For example, you have an Amazon SNS topic located in Region `ap-southeast-1` and an Amazon S3 bucket located in opt-in Region `ap-east-1`. You want to configure S3 bucket notifications to publish messages to the SNS topic. To allow the S3 service to post messages to the SNS topic you must grant the S3 service principal `sns:Publish` permission via the resource-based access policy of the topic.
+For example, you have an Amazon SNS topic located in Region `ap-southeast-1` and an Amazon S3 bucket located in opt-in Region `ap-east-1`. You want to configure S3 bucket notifications to publish messages to the SNS topic. To allow the S3 service to post messages to the SNS topic you must grant the S3 service principal `sns:Publish` permission through the resource-based access policy of the topic.
 
 If you specify the non-regionalized version of the S3 service principal, `s3.amazonaws.com`, in the topic access policy, the `sns:Publish` request from the bucket to the topic will fail. The following example specifies the non-regionalized S3 service principal in the `Principal` policy element of the SNS topic access policy.
 
@@ -322,7 +322,7 @@ For anonymous users, the following elements are equivalent:
 
 You cannot use a wildcard to match part of a principal name or ARN.
 
-The following example shows a resource-based policy that can be used instead of [AWS JSON policy elements: NotPrincipal](reference_policies_elements_notprincipal.md) to explicitly deny all principals *except* for the ones specified in the `Condition` element. This policy should be [added to an Amazon S3 bucket](https://docs.aws.amazon.com//AmazonS3/latest/userguide/add-bucket-policy.html).
+The following example shows a resource-based policy that can be used instead of [AWS JSON policy elements: NotPrincipal](reference_policies_elements_notprincipal.md) to explicitly deny all principals *except* for the ones specified in the `Condition` element. This policy should be [added to an Amazon S3 bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/add-bucket-policy.html).
 
 ------
 #### [ JSON ]

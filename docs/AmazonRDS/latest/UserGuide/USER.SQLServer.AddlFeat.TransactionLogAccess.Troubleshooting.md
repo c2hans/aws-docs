@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER.SQLServe
 
 The following are issues you might encounter when you use the stored procedures for access to transaction log backups.
 
-****
-
 | Stored Procedure | Error Message | Issue | Troubleshooting suggestions |
 | --- | --- | --- | --- |
 | rds\_tlog\_copy\_setup | Backups are disabled on this DB instance. Enable DB instance backups with a retention of at least "1" and try again. | Automated backups are not enabled for the DB instance. |  DB instance backup retention must be enabled with a retention of at least one day. For more information on enabling automated backups and configuring backup retention, see [Backup retention period](USER_WorkingWithAutomatedBackups.BackupRetention.md).  |

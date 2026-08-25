@@ -48,8 +48,6 @@ You can specify only one tag in the `tagFilter` parameter with `ListWorkflowExec
 
 Assume you have already set up two executions that are tagged as follows.
 
-****
-
 | Execution Name | Assigned Tags |
 | --- | --- |
 | Execution-One |  Consumer, 2011-February  |

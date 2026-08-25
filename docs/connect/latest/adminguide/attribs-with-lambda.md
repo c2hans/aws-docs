@@ -39,8 +39,6 @@ After this block executes during a flow, the value is saved as a user-defined at
 
 To branch your flow based on the value of an external attribute, such as an account number, use a **Check contact attributes** block, and then add a condition to compare the value of the attribute to. Next, branch the flow based on the condition.
 
-****
-
 1. In the **Check contact attributes** block, for **Attribute to check** do one of the following:
    + Select **External** for the **Type**, then enter the key name returned from the Lambda function in the **Attribute** field.
 **Important**

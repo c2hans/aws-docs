@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon Managed Streaming for Kafka Connect provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="kafkaconnect-DescribeConnector"></a>[DescribeConnector](https://docs.aws.amazon.com/MSKC/latest/mskc/API_DescribeConnector.html) | Describe an MSK Connect connector | Read |

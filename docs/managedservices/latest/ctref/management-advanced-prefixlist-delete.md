@@ -14,8 +14,6 @@ Delete an existing AWS customer-managed prefix list. The prefix list must not be
 ## Change Type Details
 <a name="ct-3fh88p7t5k5gi-MAPd-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-3fh88p7t5k5gi |

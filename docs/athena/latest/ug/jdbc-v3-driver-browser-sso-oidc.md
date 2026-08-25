@@ -17,8 +17,6 @@ This plugin is designed for single-user desktop environments. In shared environm
 
 The credentials provider that will be used to authenticate requests to AWS. Set the value of this parameter to `BrowserSSOOIDC`.
 
-****
-
 | Parameter name | Alias | Parameter type | Default value | Value to use |
 | --- | --- | --- | --- | --- |
 | CredentialsProvider | AWSCredentialsProviderClass (deprecated) | Required | none | BrowserSSOOIDC |
@@ -27,8 +25,6 @@ The credentials provider that will be used to authenticate requests to AWS. Set 
 <a name="jdbc-v3-driver-browser-sso-oidc-sso-start-url"></a>
 
 The URL for the AWS access portal. The IAM Identity Center [RegisterClient](https://docs.aws.amazon.com/singlesignon/latest/OIDCAPIReference/API_RegisterClient.html) API action uses this value for the `issuerUrl` parameter.
-
-****
 
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
@@ -39,8 +35,6 @@ The URL for the AWS access portal. The IAM Identity Center [RegisterClient](http
 
 The AWS Region where IAM Identity Center is configured. The `SSOOIDCClient` and `SSOClient` use this value for the `region` parameter.
 
-****
-
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
 | SsoOidcRegion | sso\_oidc\_region | Required | none |
@@ -50,8 +44,6 @@ The AWS Region where IAM Identity Center is configured. The `SSOOIDCClient` and 
 
 The identifier for the AWS account that is assigned to the user. The IAM Identity Center [GetRoleCredentials](https://docs.aws.amazon.com/singlesignon/latest/PortalAPIReference/API_GetRoleCredentials.html) API action uses this value for the `accountId` parameter.
 
-****
-
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
 | SsoOidcAccountId | sso\_oidc\_account\_id | Required | none |
@@ -60,8 +52,6 @@ The identifier for the AWS account that is assigned to the user. The IAM Identit
 <a name="jdbc-v3-driver-browser-sso-oidc-role-name"></a>
 
 The friendly name of the role that is assigned to the user. The name that you specify for this permission set appears in the AWS access portal as an available role. The IAM Identity Center [GetRoleCredentials](https://docs.aws.amazon.com/singlesignon/latest/PortalAPIReference/API_GetRoleCredentials.html) API action uses this value for the `roleName` parameter.
-
-****
 
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
@@ -78,8 +68,6 @@ Configuring different port numbers for different user groups
 Using Windows security policies to restrict port access
 Implementing network isolation between user sessions
 
-****
-
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
 | ListenPort | listen\_port | Optional | 7890 |
@@ -89,8 +77,6 @@ Implementing network isolation between user sessions
 
 The duration, in seconds, before the driver stops waiting for the SSO authorization response. The minimum value is 60 seconds.
 
-****
-
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
 | IdpResponseTimeout | idp\_response\_timeout | Optional | 120 |
@@ -99,8 +85,6 @@ The duration, in seconds, before the driver stops waiting for the SSO authorizat
 <a name="jdbc-v3-driver-browser-sso-oidc-enable-token-caching"></a>
 
 When enabled, allows the same SSO access token to be used across driver connections. This prevents SQL tools that create multiple driver connections from launching multiple browser windows.
-
-****
 
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |

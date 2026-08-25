@@ -41,7 +41,6 @@ This is the tag for an ad avail lasting 414.171 PTS:
 <a name="sample-manifests-hls-elemental"></a>
 
 **Structure**
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/medialive/latest/ug/sample-manifests-hls.html)
 
 **Tag contents**
@@ -71,7 +70,6 @@ This is the tag for an ad avail lasting 414.171 PTS:
 <a name="sample-manifests-hls-scte-35-enhanced"></a>
 
 Structure
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/medialive/latest/ug/sample-manifests-hls.html)
 
 Tag contents

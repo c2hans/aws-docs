@@ -24,8 +24,6 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_compute-optimizer-actions-as-permissions).
 
-****
-
 - **   DeleteRecommendationPreferences  **
   - **IAM action:**  [compute-optimizer:DeleteRecommendationPreferences](#list_compute-optimizer-action-DeleteRecommendationPreferences)
   - **Condition key:**
@@ -176,8 +174,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
 
-****
-
 | Actions | Description | Resource types (\*required) | Condition keys | Access level |
 | --- | --- | --- | --- | --- |
 |   [DeleteRecommendationPreferences](https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/API_DeleteRecommendationPreferences.html)  | Grants permission to delete recommendation preferences |  | [compute-optimizer:ResourceType](#list_compute-optimizer-compute-optimizer_ResourceType) | Write |
@@ -218,8 +214,6 @@ AWS Compute Optimizer does not support specifying a resource ARN in the `Resourc
 <a name="list_compute-optimizer-policy-keys"></a>
 
 AWS Compute Optimizer defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

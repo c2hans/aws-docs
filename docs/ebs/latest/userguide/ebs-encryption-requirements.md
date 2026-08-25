@@ -75,7 +75,7 @@ Identity-only roles do not need to be manually created or deleted, and they have
 **Note**
 Identity-only roles are not used by applications on your instance to access other AWS KMS encrypted resources, such as Amazon S3 objects or Dynamo DB tables. These operations are done using the credentials of an Amazon EC2 instance role, or other AWS credentials that you have configured on your instance.
 
-Identity-only roles are subject to [service control policies](https://docs.aws.amazon.com//organizations/latest/userguide/orgs_manage_policies_scps.html) (SCPs), and [KMS key policies](https://docs.aws.amazon.com/kms/latest/developerguide/key-policies.html). If an SCP or KMS key denies the identity-only role access to a KMS key, you may fail to launch EC2 instances with encrypted volumes, or using encrypted AMIs or snapshots.
+Identity-only roles are subject to [service control policies](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html) (SCPs), and [KMS key policies](https://docs.aws.amazon.com/kms/latest/developerguide/key-policies.html). If an SCP or KMS key denies the identity-only role access to a KMS key, you may fail to launch EC2 instances with encrypted volumes, or using encrypted AMIs or snapshots.
 
 If you are creating an SCP or key policy that denies access based on network location using the `aws:SourceIp`, `aws:VpcSourceIp`, `aws:SourceVpc`, or `aws:SourceVpce` AWS global condition keys, then you must ensure that these policy statements do not apply to instance-only roles. For example policies, see [Data Perimeter Policy Examples](https://github.com/aws-samples/data-perimeter-policy-examples/tree/main).
 

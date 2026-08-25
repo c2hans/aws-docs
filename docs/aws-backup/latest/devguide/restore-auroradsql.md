@@ -29,8 +29,6 @@ You can restore an Aurora DSQL cluster to a single Region by using the AWS Backu
 ------
 #### [ Console ]
 
-****
-
 1. Open the AWS Backup console at [https://console.aws.amazon.com/backup](https://console.aws.amazon.com/backup).
 
 1. Select the "Restore" button next to the recovery point you wish to restore.

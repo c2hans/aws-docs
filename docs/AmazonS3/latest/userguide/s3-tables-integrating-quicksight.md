@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-inte
 # Visualizing table data with Quick
 <a name="s3-tables-integrating-quicksight"></a>
 
-Quick is a fast business analytics service to build visualizations, perform ad hoc analysis, and quickly get business insights from your data. Quick seamlessly discovers AWS data sources, enables organizations to scale to hundreds of thousands of users, and delivers fast and responsive query performance by using the Quick Super-fast, Parallel, In-Memory, Calculation Engine (SPICE). For more information, see [What is Quick?](https://docs.aws.amazon.com//quicksight/latest/user/welcome.html) in the *Quick user guide*.
+Quick is a fast business analytics service to build visualizations, perform ad hoc analysis, and quickly get business insights from your data. Quick seamlessly discovers AWS data sources, enables organizations to scale to hundreds of thousands of users, and delivers fast and responsive query performance by using the Quick Super-fast, Parallel, In-Memory, Calculation Engine (SPICE). For more information, see [What is Quick?](https://docs.aws.amazon.com/quicksight/latest/user/welcome.html) in the *Quick user guide*.
 
 After you [Integrate your table buckets with AWS analytics services](s3-tables-integrating-aws.md), you can create data sets from your tables and work with them in Quick using SPICE or direct SQL queries from your query engine. Quick supports Athena as a data source for S3 tables.
 
@@ -89,4 +89,4 @@ You can connect to table data using Athena as a data source.
    SELECT * FROM "s3tablescatalog/{{table-bucket-name}}".{{namespace}}.{{table-name}}
    ```
 
-1. Choose **Visualize** to analyze data and start building dashboards. For more information, see [Visualizing data in Quick ](https://docs.aws.amazon.com//quicksight/latest/user/working-with-visuals.html) and [Exploring interactive dashboards in Quick ](https://docs.aws.amazon.com//quicksight/latest/user/using-dashboards.html)
+1. Choose **Visualize** to analyze data and start building dashboards. For more information, see [Visualizing data in Quick ](https://docs.aws.amazon.com/quicksight/latest/user/working-with-visuals.html) and [Exploring interactive dashboards in Quick ](https://docs.aws.amazon.com/quicksight/latest/user/using-dashboards.html)

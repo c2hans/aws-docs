@@ -14,8 +14,6 @@ Create an Accelerate account in your AMS-managed landing zone. Accelerate provid
 ## Change Type Details
 <a name="ct-2p93tyd5angmi-DMMc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2p93tyd5angmi |

@@ -14,8 +14,6 @@ Subscribe an email address to the Direct-Customer-Alerts SNS topic.
 ## Change Type Details
 <a name="ct-3rcl9u1k017wu-MMSs-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-3rcl9u1k017wu |

@@ -28,8 +28,8 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/tutorial-s3-mp
 ## Prerequisites
 <a name="mpu-prerequisites"></a>
 + Before you start this tutorial, make sure that you have access to an Amazon S3 bucket that you can upload to. For more information, see [Creating a general purpose bucket](create-bucket-overview.md).
-+  You must have the AWS CLI installed and configured. If you don’t have the AWS CLI installed, see [Install or update to the latest version of the AWS CLI](https://docs.aws.amazon.com//cli/latest/userguide/getting-started-install.html) in the *AWS Command Line Interface User Guide*.
-+ Alternatively, you can run AWS CLI commands from the console by using AWS CloudShell. AWS CloudShell is a browser-based, pre-authenticated shell that you can launch directly from the AWS Management Console. For more information, see [What is CloudShell?](https://docs.aws.amazon.com//cloudshell/latest/userguide/welcome.html) and [Getting started with AWS CloudShell](https://docs.aws.amazon.com//cloudshell/latest/userguide/getting-started.html) in the *AWS CloudShell User Guide*.
++  You must have the AWS CLI installed and configured. If you don’t have the AWS CLI installed, see [Install or update to the latest version of the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) in the *AWS Command Line Interface User Guide*.
++ Alternatively, you can run AWS CLI commands from the console by using AWS CloudShell. AWS CloudShell is a browser-based, pre-authenticated shell that you can launch directly from the AWS Management Console. For more information, see [What is CloudShell?](https://docs.aws.amazon.com/cloudshell/latest/userguide/welcome.html) and [Getting started with AWS CloudShell](https://docs.aws.amazon.com/cloudshell/latest/userguide/getting-started.html) in the *AWS CloudShell User Guide*.
 
 ## Step 1: Create a large file
 <a name="create-large-file-step1"></a>

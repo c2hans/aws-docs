@@ -14,7 +14,7 @@ An AWS account ID is a 12-digit number, such as `012345678901`, that uniquely id
 
 Consider the following when sharing AMIs with specific AWS accounts.
 + **Ownership** – To share an AMI, your AWS account must own the AMI.
-+ **Sharing limits** – For the maximum number of entities to which an AMI can be shared within a Region, see the [Amazon EC2 service quotas](https://docs.aws.amazon.com//general/latest/gr/ec2-service.html#limits_ec2).
++ **Sharing limits** – For the maximum number of entities to which an AMI can be shared within a Region, see the [Amazon EC2 service quotas](https://docs.aws.amazon.com/general/latest/gr/ec2-service.html#limits_ec2).
 + **Tags** – You can't share user-defined tags (tags that you attach to an AMI). When you share an AMI, your user-defined tags are not available to any AWS account that the AMI is shared with.
 + **Snapshots** – You do not need to share the Amazon EBS snapshots that an AMI references in order to share the AMI. You can share only the AMI itself; the system provides the instance access to the referenced EBS snapshots for the launch. However, you must share any KMS keys used to encrypt snapshots that an AMI references. For more information, see [Share an Amazon EBS snapshot](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-modifying-snapshot-permissions.html) in the *Amazon EBS User Guide*.
 + **Encryption and keys** – You can share AMIs that are backed by unencrypted and encrypted snapshots.

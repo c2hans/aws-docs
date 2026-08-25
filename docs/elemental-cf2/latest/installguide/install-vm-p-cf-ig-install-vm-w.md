@@ -10,7 +10,6 @@ This is version 2.18 of the AWS Elemental Conductor File documentation. This is 
 After you've installed the AWS Elemental Conductor File nodes, perform these steps on each individual blade that you're adding to the cluster in order to deploy a VM and install the AWS Elemental Server worker software.
 
 1. Start the VMware vSphere client and choose the option that lets you run the OVF Deploy wizard.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-cf2/latest/installguide/install-vm-p-cf-ig-install-vm-w.html)
 
 1. Choose **Finish**. The OVA is installed, the guest is created, and AWS Elemental Conductor File is installed on that guest with the eth0 configured as specified.

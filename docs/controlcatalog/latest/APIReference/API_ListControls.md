@@ -16,6 +16,7 @@ Content-type: application/json
 
 {
    "Filter": {
+      "GovernedProviders": [ "{{string}}" ],
       "Implementations": {
          "Identifiers": [ "{{string}}" ],
          "Types": [ "{{string}}" ]
@@ -62,12 +63,14 @@ Content-type: application/json
          "Behavior": "string",
          "CreateTime": number,
          "Description": "string",
+         "GovernedProviders": [ "string" ],
          "GovernedResources": [ "string" ],
          "Implementation": {
             "Identifier": "string",
             "Type": "string"
          },
          "Name": "string",
+         "ParameterRequirementSummary": "string",
          "Severity": "string"
       }
    ],

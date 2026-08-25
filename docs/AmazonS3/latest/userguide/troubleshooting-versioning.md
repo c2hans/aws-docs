@@ -61,10 +61,9 @@ After you permanently remove the delete marker, the second newest version of the
 
 To remove a specific version of an object, you must be the bucket owner. To delete a delete marker permanently, you must include its version ID in a `DeleteObject` request. To delete the delete marker, use the following command, and replace the `{{user input placeholders}}` with your own information:
 
-****
 `aws s3api delete-object --bucket {{amzn-s3-demo-bucket}} --key {{index.html}} --version-id {{versionID}}`
 
-For more information about the `delete-object` command, see [delete-object](https://docs.aws.amazon.com//cli/latest/reference/s3api/delete-object.html) in the *AWS CLI Command Reference*. For more information about permanently deleting delete markers, see [Managing delete markers](ManagingDelMarkers.md).
+For more information about the `delete-object` command, see [delete-object](https://docs.aws.amazon.com/cli/latest/reference/s3api/delete-object.html) in the *AWS CLI Command Reference*. For more information about permanently deleting delete markers, see [Managing delete markers](ManagingDelMarkers.md).
 
 ## I want to permanently delete versioned objects
 <a name="delete-objects-permanent"></a>

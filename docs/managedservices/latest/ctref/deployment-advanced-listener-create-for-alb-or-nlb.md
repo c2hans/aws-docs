@@ -14,8 +14,6 @@ Create a listener for an Application Load Balancer (ALB) or Network Load Balance
 ## Change Type Details
 <a name="ct-14yjom3kvpinu-DALc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-14yjom3kvpinu |

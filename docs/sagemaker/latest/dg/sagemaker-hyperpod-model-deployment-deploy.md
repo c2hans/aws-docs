@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-m
 
 Whether you're deploying pre-trained foundation open-weights or gated models from Amazon SageMaker JumpStart or your own custom or fine-tuned models stored in Amazon S3 or Amazon FSx, SageMaker HyperPod provides the flexible, scalable infrastructure you need for production inference workloads.
 
-****
-
 |  | Deploy open-weights and gated foundation models from JumpStart | Deploy custom and fine-tuned models from Amazon S3 and Amazon FSx | Deploy models from local NVMe storage |
 | --- | --- | --- | --- |
 | Description | Deploy from a comprehensive catalog of pre-trained foundation models with automatic optimization and scaling policies tailored to each model family. | Bring your own custom and fine-tuned models and use SageMaker HyperPod's enterprise infrastructure for production-scale inference. Choose between cost-effective storage with Amazon S3 or a high-performance file system with Amazon FSx. | Load model weights from a node's local NVMe storage to eliminate network latency during pod startup. Useful for autoscaling events, scale-from-zero workloads, and latency-sensitive failovers. |

@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/review-threat-model-findings.html
 ---
 
-# Review threats from a threat model
+# Review threats from a Continuum threat model
 <a name="review-threat-model-findings"></a>
 
 After a threat model run completes, review the system overview and threats to understand how your application could be attacked and what to do about it. The system overview is a comprehensive document describing your application’s architecture, trust boundaries, data flows, and security posture. Each threat includes a statement, severity level, STRIDE classification, affected assets, and a recommendation for addressing it.
@@ -14,8 +14,8 @@ Before you begin, ensure you have:
 + A completed threat model run
 + Access to the AWS Security Agent web application
 
-## Step 1: Access the threat model run
-<a name="_step_1_access_the_threat_model_run"></a>
+## Step 1: Access the Continuum threat model run
+<a name="_step_1_access_the_continuum_threat_model_run"></a>
 
 Navigate to your completed threat model run.
 
@@ -174,4 +174,4 @@ After reviewing your threat model results:
 + Address high-severity threats first based on the agent’s recommendations
 + Update threat statuses as you implement fixes
 + Run a new threat model to verify your changes address the identified threats
-+ Adjust your sources and scope docs as your application evolves (see [Create a threat model](perform-threat-model.md))
++ Adjust your sources and scope docs as your application evolves (see [Create a Continuum threat model](perform-threat-model.md))

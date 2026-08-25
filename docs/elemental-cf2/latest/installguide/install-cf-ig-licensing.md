@@ -11,8 +11,6 @@ At this point, the software is installed but it is not yet enabled. To begin usi
 
 To do so, follow the detailed steps described in the table below. .
 
-****
-
 | Step | Where to Perform Step | Start Step With | Finish Step With |
 | --- | --- | --- | --- |
 | Step a: Retrieve Activation Code | Your workstation | Activation email | Activation code |

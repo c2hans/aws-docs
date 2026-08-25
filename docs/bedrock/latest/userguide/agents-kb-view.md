@@ -27,8 +27,6 @@ To get information about a knowledge base associated with an agent, send a [GetA
 
 To list information about the knowledge bases associated with an agent, send a [ListAgentKnowledgeBases](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_ListAgentKnowledgeBases.html) request with an [Agents for Amazon Bedrock build-time endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#bra-bt). Specify the `agentId` and `agentVersion` for which you want to see associated knowledge bases.
 
-****
-
 | Field | Short description |
 | --- | --- |
 | maxResults | The maximum number of results to return in a response. |

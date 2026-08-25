@@ -24,8 +24,6 @@ References:
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
 
-****
-
 - **   [CreateSyncFilter](https://docs.aws.amazon.com/singlesignon/latest/userguide/provision-users-groups-AD.html)  **
   - **Description:** Grants permission to create a sync filter on the sync profile
   - **Resource types (\*required):** [SyncProfileResource\*](#list_identity-sync-resource-SyncProfileResource)
@@ -103,8 +101,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 The following actions are defined by AWS Identity Sync but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 - **   [AllowVendedLogDeliveryForResource](https://docs.aws.amazon.com/singlesignon/latest/userguide/logging-ad-sync-errors.html)  **
   - **Description:** Grants permission to configure vended log delivery for a Sync Profile
   - **Resource types (\*required):** [SyncProfileResource\*](#list_identity-sync-resource-SyncProfileResource)
@@ -115,8 +111,6 @@ The following actions are defined by AWS Identity Sync but are not directly invo
 <a name="list_identity-sync-resources-for-iam-policies"></a>
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
-
-****
 
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |

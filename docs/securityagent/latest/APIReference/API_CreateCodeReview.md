@@ -63,6 +63,7 @@ Content-type: application/json
       "logGroup": "{{string}}",
       "logStream": "{{string}}"
    },
+   "maxTaskHours": {{number}},
    "serviceRole": "{{string}}",
    "title": "{{string}}",
    "validationMode": "{{string}}"
@@ -98,6 +99,11 @@ Required: No
  ** [logConfig](#API_CreateCodeReview_RequestSyntax) **   <a name="securityagent-CreateCodeReview-request-logConfig"></a>
 The CloudWatch Logs configuration for the code review.
 Type: [CloudWatchLog](API_CloudWatchLog.md) object
+Required: No
+
+ ** [maxTaskHours](#API_CreateCodeReview_RequestSyntax) **   <a name="securityagent-CreateCodeReview-request-maxTaskHours"></a>
+The maximum number of billable task hours allowed for jobs started from this code review. Must be a positive number. If not set, jobs run to completion with no budget cap.
+Type: Double
 Required: No
 
  ** [serviceRole](#API_CreateCodeReview_RequestSyntax) **   <a name="securityagent-CreateCodeReview-request-serviceRole"></a>
@@ -174,6 +180,7 @@ Content-type: application/json
       "logGroup": "string",
       "logStream": "string"
    },
+   "maxTaskHours": number,
    "serviceRole": "string",
    "title": "string",
    "updatedAt": "string",
@@ -212,6 +219,10 @@ Type: Timestamp
  ** [logConfig](#API_CreateCodeReview_ResponseSyntax) **   <a name="securityagent-CreateCodeReview-response-logConfig"></a>
 The CloudWatch Logs configuration for the code review.
 Type: [CloudWatchLog](API_CloudWatchLog.md) object
+
+ ** [maxTaskHours](#API_CreateCodeReview_ResponseSyntax) **   <a name="securityagent-CreateCodeReview-response-maxTaskHours"></a>
+The maximum number of billable task hours configured for jobs started from this code review. Null if no budget cap is set.
+Type: Double
 
  ** [serviceRole](#API_CreateCodeReview_ResponseSyntax) **   <a name="securityagent-CreateCodeReview-response-serviceRole"></a>
 The IAM service role used for the code review.

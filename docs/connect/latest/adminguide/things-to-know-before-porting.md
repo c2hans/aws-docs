@@ -19,7 +19,7 @@ Also known as your current carrier. This is the carrier that currently owns your
 After the LOA has been approved by the losing carrier, the losing and winning carriers agree upon a date and time to perform the porting activity.
 
 **Phone number portability**
-Number portability allows you to transfer your telelphone numbers to other carriers. Carriers and countries may have unique processes and procedures required.
+Number portability allows you to transfer your telelphone numbers to other carriers. Carriers and countries might have unique processes and procedures required.
 
 **Winning carrier**
 Also the carrier for Connect Customer. This is the carrier that the phone number is being ported to, and will own the phone number after the porting is completed.

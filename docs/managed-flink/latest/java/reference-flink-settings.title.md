@@ -42,8 +42,6 @@ For more information about state backends, see [State Backends](https://nightlie
 
 Managed Service for Apache Flink uses a default checkpoint configuration with the following values. Some of these values can be changed using [CheckpointConfiguration](https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_CheckpointConfiguration.html). You must set `CheckpointConfiguration.ConfigurationType` to `CUSTOM` for Managed Service for Apache Flink to use modified checkpointing values.
 
-****
-
 | Setting | Can be modified? | How | Default Value |
 | --- | --- | --- | --- |
 | CheckpointingEnabled | Modifiable | [Create Application](https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_CreateApplication.html)<br />[Update Application](https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_UpdateApplication.html)<br />[CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/AWS_KinesisAnalyticsV2.html) | True |

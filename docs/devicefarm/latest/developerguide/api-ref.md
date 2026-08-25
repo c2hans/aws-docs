@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/api-ref
  Programmatic access to Device Farm is a powerful way to automate the common tasks that you need to accomplish, such as scheduling a run or downloading the artifacts for a run, suite, or test. The AWS SDK and AWS CLI provide means to do so.
 
  The AWS SDK provides access to every AWS service, including Device Farm, Amazon S3, and more. For more information, see
-+ the [AWS tools and SDKs](https://aws.amazon.com//tools/)
++ the [AWS tools and SDKs](https://aws.amazon.com/tools/)
 + the [AWS Device Farm API Reference](https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html)
 
 ## Example: Using the AWS CLI or SDK to upload an app or test to Device Farm

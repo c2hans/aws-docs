@@ -9,7 +9,7 @@ By default, the agent workspace uses a Connect Customer theme, which includes th
 
 ![The agent workspace with a custom theme.](http://docs.aws.amazon.com/connect/latest/adminguide/images/agent-workspace-custom-theme.png)
 
-Agents can choose between light and dark modes to match their preference. To change modes, go to the user settings at the top right of the agent workspace.
+Agents can choose between light and dark modes to match their preference. To change modes, open the user settings at the top right of the agent workspace.
 
 ![The agent workspace in light mode.](http://docs.aws.amazon.com/connect/latest/adminguide/images/agent-workspace-light-mode.png)
 

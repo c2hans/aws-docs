@@ -12,8 +12,6 @@ This is version 2.18 of the AWS Elemental Server documentation. This is the late
 
 You can convert the scan type of the input to a different scan type: progressive, interlaced, hard telecine, or soft telecine. You can configure to leave the scan type as is or to convert from one incoming type (or a mix of incoming scan types) to another single type. Configuring for scan type conversion involves setting fields in specific ways. The three key fields to convert the scan type of the input are **Configuration - Deinterlace Mode**, **Configuration - Interlace Mode**, and **Configuration - Telecine**. The following table describes how to set these three key fields to convert a given input to a given output.
 
-****
-
 | Input | Output | Configuration - Deinterlace Mode | Configuration - Interlace Mode | Configuration - Telecine |
 | --- | --- | --- | --- | --- |
 | Progressive | Progressive | Off | Progressive | None |

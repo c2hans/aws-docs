@@ -69,7 +69,7 @@ The `Condition` element specifies when statements execute based on defined crite
 
 Amazon Monitron defines its own set of condition keys and also supports using some global condition keys. For a list of all AWS global condition keys, see [AWS Global Condition Context Keys](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html) in the *IAM User Guide*.
 
-To see a list of Amazon Monitron condition keys, see [Actions defined by Amazon Monitron](https://docs.aws.amazon.com//service-authorization/latest/reference/list_amazonmonitron.html#amazonmonitron-actions-as-permissions) in the *IAM User Guide*. To learn with which actions and resources you can use a condition key, see [Condition keys for Amazon Monitron](https://docs.aws.amazon.com//service-authorization/latest/reference/list_amazonmonitron.html#amazonmonitron-policy-keys).
+To see a list of Amazon Monitron condition keys, see [Actions defined by Amazon Monitron](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonmonitron.html#amazonmonitron-actions-as-permissions) in the *IAM User Guide*. To learn with which actions and resources you can use a condition key, see [Condition keys for Amazon Monitron](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonmonitron.html#amazonmonitron-policy-keys).
 
 ### Examples
 <a name="security_iam_service-with-iam-id-based-policies-examples"></a>

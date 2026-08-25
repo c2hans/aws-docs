@@ -5,71 +5,172 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/scheduled-batch-j
 # Tutorial: Create a scheduled AWS Batch job
 <a name="scheduled-batch-job"></a>
 
-The following procedure covers how to create a scheduled AWS Batch job and the required EventBridge IAM role.
+You can use Amazon EventBridge Scheduler to submit an AWS Batch job on a recurring schedule, such as every hour, or once at a specific date and time. EventBridge Scheduler invokes the AWS Batch [SubmitJob](https://docs.aws.amazon.com/batch/latest/APIReference/API_SubmitJob.html) API operation on the schedule that you define, using an IAM execution role that grants EventBridge Scheduler permission to submit jobs on your behalf.
 
-**To create a scheduled AWS Batch job with EventBridge**
+This procedure works for all AWS Batch jobs on Amazon ECS, Amazon EKS, and AWS Fargate. You can also use it to schedule service jobs, such as SageMaker Training jobs, by targeting the [SubmitServiceJob](https://docs.aws.amazon.com/batch/latest/APIReference/API_SubmitServiceJob.html) API operation instead.
+
 **Note**
-This procedure works for all AWS Batch on Amazon ECS, Amazon EKS, and AWS Fargate jobs.
+Scheduled rules are a legacy Amazon EventBridge feature. If you have existing scheduled rules that submit AWS Batch jobs, they will continue to work. For new schedules, we recommend Amazon EventBridge Scheduler.
+
+**Important**
+The resources that you create in this tutorial might result in charges to your AWS account. A recurring schedule continues to submit jobs, and each submitted job uses compute resources, until you delete the schedule. When you finish, delete the resources that you created to stop incurring charges. For more information, see the pricing pages for [Amazon EventBridge](https://aws.amazon.com/eventbridge/pricing/) and [AWS Batch](https://aws.amazon.com/batch/pricing/).
+
+## Prerequisites
+<a name="scheduled-batch-job-prereqs"></a>
+
+Before you begin, you need the following:
++ A job queue and a valid job definition. To create these, see [Getting started with AWS Batch tutorials](Batch_GetStarted.md). To schedule a service job, you need a service environment and a SageMaker job queue instead. To create these, see [Getting started with AWS Batch on SageMaker AI](getting-started-sagemaker.md).
++ An IAM execution role that EventBridge Scheduler assumes to call `SubmitJob` on your behalf. The role must include a policy that grants the `batch:SubmitJob` permission. To schedule a service job, grant the `batch:SubmitServiceJob` permission instead. As a security best practice, scope the policy to the job queue and job definition that the schedule uses:
+
+  ```
+  {
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Effect": "Allow",
+        "Action": "batch:SubmitJob",
+        "Resource": [
+          "arn:aws:batch:us-east-1:111122223333:job-queue/my-job-queue",
+          "arn:aws:batch:us-east-1:111122223333:job-definition/my-job-definition:*"
+        ]
+      }
+    ]
+  }
+  ```
+
+  The role must also have a trust policy that allows the `scheduler.amazonaws.com` service principal to assume it. For more information, see [Set up an execution role](https://docs.aws.amazon.com/scheduler/latest/UserGuide/setting-up.html#setting-up-execution-role) in the *Amazon EventBridge Scheduler User Guide*.
+
+## Step 1: Define the schedule
+<a name="scheduled-batch-job-step1"></a>
 
 1. Open the Amazon EventBridge console at [https://console.aws.amazon.com/events/](https://console.aws.amazon.com/events/).
 
-1. From the navigation bar, select the AWS Region to use.
+1. From the navigation bar, select the AWS Region to use. Choose the same Region as the job queue that you want to submit jobs to.
 
-1. In the navigation pane, choose **Rules**.
+1. In the navigation pane, under **Scheduler**, choose **Schedules**.
 
-1. Choose **Create rule**.
+1. Choose **Create schedule**.
 
-1. For **Name**, specify a unique name for your compute environment. The name can contain up to 64 characters. It can contain uppercase and lowercase letters, numbers, hyphens (-), and underscores (\_).
+1. For **Schedule name**, enter a name for your schedule. The name can contain up to 64 characters, and can include letters, numbers, hyphens (-), underscores (\_), and periods (.). The name must be unique within the schedule group in the selected Region.
+
+1. (Optional) For **Description**, enter a description for the schedule.
+
+1. For **Schedule group**, keep **default**, or choose a schedule group that you have created.
+
+1. For **Occurrence**, choose one of the following:
+   + **Recurring schedule** – Runs the job repeatedly. For **Schedule type**, choose **Cron-based schedule** and enter a cron expression to run the job at a specific time, such as 8:00 a.m. on the first Monday of every month, or choose **Rate-based schedule** and enter a rate expression to run the job at a regular rate, such as every 10 minutes. For more information, see [Schedule types on Amazon EventBridge Scheduler](https://docs.aws.amazon.com/scheduler/latest/UserGuide/schedule-types.html) in the *Amazon EventBridge Scheduler User Guide*.
+   + **One-time schedule** – Runs the job once at the date and time that you specify.
+
+1. For **Flexible time window**, choose **Off** to run the job exactly on schedule, or choose a time window to allow EventBridge Scheduler to invoke the job within that window after the scheduled time.
+
+1. Choose **Next**.
+
+## Step 2: Select the target
+<a name="scheduled-batch-job-step2"></a>
+
+1. On the **Select target** page, choose **All APIs**, and then search for **Batch**.
+
+1. Choose **AWS Batch**, and then choose the API operation that matches your job type:
+   + **SubmitJob** – For AWS Batch jobs on Amazon ECS, Amazon EKS, and AWS Fargate.
+   + **SubmitServiceJob** – For service jobs, such as SageMaker Training jobs.
+
+1. For **Input**, provide the request parameters that EventBridge Scheduler passes to the API operation as a JSON object.
+**Important**
+Parameter names in the input JSON must be in PascalCase (for example, `JobQueue`), not the camelCase shown in the request syntax of the *AWS Batch API Reference* (for example, `jobQueue`).
+
+------
+#### [ SubmitJob ]
+
+   The following parameters are required:
+   + `JobName` – A name for the submitted job.
+   + `JobQueue` – The name or Amazon Resource Name (ARN) of the job queue to submit the job to.
+   + `JobDefinition` – The job definition to use, specified as the name (uses the latest active revision), name and revision (`name:revision`), or the full ARN.
+
+   For example:
+
+   ```
+   {
+     "JobName": "my-scheduled-job",
+     "JobQueue": "my-job-queue",
+     "JobDefinition": "my-job-definition"
+   }
+   ```
+
+   You can also include any other `SubmitJob` request parameter. For example, to submit an array job with 10 child jobs and retry the job up to 3 times if it fails:
+
+   ```
+   {
+     "JobName": "my-scheduled-job",
+     "JobQueue": "my-job-queue",
+     "JobDefinition": "my-job-definition",
+     "ArrayProperties": {
+       "Size": 10
+     },
+     "RetryStrategy": {
+       "Attempts": 3
+     }
+   }
+   ```
+
+   For all available parameters, see [SubmitJob](https://docs.aws.amazon.com/batch/latest/APIReference/API_SubmitJob.html) in the *AWS Batch API Reference*.
+
+------
+#### [ SubmitServiceJob ]
+
+   The following parameters are required:
+   + `JobName` – A name for the submitted service job.
+   + `JobQueue` – The name or ARN of the SageMaker job queue to submit the service job to.
+   + `ServiceJobType` – The type of service job. For SageMaker Training jobs, specify `SAGEMAKER_TRAINING`.
+   + `ServiceRequestPayload` – A JSON-encoded string that contains the request that AWS Batch sends to the target service. For more information, see [Service job payloads in AWS Batch](service-job-payload.md).
+
+   For example:
+
+   ```
+   {
+     "JobName": "my-scheduled-training-job",
+     "JobQueue": "my-sagemaker-job-queue",
+     "ServiceJobType": "SAGEMAKER_TRAINING",
+     "ServiceRequestPayload": "{\"TrainingJobName\": \"my-training-job\", \"RoleArn\": \"arn:aws:iam::111122223333:role/SageMakerExecutionRole\", \"AlgorithmSpecification\": {\"TrainingImage\": \"763104351884.dkr.ecr.us-west-2.amazonaws.com/pytorch-training:2.0.0-cpu-py310\", \"TrainingInputMode\": \"File\"}, \"OutputDataConfig\": {\"S3OutputPath\": \"s3://amzn-s3-demo-bucket/output\"}, \"ResourceConfig\": {\"InstanceType\": \"ml.c5.xlarge\", \"InstanceCount\": 1, \"VolumeSizeInGB\": 1}, \"StoppingCondition\": {\"MaxRuntimeInSeconds\": 300}}"
+   }
+   ```
+
+   For all available parameters, see [SubmitServiceJob](https://docs.aws.amazon.com/batch/latest/APIReference/API_SubmitServiceJob.html) in the *AWS Batch API Reference*.
+
+------
+
+1. Choose **Next**.
+
+## Step 3: Configure schedule settings
+<a name="scheduled-batch-job-step3"></a>
+
+1. (Optional) On the **Settings** page, configure the following:
+   + **Schedule state** – Turn the schedule off if you don't want it to start running as soon as it's created.
+   + **Action after schedule completion** – Choose whether EventBridge Scheduler deletes the schedule after its last invocation.
+   + **Retry policy** – Configure the maximum age of an unprocessed event and the number of times EventBridge Scheduler retries the invocation if it fails.
+   + **Dead-letter queue (DLQ)** – Choose an Amazon SQS queue to receive invocations that can't be delivered to the target.
+
+1. For **Permissions**, choose **Use existing role**, and then select the execution role that you created as a prerequisite.
+
+1. Choose **Next**.
+
+## Step 4: Review and create
+<a name="scheduled-batch-job-step4"></a>
++ Review the schedule details. To make changes to any section, choose **Edit** next to that section. When you're finished, choose **Create schedule**.
+
+After the schedule runs, you can verify that the job was submitted on the AWS Batch console **Jobs** page.
+
+## Step 5: Clean up resources
+<a name="scheduled-batch-job-cleanup"></a>
+
+When you no longer need the schedule, delete it to stop submitting jobs and to avoid incurring charges.
+
+1. In the EventBridge console navigation pane, under **Scheduler**, choose **Schedules**.
+
+1. Select the schedule that you created, choose **Delete**, and then confirm the deletion.
+
+1. (Optional) If you no longer need the execution role that you created as a prerequisite, delete it. For more information, see [Delete an IAM role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_manage_delete.html) in the *IAM User Guide*.
+
 **Note**
-A rule can't have the same name as another rule in the same Region and on the same event bus.
+Deleting the schedule doesn't affect jobs that were already submitted. To stop a job that is already submitted or running, use the [TerminateJob](https://docs.aws.amazon.com/batch/latest/APIReference/API_TerminateJob.html) API operation. To stop a service job, use the [TerminateServiceJob](https://docs.aws.amazon.com/batch/latest/APIReference/API_TerminateServiceJob.html) API operation.
 
-1. (Optional) For **Description**, enter a description for the rule.
-
-1. For **Event bus**, choose the event bus that you want to associate with this rule. If you want this rule to match events that come from your account, select **default**. When an AWS service in your account emits an event, it always goes to your account's default event bus.
-
-1. (Optional) Turn off the rule on the selected bus if you don't want to run the rule immediately.
-
-1. For **Rule type**, choose **Schedule**.
-
-1. Choose **Continue to create rule** or **Next**.
-
-1. For **Schedule pattern**, do one of the following:
-   + Choose **A fine-grained schedule that runs at a specific time, such as 8:00 a.m. PST on the first Monday of every month** and then enter a cron expression. For more information, see [Cron Expressions](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-create-rule-schedule.html#eb-cron-expressions) in the *Amazon EventBridge User Guide*.
-   + Choose **A schedule that runs at a regular rate, such as every 10 minutes.** and then enter a rate expression.
-
-1. Choose **Next**.
-
-1. For **Target types**, choose **AWS service**.
-
-1. For **Select a target**, choose **Batch job queue**. Then, configure the following:
-   + **Job queue:** Enter the Amazon Resource Name (ARN) of the job queue to schedule your job in.
-   + **Job definition:** Enter the name and revision or full ARN of the job definition to use for your job.
-   + **Job name:** Enter a name for your job.
-   + **Array size:** (Optional) Enter an array size for your job to run more than one copy. For more information, see [Array jobs](array_jobs.md).
-   + **Job attempts:** (Optional) Enter the number of times to retry your job if it fails. For more information, see [Automated job retries](job_retries.md).
-
-1. For **Batch job queue** target types, EventBridge needs permission to send events to the target. EventBridge can create the IAM role needed for your rule to run. Do one of the following:
-   + To create an IAM role automatically, choose **Create a new role for this specific resource**.
-   + To use an IAM role that you've already created, choose **Use existing role**.
-
-1. (Optional) Expand **Additional settings**.
-
-   1. For **Configure target input**, choose how the text from an event is processed before it's passed to the target.
-
-   1. For **Maximum age of event**, specify the time interval for how long unprocessed events are kept.
-
-   1. For **Retry attempts**, enter the number of times that an event is retried.
-
-   1. For **Dead-letter queue,** choose an option for how unprocessed events are handled. If necessary, specify the Amazon SQS queue to use as the dead-letter queue.
-
-1. (Optional) Choose **Add another target** to add another target for this rule.
-
-1. Choose **Next**.
-
-1. (Optional) For **Tags**, choose **Add new tag** to add a resource label for the rule. For more information, see [Amazon EventBridge tags](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-tagging.html).
-
-1. Choose **Next**.
-
-1. For **Review and create**, review the configuration steps. If you need to make changes, choose **Edit**. When you're finished, choose **Create rule**.
-
-For more information about creating rules, see [Creating an Amazon EventBridge rule that runs on a schedule](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-create-rule-schedule.html) in the *Amazon EventBridge User Guide*.
+For more information about creating schedules, see [Getting started with Amazon EventBridge Scheduler](https://docs.aws.amazon.com/scheduler/latest/UserGuide/getting-started.html) in the *Amazon EventBridge Scheduler User Guide*.

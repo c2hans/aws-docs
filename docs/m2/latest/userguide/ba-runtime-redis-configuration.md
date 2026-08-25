@@ -16,8 +16,6 @@ You can use this document to learn about the Redis caches in AWS Transform for m
 
 Redis servers can be used as caches for various features in the AWS Transform for mainframe Gapwalk application, such as:
 
-****
-
 | AWS Transform for mainframe Runtime features that use Redis caching | Description |
 | --- | --- |
 | Blusam cache | A Redis Blusam cache for reading records efficiently, using a write-behind strategy, to optimize write-intensive workloads encountered on batch payloads.  |
@@ -97,8 +95,6 @@ In the following example the Blusam datasets cache and JICS cache use the `gapwa
 <a name="ba-runtime-redis-supported-properties"></a>
 
 The following table shows the Redis properties that are supported for global and specific Redis caches on AWS Transform for mainframe Runtime.
-
-****
 
 | Property name | Required? | Description | Values | Default |
 | --- | --- | --- | --- | --- |

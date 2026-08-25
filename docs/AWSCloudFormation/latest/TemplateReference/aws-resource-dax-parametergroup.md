@@ -46,7 +46,7 @@ Properties:
 A description of the parameter group.
 *Required*: No
 *Type*: String
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `ParameterGroupName`  <a name="cfn-dax-parametergroup-parametergroupname"></a>
 The name of the parameter group.
@@ -80,9 +80,6 @@ my-dax-parameter-group
 ```
 
 For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
-
-### Fn::GetAtt
-<a name="aws-resource-dax-parametergroup-return-values-fn--getatt"></a>
 
 ## Examples
 <a name="aws-resource-dax-parametergroup--examples"></a>

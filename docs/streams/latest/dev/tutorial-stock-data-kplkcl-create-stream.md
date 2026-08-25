@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/tutorial-stock-data-k
 # Create a data stream
 <a name="tutorial-stock-data-kplkcl-create-stream"></a>
 
-In the first step of the [Tutorial: Process real-time stock data using KPL and KCL 1.x[Tutorial: Process real-time stock data using KPL and KCL 1.x](tutorial-stock-data-kplkcl.md)](tutorial-stock-data-kplkcl.md), you create the stream that you will use in subsequent steps.
+In the first step of the [Tutorial: Process real-time stock data using KPL and KCL 1.x](tutorial-stock-data-kplkcl.md), you create the stream that you will use in subsequent steps.
 
 **To create a stream**
 

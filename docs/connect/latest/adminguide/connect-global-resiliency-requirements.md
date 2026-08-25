@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/connect-global
 # Connect Customer Global Resiliency requirements
 <a name="connect-global-resiliency-requirements"></a>
 
-If you have decided that Connect Customer Global Resiliency is the appropriate deployment for you, ensure you adhere to the following pre-requisites before onboarding:
+If you have decided that Connect Customer Global Resiliency is the appropriate deployment for you, make sure you adhere to the following pre-requisites before onboarding:
 + [Port](about-porting.md) all phone numbers you want to enable to be multi-region to Connect Customer.
 + AWS Enterprise Support or AWS Unified Operations is required to onboard to Connect Customer Global Resiliency. For more information about AWS Support plans, see [AWS Support Plans ](https://aws.amazon.com/premiumsupport/plans/).
 + You must have an existing production [SAML 2.0-enabled](connect-identity-management.md) Connect Customer instance in a Region where Connect Customer Global Resiliency is available. To confirm, see [Global Resiliency availability by Region](regions.md#gr_region).

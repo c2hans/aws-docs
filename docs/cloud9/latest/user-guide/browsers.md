@@ -9,8 +9,6 @@ source_url: https://docs.aws.amazon.com/cloud9/latest/user-guide/browsers.html
 
 The following table lists the supported browsers for AWS Cloud9.
 
-****
-
 |  **Browser**  |  **Versions**  |
 | --- | --- |
 | Google Chrome | Latest three versions |

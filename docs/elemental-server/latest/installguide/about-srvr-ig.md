@@ -9,8 +9,6 @@ This is version 2.18 of the AWS Elemental Server documentation. This is the late
 
 This guide describes how to install AWS Elemental Server software for the first time. The reference documents for the different types of installation are listed in the following table.
 
-****
-
 | Installation type | Description |
 | --- | --- |
 | Node-locked licenses on AWS Elemental appliances | You received AWS Elemental Appliance edition hardware, which comes with the appropriate licenses already installed.If you're using AWS Elemental Conductor File to control your AWS Elemental Server nodes, see [AWS Elemental Conductor File Installation Guide](https://docs.aws.amazon.com/elemental-cf2/latest/installguide/) as well. |

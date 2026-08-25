@@ -30,21 +30,15 @@ By default, the object uses the Postgres driver, which requires the `clusterId` 
 ## Syntax
 <a name="redshiftdatabase-syntax"></a>
 
-****
-
 | Required Fields | Description | Slot Type |
 | --- | --- | --- |
 | \*password | The password to supply. | String |
 | username | The user name to supply when connecting to the database. | String |
 
-****
-
 | Required Group (One of the following is required) | Description | Slot Type |
 | --- | --- | --- |
 | clusterId | The identifier provided by the user when the Amazon Redshift cluster was created. For example, if the endpoint for your Amazon Redshift cluster is mydb.example.us-east-1.redshift.amazonaws.com, the correct identifier is mydb. In the Amazon Redshift console, you can get this value from Cluster Identifier or Cluster Name. | String |
 | connectionString | The JDBC endpoint for connecting to an Amazon Redshift instance owned by an account different than the pipeline. You can't specify both connectionString and clusterId. | String |
-
-****
 
 | Optional Fields | Description | Slot Type |
 | --- | --- | --- |
@@ -53,13 +47,9 @@ By default, the object uses the Postgres driver, which requires the `clusterId` 
 | parent | Parent of the current object from which slots are inherited. | Reference Object, for example, "parent":{"ref":"myBaseObjectId"} |
 | region | The code for the region where the database exists. For example, us-east-1. | Enumeration |
 
-****
-
 | Runtime Fields | Description | Slot Type |
 | --- | --- | --- |
 | @version | Pipeline version that the object was created with. | String |
-
-****
 
 | System Fields | Description | Slot Type |
 | --- | --- | --- |

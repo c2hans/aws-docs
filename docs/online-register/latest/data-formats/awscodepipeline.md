@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsc
 
 AWS CodePipeline provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="codepipeline-GetActionType"></a>[GetActionType](https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_GetActionType.html) | View information about an action type | Read |

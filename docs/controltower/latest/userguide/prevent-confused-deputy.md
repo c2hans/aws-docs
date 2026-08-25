@@ -13,4 +13,4 @@ We recommend using the `aws:SourceArn` and `aws:SourceAccount` conditions in you
 + If the `aws:SourceArn` value does not contain the account ID, such as the ARN for an Amazon S3 bucket, you must use both conditions to limit permissions.
 + If you use both conditions, and if the `aws:SourceArn` value contains the account ID, the `aws:SourceAccount` value and the account in the `aws:SourceArn` value must show the same account ID when used in the same policy statement
 
-For more information and examples, see [https://docs.aws.amazon.com//controltower/latest/userguide/conditions-for-role-trust.html](https://docs.aws.amazon.com//controltower/latest/userguide/conditions-for-role-trust.html).
+For more information and examples, see [https://docs.aws.amazon.com/controltower/latest/userguide/conditions-for-role-trust.html](https://docs.aws.amazon.com/controltower/latest/userguide/conditions-for-role-trust.html).

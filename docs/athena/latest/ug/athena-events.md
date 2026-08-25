@@ -100,8 +100,6 @@ The following example shows an Athena Query State Change event with the `current
 
 The JSON output includes the following properties.
 
-****
-
 | Property | Description |
 | --- | --- |
 | athenaError | Appears only when currentState is FAILED. Contains information about the error that occurred, including the error category, error type, error message, and whether the action that led to the error can be retried. Values for each of these fields depend on the nature of the error. For information about the values for errorCategory and errorType, see [Athena error catalog](error-reference.md). |

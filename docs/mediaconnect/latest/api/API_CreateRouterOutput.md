@@ -18,6 +18,9 @@ Content-type: application/json
    "availabilityZone": "{{string}}",
    "clientToken": "{{string}}",
    "configuration": { ... },
+   "fabricConfiguration": {
+      "recoveryLatencyMode": "{{string}}"
+   },
    "maintenanceConfiguration": { ... },
    "maximumBitrate": {{number}},
    "name": "{{string}}",
@@ -57,6 +60,11 @@ The configuration settings for the router output.
 Type: [RouterOutputConfiguration](API_RouterOutputConfiguration.md) object
  **Note: **This object is a Union. Only one member of this object can be specified or returned.
 Required: Yes
+
+ ** [fabricConfiguration](#API_CreateRouterOutput_RequestSyntax) **   <a name="mediaconnect-CreateRouterOutput-request-fabricConfiguration"></a>
+The fabric configuration settings for the router output.
+Type: [FabricConfiguration](API_FabricConfiguration.md) object
+Required: No
 
  ** [maintenanceConfiguration](#API_CreateRouterOutput_RequestSyntax) **   <a name="mediaconnect-CreateRouterOutput-request-maintenanceConfiguration"></a>
 The maintenance configuration settings for the router output, including preferred maintenance windows and schedules.
@@ -110,6 +118,9 @@ Content-type: application/json
       "availabilityZone": "string",
       "configuration": { ... },
       "createdAt": "string",
+      "fabricConfiguration": {
+         "recoveryLatencyMode": "string"
+      },
       "id": "string",
       "ipAddress": "string",
       "maintenanceConfiguration": { ... },

@@ -19,6 +19,7 @@ An asterisk (\*) in the following table indicates you must have the latest servi
 
 | CVE | Valkey 7.3 | Valkey 7.2 | Redis OSS 7.1 | Redis OSS 7.0 | Redis OSS 6.2 |
 | --- | --- | --- | --- | --- | --- |
+| [CVE-2026-66373](https://www.cve.org/CVERecord?id=CVE-2026-66373)\* | ✓ | ✓ | ✓ | ✓ | ✓ |
 | [CVE-2026-25589](https://www.cve.org/CVERecord?id=CVE-2026-25589) | ✓ | ✓ | ✓ | ✓ | ✓ |
 | [CVE-2026-25588](https://www.cve.org/CVERecord?id=CVE-2026-25588) | ✓ | ✓ | ✓ | ✓ | ✓ |
 | [CVE-2026-25243](https://www.cve.org/CVERecord?id=CVE-2026-25243)\* | ✓ | ✓ | ✓ | ✓ | ✓ |

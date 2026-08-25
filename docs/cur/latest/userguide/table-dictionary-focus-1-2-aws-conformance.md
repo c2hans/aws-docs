@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/table-dictionary-fo
 
 The following table provides all of the conformance gaps that might exist in an export of the FOCUS 1.2 with AWS columns table. A particular conformance gap will not apply to your export if you're not receiving cost and usage data for the related scenario.
 
-****
-
 - ****Missing data****
   - **Affected column:** ContractedUnitPrice / **FOCUS 1.2 requirement:** ContractedUnitPrice must not be null for Usage and Purchase ChargeCategory line items that are not corrections. / **Conformance gap description:** ContractedUnitPrice might be null for certain product offerings.
   - **Affected column:** InvoiceIssuerName / **FOCUS 1.2 requirement:** InvoiceIssuerName must not be null. / **Conformance gap description:** InvoiceIssuerName might be null for certain charges.

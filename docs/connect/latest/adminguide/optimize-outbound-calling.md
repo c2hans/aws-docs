@@ -30,24 +30,24 @@ Not every contact center is the same. What works for some might not work for oth
 + **Area localization**. Use a caller ID in the same area as the prospect.
 + **City localization**. Use a caller ID in the same city as the prospect.
 + **Recognizable golden toll free number** such as 0800 123 0000.
-+ **Mobile numbers**. Where countries permit this, it may be possible to use a virtual mobile number to dial out from a contact center. For a list of countries where Connect Customer supports mobile numbers, see [Region requirements for ordering and porting phone numbers in Connect Customer](phone-number-requirements.md).
++ **Mobile numbers**. Where countries permit this, it might be possible to use a virtual mobile number to dial out from a contact center. For a list of countries where Connect Customer supports mobile numbers, see [Region requirements for ordering and porting phone numbers in Connect Customer](phone-number-requirements.md).
 
 ## Step 4: Make sure your campaign is calling valid numbers
 <a name="call-valid-numbers"></a>
 
-Maintaining accurate customer contact information is essential for successful outbound calling operations. Amazon Connect's detailed disconnect reasons help identify invalid phone numbers in your contact lists. If more than 0.5% of your calls are failing due to invalid numbers, we recommend implementing regular contact list maintenance through update campaigns or using services like Amazon Pinpoint for phone number validation.
+Maintaining accurate customer contact information is essential for successful outbound calling operations. The detailed disconnect reasons of Connect Customer help identify invalid phone numbers in your contact lists. If more than 0.5% of your calls are failing due to invalid numbers, we recommend implementing regular contact list maintenance through update campaigns or using services like Amazon Pinpoint for phone number validation.
 
 ## Step 5: Make outbound calls at optimal times
 <a name="optimal-times"></a>
 
-Another strategy for outbound call campaigns is making sure that calls are placed at the best times. It is critical to never harass your customers or prospects—no one wants to be contacted multiple times by the same company. Generally speaking, it is never a good idea to call before 10:00AM or after 5:00PM as people are at their busiest or need their quiet time. Customers should be called when it's a good for them, depending on their profile. This may mean that one customer should be called around noon, while another is more accessible in the afternoon.
+Another strategy for outbound call campaigns is making sure that calls are placed at the best times. It is critical to never harass your customers or prospects—no one wants to be contacted multiple times by the same company. Generally speaking, it is never a good idea to call before 10:00AM or after 5:00PM as people are at their busiest or need their quiet time. Customers should be called when it's a good for them, depending on their profile. This might mean that one customer should be called around noon, while another is more accessible in the afternoon.
 
 In addition, there are regulations such as TCPA (in the US) and OFCOM (in the UK) that provide guidance on when not to call end customers. We strongly recommend that you abide by such regulations.
 
 ## Step 6: Manage and monitor the reputation of your caller IDs
 <a name="monitor-reputation"></a>
 
-For US-based operations, registering your business numbers with services like Free Caller Registry is essential for managing your caller ID reputation. Amazon Connect's Contact Trace Record disconnect reasons help you identify when your numbers are experiencing carrier-level blocking.
+For US-based operations, registering your business numbers with services like Free Caller Registry is essential for managing your caller ID reputation. The Contact Trace Record disconnect reasons in Connect Customer help you identify when your numbers are experiencing carrier-level blocking.
 
 We recommend assigning dedicated resources to monitor your number reputation and address blocking issues from carriers or third-party websites. Consider these important factors:
 
@@ -64,7 +64,7 @@ If your caller ID has been flagged, switching to a new phone number is typically
 
 Today, outbound contact centers typically embrace an intelligent, more efficient manner of dialing.
 
-For example, one method is to use multiple phone numbers when placing outbound calls. Customers are more likely to answer a call if they feel that they are not being called repeatedly by the same number. In fact, using the same phone number repeatedly is a sure way to annoy customers and prospects who may feel they are being contacted too often.
+For example, one method is to use multiple phone numbers when placing outbound calls. Customers are more likely to answer a call if they feel that they are not being called repeatedly by the same number. In fact, using the same phone number repeatedly is a sure way to annoy customers and prospects who might feel they are being contacted too often.
 
 ## Step 8: Engage with App Vendors
 <a name="engage-inapp-vendors"></a>
@@ -85,6 +85,6 @@ It's inevitable that you'll end up with a list of unanswered calls that you were
 ## Step 10: Validate your outbound calling strategy
 <a name="validate-calling-strategy"></a>
 
-Data-driven decisions and continuous improvement are key to delivering business value through your outbound calling strategy. Treat each operational change as an experiment, ensuring you can measure and compare its effectiveness.
+Data-driven decisions and continuous improvement are key to delivering business value through your outbound calling strategy. Treat each operational change as an experiment, making sure you can measure and compare its effectiveness.
 
-We recommend creating custom reports that track both customer reachability and specific business outcomes. You can combine Contact Trace Record data with your own metrics using Amazon Connect's data lake or AWS services like QuickSight. Once you establish a baseline, you can evaluate changes and optimize for success.
+We recommend creating custom reports that track both customer reachability and specific business outcomes. You can combine Contact Trace Record data with your own metrics using the data lake in Connect Customer or AWS services like Quick. After you establish a baseline, you can evaluate changes and optimize for success.

@@ -18,7 +18,6 @@ Before you create a migration project in AWS DMS, make sure that you create the 
 1. Choose **Migration projects**. The **Migration projects** page opens.
 
 1. Choose **Create migration project**. The following table describes the settings.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/dms/latest/userguide/migration-projects-create.html)
 
 1. Choose **Create migration project**.

@@ -65,7 +65,7 @@ The following procedure describes how to launch an Amazon EC2 instance from the 
 
 1. To ensure that the AMI is from a secure source, verify that the owner of the account is **703163444405**.
 
-1. To launch an instance from this AMI, select it, and then choose **Launch**. For more information about launching an instance using the console, see [Launching your instance from an AMI](https://docs.aws.amazon.com//AWSEC2/latest/UserGuide/launching-instance.html#choose-an-instance-type-page) in the *Amazon EC2 User Guide*.
+1. To launch an instance from this AMI, select it, and then choose **Launch**. For more information about launching an instance using the console, see [Launching your instance from an AMI](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/launching-instance.html#choose-an-instance-type-page) in the *Amazon EC2 User Guide*.
 
    We recommend the following specifications for the Amazon EC2 instance.
 

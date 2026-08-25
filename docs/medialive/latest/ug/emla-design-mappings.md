@@ -43,13 +43,9 @@ You should end up with a list like the following. This list uses the clusters an
 + In this example, cluster CL-A and cluster CL-B share the same two networks. In your deployment, clusters might not share networks.
 + In this example, you assign the same names to the logical interfaces in both clusters. But you could assign different names.
 
-****
-
 - **CL-A**
   - **Network name:** input-network / **Logical interface name:** my-Inputs-Interface / **Corresponding physical interface for Node 1:** Eth1 / **Node 2:** Eth1 / **Node 3:** Eth2 / **Node 4:** Eth1
   - **Network name:** output-network / **Logical interface name:** my-Outputs-Interface / **Corresponding physical interface for Node 1:** Eth2 / **Node 2:** Eth2 / **Node 3:** Eth3 / **Node 4:** Eth2
-
-****
 
 - **CL-B**
   - **Network name:** input-network / **Logical interface name:** my-Inputs-Interface / **Corresponding physical interface for Node 1:** Eth1 / **Node 2:** Eth1 / **Node 3:** Eth2

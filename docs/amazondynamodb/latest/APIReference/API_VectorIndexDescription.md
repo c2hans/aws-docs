@@ -14,7 +14,7 @@ Contains the current state and configuration of a vector index, including its st
 In the following list, the required parameters are described first.
 
  ** Backfilling **   <a name="DDB-Type-VectorIndexDescription-Backfilling"></a>
-Specifies whether the index is currently backfilling. During backfill, `SearchVectors` operations might return incomplete results.
+Specifies whether the index is currently backfilling. `SearchVectors` returns a `ValidationException` while the index is backfilling; it does not return partial results. This field is reported for an index added with `UpdateTable`, and is absent for an index created as part of `CreateTable`. Wait until this field is not `true` before you search.
 Type: Boolean
 Required: No
 
@@ -49,7 +49,8 @@ Required: No
 
  ** IndexStatus **   <a name="DDB-Type-VectorIndexDescription-IndexStatus"></a>
 The current state of the vector index:
-+  `CREATING` - The index is being created.
++  `CREATING` - The index is being created. This state covers both provisioning the index and backfilling existing base table data. Check the `Backfilling` field to distinguish the two.
++  `UPDATING` - The index is being updated.
 +  `ACTIVE` - The index is ready for use.
 +  `DELETING` - The index is being deleted.
 Type: String

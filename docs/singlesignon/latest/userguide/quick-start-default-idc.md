@@ -25,7 +25,7 @@ The following prerequisites are needed to complete this tutorial:
 + Sign in to the AWS Management Console and access the IAM Identity Center console either as a:
   + **New to AWS (root user)** – Sign in as the account owner by choosing **AWS account root user** and entering your AWS account email address. On the next page, enter your password.
   + **Already using AWS (IAM credentials)** – Sign in using your IAM credentials with administrative permissions.
-    + For more help signing in to the AWS Management Console, see [AWS Sign-In Guide.](https://docs.aws.amazon.com//signin/latest/userguide/how-to-sign-in.html)
+    + For more help signing in to the AWS Management Console, see [AWS Sign-In Guide.](https://docs.aws.amazon.com/signin/latest/userguide/how-to-sign-in.html)
 + You can configure multi-factor authentication for your IAM Identity Center users. For more information, see [Configure MFA in IAM Identity Center](mfa-configure.md).
 
 ## Step 1: Add a user

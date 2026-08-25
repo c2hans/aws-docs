@@ -122,4 +122,4 @@ You can use AWS CloudTrail to monitor whether a snapshot that you have shared wi
 + **SharedSnapshotCopyInitiated** — A shared snapshot is being copied.
 + **SharedSnapshotVolumeCreated** — A shared snapshot is being used to create a volume.
 
-For more information about using CloudTrail, see [ Log Amazon EC2 and Amazon EBS API calls with AWS CloudTrail](https://docs.aws.amazon.com//AWSEC2/latest/UserGuide/monitor-with-cloudtrail.html).
+For more information about using CloudTrail, see [ Log Amazon EC2 and Amazon EBS API calls with AWS CloudTrail](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/monitor-with-cloudtrail.html).

@@ -28,8 +28,6 @@ You can view and manage your capacity reservations on the **Capacity reservation
 
 The following table describes the possible status values for a capacity reservation.
 
-****
-
 | Status | Description |
 | --- | --- |
 | Pending | Athena is processing your capacity request. Capacity is not ready to run queries. |

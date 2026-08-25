@@ -10,7 +10,7 @@ You can give your AWS Lambda function access to a resource in a Amazon VPC in Am
 **Warning**
 When you allow access between accounts or VPCs, check that your plan meets the security requirements of the respective organizations that manage these accounts. Following the instructions in this document affects the security posture of your resources.
 
-In this tutorial, you connect two accounts together with a peering connection using IPv4. You configure a Lambda function that is not already connected to a Amazon VPC. You configure DNS resolution to connect your function to resources that do not provide static IPs. To adapt these instructions to other peering scenarios, consult the [VPC Peering Guide](https://docs.aws.amazon.com//vpc/latest/peering/what-is-vpc-peering.html).
+In this tutorial, you connect two accounts together with a peering connection using IPv4. You configure a Lambda function that is not already connected to a Amazon VPC. You configure DNS resolution to connect your function to resources that do not provide static IPs. To adapt these instructions to other peering scenarios, consult the [VPC Peering Guide](https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html).
 
 ## Prerequisites
 <a name="w2aac15c43c67b9"></a>
@@ -116,7 +116,7 @@ Create a VPC peering connection request from your function's VPC (the requester 
 ## Prepare your resource's account
 <a name="w2aac15c43c67c19"></a>
 
-To create your peering connection and prepare your resource's VPC to use the connection, log in to your resource's account with a role that holds the permissions listed in the prerequisites. The steps to log in might be different based on how the account is secured. For more information about how to sign in to an AWS account, see the [AWS Sign-in User Guide](https://docs.aws.amazon.com//signin/latest/userguide/what-is-sign-in.html). In your resource's account, perform the following procedures.
+To create your peering connection and prepare your resource's VPC to use the connection, log in to your resource's account with a role that holds the permissions listed in the prerequisites. The steps to log in might be different based on how the account is secured. For more information about how to sign in to an AWS account, see the [AWS Sign-in User Guide](https://docs.aws.amazon.com/signin/latest/userguide/what-is-sign-in.html). In your resource's account, perform the following procedures.
 
 **To accept the VPC peering connection request**
 

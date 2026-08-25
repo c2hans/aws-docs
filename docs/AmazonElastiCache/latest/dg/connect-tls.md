@@ -12,38 +12,37 @@ To access data from ElastiCache for Redis OSS caches enabled with in-transit enc
 
 To use valkey-cli to connect to a Valkey or Redis OSS cluster that has in-transit encryption enabled on Amazon Linux 2023, follow these steps.
 
-1. Download and compile the valkey-cli utility. This utility is included in the Valkey software distribution.
-
-1. At the command prompt of your EC2 instance, enter the following commands to download and compile valkey-cli.
+1. At the command prompt of your EC2 instance, install the Valkey package. The valkey-cli utility included in this package is built with TLS support.
 
    ```
-   sudo dnf install gcc jemalloc-devel openssl-devel tcl tcl-devel -y
-   wget -O valkey-8.0.0.tar.gz https://github.com/valkey-io/valkey/archive/refs/tags/8.0.0.tar.gz
-   tar xvzf valkey-8.0.0.tar.gz
-   cd valkey-8.0.0
-   make valkey-cli BUILD_TLS=yes
-   sudo install -m 755 src/valkey-cli /usr/local/bin/
+   sudo dnf install valkey -y
    ```
 
-1. After you download and install the valkey-cli utility, run the optional `make-test` command.
-
-1. To connect to a cluster with encryption and authentication enabled, enter this command:
+1. Confirm that the utility is installed.
 
    ```
-   valkey-cli -h {{Primary or Configuration Endpoint}} --tls -a {{'your-password'}} -p 6379
+   valkey-cli --version
+   ```
+
+1. To connect to a cluster with encryption and authentication enabled, enter this command. The `--askpass` option prompts you for the password instead of taking it on the command line, which keeps it out of your shell history and out of the process list.
+
+   ```
+   valkey-cli -h {{Primary or Configuration Endpoint}} --tls --askpass -p 6379
    ```
 **Note**
 If you are connecting to a cluster-mode enabled cache using the Configuration Endpoint, add the `-c` flag to enable cluster mode in the client. This allows the client to follow `MOVED` and `ASK` redirections automatically:
 
    ```
-   valkey-cli -c -h {{Configuration Endpoint}} --tls -a {{'your-password'}} -p 6379
+   valkey-cli -c -h {{Configuration Endpoint}} --tls --askpass -p 6379
    ```
 **Note**
-If you install redis6 on Amazon Linux 2023, you can now use the command `redis6-cli` instead of `valkey-cli`:
+If you install the redis6 package on Amazon Linux 2023 instead, use the command `redis6-cli` in place of `valkey-cli`:
 
    ```
-   redis6-cli -h Primary or Configuration Endpoint --tls -p 6379
+   redis6-cli -h {{Primary or Configuration Endpoint}} --tls -p 6379
    ```
+**Note**
+If your Linux distribution doesn't provide a Valkey package, you can build the utility from source instead. Install `gcc`, `make`, and the OpenSSL development package, download a current source release as described in [Install Valkey](https://valkey.io/topics/installation/) on the Valkey website, and then run `make valkey-cli BUILD_TLS=yes`. A client that you build from source doesn't receive package updates, so you must update it yourself as new releases become available.
 
 ## Encrypted connection with stunnel
 <a name="connect-tls.stunnel"></a>

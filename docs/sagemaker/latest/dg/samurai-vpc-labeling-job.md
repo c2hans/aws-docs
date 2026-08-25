@@ -96,8 +96,6 @@ Ground Truth must be able to perform the following Amazon S3 actions on the S3 b
 
 You can do this by adding a Ground Truth endpoint to the bucket policy like the one previously mentioned. The following table includes Ground Truth service endpoints for each AWS Region. Add an endpoint in the same [AWS Region](https://docs.aws.amazon.com/general/latest/gr/rande.html) you use to run your labeling job to your bucket policy.
 
-****
-
 | AWS Region | Ground Truth endpoint |
 | --- | --- |
 | us-east-2 | vpce-02569ba1c40aad0bc |

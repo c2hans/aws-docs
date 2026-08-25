@@ -12,7 +12,7 @@ Amazon Web Services (AWS) Prescriptive Guidance patterns provide step-by-step in
 + In the proof of concept and implementation phases, you can follow the step-by-step instructions provided in the pattern to migrate your workload to AWS. Each pattern includes details such as prerequisites, target reference architectures, tools, step-by-step tasks, best practices, troubleshooting, and code.
 + If you're already using the AWS Cloud, you can find patterns that will help you modernize, optimize, scale, and secure your use of cloud resources.
 
- To view lists of patterns by technical domain, use the following links or the filtering and search options on the [AWS Prescriptive Guidance home page](https://aws.amazon.com//prescriptive-guidance/).
+ To view lists of patterns by technical domain, use the following links or the filtering and search options on the [AWS Prescriptive Guidance home page](https://aws.amazon.com/prescriptive-guidance/).
 + [Cloud foundations](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/cloudfoundations-pattern-list.html)
 + [AI & machine learning](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/machinelearning-pattern-list.html)
 + [Analytics](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/analytics-pattern-list.html)
@@ -24,4 +24,4 @@ Amazon Web Services (AWS) Prescriptive Guidance patterns provide step-by-step in
 + [Management](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/management-pattern-list.html)
 + [Security, identity & compliance](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/securityandcompliance-pattern-list.html)
 
-To view all publications, including guides, strategies, and patterns, see the [AWS Prescriptive Guidance home page](https://aws.amazon.com//prescriptive-guidance/).
+To view all publications, including guides, strategies, and patterns, see the [AWS Prescriptive Guidance home page](https://aws.amazon.com/prescriptive-guidance/).

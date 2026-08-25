@@ -32,7 +32,7 @@ aft-account-provisioning-customizations
 
 1. Locate and complete the pending AWS CodeConnections for the new VCS provider, as described in [Update a pending connection](https://docs.aws.amazon.com/dtconsole/latest/userguide/connections-update.html), or in the AWS console, [`https://us-east-1.console.aws.amazon.com/codesuite/settings/connections`].
 
-1. Reference: [Post-deployment steps](https://docs.aws.amazon.com//controltower/latest/userguide/aft-post-deployment.html)
+1. Reference: [Post-deployment steps](https://docs.aws.amazon.com/controltower/latest/userguide/aft-post-deployment.html)
 
 **Note**
 Account pipelines retain the previous source until `aft-invoke-customizations` *Step Functions* is invoked. This invocation can be done as part of the upgrade or as part of the next customizations invocations.

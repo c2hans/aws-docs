@@ -28,6 +28,12 @@ Length Constraints: Fixed length of 12.
 Pattern: `^\d{12}$`
 Required: No
 
+ ** CreatedBySource **   <a name="AWSMarketplaceService-Type-OfferSummary-CreatedBySource"></a>
+The creation source of the offer.
+Type: String
+Valid Values: `Seller | AwsMarketplace`
+Required: No
+
  ** Name **   <a name="AWSMarketplaceService-Type-OfferSummary-Name"></a>
 The name of the offer.
 Type: String
@@ -67,6 +73,19 @@ Required: No
 The status of the offer.
 Type: String
 Valid Values: `Draft | Released`
+Required: No
+
+ ** TargetAgreementId **   <a name="AWSMarketplaceService-Type-OfferSummary-TargetAgreementId"></a>
+The target agreement ID of the offer.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 64.
+Pattern: `^(.)+$`
+Required: No
+
+ ** TargetAgreementIntent **   <a name="AWSMarketplaceService-Type-OfferSummary-TargetAgreementIntent"></a>
+The target agreement intent of the offer.
+Type: String
+Valid Values: `Renew`
 Required: No
 
  ** Targeting **   <a name="AWSMarketplaceService-Type-OfferSummary-Targeting"></a>

@@ -32,6 +32,8 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[GatewayLoadBalancerArns](#cfn-ec2-vpcendpointservice-gatewayloadbalancerarns)" : {{[ String, ... ]}},
       "[NetworkLoadBalancerArns](#cfn-ec2-vpcendpointservice-networkloadbalancerarns)" : {{[ String, ... ]}},
       "[PayerResponsibility](#cfn-ec2-vpcendpointservice-payerresponsibility)" : {{String}},
+      "[PrivateDnsName](#cfn-ec2-vpcendpointservice-privatednsname)" : {{String}},
+      "[PrivateDnsNameConfiguration](#cfn-ec2-vpcendpointservice-privatednsnameconfiguration)" : {{PrivateDnsNameConfiguration}},
       "[SupportedIpAddressTypes](#cfn-ec2-vpcendpointservice-supportedipaddresstypes)" : {{[ String, ... ]}},
       "[SupportedRegions](#cfn-ec2-vpcendpointservice-supportedregions)" : {{[ String, ... ]}},
       "[Tags](#cfn-ec2-vpcendpointservice-tags)" : {{[ Tag, ... ]}}
@@ -52,6 +54,9 @@ Properties:
   [NetworkLoadBalancerArns](#cfn-ec2-vpcendpointservice-networkloadbalancerarns): {{
     - String}}
   [PayerResponsibility](#cfn-ec2-vpcendpointservice-payerresponsibility): {{String}}
+  [PrivateDnsName](#cfn-ec2-vpcendpointservice-privatednsname): {{String}}
+  [PrivateDnsNameConfiguration](#cfn-ec2-vpcendpointservice-privatednsnameconfiguration): {{
+    PrivateDnsNameConfiguration}}
   [SupportedIpAddressTypes](#cfn-ec2-vpcendpointservice-supportedipaddresstypes): {{
     - String}}
   [SupportedRegions](#cfn-ec2-vpcendpointservice-supportedregions): {{
@@ -94,6 +99,18 @@ The entity that is responsible for the endpoint costs. The default is the endpoi
 *Allowed values*: `ServiceOwner`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
+`PrivateDnsName`  <a name="cfn-ec2-vpcendpointservice-privatednsname"></a>
+Property description not available.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`PrivateDnsNameConfiguration`  <a name="cfn-ec2-vpcendpointservice-privatednsnameconfiguration"></a>
+Information about the private DNS name for the service endpoint.
+*Required*: No
+*Type*: [PrivateDnsNameConfiguration](aws-properties-ec2-vpcendpointservice-privatednsnameconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
 `SupportedIpAddressTypes`  <a name="cfn-ec2-vpcendpointservice-supportedipaddresstypes"></a>
 The supported IP address types. The possible values are `ipv4` and `ipv6`.
 *Required*: No
@@ -131,6 +148,18 @@ For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::
 
 ####
 <a name="aws-resource-ec2-vpcendpointservice-return-values-fn--getatt-fn--getatt"></a>
+
+`PrivateDnsNameConfiguration.Name`  <a name="PrivateDnsNameConfiguration.Name-fn::getatt"></a>
+Property description not available.
+
+`PrivateDnsNameConfiguration.State`  <a name="PrivateDnsNameConfiguration.State-fn::getatt"></a>
+Property description not available.
+
+`PrivateDnsNameConfiguration.Type`  <a name="PrivateDnsNameConfiguration.Type-fn::getatt"></a>
+Property description not available.
+
+`PrivateDnsNameConfiguration.Value`  <a name="PrivateDnsNameConfiguration.Value-fn::getatt"></a>
+Property description not available.
 
 `ServiceId`  <a name="ServiceId-fn::getatt"></a>
 The ID of the endpoint service.

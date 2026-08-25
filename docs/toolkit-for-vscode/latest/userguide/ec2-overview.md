@@ -52,7 +52,7 @@ To view your existing Amazon EC2 instances from the AWS Toolkit, complete the fo
 
 There are 3 ways to create a new Amazon EC2 instance with the AWS Toolkit.
 
-Each work flow opens the **Launch an instance** wizard in the AWS console. For detailed information about launching a new Amazon EC2 instance from the **Launch an instance** wizard, see the [Launch an EC2 instance using the launch instance wizard in the console](https://docs.aws.amazon.com//AWSEC2/latest/UserGuide/ec2-launch-instance-wizard.html) topic in the *Amazon Elastic Compute Cloud* User Guide. To launch a new Amazon EC2 instance, complete one of the following procedures.
+Each work flow opens the **Launch an instance** wizard in the AWS console. For detailed information about launching a new Amazon EC2 instance from the **Launch an instance** wizard, see the [Launch an EC2 instance using the launch instance wizard in the console](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-launch-instance-wizard.html) topic in the *Amazon Elastic Compute Cloud* User Guide. To launch a new Amazon EC2 instance, complete one of the following procedures.
 
 ### Launching a new Amazon EC2 instance from the VS Code Command Palette
 <a name="w2aac17c31b9b9b7b1"></a>

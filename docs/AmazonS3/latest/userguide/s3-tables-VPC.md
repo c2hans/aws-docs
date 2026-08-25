@@ -69,7 +69,7 @@ aws s3tables list-tables --table-bucket-arn arn:aws:s3tables:{{us-east-1}}:{{123
 
 Use the following steps to configure a VPC network when using query engines.
 
-1. To get started, you can create or update a VPC. For more information, see [Create a VPC](https://docs.aws.amazon.com//vpc/latest/userguide/create-vpc.html#create-vpc-and-other-resources).
+1. To get started, you can create or update a VPC. For more information, see [Create a VPC](https://docs.aws.amazon.com/vpc/latest/userguide/create-vpc.html#create-vpc-and-other-resources).
 
 1.  For table and table bucket level operations that route to S3 Tables, create a new interface endpoint. For more information, see [Access an AWS service using an interface VPC endpoint](https://docs.aws.amazon.com/vpc/latest/privatelink/create-interface-endpoint.html#create-interface-endpoint-aws).
 

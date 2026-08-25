@@ -44,7 +44,15 @@ For complete documentation, see [Using SPARQL UPDATE LOAD to import data into Ne
 You can also use Gremlin's `g.io(URL).read()` step to read in data files in [GraphML](https://tinkerpop.apache.org/docs/current/dev/io/#graphml) (an XML format), [GraphSON](https://tinkerpop.apache.org/docs/current/dev/io/#graphson) (a JSON format), and other formats.
 
 ```
-g.io("s3://bucket/data.graphml").read().iterate()
+g.io("https://example.com/data/my-graph.graphml").read().iterate()
 ```
+
+Use the `g.io()` step to read from an HTTPS URL. To load a file that you store as an Amazon S3 object, first generate a presigned URL. Then pass that HTTPS URL to `g.io()`. You can generate a presigned URL with the AWS CLI `aws s3 presign` command:
+
+```
+aws s3 presign s3://amzn-s3-demo-bucket/data/vertices.graphml
+```
+
+For more information about presigned URLs, see [Download and upload objects with presigned URLs](https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-presigned-url.html) in the *Amazon S3 User Guide*.
 
  See [TinkerPop documentation](https://tinkerpop.apache.org/docs/current/reference/#io-step) for details.

@@ -15,7 +15,7 @@ Common scenarios for using events include:
 + To monitor when a user shares a resource with you or revokes the share.
 + To monitor whether a run fails or completes successfully.
 
-For more information about using EventBridge, see [What is Amazon EventBridge?](https://docs.aws.amazon.com//eventbridge/latest/userguide/eb-what-is.html)
+For more information about using EventBridge, see [What is Amazon EventBridge?](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html)
 
 **Topics**
 + [Set up EventBridge for HealthOmics](#eventbridge-setup-events)
@@ -46,7 +46,7 @@ You can use the default event bus for your AWS account or configure a custom eve
 ### Create an EventBridge rule
 <a name="eventbridge-create-rule"></a>
 
-The following procedure shows how to create a simple rule. For more information about rules, see [Rules in EventBridge](https://docs.aws.amazon.com//eventbridge/latest/userguide/eb-create-rule.html).
+The following procedure shows how to create a simple rule. For more information about rules, see [Rules in EventBridge](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-create-rule.html).
 
 1. Open the EventBridge console: [https://console.aws.amazon.com/events/](https://console.aws.amazon.com/events/).
 

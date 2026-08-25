@@ -55,8 +55,6 @@ To use the seasonal climatological forecaster, set the `kernel_type` hyperparame
 
 To determine what corresponds to a season for the seasonal NPTS and seasonal climatological forecaster, use the features listed in the following table. The table lists the derived features for the supported basic time frequencies, based on granularity. Amazon Forecast includes these feature time series, so you don't have to provide them.
 
-****
-
 | Frequency of the Time Series | Feature to Determine Seasonality |
 | --- | --- |
 | Minute | minute-of-hour |

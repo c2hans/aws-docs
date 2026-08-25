@@ -25,8 +25,6 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_drs-actions-as-permissions).
 
-****
-
 - **   AssociateSourceNetworkStack  **
   - **IAM action:**  [drs:AssociateSourceNetworkStack](#list_drs-action-AssociateSourceNetworkStack)
   - **Condition key:**
@@ -40,6 +38,18 @@ The following table maps API operations to the IAM actions they authorize. Only 
 - **   CreateLaunchConfigurationTemplate  **
   - **IAM action:**  [drs:CreateLaunchConfigurationTemplate](#list_drs-action-CreateLaunchConfigurationTemplate)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [drs:TagResource](#list_drs-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+
+- **   CreateRecoveryPlan  **
+  - **IAM action:**  [drs:CreateRecoveryPlan](#list_drs-action-CreateRecoveryPlan)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   CreateRecoveryPlanStep  **
+  - **IAM action:**  [drs:CreateRecoveryPlanStep](#list_drs-action-CreateRecoveryPlanStep)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
 
 - **   CreateReplicationConfigurationTemplate  **
   - **IAM action:**  [drs:CreateReplicationConfigurationTemplate](#list_drs-action-CreateReplicationConfigurationTemplate)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
@@ -69,6 +79,18 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   DeleteRecoveryInstance  **
   - **IAM action:**  [drs:DeleteRecoveryInstance](#list_drs-action-DeleteRecoveryInstance)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   DeleteRecoveryPlan  **
+  - **IAM action:**  [drs:DeleteRecoveryPlan](#list_drs-action-DeleteRecoveryPlan)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   DeleteRecoveryPlanStep  **
+  - **IAM action:**  [drs:DeleteRecoveryPlanStep](#list_drs-action-DeleteRecoveryPlanStep)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
@@ -169,6 +191,24 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Read
 
+- **   GetRecoveryPlan  **
+  - **IAM action:**  [drs:GetRecoveryPlan](#list_drs-action-GetRecoveryPlan)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   GetRecoveryPlanExecution  **
+  - **IAM action:**  [drs:GetRecoveryPlanExecution](#list_drs-action-GetRecoveryPlanExecution)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   GetRecoveryPlanStep  **
+  - **IAM action:**  [drs:GetRecoveryPlanStep](#list_drs-action-GetRecoveryPlanStep)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
 - **   GetReplicationConfiguration  **
   - **IAM action:**  [drs:GetReplicationConfiguration](#list_drs-action-GetReplicationConfiguration)
   - **Condition key:**
@@ -193,6 +233,24 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Read
 
+- **   ListRecoveryPlanExecutions  **
+  - **IAM action:**  [drs:ListRecoveryPlanExecutions](#list_drs-action-ListRecoveryPlanExecutions)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   ListRecoveryPlanSteps  **
+  - **IAM action:**  [drs:ListRecoveryPlanSteps](#list_drs-action-ListRecoveryPlanSteps)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   ListRecoveryPlans  **
+  - **IAM action:**  [drs:ListRecoveryPlans](#list_drs-action-ListRecoveryPlans)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
 - **   ListStagingAccounts  **
   - **IAM action:**  [drs:ListStagingAccounts](#list_drs-action-ListStagingAccounts)
   - **Condition key:**
@@ -207,6 +265,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   PutLaunchAction  **
   - **IAM action:**  [drs:PutLaunchAction](#list_drs-action-PutLaunchAction)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   ReorderRecoveryPlanSteps  **
+  - **IAM action:**  [drs:ReorderRecoveryPlanSteps](#list_drs-action-ReorderRecoveryPlanSteps)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
@@ -297,6 +361,18 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   UpdateRecoveryPlan  **
+  - **IAM action:**  [drs:UpdateRecoveryPlan](#list_drs-action-UpdateRecoveryPlan)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   UpdateRecoveryPlanStep  **
+  - **IAM action:**  [drs:UpdateRecoveryPlanStep](#list_drs-action-UpdateRecoveryPlanStep)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   UpdateReplicationConfiguration  **
   - **IAM action:**  [drs:UpdateReplicationConfiguration](#list_drs-action-UpdateReplicationConfiguration)
   - **Condition key:**
@@ -314,12 +390,16 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
 
-****
-
 - **   [AssociateSourceNetworkStack](https://docs.aws.amazon.com/drs/latest/APIReference/API_AssociateSourceNetworkStack.html)  **
   - **Description:** Grants permission to associate CloudFormation stack with source network
   - **Resource types (\*required):** [SourceNetworkResource\*](#list_drs-resource-SourceNetworkResource)
   - **Condition keys:** [aws:RequestTag/${TagKey}](#list_drs-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_drs-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_drs-aws_TagKeys)
+  - **Access level:** Write
+
+- **   [CancelRecoveryPlanExecution](https://docs.aws.amazon.com/drs/latest/APIReference/API_CancelRecoveryPlanExecution.html)  **
+  - **Description:** Grants permission to cancel a recovery plan execution
+  - **Resource types (\*required):** [RecoveryPlanExecutionResource\*](#list_drs-resource-RecoveryPlanExecutionResource)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_drs-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
 - **   [CreateExtendedSourceServer](https://docs.aws.amazon.com/drs/latest/APIReference/API_CreateExtendedSourceServer.html)  **
@@ -332,6 +412,18 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Description:** Grants permission to create launch configuration template
   - **Resource types (\*required):**
   - **Condition keys:** [aws:RequestTag/${TagKey}](#list_drs-aws_RequestTag___TagKey_)<br />[aws:TagKeys](#list_drs-aws_TagKeys)
+  - **Access level:** Write
+
+- **   [CreateRecoveryPlan](https://docs.aws.amazon.com/drs/latest/APIReference/API_CreateRecoveryPlan.html)  **
+  - **Description:** Grants permission to create a recovery plan
+  - **Resource types (\*required):**
+  - **Condition keys:** [aws:RequestTag/${TagKey}](#list_drs-aws_RequestTag___TagKey_)<br />[aws:TagKeys](#list_drs-aws_TagKeys)
+  - **Access level:** Write
+
+- **   [CreateRecoveryPlanStep](https://docs.aws.amazon.com/drs/latest/APIReference/API_CreateRecoveryPlanStep.html)  **
+  - **Description:** Grants permission to create a step in a recovery plan
+  - **Resource types (\*required):** [RecoveryPlanResource\*](#list_drs-resource-RecoveryPlanResource)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_drs-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
 - **   [CreateReplicationConfigurationTemplate](https://docs.aws.amazon.com/drs/latest/APIReference/API_CreateReplicationConfigurationTemplate.html)  **
@@ -368,6 +460,24 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Description:** Grants permission to delete recovery instance
   - **Resource types (\*required):** [RecoveryInstanceResource\*](#list_drs-resource-RecoveryInstanceResource)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_drs-aws_ResourceTag___TagKey_)<br />[drs:EC2InstanceARN](#list_drs-drs_EC2InstanceARN)
+  - **Access level:** Write
+
+- **   [DeleteRecoveryPlan](https://docs.aws.amazon.com/drs/latest/APIReference/API_DeleteRecoveryPlan.html)  **
+  - **Description:** Grants permission to delete a recovery plan
+  - **Resource types (\*required):** [RecoveryPlanResource\*](#list_drs-resource-RecoveryPlanResource)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_drs-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
+- **   [DeleteRecoveryPlanExecution](https://docs.aws.amazon.com/drs/latest/APIReference/API_DeleteRecoveryPlanExecution.html)  **
+  - **Description:** Grants permission to delete a recovery plan execution
+  - **Resource types (\*required):** [RecoveryPlanExecutionResource\*](#list_drs-resource-RecoveryPlanExecutionResource)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_drs-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
+- **   [DeleteRecoveryPlanStep](https://docs.aws.amazon.com/drs/latest/APIReference/API_DeleteRecoveryPlanStep.html)  **
+  - **Description:** Grants permission to delete a recovery plan step
+  - **Resource types (\*required):** [RecoveryPlanResource\*](#list_drs-resource-RecoveryPlanResource)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_drs-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
 - **   [DeleteReplicationConfigurationTemplate](https://docs.aws.amazon.com/drs/latest/APIReference/API_DeleteReplicationConfigurationTemplate.html)  **
@@ -466,6 +576,30 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_drs-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
+- **   [GetRecoveryPlan](https://docs.aws.amazon.com/drs/latest/APIReference/API_GetRecoveryPlan.html)  **
+  - **Description:** Grants permission to get a recovery plan
+  - **Resource types (\*required):** [RecoveryPlanResource\*](#list_drs-resource-RecoveryPlanResource)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_drs-aws_ResourceTag___TagKey_)
+  - **Access level:** Read
+
+- **   [GetRecoveryPlanExecution](https://docs.aws.amazon.com/drs/latest/APIReference/API_GetRecoveryPlanExecution.html)  **
+  - **Description:** Grants permission to get a recovery plan execution
+  - **Resource types (\*required):** [RecoveryPlanExecutionResource\*](#list_drs-resource-RecoveryPlanExecutionResource)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_drs-aws_ResourceTag___TagKey_)
+  - **Access level:** Read
+
+- **   [GetRecoveryPlanExecutionStep](https://docs.aws.amazon.com/drs/latest/APIReference/API_GetRecoveryPlanExecutionStep.html)  **
+  - **Description:** Grants permission to get a recovery plan execution step
+  - **Resource types (\*required):** [RecoveryPlanExecutionResource\*](#list_drs-resource-RecoveryPlanExecutionResource)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_drs-aws_ResourceTag___TagKey_)
+  - **Access level:** Read
+
+- **   [GetRecoveryPlanStep](https://docs.aws.amazon.com/drs/latest/APIReference/API_GetRecoveryPlanStep.html)  **
+  - **Description:** Grants permission to get a recovery plan step
+  - **Resource types (\*required):** [RecoveryPlanResource\*](#list_drs-resource-RecoveryPlanResource)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_drs-aws_ResourceTag___TagKey_)
+  - **Access level:** Read
+
 - **   [GetReplicationConfiguration](https://docs.aws.amazon.com/drs/latest/APIReference/API_GetReplicationConfiguration.html)  **
   - **Description:** Grants permission to get replication configuration
   - **Resource types (\*required):** [SourceServerResource\*](#list_drs-resource-SourceServerResource)
@@ -490,6 +624,30 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [SourceServerResource](#list_drs-resource-SourceServerResource) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_drs-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
+- **   [ListRecoveryPlanExecutionSteps](https://docs.aws.amazon.com/drs/latest/APIReference/API_ListRecoveryPlanExecutionSteps.html)  **
+  - **Description:** Grants permission to list recovery plan execution steps
+  - **Resource types (\*required):** [RecoveryPlanExecutionResource\*](#list_drs-resource-RecoveryPlanExecutionResource)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_drs-aws_ResourceTag___TagKey_)
+  - **Access level:** Read
+
+- **   [ListRecoveryPlanExecutions](https://docs.aws.amazon.com/drs/latest/APIReference/API_ListRecoveryPlanExecutions.html)  **
+  - **Description:** Grants permission to list recovery plan executions
+  - **Resource types (\*required):** [RecoveryPlanResource\*](#list_drs-resource-RecoveryPlanResource)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_drs-aws_ResourceTag___TagKey_)
+  - **Access level:** Read
+
+- **   [ListRecoveryPlanSteps](https://docs.aws.amazon.com/drs/latest/APIReference/API_ListRecoveryPlanSteps.html)  **
+  - **Description:** Grants permission to list recovery plan steps
+  - **Resource types (\*required):** [RecoveryPlanResource\*](#list_drs-resource-RecoveryPlanResource)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_drs-aws_ResourceTag___TagKey_)
+  - **Access level:** Read
+
+- **   [ListRecoveryPlans](https://docs.aws.amazon.com/drs/latest/APIReference/API_ListRecoveryPlans.html)  **
+  - **Description:** Grants permission to list recovery plans
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** Read
+
 - **   [ListStagingAccounts](https://docs.aws.amazon.com/drs/latest/APIReference/API_ListStagingAccounts.html)  **
   - **Description:** Grants permission to list staging accounts
   - **Resource types (\*required):**
@@ -508,9 +666,21 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [SourceServerResource](#list_drs-resource-SourceServerResource) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_drs-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
+- **   [ReorderRecoveryPlanSteps](https://docs.aws.amazon.com/drs/latest/APIReference/API_ReorderRecoveryPlanSteps.html)  **
+  - **Description:** Grants permission to reorder steps in a recovery plan
+  - **Resource types (\*required):** [RecoveryPlanResource\*](#list_drs-resource-RecoveryPlanResource)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_drs-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
 - **   [RetryDataReplication](https://docs.aws.amazon.com/drs/latest/APIReference/API_RetryDataReplication.html)  **
   - **Description:** Grants permission to retry data replication
   - **Resource types (\*required):** [SourceServerResource\*](#list_drs-resource-SourceServerResource)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_drs-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
+- **   [RetryRecoveryPlanExecutionStep](https://docs.aws.amazon.com/drs/latest/APIReference/API_RetryRecoveryPlanExecutionStep.html)  **
+  - **Description:** Grants permission to retry a recovery plan execution step
+  - **Resource types (\*required):** [RecoveryPlanExecutionResource\*](#list_drs-resource-RecoveryPlanExecutionResource)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_drs-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
@@ -529,6 +699,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
 - **   [StartRecovery](https://docs.aws.amazon.com/drs/latest/APIReference/API_StartRecovery.html)  **
   - **Description:** Grants permission to start recovery
   - **Resource types (\*required):** [SourceServerResource\*](#list_drs-resource-SourceServerResource)
+  - **Condition keys:** [aws:RequestTag/${TagKey}](#list_drs-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_drs-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_drs-aws_TagKeys)
+  - **Access level:** Write
+
+- **   [StartRecoveryPlanExecution](https://docs.aws.amazon.com/drs/latest/APIReference/API_StartRecoveryPlanExecution.html)  **
+  - **Description:** Grants permission to start a recovery plan execution
+  - **Resource types (\*required):** [RecoveryPlanResource\*](#list_drs-resource-RecoveryPlanResource)
   - **Condition keys:** [aws:RequestTag/${TagKey}](#list_drs-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_drs-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_drs-aws_TagKeys)
   - **Access level:** Write
 
@@ -573,6 +749,8 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [JobResource](#list_drs-resource-JobResource) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_drs-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_drs-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_drs-aws_TagKeys)<br />[drs:CreateAction](#list_drs-drs_CreateAction)
   - **Resource types (\*required):** [LaunchConfigurationTemplateResource](#list_drs-resource-LaunchConfigurationTemplateResource) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_drs-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_drs-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_drs-aws_TagKeys)<br />[drs:CreateAction](#list_drs-drs_CreateAction)
   - **Resource types (\*required):** [RecoveryInstanceResource](#list_drs-resource-RecoveryInstanceResource) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_drs-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_drs-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_drs-aws_TagKeys)<br />[drs:CreateAction](#list_drs-drs_CreateAction)<br />[drs:EC2InstanceARN](#list_drs-drs_EC2InstanceARN)
+  - **Resource types (\*required):** [RecoveryPlanExecutionResource](#list_drs-resource-RecoveryPlanExecutionResource) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_drs-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_drs-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_drs-aws_TagKeys)<br />[drs:CreateAction](#list_drs-drs_CreateAction)
+  - **Resource types (\*required):** [RecoveryPlanResource](#list_drs-resource-RecoveryPlanResource) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_drs-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_drs-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_drs-aws_TagKeys)<br />[drs:CreateAction](#list_drs-drs_CreateAction)
   - **Resource types (\*required):** [ReplicationConfigurationTemplateResource](#list_drs-resource-ReplicationConfigurationTemplateResource) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_drs-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_drs-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_drs-aws_TagKeys)<br />[drs:CreateAction](#list_drs-drs_CreateAction)
   - **Resource types (\*required):** [SourceNetworkResource](#list_drs-resource-SourceNetworkResource) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_drs-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_drs-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_drs-aws_TagKeys)<br />[drs:CreateAction](#list_drs-drs_CreateAction)
   - **Resource types (\*required):** [SourceServerResource](#list_drs-resource-SourceServerResource) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_drs-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_drs-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_drs-aws_TagKeys)<br />[drs:CreateAction](#list_drs-drs_CreateAction)
@@ -589,6 +767,8 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [JobResource](#list_drs-resource-JobResource) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_drs-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_drs-aws_TagKeys)
   - **Resource types (\*required):** [LaunchConfigurationTemplateResource](#list_drs-resource-LaunchConfigurationTemplateResource) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_drs-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_drs-aws_TagKeys)
   - **Resource types (\*required):** [RecoveryInstanceResource](#list_drs-resource-RecoveryInstanceResource) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_drs-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_drs-aws_TagKeys)<br />[drs:EC2InstanceARN](#list_drs-drs_EC2InstanceARN)
+  - **Resource types (\*required):** [RecoveryPlanExecutionResource](#list_drs-resource-RecoveryPlanExecutionResource) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_drs-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_drs-aws_TagKeys)
+  - **Resource types (\*required):** [RecoveryPlanResource](#list_drs-resource-RecoveryPlanResource) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_drs-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_drs-aws_TagKeys)
   - **Resource types (\*required):** [ReplicationConfigurationTemplateResource](#list_drs-resource-ReplicationConfigurationTemplateResource) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_drs-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_drs-aws_TagKeys)
   - **Resource types (\*required):** [SourceNetworkResource](#list_drs-resource-SourceNetworkResource) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_drs-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_drs-aws_TagKeys)
   - **Resource types (\*required):** [SourceServerResource](#list_drs-resource-SourceServerResource) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_drs-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_drs-aws_TagKeys)
@@ -612,6 +792,24 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_drs-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
+- **   [UpdateRecoveryPlan](https://docs.aws.amazon.com/drs/latest/APIReference/API_UpdateRecoveryPlan.html)  **
+  - **Description:** Grants permission to update a recovery plan
+  - **Resource types (\*required):** [RecoveryPlanResource\*](#list_drs-resource-RecoveryPlanResource)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_drs-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
+- **   [UpdateRecoveryPlanExecutionStep](https://docs.aws.amazon.com/drs/latest/APIReference/API_UpdateRecoveryPlanExecutionStep.html)  **
+  - **Description:** Grants permission to update a recovery plan execution step
+  - **Resource types (\*required):** [RecoveryPlanExecutionResource\*](#list_drs-resource-RecoveryPlanExecutionResource)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_drs-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
+- **   [UpdateRecoveryPlanStep](https://docs.aws.amazon.com/drs/latest/APIReference/API_UpdateRecoveryPlanStep.html)  **
+  - **Description:** Grants permission to update a recovery plan step
+  - **Resource types (\*required):** [RecoveryPlanResource\*](#list_drs-resource-RecoveryPlanResource)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_drs-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
 - **   [UpdateReplicationConfiguration](https://docs.aws.amazon.com/drs/latest/APIReference/API_UpdateReplicationConfiguration.html)  **
   - **Description:** Grants permission to update replication configuration
   - **Resource types (\*required):** [SourceServerResource\*](#list_drs-resource-SourceServerResource)
@@ -628,8 +826,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 <a name="list_drs-permission-only-actions"></a>
 
 The following actions are defined by AWS Elastic Disaster Recovery but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
-
-****
 
 - **   [AssociateFailbackClientToRecoveryInstanceForDrs](https://docs.aws.amazon.com/drs/latest/userguide/drs-apis.html)  **
   - **Description:** Grants permission to get associate failback client to recovery instance
@@ -876,13 +1072,13 @@ The following actions are defined by AWS Elastic Disaster Recovery but are not d
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
 
-****
-
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
 |  [JobResource](https://docs.aws.amazon.com/drs/latest/userguide/failback-overview.html)  | arn:${Partition}:drs:${Region}:${Account}:job/${JobID} | [aws:ResourceTag/${TagKey}](#list_drs-aws_ResourceTag___TagKey_) |
 |  [LaunchConfigurationTemplateResource](https://docs.aws.amazon.com/drs/latest/userguide/default-drs-launch-settings.html)  | arn:${Partition}:drs:${Region}:${Account}:launch-configuration-template/${LaunchConfigurationTemplateID} | [aws:ResourceTag/${TagKey}](#list_drs-aws_ResourceTag___TagKey_) |
 |  [RecoveryInstanceResource](https://docs.aws.amazon.com/drs/latest/userguide/recovery-instances.html)  | arn:${Partition}:drs:${Region}:${Account}:recovery-instance/${RecoveryInstanceID} | [aws:ResourceTag/${TagKey}](#list_drs-aws_ResourceTag___TagKey_)<br />[drs:EC2InstanceARN](#list_drs-drs_EC2InstanceARN) |
+|  [RecoveryPlanExecutionResource](https://docs.aws.amazon.com/drs/latest/userguide/recovery-plan-execution.html)  | arn:${Partition}:drs:${Region}:${Account}:recovery-plan-execution/${RecoveryPlanExecutionID} | [aws:ResourceTag/${TagKey}](#list_drs-aws_ResourceTag___TagKey_) |
+|  [RecoveryPlanResource](https://docs.aws.amazon.com/drs/latest/userguide/recovery-plan.html)  | arn:${Partition}:drs:${Region}:${Account}:recovery-plan/${RecoveryPlanID} | [aws:ResourceTag/${TagKey}](#list_drs-aws_ResourceTag___TagKey_) |
 |  [ReplicationConfigurationTemplateResource](https://docs.aws.amazon.com/drs/latest/userguide/replication-settings-template.html)  | arn:${Partition}:drs:${Region}:${Account}:replication-configuration-template/${ReplicationConfigurationTemplateID} | [aws:ResourceTag/${TagKey}](#list_drs-aws_ResourceTag___TagKey_) |
 |  [SourceNetworkResource](https://docs.aws.amazon.com/drs/latest/userguide/source-networks.html)  | arn:${Partition}:drs:${Region}:${Account}:source-network/${SourceNetworkID} | [aws:ResourceTag/${TagKey}](#list_drs-aws_ResourceTag___TagKey_) |
 |  [SourceServerResource](https://docs.aws.amazon.com/drs/latest/userguide/source-servers.html)  | arn:${Partition}:drs:${Region}:${Account}:source-server/${SourceServerID} | [aws:ResourceTag/${TagKey}](#list_drs-aws_ResourceTag___TagKey_) |
@@ -891,8 +1087,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_drs-policy-keys"></a>
 
 AWS Elastic Disaster Recovery defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

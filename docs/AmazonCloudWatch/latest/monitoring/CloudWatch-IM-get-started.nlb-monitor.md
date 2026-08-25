@@ -17,7 +17,7 @@ To create a monitor, or add a Network Load Balancer to an existing monitor, you 
 
 When you create the Network Load Balancer in the AWS Management Console, you can choose to have Internet Monitor add the new Network Load Balancer to an existing monitor. Under **Integrations**, choose Internet Monitor, and then choose **Add monitor**. Choose **Select an existing monitor**, and then enter a monitor name. Or choose **View monitors** to go to the Internet Monitor console, and then scroll down to see a list of available monitors.
 
-After you add the Network Load Balancer to a monitor, wait a few minutes, and then metrics for traffic to and from the load balancer will start being shown on the Internet Monitor console. To learn more about the **Status** and **Data processing status** values, see [Monitoring details in Internet Monitor (Configure page)Monitor details](CloudWatch-IM-configure.md).
+After you add the Network Load Balancer to a monitor, wait a few minutes, and then metrics for traffic to and from the load balancer will start being shown on the Internet Monitor console. To learn more about the **Status** and **Data processing status** values, see [Monitoring details in Internet Monitor (Configure page)](CloudWatch-IM-configure.md).
 
 You can edit the monitor at any time, to remove the load balancer or add another Network Load Balancer, or other resources. You can also change the percentage of traffic that you're monitoring, or make other changes. If you choose to remove the Network Load Balancer from the monitor, traffic from clients to that load balancer is no longer monitored by Internet Monitor.
 

@@ -29,7 +29,7 @@ If you have any questions or concerns, the AWS Support team is available on the 
 
 ## Improvements
 <a name="engine-releases.200296.Improvements"></a>
-+ Added the new `explain` feature to Neptune SPARQL queries to help you visualize the query plan and take steps to optimize it if necessary. For information, see [SPARQL `explain`SPARQL `SERVICE` Extension](sparql-explain.md).
++ Added the new `explain` feature to Neptune SPARQL queries to help you visualize the query plan and take steps to optimize it if necessary. For information, see [SPARQL `explain`](sparql-explain.md).
 + Improved SPARQL performance and reporting in various ways.
 + Improved Gremlin performance and behavior in various ways.
 + Improved the timing-out of long-running `drop( )` queries.

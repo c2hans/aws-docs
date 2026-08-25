@@ -125,8 +125,6 @@ The 30-minute maintenance window is selected at random from an 8-hour block of t
 
 The following table shows the time blocks for each AWS Region from which default maintenance windows are assigned.
 
-****
-
 | Region Name | Region | Time Block |
 | --- | --- | --- |
 | US East (N. Virginia) | us-east-1 | 03:00–11:00 UTC |

@@ -49,12 +49,12 @@ AND    wait_event IS NULL;
 ### DBLoadCPU metric
 <a name="apg-waits.cpu.context.dbloadcpu"></a>
 
-The Performance Insights metric for CPU is `DBLoadCPU`. The value for `DBLoadCPU` can differ from the value for the Amazon CloudWatch metric `CPUUtilization`. The latter metric is collected from the HyperVisor for a database instance.
+The database metric for CPU is `DBLoadCPU`, which is exposed through the Performance Insights API. The value for `DBLoadCPU` can differ from the value for the Amazon CloudWatch metric `CPUUtilization`. The latter metric is collected from the HyperVisor for a database instance.
 
 ### os.cpuUtilization metrics
 <a name="apg-waits.cpu.context.osmetrics"></a>
 
-Performance Insights operating-system metrics provide detailed information about CPU utilization. For example, you can display the following metrics:
+The database counter metrics include operating-system metrics that provide information about CPU utilization. For example, you can display the following metrics:
 + `os.cpuUtilization.nice.avg`
 + `os.cpuUtilization.total.avg`
 + `os.cpuUtilization.wait.avg`

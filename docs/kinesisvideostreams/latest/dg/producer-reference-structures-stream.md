@@ -20,8 +20,6 @@ The `StreamDefinition` object in the C\+\+ layer wraps the `StreamInfo` object i
 ### Member fields
 <a name="producer-reference-structures-stream-streaminfo-fields"></a>
 
-****
-
 | Field | Data type | Description | Default value |
 | --- | --- | --- | --- |
 | stream\_name | string | An optional stream name. For more information about the length of the stream name, see [Producer SDK quotas](limits.md#producer-sdk-limits) . Each stream should have a unique name. | If no name is specified, a name is generated randomly. |
@@ -58,8 +56,6 @@ The **ClientMetrics** object is filled by calling `getKinesisVideoMetrics`.
 ### Member fields
 <a name="producer-reference-structures-stream-clientmetrics-fields"></a>
 
-****
-
 | Field | Data type | Description |
 | --- | --- | --- |
 | version | UINT32 | The version of the structure, defined in the CLIENT\_METRICS\_CURRENT\_VERSION macro. |
@@ -77,8 +73,6 @@ The **StreamMetrics** object is filled by calling `getKinesisVideoMetrics`.
 
 ### Member fields
 <a name="producer-reference-structures-stream-clientmetrics-fields"></a>
-
-****
 
 | Field | Data type | Description |
 | --- | --- | --- |

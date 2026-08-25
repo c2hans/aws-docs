@@ -11,7 +11,7 @@ Cloning tables will copy a table’s key schema (and optionally GSI schema and i
 
 1. In the **Operation Builder**, select your connection and Region (Region selection is not available for DynamoDB local).
 
-1. Once you are connected to DynamoDB, browse your tables and select the table you want to clone.
+1. After you are connected to DynamoDB, browse your tables and select the table you want to clone.
 
 1. From the horizontal ellipsis menu, select the **Clone** option.
 

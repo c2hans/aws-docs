@@ -29,7 +29,7 @@ This policy provides full access to Amazon VPC Lattice and limited access to oth
 
 To view the permissions for this policy, see [VPCLatticeFullAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/VPCLatticeFullAccess.html) in the *AWS Managed Policy Reference*.
 
-To use other AWS services that VPC Lattice is integrated with and the entire suite of VPC Lattice features, you must have specific additional permissions. These permissions are not included in the `VPCLatticeFullAccess` managed policy because of the [confused deputy](https://docs.aws.amazon.com//IAM/latest/UserGuide/confused-deputy.html) privilege escalation risk. For more information, see [Additional required permissions for full access](security_iam_id-based-policies.md#security_iam_id-based-policy-additional-permissions).
+To use other AWS services that VPC Lattice is integrated with and the entire suite of VPC Lattice features, you must have specific additional permissions. These permissions are not included in the `VPCLatticeFullAccess` managed policy because of the [confused deputy](https://docs.aws.amazon.com/IAM/latest/UserGuide/confused-deputy.html) privilege escalation risk. For more information, see [Additional required permissions for full access](security_iam_id-based-policies.md#security_iam_id-based-policy-additional-permissions).
 
 ## AWS managed policy: VPCLatticeReadOnlyAccess
 <a name="vpc-lattice-read-onlyaccess-policy"></a>

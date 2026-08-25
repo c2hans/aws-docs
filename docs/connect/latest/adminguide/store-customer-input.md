@@ -103,7 +103,7 @@ To guarantee the **Store customer input** block in second contact flow captures 
 ## Touchtone buffering
 <a name="store-customer-input-touchtone-buffering"></a>
 
-When touchtone buffering is enabled via the [Set Touchtone Buffer Behavior](set-touchtone-buffer-behavior.md) block, the **Store customer input** block integrates with the buffer:
+When touchtone buffering is enabled through the [Set Touchtone Buffer Behavior](set-touchtone-buffer-behavior.md) block, the **Store customer input** block integrates with the buffer:
 + Buffered digits are automatically used as input. If the buffer already contains enough digits to meet the configured maximum, the prompt is skipped entirely and the flow proceeds immediately.
 + If the buffer contains fewer digits than the configured maximum, the block waits for the customer to enter the remaining digits using the inter-digit timeout. For example, if the maximum is 6 digits and the buffer contains 4, the block collects 2 more from the customer before proceeding.
 + Custom terminating keypresses are respected. If the terminating keypress appears in the buffer, input collection ends at that point.

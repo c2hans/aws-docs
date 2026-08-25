@@ -42,8 +42,8 @@ When you deploy a model with JumpStart, you can specify an IAM role, Amazon VPC,
 You can select an IAM role that is passed as part of training jobs and hosting jobs. SageMaker AI uses this role to access training data and model artifacts. If you don't select an IAM role, SageMaker AI deploys the model using your Studio Classic runtime role. For more information about IAM roles, see [AWS Identity and Access Management for Amazon SageMaker AI](security-iam.md).
 
 The role that you pass must have access to the resources that the model needs, and must include all of the following.
-+ For training jobs: [CreateTrainingJob API: Execution Role Permissions](https://docs.aws.amazon.com//sagemaker/latest/dg/sagemaker-roles.html#sagemaker-roles-createtrainingjob-perms).
-+ For hosting jobs: [CreateModel API: Execution Role Permissions](https://docs.aws.amazon.com//sagemaker/latest/dg/sagemaker-roles.html#sagemaker-roles-createmodel-perms).
++ For training jobs: [CreateTrainingJob API: Execution Role Permissions](https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-roles.html#sagemaker-roles-createtrainingjob-perms).
++ For hosting jobs: [CreateModel API: Execution Role Permissions](https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-roles.html#sagemaker-roles-createmodel-perms).
 
 **Note**
 You can scope down the Amazon S3 permissions granted in each of the following roles. Do this by using the ARN of your Amazon Simple Storage Service (Amazon S3) bucket and the JumpStart Amazon S3 bucket.
@@ -131,7 +131,7 @@ If you do not select an Amazon VPC, no Amazon VPC is used.
 
 **Find VPC**
 
-If you select this option, you must select an existing Amazon VPC from the dropdown list. After you select an Amazon VPC, you must select a subnet and security group for your Amazon VPC. For more information about subnets and security groups, see [Overview of VPCs and subnets](https://docs.aws.amazon.com//vpc/latest/userguide/VPC_Subnets.html).
+If you select this option, you must select an existing Amazon VPC from the dropdown list. After you select an Amazon VPC, you must select a subnet and security group for your Amazon VPC. For more information about subnets and security groups, see [Overview of VPCs and subnets](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Subnets.html).
 
  ![JumpStart Security Settings VPC section with Find VPC selected.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/jumpstart/jumpstart-deploy-security-findvpc.png)
 
@@ -144,7 +144,7 @@ If you select this option, you must manually select the subnet and security grou
 ### Encryption keys
 <a name="jumpstart-config-security-encryption"></a>
 
-You can select an AWS KMS key that is passed as part of training jobs and hosting jobs. SageMaker AI uses this key to encrypt the Amazon EBS volume for the container, and the repackaged model in Amazon S3 for hosting jobs and the output for training jobs. For more information about AWS KMS keys, see [AWS KMS keys](https://docs.aws.amazon.com//kms/latest/developerguide/concepts.html#kms_keys).
+You can select an AWS KMS key that is passed as part of training jobs and hosting jobs. SageMaker AI uses this key to encrypt the Amazon EBS volume for the container, and the repackaged model in Amazon S3 for hosting jobs and the output for training jobs. For more information about AWS KMS keys, see [AWS KMS keys](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#kms_keys).
 
 The key that you pass must trust the IAM role that you pass. If you do not specify an IAM role, the AWS KMS key must trust your Studio Classic runtime role.
 

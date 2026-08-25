@@ -94,7 +94,7 @@ Before you begin, make sure that you have an IAM role that grants the admin user
 
 You can add keys that already exist in AWS KMS to your Amazon Quick account, so that you can encrypt your Amazon Quick data.
 
-To learn more about how you can create a key to use in Amazon Quick, see the [AWS Key Management Service Developer Guide](https://docs.aws.amazon.com//kms/latest/developerguide/overview.html).
+To learn more about how you can create a key to use in Amazon Quick, see the [AWS Key Management Service Developer Guide](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html).
 
 **To add a new customer managed KMS key to your Amazon Quick account.**
 
@@ -123,7 +123,7 @@ To learn more about which data can be managed with the key, see [Encrypting your
 
 **Verify the customer managed KMS key that's currently used by a SPICE dataset**
 
-1. Navigate to your CloudTrail log. For more information, see [Logging Amazon Quick Sight information with AWS CloudTrail](incident-response-logging-and-monitoring-qs.md#logging-using-cloudtrail).
+1. Navigate to your CloudTrail log. For more information, see [Logging Amazon Quick operations with AWS CloudTrail](monitoring-cloudtrail.md#logging-using-cloudtrail).
 
 1. Locate the most recent grant events for the SPICE dataset, using the following search arguments:
    + The event name (`eventName`) contains `Grant`.
@@ -170,7 +170,7 @@ To learn more about which data can be managed with the key, see [Encrypting your
 
 **Verify the customer managed KMS key that's currently used when generating report artifacts**
 
-1. Navigate to your CloudTrail log. For more information, see [Logging Amazon Quick Sight information with AWS CloudTrail](incident-response-logging-and-monitoring-qs.md#logging-using-cloudtrail).
+1. Navigate to your CloudTrail log. For more information, see [Logging Amazon Quick operations with AWS CloudTrail](monitoring-cloudtrail.md#logging-using-cloudtrail).
 
 1. Locate the most recent `GenerateDataKey` events for the report execution, using the following search arguments:
    + The event name (`eventName`) contains `GenerateDataKey` or `Decrypt`.
@@ -207,7 +207,7 @@ To learn more about which data can be managed with the key, see [Encrypting your
 
 **Verify the customer managed KMS key that's currently used for data-source credentials**
 
-1. Navigate to your CloudTrail log. For more information, see [Logging Amazon Quick Sight information with AWS CloudTrail](incident-response-logging-and-monitoring-qs.md#logging-using-cloudtrail).
+1. Navigate to your CloudTrail log. For more information, see [Logging Amazon Quick operations with AWS CloudTrail](monitoring-cloudtrail.md#logging-using-cloudtrail).
 
 1. Locate the most recent `Encrypt` events for the data source, using the following search arguments:
    + The event name (`eventName`) is `Encrypt`.

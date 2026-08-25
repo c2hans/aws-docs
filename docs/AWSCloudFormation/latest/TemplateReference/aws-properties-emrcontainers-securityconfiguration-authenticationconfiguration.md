@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::EMRContainers::SecurityConfiguration AuthenticationConfiguration
 <a name="aws-properties-emrcontainers-securityconfiguration-authenticationconfiguration"></a>
 
-<a name="aws-properties-emrcontainers-securityconfiguration-authenticationconfiguration-description"></a>The `AuthenticationConfiguration` property type specifies Property description not available. for an [AWS::EMRContainers::SecurityConfiguration](aws-resource-emrcontainers-securityconfiguration.md).
+Contains the authentication settings for a security configuration, including Identity Center and IAM configuration options.
 
 ## Syntax
 <a name="aws-properties-emrcontainers-securityconfiguration-authenticationconfiguration-syntax"></a>
@@ -38,13 +38,13 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-emrcontainers-securityconfiguration-authenticationconfiguration-properties"></a>
 
 `IAMConfiguration`  <a name="cfn-emrcontainers-securityconfiguration-authenticationconfiguration-iamconfiguration"></a>
-Property description not available.
+The IAM configuration to use for authentication.
 *Required*: No
 *Type*: [IAMConfiguration](aws-properties-emrcontainers-securityconfiguration-iamconfiguration.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `IdentityCenterConfiguration`  <a name="cfn-emrcontainers-securityconfiguration-authenticationconfiguration-identitycenterconfiguration"></a>
-Property description not available.
+The IAM Identity Center configuration to use for authentication.
 *Required*: No
 *Type*: [IdentityCenterConfiguration](aws-properties-emrcontainers-securityconfiguration-identitycenterconfiguration.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)

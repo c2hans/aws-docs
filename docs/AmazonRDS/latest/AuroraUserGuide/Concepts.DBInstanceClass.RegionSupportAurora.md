@@ -42,14 +42,12 @@ You can use the AWS CLI to determine which DB instance classes are supported for
 
 To use the AWS CLI examples following, enter valid values for the DB engine, DB engine version, DB instance class, and AWS Region. The following table shows the valid DB engine values.
 
-****
-
 | Engine name | Engine value in CLI commands | More information about versions |
 | --- | --- | --- |
 | MySQL 5.7-compatible and 8.0-compatible Aurora | `aurora-mysql` | [ Database engine updates for Amazon Aurora MySQL version 2](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraMySQLReleaseNotes/AuroraMySQL.Updates.20Updates.html) and [ Database engine updates for Amazon Aurora MySQL version 3](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraMySQLReleaseNotes/AuroraMySQL.Updates.30Updates.html) in the *Release Notes for Aurora MySQL* |
 | Aurora PostgreSQL | `aurora-postgresql` | [*Release Notes for Aurora PostgreSQL*](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraPostgreSQLReleaseNotes/Welcome.html) |
 
-For information about AWS Region names, see [AWS RegionsAvailability Zones](Concepts.RegionsAndAvailabilityZones.md#Concepts.RegionsAndAvailabilityZones.Regions).
+For information about AWS Region names, see [AWS Regions](Concepts.RegionsAndAvailabilityZones.md#Concepts.RegionsAndAvailabilityZones.Regions).
 
 The following examples demonstrate how to determine DB instance class support in an AWS Region using the [describe-orderable-db-instance-options](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-orderable-db-instance-options.html) AWS CLI command.
 

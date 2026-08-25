@@ -5,11 +5,31 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/common-ccp-iss
 # Contact Control Panel (CCP) Issues
 <a name="common-ccp-issues"></a>
 
-This topic is for IT administrators who are experienced with investigating issues with their network. It discusses the most common issues agents may encounter when using the Contact Control Panel (CCP).
+This topic is for IT administrators who are experienced with investigating issues with their network. It discusses the most common issues agents might encounter when using the Contact Control Panel (CCP).
 
 For example, the most common issues are typically poor audio quality due to the network, and hardware issues, such as microphone access.
 
 This topic explains how to investigate, diagnose, and fix the most common CCP issues.
+
+The following list shows the error messages that appear as red banners in the CCP, and provides links to their solutions:
+
+**Microphone is not accessible**
+The CCP cannot access the agent microphone, which can cause missed calls. To resolve this error, see [CCP browser microphone access](#microphone-access-issues).
+
+**Initialization Failed**
+The agent environment is missing required allowlist domains or IP addresses. To resolve this error, see [CCP initialization issues](#ccp-initialization-issues).
+
+**Failed to establish softphone connection**
+The browser cannot establish a media channel with Connect Customer softphone media, often because the agent network blocks the TurnNLB domain or cannot resolve DNS. To resolve this error, see [CCP WebRTC issues](#ccp-webrtc-issues).
+
+**Call failed due to a browser-side WebRTC issue**
+The CCP cannot collect ICE candidates because a request to Connect Customer softphone media times out. To resolve this error, see [CCP WebRTC issues](#ccp-webrtc-issues).
+
+**Invalid outbound configuration**
+The instance does not have outbound calling enabled, or the queue has no outbound caller ID. To resolve this error, see [CCP outbound configuration issues](#ccp-outbound-issues).
+
+**Invalid number**
+The dialed number does not use E.164 format, or your instance does not allow the destination for outbound calling. To resolve this error, see [CCP invalid number issues](#ccp-invalidnumber-issues).
 
 **Topics**
 + [CCP browser microphone access](#microphone-access-issues)
@@ -27,7 +47,7 @@ The CCP conforms to microphone usage guidance that's specific to their browser.
 + The CCP has access to connect to the agent's microphone only when the permission is granted for the current session. The permission is stored in the browser's memory.
 + In addition, Firefox requires the CCP tab to be in focus in order for microphone and audio to be passed through.
 
-Agents may encounter missed call scenarios when the CCP tab has no microphone access. Missed calls can also happen when the CCP tab is not in focus, for example, when the agent is focused on a different tab or application.
+Agents might encounter missed call scenarios when the CCP tab has no microphone access. Missed calls can also happen when the CCP tab is not in focus, for example, when the agent is focused on a different tab or application.
 + Error message title: **Microphone is not accessible**
 + Message: **Enable access to the microphone and refresh the page**
 
@@ -37,7 +57,7 @@ The following image shows an example of a missed call scenario due to the CCP ta
 
 ### How to fix
 <a name="howtofix-microphone-access-issues"></a>
-+ If your agents are using Firefox, ensure they know to focus on the CCP tab when they accept and connect to a voice contact.
++ If your agents are using Firefox, make sure they know to focus on the CCP tab when they accept and connect to a voice contact.
 + Use the [End Point Connectivity Tool](check-connectivity-tool.md) to determine if the browser has appropriate access to media devices such as microphone, speakers, or headset.
 
 ## CCP initialization issues
@@ -68,7 +88,7 @@ WebRTC issues occur when a request to Connect Customer Soft-phone Media (`TurnNl
 
 ### How to fix
 <a name="howtofix-webrtc-issues"></a>
-+ Check Firewall and/or NAT settings to see if UDP 3478 outbound traffic to Amazon Connect Softphone Media is allowed. See [Set up your network](ccp-networking.md).
++ Check Firewall or NAT settings to see if UDP 3478 outbound traffic to Amazon Connect Softphone Media is allowed. See [Set up your network](ccp-networking.md).
 + Use the [End Point Connectivity Tool](check-connectivity-tool.md) to determine if agents are able to successfully connect to all the required endpoints.
 + Because errors can occur due to poor networking conditions, and then result in latency or outages, we recommend also checking your agent networking connections.
 
@@ -77,7 +97,7 @@ WebRTC issues occur when a request to Connect Customer Soft-phone Media (`TurnNl
 
  **Issue Description**
 
- After performing a Windows 11 system reboot, your agents may experience complete audio failure ("dead air") during your first call, where neither your agent nor the customer can hear each other.
+ After performing a Windows 11 system reboot, your agents might experience complete audio failure ("dead air") during your first call, where neither your agent nor the customer can hear each other.
 
  **Root Cause**
 
@@ -147,7 +167,7 @@ The following image shows an example of a invalid number message on the CCP.
 ## One-way audio from customers
 <a name="ccp-oneway-issues"></a>
 
-If an agent can hear the customer, but the customer can't hear the agent, this may be the result of an application taking exclusive control of agent's mic/speaker.
+If an agent can hear the customer, but the customer can't hear the agent, this might be the result of an application taking exclusive control of agent's mic/speaker.
 
 ### How to fix
 <a name="howtofix-oneway-issues"></a>

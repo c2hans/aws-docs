@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon ARC Region switch provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="arc-region-switch-GetPlan"></a>[GetPlan](https://docs.aws.amazon.com/arc-region-switch/latest/api/API_GetPlan.html) | Get information about plans in all AWS Regions using a control plane | Read |

@@ -15,8 +15,6 @@ Amazon Keyspaces (for Apache Cassandra) supports a variety of built-in functions
 
 A *scalar function* performs a calculation on a single value and returns the result as a single value. Amazon Keyspaces supports the following scalar functions.
 
-****
-
 | Function | Description |
 | --- | --- |
 | `blobAsType` | Returns a value of the specified data type. |

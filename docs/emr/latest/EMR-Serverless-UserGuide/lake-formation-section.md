@@ -10,8 +10,6 @@ You can configure EMR Serverless applications to use Lake Formation with either 
 ## Feature availability
 <a name="emr-s-lf-features"></a>
 
-****
-
 | Feature | Available from |
 | --- | --- |
 | Read operations (SELECT, DESCRIBE) for Hive, Iceberg tables | EMR 7.2\+ |

@@ -15,7 +15,7 @@ iam_role 'arn:aws:iam::0123456789012:role/MyRedshiftRole'
 dateformat 'auto';
 ```
 
-When used with the `'auto'` argument for DATEFORMAT and TIMEFORMAT, COPY recognizes and converts the date and time formats listed in the table in [DATEFORMAT and TIMEFORMAT stringsExample](r_DATEFORMAT_and_TIMEFORMAT_strings.md). In addition, the `'auto'` argument recognizes the following formats that aren't supported when using a DATEFORMAT and TIMEFORMAT string.
+When used with the `'auto'` argument for DATEFORMAT and TIMEFORMAT, COPY recognizes and converts the date and time formats listed in the table in [DATEFORMAT and TIMEFORMAT strings](r_DATEFORMAT_and_TIMEFORMAT_strings.md). In addition, the `'auto'` argument recognizes the following formats that aren't supported when using a DATEFORMAT and TIMEFORMAT string.
 
 | Format  | Example of Valid Input String  |
 | --- | --- |

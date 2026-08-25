@@ -14,8 +14,6 @@ Create a resource share through Resource Access Manager (RAM) to share supported
 ## Change Type Details
 <a name="ct-054ysptoo4gyk-DARc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-054ysptoo4gyk |

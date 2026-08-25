@@ -7,7 +7,7 @@ End of support notice: On October 7, 2026, AWS will end support for AWS Proton. 
 # View template data
 <a name="template-view"></a>
 
-You can view lists of templates with details and view individual templates with detail data by using the [AWS Proton console](https://console.aws.amazon.com//proton/) and AWS CLI.
+You can view lists of templates with details and view individual templates with detail data by using the [AWS Proton console](https://console.aws.amazon.com/proton/) and AWS CLI.
 
 *Customer managed* environment template data includes the `provisioned` parameter with the value `CUSTOMER_MANAGED`.
 

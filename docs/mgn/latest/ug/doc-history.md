@@ -11,10 +11,9 @@ The following is the latest major policy updates for AWS Transform MGN. We also 
 
 For additional details regarding new features and major updates, [see the MGN release notes](mgn-release-notes.md).
 
-****
-
 | Change | Description | Date |
 | --- | --- | --- |
+| Added Oracle Linux 9.6 support | Added Oracle Linux 9.6 to the list of supported Linux operating systems. | August 23, 2026 |
 | Added Amazon Linux 2023 with kernel 6.18 support | Added Amazon Linux 2023 with kernel 6.18 to the list of supported Linux operating systems. | August 5, 2026 |
 | Added Windows 11 to the no-rescan upon reboot supported OS list | Added Windows 11 to the [no-rescan upon reboot](Agent-Related-FAQ.md#agent-no-rescan) supported OS list. | June 18, 2026 |
 | Updated no-rescan supported OS list | Added Windows Server 2025, CentOS Stream 9, and CentOS Stream 10 to the [no-rescan upon reboot](Agent-Related-FAQ.md#agent-no-rescan) supported OS list. | June 17, 2026 |

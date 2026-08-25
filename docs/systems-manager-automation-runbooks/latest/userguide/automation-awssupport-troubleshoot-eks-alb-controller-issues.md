@@ -199,7 +199,7 @@ Attach the following IAM policy to grant the required permissions:
                }]
            }
    ```
-Configure access entry for your Amazon EKS cluster. This is a mandatory requirement for the automation. For steps to configure authentication mode for access entries, see [Setting up access entries](https://docs.aws.amazon.com//eks/latest/userguide/setting-up-access-entries.html).
+Configure access entry for your Amazon EKS cluster. This is a mandatory requirement for the automation. For steps to configure authentication mode for access entries, see [Setting up access entries](https://docs.aws.amazon.com/eks/latest/userguide/setting-up-access-entries.html).
 In the Amazon EKS console, navigate to your cluster and follow these steps:
 Under **Access** section, verify your authentication configuration is set to either `API` or `API_AND_CONFIG_MAP`.
 Choose **Create access entry** and configure:
@@ -391,10 +391,10 @@ Note the ARN of this role as you will need it for the `LambdaRoleArn` input para
 
 Systems Manager Automation
 + [Run this Automation (console)](https://console.aws.amazon.com/systems-manager/documents/AWSSupport-TroubleshootEKSALBControllerIssues/description)
-+ [Run an automation](https://docs.aws.amazon.com//systems-manager/latest/userguide/automation-working-executing.html)
-+ [Setting up Automation](https://docs.aws.amazon.com//systems-manager/latest/userguide/automation-setup.html)
++ [Run an automation](https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-working-executing.html)
++ [Setting up Automation](https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-setup.html)
 + [Support Automation Workflows](https://aws.amazon.com/premiumsupport/technology/saw/)
 
 Documentation related to AWS Load Balancer Controller
-+ [AWS Load Balancer Controller](https://docs.aws.amazon.com//eks/latest/userguide/aws-load-balancer-controller.html)
-+ [Setting up access entries](https://docs.aws.amazon.com//eks/latest/userguide/setting-up-access-entries.html)
++ [AWS Load Balancer Controller](https://docs.aws.amazon.com/eks/latest/userguide/aws-load-balancer-controller.html)
++ [Setting up access entries](https://docs.aws.amazon.com/eks/latest/userguide/setting-up-access-entries.html)

@@ -56,7 +56,7 @@ Pattern: `^[\w\.\-\:\/ ]*$`
 Required: No
 
  ** [DocumentFormat](#API_UpdateDocument_RequestSyntax) **   <a name="systemsmanager-UpdateDocument-request-DocumentFormat"></a>
-Specify the document format for the new document version. Systems Manager supports JSON and YAML documents. JSON is the default format.
+Specify the document format for the new document version. The document format can be JSON, YAML, or TEXT. JSON is the default format.
 Type: String
 Valid Values: `YAML | JSON | TEXT`
 Required: No

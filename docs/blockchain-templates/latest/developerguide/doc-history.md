@@ -11,8 +11,6 @@ The following table describes the documentation changes for this guide.
 
 **Latest documentation update:** May 1, 2019
 
-****
-
 | Change | Description | Date |
 | --- | --- | --- |
 | Discontinuation of AWS Blockchain Templates. | AWS Blockchain Templates was discontinued on April 30, 2019. No further updates to this service or this supporting documentation will be made. For the best Managed Blockchain experience on AWS, we recommend that you use [ Amazon Managed Blockchain (AMB)](https://aws.amazon.com/managed-blockchain/). | May 1, 2019 |

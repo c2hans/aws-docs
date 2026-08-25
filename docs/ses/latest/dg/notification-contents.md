@@ -43,7 +43,7 @@ Each bounce, complaint, or delivery notification contains information about the 
 |  timestamp  | The time at which the original message was sent (in ISO8601 format). |
 |  messageId  | A unique ID that SES assigned to the message. SES returned this value to you when you sent the message. This message ID was assigned by SES. You can find the message ID of the original email in the `headers` field of the `mail` object.  |
 |  source  | The email address from which the original message was sent (the envelope MAIL FROM address). |
-|  sourceArn  | The Amazon Resource Name (ARN) of the identity that was used to send the email. In the case of sending authorization, the `sourceArn` is the ARN of the identity that the identity owner authorized the delegate sender to use to send the email. For more information about sending authorization, see [Email authentication methodsUsing sending authorization](sending-authorization.md). |
+|  sourceArn  | The Amazon Resource Name (ARN) of the identity that was used to send the email. In the case of sending authorization, the `sourceArn` is the ARN of the identity that the identity owner authorized the delegate sender to use to send the email. For more information about sending authorization, see [Email authentication methods](sending-authorization.md). |
 |  sourceIp  | The originating public IP address of the client that performed the email sending request to SES. |
 |  sendingAccountId  | The AWS account ID of the account that was used to send the email. In the case of sending authorization, the `sendingAccountId` is the delegate sender's account ID. |
 |  callerIdentity  | The IAM identity of the SES user who sent the email. |

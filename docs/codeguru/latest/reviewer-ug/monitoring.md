@@ -20,8 +20,6 @@ For more information about creating and using CloudWatch alarms and metrics, see
 
 You can track the following metric for each dimension over a period of time.
 
-****
-
 |  Metric  |  Description  |
 | --- | --- |
 | RecommendationsPublishedCount | The number of recommendations over a period of time per `ProviderType`, `CodeReviewType`, or `RepositoryName` for completed code reviews.<br />Units: Count<br />Valid CloudWatch statistic: Count<br />Valid CloudWatch period: 1 hour |

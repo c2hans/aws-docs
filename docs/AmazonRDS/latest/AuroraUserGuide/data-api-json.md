@@ -33,8 +33,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/data-ap
 
  The SQL values in the result set are mapped to a smaller set of JSON types. The values are represented in JSON as strings, numbers, and some special constants such as `true`, `false`, and `null`. You can convert these values into variables in your application, using strong or weak typing as appropriate for your programming language.
 
-****
-
 |   JDBC data type   |   JSON data type   |
 | --- | --- |
 |  `INTEGER`, `TINYINT`, `SMALLINT`, `BIGINT`  |  Number by default. String if the `LongReturnType` option is set to `STRING`.  |

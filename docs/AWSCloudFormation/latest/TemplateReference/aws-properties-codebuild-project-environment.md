@@ -124,7 +124,7 @@ Applicable environment types are `LINUX_CONTAINER`, `ARM_CONTAINER`, `LINUX_EC2`
 The image tag or image digest that identifies the Docker image to use for this build project. Use the following formats:
 + For an image tag: `<registry>/<repository>:<tag>`. For example, in the Docker repository that CodeBuild uses to manage its Docker images, this would be `aws/codebuild/standard:4.0`.
 + For an image digest: `<registry>/<repository>@<digest>`. For example, to specify an image with the digest "sha256:cbbf2f9a99b47fc460d422812b6a5adff7dfee951d8fa2e4a98caa0382cfbdbf," use `<registry>/<repository>@sha256:cbbf2f9a99b47fc460d422812b6a5adff7dfee951d8fa2e4a98caa0382cfbdbf`.
-For more information, see [Docker images provided by CodeBuild](https://docs.aws.amazon.com//codebuild/latest/userguide/build-env-ref-available.html) in the *AWS CodeBuild user guide*.
+For more information, see [Docker images provided by CodeBuild](https://docs.aws.amazon.com/codebuild/latest/userguide/build-env-ref-available.html) in the *AWS CodeBuild user guide*.
 *Required*: Yes
 *Type*: String
 *Minimum*: `1`
@@ -164,7 +164,7 @@ If the operating system's base image is Alpine Linux and the previous command do
 `Type`  <a name="cfn-codebuild-project-environment-type"></a>
 The type of build environment to use for related builds.
 If you're using compute fleets during project creation, `type` will be ignored.
-For more information, see [Build environment compute types](https://docs.aws.amazon.com//codebuild/latest/userguide/build-env-ref-compute-types.html) in the *AWS CodeBuild user guide*.
+For more information, see [Build environment compute types](https://docs.aws.amazon.com/codebuild/latest/userguide/build-env-ref-compute-types.html) in the *AWS CodeBuild user guide*.
 *Required*: Yes
 *Type*: String
 *Allowed values*: `WINDOWS_CONTAINER | LINUX_CONTAINER | LINUX_GPU_CONTAINER | ARM_CONTAINER | WINDOWS_SERVER_2019_CONTAINER | WINDOWS_SERVER_2022_CONTAINER | LINUX_LAMBDA_CONTAINER | ARM_LAMBDA_CONTAINER | LINUX_EC2 | ARM_EC2 | WINDOWS_EC2 | MAC_ARM`

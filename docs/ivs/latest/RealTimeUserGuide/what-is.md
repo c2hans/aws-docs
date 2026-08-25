@@ -9,7 +9,7 @@ Amazon Interactive Video Service (IVS) Real-Time Streaming gives you everything 
 
 Strengths:
 + Real-time latency — Build applications for latency-sensitive use cases, helping your viewers stay connected and engaged with IVS real-time streaming. Deliver live streams with a latency that can be under 300 milliseconds from host to viewer.
-+ High concurrency — Unlock the potential of large-scale interactions with IVS real-time streaming. Accommodate audiences beyond 25,000 viewers and enable up to 12 hosts to take the virtual stage. (For default limits and instructions on requesting an increase, see *Service Quotas* for [real-time streaming](https://docs.aws.amazon.com//ivs/latest/RealTimeUserGuide/service-quotas.html) and [low-latency streaming](https://docs.aws.amazon.com//ivs/latest/LowLatencyUserGuide/service-quotas.html).)
++ High concurrency — Unlock the potential of large-scale interactions with IVS real-time streaming. Accommodate audiences beyond 25,000 viewers and enable up to 12 hosts to take the virtual stage. (For default limits and instructions on requesting an increase, see *Service Quotas* for [real-time streaming](https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/service-quotas.html) and [low-latency streaming](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/service-quotas.html).)
 + Mobile optimized — IVS real-time streaming is optimized for mobile use cases, catering to a diverse range of devices and network capabilities. By integrating the Amazon IVS broadcast SDKs for Android and iOS, your users can engage as hosts or viewers, enjoying high-quality live streams on their mobile devices.
 
 Use cases:
@@ -44,7 +44,7 @@ When you use resources (e.g., create a stage), you must specify the region in wh
 | If you use the ... | You specify the region by ... |
 | --- | --- |
 | Amazon IVS console  | Using the Select a Region drop-down in the top right of the navigation bar. |
-| Amazon IVS API | Using the appropriate service endpoint. See the [Amazon IVS Real-Time Streaming API Reference](https://docs.aws.amazon.com//ivs/latest/RealTimeAPIReference/Welcome.html).<br />(If you access the API through an SDK, set up the SDK’s `region` parameter. See [Tools to Build on AWS](https://aws.amazon.com/developer/tools/).) |
+| Amazon IVS API | Using the appropriate service endpoint. See the [Amazon IVS Real-Time Streaming API Reference](https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/Welcome.html).<br />(If you access the API through an SDK, set up the SDK’s `region` parameter. See [Tools to Build on AWS](https://aws.amazon.com/developer/tools/).) |
 | AWS CLI | Either:+  Appending `--region <aws-region>` to your CLI command. <br />+  Putting the region in your local AWS configuration file.  |
 
 *Remember, regardless of the region in which a stage was created, you can stream to Amazon IVS from anywhere, and viewers can watch from anywhere.*

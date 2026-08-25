@@ -14,8 +14,6 @@ Delete Identity and Access Management (IAM) role or policy created with change t
 ## Change Type Details
 <a name="ct-17cj84y7632o6-MAId-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-17cj84y7632o6 |

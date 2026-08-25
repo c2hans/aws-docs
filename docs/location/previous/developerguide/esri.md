@@ -36,7 +36,7 @@ The Esri vector styles support alternate [Political views](map-concepts.md#polit
 
 This map provides a detailed basemap for the world symbolized with a custom navigation map style that's designed for use during the day in mobile devices.
 
-This comprehensive street map includes highways, major roads, minor roads, railways, water features, cities, parks, landmarks, building footprints, and administrative boundaries. The vector tile layer in this map is built using the same data sources used for the World Street Map and other Esri basemaps. Enable the `POI` layer by setting it in [CustomLayers](https://docs.aws.amazon.com//location/previous/APIReference/API_MapConfiguration.html) to leverage the additional places data.
+This comprehensive street map includes highways, major roads, minor roads, railways, water features, cities, parks, landmarks, building footprints, and administrative boundaries. The vector tile layer in this map is built using the same data sources used for the World Street Map and other Esri basemaps. Enable the `POI` layer by setting it in [CustomLayers](https://docs.aws.amazon.com/location/previous/APIReference/API_MapConfiguration.html) to leverage the additional places data.
 
 For more information, see [Esri World Navigation](https://www.arcgis.com/home/item.html?id=63c47b7177f946b49902c24129b87252) on the Esri website.
 

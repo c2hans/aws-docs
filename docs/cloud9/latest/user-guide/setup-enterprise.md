@@ -31,8 +31,6 @@ The following conceptual diagram shows what you end up with.
 
 To enable one or more AWS account to start using AWS Cloud9 within an enterprise, follow the steps according to the AWS resources that you already have.
 
-****
-
 |  **Do you have an AWS account that can or does serve as the management account for the organization in AWS Organizations?**  |  **Do you have an organization in AWS Organizations for that management account?**  |  **Are all of the wanted AWS accounts members of that organization?**  |  **Is that organization set up to use IAM Identity Center?**  |  **Is that organization set up with all of the wanted groups and users who want to use AWS Cloud9?**  |  **Start with this step**  |
 | --- | --- | --- | --- | --- | --- |
 | No | — | — | — | — |  [Step 1: Create a management account for the organization](#setup-enterprise-create-account)  |
@@ -201,8 +199,6 @@ The AWS Cloud9 console is displayed, and you can begin using AWS Cloud9.
 
 ## Next steps
 <a name="setup-enterprise-next-steps"></a>
-
-****
 
 |  **Task**  |  **See this topic**  |
 | --- | --- |

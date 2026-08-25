@@ -8,8 +8,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/apireference/doc-his
 The following table describes important changes to this documentation.
 + **API version: 2017-08-29**
 
-****
-
 | Change | Description | Date |
 | --- | --- | --- |
 | Documentation update | Updated [Getting Started with MediaConvert Using the API](getting-started.md) chapter; minor updates to the sample job settings JSONs. | July 5, 2023 |

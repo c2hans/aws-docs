@@ -25,8 +25,6 @@ We do not recommend using [Account instances of IAM Identity Center](account-ins
 
 The following table provides the availability that IAM Identity Center is designed to achieve in a single AWS Region. These values don’t represent a Service Level Agreement or guarantee, but rather provide insight to the design goals. The availability percentages reference access to data or functions, and aren’t a reference to durability (for example, long term retention of data).
 
-****
-
 | Service component | Availability design goal |
 | --- | --- |
 | Data plane (including sign-in) | 99.95% |

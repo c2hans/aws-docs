@@ -86,6 +86,5 @@ Consider these things when migrating a SQL Server schema to MySQL:
 + You can use a `GOTO` statement and a label to change the order that statements are run in. Any Transact-SQL statements that follow a `GOTO` statement are skipped, and processing continues at the label. You can use `GOTO` statements and labels anywhere within a procedure, batch, or statement block. You can also nest `GOTO` statements.
 
   MySQL doesn’t use `GOTO` statements. When AWS SCT converts code that contains a `GOTO` statement, it converts the statement to use a `BEGIN…END` or `LOOP…END LOOP` statement. You can find examples of how AWS SCT converts `GOTO` statements in the table following.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CHAP_Source.SQLServer.ToMySQL.html)
 + MySQL doesn't support multistatement table-valued functions. AWS SCT simulates table-valued functions during a conversion by creating temporary tables and rewriting statements to use these temporary tables.

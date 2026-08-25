@@ -19,8 +19,6 @@ Don't use environment variables to store secrets. For a Gen 2 app, use the **Sec
 
 The following environment variables are accessible by default within the Amplify console.
 
-****
-
 | Variable name | Description | Example value |
 | --- | --- | --- |
 | \_BUILD\_TIMEOUT | The build timeout duration in minutes.<br />The minimum value is 5.<br />The maximum value is 120. | `30` |

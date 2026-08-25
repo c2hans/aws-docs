@@ -193,7 +193,7 @@ If the data you need is beyond the 20,000-character limit, consider asking the e
 | A JSONata expression has a syntax error. | A missing closing quote or incomplete conditional: {%session.id & %}. | Review the expression for missing quotes, unmatched parentheses, or unsupported operators like ?? or ?:. |
 | A required field is missing in an HTTP\_REQUEST function. | The URL field is empty or the method is not specified. | Ensure the URL and method fields are set. The method must be GET or POST. |
 | The URL built by the expression is invalid. | The evaluated URL uses an unsupported scheme like ftp://, exceeds 2,048 characters, or is malformed. | Verify the URL expression produces a valid http:// or https:// URL. Use $encodeUrlComponent() for query parameter values that may contain special characters. |
-| An HTTP header contains invalid characters or uses a restricted name. | A header value contains line breaks, or the header name is host or transfer-encoding. | Remove invalid characters from header values. Avoid restricted header names. See [HTTP\_REQUEST](monetization-functions-types-http-request.md) for header limits. |
+| An HTTP header contains invalid characters or uses a restricted name. | A header value contains line breaks, or the header name is host or transfer-encoding. | Remove invalid characters from header values. Avoid restricted header names. See [HTTP request](monetization-functions-types-http-request.md) for header limits. |
 
 Check the `cause` field in the error log event — it identifies which field or expression failed validation.
 

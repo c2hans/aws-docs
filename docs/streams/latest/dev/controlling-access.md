@@ -375,7 +375,7 @@ Wildcard (\*) is not supported for actions or principal field in order maintain 
 
 ------
 
-### Manage the policy for your data stream programatically
+### Manage the policy for your data stream programmatically
 <a name="sharing-data-streams-managing-policy"></a>
 
 Outside of the AWS Management Console, Kinesis Data Streams has three APIS for managing your data stream policy:

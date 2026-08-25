@@ -9,8 +9,6 @@ AWS Identity and Access Management (IAM) is an AWS service that helps an adminis
 
 To use Data Exports, an IAM user needs to be given access to actions in the `bcm-data-exports namespace` in IAM. See the following table for the available actions.
 
-****
-
 | Data Exports action | Description | Access level | Resource types | Condition keys |
 | --- | --- | --- | --- | --- |
 | CreateExport | Allows user to create an Export and specifies query, delivery configurations, schedule configurations, and content configurations. | Write | export<br />table | aws:RequestTag/${TagKey}<br />aws:TagKeys |
@@ -30,8 +28,6 @@ For more information about how to use these context keys, see [Controlling acces
 
 The following table describes the resource types that are available in Data Exports.
 
-****
-
 | Resource type | Description | ARN |
 | --- | --- | --- |
 | export | An export is the resource created by the CreateExport API. An export generates a billing and cost management query output on a recurring basis. | arn:${Partition}:bcm-data-exports:${Region}:${Account}:export/${exportName}-{UUID} |
@@ -40,8 +36,6 @@ The following table describes the resource types that are available in Data Expo
 To create exports of the COST\_AND\_USAGE\_REPORT or COST\_AND\_USAGE\_DASHBOARD table resources in Data Exports, IAM users must also have permissions for the respective `cur` action in IAM. This means that if an IAM user is blocked from using `cur` actions for any reason, such as lacking an explicit allow on `cur` or a service control policy (SCP) providing an explicit deny on `cur`, that IAM user will be blocked from creating or updating exports of these two tables.
 
 The following table shows which `cur` action is required for which `bcm-data-exports` actions in Data Exports for these two tables.
-
-****
 
 | Data Exports action | Table resources | Additional required actions in IAM |
 | --- | --- | --- |

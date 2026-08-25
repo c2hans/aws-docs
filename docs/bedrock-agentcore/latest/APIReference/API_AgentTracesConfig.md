@@ -23,10 +23,15 @@ Agent traces read from CloudWatch Logs.
 Type: [CloudWatchLogsTraceConfig](API_CloudWatchLogsTraceConfig.md) object
 Required: No
 
+ ** onlineEvaluation **   <a name="BedrockAgentCore-Type-AgentTracesConfig-onlineEvaluation"></a>
+Agent traces from an online evaluation configuration over a specified time range.
+Type: [OnlineEvaluationTraceConfig](API_OnlineEvaluationTraceConfig.md) object
+Required: No
+
  ** sessionSpans **   <a name="BedrockAgentCore-Type-AgentTracesConfig-sessionSpans"></a>
 Agent traces provided as inline session spans in OpenTelemetry format.
 Type: Array of JSON values
-Array Members: Minimum number of 1 item. Maximum number of 1000 items.
+Array Members: Minimum number of 1 item. Maximum number of 20000 items.
 Required: No
 
 ## See Also

@@ -14,8 +14,6 @@ Creation of GuardDuty Suppression Rules.
 ## Change Type Details
 <a name="ct-26swglg6rodzt-MMGc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-26swglg6rodzt |

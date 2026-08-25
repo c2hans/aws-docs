@@ -60,8 +60,6 @@ Be aware that at the time that these release notes are published, the new platfo
 ### .NET Core on Linux
 <a name="release-2020-11-20-net5.platforms.dotnetlinux"></a>
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X‑Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET Core on AL2 version 2.1.0** <br /> * 64bit Amazon Linux 2 v2.1.0 running .NET Core *  | .NET 5.0.0, supports 5.0.0, 3.1.10, 2.1.23 | nginx 1.18.0 | 2.0.20200917 | 3.2.0 |
@@ -71,8 +69,6 @@ Be aware that at the time that these release notes are published, the new platfo
 
 #### Configuration basics
 <a name="platforms-supported.net.basics"></a>
-
-****
 
 |  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |
 | --- | --- | --- | --- |
@@ -85,8 +81,6 @@ Be aware that at the time that these release notes are published, the new platfo
 
 #### More details
 <a name="platforms-supported.net.details"></a>
-
-****
 
 |  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Config  |  SSM Agent  |  Web Deploy  |  AWS X‑Ray  |
 | --- | --- | --- | --- | --- | --- | --- |

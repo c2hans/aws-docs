@@ -34,7 +34,7 @@ To get the list of name servers for your hosted zone:
 
 1. Make note of the four servers listed for **Name servers**.
 
-For information about migrating DNS service from another DNS service provider to Route 53, see [Making Amazon Route 53 the DNS service for an existing domainMaking Route 53 the DNS service for an existing domain](MigratingDNS.md).
+For information about migrating DNS service from another DNS service provider to Route 53, see [Making Amazon Route 53 the DNS service for an existing domain](MigratingDNS.md).
 
 ## The start of authority (SOA) record
 <a name="SOArecords"></a>

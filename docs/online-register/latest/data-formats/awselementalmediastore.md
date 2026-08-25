@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awse
 
 AWS Elemental MediaStore provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="mediastore-DescribeContainer"></a>[DescribeContainer](https://docs.aws.amazon.com/mediastore/latest/apireference/API_DescribeContainer.html) | Retrieve details on a container | List |

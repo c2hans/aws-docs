@@ -19,6 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
+  "[CapacityProviderVolume](#cfn-bedrockagentcore-runtime-filesystemconfiguration-capacityprovidervolume)" : {{CapacityProviderVolumeConfiguration}},
   "[EfsAccessPoint](#cfn-bedrockagentcore-runtime-filesystemconfiguration-efsaccesspoint)" : {{EfsAccessPointConfiguration}},
   "[S3FilesAccessPoint](#cfn-bedrockagentcore-runtime-filesystemconfiguration-s3filesaccesspoint)" : {{S3FilesAccessPointConfiguration}},
   "[SessionStorage](#cfn-bedrockagentcore-runtime-filesystemconfiguration-sessionstorage)" : {{SessionStorageConfiguration}}
@@ -29,6 +30,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-bedrockagentcore-runtime-filesystemconfiguration-syntax.yaml"></a>
 
 ```
+  [CapacityProviderVolume](#cfn-bedrockagentcore-runtime-filesystemconfiguration-capacityprovidervolume): {{
+    CapacityProviderVolumeConfiguration}}
   [EfsAccessPoint](#cfn-bedrockagentcore-runtime-filesystemconfiguration-efsaccesspoint): {{
     EfsAccessPointConfiguration}}
   [S3FilesAccessPoint](#cfn-bedrockagentcore-runtime-filesystemconfiguration-s3filesaccesspoint): {{
@@ -39,6 +42,12 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ## Properties
 <a name="aws-properties-bedrockagentcore-runtime-filesystemconfiguration-properties"></a>
+
+`CapacityProviderVolume`  <a name="cfn-bedrockagentcore-runtime-filesystemconfiguration-capacityprovidervolume"></a>
+Property description not available.
+*Required*: No
+*Type*: [CapacityProviderVolumeConfiguration](aws-properties-bedrockagentcore-runtime-capacityprovidervolumeconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `EfsAccessPoint`  <a name="cfn-bedrockagentcore-runtime-filesystemconfiguration-efsaccesspoint"></a>
 Configuration for an Amazon EFS access point to mount into the AgentCore Runtime.

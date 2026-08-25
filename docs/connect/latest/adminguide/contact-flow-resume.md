@@ -25,7 +25,7 @@ Let's say you need to transfer a contact to an external department that's not us
      + **Caller ID number**—Specify the caller ID number used for transferred call. You can select a number from your instance, or use an attribute to set the number.
      + **Caller ID name**—Specify the caller ID name used for the transferred call. You can enter a name, or use an attribute to set the name.
 
-       In some cases, the caller ID information is provided by the carrier of the party you are calling. The information may not be up-to-date with that carrier, or the number may get passed differently between systems because of hardware or configuration differences. If that is the case, the person you call may not see the phone number, or may see the name of a previously registered owner of the number, instead of the name you specify in the block.
+       In some cases, the caller ID information is provided by the carrier of the party you are calling. The information might not be up-to-date with that carrier, or the number might get passed differently between systems because of hardware or configuration differences. If that is the case, the person you call might not see the phone number, or might see the name of a previously registered owner of the number, instead of the name you specify in the block.
 
 1. Connect **Transfer to phone number** to the rest of your flow.
 

@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon CloudFront provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="cloudfront-DescribeConnectionFunction"></a>[DescribeConnectionFunction](https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_DescribeConnectionFunction.html) | Get a connection function summary | Read |

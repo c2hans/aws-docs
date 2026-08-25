@@ -50,7 +50,7 @@ Choose the type of operation you want to perform:
 <a name="data-table-block-define-table"></a>
 + Choose **Set manually** to directly select a data table
 + Select your target data table from the dropdown
-+ Important: Once you select a specific data table, the interface automatically populates the available attributes from that table in the relevant configuration sections
++ Important: After you select a specific data table, the interface automatically populates the available attributes from that table in the relevant configuration sections
 
 ## Evaluate Data Table values
 <a name="data-table-block-evaluate"></a>
@@ -174,7 +174,7 @@ The following image shows the **Properties** page of the **Data Table** block co
 
 1. Configure Primary Value Groups:
    + You can add multiple primary value groups to define different records to write or update. At least one primary value group is required for each Write Data Table block.
-   + The interface provides two input methods via tabs:
+   + The interface provides two input methods through tabs:
      + Input tab – Structured form-based configuration (recommended for most users)
      + Raw JSON tab – Direct JSON input for advanced users
    + For each primary value group:
@@ -187,7 +187,7 @@ The following image shows the **Properties** page of the **Data Table** block co
          + Use default value – Uses the default value defined in the data table schema. No additional value input is required when this option is selected.
      + **Configure Lock Version** – The lock version setting controls how concurrent write operations to datatable are handled:
        + Use Latest option – Always writes to the most recent version of the record. Suitable for most use cases where concurrent updates are unlikely or acceptable.
-       + Set dynamically option – Allows you to specify the version number dynamically at runtime via Lambda or module.
+       + Set dynamically option – Allows you to specify the version number dynamically at runtime through Lambda or module.
 
 ### Attribute limit for Write
 <a name="data-table-write-attribute-limit"></a>

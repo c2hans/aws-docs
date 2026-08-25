@@ -68,7 +68,7 @@ When you customize a report, you can add filters to control which data is includ
 
    1. For **Time Zone**, select a time zone, which determines the hour at which a day starts. For example, to align the report with your calendar days, select the time zone for your location.
 
-      You should use the same time zone for reports over time to get accurate and consistent metrics data for your contact center. Using different time zones for different reports may result in different data for the same time range selection.
+      You should use the same time zone for reports over time to get accurate and consistent metrics data for your contact center. Using different time zones for different reports might result in different data for the same time range selection.
 
    1. The possible values for **Time range** depend on the value that you select for **Interval**. Alternatively, you can specify a custom time range.
 

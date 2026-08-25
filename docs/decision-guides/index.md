@@ -9,7 +9,7 @@ Decision guides provide structured comparisons and guidance to help you evaluate
 ## Featured content
 
 - [Choosing a purchasing option for Amazon EC2](/decision-guides/latest/decision-guides/ec2-purchasing-options-aws-how-to-choose.html): Compare On-Demand Instances, Reserved Instances, Savings Plans, and Spot Instances to optimize cost and performance for your EC2 workloads. **Last updated: July 2025**
-- [AWS Fargate or Lambda?](/decision-guides/latest/decision-guides/fargate-or-lambda.html): Understand the differences between serverless containers and serverless functions to pick the right compute model. **Last updated: September 2024**
+- [AWS Fargate or Lambda?](/decision-guides/latest/decision-guides/fargate-or-lambda.html): Understand the differences between serverless containers and serverless functions to pick the right compute model. **Last updated: August 2026**
 - [Amazon Bedrock or Amazon SageMaker?](/decision-guides/latest/decision-guides/bedrock-or-sagemaker.html): Understand when to use Amazon Bedrock for building AI-powered applications versus Amazon SageMaker for custom model development. **Last updated: July 2026**
 
 ## Decision guides by technology
@@ -22,7 +22,7 @@ Choose the right AWS compute service for your modern app development. Whether yo
 
 - [Choosing an AWS compute service](/decision-guides/latest/decision-guides/choosing-aws-compute-service.html): Compare compute options including virtual machines, containers, and serverless to find the right fit for your workload. **Last updated: May 2025**
 - [Choosing an AWS container service](/decision-guides/latest/decision-guides/choosing-aws-container-service.html): Evaluate container orchestration options and choose between managed services for running containerized applications. **Last updated: May 2025**
-- [AWS Fargate or Lambda?](/decision-guides/latest/decision-guides/fargate-or-lambda.html): Understand the differences between serverless containers and serverless functions to pick the right compute model. **Last updated: September 2024**
+- [AWS Fargate or Lambda?](/decision-guides/latest/decision-guides/fargate-or-lambda.html): Understand the differences between serverless containers and serverless functions to pick the right compute model. **Last updated: August 2026**
 - [Amazon Lightsail, Elastic Beanstalk, or EC2?](/decision-guides/latest/decision-guides/lightsail-elastic-beanstalk-ec2.html): Compare simplified, managed, and full-control compute options for deploying web applications. **Last updated: May 2025**
 - [Choosing a modern application strategy](/decision-guides/latest/decision-guides/modern-apps-strategy-on-aws-how-to-choose.html): Evaluate approaches to modernizing your applications, including microservices, event-driven architectures, and serverless patterns. **Last updated: March 2025**
 - [Choosing a purchasing option for Amazon EC2](/decision-guides/latest/decision-guides/ec2-purchasing-options-aws-how-to-choose.html): Compare On-Demand Instances, Reserved Instances, Savings Plans, and Spot Instances to optimize cost and performance for your EC2 workloads. **Last updated: July 2025**

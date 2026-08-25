@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awst
 
 AWS Telco Network Builder provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="tnb-GetSolFunctionInstance"></a>[GetSolFunctionInstance](https://docs.aws.amazon.com/tnb/latest/APIReference/API_GetSolFunctionInstance.html) | Get a function instance | Read |

@@ -28,12 +28,12 @@ The following requirements apply to both Linux and Windows source servers.
 
 Verify the following requirements on Linux source servers before running the installer.
 + **Root or sudo access** — The installer must run as root or with sudo privileges to install kernel modules and system services.
-+ **Disk space: 3 GB free on /** — The agent binaries and replication data require at least 3 GB on the root filesystem. Verify with:
++ **Disk space: 4 GB free on /** — The agent binaries and replication data require at least 4 GB on the root filesystem. Verify with:
 
   ```
   df -h /
   ```
-+ **Disk space: 500 MB free on /tmp** — The installer extracts temporary files to `/tmp` during installation. If `/tmp` is not a separate mount, this space is part of the 3 GB requirement on `/`. Verify with:
++ **Disk space: 500 MB free on /tmp** — The installer extracts temporary files to `/tmp` during installation. If `/tmp` is not a separate mount, this space is part of the 4 GB requirement on `/`. Verify with:
 
   ```
   df -h /tmp

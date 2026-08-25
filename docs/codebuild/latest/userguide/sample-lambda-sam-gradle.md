@@ -62,7 +62,7 @@ Create an AWS CodeBuild Lambda Java project and set up the IAM permissions neede
 
 1. Choose the **Trust relationships** tab, and then choose **Edit trust policy**.
 
-1. Add the following inline policy to your IAM role. This will be used to deploy your AWS SAM infrastructure later on. For more information, see [Adding and removing IAM identity permissions](https://docs.aws.amazon.com//IAM/latest/UserGuide/access_policies_manage-attach-detach.html) in the *IAM User Guide*.
+1. Add the following inline policy to your IAM role. This will be used to deploy your AWS SAM infrastructure later on. For more information, see [Adding and removing IAM identity permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html) in the *IAM User Guide*.
 
 ------
 #### [ JSON ]

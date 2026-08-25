@@ -5,14 +5,14 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/nova-sagemaker-inf
 # API Reference
 <a name="nova-sagemaker-inference-api-reference"></a>
 
-Amazon Nova models on SageMaker use the standard SageMaker Runtime API for inference. For complete API documentation, see [Test a deployed model](https://docs.aws.amazon.com//sagemaker/latest/dg/realtime-endpoints-test-endpoints.html).
+Amazon Nova models on SageMaker use the standard SageMaker Runtime API for inference. For complete API documentation, see [Test a deployed model](https://docs.aws.amazon.com/sagemaker/latest/dg/realtime-endpoints-test-endpoints.html).
 
 ## Endpoint invocation
 <a name="nova-sagemaker-inference-api-invocation"></a>
 
 Amazon Nova models on SageMaker support two invocation methods:
-+ **Synchronous invocation**: Use the [InvokeEndpoint](https://docs.aws.amazon.com//sagemaker/latest/APIReference/API_runtime_InvokeEndpoint.html) API for real-time, non-streaming inference requests.
-+ **Streaming invocation**: Use the [InvokeEndpointWithResponseStream](https://docs.aws.amazon.com//sagemaker/latest/APIReference/API_runtime_InvokeEndpointWithResponseStream.html) API for real-time streaming inference requests.
++ **Synchronous invocation**: Use the [InvokeEndpoint](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_runtime_InvokeEndpoint.html) API for real-time, non-streaming inference requests.
++ **Streaming invocation**: Use the [InvokeEndpointWithResponseStream](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_runtime_InvokeEndpointWithResponseStream.html) API for real-time streaming inference requests.
 
 ## Request format
 <a name="nova-sagemaker-inference-api-request"></a>
@@ -384,4 +384,4 @@ data: [DONE]
 + `reasoning`: Reasoning content when reasoning\_effort is used
 + `token_ids`: Array of token IDs for the generated text
 
-For complete API documentation, see [InvokeEndpoint API reference](https://docs.aws.amazon.com//sagemaker/latest/APIReference/API_runtime_InvokeEndpoint.html) and [InvokeEndpointWithResponseStream API reference](https://docs.aws.amazon.com//sagemaker/latest/APIReference/API_runtime_InvokeEndpointWithResponseStream.html).
+For complete API documentation, see [InvokeEndpoint API reference](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_runtime_InvokeEndpoint.html) and [InvokeEndpointWithResponseStream API reference](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_runtime_InvokeEndpointWithResponseStream.html).

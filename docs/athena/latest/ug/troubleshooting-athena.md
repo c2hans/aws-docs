@@ -477,8 +477,6 @@ For information about query timeout issues with federated queries when you call 
 
 If your queries exceed the limits of dependent services such as Amazon S3, AWS KMS, AWS Glue, or AWS Lambda, the following messages can be expected. To resolve these issues, reduce the number of concurrent calls that originate from the same account.
 
-****
-
 | Service | Error message |
 | --- | --- |
 | AWS Glue | AWSGlueException: Rate exceeded. |

@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/table-dictionary-cu
 
 Bill columns contain data about your bill for the billing period.
 
-****
-
 | Column name | Description | Data type |
 | --- | --- | --- |
 | bill\_bill\_type | The type of bill that this report covers. There are three bill types:+  **Anniversary:** Line items for services that you used during the month. <br />+  **Purchase:** Line items for upfront service fees. <br />+  **Refund:** Line items for refunds.  | string |

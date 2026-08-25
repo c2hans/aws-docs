@@ -21,19 +21,19 @@ Device Farm supports these mobile automation testing frameworks:
 
 ### Android application testing frameworks
 <a name="test-types-framework-android-list"></a>
-+ [Automatic Appium testsIntegrating with Appium tests](test-types-appium.md)
++ [Automatic Appium tests](test-types-appium.md)
 + [Instrumentation](test-types-android-instrumentation.md)
 
 ### iOS application testing frameworks
 <a name="test-types-framework-ios-list"></a>
-+ [Automatic Appium testsIntegrating with Appium tests](test-types-appium.md)
++ [Automatic Appium tests](test-types-appium.md)
 + [XCTest](test-types-ios-xctest.md)
 + [XCTest UI](test-types-ios-xctest-ui.md)
 
 ### Web application testing frameworks
 <a name="test-types-framework-web-app-list"></a>
 
-Web applications are supported using Appium. For more information on bringing your tests to Appium, see [Automatically run Appium tests in Device FarmIntegrating Appium tests with Device Farm](test-types-appium.md).
+Web applications are supported using Appium. For more information on bringing your tests to Appium, see [Automatically run Appium tests in Device Farm](test-types-appium.md).
 
 ### Frameworks in a custom test environment
 <a name="test-types-framework-custom-support"></a>

@@ -12,8 +12,6 @@ Browser Azure AD is a SAML-based authentication mechanism that works with the Az
 
 The credentials provider that will be used to authenticate requests to AWS. Set the value of this parameter to `BrowserAzureAD`.
 
-****
-
 | Parameter name | Alias | Parameter type | Default value | Value to use |
 | --- | --- | --- | --- | --- |
 | CredentialsProvider | AWSCredentialsProviderClass (deprecated) | Required | none | BrowserAzureAD |
@@ -22,8 +20,6 @@ The credentials provider that will be used to authenticate requests to AWS. Set 
 <a name="jdbc-v3-driver-browser-azure-ad-azure-ad-tenant-id"></a>
 
 The tenant ID of your Azure AD application
-
-****
 
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
@@ -34,8 +30,6 @@ The tenant ID of your Azure AD application
 
 The client ID of your Azure AD application
 
-****
-
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
 | AzureAdClientId | client\_id (deprecated) | Required | none |
@@ -44,8 +38,6 @@ The client ID of your Azure AD application
 <a name="jdbc-v3-driver-identity-provider-response-timeout"></a>
 
 The duration, in seconds, before the driver stops waiting for the SAML response from Azure AD.
-
-****
 
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
@@ -56,8 +48,6 @@ The duration, in seconds, before the driver stops waiting for the SAML response 
 
 The Amazon Resource Name (ARN) of the role to assume. For information about ARN roles, see [AssumeRole](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html) in the *AWS Security Token Service API Reference*.
 
-****
-
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
 | PreferredRole | preferred\_role (deprecated) | Optional | none |
@@ -66,8 +56,6 @@ The Amazon Resource Name (ARN) of the role to assume. For information about ARN 
 <a name="jdbc-v3-driver-browser-azure-ad-role-session-duration"></a>
 
 The duration, in seconds, of the role session. For more information, see [AssumeRole](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html) in the *AWS Security Token Service API Reference*.
-
-****
 
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
@@ -78,8 +66,6 @@ The duration, in seconds, of the role session. For more information, see [Assume
 
 Specifies whether to use the [AssumeDecoratedRoleWithSAML](https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_AssumeDecoratedRoleWithSAML.html) Lake Formation API action to retrieve temporary IAM credentials instead of the [AssumeRoleWithSAML](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRoleWithSAML.html) AWS STS API action.
 
-****
-
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
 | LakeFormationEnabled | none | Optional | FALSE |
@@ -88,8 +74,6 @@ Specifies whether to use the [AssumeDecoratedRoleWithSAML](https://docs.aws.amaz
 <a name="jdbc-v3-driver-browser-azure-ad-enable-token-caching"></a>
 
 When enabled, caches the SAML assertion in memory across driver connections. This prevents SQL tools that create multiple driver connections from launching multiple browser windows.
-
-****
 
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |

@@ -381,7 +381,7 @@ The following example illustrates a workflow that tags incoming files that need 
    aws transfer create-workflow --description "copy-tag-delete workflow" --steps file://tagAndMoveWorkflow.json --region us-east-1
    ```
 **Note**
-For more details about using files to load parameters, see [ How to load parameters from a file](https://docs.aws.amazon.com//cli/latest/userguide/cli-usage-parameters-file.html).
+For more details about using files to load parameters, see [ How to load parameters from a file](https://docs.aws.amazon.com/cli/latest/userguide/cli-usage-parameters-file.html).
 
 1. Update an existing server.
 **Note**

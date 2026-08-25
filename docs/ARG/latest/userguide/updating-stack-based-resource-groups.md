@@ -18,7 +18,7 @@ You cannot change an CloudFormation stack-based group to a tag-based group in th
 
 1.
 **Note**
-You can update only resource groups that you own. The **Owner** column shows account ownership for each resource group. Any groups with an account owner other than the one you're signed in to were created in AWS License Manager. For more information, see [Host resource groups in AWS License Manager](https://docs.aws.amazon.com//license-manager/latest/userguide/host-resource-groups.html) in the *License Manager User Guide*.
+You can update only resource groups that you own. The **Owner** column shows account ownership for each resource group. Any groups with an account owner other than the one you're signed in to were created in AWS License Manager. For more information, see [Host resource groups in AWS License Manager](https://docs.aws.amazon.com/license-manager/latest/userguide/host-resource-groups.html) in the *License Manager User Guide*.
 
 1. On the **Edit group** page, under **Grouping criteria**, to change the stack on which your group is based, choose the stack from the drop-down list. A resource group can be based on only one stack. To filter the list of stacks, start typing the name of the stack. Only stacks with supported statuses appear in the list. For a list of supported statuses, see [Creating query-based groups in AWS Resource Groups](gettingstarted-query.md) in this guide.
 

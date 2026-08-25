@@ -10,8 +10,6 @@ Each source on a flow must use a different port (for exceptions to this, see the
 **Important**
 There is an exception to the port requirements for sources that use the Zixi protocol. For standard Zixi sources, all sources use port 2088. For VPC Zixi sources, the sources will use an inbound port range of 2090-2099. The 2090-2099 port range is reserved exclusively for Zixi VPC sources and cannot be used by another source protocol. The VPC Zixi source port is assigned by MediaConnect when the source is created.
 
-****
-
 | Protocol | Ports needed | Ports required |
 | --- | --- | --- |
 | CDI | Port | The port that you specify. This is the only port needed for the source. |

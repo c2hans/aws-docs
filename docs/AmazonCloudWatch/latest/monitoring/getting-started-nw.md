@@ -35,7 +35,7 @@ The first step to create a monitor is to define the basic details, by giving the
 
 1. For **Aggregation period**, choose how often you want to send metrics to CloudWatch: **30 seconds** or **60 seconds**.
 **Note**
-A shorter aggregation period provides faster detection of network issues. However, the aggregation period that you choose can affect your billing costs. For more information about pricing, see the [Amazon CloudWatch pricing](https://aws.amazon.com//cloudwatch/pricing/) page.
+A shorter aggregation period provides faster detection of network issues. However, the aggregation period that you choose can affect your billing costs. For more information about pricing, see the [Amazon CloudWatch pricing](https://aws.amazon.com/cloudwatch/pricing/) page.
 
 1. (Optional) For **Tags**, add **Key** and **Value** pairs to help identify this resource, so that you can search or filter on specific information.
 

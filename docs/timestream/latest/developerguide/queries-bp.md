@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/timestream/latest/developerguide/queries-bp.html
 ---
 
-For similar capabilities to Amazon Timestream for LiveAnalytics, consider Amazon Timestream for InfluxDB. It offers simplified data ingestion and single-digit millisecond query response times for real-time analytics. Learn more [here](https://docs.aws.amazon.com//timestream/latest/developerguide/timestream-for-influxdb.html).
+For similar capabilities to Amazon Timestream for LiveAnalytics, consider Amazon Timestream for InfluxDB. It offers simplified data ingestion and single-digit millisecond query response times for real-time analytics. Learn more [here](https://docs.aws.amazon.com/timestream/latest/developerguide/timestream-for-influxdb.html).
 
 # Queries
 <a name="queries-bp"></a>
@@ -10,10 +10,10 @@ For similar capabilities to Amazon Timestream for LiveAnalytics, consider Amazon
 Following are suggested best practices for queries with Amazon Timestream for LiveAnalytics.
 + Include only the measure and dimension names essential to query. Adding extraneous columns will increase data scans, which impacts the performance of queries.
 + Before deploying your query in production, we recommend that you review query insights to make sure that the spatial and temporal pruning is optimal. For more information, see [Using query insights to optimize queries in Amazon Timestream](using-query-insights.md).
-+ Where possible, push the data computation to Timestream for LiveAnalytics using the built-in aggregates and scalar functions in the SELECT clause and WHERE clause as applicable to improve query performance and reduce cost. See [SELECTUNLOAD](supported-sql-constructs.SELECT.md) and [Aggregate functions](aggregate-functions.md).
++ Where possible, push the data computation to Timestream for LiveAnalytics using the built-in aggregates and scalar functions in the SELECT clause and WHERE clause as applicable to improve query performance and reduce cost. See [SELECT](supported-sql-constructs.SELECT.md) and [Aggregate functions](aggregate-functions.md).
 + Where possible, use approximate functions. E.g., use APPROX\_DISTINCT instead of COUNT(DISTINCT column\_name) to optimize query performance and reduce the query cost. See [Aggregate functions](aggregate-functions.md).
 + Use a CASE expression to perform complex aggregations instead of selecting from the same table multiple times. See [The CASE statement](conditional-expressions.CASE.md).
-+ Where possible, include a time range in the WHERE clause of your query. This optimizes query performance and costs. For example, if you only need the last one hour of data in your dataset, then include a time predicate such as time > ago(1h). See [SELECTUNLOAD](supported-sql-constructs.SELECT.md) and [Interval and duration](date-time-functions.md#date-time-functions-interval-duration).
++ Where possible, include a time range in the WHERE clause of your query. This optimizes query performance and costs. For example, if you only need the last one hour of data in your dataset, then include a time predicate such as time > ago(1h). See [SELECT](supported-sql-constructs.SELECT.md) and [Interval and duration](date-time-functions.md#date-time-functions-interval-duration).
 + When a query accesses a subset of measures in a table, always include the measure names in the WHERE clause of the query.
 + Where possible, use the equality operator when comparing dimensions and measures in the WHERE clause of a query. An equality predicate on dimensions and measure names allows for improved query performance and reduced query costs.
 + Wherever possible, avoid using functions in the WHERE clause to optimize for cost.

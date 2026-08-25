@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsi
 
 AWS Identity Sync provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="identity-sync-GetSyncProfile"></a>[GetSyncProfile](https://docs.aws.amazon.com/singlesignon/latest/userguide/provision-users-groups-AD.html) | Retrieve a sync profile by using a sync profile name | Read |

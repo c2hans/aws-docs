@@ -9,8 +9,6 @@ Conformance packs provide a general-purpose compliance framework designed to ena
 
 The following provides a sample mapping between the Monetary Authority of Singapore (MAS) Notice 655 – Cyber Hygiene and AWS managed Config rules. Each Config rule applies to a specific AWS resource, and relates to one or more MAS Notice 655 – Cyber Hygiene controls. A MAS Notice 655 – Cyber Hygiene control can be related to multiple Config rules. Refer to the table below for more detail and guidance related to these mappings.
 
-****
-
 | Control ID  | AWS Config Rule  | Guidance  |
 | --- | --- | --- |
 | 4.1 | [iam-user-no-policies-check](https://docs.aws.amazon.com/config/latest/developerguide/iam-user-no-policies-check.html) | This rule ensures AWS Identity and Access Management (IAM) policies are attached only to groups or roles to control access to systems and assets. Assigning privileges at the group or the role level helps to reduce opportunity for an identity to receive or retain excessive privileges. |

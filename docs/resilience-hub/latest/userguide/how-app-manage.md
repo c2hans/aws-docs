@@ -17,7 +17,7 @@ In addition to AWS CloudFormation stacks, AWS Resource Groups, myApplications ap
   If you select this option, complete one of the procedures in [Add resource collections](discover-structure.md#resource-collection) and then complete the procedure in [Add EKS clusters](discover-structure.md#add-eks-clusters).
 
 **Note**
-For information about the number of resources supported per application, see [Service Quotas](https://docs.aws.amazon.com//general/latest/gr/resiliencehub.html#limits_resiliencehub).
+For information about the number of resources supported per application, see [Service Quotas](https://docs.aws.amazon.com/general/latest/gr/resiliencehub.html#limits_resiliencehub).
 
 ## Next
 <a name="discover-structure-next"></a>

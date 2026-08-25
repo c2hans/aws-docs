@@ -105,7 +105,7 @@ Channel type determines the allowable resolution and bitrate. *If you exceed the
 
 There are four channel types: `STANDARD`, `ADVANCED_SD`, `ADVANCED_HD`, and `BASIC`. When you create a channel, the default type is `STANDARD`.
 
-There are two types of video processing, *transcoding* and *transmuxing*. This is determined by the channel type, whether the channel is configured for multitrack video input, and whether the broadcaster uses a multitrack-enabled client. (Multitrack video is configured with the `multitrackInputConfiguration` API property of the [Channel](https://docs.aws.amazon.com//ivs/latest/LowLatencyAPIReference/API_Channel.html) data type.)
+There are two types of video processing, *transcoding* and *transmuxing*. This is determined by the channel type, whether the channel is configured for multitrack video input, and whether the broadcaster uses a multitrack-enabled client. (Multitrack video is configured with the `multitrackInputConfiguration` API property of the [Channel](https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_Channel.html) data type.)
 + Video on `STANDARD` (without multitrack input) and `ADVANCED` channels is transcoded: multiple qualities are generated from the original input, to automatically give viewers the best experience for their devices and network conditions. Transcoding allows higher playback quality across a range of download speeds. Transcoding is the best option for broadcasters with limited first-mile internet connectivity and/or limited device capabilities (e.g., mobile phones instead of desktop PCs).
 + Video on `STANDARD` (with multitrack input enabled and the broadcaster using a multitrack-enabled client) and `BASIC` channels is transmuxed: Amazon IVS delivers the original input to viewers. Similar to transcoding, transmuxed multitrack input delivers viewers the best experience for their devices and network conditions.
 
@@ -138,7 +138,7 @@ All transcoded channels have *transcode* presets, which determine which renditio
 ##### Multitrack Video Input
 <a name="settings-channel-types-standard-multitrack"></a>
 
-`STANDARD` channels are transmuxed when the input is multitrack video. The highest video resolution produced is limited by the `multitrackInputConfiguration.maximumResolution` property. The specific renditions are dynamic depending on the [broadcaster’s system and environmental requirements](https://docs.aws.amazon.com//ivs/latest/LowLatencyUserGuide/multitrack-video-setup.html#multitrack-video-setup-broadcaster-system).
+`STANDARD` channels are transmuxed when the input is multitrack video. The highest video resolution produced is limited by the `multitrackInputConfiguration.maximumResolution` property. The specific renditions are dynamic depending on the [broadcaster’s system and environmental requirements](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multitrack-video-setup.html#multitrack-video-setup-broadcaster-system).
 
 For all video renditions, audio is source passthrough.
 
@@ -309,7 +309,7 @@ srt://<uri>?streamid=#!::u=<streamkey>,priority=N&passphrase=foobar
 
 A takeover succeeds if the priority integer provided for the new stream is greater than the priority integer for the ongoing stream, or if no previous priority integer was set. Also, the old and new stream must share the same resolution, video codec, audio codec, and number of tracks.
 
-By default, up to 100 takeovers can be done in a single stream, as long as a greater priority integer is used for each successive takeover. The maximum number of stream takeovers is adjustable per AWS account (see [ Service Quotas](https://docs.aws.amazon.com//ivs/latest/LowLatencyUserGuide/service-quotas.html#quotas-other)). Once the stream is over, the channel retains no memory of previous priority integers or how many takeovers were done, so any priority integer can be reused in future streams. Also, if encoder settings were changed for stream takeover, the stream session retains no memory of previous encoder settings, displaying only the latest settings.
+By default, up to 100 takeovers can be done in a single stream, as long as a greater priority integer is used for each successive takeover. The maximum number of stream takeovers is adjustable per AWS account (see [ Service Quotas](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/service-quotas.html#quotas-other)). Once the stream is over, the channel retains no memory of previous priority integers or how many takeovers were done, so any priority integer can be reused in future streams. Also, if encoder settings were changed for stream takeover, the stream session retains no memory of previous encoder settings, displaying only the latest settings.
 
 If the auto-reconnect feature is enabled, the IVS mobile broadcast SDKs use stream takeover to automatically reconnect when a broadcaster switches networks (for example, from WiFi to cellular). To enable auto-reconnect:
 + On iOS, set `config.autoReconnect.enabled = true` on your `IVSBroadcastConfiguration` object.

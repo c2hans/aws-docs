@@ -150,8 +150,6 @@ For more information about dimensions, see [Dimensions](https://docs.aws.amazon.
 
 The following table displays the CloudWatch dimensions available for use with Rekognition Custom Labels:
 
-****
-
 | Dimension | Description |
 | --- | --- |
 | ProjectName | The name of the Rekognition Custom Labels project you created with CreateProject. |

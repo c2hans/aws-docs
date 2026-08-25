@@ -25,8 +25,6 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_finspace-actions-as-permissions).
 
-****
-
 - **   CreateEnvironment  **
   - **IAM action:**  [finspace:CreateEnvironment](#list_finspace-action-CreateEnvironment)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [finspace:TagResource](#list_finspace-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
@@ -314,8 +312,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
 <a name="list_finspace-actions-as-permissions"></a>
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
-
-****
 
 - **   [CreateEnvironment](https://docs.aws.amazon.com/finspace/latest/management-api/API_CreateEnvironment.html)  **
   - **Description:** Grants permission to create a FinSpace environment
@@ -682,8 +678,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 The following actions are defined by Amazon FinSpace but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 - **   [ConnectKxCluster](https://docs.aws.amazon.com/finspace/latest/userguide/interacting-with-kdb-clusters.html)  **
   - **Description:** Grants permission to connect to a kdb cluster
   - **Resource types (\*required):** [kxCluster\*](#list_finspace-resource-kxCluster)
@@ -701,8 +695,6 @@ The following actions are defined by Amazon FinSpace but are not directly invoca
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
 
-****
-
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
 |  [environment](https://docs.aws.amazon.com/finspace/latest/userguide/finspace-example-policies.html)  | arn:${Partition}:finspace:${Region}:${Account}:environment/${EnvironmentId} | [aws:ResourceTag/${TagKey}](#list_finspace-aws_ResourceTag___TagKey_) |
@@ -719,8 +711,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_finspace-policy-keys"></a>
 
 Amazon FinSpace defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

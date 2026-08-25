@@ -7,8 +7,6 @@ This is an earlier version of the AWS Well-Architected Framework. For the latest
 # REL08-BP04 Deploy using immutable infrastructure
 <a name="rel_tracking_change_management_immutable_infrastructure"></a>
 
-****
-
 |  |
 | --- |
 | This best practice was updated with new guidance on December 6, 2023. |

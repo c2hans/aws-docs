@@ -136,7 +136,7 @@ The ID of the endpoint's virtual cluster.
 The ARN of the endpoint.
 
 `AuthProxyUrl`  <a name="AuthProxyUrl-fn::getatt"></a>
-Property description not available.
+The authentication proxy URL of the endpoint.
 
 `CreatedAt`  <a name="CreatedAt-fn::getatt"></a>
 The date and time when the endpoint was created.

@@ -18,8 +18,6 @@ RDS for Oracle Database 12c is no longer supported. This information is only use
 
 To find what RUs are applied to Amazon RDS for Oracle Database 12c Release 2 (12.2.0.1), see the following table.
 
-****
-
 |  Date  |  RU  |
 | --- | --- |
 | 2022 January | [12.2.0.1.ru-2022-01.rur-2022-01.r1](#oracle-version-RU-RUR.12.2.0.1.ru-2022-01.rur-2022-01.r1) |

@@ -14,8 +14,6 @@ Change the hostname of an EC2 Windows instance. Note that the instance will be r
 ## Change Type Details
 <a name="ct-0h3p576mj4rqm-MAEc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-0h3p576mj4rqm |

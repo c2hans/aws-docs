@@ -31,7 +31,7 @@ Topics:
 
 From a viewer's perspective, starvation events may appear as video that lags, buffers, or freezes. Stream-starvations events can be brief (less than 5 seconds) or long (several minutes), depending on the nature of the starvation event.
 
-To allow monitoring for starvation events, IVS sends starvation events as Amazon EventBridge events; see [Examples: Stream Health Change](https://docs.aws.amazon.com//ivs/latest/LowLatencyUserGuide/eventbridge.html#eventbridge-examples-stream-health-change) in *Using Amazon EventBridge with Amazon IVS*. These are sent when a stream enters or exits a state of starvation. Depending on the use case, you can take an appropriate action, like notifying the broadcaster and viewers of intermittent stream conditions.
+To allow monitoring for starvation events, IVS sends starvation events as Amazon EventBridge events; see [Examples: Stream Health Change](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/eventbridge.html#eventbridge-examples-stream-health-change) in *Using Amazon EventBridge with Amazon IVS*. These are sent when a stream enters or exits a state of starvation. Depending on the use case, you can take an appropriate action, like notifying the broadcaster and viewers of intermittent stream conditions.
 
 For additional starvation monitoring tools, see [Monitoring Amazon IVS Low-Latency Streaming](stream-health.md), the IVS [ListStreams](https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_ListStreams.html) API operation (filtering by health), and the IVS [GetStream](https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_GetStream.html) operation (to analyze an individual stream). Also see [How do I monitor stream-starvation events?](#monitor-metrics-events-stream-starvation)
 
@@ -42,7 +42,7 @@ The following are the most common reasons why a stream can abruptly stop (i.e., 
 + **Missing ingest data** — When the ingest of a stream session completely stops (no data ingested into IVS) for 30 seconds, the IVS ingest server terminates the IVS stream session. The 30-second period allows the broadcaster to reconnect to the ingest server. However, in some cases (such as switching networks), reconnection to the existing stream session may not be possible, as the TLS handshake of RTMPS has been broken. Common root causes for this include network issues (like congestion between the broadcast device and IVS), complete loss of internet on the broadcast device, or the broadcast device not producing content segments (FLV tags).
 
   Often, stream disconnection aligns with a stream-starvation event; the starvation event is triggered when there is a halt in incoming data. If a starvation-start event is sent and then a stream-end event is sent (without a starvation-end event), this often indicates that the stream was ended due to no data being sent to IVS.
-+ **IVS StopStream operation** — During an IVS stream session, if the [StopStream](https://docs.aws.amazon.com//ivs/latest/LowLatencyAPIReference/API_StopStream.html) API call is made, the IVS stream session will end. The StopStream operation disconnects the incoming RTMPS stream from the IVS ingest server. Depending on the encoding software/hardware being used, a new stream session may be attempted.
++ **IVS StopStream operation** — During an IVS stream session, if the [StopStream](https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_StopStream.html) API call is made, the IVS stream session will end. The StopStream operation disconnects the incoming RTMPS stream from the IVS ingest server. Depending on the encoding software/hardware being used, a new stream session may be attempted.
 + **Encoder error** — Some software/hardware encoders will disconnect the stream session when an error occurs during the encoding process. From the IVS perspective, these disconnections appear as intentional disconnects by the broadcaster. However, in the encoding logs, it may be determined that the stream was disconnected due to an unintentional error.
 
 ### What happens when I switch networks while streaming?
@@ -55,16 +55,16 @@ To enable faster switching between networks, we recommend that you use the [stre
 ### How can I have multi-region redundancy with IVS?
 <a name="broadcast-encode-multi-region"></a>
 
-Redundancy within IVS can be achieved in several ways; see [IVS Resilience](https://docs.aws.amazon.com//ivs/latest/LowLatencyUserGuide/security-resilience.html) in *IVS Security* .
+Redundancy within IVS can be achieved in several ways; see [IVS Resilience](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/security-resilience.html) in *IVS Security* .
 
 IVS is separated into different networking planes; Control and Data.
 + The *control plane* is regional (based on AWS regions) and stores information about IVS resources (channels, stream keys, playback key pairs, and recording configurations).
 + The *data plane* is not restricted to an AWS region and is the network that carries data from ingest to egress. Even if a channel is created in the us-west-2 region (for example), the video that is streamed to that channel may not go through us-west-2.
 
-Also see [Global Solution, Regional Control](https://docs.aws.amazon.com//ivs/latest/LowLatencyUserGuide/what-is.html#what-is-aws). Consider these two scenarios:
+Also see [Global Solution, Regional Control](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/what-is.html#what-is-aws). Consider these two scenarios:
 + If only one control-plane region (e.g., us-east-1) is being used — If a particular AWS control region experiences a degradation or outage, the IVS control plane may experience latency or errors when creating, reading, updating, or deleting any of the following: channels, stream keys, playback key pairs, or recording configurations. Trying to start a new stream during an outage may result in more latency or errors when initiating a stream session. Depending on severity of the degradation, it may be possible to continue broadcasting to a channel with an already ongoing stream.
 
-  If [playback authorization](https://docs.aws.amazon.com//ivs/latest/LowLatencyUserGuide/private-channels-enable-playback-auth.html) is enabled, current viewers probably can continue their playback of ongoing streams, but new viewers may not be able to start viewing if there are issues with playback key-pair authorization. If playback authorization is not enabled, both current and new viewers should be able to view the ongoing stream.
+  If [playback authorization](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/private-channels-enable-playback-auth.html) is enabled, current viewers probably can continue their playback of ongoing streams, but new viewers may not be able to start viewing if there are issues with playback key-pair authorization. If playback authorization is not enabled, both current and new viewers should be able to view the ongoing stream.
 
   The IVS Auto-Record to S3 feature also may be interrupted in the event of an outage.
 
@@ -119,19 +119,19 @@ Topics:
 <a name="monitor-metrics-events-stream-starvation"></a>
 
 We recommend the following methods of monitoring for stream-starvation events:
-+ [ Amazon EventBridge with Amazon IVS](https://docs.aws.amazon.com//ivs/latest/LowLatencyUserGuide/eventbridge.html#eventbridge-examples-stream-health-change) — When a stream-starvation event starts or ends, IVS produces an EventBridge stream health change event. Using Amazon EventBridge targets and rules, you can use these stream-starvation event to get alerts when stream starvation is occurring. For details on targets and rules, see the [Amazon EventBridge User Guide](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html).
++ [ Amazon EventBridge with Amazon IVS](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/eventbridge.html#eventbridge-examples-stream-health-change) — When a stream-starvation event starts or ends, IVS produces an EventBridge stream health change event. Using Amazon EventBridge targets and rules, you can use these stream-starvation event to get alerts when stream starvation is occurring. For details on targets and rules, see the [Amazon EventBridge User Guide](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html).
 + [Monitoring Amazon IVS Low-Latency Streaming](stream-health.md) — During a live-stream session, data is recorded and then available via IVS stream-health analytics. This includes information about encoder configuration, ingest metrics, and stream-session events. This is beneficial when monitoring an ongoing stream or retroactively evaluating a stream. You can use the IVS console or API to identify streams that have experienced starvation. Stream-session data is available for 60 days, even after a channel is deleted, so this can be useful for identifying past streams with starvation events.
-+ Filtering Streams by Health — With the IVS console or the IVS [ListStreams](https://docs.aws.amazon.com//ivs/latest/LowLatencyAPIReference/API_ListStreams.html) API operation, you can use the `health` filter to find stream sessions that are in a `STARVING` state. Also, the IVS CloudWatch metric for `ConcurrentStreams` includes a `Health` dimension that you can use to gather a total count of streams that are in a stream-starvation state. See [Monitoring Amazon IVS Low-Latency Streaming](stream-health.md).
-+ You can use the IVS [GetStream](https://docs.aws.amazon.com//ivs/latest/LowLatencyAPIReference/API_GetStream.html) operation to analyze an individual stream.
++ Filtering Streams by Health — With the IVS console or the IVS [ListStreams](https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_ListStreams.html) API operation, you can use the `health` filter to find stream sessions that are in a `STARVING` state. Also, the IVS CloudWatch metric for `ConcurrentStreams` includes a `Health` dimension that you can use to gather a total count of streams that are in a stream-starvation state. See [Monitoring Amazon IVS Low-Latency Streaming](stream-health.md).
++ You can use the IVS [GetStream](https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_GetStream.html) operation to analyze an individual stream.
 
 Also see [What is stream starvation?](#broadcast-encode-stream-starvation)
 
 ### How do I use Amazon CloudWatch to monitor IVS service quotas?
 <a name="monitor-metrics-service-quotas"></a>
 
-You can use Amazon CloudWatch to proactively monitor/manage IVS service quotas. See [IVS Service Quotas](https://docs.aws.amazon.com//ivs/latest/LowLatencyUserGuide/service-quotas.html). This documentation includes information on creating CloudWatch alarms for usage metrics.
+You can use Amazon CloudWatch to proactively monitor/manage IVS service quotas. See [IVS Service Quotas](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/service-quotas.html). This documentation includes information on creating CloudWatch alarms for usage metrics.
 
-We recommend that you set up a proper SNS topic to notify the correct individuals/groups when an alarm is triggered. If the alarm is triggered and the quota is adjustable, you should request a service-quota increase with a new value. See [IVS Service Quotas](https://docs.aws.amazon.com//ivs/latest/LowLatencyUserGuide/service-quotas.html) for information on requesting an increase.
+We recommend that you set up a proper SNS topic to notify the correct individuals/groups when an alarm is triggered. If the alarm is triggered and the quota is adjustable, you should request a service-quota increase with a new value. See [IVS Service Quotas](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/service-quotas.html) for information on requesting an increase.
 
 ### How do I diagnose stream instability using IVS Stream Health?
 <a name="monitor-metrics-stream-instability"></a>
@@ -267,7 +267,7 @@ There are various reasons why recorded content may be missing. We recommend the 
 
       See if a `recordingConfigurationArn` is returned.
 
-1. Look in the designated S3 bucket for the Recording Contents for the specific stream session (see [S3 Prefix](https://docs.aws.amazon.com//ivs/latest/LowLatencyUserGuide/record-to-s3.html#r2s3-prefix).) The S3 key prefix for a recorded session is in the Amazon EventBridge [Recording State Change event](https://docs.aws.amazon.com//ivs/latest/LowLatencyUserGuide/eventbridge.html#eventbridge-examples-recording-state-change). Note: If the [merge fragmented streams](https://docs.aws.amazon.com//ivs/latest/LowLatencyUserGuide/record-to-s3.html#r2s3-merge-fragmented-streams) feature is enabled, some content may be another recorded session.
+1. Look in the designated S3 bucket for the Recording Contents for the specific stream session (see [S3 Prefix](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/record-to-s3.html#r2s3-prefix).) The S3 key prefix for a recorded session is in the Amazon EventBridge [Recording State Change event](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/eventbridge.html#eventbridge-examples-recording-state-change). Note: If the [merge fragmented streams](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/record-to-s3.html#r2s3-merge-fragmented-streams) feature is enabled, some content may be another recorded session.
 
 1. If the overall stream duration was less than 10 seconds or the content of the stream was missing (i.e., stream starvation occurred), recorded content may be missing as nothing was generated.
 

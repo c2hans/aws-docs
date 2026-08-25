@@ -100,7 +100,7 @@ The sale of hardware products isn't permitted on AWS Marketplace. If you're subm
 <a name="aws-cloudformation-launched-product-free-or-paid-or-usage-based-paid-ami-product"></a>
 
 **Note**
-Some pricing models no longer require you to use the product load form described in this section to publish AMI with CloudFormation products. When you create a **Amazon Machine Image (AMI) or AMI with CloudFormation** on the [server products](https://aws.amazon.com//marketplace/management/products/server) page in the seller portal, and are not immediately prompted to download the product load form, see [Creating AMI-based products](https://docs.aws.amazon.com//marketplace/latest/userguide/ami-single-ami-products.html) and [Add CloudFormation templates to your listing](https://docs.aws.amazon.com//marketplace/latest/userguide/cloudformation.html).
+Some pricing models no longer require you to use the product load form described in this section to publish AMI with CloudFormation products. When you create a **Amazon Machine Image (AMI) or AMI with CloudFormation** on the [server products](https://aws.amazon.com/marketplace/management/products/server) page in the seller portal, and are not immediately prompted to download the product load form, see [Creating AMI-based products](https://docs.aws.amazon.com/marketplace/latest/userguide/ami-single-ami-products.html) and [Add CloudFormation templates to your listing](https://docs.aws.amazon.com/marketplace/latest/userguide/cloudformation.html).
 
 Use a product load form (PLF) to submit products that AWS Marketplace customers launch by using CloudFormation templates. The PLF is available through the AWS Marketplace Management Portal.
 

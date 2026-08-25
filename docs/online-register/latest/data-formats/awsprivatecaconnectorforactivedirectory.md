@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsp
 
 AWS Private CA Connector for Active Directory provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="pca-connector-ad-GetConnector"></a>[GetConnector](https://docs.aws.amazon.com/pca-connector-ad/latest/APIReference/API_GetConnector.html) | Get a Connector in your account | Read |

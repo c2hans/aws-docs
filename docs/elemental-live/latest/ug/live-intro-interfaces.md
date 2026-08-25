@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/live-intro-inte
 
 Elemental Live can be controlled, configured, and monitored through the following interfaces.
 
-****
-
 | Interface | Description |
 | --- | --- |
 | Web browser via HTML | Using a web browser is the easiest way to control, configure, and monitor Elemental Live. This interface is used when a human is interacting with the server or when no automation or integration with other systems is required.  |

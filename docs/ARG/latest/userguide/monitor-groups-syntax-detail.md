@@ -43,7 +43,7 @@ The `GroupState` JSON objects contain the elements described in the following ta
 | Field name | Type | Description |
 | --- | --- | --- |
 | description | String | The customer-provided description of the resource group. |
-| resource-query | ResourceQuery JSON object | A JSON representation of the query that defines the group's members. This field is present only for groups based on a query. The syntax of this field is defined by the [ResourceQuery API data type](https://docs.aws.amazon.com//organizations/latest/APIReference/API_ResourceQuery.html). Example of this are included in the [Create](#monitor-groups-syntax-detail-state-change-create) and [Update](#monitor-groups-syntax-detail-state-change-update) event examples. |
+| resource-query | ResourceQuery JSON object | A JSON representation of the query that defines the group's members. This field is present only for groups based on a query. The syntax of this field is defined by the [ResourceQuery API data type](https://docs.aws.amazon.com/organizations/latest/APIReference/API_ResourceQuery.html). Example of this are included in the [Create](#monitor-groups-syntax-detail-state-change-create) and [Update](#monitor-groups-syntax-detail-state-change-update) event examples. |
 | group-configuration | Configuration JSON object | A JSON representation of configuration parameters associated with a service-linked group. For more information, see [Service configurations for resource groups](https://docs.aws.amazon.com/ARG/latest/APIReference/about-slg.html) in the AWS Resource Groups API Reference. |
 
 Each of the following code examples illustrates the contents of the `detail` field for each `state-change` type.

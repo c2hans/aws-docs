@@ -13,11 +13,11 @@ NoSQL Workbench creates tables and indexes with on-demand capacity by default.
 
 **To commit the data model to DynamoDB**
 
-1. Open NoSQL Workbench, and on the main screen, click on the name of the model that you want to commit.
+1. Open NoSQL Workbench, and on the main screen, choose the name of the model that you want to commit.
 
-1. In the top bar, click **Commit**.
+1. In the top bar, choose **Commit**.
 
-1. Choose an existing connection, or create a new connection by clicking the **Add new connection** button.
+1. Choose an existing connection, or create a new connection by choosing **Add new connection**.
    + To add a new connection, specify the following information:
      + **Account Alias**
      + **AWS Region**
@@ -33,10 +33,10 @@ NoSQL Workbench creates tables and indexes with on-demand capacity by default.
 
    1. Choose the **Local connection** tab.
 
-   1. Click the **Add new connection** button.
+   1. Choose **Add new connection**.
 
    1. Specify the **Connection name** and **Port**.
 **Note**
- To use DynamoDB local, you will need to turn it on by using the **DynamoDB local** toggle at the bottom left of the NoSQL Workbench screen.
+ To use DynamoDB local, turn it on by using the **DynamoDB local** toggle at the bottom left of the NoSQL Workbench screen.
 
-1. Click **Commit**.
+1. Choose **Commit**.

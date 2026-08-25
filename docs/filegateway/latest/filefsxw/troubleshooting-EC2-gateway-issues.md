@@ -7,7 +7,7 @@ Amazon FSx File Gateway is no longer available to new customers. Existing custom
 # Troubleshooting: Amazon EC2 gateway issues
 <a name="troubleshooting-EC2-gateway-issues"></a>
 
-In the following sections, you can find typical issues that you might encounter working with your gateway deployed on Amazon EC2. For more information about the difference between an on-premises gateway and a gateway deployed in Amazon EC2, see [Deploy a default Amazon EC2 host for FSx File GatewayDeploy a customized Amazon EC2 host for FSx File Gateway](ec2-gateway-file.md).
+In the following sections, you can find typical issues that you might encounter working with your gateway deployed on Amazon EC2. For more information about the difference between an on-premises gateway and a gateway deployed in Amazon EC2, see [Deploy a default Amazon EC2 host for FSx File Gateway](ec2-gateway-file.md).
 
 **Topics**
 + [Your gateway activation hasn't occurred after a few moments](#activation-issues)

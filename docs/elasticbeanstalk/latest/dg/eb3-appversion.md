@@ -30,8 +30,6 @@ Use the `lifecycle` option to display or create the application version lifecycl
 ## Options
 <a name="eb3-appversion-options"></a>
 
-****
-
 |  Name  |  Description Type: String  |
 | --- | --- |
 | -a {{application-name}}<br />or<br />--application\_name {{application-name}} | The name of the application. If an application with the specified name isn't found, the EB CLI creates an application version for a new application.<br />Only applicable with the `--create` option.<br />Type: String |

@@ -55,7 +55,7 @@ The total number of network interfaces depends on the DataSync locations in your
 <a name="view-network-interfaces"></a>
 
 To see the network interfaces allocated to your DataSync transfer task, do one of the following:
-+ Use the [DescribeTask](https://docs.aws.amazon.com//datasync/latest/userguide/API_DescribeTask.html) operation. The operation returns `SourceNetworkInterfaceArns` and `DestinationNetworkInterfaceArns` with responses that look like this:
++ Use the [DescribeTask](https://docs.aws.amazon.com/datasync/latest/userguide/API_DescribeTask.html) operation. The operation returns `SourceNetworkInterfaceArns` and `DestinationNetworkInterfaceArns` with responses that look like this:
 
   ```
   arn:aws:ec2:{{your-region}}:{{your-account-id}}:network-interface/eni-f012345678abcdef0

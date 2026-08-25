@@ -17,7 +17,6 @@ The AWS IoT Jobs library is written in C and designed to be compliant with [ISO 
 
 This library can be freely used and is distributed under the [MIT open source license](https://freertos.org/a00114.html).
 
-****
 <a name="jobs-memory-estimate"></a>
 <table>
 <thead>

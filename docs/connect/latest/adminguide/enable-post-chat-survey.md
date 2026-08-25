@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/enable-post-ch
 # Enable post-chat survey
 <a name="enable-post-chat-survey"></a>
 
-Post-chat survey enables you to collect end customer feedback immediately after a chat conversation ends. With the **`DisconnectOnCustomerExit`** parameter in the [StartChatContact](https://docs.aws.amazon.com/connect/latest/APIReference/API_StartChatContact.html) API, you can configure automatic agent disconnection when end customer disconnects, ensuring that disconnect flow is triggered consistently regardless of which participant disconnects first.
+Post-chat survey enables you to collect end customer feedback immediately after a chat conversation ends. With the **`DisconnectOnCustomerExit`** parameter in the [StartChatContact](https://docs.aws.amazon.com/connect/latest/APIReference/API_StartChatContact.html) API, you can configure automatic agent disconnection when end customer disconnects, making sure that disconnect flow is triggered consistently regardless of which participant disconnects first.
 
 ## Implementation options
 <a name="post-chat-survey-implementation"></a>
@@ -50,7 +50,7 @@ There are two ways to implement a survey in your disconnect flow:
 + **Option \#2: Using Lex** - Integrate with Amazon Lex for text-based survey collection. For more information, see [Add an Amazon Lex bot to Connect Customer](amazon-lex.md).
 
 **Note**
-For supervisor barge-in scenarios, ensure you add a [Flow block in Connect Customer: Set working queue](set-working-queue.md) block before **Transfer to Queue**. Omitting it will cause chat contacts to terminate rather than transfer for this feature.
+For supervisor barge-in scenarios, make sure you add a [Flow block in Connect Customer: Set working queue](set-working-queue.md) block before **Transfer to Queue**. Omitting it will cause chat contacts to terminate rather than transfer for this feature.
 
 ![A flow diagram showing the Set Working Queue block before Transfer to Queue for supervisor barge-in scenarios.](http://docs.aws.amazon.com/connect/latest/adminguide/images/post-chat-survey-set-working-queue-block.png)
 

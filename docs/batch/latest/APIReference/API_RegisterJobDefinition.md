@@ -868,7 +868,8 @@ Type: String to string map
 Required: No
 
  ** [platformCapabilities](#API_RegisterJobDefinition_RequestSyntax) **   <a name="Batch-RegisterJobDefinition-request-platformCapabilities"></a>
-The platform capabilities required by the job definition. If no value is specified, it defaults to `EC2`. To run the job on Fargate resources, specify `FARGATE`.
+The platform capabilities required by the job definition. If no value is specified, it defaults to `EC2`. To run the job on Fargate resources, specify `FARGATE`. To run the job on Amazon ECS Managed Instances, specify `MANAGED_INSTANCES`.
+Jobs with the `MANAGED_INSTANCES` platform capability must use `ecsProperties` (not `containerProperties`) and do not support multi-node parallel jobs.
 If the job runs on Amazon EKS resources, then you must not specify `platformCapabilities`.
 Type: Array of strings
 Valid Values: `EC2 | FARGATE`

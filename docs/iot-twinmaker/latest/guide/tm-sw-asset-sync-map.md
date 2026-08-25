@@ -62,8 +62,8 @@ The following resources are not synced:
 
 **Non-synced assets and asset models**
 + Alarm models will be synced as compositeModels, but corresponding data in the asset related to alarms are not synced.
-+ [AWS IoT SiteWise data streams](https://docs.aws.amazon.com//iot-sitewise/latest/userguide/manage-data-streams.html) are not synced. Only properties modeled in the asset model are synced.
-+ Property values for attributes, measurements, transforms, aggregates, and metadata calculation such as formula and window are not synced. Only the metadata about the properties, such as alias, unit of measure, and data type are synced. The values can be queried using the regular AWS IoT TwinMaker data connector API, [ GetPropertyValueHistory](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_GetPropertyValueHistory.html).
++ [AWS IoT SiteWise data streams](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/manage-data-streams.html) are not synced. Only properties modeled in the asset model are synced.
++ Property values for attributes, measurements, transforms, aggregates, and metadata calculation such as formula and window are not synced. Only the metadata about the properties, such as alias, unit of measure, and data type are synced. The values can be queried using the regular AWS IoT TwinMaker data connector API, [ GetPropertyValueHistory](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_GetPropertyValueHistory.html).
 
 ## Use synced entities and component types in AWS IoT TwinMaker
 <a name="tm-sw-asset-sync-component-types"></a>
@@ -80,4 +80,4 @@ Additional components are deleted along with the entity if the asset is deleted 
 You can use these synced entities in Grafana dashboards and add them as tags in the scene composer like regular entities. You can also issue knowledge graph queries for these synced entities.
 
 **Note**
-Synced entities without modification are not charged, but you are charged for those entities if changes have been made in AWS IoT TwinMaker. For example, if you add a non-synced component to a synced entity, that entity is now charged in AWS IoT TwinMaker. For more information, see [AWS IoT TwinMaker Pricing](https://aws.amazon.com//iot-twinmaker/pricing/).
+Synced entities without modification are not charged, but you are charged for those entities if changes have been made in AWS IoT TwinMaker. For example, if you add a non-synced component to a synced entity, that entity is now charged in AWS IoT TwinMaker. For more information, see [AWS IoT TwinMaker Pricing](https://aws.amazon.com/iot-twinmaker/pricing/).

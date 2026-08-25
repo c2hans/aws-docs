@@ -136,8 +136,6 @@ To control the amount of time that CloudFront keeps an object in the cache befor
 
 The following table explains how the `Cache-Control` and `Expires` headers sent from the origin work together with the TTL settings in a cache behavior to affect caching.
 
-****
-
 | Origin headers | Minimum TTL = 0 | Minimum TTL > 0 |
 | --- | --- | --- |
 | **The origin adds a `Cache-Control: max-age` directive to the object** | **CloudFront caching**<br />CloudFront caches the object for the lesser of the value of the `Cache-Control: max-age` directive or the value of the CloudFront maximum TTL.<br />**Browser caching**<br />Browsers cache the object for the value of the `Cache-Control: max-age` directive. | **CloudFront caching**<br />CloudFront caching depends on the values of the CloudFront minimum TTL and maximum TTL and the `Cache-Control max-age` directive:+  If minimum TTL < `max-age` < maximum TTL, then CloudFront caches the object for the value of the `Cache-Control: max-age` directive. <br />+  If `max-age` < minimum TTL, then CloudFront caches the object for the value of the CloudFront minimum TTL. <br />+  If `max-age` > maximum TTL, then CloudFront caches the object for the value of the CloudFront maximum TTL. <br />**Browser caching**<br />Browsers cache the object for the value of the `Cache-Control: max-age` directive. |

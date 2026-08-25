@@ -48,13 +48,13 @@ In compliance with [RFC 5280](https://datatracker.ietf.org/doc/html/rfc5280), th
 
 1. In the **Validation method** section, choose either **DNS validation – recommended** or **Email validation**, depending on your needs.
 **Note**
-If you are able to edit your DNS configuration, we recommend that you use DNS domain validation rather than email validation. DNS validation has multiple benefits over email validation. See [AWS Certificate Manager DNS validationDNS validation](dns-validation.md).
+If you are able to edit your DNS configuration, we recommend that you use DNS domain validation rather than email validation. DNS validation has multiple benefits over email validation. See [AWS Certificate Manager DNS validation](dns-validation.md).
 
    Before ACM issues a certificate, it validates that you own or control the domain names in your certificate request. You can use either email validation or DNS validation.
 
    1. If you choose email validation, ACM sends validation email to the domain that you specify in the domain name field. If you specify a validation domain, ACM sends the email to that validation domain instead. For more information about email validation, see [AWS Certificate Manager email validation](email-validation.md).
 
-   1. If you use DNS validation, you simply add a CNAME record provided by ACM to your DNS configuration. For more information about DNS validation, see [AWS Certificate Manager DNS validationDNS validation](dns-validation.md).
+   1. If you use DNS validation, you simply add a CNAME record provided by ACM to your DNS configuration. For more information about DNS validation, see [AWS Certificate Manager DNS validation](dns-validation.md).
 
 1. In the **Key algorithm** section, choose an algorithm.
 

@@ -59,7 +59,7 @@ Create a new Studio notebook by following the [Tutorial: Create a Studio noteboo
 ## Deploy an application with durable state using the AWS CLI
 <a name="example-notebook-deploy-cli"></a>
 
-To deploy an application using the AWS CLI, you must update your AWS CLI to use the service model provided with your Beta 2 information. For information about how to use the updated service model, see [Complete the prerequisitesComplete prerequisites](example-notebook.md#example-notebook-setup).
+To deploy an application using the AWS CLI, you must update your AWS CLI to use the service model provided with your Beta 2 information. For information about how to use the updated service model, see [Complete the prerequisites](example-notebook.md#example-notebook-setup).
 
 The following example code creates a new Studio notebook:
 

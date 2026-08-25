@@ -62,7 +62,7 @@ ALTER TABLE {{iceberg_table}}
 DROP [COLUMN] {{col_name}};
 ```
 
-`ADD COLUMN` adds one column to an existing Iceberg table. You can use any data type that is supported by Amazon Redshift Iceberg writes. For more information, see [Supported data types with Apache Iceberg tablesSupported data types](querying-iceberg-supported-data-types.md).
+`ADD COLUMN` adds one column to an existing Iceberg table. You can use any data type that is supported by Amazon Redshift Iceberg writes. For more information, see [Supported data types with Apache Iceberg tables](querying-iceberg-supported-data-types.md).
 
 `ADD COLUMN` is a metadata-only operation. The values of newly added columns on existing rows are `NULL`.
 
@@ -98,7 +98,7 @@ It can be widened by this `ALTER` statement:
 ALTER TABLE {{iceberg_table}} ALTER COLUMN cint TYPE int8;
 ```
 
-For the full list of data type mappings between Amazon Redshift types and Iceberg types, see [Supported data types with Apache Iceberg tablesSupported data types](querying-iceberg-supported-data-types.md).
+For the full list of data type mappings between Amazon Redshift types and Iceberg types, see [Supported data types with Apache Iceberg tables](querying-iceberg-supported-data-types.md).
 
 Widening the type of a column that belongs to the existing partition spec is not supported.
 

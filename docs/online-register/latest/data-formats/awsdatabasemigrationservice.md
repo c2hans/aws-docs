@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsd
 
 AWS Database Migration Service provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="dms-DescribeAccountAttributes"></a>[DescribeAccountAttributes](https://docs.aws.amazon.com/dms/latest/APIReference/API_DescribeAccountAttributes.html) | List all of the AWS DMS attributes for a customer account | Read |

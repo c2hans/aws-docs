@@ -48,7 +48,7 @@ For this tutorial, modify your configuration file to match the following configu
 ```
 Region: {{region-id}}
 Image:
- Os: alinux2
+ Os: alinux2023
 HeadNode:
  InstanceType: c5.xlarge
  Networking:

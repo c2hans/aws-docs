@@ -20,7 +20,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/upgrade-analysis.html
 <a name="upgrade-analysis-prerequisites"></a>
 
  The following prerequisites are required to use generative AI to upgrade jobs in AWS Glue:
-+  AWS Glue 2 PySpark jobs – only AWS Glue 2 jobs can be upgraded to AWS Glue 5.
++  Your job must be a PySpark job running on AWS Glue 2.0, 3.0, 4.0, 5.0, or 5.1. You can upgrade it to AWS Glue 4.0, 5.0, 5.1, or 6.0.
 +  IAM permissions are required to start the analysis, review the results and upgrade your job. For more information, see the examples in the [Permissions](#auto-upgrade-permissions) section below.
 +  If using AWS KMS to encrypt analysis artifacts, then additional AWS AWS KMS permissions are needed. For more information, see the examples in the [AWS KMS policy](#auto-upgrade-kms-policy) section below.
 
@@ -204,7 +204,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/upgrade-analysis.html
  To pass your own custom AWS KMS key when starting an analysis, please refer to the following section to configure appropriate permissions on the AWS KMS keys.
 
 #### Configuring the result artifact encryption using a AWS KMS key:
-<a name="w2aac37b7c20c13c13b5b5"></a>
+<a name="w2aac37b7c22c13c13b5b5"></a>
 
  This policy ensures that you have both the encryption and decryption permissions on the AWS KMS key.
 
@@ -261,7 +261,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/upgrade-analysis.html
  This example demonstrates the process of upgrading a AWS Glue job from version 2.0 to version 4.0. The sample job reads product data from an Amazon S3 bucket, applies several transformations to the data using Spark SQL, and then saves the transformed results back to an Amazon S3 bucket.
 
 ### Original code (AWS Glue 2.0) - before upgrade
-<a name="w2aac37b7c20c21b5b1"></a>
+<a name="w2aac37b7c22c21b5b1"></a>
 
 ```
 from awsglue.transforms import *
@@ -433,7 +433,7 @@ job.commit()
 <a name="upgrade-analysis-considerations"></a>
 
  As you begin using Spark Upgrades, there are several important aspects to consider for optimal usage of the service.
-+  **Service Scope and Limitations**: The current release focuses on PySpark code upgrades from AWS Glue versions 2.0 to version 5.0. At this time, the service handles PySpark code that doesn't rely on additional library dependencies. You can run automated upgrades for up to 10 jobs concurrently in an AWS account, allowing you to efficiently upgrade multiple jobs while maintaining system stability.
++  **Service Scope and Limitations**: The current release focuses on PySpark code upgrades from any supported source version. At this time, you can upgrade PySpark code that doesn't rely on additional library dependencies. You can run automated upgrades for up to 10 jobs concurrently in an AWS account, allowing you to efficiently upgrade multiple jobs while maintaining system stability.
   +  Only PySpark jobs are supported.
   +  Upgrade analysis will time out after 24 hours.
   +  Only one active upgrade analysis can be run at a time for one job. On the account-level, up to 10 active upgrade analysis can be run at the same time.
@@ -459,7 +459,7 @@ Generative AI upgrades for Apache Spark is available in the following regions:
 + **United States**: North Virginia (us-east-1), Ohio (us-east-2), and Oregon (us-west-2)
 
 ## Cross-region inference in Spark Upgrades
-<a name="w2aac37b7c20c37"></a>
+<a name="w2aac37b7c22c37"></a>
 
  Spark Upgrades is powered by Amazon Bedrock and leverages cross-region inference (CRIS). With CRIS, Spark Upgrades will automatically select the optimal region within your geography (as described in more detail [here](https://docs.aws.amazon.com/bedrock/latest/userguide/cross-region-inference.html)) to process your inference request, maximizing available compute resources and model availability, and providing the best customer experience. There's no additional cost for using cross-region inference.
 

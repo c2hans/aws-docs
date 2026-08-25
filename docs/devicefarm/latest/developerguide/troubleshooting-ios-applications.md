@@ -7,9 +7,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/trouble
 
 The following topic lists error messages that occur during the upload of iOS application tests and recommends workarounds to resolve each error.
 
-**Note**
-The instructions below are based on Linux x86\_64 and Mac.
-
 ## IOS\_APP\_UNZIP\_FAILED
 <a name="IOS_APP_UNZIP_FAILED"></a>
 

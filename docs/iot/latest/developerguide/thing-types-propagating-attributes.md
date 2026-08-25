@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/thing-types-pr
 
 In AWS IoT Core, you can enrich MQTT messages from devices by adding propagating attributes, which are contextual metadata from thing attributes or connection details. This process, known as message enrichment, can be helpful in various scenarios. For example, you can enrich messages for every inbound publish operation without making any device side changes or needing to use rules. By leveraging propagating attributes, you can benefit from a more efficient and cost-effective way to enrich your IoT data without the complexities of configuring rules or managing republishing configurations.
 
-The message enrichment feature is available to AWS IoT Core customers who use [basic ingest](https://docs.aws.amazon.com//iot/latest/developerguide/iot-basic-ingest.html) and [message broker](https://docs.aws.amazon.com//iot/latest/developerguide/mqtt.html). It's important to note while publishing devices can use any MQTT version, subscribers (applications or services consuming messages) must support [MQTT 5](https://docs.oasis-open.org/mqtt/mqtt/v5.0/mqtt-v5.0.html) to receive the enriched messages with propagating attributes. The enriched messages will be added as MQTT 5 user properties to every message published from devices. If you use[ rules](https://docs.aws.amazon.com//iot/latest/developerguide/iot-rules.html), you can leverage the [get\_user\_properties](https://docs.aws.amazon.com//iot/latest/developerguide/iot-sql-functions.html#iot-sql-function-get-user-properties) function to retrieve the enriched data for message routing or processing based on the data.
+The message enrichment feature is available to AWS IoT Core customers who use [basic ingest](https://docs.aws.amazon.com/iot/latest/developerguide/iot-basic-ingest.html) and [message broker](https://docs.aws.amazon.com/iot/latest/developerguide/mqtt.html). It's important to note while publishing devices can use any MQTT version, subscribers (applications or services consuming messages) must support [MQTT 5](https://docs.oasis-open.org/mqtt/mqtt/v5.0/mqtt-v5.0.html) to receive the enriched messages with propagating attributes. The enriched messages will be added as MQTT 5 user properties to every message published from devices. If you use[ rules](https://docs.aws.amazon.com/iot/latest/developerguide/iot-rules.html), you can leverage the [get\_user\_properties](https://docs.aws.amazon.com/iot/latest/developerguide/iot-sql-functions.html#iot-sql-function-get-user-properties) function to retrieve the enriched data for message routing or processing based on the data.
 
 In AWS IoT Core, you can add propagating attributes when you create or update a thing type, by using the AWS Management Console or the AWS CLI.
 
@@ -22,7 +22,7 @@ If you attempt to test this feature using the MQTT test client within console, i
 
 **To add propagating attributes for message enrichment using the AWS Management Console**
 
-1. Open the [AWS IoT home page](https://console.aws.amazon.com//iot/home#/home) in the AWS IoT console. On the left navigation, from **Manage**, choose **All devices**. Then choose **Thing types**.
+1. Open the [AWS IoT home page](https://console.aws.amazon.com/iot/home#/home) in the AWS IoT console. On the left navigation, from **Manage**, choose **All devices**. Then choose **Thing types**.
 
 1. On the **Thing types** page, choose **Create thing type**.
 

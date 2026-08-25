@@ -24,7 +24,7 @@ Most recent changes:
 | [Service client creation](configuring-service-clients-code.md#conf-service-client-code-basic) | Update code snippets by removing 'version' parameter since the 'latest' is the default. | August 31, 2023 |
 | [Basic client creation](making-service-requests.md#creating-a-client) | Update code snippets by removing 'version' parameter since the 'latest' is the default. | August 31, 2023 |
 | [Table of contents](#document-history) | Updated table of contents to make code examples more accessible. | June 1, 2023 |
-| [IAM best practices updates](#document-history) | Updated guide to align with the IAM best practices. For more information, see [Security best practices in IAM](https://docs.aws.amazon.com//IAM/latest/UserGuide/best-practices.html). Updates to Getting started. | May 20, 2023 |
+| [IAM best practices updates](#document-history) | Updated guide to align with the IAM best practices. For more information, see [Security best practices in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html). Updates to Getting started. | May 20, 2023 |
 | [Amazon S3 multipart uploads](s3-multipart-upload.md) | Included configuration information for synchronous uploads. Added the `add_content_md5` upload option for asynchronous uploads. | April 13, 2023 |
 | [Amazon S3 directory transfers](s3-transfer.md) | Added the `add_content_md5` transfer option.  | April 13, 2023 |
 | [Reference information](#document-history) | Added multiple links to relevant detail content in the AWS SDKs and Tools Reference Guide. Updated guide formatting. | September 14, 2022 |
@@ -34,8 +34,6 @@ Most recent changes:
 | [Amazon S3 encryption client migration](s3-encryption-migration-v1-v2.md) | Added topic on Amazon S3 encryption client migration | August 7, 2020 |
 
 Older changes:
-
-****
 
 | Change | Description | Release date |
 | --- | --- | --- |

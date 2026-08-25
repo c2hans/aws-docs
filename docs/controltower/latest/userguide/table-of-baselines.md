@@ -24,7 +24,7 @@ For the OU-level baseline, `AWSControlTowerBaseline`, the table that follows sho
 | 4.0 | 3.2 to 3.3 | BP\_BASELINE\_CLOUDWATCH, BP\_BASELINE\_CONFIG, BP\_BASELINE\_ROLES, BP\_BASELINE\_SERVICE\_LINKED\_ROLE, BP\_BASELINE\_SERVICE\_ROLES, Config SLR, IAM resources | New SLR blueprint |
 | 5.0 | 4.0 | BP\_BASELINE\_CLOUDWATCH, BP\_BASELINE\_CONFIG, BP\_BASELINE\_ROLES, BP\_BASELINE\_SERVICE\_LINKED\_ROLE, BP\_BASELINE\_SERVICE\_ROLES, Config SLR, IAM resources | Removed AWS Config Aggregation Authorization(s). AWS Config Aggregation Authorization from each member account is not needed since LandingZone version 4.0 adopted AWS Organizations Config Aggregator which has access to all member accounts within the Organization. |
 
-For more information about specific resources created in accounts when you set up your landing zone, see [Resources created in the shared accounts](https://docs.aws.amazon.com//controltower/latest/userguide/shared-account-resources.html).
+For more information about specific resources created in accounts when you set up your landing zone, see [Resources created in the shared accounts](https://docs.aws.amazon.com/controltower/latest/userguide/shared-account-resources.html).
 
 If you update your landing zone to a version that supports a newer `AWSControlTowerBaseline` baseline version, and the new landing zone version is compatible with your existing baseline version, your OU state changes to **Update available**.
 + You can continue to use account factory and other features without updating the OU baseline immediately, except in the case of a landing zone update from 2.x to 3.x.

@@ -7,9 +7,9 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/evaluat
 
 There are two ways to evaluate positions against geofences to generate geofence events:
 + You can link Trackers and Geofence Collections. For more information, see the section: [Tutorial: Link a tracker to a geofence collection in Amazon Location](associate-consumer.md).
-+ You can make a direct request to the geofence collection resource to evaluate one or more positions, using the [BatchEvaluateGeofences](https://docs.aws.amazon.com//location/previous/APIReference/API_BatchEvaluateGeofences.html) API.
++ You can make a direct request to the geofence collection resource to evaluate one or more positions, using the [BatchEvaluateGeofences](https://docs.aws.amazon.com/location/previous/APIReference/API_BatchEvaluateGeofences.html) API.
 
-Additionally, you can forecast incoming geofence events for a device entering, exiting, or remaining idle within a geofence. Use the [ForecastGeofenceEvents](https://docs.aws.amazon.com//location/previous/APIReference/API_ForecastGeofenceEvents.html) API to forecast events.
+Additionally, you can forecast incoming geofence events for a device entering, exiting, or remaining idle within a geofence. Use the [ForecastGeofenceEvents](https://docs.aws.amazon.com/location/previous/APIReference/API_ForecastGeofenceEvents.html) API to forecast events.
 
 If you also want to track your device location history or display locations on a map, link the tracker with a geofence collection. Alternatively, you may not want to evaluate all location updates, or you don't intend to store location data in a tracker resource. If either of these is the case, you can make a direct request to the geofence collection and evaluate one or more device positions against its geofences.
 
@@ -68,9 +68,9 @@ aws location \
 
 ------
 
-Evaluating device positions against geofences generates events. Traditionally you can react to the events by using [Amazon EventBridge](https://docs.aws.amazon.com//location/previous/developerguide/evaluate-geofences.html), but this process only lets you react to events after then have happened. If you need to anticipate when a device enters or exits a geofence, for example if a device is crossing a border and will be subject to a different regulations as a consequence, then you can use the [ForecastGeofenceEvents](https://docs.aws.amazon.com//location/previous/APIReference/API_ForecastGeofenceEvents.html) API to predict future geofence events.
+Evaluating device positions against geofences generates events. Traditionally you can react to the events by using [Amazon EventBridge](https://docs.aws.amazon.com/location/previous/developerguide/evaluate-geofences.html), but this process only lets you react to events after then have happened. If you need to anticipate when a device enters or exits a geofence, for example if a device is crossing a border and will be subject to a different regulations as a consequence, then you can use the [ForecastGeofenceEvents](https://docs.aws.amazon.com/location/previous/APIReference/API_ForecastGeofenceEvents.html) API to predict future geofence events.
 
-The [ForecastGeofenceEvents](https://docs.aws.amazon.com//location/previous/APIReference/API_ForecastGeofenceEvents.html) API uses criteria such as the device's time-to-breach, proximity, speed, and position to predict events. There API will return a ` ForecastedBreachTime`, which signals the estimated time the geofence event will occur.
+The [ForecastGeofenceEvents](https://docs.aws.amazon.com/location/previous/APIReference/API_ForecastGeofenceEvents.html) API uses criteria such as the device's time-to-breach, proximity, speed, and position to predict events. There API will return a ` ForecastedBreachTime`, which signals the estimated time the geofence event will occur.
 
 The following example uses the Amazon Location APIs.
 
@@ -79,7 +79,7 @@ The following example uses the Amazon Location APIs.
 
 **To forecast geofence events using the Amazon Location APIs**
 
-Use the ` [ForecastGeofenceEvents](https://docs.aws.amazon.com//location/previous/APIReference/API_ForecastGeofenceEvents.html)` operation from the Amazon Location Geofences APIs.
+Use the ` [ForecastGeofenceEvents](https://docs.aws.amazon.com/location/previous/APIReference/API_ForecastGeofenceEvents.html)` operation from the Amazon Location Geofences APIs.
 
 The following example uses an API request to forecast geofence events for an {{ExampleDevice}} relative to an {{ExampleGeofence}}. Replace these values with your own geofence and device IDs.
 

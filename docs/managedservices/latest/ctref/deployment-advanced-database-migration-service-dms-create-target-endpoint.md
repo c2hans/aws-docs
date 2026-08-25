@@ -14,8 +14,6 @@ Create a Database Migration Service (DMS) target endpoint for Amazon Redshift an
 ## Change Type Details
 <a name="ct-3gf8dolbo8x9p-DADc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-3gf8dolbo8x9p |

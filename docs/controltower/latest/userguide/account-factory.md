@@ -18,7 +18,7 @@ The AWS Control Tower Account Factory enables cloud administrators and users in 
 **Note**
 Exercise caution when working from the management account, as you would when using any account that has permissions across your organization.
 
-The AWS Control Tower management account has a trust relationship with the `AWSControlTowerExecution` role, which allows account setup from the management account, including some automated account setup. For more information about the `AWSControlTowerExecution` role, see [Roles and accounts](https://docs.aws.amazon.com//controltower/latest/userguide/roles-how.html).
+The AWS Control Tower management account has a trust relationship with the `AWSControlTowerExecution` role, which allows account setup from the management account, including some automated account setup. For more information about the `AWSControlTowerExecution` role, see [Roles and accounts](https://docs.aws.amazon.com/controltower/latest/userguide/roles-how.html).
 
 **Note**
 To enroll an existing AWS account into AWS Control Tower, that account must have the `AWSControlTowerExecution` role enabled. For more information about how to enroll an existing account, see [About enrolling existing accounts](enroll-account.md).
@@ -31,4 +31,4 @@ For more information about permissions, see [Permissions required for provisioni
  You can update, unenroll, and close accounts that you create and provision through Account Factory. You can recycle accounts by updating the user parameters in the accounts that you want to repurpose. You can also change an account's organizational unit (OU).
 
 **Note**
- When updating a provisioned product that's associated with an account that Account Factory vends, if you specify a new user email address for AWS IAM Identity Center, AWS Control Tower creates a new user in IAM Identity Center. The previously created account isn't removed. For information about removing the previous IAM Identity Center user email address from IAM Identity Center, see [Disabling a User](https://docs.aws.amazon.com//singlesignon/latest/userguide/disableuser.html).
+ When updating a provisioned product that's associated with an account that Account Factory vends, if you specify a new user email address for AWS IAM Identity Center, AWS Control Tower creates a new user in IAM Identity Center. The previously created account isn't removed. For information about removing the previous IAM Identity Center user email address from IAM Identity Center, see [Disabling a User](https://docs.aws.amazon.com/singlesignon/latest/userguide/disableuser.html).

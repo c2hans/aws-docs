@@ -105,7 +105,7 @@ In addition to gateway-related permissions, you’ll also need to configure perm
 
 When creating a gateway, you need a service role that has permissions to assume an IAM role and to access AWS resources and external services on the IAM role’s behalf. You can create the service role in the following ways:
 + If you create a gateway in the AWS Management Console or through the AgentCore CLI, you can choose to let AgentCore automatically create a service role for you with the necessary permissions. If you prefer this method, you can skip this prerequisite.
-+ If you prefer to create your own service role for greater customization, you’ll need to configure the role with the permissions outlined in this topic. To learn how to create a service role and attach permissions to it, see [Create a role to delegate permissions to an AWS service](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_roles_create_for-service.html).
++ If you prefer to create your own service role for greater customization, you’ll need to configure the role with the permissions outlined in this topic. To learn how to create a service role and attach permissions to it, see [Create a role to delegate permissions to an AWS service](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-service.html).
 
 The required permissions for a service role are in the following topics:
 

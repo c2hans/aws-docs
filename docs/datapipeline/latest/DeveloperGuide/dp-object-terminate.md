@@ -46,20 +46,14 @@ The following is an example of this object type. In this example, the `onLateAct
 ## Syntax
 <a name="terminate-syntax"></a>
 
-****
-
 | Optional Fields | Description | Slot Type |
 | --- | --- | --- |
 | parent | Parent of the current object from which slots are inherited. | Reference Object, for example "parent":{"ref":"myBaseObjectId"} |
-
-****
 
 | Runtime Fields | Description | Slot Type |
 | --- | --- | --- |
 | node | The node for which this action is being performed. | Reference Object, for example "node":{"ref":"myRunnableObjectId"} |
 | @version | Pipeline version that the object was created with. | String |
-
-****
 
 | System Fields | Description | Slot Type |
 | --- | --- | --- |

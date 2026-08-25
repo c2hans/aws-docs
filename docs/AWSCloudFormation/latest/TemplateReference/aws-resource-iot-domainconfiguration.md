@@ -129,7 +129,7 @@ The ARNs of the certificates that AWS IoT passes to the device during the TLS ha
 
 `ServerCertificateConfig`  <a name="cfn-iot-domainconfiguration-servercertificateconfig"></a>
 The server certificate configuration.
-For more information, see [Configurable endpoints](https://docs.aws.amazon.com//iot/latest/developerguide/iot-custom-endpoints-configurable.html) from the AWS IoT Core Developer Guide.
+For more information, see [Configurable endpoints](https://docs.aws.amazon.com/iot/latest/developerguide/iot-custom-endpoints-configurable.html) from the AWS IoT Core Developer Guide.
 *Required*: No
 *Type*: [ServerCertificateConfig](aws-properties-iot-domainconfiguration-servercertificateconfig.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

@@ -42,7 +42,7 @@ For more information on cancelling a service instance deployment, see [CancelSer
 
 **Update a service instance using the console by following these steps.**
 
-1. In the [AWS Proton console](https://console.aws.amazon.com//proton/), choose **Service instances** in the navigation pane.
+1. In the [AWS Proton console](https://console.aws.amazon.com/proton/), choose **Service instances** in the navigation pane.
 
 1. In the list of service instances, choose the name of the service instance that you want to update.
 
@@ -150,7 +150,7 @@ Response:
 
 **Cancel a service instance deployment using the console as shown in the following steps.**
 
-1. In the [AWS Proton console](https://console.aws.amazon.com//proton/), choose **Service instances** in the navigation pane.
+1. In the [AWS Proton console](https://console.aws.amazon.com/proton/), choose **Service instances** in the navigation pane.
 
 1. In the list of service instances, choose the name of the service instance with the deployment update that you want to cancel.
 

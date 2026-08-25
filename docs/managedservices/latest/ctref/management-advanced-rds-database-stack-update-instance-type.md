@@ -14,8 +14,6 @@ Change the DB instance type through direct API calls. The RDS instance can be st
 ## Change Type Details
 <a name="ct-13swbwdxg106z-MARu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-13swbwdxg106z |

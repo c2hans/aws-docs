@@ -46,7 +46,7 @@ Before you start, make sure that Docker is installed and the Docker daemon is ru
 
 To enable AWS API calls from the container, set up AWS credentials by following steps. In the following sections, we will use this AWS named profile.
 
-1.  [ Create an AWS named profile ](https://docs.aws.amazon.com//cli/latest/userguide/cli-configure-files.html).
+1.  [ Create an AWS named profile ](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html).
 
 1.  Open `cmd` on Windows or a terminal on Mac/Linux and run the following command in a terminal:
 

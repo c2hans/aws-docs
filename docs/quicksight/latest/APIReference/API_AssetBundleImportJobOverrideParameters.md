@@ -60,6 +60,12 @@ Type: Array of [AssetBundleImportJobThemeOverrideParameters](API_AssetBundleImpo
 Array Members: Minimum number of 1 item. Maximum number of 50 items.
 Required: No
 
+ ** TopicsV2 **   <a name="QS-Type-AssetBundleImportJobOverrideParameters-TopicsV2"></a>
+A list of overrides for any `Topic` resources that are present in the asset bundle that is imported.
+Type: Array of [AssetBundleImportJobTopicV2OverrideParameters](API_AssetBundleImportJobTopicV2OverrideParameters.md) objects
+Array Members: Minimum number of 1 item. Maximum number of 50 items.
+Required: No
+
  ** VPCConnections **   <a name="QS-Type-AssetBundleImportJobOverrideParameters-VPCConnections"></a>
 A list of overrides for any `VPCConnection` resources that are present in the asset bundle that is imported.
 Type: Array of [AssetBundleImportJobVPCConnectionOverrideParameters](API_AssetBundleImportJobVPCConnectionOverrideParameters.md) objects

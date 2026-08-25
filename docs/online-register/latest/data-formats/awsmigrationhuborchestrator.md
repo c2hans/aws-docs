@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsm
 
 AWS Migration Hub Orchestrator provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="migrationhub-orchestrator-GetMessage"></a>[GetMessage](https://docs.aws.amazon.com/migrationhub-orchestrator/latest/APIReference/API_GetMessage.html) | The plugin to receive information from the service | Read |

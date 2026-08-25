@@ -130,7 +130,7 @@ With multi-attribute keys, you write items once with natural domain attributes. 
 ## Prerequisites
 <a name="GSI.DesignPattern.MultiAttributeKeys.Prerequisites"></a>
 
-Before you begin, ensure you have:
+Before you begin, make sure you have:
 
 ### Account and permissions
 <a name="GSI.DesignPattern.MultiAttributeKeys.Prerequisites.AWSAccount"></a>

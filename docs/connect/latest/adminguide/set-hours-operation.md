@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/set-hours-oper
 
 This topic explains how to set hours of operating by using the Connect Customer admin website. To set hours programmatically, see [Hours of operations actions](https://docs.aws.amazon.com/connect/latest/APIReference/hours-of-operation-api.html).
 
-The first thing you need to do when you set up a queue is to specify the hours of operation and timezone. The hours may be referenced in flows. For example, when routing contacts to agents, you might use the [Check hours of operation](check-hours-of-operation.md) block first, and then route the contact to the appropriate queue.
+The first thing you need to do when you set up a queue is to specify the hours of operation and timezone. The hours might be referenced in flows. For example, when routing contacts to agents, you might use the [Check hours of operation](check-hours-of-operation.md) block first, and then route the contact to the appropriate queue.
 
 ![An Hours of operation page with overrides.](http://docs.aws.amazon.com/connect/latest/adminguide/images/hoop-listpage.png)
 
@@ -98,7 +98,7 @@ Connect Customer uses the timezone to determine whether daylight saving time is 
 Connect Customer provides options for EST5EDT, PST8PDT, CST6CDT, and more. For example, EST5EDT is defined as:
  [Eastern Standard Time (EST)](https://en.wikipedia.org/wiki/Eastern_Time_Zone) is used when observing standard time. It is five hours behind Coordinated Universal Time (UTC).
  [Eastern Daylight Time (EDT)](https://en.wikipedia.org/wiki/Eastern_Time_Zone) is used when observing daylight saving time. It is four hours behind Coordinated Universal Time (UTC).
-We recommend researching your choice of timezone to ensure you understand it.
+We recommend researching your choice of timezone to make sure you understand it.
 
 ### Example
 <a name="example-dst"></a>

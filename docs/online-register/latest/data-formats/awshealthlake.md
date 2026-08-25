@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsh
 
 AWS HealthLake provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="healthlake-DescribeDataTransformationJob"></a>[DescribeDataTransformationJob](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_DescribeDataTransformationJob.html) | Describe a data transformation job | Read |
@@ -39,6 +37,8 @@ AWS HealthLake provides the following APIs for data retrieval.
 | <a name="healthlake-SearchEverything"></a>[SearchEverything](https://docs.aws.amazon.com/healthlake/latest/devguide/search-healthlake.html) | Search all resources related to a patient | Read |
 | <a name="healthlake-SearchWithGet"></a>[SearchWithGet](https://docs.aws.amazon.com/healthlake/latest/devguide/search-healthlake.html) | Search resources with GET method | Read |
 | <a name="healthlake-SearchWithPost"></a>[SearchWithPost](https://docs.aws.amazon.com/healthlake/latest/devguide/search-healthlake.html) | Search resources with POST method | Read |
+| <a name="healthlake-TranslateConceptMapWithGet"></a>[TranslateConceptMapWithGet](https://docs.aws.amazon.com/healthlake/latest/devguide/reference-fhir-operations-translate.html) | Translate a code from one value set to another using a ConceptMap resource with GET method | Read |
+| <a name="healthlake-TranslateConceptMapWithPost"></a>[TranslateConceptMapWithPost](https://docs.aws.amazon.com/healthlake/latest/devguide/reference-fhir-operations-translate.html) | Translate a code from one value set to another using a ConceptMap resource with POST method | Read |
 | <a name="healthlake-ValidateResource"></a>[ValidateResource](https://docs.aws.amazon.com/healthlake/latest/devguide/reference-fhir-operations-validate.html) | Validate a resource | Read |
 | <a name="healthlake-ValidateSource"></a>[ValidateSource](https://docs.aws.amazon.com/healthlake/latest/devguide/data-transformation-features.html) | Validate source data against format specifications | Read |
 | <a name="healthlake-VersionReadResource"></a>[VersionReadResource](https://docs.aws.amazon.com/healthlake/latest/devguide/crud-healthlake.html) | Read version of a resource | Read |

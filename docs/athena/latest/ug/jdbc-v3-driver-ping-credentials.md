@@ -12,8 +12,6 @@ A SAML-based authentication mechanism that enables authentication to Athena usin
 
 The credentials provider that will be used to authenticate requests to AWS. Set the value of this parameter to `Ping`.
 
-****
-
 | Parameter name | Alias | Parameter type | Default value | Value to use |
 | --- | --- | --- | --- | --- |
 | CredentialsProvider | AWSCredentialsProviderClass (deprecated) | Required | none | Ping |
@@ -23,8 +21,6 @@ The credentials provider that will be used to authenticate requests to AWS. Set 
 
 The email address of the Ping Federate user to use for authentication with Ping Federate.
 
-****
-
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
 | User | UID (deprecated) | Required | none |
@@ -33,8 +29,6 @@ The email address of the Ping Federate user to use for authentication with Ping 
 <a name="jdbc-v3-driver-ping-password"></a>
 
 The password for the Ping Federate user.
-
-****
 
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
@@ -49,8 +43,6 @@ The address for your Ping server. To find your address, visit the following URL 
 https://your-pf-host-#:9999/pingfederate/your-pf-app#/spConnections
 ```
 
-****
-
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
 | PingHostName | IdP\_Host (deprecated) | Required | none |
@@ -59,8 +51,6 @@ https://your-pf-host-#:9999/pingfederate/your-pf-app#/spConnections
 <a name="jdbc-v3-driver-ping-port-number"></a>
 
 The port number to use to connect to your IdP host.
-
-****
 
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
@@ -75,8 +65,6 @@ The service provider address. To find the service provider address, visit the fo
 https://your-pf-host-#:9999/pingfederate/your-pf-app#/spConnections
 ```
 
-****
-
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
 | PingPartnerSpId | Partner\_SPID (deprecated) | Required | none |
@@ -85,8 +73,6 @@ https://your-pf-host-#:9999/pingfederate/your-pf-app#/spConnections
 <a name="jdbc-v3-driver-ping-preferred-role"></a>
 
 The Amazon Resource Name (ARN) of the role to assume. For information about ARN roles, see [AssumeRole](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html) in the *AWS Security Token Service API Reference*.
-
-****
 
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
@@ -97,8 +83,6 @@ The Amazon Resource Name (ARN) of the role to assume. For information about ARN 
 
 The duration, in seconds, of the role session. For more information, see [AssumeRole](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html) in the *AWS Security Token Service API Reference*.
 
-****
-
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
 | RoleSessionDuration | Duration (deprecated) | Optional | 3600 |
@@ -107,8 +91,6 @@ The duration, in seconds, of the role session. For more information, see [Assume
 <a name="jdbc-v3-driver-ping-lake-formation-enabled"></a>
 
 Specifies whether to use the [AssumeDecoratedRoleWithSAML](https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_AssumeDecoratedRoleWithSAML.html) Lake Formation API action to retrieve temporary IAM credentials instead of the [AssumeRoleWithSAML](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRoleWithSAML.html) AWS STS API action.
-
-****
 
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |

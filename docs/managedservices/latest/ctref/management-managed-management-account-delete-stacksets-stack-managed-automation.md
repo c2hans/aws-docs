@@ -14,8 +14,6 @@ Delete AWS CloudFormation (CFN) StackSets-created stacks and instances.
 ## Change Type Details
 <a name="ct-1yqy4frl5s8y8-MMMd-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1yqy4frl5s8y8 |

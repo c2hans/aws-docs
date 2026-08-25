@@ -31,8 +31,6 @@ However, the Java Cryptography Extension (JCE) does not specify how you should s
 
 You can set values for the attributes listed in the table below. As a best practice, only set values for attributes you wish to make restrictive. If you don’t specify a value, CloudHSM uses the default value specified in the table below. An empty cell in the Default Value columns indicates that there is no specific default value assigned to the attribute.
 
-****
-
 <table>
 <thead>
   <tr><th>Attribute</th><th colspan="3">Default Value</th><th>Notes</th></tr>
@@ -65,8 +63,6 @@ To set custom values on attributes, you have two options:
 + Use builder patterns demonstrated later in this document
 
 Attribute map objects support the following methods to set attributes:
-
-****
 
 | Operation | Return Value | `CloudHSMKeyAttributesMap` method |
 | --- | --- | --- |
@@ -186,8 +182,6 @@ To specify key attributes with your key operations, follow these steps:
 1. Pass this `Cavium*ParameterSpec` object into a corresponding crypto class or method.
 
 For reference, the following table contains the `Cavium*ParameterSpec` classes and methods which support custom key attributes.
-
-****
 
 | Key Type | Parameter Spec Class | Example Constructors |
 | --- | --- | --- |

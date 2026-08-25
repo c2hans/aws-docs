@@ -26,7 +26,7 @@ In addition to permissions for service resources, an IAM entity requires permiss
 
 You can quickly grant permissions by attaching the AWS managed policy, **PowerUserAccess**, to the IAM entity that's calling these API operations using the Toolkit interface. This managed policy grants a range of permissions for performing application development tasks, including calling API operations.
 
-For specific permissions that define allowable API operations on remote resources, see the [AWS Cloud Control API User Guide.](https://docs.aws.amazon.com//cloudcontrolapi/latest/userguide/security.html)
+For specific permissions that define allowable API operations on remote resources, see the [AWS Cloud Control API User Guide.](https://docs.aws.amazon.com/cloudcontrolapi/latest/userguide/security.html)
 
 ## Interacting with existing resources
 <a name="configure-resources"></a>

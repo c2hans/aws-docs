@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::QuickSight::Agent AgentTag
 <a name="aws-properties-quicksight-agent-agenttag"></a>
 
-<a name="aws-properties-quicksight-agent-agenttag-description"></a>The `AgentTag` property type specifies Property description not available. for an [AWS::QuickSight::Agent](aws-resource-quicksight-agent.md).
+A key-value pair that represents a resource tag assigned to the agent.
 
 ## Syntax
 <a name="aws-properties-quicksight-agent-agenttag-syntax"></a>
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-quicksight-agent-agenttag-properties"></a>
 
 `Key`  <a name="cfn-quicksight-agent-agenttag-key"></a>
-Property description not available.
+The key of the resource tag.
 *Required*: Yes
 *Type*: String
 *Minimum*: `1`
@@ -44,7 +44,7 @@ Property description not available.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Value`  <a name="cfn-quicksight-agent-agenttag-value"></a>
-Property description not available.
+The value of the resource tag.
 *Required*: Yes
 *Type*: String
 *Minimum*: `0`

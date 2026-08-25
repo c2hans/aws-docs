@@ -24,8 +24,6 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_redshift-data-actions-as-permissions).
 
-****
-
 - **   BatchExecuteStatement  **
   - **IAM action:**  [redshift-data:BatchExecuteStatement](#list_redshift-data-action-BatchExecuteStatement)
   - **Condition key:**
@@ -102,8 +100,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
 <a name="list_redshift-data-actions-as-permissions"></a>
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
-
-****
 
 - **   [BatchExecuteStatement](https://docs.aws.amazon.com/redshift-data/latest/APIReference/API_BatchExecuteStatement.html)  **
   - **Description:** Grants permission to execute multiple queries under a single connection
@@ -182,8 +178,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
 
-****
-
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
 |  [cluster](https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-clusters.html)  | arn:${Partition}:redshift:${Region}:${Account}:cluster:${ClusterName} | [aws:ResourceTag/${TagKey}](#list_redshift-data-aws_ResourceTag___TagKey_) |
@@ -194,8 +188,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_redshift-data-policy-keys"></a>
 
 Amazon Redshift Data API defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

@@ -29,8 +29,6 @@ AWS Elemental Appliances and Software Activation Service has no API operations t
 
 The following actions are defined by AWS Elemental Appliances and Software Activation Service but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 | Actions | Description | Resource types (\*required) | Condition keys | Access level |
 | --- | --- | --- | --- | --- |
 |   [CompleteAccountRegistration](https://docs.aws.amazon.com/elemental-appliances-software/)  | Grants permission to complete the process of registering customer account for AWS Elemental Appliances and Software Purchases |  |   | Write |

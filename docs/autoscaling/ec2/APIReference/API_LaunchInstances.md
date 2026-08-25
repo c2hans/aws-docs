@@ -92,6 +92,10 @@ Type: Array of [InstanceCollection](API_InstanceCollection.md) objects
 
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
+ ** IdempotentCallInProgress **
+ The service is currently processing another request with the same client token. Retry the request with the same client token—the in-flight operation will complete and return its result.
+HTTP Status Code: 500
+
  ** IdempotentParameterMismatch **
  Indicates that the parameters in the current request do not match the parameters from a previous request with the same client token within the idempotency window.
 HTTP Status Code: 400

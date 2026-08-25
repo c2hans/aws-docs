@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsi
 
 AWS IoT FleetWise provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="iotfleetwise-GetCampaign"></a>[GetCampaign](https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_GetCampaign.html) | Get summary information for a given campaign | Read |

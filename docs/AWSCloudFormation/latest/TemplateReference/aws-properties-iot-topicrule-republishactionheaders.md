@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::IoT::TopicRule RepublishActionHeaders
 <a name="aws-properties-iot-topicrule-republishactionheaders"></a>
 
-Specifies MQTT Version 5.0 headers information. For more information, see [MQTT](https://docs.aws.amazon.com//iot/latest/developerguide/mqtt.html) in the IoT Core Developer Guide.
+Specifies MQTT Version 5.0 headers information. For more information, see [MQTT](https://docs.aws.amazon.com/iot/latest/developerguide/mqtt.html) in the IoT Core Developer Guide.
 
 ## Syntax
 <a name="aws-properties-iot-topicrule-republishactionheaders-syntax"></a>
@@ -47,7 +47,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 `ContentType`  <a name="cfn-iot-topicrule-republishactionheaders-contenttype"></a>
 A UTF-8 encoded string that describes the content of the publishing message.
 For more information, see [ Content Type](https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html#_Toc3901118) in the MQTT Version 5.0 specification.
-Supports [substitution templates](https://docs.aws.amazon.com//iot/latest/developerguide/iot-substitution-templates.html).
+Supports [substitution templates](https://docs.aws.amazon.com/iot/latest/developerguide/iot-substitution-templates.html).
 *Required*: No
 *Type*: String
 *Minimum*: `0`
@@ -57,7 +57,7 @@ Supports [substitution templates](https://docs.aws.amazon.com//iot/latest/develo
 `CorrelationData`  <a name="cfn-iot-topicrule-republishactionheaders-correlationdata"></a>
 The base64-encoded binary data used by the sender of the request message to identify which request the response message is for.
 For more information, see [ Correlation Data](https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html#_Toc3901115) in the MQTT Version 5.0 specification.
-Supports [substitution templates](https://docs.aws.amazon.com//iot/latest/developerguide/iot-substitution-templates.html).
+Supports [substitution templates](https://docs.aws.amazon.com/iot/latest/developerguide/iot-substitution-templates.html).
  This binary data must be base64-encoded.
 *Required*: No
 *Type*: String
@@ -66,8 +66,8 @@ Supports [substitution templates](https://docs.aws.amazon.com//iot/latest/develo
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `MessageExpiry`  <a name="cfn-iot-topicrule-republishactionheaders-messageexpiry"></a>
-A user-defined integer value that represents the message expiry interval at the broker. If the messages haven't been sent to the subscribers within that interval, the message expires and is removed. The value of `messageExpiry` represents the number of seconds before it expires. For more information about the limits of `messageExpiry`, see [Message broker and protocol limits and quotas](https://docs.aws.amazon.com//general/latest/gr/iot-core.html#limits_iot) in the IoT Core Reference Guide.
-Supports [substitution templates](https://docs.aws.amazon.com//iot/latest/developerguide/iot-substitution-templates.html).
+A user-defined integer value that represents the message expiry interval at the broker. If the messages haven't been sent to the subscribers within that interval, the message expires and is removed. The value of `messageExpiry` represents the number of seconds before it expires. For more information about the limits of `messageExpiry`, see [Message broker and protocol limits and quotas](https://docs.aws.amazon.com/general/latest/gr/iot-core.html#limits_iot) in the IoT Core Reference Guide.
+Supports [substitution templates](https://docs.aws.amazon.com/iot/latest/developerguide/iot-substitution-templates.html).
 *Required*: No
 *Type*: String
 *Minimum*: `0`
@@ -78,7 +78,7 @@ Supports [substitution templates](https://docs.aws.amazon.com//iot/latest/develo
 An `Enum` string value that indicates whether the payload is formatted as UTF-8.
 Valid values are `UNSPECIFIED_BYTES` and `UTF8_DATA`.
 For more information, see [ Payload Format Indicator](https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html#_Toc3901111) from the MQTT Version 5.0 specification.
-Supports [substitution templates](https://docs.aws.amazon.com//iot/latest/developerguide/iot-substitution-templates.html).
+Supports [substitution templates](https://docs.aws.amazon.com/iot/latest/developerguide/iot-substitution-templates.html).
 *Required*: No
 *Type*: String
 *Minimum*: `0`
@@ -88,7 +88,7 @@ Supports [substitution templates](https://docs.aws.amazon.com//iot/latest/develo
 `ResponseTopic`  <a name="cfn-iot-topicrule-republishactionheaders-responsetopic"></a>
 A UTF-8 encoded string that's used as the topic name for a response message. The response topic is used to describe the topic to which the receiver should publish as part of the request-response flow. The topic must not contain wildcard characters.
 For more information, see [ Response Topic](https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html#_Toc3901114) in the MQTT Version 5.0 specification.
-Supports [substitution templates](https://docs.aws.amazon.com//iot/latest/developerguide/iot-substitution-templates.html).
+Supports [substitution templates](https://docs.aws.amazon.com/iot/latest/developerguide/iot-substitution-templates.html).
 *Required*: No
 *Type*: String
 *Minimum*: `0`

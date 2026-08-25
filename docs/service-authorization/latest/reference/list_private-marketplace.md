@@ -29,8 +29,6 @@ AWS Marketplace Private Marketplace has no API operations that can be used in th
 
 The following actions are defined by AWS Marketplace Private Marketplace but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 | Actions | Description | Resource types (\*required) | Condition keys | Access level |
 | --- | --- | --- | --- | --- |
 |   [AssociateProductsWithPrivateMarketplace](https://docs.aws.amazon.com/marketplace/latest/buyerguide/private-marketplace.html)  | Grants permission to approve a request for a product to be associated with the Private Marketplace. This action can be performed by any account in an AWS Organization, provided the user has permissions to do so, and the Organization's Service Control Policies allow it |  |   | Write |

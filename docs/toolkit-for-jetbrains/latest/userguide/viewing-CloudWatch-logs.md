@@ -29,7 +29,7 @@ For more information, see [Working with Log Groups and Log Streams ](https://doc
    + Double-click the name of the log group.
    + Right-click the name of the log group, and then choose **View Log Streams**.
 
-   The log group's contents are displayed in the **Log Streams** pane. For information about interacting with the log events in each stream, see [Working with CloudWatch log eventsWorking with CloudWatch Logs Insights](working-CloudWatch-log-events.md).
+   The log group's contents are displayed in the **Log Streams** pane. For information about interacting with the log events in each stream, see [Working with CloudWatch log events](working-CloudWatch-log-events.md).
 ![Viewing log streams in a CloudWatch log group in AWS Explorer](http://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/cloudwatch-view-log-streams.png)
 
 ## Viewing log streams with the **Lambda** node
@@ -48,7 +48,7 @@ You can also view log streams for all AWS services, including Lambda functions, 
 
 1. Right-click a Lambda function, and then choose **View Log Streams**.
 
-   The log streams for the function are displayed in the **Log Streams** pane. For information about interacting with the log events in each stream, see [Working with CloudWatch log eventsWorking with CloudWatch Logs Insights](working-CloudWatch-log-events.md).
+   The log streams for the function are displayed in the **Log Streams** pane. For information about interacting with the log events in each stream, see [Working with CloudWatch log events](working-CloudWatch-log-events.md).
 
 ## Viewing log streams with the **Amazon ECS** node
 <a name="viewing-ecs-log-groups"></a>
@@ -74,4 +74,4 @@ You can also view log groups for all AWS services, including Amazon ECS, using t
 
 1. Right-click a container, and then choose **View Container Log Stream**.
 
-   The log streams for the container are displayed in the **Log Streams** pane. For information about interacting with the log events for clusters and containers, see [Working with CloudWatch log eventsWorking with CloudWatch Logs Insights](working-CloudWatch-log-events.md).
+   The log streams for the container are displayed in the **Log Streams** pane. For information about interacting with the log events for clusters and containers, see [Working with CloudWatch log events](working-CloudWatch-log-events.md).

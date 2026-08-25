@@ -48,7 +48,7 @@ RCPs apply to actions for the following AWS services:
 + [DynamoDB Accelerator](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.html) `(prefix:dax)`
 + [Amazon EC2 Auto Scaling](https://docs.aws.amazon.com/autoscaling) `(prefix:autoscaling)`
 + [Amazon Elastic Container Registry](https://docs.aws.amazon.com/ecr) `(prefix:ecr)`
-+ [Amazon Inspector Scan](https://docs.aws.amazon.com/inspector) `(prefix:inspector2)`
++ [Amazon Inspector Scan](https://docs.aws.amazon.com/inspector) `(prefix:inspector-scan)`
 + [Amazon Kendra](https://docs.aws.amazon.com/kendra) `(prefix:kendra)`
 + [Amazon Kinesis Video Streams](https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/what-is-kinesis-video) `(prefix:kinesisvideo)`
 + [Amazon MemoryDB](https://docs.aws.amazon.com/memorydb) `(prefix:memorydb)`
@@ -119,5 +119,4 @@ You ***can't*** use RCPs to restrict the following:
 + RCPs do not impact the effective permissions of any service-linked role. Service-linked roles are a unique type of IAM role that is linked directly to an AWS service and include all the permissions that the service requires to call other AWS services on your behalf. The permissions of service-linked roles can't be restricted by RCPs. RCPs also do not impact AWS services' ability to assume a service-linked role; that is, the service-linked role's trust policy is also not impacted by RCPs.
 + RCPs do not apply to [AWS managed keys for AWS Key Management Service](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#aws-managed-cmk). AWS managed keys are created, managed, and used on your behalf by an AWS service. You cannot change or manage their permissions.
 + RCPs do not impact following permissions:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_rcps.html)

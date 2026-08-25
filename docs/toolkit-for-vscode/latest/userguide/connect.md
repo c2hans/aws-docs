@@ -12,14 +12,14 @@ If you've previously set up an AWS account and authentication through another AW
 ## Sign up for an AWS account
 <a name="sign-up-for-aws"></a>
 
-To get started with AWS, you need an AWS account. For information about creating an AWS account, see [Getting started with an AWS account](https://docs.aws.amazon.com//accounts/latest/reference/getting-started.html) in the *AWS Account Management Reference Guide*.
+To get started with AWS, you need an AWS account. For information about creating an AWS account, see [Getting started with an AWS account](https://docs.aws.amazon.com/accounts/latest/reference/getting-started.html) in the *AWS Account Management Reference Guide*.
 
 ## Prerequisites
 <a name="connecting-to-aws"></a>
 
 If you're new to AWS or haven't created an account, then there are 2 main steps to connect the AWS Toolkit for Visual Studio Code with your AWS account:
 
-1. **Setting up authentication**: There are 3 primary methods to authenticate with your AWS account from the AWS Toolkit for Visual Studio Code. To learn more about each of these methods, see the [Authentication and Access](https://docs.aws.amazon.com//toolkit-for-vscode/latest/userguide/establish-credentials.html) topic in this User Guide.
+1. **Setting up authentication**: There are 3 primary methods to authenticate with your AWS account from the AWS Toolkit for Visual Studio Code. To learn more about each of these methods, see the [Authentication and Access](https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/establish-credentials.html) topic in this User Guide.
 
 1. **Authenticating with AWS from the Toolkit**: You can connect with your AWS account from the Toolkit by completing the procedures in the following sections of this User Guide.
 

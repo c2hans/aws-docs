@@ -10,8 +10,8 @@ The following section describes how to configure your identity provider.
 To begin, you must have an identity source. You can use an IAM Identity Center directory, AWS Directory Service for Microsoft Active Directory, or an external identity provider. Transfer Family uses IAM Identity Center as a federated identity provider, which is a system that stores user credentials and authenticates users across multiple organizations.
 
 If you're not using an IAM Identity Center directory as your identity source, see the following topics:
-+ [Manage an external identity provider](https://docs.aws.amazon.com//singlesignon/latest/userguide/manage-your-identity-source-idp.html)
-+ [Connect to a Microsoft AD directory ](https://docs.aws.amazon.com//singlesignon/latest/userguide/manage-your-identity-source-ad.html)
++ [Manage an external identity provider](https://docs.aws.amazon.com/singlesignon/latest/userguide/manage-your-identity-source-idp.html)
++ [Connect to a Microsoft AD directory ](https://docs.aws.amazon.com/singlesignon/latest/userguide/manage-your-identity-source-ad.html)
 + [Organization and account instances of IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/identity-center-instances.html)
 + [IAM Identity Center identity source tutorials](https://docs.aws.amazon.com/singlesignon/latest/userguide/tutorials.html)
 

@@ -16,7 +16,7 @@ This topic explains how to delete user records using the Connect Customer admin 
 ## What happens to the user's metrics?
 <a name="delete-users-metrics"></a>
 
-The user's data in contact records and reports is retained. The data is preserved for the consistency of the historical metrics. For example, when you search for contact records, you'll still see the agent's username, any contact recordings involving the agent, etc.
+The user's data in contact records and reports is retained. The data is preserved for the consistency of the historical metrics. For example, when you search for contact records, you'll still see the agent's username, any contact recordings involving the agent.
 
 In the historical metrics reports, the agent's data will be included in the **Agent performance** metrics report. However, you won't be able to see an **Agent activity audit** of the deleted agent because their name won't appear in the drop-down list.
 

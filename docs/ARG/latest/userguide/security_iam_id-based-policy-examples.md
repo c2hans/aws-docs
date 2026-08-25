@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/ARG/latest/userguide/security_iam_id-bas
 
 By default, IAM principals, such as roles and users, don't have permission to create or modify Resource Groups resources. They also can't perform tasks using the AWS Management Console, AWS CLI, or AWS API. An IAM administrator must create IAM policies that grant the principals permission to perform specific API operations on the specified resources they need. The administrator must then attach those policies to the principals that require those permissions.
 
-To learn how to create an IAM identity-based policy using these example JSON policy documents, see [Creating Policies on the JSON Tab](https://docs.aws.amazon.com//IAM/latest/UserGuide/access_policies_create.html#access_policies_create-json-editor) in the *IAM User Guide*.
+To learn how to create an IAM identity-based policy using these example JSON policy documents, see [Creating Policies on the JSON Tab](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html#access_policies_create-json-editor) in the *IAM User Guide*.
 
 **Topics**
 + [Policy best practices](#security_iam_policy-best-practices)
@@ -32,7 +32,7 @@ For more information about best practices in IAM, see [Security best practices i
 
 To access the AWS Resource Groups and Tag Editor console and API, you must have a minimum set of permissions. These permissions must allow you to list and view details about the Resource Groups resources in your AWS account. If you create an identity-based policy that is more restrictive than the minimum required permissions, the console and API commands won't function as intended for principals (IAM roles or users) with that policy.
 
-To ensure that those entities can still use Resource Groups, attach the following policy (or a policy that contains the permissions listed in the following policy) to the entities. For more information, see [Adding Permissions to a User](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_users_change-permissions.html#users_change_permissions-add-console) in the *IAM User Guide*:
+To ensure that those entities can still use Resource Groups, attach the following policy (or a policy that contains the permissions listed in the following policy) to the entities. For more information, see [Adding Permissions to a User](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_change-permissions.html#users_change_permissions-add-console) in the *IAM User Guide*:
 
 ------
 #### [ JSON ]
@@ -134,4 +134,4 @@ You can use conditions in your identity-based policy to control access to Resour
 
 ------
 
-You can attach this policy to the principals in your account. If a principal with the tag key `project` and tag value `alpha` attempts to view a resource group, the group must also be tagged `project=alpha`. Otherwise the user is denied access. The condition tag key `project` matches both `Project` and `project` because condition key names are not case-sensitive. For more information, see [IAM JSON Policy Elements: Condition](https://docs.aws.amazon.com//IAM/latest/UserGuide/reference_policies_elements_condition.html) in the *IAM User Guide*.
+You can attach this policy to the principals in your account. If a principal with the tag key `project` and tag value `alpha` attempts to view a resource group, the group must also be tagged `project=alpha`. Otherwise the user is denied access. The condition tag key `project` matches both `Project` and `project` because condition key names are not case-sensitive. For more information, see [IAM JSON Policy Elements: Condition](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html) in the *IAM User Guide*.

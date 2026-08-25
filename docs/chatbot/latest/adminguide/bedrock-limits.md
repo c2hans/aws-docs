@@ -9,8 +9,6 @@ AWS Chatbot is now Amazon Q Developer. [Learn more](service-rename.md)
 
 Your AWS account has the following default quotas, formerly referred to as limits, for Amazon Bedrock.
 
-****
-
 | Name | Default | Adjustable | Description |
 | --- | --- | --- | --- |
 | Connectors per channel | 10 connectors. | No | The maximum number of registered connectors you can have in a channel. |

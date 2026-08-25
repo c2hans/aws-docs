@@ -29,8 +29,6 @@ AWS FinOps Agent has no API operations that can be used in the `Actions` element
 
 The following actions are defined by AWS FinOps Agent but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 | Actions | Description | Resource types (\*required) | Condition keys | Access level |
 | --- | --- | --- | --- | --- |
 |   [AcceptAgentRequest](https://docs.aws.amazon.com/finops-agent/)  | Grants permission to accept a pending approval request from the agent |  |   | Write |

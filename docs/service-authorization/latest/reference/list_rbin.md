@@ -24,8 +24,6 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_rbin-actions-as-permissions).
 
-****
-
 - **   CreateRule  **
   - **IAM action:**  [rbin:CreateRule](#list_rbin-action-CreateRule)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [rbin:LockRule](#list_rbin-action-LockRule)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
@@ -89,8 +87,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
 <a name="list_rbin-actions-as-permissions"></a>
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
-
-****
 
 - **   [CreateRule](https://docs.aws.amazon.com/recyclebin/latest/APIReference/API_CreateRule.html)  **
   - **Description:** Grants permission to create a Recycle Bin retention rule
@@ -157,8 +153,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
 
-****
-
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
 |  [rule](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/snapshot-recycle-bin.html#recycle-bin-concepts)  | arn:${Partition}:rbin:${Region}:${Account}:rule/${ResourceName} | [aws:ResourceTag/${TagKey}](#list_rbin-aws_ResourceTag___TagKey_) |
@@ -167,8 +161,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_rbin-policy-keys"></a>
 
 AWS Recycle Bin defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

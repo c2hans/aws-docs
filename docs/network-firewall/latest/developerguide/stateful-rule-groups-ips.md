@@ -16,7 +16,7 @@ As needed, depending on the rules that you provide, the stateful engine performs
 The rest of this section provides requirements and additional information for using Suricata compatible rules with Network Firewall.
 
 **Note**
-This section and others that describe Suricata-based concepts are not intended to replace or duplicate information from the Suricata documentation. For more Suricata-specific information, see the [Suricata documentation](https://docs.suricata.io/en/suricata-7.0.8/).
+This section and others that describe Suricata-based concepts are not intended to replace or duplicate information from the Suricata documentation. For more Suricata-specific information, see the [Suricata documentation](https://docs.suricata.io/en/suricata-8.0.3/).
 
 **Previous Suricata major version upgrade**
 When Network Firewall upgrades to a new major version of Suricata, related changes are tracked here.

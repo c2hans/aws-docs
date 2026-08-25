@@ -42,8 +42,6 @@ Info: 22222222/eu-west-1 aggregator: all-dev ci: i-1df5235ftt55 - Installed
 
 Each *object* contains the properties below:
 
-****
-
 | Property  | Type  | Description  |
 | --- | --- | --- |
 | accountNumber  | String  | The account number from which the stale config item originates.  |

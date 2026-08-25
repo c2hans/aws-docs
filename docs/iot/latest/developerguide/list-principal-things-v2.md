@@ -30,4 +30,4 @@ The output can look like the following.
 }
 ```
 
-For more information, see [ListPrincipalThingsV2](https://docs.aws.amazon.com//iot/latest/apireference/API_ListPrincipalThingsV2.html) from the *AWS IoT Core API Reference*.
+For more information, see [ListPrincipalThingsV2](https://docs.aws.amazon.com/iot/latest/apireference/API_ListPrincipalThingsV2.html) from the *AWS IoT Core API Reference*.

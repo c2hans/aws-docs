@@ -32,7 +32,7 @@ To change the queue associated with the call after it is already placed in a que
    + Choose **Audio recording** in the drop-down menu, then select the audio recording to use as the prompt.
    + Choose **Text to Speech** in the drop-down menu, then enter text to use for the prompt in the **Enter text to be spoken** field.
 
-1. To set an interrupt, choose **Interrupt every**, enter a value for the interrupt interval, and then choose a unit, either **Minutes** or **Seconds**. We recommend that you use an interval greater than 20 seconds to ensure that queued contacts that are being connected to an agent are not interrupted.
+1. To set an interrupt, choose **Interrupt every**, enter a value for the interrupt interval, and then choose a unit, either **Minutes** or **Seconds**. We recommend that you use an interval greater than 20 seconds to make sure that queued contacts that are being connected to an agent are not interrupted.
 
 1. Choose **Save**.
 

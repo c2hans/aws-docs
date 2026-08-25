@@ -90,6 +90,11 @@ Hosted connections support a single VIF, so the connection-level prefix pool is 
 
 Connection-level prefix pool information (pool size and unallocated count) is not displayed in the console for hosted connections.
 
+## Hosted virtual interfaces
+<a name="prefix-controls-hosted-vifs"></a>
+
+The prefix allocation for hosted VIFs is managed by the owner account of the parent connection. A new hosted VIF is always created with the default allocation of 100 prefixes each for IPv4 and IPv6. In the case of dedicated connections, the initial allocation is subtracted from the connection's pool. After the recipient AWS account accepts the hosted VIF, the owner account of the connection can adjust the hosted VIF's prefix allocation.
+
 ## Additional resources
 <a name="prefix-controls-additional-resources"></a>
 

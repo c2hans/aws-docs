@@ -14,8 +14,6 @@ Update an existing Route 53 DNS Hosted Zone with the supplied resource record se
 ## Change Type Details
 <a name="ct-1d55pi44ff21u-MADu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1d55pi44ff21u |

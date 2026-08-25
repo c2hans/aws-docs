@@ -74,8 +74,6 @@ The following tables list all supported platform branches for each platform. Onl
 ### Docker
 <a name="release-2023-04-03-linux.platforms.docker"></a>
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  ECS Agent  |  Docker  |  Docker Compose  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Docker AL2 version 3.5.6** <br /> * 64bit Amazon Linux 2 v3.5.6 running Docker *  | 2.0.20230320 |  | 20.10.17-1 | 1.29.2 | nginx 1.22.1 |
@@ -84,16 +82,12 @@ The following tables list all supported platform branches for each platform. Onl
 ### Go
 <a name="release-2023-04-03-linux.platforms.go"></a>
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  AWS X-Ray  |  Proxy Server  |
 | --- | --- | --- | --- | --- |
 |  ** Go 1 AL2 version 3.7.1** <br /> * 64bit Amazon Linux 2 v3.7.1 running Go 1 *  | 2.0.20230320 | Go 1.20.2 | 3.2.0 | nginx 1.22.1 |
 
 ### Java SE
 <a name="release-2023-04-03-linux.platforms.javase"></a>
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  Tools  |  AWS X-Ray  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- |
@@ -104,8 +98,6 @@ The following tables list all supported platform branches for each platform. Onl
 ### Tomcat
 <a name="release-2023-04-03-linux.platforms.java"></a>
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  AWS X-Ray  |  Application Server  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Corretto 11 with Tomcat 8.5 AL2 version 4.3.6** <br /> * 64bit Amazon Linux 2 v4.3.6 running Tomcat 8.5 Corretto 11 *  | 2.0.20230320 | Corretto 11.0.18.10.1 | 3.2.0 | Tomcat 8.5.79 | nginx 1.22.1 (default), Apache 2.4.56 |
@@ -114,16 +106,12 @@ The following tables list all supported platform branches for each platform. Onl
 ### .NET Core on Linux
 <a name="release-2023-04-03-linux.platforms.dotnetlinux"></a>
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET Core on AL2 version 2.5.2** <br /> * 64bit Amazon Linux 2 v2.5.2 running .NET Core *  | .NET 6.0.15, supports 6.0.15, 3.1.32 | nginx 1.22.1 | 2.0.20230320 | 3.2.0 |
 
 ### Node.js
 <a name="release-2023-04-03-linux.platforms.nodejs"></a>
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -134,8 +122,6 @@ The following tables list all supported platform branches for each platform. Onl
 ### PHP
 <a name="release-2023-04-03-linux.platforms.PHP"></a>
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  Composer  |  Proxy Server  |
 | --- | --- | --- | --- | --- |
 |  ** PHP 8.1 AL2 version 3.5.6** <br /> * 64bit Amazon Linux 2 v3.5.6 running PHP 8.1 *  | 2.0.20230320 | PHP 8.1.17 | 2.3.5 | nginx 1.22.1 (default), Apache 2.4.56 |
@@ -144,8 +130,6 @@ The following tables list all supported platform branches for each platform. Onl
 ### Python
 <a name="release-2023-04-03-linux.platforms.python"></a>
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  Package Manager  |  Packager  |  meld3  |  AWS X-Ray  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  ** Python 3.8 AL2 version 3.5.1** <br /> * 64bit Amazon Linux 2 v3.5.1 running Python 3.8 *  | 2.0.20230320 | Python 3.8.16 | pipenv 2023.3.20 |  |  | 3.2.0 | nginx 1.22.1 (default), Apache 2.4.56 |
@@ -153,8 +137,6 @@ The following tables list all supported platform branches for each platform. Onl
 
 ### Ruby
 <a name="release-2023-04-03-linux.platforms.ruby"></a>
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  Package Manager  |  Application Server  |  AWS X-Ray  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- | --- |

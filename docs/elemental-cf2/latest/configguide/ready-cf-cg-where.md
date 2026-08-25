@@ -16,8 +16,6 @@ The three screens are:
 
 These three screens cover slightly different configuration features, and are accessed in slightly different ways. The following tables provides more detail.
 
-****
-
 | Screen | How to Navigate to this Screen | Purpose of this Screen |
 | --- | --- | --- |
 | Node Configuration screen for Conductor | From the Conductor web interface: Nodes > Edit (wrench icon) | Configures the Conductor node as one of several nodes in the cluster. Includes network settings, mount points, and firewall for AWS Elemental Conductor File. |

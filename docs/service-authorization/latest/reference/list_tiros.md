@@ -29,8 +29,6 @@ AWS Tiros has no API operations that can be used in the `Actions` element of an 
 
 The following actions are defined by AWS Tiros but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 | Actions | Description | Resource types (\*required) | Condition keys | Access level |
 | --- | --- | --- | --- | --- |
 |   [CreateQuery](https://docs.aws.amazon.com/vpc/latest/reachability/security_iam_required-API-permissions.html)  | Grants permission to create a VPC reachability query |  |   | Write |

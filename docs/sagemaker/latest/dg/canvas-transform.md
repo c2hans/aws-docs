@@ -1018,8 +1018,6 @@ Use the **Drop missing** option to drop rows that contain missing values from th
 
 You can use the following transforms to quickly update and manage columns in your dataset:
 
-****
-
 | Name | Function |
 | --- | --- |
 | Drop Column | Delete a column.  |
@@ -1106,8 +1104,6 @@ To take a stratified sample from your data.
 Use this section to search for and edit specific patterns within strings. For example, you can find and update strings within sentences or documents, split strings by delimiters, and find occurrences of specific strings.
 
 The following transforms are supported under **Search and edit**. All transforms return copies of the strings in the **Input column** and add the result to a new output column.
-
-****
 
 | Name | Function |
 | --- | --- |
@@ -1289,8 +1285,6 @@ Use this transform to cast a column to a new type. The supported Data Wrangler d
 Use the **Validate string** transforms to create a new column that indicates that a row of text data meets a specified condition. For example, you can use a **Validate string** transform to verify that a string only contains lowercase characters. The following transforms are supported under **Validate string**.
 
 The following transforms are included in this transform group. If a transform outputs a Boolean value, `True` is represented with a `1` and `False` is represented with a `0`.
-
-****
 
 | Name | Function |
 | --- | --- |

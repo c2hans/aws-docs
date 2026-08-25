@@ -14,8 +14,6 @@ Create an Amazon S3 bucket for cloud storage.
 ## Change Type Details
 <a name="ct-1a68ck03fn98r-DASc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1a68ck03fn98r |

@@ -25,8 +25,6 @@ The T4g instance types are the latest generation of burstable instances. They pr
 
 The following table summarizes the key differences between the burstable instance types.
 
-****
-
 <table>
 <thead>
   <tr><th>Type</th><th>Description</th><th>Processor family</th></tr>

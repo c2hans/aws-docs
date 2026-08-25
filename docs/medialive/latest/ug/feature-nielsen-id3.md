@@ -36,5 +36,4 @@ You can't remove the watermarks from the audio, but if your playback devices don
 1. Go to the output group and output where you want to include the ID3 tags.
 
    (If the output group is **MediaPackage**, you don't have to set up the output. The ID3 tags are always passed through, if the output is a standard output.)
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/medialive/latest/ug/feature-nielsen-id3.html)

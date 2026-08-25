@@ -83,15 +83,12 @@ The `SASL_SSL_PLAIN` and `SASL_PLAINTEXT_PLAIN` authentication types are support
 + **kafka\_endpoint** – The endpoint details to provide to Kafka. For example, for an Amazon MSK cluster, you provide a [bootstrap URL](https://docs.aws.amazon.com/msk/latest/developerguide/msk-get-bootstrap-brokers.html) for the cluster.
 + **secrets\_manager\_secret** – The name of the AWS secret in which the credentials are saved. This parameter is not required for IAM authentication.
 + **Spill parameters** – Lambda functions temporarily store ("spill") data that do not fit into memory to Amazon S3. All database instances accessed by the same Lambda function spill to the same location. Use the parameters in the following table to specify the spill location.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/athena/latest/ug/connectors-msk.html)
 
 ## Data type support
 <a name="connectors-msk-data-type-support"></a>
 
 The following table shows the corresponding data types supported for Kafka and Apache Arrow.
-
-****
 
 | Kafka | Arrow |
 | --- | --- |
@@ -280,8 +277,6 @@ You can use a variety of methods to authenticate to your Amazon MSK cluster, inc
 
 The following table shows the authentication types for the connector and the security protocol and SASL mechanism for each. For more information, see [Authentication and authorization for Apache Kafka APIs](https://docs.aws.amazon.com/msk/latest/developerguide/kafka_apis_iam.html) in the Amazon Managed Streaming for Apache Kafka Developer Guide.
 
-****
-
 | auth\_type | security.protocol | sasl.mechanism |
 | --- | --- | --- |
 | SASL\_SSL\_PLAIN | SASL\_SSL | PLAIN |
@@ -308,8 +303,6 @@ If the cluster is SSL authenticated, you must generate the trust store and key s
 For information on creating a secret in Secrets Manager, see [Create an AWS Secrets Manager secret](https://docs.aws.amazon.com/secretsmanager/latest/userguide/create_secret.html).
 
 To use this authentication type, set the environment variables as shown in the following table.
-
-****
 
 | Parameter | Value |
 | --- | --- |
@@ -338,8 +331,6 @@ After you create a secret in Secrets Manager, you can view it in the Secrets Man
 If your cluster uses SCRAM authentication, provide the Secrets Manager key that is associated with the cluster when you deploy the connector. The user's AWS credentials (secret key and access key) are used to authenticate with the cluster.
 
 Set the environment variables as shown in the following table.
-
-****
 
 | Parameter | Value |
 | --- | --- |

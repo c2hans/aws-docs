@@ -9,8 +9,6 @@ AWS Data Pipeline is no longer available to new customers. Existing customers of
 
 The following functions are available for working with numerical values.
 
-****
-
 | Function | Description |
 | --- | --- |
 | \+ | Addition.<br />Example: `#{1 + 2}`<br />Result: `3` |

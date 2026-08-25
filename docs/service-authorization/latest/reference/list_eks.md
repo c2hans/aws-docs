@@ -25,7 +25,11 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_eks-actions-as-permissions).
 
-****
+- **   ActivateCertificateAuthority  **
+  - **IAM action:**  [eks:ActivateCertificateAuthority](#list_eks-action-ActivateCertificateAuthority)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
 
 - **   AssociateAccessPolicy  **
   - **IAM action:**  [eks:AssociateAccessPolicy](#list_eks-action-AssociateAccessPolicy)
@@ -63,6 +67,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [eks:CreateCapability](#list_eks-action-CreateCapability)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [eks:TagResource](#list_eks-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
   - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** eks.amazonaws.com / **Access level:** Write
+
+- **   CreateCertificateAuthority  **
+  - **IAM action:**  [eks:CreateCertificateAuthority](#list_eks-action-CreateCertificateAuthority)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
 
 - **   CreateCluster  **
   - **IAM action:**  [eks:CreateAccessEntry](#list_eks-action-CreateAccessEntry)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
@@ -103,6 +113,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   DeleteCapability  **
   - **IAM action:**  [eks:DeleteCapability](#list_eks-action-DeleteCapability)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   DeleteCertificateAuthority  **
+  - **IAM action:**  [eks:DeleteCertificateAuthority](#list_eks-action-DeleteCertificateAuthority)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
@@ -169,6 +185,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   DescribeCapability  **
   - **IAM action:**  [eks:DescribeCapability](#list_eks-action-DescribeCapability)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   DescribeCertificateAuthority  **
+  - **IAM action:**  [eks:DescribeCertificateAuthority](#list_eks-action-DescribeCertificateAuthority)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
@@ -271,6 +293,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   ListCapabilities  **
   - **IAM action:**  [eks:ListCapabilities](#list_eks-action-ListCapabilities)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
+- **   ListCertificateAuthorities  **
+  - **IAM action:**  [eks:ListCertificateAuthorities](#list_eks-action-ListCertificateAuthorities)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** List
@@ -404,7 +432,11 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
 
-****
+- **   [ActivateCertificateAuthority](https://docs.aws.amazon.com/eks/latest/APIReference/API_ActivateCertificateAuthority.html)  **
+  - **Description:** Grants permission to activate a certificate authority for an Amazon EKS cluster
+  - **Resource types (\*required):** [cluster\*](#list_eks-resource-cluster)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_eks-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
 
 - **   [AssociateAccessPolicy](https://docs.aws.amazon.com/eks/latest/APIReference/API_AssociateAccessPolicy.html)  **
   - **Description:** Grants permission to associate an Amazon EKS access policy to an Amazon EKS access entry
@@ -446,6 +478,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Description:** Grants permission to create a capability for an Amazon EKS cluster
   - **Resource types (\*required):** [cluster\*](#list_eks-resource-cluster)
   - **Condition keys:** [aws:RequestTag/${TagKey}](#list_eks-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_eks-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_eks-aws_TagKeys)
+  - **Access level:** Write
+
+- **   [CreateCertificateAuthority](https://docs.aws.amazon.com/eks/latest/APIReference/API_CreateCertificateAuthority.html)  **
+  - **Description:** Grants permission to create a certificate authority for an Amazon EKS cluster
+  - **Resource types (\*required):** [cluster\*](#list_eks-resource-cluster)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_eks-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
 - **   [CreateCluster](https://docs.aws.amazon.com/eks/latest/APIReference/API_CreateCluster.html)  **
@@ -493,6 +531,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
 - **   [DeleteCapability](https://docs.aws.amazon.com/eks/latest/APIReference/API_DeleteCapability.html)  **
   - **Description:** Grants permission to delete a capability from an Amazon EKS cluster
   - **Resource types (\*required):** [capability\*](#list_eks-resource-capability)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_eks-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
+- **   [DeleteCertificateAuthority](https://docs.aws.amazon.com/eks/latest/APIReference/API_DeleteCertificateAuthority.html)  **
+  - **Description:** Grants permission to delete a certificate authority from an Amazon EKS cluster
+  - **Resource types (\*required):** [cluster\*](#list_eks-resource-cluster)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_eks-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
@@ -559,6 +603,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
 - **   [DescribeCapability](https://docs.aws.amazon.com/eks/latest/APIReference/API_DescribeCapability.html)  **
   - **Description:** Grants permission to describe a capability for an Amazon EKS cluster
   - **Resource types (\*required):** [capability\*](#list_eks-resource-capability)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_eks-aws_ResourceTag___TagKey_)
+  - **Access level:** Read
+
+- **   [DescribeCertificateAuthority](https://docs.aws.amazon.com/eks/latest/APIReference/API_DescribeCertificateAuthority.html)  **
+  - **Description:** Grants permission to retrieve descriptive information about a certificate authority for an Amazon EKS cluster
+  - **Resource types (\*required):** [cluster\*](#list_eks-resource-cluster)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_eks-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
@@ -662,6 +712,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [ListCapabilities](https://docs.aws.amazon.com/eks/latest/APIReference/API_ListCapabilities.html)  **
   - **Description:** Grants permission to list capabilities for an Amazon EKS cluster
+  - **Resource types (\*required):** [cluster\*](#list_eks-resource-cluster)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_eks-aws_ResourceTag___TagKey_)
+  - **Access level:** List
+
+- **   [ListCertificateAuthorities](https://docs.aws.amazon.com/eks/latest/APIReference/API_ListCertificateAuthorities.html)  **
+  - **Description:** Grants permission to list the certificate authorities for an Amazon EKS cluster
   - **Resource types (\*required):** [cluster\*](#list_eks-resource-cluster)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_eks-aws_ResourceTag___TagKey_)
   - **Access level:** List
@@ -839,8 +895,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 The following actions are defined by Amazon Elastic Kubernetes Service but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 - **   [AccessKubernetesApi](https://docs.aws.amazon.com/eks/latest/userguide/view-workloads.html)  **
   - **Description:** Grants permission to view Kubernetes objects via AWS EKS console
   - **Resource types (\*required):** [cluster\*](#list_eks-resource-cluster)
@@ -857,8 +911,6 @@ The following actions are defined by Amazon Elastic Kubernetes Service but are n
 <a name="list_eks-resources-for-iam-policies"></a>
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
-
-****
 
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
@@ -878,8 +930,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_eks-policy-keys"></a>
 
 Amazon Elastic Kubernetes Service defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

@@ -9,8 +9,6 @@ The following table shows all the types of permissions that the MediaLive truste
 
 Each row in the column describes a task or set of related tasks that the MediaLive trusted entity might need to perform for a user. The third column describes the type of access that the trusted entity requires to perform that task. The last column lists the IAM actions or policy that control that access.
 
-****
-
 - **AWS Elemental MediaLive **
   - **Tasks:** Working with MediaLive features.
   - **Type of access required:** MediaLive doesn't need access to itself. Only the users need access.

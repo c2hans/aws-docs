@@ -20,7 +20,6 @@ These steps must be performed on each system where you are installing AWS Elemen
    where -l is a letter, not a number.
 
 1. You are prompted as described in the table below.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-statmux/latest/upgradeguide/clean-install-sm-upg-install-sw.html)
 
    Then the software will be installed. Finally, this message will appear:

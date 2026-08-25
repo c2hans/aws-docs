@@ -11,10 +11,10 @@ DynamoDB has a [DynamoDB zero-ETL integration with ](OpenSearchIngestionForDynam
 <a name="bp-integration-opensearch-configuration"></a>
 + Only index data that you need to perform searches on. Always use a mapping template (`template_type: index_template` and `template_content`) and `include_keys` to implement this.
 + Monitor your logs for errors that are related to type conflicts. OpenSearch Service expects all values for a given key to have the same type. It generates exceptions if there's a mismatch. If you encounter one of these errors, you can add a processor to catch that a given key is always be the same value.
-+ Generally use the `primary_key` metadata value for the `document_id` value. In OpenSearch Service, the document ID is the equivalent of the primary key in DynamoDB. Using the primary key will make it easy to find your document and ensure that updates are consistently replicated to it without conflicts.
++ Generally use the `primary_key` metadata value for the `document_id` value. In OpenSearch Service, the document ID is the equivalent of the primary key in DynamoDB. Using the primary key will make it easy to find your document and make sure that updates are consistently replicated to it without conflicts.
 
   You can use the helper function `getMetadata` to get your primary key (for example, `document_id: "${getMetadata('primary_key')}"`). If you're using a composite primary key, the helper function will concatenate them together for you.
-+ In general, use the `opensearch_action` metadata value for the `action` setting. This will ensure that updates are replicated in such a way that the data in OpenSearch Service matches the latest state in DynamoDB.
++ In general, use the `opensearch_action` metadata value for the `action` setting. This will make sure that updates are replicated in such a way that the data in OpenSearch Service matches the latest state in DynamoDB.
 
   You can use the helper function `getMetadata` to get your primary key (for example, `action: "${getMetadata('opensearch_action')}"`). You can also get the stream event type through `dynamodb_event_name` for use cases like filtering. However, you should typically not use it for the `action` setting.
 

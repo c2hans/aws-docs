@@ -22,7 +22,7 @@ For more information about Systems Manager Automation, runbooks, and using runbo
 + To add a runbook to a response plan, see [Creating and configuring response plans in Incident Manager](response-plans.md).
 + To learn more about runbooks, see [AWS Systems Manager Automation](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-automation.html) in the *AWS Systems Manager User Guide* and the *[AWS Systems Manager Automation runbook reference](https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-runbook-reference.html)*.
 + For information about the cost of using runbooks, see [Systems Manager pricing](https://aws.amazon.com/systems-manager/pricing/).
-+ For information about automatically invoking runbooks when an incident is created by a Amazon CloudWatch alarm or an Amazon EventBridge event, see [Tutorial: Using Systems Manager Automation runbooks with Incident Manager](https://docs.aws.amazon.com//incident-manager/latest/userguide/tutorials-runbooks.html).
++ For information about automatically invoking runbooks when an incident is created by a Amazon CloudWatch alarm or an Amazon EventBridge event, see [Tutorial: Using Systems Manager Automation runbooks with Incident Manager](https://docs.aws.amazon.com/incident-manager/latest/userguide/tutorials-runbooks.html).
 
 **Topics**
 + [IAM permissions required to start and run runbook workflows](#runbook-permissions)
@@ -116,8 +116,6 @@ Incident Manager can populate runbook parameter values with the ARNs of AWS reso
 
 **CloudWatch alarms**
 When an incident is created from a CloudWatch alarm action, Incident Manager automatically extracts the following types of resources from the associated metrics. It then populates the chosen parameters with the following involved resources:
-
-****
 
 | AWS service | Resource type |
 | --- | --- |

@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsi
 
 AWS Interconnect provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="interconnect-DescribeConnectionProposal"></a>[DescribeConnectionProposal](https://docs.aws.amazon.com/interconnect/latest/api/API_DescribeConnectionProposal.html) | Describe a connection proposal | Read |

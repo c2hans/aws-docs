@@ -34,7 +34,7 @@ The [AWSKeyManagementServicePowerUser](https://console.aws.amazon.com/iam/home#p
 + Allows principals to list IAM users, groups, and roles.
 + This policy does not allow principals to use or manage KMS keys that they didn't create. However, they can change aliases and tags on all KMS keys, which might allow or deny them permission to use or manage a KMS key.
 
-To view the permissions for this policy, see [AWSKeyManagementServicePowerUser](https://docs.aws.amazon.com//aws-managed-policy/latest/reference/AWSKeyManagementServicePowerUser.html) in the AWS Managed Policy Reference.
+To view the permissions for this policy, see [AWSKeyManagementServicePowerUser](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSKeyManagementServicePowerUser.html) in the AWS Managed Policy Reference.
 
 ## AWS managed policy: AWSServiceRoleForKeyManagementServiceCustomKeyStores
 <a name="security-iam-awsmanpol-AWSServiceRoleForKeyManagementServiceCustomKeyStores"></a>

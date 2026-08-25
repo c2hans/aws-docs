@@ -10,6 +10,67 @@ We recommend subscribing to the RSS feed so updates to these notes are delivered
 ## August 2026
 <a name="_august_2026"></a>
 
+### AWS Agent Registry: Cross-account sharing with AWS RAM
+<a name="shared_aws_agent_registry_cross_account_sharing_with_shared_aws_ram"></a>
+
+ AWS Agent Registry now supports cross-account sharing through AWS Resource Access Manager (RAM). Choose from four managed permissions (ReadOnly, Consumer, Publisher, Admin) to control what shared accounts can do. RAM manages the resource-based policy on your behalf. For accounts within the same AWS Organization, sharing takes effect automatically; for external accounts, the consumer accepts an invitation.
+
+For more information, see [Sharing a registry across accounts with AWS RAM](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/registry-cross-account-sharing.html).
+
+### Payments: Coinbase wallet usage is billed through AWS Marketplace
+<a name="payments_coinbase_wallet_usage_is_billed_through_shared_aws_marketplace"></a>
+
+To use Coinbase as a payment provider with AgentCore payments, subscribe to the **Coinbase Wallets for AgentCore Payments** listing in AWS Marketplace. The subscription is mandatory and is enforced when you create a Coinbase payment connector and when you perform Coinbase wallet operations, such as creating a payment instrument or processing a payment.
+
+Coinbase wallet usage is metered through AWS Marketplace and billed on your AWS bill based on Coinbase’s public pricing. Your account remains eligible for the Coinbase free tier. This requirement applies to the Coinbase provider only; other providers, such as Stripe (Privy), are not affected.
+
+For more information, see [Subscribe to Coinbase Wallets for AgentCore Payments in AWS Marketplace](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/payments-marketplace-subscription.html).
+
+### Memory: Store and extract non-conversational JSON payloads
+<a name="_memory_store_and_extract_non_conversational_json_payloads_2"></a>
+
+Amazon Bedrock AgentCore Memory now accepts a `json` payload type on the CreateEvent API. With this payload type, agents can store non-conversational, JSON-formatted data (up to 100 KB) such as behavioral events, activity logs, and system events.
+
+ `json` payloads are also extracted into long-term memory across the semantic, user preference, summarization, and episodic strategies.
+
+See [Create an event](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/short-term-create-event.html).
+
+### Evaluations: Skill evaluators
+<a name="_evaluations_skill_evaluators_2"></a>
+
+Amazon Bedrock AgentCore Evaluations adds two built-in evaluators for agents that use skills:
++  `Builtin.SkillSelectionAccuracy` — judges whether the skill the agent loaded fits the task, given the catalog of available skills. Returns `Yes` (1.0) or `No` (0.0).
++  `Builtin.SkillInstructionFollowing` — judges how fully the agent followed the loaded skill’s prescribed steps. Returns a five-point rating from `Fully Followed` (1.0) to `Not Followed` (0.0).
+
+Both are tool-level evaluators. AgentCore Evaluations produces one result per skill invocation and anchors each result to the tool call span that loaded the skill. You can use these evaluators with on-demand, batch, and online evaluations.
+
+Custom TOOL\_CALL evaluators can use the same skill signals as the built-in skill evaluators through the `invoked_skill`, `skill_content`, `available_skills`, and `user_message` placeholders.
+
+See [Skill evaluators](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/skill-evaluators.html).
+
+### Payments: Quick create for Coinbase payment connectors
+<a name="_payments_quick_create_for_coinbase_payment_connectors_2"></a>
+
+When you create a Coinbase payment connector, you can now choose **Quick create** to have AgentCore payments provision your Coinbase CDP credentials for you. You authorize access through Coinbase in a browser, and the service creates the payment credential provider on your behalf. You do not need to generate or paste Coinbase API keys.
+
+Quick create is available for the Coinbase provider only; Stripe (Privy) connectors continue to use credentials that you supply. For more information, see [Create a Payment Manager and Connector](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/payments-create-manager.html).
+
+### Payments: x402 upto scheme and Machine Payments Protocol (MPP) support
+<a name="_payments_x402_upto_scheme_and_machine_payments_protocol_mpp_support_2"></a>
+
+Amazon Bedrock AgentCore payments now supports the x402 `upto` scheme and the Machine Payments Protocol (MPP), in addition to the existing x402 `exact` scheme. The `upto` scheme pays a metered amount up to a ceiling and settles through the Permit2 contract.
+
+MPP is an open, HTTP-native payment standard that uses the standard HTTP authentication challenge flow.
+
+With MPP, a merchant returns a `WWW-Authenticate: Payment` challenge in its `402 Payment Required` response. You forward the challenge verbatim to `ProcessPayment` with `paymentType=MPP`, and AgentCore payments parses the challenge, checks the session budget, signs with the wallet, and returns a ready-to-send credential. You retry the original request with the credential in the `Authorization` header. MPP supports the `evm`, `tempo`, and `solana` payment methods, with provider support that varies by connector type.
+
+For more information, see [Process a payment](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/payments-process-payment.html) and [Core concepts for AgentCore payments](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/payments-concepts.html).
+
+### Evaluations: Third-party evaluators
+<a name="_evaluations_third_party_evaluators_2"></a>
+
+Amazon Bedrock AgentCore Evaluations now offers evaluators from the DeepEval and AutoEval open source libraries. There are two ways to use them: select a managed third-party evaluator by ID and the service runs it on a model it operates, the same way you use a built-in evaluator; or derive a custom evaluator from a built-in or third-party evaluator to run its logic on your own model and inference. Managed and derived third-party evaluators are discoverable through the `ListEvaluators` API alongside built-in and custom evaluators. See [Third-party evaluators](third-party-evaluators.md).
+
 ### Memory, policy, and harness are now available in AWS GovCloud (US-West)
 <a name="memory_policy_and_harness_are_now_available_in_shared_aws_govcloud_us_west"></a>
 
@@ -61,6 +122,11 @@ New session creation is now a single adjustable quota of 25 TPS per account, sha
 Control plane requests are grouped into three shared, non-adjustable quotas, each shared across all APIs in its group rather than enforced for each API: mutation APIs at 50 TPS, Get APIs at 150 TPS, and List APIs at 25 TPS.
 
 Resource quotas (such as active session workloads, agents, versions, and endpoints per account), invocation limits, session storage limits, and lifecycle limits remain unchanged.
+
+### Gateway: Web Search Tool now available in Europe (Ireland) and Asia Pacific (Tokyo)
+<a name="_gateway_web_search_tool_now_available_in_europe_ireland_and_asia_pacific_tokyo_2"></a>
+
+The Web Search Tool connector on Amazon Bedrock AgentCore Gateway is now available in two new Regions. These Regions are Europe (Ireland) `eu-west-1` and Asia Pacific (Tokyo) `ap-northeast-1`. Agents in these Regions can invoke the `WebSearch` tool to ground responses in current web knowledge without routing traffic outside their Region. The same Amazon-operated web index and knowledge graph that powers US East (N. Virginia) backs these new Regions. AWS infrastructure processes all queries with the same privacy guarantees and zero data egress. All connector versions (`1.1.0` and `1.2.0`) are available, including request-level domain and date filters. Existing agents require no changes—create a gateway and add a `web-search` connector target in the new Region to get started. See [Web Search Tool](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gateway-target-connector-web-search-tool.html).
 
 ## July 2026
 <a name="_july_2026"></a>
@@ -523,7 +589,7 @@ Added documentation for specifying custom claims values in AgentCore Gateway aut
 ### Bidirectional streaming
 <a name="_bidirectional_streaming_2"></a>
 
-Added documentation for bidirectional streaming with AgentCore Runtime, which enables real-time, full-duplex communication between clients and agents using WebSocket protocol for interactive agent experiences. See [Bidirectional streaming with AgentCore Runtime](https://docs.aws.amazon.com//bedrock-agentcore/latest/devguide/runtime-bidirectional-streaming.html).
+Added documentation for bidirectional streaming with AgentCore Runtime, which enables real-time, full-duplex communication between clients and agents using WebSocket protocol for interactive agent experiences. See [Bidirectional streaming with AgentCore Runtime](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-bidirectional-streaming.html).
 
 ### Authentication token support for AgentCore Gateway
 <a name="_authentication_token_support_for_agentcore_gateway_2"></a>
@@ -533,7 +599,7 @@ Added documentation for setting up authentication tokens for AgentCore Gateway g
 ### Amazon Bedrock AgentCore Evaluations
 <a name="_amazon_bedrock_agentcore_evaluations_2"></a>
 
-Added documentation for Amazon Bedrock AgentCore Evaluations, a comprehensive suite of capabilities for measuring and monitoring the performance, accuracy, and reliability of your agent or tools in both development and production environments. See [Evaluate agent performance with Amazon Bedrock AgentCore Evaluations](https://docs.aws.amazon.com//bedrock-agentcore/latest/devguide/evaluation/evaluation.html).
+Added documentation for Amazon Bedrock AgentCore Evaluations, a comprehensive suite of capabilities for measuring and monitoring the performance, accuracy, and reliability of your agent or tools in both development and production environments. See [Evaluate agent performance with Amazon Bedrock AgentCore Evaluations](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/evaluation/evaluation.html).
 
 ### API gateways as gateway targets
 <a name="_api_gateways_as_gateway_targets_2"></a>
@@ -546,7 +612,7 @@ Added documentation for adding an Amazon API Gateway gateway as a target. See [A
 ### Direct code deployment
 <a name="_direct_code_deployment_2"></a>
 
-Added documentation for direct code deployment, which enables you to deploy Python agents to Amazon Bedrock AgentCore Runtime using ZIP file archives for faster development and simpler packaging. See [Get started with direct code deployment](https://docs.aws.amazon.com//bedrock-agentcore/latest/devguide/runtime-get-started-code-deploy.html).
+Added documentation for direct code deployment, which enables you to deploy Python agents to Amazon Bedrock AgentCore Runtime using ZIP file archives for faster development and simpler packaging. See [Get started with direct code deployment](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-get-started-code-deploy.html).
 
 ## October 2025
 <a name="_october_2025"></a>

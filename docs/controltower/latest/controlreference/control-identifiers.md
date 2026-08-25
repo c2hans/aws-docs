@@ -72,6 +72,6 @@ The response includes the corresponding global ARN, but not the Regional ARN.
 ## Find identifiers for OUs
 <a name="identifiers-for-ous"></a>
 
-For more information about how to find the resource identifier for an OU and its resources, see [Resource types defined by AWS Organizations](https://docs.aws.amazon.com//service-authorization/latest/reference/list_awsorganizations.html#awsorganizations-resources-for-iam-policies).
+For more information about how to find the resource identifier for an OU and its resources, see [Resource types defined by AWS Organizations](https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsorganizations.html#awsorganizations-resources-for-iam-policies).
 
-To learn more about how to get information from an OU, see [the AWS Organizations API Reference](https://docs.aws.amazon.com//organizations/latest/APIReference/API_DescribeOrganizationalUnit.html).
+To learn more about how to get information from an OU, see [the AWS Organizations API Reference](https://docs.aws.amazon.com/organizations/latest/APIReference/API_DescribeOrganizationalUnit.html).

@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/guide/tm-import-exp
 
 This topic covers how to perform bulk import and export operations and how to handle errors in your transfer jobs. It provides examples of transfer jobs using CLI commands.
 
-The AWS IoT TwinMaker API Reference contains information on the [ CreateMetadataTransferJob](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_CreateMetadataTransferJob.html) and other API actions.
+The AWS IoT TwinMaker API Reference contains information on the [ CreateMetadataTransferJob](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_CreateMetadataTransferJob.html) and other API actions.
 
 **Topics**
 + [metadataTransferJob prerequisites](#tm-import-export-prereqs)
@@ -22,12 +22,12 @@ The AWS IoT TwinMaker API Reference contains information on the [ CreateMetadata
 
 Please complete the following prerequisites before you run a metadataTransferJob:
 + Create an AWS IoT TwinMaker workspace. The workspace can be the import destination or export source for a metadataTransferJob. For information on creating a workspace see, [Create a workspace](twinmaker-gs-workspace.md).
-+ Create an Amazon S3 bucket to store resources. For more information on using Amazon S3 see, [ What is Amazon S3?](https://docs.aws.amazon.com//AmazonS3/latest/userguide/Welcome.html)
++ Create an Amazon S3 bucket to store resources. For more information on using Amazon S3 see, [ What is Amazon S3?](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html)
 
 ## IAM permissions
 <a name="tm-import-export-prereqs-permissions"></a>
 
-When you perform bulk operations you need to create an IAM policy with permissions to allow for the exchange of AWS resources between Amazon S3, AWS IoT TwinMaker, AWS IoT SiteWise, and your local machine. For more information on creating IAM policies, see [Creating IAM policies](https://docs.aws.amazon.com//IAM/latest/UserGuide/access_policies_create.html).
+When you perform bulk operations you need to create an IAM policy with permissions to allow for the exchange of AWS resources between Amazon S3, AWS IoT TwinMaker, AWS IoT SiteWise, and your local machine. For more information on creating IAM policies, see [Creating IAM policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html).
 
 The policy statements for AWS IoT TwinMaker, AWS IoT SiteWise and Amazon S3 are listed here:
 + **AWS IoT TwinMaker policy**:
@@ -298,8 +298,8 @@ This section covers how to perform bulk import and export operations.
    This creates a metadataTransferJob and begins the process of the transferring your selected resources.
 
 To check or update the status of a transfer job, use the following commands:
-+ To cancel a job use the [ CancelMetadataTransferJob](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_CancelMetadataTransferJob.html) API action. When you call CancelMetadataTransferJob, the API only cancels a running metadataTransferJob, and any resources already exported or imported are not affected by this API call.
-+ To retrieve information on a specific job use the [ GetMetadataTransferJob](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_GetMetadataTransferJob.html) API action.
++ To cancel a job use the [ CancelMetadataTransferJob](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_CancelMetadataTransferJob.html) API action. When you call CancelMetadataTransferJob, the API only cancels a running metadataTransferJob, and any resources already exported or imported are not affected by this API call.
++ To retrieve information on a specific job use the [ GetMetadataTransferJob](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_GetMetadataTransferJob.html) API action.
 
   Or, you can call GetMetadataTransferJob on an existing transfer job with the following CLI command:
 
@@ -308,7 +308,7 @@ To check or update the status of a transfer job, use the following commands:
   ```
 
   If you call GetMetadataTransferJob on a non-existing AWS IoT TwinMaker import or export job, you get a `ResourceNotFoundException` error in response.
-+ To list current jobs, use the [ ListMetadataTransferJobs](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_ListMetadataTransferJobs.html) API action.
++ To list current jobs, use the [ ListMetadataTransferJobs](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_ListMetadataTransferJobs.html) API action.
 
   Here is a CLI example that calls ListMetadataTransferJobs with AWS IoT TwinMaker as the destinationType and `s3` as the sourceType:
 
@@ -333,7 +333,7 @@ aws iottwinmaker get-metadata-transfer-job \
 --region us-east-1
 ```
 
-Once you see the state of the job turn to `COMPLETED`, you can verify the results of the job. GetMetadataTransferJob returns an object called [`MetadataTransferJobProgress`](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_MetadataTransferJobProgress.html) which contains the following fields:
+Once you see the state of the job turn to `COMPLETED`, you can verify the results of the job. GetMetadataTransferJob returns an object called [`MetadataTransferJobProgress`](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_MetadataTransferJobProgress.html) which contains the following fields:
 + **failedCount:** Indicates the number of resources that failed during the transfer process.
 + **skippedCount:** Indicates the number of resources that were skipped during the transfer process.
 + **succeededCount:** Indicates the number of resources that succeeded during the transfer process.
@@ -508,7 +508,7 @@ Use the following template format for a job that imports components:
 <a name="tm-import-export-cli-examples"></a>
 
 Use the following commands to manage your metadata transfers:
-+ [ CreateMetadataTransferJob](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_CreateMetadataTransferJob.html) API action.
++ [ CreateMetadataTransferJob](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_CreateMetadataTransferJob.html) API action.
 
   CLI command example:
 
@@ -516,7 +516,7 @@ Use the following commands to manage your metadata transfers:
   aws iottwinmaker create-metadata-transfer-job --region us-east-1 \
   --cli-input-json file://{{yourTransferFileName}}.json
   ```
-+ To cancel a job use the [ CancelMetadataTransferJob](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_CancelMetadataTransferJob.html) API action.
++ To cancel a job use the [ CancelMetadataTransferJob](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_CancelMetadataTransferJob.html) API action.
 
   CLI command example:
 
@@ -527,7 +527,7 @@ Use the following commands to manage your metadata transfers:
   ```
 
   When you call CancelMetadataTransferJob, it only cancels a specific metadata transfer job, and any resources already exported or imported are not affected.
-+ To retrieve information on a specific job use the [ GetMetadataTransferJob](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_GetMetadataTransferJob.html) API action.
++ To retrieve information on a specific job use the [ GetMetadataTransferJob](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_GetMetadataTransferJob.html) API action.
 
   CLI command example:
 
@@ -536,7 +536,7 @@ Use the following commands to manage your metadata transfers:
   --metadata-transfer-job-id {{your_metadata_transfer_job_id}} \
   --region us-east-1 \
   ```
-+ To list current jobs use the [ ListMetadataTransferJobs](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_ListMetadataTransferJobs.html) API action.
++ To list current jobs use the [ ListMetadataTransferJobs](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_ListMetadataTransferJobs.html) API action.
 
   You can filter the results returned by ListMetadataTransferJobs using a JSON file. See the following procedure using the CLI:
 

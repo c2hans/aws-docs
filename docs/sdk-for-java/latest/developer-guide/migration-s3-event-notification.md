@@ -25,8 +25,6 @@ In v1, attribute class names include the suffix *Entity*, whereas v2 omits this 
 
 In v1, S3 Event Notification API classes are transitively imported with along with the S3 module (artifactId `aws-java-sdk-s3`). However, in v2, you need to add a dependency on the `s3-event-notifications` artifact.
 
-****
-
 | Change | v1 | v2 |
 | --- | --- | --- |
 |  <br />Maven dependencies |  <pre><dependencyManagement><br />    <dependencies><br />        <dependency><br />            <groupId>com.amazonaws</groupId><br />            <artifactId>aws-java-sdk-bom</artifactId><br />            <version>{{1.X.X}}</version><br />            <type>pom</type><br />            <scope>import</scope><br />        </dependency><br />    </dependencies><br /></dependencyManagement><br /><dependencies><br />    <dependency><br />        <groupId>com.amazonaws</groupId><br />        <artifactId>aws-java-sdk-s3</artifactId><br />    </dependency><br /></dependencies></pre>  |  <pre><dependencyManagement><br />    <dependencies><br />        <dependency><br />            <groupId>software.amazon.awssdk</groupId><br />            <artifactId>bom</artifactId><br />            <version>{{2.X.X1}}</version><br />            <type>pom</type><br />            <scope>import</scope><br />        </dependency><br />    </dependencies><br /></dependencyManagement><br /><dependencies><br />    <dependency><br />        <groupId>software.amazon.awssdk</groupId><br />        <artifactId>s3-event-notifications</artifactId><br />    </dependency><br /></dependencies></pre>  |

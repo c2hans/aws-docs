@@ -61,7 +61,7 @@ These options are discussed next.
 When managing a larger number of agents, use the bulk upload option to set the shift profile override, shift rotation pattern, and starting step in a .csv file.
 
 **Note**
-Ensure that your pop-up blocker is off so you can download the .csv file template.
+Make sure that your pop-up blocker is off so you can download the .csv file template.
 + On the **Staff rules** page, choose one of the following options:
   + **Download snapshot**, **Shift profile override** to download a snapshot of existing shift rotation pattern assignments for your agents.
   + **Download template**, **Shift profile override** to download a blank .csv file.

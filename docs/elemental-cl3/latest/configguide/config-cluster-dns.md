@@ -15,8 +15,6 @@ These rules apply to working with DNS on a node:
 
 Make sure you perform the configuration on the correct nodes.
 
-****
-
 | Node | Work on this node? |
 | --- | --- |
 | Primary Conductor Live node | Yes |

@@ -6,27 +6,27 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/automating
 <a name="automating-tasks"></a>
 
 Many customers prefer to automate tasks in AWS Control Tower, such as account provisioning, control assignment, and auditing. You can set up these automated actions with calls to:
-+ [AWS Service Catalog APIs](https://docs.aws.amazon.com//servicecatalog/latest/dg/service-catalog-api-overview.html)
-+ [AWS Organizations APIs](https://docs.aws.amazon.com//organizations/latest/APIReference/Welcome.html)
-+ [AWS Control Tower APIs](https://docs.aws.amazon.com//controltower/latest/APIReference/Welcome.html)
-+ [the AWS CLI](https://docs.aws.amazon.com//cli/latest/reference/servicecatalog/index.html)
-+ [Lifecycle Events](https://docs.aws.amazon.com//controltower/latest/userguide/lifecycle-events.html)
++ [AWS Service Catalog APIs](https://docs.aws.amazon.com/servicecatalog/latest/dg/service-catalog-api-overview.html)
++ [AWS Organizations APIs](https://docs.aws.amazon.com/organizations/latest/APIReference/Welcome.html)
++ [AWS Control Tower APIs](https://docs.aws.amazon.com/controltower/latest/APIReference/Welcome.html)
++ [the AWS CLI](https://docs.aws.amazon.com/cli/latest/reference/servicecatalog/index.html)
++ [Lifecycle Events](https://docs.aws.amazon.com/controltower/latest/userguide/lifecycle-events.html)
 
 The [Additional information and links](related-information.md) page contains links to many excellent technical blog posts that can help you automate tasks in AWS Control Tower. The sections that follow provide links to areas in this *AWS Control Tower User Guide* that can assist you with automating tasks.
 
 **Automating control tasks**
 
- You can automate tasks related to applying and removing controls (also known as *guardrails*) through the AWS Control Tower API. For details, see the [AWS Control Tower API Reference](https://docs.aws.amazon.com//controltower/latest/APIReference/Welcome.html).
+ You can automate tasks related to applying and removing controls (also known as *guardrails*) through the AWS Control Tower API. For details, see the [AWS Control Tower API Reference](https://docs.aws.amazon.com/controltower/latest/APIReference/Welcome.html).
 
-For more information about how to perform control operations with AWS Control Tower APIs, see the blog post [AWS Control Tower releases API, pre-defined controls to your organizational units](https://aws.amazon.com//blogs/mt/aws-control-tower-releases-api-pre-defined-controls-to-your-organizational-units/).
+For more information about how to perform control operations with AWS Control Tower APIs, see the blog post [AWS Control Tower releases API, pre-defined controls to your organizational units](https://aws.amazon.com/blogs/mt/aws-control-tower-releases-api-pre-defined-controls-to-your-organizational-units/).
 
 **Automating landing zone tasks**
 
-The AWS Control Tower landing zone APIs help you automate certain tasks related to your landing zone. For details, see the [AWS Control Tower API Reference](https://docs.aws.amazon.com//controltower/latest/APIReference/Welcome.html).
+The AWS Control Tower landing zone APIs help you automate certain tasks related to your landing zone. For details, see the [AWS Control Tower API Reference](https://docs.aws.amazon.com/controltower/latest/APIReference/Welcome.html).
 
 **Automating OU registration**
 
-The AWS Control Tower baseline APIs help you automate certain tasks, such as registering an OU. For details, see the [AWS Control Tower API Reference](https://docs.aws.amazon.com//controltower/latest/APIReference/Welcome.html).
+The AWS Control Tower baseline APIs help you automate certain tasks, such as registering an OU. For details, see the [AWS Control Tower API Reference](https://docs.aws.amazon.com/controltower/latest/APIReference/Welcome.html).
 
 **Automated account closure**
 
@@ -40,13 +40,13 @@ You can automate the closure of AWS Control Tower member accounts with an AWS Or
 
 *Customizations for AWS Control Tower* (CfCT) helps you customize your AWS Control Tower landing zone and stay aligned with AWS best practices. Customizations are implemented with AWS CloudFormation templates, service control policies (SCPs), and resource control policies (RCPs). For more information, see [Customizations for AWS Control Tower (CfCT) overview](cfct-overview.md).
 
-For more information and a video about automated account provisioning, see [Walkthrough: Automated account provisioning in AWS Control Tower](https://docs.aws.amazon.com//controltower/latest/userguide/automated-provisioning-walkthrough.html) and [Automated provisioning with IAM roles](https://docs.aws.amazon.com//controltower/latest/userguide/roles-how.html#automated-provisioning).
+For more information and a video about automated account provisioning, see [Walkthrough: Automated account provisioning in AWS Control Tower](https://docs.aws.amazon.com/controltower/latest/userguide/automated-provisioning-walkthrough.html) and [Automated provisioning with IAM roles](https://docs.aws.amazon.com/controltower/latest/userguide/roles-how.html#automated-provisioning).
 
-Also see [Update accounts by script](https://docs.aws.amazon.com//controltower/latest/userguide/configuration-updates.html#update-accounts-by-script).
+Also see [Update accounts by script](https://docs.aws.amazon.com/controltower/latest/userguide/configuration-updates.html#update-accounts-by-script).
 
 **Programmatic auditing of accounts**
 
-For more information about auditing accounts programmatically, see [Programmatic roles and trust relationships for the AWS Control Tower audit account](https://docs.aws.amazon.com//controltower/latest/userguide/roles-how.html#stacksets-and-roles).
+For more information about auditing accounts programmatically, see [Programmatic roles and trust relationships for the AWS Control Tower audit account](https://docs.aws.amazon.com/controltower/latest/userguide/roles-how.html#stacksets-and-roles).
 
 **Automating other tasks**
 
@@ -58,12 +58,12 @@ Two open source samples are available on GitHub to help you with certain automat
 + The sample called [aws-control-tower-org-setup-sample](https://github.com/aws-samples/aws-control-tower-org-setup-sample) shows how to automate setting up the Audit account as the delegated administrator for security-related services.
 + The sample called [aws-control-tower-account-setup-using-step-functions](https://github.com/aws-samples/aws-control-tower-account-setup-using-step-functions) shows how to automate security best practices using Step Functions, when provisioning and configuring new accounts. This sample includes adding principals to organizationally-shared AWS Service Catalog portfolios and associating organization-wide AWS IAM Identity Center groups to new accounts automatically. It also illustrates how to delete the default VPC in every Region.
 
-The *AWS Security Reference Architecture* includes code examples for automating tasks related to AWS Control Tower. For more information, see the [AWS Prescriptive Guidance pages](https://docs.aws.amazon.com//prescriptive-guidance/latest/security-reference-architecture/welcome.html) and the [associated GitHub repository](https://github.com/aws-samples/aws-security-reference-architecture-examples/tree/main/aws_sra_examples).
+The *AWS Security Reference Architecture* includes code examples for automating tasks related to AWS Control Tower. For more information, see the [AWS Prescriptive Guidance pages](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/welcome.html) and the [associated GitHub repository](https://github.com/aws-samples/aws-security-reference-architecture-examples/tree/main/aws_sra_examples).
 
-For information about using AWS Control Tower with AWS CloudShell, an AWS service that facilitates working in the AWS CLI, see [AWS CloudShell and the AWS CLI](https://docs.aws.amazon.com//controltower/latest/userguide/using-aws-with-cloudshell.html).
+For information about using AWS Control Tower with AWS CloudShell, an AWS service that facilitates working in the AWS CLI, see [AWS CloudShell and the AWS CLI](https://docs.aws.amazon.com/controltower/latest/userguide/using-aws-with-cloudshell.html).
 
-Because AWS Control Tower is an orchestration layer for AWS Organizations, many other AWS services are available by means of APIs and the AWS CLI. For more information, see [Related AWS services](https://docs.aws.amazon.com//controltower/latest/userguide/related-information.html#related-aws-services).
+Because AWS Control Tower is an orchestration layer for AWS Organizations, many other AWS services are available by means of APIs and the AWS CLI. For more information, see [Related AWS services](https://docs.aws.amazon.com/controltower/latest/userguide/related-information.html#related-aws-services).
 
 You can extend automation by using the lifecycle events that AWS Control Tower emits. These events can be monitored through an Amazon EventBridge rule, which can then trigger custom automation, such as invoking an AWS Lambda function to apply tags, configure resources, or notify teams when specific account or control-related events occur in your landing zone.
 
-For more information about lifecycle events, see [Lifecycle events in AWS Control Tower](https://docs.aws.amazon.com//controltower/latest/userguide/lifecycle-events.html).
+For more information about lifecycle events, see [Lifecycle events in AWS Control Tower](https://docs.aws.amazon.com/controltower/latest/userguide/lifecycle-events.html).

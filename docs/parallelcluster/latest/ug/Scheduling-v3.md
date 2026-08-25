@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/parallelcluster/latest/ug/Scheduling-v3.
 # `Scheduling` section
 <a name="Scheduling-v3"></a>
 
-**(Required)** Defines the job scheduler that's used in the cluster and the compute instances that the job scheduler manages. You can either use the Slurm or AWS Batch scheduler. Each supports a different set of settings and properties.
+**(Required)** Defines the job scheduler that's used in the cluster and the compute instances that the job scheduler manages. You can either use the Slurm or AWS Batch scheduler. Each supports a different set of settings and properties. Starting with AWS ParallelCluster version 3.16.0, AWS Batch as a scheduler is no longer supported.
 
 **Topics**
 + [`Scheduling` properties](#Scheduling-v3.properties)
@@ -165,7 +165,7 @@ Scheduling:
 <a name="Scheduling-v3.properties"></a>
 
 **`Scheduler` (**Required**, `String`)**
-Specifies the type of scheduler that's used. Supported values are `slurm` and `awsbatch`.
+Specifies the type of scheduler that's used. Supported values are `slurm` and `awsbatch`. Starting with AWS ParallelCluster version 3.16.0, AWS Batch as a scheduler is no longer supported.
 [Update policy: If this setting is changed, the update is not allowed.](using-pcluster-update-cluster-v3.md#update-policy-fail-v3)
 `awsbatch` only supports the `alinux2` operating system and `x86_64` platform.
 
@@ -1404,7 +1404,7 @@ The identity that Slurm uses to connect to the database, write accounting logs, 
 The Amazon Resource Name (ARN) of the AWS Secrets Manager secret that contains the `UserName` plaintext password. This password is used together with `UserName` and Slurm accounting to authenticate on the database server.
 + When you create a secret using the AWS Secrets Manager console be sure to select "Other type of secret", select plaintext, and only include the password text in the secret.
 + You cannot use the '\#' character in the Database password as Slurm does not support it in slurmdbd.conf.
-+ For more information on how to use AWS Secrets Manager to create a secret refer to [ Create an AWS Secrets Manager Secret](https://docs.aws.amazon.com//secretsmanager/latest/userguide/create_secret).
++ For more information on how to use AWS Secrets Manager to create a secret refer to [ Create an AWS Secrets Manager Secret](https://docs.aws.amazon.com/secretsmanager/latest/userguide/create_secret).
 If the user has the permission to [DescribeSecret](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_DescribeSecret.html), `PasswordSecretArn` is validated. `PasswordSecretArn` is valid if the specified secret exists. If the user IAM policy doesn't include `DescribeSecret`, `PasswordSecretArn` isn't validated and a warning message is displayed. For more information, see [Base AWS ParallelCluster `pcluster` user policy](iam-roles-in-parallelcluster-v3.md#iam-roles-in-parallelcluster-v3-base-user-policy).
 When you update `PasswordSecretArn`, the compute fleet must be stopped. If the secret value changes, and the secret ARN doesn't change, the cluster isn't automatically updated with the new database password. To update the cluster for the new secret value, you must run the following command from within the head node after the compute fleet is stopped.
 

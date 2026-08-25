@@ -343,4 +343,4 @@ Due to technical limitations, some issues cannot be addressed with live patching
 ## Frequently asked questions
 <a name="al2-live-patching-faq"></a>
 
-For frequently asked questions about Kernel Live Patching for AL2, see the [Amazon Linux 2 Kernel Live Patching FAQ](https://aws.amazon.com//amazon-linux-2/faqs/).
+For frequently asked questions about Kernel Live Patching for AL2, see the [Amazon Linux 2 Kernel Live Patching FAQ](https://aws.amazon.com/amazon-linux-2/faqs/).

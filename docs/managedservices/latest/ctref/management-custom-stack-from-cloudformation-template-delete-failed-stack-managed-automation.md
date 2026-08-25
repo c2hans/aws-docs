@@ -14,8 +14,6 @@ Use to delete a CloudFormation stack that's in the DELETE\_FAILED state. This is
 ## Change Type Details
 <a name="ct-0ntpkt9wntdfs-MCSd-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-0ntpkt9wntdfs |

@@ -14,8 +14,6 @@ Request a Trend Micro on-demand scan on all, or specified, Amazon Elastic Comput
 ## Change Type Details
 <a name="ct-08sgdn5zowyyl-MHTs-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-08sgdn5zowyyl |

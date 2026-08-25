@@ -10,8 +10,6 @@ AD FS is a SAML based authentication plugin that works with the Active Directory
 ## Authentication type
 <a name="odbc-v2-driver-authentication-type-8"></a>
 
-****
-
 | **Connection string name** | **Parameter type** | **Default value** | **Connection string example** |
 | --- | --- | --- | --- |
 | AuthenticationType | Required | IAM Credentials | AuthenticationType=ADFS; |
@@ -20,8 +18,6 @@ AD FS is a SAML based authentication plugin that works with the Active Directory
 <a name="odbc-v2-driver-ad-fs-username"></a>
 
 Your user name for connecting to the AD FS server. For Integrated Windows Authentication, you can omit the user name. If your AD FS setup requires a user name, you must provide it in the connection parameter.
-
-****
 
 | **Connection string name** | **Parameter type** | **Default value** | **Connection string example** |
 | --- | --- | --- | --- |
@@ -32,8 +28,6 @@ Your user name for connecting to the AD FS server. For Integrated Windows Authen
 
 Your password for connecting to the AD FS server. Like the user name field, you can omit the user name if you use Integrated Windows Authentication. If your AD FS setup requires a password, you must provide it in the connection parameter.
 
-****
-
 | **Connection string name** | **Parameter type** | **Default value** | **Connection string example** |
 | --- | --- | --- | --- |
 | PWD | Optional for windows integrated authentication | none | PWD=password\_3EXAMPLE; |
@@ -42,8 +36,6 @@ Your password for connecting to the AD FS server. Like the user name field, you 
 <a name="odbc-v2-driver-ad-fs-preferred-role"></a>
 
 The Amazon Resource Name (ARN) of the role to assume. If your SAML assertion has multiple roles, you can specify this parameter to choose the role to be assumed. This role should present in the SAML assertion. For more information about ARN roles, see [AssumeRole](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html) in the *AWS Security Token Service API Reference*.
-
-****
 
 | **Connection string name** | **Parameter type** | **Default value** | **Connection string example** |
 | --- | --- | --- | --- |
@@ -54,8 +46,6 @@ The Amazon Resource Name (ARN) of the role to assume. If your SAML assertion has
 
 The duration, in seconds, of the role session. For more information about session duration, see [AssumeRole](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html) in the *AWS Security Token Service API Reference*.
 
-****
-
 | **Connection string name** | **Parameter type** | **Default value** | **Connection string example** |
 | --- | --- | --- | --- |
 | duration | Optional | 900 | duration=900; |
@@ -64,8 +54,6 @@ The duration, in seconds, of the role session. For more information about sessio
 <a name="odbc-v2-driver-ad-fs-idp-host"></a>
 
 The name of the AD FS service host.
-
-****
 
 | **Connection string name** | **Parameter type** | **Default value** | **Connection string example** |
 | --- | --- | --- | --- |
@@ -76,8 +64,6 @@ The name of the AD FS service host.
 
 The port to use to connect to the AD FS host.
 
-****
-
 | **Connection string name** | **Parameter type** | **Default value** | **Connection string example** |
 | --- | --- | --- | --- |
 | idp\_port | Required | none | idp\_port=443; |
@@ -86,8 +72,6 @@ The port to use to connect to the AD FS host.
 <a name="odbc-v2-driver-ad-fs-logintorp"></a>
 
 The trusted relying party. Use this parameter to override the AD FS relying party endpoint URL.
-
-****
 
 | **Connection string name** | **Parameter type** | **Default value** | **Connection string example** |
 | --- | --- | --- | --- |

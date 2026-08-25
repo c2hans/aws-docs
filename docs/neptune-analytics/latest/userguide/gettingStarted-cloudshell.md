@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/getti
 # Quick start using AWS CloudShell
 <a name="gettingStarted-cloudshell"></a>
 
- You can connect to your Neptune Analytics graph with a single click through [AWS CloudShell](https://docs.aws.amazon.com//cloudshell/latest/userguide/welcome.html) directly from the AWS Management Console. CloudShell provides a pre-authenticated shell environment with the `graphsh` tool pre-installed, connecting to your graph's public endpoint. You don't need to provision notebooks to interact with the graph.
+ You can connect to your Neptune Analytics graph with a single click through [AWS CloudShell](https://docs.aws.amazon.com/cloudshell/latest/userguide/welcome.html) directly from the AWS Management Console. CloudShell provides a pre-authenticated shell environment with the `graphsh` tool pre-installed, connecting to your graph's public endpoint. You don't need to provision notebooks to interact with the graph.
 
 **Time to complete:** Approximately 2 minutes
 
@@ -19,7 +19,7 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/getti
 ## Step 1: Connect to your Neptune Analytics graph
 <a name="gettingStarted-cloudshell-connect"></a>
 
- Connect to your Neptune Analytics graph using [AWS CloudShell](https://docs.aws.amazon.com//cloudshell/latest/userguide/welcome.html).
+ Connect to your Neptune Analytics graph using [AWS CloudShell](https://docs.aws.amazon.com/cloudshell/latest/userguide/welcome.html).
 
 **Note**
  You must enable public connectivity to connect to a Neptune Analytics graph using CloudShell.

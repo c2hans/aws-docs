@@ -19,7 +19,7 @@ For information about tag-based resource-level permissions, see [Using tags with
 ## ds-data:SAMAccountName
 <a name="dsdata_condition-SAMAccountName"></a>
 
-Works with [String operators](https://docs.aws.amazon.com//IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String).
+Works with [String operators](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String).
 
 Use this key to explicitly allow or deny an IAM role from performing actions on specific users and groups.
 
@@ -66,7 +66,7 @@ This condition key case insensitive. You must use `[StringEqualsIgnoreCase](http
 ## ds-data:Identifier
 <a name="dsdata_condition-identifier"></a>
 
-Works with [String operators](https://docs.aws.amazon.com//IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String).
+Works with [String operators](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String).
 
 Use this key to define which identifier to use in the IAM policy permissions. Currently, only `SAMAccountName` is supported.
 
@@ -106,7 +106,7 @@ The following policy allows the IAM principal to update the user `joe`.
 ## ds-data:MemberName
 <a name="dsdata_condition-MemberName"></a>
 
-Works with [String operators](https://docs.aws.amazon.com//IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String).
+Works with [String operators](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String).
 
 Use this key to define the members that can have operations performed on them.
 
@@ -147,7 +147,7 @@ This condition key is case insensitive. You must use `[StringEqualsIgnoreCase](h
 ## ds-data:MemberRealm
 <a name="dsdata_condition-MemberRealm"></a>
 
-Works with [String operators](https://docs.aws.amazon.com//IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String).
+Works with [String operators](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String).
 
 Use this key to check whether the `ds-data:MemberRealm` value in the policy matches the member realm in the request.
 
@@ -189,7 +189,7 @@ The following example uses only the `ds-data:MemberName` context key.
 ## ds-data:Realm
 <a name="dsdata_condition-Realm"></a>
 
-Works with [String operators](https://docs.aws.amazon.com//IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String).
+Works with [String operators](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String).
 
 Use this key to check whether the `ds-data:Realm` value in the policy matches the realm an IAM principal can use to make requests to Directory Service Data APIs.
 

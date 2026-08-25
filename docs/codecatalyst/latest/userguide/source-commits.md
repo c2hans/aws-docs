@@ -25,7 +25,7 @@ You can also view files and folders. For more information, see [Managing source 
 You can view the history of changes made to a branch by reviewing the branch's commits in the CodeCatalyst console. This helps you understand who made changes to the branch and when. You can also review the changes made in a specific commit.
 
 **Tip**
-You can also view the history of commits that made changes to a specific file. For more information see [Viewing a fileViewing the history of changes to a file](source-files-view-history.md).
+You can also view the history of commits that made changes to a specific file. For more information see [Viewing a file](source-files-view-history.md).
 
 You can also view commits by using your Git client. For more information, see your Git documentation.<a name="source-commits-view-console"></a>
 

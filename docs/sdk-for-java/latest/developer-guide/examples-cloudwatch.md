@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/exam
 # Work with CloudWatch
 <a name="examples-cloudwatch"></a>
 
-This section provides examples of programming [Amazon CloudWatch](https://docs.aws.amazon.com//AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html) by using the AWS SDK for Java 2.x.
+This section provides examples of programming [Amazon CloudWatch](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html) by using the AWS SDK for Java 2.x.
 
  Amazon CloudWatch monitors your Amazon Web Services (AWS) resources and the applications you run on AWS in real time. You can use CloudWatch to collect and track metrics, which are variables you can measure for your resources and applications. CloudWatch alarms send notifications or automatically make changes to the resources you are monitoring based on rules that you define.
 

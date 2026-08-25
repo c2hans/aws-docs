@@ -15,7 +15,7 @@ The following table lists all available flow blocks that you can use. Choose any
 | [Authenticate Customer](authenticate-customer.md)  | Enables the customer to authenticate by using Amazon Cognito and Connect Customer Customer Profiles. |
 | [Call phone number](call-phone-number.md)  | Initiates an outbound call from an outbound whisper flow. |
 | [Cases](cases-block.md)  | Gets, updates, and creates cases.  |
-| [Change routing priority / age](change-routing-priority.md)  | Changes the priority of the contact in queue. You may want to do this, for example, based on the contact's issue or other variable. |
+| [Change routing priority / age](change-routing-priority.md)  | Changes the priority of the contact in queue. You might want to do this, for example, based on the contact's issue or other variable. |
 | [Check call progress](check-call-progress.md)  | Engages with the output provided by an answering machine, and provides branches to route the contact accordingly. This block works with outbound campaigns only. |
 | [Check contact attributes](check-contact-attributes.md)  | Checks the values of contact attributes. |
 |  [Check hours of operation](check-hours-of-operation.md) | Checks whether the contact is occurring within or outside of the hours of operation defined for the queue. |
@@ -30,6 +30,7 @@ The following table lists all available flow blocks that you can use. Choose any
 |  [Disconnect / hang up](disconnect-hang-up.md)  | Disconnects a contact. |
 |  [Distribute by percentage](distribute-by-percentage.md)  | Routes customers randomly based on a percentage. |
 |  [End flow / Resume](end-flow-resume.md)  | Ends the current flow without disconnecting the contact. |
+| [External Tool](external-tool.md) | Invokes a tool from an external application integrated through an Amazon Bedrock AgentCore gateway. |
 |  [Get customer input](get-customer-input.md)  | Branches based on customer intent. |
 | [Get metrics](get-queue-metrics.md) | Retrieves real-time metrics about queues and agents in your contact center and returns them as attributes. |
 | [Get stored content](get-stored-content.md) | Retrieves content stored in S3 and returns them as attributes to be used within flows. |

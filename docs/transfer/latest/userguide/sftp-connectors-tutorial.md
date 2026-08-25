@@ -13,7 +13,7 @@ An SFTP connector retrieves SFTP credentials from AWS Secrets Manager to authent
 
 ![An architecture diagram for how the SFTP connector interacts with Secrets Manager, Amazon S3, CloudWatch logs, IAM roles, and the remote SFTP server.](http://docs.aws.amazon.com/transfer/latest/userguide/images/sftp-connector-arch-diag.png)
 
-The following blog post provides a reference architecture to build an MFT workflow using SFTP connectors, including encryption of files using PGP before sending them to a remote SFTP server using SFTP connectors: [Architecting secure and compliant managed file transfers with AWS Transfer Family SFTP connectors and PGP encryption.](https://aws.amazon.com/blogs//storage/architecting-secure-and-compliant-managed-file-transfers-with-aws-transfer-family-sftp-connectors-and-pgp-encryption/)
+The following blog post provides a reference architecture to build an MFT workflow using SFTP connectors, including encryption of files using PGP before sending them to a remote SFTP server using SFTP connectors: [Architecting secure and compliant managed file transfers with AWS Transfer Family SFTP connectors and PGP encryption.](https://aws.amazon.com/blogs/storage/architecting-secure-and-compliant-managed-file-transfers-with-aws-transfer-family-sftp-connectors-and-pgp-encryption/)
 
 ## Connector egress types
 <a name="connector-egress-types"></a>
@@ -280,7 +280,7 @@ You cannot change the egress type after creating the connector. Choose carefully
 
 1. In the **SFTP Configuration** section, provide the following information:
    + For **Connector credentials**, choose the name of your Secrets Manager resource that contains SFTP credentials. For the tutorial, choose **aws/transfer/sftp-connector1**.
-   + For **Trusted host keys **, paste in the public portion of the host key. You can retrieve this key by running `ssh-keyscan` for your SFTP server. For details on how to format and store the trusted host key, see the [SftpConnectorConfig](https://docs.aws.amazon.com//transfer/latest/APIReference/API_SftpConnectorConfig.html) data type documentation.
+   + For **Trusted host keys **, paste in the public portion of the host key. You can retrieve this key by running `ssh-keyscan` for your SFTP server. For details on how to format and store the trusted host key, see the [SftpConnectorConfig](https://docs.aws.amazon.com/transfer/latest/APIReference/API_SftpConnectorConfig.html) data type documentation.
    + For **Maximum concurrent connections**, select an integer value from 1 to 5: the default value is 5.
 ![The Transfer Family SFTP connector console, showing the SFTP configuration settings.](http://docs.aws.amazon.com/transfer/latest/userguide/images/create-connector-example-sftp-config.png)
 

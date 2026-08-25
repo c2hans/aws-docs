@@ -45,12 +45,12 @@ If a recording is moved from one S3 bucket to another for any reason, such as th
 
 **Tip**
 We recommend using the contact ID to search for recordings.
-Even though many call recordings for specific contact IDs may be named with the contact ID prefix itself (for example, 123456-aaaa-bbbb-3223-2323234.wav), there is no guarantee that the contact IDs and name of the contact recording file *always* match. By using **Contact ID** for your search on the [Contact search](search-recordings.md) page, you can find the correct recording by referring to the audio file on the contact record.
+Even though many call recordings for specific contact IDs might be named with the contact ID prefix itself (for example, 123456-aaaa-bbbb-3223-2323234.wav), there is no guarantee that the contact IDs and name of the contact recording file *always* match. By using **Contact ID** for your search on the [Contact search](search-recordings.md) page, you can find the correct recording by referring to the audio file on the contact record.
 
 ## When are recordings available?
 <a name="when-are-recordings-available"></a>
 
-When the recording for an agent interaction is enabled, the recording is placed in your S3 bucket shortly after the contact is disconnected. When IVR recording is enabled, the recording is placed in your S3 bucket shortly after the contact is disconnected or once the call is answered by an agent. You can [review the recording](review-recorded-conversations.md) for both agent interactions and automated interactions (IVR)..
+When the recording for an agent interaction is enabled, the recording is placed in your S3 bucket shortly after the contact is disconnected. When IVR recording is enabled, the recording is placed in your S3 bucket shortly after the contact is disconnected or after the call is answered by an agent. You can [review the recording](review-recorded-conversations.md) for both agent interactions and automated interactions (IVR)..
 
 **Important**
 You can also access the recording from the customer's [contact record](sample-ctr.md). The recording is available in the contact record, however, only after the contact has left the [After Contact Work (ACW) state](metrics-agent-status.md#agent-status-acw). The IVR recording becomes available shortly after the call gets connected to the agent or contact is disconnected.

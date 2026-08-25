@@ -21,7 +21,7 @@ In this test case, we validate two scenarios:
 
 In the test case designer, create five interaction groups. Connect the first four in sequence to validate the conversation flow with the Lex bot. Add a fifth, open interaction group to validate the transfer-to-queue action.
 
-The open interaction group runs independently of the others, ensuring that queue transfer is validated even if an intent is not matched or the Lex bot encounters an error. This is because the Lex bot default and error branches in the contact flow are both connected to the queue transfer block.
+The open interaction group runs independently of the others, making sure that queue transfer is validated even if an intent is not matched or the Lex bot encounters an error. This is because the Lex bot default and error branches in the contact flow are both connected to the queue transfer block.
 
 ![Workflow diagram showing five validation blocks with Observe and Action steps connected in sequence.](http://docs.aws.amazon.com/connect/latest/adminguide/images/test-case-designer.png)
 
@@ -94,7 +94,7 @@ This group validates that the contact is transferred to a queue and sends a test
 
 After configuring all interaction groups and blocks, publish the test case and choose **Run test** to open the test results page and monitor results in real time.
 
-Once the test is complete, the results for each interaction group are displayed in execution order. Note that **Initial Setup**, **Start**, and **Completed** entries are added to the execution trace to provide visibility into the system steps for initiating and completing the test.
+After the test is complete, the results for each interaction group are displayed in execution order. Note that **Initial Setup**, **Start**, and **Completed** entries are added to the execution trace to provide visibility into the system steps for initiating and completing the test.
 
 ![Test results showing 5 passed interactions with 18 second completion time and expandable steps.](http://docs.aws.amazon.com/connect/latest/adminguide/images/test-case-result-detail.png)
 

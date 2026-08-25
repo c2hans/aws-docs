@@ -14,7 +14,7 @@ The following diagram shows some of the other AWS services you can use with Conn
 ## Development
 <a name="development-services"></a>
 
-You can use AWS Lambda functions to either look up or post data to sources outside of Connect Customer. For example, you can look up an inbound caller on Salesforce based on the customer’s phone number. The function may return such results as the customer name, membership level (for example, frequent flyer), last order, and order status. Then based on that information, the call can be routed to an Amazon Lex bot or an agent.
+You can use AWS Lambda functions to either look up or post data to sources outside of Connect Customer. For example, you can look up an inbound caller on Salesforce based on the customer’s phone number. The function might return such results as the customer name, membership level (for example, frequent flyer), last order, and order status. Then based on that information, the call can be routed to an Amazon Lex bot or an agent.
 
 You can also use Lambda with AWS databases like DynamoDB to create dynamic routing abilities. For example, you can retrieve a prompt in a specific language, based on input from the customer.
 

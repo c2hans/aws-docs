@@ -214,7 +214,7 @@ For information about editing vCenter credentials, see [Editing VMware vCenter c
 
 The home page of the database and analytics data collection module in Agentless Collector displays the connection status for **Access to DMS** and **Access to S3**. If you see **No access** for **Access to DMS** and **Access to S3**, then configure data forwarding. For more information, see [Configuring data forwarding](agentless-collector-gs-database-analytics-collection-prerequisites.md).
 
-If you experience this issue after you configure data forwarding, then check to make sure that your data collection module can access to the internet. Then, make sure that you added the **DMSCollectorPolicy** and **FleetAdvisorS3Policy** policies to your IAM user. For more information, see [Deploying Application Discovery Service Agentless CollectorCreate an IAM user for Agentless Collector](agentless-collector-deploying.md#agentless-collector-gs-iam-user).
+If you experience this issue after you configure data forwarding, then check to make sure that your data collection module can access to the internet. Then, make sure that you added the **DMSCollectorPolicy** and **FleetAdvisorS3Policy** policies to your IAM user. For more information, see [Deploying Application Discovery Service Agentless Collector](agentless-collector-deploying.md#agentless-collector-gs-iam-user).
 
 If your data collection module can't connect to AWS, then provide outbound access to the following domains.
 + `dms.{{your-home-region}}.amazonaws.com`

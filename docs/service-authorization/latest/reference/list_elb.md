@@ -24,8 +24,6 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_elb-actions-as-permissions).
 
-****
-
 - **   AddTags  **
   - **IAM action:**  [elasticloadbalancing:AddTags](#list_elb-action-AddTags)
   - **Condition key:**
@@ -203,8 +201,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
 
-****
-
 - **   [AddTags](https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIReference/API_AddTags.html)  **
   - **Description:** Grants permission to add the specified tags to the specified load balancer. Each load balancer can have a maximum of 10 tags
   - **Resource types (\*required):** [loadbalancer\*](#list_elb-resource-loadbalancer)
@@ -378,8 +374,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
 
-****
-
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
 |  [loadbalancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/what-is-load-balancing.html)  | arn:${Partition}:elasticloadbalancing:${Region}:${Account}:loadbalancer/${LoadBalancerName} | [aws:ResourceTag/${TagKey}](#list_elb-aws_ResourceTag___TagKey_)<br />[elasticloadbalancing:ResourceTag/${TagKey}](#list_elb-elasticloadbalancing_ResourceTag___TagKey_) |
@@ -388,8 +382,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_elb-policy-keys"></a>
 
 AWS Elastic Load Balancing defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

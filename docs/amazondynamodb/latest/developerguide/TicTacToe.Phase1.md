@@ -119,6 +119,6 @@ This example application does not perform any user authentication. The user ID i
 
 1. Play the game.
 
-For each user move, the web service sends a request to DynamoDB to conditionally update the game item in the `Games` table. For example, the conditions ensure that the move is valid, the square that the user chose is available, and that it was the turn of the user who made the move. For a valid move, the update operation adds a new attribute corresponding to the selection on the board. The update operation also sets the value of the existing attribute to the user who can make the next move.
+For each user move, the web service sends a request to DynamoDB to conditionally update the game item in the `Games` table. For example, the conditions make sure that the move is valid, the square that the user chose is available, and that it was the turn of the user who made the move. For a valid move, the update operation adds a new attribute corresponding to the selection on the board. The update operation also sets the value of the existing attribute to the user who can make the next move.
 
 On the game page, the application makes asynchronous JavaScript calls every second, for up to 5 minutes, to check if the game state in DynamoDB has changed. If it has, the application updates the page with new information. After 5 minutes, the application stops making the requests, and you need to refresh the page to get updated information.

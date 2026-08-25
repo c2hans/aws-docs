@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_common-sce
 Your users might already have identities outside of AWS, such as in your corporate directory. If those users need to work with AWS resources (or work with applications that access those resources), then those users also need AWS security credentials. You can use an IAM role to specify permissions for users whose identity is federated from your organization or a third-party identity provider (IdP).
 
 **Note**
-As a security best practice, we recommend you manage user access in [IAM Identity Center](https://docs.aws.amazon.com//singlesignon/latest/userguide/what-is.html) with identity federation instead of creating IAM users. For information about specific situations where an IAM user is required, see [When to create an IAM user (instead of a role)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id.html#id_which-to-choose).
+As a security best practice, we recommend you manage user access in [IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html) with identity federation instead of creating IAM users. For information about specific situations where an IAM user is required, see [When to create an IAM user (instead of a role)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id.html#id_which-to-choose).
 
 IAM Identity Center permission sets provision IAM role templates that IAM Identity Center manages. [Account access manager](account-access-manager.md) — an IAM feature — lets you assign your own custom IAM roles to IAM Identity Center users and groups, enabling capabilities like custom trust policies, role tags, and configurable role paths. You can use it alongside permission sets or on its own.
 

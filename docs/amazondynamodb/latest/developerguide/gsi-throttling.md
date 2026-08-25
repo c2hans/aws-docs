@@ -16,9 +16,9 @@ Unlike direct table throttling where the resource being accessed is also the res
 
 GSI partitioning is based on the GSI's partition key, which is often different from the base table's partition key. Even if your base table access is perfectly distributed across partitions, your GSI updates might still concentrate on specific partitions, creating hot spots in the GSI. For general best practices on partition key design for both tables and GSIs, see [DynamoDB partition key design](bp-partition-key-design.md).
 
-For example, if your base table uses `customerId` as a partition key (evenly distributed) but your GSI uses `status` as a partition key (with limited possible values like "active", "pending", "closed"), updates to items with popular status values can create GSI hot partitions even when base table access is balanced. This creates a particularly challenging scenario where your application might experience throttling due to GSI hot partitions even though both the base table and GSI have sufficient overall capacity and the base table's access pattern appears well-distributed.
+For example, if your base table uses `customerId` as a partition key (evenly distributed) but your GSI uses `status` as a partition key (with limited possible values like "active", "pending", "closed"), updates to items with popular status values can create GSI hot partitions even when base table access is balanced. This creates a particularly challenging scenario. Your application might experience throttling due to GSI hot partitions even though both the base table and GSI have sufficient overall capacity and the base table's access pattern appears well-distributed.
 
-Even though the throttling exception points to the GSI (via `ResourceArn`), the actual operation being throttled is the write to the base table. This can be confusing because your application is writing to the base table but receiving an exception about the GSI.
+Even though the throttling exception points to the GSI (through `ResourceArn`), the actual operation being throttled is the write to the base table. This can be confusing because your application is writing to the base table but receiving an exception about the GSI.
 
 ## Types of GSI throttling
 <a name="gsi-throttling-types"></a>

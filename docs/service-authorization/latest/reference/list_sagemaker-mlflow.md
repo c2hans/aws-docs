@@ -23,8 +23,6 @@ References:
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
 
-****
-
 - **   [AccessUI](${APIReferenceDocPage})  **
   - **Description:** Grants permission to access the MLflow UI
   - **Resource types (\*required):**
@@ -396,8 +394,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
 
-****
-
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
 |  [mlflow-tracking-server](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_MlflowTrackingServer.html)  | arn:${Partition}:sagemaker:${Region}:${Account}:mlflow-tracking-server/${MlflowTrackingServerName} |   |
@@ -406,8 +402,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_sagemaker-mlflow-policy-keys"></a>
 
 Amazon SageMaker with MLflow defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

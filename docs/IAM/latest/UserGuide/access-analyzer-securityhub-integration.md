@@ -79,8 +79,6 @@ To view your IAM Access Analyzer findings in Security Hub CSPM, choose **See fin
 
 AWS Identity and Access Management Access Analyzer sends the findings to Security Hub CSPM using the AWS Security Finding Format (ASFF). In ASFF, the **Types** field provides the finding type. ASFF types use a different naming scheme than AWS Identity and Access Management Access Analyzer. The following table includes details about all of the ASFF types associated with AWS Identity and Access Management Access Analyzer findings as they appear in Security Hub CSPM.
 
-****
-
 | ASFF finding type | Security Hub CSPM finding title | Description |
 | --- | --- | --- |
 | Effects/Data Exposure/External Access Granted | <resource ARN> allows public access | A resource-based policy attached to the resource allows public access on the resource to all external principals. |

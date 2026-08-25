@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon CodeGuru Profiler provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="codeguru-profiler-BatchGetFrameMetricData"></a>[BatchGetFrameMetricData](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_BatchGetFrameMetricData.html) | Get the frame metric data for a Profiling Group | List |

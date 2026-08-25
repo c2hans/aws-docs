@@ -21,8 +21,6 @@ This topic provides an overview of the available health check types and describe
 
 Amazon EC2 Auto Scaling can determine the health status of an `InService` instance by using one or more of the following health checks:
 
-****
-
 | Health check type | What it checks |
 | --- | --- |
 | Amazon EC2 status checks and scheduled events | +  Checks that the instance is running. <br />+  Checks for underlying hardware or software issues that might impair the instance. This is the default health check type for an Auto Scaling group.  |
@@ -103,7 +101,7 @@ If Amazon EC2 Auto Scaling determines that any instances are no longer running (
 
 **Note**
 If the size of an Auto Scaling group is small enough that the resulting value of 10 percent is less than one, Amazon EC2 Auto Scaling instead replaces the unhealthy instances one at a time. This might result in some downtime for the group.
-You can modify the default 10 percent value by [setting an instance maintenance policy](https://docs.aws.amazon.com//autoscaling/ec2/userguide/set-instance-maintenance-policy-on-group.html) to change the rate at which Auto Scaling replaces unhealthy instances. However, Auto Scaling might still throttle the rate it marks instances as unhealthy.
+You can modify the default 10 percent value by [setting an instance maintenance policy](https://docs.aws.amazon.com/autoscaling/ec2/userguide/set-instance-maintenance-policy-on-group.html) to change the rate at which Auto Scaling replaces unhealthy instances. However, Auto Scaling might still throttle the rate it marks instances as unhealthy.
 For example, if all instances in an Auto Scaling group are reported unhealthy by Elastic Load Balancing health checks and the load balancer is in the `InService` state, Amazon EC2 Auto Scaling might mark fewer instances unhealthy at a time. This can result in much fewer instances replaced at a time than the 10 percent applied in other scenarios. This provides you with time to fix the problem without Amazon EC2 Auto Scaling automatically terminating the entire group.
 
 ## Health checks for instances in a warm pool

@@ -36,6 +36,11 @@ The Amazon Resource Names (ARNs) of the network load balancers for the service.
 Type: Array of strings
 Required: No
 
+ ** PayerResponsibilitySet.N **
+The payer responsibility settings for the endpoint.
+Type: Array of [PayerResponsibilityEntry](API_PayerResponsibilityEntry.md) objects
+Required: No
+
  ** serviceId **
 The ID of the service to which the endpoint is connected.
 Type: String

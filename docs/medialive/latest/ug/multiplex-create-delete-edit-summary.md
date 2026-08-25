@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/multiplex-create-del
 
 The following table summarizes the create, edit, and delete capabilities for the MediaLive multiplex, program, and channel.
 
-****
-
 | Item | Action | Note |
 | --- | --- | --- |
 | Multiplex | Create |  |

@@ -17,7 +17,7 @@ You can use Device Farm to perform interactive testing of Android and iOS apps t
 ## Supported devices for remote access
 <a name="session-devices-supported"></a>
 
-Device Farm provides support for a number of unique, popular Android and iOS devices. The list of available devices grows as new devices enter the market. The Device Farm console displays the current list of Android and iOS devices available for remote access. For more information, see [Device support in AWS Device FarmDevices](devices.md).
+Device Farm provides support for a number of unique, popular Android and iOS devices. The list of available devices grows as new devices enter the market. The Device Farm console displays the current list of Android and iOS devices available for remote access. For more information, see [Device support in AWS Device Farm](devices.md).
 
 ## Session files retention
 <a name="session-files-retention"></a>

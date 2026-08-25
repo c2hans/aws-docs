@@ -27,8 +27,6 @@ In force logging mode, Oracle logs all changes to the database except changes in
 
 To set force logging, use the Amazon RDS procedure `rdsadmin.rdsadmin_util.force_logging`. The `force_logging` procedure has the following parameters.
 
-****
-
 | Parameter name | Data type | Default | Required | Description |
 | --- | --- | --- | --- | --- |
 | `p_enable` | boolean | true | No | Set to `true` to put the database in force logging mode, `false` to remove the database from force logging mode.  |
@@ -53,8 +51,6 @@ If you enable supplemental logging, LogMiner has the necessary information to su
 Oracle Database doesn't enable supplemental logging by default. To enable and disable supplemental logging, use the Amazon RDS procedure `rdsadmin.rdsadmin_util.alter_supplemental_logging`. For more information about how Amazon RDS manages the retention of archived redo logs for Oracle DB instances, see [Retaining archived redo logs](Appendix.Oracle.CommonDBATasks.RetainRedoLogs.md).
 
 The `alter_supplemental_logging` procedure has the following parameters.
-
-****
 
 | Parameter name | Data type | Default | Required | Description |
 | --- | --- | --- | --- | --- |
@@ -120,8 +116,6 @@ The `add_logfile` procedure has the following parameters.
 **Note**
 The parameters are mutually exclusive.
 
-****
-
 | Parameter name | Data type | Default | Required | Description |
 | --- | --- | --- | --- | --- |
 | `bytes` | positive | null | No | The size of the log file in bytes. <br />Use this parameter only if the size of the log is under 2147483648 bytes (2 GiB). Otherwise, RDS issues an error. For log sizes above this byte value, use the `p_size` parameter instead. |
@@ -140,8 +134,6 @@ EXEC rdsadmin.rdsadmin_util.add_logfile(p_size => '{{100M}}');
 <a name="Appendix.Oracle.CommonDBATasks.DroppingRedoLogs"></a>
 
 To drop redo logs, use the Amazon RDS procedure `rdsadmin.rdsadmin_util.drop_logfile`. The `drop_logfile` procedure has the following parameters.
-
-****
 
 | Parameter name | Data type | Default | Required | Description |
 | --- | --- | --- | --- | --- |

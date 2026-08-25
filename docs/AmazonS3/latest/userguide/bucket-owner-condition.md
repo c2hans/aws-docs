@@ -43,8 +43,6 @@ When you make a request that includes a bucket owner condition parameter, S3 che
 
 You can use bucket owner condition with the AWS Command Line Interface (AWS CLI), AWS SDKs, and Amazon S3 REST APIs. When using bucket owner condition with the AWS CLI and Amazon S3 REST APIs, use the following parameter names.
 
-****
-
 | Access method | Parameter for non-copy operations | Copy operation source parameter | Copy operation destination parameter |
 | --- | --- | --- | --- |
 | AWS CLI | --expected-bucket-owner | --expected-source-bucket-owner | --expected-bucket-owner |
@@ -83,8 +81,6 @@ public void putObjectExample() {
 **Example**
 ***Example: Copy an object***
 The following example copies the object `object1` from S3 bucket `{{amzn-s3-demo-bucket1}}` to S3 bucket `{{amzn-s3-demo-bucket2}}`. It uses bucket owner condition to ensure that the buckets are owned by the expected accounts according to the following table.
-
-****
 
 | Bucket | Expected owner |
 | --- | --- |

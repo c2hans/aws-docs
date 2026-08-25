@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Resto
 # RestoreJobSummary
 <a name="API_RestoreJobSummary"></a>
 
-This is a summary of restore jobs created or running within the most recent 30 days.
+This is a summary of restore jobs created or running within the most recent 14 days.
 
 The returned summary may contain the following: Region, Account, State, ResourceType, MessageCategory, StartTime, EndTime, and Count of included jobs.
 

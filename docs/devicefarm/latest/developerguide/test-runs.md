@@ -61,4 +61,4 @@ You can provide media or other data to accompany your app. Additional data must 
 ## Common tasks for runs
 <a name="test-runs-tasks"></a>
 
-For more information, see [Creating a test run in Device Farm](how-to-create-test-run.md) and [Test runs in AWS Device FarmTest runs](runs.md).
+For more information, see [Creating a test run in Device Farm](how-to-create-test-run.md) and [Test runs in AWS Device Farm](runs.md).

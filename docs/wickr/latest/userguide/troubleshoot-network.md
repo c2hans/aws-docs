@@ -19,8 +19,8 @@ This section helps you troubleshoot network and connectivity issues with AWS Wic
 
 Verify the following before troubleshooting:
 + You are using the correct Wickr product for your organization: **AWS Wickr**, **AWS WickrGov** (GovCloud), or **Wickr Enterprise** (self-hosted). Ask your administrator if you're not sure.
-+ You are running a supported client version. To check, open Wickr and choose **Settings**, **About**. To update, see [Check for updates](https://docs.aws.amazon.com//wickr/latest/userguide/updates.html).
-+ Your device meets [system requirements](https://docs.aws.amazon.com//wickr/latest/userguide/system-requirements.html).
++ You are running a supported client version. To check, open Wickr and choose **Settings**, **About**. To update, see [Check for updates](https://docs.aws.amazon.com/wickr/latest/userguide/updates.html).
++ Your device meets [system requirements](https://docs.aws.amazon.com/wickr/latest/userguide/system-requirements.html).
 + Your internet connection is active.
 
 ## Common connectivity issues

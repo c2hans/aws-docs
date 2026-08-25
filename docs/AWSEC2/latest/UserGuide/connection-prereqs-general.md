@@ -77,7 +77,7 @@ For information about how key pairs work when using Amazon EC2, see [Amazon EC2 
     If you do not set these permissions, then you cannot connect to your instance using this key pair. For more information, see [Error: Unprotected private key file](TroubleshootingInstancesConnecting.md#troubleshoot-unprotected-key).
   + **Connect from Windows**
 
-    Open File Explorer and right-click on the `.pem` file. Select **Properties** > **Security tab** and choose **Advanced**. Choose **Disable inheritance**. Remove access to all users except for the current user.
+    Open File Explorer and open the context (right-click) menu for the `.pem` file. Select **Properties** > **Security tab** and choose **Advanced**. Choose **Disable inheritance**. Remove access to all users except for the current user.
 
 ## (Optional) Get the instance fingerprint
 <a name="connection-prereqs-fingerprint"></a>

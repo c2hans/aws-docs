@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsw
 
 AWS WAF V2 provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="wafv2-CheckCapacity"></a>[CheckCapacity](https://docs.aws.amazon.com/waf/latest/APIReference/API_CheckCapacity.html) | Calculate web ACL capacity unit (WCU) requirements for a specified scope and set of rules | Read |

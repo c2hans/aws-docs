@@ -14,8 +14,6 @@ Copy an Elastic Block Store (EBS) snapshot in your AMS account.
 ## Change Type Details
 <a name="ct-3lkbpansfv69k-DAEc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-3lkbpansfv69k |

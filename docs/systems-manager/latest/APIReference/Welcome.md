@@ -15,4 +15,4 @@ This reference is intended to be used with the [AWS Systems Manager User Guide](
 + For information about AWS AppConfig, a tool in Systems Manager, see the * [AWS AppConfig User Guide](https://docs.aws.amazon.com/appconfig/latest/userguide/) * and the * [AWS AppConfig API Reference](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/) *.
 + For information about Incident Manager, a tool in Systems Manager, see the * [AWS Systems Manager Incident Manager User Guide](https://docs.aws.amazon.com/incident-manager/latest/userguide/) * and the * [AWS Systems Manager Incident Manager API Reference](https://docs.aws.amazon.com/incident-manager/latest/APIReference/) *.
 
-This document was last published on August 13, 2026.
+This document was last published on August 24, 2026.

@@ -54,7 +54,7 @@ The following are some of the requirements for the user certificate:
 + The user's smart card certificate has Enhanced Key Usage as the smart card log-on (1.3.6.1.4.1.311.20.2.2) Client Authentication (1.3.6.1.5.5.7.3.2).
 + The Online Certificate Status Protocol (OCSP) information for the user's smart card certificate should be Access Method=On-line Certificate Status Protocol (1.3.6.1.5.5.7.48.1) in the Authority Information Access.
 
-For more information on AD Connector and smart card authentication requirements, see [Requirements](https://docs.aws.amazon.com//workspaces/latest/adminguide/smart-cards.html#smart-cards-requirements) in *Amazon WorkSpaces Administration Guide*. For help troubleshooting Amazon WorkSpaces issues, like logging into WorkSpaces, resetting password, or connecting to WorkSpaces, see [Troubleshoot WorkSpaces client issues](https://docs.aws.amazon.com//workspaces/latest/userguide/client_troubleshooting.html) in *Amazon WorkSpaces User Guide*.
+For more information on AD Connector and smart card authentication requirements, see [Requirements](https://docs.aws.amazon.com/workspaces/latest/adminguide/smart-cards.html#smart-cards-requirements) in *Amazon WorkSpaces Administration Guide*. For help troubleshooting Amazon WorkSpaces issues, like logging into WorkSpaces, resetting password, or connecting to WorkSpaces, see [Troubleshoot WorkSpaces client issues](https://docs.aws.amazon.com/workspaces/latest/userguide/client_troubleshooting.html) in *Amazon WorkSpaces User Guide*.
 
 ### Certificate revocation checking process
 <a name="ocsp"></a>

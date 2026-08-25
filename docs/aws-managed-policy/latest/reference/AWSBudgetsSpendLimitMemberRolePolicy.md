@@ -18,13 +18,13 @@ This policy is attached to a service-linked role that allows the service to perf
 <a name="AWSBudgetsSpendLimitMemberRolePolicy-details"></a>
 + **Type**: Service-linked role policy
 + **Creation time**: July 18, 2026, 00:57 UTC
-+ **Edited time:** August 11, 2026, 18:57 UTC
++ **Edited time:** August 13, 2026, 20:47 UTC
 + **ARN**: `arn:aws:iam::aws:policy/aws-service-role/AWSBudgetsSpendLimitMemberRolePolicy`
 
 ## Policy version
 <a name="AWSBudgetsSpendLimitMemberRolePolicy-version"></a>
 
-**Policy version:** v3 (default)
+**Policy version:** v4 (default)
 
 The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request.
 
@@ -174,7 +174,10 @@ The policy's default version is the version that defines the permissions for the
     {
       "Sid" : "CostOptimizationHubActions",
       "Effect" : "Allow",
-      "Action" : "cost-optimization-hub:UpdateEnrollmentStatus",
+      "Action" : [
+        "cost-optimization-hub:UpdateEnrollmentStatus",
+        "cost-optimization-hub:ListEnrollmentStatuses"
+      ],
       "Resource" : "*"
     },
     {
@@ -183,6 +186,8 @@ The policy's default version is the version that defines the permissions for the
       "Action" : [
         "compute-optimizer:GetIdleRecommendations",
         "compute-optimizer:GetRecommendationSummaries",
+        "compute-optimizer:GetEC2InstanceRecommendations",
+        "compute-optimizer:GetAutoScalingGroupRecommendations",
         "compute-optimizer:GetEnrollmentStatus",
         "compute-optimizer:UpdateEnrollmentStatus"
       ],
@@ -195,6 +200,7 @@ The policy's default version is the version that defines the permissions for the
         "aco-automation:StartAutomationEvent",
         "aco-automation:ListRecommendedActions",
         "aco-automation:GetAutomationEvent",
+        "aco-automation:GetEnrollmentConfiguration",
         "aco-automation:UpdateEnrollmentConfiguration"
       ],
       "Resource" : "*"
@@ -217,12 +223,55 @@ The policy's default version is the version that defines the permissions for the
       "Resource" : "*"
     },
     {
+      "Sid" : "AllowAWSServiceAccessForCostOptimizationHub",
+      "Effect" : "Allow",
+      "Action" : [
+        "organizations:EnableAWSServiceAccess"
+      ],
+      "Resource" : "arn:aws:organizations:*:*:*",
+      "Condition" : {
+        "StringLike" : {
+          "organizations:ServicePrincipal" : [
+            "cost-optimization-hub.bcm.amazonaws.com",
+            "compute-optimizer.amazonaws.com"
+          ]
+        }
+      }
+    },
+    {
+      "Sid" : "AllowACOAutomationSLRCreation",
       "Effect" : "Allow",
       "Action" : "iam:CreateServiceLinkedRole",
       "Resource" : "arn:aws:iam::*:role/aws-service-role/aco-automation.amazonaws.com/AWSServiceRoleForComputeOptimizerAutomation",
       "Condition" : {
         "StringLike" : {
           "iam:AWSServiceName" : "aco-automation.amazonaws.com"
+        }
+      }
+    },
+    {
+      "Sid" : "AllowComputeOptimizerSLRCreation",
+      "Effect" : "Allow",
+      "Action" : "iam:CreateServiceLinkedRole",
+      "Resource" : [
+        "arn:aws:iam::*:role/aws-service-role/cost-optimization-hub.bcm.amazonaws.com/AWSServiceRoleForCostOptimizationHub",
+        "arn:aws:iam::*:role/aws-service-role/compute-optimizer.amazonaws.com/AWSServiceRoleForComputeOptimizer",
+        "arn:aws:iam::*:role/aws-service-role/aco-automation.amazonaws.com/AWSServiceRoleForComputeOptimizerAutomation"
+      ],
+      "Condition" : {
+        "StringLike" : {
+          "iam:AWSServiceName" : "compute-optimizer.amazonaws.com"
+        }
+      }
+    },
+    {
+      "Sid" : "AllowCostOptimizationHubSLRCreation",
+      "Effect" : "Allow",
+      "Action" : "iam:CreateServiceLinkedRole",
+      "Resource" : "arn:aws:iam::*:role/aws-service-role/cost-optimization-hub.bcm.amazonaws.com/AWSServiceRoleForCostOptimizationHub",
+      "Condition" : {
+        "StringLike" : {
+          "iam:AWSServiceName" : "cost-optimization-hub.bcm.amazonaws.com"
         }
       }
     }
@@ -232,5 +281,5 @@ The policy's default version is the version that defines the permissions for the
 
 ## Learn more
 <a name="AWSBudgetsSpendLimitMemberRolePolicy-learn-more"></a>
-+ [Understand versioning for IAM policies](https://docs.aws.amazon.com//IAM/latest/UserGuide/access_policies_managed-versioning.html)
-+ [Get started with AWS managed policies and move toward least-privilege permissions](https://docs.aws.amazon.com//IAM/latest/UserGuide/best-practices.html#bp-use-aws-defined-policies)
++ [Understand versioning for IAM policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-versioning.html)
++ [Get started with AWS managed policies and move toward least-privilege permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#bp-use-aws-defined-policies)

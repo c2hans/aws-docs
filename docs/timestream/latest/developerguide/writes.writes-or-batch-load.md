@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/timestream/latest/developerguide/writes.writes-or-batch-load.html
 ---
 
-For similar capabilities to Amazon Timestream for LiveAnalytics, consider Amazon Timestream for InfluxDB. It offers simplified data ingestion and single-digit millisecond query response times for real-time analytics. Learn more [here](https://docs.aws.amazon.com//timestream/latest/developerguide/timestream-for-influxdb.html).
+For similar capabilities to Amazon Timestream for LiveAnalytics, consider Amazon Timestream for InfluxDB. It offers simplified data ingestion and single-digit millisecond query response times for real-time analytics. Learn more [here](https://docs.aws.amazon.com/timestream/latest/developerguide/timestream-for-influxdb.html).
 
 # Choosing between the WriteRecords API operation and batch load
 <a name="writes.writes-or-batch-load"></a>
@@ -21,7 +21,7 @@ Both solutions are secure, reliable, and performant.
 + Requiring lower latency.
 
 **Use batch load when:**
-+ Ingesting larger loads of data that originate in Amazon S3 in CSV files. For more information about limits, see [QuotasDefault quotas](ts-limits.md).
++ Ingesting larger loads of data that originate in Amazon S3 in CSV files. For more information about limits, see [Quotas](ts-limits.md).
 + Populating new tables, such as in the case of a data migration.
 + Enriching databases with historical data (ingestion into new tables).
 + You have source data that changes slowly or not at all.

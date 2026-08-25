@@ -30,9 +30,9 @@ You require specific AWS Identity and Access Management permissions to access th
 
 In addition to permissions for service resources, an IAM entity requires permissions to permit the AWS Toolkit for JetBrains to call AWS Cloud Control API operations on its behalf. Cloud Control API operations allow the IAM user or role to access and update the remote resources.
 
-The easiest way to grant permissions is to attach the AWS managed policy, **PowerUserAccess**, to the IAM entity that's calling these API operations using the Toolkit interface. This [managed policy](https://docs.aws.amazon.com//IAM/latest/UserGuide/access_policies_job-functions.html#jf_developer-power-user) grants a range of permissions for performing application development tasks, including calling API operations.
+The easiest way to grant permissions is to attach the AWS managed policy, **PowerUserAccess**, to the IAM entity that's calling these API operations using the Toolkit interface. This [managed policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_job-functions.html#jf_developer-power-user) grants a range of permissions for performing application development tasks, including calling API operations.
 
-For specific permissions that define allowable API operations on remote resources, see the [AWS Cloud Control API User Guide.](https://docs.aws.amazon.com//cloudcontrolapi/latest/userguide/security.html)
+For specific permissions that define allowable API operations on remote resources, see the [AWS Cloud Control API User Guide.](https://docs.aws.amazon.com/cloudcontrolapi/latest/userguide/security.html)
 
 ## Adding and interacting with existing resources
 <a name="configure-resources"></a>

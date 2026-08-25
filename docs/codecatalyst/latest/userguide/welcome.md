@@ -26,7 +26,7 @@ You and your development team can use CodeCatalyst to carry out each aspect of s
 If you don't have a space or you want to learn how to set up and manage a space, we recommend that you get started with the [Amazon CodeCatalyst Administrator Guide.](https://docs.aws.amazon.com/codecatalyst/latest/adminguide/what-is.html)
 
 If you're new to working in a project or a space, we recommend that you get started by:
-+ Reviewing the [CodeCatalyst conceptsConcepts](concepts.md)
++ Reviewing the [CodeCatalyst concepts](concepts.md)
 + [Creating a space](spaces-create.md)
 + Creating your first project by following the steps in [Tutorial: Creating a project with the Modern three-tier web application blueprint](getting-started-template-project.md)
 

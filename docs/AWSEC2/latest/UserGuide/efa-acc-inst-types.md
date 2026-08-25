@@ -155,7 +155,7 @@ The following snippet shows an example with 3 network interfaces out of the poss
 ## EFA configuration for a P5 and P5e instances
 <a name="efa-for-p5"></a>
 
-`p5.48xlarge` and `p5e.48xlarge` instances support 32 network cards and have a total network bandwidth capacity of 3,200 Gbps, of which up to 800 Gbps can be utilized for IP network traffic. Because EFA and IP network traffic share the same underlying resources, bandwidth used by one will reduce the bandwidth that is available to the other. This means that you can distribute the network bandwidth between EFA traffic and IP traffic in any combination, as long as the total bandwidth does not exceed 3,200 Gbps and IP bandwidth does not exceed 800 Gbps. For example, if you use 400 Gbps for IP bandwidth, you can achieve up to 2,800 Gbps of EFA bandwidth at the same time.
+`p5.48xlarge` and `p5e.48xlarge` instances support 32 network cards and have a total network bandwidth capacity of 3,200 Gbps, of which up to 800 Gbps can be used for IP network traffic. Because EFA and IP network traffic share the same underlying resources, bandwidth used by one will reduce the bandwidth that is available to the other. This means that you can distribute the network bandwidth between EFA traffic and IP traffic in any combination, as long as the total bandwidth does not exceed 3,200 Gbps and IP bandwidth does not exceed 800 Gbps. For example, if you use 400 Gbps for IP bandwidth, you can achieve up to 2,800 Gbps of EFA bandwidth at the same time.
 
 **Use case 1: Save IP addresses and avoid potential Linux IP issues**
 
@@ -233,7 +233,7 @@ $ aws --region $REGION ec2 run-instances \
 ## EFA configuration for a P6-B200 instances
 <a name="efa-for-p6-b200"></a>
 
-P6-B200 instances have a total network bandwidth capacity of 3,200 Gbps, of which up to 1600 Gbps can be utilized for ENA. They have 8 GPUs and 8 network cards, where each network card supports up to 400 Gbps EFA bandwidth and 200 Gbps ENA bandwidth. Since EFA and ENA traffic share the same underlying resources, bandwidth used by one will reduce the bandwidth that is available to the other.
+P6-B200 instances have a total network bandwidth capacity of 3,200 Gbps, of which up to 1600 Gbps can be used for ENA. They have 8 GPUs and 8 network cards, where each network card supports up to 400 Gbps EFA bandwidth and 200 Gbps ENA bandwidth. Since EFA and ENA traffic share the same underlying resources, bandwidth used by one will reduce the bandwidth that is available to the other.
 
 **Use case 1: Save IP addresses**
 

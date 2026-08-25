@@ -9,8 +9,6 @@ Conformance packs provide a general-purpose compliance framework designed to ena
 
  The following provides a sample mapping between the Center for Internet Security (CIS) Critical Security Controls v8 IG1 and AWS managed Config rules. Each AWS Config applies to a specific AWS resource, and relates to one or more CIS Critical Security Controls v8 IG1 controls. A CIS Critical Security Controls v8 IG1 control can be related to multiple AWS Config rules. Refer to the table below for more detail and guidance related to these mappings.
 
-****
-
 | Control ID  | Control Description  | AWS Config Rule  | Guidance  |
 | --- | --- | --- | --- |
 | 1.1 | Establish and Maintain Detailed Enterprise Asset Inventory | [eip-attached](https://docs.aws.amazon.com/config/latest/developerguide/eip-attached.html) | This rule ensures Elastic IPs allocated to a Amazon Virtual Private Cloud (Amazon VPC) are attached to Amazon Elastic Compute Cloud (Amazon EC2) instances or in-use Elastic Network Interfaces. This rule helps monitor unused EIPs in your environment. |

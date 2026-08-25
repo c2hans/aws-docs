@@ -14,8 +14,6 @@ Authorize multiple ingress rules for the specified security group (SG). You must
 ## Change Type Details
 <a name="ct-3j2zstluz6dxq-MASa-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-3j2zstluz6dxq |

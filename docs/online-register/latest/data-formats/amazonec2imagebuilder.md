@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon EC2 Image Builder provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="imagebuilder-GetComponent"></a>[GetComponent](https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_GetComponent.html) | View details about a component | Read |

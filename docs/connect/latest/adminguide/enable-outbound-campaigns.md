@@ -12,9 +12,9 @@ This topic explains how to set up Connect Customer outbound campaigns, a feature
 + The phone numbers that outbound campaigns can call are based on the AWS Region where your Connect Customer instance is created. For a list of AWS Regions and countries, see [Outbound campaigns](regions.md#campaigns_region) in the *Availability of Connect Customer services by Region* topic.
 + You must obtain pre-authorization by creating an AWS Support ticket to use Connect Customer outbound campaigns for event-driven mass notifications, such as severe weather warnings, evacuation notices, disaster response communications, or utility disruptions that impact several thousand of customers.
 
-   This review process helps ensure the reliable delivery of these critical messages while maintaining service quality for all customers. While we may support these use-cases, they require additional technical validation due to their unique nature and implications, such as the impact on carrier networks for voice or SMS communications.
+   This review process helps ensure the reliable delivery of these critical messages while maintaining service quality for all customers. While we might support these use-cases, they require additional technical validation due to their unique nature and implications, such as the impact on carrier networks for voice or SMS communications.
 
-  Follow the instructions in [Requesting a quota increase](https://docs.aws.amazon.com/servicequotas/latest/userguide/request-quota-increase.html) in the *Service Quotas User Guide* to open a ticket that contains a detailed description of your requirements. Additional charges may apply based on your location and anticipated notification volumes.
+  Follow the instructions in [Requesting a quota increase](https://docs.aws.amazon.com/servicequotas/latest/userguide/request-quota-increase.html) in the *Service Quotas User Guide* to open a ticket that contains a detailed description of your requirements. Additional charges might apply based on your location and anticipated notification volumes.
 
 ## Before you begin
 <a name="campaign-prereq"></a>
@@ -72,7 +72,7 @@ To switch the KMS key that is associated with outbound campaigns, first you need
 The following best practices can help you comply with regulations.
 
 **Meet the minimum ring duration requirements**
-Regulations may require unanswered calls to ring for a minimum amount of time, such as 15 seconds, so the customer has time to pick up the call. Connect Customer outbound campaigns let unanswered calls ring until they go to voicemail or automatically terminate.
+Regulations might require unanswered calls to ring for a minimum amount of time, such as 15 seconds, so the customer has time to pick up the call. Connect Customer outbound campaigns let unanswered calls ring until they go to voicemail or automatically terminate.
 
 **Maintain Calling Line Identification**
 Many locations require you to display the phone number associated with a caller ID. Connect Customer enforces the use of Calling Line Identification that corresponds to a number in a Connect Customer instance. The phone number you specify as caller ID for an outbound campaign must be one you have claimed or ported in to your number inventory.

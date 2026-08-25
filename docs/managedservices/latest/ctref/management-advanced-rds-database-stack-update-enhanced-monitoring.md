@@ -14,8 +14,6 @@ Update the Enhanced Monitoring property of an Amazon Relational Database Service
 ## Change Type Details
 <a name="ct-3jx80fquylzhf-MARu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-3jx80fquylzhf |

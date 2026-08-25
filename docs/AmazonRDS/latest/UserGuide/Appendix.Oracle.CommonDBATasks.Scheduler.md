@@ -19,8 +19,6 @@ The `rdsadmin.rdsadmin_dbms_scheduler` procedures are supported for the Amazon R
 
 To perform tasks with Oracle Scheduler, use procedures in the Amazon RDS package `rdsadmin.rdsadmin_dbms_scheduler`. Several parameters are common to the procedures in the package. The package has the following common parameters.
 
-****
-
 | Parameter name | Data type | Valid values | Default | Required | Description |
 | --- | --- | --- | --- | --- | --- |
 | `name` | varchar2 | The procedures listed in the table in [Performing common scheduling tasks for Oracle DB instances](#Appendix.Oracle.CommonDBATasks.Scheduler)  | — | Yes | The name of the job to modify. |

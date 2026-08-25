@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon Connect Health provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="health-agent-GetAgent"></a>[GetAgent](https://docs.aws.amazon.com/connecthealth/latest/userguide/patient-engagement-overview.html) | Retrieve an agent configuration, defaulting to the most recent version if not specified | Read |

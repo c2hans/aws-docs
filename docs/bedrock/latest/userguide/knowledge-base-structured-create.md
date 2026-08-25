@@ -91,8 +91,6 @@ To connect to a structured data store using the Amazon Bedrock API, send a [Crea
 
 The following fields are required.
 
-****
-
 | Field | Basic description |
 | --- | --- |
 | Name | A name for the knowledge base |
@@ -100,8 +98,6 @@ The following fields are required.
 | knowledgeBaseConfiguration | Contains configurations for the knowledge base. For a structured database, specify SQL as the type and include the sqlKnowledgeBaseConfiguration field. |
 
 The following fields are optional.
-
-****
 
 | Field | Use |
 | --- | --- |

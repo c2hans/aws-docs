@@ -7,8 +7,6 @@ This is an earlier version of the AWS Well-Architected Framework. For the latest
 # COST09-BP02 Implement a buffer or throttle to manage demand
 <a name="cost_manage_demand_resources_buffer_throttle"></a>
 
-****
-
 |  |
 | --- |
 | This best practice was updated with new guidance on December 6, 2023. |

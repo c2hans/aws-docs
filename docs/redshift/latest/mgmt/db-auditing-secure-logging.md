@@ -11,8 +11,6 @@ When Amazon Redshift logs a query that references one or more AWS Glue Data Cata
 
 Secure log masking applies to all system table and view entries that Amazon Redshift generates while running a query that fits the masking conditions. The following table lists system views and columns that have secure logging applied, masking text with `******` and numbers with `-1`. The number of asterisks used to mask text matches the number of characters in the original text, up to 6 characters. Strings longer than 6 characters still appear as 6 asterisks.
 
-****
-
 | System table | Sensitive columns |
 | --- | --- |
 | [SYS\_EXTERNAL\_QUERY\_DETAIL](https://docs.aws.amazon.com/redshift/latest/dg/SYS_EXTERNAL_QUERY_DETAIL.html) | **Columns:** source\_type, total\_partitions, qualified\_partitions, scanned\_files, returned\_rows, returned\_bytes, file\_format, file\_location, external\_query\_text, warning\_message. |

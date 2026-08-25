@@ -66,7 +66,7 @@ Required: No
  ** [schemaType](#API_CreateDataset_RequestSyntax) **   <a name="bedrockagentcorecontrol-CreateDataset-request-schemaType"></a>
  Versioned schema type governing the structure of examples. Immutable after creation.
 Type: String
-Valid Values: `AGENTCORE_EVALUATION_PREDEFINED_V1 | AGENTCORE_EVALUATION_SIMULATED_V1`
+Valid Values: `AGENTCORE_EVALUATION_PREDEFINED_V1 | AGENTCORE_EVALUATION_SIMULATED_V1 | THIRD_PARTY_EVALUATION_V1`
 Required: Yes
 
  ** [source](#API_CreateDataset_RequestSyntax) **   <a name="bedrockagentcorecontrol-CreateDataset-request-source"></a>

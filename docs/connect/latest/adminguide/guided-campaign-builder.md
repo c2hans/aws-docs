@@ -50,7 +50,7 @@ Outbound campaigns supports the following channels. Choose the channel that matc
 
 1.  Select an **Email Message Template** to use when sending.
 
-1.  Select the **Template Alias or Version** number to use with the campaign.  If you select an alias, then the contents of emails sent by the campaign may change when the alias is updated to point to a new template version. If you select a version, the campaign will always send the exact same content for the life of the campaign.
+1.  Select the **Template Alias or Version** number to use with the campaign.  If you select an alias, then the contents of emails sent by the campaign might change when the alias is updated to point to a new template version. If you select a version, the campaign will always send the exact same content for the life of the campaign.
 ![Email campaign creation interface with sender, template, and scheduling configuration options.](http://docs.aws.amazon.com/connect/latest/adminguide/images/create_campaign_email-1.png)
 
 ------
@@ -128,7 +128,7 @@ If you enable call classification after selecting **Connected to system time**, 
 + **Measurement window** – The time window used for calculating the abandonment rate. Some jurisdictions specify measurement periods (for example, 24 hours). Consult your compliance team for the appropriate value. Valid values: 1 to 24 hours.
 
 **Note**
-Consult your compliance team for jurisdiction-specific requirements when configuring abandonment controls. Regulations vary by country and may specify requirements for abandonment rate thresholds, measurement windows, and what constitutes an abandoned call.
+Consult your compliance team for jurisdiction-specific requirements when configuring abandonment controls. Regulations vary by country and might specify requirements for abandonment rate thresholds, measurement windows, and what constitutes an abandoned call.
 
 ------
 #### [ Automated Voice ]
@@ -151,7 +151,7 @@ Not all phone numbers can be used for Connect Customer Outbound campaigns. Outsi
 
 1.  Select an **SMS Message Template** to use when sending.
 
-1.  Select the **Template alias or version** number to use with the campaign.  If you select an alias, then the contents of SMS sent by the campaign may change when the alias is updated to point to a new template version.  On the other hand, if select a version, the campaign will always send the exact same content for the life of the campaign.
+1.  Select the **Template alias or version** number to use with the campaign.  If you select an alias, then the contents of SMS sent by the campaign might change when the alias is updated to point to a new template version.  On the other hand, if select a version, the campaign will always send the exact same content for the life of the campaign.
 ![SMS configuration panel showing originator selection, SMS message template dropdown.](http://docs.aws.amazon.com/connect/latest/adminguide/images/create_campaign_sms-1.png)
 
 ------
@@ -177,7 +177,7 @@ For information about adding tags to your WABA, see [Getting started with AWS En
 ### Communications per recipient
 <a name="communications-per-recipient"></a>
 
-You can control how often each recipient is contacted by setting communication limits for the campaign. Simply specify the maximum number of messages a recipient can receive within a defined time frame (e.g., per day, week, or month). If a recipient has already received the maximum number of communications within any of the time frames you set, Amazon Connect Outbound Campaigns will automatically skip that recipient and they won't receive additional messages from the campaign.
+You can control how often each recipient is contacted by setting communication limits for the campaign. Simply specify the maximum number of messages a recipient can receive within a defined time frame (for example, per day, week, or month). If a recipient has already received the maximum number of communications within any of the time frames you set, Amazon Connect Outbound Campaigns will automatically skip that recipient and they won't receive additional messages from the campaign.
 
 **Example:**
 
@@ -185,12 +185,12 @@ If you set a limit of 4 communications per 2 days and 6 communications per 2 wee
 
 Amazon Connect Outbound Campaigns considers any time a recipient has been contacted, regardless of the recipients interaction with the message, as a communication. For example, a phone call ending in a voicemail is still considered a communication. Amazon Connect Outbound Campaigns will adjust the count of communications if it can determine that the message never reached the end user, and will always err on the side of over-counting.
 
-In addition to setting communication limits for individual campaigns, you can also define **Total Communication Limits** at the instance level. These limits control how many messages a recipient can receive across **all campaigns** running within your Amazon Connect instance over a specific time frame. If a recipient reaches the specified limit—for example, 10 communications per week—they will be excluded from further messaging across all campaigns until the time window resets. This helps ensure that overall message volume stays within acceptable boundaries.
+In addition to setting communication limits for individual campaigns, you can also define **Total Communication Limits** at the instance level. These limits control how many messages a recipient can receive across **all campaigns** running within your Amazon Connect instance over a specific time frame. If a recipient reaches the specified limit—for example, 10 communications per week—they will be excluded from further messaging across all campaigns until the time window resets. This helps make sure that overall message volume stays within acceptable boundaries.
 
 For **critical campaigns**, you have the option to **opt out** of total communication limits by enabling the **Ignore total limits** setting. This allows these campaigns to bypass the instance-wide limits, ensuring important messages are delivered without being blocked by other ongoing campaigns.
 
 **Note**
-The total count of messages across campaigns will not necessarily be incremented immediately, but will eventually be accurate. For example, if two campaigns target the same user at the same moment in time, the first campaign's communication may not be reflected in the total communication count by the time the second campaign checks.
+The total count of messages across campaigns will not necessarily be incremented immediately, but will eventually be accurate. For example, if two campaigns target the same user at the same moment in time, the first campaign's communication might not be reflected in the total communication count by the time the second campaign checks.
 All communications across all campaigns in the active state are considered when determining if a recipient has breached their total limits.
  Connect Customer Outbound Campaigns measures a day as a rolling 24 hour window from the current moment.
 Any communications sent from a campaign that **ignores total limits** will **not count** toward the instance's total communication limits. These campaigns are treated as **outside the scope** of instance-level limits.
@@ -294,8 +294,6 @@ Priority dialing order (in Customer Profile):
 
 ![Mixed disposition between Unanswered, Busy- Retry action: Call again. Max dial attempts per number: 2.](http://docs.aws.amazon.com/connect/latest/adminguide/images/campaign-set-up-and-cycling-through-recipient-contant-types-example-D.png)
 
-****
-
 | Attempt | Phone Number | Disposition | Action Taken | Total Attempts |
 | --- | --- | --- | --- | --- |
 | 1 | Mobile | Unanswered | Wait 30 mins, call again | 1 |
@@ -316,28 +314,28 @@ Priority dialing order (in Customer Profile):
 ### Time zone
 <a name="time-zone"></a>
 
- In order for the Campaign to determine appropriate time to attempt communication with a particular recipient, you need to provide a **Time Zone**.  You may either select a **Standard time zone**, which will be used for all recipients, or you may specify the **Recipient's local time zone**. Recipients with no time zone specified are excluded from message deliveries.
+ In order for the Campaign to determine appropriate time to attempt communication with a particular recipient, you need to provide a **Time Zone**.  You might either select a **Standard time zone**, which will be used for all recipients, or you might specify the **Recipient's local time zone**. Recipients with no time zone specified are excluded from message deliveries.
 +  **Standard time zone**:
 
    The time zone selected will be used for all recipients.  Select this option if you know the time zone of all recipients in your segment or if you want to send all communications in the same time zone.
 +  **Recipient's local time zone**:
 
-   Connect Customer Outbound Campaigns use the provided [Address](https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-customer-profiles_CreateProfile.html#connect-connect-customer-profiles_CreateProfile-request-Address) and/or the area code from the [Phone Number](https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-customer-profiles_CreateProfile.html#connect-connect-customer-profiles_CreateProfile-request-PhoneNumber) to infer the recipients time zone. If the time zone can't be determined (for example, if either the Address and/or Phone Number is missing or is invalid), the recipient will be dropped from the Campaign. Select this option if it's important to send communications to recipients only during their specific local times.
+   Connect Customer Outbound Campaigns use the provided [Address](https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-customer-profiles_CreateProfile.html#connect-connect-customer-profiles_CreateProfile-request-Address) or the area code from the [Phone Number](https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-customer-profiles_CreateProfile.html#connect-connect-customer-profiles_CreateProfile-request-PhoneNumber) to infer the recipients time zone. If the time zone can't be determined (for example, if either the Address or Phone Number is missing or is invalid), the recipient will be dropped from the Campaign. Select this option if it's important to send communications to recipients only during their specific local times.
 
   When you select **Recipient's local time zone**, you configure the following settings:
-  + **Detect recipient's local time zone** — Choose the method used to detect the recipient's time zone. Connect Customer Outbound Campaigns use a profile's [Address](https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-customer-profiles_CreateProfile.html#connect-connect-customer-profiles_CreateProfile-request-Address) and/or [Phone Number](https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-customer-profiles_CreateProfile.html#connect-connect-customer-profiles_CreateProfile-request-PhoneNumber)'s area code to infer the recipient's time zone.
+  + **Detect recipient's local time zone** — Choose the method used to detect the recipient's time zone. Connect Customer Outbound Campaigns use a profile's [Address](https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-customer-profiles_CreateProfile.html#connect-connect-customer-profiles_CreateProfile-request-Address) or [Phone Number](https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-customer-profiles_CreateProfile.html#connect-connect-customer-profiles_CreateProfile-request-PhoneNumber)'s area code to infer the recipient's time zone.
 
     To detect a recipient's time zone from their postal code, you must populate the profile's `Address.Country` together with `Address.PostalCode`. Postal code-based time zone detection requires `Country`; other detection methods do not require `Country`. If `Country` is missing, we cannot determine the recipient's time zone from the postal code. We drop the recipient from the Campaign with a `DROPPED_MISSING_TIMEZONE` status.
   + **Profile attributes to use for time zone detection** — Choose the scope of profile attributes used for time zone detection:
-    + **Primary only** — Uses only the primary phone number and/or address attributes from the recipient's customer profile to determine the time zone.
-    + **All available** — Uses all phone number and/or address attributes from the recipient's customer profile to determine the time zone.
+    + **Primary only** — Uses only the primary phone number or address attributes from the recipient's customer profile to determine the time zone.
+    + **All available** — Uses all phone number or address attributes from the recipient's customer profile to determine the time zone.
 
 ![Time zone configuration panel for setting campaign contact hours by geographic region.](http://docs.aws.amazon.com/connect/latest/adminguide/images/time-zone-1.png)
 
 ### Active communication time
 <a name="active-communication-time"></a>
 
- The **Active communication time** represents the times during which Connect Customer Outbound campaigns may send communications for this campaign. To add active communication times:
+ The **Active communication time** represents the times during which Connect Customer Outbound campaigns might send communications for this campaign. To add active communication times:
 
 1.  Select the channel. Alternatively, select **Apply to all channels** to apply the active communication times to each channel.
 
@@ -372,9 +370,9 @@ The end date is exclusive. For example, if you select July 12 - 13, it blocks al
  Take a moment to review your campaign before publishing.
 
 **Important**
- These settings cannot be changed once your campaign has been published.
+ These settings cannot be changed after your campaign has been published.
 
- Once you have reviewed your campaign, choose **Publish** to schedule your campaign.
+ After you have reviewed your campaign, choose **Publish** to schedule your campaign.
 
 ![Review and publish screen showing campaign configuration summary before final publication.](http://docs.aws.amazon.com/connect/latest/adminguide/images/review-and-publish-1.png)
 
@@ -397,7 +395,7 @@ The start and end times of a campaign that starts now or a campaign that starts 
  If you want your campaign to repeat running, select the **Repeats** radio button and choose a **Frequency**.  Connect Customer Outbound campaigns will then refresh profiles in the segment specified for this campaign at the same frequency you select.  For example, if you schedule your campaign to start at 7:03AM EST and use a Daily Frequency, then profiles will be refreshed in the segment daily at 7:03AM EST.
 
 **Important**
-A recipient may be active only in a campaign once at any given time. So if they are still waiting to exit the campaign when the next Segment Snapshot is created, and are a member of that Snapshot, they are **NOT** allowed to enter the campaign as a part of the second Snapshot.
+A recipient can be active only in a campaign once at any given time. So if they are still waiting to exit the campaign when the next Segment Snapshot is created, and are a member of that Snapshot, they are **NOT** allowed to enter the campaign as a part of the second Snapshot.
  If a recipient is a part of a segment Snapshot and is not currently in the campaign, they are allowed to enter, regardless of whether they have previously gone through the campaign.
 
  **Entry limits**
@@ -424,7 +422,7 @@ After a campaign is running, you can stop it. You can also delete a campaign at 
 
  Following is a description of each campaign state:
 +  **Draft**: The campaign is being developed and hasn't been published yet.
-+  **Active**: The campaign has been developed and published. Depending on the campaign's schedule, the campaign may currently be running or scheduled to start running at a later time.
++  **Active**: The campaign has been developed and published. Depending on the campaign's schedule, the campaign might currently be running or scheduled to start running at a later time.
 +  **Stopped**: The campaign is stopped. You can't resume a campaign that is stopped.
 +  **Error**: An error state caused the campaign to fail.
 +  **Completed**: The campaign has finished running. All participants have entered the campaign and no participants are waiting to complete the campaign.

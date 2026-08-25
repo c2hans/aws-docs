@@ -10,18 +10,24 @@ Amazon Bedrock is a fully managed service that provides secure, enterprise-grade
 ## Quickstart
 <a name="quickstart"></a>
 
-Read the [Quickstart](getting-started.md) to write your first API call using Amazon Bedrock in under five minutes.
+Read the [Quickstart](getting-started.md) to write your first API call using Amazon Bedrock in under five minutes. For new applications, we recommend the [`bedrock-runtime`](endpoints.md) endpoint.
 
 ------
 #### [ Messages API ]
 
 ```
-import anthropic
+from anthropic import Anthropic
+from aws_bedrock_token_generator import provide_token
 
-client = anthropic.Anthropic()
+token = provide_token(region="us-east-1")
+
+client = Anthropic(
+    base_url="https://bedrock-runtime.us-east-1.amazonaws.com/anthropic",
+    api_key=token,
+)
 
 response = client.messages.create(
-    model="anthropic.claude-opus-4-7",
+    model="global.anthropic.claude-opus-4-7",
     max_tokens=1024,
     messages=[{"role": "user", "content": "Can you explain the features of Amazon Bedrock?"}]
 )
@@ -101,18 +107,19 @@ response = client.invoke_model(
 ## Supported models
 <a name="featured-models"></a>
 
-Amazon Bedrock supports [100\+ foundation models](models.md) from industry-leading providers, including Amazon, Anthropic, DeepSeek, Moonshot AI, MiniMax, and OpenAI.
+Amazon Bedrock supports [100\+ foundation models](models.md) from industry-leading providers, including Amazon, Anthropic, DeepSeek, Moonshot AI, MiniMax, OpenAI, and xAI.
 
-|  |  |  |  |  |  |
-| --- |--- |--- |--- |--- |--- |
-| ![Amazon logo with curved arrow from A to Z forming a smile.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/what-is/nova2pro.png)**Amazon Nova** | ![Orange rounded square icon with white radial loading spinner design.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/models/claude.png)**Claude** | ![DeepSeek logo.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/what-is/deepseek.png)**DeepSeek** | ![Spherical icon with horizontal stripes or segments across its surface.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/what-is/kimik2.5.png)**Kimi** | ![Red waveform icon representing audio or voice activity.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/what-is/minimax2.1.png)**MiniMax** | ![OpenAI logo.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/models/openai.png)**OpenAI** |
+|  |  |  |  |  |  |  |
+| --- |--- |--- |--- |--- |--- |--- |
+| ![Amazon logo with curved arrow from A to Z forming a smile.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/what-is/nova2pro.png)**Amazon Nova** | ![Orange rounded square icon with white radial loading spinner design.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/models/claude.png)**Claude** | ![DeepSeek logo.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/what-is/deepseek.png)**DeepSeek** | ![Spherical icon with horizontal stripes or segments across its surface.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/what-is/kimik2.5.png)**Kimi** | ![Red waveform icon representing audio or voice activity.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/what-is/minimax2.1.png)**MiniMax** | ![OpenAI logo.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/models/openai.png)**OpenAI** | ![xAI logo.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/models/xai.png)**xAI** |
 
 ## What's new?
 <a name="whats-new"></a>
++ [Grok 4.6 from xAI now available in Amazon Bedrock](https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-bedrock-grok-4-6/): xAI's latest flagship model, built for long-running agents, coding, and knowledge work, with a 500K context window and configurable reasoning efforts (low, medium, high, xhigh). Available in all AWS Regions where Amazon Bedrock is offered. See the [Grok 4.6](model-card-xai-grok-4-6.md) model card for details.
++ [Amazon Bedrock expands API support and adds cross-Region inference for OpenAI models](https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-bedrock-cross-region-openai-v2/): OpenAI GPT-5.6 Sol, Terra, and Luna are now available on the [`bedrock-runtime`](endpoints.md) endpoint through the Responses, Converse, and Chat Completions APIs, and now support Global and Geo cross-Region inference for higher throughput and lower per-token cost (including new US Geo CRIS). See [Cross-Region inference](cross-region-inference.md) for details.
++ [Daybreak Red and Daybreak Blue from OpenAI now available in Amazon Bedrock (limited availability)](https://aws.amazon.com/about-aws/whats-new/2026/08/openai-daybreak-red-and-blue-on-amazon-bedrock/): Specialized cybersecurity models from OpenAI's Daybreak initiative, available to eligible customers. Daybreak Red (GPT-5.6 Cyber) is purpose-trained for vulnerability research, exploit reproduction, and mitigation development. Daybreak Blue (GPT-5.6 Sol) has safeguards calibrated for defensive cybersecurity work. See the [Daybreak Red: GPT-5.6 Cyber](model-card-openai-gpt-56-cyber.md) and [Daybreak Blue: GPT-5.6 Sol](model-card-openai-gpt-daybreak-blue-56-sol.md) model cards for details.
++ [Web Search now available in Amazon Bedrock](https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-bedrock-web/): A built-in server-side tool that grounds OpenAI GPT models on Amazon Bedrock in current web knowledge through a single tool-use parameter in the Responses API, with no third-party search vendor to onboard and no data egress from your AWS environment. Available in US East (N. Virginia), US East (Ohio), and US West (Oregon). See [Web Search](web-search.md) for details.
 + [OpenAI GPT-5.6 Sol, Terra, and Luna now available in Amazon Bedrock](https://aws.amazon.com/about-aws/whats-new/2026/07/openai-gpt-sol-terra/): A family of models from OpenAI that ranges from advanced reasoning to fast, cost-effective inference, now generally available through the Responses API on Amazon Bedrock. See the [GPT-5.6 Sol](model-card-openai-gpt-56-sol.md), [GPT-5.6 Terra](model-card-openai-gpt-56-terra.md), and [GPT-5.6 Luna](model-card-openai-gpt-56-luna.md) model cards for details.
-+ [Claude Sonnet 5 now available in Amazon Bedrock](https://aws.amazon.com/about-aws/whats-new/2026/06/claude-sonnet-5-now-available-on-aws/): The most capable Sonnet model from Anthropic to date, delivering strong performance across coding, agents, and everyday professional work at scale. See the [Claude Sonnet 5](model-card-anthropic-claude-sonnet-5.md) model card for details.
-+ [Claude Opus 4.8 now available in Amazon Bedrock](https://aws.amazon.com/about-aws/whats-new/2026/05/claude-opus-4.8-aws/): The latest Opus model from Anthropic, delivering improvements across agentic coding, deep knowledge work, and multi-stage autonomous tasks. See the [Claude Opus 4.8](model-card-anthropic-claude-opus-4-8.md) model card for details.
-+ [Claude Mythos Preview (Gated Research Preview)](https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-bedrock-claude-mythos/): Anthropic's most advanced AI model with state-of-the-art capabilities across cybersecurity, software coding, and complex reasoning tasks. Available in gated preview in US East (N. Virginia).
 
 ## Start building
 <a name="start-building"></a>

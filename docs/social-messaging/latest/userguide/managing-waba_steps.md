@@ -15,7 +15,7 @@ You can view the WABA associated with your AWS account.
 
 1. On the **Phone numbers** tab, view your phone number, display name, quality rating, and the number of business initiated conversations that you have left for the day.
 
-   On the **Event destinations** tab, view your event destination. To edit your event destination, follow the directions in [Message and event destinations in AWS End User Messaging SocialMessage and event destinations](managing-event-destinations.md).
+   On the **Event destinations** tab, view your event destination. To edit your event destination, follow the directions in [Message and event destinations in AWS End User Messaging Social](managing-event-destinations.md).
 
    On the **Templates** tab, choose **Manage message templates** to edit your WhatsApp templates through Meta. Each WABA has a 250 template limit.
 

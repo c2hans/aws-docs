@@ -31,7 +31,7 @@ You can view and manage all blueprints from the **Space blueprints** table when 
 ## Space blueprints catalog
 <a name="blueprint-catalog-concept"></a>
 
-You can view all added custom blueprints from a space's blueprints catalog. This is where a space member can choose your custom blueprint to create a new project. This catalog is different to the CodeCatalyst catalog, which already has available blueprints for all space members. For more information, see [Creating a comprehensive project with CodeCatalyst blueprintsCreating a comprehensive project with blueprints](project-blueprints.md).
+You can view all added custom blueprints from a space's blueprints catalog. This is where a space member can choose your custom blueprint to create a new project. This catalog is different to the CodeCatalyst catalog, which already has available blueprints for all space members. For more information, see [Creating a comprehensive project with CodeCatalyst blueprints](project-blueprints.md).
 
 ## Synthesis
 <a name="synthesis-concept"></a>

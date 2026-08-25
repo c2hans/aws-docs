@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsh
 
 AWS HealthOmics provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="omics-GetAnnotationImportJob"></a>[GetAnnotationImportJob](https://docs.aws.amazon.com/omics/latest/api/API_GetAnnotationImportJob.html) | Get the status of an Annotation Import Job | Read |

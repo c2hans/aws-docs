@@ -11,7 +11,7 @@ SYS\_INTEGRATION\_ACTIVITY displays details about completed integration runs.
 
 SYS\_INTEGRATION\_ACTIVITY is visible only to superusers. For more information, see [Visibility of data in system tables and views](cm_chap_system-tables.md#c_visibility-of-data).
 
-For information about zero-ETL integrations, see [Working with zero-ETL integrations](https://docs.aws.amazon.com//redshift/latest/mgmt/zero-etl-using.html) in the Amazon Redshift Management Guide.
+For information about zero-ETL integrations, see [Working with zero-ETL integrations](https://docs.aws.amazon.com/redshift/latest/mgmt/zero-etl-using.html) in the Amazon Redshift Management Guide.
 
 ## Table columns
 <a name="r_SYS_INTEGRATION_ACTIVITY-table-columns"></a>

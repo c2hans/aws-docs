@@ -12,7 +12,7 @@ After a report is published, people will be able to see the report in their list
 **Tip**
 We recommend establishing a naming convention for reports in your organization. When reports are published, this will help everyone identify who the owner is. For example, use the team name or owner alias as the report suffix: Agent Performance - *team name*.
 
-Only people who have permissions in their security profile to **Create** and/or **Edit** saved reports will be able to change the published report and save their changes to the published version.
+Only people who have permissions in their security profile to **Create** or **Edit** saved reports will be able to change the published report and save their changes to the published version.
 
 **To publish a report**
 

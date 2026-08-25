@@ -60,6 +60,8 @@ If your snapshot contains multiple partitions, specify the file system identifie
    + Set the encryption of the restored object(s). You can choose the default destination bucket encryption, SSE-S3, or SSE-KMS. For additional detail, see [Restore S3 data using AWS Backup](restoring-s3.md).
 
 1. For **Restore role**, choose the IAM role that AWS Backup will assume for this restore. If the AWS Backup default role is not present in your account, a **Default role** is created for you with the correct permissions. You can delete this default role or make it unusable.
+**Note**
+If role manager is enabled in your account, AWS Backup selects the default service role for you, and a **Customize** option is available. For more information, see [IAM role creation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html) in the *IAM User Guide*.
 
 1. Choose **Restore backup** (**Restore items** is displayed for file level restore).
 
@@ -87,6 +89,8 @@ You can restore an archived EBS snapshot in cold storage by using the [AWS Backu
 1. Input other settings: volume type, size, IOPS, availability zone, throughput, and encryption.
 
 1. Choose your **restore role**.
+**Note**
+If role manager is enabled in your account, AWS Backup selects the default service role for you, and a **Customize** option is available. For more information, see [IAM role creation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html) in the *IAM User Guide*.
 
 1. Select **Restore backup**. On the confirmation pop up, confirm the snapshots and restore type. Then, select **Restore snapshot**.
 

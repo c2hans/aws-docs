@@ -15,8 +15,6 @@ Unlike Automatic Workload Repository or Statspack reports, SQLT works on individ
 
 Following are the supported Oracle versions for each SQLT version.
 
-****
-
 | SQLT version | Oracle Database 26ai | Oracle Database 21c | Oracle Database 19c |
 | --- | --- | --- | --- |
 | 2018-07-25.v1 | Supported | Supported | Supported |
@@ -67,8 +65,6 @@ The following are prerequisites for using SQLT:
  SQLT can work with licensed features that are provided by the Oracle Tuning Pack and the Oracle Diagnostics Pack. The Oracle Tuning Pack includes the SQL Tuning Advisor, and the Oracle Diagnostics Pack includes the Automatic Workload Repository. The SQLT settings enable or disable access to these features from SQLT.
 
 Amazon RDS supports the following settings for the SQLT option.
-
-****
 
 | Option setting | Valid values | Default value | Description |
 | --- | --- | --- | --- |

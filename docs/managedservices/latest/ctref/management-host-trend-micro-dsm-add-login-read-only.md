@@ -14,8 +14,6 @@ Request a read-only login to the Trend Micro console for your account. For multi
 ## Change Type Details
 <a name="ct-0wspy4o646g9p-MHTa-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-0wspy4o646g9p |

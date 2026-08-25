@@ -106,7 +106,7 @@ After migrating to FOCUS 1.2, new FOCUS data will be delivered to the same S3 pa
 ### Backfill Historical Data
 <a name="backfill-historical-data"></a>
 
-You can [create a Support Case](https://support.console.aws.amazon.com/support/home#/case/create) requesting a [backfill](https://docs.aws.amazon.com/cur/latest/userguide/troubleshooting.html#backfill-data) of your FOCUS report with up to 36 months of historical data. The case must be created from each of your Source Accounts (typically Management/Payer Accounts).
+You can [create a Support Case](https://support.console.aws.amazon.com/support/home#/case/create) requesting a [backfill](https://docs.aws.amazon.com/cur/latest/userguide/troubleshooting.html#backfill-data) of your FOCUS report with up to 14 months of historical data. The case must be created from each of your Source Accounts (typically Management/Payer Accounts).
 
 Support ticket example:
 

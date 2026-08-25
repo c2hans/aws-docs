@@ -14,8 +14,6 @@ Generate a set of credentials consisting of a user name and password, to use to 
 ## Change Type Details
 <a name="ct-2ni31oyto1i5k-DAIc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2ni31oyto1i5k |

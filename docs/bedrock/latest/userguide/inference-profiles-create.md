@@ -15,8 +15,6 @@ To create an inference profile using the API, send a [CreateInferenceProfile](ht
 
 The following fields are required:
 
-****
-
 | Field | Use case |
 | --- | --- |
 | inferenceProfileName | To specify a name for the inference profile. |
@@ -24,12 +22,10 @@ The following fields are required:
 
 The following fields are optional:
 
-****
-
 | Field | Use case |
 | --- | --- |
 | description | To provide a description for the inference profile. |
-| tags | To attach tags to the inference profile. For more information, see [Tagging Amazon Bedrock resources](tagging.md) and [Organizing and tracking costs using AWS cost allocation tags](https://docs.aws.amazon.com//awsaccountbilling/latest/aboutv2/cost-alloc-tags.html). |
+| tags | To attach tags to the inference profile. For more information, see [Tagging Amazon Bedrock resources](tagging.md) and [Organizing and tracking costs using AWS cost allocation tags](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html). |
 | clientRequestToken | To ensure the API request completes only once. For more information, see [Ensuring idempotency](https://docs.aws.amazon.com/ec2/latest/devguide/ec2-api-idempotency.html). |
 
 The response returns an `inferenceProfileArn` that can be used in other inference profile-related actions and that can be used with model invocation and Amazon Bedrock resources.

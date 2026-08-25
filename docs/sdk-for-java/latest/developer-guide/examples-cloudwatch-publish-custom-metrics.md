@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/exam
 # Publish custom metric data to CloudWatch
 <a name="examples-cloudwatch-publish-custom-metrics"></a>
 
-A number of AWS services publish [their own metrics](https://docs.aws.amazon.com//AmazonCloudWatch/latest/monitoring/aws-services-cloudwatch-metrics.html) in namespaces beginning with " `AWS` " You can also publish custom metric data using your own namespace (as long as it doesn’t begin with " `AWS` ").
+A number of AWS services publish [their own metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/aws-services-cloudwatch-metrics.html) in namespaces beginning with " `AWS` " You can also publish custom metric data using your own namespace (as long as it doesn’t begin with " `AWS` ").
 
 ## Publish custom metric data
 <a name="cwid1"></a>
@@ -71,6 +71,6 @@ See the [complete example](https://github.com/awsdocs/aws-doc-sdk-examples/blob/
 
 ## More information
 <a name="more-information"></a>
-+  [Use Amazon CloudWatch Metrics](https://docs.aws.amazon.com//AmazonCloudWatch/latest/monitoring/working_with_metrics.html) in the Amazon CloudWatch User Guide.
-+  [AWS Namespaces](https://docs.aws.amazon.com//AmazonCloudWatch/latest/monitoring/aws-services-cloudwatch-metrics.html) in the Amazon CloudWatch User Guide.
-+  [PutMetricData](https://docs.aws.amazon.com//AmazonCloudWatch/latest/APIReference/API_PutMetricData.html) in the Amazon CloudWatch API Reference.
++  [Use Amazon CloudWatch Metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/working_with_metrics.html) in the Amazon CloudWatch User Guide.
++  [AWS Namespaces](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/aws-services-cloudwatch-metrics.html) in the Amazon CloudWatch User Guide.
++  [PutMetricData](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_PutMetricData.html) in the Amazon CloudWatch API Reference.

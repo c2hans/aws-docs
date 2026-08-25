@@ -86,7 +86,7 @@ We recommend that you create a non-administrative IAM user to use with Agentless
      Next, select the `DMSCollectorPolicy` and `FleetAdvisorS3Policy` customer managed IAM policies.
    + When on the step about viewing the user's access keys (access key IDs and secret access keys), follow the guidance in the **Important** note about saving the user's new access key ID and secret access key in a safe and secure place. You'll need these access keys in [Configuring Agentless Collector](agentless-collector-gs-configure.md).
 
-     It's an AWS security best practice to rotate access keys. For information about rotating keys, see [ Rotate access keys regularly for use cases that require long-term credentials ](https://docs.aws.amazon.com//IAM/latest/UserGuide/best-practices.html#rotate-credentials)in the *IAM User Guide.*
+     It's an AWS security best practice to rotate access keys. For information about rotating keys, see [ Rotate access keys regularly for use cases that require long-term credentials ](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#rotate-credentials)in the *IAM User Guide.*
 
 ## Download the Agentless Collector
 <a name="agentless-collector-gs-download-ova"></a>

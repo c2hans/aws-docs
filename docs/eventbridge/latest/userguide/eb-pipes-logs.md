@@ -59,8 +59,6 @@ In the EventBridge console, CloudWatch logs is selected as a log destination by 
 
 The following table lists the execution steps included in each log level.
 
-****
-
 | Step | TRACE | INFO | ERROR | OFF |
 | --- | --- | --- | --- | --- |
 | Execution Failed | x | x | x |   |

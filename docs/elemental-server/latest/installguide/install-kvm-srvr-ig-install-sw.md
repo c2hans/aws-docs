@@ -24,7 +24,6 @@ This is version 2.18 of the AWS Elemental Server documentation. This is the late
    + -l is a letter, not a number.
 
 1. You are prompted as described in the table below.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-server/latest/installguide/install-kvm-srvr-ig-install-sw.html)
 
    The software is installed. This message confirms:

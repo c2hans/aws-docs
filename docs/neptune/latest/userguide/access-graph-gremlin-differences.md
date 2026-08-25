@@ -15,10 +15,8 @@ For some concrete examples of these implementation differences shown in Gremlin 
 **Topics**
 + [Applicable Standards for Gremlin](#feature-gremlin-applicable-standards)
 + [Variables and parameters in scripts](#feature-gremlin-differences-variables)
-+ [TinkerPop enumerations](#feature-gremlin-differences-tinkerpop)
-+ [Java code](#feature-gremlin-differences-java)
-+ [Properties on elements](#feature-gremlin-differences-properties-on-elements)
 + [Script execution](#feature-gremlin-differences-script)
++ [Properties on elements](#feature-gremlin-differences-properties-on-elements)
 + [Sessions](#feature-gremlin-differences-sessions)
 + [Transactions](#feature-gremlin-differences-transactions)
 + [Vertex and edge IDs](#feature-gremlin-differences-vertex-edge-ids)
@@ -28,10 +26,8 @@ For some concrete examples of these implementation differences shown in Gremlin 
 + [Updating a vertex property](#feature-gremlin-differences-vertex-property-update)
 + [Labels](#feature-gremlin-differences-labels)
 + [Escape characters](#feature-gremlin-differences-escapes)
-+ [Groovy limitations](#feature-gremlin-differences-groovy)
 + [Serialization](#feature-gremlin-differences-serialization)
 + [Lambda steps](#feature-gremlin-differences-lambda)
-+ [Unsupported Gremlin methods](#feature-gremlin-differences-unsupported-methods)
 + [Unsupported Gremlin steps](#feature-gremlin-differences-unsupported-steps)
 + [Gremlin graph features in Neptune](#gremlin-api-reference-features)
 
@@ -72,14 +68,29 @@ String query = "g.V(1)";
 List<Result> results = client.submit(query).all().get();
 ```
 
-## TinkerPop enumerations
-<a name="feature-gremlin-differences-tinkerpop"></a>
+## Script execution
+<a name="feature-gremlin-differences-script"></a>
 
-Neptune does not support fully qualified class names for enumeration values. For example, you must use `single` and not `org.apache.tinkerpop.gremlin.structure.VertexProperty.Cardinality.single` in your Groovy request.
+Neptune's Gremlin engine parses queries using TinkerPop's `gremlin-language` ANTLR grammar. It does *not* run a `GremlinGroovyScriptEngine` (as some TinkerPop-based Gremlin Server deployments do), so scripts submitted to Neptune must contain only the Gremlin language — not arbitrary Groovy or Java code.
 
-The enumeration type is determined by parameter type.
+Scripts can be sent to Neptune in a variety of ways, such as through the [Gremlin REST endpoint](https://docs.aws.amazon.com/neptune/latest/userguide/access-graph-gremlin-rest.html), the [Gremlin Console](https://docs.aws.amazon.com/neptune/latest/userguide/access-graph-gremlin-console.html), or via TinkerPop language drivers (for example, the [Java driver's script client](https://tinkerpop.apache.org/docs/current/reference/#gremlin-java-scripts)). The constraints described in this section apply to any of these text-string submission paths.
 
-The following table shows the allowed enumeration values and the related TinkerPop fully qualified name.
+It's important not to confuse the Gremlin language itself with the syntactic sugar or general-purpose functions of whatever programming language you may have seen wrapping Gremlin examples elsewhere. Where such code appears in TinkerPop tutorials or online samples, it depends on a Groovy or Java runtime that Neptune does not provide.
+
+**Important**
+Everything in this section applies to text-string Gremlin submissions. GLV (Gremlin Language Variant) bytecode submissions built in a host language such as Java, Python, or .NET are not subject to these constraints, because the host-language traversal builder produces bytecode that Neptune's engine consumes directly.
+
+### What a script may contain
+<a name="feature-gremlin-differences-script-contents"></a>
++ All queries must begin with `g`, the traversal object.
++ Multiple traversals can be issued in a single submission separated by a semicolon (`;`) or a newline character (`\n`). Every statement other than the last must end with an `.iterate()` step to be executed; only the final traversal's data is returned.
+
+### Referencing TinkerPop enumeration values
+<a name="feature-gremlin-differences-script-enumerations"></a>
+
+Where a TinkerPop enumeration value is expected as a step argument (for example, a cardinality on `property()` or an order on `by()`), use the short-form values recognized by the ANTLR grammar. Neptune does not resolve fully qualified Java class names in this position — for example, `org.apache.tinkerpop.gremlin.structure.VertexProperty.Cardinality.single` is not accepted; use `single` instead.
+
+The following table lists the allowed short-form values and the underlying TinkerPop class each one belongs to.
 
 | Allowed Values | Class |
 | --- |--- |
@@ -97,22 +108,27 @@ The following table shows the allowed enumeration values and the related TinkerP
 | BOTH, IN, OUT | [org.apache.tinkerpop.gremlin.structure.Direction](https://tinkerpop.apache.org/javadocs/3.7.2/core/org/apache/tinkerpop/gremlin/structure/Direction.html) |
 | any, none | [org.apache.tinkerpop.gremlin.process.traversal.step.TraversalOptionParent.Pick](https://tinkerpop.apache.org/javadocs/current/full/org/apache/tinkerpop/gremlin/process/traversal/Pick.html) |
 
-## Java code
-<a name="feature-gremlin-differences-java"></a>
+### What a script may not contain
+<a name="feature-gremlin-differences-script-not-contents"></a>
 
-Neptune does not support calls to methods defined by arbitrary Java or Java library calls other than supported Gremlin APIs. For example, `java.lang.*`, `Date()`, and `g.V().tryNext().orElseGet()` are not allowed.
+The following are **not** supported in text-string Gremlin queries to Neptune, because they rely on Groovy or Java runtime support that Neptune does not provide:
++ **Groovy statements that don't begin with `g`.** This includes:
+  + Arithmetic expressions such as `1 + 1`
+  + System calls such as `System.nanoTime()`
+  + Variable declarations such as `x = 1; g.V(x)`
++ **Java method or library calls other than supported Gremlin APIs.** For example, `java.lang.*`, `Date()`, and `g.V().tryNext().orElseGet(...)` are not allowed.
++ **Gremlin methods that take a Java type as an argument.** These are only reachable from a JVM-language host, not from a text-string submission. Examples:
+  + `org.apache.tinkerpop.gremlin.process.traversal.dsl.graph.GraphTraversal.program(org.apache.tinkerpop.gremlin.process.computer.VertexProgram)`
+  + `org.apache.tinkerpop.gremlin.process.traversal.dsl.graph.GraphTraversal.sideEffect(java.util.function.Consumer)`
+  + `org.apache.tinkerpop.gremlin.process.traversal.dsl.graph.GraphTraversal.from(org.apache.tinkerpop.gremlin.structure.Vertex)`
+  + `org.apache.tinkerpop.gremlin.process.traversal.dsl.graph.GraphTraversal.to(org.apache.tinkerpop.gremlin.structure.Vertex)`
+
+  For example, the following traversal cannot be submitted as a text string: `g.V().addE('something').from(__.V().next()).to(__.V().next())`.
 
 ## Properties on elements
 <a name="feature-gremlin-differences-properties-on-elements"></a>
 
  Neptune does not support the `materializeProperties` flag that was introduced in TinkerPop 3.7.0 to return properties on elements. As a result, Neptune will still only return vertices or edges as references with just their `id` and `label`.
-
-## Script execution
-<a name="feature-gremlin-differences-script"></a>
-
-All queries must begin with `g`, the traversal object.
-
-In String query submissions, multiple traversals can be issued separated by a semicolon (`;`) or a newline character (`\n`). To be executed, every statement other than the last must end with an `.iterate()` step. Only the final traversal data is returned. Note that this does not apply to GLV ByteCode query submissions.
 
 ## Sessions
 <a name="feature-gremlin-differences-sessions"></a>
@@ -203,29 +219,20 @@ The `::` delimiter is reserved for this use only. You cannot specify multiple la
 
 Neptune resolves all escape characters as described in the [Escaping Special Characters]( http://groovy-lang.org/syntax.html#_escaping_special_characters) section of the Apache Groovy language documentation.
 
-## Groovy limitations
-<a name="feature-gremlin-differences-groovy"></a>
-
-Neptune doesn't support Groovy commands that don't start with `g`. This includes math (for example, `1+1`), system calls (for example, `System.nanoTime()`), and variable definitions (for example, `1+1`).
-
-**Important**
-Neptune does not support fully qualified class names. For example, you must use `single` and not `org.apache.tinkerpop.gremlin.structure.VertexProperty.Cardinality.single` in your Groovy request.
-
 ## Serialization
 <a name="feature-gremlin-differences-serialization"></a>
 
 Neptune supports the following serializations based on the requested MIME type.
 
- Neptune exposes all of the serializers that TinkerPop does, with support for the various versions and configurations of GraphSON and GraphBinary. Despite there being many options present, the guidance for which to use is straightforward:
+ With Neptune, you can use many of the serializers that TinkerPop offers, with support for the various versions and configurations of GraphSON and GraphBinary. See the following table for the currently supported serializers. Despite there being many options present, the guidance for which to use is straightforward:
 +  If you are using Apache TinkerPop drivers, prefer the default for the driver without specifying one explicitly. Unless you have a very specific reason for doing so, you likely don’t need to specify the serializer in your driver initialization. In general, the default used by the drivers is `application/vnd.graphbinary-v1.0`.
 +  If you are connecting to Neptune over HTTP, prioritize the use of `application/vnd.gremlin-v3.0+json;types=false` as the embedded types in the alternative version of GraphSON 3 make it complicated to work with.
-+  The `application/vnd.graphbinary-v1.0-stringd` is generally only useful when used in conjunction with [Gremlin Console](https://docs.aws.amazon.com//neptune/latest/userguide/access-graph-gremlin-console.html) as it converts all results to a string representation for simple display.
++  The `application/vnd.graphbinary-v1.0-stringd` is generally only useful when used in conjunction with [Gremlin Console](https://docs.aws.amazon.com/neptune/latest/userguide/access-graph-gremlin-console.html) as it converts all results to a string representation for simple display.
 +  The remaining formats remain present for legacy reasons and should typically not be used with drivers without clear cause.
 
 |  |  |  |
 | --- |--- |--- |
 | MIME type | Serialization | Configuration |
-| `application/vnd.gremlin-v1.0+json` | GraphSONMessageSerializerV1 | ioRegistries: [org.apache.tinkerpop.gremlin.tinkergraph.structure.TinkerIoRegistryV1] |
 | `application/vnd.gremlin-v1.0+json;types=false` | GraphSONUntypedMessageSerializerV1 | ioRegistries: [org.apache.tinkerpop.gremlin.tinkergraph.structure.TinkerIoRegistryV1] |
 | `application/vnd.gremlin-v2.0+json` | GraphSONMessageSerializerV2 | ioRegistries: [org.apache.tinkerpop.gremlin.tinkergraph.structure.TinkerIoRegistryV2] |
 | `application/vnd.gremlin-v2.0+json;types=false` | GraphSONUntypedMessageSerializerV2 | ioRegistries: [org.apache.tinkerpop.gremlin.tinkergraph.structure.TinkerIoRegistryV2] |
@@ -236,7 +243,7 @@ Neptune supports the following serializations based on the requested MIME type.
 | `application/vnd.graphbinary-v1.0-stringd` | GraphBinaryMessageSerializerV1 | serializeResultToString: true |
 | `application/vnd.gremlin-v1.0+json` | GraphSONMessageSerializerGremlinV1 | ioRegistries: [org.apache.tinkerpop.gremlin.tinkergraph.structure.TinkerIoRegistryV1] |
 | `application/vnd.gremlin-v2.0+json` | GraphSONMessageSerializerV2   (only works with WebSockets) | ioRegistries: [org.apache.tinkerpop.gremlin.tinkergraph.structure.TinkerIoRegistryV2] |
-| `application/vnd.gremlin-v3.0+json` | `GraphSONMessageSerializerV3` |  |
+| `application/vnd.gremlin-v3.0+json` | GraphSONMessageSerializerV3 |  |
 | `application/json` | GraphSONMessageSerializerV3 | ioRegistries: [org.apache.tinkerpop.gremlin.tinkergraph.structure.TinkerIoRegistryV3] |
 | `application/vnd.graphbinary-v1.0` | GraphBinaryMessageSerializerV1 |  |
 
@@ -248,25 +255,11 @@ Neptune supports the following serializations based on the requested MIME type.
 
 Neptune does not support Lambda Steps.
 
-## Unsupported Gremlin methods
-<a name="feature-gremlin-differences-unsupported-methods"></a>
-
-Neptune does not support the following Gremlin methods:
-+ `org.apache.tinkerpop.gremlin.process.traversal.dsl.graph.GraphTraversal.program(org.apache.tinkerpop.gremlin.process.computer.VertexProgram)`
-+ `org.apache.tinkerpop.gremlin.process.traversal.dsl.graph.GraphTraversal.sideEffect(java.util.function.Consumer)`
-+ `org.apache.tinkerpop.gremlin.process.traversal.dsl.graph.GraphTraversal.from(org.apache.tinkerpop.gremlin.structure.Vertex)`
-+ `org.apache.tinkerpop.gremlin.process.traversal.dsl.graph.GraphTraversal.to(org.apache.tinkerpop.gremlin.structure.Vertex)`
-
-For example, the following traversal is not allowed: `g.V().addE('something').from(__.V().next()).to(__.V().next())`.
-
-**Important**
-This ***only*** applies to methods where you send the Gremlin query as a ***text string***.
-
 ## Unsupported Gremlin steps
 <a name="feature-gremlin-differences-unsupported-steps"></a>
 
 Neptune does not support the following Gremlin steps:
-+ The Gremlin [io( ) Step](http://tinkerpop.apache.org/docs/3.7.2/reference/#io-step) is only partially supported in Neptune. It can be used in a read context, as in `g.io({{(url)}}).read()`, but not to write.
++ The Gremlin [io( ) Step](http://tinkerpop.apache.org/docs/3.7.2/reference/#io-step) is only partially supported in Neptune. You can use it in a read context, as in `g.io("https://example.com/data/my-graph.graphml").read()`, but you cannot use it to write. To read a file that you store as an Amazon S3 object, first generate a presigned URL. Then pass that HTTPS URL to `g.io()`. For more information about presigned URLs, see [Download and upload objects with presigned URLs](https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-presigned-url.html) in the *Amazon S3 User Guide*.
 
 ## Gremlin graph features in Neptune
 <a name="gremlin-api-reference-features"></a>

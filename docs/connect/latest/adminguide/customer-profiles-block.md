@@ -72,7 +72,7 @@ When configuring properties to **Get profile**, consider the following:
 + Define attributes to persist in subsequent blocks, storing them in contact attributes under **Response fields**.
 +  Contacts can be routed down the following branches
   +  **Success: ** one profile was found. Response fields are stored to contact attributes
-  +  **Error:** An error was encountered while trying to find the profile. This may be due to a system error or how **Get profile** is configured.
+  +  **Error:** An error was encountered while trying to find the profile. This might be due to a system error or how **Get profile** is configured.
   +  **Multiple Found:** multiple profiles were found.
   +  **None Found:** no profile was found.
 
@@ -121,10 +121,10 @@ The displayed block below is configured to update a Profile with a **MailingAddr
  To use this action, your Connect Customer instance must have permission for the following APIs: ListSegmentDefinitions, GetSegmentMembership, BatchGetProfile, and BatchGetCalculatedAttributeForProfile in either of the following Policies: **AmazonConnectServiceLinkedRolePolicy** or **AmazonConnectServiceCustomerProfileAccess**.
 
 **Important**
-If you are checking segment membership for a segment powered by Spark SQL, the segment checked is the last segment created and not updated in real-time. The lastComputedAt API attributes provides the last time the segment snapshot was created. You can run a new segment snapshot to refresh the segment. If you receive a 4XX error, ensure you have created a segment snapshot.
+If you are checking segment membership for a segment powered by Spark SQL, the segment checked is the last segment created and not updated in real-time. The lastComputedAt API attributes provides the last time the segment snapshot was created. You can run a new segment snapshot to refresh the segment. If you receive a 4XX error, make sure you have created a segment snapshot.
 
  When configuring properties to **Check segment membership**, consider the following:
-+  **Mandatory Profile ID:** A Profile ID is required for this block to function. The **Get profile object** action retrieves an object associated with the provided **ProfileID**. Ensure you provide the **ProfileID** by using a preceding **Get profile** block. Use the **Get profile** block to pinpoint the specific profile before moving forward to retrieve the profile's object in the subsequent block.
++  **Mandatory Profile ID:** A Profile ID is required for this block to function. The **Get profile object** action retrieves an object associated with the provided **ProfileID**. Make sure you provide the **ProfileID** by using a preceding **Get profile** block. Use the **Get profile** block to pinpoint the specific profile before moving forward to retrieve the profile's object in the subsequent block.
   +  You have the option to manually input the Profile ID or use a pre-defined value stored in a pre-defined or user attribute.
 
     The following image shows an example flow configured to get profile, and then check segment membership.
@@ -140,13 +140,13 @@ If you are checking segment membership for a segment powered by Spark SQL, the s
 **Contacts can be routed down the following branches**
 +  **In segment**: The profile belongs to the customer segment.
 +  **Not in segment**: The profile does not belong to the customer segment.
-+  **Error**: An error occurred while attempting to check the segment membership. This may be due to a system error or misconfiguration of the **Check segment membership** action. To learn more about flow error logging, see [Enable Connect Customer flow logs in an Amazon CloudWatch log group](contact-flow-logs.md).
++  **Error**: An error occurred while attempting to check the segment membership. This might be due to a system error or misconfiguration of the **Check segment membership** action. To learn more about flow error logging, see [Enable Connect Customer flow logs in an Amazon CloudWatch log group](contact-flow-logs.md).
 
 ## Properties: Get profile object
 <a name="customer-profiles-block-properties-get-profile-object"></a>
 
 When configuring properties to **Get profile object**, consider the following:
-+ **Mandatory Profile ID:** A Profile ID is required for this block to function. The **Get profile object** action retrieves an object associated with the provided **ProfileID**. Ensure you provide the **ProfileID** by using a preceding **Get profile** block, as illustrated in the following image. Use the **Get profile** block to pinpoint the specific profile before moving forward to retrieve the profile's object in the subsequent block.
++ **Mandatory Profile ID:** A Profile ID is required for this block to function. The **Get profile object** action retrieves an object associated with the provided **ProfileID**. Make sure you provide the **ProfileID** by using a preceding **Get profile** block, as illustrated in the following image. Use the **Get profile** block to pinpoint the specific profile before moving forward to retrieve the profile's object in the subsequent block.
   + You have the option to manually input the Profile ID or use a pre-defined value stored in a pre-defined or user attribute.
 ![The properties page of the Customer Profiles GetProfileOject block.](http://docs.aws.amazon.com/connect/latest/adminguide/images/customer-profiles-block-properties-get-profile-object-1.png)
 + You must indicate the object type from which you intend to retrieve information.
@@ -157,7 +157,7 @@ When configuring properties to **Get profile object**, consider the following:
 
  Contacts can be routed down the following branches:
 +  **Success:** The profile object is successfully located, and **Response fields** are stored in contact attributes.
-+  **Error:** An error occurred during the attempt to retrieve the profile object. This may be due to a system error or misconfiguration of the **Get Profile** action.
++  **Error:** An error occurred during the attempt to retrieve the profile object. This might be due to a system error or misconfiguration of the **Get Profile** action.
 +  **None Found:** no object is found.
 
 The displayed block below is configured to retrieve a profile object of type "Asset" associated with the **ProfileId** saved under the "Customer" namespace. In this specific scenario, the block is will search for an Asset using the Asset ID. After the Asset is located, **Asset.Price** and **Asset.PurchaseDate** are stored in contact attributes, making them available for subsequent blocks.
@@ -171,7 +171,7 @@ The displayed block below is configured to retrieve a profile object of type "As
 To use this action, your Connect Customer instance must have permission for the following APIs: `ListCalculatedAttributeDefinitions` and `GetCalculatedAttributeForProfile` in either of the following Policies: **AmazonConnectServiceLinkedRolePolicy** or **AmazonConnectServiceCustomerProfileAccess**.
 
 When configuring properties to **Get calculated attributes**, consider the following:
-+ **Mandatory Profile ID:** A Profile ID is required for this block to function. The **Get calculated attributes** action retrieves an object associated with the provided **ProfileID**. Ensure you provide the **ProfileID** by using a preceding **Get profile** block, as illustrated in the following image. Use the **Get profile** block to pinpoint the specific profile before moving forward to retrieve the profile's calculated attributes in the subsequent block.
++ **Mandatory Profile ID:** A Profile ID is required for this block to function. The **Get calculated attributes** action retrieves an object associated with the provided **ProfileID**. Make sure you provide the **ProfileID** by using a preceding **Get profile** block, as illustrated in the following image. Use the **Get profile** block to pinpoint the specific profile before moving forward to retrieve the profile's calculated attributes in the subsequent block.
   + You have the option to manually input the Profile ID or use a pre-defined value stored in a pre-defined or user attribute.
 ![The properties page of the Customer Profiles GetCalculatedAttributes block.](http://docs.aws.amazon.com/connect/latest/adminguide/images/customer-profiles-block-properties-get-calculated-attributes-1.png)
 + Define attributes to persist in subsequent blocks, storing them in contact attributes under **Response fields**.
@@ -180,7 +180,7 @@ When configuring properties to **Get calculated attributes**, consider the follo
 
  Contacts can be routed down the following branches:
 +  **Success:** A calculated attribute is found, and Response fields are stored in contact attributes.
-+  **Error:** An error occurred while attempting to retrieve the calculated attribute. This may be due to a system error or misconfiguration of the **Get calculated attribute** action.
++  **Error:** An error occurred while attempting to retrieve the calculated attribute. This might be due to a system error or misconfiguration of the **Get calculated attribute** action.
 +  **None Found:** no calculated attribute is found.
 
 The displayed block below is configured to get calculated attributes belonging to the provided **ProfileId** in contact attributes. The following **Response fields** will be retrieved and stored in contact attributes: **Average Call Duration**, and **Frequent Caller**.
@@ -197,14 +197,14 @@ To use this action, you must also enable the Customer Profiles View permission i
 
 When configuring properties to **Associate contact to profile**, consider the following:
 +  Add a **Get profile** block before an ** Associate contact to profile** , as shown in the following image. Use the **Get profile** block to find the profile first, then associate the contact and profile in the next block.
-+ **Mandatory Profile ID:** A Profile ID is required for this block to function. Ensure you provide the **ProfileID** by using a preceding **Get profile** block, as illustrated in the following image. Use the **Get profile** block to pinpoint the specific profile you wish to associate the contact to in the next block.
++ **Mandatory Profile ID:** A Profile ID is required for this block to function. Make sure you provide the **ProfileID** by using a preceding **Get profile** block, as illustrated in the following image. Use the **Get profile** block to pinpoint the specific profile you wish to associate the contact to in the next block.
   + You have the option to manually input the Profile ID or use a pre-defined value stored in a pre-defined or user attribute.
 ![The properties page of the Customer Profiles AssociateContactToProfile block.](http://docs.aws.amazon.com/connect/latest/adminguide/images/customer-profiles-block-properties-associate-1.png)
 +  You must provide a value for Contact ID.
 
  Contacts can be routed down the following branches:
 +  **Success:** Associated the contact to profile.
-+  **Error:** An error was encountered while attempting to associate the contact to profile. This may be due to a system error or misconfiguration of the **Associate contact to profile** action.
++  **Error:** An error was encountered while attempting to associate the contact to profile. This might be due to a system error or misconfiguration of the **Associate contact to profile** action.
 
 The following block is configured to associate the profile with **Profile ID** stored in contact attributes to the current Contact ID stored in contact attributes.
 

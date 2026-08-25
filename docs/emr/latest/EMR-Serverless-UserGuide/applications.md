@@ -24,8 +24,6 @@ When you create an application with EMR Serverless, the application run enters t
 
 Applications can have the following states:
 
-****
-
 | State | Description |
 | --- | --- |
 | Creating | The application is being prepared and isn't ready to use yet. |

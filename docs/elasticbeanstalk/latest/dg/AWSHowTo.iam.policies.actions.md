@@ -296,4 +296,4 @@ The following policy allows the `CreateConfigurationTemplate` action to create c
 ```
 
 `aws:ResourceTag/{{key-name}}``aws:RequestTag/{{key-name}}``aws:TagKeys`
-Specify tag-based conditions. For details, see [Using tags to control access to Elastic Beanstalk resourcesExamples of tag conditions in policies](AWSHowTo.iam.policies.access-tags.md).
+Specify tag-based conditions. For details, see [Using tags to control access to Elastic Beanstalk resources](AWSHowTo.iam.policies.access-tags.md).

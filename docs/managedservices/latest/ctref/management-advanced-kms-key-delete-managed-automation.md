@@ -14,8 +14,6 @@ Delete an AWS Key Management Service (KMS) Key from an AMS account. By default, 
 ## Change Type Details
 <a name="ct-2zxya20wmf5bf-MAKd-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2zxya20wmf5bf |

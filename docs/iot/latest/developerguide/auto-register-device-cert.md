@@ -84,7 +84,7 @@ SELECT *,
 from $aws/events/certificates/registered/caCertificateId
 ```
 
-In this example, the rule subscribes to the JITR topic `$aws/events/certificates/registered/{{caCertificateID}}` and uses the clientid() function to retrieve the client ID. The rule then appends the client ID to the JITR payload. For more information about rule's clientid() function, see [clientid()](https://docs.aws.amazon.com//iot/latest/developerguide/iot-sql-functions.html#iot-sql-function-clientid).
+In this example, the rule subscribes to the JITR topic `$aws/events/certificates/registered/{{caCertificateID}}` and uses the clientid() function to retrieve the client ID. The rule then appends the client ID to the JITR payload. For more information about rule's clientid() function, see [clientid()](https://docs.aws.amazon.com/iot/latest/developerguide/iot-sql-functions.html#iot-sql-function-clientid).
 
 For more information about how to create a Lambda rule that listens on the `$aws/events/certificates/registered/{{caCertificateID}}` topic and performs these actions, see [just-in-time registration of Client Certificates on AWS IoT](https://aws.amazon.com/blogs/iot/just-in-time-registration-of-device-certificates-on-aws-iot/).
 

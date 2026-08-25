@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/tag-editor/latest/userguide/security_iam
 
 By default, IAM principals, such as roles and users, don't have permission to create or modify tags. They also can't perform tasks using the AWS Management Console, AWS Command Line Interface (AWS CLI), or AWS APIs. An IAM administrator must create IAM policies that grant principals permission to perform specific API operations on the specified resources they need. The administrator must then attach those policies to the principals that require those permissions.
 
-For instructions on creating an IAM identity-based policy using these example JSON policy documents, see [Creating Policies on the JSON Tab](https://docs.aws.amazon.com//IAM/latest/UserGuide/access_policies_create.html#access_policies_create-json-editor) in the *IAM User Guide*.
+For instructions on creating an IAM identity-based policy using these example JSON policy documents, see [Creating Policies on the JSON Tab](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html#access_policies_create-json-editor) in the *IAM User Guide*.
 
 **Topics**
 + [Policy best practices](#security_iam_policy-best-practices)
@@ -32,7 +32,7 @@ For more information about best practices in IAM, see [Security best practices i
 
 To access the Tag Editor console and the Resource Groups Tagging API, you must have a minimum set of permissions. These permissions must allow you to list and view details about the tags attached to resources in your AWS account. If you create an identity-based policy that is more restrictive than the minimum required permissions, the console and API commands won't function as intended for the IAM principals with that policy.
 
-To ensure that those principals can still use Tag Editor, attach the following policy (or a policy that contains the permissions listed in the following policy) to the entities. For more information, see [Adding permissions to a user](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_users_change-permissions.html#users_change_permissions-add-console) in the *IAM User Guide*:
+To ensure that those principals can still use Tag Editor, attach the following policy (or a policy that contains the permissions listed in the following policy) to the entities. For more information, see [Adding permissions to a user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_change-permissions.html#users_change_permissions-add-console) in the *IAM User Guide*:
 
 ------
 #### [ JSON ]
@@ -136,4 +136,4 @@ You can use conditions in your identity-based policy to control access to Tag Ed
 
 ------
 
-You can attach this policy to the users in your account. If a user with the tag key `project` and tag value `alpha` attempts to view a resource group, the group must also be tagged `project=alpha`. Otherwise the user is denied access. The condition tag key `project` matches both `Project` and `project` because condition key names are not case-sensitive. For more information, see [IAM JSON policy elements: Condition](https://docs.aws.amazon.com//IAM/latest/UserGuide/reference_policies_elements_condition.html) in the *IAM User Guide*.
+You can attach this policy to the users in your account. If a user with the tag key `project` and tag value `alpha` attempts to view a resource group, the group must also be tagged `project=alpha`. Otherwise the user is denied access. The condition tag key `project` matches both `Project` and `project` because condition key names are not case-sensitive. For more information, see [IAM JSON policy elements: Condition](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html) in the *IAM User Guide*.

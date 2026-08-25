@@ -14,8 +14,6 @@ Enable automatic key rotation for an AWS Key Management Service (KMS) customer m
 ## Change Type Details
 <a name="ct-2lt0jeydeumpe-MAKe-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2lt0jeydeumpe |

@@ -14,7 +14,7 @@ If you have one of these domains, we urge you to change it immediately. Change i
 In the near future we plan to automatically change any remaining old domains that appear in the AWS console—including the emergency access URL—to the new URL.
 + If anyone tries to access a URL with the old domain, they will be redirected automatically to the new one.
 +  If you have any custom code, a connector, or a firewall, it is your responsibility to update all references to your Connect Customer URL from your old domain to your new domain.
-+ Automatic redirection from the old domain to the new one is only for any references you may have accidentally missed, for example, users still choosing on old favorites.
++ Automatic redirection from the old domain to the new one is only for any references you might have accidentally missed, for example, users still choosing on old favorites.
 
 **Perform the steps in this topic to help you PREPARE for when we automatically change your old domain name** (that is, redirect traffic from your old domain to the new one).
 

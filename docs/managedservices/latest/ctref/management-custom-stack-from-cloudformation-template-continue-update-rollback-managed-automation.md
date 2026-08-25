@@ -14,8 +14,6 @@ Request a ContinueUpdateRollback operation for the specified CloudFormation stac
 ## Change Type Details
 <a name="ct-32r1igwrwag4i-MCSc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-32r1igwrwag4i |

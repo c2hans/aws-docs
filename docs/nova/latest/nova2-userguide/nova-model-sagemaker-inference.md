@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/nova-model-s
 
 Custom Amazon Nova models are now available on SageMaker inference. With Amazon Nova on SageMaker, you can start getting predictions, or inferences, from your trained custom Amazon Nova models. SageMaker provides a broad selection of ML infrastructure and model deployment options to help meet all your ML inference needs. With SageMaker inference, you can scale your model deployment, manage models more effectively in production, and reduce operational burden.
 
-SageMaker provides you with various inference options, such as real-time endpoints for getting low latency inference, and asynchronous endpoints for batches of requests. By leveraging the appropriate inference option for your use case, you can ensure efficient model deployment and inference. For more information on SageMaker inference, see [Deploy models for inference](https://docs.aws.amazon.com//sagemaker/latest/dg/deploy-model.html).
+SageMaker provides you with various inference options, such as real-time endpoints for getting low latency inference, and asynchronous endpoints for batches of requests. By leveraging the appropriate inference option for your use case, you can ensure efficient model deployment and inference. For more information on SageMaker inference, see [Deploy models for inference](https://docs.aws.amazon.com/sagemaker/latest/dg/deploy-model.html).
 
 **Important**
 Only full-rank custom models and LoRA-merged models are supported on SageMaker inference. For unmerged LoRA models and base models, use Amazon Bedrock.
@@ -22,7 +22,7 @@ The following features are available for Amazon Nova models on SageMaker inferen
 
 **Deployment and Scaling**
 + Real-time endpoints with custom instance selection
-+ Auto Scaling – Automatically adjust capacity based on traffic patterns to optimize costs and GPU utilization. For more information, see [Automatically Scale Amazon SageMaker Models](https://docs.aws.amazon.com//sagemaker/latest/dg/endpoint-auto-scaling.html).
++ Auto Scaling – Automatically adjust capacity based on traffic patterns to optimize costs and GPU utilization. For more information, see [Automatically Scale Amazon SageMaker Models](https://docs.aws.amazon.com/sagemaker/latest/dg/endpoint-auto-scaling.html).
 + Streaming API support for real-time token generation
 
 **Monitoring and Optimization**
@@ -41,8 +41,6 @@ When creating your SageMaker inference endpoints, you can set two environment va
 + `MAX_CONCURRENCY` – Maximum number of concurrent requests the endpoint will serve
 
 The following table lists the supported Amazon Nova models, instance types, and supported configurations. The MAX\_CONCURRENCY values represent the maximum supported concurrency for each CONTEXT\_LENGTH setting:
-
-****
 
 - **Amazon Nova Micro**
   - **Instance Type:** ml.g5.12xlarge / **Supported Configurations:** CONTEXT\_LENGTH: 4000, MAX\_CONCURRENCY: 12<br />CONTEXT\_LENGTH: 8000, MAX\_CONCURRENCY: 6 / **FP8 Quantization Required:** No
@@ -82,8 +80,6 @@ You can deploy Amazon Nova models using SageMaker inference components, which al
 
 The following table lists the minimum compute resource requirements for each Amazon Nova model when using inference components:
 
-****
-
 | Model | Min CPU Cores | Min Memory (MB) | Min GPU Count |
 | --- | --- | --- | --- |
 | Amazon Nova Micro | 15 | 25000 | 4 |
@@ -105,8 +101,6 @@ The number of inference components you can host on a single endpoint depends on 
 
 The following table lists the AWS Regions where Amazon Nova models are available on SageMaker inference:
 
-****
-
 | Region Name | Region Code | Availability |
 | --- | --- | --- |
 | US East (N. Virginia) | us-east-1 | Available |
@@ -117,8 +111,6 @@ The following table lists the AWS Regions where Amazon Nova models are available
 
 The following table lists the container image URIs for Amazon Nova models on SageMaker inference by region. The `SM-Inference-latest` tag currently points to `v1.4`.
 
-****
-
 | Region | Container Image URIs |
 | --- | --- |
 | us-east-1 | 708977205387.dkr.ecr.us-east-1.amazonaws.com/nova-inference-repo:SM-Inference-latest |
@@ -127,7 +119,7 @@ The following table lists the container image URIs for Amazon Nova models on Sag
 ## Best Practices
 <a name="nova-sagemaker-inference-best-practices"></a>
 
-For best practices on deploying and managing models on SageMaker, see [Best Practices for SageMaker](https://docs.aws.amazon.com//sagemaker/latest/dg/best-practices.html).
+For best practices on deploying and managing models on SageMaker, see [Best Practices for SageMaker](https://docs.aws.amazon.com/sagemaker/latest/dg/best-practices.html).
 
 ## Support
 <a name="nova-sagemaker-inference-support"></a>

@@ -13,8 +13,6 @@ If your cluster deployment includes a router for handling SDI (instead of, or in
 
 Make sure you perform the configuration on the correct nodes.
 
-****
-
 | Node | Work on this node? |
 | --- | --- |
 | Primary Conductor Live node | Yes. You perform the import step on this node.  |

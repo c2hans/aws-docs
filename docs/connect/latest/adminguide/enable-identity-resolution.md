@@ -49,4 +49,4 @@ If you auto-enable merges, you will not receive matched profile IDs.
 **Note**
 Before running an Identity Resolution Job for the first time on a new Customer Profiles domain, we recommend checking your profile metrics to make sure that profiles have been created. Otherwise, there won't be any matching results.
 
-   1. You may want to set up consolidation criteria for auto-merging matching profiles. If so, see [Set up consolidation criteria for Identity Resolution in Connect Customer](create-consolidation-criteria.md).
+   1. You might want to set up consolidation criteria for auto-merging matching profiles. If so, see [Set up consolidation criteria for Identity Resolution in Connect Customer](create-consolidation-criteria.md).

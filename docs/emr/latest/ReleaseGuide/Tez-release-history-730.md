@@ -16,8 +16,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/Tez-release-hist
 ## Amazon EMR 7.3.0 - New configurations
 <a name="Tez-release-history-changes-730-new-configs"></a>
 
-****
-
 | Classification | Name | Default | Description |
 | --- | --- | --- | --- |
 | tez-site | tez.am.tez-ui.webservice.enable.ssl | false | Allow enabling SSL for for the AM WebUIService |

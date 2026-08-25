@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/developerguide/tag-ope
 # Tag operations
 <a name="tag-operations"></a>
 
-Tags can help you categorize and allocate costs incurred by your Quick Sight resources. For more information about tags, see [User-defined cost allocation tags](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/custom-tags.html). You can visualize costs of tagged resources that have consumption-based pricing in AWS cost and usage reports. For more information on cost and usage reports, see [What are AWS Cost and Usage Reports](https://docs.aws.amazon.com//cur/latest/userguide/what-is-cur.html).
+Tags can help you categorize and allocate costs incurred by your Quick Sight resources. For more information about tags, see [User-defined cost allocation tags](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/custom-tags.html). You can visualize costs of tagged resources that have consumption-based pricing in AWS cost and usage reports. For more information on cost and usage reports, see [What are AWS Cost and Usage Reports](https://docs.aws.amazon.com/cur/latest/userguide/what-is-cur.html).
 
 You can also use tags to scope user permissions by granting a user permission to access or change only resources with certain tag values. You can use the [TagResource](tag-resource.md) API operation with a resource that already has tags. If you specify a new tag key for the resource, this tag is appended to the list of tags associated with the resource. If you specify a tag key that is already associated with the resource, the new tag value that you specify replaces the previous value for that tag. You can tag a new Quick Sight managed user or IAM user at creation with a [RegisterUser](register-user.md) API call.
 

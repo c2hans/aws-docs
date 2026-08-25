@@ -84,7 +84,7 @@ If this option is disabled, your instance isn't an Amazon EBS-backed instance.
    1. For **Image description**, enter an optional description of the image, up to 255 characters.
 
    1. For **Reboot instance**, either keep the checkbox selected (the default), or clear it.
-      + If **Reboot instance** is selected, when Amazon EC2 creates the new AMI, it reboots the instance so that it can take snapshots of the attached volumes while data is at rest, in order to ensure a consistent state.
+      + If **Reboot instance** is selected, when Amazon EC2 creates the new AMI, it reboots the instance so that it can take snapshots of the attached volumes while data is at rest, to ensure a consistent state.
       + If **Reboot instance** is cleared, when Amazon EC2 creates the new AMI, it does not shut down and reboot the instance.
 **Warning**
 If you clear **Reboot instance**, we can't guarantee the file system integrity of the created image.

@@ -15,7 +15,7 @@ Pinned items can come from two sources: you can manually pin items you frequentl
 To help maintain clear context boundaries, pinned items only apply to your current chat tab. When you open a new tab, you'll start fresh with only the default pinned context, such as the active file.
 
 ## Using pinned context
-<a name="w2aac11c16c25c19b7"></a>
+<a name="w2aac11c18c27c19b7"></a>
 
 **To add pinned context items**
 
@@ -28,7 +28,7 @@ To help maintain clear context boundaries, pinned items only apply to your curre
 1. The pinned context will appear in the pinned context area in your chat panel.
 
 ### Methods to pin context items
-<a name="w2aac11c16c25c19b7b5"></a>
+<a name="w2aac11c18c27c19b7b5"></a>
 
 There are three ways to pin context items:
 

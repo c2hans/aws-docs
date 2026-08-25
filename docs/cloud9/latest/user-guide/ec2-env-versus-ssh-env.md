@@ -11,8 +11,6 @@ As discussed in the [introduction for environments and computing resources](welc
 
 The following table highlights both the similarities and differences between using EC2 environments and SSH environments in AWS Cloud9.
 
-****
-
 |  **EC2 environments**  |  **SSH environments**  |
 | --- | --- |
 | AWS Cloud9 creates an associated Amazon EC2 instance and manages the lifecycle of the instance. This includes start, stop, and terminate operations. | You use an existing cloud compute instance or your own server. You're responsible for managing its lifecycle.  |

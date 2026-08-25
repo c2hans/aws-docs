@@ -21,7 +21,7 @@ We recommend that you also create an [Elastic IP address](https://docs.aws.amazo
 + A registered domain name. You can use Amazon Route 53 as your domain registrar or you can use a different registrar.
 + Route 53 as the DNS service for the domain. If you register your domain name by using Route 53, we automatically configure Route 53 as the DNS service for the domain.
 
-  For information about using Route 53 as the DNS service provider for your domain, see [Making Amazon Route 53 the DNS service for an existing domainMaking Route 53 the DNS service for an existing domain](MigratingDNS.md).
+  For information about using Route 53 as the DNS service provider for your domain, see [Making Amazon Route 53 the DNS service for an existing domain](MigratingDNS.md).
 
 ## Configuring Amazon Route 53 to route traffic to an Amazon EC2 instance
 <a name="routing-to-ec2-instance-configuring"></a>

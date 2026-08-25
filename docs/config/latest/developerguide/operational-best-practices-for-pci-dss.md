@@ -9,8 +9,6 @@ Conformance packs provide a general-purpose compliance framework designed to ena
 
 The following provides a sample mapping between the Payment Card Industry Data Security Standard (PCI DSS) 3.2.1 and AWS managed Config rules. Each AWS Config rule applies to a specific AWS resource, and relates to one or more PCI DSS controls. A PCI DSS control can be related to multiple Config rules. Refer to the table below for more detail and guidance related to these mappings.
 
-****
-
 | Control ID  | Control Description  | AWS Config Rule  | Guidance  |
 | --- | --- | --- | --- |
 | 1.3 | Prohibit direct public access between the Internet and any system component in the cardholder data environment. | [alb-desync-mode-check](https://docs.aws.amazon.com/config/latest/developerguide/alb-desync-mode-check.html) | To assist in protecting applications for HTTP Desync vulnerabilities, ensure HTTP Desync mitigation mode is enabled on your application load balancers. HTTP Desync issues can lead to request smuggling and make your applications vulnerable to request queue or cache poisoning. Desync mitigation modes are monitor, defensive, and strictest. Defensive is the default mode. |

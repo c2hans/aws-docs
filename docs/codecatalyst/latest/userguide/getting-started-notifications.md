@@ -25,7 +25,7 @@ The set of project events that can be sent to notification channels are not the 
 <a name="getting-started-notifications-prerequisites"></a>
 
 Before you begin, you need the following:
-+ A CodeCatalyst space. For information about creating a CodeCatalyst space and signing in for the first time, see [Set up and sign in to CodeCatalystSet up and sign in to CodeCatalyst](setting-up-topnode.md).
++ A CodeCatalyst space. For information about creating a CodeCatalyst space and signing in for the first time, see [Set up and sign in to CodeCatalyst](setting-up-topnode.md).
 + A CodeCatalyst project. For more information, see [Creating a project](projects-create.md).
 + A CodeCatalyst account with the **Project administrator** or **Space administrator** role. For more information, see [Granting access with user roles](ipa-roles.md).
 + A Slack account and Slack workspace that can be accessed by CodeCatalyst.

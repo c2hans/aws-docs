@@ -90,7 +90,7 @@ For example, if a user has `GetTableData` permissions, then they can read all th
 ## Condition keys for S3 Tables
 <a name="s3-tables-conditionkeys"></a>
 
-S3 Tables supports [AWS global condition context keys](https://docs.aws.amazon.com//IAM/latest/UserGuide/reference_policies_condition-keys.html).
+S3 Tables supports [AWS global condition context keys](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html).
 
 Additionally, S3 Tables defines the following condition keys that you can use in an access policy.
 

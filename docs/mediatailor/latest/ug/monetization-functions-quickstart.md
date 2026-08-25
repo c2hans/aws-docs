@@ -72,7 +72,7 @@ Map the function to a lifecycle hook on your playback configuration. The mapping
 
 1. Choose **Save**.
 
-This attaches `myFirstFunction` to the [PRE\_SESSION\_INITIALIZATION](monetization-functions-hooks-pre-session.md) lifecycle hook. The resulting function mapping is:
+This attaches `myFirstFunction` to the [Pre-session initialization](monetization-functions-hooks-pre-session.md) lifecycle hook. The resulting function mapping is:
 
 ```
 {

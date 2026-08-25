@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon API Gateway Management provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="apigateway-GetAccount"></a>[GetAccount](https://docs.aws.amazon.com/apigateway/latest/api/API_Operations.html) | Read a particular resource | Read |

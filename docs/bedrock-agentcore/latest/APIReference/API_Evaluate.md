@@ -39,7 +39,8 @@ The request uses the following URI parameters.
 
  ** [evaluatorId](#API_Evaluate_RequestSyntax) **   <a name="BedrockAgentCore-Evaluate-request-uri-evaluatorId"></a>
  The unique identifier of the evaluator to use for scoring. Can be a built-in evaluator (e.g., `Builtin.Helpfulness`, `Builtin.Correctness`) or a custom evaluator Id created through the control plane API.
-Pattern: `(Builtin.[a-zA-Z0-9_-]+|[a-zA-Z][a-zA-Z0-9-_]{0,99}-[a-zA-Z0-9]{10})`
+Length Constraints: Minimum length of 1. Maximum length of 111.
+Pattern: `(Builtin\.[a-zA-Z0-9._-]+|ThirdParty\.[a-zA-Z0-9_-]+\.[a-zA-Z0-9_-]+|[a-zA-Z][a-zA-Z0-9-_]{0,99}-[a-zA-Z0-9]{10})`
 Required: Yes
 
 ## Request Body

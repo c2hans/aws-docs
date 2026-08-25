@@ -13,9 +13,9 @@ By default a queue can contain up to your [service quota](amazon-connect-service
 
 To increase one of these quotas, you must request a quota increase. For more information, see [Connect Customer service quotas](amazon-connect-service-limits.md).
 
-There may be situations where you want a specific queue to allow fewer contacts than the allowed quota. For example:
-+ You have a queue that is dedicated to calls about complicated issues that take an average of 15 minutes to resolve, you may want to limit the number of calls allowed in the queue to be less than **Concurrent active calls per instance**. This prevents customers from waiting for hours.
-+ You may have a queue dedicated to chats. Your service quota is 100 but you want only up to 20 chats at a time. You can set that value so Connect Customer limits the number of active chats routed to that queue.
+There might be situations where you want a specific queue to allow fewer contacts than the allowed quota. For example:
++ You have a queue that is dedicated to calls about complicated issues that take an average of 15 minutes to resolve, you might want to limit the number of calls allowed in the queue to be less than **Concurrent active calls per instance**. This prevents customers from waiting for hours.
++ You might have a queue dedicated to chats. Your service quota is 100 but you want only up to 20 chats at a time. You can set that value so Connect Customer limits the number of active chats routed to that queue.
 + You have a queue that combines more than one channel, and you set a custom value. Note that the queue stops accepting new contacts after that number is reached, regardless of the distribution of contacts. For example, if you set the value to 50, and the first 50 contacts are chats, then voice calls are not routed to this queue.
 
 This topic explains how to reduce the allowed number of contacts in a queue for these situations.
@@ -57,7 +57,7 @@ If you set **Maximum contacts in queue** to 0 it renders the queue unusable. The
 <a name="max-queue-additional-details"></a>
 
 There are times when you can add more contacts to a queue than the set **Maximum contacts in queue** limit.
-+ There may be a slight delay between the time that a queue reaches its capacity limit and when this limit is enforced in the flow. This delay could cause incoming contacts to be queued during that time, particularly during bursts of traffic.
++ There might be a slight delay between the time that a queue reaches its capacity limit and when this limit is enforced in the flow. This delay could cause incoming contacts to be queued during that time, particularly during bursts of traffic.
 
 Additionally, Connect Customer includes a 20 percent buffer to the queue capacity for the following exceptional scenarios:
 + A contact was transformed into a Queued Callback, scheduled to be added to the queue at X time using the **Initial delay** setting in the flow. However, when the scheduled time arrived, the target queue had reached its **Maximum capacity in queue** limit. In this scenario, Connect Customer allows the Queued Callback to be enqueued up to a 20 percent buffer of the **Maximum capacity in queue** limit for the queue.

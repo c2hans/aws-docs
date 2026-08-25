@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon Q Business provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="qbusiness-Chat"></a>[Chat](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Chat.html) | Chat using an application | Read |

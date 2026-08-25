@@ -227,9 +227,10 @@ For more information, see [Create Amazon EBS snapshots](ebs-creating-snapshot.md
 
 You can create Amazon Machine Images (AMIs) using a combination of local snapshots and snapshots that are stored in the Region of the Outpost. For example, if you have an Outpost in `us-east-1`, you can create an AMI with data volumes that are backed by local snapshots on that Outpost, and a root volume that is backed by a snapshot in the `us-east-1` Region.
 
+You can also create an AMI directly from an instance on an Outpost that supports local snapshots. The backing snapshots created for the AMI can be stored on the same Outpost as the instance or in its parent Region.
+
 **Note**
 You can't create AMIs that include backing snapshots stored across multiple Outposts.
-You can’t currently create AMIs directly from instances on an Outpost using **CreateImage** API or the Amazon EC2 console for an Outpost.
 AMIs that are backed by local snapshots can be used to launch instances on the same Outpost only.
 
 **To create an AMI on an Outpost from snapshots in a Region**
@@ -238,17 +239,33 @@ AMIs that are backed by local snapshots can be used to launch instances on the s
 
 1. Use the Amazon EC2 console or the [ register-image](https://docs.aws.amazon.com/cli/latest/reference/ec2/register-image.html) command to create the AMI using the snapshot copies on the Outpost. For more information, see [ Creating an AMI from a snapshot](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/creating-an-ami-ebs.html#creating-launching-ami-from-snapshot).
 
-**To create an AMI on an Outpost from an instance on an Outpost**
+**To create an AMI directly from an instance on an Outpost**
+Use the [create-image](https://docs.aws.amazon.com/cli/latest/reference/ec2/create-image.html) command with the `--snapshot-location` parameter to control where the backing snapshots are stored:
++ To store snapshots locally on the same Outpost as the instance, specify `local`.
++ To store snapshots in the parent Region of the Outpost, specify `regional`.
 
-1. Create snapshots from the instance on the Outpost and store the snapshots on the Outpost. For more information, see [Create Amazon EBS snapshots](ebs-creating-snapshot.md).
+If the source instance is on an Outpost that supports local snapshots, the `--snapshot-location` parameter is required. If you omit it, the request fails with an `InvalidParameterValue` error.
 
-1. Use the Amazon EC2 console or the [ register-image](https://docs.aws.amazon.com/cli/latest/reference/ec2/register-image.html) command to create the AMI using the local snapshots. For more information, see [ Creating an AMI from a snapshot](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/creating-an-ami-ebs.html#creating-launching-ami-from-snapshot).
+The following example creates an AMI and stores the backing snapshots on the same Outpost as the instance.
+
+```
+aws ec2 create-image \
+    --instance-id {{i-1234567890abcdef0}} \
+    --name "My Outpost image" \
+    --snapshot-location local
+```
 
 **To create an AMI in a Region from an instance on an Outpost**
+Use the [create-image](https://docs.aws.amazon.com/cli/latest/reference/ec2/create-image.html) command and specify `regional` for the `--snapshot-location` parameter.
 
-1. Create snapshots from the instance on the Outpost and store the snapshots in the Region. For more information, see [Create local snapshots from volumes on an Outpost](#create-snapshot) or [Create Amazon EBS snapshots](ebs-creating-snapshot.md).
+The following example creates an AMI and stores the backing snapshots in the parent Region of the Outpost.
 
-1. Use the Amazon EC2 console or the [ register-image](https://docs.aws.amazon.com/cli/latest/reference/ec2/register-image.html) command to create the AMI using the snapshot copies in the Region. For more information, see [ Creating an AMI from a snapshot](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/creating-an-ami-ebs.html#creating-launching-ami-from-snapshot).
+```
+aws ec2 create-image \
+    --instance-id {{i-1234567890abcdef0}} \
+    --name "My Regional image" \
+    --snapshot-location regional
+```
 
 ### Copy snapshots from an AWS Region to an Outpost
 <a name="copy-snapshots"></a>

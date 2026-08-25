@@ -26,7 +26,7 @@ When a voice call is placed to a Connect Customer instance, the telephony layer 
 
 The Connect Customer interface layer is the access point that your agents and contact center supervisors and administrators will use to access Connect Customer components like reporting and metrics, user configuration, call recordings, and the Contact Control Panel (CCP). This is also the layer responsible for:
 + Single Sign-On (SSO) integration user authentication
-+ Custom desktop applications created using the [Connect Customer Streams](https://github.com/aws/amazon-connect-streams) API that may provide additional functionality and/or integrate with existing Customer Relationship Management (CRM) systems including the [Connect Customer Salesforce CTI Adapter](salesforce-integration.md).
++ Custom desktop applications created using the [Connect Customer Streams](https://github.com/aws/amazon-connect-streams) API that might provide additional functionality or integrate with existing Customer Relationship Management (CRM) systems including the [Connect Customer Salesforce CTI Adapter](salesforce-integration.md).
 + Connect Customer contact-facing chat interface
 + Chat web server hosting the Connect Customer Chat API
 + Any Amazon API Gateway endpoints and corresponding AWS Lambda functions necessary to route chat contacts to Connect Customer.

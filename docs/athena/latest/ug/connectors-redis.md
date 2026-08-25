@@ -65,8 +65,6 @@ The Redis OSS connector supports the following data types. Redis OSS streams are
 
 All Redis OSS values are retrieved as the `string` data type. Then they are converted to one of the following Apache Arrow data types based on how your tables are defined in the AWS Glue Data Catalog.
 
-****
-
 | AWS Glue data type | Apache Arrow data type |
 | --- | --- |
 | int | INT |

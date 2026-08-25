@@ -24,16 +24,14 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/IAM_
 
  These resources have unique Amazon Resource Names (ARNs) associated with them as shown in the following table.
 
-****
-
 | **Resource Type**  |  **ARN Format**  |
 | --- | --- |
 | Directory | `arn:aws:ds:{{region}}:{{account-id}}:directory/{{external-directory-id}}` |
 | Snapshot | `arn:aws:ds:{{region}}:{{account-id}}:snapshot/{{external-snapshot-id}}` |
 
  Directory Service includes two service namespaces based on the type of operations that you perform.
-+ The `ds` service namespace provides a set of operations to work with the appropriate resources. For a list of available operations, see [Directory Service Actions](https://docs.aws.amazon.com//directoryservice/latest/devguide/API_Operations.html).
-+  The `ds-data` service namespace provides a set of operations to Active Directory objects. For a list of available operations, see [Directory Service Data API Reference](https://docs.aws.amazon.com//directoryservicedata/latest/DirectoryServiceDataAPIReference/Welcome.html).
++ The `ds` service namespace provides a set of operations to work with the appropriate resources. For a list of available operations, see [Directory Service Actions](https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Operations.html).
++  The `ds-data` service namespace provides a set of operations to Active Directory objects. For a list of available operations, see [Directory Service Data API Reference](https://docs.aws.amazon.com/directoryservicedata/latest/DirectoryServiceDataAPIReference/Welcome.html).
 
 ## Understanding resource ownership
 <a name="IAM_Auth_Access_ResourceOwner"></a>

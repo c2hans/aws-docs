@@ -26,7 +26,7 @@ When the new IAM role is created, the required trust policy with the necessary p
 
 You need to add a permissions policy, which grants ability to connect with Amazon Q and utilize the features in the GitLab Duo with Amazon Q integration. The policy must be added when creating the IAM role. To learn more about the permissions provided by the permissions policy, see [GitLabDuoWithAmazonQPermissionsPolicy](managed-policy.md#amazonq-policy-GitLabDuoWithAmazonQPermissionsPolicy).
 
-Alternatively, you can create an inline policy and add the required permissions. You can choose to create an inline policy if you want to custom access control. For more information, see [Managed policies and inline policies](https://docs.aws.amazon.com//IAM/latest/UserGuide/access_policies_managed-vs-inline.html) and [Policies and permissions in AWS Identity and Access Management](https://docs.aws.amazon.com//IAM/latest/UserGuide/access_policies.html) in the *IAM User Guide*.
+Alternatively, you can create an inline policy and add the required permissions. You can choose to create an inline policy if you want to custom access control. For more information, see [Managed policies and inline policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html) and [Policies and permissions in AWS Identity and Access Management](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html) in the *IAM User Guide*.
 
 **Trust policy**
 

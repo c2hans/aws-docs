@@ -9,8 +9,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/complia
 
 To get started with Compliance, complete the following tasks.
 
-****
-
 | Task | For more information |
 | --- | --- |
 | Compliance works with patch data in Patch Manager and associations in State Manager. (Patch Manager and State Manager are also both tools in AWS Systems Manager.) Compliance also works with custom compliance types on managed nodes that are managed using Systems Manager. Verify that you have completed the setup requirements for your Amazon Elastic Compute Cloud (Amazon EC2) instances and non-EC2 machines in a [hybrid and multicloud](operating-systems-and-machine-types.md#supported-machine-types) environment. | [Setting up Systems Manager unified console for an organization](systems-manager-setting-up-organizations.md) |

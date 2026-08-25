@@ -224,8 +224,6 @@ This example assumes that your AWS credentials are configured in your environmen
   *Allowed values*: `RESUME`, `NEW`, `AUTO`.
 
   *Default value*: `AUTO`
-
-****
   + `RESUME`   –   In RESUME mode, the loader looks for a previous load from this source, and if it finds one, resumes that load job. If no previous load job is found, the loader stops.
 
     The loader avoids reloading files that were successfully loaded in a previous job. It only tries to process failed files. If you dropped previously loaded data from your Neptune cluster, that data is not reloaded in this mode. If a previous load job loaded all files from the same source successfully, nothing is reloaded, and the loader returns success.
@@ -239,7 +237,7 @@ This example assumes that your AWS credentials are configured in your environmen
 
   *Default value*: `"FALSE"`.
 
-   When this parameter is set to "FALSE", the loader automatically loads vertex files first, then edge files afterwards. It does this by first scanning all files to determine their contents (vertices or edges). When this parameter is set to "TRUE", the loader skips the initial scanning phase and immediately loads all files in the order they appear. For more information see [bulk load optimize](https://docs.aws.amazon.com//neptune/latest/userguide/bulk-load-optimize.html).
+   When this parameter is set to "FALSE", the loader automatically loads vertex files first, then edge files afterwards. It does this by first scanning all files to determine their contents (vertices or edges). When this parameter is set to "TRUE", the loader skips the initial scanning phase and immediately loads all files in the order they appear. For more information see [bulk load optimize](https://docs.aws.amazon.com/neptune/latest/userguide/bulk-load-optimize.html).
 + **`failOnError`**   –   A flag to toggle a complete stop on an error.
 
   *Allowed values*: `"TRUE"`, `"FALSE"`.

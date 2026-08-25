@@ -99,7 +99,7 @@ aws iot get-thing-connectivity-data --include-socket-information --thing-name my
 **Response Fields**
 + `thingName`: The name of the device registered in AWS IoT Registry. This must match the `clientId` used to connect to AWS IoT Core.
 + `connected`: The boolean value true indicating this device is currently connected.
-+ `disconnectReason`: Reason for disconnect. Will be `NONE` for a connected device and `UNKNOWN` for a device which has never been connected. For a disconnected device, this will indicate if the disconnection was client initiated, server initiated, due to authentication/authorization issues or due to network issues. For disconnect reason codes, see [LifeCycleEvents ](https://docs.aws.amazon.com//iot/latest/developerguide/life-cycle-events.html)
++ `disconnectReason`: Reason for disconnect. Will be `NONE` for a connected device and `UNKNOWN` for a device which has never been connected. For a disconnected device, this will indicate if the disconnection was client initiated, server initiated, due to authentication/authorization issues or due to network issues. For disconnect reason codes, see [LifeCycleEvents ](https://docs.aws.amazon.com/iot/latest/developerguide/life-cycle-events.html)
 + `timestamp`: The timestamp representing the device’s most recent connect or disconnect event.
 + `clientId`: The clientId of the MQTT client.
 + `keepAliveDuration`: The keep-alive interval in seconds that the client specified when establishing the connection. This determines how frequently the client sends keep-alive messages to maintain the connection.

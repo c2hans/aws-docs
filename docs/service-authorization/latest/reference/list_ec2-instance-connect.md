@@ -24,8 +24,6 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_ec2-instance-connect-actions-as-permissions).
 
-****
-
 - **   SendSSHPublicKey  **
   - **IAM action:**  [ec2-instance-connect:SendSSHPublicKey](#list_ec2-instance-connect-action-SendSSHPublicKey)
   - **Condition key:**
@@ -42,8 +40,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
 <a name="list_ec2-instance-connect-actions-as-permissions"></a>
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
-
-****
 
 - **   [OpenTunnel](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/permissions-for-ec2-instance-connect-endpoint.html#iam-OpenTunnel)  **
   - **Description:** Grants permission to establish SSH connection to an EC2 instance using EC2 Instance Connect Endpoint
@@ -68,8 +64,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
 
-****
-
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
 |  [instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-policy-structure.html#EC2_ARN_Format)  | arn:${Partition}:ec2:${Region}:${Account}:instance/${InstanceId} | [aws:ResourceTag/${TagKey}](#list_ec2-instance-connect-aws_ResourceTag___TagKey_)<br />[ec2:ResourceTag/${TagKey}](#list_ec2-instance-connect-ec2_ResourceTag___TagKey_) |
@@ -79,8 +73,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_ec2-instance-connect-policy-keys"></a>
 
 Amazon EC2 Instance Connect defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

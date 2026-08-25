@@ -14,8 +14,6 @@ Use to request manual creation of a resource.
 ## Change Type Details
 <a name="ct-1e1xtak34nx76-MOOc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1e1xtak34nx76 |

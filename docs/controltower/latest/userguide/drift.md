@@ -23,7 +23,7 @@ When the auto-enroll capability for accounts is enabled in **Settings**, these S
 
 For controls that are part of the AWS Security Hub CSPM **Service-Managed Standard: AWS Control Tower**, drift is shown on the **Account** and **Account details** pages in the AWS Control Tower console, as well as by means of an Amazon SNS notification.
 
-Member account administrators can (and as a best practice, they should) subscribe to the SNS drift notifications for specific accounts. For example, the `aws-controltower-AggregateSecurityNotifications` SNS topic provides drift notifications. The AWS Control Tower console indicates to management account administrators when drift has occurred. For more information about SNS topics for drift detection and notification, see [Drift prevention and notification](https://docs.aws.amazon.com//controltower/latest/userguide/prevention-and-notification.html).
+Member account administrators can (and as a best practice, they should) subscribe to the SNS drift notifications for specific accounts. For example, the `aws-controltower-AggregateSecurityNotifications` SNS topic provides drift notifications. The AWS Control Tower console indicates to management account administrators when drift has occurred. For more information about SNS topics for drift detection and notification, see [Drift prevention and notification](https://docs.aws.amazon.com/controltower/latest/userguide/prevention-and-notification.html).
 
 **Drift notification de-duplication**
 
@@ -90,7 +90,7 @@ As a best practice, do not move these shared accounts out of the Foundational OU
 
 Here's a list of changes to AWS Control Tower resources that are permitted, although they create *resolvable drift*. Results of these permitted operations are viewable in the AWS Control Tower console, although a refresh may be required.
 
-For more information about how to resolve the resulting drift, see [Managing Resources Outside of AWS Control Tower](https://docs.aws.amazon.com//controltower/latest/userguide/external-resources.html).
+For more information about how to resolve the resulting drift, see [Managing Resources Outside of AWS Control Tower](https://docs.aws.amazon.com/controltower/latest/userguide/external-resources.html).
 
 **Changes permitted outside the AWS Control Tower console**
 + Change the name of a registered OU.

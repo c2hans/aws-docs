@@ -14,8 +14,6 @@ Delete Elastic Block Store (EBS) volumes in an available state. Volumes that are
 ## Change Type Details
 <a name="ct-3e3h8u0sp5z80-MAEd-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-3e3h8u0sp5z80 |

@@ -32,6 +32,7 @@ You can also open the context menu on a job, step, or task and choose **Browse a
 The attachments browser displays files in an expandable tree structure organized by their original file paths. Use the following controls to navigate:
 + **Segment control** – Switch between viewing **All**, **Output**, or **Input** files.
 + **Text filter** – Filter the file list by name to find specific files.
++ **Previewable files only** – Turn on the **Previewable files only** toggle to show only files that support inline preview. Use this toggle when a folder mixes previewable files, such as JPG images, with formats that don't support preview, such as EXR images. Stepping through previews then skips the files without one.
 + **Folder expansion** – Choose a folder to expand or collapse its contents.
 
 ## Downloading files

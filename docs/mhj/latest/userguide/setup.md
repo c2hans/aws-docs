@@ -11,8 +11,6 @@ To learn about Migration Hub Journeys, we recommend that you first read [What is
 
 Migration Hub Journeys is available in the following AWS Regions:
 
-****
-
 | Region | Console URL |
 | --- | --- |
 | US East (N. Virginia) |  [https://prod.us-east-1.console.migrationhub.aws/journeys-landing](https://prod.us-east-1.console.migrationhub.aws/journeys-landing)  |

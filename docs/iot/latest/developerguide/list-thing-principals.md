@@ -23,4 +23,4 @@ The output can look like the following.
 }
 ```
 
-For more information, see [ListThingPrincipals](https://docs.aws.amazon.com//iot/latest/apireference/API_ListThingPrincipals.html) from the *AWS IoT Core API Reference*.
+For more information, see [ListThingPrincipals](https://docs.aws.amazon.com/iot/latest/apireference/API_ListThingPrincipals.html) from the *AWS IoT Core API Reference*.

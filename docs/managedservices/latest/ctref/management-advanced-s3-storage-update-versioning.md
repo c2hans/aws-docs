@@ -14,8 +14,6 @@ Change S3 bucket versioning setting through direct API calls. The S3 bucket can 
 ## Change Type Details
 <a name="ct-2hh93eyzmwbkd-MASu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2hh93eyzmwbkd |

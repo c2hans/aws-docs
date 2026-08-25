@@ -81,7 +81,7 @@ Include `SNAPSHOT` to restore only snapshot recovery points; include `CONTINUOUS
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SelectionWindowDays`  <a name="cfn-backup-restoretestingplan-restoretestingrecoverypointselection-selectionwindowdays"></a>
-Accepted values are integers from 1 to 365.
+Accepted values are integers from 1 to 365. If not included, the value defaults to 30. The selection window is calculated from the actual job execution time, not the plan's scheduled start time.
 *Required*: No
 *Type*: Integer
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

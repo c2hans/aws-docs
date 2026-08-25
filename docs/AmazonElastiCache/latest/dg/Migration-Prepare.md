@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/Migration-Pr
 
 With these steps you can prepare to migrate your data from a self-hosted Valkey or Redis source on EC2 to ElastiCache.
 
-This refers to migration from a self-hosted instance to the ElastiCache service. For information on upgrading from Redis OSS to Valkey on ElastiCache see [Upgrading engine versions including cross engine upgradesUpgrading engine versions](VersionManagement.HowTo.md).
+This refers to migration from a self-hosted instance to the ElastiCache service. For information on upgrading from Redis OSS to Valkey on ElastiCache see [Upgrading engine versions including cross engine upgrades](VersionManagement.HowTo.md).
 
 You must ensure that all four of the prerequisites mentioned following are satisfied before you start the migration from ElastiCache console, API or AWS CLI.
 

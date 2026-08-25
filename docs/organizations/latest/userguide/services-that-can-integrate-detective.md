@@ -11,7 +11,7 @@ Using AWS Organizations allows you to ensure that your Detective behavior graph 
 
 When you grant trusted access to Detective, the Detective service can react automatically to changes in the organization membership. The delegated administrator can enable any organization account as a member account in the behavior graph. Detective also can automatically enable new organization accounts as member accounts. Organization accounts cannot disassociate themselves from the behavior graph.
 
-For more information, see [Using Amazon Detective in your organization](https://docs.aws.amazon.com//detective/latest/adminguide/accounts-orgs-transition.html) in the *Amazon Detective Administration Guide*.
+For more information, see [Using Amazon Detective in your organization](https://docs.aws.amazon.com/detective/latest/adminguide/accounts-orgs-transition.html) in the *Amazon Detective Administration Guide*.
 
 Use the following information to help you integrate Amazon Detective with AWS Organizations.
 
@@ -94,7 +94,7 @@ You can disable trusted access by using the AWS Organizations console.
 ## Enabling a delegated administrator account for Detective
 <a name="integrate-enable-da-detective"></a>
 
-The delegated administrator account for Detective is the administrator account for a Detective behavior graph. The delegated administrator determines which organization accounts to enable and disable as member accounts in that behavior graph. The delegated administrator can configure Detective to automatically enable new organization accounts as member accounts as they are added to the organization. For information on how a delegated administrator manages organization accounts, see [Managing organization accounts as member accounts](https://docs.aws.amazon.com//detective/latest/adminguide/accounts-orgs-members.html) in the *Amazon Detective Administration Guide*.
+The delegated administrator account for Detective is the administrator account for a Detective behavior graph. The delegated administrator determines which organization accounts to enable and disable as member accounts in that behavior graph. The delegated administrator can configure Detective to automatically enable new organization accounts as member accounts as they are added to the organization. For information on how a delegated administrator manages organization accounts, see [Managing organization accounts as member accounts](https://docs.aws.amazon.com/detective/latest/adminguide/accounts-orgs-members.html) in the *Amazon Detective Administration Guide*.
 
 Only an administrator in the organization management account can configure a delegated administrator for Detective.
 
@@ -103,7 +103,7 @@ You can specify a delegated administrator account from the Detective console or 
 **Minimum permissions**
 Only a user or role in the Organizations management account can configure a member account as a delegated administrator for Detective in the organization
 
-To configure a delegated administrator using the Detective console or API, see [Designating a Detective administrator account for an organization](https://docs.aws.amazon.com//detective/latest/adminguide/accounts-designate-admin.html) in the *Amazon Detective Administration Guide*.
+To configure a delegated administrator using the Detective console or API, see [Designating a Detective administrator account for an organization](https://docs.aws.amazon.com/detective/latest/adminguide/accounts-designate-admin.html) in the *Amazon Detective Administration Guide*.
 
 ------
 #### [ AWS CLI, AWS API ]
@@ -123,4 +123,4 @@ If you want to configure a delegated administrator account using the AWS CLI or 
 ## Disabling a delegated administrator for Detective
 <a name="integrate-disable-da-detective"></a>
 
-You can remove the delegated administrator using either the Detective console or API, or by using the Organizations `DeregisterDelegatedAdministrator` CLI or SDK operation. For information on how to remove a delegated administrator using the Detective console or API, or the Organizations API, see [Designating a Detective administrator account for an organization](https://docs.aws.amazon.com//detective/latest/adminguide/accounts-designate-admin.html) in the *Amazon Detective Administration Guide*.
+You can remove the delegated administrator using either the Detective console or API, or by using the Organizations `DeregisterDelegatedAdministrator` CLI or SDK operation. For information on how to remove a delegated administrator using the Detective console or API, or the Organizations API, see [Designating a Detective administrator account for an organization](https://docs.aws.amazon.com/detective/latest/adminguide/accounts-designate-admin.html) in the *Amazon Detective Administration Guide*.

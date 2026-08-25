@@ -131,7 +131,7 @@ For more complex issues, you can use these troubleshooting approaches:
 
 1. Test with a simple player that supports detailed logging
 
-For more troubleshooting assistance, see the [Troubleshooting](https://docs.aws.amazon.com//mediatailor/latest/ug/troubleshooting.html) section in the MediaTailor user guide.
+For more troubleshooting assistance, see the [Troubleshooting](https://docs.aws.amazon.com/mediatailor/latest/ug/troubleshooting.html) section in the MediaTailor user guide.
 
 ## Troubleshooting workflow
 <a name="troubleshooting-workflow"></a>

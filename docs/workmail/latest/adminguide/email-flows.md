@@ -34,8 +34,6 @@ Inbound email flow rules, also called rule actions, automatically apply to all e
 
 The following rule actions define how inbound email is handled. For each rule, you specify [sender and recipient patterns](#email-flows-patterns) together with one of the following actions.
 
-****
-
 | Action | Description |
 | --- | --- |
 | Drop email | The email message is ignored. It is not delivered, and the sender is not notified of the non-delivery. |
@@ -56,8 +54,6 @@ You use outbound email flow rules to direct email messages via SMTP gateways, or
 You can also use outbound email flow rules to pass the email message to an AWS Lambda function for processing after the email is sent. For more information about Lambda, see the [*AWS Lambda Developer Guide*](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html).
 
 The following rule actions define how outbound email is handled. For each rule, you specify [sender and recipient patterns](#email-flows-patterns) together with one of the following actions.
-
-****
 
 | Action | Description |
 | --- | --- |

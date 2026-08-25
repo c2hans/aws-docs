@@ -25,8 +25,6 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_s3tables-actions-as-permissions).
 
-****
-
 - **   CreateNamespace  **
   - **IAM action:**  [s3tables:CreateNamespace](#list_s3tables-action-CreateNamespace)
   - **Condition key:**
@@ -322,8 +320,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
 <a name="list_s3tables-actions-as-permissions"></a>
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
-
-****
 
 - **   [CreateNamespace](https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_CreateNamespace.html)  **
   - **Description:** Grants permission to create a namespace
@@ -630,8 +626,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 The following actions are defined by Amazon S3 Tables but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 - **   [GetTableData](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-setting-up.html#s3-tables-actions)  **
   - **Description:** Grants permission to read metadata and data objects from a table storage endpoint using S3 APIs
   - **Resource types (\*required):** [Table\*](#list_s3tables-resource-Table)
@@ -655,8 +649,6 @@ The following actions are defined by Amazon S3 Tables but are not directly invoc
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
 
-****
-
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
 |  [Table](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-tables.html)  | arn:${Partition}:s3tables:${Region}:${Account}:bucket/${TableBucketName}/table/${TableID} | [aws:ResourceTag/${TagKey}](#list_s3tables-aws_ResourceTag___TagKey_)<br />[s3tables:TableBucketTag/${TagKey}](#list_s3tables-s3tables_TableBucketTag___TagKey_)<br />[s3tables:namespace](#list_s3tables-s3tables_namespace)<br />[s3tables:tableName](#list_s3tables-s3tables_tableName) |
@@ -666,8 +658,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_s3tables-policy-keys"></a>
 
 Amazon S3 Tables defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

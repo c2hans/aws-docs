@@ -9,8 +9,6 @@ You can use NetApp ONTAP's Events Management System (EMS) to monitor events rela
 
 The following table contains all of the alerts related to ARP. For more information about EMS, see [Monitoring FSx for ONTAP EMS events](ems-events.md).
 
-****
-
 | EMS message name | EMS message description |
 | --- | --- |
 | `arw.analytics.ext.report` | This message occurs when anti-ransomware analytics generate or update the **suspicious file extensions** report for a volume. |

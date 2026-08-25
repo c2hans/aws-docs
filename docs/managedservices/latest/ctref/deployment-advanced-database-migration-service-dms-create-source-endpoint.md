@@ -14,8 +14,6 @@ Use to create a Database Migration Service (DMS) source endpoint.
 ## Change Type Details
 <a name="ct-0attesnjqy2cx-DADc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-0attesnjqy2cx |

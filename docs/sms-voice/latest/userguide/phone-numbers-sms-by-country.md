@@ -24,8 +24,6 @@ Before you can use two-way SMS messaging to receive messages, you have to obtain
 **Note**
 You can purchase long codes for some countries directly through the AWS End User Messaging SMS console. The long codes that you purchase through the console are intended for use with the voice channel. However, if you purchase a long code that is based in the United States (including Puerto Rico) or Canada, you can also use it to send SMS messages.
 
-****
-
 <table>
 <thead>
   <tr><th>Country or region</th><th>ISO code</th><th>Dialing code</th><th>Supports short codes</th><th>Supports long codes</th><th>Supports Sender IDs</th><th>Supports two-way SMS</th><th>International sending<a href="#sms-support-note-10">10</a></th></tr>

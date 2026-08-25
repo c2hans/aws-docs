@@ -19,7 +19,7 @@ Amazon Monitron is no longer open to new customers. Existing customers can conti
 
 1. Open AWS CloudShell
 
-   [AWS CloudShell](https://docs.aws.amazon.com//cloudshell/latest/userguide/welcome.html) is a command-line environment that operates inside your browser. Inside AWS CloudShell, you can use the AWS Command Line Interface to launch and configure many AWS services.
+   [AWS CloudShell](https://docs.aws.amazon.com/cloudshell/latest/userguide/welcome.html) is a command-line environment that operates inside your browser. Inside AWS CloudShell, you can use the AWS Command Line Interface to launch and configure many AWS services.
 
 1. In AWS CloudShell, enter the following command, where bucketname is the name of the bucket you are creating:
 
@@ -27,11 +27,11 @@ Amazon Monitron is no longer open to new customers. Existing customers can conti
    $ aws s3api create-bucket --bucket bucketname --region us-east-1
    ```
 
-   This command creates an Amazon S3 bucket to store your raw data. You will be able to easily access your bucket from the console, and download your data at your convenience. For more information, see [Creating, configuring, and working with Amazon S3 buckets](https://docs.aws.amazon.com//AmazonS3/latest/userguide/creating-buckets-s3.html).
+   This command creates an Amazon S3 bucket to store your raw data. You will be able to easily access your bucket from the console, and download your data at your convenience. For more information, see [Creating, configuring, and working with Amazon S3 buckets](https://docs.aws.amazon.com/AmazonS3/latest/userguide/creating-buckets-s3.html).
 **Important**
 You are responsible for taking the appropriate steps to secure your data. We strongly recommend using server-side encryption and blocking public access to your bucket.
 
-   In the command above, the bucket is created in the US East (N. Virginia) Region. You can optionally specify a different Region in the request body. For more information, see [Regions, Availability Zones, and Local Zones](https://docs.aws.amazon.com//AmazonRDS/latest/UserGuide/Concepts.RegionsAndAvailabilityZones.html).
+   In the command above, the bucket is created in the US East (N. Virginia) Region. You can optionally specify a different Region in the request body. For more information, see [Regions, Availability Zones, and Local Zones](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RegionsAndAvailabilityZones.html).
 
    You should see output that looks something like this:
 
@@ -39,7 +39,7 @@ You are responsible for taking the appropriate steps to secure your data. We str
    { "Location": "/{{bucketname}}" }
    ```
 
-1. Identify the [Amazon Resource Name (ARN)](https://docs.aws.amazon.com//general/latest/gr/aws-arns-and-namespaces.html) of the bucket you created, which will be:
+1. Identify the [Amazon Resource Name (ARN)](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html) of the bucket you created, which will be:
 
    ```
    arn:aws:s3:::{{bucketname}}
@@ -50,7 +50,7 @@ You are responsible for taking the appropriate steps to secure your data. We str
 
 1. Paste the code below into a text editor, and save it as: monitron-assumes-role.json. Do not use Microsoft Word, which will add extra characters. Use a simple text editor like Notepad or TextEdit.
 
-   This policy gives Amazon Monitron permission to assume the role that will allow it to access your S3 bucket. For more information, see [ Policies and permissions in IAM.](https://docs.aws.amazon.com//IAM/latest/UserGuide/access_policies.html)
+   This policy gives Amazon Monitron permission to assume the role that will allow it to access your S3 bucket. For more information, see [ Policies and permissions in IAM.](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html)
 
 ------
 #### [ JSON ]
@@ -239,7 +239,7 @@ You are responsible for taking the appropriate steps to secure your data. We str
 
     Now you have created and provisioned an Amazon S3 bucket, a role that Amazon Monitron can assume, a policy that will allow Amazon Monitron to assume that role, and another policy that will allow the service using that role to use your Amazon S3 bucket.
 
-   You are responsible for taking the appropriate steps to secure your data. We strongly recommend using server-side encryption and blocking public access to your bucket. For more information, see [ Blocking public access](https://docs.aws.amazon.com//AmazonS3/latest/userguide/access-control-block-public-access.html).
+   You are responsible for taking the appropriate steps to secure your data. We strongly recommend using server-side encryption and blocking public access to your bucket. For more information, see [ Blocking public access](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-control-block-public-access.html).
 
 ## Step 3: Creating your support ticket
 <a name="create-support-ticket"></a>

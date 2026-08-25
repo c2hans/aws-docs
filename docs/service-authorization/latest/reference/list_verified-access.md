@@ -29,8 +29,6 @@ AWS Verified Access has no API operations that can be used in the `Actions` elem
 
 The following actions are defined by AWS Verified Access but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 | Actions | Description | Resource types (\*required) | Condition keys | Access level |
 | --- | --- | --- | --- | --- |
 |   [AllowVerifiedAccess](https://docs.aws.amazon.com/verified-access/latest/ug/security_iam_id-based-policy-examples.html#security_iam_id-based-policy-examples-create-instance)  | Grants permission to create Verified Access Instance |  |   | Write |

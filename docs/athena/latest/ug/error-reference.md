@@ -12,8 +12,6 @@ Athena provides standardized error information to help you understand failed que
 
 The following table lists the Athena error category values and their meanings.
 
-****
-
 | Error category | Source |
 | --- | --- |
 | 1 | SYSTEM |
@@ -24,8 +22,6 @@ The following table lists the Athena error category values and their meanings.
 <a name="error-reference-error-type-reference"></a>
 
 The following table lists the Athena error type values and their meanings.
-
-****
 
 | Error type | Description |
 | --- | --- |

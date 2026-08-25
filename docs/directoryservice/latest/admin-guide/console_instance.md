@@ -8,16 +8,16 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/cons
 This procedure launches an Amazon EC2 directory administration Windows instance in the AWS Management Console using AWS Systems Manager Automation to manage your directories. You can also accomplish this by running the automation [AWS-CreateDSManagementInstance](https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-awssupport-create-ds-management-instance.html) in the AWS Systems Manager Automation console directly.
 
 For more information, see the following links:
-+ [Simplifying Active Directory domain join with AWS Systems Manager](https://aws.amazon.com/blogs//modernizing-with-aws/simplifying-active-directory-domain-join-with-aws-systems-manager-2/)
++ [Simplifying Active Directory domain join with AWS Systems Manager](https://aws.amazon.com/blogs/modernizing-with-aws/simplifying-active-directory-domain-join-with-aws-systems-manager-2/)
 + [How do I use AWS Systems Manager to join a running EC2 Windows instances to my Directory Service domain?](https://repost.aws/knowledge-center/ec2-systems-manager-dx-domain)
 
 ## Prerequisites
 <a name="console_instance_prereqs"></a>
 
 The following prerequisites are required to complete this tutorial:
-+ You will need to set up AWS Systems Manager. For more information, see [Setting up AWS Systems Manager](https://docs.aws.amazon.com//systems-manager/latest/userguide/systems-manager-setting-up-console.html).
-+ You will need an [IAM instance profile role](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html) that allows Systems Manager and AWS Managed Microsoft AD.
-  + For more information on Systems Manager, see [Configure instance permissions required for Systems Manager](https://docs.aws.amazon.com//systems-manager/latest/userguide/setup-instance-permissions.html).
++ You will need to set up AWS Systems Manager. For more information, see [Setting up AWS Systems Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-setting-up-console.html).
++ You will need an [IAM instance profile role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html) that allows Systems Manager and AWS Managed Microsoft AD.
+  + For more information on Systems Manager, see [Configure instance permissions required for Systems Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/setup-instance-permissions.html).
   + The IAM instance role needs the following AWS managed policies so your EC2 directory administration Windows instance can domain join your AWS Managed Microsoft AD:
     + **`AmazonSSMManagedInstanceCore`**
     + **`AmazonSSMDirectoryServiceAccess`**

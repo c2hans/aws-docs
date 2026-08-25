@@ -170,7 +170,7 @@ This prevents a [cross-service confused deputy](cross-service-confused-deputy-pr
   + **Limits**: You can subscribe to up to two SNS topics per contact.
   + When you call [StartContactStreaming](https://docs.aws.amazon.com/connect/latest/APIReference/API_StartContactStreaming.html), you'll need to provide the Amazon Resource Name (ARN) of the SNS topic (see [Step 1: Create a standard SNS topic](#step1-chat-streaming)).
 
-    A single SNS topic ARN may be used across multiple AWS accounts, but it must be in the same Region as your Connect Customer instance. For example, if your topic ARN is in **us-east-1**, your Connect Customer instance must be in **us-east-1**.
+    A single SNS topic ARN might be used across multiple AWS accounts, but it must be in the same Region as your Connect Customer instance. For example, if your topic ARN is in **us-east-1**, your Connect Customer instance must be in **us-east-1**.
   + For initial chat messages that aren't received on the streaming endpoint, you can call the [GetTranscript](https://docs.aws.amazon.com/connect-participant/latest/APIReference/API_GetTranscript.html) API to receive the initial messages.
 
 ## Step 4: Create the participant connection
@@ -187,6 +187,6 @@ You are all set for working with the message streaming APIs.
 
 1. To verify it is working, check that messages are published to the SNS topic you created. You can do this using Amazon CloudWatch metrics. For instructions, see [Monitoring Amazon SNS topics using CloudWatch](https://docs.aws.amazon.com/sns/latest/dg/sns-monitoring-using-cloudwatch.html).
 
-1. Because SNS has [limited retention](https://aws.amazon.com/blogs//aws/sns-ttl-control/), we recommend that you set up [Amazon Simple Queue Service (Amazon SQS)](https://aws.amazon.com/sqs/) [Amazon Kinesis](https://aws.amazon.com/kinesis/), or another service to retain messages.
+1. Because SNS has [limited retention](https://aws.amazon.com/blogs/aws/sns-ttl-control/), we recommend that you set up [Amazon Simple Queue Service (Amazon SQS)](https://aws.amazon.com/sqs/) [Amazon Kinesis](https://aws.amazon.com/kinesis/), or another service to retain messages.
 
 1. Using [StopContactStreaming](https://docs.aws.amazon.com/connect/latest/APIReference/API_StopContactStreaming.html) is optional and not required if the chats are being [disconnected](disconnect-hang-up.md) through a contact flow, or if the customer disconnects the chat. However, `StopContactStreaming` provides the option to stop the message streaming on the SNS topic, even if the chat is active and ongoing.

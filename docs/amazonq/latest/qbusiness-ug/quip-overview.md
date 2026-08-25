@@ -9,8 +9,6 @@ Amazon Q Business is no longer open to new customers. For capabilities similar t
 
 The following table gives an overview of the Quip connector and its supported features.
 
-****
-
 - ****Security****
   - **Feature:** Authentication type / **Support:** Personal Access Token
   - **Feature:** Authentication credentials / **Support:** Quip token

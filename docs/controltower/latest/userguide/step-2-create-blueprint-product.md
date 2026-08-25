@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/step-2-cre
 # Step 2. Create the AWS Service Catalog product
 <a name="step-2-create-blueprint-product"></a>
 
-To create an AWS Service Catalog product, follow the steps at [Creating products](https://docs.aws.amazon.com//servicecatalog/latest/adminguide/productmgmt-cloudresource.html) in the *AWS Service Catalog Administrator Guide*. You'll add your account blueprint as a template when you create the AWS Service Catalog product.
+To create an AWS Service Catalog product, follow the steps at [Creating products](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/productmgmt-cloudresource.html) in the *AWS Service Catalog Administrator Guide*. You'll add your account blueprint as a template when you create the AWS Service Catalog product.
 
 **Important**
 As a result of HashiCorp's updated Terraform licensing, AWS Service Catalog changed support for *Terraform Open Source* products and provisioned products to a new product type, called *External*. To learn more about how this change effects AFC, including how to update your existing account blueprints to the External product type, review [Transition to External product type](af-customization-page.md#service-catalog-external-product-type).

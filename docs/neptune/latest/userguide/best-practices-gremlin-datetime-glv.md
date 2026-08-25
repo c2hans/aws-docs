@@ -26,7 +26,7 @@ import ( "time" )
 g.V('3').property('date', time.Now()).next();
 ```
 
-For a complete example for connecting to Neptune using Go, see [ Using a Go client to connect to a Neptune DB instance](https://docs.aws.amazon.com//neptune/latest/userguide/access-graph-gremlin-go.html).
+For a complete example for connecting to Neptune using Go, see [ Using a Go client to connect to a Neptune DB instance](https://docs.aws.amazon.com/neptune/latest/userguide/access-graph-gremlin-go.html).
 
 **Java**
 The following is a partial example in Java that creates a single property named '`date`' for the vertex with an ID of '`3`'. It sets the value to be a date generated using the Java `Date()` constructor.

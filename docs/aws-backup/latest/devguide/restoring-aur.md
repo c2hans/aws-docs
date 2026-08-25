@@ -39,6 +39,8 @@ If **Serverless** capacity type is selected, a **Capacity settings** pane appear
 1. In the **Log exports** pane, choose the log types to publish to Amazon CloudWatch Logs. The **IAM role** is already defined.
 
 1. In the **Restore role** pane, choose the IAM role that AWS Backup will assume for this restore.
+**Note**
+If role manager is enabled in your account, AWS Backup selects the default service role for you, and a **Customize** option is available. For more information, see [IAM role creation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html) in the *IAM User Guide*.
 
 1. After specifying all your settings, choose **Restore backup**.
 

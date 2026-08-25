@@ -13,7 +13,7 @@ You can use the MediaPackage console, MediaPackage API, or AWS CLI to edit an or
 
 **To edit an endpoint**
 
-1. Access the channel that the endpoint is associated with, as described in [Viewing channel details in AWS Elemental MediaPackageViewing channel details](channels-view.md).
+1. Access the channel that the endpoint is associated with, as described in [Viewing channel details in AWS Elemental MediaPackage](channels-view.md).
 
    The console shows all existing origin endpoints that are configured in MediaPackage.
 

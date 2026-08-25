@@ -47,7 +47,7 @@ Migration can only be performed between gateways of the same type. For example, 
 
 1. Shut down the existing S3 File Gateway by powering off the host virtual machine (VM) using its hypervisor controls.
 
-   For more information about shutting down an Amazon EC2 instance, see [Stop and start your instance](https://docs.aws.amazon.com//AWSEC2/latest/UserGuide/Stop_Start.html) in the *Amazon EC2 User Guide*.
+   For more information about shutting down an Amazon EC2 instance, see [Stop and start your instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Stop_Start.html) in the *Amazon EC2 User Guide*.
 
    For more information about shutting down a KVM, VMware, or Hyper-V VM, see your hypervisor documentation.
 
@@ -55,7 +55,7 @@ Migration can only be performed between gateways of the same type. For example, 
 **Note**
 Make a note of the root disk's volume ID, as well as the gateway ID associated with that root disk. You will need to detach this disk from the new Storage Gateway hypervisor in a later step.
 
-   If you are using an Amazon EC2 instance as the VM for your S3 File Gateway, see [Detach an Amazon EBS volume from a Windows instance](https://docs.aws.amazon.com//AWSEC2/latest/WindowsGuide/ebs-detaching-volume.html) or [Detach an Amazon EBS volume from a Linux instance](https://docs.aws.amazon.com//AWSEC2/latest/UserGuide/ebs-detaching-volume.html) in the *Amazon EC2 User Guide*.
+   If you are using an Amazon EC2 instance as the VM for your S3 File Gateway, see [Detach an Amazon EBS volume from a Windows instance](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/ebs-detaching-volume.html) or [Detach an Amazon EBS volume from a Linux instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-detaching-volume.html) in the *Amazon EC2 User Guide*.
 
    For information about detaching disks from a KVM, VMware, or Hyper-V VM, see the documentation for your hypervisor.
 
@@ -73,9 +73,9 @@ After downloading the VM, close the console wizard. Do not proceed with activati
 
    The default network configuration for the gateway is Dynamic Host Configuration Protocol (DHCP). With DHCP, your gateway is automatically assigned an IP address.
 
-   If you need to manually configure a static IP address for your gateway VM, see [Configuring network parameters](https://docs.aws.amazon.com//filegateway/latest/files3/appliance-configure-ip.html).
+   If you need to manually configure a static IP address for your gateway VM, see [Configuring network parameters](https://docs.aws.amazon.com/filegateway/latest/files3/appliance-configure-ip.html).
 
-   If your gateway VM must use a Socket Secure version 5 (SOCKS5) proxy to connect to the internet, see [Routing your gateway deployed on EC2 through an HTTP proxy](https://docs.aws.amazon.com//filegateway/latest/files3/ec2-local-console-fwg.html#EC2_MaintenanceRoutingProxy-fgw).
+   If your gateway VM must use a Socket Secure version 5 (SOCKS5) proxy to connect to the internet, see [Routing your gateway deployed on EC2 through an HTTP proxy](https://docs.aws.amazon.com/filegateway/latest/files3/ec2-local-console-fwg.html#EC2_MaintenanceRoutingProxy-fgw).
 **Note**
 You can reuse the same static IP address or hostname from the old gateway VM to avoid reconfiguring NFS or SMB clients.
 
@@ -113,7 +113,7 @@ To migrate successfully, all disks must remain unchanged. Changing the disk size
 
 1. Start the new Storage Gateway VM.
 
-1. If your gateway was joined to an Active Directory domain, re-join the domain. For instructions, see [Using Active Directory to authenticate users](https://docs.aws.amazon.com//filegateway/latest/files3/enable-ad-settings.html).
+1. If your gateway was joined to an Active Directory domain, re-join the domain. For instructions, see [Using Active Directory to authenticate users](https://docs.aws.amazon.com/filegateway/latest/files3/enable-ad-settings.html).
 **Note**
 You must complete this step even if the status of the S3 File Gateway appears as **Joined**.
 
@@ -123,7 +123,7 @@ You must complete this step even if the status of the S3 File Gateway appears as
 **Warning**
 When a gateway is deleted, there is no way to recover it.
 
-   For more information about deleting an Amazon EC2 instance, see [Terminate your instance](https://docs.aws.amazon.com//AWSEC2/latest/UserGuide/terminating-instances.html) in the *Amazon EC2 User Guide*. For more information about deleting a KVM, VMware, or Hyper-V VM, see the documentation for your hypervisor.
+   For more information about deleting an Amazon EC2 instance, see [Terminate your instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/terminating-instances.html) in the *Amazon EC2 User Guide*. For more information about deleting a KVM, VMware, or Hyper-V VM, see the documentation for your hypervisor.
 
 ## Method 2: Replacement instance with empty cache disk and new Gateway ID
 <a name="replace-instance-file-gateway"></a>
@@ -170,7 +170,7 @@ When a gateway is deleted, there is no way to recover it.
 
 1. Create new file shares for the new gateway with the same settings and configuration as the file shares that were configured on the old gateway. If necessary, refer to the information you saved in Step 2.
 **Note**
-You can now copy file share configurations between gateways. For more information, see [Copy a file share](https://docs.aws.amazon.com//filegateway/latest/files3/copy-file-share.html).
+You can now copy file share configurations between gateways. For more information, see [Copy a file share](https://docs.aws.amazon.com/filegateway/latest/files3/copy-file-share.html).
 
 1. Confirm that your new gateway is working correctly, then remap/cut-over your clients from the old file shares to the new file shares in the manner that best suits your environment.
 

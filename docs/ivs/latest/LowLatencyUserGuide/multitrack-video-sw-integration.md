@@ -42,7 +42,7 @@ When a user starts streaming, your software must query information about the use
 ### Use GetClientConfiguration
 <a name="multitrack-video-sw-integration-auto-stream-use-getclientconfig"></a>
 
-[GetClientConfiguration](https://docs.aws.amazon.com//ivs/latest//BroadcastSWIntegAPIReference/actions-GetClientConfiguration.html) requires information about the user’s hardware and software setup.
+[GetClientConfiguration](https://docs.aws.amazon.com/ivs/latest//BroadcastSWIntegAPIReference/actions-GetClientConfiguration.html) requires information about the user’s hardware and software setup.
 
 The algorithm considers many factors to deliver a configuration that:
 + Optimizes for the best viewer experience – highest resolution, highest framerate, highest bitrate, highest number of tracks, newest/best codecs, and best video-encoder settings.
@@ -97,7 +97,7 @@ GetClientConfiguration returns warnings and errors in different circumstances, s
 ### Configure Video Scaling and Encoding
 <a name="multitrack-video-sw-integration-auto-stream-configure-video"></a>
 
-[GetClientConfiguration](https://docs.aws.amazon.com//ivs/latest//BroadcastSWIntegAPIReference/actions-GetClientConfiguration.html) returns scaling and encoding settings that optimize for the best possible viewer experience, without impacting the performance of the application (e.g., game/broadcast software) and taking into account the user’s settings. Use the exact scaling and encoding settings returned by GetClientConfiguration. GetClientConfiguration takes into account the specific needs of different vendors and GPU architectures that change over time.
+[GetClientConfiguration](https://docs.aws.amazon.com/ivs/latest//BroadcastSWIntegAPIReference/actions-GetClientConfiguration.html) returns scaling and encoding settings that optimize for the best possible viewer experience, without impacting the performance of the application (e.g., game/broadcast software) and taking into account the user’s settings. Use the exact scaling and encoding settings returned by GetClientConfiguration. GetClientConfiguration takes into account the specific needs of different vendors and GPU architectures that change over time.
 
 In addition to the scaling and encoding settings (like preset), you must:
 + *Align all encoders and ensure that IDRs for all renditions have the same PTS.* This is required to avoid the need for server-side transcoding to align multiple renditions when video is distributed and viewed using segmented HLS. If IDRs are not aligned across video tracks, viewers will experience time shifting and stuttering during rendition switching in ABR playback. (For a visualization, see the figure in [Broadcast Performance Metrics](#multitrack-video-sw-integration-broadcast-perf-metrics).)
@@ -111,8 +111,8 @@ For documentation on multitrack streaming via enhanced RTMP, see the [Enhanced R
 When connecting with enhanced RTMP, Amazon IVS multitrack video has several requirements:
 + The primary, highest quality video track must be packaged and sent as enhanced RTMP single-track video packets. For example, `videoPacketType` can be `CodedFrames`, `CodedFramesX`, `SequenceStart`, and `SequenceEnd`.
 + All additional video tracks must be packaged and sent as enhanced RTMP multitrack video packets (e.g., `videoPacketType` is `Multitrack`), with the multitrack packet type set to one track (e.g., `videoMultitrackType` is `OneTrack`).
-+ The stream key in the `authentication` field returned by [GetClientConfiguration](https://docs.aws.amazon.com//ivs/latest//BroadcastSWIntegAPIReference/actions-GetClientConfiguration.html) must be used to connect to the RTMP server.
-+ The `config_id` value returned by [GetClientConfiguration](https://docs.aws.amazon.com//ivs/latest//BroadcastSWIntegAPIReference/actions-GetClientConfiguration.html) must be appended as a query argument to the RTMP connection string with key `clientConfigId`.
++ The stream key in the `authentication` field returned by [GetClientConfiguration](https://docs.aws.amazon.com/ivs/latest//BroadcastSWIntegAPIReference/actions-GetClientConfiguration.html) must be used to connect to the RTMP server.
++ The `config_id` value returned by [GetClientConfiguration](https://docs.aws.amazon.com/ivs/latest//BroadcastSWIntegAPIReference/actions-GetClientConfiguration.html) must be appended as a query argument to the RTMP connection string with key `clientConfigId`.
 
 The following is an example of a stream configuration:
 
@@ -123,7 +123,7 @@ The following is an example of a stream configuration:
 | Multitrack | OneTrack | 2 | 852x480 |
 | Multitrack | OneTrack | 3 | 640x360 |
 
-Your broadcast software should use the data returned by [GetClientConfiguration](https://docs.aws.amazon.com//ivs/latest//BroadcastSWIntegAPIReference/actions-GetClientConfiguration.html) in `ingest_endpoints` and the protocol (RTMP or RTMPS) selected by the user to identify the endpoint to connect to. Use the `url_template` and the stream key returned in `authentication` to create a URL and include `config_id` as the `clientConfigId` query argument. If you allow the user to specify RTMP query arguments (for example, `?bandwidthtest=1`), you must append them in addition to specifying `clientConfigId`. Here is an example of a response from GetClientConfiguration:
+Your broadcast software should use the data returned by [GetClientConfiguration](https://docs.aws.amazon.com/ivs/latest//BroadcastSWIntegAPIReference/actions-GetClientConfiguration.html) in `ingest_endpoints` and the protocol (RTMP or RTMPS) selected by the user to identify the endpoint to connect to. Use the `url_template` and the stream key returned in `authentication` to create a URL and include `config_id` as the `clientConfigId` query argument. If you allow the user to specify RTMP query arguments (for example, `?bandwidthtest=1`), you must append them in addition to specifying `clientConfigId`. Here is an example of a response from GetClientConfiguration:
 
 ```
 {
@@ -165,7 +165,7 @@ The multitrack video system enforces several limits. Broadly, the limitations ar
 1. Viewer experience — The service needs to constrain input for viewer experience and brand reputation. For example, the service controls the player ABR algorithm that drives QoE across all target user devices (desktop, mobile, TV/OTT, etc.) and apps (browsers, native, etc.).
 
 The video system disconnects the client in several scenarios:
-+ The client tries to connect to the RTMP server with multitrack video but does not use the stream key returned by [GetClientConfiguration](https://docs.aws.amazon.com//ivs/latest//BroadcastSWIntegAPIReference/actions-GetClientConfiguration.html).
++ The client tries to connect to the RTMP server with multitrack video but does not use the stream key returned by [GetClientConfiguration](https://docs.aws.amazon.com/ivs/latest//BroadcastSWIntegAPIReference/actions-GetClientConfiguration.html).
 + The client provides multitrack video that does not match the specification returned by GetClientConfiguration; for example:
   + The number of tracks is mismatched.
   + An individual track has a mismatched codec.
@@ -267,10 +267,10 @@ See [Using a FindIngest Server for Auto Streaming Destination](#multitrack-video
 ### Allow Users to Configure Streaming Destination
 <a name="multitrack-video-sw-integration-recommended-features-streaming-destination"></a>
 
-When users are configuring their streaming destinations, you should query [FindIngest](https://docs.aws.amazon.com//ivs/latest//BroadcastSWIntegAPIReference/actions-FindIngest.html) and provide the user with the ability to:
+When users are configuring their streaming destinations, you should query [FindIngest](https://docs.aws.amazon.com/ivs/latest//BroadcastSWIntegAPIReference/actions-FindIngest.html) and provide the user with the ability to:
 + Choose between RTMP or RTMPS (default for Amazon IVS).
 + Select **Auto** for the server.
-+ Select a specific server from the list returned by [FindIngest](https://docs.aws.amazon.com//ivs/latest//BroadcastSWIntegAPIReference/actions-FindIngest.html)
++ Select a specific server from the list returned by [FindIngest](https://docs.aws.amazon.com/ivs/latest//BroadcastSWIntegAPIReference/actions-FindIngest.html)
 + Enter a custom server; e.g., use **Specify Custom Server**.
 
 You may filter the list returned by FindIngest based on the protocol selected by the user (RTMP vs. RTMPS) or other considerations.
@@ -291,7 +291,7 @@ When **Specify Custom Server** is selected, a text box is provided for the user 
 ### Using a FindIngest Server for Auto Streaming Destination
 <a name="multitrack-video-sw-integration-recommended-features-using-findingest"></a>
 
-If you use ingest endpoints specified by FindIngest when Auto was specified for the streaming destination, use the entry with the lowest `priority` value returned by [FindIngest](https://docs.aws.amazon.com//ivs/latest//BroadcastSWIntegAPIReference/actions-FindIngest.html). To reduce the time it takes for a stream to go live, you may cache the FindIngest response. If you do cache the response, update the cached value regularly.
+If you use ingest endpoints specified by FindIngest when Auto was specified for the streaming destination, use the entry with the lowest `priority` value returned by [FindIngest](https://docs.aws.amazon.com/ivs/latest//BroadcastSWIntegAPIReference/actions-FindIngest.html). To reduce the time it takes for a stream to go live, you may cache the FindIngest response. If you do cache the response, update the cached value regularly.
 
 If the user selects RTMP, use the `url_template` string as the RTMP broadcast destination. If the user selects RTMPS, use the `url_template_secure` string as the RTMPS broadcast destination. In both cases, replace `{stream_key}` with the user’s stream key.
 

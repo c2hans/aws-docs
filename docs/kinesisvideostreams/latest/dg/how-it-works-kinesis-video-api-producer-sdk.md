@@ -55,17 +55,17 @@ If you enable data persistence for the stream, after receiving a fragment on the
 
 **Control Plane REST APIs**
 
-To access the [Kinesis Video Streams Control Plane REST APIs](https://docs.aws.amazon.com//kinesisvideostreams/latest/dg/API_Operations_Amazon_Kinesis_Video_Streams.html), use the [Kinesis Video Streams service endpoints](https://docs.aws.amazon.com//general/latest/gr/akv.html#akv_region).
+To access the [Kinesis Video Streams Control Plane REST APIs](https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/API_Operations_Amazon_Kinesis_Video_Streams.html), use the [Kinesis Video Streams service endpoints](https://docs.aws.amazon.com/general/latest/gr/akv.html#akv_region).
 
 **Data Plane REST APIs**
 
-Kinesis Video Streams is built using a [cellular architecture](https://docs.aws.amazon.com//wellarchitected/latest/reducing-scope-of-impact-with-cell-based-architecture/what-is-a-cell-based-architecture.html) to ensure better scaling and traffic isolation properties. Because each stream is mapped to a specific cell in a region, your application must use the correct cell-specific endpoints that your stream has been mapped to. When accessing the Data Plane REST APIs, you will need to manage and map the correct endpoints yourself. This process, the endpoint discovery pattern, is described below:
+Kinesis Video Streams is built using a [cellular architecture](https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of-impact-with-cell-based-architecture/what-is-a-cell-based-architecture.html) to ensure better scaling and traffic isolation properties. Because each stream is mapped to a specific cell in a region, your application must use the correct cell-specific endpoints that your stream has been mapped to. When accessing the Data Plane REST APIs, you will need to manage and map the correct endpoints yourself. This process, the endpoint discovery pattern, is described below:
 
 1. The endpoint discovery pattern starts with a call to one of the `GetEndpoints` actions. These actions belong to the Control Plane.
 
    1. If you are retrieving the endpoints for the [Amazon Kinesis Video Streams Media API](https://docs.aws.amazon.com/kinesisvideostreams/latest/APIReference/API_Operations_Amazon_Kinesis_Video_Streams_Media.html) or [Amazon Kinesis Video Streams Archived Media API](https://docs.aws.amazon.com/kinesisvideostreams/latest/APIReference/API_Operations_Amazon_Kinesis_Video_Streams_Archived_Media.html) services, use [GetDataEndpoint](https://docs.aws.amazon.com/kinesisvideostreams/latest/APIReference/API_GetDataEndpoint.html).
 
-   1. If you are retrieving the endpoints for [Amazon Kinesis Video Signaling Channels API](https://docs.aws.amazon.com/kinesisvideostreams/latest/APIReference/API_Operations_Amazon_Kinesis_Video_Signaling_Channels.html), [Amazon Kinesis Video WebRTC Storage API](https://docs.aws.amazon.com/kinesisvideostreams/latest/APIReference/API_Operations_Amazon_Kinesis_Video_WebRTC_Storage.html), or [Kinesis Video Signaling](https://docs.aws.amazon.com//kinesisvideostreams-webrtc-dg/latest/devguide/kvswebrtc-websocket-apis.html), use [GetSignalingChannelEndpoint](https://docs.aws.amazon.com/kinesisvideostreams/latest/APIReference/API_GetSignalingChannelEndpoint.html).
+   1. If you are retrieving the endpoints for [Amazon Kinesis Video Signaling Channels API](https://docs.aws.amazon.com/kinesisvideostreams/latest/APIReference/API_Operations_Amazon_Kinesis_Video_Signaling_Channels.html), [Amazon Kinesis Video WebRTC Storage API](https://docs.aws.amazon.com/kinesisvideostreams/latest/APIReference/API_Operations_Amazon_Kinesis_Video_WebRTC_Storage.html), or [Kinesis Video Signaling](https://docs.aws.amazon.com/kinesisvideostreams-webrtc-dg/latest/devguide/kvswebrtc-websocket-apis.html), use [GetSignalingChannelEndpoint](https://docs.aws.amazon.com/kinesisvideostreams/latest/APIReference/API_GetSignalingChannelEndpoint.html).
 
 1. Cache and reuse the endpoint.
 

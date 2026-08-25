@@ -76,7 +76,7 @@ rpm --import RPM-GPG-KEY-AWS
 
 Use the following procedure to install DataProvider 4.3.
 
-1. Open the [Systems Manager console](https://console.aws.amazon.com//systems-manager/).
+1. Open the [Systems Manager console](https://console.aws.amazon.com/systems-manager/).
 
 1. In the left navigation pane, under the Node Management section, choose **Distributor**.
 ![The navigation pane](http://docs.aws.amazon.com/sap/latest/general/images/data-provider-distributor.png)

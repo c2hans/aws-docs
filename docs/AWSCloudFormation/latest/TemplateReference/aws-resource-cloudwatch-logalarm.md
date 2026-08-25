@@ -45,7 +45,8 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[ScheduledQueryConfiguration](#cfn-cloudwatch-logalarm-scheduledqueryconfiguration)" : {{ScheduledQueryConfiguration}},
       "[Tags](#cfn-cloudwatch-logalarm-tags)" : {{[ Tag, ... ]}},
       "[Threshold](#cfn-cloudwatch-logalarm-threshold)" : {{Number}},
-      "[TreatMissingData](#cfn-cloudwatch-logalarm-treatmissingdata)" : {{String}}
+      "[TreatMissingData](#cfn-cloudwatch-logalarm-treatmissingdata)" : {{String}},
+      "[WarmUpConfiguration](#cfn-cloudwatch-logalarm-warmupconfiguration)" : {{WarmUpConfiguration}}
     }
 }
 ```
@@ -76,6 +77,8 @@ Properties:
     - Tag}}
   [Threshold](#cfn-cloudwatch-logalarm-threshold): {{Number}}
   [TreatMissingData](#cfn-cloudwatch-logalarm-treatmissingdata): {{String}}
+  [WarmUpConfiguration](#cfn-cloudwatch-logalarm-warmupconfiguration): {{
+    WarmUpConfiguration}}
 ```
 
 ## Properties
@@ -207,6 +210,13 @@ Sets how this alarm is to handle missing data points. Valid values are `breachin
 *Type*: String
 *Minimum*: `1`
 *Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`WarmUpConfiguration`  <a name="cfn-cloudwatch-logalarm-warmupconfiguration"></a>
+The warm-up configuration for the alarm. A warm-up period delays alarm evaluation after you create or update the alarm. During the warm-up period, the alarm stays in `INSUFFICIENT_DATA` and does not perform alarm actions.
+For more information, see [Alarm warm-up periods](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/alarm-warm-up.html) in the *Amazon CloudWatch User Guide*.
+*Required*: No
+*Type*: [WarmUpConfiguration](aws-properties-cloudwatch-logalarm-warmupconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values

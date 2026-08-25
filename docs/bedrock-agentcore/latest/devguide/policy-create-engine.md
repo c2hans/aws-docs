@@ -15,7 +15,7 @@ A policy engine is a collection of policies that evaluates and authorizes agent 
 ## Prerequisites
 <a name="policy-engine-prerequisites"></a>
 
-Before creating a policy engine, ensure you have a gateway setup. For more information, see [Building a gateway](https://docs.aws.amazon.com//bedrock-agentcore/latest/devguide/gateway-building.html).
+Before creating a policy engine, ensure you have a gateway setup. For more information, see [Building a gateway](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gateway-building.html).
 
 ## Create a policy engine
 <a name="create-policy-engine-methods"></a>

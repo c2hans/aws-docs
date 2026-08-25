@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awso
 
 AWS OpsWorks provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="opsworks-DescribeAgentVersions"></a>[DescribeAgentVersions](https://docs.aws.amazon.com/opsworks/latest/APIReference/API_DescribeAgentVersions.html) | Describe the available AWS OpsWorks agent versions | List |

@@ -51,7 +51,7 @@ JetBrains displays the progress in a new status window, and, when the process is
 
 You can create Dev Environments from a third-party repository by linking to the repository as a source.
 
-Linking to a third-party repository as a source is handled at the project level in CodeCatalyst. For instructions and additional details on how to connect a third-party repository to your Dev Environment, see the [Linking a source repository](https://docs.aws.amazon.com//codecatalyst/latest/userguide/source-repositories-link.html) topic in the *Amazon CodeCatalyst User Guide*.
+Linking to a third-party repository as a source is handled at the project level in CodeCatalyst. For instructions and additional details on how to connect a third-party repository to your Dev Environment, see the [Linking a source repository](https://docs.aws.amazon.com/codecatalyst/latest/userguide/source-repositories-link.html) topic in the *Amazon CodeCatalyst User Guide*.
 
 ## Configuring Dev Environment settings
 <a name="codecatalyst-overview-configure"></a>

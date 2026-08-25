@@ -20,7 +20,7 @@ Due to the isolated environment of the enclave, the only channel of communicatio
 ## Nitro Enclaves Developer AMI
 <a name="dev-ami"></a>
 
-AWS provides a Nitro Enclaves Developer AMI that contains the tools and components needed to develop enclave applications and to build enclave image files. It also contains samples applications, such as hello-enclave, vsock\_sample and kmstool, to demonstrate how to use and develop your own enclave applications. For more information, see [AWS Nitro Enclaves Developer AMI](https://aws.amazon.com//marketplace/pp/B08R69DKQ1).
+AWS provides a Nitro Enclaves Developer AMI that contains the tools and components needed to develop enclave applications and to build enclave image files. It also contains samples applications, such as hello-enclave, vsock\_sample and kmstool, to demonstrate how to use and develop your own enclave applications. For more information, see [AWS Nitro Enclaves Developer AMI](https://aws.amazon.com/marketplace/pp/B08R69DKQ1).
 
 ## Nitro Enclaves SDK
 <a name="sdk"></a>

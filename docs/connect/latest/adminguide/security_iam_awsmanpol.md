@@ -41,7 +41,7 @@ To view the permissions for the `AmazonConnect_FullAccess` policy, see [AmazonCo
 
 ------
 
-To allow a user to create an instance, ensure that they have the permissions granted by the `AmazonConnect_FullAccess` policy.
+To allow a user to create an instance, make sure that they have the permissions granted by the `AmazonConnect_FullAccess` policy.
 
 When you use `AmazonConnect_FullAccess` policy, note the following:
 + The custom policy that contains the `iam:PutRolePolicy` action, allows the user with this policy assigned to configure any resource in the account to work with a Connect Customer instance. Since this added action grants such broad permissions, only assign it when necessary. As an alternative, you can create the service-linked role with access to the necessary resources and let the user have access to pass the service-linked role to Connect Customer (which is granted by the `AmazonConnect_FullAccess` policy).

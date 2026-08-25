@@ -14,8 +14,6 @@ Specify files and folders for Trend Micro DSM to ignore (exclude) when scanning;
 ## Change Type Details
 <a name="ct-3va4bkrxb9z42-MHTe-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-3va4bkrxb9z42 |

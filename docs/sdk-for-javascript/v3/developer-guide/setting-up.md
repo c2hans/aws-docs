@@ -39,8 +39,6 @@ The AWS SDK for JavaScript supports all modern web browsers.
 
 In version 3.567.0 or later, the SDK for JavaScript emits ES2021 artifacts, which supports the following minimum versions.
 
-****
-
 | Browser | Version |
 | --- | --- |
 | Google Chrome | 85.0\+ |
@@ -52,8 +50,6 @@ In version 3.567.0 or later, the SDK for JavaScript emits ES2021 artifacts, whic
 
 In version 3.183.0 through 3.566.0, the SDK for JavaScript uses ES2020 artifacts, which supports the following minimum versions.
 
-****
-
 | Browser | Version |
 | --- | --- |
 | Google Chrome | 80.0\+ |
@@ -64,8 +60,6 @@ In version 3.183.0 through 3.566.0, the SDK for JavaScript uses ES2020 artifacts
 | Samsung Internet | 12.0\+ |
 
 In version 3.182.0 or earlier, the SDK for JavaScript uses ES5 artifacts, which supports the following minimum versions.
-
-****
 
 | Browser | Version |
 | --- | --- |
@@ -98,7 +92,7 @@ For a full list of the AWS SDK for JavaScript service client packages, see the [
 ## Load the SDK for JavaScript
 <a name="loading-the-jssdk"></a>
 
-After you install the SDK, you can load a client package in your node application using `import`. For example, to load the Amazon S3 client and the Amazon S3 [ListBuckets](https://docs.aws.amazon.com//AmazonS3/latest/API/API_ListBuckets.html) command, use the following.
+After you install the SDK, you can load a client package in your node application using `import`. For example, to load the Amazon S3 client and the Amazon S3 [ListBuckets](https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListBuckets.html) command, use the following.
 
 ```
 import { S3Client, ListBucketsCommand } from "@aws-sdk/client-s3";

@@ -51,8 +51,6 @@ The following sections list the Graviton image IDs for each platform branch that
 ### US East (Ohio) – us-east-2
 <a name="release-2021-10-13-graviton-wave1.graviton-CMH"></a>
 
-****
-
 |  Platform version  |  Graviton image ID  |  x86 image ID  |
 | --- | --- | --- |
 | 64bit Amazon Linux 2 v3.4.7 running Docker | ami-0d81a697b71b7bf07 | ami-05695573c36ccc1cf |
@@ -69,8 +67,6 @@ The following sections list the Graviton image IDs for each platform branch that
 
 ### US East (N. Virginia) – us-east-1
 <a name="release-2021-10-13-graviton-wave1.graviton-IAD"></a>
-
-****
 
 |  Platform version  |  Graviton image ID  |  x86 image ID  |
 | --- | --- | --- |
@@ -89,8 +85,6 @@ The following sections list the Graviton image IDs for each platform branch that
 ### US West (Oregon) – us-west-2
 <a name="release-2021-10-13-graviton-wave1.graviton-PDX"></a>
 
-****
-
 |  Platform version  |  Graviton image ID  |  x86 image ID  |
 | --- | --- | --- |
 | 64bit Amazon Linux 2 v3.4.7 running Docker | ami-0e88c6b05c0de1dd8 | ami-0f34cb0eaed253615 |
@@ -107,8 +101,6 @@ The following sections list the Graviton image IDs for each platform branch that
 
 ### Europe (Ireland) – eu-west-1
 <a name="release-2021-10-13-graviton-wave1.graviton-DUB"></a>
-
-****
 
 |  Platform version  |  Graviton image ID  |  x86 image ID  |
 | --- | --- | --- |
@@ -127,8 +119,6 @@ The following sections list the Graviton image IDs for each platform branch that
 ### Europe (Frankfurt) – eu-central-1
 <a name="release-2021-10-13-graviton-wave1.graviton-FRA"></a>
 
-****
-
 |  Platform version  |  Graviton image ID  |  x86 image ID  |
 | --- | --- | --- |
 | 64bit Amazon Linux 2 v3.4.7 running Docker | ami-07e7185f4579f6531 | ami-0e48201b194947727 |
@@ -145,8 +135,6 @@ The following sections list the Graviton image IDs for each platform branch that
 
 ### South America (São Paulo) – sa-east-1
 <a name="release-2021-10-13-graviton-wave1.graviton-GRU"></a>
-
-****
 
 |  Platform version  |  Graviton image ID  |  x86 image ID  |
 | --- | --- | --- |

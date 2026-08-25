@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/clau
 
 Claude Platform on AWS provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="aws-external-anthropic-CallWithBearerToken"></a>[CallWithBearerToken](https://docs.aws.amazon.com/claude-platform/latest/userguide/iam-actions.html) | Make API calls using bearer token authentication | List |

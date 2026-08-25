@@ -24,7 +24,7 @@ The following differences apply to Amazon ElastiCache:
 
 ## Documentation
 <a name="govcloud-elc-docs"></a>
-+  [Amazon ElastiCache documentation](https://docs.aws.amazon.com/http://docs.aws.amazon.com/elasticache/)
++  [Amazon ElastiCache documentation](http://docs.aws.amazon.com/elasticache/)
 
 ## Export-controlled content
 <a name="govcloud-elc-itar"></a>

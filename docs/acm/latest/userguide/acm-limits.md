@@ -14,8 +14,6 @@ To see what quotas can be adjusted, see the [ACM quotas table](https://docs.aws.
 
 **Topics**
 
-****
-
 | Item | Default quota |
 | --- | --- |
 | Number of ACM certificatesExpired and revoked certificates continue to count toward this total.<br />Certificates signed by a CA from AWS Private CA do not count toward this total.<br />Certificates issued through ACME do not count toward this total. | 2500 |
@@ -24,7 +22,7 @@ To see what quotas can be adjusted, see the [ACM quotas table](https://docs.aws.
 | Number of imported certificates per year (last 365 days) | 5,000 |
 | Number of domain names per ACM certificateThe default quota is 10 domain names for each ACM certificate. Your quota may be greater. <br />The first domain name that you submit is included as the subject common name (CN) of the certificate. All names are included in the Subject Alternative Name extension. <br />You can request up to 100 domain names. To request an increase to your quota, create a request in the Service Quotas console for the ACM service. Before creating a case, however, make sure you understand how adding more domain names can create more administrative work for you if you use email validation. For more information, see [Domain validation](acm-bestpractices.md#best-practices-validating). <br />The quota for the number of domain names per ACM certificate applies only to certificates that are provided by ACM. This quota does not apply to certificates that you import into ACM. The following sections apply only to ACM certificates. | 10 |
 | Number of domain names per ACME-issued certificateCertificates issued through ACME can include up to 100 domain names. This quota is fixed and cannot be increased. | 100 |
-| Number of Private CAsACM is integrated with AWS Private Certificate Authority (AWS Private CA). You can use the ACM console, AWS CLI, or ACM API to request private certificates from an existing private certificate authority (CA) hosted by AWS Private CA. These certificates are managed within the ACM environment and have the same restrictions as public certificates issued by ACM. For more information, see [Request a private certificate in AWS Certificate ManagerRequest a private certificate](gs-acm-request-private.md). You can also issue private certificates by using the standalone AWS Private CA service. For more information, see [Issue a Private End-Entity Certificate](https://docs.aws.amazon.com/privateca/latest/userguide/PcaIssueCert.html).A private CA that has been deleted will count towards your quota until the end of its restoration period. For more information, see [Deleting Your Private CA](https://docs.aws.amazon.com/acm-pca/latest/userguide/PCADeleteCA.html). | 200 |
+| Number of Private CAsACM is integrated with AWS Private Certificate Authority (AWS Private CA). You can use the ACM console, AWS CLI, or ACM API to request private certificates from an existing private certificate authority (CA) hosted by AWS Private CA. These certificates are managed within the ACM environment and have the same restrictions as public certificates issued by ACM. For more information, see [Request a private certificate in AWS Certificate Manager](gs-acm-request-private.md). You can also issue private certificates by using the standalone AWS Private CA service. For more information, see [Issue a Private End-Entity Certificate](https://docs.aws.amazon.com/privateca/latest/userguide/PcaIssueCert.html).A private CA that has been deleted will count towards your quota until the end of its restoration period. For more information, see [Deleting Your Private CA](https://docs.aws.amazon.com/acm-pca/latest/userguide/PCADeleteCA.html). | 200 |
 | Number of Private Certificates per CA (lifetime) | 1,000,000 |
 | Number of ACME endpointsThe maximum number of ACME endpoints per AWS account per region. | 50 |
 | Number of external account bindings per ACME endpoint | 1,000 |
@@ -41,8 +39,6 @@ In addition to the API actions listed in the table below, ACM can also call the 
 **Requests-per-second quota for each ACM API operation**
 
 Per-operation request rate quotas for ACME certificate automation are tiered: read operations at 30 requests per second per account, write operations at 20 requests per second per account, and domain validation mutation operations (Create/Update/Delete AcmeDomainValidation) at 5 requests per second per account.
-
-****
 
 | API call | Requests per second |
 | --- | --- |
@@ -93,8 +89,6 @@ For more information, see [AWS Certificate Manager API Reference](https://docs.a
 The following quotas apply to requests that ACME clients send to an ACME endpoint over the ACME protocol. These quotas are separate from the ACM API request rate quotas in the preceding section. Per-operation request rate quotas for the ACME protocol are tiered: read operations at 25 requests per second per account, write operations at 20 requests per second per account, and certificate operations (FinalizeOrder, RevokeCertificate) at 1 request per second per account. When a request exceeds the quota, the endpoint returns a rate limit error.
 
 **Requests-per-second quota for each ACME protocol operation**
-
-****
 
 | Operation | Requests per second |
 | --- | --- |

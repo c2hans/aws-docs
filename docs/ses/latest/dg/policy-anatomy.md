@@ -63,8 +63,6 @@ For specific information about the syntax of the elements, see [Grammar of the I
 
 There are two policy-wide elements: `Id` and `Version`. The following table provides information about these elements.
 
-****
-
 |  Name  |  Description  |  Required  |  Valid values  |
 | --- | --- | --- | --- |
 |  `Id`  | Uniquely identifies the policy. | No | Any string |
@@ -74,8 +72,6 @@ There are two policy-wide elements: `Id` and `Version`. The following table prov
 <a name="identity-authorization-policy-statements"></a>
 
 Identity authorization policies require at least one statement. Each statement can include the elements described in the following table.
-
-****
 
 |  Name  |  Description  |  Required  |  Valid values  |
 | --- | --- | --- | --- |

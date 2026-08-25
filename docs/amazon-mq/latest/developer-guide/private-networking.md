@@ -104,7 +104,7 @@ Replace the placeholders with your own values:
 + `--broker-id` – The unique ID of your broker (the {{b-a1b2c3d4-...}} value).
 + `--resource-share-arns` – The Amazon Resource Name (ARN) of your AWS RAM resource share (the {{arn:aws:ram:...}} value).
 
-For more information, see [UpdateBroker](https://docs.aws.amazon.com//amazon-mq/latest/api-reference/brokers-broker-id.html) in the *Amazon MQ REST API Reference*.
+For more information, see [UpdateBroker](https://docs.aws.amazon.com/amazon-mq/latest/api-reference/brokers-broker-id.html) in the *Amazon MQ REST API Reference*.
 
 To associate multiple resource shares, separate the ARNs with spaces:
 
@@ -133,7 +133,7 @@ aws mq reboot-broker --broker-id {{b-a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 
 Rebooting causes downtime for single-instance brokers and brief unavailability (failover) for cluster brokers. Wait for the broker to return to the `RUNNING` state before proceeding. This typically takes 10 to 20 minutes.
 
-For more information, see [RebootBroker](https://docs.aws.amazon.com//amazon-mq/latest/api-reference/brokers-broker-id-reboot.html) in the *Amazon MQ REST API Reference*.
+For more information, see [RebootBroker](https://docs.aws.amazon.com/amazon-mq/latest/api-reference/brokers-broker-id-reboot.html) in the *Amazon MQ REST API Reference*.
 
 ### Step 6: Verify the setup
 <a name="private-networking-setup-verify"></a>
@@ -148,7 +148,7 @@ aws mq describe-shared-resources --broker-id {{b-a1b2c3d4-5678-90ab-cdef-EXAMPLE
 
 When the setup is complete, resource shares appear in `AVAILABLE` state. Each resource configuration shows its associated DNS name.
 
-For more information, see [DescribeSharedResources](https://docs.aws.amazon.com//amazon-mq/latest/api-reference/brokers-broker-id-shared-resources.html) in the *Amazon MQ REST API Reference*.
+For more information, see [DescribeSharedResources](https://docs.aws.amazon.com/amazon-mq/latest/api-reference/brokers-broker-id-shared-resources.html) in the *Amazon MQ REST API Reference*.
 
 ## Use cases
 <a name="private-networking-use-cases"></a>

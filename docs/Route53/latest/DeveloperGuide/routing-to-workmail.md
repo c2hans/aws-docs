@@ -16,7 +16,7 @@ To route traffic to Amazon WorkMail, perform the following four procedures.<a na
 
 1. If you haven't registered the domain name that you want to use in your email addresses (such as john@example.com), register the domain now so you know that the domain is available. For more information, see [Registering a new domain](domain-register.md).
 
-   If Amazon Route 53 is not the DNS service for the email domain that you added to Amazon WorkMail, migrate DNS service for the domain to Route 53. For more information, see [Making Amazon Route 53 the DNS service for an existing domainMaking Route 53 the DNS service for an existing domain](MigratingDNS.md).
+   If Amazon Route 53 is not the DNS service for the email domain that you added to Amazon WorkMail, migrate DNS service for the domain to Route 53. For more information, see [Making Amazon Route 53 the DNS service for an existing domain](MigratingDNS.md).
 
 1. Add an Amazon WorkMail organization and email domain. For more information, see [Getting started for new users](https://docs.aws.amazon.com/workmail/latest/adminguide/getting_started_new_user.html) in the *Amazon WorkMail Administrator Guide*.<a name="routing-to-workmail-txt-procedure"></a>
 

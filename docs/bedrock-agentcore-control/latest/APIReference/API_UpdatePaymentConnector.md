@@ -32,7 +32,7 @@ The request uses the following URI parameters.
  ** [paymentConnectorId](#API_UpdatePaymentConnector_RequestSyntax) **   <a name="bedrockagentcorecontrol-UpdatePaymentConnector-request-uri-paymentConnectorId"></a>
 The unique identifier of the payment connector to update.
 Length Constraints: Minimum length of 12. Maximum length of 211.
-Pattern: `([0-9a-z][-]?){1,100}-[0-9a-z]{10}`
+Pattern: `([0-9a-z_][-]?){1,100}-[0-9a-z]{10}`
 Required: Yes
 
  ** [paymentManagerId](#API_UpdatePaymentConnector_RequestSyntax) **   <a name="bedrockagentcorecontrol-UpdatePaymentConnector-request-uri-paymentManagerId"></a>
@@ -56,14 +56,14 @@ Required: No
  ** [credentialProviderConfigurations](#API_UpdatePaymentConnector_RequestSyntax) **   <a name="bedrockagentcorecontrol-UpdatePaymentConnector-request-credentialProviderConfigurations"></a>
 The updated credential provider configurations for the payment connector.
 Type: Array of [CredentialsProviderConfiguration](API_CredentialsProviderConfiguration.md) objects
-Array Members: Fixed number of 1 item.
+Array Members: Minimum number of 0 items. Maximum number of 1 item.
 Required: No
 
  ** [description](#API_UpdatePaymentConnector_RequestSyntax) **   <a name="bedrockagentcorecontrol-UpdatePaymentConnector-request-description"></a>
 The updated description of the payment connector.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 4096.
-Pattern: `[a-zA-Z0-9\s]+`
+Pattern: `[^\p{C}]*`
 Required: No
 
  ** [type](#API_UpdatePaymentConnector_RequestSyntax) **   <a name="bedrockagentcorecontrol-UpdatePaymentConnector-request-type"></a>
@@ -80,6 +80,7 @@ HTTP/1.1 202
 Content-type: application/json
 
 {
+   "authorizationUrl": "string",
    "credentialProviderConfigurations": [
       { ... }
    ],
@@ -99,10 +100,16 @@ If the action is successful, the service sends back an HTTP 202 response.
 
 The following data is returned in JSON format by the service.
 
+ ** [authorizationUrl](#API_UpdatePaymentConnector_ResponseSyntax) **   <a name="bedrockagentcorecontrol-UpdatePaymentConnector-response-authorizationUrl"></a>
+The URL that the user must open to complete OAuth consent. This field is only present when the payment connector status is `PENDING_AUTHENTICATION`.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 4096.
+Pattern: `https://[^\p{C}]*`
+
  ** [credentialProviderConfigurations](#API_UpdatePaymentConnector_ResponseSyntax) **   <a name="bedrockagentcorecontrol-UpdatePaymentConnector-response-credentialProviderConfigurations"></a>
 The credential provider configurations for the updated payment connector.
 Type: Array of [CredentialsProviderConfiguration](API_CredentialsProviderConfiguration.md) objects
-Array Members: Fixed number of 1 item.
+Array Members: Minimum number of 0 items. Maximum number of 1 item.
 
  ** [lastUpdatedAt](#API_UpdatePaymentConnector_ResponseSyntax) **   <a name="bedrockagentcorecontrol-UpdatePaymentConnector-response-lastUpdatedAt"></a>
 The timestamp when the payment connector was last updated.
@@ -118,7 +125,7 @@ Pattern: `[a-zA-Z][a-zA-Z0-9_]{0,47}`
 The unique identifier of the updated payment connector.
 Type: String
 Length Constraints: Minimum length of 12. Maximum length of 211.
-Pattern: `([0-9a-z][-]?){1,100}-[0-9a-z]{10}`
+Pattern: `([0-9a-z_][-]?){1,100}-[0-9a-z]{10}`
 
  ** [paymentManagerId](#API_UpdatePaymentConnector_ResponseSyntax) **   <a name="bedrockagentcorecontrol-UpdatePaymentConnector-response-paymentManagerId"></a>
 The unique identifier of the parent payment manager.
@@ -129,7 +136,7 @@ Pattern: `([0-9a-z][-]?){1,100}-[0-9a-z]{10}`
  ** [status](#API_UpdatePaymentConnector_ResponseSyntax) **   <a name="bedrockagentcorecontrol-UpdatePaymentConnector-response-status"></a>
 The current status of the updated payment connector. Possible values include `CREATING`, `READY`, `UPDATING`, `DELETING`, `CREATE_FAILED`, `UPDATE_FAILED`, and `DELETE_FAILED`.
 Type: String
-Valid Values: `CREATING | UPDATING | DELETING | READY | CREATE_FAILED | UPDATE_FAILED | DELETE_FAILED`
+Valid Values: `CREATING | UPDATING | DELETING | READY | CREATE_FAILED | UPDATE_FAILED | DELETE_FAILED | AWS_MARKETPLACE_SUBSCRIPTION_REQUIRED | PENDING_AUTHENTICATION | PROVISIONING | AUTHENTICATION_EXPIRED | AUTHENTICATION_FAILED`
 
  ** [type](#API_UpdatePaymentConnector_ResponseSyntax) **   <a name="bedrockagentcorecontrol-UpdatePaymentConnector-response-type"></a>
 The type of the updated payment connector.
@@ -160,6 +167,10 @@ HTTP Status Code: 404
  ** ServiceQuotaExceededException **
 This exception is thrown when a request is made beyond the service quota
 HTTP Status Code: 402
+
+ ** SubscriptionRequiredException **
+The request failed because it requires an active AWS Marketplace subscription that is not present. Subscribe to the required product in AWS Marketplace and try again.
+HTTP Status Code: 403
 
  ** ThrottlingException **
 This exception is thrown when the number of requests exceeds the limit

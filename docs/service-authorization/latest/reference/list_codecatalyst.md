@@ -29,8 +29,6 @@ Amazon CodeCatalyst has no API operations that can be used in the `Actions` elem
 
 The following actions are defined by Amazon CodeCatalyst but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 - **   [AcceptConnection](https://docs.aws.amazon.com/codecatalyst/latest/userguide/security-iam.html#permissions-reference-connections)  **
   - **Description:** Grants permission to accept a request to connect this account to an Amazon CodeCatalyst space
   - **Resource types (\*required):**
@@ -216,8 +214,6 @@ The following actions are defined by Amazon CodeCatalyst but are not directly in
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
 
-****
-
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
 |  [connections](https://docs.aws.amazon.com/codecatalyst/latest/userguide/#)  | arn:${Partition}:codecatalyst:${Region}:${Account}:/connections/${ConnectionId} | [aws:ResourceTag/${TagKey}](#list_codecatalyst-aws_ResourceTag___TagKey_) |
@@ -229,8 +225,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_codecatalyst-policy-keys"></a>
 
 Amazon CodeCatalyst defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

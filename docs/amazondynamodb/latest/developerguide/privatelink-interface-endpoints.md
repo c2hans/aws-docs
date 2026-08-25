@@ -43,7 +43,7 @@ Interface endpoints are compatible with gateway endpoints. If you have an existi
 </tbody>
 </table>
 
-For more information about gateway endpoints, see [Gateway Amazon VPC endpoints](https://docs.aws.amazon.com//vpc/latest/privatelink/vpce-gateway.html) in the *AWS PrivateLink Guide*.
+For more information about gateway endpoints, see [Gateway Amazon VPC endpoints](https://docs.aws.amazon.com/vpc/latest/privatelink/vpce-gateway.html) in the *AWS PrivateLink Guide*.
 
 ## Considerations when using AWS PrivateLink for Amazon DynamoDB
 <a name="privatelink-considerations"></a>
@@ -55,7 +55,7 @@ AWS PrivateLink for Amazon DynamoDB does not support the following:
 + Private and Hybrid Domain Name System (DNS) services
 
 **Important**
-Do not create private hosted zones to override DynamoDB endpoint DNS names (such as `dynamodb.{{region}}.amazonaws.com` or `*.{{region}}.amazonaws.com`) to route traffic to your interface endpoints. DynamoDB DNS configurations may change over time.
+Do not create private hosted zones to override DynamoDB endpoint DNS names (such as `dynamodb.{{region}}.amazonaws.com` or `*.{{region}}.amazonaws.com`) to route traffic to your interface endpoints. DynamoDB DNS configurations might change over time.
  Custom DNS overrides are not compatible with these changes and can cause requests to unexpectedly route over public IP addresses instead of your interface endpoints.
  To access DynamoDB through AWS PrivateLink, configure your clients to use the Amazon VPC endpoint URL directly (for example, `https://vpce-1a2b3c4d-5e6f.dynamodb.{{region}}.vpce.amazonaws.com`).
 

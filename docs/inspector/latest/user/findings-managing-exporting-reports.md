@@ -74,7 +74,7 @@ If you want to store your report in an S3 bucket that's owned by another account
 
 **To update the bucket policy**
 
-1.  Sign in using your credentials, and then open the Amazon S3 console at [https://console.aws.amazon.com/s3](https://console.aws.amazon.com//s3).
+1.  Sign in using your credentials, and then open the Amazon S3 console at [https://console.aws.amazon.com/s3](https://console.aws.amazon.com/s3).
 
 1. In the navigation pane, choose **Buckets**.
 

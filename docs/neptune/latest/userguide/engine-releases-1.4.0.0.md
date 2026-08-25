@@ -43,7 +43,7 @@ MATCH (n:movie) WHERE n.runtime>=$minutes RETURN n
 +  The per-query timeout is by default enforced to be smaller than the cluster-level timeout. In a previous release, this check was introduced but needed to be explicitly enabled via the lab-mode parameter 'StrictTimeoutValidation'. With this release, 'StrictTimeoutValidation' will be enabled by default and must be disabled explicitly to keep the old behavior.
 
 **openCypher improvements**
-+  In a previous release we introduced [ extended datetime format support](https://docs.aws.amazon.com//neptune/latest/userguide/feature-opencypher-compliance.html#opencypher-compliance-time-na), enabled via a lab mode parameter `DatetimeMillisecond`. This extended datetime format support is now enabled by default.
++  In a previous release we introduced [ extended datetime format support](https://docs.aws.amazon.com/neptune/latest/userguide/feature-opencypher-compliance.html#opencypher-compliance-time-na), enabled via a lab mode parameter `DatetimeMillisecond`. This extended datetime format support is now enabled by default.
 
 **SPARQL improvements**
 +  New explicit IAM actions for query permissions.

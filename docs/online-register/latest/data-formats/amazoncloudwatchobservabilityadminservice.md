@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon CloudWatch Observability Admin Service provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="observabilityadmin-GetCentralizationRuleForOrganization"></a>[GetCentralizationRuleForOrganization](https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API_GetCentralizationRuleForOrganization.html) | Retrieve the specified organization centralization rule for the organization | Read |

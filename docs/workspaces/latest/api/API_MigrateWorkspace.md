@@ -11,6 +11,9 @@ The migration process recreates the WorkSpace by using a new root volume from th
 
 For available migration scenarios, details about what happens during migration, and best practices, see [Migrate a WorkSpace](https://docs.aws.amazon.com/workspaces/latest/adminguide/migrate-workspaces.html).
 
+**Note**
+If the source WorkSpace has nested virtualization enabled and the target bundle does not support nested virtualization, the migration fails.
+
 ## Request Syntax
 <a name="API_MigrateWorkspace_RequestSyntax"></a>
 

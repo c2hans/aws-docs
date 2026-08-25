@@ -14,7 +14,7 @@ These sections outline troubleshooting scenarios and address frequently asked qu
 <a name="troubleshooting-forecasting"></a>
 + **How can I create an ad hoc forecast?**
 
-  Forecasts are processed automatically, delivering short-term forecasts daily, and long-term forecasts weekly, so users don't need to worry about running forecasts manually. However, you may want to see how a forecast is updated when you add or modify historical data.
+  Forecasts are processed automatically, delivering short-term forecasts daily, and long-term forecasts weekly, so users don't need to worry about running forecasts manually. However, you might want to see how a forecast is updated when you add or modify historical data.
 
   For example, if you had an anomaly in your historical contact volume, and you don't want the machine-learning model to use that anomaly in building a forecast, you can modify the historical data and then when the new forecasts are run, the new forecasts are not incorporate that data.
 
@@ -24,7 +24,7 @@ These sections outline troubleshooting scenarios and address frequently asked qu
 ![Data on the Forecasts tab, the Last computed column.](http://docs.aws.amazon.com/connect/latest/adminguide/images/faq-adhoc-forecast.png)
 + **When I import historical data it returns errors.**
 
-  Select **download details** to ensure that the imported data is in the correct format: If there are any errors, check the error details. It provides additional details for the specific error. You must ensure that your file is in `.csv` format, contains no decimals, no extra rows, or column fields. For more information on the required format, see [Import historical data for forecasting](https://docs.aws.amazon.com/connect/latest/adminguide/import-data-for-forecasting.html).
+  Select **download details** to make sure that the imported data is in the correct format: If there are any errors, check the error details. It provides additional details for the specific error. You must make sure that your file is in `.csv` format, contains no decimals, no extra rows, or column fields. For more information on the required format, see [Import historical data for forecasting](https://docs.aws.amazon.com/connect/latest/adminguide/import-data-for-forecasting.html).
 ![Failed status message, download details link.](http://docs.aws.amazon.com/connect/latest/adminguide/images/faq-import-historical-data.png)
 + **Forecast failed due to error: Insufficient data in Connect Customer.**
 
@@ -39,7 +39,7 @@ These sections outline troubleshooting scenarios and address frequently asked qu
   1. *You need recent data.* Connect Customer performs a data recency check (is the data recent enough) based on the aggregation of all queues included across all forecast groups. At least one data point in the past four weeks is required to successfully generate a forecast.
 + **Cannot import data, cannot download forecast, cannot create forecast group, or cannot create forecast.**
 
-  Most likely, you do not have the correct permissions. Check with your admin to ensure you have permissions for **Analytics, Forecasting - Edit**.
+  Most likely, you do not have the correct permissions. Check with your admin to make sure you have permissions for **Analytics, Forecasting - Edit**.
 + **Forecasting override upload failed.**
 
   Check the error message to make sure the `.csv` file format matches our data schema. For more information on the required format, see [Import historical data for forecasting](https://docs.aws.amazon.com/connect/latest/adminguide/import-data-for-forecasting.html).
@@ -51,7 +51,7 @@ Only the latest uploaded .csv file is used, and the previous uploaded files are 
   The data uploads for long-term and short-term forecasts are independent, so you need to upload these separately: one for long-term and one for short-term. First, check if you also uploaded the daily historical data for long-term forecast. The 15 to 30 minute interval data is for short-term forecasts only. Second, check if the long-term daily level `.csv` file has more than 6 consecutive months historical data counted from now.
 + **Short-term forecast failed even after I uploaded more than 6 month of data.**
 
-  The data uploads for long-term and short-term forecasts are independent. The daily interval data is for long-term forecast only. First, check if you uploaded the 15 or 30 minute interval historical data for short-term forecast and the file has more than 6 consecutive month data. Second, check what is the forecast interval setting in `.csv` file to ensure it matches the historical intervals on the UI.
+  The data uploads for long-term and short-term forecasts are independent. The daily interval data is for long-term forecast only. First, check if you uploaded the 15 or 30 minute interval historical data for short-term forecast and the file has more than 6 consecutive month data. Second, check what is the forecast interval setting in `.csv` file to make sure it matches the historical intervals on the UI.
 + **Why am I unable to publish a forecast?**
 
   It's possible that you do not have permissions to publish a forecast. It's also possible that the forecasts (both contact volume and handle time for each of short-term and long-term) have not been successfully generated. Check if you have the permission for **Analytics, Forecasting - Publish** and check if the forecasts have been successfully generated (the status column should show **complete"** when the forecasts are generated).
@@ -64,7 +64,7 @@ Only the latest uploaded .csv file is used, and the previous uploaded files are 
   You can see the last published and the last computed forecast. The last computed forecast is overwritten after the next forecast is computed. If you want to retain this data, you can download the `.csv` file that contains the last computed and published forecasts.
 + **Why are the forecasts used in capacity planning different than the ones I see in forecasting or scheduling?**
 
-  The forecast that is used in capacity planning is the most recent published long-term forecast. You may see a different forecast in forecasting if you are looking at the most recent computed forecast in comparison to a published forecast. You will see a different forecast in scheduling, as that is the most recently published short-term forecast.
+  The forecast that is used in capacity planning is the most recent published long-term forecast. You might see a different forecast in forecasting if you are looking at the most recent computed forecast in comparison to a published forecast. You will see a different forecast in scheduling, as that is the most recently published short-term forecast.
 + **Why am I unable to delete a forecast?**
 
   Forecasts can only be deleted if they are not being used for a capacity plan (long-term forecast) or schedule (short-term forecast). Check if the forecast has been published and that it is used for scheduling or capacity planning. You must delete the schedule or capacity plans to delete the forecast.
@@ -93,9 +93,9 @@ Only the latest uploaded .csv file is used, and the previous uploaded files are 
 <a name="troubleshooting-scheduling"></a>
 + **The system does not generate schedules for some or all of my agents. What should I check?**
 
-  This can occur because the last date an agent can be scheduled is before the time of the schedule and/or the agent's maximum working hours don't allow them to work in that shift profile. Review the following steps to address this issue.
+  This can occur because the last date an agent can be scheduled is before the time of the schedule or the agent's maximum working hours don't allow them to work in that shift profile. Review the following steps to address this issue.
 
-  1. Check **Staff Rules** to ensure that the **End date** is not configured for agents who do not have a schedule. **End date** allows schedulers to specify the last date that an agent can be scheduled until.
+  1. Check **Staff Rules** to make sure that the **End date** is not configured for agents who do not have a schedule. **End date** allows schedulers to specify the last date that an agent can be scheduled until.
 
   1. Check shift profiles to see if the **Start time** and **End time** hourly schedule window is equal to or more than **Maximum working hours** per agent.
 
@@ -113,7 +113,7 @@ Only the latest uploaded .csv file is used, and the previous uploaded files are 
   ```
 + **Why are lunch activities for some agents scheduled before the first break activity, even though I have specified a lunch activity to be placed after the break?**
 
-  This can be caused by having overlaps in the break and lunch activities. Check the specific shift profile to see if the placement window for both activities overlap. For example, you may have configured a break activity to be placed between 11am and 1pm and a lunch activity to be placed between 10am and 3pm, so the system may choose to place the break at 12:30pm and the lunch at 11:30am. Remove or minimize the overlap of activity placement windows to solve this issue.
+  This can be caused by having overlaps in the break and lunch activities. Check the specific shift profile to see if the placement window for both activities overlap. For example, you might have configured a break activity to be placed between 11am and 1pm and a lunch activity to be placed between 10am and 3pm, so the system might choose to place the break at 12:30pm and the lunch at 11:30am. Remove or minimize the overlap of activity placement windows to solve this issue.
 + **Why do I see agents get scheduled at different start times than expected?**
 
   This is commonly caused by a mismatch between the time zone of the shift profile and the time zones configured for your agents. Shift profiles support any time zone, and staff rules specify which time zone each agent should use. Review the following steps to address this issue.
@@ -129,7 +129,7 @@ Only the latest uploaded .csv file is used, and the previous uploaded files are 
 
   How agents are added to the roster depends on multiple configurations in staffing groups and staff rules, such as min/max working hours, min staff required, or min/max consecutive work days. Connect Customer takes the defined working hours and adds an agent to the roster by taking into consideration other rules that have been defined in staffing groups and staff rules.
 
-  For example, if the minimum working hours are 40 hours, and the agent belongs to a staff group that operates 12 hours per day and 6 days per week, then the agent is likely to have some days without schedules. The service optimizes schedules based on forecasts. As long as the minimum amount of 40 hours per week (4 days with 10 hours per day) is met, the agent may not be staffed on some days when the call volume is low. In cases where you see that an agent doesn't have a schedule for a day, check the agent's minimum working hours. Also, check if the agent has been added to the roster for the remainder of the week.
+  For example, if the minimum working hours are 40 hours, and the agent belongs to a staff group that operates 12 hours per day and 6 days per week, then the agent is likely to have some days without schedules. The service optimizes schedules based on forecasts. As long as the minimum amount of 40 hours per week (4 days with 10 hours per day) is met, the agent might not be staffed on some days when the call volume is low. In cases where you see that an agent doesn't have a schedule for a day, check the agent's minimum working hours. Also, check if the agent has been added to the roster for the remainder of the week.
 + **Why is my agent's scheduled time different than the shift profile time? For example, my shift profile has 10 hours every weekday, but my agent only gets scheduled for 6 hours?**
 
   The shift profile operation hours apply to staffing groups. If you don't set the staffing groups rule for **shift start time**, Connect Customer optimizes your agent start time based on the forecasted workload.

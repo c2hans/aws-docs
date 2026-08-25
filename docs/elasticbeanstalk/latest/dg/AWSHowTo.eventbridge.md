@@ -15,7 +15,7 @@ You can create rules in Amazon EventBridge to act on any of the following Elasti
 
 To capture specific Elastic Beanstalk events that you're interested in, define event-specific patterns that EventBridge can use to detect the events. Event patterns have the same structure as the events they match. The pattern quotes the fields that you want to match and provides the values that you're looking for. Events are emitted on a best effort basis. They're delivered from Elastic Beanstalk to EventBridge in near real-time under normal operational circumstances. However, situations can arise that may delay or prevent delivery of an event.
 
-For a list of fields that are contained in Elastic Beanstalk events and their possible string values, see [Elastic Beanstalk event field mapping](#eb-eventbridge-mapping). For information about how EventBridge rules work with event patterns, see [Events and Event Patterns in EventBridge](https://docs.aws.amazon.com//eventbridge/latest/userguide/eventbridge-and-event-patterns.html).
+For a list of fields that are contained in Elastic Beanstalk events and their possible string values, see [Elastic Beanstalk event field mapping](#eb-eventbridge-mapping). For information about how EventBridge rules work with event patterns, see [Events and Event Patterns in EventBridge](https://docs.aws.amazon.com/eventbridge/latest/userguide/eventbridge-and-event-patterns.html).
 
 ## Monitor an Elastic Beanstalk resource with EventBridge
 <a name="eb-eventbridge-tasks"></a>
@@ -74,7 +74,7 @@ If you already have text for an event pattern and don't need the EventBridge con
 
 1. For **Select a target**, choose the target action to take when a resource state change event is received from Elastic Beanstalk.
 
-   For example, you can use an Amazon Simple Notification Service (SNS) topic to send an email or text message when an event occurs. To do this, you need to create an Amazon SNS topic using the Amazon SNS console. To learn more, see [Using Amazon SNS for user notifications](https://docs.aws.amazon.com//sns/latest/dg/sns-user-notifications.html).
+   For example, you can use an Amazon Simple Notification Service (SNS) topic to send an email or text message when an event occurs. To do this, you need to create an Amazon SNS topic using the Amazon SNS console. To learn more, see [Using Amazon SNS for user notifications](https://docs.aws.amazon.com/sns/latest/dg/sns-user-notifications.html).
 **Important**
 Some target actions might require the use of other services and incur additional charges, such as the Amazon SNS or Lambda service. For more information about AWS pricing, see [https://aws.amazon.com/pricing/](https://aws.amazon.com/pricing/). Some services are part of the AWS Free Usage Tier. If you are a new customer, you can test drive these services for free. See [https://aws.amazon.com/free/](https://aws.amazon.com/free/) for more information.
 
@@ -246,7 +246,7 @@ The following is an example Elastic Beanstalk event for a *health status change*
 ## Elastic Beanstalk event field mapping
 <a name="eb-eventbridge-mapping"></a>
 
-The following table maps Elastic Beanstalk event fields and their possible string values to the EventBridge `detail-type` field. For more information about how EventBridge works with event patterns for a service, see [Events and Event Patterns in EventBridge](https://docs.aws.amazon.com//eventbridge/latest/userguide/eventbridge-and-event-patterns.html).
+The following table maps Elastic Beanstalk event fields and their possible string values to the EventBridge `detail-type` field. For more information about how EventBridge works with event patterns for a service, see [Events and Event Patterns in EventBridge](https://docs.aws.amazon.com/eventbridge/latest/userguide/eventbridge-and-event-patterns.html).
 
 - ** Elastic Beanstalk resource status change **
   - ****Elastic Beanstalk field *Status***:** Environment creation started / ****Elastic Beanstalk field *Severity***:** INFO / ****Elastic Beanstalk field *Message***:** createEnvironment is starting.

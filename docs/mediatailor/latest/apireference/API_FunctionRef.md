@@ -10,6 +10,11 @@ A reference to a child function within a `SEQUENTIAL_EXECUTOR` function.
 ## Contents
 <a name="API_FunctionRef_Contents"></a>
 
+ ** Alias **   <a name="mediatailor-Type-FunctionRef-Alias"></a>
+An optional alternate name for the function within the executor. If omitted, MediaTailor uses the function identifier.
+Type: String
+Required: No
+
  ** FunctionId **   <a name="mediatailor-Type-FunctionRef-FunctionId"></a>
 The identifier of the child function to execute in this step.
 Type: String

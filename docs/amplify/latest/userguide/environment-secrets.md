@@ -49,8 +49,6 @@ Specify an Systems Manager parameter in the format `/amplify/{your_app_id}/{your
 
 You can use the following environment secrets that are accessible by default within the Amplify console.
 
-****
-
 | Variable name | Description | Example value |
 | --- | --- | --- |
 | AMPLIFY\_SIWA\_CLIENT\_ID | The Sign in with Apple client ID | `com.yourapp.auth` |

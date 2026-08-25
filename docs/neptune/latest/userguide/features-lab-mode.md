@@ -115,4 +115,4 @@ This feature is available starting in [Neptune engine release 1.4.0.0](engine-re
 
  Allowed values: enabled/disabled
 
- [Gremlin query result cache](https://docs.aws.amazon.com//neptune/latest/userguide/gremlin-results-cache.html), when enabled, allows caching of query results on the database. By deafult the approximate estimate is used to determine the size of the result cached, with this lab mode param `AccurateQRCMemoryEstimation` enabled, the size estimation for cached results will use accurate size estimates instead of approximate. This labmode parameter is available starting from Neptune engine release version 1.4.0.0.
+ [Gremlin query result cache](https://docs.aws.amazon.com/neptune/latest/userguide/gremlin-results-cache.html), when enabled, allows caching of query results on the database. By deafult the approximate estimate is used to determine the size of the result cached, with this lab mode param `AccurateQRCMemoryEstimation` enabled, the size estimation for cached results will use accurate size estimates instead of approximate. This labmode parameter is available starting from Neptune engine release version 1.4.0.0.

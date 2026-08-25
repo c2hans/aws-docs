@@ -46,4 +46,4 @@ When a stack instance goes into **Outdated** status, it usually means that the s
 
 If the stack set update includes changes to the template (that is, if the `TemplateBody` or `TemplateURL` properties are specified), or if the `Parameters` property is specified, CloudFormation marks all stack instances with a status of **Outdated** prior to updating the stack instances in the specified accounts and AWS Regions. If the stack set update does not include changes to the template or parameters, CloudFormation updates the stack instances in the specified accounts and Regions, while leaving all other stack instances with their existing stack instance status. To update all of the stack instances associated with a stack set, do not specify the `Accounts` or `Regions` properties.
 
-For more information, see [Update Your Stack Set](https://docs.aws.amazon.com//AWSCloudFormation/latest/UserGuide/stacksets-update.html) in the CloudFormation User Guide.
+For more information, see [Update Your Stack Set](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacksets-update.html) in the CloudFormation User Guide.

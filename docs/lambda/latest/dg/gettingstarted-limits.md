@@ -22,6 +22,7 @@ The following sections list default quotas and limits in Lambda by category.
 + [Compute and storage](#compute-and-storage)
 + [Function configuration, deployment, and execution](#function-configuration-deployment-and-execution)
 + [Lambda API requests](#api-requests)
++ [Durable functions](#durable-functions-quotas)
 + [Lambda MicroVMs](#microvms-quotas)
 + [Other services](#quotas-other-services)
 
@@ -36,7 +37,6 @@ Lambda sets quotas for the amount of compute and storage resources that you can 
 | Storage for uploaded functions (.zip file archives) and layers using Lambda-managed storage. Each function version and layer version consumes storage.<br />To avoid storage limits, you can configure your functions and layers to use [self-managed S3 code storage](configuration-self-managed-storage.md) instead.<br /> For best practices on managing your code storage, see [Monitoring Lambda code storage](https://serverlessland.com/content/service/lambda/guides/aws-lambda-operator-guide/code-storage) in Serverless Land. | 300 GB (unzipped) | Not increasable. Use [self-managed S3 code storage](configuration-self-managed-storage.md) for storage beyond this limit. |
 | Storage for functions defined as container images. These images are stored in Amazon ECR. | See [Amazon ECR service quotas](https://docs.aws.amazon.com/AmazonECR/latest/userguide/service-quotas.html). |   |
 | [Elastic network interfaces per virtual private cloud (VPC)](configuration-vpc.md) This quota is shared with other services, such as Amazon Elastic File System (Amazon EFS). See [Amazon VPC quotas](https://docs.aws.amazon.com/vpc/latest/userguide/amazon-vpc-limits.html).  | 500 | Thousands |
-| Maximum running durable executions | 1,000,000 | Millions |
 
 For details on concurrency and how Lambda scales your function concurrency in response to traffic, see [Understanding Lambda function scaling](lambda-concurrency.md).
 
@@ -66,8 +66,6 @@ The Lambda documentation, log messages, and console use the abbreviation MB (rat
 | `/tmp` directory storage | Between 512 MB and 10,240 MB, in 1-MB increments |
 | File descriptors | 1,024 Lambda Managed Instances use a higher file descriptor limit of 4,096. For more information, see [Understanding the Lambda Managed Instances execution environment](lambda-managed-instances-execution-environment.md).  |
 | Execution processes/threads | 1,024 Lambda Managed Instances use the default process and thread limits from [Bottlerocket](https://aws.amazon.com/bottlerocket/). For more information, see [Understanding the Lambda Managed Instances execution environment](lambda-managed-instances-execution-environment.md).  |
-| Maximum number of durable operations per durable execution | 3,000 For more information, see [Available durable operations](durable-execution-sdk.md#durable-sdk-operations).  |
-| Durable execution storage written in megabytes | 100 MB Cumulative payload size persisted by durable functions per execution. For more information, see [persisted data per durable operation](durable-execution-sdk.md#durable-operations-checkpoint-consumption).  |
 
 ## Lambda API requests
 <a name="api-requests"></a>
@@ -81,16 +79,28 @@ The following quotas are associated with Lambda API requests.
 | Invocation requests per function version or alias (requests per second) | 10 x allocated [provisioned concurrency](configuration-concurrency.md) This quota applies only to functions that use provisioned concurrency.  |
 | [GetFunction](https://docs.aws.amazon.com/lambda/latest/api/API_GetFunction.html) API requests | 100 requests per second. Cannot be increased. |
 | [GetPolicy](https://docs.aws.amazon.com/lambda/latest/api/API_GetPolicy.html) API requests | 15 requests per second. Cannot be increased. |
-| [CheckpointDurableExecution](https://docs.aws.amazon.com/lambda/latest/api/API_CheckpointDurableExecution.html) API requests | 1,000 requests per second. |
+| Remainder of the control plane API requests (excludes invocation, GetFunction, and GetPolicy requests) | 15 requests per second across all APIs (not 15 requests per second per API). Cannot be increased. |
+
+## Durable functions
+<a name="durable-functions-quotas"></a>
+
+The following quotas apply to [durable functions](durable-functions.md). Quotas apply per AWS Region. Higher defaults apply in US East (N. Virginia), US West (Oregon), and Europe (Ireland), as noted in the table. Except as noted, these quotas can be increased. For more information, see [Requesting a quota increase](https://docs.aws.amazon.com/servicequotas/latest/userguide/request-quota-increase.html) in the *Service Quotas User Guide*.
+
+| Resource | Default quota |
+| --- | --- |
+| Maximum running durable executions | 5,000,000 per Region.<br />10,000,000 in US East (N. Virginia), US West (Oregon), and Europe (Ireland).<br />This is a soft limit that can be increased. |
+| Maximum number of durable operations per durable execution | 3,000<br />Cannot be increased. For more information, see [Available durable operations](durable-execution-sdk.md#durable-sdk-operations). |
+| Durable execution storage written in megabytes | 100 MB<br />Cannot be increased. Cumulative payload size persisted by durable functions per execution. For more information, see [persisted data per durable operation](durable-execution-sdk.md#durable-operations-checkpoint-consumption). |
+| Function invocation rate to initiate durable executions | 300 requests per second. |
+| [CheckpointDurableExecution](https://docs.aws.amazon.com/lambda/latest/api/API_CheckpointDurableExecution.html) API requests | 10,000 requests per second.<br />20,000 requests per second in US East (N. Virginia), US West (Oregon), and Europe (Ireland). |
 | [GetDurableExecution](https://docs.aws.amazon.com/lambda/latest/api/API_GetDurableExecution.html) API requests | 30 requests per second. |
 | [GetDurableExecutionHistory](https://docs.aws.amazon.com/lambda/latest/api/API_GetDurableExecutionHistory.html) API requests | 15 requests per second. |
-| [GetDurableExecutionState](https://docs.aws.amazon.com/lambda/latest/api/API_GetDurableExecutionState.html) API requests | 1,000 requests per second. |
+| [GetDurableExecutionState](https://docs.aws.amazon.com/lambda/latest/api/API_GetDurableExecutionState.html) API requests | 10,000 requests per second.<br />20,000 requests per second in US East (N. Virginia), US West (Oregon), and Europe (Ireland). |
 | [ListDurableExecutionsByFunction](https://docs.aws.amazon.com/lambda/latest/api/API_ListDurableExecutionsByFunction.html) API requests | 15 requests per second. |
-| [SendDurableExecutionCallbackFailure](https://docs.aws.amazon.com/lambda/latest/api/API_SendDurableExecutionCallbackFailure.html) API requests | 300 requests per second. |
-| [SendDurableExecutionCallbackHeartbeat](https://docs.aws.amazon.com/lambda/latest/api/API_SendDurableExecutionCallbackHeartbeat.html) API requests | 300 requests per second. |
-| [SendDurableExecutionCallbackSuccess](https://docs.aws.amazon.com/lambda/latest/api/API_SendDurableExecutionCallbackSuccess.html) API requests | 300 requests per second. |
-| [StopDurableExecution](https://docs.aws.amazon.com/lambda/latest/api/API_StopDurableExecution.html) API requests | 30 requests per second. |
-| Remainder of the control plane API requests (excludes invocation, GetFunction, and GetPolicy requests) | 15 requests per second across all APIs (not 15 requests per second per API). Cannot be increased. |
+| [SendDurableExecutionCallbackFailure](https://docs.aws.amazon.com/lambda/latest/api/API_SendDurableExecutionCallbackFailure.html) API requests | 3,000 requests per second.<br />6,000 requests per second in US East (N. Virginia), US West (Oregon), and Europe (Ireland). |
+| [SendDurableExecutionCallbackHeartbeat](https://docs.aws.amazon.com/lambda/latest/api/API_SendDurableExecutionCallbackHeartbeat.html) API requests | 3,000 requests per second.<br />6,000 requests per second in US East (N. Virginia), US West (Oregon), and Europe (Ireland). |
+| [SendDurableExecutionCallbackSuccess](https://docs.aws.amazon.com/lambda/latest/api/API_SendDurableExecutionCallbackSuccess.html) API requests | 3,000 requests per second.<br />6,000 requests per second in US East (N. Virginia), US West (Oregon), and Europe (Ireland). |
+| [StopDurableExecution](https://docs.aws.amazon.com/lambda/latest/api/API_StopDurableExecution.html) API requests | 300 requests per second.<br />600 requests per second in US East (N. Virginia), US West (Oregon), and Europe (Ireland). |
 
 ## Lambda MicroVMs
 <a name="microvms-quotas"></a>

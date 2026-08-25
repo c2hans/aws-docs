@@ -10,7 +10,7 @@ Amazon SageMaker HyperPod Amazon Machine Images (AMIs) are specialized machine i
 Key components added to HyperPod AMIs include:
 + [Public AMIs](sagemaker-hyperpod-release-public-ami.md) with support for [building custom AMIs](hyperpod-custom-ami-support.md)
 + Advanced orchestration tools:
-  + [Orchestrating SageMaker HyperPod clusters with SlurmSlurm orchestration](sagemaker-hyperpod-slurm.md)
+  + [Orchestrating SageMaker HyperPod clusters with Slurm](sagemaker-hyperpod-slurm.md)
   + [Orchestrating SageMaker HyperPod clusters with Amazon EKS](sagemaker-hyperpod-eks.md)
 + Cluster management dependencies
 + Built-in resiliency features:

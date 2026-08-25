@@ -26,7 +26,7 @@ The following are considerations when using instance scale-in protection:
   + Health check replacement if the instance fails health checks. For more information, see [Health checks for instances in an Auto Scaling group](ec2-auto-scaling-health-checks.md).
   + Spot Instance interruptions. A Spot Instance is terminated when capacity is no longer available or the Spot price exceeds your maximum price.
   + A Capacity Block reservation ends. Amazon EC2 reclaims the Capacity Block instances even if they are protected from scale in.
-  + Manual termination through the `terminate-instance-in-auto-scaling-group` command. For more information, see [Terminate an instance in your Auto Scaling group (AWS CLI)](ec2-auto-scaling-scaling-manually.md#terminate-an-instance-aws-cli).
+  + Manual termination through the `terminate-instance-in-auto-scaling-group` command. For more information, see [Terminate instances in your Auto Scaling group (AWS CLI)](ec2-auto-scaling-scaling-manually.md#terminate-an-instance-aws-cli).
   + Manual termination through the Amazon EC2 console, CLI commands, and API operations. To protect Auto Scaling instances from manual termination, enable Amazon EC2 termination protection. (This does not prevent Amazon EC2 Auto Scaling from terminating instances or manual termination through the `terminate-instance-in-auto-scaling-group` command.) For information about enabling Amazon EC2 termination protection in a launch template, see [Create a launch template using advanced settings](advanced-settings-for-your-launch-template.md).
 
 ## Change scale-in protection for an Auto Scaling group

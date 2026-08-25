@@ -18,7 +18,7 @@ The following table describes important changes in each release of the *AWS Elem
 | [Added `trickplay_type` value](manifest-filtering.md) | Updated `trickplay_type` to include `none`, which filters out all trickplay tracks. | April 24, 2023 |
 | [Added missing quotation marks](supported-inputs-vod-smil.md) | Added missing closing quotation mark to example. | April 24, 2023 |
 | [Clarified SPEKE support](encryption-choosing-speke-version.md) | Updated SPEKE tables to clarify protocol and DRM system support. | February 20, 2023 |
-| [Updated the IAM guidance](security-iam.md) | Updated guide to align with the IAM best practices. For more information, see [Security best practices in IAM](https://docs.aws.amazon.com//IAM/latest/UserGuide/best-practices.html). | February 8, 2023 |
+| [Updated the IAM guidance](security-iam.md) | Updated guide to align with the IAM best practices. For more information, see [Security best practices in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html). | February 8, 2023 |
 | [Removed two fields](endpoints-hls-include-streams.md) | Removed two stream selection fields to align with their removal from the console. | January 5, 2023 |
 | [Corrected typo](cdn-auth.md) | Changed instance of "authentication" to "authorization". | December 19, 2022 |
 | [Updated I-frame only trick-play support](trick-play.md) | MediaPackage now supports I-frame only trick-play for DASH VOD. | November 7, 2022 |
@@ -91,8 +91,6 @@ The following table describes important changes in each release of the *AWS Elem
 <a name="earlier-updates"></a>
 
 The following table describes important changes in each release of the *AWS Elemental MediaPackage User Guide* before May 2018.
-
-****
 
 | Change | Description | Date |
 | --- | --- | --- |

@@ -122,8 +122,6 @@ The following table describes Aurora PostgreSQL releases.
 
 The following table describes the important changes in each release of the *Release Notes for Aurora PostgreSQL* before March 22, 2022.
 
-****
-
 | Change | Description | Date changed |
 | --- | --- | --- |
 | Aurora PostgreSQL releases 13.5, 12.9, 11.14, and 10.19 | New releases of Amazon Aurora PostgreSQL-Compatible Edition support compatibility with PostgreSQL 13.5, PostgreSQL 12.9, PostgreSQL 11.14, and PostgreSQL 10.19. | February 25, 2022 |

@@ -17,7 +17,6 @@ The AWS IoT Device Shadow library has no dependencies on additional libraries ot
 
 This library can be freely used and is distributed under the [MIT open source license](https://freertos.org/a00114.html).
 
-****
 <a name="shadow-memory-estimate"></a>
 <table>
 <thead>

@@ -10,8 +10,6 @@ Consult the following table for information about how to assess the audio source
 **Note**
 You don't need to perform any assessment of the audio being delivered over CDI or from an AWS Elemental Link device. These sources are always acceptable to MediaLive.
 
-****
-
 | Information to obtain | Verify the following |
 | --- | --- |
 | The available audio codecs or formats. | Make sure that at least one of the audio codecs is included in the list of audio codecs in [Supported codecs by input type](inputs-supported-codecs-by-input-type.md).  |

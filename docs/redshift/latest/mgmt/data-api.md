@@ -98,8 +98,6 @@ With this method, you can also supply a `region` value that specifies the AWS Re
 
  The following table maps Java Database Connectivity (JDBC) data types to the data types you specify in Data API calls.
 
-****
-
 |  JDBC data type  |  Data API data type  |
 | --- | --- |
 | `INTEGER, SMALLINT, BIGINT` | `LONG` |

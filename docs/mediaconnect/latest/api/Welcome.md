@@ -15,4 +15,4 @@ Use the following links to get started with the MediaConnect API:
 +  [Common parameters](https://docs.aws.amazon.com/mediaconnect/latest/api/CommonParameters.html): Parameters that all operations can use.
 +  [Common errors](https://docs.aws.amazon.com/mediaconnect/latest/api/CommonErrors.html): Client and server errors that all operations can return.
 
-This document was last published on August 13, 2026.
+This document was last published on August 24, 2026.

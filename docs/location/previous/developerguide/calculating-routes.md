@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/calcula
 <a name="calculating-routes"></a>
 
 **Note**
-We released a new version of the Routes API, see the updated [Routes Developer Guide](https://docs.aws.amazon.com//location/latest/developerguide/routes.html) or [Routes API](https://docs.aws.amazon.com/location/latest/APIReference/API_Operations_Amazon_Location_Service_Routes_V2.html) for revised information.
+We released a new version of the Routes API, see the updated [Routes Developer Guide](https://docs.aws.amazon.com/location/latest/developerguide/routes.html) or [Routes API](https://docs.aws.amazon.com/location/latest/APIReference/API_Operations_Amazon_Location_Service_Routes_V2.html) for revised information.
 
 Amazon Location lets you select a data provider for calculating a route by creating and configuring a route calculator resource.
 

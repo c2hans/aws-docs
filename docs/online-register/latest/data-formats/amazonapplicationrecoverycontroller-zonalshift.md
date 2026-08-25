@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon Application Recovery Controller - Zonal Shift provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="arc-zonal-shift-GetAutoshiftObserverNotificationStatus"></a>[GetAutoshiftObserverNotificationStatus](https://docs.aws.amazon.com/arc-zonal-shift/latest/api/API_GetAutoshiftObserverNotificationStatus.html) | Get autoshift observer notification status | Read |

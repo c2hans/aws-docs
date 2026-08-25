@@ -2,8 +2,11 @@
 source_url: https://docs.aws.amazon.com/connect-decisions/latest/adminguide/connecting-via-jdbc.html
 ---
 
-# Connecting to Your Database with JDBC
+# Connecting via JDBC
 <a name="connecting-via-jdbc"></a>
+
+## Connecting to Your Database with JDBC
+<a name="connecting-via-jdbc-intro"></a>
 
 This guide walks you through connecting your database to Amazon Connect Decisions using **Java Database Connectivity** (JDBC). You'll set up secure encryption for your database credentials and establish a connection that Amazon Connect Decisions can use to access your data.
 
@@ -15,7 +18,7 @@ JDBC connection allows Amazon Connect Decisions to connect to your existing data
 + You want real-time or near-real-time data access without manual file exports
 + Your data volume is large and frequently updated
 + You prefer to keep your data in its current location rather than duplicating it
-+ If you're working with smaller datasets or prefer file-based uploads, the standard CSV upload process may be simpler for your needs. Refer to Data Onboarding User Guide for more details on this process.
++ If you're working with smaller datasets or prefer file-based uploads, the standard CSV upload process may be simpler for your needs. Refer to [Data Onboarding User Guide](data-onboarding.html) for more details on this process.
 
 ## Prerequisites
 <a name="connecting-via-jdbc-prerequisites"></a>
@@ -138,7 +141,7 @@ Now that you have a KMS key, you'll create a secret in AWS Secrets Manager to se
 
    ```
    {
-     "Version" : "2012-10-17",
+     "Version" : "2012-10-17"		 	 	 ,
      "Statement" : [ {
        "Effect" : "Allow",
        "Principal" : {
@@ -230,10 +233,10 @@ With your KMS key and secret configured, you're ready to establish the JDBC conn
 
 1. **Continue with data mapping**
    + From this point forward, the experience is identical to our Data Onboarding flow
-   + Follow the Data Mapping section of the Data Onboarding User Guide to complete your setup
+   + Follow the Data Mapping section of the [Data Onboarding User Guide](data-onboarding.html) to complete your setup
 
 ### What to Expect
-<a name="connecting-via-jdbc-connection-what-to-expect"></a>
+<a name="connecting-via-jdbc-connect-what-to-expect"></a>
 
 Once your connection is established and tables are selected, Amazon Connect Decisions can read data from your database. The connection remains active and secure, with credentials encrypted and managed through AWS Secrets Manager. You won't need to manually update credentials in Amazon Connect Decisions, any changes you make in Secrets Manager will automatically be reflected.
 

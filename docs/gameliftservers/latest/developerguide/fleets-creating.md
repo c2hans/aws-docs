@@ -5,9 +5,9 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/fl
 # Create an Amazon GameLift Servers managed EC2 fleet
 <a name="fleets-creating"></a>
 
-This topic describes how to create an Amazon GameLift Servers managed EC2 fleet. Managed fleets use Amazon Elastic Compute Cloud (Amazon EC2) compute instances that are optimized for multiplayer game hosting. You can create managed fleets that deploy computes to globally to AWS Regions and Local Zones supported by Amazon GameLift Servers.
+This topic describes how to create an Amazon GameLift Servers managed EC2 fleet. Managed fleets use Amazon Elastic Compute Cloud (Amazon EC2) compute instances that are optimized for multiplayer game hosting. You can create managed fleets that deploy computes globally to AWS Regions and Local Zones supported by Amazon GameLift Servers.
 
-When you create a new managed EC2 fleet resource, you immediately initiate the first phase of fleet creation. Managed fleet creation passes through several phases as Amazon GameLift Servers deploys an EC2 instance, installs a runtime environment and your game server build on the instance, and begins launching game servers. Depending on the runtime environment your game server build requires, Amazon GameLift Servers deploys the latest version of the Amazon Machine Image (AMI) at the time of fleet creation (and all future instances in the fleet will use the same version).You can monitor a fleet's status in the console or using the AWS Command Line Interface (AWS CLI). When a fleet is ready to host game sessions, the status changes to `ACTIVE`. For more information about managed fleet creation, see these topics:
+When you create a new managed EC2 fleet resource, you immediately initiate the first phase of fleet creation. Managed fleet creation passes through several phases as Amazon GameLift Servers deploys an EC2 instance, installs a runtime environment and your game server build on the instance, and begins launching game servers. Depending on the runtime environment your game server build requires, Amazon GameLift Servers deploys the latest version of the Amazon Machine Image (AMI) at the time of fleet creation (and all future instances in the fleet will use the same version). You can monitor a fleet's status in the console or using the AWS Command Line Interface (AWS CLI). When a fleet is ready to host game sessions, the status changes to `ACTIVE`. For more information about managed fleet creation, see these topics:
 
 **Note**
 As a best practice, we recommend replacing your fleets every 30 days to maintain a secure and up-to-date runtime environment for your hosted game servers. This requires creating a new fleet and migrating player traffic to it. For more guidance, see [Security best practices for Amazon GameLift Servers](security-best-practices.md).
@@ -41,7 +41,7 @@ In the [Amazon GameLift Servers console](https://console.aws.amazon.com/gamelift
 
       You must create the role before you create a fleet that uses it. In addition, to create a fleet with an instance role, your AWS user must have IAM `PassRole` permission (see [IAM permission examples for Amazon GameLift Servers](gamelift-iam-policy-examples.md)).
 
-   1. Turn on the **Generate a TLS certificate** option to set up authentication and encryption for your game, Game clients use this certificate to authenticate a game server when connecting and encrypt all client/server communication. For each instance in a TLS-enabled fleet. Amazon GameLift Servers also creates a new DNS entry with the certificate. This setting can't be changed after you create the fleet.
+   1. Turn on the **Generate a TLS certificate** option to set up authentication and encryption for your game. Game clients use this certificate to authenticate a game server when connecting and encrypt all client/server communication. For each instance in a TLS-enabled fleet. Amazon GameLift Servers also creates a new DNS entry with the certificate. This setting can't be changed after you create the fleet.
 
    1. Amazon GameLift Servers emits metric data for each individual fleet. If you want to combine metric data for multiple fleets, specify a **Metric group** name. Use the same metric group name for all fleets that you want to combine metrics for. Use CloudWatch to view the aggregated metric group data.
 
@@ -122,7 +122,7 @@ Review your settings before creating the fleet. Although some settings can be up
 + Additional options, including instance role and TLS certificate generation.
 + Instance details, including fleet type (Spot or On-Demand) and EC2 instance type.
 When you're ready to deploy the new fleet, choose **Create**. Amazon GameLift Servers immediately begins the fleet activation process, assigning a unique ID and placing the fleet in `NEW` status. Track the fleet's progress from the **Fleets** page.View the details page for the fleet and go to the **Events** tab.
-You can adjust a fleet's hosting capacity after the fleet reaches ACTIVE status. Amazon GameLift Servers initially deploys a fleet with a single instance in each fleet location. and you adjust capacity by adding instances to each location. For more information, see [Scaling game hosting capacity with Amazon GameLift Servers](fleets-manage-capacity.md).
+You can adjust a fleet's hosting capacity after the fleet reaches ACTIVE status. Amazon GameLift Servers initially deploys a fleet with a single instance in each fleet location, and you adjust capacity by adding instances to each location. For more information, see [Scaling game hosting capacity with Amazon GameLift Servers](fleets-manage-capacity.md).
 
 ------
 #### [ AWS CLI ]
@@ -133,7 +133,7 @@ Use the [`create-fleet`](https://awscli.amazonaws.com/v2/documentation/api/lates
 
 The following example request creates a new fleet with the minimal settings that are required to deploy a fleet with running game servers that game clients can connect to. The new fleet has these characteristics:
 + It specifies a game server build, which has been uploaded to Amazon GameLift Servers and in `READY` status.
-+ Is uses c5.large On-Demand Instances with an operating system that matches the selected game build.
++ It uses c5.large On-Demand Instances with an operating system that matches the selected game build.
 + It sets the fleet's home AWS Region to `us-west-2` and deploys instances to that Region only.
 + Based on the runtime configuration, each compute in the fleet runs one game server process, which means that each compute can host only one game session at a time. Game session activation timeout is set to the default value of 300 seconds, and there's no limit on the number of concurrent activations.
 + Players can connect to game servers using a single port setting of `33435`.

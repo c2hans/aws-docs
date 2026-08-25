@@ -19,8 +19,6 @@ A *job* in AWS Snowball Edge is a discrete unit of work, defined when you create
 
 Before creating a job, ensure the [prerequisites](snowball-prereqs.md) are met. Each job is defined by the details that you specify when it's created. The following table describes all the details of a job.
 
-****
-
 | Console identifier | API identifier | Detail description |
 | --- | --- | --- |
 | Job name | Description | A name for the job, containing alphanumeric characters, spaces, and any Unicode special characters. |

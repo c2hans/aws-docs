@@ -15,8 +15,6 @@ The following examples are separated by ARN types and show how they can be const
 ## Schema Arns
 <a name="schemaarns"></a>
 
-****
-
 - **Development**
   - **Format or Example:** Format / **Schema Arn:** arn:aws:clouddirectory:us-west-2:{{accountId}}:schema/development/{{SchemaName}}
   - **Format or Example:** Example / **Schema Arn:** arn:aws:clouddirectory:us-west-2:12345678910:schema/development/cognito
@@ -35,8 +33,6 @@ The following examples are separated by ARN types and show how they can be const
 
 ## Directory Arns
 <a name="directoryarns"></a>
-
-****
 
 - **Directory Arn**
   - **Format or example:** Format / **Arn:** arn:aws:clouddirectory:us-west-2:{{Directory owner accountId}}:directory/{{directoryId}}

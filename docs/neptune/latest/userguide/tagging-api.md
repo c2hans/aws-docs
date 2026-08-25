@@ -31,8 +31,6 @@ When working with XML using the Neptune API, tags use the following schema:
 
 The following table provides a list of the allowed XML tags and their characteristics. Values for `Key` and `Value` are case-dependent. For example, `project=Trinity` and `PROJECT=Trinity` are two distinct tags.
 
-****
-
 | Tagging Element | Description |
 | --- | --- |
 | TagSet | A tag set is a container for all tags that are assigned to a Neptune resource. There can be only one tag set per resource. You work with a TagSet only through the Neptune API. |

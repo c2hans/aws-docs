@@ -12,7 +12,7 @@ The Amazon Chime application programming interface (API) is designed for adminis
 You can use an AWS SDK, the AWS Command Line Interface (AWS CLI), or the REST API to make API calls for Amazon Chime. We recommend using an AWS SDK or the AWS CLI. The page for each API action contains a *See Also* section that includes links to information about using the action with a language-specific AWS SDK or the AWS CLI.
 
 **Important**
-The Amazon Chime SDK Identity, Media Pipelines, Meetings, and Messaging APIs are now published on the new *Amazon Chime SDK API Reference*. For more information, see the [Amazon Chime SDK API Reference](https://docs.aws.amazon.com//chime-sdk/latest/APIReference/).
+The Amazon Chime SDK Identity, Media Pipelines, Meetings, and Messaging APIs are now published on the new *Amazon Chime SDK API Reference*. For more information, see the [Amazon Chime SDK API Reference](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/).
 
 Using an AWS SDK
  You don't need to write code to calculate a signature for request authentication. The SDK clients authenticate your requests by using access keys that you provide. For more information about AWS SDKs, see the [AWS Developer Center](https://aws.amazon.com/developer/).

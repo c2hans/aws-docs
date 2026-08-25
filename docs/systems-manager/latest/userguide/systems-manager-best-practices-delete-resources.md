@@ -9,8 +9,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/systems
 
 We recommend that you delete Systems Manager resources and artifacts that you no longer need. The following table lists each Systems Manager tool or artifact with a link to more information about deleting those resources.
 
-****
-
 | Capability or artifact | Details |
 | --- | --- |
 | Application Manager | You can't delete an application in Application Manager. However, you can remove an application from the service by deleting the underlying [tags](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_RemoveTagsFromResource.html), [Resource Groups](https://docs.aws.amazon.com/ARG/latest/userguide/deleting-resource-groups.html), or [AWS CloudFormation stacks](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-console-delete-stack.html). |

@@ -15,7 +15,7 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/scale-and-limi
 The following quotas are in place for SFTP connectors.
 
 **Note**
-More service quotas for SFTP connectors are listed in [AWS Transfer Family endpoints and quotas](https://docs.aws.amazon.com//general/latest/gr/transfer-service.html) in the *Amazon Web Services General Reference*.
+More service quotas for SFTP connectors are listed in [AWS Transfer Family endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/transfer-service.html) in the *Amazon Web Services General Reference*.
 
 **SFTP connector quotas**
 
@@ -45,7 +45,7 @@ For storing the credentials for SFTP connectors, there are quotas associated wit
 This section describes considerations for how to scale your AWS Transfer Family SFTP connector workloads. You need to take into account the following three quotas that apply when you want to scale your workloads with SFTP connectors.
 + **The maximum queue size.** This refers to the maximum number of pending operations in a connector’s queue that have been requested. A pending operation refers to any previously submitted transfer request that has not yet completed, either successfully or unsuccessfully.
 
-  The maximum queue depth for pending requests is currently set at 1,000 per connector (as defined in [AWS Transfer Family service quotas](https://docs.aws.amazon.com//general/latest/gr/transfer-service.html)). Your workloads may exceed this service limit when you request thousands of transfer operations over a short duration, and you will receive a `ThrottlingException` with the message Exceeded maximum pending requests. If your workloads are subject to this quota, contact the Transfer Family service team via AWS Support or your account team to discuss your scalability requirements.
+  The maximum queue depth for pending requests is currently set at 1,000 per connector (as defined in [AWS Transfer Family service quotas](https://docs.aws.amazon.com/general/latest/gr/transfer-service.html)). Your workloads may exceed this service limit when you request thousands of transfer operations over a short duration, and you will receive a `ThrottlingException` with the message Exceeded maximum pending requests. If your workloads are subject to this quota, contact the Transfer Family service team via AWS Support or your account team to discuss your scalability requirements.
 
   You can also take either or both of the following actions.
   + Distribute your file volumes across multiple connectors.

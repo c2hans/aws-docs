@@ -46,7 +46,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-batch-jobdefinition-linuxparameters-properties"></a>
 
 `Devices`  <a name="cfn-batch-jobdefinition-linuxparameters-devices"></a>
-Any of the host devices to expose to the container. This parameter maps to `Devices` in the [Create a container](https://docs.docker.com/engine/api/v1.23/#create-a-container) section of the [Docker Remote API](https://docs.docker.com/engine/api/v1.23/) and the `--device` option to [docker run](https://docs.docker.com/engine/reference/run/).
+Any of the host devices to expose to the container. This parameter maps to `Devices` in the [Create a container](https://docs.docker.com/engine/api/latest/#tag/Container/operation/ContainerCreate) section of the [Docker Remote API](https://docs.docker.com/engine/api/latest/) and the `--device` option to [docker run](https://docs.docker.com/engine/reference/run/).
 This parameter isn't applicable to jobs that are running on Fargate resources. Don't provide it for these jobs.
 *Required*: No
 *Type*: Array of [Device](aws-properties-batch-jobdefinition-device.md)

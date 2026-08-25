@@ -44,7 +44,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/customer-profi
 
 |  Field  |  Data type  |  Description  |
 | --- | --- | --- |
-|  EndpointAddress  |  String  |  The address of the endpoint (e.g., email address, phone number).  |
+|  EndpointAddress  |  String  |  The address of the endpoint (for example, email address, phone number).  |
 |  EndpointType  |  String  |  The type of the endpoint such as default email or business email.  |
 
 ## Event data type

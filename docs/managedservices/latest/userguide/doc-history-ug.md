@@ -14,6 +14,9 @@ The following table describes the important changes in each release of the *AMS 
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [Updated MALZ Trend Micro Deep Security offboarding options](https://docs.aws.amazon.com/managedservices/latest/userguide/offboarding-malz.html) | Removed the option to reconnect offboarded Application accounts to the existing Trend Micro Deep Security Manager (DSM) and maintain licensing in the shared services account. This option is no longer available as part of AMS Advanced deprecation. | August 21, 2026 |
+| [Updated drift remediation FAQs for CloudFormation-ingested stacks](https://docs.aws.amazon.com/managedservices/latest/userguide/ex-rfc-updates-and-dd.html) | Clarified that drift remediation is supported for standard AMS change types (ct-3kinq0u4l33zf) but is not supported for stacks provisioned through the CloudFormation ingest change type (ct-36cn2avfrrj9v). | August 18, 2026 |
+| [Removed deprecated drift remediation change type references](https://docs.aws.amazon.com/managedservices/latest/userguide/ex-rfc-updates-and-dd.html) | Removed references to the deprecated managed automation drift remediation change type (ct-34sxfo53yuzah) from the drift remediation FAQs. | August 18, 2026 |
 | [Updated security enhanced AMI list](https://docs.aws.amazon.com/managedservices/latest/userguide/supported-configs.html) | Added the list of operating systems with security enhanced AMIs directly to the supported configurations page. Removed reference to AWS Artifact Security Guide. | July 29, 2026 |
 | [Updated single-account landing zone offboarding documentation](https://docs.aws.amazon.com/managedservices/latest/userguide/offboarding-salz.html) | Updated offboarding options descriptions, added resource comparison table showing what is deleted or retained under each offboarding option, and updated the AMS components removal table. | July 7, 2026 |
 | [Updated baseline monitoring alerts](https://docs.aws.amazon.com/managedservices/latest/userguide/monitoring-default-metrics.html) | Removed ALB instance RejectedConnectionCount and ALB target TargetConnectionErrorCount alerts from the baseline monitoring table. | July 1, 2026 |
@@ -142,8 +145,6 @@ The following table describes the important changes in each release of the *AMS 
 
 The following table describes the important changes to the documentation of the AMS Advanced guide prior to March 2024.
 
-****
-
 <table>
 <thead>
   <tr><th>Change</th><th>Description</th><th>Link</th></tr>
@@ -265,9 +266,9 @@ The following table describes the important changes to the documentation of the 
   <tr><td colspan="3"><b>September, 2022</b></td></tr>
   <tr><td>Updated: CLI command examples for finding resources</td><td>Added new example and that the <code>--region</code> option may be needed.</td><td><a href="skms.md">Finding the data you need (SKMS), AMS</a></td></tr>
   <tr><td>Updated: Provisioning IAM roles</td><td>IAM roles can now be created and managed with the <code>AWSManagedServicesCloudFormationAdminRole</code>.</td><td><a href="dcm-creating-stacks.md">Creating stacks using Direct Change mode</a></td></tr>
-  <tr><td>Updated: AMS Technical Standards</td><td>AMS-STD-007 Logging: (#20) Clarified forwarding requirements.</td><td><a href="dcm-security-n-compliance.md#dcm-security">Security and complianceSecurity in Direct Change mode</a></td></tr>
+  <tr><td>Updated: AMS Technical Standards</td><td>AMS-STD-007 Logging: (#20) Clarified forwarding requirements.</td><td><a href="dcm-security-n-compliance.md#dcm-security">Security and compliance</a></td></tr>
   <tr><td>Updated: How continuity management works</td><td>Revised Start Backup Job wording to "on-demand" rather than "existing".</td><td><a href="how-continuity-mgmt-works.md">How continuity management works</a></td></tr>
-  <tr><td>Updated: Security and compliance</td><td>Updated description and guidance for standard AMS-STD-007 number 20: forwarding logs between accounts.</td><td><a href="dcm-security-n-compliance.md#dcm-security">Security and complianceSecurity in Direct Change mode</a></td></tr>
+  <tr><td>Updated: Security and compliance</td><td>Updated description and guidance for standard AMS-STD-007 number 20: forwarding logs between accounts.</td><td><a href="dcm-security-n-compliance.md#dcm-security">Security and compliance</a></td></tr>
   <tr><td>Updated: Change management use cases</td><td>Removed a broken link to the legacy Change Management User Guide.</td><td><a href="dcm-change-mgmt.md#dcm-cm-use-cases">Change management use cases</a></td></tr>
   <tr><td>Updated: AMS AMI Notes</td><td>Zip file includes notes on the latest AMS Amazon machine images (AMIs) and a CSV file of the latest AMIs.</td><td><a href="samples/AMIs.csv-and-notes.09.2022.zip">AMIs.csv-and-notes.09.2022</a></td></tr>
   <tr><td colspan="3"><b>August 11, 2022</b></td></tr>

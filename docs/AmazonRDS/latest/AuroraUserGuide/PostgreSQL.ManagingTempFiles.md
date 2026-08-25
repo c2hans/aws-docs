@@ -98,6 +98,6 @@ You can use the following parameters and functions to manage the temporary files
   ```
 + **`[Performance Insights](https://aws.amazon.com/rds/performance-insights/)`** – In the Performance Insights dashboard, you can view temporary file usage by turning on the metrics **temp\_bytes** and **temp\_files**. Then, you can see the average of both of these metrics and see how they correspond to the query workload. The view within Performance Insights doesn't show specifically the queries that are generating the temporary files. However, when you combine Performance Insights with the query shown for `pg_ls_tmpdir`, you can troubleshoot, analyze, and determine the changes in your query workload.
 
-  For more information about how to analyze metrics and queries with Performance Insights, see [Analyzing metrics with the Performance Insights dashboard](USER_PerfInsights.UsingDashboard.md).
+  For more information about how to analyze metrics and queries with Performance Insights, see [Database Insights](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_DatabaseInsights.html).
 
   For an example of viewing temporary file usage with Performance Insights, see [Viewing temporary file usage with Performance Insights](PostgreSQL.ManagingTempFiles.Example.md)

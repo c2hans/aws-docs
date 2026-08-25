@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/flink-1-15-2.h
 
  Managed Service for Apache Flink supports the following new features in Apache 1.15.2:
 
-****
-
 | Feature | Description | Apache FLIP reference  |
 | --- | --- | --- |
 | Async Sink  | An AWS contributed framework for building async destinations that allows developers to build custom AWS connectors with less than half the previous effort. For more information, see [The Generic Asynchronous Base Sink](https://flink.apache.org/2022/05/06/async-sink-base.html). | [FLIP-171: Async Sink](https://cwiki.apache.org/confluence/display/FLINK/FLIP-171%3A+Async+Sink). |
@@ -44,8 +42,6 @@ When upgrading to Amazon Managed Service for Apache Flink for Apache Flink versi
 
 ## Components
 <a name="flink-1-15-2-components"></a>
-
-****
 
 | Component | Version |
 | --- | --- |

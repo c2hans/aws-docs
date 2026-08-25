@@ -14,8 +14,6 @@ Detach instances or private IPv4 addresses from a target group. If the instances
 ## Change Type Details
 <a name="ct-37bq2l9c8fzxv-MATd-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-37bq2l9c8fzxv |

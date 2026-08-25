@@ -69,7 +69,7 @@ We also recommend setting the maximum retry attempts to `1` (no retries). If the
 ------
 #### [ Java ]
 
-1. Follow the [installation instructions](https://docs.aws.amazon.com//sdk-for-java/latest/developer-guide/setup.html) to set up the AWS SDK for Java.
+1. Follow the [installation instructions](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/setup.html) to set up the AWS SDK for Java.
 
 1. Use the following code to set up a `NeptunedataClient`, run a Gremlin query, and print the result:
 
@@ -106,7 +106,7 @@ We also recommend setting the maximum retry attempts to `1` (no retries). If the
 ------
 #### [ JavaScript ]
 
-1. Follow the [installation instructions](https://docs.aws.amazon.com//sdk-for-javascript/v3/developer-guide/getting-started-nodejs.html) to set up the AWS SDK for JavaScript. Install the neptunedata client package: `npm install @aws-sdk/client-neptunedata`.
+1. Follow the [installation instructions](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/getting-started-nodejs.html) to set up the AWS SDK for JavaScript. Install the neptunedata client package: `npm install @aws-sdk/client-neptunedata`.
 
 1. Create a file named `gremlinExample.js` and paste the following code:
 

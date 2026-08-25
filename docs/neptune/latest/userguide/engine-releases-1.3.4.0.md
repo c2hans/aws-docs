@@ -25,7 +25,7 @@ parameters={"minutes":130}
 ## Improvements in this engine release
 <a name="engine-releases-1.3.4.0-improvements"></a>
 +  Added support for Gremlin limit() step execution in nested traversals for DFE engine.
-+  Added CloudWatch metrics related to Gremlin result cache as listed below, which can be useful in diagnosing and tuning result cache latency. See [ Neptune Metrics](https://docs.aws.amazon.com//neptune/latest/userguide/cw-metrics.html#cw-metrics-available) for details.
++  Added CloudWatch metrics related to Gremlin result cache as listed below, which can be useful in diagnosing and tuning result cache latency. See [ Neptune Metrics](https://docs.aws.amazon.com/neptune/latest/userguide/cw-metrics.html#cw-metrics-available) for details.
 
   ```
   NumResultCacheHit

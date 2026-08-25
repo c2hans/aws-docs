@@ -78,8 +78,6 @@ aws cloudtrail verify-query-results --local-export-path {{local_file_path}} --re
 
 The following table describes the possible validation messages for query result files and sign file.
 
-****
-
 | File Type | Validation Message | Description |
 | --- | --- | --- |
 | Sign file | Successfully validated sign and query result files | The sign file signature is valid. The query result files it references can be checked. |
@@ -281,8 +279,6 @@ The encoding for the binary fields for `ListPublicKeys` is subject to change.
 
  **Request Parameters**
 
-****
-
 | Name | Description |
 | --- | --- |
 |  StartTime  | Optionally specifies, in UTC, the start of the time range to look up the public key for CloudTrail sign file. If StartTime is not specified, the current time is used, and the current public key is returned. <br />Type: DateTime  |
@@ -291,8 +287,6 @@ The encoding for the binary fields for `ListPublicKeys` is subject to change.
  **Response Elements**
 
 `PublicKeyList`, an array of `PublicKey` objects that contains:
-
-****
 
 |  |  |
 | --- |--- |

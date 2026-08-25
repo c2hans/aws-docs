@@ -82,7 +82,7 @@ This is just an example; you must specify your own channel ARN after `--arn`. As
 ## API Requests (Create and Update)
 <a name="private-channels-auth-api"></a>
 
-For usage information, see [CreateChannel](https://docs.aws.amazon.com//ivs/latest/LowLatencyAPIReference/API_CreateChannel.html) and [UpdateChannel](https://docs.aws.amazon.com//ivs/latest/LowLatencyAPIReference/API_UpdateChannel.html) in the *IVS Low-Latency Streaming API Reference*.
+For usage information, see [CreateChannel](https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_CreateChannel.html) and [UpdateChannel](https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_UpdateChannel.html) in the *IVS Low-Latency Streaming API Reference*.
 
 ```
 POST /CreateChannel HTTP/1.1

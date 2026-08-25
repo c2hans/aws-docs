@@ -63,26 +63,18 @@ The following pipeline definition shows an EmrConfiguration object and correspon
 
 This object includes the following fields.
 
-****
-
 | Required Fields | Description | Slot Type |
 | --- | --- | --- |
 | key | key | String |
 | value | value | String |
 
-****
-
 | Optional Fields | Description | Slot Type |
 | --- | --- | --- |
 | parent | Parent of the current object from which slots are inherited. | Reference Object, for example, "parent":{"ref":"myBaseObjectId"} |
 
-****
-
 | Runtime Fields | Description | Slot Type |
 | --- | --- | --- |
 | @version | Pipeline version that the object was created with. | String |
-
-****
 
 | System Fields | Description | Slot Type |
 | --- | --- | --- |

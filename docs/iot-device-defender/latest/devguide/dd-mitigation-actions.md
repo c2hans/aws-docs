@@ -88,8 +88,6 @@ All audit checks support publishing the audit findings to Amazon SNS so you can 
 
 AWS IoT Device Defender supports the following types of mitigation actions on Audit findings:
 
-****
-
 |  Action type  | Notes |
 | --- | --- |
 | ADD\_THINGS\_TO\_THING\_GROUP | You specify the group to which you want to add the devices. You also specify whether membership in one or more dynamic groups should be overridden if that would exceed the maximum number of groups to which the thing can belong. |
@@ -127,7 +125,7 @@ Each mitigation action that you define is a combination of a predefined action t
 
 **To use the AWS IoT console to create mitigation actions**
 
-1. Open the [Mitigation actions page in the AWS IoT console](https://console.aws.amazon.com//iot/home#/dd/mitigationActionConfigsHub).
+1. Open the [Mitigation actions page in the AWS IoT console](https://console.aws.amazon.com/iot/home#/dd/mitigationActionConfigsHub).
 
 1. On the **Mitigation actions** page, choose **Create**.
 
@@ -146,7 +144,7 @@ Each mitigation action that you define is a combination of a predefined action t
 
 **To use the AWS IoT console to view and modify mitigation actions**
 
-1. Open the [Mitigation actions page in the AWS IoT console](https://console.aws.amazon.com//iot/home#/dd/mitigationActionConfigsHub).
+1. Open the [Mitigation actions page in the AWS IoT console](https://console.aws.amazon.com/iot/home#/dd/mitigationActionConfigsHub).
 
    The **Mitigation actions** page displays a list of all of the mitigation actions that are defined for your AWS account.
 
@@ -164,7 +162,7 @@ Each mitigation action that you define is a combination of a predefined action t
 
 **To use the AWS IoT console to delete a mitigation action**
 
-1. Open the [Mitigation actions page in the AWS IoT console](https://console.aws.amazon.com//iot/home#/dd/mitigationActionConfigsHub).
+1. Open the [Mitigation actions page in the AWS IoT console](https://console.aws.amazon.com/iot/home#/dd/mitigationActionConfigsHub).
 
    The **Mitigation actions** page displays all of the mitigation actions that are defined for your AWS account.
 
@@ -177,7 +175,7 @@ Each mitigation action that you define is a combination of a predefined action t
 
 **To use the AWS IoT console to view mitigation action details**
 
-1. Open the [Mitigation actions page in the AWS IoT console](https://console.aws.amazon.com//iot/home#/dd/mitigationActionConfigsHub).
+1. Open the [Mitigation actions page in the AWS IoT console](https://console.aws.amazon.com/iot/home#/dd/mitigationActionConfigsHub).
 
    The **Mitigation actions** page displays all of the mitigation actions that are defined for your AWS account.
 
@@ -207,7 +205,7 @@ You can use the AWS IoT console or the AWS CLI to apply mitigation actions.
 
 **To use the AWS IoT console to apply mitigation actions by starting an action execution**
 
-1. Open the [Audit results page in the AWS IoT console](https://console.aws.amazon.com//iot/home#/dd/auditResultsHub).
+1. Open the [Audit results page in the AWS IoT console](https://console.aws.amazon.com/iot/home#/dd/auditResultsHub).
 
 1. Choose the name for the audit to which you want to apply actions.
 
@@ -233,7 +231,7 @@ If you have not configured actions for your AWS account, the list of actions is 
 
 **To use the AWS IoT console to view your action executions**
 
-1. Open the [Action tasks page in the AWS IoT console](https://console.aws.amazon.com//iot/home#/dd/auditTasksHub).
+1. Open the [Action tasks page in the AWS IoT console](https://console.aws.amazon.com/iot/home#/dd/auditTasksHub).
 
    A list of action tasks shows when each was started and the current status.
 

@@ -12,7 +12,7 @@ You control access to the Amazon CloudSearch configuration service APIs and the 
 When AWS receives a request, it authenticates that the request is from a known AWS user, and then checks relevant policies to determine whether the user is authorized to perform the requested actions using the requested resources. If a user has not been explicitly granted permission to perform an action, the request is denied. During policy evaluation, if AWS encounters an explicit deny, the deny effect takes precedence over any explicit allow effects that are in force.
 
 **Important**
-To enable authentication, Amazon CloudSearch requests must be signed with an access key. The only exception is if you allow anonymous access to a domain's upload, search, or suggest services. For more information, see [Signing RequestsFrequently asked questions](what-is-cloudsearch.md#signing-requests).
+To enable authentication, Amazon CloudSearch requests must be signed with an access key. The only exception is if you allow anonymous access to a domain's upload, search, or suggest services. For more information, see [Signing Requests](what-is-cloudsearch.md#signing-requests).
 
 **Topics**
 + [Writing Access Policies for Amazon CloudSearch](#cloudsearch-access-policies)
@@ -127,8 +127,6 @@ You can grant a user permission to upload documents to a search domain by specif
 <a name="cross-account-policy"></a>
 
 You have two options to configure cross-account access for a CloudSearch domain:
-
-****
 
 | Option | Description |
 | --- | --- |

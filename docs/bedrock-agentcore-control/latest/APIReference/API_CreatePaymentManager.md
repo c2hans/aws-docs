@@ -21,6 +21,7 @@ Content-type: application/json
    "authorizerType": "{{string}}",
    "clientToken": "{{string}}",
    "description": "{{string}}",
+   "kmsKeyArn": "{{string}}",
    "name": "{{string}}",
    "roleArn": "{{string}}",
    "tags": {
@@ -64,7 +65,14 @@ Required: No
 A description of the payment manager.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 4096.
-Pattern: `[a-zA-Z0-9\s]+`
+Pattern: `[^\p{C}]*`
+Required: No
+
+ ** [kmsKeyArn](#API_CreatePaymentManager_RequestSyntax) **   <a name="bedrockagentcorecontrol-CreatePaymentManager-request-kmsKeyArn"></a>
+The Amazon Resource Name (ARN) of the customer managed AWS KMS key to use for encrypting sensitive payment manager data at rest. If you don't specify a key, the data is encrypted with an AWS owned key.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 2048.
+Pattern: `arn:aws(|-cn|-us-gov):kms:[a-zA-Z0-9-]*:[0-9]{12}:key/[a-zA-Z0-9-]{36}`
 Required: No
 
  ** [name](#API_CreatePaymentManager_RequestSyntax) **   <a name="bedrockagentcorecontrol-CreatePaymentManager-request-name"></a>
@@ -102,6 +110,7 @@ Content-type: application/json
    "authorizerConfiguration": { ... },
    "authorizerType": "string",
    "createdAt": "string",
+   "kmsKeyArn": "string",
    "name": "string",
    "paymentManagerArn": "string",
    "paymentManagerId": "string",
@@ -136,6 +145,12 @@ Valid Values: `CUSTOM_JWT | AWS_IAM`
  ** [createdAt](#API_CreatePaymentManager_ResponseSyntax) **   <a name="bedrockagentcorecontrol-CreatePaymentManager-response-createdAt"></a>
 The timestamp when the payment manager was created.
 Type: Timestamp
+
+ ** [kmsKeyArn](#API_CreatePaymentManager_ResponseSyntax) **   <a name="bedrockagentcorecontrol-CreatePaymentManager-response-kmsKeyArn"></a>
+The Amazon Resource Name (ARN) of the AWS KMS key used to encrypt sensitive payment manager data at rest, if configured.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 2048.
+Pattern: `arn:aws(|-cn|-us-gov):kms:[a-zA-Z0-9-]*:[0-9]{12}:key/[a-zA-Z0-9-]{36}`
 
  ** [name](#API_CreatePaymentManager_ResponseSyntax) **   <a name="bedrockagentcorecontrol-CreatePaymentManager-response-name"></a>
 The name of the created payment manager.

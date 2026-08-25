@@ -60,11 +60,11 @@ You can use the Amazon Pinpoint API or an AWS SDK to submit events to Amazon Pin
 ## Next steps
 <a name="integrate-events-next"></a>
 
-After you update your app to report events, it sends usage data to Amazon Pinpoint. You can view this data in the console and stream it to Amazon Kinesis. You can also update your app to handle the push notifications that you send with Amazon Pinpoint. For more information, see the following topics in the [AWS End User Messaging Push User Guide](https://docs.aws.amazon.com//push-notifications/latest/userguide/what-is-service.html).
-+ [Setting up push notifications](https://docs.aws.amazon.com//push-notifications/latest/userguide/procedure-enable-push.html)
-+ [Setting up Swift Push Notifications](https://docs.aws.amazon.com//push-notifications/latest/userguide/mobile-push.html#apns-setup)
-+ [Setting up Android push notifications](https://docs.aws.amazon.com//push-notifications/latest/userguide/mobile-push.html#mobile-push-android)
-+ [Setting up Flutter Push Notifications](https://docs.aws.amazon.com//push-notifications/latest/userguide/mobile-push.html#mobile-push-flutter)
-+ [Setting up React Native Push Notifications](https://docs.aws.amazon.com//push-notifications/latest/userguide/mobile-push.html#mobile-push-react-native)
-+ [Create a project](https://docs.aws.amazon.com//push-notifications/latest/userguide/mobile-push.html#mobile-push-create-project)
-+ [Handling push notifications](https://docs.aws.amazon.com//push-notifications/latest/userguide/mobile-push.html#integrate-push-services)
+After you update your app to report events, it sends usage data to Amazon Pinpoint. You can view this data in the console and stream it to Amazon Kinesis. You can also update your app to handle the push notifications that you send with Amazon Pinpoint. For more information, see the following topics in the [AWS End User Messaging Push User Guide](https://docs.aws.amazon.com/push-notifications/latest/userguide/what-is-service.html).
++ [Setting up push notifications](https://docs.aws.amazon.com/push-notifications/latest/userguide/procedure-enable-push.html)
++ [Setting up Swift Push Notifications](https://docs.aws.amazon.com/push-notifications/latest/userguide/mobile-push.html#apns-setup)
++ [Setting up Android push notifications](https://docs.aws.amazon.com/push-notifications/latest/userguide/mobile-push.html#mobile-push-android)
++ [Setting up Flutter Push Notifications](https://docs.aws.amazon.com/push-notifications/latest/userguide/mobile-push.html#mobile-push-flutter)
++ [Setting up React Native Push Notifications](https://docs.aws.amazon.com/push-notifications/latest/userguide/mobile-push.html#mobile-push-react-native)
++ [Create a project](https://docs.aws.amazon.com/push-notifications/latest/userguide/mobile-push.html#mobile-push-create-project)
++ [Handling push notifications](https://docs.aws.amazon.com/push-notifications/latest/userguide/mobile-push.html#integrate-push-services)

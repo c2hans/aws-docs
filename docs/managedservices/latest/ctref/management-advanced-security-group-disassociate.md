@@ -14,8 +14,6 @@ Disassociate a security group from up to 50 AWS resources.
 ## Change Type Details
 <a name="ct-13lk0noacn6ua-MASd-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-13lk0noacn6ua |

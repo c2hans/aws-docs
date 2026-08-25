@@ -14,8 +14,6 @@ Update the EBS volume DeleteOnTermination property of the specified EC2 instance
 ## Change Type Details
 <a name="ct-2aaaqid7asjy6-MAEu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2aaaqid7asjy6 |

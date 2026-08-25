@@ -85,7 +85,7 @@ To obtain the request ID pair from successful requests, use your browser's devel
 The following sections include information for configuring logging by using different AWS SDKs.
 
 **Note**
-Although you can enable verbose logging on every request and response, we don't recommend enabling logging in production systems, because large requests or responses can significantly slow down an application.
+Although you can enable verbose logging on every request and response, don't recommend enabling logging in production systems, because large requests or responses can significantly slow down an application.
 
 For AWS SDK requests, the pair of request IDs will look like the following:
 

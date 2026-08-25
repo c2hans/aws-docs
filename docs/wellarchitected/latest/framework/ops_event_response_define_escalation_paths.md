@@ -31,7 +31,7 @@ Establish clear escalation paths within your incident response protocols to faci
 ### Implementation steps
 <a name="implementation-steps"></a>
 
-1.  **Set up escalation prompts:** Set up [CloudWatch alarms](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html#alarms-and-actions) to create an incident in [AWS Systems Manager Incident Manager](https://docs.aws.amazon.com//incident-manager/latest/userguide/incident-creation.html).
+1.  **Set up escalation prompts:** Set up [CloudWatch alarms](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html#alarms-and-actions) to create an incident in [AWS Systems Manager Incident Manager](https://docs.aws.amazon.com/incident-manager/latest/userguide/incident-creation.html).
 
 1.  ** Set up on-call schedules:** Create [on-call schedules](https://docs.aws.amazon.com/incident-manager/latest/userguide/incident-manager-on-call-schedule-create.html) in Incident Manager that align with your escalation paths. Equip on-call personnel with the necessary permissions and tools to act swiftly.
 
@@ -41,7 +41,7 @@ Establish clear escalation paths within your incident response protocols to faci
    +  Escalation channels should consist of a contact or an on-call schedule.
    +  Define the roles and responsibilities of the team at each escalation level.
 
-1.  **Pre-approve mitigation actions:** Collaborate with decision-makers to pre-approve actions for anticipated scenarios. Use [Systems Manager Automation runbooks](https://docs.aws.amazon.com//incident-manager/latest/userguide/tutorials-runbooks.html) integrated with Incident Manager to speed up incident resolution.
+1.  **Pre-approve mitigation actions:** Collaborate with decision-makers to pre-approve actions for anticipated scenarios. Use [Systems Manager Automation runbooks](https://docs.aws.amazon.com/incident-manager/latest/userguide/tutorials-runbooks.html) integrated with Incident Manager to speed up incident resolution.
 
 1.  **Specify ownership:** Clearly identify internal owners for each step of the escalation path.
 

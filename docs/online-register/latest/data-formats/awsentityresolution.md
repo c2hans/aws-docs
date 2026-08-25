@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awse
 
 AWS Entity Resolution provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="entityresolution-GetIdMappingJob"></a>[GetIdMappingJob](https://docs.aws.amazon.com/entityresolution/latest/apireference/API_GetIdMappingJob.html) | Get a idmapping job | Read |

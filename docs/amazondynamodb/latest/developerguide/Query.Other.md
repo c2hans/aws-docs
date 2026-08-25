@@ -35,8 +35,6 @@ Each `Query` response contains the `ScannedCount` and `Count` for the items that
 
 You can `Query` any table or secondary index, as long as you provide the name of the partition key attribute and a single value for that attribute. `Query` returns all items with that partition key value. Optionally, you can provide a sort key attribute and use a comparison operator to refine the search results. `Query` API operations consume read capacity units, as follows.
 
-****
-
 | If you `Query` a... | DynamoDB consumes read capacity units from... |
 | --- | --- |
 | Table | The table's provisioned read capacity. |

@@ -23,7 +23,7 @@ You can use the console or the AWS CLI to edit a service description.
 
 **In the list of services.**
 
-1. In the [AWS Proton console](https://console.aws.amazon.com//proton/), choose **Services**.
+1. In the [AWS Proton console](https://console.aws.amazon.com/proton/), choose **Services**.
 
 1. In the list of services, choose the radio button to the left of the service that you want to update.
 
@@ -37,7 +37,7 @@ You can use the console or the AWS CLI to edit a service description.
 
 **In the service detail page.**
 
-1. In the [AWS Proton console](https://console.aws.amazon.com//proton/), choose **Services**.
+1. In the [AWS Proton console](https://console.aws.amazon.com/proton/), choose **Services**.
 
 1. In the list of services, choose the name of the service that you want to edit.
 
@@ -103,7 +103,7 @@ For the quota of service instances for a service, see [AWS Proton quotas](ag-lim
 
 **Edit your service to add or remove service instances using the console.**
 
-In the [AWS Proton console](https://console.aws.amazon.com//proton/)
+In the [AWS Proton console](https://console.aws.amazon.com/proton/)
 
 1. In the navigation pane, choose **Services**.
 

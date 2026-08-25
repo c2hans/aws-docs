@@ -14,8 +14,6 @@ Revoke the ingress rule for the specified security group (SG). You must specify 
 ## Change Type Details
 <a name="ct-1vjbacfr4ufdv-MASr-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1vjbacfr4ufdv |

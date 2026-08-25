@@ -52,7 +52,7 @@ Use the console or AWS CLI to create and provision an environment in a single ac
 
 **Use the console to create and provision an environment in a single account**
 
-1. In the [AWS Proton console](https://console.aws.amazon.com//proton/), choose **Environments**.
+1. In the [AWS Proton console](https://console.aws.amazon.com/proton/), choose **Environments**.
 
 1. Choose **Create environment**.
 
@@ -160,7 +160,7 @@ Use the console or AWS CLI to create a standard environment in a management acco
 
 **In the environment account, create an environment account connection, and use it to send a request to connect to the management account.**
 
-   1. In [AWS Proton console](https://console.aws.amazon.com//proton/), choose **Environment account connections** in the navigation pane.
+   1. In [AWS Proton console](https://console.aws.amazon.com/proton/), choose **Environment account connections** in the navigation pane.
 
    1. In the **Environment account connections** page, choose **Request to connect**.
 **Note**
@@ -337,7 +337,7 @@ You can use self-managed provisioning in the console or with the AWS CLI. The fo
 
 **Use the console to create a Terraform environment using self-managed provisioning.**
 
-1. In the [AWS Proton console](https://console.aws.amazon.com//proton/), choose **Environments**.
+1. In the [AWS Proton console](https://console.aws.amazon.com/proton/), choose **Environments**.
 
 1. Choose **Create environment**.
 

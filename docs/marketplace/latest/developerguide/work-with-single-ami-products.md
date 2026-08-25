@@ -136,7 +136,7 @@ The following list provides information about the input fields you use with the 
       + **AmiDeliveryOptionDetails** (object) – Use to provide the details of each AMI delivery option.
         + **AmiSource** (object) – Details about the AMI to be used for the added version.
           + **AmiId** (string) – ID for the source AMI, located in the AWS Region where the API is being called. This must always be US East (N. Virginia) because that is the only region where the Catalog API is available. Must belong to the caller account.
-          + **AccessRoleArn **(string) – IAM role Amazon Resource Name (ARN) used by AWS Marketplaceto access the provided AMI. For details about creating and using this ARN, see [Giving AWS Marketplace access to your AMI](https://docs.aws.amazon.com//marketplace/latest/userguide/ami-single-ami-products.html#single-ami-marketplace-ami-access) in the *AWS Marketplace Seller Guide*.
+          + **AccessRoleArn **(string) – IAM role Amazon Resource Name (ARN) used by AWS Marketplaceto access the provided AMI. For details about creating and using this ARN, see [Giving AWS Marketplace access to your AMI](https://docs.aws.amazon.com/marketplace/latest/userguide/ami-single-ami-products.html#single-ami-marketplace-ami-access) in the *AWS Marketplace Seller Guide*.
           + **UserName** (string) – Login user name to access the operating system (OS) in the AMI. Typically ec2-user for Linux AMIs or Administrator for Windows.
           + **ScanningPort** (integer) – SSH or RDP port used to access the OS. Used for scanning the provided AMI for security vulnerabilities. Defaults to 22.
           + **OperatingSystemName** (string) – Name of the operating system displayed to buyers.
@@ -147,7 +147,7 @@ The following list provides information about the input fields you use with the 
           + **Port** (string) – The port number used to access the service running on the AMI.
           + **Protocol** (string) – The protocol (http or https) used to access the service running on the AMI.
           + **RelativePath** (string) – The path from the web root to access the service running on the AMI (for example /index.html).
-        + **RecommendedInstanceType** (string) – The instance type that is recommended to run the service with the AMI and is the default for 1-click installs of your service. For a list of instance types, see [Instance types](https://docs.aws.amazon.com//AWSEC2/latest/UserGuide/instance-types.html) in the *Amazon Elastic Compute Cloud User Guide for Linux Instances*.
+        + **RecommendedInstanceType** (string) – The instance type that is recommended to run the service with the AMI and is the default for 1-click installs of your service. For a list of instance types, see [Instance types](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-types.html) in the *Amazon Elastic Compute Cloud User Guide for Linux Instances*.
         + **SecurityGroups** (array of objects) – A list of objects representing ingress rules for the automatically created groups for the version.
           + **IpProtocol** (string) – The protocol to use (tcp or udp).
           + **FromPort** (integer) – The source port.
@@ -160,14 +160,14 @@ The following list provides information about the input fields you use with the 
         + **ShortDescription** (string) – Brief description of your CloudFormation template delivery option.
         + **LongDescription** (string) – Detailed description of your CloudFormation template delivery option.
         + **UsageInstructions** (string) – Instructions for using the AMI, or a link to more information about the AMI.
-        + **RecommendedInstanceType** (string) – The instance type that is recommended to run the service with the AMI and is the default for 1-click installs of your service. For a list of instance types, see [Instance types](https://docs.aws.amazon.com//AWSEC2/latest/UserGuide/instance-types.html) in the *Amazon Elastic Compute Cloud User Guide for Linux Instances*.
+        + **RecommendedInstanceType** (string) – The instance type that is recommended to run the service with the AMI and is the default for 1-click installs of your service. For a list of instance types, see [Instance types](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-types.html) in the *Amazon Elastic Compute Cloud User Guide for Linux Instances*.
         + **ArchitectureDiagram** (string) – URL to the location of your architectural diagram in Amazon S3.
         + **Template** (string) – URL to the location of your CloudFormation Template in Amazon S3.
         + **TemplateSources** (array of objects)
-          + **ParameterName** (string) – Name of the parameter in the CloudFormation Template that the AMI in this version should be passed in to. For more information, see [Requirements for AMI details](https://docs.aws.amazon.com//marketplace/latest/userguide/cloudformation.html#ami-requirements-sse).
+          + **ParameterName** (string) – Name of the parameter in the CloudFormation Template that the AMI in this version should be passed in to. For more information, see [Requirements for AMI details](https://docs.aws.amazon.com/marketplace/latest/userguide/cloudformation.html#ami-requirements-sse).
           + **AmiSource** (object)
             + **AmiId** (string) – ID for the source AMI, located in the AWS Region where the API is being called (currently must always be US East (N. Virginia) because that is the only region where the Catalog API is available). Must belong to the caller account.
-            + **AccessRoleArn** (string) – IAM role Amazon Resource Name (ARN) used by AWS Region to access the provided AMI. For details about creating and using this ARN, see [Giving AWS Marketplace access to your AMI](https://docs.aws.amazon.com//marketplace/latest/userguide/ami-single-ami-products.html#single-ami-marketplace-ami-access) in the *AWS Marketplace Seller Guide*.
+            + **AccessRoleArn** (string) – IAM role Amazon Resource Name (ARN) used by AWS Region to access the provided AMI. For details about creating and using this ARN, see [Giving AWS Marketplace access to your AMI](https://docs.aws.amazon.com/marketplace/latest/userguide/ami-single-ami-products.html#single-ami-marketplace-ami-access) in the *AWS Marketplace Seller Guide*.
             + **UserName** (string) – Login user name to access the operating system (OS) in the AMI. Typically `ec2-user` for Linux AMIs or `Administrator` for Windows.
             + **OperatingSystemName** (string) – Name of the operating system displayed to buyers.
             + **OperatingSystemVersion** (string) – Operating system version string displayed to buyers.
@@ -344,14 +344,14 @@ The following is information about the input fields you provide for adding the `
           + **ShortDescription** (string) – Brief description of your CloudFormation template delivery option.
           + **LongDescription** (string) – Detailed description of your CloudFormation template delivery option.
           + **UsageInstructions** (string) – Instructions for using the AMI, or a link to more information about the AMI.
-          + **RecommendedInstanceType** (string) – The instance type that is recommended to run the service with the AMI and is the default for 1-click installs of your service. For a list of instance types, see [Instance types](https://docs.aws.amazon.com//AWSEC2/latest/UserGuide/instance-types.html) in the *Amazon Elastic Compute Cloud User Guide for Linux Instances*.
+          + **RecommendedInstanceType** (string) – The instance type that is recommended to run the service with the AMI and is the default for 1-click installs of your service. For a list of instance types, see [Instance types](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-types.html) in the *Amazon Elastic Compute Cloud User Guide for Linux Instances*.
           + **ArchitectureDiagram** (string) – URL to the location of your architectural diagram in Amazon S3.
           + **Template** (string) – URL to the location of your CloudFormation Template in Amazon S3.
           + **TemplateSources** (array of objects)
-            + **ParameterName** (string) – Name of the parameter in the CloudFormation Template that the AMI in this version should be passed in to. For more information, see [Requirements for AMI details](https://docs.aws.amazon.com//marketplace/latest/userguide/cloudformation.html#ami-requirements-sse).
+            + **ParameterName** (string) – Name of the parameter in the CloudFormation Template that the AMI in this version should be passed in to. For more information, see [Requirements for AMI details](https://docs.aws.amazon.com/marketplace/latest/userguide/cloudformation.html#ami-requirements-sse).
             + **AmiSource** (object)
               + **AmiId** (string) – ID for the source AMI, located in the AWS Region where the API is being called (currently must always be US East (N. Virginia) because that is the only region where the Catalog API is available). Must belong to the caller account.
-              + **AccessRoleArn** (string) – IAM role Amazon Resource Name (ARN) used by AWS Region to access the provided AMI. For details about creating and using this ARN, see [Giving AWS Marketplace access to your AMI](https://docs.aws.amazon.com//marketplace/latest/userguide/ami-single-ami-products.html#single-ami-marketplace-ami-access) in the *AWS Marketplace Seller Guide*.
+              + **AccessRoleArn** (string) – IAM role Amazon Resource Name (ARN) used by AWS Region to access the provided AMI. For details about creating and using this ARN, see [Giving AWS Marketplace access to your AMI](https://docs.aws.amazon.com/marketplace/latest/userguide/ami-single-ami-products.html#single-ami-marketplace-ami-access) in the *AWS Marketplace Seller Guide*.
               + **UserName** (string) – Login user name to access the operating system (OS) in the AMI. Typically `ec2-user` for Linux AMIs or `Administrator` for Windows.
               + **OperatingSystemName** (string) – Name of the operating system displayed to buyers.
               + **OperatingSystemVersion** (string) – Operating system version string displayed to buyers.

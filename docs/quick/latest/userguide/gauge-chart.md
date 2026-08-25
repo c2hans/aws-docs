@@ -30,8 +30,6 @@ You can choose a variety of formatting options for the gauge chart, including th
 
 To understand the features supported by gauge charts, use the following table.
 
-****
-
 | Feature | Supported? | Comments | For more information |
 | --- | --- | --- | --- |
 | Changing the legend display | Yes |  | [Legends on visual types in Quick](customizing-visual-legend.md) |

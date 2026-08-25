@@ -15,7 +15,6 @@ The `NCryptDeleteKey` function deletes a KSP key from the Key Storage Provider (
 
 `dwFlags` [in]
 Flags to modify the function's behavior. You can use zero or more of the following values:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/cloudhsm/latest/userguide/ksp-library-apis-delete-key.html)
 
 ## Return Value
@@ -24,8 +23,6 @@ Flags to modify the function's behavior. You can use zero or more of the followi
 The function returns a status code to indicate success or failure.
 
 Common return codes include:
-
-****
 
 | Return code | Description |
 | --- | --- |

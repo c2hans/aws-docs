@@ -15,18 +15,18 @@ You can collect more detailed information about your database activities, includ
 | log\_lock\_waits | – | Logs long lock waits. By default, this parameter isn't set. |
 | log\_min\_duration\_sample | – | (ms) Sets the minimum execution time above which a sample of statements is logged. Sample size is set using the log\_statement\_sample\_rate parameter. |
 | log\_min\_duration\_statement | – | Any SQL statement that runs atleast for the specified amount of time or longer gets logged. By default, this parameter isn't set. Turning on this parameter can help you find unoptimized queries. |
-| log\_statement | – | Sets the type of statements logged. By default, this parameter isn't set, but you can change it to `all`, `ddl`, or `mod` to specify the types of SQL statements that you want logged. If you specify anything other than `none` for this parameter, you should also take additional steps to prevent the exposure of passwords in the log files. For more information, see [Mitigating risk of password exposure when using query loggingMitigating password exposure risk](#USER_LogAccess.Concepts.PostgreSQL.Query_Logging.mitigate-risk).  |
+| log\_statement | – | Sets the type of statements logged. By default, this parameter isn't set, but you can change it to `all`, `ddl`, or `mod` to specify the types of SQL statements that you want logged. If you specify anything other than `none` for this parameter, you should also take additional steps to prevent the exposure of passwords in the log files. For more information, see [Mitigating risk of password exposure when using query logging](#USER_LogAccess.Concepts.PostgreSQL.Query_Logging.mitigate-risk).  |
 | log\_statement\_sample\_rate | – | The percentage of statements exceeding the time specified in `log_min_duration_sample` to be logged, expressed as a floating point value between 0.0 and 1.0.  |
 | log\_statement\_stats | – | Writes cumulative performance statistics to the server log. |
 
 ## Using logging to find slow performing queries
 <a name="USER_LogAccess.Concepts.PostgreSQL.Query_Logging.using"></a>
 
-You can log SQL statements and queries to help find slow performing queries. You turn on this capability by modifying the settings in the `log_statement` and `log_min_duration` parameters as outlined in this section. Before turning on query logging for your RDS for PostgreSQL DB instance, you should be aware of possible password exposure in the logs and how to mitigate the risks. For more information, see [Mitigating risk of password exposure when using query loggingMitigating password exposure risk](#USER_LogAccess.Concepts.PostgreSQL.Query_Logging.mitigate-risk).
+You can log SQL statements and queries to help find slow performing queries. You turn on this capability by modifying the settings in the `log_statement` and `log_min_duration` parameters as outlined in this section. Before turning on query logging for your RDS for PostgreSQL DB instance, you should be aware of possible password exposure in the logs and how to mitigate the risks. For more information, see [Mitigating risk of password exposure when using query logging](#USER_LogAccess.Concepts.PostgreSQL.Query_Logging.mitigate-risk).
 
 Following, you can find reference information about the `log_statement` and `log_min_duration` parameters.log\_statement
 
-This parameter specifies the type of SQL statements that should get sent to the log. The default value is `none`. If you change this parameter to `all`, `ddl`, or `mod`, be sure to apply recommended actions to mitigate the risk of exposing passwords in the logs. For more information, see [Mitigating risk of password exposure when using query loggingMitigating password exposure risk](#USER_LogAccess.Concepts.PostgreSQL.Query_Logging.mitigate-risk).
+This parameter specifies the type of SQL statements that should get sent to the log. The default value is `none`. If you change this parameter to `all`, `ddl`, or `mod`, be sure to apply recommended actions to mitigate the risk of exposing passwords in the logs. For more information, see [Mitigating risk of password exposure when using query logging](#USER_LogAccess.Concepts.PostgreSQL.Query_Logging.mitigate-risk).
 
 **all**
 Logs all statements. This setting is recommended for debugging purposes.

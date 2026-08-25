@@ -40,7 +40,7 @@ Forecast groups are a way for you to combine different queues into one forecast.
 
    For example, if you made a change for forecast group today, Connect Customer automatically computes the new short-term and long-term forecasts tomorrow. Your change to the forecast group also impacts downstream capacity plans and schedules that are created based on the forecast group.
 
-   The following image shows a sample warning message when adding a queue may trigger an immediate change in associated forecasts. You must choose **Confirm** if you want to continue.
+   The following image shows a sample warning message when adding a queue might trigger an immediate change in associated forecasts. You must choose **Confirm** if you want to continue.
 ![The warning message, a prompt to confirm you want to add the forecast group queue.](http://docs.aws.amazon.com/connect/latest/adminguide/images/wfm-forcasting-create-forecast-group.png)
 
 1. You can remove the forecast group by using the **Remove** function.

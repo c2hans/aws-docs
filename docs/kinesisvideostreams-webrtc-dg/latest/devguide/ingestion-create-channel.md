@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams-webrtc-dg/latest/dev
 
 A Kinesis Video Streams with WebRTC signaling channel facilitates the exchange of signaling messages required to establish and maintain peer-to-peer connections between WebRTC clients. It handles the negotiation of Session Description Protocol (SDP) offers and answers for session parameters, as well as the exchange of Interactive Connectivity Establishment (ICE) candidates for network information.
 
-To create a signaling channel, call the [CreateSignalingChannel](https://docs.aws.amazon.com//kinesisvideostreams/latest/dg/API_CreateSignalingChannel.html) API. This page will show you how to invoke that API using the AWS Management Console, AWS CLI, and one of the AWS SDKs.
+To create a signaling channel, call the [CreateSignalingChannel](https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/API_CreateSignalingChannel.html) API. This page will show you how to invoke that API using the AWS Management Console, AWS CLI, and one of the AWS SDKs.
 
 **Important**
 Make note of the channel ARN, you'll need it later.
@@ -17,7 +17,7 @@ Make note of the channel ARN, you'll need it later.
 
 Do the following:
 
-1. Open the **Kinesis Video Streams Signaling Channels** console at [https://console.aws.amazon.com/kinesisvideo/home/\#/signalingChannels](https://console.aws.amazon.com//kinesisvideo/home/#/signalingChannels).
+1. Open the **Kinesis Video Streams Signaling Channels** console at [https://console.aws.amazon.com/kinesisvideo/home/\#/signalingChannels](https://console.aws.amazon.com/kinesisvideo/home/#/signalingChannels).
 
 1. Choose **Create signaling channel**.
 
@@ -32,13 +32,13 @@ Do the following:
 ------
 #### [ AWS CLI ]
 
-Verify that you have the AWS CLI installed and configured. For more information, see the [AWS Command Line Interface User Guide](https://docs.aws.amazon.com//cli/latest/userguide/).
+Verify that you have the AWS CLI installed and configured. For more information, see the [AWS Command Line Interface User Guide](https://docs.aws.amazon.com/cli/latest/userguide/).
 
-For installation instructions, see the [AWS Command Line Interface User Guide](https://docs.aws.amazon.com//cli/latest/userguide/getting-started-install.html#getting-started-install-instructions). After installation, [configure the AWS CLI](https://docs.aws.amazon.com//cli/latest/userguide/getting-started-quickstart.html#getting-started-quickstart-new) with credentials and region.
+For installation instructions, see the [AWS Command Line Interface User Guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html#getting-started-install-instructions). After installation, [configure the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-quickstart.html#getting-started-quickstart-new) with credentials and region.
 
-Alternatively, open the AWS CloudShell terminal, which has the AWS CLI installed and configured. See the [AWS CloudShell User Guide](https://docs.aws.amazon.com//cloudshell/latest/userguide/welcome.html#how-to-get-started) for more information.
+Alternatively, open the AWS CloudShell terminal, which has the AWS CLI installed and configured. See the [AWS CloudShell User Guide](https://docs.aws.amazon.com/cloudshell/latest/userguide/welcome.html#how-to-get-started) for more information.
 
-Run the following [Create-Signaling-Channel](https://docs.aws.amazon.com//cli/latest/reference/kinesisvideo/create-signaling-channel.html) command using the AWS CLI:
+Run the following [Create-Signaling-Channel](https://docs.aws.amazon.com/cli/latest/reference/kinesisvideo/create-signaling-channel.html) command using the AWS CLI:
 
 ```
 aws kinesisvideo create-signaling-channel \

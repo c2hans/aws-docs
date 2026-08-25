@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/add-profileexp
 # Add Profile explorer to the agent workspace
 <a name="add-profileexplorer-to-agentworkspace"></a>
 
-By default users who have the appropriate [security profile permissions](enabling-profile-explorer.md) can view Profile explorer on the Connect Customer admin website. You may also want your agents to have access to Profile explorer in their agent workspace. This topic explains how to do that.
+By default users who have the appropriate [security profile permissions](enabling-profile-explorer.md) can view Profile explorer on the Connect Customer admin website. You might also want your agents to have access to Profile explorer in their agent workspace. This topic explains how to do that.
 
 The following image shows an example of Profile explorer in the agent workspace.
 
@@ -16,7 +16,7 @@ The following image shows an example of Profile explorer in the agent workspace.
 
 Here's a high-level overview:
 
-1. Ensure you have the [security profile permissions](enabling-profile-explorer.md) to create a Profile explorer layout.
+1. Make sure you have the [security profile permissions](enabling-profile-explorer.md) to create a Profile explorer layout.
 
 1. Follow the instructions in [Get started with Connect Customer Customer Profiles Profile Explorer](getting-started-profile-explorer.md) to create and save the layout you want to share with agents.
 
@@ -28,13 +28,13 @@ Here's a high-level overview:
 
 1. On the **Integrations** page, choose **Add integration**.
 
-1. On the **Add integration** page, complete following fields in the **Basic information** section:
+1. On the **Add integration** page, complete following fields in the **Integration information** section:
 
    1. **Display name**: A friendly name for the application. **This name is displayed to your agents on the tab in the agent workspace**. It is also displayed on security profiles. You can come back and change this name.
 
    1. **Integration identifier**: The official name that is unique for your integration. If you have only one integration per access URL, we recommend that you use the origin of the access URL. You cannot change this name.
 
-   1. **Description (optional)**: You may optionally provide any description for this application. This description is not displayed to agents.
+   1. **Description (optional)**: You might optionally provide any description for this application. This description is not displayed to agents.
 
    1. **Integration type**: Choose **Standard application**.
 
@@ -43,7 +43,7 @@ Here's a high-level overview:
    1. **Initialization timeout**: The maximum time, in milliseconds, allowed to establish a connection with the workspace.
 
    The following image shows the configuration of these fields. Initialization timeout is set to 5 seconds.
-![The Basic information section, configured for the Profile explorer on the agent workspace.](http://docs.aws.amazon.com/connect/latest/adminguide/images/add-integration.png)
+![The Integration information section, configured for the Profile explorer in the agent workspace.](http://docs.aws.amazon.com/connect/latest/adminguide/images/add-integration.png)
 
 1. In the **Access** section, complete the following fields:
 
@@ -52,11 +52,11 @@ Here's a high-level overview:
 The URL must contain `?_appLayoutMode=embedded`. For example:
 `https://{CONNECT_INSTANCE}/customer-profiles/profile-explorer?_appLayoutMode=embedded`
 If you don't include `?_appLayoutMode=embedded`, the left navigation from the Connect Customer admin website appears in the agent workspace.
-For more details about what is allowed for this field, see [Integrations](3p-apps.md#onboard-3p-apps-how-to-integrate).
+For more details about what is allowed for this field, see [Add a third-party application](3p-apps.md#onboard-3p-apps-how-to-integrate).
 
-   1. **Approved origins - optional**: Allowlist URLs that should be permitted, if different than the access URL. The URL must be secure, starting with https, unless it's a local host.
+   1. **Approved origins (optional)**: Allowlist URLs that should be permitted, if different than the access URL. The URL must be secure, starting with https, unless it's a local host.
 
-1. Completing the next two sections—**Permissions** and **Iframe configuration**—is optional and not required to add the Profile explorer to the agent workspace. For information about these sections, see [Integrations](3p-apps.md#onboard-3p-apps-how-to-integrate).
+1. Completing the next two sections—**Permissions** and **Iframe configuration**—is optional and not required to add the Profile explorer to the agent workspace. For information about these sections, see [Add a third-party application](3p-apps.md#onboard-3p-apps-how-to-integrate).
 
 1. **Instance association**: Choose the instance your agents are using.
 

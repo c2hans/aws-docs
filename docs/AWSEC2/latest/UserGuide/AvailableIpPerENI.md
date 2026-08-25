@@ -29,7 +29,7 @@ The *Amazon EC2 Instance Types Guide* provides the information about the network
 
 1. Add a filter to specify the instance type (**Instance type=c5.12xlarge**) or instance family (**Instance family=c5**).
 
-1. (Optional) Click the **Preferences** icon and then turn on **Maximum number of network interfaces**. This column indicates the maximum number of network interfaces for each instance type.
+1. (Optional) Choose the **Preferences** icon and then turn on **Maximum number of network interfaces**. This column indicates the maximum number of network interfaces for each instance type.
 
 1. (Optional) Select the instance type. On the **Networking** tab, find **Maximum number of network interfaces**.
 

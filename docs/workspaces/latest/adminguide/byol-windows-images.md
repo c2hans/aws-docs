@@ -113,6 +113,9 @@ If you are using Windows 10 or Windows 11 LTSC (Long-Term Servicing Channel) edi
 **Note**
 Windows 10 N and Windows 11 N versions are not supported for BYOL at this time.
 
+**Note**
+BYOL WorkSpaces support nested virtualization. You can enable or disable it using the AWS Management Console, AWS CLI, or API — the same as on public bundles. For more information, see [Nested virtualization for WorkSpaces Personal](https://docs.aws.amazon.com/workspaces/latest/adminguide/nested-virtualization.html).
+
 ### Step 1: Enable your account for BYOL
 <a name="windows_images_enable_byol"></a>
 

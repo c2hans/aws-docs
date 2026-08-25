@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awss
 
 AWS SimSpace Weaver provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="simspaceweaver-DescribeApp"></a>[DescribeApp](https://docs.aws.amazon.com/simspaceweaver/latest/APIReference/API_DescribeApp.html) | Describe an app | Read |

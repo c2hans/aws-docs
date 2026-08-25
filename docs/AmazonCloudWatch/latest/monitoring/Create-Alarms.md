@@ -13,5 +13,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Creat
 + [Create an alarm based on Metrics Insights](multi-time-series-alarm.md)
 + [Create an alarm based on a connected data source](Create_MultiSource_Alarm.md)
 + [Create a metric alarm that uses a wall clock evaluation window](Create_WallClock_Alarm.md)
++ [Create an alarm that uses a warm-up period](Create_WarmUp_Alarm.md)
 + [Alarming on logs](Alarm-On-Logs.md)
 + [Create a composite alarm](Create_Composite_Alarm.md)

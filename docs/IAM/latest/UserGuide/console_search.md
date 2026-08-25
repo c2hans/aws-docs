@@ -37,8 +37,6 @@ Use the **Search** page in the IAM console to find items related to that account
 
 The following icons identify the types of items that are found by a search:
 
-****
-
 | Icon | Description |
 | --- | --- |
 | ![a portrait outline on gray background.](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/search_user.png) | IAM users |

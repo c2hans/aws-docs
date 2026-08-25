@@ -11,7 +11,7 @@ You can use the MediaPackage console to preview playback from the endpoint.
 
 **To preview an endpoint's playback**
 
-1. Access the channel that the endpoint is associated with, as described in [Viewing channel details in AWS Elemental MediaPackageViewing channel details](channels-view.md).
+1. Access the channel that the endpoint is associated with, as described in [Viewing channel details in AWS Elemental MediaPackage](channels-view.md).
 
 1. Under **Origin endpoints**, select the endpoint that you want to preview.
 

@@ -30,8 +30,6 @@ You can request increases for some of these values by using the [Service Quotas 
 AWS Organizations limits apply at the organization level, unless otherwise specified. Many quotas apply only to actions performed from the AWS Organizations management account.
 AWS Organizations is a global service that is physically hosted in the US East (N. Virginia) Region (`us-east-1`). Therefore, you must use `us-east-1` to access these quotas when using the Service Quotas console, the AWS CLI, or an AWS SDK.
 
-****
-
 | Description | Limit |
 | --- | --- |
 | <a name="default-maximum-number-of-accounts"></a>Maximum number of accounts | 10 — The maximum number of accounts allowed in an organization. This quota is adjustable, and can be increased by using the [Service Quotas console](https://console.aws.amazon.com/servicequotas/home?region=us-east-1#!/services/organizations/quotas).<br />**Note:** Only the Management account of an organization can submit this quota increase request. Limit increases can be granted up to 50,000 accounts based on customer qualifications and requirements. Newly created accounts and organizations might experience a quota below the default of 10 accounts.<br />An invitation sent to an account counts against this quota. The count is returned if the invited account declines, the management account cancels the invitation, or the invitation expires.<br />When an account is closed it does not stop counting against this quota until it is permanently closed. For more information on when an account is permanently closed, see [Post-closure period](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-closing.html#post-closure-period) in the *AWS Account Management Reference Guide*.<br />Some services have account limits separate from the maximum number of accounts allowed in an organization. For more information, see [Limits by AWS service](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_reference_limits.html#min-max-service-limits). |
@@ -43,7 +41,7 @@ AWS Organizations is a global service that is physically hosted in the US East (
 | OU maximum nesting in a root | Five levels of OUs deep under a root. |
 | Maximum number of invitation attempts you can perform in a 24-hour period | Either 20 or the maximum number of accounts allowed in your organization, whichever is greater. Accepted invitations don't count against this quota. As soon as one invitation is accepted, you can send another invitation that same day.<br />If the maximum number of accounts allowed in your organization is less than 20, then you get an "account limit exceeded" exception if you attempt to invite more accounts than your organization can contain. However, you can cancel invitations and send new ones up to the maximum of 20 attempts in one day. |
 | Number of member accounts you can create concurrently | 5 — As soon as one finishes, you can start another, but only five can be in progress at a time. |
-| <a name="number-of-accounts-you-can-close"></a>Number of accounts you can close within a 30-day period | 20% of member accounts in organizations or 250, whichever is higher, with a maximum of 1,000. This quota is not adjustable.+  ** < 1,250 accounts** – You can close up to 250 member accounts <br />+  ** 1,250 - 5,000 accounts** – You can close up to 20% of your member accounts <br />+  ** > 5,000 accounts** – You can close up to 1,000 member accounts <br />After you reach this quota, you can close additional accounts or wait until your quota resets. For more information, see [Close an AWS account](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-closing.html) in the *AWS Account Management Guide*. |
+| <a name="number-of-accounts-you-can-close"></a>Number of accounts you can close within a 30-day period | 20% of member accounts in organizations or 250, whichever is higher, with a maximum of 1,000. This quota is not adjustable.+  ** < 1,250 accounts** – You can close up to 250 member accounts <br />+  ** 1,250 - 5,000 accounts** – You can close up to 20% of your member accounts <br />+  ** > 5,000 accounts** – You can close up to 1,000 member accounts <br />After you reach this quota, you can't close additional accounts until your quota resets. For more information, see [Close an AWS account](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-closing.html) in the *AWS Account Management Guide*. |
 | Number of member accounts you can close concurrently | 3 — Only three account closures can be in progress at the same time. As soon as one finishes, you can close another account.  |
 | Number of targets a policy can be attached to | Unlimited |
 | Number of tags that you can attach to a root, OU, or account | 50 |
@@ -55,8 +53,6 @@ AWS Organizations is a global service that is physically hosted in the US East (
 Most AWS services support the stated maximum number of accounts that you can have in an organization. However, some services have account limits separate from the maximum number of accounts allowed in an organization.
 
 The following table shows services with separate account limits.
-
-****
 
 | AWS service | Limit | Can be increased | Service documentation |
 | --- | --- | --- | --- |
@@ -78,8 +74,6 @@ The following table shows services with separate account limits.
 
 The following are the timeouts for handshakes in AWS Organizations.
 
-****
-
 | Description | Limit |
 | --- | --- |
 | Invitation to join an organization | 15 days |
@@ -93,8 +87,6 @@ The minimum and maximum depend on the policy type and the entity that you're att
 
 **Note**
 These numbers apply to only those policies that are directly attached to an OU or an account. Policies that affect an OU or account by inheritance do ***not*** count against these limits. All policy limits are hard limits.
-
-****
 
 | Policy type | Minimum attached to an entity | Maximum attached to root | Maximum attached per OU | Maximum attached per account |
 | --- | --- | --- | --- | --- |
@@ -132,8 +124,6 @@ The burst rate allows you to handle temporary spikes in traffic without getting 
 
 The following table lists the AWS Organizations APIs for account management.
 
-****
-
 | AWS Organizations API | Per account limit (rate, burst) | Per organization limit (rate, burst) |
 | --- | --- | --- |
 | CloseAccount | .05, 1 |  |
@@ -148,8 +138,6 @@ The following table lists the AWS Organizations APIs for account management.
 
 The following table lists the AWS Organizations APIs for account handshake.
 
-****
-
 | AWS Organizations API | Per account limit (rate, burst) | Per organization limit (rate, burst) |
 | --- | --- | --- |
 | AcceptHandshake | 1, 2 | 5, 5 |
@@ -163,8 +151,6 @@ The following table lists the AWS Organizations APIs for account handshake.
 <a name="throttling-limits-organization-management"></a>
 
 The following table lists the AWS Organizations APIs for organization management.
-
-****
 
 | AWS Organizations API | Per account limit (rate, burst) | Per organization limit (rate, burst) |
 | --- | --- | --- |
@@ -185,8 +171,6 @@ The following table lists the AWS Organizations APIs for organization management
 
 The following table lists the AWS Organizations APIs for policy management.
 
-****
-
 | AWS Organizations API | Per account limit (rate, burst) | Per organization limit (rate, burst) |
 | --- | --- | --- |
 | CreatePolicy, DeletePolicy, AttachPolicy, DetachPolicy | 2, 3 |  |
@@ -199,8 +183,6 @@ The following table lists the AWS Organizations APIs for policy management.
 <a name="throttling-limits-serivce-management"></a>
 
 The following table lists the AWS Organizations APIs for service management.
-
-****
 
 | AWS Organizations API | Per account limit (rate, burst) | Per organization limit (rate, burst) |
 | --- | --- | --- |

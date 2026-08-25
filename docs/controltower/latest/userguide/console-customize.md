@@ -22,8 +22,8 @@ Remember that renaming an OU in AWS Organizations does not update the correspond
 For information about AWS Regions where CfCT has deployment limitations, see [Control limitations](control-limitations.md).
 
 **Customize by adding optional controls**
-+ Strongly recommended and elective controls are optional, which means that you can customize the level of enforcement for your landing zone by choosing which ones to enable. [Optional controls](https://docs.aws.amazon.com//controltower/latest/userguide/optional-controls.html) are not enabled by default.
-+ The optional [Data residency controls](https://docs.aws.amazon.com//controltower/latest/userguide/data-residency-controls.html) allow you to customize the Regions in which you store and allow access to your data.
++ Strongly recommended and elective controls are optional, which means that you can customize the level of enforcement for your landing zone by choosing which ones to enable. [Optional controls](https://docs.aws.amazon.com/controltower/latest/userguide/optional-controls.html) are not enabled by default.
++ The optional [Data residency controls](https://docs.aws.amazon.com/controltower/latest/userguide/data-residency-controls.html) allow you to customize the Regions in which you store and allow access to your data.
 + The optional controls that are part of the integrated Security Hub CSPM standard allow you to scan your AWS Control Tower environment to check for security risks.
 + The optional proactive controls allow you to check your CloudFormation resources before they are provisioned, to make sure the new resources will comply with your environment's control objectives.
 

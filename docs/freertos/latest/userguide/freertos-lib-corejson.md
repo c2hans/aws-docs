@@ -20,7 +20,6 @@ The coreJSON library provides a parser that supports key lookups while strictly 
 
 The coreJSON library uses an internal stack to track nested structures in a JSON document. The stack exists for the duration of a single function call; it is not preserved. Stack size may be specified by defining the macro, `JSON_MAX_DEPTH`, which defaults to 32 levels. Each level consumes a single byte.
 
-****
 <a name="coreJSON-memory-estimate"></a>
 <table>
 <thead>

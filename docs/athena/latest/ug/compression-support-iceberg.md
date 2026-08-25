@@ -12,8 +12,6 @@ The compression options for Iceberg tables in Athena vary by engine version and 
 
 The following table summarizes the compression format support in Athena engine version 3 for storage file formats in Apache Iceberg. "Yes" or "No" in a cell apply equally to read and write operations except where noted. For the purposes of this table, CREATE TABLE, CTAS, and INSERT INTO are considered write operations. The default storage format for Iceberg in Athena engine version 3 is Parquet. The default compression format for Iceberg in Athena engine version 3 is ZSTD. For more information about using ZSTD compression levels in Athena, see [Use ZSTD compression levels](compression-support-zstd-levels.md).
 
-****
-
 |  | Avro | ORC | Parquet (default) |
 | --- | --- | --- | --- |
 | BZIP2 | No | No | No |

@@ -13,8 +13,6 @@ Additionally, DynamoDB does not allow mixing legacy conditional parameters and e
 
 The following table shows the DynamoDB API operations that still support these legacy parameters, and which expression parameter to use instead. This table can be helpful if you are considering updating your applications so that they use expression parameters instead.
 
-****
-
 - **`BatchGetItem`**
   - **With these legacy parameters...:**  AttributesToGet
   - **Use this expression parameter instead:**  ProjectionExpression

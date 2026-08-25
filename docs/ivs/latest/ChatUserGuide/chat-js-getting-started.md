@@ -39,6 +39,6 @@ AppRegistry.registerComponent(appName, () => App);
 ## Set Up Your Backend
 <a name="chat-js-setup-backend"></a>
 
-This integration requires endpoints on your server that talk to the [Amazon IVS Chat API](https://docs.aws.amazon.com//ivs/latest/ChatAPIReference/Welcome.html). Use the [official AWS libraries](https://aws.amazon.com/developer/tools/) for access to the Amazon IVS API from your server. These libraries are accessible within several languages from the public packages; e.g., [node.js](https://www.npmjs.com/package/aws-sdk), [java](https://github.com/aws/aws-sdk-java), and [go](https://github.com/aws/aws-sdk-go).
+This integration requires endpoints on your server that talk to the [Amazon IVS Chat API](https://docs.aws.amazon.com/ivs/latest/ChatAPIReference/Welcome.html). Use the [official AWS libraries](https://aws.amazon.com/developer/tools/) for access to the Amazon IVS API from your server. These libraries are accessible within several languages from the public packages; e.g., [node.js](https://www.npmjs.com/package/aws-sdk), [java](https://github.com/aws/aws-sdk-java), and [go](https://github.com/aws/aws-sdk-go).
 
-Create a server endpoint that talks to the Amazon IVS Chat API [CreateChatToken](https://docs.aws.amazon.com//ivs/latest/ChatAPIReference/API_CreateChatToken.html) operation, to create a chat token for chat users.
+Create a server endpoint that talks to the Amazon IVS Chat API [CreateChatToken](https://docs.aws.amazon.com/ivs/latest/ChatAPIReference/API_CreateChatToken.html) operation, to create a chat token for chat users.

@@ -13,8 +13,8 @@ You can import up to 150 rows at a time from a CSV file.
 
 **To import data from a CSV file into NoSQL Workbench**
 
-1. To import CSV data to a **Table**, first click the table name in the resource panel, and then click the additional actions (three-dot icon) in the main content toolbar.
+1. To import CSV data to a **Table**, first choose the table name in the resource panel, and then choose the additional actions (three-dot icon) in the main content toolbar.
 
-1. Select **Import sample data**.
+1. Choose **Import sample data**.
 
-1. Select your CSV file and choose **Open**. The CSV data appends to your table.
+1. Choose your CSV file and choose **Open**. The CSV data appends to your table.

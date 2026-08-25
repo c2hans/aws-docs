@@ -51,7 +51,6 @@ You can configure word policies for your guardrail by using the AWS Management C
    1. Select **Filter profanity** to block profanity in prompts and responses. The list of profanity is based on conventional definitions and is continually updated.
 
    1. For **Add custom words and phrases**, select how to add words and phrases for your guardrail to block. If you upload a file of words, each line in the file should contain one word or a phrase of up to three words. Don't include a header. You have the following options:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-word-filters.html)
 
    1. Edit the words and phrases for the guardrail to block in the **View and edit words and phrases** section. You have the following options:

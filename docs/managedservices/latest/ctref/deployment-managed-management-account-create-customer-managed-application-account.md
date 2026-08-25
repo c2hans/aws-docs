@@ -14,8 +14,6 @@ Create a customer-managed application account in a multi-account AWS landing zon
 ## Change Type Details
 <a name="ct-3pwbixz27n3tn-DMMc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-3pwbixz27n3tn |

@@ -20,10 +20,10 @@ Individual RCP controls apply to specific resources associated with the followin
 + Amazon Simple Queue Service (SQS)
 + AWS Secrets Manager
 
-RCP-based controls are configurable. For more information, see [Controls with parameters](https://docs.aws.amazon.com//controltower/latest/controlreference/control-parameter-concepts.html).
+RCP-based controls are configurable. For more information, see [Controls with parameters](https://docs.aws.amazon.com/controltower/latest/controlreference/control-parameter-concepts.html).
 
 **When to apply RCP controls**
 
-With RCP controls, you can establish a [*data perimeter*](https://aws.amazon.com//identity/data-perimeters-on-aws/) for your landing zone.
+With RCP controls, you can establish a [*data perimeter*](https://aws.amazon.com/identity/data-perimeters-on-aws/) for your landing zone.
 + For example, you can limit access to resources so that only the principals in your organization can manage them, such as with control **[CT.S3.PV.4] Require that the organization's Amazon S3 resources are accessible only by IAM principals that belong to the organization or by an AWS service**.
 + Similarly, you can restrict access to resources so that certain requirements must be met, such as with **[CT.S3.PV.3] Require requests to Amazon S3 resources to use a minimum TLS version of 1.3**.

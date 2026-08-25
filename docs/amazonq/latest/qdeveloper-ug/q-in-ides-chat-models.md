@@ -9,8 +9,6 @@ You can select the model you want Amazon Q to use while chatting in the IDE. The
 
 The following table describes the models that are available for Amazon Q chat in the IDE and their context windows.
 
-****
-
 | Model | Context window |
 | --- | --- |
 | Claude Sonnet 3.7 | 200k |

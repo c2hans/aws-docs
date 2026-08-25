@@ -87,6 +87,7 @@ Content-type: application/json
 
 {
    "credentials": { ... },
+   "endpointCredentials": { ... },
    "expiresAt": "string",
    "id": "string"
 }
@@ -101,6 +102,11 @@ The following data is returned in JSON format by the service.
 
  ** [credentials](#API_GetManagedEndpointSessionCredentials_ResponseSyntax) **   <a name="emroneks-GetManagedEndpointSessionCredentials-response-credentials"></a>
 The structure containing the session credentials.
+Type: [Credentials](API_Credentials.md) object
+ **Note: **This object is a Union. Only one member of this object can be specified or returned.
+
+ ** [endpointCredentials](#API_GetManagedEndpointSessionCredentials_ResponseSyntax) **   <a name="emroneks-GetManagedEndpointSessionCredentials-response-endpointCredentials"></a>
+The session credentials that the operation returns.
 Type: [Credentials](API_Credentials.md) object
  **Note: **This object is a Union. Only one member of this object can be specified or returned.
 

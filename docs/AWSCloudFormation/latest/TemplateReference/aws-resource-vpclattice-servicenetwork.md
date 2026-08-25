@@ -71,7 +71,7 @@ If you don't specify a name, CloudFormation generates one. However, if you speci
 Specify if the service network should be enabled for sharing.
 *Required*: No
 *Type*: [SharingConfig](aws-properties-vpclattice-servicenetwork-sharingconfig.md)
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Tags`  <a name="cfn-vpclattice-servicenetwork-tags"></a>
 The tags for the service network.

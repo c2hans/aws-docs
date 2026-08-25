@@ -18,12 +18,17 @@ Required: Yes
  ** FunctionType **   <a name="mediatailor-Type-Function-FunctionType"></a>
 The type of the function.
 Type: String
-Valid Values: `HTTP_REQUEST | CUSTOM_OUTPUT | SEQUENTIAL_EXECUTOR`
+Valid Values: `HTTP_REQUEST | CUSTOM_OUTPUT | CONCURRENT_EXECUTOR | SEQUENTIAL_EXECUTOR`
 Required: Yes
 
  ** Arn **   <a name="mediatailor-Type-Function-Arn"></a>
 The Amazon Resource Name (ARN) of the function.
 Type: String
+Required: No
+
+ ** ConcurrentExecutorConfiguration **   <a name="mediatailor-Type-Function-ConcurrentExecutorConfiguration"></a>
+The configuration for a `CONCURRENT_EXECUTOR` function.
+Type: [ConcurrentExecutorConfiguration](API_ConcurrentExecutorConfiguration.md) object
 Required: No
 
  ** CustomOutputConfiguration **   <a name="mediatailor-Type-Function-CustomOutputConfiguration"></a>

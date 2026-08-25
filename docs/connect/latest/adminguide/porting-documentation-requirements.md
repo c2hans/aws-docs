@@ -18,7 +18,7 @@ Additionally, regulations in some countries require a local business address and
 ## Common reasons why carriers reject an LOA
 <a name="why-port-request-rejected"></a>
 
-There are four common reasons that an LOA may be initially rejected by the losing carrier:
+There are four common reasons that an LOA might be initially rejected by the losing carrier:
 + Unsatisfactory business relationship
 
   This usually means that you have an unpaid balance or the carrier charges a port away fee. After you pay the bill or fee to your carrier, we will resubmit the port request.
@@ -27,7 +27,7 @@ There are four common reasons that an LOA may be initially rejected by the losin
   The information you submitted on your Letter of Authorization (LOA) is different from what's on file with your carrier in their Customer Service Record (CSR). To fix this, contact your existing carrier to update your CSR information, obtain the correct CSR information, or both. Let us know when they update your information and we will resubmit the port request. Or, send us a new LOA with the correct information as provided by your existing carrier.
 + Number cannot be ported
 
-  We will work with all Connect Customer carriers in a Region to support the porting of your numbers. In some cases, however, specific numbers may not be portable because of regulatory restrictions or carrier limitations. In these situations, consider claiming a new number from Connect Customer.
+  We will work with all Connect Customer carriers in a Region to support the porting of your numbers. In some cases, however, specific numbers might not be portable because of regulatory restrictions or carrier limitations. In these situations, consider claiming a new number from Connect Customer.
 + Missing information
 
-  One or more fields have been left blank on the LOA. This may include a missing signature, phone number, address information, or other requested information. Review all LOAs before submitting them to ensure that you have filled out all requested data. After the LOA is updated with all the required information, we will resubmit the port request.
+  One or more fields have been left blank on the LOA. This might include a missing signature, phone number, address information, or other requested information. Review all LOAs before submitting them to make sure that you have filled out all requested data. After the LOA is updated with all the required information, we will resubmit the port request.

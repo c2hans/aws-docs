@@ -19,8 +19,6 @@ The GitHub repository for this guide provides sample applications, scripts, and 
 <a name="samples-applications"></a>
 
 Sample applications demonstrate use of AWS Panorama features and common computer vision tasks. These sample applications include scripts and templates that automate setup and deployment. With minimal configuration, you can deploy and update applications from the command line.
-
-****
 + [aws-panorama-sample](https://github.com/awsdocs/aws-panorama-developer-guide/blob/main/sample-apps/aws-panorama-sample) – Basic computer vision with a classification model. Use the AWS SDK for Python (Boto) to upload metrics to CloudWatch, instrument preprocessing and inference methods, and configure logging.
 + [debug-server](https://github.com/awsdocs/aws-panorama-developer-guide/blob/main/sample-apps/debug-server) – [Open inbound ports](applications-ports.md) on the device and forward traffic to an application code container. Use multithreading to run application code, an HTTP server, and an HTTP client simultaneously.
 + [custom-model](https://github.com/awsdocs/aws-panorama-developer-guide/blob/main/sample-apps/custom-model) – Export models from code and compile with SageMaker AI Neo to test compatibility with the AWS Panorama Appliance. Build locally in a Python development, in a Docker container, or on an Amazon EC2 instance. Export and compile all built-in application models in Keras for a specific TensorFlow or Python version.
@@ -31,8 +29,6 @@ For more sample applications, also visit the [aws-panorama-samples](https://gith
 <a name="samples-scripts"></a>
 
 The scripts in the `util-scripts` directory manage AWS Panorama resources or automate development workflows.
-
-****
 + [provision-device.sh](https://github.com/awsdocs/aws-panorama-developer-guide/blob/main/util-scripts/provision-device.sh) – Provision a device.
 + [check-updates.sh](https://github.com/awsdocs/aws-panorama-developer-guide/blob/main/util-scripts/check-updates.sh) – Check for and apply appliance software updates.
 + [reboot-device.sh](https://github.com/awsdocs/aws-panorama-developer-guide/blob/main/util-scripts/reboot-device.sh) – Reboot a device.
@@ -52,8 +48,6 @@ For usage details, see [the README](https://github.com/awsdocs/aws-panorama-deve
 <a name="samples-templates"></a>
 
 Use the CloudFormation templates in the `cloudformation-templates` directory to create resources for AWS Panorama applications.
-
-****
 + [alarm-application.yml](https://github.com/awsdocs/aws-panorama-developer-guide/blob/main/cloudformation-templates/alarm-application.yml) – Create an alarm that monitors an application for errors. If the application instance raises errors or stops running for 5 minutes, the alarm sends a notification email.
 + [alarm-device.yml](https://github.com/awsdocs/aws-panorama-developer-guide/blob/main/cloudformation-templates/alarm-device.yml) – Create an alarm that monitors a device's connectivity. If the device stops sending metrics for 5 minutes, the alarm sends a notification email.
 + [application-role.yml](https://github.com/awsdocs/aws-panorama-developer-guide/blob/main/cloudformation-templates/application-role.yml) – Create an application role. The role includes permission to send metrics to CloudWatch. Add permissions to the policy statement for other API operations that your application uses.
@@ -72,15 +66,11 @@ $ ./create-stack.sh application-role
 <a name="samples-more"></a>
 
 The [aws-panorama-samples](https://github.com/aws-samples/aws-panorama-samples) repository has more sample applications and useful tools.
-
-****
 + [Applications](https://github.com/aws-samples/aws-panorama-samples/tree/main/samples) – Sample applications for various model architectures and use cases.
 + [Camera stream validation](https://github.com/aws-samples/aws-panorama-samples/tree/main/tools/camera_stream_validation) – Validate camera streams.
 + [PanoJupyter](https://github.com/aws-samples/aws-panorama-samples/tree/main/tools/pano_jupyter) – Run JupyterLab on an AWS Panorama Appliance.
 + [Sideloading](https://github.com/aws-samples/aws-panorama-samples/tree/main/tools/sideloading) – Update application code without building or deploying an application container.
 
 The AWS community has also developed tools and guidance for AWS Panorama. Check out the following open source projects on GitHub.
-
-****
 + [cookiecutter-panorama](https://github.com/mrtj/cookiecutter-panorama) – A Cookiecutter template for AWS Panorama applications.
 + [backpack](https://github.com/Neosperience/backpack) – Python modules for accessing runtime environment details, profiling, and additional video output options.

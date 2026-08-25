@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/userguide/error-cond
 
 Common error conditions for manifest filtering with MediaPackage are listed in the following table.
 
-****
-
 | Error condition | Example | HTTP status code |
 | --- | --- | --- |
 | A list parameter is not found and is not part of a constrained list | ?aws.manifestfilter=audio\_language:dahlia | 200 |

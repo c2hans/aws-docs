@@ -43,7 +43,7 @@ Make sure that you can unzip the test package without errors. In the following e
          `— log4j-1.2.14.jar
    ```
 
-   For more information, see [Automatically run Appium tests in Device FarmIntegrating Appium tests with Device Farm](test-types-appium.md).
+   For more information, see [Automatically run Appium tests in Device Farm](test-types-appium.md).
 
 ## APPIUM\_WEB\_JAVA\_TESTNG\_TEST\_PACKAGE\_DEPENDENCY\_DIR\_MISSING
 <a name="APPIUM_WEB_JAVA_TESTNG_TEST_PACKAGE_DEPENDENCY_DIR_MISSING"></a>
@@ -81,7 +81,7 @@ In the following example, the package's name is **zip-with-dependencies.zip**.
          `— log4j-1.2.14.jar
    ```
 
-   For more information, see [Automatically run Appium tests in Device FarmIntegrating Appium tests with Device Farm](test-types-appium.md).
+   For more information, see [Automatically run Appium tests in Device Farm](test-types-appium.md).
 
 ## APPIUM\_WEB\_JAVA\_TESTNG\_TEST\_PACKAGE\_JAR\_MISSING\_IN\_DEPENDENCY\_DIR
 <a name="APPIUM_WEB_JAVA_TESTNG_TEST_PACKAGE_JAR_MISSING_IN_DEPENDENCY_DIR"></a>
@@ -119,7 +119,7 @@ In the following example, the package's name is **zip-with-dependencies.zip**.
          `— {{log4j-1.2.14.jar}}
    ```
 
-   For more information, see [Automatically run Appium tests in Device FarmIntegrating Appium tests with Device Farm](test-types-appium.md).
+   For more information, see [Automatically run Appium tests in Device Farm](test-types-appium.md).
 
 ## APPIUM\_WEB\_JAVA\_TESTNG\_TEST\_PACKAGE\_TESTS\_JAR\_FILE\_MISSING
 <a name="APPIUM_WEB_JAVA_TESTNG_TEST_PACKAGE_TESTS_JAR_FILE_MISSING"></a>
@@ -157,7 +157,7 @@ In the following example, the package's name is **zip-with-dependencies.zip**.
          `— log4j-1.2.14.jar
    ```
 
-   For more information, see [Automatically run Appium tests in Device FarmIntegrating Appium tests with Device Farm](test-types-appium.md).
+   For more information, see [Automatically run Appium tests in Device Farm](test-types-appium.md).
 
 ## APPIUM\_WEB\_JAVA\_TESTNG\_TEST\_PACKAGE\_CLASS\_FILE\_MISSING\_IN\_TESTS\_JAR
 <a name="APPIUM_WEB_JAVA_TESTNG_TEST_PACKAGE_CLASS_FILE_MISSING_IN_TESTS_JAR"></a>
@@ -225,4 +225,4 @@ In the following example, the package's name is **zip-with-dependencies.zip**.
          `— log4j-1.2.14.jar
    ```
 
-   For more information, see [Automatically run Appium tests in Device FarmIntegrating Appium tests with Device Farm](test-types-appium.md).
+   For more information, see [Automatically run Appium tests in Device Farm](test-types-appium.md).

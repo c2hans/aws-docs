@@ -31,7 +31,7 @@ Use the [Account Settings](https://console.aws.amazon.com/billing/home#/account)
 + Add, update, or remote alternate contacts
 + Editing your contact information
 
-For more information about these tasks, see [Managing your AWS India account](https://docs.aws.amazon.com//accounts/latest/reference/managing-accounts-india.html#manage-aispl-account) in the *AWS Account Management Reference Guide*.
+For more information about these tasks, see [Managing your AWS India account](https://docs.aws.amazon.com/accounts/latest/reference/managing-accounts-india.html#manage-aispl-account) in the *AWS Account Management Reference Guide*.
 
 Use the [Tax Settings](https://console.aws.amazon.com/billing/home#/tax) page of the Billing and Cost Management console to perform the following tasks:
 + [Adding or editing a Permanent Account Number](#aispl-add-pan)

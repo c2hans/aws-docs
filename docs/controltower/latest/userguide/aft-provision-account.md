@@ -26,7 +26,7 @@ To provision a new account with AFT, create an account request Terraform file. T
 **Note**
  The input that you provide for `control_tower_parameters` can't be changed during the account provisioning.
  The supported formats for specifying `ManagedOrganizationalUnit` in the **aft-account-request** repository include `OUName` and `OUName (OU-ID)`. For nested OUs (an OU within an OU), you must use the `OUName (OU-ID)` format. For an example, see [account-request.tf](https://github.com/aws-ia/terraform-aws-control_tower_account_factory/blob/main/sources/aft-customizations-repos/aft-account-request/examples/account-request.tf#L12-L13) in GitHub.
-+  `account_tags` captures user-defined keys and values, which can tag AWS accounts according to business criteria. For more information, see [Tagging AWS Organizations resources](https://docs.aws.amazon.com//organizations/latest/userguide/orgs_tagging.html) in the *AWS Organizations User Guide*.
++  `account_tags` captures user-defined keys and values, which can tag AWS accounts according to business criteria. For more information, see [Tagging AWS Organizations resources](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_tagging.html) in the *AWS Organizations User Guide*.
 +  The value of `change_management_parameters` captures additional information, such as why an account request was created and who initiated the account request. The value includes the following input fields:
   + `change_reason`
   + `change_requested_by`

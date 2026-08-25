@@ -143,8 +143,6 @@ Granting these permissions provides the means to query the Lake Formation data i
 
 You will grant table access to the IAM role that is associated with your Amazon SageMaker Unified Studio project. This role is called the project role, and it was created in IAM upon project creation. To grant permission on the tables to the project role, complete the following steps.
 
-****
-
 1. On the Lake Formation console, under **Data Catalog** in the navigation pane, choose **Databases**.
 
 1. Select the existing Data Catalog database.

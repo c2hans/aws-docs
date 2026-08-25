@@ -51,8 +51,6 @@ The data for each sequence of video frames needs to be stored in a JSON data obj
 
 The following table provides details about the parameters shown in the this code example.
 
-****
-
 |  Parameter  |  Required  |  Accepted Values  |  Description  |
 | --- | --- | --- | --- |
 | `seq-no` | Yes | Integer | The ordered number of the sequence.  |

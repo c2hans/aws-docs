@@ -81,7 +81,7 @@ This policy includes the following permissions:
 + SSM Incidents – Provides `Get` and `List` permissions for SSM Incidents resources that are associated with your AWS account.
 + Tag – Provides `GetResources` permission for querying tagged resources that are associated with your AWS account.
 
-The AWS managed policy `AWSResilienceHubV2AssessmentExecutionPolicy` provides these permissions. Attach the managed policy rather than copying the policy document so that your permissions stay current as AWS updates it. To view the full policy document, see [AWSResilienceHubV2AssessmentExecutionPolicy](https://docs.aws.amazon.com//aws-managed-policy/latest/reference/AWSResilienceHubV2AssessmentExecutionPolicy.html) in the AWS Managed Policy Reference Guide.
+The AWS managed policy `AWSResilienceHubV2AssessmentExecutionPolicy` provides these permissions. Attach the managed policy rather than copying the policy document so that your permissions stay current as AWS updates it. To view the full policy document, see [AWSResilienceHubV2AssessmentExecutionPolicy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSResilienceHubV2AssessmentExecutionPolicy.html) in the AWS Managed Policy Reference Guide.
 
 ## AWSResilienceHubResilienceTestingPolicy
 <a name="next-gen-security_iam_aws-resilience-testing-policy"></a>

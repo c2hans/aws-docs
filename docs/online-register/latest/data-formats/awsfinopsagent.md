@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsf
 
 AWS FinOps Agent provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="finops-agent-GetAgentRequest"></a>[GetAgentRequest](https://docs.aws.amazon.com/finops-agent/) | View details of a pending approval request from the agent | Read |

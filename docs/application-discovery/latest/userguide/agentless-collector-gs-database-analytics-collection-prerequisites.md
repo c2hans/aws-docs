@@ -17,7 +17,7 @@ After you create the required AWS resources, configure data forwarding from the 
 
 1. On the **Dashboard** page, choose **Configure data forwarding** in the **Data forwarding** section.
 
-1. For **AWS Region**, **IAM access key ID**, and **IAM secret access key**, your Agentless Collector uses the values that you configured before. For more information, see [Sign in to Migration Hub and choose a home Region](setting-up.md#setting-up-choose-home-region) and [Deploying a collectorCreate an IAM user](agentless-collector-deploying.md#agentless-collector-gs-iam-user).
+1. For **AWS Region**, **IAM access key ID**, and **IAM secret access key**, your Agentless Collector uses the values that you configured before. For more information, see [Sign in to Migration Hub and choose a home Region](setting-up.md#setting-up-choose-home-region) and [Deploying a collector](agentless-collector-deploying.md#agentless-collector-gs-iam-user).
 
 1. For **Connected DMS data collector**, choose your data collector that you created in the AWS DMS console.
 

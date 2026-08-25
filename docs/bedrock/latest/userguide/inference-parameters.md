@@ -39,8 +39,6 @@ For any given sequence, a model determines a probability distribution of options
 
 The following table summarizes the effects of these parameters.
 
-****
-
 | Parameter | Effect of lower value | Effect of higher value |
 | --- | --- | --- |
 | Temperature | Increase likelihood of higher-probability tokens Decrease likelihood of lower-probability tokens | Increase likelihood of lower-probability tokensDecrease likelihood of higher-probability tokens |

@@ -20,6 +20,7 @@ Required: Yes
 
  ** Type **   <a name="organizations-Type-HandshakeParty-Type"></a>
 The type of ID for the participant.
+ORGANIZATION is valid only in the response context (identifying the inviting organization). Valid input values for the Target parameter are ACCOUNT and EMAIL only.
 Type: String
 Valid Values: `ACCOUNT | ORGANIZATION | EMAIL`
 Required: Yes

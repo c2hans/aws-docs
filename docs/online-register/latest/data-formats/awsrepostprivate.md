@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsr
 
 AWS rePost Private provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="repostspace-GetChannel"></a>[GetChannel](https://docs.aws.amazon.com/repostprivate/latest/APIReference/API_GetChannel.html) | Get the description for a channel in private re:Post in your account | Read |

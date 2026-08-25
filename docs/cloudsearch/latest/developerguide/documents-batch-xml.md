@@ -37,8 +37,6 @@ The body of a `documents/batch` request specifies the document operations you wa
 ### documents/batch Request Elements (XML)
 <a name="documents-batch-xml-request-elements"></a>
 
-****
-
 | Element | Description | Required |
 | --- | --- | --- |
 | batch | The collection of add or delete operations that you want to submit to your search domain. A batch must contain at least one add or delete element.  | Yes |
@@ -75,8 +73,6 @@ response = element response {
 
 ### documents/batch Response Elements (XML)
 <a name="documents-batch-xml-response-elements"></a>
-
-****
 
 | Element | Description |
 | --- | --- |

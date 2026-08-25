@@ -16,6 +16,7 @@ References:
 **Topics**
 + [API operations defined by AWS Agent Registry](#list_agent-registry-operations)
 + [Actions defined by AWS Agent Registry](#list_agent-registry-actions-as-permissions)
++ [Permission-only actions for AWS Agent Registry](#list_agent-registry-permission-only-actions)
 + [Resource types defined by AWS Agent Registry](#list_agent-registry-resources-for-iam-policies)
 + [Condition keys for AWS Agent Registry](#list_agent-registry-policy-keys)
 
@@ -23,8 +24,6 @@ References:
 <a name="list_agent-registry-operations"></a>
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_agent-registry-actions-as-permissions).
-
-****
 
 - **   BatchGetDiscoverableRegistryRecord  **
   - **SDK client:** agent-registry
@@ -56,6 +55,8 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **SDK client:** agent-registry-control
   - **IAM action:**  [agent-registry:CreateRegistryRecord](#list_agent-registry-action-CreateRegistryRecord)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [agent-registry:TagResource](#list_agent-registry-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+  - **IAM action:**  [bedrock-agentcore:GetResourceOauth2Token](https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/API_GetResourceOauth2Token.html)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
+  - **IAM action:**  [bedrock-agentcore:GetWorkloadAccessToken](https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/API_GetWorkloadAccessToken.html)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** agent-registry.amazonaws.com / **Access level:** Write
 
 - **   DeleteRegistry  **
@@ -138,6 +139,8 @@ The following table maps API operations to the IAM actions they authorize. Only 
 - **   UpdateRegistryRecord  **
   - **SDK client:** agent-registry-control
   - **IAM action:**  [agent-registry:UpdateRegistryRecord](#list_agent-registry-action-UpdateRegistryRecord)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [bedrock-agentcore:GetResourceOauth2Token](https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/API_GetResourceOauth2Token.html)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
+  - **IAM action:**  [bedrock-agentcore:GetWorkloadAccessToken](https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/API_GetWorkloadAccessToken.html)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** agent-registry.amazonaws.com / **Access level:** Write
 
 - **   UpdateRegistryRecordStatus  **
@@ -151,8 +154,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
 <a name="list_agent-registry-actions-as-permissions"></a>
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
-
-****
 
 - **   [CreateRegistry](https://docs.aws.amazon.com/agent-registry-control/latest/APIReference/API_CreateRegistry.html)  **
   - **Description:** Grants permission to create a new registry
@@ -268,12 +269,33 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_agent-registry-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
+## Permission-only actions for AWS Agent Registry
+<a name="list_agent-registry-permission-only-actions"></a>
+
+The following actions are defined by AWS Agent Registry but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
+
+- **   [DeleteResourcePolicy](https://docs.aws.amazon.com/agent-registry/latest/APIReference/)  **
+  - **Description:** Grants permission to delete the resource-based policy from a specified resource
+  - **Resource types (\*required):** [registry](#list_agent-registry-resource-registry)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_agent-registry-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
+- **   [GetResourcePolicy](https://docs.aws.amazon.com/agent-registry/latest/APIReference/)  **
+  - **Description:** Grants permission to retrieve the resource-based policy for a specified resource
+  - **Resource types (\*required):** [registry](#list_agent-registry-resource-registry)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_agent-registry-aws_ResourceTag___TagKey_)
+  - **Access level:** Read
+
+- **   [PutResourcePolicy](https://docs.aws.amazon.com/agent-registry/latest/APIReference/)  **
+  - **Description:** Grants permission to set a resource-based policy for a specified resource
+  - **Resource types (\*required):** [registry](#list_agent-registry-resource-registry)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_agent-registry-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
 ## Resource types defined by AWS Agent Registry
 <a name="list_agent-registry-resources-for-iam-policies"></a>
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
-
-****
 
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
@@ -285,10 +307,9 @@ The following resource types are defined by this service and can be used in the 
 
 AWS Agent Registry defines the following condition keys that can be used in the `Condition` element of an IAM policy.
 
-****
-
 | Condition keys | Description | Type |
 | --- | --- | --- |
+|   [agent-registry:RecordCreatorAccount](https://docs.aws.amazon.com/agent-registry/latest/APIReference/)  | Filters access by the AWS account ID of the principal that created the registry record | String |
 |   [aws:RequestTag/${TagKey}](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-globally-available)  | Filters access by creating requests based on the allowed set of values for each of the mandatory tags | String |
 |   [aws:ResourceTag/${TagKey}](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-globally-available)  | Filters access by having actions based on the tag value associated with the resource | String |
 |   [aws:TagKeys](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-globally-available)  | Filters access by creating requests based on the presence of mandatory tags in the request | ArrayOfString |

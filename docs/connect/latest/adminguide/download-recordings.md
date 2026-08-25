@@ -34,7 +34,7 @@ To have Connect Customer create transcripts of phone calls, see the conversation
    The following image shows a list of .wav files in a Downloads folder. The name of the .wav file is the contact ID.
 ![A list of .wav file recordings in the downloads folder.](http://docs.aws.amazon.com/connect/latest/adminguide/images/downloaded-wav-files.png)
 **Tip**
-In the recording, you may hear only the agent, only the customer, or both the agent and customer. This is determined by how the [Set recording and analytics behavior](set-recording-behavior.md) block is configured.
+In the recording, you might hear only the agent, only the customer, or both the agent and customer. This is determined by how the [Set recording and analytics behavior](set-recording-behavior.md) block is configured.
 
 ## Download a chat transcript as a .json file
 <a name="downloadchat-recordings"></a>

@@ -89,8 +89,6 @@ The following sections summarize the pip commands that are supported, by CodeArt
 
 This section lists `pip` commands where the `pip` client makes one or more requests to the registry it's been configured with. These commands have been verified to function correctly when invoked against a CodeArtifact repository.
 
-****
-
 | Command | Description |
 | --- | --- |
 |  [install](https://pip.pypa.io/en/stable/reference/pip_install/)  | Install packages. |
@@ -102,8 +100,6 @@ CodeArtifact does not implement `pip search`. If you have configured `pip` with 
 <a name="supported-pip-client-side-commands"></a>
 
 These commands don't require any direct interaction with a repository, so CodeArtifact does not need to do anything to support them.
-
-****
 
 | Command | Description |
 | --- | --- |

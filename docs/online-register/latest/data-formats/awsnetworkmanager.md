@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsn
 
 AWS Network Manager provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="networkmanager-DescribeGlobalNetworks"></a>[DescribeGlobalNetworks](https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_DescribeGlobalNetworks.html) | Describe global networks | List |

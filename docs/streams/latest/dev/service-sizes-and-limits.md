@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/service-sizes-and-lim
 
 The following table describes stream and shard quotas and limits for Amazon Kinesis Data Streams.
 
-****
-
 <table>
 <thead>
   <tr><th>Quota</th><th>On-demand mode</th><th>Provisioned mode</th></tr>

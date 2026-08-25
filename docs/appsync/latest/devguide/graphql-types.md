@@ -59,7 +59,7 @@ type Occupation {
 }
 ```
 
-Singling out the `name` and `title` fields, both hold a `String` scalar. `Name` could return a string value like "`John Smith`" and the title could return something like "`firefighter`". Some GraphQL implementations also support custom scalars using the `Scalar` keyword and implementing the type's behavior. However, AWS AppSync currently **doesn't support** custom scalars. For a list of scalars, see [Scalar types in AWS AppSync](https://docs.aws.amazon.com//appsync/latest/devguide/scalars.html).
+Singling out the `name` and `title` fields, both hold a `String` scalar. `Name` could return a string value like "`John Smith`" and the title could return something like "`firefighter`". Some GraphQL implementations also support custom scalars using the `Scalar` keyword and implementing the type's behavior. However, AWS AppSync currently **doesn't support** custom scalars. For a list of scalars, see [Scalar types in AWS AppSync](https://docs.aws.amazon.com/appsync/latest/devguide/scalars.html).
 
 ## Inputs
 <a name="input-components"></a>

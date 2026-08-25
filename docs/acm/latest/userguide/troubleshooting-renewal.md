@@ -13,7 +13,7 @@ ACM tries to automatically renew your ACM certificates before they expire so tha
 Before ACM can renew your certificates automatically, the following must be true:
 + Your certificate must be associated with an AWS service that is integrated with ACM. For information about the resources that ACM supports, see [Managed automation with integrated services](acm-services.md).
 + For email-validated certificates, ACM must be able to reach you at an administrator email address for each domain listed in your certificate. The email addresses that will be tried are listed in [AWS Certificate Manager email validation](email-validation.md).
-+ For DNS-validated certificates, make sure that your DNS configuration contains the correct CNAME records as described in [AWS Certificate Manager DNS validationDNS validation](dns-validation.md).
++ For DNS-validated certificates, make sure that your DNS configuration contains the correct CNAME records as described in [AWS Certificate Manager DNS validation](dns-validation.md).
 + For HTTP-validated certificates, make sure that your redirects are configured as described in [AWS Certificate Manager HTTP validation](http-validation.md).
 
 ## Handling failures in managed certificate renewal
@@ -36,7 +36,7 @@ ACM does not attempt TLS validation for DNS-validated certificates. If ACM fails
 **Important**
 You must insert the correct CNAME records into your DNS database. Consult your domain registrar about how to do this.
 
-You can find the CNAME records for your domains by expanding your certificate and its domain entries in the ACM console. Refer to the figures below for details. You can also retrieve CNAME records by using the [DescribeCertificate](https://docs.aws.amazon.com/acm/latest/APIReference/API_DescribeCertificate.html) operation in the ACM API or the [describe-certificate](https://docs.aws.amazon.com/cli/latest/reference/acm/describe-certificate.html) command in the ACM CLI. For more information, see [AWS Certificate Manager DNS validationDNS validation](dns-validation.md).
+You can find the CNAME records for your domains by expanding your certificate and its domain entries in the ACM console. Refer to the figures below for details. You can also retrieve CNAME records by using the [DescribeCertificate](https://docs.aws.amazon.com/acm/latest/APIReference/API_DescribeCertificate.html) operation in the ACM API or the [describe-certificate](https://docs.aws.amazon.com/cli/latest/reference/acm/describe-certificate.html) command in the ACM CLI. For more information, see [AWS Certificate Manager DNS validation](dns-validation.md).
 
 ![Select the target certificate from the console.](http://docs.aws.amazon.com/acm/latest/userguide/images/Dns-renewal-1.png)
 

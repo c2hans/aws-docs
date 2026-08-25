@@ -5,6 +5,8 @@ source_url: https://docs.aws.amazon.com/accounts/latest/reference/using-orgs-exa
 # Restrict access using AWS Organizations service control policies
 <a name="using-orgs-example-scps"></a>
 
+This information is about restricting access using AWS Organizations service control policies if you signed up for AWS using Sign up for AWS (advanced) or if you activated advanced features for your account. To compare sign-up options, see [Compare sign-up options](sign-up-for-aws.md).
+
 This topic presents examples that show how you can use service control policies (SCPs) in AWS Organizations to restrict what the users and roles in the accounts in your organization can do. For more information about service control policies, see the following topics in the *AWS Organizations User Guide*:
 + [Creating SCPs](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps_create.html)
 + [Attaching SCPs to OUs and accounts](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps_attach.html)

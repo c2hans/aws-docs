@@ -59,11 +59,9 @@ The following list contains AWS services and features that are in scope for the 
 <a name="aif-01-in-scope-developer-tools"></a>
 + Kiro
 + Strands Agents
-+ Amazon Q
 
 ## Machine Learning
 <a name="aif-01-in-scope-machine-learning"></a>
-+ Amazon Augmented AI (Amazon A2I)
 + Amazon Bedrock
 + Amazon Bedrock AgentCore
 + Amazon Comprehend

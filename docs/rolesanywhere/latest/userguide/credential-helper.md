@@ -15,11 +15,11 @@ To download the credential helper tool, use the following links. Releases for Da
 
 | Platform | Architecture | Download URL | SHA256 checksum |
 | --- | --- | --- | --- |
-| Linux | x86-64 | [https://rolesanywhere.amazonaws.com/releases/1.8.4/X86\_64/Linux/Amzn2023/aws\_signing\_helper](https://rolesanywhere.amazonaws.com/releases/1.8.4/X86_64/Linux/Amzn2023/aws_signing_helper) | b7568acd6e1517a4e1adaee68d52bfd6284a0e5305677166cd83d43a07c815c9 |
-| Windows | x86-64 | [https://rolesanywhere.amazonaws.com/releases/1.8.4/X86\_64/Windows/Server2022/aws\_signing\_helper.exe](https://rolesanywhere.amazonaws.com/releases/1.8.4/X86_64/Windows/Server2022/aws_signing_helper.exe) | c0c519b649f1cf9b3b487ea44bd3cbe168bf3762bca512e6f47116e0b379b06e |
-| Darwin | x86-64 | [https://rolesanywhere.amazonaws.com/releases/1.8.4/X86\_64/MacOS/Sonoma/aws\_signing\_helper](https://rolesanywhere.amazonaws.com/releases/1.8.4/X86_64/MacOS/Sonoma/aws_signing_helper) | 99eda17864b93e2f2e32d404ee0aba340502853a49ba263b9e7fac13b3b6abe6 |
-| Linux | Aarch64 | [https://rolesanywhere.amazonaws.com/releases/1.8.4/Aarch64/Linux/Amzn2023/aws\_signing\_helper](https://rolesanywhere.amazonaws.com/releases/1.8.4/Aarch64/Linux/Amzn2023/aws_signing_helper) | 581a57223b476637458fa4598169d1d71c1b5b796f08026b460ec3f41a2b3707 |
-| Darwin | Aarch64 | [https://rolesanywhere.amazonaws.com/releases/1.8.4/Aarch64/MacOS/Sonoma/aws\_signing\_helper](https://rolesanywhere.amazonaws.com/releases/1.8.4/Aarch64/MacOS/Sonoma/aws_signing_helper) | a10c8967e632aac61937adb93bc72480402fe8224e836eaa8fb5b2fb30094f5f |
+| Linux | x86-64 | [https://rolesanywhere.amazonaws.com/releases/1.8.5/X86\_64/Linux/Amzn2023/aws\_signing\_helper](https://rolesanywhere.amazonaws.com/releases/1.8.5/X86_64/Linux/Amzn2023/aws_signing_helper) | beec9ed1c492d93db809890f16713e3556353294b823c2184ad4e891f1b2b54d |
+| Windows | x86-64 | [https://rolesanywhere.amazonaws.com/releases/1.8.5/X86\_64/Windows/Server2022/aws\_signing\_helper.exe](https://rolesanywhere.amazonaws.com/releases/1.8.5/X86_64/Windows/Server2022/aws_signing_helper.exe) | fc4c3e65864c1829fcd87ae3718387db03b8ea48b8819f5a6031482ba5d243cd |
+| Darwin | x86-64 | [https://rolesanywhere.amazonaws.com/releases/1.8.5/X86\_64/MacOS/Sonoma/aws\_signing\_helper](https://rolesanywhere.amazonaws.com/releases/1.8.5/X86_64/MacOS/Sonoma/aws_signing_helper) | aab355e1e7468056be88a56bbfb030ea33ff32bef2ce20f5dd6a0b1cae5aae5a |
+| Linux | Aarch64 | [https://rolesanywhere.amazonaws.com/releases/1.8.5/Aarch64/Linux/Amzn2023/aws\_signing\_helper](https://rolesanywhere.amazonaws.com/releases/1.8.5/Aarch64/Linux/Amzn2023/aws_signing_helper) | 3d131aa888cd56da446f9c6bb460b1f0569f6c7edc74eae6193a2fe3928883ba |
+| Darwin | Aarch64 | [https://rolesanywhere.amazonaws.com/releases/1.8.5/Aarch64/MacOS/Sonoma/aws\_signing\_helper](https://rolesanywhere.amazonaws.com/releases/1.8.5/Aarch64/MacOS/Sonoma/aws_signing_helper) | ac4b656cd83ffde5a6e9e8f2317ffb90e036c9bb704cc80faa6aee414b55915a |
 
 **Important**
 To get temporary credentials, you need all of the following:
@@ -28,7 +28,7 @@ A Role ARN from IAM
 An end-entity certificate from your certificate authority
 The certificate associated private key is required in most cases, except when inferred. For example when using OS certificate stores.
 A trust anchor configured in IAM Roles Anywhere
-For more information, see [Getting started](getting-started.md). For detailed examples of using the credential helper with the Java SDK, see [Using IAM Roles Anywhere credentials](https://docs.aws.amazon.com//sdk-for-java/latest/developer-guide/credentials-process.html#credentials-iam-roles-anywhere).
+For more information, see [Getting started](getting-started.md). For detailed examples of using the credential helper with the Java SDK, see [Using IAM Roles Anywhere credentials](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/credentials-process.html#credentials-iam-roles-anywhere).
 
 ## Credential Helper on GitHub
 <a name="credential-helper-github"></a>
@@ -388,19 +388,19 @@ The following example shows a the `config` file that sets the helper tool as the
     credential_process = ./aws_signing_helper credential-process --certificate {{/path/to/certificate}} --private-key {{/path/to/private-key}} --trust-anchor-arn arn:aws:rolesanywhere:{{region}}:{{account}}:trust-anchor/{{TA_ID}} --profile-arn arn:aws:rolesanywhere:{{region}}:{{account}}:profile/{{PROFILE_ID}} --role-arn arn:aws:iam::{{account}}:role/{{role-name-with-path}}
     region = {{region}}
 ```
- For using this profile with any AWS SDK not mentioned below, see 'Set a named profile' from [Using shared config and credentials files to globally configure AWS SDKs and tools](https://docs.aws.amazon.com//sdkref/latest/guide/file-format.html)
+ For using this profile with any AWS SDK not mentioned below, see 'Set a named profile' from [Using shared config and credentials files to globally configure AWS SDKs and tools](https://docs.aws.amazon.com/sdkref/latest/guide/file-format.html)
 
 **Example Python SDK**
  To specify your Roles Anywhere enabled profile for use with Python, see [Boto3: Shared credentials file](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/credentials.html#shared-credentials-file).
 
 **Example Java SDK**
- To specify your Roles Anywhere enabled profile for use with Java, see [Java 2.x: Use profiles](https://docs.aws.amazon.com//sdk-for-java/latest/developer-guide/credentials-profiles.html)
+ To specify your Roles Anywhere enabled profile for use with Java, see [Java 2.x: Use profiles](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/credentials-profiles.html)
 
 **Example C\# SDK**
- To specify your Roles Anywhere enabled profile for use with C\#, see [Examples for classes SharedCredentialsFile and AWSCredentialsFactory](https://docs.aws.amazon.com//sdk-for-net/v3/developer-guide/creds-locate.html#creds-locate-cred-shared-file)
+ To specify your Roles Anywhere enabled profile for use with C\#, see [Examples for classes SharedCredentialsFile and AWSCredentialsFactory](https://docs.aws.amazon.com/sdk-for-net/v3/developer-guide/creds-locate.html#creds-locate-cred-shared-file)
 
 **Example Go SDK**
- To specify your IAM Roles Anywhere enabled profile for use with Go, see the Specifying Profiles section in [Specifying Credentials](https://docs.aws.amazon.com//sdk-for-go/v2/developer-guide/configure-gosdk.html#specifying-credentials)
+ To specify your IAM Roles Anywhere enabled profile for use with Go, see the Specifying Profiles section in [Specifying Credentials](https://docs.aws.amazon.com/sdk-for-go/v2/developer-guide/configure-gosdk.html#specifying-credentials)
 
 ## serve command
 <a name="credential-helper-serve"></a>
@@ -593,10 +593,15 @@ $ aws s3 ls
 ```
 
 **Example Use with JavaScript SDK**
-To specify your Roles Anywhere enabled profile for use with JavaScript, see [Loading Credentials in Node.js from the Shared Credentials File](https://docs.aws.amazon.com//sdk-for-javascript/v2/developer-guide/loading-node-credentials-shared.html)
+To specify your Roles Anywhere enabled profile for use with JavaScript, see [Loading Credentials in Node.js from the Shared Credentials File](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/loading-node-credentials-shared.html)
 
 ## Credential Helper Changelog
 <a name="credential-helper-changelog"></a>
+
+### CredentialHelper version 1.8.5
+<a name="credential-helper-version-1.8.5"></a>
+
+On August 24, 2026, AWS IAM Roles Anywhere released Credential Helper version 1.8.5. In this release, IAM Roles Anywhere patched security vulnerabilities.
 
 ### CredentialHelper version 1.8.4
 <a name="credential-helper-version-1.8.4"></a>

@@ -412,8 +412,6 @@ In the 1.x version of the KCL, the `idleTimeBetweenReadsInMillis` corresponded t
 
 In version 2.0, the KCL no longer creates clients. It depends on the user to supply a valid client. With this change, all configuration parameters that controlled client creation have been removed. If you need these parameters, you can set them on the clients before providing the clients to `ConfigsBuilder`.
 
-****
-
 | Removed Field | Equivalent Configuration |
 | --- | --- |
 | kinesisEndpoint | Configure the SDK KinesisAsyncClient with preferred endpoint: KinesisAsyncClient.builder().endpointOverride(URI.create("https://<kinesis endpoint>")).build(). |

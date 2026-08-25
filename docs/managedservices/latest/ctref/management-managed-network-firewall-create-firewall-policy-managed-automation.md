@@ -14,8 +14,6 @@ Create a network firewall policy with specified configuration and rule group ref
 ## Change Type Details
 <a name="ct-16c7yzpkb2a6n-MMNc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-16c7yzpkb2a6n |

@@ -7,16 +7,13 @@ source_url: https://docs.aws.amazon.com/outposts/latest/network-userguide/privat
 
 You can configure the service link with a private connection for the traffic between the Outposts and home AWS Region. You can choose to use Direct Connect private or transit VIFs.
 
-Select the private connectivity option when you create your Outpost in the AWS Outposts console. For instructions, see [Create an Outpost](https://docs.aws.amazon.com/outposts/latest/network-userguide/order-outpost-capacity.html#create-outpost).
+Select the private connectivity option when you create your Outpost using the AWS Outposts console, AWS CLI, or API. For instructions, see [Create an Outpost](https://docs.aws.amazon.com/outposts/latest/network-userguide/order-outpost-capacity.html#create-outpost).
 
 When you select the private connectivity option, a service link VPN connection is established after the Outpost is installed, using a VPC and subnet that you specify. This allows private connectivity through the VPC and minimizes public internet exposure.
 
 The following image shows both options to establish a service link VPN private connection between your Outposts and the AWS Region:
 
 ![The service link private connection options.](http://docs.aws.amazon.com/outposts/latest/network-userguide/images/outpost-rack2ndgen-sl-private-connection-options.PNG)
-
-**Note**
-Second-generation Outposts racks require a larger subnet size (/24 or larger) and a VPC Endpoint for the Outposts service.
 
 **IP Address Planning for Private Connectivity**
 When configuring private connectivity for the Outposts service link, plan your IP addressing carefully to avoid future conflicts. Service Link VIFs are immutable. You should avoid creating CoIP pools or DVR subnet ranges assigned to the Local Gateway (LGW) that overlap with existing Service Link address ranges or VPC CIDR ranges used for the dedicated private connectivity VPC. Overlapping prefixes across the Service Link and LGW networks may result in BGP routing conflicts on the upstream network and disrupt Service Link functionality.
@@ -25,11 +22,14 @@ When configuring private connectivity for the Outposts service link, plan your I
 <a name="private-connectivity-prerequisites"></a>
 
 The following prerequisites are required before you can configure private connectivity for your Outpost:
-+ You must configure permissions for an IAM entity (user or role) to allow the user or role to create the service-linked role for private connectivity. The IAM entity needs permission to access the following actions:
++ You must configure permissions for an IAM entity (user or role) to allow the user or role to create the service-linked role and provisioning role for private connectivity. The IAM entity needs permission to access the following actions:
   + `iam:CreateServiceLinkedRole` on `arn:aws:iam::*:role/aws-service-role/outposts.amazonaws.com/AWSServiceRoleForOutposts*`
   + `iam:PutRolePolicy` on `arn:aws:iam::*:role/aws-service-role/outposts.amazonaws.com/AWSServiceRoleForOutposts*`
+  + `iam:CreateRole` on `arn:aws:iam::*:role/service-role/AWSOutpostsProvisioningRole_*`
+  + `iam:PutRolePolicy` on `arn:aws:iam::*:role/service-role/AWSOutpostsProvisioningRole_*`
   + `ec2:DescribeVpcs`
   + `ec2:DescribeSubnets`
+  + `ec2:DescribeVpcEndpoints`
 
   For more information, see [AWS Identity and Access Management for AWS Outposts](https://docs.aws.amazon.com/outposts/latest/network-userguide/identity-access-management.html)
 + In the same AWS account and Availability Zone as your Outpost, create a VPC for the sole purpose of Outpost private connectivity with a subnet /24 or larger that does not conflict with 10.1.0.0/16. For example, you might use 10.3.0.0/16.
@@ -42,7 +42,7 @@ Do not delete this VPC as it maintains the connection to your Outposts.
 **Note**
 Both TCP and UDP on port 443 are required for private connectivity to function properly.
 + Advertise the subnet CIDR to your on-premises network. You can use AWS Direct Connect to do so. For more information, see [Direct Connect virtual interfaces](https://docs.aws.amazon.com/directconnect/latest/UserGuide/WorkingWithVirtualInterfaces.html) and [Working with Direct Connect gateways](https://docs.aws.amazon.com/directconnect/latest/UserGuide/direct-connect-gateways.html) in the *Direct Connect User Guide*.
-+ Create a new VPC endpoint for AWS Outposts in your private connectivity VPC and subnet.
++ Create a new VPC endpoint for AWS Outposts in your private connectivity VPC and subnet. The VPC endpoint ID is required when you configure private connectivity.
 
   Use the following VPC endpoint settings:
   + **Service**: Outposts (com.amazonaws.{{region}}.outposts)
@@ -88,6 +88,50 @@ After you select the private connectivity option for your Outpost, AWS Outposts 
 + Attaches the network interfaces to the service link endpoint instances from the account.
 
 For more information about the service-linked role, see [Service-linked roles for AWS Outposts](https://docs.aws.amazon.com/outposts/latest/network-userguide/using-service-linked-roles.html).
+
+When you configure private connectivity, AWS Outposts also creates a provisioning role in your account named `AWSOutpostsProvisioningRole_{{outpostId}}`. The AWS Outposts service uses this role to start and monitor the private connectivity connection for your Outpost.
+
+The role uses the following JSON trust policy. Replace `{{accountId}}` with your AWS account ID and `{{outpostArn}}` with your Outpost ARN:
+
+```
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "OutpostsProvisioningRoleTrustPolicy",
+      "Effect": "Allow",
+      "Principal": { "Service": "outposts.amazonaws.com" },
+      "Action": "sts:AssumeRole",
+      "Condition": {
+        "StringEquals": { "aws:SourceAccount": "{{accountId}}" },
+        "ArnEquals": { "aws:SourceArn": "{{outpostArn}}" }
+      }
+    }
+  ]
+}
+```
+
+The role uses the following JSON inline permissions policy:
+
+```
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "OutpostProvisioningPermissions",
+      "Effect": "Allow",
+      "Action": "outposts:StartConnection",
+      "Resource": "{{outpostArn}}"
+    },
+    {
+      "Sid": "GetConnectionUnscoped",
+      "Effect": "Allow",
+      "Action": "outposts:GetConnection",
+      "Resource": "*"
+    }
+  ]
+}
+```
 
 **Important**
 After your Outpost is installed, confirm connectivity to the private IPs in your subnet from your Outpost.

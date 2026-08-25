@@ -11,8 +11,6 @@ AWS SCT supports several industry standards, including Federal Information Proce
 
 AWS SCT supports the following OLTP conversions.
 
-****
-
 | Source database | Target database |
 | --- | --- |
 | IBM Db2 for z/OS (version 12) | Amazon Aurora MySQL-Compatible Edition (Aurora MySQL), Amazon Aurora PostgreSQL-Compatible Edition (Aurora PostgreSQL), MySQL, PostgreSQL<br /> For more information, see [Connecting to IBM DB2 for z/OS](CHAP_Source.DB2zOS.md).  |
@@ -25,8 +23,6 @@ AWS SCT supports the following OLTP conversions.
 | SAP ASE (versions 12.5.4, 15.0.2, 15.5, 15.7, and 16.0) |  Aurora MySQL, Aurora PostgreSQL, MariaDB, MySQL, PostgreSQL <br /> For more information, see [SAP databases](CHAP_Source.SAP.md).  |
 
 AWS SCT supports the following data warehouse conversions.
-
-****
 
 | Source data warehouse | Target data warehouse |
 | --- | --- |
@@ -43,15 +39,11 @@ AWS SCT supports the following data warehouse conversions.
 
 AWS SCT supports the following data NoSQL database conversions.
 
-****
-
 | Source database | Target database |
 | --- | --- |
 | Apache Cassandra (versions 2.1.x, 2.2.16, and 3.11.x) | Amazon DynamoDB<br /> For more information, see [Connecting to Apache Cassandra](CHAP_Source.Cassandra.md).  |
 
 AWS SCT supports conversions of the following extract, transform, and load (ETL) processes. For more information, see [Converting Data Using ETL](CHAP-converting-etl.md).
-
-****
 
 | Source | Target |
 | --- | --- |
@@ -64,8 +56,6 @@ AWS SCT supports conversions of the following extract, transform, and load (ETL)
 | Teradata MultiLoad job scripts | Amazon Redshift RSQL |
 
 AWS SCT supports the following big data framework migrations. For more information, see [Migrating big data frameworks](CHAP-migrating-big-data.md).
-
-****
 
 | Source | Target |
 | --- | --- |

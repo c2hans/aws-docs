@@ -24,7 +24,7 @@ To set up these prerequisites quickly, follow the instructions in [Tutorial: Dep
   + Your Kubernetes ConfigMap file. To learn how to add a role to a ConfigMap file, see [Enabling IAM principal access to your cluster](https://docs.aws.amazon.com/eks/latest/userguide/add-user-role.html) in the **Amazon EKS User Guide**.
   + CodeCatalyst. To learn how to add an IAM role to CodeCatalyst, see [Adding IAM roles to account connections](ipa-connect-account-addroles.md).
 + A CodeCatalyst space, project, and environment. The space and environment must both be connected to the AWS account into which you will be deploying your application. For more information, see [Creating a space](spaces-create.md), [Creating an empty project in Amazon CodeCatalyst](projects-create.md#projects-create-empty), and [Deploying into AWS accounts and VPCs](deploy-environments.md).
-+ A source repository supported by CodeCatalyst. The repository stores your application source files, Dockerfiles, and Kubernetes manifests. For more information, see [Store and collaborate on code with source repositories in CodeCatalystStore and collaborate on code with source repositories](source.md).
++ A source repository supported by CodeCatalyst. The repository stores your application source files, Dockerfiles, and Kubernetes manifests. For more information, see [Store and collaborate on code with source repositories in CodeCatalyst](source.md).
 
 ------
 #### [ Visual ]

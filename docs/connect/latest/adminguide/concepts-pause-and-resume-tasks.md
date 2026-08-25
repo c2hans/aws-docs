@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/concepts-pause
 
 You can pause and resume all tasks that aren't expired, disconnected, or scheduled for a later time. The benefit of pausing and resuming tasks is that it enables agents to free up an active slot so they can receive more critical tasks when their current task is stalled, for example, because of a missing approval or waiting on an external input.
 
-You can also pause fully automated tasks to address force majeure events (natural disasters, infrastructure failures, invasions) that may require you to halt all business processes temporarily, and then resume them after the emergency has passed.
+You can also pause fully automated tasks to address force majeure events (natural disasters, infrastructure failures, invasions) that might require you to halt all business processes temporarily, and then resume them after the emergency has passed.
 
 **Topics**
 + [How paused and resumed tasks are queued](#pause-tasks-queue)
@@ -71,8 +71,8 @@ For example, an agent has 10 tasks in their workspace: 5 paused and 5 active. Th
 You can pause and resume tasks programmatically by using the [PauseContact](https://docs.aws.amazon.com/connect/latest/APIReference/API_PauseContact.html) and [ResumeContact](https://docs.aws.amazon.com/connect/latest/APIReference/API_ResumeContact.html) APIs.
 
 When pausing and resuming a task, a corresponding flow can be configured to run at the pause and resume events. For example:
-+ You may want to design a flow to automatically resume Paused tasks after a set period of time for agent lunch breaks.
-+ You may want to create a resume flow to update attributes on the task that may have changed while the task was Paused.
++ You might want to design a flow to automatically resume Paused tasks after a set period of time for agent lunch breaks.
++ You might want to create a resume flow to update attributes on the task that might have changed while the task was Paused.
 
 ## Configure a flow to pause and resume tasks
 <a name="pause-and-resume-flow"></a>
@@ -81,7 +81,7 @@ Configure a [Set event flow](set-event-flow.md) block to pause and resume tasks.
 
 ![The properties page of the Set event flow block.](http://docs.aws.amazon.com/connect/latest/adminguide/images/tasks-set-event-flow.png)
 
-Following are a couple of scenarios you may want to configure in your flows:
+Following are a couple of scenarios you might want to configure in your flows:
 + For flows that run at contact pause, configure them to notify supervisors when a task has been paused.
 + When resuming a paused contact, configure the flow to update contact attributes to make sure that agents are always working on the latest version of attributes.
 

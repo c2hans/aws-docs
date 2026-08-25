@@ -32,7 +32,6 @@ Use the following procedure to create an AWS AppConfig freeform configuration pr
 1. On the **Specify configuration data** page, in the **Configuration definition** section, choose an option.
 
 1. Complete the fields for the option you selected, as described in the following table.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-creating-free-form-configuration-and-profile-create-console.html)
 
 1. In the **Service role** section, choose **New service role** to have AWS AppConfig create the IAM role that provides access to the configuration data. AWS AppConfig automatically populates the **Role name** field based on the name you entered earlier. Or, choose **Existing service role**. Choose the role by using the **Role ARN** list.

@@ -226,7 +226,7 @@ For better control over fleet metrics that you can create, modify, or use, you c
 
 To tag fleet metrics that you create by using AWS Management Console or AWS CLI, you must include the `iot:TagResource` action in your IAM policy to grant the user permissions. If your IAM policy doesn't include `iot:TagResource`, any actions to create a fleet metric with a tag will return an `AccessDeniedException` error.
 
-For general information about tagging your resources, see [Tagging your AWS IoT resources](https://docs.aws.amazon.com//iot/latest/developerguide/tagging-iot.html).
+For general information about tagging your resources, see [Tagging your AWS IoT resources](https://docs.aws.amazon.com/iot/latest/developerguide/tagging-iot.html).
 
 ### IAM policy example
 <a name="managing-fleet-metrics-policy-example"></a>
@@ -262,4 +262,4 @@ Refer to the following IAM policy example granting tagging permissions when you 
 }
 ```
 
-For more information, see [Actions, resources, and condition keys for AWS IoT](https://docs.aws.amazon.com//service-authorization/latest/reference/list_awsiot.html).
+For more information, see [Actions, resources, and condition keys for AWS IoT](https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsiot.html).

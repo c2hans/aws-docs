@@ -177,7 +177,7 @@ Use the following instructions to enable OCSP server stapling using AWS Manageme
            --server-certificate-config "enableOCSPCheck=true|false"
    ```
 
-For more information, see [CreateDomainConfiguration](https://docs.aws.amazon.com//iot/latest/apireference/API_CreateDomainConfiguration.html) and [UpdateDomainConfiguration](https://docs.aws.amazon.com//iot/latest/apireference/API_UpdateDomainConfiguration.html) from the AWS IoT API Reference.
+For more information, see [CreateDomainConfiguration](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateDomainConfiguration.html) and [UpdateDomainConfiguration](https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateDomainConfiguration.html) from the AWS IoT API Reference.
 
 ## Configuring server certificate OCSP for private endpoints in AWS IoT Core
 <a name="iot-custom-endpoints-cert-config-ocsp-private-endpoint"></a>
@@ -292,7 +292,7 @@ public class LambdaResponderApplication implements RequestHandler<String, String
 #### Authorizing AWS IoT to invoke your Lambda function
 <a name="grant-permission-ocsp-lambda"></a>
 
-In the process of creating the domain configuration with a Lambda OCSP responder, you must grant AWS IoT permission to invoke the Lambda function after the function is created. To grant the permission, you can use the [add-permission](https://docs.aws.amazon.com//cli/latest/reference/lambda/add-permission.html) CLI command.
+In the process of creating the domain configuration with a Lambda OCSP responder, you must grant AWS IoT permission to invoke the Lambda function after the function is created. To grant the permission, you can use the [add-permission](https://docs.aws.amazon.com/cli/latest/reference/lambda/add-permission.html) CLI command.
 
 **Grant permission to your Lambda function using the AWS CLI**
 
@@ -370,12 +370,12 @@ In the process of creating the domain configuration with a Lambda OCSP responder
 This is a Boolean value that indicates whether server OCSP stapling check is enabled or not. To enable server certificate OCSP stapling, this value must be true.
 
 **ocspAuthorizedResponderArn**
-This is a string value of the Amazon Resource Name (ARN) for an X.509 certificate stored in AWS Certificate Manager (ACM). If provided, AWS IoT Core will use this certificate to validate the signature of the received OCSP response. If not provided, AWS IoT Core will use the issuing certificate to validate the responses. The certificate must be in the same AWS account and AWS Region as the domain configuration. For more information about how to register your authorized responder certificate, see [Import certificates into AWS Certificate Manager](https://docs.aws.amazon.com//acm/latest/userguide/import-certificate.html).
+This is a string value of the Amazon Resource Name (ARN) for an X.509 certificate stored in AWS Certificate Manager (ACM). If provided, AWS IoT Core will use this certificate to validate the signature of the received OCSP response. If not provided, AWS IoT Core will use the issuing certificate to validate the responses. The certificate must be in the same AWS account and AWS Region as the domain configuration. For more information about how to register your authorized responder certificate, see [Import certificates into AWS Certificate Manager](https://docs.aws.amazon.com/acm/latest/userguide/import-certificate.html).
 
 **ocspLambdaArn**
 This is a string value of the Amazon Resource Name (ARN) for a Lambda function that acts as a Request for Comments (RFC) 6960-compliant (OCSP) responder, supporting basic OCSP responses. The Lambda function accepts a base64-encoding of the OCSP request which is encoded using the DER format. The Lambda function's response is also a base64-encoded OCSP response in the DER format. The response size must not exceed 4 kilobytes (KiB). The Lambda function must be in the same AWS account and AWS Region as the domain configuration.
 
-For more information, see [CreateDomainConfiguration](https://docs.aws.amazon.com//iot/latest/apireference/API_CreateDomainConfiguration.html) and [UpdateDomainConfiguration](https://docs.aws.amazon.com//iot/latest/apireference/API_UpdateDomainConfiguration.html) from the AWS IoT API Reference.
+For more information, see [CreateDomainConfiguration](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateDomainConfiguration.html) and [UpdateDomainConfiguration](https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateDomainConfiguration.html) from the AWS IoT API Reference.
 
 ## Important notes for using server certificate OCSP stapling in AWS IoT Core
 <a name="iot-custom-endpoints-cert-config-ocsp-notes"></a>

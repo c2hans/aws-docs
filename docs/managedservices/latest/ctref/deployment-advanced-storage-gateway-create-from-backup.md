@@ -14,8 +14,6 @@ Start an AWS Backup service restore job to restore a Storage Gateway volume snap
 ## Change Type Details
 <a name="ct-0cupn1txog5tk-DASc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-0cupn1txog5tk |

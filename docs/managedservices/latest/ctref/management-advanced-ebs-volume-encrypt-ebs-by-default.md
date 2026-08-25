@@ -14,8 +14,6 @@ Set Amazon Elastic Block Store (EBS) to enforce the encryption. After you enable
 ## Change Type Details
 <a name="ct-0vevjppj9eta4-MAEe-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-0vevjppj9eta4 |

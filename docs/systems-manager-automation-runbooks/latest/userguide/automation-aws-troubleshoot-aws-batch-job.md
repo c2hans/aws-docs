@@ -17,13 +17,13 @@ This runbook performs the following checks:
 + If the jobs require more vCPUs or memory resources than what the compute environment’s instance types can provide.
 + If the jobs should run on GPU-based instances but the compute environment is not configured to use GPU-based instances.
 + If the Auto Scaling group for the compute environment failed to launch instances.
-+ If the launched instances can join the underlying Amazon Elastic Container Service (Amazon ECS) cluster; if not, it runs the [AWSSupport-TroubleshootECSContainerInstance](https://docs.aws.amazon.com//systems-manager-automation-runbooks/latest/userguide/automation-aws-troubleshoot-ecs-container-instance.html) runbook.
++ If the launched instances can join the underlying Amazon Elastic Container Service (Amazon ECS) cluster; if not, it runs the [AWSSupport-TroubleshootECSContainerInstance](https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-aws-troubleshoot-ecs-container-instance.html) runbook.
 + If any permissions issue is blocking specific actions that are required to run the job.
 
 **Important**
 This runbook must be initiated in the same AWS Region as your job that is stuck in `RUNNABLE` status.
 This runbook can be initiated for AWS Batch jobs scheduled on Amazon ECS, AWS Fargate or Amazon Elastic Compute Cloud (Amazon EC2) instances. If the automation is initiated for an AWS Batch job on Amazon Elastic Kubernetes Service (Amazon EKS), the initiation stops.
-If instances are available to run the job but fail to register the Amazon ECS cluster, this runbook initiates the `AWSSupport-TroubleshootECSContainerInstance` automation runbook to try determine why. For more information, reference the [AWSSupport-TroubleshootECSContainerInstance](https://docs.aws.amazon.com//systems-manager-automation-runbooks/latest/userguide/automation-aws-troubleshoot-ecs-container-instance.html) runbook.
+If instances are available to run the job but fail to register the Amazon ECS cluster, this runbook initiates the `AWSSupport-TroubleshootECSContainerInstance` automation runbook to try determine why. For more information, reference the [AWSSupport-TroubleshootECSContainerInstance](https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-aws-troubleshoot-ecs-container-instance.html) runbook.
 
  [Run this Automation (console)](https://console.aws.amazon.com/systems-manager/automation/execute/AWSSupport-TroubleshootAWSBatchJob)
 
@@ -152,6 +152,6 @@ The `AutomationAssumeRole` parameter requires the following actions to use the r
 
 Systems Manager Automation
 + [Run this Automation (console)](https://console.aws.amazon.com/systems-manager/automation/execute/AWSSupport-TroubleshootAWSBatchJob)
-+ [Run an automation](https://docs.aws.amazon.com//systems-manager/latest/userguide/automation-working-executing.html)
-+ [Setting up an Automation](https://docs.aws.amazon.com//systems-manager/latest/userguide/automation-setup.html)
++ [Run an automation](https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-working-executing.html)
++ [Setting up an Automation](https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-setup.html)
 + [Support Automation Workflows landing page](https://aws.amazon.com/premiumsupport/technology/saw/)

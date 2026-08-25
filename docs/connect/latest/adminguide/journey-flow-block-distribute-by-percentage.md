@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/journey-flow-b
 ## Description
 <a name="journey-flow-block-distribute-by-percentage-description"></a>
 + This block is useful for doing A/B testing. It routes profiles randomly based on a percentage.
-+ Profiles are distributed randomly, so exact percentage splits may or may not occur.
++ Profiles are distributed randomly, so exact percentage splits might or might not occur.
 
 ## How it works
 <a name="journey-flow-block-distribute-by-percentage-works"></a>

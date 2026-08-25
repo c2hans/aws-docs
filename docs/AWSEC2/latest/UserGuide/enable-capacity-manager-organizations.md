@@ -170,5 +170,5 @@ OrganizationsAccess        : True
 <a name="organizations-considerations"></a>
 + **Service-linked role creation:** When you enable organization access through the console, Capacity Manager automatically creates the AWSServiceRoleForEC2CapacityManager service-linked role in all m ember accounts. If you enable through the AWS CLI, you must call `createServiceLinkedRole` manually.
 + **Data aggregation:** After enabling organization access, Capacity Manager backfills 14 days of historical data from all member accounts. This process typically takes a few minutes to complete.
-+ **Regional limitations:** You can only enable Capacity Manager in one Region per organization, but it will aggregate data from all commercial regions.
++ **Regional limitations:** You can only enable Capacity Manager in one Region per organization, but it will aggregate data from all commercial Regions.
 + **Permissions:** Member accounts don't need to take any action. Capacity Manager uses the service-linked role to automatically discover resources across all accounts.

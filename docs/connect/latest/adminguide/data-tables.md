@@ -5,14 +5,16 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/data-tables.ht
 # Create and configure data tables
 <a name="data-tables"></a>
 
-**Understanding data tables**
-Data tables allow you to store and manage data that impacts your configurations within Connect Customer. Data tables can be referenced by other resources, for example Flows and Views. When changes or additions are made to data tables, they are available immediately through public APIs and on-screen, no redeployment necessary.
+## Understanding data tables
+<a name="understanding-data-tables"></a>
+
+With data tables, you can store and manage data that affects your configurations within Connect Customer. Data tables can be referenced by other resources, such as flows and views. When changes or additions are made to data tables, they are available immediately through public APIs and on-screen, no redeployment necessary.
 
 Use data tables to support scenarios ranging from simple routing rules to complex, time-based configurations, accessible and modifiable in real time. In contrast to [Predefined Attributes](predefined-attributes.md) which store simple key-value pairs, data tables support multiple columns, various data types, and complex relationships.
 
 For example, you can create a data table that maps each store location to its business hours and support queue. In a flow, you look up the caller's location in the table and route the contact based on whether the store is open. Because you update the table directly, you can change hours or queues without editing the flow.
 
-A Data Table consists of:
+A data table consists of:
 + Table metadata (structure and validation rules)
 + Table values (the actual data)
 
@@ -24,7 +26,8 @@ Table metadata includes:
 
 Table values are stored in records (rows) that contain values for each attribute (column).
 
-**Creating data tables**
+## Create data tables
+<a name="create-data-tables"></a>
 
 1. Go to the Routing menu and select **Data tables**.
 
@@ -32,7 +35,7 @@ Table values are stored in records (rows) that contain values for each attribute
 
    1. Provide a **Name**.
 
-   1. Optionally provide a **Description**.
+   1. (Optional) Provide a **Description**.
 
    1. Indicate a **Time zone** to support time-based use cases.
 
@@ -50,15 +53,15 @@ As attributes are added, they are inserted into the table in the leftmost column
 
       1. **List** of text or numbers
 
-   1. Optionally select **Use as primary attribute**.
+   1. (Optional) Select **Use as primary attribute**.
 
       1. Primary keys help identify and reference specific records. They also enable granular access control to table data. One or more attributes can be designated as primary, and become the first column(s) of the table. If no primary attribute is defined, the table can contain only one record.
 **Note**
 Primary attributes cannot be added or removed if the table contains data. For example, if a table's primary attributes are first name, last name and middle initial, you cannot add SSN as another primary attribute or remove middle initial, without first deleting all rows. However, you can edit the values in a primary attribute, for example a last name can be changed. You can also add non-primary attributes after a table is populated with data.
 
-   1. Optionally provide **Basic validation** if the type is text or numeric (e.g. max length).
+   1. (Optional) Provide **Basic validation** if the type is text or numeric (for example, max length).
 
-   1. Optionally update **Collection validation** if the type is text or numeric, to provide a choice of predefined values for this attribute, and even restrict to those values.
+   1. (Optional) Update **Collection validation** if the type is text or numeric, to provide a choice of predefined values for this attribute, and even restrict to those values.
 
    1. Upon saving, your table will display with its first attribute (column).
 
@@ -68,7 +71,7 @@ Primary attributes cannot be added or removed if the table contains data. For ex
 
    1. When adding the first value, you must acknowledge that primary attributes cannot be changed if values exist in the table.
 
-   1. Data inputs are automatically validated (type, length, etc.).
+   1. Data inputs are automatically validated (type, length).
 
    1. As values are added, they are sorted based on primary value(s), for example if the first column is text, the values (rows) will be sequenced from A-Z.
 
@@ -82,31 +85,37 @@ Example of a table structure where two primary attributes are used to uniquely i
 | Primary Value | Primary Value | Value | Value |
 | ... | ... | ... | ... |
 
-**Add Records to data tables**
-Connect enforces required fields, data types, length limits and other requirements specified in the table definition.
+## Add records to data tables
+<a name="add-records-to-data-tables"></a>
+
+Connect Customer enforces required fields, data types, length limits and other requirements specified in the table definition.
 
 **Note**
 Always test configurations that impact flows before impacting production workloads, and monitor system behavior immediately after significant changes.
 
-**Edit data tables and their records**
-Connect enforces required fields, data types, length limits and other requirements specified in the table definition.
+## Edit data tables and their records
+<a name="edit-data-tables-and-their-records"></a>
+
+Connect Customer enforces required fields, data types, length limits and other requirements specified in the table definition.
 
 **Safeguards are provided for simultaneous edits to the same data.** The system automatically alerts users when changes occur outside their current session, prompting them to refresh their view to see the latest data.
 
 **Note**
-For scenarios where preventing conflicts is critical, you can implement optimistic locking strategies, ensuring that updates are only applied if the data hasn't changed since it was last read.
+For scenarios where preventing conflicts is critical, you can implement optimistic locking strategies, making sure that updates are only applied if the data hasn't changed since it was last read.
 
 **Changes take place *almost* immediately**. Changes made to data tables take effect in subsequent flow executions and API calls. Data is not cached in flows, so there is no lag required for refresh after a change.
 
 **Note**
-While changes propagate rapidly, in rare cases, there might be a brief delay—typically just milliseconds—before all system components reflect the change. When feasible, plan updates during operational windows to minimize impact.
+While changes propagate rapidly, in rare cases, there might be a brief delay, typically just milliseconds, before all system components reflect the change. When feasible, plan updates during operational windows to minimize impact.
 
-**Sample use case**
-Follow the steps below to create a simple translations table for prompts.
+## Sample use case
+<a name="data-tables-sample-use-case"></a>
+
+Follow these steps to create a simple translations table for prompts.
 
 1. Create a new data table with a new primary attribute called “Language”. The primary attribute determines the key needed to access a record from the data table.
 
-1. Create a new attribute for each message type, “Greeting” for example. If you need to create more than 99 types of messages, see the advanced example below.
+1. Create a new attribute for each message type, “Greeting” for example. If you need to create more than 99 types of messages, see the advanced example that follows.
 
 1. Add the translations to your table.
 
@@ -134,7 +143,9 @@ It's also possible to query for the exact message by adding a third dimension fo
 | English | Marketing | Greeting | Hi. You've reached marketing. |
 | English | Marketing | Farewell | Thanks for contacting marketing. |
 
-**Using data tables for dynamic lookups in flows**
+## Using data tables for dynamic lookups in flows
+<a name="data-tables-dynamic-lookups-in-flows"></a>
+
 Flows can read and write values from data tables. For more information, see [Flow block in Connect Customer: Data Table](data-table-block.md).
 
 After a data table query runs in your flow, you can reference the retrieved values in subsequent blocks using the following namespace format:
@@ -150,32 +161,40 @@ For example, if you have a query named `TranslationLookup` that retrieves a `Gre
 **Note**
 When you use the **Data tables** namespace dropdown in the block configuration UI, the `$.DataTables.` prefix must be omitted. The UI adds it automatically.
 
-**Use Data tables to build custom user interfaces**
-Data tables can empower business users to make routine contact center operational adjustments without requiring direct access to underlying Connect Customer systems. Custom interfaces can be created from Data tables using the Views no-code UI builder, then assigned to workspaces. Operations teams can then use the custom UIs to respond quickly to changing conditions, without requiring IT intervention and working within approved governance and security frameworks. Data tables can combine multiple resources, so business users do not need permission to each (e.g. flows, prompts, queues).
+## Use data tables to build custom user interfaces
+<a name="data-tables-custom-user-interfaces"></a>
+
+With data tables, business users can make routine contact center operational adjustments without requiring direct access to underlying Connect Customer systems. You can create custom interfaces from data tables using the UI builder, then assign them to workspaces. Your operations team can then use the custom UIs to respond quickly to changing conditions, without requiring IT intervention and working within approved governance and security frameworks. Data tables can combine multiple resources, so business users do not need permission to each resource (for example, flows, prompts, queues).
 
 Purpose-built interfaces can allow authorized business users to control scenarios such as:
 + Managing queue assignments, operating hours, skill mappings, and escalation rules
 + Modifying routing by language, location or VIP status
 + Activating emergency protocols
 
-For more information about building custom interfaces, see the [Views no-code UI builder](no-code-ui-builder.md).
+For more information about building custom interfaces, see the [UI builder](no-code-ui-builder.md).
 
-**Access Control and Security for Data Tables**
+## Access control and security for data tables
+<a name="data-tables-access-control-and-security"></a>
+
 Control access to table primary values so business users are only allowed view or modify fields that relate to their responsibilities.
 + Security profile permissions provide view, edit, create, and delete choices for managing the data table resource in the Routing section.
 + Tag-based access control (TBAC) provides record-based restrictions. Use if multiple teams need to access different subsets of data within large, multi-purpose tables.
 
-**Service quotas for Data Tables**
-Connect provides:
-+ Tables — 100 total per instance
-+ Attributes (columns) — 100 per table
-+ Values (cells) — 1000 per table
-+ Lists — 100 items for text and number list values
-+ Characters — 5k for non-primary text values, 1k for TEXT\_LIST items and primary text values
+## Service quotas for data tables
+<a name="service-quotas-for-data-tables"></a>
+
+Connect Customer provides:
++ Tables: 100 total for each instance
++ Attributes (columns): 100 for each table
++ Values (cells): 1000 for each table
++ Lists: 100 items for text and number list values
++ Characters: 5k for non-primary text values, 1k for TEXT\_LIST items and primary text values
 
 To learn more about service quotas and how to manage them, see [Connect Customer service quotas](amazon-connect-service-limits.md).
 
-**Track changes to Data tables**
+## Track changes to data tables
+<a name="track-changes-to-data-tables"></a>
+
 On-screen audit history provides recent changes to a resource and its before and after values. Data table audit history includes new or changed table structure (attributes, primary keys, default values), as well as new or changed records (rows) within each data table.
 
 **Note**

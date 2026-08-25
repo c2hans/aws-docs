@@ -336,8 +336,6 @@ GO
 
 The following properties can be modified:
 
-****
-
 | Property name | Recommended Value (1 = On, 0 = Off) | Description |
 | --- | --- | --- |
 | `Dynamic parameter` | 1 | Allows SQL placeholders (represented by '?') in parameterized queries. |

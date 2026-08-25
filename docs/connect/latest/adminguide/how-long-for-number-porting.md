@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/how-long-for-n
 Porting requests for USA DID and toll-free numbers cannot be submitted more than 30 days in advance of porting date.
 For other countries, we recommend opening a porting request as far in advance of your pending go-live date as possible.
 
-The amount of time that it takes to port numbers depends on the country, complexity of the request, the type and quantity of numbers being ported, and your current carrier. Telecom carriers also may implement porting block days because of holidays and network maintenance. Because of this, Connect Customer requires porting requests to be open several months before pending go-live dates.
+The amount of time that it takes to port numbers depends on the country, complexity of the request, the type and quantity of numbers being ported, and your current carrier. Telecom carriers also might implement porting block days because of holidays and network maintenance. Because of this, Connect Customer requires porting requests to be open several months before pending go-live dates.
 
 For a list of countries and their portability windows, see [Region requirements for ordering and porting phone numbers in Connect Customer](phone-number-requirements.md).
 
@@ -51,7 +51,7 @@ To help make the process as smooth as possible, gather the following information
 **Important**
 The Connect Customer service team supports porting phone numbers FROM 9am Monday in Sydney NSW, Australia Time, TO 5pm Friday in Seattle, WA, USA time.
 
-Depending on the country and carriers involved, you may be able to choose the porting date and time. In most cases, however, the losing carrier picks the date and time and communicates it to Connect Customer based on their schedule.
+Depending on the country and carriers involved, you might be able to choose the porting date and time. In most cases, however, the losing carrier picks the date and time and communicates it to Connect Customer based on their schedule.
 
 If you have a specific date and time you want to request, provide the information in your support case. We will work with our carrier to determine if they can support the requested date and time.
 

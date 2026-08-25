@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/provision-crea
 
 **Note**
 These procedures are for use only when directed by the AWS IoT console.
-To go to this page from the console, open [create a new provisioning template](https://console.aws.amazon.com//iot/home#/provisioningtemplate/create/provisioningmethods/trustedUser).
+To go to this page from the console, open [create a new provisioning template](https://console.aws.amazon.com/iot/home#/provisioningtemplate/create/provisioningmethods/trustedUser).
 
 ## Why can't this be done in the AWS IoT console?
 <a name="provision-create-role-why"></a>
@@ -23,7 +23,7 @@ While performing this procedure, you'll be switching between the IAM console and
 
 **To create an IAM policy for the user who will install a device**
 
-1. Open the [Policies hub in the IAM console](https://console.aws.amazon.com//iamv2/home#/policies).
+1. Open the [Policies hub in the IAM console](https://console.aws.amazon.com/iamv2/home#/policies).
 
 1. Choose **Create Policy**.
 
@@ -64,7 +64,7 @@ These steps describe how to create an IAM role that authenticates the user who w
 
 **To create an IAM policy for the user who will install a device**
 
-1. Open the [Role hub in the IAM console](https://console.aws.amazon.com//iamv2/home#/roles).
+1. Open the [Role hub in the IAM console](https://console.aws.amazon.com/iamv2/home#/roles).
 
 1. Choose **Create role**.
 
@@ -97,7 +97,7 @@ The following steps describe how to add a new template to an IAM policy that aut
 
 **To add a new template to an existing IAM policy**
 
-1. Open the [Policies hub in the IAM console](https://console.aws.amazon.com//iamv2/home#/policies).
+1. Open the [Policies hub in the IAM console](https://console.aws.amazon.com/iamv2/home#/policies).
 
 1. In the search box, enter the name of the policy to update.
 

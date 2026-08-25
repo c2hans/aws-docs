@@ -283,8 +283,6 @@ Instead of using the SDK for Java 2.x to process Amazon S3 event notifications i
 
 Both approaches model the JSON event notification payload in an object-oriented way with similar APIs. The following table shows the notable differences between using the two approaches.
 
-****
-
 |  | AWS SDK for Java | aws-lambda-java-events library |
 | --- | --- | --- |
 | Package naming | `software.amazon.awssdk.eventnotifications.s3.model.S3EventNotification` | com.amazonaws.services.lambda.runtime.events.models.s3.S3EventNotification |

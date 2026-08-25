@@ -97,8 +97,6 @@ The Bluetooth Low Energy library has the following direct dependencies:
 
 Only the Wi-Fi Provisioning service has FreeRTOS library dependencies:
 
-****
-
 | GATT Service | Dependency |
 | --- | --- |
 | Wi-Fi Provisioning | [Wi-Fi library](freertos-wifi.md) |
@@ -190,13 +188,9 @@ If you don't want to use the FreeRTOS Bluetooth Low Energy GATT services, you ca
 
 1.
 
-****
-
    Initialize any Bluetooth Low Energy hardware drivers before you call the APIs. Driver initialization is not part of the Bluetooth Low Energy low-level APIs.
 
 1.
-
-****
 
    The Bluetooth Low Energy low-level API provides an enable/disable call to the Bluetooth Low Energy stack for optimizing power and resources. Before calling the APIs, you must enable Bluetooth Low Energy.
 
@@ -207,8 +201,6 @@ If you don't want to use the FreeRTOS Bluetooth Low Energy GATT services, you ca
 
 1.
 
-****
-
    The Bluetooth manager contains APIs that are common to both Bluetooth Low Energy and Bluetooth classic. The callbacks for the common manager must be initialized second.
 
    ```
@@ -216,8 +208,6 @@ If you don't want to use the FreeRTOS Bluetooth Low Energy GATT services, you ca
    ```
 
 1.
-
-****
 
    The Bluetooth Low Energy adapter fits on top of the common API. You must initialize its callbacks like you initialized the common API.
 
@@ -228,8 +218,6 @@ If you don't want to use the FreeRTOS Bluetooth Low Energy GATT services, you ca
 
 1.
 
-****
-
    Register your new user application.
 
    ```
@@ -237,8 +225,6 @@ If you don't want to use the FreeRTOS Bluetooth Low Energy GATT services, you ca
    ```
 
 1.
-
-****
 
    Initialize the callbacks to the GATT servers.
 
@@ -254,8 +240,6 @@ If you don't want to use the FreeRTOS Bluetooth Low Energy GATT services, you ca
    ```
 
 1.
-
-****
 
    Set application properties like secure connection only and MTU size.
 
@@ -537,16 +521,13 @@ Each service is instantiated as a primary service on each BLE server device. You
 **Characteristics**
 Characteristic content format: **CBOR**
 Max characteristic value size : 512 bytes
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/freertos/latest/userguide/freertos-ble-library.html)
 
 **GATT Procedure Requirements **
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/freertos/latest/userguide/freertos-ble-library.html)
 
 **Message Types **
 The following message types are exchanged.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/freertos/latest/userguide/freertos-ble-library.html)
 
 **Large Payload Transfer Characteristics **

@@ -62,7 +62,6 @@ This walkthrough begins by first creating a rule set to contain your rules and p
 1. (Optional) On the **Add recipient conditions** page, use the following procedure to specify one or more recipient conditions. You can have a maximum of 100 recipient conditions per receipt rule.
 
    1. Under **Recipient conditions**, choose **Add new recipient condition** to specify the receiving email address or domain to which you want to apply the receipt rule. The following table uses the address *user@example.com* to show how to specify recipient conditions.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/ses/latest/dg/receiving-email-receipt-rules-console-walkthrough.html)
 **Important**
 If multiple Amazon SES accounts receive email on a common domain (for example, if multiple teams in the same company each have separate Amazon SES accounts), Amazon SES processes all matching receipt rules simultaneously for each of those accounts. This behavior may result in a situation where one account generates a bounce, while another account accepts the email.

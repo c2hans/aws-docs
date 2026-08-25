@@ -164,8 +164,6 @@ Amazon SES does not support email receiving in the following Regions: *AWS GovCl
 ## Feedback endpoints used by SES for Custom MAIL FROM domains
 <a name="ses_feedback_endpoints"></a>
 
-****
-
 | Region Name | Endpoint |
 | --- | --- |
 | US East (Ohio) | feedback-smtp.us-east-2.amazonses.com |

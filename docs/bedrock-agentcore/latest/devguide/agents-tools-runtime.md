@@ -23,7 +23,7 @@ Compute type choice
 AgentCore Runtime offers two compute types. Choose **microVMs** for fully managed, serverless sessions that start instantly and scale on demand, where you pay only for what you use. Choose **Instances** to run agents on AWS managed Amazon EC2 infrastructure in your own account. Instances support persistent, multi-day sessions, GPU-accelerated workloads, and multiple collaborating agents on a shared instance. For more information, see [Run agents on Instances with capacity providers](runtime-instances.md).
 
 Extended execution time
-AgentCore Runtime supports both real-time interactions and long-running workloads up to 8 hours, enabling complex agent reasoning and asynchronous workloads that may involve multi-agent collaboration or extended problem-solving sessions.
+AgentCore Runtime supports both real-time interactions and long-running workloads, enabling complex agent reasoning and asynchronous workloads that might involve multi-agent collaboration or extended problem-solving sessions. Sessions run for up to 8 hours on microVMs, or up to 14 days on Instances. For more information, see [Configure Amazon Bedrock AgentCore lifecycle settings](runtime-lifecycle-settings.md).
 
 Persistent filesystems
 Runtime supports persisting filesystem state across session stop/resume cycles. The agent’s files, installed packages, and build artifacts can survive session stops without external storage.

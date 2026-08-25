@@ -21,8 +21,6 @@ Say that your business is organized into several teams, {{Team1}}, {{Team2}}, an
 
 1. Using this rule, every cost line item from account 6 will be categorized with a cost category value {{Team3}}. These categorizations will appear as a column in your AWS Cost and Usage Report (AWS CUR) like in the following example. Based on your rule, costs for account 3 are categorized as {{Team1}}. and costs for account 6 is allocated to {{Team3}}.
 
-****
-
 | Resource Id | AccountID | LineItemType | UsageType | Unblended Cost | NetUnblended Cost | ResourceTag/Project | costCategory/Team |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | i-11223 | 3 | Usage | BoxUsage:c1.xlarge | 3.36 | 3.36 | Beta | {{Team1}} |
@@ -40,8 +38,6 @@ You can also create multilevel hierarchical relationships among your cost catego
 
 1. You then define a cost category value that's named {{BU2}}. For this cost category value, you select {{Team 3 }} and {{Team 4}} from the {{Team}} cost category.
 This example will appear in your cost and usage report, as shown below.
-
-****
 
 | Resource Id | AccountID | LineItemType | UsageType | Unblended Cost | NetUnblended Cost | ResourceTag/Project | costCategory/Team | costCategory/BusinessUnit |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |

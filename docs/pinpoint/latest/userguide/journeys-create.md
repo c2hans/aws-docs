@@ -33,7 +33,7 @@ In Amazon Pinpoint, segments and endpoints are unique to each project. The proje
    1. For **When to send** choose either:
       + **Use the same time zone as journey start and end** – To use the journey's **Time zone**, **Start date and time**, and **End date and time** when sending messages.
 **Tip**
-Only send messages to recipients during business hours, see [Send at appropriate times](https://docs.aws.amazon.com//sms-voice/latest/userguide/best-practices.html#best-practices-sms-appropriate-times) in the *AWS End User Messaging SMS User Guide*. If recipients are multiple time zones away from the Journey's **Time zone** they could receive messages outside of business hours.
+Only send messages to recipients during business hours, see [Send at appropriate times](https://docs.aws.amazon.com/sms-voice/latest/userguide/best-practices.html#best-practices-sms-appropriate-times) in the *AWS End User Messaging SMS User Guide*. If recipients are multiple time zones away from the Journey's **Time zone** they could receive messages outside of business hours.
       + **Recipient's local time zone** – To automatically adjust the sending time to the time zone value in the endpoint's `Demographic.Timezone` attribute.
 **Important**
  An endpoint without a `Demographic.Timezone` attribute isn't included in the journey. Use **Time zone estimation** for endpoints without a `Demographic.Timezone` attribute to estimate the endpoints time zone and include it in the journey.

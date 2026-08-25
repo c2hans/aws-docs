@@ -21,8 +21,8 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/ug/doc-history.htm
 | [Documentation Update](#doc-history) | Added clarification on contact utilization of configured resources. | April 4, 2025 |
 | [New Feature](#doc-history) | Updated the user guide to include AWS Ground Station digital twin. | August 6, 2024 |
 | [Documentation Update](#doc-history) | Updated many sections of the user guide, including new diagrams, examples, and more. | July 18, 2024 |
-| [Documentation Update](https://docs.aws.amazon.com//ground-station/latest/ug/ground-station.rss) | Added RSS feed to User Guide. | July 18, 2024 |
-| [Documentation Update](https://docs.aws.amazon.com//ground-station/latest/gs-agent-ug) | Split AWS Ground Station Agent User Guide into a separate User Guide. | July 18, 2024 |
+| [Documentation Update](https://docs.aws.amazon.com/ground-station/latest/ug/ground-station.rss) | Added RSS feed to User Guide. | July 18, 2024 |
+| [Documentation Update](https://docs.aws.amazon.com/ground-station/latest/gs-agent-ug) | Split AWS Ground Station Agent User Guide into a separate User Guide. | July 18, 2024 |
 | [New Feature](#doc-history) | Contacts can now be scheduled up to 30 seconds outside visibility time ranges. Visibility times are included in DescribeContact responses. | March 26, 2024 |
 | [Documentation Update](#doc-history) | Improved organization and added "EC2 Instance Selection and CPU Planning" section. | March 6, 2024 |
 | [Documentation Update](#doc-history) | Added new best practice to AWS Ground Station Agent User Guide for running services and processes alongside the AWS Ground Station Agent. | February 23, 2024 |

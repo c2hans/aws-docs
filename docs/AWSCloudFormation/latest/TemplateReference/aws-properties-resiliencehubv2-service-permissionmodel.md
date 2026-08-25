@@ -47,5 +47,5 @@ Property description not available.
 Property description not available.
 *Required*: Yes
 *Type*: String
-*Pattern*: `^[A-Za-z0-9_+=,.@\-]{1,64}$`
+*Pattern*: `^(([A-Za-z0-9_+=,.@\-]+/){1,511})?[A-Za-z0-9_+=,.@\-]{1,64}$`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

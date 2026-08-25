@@ -139,8 +139,6 @@ File systems larger than 1 TiB can always burst for up to 50 percent of the time
 
  The following table provides examples of bursting behavior.
 
-****
-
 | File system size | Burst throughput | Baseline throughput |
 | --- | --- | --- |
 | 100 GiB of metered data in Standard storage |  +  Burst to 300 (MiBps) read-only for up to 72 minutes per day, or <br />+  Burst to 100 MiBps write-only for up to 72 minutes per day   |  +  Drive up to 15 MiBps read-only continuously <br />+  Drive up to 5 MiBps write-only continuously   |

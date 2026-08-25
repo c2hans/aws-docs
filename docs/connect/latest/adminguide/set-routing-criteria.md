@@ -59,7 +59,7 @@ There are two ways to route contacts directly to an agent:
 
   An advantage of choosing this option is that it uses the agent's userID (such as janedoe) so it's easier to configure than Option 2, which uses the ARN.
 
-  The main downside of routing criteria is that it impacts queue metrics (SLA, queue time, and more). If a contact in QueueA is waiting specifically for Agent12, then it won't get picked up by other agents that are available. It may breach your defined SLAs. The way you'd see this occurring is by looking at the real-time metrics report; see [Use one-choose drill-downs](one-choose-drill-downs.md).
+  The main downside of routing criteria is that it impacts queue metrics (SLA, queue time, and more). If a contact in QueueA is waiting specifically for Agent12, then it won't get picked up by other agents that are available. It might breach your defined SLAs. The way you'd see this occurring is by looking at the real-time metrics report; see [Use one-choose drill-downs](one-choose-drill-downs.md).
 **Note**
 When you set up routing and specify your timeout configurations, keep this scenario in mind to accommodate these impacts.
 + **Option 2: Use the agent's queue**. This option is usually better when:
@@ -254,7 +254,7 @@ export const handler = async(event) => {
 
 1.  **Joined:** Whenever an agent is successfully matched with a contact for a particular step, the step status will be set as *Joined*.
 
-1.  **Interrupted:** If a contact has been waiting for too long or an operations leader may decide to interrupt the flow and change the routing criteria. This can be done while a particular step is active, for example, a task has been waiting for 24 hours and a manager wants to change the criteria. The step status will then be set to *Interrupted.*
+1.  **Interrupted:** If a contact has been waiting for too long or an operations leader might decide to interrupt the flow and change the routing criteria. This can be done while a particular step is active, for example, a task has been waiting for 24 hours and a manager wants to change the criteria. The step status will then be set to *Interrupted.*
 
 1.  **Deactivated:** When a customer drops a call or a connection is dropped, routing will stop.
 

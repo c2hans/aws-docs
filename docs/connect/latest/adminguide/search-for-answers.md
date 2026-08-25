@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/search-for-ans
 
 |  |
 | --- |
-| **Powered by Amazon Bedrock**: AI agents is built on Amazon Bedrock and includes [automated abuse detection](https://docs.aws.amazon.com//bedrock/latest/userguide/abuse-detection.html) implemented in Amazon Bedrock to enforce safety, security, and the responsible use of artificial intelligence (AI). |
+| **Powered by Amazon Bedrock**: AI agents is built on Amazon Bedrock and includes [automated abuse detection](https://docs.aws.amazon.com/bedrock/latest/userguide/abuse-detection.html) implemented in Amazon Bedrock to enforce safety, security, and the responsible use of artificial intelligence (AI). |
 
 With Connect Customer agent assist agents can use natural language to search across connected knowledge sources to receive generated recommendations, like actions to take and links to more information.
 

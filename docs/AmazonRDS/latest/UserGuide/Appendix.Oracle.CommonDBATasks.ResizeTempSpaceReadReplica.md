@@ -16,16 +16,12 @@ To resize a permanent tablespace in an RDS for Oracle DB instance, use any of th
 
 The `resize_datafile` procedure has the following parameters.
 
-****
-
 | Parameter name | Data type | Default | Required | Description |
 | --- | --- | --- | --- | --- |
 | `p_data_file_id` | number | — | Yes | The identifier of the data file to resize. |
 | `p_size` | varchar2 | — | Yes | The size of the data file. Specify the size in bytes (the default), kilobytes (K), megabytes (M), or gigabytes (G).  |
 
 The `autoextend_datafile` procedure has the following parameters.
-
-****
 
 | Parameter name | Data type | Default | Required | Description |
 | --- | --- | --- | --- | --- |
@@ -57,8 +53,6 @@ To resize a temporary tablespaces in an RDS for Oracle DB instance, including a 
 
 The `resize_temp_tablespace` procedure has the following parameters.
 
-****
-
 | Parameter name | Data type | Default | Required | Description |
 | --- | --- | --- | --- | --- |
 | `p_temp_tablespace_name` | varchar2 | — | Yes | The name of the temporary tablespace to resize. |
@@ -66,16 +60,12 @@ The `resize_temp_tablespace` procedure has the following parameters.
 
 The `resize_tempfile` procedure has the following parameters.
 
-****
-
 | Parameter name | Data type | Default | Required | Description |
 | --- | --- | --- | --- | --- |
 | `p_temp_file_id` | number | — | Yes | The identifier of the temp file to resize. |
 | `p_size` | varchar2 | — | Yes | The size of the temp file. Specify the size in bytes (the default), kilobytes (K), megabytes (M), or gigabytes (G).  |
 
 The `autoextend_tempfile` procedure has the following parameters.
-
-****
 
 | Parameter name | Data type | Default | Required | Description |
 | --- | --- | --- | --- | --- |

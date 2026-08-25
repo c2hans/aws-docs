@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/aft-altern
 # Alternatives for version control of source code in AFT
 <a name="aft-alternative-vcs"></a>
 
-AFT uses AWS CodeCommit for a source code version control system (VCS), and it allows other [CodeConnections](https://docs.aws.amazon.com//dtconsole/latest/userguide/supported-versions-connections.html) that meet your business requirements or existing architecture.
+AFT uses AWS CodeCommit for a source code version control system (VCS), and it allows other [CodeConnections](https://docs.aws.amazon.com/dtconsole/latest/userguide/supported-versions-connections.html) that meet your business requirements or existing architecture.
 
 If you're deploying AFT for the first time and you don't have an existing CodeCommit repository, you must specify an external VCS provider, as part of the AFT deployment prerequisites.
 
@@ -51,4 +51,4 @@ By default, AFT sources from the `main` branch of each `git` repository. You can
 
 **Step 3: Complete the AWS CodeCommit connection for third-party VCS providers**
 
-When your deployment runs, AFT either creates the required AWS CodeCommit repositories, or it creates an AWS CodeCommit connection for your chosen third-party VCS provider. In case of the latter, you must manually sign in to the AFT management account’s console to complete the pending CodeCommit connection. See [the AWS CodeCommit documentation](https://docs.aws.amazon.com//dtconsole/latest/userguide/connections-update.html) for further instructions on completing the CodeCommit connection.
+When your deployment runs, AFT either creates the required AWS CodeCommit repositories, or it creates an AWS CodeCommit connection for your chosen third-party VCS provider. In case of the latter, you must manually sign in to the AFT management account’s console to complete the pending CodeCommit connection. See [the AWS CodeCommit documentation](https://docs.aws.amazon.com/dtconsole/latest/userguide/connections-update.html) for further instructions on completing the CodeCommit connection.

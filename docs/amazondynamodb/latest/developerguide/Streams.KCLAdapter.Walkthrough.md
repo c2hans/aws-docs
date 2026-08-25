@@ -15,7 +15,7 @@ The program does the following:
 
 1. Reads the records from the stream, reconstructs them as DynamoDB requests, and applies the requests to the destination table.
 
-1. Scans the source and destination tables to ensure that their contents are identical.
+1. Scans the source and destination tables to make sure that their contents are identical.
 
 1. Cleans up by deleting the tables.
 
@@ -25,7 +25,7 @@ These steps are described in the following sections, and the complete applicatio
 + [Step 1: Create DynamoDB tables](#Streams.KCLAdapter.Walkthrough.Step1)
 + [Step 2: Generate update activity in source table](#Streams.KCLAdapter.Walkthrough.Step2)
 + [Step 3: Process the stream](#Streams.KCLAdapter.Walkthrough.Step3)
-+ [Step 4: Ensure that both tables have identical contents](#Streams.KCLAdapter.Walkthrough.Step4)
++ [Step 4: Make sure that both tables have identical contents](#Streams.KCLAdapter.Walkthrough.Step4)
 + [Step 5: Clean up](#Streams.KCLAdapter.Walkthrough.Step5)
 + [Complete program: DynamoDB Streams Kinesis adapter](Streams.KCLAdapter.Walkthrough.CompleteProgram.md)
 
@@ -117,7 +117,7 @@ for (Record record : records) {
 }
 ```
 
-## Step 4: Ensure that both tables have identical contents
+## Step 4: Make sure that both tables have identical contents
 <a name="Streams.KCLAdapter.Walkthrough.Step4"></a>
 
 At this point, the source and destination tables' contents are in sync. The application issues `Scan` requests against both tables to verify that their contents are, in fact, identical.

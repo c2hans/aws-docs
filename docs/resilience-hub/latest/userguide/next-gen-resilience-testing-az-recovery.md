@@ -15,7 +15,7 @@ The **Availability Zone: recovery** test injects the symptoms of a power interru
 + **Availability Zone** – Choose the AZ to impair. Select an AZ where your service has resources deployed.
 + **Duration** – The length of time the test actions run. It takes a few additional minutes afterward to collect final results before the test ends. Defaults to your RTO from your service policy plus 30 minutes when you first create the test. Set it longer than your RTO to validate that recovery is sustained.
 
-This test runs the following AWS FIS actions to impair the Availability Zone that you select. If your service has no resources matching an action's target type, that action is skipped. For details about each action, see the [AWS FIS actions reference](https://docs.aws.amazon.com//fis/latest/userguide/fis-actions-reference.html).
+This test runs the following AWS FIS actions to impair the Availability Zone that you select. If your service has no resources matching an action's target type, that action is skipped. For details about each action, see the [AWS FIS actions reference](https://docs.aws.amazon.com/fis/latest/userguide/fis-actions-reference.html).
 
 | Action | Description |
 | --- | --- |

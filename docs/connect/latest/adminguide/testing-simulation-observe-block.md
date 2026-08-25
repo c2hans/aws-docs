@@ -79,7 +79,7 @@ Configuration options:
   + **Contains** – Checks if the observed message contains your specified text
 
 **Important**
-(Voice) Test results may vary slightly between runs. The system breaks down audio into segments based on pauses and natural speech patterns, which can differ depending on how long someone pauses or how they structure their sentences. This means you may see variations in how prompts appear across test executions.
+(Voice) Test results might vary slightly between runs. The system breaks down audio into segments based on pauses and natural speech patterns, which can differ depending on how long someone pauses or how they structure their sentences. This means you might see variations in how prompts appear across test executions.
 
 ![Observe block configuration showing Message Received event type with matching criteria options.](http://docs.aws.amazon.com/connect/latest/adminguide/images/test-observe-message-received.png)
 

@@ -9,8 +9,6 @@ When you create an action group in Amazon Bedrock, you can define function detai
 
 For example, you might define a function called **BookHotel** that contains parameters that the agent needs to invoke from the user to book a hotel for the user. You might define the following parameters for the function:
 
-****
-
 | Parameter | Description | Type | Required |
 | --- | --- | --- | --- |
 | HotelName | The name of the hotel | string | Yes |

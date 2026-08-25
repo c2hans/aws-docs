@@ -65,16 +65,12 @@ The following fields are required:
 **Note**
 The API response contains citation events. The `citation` member has been deprecated. We recommend that you use the `generatedResponse` and `retrievedReferences` fields instead. For reference, see [`CitationEvent`](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_CitationEvent.html).
 
-****
-
 | Field | Basic description |
 | --- | --- |
 | input | Contains a text field to specify the query. |
 | retrieveAndGenerateConfiguration | Contains a [RetrieveAndGenerateConfiguration](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerateConfiguration.html), which specifies configurations for retrieval and generation. See below for more details. |
 
 The following fields are optional:
-
-****
 
 | Field | Use case |
 | --- | --- |
@@ -83,10 +79,8 @@ The following fields are optional:
 
 Include the `knowledgeBaseConfiguration` field in the [RetrieveAndGenerateConfiguration](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerateConfiguration.html). This field maps to a [KnowledgeBaseRetrieveAndGenerateConfiguration](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_KnowledgeBaseRetrieveAndGenerateConfiguration.html) object, which contains the following fields:
 + The following fields are required:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/kb-test-retrieve-generate.html)
 + The following fields are optional:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/kb-test-retrieve-generate.html)
 
 You can use a reranking model over the default Amazon Bedrock Knowledge Bases ranking model by including the `rerankingConfiguration` field in the [KnowledgeBaseVectorSearchConfiguration](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_KnowledgeBaseVectorSearchConfiguration.html) within the [KnowledgeBaseRetrievalConfiguration](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_KnowledgeBaseRetrievalConfiguration.html). The `rerankingConfiguration` field maps to a [VectorSearchRerankingConfiguration](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_VectorSearchRerankingConfiguration.html) object, in which you can specify the reranking model to use, any additional request fields to include, metadata attributes to filter out documents during reranking, and the number of results to return after reranking. For more information, see [VectorSearchRerankingConfiguration](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_VectorSearchRerankingConfiguration.html).
@@ -95,8 +89,6 @@ You can use a reranking model over the default Amazon Bedrock Knowledge Bases ra
 If you the `numberOfRerankedResults` value that you specify is greater than the `numberOfResults` value in the [KnowledgeBaseVectorSearchConfiguration](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_KnowledgeBaseVectorSearchConfiguration.html), the maximum number of results that will be returned is the value for `numberOfResults`. An exception is if you use query decomposition (for more information, see the **Query modifications** section in [Configure and customize queries and response generation](kb-test-config.md). If you use query decomposition, the `numberOfRerankedResults` can be up to five times the `numberOfResults`.
 
 The response returns the generated response in the `output` field and the cited source chunks as an array in the `citations` field. Each [Citation](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Citation.html) object contains the following fields.
-
-****
 
 | Field | Basic description |
 | --- | --- |

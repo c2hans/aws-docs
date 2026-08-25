@@ -19,7 +19,7 @@ aws ssm send-command --document-name "AWS-ConfigureAWSPackage" \
 Replace {{i-1234567890abcdef0}} with the instance ID (or IDs) where you want to install the agent. You can specify multiple instance IDs separated by commas.
 
 **Step 2: Activate the agent**
-After the installation completes, activate the agent so it begins sending performance metrics to the Network Flow Monitor backend. Activating the agent incurs billing costs. For more information about pricing, see the [Amazon CloudWatch pricing](https://aws.amazon.com//cloudwatch/pricing/) page.
+After the installation completes, activate the agent so it begins sending performance metrics to the Network Flow Monitor backend. Activating the agent incurs billing costs. For more information about pricing, see the [Amazon CloudWatch pricing](https://aws.amazon.com/cloudwatch/pricing/) page.
 
 ```
 aws ssm send-command --document-name "AmazonCloudWatch-NetworkFlowMonitorManageAgent" \

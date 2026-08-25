@@ -63,7 +63,7 @@ In the event of a merge conflict, AWS AppSync provides users with several tools 
 <a name="merged-api-schema-directive"></a>
 
  AWS AppSync has introduced several GraphQL directives that can be used to- reduce or resolve conflicts across source APIs:
-+ *@canonical*: This directive sets the precedence of types/fields with similar names and data. If two or more source APIs have the same GraphQL type or field, one of the APIs can annotate their type or field as *canonical*, which will be prioritized during the merge. Conflicting types/fields that aren't annotated with this directive in other source APIs are ignored when merged.
++ *@canonical*: This directive sets the precedence of types/fields with similar names and data. If two or more source APIs have the same GraphQL type or field, one of the APIs can annotate their type or field as *canonical*, which will be prioritized during the merge. Conflicting types/fields that aren't annotated with this directive in other source APIs are ignored when merged. This includes authorization directives: annotating a field as *canonical* prevents another source API's declaration of the same field from adding authorization modes to it. Declare the authorization directive that you require on the field itself. Apply *@canonical* at the field level when you want to constrain authorization on specific fields. This still allows other source APIs to contribute additional fields to the same type. For more information, see [Managing authorization on shared fields](#managing-authorization-shared-fields).
 + *@hidden*: This directive encapsulates certain types/fields to remove it from the merging process. Teams may want to remove or hide specific types or operations in the source API so only internal clients can access specific typed data. With this directive attached, types or fields are not merged into the Merged API.
 + *@renamed*: This directive changes the names of types/fields to reduce naming conflicts. There are situations where different APIs have the same type or field name. However, they all need to be available in the merged schema. A simple way to include them all in the Merged API is to rename the field to something similar but different.
 
@@ -339,6 +339,53 @@ type Query {
 
 While resolving such a conflict requires source API schemas to be rewritten and, potentially, clients to change their queries, the advantage of this approach is that ownership of merged resolvers remains clear across source teams.
 
+### Managing authorization on shared fields
+<a name="managing-authorization-shared-fields"></a>
+
+When two or more source APIs declare the same field, the merge combines the authorization directives from each declaration. Clients can then reach the merged field through any of those authorization modes. If one source API declares a field with `@aws_iam` and another source API declares the same field with `@aws_api_key`, the merged field accepts either, and a client that holds only an API key can invoke it.
+
+To keep a field's authorization as your source API defines it, annotate the field with `@canonical` and declare the authorization directive that you require on the field itself. In the following example, *Source1.graphql* owns the resolver for `protectedRead` and requires IAM authorization:
+
+```
+# This snippet represents a file called Source1.graphql
+
+type Query {
+    protectedRead: String @aws_iam @canonical
+}
+```
+
+```
+# This snippet represents a file called Source2.graphql
+
+type Query {
+    protectedRead: String @aws_api_key
+}
+```
+
+When the merge occurs, the definition from *Source1.graphql* takes precedence:
+
+```
+# This snippet represents a file called MergedSchema.graphql
+
+type Query {
+    protectedRead: String @aws_iam
+}
+```
+
+Without the *@canonical* annotation, the merged field would be `protectedRead: String @aws_api_key @aws_iam`. A client holding only the Merged API's API key can then invoke it.
+
+If your source API owns the field's resolver, annotate the field in that source API, because its resolver returns the data.
+
+Two conditions apply:
+
+*@canonical* preserves the field as declared. A field annotated *@canonical* with no authorization directive of its own takes your source API's primary authorization mode, which might be more permissive than you intend.
+
+If two source APIs annotate the same field as *canonical*, the merge fails with the error `Multiple subschemas cannot declare the same field as canonical`.
+
+Apply *@canonical* at the field level rather than the type level to constrain authorization on specific fields. This still allows other source APIs to contribute additional fields to the same type. This guidance applies to fields on `Query`, `Mutation`, and `Subscription` as well as to fields on object types.
+
+If you don't want a field to appear in the Merged API at all, use *@hidden* instead. For more information, see [Merged API schema directives](#merged-api-schema-directive).
+
 ## Configuring schemas
 <a name="configuring-schemas-merged-api"></a>
 
@@ -361,6 +408,9 @@ The following authorization modes are available to use with Merged APIs:
 + **OpenID Connect**: This authorization type enforces OpenID connect (OIDC) tokens provided by an OIDC-compliant service. Your application can leverage users and privileges defined by your OIDC provider for controlling access.
 
 The authorization modes of a Merged API are configured by the Merged API owner. At the time of a merge operation, the Merged API must include the primary authorization mode configured on a source API either as its own primary authorization mode or as a secondary authorization mode. Otherwise, it will be incompatible, and the merge operation will fail with a conflict. When using multi-auth directives in the source APIs, the merging process is able to automatically merge these directives into the unified endpoint. In the case where the primary authorization mode of the source API doesn't match the primary authorization mode of the Merged API, it will automatically add these auth directives to ensure that the authorization mode for the types in the source API is consistent.
+
+**Important**
+When two or more source APIs declare the same field, the merge combines the authorization directives from each declaration, and clients can reach the merged field through any of those modes. The automatic addition described above applies each source API's own primary authorization mode to the fields that source API contributes. It does not override authorization directives that a source API declares explicitly. To keep a field's authorization as a single source API defines it, see [Managing authorization on shared fields](#managing-authorization-shared-fields).
 
 ## Configuring execution roles
 <a name="execution-roles-merged-api"></a>
@@ -448,6 +498,9 @@ Once you have properly shared a source API or Merged API in AWS RAM and, if nece
 
 **Note**
 Sharing via AWS RAM requires the caller in AWS RAM to have permission to perform the `appsync:PutResourcePolicy` action on any API that is being shared.
+
+**Important**
+When you federate source APIs from other AWS accounts, a source API in another account can declare a field that your source API also declares. In that case the merge combines the authorization directives from both declarations, and clients can reach the merged field through any of those modes. If your Merged API uses `API_KEY` alongside a stricter authorization mode such as IAM or Amazon Cognito user pools, annotate authorization-protected fields with *@canonical*. Annotate these fields in the source API that owns the field's resolver. For more information, see [Managing authorization on shared fields](#managing-authorization-shared-fields).
 
 ## Merging
 <a name="merges"></a>

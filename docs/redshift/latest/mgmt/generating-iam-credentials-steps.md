@@ -165,7 +165,6 @@ You can create database user groups with the permissions you want the IAM databa
    Users need programmatic access if they want to interact with AWS outside of the AWS Management Console. The way to grant programmatic access depends on the type of user that's accessing AWS.
 
    To grant users programmatic access, choose one of the following options.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/mgmt/generating-iam-credentials-steps.html)
 
    The following example creates a user with password disabled.

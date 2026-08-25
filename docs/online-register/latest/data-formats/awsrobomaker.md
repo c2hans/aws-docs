@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsr
 
 AWS RoboMaker provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="robomaker-BatchDescribeSimulationJob"></a>[BatchDescribeSimulationJob](https://docs.aws.amazon.com/robomaker/latest/dg/API_BatchDescribeSimulationJob.html) | Describe multiple simulation jobs | Read |

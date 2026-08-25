@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon Braket provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="braket-GetDevice"></a>[GetDevice](https://docs.aws.amazon.com/braket/latest/APIReference/API_GetDevice.html) | Retrieve information about the devices available in Amazon Braket | Read |

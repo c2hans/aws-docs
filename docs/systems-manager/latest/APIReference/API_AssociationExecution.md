@@ -24,7 +24,7 @@ Required: No
  ** AssociationVersion **   <a name="systemsmanager-Type-AssociationExecution-AssociationVersion"></a>
 The association version.
 Type: String
-Pattern: `([$]LATEST)|([1-9][0-9]*)`
+Pattern: `^(([$]LATEST)|([1-9][0-9]*))$`
 Required: No
 
  ** CreatedTime **   <a name="systemsmanager-Type-AssociationExecution-CreatedTime"></a>

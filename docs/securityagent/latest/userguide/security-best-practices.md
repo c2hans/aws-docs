@@ -7,8 +7,8 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/security-
 
 AWS Security Agent provides a number of security features to consider as you develop and implement your own security policies. The following best practices are general guidelines and don’t represent a complete security solution. Because these best practices might not be appropriate or sufficient for your environment, treat them as helpful considerations rather than prescriptions.
 
-## Use non-production environments for penetration testing
-<a name="_use_non_production_environments_for_penetration_testing"></a>
+## Use non-production environments for Continuum penetration testing
+<a name="_use_non_production_environments_for_continuum_penetration_testing"></a>
 
 AWS Security Agent uses a comprehensive suite of penetration testing tools from the Kali Linux distribution. These tools are designed to identify security vulnerabilities and may perform actions that modify application state, data, or system configurations.
 

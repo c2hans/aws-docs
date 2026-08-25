@@ -12,8 +12,6 @@ Amazon Q Business provides APIs to manage users and groups in your Amazon Q Busi
 **Note**
 As of Dec 17, 2024, Amazon Q Business will recognize all email addresses as case-insensitive and recognize subaddresses as equivalent to the original email address. For example, JohnDoe@example.com, johndoe@example.com, and johndoe\+work@example.com will be considered the same email address. For assistance with applications or to report a concern, contact Support, sign into the [AWS Support Center](https://console.aws.amazon.com/support/home#/) .
 
-****
-
 | API action | API description | Relevant User Guide topic |
 | --- | --- | --- |
 | [CreateUser](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateUser.html) | Creates a universally unique identifier (UUID) mapped to a list of local user ids within an application | [User mapping](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connector-principal-store.html#user-mapping) |

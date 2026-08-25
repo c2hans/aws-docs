@@ -15,4 +15,4 @@ The IVS Low-Latency Streaming Web Broadcast SDK gives developers the tools to bu
 + [Single broadcast to an IVS channel (HTML and JavaScript)](https://codepen.io/amazon-ivs/pen/poLRoPp)
 + [Single broadcast with screen share to an IVS channel](https://stream.ivs.rocks/) ([React Source Code](https://github.com/aws-samples/amazon-ivs-broadcast-web-demo))
 
-**Platform requirements**: See [Amazon IVS Broadcast SDK](https://docs.aws.amazon.com//ivs/latest/LowLatencyUserGuide/broadcast.html) for a list of supported platforms.
+**Platform requirements**: See [Amazon IVS Broadcast SDK](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/broadcast.html) for a list of supported platforms.

@@ -44,7 +44,7 @@ This is the only chance for you to save the private key file.
 
 1. Choose one of the public subnets in your VPC from the **Subnet** dropdown list. The subnet you choose must have all external traffic routed to an internet gateway. If this is not the case, you won't be able to connect to the instance remotely.
 
-   For more information on how to connect to a internet gateway, see [Connect to the internet using an internet gateway](https://docs.aws.amazon.com//vpc/latest/userguide/VPC_Internet_Gateway.html) in the *Amazon VPC User Guide*.
+   For more information on how to connect to a internet gateway, see [Connect to the internet using an internet gateway](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Internet_Gateway.html) in the *Amazon VPC User Guide*.
 
 1. Under **Auto-assign public IP**, choose **Enable**.
 

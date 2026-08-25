@@ -17,8 +17,6 @@ To use the AWS SDK for PHP, you must be using PHP version 8.1 or later with the 
 
 In addition to the minimum requirements, we recommend you also install, uninstall, and use the following.
 
-****
-
 |  |  |
 | --- |--- |
 | Install [cURL](http://php.net/manual/en/book.curl.php) 7.16.2 or later | Use a recent version of cURL compiled with OpenSSL/NSS and zlib. If cURL isn’t installed on your system and you don’t configure a custom http\_handler for your client, the SDK uses the PHP stream wrapper. |

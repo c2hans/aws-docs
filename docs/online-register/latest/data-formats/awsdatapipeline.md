@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsd
 
 AWS Data Pipeline provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="datapipeline-DescribeObjects"></a>[DescribeObjects](https://docs.aws.amazon.com/datapipeline/latest/APIReference/API_DescribeObjects.html) | Get the object definitions for a set of objects associated with the pipeline | Read |

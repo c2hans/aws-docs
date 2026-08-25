@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/table-dictionary-cu
 
 Discount columns contain data about any discounts you are receiving.
 
-****
-
 | Column name | Description | Data type |
 | --- | --- | --- |
 | discount | **Table configuration:** Removed by: INCLUDE MANUAL DISCOUNT COMPATIBILITY<br />A "struct" column containing key-value pairs of any specific discounts that apply to this line item. The keys correspond to a discount type and the values correspond to either the discount value or other information. The values in this column are either data type "numeric" or "string" depending on the specific key.<br />The keys of this column can be queried as individual columns by using the dot operator. For more information, see [Data query](https://docs.aws.amazon.com/cur/latest/userguide/dataexports-data-query.html).<br />This column is not available when "Manual discount compatibility" is enabled. When it's enabled, discounts are populated as separate line items and not in this column. | map <string, double> |

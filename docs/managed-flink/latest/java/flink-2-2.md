@@ -66,8 +66,6 @@ Below is a summary of breaking changes and deprecations introduced in Managed Se
 
 **Runtime and language support**
 
-****
-
 | Feature | Description | Documentation |
 | --- | --- | --- |
 | Java 17 Runtime | Java 17 is now the default and recommended runtime; Java 11 support removed. | [Java Compatibility](https://nightlies.apache.org/flink/flink-docs-stable/zh/docs/deployment/java_compatibility/) |
@@ -75,16 +73,12 @@ Below is a summary of breaking changes and deprecations introduced in Managed Se
 
 **State management and performance**
 
-****
-
 | Feature | Description | Documentation |
 | --- | --- | --- |
 | RocksDB 8.10.0 | Improved I/O performance with RocksDB upgrade. | [State Backends](https://nightlies.apache.org/flink/flink-docs-release-2.0/docs/ops/state/state_backends/) |
 | Serialization Improvements | Dedicated serializers for Map, List, Set; Kryo upgraded from 2.24 to 5.6. | [Type Serialization](https://nightlies.apache.org/flink/flink-docs-release-2.0/docs/dev/datastream/fault-tolerance/serialization/types_serialization/) |
 
 **SQL and Table API features**
-
-****
 
 | Feature | Description | Documentation |
 | --- | --- | --- |
@@ -97,8 +91,6 @@ Below is a summary of breaking changes and deprecations introduced in Managed Se
 | Vector Search | Flink SQL API supports searching vector databases. No open source VectorSearchTableSource implementation is currently available; customers must provide their own implementation. | [Flink SQL](https://nightlies.apache.org/flink/flink-docs-stable/release-notes/flink-2.2/#support-vector_search-in-flink-sql) |
 
 **DataStream API features**
-
-****
 
 | Feature | Description | Documentation |
 | --- | --- | --- |

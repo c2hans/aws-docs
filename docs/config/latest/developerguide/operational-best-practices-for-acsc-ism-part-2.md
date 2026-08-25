@@ -11,8 +11,6 @@ The following provides additional sample mapping between the Australian Cyber Se
 
 This sample conformance pack template contains mappings to controls within the ISM framework, which was created by the Commonwealth of Australia and can be found at [Australian Government Information Security Manual](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/ism/cyber-security-principles). Licensing of the framework under Creative Commons Attribution 4.0 International Public License and copyright information for the framework (including a disclaimer of warranties) can be found at [ACSC \| Copyright](https://www.cyber.gov.au/acsc/copyright).
 
-****
-
 | Control ID  | AWS Config Rule  | Guidance  |
 | --- | --- | --- |
 | 1984 | [appmesh-virtual-gateway-backend-defaults-tls](https://docs.aws.amazon.com/config/latest/developerguide/appmesh-virtual-gateway-backend-defaults-tls.html) | Checks if backend defaults for AWS App Mesh virtual gateways require the virtual gateways to communicate with all ports using TLS. The rule is NON\_COMPLIANT if configuration.Spec.BackendDefaults.ClientPolicy.Tls.Enforce is false. |

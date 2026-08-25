@@ -17,8 +17,6 @@ The plugin is specifically designed for single-user desktop environments. In sha
 
 The credentials provider that will be used to authenticate requests to AWS. Set the value of this parameter to `BrowserOidcTip`.
 
-****
-
 | Parameter name | Alias | Parameter type | Default value | Value to use |
 | --- | --- | --- | --- | --- |
 | CredentialsProvider | AWSCredentialsProviderClass (deprecated) | Required | none | BrowserOidcTip |
@@ -30,8 +28,6 @@ The IDP Well Known Configuration URL is the endpoint that provides OpenID Connec
 
 For troubleshooting: If you receive connection errors, verify that this URL is accessible from your network and returns valid *OpenID Connect* configuration JSON. The URL must be reachable by the client where the driver is installed and should be provided by your identity provider administrator.
 
-****
-
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
 | IdpWellKnownConfigurationUrl | none | Required | none |
@@ -40,8 +36,6 @@ For troubleshooting: If you receive connection errors, verify that this URL is a
 <a name="jdbc-v3-driver-browser-oidc-tip-client-id"></a>
 
 The client identifier issued to the application by the OpenID Connect provider.
-
-****
 
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
@@ -58,8 +52,6 @@ This parameter is different from the `Workgroup` parameter that specifies where 
 `Workgroup` - Specifies the workgroup where queries will execute
 While these typically reference the same workgroup, both parameters must be set explicitly for proper operation.
 
-****
-
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
 | WorkGroupArn | none | Required | primary |
@@ -68,8 +60,6 @@ While these typically reference the same workgroup, both parameters must be set 
 <a name="jdbc-v3-driver-browser-oidc-tip-application-role-arn"></a>
 
 The ARN of the role that will be assumed in the JWT exchange. This role is used for JWT exchange, getting IAM Identity Center customer managed application ARN through workgroup tags, and getting access role ARN. For more information about assuming roles, see [AssumeRole](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html).
-
-****
 
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
@@ -80,8 +70,6 @@ The ARN of the role that will be assumed in the JWT exchange. This role is used 
 
 A name for the IAM session. It can be anything you like, but typically you pass the name or identifier that's associated with the user who is using your application. That way, the temporary security credentials that your application will use are associated with that user.
 
-****
-
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
 | JwtRoleSessionName | role\_session\_name (deprecated) | Required | none |
@@ -90,8 +78,6 @@ A name for the IAM session. It can be anything you like, but typically you pass 
 <a name="jdbc-v3-driver-browser-oidc-tip-client-secret"></a>
 
 The clientSecret is a confidential key issued by your identity provider that is used to authenticate your application (client). While this parameter is optional and may not be required for all authentication flows, it provides an additional layer of security when used. If your IDP configuration requires a client secret, you must include this parameter with the value provided by your identity provider administrator.
-
-****
 
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
@@ -102,8 +88,6 @@ The clientSecret is a confidential key issued by your identity provider that is 
 
 The scope specifies what level of access your application is requesting from the identity provider. You must include `openid` in the scope to receive an ID token containing essential user identity claims. Your scope may need to include additional permissions like `email` or `profile`, depending on which user claims your identity provider (such as *Microsoft Entra ID*) is configured to include in the ID token. These claims are essential for proper *Trusted Identity Propagation* mapping. If user identity mapping fails, verify that your scope includes all necessary permissions and your identity provider is configured to include the required claims in the ID token. These claims must match your *Trusted Token Issuer* mapping configuration in IAM Identity Center.
 
-****
-
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
 | Scope | none | Optional | openid email offline\_access |
@@ -112,8 +96,6 @@ The scope specifies what level of access your application is requesting from the
 <a name="jdbc-v3-driver-browser-oidc-tip-role-session-duration"></a>
 
 The duration, in seconds, of the role session. For more information, see [AssumeRoleWithWebIdentity](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRoleWithWebIdentity.html).
-
-****
 
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
@@ -124,8 +106,6 @@ The duration, in seconds, of the role session. For more information, see [Assume
 
 The ARN of the role that Athena assumes to make calls on the behalf of you. For more information about assuming roles, see [AssumeRole](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html) in the *AWS Security Token Service API Reference*.
 
-****
-
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
 | AccessRoleArn | none | Optional | none |
@@ -134,8 +114,6 @@ The ARN of the role that Athena assumes to make calls on the behalf of you. For 
 <a name="jdbc-v3-driver-browser-oidc-tip-customer-idc-application-arn"></a>
 
 The ARN of IAM Identity Center customer managed application. For more information, see [customer managed applications](https://docs.aws.amazon.com/singlesignon/latest/userguide/customermanagedapps.html).
-
-****
 
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
@@ -153,8 +131,6 @@ Using Windows security policies to restrict port access
 Implementing network isolation between user sessions
 If these security controls cannot be implemented, we recommend using the [JWT trusted identity propagation](jdbc-v3-driver-jwt-tip-credentials.md) plugin instead, which doesn't require a loopback port.
 
-****
-
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
 | IdpPortNumber | none | Optional | 7890 |
@@ -163,8 +139,6 @@ If these security controls cannot be implemented, we recommend using the [JWT tr
 <a name="jdbc-v3-driver-browser-oidc-tip-idp-response-timeout"></a>
 
 The timeout in seconds to wait for the OAuth 2.0 callback response.
-
-****
 
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
@@ -176,8 +150,6 @@ The timeout in seconds to wait for the OAuth 2.0 callback response.
 The EnableTokenCaching parameter determines whether the driver caches the authentication token between conections. Setting EnableTokenCaching to true reduces authentication prompts and improves user experience, but should be used cautiously. This setting is best suited for single-user desktop environments. In shared environments like Windows Server, it's recommended to keep this disabled to prevent potential token sharing between users with similar connection strings.
 
 For enterprise deployments using tools like Tableau Server, we recommend using the [JWT trusted identity propagation](jdbc-v3-driver-jwt-tip-credentials.md) plugin instead of this authentication method.
-
-****
 
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |

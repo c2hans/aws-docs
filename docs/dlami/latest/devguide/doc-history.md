@@ -22,8 +22,6 @@ The following table provides a history of recent DLAMI releases and related chan
 
 The following table provides a history of earlier DLAMI releases and related changes prior to July 2018.
 
-****
-
 | Change | Description | Date |
 | --- | --- | --- |
 | TensorFlow with Horovod | Added a tutorial for training ImageNet with TensorFlow and Horovod.  | June 6, 2018 |

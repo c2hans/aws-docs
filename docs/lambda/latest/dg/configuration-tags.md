@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/configuration-tags.html
 # Using tags on Lambda functions
 <a name="configuration-tags"></a>
 
-You can tag functions to organize and manage your resources. Tags are free-form key-value pairs associated with your resources that are supported across AWS services. For more information about use cases for tags, see [Common tagging strategies](https://docs.aws.amazon.com//tag-editor/latest/userguide/best-practices-and-strats.html#tag-strategies) in the *Tagging AWS Resources and Tag Editor Guide*.
+You can tag functions to organize and manage your resources. Tags are free-form key-value pairs associated with your resources that are supported across AWS services. For more information about use cases for tags, see [Common tagging strategies](https://docs.aws.amazon.com/tag-editor/latest/userguide/best-practices-and-strats.html#tag-strategies) in the *Tagging AWS Resources and Tag Editor Guide*.
 
 Tags apply at the function level, not to versions or aliases. Tags are not part of the version-specific configuration that AWS Lambda creates a snapshot of when you publish a version. You can use the Lambda API to view and update tags. You can also view and update tags while managing a specific function in the Lambda console.
 
@@ -104,7 +104,7 @@ aws lambda untag-resource --resource {{arn:aws:lambda:us-east-1:123456789012:res
 ### Adding tags when creating a function
 <a name="creating-tags-when-you-create-a-function-cli"></a>
 
-To create a new Lambda function with tags, use the [CreateFunction](https://docs.aws.amazon.com//lambda/latest/api/API_CreateFunction.html) API operation. Specify the `Tags` parameter. You can call this operation with the `create-function` CLI command and the --tags option.
+To create a new Lambda function with tags, use the [CreateFunction](https://docs.aws.amazon.com/lambda/latest/api/API_CreateFunction.html) API operation. Specify the `Tags` parameter. You can call this operation with the `create-function` CLI command and the --tags option.
 
 Before using the tags parameter with `CreateFunction`, ensure that your role has permission to tag resources alongside the usual permissions needed for this operation. For more information about permissions for tagging, see [Permissions required for working with tags](#fxn-tags-required-permissions). This example adds two tags, one with the key {{Department}} and one with the key {{CostCenter}}.
 

@@ -14,8 +14,6 @@ Create a new Route 53 DNS resource record sets and a new private hosted zone for
 ## Change Type Details
 <a name="ct-0c38gftq56zj6-DADc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-0c38gftq56zj6 |

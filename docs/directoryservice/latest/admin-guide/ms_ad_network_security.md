@@ -87,8 +87,6 @@ TCP 636 is only required when LDAP over SSL is in use.
 
 **Inbound Rules**
 
-****
-
 | Protocol | Port range | Source | Type of traffic | Active Directory usage |
 | --- | --- | --- | --- | --- |
 | TCP & UDP  | 53 | Customer domain controllers CIDR | DNS | User and computer authentication, name resolution, trusts  |
@@ -103,8 +101,6 @@ TCP 636 is only required when LDAP over SSL is in use.
 | UDP | 123 | Customer domain controllers CIDR | Windows Time | Windows Time, trusts |
 
 **Outbound Rules**
-
-****
 
 | Protocol | Port range | Source | Type of traffic | Active Directory usage |
 | --- | --- | --- | --- | --- |
@@ -139,8 +135,6 @@ TCP 636 is only required when LDAP over SSL is in use.
 If you want to use an Enterprise CA with this configuration you will need to create an outbound rule "TCP, 443, CA CIDR".
 
 **Inbound Rules**
-
-****
 
 | Protocol | Port range | Source | Type of traffic | Active Directory usage |
 | --- | --- | --- | --- | --- |
@@ -192,8 +186,6 @@ If you want to use an Enterprise CA with this configuration you will need to cre
 
 **Inbound Rules**
 
-****
-
 | Protocol | Port range | Source | Type of traffic | Active Directory usage |
 | --- | --- | --- | --- | --- |
 | TCP & UDP  | 53 | Customer domain controllers CIDR | DNS | User and computer authentication, name resolution, trusts  |
@@ -220,8 +212,6 @@ If you want to use an Enterprise CA with this configuration you will need to cre
 | UDP | 138 | Customer domain controllers CIDR | DFSN & NetLogon | DFS, group policy |
 
 **Outbound Rules**
-
-****
 
 | Protocol | Port range | Source | Type of traffic | Active Directory usage |
 | --- | --- | --- | --- | --- |

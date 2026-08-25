@@ -5,6 +5,9 @@ source_url: https://docs.aws.amazon.com/fsx/latest/WindowsGuide/manage-faa.html
 # Managing file access auditing
 <a name="manage-faa"></a>
 
+**SACLs required to record activity**
+On its own, turning on file access auditing does not record any accesses. Amazon FSx for Windows File Server records accesses only for files, folders, and file shares that have audit controls (also known as SACLs) configured. For instructions on configuring audit controls, see [Setting file and folder auditing controls](faa-audit-controls.md).
+
 You can enable file access auditing when creating a new Amazon FSx for Windows File Server file system. File access auditing is turned off by default when you create a file system from the Amazon FSx console.
 
 On existing file systems that have file access auditing enabled, you can change the file access auditing settings, including changing the access attempt types for file and file share accesses, and the audit event log destination. You can perform these tasks using the Amazon FSx console, AWS CLI, or API.
@@ -35,7 +38,7 @@ File access auditing is supported only on Amazon FSx for Windows File Server fil
 When the file system is **Available**, the file access auditing feature is enabled.
 
 ## To enable file access auditing when creating a file system (CLI)
-<a name="w2aac31c20c35b9b3"></a>
+<a name="w2aac31c20c35c11b3"></a>
 
 1. When creating a new file system, use the `AuditLogConfiguration` property with the [CreateFileSystem](https://docs.aws.amazon.com/fsx/latest/APIReference/API_CreateFileSystem.html) API operation to enable file access auditing for the new file system.
 
@@ -52,7 +55,7 @@ When the file system is **Available**, the file access auditing feature is enabl
 1. When the file system is **Available**, the file access auditing feature is enabled.
 
 ## To change the file access auditing configuration (console)
-<a name="w2aac31c20c35b9b5"></a>
+<a name="w2aac31c20c35c11b5"></a>
 
 1. Open the Amazon FSx console at [https://console.aws.amazon.com/fsx/](https://console.aws.amazon.com/fsx/).
 
@@ -72,7 +75,7 @@ When the file system is **Available**, the file access auditing feature is enabl
 1. Choose **Save**.
 
 ## To change the file access auditing configuration (CLI)
-<a name="w2aac31c20c35b9b7"></a>
+<a name="w2aac31c20c35c11b7"></a>
 + Use the [`update-file-system`](https://docs.aws.amazon.com/cli/latest/reference/fsx/update-file-system.html) CLI command or the equivalent [`UpdateFileSystem`](https://docs.aws.amazon.com/fsx/latest/APIReference/API_UpdateFileSystem.html) API operation.
 
   ```

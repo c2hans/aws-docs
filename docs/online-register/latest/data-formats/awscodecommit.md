@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsc
 
 AWS CodeCommit provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="codecommit-BatchDescribeMergeConflicts"></a>[BatchDescribeMergeConflicts](https://docs.aws.amazon.com/codecommit/latest/APIReference/API_BatchDescribeMergeConflicts.html) | Get information about multiple merge conflicts when attempting to merge two commits using either the three-way merge or the squash merge option | Read |

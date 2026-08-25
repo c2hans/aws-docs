@@ -24,8 +24,6 @@ Conversational analytics Rules - Word Collections uses the same set of security 
 ## How to create a user word collection
 <a name="create-user-word-collections"></a>
 
-****
-
 1. On the **Word collections** management page, choose **Create a word collection**.
 ![Keywords or phrases option in the UI.](http://docs.aws.amazon.com/connect/latest/adminguide/images/create-user-word-collections-1.png)
 

@@ -56,7 +56,7 @@ Your shared credentials file is now configured on your local computer, and it's 
 ## Sending authenticated requests using the AWS SDKs
 <a name="send-authenticated-request-SDKs"></a>
 
-Use the AWS SDKs to send authenticated requests. For more information about sending authenticated requests, see [AWS security credentials](https://docs.aws.amazon.com/IAM/latest/UserGuide/security-creds.html) or [IAM Identity Center Authentication](https://docs.aws.amazon.com//sdkref/latest/guide/access-sso.html).
+Use the AWS SDKs to send authenticated requests. For more information about sending authenticated requests, see [AWS security credentials](https://docs.aws.amazon.com/IAM/latest/UserGuide/security-creds.html) or [IAM Identity Center Authentication](https://docs.aws.amazon.com/sdkref/latest/guide/access-sso.html).
 
 ------
 #### [ Java ]

@@ -179,8 +179,6 @@ To access the data fields inside structs, the sample query uses dot notation (fo
 
 The following table shows the query results.
 
-****
-
 | \# | Name | Address | City | Item\_ID | Order\_date |
 | --- | --- | --- | --- | --- | --- |
 | 1 | Carlos | 123 Main St. | Anytown | 6789 | 11/11/2022 |

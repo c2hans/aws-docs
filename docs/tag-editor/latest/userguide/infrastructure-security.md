@@ -11,7 +11,7 @@ You use AWS published API calls to access Tag Editor through the network. Client
 + Transport Layer Security (TLS). We require TSL 1.2 and recommend TSL 1.3.
 + Cipher suites with perfect forward secrecy (PFS) such as DHE (Ephemeral Diffie-Hellman) or ECDHE (Elliptic Curve Ephemeral Diffie-Hellman). Most modern systems such as Java 7 and later support these modes.
 
-Additionally, requests must be signed by using an access key ID and a secret access key that is associated with an AWS Identity and Access Management (IAM) principal. Or, you can use the [AWS Security Token Service](https://docs.aws.amazon.com//STS/latest/APIReference/) (AWS STS) to generate temporary security credentials to sign requests.
+Additionally, requests must be signed by using an access key ID and a secret access key that is associated with an AWS Identity and Access Management (IAM) principal. Or, you can use the [AWS Security Token Service](https://docs.aws.amazon.com/STS/latest/APIReference/) (AWS STS) to generate temporary security credentials to sign requests.
 
 Tag Editor does not support resource-based policies.
 

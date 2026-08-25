@@ -37,7 +37,6 @@ Apache Cassandra to Amazon DynamoDB
 ![The New application conversion project dialog box](http://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/images/applications-new-project.png)
 
 1. Add the following project information.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CHAP_Converting.App.Generic.html)
 
 1. Select **Don't cast bind variables to SQL types** to avoid conversion of bind variables types to SQL types. This option is available only for an Oracle to PostgreSQL conversion.

@@ -7,6 +7,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/doc-history.html
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [Support for AWS Glue version 6.0](#doc-history) | Added information about support for AWS Glue version 6.0. Features include Apache Spark update to 4.1.1, Scala 2.13, Python 3.13, Iceberg format version 3 with VARIANT data type, Spark Declarative Pipelines (SDP), real-time mode for streaming, Arrow-native Python UDFs, customer-managed Python virtual environments, and more. For more information, see [AWS Glue Release Notes](https://docs.aws.amazon.com/glue/latest/dg/release-notes.html) and [Migrating AWS Glue jobs to AWS Glue version 6.0](https://docs.aws.amazon.com/glue/latest/dg/migrating-version-60.html).  | August 12, 2026 |
 | [Update to the AWSGlueServiceNotebookRole AWS managed policy](#doc-history) | Added information about a minor update to the AWSGlueServiceNotebookRole AWS managed policy. For more information, see [AWS Glue updates to AWS managed policies](https://docs.aws.amazon.com/glue/latest/dg/security-iam-awsmanpol.html#security-iam-awsmanpol-updates). | June 1, 2026 |
 | [AWS Glue for Ray is no longer open to new customers.](#doc-history) | AWS Glue for Ray is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Glue for Ray end of support](https://docs.aws.amazon.com/glue/latest/dg/awsglue-ray-jobs-availability-change.html). | April 30, 2026 |
 | [AWS Glue for Ray will no longer be open to new customers starting April 30, 2026.](#doc-history) | AWS Glue for Ray will no longer be open to new customers starting April 30, 2026. If you would like to use AWS Glue for Ray, sign up prior to that date. Existing customers can continue to use the service as normal. For more information, see [AWS Glue for Ray end of support](https://docs.aws.amazon.com/glue/latest/dg/awsglue-ray-jobs-availability-change.html). | March 31, 2026 |
@@ -195,8 +196,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/doc-history.html
 <a name="WhatsNew.earlier-updates"></a>
 
 The following table describes the important changes in each release of the *AWS Glue Developer Guide* before January 2018.
-
-****
 
 | Change | Description | Date |
 | --- | --- | --- |

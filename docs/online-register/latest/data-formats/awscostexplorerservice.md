@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsc
 
 AWS Cost Explorer Service provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="ce-DescribeCostCategoryDefinition"></a>[DescribeCostCategoryDefinition](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_DescribeCostCategoryDefinition.html) | Retrieve descriptions such as the name, ARN, rules, definition, and effective dates of a Cost Category | Read |

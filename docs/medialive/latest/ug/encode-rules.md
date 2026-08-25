@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/encode-rules.html
 
  This table summarizes the rules for encodes for each output group. In the first column, find the output group that you want, then read across the row.
 
-****
-
 | Type of output group | Rule for video encodes | Rule for audio encodes | Rule for captions encodes |
 | --- | --- | --- | --- |
 | Archive | One or more video encodes. | Zero or more audio encodes. | Zero or more captions encodes. The captions are either embedded or object-style captions. |

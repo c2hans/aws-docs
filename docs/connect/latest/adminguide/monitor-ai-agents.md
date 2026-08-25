@@ -125,10 +125,10 @@ The following table describes each event type. Note that different event types c
 | EventType | Definition |
 | --- | --- |
 | TRANSCRIPT\_CREATE\_SESSION | Logged when a new AI agents session is created. This marks the beginning of a conversation. |
-| TRANSCRIPT\_INTENT\_TRIGGERING\_REFERENCE | Logged when a specific customer intent is detected in the conversation, which may trigger automated responses or workflows. |
+| TRANSCRIPT\_INTENT\_TRIGGERING\_REFERENCE | Logged when a specific customer intent is detected in the conversation, which might trigger automated responses or workflows. |
 | TRANSCRIPT\_LARGE\_LANGUAGE\_MODEL\_INVOCATION | Logged when a large language model (LLM) is invoked to generate responses or process conversation content. Records the inputs to and outputs from the LLM. |
 | TRANSCRIPT\_QUERY\_ASSISTANT | Logged when one of the following AI agents is invoked: AnswerRecommendation, CaseSummarization, EmailGenerativeAnswer, EmailOverview, EmailResponse, ManualSearch, NoteTaking. |
-| TRANSCRIPT\_RECOMMENDATION | Logged when the system provides a recommendation to an agent or customer, which may include knowledge articles, generated responses, or suggested actions. |
+| TRANSCRIPT\_RECOMMENDATION | Logged when the system provides a recommendation to an agent or customer, which might include knowledge articles, generated responses, or suggested actions. |
 | TRANSCRIPT\_RESULT\_FEEDBACK | Logged when feedback is provided about a search or query result's usefulness or relevance. |
 | TRANSCRIPT\_SELF\_SERVICE\_MESSAGE | Logged when a customer interacts with a SelfService AI agent |
 | TRANSCRIPT\_SESSION\_POLLED | Logged when the system detects an agent is connected to a session (A session is polled when a GetRecommendations API call has been made) |

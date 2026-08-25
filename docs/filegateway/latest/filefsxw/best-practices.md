@@ -43,7 +43,7 @@ If your gateway or data center becomes inaccessible for some reason, you can rec
 
 For File Gateway, you map a new file system to the FSx for Windows File Server that contains the data you want to recover.
 
-1. Create and activate a new File Gateway on an Amazon EC2 host. For more information, see [Deploy a default Amazon EC2 host for FSx File GatewayDeploy a customized Amazon EC2 host for FSx File Gateway](ec2-gateway-file.md).
+1. Create and activate a new File Gateway on an Amazon EC2 host. For more information, see [Deploy a default Amazon EC2 host for FSx File Gateway](ec2-gateway-file.md).
 
 1. Create a new file system on the EC2 gateway you created. For more information, see [Create an FSx for Windows File Server file system](https://docs.aws.amazon.com/filegateway/latest/filefsxw/create-file-system.html).
 

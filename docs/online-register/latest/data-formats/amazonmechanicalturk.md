@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon Mechanical Turk provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="mechanicalturk-GetAccountBalance"></a>[GetAccountBalance](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_GetAccountBalanceOperation.html) | The GetAccountBalance operation retrieves the amount of money in your Amazon Mechanical Turk account | Read |

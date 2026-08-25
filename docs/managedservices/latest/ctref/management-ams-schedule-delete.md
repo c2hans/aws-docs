@@ -14,8 +14,6 @@ Delete an existing schedule used in AMS Resource Scheduler.
 ## Change Type Details
 <a name="ct-3rk1nl1ufn5g3-MASd-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-3rk1nl1ufn5g3 |

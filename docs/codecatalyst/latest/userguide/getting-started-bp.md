@@ -9,7 +9,7 @@ Amazon CodeCatalyst is no longer open to new customers. Existing customers can c
 
 During the process of creating a blueprint, you can configure the blueprint and generate a preview of the project resources. Each custom blueprint is managed by a CodeCatalyst project, which contains a workflow by default for publishing to the space's blueprints catalog.
 
-While configuring your custom blueprint's details, you can also choose to store your blueprint's source code in a third-party repository, where you can still manage the custom blueprint and utilize the lifecycle management capabilities to keep your space's projects synchronized when the custom blueprint is modified. For more information, see [Add functionality to projects with extensions in CodeCatalystAdd functionality to projects with extensions](extensions.md) and [Working with lifecycle management as a blueprint author](lifecycle-management-dev.md).
+While configuring your custom blueprint's details, you can also choose to store your blueprint's source code in a third-party repository, where you can still manage the custom blueprint and utilize the lifecycle management capabilities to keep your space's projects synchronized when the custom blueprint is modified. For more information, see [Add functionality to projects with extensions in CodeCatalyst](extensions.md) and [Working with lifecycle management as a blueprint author](lifecycle-management-dev.md).
 
 If you already have a source repository with standardization and best practices in place, you can choose to convert that source repository into a custom blueprint. For more information, see [Converting source repositories to custom blueprints](convert-bp.md).
 
@@ -44,7 +44,7 @@ When you create a custom blueprint from your space's settings, a repository is c
 
 1. Under **Name your blueprint**, enter the name that you want to assign to your project and its associated resource names. The name must be unique within your space.
 
-1. (Optional) By default, the source code created by the blueprint is stored in a CodeCatalyst repository. Alternatively, you can choose to store the blueprint's source code in a third-party repository. For more information, see [Add functionality to projects with extensions in CodeCatalystAdd functionality to projects with extensions](extensions.md).
+1. (Optional) By default, the source code created by the blueprint is stored in a CodeCatalyst repository. Alternatively, you can choose to store the blueprint's source code in a third-party repository. For more information, see [Add functionality to projects with extensions in CodeCatalyst](extensions.md).
 
    Do one of the following depending on the third-party repository provider you want to use:
    + **GitHub repositories**: Connect a GitHub account.
@@ -83,7 +83,7 @@ If you're using a connection to a GitHub account, you must create a personal con
 
 If you didn't turn off the workflow generation for your custom blueprint, the workflow automatically begins to run when your blueprint is created. When the workflow run is complete, your custom blueprint is available to be added to your space's blueprints catalog by default. You can turn off publishing permissions if you don't want the latest blueprint version to be published automatically to your space. For more information, see [Setting publishing permissions for a custom blueprint](manage-permissions-bp.md) and [Running a workflow](workflows-working-runs.md).
 
-Since the publishing workflow called `blueprint-release` is created using a blueprint, the blueprint can be found as an applied blueprint in your project. For more information, see [Adding a blueprint in a project to integrate resources](apply-bp.md) and [Disassociating a blueprint from a project to stop updatesDisassociating a blueprint from a project](disassociate-bp.md).
+Since the publishing workflow called `blueprint-release` is created using a blueprint, the blueprint can be found as an applied blueprint in your project. For more information, see [Adding a blueprint in a project to integrate resources](apply-bp.md) and [Disassociating a blueprint from a project to stop updates](disassociate-bp.md).
 
 ## Step 2: Develop a custom blueprint with components
 <a name="getting-started-develop-bp"></a>
@@ -115,7 +115,7 @@ Create a Dev Environment in your CodeCatalyst project with a supported integrate
 
 1. Choose **Create**. While your Dev Environment is being created, the Dev Environment status column displays **Starting**, and the status column displays **Running** when the Dev Environment has been created.
 
-For more information, see [Write and modify code with Dev Environments in CodeCatalystWrite and modify code with Dev Environments](devenvironment.md).
+For more information, see [Write and modify code with Dev Environments in CodeCatalyst](devenvironment.md).
 
 **To develop your custom blueprint**
 

@@ -14,8 +14,6 @@ Run on-demand SSM patching on specified instances; either a list of instances or
 ## Change Type Details
 <a name="ct-3oy53m1qzl2s5-MPOr-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-3oy53m1qzl2s5 |

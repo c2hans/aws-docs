@@ -50,7 +50,6 @@ https://{{CloudFront distribution alternate domain name}}/{{Path to an S3 video}
 
 For example, **https://www.example.com/sample.mp4**. A custom domain name is simpler and more intuitive for your viewers to use.
 
-****
 To register a custom domain, see [Registering a new domain using Route 53](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-register.html) in the *Amazon Route 53 Developer Guide*.
 
 When you register a domain name with Route 53, Route 53 creates the hosted zone for you, which you will use later in this tutorial. This hosted zone is where you store information about how to route traffic for your domain, for example, to an Amazon EC2 instance or a CloudFront distribution.

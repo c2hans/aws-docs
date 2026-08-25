@@ -47,8 +47,6 @@ content-type: application/x-amz-json-1.0
 }
 ```
 
-****
-
 |  Name  |  Description  |  Required |
 | --- | --- | --- |
 |  TableName  | The name of the table containing the requested items. <br />Type: String |  Yes  |
@@ -99,8 +97,6 @@ content-length: 308
 }
 ```
 
-****
-
 |  Name  |  Description  |
 | --- | --- |
 | Items  | Item attributes meeting the query parameters.<br />Type: Map of attribute names to and their data types and values. |
@@ -110,8 +106,6 @@ content-length: 308
 
 ## Special errors
 <a name="API_Query_SpecialErrors"></a>
-
-****
 
 |  Error  |  Description  |
 | --- | --- |

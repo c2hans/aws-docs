@@ -25,7 +25,7 @@ In general, changes that you make outside the AWS Control Tower console to AWS C
 + Deleting an enrolled account *(Except a shared account in the Security OU.)*
 
 **Note**
-AWS Service Catalog handles changes differently than AWS Control Tower. AWS Service Catalog may create a change in governance posture when it reconciles your changes. For more information about updating a provisioned product, see [Updating Provisioned Products](https://docs.aws.amazon.com//servicecatalog/latest/userguide/enduser-update.html) in the AWS Service Catalog documentation.
+AWS Service Catalog handles changes differently than AWS Control Tower. AWS Service Catalog may create a change in governance posture when it reconciles your changes. For more information about updating a provisioned product, see [Updating Provisioned Products](https://docs.aws.amazon.com/servicecatalog/latest/userguide/enduser-update.html) in the AWS Service Catalog documentation.
 
 ## Referring to resources outside of AWS Control Tower
 <a name="ungoverned-resources"></a>
@@ -53,7 +53,7 @@ AWS Control Tower displays the names of OUs on the **Organization** page in the 
 
 **Renaming an enrolled account**
 
-Each AWS account has a display name that can be changed by the account's root user in the AWS Billing and Cost Management console. When you rename an account that's enrolled in AWS Control Tower, the name change is automatically reflected in AWS Control Tower. For more information about changing an account's name, see [Managing an AWS account](https://docs.aws.amazon.com//awsaccountbilling/latest/aboutv2/manage-account-payment.html#manage-account-payment-edit-user-name) in the *AWS Billing User Guide*.
+Each AWS account has a display name that can be changed by the account's root user in the AWS Billing and Cost Management console. When you rename an account that's enrolled in AWS Control Tower, the name change is automatically reflected in AWS Control Tower. For more information about changing an account's name, see [Managing an AWS account](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/manage-account-payment.html#manage-account-payment-edit-user-name) in the *AWS Billing User Guide*.
 
 ## Deleting the Security OU
 <a name="delete-security-ou"></a>

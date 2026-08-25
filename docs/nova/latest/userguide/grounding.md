@@ -124,4 +124,4 @@ To ensure your role can access Web Grounding on AWS Bedrock, you have two option
 If you enable the Web Grounding tool, you are responsible for your use, and any use by your end users, of output that incorporates grounded information. You will know when your output includes grounded information from citations or links to the source material. You must retain and display these citations and links in the output you provide to your end users.
 
 **Note**
-Web Grounding is an additional cost. For more information see [https://aws.amazon.com//bedrock/pricing/](https://aws.amazon.com//bedrock/pricing/)
+Web Grounding is an additional cost. For more information see [https://aws.amazon.com/bedrock/pricing/](https://aws.amazon.com/bedrock/pricing/)

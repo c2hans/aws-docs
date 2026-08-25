@@ -18,7 +18,7 @@ The following table describes the quotas on AWS Elemental MediaTailor ad inserti
 | --- | --- | --- |
 | Ad decision server (ADS) length | 25,000  | The maximum number of characters in an ad decision server (ADS) specification.  |
 | Ad decision server (ADS) redirects | 7 | The maximum depth of redirects that MediaTailor follows in VAST wrapper tags. MediaTailor gives up if there are additional redirects. |
-| Ad decision server (ADS) timeout | 3 | The maximum number of seconds that MediaTailor waits before timing out on an open connection to an ad decision server (ADS). When a connection times out due to no response from the ADS, MediaTailor is unable to fill the ad avail with ads. |
+| Ad decision server (ADS) timeout | 3 seconds (default) | The maximum number of seconds that MediaTailor waits before timing out on an open connection to an ad decision server (ADS). When a connection times out due to no response from the ADS, MediaTailor is unable to fill the ad avail with ads. This timeout is configurable through the Individual ADS request timeout setting (range: 250–6,000 ms). For more information, see [Advanced settings](configurations-create.md#configurations-advanced-settings). |
 | Ad Insertion Requests | 10,000 | The maximum requests per second to make for personalized manifests when performing server side ad insertion. Ad insertion handles incoming requests for manifests, session initialization, tracking data, and ad segments. This quota is [adjustable](https://console.aws.amazon.com/servicequotas/home/services/mediatailor/quotas). |
 | Configurations | 1,000 | The maximum number of configurations that MediaTailor allows.  |
 | Content origin length | 512  | The maximum number of characters in a content origin specification.  |

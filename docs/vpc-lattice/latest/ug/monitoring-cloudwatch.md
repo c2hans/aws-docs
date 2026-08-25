@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/ug/monitoring-cloudwa
 # CloudWatch metrics for Amazon VPC Lattice
 <a name="monitoring-cloudwatch"></a>
 
-Amazon VPC Lattice sends data related to your target groups and services to Amazon CloudWatch, and processes it into readable, near real-time metrics. These metrics are kept for 15 months, so that you can access historical information and gain a better perspective on how your web application or service is performing. You can also set alarms that watch for certain thresholds and send notifications or take actions when those thresholds are met. For more information, see the [Amazon CloudWatch User Guide](https://docs.aws.amazon.com//AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html).
+Amazon VPC Lattice sends data related to your target groups and services to Amazon CloudWatch, and processes it into readable, near real-time metrics. These metrics are kept for 15 months, so that you can access historical information and gain a better perspective on how your web application or service is performing. You can also set alarms that watch for certain thresholds and send notifications or take actions when those thresholds are met. For more information, see the [Amazon CloudWatch User Guide](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html).
 
 Amazon VPC Lattice uses a service-linked role in your AWS account to send metrics to Amazon CloudWatch. For more information, see [Using service-linked roles for Amazon VPC Lattice](using-service-linked-roles.md).
 
@@ -44,7 +44,7 @@ For information about each of the metrics and their dimensions, see [Target grou
 ## Target group metrics
 <a name="monitoring-cloudwatch-tg"></a>
 
-VPC Lattice automatically stores metrics related to target groups in the `AWS/VpcLattice` [Amazon CloudWatch namespace](https://docs.aws.amazon.com//AmazonCloudWatch/latest/monitoring/cloudwatch_concepts.html#Namespace). For more information about target groups, see [Target groups in VPC Lattice](target-groups.md).
+VPC Lattice automatically stores metrics related to target groups in the `AWS/VpcLattice` [Amazon CloudWatch namespace](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloudwatch_concepts.html#Namespace). For more information about target groups, see [Target groups in VPC Lattice](target-groups.md).
 
 **Dimensions**
 
@@ -72,7 +72,7 @@ To filter the metrics for target groups, use the following dimensions:
 ## Service metrics
 <a name="monitoring-cloudwatch-service"></a>
 
-VPC Lattice automatically stores metrics related to services in the `AWS/VpcLattice` [Amazon CloudWatch namespace](https://docs.aws.amazon.com//AmazonCloudWatch/latest/monitoring/cloudwatch_concepts.html#Namespace). For more information about services, see [Services in VPC Lattice](services.md).
+VPC Lattice automatically stores metrics related to services in the `AWS/VpcLattice` [Amazon CloudWatch namespace](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloudwatch_concepts.html#Namespace). For more information about services, see [Services in VPC Lattice](services.md).
 
 **Dimensions**
 

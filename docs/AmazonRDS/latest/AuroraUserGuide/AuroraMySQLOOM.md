@@ -151,7 +151,7 @@ If Performance Insights is enabled, you can use OS-level memory metrics to monit
 | os.swap.in | The amount of memory swapped in from disk, in kilobytes. |
 | os.swap.out | The amount of memory swapped out to disk, in kilobytes. |
 
-You can monitor `os.memory.outOfMemoryKillCount` to detect when the OS killed the database process due to out of memory. For the full list of OS counters, see [Performance Insights OS metrics](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PerfInsights_Counters.html#USER_PerfInsights_Counters.OS).
+You can monitor `os.memory.outOfMemoryKillCount` to detect when the OS killed the database process due to out of memory. For the full list of OS counters, see [Operating system counters](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PerfInsights_Counters.html#USER_PerfInsights_Counters.OS).
 
 ### Performance Schema
 <a name="AuroraMySQLOOM.monitoring.perfschema"></a>

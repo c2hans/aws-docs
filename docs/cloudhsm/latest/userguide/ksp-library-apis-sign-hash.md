@@ -35,7 +35,6 @@ If `pbSignature` is NULL, this stores the required buffer size, in bytes.
 
 `dwFlags` [in]
 Flags to modify the function's behavior. The allowed flags depend on your key type. Use one of these values:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/cloudhsm/latest/userguide/ksp-library-apis-sign-hash.html)
 
 ## Return Value
@@ -44,8 +43,6 @@ Flags to modify the function's behavior. The allowed flags depend on your key ty
 The function returns a status code to indicate success or failure.
 
 Common return codes include:
-
-****
 
 | Return code | Description |
 | --- | --- |

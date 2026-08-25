@@ -11,8 +11,8 @@ You can use IAM permissions to control whether users can list, view, create, or 
 You can't use resource-level permissions to restrict the resources that users can specify in a launch template when they create a launch template or launch template version. Therefore, make sure that only trusted administrators are granted permission to create launch templates and launch template versions.
 
 You must grant anyone that will use a launch template the permissions required to create and access the resources that are specified in the launch template. For example:
-+ To launch an instance from a shared private Amazon Machine Image (AMI), the user must have launch permission for the AMI.
-+ To create EBS volumes with tags from existing snapshots, the user must have read access to the snapshots, and permissions to create and tag volumes.
++ To launch an instance from a shared private Amazon Machine Image (AMI), the launch template user must have launch permission for the AMI.
++ To create EBS volumes with tags from existing snapshots, the launch template user must have read access to the snapshots, and permissions to create and tag volumes.
 
 **Topics**
 + [ec2:CreateLaunchTemplate](#permissions-for-launch-templates-create)

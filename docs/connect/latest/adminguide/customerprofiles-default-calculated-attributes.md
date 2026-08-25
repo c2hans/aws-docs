@@ -223,6 +223,35 @@ Connect Customer Customer Profiles provides out-of-the box default attributes ba
   }
 ```
 
+**Call count**
+
+```
+{
+    "CalculatedAttributeName": "_call_count",
+    "DisplayName": "Call count",
+    "Description": "Returns the number of distinct calls a customer has made in the past 7 days.",
+    "Statistic": "COUNT",
+    "Conditions": {
+      "Range": {
+        "Value": 7,
+        "Unit": "DAYS"
+      },
+      "ObjectCount": null,
+      "Threshold": null
+    },
+    "AttributeDetails": {
+      "Attributes": [
+        {
+          "Name": "contactId"
+        }
+      ],
+      "Expression": "{CTR.contactId}"
+    },
+    "Tags": {
+    }
+  }
+```
+
 ## Default profile calculated attribute
 <a name="customerprofiles-default-calculated-attributes-profile"></a>
 

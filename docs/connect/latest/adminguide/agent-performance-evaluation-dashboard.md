@@ -52,7 +52,7 @@ Ensure users are assigned the appropriate security profile permissions:
 ![Refresh icon and Add widget button in the dashboard header.](http://docs.aws.amazon.com/connect/latest/adminguide/images/agent-performance-dashboard-add-widget.png)
 ![Add widget dialog showing Performance evaluation category with six widget options.](http://docs.aws.amazon.com/connect/latest/adminguide/images/agent-performance-widgets.png)
 + **Save** the dashboard.
-+ Choose **Share**. **Publish** the dashboard to make it available to other users. You may set the share setting to **Read-only** to prevent others from making edits to the dashboard.
++ Choose **Share**. **Publish** the dashboard to make it available to other users. You might set the share setting to **Read-only** to prevent others from making edits to the dashboard.
 ![Share dashboard dialog with Read-only toggle, share link, and Publish toggle options.](http://docs.aws.amazon.com/connect/latest/adminguide/images/agent-performance-dashboard-share.png)
 
  You can **Share the dashboard link** for agents to access the dashboard within the Amazon Connect admin console. For agents to access the saved dashboard on the Connect agent workspace see: [Integrate a published dashboard into the agent workspace](integrate-published-dashboard.md).
@@ -221,7 +221,7 @@ Note that you can filter any dashboard widget containing evaluation metrics by t
 ## Agent hierarchy evaluation metrics
 <a name="agent-hierarchy-evaluation-metrics-table"></a>
 
-On this table, you can drill-down into avg. evaluation score and evaluations performed by agent hierarchy. You can configure your agent hierarchy to represent geographical locations, departments, teams, etc.
+On this table, you can drill-down into avg. evaluation score and evaluations performed by agent hierarchy. You can configure your agent hierarchy to represent geographical locations, departments, teams.
 
 ![Agent hierarchy evaluation metrics table.](http://docs.aws.amazon.com/connect/latest/adminguide/images/agent-hierarchy-evaluation-metrics-table.png)
 

@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/monitor-flow-p
 You can view near real-time and historical performance data directly in the flow designer to identify bottlenecks and optimize your published flows and modules. You can see aggregate traffic through each completed and in-progress blocks in the flow. This allows you to identify behavioral patterns of your customers or pinpoint where errors are being encountered.
 
 Following are a couple example use cases for this functionality:
-+ In an IVR experience, you can determine how often customers select specific options from a menu, where a menu configuration may be causing an error, or identify at which point in the flow customers are abandoning the experience.
++ In an IVR experience, you can determine how often customers select specific options from a menu, where a menu configuration might be causing an error, or identify at which point in the flow customers are abandoning the experience.
 + For step-by-step guides, you can track which guides customers and agents use most frequently and optimize their navigation paths.
 
 **Topics**

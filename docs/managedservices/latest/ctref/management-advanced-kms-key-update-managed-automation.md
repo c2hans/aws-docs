@@ -14,8 +14,6 @@ Request an update of a KMS Key.
 ## Change Type Details
 <a name="ct-3ovo7px2vsa6n-MAKu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-3ovo7px2vsa6n |

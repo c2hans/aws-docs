@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/cloudcontrolapi/latest/userguide/doc-his
 
 The following table describes the documentation releases for AWS Cloud Control API.
 
-For a complete list of resources that currently support AWS Cloud Control API, see [Resource types that support Cloud Control API](supported-resources.md). See also [Discovering resources with AWS Cloud Control APIResources that require additional information](resource-operations-list.md#resource-operations-list-containers).
+For a complete list of resources that currently support AWS Cloud Control API, see [Resource types that support Cloud Control API](supported-resources.md). See also [Discovering resources with AWS Cloud Control API](resource-operations-list.md#resource-operations-list-containers).
 
 | Change | Description | Date |
 | --- |--- |--- |

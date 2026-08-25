@@ -24,7 +24,7 @@ The following differences apply to Amazon DynamoDB:
 
 ## Documentation
 <a name="govcloud-ddb-docs"></a>
-+  [Amazon DynamoDB documentation](https://docs.aws.amazon.com/http://aws.amazon.com/documentation/dynamodb/)
++  [Amazon DynamoDB documentation](http://aws.amazon.com/documentation/dynamodb/)
 
 ## Export-controlled content
 <a name="govcloud-ddb-itar"></a>

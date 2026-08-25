@@ -14,8 +14,6 @@ Use to reboot an EC2 instance.
 ## Change Type Details
 <a name="ct-09qbhy7kvtxqw-MAEr-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-09qbhy7kvtxqw |

@@ -5,8 +5,6 @@ source_url: https://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/
 # Searchable encryption for multitenant databases
 <a name="searchable-encryption-multitenant"></a>
 
-****
-
 |  |
 | --- |
 | Our client-side encryption library was renamed to the AWS Database Encryption SDK. This developer guide still provides information on the [DynamoDB Encryption Client](legacy-dynamodb-encryption-client.md). |

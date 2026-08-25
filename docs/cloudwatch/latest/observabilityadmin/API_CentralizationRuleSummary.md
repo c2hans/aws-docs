@@ -68,6 +68,18 @@ Length Constraints: Minimum length of 1. Maximum length of 100.
 Pattern: `[0-9A-Za-z-_.#/]+`
 Required: No
 
+ ** TagPropagationFailureReason **   <a name="cwoa-Type-CentralizationRuleSummary-TagPropagationFailureReason"></a>
+The reason tag propagation is unhealthy for this rule. Only present when `TagPropagationStatus` is `Unhealthy`.
+Type: String
+Valid Values: `RoleNotAssumable | RoleLacksPermissions`
+Required: No
+
+ ** TagPropagationStatus **   <a name="cwoa-Type-CentralizationRuleSummary-TagPropagationStatus"></a>
+The health status of tag propagation for this rule. This status is independent of the overall `RuleHealth` for log delivery. Returns `Healthy` when the most recent tag-propagation attempt succeeded, or `Unhealthy` when the most recent attempt failed.
+Type: String
+Valid Values: `Healthy | Unhealthy`
+Required: No
+
 ## See Also
 <a name="API_CentralizationRuleSummary_SeeAlso"></a>
 

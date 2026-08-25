@@ -67,7 +67,7 @@ After running the CloudFormation template, you can finish building this architec
 ![CloudShell interface showing ap-southeast-1 environment with Open environment option displayed.](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/msk-dynamodb-cshell-1.png)
 ![Image showing a CloudShell environment with the fields you have to specify.](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/msk-dynamodb-cshell-2.png)
 
-   Once the CloudShell belonging to the Private Subnet has started, run the following command:
+   After the CloudShell belonging to the Private Subnet has started, run the following command:
 
    ```
    pip install boto3 kafka-python aws-msk-iam-sasl-signer-python
@@ -111,7 +111,7 @@ After running the CloudFormation template, you can finish building this architec
    python ./kafkaDataGen.py
    ```
 
-1. Check the CloudWatch metrics for the created Amazon MSK, Lambda, and DynamoDB resources, and verify the data stored in the `device_status `table using the DynamoDB Data Explorer to ensure all processes ran correctly. If each process is run without error, you can check that the test data written from CloudShell to Amazon MSK is also written to DynamoDB.
+1. Check the CloudWatch metrics for the created Amazon MSK, Lambda, and DynamoDB resources, and verify the data stored in the `device_status `table using the DynamoDB Data Explorer to make sure all processes ran correctly. If each process is run without error, you can check that the test data written from CloudShell to Amazon MSK is also written to DynamoDB.
 ![Image showing the DynamoDB console and how there are now items returned when you perform a scan.](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/msk-dynamodb-explore.png)
 
 1. When you're done with this example, delete the resources created in this tutorial. Delete the two CloudFormation stacks: `ForMSKTestS3` and `ForMSKTestVPC`. If the stack deletion completes successfully, all resources will be deleted.

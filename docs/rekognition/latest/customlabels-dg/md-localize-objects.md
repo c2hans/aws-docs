@@ -24,8 +24,6 @@ You can't use the Safari browser to add bounding boxes to images. For supported 
 
 Before you can add bounding boxes, you must add at least one label to the dataset. For more information, see [Add new labels (Console)](md-labels.md#md-add-new-labels).
 
-****
-
 **To add a bounding boxes to images (console)**
 
 1. Open the Amazon Rekognition console at [https://console.aws.amazon.com/rekognition/](https://console.aws.amazon.com/rekognition/).

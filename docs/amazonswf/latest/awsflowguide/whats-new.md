@@ -9,8 +9,6 @@ The following table describes the important changes to the documentation since t
 + **API version:** 2012-01-25
 + **Latest documentation update:** June 25, 2018
 
-****
-
 | Change | Description | Date Changed |
 | --- | --- | --- |
 | Update | Fixed an error in the `backoffCoefficient` description for `@ExponentialRetry`. See [@ExponentialRetry](annotations.md#annotations-exponentialretry). | June 25, 2018 |

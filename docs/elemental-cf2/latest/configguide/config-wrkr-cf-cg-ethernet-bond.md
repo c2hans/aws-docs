@@ -36,7 +36,6 @@ Before you begin this process, make sure that you've done the following:
 1. In the **Add Network Dialog** dialog, select **bond** as the device type. The dialog immediately expands to include more fields.
 
 1. Complete the fields as follows:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-cf2/latest/configguide/config-wrkr-cf-cg-ethernet-bond.html)
 
 1. Choose **Save**. The new device appears in the Network Devices list.

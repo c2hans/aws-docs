@@ -101,7 +101,7 @@ The following examples show how to use JSON Schema output format with structured
 <a name="json-schema-converse"></a>
 
 ##### View example
-<a name="w2aac15c15c37c15b3b5b3b1"></a>
+<a name="w2aac15c15c39c15b3b5b3b1"></a>
 
 ```
 {
@@ -137,7 +137,7 @@ The following examples show how to use JSON Schema output format with structured
 <a name="json-schema-invokemodel-claude"></a>
 
 ##### View example
-<a name="w2aac15c15c37c15b3b7b3b1"></a>
+<a name="w2aac15c15c39c15b3b7b3b1"></a>
 
 ```
 {
@@ -194,7 +194,7 @@ The following examples show how to use JSON Schema output format with structured
 <a name="json-schema-invokemodel-openweight"></a>
 
 ##### View example
-<a name="w2aac15c15c37c15b3b9b3b1"></a>
+<a name="w2aac15c15c39c15b3b9b3b1"></a>
 
 ```
 {
@@ -253,7 +253,7 @@ The following examples show how to use the strict field with tool use.
 <a name="strict-tool-converse"></a>
 
 ##### View example
-<a name="w2aac15c15c37c15b5b5b3b1"></a>
+<a name="w2aac15c15c39c15b5b5b3b1"></a>
 
 ```
 {
@@ -308,7 +308,7 @@ The following examples show how to use the strict field with tool use.
 <a name="strict-tool-invokemodel-claude"></a>
 
 ##### View example
-<a name="w2aac15c15c37c15b5b7b3b1"></a>
+<a name="w2aac15c15c39c15b5b7b3b1"></a>
 
 ```
 {
@@ -362,7 +362,7 @@ The following examples show how to use the strict field with tool use.
 <a name="strict-tool-invokemodel-openweight"></a>
 
 ##### View example
-<a name="w2aac15c15c37c15b5b9b3b1"></a>
+<a name="w2aac15c15c39c15b5b9b3b1"></a>
 
 ```
 {

@@ -19,8 +19,6 @@ Use the scroll bars to see the rest of the table.
 
 Amazon SageMaker AI API Operations and Required Permissions for Actions
 
-****
-
 | Amazon SageMaker AI API Operations | Required Permissions (API Actions) | Resources |
 | --- | --- | --- |
 | `[ DeleteEarthObservationJob](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospatial_DeleteEarthObservationJob.html)` | `sagemaker-geospatial:DeleteEarthObservationJob` | `arn:aws:sagemaker-geospatial:{{region}}:{{account-id}}:earth-observation-job/{{id}}` |

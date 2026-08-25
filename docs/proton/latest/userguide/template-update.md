@@ -19,7 +19,7 @@ Edit a template description and display name using the console as described in t
 
 **In the list of templates.**
 
-1. In the [AWS Proton console](https://console.aws.amazon.com//proton/), choose **(Environment or Service) Templates**.
+1. In the [AWS Proton console](https://console.aws.amazon.com/proton/), choose **(Environment or Service) Templates**.
 
 1. In the list of templates, choose the radio button to the left of the template that you want to update the description or display name for.
 
@@ -31,7 +31,7 @@ Change the status of a minor version of a template using the console to publish 
 
 **In the (environment or service) template detail page.**
 
-1. In the [AWS Proton console](https://console.aws.amazon.com//proton/), choose **(Environment or Service) templates**.
+1. In the [AWS Proton console](https://console.aws.amazon.com/proton/), choose **(Environment or Service) templates**.
 
 1. In the list of templates, choose the name of the template that you want to update the status of a minor version from **Draft** to **Published**.
 

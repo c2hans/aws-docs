@@ -17,4 +17,4 @@ Amazon Nova customization doesn't support the following capabilities on SageMake
   Merging multiple models is not currently supported. This means that creating multiple LoRA adapters and perform a multi-merge operation with the base model is not available.
 + **Supported observability tool**
 
-  [TensorBoard](https://www.tensorflow.org/tensorboard) and [MLflow](https://mlflow.org/) are the only supported observability tools to view metrics for SageMaker training jobs. For more information, see [TensorBoard in SageMaker](https://docs.aws.amazon.com//sagemaker/latest/dg/tensorboard-on-sagemaker.html) and [MLflow in SageMaker](https://docs.aws.amazon.com//sagemaker/latest/dg/mlflow.html).
+  [TensorBoard](https://www.tensorflow.org/tensorboard) and [MLflow](https://mlflow.org/) are the only supported observability tools to view metrics for SageMaker training jobs. For more information, see [TensorBoard in SageMaker](https://docs.aws.amazon.com/sagemaker/latest/dg/tensorboard-on-sagemaker.html) and [MLflow in SageMaker](https://docs.aws.amazon.com/sagemaker/latest/dg/mlflow.html).

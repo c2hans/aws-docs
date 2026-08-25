@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-cre
 # Creating an AWS AppConfig freeform configuration profile (command line)
 <a name="appconfig-creating-free-form-configuration-and-profile-create-commandline"></a>
 
-The following procedure describes how to use the AWS CLI (on Linux or Windows) or AWS Tools for PowerShell to create an AWS AppConfig freeform configuration profile. If you prefer, you can use AWS CloudShell to run the commands listed below. For more information, see [What is AWS CloudShell?](https://docs.aws.amazon.com//cloudshell/latest/userguide/welcome.html) in the *AWS CloudShell User Guide*.
+The following procedure describes how to use the AWS CLI (on Linux or Windows) or AWS Tools for PowerShell to create an AWS AppConfig freeform configuration profile. If you prefer, you can use AWS CloudShell to run the commands listed below. For more information, see [What is AWS CloudShell?](https://docs.aws.amazon.com/cloudshell/latest/userguide/welcome.html) in the *AWS CloudShell User Guide*.
 
 **Note**
 For freeform configurations hosted in the AWS AppConfig hosted configuration store, you specify `hosted` for the location URI.
@@ -63,6 +63,6 @@ For freeform configurations hosted in the AWS AppConfig hosted configuration sto
 **Important**
 Note the following important information.
 If you created a configuration profile for AWS CodePipeline, then you must create a pipeline in CodePipeline that specifies AWS AppConfig as the *deploy provider*. You don't need to perform [Deploying feature flags and configuration data in AWS AppConfig](deploying-feature-flags.md). However, you must configure a client to receive application configuration updates as described in [Retrieving configuration data without AWS AppConfig Agent](about-data-plane.md). For information about creating a pipeline that specifies AWS AppConfig as the deploy provider, see [Tutorial: Create a Pipeline that Uses AWS AppConfig as a Deployment Provider](https://docs.aws.amazon.com/codepipeline/latest/userguide/tutorials-AppConfig.html) in the *AWS CodePipeline User Guide*.
-If you created a configuration in the AWS AppConfig hosted configuration store, you can create new versions of the configuration by using the [CreateHostedConfigurationVersion](https://docs.aws.amazon.com//appconfig/2019-10-09/APIReference/API_CreateHostedConfigurationVersion.html) API operations. To view AWS CLI details and sample commands for this API operation, see [create-hosted-configuration-version](https://docs.aws.amazon.com/cli/latest/reference/appconfig/create-hosted-configuration-version.html) in the *AWS CLI Command Reference*.
+If you created a configuration in the AWS AppConfig hosted configuration store, you can create new versions of the configuration by using the [CreateHostedConfigurationVersion](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_CreateHostedConfigurationVersion.html) API operations. To view AWS CLI details and sample commands for this API operation, see [create-hosted-configuration-version](https://docs.aws.amazon.com/cli/latest/reference/appconfig/create-hosted-configuration-version.html) in the *AWS CLI Command Reference*.
 
 Proceed to [Deploying feature flags and configuration data in AWS AppConfig](deploying-feature-flags.md).

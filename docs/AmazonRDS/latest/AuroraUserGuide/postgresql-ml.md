@@ -269,7 +269,7 @@ The inputs and outputs of this function are as follows.
 + `model_id` – Identifier of the model.
 + `content_type` – The type of the request to Bedrock’s model.
 + `accept_type` – The type of the response to expect from Bedrock’s model. Usually application/JSON for most of the models.
-+ `model_input` – Prompts; a specific set of inputs to the model in the format as specified by content\_type. For more information on the request format/structure the model accepts, see [Inference parameters for foundation models](https://docs.aws.amazon.com//bedrock/latest/userguide/model-parameters.html).
++ `model_input` – Prompts; a specific set of inputs to the model in the format as specified by content\_type. For more information on the request format/structure the model accepts, see [Inference parameters for foundation models](https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters.html).
 + `model_output` – The Bedrock model's output as text.
 
 The following example shows how to invoke a Anthropic Claude 2 model for Bedrock using invoke\_model.
@@ -301,7 +301,7 @@ aws_bedrock.invoke_model_get_embeddings(
 The inputs and outputs of this function are as follows.
 + `model_id` – Identifier of the model.
 + `content_type` – The type of the request to Bedrock’s model. Here, the accept\_type is set to default value `application/json`.
-+ `model_input` – Prompts; a specific set of inputs to the Model in the format as specified by content\_type. For more information on the request format/structure the Model accepts, see [Inference parameters for foundation models](https://docs.aws.amazon.com//bedrock/latest/userguide/model-parameters.html).
++ `model_input` – Prompts; a specific set of inputs to the Model in the format as specified by content\_type. For more information on the request format/structure the Model accepts, see [Inference parameters for foundation models](https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters.html).
 + `json_key` – Reference to the field to extract the embedding from. This may vary if the embedding model changes.
 + `model_output` – The Bedrock model's output as an array of embeddings having 16 bit decimals.
 

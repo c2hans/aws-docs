@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-iceberg-use-
 
 Starting with Amazon EMR version 6.6.0, you can use Iceberg with your Trino cluster.
 
-In this tutorial, you use the AWS CLI to work with Iceberg on an Amazon EMR Trino cluster. To use the console to create a cluster with Iceberg installed, follow the steps in [Build an Apache Iceberg data lake using Amazon Athena, Amazon EMR, and AWS Glue](https://aws.amazon.com/blogs//big-data/build-an-apache-iceberg-data-lake-using-amazon-athena-amazon-emr-and-aws-glue/).
+In this tutorial, you use the AWS CLI to work with Iceberg on an Amazon EMR Trino cluster. To use the console to create a cluster with Iceberg installed, follow the steps in [Build an Apache Iceberg data lake using Amazon Athena, Amazon EMR, and AWS Glue](https://aws.amazon.com/blogs/big-data/build-an-apache-iceberg-data-lake-using-amazon-athena-amazon-emr-and-aws-glue/).
 
 ## Create an Iceberg cluster
 <a name="emr-iceberg-create-cluster-trino"></a>

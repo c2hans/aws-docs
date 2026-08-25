@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon CodeWhisperer provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="codewhisperer-GenerateRecommendations"></a>[GenerateRecommendations](https://docs.aws.amazon.com/codewhisperer/latest/userguide/security_iam_service-with-iam.html) | Invoke GenerateRecommendations on CodeWhisperer | Read |

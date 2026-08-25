@@ -18,8 +18,6 @@ By using the functions in `rdsadmin_adrci_util`, you can list and package proble
 
 To perform diagnostic tasks, use functions in the Amazon RDS package `rdsadmin.rdsadmin_adrci_util`. The package has the following common parameters.
 
-****
-
 | Parameter name | Data type | Valid values | Default | Required | Description |
 | --- | --- | --- | --- | --- | --- |
 | `incident_id` | number | A valid incident ID or null  | Null | No | If the value is null, the function shows all incidents. If the value isn't null and represents a valid incident ID, the function shows the specified incident.  |
@@ -39,8 +37,6 @@ This function uses the following common parameters:
 If you specify `incident_id` and `problem_id`, then `incident_id` overrides `problem_id`. For more information, see [Common parameters for diagnostic procedures](#Appendix.Oracle.CommonDBATasks.CommonDiagParameters).
 
 This function uses the following additional parameter.
-
-****
 
 | Parameter name | Data type | Valid values | Default | Required | Description |
 | --- | --- | --- | --- | --- | --- |
@@ -247,8 +243,6 @@ You can also download the log file. For more information, see [Downloading a dat
 You can use the Amazon RDS function `rdsadmin.rdsadmin_adrci_util.show_adrci_tracefile` to list trace files under the trace directory and all incident directories under the current ADR home. You can also show the contents of trace files and incident trace files.
 
 This function uses the following parameter.
-
-****
 
 | Parameter name | Data type | Valid values | Default | Required | Description |
 | --- | --- | --- | --- | --- | --- |

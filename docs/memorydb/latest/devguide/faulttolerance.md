@@ -27,8 +27,6 @@ During this time your application can continue reading and writing using the oth
 **MemoryDB Multi-AZ**
 If Multi-AZ is activated on your MemoryDB clusters, a failed primary will be detected and replaced automatically.
 
-****
-
 1. MemoryDB detects the primary node failure.
 
 1. MemoryDB fails over to a replica after ensuring it is consistent with the failed primary.

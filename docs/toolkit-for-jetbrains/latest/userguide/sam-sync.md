@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/s
 
 AWS Serverless Application Model (AWS SAM) `sam sync` is an AWS SAM-CLI-command deployment process that automatically identifies changes made to your serverless applications, then chooses the best way to build and deploy those changes to the AWS Cloud. If you've only made changes to your application code without changing the infrastructure, AWS SAM Sync updates your application without redeploying your CloudFormation stack.
 
-For additional information about `sam sync` and AWS SAM CLI commands, see the [AWS SAM CLI command reference](https://docs.aws.amazon.com//serverless-application-model/latest/developerguide/serverless-sam-cli-command-reference.html) topic in the *AWS Serverless Application Model User Guide*.
+For additional information about `sam sync` and AWS SAM CLI commands, see the [AWS SAM CLI command reference](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-command-reference.html) topic in the *AWS Serverless Application Model User Guide*.
 
 The following sections describe how to get started working with AWS SAM Sync.
 
@@ -30,7 +30,7 @@ To get started working with AWS SAM Sync, complete the following procedure.
 
 **Note**
 Make sure that you're AWS Region is set to the location associated with your serverless application.
-To learn more about changing your AWS region from the AWS Toolkit for JetBrains, see the [Switch between AWS Regions](https://docs.aws.amazon.com//toolkit-for-jetbrains/latest/userguide/key-tasks.html#key-tasks-switch-region) topic in this User Guide.
+To learn more about changing your AWS region from the AWS Toolkit for JetBrains, see the [Switch between AWS Regions](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/key-tasks.html#key-tasks-switch-region) topic in this User Guide.
 
 1. From your serverless application project in the **Project** tool window, open the context menu for (right-click) your `template.yaml` file.
 

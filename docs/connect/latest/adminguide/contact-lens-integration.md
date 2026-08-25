@@ -27,6 +27,7 @@ Before you start setting up conversational analytics integration, check that you
 + Verify your Connect Customer instance is created in a [supported AWS Region](regions.md#contactlens_region). Make sure your external voice system can connect to the Region.
 + Make sure the external device that initiates the SIPREC session and the voice system that is used for the call are supported. For a list of supported systems, see `ContactCenterSystemTypes` and `SessionBorderControllerTypes` in the [PutVoiceConnectorExternalSystemsConfiguration](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_PutVoiceConnectorExternalSystemsConfiguration.html) in the Amazon Chime API. Usually the SIPREC session is a Session Border Controller (SBC) and the voice system is your contact center.
 + Verify you have SIPREC support or the ability to add SIPREC to the source system that will send the SIPREC replica call audio to conversational analytics.
++ The maximum call duration that can be streamed into Connect Customer is 3 hours and 45 minutes. Audio beyond this duration is not streamed or analyzed.
 
 ## Set up steps
 <a name="contact-lens-integration-steps"></a>

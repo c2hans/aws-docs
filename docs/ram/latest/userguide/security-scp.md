@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/ram/latest/userguide/security-scp.html
 # Example service control policies for AWS Organizations and AWS RAM
 <a name="security-scp"></a>
 
-AWS RAM supports service control policies (SCPs). SCPs are policies that you attach to elements in an organization to manage permissions within that organization. An SCP applies to all AWS accounts [under the element to which you attach the SCP](https://docs.aws.amazon.com//organizations/latest/userguide/orgs_manage_policies_inheritance_auth.html). SCPs offer central control over the maximum available permissions for all accounts in your organization. They can help you to ensure your AWS accounts stay within your organization’s access control guidelines. For more information, see [ Service control policies](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_type-auth.html) in the *AWS Organizations User Guide*.
+AWS RAM supports service control policies (SCPs). SCPs are policies that you attach to elements in an organization to manage permissions within that organization. An SCP applies to all AWS accounts [under the element to which you attach the SCP](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_inheritance_auth.html). SCPs offer central control over the maximum available permissions for all accounts in your organization. They can help you to ensure your AWS accounts stay within your organization’s access control guidelines. For more information, see [ Service control policies](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_type-auth.html) in the *AWS Organizations User Guide*.
 
 ## Prerequisites
 <a name="scp-prereqs"></a>

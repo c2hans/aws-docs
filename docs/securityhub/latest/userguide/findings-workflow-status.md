@@ -67,7 +67,7 @@ To change the workflow status of one or more findings, choose your preferred met
 ------
 #### [ Security Hub CSPM API ]
 
-Use the [BatchUpdateFindings](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_BatchUpdateFindings.html) operation. Provide both the finding ID and the ARN of the product that generated the finding. You can get these details by using the [GetFindings](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_GetFindings.html) operation.
+Use the [BatchUpdateFindings](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateFindings.html) operation. Provide both the finding ID and the ARN of the product that generated the finding. You can get these details by using the [GetFindings](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetFindings.html) operation.
 
 ------
 #### [ AWS CLI ]

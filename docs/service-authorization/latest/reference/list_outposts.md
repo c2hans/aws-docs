@@ -24,8 +24,6 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_outposts-actions-as-permissions).
 
-****
-
 - **   CancelCapacityTask  **
   - **IAM action:**  [outposts:CancelCapacityTask](#list_outposts-action-CancelCapacityTask)
   - **Condition key:**
@@ -47,6 +45,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
 - **   CreateOutpost  **
   - **IAM action:**  [outposts:CreateOutpost](#list_outposts-action-CreateOutpost)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [outposts:TagResource](#list_outposts-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+
+- **   CreatePrivateConnectivityConfig  **
+  - **IAM action:**  [outposts:CreatePrivateConnectivityConfig](#list_outposts-action-CreatePrivateConnectivityConfig)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
 
 - **   CreateQuote  **
   - **IAM action:**  [outposts:CreateQuote](#list_outposts-action-CreateQuote)
@@ -126,6 +130,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   GetOutpostSupportedInstanceTypes  **
   - **IAM action:**  [outposts:GetOutpostSupportedInstanceTypes](#list_outposts-action-GetOutpostSupportedInstanceTypes)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   GetPrivateConnectivityConfig  **
+  - **IAM action:**  [outposts:GetPrivateConnectivityConfig](#list_outposts-action-GetPrivateConnectivityConfig)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
@@ -278,8 +288,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
 <a name="list_outposts-actions-as-permissions"></a>
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
-
-****
 
 - **   [CancelCapacityTask](https://docs.aws.amazon.com/outposts/latest/APIReference/API_CancelCapacityTask.html)  **
   - **Description:** Grants permission to cancel a capacity task
@@ -499,8 +507,8 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [StartConnection](https://docs.aws.amazon.com/outposts/latest/APIReference/API_StartConnection.html)  **
   - **Description:** Grants permission to start a connection for your Outpost server
-  - **Resource types (\*required):**
-  - **Condition keys:**
+  - **Resource types (\*required):** [outpost\*](#list_outposts-resource-outpost)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_outposts-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
 - **   [TagResource](https://docs.aws.amazon.com/outposts/latest/APIReference/API_TagResource.html)  **
@@ -550,8 +558,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
 
-****
-
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
 |  [outpost](https://docs.aws.amazon.com/outposts/latest/userguide/what-is-outposts.html)  | arn:${Partition}:outposts:${Region}:${Account}:outpost/${OutpostId} | [aws:ResourceTag/${TagKey}](#list_outposts-aws_ResourceTag___TagKey_) |
@@ -561,8 +567,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_outposts-policy-keys"></a>
 
 AWS Outposts defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

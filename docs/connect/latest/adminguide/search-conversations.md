@@ -57,7 +57,7 @@ When searching by date, you can search up to 8 weeks at a time.
 ![The contact search page, the filters section, the add filter dropdown, the Words or phrases option.](http://docs.aws.amazon.com/connect/latest/adminguide/images/contact-lens-search-words-phrases.png)
 
 1. In the **Used by** section, choose whose part of the conversation you want to search. Note the following:
-   + **System** applies to chat, where the participant may be a Lex bot or prompt.
+   + **System** applies to chat, where the participant might be a Lex bot or prompt.
    + To search for words or phrases that are used by all participants, select **Agent**, **Customer**, **System**.
    + If no boxes are selected, it means search for words or phrases used by any of the participants.
 

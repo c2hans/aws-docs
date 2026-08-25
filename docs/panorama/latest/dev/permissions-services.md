@@ -8,8 +8,6 @@ End of support notice: On May 31, 2026, AWS will end support for AWS Panorama. A
 <a name="permissions-services"></a>
 
 AWS Panorama uses other AWS services to manage the AWS Panorama Appliance, store data, and import application resources. A service role gives a service permission to manage resources or interact with other services. When you sign in to the AWS Panorama console for the first time, you create the following service roles:
-
-****
 + **AWSServiceRoleForAWSPanorama** – Allows AWS Panorama to manage resources in AWS IoT, AWS Secrets Manager, and AWS Panorama.
 
   Managed policy: [AWSPanoramaServiceLinkedRolePolicy](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/aws-service-role/AWSPanoramaServiceLinkedRolePolicy)
@@ -102,8 +100,6 @@ For more information on these conditions, and security best practices when servi
 <a name="permissions-services-otherservices"></a>
 
 AWS Panorama creates or accesses resources in the following services:
-
-****
 + [AWS IoT](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awsiot.html) – Things, policies, certificates, and jobs for the AWS Panorama Appliance
 + [Amazon S3](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazons3.html) – Access points for staging application models, code, and configurations.
 + [Secrets Manager](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awssecretsmanager.html) – Short-term credentials for the AWS Panorama Appliance.

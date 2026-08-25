@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon Lex provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="lex-GetBot"></a>[GetBot](https://docs.aws.amazon.com/lex/latest/dg/API_GetBot.html) | Returns information for a specific bot. In addition to the bot name, the bot version or alias is required | Read |

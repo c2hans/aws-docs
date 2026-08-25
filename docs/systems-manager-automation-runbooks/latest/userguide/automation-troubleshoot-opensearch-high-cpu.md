@@ -14,8 +14,8 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
  The `AWSSupport-TroubleshootOpenSearchHighCPU` runbook helps to troubleshoot high CPU utilization in the Amazon OpenSearch Service domain.
 
  The runbook performs the following steps:
-+  Runs the [DescribeDomain](https://docs.aws.amazon.com//opensearch-service/latest/APIReference/API_DescribeDomain.html) API against the provided Amazon OpenSearch Service domain to get the cluster metadata.
-+  Checks whether the Amazon OpenSearch Service domain is public or Amazon VPC-based and with the help of CloudFormation, creates a public or [Amazon VPC-based](https://docs.aws.amazon.com//opensearch-service/latest/developerguide/vpc.html) AWS Lambda function.
++  Runs the [DescribeDomain](https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_DescribeDomain.html) API against the provided Amazon OpenSearch Service domain to get the cluster metadata.
++  Checks whether the Amazon OpenSearch Service domain is public or Amazon VPC-based and with the help of CloudFormation, creates a public or [Amazon VPC-based](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/vpc.html) AWS Lambda function.
 +  The Lambda function fetches diagnostic data from the Amazon OpenSearch Service domains.
 +  Uses an AWS Step Functions state machine to orchestrate multiple Lambda function executions to gather more comprehensive data.
 +  Stores the collected data in an Amazon CloudWatch log group for 24 hours by default.
@@ -86,10 +86,10 @@ The `LambdaExecutionRole` parameter requires the following actions to successful
 + `logs:CreateLogStream`
 + `logs:PutLogEvents`
 
-The Lambda execution role grants the function permission to access AWS services and resources required by this runbook. For more information, see [Lambda execution role](https://docs.aws.amazon.com//lambda/latest/dg/lambda-intro-execution-role.html).
+The Lambda execution role grants the function permission to access AWS services and resources required by this runbook. For more information, see [Lambda execution role](https://docs.aws.amazon.com/lambda/latest/dg/lambda-intro-execution-role.html).
 
 **Note**
- The `ec2:DescribeNetworkInterfaces`, `ec2:CreateNetworkInterface`, and `ec2:DeleteNetworkInterface` are only required if your OpenSearch Service cluster is [Amazon VPC-based](https://docs.aws.amazon.com//opensearch-service/latest/developerguide/vpc.html) to allow the Lambda function to create and manage the Amazon VPC network interfaces. For more information, see [Connecting outbound networking to resources in a Amazon VPC](https://docs.aws.amazon.com//lambda/latest/dg/configuration-vpc.html#vpc-permissions) and [Lambda execution role](https://docs.aws.amazon.com//lambda/latest/dg/lambda-intro-execution-role.html).
+ The `ec2:DescribeNetworkInterfaces`, `ec2:CreateNetworkInterface`, and `ec2:DeleteNetworkInterface` are only required if your OpenSearch Service cluster is [Amazon VPC-based](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/vpc.html) to allow the Lambda function to create and manage the Amazon VPC network interfaces. For more information, see [Connecting outbound networking to resources in a Amazon VPC](https://docs.aws.amazon.com/lambda/latest/dg/configuration-vpc.html#vpc-permissions) and [Lambda execution role](https://docs.aws.amazon.com/lambda/latest/dg/lambda-intro-execution-role.html).
 
 The `LambdaInvocationRoleForStepFunctions` parameter grants the permissions for AWS Step Functions state machine to invoke the Lambda function. The following is an example IAM policy that grants Step Functions permission to invoke the Lambda function that fetches diagnostic data from the OpenSearch Service domain. For more information, see [Creating a state machine IAM role ](https://docs.aws.amazon.com/step-functions/latest/dg/procedure-create-iam-role.html) in AWS Step Functions Developer Guide.
 
@@ -143,7 +143,7 @@ Follow these steps to configure the automation:
 
      The number of data samples to collect from the Amazon OpenSearch Service domain. By default, 5 data sample are collected. You can collect up to 10 samples and the Lambda function will be invoked for each sample collection.
 
-1. If you have enabled [fine-grained access control](https://docs.aws.amazon.com//opensearch-service/latest/developerguide/fgac.html) on an OpenSearch Service cluster, make sure that the `LambdaExecutionRole` role arn is mapped to a role with at least `cluster_monitor` permission.
+1. If you have enabled [fine-grained access control](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/fgac.html) on an OpenSearch Service cluster, make sure that the `LambdaExecutionRole` role arn is mapped to a role with at least `cluster_monitor` permission.
 ![Permissions tab showing Cluster permissions section with cluster_monitor permission selected.](http://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/images/awssupport-troubleshoot-opensearch-high-cpu_cluster_permissions.png)
 ![Backend roles section showing a Lambda execution role ARN with Remove button and Map option.](http://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/images/awssupport-troubleshoot-opensearch-high-cpu_backend_roles.png)
 
@@ -193,9 +193,9 @@ Follow these steps to configure the automation:
 
 Systems Manager Automation
 + [Run this Automation (console)](https://console.aws.amazon.com/systems-manager/automation/execute/AWSSupport-TroubleshootOpenSearchHighCPU)
-+ [Run an automation](https://docs.aws.amazon.com//systems-manager/latest/userguide/automation-working-executing.html)
-+ [Setting up an Automation](https://docs.aws.amazon.com//systems-manager/latest/userguide/automation-setup.html)
++ [Run an automation](https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-working-executing.html)
++ [Setting up an Automation](https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-setup.html)
 + [Support Automation Workflows landing page](https://aws.amazon.com/premiumsupport/technology/saw/)
 
 AWS service documentation
-+ Refer to[Troubleshooting Amazon OpenSearch Service](https://docs.aws.amazon.com//opensearch-service/latest/developerguide/handling-errors.html) for more information
++ Refer to[Troubleshooting Amazon OpenSearch Service](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/handling-errors.html) for more information

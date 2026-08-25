@@ -9,6 +9,11 @@ This guide documents the new AWS Wickr administration console, released on March
 
 To help you keep track of the ongoing updates and improvements to Wickr, we publish release notices that describe recent changes.
 
+## August 2026
+<a name="august-2026-updates"></a>
++ **Non-SSO device sync** - Users with password-based (non-SSO) accounts can now transfer their account and message history when signing in on a new device. The sync flow supports QR code scanning and manual code entry across desktop and mobile platforms. Previously, device sync was only available for SSO-configured accounts.
++ **Need Help link** - A help link is now available on the sign-in and registration screens across all platforms, making it easier for users to access support resources during onboarding.
+
 ## June 2026
 <a name="june-2026-updates"></a>
 + **Session Timeout** - Admins can now configure an inactivity timeout that automatically locks the Wickr client after a specified period. Users are prompted to re-authenticate to resume their session.

@@ -11,10 +11,10 @@ AWS Control Tower accomplishes logging of actions and events automatically, thro
 
 AWS Control Tower sets up a new CloudTrail trail when you set up a landing zone. It is an *organization-level trail*, which means that it logs all events for the management account and all member accounts in the organization. This feature relies on *trusted access* to give the management account permissions to create a trail on every member account.
 
-For more information about AWS Control Tower and CloudTrail organization trails, see [Creating a trail for an organization](https://docs.aws.amazon.com//awscloudtrail/latest/userguide/creating-trail-organization.html).
+For more information about AWS Control Tower and CloudTrail organization trails, see [Creating a trail for an organization](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/creating-trail-organization.html).
 
 **Note**
-In AWS Control Tower releases before landing zone version 3.0, AWS Control Tower created a member account trail in each account. When you update to release 3.0, your CloudTrail trail becomes an organization trail. For best practices when moving between trails, see [Best practices for changing trails](https://docs.aws.amazon.com//awscloudtrail/latest/userguide/creating-trail-organization.html#creating-an-organizational-trail-best-practice) in the *CloudTrail User Guide*.
+In AWS Control Tower releases before landing zone version 3.0, AWS Control Tower created a member account trail in each account. When you update to release 3.0, your CloudTrail trail becomes an organization trail. For best practices when moving between trails, see [Best practices for changing trails](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/creating-trail-organization.html#creating-an-organizational-trail-best-practice) in the *CloudTrail User Guide*.
 
 When you enroll an account into AWS Control Tower, your account is governed by the AWS CloudTrail trail for the AWS Control Tower organization. If you have an existing deployment of a CloudTrail trail in that account, you may see duplicate charges unless you delete the existing trail for the account before you enroll it in AWS Control Tower.
 

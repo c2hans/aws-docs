@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon DevOps Guru provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="devops-guru-DescribeAccountHealth"></a>[DescribeAccountHealth](https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_DescribeAccountHealth.html) | View the health of operations in your AWS account | Read |

@@ -33,6 +33,8 @@ A single exposure finding contains issues identified in multiple remediation top
   + [The Amazon RDS DB cluster has deletion protection disabled](#rds-cluster-misconfiguration-db-cluster-deletion-protection-disabled)
   + [The Amazon RDS DB instance uses the default port for the database engine](#rds-instance-default-port-in-use)
   + [The Amazon RDS DB instance is not covered by a backup plan](#rds-instance-not-in-backup-plan)
++ [Sensitive data traits for Amazon RDS DB instances](#sensitive-data)
+  + [The Amazon RDS DB instance contains sensitive data](#sensitive-data-present)
 
 ## Misconfiguration traits for Amazon RDS instances and clusters
 <a name="rds-instance-cluster-misconfiguration"></a>
@@ -175,3 +177,34 @@ Take one or more of the following actions to address this exposure:
 
 **Remediation: Create and assign a backup plan for your DB instance**
  In the exposure finding, choose the resource link. This opens the affected DB instance in the Amazon RDS console. Consider what backup frequency, retention period, and lifecycle rules are best for your applications.
+
+## Sensitive data traits for Amazon RDS DB instances
+<a name="sensitive-data"></a>
+
+ Here are the sensitive data traits for Amazon RDS DB instances and suggested remediation steps.
+
+### The Amazon RDS DB instance contains sensitive data
+<a name="sensitive-data-present"></a>
+
+ A data security scan has confirmed that sensitive records are present on the Amazon RDS DB instance. An integrated data security product sets this trait when it inspects the contents of the DB instance and identifies records that require protection.
+
+ The presence of sensitive data raises the impact of every other weakness on the same DB instance. A network path or a permissive access configuration that would otherwise expose application data instead exposes regulated or confidential records. A threat actor who reaches the DB instance can query and copy those records in bulk and retain them outside your environment. The threat actor can also use any recovered credentials to authenticate to other systems. Following security best practices, we recommend restricting network and identity access to Amazon RDS DB instances that store sensitive records, and encrypting those records at rest and in transit.
+
+Sensitive data can include:
++ Credentials – such as passwords, access keys, and connection strings
++ Personally identifiable information
++ Financial information – such as account numbers and payment card data
++ Confidential content requiring protection
+
+ Removing the sensitive records is the only way to clear this trait. If your workload requires the DB instance to store sensitive data, the following security best practices reduce the risk of exposure.
+
+**Review the sensitive data on the DB instance**
+ In the exposure finding, open the resource with the hyperlink. This opens the affected DB instance. Note the DB instance identifier, and record the VPC security groups listed under **Connectivity & security**. Review the data security finding that reported the sensitive records to determine which databases, schemas, and tables contain them.
+
+ Based on the type of sensitive data discovered, implement the appropriate security controls:
++  **Restrict inbound network access** – In the Amazon RDS console, choose **Databases**, select the DB instance, and choose **Connectivity & security**. Open each attached VPC security group and review its inbound rules. Replace any rule that allows the database port from `0.0.0.0/0` or `::/0` with the specific CIDR ranges or security group IDs that your applications use. For more information, see [Controlling access with security groups](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.RDSSecurityGroups.html) in the *Amazon RDS User Guide*.
++  **Remove public accessibility** – In the Amazon RDS console, select the DB instance, choose **Modify**, and under **Connectivity** set **Public access** to **Not publicly accessible**. Place the DB instance in private subnets that have no route to an internet gateway. Reach it from your applications through the VPC, AWS Direct Connect, or a VPN connection. For more information, see [Working with a DB instance in a VPC](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_VPC.WorkingWithRDSInstanceinaVPC.html) in the *Amazon RDS User Guide*.
++  **Limit who can authenticate to the database** – Grant each application and user only the database privileges required for its function. Revoke read access to the tables that contain sensitive records from any database user that does not need it. Use IAM database authentication so that IAM identities and short-lived tokens control access instead of long-lived database passwords. For more information, see [IAM database authentication](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.IAMDBAuth.html) in the *Amazon RDS User Guide*.
++  **Encrypt the sensitive records at rest** – In the Amazon RDS console, select the DB instance and choose the **Configuration** tab to see whether the DB instance uses encryption. You cannot enable encryption at rest on an existing unencrypted DB instance. To encrypt its data, create a snapshot of the DB instance. Copy the snapshot and select an AWS KMS key for the copy, then restore the encrypted snapshot copy to a new DB instance. Repoint your applications at the new endpoint, and delete the unencrypted DB instance and its snapshots. For more information, see [Encrypting Amazon RDS resources](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.Encryption.html) in the *Amazon RDS User Guide*.
++  **Require encryption in transit** – Configure your database clients to connect with SSL/TLS using the Amazon RDS certificate bundle. Enforce encrypted connections on the DB instance through the parameter that your database engine provides for that purpose. For more information, see [Using SSL/TLS to encrypt a connection to a DB instance or cluster](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.SSL.html) in the *Amazon RDS User Guide*.
++  **Monitor access to the DB instance** – Publish the database engine logs to Amazon CloudWatch Logs, and review them for connections from unexpected sources and for queries against the tables that contain sensitive records. For more information, see [Monitoring Amazon RDS log files](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_LogAccess.html) in the *Amazon RDS User Guide*.

@@ -8,14 +8,14 @@ source_url: https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-ef
 Amazon EFS provides file storage for use with Amazon EC2 instances. The service is designed to be highly scalable, highly available, and highly durable. The service manages all the file storage infrastructure for you, meaning that you can avoid the complexity of deploying, patching, and maintaining complex file system configurations.
 
 ## Region availability
-<a name="_region_availability"></a>
+<a name="region-availability"></a>
 
-This service is available in the following AWS GovCloud (US) Regions:
-+  AWS GovCloud (US-West)
+Amazon Elastic File System (EFS) is available in the following AWS GovCloud (US) Regions:
 +  AWS GovCloud (US-East)
++  AWS GovCloud (US-West)
 
-## How Amazon Elastic File System differs
-<a name="govcloud-efs-diffs"></a>
+## How Amazon Elastic File System (EFS) differs
+<a name="feature-diffs"></a>
 
 There are no differences for this service.
 

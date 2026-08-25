@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/flows-guardrail
 
 Amazon Bedrock Flows integrates with Amazon Bedrock Guardrails to let you identify and block or filter unwanted content in your flow. To learn how to apply guardrails to supported node types in a flow, see the following table:
 
-****
-
 | Node type | Console | API |
 | --- | --- | --- |
 | Prompt node | When you [create](flows-create.md) or [update](flows-modify.md) a flow, select the prompt node and specify the guardrail in the Configure section. | When you define the prompt node in the nodes field in a [CreateFlow](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateFlow.html) or [UpdateFlow](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_UpdateFlow.html) request, include a guardrailConfiguration field in the [PromptFlowNodeConfiguration](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_PromptFlowNodeConfiguration.html). |

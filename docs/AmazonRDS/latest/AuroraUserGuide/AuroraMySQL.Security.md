@@ -97,8 +97,6 @@ MySQL Error 3159 (HY000): Connections using insecure transport are prohibited wh
 
 Aurora MySQL supports Transport Layer Security (TLS) versions 1.0, 1.1, 1.2, and 1.3. Starting in Aurora MySQL version 3.04.0 and higher, you can use the TLS 1.3 protocol to secure your connections. The following table shows the TLS support for Aurora MySQL versions.
 
-****
-
 | Aurora MySQL version | TLS 1.0 | TLS 1.1 | TLS 1.2 | TLS 1.3 | Default |
 | --- | --- | --- | --- | --- | --- |
 | Aurora MySQL version 2 | Deprecated | Deprecated | Supported | Not supported | TLS 1.2 |

@@ -26,7 +26,7 @@ As an AWS Marketplace seller, you can list AMI-based products delivered to AWS M
 ## Building and testing your Image Builder component
 <a name="build-and-test-ib-component"></a>
 
-Build and test your component on Image Builder. For instructions, refer to [Develop custom components for your Image Builder image](https://docs.aws.amazon.com//imagebuilder/latest/userguide/create-custom-components.html) in the *Image Builder User Guide*. When creating your component using Image Builder, ensure that you do the following:
+Build and test your component on Image Builder. For instructions, refer to [Develop custom components for your Image Builder image](https://docs.aws.amazon.com/imagebuilder/latest/userguide/create-custom-components.html) in the *Image Builder User Guide*. When creating your component using Image Builder, ensure that you do the following:
 + The component and all of its underlying dependencies, such as an Amazon Simple Storage Service (Amazon S3) bucket, secrets, or parameters, must be created in the US East (N. Virginia) (`us-east-1`) AWS Region.
 + Include supported architecture and any software dependencies in the component description.
 + Test your component in your AWS account by creating an [image pipeline](https://docs.aws.amazon.com/imagebuilder/latest/userguide/start-build-image-pipeline.html) and deploying the AMI created by the pipeline.

@@ -35,8 +35,8 @@ You'll need your AWS account and AWS IoT console to complete this tutorial.
 Be sure you can use the MQTT client to subscribe and publish to a topic. You'll use the MQTT client to test your new rule in this procedure.
 +
 
-**Reviewed the [Amazon DynamoDB](https://docs.aws.amazon.com//amazondynamodb/latest/developerguide/Introduction.html) overview**
-If you've not used DynamoDB before, review [Getting Started with DynamoDB](https://docs.aws.amazon.com//amazondynamodb/latest/developerguide/GettingStartedDynamoDB.html) to become familiar with the basic concepts and operations of DynamoDB.
+**Reviewed the [Amazon DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html) overview**
+If you've not used DynamoDB before, review [Getting Started with DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GettingStartedDynamoDB.html) to become familiar with the basic concepts and operations of DynamoDB.
 
 ## Step 1: Create the DynamoDB table for this tutorial
 <a name="iot-ddb-rule-ddb-table"></a>
@@ -48,7 +48,7 @@ In this tutorial, you'll create a DynamoDB table with these attributes to record
 
 **To create the DynamoDB table for this tutorial**
 
-1. Open the [DynamoDB console](https://console.aws.amazon.com//dynamodb/home), and then choose **Create table**.
+1. Open the [DynamoDB console](https://console.aws.amazon.com/dynamodb/home), and then choose **Create table**.
 
 1. In **Create table**:
 
@@ -97,7 +97,7 @@ In this rule, you'll also use a couple of [Substitution templates](iot-substitut
 
 **To create the AWS IoT rule to send data to the DynamoDB table**
 
-1. Open [the Rules hub of the AWS IoT console](https://console.aws.amazon.com//iot/home#/rulehub). Or, you can open the AWS IoT homepage within the AWS Management Console and navigate to **Message routing>Rules**.
+1. Open [the Rules hub of the AWS IoT console](https://console.aws.amazon.com/iot/home#/rulehub). Or, you can open the AWS IoT homepage within the AWS Management Console and navigate to **Message routing>Rules**.
 
 1. To start creating your new rule in **Rules**, choose **Create rule**.
 
@@ -176,11 +176,11 @@ Make sure that you choose DynamoDB and not DynamoDBv2 as the rule action.
 
 To test the new rule, you'll use the MQTT client to publish and subscribe to the MQTT messages used in this test.
 
-Open the [MQTT client in the AWS IoT console](https://console.aws.amazon.com//iot/home#/test) in a new window. This will let you edit the rule without losing the configuration of your MQTT client. The MQTT client does not retain any subscriptions or message logs if you leave it to go to another page in the console. You'll also want a separate console window open to the [DynamoDB Tables hub in the AWS IoT console](https://console.aws.amazon.com//dynamodb/home#tables:) to view the new entries that your rule sends.
+Open the [MQTT client in the AWS IoT console](https://console.aws.amazon.com/iot/home#/test) in a new window. This will let you edit the rule without losing the configuration of your MQTT client. The MQTT client does not retain any subscriptions or message logs if you leave it to go to another page in the console. You'll also want a separate console window open to the [DynamoDB Tables hub in the AWS IoT console](https://console.aws.amazon.com/dynamodb/home#tables:) to view the new entries that your rule sends.
 
 **To use the MQTT client to test your rule**
 
-1. In the [MQTT client in the AWS IoT console](https://console.aws.amazon.com//iot/home#/test), subscribe to the input topic, `device/+/data`.
+1. In the [MQTT client in the AWS IoT console](https://console.aws.amazon.com/iot/home#/test), subscribe to the input topic, `device/+/data`.
 
    1. In the MQTT client, choose **Subscribe to a topic**.
 
@@ -214,7 +214,7 @@ Open the [MQTT client in the AWS IoT console](https://console.aws.amazon.com//io
 
 1. Check to see the row in the DynamoDB table that your rule created.
 
-   1. In the [DynamoDB Tables hub in the AWS IoT console](https://console.aws.amazon.com//dynamodb/home#tables:), choose **wx\_data**, and then choose the **Items** tab.
+   1. In the [DynamoDB Tables hub in the AWS IoT console](https://console.aws.amazon.com/dynamodb/home#tables:), choose **wx\_data**, and then choose the **Items** tab.
 
       If you're already on the **Items** tab, you might need to refresh the display by choosing the refresh icon in the upper-right corner of the table's header.
 

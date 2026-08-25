@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PerfInsi
 # Turn on the Performance Schema for Amazon RDS for MariaDB or MySQL
 <a name="USER_PerfInsights.EnableMySQL.RDS"></a>
 
-Assume that Performance Insights is turned on for your DB instance or Multi-AZ DB cluster but isn't currently managing the Performance Schema. If you want to allow Performance Insights to manage the Performance Schema automatically, complete the following steps.
+Assume that Database Insights is turned on for your DB instance or Multi-AZ DB cluster but isn't currently managing the Performance Schema. If you want to allow Database Insights to manage the Performance Schema automatically, complete the following steps.
 
 **To configure the Performance Schema for automatic management**
 
@@ -31,4 +31,4 @@ Assume that Performance Insights is turned on for your DB instance or Multi-AZ D
 **Important**
 Whenever you turn the Performance Schema on or off, make sure to reboot the DB instance or Multi-AZ DB cluster.
 
-For more information about modifying instance parameters, see [Modifying parameters in a DB parameter group in Amazon RDS](USER_WorkingWithParamGroups.Modifying.md). For more information about the dashboard, see [Analyzing metrics with the Performance Insights dashboard](USER_PerfInsights.UsingDashboard.md). For more information about the MySQL performance schema, see [MySQL Performance Schema](https://dev.mysql.com/doc/refman/8.0/en/performance-schema.html) (for 8.0) and [MySQL Performance Schema](https://dev.mysql.com/doc/refman/8.4/en/performance-schema.html) (for 8.4) in the MySQL documentation.
+For more information about modifying instance parameters, see [Modifying parameters in a DB parameter group in Amazon RDS](USER_WorkingWithParamGroups.Modifying.md). For more information about the dashboard, see [Database Insights](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_DatabaseInsights.html). For more information about the MySQL performance schema, see [MySQL Performance Schema](https://dev.mysql.com/doc/refman/8.0/en/performance-schema.html) (for 8.0) and [MySQL Performance Schema](https://dev.mysql.com/doc/refman/8.4/en/performance-schema.html) (for 8.4) in the MySQL documentation.

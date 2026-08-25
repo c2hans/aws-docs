@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon Lookout for Metrics provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="lookoutmetrics-DescribeAlert"></a>[DescribeAlert](https://docs.aws.amazon.com/lookoutmetrics/latest/api/API_DescribeAlert.html) | Get details about an alert | Read |

@@ -36,7 +36,7 @@ The predictive algorithm calls ahead based on certain performance metrics. This 
 
 When you need to reduce answer speeds, use progressive.
 
-A progressive mode campaign dials the next phone number in a list after an agent completes the previous call. If there are multiple campaigns targeting the same set of agents, then each of them may end up dialing contacts for the same agents. There are two ways to prevent this:
+A progressive mode campaign dials the next phone number in a list after an agent completes the previous call. If there are multiple campaigns targeting the same set of agents, then each of them might end up dialing contacts for the same agents. There are two ways to prevent this:
 + Change the bandwidth allocation of the campaigns so the sum of the bandwidth allocation of each of those campaigns is less than or equal to 100%. This greatly reduces the likelihood of multiple campaigns dialing contacts for the same agents, but it does not completely eliminate it.
 + If a 1:1 guarantee is required, then have an exclusive set of agents for each campaign. To do this, assign the campaign's queue to a single routing profile. That routing profile must only have this campaign's queue, must only allow voice calls, and no inbound contacts should be put into this queue.
 
@@ -53,8 +53,8 @@ You use agentless mode to send high-volume personalized voice notifications, app
 <a name="agent-staffing-vc"></a>
 
 When call recipients answer a call and hear silence in return, they often hang up. For predictive mode, use the following best practices to help reduce that silence:
-+ Ensure that you have enough agents logged in to your call queue. For more information about staffing, see [Forecasting & agent scheduling in Connect Customer](forecasting-capacity-planning-scheduling.md).
-+ Consider using Connect Customer's machine learning services.
++ Make sure that you have enough agents logged in to your call queue. For more information about staffing, see [Forecasting & agent scheduling in Connect Customer](forecasting-capacity-planning-scheduling.md).
++ Consider using the machine learning services of Connect Customer.
   + [Forecasting](forecasting.md). Analyze and predict contact volume based on historical data. What will future demand—the contact volume and handle time—look like? Connect Customer forecasting provides accurate and auto-generated forecasts that are automatically updated daily.
   + [Capacity planning](capacity-planning.md). Predict how many agents your contact center will require. Optimize plans by scenarios, service level goals, and metrics, such as shrinkage.
   + [Scheduling](scheduling.md). Generate agent schedules for day-to-day workloads that are flexible, and meet business and compliance requirements. Offer agents flexible schedules and work-life balance. How many agents are needed in each shift? Which agent works in which slot?
@@ -64,7 +64,7 @@ When call recipients answer a call and hear silence in return, they often hang u
 ## Connection latency best practices
 <a name="call-latency-oc"></a>
 
-Successful outbound calling campaigns avoid silent calls, the period of silence after a person answers a call and before an agent comes on the line. Legal requirements to limit the number of silent or abandoned calls and keep the called party informed may also apply. You can configure Connect Customer in different ways to reduce call connection delays.
+Successful outbound calling campaigns avoid silent calls, the period of silence after a person answers a call and before an agent comes on the line. Legal requirements to limit the number of silent or abandoned calls and keep the called party informed might also apply. You can configure Connect Customer in different ways to reduce call connection delays.
 
 **Topics**
 + [Outbound agent-staffed calling](#outbound-agent-staffed-oc)
@@ -127,9 +127,9 @@ These options apply to soft phones only.
 <a name="workstations-oc"></a>
 
 The following best practices can help optimize agent efficiency by ensuring adequate hardware and network resources.
-+ Ensure that agent workstations meet the minimum requirements. For more information, see [Agent headset and workstation requirements for using the Contact Control Panel (CCP)](ccp-agent-hardware.md).
-+ Ensure that the agent has the CCP or agent workspace open and present on their desktop. This reduces the time spent bringing the screen to the front before greeting the caller.
-+ Ensure that agents use a wired network connection. This mitigates potential wireless network latency.
++ Make sure that agent workstations meet the minimum requirements. For more information, see [Agent headset and workstation requirements for using the Contact Control Panel (CCP)](ccp-agent-hardware.md).
++ Make sure that the agent has the CCP or agent workspace open and present on their desktop. This reduces the time spent bringing the screen to the front before greeting the caller.
++ Make sure that agents use a wired network connection. This mitigates potential wireless network latency.
 + If possible, minimize the geographic distance between the AWS Region that hosts your Connect Customer instance and the agents that interact with the outbound campaigns. The greater the geographic distance between your agents and the hosting Region, the higher the possible latency.
 
 **Note**
@@ -159,17 +159,17 @@ Forty to 60-percent of calls to consumers go to voicemail. AMD helps eliminate t
 ### The pros, cons, and best uses of Answering Machine Detection
 <a name="amd-pros-cons-oc"></a>
 
-The use of Answering Machine Detection (AMD) may not comply with telemarketing laws. You are responsible for implementing AMD in a manner that is compliant with applicable laws, and you should always consult your legal advisor regarding your specific use case.
+The use of Answering Machine Detection (AMD) might not comply with telemarketing laws. You are responsible for implementing AMD in a manner that is compliant with applicable laws, and you should always consult your legal advisor regarding your specific use case.
 
 Use case 1: AMD is on and leaving automatic voicemails
 + **Pros** – Agents primarily interact with live calls 95-percent of the time, maximizing talk time. AMD can leave automatic voicemails if a voicemail is detected.
 + **Cons** – The technology leaves a voicemail 50-percent to 60-percent of the time due to false positives due to the large variety of answering machine types. Also, AMD can irritate customers because it adds a short delay to live calls.
-+ **Best uses** – Calling consumers during the day when you may get a large quantity of answering machines and it's not urgent to ensure every call receives a voicemail.
++ **Best uses** – Calling consumers during the day when you might get a large quantity of answering machines and it's not urgent to ensure every call receives a voicemail.
 
 Use case 2: AMD is on but not leaving automatic voicemails
 + **Pros** – Agents primarily interact with live calls 95-percent of the time, maximizing talk time.
 + **Cons** – Cannot leave any voicemails. Adds a delay to live calls which can annoy customers.
-+ **Best uses** – Calling consumers during the day when you may get a large quantity of voicemails and you don't want to leave any voicemails.
++ **Best uses** – Calling consumers during the day when you might get a large quantity of voicemails and you don't want to leave any voicemails.
 
 Use case 3: AMD is off and agents can leave manual voicemails
 + **Pros** – Voicemails can be left 100-percent of the time.

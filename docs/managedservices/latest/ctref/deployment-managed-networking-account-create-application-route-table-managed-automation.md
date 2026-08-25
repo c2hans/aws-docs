@@ -14,8 +14,6 @@ Create a custom AWS Transit Gateway (TGW) route table for the application accoun
 ## Change Type Details
 <a name="ct-1urj94c3hdfu5-DMNc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1urj94c3hdfu5 |

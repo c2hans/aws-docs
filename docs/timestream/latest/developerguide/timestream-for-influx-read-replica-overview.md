@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/timestream/latest/developerguide/timestream-for-influx-read-replica-overview.html
 ---
 
-For similar capabilities to Amazon Timestream for LiveAnalytics, consider Amazon Timestream for InfluxDB. It offers simplified data ingestion and single-digit millisecond query response times for real-time analytics. Learn more [here](https://docs.aws.amazon.com//timestream/latest/developerguide/timestream-for-influxdb.html).
+For similar capabilities to Amazon Timestream for LiveAnalytics, consider Amazon Timestream for InfluxDB. It offers simplified data ingestion and single-digit millisecond query response times for real-time analytics. Learn more [here](https://docs.aws.amazon.com/timestream/latest/developerguide/timestream-for-influxdb.html).
 
 # Overview of Amazon Timestream for InfluxDB read replica clusters
 <a name="timestream-for-influx-read-replica-overview"></a>
@@ -29,7 +29,7 @@ Using a read replica cluster might make sense in a variety of scenarios, includi
 ## How read replicas work
 <a name="timestream-for-influx-how-rr-work"></a>
 
-To create a read replica cluster, Amazon Timestream for InfluxDB uses InfluxData’s licensed read replica add-ons. The add-on subscription is activated via the AWS Marketplace, directly from the Amazon Timestream management console. For more details, see [Read replica licensing through AWS MarketplaceRead replica licensing terminology](timestream-for-influx-rr-licensing.md).
+To create a read replica cluster, Amazon Timestream for InfluxDB uses InfluxData’s licensed read replica add-ons. The add-on subscription is activated via the AWS Marketplace, directly from the Amazon Timestream management console. For more details, see [Read replica licensing through AWS Marketplace](timestream-for-influx-rr-licensing.md).
 
 Read replicas are billed as standard DB instances at the same rates as the DB instance type used for each node in your cluster, plus the cost of InfluxData’s licensed add-on. The cost of the add-on is billed in instance-hours via the AWS Marketplace. You aren't charged for the data transfer incurred in replicating data between the source DB instance and a read replica within the same AWS Region.
 
@@ -39,8 +39,6 @@ The read replica functions as a dedicated DB instance, exclusively accepting rea
 
 ## Characteristics of Timestream for InfluxDB read replicas
 <a name="timestream-for-influx-rr-characteristics"></a>
-
-****
 
 | Feature or behavior | Timestream for InfluxDB |
 | --- | --- |
@@ -56,8 +54,6 @@ A read replica is created with the same instance and storage type as the primary
 
 **Instance types**
 
-****
-
 | Instance class | vCPU | Memory (GiB) | Storage type | Network bandwidth (Gbps) |
 | --- | --- | --- | --- | --- |
 | db.influx.medium | 1 | 8 | Influx IOPS Included | 10 |
@@ -71,8 +67,6 @@ A read replica is created with the same instance and storage type as the primary
 | db.influx.24xlarge | 96 | 768 | Influx IOPS Included | 40 |
 
 **Storage options**
-
-****
 
 | Timestream for InfluxDB DB cluster storage | Source DB instance storage allocation | Included IOPS |
 | --- | --- | --- |

@@ -51,7 +51,7 @@ If you have configured custom actions, then you can send selected results to a c
 
 **To view and take action on insight results (API, AWS CLI)**
 
-To view insight results, use the [>GetInsightResults](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_GetInsightResults.html) operation of the Security Hub CSPM API. If you use the AWS CLI, run the [get-insight-results](https://docs.aws.amazon.com/cli/latest/reference/securityhub/get-insight-results.html) command.
+To view insight results, use the [>GetInsightResults](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetInsightResults.html) operation of the Security Hub CSPM API. If you use the AWS CLI, run the [get-insight-results](https://docs.aws.amazon.com/cli/latest/reference/securityhub/get-insight-results.html) command.
 
 To identify the insight to return results for, you need the insight ARN. To obtain the insight ARNs for custom insights, use the [`GetInsights`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetInsights.html) API operation or the [get-insight-results](https://docs.aws.amazon.com/cli/latest/reference/securityhub/get-insight-results.html) command.
 

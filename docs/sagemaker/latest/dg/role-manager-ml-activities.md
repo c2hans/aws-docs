@@ -12,8 +12,6 @@ ML activities are common AWS tasks related to machine learning with SageMaker AI
 
 Amazon SageMaker Role Manager provides predefined permissions for the following ML activities:
 
-****
-
 | **ML activity** | **Description** |
 | --- | --- |
 | Access Required AWS Services | Permissions to access Amazon S3, Amazon ECR, Amazon CloudWatch, and Amazon EC2. Required for execution roles for jobs and endpoints. |

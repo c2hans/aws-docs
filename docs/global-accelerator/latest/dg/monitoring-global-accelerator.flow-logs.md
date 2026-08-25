@@ -265,8 +265,6 @@ The Version 1.0 format does not include the VPC identifier, `vpc_id`. The Versio
 
 The following table describes the fields of a flow log record.
 
-****
-
 | Field | Description |
 | --- | --- |
 | `version` | The flow logs version. |

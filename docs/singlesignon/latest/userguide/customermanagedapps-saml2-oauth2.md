@@ -88,8 +88,6 @@ AWS adds scopes to IAM Identity Center for supported AWS services. The following
 #### Access scopes supported by the IAM Identity Center OIDC service when registering a public client
 <a name="supported-access-scopes"></a>
 
-****
-
 | Scope | Description | Services supported by |
 | --- | --- | --- |
 | sso:account:access | Access IAM Identity Center managed accounts and permission sets. | IAM Identity Center |

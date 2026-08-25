@@ -14,8 +14,6 @@ Create a managed AWS landing zone developer mode account and a VPC with up to 10
 ## Change Type Details
 <a name="ct-38xcr0q86k9lh-DMMc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-38xcr0q86k9lh |

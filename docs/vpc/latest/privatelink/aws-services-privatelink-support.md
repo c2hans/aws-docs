@@ -739,7 +739,7 @@ Choose the link in the **AWS service** column to see the documentation for servi
 - **AWS re:Post Private**
   - com.amazonaws.{{region}}.repostspace
 
-- **[Recycle Bin](https://docs.aws.amazon.com//ebs/latest/userguide/rbin-vpcendpoints.html)**
+- **[Recycle Bin](https://docs.aws.amazon.com/ebs/latest/userguide/rbin-vpcendpoints.html)**
   - com.amazonaws.{{region}}.rbin
   - com.amazonaws.{{region}}.rbin-fips
 
@@ -957,7 +957,7 @@ Choose the link in the **AWS service** column to see the documentation for servi
 - ** [AWS X-Ray](https://docs.aws.amazon.com/xray/latest/devguide/xray-security-vpc-endpoint.html) **
   - com.amazonaws.{{region}}.xray
 
-- ** [Amazon Managed Service for Apache Flink](https://docs.aws.amazon.com//managed-flink/latest/java/vpc-internet.html) **
+- ** [Amazon Managed Service for Apache Flink](https://docs.aws.amazon.com/managed-flink/latest/java/vpc-internet.html) **
   - com.amazonaws.{{region}}.kinesisanalytics
   - com.amazonaws.{{region}}.kinesisanalytics-fips
 

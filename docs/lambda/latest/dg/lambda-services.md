@@ -39,8 +39,6 @@ The easiest way to create a trigger is to use the Lambda console. When you creat
 
 The following table lists services that can invoke Lambda functions.
 
-****
-
 | Service | Method of invocation |
 | --- | --- |
 | [Amazon Managed Streaming for Apache Kafka](with-msk.md) | [Event source mapping](invocation-eventsourcemapping.md) |

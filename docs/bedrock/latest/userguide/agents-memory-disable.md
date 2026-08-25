@@ -28,6 +28,6 @@ To learn how to disable memory, choose the tab for your preferred method, and th
 ------
 #### [ API ]
 
-To disable memory, send a [UpdateAgent](https://docs.aws.amazon.com//bedrock/latest/APIReference/API_agent_UpdateAgent.html) request (see link for request and response formats and field details) with an [Agents for Amazon Bedrock build-time endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#bra-bt). Send the request without specifying the `memoryConfiguration` structure. This will disassociate the memory from the agent.
+To disable memory, send a [UpdateAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_UpdateAgent.html) request (see link for request and response formats and field details) with an [Agents for Amazon Bedrock build-time endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#bra-bt). Send the request without specifying the `memoryConfiguration` structure. This will disassociate the memory from the agent.
 
 ------

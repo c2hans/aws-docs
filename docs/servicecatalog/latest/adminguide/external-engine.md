@@ -63,8 +63,6 @@ The Lambda function must be named `ServiceCatalogExternalParameterParser`.
 }
 ```
 
-****
-
 | **Field** | **Type** | **Required** | **Description** |
 | --- | --- | --- | --- |
 | artifact | object | Yes | Details for the artifact to be parsed. |
@@ -87,8 +85,6 @@ The Lambda function must be named `ServiceCatalogExternalParameterParser`.
     ]
 }
 ```
-
-****
 
 | **Field** | **Type** | **Required** | **Description** |
 | --- | --- | --- | --- |
@@ -141,8 +137,6 @@ Service Catalog sends all Provision requests to an Amazon SQS queue in your acco
     ]
 }
 ```
-
-****
 
 | **Field** | **Type** | **Required** | **Description** |
 | --- | --- | --- | --- |
@@ -208,8 +202,6 @@ Service Catalog sends all Update requests to an Amazon SQS queue in your account
 }
 ```
 
-****
-
 | **Field** | **Type** | **Required** | **Description** |
 | --- | --- | --- | --- |
 | token | string | Yes | The token that identifies this operation. The token must be returned to Service Catalog to notify of execution results. |
@@ -255,8 +247,6 @@ Service Catalog sends all Terminate requests to an Amazon SQS queue in your acco
     }
 }
 ```
-
-****
 
 | **Field** | **Type** | **Required** | **Description** |
 | --- | --- | --- | --- |

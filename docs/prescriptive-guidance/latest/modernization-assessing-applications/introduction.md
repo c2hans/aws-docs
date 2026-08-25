@@ -13,9 +13,9 @@ This guide describes the modernization readiness assessment process, including s
 
 The guide is part of a content series that covers the application modernization approach recommended by AWS. The series also includes:
 + [Phased approach to modernizing applications in the AWS Cloud](https://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-phased-approach/)
-+ [Decomposing monoliths into microservices](https://docs.aws.amazon.com//prescriptive-guidance/latest/modernization-decomposing-monoliths/welcome.html)
-+ [Integrating microservices by using AWS serverless services](https://docs.aws.amazon.com//prescriptive-guidance/latest/modernization-integrating-microservices/welcome.html)
-+ [Enabling data persistence in microservices](https://docs.aws.amazon.com//prescriptive-guidance/latest/modernization-data-persistence/welcome.html)
++ [Decomposing monoliths into microservices](https://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-decomposing-monoliths/welcome.html)
++ [Integrating microservices by using AWS serverless services](https://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-integrating-microservices/welcome.html)
++ [Enabling data persistence in microservices](https://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-data-persistence/welcome.html)
 
 ## Objectives
 <a name="targeted-business-outcomes"></a>

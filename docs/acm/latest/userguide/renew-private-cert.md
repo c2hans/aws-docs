@@ -14,7 +14,7 @@ When a managed certificate is 60 days away from expiration, ACM automatically at
 
 After renewal, a certificate's deployment into service occurs in one of the following ways:
 + If the certificate **is** associated with an ACM [integrated service](https://docs.aws.amazon.com/acm/latest/userguide/acm-services.html), the new certificate replaces the old one without additional customer action.
-+ If the certificate **is not** associated with an ACM [integrated service](https://docs.aws.amazon.com/acm/latest/userguide/acm-services.html), customer action is required to export and install the renewed certificate. You can perform these actions manually, or with assistance from [AWS Health](https://docs.aws.amazon.com/health/latest/ug/), [Amazon EventBridge](https://docs.aws.amazon.com/eventbridge/latest/userguide/), and [AWS Lambda](https://docs.aws.amazon.com//lambda/latest/dg/getting-started.html) as follows. For more information, see [Automate export of renewed certificates](#automating-export)
++ If the certificate **is not** associated with an ACM [integrated service](https://docs.aws.amazon.com/acm/latest/userguide/acm-services.html), customer action is required to export and install the renewed certificate. You can perform these actions manually, or with assistance from [AWS Health](https://docs.aws.amazon.com/health/latest/ug/), [Amazon EventBridge](https://docs.aws.amazon.com/eventbridge/latest/userguide/), and [AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/getting-started.html) as follows. For more information, see [Automate export of renewed certificates](#automating-export)
 
 ## Automate export of renewed certificates
 <a name="automating-export"></a>

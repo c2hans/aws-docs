@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsc
 
 AWS CodeConnections provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="codeconnections-GetConnection"></a>[GetConnection](https://docs.aws.amazon.com/codeconnections/latest/APIReference/API_GetConnection.html) | Get details about a Connection resource | Read |

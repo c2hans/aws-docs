@@ -14,8 +14,6 @@ Start a new Database Migration Service (DMS) replication task, or a task in a st
 ## Change Type Details
 <a name="ct-1yq7hhqse71yg-MADs-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1yq7hhqse71yg |

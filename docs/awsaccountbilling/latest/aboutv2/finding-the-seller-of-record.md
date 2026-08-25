@@ -29,8 +29,6 @@ If you use billing transfer to send your billing to an external management accou
 
 Use this table to find the SORs for the following countries.
 
-****
-
 | Account country | AWS SOR | Mailing address |
 | --- | --- | --- |
 | [Australia](https://aws.amazon.com/legal/awsau/) | Amazon Web Services Australia Pty Ltd (ABN: 63 605 345 891) | Level 37, 2-26 Park Street, Sydney, NSW, 2000, Australia |

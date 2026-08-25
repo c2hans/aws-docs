@@ -28,8 +28,6 @@ The **certificate authority (CA)** is the certificate that identifies the root C
 
 Amazon RDS provides the following CAs to sign the DB server certificate for a database.
 
-****
-
 | Certificate authority (CA) | Description | Common name (CN) |
 | --- | --- | --- |
 | rds-ca-rsa2048-g1 | Uses a certificate authority with RSA 2048 private key algorithm and SHA256 signing algorithm in most AWS Regions.<br />In the AWS GovCloud (US) Regions, this CA uses a certificate authority with RSA 2048 private key algorithm and SHA384 signing algorithm.<br />This CA supports automatic server certificate rotation. | Amazon RDS {{region-identifier}} Root CA RSA2048 G1 |

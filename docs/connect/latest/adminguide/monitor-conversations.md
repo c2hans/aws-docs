@@ -69,7 +69,7 @@ The total number of participants on the chat would look like this:
 + This feature is only available in CCPv2. That is, the URL to access the CCP is https://{{instance name}}.my.connect.aws/ccp-v2/ and the URL to access the agent workspace is https://{{instance name}}.my.connect.aws/agent-app-v2/. It's also available in custom CCP using Connect Customer Streams.js.
 + Before enabling the multi-party calls, if you are using conversational analytics or planning to do so in the future, see [Multi-party calls and conversational analytics](enable-analytics.md#multiparty-calls-contactlens). conversational analytics supports calls with up to 2 participants. We recommend that you disable conversational analytics in the [Set recording and analytics behavior](set-recording-behavior.md) block for contacts that are expected to have 3 and more participants.
 + In custom CCPs, use the updated Connect Customer Streams API to enable multi-party calling, up to six parties. See the [Connect Customer Streams](https://github.com/amazon-connect/amazon-connect-streams/blob/master/Documentation.md#connectcoreinitccp) documentation on GitHub.
-+ AWS GovCloud (US-West): You can't enable this feature using the console user interface. Instead, use the [UpdateInstanceAttribute](https://docs.aws.amazon.com//connect/latest/APIReference/API_UpdateInstanceAttribute.html) API or contact AWS Support.
++ AWS GovCloud (US-West): You can't enable this feature using the console user interface. Instead, use the [UpdateInstanceAttribute](https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateInstanceAttribute.html) API or contact AWS Support.
 
 ## How to enable enhanced multi-party contact monitoring
 <a name="howto-monitor-conversations"></a>

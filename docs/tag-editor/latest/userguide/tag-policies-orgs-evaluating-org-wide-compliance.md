@@ -48,12 +48,12 @@ If you close an AWS account that was a member of the organization, it can contin
 **To generate an organization-wide compliance report (AWS CLI, AWS API)**
 Use the following commands and operations to generate an organization-wide compliance report, check on its status, and view the report:
 + AWS Command Line Interface AWS CLI):
-  + [aws resourcegroupstaggingapi start-report-creation](https://docs.aws.amazon.com//cli/latest/reference/resourcegroupstaggingapi/start-report-creation.html)
-  + [aws resourcegroupstaggingapi describe-report-creation](https://docs.aws.amazon.com//cli/latest/reference/resourcegroupstaggingapi/describe-report-creation.html)
-  + [aws resourcegroupstaggingapi get-compliance-summary](https://docs.aws.amazon.com//cli/latest/reference/resourcegroupstaggingapi/get-compliance-summary.html)
+  + [aws resourcegroupstaggingapi start-report-creation](https://docs.aws.amazon.com/cli/latest/reference/resourcegroupstaggingapi/start-report-creation.html)
+  + [aws resourcegroupstaggingapi describe-report-creation](https://docs.aws.amazon.com/cli/latest/reference/resourcegroupstaggingapi/describe-report-creation.html)
+  + [aws resourcegroupstaggingapi get-compliance-summary](https://docs.aws.amazon.com/cli/latest/reference/resourcegroupstaggingapi/get-compliance-summary.html)
 
-  For the complete procedure for using tag policies in the AWS CLI, see [Using tag policies in the AWS CLI](https://docs.aws.amazon.com//organizations/latest/userguide/tag-policy-cli.html) in the *AWS Organizations User Guide*.
+  For the complete procedure for using tag policies in the AWS CLI, see [Using tag policies in the AWS CLI](https://docs.aws.amazon.com/organizations/latest/userguide/tag-policy-cli.html) in the *AWS Organizations User Guide*.
 + AWS API:
-  + [StartReportCreation](https://docs.aws.amazon.com//resourcegroupstagging/latest/APIReference/API_StartReportCreation.html)
-  + [DescribeReportCreation](https://docs.aws.amazon.com//resourcegroupstagging/latest/APIReference/API_DescribeReportCreation.html)
-  + [GetComplianceSummary](https://docs.aws.amazon.com//resourcegroupstagging/latest/APIReference/API_GetComplianceSummary.html)
+  + [StartReportCreation](https://docs.aws.amazon.com/resourcegroupstagging/latest/APIReference/API_StartReportCreation.html)
+  + [DescribeReportCreation](https://docs.aws.amazon.com/resourcegroupstagging/latest/APIReference/API_DescribeReportCreation.html)
+  + [GetComplianceSummary](https://docs.aws.amazon.com/resourcegroupstagging/latest/APIReference/API_GetComplianceSummary.html)

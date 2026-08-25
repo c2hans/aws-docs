@@ -15,7 +15,7 @@ Access to Amazon Cloud Directory requires credentials that AWS can use to authen
 ## Authentication
 <a name="authentication"></a>
 
-Learn how to access AWS using [IAM identities](https://docs.aws.amazon.com//IAM/latest/UserGuide/id.html).
+Learn how to access AWS using [IAM identities](https://docs.aws.amazon.com/IAM/latest/UserGuide/id.html).
 
 ## Access Control
 <a name="iam_auth_access_accesscontrol"></a>

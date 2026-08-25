@@ -12,7 +12,7 @@ To learn more about CloudTrail, including how to configure and enable it, see th
 ## WorkSpaces Information in CloudTrail
 <a name="service-name-info-in-cloudtrail"></a>
 
-CloudTrail is enabled on your AWS account when you create the account. When supported event activity occurs in WorkSpaces, that activity is recorded in a CloudTrail event along with other AWS service events in **Event history**. For example, calls to create, rebuild, or terminate WorkSpaces generate entries in CloudTrail log files. For more information, see [Actions](https://docs.aws.amazon.com//workspaces/latest/api/API_Operations.html).
+CloudTrail is enabled on your AWS account when you create the account. When supported event activity occurs in WorkSpaces, that activity is recorded in a CloudTrail event along with other AWS service events in **Event history**. For example, calls to create, rebuild, or terminate WorkSpaces generate entries in CloudTrail log files. For more information, see [Actions](https://docs.aws.amazon.com/workspaces/latest/api/API_Operations.html).
 
 You can view, search, and download recent events in your AWS account. For more information, see [Viewing Events with CloudTrail Event History](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/view-cloudtrail-events.html).
 

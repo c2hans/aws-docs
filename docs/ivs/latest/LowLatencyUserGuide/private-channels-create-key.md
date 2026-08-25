@@ -93,7 +93,7 @@ Here is an example response:
 ### API Request
 <a name="private-channels-create-api"></a>
 
-For usage information, see [ImportPlaybackKeyPair](https://docs.aws.amazon.com//ivs/latest/LowLatencyAPIReference/API_ImportPlaybackKeyPair.html) in the *IVS Low-Latency Streaming API Reference*.
+For usage information, see [ImportPlaybackKeyPair](https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_ImportPlaybackKeyPair.html) in the *IVS Low-Latency Streaming API Reference*.
 
 ```
 POST /ImportPlaybackKeyPair HTTP/1.1

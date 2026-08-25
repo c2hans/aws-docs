@@ -137,12 +137,12 @@ To configure Visual Studio Code to trust the SSL or TLS certificates used by you
 Configure the following proxy settings for Visual Studio Code on macOS.
 
 ##### Add certificates to your macOS keychain
-<a name="w2aac11c16c17c13c23b7b9c11b5b1b5"></a>
+<a name="w2aac11c18c19c15c23b7b9c11b5b1b5"></a>
 
 If you haven’t already, you must add the certificates used by your proxy server to your macOS keychain. For information on adding certificates to your keychain, see [Add certificates to a keychain using Keychain Access on Mac](https://support.apple.com/guide/keychain-access/add-certificates-to-a-keychain-kyca2431/mac) in the Keychain Access User Guide.
 
 ##### Install the Mac CA VSCode extension
-<a name="w2aac11c16c17c13c23b7b9c11b5b1b7"></a>
+<a name="w2aac11c18c19c15c23b7b9c11b5b1b7"></a>
 
 The [Mac CA VSCode extension](https://marketplace.visualstudio.com/items?itemName=linhmtran168.mac-ca-vscode) allows Amazon Q to access the certificates you added to Keychain Access on your Mac.
 
@@ -153,7 +153,7 @@ To install the extension:
 1. Restart VS Code.
 
 ##### Update proxy settings in VS Code on macOS
-<a name="w2aac11c16c17c13c23b7b9c11b5b1b9"></a>
+<a name="w2aac11c18c19c15c23b7b9c11b5b1b9"></a>
 
 Update the following settings to make sure VS Code is configured properly for your proxy.
 
@@ -175,7 +175,7 @@ Update the following settings to make sure VS Code is configured properly for yo
 Configure the following proxy settings for Visual Studio Code on Windows.
 
 ##### Add certificate as a trusted root certificate on Windows
-<a name="w2aac11c16c17c13c23b7b9c11b5b3b5"></a>
+<a name="w2aac11c18c19c15c23b7b9c11b5b3b5"></a>
 
 If you haven't already, you must add the certificates used by your proxy server to your Trusted Root Certification Authorities store on Windows. To add a certificate, complete the following procedure:
 
@@ -198,7 +198,7 @@ If you haven't already, you must add the certificates used by your proxy server 
    In the **Trusted Root Certification Authorities** store, double click **Certificates**. Right-click the certificate you added and choose **Properties**. Under **Certificate purposes**, the option **Enable all purposes for this certificate** should be selected.
 
 ##### Install the Win-CA VSCode extension
-<a name="w2aac11c16c17c13c23b7b9c11b5b3b7"></a>
+<a name="w2aac11c18c19c15c23b7b9c11b5b3b7"></a>
 
 The [Win-CA VSCode extension](https://marketplace.visualstudio.com/items?itemName=ukoloff.win-ca) allows Amazon Q to access the certificates you added to Trusted Root Certificates in Windows.
 
@@ -209,7 +209,7 @@ To install the extension:
 1. In the **Inject** dropdown list, choose **append**.
 
 ##### Update proxy settings in VS Code on Windows
-<a name="w2aac11c16c17c13c23b7b9c11b5b3b9"></a>
+<a name="w2aac11c18c19c15c23b7b9c11b5b3b9"></a>
 
 Update the following settings to make sure VS Code is configured properly for your proxy.
 

@@ -78,6 +78,12 @@ A map of key-value pairs to apply to the capacity provider and its associated re
 *Required*: No
 *CloudFormation compatibility*: This property is passed directly to the `[CapacityProviderScalingConfig](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-capacityprovider.html#cfn-lambda-capacityprovider-capacityproviderscalingconfig)` property of an `AWS::Lambda::CapacityProvider` resource.
 
+ `LoggingConfig`   <a name="sam-capacityprovider-loggingconfig"></a>
+ Use `LoggingConfig` to configure system logging for the capacity provider. System logs capture scaling activity and operational events and send them to a Amazon CloudWatch log group at a configurable log level.
+*Type*: [CapacityProviderLoggingConfig](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-capacityprovider-capacityprovidertelemetryconfig.html#cfn-lambda-capacityprovider-capacityprovidertelemetryconfig-loggingconfig)
+*Required*: No
+*CloudFormation compatibility*: This property is passed directly to the [LoggingConfig](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-capacityprovider-capacityprovidertelemetryconfig.html#cfn-lambda-capacityprovider-capacityprovidertelemetryconfig-loggingconfig) property of [TelemetryConfig](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-capacityprovider.html#cfn-lambda-capacityprovider-telemetryconfig) of an `AWS::Lambda::CapacityProvider` resource.
+
  `KmsKeyArn`   <a name="sam-capacityprovider-kmskeyarn"></a>
 The ARN of the AWS KMS key used to encrypt data at rest and in transit for the capacity provider.
 *Type*: String
@@ -156,6 +162,9 @@ AdvancedCapacityProvider:
       ManualScalingPolicies:
         AverageCPUUtilization: 70.0
     KmsKeyArn: arn:aws:kms:{{us-east-1}}:{{123456789012}}:key/{{12345678-1234-1234-1234-123456789012}}
+    LoggingConfig:
+      LogGroup: /aws/lambda/capacity-provider/{{advanced-capacity-provider}}
+      SystemLogLevel: INFO
     Tags:
       Environment: Production
       CostCenter: Engineering

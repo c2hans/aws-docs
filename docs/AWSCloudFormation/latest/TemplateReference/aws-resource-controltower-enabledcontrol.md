@@ -47,7 +47,7 @@ Properties:
 <a name="aws-resource-controltower-enabledcontrol-properties"></a>
 
 `ControlIdentifier`  <a name="cfn-controltower-enabledcontrol-controlidentifier"></a>
-The ARN of the control. Only **Strongly recommended** and **Elective** controls are permitted, with the exception of the **Region deny** control. For information on how to find the `controlIdentifier`, see [the overview page](https://docs.aws.amazon.com//controltower/latest/APIReference/Welcome.html).
+The ARN of the control. Only **Strongly recommended** and **Elective** controls are permitted, with the exception of the **Region deny** control. For information on how to find the `controlIdentifier`, see [the overview page](https://docs.aws.amazon.com/controltower/latest/APIReference/Welcome.html).
 *Required*: Yes
 *Type*: String
 *Pattern*: `^arn:aws[0-9a-zA-Z_\-:\/]+$`
@@ -72,7 +72,7 @@ For more information, see [Tag](https://docs.aws.amazon.com/AWSCloudFormation/la
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `TargetIdentifier`  <a name="cfn-controltower-enabledcontrol-targetidentifier"></a>
-The ARN of the organizational unit. For information on how to find the `targetIdentifier`, see [the overview page](https://docs.aws.amazon.com//controltower/latest/APIReference/Welcome.html).
+The ARN of the organizational unit. For information on how to find the `targetIdentifier`, see [the overview page](https://docs.aws.amazon.com/controltower/latest/APIReference/Welcome.html).
 *Required*: Yes
 *Type*: String
 *Pattern*: `^arn:aws[0-9a-zA-Z_\-:\/]+$`

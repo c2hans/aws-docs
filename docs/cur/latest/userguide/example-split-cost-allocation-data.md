@@ -32,8 +32,6 @@ Split cost allocation data uses relative unit weights for CPU and memory based o
 
 = 1 \* $0.02 = $0.02
 
-****
-
 | Instance | Instance type | vCPU-available | Memory-available | Amortized-cost-per-hour | Cost-per-vCPU-hour | Cost-per-GB-hour |
 | --- | --- | --- | --- | --- | --- | --- |
 | Instance1 | m5.xlarge | 4 | 16 | $1 | $0.17 | $0.02 |
@@ -54,8 +52,6 @@ If memory or vCPU usage data is unavailable, reservation data will be used inste
 `Instance-Unused-memory = Max (Memory-available - SUM(Allocated-memory), 0)` = Max (16 – 14, 0) = 2 GB
 
 In this example, the instance has CPU over subscription, attributed to Pod2 that used more vCPU than what was reserved.
-
-****
 
 | Pod name | Namespace | Reserved-vCPU | Used-vCPU | Allocated-vCPU | Reserved-memory | Used-memory | Allocated-memory |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -87,8 +83,6 @@ In this example, the instance has CPU over subscription, attributed to Pod2 that
 
 = 0.250 / (1-0.125) = 0.286
 
-****
-
 | Pod name | Namespace | vCPU-split-usage-ratio | vCPU-unused-ratio | Memory-split-usage-ratio | Memory-unused-ratio |
 | --- | --- | --- | --- | --- | --- |
 | Pod1 | Namespace1 | 0.204 | 0 | 0.250 | 0.286 |
@@ -114,8 +108,6 @@ In this example, the instance has CPU over subscription, attributed to Pod2 that
 `Pod1-Total-split-cost = Pod1-Split-cost + Pod1-Unused-cost`
 
 = $0.23
-
-****
 
 | Pod name | Namespace | Split-cost | Unused-cost | Total-split-cost |
 | --- | --- | --- | --- | --- |

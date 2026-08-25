@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsa
 
 AWS Application Discovery Service provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="discovery-DescribeAgents"></a>[DescribeAgents](https://docs.aws.amazon.com/application-discovery/latest/APIReference/API_DescribeAgents.html) | DescribeAgents API. DescribeAgents lists agents or the Connector by ID or lists all agents/Connectors associated with your user if you did not specify an ID | Read |

@@ -40,7 +40,7 @@ Example response:
 ## API Request
 <a name="private-channels-info-api"></a>
 
-For usage information, see [GetPlaybackKeyPair](https://docs.aws.amazon.com//ivs/latest/LowLatencyAPIReference/API_GetPlaybackKeyPair.html) in the *IVS Low-Latency Streaming API Reference*.
+For usage information, see [GetPlaybackKeyPair](https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_GetPlaybackKeyPair.html) in the *IVS Low-Latency Streaming API Reference*.
 
 ```
 POST /GetPlaybackKeyPair HTTP/1.1

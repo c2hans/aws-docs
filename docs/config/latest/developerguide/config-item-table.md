@@ -9,8 +9,6 @@ A *configuration item* represents a point-in-time view of the various attributes
 
 A configuration item consists of the following components.
 
-****
-
 | Component | Description | Contains |
 | --- | --- | --- |
 | Metadata | Information about this configuration item | +  Version ID <br />+  Time when the configuration item was captured <br />+  Status of the configuration item indicating whether the item was captured successfully  <br />+  State ID indicating the ordering of the configuration items of a resource  |

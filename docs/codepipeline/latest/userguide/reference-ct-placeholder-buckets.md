@@ -26,8 +26,6 @@ For more information about finding and managing your CloudTrail log files, see [
 
 This table lists the names of the S3 placeholder buckets that contain log files that track change detection events for pipelines with Amazon S3 source actions.
 
-****
-
 | Region name | Placeholder bucket name | Region identifier |
 | --- | --- | --- |
 | US East (Ohio) | codepipeline-cloudtrail-placeholder-bucket-us-east-2 | us-east-2 |

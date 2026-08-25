@@ -14,8 +14,6 @@ Modify the instance metadata options for existing instances. If the metadata opt
 ## Change Type Details
 <a name="ct-1xymw2hi94k1k-MAEu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1xymw2hi94k1k |

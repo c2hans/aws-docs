@@ -14,9 +14,9 @@ If you've previously set up an AWS account and authentication through another AW
 
 If you're new to AWS or haven't created an account, then there are 3 main steps to connect the AWS Toolkit for JetBrains with your AWS account:
 
-1. **Signing up for an AWS account**: You can sign up for an AWS account from the [AWS sign up](https://portal.aws.amazon.com/billing/signup#/start/email) portal. For detailed information on setting up a new AWS account, see the [Overview](https://docs.aws.amazon.com//SetUp/latest/UserGuide/setup-overview.html) topic in the *AWS Setup User Guide*.
+1. **Signing up for an AWS account**: You can sign up for an AWS account from the [AWS sign up](https://portal.aws.amazon.com/billing/signup#/start/email) portal. For detailed information on setting up a new AWS account, see the [Overview](https://docs.aws.amazon.com/SetUp/latest/UserGuide/setup-overview.html) topic in the *AWS Setup User Guide*.
 
-1. **Setting up authentication**: There are 3 primary methods to authenticate with your AWS account from the AWS Toolkit for JetBrains. To learn more about each of these methods, see the [Authentication and access](https://docs.aws.amazon.com//toolkit-for-jetbrains/latest/userguide/auth-access.html) topic in this User Guide.
+1. **Setting up authentication**: There are 3 primary methods to authenticate with your AWS account from the AWS Toolkit for JetBrains. To learn more about each of these methods, see the [Authentication and access](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/auth-access.html) topic in this User Guide.
 
 1. **Connecting with your AWS account from the AWS Toolkit for JetBrains**: After you've created an AWS account and set up authentication, you can connect the AWS Toolkit for JetBrains with your AWS account by completing the *Connecting to AWS from the AWS Toolkit for JetBrains* procedure, located in the following section.
 

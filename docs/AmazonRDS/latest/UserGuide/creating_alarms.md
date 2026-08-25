@@ -9,7 +9,7 @@ You can create a CloudWatch alarm that sends an Amazon SNS message when the alar
 
 Alarms invoke actions for sustained state changes only. CloudWatch alarms don't invoke actions simply because they are in a particular state. The state must have changed and have been maintained for a specified number of time periods.
 
-You can use the **DB\_PERF\_INSIGHTS** metric math function in the CloudWatch console to query Amazon RDS for Performance Insights counter metrics. The **DB\_PERF\_INSIGHTS** function also includes the DBLoad metric at sub-minute intervals. You can set CloudWatch alarms on these metrics.
+You can use the **DB\_PERF\_INSIGHTS** metric math function in the CloudWatch console to query Amazon RDS for detailed per-query and database counter metrics, which are exposed through the Performance Insights API. The **DB\_PERF\_INSIGHTS** function also includes the DBLoad metric at sub-minute intervals. You can set CloudWatch alarms on these metrics.
 
 For more details on how to create an alarm, see [ Create an alarm on Performance Insights counter metrics from an AWS database](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_alarm_database_performance_insights.html).
 

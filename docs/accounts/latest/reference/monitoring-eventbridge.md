@@ -5,7 +5,9 @@ source_url: https://docs.aws.amazon.com/accounts/latest/reference/monitoring-eve
 # Monitoring Account Management events with EventBridge
 <a name="monitoring-eventbridge"></a>
 
-Amazon EventBridge, formerly called CloudWatch Events, helps you monitor events that are specific to Account Management and initiate target actions that use other AWS services. Events from AWS services are delivered to EventBridge in near real time.
+This includes AWS accounts you create using our new AWS experience and accounts you create using our advanced AWS experience. To compare sign-up options, see [Compare sign-up options](sign-up-for-aws.md).
+
+Amazon EventBridge, formerly called CloudWatch Events, helps you monitor events that are specific to and initiate target actions that use other AWS services. Events from AWS services are delivered to EventBridge in near real time.
 
 Using EventBridge, you can create *rules* that match incoming *events* and route them to *targets* for processing.
 

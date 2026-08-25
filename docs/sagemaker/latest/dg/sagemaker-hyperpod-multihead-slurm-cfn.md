@@ -20,7 +20,7 @@ Follow these steps to provision basic resources for your Amazon SageMaker HyperP
    + Two Amazon EC2 security groups
    + An Amazon FSx volume to store configuration files
 
-1. Run the following CLI command to create a CloudFormation stack named `sagemaker-hyperpod`. Define the Availability Zone (AZ) IDs for your cluster in `PrimarySubnetAZ` and `BackupSubnetAZ`. For example, {{use1-az4}} is an AZ ID for an Availability Zone in the `us-east-1` Region. For more information, see [Availability Zone IDs](https://docs.aws.amazon.com//ram/latest/userguide/working-with-az-ids.html) and [Setting up SageMaker HyperPod clusters across multiple AZs](sagemaker-hyperpod-prerequisites.md#sagemaker-hyperpod-prerequisites-multiple-availability-zones).
+1. Run the following CLI command to create a CloudFormation stack named `sagemaker-hyperpod`. Define the Availability Zone (AZ) IDs for your cluster in `PrimarySubnetAZ` and `BackupSubnetAZ`. For example, {{use1-az4}} is an AZ ID for an Availability Zone in the `us-east-1` Region. For more information, see [Availability Zone IDs](https://docs.aws.amazon.com/ram/latest/userguide/working-with-az-ids.html) and [Setting up SageMaker HyperPod clusters across multiple AZs](sagemaker-hyperpod-prerequisites.md#sagemaker-hyperpod-prerequisites-multiple-availability-zones).
 
    ```
    aws cloudformation deploy \
@@ -30,7 +30,7 @@ Follow these steps to provision basic resources for your Amazon SageMaker HyperP
    --capabilities {{CAPABILITY_IAM}}
    ```
 
-   For more information, see [deploy](https://docs.aws.amazon.com//cli/latest/reference/cloudformation/deploy/) from the AWS Command Line Interface Reference. The stack creation can take a few minutes to complete. When it's complete, you will see the following in your command line interface.
+   For more information, see [deploy](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/deploy/) from the AWS Command Line Interface Reference. The stack creation can take a few minutes to complete. When it's complete, you will see the following in your command line interface.
 
    ```
    Waiting for changeset to be created..
@@ -98,7 +98,7 @@ Follow these steps to provision additional resources for your Amazon SageMaker H
    --capabilities {{CAPABILITY_NAMED_IAM}}
    ```
 
-   For more information, see [deploy](https://docs.aws.amazon.com//cli/latest/reference/cloudformation/deploy/) from the AWS Command Line Interface Reference. The stack creation can take a few minutes to complete. When it's complete, you will see the following in your command line interface.
+   For more information, see [deploy](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/deploy/) from the AWS Command Line Interface Reference. The stack creation can take a few minutes to complete. When it's complete, you will see the following in your command line interface.
 
    ```
    Waiting for changeset to be created..

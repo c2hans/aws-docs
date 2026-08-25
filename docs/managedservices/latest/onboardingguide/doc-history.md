@@ -11,10 +11,10 @@ The following table describes the important changes to the documentation since t
 + **API version: 2019-05-21**
 + **Latest documentation update: **September 23, 2025
 
-****
-
 | Change | Description | Date |
 | --- | --- | --- |
+| Removed deprecated drift remediation change type references | [RFC updates and drift detection](https://docs.aws.amazon.com/managedservices/latest/onboardingguide/ex-rfc-updates-and-dd.html).<br />Removed references to the deprecated managed automation drift remediation change type (ct-34sxfo53yuzah) from the drift remediation FAQs. | August 18, 2026 |
+| Updated drift remediation FAQs for CloudFormation-ingested stacks | [RFC updates and drift detection](https://docs.aws.amazon.com/managedservices/latest/onboardingguide/ex-rfc-updates-and-dd.html).<br />Clarified that drift remediation is supported for standard AMS change types (ct-3kinq0u4l33zf) but is not supported for stacks provisioned through the CloudFormation ingest change type (ct-36cn2avfrrj9v). | August 18, 2026 |
 | Updated Log retention and rotation defaults in SALZ: Default settings section |  [ Log retention and rotation defaults ](https://docs.aws.amazon.com/managedservices/latest/onboardingguide/log-defaults.html).<br />Updated information about AWS CloudTrail logs. | February 11, 2026 |
 | Updated change type for endpoint autoscaling in SageMaker AI in AWS Managed Services FAQ section |  [ Use AMS SSP to provision Amazon SageMaker AI in your AMS account](https://docs.aws.amazon.com/managedservices/latest/onboardingguide/sagemaker.html#set-sagemaker-faqs).<br />Submit a RFC with Management \| Advanced stack components \| Identity and Access Management (IAM) \| Update entity or policy (managed automation) change type (ct-27tuth19k52b4) to elevate autoscaling permissions temporarily, or permanently, as autoscaling requires permissive access on CloudWatch service. | September 25, 2025 |
 | Precise change type references |  [ Create, Change, or Delete Security Groups](https://docs.aws.amazon.com/managedservices/latest/onboardingguide/about-security-groups.html#create-security-group).<br />To add a user: Submit an RFC using Management \| Directory Service \| Users and groups \| Add user to group [ct-24pi85mjtza8k] and To remove a user: Submit an RFC using Management \| Directory Service \| Users and groups \| Remove user from group [ct-2019s9y3nfml4] | August 08, 2025 |

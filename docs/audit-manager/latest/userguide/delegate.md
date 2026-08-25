@@ -29,7 +29,7 @@ An AWS account can be an audit owner or a delegate in different AWS Regions.
 <a name="delegate-next-steps"></a>
 
 Use the following sections of this chapter to learn more about how to manage delegation tasks in AWS Audit Manager.
-+ [Understanding the different delegation tasks for audit ownersKey points](delegate-for-audit-owners.md)
++ [Understanding the different delegation tasks for audit owners](delegate-for-audit-owners.md)
   + [Delegating a control set for review in AWS Audit Manager](delegation-for-audit-owners-delegating-a-control-set.md)
   + [Finding and reviewing the delegations that you've sent in AWS Audit Manager](delegation-for-audit-owners-reviewing-delegations.md)
   + [Deleting your completed delegations in AWS Audit Manager](delegation-for-audit-owners-cancel-delegations.md)

@@ -126,7 +126,7 @@ For more information, see [Creating a VPC endpoint for Storage Gateway](https://
 Additionally, check the security group that's attached to your Storage Gateway VPC endpoint. The default security group attached to the endpoint might not allow the required ports. Create a new security group that allows traffic from your gateway's IP address range over the required ports. Then, attach that security group to the VPC endpoint.
 
 **Note**
-Use the [Amazon VPC console](https://console.aws.amazon.com//vpc/) to verify the security group that's attached to the VPC endpoint. View your Storage Gateway VPC endpoint from the console, and then choose the **Security Groups** tab.
+Use the [Amazon VPC console](https://console.aws.amazon.com/vpc/) to verify the security group that's attached to the VPC endpoint. View your Storage Gateway VPC endpoint from the console, and then choose the **Security Groups** tab.
 
 To confirm that the required ports are open, you can run telnet commands on the Storage Gateway VPC Endpoint. You must run these commands from a server that's in the same subnet as the gateway. You can run the tests on the first DNS name that doesn't specify an Availability Zone. For example, the following telnet commands test the required port connections using the DNS name vpce-1234567e1c24a1fe9-62qntt8k.storagegateway.us-east-1.vpce.amazonaws.com:
 
@@ -233,7 +233,7 @@ If **Enable Private DNS Name** is enabled, you can't activate any gateways from 
 
 **To disable the private DNS name option:**
 
-1. Open the [Amazon VPC console](https://console.aws.amazon.com//vpc/).
+1. Open the [Amazon VPC console](https://console.aws.amazon.com/vpc/).
 
 1. In the navigation pane, choose **Endpoints**.
 

@@ -11,15 +11,11 @@ You can use all features of Application Manager if your AWS Identity and Access 
 
 The following table lists the API operations that Systems Manager calls if you choose a resource in Application Manager because you want to view the resource details. For example, if Application Manager lists an Amazon EC2 Auto Scaling group, and if you choose that group to view its details, then Systems Manager calls the `autoscaling:DescribeAutoScalingGroups` API operations. If you don't have any Auto Scaling groups in your account, this API operation isn't called from Application Manager.
 
-****
-
 | Resource details only |
 | --- |
 |  <pre>acm:DescribeCertificate <br />acm:ListTagsForCertificate<br />autoscaling:DescribeAutoScalingGroups <br />cloudfront:GetDistribution<br />cloudfront:ListTagsForResource <br />cloudtrail:DescribeTrails<br />cloudtrail:ListTags <br />cloudtrail:LookupEvents<br />codebuild:BatchGetProjects <br />codepipeline:GetPipeline<br />codepipeline:ListTagsForResource <br />dynamodb:DescribeTable<br />dynamodb:ListTagsOfResource <br />ec2:DescribeAddresses<br />ec2:DescribeCustomerGateways <br />ec2:DescribeHosts<br />ec2:DescribeInternetGateways <br />ec2:DescribeNetworkAcls<br />ec2:DescribeNetworkInterfaces <br />ec2:DescribeRouteTables<br />ec2:DescribeSecurityGroups <br />ec2:DescribeSubnets<br />ec2:DescribeVolumes <br />ec2:DescribeVpcs <br />ec2:DescribeVpnConnections<br />ec2:DescribeVpnGateways <br />elasticbeanstalk:DescribeApplications<br />elasticbeanstalk:ListTagsForResource<br />elasticloadbalancing:DescribeInstanceHealth<br />elasticloadbalancing:DescribeListeners<br />elasticloadbalancing:DescribeLoadBalancers<br />elasticloadbalancing:DescribeTags <br />iam:GetGroup <br />iam:GetPolicy<br />iam:GetRole <br />iam:GetUser <br />lambda:GetFunction<br />rds:DescribeDBClusters <br />rds:DescribeDBInstances<br />rds:DescribeDBSecurityGroups <br />rds:DescribeDBSnapshots<br />rds:DescribeDBSubnetGroups <br />rds:DescribeEventSubscriptions<br />rds:ListTagsForResource <br />redshift:DescribeClusterParameters<br />redshift:DescribeClusterSecurityGroups<br />redshift:DescribeClusterSnapshots<br />redshift:DescribeClusterSubnetGroups <br />redshift:DescribeClusters<br />s3:GetBucketTagging</pre>  |
 
 The following table lists the API operations that Systems Manager uses to make changes to applications and resources listed in Application Manager or to view operations information for a selected application or resource.
-
-****
 
 | Application actions and details |
 | --- |

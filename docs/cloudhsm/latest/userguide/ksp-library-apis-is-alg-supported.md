@@ -15,12 +15,10 @@ NCryptIsAlgSupported function determines if Key Storage Provider (KSP) supports 
 
  `pszAlgId` [in]
  A pointer to a null-terminated Unicode string that contains the identifier of the cryptographic algorithm to create the key. AWS CloudHSM Key Storage Provider (KSP) supports the following algorithms:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/cloudhsm/latest/userguide/ksp-library-apis-is-alg-supported.html)
 
 `dwFlags` [in]
 Flags that modify function behavior. This can be zero or the following value:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/cloudhsm/latest/userguide/ksp-library-apis-is-alg-supported.html)
 
 ## Return Value
@@ -29,8 +27,6 @@ Flags that modify function behavior. This can be zero or the following value:
 The function returns a status code to indicate success or failure.
 
 Common return codes include:
-
-****
 
 | Return code | Description |
 | --- | --- |

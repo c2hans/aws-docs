@@ -54,7 +54,6 @@ aws ec2 describe-instance-types \
 
 In the following table, you can find the DB instance classes that support setting a number of CPU cores and CPU threads per core. You can also find the default value and the valid values for the number of CPU cores and CPU threads per core for each DB instance class.
 
-****
 <a name="db-instance-class-cpu-core-support"></a>
 <table>
 <thead>

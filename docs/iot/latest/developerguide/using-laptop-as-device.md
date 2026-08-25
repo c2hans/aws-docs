@@ -182,7 +182,7 @@ Before running the script, make sure your thing's policy provides permissions fo
 
 **To find and review the policy document for a thing resource**
 
-1. In the [AWS IoT console](https://console.aws.amazon.com//iot/home#/thinghub), in the **Things** list, find the thing resource that represents your device.
+1. In the [AWS IoT console](https://console.aws.amazon.com/iot/home#/thinghub), in the **Things** list, find the thing resource that represents your device.
 
 1. Choose the **Name** link of the thing resource that represents your device to open the **Thing details** page.
 
@@ -344,12 +344,12 @@ You can see the sample app's messages as they pass through the message broker by
 
 ------
 
-For more information about MQTT and how AWS IoT Core supports the protocol, see [MQTT](https://docs.aws.amazon.com//iot/latest/developerguide/mqtt.html).
+For more information about MQTT and how AWS IoT Core supports the protocol, see [MQTT](https://docs.aws.amazon.com/iot/latest/developerguide/mqtt.html).
 
 ## Run the Shared Subscription example in Python
 <a name="gs-pc-shared-subscription-example"></a>
 
-AWS IoT Core supports [Shared Subscriptions](mqtt.md#mqtt5-shared-subscription) for both MQTT 3 and MQTT 5. Shared Subscriptions allow multiple clients to share a subscription to a topic and only one client will receive messages published to that topic using a random distribution. To use Shared Subscriptions, clients subscribe to a Shared Subscription's [topic filter](https://docs.aws.amazon.com//iot/latest/developerguide/topics.html#topicfilters): `$share/{ShareName}/{TopicFilter}`.
+AWS IoT Core supports [Shared Subscriptions](mqtt.md#mqtt5-shared-subscription) for both MQTT 3 and MQTT 5. Shared Subscriptions allow multiple clients to share a subscription to a topic and only one client will receive messages published to that topic using a random distribution. To use Shared Subscriptions, clients subscribe to a Shared Subscription's [topic filter](https://docs.aws.amazon.com/iot/latest/developerguide/topics.html#topicfilters): `$share/{ShareName}/{TopicFilter}`.
 
 **To set up the policy and run the Shared Subscription example**
 

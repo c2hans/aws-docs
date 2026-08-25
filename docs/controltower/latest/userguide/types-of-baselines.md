@@ -30,7 +30,7 @@ Only Baselines that apply at OU level can be directly enabled with the `EnableBa
 **Note**
 The OU-level Region deny control has no way to allow Regions that the landing zone Region deny control does not allow.
 
-   For more information, see [How SCPs work with deny](https://docs.aws.amazon.com//organizations/latest/userguide/orgs_manage_policies_scps_evaluation.html#how_scps_deny) in the AWS Organizations documentation.
+   For more information, see [How SCPs work with deny](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps_evaluation.html#how_scps_deny) in the AWS Organizations documentation.
 
   **Recommendation**: We recommend that you confirm the Regions in which your target OU may be running workloads, and check the results against the landing zone Region deny control, before you call the `EnableBaseline` API for the OU, or you could lose access to resources in certain Regions.
 +  **Name**: `ConfigBaseline`
@@ -96,7 +96,7 @@ When you enable a baseline on an OU, that configuration is inherited by the OU's
 
 **View an account's baseline status**
 
-AWS Control Tower does not allow you to target accounts directly with baselines. However, you can track the enablement and drift status of each member account by means of their inherited child enabled baselines. To view the status of your accounts, you can call the [`ListEnabledBaselines`](https://docs.aws.amazon.com//controltower/latest/APIReference/API_ListEnabledBaselines.html) API with the `includeChildren` feature flag.
+AWS Control Tower does not allow you to target accounts directly with baselines. However, you can track the enablement and drift status of each member account by means of their inherited child enabled baselines. To view the status of your accounts, you can call the [`ListEnabledBaselines`](https://docs.aws.amazon.com/controltower/latest/APIReference/API_ListEnabledBaselines.html) API with the `includeChildren` feature flag.
 
 **Disable an account's baseline**
 

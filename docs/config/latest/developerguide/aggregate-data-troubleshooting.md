@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/aggregate-d
 
 AWS Config might not aggregate data from source accounts for one of the following reasons:
 
-****
-
 | If this happens | Do this |
 | --- | --- |
 | AWS Config is not enabled in the source account for accounts within an Organization. | Enable AWS Config in the source account and authorize the aggregator account to collect data. |
@@ -16,8 +14,6 @@ AWS Config might not aggregate data from source accounts for one of the followin
 | There might be a temporary issue that is preventing data aggregation. | Data aggregation is subject to delays. Wait for a few minutes. |
 
 AWS Config might not aggregate data from an organization for one of the following reasons:
-
-****
 
 | If this happens | Do this |
 | --- | --- |

@@ -29,7 +29,7 @@ Review the following requirements before implementing Amazon Inspector policies:
 
 Additionally, verify that:
 + Amazon Inspector is supported in the Regions where you want to apply policies
-+ You have the `AWSServiceRoleForInspectorV2` service-linked role configured in your management account. To verify this role exists, run `aws iam get-role --role-name AWSServiceRoleForInspectorV2`. If you need to create this role, you can either run `aws inspector2 enable` in any Region from your management account, or create it directly by running `aws iam create-service-linked-role --aws-service-name inspector2.amazonaws.com`.
++ You have the `AWSServiceRoleForAmazonInspector2` service-linked role configured in your management account. To verify this role exists, run `aws iam get-role --role-name AWSServiceRoleForAmazonInspector2`. If you need to create this role, you can either run `aws inspector2 enable` in any Region from your management account, or create it directly by running `aws iam create-service-linked-role --aws-service-name inspector2.amazonaws.com`.
 
 ## Implementation steps
 <a name="inspector_getting_started-implementation"></a>
@@ -68,7 +68,7 @@ To create an Amazon Inspector policy, you need the following permission:
 
 1. On the **Create new Amazon Inspector policy** page, enter a **Policy name** and an optional **Policy description**.
 
-1. (Optional) You can add one or more tags to the policy by choosing **Add tag** and then entering a key and an optional value. Leaving the value blank sets it to an empty string; it isn't `null`. You can attach up to 50 tags to a policy. For more information, see [Tagging AWS Organizations resourcesConsiderations](orgs_tagging.md).
+1. (Optional) You can add one or more tags to the policy by choosing **Add tag** and then entering a key and an optional value. Leaving the value blank sets it to an empty string; it isn't `null`. You can attach up to 50 tags to a policy. For more information, see [Tagging AWS Organizations resources](orgs_tagging.md).
 
 1. Enter or paste the policy text in the JSON code box. For information about the Amazon Inspector policy syntax, and example policies you can use as a starting point, see [Amazon Inspector policy syntax and examples](orgs_manage_policies_inspector_syntax.md).
 

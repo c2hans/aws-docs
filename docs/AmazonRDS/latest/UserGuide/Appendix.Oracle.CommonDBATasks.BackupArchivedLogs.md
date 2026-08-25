@@ -66,8 +66,6 @@ For more information, see [Common parameters for RMAN procedures](Appendix.Oracl
 
 This procedure also uses the following additional parameters.
 
-****
-
 | Parameter name | Data type | Valid values | Default | Required | Description |
 | --- | --- | --- | --- | --- | --- |
 | `p_from_date` | date | A date that is between the `start_date` and `next_date` of an archived redo log that exists on disk. The value must be less than or equal to the value specified for `p_to_date`. | — | Yes | The starting date for the archived log backups. |
@@ -107,8 +105,6 @@ For more information, see [Common parameters for RMAN procedures](Appendix.Oracl
 
 This procedure also uses the following additional parameters.
 
-****
-
 | Parameter name | Data type | Valid values | Default | Required | Description |
 | --- | --- | --- | --- | --- | --- |
 | `p_from_scn` | number | An SCN of an archived redo log that exists on disk. The value must be less than or equal to the value specified for `p_to_scn`. | — | Yes | The starting SCN for the archived log backups. |
@@ -147,8 +143,6 @@ This procedure uses the following common parameters for RMAN tasks:
 For more information, see [Common parameters for RMAN procedures](Appendix.Oracle.CommonDBATasks.CommonParameters.md).
 
 This procedure also uses the following additional parameters.
-
-****
 
 | Parameter name | Data type | Valid values | Default | Required | Description |
 | --- | --- | --- | --- | --- | --- |

@@ -50,7 +50,7 @@ The **Top Failing Step Type** chart shows the breakdown of failures by test case
 ![The Top Failing Step Type chart.](http://docs.aws.amazon.com/connect/latest/adminguide/images/test-simulate-dashboard-failure-steptype.png)
 
 The following metrics are displayed on this chart
-+ **Test case step type:** These step types represent the detailed configured simulated interactions within your test cases. Each simulated interaction must have an "observe event" and may optionally include "send instruction," "assert data," and "override system behavior" configurations. Test initialization is executed at beginning of each test case run.
++ **Test case step type:** These step types represent the detailed configured simulated interactions within your test cases. Each simulated interaction must have an "observe event" and can optionally include "send instruction," "assert data," and "override system behavior" configurations. Test initialization is executed at beginning of each test case run.
 + **Test case failure rate:** The percentage of failures for each specific test case step type.
 
 ## Average execution duration

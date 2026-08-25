@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/data
 
 Database Query Metadata Service provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="dbqms-DescribeFavoriteQueries"></a>[DescribeFavoriteQueries](https://docs.aws.amazon.com/qldb/latest/developerguide/dbqms-api.html#DescribeFavoriteQueries) | List saved queries and associated metadata | List |

@@ -82,7 +82,7 @@ Example Policy:
 
  **AWS Secrets Manager setup**
 
-The check replication PowerShell script connects to the target Microsoft Active Directory domain controller by retrieving the username and password with a runtime call to AWS Secrets Manager. Follow the steps in [Create an AWS Secrets Manager secret](https://docs.aws.amazon.com//secretsmanager/latest/userguide/create_secret.html) to create a new AWS Secrets Manager secret. Make sure that the username and password are stored using a key/value pair in the format `{"username":"EXAMPLE-USER","password":"EXAMPLE-PASSWORD"}`. After creating the AWS Secrets Manager secret, make sure you grant the `secretsmanager:GetSecretValue` permission on the secret ARN to your target domain controller IAM instance profile role.
+The check replication PowerShell script connects to the target Microsoft Active Directory domain controller by retrieving the username and password with a runtime call to AWS Secrets Manager. Follow the steps in [Create an AWS Secrets Manager secret](https://docs.aws.amazon.com/secretsmanager/latest/userguide/create_secret.html) to create a new AWS Secrets Manager secret. Make sure that the username and password are stored using a key/value pair in the format `{"username":"EXAMPLE-USER","password":"EXAMPLE-PASSWORD"}`. After creating the AWS Secrets Manager secret, make sure you grant the `secretsmanager:GetSecretValue` permission on the secret ARN to your target domain controller IAM instance profile role.
 
  **Instructions**
 
@@ -150,6 +150,6 @@ Follow these steps to configure the automation:
 
 Systems Manager Automation
 + [Run this Automation (console)](https://console.aws.amazon.com/systems-manager/documents/AWSSupport-TroubleshootActiveDirectoryReplication/description)
-+ [Run an automation](https://docs.aws.amazon.com//systems-manager/latest/userguide/automation-working-executing.html)
-+ [Setting up an Automation](https://docs.aws.amazon.com//systems-manager/latest/userguide/automation-setup.html)
++ [Run an automation](https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-working-executing.html)
++ [Setting up an Automation](https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-setup.html)
 + [Support Automation Workflows](https://aws.amazon.com/premiumsupport/technology/saw/)

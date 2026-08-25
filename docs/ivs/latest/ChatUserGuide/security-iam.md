@@ -52,7 +52,7 @@ Amazon IVS Chat supports three elements:
 
 You can use variables as placeholders in a policy. For example, you can grant an IAM user permission to access a resource only if it is tagged with the user’s IAM username. See [Variables and Tags](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_variables.html) in the *IAM User Guide*.
 
-Amazon IVS provides AWS managed policies that can be used to grant a preconfigured set of permissions to identities (read only or full access). You can choose to use managed policies instead of the identity-based policies shown below. For details, see [Managed Policies for Amazon IVS Chat](https://docs.aws.amazon.com//ivs/latest/LowLatencyUserGuide/security-iam-awsmanpol.html).
+Amazon IVS provides AWS managed policies that can be used to grant a preconfigured set of permissions to identities (read only or full access). You can choose to use managed policies instead of the identity-based policies shown below. For details, see [Managed Policies for Amazon IVS Chat](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/security-iam-awsmanpol.html).
 
 ## Authorization Based on Amazon IVS Tags
 <a name="security-iam-authorization"></a>
@@ -71,7 +71,7 @@ Amazon IVS supports using *temporary security credentials*. You can use temporar
 ## Privileged and Unprivileged Access
 <a name="security-iam-privileged-access"></a>
 
-API resources have privileged access. Unprivileged playback access can be set up through private channels; see [ Setting Up IVS Private Channels](https://docs.aws.amazon.com//ivs/latest/LowLatencyUserGuide/private-channels.html).
+API resources have privileged access. Unprivileged playback access can be set up through private channels; see [ Setting Up IVS Private Channels](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/private-channels.html).
 
 ## Best Practices for Policies
 <a name="security-iam-policy-best-practices"></a>
@@ -184,4 +184,4 @@ To control access to your lambda resource, you can use conditions based on:
 ## Troubleshooting
 <a name="security-iam-troubleshooting"></a>
 
-See [ Troubleshooting](https://docs.aws.amazon.com//ivs/latest/LowLatencyUserGuide/security-iam.html#security-iam-troubleshooting) in the *IVS Low-Latency Streaming User Guide* for information about diagnosing and fixing common issues that you might encounter when working with Amazon IVS Chat and IAM.
+See [ Troubleshooting](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/security-iam.html#security-iam-troubleshooting) in the *IVS Low-Latency Streaming User Guide* for information about diagnosing and fixing common issues that you might encounter when working with Amazon IVS Chat and IAM.

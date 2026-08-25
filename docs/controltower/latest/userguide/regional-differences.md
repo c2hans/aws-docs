@@ -11,7 +11,7 @@ Certain differences exist in the behavior of AWS Control Tower across AWS Region
 + Certain controls are not available in all AWS Regions due to lack of underlying functionality.
 + AFT and CfCT are not available in all AWS Regions due to lack of underlying functionality.
 
-To make the best determination of behavior for your AWS Control Tower environment, ascertain your home Region. Then, evaluate the following items. For more details, see [Limitations and quotas in AWS Control Tower](https://docs.aws.amazon.com//controltower/latest/userguide/limits.html).
+To make the best determination of behavior for your AWS Control Tower environment, ascertain your home Region. Then, evaluate the following items. For more details, see [Limitations and quotas in AWS Control Tower](https://docs.aws.amazon.com/controltower/latest/userguide/limits.html).
 + Is AWS Service Catalog available in your desired home Region?
 + Are the controls available that you require? See [Control limitations](https://docs.aws.amazon.com/controltower/latest/userguide/control-limitations.html).
 + Is IAM Identity Center available in your desired home Region?

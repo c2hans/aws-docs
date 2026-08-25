@@ -40,8 +40,6 @@ Depending on your initial requirements, you might not need to establish all of t
 
  ****
 
-****
-
 | AWS service | Implementation details | AWS Control Tower enabled |
 | --- | --- | --- |
 | [Amazon Security Lake](https://docs.aws.amazon.com/security-lake/latest/userguide/getting-started.html) | Amazon Security Lake centralizes security data from cloud, on-premises, and custom sources into a data lake that's stored in your account. | No |

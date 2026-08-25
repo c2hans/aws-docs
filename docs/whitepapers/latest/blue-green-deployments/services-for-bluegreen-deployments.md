@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/blue-green-deployment
 # Services for blue/green deployments
 <a name="services-for-bluegreen-deployments"></a>
 
- AWS provides a number of tools and services to help you automate and streamline your deployments and infrastructure.You can access these tools using the web console, [CLI tools, SDKs, and IDEs.](https://aws.amazon.com//tools/).
+ AWS provides a number of tools and services to help you automate and streamline your deployments and infrastructure.You can access these tools using the web console, [CLI tools, SDKs, and IDEs.](https://aws.amazon.com/tools/).
 
 ## Amazon Route 53
 <a name="amazon-route-53"></a>
@@ -22,7 +22,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/blue-green-deployment
 ## Auto Scaling
 <a name="auto-scaling"></a>
 
- [Amazon EC2 Auto Scaling](https://aws.amazon.com/ec2/autoscaling/) helps maintain application availability and lets you scale EC2 capacity up or down automatically according to defined conditions. The templates used to launch EC2 instances in an Auto Scaling group are called *launch configurations*. You can attach different versions of launch configurations to an auto scaling group to enable blue/green deployment. You can also configure auto scaling for use with an ELB. In this configuration, the ELB balances the traffic across the EC2 instances running in an auto scaling group. You define termination policies in auto scaling groups to determine which EC2 instances to remove during a scaling action; auto scaling also allows instances to be placed in [Standby state](https://docs.aws.amazon.com//autoscaling/ec2/userguide/as-enter-exit-standby.html), instead of termination, which helps with quick rollback when required. Both auto scaling's termination policies and Standby state allow for blue/green deployment.
+ [Amazon EC2 Auto Scaling](https://aws.amazon.com/ec2/autoscaling/) helps maintain application availability and lets you scale EC2 capacity up or down automatically according to defined conditions. The templates used to launch EC2 instances in an Auto Scaling group are called *launch configurations*. You can attach different versions of launch configurations to an auto scaling group to enable blue/green deployment. You can also configure auto scaling for use with an ELB. In this configuration, the ELB balances the traffic across the EC2 instances running in an auto scaling group. You define termination policies in auto scaling groups to determine which EC2 instances to remove during a scaling action; auto scaling also allows instances to be placed in [Standby state](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-enter-exit-standby.html), instead of termination, which helps with quick rollback when required. Both auto scaling's termination policies and Standby state allow for blue/green deployment.
 
 ## AWS Elastic Beanstalk
 <a name="aws-elastic-beanstalk"></a>
@@ -60,4 +60,4 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/blue-green-deployment
 ## AWS Lambda Hooks
 <a name="aws-lambda-hooks"></a>
 
-With AWS Lambda [hooks](https://docs.aws.amazon.com//codedeploy/latest/userguide/reference-appspec-file-structure-hooks.html), CodeDeploy can call the Lambda function during the various lifecycle events including deployment of ECS, Lambda function deployment, and ECC2/On-premise deployment. The hooks are helpful in creating a deployment workflow for your apps.
+With AWS Lambda [hooks](https://docs.aws.amazon.com/codedeploy/latest/userguide/reference-appspec-file-structure-hooks.html), CodeDeploy can call the Lambda function during the various lifecycle events including deployment of ECS, Lambda function deployment, and ECC2/On-premise deployment. The hooks are helpful in creating a deployment workflow for your apps.

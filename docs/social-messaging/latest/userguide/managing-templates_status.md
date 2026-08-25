@@ -11,8 +11,6 @@ Meta changes a template's status or quality rating automatically based on negati
 
 If your template is rejected by WhatsApp, you can edit the template and resubmit for approval or file an appeal with WhatsApp. To learn more, see [Appeals](https://developers.facebook.com/docs/whatsapp/message-templates/guidelines#appeals) in the *WhatsApp Business Platform Cloud API Reference*.
 
-****
-
 | Template status | Quality rating | Meaning |
 | --- | --- | --- |
 | In-Review |  | The message template is being reviewed. This can take up to 24 hours to complete. |

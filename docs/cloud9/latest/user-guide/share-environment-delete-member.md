@@ -25,8 +25,6 @@ Removing a member doesn't remove the user from IAM.
 
 To use code to remove a member from an environment, call the AWS Cloud9 delete environment membership operation, as follows.
 
-****
-
 |  |  |
 | --- |--- |
 | AWS CLI |  [delete-environment-membership](https://docs.aws.amazon.com/cli/latest/reference/cloud9/delete-environment-membership.html)  |

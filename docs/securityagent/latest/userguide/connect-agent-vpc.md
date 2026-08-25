@@ -8,6 +8,9 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/connect-a
 If the application you want to run a penetration test on is not available on the public internet, you need to provide AWS Security Agent with a VPC configuration. AWS Security Agent will use this VPC configuration, including a VPC, subnet, and security groups, to access the application.
 
 **Note**
+If a private endpoint presents a Transport Layer Security (TLS) certificate that is not publicly trusted, also provide the trust anchor. This applies when the certificate is issued by a private or internal certificate authority (CA), an intermediate CA, or a self-signed certificate. Endpoint validation uses the trust anchor to accept the certificate. For more information, see [Provide trusted CA certificates for a penetration test](provide-trusted-ca-certificates.md).
+
+**Note**
 When testing endpoints in a private VPC, only endpoints resolving to IPs in known private IP ranges are allowed (see [VPC CIDR blocks](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-cidr-blocks.html) for more information). The following IPv4 and IPv6 ranges are allowed:
 
 ```
@@ -19,6 +22,9 @@ fd00::/8
 
 **Note**
 When connecting to a subnet, AWS Security Agent will create an ENI ([Elastic Network Interface](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html)) in the subnet configured for the penetration test. This ENI does not have an associated public IP address, meaning that it cannot communicate with [VPC Internet Gateways](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Internet_Gateway.html) in public subnets. If your penetration test requires open internet access, please use a private subnet with an associated [VPC NAT Gateway](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-gateway.html) instead
+
+**Tip**
+When testing against an endpoint that has an IP allowlist, you can add a private VPC configuration with an associated [VPC NAT Gateway](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-gateway.html) to your penetration test. You can then use the NAT Gateway IP address to allowlist outbound traffic from the penetration test.
 
 You grant AWS Security Agent general access to a VPC from the AWS Management Console. In the Security Agent web application, users select the specific configuration for a penetration test.
 
@@ -73,8 +79,8 @@ To run a penetration test with a VPC, your Agent Space service role must include
 }
 ```
 
-## To select a specific VPC configuration for a penetration test in the Security Agent web application
-<a name="_to_select_a_specific_vpc_configuration_for_a_penetration_test_in_the_security_agent_web_application"></a>
+## To select a specific VPC configuration for a Continuum penetration test in the Security Agent web application
+<a name="_to_select_a_specific_vpc_configuration_for_a_continuum_penetration_test_in_the_security_agent_web_application"></a>
 
 1. Navigate to the Penetration Tests overview page
 
@@ -89,8 +95,8 @@ To run a penetration test with a VPC, your Agent Space service role must include
 **Note**
 Cross-account penetration testing is currently supported for VPC resources (subnets and security groups) shared using AWS Resource Access Manager. Secrets Manager secrets and Lambda functions used for authentication credentials must be configured in the same AWS account as your AWS Security Agent setup.
 
-## Running a penetration test against VPC resources in another AWS account
-<a name="_running_a_penetration_test_against_vpc_resources_in_another_aws_account"></a>
+## Running a Continuum penetration test against VPC resources in another AWS account
+<a name="_running_a_continuum_penetration_test_against_vpc_resources_in_another_aws_account"></a>
 
 You can run penetration tests against VPC resources shared with your account using AWS Resource Access Manager. Both accounts must be part of the same AWS Organization.
 

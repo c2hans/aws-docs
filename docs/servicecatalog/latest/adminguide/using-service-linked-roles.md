@@ -104,8 +104,6 @@ You can use the IAM console, the AWS CLI, or the AWS API to manually delete the 
 
 AWS Service Catalog supports using service-linked roles in all of the regions where the service is available. For more information, see [AWS regions and endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html).
 
-****
-
 | Region name | Region identity | Support in AWS Service Catalog |
 | --- | --- | --- |
 | US East (N. Virginia) | us-east-1 | Yes |

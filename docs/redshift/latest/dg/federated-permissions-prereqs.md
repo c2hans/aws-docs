@@ -327,6 +327,11 @@ Customer need Lake Formation `CREATE_CATALOG` permissions to enable AWS Glue Dat
 
 1. Have the DataLake Admin grant permissions to the IAMAllowedPrincipals to Create Catalog. Access can be granted through the **Grant** button for Catalog Creators in the Administrative Role and Tasks page.
 
+## Network configuration for enhanced VPC routing
+<a name="federated-permissions-prereqs-network"></a>
+
+If enhanced VPC routing is turned on, your VPC must be able to reach the AWS IAM Identity Center services. Otherwise, identity propagation fails. For more information about the network requirements, see [Using AWS IAM Identity Center with enhanced VPC routing](https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-iam-access-control-idp-connect-evr.html).
+
 ## Connect privileges
 <a name="federated-permissions-prereqs-connect"></a>
 

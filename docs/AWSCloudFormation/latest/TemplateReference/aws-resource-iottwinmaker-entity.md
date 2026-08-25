@@ -57,7 +57,7 @@ Properties:
 
 `Components`  <a name="cfn-iottwinmaker-entity-components"></a>
 An object that maps strings to the components in the entity. Each string in the mapping must be unique to this object.
-For information on the component object see the [component](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_ComponentResponse.html) API reference.
+For information on the component object see the [component](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_ComponentResponse.html) API reference.
 *Required*: No
 *Type*: Object of [Component](aws-properties-iottwinmaker-entity-component.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

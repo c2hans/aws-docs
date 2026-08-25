@@ -25,8 +25,6 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_ssm-actions-as-permissions).
 
-****
-
 - **   AddTagsToResource  **
   - **IAM action:**  [ssm:AddTagsToResource](#list_ssm-action-AddTagsToResource)
   - **Condition key:**
@@ -907,8 +905,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
 
-****
-
 - **   [AddTagsToResource](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_AddTagsToResource.html)  **
   - **Description:** Grants permission to add or overwrite one or more tags for a specified AWS resource
   - **Resource types (\*required):** [association](#list_ssm-resource-association) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_ssm-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_ssm-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_ssm-aws_TagKeys)
@@ -1673,7 +1669,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
 - **   [RegisterManagedInstance](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-setting-up-messageAPIs.html)  **
   - **Description:** Grants permission to register a Systems Manager Agent
   - **Resource types (\*required):**
-  - **Condition keys:** [aws:RequestTag/${TagKey}](#list_ssm-aws_RequestTag___TagKey_)<br />[aws:TagKeys](#list_ssm-aws_TagKeys)
+  - **Condition keys:** [aws:RequestTag/${TagKey}](#list_ssm-aws_RequestTag___TagKey_)<br />[aws:TagKeys](#list_ssm-aws_TagKeys)<br />[ssm:NodeAccountId](#list_ssm-ssm_NodeAccountId)<br />[ssm:NodeOrgId](#list_ssm-ssm_NodeOrgId)
   - **Access level:** Write
 
 - **   [RegisterPatchBaselineForPatchGroup](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_RegisterPatchBaselineForPatchGroup.html)  **
@@ -1904,8 +1900,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 The following actions are defined by AWS Systems Manager but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 - **   [GetCalendar](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-change-calendar-prereqs.html)  **
   - **Description:** Grants permission to view details of a specific calendar
   - **Resource types (\*required):** [document\*](#list_ssm-resource-document)
@@ -1930,6 +1924,12 @@ The following actions are defined by AWS Systems Manager but are not directly in
   - **Condition keys:**
   - **Access level:** Read
 
+- **   [RequestManagedInstanceRoleToken](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-setting-up-messageAPIs.html)  **
+  - **Description:** Grants permission to SSM Agent to retrieve temporary credentials to access the managed node (internal Systems Manager call)
+  - **Resource types (\*required):** [instance](#list_ssm-resource-instance) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ssm-aws_ResourceTag___TagKey_)<br />[ssm:NodeAccountId](#list_ssm-ssm_NodeAccountId)<br />[ssm:NodeOrgId](#list_ssm-ssm_NodeOrgId)<br />[ssm:resourceTag/${TagKey}](#list_ssm-ssm_resourceTag___TagKey_)
+  - **Resource types (\*required):** [managed-instance](#list_ssm-resource-managed-instance) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ssm-aws_ResourceTag___TagKey_)<br />[ssm:NodeAccountId](#list_ssm-ssm_NodeAccountId)<br />[ssm:NodeOrgId](#list_ssm-ssm_NodeOrgId)<br />[ssm:resourceTag/tag-key](#list_ssm-ssm_resourceTag_tag-key)
+  - **Access level:** Write
+
 - **   [UpdateInstanceAssociationStatus](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-setting-up-messageAPIs.html)  **
   - **Description:** Grants permission to SSM Agent to update the status of the association that it is currently running (internal Systems Manager call)
   - **Resource types (\*required):** [association\*](#list_ssm-resource-association) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ssm-aws_ResourceTag___TagKey_)<br />[ec2:SourceInstanceARN](#list_ssm-ec2_SourceInstanceARN)<br />[ssm:SourceInstanceARN](#list_ssm-ssm_SourceInstanceARN)
@@ -1937,12 +1937,16 @@ The following actions are defined by AWS Systems Manager but are not directly in
   - **Resource types (\*required):** [managed-instance](#list_ssm-resource-managed-instance) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ssm-aws_ResourceTag___TagKey_)<br />[ec2:SourceInstanceARN](#list_ssm-ec2_SourceInstanceARN)<br />[ssm:resourceTag/tag-key](#list_ssm-ssm_resourceTag_tag-key)<br />[ssm:SourceInstanceARN](#list_ssm-ssm_SourceInstanceARN)
   - **Access level:** Write
 
+- **   [UpdateManagedInstancePublicKey](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-setting-up-messageAPIs.html)  **
+  - **Description:** Grants permission to SSM Agent to update the public key of the managed node after rotating the key pair (internal Systems Manager call)
+  - **Resource types (\*required):** [instance](#list_ssm-resource-instance) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ssm-aws_ResourceTag___TagKey_)<br />[ssm:NodeAccountId](#list_ssm-ssm_NodeAccountId)<br />[ssm:NodeOrgId](#list_ssm-ssm_NodeOrgId)<br />[ssm:resourceTag/${TagKey}](#list_ssm-ssm_resourceTag___TagKey_)
+  - **Resource types (\*required):** [managed-instance](#list_ssm-resource-managed-instance) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ssm-aws_ResourceTag___TagKey_)<br />[ssm:NodeAccountId](#list_ssm-ssm_NodeAccountId)<br />[ssm:NodeOrgId](#list_ssm-ssm_NodeOrgId)<br />[ssm:resourceTag/tag-key](#list_ssm-ssm_resourceTag_tag-key)
+  - **Access level:** Write
+
 ## Resource types defined by AWS Systems Manager
 <a name="list_ssm-resources-for-iam-policies"></a>
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
-
-****
 
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
@@ -1974,8 +1978,6 @@ The following resource types are defined by this service and can be used in the 
 
 AWS Systems Manager defines the following condition keys that can be used in the `Condition` element of an IAM policy.
 
-****
-
 | Condition keys | Description | Type |
 | --- | --- | --- |
 |   [aws:RequestTag/${TagKey}](https://docs.aws.amazon.com/systems-manager/latest/userguide/auth-and-access-control-iam-access-control-identity-based.html#policy-conditions)  | Filters access by 'Create' requests based on the allowed set of values for a specified tags | String |
@@ -1988,6 +1990,8 @@ AWS Systems Manager defines the following condition keys that can be used in the
 |   [ssm:DocumentType](https://docs.aws.amazon.com/systems-manager/latest/userguide/auth-and-access-control-iam-access-control-identity-based.html#policy-conditions)  | Filters access by verifying that a user has permission to access a document belonging to a specific document type. Only available in "aws", "aws-cn", and "aws-us-gov" partitions | String |
 |   [ssm:DocumentVersion](https://docs.aws.amazon.com/systems-manager/latest/userguide/auth-and-access-control-iam-access-control-identity-based.html#policy-conditions)  | Filters access by verifying that a user has permission to access a specific version of a document | ArrayOfString |
 |   [ssm:InventoryTypeName](https://docs.aws.amazon.com/systems-manager/latest/userguide/auth-and-access-control-iam-access-control-identity-based.html#policy-conditions)  | Filters access by verifying that a user also has access to the InventoryType specified in the request | ArrayOfString |
+|   [ssm:NodeAccountId](https://docs.aws.amazon.com/systems-manager/latest/userguide/auth-and-access-control-iam-access-control-identity-based.html#policy-conditions)  | Filters access by the AWS account ID associated with the managed node making the request. Available only in VPC endpoint policies and service control policies (SCPs) | String |
+|   [ssm:NodeOrgId](https://docs.aws.amazon.com/systems-manager/latest/userguide/auth-and-access-control-iam-access-control-identity-based.html#policy-conditions)  | Filters access by the AWS Organizations ID associated with the managed node making the request. Available only in VPC endpoint policies and service control policies (SCPs) | String |
 |   [ssm:Overwrite](https://docs.aws.amazon.com/systems-manager/latest/userguide/parameter-store-policy-conditions.html#overwrite-condition)  | Filters access by controling whether Systems Manager parameters can be overwritten | String |
 |   [ssm:Policies](https://docs.aws.amazon.com/systems-manager/latest/userguide/parameter-store-policy-conditions.html#parameter-policies-condition)  | Filters access by controlling whether an IAM Entity (user or role) can create or update a parameter that includes a parameter policy | String |
 |   [ssm:Recursive](https://docs.aws.amazon.com/systems-manager/latest/userguide/parameter-store-policy-conditions.html#recursive-condition)  | Filters access by Systems Manager parameters created in a hierarchical structure | String |

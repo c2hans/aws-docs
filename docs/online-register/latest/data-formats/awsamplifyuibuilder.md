@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsa
 
 AWS Amplify UI Builder provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="amplifyuibuilder-ExportComponents"></a>[ExportComponents](https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API_ExportComponents.html) | Export components | Read |

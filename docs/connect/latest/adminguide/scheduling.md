@@ -12,7 +12,7 @@ Contact center schedulers or managers need to create agent schedules for day-to-
 + Human resources and business rules
 
 **Note**
-Connect Customer scheduling is not designed to ensure compliance with any particular laws. It is your responsibility to ensure that your actions and your use of scheduling comply with any applicable laws including employment regulations. You should confer with your legal counsel to determine your obligations.
+Connect Customer scheduling is not designed to ensure compliance with any particular laws. It is your responsibility to make sure that your actions and your use of scheduling comply with any applicable laws including employment regulations. You should confer with your legal counsel to determine your obligations.
 
 ## Getting started
 <a name="getting-started-scheduling"></a>

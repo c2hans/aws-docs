@@ -10,7 +10,7 @@ Amazon Bedrock Flows provides the following node types to build your flow. When 
 + Type – In the console, you drag and drop the type of node to use. In the API, use the `type` field and the corresponding [FlowNodeConfiguration](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_FlowNodeConfiguration.html) in the `configuration` field.
 + Inputs – Provide the following information for each input:
   + Name – A name for the input. Some nodes have pre-defined names or types that you must use. To learn which ones have pre-defined names, see [Logic node types](#flows-nodes-logic-table).
-  + Expression – Define the part of the whole input to use as the individual input. For more information, see [Use expressions to define inputs by extracting the relevant part of a whole input in Amazon Bedrock FlowsDefine inputs with expressions](flows-expressions.md).
+  + Expression – Define the part of the whole input to use as the individual input. For more information, see [Use expressions to define inputs by extracting the relevant part of a whole input in Amazon Bedrock Flows](flows-expressions.md).
   + Type – The data type for the input. When this node is reached at runtime, Amazon Bedrock applies the expression to the whole input and validates that the result matches the data type.
 + Outputs – Provide the following information for each output:
   + Name – A name for the output. Some nodes have pre-defined names or types that you must use. To learn which ones have pre-defined names, see [Logic node types](#flows-nodes-logic-table).
@@ -105,8 +105,6 @@ Conditions are evaluated in order. If more than one condition is satisfied, the 
 
 To define a condition, you refer to an input by its name and compare it to a value using any of the following relational operators:
 
-****
-
 | Operator | Meaning | Supported data types | Example usage | Example meaning |
 | --- | --- | --- | --- | --- |
 | == | Equal to (the data type must also be equal) | String, Number, Boolean | A == B | If A is equal to B |
@@ -119,8 +117,6 @@ To define a condition, you refer to an input by its name and compare it to a val
 You can compare inputs to other inputs or to a constant in a conditional expression. For example, if you have a numerical input called `profit` and another one called `expenses`, both **profit > expenses** or **profit <= 1000** are valid expressions.
 
 You can use the following logical operators to combine expressions for more complex conditions. We recommend that you use parentheses to resolve ambiguities in grouping of expressions:
-
-****
 
 | Operator | Meaning | Example usage | Example meaning |
 | --- | --- | --- | --- |

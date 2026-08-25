@@ -55,20 +55,14 @@ This step uses `script-runner.jar` to run the `echo.sh` shell script and passes 
 ## Syntax
 <a name="emractivity-syntax"></a>
 
-****
-
 | Object Invocation Fields | Description | Slot Type |
 | --- | --- | --- |
 | schedule | This object is invoked within the execution of a schedule interval. Specify a schedule reference to another object to set the dependency execution order for this object. You can satisfy this requirement by explicitly setting a schedule on the object, for example, by specifying "schedule": {"ref": "DefaultSchedule"}. In most cases, it is better to put the schedule reference on the default pipeline object so that all objects inherit that schedule. Or, if the pipeline has a tree of schedules (schedules within the master schedule), you can create a parent object that has a schedule reference. For more information about example optional schedule configurations, see [https://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/dp-object-schedule.html](https://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/dp-object-schedule.html) | Reference Object, for example, "schedule":{"ref":"myScheduleId"} |
-
-****
 
 | Required Group (One of the following is required) | Description | Slot Type |
 | --- | --- | --- |
 | runsOn | The Amazon EMR cluster on which this job will run. | Reference Object, for example, "runsOn":{"ref":"myEmrClusterId"} |
 | workerGroup | The worker group. This is used for routing tasks. If you provide a runsOn value and workerGroup exists, workerGroup is ignored. | String |
-
-****
 
 | Optional Fields | Description | Slot Type |
 | --- | --- | --- |
@@ -95,8 +89,6 @@ This step uses `script-runner.jar` to run the `echo.sh` shell script and passes 
 | retryDelay | The timeout duration between two retry attempts. | Period |
 | scheduleType | Schedule type allows you to specify whether the objects in your pipeline definition should be scheduled at the beginning of the interval, or end of the interval. Values are: cron, ondemand, and timeseries. The timeseries scheduling means that instances are scheduled at the end of each interval. The cron scheduling means that instances are scheduled at the beginning of each interval. An ondemand schedule allows you to run a pipeline one time per activation. You do not have to clone or re-create the pipeline to run it again. If you use an ondemand schedule, it must be specified in the default object and must be the only scheduleType specified for objects in the pipeline. To use ondemand pipelines, call the ActivatePipeline operation for each subsequent run.  | Enumeration |
 | step | One or more steps for the cluster to run. To specify multiple steps, up to 255, add multiple step fields. Use comma-separated arguments after the JAR name; for example, "s3://amzn-s3-demo-bucket/MyWork.jar,arg1,arg2,arg3". | String |
-
-****
 
 | Runtime Fields | Description | Slot Type |
 | --- | --- | --- |
@@ -125,8 +117,6 @@ This step uses `script-runner.jar` to run the `echo.sh` shell script and passes 
 | @status | The status of this object. | String |
 | @version | Pipeline version that the object was created with. | String |
 | @waitingOn | Description of list of dependencies this object is waiting on. | Reference Object, for example, "waitingOn":{"ref":"myRunnableObjectId"} |
-
-****
 
 | System Fields | Description | Slot Type |
 | --- | --- | --- |

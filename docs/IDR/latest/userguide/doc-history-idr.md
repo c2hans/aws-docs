@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/IDR/latest/userguide/doc-history-idr.htm
 
 The following table describes the important changes to the documentation since the last release of the IDR guide.
 
-****
-
 | Change | Description | Date |
 | --- | --- | --- |
 | Simplified AWS Incident Detection and Response onboarding into single phase process | AWS Incident Detection and Response onboarding is now a single-phase process. Removed references to the previous two-phase model and updated all content that presented the two questionnaires as separate sequential steps.<br />For more information, see [Workload onboarding questionnaire in Incident Detection and Response (exception path)](idr-gs-questionnaire.md). | July 13, 2026 |

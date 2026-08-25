@@ -24,8 +24,6 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_support-actions-as-permissions).
 
-****
-
 - **   AddAttachmentsToSet  **
   - **IAM action:**  [support:AddAttachmentsToSet](#list_support-action-AddAttachmentsToSet)
   - **Condition key:**
@@ -96,6 +94,7 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [support:DescribeTrustedAdvisorCheckResult](#list_support-action-DescribeTrustedAdvisorCheckResult)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
   - **IAM action:**  [trustedadvisor:DescribeCheckItems](https://docs.aws.amazon.com/awssupport/latest/user/security-trusted-advisor.html#trusted-advisor-operations)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
   - **IAM action:**  [trustedadvisor:ListRecommendationResources](https://docs.aws.amazon.com/awssupport/latest/user/get-started-with-aws-trusted-advisor-api.html)  / **Condition key:**  / **Possible value(s):**  / **Access level:** List
+  - **IAM action:**  [trustedadvisor:ListRecommendationsForResource](https://docs.aws.amazon.com/awssupport/latest/user/get-started-with-aws-trusted-advisor-api.html)  / **Condition key:**  / **Possible value(s):**  / **Access level:** List
 
 - **   DescribeTrustedAdvisorCheckSummaries  **
   - **IAM action:**  [support:DescribeTrustedAdvisorCheckSummaries](#list_support-action-DescribeTrustedAdvisorCheckSummaries)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
@@ -124,8 +123,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
 <a name="list_support-actions-as-permissions"></a>
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
-
-****
 
 | Actions | Description | Resource types (\*required) | Condition keys | Access level |
 | --- | --- | --- | --- | --- |

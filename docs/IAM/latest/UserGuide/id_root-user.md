@@ -29,7 +29,7 @@ After you [centralize root access for member accounts](https://docs.aws.amazon.c
 Some tasks can only be performed when you sign in as the root user of an account. Some of these [Tasks that require root user credentials](#root-user-tasks) can be performed by the management account or delegated administrator for IAM. To learn more about taking privileged actions on member accounts, see [Perform a privileged task](id_root-user-privileged-task.md).
 
 **Enable account recovery of the root user**
-If you need to recover root user credentials for a member account, the Organizations management account or delegated administrator can perform the **Allow password recovery** privileged task. The person with access to the root user email inbox for the member account can [reset the root user password](https://docs.aws.amazon.com/IAM/latest/UserGuide/reset-root-password.html) to recover root user credentials. We recommend deleting root user credentials once you complete the task that requires access to the root user.
+If you need to recover root user credentials for a member account, the Organizations management account or delegated administrator can perform the **Allow password recovery** privileged task. The person with access to the root user email inbox for the member account can [reset the root user password](https://docs.aws.amazon.com/IAM/latest/UserGuide/reset-root-password.html) to recover root user credentials. We recommend deleting root user credentials after you complete the task that requires access to the root user.
 
 ## Tasks that require root user credentials
 <a name="root-user-tasks"></a>

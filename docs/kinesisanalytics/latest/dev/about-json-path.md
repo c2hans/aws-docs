@@ -14,7 +14,7 @@ After careful consideration, we have decided to discontinue Amazon Kinesis Data 
 <a name="about-json-path"></a>
 
 **Note**
-After September 12, 2023, you will not able to create new applications using Kinesis Data Firehose as a source if you do not already use Kinesis Data Analytics for SQL. For more information, see [Limits](https://docs.aws.amazon.com//kinesisanalytics/latest/dev/limits.html).
+After September 12, 2023, you will not able to create new applications using Kinesis Data Firehose as a source if you do not already use Kinesis Data Analytics for SQL. For more information, see [Limits](https://docs.aws.amazon.com/kinesisanalytics/latest/dev/limits.html).
 
 JSONPath is a standardized way to query elements of a JSON object. JSONPath uses path expressions to navigate elements, nested elements, and arrays in a JSON document. For more information about JSON, see [Introducing JSON](http://www.json.org/).
 
@@ -163,8 +163,6 @@ $.orders[0:].orderId
 
 The preceding expression returns the following from the preceding JSON record, with each data item returned as a separate row.
 
-****
-
 |  |
 | --- |
 | 23284 |
@@ -176,8 +174,6 @@ If expressions that query nonarray elements are included in a schema that querie
 $.customerName
 $.orders[0:].orderId
 In this case, the returned data rows from the sample input stream element resemble the following, with the `name` element repeated for every `orderId` element.
-
-****
 
 |  |  |
 | --- |--- |
@@ -221,7 +217,6 @@ Additional considerations for working with JSONPath are as follows:
   ```
 
   The preceding expression returns the following from the preceding JSON example record.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/kinesisanalytics/latest/dev/about-json-path.html)
 
 ## Related Topics

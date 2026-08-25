@@ -12,7 +12,7 @@ Scenario: Alice (A) is broadcasting to her Amazon IVS channel and wants to invit
 ## 1. Create a Stage
 <a name="multiple-hosts-demo-create-stage"></a>
 
-Here is a [CreateStage](https://docs.aws.amazon.com//ivs/latest/RealTimeAPIReference/API_CreateStage.html) request using the Amazon IVS Stage API:
+Here is a [CreateStage](https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_CreateStage.html) request using the Amazon IVS Stage API:
 
 ```
 POST /CreateStage HTTP/1.1
@@ -32,7 +32,7 @@ Content-type: application/json
 }
 ```
 
-You can pre-create participant tokens when you create a stage, as is done here. You also can create tokens for an existing stage, by calling [CreateParticipantToken](https://docs.aws.amazon.com//ivs/latest/RealTimeAPIReference/API_CreateParticipantToken.html). For each participant, you can pass in a custom `userId` and set of `attributes`. (**Important**: The `attributes` and `userId` request fields are exposed to all stage participants. These should not be used for personally identifying, confidential, or sensitive information.)
+You can pre-create participant tokens when you create a stage, as is done here. You also can create tokens for an existing stage, by calling [CreateParticipantToken](https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_CreateParticipantToken.html). For each participant, you can pass in a custom `userId` and set of `attributes`. (**Important**: The `attributes` and `userId` request fields are exposed to all stage participants. These should not be used for personally identifying, confidential, or sensitive information.)
 
 Here is the network response to the request above:
 
@@ -181,6 +181,6 @@ Now Alice is broadcasting to multiple viewers, via the Amazon IVS Android Broadc
 ### Server-Side Composition
 <a name="demo-broadcast-stage-server-side"></a>
 
-For comparison, here is how [server-side composition](multiple-hosts-broadcasting-client-vs-server.md) works. (For details, see [Server-Side Composition](https://docs.aws.amazon.com//ivs/latest/RealTimeUserGuide/server-side-composition.html) in the *IVS Real-Time User Guide*.)
+For comparison, here is how [server-side composition](multiple-hosts-broadcasting-client-vs-server.md) works. (For details, see [Server-Side Composition](https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/server-side-composition.html) in the *IVS Real-Time User Guide*.)
 
 ![Broadcasting the stage: server-side composition.](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/images/Demo_Broadcast_the_Stage_Server_Side_Composition.png)

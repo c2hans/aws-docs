@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ConnectT
 
 The following table shows error messages that you might encounter when you attempt to connect to your SQL Server DB instance.
 
-****
 <a name="rds-sql-server-connection-troubleshooting-guidance"></a>
 
 - ** Could not open a connection to SQL Server – Microsoft SQL Server, Error: 53  **

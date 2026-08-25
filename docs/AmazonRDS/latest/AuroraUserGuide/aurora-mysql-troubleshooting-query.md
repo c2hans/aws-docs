@@ -57,7 +57,7 @@ SHOW PROFILE;
    Sometimes, when resources on the server are busy, it impacts every other operation on the server, including queries. You can also capture information periodically when queries are run or set up a `cron` job to capture information at useful intervals.
 
 **Performance Schema**
-The Performance Schema provides useful information about server runtime performance, while having minimal impact on that performance. This is different from the `information_schema`, which provides schema information about the DB instance. For more information, see [Overview of the Performance Schema for Performance Insights on Aurora MySQL](USER_PerfInsights.EnableMySQL.md).
+The Performance Schema provides useful information about server runtime performance, while having minimal impact on that performance. This is different from the `information_schema`, which provides schema information about the DB instance. For more information, see [Overview of the Performance Schema for Database Insights in Aurora MySQL](USER_PerfInsights.EnableMySQL.md).
 
 **Query optimizer trace**
 To understand why a particular [query plan was chosen for execution](https://dev.mysql.com/doc/refman/8.0/en/execution-plan-information.html), you can set up `optimizer_trace` to access the MySQL query optimizer.

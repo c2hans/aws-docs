@@ -68,7 +68,7 @@ The AWS account name that the finding applies to.
 
 The name of the company for the product that generated the finding. For control-based findings, the company is AWS.
 
-Security Hub CSPM populates this attribute automatically for each finding. You cannot update it using [`BatchImportFindings`](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_BatchImportFindings.html) or [`BatchUpdateFindings`](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_BatchUpdateFindings.html). The exception to this is when you use a custom integration. See [Integrating Security Hub CSPM with custom products](securityhub-custom-providers.md).
+Security Hub CSPM populates this attribute automatically for each finding. You cannot update it using [`BatchImportFindings`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html) or [`BatchUpdateFindings`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateFindings.html). The exception to this is when you use a custom integration. See [Integrating Security Hub CSPM with custom products](securityhub-custom-providers.md).
 
 When you use the Security Hub CSPM console to filter findings by company name, you use this attribute. When you use the Security Hub CSPM API to filter findings by company name, you use the `aws/securityhub/CompanyName` attribute under `ProductFields`. Security Hub CSPM does not synchronize those two attributes.
 
@@ -128,7 +128,7 @@ The [`Compliance`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_
 
 The likelihood that a finding accurately identifies the behavior or issue that it was intended to identify.
 
-`Confidence` should only be updated using [`BatchUpdateFindings`](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_BatchUpdateFindings.html).
+`Confidence` should only be updated using [`BatchUpdateFindings`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateFindings.html).
 
 Finding providers who want to provide a value for `Confidence` should use the `Confidence` attribute under `FindingProviderFields`. See [Updating findings with FindingProviderFields](finding-update-batchimportfindings.md#batchimportfindings-findingproviderfields).
 
@@ -145,7 +145,7 @@ Finding providers who want to provide a value for `Confidence` should use the `C
 
 The level of importance that is assigned to the resources that are associated with a finding.
 
-`Criticality` should only be updated by calling the [`BatchUpdateFindings`](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_BatchUpdateFindings.html) API operation. Don't update this object with [`BatchImportFindings`](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_BatchImportFindings.html).
+`Criticality` should only be updated by calling the [`BatchUpdateFindings`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateFindings.html) API operation. Don't update this object with [`BatchImportFindings`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html).
 
 Finding providers who want to provide a value for `Criticality` should use the `Criticality` attribute under `FindingProviderFields`. See [Updating findings with FindingProviderFields](finding-update-batchimportfindings.md#batchimportfindings-findingproviderfields).
 
@@ -297,7 +297,7 @@ The `Detection` object provides details about an attack sequence finding from Am
 
 The preceding fields are nested under the `FindingProviderFields` object, but have analogues of the same name as top-level ASFF fields. When a new finding is sent to Security Hub CSPM by a finding provider, Security Hub CSPM populates the `FindingProviderFields` object automatically if it is empty based on the corresponding top-level fields.
 
-Finding providers can update `FindingProviderFields` by using the[`BatchImportFindings`](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_BatchImportFindings.html) operation of the Security Hub CSPM API. Finding providers cannot update this object with [`BatchUpdateFindings`](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_BatchUpdateFindings.html).
+Finding providers can update `FindingProviderFields` by using the[`BatchImportFindings`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html) operation of the Security Hub CSPM API. Finding providers cannot update this object with [`BatchUpdateFindings`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateFindings.html).
 
 For details on how Security Hub CSPM handles updates from `BatchImportFindings` to `FindingProviderFields` and to the corresponding top-level attributes, see [Updating findings with FindingProviderFields](finding-update-batchimportfindings.md#batchimportfindings-findingproviderfields).
 
@@ -451,7 +451,7 @@ The [`NetworkPath`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API
 
 The [`Note`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Note.html) object specifies a user-defined note that you can add to a finding.
 
-A finding provider can provide an initial note for a finding, but cannot add notes after that. You can only update a note using [`BatchUpdateFindings`](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_BatchUpdateFindings.html).
+A finding provider can provide an initial note for a finding, but cannot add notes after that. You can only update a note using [`BatchUpdateFindings`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateFindings.html).
 
 **Example**
 
@@ -553,7 +553,7 @@ This field may also include information about the standard that includes the con
 
 Provides the name of the product that generated the finding. For control-based findings, the product name is Security Hub CSPM.
 
-Security Hub CSPM populates this attribute automatically for each finding. You cannot update it using [`BatchImportFindings`](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_BatchImportFindings.html) or [`BatchUpdateFindings`](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_BatchUpdateFindings.html). The exception to this is when you use a custom integration. See [Integrating Security Hub CSPM with custom products](securityhub-custom-providers.md).
+Security Hub CSPM populates this attribute automatically for each finding. You cannot update it using [`BatchImportFindings`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html) or [`BatchUpdateFindings`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateFindings.html). The exception to this is when you use a custom integration. See [Integrating Security Hub CSPM with custom products](securityhub-custom-providers.md).
 
 When you use the Security Hub CSPM console to filter findings by product name, you use this attribute.
 
@@ -570,7 +570,7 @@ By default, when initially generated by a service, findings are considered `ACTI
 
 The `ARCHIVED` state indicates that a finding should be hidden from view. Archived findings are not deleted immediately. You can search, review, and report on them. Security Hub CSPM automatically archives control-based findings if the associated resource is deleted, the resource does not exist, or the control is disabled.
 
-`RecordState` is intended for finding providers, and can be updated only by using the [`BatchImportFindings`](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_BatchImportFindings.html) operation. You cannot update it by using the [`BatchUpdateFindings`](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_BatchUpdateFindings.html) operation.
+`RecordState` is intended for finding providers, and can be updated only by using the [`BatchImportFindings`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html) operation. You cannot update it by using the [`BatchUpdateFindings`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateFindings.html) operation.
 
 To track the status of your investigation into a finding, use [`Workflow`](#asff-workflow) instead of `RecordState`.
 
@@ -587,7 +587,7 @@ If the record state changes from `ARCHIVED` to `ACTIVE`, and the workflow status
 
 Specifies the AWS Region from which the finding was generated.
 
-Security Hub CSPM populates this attribute automatically for each finding. You cannot update it using [`BatchImportFindings`](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_BatchImportFindings.html) or [`BatchUpdateFindings`](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_BatchUpdateFindings.html).
+Security Hub CSPM populates this attribute automatically for each finding. You cannot update it using [`BatchImportFindings`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html) or [`BatchUpdateFindings`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateFindings.html).
 
 **Example**
 
@@ -600,9 +600,9 @@ Security Hub CSPM populates this attribute automatically for each finding. You c
 
 Provides a list of findings that are related to the current finding.
 
-`RelatedFindings` should only be updated with the [`BatchUpdateFindings`](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_BatchUpdateFindings.html) API operation. You should not update this object with [`BatchImportFindings`](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_BatchImportFindings.html).
+`RelatedFindings` should only be updated with the [`BatchUpdateFindings`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateFindings.html) API operation. You should not update this object with [`BatchImportFindings`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html).
 
-For [`BatchImportFindings`](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_BatchImportFindings.html) requests, finding providers should use the `RelatedFindings` object under [`FindingProviderFields`](#asff-findingproviderfields).
+For [`BatchImportFindings`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchImportFindings.html) requests, finding providers should use the `RelatedFindings` object under [`FindingProviderFields`](#asff-findingproviderfields).
 
 To view descriptions of `RelatedFindings` attributes, see [`RelatedFinding`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_RelatedFinding.html) in the *AWS Security Hub API Reference*.
 
@@ -744,7 +744,7 @@ Provides a list of name-value string pairs that are associated with the finding.
 
 Finding providers should not use this field for data that the product generates. Instead, finding providers can use the `ProductFields` field for data that does not map to any standard AWS Security Finding Format field.
 
-These fields can only be updated using [`BatchUpdateFindings`](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_BatchUpdateFindings.html).
+These fields can only be updated using [`BatchUpdateFindings`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateFindings.html).
 
 **Example**
 
@@ -760,7 +760,7 @@ These fields can only be updated using [`BatchUpdateFindings`](https://docs.aws.
 
 Provides the veracity of a finding. Findings products can provide a value of `UNKNOWN` for this field. A findings product should provide a value for this field if there is a meaningful analog in the findings product's system. This field is typically populated by a user determination or action after investigating a finding.
 
-A finding provider can provide an initial value for this attribute, but cannot update it after that. You can only update this attribute by using [`BatchUpdateFindings`](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_BatchUpdateFindings.html).
+A finding provider can provide an initial value for this attribute, but cannot update it after that. You can only update this attribute by using [`BatchUpdateFindings`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateFindings.html).
 
 ```
 "VerificationState": "Confirmed"
@@ -844,7 +844,7 @@ The [`Workflow`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Wo
 
 This field is intended for customers to use with remediation, orchestration, and ticketing tools. It is not intended for finding providers.
 
-You can only update the `Workflow` field with [`BatchUpdateFindings`](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_BatchUpdateFindings.html). Customers can also update it from the console. See [Setting the workflow status of findings in Security Hub CSPM](findings-workflow-status.md).
+You can only update the `Workflow` field with [`BatchUpdateFindings`](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUpdateFindings.html). Customers can also update it from the console. See [Setting the workflow status of findings in Security Hub CSPM](findings-workflow-status.md).
 
 **Example**
 

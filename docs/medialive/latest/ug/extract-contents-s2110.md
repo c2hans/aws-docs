@@ -9,8 +9,6 @@ The content in a SMPTE 2110 source is always a set of streams consisting of one 
 
 Obtain identifying information from the content provider.
 
-****
-
 - **Video**
   - **Details:** The video SDP typically contains only one video. / **Information to obtain:** None
   - **Details:** The video SDP might contain more than one video.  / **Information to obtain:** Obtain the media index of the video that you want to extract.

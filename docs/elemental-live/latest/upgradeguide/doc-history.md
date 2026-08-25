@@ -10,8 +10,6 @@ The following table describes the documentation for this release of AWS Elementa
 + **Release notes: **[ current Release Notes](https://docs.aws.amazon.com/elemental-live/)
 + **Latest documentation update:** August 19, 2019
 
-****
-
 | Change | Description | Date |
 | --- | --- | --- |
 | Remove password information. | Removed information about default passwords. If you need assistance with a password, see your system administrator. | August 19, 2019 |

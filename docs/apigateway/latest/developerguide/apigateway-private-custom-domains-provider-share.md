@@ -17,7 +17,7 @@ The following considerations might impact how you provide access to your private
 + If the API consumer and API provider are in the same organization using AWS Organizations, the resource share is automatically accepted. You still need to create the resource share using AWS RAM.
 + If the API consumer and API provider are in the same organization using AWS Organizations and resource sharing within your organization is enabled, any principals in the organization that you share with are automatically granted access to the resource shares. There is no need for an invitation and you can skip the resource share.
 + If the API consumer doesn't accept the resource share within **12 hours**, the API provider must share the resource again.
-+ After you create the resource share, AWS RAM updates the `managementPolicy` for the Amazon API Gateway Management service for your private custom domain name to prevent access to principals without explicit `allow` access. For more information, see [Determining whether a request is allowed or denied within an account](https://docs.aws.amazon.com//IAM/latest/UserGuide/reference_policies_evaluation-logic.html#policy-eval-denyallow) in the IAM User Guide.
++ After you create the resource share, AWS RAM updates the `managementPolicy` for the Amazon API Gateway Management service for your private custom domain name to prevent access to principals without explicit `allow` access. For more information, see [Determining whether a request is allowed or denied within an account](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic.html#policy-eval-denyallow) in the IAM User Guide.
 
   The updated `managementPolicy` will look like the following:
 

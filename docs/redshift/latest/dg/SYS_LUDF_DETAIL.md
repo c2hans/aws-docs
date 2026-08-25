@@ -32,6 +32,7 @@ SYS\_LUDF\_DETAIL is visible only to superusers. For more information, see [Visi
 | total\_rows | bigint | The number of rows passed/returned to/from the call. |
 | input\_bytes | bigint | The number of bytes passed to the call. |
 | output\_bytes | bigint | The number of bytes the call produced. |
+| query\_uuid | character(36) | A globally unique identifier (UUID) of the query. |
 
 ## Sample queries
 <a name="SYS_LUDF_DETAIL-sample-queries"></a>

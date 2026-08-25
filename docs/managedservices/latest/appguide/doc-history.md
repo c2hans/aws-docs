@@ -11,13 +11,12 @@ The following table describes the documentation for this release of AMS.
 + **API version:** 2019-05-21
 + **Latest documentation update: **February 16, 2023
 
-****
-
 <table>
 <thead>
   <tr><th>Change</th><th>Description</th><th>Link</th></tr>
 </thead>
 <tbody>
+  <tr><td>Drift remediation not supported for CloudFormation-ingested stacks</td><td>Added a note that drift remediation is not supported by AMS for CloudFormation-ingested stacks, and removed the drift remediation mention from the ingest process overview.</td><td><a href="https://docs.aws.amazon.com/managedservices/latest/appguide/ams-cfn-ingest.html">AMS CloudFormation ingest</a></td></tr>
   <tr><td>TOC link removed</td><td>TOC <a href="https://docs.aws.amazon.com/glossary/latest/reference/glos-chap.html">AWS Glossary</a> link removed.</td><td>August 08, 2025</td></tr>
   <tr><td>Updated content: Migrating Workloads: Windows pre-ingestion validation</td><td>Updated section to include detailed steps for using the pre-WIGs validater script to validate that your Windows instance is ready for ingestion into your AMS account;.</td><td><a href="ex-migrate-instance-win-validation.md">Migrating workloads: Windows pre-ingestion validation</a></td></tr>
   <tr><td>Updated content, DMS configuration</td><td>an important note about the required role, dms-vpc-role.</td><td><a href="ex-dms-rsg-create-1.md">1: AWS DMS replication subnet group: Create</a></td></tr>

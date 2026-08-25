@@ -92,7 +92,7 @@ The `Resource` JSON policy element specifies the object or objects to which the 
 "Resource": "*"
 ```
 
-To see a list of ARC actions for zonal shift, see [ Actions defined by Amazon Route 53 Recovery Readiness](https://docs.aws.amazon.com//service-authorization/latest/reference/list_amazonroute53recoveryreadiness.html#amazonroute53recoveryreadiness-actions-as-permissions).
+To see a list of ARC actions for zonal shift, see [ Actions defined by Amazon Route 53 Recovery Readiness](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonroute53recoveryreadiness.html#amazonroute53recoveryreadiness-actions-as-permissions).
 
 To view examples of ARC identity-based policies for readiness check, see [Identity-based policy examples for readiness check in ARC](security_iam_id-based-policy-examples-readiness.md).
 
@@ -105,9 +105,9 @@ Administrators can use AWS JSON policies to specify who has access to what. That
 
 The `Condition` element specifies when statements execute based on defined criteria. You can create conditional expressions that use [condition operators](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html), such as equals or less than, to match the condition in the policy with values in the request. To see all AWS global condition keys, see [AWS global condition context keys](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html) in the *IAM User Guide*.
 
-To see a list of ARC actions for readiness check, see [ Condition keys for Amazon Route 53 Recovery Readiness](https://docs.aws.amazon.com//service-authorization/latest/reference/list_amazonroute53recoveryreadiness.html#amazonroute53recoveryreadiness-policy-keys)
+To see a list of ARC actions for readiness check, see [ Condition keys for Amazon Route 53 Recovery Readiness](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonroute53recoveryreadiness.html#amazonroute53recoveryreadiness-policy-keys)
 
-To see the actions and resources that you can use with a condition key with readiness check, see [ Actions defined by Amazon Route 53 Recovery Readiness](https://docs.aws.amazon.com//service-authorization/latest/reference/list_amazonroute53recoveryreadiness.html#amazonroute53recoveryreadiness-actions-as-permissions)
+To see the actions and resources that you can use with a condition key with readiness check, see [ Actions defined by Amazon Route 53 Recovery Readiness](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonroute53recoveryreadiness.html#amazonroute53recoveryreadiness-actions-as-permissions)
 
 To view examples of ARC identity-based policies for readiness check, see [Identity-based policy examples for readiness check in ARC](security_iam_id-based-policy-examples-readiness.md).
 
@@ -147,7 +147,7 @@ Temporary credentials provide short-term access to AWS resources and are automat
 
 When you use an IAM entity (user or role) to perform actions in AWS, you are considered a principal. Policies grant permissions to a principal. When you use some services, you might perform an action that then triggers another action in a different service. In this case, you must have permissions to perform both actions.
 
-To see whether an action in readiness check requires additional dependent actions in a policy, see [ Amazon Route 53 Recovery Readiness](https://docs.aws.amazon.com//service-authorization/latest/reference/list_amazonroute53recoveryreadiness.html)
+To see whether an action in readiness check requires additional dependent actions in a policy, see [ Amazon Route 53 Recovery Readiness](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonroute53recoveryreadiness.html)
 
 ## Service roles for readiness check
 <a name="security_iam_service-with-iam-readiness-roles-service"></a>

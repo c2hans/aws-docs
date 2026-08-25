@@ -12,7 +12,7 @@ With AWS IoT Core policies, you can control access to the AWS IoT Core data plan
 + Send and receive MQTT messages
 + Get or update a thing's device shadow
 
-For more information, see [AWS IoT Core policies](https://docs.aws.amazon.com//iot/latest/developerguide/iot-policies.html).
+For more information, see [AWS IoT Core policies](https://docs.aws.amazon.com/iot/latest/developerguide/iot-policies.html).
 
 **Use AWS IoT policy editor to create an AWS IoT policy**
 
@@ -29,7 +29,7 @@ For more information, see [AWS IoT Core policies](https://docs.aws.amazon.com//i
 
 1. (Optional) Add metadata to the policy by attaching tags as key-value pairs.
 
-   For more information about using tags in IAM, see [Tagging your AWS IoT resources](https://docs.aws.amazon.com//iot/latest/developerguide/tagging-iot.html) in the *AWS IoT Core Developer Guide*.
+   For more information about using tags in IAM, see [Tagging your AWS IoT resources](https://docs.aws.amazon.com/iot/latest/developerguide/tagging-iot.html) in the *AWS IoT Core Developer Guide*.
 
 1. Choose the **JSON** tab.
 

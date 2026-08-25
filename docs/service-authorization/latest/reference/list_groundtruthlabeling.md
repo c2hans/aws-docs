@@ -29,8 +29,6 @@ Amazon GroundTruth Labeling has no API operations that can be used in the `Actio
 
 The following actions are defined by Amazon GroundTruth Labeling but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 | Actions | Description | Resource types (\*required) | Condition keys | Access level |
 | --- | --- | --- | --- | --- |
 |   [AssociatePatchToManifestJob](https://docs.aws.amazon.com/sagemaker/latest/dg/sms-data-input.html#sms-console-create-manifest-file)  | Grants permission to associate a patch file with the manifest file to update the manifest file |  |   | Write |

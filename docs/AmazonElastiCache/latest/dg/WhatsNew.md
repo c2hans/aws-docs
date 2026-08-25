@@ -64,8 +64,6 @@ The following table describes important changes in each release of the *ElastiCa
 
 The following table describes the important changes to the *ElastiCache User Guide* before March 2018.
 
-****
-
 | Change | Description | Date Changed |
 | --- | --- | --- |
 | Support for Asia Pacific (Osaka-local) Region. | ElastiCache added support for the Asia Pacific (Osaka-local) Region. The Asia Pacific (Osaka) Region currently supports a single Availability Zone and is by invitation only. For more information, see the following:+  [Supported Regions](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/SupportedRegions.html)<br />+  [Supported cache node types](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/CacheNodes.SupportedTypes.html) | February 12, 2018 |

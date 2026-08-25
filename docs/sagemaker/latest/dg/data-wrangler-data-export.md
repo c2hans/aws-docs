@@ -24,7 +24,7 @@ You can export your data transformations to the following:
 **Important**
 We recommend that you use the IAM `AmazonSageMakerFullAccess` managed policy to grant AWS permission to use Data Wrangler. If you don't use the managed policy, you can use an IAM policy that gives Data Wrangler access to an Amazon S3 bucket. For more information on the policy, see [Security and Permissions](data-wrangler-security.md).
 
-When you export your data flow, you're charged for the AWS resources that you use. You can use cost allocation tags to organize and manage the costs of those resources. You create these tags for your user-profile and Data Wrangler automatically applies them to the resources used to export the data flow. For more information, see [Using Cost Allocation Tags](https://docs.aws.amazon.com//awsaccountbilling/latest/aboutv2/cost-alloc-tags.html).
+When you export your data flow, you're charged for the AWS resources that you use. You can use cost allocation tags to organize and manage the costs of those resources. You create these tags for your user-profile and Data Wrangler automatically applies them to the resources used to export the data flow. For more information, see [Using Cost Allocation Tags](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html).
 
 ## Export to Amazon S3
 <a name="data-wrangler-data-export-s3"></a>
@@ -91,7 +91,7 @@ You can choose **Create job** in the Data Wrangler flow to view the instructions
 
 1. Choose the destination nodes that you want to export.
 
-1. (Optional) Specify a AWS KMS key ARN. A AWS KMS key is a cryptographic key that you can use to protect your data. For more information about AWS KMS keys, see [AWS Key Management Service](https://docs.aws.amazon.com//kms/latest/developerguide/overview.html).
+1. (Optional) Specify a AWS KMS key ARN. A AWS KMS key is a cryptographic key that you can use to protect your data. For more information about AWS KMS keys, see [AWS Key Management Service](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html).
 
 1. (Optional) Under **Trained parameters**. choose **Refit** if you've done the following:
    + Sampled your dataset
@@ -456,7 +456,7 @@ Create a job from the **Data flow** page and choose the destination nodes that y
 
 1. Choose the destination nodes that you want to export.
 
-1. (Optional) For **Output KMS Key**, specify an ARN, ID, or alias of an AWS KMS key. A KMS key is a cryptographic key. You can use the key to encrypt the output data from the job. For more information about AWS KMS keys, see [AWS Key Management Service](https://docs.aws.amazon.com//kms/latest/developerguide/overview.html).
+1. (Optional) For **Output KMS Key**, specify an ARN, ID, or alias of an AWS KMS key. A KMS key is a cryptographic key. You can use the key to encrypt the output data from the job. For more information about AWS KMS keys, see [AWS Key Management Service](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html).
 
 1. The following image shows the **Configure job** page with the **Job configuration** tab open.
 ![Example data flow create job page in the Data Wrangler console.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/studio/mohave/destination-nodes/destination-nodes-configure-job.png)

@@ -9,5 +9,6 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 **Resource types**
 + [AWS::EMRContainers::Endpoint](aws-resource-emrcontainers-endpoint.md)
++ [AWS::EMRContainers::JobRun](aws-resource-emrcontainers-jobrun.md)
 + [AWS::EMRContainers::SecurityConfiguration](aws-resource-emrcontainers-securityconfiguration.md)
 + [AWS::EMRContainers::VirtualCluster](aws-resource-emrcontainers-virtualcluster.md)

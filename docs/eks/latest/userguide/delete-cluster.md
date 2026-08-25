@@ -19,6 +19,7 @@ You can delete a cluster with `eksctl`, the AWS Management Console, or the AWS C
 + Amazon Managed Service for Prometheus resources are outside of the cluster lifecycle and need to be maintained independent of the cluster. When you delete your cluster, make sure to also delete any applicable scrapers to stop applicable costs. For more information, see [Find and delete scrapers](https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-collector-how-to.html#AMP-collector-list-delete) in the *Amazon Managed Service for Prometheus User Guide*.
 + To remove a connected cluster, see [Deregister a Kubernetes cluster from the Amazon EKS console](deregister-connected-cluster.md)
 + Before you can delete a cluster, make sure deletion protection is disabled for your cluster.
++ If your cluster has any EKS Capabilities (ACK, Argo CD, or kro), you must delete them before you can delete the cluster. For more information, see [Delete a capability](working-with-capabilities.md#capabilities-delete).
 
 ### Considerations for EKS Auto Mode
 <a name="_considerations_for_eks_auto_mode"></a>
@@ -85,7 +86,7 @@ For instructions on how to install or upgrade `eksctl`, see [Installation](https
 ## Delete cluster (AWS console)
 <a name="delete_cluster_shared_aws_console"></a>
 
-1. Go through the [prerequisite steps](#prerequisite-steps). After doing so, delete all node groups and Fargate profiles.
+1. Go through the [prerequisite steps](#prerequisite-steps). After doing so, delete all node groups, Fargate profiles, and capabilities.
 
    1. Open the [Amazon EKS console](https://console.aws.amazon.com/eks/home#/clusters).
 
@@ -96,6 +97,8 @@ For instructions on how to install or upgrade `eksctl`, see [Installation](https
 The node groups listed are [managed node groups](managed-node-groups.md) only.
 
    1. Choose a **Fargate Profile** to delete, select **Delete**, enter the name of the profile, and then choose **Delete**. Delete all Fargate profiles in the cluster.
+
+   1. Choose the **Capabilities** tab and choose a capability to delete. Choose **Delete capability**, enter the name of the capability, and then choose **Delete**. Delete all capabilities in the cluster. For more information, see [Delete a capability](working-with-capabilities.md#capabilities-delete).
 
 1. Delete all [self-managed node AWS CloudFormation stacks](https://docs.aws.amazon.com/eks/latest/userguide/worker).
 
@@ -124,7 +127,7 @@ The node groups listed are [managed node groups](managed-node-groups.md) only.
 ## Delete cluster (AWS CLI)
 <a name="delete_cluster_shared_aws_cli"></a>
 
-1. Go through the [prerequisite steps](#prerequisite-steps). After doing so, delete all node groups and Fargate profiles.
+1. Go through the [prerequisite steps](#prerequisite-steps). After doing so, delete all node groups, Fargate profiles, and capabilities.
 
    1. List the node groups in your cluster with the following command.
 
@@ -150,6 +153,18 @@ The node groups listed are [managed node groups](managed-node-groups.md) only.
 
       ```
       aws eks delete-fargate-profile --fargate-profile-name my-fargate-profile --cluster-name my-cluster
+      ```
+
+   1. List the capabilities on your cluster with the following command.
+
+      ```
+      aws eks list-capabilities --cluster-name my-cluster
+      ```
+
+   1. Delete each capability with the following command. Delete all capabilities in the cluster. For more information, see [Delete a capability](working-with-capabilities.md#capabilities-delete).
+
+      ```
+      aws eks delete-capability --cluster-name my-cluster --capability-name my-capability-name
       ```
 
 1. Delete all [self-managed node AWS CloudFormation stacks](https://docs.aws.amazon.com/eks/latest/userguide/worker).

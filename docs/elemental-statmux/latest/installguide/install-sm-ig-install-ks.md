@@ -18,7 +18,6 @@ This is version 2.20 of the AWS Elemental Statmux documentation. This is the lat
    ```
 
 1. Use the arrow keys to select each option and complete the field, using the instructions in the following table as a guide.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-statmux/latest/installguide/install-sm-ig-install-ks.html)
 
    The operating system is installed.

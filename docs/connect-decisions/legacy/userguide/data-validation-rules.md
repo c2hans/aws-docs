@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/data-
 
 The validations performed prior to forecast creation are below. For more information, see [Demand Planning](required_entities.md).
 
-****
-
 | Rule Type | Rule | Datasets | Description | Export error records? |
 | --- | --- | --- | --- | --- |
 | Data Structure Validation | Mandatory columns existence validation | Product, Outbound order line, Supplementary time series | Verifies presence of critical columns in datasets in required datasets:<br />Outbound order line: product\_id, order\_date, final\_quantity\_requested<br />Product: id, description<br />Verifies presence of critical columns in recommended datasets, if provided:<br />Supplementary Time Series: id, order\_date, time\_series\_name, time\_series\_value | No |

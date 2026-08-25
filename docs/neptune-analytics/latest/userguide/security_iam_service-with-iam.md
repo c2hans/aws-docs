@@ -57,7 +57,7 @@ Administrators can use AWS JSON policies to specify who has access to what. That
 
 The `Action` element of a JSON policy describes the actions that you can use to allow or deny access in a policy. Include actions in a policy to grant permissions to perform the associated operation.
 
-To see a list of Neptune Analytics actions, see [Actions Defined by Neptune Analytics ](https://docs.aws.amazon.com//service-authorization/latest/reference/list_amazonneptuneanalytics.html) in the *Service Authorization Reference*.
+To see a list of Neptune Analytics actions, see [Actions Defined by Neptune Analytics ](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonneptuneanalytics.html) in the *Service Authorization Reference*.
 
 Policy actions in Neptune Analytics use the following prefix before the action:
 
@@ -89,7 +89,7 @@ The `Resource` JSON policy element specifies the object or objects to which the 
 "Resource": "*"
 ```
 
-To see a list of Neptune Analytics resource types and their ARNs, see [Resources Defined by Neptune Analytics ](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_your_service.html#your_service-resources-for-iam-policies) in the *Service Authorization Reference*. To learn with which actions you can specify the ARN of each resource, see [Actions Defined by Neptune Analytics ](https://docs.aws.amazon.com//service-authorization/latest/reference/list_amazonneptuneanalytics.html).
+To see a list of Neptune Analytics resource types and their ARNs, see [Resources Defined by Neptune Analytics ](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_your_service.html#your_service-resources-for-iam-policies) in the *Service Authorization Reference*. To learn with which actions you can specify the ARN of each resource, see [Actions Defined by Neptune Analytics ](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonneptuneanalytics.html).
 
 To view examples of Neptune Analytics identity-based policies, see [Identity-based policy examples for Neptune Analytics](security_iam_id-based-policy-examples.md).
 
@@ -102,7 +102,7 @@ Administrators can use AWS JSON policies to specify who has access to what. That
 
 The `Condition` element specifies when statements execute based on defined criteria. You can create conditional expressions that use [condition operators](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html), such as equals or less than, to match the condition in the policy with values in the request. To see all AWS global condition keys, see [AWS global condition context keys](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html) in the *IAM User Guide*.
 
-To see a list of Neptune Analytics condition keys, see [Condition Keys for Neptune Analytics ](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_your_service.html#your_service-policy-keys) in the *Service Authorization Reference*. To learn with which actions and resources you can use a condition key, see [Actions Defined by Neptune Analytics ](https://docs.aws.amazon.com//service-authorization/latest/reference/list_amazonneptuneanalytics.html).
+To see a list of Neptune Analytics condition keys, see [Condition Keys for Neptune Analytics ](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_your_service.html#your_service-policy-keys) in the *Service Authorization Reference*. To learn with which actions and resources you can use a condition key, see [Actions Defined by Neptune Analytics ](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonneptuneanalytics.html).
 
 To view examples of Neptune Analytics identity-based policies, see [Identity-based policy examples for Neptune Analytics](security_iam_id-based-policy-examples.md).
 

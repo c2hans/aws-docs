@@ -13,8 +13,6 @@ Drill-down functionality is added automatically for dates when you associate a d
 
 Use the following table to identify the field wells/on-visual editors that support drill-down for each visual type.
 
-****
-
 | Visual type | Field well or on-visual editor |
 | --- | --- |
 | Bar charts (all horizontal) | Y axis and Group/Color |

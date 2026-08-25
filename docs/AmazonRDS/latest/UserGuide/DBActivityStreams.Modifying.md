@@ -57,8 +57,6 @@ When you unlock your audit policy, it becomes read/write. You can edit your audi
 
 To modify the activity stream state for the database instance, use the [modify-activity-stream](https://docs.aws.amazon.com/cli/latest/reference/rds/modify-activity-stream.html) AWS CLI command.
 
-****
-
 | Option | Required? | Description |
 | --- | --- | --- |
 | `--resource-arn {{my-instance-ARN}}` | Yes | The Amazon Resource Name (ARN) of your RDS database instance. |

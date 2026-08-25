@@ -21,7 +21,7 @@ Below the **Queues** table, a **Routing profiles** table appears, as shown in th
 ## Example 2: Queues table -> Agents table
 <a name="one-choose-drill-downs-example2"></a>
 
-At the **Queues** table, choose **View agents**. Below the **Queues** table, an **Agents** table appears. It is filtered to display all the agents working that queue, as shown in the following image. The agents may be associated with different routing profiles.
+At the **Queues** table, choose **View agents**. Below the **Queues** table, an **Agents** table appears. It is filtered to display all the agents working that queue, as shown in the following image. The agents might be associated with different routing profiles.
 
 ![The queues table, view agents option, the agents table.](http://docs.aws.amazon.com/connect/latest/adminguide/images/rtm-quick-filter-queues-agents.png)
 

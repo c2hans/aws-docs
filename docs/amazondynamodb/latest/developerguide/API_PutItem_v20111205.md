@@ -44,8 +44,6 @@ content-type: application/x-amz-json-1.0
     "ReturnValues":"ReturnValuesConstant"}
 ```
 
-****
-
 |  Name  |  Description  |  Required |
 | --- | --- | --- |
 |  TableName  | The name of the table to contain the item.<br />Type: String |  Yes  |
@@ -78,8 +76,6 @@ content-length: 85
 }
 ```
 
-****
-
 |  Name  |  Description  |
 | --- | --- |
 |  Attributes  | Attribute values before the put operation, but only if the `ReturnValues` parameter is specified as `ALL_OLD` in the request.<br />Type: Map of attribute name-value pairs. |
@@ -87,8 +83,6 @@ content-length: 85
 
 ## Special errors
 <a name="API_PutItem_SpecialErrors"></a>
-
-****
 
 |  Error  |  Description  |
 | --- | --- |

@@ -20,7 +20,7 @@ For more information about connecting to Multi-AZ DB clusters, see the following
 + [Reader endpoints](#multi-az-db-clusters-concepts-connection-management-endpoints-reader)
 + [Instance endpoints](#multi-az-db-clusters-concepts-connection-management-endpoints-instance)
 + [High availability connections](#multi-az-db-clusters-concepts-connection-management-endpoints-ha)
-+ [Connecting to Multi-AZ DB clusters with the AWS drivers for Amazon RDSConnecting to Multi-AZ DB clusters with the Amazon Web Services (AWS) JDBC Driver](maz-cluster-connect-drivers.md)
++ [Connecting to Multi-AZ DB clusters with the AWS drivers for Amazon RDS](maz-cluster-connect-drivers.md)
 
 ## Types of Multi-AZ DB cluster endpoints
 <a name="multi-az-db-clusters-concepts-connection-management-endpoint-types"></a>

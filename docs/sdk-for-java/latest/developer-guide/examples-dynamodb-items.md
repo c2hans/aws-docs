@@ -5,12 +5,12 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/exam
 # Work with items in DynamoDB
 <a name="examples-dynamodb-items"></a>
 
-In DynamoDB, an item is a collection of *attributes*, each of which has a *name* and a *value*. An attribute value can be a scalar, set, or document type. For more information, see [Naming Rules and Data Types](https://docs.aws.amazon.com//amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html) in the Amazon DynamoDB Developer Guide.
+In DynamoDB, an item is a collection of *attributes*, each of which has a *name* and a *value*. An attribute value can be a scalar, set, or document type. For more information, see [Naming Rules and Data Types](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html) in the Amazon DynamoDB Developer Guide.
 
 ## Retrieve (get) an item from a table
 <a name="dynamodb-get-item"></a>
 
-Call the DynamoDbClient’s `getItem` method and pass it a [GetItemRequest](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/dynamodb/model/GetItemRequest.html) object with the table name and primary key value of the item you want. It returns a [GetItemResponse](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/dynamodb/model/GetItemResponse.html) object with all of the attributes for that item. You can specify one or more [projection expressions](https://docs.aws.amazon.com//amazondynamodb/latest/developerguide/Expressions.ProjectionExpressions.html) in the `GetItemRequest` to retrieve specific attributes.
+Call the DynamoDbClient’s `getItem` method and pass it a [GetItemRequest](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/dynamodb/model/GetItemRequest.html) object with the table name and primary key value of the item you want. It returns a [GetItemResponse](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/dynamodb/model/GetItemResponse.html) object with all of the attributes for that item. You can specify one or more [projection expressions](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Expressions.ProjectionExpressions.html) in the `GetItemRequest` to retrieve specific attributes.
 
 You can use the returned `GetItemResponse` object’s `item()` method to retrieve a [Map](https://docs.oracle.com/javase/8/docs/api/index.html?java/util/Map.html) of key (String) and value ([AttributeValue](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/dynamodb/model/AttributeValue.html)) pairs that are associated with the item.
 
@@ -302,5 +302,5 @@ See the [complete example](https://github.com/awsdocs/aws-doc-sdk-examples/blob/
 
 ## More information
 <a name="more-information"></a>
-+  [Guidelines for Working with Items](https://docs.aws.amazon.com//amazondynamodb/latest/developerguide/best-practices.html) in the Amazon DynamoDB Developer Guide
-+  [Working with Items in DynamoDB](https://docs.aws.amazon.com//amazondynamodb/latest/developerguide/WorkingWithItems.html) in the Amazon DynamoDB Developer Guide
++  [Guidelines for Working with Items](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/best-practices.html) in the Amazon DynamoDB Developer Guide
++  [Working with Items in DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithItems.html) in the Amazon DynamoDB Developer Guide

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/diagnosing-rul
 <a name="diagnosing-rules"></a>
 
 **Help us improve this topic**
- [Let us know what would help make it better](https://docs.aws.amazon.com//forms/aws-doc-feedback?hidden_service_name=IoT%20Docs&topic_url=http://docs.aws.amazon.com/en_us/iot/latest/developerguide/diagnosing-rules.html)
+ [Let us know what would help make it better](https://docs.aws.amazon.com/forms/aws-doc-feedback?hidden_service_name=IoT%20Docs&topic_url=http://docs.aws.amazon.com/en_us/iot/latest/developerguide/diagnosing-rules.html)
 
 This section describes some of the things to check when you encounter a problem with rule.
 

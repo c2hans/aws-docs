@@ -20,8 +20,6 @@ You can use the Amazon RDS Performance Insights dashboard to know which plans co
 
  For example, the top SQL statements at a given time might be using the plans shown in the following table.
 
-****
-
 | Top SQL | Plan |
 | --- | --- |
 | SELECT SUM(amount\_sold) FROM sales WHERE prod\_id = 10 | Plan A |

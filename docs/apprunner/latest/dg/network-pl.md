@@ -13,7 +13,7 @@ With your App Runner service private, you have complete control over incoming tr
 
 **Note**
 If your App Runner application requires source IP/CIDR incoming traffic control rules, you must use security group rules for private endpoints instead of [WAF web ACLs](waf.md). This is because we currently don’t support forwarding request source IP data to App Runner private services associated with WAF. As a result, source IP rules for App Runner private services that are associated with WAF web ACLs do not adhere to IP based rules.
-To learn more about infrastructure security and security groups, including best practices, see the following topics in the *Amazon VPC User Guide*: [Control network traffic](https://docs.aws.amazon.com/vpc/latest/userguide/infrastructure-security.html#control-network-traffic) and [Control traffic to your AWS resources using security groups](https://docs.aws.amazon.com//vpc/latest/userguide/vpc-security-groups.html).
+To learn more about infrastructure security and security groups, including best practices, see the following topics in the *Amazon VPC User Guide*: [Control network traffic](https://docs.aws.amazon.com/vpc/latest/userguide/infrastructure-security.html#control-network-traffic) and [Control traffic to your AWS resources using security groups](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-groups.html).
 
 When your App Runner service is private, you can access your service from within an Amazon VPC. An internet gateway, NAT device, or VPN connection isn’t required.
 

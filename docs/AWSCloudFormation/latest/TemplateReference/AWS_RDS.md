@@ -8,6 +8,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 <a name="AWS_RDS"></a>
 
 **Resource types**
++ [AWS::RDS::ClusterSnapshot](aws-resource-rds-clustersnapshot.md)
 + [AWS::RDS::CustomDBEngineVersion](aws-resource-rds-customdbengineversion.md)
 + [AWS::RDS::DBCluster](aws-resource-rds-dbcluster.md)
 + [AWS::RDS::DBClusterParameterGroup](aws-resource-rds-dbclusterparametergroup.md)
@@ -19,6 +20,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::RDS::DBSecurityGroup](aws-resource-rds-dbsecuritygroup.md)
 + [AWS::RDS::DBSecurityGroupIngress](aws-resource-rds-dbsecuritygroupingress.md)
 + [AWS::RDS::DBShardGroup](aws-resource-rds-dbshardgroup.md)
++ [AWS::RDS::DBSnapshot](aws-resource-rds-dbsnapshot.md)
 + [AWS::RDS::DBSubnetGroup](aws-resource-rds-dbsubnetgroup.md)
 + [AWS::RDS::EventSubscription](aws-resource-rds-eventsubscription.md)
 + [AWS::RDS::GlobalCluster](aws-resource-rds-globalcluster.md)

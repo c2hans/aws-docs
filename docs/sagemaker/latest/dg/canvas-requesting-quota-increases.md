@@ -13,7 +13,7 @@ Amazon SageMaker Canvas uses the following services to process the requests of y
 + Amazon SageMaker Autopilot
 + Amazon SageMaker Studio Classic domain
 
-For a list of the available quotas for SageMaker Canvas operations, see [Amazon SageMaker AI endpoints and quotas](https://docs.aws.amazon.com//general/latest/gr/sagemaker.html).
+For a list of the available quotas for SageMaker Canvas operations, see [Amazon SageMaker AI endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/sagemaker.html).
 
 ## Request an increase for instances to build custom models
 <a name="canvas-requesting-quota-increases-instances"></a>

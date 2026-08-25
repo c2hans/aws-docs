@@ -34,7 +34,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/setup-vpc-for-glue-access
    In the security group detail page, select **Edit inbound rules**.
 
    The inbound rule looks similar to this:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/glue/latest/dg/setup-vpc-for-glue-access.html)
 
 1. Add rules for outbound traffic.
@@ -42,15 +41,13 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/setup-vpc-for-glue-access
    In the security group detail page, select **Edit outbound rules**.
 
    If you security group allows all outbound traffic, you do not need separate rules. For example:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/glue/latest/dg/setup-vpc-for-glue-access.html)
 
    If your network architecture is designed for you to restrict outbound traffic, create the following outbound rules:
 
    Create a self-referencing rule where **Type** is `All TCP`, **Protocol** is `TCP`, **Port Range** includes all ports, and **Destination** is {{database-sg-id}}. Verify that the security group you have entered for **Destination** is the same as the security group you are editing.
 
-    If using an Amazon S3 VPC endpoint, add an HTTPS rule to allow traffic from the VPC to Amazon S3. Create a rule where **Type** is `HTTPS`, **Protocol** is `TCP`, **Port Range** is `443` and **Destination** is the ID of the managed prefix list for the Amazon S3 gateway endpoint, {{s3-prefix-list-id}}. For more information about prefix lists and Amazon S3 gateway endpoints, see [Gateway endpoints for Amazon S3](https://docs.aws.amazon.com//vpc/latest/privatelink/vpc-endpoints-s3.html) in the Amazon VPC documentation.
+    If using an Amazon S3 VPC endpoint, add an HTTPS rule to allow traffic from the VPC to Amazon S3. Create a rule where **Type** is `HTTPS`, **Protocol** is `TCP`, **Port Range** is `443` and **Destination** is the ID of the managed prefix list for the Amazon S3 gateway endpoint, {{s3-prefix-list-id}}. For more information about prefix lists and Amazon S3 gateway endpoints, see [Gateway endpoints for Amazon S3](https://docs.aws.amazon.com/vpc/latest/privatelink/vpc-endpoints-s3.html) in the Amazon VPC documentation.
 
    For example:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/glue/latest/dg/setup-vpc-for-glue-access.html)

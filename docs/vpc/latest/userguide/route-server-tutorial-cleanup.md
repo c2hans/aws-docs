@@ -18,8 +18,6 @@ Use the following procedure to disable route server propagation.
 ------
 #### [ AWS Management Console ]
 
-****
-
 1. Open the Amazon VPC console at [https://console.aws.amazon.com/vpc/](https://console.aws.amazon.com/vpc/).
 
 1. Select the route server for which you want to disable propagation.
@@ -56,8 +54,6 @@ Use the following procedure to delete route server peers.
 ------
 #### [ AWS Management Console ]
 
-****
-
 1. Open the Amazon VPC console at [https://console.aws.amazon.com/vpc/](https://console.aws.amazon.com/vpc/).
 
 1. In the navigation path, choose **Route servers** > **Route server peers**.
@@ -89,8 +85,6 @@ Use the following procedure to delete route server endpoints.
 
 ------
 #### [ AWS Management Console ]
-
-****
 
 1. Open the Amazon VPC console at [https://console.aws.amazon.com/vpc/](https://console.aws.amazon.com/vpc/).
 
@@ -132,8 +126,6 @@ Use the following procedure to disassociate the route server from the VPC.
 ------
 #### [ AWS Management Console ]
 
-****
-
 1. Open the Amazon VPC console at [https://console.aws.amazon.com/vpc/](https://console.aws.amazon.com/vpc/).
 
 1. Select the route server for which you want to disassociate.
@@ -167,8 +159,6 @@ Use the following procedure to delete the route server.
 
 ------
 #### [ AWS Management Console ]
-
-****
 
 1. Open the Amazon VPC console at [https://console.aws.amazon.com/vpc/](https://console.aws.amazon.com/vpc/).
 

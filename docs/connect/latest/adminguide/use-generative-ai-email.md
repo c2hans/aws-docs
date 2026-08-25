@@ -71,7 +71,7 @@ These options are shown in the following image.
 
 ![The agent workspace when an agent chooses Reply all to an email contact.](http://docs.aws.amazon.com/connect/latest/adminguide/images/qic-generated-email-responses.png)
 
-By default, the content copied from generated email responses in raw HTML format works best with Connect Customer's rich text editor for agents responding to email contacts. To customize the output of this response, edit **QinConnectEmailGenerativeAnswerPrompt** as part of the **QinConnectEmailGenerativeAnswerAIAgent** to output the response in your preferred format (for example, plain text or markdown).
+By default, the content copied from generated email responses in raw HTML format works best with the Connect Customer rich text editor for agents responding to email contacts. To customize the output of this response, edit **QinConnectEmailGenerativeAnswerPrompt** as part of the **QinConnectEmailGenerativeAnswerAIAgent** to output the response in your preferred format (for example, plain text or markdown).
 
 **Important**
 You cannot use information from Connect Customer Customer Profiles, Connect Customer Cases, email templates, and quick responses in generated responses.
@@ -84,7 +84,7 @@ The EmailGenerativeAnswer and EmailQueryReformulation prompts are used to genera
 For all proactive responses shown when the agent accepts an email contact, the agent can:
 + Choose the Show more or Show less icons to expand and collapse the response shown in the Connect assistant panel.
 + Choose the Thumbs up or Thumbs down icons to provide immediate feedback to their contact center manager so they can improve the AI agent responses. For more information, see [TRANSCRIPT\_RESULT\_FEEDBACK](monitor-ai-agents.md#documenting-cw-events-ih).
-+ Choose **Copy** to copy the contents of the response. By default, the content copied from any of the responses are in raw HTML format to work best with Connect Customer's rich text editor for agents responding to email contacts. To customize the output of this response, edit the prompts and agents to output the response in your preferred format (for example, plain text or markdown).
++ Choose **Copy** to copy the contents of the response. By default, the content copied from any of the responses are in raw HTML format to work best with the Connect Customer rich text editor for agents responding to email contacts. To customize the output of this response, edit the prompts and agents to output the response in your preferred format (for example, plain text or markdown).
 
 ## Configure generative email responses
 <a name="configuration-steps"></a>

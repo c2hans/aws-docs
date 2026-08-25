@@ -9,7 +9,7 @@ Amazon Q Developer is a generative artificial intelligence (AI) powered conversa
 
 This document describes how to use Amazon Q Developer to help you troubleshoot unsuccessful CloudFormation deployments. This feature is designed to help you quickly identify and resolve issues encountered during stack deployment.
 
- Powered by Amazon Bedrock: Amazon Q is built on Amazon Bedrock and includes [automated abuse detection](https://docs.aws.amazon.com//bedrock/latest/userguide/abuse-detection.html) implemented in Amazon Bedrock to enforce safety, security, and the responsible use of AI.
+ Powered by Amazon Bedrock: Amazon Q is built on Amazon Bedrock and includes [automated abuse detection](https://docs.aws.amazon.com/bedrock/latest/userguide/abuse-detection.html) implemented in Amazon Bedrock to enforce safety, security, and the responsible use of AI.
 
 **Topics**
 + [Features](#cfn-troubleshooting-with-amazon-q-features)

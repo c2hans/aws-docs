@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/tags-esm.html
 # Using tags on event source mappings
 <a name="tags-esm"></a>
 
-You can tag event source mappings to organize and manage your resources. Tags are free-form key-value pairs associated with your resources that are supported across AWS services. For more information about use cases for tags, see [Common tagging strategies](https://docs.aws.amazon.com//tag-editor/latest/userguide/best-practices-and-strats.html#tag-strategies) in the *Tagging AWS Resources and Tag Editor Guide*.
+You can tag event source mappings to organize and manage your resources. Tags are free-form key-value pairs associated with your resources that are supported across AWS services. For more information about use cases for tags, see [Common tagging strategies](https://docs.aws.amazon.com/tag-editor/latest/userguide/best-practices-and-strats.html#tag-strategies) in the *Tagging AWS Resources and Tag Editor Guide*.
 
 Event source mappings are associated with functions, which can have their own tags. Event source mappings do not automatically inherit tags from functions. You can use the AWS Lambda API to view and update tags. You can also view and update tags while managing a specific event source mapping in the Lambda console, including those using Provisioned Mode for Amazon SQS.
 
@@ -47,7 +47,7 @@ You can add the tags as part of the same user interface you use to create or upd
 
 1. Under **Tags**, choose **Add new tag**
 
-1. In the **Key** field, enter your tag key. For information about tagging restrictions, see [Tag naming limits and requirements](https://docs.aws.amazon.com//tag-editor/latest/userguide/best-practices-and-strats.html#id_tags_naming_best_practices) in the *Tagging AWS Resources and Tag Editor Guide*.
+1. In the **Key** field, enter your tag key. For information about tagging restrictions, see [Tag naming limits and requirements](https://docs.aws.amazon.com/tag-editor/latest/userguide/best-practices-and-strats.html#id_tags_naming_best_practices) in the *Tagging AWS Resources and Tag Editor Guide*.
 
 1. Choose **Add**.
 
@@ -63,7 +63,7 @@ You can add the tags as part of the same user interface you use to create or upd
 
 1. Choose **Add new tag**.
 
-1. In the **Key** field, enter your tag key. For information about tagging restrictions, see [Tag naming limits and requirements](https://docs.aws.amazon.com//tag-editor/latest/userguide/best-practices-and-strats.html#id_tags_naming_best_practices) in the *Tagging AWS Resources and Tag Editor Guide*.
+1. In the **Key** field, enter your tag key. For information about tagging restrictions, see [Tag naming limits and requirements](https://docs.aws.amazon.com/tag-editor/latest/userguide/best-practices-and-strats.html#id_tags_naming_best_practices) in the *Tagging AWS Resources and Tag Editor Guide*.
 
 1. Choose **Save**.
 

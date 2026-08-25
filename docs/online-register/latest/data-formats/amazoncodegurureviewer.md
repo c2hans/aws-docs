@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon CodeGuru Reviewer provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="codeguru-reviewer-CreateConnectionToken"></a>[CreateConnectionToken](https://docs.aws.amazon.com/codeguru/latest/reviewer-api/Welcome.html) | Perform webbased oauth handshake for 3rd party providers | Read |

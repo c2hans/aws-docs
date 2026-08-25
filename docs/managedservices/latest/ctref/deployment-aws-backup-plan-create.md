@@ -14,8 +14,6 @@ Create an AWS Backup plan, a policy expression that defines when and how you wan
 ## Change Type Details
 <a name="ct-2hyozbpa0sx0m-DABc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2hyozbpa0sx0m |

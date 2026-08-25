@@ -24,8 +24,6 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_keyspaces-actions-as-permissions).
 
-****
-
 - **   CreateKeyspace  **
   - **SDK client:** keyspaces
   - **IAM action:**  [cassandra:Create](#list_keyspaces-action-Create)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
@@ -183,8 +181,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
 
-****
-
 - **   [Alter](https://docs.aws.amazon.com/keyspaces/latest/devguide/)  **
   - **Description:** Grants permission to alter a keyspace or table
   - **Resource types (\*required):** [keyspace](#list_keyspaces-resource-keyspace) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_keyspaces-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_keyspaces-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_keyspaces-aws_TagKeys)
@@ -318,8 +314,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
 
-****
-
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
 |  [keyspace](https://docs.aws.amazon.com/keyspaces/latest/devguide/what-is.html)  | arn:${Partition}:cassandra:${Region}:${Account}:/keyspace/${KeyspaceName}/ | [aws:ResourceTag/${TagKey}](#list_keyspaces-aws_ResourceTag___TagKey_) |
@@ -330,8 +324,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_keyspaces-policy-keys"></a>
 
 Amazon Keyspaces (for Apache Cassandra) defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

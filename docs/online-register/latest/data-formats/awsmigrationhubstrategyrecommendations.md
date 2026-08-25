@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsm
 
 AWS Migration Hub Strategy Recommendations provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="migrationhub-strategy-GetAntiPattern"></a>[GetAntiPattern](https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReference/API_GetAntiPattern.html) | Get details of each anti pattern that collector should look at in a customer's environment | Read |

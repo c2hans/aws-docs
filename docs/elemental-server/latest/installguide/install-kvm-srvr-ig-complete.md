@@ -9,8 +9,6 @@ This is version 2.18 of the AWS Elemental Server documentation. This is the late
 
 You have now installed and performed basic configuration of AWS Elemental Server. To complete the configuration, refer to the following:
 
-****
-
 | Scenario | Guide |
 | --- | --- |
 | AWS Elemental Server in a stand-alone configuration. AWS Elemental Server is not managed by AWS Elemental Conductor File. | [AWS Elemental Server Configuration Guide](https://docs.aws.amazon.com/elemental-server/latest/configguide/) |

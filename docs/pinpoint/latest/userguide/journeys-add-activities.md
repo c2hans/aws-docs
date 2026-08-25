@@ -93,7 +93,7 @@ When a journey participant arrives on a **Send an SMS message** activity, Amazon
 
 1. Choose **Send a test message** if you want to first test this activity. Test messages don't count against your daily sending limits, but you are charged for each message. When sending a test message, you're prompted to optionally choose the origination number but required to choose a destination number.
 **Note**
-If your account is in the SMS sandbox, you can only send a test message to one of your verified destination numbers. If the destination number doesn't appear in the list, choose **Manage numbers** to add that new number. For more information about verifying destination numbers, see [SMS sandbox ](https://docs.aws.amazon.com//sms-voice/latest/userguide/sandbox.html#sandbox-sms) in the *AWS End User Messaging SMS User Guide*.
+If your account is in the SMS sandbox, you can only send a test message to one of your verified destination numbers. If the destination number doesn't appear in the list, choose **Manage numbers** to add that new number. For more information about verifying destination numbers, see [SMS sandbox ](https://docs.aws.amazon.com/sms-voice/latest/userguide/sandbox.html#sandbox-sms) in the *AWS End User Messaging SMS User Guide*.
 
 1. For **Message type**, choose one of the following:
    + **Promotional** – Non-critical messages, such as marketing messages.
@@ -102,7 +102,7 @@ If your account is in the SMS sandbox, you can only send a test message to one o
 1. (Optional) If necessary, expand the **Additional settings** section to configure optional SMS-related settings. The **Additional settings** section contains two tabs:
    + On the **SMS Settings** tab you can configure the following settings:
      + **Origination phone number** – The phone number that messages will be sent from. This list contains all of the dedicated phone numbers that are present in your Amazon Pinpoint account.
-     + **Sender ID** – An alphanumeric ID that identifies the sender of the SMS message. The Sender ID appears on your recipients' devices only if the recipient is in a country where Sender IDs are supported. If you specify a Sender ID in a journey activity, it overrides the default value for your account. To learn more about which countries support Sender IDs, see [Supported countries and regions (SMS channel) ](https://docs.aws.amazon.com//sms-voice/latest/userguide/phone-numbers-sms-by-country.html) in the *AWS End User Messaging SMS User Guide*.
+     + **Sender ID** – An alphanumeric ID that identifies the sender of the SMS message. The Sender ID appears on your recipients' devices only if the recipient is in a country where Sender IDs are supported. If you specify a Sender ID in a journey activity, it overrides the default value for your account. To learn more about which countries support Sender IDs, see [Supported countries and regions (SMS channel) ](https://docs.aws.amazon.com/sms-voice/latest/userguide/phone-numbers-sms-by-country.html) in the *AWS End User Messaging SMS User Guide*.
 **Note**
 You only need to set one of these values. If you specify both values, Amazon Pinpoint attempts to send the message using the dedicated origination phone number.
    + On the **Regulatory Settings** tab, you can configure settings that apply specifically to sending messages to recipients in India. If you send messages to recipients in India, you must specify a Sender ID and both of the following values:
@@ -110,7 +110,7 @@ You only need to set one of these values. If you specify both values, Amazon Pin
      + **Template ID** – The ID that's associated with your message template. This value is also provided by TRAI during the Sender ID registration process.
 **Note**
 If you don't send messages to recipients in India, or if you send messages to India using International Long-Distance Operator routes, you don't need to specify the **Entity ID** and **Template ID** values.
-For more information about the regulatory requirements for sending SMS messages to India, see [India sender ID registration process ](https://docs.aws.amazon.com//sms-voice/latest/userguide/registrations-sms-senderid-india.html) in the *AWS End User Messaging SMS User Guide*.
+For more information about the regulatory requirements for sending SMS messages to India, see [India sender ID registration process ](https://docs.aws.amazon.com/sms-voice/latest/userguide/registrations-sms-senderid-india.html) in the *AWS End User Messaging SMS User Guide*.
 
 1. (Optional) For **Description**, enter text that describes the purpose of the activity. When you save the activity, this text appears as its label.
 
@@ -145,7 +145,7 @@ Before you can add a contact center activity to a journey, you must do the follo
 + Make sure that the Connect Customer queue you plan to use has an outbound number defined in the queue.
 + In IAM, create a policy and role that allow Connect Customer to send messages through Amazon Pinpoint.
 **Note**
- The **ResourceID** roles specified for **ConnectCampaignExecutionRoleArn** support IAM [service-roles](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_roles_terms-and-concepts.html#iam-term-service-role) and [service-linked-roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_terms-and-concepts.html#iam-term-service-linked-role). For more information, see [IAM identifiers](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_identifiers.html) in the *AWS Identity and Access Management User Guide*.
+ The **ResourceID** roles specified for **ConnectCampaignExecutionRoleArn** support IAM [service-roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_terms-and-concepts.html#iam-term-service-role) and [service-linked-roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_terms-and-concepts.html#iam-term-service-linked-role). For more information, see [IAM identifiers](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_identifiers.html) in the *AWS Identity and Access Management User Guide*.
 **Important**
 Deletions or misconfiguration of IAM roles and resource access policies for published journeys can cause Amazon Pinpoint to halt outbound dials until the IAM configuration is reinstated with the original set of roles, access policies, and permissions.
 

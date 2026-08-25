@@ -30,7 +30,7 @@ Follow these steps:
 
 1. In the navigation pane, choose **Policies**, then choose **Create policy**. A** Specify permissions** window opens..
 
-1. In the **Specify permissions** window, choose the **JSON** tab, and copy and paste the following IVS policy to the **Policy editor** text area. (The policy does not include all Amazon IVS actions. You can add/delete (Allow/Deny) operation access permissions as needed. See [IVS Real-Time Streaming API Reference](https://docs.aws.amazon.com//ivs/latest/RealTimeAPIReference/Welcome.html) for details on IVS operations.)
+1. In the **Specify permissions** window, choose the **JSON** tab, and copy and paste the following IVS policy to the **Policy editor** text area. (The policy does not include all Amazon IVS actions. You can add/delete (Allow/Deny) operation access permissions as needed. See [IVS Real-Time Streaming API Reference](https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/Welcome.html) for details on IVS operations.)
 
 ------
 #### [ JSON ]

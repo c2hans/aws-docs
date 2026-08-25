@@ -5,11 +5,9 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/pc-even
 # Using EventBridge with AWS Pricing Calculator
 <a name="pc-event-bridge"></a>
 
-The in-console AWS Pricing Calculator can send events to Amazon EventBridge whenever certain events happen in your bill estimate. Unlike other destinations, you don't need to select which event types you want to deliver. After you have EventBridge set up, Pricing Calculator events can be sent to EventBridge. You can use EventBridge rules to route events to additional targets. For more information about setting up EventBridge, see [ Amazon EventBridge setup and prerequisites](https://docs.aws.amazon.com//eventbridge/latest/userguide/eb-setup.html) in the *Amazon EventBridge API Reference*.
+The in-console AWS Pricing Calculator can send events to Amazon EventBridge whenever certain events happen in your bill estimate. Unlike other destinations, you don't need to select which event types you want to deliver. After you have EventBridge set up, Pricing Calculator events can be sent to EventBridge. You can use EventBridge rules to route events to additional targets. For more information about setting up EventBridge, see [ Amazon EventBridge setup and prerequisites](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-setup.html) in the *Amazon EventBridge API Reference*.
 
 The following lists the events AWS Pricing Calculator sends to EventBridge.
-
-****
 
 | Event type | Description |
 | --- | --- |
@@ -17,9 +15,9 @@ The following lists the events AWS Pricing Calculator sends to EventBridge.
 | BillEstimate Succeeded | A bill estimate completed. This means you will now be able to view the results of the bill estimate.<br />The ARN, estimate name, and estimate ID of the bill estimate for which the event is sent to EventBridge will be emitted in the event. |
 | BillEstimate Failed | A bill estimate generation failed.<br />The ARN, estimate name, and estimate ID of the bill estimate for which the event is sent to EventBridge will be emitted in the event. |
 
-You can also use AWS Pricing Calculator to send event notifications with EventBridge to write rules that take actions when an event occurs pertaining to your estimate. For example, you can have it send you a notification. For more information about rules in Amazon EventBridge, see [ Create a rule in Amazon EventBridge](https://docs.aws.amazon.com//eventbridge/latest/userguide/eb-get-started.html#eb-gs-create-rule) in the *Amazon EventBridge API Reference*.
+You can also use AWS Pricing Calculator to send event notifications with EventBridge to write rules that take actions when an event occurs pertaining to your estimate. For example, you can have it send you a notification. For more information about rules in Amazon EventBridge, see [ Create a rule in Amazon EventBridge](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-get-started.html#eb-gs-create-rule) in the *Amazon EventBridge API Reference*.
 
-For more information about the actions and data types you can interact with using the EventBridge API, see [ Amazon EventBridge API Reference](https://docs.aws.amazon.com//eventbridge/latest/APIReference/Welcome.html) in the *Amazon EventBridge API Reference*.
+For more information about the actions and data types you can interact with using the EventBridge API, see [ Amazon EventBridge API Reference](https://docs.aws.amazon.com/eventbridge/latest/APIReference/Welcome.html) in the *Amazon EventBridge API Reference*.
 
 ## Amazon EventBridge permissions
 <a name="pc-event-bridge-permissions"></a>

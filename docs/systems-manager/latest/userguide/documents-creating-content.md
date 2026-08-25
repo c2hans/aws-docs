@@ -13,7 +13,7 @@ If the AWS Systems Manager public documents don't perform all the actions you wa
 <a name="writing-ssm-doc-content"></a>
 
 To create your own SSM document content, it's important to understand the different schemas, features, plugins, and syntax available for SSM documents. We recommend becoming familiar with the following resources.
-+  [Writing your own AWS Systems Manager documents](https://aws.amazon.com/blogs//mt/writing-your-own-aws-systems-manager-documents/)
++  [Writing your own AWS Systems Manager documents](https://aws.amazon.com/blogs/mt/writing-your-own-aws-systems-manager-documents/)
 +  [Data elements and parameters](documents-syntax-data-elements-parameters.md)
 +  [Schemas, features, and examples](documents-schemas-features.md)
 +  [Command document plugin reference](documents-command-ssm-plugin-reference.md)

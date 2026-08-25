@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/openssl-key-ty
 
 The AWS CloudHSM OpenSSL Dynamic Engine supports the following key types with Client SDK 5.
 
-****
-
 | Key Type | Description |
 | --- | --- |
 | EC | ECDSA sign/verify for P-256, P-384, and secp256k1 key types. To generate EC keys that are interoperable with the OpenSSL engine, see [Export an asymmetric key with CloudHSM CLI](cloudhsm_cli-key-generate-file.md). |

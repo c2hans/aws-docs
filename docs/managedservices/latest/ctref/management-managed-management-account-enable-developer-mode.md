@@ -14,8 +14,6 @@ Enable Developer Mode for an existing application account. Note that, in Develop
 ## Change Type Details
 <a name="ct-1opjmhuddw194-MMMe-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1opjmhuddw194 |

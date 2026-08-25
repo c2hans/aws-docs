@@ -84,7 +84,7 @@ Use `accessToken` for GitHub repositories only. To authorize access to a reposit
 You must specify either `accessToken` or `oauthToken` when you create a new app.
 Existing Amplify apps deployed from a GitHub repository using OAuth continue to work with CI/CD. However, we strongly recommend that you migrate these apps to use the GitHub App. For more information, see [Migrating an existing OAuth app to the Amplify GitHub App](https://docs.aws.amazon.com/amplify/latest/userguide/setting-up-GitHub-access.html#migrating-to-github-app-auth) in the *Amplify User Guide* .
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 255.
+Length Constraints: Minimum length of 1. Maximum length of 4096.
 Pattern: `(?s).+`
 Required: No
 
@@ -200,7 +200,7 @@ Use `oauthToken` for repository providers other than GitHub, such as Bitbucket o
 You must specify either `oauthToken` or `accessToken` when you create a new app.
 Existing Amplify apps deployed from a GitHub repository using OAuth continue to work with CI/CD. However, we strongly recommend that you migrate these apps to use the GitHub App. For more information, see [Migrating an existing OAuth app to the Amplify GitHub App](https://docs.aws.amazon.com/amplify/latest/userguide/setting-up-GitHub-access.html#migrating-to-github-app-auth) in the *Amplify User Guide* .
 Type: String
-Length Constraints: Maximum length of 1000.
+Length Constraints: Maximum length of 4096.
 Pattern: `(?s).*`
 Required: No
 

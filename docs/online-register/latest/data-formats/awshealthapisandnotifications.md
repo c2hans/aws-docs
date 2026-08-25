@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsh
 
 AWS Health APIs and Notifications provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="health-DescribeAffectedAccountsForOrganization"></a>[DescribeAffectedAccountsForOrganization](https://docs.aws.amazon.com/health/latest/APIReference/API_DescribeAffectedAccountsForOrganization.html) | Retrieve a list of accounts that have been affected by the specified events in organization | Read |

@@ -10,7 +10,7 @@ A rollup Region consolidates data from one or more contributing Regions. Specify
 Due to limitations in Amazon S3, replication from Customer Managed Key (CMK) encrypted regional data lake to S3 managed encrypted (default encryption) regional data lake is not supported.
 
 **Important**
-If you created a custom source, to ensure that custom source data is replicated properly to the destination, Security Lake recommends following the best practices described in [Best practices for ingesting custom sources](https://docs.aws.amazon.com//security-lake/latest/userguide/custom-sources.html#custom-sources-best-practices). Replication cannot be performed on data that does not follow the S3 partition data path format as described on the page.
+If you created a custom source, to ensure that custom source data is replicated properly to the destination, Security Lake recommends following the best practices described in [Best practices for ingesting custom sources](https://docs.aws.amazon.com/security-lake/latest/userguide/custom-sources.html#custom-sources-best-practices). Replication cannot be performed on data that does not follow the S3 partition data path format as described on the page.
 
 Before adding a rollup Region, you first need to create two different roles in AWS Identity and Access Management (IAM):
 + [IAM role for data replication](#iam-role-replication)

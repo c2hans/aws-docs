@@ -47,7 +47,12 @@ This option is not compatible with `--bootstrap-kms-key-id`.
 The AWS KMS master key ID to use for the `SSE-KMS` encryption.
 Provide this option to override the default AWS KMS key used to encrypt the Amazon S3 bucket.
 This option is not compatible with `--bootstrap-customer-key`.
- *Default value*: Undefined<a name="ref-cli-cmd-bootstrap-options-cloudformation-execution-policies"></a>
+ *Default value*: Undefined<a name="ref-cli-cmd-bootstrap-options-express"></a>
+
+ `--express <BOOLEAN>`
+Bootstrap using CloudFormation express mode. Express mode allows for faster deployments through CloudFormation by reporting stack operations as completed as soon as CloudFormation applies the resource configuration. However, CloudFormation reports success without waiting for resources to stabilize. Additionally, express mode does not perform rollback automatically and will leave stacks in a failed state if something goes wrong.
+For more information, see [express mode](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cloudformation-express-mode.html) in the * AWS CloudFormation User Guide*.
+ *Default value*: `false` <a name="ref-cli-cmd-bootstrap-options-cloudformation-execution-policies"></a>
 
  `--cloudformation-execution-policies <ARRAY>`
 The managed IAM policy ARNs that should be attached to the deployment role assumed by AWS CloudFormation during deployment of your stacks.

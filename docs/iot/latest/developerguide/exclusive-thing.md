@@ -21,13 +21,13 @@ Associating a thing to a connection provides the following capabilities.
 **Note**
 Note that if your IoT thing and client connection has a non-exclusive association, you can use all the following capabilities except the lifecycle events capability. To include your thing name in the lifecycle event messages, you IoT thing and client connection must have an exclusive association.
 
-**Thing policy variables** - You can use thing policy variables to authorize device access to AWS IoT API operations. These variables allow you to write AWS IoT Core policies that grant or deny permissions based on thing properties like names, types, and attribute values. By using thing policy variables, you can apply the same policy to control multiple AWS IoT Core devices. This allows you to simplify policy management and reduce resource duplication. For more information, see [Thing policy variables](https://docs.aws.amazon.com//iot/latest/developerguide/thing-policy-variables.html).
+**Thing policy variables** - You can use thing policy variables to authorize device access to AWS IoT API operations. These variables allow you to write AWS IoT Core policies that grant or deny permissions based on thing properties like names, types, and attribute values. By using thing policy variables, you can apply the same policy to control multiple AWS IoT Core devices. This allows you to simplify policy management and reduce resource duplication. For more information, see [Thing policy variables](https://docs.aws.amazon.com/iot/latest/developerguide/thing-policy-variables.html).
 
-**Lifecycle events** - You can receive the thing name in lifecycle events (for example, connect, disconnect and subscribe, and unsubscribe). This allows processing of the thing name included in the messages, such as in rules. For more information, see [Lifecycle events](https://docs.aws.amazon.com//iot/latest/developerguide/life-cycle-events.html).
+**Lifecycle events** - You can receive the thing name in lifecycle events (for example, connect, disconnect and subscribe, and unsubscribe). This allows processing of the thing name included in the messages, such as in rules. For more information, see [Lifecycle events](https://docs.aws.amazon.com/iot/latest/developerguide/life-cycle-events.html).
 
 **Resource-specific logging** - You can configure resource-specific logging for thing groups, and easily apply the desired logging configuration for all things within the thing group defined. For more information, see [Configure Resource-specific overrides in AWS IoT (CLI)](configure-logging.md#fine-logging-cli).
 
-**Cost allocation** - You can create billing groups with custom tags for cost allocation and add the things to these groups. For more information, see [Billing groups](https://docs.aws.amazon.com//iot/latest/developerguide/tagging-iot-billing-groups.html).
+**Cost allocation** - You can create billing groups with custom tags for cost allocation and add the things to these groups. For more information, see [Billing groups](https://docs.aws.amazon.com/iot/latest/developerguide/tagging-iot-billing-groups.html).
 
 ## How to associate a thing to a connection
 <a name="exclusive-thing-how-to"></a>
@@ -39,7 +39,7 @@ If your client ID matches your thing's name in the registry, after you attach an
 
 **To attach a certificate to a thing exclusively using the AWS Management Console.**
 
-1. Open the [AWS IoT home page](https://console.aws.amazon.com//iot/home#/home) in the AWS IoT console. On the left navigation, from **Security**, choose **Certificates**.
+1. Open the [AWS IoT home page](https://console.aws.amazon.com/iot/home#/home) in the AWS IoT console. On the left navigation, from **Security**, choose **Certificates**.
 
 1. On the **Certificates** page, choose a certificate you want to attach a thing to. Then choose **Attach to things** from **Actions** on the upper right corner of the page.
 
@@ -51,7 +51,7 @@ If your client ID matches your thing's name in the registry, after you attach an
 
 **To detach a certificate from an exclusive thing using the AWS Management Console**
 
-1. Open the [AWS IoT home page](https://console.aws.amazon.com//iot/home#/home) in the AWS IoT console. On the left navigation, from **Security**, choose **Certificates**.
+1. Open the [AWS IoT home page](https://console.aws.amazon.com/iot/home#/home) in the AWS IoT console. On the left navigation, from **Security**, choose **Certificates**.
 
 1. On the **Certificates** page, choose a certificate and navigate to the certificate details page.
 

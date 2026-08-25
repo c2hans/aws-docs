@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/exam
 ## Create an instance
 <a name="create-an-instance"></a>
 
-Create a new Amazon EC2 instance by calling the [Ec2Client](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/ec2/Ec2Client.html)’s [`runInstances`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/ec2/Ec2Client.html#runInstances(software.amazon.awssdk.services.ec2.model.RunInstancesRequest)) method, providing it with a [RunInstancesRequest](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/ec2/model/RunInstancesRequest.html) containing the [Amazon Machine Image (AMI)](https://docs.aws.amazon.com//AWSEC2/latest/UserGuide/AMIs.html) to use and an [instance type](https://docs.aws.amazon.com//AWSEC2/latest/UserGuide/instance-types.html).
+Create a new Amazon EC2 instance by calling the [Ec2Client](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/ec2/Ec2Client.html)’s [`runInstances`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/ec2/Ec2Client.html#runInstances(software.amazon.awssdk.services.ec2.model.RunInstancesRequest)) method, providing it with a [RunInstancesRequest](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/ec2/model/RunInstancesRequest.html) containing the [Amazon Machine Image (AMI)](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html) to use and an [instance type](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-types.html).
 
  **Imports**
 
@@ -222,7 +222,7 @@ See the [complete example](https://github.com/awsdocs/aws-doc-sdk-examples/blob/
 ## Monitor an instance
 <a name="monitor-an-instance"></a>
 
-You can monitor various aspects of your Amazon EC2 instances, such as CPU and network utilization, available memory, and disk space remaining. To learn more about instance monitoring, see [Monitoring Amazon EC2](https://docs.aws.amazon.com//AWSEC2/latest/UserGuide/monitoring_ec2.html) in the Amazon EC2 User Guide for Linux Instances.
+You can monitor various aspects of your Amazon EC2 instances, such as CPU and network utilization, available memory, and disk space remaining. To learn more about instance monitoring, see [Monitoring Amazon EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/monitoring_ec2.html) in the Amazon EC2 User Guide for Linux Instances.
 
 To start monitoring an instance, you must create a [MonitorInstancesRequest](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/ec2/model/MonitorInstancesRequest.html) with the ID of the instance to monitor, and pass it to the Ec2Client’s [`monitorInstances`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/ec2/Ec2Client.html#monitorInstances(software.amazon.awssdk.services.ec2.model.MonitorInstancesRequest)) method.
 

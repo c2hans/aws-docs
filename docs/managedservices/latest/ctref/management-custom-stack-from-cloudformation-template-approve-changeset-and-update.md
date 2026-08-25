@@ -14,8 +14,6 @@ Approve and execute an existing ChangeSet to update a CloudFormation stack. This
 ## Change Type Details
 <a name="ct-1404e21baa2ox-MCSa-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1404e21baa2ox |

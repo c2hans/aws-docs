@@ -46,7 +46,7 @@ The format of a notification looks like the following sample:
 ## Event codes
 <a name="contact-lens-event-codes-listed"></a>
 
- The following table lists the event codes that may result when conversational analytics can't analyze a contact.
+ The following table lists the event codes that might result when conversational analytics can't analyze a contact.
 
 | Event reason code | Description |
 | --- | --- |

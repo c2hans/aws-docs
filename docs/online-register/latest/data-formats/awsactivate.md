@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsa
 
 AWS Activate provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="activate-GetAccountContact"></a>[GetAccountContact](https://docs.aws.amazon.com/) | Get the AWS account contact information | Read |

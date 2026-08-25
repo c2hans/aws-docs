@@ -26,7 +26,7 @@ Redacted chat files are stored in your chat Amazon S3 bucket, for example: conne
 
 Redacted email files are stored in your email Amazon S3 bucket, for example: connect-{{instanceARN}}/Analysis/Email
 
-You can access all files (redacted, unredacted, raw, etc.) through the AWS console, by using the Amazon S3 console.
+You can access all files (redacted, unredacted, raw) through the AWS console, by using the Amazon S3 console.
 
 Following is a list of what you can access by using the Connect Customer admin website (such as on the **Contact details** page), assuming you have the appropriate [security profile permissions](permissions-for-contact-lens.md):
 + Access redacted voice, chat, and email files.

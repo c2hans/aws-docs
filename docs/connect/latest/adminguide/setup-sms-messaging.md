@@ -59,7 +59,7 @@ Capabilities for SMS and Voice can't be changed after the phone number has been 
 
 1. On **Review and request** you can verify and edit your request before submitting it. Choose **Request**.
 
-1. A **Registration Required** window may appear depending on the type of phone number you requested. Your phone number is associated with this registration and can't send messages until your registration has been approved. For more information about registrations requirements, see [Registrations](https://docs.aws.amazon.com/sms-voice/latest/userguide/registrations.html).
+1. A **Registration Required** window might appear depending on the type of phone number you requested. Your phone number is associated with this registration and can't send messages until your registration has been approved. For more information about registrations requirements, see [Registrations](https://docs.aws.amazon.com/sms-voice/latest/userguide/registrations.html).
 
    1. For **Registration form name** enter a friendly name.
 

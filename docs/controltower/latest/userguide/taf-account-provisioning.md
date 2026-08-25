@@ -23,7 +23,7 @@ When you're getting started with AFT, you will create the following:
 + A fully deployed AFT environment. For more information, see [Overview of AWS Control Tower Account Factory for Terraform (AFT)](https://docs.aws.amazon.com/controltower/latest/userguide/aft-overview.html) and [Deploy AWS Control Tower Account Factory for Terraform (AFT).](https://docs.aws.amazon.com/controltower/latest/userguide/aft-getting-started.html) Also see the [Terraform documentation](https://developer.hashicorp.com/terraform/tutorials/aws/aws-control-tower-aft).
 
 **Tip**
-You can create the AFT management account from the AWS Control Tower console with **Create account**. For more information, see [Methods of provisioning](https://docs.aws.amazon.com//controltower/latest/userguide/methods-of-provisioning.html).
+You can create the AFT management account from the AWS Control Tower console with **Create account**. For more information, see [Methods of provisioning](https://docs.aws.amazon.com/controltower/latest/userguide/methods-of-provisioning.html).
 Also, optionally, you can create an account template folder to help define your additional accounts, in the **aft-account-customizations** repository.
 
 For accounts enrolled via Auto Enroll:

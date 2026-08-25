@@ -9,7 +9,7 @@ The Amazon Nova SageMaker inference container includes a set of features that yo
 
 This page lists the features available in the inference container, describes how to enable each one, and identifies the container version in which the feature was introduced. Use this reference to determine which features are available for your deployment and how to configure them.
 
-Features that are enabled through environment variables are set when you create the SageMaker model or endpoint configuration. Include them in the `Environment` parameter of the [CreateModel](https://docs.aws.amazon.com//sagemaker/latest/APIReference/API_CreateModel.html) API call. Features that are enabled through request parameters are set per invocation in the request body.
+Features that are enabled through environment variables are set when you create the SageMaker model or endpoint configuration. Include them in the `Environment` parameter of the [CreateModel](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateModel.html) API call. Features that are enabled through request parameters are set per invocation in the request body.
 
 **Note**
 Always use the latest container image to get access to all available features. The `SM-Inference-latest` tag currently points to `v1.4`.

@@ -17,8 +17,6 @@ LIMIT  10;
 ```
 The following table shows sample results.
 
-****
-
 |  |  |
 | --- |--- |
 | 6 | alb-databas1 |
@@ -36,8 +34,6 @@ FROM   information_schema.schemata
 WHERE  schema_name = 'rdspostgresql'
 ```
 The following table shows sample results.
-
-****
 
 |  | schema\_name |
 | --- | --- |

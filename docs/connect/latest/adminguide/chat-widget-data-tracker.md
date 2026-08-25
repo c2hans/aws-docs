@@ -34,7 +34,7 @@ The web data tracker captures how visitors interact with your website – items 
 ## Step 2: Embed the widget and initialize tracking
 <a name="chat-widget-embed-and-init-tracking"></a>
 
-Embed the widget snippet in your website's HTML. After the snippet loads, initialize the tracker once you have obtained visitor consent.
+Embed the widget snippet in your website's HTML. After the snippet loads, initialize the tracker after you have obtained visitor consent.
 
 ```
 // Start tracking visitor behavior (after obtaining consent)
@@ -152,7 +152,7 @@ await amazon_connect.Web.ClickStream.recordBusinessMetric('clear_cart', {
 });
 ```
 
-## Associate clickstream with authenticated users
+## Associate clickstream with Customer Profile
 <a name="chat-widget-data-tracker-authenticated-users"></a>
 
 Clickstream data captured by the web data tracker is continuously streamed to Customer Profiles. How data is associated with a profile depends on whether profile keys are provided during widget initialization.
@@ -165,7 +165,7 @@ Clickstream data captured by the web data tracker is continuously streamed to Cu
 ### Link web analytics events with existing profiles
 <a name="chat-widget-data-tracker-auth-profile-keys"></a>
 
-To associate tracking with a known profile, set `profileKeys` in your JWT claims to search for and associate with an existing profile at connection time, and the service uses these keys to find a matching profile via the `SearchProfiles` API. This requires security to be enabled on your Communications widget. For setup details, see [Step 3: Confirm and copy communications widget code and security keys](add-chat-to-website.md#confirm-and-copy-chat-widget-script).
+To associate tracking with a known profile, set `profileKeys` in your JWT claims to search for and associate with an existing profile at connection time, and the service uses these keys to find a matching profile through the `SearchProfiles` API. This requires security to be enabled on your Communications widget. For setup details, see [Step 3: Confirm and copy communications widget code and security keys](add-chat-to-website.md#confirm-and-copy-chat-widget-script).
 
 ```
 {

@@ -7,10 +7,12 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/trouble
 
 The following topic lists error messages that occur during the upload of Appium Java TestNG tests and recommends workarounds to resolve each error.
 
-**Note**
-The instructions below are based on Linux x86\_64 and Mac.
+## Upload errors
+<a name="troubleshooting-appium-java-testng-upload"></a>
 
-## APPIUM\_JAVA\_TESTNG\_TEST\_PACKAGE\_UNZIP\_FAILED
+The following errors can occur when you upload your Appium Java TestNG tests.
+
+### APPIUM\_JAVA\_TESTNG\_TEST\_PACKAGE\_UNZIP\_FAILED
 <a name="APPIUM_JAVA_TESTNG_TEST_PACKAGE_UNZIP_FAILED"></a>
 
 If you see the following message, follow these steps to fix the issue.
@@ -46,9 +48,9 @@ Make sure that you can unzip the test package without errors. In the following e
          `— log4j-1.2.14.jar
    ```
 
-   For more information, see [Automatically run Appium tests in Device FarmIntegrating Appium tests with Device Farm](test-types-appium.md).
+   For more information, see [Automatically run Appium tests in Device Farm](test-types-appium.md).
 
-## APPIUM\_JAVA\_TESTNG\_TEST\_PACKAGE\_DEPENDENCY\_DIR\_MISSING
+### APPIUM\_JAVA\_TESTNG\_TEST\_PACKAGE\_DEPENDENCY\_DIR\_MISSING
 <a name="APPIUM_JAVA_TESTNG_TEST_PACKAGE_DEPENDENCY_DIR_MISSING"></a>
 
 If you see the following message, follow these steps to fix the issue.
@@ -84,9 +86,9 @@ In the following example, the package's name is **zip-with-dependencies.zip**.
          `— log4j-1.2.14.jar
    ```
 
-   For more information, see [Automatically run Appium tests in Device FarmIntegrating Appium tests with Device Farm](test-types-appium.md).
+   For more information, see [Automatically run Appium tests in Device Farm](test-types-appium.md).
 
-## APPIUM\_JAVA\_TESTNG\_TEST\_PACKAGE\_JAR\_MISSING\_IN\_DEPENDENCY\_DIR
+### APPIUM\_JAVA\_TESTNG\_TEST\_PACKAGE\_JAR\_MISSING\_IN\_DEPENDENCY\_DIR
 <a name="APPIUM_JAVA_TESTNG_TEST_PACKAGE_JAR_MISSING_IN_DEPENDENCY_DIR"></a>
 
 If you see the following message, follow these steps to fix the issue.
@@ -122,9 +124,9 @@ In the following example, the package's name is **zip-with-dependencies.zip**.
          `— {{log4j-1.2.14.jar}}
    ```
 
-   For more information, see [Automatically run Appium tests in Device FarmIntegrating Appium tests with Device Farm](test-types-appium.md).
+   For more information, see [Automatically run Appium tests in Device Farm](test-types-appium.md).
 
-## APPIUM\_JAVA\_TESTNG\_TEST\_PACKAGE\_TESTS\_JAR\_FILE\_MISSING
+### APPIUM\_JAVA\_TESTNG\_TEST\_PACKAGE\_TESTS\_JAR\_FILE\_MISSING
 <a name="APPIUM_JAVA_TESTNG_TEST_PACKAGE_TESTS_JAR_FILE_MISSING"></a>
 
 If you see the following message, follow these steps to fix the issue.
@@ -160,9 +162,9 @@ In the following example, the package's name is **zip-with-dependencies.zip**.
          `— log4j-1.2.14.jar
    ```
 
-   For more information, see [Automatically run Appium tests in Device FarmIntegrating Appium tests with Device Farm](test-types-appium.md).
+   For more information, see [Automatically run Appium tests in Device Farm](test-types-appium.md).
 
-## APPIUM\_JAVA\_TESTNG\_TEST\_PACKAGE\_CLASS\_FILE\_MISSING\_IN\_TESTS\_JAR
+### APPIUM\_JAVA\_TESTNG\_TEST\_PACKAGE\_CLASS\_FILE\_MISSING\_IN\_TESTS\_JAR
 <a name="APPIUM_JAVA_TESTNG_TEST_PACKAGE_CLASS_FILE_MISSING_IN_TESTS_JAR"></a>
 
 If you see the following message, follow these steps to fix the issue.
@@ -228,4 +230,54 @@ In the following example, the package's name is **zip-with-dependencies.zip**.
          `— log4j-1.2.14.jar
    ```
 
-   For more information, see [Automatically run Appium tests in Device FarmIntegrating Appium tests with Device Farm](test-types-appium.md).
+   For more information, see [Automatically run Appium tests in Device Farm](test-types-appium.md).
+
+## Test insights
+<a name="troubleshooting-appium-java-testng-insights"></a>
+
+When you opt in to test insights, Device Farm generates a summarized report for your run and each job under it. If the service cannot generate the report, the insights report status is `SKIPPED` or `ERRORED`, and the report message explains why. The following messages can occur when generating insights for Appium Java TestNG tests.
+
+### The job did not run to completion
+<a name="ti-appium-java-testng-job-not-complete"></a>
+
+`Unable to generate test insights because the job was {{status}}.`
+
+The job ended in a non-successful state (where {{status}} is `STOPPED`, `ERRORED`, or `SKIPPED`), so there was no result to summarize. A run that ends in a failed state still receives insights.
+
+To resolve this issue, investigate why the job did not run to completion. In many cases, the `message` field of the job itself might explain why the job didn't complete.
+
+### The results contained no test cases
+<a name="ti-appium-java-testng-no-test-cases"></a>
+
+`Test insights could not be generated. The testng-results.xml file was parsed successfully but contained no test cases.`
+
+The results artifact parsed successfully but contained zero test cases.
+
+To resolve this issue, verify that your test suite includes at least one test case and that results are stored correctly under `$DEVICEFARM_LOG_DIR`.
+
+### The test output exceeds the maximum supported size
+<a name="ti-appium-java-testng-output-too-large"></a>
+
+`Unable to generate test insights: test output "testng-results.xml" exceeds the maximum supported size of 1GB.`
+
+The testng-results.xml is larger than 1 GB.
+
+To resolve this issue, reduce the testng-results.xml size to below 1 GB by trimming logs or attachments.
+
+### The testng-results.xml file was not found
+<a name="ti-appium-java-testng-testng-xml-not-found"></a>
+
+`Unable to generate test insights. The test results file (testng-results.xml) was not found.`
+
+No `testng-results.xml` file (and no XML entry with the TestNG root signature) was found.
+
+To resolve this issue, configure your framework to emit TestNG XML into the artifacts directory (`$DEVICEFARM_LOG_DIR`).
+
+### The testng-results.xml file could not be processed
+<a name="ti-appium-java-testng-testng-xml-error"></a>
+
+`Test insights could not be generated because of an error while processing testng-results.xml.`
+
+The XML file was malformed or could not be parsed.
+
+To resolve this issue, ensure that the file is a well-formed XML in the standard TestNG report format.

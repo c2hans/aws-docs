@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/customer-segme
 <a name="customer-segments-imported-files"></a>
 
 **Note**
-To access the segmentation builder experience in the Connect Customer admin website, ensure that the appropriate security profiles permissions are configured. For more information, see [Assign security profile permissions to manage customer segments](security-profile-customer-profile-segmentation.md).
+To access the segmentation builder experience in the Connect Customer admin website, make sure that the appropriate security profiles permissions are configured. For more information, see [Assign security profile permissions to manage customer segments](security-profile-customer-profile-segmentation.md).
 
 Customer segment import uses a CSV file containing profile data to create new profiles or update existing ones, which are then grouped into a segment. The CSV file must be under 1GB in size and include valid headers that map to standard profile attributes.
 
@@ -27,7 +27,7 @@ The following steps describe creating and configuring an imported customer segme
 ## Create a new segment
 <a name="create-new-segment"></a>
 
-1. To create a segment, ensure that you have created security profiles permissions as a prerequisite. For more information, see [Assign security profile permissions to manage customer segments](security-profile-customer-profile-segmentation.md).
+1. To create a segment, make sure that you have created security profiles permissions as a prerequisite. For more information, see [Assign security profile permissions to manage customer segments](security-profile-customer-profile-segmentation.md).
 
 1. In the Connect Customer admin website, navigate to **Customer Profiles****Customer segments**
 
@@ -121,7 +121,7 @@ Specify when imported profiles expire.
    + Minimum: 1 day after import
    + Maximum: 90 days after import
 
-Customer Profiles removes expired profiles from the segment and the profiles domain. [Learn more](https://docs.aws.amazon.com/connect/latest/adminguide/customer-profiles-data-expiration.html).
+Customer Profiles removes expired profiles from the segment and the profiles domain. For more information, see [Data expiration in Customer Profiles](https://docs.aws.amazon.com/connect/latest/adminguide/customer-profiles-data-expiration.html).
 
 **Note**
 Choose an expiry period that aligns with your data retention requirements. Consider whether the default 14-day period meets your business needs before selecting a custom date.
@@ -155,4 +155,4 @@ Monitor import progress
 + The segment can be used in campaigns while the import job is still in progress.
 
 **Note**
-Imported segments can be used like any other segment for outbound campaigns or exports once the import is complete. You can view the segment details, including import status and results, from the segment details page.
+Imported segments can be used like any other segment for outbound campaigns or exports after the import is complete. You can view the segment details, including import status and results, from the segment details page.

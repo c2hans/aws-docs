@@ -11,7 +11,7 @@ This reference describes the common scenarios in the AWS FIS scenario library. Y
 
 For more information, see [Working with the AWS FIS scenario library](scenario-library.md).
 
-AWS FIS supports the following Amazon EC2 scenarios. These scenarios target instances using [tags](https://docs.aws.amazon.com/whitepapers/latest/tagging-best-practices/what-are-tags.html). You can use your own tags or use the default tags included in the scenario. Some of these scenarios [use SSM documents](https://docs.aws.amazon.com//fis/latest/userguide/actions-ssm-agent.html).
+AWS FIS supports the following Amazon EC2 scenarios. These scenarios target instances using [tags](https://docs.aws.amazon.com/whitepapers/latest/tagging-best-practices/what-are-tags.html). You can use your own tags or use the default tags included in the scenario. Some of these scenarios [use SSM documents](https://docs.aws.amazon.com/fis/latest/userguide/actions-ssm-agent.html).
 + **EC2 stress: instance failure** - Explore the effect of instance failure by stopping one or more EC2 instances.
 
   Target instances in the current region that have a specific tag attached. In this scenario we will stop those instances and restart them at the end of the action duration, by default 5 min.

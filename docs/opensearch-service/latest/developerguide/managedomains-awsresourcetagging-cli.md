@@ -11,8 +11,6 @@ You can create resource tags using the AWS CLI with the **--add-tags** command.
 
 `add-tags --arn=<domain_arn> --tag-list Key=<key>,Value=<value>`
 
-****
-
 | Parameter | Description |
 | --- | --- |
 | --arn | Amazon resource name for the OpenSearch Service domain to which the tag is attached. |
@@ -32,8 +30,6 @@ You can remove tags from an OpenSearch Service domain using the **--remove-tags*
 
 `remove-tags --arn=<domain_arn> --tag-keys Key=<key>,Value=<value>`
 
-****
-
 | Parameter | Description |
 | --- | --- |
 | --arn | Amazon Resource Name (ARN) for the OpenSearch Service domain to which the tag is attached. |
@@ -52,8 +48,6 @@ You can view the existing tags for an OpenSearch Service domain with the **--lis
 **Syntax**
 
 `list-tags --arn=<domain_arn>`
-
-****
 
 | Parameter | Description |
 | --- | --- |

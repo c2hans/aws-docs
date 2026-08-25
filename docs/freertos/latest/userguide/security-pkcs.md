@@ -160,7 +160,6 @@ For information about porting the corePKCS11 library to your platform, see [Port
 ## Memory use
 <a name="freertos-pkcs-memory"></a>
 
-****
 <a name="corePKCS11-memory-estimate"></a>
 <table>
 <thead>

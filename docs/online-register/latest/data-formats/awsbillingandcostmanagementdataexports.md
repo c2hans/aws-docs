@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsb
 
 AWS Billing And Cost Management Data Exports provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="bcm-data-exports-GetExecution"></a>[GetExecution](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_DataExports_GetExecution.html) | Get the execution of an export | Read |

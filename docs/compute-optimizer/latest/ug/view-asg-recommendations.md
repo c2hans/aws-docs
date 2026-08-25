@@ -79,9 +79,9 @@ The allocation strategy columns on the EC2 Auto Scaling groups recommendations a
 
 Compute Optimizer recommends using a **Prioritized** allocation strategy and prioritize our recommended instance types above your current instance types within your instance type requirements. Prioritizing Compute Optimizer’s recommendation enables your EC2 Auto Scaling group to deploy instance types that optimize both cost and performance. We also recommended that you keep your current instance types within your instance type requirements to make sure there is sufficient capacity to support your workloads.
 
-You can update your EC2 Auto Scaling groups with our recommended instance types by using an instance refresh. For more information, see [Use an instance refresh to update instances in an Auto Scaling group](https://docs.aws.amazon.com//autoscaling/ec2/userguide/asg-instance-refresh.html) in the *Amazon EC2 Auto Scaling* user guide.
+You can update your EC2 Auto Scaling groups with our recommended instance types by using an instance refresh. For more information, see [Use an instance refresh to update instances in an Auto Scaling group](https://docs.aws.amazon.com/autoscaling/ec2/userguide/asg-instance-refresh.html) in the *Amazon EC2 Auto Scaling* user guide.
 
-For more information about allocation strategies, see [Allocation strategies for multiple instance types](https://docs.aws.amazon.com//autoscaling/ec2/userguide/allocation-strategies.html#on-demand-allocation-strategy) in the *Amazon EC2 Auto Scaling* user guide.
+For more information about allocation strategies, see [Allocation strategies for multiple instance types](https://docs.aws.amazon.com/autoscaling/ec2/userguide/allocation-strategies.html#on-demand-allocation-strategy) in the *Amazon EC2 Auto Scaling* user guide.
 
 ## Estimated monthly savings and savings opportunity
 <a name="asg-savings-calculation"></a>

@@ -18,7 +18,7 @@ Complete this one-time procedure so your users can set up rules that run when a 
 
    1. Run the `put-case-event-configuration` CLI command to include all case fields information in the event. Make sure to include all of the fields that you need for the Rules engine to work.
 **Note**
-To ensure that Cases SLA Breach rules work properly, you must set `relatedItemData.includeContent` to `true`, as shown in the following example.
+To make sure that Cases SLA Breach rules work properly, you must set `relatedItemData.includeContent` to `true`, as shown in the following example.
 
       ```
       aws connectcases put-case-event-configuration --domain-id 01310a0e-24ba-4a3c-89e9-9e1daeaxxxx --event-bridge "{

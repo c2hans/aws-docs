@@ -48,5 +48,5 @@ Download and complete the Amazon GameLift Servers launch questionnaire, which is
 <a name="gamelift_quickstart_customservers_launch_postchecklist"></a>
 + [Tune scaling policy](fleets-manage-capacity.md) to minimize idle capacity based on player usage.
 + [Modify FlexMatch rules](https://docs.aws.amazon.com/gameliftservers/latest/flexmatchguide/match-intro.html) or [add hosting locations](gamelift-compute.md#gamelift-compute-location) based on player latency data and revised requirements.
-+ Optimize the runtime configuration to run as many games sessions as possible on each computing resource. Mazimizing performance efficiency in this way can directly affect your fleet costs, because you might be able to run more server processes with the same compute resources.
++ Optimize the runtime configuration to run as many games sessions as possible on each computing resource. Maximizing performance efficiency in this way can directly affect your fleet costs, because you might be able to run more server processes with the same compute resources.
 + [Use your analytics data](monitoring-overview.md) to drive continued development, improve player experience and game longevity, and optimize monetization.

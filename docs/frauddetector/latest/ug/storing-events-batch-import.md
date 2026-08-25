@@ -164,7 +164,7 @@ If more than 50% of the events (rows) in your dataset failed validation, the imp
 ## Batch import event data using the AWS SDK for Python (Boto3)
 <a name="batch-import-data-sdk"></a>
 
-The following example shows a sample request for [CreateBatchImportJob](https://docs.aws.amazon.com//frauddetector/latest/api/API_CreateBatchImportJob.html) API. A batch import job must include a **jobID**, **inputPath**, **outputPath**, **eventTypeName** and **iamRoleArn**. The jobID can’t contain the same ID of a past job, unless the job exists in CREATE\_FAILED state. The inputPath and outputPath must be valid S3 paths. You can opt out of specifying the file name in the outputPath, however, you will still need to provide a valid S3 bucket location. The eventTypeName and iamRoleArn must exist. The IAM role must grant read permissions to input Amazon S3 bucket and write permissions to output Amazon S3 bucket.
+The following example shows a sample request for [CreateBatchImportJob](https://docs.aws.amazon.com/frauddetector/latest/api/API_CreateBatchImportJob.html) API. A batch import job must include a **jobID**, **inputPath**, **outputPath**, **eventTypeName** and **iamRoleArn**. The jobID can’t contain the same ID of a past job, unless the job exists in CREATE\_FAILED state. The inputPath and outputPath must be valid S3 paths. You can opt out of specifying the file name in the outputPath, however, you will still need to provide a valid S3 bucket location. The eventTypeName and iamRoleArn must exist. The IAM role must grant read permissions to input Amazon S3 bucket and write permissions to output Amazon S3 bucket.
 
 ```
 import boto3

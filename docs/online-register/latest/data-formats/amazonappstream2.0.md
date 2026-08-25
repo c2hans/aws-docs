@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon AppStream 2.0 provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="appstream-DescribeAppBlockBuilderAppBlockAssociations"></a>[DescribeAppBlockBuilderAppBlockAssociations](https://docs.aws.amazon.com/appstream2/latest/APIReference/API_DescribeAppBlockBuilderAppBlockAssociations.html) | Retrieve the associations that are associated with the specified app block builder or app block | List |

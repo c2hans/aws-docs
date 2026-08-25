@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon Forecast provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="forecast-DescribeAutoPredictor"></a>[DescribeAutoPredictor](https://docs.aws.amazon.com/forecast/latest/dg/API_DescribeAutoPredictor.html) | Describe an auto predictor | Read |

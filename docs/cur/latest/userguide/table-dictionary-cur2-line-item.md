@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/table-dictionary-cu
 
 Line item columns contain data about cost, usage, type of usage, pricing rates, product name, and more.
 
-****
-
 | Column name | Description | Data type |
 | --- | --- | --- |
 | line\_item\_usage\_account\_name | The name of the account that used this line item. For organizations, this can be either the management account or a member account. You can use this field to track costs or usage by account. | string |

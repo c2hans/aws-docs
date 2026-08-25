@@ -218,8 +218,8 @@ Required: No
  ** VectorIndexes **   <a name="DDB-Type-TableDescription-VectorIndexes"></a>
 The vector indexes, if any, on the table. Each element is composed of:
 +  `IndexName` - The name of the vector index.
-+  `IndexStatus` - The current status of the vector index: `CREATING`, `ACTIVE`, or `DELETING`.
-+  `Backfilling` - Specifies whether the index is currently backfilling. During backfill, `SearchVectors` operations might return incomplete results.
++  `IndexStatus` - The current status of the vector index: `CREATING`, `UPDATING`, `ACTIVE`, or `DELETING`.
++  `Backfilling` - Specifies whether the index is currently backfilling. `SearchVectors` returns a `ValidationException` while the index is backfilling. This field is reported for an index added with `UpdateTable`, and is absent for an index created as part of `CreateTable`.
 +  `VectorAttribute` - The attribute that contains vector embeddings.
 +  `Dimensions` - The number of dimensions in each vector.
 +  `DistanceFunction` - The distance function used to calculate similarity (`COSINE`, `EUCLIDEAN`, or `DOT_PRODUCT`).

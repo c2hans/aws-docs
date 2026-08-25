@@ -14,8 +14,6 @@ Archive Elastic Block Store (EBS) snapshots. The maximum number of EBS snapshots
 ## Change Type Details
 <a name="ct-059ewa92tc2i1-MAEa-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-059ewa92tc2i1 |

@@ -29,8 +29,6 @@ If you run **eb init** without specifying the `--platform` option, the EB CLI pr
 **Note**
 To use **eb init** to create a new key pair, you must have `ssh-keygen` installed on your local machine and available from the command line.
 
-****
-
 |  Name  |  Description  |  |
 | --- | --- | --- |
 | `-i`<br />`--interactive` | Forces EB CLI to prompt you to provide a value for every **eb init** command option. The `init` command prompts you to provide values for **eb init** command options that do not have a (default) value. After the first time you run the **eb init** command in a directory, EB CLI might not prompt you about any command options. Therefore, use the `--interactive` option when you want to change a setting that you previously set.  |  |

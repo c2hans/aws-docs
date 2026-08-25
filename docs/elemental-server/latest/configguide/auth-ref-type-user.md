@@ -9,8 +9,6 @@ This is version 2.18 of the AWS Elemental Server documentation. This is the late
 
 This table describes the types of users available with authentication.
 
-****
-
 | User type | How created | Log-in username | Log-in password | Use |
 | --- | --- | --- | --- | --- |
 | Default, remote terminal user | Built-in | Customer-created at install. | Default, or as changed by an administrator. | Users manually enter this information at these times: + When logging in to a remote terminal session for the node.<br />+ When PAM is enabled and it's the first time that any users access the node after authentication is enabled. |

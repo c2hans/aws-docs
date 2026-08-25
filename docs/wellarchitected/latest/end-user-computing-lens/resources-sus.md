@@ -20,4 +20,4 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 +  [What to Consider when Selecting a Region for your Workloads](https://aws.amazon.com/blogs/architecture/what-to-consider-when-selecting-a-region-for-your-workloads/)
 +  [Amazon WorkSpaces Thin Client has received Carbon Trust verification for the product's carbon footprint](https://aws.amazon.com/about-aws/whats-new/2024/08/amazon-workspaces-thin-client-carbon-trust-verification/)
 +  [Github - Cost Optimizer for Amazon WorkSpaces Applications](https://github.com/aws-samples/cost-optimizer-for-amazon-appstream2)
-+  [Cost Optimizer for Amazon WorkSpaces](https://aws.amazon.com//solutions/implementations/cost-optimizer-for-amazon-workspaces/?nc1=h_ls)
++  [Cost Optimizer for Amazon WorkSpaces](https://aws.amazon.com/solutions/implementations/cost-optimizer-for-amazon-workspaces/?nc1=h_ls)

@@ -11,8 +11,6 @@ The following table describes the important changes to the AWS Migration Hub Jou
 
 **Latest documentation update:** December 03, 2024
 
-****
-
 | Change | Description | Date |
 | --- | --- | --- |
 | Migration Hub Journeys now supports AWS account connections | To make it possible to grant journey members IAM permissions, you can now create AWS account connections. For more information, see [AWS account connections](https://docs.aws.amazon.com/mhj/latest/userguide/account-connections.html). | 2024-12-03 |

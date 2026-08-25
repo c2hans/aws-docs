@@ -14,7 +14,7 @@ You can use vector indexes with every global table configuration:
 
 Multi-account global tables always use MREC because MRSC supports same-account configurations only. This is a global tables constraint, not a vector index limitation.
 
-The following example adds a replica in the `us-west-2` Region to a table named `Products` that already has a vector index. The table must use on-demand capacity mode, which is required for both vector indexes and this example.
+The following example adds a replica in the `us-west-2` Region to a table named `Products` that already has a vector index. The table must use on-demand capacity mode, which vector indexes require.
 
 ```
 aws dynamodb update-table \
@@ -31,7 +31,7 @@ aws dynamodb describe-table \
     --region us-west-2
 ```
 
-After the replica is active, you can run `SearchVectors` against the replica Region over the same set of vectors as the source Region. Before you search in the replica Region, use `DescribeTable` in that Region and confirm the vector index has finished backfilling — its `IndexStatus` is `ACTIVE` and `Backfilling` is `false`. The replica's vector index backfills independently, so it can still be backfilling for a short time after the replica itself becomes active. Because vector search uses approximate nearest neighbor (ANN), the ranking might differ slightly between Regions for the same query, even over identical data.
+After the replica is active, you can run `SearchVectors` against the replica Region over the same set of vectors as the source Region. Before you search in the replica Region, use `DescribeTable` in that Region and confirm the vector index has finished backfilling, its `IndexStatus` is `ACTIVE` and `Backfilling` is not `true`. The replica's vector index backfills independently, so it can still be backfilling for a short time after the replica itself becomes active. Because vector search uses approximate nearest neighbor (ANN), the ranking might differ slightly between Regions for the same query, even over identical data.
 
 ```
 aws dynamodb search-vectors \

@@ -10,7 +10,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/creating-azurecosmos-conn
 
 **To configure a connection to Azure Cosmos DB:**
 
-1. In AWS Secrets Manager, create a secret using your Azure Cosmos DB Key. To create a secret in Secrets Manager, follow the tutorial available in [ Create an AWS Secrets Manager secret ](https://docs.aws.amazon.com//secretsmanager/latest/userguide/create_secret.html) in the AWS Secrets Manager documentation. After creating the secret, keep the Secret name, {{secretName}} for the next step.
+1. In AWS Secrets Manager, create a secret using your Azure Cosmos DB Key. To create a secret in Secrets Manager, follow the tutorial available in [ Create an AWS Secrets Manager secret ](https://docs.aws.amazon.com/secretsmanager/latest/userguide/create_secret.html) in the AWS Secrets Manager documentation. After creating the secret, keep the Secret name, {{secretName}} for the next step.
    + When selecting **Key/value pairs**, create a pair for the key `spark.cosmos.accountKey` with the value {{cosmosKey}}.
 
 1. In the AWS Glue console, create a connection by following the steps in [Adding an AWS Glue connection](console-connections.md). After creating the connection, keep the connection name, {{connectionName}}, for future use in AWS Glue.

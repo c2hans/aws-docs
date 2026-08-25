@@ -14,8 +14,6 @@ Create a Dynamic Host Configuration Protocol (DHCP) option set for resources in 
 ## Change Type Details
 <a name="ct-18rsjua1zosvo-DAVc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-18rsjua1zosvo |

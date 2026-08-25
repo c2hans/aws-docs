@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/location-index
 # Indexing location data
 <a name="location-indexing-geoquery"></a>
 
-You can use [AWS IoT fleet indexing](https://docs.aws.amazon.com//iot/latest/developerguide/iot-indexing.html) to index your devices' last sent location data and search for devices using geoqueries. This feature resolves device monitoring and management use cases such as location tracking and proximity search. Location indexing works similarly to other fleet indexing features, and with additional configurations to specify in your [thing indexing](managing-fleet-index.md).
+You can use [AWS IoT fleet indexing](https://docs.aws.amazon.com/iot/latest/developerguide/iot-indexing.html) to index your devices' last sent location data and search for devices using geoqueries. This feature resolves device monitoring and management use cases such as location tracking and proximity search. Location indexing works similarly to other fleet indexing features, and with additional configurations to specify in your [thing indexing](managing-fleet-index.md).
 
 Common use cases include: search and aggregate devices located within desired geographic boundaries, get location specific insights using query terms related to device metadata and state from indexed data sources, provide a granular view such as filtering results to a specific geographic area to reduce rendering lags within your fleet monitoring maps and track last reported device location, and identify devices that are outside of the desired boundary limits and generate alarms using [fleet metrics](iot-fleet-metrics.md). To get started with location indexing and geoqueries, see [Getting started tutorial](location-indexing-tutorial.md).
 
@@ -88,7 +88,7 @@ The following steps show how to update indexing configuration for your location 
 
 **Create and run geoqueries**
 
-   Depending on your use cases, create geoqueries and run them to search for devices. The geoqeury you compose must follow the [Query syntax](https://docs.aws.amazon.com//iot/latest/developerguide/query-syntax.html). You can find some examples in [Example geoqueries](#location-indexing-geoqueries).
+   Depending on your use cases, create geoqueries and run them to search for devices. The geoqeury you compose must follow the [Query syntax](https://docs.aws.amazon.com/iot/latest/developerguide/query-syntax.html). You can find some examples in [Example geoqueries](#location-indexing-geoqueries).
 
 ## Update thing indexing configuration
 <a name="location-indexing-configuration"></a>
@@ -98,7 +98,7 @@ To index location data, you must update indexing configuration and include your 
 ### Location data stored in classic shadows
 <a name="location-indexing-shadow-configuration"></a>
 
-If your location data is stored in a classic shadow, you must set `thingIndexingMode` to be `REGISTRY_AND_SHADOW` and specify your location data in the `geoLocations` fields (`name` and `order`) in [`filter`](https://docs.aws.amazon.com//iot/latest/apireference/API_IndexingFilter.html).
+If your location data is stored in a classic shadow, you must set `thingIndexingMode` to be `REGISTRY_AND_SHADOW` and specify your location data in the `geoLocations` fields (`name` and `order`) in [`filter`](https://docs.aws.amazon.com/iot/latest/apireference/API_IndexingFilter.html).
 
 In the following thing indexing configuration example, you specify the location data path `shadow.reported.coordinates` as `name` and `LonLat` as `order`.
 
@@ -125,7 +125,7 @@ In the following thing indexing configuration example, you specify the location 
   Indexing filter provides additional selections for named shadows and geolocation data. For more information, see [Indexing filter](managing-index.md#thing-indexing-filter).
 + `geoLocations`
 
-  The list of geolocation targets that you select to index. The default maximum number of geolocation targets for indexing is `1`. To increase the limit, see [AWS IoT Device Management Quotas](https://docs.aws.amazon.com//general/latest/gr/iot_device_management.html#fleet-indexing-limits).
+  The list of geolocation targets that you select to index. The default maximum number of geolocation targets for indexing is `1`. To increase the limit, see [AWS IoT Device Management Quotas](https://docs.aws.amazon.com/general/latest/gr/iot_device_management.html#fleet-indexing-limits).
 + `name`
 
   The name of the geolocation target field. An example value of `name` can be the location data path of your shadow: `shadow.reported.coordinates`.
@@ -136,7 +136,7 @@ In the following thing indexing configuration example, you specify the location 
 ### Location data stored in named shadows
 <a name="location-indexing-named-shadow-configuration"></a>
 
-If your location data is stored in a named shadow, set `namedShadowIndexingMode` to be `ON`, add your named shadow name(s) to the `namedShadowNames` field in [`filter`](https://docs.aws.amazon.com//iot/latest/apireference/API_IndexingFilter.html), and specify your location data path in the `geoLocations` field in [`filter`](https://docs.aws.amazon.com//iot/latest/apireference/API_IndexingFilter.html).
+If your location data is stored in a named shadow, set `namedShadowIndexingMode` to be `ON`, add your named shadow name(s) to the `namedShadowNames` field in [`filter`](https://docs.aws.amazon.com/iot/latest/apireference/API_IndexingFilter.html), and specify your location data path in the `geoLocations` field in [`filter`](https://docs.aws.amazon.com/iot/latest/apireference/API_IndexingFilter.html).
 
 In the following thing indexing configuration example, you specify the location data path `shadow.name.namedShadow1.reported.coordinates` as `name` and `LonLat` as `order`.
 
@@ -167,7 +167,7 @@ In the following thing indexing configuration example, you specify the location 
   Indexing filter provides additional selections for named shadows and geolocation data. For more information, see [Indexing filter](managing-index.md#thing-indexing-filter).
 + `geoLocations`
 
-  The list of geolocation targets that you select to index. The default maximum number of geolocation targets for indexing is `1`. To increase the limit, see [AWS IoT Device Management Quotas](https://docs.aws.amazon.com//general/latest/gr/iot_device_management.html#fleet-indexing-limits).
+  The list of geolocation targets that you select to index. The default maximum number of geolocation targets for indexing is `1`. To increase the limit, see [AWS IoT Device Management Quotas](https://docs.aws.amazon.com/general/latest/gr/iot_device_management.html#fleet-indexing-limits).
 + `name`
 
   The name of the geolocation target field. An example value of `name` can be the location data path of your shadow: `shadow.name.namedShadow1.reported.coordinates`.

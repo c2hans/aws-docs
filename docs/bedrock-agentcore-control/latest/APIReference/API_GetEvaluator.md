@@ -21,7 +21,8 @@ The request uses the following URI parameters.
 
  ** [evaluatorId](#API_GetEvaluator_RequestSyntax) **   <a name="bedrockagentcorecontrol-GetEvaluator-request-uri-evaluatorId"></a>
  The unique identifier of the evaluator to retrieve. Can be a built-in evaluator ID (e.g., Builtin.Helpfulness) or a custom evaluator ID.
-Pattern: `(Builtin.[a-zA-Z0-9_-]+|[a-zA-Z][a-zA-Z0-9-_]{0,99}-[a-zA-Z0-9]{10})`
+Length Constraints: Minimum length of 1. Maximum length of 111.
+Pattern: `(Builtin\.[a-zA-Z0-9._-]+|ThirdParty\.[a-zA-Z0-9_-]+\.[a-zA-Z0-9_-]+|[a-zA-Z][a-zA-Z0-9-_]{0,99}-[a-zA-Z0-9]{10})`
 Required: Yes
 
  ** [includedData](#API_GetEvaluator_RequestSyntax) **   <a name="bedrockagentcorecontrol-GetEvaluator-request-uri-includedData"></a>
@@ -47,9 +48,11 @@ Content-type: application/json
    "evaluatorConfig": { ... },
    "evaluatorId": "string",
    "evaluatorName": "string",
+   "evaluatorType": "string",
    "kmsKeyArn": "string",
    "level": "string",
    "lockedForModification": boolean,
+   "provider": "string",
    "status": "string",
    "updatedAt": number
 }
@@ -74,7 +77,7 @@ Length Constraints: Minimum length of 1. Maximum length of 200.
  ** [evaluatorArn](#API_GetEvaluator_ResponseSyntax) **   <a name="bedrockagentcorecontrol-GetEvaluator-response-evaluatorArn"></a>
  The Amazon Resource Name (ARN) of the evaluator.
 Type: String
-Pattern: `arn:aws[a-zA-Z-]*:bedrock-agentcore:[a-z0-9-]+:[0-9]{12}:evaluator\/[a-zA-Z][a-zA-Z0-9-_]{0,99}-[a-zA-Z0-9]{10}$|^arn:aws[a-zA-Z-]*:bedrock-agentcore:::evaluator/Builtin.[a-zA-Z0-9_-]+`
+Pattern: `arn:aws[a-zA-Z-]*:bedrock-agentcore:[a-z0-9-]+:[0-9]{12}:evaluator\/[a-zA-Z][a-zA-Z0-9-_]{0,99}-[a-zA-Z0-9]{10}$|^arn:aws[a-zA-Z-]*:bedrock-agentcore:::evaluator/(Builtin|ThirdParty)\.[a-zA-Z0-9._-]+`
 
  ** [evaluatorConfig](#API_GetEvaluator_ResponseSyntax) **   <a name="bedrockagentcorecontrol-GetEvaluator-response-evaluatorConfig"></a>
  The configuration of the evaluator, including LLM-as-a-Judge or code-based settings.
@@ -84,12 +87,24 @@ Type: [EvaluatorConfig](API_EvaluatorConfig.md) object
  ** [evaluatorId](#API_GetEvaluator_ResponseSyntax) **   <a name="bedrockagentcorecontrol-GetEvaluator-response-evaluatorId"></a>
  The unique identifier of the evaluator.
 Type: String
-Pattern: `(Builtin.[a-zA-Z0-9_-]+|[a-zA-Z][a-zA-Z0-9-_]{0,99}-[a-zA-Z0-9]{10})`
+Length Constraints: Minimum length of 1. Maximum length of 111.
+Pattern: `(Builtin\.[a-zA-Z0-9._-]+|ThirdParty\.[a-zA-Z0-9_-]+\.[a-zA-Z0-9_-]+|[a-zA-Z][a-zA-Z0-9-_]{0,99}-[a-zA-Z0-9]{10})`
 
  ** [evaluatorName](#API_GetEvaluator_ResponseSyntax) **   <a name="bedrockagentcorecontrol-GetEvaluator-response-evaluatorName"></a>
  The name of the evaluator.
 Type: String
-Pattern: `(Builtin.[a-zA-Z0-9_-]+|[a-zA-Z][a-zA-Z0-9_]{0,47})`
+Length Constraints: Minimum length of 1. Maximum length of 48.
+Pattern: `(Builtin\.[a-zA-Z0-9._-]+|ThirdParty\.[a-zA-Z0-9_-]+\.[a-zA-Z0-9_-]+|[a-zA-Z][a-zA-Z0-9_]{0,47})`
+
+ ** [evaluatorType](#API_GetEvaluator_ResponseSyntax) **   <a name="bedrockagentcorecontrol-GetEvaluator-response-evaluatorType"></a>
+ The kind of evaluator resource. Valid values:
++  `Builtin` – An AWS-managed global evaluator.
++  `ThirdParty` – An AWS-managed global evaluator from a third-party provider.
++  `Custom` – A customer-created evaluator.
++  `CustomCode` – A customer-created code-based evaluator.
++  `CustomDerived` – A customer-created evaluator derived from an existing base evaluator.
+Type: String
+Valid Values: `Builtin | ThirdParty | Custom | CustomCode | CustomDerived`
 
  ** [kmsKeyArn](#API_GetEvaluator_ResponseSyntax) **   <a name="bedrockagentcorecontrol-GetEvaluator-response-kmsKeyArn"></a>
  The Amazon Resource Name (ARN) of the customer managed AWS KMS key used to encrypt the evaluator's sensitive data. This field is only present for evaluators encrypted with a customer managed key.
@@ -105,6 +120,11 @@ Valid Values: `TOOL_CALL | TRACE | SESSION`
  ** [lockedForModification](#API_GetEvaluator_ResponseSyntax) **   <a name="bedrockagentcorecontrol-GetEvaluator-response-lockedForModification"></a>
  Whether the evaluator is locked for modification due to being referenced by active online evaluation configurations.
 Type: Boolean
+
+ ** [provider](#API_GetEvaluator_ResponseSyntax) **   <a name="bedrockagentcorecontrol-GetEvaluator-response-provider"></a>
+ The source of the evaluator's logic: AWS, a third-party library, or you.
+Type: String
+Valid Values: `AWS | DeepEval | AutoEval | Custom`
 
  ** [status](#API_GetEvaluator_ResponseSyntax) **   <a name="bedrockagentcorecontrol-GetEvaluator-response-status"></a>
  The current status of the evaluator.

@@ -279,7 +279,7 @@ If you use short codes, maintain a separate short code for each brand and each t
 ### Verify your destination phone numbers
 <a name="best-practices-sms-verify-destination-numbers"></a>
 
-When you send SMS and MMS messages through AWS End User Messaging SMS, you're billed for each message part that you send. The price you pay per message part varies on the recipient's country or region. For more information about SMS and MMS pricing, see [AWS End User Messaging Pricing](https://aws.amazon.com//end-user-messaging/pricing/).
+When you send SMS and MMS messages through AWS End User Messaging SMS, you're billed for each message part that you send. The price you pay per message part varies on the recipient's country or region. For more information about SMS and MMS pricing, see [AWS End User Messaging Pricing](https://aws.amazon.com/end-user-messaging/pricing/).
 
 When AWS End User Messaging SMS accepts a request to send an SMS or MMS message, you're charged for sending that message. This statement is true even if the intended recipient doesn't actually receive the message. For example, if the recipient's phone number is no longer in service, or if you sent the message to mobile phone number that wasn't valid, you're still billed for sending the message.
 
@@ -404,4 +404,4 @@ If you plan to send messages only to recipients in specific countries, configure
 **Limit the number of messages that you send to a single number**
 Configure your applications so that they can only send a certain number of voice messages to the same recipient each day.
 
-1 Prices quoted are accurate as of December 2021. Per-minute rates are subject to change. For current pricing, see [AWS End User Messaging Pricing](https://aws.amazon.com//end-user-messaging/pricing/).
+1 Prices quoted are accurate as of December 2021. Per-minute rates are subject to change. For current pricing, see [AWS End User Messaging Pricing](https://aws.amazon.com/end-user-messaging/pricing/).

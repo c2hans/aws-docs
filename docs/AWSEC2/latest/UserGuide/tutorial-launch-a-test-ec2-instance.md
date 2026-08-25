@@ -5,8 +5,8 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/tutorial-launch-
 # Tutorial 2: Launch a test EC2 instance and connect to it
 <a name="tutorial-launch-a-test-ec2-instance"></a>
 
-|  |  |
-| --- |--- |
+| Attribute | Value |
+| --- | --- |
 | Tutorial objective | Learn how to launch an Amazon EC2 instance that you can use for testing purposes. This instance will have no advanced configuration and won't store sensitive information. You will also learn about the essential instance configuration settings, how to connect to the instance, and how to stop it. |
 | EC2 experience | Beginner |
 | **Duration** | 30 minutes |
@@ -414,7 +414,7 @@ In this tutorial, you covered the following key concepts:
 
 To build confidence in launching, connecting to, and stopping instances, consider repeating the steps in this tutorial. Be sure to terminate any instances that you launch to preserve your Free Tier benefits.
 
-Once you're comfortable with these basics, you can explore more advanced tutorials. For more tutorials, see [Looking for other tutorials?](ec2-instance-launch-tutorials.md#looking-for-other-tutorials)
+After you're comfortable with these basics, you can explore more advanced tutorials. For more tutorials, see [Looking for other tutorials?](ec2-instance-launch-tutorials.md#looking-for-other-tutorials)
 
 If you created your AWS account before July 15, 2025, consider watching the following 6-minute video: [How can I avoid charges on my account when using AWS Free Tier services](https://youtu.be/pZLG8McSugQ)
 

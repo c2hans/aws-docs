@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon Elastic VMware Service provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="evs-GetDepotUrl"></a>[GetDepotUrl](https://docs.aws.amazon.com/evs/latest/APIReference/API_GetDepotUrl.html) | Get an Amazon EVS environment depot url | Read |

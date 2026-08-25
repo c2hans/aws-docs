@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/calculated-att
 # Create calculated attributes in Connect Customer
 <a name="calculated-attributes-admin-website-create"></a>
 
-1. Prerequisites: Ensure you have the necessary security profile permissions. For more information, see [Update permissions for calculated attributes in Connect Customer Customer Profiles](security-profile-customer-profile-calc-attribs.md).
+1. Prerequisites: Make sure you have the necessary security profile permissions. For more information, see [Update permissions for calculated attributes in Connect Customer Customer Profiles](security-profile-customer-profile-calc-attribs.md).
 
 1. In Connect Customer admin website, navigate to **Customer Profiles**, **Calculated attributes**, choose **Create attribute** in the **Calculated attributes** table view.
 ![The Customer profiles tab in the agent workspace, the Associate button.](http://docs.aws.amazon.com/connect/latest/adminguide/images/calculated-attributes-admin-website-create-1.png)
@@ -20,7 +20,7 @@ If you are selecting an attribute from a standard object type (`_asset`, `_case`
 1. Additionally, you can add another attribute by selecting the *plus* icon. You can choose up to two attributes to calculate and combine them by an operator. Specify an operator such as *plus* or *minus* to combine the attribute values.
 ![The Customer profiles tab in the agent workspace, the Associate button.](http://docs.aws.amazon.com/connect/latest/adminguide/images/calculated-attributes-admin-website-create-3.png)
 
-1. Once the calculation is selected, you can optionally configure the Number of events, Time period, and Source timestamp. By default, calculated attributes is configured to use unlimited events, an unlimited time period, and a timestamp based on ingestion date.
+1. After the calculation is selected, you can optionally configure the Number of events, Time period, and Source timestamp. By default, calculated attributes is configured to use unlimited events, an unlimited time period, and a timestamp based on ingestion date.
 
    An output is returned when there is at least one event during the specified time period.
    + **Number of events:** configure limit or use unlimited (default)

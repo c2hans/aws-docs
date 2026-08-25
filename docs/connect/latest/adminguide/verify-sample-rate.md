@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/verify-sample-
 
 This topic is for IT administrators who are experienced with investigating audio device issues.
 
-If the agent's audio device does not support up to 48khz and the browser asserts a sample rate of 48khz, audio issues such as an audible humming sound may be present in the agent's outgoing audio. This has been seen with Firefox but not with Chrome. For example, when an agent has used a headset with a preferred sample rate of audio to 16000, it causes issues.
+If the agent's audio device does not support up to 48khz and the browser asserts a sample rate of 48khz, audio issues such as an audible humming sound might be present in the agent's outgoing audio. This has been seen with Firefox but not with Chrome. For example, when an agent has used a headset with a preferred sample rate of audio to 16000, it causes issues.
 
 Perform the following steps to verify your headset and browser sample rates.
 

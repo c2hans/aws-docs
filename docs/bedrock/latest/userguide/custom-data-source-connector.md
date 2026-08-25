@@ -34,8 +34,6 @@ Content-type: application/json
 
 You can include any of the following optional fields to configure the data source:
 
-****
-
 | Field | Use case |
 | --- | --- |
 | description | To provide a description for the data source. |

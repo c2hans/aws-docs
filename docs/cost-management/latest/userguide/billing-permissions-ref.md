@@ -513,8 +513,6 @@ For more information, see [Service-linked roles for Data Exports](https://docs.a
 
 View details about updates to AWS managed policies for AWS Cost Management since this service began tracking these changes. For automatic alerts about changes to this page, subscribe to the RSS feed on the AWS Cost Management [Document history](https://docs.aws.amazon.com/cost-management/latest/userguide/doc-history.html) page.
 
-****
-
 | Change | Description | Date |
 | --- | --- | --- |
 | Update to existing policy<br />[AWSBudgetsActions\_RolePolicyForResourceAdministrationWithSSM](https://docs.aws.amazon.com/cost-management/latest/userguide/billing-permissions-ref.html#budget-managedIAM-SSM) | We updated the policy with require automation-execution and document permissions to use ssm:StartAutomationExecution. | 04/07/2026 |

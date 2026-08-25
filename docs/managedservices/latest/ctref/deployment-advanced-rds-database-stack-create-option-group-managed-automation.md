@@ -14,8 +14,6 @@ An option group specifies features (options), and their settings, that you then 
 ## Change Type Details
 <a name="ct-10yi1sd9nst1c-DARc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-10yi1sd9nst1c |

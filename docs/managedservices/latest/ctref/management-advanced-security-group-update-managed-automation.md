@@ -14,8 +14,6 @@ Update the inbound and the outbound rules of a security group, and optionally as
 ## Change Type Details
 <a name="ct-3memthlcmvc1b-MASu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-3memthlcmvc1b |

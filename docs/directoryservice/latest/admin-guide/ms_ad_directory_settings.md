@@ -43,8 +43,6 @@ The following list shows the type, setting name, API name, potential values, and
 
 TLS 1.2 and AES 256/256 are the default directory security settings if all other security settings are disabled. They cannot be disabled.
 
-****
-
 - **Authentication Protocol**
   - **Setting name:** NTLM V1 / **API name:** NTLM\_V1 / **Potential values:** Enable, Disable / **Setting description:** Enable or Disable NTLM V1 authentication for clients of your Active Directory domain controllers.
   - **Setting name:** NTLM Security Support Provider (SSP) Session Security / **API name:** NTLM\_SSP\_SESSION\_SECURITY / **Potential values:** Enable, Disable / **Setting description:** Enable or disable NTLM SSP session security to enforce encryption and signing for NTLM authentication sessions in your Active Directory domain controllers.

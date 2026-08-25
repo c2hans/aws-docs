@@ -5,7 +5,10 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/allocation-strate
 # Instance type allocation strategies for AWS Batch
 <a name="allocation-strategies"></a>
 
-When a managed compute environment is created, AWS Batch selects instance types from the `[instanceTypes](https://docs.aws.amazon.com/batch/latest/APIReference/API_ComputeResource.html#Batch-Type-ComputeResource-instanceTypes)` specified that best fit the needs of the jobs. The allocation strategy defines behavior when AWS Batch needs additional capacity. This parameter isn't applicable to jobs that run on Fargate resources. Don't specify this parameter.
+When a managed compute environment is created, AWS Batch selects instance types from the `[instanceTypes](https://docs.aws.amazon.com/batch/latest/APIReference/API_ComputeResource.html#Batch-Type-ComputeResource-instanceTypes)` specified that best fit the needs of the jobs. The allocation strategy defines behavior when AWS Batch needs additional capacity. This parameter isn't applicable to jobs that run on Fargate resources or Amazon ECS Managed Instances. Don't specify this parameter for those compute environment types.
+
+**Note**
+For Amazon ECS Managed Instances compute environments, instance type selection is managed by Amazon ECS based on the `instanceRequirements` configuration in the `managedInstancesProvider`. No allocation strategy is needed. For more information, see [Amazon ECS Managed Instances compute environments](ecs_managed_instances.md).
 
 `BEST_FIT` (default)
 AWS Batch selects an instance type that best fits the needs of the jobs with a preference for the lowest-cost instance type. If additional instances of the selected instance type aren't available, AWS Batch waits for the additional instances to be available. If there aren't enough instances available, or if the user is reaching the [Amazon EC2 service quotas](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-resource-limits.html), then additional jobs don't run until currently running jobs are complete. This allocation strategy keeps costs lower but can limit scaling. If you're using Spot Fleets with `BEST_FIT`, the Spot Fleet IAM Role must be specified. `BEST_FIT` isn't supported when updating compute environments. For more information, see [Update a compute environment in AWS Batch](updating-compute-environments.md).

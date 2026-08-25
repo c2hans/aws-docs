@@ -172,8 +172,6 @@ After you launch the cluster, you can view and edit the alarm from the clusterâ€
 
 The cluster status displays the current state of the cluster. The following table provides a description for each cluster status.
 
-****
-
 | Status | Description |
 | --- | --- |
 | available | The cluster is running and available. |

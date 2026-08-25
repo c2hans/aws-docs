@@ -55,7 +55,7 @@ Learn more about [How to display a map](how-to-display-a-map.md).
 **Note**
  For customers in `ap-southeast-1` and `ap-southeast-5`, supported request and response fields may differ. Refer to the [GetStyleDescriptor API Reference](https://docs.aws.amazon.com/location/latest/APIReference/API_geomaps_GetStyleDescriptor.html) for details.
 
-The request supports parameters like `ColorScheme`, `Key`, and `PoliticalView` to define the map's style and presentation. The `Style` parameter is required to specify the desired map style.
+The request supports parameters like `ColorScheme`, `Key`, `PoliticalView`, `PoiDensity`, and `PoiCategories` to define the map's style and presentation. The `Style` parameter is required to specify the desired map style.
 + **`ColorScheme`**: Sets the map's color palette, such as `Light` or `Dark`.
 + **`PoliticalView`**: Specifies the political view for map visualization.
 + **`Style`**: Defines the style of the map, like `Standard` or `Monochrome`.
@@ -63,6 +63,8 @@ The request supports parameters like `ColorScheme`, `Key`, and `PoliticalView` t
 + **`ContourDensity`**: Shows terrain shape and steepness using elevation contour lines at varying density levels.
 + **`Traffic`**: Overlays real-time traffic conditions on the map.
 + **`TravelMode`**: Displays transportation information including public transit systems or truck routing with road restrictions.
++ **`PoiDensity`**: Controls how many points of interest (POIs) render on the map. Values range from `Off` (no POIs) to `VeryDense` (maximum density). When omitted, `Default` density is used.
++ **`PoiCategories`**: Filters the map to display only specified POI categories, such as `FoodAndDrink`, `Transportation`, or `Shopping`. When omitted, all categories are shown.
 
 ## Understand the response
 <a name="dynamic-understand-the-response"></a>

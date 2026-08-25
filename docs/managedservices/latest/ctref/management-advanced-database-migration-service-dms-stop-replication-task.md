@@ -14,8 +14,6 @@ Stop a Database Migration Service (DMS) replication task. The specified task mus
 ## Change Type Details
 <a name="ct-1vd3y4ygbqmfk-MADs-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1vd3y4ygbqmfk |

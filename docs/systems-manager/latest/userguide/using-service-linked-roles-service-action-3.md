@@ -64,8 +64,6 @@ Systems Manager supports using service-linked roles in all of the Regions where 
 
 Systems Manager doesn't support using service-linked roles in every Region where the service is available. You can use the `AWSServiceRoleForSystemsManagerOpsDataSync` role in the following Regions.
 
-****
-
 | AWS Region name | Region identity | Support in Systems Manager |
 | --- | --- | --- |
 | US East (N. Virginia) | us-east-1 | Yes |

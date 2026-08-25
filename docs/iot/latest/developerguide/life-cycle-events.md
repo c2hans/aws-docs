@@ -20,7 +20,7 @@ Lifecycle messages might be sent out of order. You might receive duplicate messa
 <a name="connect-disconnect"></a>
 
 **Note**
-With AWS IoT Device Management fleet indexing, you can search for things, run aggregate queries, and create dynamic groups based on thing Connect/Disconnect events. For more information, see [ Fleet indexing](https://docs.aws.amazon.com//iot/latest/developerguide/iot-indexing.html).
+With AWS IoT Device Management fleet indexing, you can search for things, run aggregate queries, and create dynamic groups based on thing Connect/Disconnect events. For more information, see [ Fleet indexing](https://docs.aws.amazon.com/iot/latest/developerguide/iot-indexing.html).
 
 AWS IoT publishes a message to the following MQTT topics when a client connects or disconnects:
 + `$aws/events/presence/connected/{{clientId}}` – A client connected to the message broker.

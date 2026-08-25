@@ -18,7 +18,7 @@ For `GetParametersByPath`, the following patterns listed for `Key` aren't valid:
 For examples of AWS CLI commands demonstrating valid parameter filter constructions, see [Searching for Systems Manager parameters](https://docs.aws.amazon.com/systems-manager/latest/userguide/parameter-search.html) in the * AWS Systems Manager User Guide*.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 132.
-Pattern: `tag:.+|Name|Type|KeyId|Path|Label|Tier|DataType`
+Pattern: `^(tag:.+|Name|Type|KeyId|Path|Label|Tier|DataType)$`
 Required: Yes
 
  ** Option **   <a name="systemsmanager-Type-ParameterStringFilter-Option"></a>

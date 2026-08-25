@@ -32,7 +32,7 @@ Add statements to the resource-based delegation policy in the AWS Management Con
 
 1. In the **Delegated administrator for AWS Organizations** section, choose **Edit** to update the Organizations delegation policy.
 
-1. Enter a JSON policy document. For details about the IAM policy language, see [IAM JSON policy](https://docs.aws.amazon.com//IAM/latest/UserGuide/reference_policies.html) reference.
+1. Enter a JSON policy document. For details about the IAM policy language, see [IAM JSON policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies.html) reference.
 
 1. Resolve any [security warnings, errors, or general warnings](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_policy-validator.html) generated during policy validation, and then choose **Create policy**.
 

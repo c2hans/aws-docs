@@ -18,12 +18,12 @@ Building an API for your relational database with AWS AppSync has several advant
 
 AWS AppSync makes building APIs from existing relational databases easy. Its introspection utility can discover models from database tables and propose GraphQL types. The AWS AppSync console's *Create API* wizard can instantly generate an API from an Aurora MySQL or PostgreSQL database. It automatically creates types and JavaScript resolvers to read and write data.
 
-AWS AppSync provides integrated JavaScript utilities to simplify writing SQL statements in resolvers. You can use AWS AppSync's `sql` tag templates for static statements with dynamic values, or the `rds` module utilities to build statements programmatically. See the [resolver function reference for RDS](https://docs.aws.amazon.com//appsync/latest/devguide/resolver-reference-rds-js.html) data sources and [built-in modules](https://docs.aws.amazon.com//appsync/latest/devguide/built-in-modules-js.html#built-in-rds-modules) for more.
+AWS AppSync provides integrated JavaScript utilities to simplify writing SQL statements in resolvers. You can use AWS AppSync's `sql` tag templates for static statements with dynamic values, or the `rds` module utilities to build statements programmatically. See the [resolver function reference for RDS](https://docs.aws.amazon.com/appsync/latest/devguide/resolver-reference-rds-js.html) data sources and [built-in modules](https://docs.aws.amazon.com/appsync/latest/devguide/built-in-modules-js.html#built-in-rds-modules) for more.
 
 ## Using the introspection feature (console)
 <a name="using-introspection-console"></a>
 
-For a detailed tutorial and getting started guide, see [Tutorial: Aurora PostgreSQL Serverless with Data API](https://docs.aws.amazon.com//appsync/latest/devguide/aurora-serverless-tutorial-js.html).
+For a detailed tutorial and getting started guide, see [Tutorial: Aurora PostgreSQL Serverless with Data API](https://docs.aws.amazon.com/appsync/latest/devguide/aurora-serverless-tutorial-js.html).
 
 The AWS AppSync console allows you to create an AWS AppSync GraphQL API from your existing Aurora database configured with the Data API in just a few minutes. This quickly generates an operational schema based on your database configuration. You can use the API as-is or build on it to add features.
 
@@ -37,7 +37,7 @@ The AWS AppSync console allows you to create an AWS AppSync GraphQL API from you
 
    1. For **contact details**, you can enter a point of contact to identify a manager for the API. This is an optional field.
 
-   1. Under **Private API configuration**, you can enable private API features. A private API can only be accessed from a configured VPC endpoint (VPCE). For more information, see [Private APIs](https://docs.aws.amazon.com//appsync/latest/devguide/using-private-apis.html).
+   1. Under **Private API configuration**, you can enable private API features. A private API can only be accessed from a configured VPC endpoint (VPCE). For more information, see [Private APIs](https://docs.aws.amazon.com/appsync/latest/devguide/using-private-apis.html).
 
       We don't recommend enabling this feature for this example. Choose **Next** after reviewing your inputs.
 
@@ -45,11 +45,11 @@ The AWS AppSync console allows you to create an AWS AppSync GraphQL API from you
 
    1. You need to choose your database from your cluster. The first step is to choose the **Region** in which your cluster exists.
 
-   1. Choose the **Aurora cluster** from the drop-down list. Note that you must have created and [enabled](https://docs.aws.amazon.com//AmazonRDS/latest/AuroraUserGuide/data-api.html#data-api.enabling) a corresponding data API before using the resource.
+   1. Choose the **Aurora cluster** from the drop-down list. Note that you must have created and [enabled](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/data-api.html#data-api.enabling) a corresponding data API before using the resource.
 
-   1. Next, you must add the credentials for your database to the service. This is primarily done using AWS Secrets Manager. Choose the **Region** in which your secret exists. For more information on how to retrieve secret information, see [Find secrets](https://docs.aws.amazon.com//secretsmanager/latest/userguide/manage_search-secret.html) or [Retrieve secrets](https://docs.aws.amazon.com//secretsmanager/latest/userguide/retrieving-secrets.html).
+   1. Next, you must add the credentials for your database to the service. This is primarily done using AWS Secrets Manager. Choose the **Region** in which your secret exists. For more information on how to retrieve secret information, see [Find secrets](https://docs.aws.amazon.com/secretsmanager/latest/userguide/manage_search-secret.html) or [Retrieve secrets](https://docs.aws.amazon.com/secretsmanager/latest/userguide/retrieving-secrets.html).
 
-   1. Add your secret from the drop-down list. Note that the user must have [read permissions](https://docs.aws.amazon.com//AmazonRDS/latest/UserGuide/security_iam_id-based-policy-examples.html#security_iam_id-based-policy-examples-console) for your database.
+   1. Add your secret from the drop-down list. Note that the user must have [read permissions](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/security_iam_id-based-policy-examples.html#security_iam_id-based-policy-examples-console) for your database.
 
 1. Choose **Import**.
 
@@ -77,7 +77,7 @@ The AWS AppSync console allows you to create an AWS AppSync GraphQL API from you
 ## Using the introspection feature (API)
 <a name="using-introspection-api"></a>
 
-You can use the `StartDataSourceIntrospection` introspection API to discover models in your database programmatically. For more details on the command, see using the [`StartDataSourceIntrospection`](https://docs.aws.amazon.com//appsync/latest/APIReference/API_StartDataSourceIntrospection.html) API.
+You can use the `StartDataSourceIntrospection` introspection API to discover models in your database programmatically. For more details on the command, see using the [`StartDataSourceIntrospection`](https://docs.aws.amazon.com/appsync/latest/APIReference/API_StartDataSourceIntrospection.html) API.
 
 To use `StartDataSourceIntrospection`, provide your Aurora cluster Amazon Resource Name (ARN), database name, and AWS Secrets Manager secret ARN. The command starts the introspection process. You can retrieve the results with the `GetDataSourceIntrospection` command. You can specify whether the command should return the Storage Definition Language (SDL) string for the discovered models. This is useful for generating an SDL schema definition directly from the discovered models.
 

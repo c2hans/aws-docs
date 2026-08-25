@@ -42,10 +42,10 @@ Before you create application entitlements, you must do the following:
    + costCenter
    + userType
 
-   The attributes that you defined are used to entitle applications in your stack to a user when they federate into an WorkSpaces Applications session. Entitlement works by matching the attribute name to a key value name in the SAML assertion created during federation. For more information, see [SAML PrincipalTag Attribute](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_roles_providers_create_saml_assertions.html#saml_role-session-tags.html).
+   The attributes that you defined are used to entitle applications in your stack to a user when they federate into an WorkSpaces Applications session. Entitlement works by matching the attribute name to a key value name in the SAML assertion created during federation. For more information, see [SAML PrincipalTag Attribute](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_create_saml_assertions.html#saml_role-session-tags.html).
 **Note**
 One or more values can be included in any supported attribute, separated by a colon (:).
-For example, groups information can be passed in a SAML attribute name https://aws.amazon.com/SAML/Attributes/PrincipalTag:groups with value “group1:group2:group3” and your entitlement can allow applications based on a single group value, i.e. “group1”. For more information, see [SAML PrincipalTag Attribute](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_roles_providers_create_saml_assertions.html#saml_role-session-tags.html).
+For example, groups information can be passed in a SAML attribute name https://aws.amazon.com/SAML/Attributes/PrincipalTag:groups with value “group1:group2:group3” and your entitlement can allow applications based on a single group value, i.e. “group1”. For more information, see [SAML PrincipalTag Attribute](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_create_saml_assertions.html#saml_role-session-tags.html).
 
 1. Configure application settings in your stack to entitle all applications, or select applications. Choosing **All applications (\*)** applies all applications available on the stack, including applications that are added in the future. Choosing **Select applications** will filter on specific application names.
 

@@ -10,11 +10,11 @@ The Chat Logging feature allows you to record all messages in a room to any of t
 ## Enable Chat Logging for a Room
 <a name="chat-logging-enable"></a>
 
-Chat Logging is an advanced option that can be enabled by associating a logging configuration with a room. A logging configuration is a resource that allows you to specify a type of location (Amazon S3 bucket, Amazon CloudWatch Logs, or Amazon Kinesis Data Firehose) where messages of a room are logged. For details on creating and managing logging configurations, see [Getting Started with Amazon IVS Chat](getting-started-chat.md) and [Amazon IVS Chat API Reference](https://docs.aws.amazon.com//ivs/latest/ChatAPIReference/Welcome.html).
+Chat Logging is an advanced option that can be enabled by associating a logging configuration with a room. A logging configuration is a resource that allows you to specify a type of location (Amazon S3 bucket, Amazon CloudWatch Logs, or Amazon Kinesis Data Firehose) where messages of a room are logged. For details on creating and managing logging configurations, see [Getting Started with Amazon IVS Chat](getting-started-chat.md) and [Amazon IVS Chat API Reference](https://docs.aws.amazon.com/ivs/latest/ChatAPIReference/Welcome.html).
 
-You can associate up to three logging configurations with each room, either when creating a new room ([CreateRoom](https://docs.aws.amazon.com//ivs/latest/ChatAPIReference/API_CreateRoom.html)) or updating an existing room ([UpdateRoom](https://docs.aws.amazon.com//ivs/latest/ChatAPIReference/API_UpdateRoom.html)). You can associate multiple rooms with the same logging configuration.
+You can associate up to three logging configurations with each room, either when creating a new room ([CreateRoom](https://docs.aws.amazon.com/ivs/latest/ChatAPIReference/API_CreateRoom.html)) or updating an existing room ([UpdateRoom](https://docs.aws.amazon.com/ivs/latest/ChatAPIReference/API_UpdateRoom.html)). You can associate multiple rooms with the same logging configuration.
 
-When at least one active logging configuration is associated with a room, every messaging request sent to that room via the [Amazon IVS Chat Messaging API](https://docs.aws.amazon.com//ivs/latest/chatmsgapireference/welcome.html) is automatically recorded to the specified location(s). These are the average propagation delays (from when a messaging request is sent to when it becomes available in your specified locations):
+When at least one active logging configuration is associated with a room, every messaging request sent to that room via the [Amazon IVS Chat Messaging API](https://docs.aws.amazon.com/ivs/latest/chatmsgapireference/welcome.html) is automatically recorded to the specified location(s). These are the average propagation delays (from when a messaging request is sent to when it becomes available in your specified locations):
 + Amazon S3 bucket: 5 minutes
 + Amazon CloudWatch Logs or Amazon Kinesis Data Firehose: 10 seconds
 
@@ -39,7 +39,7 @@ When at least one active logging configuration is associated with a room, every 
 | Field | Description |
 | --- | --- |
 | `event_timestamp` | UTC timestamp of when the message was received by Amazon IVS Chat. |
-| `payload` | The [Message (Subscribe)](https://docs.aws.amazon.com//ivs/latest/chatmsgapireference/actions-message-subscribe.html) or [Event (Subscribe)](https://docs.aws.amazon.com//ivs/latest/chatmsgapireference/actions-event-subscribe.html) JSON payload that clients will receive from the Amazon IVS Chat service. |
+| `payload` | The [Message (Subscribe)](https://docs.aws.amazon.com/ivs/latest/chatmsgapireference/actions-message-subscribe.html) or [Event (Subscribe)](https://docs.aws.amazon.com/ivs/latest/chatmsgapireference/actions-event-subscribe.html) JSON payload that clients will receive from the Amazon IVS Chat service. |
 | `type` | Type of the chat message.+  Valid Values: `MESSAGE` \| `EVENT`  |
 | `version` | Version of the message-content format. |
 

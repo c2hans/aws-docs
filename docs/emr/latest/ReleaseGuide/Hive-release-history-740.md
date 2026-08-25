@@ -8,8 +8,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/Hive-release-his
 ## Amazon EMR 7.4.0 - Hive changes
 <a name="Hive-release-history-changes-740"></a>
 
-****
-
 | Type | Description |
 | --- | --- |
 | Upgrade | [HIVE-28191](https://issues.apache.org/jira/browse/HIVE-28191): Upgrade Hadoop Version to 3.4.0 |
@@ -27,8 +25,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/Hive-release-his
 
 ### Amazon EMR 7.4.0 - New configurations
 <a name="Hive-release-history-changes-740-new-configs"></a>
-
-****
 
 | Classification | Name | Default | Description |
 | --- | --- | --- | --- |

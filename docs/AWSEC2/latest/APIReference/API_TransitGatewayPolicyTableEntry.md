@@ -20,6 +20,12 @@ The rule number for the transit gateway policy table entry.
 Type: String
 Required: No
 
+ ** state **
+The state of the transit gateway policy table entry.
+Type: String
+Valid Values: `active | deleted`
+Required: No
+
  ** targetRouteTableId **
 The ID of the target route table.
 Type: String

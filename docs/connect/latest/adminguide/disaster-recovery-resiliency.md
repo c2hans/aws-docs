@@ -22,7 +22,7 @@ Within each AWS Region you can create a Connect Customer instance, with a minimu
 
 Connect Customer is integrated with multiple telephony providers with redundant dedicated network paths to three or more AZs in every AWS Region where the service is offered today. If a particular component, data center, or an entire AZ experiences failure, the affected endpoint is automatically taken out of rotation. This allows you to continue providing a consistent quality experience for your customers.
 
-Inbound (US toll-free) and outbound calls in Connect Customer are processed through multiple telecom carriers. Each carrier is connected to multiple AZs in an active-active configuration. This ensures that impairment of a network path or an entire AZ does not impact your end-customer experience. If there is an impairment at the carrier level, this design helps minimize impact to your customer's experience by placing outbound calls and accepting US inbound toll-free calls across multiple carriers.
+Inbound (US toll-free) and outbound calls in Connect Customer are processed through multiple telecom carriers. Each carrier is connected to multiple AZs in an active-active configuration. This makes sure that impairment of a network path or an entire AZ does not impact your end-customer experience. If there is an impairment at the carrier level, this design helps minimize impact to your customer's experience by placing outbound calls and accepting US inbound toll-free calls across multiple carriers.
 
 The following diagram illustrates this process:
 

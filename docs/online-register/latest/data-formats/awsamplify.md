@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsa
 
 AWS Amplify provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="amplify-GetApp"></a>[GetApp](https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html) | Retrieve an existing Amplify App by appId | Read |

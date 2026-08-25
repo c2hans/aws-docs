@@ -9,8 +9,6 @@ When you submit a job run to an Amazon EMR Serverless job queue, the job run ent
 
 Job runs can have the following states:
 
-****
-
 | State | Description |
 | --- | --- |
 | Submitted | The initial job state when you submit a job run to EMR Serverless. The job waits to be scheduled for the application. EMR Serverless begins to prioritize and schedule the job run. |

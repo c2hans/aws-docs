@@ -70,8 +70,6 @@ Be aware that at the time these release notes are published, the new platform ve
 ### Docker
 <a name="release-2021-11-19-linux.platforms.docker"></a>
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Docker  |  Docker Compose  |  Proxy Server  |
 | --- | --- | --- | --- | --- |
 |  ** Docker AL2 version 3.4.9** <br /> * 64bit Amazon Linux 2 v3.4.9 running Docker *  | 2.0.20211103 | 20.10.7-3 | 1.29.2 | nginx 1.20.0 |
@@ -79,16 +77,12 @@ Be aware that at the time these release notes are published, the new platform ve
 ### Go
 <a name="release-2021-11-19-linux.platforms.go"></a>
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  AWS X-Ray  |  Proxy Server  |
 | --- | --- | --- | --- | --- |
 |  ** Go 1 AL2 version 3.4.3** <br /> * 64bit Amazon Linux 2 v3.4.3 running Go 1 *  | 2.0.20211103 | Go 1.17.3 | 3.2.0 | nginx 1.20.0 |
 
 ### Java SE
 <a name="release-2021-11-19-linux.platforms.javase"></a>
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  Tools  |  AWS X-Ray  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- |
@@ -98,8 +92,6 @@ Be aware that at the time these release notes are published, the new platform ve
 ### Tomcat
 <a name="release-2021-11-19-linux.platforms.java"></a>
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  AWS X-Ray  |  Application Server  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Corretto 11 with Tomcat 8.5 AL2 version 4.2.8** <br /> * 64bit Amazon Linux 2 v4.2.8 running Tomcat 8.5 Corretto 11 *  | 2.0.20211103 | Corretto 11.0.13.8.1 | 3.2.0 | Tomcat 8.5.72 | nginx 1.20.0 (default), Apache 2.4.51 |
@@ -108,16 +100,12 @@ Be aware that at the time these release notes are published, the new platform ve
 ### .NET Core on Linux
 <a name="release-2021-11-19-linux.platforms.dotnetlinux"></a>
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET Core on AL2 version 2.2.8** <br /> * 64bit Amazon Linux 2 v2.2.8 running .NET Core *  | .NET 5.0.12, supports 5.0.12, 3.1.21, 2.1.30 | nginx 1.20.0 | 2.0.20211103 | 3.2.0 |
 
 ### Node.js
 <a name="release-2021-11-19-linux.platforms.nodejs"></a>
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -127,8 +115,6 @@ Be aware that at the time these release notes are published, the new platform ve
 ### PHP
 <a name="release-2021-11-19-linux.platforms.PHP"></a>
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  Composer  |  Proxy Server  |
 | --- | --- | --- | --- | --- |
 |  ** PHP 8.0 AL2 version 3.3.8** <br /> * 64bit Amazon Linux 2 v3.3.8 running PHP 8.0 *  | 2.0.20211103 | PHP 8.0.8 | 2.0.13 | nginx 1.20.0 (default), Apache 2.4.51 |
@@ -137,8 +123,6 @@ Be aware that at the time these release notes are published, the new platform ve
 ### Python
 <a name="release-2021-11-19-linux.platforms.python"></a>
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  Package Manager  |  Packager  |  meld3  |  AWS X-Ray  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  ** Python 3.8 AL2 version 3.3.8** <br /> * 64bit Amazon Linux 2 v3.3.8 running Python 3.8 *  | 2.0.20211103 | Python 3.8.5 | pipenv 2020.8.13 |  |  | 3.2.0 | nginx 1.20.0 (default), Apache 2.4.51 |
@@ -146,8 +130,6 @@ Be aware that at the time these release notes are published, the new platform ve
 
 ### Ruby
 <a name="release-2021-11-19-linux.platforms.ruby"></a>
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  Package Manager  |  Application Server  |  AWS X-Ray  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -166,8 +148,6 @@ The following sections list the Graviton image IDs for each platform branch that
 
 ### US East (Ohio) – us-east-2
 <a name="release-2021-11-19-linux.graviton-CMH"></a>
-
-****
 
 |  Platform version  |  Graviton image ID  |  x86 image ID  |
 | --- | --- | --- |
@@ -190,8 +170,6 @@ The following sections list the Graviton image IDs for each platform branch that
 ### US East (N. Virginia) – us-east-1
 <a name="release-2021-11-19-linux.graviton-IAD"></a>
 
-****
-
 |  Platform version  |  Graviton image ID  |  x86 image ID  |
 | --- | --- | --- |
 | 64bit Amazon Linux 2 v3.4.9 running Docker | ami-0f01cafded2c0b853 |  ami-015baecf2e21c75c0 |
@@ -212,8 +190,6 @@ The following sections list the Graviton image IDs for each platform branch that
 
 ### US West (Oregon) – us-west-2
 <a name="release-2021-11-19-linux.graviton-PDX"></a>
-
-****
 
 |  Platform version  |  Graviton image ID  |  x86 image ID  |
 | --- | --- | --- |
@@ -236,8 +212,6 @@ The following sections list the Graviton image IDs for each platform branch that
 ### Europe (Ireland) – eu-west-1
 <a name="release-2021-11-19-linux.graviton-DUB"></a>
 
-****
-
 |  Platform version  |  Graviton image ID  |  x86 image ID  |
 | --- | --- | --- |
 | 64bit Amazon Linux 2 v3.4.9 running Docker | ami-088610b6efb279441 | ami-012191135c13ce958 |
@@ -259,8 +233,6 @@ The following sections list the Graviton image IDs for each platform branch that
 ### Europe (Frankfurt) – eu-central-1
 <a name="release-2021-11-19-linux.graviton-FRA"></a>
 
-****
-
 |  Platform version  |  Graviton image ID  |  x86 image ID  |
 | --- | --- | --- |
 | 64bit Amazon Linux 2 v3.4.9 running Docker | ami-0b7b2641b2a71b2f8 | ami-00360b1288f309a4d |
@@ -281,8 +253,6 @@ The following sections list the Graviton image IDs for each platform branch that
 
 ### South America (São Paulo) – sa-east-1
 <a name="release-2021-11-19-linux.graviton-GRU"></a>
-
-****
 
 |  Platform version  |  Graviton image ID  |  x86 image ID  |
 | --- | --- | --- |

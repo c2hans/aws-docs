@@ -5,8 +5,8 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/tutorial-launch-
 # Tutorial 1: Launch my very first Amazon EC2 instance
 <a name="tutorial-launch-my-first-ec2-instance"></a>
 
-|  |  |
-| --- |--- |
+| Attribute | Value |
+| --- | --- |
 | Tutorial objective | Learn how to quickly launch an Amazon EC2 instance by using the default settings in the Amazon EC2 launch instance wizard. Also learn how to review the instance configuration fields and terminate the instance. |
 | EC2 experience | Beginner |
 | **Duration** | 10 minutes |
@@ -144,7 +144,7 @@ In this task, you'll delete your instance to preserve your Free Tier benefits. I
 
    On the **Instances** page, check the **Instance state** column. The state of your instance changes to **Shutting-down**. If you don't see the full text, try widening the column.
 
-   Once the instance has shut down, Amazon EC2 deletes the instance, and it disappears from the **Instances** page.
+   After the instance has shut down, Amazon EC2 deletes the instance, and it disappears from the **Instances** page.
 
 ## Key takeaways
 <a name="tutorial-launch-my-first-ec2-instance-key-takeaways"></a>
@@ -161,4 +161,4 @@ In this tutorial, you covered the following key concepts:
 
 To build confidence in launching and terminating instances, consider repeating the steps in this tutorial. Be sure to terminate any instances that you launch to preserve your Free Tier benefits.
 
-Once you're comfortable with these basics, move onto the next tutorial, which provides a deeper dive into key instance configuration fields.
+After you're comfortable with these basics, move onto the next tutorial, which provides a deeper dive into key instance configuration fields.

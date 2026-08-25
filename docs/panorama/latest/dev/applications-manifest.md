@@ -92,6 +92,4 @@ Nodes are connected by edges, which specify mappings between nodes' inputs and o
 <a name="applications-manifest-schema"></a>
 
 The format of application manifest and override documents is defined in a JSON schema. You can use the JSON schema to validate your configuration documents before deploying. The JSON schema is available in this guide's GitHub repository.
-
-****
 + **JSON schema** – [aws-panorama-developer-guide/resources](https://github.com/awsdocs/aws-panorama-developer-guide/tree/main/resources)

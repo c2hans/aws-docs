@@ -8,6 +8,7 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/relnotes-2023
 The following releases are updates to the 12th quarterly release of AL2023.
 
 **Topics**
++ [AL2023 version 2023.12.20260817](relnotes-2023.12.20260817.md)
 + [AL2023 version 2023.12.20260803](relnotes-2023.12.20260803.md)
 + [AL2023 version 2023.12.20260727](relnotes-2023.12.20260727.md)
 + [AL2023 version 2023.12.20260724](relnotes-2023.12.20260724.md)

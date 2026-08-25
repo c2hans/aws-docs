@@ -7,7 +7,7 @@ Amazon Fraud Detector is no longer open to new customers as of November 7, 2025.
 # Create rules
 <a name="create-a-rule"></a>
 
-You can create rules in Amazon Fraud Detector console, using the [create-rule](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/frauddetector/create-rule.html) command, using the [CreateRule](https://docs.aws.amazon.com//frauddetector/latest/api/API_CreateRule.html) API, or using the AWS SDK for Python (Boto3).
+You can create rules in Amazon Fraud Detector console, using the [create-rule](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/frauddetector/create-rule.html) command, using the [CreateRule](https://docs.aws.amazon.com/frauddetector/latest/api/API_CreateRule.html) API, or using the AWS SDK for Python (Boto3).
 
 Each rule must contain a single expression that captures your business logic. All expressions must evaluate to a Boolean value (true or false) and be less than 4,000 characters in length. If-else type conditions are not supported. All variables used in the expression must be predefined in the evaluated event type. Similarly, all lists used in the expression must be predefined, associated with a varible type, and be populated with entries.
 
@@ -47,7 +47,7 @@ You created a new rule for your detector. This is the version 1 of the rule whic
 ## Create a rule using the AWS SDK for Python (Boto3)
 <a name="create-a-rule-using-the-aws-python-sdk"></a>
 
-The following example code uses [CreateRule](https://docs.aws.amazon.com//frauddetector/latest/api/API_CreateRule.html) API to create a rule `high_risk` for an existing detector `payments_detector`. The example code also adds a rule expression and an outcome `verify_customer` to the rule.
+The following example code uses [CreateRule](https://docs.aws.amazon.com/frauddetector/latest/api/API_CreateRule.html) API to create a rule `high_risk` for an existing detector `payments_detector`. The example code also adds a rule expression and an outcome `verify_customer` to the rule.
 
 **Prerequisites**
 

@@ -18,7 +18,6 @@ If you manually edit the AWS Identity and Access Management (IAM) policy that Am
 If you use a custom role, then Amazon Bedrock can't update the knowledge base service role on your behalf. Verify that the permissions are properly configured for the service role.
 
   For a summary of use cases and the permissions needed for them, refer to the following table:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/rerank-prereq.html)
 
 For example permissions policies that you can attach to an IAM role, expand the section that corresponds to your use case:

@@ -68,7 +68,7 @@ Type: String to string map
 Required: No
 
  ** platformCapabilities **   <a name="Batch-Type-JobDefinition-platformCapabilities"></a>
-The platform capabilities required by the job definition. If no value is specified, it defaults to `EC2`. Jobs run on Fargate resources specify `FARGATE`.
+The platform capabilities required by the job definition. If no value is specified, it defaults to `EC2`. Jobs run on Fargate resources specify `FARGATE`. Jobs run on Amazon ECS Managed Instances specify `MANAGED_INSTANCES`.
 Type: Array of strings
 Valid Values: `EC2 | FARGATE`
 Required: No

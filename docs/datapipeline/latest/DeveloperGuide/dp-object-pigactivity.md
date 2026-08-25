@@ -271,27 +271,19 @@ B = LIMIT ${input1} $three; ${output1} = FOREACH B GENERATE $column1, $column2, 
 ## Syntax
 <a name="pigactivity-syntax"></a>
 
-****
-
 | Object Invocation Fields | Description | Slot Type |
 | --- | --- | --- |
 | schedule | This object is invoked within the execution of a schedule interval. Users must specify a schedule reference to another object to set the dependency execution order for this object. Users can satisfy this requirement by explicitly setting a schedule on the object, for example, by specifying "schedule": {"ref": "DefaultSchedule"}. In most cases, it is better to put the schedule reference on the default pipeline object so that all objects inherit that schedule. Or, if the pipeline has a tree of schedules (schedules within the master schedule), users can create a parent object that has a schedule reference. For more information about example optional schedule configurations, see [https://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/dp-object-schedule.html](https://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/dp-object-schedule.html) | Reference Object, for example, "schedule":{"ref":"myScheduleId"} |
-
-****
 
 | Required Group (One of the following is required) | Description | Slot Type |
 | --- | --- | --- |
 | script | The Pig script to run. | String |
 | scriptUri | The location of the Pig script to run (for example, s3://scriptLocation). | String |
 
-****
-
 | Required Group (One of the following is required) | Description | Slot Type |
 | --- | --- | --- |
 | runsOn | EMR Cluster on which this PigActivity runs. | Reference Object, for example, "runsOn":{"ref":"myEmrClusterId"} |
 | workerGroup | The worker group. This is used for routing tasks. If you provide a runsOn value and workerGroup exists, workerGroup is ignored. | String |
-
-****
 
 | Optional Fields | Description | Slot Type |
 | --- | --- | --- |
@@ -320,8 +312,6 @@ B = LIMIT ${input1} $three; ${output1} = FOREACH B GENERATE $column1, $column2, 
 | scriptVariable | The arguments to pass to the Pig script. You can use scriptVariable with script or scriptUri. | String |
 | stage | Determines whether staging is enabled and allows your Pig script to have access to the staged-data tables, such as ${INPUT1} and ${OUTPUT1}. | Boolean |
 
-****
-
 | Runtime Fields | Description | Slot Type |
 | --- | --- | --- |
 | @activeInstances | List of the currently scheduled active instance objects. | Reference Object, for example, "activeInstances":{"ref":"myRunnableObjectId"} |
@@ -349,8 +339,6 @@ B = LIMIT ${input1} $three; ${output1} = FOREACH B GENERATE $column1, $column2, 
 | @status | The status of this object. | String |
 | @version | Pipeline version that the object was created with. | String |
 | @waitingOn | Description of list of dependencies this object is waiting on. | Reference Object, for example, "waitingOn":{"ref":"myRunnableObjectId"} |
-
-****
 
 | System Fields | Description | Slot Type |
 | --- | --- | --- |

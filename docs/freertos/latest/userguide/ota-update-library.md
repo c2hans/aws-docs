@@ -126,7 +126,6 @@ For information about porting OTA functionality to your platform, see [Porting t
 ## Memory use
 <a name="ota-update-library-memory"></a>
 
-****
 <a name="ota-memory-estimate"></a>
 <table>
 <thead>

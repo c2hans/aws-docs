@@ -22,8 +22,6 @@ AWS Systems Manager Automation runbooks use the following variables. For an exam
 **System variables**
 Automation runbooks support the following system variables.
 
-****
-
 | Variable | Details |
 | --- | --- |
 | `global:ACCOUNT_ID` | The AWS account ID of the user or role in which Automation runs. |
@@ -34,8 +32,6 @@ Automation runbooks support the following system variables.
 
 **Automation variables**
 Automation runbooks support the following automation variables.
-
-****
 
 | Variable | Details |
 | --- | --- |
@@ -51,8 +47,6 @@ Automation runbooks support the following automation variables.
 
 The following terms describe how variables and parameters are resolved.
 
-****
-
 | Term | Definition | Example |
 | --- | --- | --- |
 | Constant ARN | A valid Amazon Resource Name (ARN) without variables. | `arn:aws:iam::123456789012:role/roleName` |
@@ -63,8 +57,6 @@ The following terms describe how variables and parameters are resolved.
 
 ## Supported scenarios
 <a name="automation-variables-support"></a>
-
-****
 
 | Scenario | Comments | Example |
 | --- | --- | --- |
@@ -78,8 +70,6 @@ The following terms describe how variables and parameters are resolved.
 
 ## Unsupported scenarios
 <a name="automation-variables-unsupported"></a>
-
-****
 
 | Scenario | Comment | Example |
 | --- | --- | --- |

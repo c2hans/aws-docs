@@ -14,8 +14,6 @@ Use to create an Amazon GuardDuty IPSet instance which is a list of trusted IP a
 ## Change Type Details
 <a name="ct-08avsj2e9mc7g-DMGc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-08avsj2e9mc7g |

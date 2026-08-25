@@ -104,8 +104,6 @@ To see the list of Shield resource types and their ARNs, see [Resources defined 
 
 In AWS Shield, the resources are *protections* and *attacks*. These resources have unique Amazon Resource Names (ARNs) associated with them, as shown in the following table.
 
-****
-
 | Name in AWS Shield Console | Name in AWS Shield SDK/CLI | ARN Format  |
 | --- | --- | --- |
 | Event or attack | AttackDetail | `arn:aws:shield::{{account}}:attack/{{ID}}` |

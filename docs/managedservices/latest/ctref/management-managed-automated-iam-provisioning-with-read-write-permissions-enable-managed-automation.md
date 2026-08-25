@@ -14,8 +14,6 @@ Enable Automated IAM provisioning with read-write permissions in the account use
 ## Change Type Details
 <a name="ct-1706xvvk6j9hf-MMAe-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1706xvvk6j9hf |

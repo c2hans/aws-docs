@@ -48,7 +48,7 @@ If you’ve created and prepared your agent *before October 4 2024* and if your 
 
 If you’ve created a new agent or prepared an existing agent *after October 10 2024* and your agent is using Anthropic Claude 3 Sonnet, Anthropic Claude 3.5 Sonnet, or any non-Anthropic models, the next step actions recommended by the agent’s model will run in parallel. This means that multiple actions, for example, a mixture of action groups functions and knowledge bases, will be executed in parallel. This reduces the number of calls made to the model which reduces the overall latency.
 
-You can enable parallel actions for your agents created and prepared *before October 4 2024* by calling [PrepareAgent](https://docs.aws.amazon.com//bedrock/latest/APIReference/API_agent_PrepareAgent.html) API or by selecting **Prepare** in the your agent’s agent builder in the console. After the agent is prepared, you will see an updated prompt template and new version of parser Lambda schema.
+You can enable parallel actions for your agents created and prepared *before October 4 2024* by calling [PrepareAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_PrepareAgent.html) API or by selecting **Prepare** in the your agent’s agent builder in the console. After the agent is prepared, you will see an updated prompt template and new version of parser Lambda schema.
 
 **Example parser Lambda response**
 

@@ -95,7 +95,7 @@ This topic is written with the assumption you are using the AWS SDK for Java 2.x
 
 1. Modify your environment to include your AWS access and secret keys. The steps vary depending on your configuration, but involve setting two environment variables:
 **Important**
-We recommend that you follow the standard security advice of granting least privilege—that is, granting only the permissions required to perform a task—when you configure the AWS SDK and AWS CLI with credentials. For more information, see [AWS Security Credentials](https://docs.aws.amazon.com//general/latest/gr/aws-security-credentials.html) and [IAM Best Practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html).
+We recommend that you follow the standard security advice of granting least privilege—that is, granting only the permissions required to perform a task—when you configure the AWS SDK and AWS CLI with credentials. For more information, see [AWS Security Credentials](https://docs.aws.amazon.com/general/latest/gr/aws-security-credentials.html) and [IAM Best Practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html).
 
    ```
    AWS_ACCESS_KEY_ID={{AKIAIOSFODNN7EXAMPLE}}

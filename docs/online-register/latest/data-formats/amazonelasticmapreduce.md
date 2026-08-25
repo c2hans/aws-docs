@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon Elastic MapReduce provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="elasticmapreduce-DescribeCluster"></a>[DescribeCluster](https://docs.aws.amazon.com/emr/latest/APIReference/API_DescribeCluster.html) | Get details about a cluster, including status, hardware and software configuration, VPC settings, and so on | Read |

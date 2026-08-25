@@ -25,8 +25,6 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_rds-actions-as-permissions).
 
-****
-
 - **   AddSourceIdentifierToSubscription  **
   - **SDK client:** docdb
   - **IAM action:**  [rds:AddSourceIdentifierToSubscription](#list_rds-action-AddSourceIdentifierToSubscription)
@@ -364,6 +362,7 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   RestoreDBClusterFromSnapshot  **
   - **SDK client:** docdb
+  - **IAM action:**  [rds:AddRoleToDBCluster](#list_rds-action-AddRoleToDBCluster)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [rds:AddTagsToResource](#list_rds-action-AddTagsToResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
   - **IAM action:**  [rds:CreateDBInstance](#list_rds-action-CreateDBInstance)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [rds:RestoreDBClusterFromSnapshot](#list_rds-action-RestoreDBClusterFromSnapshot)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
@@ -371,6 +370,7 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   RestoreDBClusterToPointInTime  **
   - **SDK client:** docdb
+  - **IAM action:**  [rds:AddRoleToDBCluster](#list_rds-action-AddRoleToDBCluster)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [rds:AddTagsToResource](#list_rds-action-AddTagsToResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
   - **IAM action:**  [rds:CreateDBInstance](#list_rds-action-CreateDBInstance)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [rds:RestoreDBClusterToPointInTime](#list_rds-action-RestoreDBClusterToPointInTime)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
@@ -829,6 +829,7 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   RestoreDBClusterFromSnapshot  **
   - **SDK client:** neptune
+  - **IAM action:**  [rds:AddRoleToDBCluster](#list_rds-action-AddRoleToDBCluster)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [rds:AddTagsToResource](#list_rds-action-AddTagsToResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
   - **IAM action:**  [rds:CreateDBInstance](#list_rds-action-CreateDBInstance)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [rds:RestoreDBClusterFromSnapshot](#list_rds-action-RestoreDBClusterFromSnapshot)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
@@ -836,6 +837,7 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   RestoreDBClusterToPointInTime  **
   - **SDK client:** neptune
+  - **IAM action:**  [rds:AddRoleToDBCluster](#list_rds-action-AddRoleToDBCluster)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [rds:AddTagsToResource](#list_rds-action-AddTagsToResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
   - **IAM action:**  [rds:CreateDBInstance](#list_rds-action-CreateDBInstance)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [rds:RestoreDBClusterToPointInTime](#list_rds-action-RestoreDBClusterToPointInTime)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
@@ -1827,6 +1829,7 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   RestoreDBClusterFromSnapshot  **
   - **SDK client:** rds
+  - **IAM action:**  [rds:AddRoleToDBCluster](#list_rds-action-AddRoleToDBCluster)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [rds:AddTagsToResource](#list_rds-action-AddTagsToResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
   - **IAM action:**  [rds:CreateDBInstance](#list_rds-action-CreateDBInstance)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [rds:RestoreDBClusterFromSnapshot](#list_rds-action-RestoreDBClusterFromSnapshot)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
@@ -1834,6 +1837,7 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   RestoreDBClusterToPointInTime  **
   - **SDK client:** rds
+  - **IAM action:**  [rds:AddRoleToDBCluster](#list_rds-action-AddRoleToDBCluster)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [rds:AddTagsToResource](#list_rds-action-AddTagsToResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
   - **IAM action:**  [rds:CreateDBInstance](#list_rds-action-CreateDBInstance)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [rds:RestoreDBClusterToPointInTime](#list_rds-action-RestoreDBClusterToPointInTime)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
@@ -1951,8 +1955,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
 <a name="list_rds-actions-as-permissions"></a>
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
-
-****
 
 - **   [AddRoleToDBCluster](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_AddRoleToDBCluster.html)  **
   - **Description:** Grants permission to associate an Identity and Access Management (IAM) role from an Aurora DB cluster
@@ -3052,8 +3054,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 The following actions are defined by Amazon RDS but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 - **   [CopyCustomDBEngineVersion](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonrds.html)  **
   - **Description:** Grants permission to copy a custom engine version
   - **Resource types (\*required):** [cev\*](#list_rds-resource-cev)
@@ -3090,8 +3090,6 @@ The following actions are defined by Amazon RDS but are not directly invocable t
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
 
-****
-
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
 |  [auto-backup](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingWithAutomatedBackups.html)  | arn:${Partition}:rds:${Region}:${Account}:auto-backup:${DbInstanceAutomatedBackupId} | [aws:ResourceTag/${TagKey}](#list_rds-aws_ResourceTag___TagKey_) |
@@ -3123,8 +3121,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_rds-policy-keys"></a>
 
 Amazon RDS defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

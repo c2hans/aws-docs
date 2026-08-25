@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon DataZone provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="datazone-BatchGetAttributesMetadata"></a>[BatchGetAttributesMetadata](${APIReferenceDocPage}API_BatchGetAttributesMetadata.html) | Retrieve attributes metadata | Read |

@@ -14,16 +14,16 @@ The following diagram shows the key components that you'll use in this tutorial:
 + **A key pair** – A set of security credentials that you use to prove your identity when connecting to your instance. The public key is on your instance and the private key is on your computer.
 + **A network** – A virtual private cloud (VPC) is a virtual network dedicated to your AWS account. To help you get started quickly, your account comes with a default VPC in each AWS Region, and each default VPC has a default subnet in each Availability Zone.
 + **A security group** – Acts as a virtual firewall to control inbound and outbound traffic.
-+ **An EBS volume** – We require a root volume for the image. You can optionally add data volumes.
++ **An EBS volume** – A root volume is required for the image. You can optionally add data volumes.
 
 ![An instance with a security group, key pair, and EBS root volume.](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/get-started-diagram.png)
 
 **Cost for this tutorial**
 When you create your AWS account, you can get started with Amazon EC2 for free using the [AWS Free Tier](https://aws.amazon.com/free/).
 
-If you created your AWS account before July 15, 2025, it's less than 12 months old, and you haven't already exceeded the Free Tier benefits for Amazon EC2, it won't cost you anything to complete this tutorial, because we help you select options that are within the Free Tier benefits. Otherwise, you'll incur the standard Amazon EC2 usage fees from the time that you launch the instance (even if it remains idle) until you terminate it.
+If you created your AWS account before July 15, 2025, it's less than 12 months old, and you haven't already exceeded the Free Tier benefits for Amazon EC2, it won't cost you anything to complete this tutorial, because this tutorial helps you select options that are within the Free Tier benefits. Otherwise, you'll incur the standard Amazon EC2 usage fees from the time that you launch the instance (even if it remains idle) until you terminate it.
 
-If you created your AWS account on or after July 15, 2025, it's less than 6 months old, and you haven't used up all your credits, it won't cost you anything to complete this tutorial, because we help you select options that are within the Free Tier benefits.
+If you created your AWS account on or after July 15, 2025, it's less than 6 months old, and you haven't used up all your credits, it won't cost you anything to complete this tutorial, because this tutorial helps you select options that are within the Free Tier benefits.
 
 For information on how to determine whether you are eligible for the Free Tier, see [Track your Free Tier usage for Amazon EC2](ec2-free-tier-usage.md).
 
@@ -42,7 +42,7 @@ You can launch an EC2 instance using the AWS Management Console as described in 
 
 1. Open the Amazon EC2 console at [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2/).
 
-1. In the navigation bar at the top of the screen, we display the current AWS Region — for example, **Ohio**. You can use the selected Region, or optionally select a Region that is closer to you.
+1. In the navigation bar at the top of the screen, the current AWS Region is displayed — for example, **Ohio**. You can use the selected Region, or optionally select a Region that is closer to you.
 
 1. From the EC2 console dashboard, in the **Launch instance** pane, choose **Launch instance**.
 
@@ -60,7 +60,7 @@ You can launch an EC2 instance using the AWS Management Console as described in 
 **Warning**
 If you choose **Proceed without a key pair (Not recommended)**, you won't be able to connect to your instance using the methods described in this tutorial.
 
-1. Under **Network settings**, notice that we selected your default VPC, selected the option to use the default subnet in an Availability Zone that we choose for you, and configured a security group with a rule that allows connections to your instance from anywhere (`0.0.0.0.0/0`).
+1. Under **Network settings**, notice that your default VPC is selected, the option to use the default subnet in an Availability Zone that is chosen for you, and a security group with a rule that allows connections to your instance from anywhere (`0.0.0.0/0`).
 **Warning**
 If you specify `0.0.0.0/0`, you are enabling traffic from any IP addresses in the world. For the SSH and RDP protocols, you might consider this acceptable for a short time in a test environment, but it's unsafe for production environments. In production, be sure to authorize access only from the appropriate individual IP address or range of addresses.
 
@@ -70,7 +70,7 @@ If you specify `0.0.0.0/0`, you are enabling traffic from any IP addresses in th
    + (Optional) To restrict inbound connection traffic to a specific network, choose **Custom** instead of **Anywhere**, and enter the CIDR block for your network.
    + (Optional) To use a different security group, choose **Select existing security group** and choose an existing security group. If the security group does not have a rule that allows connection traffic from your network, you won't be able to connect to your instance. For a Linux instance, you must allow SSH traffic. For a Windows instance, you must allow RDP traffic.
 
-1. Under **Configure storage**, notice that we configured a root volume but no data volumes. This is sufficient for test purposes.
+1. Under **Configure storage**, notice that a root volume is configured but no data volumes. This is sufficient for test purposes.
 
 1. Review a summary of your instance configuration in the **Summary** panel, and when you're ready, choose **Launch instance**.
 

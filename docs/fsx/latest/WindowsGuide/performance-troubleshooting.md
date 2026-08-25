@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/fsx/latest/WindowsGuide/performance-trou
 # Troubleshooting file system performance issues
 <a name="performance-troubleshooting"></a>
 
-The performance of your FSx for Windows File Server file system depends on several factors, including the traffic that you drive to your file system, how you provision your file system, and the resources being consumed by features that are enabled, such as Data Deduplication or Shadow Copies. For information about understanding your file system’s performance, see [FSx for Windows File Server performancePerformance](performance.md).
+The performance of your FSx for Windows File Server file system depends on several factors, including the traffic that you drive to your file system, how you provision your file system, and the resources being consumed by features that are enabled, such as Data Deduplication or Shadow Copies. For information about understanding your file system’s performance, see [FSx for Windows File Server performance](performance.md).
 
 **Topics**
 + [How do I determine the throughput and IOPS limits for my file system?](#perf-throughput-IOPS-limits)
@@ -43,7 +43,7 @@ If you have access-based enumeration enabled, you might see high CPU utilization
 
 File-based workloads are typically spiky, characterized by short, intense periods of high I/O with idle time between bursts. To support these types of workloads, in addition to the baseline speeds that a file system can sustain, Amazon FSx provides the capability to burst to higher speeds for periods of time for both network I/O and disk I/O operations.
 
-Amazon FSx uses a I/O credit mechanism to allocate throughput and IOPS based on average utilization — file systems accrue credits when their throughput and IOPS usage is below their baseline limits, and can use these credits to burst above the baseline limits (up to the burst limits) when required. For more information about the burst limits and duration for your file system, see [FSx for Windows File Server performancePerformance](performance.md).
+Amazon FSx uses a I/O credit mechanism to allocate throughput and IOPS based on average utilization — file systems accrue credits when their throughput and IOPS usage is below their baseline limits, and can use these credits to burst above the baseline limits (up to the burst limits) when required. For more information about the burst limits and duration for your file system, see [FSx for Windows File Server performance](performance.md).
 
 ## I see a warning on the **Monitoring & performance** page – do I need to change my file system’s configuration?
 <a name="warnings"></a>

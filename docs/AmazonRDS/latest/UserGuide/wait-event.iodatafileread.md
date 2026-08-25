@@ -107,7 +107,7 @@ CREATE EXTENSION pgstattuple;
 
 For more information about this extension, see [pgstattuple](https://www.postgresql.org/docs/current/pgstattuple.html) in the PostgreSQL documentation.
 
-You can check for table and index bloat in your application. For more information, see [Diagnosing table and index bloat](https://docs.aws.amazon.com//AmazonRDS/latest/AuroraUserGuide/AuroraPostgreSQL.diag-table-ind-bloat.html).
+You can check for table and index bloat in your application. For more information, see [Diagnosing table and index bloat](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraPostgreSQL.diag-table-ind-bloat.html).
 
 #### Find indexes consuming space unnecessarily
 <a name="wait-event.iodatafileread.actions.maintenance.indexes"></a>

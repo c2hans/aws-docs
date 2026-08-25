@@ -17,7 +17,7 @@ This architecture allows you to use a single EMR Serverless application on multi
 ### Getting started with EMR serverless applications
 <a name="creating-emr-serverless-application"></a>
 
-SageMaker Unified Studio provides a straightforward interface for creating EMR Serverless applications. In order to create a new EMR Serverless Application your admin needs to enable blueprints. For more information about the blueprint setup process see [ Enable or disable blueprints](https://docs.aws.amazon.com//sagemaker-unified-studio/latest/adminguide/blueprints.html#enable-disable-blueprints) in the *Amazon Sagemaker Unified Studio Guide*. Once blueprints are enabled:
+SageMaker Unified Studio provides a straightforward interface for creating EMR Serverless applications. In order to create a new EMR Serverless Application your admin needs to enable blueprints. For more information about the blueprint setup process see [ Enable or disable blueprints](https://docs.aws.amazon.com/sagemaker-unified-studio/latest/adminguide/blueprints.html#enable-disable-blueprints) in the *Amazon Sagemaker Unified Studio Guide*. Once blueprints are enabled:
 
 1. From the SageMaker Unified Studio UI, navigate to the Project Management view and then select your project from the project list.
 

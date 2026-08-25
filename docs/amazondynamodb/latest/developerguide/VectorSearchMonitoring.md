@@ -47,3 +47,14 @@ Vector index capacity is metered in bytes processed, reported separately from ba
 Higher-dimensional embeddings increase both search and write cost because each vector carries more data. For current pricing, see the [Amazon DynamoDB pricing](https://aws.amazon.com/dynamodb/pricing/) on the AWS website.
 
 DynamoDB also publishes vector index capacity to CloudWatch as the `VectorSearchRequestBytes` and `VectorWriteRequestBytes` metrics, dimensioned by `TableName` and `VectorIndexName`. Use these metrics to chart and alarm on vector index usage over time. For metric definitions, see [VectorSearchRequestBytes](metrics-dimensions.md#VectorSearchRequestBytes) and [VectorWriteRequestBytes](metrics-dimensions.md#VectorWriteRequestBytes).
+
+## Per-request metering minimum
+<a name="VectorSearchMonitoring.MeteringMinimum"></a>
+
+DynamoDB meters vector index capacity at a minimum of 1 KB per request and bills per byte above that minimum. This applies to both request types. A `SearchVectors` request that examines less than 1 KB of vector data is metered at 1 KB. A write request that replicates less than 1 KB into a table's vector indexes is also metered at 1 KB.
+
+The minimum applies per request, not per index. A write that updates vectors in several of a table's vector indexes does not incur a separate 1 KB minimum for each one, even though `ConsumedCapacity` reports `VectorWriteRequestBytes` per index.
+
+As a result, low-dimension vectors do not meter proportionally lower. A vector with a small number of dimensions holds only a few bytes of 32-bit floating point data and is still metered at the 1 KB minimum.
+
+Above the minimum, `VectorSearchRequestBytes` reflects the vector data the search examines within the index, not the size of the query vector you supply. As a result, `VectorSearchRequestBytes` is larger than the query vector alone. Do not estimate vector index cost from dimension count. Use the `VectorSearchRequestBytes` and `VectorWriteRequestBytes` values returned by your own workload, or the corresponding CloudWatch metrics. Validate against a representative dataset before you size a workload.

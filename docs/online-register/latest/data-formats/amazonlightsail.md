@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon Lightsail provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="lightsail-GetActiveNames"></a>[GetActiveNames](https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_GetActiveNames.html) | Get the names of all active (not deleted) resources | Read |

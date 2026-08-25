@@ -16,8 +16,6 @@ To use Athena Spark session endpoints through your VPC, you must connect from an
 
 The following Athena Spark session endpoints support private access via AWS PrivateLink:
 
-****
-
 | Endpoint | Description | Service name |
 | --- | --- | --- |
 | Spark Connect | gRPC endpoint for remote Spark workload execution | com.amazonaws.{{region}}.athena.sessions |

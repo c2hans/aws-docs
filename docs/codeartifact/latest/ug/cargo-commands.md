@@ -16,8 +16,6 @@ The following sections summarize the Cargo commands that are supported by CodeAr
 
 This section lists Cargo commands where the Cargo client requires access to the registry it's been configured with. These commands have been verified to function correctly when invoked against a CodeArtifact repository.
 
-****
-
 | Command | Description |
 | --- | --- |
 |  [build](https://doc.rust-lang.org/cargo/commands/cargo-build.html)  | Builds local packages and their dependencies. |
@@ -29,8 +27,6 @@ This section lists Cargo commands where the Cargo client requires access to the 
 <a name="unsupported-commands"></a>
 
 These Cargo commands are not supported by CodeArtifact repositories.
-
-****
 
 | Command | Description |
 | --- | --- |

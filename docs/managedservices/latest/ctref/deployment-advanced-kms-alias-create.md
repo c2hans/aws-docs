@@ -14,8 +14,6 @@ Create an alias for an AWS Key Management Service (KMS) customer master key (CMK
 ## Change Type Details
 <a name="ct-2svg4k2fqi4ak-DAKc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2svg4k2fqi4ak |

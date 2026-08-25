@@ -11,8 +11,6 @@ The following provides a sample mapping between the Center for Internet Security
 
 For more information about process checks, see [process-checks](https://docs.aws.amazon.com/config/latest/developerguide/process-checks.html).
 
-****
-
 | Control ID  | Control Description  | AWS Config Rule  | Guidance  |
 | --- | --- | --- | --- |
 | 1.1 | Maintain current contact details | account-contact-details-configured (process check) | Ensure the contact email and telephone number for AWS accounts are current and map to more than one individual in your organization. Within the My Account section of the console ensure correct information is specified in the Contact Information section. For further details on the auditing of this control please refer to the CIS Amazon Web Services Foundations Benchmark version 1.4.0 document available at https://www.cisecurity.org/benchmark/amazon\_web\_services/ |

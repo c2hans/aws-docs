@@ -14,8 +14,6 @@ Encrypt Elastic Block Store (EBS) volumes attached to an EC2 instance. Note: If 
 ## Change Type Details
 <a name="ct-0hahohe17csnc-MAEe-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-0hahohe17csnc |

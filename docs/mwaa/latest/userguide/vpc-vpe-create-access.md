@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/userguide/vpc-vpe-create-acc
 An existing Amazon VPC network without internet access needs additional VPC service endpoints (AWS PrivateLink) to use Apache Airflow on Amazon Managed Workflows for Apache Airflow. This page describes the VPC endpoints required for the AWS services used by Amazon MWAA, the VPC endpoints required for Apache Airflow, and how to create and attach the VPC endpoints to an existing Amazon VPC with private routing.
 
 **Note**
-If you chose **Both public and private network access**, the VPC endpoint for the webserver is created and managed automatically by Amazon MWAA. You do not need to create VPC endpoints for Apache Airflow webserver connectivity. However, if your Amazon VPC does not have internet access, you still need VPC endpoints for other AWS services (such as Amazon S3, CloudWatch Logs, SQS, KMS, and Amazon ECR) as described on this page.
+If you chose **Both public and private network access**, the VPC endpoint for the webserver is created and managed automatically by Amazon MWAA. You do not need to create VPC endpoints for Apache Airflow webserver connectivity. However, if your Amazon VPC does not have internet access, you still need VPC endpoints for other AWS services (such as Amazon S3, CloudWatch Logs, SQS, and KMS) as described on this page.
 
 **Contents**
 + [Pricing](#vpc-vpe-create-pricing)
@@ -236,7 +236,7 @@ The following section displays the steps to attach the VPC endpoints for Apache 
 ## (Optional) Enable private IP addresses for your Amazon S3 VPC interface endpoint
 <a name="vpc-vpe-create-view-endpoints-s3-exception"></a>
 
-Amazon S3 **Interface** endpoints don't support private DNS. The S3 endpoint requests still resolves to a *public* IP address. To resolve the S3 address to a *private* IP address, you need to add a [private hosted zone in Route 53](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/hosted-zones-private.html) for the S3 regional endpoint.
+Amazon S3 **Interface** endpoints don't support private DNS. The S3 endpoint requests still resolve to a *public* IP address. To resolve the S3 address to a *private* IP address, you need to add a [private hosted zone in Route 53](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/hosted-zones-private.html) for the S3 regional endpoint.
 
 ### Using Route 53
 <a name="vpc-vpe-create-view-endpoints-s3-exception-route53"></a>

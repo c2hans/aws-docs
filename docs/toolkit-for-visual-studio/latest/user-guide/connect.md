@@ -14,7 +14,7 @@ The following sections describe how to get started with the AWS Toolkit for Visu
 ## Prerequisites
 <a name="connecting-to-aws"></a>
 
-To get started working with Amazon Q and the AWS Toolkit, you need to authenticate with AWS credentials. If you've previously set up an AWS account and authentication through another AWS tool or service (such as the AWS Command Line Interface), then the AWS Toolkit automatically detects your credentials. If you're new to AWS or haven't created an account, then you can sign up for an AWS account from the [AWS sign up portal]( https://portal.aws.amazon.com/billing/signup). For detailed information on setting up a new AWS account, see the [Overview](https://docs.aws.amazon.com//SetUp/latest/UserGuide/setup-overview.html) topic in the *AWS Setup User Guide*.
+To get started working with Amazon Q and the AWS Toolkit, you need to authenticate with AWS credentials. If you've previously set up an AWS account and authentication through another AWS tool or service (such as the AWS Command Line Interface), then the AWS Toolkit automatically detects your credentials. If you're new to AWS or haven't created an account, then you can sign up for an AWS account from the [AWS sign up portal]( https://portal.aws.amazon.com/billing/signup). For detailed information on setting up a new AWS account, see the [Overview](https://docs.aws.amazon.com/SetUp/latest/UserGuide/setup-overview.html) topic in the *AWS Setup User Guide*.
 
 ## Connecting to AWS from the Toolkit
 <a name="connect-to-aws"></a>
@@ -40,7 +40,7 @@ The Documentation and Tutorials section is only visible when one or more feature
 
 From the Amazon Q section in the **Getting Started** tab, you can enable or disable Amazon Q, add a new connection, or switch to a different AWS connection. Before you can view or access any of these actions, Amazon Q must be enabled. To enable Amazon Q click the **Enable** button.
 
-When Amazon Q is disabled, all Amazon Q features and functions are completely removed from Visual Studio. Enabling Amazon Q automatically opens the **Setup authentication for Amazon Q** in the **Getting Started** tab. To proceed, you must authenticate with your AWS IAM Identity Center credentials to access the **Professional Tier** or your AWS Builder ID to access the **Free Tier**. For detailed information about each of the tier options, see the [Understanding tiers of service for Amazon Q Developer](https://docs.aws.amazon.com//amazonq/latest/qdeveloper-ug/q-tiers.html) topic in the *Amazon Q Developer* User Guide.
+When Amazon Q is disabled, all Amazon Q features and functions are completely removed from Visual Studio. Enabling Amazon Q automatically opens the **Setup authentication for Amazon Q** in the **Getting Started** tab. To proceed, you must authenticate with your AWS IAM Identity Center credentials to access the **Professional Tier** or your AWS Builder ID to access the **Free Tier**. For detailed information about each of the tier options, see the [Understanding tiers of service for Amazon Q Developer](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/q-tiers.html) topic in the *Amazon Q Developer* User Guide.
 
 To proceed complete one of the following procedures.
 
@@ -84,7 +84,7 @@ From the AWS Toolkit section in the **Getting Started with the AWS Toolkit** tab
 When the AWS Toolkit is enabled, **Setup authentication for AWS Toolkit** automatically loads in the **Getting Started with the AWS Toolkit** tab. To proceed, you must authenticate with either your **AWS IAM Identity Center** credentials or your **IAM User Role** credentials.
 
 **Note**
-For detailed information about IAM Identity Center credentials, see the [What is IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html) topic in the *AWS IAM Identity Center* User Guide. For detailed information about IAM User Role credentials, see the [AWS Access keys: Long-term credentials](https://docs.aws.amazon.com//sdkref/latest/guide/access-iam-users.html) topic in the *AWS SDKs and Tools* reference guide.
+For detailed information about IAM Identity Center credentials, see the [What is IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html) topic in the *AWS IAM Identity Center* User Guide. For detailed information about IAM User Role credentials, see the [AWS Access keys: Long-term credentials](https://docs.aws.amazon.com/sdkref/latest/guide/access-iam-users.html) topic in the *AWS SDKs and Tools* reference guide.
 
 **Authenticate and connect with IAM Identity Center**
 

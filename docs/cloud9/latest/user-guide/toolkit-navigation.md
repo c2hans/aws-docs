@@ -74,8 +74,6 @@ To access the **AWS Configuration** pane, choose **AWS Cloud9**, **Preferences**
 
 The following table provides an overview of the options available on the **AWS Configuration** pane.
 
-****
-
 | Menu option | Description |
 | --- | --- |
 | **AWS: Profile** | Sets the name of the credentials profile to obtain credentials from. |

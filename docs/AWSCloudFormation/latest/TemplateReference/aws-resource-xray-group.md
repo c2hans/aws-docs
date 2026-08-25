@@ -145,6 +145,6 @@ Resources:
 
 ## See also
 <a name="aws-resource-xray-group--seealso"></a>
-+  [Configuring groups in the X-Ray console](https://docs.aws.amazon.com//xray/latest/devguide/xray-console-groups.html)
-+  [Configuring groups with the X-Ray API](https://docs.aws.amazon.com//xray/latest/devguide/xray-api-configuration.html#xray-api-configuration-groups)
-+ [CreateGroup](https://docs.aws.amazon.com//xray/latest/api/API_CreateGroup.html) action in the X-Ray API Reference
++  [Configuring groups in the X-Ray console](https://docs.aws.amazon.com/xray/latest/devguide/xray-console-groups.html)
++  [Configuring groups with the X-Ray API](https://docs.aws.amazon.com/xray/latest/devguide/xray-api-configuration.html#xray-api-configuration-groups)
++ [CreateGroup](https://docs.aws.amazon.com/xray/latest/api/API_CreateGroup.html) action in the X-Ray API Reference

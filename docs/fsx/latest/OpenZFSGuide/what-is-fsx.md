@@ -73,7 +73,7 @@ If you're a first-time user of Amazon FSx, we recommend that you read the follow
 
 1. If you're ready to create your first Amazon FSx file system, follow the instructions in [Setting up an Amazon FSx for OpenZFS file system](getting-started.md).
 
-1. For information about performance, see [Performance for Amazon FSx for OpenZFSPerformance](performance.md).
+1. For information about performance, see [Performance for Amazon FSx for OpenZFS](performance.md).
 
 1. For Amazon FSx security details, see [Security in Amazon FSx for OpenZFS](security.md).
 

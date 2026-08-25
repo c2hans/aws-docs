@@ -13,6 +13,7 @@ The following actions are supported:
 +  [CreateVirtualCluster](API_CreateVirtualCluster.md)
 +  [DeleteJobTemplate](API_DeleteJobTemplate.md)
 +  [DeleteManagedEndpoint](API_DeleteManagedEndpoint.md)
++  [DeleteSecurityConfiguration](API_DeleteSecurityConfiguration.md)
 +  [DeleteVirtualCluster](API_DeleteVirtualCluster.md)
 +  [DescribeJobRun](API_DescribeJobRun.md)
 +  [DescribeJobTemplate](API_DescribeJobTemplate.md)
@@ -29,3 +30,4 @@ The following actions are supported:
 +  [StartJobRun](API_StartJobRun.md)
 +  [TagResource](API_TagResource.md)
 +  [UntagResource](API_UntagResource.md)
++  [UpdateVirtualCluster](API_UpdateVirtualCluster.md)

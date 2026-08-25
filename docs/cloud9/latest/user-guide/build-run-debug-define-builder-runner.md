@@ -58,8 +58,6 @@ In the preceding code:
 
 The following table shows the variables you can use.
 
-****
-
 |  **Variable**  |  **Description**  |
 | --- | --- |
 |  `$file_path`  | The directory of the current file, for example, `/home/ec2-user/environment` or `/home/ubuntu/environment`. |

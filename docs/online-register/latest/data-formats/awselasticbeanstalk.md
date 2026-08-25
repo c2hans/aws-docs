@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awse
 
 AWS Elastic Beanstalk provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="elasticbeanstalk-CheckDNSAvailability"></a>[CheckDNSAvailability](https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_CheckDNSAvailability.html) | Check CNAME availability | Read |

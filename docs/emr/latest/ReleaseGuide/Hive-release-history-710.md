@@ -8,8 +8,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/Hive-release-his
 ## Amazon EMR 7.1.0 - Hive changes
 <a name="Hive-release-history-changes-6150"></a>
 
-****
-
 | Type | Description |
 | --- | --- |
 | Bug Fix | [ HIVE-24381](https://issues.apache.org/jira/browse/HIVE-24381) – Compressed text input returns 0 rows if skip header/footer is included. |

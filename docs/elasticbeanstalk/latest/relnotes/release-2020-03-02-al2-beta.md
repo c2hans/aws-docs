@@ -34,8 +34,6 @@ Be aware that at the time these release notes are published, the new platform ve
 ### Single Container Docker
 <a name="release-2020-03-02-al2-beta.platforms.docker"></a>
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Docker Version  |  Proxy Server  |
 | --- | --- | --- | --- |
 |  ** (BETA) Docker running on 64bit Amazon Linux 2 version 0.1.1** <br /> * 64bit Amazon Linux 2 v0.1.1 running Docker (BETA) *  | 2.0.20200207 | 18.09.9-ce | nginx 1.16.1 |

@@ -18,7 +18,7 @@ Compared to client-side composition, server-side composition has the following b
 + **Resilience** — By centralizing the composition process on the server, the broadcast becomes more robust. Even if a publisher device experiences technical limitations or fluctuations, the server can adapt and provide a smoother stream to all audience members.
 + **Bandwidth efficiency** — Since the server handles the composition, stage publishers do not have to spend extra bandwidth broadcasting the video to IVS.
 
-Alternatively, to broadcast a stage to an IVS channel, you can do the composition client side; see [Enabling Multiple Hosts on an IVS Stream](https://docs.aws.amazon.com//ivs/latest/LowLatencyUserGuide/multiple-hosts.html) in the *IVS Low-Latency Streaming User Guide*.
+Alternatively, to broadcast a stage to an IVS channel, you can do the composition client side; see [Enabling Multiple Hosts on an IVS Stream](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multiple-hosts.html) in the *IVS Low-Latency Streaming User Guide*.
 
 ## Composition Lifecycle
 <a name="ssc-composition-endpoint"></a>
@@ -52,7 +52,7 @@ To use server-side composition, you need to create an EncoderConfiguration and a
 
 ![Server-side composition uses two key API elements.](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/images/ssc_IVS_API_Composite_Recording.png)
 
-For complete information, see [IVS Real-Time Streaming API Reference](https://docs.aws.amazon.com//ivs/latest/RealTimeAPIReference/Welcome.html).
+For complete information, see [IVS Real-Time Streaming API Reference](https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/Welcome.html).
 
 ## Layouts
 <a name="ssc-api-layouts"></a>
@@ -74,7 +74,7 @@ The grid layout arranges stage participants in a grid of equally sized slots. It
 + `featuredParticipantAttribute` identifies the featured slot. When this is set, the featured participant is displayed in a larger slot on the main screen, with other participants shown below it.
 + `participantOrderAttribute` enables custom participant ordering based on attribute values in participant tokens. When specified, participants are ordered numerically by their attribute values, with participants lacking the attribute falling back to arrival-time ordering. This provides optional deterministic positioning and allows for role-based layouts.
 
-For details on grid layout (including valid values and defaults for all fields), see the [GridConfiguration](https://docs.aws.amazon.com//ivs/latest/RealTimeAPIReference/API_GridConfiguration.html) data type.
+For details on grid layout (including valid values and defaults for all fields), see the [GridConfiguration](https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_GridConfiguration.html) data type.
 
 ![Server-side composition grid layout](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/images/ssc_Grid_Layout.png)
 
@@ -90,7 +90,7 @@ The PiP layout enables displaying a participant in an overlay window with config
 
 Like the grid layout, the PiP layout supports `featuredParticipantAttribute`, `omitStoppedVideo`, `videoFillMode`, `gridGap`, and `participantOrderAttribute` to further customize the composition. The `participantOrderAttribute` enables custom participant ordering for both selecting the participant for the PiP window and positioning grid participants based on attribute values in participant tokens.
 
-For details on PiP layout (including valid values and defaults for all fields), see the [PipConfiguration](https://docs.aws.amazon.com//ivs/latest/RealTimeAPIReference/API_PipConfiguration.html) data type.
+For details on PiP layout (including valid values and defaults for all fields), see the [PipConfiguration](https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_PipConfiguration.html) data type.
 
 ![Server-side composition Picture-in-Picture (PiP) layout](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/images/ssc_PiP_Layout.png)
 

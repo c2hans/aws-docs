@@ -15,7 +15,7 @@ You can use the ACM console or the AWS CLI to list detailed metadata about your 
    + **Certificate status**
      + **Identifier** – 32-byte hexadecimal unique identifier of the certificate
      + **ARN** – An Amazon Resource Name (ARN) in the form `arn:aws:acm:{{Region}}:{{444455556666}}:certificate/{{certificate_ID}}`
-     + **Type** – Identifies the management category of an ACM certificate. Possible values are: **Amazon Issued** \| **Private** \| **Imported**. For more information, see [AWS Certificate Manager public certificates](gs-acm-request-public.md), [Request a private certificate in AWS Certificate ManagerRequest a private certificate](gs-acm-request-private.md), or [Import certificates into AWS Certificate Manager](import-certificate.md).
+     + **Type** – Identifies the management category of an ACM certificate. Possible values are: **Amazon Issued** \| **Private** \| **Imported**. For more information, see [AWS Certificate Manager public certificates](gs-acm-request-public.md), [Request a private certificate in AWS Certificate Manager](gs-acm-request-private.md), or [Import certificates into AWS Certificate Manager](import-certificate.md).
      + **Status** – The certificate status. Possible values are: **Pending validation** \| **Issued** \| **Inactive** \| **Expired** \| **Revoked** \| **Failed** \| **Validation timed out**
      + **Detailed status** – Date and time when the certificate was issued or imported
    + **Domains**

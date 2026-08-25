@@ -16,7 +16,7 @@ The following relational databases are available on Amazon Aurora. Aurora reuses
 
 | Aurora database | User guide | Available versions | Release notes |
 | --- | --- | --- | --- |
-| Amazon Aurora MySQL-Compatible Edition | [Working with Amazon Aurora MySQL](Aurora.AuroraMySQL.md) | [Database engine updates for Amazon Aurora MySQLLong-term support (LTS) and beta releases for Amazon Aurora MySQL](AuroraMySQL.Updates.md) | [Release Notes for Aurora MySQL](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraMySQLReleaseNotes/Welcome.html) |
+| Amazon Aurora MySQL-Compatible Edition | [Working with Amazon Aurora MySQL](Aurora.AuroraMySQL.md) | [Database engine updates for Amazon Aurora MySQL](AuroraMySQL.Updates.md) | [Release Notes for Aurora MySQL](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraMySQLReleaseNotes/Welcome.html) |
 | Amazon Aurora PostgreSQL-Compatible Edition | [Working with Amazon Aurora PostgreSQL](Aurora.AuroraPostgreSQL.md) | [Database engine updates for Amazon Aurora PostgreSQL](AuroraPostgreSQL.Updates.md) | [Release Notes for Aurora PostgreSQL](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraPostgreSQLReleaseNotes/Welcome.html) |
 
 ## Specifying the Amazon Aurora database version for your database cluster

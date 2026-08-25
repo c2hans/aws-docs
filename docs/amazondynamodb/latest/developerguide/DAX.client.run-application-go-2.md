@@ -122,7 +122,7 @@ Follow this procedure to run the Amazon DynamoDB Accelerator (DAX) SDK for Go sa
 ## Features not in parity with AWS SDK for Go V2
 <a name="DAX.client.run-application-go-features-not-in-parity"></a>
 
-Middleware Stack – DAX Go V2 doesn’t support the use of Middleware Stacks through APIoptions. For more information, see [Customizing the AWS SDK for Go v2 Client Requests with Middleware](https://docs.aws.amazon.com/sdk-for-go/v2/developer-guide/middleware.html#:~:text=You%20can%20customize%20AWS%20SDK,step's%20input%20and%20output%20types).
+Middleware Stack – DAX Go V2 doesn’t support the use of Middleware Stacks through APIoptions. For more information, see [Customizing the AWS SDK for Go v2 Client Requests with Middleware](https://docs.aws.amazon.com/sdk-for-go/v2/developer-guide/middleware.html).
 
 Example:
 

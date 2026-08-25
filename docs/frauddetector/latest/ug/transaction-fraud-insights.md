@@ -23,7 +23,7 @@ Transaction Fraud Insights models are trained on dataset stored internally with 
 ## Preparing data
 <a name="preparing-training-data-TFI"></a>
 
-Before you train a Transaction Fraud Insights model, ensure that your data file contains all headers as mentioned in [Prepare event dataset](https://docs.aws.amazon.com//frauddetector/latest/ug/create-event-dataset.html#prepare-event-dataset). The Transaction Fraud Insights model compares new entities that are received with the examples of fraudulent and legitimate entities in the dataset, so it is helpful to provide many examples for each entity.
+Before you train a Transaction Fraud Insights model, ensure that your data file contains all headers as mentioned in [Prepare event dataset](https://docs.aws.amazon.com/frauddetector/latest/ug/create-event-dataset.html#prepare-event-dataset). The Transaction Fraud Insights model compares new entities that are received with the examples of fraudulent and legitimate entities in the dataset, so it is helpful to provide many examples for each entity.
 
 Amazon Fraud Detector automatically transforms the stored event dataset into the correct format for training. After the model has completed training, you can review the performance metrics and determine whether you should add entities to your training dataset.
 
@@ -39,11 +39,11 @@ Amazon Fraud Detector returns a validation error during model training if you se
 ## Event variables
 <a name="input-variables-TFI"></a>
 
-The event type used to train the model must contain at least 2 variables, apart from required event metadata, that has passed [data validation](https://docs.aws.amazon.com//frauddetector/latest/ug/create-event-dataset.html#dataset-validation) and can contain up to 100 variables. Generally, the more variables you provide, the better the model can differentiate between fraud and legitimate events. Although the Transaction Fraud Insight model can support dozens of variables, including custom variables, we recommend that you include IP address, email address, payment instrument type, order price, and card BIN.
+The event type used to train the model must contain at least 2 variables, apart from required event metadata, that has passed [data validation](https://docs.aws.amazon.com/frauddetector/latest/ug/create-event-dataset.html#dataset-validation) and can contain up to 100 variables. Generally, the more variables you provide, the better the model can differentiate between fraud and legitimate events. Although the Transaction Fraud Insight model can support dozens of variables, including custom variables, we recommend that you include IP address, email address, payment instrument type, order price, and card BIN.
 
 ## Validating data
 <a name="training-data-validations-TFI"></a>
 
-As part of the training process, Transaction Fraud Insights validates the training dataset for data quality issues that might impact model training. After validating the data, Amazon Fraud Detector takes appropriate action to build the best possible model. This includes issuing warnings for potential data quality issues, automatically removing variables that have data quality issues, or issuing an error and stopping the model training process. For more information, see [Dataset validation](https://docs.aws.amazon.com//frauddetector/latest/ug/create-event-dataset.html#dataset-validation).
+As part of the training process, Transaction Fraud Insights validates the training dataset for data quality issues that might impact model training. After validating the data, Amazon Fraud Detector takes appropriate action to build the best possible model. This includes issuing warnings for potential data quality issues, automatically removing variables that have data quality issues, or issuing an error and stopping the model training process. For more information, see [Dataset validation](https://docs.aws.amazon.com/frauddetector/latest/ug/create-event-dataset.html#dataset-validation).
 
 Amazon Fraud Detector will issue a warning but continue training a model if the number of unique entities is less than 1,500 because this can impact the quality of the training data. If you receive a warning, review the [performance metric](training-performance-metrics.md).

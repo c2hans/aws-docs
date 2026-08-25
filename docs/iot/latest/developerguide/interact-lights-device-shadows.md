@@ -106,7 +106,7 @@ If you haven't already used the MQTT test client, you can review [View MQTT mess
 
 **Open the MQTT test client**
 
-   Open the [MQTT test client in the AWS IoT console](https://console.aws.amazon.com//iot/home#/test) in a new window so that you can observe the messages received by the MQTT topics without losing the configuration of your MQTT test client. The MQTT test client doesn't retain any subscriptions or message logs if you leave it to go to another page in the console. For this section of the tutorial, you can have the Shadow document of your AWS IoT thing and the MQTT test client open in separate windows to more easily observe the interaction with Device Shadows.
+   Open the [MQTT test client in the AWS IoT console](https://console.aws.amazon.com/iot/home#/test) in a new window so that you can observe the messages received by the MQTT topics without losing the configuration of your MQTT test client. The MQTT test client doesn't retain any subscriptions or message logs if you leave it to go to another page in the console. For this section of the tutorial, you can have the Shadow document of your AWS IoT thing and the MQTT test client open in separate windows to more easily observe the interaction with Device Shadows.
 
 1.
 

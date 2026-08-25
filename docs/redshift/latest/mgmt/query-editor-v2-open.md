@@ -44,7 +44,7 @@ A query contains the SQL commands to manage and query your data in a database. W
 
 **Notebooks ![A book icon used in the AWS Console used as SQL notebook.](http://docs.aws.amazon.com/redshift/latest/mgmt/images/qev2-manual.png)**
 A SQL notebook contains SQL and Markdown cells. Use notebooks to organize, annotate, and share multiple SQL commands in a single document.
- When you choose a saved notebook, you can open, rename, duplicate, and delete it using the context (right-click) menu. You can view attributes such as the **Notebook ARN** of a saved notebook by choosing **Notebook details**. You can also view its version history, edit tags attached to the notebook, export it, and share it with your team. For more information, see [Notebooks in Amazon RedshiftNotebooks](query-editor-v2-notebooks.md).
+ When you choose a saved notebook, you can open, rename, duplicate, and delete it using the context (right-click) menu. You can view attributes such as the **Notebook ARN** of a saved notebook by choosing **Notebook details**. You can also view its version history, edit tags attached to the notebook, export it, and share it with your team. For more information, see [Notebooks in Amazon Redshift](query-editor-v2-notebooks.md).
 
 **Charts ![Icon of a chart used in the AWS Console as visual representation of data.](http://docs.aws.amazon.com/redshift/latest/mgmt/images/qev2-chart.png)**
 A chart is a visual representation of your data. The query editor v2 provides the tools to create many types of charts and save them.

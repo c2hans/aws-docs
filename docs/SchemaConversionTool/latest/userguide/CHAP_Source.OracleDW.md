@@ -39,7 +39,6 @@ Use the following procedure to connect to your Oracle data warehouse source data
 
      For information about using database credentials from Secrets Manager, see [Configuring AWS Secrets Manager in the AWS Schema Conversion Tool](CHAP_UserInterface.SecretsManager.md).
    + To enter the Oracle source data warehouse connection information manually, use the following instructions:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CHAP_Source.OracleDW.html)
 
 1. Choose **Test Connection** to verify that AWS SCT can connect to your source database.

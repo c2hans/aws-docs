@@ -17,7 +17,7 @@ Complete these steps to send your first command:
 
 1. **Subscribe to topics** - Configure your device to subscribe to commands request and response topics. See [Choose target device for your commands and subscribe to MQTT topics](iot-remote-command-workflow.md#command-choose-target).
 
-1. **Execute the command** - Start the command execution on your target device. See [Start a command executionStart a command execution (console)Start a command execution (AWS CLI)](iot-remote-command-execution-start-monitor.md#iot-remote-command-execution-start).
+1. **Execute the command** - Start the command execution on your target device. See [Start a command execution](iot-remote-command-execution-start-monitor.md#iot-remote-command-execution-start).
 
 **Common use cases:**
 + *Remote diagnostics* - Retrieve logs, run diagnostics, check device health

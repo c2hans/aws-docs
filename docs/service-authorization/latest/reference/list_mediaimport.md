@@ -29,8 +29,6 @@ AmazonMediaImport has no API operations that can be used in the `Actions` elemen
 
 The following actions are defined by AmazonMediaImport but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 | Actions | Description | Resource types (\*required) | Condition keys | Access level |
 | --- | --- | --- | --- | --- |
 |   [CreateDatabaseBinarySnapshot](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/custom-cev.html)  | Grants permission to create a database binary snapshot on the customer's aws account |  |   | Write |

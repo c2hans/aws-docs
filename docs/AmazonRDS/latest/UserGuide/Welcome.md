@@ -225,7 +225,7 @@ You can use the Amazon CloudWatch service to monitor the performance and health 
 Using Amazon CloudWatch alarms, you can watch a single Amazon RDS metric over a specific time period. You can then perform one or more actions based on the value of the metric relative to a threshold that you set. For more information, see [Monitoring Amazon RDS metrics with Amazon CloudWatch](monitoring-cloudwatch.md).
 
 **Amazon RDS Performance Insights and operating-system monitoring**
-Performance Insights assesses the load on your database, and determine when and where to take action. For more information, see [Monitoring DB load with Performance Insights on Amazon RDS](USER_PerfInsights.md). Amazon RDS Enhanced Monitoring looks at metrics in real time for the operating system. For more information, see [Monitoring OS metrics with Enhanced Monitoring](USER_Monitoring.OS.md).
+Performance Insights assesses the load on your database, and determine when and where to take action. For more information, see [Monitoring DB load with Amazon CloudWatch Database Insights on Amazon RDS](USER_PerfInsights.md). Amazon RDS Enhanced Monitoring looks at metrics in real time for the operating system. For more information, see [Monitoring OS metrics with Enhanced Monitoring](USER_Monitoring.OS.md).
 
 **Integrated AWS services**
 Amazon RDS is integrated with Amazon EventBridge, Amazon CloudWatch Logs, and Amazon DevOps Guru. For more information, see [Monitoring metrics in an Amazon RDS instance](CHAP_Monitoring.md).

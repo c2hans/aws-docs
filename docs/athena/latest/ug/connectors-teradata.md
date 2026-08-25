@@ -82,8 +82,6 @@ teradata://${{{jdbc_connection_string}}}
 
 You can use a multiplexer to connect to multiple database instances with a single Lambda function. Requests are routed by catalog name. Use the following classes in Lambda.
 
-****
-
 | Handler | Class |
 | --- | --- |
 | Composite handler | TeradataMuxCompositeHandler |
@@ -93,16 +91,12 @@ You can use a multiplexer to connect to multiple database instances with a singl
 ##### Multiplexing handler parameters
 <a name="connectors-teradata-multiplexing-handler-parameters"></a>
 
-****
-
 | Parameter | Description |
 | --- | --- |
 | ${{catalog}}\_connection\_string | Required. A database instance connection string. Prefix the environment variable with the name of the catalog used in Athena. For example, if the catalog registered with Athena is myteradatacatalog, then the environment variable name is myteradatacatalog\_connection\_string. |
 | default | Required. The default connection string. This string is used when the catalog is lambda:${{{AWS\_LAMBDA\_FUNCTION\_NAME}}}. |
 
 The following example properties are for a Teradata MUX Lambda function that supports two database instances: `teradata1` (the default), and `teradata2`.
-
-****
 
 | Property | Value |
 | --- | --- |
@@ -147,8 +141,6 @@ Currently, Teradata recognizes the `user` and `password` JDBC properties. It als
 
 You can use the following single connection metadata and record handlers to connect to a single Teradata instance.
 
-****
-
 | Handler type | Class |
 | --- | --- |
 | Composite handler | TeradataCompositeHandler |
@@ -158,8 +150,6 @@ You can use the following single connection metadata and record handlers to conn
 ##### Single connection handler parameters
 <a name="connectors-teradata-single-connection-handler-parameters"></a>
 
-****
-
 | Parameter | Description |
 | --- | --- |
 | default | Required. The default connection string. |
@@ -167,8 +157,6 @@ You can use the following single connection metadata and record handlers to conn
 The single connection handlers support one database instance and must provide a `default` connection string parameter. All other connection strings are ignored.
 
 The following example property is for a single Teradata instance supported by a Lambda function.
-
-****
 
 | Property | Value |
 | --- | --- |
@@ -178,8 +166,6 @@ The following example property is for a single Teradata instance supported by a 
 <a name="connectors-teradata-spill-parameters"></a>
 
 The Lambda SDK can spill data to Amazon S3. All database instances accessed by the same Lambda function spill to the same location.
-
-****
 
 | Parameter | Description |
 | --- | --- |
@@ -191,8 +177,6 @@ The Lambda SDK can spill data to Amazon S3. All database instances accessed by t
 <a name="connectors-teradata-data-type-support"></a>
 
 The following table shows the corresponding data types for JDBC and Apache Arrow.
-
-****
 
 | JDBC | Arrow |
 | --- | --- |
@@ -214,8 +198,6 @@ The following table shows the corresponding data types for JDBC and Apache Arrow
 <a name="connectors-teradata-partitions-and-splits"></a>
 
 A partition is represented by a single partition column of type `Integer`. The column contains partition names of the partitions defined on a Teradata table. For a table that does not have partition names, \* is returned, which is equivalent to a single partition. A partition is equivalent to a split.
-
-****
 
 | Name | Type | Description |
 | --- | --- | --- |

@@ -40,8 +40,6 @@ Original address domain matching is case-insensitive.
 
 You can use the following example to permanently redirect a specific page to a new address.
 
-****
-
 | Original address | Destination Address | Redirect Type | Country Code |
 | --- | --- | --- | --- |
 |  `/original.html`  |  `/destination.html`  |  `permanent redirect (301)`  |  |
@@ -60,8 +58,6 @@ JSON format
 ```
 
 You can use the following example to redirect any path under a folder to the same path under a different folder.
-
-****
 
 | Original address | Destination Address | Redirect Type | Country Code |
 | --- | --- | --- | --- |
@@ -82,8 +78,6 @@ JSON format
 
 You can use the following example to redirect all traffic to index.html as a rewrite. In this scenario, the rewrite makes it appear to the user that they have arrived at the original address.
 
-****
-
 | Original address | Destination Address | Redirect Type | Country Code |
 | --- | --- | --- | --- |
 |  `/<*>`  |  `/index.html`  |  `rewrite (200)`  |  |
@@ -103,8 +97,6 @@ JSON format
 
 You can use the following example to use a rewrite to change the subdomain that appears to the user.
 
-****
-
 | Original address | Destination Address | Redirect Type | Country Code |
 | --- | --- | --- | --- |
 |  `https://mydomain.com`  |  `https://www.mydomain.com`  |  `rewrite (200)`  |  |
@@ -122,8 +114,6 @@ JSON format
 ```
 
 You can use the following example to redirect to a different domain with a path prefix.
-
-****
 
 | Original address | Destination Address | Redirect Type | Country Code |
 | --- | --- | --- | --- |
@@ -143,8 +133,6 @@ JSON format
 ```
 
 You can use the following example to redirect paths under a folder that can’t be found to a custom 404 page.
-
-****
 
 | Original address | Destination Address | Redirect Type | Country Code |
 | --- | --- | --- | --- |
@@ -173,8 +161,6 @@ Most SPA frameworks support HTML5 history.pushState() to change browser location
 
 The following example uses regular expressions to set up a 200 rewrite for all files to index.html, except for the file extensions specified in the regular expression.
 
-****
-
 | Original address | Destination Address | Redirect Type | Country Code |
 | --- | --- | --- | --- |
 |  `</^[^.]+$\|\.(?!(css\|gif\|ico\|jpg\|js\|png\|txt\|svg\|woff\|woff2\|ttf\|map\|json\|webp)$)([^.]+$)/>`  |  `/index.html`  |  `200`  |  |
@@ -196,8 +182,6 @@ JSON format
 <a name="reverse-proxy-rewrite"></a>
 
 The following example uses a rewrite to proxy content from another location so that it appears to the user that the domain hasn’t changed. HTTPS is the only protocol supported for reverse proxies.
-
-****
 
 | Original address | Destination Address | Redirect Type | Country Code |
 | --- | --- | --- | --- |
@@ -221,8 +205,6 @@ JSON format
 
 To create clean URL structures like *about* instead of *about.html*, static site generators such as Hugo generate directories for pages with an index.html (*/about/index.html*). Amplify automatically creates clean URLs by adding a trailing slash when required. The table below highlights different scenarios:
 
-****
-
 | User inputs in browser | URL in the address bar | Document served |
 | --- | --- | --- |
 |  `/about`  |  `/about`  |  `/about.html`  |
@@ -233,8 +215,6 @@ To create clean URL structures like *about* instead of *about.html*, static site
 <a name="placeholders"></a>
 
 You can use the following example to redirect paths in a folder structure to a matching structure in another folder.
-
-****
 
 | Original address | Destination Address | Redirect Type | Country Code |
 | --- | --- | --- | --- |
@@ -261,8 +241,6 @@ Don’t include secrets, credentials, or sensitive data in URLs as path or query
 
 You can use the following example to redirect a path to a folder with a name that matches the value of a query string element in the original address:
 
-****
-
 | Original address | Destination Address | Redirect Type | Country Code |
 | --- | --- | --- | --- |
 |  `/docs?id=<my-blog-id-value`  |  `/documents/<my-blog-post-id-value>`  |  `permanent redirect (301)`  |  |
@@ -285,8 +263,6 @@ Amplify forwards all query string parameters to the destination path for 301 and
 
 You can use the following example to redirect all paths that can’t be found at a given level of a folder structure to index.html in a specified folder.
 
-****
-
 | Original address | Destination Address | Redirect Type | Country Code |
 | --- | --- | --- | --- |
 |  `/documents/<folder>/<child-folder>/<grand-child-folder>`  |  `/documents/index.html`  |  `not found (404)`  |  |
@@ -308,8 +284,6 @@ JSON format
 <a name="region-based-redirects"></a>
 
 You can use the following example to redirect requests based on region.
-
-****
 
 | Original address | Destination Address | Redirect Type | Country Code |
 | --- | --- | --- | --- |
@@ -335,15 +309,11 @@ You can use the wildcard expression, `<*>`, in the original address for a redire
 
 The following is an example of a valid redirect with a wildcard expression.
 
-****
-
 | Original address | Destination Address | Redirect Type | Country Code |
 | --- | --- | --- | --- |
 |  `/docs/<*>`  |  `/documents/<*>`  |  `permanent redirect (301)`  |   |
 
 The following two examples demonstrate *invalid* redirects with wildcard expressions.
-
-****
 
 | Original address | Destination Address | Redirect Type | Country Code |
 | --- | --- | --- | --- |

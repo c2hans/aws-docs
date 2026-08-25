@@ -17,8 +17,6 @@ If you're [using container images to deploy your functions](images-create.md), t
 
 This is summarized in the following table:
 
-****
-
 | Deployment mode | Lambda's responsibility | Customer's responsibility |
 | --- | --- | --- |
 | Managed runtime, Auto mode | Publish new runtime versions containing the latest patches.<br />Apply runtime patches to existing functions. | Roll back to a previous runtime version in the rare event of a runtime update compatibility issue. Follow best practices for [backward compatibility](runtimes-update.md#runtime-update-compatibility). |

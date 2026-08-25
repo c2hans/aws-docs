@@ -21,7 +21,7 @@ You must have a Linux computer with access to resources in the VPC to serve as y
 
 We recommend creating an Amazon Elastic Compute Cloud (Amazon EC2) instance in the same VPC and AWS Region as the VPC endpoint for the Hyperledger Fabric network on AMB Access. This is the setup that the tutorial uses. For instructions to set up a Hyperledger Fabric client using this configuration, see [Step 4: Create an Amazon EC2 Instance and Set Up the Hyperledger Fabric Client](get-started-create-client.md).
 
-An AWS CloudFormation template to create a Hyperledger Fabric client is available in the [amazon-managed-blockchain-client-templates repository](https://github.com/awslabs/amazon-managed-blockchain-client-templates) on Github. For more information, see the [readme.md](https://github.com/awslabs/amazon-managed-blockchain-client-templates/blob/master/README.md) in that repository. For more information about using CloudFormation, see [Getting Started](https://docs.aws.amazon.com//AWSCloudFormation/latest/UserGuide/GettingStarted.Walkthrough.html) in the *AWS CloudFormation User Guide*.
+An AWS CloudFormation template to create a Hyperledger Fabric client is available in the [amazon-managed-blockchain-client-templates repository](https://github.com/awslabs/amazon-managed-blockchain-client-templates) on Github. For more information, see the [readme.md](https://github.com/awslabs/amazon-managed-blockchain-client-templates/blob/master/README.md) in that repository. For more information about using CloudFormation, see [Getting Started](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/GettingStarted.Walkthrough.html) in the *AWS CloudFormation User Guide*.
 
 ## A VPC
 <a name="w2aab9b9b9"></a>

@@ -43,8 +43,6 @@ You specify filter types as follows:
 
 The following table provides valid filter options for each event type. The table also shows which trigger configurations default to true or false for automatic change detection in the action configuration.
 
-****
-
 | Trigger configuration | Event type | Filter options | Detect changes |
 | --- | --- | --- | --- |
 | Add a trigger – no filter | none | none | true |
@@ -79,8 +77,6 @@ The following considerations apply when using triggers.
 <a name="pipelines-filter-pullrequest-events"></a>
 
 The following table provides a summary of the Git events, such as for pull request closure, that result in pull request event types by provider.
-
-****
 
 <table>
 <thead>

@@ -28,7 +28,7 @@ You can view a list of your map resources using the Amazon Location console, the
 ------
 #### [ API ]
 
-Use the `[ListMaps](https://docs.aws.amazon.com//location-maps/latest/APIReference/API_ListMaps.html)` operation from the Amazon Location Maps APIs.
+Use the `[ListMaps](https://docs.aws.amazon.com/location-maps/latest/APIReference/API_ListMaps.html)` operation from the Amazon Location Maps APIs.
 
 The following example is an API request to get a list of map resources in the AWS account.
 
@@ -36,7 +36,7 @@ The following example is an API request to get a list of map resources in the AW
 POST /maps/v0/list-maps
 ```
 
-The following is an example response for `[ListMaps](https://docs.aws.amazon.com//location-maps/latest/APIReference/API_ListMaps.html)`:
+The following is an example response for `[ListMaps](https://docs.aws.amazon.com/location-maps/latest/APIReference/API_ListMaps.html)`:
 
 ```
 {

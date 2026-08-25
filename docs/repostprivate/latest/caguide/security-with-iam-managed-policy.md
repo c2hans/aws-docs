@@ -96,6 +96,6 @@ The following table describes important updates to the re:Post Private managed p
 
 | Change | Description | Date |
 | --- | --- | --- |
-| New policy - [AWSrePostPrivateCloudWatchAccess](https://docs.aws.amazon.com//repostprivate/latest/caguide/security-with-iam-managed-policy.html#cloudwatch-metric-manpol) | New managed policy for publishing data to CloudWatch | November 26, 2023 |
-| New policy - [AWSRepostSpaceSupportOperationsPolicy](https://docs.aws.amazon.com//repostprivate/latest/caguide/security-with-iam-managed-policy.html#support-case-manpol) | New managed policy for the AWS Support feature in AWS re:Post Private | November 26, 2023 |
+| New policy - [AWSrePostPrivateCloudWatchAccess](https://docs.aws.amazon.com/repostprivate/latest/caguide/security-with-iam-managed-policy.html#cloudwatch-metric-manpol) | New managed policy for publishing data to CloudWatch | November 26, 2023 |
+| New policy - [AWSRepostSpaceSupportOperationsPolicy](https://docs.aws.amazon.com/repostprivate/latest/caguide/security-with-iam-managed-policy.html#support-case-manpol) | New managed policy for the AWS Support feature in AWS re:Post Private | November 26, 2023 |
 | re:Post Private started tracking changes | re:Post Private started tracking changes for its AWS managed policies | November 26, 2023 |

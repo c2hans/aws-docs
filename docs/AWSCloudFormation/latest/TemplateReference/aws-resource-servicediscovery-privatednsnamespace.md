@@ -59,8 +59,8 @@ A description for the namespace.
 The name that you want to assign to this namespace. When you create a private DNS namespace, AWS Cloud Map automatically creates an Amazon Route 53 private hosted zone that has the same name as the namespace.
 *Required*: Yes
 *Type*: String
-*Pattern*: `^(?!arn:)[!-~]{1,253}$`
-*Maximum*: `253`
+*Minimum*: `1`
+*Maximum*: `1024`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Properties`  <a name="cfn-servicediscovery-privatednsnamespace-properties"></a>
@@ -79,7 +79,7 @@ The tags for the namespace. Each tag consists of a key and an optional value, bo
 
 `Vpc`  <a name="cfn-servicediscovery-privatednsnamespace-vpc"></a>
 The ID of the Amazon VPC that you want to associate the namespace with.
-*Required*: Yes
+*Required*: No
 *Type*: String
 *Maximum*: `64`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)

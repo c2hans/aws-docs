@@ -28,6 +28,8 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/assigning-res
 1. Choose the **Default role** or **Choose an IAM role**.
 **Note**
 If you choose an IAM role, verify that it has permission to back up all the resources you are about assign. If your role encounters a resource that it doesn't have permission to back up, your backup plan will fail.
+**Note**
+If role manager is enabled in your account, AWS Backup selects the default service role for you, and a **Customize** option is available. For more information, see [IAM role creation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html) in the *IAM User Guide*.
 
 To assign your resources, in the **Assign resources** section, choose one of the two options under **Define resource selection**:
 + **Include all resource types**. This option configures your backup plan to protect all current and future AWS Backup-supported resources assigned to your backup plan. Use this option to quickly and easily protect your data estate.

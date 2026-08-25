@@ -118,8 +118,6 @@ The following features aren't supported from a Studio that uses trusted identity
 
 The following table displays service limits for EMR Studio.
 
-****
-
 | Item | Limit |
 | --- | --- |
 | EMR Studios | Maximum of 100 per AWS account |

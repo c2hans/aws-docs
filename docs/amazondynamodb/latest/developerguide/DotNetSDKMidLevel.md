@@ -38,8 +38,6 @@ The document model supports a set of primitive .NET data types and collections d
 
 The following table summarizes the mapping of the preceding .NET types to the DynamoDB types.
 
-****
-
 | .NET primitive type | DynamoDB type |
 | --- | --- |
 | All number types | `N` (number type) |

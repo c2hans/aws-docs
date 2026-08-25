@@ -347,6 +347,13 @@ Content-type: application/json
             "ThemeId": "string"
          }
       ],
+      "TopicsV2": [
+         {
+            "Description": "string",
+            "Name": "string",
+            "TopicId": "string"
+         }
+      ],
       "VPCConnections": [
          {
             "DnsResolvers": [ "string" ],
@@ -418,6 +425,15 @@ Content-type: application/json
             },
             "ThemeIds": [ "string" ]
          }
+      ],
+      "TopicsV2": [
+         {
+            "Permissions": {
+               "Actions": [ "string" ],
+               "Principals": [ "string" ]
+            },
+            "TopicIds": [ "string" ]
+         }
       ]
    },
    "OverrideTags": {
@@ -485,6 +501,17 @@ Content-type: application/json
                }
             ],
             "ThemeIds": [ "string" ]
+         }
+      ],
+      "TopicsV2": [
+         {
+            "Tags": [
+               {
+                  "Key": "string",
+                  "Value": "string"
+               }
+            ],
+            "TopicIds": [ "string" ]
          }
       ],
       "VPCConnections": [

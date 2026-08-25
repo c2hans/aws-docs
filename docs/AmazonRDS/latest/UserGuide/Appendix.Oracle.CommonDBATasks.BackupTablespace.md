@@ -24,8 +24,6 @@ For more information, see [Common parameters for RMAN procedures](Appendix.Oracl
 
 This procedure also uses the following additional parameter.
 
-****
-
 | Parameter name | Data type | Valid values | Default | Required | Description |
 | --- | --- | --- | --- | --- | --- |
 | `p_tablespace_name` | varchar2 | A valid tablespace name. | — | Yes | The name of the tablespace to back up. |

@@ -81,7 +81,7 @@ For more information about working with directory buckets, see the following top
 + [Differences for directory buckets](s3-express-differences.md)
 + [Networking for directory buckets](s3-express-networking.md)
 + [Directory bucket naming rules](directory-bucket-naming-rules.md)
-+ [Viewing directory bucket propertiesUsing the S3 console](directory-bucket-view.md)
++ [Viewing directory bucket properties](directory-bucket-view.md)
 + [Managing directory bucket policies](directory-bucket-bucket-policy.md)
 + [Emptying a directory bucket](directory-bucket-empty.md)
 + [Deleting a directory bucket](directory-bucket-delete.md)

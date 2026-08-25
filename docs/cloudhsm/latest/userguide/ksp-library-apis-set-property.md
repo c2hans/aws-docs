@@ -18,10 +18,8 @@ The `NCryptSetProperty` function sets property values for a key storage object.
  `pszProperty ` [in]
 A pointer to a null-terminated Unicode string containing the property name to retrieve.
 When using `NCRYPT_PROV_HANDLE`, AWS CloudHSM Key Storage Provider (KSP) supports the following KSP identifiers:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/cloudhsm/latest/userguide/ksp-library-apis-set-property.html)
 When using `NCRYPT_KEY_HANDLE`, AWS CloudHSM Key Storage Provider (KSP) supports the following KSP identifiers:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/cloudhsm/latest/userguide/ksp-library-apis-set-property.html)
 Values are wide-character string literal, as indicated by L before the literal.
 
@@ -40,8 +38,6 @@ Flags that modify function's behavior. No flags are defined for this function.
 The function returns a status code to indicate success or failure.
 
 Common return codes include:
-
-****
 
 | Return code | Description |
 | --- | --- |

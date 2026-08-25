@@ -799,7 +799,7 @@ For Amazon Athena to index your Amazon S3 data, and for you to query your data u
 ------
 
 **References**
-+ For more information about AWS Glue, see [Concepts](https://docs.aws.amazon.com//glue/latest/dg/components-key-concepts.html) in the *AWS Glue Developer Guide* .
++ For more information about AWS Glue, see [Concepts](https://docs.aws.amazon.com/glue/latest/dg/components-key-concepts.html) in the *AWS Glue Developer Guide* .
 + For more information about AWS Glue Data Catalog see [Components](https://docs.aws.amazon.com/glue/latest/dg/components-overview.html) in the *AWS Glue Developer Guide* .
 
 ## Using data encryption, parquet files, and CDC on your Amazon S3 target

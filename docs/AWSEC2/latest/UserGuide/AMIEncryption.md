@@ -36,7 +36,7 @@ The default behaviors can be overridden by supplying encryption parameters. The 
 **Instance launch behaviors with `Encrypted` set, but no `KmsKeyId` specified**
 + An unencrypted snapshot is restored to an EBS volume that is encrypted by your AWS account's default KMS key.
 + An encrypted snapshot that you own is restored to an EBS volume encrypted by the same KMS key. (In other words, the `Encrypted` parameter has no effect.)
-+ An encrypted snapshot that you do not own (i.e., the AMI is shared with you) is restored to a volume that is encrypted by your AWS account's default KMS key. (In other words, the `Encrypted` parameter has no effect.)
++ An encrypted snapshot that you do not own (that is, the AMI is shared with you) is restored to a volume that is encrypted by your AWS account's default KMS key. (In other words, the `Encrypted` parameter has no effect.)
 
 Setting both the `Encrypted` and `KmsKeyId` parameters allows you to specify a non-default KMS key for an encryption operation. The following behaviors result:
 
@@ -94,7 +94,7 @@ All of these default behaviors can be overridden by supplying encryption paramet
 **Copy-image behaviors with `Encrypted` set, but no `KmsKeyId` specified**
 + An unencrypted snapshot is copied to a snapshot encrypted by the AWS account's default KMS key.
 + An encrypted snapshot is copied to a snapshot encrypted by the same KMS key. (In other words, the `Encrypted` parameter has no effect.)
-+ An encrypted snapshot that you do not own (i.e., the AMI is shared with you) is copied to a volume that is encrypted by your AWS account's default KMS key. (In other words, the `Encrypted` parameter has no effect.)
++ An encrypted snapshot that you do not own (that is, the AMI is shared with you) is copied to a volume that is encrypted by your AWS account's default KMS key. (In other words, the `Encrypted` parameter has no effect.)
 
 Setting both the `Encrypted` and `KmsKeyId` parameters allows you to specify a customer managed KMS key for an encryption operation. The following behaviors result:
 

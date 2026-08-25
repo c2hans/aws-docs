@@ -13,8 +13,6 @@ The mount folder becomes a mount share. It's mounted to `/data/mnt/{{folder}}`.
 
 Make sure you perform the configuration on the correct nodes.
 
-****
-
 | Node | Work on this node? |
 | --- | --- |
 | Primary Conductor Live node | Yes |

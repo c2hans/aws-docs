@@ -12,8 +12,6 @@ AWS AppConfig Agent (version 2.0.136060 or later) supports deploying feature fla
 
 An AWS AppConfig deployment strategy defines the following important aspects of a configuration deployment.
 
-****
-
 <table>
 <thead>
   <tr><th>Setting</th><th>Description</th></tr>

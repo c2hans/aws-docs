@@ -286,6 +286,8 @@ You can assign virtual machines currently discovered by AWS Backup to an existin
 1. Type in a **Resource assignment name**.
 
 1. Choose a resource assignment **IAM role** to create backups and manage recovery points. If you do not have a specific IAM role to use, we recommend the **Default role** which has the correct permissions.
+**Note**
+If role manager is enabled in your account, AWS Backup selects the default service role for you, and a **Customize** option is available. For more information, see [IAM role creation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html) in the *IAM User Guide*.
 
 1. In the **Backup plan** section, choose an existing **Backup plan** from the dropdown list. Alternatively, choose **Create backup plan** to create a new backup plan.
 
@@ -309,6 +311,8 @@ Also, you do not need to select any checkboxes to use the **Create group assignm
 1. Type in a **Resource assignment name**.
 
 1. Choose a resource assignment **IAM role** to create backups and manage recovery points. If you do not have a specific IAM role to use, we recommend the **Default role** which has the correct permissions.
+**Note**
+If role manager is enabled in your account, AWS Backup selects the default service role for you, and a **Customize** option is available. For more information, see [IAM role creation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html) in the *IAM User Guide*.
 
 1. In the **Resource group** section, select the **Group type** dropdown menu. Your options are **Folder** or **Hypervisor**.
 

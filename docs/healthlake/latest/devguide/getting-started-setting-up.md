@@ -20,7 +20,7 @@ In this chapter, you use the AWS Management Console to set up the required permi
 ## Sign up for an AWS account
 <a name="sign-up-for-aws"></a>
 
-To get started with AWS, you need an AWS account. For information about creating an AWS account, see [Getting started with an AWS account](https://docs.aws.amazon.com//accounts/latest/reference/getting-started.html) in the *AWS Account Management Reference Guide*.
+To get started with AWS, you need an AWS account. For information about creating an AWS account, see [Getting started with an AWS account](https://docs.aws.amazon.com/accounts/latest/reference/getting-started.html) in the *AWS Account Management Reference Guide*.
 
 ## Configure an IAM user or role to use HealthLake (IAM Administrator)
 <a name="setting-up-configure-iam"></a>
@@ -39,7 +39,7 @@ An IAM user or role that is a data lake administrator *cannot* create new data l
 
 1. Add the **AmazonHealthlakeFullAccess** IAM AWS managed policy to a user or role in your organization.
 
-   If you're unfamiliar with creating an IAM user, see [Creating an IAM User](https://docs.aws.amazon.com//IAM/latest/UserGuide/Using_SettingUpUser.html#Using_CreateUser_console) and [Overview of AWS IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/PoliciesOverview.html) in the *IAM User Guide*.
+   If you're unfamiliar with creating an IAM user, see [Creating an IAM User](https://docs.aws.amazon.com/IAM/latest/UserGuide/Using_SettingUpUser.html#Using_CreateUser_console) and [Overview of AWS IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/PoliciesOverview.html) in the *IAM User Guide*.
 
 1. Grant the IAM user or role access to AWS Lake Formation.
    + Add the following IAM AWS managed policy to a user or role in your organization: **AWSLakeFormationDataAdmin**

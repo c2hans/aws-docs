@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsa
 
 AWS Application Migration Service provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="mgn-DescribeJobLogItems"></a>[DescribeJobLogItems](https://docs.aws.amazon.com/mgn/latest/APIReference/API_DescribeJobLogItems.html) | Describe job log items | Read |

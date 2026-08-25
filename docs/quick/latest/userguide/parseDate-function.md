@@ -25,7 +25,6 @@ The expression must be a string. It can be the name of a field that uses the str
  *format*
 (Optional) A string containing the format pattern that *date\_string* must match. For example, if you are using a field with data like **01/03/2016**, you specify the format 'MM/dd/yyyy'. If you don't specify a format, it defaults to `yyyy-MM-dd`. Rows whose data doesn't conform to *format* are skipped.
 Different date formats are supported based on the type of dataset used. Use the following table to see details of supported date formats.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/quick/latest/userguide/parseDate-function.html)
 
 ## Return type

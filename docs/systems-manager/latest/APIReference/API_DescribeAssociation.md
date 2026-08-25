@@ -35,7 +35,7 @@ Required: No
  ** [AssociationVersion](#API_DescribeAssociation_RequestSyntax) **   <a name="systemsmanager-DescribeAssociation-request-AssociationVersion"></a>
 Specify the association version to retrieve. To view the latest version, either specify `$LATEST` for this parameter, or omit this parameter. To view a list of all associations for a managed node, use [ListAssociations](API_ListAssociations.md). To get a list of versions for a specific association, use [ListAssociationVersions](API_ListAssociationVersions.md).
 Type: String
-Pattern: `([$]LATEST)|([1-9][0-9]*)`
+Pattern: `^(([$]LATEST)|([1-9][0-9]*))$`
 Required: No
 
  ** [InstanceId](#API_DescribeAssociation_RequestSyntax) **   <a name="systemsmanager-DescribeAssociation-request-InstanceId"></a>

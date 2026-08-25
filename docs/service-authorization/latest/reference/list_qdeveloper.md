@@ -24,8 +24,6 @@ References:
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
 
-****
-
 - **   [ExportArtifact](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/security_iam_manage-access-with-policies.html)  **
   - **Description:** Grants permission to export artifacts from Amazon Q Developer
   - **Resource types (\*required):** [codeTransformation](#list_qdeveloper-resource-codeTransformation)
@@ -55,8 +53,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 The following actions are defined by Amazon Q Developer but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 - **   [ListTagsForResource](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/security_iam_manage-access-with-policies.html)  **
   - **Description:** Grants permission to list all tags associated with an Amazon Q Developer resource
   - **Resource types (\*required):** [codeTransformation](#list_qdeveloper-resource-codeTransformation)
@@ -80,8 +76,6 @@ The following actions are defined by Amazon Q Developer but are not directly inv
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
 
-****
-
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
 |  [codeTransformation](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/codeTransformation.html)  | arn:${Partition}:qdeveloper:${Region}:${Account}:codeTransformation/${Identifier} | [aws:ResourceTag/${TagKey}](#list_qdeveloper-aws_ResourceTag___TagKey_) |
@@ -90,8 +84,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_qdeveloper-policy-keys"></a>
 
 Amazon Q Developer defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

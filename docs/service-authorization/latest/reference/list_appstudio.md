@@ -29,8 +29,6 @@ AWS App Studio has no API operations that can be used in the `Actions` element o
 
 The following actions are defined by AWS App Studio but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 | Actions | Description | Resource types (\*required) | Condition keys | Access level |
 | --- | --- | --- | --- | --- |
 |   [GetAccountStatus](https://docs.aws.amazon.com/appstudio/latest/userguide/)  | Grants permission to describe the account's current status |  |   | Read |
@@ -43,8 +41,6 @@ The following actions are defined by AWS App Studio but are not directly invocab
 <a name="list_appstudio-resources-for-iam-policies"></a>
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
-
-****
 
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |

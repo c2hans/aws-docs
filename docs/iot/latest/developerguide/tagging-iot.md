@@ -19,27 +19,27 @@ You can search for and filter resources based on the tags you add or apply. You 
 For ease of use, the Tag Editor in the AWS Management Console provides a central, unified way to create and manage your tags. For more information, see [Working with Tag Editor](https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/tag-editor.html) in [ Working with the AWS Management Console](https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/getting-started.html).
 
 You can also work with tags using the AWS CLI and the AWS IoT API. You can associate tags with thing groups, thing types, topic rules, jobs, security profiles, policies, billing groups, and the packages and versions associated with things when you create them by using the `Tags` field in the following commands:
-+ [CreateBillingGroup](https://docs.aws.amazon.com//iot/latest/apireference/API_CreateBillingGroup)
-+ [CreateDestination](https://docs.aws.amazon.com//iot-wireless/latest/apireference/API_CreateDestination.html)
-+ [CreateDeviceProfile](https://docs.aws.amazon.com//iot-wireless/latest/apireference/API_CreateDeviceProfile.html)
-+ [CreateDynamicThingGroup](https://docs.aws.amazon.com//iot/latest/apireference/API_CreateDynamicThingGroup)
-+ [CreateJob](https://docs.aws.amazon.com//iot/latest/apireference/API_CreateJob)
-+ [CreateOTAUpdate](https://docs.aws.amazon.com//iot/latest/apireference/API_CreateOTAUpdate)
-+ [CreatePolicy](https://docs.aws.amazon.com//iot/latest/apireference/API_CreatePolicy.html)
-+ [CreateScheduledAudit](https://docs.aws.amazon.com//iot/latest/apireference/API_CreateScheduledAudit)
-+ [CreateSecurityProfile](https://docs.aws.amazon.com//iot/latest/apireference/API_CreateSecurityProfile)
-+ [CreateServiceProfile](https://docs.aws.amazon.com//iot-wireless/latest/apireference/API_CreateServiceProfile.html)
-+ [CreateStream](https://docs.aws.amazon.com//iot/latest/apireference/API_CreateStream)
-+ [CreateThingGroup](https://docs.aws.amazon.com//iot/latest/apireference/API_CreateThingGroup)
-+ [CreateThingType](https://docs.aws.amazon.com//iot/latest/apireference/API_CreateThingType)
-+ [CreateTopicRule](https://docs.aws.amazon.com//iot/latest/apireference/API_CreateTopicRule)
-+ [CreateWirelessGateway](https://docs.aws.amazon.com//iot-wireless/latest/apireference/API_CreateWirelessGateway.html)
-+ [CreateWirelessDevice](https://docs.aws.amazon.com//iot-wireless/latest/apireference/API_CreateWirelessDevice.html)
++ [CreateBillingGroup](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateBillingGroup)
++ [CreateDestination](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CreateDestination.html)
++ [CreateDeviceProfile](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CreateDeviceProfile.html)
++ [CreateDynamicThingGroup](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateDynamicThingGroup)
++ [CreateJob](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateJob)
++ [CreateOTAUpdate](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateOTAUpdate)
++ [CreatePolicy](https://docs.aws.amazon.com/iot/latest/apireference/API_CreatePolicy.html)
++ [CreateScheduledAudit](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateScheduledAudit)
++ [CreateSecurityProfile](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateSecurityProfile)
++ [CreateServiceProfile](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CreateServiceProfile.html)
++ [CreateStream](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateStream)
++ [CreateThingGroup](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateThingGroup)
++ [CreateThingType](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateThingType)
++ [CreateTopicRule](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateTopicRule)
++ [CreateWirelessGateway](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CreateWirelessGateway.html)
++ [CreateWirelessDevice](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_CreateWirelessDevice.html)
 
 You can add, modify, or delete tags for existing resources that support tagging by using the following commands:
-+ [TagResource](https://docs.aws.amazon.com//iot/latest/apireference/API_TagResource)
-+ [ListTagsForResource](https://docs.aws.amazon.com//iot/latest/apireference/API_ListTagsForResource)
-+ [UntagResource](https://docs.aws.amazon.com//iot/latest/apireference/API_UntagResource)
++ [TagResource](https://docs.aws.amazon.com/iot/latest/apireference/API_TagResource)
++ [ListTagsForResource](https://docs.aws.amazon.com/iot/latest/apireference/API_ListTagsForResource)
++ [UntagResource](https://docs.aws.amazon.com/iot/latest/apireference/API_UntagResource)
 
 You can edit tag keys and values, and you can remove tags from a resource at any time. You can set the value of a tag to an empty string, but you can't set the value of a tag to null. If you add a tag that has the same key as an existing tag on that resource, the new value overwrites the old value. If you delete a resource, any tags associated with the resource are also deleted.
 

@@ -23,9 +23,9 @@ For an ongoing record of events in your AWS account, including events for AWS Io
 Most AWS IoT TwinMaker operations are logged by CloudTrail and are documented in the [AWS IoT TwinMaker API Reference](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/Welcome.html).
 
 The following data plane operations aren't logged by CloudTrail:
-+ [GetPropertyValue](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_GetPropertyValue.html)
-+ [GetPropertyValueHistory](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_GetPropertyValueHistory.html)
-+ [BatchPutPropertyValues](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_BatchPutPropertyValues.html)
++ [GetPropertyValue](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_GetPropertyValue.html)
++ [GetPropertyValueHistory](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_GetPropertyValueHistory.html)
++ [BatchPutPropertyValues](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_BatchPutPropertyValues.html)
 
 Every event or log entry contains information about who generated the request. The identity information helps you determine the following:
 + Whether the request was made with root or user credentials.

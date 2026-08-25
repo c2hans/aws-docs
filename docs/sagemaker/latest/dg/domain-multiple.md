@@ -17,7 +17,7 @@ The following provides information about creating multiple domains.
 + Each domain can have distinct domain settings.
 + The same user profile cannot be added to multiple domains in a single Region within the same account.
 
-For information about domain limits, see [Amazon SageMaker AI endpoints and quotas](https://docs.aws.amazon.com//general/latest/gr/sagemaker.html).
+For information about domain limits, see [Amazon SageMaker AI endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/sagemaker.html).
 
 The following topics provides information on how to use tags for your domain.
 

@@ -41,7 +41,7 @@ A *Notify configuration* is the primary resource representing your brand identit
 You can use Notify through the AWS End User Messaging SMS console, the AWS CLI, or the AWS SDKs. For information about accessing the console, see [Accessing AWS End User Messaging SMS](what-is-sms-mms.md#acessing-servicename).
 
 **Pricing**
-Notify pricing includes a per-message Notify service fee and standard SMS or voice transport rates based on destination country. For pricing details, see [AWS End User Messaging Pricing](https://aws.amazon.com//end-user-messaging/pricing/).
+Notify pricing includes a per-message Notify service fee and standard SMS or voice transport rates based on destination country. For pricing details, see [AWS End User Messaging Pricing](https://aws.amazon.com/end-user-messaging/pricing/).
 
 **Regional availability**
 Notify is available in the same AWS Regions as AWS End User Messaging SMS. For a list of supported Regions, see [Regional availability](what-is-sms-mms.md#sms-regions).

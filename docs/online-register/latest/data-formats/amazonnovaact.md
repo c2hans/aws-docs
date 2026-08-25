@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon Nova Act provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="nova-act-GetWorkflowDefinition"></a>[GetWorkflowDefinition](https://docs.aws.amazon.com/nova-act/latest/APIReference/API_GetWorkflowDefinition.html) | Retrieve details and configuration of a specific workflow definition | Read |

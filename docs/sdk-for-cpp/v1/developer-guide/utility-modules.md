@@ -12,8 +12,6 @@ The AWS SDK for C\+\+ includes many [utility modules](https://docs.aws.amazon.co
 
 An HTTP stack that provides connection pooling, is thread-safe, and can be reused as you need. For more information, see [AWS Client Configuration](client-config.md).
 
-****
-
 |  |  |
 | --- |--- |
 | Headers |  [`/aws/core/http/`](https://github.com/aws/aws-sdk-cpp/tree/master/aws-cpp-sdk-core/include/aws/core/http)  |
@@ -23,8 +21,6 @@ An HTTP stack that provides connection pooling, is thread-safe, and can be reuse
 <a name="string-utils"></a>
 
 Core string functions, such as `trim`, `lowercase`, and numeric conversions.
-
-****
 
 |  |  |
 | --- |--- |
@@ -36,8 +32,6 @@ Core string functions, such as `trim`, `lowercase`, and numeric conversions.
 
 Hashing functions such as `SHA256`, `MD5`, `Base64`, and `SHA256_HMAC`.
 
-****
-
 |  |  |
 | --- |--- |
 | Header |  [`/aws/core/utils/HashingUtils.h`](https://github.com/aws/aws-sdk-cpp/tree/master/aws-cpp-sdk-core/include/aws/core/utils/HashingUtils.h)  |
@@ -48,8 +42,6 @@ Hashing functions such as `SHA256`, `MD5`, `Base64`, and `SHA256_HMAC`.
 
 A fully functioning yet lightweight JSON parser (a thin wrapper around *`cJSON`*).
 
-****
-
 |  |  |
 | --- |--- |
 | Header |  [`/aws/core/utils/json/JsonSerializer.h`](https://github.com/aws/aws-sdk-cpp/tree/master/aws-cpp-sdk-core/include/aws/core/utils/json/JsonSerializer.h)  |
@@ -59,8 +51,6 @@ A fully functioning yet lightweight JSON parser (a thin wrapper around *`cJSON`*
 <a name="xml-parser"></a>
 
 A lightweight XML parser (a thin wrapper around *`tinyxml2`*). The [RAII pattern](http://en.cppreference.com/w/cpp/language/raii) has been added to the interface.
-
-****
 
 |  |  |
 | --- |--- |

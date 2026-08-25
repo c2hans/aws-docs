@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/table-dictionary-cu
 
 Capacity reservation columns contain data about capacity reservations that apply to the line item.
 
-****
-
 | Column name | Description | Data Type | Nullability | Properties |
 | --- | --- | --- | --- | --- |
 | capacity\_reservation\_capacity\_reservation\_arn | **Table configuration:** Added by: INCLUDE CAPACITY RESERVATION DATA<br />The capacity reservation ARN represents the unique identifier of the capacity reservation | String | Nullable | This field is not null when a charge is related to a capacity reservation<br />This field is not null when a charge represents the unused portion of a capacity reservation<br />This field is null when a charge is not related to a capacity reservation |

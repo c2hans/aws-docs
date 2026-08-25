@@ -11,8 +11,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-ug/monitoring.h
 
  You can track the following metric per profiling group.
 
-****
-
 |   Metric   |   Description   |
 | --- | --- |
 | Recommendations | The number of recommendations for a profiling group.<br />Units: Count<br />Valid CloudWatch statistic: Maximum<br />Valid CloudWatch period: Hourly |

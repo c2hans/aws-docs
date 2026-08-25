@@ -261,12 +261,12 @@ Lambda authorizes the `lambda:ListDurableExecutionsByFunction` action against th
 ## Supported IAM actions and function behaviors
 <a name="permissions-resources"></a>
 
- Actions define what can be permitted through IAM policies. For a list of actions supported in Lambda, see [Actions, resources, and condition keys for AWS Lambda](https://docs.aws.amazon.com//service-authorization/latest/reference/list_awslambda.html) in the Service Authorization Reference. In most cases, when an IAM action permits an Lambda API action, the name of the IAM action is the same as the name of the Lambda API action, with the following exceptions:
+ Actions define what can be permitted through IAM policies. For a list of actions supported in Lambda, see [Actions, resources, and condition keys for AWS Lambda](https://docs.aws.amazon.com/service-authorization/latest/reference/list_awslambda.html) in the Service Authorization Reference. In most cases, when an IAM action permits an Lambda API action, the name of the IAM action is the same as the name of the Lambda API action, with the following exceptions:
 
 | API action | IAM action |
 | --- | --- |
-| [Invoke](https://docs.aws.amazon.com//lambda/latest/api/API_Invoke.html) | lambda:InvokeFunction |
-| [GetLayerVersion](https://docs.aws.amazon.com//lambda/latest/api/API_GetLayerVersion.html)<br />[GetLayerVersionByArn](https://docs.aws.amazon.com//lambda/latest/api/API_GetLayerVersionByArn.html) | lambda:GetLayerVersion |
+| [Invoke](https://docs.aws.amazon.com/lambda/latest/api/API_Invoke.html) | lambda:InvokeFunction |
+| [GetLayerVersion](https://docs.aws.amazon.com/lambda/latest/api/API_GetLayerVersion.html)<br />[GetLayerVersionByArn](https://docs.aws.amazon.com/lambda/latest/api/API_GetLayerVersionByArn.html) | lambda:GetLayerVersion |
 
 In addition to the resources and conditions defined in the [Service Authorization Reference](https://docs.aws.amazon.com/service-authorization/latest/reference/list_awslambda.html), Lambda supports the following resources and conditions for certain actions. Many of these are related to referencing functions in the resource section of policies. Actions that operate on a function can be restricted to a specific function by function, version, or alias ARN, as described in the following table.
 

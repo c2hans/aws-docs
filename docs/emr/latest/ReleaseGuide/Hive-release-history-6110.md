@@ -8,8 +8,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/Hive-release-his
 ## Amazon EMR 6.11.0 - Hive changes
 <a name="Hive-release-history-changes-6110"></a>
 
-****
-
 | Type | Description |
 | --- | --- |
 | Improvement | Added support for multithreaded dropping of partitions to improve the performance of dropping of partitions |
@@ -55,8 +53,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/Hive-release-his
 
 ## New configurations
 <a name="Hive-release-history-changes-6110-new-configurations"></a>
-
-****
 
 | Name | Classification | Description |
 | --- | --- | --- |

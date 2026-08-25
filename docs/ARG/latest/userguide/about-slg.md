@@ -18,16 +18,16 @@ This topic describes the available configuration settings for supported AWS serv
 <a name="about-slg-how-to-access"></a>
 
 Services that support service-linked groups typically set the configuration for you when you use the tools provided by that service, such as that service's management console or its AWS CLI and AWS SDK operations. Some services fully manage their service-linked groups and you can't modify them in any way except as allowed by the console or commands provided by the owning AWS service. However, in some cases, you can interact with the service configuration by using the following API operations in the AWS SDKs or their AWS CLI equivalents:
-+ You can attach your own configuration to a group when you create the group by using the [CreateGroup](https://docs.aws.amazon.com//ARG/latest/APIReference/API_CreateGroup.html) operation.
-+ You can modify the current configuration attached to a group by using the [PutGroupConfiguration](https://docs.aws.amazon.com//ARG/latest/APIReference/API_PutGroupConfiguration.html) operation.
-+ You can view the current configuration of a resource group by calling the [GetGroupConfiguration](https://docs.aws.amazon.com//ARG/latest/APIReference/API_GetGroupConfiguration.html) operation.
++ You can attach your own configuration to a group when you create the group by using the [CreateGroup](https://docs.aws.amazon.com/ARG/latest/APIReference/API_CreateGroup.html) operation.
++ You can modify the current configuration attached to a group by using the [PutGroupConfiguration](https://docs.aws.amazon.com/ARG/latest/APIReference/API_PutGroupConfiguration.html) operation.
++ You can view the current configuration of a resource group by calling the [GetGroupConfiguration](https://docs.aws.amazon.com/ARG/latest/APIReference/API_GetGroupConfiguration.html) operation.
 
 ## JSON syntax of a service configuration
 <a name="about-slg-config-syntax"></a>
 
 A resource group can contain a *configuration* that defines service-specific settings that apply to the resources that are members of that group.
 
-A configuration is expressed as a [JSON](https://www.json.org/) object. At the top-most level, a configuration is an array of [group configuration items](https://docs.aws.amazon.com//ARG/latest/APIReference/API_GroupConfigurationItem.html). Each group configuration item contains two elements: a `Type` for the configuration and a set of `Parameters` defined by that type. Each parameter contains a `Name` and an array of one or more `Values`. The following example with {{placeholders}} shows the basic syntax for a configuration for a single sample resource type. This example shows a type with two parameters, and each parameter with two values. The actual valid types, parameters, and values are discussed in the next section.
+A configuration is expressed as a [JSON](https://www.json.org/) object. At the top-most level, a configuration is an array of [group configuration items](https://docs.aws.amazon.com/ARG/latest/APIReference/API_GroupConfigurationItem.html). Each group configuration item contains two elements: a `Type` for the configuration and a set of `Parameters` defined by that type. Each parameter contains a `Name` and an array of one or more `Values`. The following example with {{placeholders}} shows the basic syntax for a configuration for a single sample resource type. This example shows a type with two parameters, and each parameter with two values. The actual valid types, parameters, and values are discussed in the next section.
 
 ```
 [

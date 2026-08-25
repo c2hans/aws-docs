@@ -131,8 +131,6 @@ The following quotas apply to SMS messages sent using 10DLC phone numbers. 10DLC
 
 The following quotas apply to protect configurations.
 
-****
-
 | Resource | Default quota | Eligible for increase |
 | --- | --- | --- |
 | Number of protect configurations | 25 | No |

@@ -127,7 +127,7 @@ You can configure logically air-gapped vault primary backup through the AWS Back
 
 **To configure logically air-gapped vault primary backup for a backup plan**
 
-1. Open the AWS Backup console at [https://console.aws.amazon.com/backup](https://console.aws.amazon.com//backup).
+1. Open the AWS Backup console at [https://console.aws.amazon.com/backup](https://console.aws.amazon.com/backup).
 
 1. In the navigation pane, choose **Backup plans**, and then choose **Create backup plan** or select an existing backup plan to edit.
 
@@ -186,7 +186,7 @@ aws backup create-backup-plan --backup-plan '{
 
 **To configure logically air-gapped vault primary backup for an on-demand backup**
 
-1. Open the AWS Backup console at [https://console.aws.amazon.com/backup](https://console.aws.amazon.com//backup).
+1. Open the AWS Backup console at [https://console.aws.amazon.com/backup](https://console.aws.amazon.com/backup).
 
 1. In the navigation pane, choose **Protected resources**.
 

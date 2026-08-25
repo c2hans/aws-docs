@@ -29,7 +29,7 @@ The following are prerequisites for using Runtime Monitoring on EC2 container in
 + You must use version `20230929` or later of the Amazon ECS-AMI.
 + You must run Amazon ECS agent to version `1.77` or later on the container instances.
 + You must use kernel version `5.10` or later.
-+ For information about the supported Linux operating systems and architectures, see [Which operating models and workloads does GuardDuty Runtime Monitoring support](https://aws.amazon.com//guardduty/faqs/?nc1=h_ls#product-faqs#guardduty-faqs#guardduty-ecs-runtime-monitoring).
++ For information about the supported Linux operating systems and architectures, see [Which operating models and workloads does GuardDuty Runtime Monitoring support](https://aws.amazon.com/guardduty/faqs/?nc1=h_ls#product-faqs#guardduty-faqs#guardduty-ecs-runtime-monitoring).
 + You can use Systems Manager to manage your container instances. For more information, see [Setting up Systems Manager for EC2 instances](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-setting-up-ec2.html) in the *AWS Systems Manager Session Manager User Guide*.
 
 ## Procedure

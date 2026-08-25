@@ -62,7 +62,7 @@ The **Jobs progress** table in the AWS IoT SiteWise console, displays the list o
 <a name="review-job-progress-cli"></a>
 
 After starting a bulk operation, you can check or update its status using the following API actions:
-+ To retrieve information on a specific job, use the [ GetMetadataTransferJob](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_GetMetadataTransferJob.html) API action.
++ To retrieve information on a specific job, use the [ GetMetadataTransferJob](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_GetMetadataTransferJob.html) API action.
 
 **Retrieve information with the `GetMetadataTransferJob` API:**
 
@@ -84,7 +84,7 @@ After starting a bulk operation, you can check or update its status using the fo
      These parameters indicate the job progress status. If the status is `RUNNING`, they help track the number of resources still to be processed.
 
      If you encounter schema validation errors, or if **failedCount** is greater than or equal to 1, the job progress state turns to `ERROR`. A full error report for the job is placed in your Amazon S3 bucket. See [Inspect errors for AWS IoT SiteWise](inspect-errors.md) for more details.
-+ To list current jobs, use the [ListMetadataTransferJobs](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_ListMetadataTransferJobs.html) API action.
++ To list current jobs, use the [ListMetadataTransferJobs](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_ListMetadataTransferJobs.html) API action.
 
   Use a JSON file to filter the returned jobs based on their current state. See the following procedure:
 
@@ -100,7 +100,7 @@ After starting a bulk operation, you can check or update its status using the fo
      }
      ```
 
-     For a list of valid `state` values, see [ListMetadataTransferJobsFilter](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_ListMetadataTransferJobsFilter.html) in the *AWS IoT TwinMaker API Reference Guide*.
+     For a list of valid `state` values, see [ListMetadataTransferJobsFilter](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_ListMetadataTransferJobsFilter.html) in the *AWS IoT TwinMaker API Reference Guide*.
 
   1.  Use the JSON file as an argument in the following AWS CLI example command:
 
@@ -108,7 +108,7 @@ After starting a bulk operation, you can check or update its status using the fo
      aws iottwinmaker list-metadata-transfer-job --region {{your_region}} \
              --cli-input-json file://ListMetadataTransferJobsExample.json
      ```
-+ To cancel a job, use the [CancelMetadataTransferJob](https://docs.aws.amazon.com//iot-twinmaker/latest/apireference/API_CancelMetadataTransferJob.html) API action. This API cancels the specific metadata transfer job, without affecting any resources already exported or imported:
++ To cancel a job, use the [CancelMetadataTransferJob](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_CancelMetadataTransferJob.html) API action. This API cancels the specific metadata transfer job, without affecting any resources already exported or imported:
 
   ```
   aws iottwinmaker cancel-metadata-transfer-job \

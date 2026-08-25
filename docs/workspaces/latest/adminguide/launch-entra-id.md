@@ -281,7 +281,7 @@ A corresponding IAM Identity Center application is automatically created once a 
 
 1. Choose **Save changes**.
 
-After you make this change, users in the Identity Center instance will lose access their assign WorkSpaces unless they are assigned to the application. To assign your users to the application, use the AWS CLI command `create-application-assignment` to assign users or groups to an application. For more information, see the [AWS CLI Command Reference](https://docs.aws.amazon.com//cli/latest/reference/sso-admin/create-application-assignment.html).
+After you make this change, users in the Identity Center instance will lose access their assign WorkSpaces unless they are assigned to the application. To assign your users to the application, use the AWS CLI command `create-application-assignment` to assign users or groups to an application. For more information, see the [AWS CLI Command Reference](https://docs.aws.amazon.com/cli/latest/reference/sso-admin/create-application-assignment.html).
 
 ## Create a cross-Region IAM Identity Center integration (optional)
 <a name="create-cross-region-iam-identity-integration"></a>
@@ -289,7 +289,7 @@ After you make this change, users in the Identity Center instance will lose acce
 We recommend that your WorkSpaces and the associated IAM Identity Center instance are in the same AWS Region. However, if you already have an IAM Identity Center instance configured in a different Region from your WorkSpaces Region, you can create a cross-Region integration. When you create a cross-Region WorkSpaces and IAM Identity Center integration, you enable WorkSpaces to make cross-Region calls to access and store information from your IAM Identity Center instance, such as user and group attributes.
 
 **Important**
-Amazon WorkSpaces supports cross-Region IAM Identity Center and WorkSpaces integrations only for organization-level instances. WorkSpaces doesn't support cross-Region IAM Identity Center integrations for account-level instances. For more information about IAM Identity Center instance types and their use cases, see, [Understanding types of IAM Identity Center instances](https://docs.aws.amazon.com//amazonq/latest/qbusiness-ug/setting-up.html#idc-instance-types).
+Amazon WorkSpaces supports cross-Region IAM Identity Center and WorkSpaces integrations only for organization-level instances. WorkSpaces doesn't support cross-Region IAM Identity Center integrations for account-level instances. For more information about IAM Identity Center instance types and their use cases, see, [Understanding types of IAM Identity Center instances](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/setting-up.html#idc-instance-types).
 
 If you create a cross-Region integration between a WorkSpaces directory and an IAM Identity Center instance, you may experience higher latency when deploying WorkSpaces and during login because of cross-Region calls. The increase in latency is proportional to the distance between your WorkSpaces Region and the IAM Identity Center Region. We recommend that you perform latency tests for your specific use case.
 

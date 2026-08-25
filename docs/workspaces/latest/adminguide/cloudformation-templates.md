@@ -121,7 +121,7 @@ Following is an example of the Internet Monitoring dashboard.
 
 **To create a custom dashboard in CloudWatch using CloudFormation**
 **Note**
-Before creating a custom dashboard, make sure you create an Internet Monitor with CloudWatch Internet Monitor. For more information, see [ Creating a monitor in Amazon CloudWatch Internet Monitor using the console](https://docs.aws.amazon.com//AmazonCloudWatch/latest/monitoring/CloudWatch-IM-get-started.create.html)
+Before creating a custom dashboard, make sure you create an Internet Monitor with CloudWatch Internet Monitor. For more information, see [ Creating a monitor in Amazon CloudWatch Internet Monitor using the console](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-IM-get-started.create.html)
 
 1. [Open the Create Stack page in the CloudFormation console](https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=YourStackName&templateURL=https://cfn-templates-global-prod-iad.s3.us-east-1.amazonaws.com/cfn-templates/workspaces_cloudwatch_internet_monitor_dashboard.yaml). This link opens the page with the Amazon S3 bucket location of the Internet Monitoring custom CloudWatch dashboard template pre-populated.
 

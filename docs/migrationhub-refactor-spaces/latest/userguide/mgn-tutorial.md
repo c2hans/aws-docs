@@ -122,7 +122,6 @@ Now you must enable post-launch actions. If you've already enabled post-launch a
 ![Actions section with Edit button highlighted among other options.](http://docs.aws.amazon.com/migrationhub-refactor-spaces/latest/userguide/images/edit-post-launch-actions.png)
 
 1. Specify the following values in the form:
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/migrationhub-refactor-spaces/latest/userguide/mgn-tutorial.html)
 
 1. Choose **Save action**.

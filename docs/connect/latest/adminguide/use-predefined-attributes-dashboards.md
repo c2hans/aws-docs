@@ -9,7 +9,7 @@ Predefined attributes are available to use on dashboards for grouping and filter
 
 Historical contact metrics can be found in the [Metric definitions](metrics-definitions.md) page by looking for metrics that have a category of **Contact record-driven metric** and are available on the dashboard page.
 
-Real time contact metrics include: [Contacts in queue](https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html#contacts-in-queue), [Contacts scheduled](https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html#scheduled), [Oldest contact age](https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html#oldest-real-time), etc.
+Real time contact metrics include: [Contacts in queue](https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html#contacts-in-queue), [Contacts scheduled](https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html#scheduled), [Oldest contact age](https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html#oldest-real-time).
 
 **Topics**
 + [Group by predefined attributes](#group-by-predefined-attributes)

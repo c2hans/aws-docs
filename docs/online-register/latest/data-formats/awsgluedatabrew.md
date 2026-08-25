@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsg
 
 AWS Glue DataBrew provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="databrew-DescribeDataset"></a>[DescribeDataset](https://docs.aws.amazon.com/databrew/latest/dg/API_DescribeDataset.html) | View details about a dataset | Read |

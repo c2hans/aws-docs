@@ -14,8 +14,6 @@ Remove the specified DNS resource record name, either an A or CNAME, or pointer 
 ## Change Type Details
 <a name="ct-1icrtx8ydvdwe-MDDr-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1icrtx8ydvdwe |

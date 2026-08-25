@@ -25,6 +25,9 @@ STL\_EXPLAIN only contains queries run on main provisioned clusters. It doesn't 
 | parentid  | integer  | Plan node identifier for a parent node. A parent node has some number of child nodes. For example, a merge join is the parent of the scans on the joined tables.  |
 | plannode  | character(400)  | The node text from the EXPLAIN output. Plan nodes that refer to execution on compute nodes are prefixed with XN in the EXPLAIN output.  |
 | info  | character(400)  | Qualifier and filter information for the plan node. For example, join conditions and WHERE clause restrictions are included in this column.  |
+| user\_query\_id  | bigint  | The query identifier of the user-submitted query, as recorded in the query\_id column of [SYS\_QUERY\_EXPLAIN](SYS_QUERY_EXPLAIN.md).  |
+| child\_query\_sequence  | integer  | The sequence number of the rewritten child query under the user query, starting with 1.  |
+| query\_uuid | character(36) | A globally unique identifier (UUID) of the query. |
 
 ## Sample queries
 <a name="r_STL_EXPLAIN-sample-queries"></a>

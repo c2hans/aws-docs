@@ -12,6 +12,7 @@ Amazon Corretto is a no-cost, multiplatform, production-ready distribution of th
 - [/corretto/latest/corretto-21-ug/](/corretto/latest/corretto-21-ug/)
 - [/corretto/latest/corretto-25-ug/](/corretto/latest/corretto-25-ug/)
 - [/corretto/latest/corretto-26-ug/](/corretto/latest/corretto-26-ug/)
+- [/corretto/latest/corretto-27-ug/](/corretto/latest/corretto-27-ug/)
 
 ---
 

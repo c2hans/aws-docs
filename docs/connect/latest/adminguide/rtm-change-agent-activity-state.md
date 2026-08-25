@@ -11,13 +11,13 @@ Agents manually set their status in the Contact Control Panel (CCP). However, on
 + The agent's availability status, such as **Offline**, **Available**, or **Break**.
 + The contact state, such as **Incoming** or **On contact**.
 
-When you choose the **Agent Activity** column, you can select and change an agent's *availability status*, such as **Offline**, **Available**, or **Break**. The following image shows an example where the **Available** and **Offline** statuses, along with some custom statuses, are in the dropdown list of the **Activity** column. Once the new status is selected, it will be reflected within the **Activity** column itself after the update has finished.
+When you choose the **Agent Activity** column, you can select and change an agent's *availability status*, such as **Offline**, **Available**, or **Break**. The following image shows an example where the **Available** and **Offline** statuses, along with some custom statuses, are in the dropdown list of the **Activity** column. After the new status is selected, it will be reflected within the **Activity** column itself after the update has finished.
 
 ![The dropdown list of availability statuses for the Agent activity column.](http://docs.aws.amazon.com/connect/latest/adminguide/images/rtm-change-agent-activity-state.png)
 
 This change also appears in the agent event stream.
 
-When a *contact state* is displayed in the **Agent Activity** column, such as **Incoming** or **On contact**, you can change it to any other availability status and this will be displayed in the **Next activity** column once the update has finished.
+When a *contact state* is displayed in the **Agent Activity** column, such as **Incoming** or **On contact**, you can change it to any other availability status and this will be displayed in the **Next activity** column after the update has finished.
 
 ![The dropdown list of availability statuses when an agent is on contact.](http://docs.aws.amazon.com/connect/latest/adminguide/images/rtm-change-agent-activity-state-incoming.png)
 

@@ -54,8 +54,6 @@ For more information, see [Hello Amazon Bedrock Agents](bedrock-agent_example_be
 
 To list information about your agents, send a [ListAgents](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_ListAgents.html) request with an [Agents for Amazon Bedrock build-time endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#bra-bt). [See code examples](https://docs.aws.amazon.com/bedrock/latest/userguide/bedrock-agent_example_bedrock-agent_ListAgents_section.html). You can specify the following optional parameters:
 
-****
-
 | Field | Short description |
 | --- | --- |
 | maxResults | The maximum number of results to return in a response. |

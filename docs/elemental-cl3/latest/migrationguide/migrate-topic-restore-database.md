@@ -124,8 +124,6 @@ You must open port 443 on every node to allow access to the web interfaces for t
 
 As a result of the restore command, the following data from the backup is restored on the nodes:
 
-****
-
 | Node | Worker nodes | Secondary Conductor | Primary Conductor |
 | --- | --- | --- | --- |
 | Licenses | Yes | Yes | Yes |

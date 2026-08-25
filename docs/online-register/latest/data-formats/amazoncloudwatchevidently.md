@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon CloudWatch Evidently provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="evidently-GetExperiment"></a>[GetExperiment](https://docs.aws.amazon.com/cloudwatchevidently/latest/APIReference/API_GetExperiment.html) | Get experiment details | Read |

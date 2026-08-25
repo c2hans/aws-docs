@@ -125,7 +125,7 @@ If you are using a custom CCP with the Connect Customer Streams API, you can set
   ```
 + **Using the ConnectSDK** – Reference the [setVoiceEnhancementMode()](https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-voice-requests-setvoiceenhancementmode.html) and [getVoiceEnhancementMode()](https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-voice-requests-getvoiceenhancementmode.html) methods in the Voice API.
 
-In all cases, the accepted values are `VOICE_ISOLATION`, `NOISE_SUPPRESSION`, or `NONE`. Once the mode is set, Connect Customer Streams will apply the selected Audio Enhancement.
+In all cases, the accepted values are `VOICE_ISOLATION`, `NOISE_SUPPRESSION`, or `NONE`. After the mode is set, Connect Customer Streams will apply the selected Audio Enhancement.
 
 ## Troubleshooting
 <a name="audio-enhancement-troubleshooting"></a>

@@ -38,8 +38,6 @@ If your application is running on an Amazon EC2 instance, such as in a productio
 
 With two different storage mechanisms for credentials, it's important to understand how to configure the AWS SDK for .NET to use them. The [AWSConfigs.AWSProfilesLocation](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/Amazon/TAWSConfigs.html) property controls how the AWS SDK for .NET finds credential profiles.
 
-****
-
 | AWSProfilesLocation | Profile resolution behavior |
 | --- | --- |
 | null (not set) or empty | Search the SDK Store if the platform supports it, and then search the shared AWS credentials file in the [default location](creds-file.md). If the profile isn't in either of those locations, search `~/.aws/config` (Linux or macOS) or `%USERPROFILE%\.aws\config` (Windows). |

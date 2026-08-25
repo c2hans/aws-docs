@@ -57,7 +57,7 @@ FIPS-enabled endpoints are not supported for FTP servers.
    1. For logging, specify an existing log group or create a new one (the default option).
 ![Logging pane for Configure additional details in the Create server wizard. Choose an existing log group is selected.](http://docs.aws.amazon.com/transfer/latest/userguide/images/logging-server-choose-existing-group.png)
 
-      If you choose **Create log group**, the CloudWatch console ([https://console.aws.amazon.com/cloudwatch/](https://console.aws.amazon.com/cloudwatch/)) opens to the **Create log group** page. For details, see [ Create a log group in CloudWatch Logs](https://docs.aws.amazon.com//AmazonCloudWatch/latest/logs/Working-with-log-groups-and-streams.html#Create-Log-Group).
+      If you choose **Create log group**, the CloudWatch console ([https://console.aws.amazon.com/cloudwatch/](https://console.aws.amazon.com/cloudwatch/)) opens to the **Create log group** page. For details, see [ Create a log group in CloudWatch Logs](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Working-with-log-groups-and-streams.html#Create-Log-Group).
 
    1.  (Optional) For **Managed workflows**, choose workflow IDs (and a corresponding role) that Transfer Family should assume when executing the workflow. You can choose one workflow to execute upon a complete upload, and another to execute upon a partial upload. To learn more about processing your files by using managed workflows, see [AWS Transfer Family managed workflows](transfer-workflows.md).
 ![The Managed workflows console section.](http://docs.aws.amazon.com/transfer/latest/userguide/images/workflows-addtoserver.png)

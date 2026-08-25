@@ -14,7 +14,7 @@ The following table highlights the differences between basic monitoring and deta
 | Monitoring type | Description | Charges |
 | --- | --- | --- |
 | Basic monitoring | Status check metrics are available in 1-minute periods. All other metrics are available in 5-minute periods. | No charge. |
-| Detailed monitoring | You can get metrics in 1-minute periods, provided you enable detailed monitoring for the instance.<br />Once you've enabled detailed monitoring, you can aggregate the data across groups of similar instances. | You are charged per metric that Amazon EC2 sends to CloudWatch. You are not charged for data storage. For more information, see Paid tier on the [Amazon CloudWatch pricing page](https://aws.amazon.com/cloudwatch/pricing/#Paid_tier). |
+| Detailed monitoring | You can get metrics in 1-minute periods, provided you enable detailed monitoring for the instance.<br />After you've enabled detailed monitoring, you can aggregate the data across groups of similar instances. | You are charged per metric that Amazon EC2 sends to CloudWatch. You are not charged for data storage. For more information, see Paid tier on the [Amazon CloudWatch pricing page](https://aws.amazon.com/cloudwatch/pricing/#Paid_tier). |
 
 **Topics**
 + [Required permissions](#iam-detailed-monitoring)

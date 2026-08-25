@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon WorkMail provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="workmail-DescribeEmailMonitoringConfiguration"></a>[DescribeEmailMonitoringConfiguration](https://docs.aws.amazon.com/workmail/latest/APIReference/API_DescribeEmailMonitoringConfiguration.html) | Retrieve the email monitoring configuration for an organization | Read |

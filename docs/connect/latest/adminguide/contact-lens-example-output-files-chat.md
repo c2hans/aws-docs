@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/contact-lens-e
 
 This section shows an example schema for a chat conversation that has been analyzed by conversational analytics. The example shows inferred sentiment, matched categories, contact summary, and response time.
 
-The original, analyzed file contains the full chat transcript. The same content that is present in the chat **Transcript** field on the **Contact details** page is present in `Transcript` field in the original conversational analytics analysis file. In addition, the analyzed file may contain more fields, such as a `Redaction` section to indicate that there is redacted data in the redacted analysis file.
+The original, analyzed file contains the full chat transcript. The same content that is present in the chat **Transcript** field on the **Contact details** page is present in `Transcript` field in the original conversational analytics analysis file. In addition, the analyzed file might contain more fields, such as a `Redaction` section to indicate that there is redacted data in the redacted analysis file.
 
 **Note**
  Some `ConversationCharacteristics` include `DetailsByParticipantRole` maps, with participant roles as keys. However, not all roles from the `Participants` list (such as `CUSTOMER` or `AGENT`) are guaranteed to have corresponding keys in the `DetailsByParticipantRole` objects. The presence of a key for a participant depends on whether there was eligible data for conversational analytics analysis.

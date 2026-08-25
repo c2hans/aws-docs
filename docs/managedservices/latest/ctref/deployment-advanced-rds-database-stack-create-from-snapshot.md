@@ -14,8 +14,6 @@ Create an Amazon Relational Database Service (RDS) DB instance from an RDS snaps
 ## Change Type Details
 <a name="ct-20san5sgtwd9e-DARc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-20san5sgtwd9e |

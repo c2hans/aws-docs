@@ -67,8 +67,6 @@ Use the AWS CLI or the AWS API to delete the **AWSServiceRoleForProfile** prefix
 
 Connect Customer Customer Profiles supports using service-linked roles in all of the regions where the service is available. For more information, see [AWS regions and endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html).
 
-****
-
 | Region name | Region identity | Support in Connect Customer |
 | --- | --- | --- |
 | US East (N. Virginia) | us-east-1 | Yes |

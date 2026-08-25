@@ -342,8 +342,6 @@ Beginning with Redis OSS 3.2.4 there are two default parameter groups.
 
 For Redis OSS 3.2.4 the following additional parameters are supported.
 
-****
-
 |  Name  |  Details |  Description  |
 | --- | --- | --- |
 | list-max-ziplist-size | Default: -2<br />Type: integer<br />Modifiable: No<br /> | Lists are encoded in a special way to save space. The number of entries allowed per internal list node can be specified as a fixed maximum size or a maximum number of elements. For a fixed maximum size, use -5 through -1, meaning: +  -5: max size: 64 Kb - not recommended for normal workloads <br />+  -4: max size: 32 Kb - not recommended <br />+  -3: max size: 16 Kb - not recommended <br />+  -2: max size: 8 Kb - recommended <br />+  -1: max size: 4 Kb - recommended <br />+  Positive numbers mean store up to exactly that number of elements per list node.  |
@@ -359,8 +357,6 @@ For Redis OSS 3.2.4 the following additional parameters are supported.
 **Parameter group family:** redis3.2
 
 For Redis OSS 3.2.4 the following parameters were changed.
-
-****
 
 |  Name  |  Details |  Change  |
 | --- | --- | --- |
@@ -386,8 +382,6 @@ For Redis OSS 2.8.24 there are no additional parameters supported.
 **Parameter group family:** redis2.8
 
 For Redis OSS 2.8.23 the following additional parameter is supported.
-
-****
 
 |  Name  |  Details |  Description  |
 | --- | --- | --- |
@@ -452,8 +446,6 @@ For Redis OSS 2.8.19 there are no additional parameters supported.
 
 For Redis OSS 2.8.6 the following additional parameters are supported.
 
-****
-
 |  Name  |  Details  |  Description  |
 | --- | --- | --- |
 | min-slaves-max-lag  | Default: 10<br />Type: integer<br />Modifiable: Yes<br />Changes Take Effect: Immediately | The number of seconds within which the primary node must receive a ping request from a read replica. If this amount of time passes and the primary does not receive a ping, then the replica is no longer considered available. If the number of available replicas drops below min-slaves-to-write, then the primary will stop accepting writes at that point.<br />If either this parameter or min-slaves-to-write is 0, then the primary node will always accept writes requests, even if no replicas are available. |
@@ -469,8 +461,6 @@ For Redis OSS 2.8.6 the following additional parameters are supported.
 **Parameter group family:** redis2.6
 
 Redis OSS 2.6.13 was the first version of Redis OSS supported by ElastiCache. The following table shows the Redis OSS 2.6.13 parameters that ElastiCache supports.
-
-****
 
 - **`activerehashing`**
   - **Details:** Default: yes<br />Type: string (yes/no)<br />Modifiable: Yes<br />Changes take place: At Creation

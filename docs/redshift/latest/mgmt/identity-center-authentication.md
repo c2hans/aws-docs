@@ -25,6 +25,7 @@ If you want to connect to Redshift, you must use redshift:connect scope.
 + **Compatible drivers:** Use Amazon Redshift JDBC or ODBC drivers that support Identity Center authorized tokens:
   + JDBC drivers: See [Installing and configuring the Amazon Redshift JDBC driver version 2.x](https://docs.aws.amazon.com/redshift/latest/mgmt/jdbc20-install.html)
   + ODBC drivers: See [Installing and configuring the Amazon Redshift ODBC driver version 2.0](https://docs.aws.amazon.com/redshift/latest/mgmt/odbc20-install.html)
++ **Network configuration for enhanced VPC routing:** If enhanced VPC routing is turned on, your VPC must be able to reach the Identity Center services. Interface VPC endpoints are the recommended way to provide this connectivity. Set up this connectivity before users sign in. For more information about enhanced VPC routing requirements for Identity Center, see [Using AWS IAM Identity Center authentication with enhanced VPC routing](redshift-iam-access-control-idp-connect-evr.md).
 
 ## How Identity Center authentication works
 <a name="identity-center-auth-overview"></a>

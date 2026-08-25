@@ -11,5 +11,5 @@ OpenSearch Ingestion has the following limitations:
 + You can only configure a single data source within a pipeline definition.
 + You can't specify [self-managed OpenSearch clusters](https://opensearch.org/docs/latest/about/#clusters-and-nodes) as sinks.
 + You can't specify a [custom endpoint](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/customendpoint.html) as a sink. You can still write to a domain that has custom endpoints enabled, but you must specify its standard endpoint.
-+ You can't specify resources within [opt-in Regions](https://docs.aws.amazon.com//controltower/latest/userguide/opt-in-region-considerations.html) as sources or sinks.
++ You can't specify resources within [opt-in Regions](https://docs.aws.amazon.com/controltower/latest/userguide/opt-in-region-considerations.html) as sources or sinks.
 + There are some constraints on the parameters that you can include in a pipeline configuration. For more information, see [Configuration requirements and constraints](pipeline-config-reference.md#ingestion-parameters).

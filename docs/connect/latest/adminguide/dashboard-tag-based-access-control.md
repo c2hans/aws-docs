@@ -51,12 +51,12 @@ Additionally, you will need one or more relevant permissions to view specific re
 + Agent queues do not support tag-based access controls.
 + The cases performance dashboard does not support tag-based access controls.
 + Scheduled reports are not supported.
-+ Changes to resource tags are eventually consistent. After a data update, a brief delay may occur before the system reflects the latest value.
++ Changes to resource tags are eventually consistent. After a data update, a brief delay might occur before the system reflects the latest value.
 + When you apply resource filters with tag-based access controls, you can view data only for resources in your security profile. For example, if you filter a widget by Queues Q1, Q2, and Q3, but your security profile grants access only to Q1 and Q2, the widget displays data for Q1 and Q2 only.
 + Dashboards and reports automatically apply tag-based access controls, displaying only data for resources that match the tags in your security profile.
 + When you filter metrics by resource tags you don't have access to, the dashboards and reports will display access restriction error.
 + When you filter metrics by tags and select **All accessible tags**, the system restricts data to permitted tags for the selected resource types.
-+ If you have tag-based access controls enabled in your security profile, and you want to share a report with another user with a different security profile, use the Tag filter to select the resource(s) and select **All accessible tags** before saving the report, see example on the image below. This ensures that the user opening the saved report with a different security profile will only view metrics on the same report based on the resource tags configured in their security profile.
++ If you have tag-based access controls enabled in your security profile, and you want to share a report with another user with a different security profile, use the Tag filter to select the resource(s) and select **All accessible tags** before saving the report, see example on the image below. This makes sure that the user opening the saved report with a different security profile will only view metrics on the same report based on the resource tags configured in their security profile.
 ![The Tag filter with All accessible tags option selected.](http://docs.aws.amazon.com/connect/latest/adminguide/images/dashboard-tbac-all-accessible-tags.png)
 + Dashboard widgets that do not have a default groupings are filtered by a default resource tag filter. The following table shows the resource type applied as a default filter for each widget:
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/dashboard-tag-based-access-control.html)

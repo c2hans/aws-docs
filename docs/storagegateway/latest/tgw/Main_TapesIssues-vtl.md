@@ -28,6 +28,9 @@ If your Tape Gateway or the hypervisor host encounters an unrecoverable failure,
 
 Note that the data written to a tape might not be completely uploaded until that tape has been successfully archived into VTS. The data on tapes recovered to another gateway in this manner may be incomplete or empty. We recommend performing an inventory on all recovered tapes to ensure they contain the expected content.
 
+**Recovery requires an offline gateway**
+The tape recovery message and the **Create recovery tapes** option appear on the gateway's **Details** tab only when the Tape Gateway is offline. This might occur, for example, when the underlying virtual machine is turned off or cannot connect to AWS. You cannot create recovery tapes for a gateway that is online. For instructions on turning off your gateway, see [Shutting down your gateway VM](https://docs.aws.amazon.com/storagegateway/latest/tgw/MaintenanceShutDown-common.html).
+
 **To recover a tape to another Tape Gateway**
 
 1. Identify an existing functioning Tape Gateway to serve as your recovery target gateway. If you don't have a Tape Gateway to recover your tapes to, create a new Tape Gateway. For information about how to create a gateway, see [Creating a Gateway](https://docs.aws.amazon.com/storagegateway/latest/tgw/create-gateway-vtl.html).

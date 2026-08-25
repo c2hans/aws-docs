@@ -149,7 +149,7 @@ The ENA device detects sub-optimal configuration settings in the driver that you
 
 1. Choose **OK**. This shows filtered event log results in the detail sections of the window.
 
-Events with ID `59000` notify you of sub-optimal configuration findings. Right-click an event and choose **Event Properties** to open a detailed view, or select **Preview Pane** from the **View** menu to see the same detail.
+Events with ID `59000` notify you of sub-optimal configuration findings. Open the context (right-click) menu for an event and choose **Event Properties** to open a detailed view, or select **Preview Pane** from the **View** menu to see the same detail.
 
 ![Example: System event ID 59000 shown in the Windows Event Viewer preview pane.](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/ena-sub-opt-event-general.png)
 

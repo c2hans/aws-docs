@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/neo-deployment-hosti
 # Deploy a Compiled Model Using Boto3
 <a name="neo-deployment-hosting-services-boto3"></a>
 
-You must satisfy the [ prerequisites](https://docs.aws.amazon.com//sagemaker/latest/dg/neo-deployment-hosting-services-prerequisites) section if the model was compiled using AWS SDK for Python (Boto3), AWS CLI, or the Amazon SageMaker AI console. Follow the steps below to create and deploy a SageMaker Neo-compiled model using [Amazon Web Services SDK for Python (Boto3)](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html).
+You must satisfy the [ prerequisites](https://docs.aws.amazon.com/sagemaker/latest/dg/neo-deployment-hosting-services-prerequisites) section if the model was compiled using AWS SDK for Python (Boto3), AWS CLI, or the Amazon SageMaker AI console. Follow the steps below to create and deploy a SageMaker Neo-compiled model using [Amazon Web Services SDK for Python (Boto3)](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html).
 
 **Topics**
 + [Deploy the Model](#neo-deployment-hosting-services-boto3-steps)
@@ -13,7 +13,7 @@ You must satisfy the [ prerequisites](https://docs.aws.amazon.com//sagemaker/lat
 ## Deploy the Model
 <a name="neo-deployment-hosting-services-boto3-steps"></a>
 
-After you have satisfied the [ prerequisites](https://docs.aws.amazon.com//sagemaker/latest/dg/neo-deployment-hosting-services-prerequisites), use the `create_model`, `create_enpoint_config`, and `create_endpoint` APIs.
+After you have satisfied the [ prerequisites](https://docs.aws.amazon.com/sagemaker/latest/dg/neo-deployment-hosting-services-prerequisites), use the `create_model`, `create_enpoint_config`, and `create_endpoint` APIs.
 
 The following example shows how to use these APIs to deploy a model compiled with Neo:
 

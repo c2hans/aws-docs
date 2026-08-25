@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon S3 Glacier provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="glacier-DescribeJob"></a>[DescribeJob](https://docs.aws.amazon.com/amazonglacier/latest/dev/api-describe-job-get.html) | Get information about a job previously initiated | Read |

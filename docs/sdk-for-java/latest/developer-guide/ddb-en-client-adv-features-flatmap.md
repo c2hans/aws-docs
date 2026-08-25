@@ -304,8 +304,6 @@ In contrast, if you annotate a data class with a composed class and don't use `@
 
 For example, compare the `Customer` class shown in the [flattening with composition example](#ddb-en-client-adv-features-flatmap-comp-anno) with and without flattening of the `record` attribute. You can visualize the difference with JSON as shown in the following table.
 
-****
-
 | With flattening | Without flattening |
 | --- | --- |
 | 3 attributes | 2 attributes |

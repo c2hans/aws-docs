@@ -18,7 +18,7 @@ You can delete or modify this role only if you disable trusted access between AW
 
 Although you can delete or modify this role if you remove the member account from the organization, we do not recommend it.
 
-Modifying the role is discouraged because it can lead to security issues such as the cross-service confused deputy. To learn more about protection against confused deputy, see [Cross-service deputy prevention](https://docs.aws.amazon.com//artifact/latest/ug/security-iam.html#confused-deputy) in the *AWS Artifact User Guide*.
+Modifying the role is discouraged because it can lead to security issues such as the cross-service confused deputy. To learn more about protection against confused deputy, see [Cross-service deputy prevention](https://docs.aws.amazon.com/artifact/latest/ug/security-iam.html#confused-deputy) in the *AWS Artifact User Guide*.
 + `AWSServiceRoleForArtifact`
 
 ## Service principals used by the service-linked roles

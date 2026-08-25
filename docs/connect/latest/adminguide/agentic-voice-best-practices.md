@@ -14,6 +14,7 @@ This guide covers:
 + Session attribute syntax for ASR controls.
 + Barge-in (interrupt) behavior and when to disable it.
 + End-of-turn tuning for Advanced ASR.
++ Language hints for multilingual speech recognition.
 + Handling long-running tool calls.
 + Text formatting best practices for voice output.
 + Speech control tags for fine-grained voice control.
@@ -64,6 +65,21 @@ Default: `true`
 **Keep barge-in enabled when:**
 + The caller might want to correct or short-cut the bot mid-prompt — the normal conversational case.
 
+For a self-service AI agent, leave barge-in on everywhere by default. Disable it only where a prompt must be heard in full — for example, a legal or compliance disclaimer. Set the attributes when you start the conversation. Keep the default on with a `*:*` entry, and turn barge-in off only for the intent that plays the disclaimer:
+
+```
+{
+  "sessionState": {
+    "sessionAttributes": {
+      "x-amz-lex:allow-interrupt:*:*": "true",
+      "x-amz-lex:allow-interrupt:Disclaimer:*": "false"
+    }
+  }
+}
+```
+
+The intent- and slot-specific entry takes precedence over the `*:*` default, so the caller can interrupt everywhere except while the `Disclaimer` intent is speaking. If you set the disclaimer attribute in a Lambda function instead, set it before the disclaimer prompt plays. Reset it to `true` afterward so the rest of the conversation stays interruptible.
+
 **Note**
 **A timeout-driven re-prompt is not real barge-in.** A common point of confusion: if a caller goes silent and the end-of-turn fallback fires, the bot might end the turn or re-prompt on its own. This can look like an interruption, but it is the end-of-turn detection firing, not the caller barging in. The fix is almost always tuning the end-of-turn settings — not the allow-interrupt flag.
 
@@ -79,7 +95,7 @@ Advanced ASR ends a turn when either condition is met first:
 | Setting | Session attribute | Default | Range |
 | --- | --- | --- | --- |
 | End-of-turn confidence threshold | x-amz-lex:audio:end-confidence-threshold | 0.7 | 0.5–0.9 |
-| End-of-turn silence timeout | x-amz-lex:audio:end-timeout-ms | 640 ms | 500–10,000 ms |
+| End-of-turn silence timeout | x-amz-lex:audio:end-timeout-ms | 5,000 ms | 500–10,000 ms |
 
 Higher values make the bot wait longer and end turns more conservatively (fewer premature cutoffs, slightly more latency). Lower values end turns sooner (lower latency, higher chance of cutting off a caller who pauses). The confidence threshold is the primary lever; the silence timeout only matters when confidence has not already ended the turn.
 
@@ -93,8 +109,8 @@ Higher values make the bot wait longer and end turns more conservatively (fewer 
 
 | Scenario | Recommended settings | Notes |
 | --- | --- | --- |
-| Natural conversation | Defaults (0.7 / 640 ms) | Tuned for responsive general-purpose turn taking. |
-| Sensitive or dictated input (OTP, account number) | threshold: 0.9, timeout: 2,000–4,000 ms | Tolerates pauses. Reset for the next slot after collection. |
+| Natural conversation | Defaults (0.7 / 5,000 ms) | Tuned for responsive general-purpose turn taking. |
+| Sensitive or dictated input (OTP, account number) | threshold: 0.9, timeout: 6,000–8,000 ms | Tolerates pauses. Reset for the next slot after collection. |
 | Short exchanges (yes/no, single word) | threshold: \~0.5, timeout: \~500 ms | Faster turns. Test for premature cutoffs first. |
 
 **Example**
@@ -106,7 +122,7 @@ Conservative end-of-turn detection for the `AccountNumber` slot of the `VerifyId
   "sessionState": {
     "sessionAttributes": {
       "x-amz-lex:audio:end-confidence-threshold:VerifyIdentity:AccountNumber": "0.9",
-      "x-amz-lex:audio:end-timeout-ms:VerifyIdentity:AccountNumber": "3000"
+      "x-amz-lex:audio:end-timeout-ms:VerifyIdentity:AccountNumber": "7000"
     }
   }
 }
@@ -124,6 +140,58 @@ A single default for every intent and slot:
   }
 }
 ```
+
+### Language hints for multilingual recognition
+<a name="agentic-voice-asr-language-hints"></a>
+
+Advanced ASR recognizes multiple languages in the same conversation without being told which languages to expect. It detects the language from the caller's speech, so a caller can start in English and switch to Spanish and the transcription follows. This is the default behavior and needs no configuration.
+
+If you already know which languages your callers use, you can bias recognition toward them with language hints. Hints help most when two languages sound similar. They also help when short utterances — a single word, a digit, a yes/no — give the model little to work with. You set them with:
+
+```
+x-amz-lex:audio:locale-override:<intentName>:<slotToElicit>
+```
+
+Default: no hints — Advanced ASR detects the language on its own.
+
+Scope the attribute the same way as the other controls in this section. Use `*:*` to bias every turn in the conversation, or name an intent and slot to bias only the turns where you know the expected language.
+
+Set the value to the language codes you want to bias toward, most likely first. Use a comma-separated list, optionally wrapped in brackets and quotes if that is easier to produce from your flow or Lambda function. Advanced ASR ignores surrounding whitespace and treats underscores as hyphens, so `pt_BR` and `pt-BR` are equivalent.
+
+The following table shows example attribute values and the languages each one biases Advanced ASR toward.
+
+**Language hint values**
+
+| Attribute value | Languages Advanced ASR is biased toward |
+| --- | --- |
+| Attribute not set | None. Advanced ASR detects the language from the caller's speech. |
+| es,en-US | Spanish, then US English |
+| ["ja"] | Japanese |
+| [ "es" , "en" ] | Spanish, then English |
+| fr, de , it | French, then German, then Italian |
++ Each entry must be a valid language code. Use a two- or three-letter base code, optionally followed by a hyphen and a region subtag — for example `es`, `en-US`, or `pt-BR`.
++ Entries that do not match that form are dropped, and the remaining valid entries are still applied. If no valid entry remains, the conversation proceeds with no hints instead of failing.
++ Advanced ASR passes through and ignores a well-formed code that it does not recognize. The code does not produce an error, but it does not bias recognition either, so verify the codes you send.
++ Advanced ASR removes duplicates. It applies at most 10 hints and ignores any beyond the tenth.
+
+The following example biases recognition for a line whose callers speak Spanish or English, with Spanish the more common language:
+
+```
+{
+  "sessionState": {
+    "sessionAttributes": {
+      "x-amz-lex:audio:locale-override:*:*": "es,en-US"
+    }
+  }
+}
+```
++ Leave the attribute unset unless you have a specific reason to bias recognition. Detection handles most multilingual conversations.
++ List only the languages your callers actually speak, most likely first.
++ List languages beyond those your callers actually speak. A long list dilutes the bias and removes the benefit of setting hints at all.
++ Send a single hint to lock the conversation to one language. A hint biases recognition; it does not restrict it. To restrict the languages the AI agent responds in, see [Restricting to specific languages](#agentic-voice-multilingual-restricting).
+
+**Tip**
+Language hints bias speech recognition — what the bot hears. They do not change which language the bot speaks. For the response language, use the AI agent system prompt and a multilingual voice. See [Multilingual voice configuration](#agentic-voice-polyglot-configuration).
 
 ### Handling long-running tool calls
 <a name="agentic-voice-asr-long-running-tool-calls"></a>
@@ -148,7 +216,8 @@ Validate latency end-to-end with your actual tool calls. The goal is that the ca
 | --- | --- | --- |
 | x-amz-lex:allow-interrupt:<intent>:<slot> | true | Barge-in. Set false for disclaimers. |
 | x-amz-lex:audio:end-confidence-threshold:<intent>:<slot> | 0.7 | Primary EOT signal. Range 0.5–0.9. Out-of-range rejected. |
-| x-amz-lex:audio:end-timeout-ms:<intent>:<slot> | 640 ms | EOT fallback. Range 500–10,000 ms. Out-of-range clamped. |
+| x-amz-lex:audio:end-timeout-ms:<intent>:<slot> | 5,000 ms | EOT fallback. Range 500–10,000 ms. Out-of-range clamped. |
+| x-amz-lex:audio:locale-override:<intent>:<slot> | Not set | Language hints biasing recognition. Comma-separated codes, max 10. |
 
 ### Common ASR mistakes
 <a name="agentic-voice-asr-common-mistakes"></a>
@@ -163,6 +232,7 @@ Validate latency end-to-end with your actual tool calls. The goal is that the ca
 | Setting threshold outside 0.5–0.9 | Request is rejected with an error | Keep it in range. Only end-timeout-ms clamps silently. |
 | Leaving input window open during a long tool call | Caller sits in dead air | Finish the tool call first or play a filler prompt. |
 | Treating an EOT re-prompt as real barge-in | Wrong fix applied to allow-interrupt | Tune the end-of-turn settings instead. |
+| Listing many languages in locale-override | Dilutes the bias it was set to provide | List only the languages callers speak, most likely first. |
 
 ## Voice best practices
 <a name="agentic-voice-tts-best-practices"></a>
@@ -374,8 +444,6 @@ For multilingual voices built on an English locale:
 
 1. In the Set Voice block, select the multilingual voice (for example, Brooke) and set the language to English (US).
 
-1. Ensure the Set language attribute checkbox is selected.
-
 1. Your Lex bot must have en-US as a built locale.
 
 ##### First-turn greeting
@@ -424,8 +492,6 @@ If you are using an agentic voice that is not a multilingual voice (for example,
 1. Select your non-English voice (for example, a Thai voice for the th-TH locale).
 
 1. Set the language to the matching locale (for example, th-TH).
-
-1. Ensure Set language attribute is checked.
 
 1. Build your Lex bot with a matching locale (th-TH).
 

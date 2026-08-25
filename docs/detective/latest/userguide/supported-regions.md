@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/userguide/supported-reg
 
 You can integrate Detective with Security Lake in the following AWS Regions.
 
-****
-
 | Region Name | Region | Endpoint | Protocol; |
 | --- | --- | --- | --- |
 | US East (Ohio) | us-east-2 | securitylake.us-east-2.amazonaws.com | HTTPS |

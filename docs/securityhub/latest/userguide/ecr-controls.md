@@ -33,7 +33,7 @@ ECR image scanning helps in identifying software vulnerabilities in your contain
 ### Remediation
 <a name="ecr-1-remediation"></a>
 
-To configure image scanning for an ECR repository, see [Image scanning](https://docs.aws.amazon.com//AmazonECR/latest/userguide/image-scanning.html) in the *Amazon Elastic Container Registry User Guide*.
+To configure image scanning for an ECR repository, see [Image scanning](https://docs.aws.amazon.com/AmazonECR/latest/userguide/image-scanning.html) in the *Amazon Elastic Container Registry User Guide*.
 
 ## [ECR.2] ECR private repositories should have tag immutability configured
 <a name="ecr-2"></a>
@@ -59,7 +59,7 @@ Amazon ECR Tag Immutability enables customers to rely on the descriptive tags of
 ### Remediation
 <a name="ecr-2-remediation"></a>
 
-To create a repository with immutable tags configured or to update the image tag mutability settings for an existing repository, see [Image tag mutability](https://docs.aws.amazon.com//AmazonECR/latest/userguide/image-tag-mutability.html) in the *Amazon Elastic Container Registry User Guide*.
+To create a repository with immutable tags configured or to update the image tag mutability settings for an existing repository, see [Image tag mutability](https://docs.aws.amazon.com/AmazonECR/latest/userguide/image-tag-mutability.html) in the *Amazon Elastic Container Registry User Guide*.
 
 ## [ECR.3] ECR repositories should have at least one lifecycle policy configured
 <a name="ecr-3"></a>
@@ -85,7 +85,7 @@ Amazon ECR lifecycle policies enable you to specify the lifecycle management of 
 ### Remediation
 <a name="ecr-3-remediation"></a>
 
-To configure a lifecycle policy, see [Creating a lifecycle policy preview](https://docs.aws.amazon.com//AmazonECR/latest/userguide/lpp_creation.html) in the *Amazon Elastic Container Registry User Guide*.
+To configure a lifecycle policy, see [Creating a lifecycle policy preview](https://docs.aws.amazon.com/AmazonECR/latest/userguide/lpp_creation.html) in the *Amazon Elastic Container Registry User Guide*.
 
 ## [ECR.4] ECR public repositories should be tagged
 <a name="ecr-4"></a>

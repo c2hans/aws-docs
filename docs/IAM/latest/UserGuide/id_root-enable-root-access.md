@@ -35,7 +35,7 @@ Whether a root user access key is present and when it was last used
 Whether the root user has associated signing certificates
 Root user associated MFA devices
 List of the consolidated root user credential status
-+ You must manage your AWS accounts in [AWS Organizations](https://docs.aws.amazon.com//organizations/latest/userguide/orgs_introduction.html).
++ You must manage your AWS accounts in [AWS Organizations](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html).
 + You must have the following permissions to enable this feature in your organization:
   + `iam:EnableOrganizationsRootCredentialsManagement`
   + `iam:EnableOrganizationsRootSessions`

@@ -57,7 +57,7 @@ For the latest version of the client catalog JAR, see the [s3-tables-catalog Git
    }]
    ```
 
-1. [Connect to the Spark primary node using SSH](https://docs.aws.amazon.com//emr/latest/ManagementGuide/emr-connect-master-node-ssh.html#emr-connect-cli).
+1. [Connect to the Spark primary node using SSH](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-connect-master-node-ssh.html#emr-connect-cli).
 
 1. To initialize a Spark session for Iceberg that connects to your table bucket, enter the following command. Replace the `{{user input placeholders}}` with your table bucket ARN.
 
@@ -80,8 +80,8 @@ The following prerequisites are required to query tables with Spark on Amazon EM
 
 **Prerequisites**
 + [Integrate your table buckets with AWS analytics services](s3-tables-integrating-aws.md).
-+ Create the default service role for Amazon EMR (`EMR_DefaultRole_V2`). For details, see [Service role for Amazon EMR (EMR role) ](https://docs.aws.amazon.com//emr/latest/ManagementGuide/emr-iam-role.html).
-+ Create the Amazon EC2 instance profile for Amazon EMR (`EMR_EC2_DefaultRole`). For details, see [Service role for cluster EC2 instances (EC2 instance profile)](https://docs.aws.amazon.com//emr/latest/ManagementGuide/emr-iam-role-ec2.html).
++ Create the default service role for Amazon EMR (`EMR_DefaultRole_V2`). For details, see [Service role for Amazon EMR (EMR role) ](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-iam-role.html).
++ Create the Amazon EC2 instance profile for Amazon EMR (`EMR_EC2_DefaultRole`). For details, see [Service role for cluster EC2 instances (EC2 instance profile)](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-iam-role-ec2.html).
   + Attach the `AmazonS3TablesFullAccess` policy to `EMR_EC2_DefaultRole`.
 
 **To set up an Amazon EMR cluster to query tables with Spark**
@@ -112,7 +112,7 @@ The following prerequisites are required to query tables with Spark on Amazon EM
    }]
    ```
 
-1. [Connect to the Spark primary node using SSH](https://docs.aws.amazon.com//emr/latest/ManagementGuide/emr-connect-master-node-ssh.html#emr-connect-cli).
+1. [Connect to the Spark primary node using SSH](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-connect-master-node-ssh.html#emr-connect-cli).
 
 1. Enter the following command to initialize a Spark session for Iceberg that connects to your tables. Replace the `{{user input placeholders}}` for Region, account ID and table bucket name with your own information.
 

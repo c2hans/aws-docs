@@ -27,7 +27,7 @@ EventBridge charges apply to archives. Please refer to [Amazon EventBridge Prici
 ### Encrypting archive events
 <a name="eb-archive-encryption"></a>
 
-By default, EventBridge encrypts event data in an archive using 256-bit Advanced Encryption Standard (AES-256) under an [AWS owned CMK](https://docs.aws.amazon.com//kms/latest/developerguide/concepts.html#aws-owned-cmk), which helps secure your data from unauthorized access.
+By default, EventBridge encrypts event data in an archive using 256-bit Advanced Encryption Standard (AES-256) under an [AWS owned CMK](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#aws-owned-cmk), which helps secure your data from unauthorized access.
 
 ### Event delivery
 <a name="eb-archive-timing"></a>

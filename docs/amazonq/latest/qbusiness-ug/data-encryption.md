@@ -22,7 +22,7 @@ Amazon Q does not support asymmetric KMS keys. For more information, see [Using 
 Amazon Q Business provides encryption by default to protect sensitive customer data at rest using AWS owned encryption keys. Sensitive customer data includes both questions and answers in the Amazon Q Business web experience and the documents uploaded to Amazon Q Business index.
 
 The Amazon Q Business uses the questions and answers to know the conversation context and to provide you with the best answer. The conversation data is automatically removed once the conversation is deleted or is inactive. For more information, see [Conversation management](using-web-experience.md#conversation-mgmt). The uploaded documents are used by Amazon Q Business to retrieve them at runtime to answer your questions.
-+ **AWS owned keys** – Amazon Q Business uses these keys by default to automatically encrypt sensitive customer data. You can't view, manage, or use AWS owned keys, or audit their use. However, you don't have to take any action or change any programs to protect the keys that encrypt your data. For more information, see [AWS owned keys](https://docs.aws.amazon.com//kms/latest/developerguide/concepts.html#aws-owned-cmk) in the *AWS Key Management Service Developer Guide*.
++ **AWS owned keys** – Amazon Q Business uses these keys by default to automatically encrypt sensitive customer data. You can't view, manage, or use AWS owned keys, or audit their use. However, you don't have to take any action or change any programs to protect the keys that encrypt your data. For more information, see [AWS owned keys](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#aws-owned-cmk) in the *AWS Key Management Service Developer Guide*.
 
   Encryption of data at rest by default helps reduce the operational overhead and complexity involved in protecting sensitive data. At the same time, it enables you to build secure applications that meet strict encryption compliance and regulatory requirements.
 
@@ -43,7 +43,7 @@ Because you have full control of this layer of encryption, you can perform such 
 + Creating key aliases
 + Scheduling keys for deletion
 
-For more information, see [customer managed key](https://docs.aws.amazon.com//kms/latest/developerguide/concepts.html#customer-cmk) in the *AWS Key Management Service Developer Guide*.
+For more information, see [customer managed key](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#customer-cmk) in the *AWS Key Management Service Developer Guide*.
 
 **Note**
 If you have created your Amazon Q Business application environment using AWS KMS and then you want to migrate to using customer managed key (CMK), you will have to re-create your application environment.
@@ -57,12 +57,12 @@ If you have created your Amazon Q Business application environment using AWS KMS
 ### How Amazon Q Business uses grants in AWS KMS
 <a name="using-grants-kms"></a>
 
-Amazon Q Business requires a [grant](https://docs.aws.amazon.com//kms/latest/developerguide/grants.html) to use your customer managed key. When you create a Amazon Q Business application environment resource encrypted with a customer managed key, Amazon Q creates a grant on your behalf by sending a [CreateGrant](https://docs.aws.amazon.com//kms/latest/APIReference/API_CreateGrant.html) request to AWS KMS. Grants in AWS KMS are used to give Amazon Q Business access to a KMS key in a customer account.
+Amazon Q Business requires a [grant](https://docs.aws.amazon.com/kms/latest/developerguide/grants.html) to use your customer managed key. When you create a Amazon Q Business application environment resource encrypted with a customer managed key, Amazon Q creates a grant on your behalf by sending a [CreateGrant](https://docs.aws.amazon.com/kms/latest/APIReference/API_CreateGrant.html) request to AWS KMS. Grants in AWS KMS are used to give Amazon Q Business access to a KMS key in a customer account.
 
 Amazon Q Business requires the grant to use your customer managed key for the following internal operations:
-+ Send [DescribeKey](https://docs.aws.amazon.com//kms/latest/APIReference/API_DescribeKey.html) requests to AWS KMS to verify that the symmetric customer managed key ID entered when creating application environment is valid.
-+ Send [GenerateDataKeyWithoutPlainText](https://docs.aws.amazon.com//kms/latest/APIReference/API_GenerateDataKeyWithoutPlaintext.html) requests to AWS KMS to generate data keys encrypted by your customer managed key.
-+ Send [Decrypt](https://docs.aws.amazon.com//kms/latest/APIReference/API_Decrypt.html) requests to AWS KMS to decrypt the encrypted data keys so that they can be used to encrypt your data.
++ Send [DescribeKey](https://docs.aws.amazon.com/kms/latest/APIReference/API_DescribeKey.html) requests to AWS KMS to verify that the symmetric customer managed key ID entered when creating application environment is valid.
++ Send [GenerateDataKeyWithoutPlainText](https://docs.aws.amazon.com/kms/latest/APIReference/API_GenerateDataKeyWithoutPlaintext.html) requests to AWS KMS to generate data keys encrypted by your customer managed key.
++ Send [Decrypt](https://docs.aws.amazon.com/kms/latest/APIReference/API_Decrypt.html) requests to AWS KMS to decrypt the encrypted data keys so that they can be used to encrypt your data.
 
  You can revoke access to the grant, or remove the service's access to the customer managed key at any time. If you do, Amazon Q Business won't be able to access any of the data encrypted by the customer managed key, which affects operations that are dependent on that data.
 
@@ -76,20 +76,20 @@ Amazon Q does not support asymmetric KMS keys. For more information, see [Using 
 
 **To create a symmetric customer managed key**
 
-Follow the steps for [Creating symmetric customer managed key](https://docs.aws.amazon.com//kms/latest/developerguide/create-keys.html#create-symmetric-cmk) in the *AWS Key Management Service Developer Guide*.
+Follow the steps for [Creating symmetric customer managed key](https://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html#create-symmetric-cmk) in the *AWS Key Management Service Developer Guide*.
 
 **Key policy**
 
-Key policies control access to your customer managed key. Every customer managed key must have exactly one key policy, which contains statements that determine who can use the key and how they can use it. When you create your customer managed key, you can specify a key policy. For more information, see [Managing access to customer managed keys](https://docs.aws.amazon.com//kms/latest/developerguide/control-access-overview.html#managing-access) in the *AWS Key Management Service Developer Guide*.
+Key policies control access to your customer managed key. Every customer managed key must have exactly one key policy, which contains statements that determine who can use the key and how they can use it. When you create your customer managed key, you can specify a key policy. For more information, see [Managing access to customer managed keys](https://docs.aws.amazon.com/kms/latest/developerguide/control-access-overview.html#managing-access) in the *AWS Key Management Service Developer Guide*.
 
  To use your customer managed key with your Amazon Q Business resources, the following API operations must be permitted in the key policy:
-+ [kms:CreateGrant](https://docs.aws.amazon.com//kms/latest/APIReference/API_CreateGrant.html) – Adds a grant to a customer managed key. Grants control access to a specified KMS key,which allows access to [grant operation](https://docs.aws.amazon.com//kms/latest/developerguide/grants.html#terms-grant-operations) Amazon Q Business requires. For more information about [Using Grants](https://docs.aws.amazon.com//kms/latest/developerguide/grants.html), see the *AWS Key Management Service Developer Guide*.
++ [kms:CreateGrant](https://docs.aws.amazon.com/kms/latest/APIReference/API_CreateGrant.html) – Adds a grant to a customer managed key. Grants control access to a specified KMS key,which allows access to [grant operation](https://docs.aws.amazon.com/kms/latest/developerguide/grants.html#terms-grant-operations) Amazon Q Business requires. For more information about [Using Grants](https://docs.aws.amazon.com/kms/latest/developerguide/grants.html), see the *AWS Key Management Service Developer Guide*.
 
   This allows Amazon Q Business to do the following:
   + Call `GenerateDataKeyWithoutPlainText` to generate an encrypted data key and store it, because the data key isn't immediately used to encrypt.
   + Call `Decrypt` to use the stored encrypted data key to access encrypted data.
   + Set up a retiring principal to allow the service to `RetireGrant`.
-+ [kms:DescribeKey](https://docs.aws.amazon.com//kms/latest/APIReference/API_DescribeKey.html) – Provides the customer managed key details to allow Amazon Q to validate the key.
++ [kms:DescribeKey](https://docs.aws.amazon.com/kms/latest/APIReference/API_DescribeKey.html) – Provides the customer managed key details to allow Amazon Q to validate the key.
 
 The following are policy statement examples you can add for Amazon Q Business
 
@@ -140,7 +140,7 @@ The following are policy statement examples you can add for Amazon Q Business
      ]
 ```
 
-For more information about [specifying permissions in a policy](https://docs.aws.amazon.com//kms/latest/developerguide/control-access-overview.html#overview-policy-elements) and [troubleshooting key access](https://docs.aws.amazon.com//kms/latest/developerguide/policy-evaluation.html#example-no-iam), see the *AWS Key Management Service Developer Guide*
+For more information about [specifying permissions in a policy](https://docs.aws.amazon.com/kms/latest/developerguide/control-access-overview.html#overview-policy-elements) and [troubleshooting key access](https://docs.aws.amazon.com/kms/latest/developerguide/policy-evaluation.html#example-no-iam), see the *AWS Key Management Service Developer Guide*
 
 ### Specifying customer managed key for Amazon Q Business
 <a name="specify-cmk"></a>
@@ -149,14 +149,14 @@ You can specify a customer managed key as a second layer encryption for your Ama
 
 When you create your application environment, you can specify the data key by entering a **KMS ID**, which Amazon Q Business uses to encrypt the identifiable personal data stored by the application environment.
 
-**KMS ID** – A [key identifier](https://docs.aws.amazon.com//kms/latest/developerguide/concepts.html#key-id) for an AWS KMS customer managed key. Enter a key ID, key ARN, alias name, or alias ARN.
+**KMS ID** – A [key identifier](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#key-id) for an AWS KMS customer managed key. Enter a key ID, key ARN, alias name, or alias ARN.
 
 Any resources you create under your Amazon Q Business application environment will be encrypted with the same key.
 
 ### Monitoring your encryption keys for Amazon Q
 <a name="monitoring-cmk-key"></a>
 
-When you use an AWS KMS customer managed key with your Amazon Q Business resources, you can use [AWS CloudTrail](https://docs.aws.amazon.com//awscloudtrail/latest/userguide/cloudtrail-user-guide.html) or [Amazon CloudWatch Logs](https://docs.aws.amazon.com//AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html) to track requests that Amazon Q Business sends to AWS KMS.
+When you use an AWS KMS customer managed key with your Amazon Q Business resources, you can use [AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html) or [Amazon CloudWatch Logs](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html) to track requests that Amazon Q Business sends to AWS KMS.
 
 The following examples are AWS CloudTrail events for `CreateGrant`, `GenerateDataKey`, `Decrypt`, and `DescribeKey` to monitor KMS operations called by Amazon Q Business to access data encrypted by your customer managed key.
 

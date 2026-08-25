@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsb
 
 AWS Backup provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="backup-DescribeBackupAccessPoint"></a>[DescribeBackupAccessPoint](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_DescribeBackupAccessPoint.html) | Return information about the specified backup access point | Read |

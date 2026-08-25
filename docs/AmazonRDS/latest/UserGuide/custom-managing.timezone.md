@@ -23,8 +23,6 @@ To change the system time zone used by your RDS Custom for Oracle DB instance, u
 
 Amazon RDS supports the following settings for the time zone option.
 
-****
-
 | Option setting | Valid values | Description |
 | --- | --- | --- |
 | `TIME_ZONE` | One of the available time zones. For the full list, see [Available time zones in RDS Custom for Oracle](#custom-oracle-timezone.Zones).  | The new time zone for your DB instance.  |
@@ -33,8 +31,6 @@ Amazon RDS supports the following settings for the time zone option.
 <a name="custom-oracle-timezone.Zones"></a>
 
 You can use the following values for the time zone option.
-
-****
 
 | Zone | Time zone |
 | --- | --- |

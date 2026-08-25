@@ -15,6 +15,7 @@ The following table describes the important changes since the last release of th
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [Performance best practices for the AWS SDK for .NET](net-dg-performance.md) | Added guidance about reusing service clients, disposing responses, programming asynchronously, configuring garbage collection, and managing HTTP connections. | July 30, 2026 |
 | [What's new](whats-new.md) | Added a note about version 2.0 of the AWS Deploy Tool for .NET CLI. | October 17, 2025 |
 | [AWS OpsWorks](#document-history) | AWS OpsWorks has reached End of Life. It has been removed from the documentation. | September 16, 2025 |
 | [What's new](whats-new.md) | End-of-support has been announced for V3 of the AWS SDK for .NET. | August 21, 2025 |

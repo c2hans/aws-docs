@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/w
 
 Your AWS services and resources are available through the AWS Toolkit for JetBrains Explorer.
 
-For more information on how to navigate the AWS Toolkit for JetBrains and the AWS Explorer, see the [Navigation](https://docs.aws.amazon.com//toolkit-for-jetbrains/latest/userguide/navigation.html) topic in this User Guide.
+For more information on how to navigate the AWS Toolkit for JetBrains and the AWS Explorer, see the [Navigation](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/navigation.html) topic in this User Guide.
 
 To learn more about working with a specific AWS service from the AWS Toolkit for JetBrains, choose from the following list of topics.
 

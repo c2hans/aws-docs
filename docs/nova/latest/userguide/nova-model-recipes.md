@@ -62,8 +62,6 @@ cd recipes_collection/recipes/
 
 The Amazon Nova customization recipes are in the following folders.
 
-****
-
 | Recipe type | Folder |
 | --- | --- |
 | SFT (Full-rank and PEFT), PPO, DPO (Full-rank and PEFT) | [fine-tuning/nova](https://github.com/aws/sagemaker-hyperpod-recipes/tree/main/recipes_collection/recipes/fine-tuning/nova) |
@@ -89,8 +87,6 @@ The following table summarizes the availability of customization for Amazon Nova
 
 The table below lists detailed information of the Amazon Nova Lite recipes reference.
 
-****
-
 | Model | Category/Sub-category | Technique | Recipe Name | Image URI (Training Jobs) | Image URI (SageMaker HyperPod) | Compute Instance |
 | --- | --- | --- | --- | --- | --- | --- |
 | Nova Lite | Training/Fine-tuning | Supervised Fine-Tuning (LoRA) | `nova_lite_1_0_g5_g6_12x_gpu_lora_sft.yaml`<br />`nova_lite_1_0_g5_g6_48x_gpu_lora_sft.yaml`<br />`nova_lite_1_0_p5_p4d_gpu_lora_sft.yaml` | 708977205387.dkr.ecr.us-east-1.amazonaws.com/nova-fine-tune-repo:SM-TJ-SFT-latest | 708977205387.dkr.ecr.us-east-1.amazonaws.com/nova-fine-tune-repo:SM-HP-SFT-latest | `ml.p5.48xlarge`, `ml.p5en.48xlarge`,<br />`ml.g5.12xlarge`, `ml.g6.12xlarge`,<br />`ml.g5.48xlarge`, `ml.g6.48xlarge` |
@@ -109,8 +105,6 @@ The table below lists detailed information of the Amazon Nova Lite recipes refer
 
 The table below lists detailed information of the Amazon Nova Micro recipes reference.
 
-****
-
 | Model | Category/Sub-category | Technique | Recipe Name | Image URI (Training Jobs) | Image URI (SageMaker HyperPod) | Compute Instance |
 | --- | --- | --- | --- | --- | --- | --- |
 | Nova Micro | Training/Fine-tuning | Supervised Fine-Tuning (LoRA) | `nova_micro_1_0_p5_p4d_gpu_lora_sft.yaml`<br />`nova_micro_1_0_g5_g6_12x_gpu_lora_sft.yaml`<br />`nova_micro_1_0_g5_g6_48x_gpu_lora_sft.yaml` | 708977205387.dkr.ecr.us-east-1.amazonaws.com/nova-fine-tune-repo:SM-TJ-SFT-latest | 708977205387.dkr.ecr.us-east-1.amazonaws.com/nova-fine-tune-repo:SM-HP-SFT-latest | `ml.p5.48xlarge`, `ml.p5en.48xlarge`, `ml.p4d.24xlarge`,<br />`ml.g5.12xlarge`, `ml.g6.12xlarge`,<br />`ml.g5.48xlarge`, `ml.g6.48xlarge` |
@@ -127,8 +121,6 @@ The table below lists detailed information of the Amazon Nova Micro recipes refe
 <a name="nova-model-recipes-reference-novapro"></a>
 
 The table below lists detailed information of the Amazon Nova Pro recipes reference.
-
-****
 
 | Model | Category/Sub-category | Technique | Recipe Name | Image URI (Training Jobs) | Image URI (SageMaker HyperPod) | Compute Instance |
 | --- | --- | --- | --- | --- | --- | --- |

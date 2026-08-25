@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon WorkSpaces Secure Browser provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="workspaces-web-GetBrowserSettings"></a>[GetBrowserSettings](https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_GetBrowserSettings.html) | Get details on browser settings | Read |

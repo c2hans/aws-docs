@@ -629,8 +629,6 @@ If you use Trusted Advisor for Amazon CloudWatch metrics, the metric names for t
 **Note**
 Trusted Advisor removed the following checks on November 18, 2020.
 
-****
-
 | Checks removed on November 18, 2020 | Check category | Check ID |
 | --- | --- | --- |
 | EC2Config Service for EC2 Windows Instances | Fault tolerance | `V77iOLlBqz` |

@@ -29,16 +29,12 @@ The following is an example of this object type.
 ## Syntax
 <a name="jdbcdatabase-syntax"></a>
 
-****
-
 | Required Fields | Description | Slot Type |
 | --- | --- | --- |
 | connectionString | The JDBC connection string to access the database. | String |
 | jdbcDriverClass | The driver class to load before establishing the JDBC connection. | String |
 | \*password | The password to supply. | String |
 | username | The user name to supply when connecting to the database. | String |
-
-****
 
 | Optional Fields | Description | Slot Type |
 | --- | --- | --- |
@@ -47,13 +43,9 @@ The following is an example of this object type.
 | jdbcProperties | Pairs of the form A=B that will be set as properties on JDBC connections for this database. | String |
 | parent | Parent of the current object from which slots will be inherited. | Reference Object, e.g. "parent":{"ref":"myBaseObjectId"} |
 
-****
-
 | Runtime Fields | Description | Slot Type |
 | --- | --- | --- |
 | @version | Pipeline version that the object was created with. | String |
-
-****
 
 | System Fields | Description | Slot Type |
 | --- | --- | --- |

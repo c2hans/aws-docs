@@ -58,12 +58,16 @@ Properties:
 The description for the cluster parameter group.
 *Required*: Yes
 *Type*: String
+*Minimum*: `1`
+*Maximum*: `255`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Family`  <a name="cfn-docdb-dbclusterparametergroup-family"></a>
 The cluster parameter group family name.
 *Required*: Yes
 *Type*: String
+*Minimum*: `1`
+*Maximum*: `255`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Name`  <a name="cfn-docdb-dbclusterparametergroup-name"></a>
@@ -73,6 +77,9 @@ Constraints:
 This value is stored as a lowercase string.
 *Required*: No
 *Type*: String
+*Pattern*: `[a-zA-Z0-9-]*`
+*Minimum*: `1`
+*Maximum*: `255`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Parameters`  <a name="cfn-docdb-dbclusterparametergroup-parameters"></a>
@@ -96,9 +103,6 @@ The tags to be assigned to the cluster parameter group.
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the DBClusterParameterGroup's name, such as `sample-db-cluster-param-group`.
 
 For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
-
-### Fn::GetAtt
-<a name="aws-resource-docdb-dbclusterparametergroup-return-values-fn--getatt"></a>
 
 ## Examples
 <a name="aws-resource-docdb-dbclusterparametergroup--examples"></a>

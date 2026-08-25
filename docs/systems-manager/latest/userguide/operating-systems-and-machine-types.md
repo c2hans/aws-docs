@@ -123,8 +123,6 @@ Select an OS platform to see the supported major and minor versions.
 ### macOS (Amazon EC2 instances only)
 <a name="prereqs-os-mac"></a>
 
-****
-
 | Version | x86 | x86\_64 | Mac with Apple silicon |
 | --- | --- | --- | --- |
 | 13.x (Ventura) |  | ✓ | ✓ |
@@ -138,8 +136,6 @@ macOS is not supported in all AWS Regions. For more information about Amazon EC2
 <a name="prereqs-os-windows-server"></a>
 
 SSM Agent requires Windows PowerShell 3.0 or later to run certain AWS Systems Manager documents (SSM documents) on Windows Server instances (for example, the legacy `AWS-ApplyPatchBaseline` document). Verify that your Windows Server instances are running Windows Management Framework 3.0 or later. This framework includes Windows PowerShell. For more information, see [Windows Management Framework 3.0](https://www.microsoft.com/en-us/download/details.aspx?id=34595&751be11f-ede8-5a0c-058c-2ee190a24fa6=True).
-
-****
 
 | Version | x86 | x86\_64 | ARM64 |
 | --- | --- | --- | --- |

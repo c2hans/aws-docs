@@ -98,7 +98,7 @@ The following parameters are optional:
 + `@buffer_count` – Total number of I/O buffers to be use for the backup process.
 + `@enable_bucket_default_encryption` – A value that indicates whether to use the S3 bucket's default encryption configuration for server-side encryption in S3. Directory buckets always use the bucket's default encryption configuration regardless of this setting.
   + `0` – Server-side encryption uses Advanced Encryption Standard (AES) 256-bit encryption through SSE-S3.
-  + `1` – Server-side encryption uses your S3 bucket’s configured [default encryption](https://docs.aws.amazon.com//AmazonS3/latest/userguide/bucket-encryption.html).
+  + `1` – Server-side encryption uses your S3 bucket’s configured [default encryption](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-encryption.html).
 
 ### Examples
 <a name="SQLServer.Procedural.Importing.Native.Backup.Examples"></a>
@@ -252,7 +252,7 @@ The following parameters are required:
 + `@s3_arn_to_restore_from` – The ARN indicating the Amazon S3 prefix and names of the backup files used to restore the database.
   + For a single-file backup, provide the entire file name.
   + For a multifile backup, provide the prefix that the files have in common, then suffix that with an asterisk (`*`).
-    + If using a directory bucket, the ARN must end with `/*` due to [differences for directory buckets](https://docs.aws.amazon.com//AmazonS3/latest/userguide/s3-express-differences.html).
+    + If using a directory bucket, the ARN must end with `/*` due to [differences for directory buckets](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-express-differences.html).
   + If `@s3_arn_to_restore_from` is empty, the following error message is returned: S3 ARN prefix cannot be empty.
 
 The following parameter is required for differential restores, but optional for full restores:
@@ -626,8 +626,6 @@ exec msdb.dbo.rds_task_status;
 <a name="SQLServer.Procedural.Importing.Native.Tracking.Response"></a>
 
 The `rds_task_status` stored procedure returns the following columns.
-
-****
 
 | Column | Description |
 | --- | --- |

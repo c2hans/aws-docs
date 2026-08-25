@@ -34,7 +34,7 @@ Agentic self-service provides the following capabilities:
 
 You can configure your orchestrator AI agent for self-service with the following tool types:
 + **[MCP tools](ai-agent-mcp-tools.md)** – Extend AI agent capabilities through the Model Context Protocol. MCP tools connect to backend systems to take actions such as looking up order status, processing refunds, and updating records. The AI agent invokes MCP tools during the conversation without returning control to the contact flow.
-+ **Return to Control** – Signal the AI agent to stop and return control to the contact flow. By default, the `SelfServiceOrchestrator` AI agent includes `Complete` (to end the interaction) and `Escalate` (to transfer to a human agent). You can remove these defaults and/or create your own. For more information, see [Custom Return to Control tools](#agentic-self-service-custom-escalate).
++ **Return to Control** – Signal the AI agent to stop and return control to the contact flow. By default, the `SelfServiceOrchestrator` AI agent includes `Complete` (to end the interaction) and `Escalate` (to transfer to a human agent). You can remove these defaults or create your own. For more information, see [Custom Return to Control tools](#agentic-self-service-custom-escalate).
 + **Constant** – Return a configured static string value to the AI agent. Useful for testing and rapid iteration during development. For more information, see [Constant tools](#agentic-self-service-constant-tools).
 
 ## Set up agentic self-service

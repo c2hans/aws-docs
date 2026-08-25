@@ -80,7 +80,7 @@ For more information about granting and revoking privileges, see [GRANT](r_GRANT
 ## Configuring the authorization parameter for Lambda UDFs
 <a name="udf-lambda-authorization"></a>
 
-The CREATE EXTERNAL FUNCTION command requires authorization to invoke Lambda functions in AWS Lambda. To start authorization, specify an AWS Identity and Access Management (IAM) role when you run the CREATE EXTERNAL FUNCTION command. For more information about IAM roles, see [IAM roles](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_roles.html) in the *IAM User Guide*.
+The CREATE EXTERNAL FUNCTION command requires authorization to invoke Lambda functions in AWS Lambda. To start authorization, specify an AWS Identity and Access Management (IAM) role when you run the CREATE EXTERNAL FUNCTION command. For more information about IAM roles, see [IAM roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html) in the *IAM User Guide*.
 
 If there is an existing IAM role with permissions to invoke Lambda functions attached to your cluster, then you can substitute your role Amazon Resource Name (ARN) in the IAM\_ROLE parameter for the command. Following sections describe the steps for using an IAM role in the CREATE EXTERNAL FUNCTION command.
 

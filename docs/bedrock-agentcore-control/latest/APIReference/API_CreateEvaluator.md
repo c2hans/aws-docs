@@ -119,7 +119,8 @@ Pattern: `arn:aws[a-zA-Z-]*:bedrock-agentcore:[a-z0-9-]+:[0-9]{12}:evaluator\/[a
  ** [evaluatorId](#API_CreateEvaluator_ResponseSyntax) **   <a name="bedrockagentcorecontrol-CreateEvaluator-response-evaluatorId"></a>
  The unique identifier of the created evaluator.
 Type: String
-Pattern: `(Builtin.[a-zA-Z0-9_-]+|[a-zA-Z][a-zA-Z0-9-_]{0,99}-[a-zA-Z0-9]{10})`
+Length Constraints: Minimum length of 1. Maximum length of 111.
+Pattern: `(Builtin\.[a-zA-Z0-9._-]+|ThirdParty\.[a-zA-Z0-9_-]+\.[a-zA-Z0-9_-]+|[a-zA-Z][a-zA-Z0-9-_]{0,99}-[a-zA-Z0-9]{10})`
 
  ** [status](#API_CreateEvaluator_ResponseSyntax) **   <a name="bedrockagentcorecontrol-CreateEvaluator-response-status"></a>
  The status of the evaluator creation operation.

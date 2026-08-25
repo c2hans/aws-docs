@@ -262,7 +262,7 @@ You can grant customized access to specific versions of Amazon SageMaker Pipelin
 
 ------
 
-For more information about supported condition keys, see [Condition keys for Amazon SageMaker AI](https://docs.aws.amazon.com//service-authorization/latest/reference/list_amazonsagemaker.html#amazonsagemaker-policy-keys).
+For more information about supported condition keys, see [Condition keys for Amazon SageMaker AI](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonsagemaker.html#amazonsagemaker-policy-keys).
 
 ## Service Control Policies with Pipelines
 <a name="build-and-manage-scp"></a>

@@ -11,14 +11,14 @@ You can use AWS Control Tower to search and discover the AWS Config rules that y
 
 The AWS Control Tower console and AWS Config console each display the same metadata for these controls.
 
-You can enable and disable the AWS Config controls through the AWS Control Tower console or the [`EnableControl`](https://docs.aws.amazon.com//controltower/latest/APIReference/API_EnableControl.html) and [`DisableControl`](https://docs.aws.amazon.com//controltower/latest/APIReference/API_DisableControl.html) APIs. Control details are viewable programmatically by calling the Control Catalog [`GetControl`](https://docs.aws.amazon.com//controlcatalog/latest/APIReference/API_GetControl.html) and [`ListControls`](https://docs.aws.amazon.com//controlcatalog/latest/APIReference/API_ListControls.html) APIs.
+You can enable and disable the AWS Config controls through the AWS Control Tower console or the [`EnableControl`](https://docs.aws.amazon.com/controltower/latest/APIReference/API_EnableControl.html) and [`DisableControl`](https://docs.aws.amazon.com/controltower/latest/APIReference/API_DisableControl.html) APIs. Control details are viewable programmatically by calling the Control Catalog [`GetControl`](https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_GetControl.html) and [`ListControls`](https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_ListControls.html) APIs.
 
 **Differences**
 + In AWS Config, these integrated controls are listed by identifier.
 + In the AWS Control Tower console and APIs, the integrated controls are shown with names that summarize their function.
 
 **Note**
-AWS Control Tower documentation does not provide a comprehensive list of integrated AWS Config controls. For more information about these controls, see [List of AWS Config managed rules](https://docs.aws.amazon.com//config/latest/developerguide/managed-rules-by-aws-config.html) in the *AWS Config Developer Guide*, or view them in the AWS Control Tower console.
+AWS Control Tower documentation does not provide a comprehensive list of integrated AWS Config controls. For more information about these controls, see [List of AWS Config managed rules](https://docs.aws.amazon.com/config/latest/developerguide/managed-rules-by-aws-config.html) in the *AWS Config Developer Guide*, or view them in the AWS Control Tower console.
 
 **Important**
 AWS Control Tower doesn't support parameter configuration for detective controls. If a control relies on optional parameters, it deploys without them. This can result in more restrictive evaluation behavior. For example, the `CONFIG.EC2.DT.17` control evaluates all internet gateway attachments as `NON_COMPLIANT` when you deploy it without the `AuthorizedVpcIds` parameter. To deploy these types of controls with parameters, create the corresponding AWS Config rule directly in AWS Config.

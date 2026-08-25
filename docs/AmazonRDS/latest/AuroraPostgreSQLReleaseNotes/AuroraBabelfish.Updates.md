@@ -25,7 +25,44 @@ For a list of supported and unsupported functionality across different Babelfish
 <a name="aurorababelfish-versions-version6x"></a>
 
 **Topics**
++ [Babelfish for Aurora PostgreSQL 6.1](#AuroraBabelfish.Updates.61X)
 + [Babelfish for Aurora PostgreSQL 6.0](#AuroraBabelfish.Updates.60X)
+
+### Babelfish for Aurora PostgreSQL 6.1
+<a name="AuroraBabelfish.Updates.61X"></a>
+
+This release of Aurora Babelfish is provided with Aurora PostgreSQL 18.4. For more information about the improvements in Aurora PostgreSQL 18.4, see [Amazon Aurora PostgreSQL updates](AuroraPostgreSQL.Updates.md). Babelfish for Aurora PostgreSQL 6.1 adds several new features, enhancements, and fixes. For more information about Babelfish for Aurora PostgreSQL, see [Working with Babelfish for Aurora PostgreSQL](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/babelfish.html).
+
+#### Aurora Babelfish release 6.1.0, August 21, 2026
+<a name="AuroraBabelfish.Updates.610"></a>
+
+**New Features**
++ Added support for STGeometryType(), STNumPoints(), Parse(), MakeValid() and STMPointFromText() Geospatial functions.
++ Added support for Multipoint instances in Babelfish.
++ Babelfish now extends support for Shared Plan Cache to T-SQL queries.
++ Added support for ELEMENTS directive in FOR XML RAW and FOR XML PATH.
+
+**Critical enhancements**
++ Fixed an issue that could cause crash in SPI\_finish after Out Of Memory error.
++ Fixed crash in FOR XML PATH queries when processing all-NULL rows without a root element.
++ Improved query performance when expanding the views and procedures in SSMS Object Explorer.
+
+**High Priority stability enhancements**
++ Fixed sys.fn\_varbintohexsubstring function definition after major version upgrade.
++ Fixed an issue that could cause a database reboot when dropping a temporary table from within a nested stored procedure.
++ Fixed an issue where queries with local variables could return inconsistent results when using generic query plans.
++ Fixed an issue that could cause a database reboot when dropping a temporary table from within a nested stored procedure.
++ Fixed an issue where creating a function or procedure in a schema created from the PostgreSQL endpoint could cause a database reboot.
+
+**Additional improvements and enhancements**
++ Improved memory handling in FOR XML query processing.
++ Fixed an issue where sp\_execute returned an error when invoked with named parameters.
++ Fixed FOR XML RAW to properly handle empty element names by omitting the row wrapper element instead of generating invalid empty tags.
++ Fixed DATETIME2FROMPARTS function to properly handle fractional second values in the range 32786 to 9999999.
++ Improved memory handling in PrepareRowDescription and rewrite\_if\_condition functions.
++ Fixed an issue where go-sqlcmd client driver failed to return query results.
++ Fixed Memory management issue in IsTopTransactionName function.
++ Fixed allocation of savepoint\_name in correct memory context in pltsql\_eval\_txn\_data.
 
 ### Babelfish for Aurora PostgreSQL 6.0
 <a name="AuroraBabelfish.Updates.60X"></a>
@@ -80,11 +117,48 @@ This release of Aurora Babelfish is provided with Aurora PostgreSQL 18.3. For mo
 <a name="aurorababelfish-versions-version5x"></a>
 
 **Topics**
++ [Babelfish for Aurora PostgreSQL 5.6](#AuroraBabelfish.Updates.56X)
 + [Babelfish for Aurora PostgreSQL 5.5](#AuroraBabelfish.Updates.55X)
 + [Babelfish for Aurora PostgreSQL 5.4](#AuroraBabelfish.Updates.54X)
 + [Babelfish for Aurora PostgreSQL 5.3](#AuroraBabelfish.Updates.53X)
 + [Babelfish for Aurora PostgreSQL 5.2](#AuroraBabelfish.Updates.52X)
 + [Babelfish for Aurora PostgreSQL 5.1](#AuroraBabelfish.Updates.51X)
+
+### Babelfish for Aurora PostgreSQL 5.6
+<a name="AuroraBabelfish.Updates.56X"></a>
+
+This release of Aurora Babelfish is provided with Aurora PostgreSQL 17.10. For more information about the improvements in Aurora PostgreSQL 17.10, see [Amazon Aurora PostgreSQL updates](AuroraPostgreSQL.Updates.md). Babelfish for Aurora PostgreSQL 5.6 adds several new features, enhancements, and fixes. For more information about Babelfish for Aurora PostgreSQL, see [Working with Babelfish for Aurora PostgreSQL](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/babelfish.html).
+
+#### Aurora Babelfish release 5.6.0, August 21, 2026
+<a name="AuroraBabelfish.Updates.560"></a>
+
+**New Features**
++ Added support for STGeometryType(), STNumPoints(), Parse(), MakeValid() and STMPointFromText() Geospatial functions.
++ Added support for Multipoint instances in Babelfish.
++ Babelfish now extends support for Shared Plan Cache to T-SQL queries.
++ Added support for ELEMENTS directive in FOR XML RAW and FOR XML PATH.
+
+**Critical enhancements**
++ Fixed an issue that could cause crash in SPI\_finish after Out Of Memory error.
++ Fixed crash in FOR XML PATH queries when processing all-NULL rows without a root element.
++ Improved query performance when expanding the views and procedures in SSMS Object Explorer.
+
+**High Priority stability enhancements**
++ Fixed sys.fn\_varbintohexsubstring function definition after major version upgrade.
++ Fixed an issue that could cause a database reboot when dropping a temporary table from within a nested stored procedure.
++ Fixed an issue where queries with local variables could return inconsistent results when using generic query plans.
++ Fixed an issue that could cause a database reboot when dropping a temporary table from within a nested stored procedure.
++ Fixed an issue where creating a function or procedure in a schema created from the PostgreSQL endpoint could cause a database reboot.
+
+**Additional improvements and enhancements**
++ Improved memory handling in FOR XML query processing.
++ Fixed an issue where sp\_execute returned an error when invoked with named parameters.
++ Fixed FOR XML RAW to properly handle empty element names by omitting the row wrapper element instead of generating invalid empty tags.
++ Fixed DATETIME2FROMPARTS function to properly handle fractional second values in the range 32786 to 9999999.
++ Improved memory handling in PrepareRowDescription and rewrite\_if\_condition functions.
++ Fixed an issue where go-sqlcmd client driver failed to return query results.
++ Fixed Memory management issue in IsTopTransactionName function.
++ Fixed allocation of savepoint\_name in correct memory context in pltsql\_eval\_txn\_data.
 
 ### Babelfish for Aurora PostgreSQL 5.5
 <a name="AuroraBabelfish.Updates.55X"></a>
@@ -461,6 +535,7 @@ For more information about relevant permission management and access control set
 <a name="aurorababelfish-versions-version4x"></a>
 
 **Topics**
++ [Babelfish for Aurora PostgreSQL 4.10](#AuroraBabelfish.Updates.410X)
 + [Babelfish for Aurora PostgreSQL 4.9](#AuroraBabelfish.Updates.49X)
 + [Babelfish for Aurora PostgreSQL 4.8](#AuroraBabelfish.Updates.48X)
 + [Babelfish for Aurora PostgreSQL 4.7](#AuroraBabelfish.Updates.47X)
@@ -471,6 +546,34 @@ For more information about relevant permission management and access control set
 + [Babelfish for Aurora PostgreSQL 4.2](#AuroraBabelfish.Updates.42X)
 + [Babelfish for Aurora PostgreSQL 4.1](#AuroraBabelfish.Updates.41X)
 + [Babelfish for Aurora PostgreSQL 4.0](#AuroraBabelfish.Updates.40X)
+
+### Babelfish for Aurora PostgreSQL 4.10
+<a name="AuroraBabelfish.Updates.410X"></a>
+
+This release of Aurora Babelfish is provided with Aurora PostgreSQL 16.14. For more information about the improvements in Aurora PostgreSQL 16.14, see [Amazon Aurora PostgreSQL updates](AuroraPostgreSQL.Updates.md). Babelfish for Aurora PostgreSQL 4.10 adds several new features, enhancements, and fixes. For more information about Babelfish for Aurora PostgreSQL, see [Working with Babelfish for Aurora PostgreSQL](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/babelfish.html).
+
+#### Aurora Babelfish release 4.10.0, August 21, 2026
+<a name="AuroraBabelfish.Updates.4100"></a>
+
+**New Features**
++ Babelfish now extends support for Shared Plan Cache to T-SQL queries.
+
+**Critical enhancements**
++ Fixed an issue that could cause crash in SPI\_finish after Out Of Memory error.
++ Fixed crash in FOR XML PATH queries when processing all-NULL rows without a root element.
++ Improved query performance when expanding the views and procedures in SSMS Object Explorer.
+
+**High Priority stability enhancements**
++ Fixed an issue where queries with local variables could return inconsistent results when using generic query plans.
++ Fixed an issue where creating a function or procedure in a schema created from the PostgreSQL endpoint could cause a database reboot.
+
+**Additional improvements and enhancements**
++ Improved memory handling in FOR XML query processing.
++ Fixed an issue where sp\_execute returned an error when invoked with named parameters.
++ Fixed DATETIME2FROMPARTS function to properly handle fractional second values in the range 32786 to 9999999.
++ Improved memory handling in PrepareRowDescription and rewrite\_if\_condition functions.
++ Fixed Memory management issue in IsTopTransactionName function.
++ Fixed allocation of savepoint\_name in correct memory context in pltsql\_eval\_txn\_data.
 
 ### Babelfish for Aurora PostgreSQL 4.9
 <a name="AuroraBabelfish.Updates.49X"></a>
@@ -1248,6 +1351,7 @@ This release of Aurora Babelfish is provided with Aurora PostgreSQL 16.1. For mo
 <a name="aurorababelfish-versions-version3x"></a>
 
 **Topics**
++ [Babelfish for Aurora PostgreSQL 3.14](#AuroraBabelfish.Updates.314X)
 + [Babelfish for Aurora PostgreSQL 3.13](#AuroraBabelfish.Updates.313X)
 + [Babelfish for Aurora PostgreSQL 3.12](#AuroraBabelfish.Updates.312X)
 + [Babelfish for Aurora PostgreSQL 3.11](#AuroraBabelfish.Updates.311)
@@ -1261,6 +1365,17 @@ This release of Aurora Babelfish is provided with Aurora PostgreSQL 16.1. For mo
 + [Babelfish for Aurora PostgreSQL 3.3](#AuroraBabelfish.Updates.33X)
 + [Babelfish for Aurora PostgreSQL 3.2](#AuroraBabelfish.Updates.32X)
 + [Babelfish for Aurora PostgreSQL 3.1 (Deprecated)](#AuroraBabelfish.Updates.31X)
+
+### Babelfish for Aurora PostgreSQL 3.14
+<a name="AuroraBabelfish.Updates.314X"></a>
+
+This release of Aurora Babelfish is provided with Aurora PostgreSQL 15.18. For more information about the improvements in Aurora PostgreSQL 15.18, see [Amazon Aurora PostgreSQL updates](AuroraPostgreSQL.Updates.md). Babelfish for Aurora PostgreSQL 3.14 adds several new features, enhancements, and fixes. For more information about Babelfish for Aurora PostgreSQL, see [Working with Babelfish for Aurora PostgreSQL](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/babelfish.html).
+
+#### Aurora Babelfish release 3.14.0, August 21, 2026
+<a name="AuroraBabelfish.Updates.3140"></a>
+
+**Critical enhancements**
++ Fixed an issue that could cause crash in SPI\_finish after Out Of Memory error.
 
 ### Babelfish for Aurora PostgreSQL 3.13
 <a name="AuroraBabelfish.Updates.313X"></a>
@@ -1959,8 +2074,8 @@ This release of Aurora Babelfish is provided with Aurora PostgreSQL 15.3. For mo
 + Supports TIMEFROMPARTS(), DATETIME2FROMPARTS(), ROWCOUNT\_BIG(), DATABASE\_PRINCIPAL\_ID() and CONTEXT\_INFO() T-SQL functions.
 + Supports STDEV(), STDEVP(), VAR(), VARP() statistical T-SQL aggregates.
 + Supports sp\_rename for COLUMN , TRIGGER, TABLE TYPE and USER DEFINED DATATYPE objects.
-+ Supports Babelfish instance as a linked server from SQL server instance. For more information, see [Babelfish supports linked servers](https://docs.aws.amazon.com//AmazonRDS/latest/AuroraUserGuide/babelfish-postgres-linkedservers.html).
-+ Supports 4 parts object name references for remote objects for select queries. For more information, see [Babelfish supports linked servers](https://docs.aws.amazon.com//AmazonRDS/latest/AuroraUserGuide/babelfish-postgres-linkedservers.html).
++ Supports Babelfish instance as a linked server from SQL server instance. For more information, see [Babelfish supports linked servers](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/babelfish-postgres-linkedservers.html).
++ Supports 4 parts object name references for remote objects for select queries. For more information, see [Babelfish supports linked servers](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/babelfish-postgres-linkedservers.html).
 + Supports TOP clause for INSERT SELECT statement.
 + Supports SET rowcount and SET CONTEXT\_INFO T-SQL syntax.
 
@@ -1989,7 +2104,7 @@ This release of Aurora Babelfish is provided with Aurora PostgreSQL 15.3. For mo
 + Fixed an issue in @@NEXTLEVEL which returned 1 unit larger than expected.
 + Fixed an issue in sp\_helpdb where input parameter’s case sensitivity is not handled properly.
 + Fixed an issue that COMMIT, ROLLBACK,EXECUTE, PRINT, SAVE and RAISERROR could be used in CREATE FUNCTION statement.
-+ Supports query timeout in sp\_serveroption for OPENQUERY. For more information, see [Babelfish supports linked servers](https://docs.aws.amazon.com//AmazonRDS/latest/AuroraUserGuide/babelfish-postgres-linkedservers.html).
++ Supports query timeout in sp\_serveroption for OPENQUERY. For more information, see [Babelfish supports linked servers](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/babelfish-postgres-linkedservers.html).
 + Fixed the case sensitivity issue in the CREATE USER for windows login.
 + Fixed an issue with detecting invalid login name in CREATE LOGIN WITH WINDOWS statement.
 + Fixed an issue to support INT values in JSON\_MODIFY() function.
@@ -2055,10 +2170,10 @@ This release of Aurora Babelfish is provided with Aurora PostgreSQL 15.2. For mo
 + Support for the following INFORMATION\_SCHEMA views: sequences, routines and schemata.
 + Support sp\_rename for TABLE, VIEW, PROCEDURE, FUNCTION, SEQUENCE.
 + Support sys.systypes system compatibility view.
-+ Support for a new GUC parameter called babelfishpg\_tds.product\_version that allows you to set SQL Server product version number that is returned as an output by Babelfish. For more information, see [Using Babelfish product version GUC](https://docs.aws.amazon.com//AmazonRDS/latest/AuroraUserGuide/babelfish-guc-version).
-+ Added support to generate data definition scripts for various objects present in a Babelfish for Aurora PostgreSQL database. For more information, see [DDL exports supported by Babelfish](https://docs.aws.amazon.com//AmazonRDS/latest/AuroraUserGuide/babelfish-query-database.html#babelfish-ddl-exports).
-+ Babelfish now supports Aurora PostgreSQL database authentication with Kerberos using AWS Directory Service for Microsoft Managed Active Directory. With this feature, for authentication you can use Microsoft Windows Authentication when you connect to your Babelfish database. For more information, see [Database authentication with Babelfish for Aurora PostgreSQL](https://docs.aws.amazon.com//AmazonRDS/latest/AuroraUserGuide/babelfish-db-authentication.html).
-+ Babelfish now supports linked servers from your Aurora PostgreSQL database by using the tds\_fdw (TDS Foreign Data Wrapper) APG extension. Only the OPENQUERY function that executes the specified pass-through query on the specified linked server is currently supported. For more information, see [Babelfish supports linked servers](https://docs.aws.amazon.com//AmazonRDS/latest/AuroraUserGuide/babelfish-postgres-linkedservers.html).
++ Support for a new GUC parameter called babelfishpg\_tds.product\_version that allows you to set SQL Server product version number that is returned as an output by Babelfish. For more information, see [Using Babelfish product version GUC](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/babelfish-guc-version).
++ Added support to generate data definition scripts for various objects present in a Babelfish for Aurora PostgreSQL database. For more information, see [DDL exports supported by Babelfish](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/babelfish-query-database.html#babelfish-ddl-exports).
++ Babelfish now supports Aurora PostgreSQL database authentication with Kerberos using AWS Directory Service for Microsoft Managed Active Directory. With this feature, for authentication you can use Microsoft Windows Authentication when you connect to your Babelfish database. For more information, see [Database authentication with Babelfish for Aurora PostgreSQL](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/babelfish-db-authentication.html).
++ Babelfish now supports linked servers from your Aurora PostgreSQL database by using the tds\_fdw (TDS Foreign Data Wrapper) APG extension. Only the OPENQUERY function that executes the specified pass-through query on the specified linked server is currently supported. For more information, see [Babelfish supports linked servers](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/babelfish-postgres-linkedservers.html).
 
 **Security enhancements**
 + Fixed buffer overflow due to out of bound array access.
@@ -2110,6 +2225,7 @@ This release of Aurora Babelfish is provided with Aurora PostgreSQL 15.2. For mo
 <a name="aurorababelfish-versions-version2x"></a>
 
 **Topics**
++ [Babelfish for Aurora PostgreSQL 2.17](#AuroraBabelfish.Updates.217X)
 + [Babelfish for Aurora PostgreSQL 2.16](#AuroraBabelfish.Updates.216X)
 + [Babelfish for Aurora PostgreSQL 2.14](#AuroraBabelfish.Updates.214X)
 + [Babelfish for Aurora PostgreSQL 2.13](#AuroraBabelfish.Updates.213X)
@@ -2125,6 +2241,17 @@ This release of Aurora Babelfish is provided with Aurora PostgreSQL 15.2. For mo
 + [Babelfish for Aurora PostgreSQL 2.3 (Deprecated)](#AuroraBabelfish.Updates.23X)
 + [Babelfish for Aurora PostgreSQL 2.2](#AuroraBabelfish.Updates.22X)
 + [Babelfish for Aurora PostgreSQL 2.1](#AuroraBabelfish.Updates.21X)
+
+### Babelfish for Aurora PostgreSQL 2.17
+<a name="AuroraBabelfish.Updates.217X"></a>
+
+This release of Aurora Babelfish is provided with Aurora PostgreSQL 14.23. For more information about the improvements in Aurora PostgreSQL 14.23, see [Amazon Aurora PostgreSQL updates](AuroraPostgreSQL.Updates.md). Babelfish for Aurora PostgreSQL 2.17 adds several new features, enhancements, and fixes. For more information about Babelfish for Aurora PostgreSQL, see [Working with Babelfish for Aurora PostgreSQL](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/babelfish.html).
+
+#### Aurora Babelfish release 2.17.0, August 21, 2026
+<a name="AuroraBabelfish.Updates.2170"></a>
+
+**Critical enhancements**
++ Fixed an issue that could cause crash in SPI\_finish after Out Of Memory error.
 
 ### Babelfish for Aurora PostgreSQL 2.16
 <a name="AuroraBabelfish.Updates.216X"></a>
@@ -2557,8 +2684,6 @@ This release of Aurora Babelfish is provided with Aurora PostgreSQL 14.7. For mo
 
 #### Aurora Babelfish release 2.4.3, October 4, 2023
 <a name="AuroraBabelfish.Updates.243"></a>
-
-****
 + Fixed a memory management issue with `update_DropRoleStmt`.
 + Fixed a crash in `SqlBulkCopy` with heap\_compute\_data\_size function in stacktrace when the order of columns is different compared to table defining.
 + Fixed an issue that `bcp in` results in server crash when the table has large number of columns.
@@ -2587,8 +2712,8 @@ This release of Aurora Babelfish is provided with Aurora PostgreSQL 14.7. For mo
 + Support for the following INFORMATION\_SCHEMA views: sequences, routines and schemata.
 +  Support sp\_rename for TABLE, VIEW, PROCEDURE, FUNCTION, SEQUENCE.
 + Support sys.systypes system compatibility view.
-+ Support for a new GUC parameter called babelfishpg\_tds.product\_version that allows you to set SQL Server product version number that is returned as an output by Babelfish. For more information, see [Using Babelfish product version GUC](https://docs.aws.amazon.com//AmazonRDS/latest/AuroraUserGuide/babelfish-guc-version).
-+ Added support to generate data definition scripts for various objects present in a Babelfish for Aurora PostgreSQL database. For more information, see [DDL exports supported by Babelfish](https://docs.aws.amazon.com//AmazonRDS/latest/AuroraUserGuide/babelfish-query-database.html#babelfish-ddl-exports).
++ Support for a new GUC parameter called babelfishpg\_tds.product\_version that allows you to set SQL Server product version number that is returned as an output by Babelfish. For more information, see [Using Babelfish product version GUC](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/babelfish-guc-version).
++ Added support to generate data definition scripts for various objects present in a Babelfish for Aurora PostgreSQL database. For more information, see [DDL exports supported by Babelfish](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/babelfish-query-database.html#babelfish-ddl-exports).
 
 **Security enhancements**
 + Fixed buffer overflow due to out of bound array access.

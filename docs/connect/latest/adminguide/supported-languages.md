@@ -77,7 +77,7 @@ The following table lists the languages supported by AI features in Connect Cust
 | Latvian (Latvia) | lv\_LV | ✓\* |  |  | ✓\* | ✓\* | ✓\* |  |  |  |  | ✓\* |
 | Lithuanian (Lithuania) | lt\_LT | ✓\* |  |  | ✓\* |  | ✓\* |  |  |  |  | ✓\* |
 | Macedonian (North Macedonia) | mk\_MK |  |  |  | ✓\* |  | ✓\* |  |  |  |  | ✓\* |
-| Malay (Malaysia) | ms\_MY | ✓\* | ✓\* |  | ✓\* | ✓\* | ✓\* |  |  |  |  | ✓\* |
+| Malay (Malaysia) | ms\_MY | ✓\* | ✓\* | ✓ | ✓\* | ✓\* | ✓\* |  |  |  |  | ✓\* |
 | Malayalam (India) | ml\_IN |  |  |  | ✓\* |  | ✓\* |  |  |  |  | ✓\* |
 | Marathi (India) | mr\_IN | ✓\* | ✓\* |  | ✓\* |  | ✓\* |  |  |  |  | ✓\* |
 | Norwegian (Norway) | no\_NO | ✓\* | ✓\* |  | ✓\* | ✓\* | ✓\* |  |  |  |  | ✓\* |
@@ -108,7 +108,7 @@ The following table lists the languages supported by AI features in Connect Cust
 | Zulu (South Africa) | zu\_ZA | ✓\* |  |  | ✓\* |  | ✓\* |  |  |  |  | ✓\* |
 + \* Not available in instances in the Africa (Cape Town) AWS Region and AWS GovCloud (US-West).
 + \*\* Redaction support is only for post-call analytics and chat analytics. It is not supported for real-time call analytics.
-+ † You can manually complete performance evaluations in any language. Automated performance evaluations filled using generative AI is not available in instances in the following AWS regions: Africa (Cape Town), Asia Pacific (Mumbai), Asia Pacific (Seoul) and AWS GovCloud (US-West).
++ † You can manually complete performance evaluations in any language. Automated performance evaluations filled using generative AI is not available in instances in the following AWS Regions: Africa (Cape Town), Asia Pacific (Mumbai), Asia Pacific (Seoul) and AWS GovCloud (US-West).
 
 ### Language support for agent assist
 <a name="qic-notes-languages"></a>

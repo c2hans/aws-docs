@@ -15,7 +15,7 @@ AWS Control Tower creates a customer's account by calling the `CreateAccount` AP
 AWS Control Tower takes over the `AWSControlTowerExecution` role for all accounts created by Account Factory. Using this role, AWS Control Tower *baselines* the account and applies mandatory (and any other enabled) controls, which results in creation of other roles. These roles in turn are used by other services, such as AWS Config.
 
 **Note**
-To *baseline* an account is to set up its resources, which include [Account Factory templates](https://docs.aws.amazon.com//controltower/latest/userguide/account-factory-considerations.html), sometimes referred to as *blueprints*, and controls. The baselining process also sets up the centralized logging and security audit roles on the account, as part of deploying the templates. AWS Control Tower baselines are contained in the roles that you apply to every enrolled account.
+To *baseline* an account is to set up its resources, which include [Account Factory templates](https://docs.aws.amazon.com/controltower/latest/userguide/account-factory-considerations.html), sometimes referred to as *blueprints*, and controls. The baselining process also sets up the centralized logging and security audit roles on the account, as part of deploying the templates. AWS Control Tower baselines are contained in the roles that you apply to every enrolled account.
 
 For more information about accounts and resources, see [About AWS accounts in AWS Control Tower](accounts.md).
 

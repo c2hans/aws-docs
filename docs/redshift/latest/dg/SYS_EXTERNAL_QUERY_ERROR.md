@@ -27,6 +27,7 @@ SYS\_EXTERNAL\_QUERY\_ERROR is visible to all users. Superusers can see all rows
 | action  | char(128)  | Action associated with the data handling option specified in the query.  |
 | action\_value  | char(128)  | Value of action parameter associated with the data handling option specified in the query.  |
 | error\_code  | integer  | Result code of the data handling option specified in the query.  |
+| query\_uuid | character(36) | A globally unique identifier (UUID) of the query. |
 
 ## Sample query
 <a name="SYS_EXTERNAL_QUERY_ERROR-sample-query"></a>

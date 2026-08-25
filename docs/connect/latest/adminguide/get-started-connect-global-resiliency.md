@@ -46,3 +46,7 @@ The default traffic distribution for these phone numbers is set to 100% - 0%. Th
 In addition, after phone numbers are claimed to an instance, you can assign them to multiple instances across AWS Regions. To do this, use the [UpdatePhoneNumber](https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdatePhoneNumber.html) API to assign the numbers to a traffic distribution group.
 
 1. [Update your traffic distribution](update-telephony-traffic-distribution.md). Use the [UpdateTrafficDistribution](https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateTrafficDistribution.html) API to distribute traffic across the linked instances in 10% increments.
+
+**Perform monthly failover testing**
+Perform monthly testing to validate your failover procedure and confirm your runbook is current.
+If a full failover test is not feasible, create a test traffic distribution group pointed to the replica Region. Use it to test critical flows monthly without impacting production traffic.

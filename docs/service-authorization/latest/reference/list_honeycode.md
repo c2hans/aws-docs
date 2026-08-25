@@ -24,8 +24,6 @@ References:
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
 
-****
-
 - **   [BatchCreateTableRows](https://docs.aws.amazon.com/honeycode/latest/UserGuide/API_BatchCreateTableRows.html)  **
   - **Description:** Grants permission to create new rows in a table
   - **Resource types (\*required):** [table\*](#list_honeycode-resource-table)
@@ -121,8 +119,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 The following actions are defined by Amazon Honeycode but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 | Actions | Description | Resource types (\*required) | Condition keys | Access level |
 | --- | --- | --- | --- | --- |
 |   [ApproveTeamAssociation](https://docs.aws.amazon.com/honeycode/latest/UserGuide/team-association.html#approve-team-association)  | Grants permission to approve a team association request for your AWS Account |  |   | Write |
@@ -145,8 +141,6 @@ The following actions are defined by Amazon Honeycode but are not directly invoc
 <a name="list_honeycode-resources-for-iam-policies"></a>
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
-
-****
 
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |

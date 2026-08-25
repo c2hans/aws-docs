@@ -14,8 +14,6 @@ Update Identity and Access Management (IAM) user, role, or policy.
 ## Change Type Details
 <a name="ct-27tuth19k52b4-MAIu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-27tuth19k52b4 |

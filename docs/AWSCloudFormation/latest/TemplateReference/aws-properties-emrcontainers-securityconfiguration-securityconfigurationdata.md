@@ -41,7 +41,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-emrcontainers-securityconfiguration-securityconfigurationdata-properties"></a>
 
 `AuthenticationConfiguration`  <a name="cfn-emrcontainers-securityconfiguration-securityconfigurationdata-authenticationconfiguration"></a>
-Property description not available.
+Authentication-related configuration input for the security configuration.
 *Required*: No
 *Type*: [AuthenticationConfiguration](aws-properties-emrcontainers-securityconfiguration-authenticationconfiguration.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)

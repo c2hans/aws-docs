@@ -17,7 +17,7 @@ Contiguously-allocated Elastic IP addresses enable you to simplify your security
 In this tutorial, you'll go through the steps required to allocate sequential Elastic IP addresses from an IPAM pool. You'll create an IPAM pool with an Amazon-provided contiguous public IPv4 CIDR block, allocate Elastic IP addresses from the pool, and learn how to monitor IPAM pool allocations.
 
 **Note**
-There are charges associated with provisioning Amazon-owned public IPv4 CIDR blocks. For more information, see the **Amazon-provided contiguous IPv4 block** tab on the [Amazon VPC pricing page](https://aws.amazon.com//vpc/pricing/).
+There are charges associated with provisioning Amazon-owned public IPv4 CIDR blocks. For more information, see the **Amazon-provided contiguous IPv4 block** tab on the [Amazon VPC pricing page](https://aws.amazon.com/vpc/pricing/).
 This tutorial assumes you want to create an IPAM [using IPAM with a single account](enable-single-user-ipam.md). If you want to share Amazon-owned contiguous public IPv4 blocks across accounts, first [Integrate IPAM with accounts in an AWS Organization](enable-integ-ipam.md) and then [Share an IPAM pool using AWS RAM](share-pool-ipam.md). If you integrate with AWS Organizations, you have the option to create a [service control policy](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html) to prevent deprovisioning of the contig IPv4 blocks assigned to the pool.
 You cannot [transfer](https://docs.aws.amazon.com/vpc/latest/userguide/WorkWithEIPs.html#transfer-EIPs-intro) sequential Elastic IP addresses allocated from an IPAM pool to other AWS accounts. Instead, IPAM allows you to share IPAM pools across AWS accounts by integrating IPAM with AWS Organizations (as mentioned above).
 There are limits on the number of Amazon-owned public IPv4 CIDR blocks you can provision and their size. For more information, see [Quotas for your IPAM](quotas-ipam.md).
@@ -48,7 +48,7 @@ Complete the steps in this section to create an IPAM.
 
 1. Select **Allow Amazon VPC IP Address Manager to replicate data from source account(s) into the IPAM delegate account**. If you do not select this option, you cannot create an IPAM.
 
-1. Choose an **IPAM tier**. For more information about the features available in each tier and the costs associated with the tiers, see the IPAM tab on the [Amazon VPC pricing page](https://aws.amazon.com//vpc/pricing/).
+1. Choose an **IPAM tier**. For more information about the features available in each tier and the costs associated with the tiers, see the IPAM tab on the [Amazon VPC pricing page](https://aws.amazon.com/vpc/pricing/).
 
 1. Under **Operating regions**, select the AWS Regions in which this IPAM can manage and discover resources. The AWS Region in which you are creating your IPAM is selected as one of the operating Regions by default. For example, if you're creating this IPAM in AWS Region `us-east-1` but you want to create Regional IPAM pools later that provide CIDRs to VPCs in `us-west-2`, select `us-west-2` here. If you forget an operating Region, you can return at a later time and edit your IPAM settings.
 **Note**

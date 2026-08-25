@@ -80,7 +80,7 @@ The purpose of the `GetSessionToken` operation is to authenticate the user using
 + Call API operations that access resources in the same or a different AWS account. The API calls can include any IAM or AWS STS API. Note that to protect access you enforce MFA at the time when the user assumes the role. The temporary credentials returned by `AssumeRole` do not include MFA information in the context, so you cannot check individual API operations for MFA. This is why you must use `GetSessionToken` to restrict access to resources protected by resource-based policies.
 
 **Note**
-AWS CloudTrail logs will contain MFA information when the IAM user signs in with MFA. If the IAM user assumes an IAM role, CloudTrail will also log `mfaAuthenticated: true` in the `sessionContext` attributes for actions performed using the assumed role. However, CloudTrail logging is separate from what IAM requires when API calls are made with the assumed role's credentials. For more information, see [CloudTrail userIdentity Element](https://docs.aws.amazon.com//awscloudtrail/latest/userguide/cloudtrail-event-reference-user-identity.html).
+AWS CloudTrail logs will contain MFA information when the IAM user signs in with MFA. If the IAM user assumes an IAM role, CloudTrail will also log `mfaAuthenticated: true` in the `sessionContext` attributes for actions performed using the assumed role. However, CloudTrail logging is separate from what IAM requires when API calls are made with the assumed role's credentials. For more information, see [CloudTrail userIdentity Element](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference-user-identity.html).
 
 Details about how to implement these scenarios are provided later in this document.
 

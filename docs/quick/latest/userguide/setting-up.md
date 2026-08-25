@@ -13,6 +13,8 @@ Amazon Quick offers two ways to get started, depending on your needs:
 
 **AWS Console accounts:** If your organization uses AWS, you can provision Amazon Quick through the AWS Management Console. This path uses IAM Identity Center for authentication and integrates with your existing AWS billing and governance.
 
+If your IAM Identity Center instance is replicated to multiple AWS Regions, you can create your Quick Enterprise subscription in an active additional Region. For more information, see [Set up Amazon Quick with IAM Identity Center multi-Region](setting-up-sso.md#idc-multi-region).
+
 For a comparison of features available with each account type, see [Pricing and availability](https://docs.aws.amazon.com/quicksuite/latest/userguide/what-is.html#pricing).
 
 For more information on administering your account after setup, see [Administering Amazon Quick (Free/Plus)](https://docs.aws.amazon.com/quicksuite/latest/userguide/standalone-admin-guide.html) or [Administering Amazon Quick](https://docs.aws.amazon.com/quicksuite/latest/userguide/qsysadmin.html) for accounts provisioned through the AWS Management Console.
@@ -37,4 +39,4 @@ The following configuration tasks apply to AWS Console accounts only. If you are
 ### Sign up for an AWS account
 <a name="sign-up-for-aws"></a>
 
-To get started with AWS, you need an AWS account. For information about creating an AWS account, see [Getting started with an AWS account](https://docs.aws.amazon.com//accounts/latest/reference/getting-started.html) in the *AWS Account Management Reference Guide*.
+To get started with AWS, you need an AWS account. For information about creating an AWS account, see [Getting started with an AWS account](https://docs.aws.amazon.com/accounts/latest/reference/getting-started.html) in the *AWS Account Management Reference Guide*.

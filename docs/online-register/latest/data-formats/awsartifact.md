@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsa
 
 AWS Artifact provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="artifact-ExportComplianceInquiry"></a>[ExportComplianceInquiry](https://docs.aws.amazon.com/artifact/latest/APIReference/API_ExportComplianceInquiry.html) | Export a compliance inquiry | Read |

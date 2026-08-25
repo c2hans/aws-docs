@@ -14,7 +14,7 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/bulk-
 +  You need to provide permissions to perform the export task on the Neptune Database cluster or snapshot, write to your Amazon S3 bucket, and use your KMS key while writing data.
 +  If your source is a Neptune Database cluster, a clone is taken from it and used for export. The original Neptune Database cluster will not be impacted. The cloned cluster is internally managed by the service and is deleted upon completion.
 +  If your source is a Neptune snapshot, a restored DBCluster is created from it, and used for export. The restored cluster is internally managed by the service and is deleted upon completion.
-+  This process is not recommended for small sized graphs. The export process is async, and works best for medium/large sized graphs with a size greater than 25GB. For smaller graphs, a better alternative is to use the [Neptune export](https://docs.aws.amazon.com//neptune/latest/userguide/neptune-export.html) feature to generate CSV data directly from your source, upload that to Amazon S3 and then use the [Batch load](batch-load.md) API instead.
++  This process is not recommended for small sized graphs. The export process is async, and works best for medium/large sized graphs with a size greater than 25GB. For smaller graphs, a better alternative is to use the [Neptune export](https://docs.aws.amazon.com/neptune/latest/userguide/neptune-export.html) feature to generate CSV data directly from your source, upload that to Amazon S3 and then use the [Batch load](batch-load.md) API instead.
 
  A quick summary of steps to import from a Neptune cluster or a Neptune snapshot:
 

@@ -42,7 +42,7 @@ A whitepaper that describes the best practices for designing MQTT topics in AWS 
 A PDF document that describes the different ways that AWS IoT provides to provision large fleets of devices.
 +
 
-**[AWS IoT Core Device Advisor](https://docs.aws.amazon.com//iot/latest/developerguide/device-advisor.html)**
+**[AWS IoT Core Device Advisor](https://docs.aws.amazon.com/iot/latest/developerguide/device-advisor.html)**
 AWS IoT Core Device Advisor provides pre-built tests that you can use to validate IoT devices for reliable and secure connectivity best practices with AWS IoT Core, before deploying devices to production.
 +
 
@@ -77,27 +77,27 @@ These social media accounts cover all AWS services, including AWS IoT
 The AWS IoT Core rules engine can connect to these AWS services.
 +
 
-**[Amazon DynamoDB](https://docs.aws.amazon.com//dynamodb/)**
+**[Amazon DynamoDB](https://docs.aws.amazon.com/dynamodb/)**
 Amazon DynamoDB is a scalable, NoSQL database service that provides fast and predictable database performance.
 +
 
-**[Amazon Kinesis](https://docs.aws.amazon.com//kinesis/)**
+**[Amazon Kinesis](https://docs.aws.amazon.com/kinesis/)**
 Amazon Kinesis makes it easy to collect, process, and analyze real-time, streaming data so you can get timely insights and react quickly to new information. Amazon Kinesis can ingest real-time data such as video, audio, application logs, website clickstreams, and IoT telemetry data for machine learning, analytics, and other applications.
 +
 
-**[AWS Lambda](https://docs.aws.amazon.com//lambda/)**
+**[AWS Lambda](https://docs.aws.amazon.com/lambda/)**
 AWS Lambda lets you run code without provisioning or managing servers. You can set up your code to automatically trigger from AWS IoT data and events or call it directly from a web or mobile app.
 +
 
-**[Amazon Simple Storage Service](https://docs.aws.amazon.com//s3/)**
+**[Amazon Simple Storage Service](https://docs.aws.amazon.com/s3/)**
 Amazon Simple Storage Service (Amazon S3) can store and retrieve any amount of data at any time, from anywhere on the web. AWS IoT rules can send data to Amazon S3 for storage.
 +
 
-**[Amazon Simple Notification Service](https://docs.aws.amazon.com//sns/)**
+**[Amazon Simple Notification Service](https://docs.aws.amazon.com/sns/)**
 Amazon Simple Notification Service (Amazon SNS) is a web service that enables applications, end users, and devices to send and receive notifications from the cloud.
 +
 
-**[Amazon Simple Queue Service](https://docs.aws.amazon.com//sqs/)**
+**[Amazon Simple Queue Service](https://docs.aws.amazon.com/sqs/)**
 Amazon Simple Queue Service (Amazon SQS) is a message queuing service that decouples and scales microservices, distributed systems, and serverless applications.
 +
 
@@ -105,11 +105,11 @@ Amazon Simple Queue Service (Amazon SQS) is a message queuing service that decou
 Amazon OpenSearch Service (OpenSearch Service) is a managed service that makes it easy to deploy, operate, and scale OpenSearch, a popular open-source search and analytics engine.
 +
 
-**[Amazon SageMaker AI](https://docs.aws.amazon.com//sagemaker/latest/dg/whatis.html)**
+**[Amazon SageMaker AI](https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html)**
 Amazon SageMaker AI can create machine learning (ML) models by finding patterns in your IoT data. The service uses these models to process new data and generate predictions for your application.
 +
 
-**[Amazon CloudWatch](https://docs.aws.amazon.com//cloudwatch/)**
+**[Amazon CloudWatch](https://docs.aws.amazon.com/cloudwatch/)**
 Amazon CloudWatch provides a reliable, scalable, and flexible monitoring solution to help set up, manage, and scale your own monitoring systems and infrastructure.
 
 ## Communication protocols supported by AWS IoT Core

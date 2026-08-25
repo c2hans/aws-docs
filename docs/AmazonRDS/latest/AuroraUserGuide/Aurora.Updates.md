@@ -16,7 +16,7 @@ Some updates are specific to a database engine supported by Aurora. For more inf
 
 | Database engine | Updates |
 | --- | --- |
-| Amazon Aurora MySQL | See [Database engine updates for Amazon Aurora MySQLLong-term support (LTS) and beta releases for Amazon Aurora MySQL](AuroraMySQL.Updates.md) |
+| Amazon Aurora MySQL | See [Database engine updates for Amazon Aurora MySQL](AuroraMySQL.Updates.md) |
 | Amazon Aurora PostgreSQL | See [Database engine updates for Amazon Aurora PostgreSQL](AuroraPostgreSQL.Updates.md) |
 
 ## Identifying your Amazon Aurora version

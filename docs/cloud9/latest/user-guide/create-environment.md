@@ -9,13 +9,9 @@ source_url: https://docs.aws.amazon.com/cloud9/latest/user-guide/create-environm
 
 To create an AWS Cloud9 development environment, follow one of the provided procedures based on how you plan to use AWS Cloud9.
 
-****
-
 |  |
 | --- |
 | If you're not sure what to choose, we recommend [Creating an EC2 Environment](create-environment-main.md).<br />For a quick setup, create an EC2 environment. AWS Cloud9 automatically creates and sets up a new Amazon EC2 instance in your AWS account. AWS Cloud9 also automatically connects that new instance to the environment for you.<br />To understand the key similarities and differences between the development environments, see [EC2 environments compared with SSH environments in AWS Cloud9](ec2-env-versus-ssh-env.md). |
-
-****
 
 |  **Source code provider**  |  **Development environment host provider**  |  **Relevant procedure**  |
 | --- | --- | --- |

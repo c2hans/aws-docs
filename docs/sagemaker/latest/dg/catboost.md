@@ -25,8 +25,6 @@ SageMaker AI CatBoost currently only trains using CPUs. CatBoost is a memory-bou
 
  The following table outlines a variety of sample notebooks that address different use cases of Amazon SageMaker AI CatBoost algorithm.
 
-****
-
 | **Notebook Title** | **Description** |
 | --- | --- |
 | [Tabular classification with Amazon SageMaker AI LightGBM and CatBoost algorithm](https://github.com/aws/amazon-sagemaker-examples/blob/main/introduction_to_amazon_algorithms/lightgbm_catboost_tabular/Amazon_Tabular_Classification_LightGBM_CatBoost.ipynb) | This notebook demonstrates the use of the Amazon SageMaker AI CatBoost algorithm to train and host a tabular classification model.  |

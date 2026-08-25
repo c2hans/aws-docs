@@ -10,8 +10,6 @@ When you create an input manifest file for a [built-in task types](https://docs.
 **Tip**
 When you use the automated data setup, additional data formats can be used to generate an input manifest file for video frame and text based task types.
 
-****
-
 | Task Types | Input Data Type | Support Formats | Example Input Manifest Line |
 | --- | --- | --- | --- |
 | Bounding Box, Semantic Segmentation, Image Classification (Single Label and Multi-label), Verify and Adjust Labels | Image | .jpg, .jpeg, .png |  <pre>{"source-ref": "{{s3://amzn-s3-demo-bucket1/example-image.png}}"}</pre>  |

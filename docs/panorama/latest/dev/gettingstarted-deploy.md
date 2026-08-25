@@ -47,8 +47,6 @@ $ pip3 install --upgrade awscli panoramacli
 ```
 
 Download the sample application, and extract it into your workspace.
-
-****
 + **Sample application** – [aws-panorama-sample.zip](https://github.com/awsdocs/aws-panorama-developer-guide/releases/download/v1.0-ga/aws-panorama-sample.zip)
 
 ## Import the sample application
@@ -161,8 +159,6 @@ If the application doesn't start running, check the [application and device logs
 1. Open the [Log groups page of the CloudWatch Logs console](https://console.aws.amazon.com/cloudwatch/home#logsV2:log-groups).
 
 1. Find AWS Panorama application and appliance logs in the following groups:
-
-****
    + **Device logs** – `/aws/panorama/devices/{{device-id}}`
    + **Application logs** – `/aws/panorama/devices/{{device-id}}/applications/{{instance-id}}`
 

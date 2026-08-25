@@ -2,15 +2,15 @@
 source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/run-diff-scan-s3.html
 ---
 
-# Run a differential code scan with S3
+# Run a Continuum differential code scan with S3
 <a name="run-diff-scan-s3"></a>
 
 Run a differential (diff) code scan to analyze only the changed lines in your source code, rather than performing a full repository scan. Differential scans are faster than full scans and produce findings targeted to specific code changes, making them ideal for pre-merge validation in development workflows.
 
-Unlike pull request-based code review which is triggered automatically by third-party source control provider events (see [Review code security findings in pull requests](review-code-findings-github.md)), differential scans are initiated programmatically through the AWS Security Agent API or SDK. You upload a unified diff file to S3 and reference it when starting a code review job.
+Unlike pull request-based code review which is triggered automatically by third-party source control provider events (see [Review Continuum code security findings in pull requests](review-code-findings-github.md)), differential scans are initiated programmatically through the AWS Security Agent API or SDK. You upload a unified diff file to S3 and reference it when starting a code review job.
 
-## How differential scans work
-<a name="_how_differential_scans_work"></a>
+## How Continuum differential scans work
+<a name="_how_continuum_differential_scans_work"></a>
 
 A differential scan analyzes your code changes in the full context of your repository. When you create a code review resource with your source code uploaded to S3, the differential scan uses the complete repository as context while focusing findings specifically on the changed lines in your diff. This enables the scan to identify security issues that arise from how your changes interact with existing code — such as broken authentication flows, insecure data handling across modules, or changes that expose existing vulnerabilities.
 
@@ -20,8 +20,8 @@ The scan process: . You upload a unified diff file (the output of `git diff`) to
 <a name="_prerequisites"></a>
 
 Before you begin, ensure you have:
-+ An Agent Space with code review enabled (see [Enable code review](enable-code-review-scan.md))
-+ A code review resource already created for the target repository, with the full source code uploaded to the S3 bucket connected to your Agent Space. The full repository provides context that enables deeper analysis of how your changes interact with existing code. See [Create a code review](perform-code-review-scan.md) for instructions on creating a code review and uploading source code.
++ An Agent Space with code review enabled (see [Enable Continuum code review](enable-code-review-scan.md))
++ A code review resource already created for the target repository, with the full source code uploaded to the S3 bucket connected to your Agent Space. The full repository provides context that enables deeper analysis of how your changes interact with existing code. See [Create a Continuum code review](perform-code-review-scan.md) for instructions on creating a code review and uploading source code.
 + An S3 bucket connected to your Agent Space
 + IAM permissions to upload to the S3 bucket and call `securityagent:StartCodeReviewJob`
 + A unified diff file generated from your code changes (for example, the output of `git diff main..feature-branch`)
@@ -57,10 +57,10 @@ aws s3 cp changes.diff s3://my-security-agent-bucket/diffs/changes.diff
 ```
 
 **Important**
-The S3 bucket must be one that is already connected to your Agent Space. The IAM service role associated with your Agent Space must have read access to this location. See [Enable code review](enable-code-review-scan.md) for instructions on connecting S3 buckets.
+The S3 bucket must be one that is already connected to your Agent Space. The IAM service role associated with your Agent Space must have read access to this location. See [Enable Continuum code review](enable-code-review-scan.md) for instructions on connecting S3 buckets.
 
-## Step 3: Start a differential code review job
-<a name="_step_3_start_a_differential_code_review_job"></a>
+## Step 3: Start a Continuum differential code review job
+<a name="_step_3_start_a_continuum_differential_code_review_job"></a>
 
 Call the `StartCodeReviewJob` API with the `diffSource` parameter to initiate a differential scan.
 
@@ -147,7 +147,7 @@ Each finding includes:
 + Risk reasoning explaining the potential impact
 + Remediation guidance
 
-For more information about understanding and acting on findings, see [Review findings from a code review](review-code-scan-findings.md).
+For more information about understanding and acting on findings, see [Review findings from a Continuum code review](review-code-scan-findings.md).
 
 ## Quotas and limits
 <a name="_quotas_and_limits"></a>
@@ -158,7 +158,7 @@ For more information about understanding and acting on findings, see [Review fin
 <a name="_next_steps"></a>
 
 After running a differential scan:
-+ Review findings and apply remediation guidance (see [Review findings from a code review](review-code-scan-findings.md))
-+ Enable pull request comments for automated code review on every pull request (see [Enable pull request code review for GitHub repositories](enable-code-review.md))
-+ Run a full code review periodically to catch issues outside of individual changes (see [Create a code review](perform-code-review-scan.md))
-+ Use the IDE integration to run differential scans directly from your development environment (see [Run code security scans from your IDE](code-review-ide-integration.md))
++ Review findings and apply remediation guidance (see [Review findings from a Continuum code review](review-code-scan-findings.md))
++ Enable pull request comments for automated code review on every pull request (see [Enable Continuum pull request code review for GitHub repositories](enable-code-review.md))
++ Run a full code review periodically to catch issues outside of individual changes (see [Create a Continuum code review](perform-code-review-scan.md))
++ Use the IDE integration to run differential scans directly from your development environment (see [Run Continuum code security scans from your IDE](code-review-ide-integration.md))

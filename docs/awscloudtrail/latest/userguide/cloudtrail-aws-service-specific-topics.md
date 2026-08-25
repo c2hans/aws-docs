@@ -31,8 +31,6 @@ CloudTrail Lake event data stores and queries incur CloudTrail charges. For more
 
 You can configure other AWS services to further analyze and act upon the event data collected in CloudTrail logs. For more information, see the following topics.
 
-****
-
 | AWS Service | Topic | Description |
 | --- | --- | --- |
 | Amazon Athena | [Querying AWS CloudTrail Logs](https://docs.aws.amazon.com/athena/latest/ug/cloudtrail-logs.html) | Using Athena with CloudTrail logs is a powerful way to enhance your analysis of AWS service activity. For example, you can use queries to identify trends and further isolate activity by attribute, such as source IP address or user.<br />You can automatically create tables for querying logs directly from the CloudTrail console, and use those tables to run queries in Athena. For more information, see [Creating a Table for CloudTrail Logs in the CloudTrail Console](https://docs.aws.amazon.com/athena/latest/ug/cloudtrail-logs.html#create-cloudtrail-table-ct) in the [Amazon Athena User Guide](https://docs.aws.amazon.com/athena/latest/ug/).Running queries in Amazon Athena incurs additional costs. For more information, see [Amazon Athena Pricing.](https://aws.amazon.com/athena/pricing/) |

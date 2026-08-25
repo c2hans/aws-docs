@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon Q in Connect provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="wisdom-GetAIAgent"></a>[GetAIAgent](https://docs.aws.amazon.com/wisdom/latest/APIReference/API_GetAIAgent.html) | Retrieve information about an ai agent | Read |

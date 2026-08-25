@@ -25,8 +25,6 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_backup-actions-as-permissions).
 
-****
-
 - **   AssociateBackupVaultMpaApprovalTeam  **
   - **IAM action:**  [backup:AssociateBackupVaultMpaApprovalTeam](#list_backup-action-AssociateBackupVaultMpaApprovalTeam)
   - **Condition key:**
@@ -684,8 +682,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
 <a name="list_backup-actions-as-permissions"></a>
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
-
-****
 
 - **   [AssociateBackupVaultMpaApprovalTeam](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_AssociateBackupVaultMpaApprovalTeam.html)  **
   - **Description:** Grants permission to associate an MPA approval team with a backup vault
@@ -1403,8 +1399,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 The following actions are defined by AWS Backup but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 - **   [CopyFromBackupVault](https://docs.aws.amazon.com/aws-backup/latest/devguide/vaults.html.html)  **
   - **Description:** Grants permission to copy from a backup vault
   - **Resource types (\*required):** [recoveryPoint\*](#list_backup-resource-recoveryPoint)
@@ -1452,8 +1446,6 @@ The following actions are defined by AWS Backup but are not directly invocable t
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
 
-****
-
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
 |  [backupAccessPoint](https://docs.aws.amazon.com/aws-backup/latest/devguide/backup-access-points.html)  | arn:${Partition}:backup:${Region}:${Account}:accesspoint/${AccessPointName} | [aws:ResourceTag/${TagKey}](#list_backup-aws_ResourceTag___TagKey_) |
@@ -1470,8 +1462,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_backup-policy-keys"></a>
 
 AWS Backup defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

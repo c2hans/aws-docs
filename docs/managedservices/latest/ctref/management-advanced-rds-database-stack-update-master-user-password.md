@@ -14,8 +14,6 @@ Update the MasterUserPassword property of an Amazon Relational Database Service 
 ## Change Type Details
 <a name="ct-2052miu12d8fn-MARu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2052miu12d8fn |

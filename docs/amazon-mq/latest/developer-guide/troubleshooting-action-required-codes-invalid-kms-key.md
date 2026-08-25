@@ -24,6 +24,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/trouble
 
 1. If your KMS key has been disabled, re-enable the key by choosing **Key Actions**, then choose **Enable**. After your key has been re-enabled, you must wait for RabbitMQ to remove the broker from quarantine.
 
- To verify that the necessary grants are still associated with the broker's KMS key, call the `ListGrant`ListGrant method to verify that `mq_rabbit_grant` and `mq_grant` are present. If the KMS grant or key has been deleted, you must delete the broker and create a new one with all necessary grants. For steps on deleting a broker, see [Deleting a broker](https://docs.aws.amazon.com//amazon-mq/latest/developer-guide/amazon-mq-deleting-broker.html).
+ To verify that the necessary grants are still associated with the broker's KMS key, call the `ListGrant`ListGrant method to verify that `mq_rabbit_grant` and `mq_grant` are present. If the KMS grant or key has been deleted, you must delete the broker and create a new one with all necessary grants. For steps on deleting a broker, see [Deleting a broker](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-mq-deleting-broker.html).
 
  To prevent the INVALID\_KMS\_KEY critical action required code, do not manually delete or disable a KMS key or CMK grant. If you wish to delete the key, delete the broker first.

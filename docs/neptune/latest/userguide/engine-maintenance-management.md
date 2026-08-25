@@ -78,8 +78,6 @@ Every DB cluster has a weekly 30-minute maintenance window. If you don't specify
 
 Here, for example, are the 8-hour time blocks for maintence windows used in several AWS regions:
 
-****
-
 | Region | Time Block |
 | --- | --- |
 | US West (Oregon) Region | 06:00–14:00 UTC |

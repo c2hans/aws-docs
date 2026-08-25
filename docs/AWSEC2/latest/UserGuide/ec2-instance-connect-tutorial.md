@@ -61,7 +61,7 @@ You'll create a policy that is configured as follows:
 ------
 
 **Important**
-The IAM policy created in this tutorial is a highly permissive policy; it allows you to connect to any instance using any AMI username. We're using this highly permissive policy to keep the tutorial simple and focused on the specific configurations that this tutorial is teaching. However, in a production environment, we recommend that your IAM policy is configured to provide [least-privilege permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#grant-least-privilege). For example IAM policies, see [Grant IAM permissions for EC2 Instance Connect](ec2-instance-connect-configure-IAM-role.md).
+The IAM policy created in this tutorial is a highly permissive policy; it allows you to connect to any instance using any AMI username. This tutorial uses this highly permissive policy to keep the tutorial simple and focused on the specific configurations that this tutorial is teaching. However, in a production environment, we recommend that your IAM policy is configured to provide [least-privilege permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#grant-least-privilege). For example IAM policies, see [Grant IAM permissions for EC2 Instance Connect](ec2-instance-connect-configure-IAM-role.md).
 
 **To create and attach an IAM policy that allows you to use EC2 Instance Connect to connect to your instances**
 
@@ -166,7 +166,7 @@ You'll create a security group that allows inbound SSH traffic on port 22 from t
 ## Task 3: Launch your instance
 <a name="eic-tut1-task3"></a>
 
-When you launch an instance, you must specify an AMI that contains the information required to launch the instance. You can choose to launch an instance with or without EC2 Instance Connect pre-installed. In this task, we specify an AMI that comes pre-installed with EC2 Instance Connect.
+When you launch an instance, you must specify an AMI that contains the information required to launch the instance. You can choose to launch an instance with or without EC2 Instance Connect pre-installed. In this task, you specify an AMI that comes pre-installed with EC2 Instance Connect.
 
 If you launch your instance without EC2 Instance Connect pre-installed, and you want to use EC2 Instance Connect to connect to your instance, you'll need to perform additional configuration steps. These steps are outside the scope of this tutorial.
 

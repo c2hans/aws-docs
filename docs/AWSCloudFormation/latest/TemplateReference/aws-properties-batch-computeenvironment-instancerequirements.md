@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::Batch::ComputeEnvironment InstanceRequirements
 <a name="aws-properties-batch-computeenvironment-instancerequirements"></a>
 
-<a name="aws-properties-batch-computeenvironment-instancerequirements-description"></a>The `InstanceRequirements` property type specifies Property description not available. for an [AWS::Batch::ComputeEnvironment](aws-resource-batch-computeenvironment.md).
+The instance type requirements for the Amazon ECS Managed Instances capacity provider. Use this to specify which Amazon EC2 instance types or instance families Amazon ECS can launch.
 
 ## Syntax
 <a name="aws-properties-batch-computeenvironment-instancerequirements-syntax"></a>
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-batch-computeenvironment-instancerequirements-properties"></a>
 
 `AllowedInstanceTypes`  <a name="cfn-batch-computeenvironment-instancerequirements-allowedinstancetypes"></a>
-Property description not available.
+A list of specific instance types or instance families that Amazon ECS can launch (for example, `m5.large` or `g5`). When specified, only these instance types are used.
 *Required*: No
 *Type*: Array of String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

@@ -9,8 +9,6 @@ End of support notice: On March 31, 2027, AWS will end support for Amazon WorkSp
 
 WorkSpaces Thin Client is an AWS End User Computing service that provides users access to virtual desktops on a device. These devices are periodically updated with new software sets. The following table describes all the released software sets. Administrators can use the [AWS management console](https://aws.amazon.com) to view available software sets.
 
-****
-
 | Software set | Release date | Changes |
 | --- | --- | --- |
 | 2.20.3 | 03-19-2026 |  + Fix for Chromium's CVE-2026-3909 and CVE-2026-3910 critical security issues.  |

@@ -46,7 +46,7 @@ For more information, see [CreateOutboundExternalLink](https://docs.aws.amazon.c
 
       1. Logs are delivered via [Amazon CloudWatch Vended Logs](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AWS-logs-and-resource-policy.html), which provides delivery directly to Amazon S3, Amazon Data Firehose, or Amazon CloudWatch Logs.
 
-      1. To configure log delivery destinations, you must use the RTB Fabric API. For more information, see the [AWS RTB Fabric API Reference](https://docs.aws.amazon.com//rtb-fabric/latest/api/).
+      1. To configure log delivery destinations, you must use the RTB Fabric API. For more information, see the [AWS RTB Fabric API Reference](https://docs.aws.amazon.com/rtb-fabric/latest/api/).
 
       1. AWS does not access or read your log data.
 

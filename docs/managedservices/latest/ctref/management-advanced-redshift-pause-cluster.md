@@ -14,8 +14,6 @@ Pause an Amazon Redshift cluster. If a recent snapshot is not available, a tempo
 ## Change Type Details
 <a name="ct-1n323w7eu27u9-MARp-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1n323w7eu27u9 |

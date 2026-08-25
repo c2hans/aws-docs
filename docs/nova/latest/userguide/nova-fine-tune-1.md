@@ -6,14 +6,14 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/nova-fine-tune-1.h
 <a name="nova-fine-tune-1"></a>
 
 **Note**
-You can fine-tune Amazon Nova 1.0 series of models using Supervised Fine-Tuning (SFT) and Direct Preference Optimization. For fine-tuning Nova 2.0 models, see [Fine-tune Nova 2.0](https://docs.aws.amazon.com//nova/latest/nova2-userguide/nova-fine-tune-2.html).
+You can fine-tune Amazon Nova 1.0 series of models using Supervised Fine-Tuning (SFT) and Direct Preference Optimization. For fine-tuning Nova 2.0 models, see [Fine-tune Nova 2.0](https://docs.aws.amazon.com/nova/latest/nova2-userguide/nova-fine-tune-2.html).
 
 ## Prerequisites
 <a name="nova-model-training-jobs-prerequisites"></a>
 
 Before you start a training job, note the following.
-+ Amazon S3 buckets to store your input data and output of training jobs. You can either use one bucket for both or separate buckets for each type of the data. Make sure your buckets are in the same AWS Region where you create all the other resources for training. For more information, see [Creating a general purpose bucket](https://docs.aws.amazon.com//AmazonS3/latest/userguide/create-bucket-overview.html).
-+ An IAM role with permissions to run a training job. Make sure you attach an IAM policy with `AmazonSageMakerFullAccess`. For more information, see [How to use SageMaker AI execution roles](https://docs.aws.amazon.com//sagemaker/latest/dg/sagemaker-roles.html).
++ Amazon S3 buckets to store your input data and output of training jobs. You can either use one bucket for both or separate buckets for each type of the data. Make sure your buckets are in the same AWS Region where you create all the other resources for training. For more information, see [Creating a general purpose bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/create-bucket-overview.html).
++ An IAM role with permissions to run a training job. Make sure you attach an IAM policy with `AmazonSageMakerFullAccess`. For more information, see [How to use SageMaker AI execution roles](https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-roles.html).
 + Base Amazon Nova recipes, see [Getting Amazon Nova recipes](nova-model-recipes.md#nova-model-get-recipes).
 
 ## Data preparation
@@ -219,7 +219,7 @@ DPO dataset recommendations - A minimum of 1,000 preference pairs for effective 
 ### Dataset limits
 <a name="nova-model-training-prepare-data-limits"></a>
 
-Training jobs default to a 1-day time limit, though the estimates in the tables below assume a 5-day training duration for illustration purposes. As a best practice, we recommend increasing your training time limit to 28 days maximum to accommodate longer training workloads. To request a limit increase, see [Requesting a quota increase](https://docs.aws.amazon.com//servicequotas/latest/userguide/request-quota-increase.html).
+Training jobs default to a 1-day time limit, though the estimates in the tables below assume a 5-day training duration for illustration purposes. As a best practice, we recommend increasing your training time limit to 28 days maximum to accommodate longer training workloads. To request a limit increase, see [Requesting a quota increase](https://docs.aws.amazon.com/servicequotas/latest/userguide/request-quota-increase.html).
 
 **SFT dataset limits**
 
@@ -273,7 +273,7 @@ By reducing the number of epochs or the context length of your records, you coul
 ## Full-rank SFT and LoRA PEFT configurations
 <a name="nova-model-training-jobs-recipe-config"></a>
 
-This section covers guidance on recipe configurations for both full-rank supervised fine-tuning (SFT) and low-rank adaptation parameter-efficient fine-tuning (LoRA PEFT) approaches. These recipe files serve as the blueprint for your model customization jobs, allowing you to specify training parameters, hyperparameters, and other critical settings that determine how your model learns from your data. To adjust the hyperparameters, follow the guidelines in [Selecting hyperparameters](https://docs.aws.amazon.com//nova/latest/userguide/customize-fine-tune-hyperparameters.html).
+This section covers guidance on recipe configurations for both full-rank supervised fine-tuning (SFT) and low-rank adaptation parameter-efficient fine-tuning (LoRA PEFT) approaches. These recipe files serve as the blueprint for your model customization jobs, allowing you to specify training parameters, hyperparameters, and other critical settings that determine how your model learns from your data. To adjust the hyperparameters, follow the guidelines in [Selecting hyperparameters](https://docs.aws.amazon.com/nova/latest/userguide/customize-fine-tune-hyperparameters.html).
 
 ### Fine-tuning configurations (Full-rank SFT and LoRA PEFT)
 <a name="nova-model-training-jobs-recipe-config-1"></a>
@@ -391,7 +391,7 @@ The only difference between Direct Preference Optimization (DPO) as compared to 
 ## Running customized Nova model on SageMaker Training Jobs
 <a name="nova-model-training-jobs-notebook"></a>
 
-This section demonstrates how to run a customized Nova model on SageMaker Training Jobs through a Jupyter notebook environment. You'll find a complete example that walks through the process of configuring and launching a training job, along with reference tables for selecting the appropriate container image URIs and instance configurations. This approach gives you programmatic control over your fine-tuning workflows while leveraging SageMaker AI's managed infrastructure for model customization. For more information, see [Use a SageMaker AI estimator to run a training job](https://docs.aws.amazon.com//sagemaker/latest/dg/docker-containers-adapt-your-own-private-registry-estimator.html).
+This section demonstrates how to run a customized Nova model on SageMaker Training Jobs through a Jupyter notebook environment. You'll find a complete example that walks through the process of configuring and launching a training job, along with reference tables for selecting the appropriate container image URIs and instance configurations. This approach gives you programmatic control over your fine-tuning workflows while leveraging SageMaker AI's managed infrastructure for model customization. For more information, see [Use a SageMaker AI estimator to run a training job](https://docs.aws.amazon.com/sagemaker/latest/dg/docker-containers-adapt-your-own-private-registry-estimator.html).
 
 ### Reference tables
 <a name="nova-model-training-jobs-reference-table"></a>
@@ -431,7 +431,7 @@ Before running the sample notebook, refer to the following tables for selecting 
 ### Sample notebook
 <a name="nova-model-training-jobs-notebook"></a>
 
-The following sample notebook demonstrates how to run a training job. For additional getting started notebooks on how to customize Nova models using SageMaker Training Jobs, see [Use a SageMaker AI estimator to run a training job](https://docs.aws.amazon.com//sagemaker/latest/dg/docker-containers-adapt-your-own-private-registry-estimator.html).
+The following sample notebook demonstrates how to run a training job. For additional getting started notebooks on how to customize Nova models using SageMaker Training Jobs, see [Use a SageMaker AI estimator to run a training job](https://docs.aws.amazon.com/sagemaker/latest/dg/docker-containers-adapt-your-own-private-registry-estimator.html).
 
 ```
 # 1. Install dependencies
@@ -509,9 +509,9 @@ else:
 ## Hyperparameter optimization guidance
 <a name="nova-model-hyperparameter"></a>
 
-Fine-tuning your Nova LLM model effectively requires careful selection of hyperparameters. While this section explains the basic recipe structure and components, optimizing hyperparameters for your specific use case often requires additional guidance. For comprehensive recommendations on hyperparameter selection, best practices, and optimization strategies, see [Selecting hyperparameters](https://docs.aws.amazon.com//nova/latest/userguide/customize-fine-tune-hyperparameters.html). This resource provides detailed guidance on selecting appropriate learning rates, batch sizes, training epochs, and other critical parameters based on your dataset characteristics and training objectives. We recommend consulting this guide when fine-tuning your recipe configuration to achieve optimal model performance.
+Fine-tuning your Nova LLM model effectively requires careful selection of hyperparameters. While this section explains the basic recipe structure and components, optimizing hyperparameters for your specific use case often requires additional guidance. For comprehensive recommendations on hyperparameter selection, best practices, and optimization strategies, see [Selecting hyperparameters](https://docs.aws.amazon.com/nova/latest/userguide/customize-fine-tune-hyperparameters.html). This resource provides detailed guidance on selecting appropriate learning rates, batch sizes, training epochs, and other critical parameters based on your dataset characteristics and training objectives. We recommend consulting this guide when fine-tuning your recipe configuration to achieve optimal model performance.
 
-For details about minimum, maximum, and default values for epochs, learning rate, and learning warmup steps, see [Hyperparameters for Understanding models](https://docs.aws.amazon.com//nova/latest/userguide/fine-tune-hyperparameters-understanding-models.html).
+For details about minimum, maximum, and default values for epochs, learning rate, and learning warmup steps, see [Hyperparameters for Understanding models](https://docs.aws.amazon.com/nova/latest/userguide/fine-tune-hyperparameters-understanding-models.html).
 
 **Common recipe modifications**
 

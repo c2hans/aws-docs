@@ -12,7 +12,7 @@ You can connect your flows to your router setup in two ways:
 1. **Use a flow as a source for a router input**
 
    When you connect a flow to a router input, you can incorporate existing flow workflows into your routing setup. This is useful when you want to:
-   + Route content from existing flows through the router matrix
+   + Route content from existing flows through the router fabric
    + Combine flow and router capabilities in the same workflow
    + Maintain existing flow setups while adding routing capabilities
 

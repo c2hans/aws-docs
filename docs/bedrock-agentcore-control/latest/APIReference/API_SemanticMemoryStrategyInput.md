@@ -33,7 +33,7 @@ This is a legacy parameter, use `namespaceTemplates`. The namespaces associated 
 Type: Array of strings
 Array Members: Fixed number of 1 item.
 Length Constraints: Minimum length of 1. Maximum length of 512.
-Pattern: `[a-zA-Z0-9\-_\/]*(\{(actorId|sessionId|memoryStrategyId)\}[a-zA-Z0-9\-_\/]*)*`
+Pattern: `[a-zA-Z0-9\-_\/]*(\{[a-zA-Z][a-zA-Z0-9]*\}[a-zA-Z0-9\-_\/]*)*`
 Required: No
 
  ** namespaceTemplates **   <a name="bedrockagentcorecontrol-Type-SemanticMemoryStrategyInput-namespaceTemplates"></a>
@@ -41,7 +41,7 @@ The namespaceTemplates associated with the semantic memory strategy.
 Type: Array of strings
 Array Members: Fixed number of 1 item.
 Length Constraints: Minimum length of 1. Maximum length of 512.
-Pattern: `[a-zA-Z0-9\-_\/]*(\{(actorId|sessionId|memoryStrategyId)\}[a-zA-Z0-9\-_\/]*)*`
+Pattern: `[a-zA-Z0-9\-_\/]*(\{[a-zA-Z][a-zA-Z0-9]*\}[a-zA-Z0-9\-_\/]*)*`
 Required: No
 
 ## See Also

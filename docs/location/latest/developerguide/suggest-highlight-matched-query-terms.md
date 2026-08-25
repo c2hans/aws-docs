@@ -175,4 +175,4 @@ aws geo-places suggest --key ${YourKey} \
 ## Developer tips
 <a name="suggest-highlight-developer-tips"></a>
 
-Display search results using the `Title` response field to provide users with concise, recognizable entries. For results that might look similar, use the `Place.Address.Label` field to show additional address details that help users distinguish between them. For more information, see [How to help users disambiguate between similar resultsDisambiguate the results with the Suggest API](suggest-disambiguate-results.md).
+Display search results using the `Title` response field to provide users with concise, recognizable entries. For results that might look similar, use the `Place.Address.Label` field to show additional address details that help users distinguish between them. For more information, see [How to help users disambiguate between similar results](suggest-disambiguate-results.md).

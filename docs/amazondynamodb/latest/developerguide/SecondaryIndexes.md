@@ -35,8 +35,6 @@ For a comparison of global secondary indexes and local secondary indexes, see th
 
 You should consider your application's requirements when you determine which type of index to use. The following table shows the main differences between a global secondary index and a local secondary index.
 
-****
-
 | Characteristic | Global secondary index | Local secondary index |
 | --- | --- | --- |
 | Key Schema | The primary key of a global secondary index can be either simple (partition key) or composite (partition key and sort key). | The primary key of a local secondary index must be composite (partition key and sort key). |

@@ -250,7 +250,7 @@ This example talks about write operation metrics, but you can also use these ste
    Second time selecting the **Percentage** function:
 ![CloudWatch console. The Percentage function is selected a second time for the graphed metrics.](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/CostOptimization/RightSizedProvisioning3.png)
 
-1. At this point you should have four metrics in the bottom menu. Let’s work on the `ConsumedWriteCapacityUnits` calculation. To be consistent, we need to match the names for the ones we used in the AWS CLI section. Click on the **m1 ID** and change this value to **consumedWCU**.
+1. At this point you should have four metrics in the bottom menu. Let’s work on the `ConsumedWriteCapacityUnits` calculation. To be consistent, you need to match the names used in the AWS CLI section. Choose the **m1 ID** and change this value to **consumedWCU**.
 ![CloudWatch console. The graphed metric with m1 ID is renamed to consumedWCU.](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/CostOptimization/RightSizedProvisioning4.png)
 
    Rename the **ConsumedWriteCapacityUnit** label as **consumedWCU**.
@@ -265,7 +265,7 @@ This example talks about write operation metrics, but you can also use these ste
 
 1. Select the **Expression1** label and update the value to **m1** and the label to **Consumed WCUs**.
 **Note**
-Make sure you have only selected **m1** (checkbox on the left) and **provisionedWCU** to properly visualize the data. Update the formula by clicking in **Details** and changing the formula to **consumedWCU/PERIOD(consumedWCU)**. This step might also generate another **ANOMALY\_DETECTION\_BAND** metric, but for the scope of this procedure we can ignore it.
+Make sure you have only selected **m1** (checkbox on the left) and **provisionedWCU** to properly visualize the data. Update the formula by clicking in **Details** and changing the formula to **consumedWCU/PERIOD(consumedWCU)**. This step might also generate another **ANOMALY\_DETECTION\_BAND** metric, but for the scope of this procedure you can ignore it.
 
 ![m1 and provisionedWCU are selected. Details for m1 is updated as consumedWCU/PERIOD(consumedWCU).](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/CostOptimization/RightSizedProvisioning10.png)
 

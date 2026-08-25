@@ -36,8 +36,6 @@ content-type: application/x-amz-json-1.0
 }
 ```
 
-****
-
 |  Name  |  Description  |  Required |
 | --- | --- | --- |
 |  TableName  | The name of the table to update. <br />Type: String  |  Yes  |
@@ -72,8 +70,6 @@ Date: Tue, 12 Jul 2011 21:31:03 GMT
     "TableStatus":"UPDATING"}}
 ```
 
-****
-
 |  Name  |  Description  |
 | --- | --- |
 | CreationDateTime | Date when the table was created.<br />Type: Number |
@@ -84,8 +80,6 @@ Date: Tue, 12 Jul 2011 21:31:03 GMT
 
 ## Special errors
 <a name="API_UpdateTable_SpecialErrors"></a>
-
-****
 
 |  Error  |  Description  |
 | --- | --- |

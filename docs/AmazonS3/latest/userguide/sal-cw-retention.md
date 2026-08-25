@@ -29,4 +29,4 @@ aws logs put-retention-policy \
   --retention-in-days 90
 ```
 
-For more information, see [Change log data retention in CloudWatch Logs](https://docs.aws.amazon.com//AmazonCloudWatch/latest/logs/Working-with-log-groups-and-streams.html#SettingLogRetention) in the *CloudWatch Logs User Guide*.
+For more information, see [Change log data retention in CloudWatch Logs](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Working-with-log-groups-and-streams.html#SettingLogRetention) in the *CloudWatch Logs User Guide*.

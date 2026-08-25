@@ -8,8 +8,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/Hive-release-his
 ## Amazon EMR 6.12.0 - Hive changes
 <a name="Hive-release-history-changes-6120"></a>
 
-****
-
 | Type | Description |
 | --- | --- |
 | Improvement | Added Support For JDK 11 and JDK 17 Runtime |

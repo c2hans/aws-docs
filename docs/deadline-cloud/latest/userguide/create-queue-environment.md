@@ -77,6 +77,7 @@ Conda provides packages from *channels*. A channel is a location where packages 
   + `houdini=20.0`
   + `houdini=20.5`
   + `houdini=21.0`
+  + `houdini=22.0`
   + `houdini-openjd`
 
 ------

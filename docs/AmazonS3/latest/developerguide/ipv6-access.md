@@ -25,7 +25,7 @@ The following are some things you should know before trying to access a bucket o
 + The client and the network accessing the bucket must be enabled to use IPv6.
 + Both virtual hosted-style and path style requests are supported for IPv6 access. For more information, see [Amazon S3 dual-stack endpoints](dual-stack-endpoints.md#dual-stack-endpoints-description).
 + If you use source IP address filtering in your AWS Identity and Access Management (IAM) user or bucket policies, you need to update the policies to include IPv6 address ranges. For more information, see [Using IPv6 addresses in IAM policies](#ipv6-access-iam).
-+ When using IPv6, server access log files output IP addresses in an IPv6 format. You need to update existing tools, scripts, and software that you use to parse Amazon S3 log files so that they can parse the IPv6 formatted `Remote IP` addresses. For more information, see [Logging requests with server access logging](https://docs.aws.amazon.com//AmazonS3/latest/userguide/ServerLogs.html).
++ When using IPv6, server access log files output IP addresses in an IPv6 format. You need to update existing tools, scripts, and software that you use to parse Amazon S3 log files so that they can parse the IPv6 formatted `Remote IP` addresses. For more information, see [Logging requests with server access logging](https://docs.aws.amazon.com/AmazonS3/latest/userguide/ServerLogs.html).
 **Note**
 If you experience issues related to the presence of IPv6 addresses in log files, contact [AWS Support](https://aws.amazon.com/premiumsupport/).
 
@@ -51,7 +51,7 @@ The following feature is currently not supported when accessing an S3 bucket ove
 ## Using IPv6 addresses in IAM policies
 <a name="ipv6-access-iam"></a>
 
-Before trying to access a bucket using IPv6, you must ensure that any IAM user or S3 bucket polices that are used for IP address filtering are updated to include IPv6 address ranges. IP address filtering policies that are not updated to handle IPv6 addresses may result in clients incorrectly losing or gaining access to the bucket when they start using IPv6. For more information about managing access permissions with IAM, see [Identity and Access Management for Amazon S3](https://docs.aws.amazon.com//AmazonS3/latest/userguide/security-iam.html) .
+Before trying to access a bucket using IPv6, you must ensure that any IAM user or S3 bucket polices that are used for IP address filtering are updated to include IPv6 address ranges. IP address filtering policies that are not updated to handle IPv6 addresses may result in clients incorrectly losing or gaining access to the bucket when they start using IPv6. For more information about managing access permissions with IAM, see [Identity and Access Management for Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/security-iam.html) .
 
 IAM policies that filter IP addresses use [IP Address Condition Operators](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html#Conditions_IPAddress). The following bucket policy identifies the 54.240.143.\* range of allowed IPv4 addresses by using IP address condition operators. Any IP addresses outside of this range will be denied access to the bucket (`examplebucket`). Since all IPv6 addresses are outside of the allowed range, this policy prevents IPv6 addresses from being able to access `examplebucket`.
 
@@ -93,9 +93,9 @@ You can modify the bucket policy's `Condition` element to allow both IPv4 (`54.2
 8.         }
 ```
 
-Before using IPv6 you must update all relevant IAM user and bucket policies that use IP address filtering. We do not recommend using IP address filterig in bucket policies.
+Before using IPv6 you must update all relevant IAM user and bucket policies that use IP address filtering. Avoid using IP address filtering in bucket policies.
 
-You can review your IAM user policies using the IAM console at [https://console.aws.amazon.com/iam/](https://console.aws.amazon.com/iam/). For more information about IAM, see the [IAM User Guide](https://docs.aws.amazon.com/IAM/latest/UserGuide/). For information about editing S3 bucket policies, see [Adding a bucket policy](https://docs.aws.amazon.com//AmazonS3/latest/userguide/add-bucket-policy.html).
+You can review your IAM user policies using the IAM console at [https://console.aws.amazon.com/iam/](https://console.aws.amazon.com/iam/). For more information about IAM, see the [IAM User Guide](https://docs.aws.amazon.com/IAM/latest/UserGuide/). For information about editing S3 bucket policies, see [Adding a bucket policy](https://docs.aws.amazon.com/AmazonS3/latest/userguide/add-bucket-policy.html).
 
 ## Testing IP address compatibility
 <a name="ipv6-access-test-compatabilty"></a>

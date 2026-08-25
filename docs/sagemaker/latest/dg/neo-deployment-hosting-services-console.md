@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/neo-deployment-hosti
 # Deploy a Compiled Model Using the Console
 <a name="neo-deployment-hosting-services-console"></a>
 
-You must satisfy the [ prerequisites](https://docs.aws.amazon.com//sagemaker/latest/dg/neo-deployment-hosting-services-prerequisites) section if the model was compiled using AWS SDK for Python (Boto3), the AWS CLI, or the Amazon SageMaker AI console. Follow the steps below to create and deploy a SageMaker AI Neo-compiled model using the SageMaker AI console[https://console.aws.amazon.com/ SageMaker AI](https://console.aws.amazon.com/sagemaker/).
+You must satisfy the [ prerequisites](https://docs.aws.amazon.com/sagemaker/latest/dg/neo-deployment-hosting-services-prerequisites) section if the model was compiled using AWS SDK for Python (Boto3), the AWS CLI, or the Amazon SageMaker AI console. Follow the steps below to create and deploy a SageMaker AI Neo-compiled model using the SageMaker AI console[https://console.aws.amazon.com/ SageMaker AI](https://console.aws.amazon.com/sagemaker/).
 
 **Topics**
 + [Deploy the Model](#deploy-the-model-console-steps)
@@ -13,7 +13,7 @@ You must satisfy the [ prerequisites](https://docs.aws.amazon.com//sagemaker/lat
 ## Deploy the Model
 <a name="deploy-the-model-console-steps"></a>
 
- After you have satisfied the [ prerequisites](https://docs.aws.amazon.com//sagemaker/latest/dg/neo-deployment-hosting-services-prerequisites), use the following steps to deploy a model compiled with Neo:
+ After you have satisfied the [ prerequisites](https://docs.aws.amazon.com/sagemaker/latest/dg/neo-deployment-hosting-services-prerequisites), use the following steps to deploy a model compiled with Neo:
 
 1. Choose **Models**, and then choose **Create models** from the **Inference** group. On the **Create model** page, complete the **Model name**,** IAM role**, and **VPC** fields (optional), if needed.
 ![Create Neo model for inference.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/create-pipeline-model.png)

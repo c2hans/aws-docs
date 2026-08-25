@@ -14,8 +14,6 @@ Update existing defined termination protection for stacks.
 ## Change Type Details
 <a name="ct-2uzbqr7x7mekd-MSSu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2uzbqr7x7mekd |

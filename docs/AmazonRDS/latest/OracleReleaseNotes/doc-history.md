@@ -9,6 +9,8 @@ The following table describes Amazon RDS for Oracle releases.
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [Amazon RDS for Oracle supports the Oracle July 2026 RU](#doc-history) | Amazon RDS for Oracle has released database engine versions [26.0.0.0.ru-2026-07.mrp-2026-07.r1](https://docs.aws.amazon.com/AmazonRDS/latest/OracleReleaseNotes/oracle-version-26-0.html#oracle-version-RU-RUR.26.0.0.0.ru-2026-07.mrp-2026-07.r1), [21.0.0.0.ru-2026-07.rur-2026-07.r1](https://docs.aws.amazon.com/AmazonRDS/latest/OracleReleaseNotes/oracle-version-21-0.html#oracle-version-RU-RUR.21.0.0.0.ru-2026-07.rur-2026-07.r1), and [19.0.0.0.ru-2026-07.mrp-2026-07.r1](https://docs.aws.amazon.com/AmazonRDS/latest/OracleReleaseNotes/oracle-version-19-0.html#oracle-version-RU-RUR.19.0.0.0.ru-2026-07.mrp-2026-07.r1) to support the July 2026 RU. | August 20, 2026 |
+| [Amazon RDS for Oracle supports the Oracle Apr 2026 RU for 26ai](#doc-history) | Amazon RDS for Oracle has released database engine version [26.0.0.0.ru-2026-04.mrp-2026-04.r1](https://docs.aws.amazon.com/AmazonRDS/latest/OracleReleaseNotes/oracle-version-26-0.html#oracle-version-RU-RUR.26.0.0.0.ru-2026-04.mrp-2026-04.r1) to support the Apr 2026 RU. | August 4, 2026 |
 | [Amazon RDS for Oracle supports the Oracle Jan 2026 RU for 26ai](#doc-history) | Amazon RDS for Oracle has released database engine version [26.0.0.0.ru-2026-01.mrp-2026-01.r1](https://docs.aws.amazon.com/AmazonRDS/latest/OracleReleaseNotes/oracle-version-26-0.html#oracle-version-RU-RUR.26.0.0.0.ru-2026-01.mrp-2026-01.r1) to support the Jan 2026 RU. | July 7, 2026 |
 | [Amazon RDS for Oracle supports the Oracle April 2026 RU for 19c and Supplemental Patch Bundle (SPB) for 19c](#doc-history) | Amazon RDS for Oracle has released database engine version [19.0.0.0.ru-2026-04.rur-2026-04.r1](https://docs.aws.amazon.com/AmazonRDS/latest/OracleReleaseNotes/oracle-version-19-0.html#oracle-version-RU-RUR.19.0.0.0.ru-2026-04.rur-2026-04.r1) to support the April 2026 RU, and Supplemental Patch Bundle [19.0.0.0.ru-2026-04.spb-1.r1](https://docs.aws.amazon.com/AmazonRDS/latest/OracleReleaseNotes/oracle-version-19-0.html#oracle-version-RU-RUR.19.0.0.0.ru-2026-04.spb-1.r1). | May 27, 2026 |
 | [Amazon RDS for Oracle supports the Oracle April 2026 RU for 21c](#doc-history) | Amazon RDS for Oracle has released database engine version [21.0.0.0.ru-2026-04.rur-2026-04.r1](https://docs.aws.amazon.com/AmazonRDS/latest/OracleReleaseNotes/oracle-version-21-0.html#oracle-version-RU-RUR.21.0.0.0.ru-2026-04.rur-2026-04.r1) to support the April 2026 RU. | May 22, 2026 |
@@ -45,8 +47,6 @@ The following table describes Amazon RDS for Oracle releases.
 <a name="WhatsNew.earlier-updates"></a>
 
 The following table describes the important changes in each release of the *Amazon RDS for Oracle Release Notes* before March 22, 2022.
-
-****
 
 | Change | Description | Date changed |
 | --- | --- | --- |

@@ -66,6 +66,7 @@ LEFT JOIN
 | query\_hash\_version | integer | The version number for the query hash generated from the query. |
 | result\_cache\_query\_id | integer | If the query used result caching, this field value is the query ID of the query that was the source of the cached results. If result caching was not used, this field value is `0`. |
 | username | character(128) | The username of the user who submitted the query. |
+| query\_uuid | character(36) | A globally unique identifier (UUID) of the query. |
 
 ## Sample queries
 <a name="SYS_QUERY_HISTORY-sample-queries"></a>

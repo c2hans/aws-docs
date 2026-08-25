@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awse
 
 AWS Elemental Appliances and Software provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="elemental-appliances-software-GetAvsCorrectAddress"></a>[GetAvsCorrectAddress](https://docs.aws.amazon.com/elemental-appliances-software) | Validate an address | Read |

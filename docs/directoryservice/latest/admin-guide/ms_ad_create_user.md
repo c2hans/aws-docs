@@ -9,7 +9,7 @@ Use the following procedure to create a new AWS Managed Microsoft AD user with A
 
 **Before you begin, complete the following:**
 + Enable [user and group management for Directory Service Data](ms_ad_users_groups_mgmt_enable_disable.md). You can only enable this feature from the Primary AWS Region for your directory. For more information, see [Primary vs additional Regions](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/multi-region-global-primary-additional.html).
-+ You'll need the necessary IAM permissions to use AWS Directory Service Data. To get started, you can use the [AWS managed policy: AWSDirectoryServiceDataFullAccess](security-iam-awsmanpol.md#security-iam-awsmanpol-AWSDirectoryServiceDataFullAccess) or [AWS managed policy: AWSDirectoryServiceDataReadOnlyAccess](security-iam-awsmanpol.md#security-iam-awsmanpol-AWSDirectoryServiceDataReadOnlyAccess). For more information, see [Directory Service API permissions: Actions, resources, and conditions reference](UsingWithDS_IAM_ResourcePermissions.md) and [Security best practices in IAM](https://docs.aws.amazon.com//IAM/latest/UserGuide/best-practices.html#bp-use-aws-defined-policies).
++ You'll need the necessary IAM permissions to use AWS Directory Service Data. To get started, you can use the [AWS managed policy: AWSDirectoryServiceDataFullAccess](security-iam-awsmanpol.md#security-iam-awsmanpol-AWSDirectoryServiceDataFullAccess) or [AWS managed policy: AWSDirectoryServiceDataReadOnlyAccess](security-iam-awsmanpol.md#security-iam-awsmanpol-AWSDirectoryServiceDataReadOnlyAccess). For more information, see [Directory Service API permissions: Actions, resources, and conditions reference](UsingWithDS_IAM_ResourcePermissions.md) and [Security best practices in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#bp-use-aws-defined-policies).
 
 ------
 #### [ AWS Management Console ]
@@ -92,7 +92,7 @@ aws ds-data create-user \
     }‘
 ```
 
-For more information, see [`create-user`](https://docs.aws.amazon.com//cli/latest/reference/ds-data/create-user.html).
+For more information, see [`create-user`](https://docs.aws.amazon.com/cli/latest/reference/ds-data/create-user.html).
 
 ------
 #### [ PowerShell ]
@@ -112,6 +112,6 @@ New-DSDUser `
     }
 ```
 
-For more information, see [`New-DSDUser`](https://docs.aws.amazon.com//powershell/latest/reference/items/New-DSDUser.html).
+For more information, see [`New-DSDUser`](https://docs.aws.amazon.com/powershell/latest/reference/items/New-DSDUser.html).
 
 ------

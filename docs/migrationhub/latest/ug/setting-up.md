@@ -22,12 +22,10 @@ If you signed up for AWS but have not created an IAM user for yourself, you can 
 
 To create an administrator user, choose one of the following options.
 
-****
-
 | Choose one way to manage your administrator | To | By | You can also |
 | --- | --- | --- | --- |
-| In IAM Identity Center (Recommended) | Use short-term credentials to access AWS.This aligns with the security best practices. For information about best practices, see [Security best practices in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#bp-users-federation-idp) in the *IAM User Guide*. | Following the instructions in [Getting started](https://docs.aws.amazon.com//singlesignon/latest/userguide/getting-started.html) in the AWS IAM Identity Center User Guide. | Configure programmatic access by [Configuring the AWS CLI to use AWS IAM Identity Center](https://docs.aws.amazon.com//cli/latest/userguide/cli-configure-sso.html) in the AWS Command Line Interface User Guide. |
-| In IAM (Not recommended) | Use long-term credentials to access AWS. | Following the instructions in [ Create an IAM user for emergency access](https://docs.aws.amazon.com/IAM/latest/UserGuide/getting-started-emergency-iam-user.html) in the IAM User Guide. | Configure programmatic access by [Manage access keys for IAM users](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_credentials_access-keys.html) in the IAM User Guide. |
+| In IAM Identity Center (Recommended) | Use short-term credentials to access AWS.This aligns with the security best practices. For information about best practices, see [Security best practices in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#bp-users-federation-idp) in the *IAM User Guide*. | Following the instructions in [Getting started](https://docs.aws.amazon.com/singlesignon/latest/userguide/getting-started.html) in the AWS IAM Identity Center User Guide. | Configure programmatic access by [Configuring the AWS CLI to use AWS IAM Identity Center](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-sso.html) in the AWS Command Line Interface User Guide. |
+| In IAM (Not recommended) | Use long-term credentials to access AWS. | Following the instructions in [ Create an IAM user for emergency access](https://docs.aws.amazon.com/IAM/latest/UserGuide/getting-started-emergency-iam-user.html) in the IAM User Guide. | Configure programmatic access by [Manage access keys for IAM users](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html) in the IAM User Guide. |
 
 To sign in as this new IAM user, sign out of the AWS Management Console, and then use the following URL, where *your\_aws\_account\_id* is your AWS account number without the hyphens (for example, if your AWS account number is `1234-5678-9012`, your AWS account ID is `123456789012`):
 

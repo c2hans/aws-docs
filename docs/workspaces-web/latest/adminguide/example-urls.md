@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/adminguide/example
 
 The following types of URLs can be provided in the AllowedUrls or BlockedUrls
 
-****
-
 | Type | Example |
 | --- | --- |
 | Domain | example.com |

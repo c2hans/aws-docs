@@ -42,6 +42,8 @@ Instance class and number of instances cannot be configured during the restore p
 1. In the **Log exports** pane, choose the log types to publish to Amazon CloudWatch Logs. The **IAM role** is already defined.
 
 1. In the **Restore role** pane, choose either the default IAM role for the restore job or a different IAM role.
+**Note**
+If role manager is enabled in your account, AWS Backup selects the default service role for you, and a **Customize** option is available. For more information, see [IAM role creation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html) in the *IAM User Guide*.
 
 1. In the Protected resource tags pane, you may optionally choose to copy tags from the backup to the restored database cluster.
 

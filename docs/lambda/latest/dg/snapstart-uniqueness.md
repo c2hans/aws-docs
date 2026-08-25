@@ -105,16 +105,12 @@ Software that always gets random numbers from `/dev/random` or `/dev/urandom` al
 
 AWS cryptography libraries automatically maintain randomness with SnapStart beginning with the minimum versions specified in the following table. If you use these libraries with your Lambda functions, make sure that you use the following minimum versions or later versions:
 
-****
-
 | Library | Minimum supported version (x86) | Minimum supported version (ARM) |
 | --- | --- | --- |
 | AWS libcrypto (AWS-LC) | 1.16.0 | 1.30.0 |
 | AWS libcrypto FIPS | 2.0.13 | 2.0.13 |
 
 If you package the preceding cryptographic libraries with your Lambda functions as transitive dependencies through the following libraries, make sure that you use the following minimum versions or later versions:
-
-****
 
 | Library | Minimum supported version (x86) | Minimum supported version (ARM) |
 | --- | --- | --- |

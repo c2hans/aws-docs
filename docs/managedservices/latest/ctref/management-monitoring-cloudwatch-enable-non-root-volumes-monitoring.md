@@ -14,8 +14,6 @@ Enable monitoring on non-root volumes of an EC2 instance.
 ## Change Type Details
 <a name="ct-0erkoad6uyvvg-MMCe-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-0erkoad6uyvvg |

@@ -53,4 +53,10 @@ AWS Batch on Fargate doesn't currently support Local Zones. For more information
 
    1. Choose **Next page**.
 
+1. (Optional) For **Container insights**, choose the monitoring level for the compute environment:
+   + **Enabled** – Collects cluster-level and service-level metrics.
+   + **Enhanced** – Provides additional per-container metrics and resource observability at the job level.
+
+   Container Insights incurs additional CloudWatch charges. For more information, see [AWS Batch CloudWatch Container Insights](cloudwatch-container-insights.md).
+
 1. For **Review**, review the configuration steps. If you need to make changes, choose **Edit**. When you're finished, choose **Create compute environment**.

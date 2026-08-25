@@ -14,8 +14,6 @@ Create an interface VPC endpoint, which allows you to connect to services powere
 ## Change Type Details
 <a name="ct-3oafsdbzjtuqp-DAVc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-3oafsdbzjtuqp |

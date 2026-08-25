@@ -5,6 +5,8 @@ source_url: https://docs.aws.amazon.com/accounts/latest/reference/security_iam_i
 # Identity-based policy examples for AWS Account Management
 <a name="security_iam_id-based-policy-examples"></a>
 
+This information is most relevant for AWS accounts that you create when you use our advanced AWS experience. To learn about how access control works for our new AWS experience, see [Compare access management](sign-up-for-aws.md#compare-access-management).
+
 By default, users and roles don't have permission to create or modify Account Management resources. To grant users permission to perform actions on the resources that they need, an IAM administrator can create IAM policies.
 
 To learn how to create an IAM identity-based policy by using these example JSON policy documents, see [Create IAM policies (console)](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create-console.html) in the *IAM User Guide*.

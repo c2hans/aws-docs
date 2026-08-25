@@ -59,8 +59,6 @@ Use the IAM console, the AWS CLI, or the AWS API to delete the AWSServiceRoleFor
 
 Amazon Q Developer does not support using service-linked roles in every Region where the service is available. You can use the AWSServiceRoleForAmazonQDeveloper role in the following Regions. For more information, see [AWS Regions and endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html).
 
-****
-
 | Region name | Region identity | Support in Amazon Q Developer |
 | --- | --- | --- |
 | US East (N. Virginia) | us-east-1 | Yes |

@@ -20,8 +20,6 @@ While the current ODBC driver provides a range of available logging options, sta
 
 For more information about logging the ODBC 2.x driver, see [Logging options](odbc-v2-driver-logging-options.md).
 
-****
-
 |  | ODBC 1.x driver | ODBC 2.x driver |
 | --- | --- | --- |
 | Connection string name | LogLevel | LogLevel |
@@ -39,8 +37,6 @@ In version 2.0.6.0 and later, the logging framework has been optimized to reduce
 The current ODBC driver provides several options for retrieving the metadata from Athena. The Amazon Athena ODBC driver deprecates the `MetadataRetrievalMethod` and always uses the Amazon Athena API to extract metadata.
 
 Athena introduces the flag `QueryExternalCatalogs` for querying external catalogs. To query external catalogs with the current ODBC driver, set `MetadataRetrievalMethod` to `ProxyAPI`. To query external catalogs with the Athena ODBC driver, set `QueryExternalCatalogs` to `1`.
-
-****
 
 |  | ODBC 1.x driver | ODBC 2.x driver |
 | --- | --- | --- |

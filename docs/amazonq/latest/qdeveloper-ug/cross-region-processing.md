@@ -26,8 +26,6 @@ Cross region inference doesn’t affect where your data is stored. For informati
 
 The following table describes what Regions your requests may be routed to depending on the geography where the request originated.
 
-****
-
 |  **Supported Amazon Q Developer geography**  |  **Inference regions**  |
 | --- | --- |
 | United States | US East (N. Virginia) (us-east-1)<br />US West (Oregon) (us-west-2)<br />US East (Ohio) (us-east-2) |

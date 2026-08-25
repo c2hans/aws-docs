@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon Timestream InfluxDB provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="timestream-influxdb-GetDbBackup"></a>[GetDbBackup](https://docs.aws.amazon.com/ts-influxdb/latest/ts-influxdb-api/API_GetDbBackup.html) | Get information about a Timestream InfluxDB Backup | Read |

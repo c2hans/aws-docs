@@ -94,8 +94,6 @@ The IAM policy configuration depends on the AWS Regions involved. Regions fall i
 For more information and a list of the default-disabled Regions, see [Managing AWS Regions](https://docs.aws.amazon.com/general/latest/gr/rande-manage.html). For a discussion of service principals in the context of IAM, see [AWS service principals in opt-in Regions](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_principal.html#principal-services-in-opt-in-regions).
 When you configure CRLs as the certificate revocation method, AWS Private CA creates a CRL and publishes it to an S3 bucket. The S3 bucket requires an IAM policy that allows the AWS Private CA service principal to write to the bucket. The name of the service principal varies according to the Regions used, and not all possibilities are supported.
 
-****
-
 <table>
 <thead>
   <tr><th>PCA</th><th>S3</th><th>Service principal</th></tr>

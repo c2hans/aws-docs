@@ -14,8 +14,6 @@ Use to update properties of an existing Target Group for an Application Load Bal
 ## Change Type Details
 <a name="ct-2v82sp4np40ki-MATu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2v82sp4np40ki |

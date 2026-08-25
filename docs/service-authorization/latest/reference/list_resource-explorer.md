@@ -29,8 +29,6 @@ Tag Editor has no API operations that can be used in the `Actions` element of an
 
 The following actions are defined by Tag Editor but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 | Actions | Description | Resource types (\*required) | Condition keys | Access level |
 | --- | --- | --- | --- | --- |
 |   [ListResourceTypes](https://docs.aws.amazon.com/ARG/latest/userguide/gettingstarted-prereqs.html#rg-permissions-te)  | Grants permission to retrieve the resource types currently supported by Tag Editor |  |   | List |

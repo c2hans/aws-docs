@@ -14,6 +14,8 @@ You can filter new Amazon RDS features on the [What's New with Database?](https:
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [Amazon RDS supports MySQL 8.4.11](#WhatsNew) | You can now create Amazon RDS DB instances running MySQL 8.4.11. For more information, see [MySQL on Amazon RDS versions](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/MySQL.Concepts.VersionMgmt.html). | August 21, 2026 |
+| [Amazon RDS for Oracle supports Oracle APEX version 26.1.v1](#WhatsNew) | You can use Oracle APEX 26.1.v1 with Oracle Database 19c and higher. For more information, see [Oracle Application Express](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.Oracle.Options.APEX.html). | August 14, 2026 |
 | [Amazon RDS supports MariaDB 12.3](#WhatsNew) | You can now create Amazon RDS DB instances running MariaDB version 12.3. For more information, see [MariaDB on Amazon RDS versions](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/MariaDB.Concepts.VersionMgmt.html). | August 7, 2026 |
 | [Amazon RDS supports MySQL 9.7 in the Database Preview environment](#WhatsNew) | MySQL 9.7 is now available in the Database Preview environment in the US East (Ohio) AWS Region. For more information, see [MySQL version 9.7 in the Database Preview environment](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/MySQL.Concepts.VersionMgmt.html#mysql-preview-environment-version-9-7). | July 23, 2026 |
 | [Amazon RDS adds per-volume storage initialization and optimization status](#WhatsNew) | Amazon RDS now reports per-volume storage operation status and progress through the `StorageOperationStatus` and `StorageOperationPercentProgress` fields on the [DescribeDBInstances](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBInstances.html) response. The fields report progress for point-in-time recovery, snapshot restore, read replica creation, blue/green deployments, Single-AZ to Multi-AZ conversion, and storage scaling. For more information, see [Viewing Amazon RDS DB instance status](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/accessing-monitoring.html#Overview.DBInstance.Status). | July 20, 2026 |
@@ -647,8 +649,6 @@ You can filter new Amazon RDS features on the [What's New with Database?](https:
 <a name="WhatsNew.earlier-updates"></a>
 
 The following table describes the important changes in each release of the *Amazon RDS User Guide* before June 2018.
-
-****
 
 | Change | Description | Date changed |
 | --- | --- | --- |

@@ -27,8 +27,6 @@ You can see resources that may not be cloned by checking the drift status of you
 ## Options
 <a name="eb3-cloneoptions"></a>
 
-****
-
 |  Name  |  Description  |
 | --- | --- |
 | `-n` {{string}}<br />or<br />`--clone_name` {{string}} | Desired name for the cloned environment. |

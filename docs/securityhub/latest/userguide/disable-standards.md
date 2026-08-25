@@ -54,7 +54,7 @@ To disable the standard in additional Regions, repeat the preceding steps in eac
 ------
 #### [ Security Hub CSPM API ]
 
-To disable a standard programmatically in a single account and Region, use the [BatchDisableStandards](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_BatchDisableStandards.html) operation. Or, if you're using the AWS Command Line Interface (AWS CLI), run the [batch-disable-standards](https://docs.aws.amazon.com/cli/latest/reference/securityhub/batch-disable-standards.html) command.
+To disable a standard programmatically in a single account and Region, use the [BatchDisableStandards](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchDisableStandards.html) operation. Or, if you're using the AWS Command Line Interface (AWS CLI), run the [batch-disable-standards](https://docs.aws.amazon.com/cli/latest/reference/securityhub/batch-disable-standards.html) command.
 
 In your request, use the `StandardsSubscriptionArns` parameter to specify the Amazon Resource Name (ARN) of the standard that you want to disable. If you're using the AWS CLI, use the `standards-subscription-arns` parameter to specify the ARN. Also specify the Region that your request applies to. For example, the following command disables the AWS Foundational Security Best Practices (FSBP) standard for an account ({{123456789012}}):
 
@@ -66,7 +66,7 @@ $ aws securityhub batch-disable-standards \
 
 Where {{arn:aws:securityhub:us-east-1:123456789012:subscription/aws-foundational-security-best-practices/v/1.0.0}} is the ARN of the FSBP standard for the account in the US East (N. Virginia) Region, and {{us-east-1}} is the Region in which to disable it.
 
-To obtain the ARN for a standard, you can use the [GetEnabledStandards](https://docs.aws.amazon.com//securityhub/1.0/APIReference/API_GetEnabledStandards.html) operation. This operation retrieves information about the standards that are currently enabled in your account. If you're using the AWS CLI, you can run the [get-enabled-standards](https://docs.aws.amazon.com/cli/latest/reference/securityhub/get-enabled-standards.html) command to retrieve this information.
+To obtain the ARN for a standard, you can use the [GetEnabledStandards](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetEnabledStandards.html) operation. This operation retrieves information about the standards that are currently enabled in your account. If you're using the AWS CLI, you can run the [get-enabled-standards](https://docs.aws.amazon.com/cli/latest/reference/securityhub/get-enabled-standards.html) command to retrieve this information.
 
 ------
 

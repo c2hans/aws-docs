@@ -57,7 +57,7 @@ This widget displays security findings from AWS Security for your application. A
 ### Configuring the AWS Security widget
 <a name="sechub-configure"></a>
 
- To configure the AWS Security widget, set up AWS Security Hub CSPM for your application and account. For more information, see [What is AWS Security Hub CSPM?](https://docs.aws.amazon.com//securityhub/latest/userguide/what-is-securityhub.html#securityhub-free-trial) in the *AWS Security Hub CSPM User Guide*. For pricing information, see [AWS Security Hub CSPM free trial, usage, and pricing ](https://docs.aws.amazon.com//securityhub/latest/userguide/what-is-securityhub.html#securityhub-free-trial) in the *AWS Security Hub CSPM User Guide*.
+ To configure the AWS Security widget, set up AWS Security Hub CSPM for your application and account. For more information, see [What is AWS Security Hub CSPM?](https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-securityhub.html#securityhub-free-trial) in the *AWS Security Hub CSPM User Guide*. For pricing information, see [AWS Security Hub CSPM free trial, usage, and pricing ](https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-securityhub.html#securityhub-free-trial) in the *AWS Security Hub CSPM User Guide*.
 
  AWS Security Hub CSPM requires you to configure AWS Config Recording. This service provides a detailed view of the resources associated with your AWS account. For more information, see [AWS Systems Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/quick-setup-config.html) in the *AWS Systems Manager User Guide*.
 
@@ -112,7 +112,7 @@ For pricing information, see [AWS Systems Manager pricing](https://aws.amazon.co
 ### Configuring the Monitoring and operations widget
 <a name="operations-configure"></a>
 
- To configure the Monitoring and operations widget, create CloudWatch alarms and canaries in your AWS account. For more information, see [Using Amazon CloudWatch alarms](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html) and [Creating a canary](https://docs.aws.amazon.com//AmazonCloudWatch/latest/monitoring/CloudWatch_Synthetics_Canaries_Create.html) in the *Amazon CloudWatch User Guide*. For CloudWatch alarm and synthetic canary pricing, see [Amazon CloudWatch pricing](https://aws.amazon.com/cloudwatch/pricing/) and the [AWS Cloud Operations and Migrations Blog](https://aws.amazon.com/blogs/mt/managing-cloudwatch-synthetics-canaries-at-scale/) respectively.
+ To configure the Monitoring and operations widget, create CloudWatch alarms and canaries in your AWS account. For more information, see [Using Amazon CloudWatch alarms](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html) and [Creating a canary](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Synthetics_Canaries_Create.html) in the *Amazon CloudWatch User Guide*. For CloudWatch alarm and synthetic canary pricing, see [Amazon CloudWatch pricing](https://aws.amazon.com/cloudwatch/pricing/) and the [AWS Cloud Operations and Migrations Blog](https://aws.amazon.com/blogs/mt/managing-cloudwatch-synthetics-canaries-at-scale/) respectively.
 
 For more information about CloudWatch Application Signals, see [Enable Amazon CloudWatch Application Signals](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Application-Signals-Enable.html) in the *Amazon CloudWatch User Guide*.
 

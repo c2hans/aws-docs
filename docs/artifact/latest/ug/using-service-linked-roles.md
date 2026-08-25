@@ -62,8 +62,6 @@ Use the IAM console, the AWS CLI, or the AWS API to delete the AWSServiceRoleFor
 
 AWS Artifact does not support using service-linked roles in every Region where the service is available. You can use the AWSServiceRoleForArtifact role in the following Regions.
 
-****
-
 | Region name | Region identity | Support in AWS Artifact |
 | --- | --- | --- |
 | US East (N. Virginia) | us-east-1 | Yes |

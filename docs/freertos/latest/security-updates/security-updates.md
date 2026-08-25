@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/security-updates/securit
 
 The table below lists FreeRTOS security updates and the corresponding [Common Vulnerabilities and Exposures](https://cve.mitre.org/) (CVE) number.
 
-****
-
 | Date Created | Severity | FreeRTOS Library | CVE | Minimum Patched Version |
 | --- | --- | --- | --- | --- |
 | 2018-09-05 | High | Secure Sockets | [CVE-2018-16522](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-16522) | [Amazon FreeRTOS v1.3.2](https://github.com/aws/amazon-freertos/blob/v1.3.2/CHANGELOG.md) |

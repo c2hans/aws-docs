@@ -14,8 +14,6 @@ Use to modify the properties of an existing Amazon Simple Queue Service instance
 ## Change Type Details
 <a name="ct-0hi7z7tyikjf6-MMSu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-0hi7z7tyikjf6 |

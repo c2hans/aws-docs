@@ -165,8 +165,6 @@ You can view the action execution details to view the variables for that action,
 
 You can use the console to view variables for an action.
 
-****
-
 1. Sign in to the AWS Management Console and open the CodePipeline console at [http://console.aws.amazon.com/codesuite/codepipeline/home](http://console.aws.amazon.com/codesuite/codepipeline/home).
 
    The names of all pipelines associated with your AWS account are displayed.
@@ -253,8 +251,6 @@ You can use the **list-action-executions** command to view variables for an acti
 <a name="actions-variables-examples-approvals"></a>
 
 When you specify a namespace for an action, and that action produces output variables, you can add a manual approval that displays variables in the approval message. This example shows you how to add variable syntax to a manual approval message.
-
-****
 
 1. Sign in to the AWS Management Console and open the CodePipeline console at [http://console.aws.amazon.com/codesuite/codepipeline/home](http://console.aws.amazon.com/codesuite/codepipeline/home).
 

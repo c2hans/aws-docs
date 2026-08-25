@@ -47,7 +47,7 @@ Example response:
 ## API Request
 <a name="private-channels-list-api"></a>
 
-For usage information, see [ListPlaybackKeyPairs](https://docs.aws.amazon.com//ivs/latest/LowLatencyAPIReference/API_ListPlaybackKeyPairs.html) in the *IVS Low-Latency Streaming API Reference*.
+For usage information, see [ListPlaybackKeyPairs](https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_ListPlaybackKeyPairs.html) in the *IVS Low-Latency Streaming API Reference*.
 
 ```
 POST /ListPlaybackKeyPairs HTTP/1.1

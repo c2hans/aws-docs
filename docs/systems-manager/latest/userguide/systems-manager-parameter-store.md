@@ -32,9 +32,7 @@ For more information about parameter types, see [Parameter Store reference](what
 Use the following table to choose a service for your application data.
 
 **Note**
-If you manage credentials such as usernames, passwords, or any other secrets, we recommend using [AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html). Secrets Manager is purpose-built for managing secrets such as database credentials, API keys, and supported third-party software-vended secrets. For more information, see [What is AWS Secrets Manager?](https://docs.aws.amazon.com//secretsmanager/latest/userguide/intro.html) in the *AWS Secrets Manager User Guide*.
-
-****
+If you manage credentials such as usernames, passwords, or any other secrets, we recommend using [AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html). Secrets Manager is purpose-built for managing secrets such as database credentials, API keys, and supported third-party software-vended secrets. For more information, see [What is AWS Secrets Manager?](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html) in the *AWS Secrets Manager User Guide*.
 
 | Feature | Parameter Store | AWS AppConfig | AWS Secrets Manager |
 | --- | --- | --- | --- |
@@ -92,8 +90,6 @@ Parameter Store offers different parameter tiers that control storage limits: th
 You can mix standard and advanced parameters. For example, you can have up to 100,000 advanced parameters and 10,000 standard parameters in the same AWS account and Region. The following table describes the different features supported for each parameter type.
 
 The following table describes the differences between parameter tiers.
-
-****
 
 | Feature or use case | Standard | Advanced |
 | --- | --- | --- |

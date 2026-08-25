@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon Elastic Kubernetes Service provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="eks-AccessKubernetesApi"></a>[AccessKubernetesApi](https://docs.aws.amazon.com/eks/latest/userguide/view-workloads.html) | View Kubernetes objects via AWS EKS console | Read |
@@ -17,6 +15,7 @@ Amazon Elastic Kubernetes Service provides the following APIs for data retrieval
 | <a name="eks-DescribeAddonConfiguration"></a>[DescribeAddonConfiguration](https://docs.aws.amazon.com/eks/latest/APIReference/API_DescribeAddonConfiguration.html) | List configuration options about an Amazon EKS add-on | Read |
 | <a name="eks-DescribeAddonVersions"></a>[DescribeAddonVersions](https://docs.aws.amazon.com/eks/latest/APIReference/API_DescribeAddonVersions.html) | Retrieve descriptive version information about the add-ons that Amazon EKS Add-ons supports | Read |
 | <a name="eks-DescribeCapability"></a>[DescribeCapability](https://docs.aws.amazon.com/eks/latest/APIReference/API_DescribeCapability.html) | Describe a capability for an Amazon EKS cluster | Read |
+| <a name="eks-DescribeCertificateAuthority"></a>[DescribeCertificateAuthority](https://docs.aws.amazon.com/eks/latest/APIReference/API_DescribeCertificateAuthority.html) | Retrieve descriptive information about a certificate authority for an Amazon EKS cluster | Read |
 | <a name="eks-DescribeCluster"></a>[DescribeCluster](https://docs.aws.amazon.com/eks/latest/APIReference/API_DescribeCluster.html) | Retrieve descriptive information about an Amazon EKS cluster | Read |
 | <a name="eks-DescribeClusterVersions"></a>[DescribeClusterVersions](https://docs.aws.amazon.com/eks/latest/APIReference/API_DescribeClusterVersions.html) | Retrieve descriptive information about Kubernetes versions that Amazon EKS clusters support | Read |
 | <a name="eks-DescribeEksAnywhereSubscription"></a>[DescribeEksAnywhereSubscription](https://docs.aws.amazon.com/eks/latest/APIReference/API_DescribeEksAnywhereSubscription.html) | Describe an EKS Anywhere subscription | Read |
@@ -32,6 +31,7 @@ Amazon Elastic Kubernetes Service provides the following APIs for data retrieval
 | <a name="eks-ListAddons"></a>[ListAddons](https://docs.aws.amazon.com/eks/latest/APIReference/API_ListAddons.html) | List the Amazon EKS add-ons in your AWS account (in the specified or default region) for a given cluster | List |
 | <a name="eks-ListAssociatedAccessPolicies"></a>[ListAssociatedAccessPolicies](https://docs.aws.amazon.com/eks/latest/APIReference/API_ListAssociatedAccessPolicies.html) | List associated access policy on and Amazon EKS access entry | List |
 | <a name="eks-ListCapabilities"></a>[ListCapabilities](https://docs.aws.amazon.com/eks/latest/APIReference/API_ListCapabilities.html) | List capabilities for an Amazon EKS cluster | List |
+| <a name="eks-ListCertificateAuthorities"></a>[ListCertificateAuthorities](https://docs.aws.amazon.com/eks/latest/APIReference/API_ListCertificateAuthorities.html) | List the certificate authorities for an Amazon EKS cluster | List |
 | <a name="eks-ListClusters"></a>[ListClusters](https://docs.aws.amazon.com/eks/latest/APIReference/API_ListClusters.html) | List the Amazon EKS clusters in your AWS account (in the specified or default region) | List |
 | <a name="eks-ListDashboardData"></a>[ListDashboardData](https://docs.aws.amazon.com/eks/latest/APIReference/API_ListDashboardData.html) | List dashboard data. The Amazon EKS Dashboard aggregates information about cluster resources across multiple accounts and regions. The dashboard includes information about EC2 Instances and EKS Cluster versions | Read |
 | <a name="eks-ListDashboardResources"></a>[ListDashboardResources](https://docs.aws.amazon.com/eks/latest/APIReference/API_ListDashboardResources.html) | List dashboard resources. The Amazon EKS Dashboard aggregates information about cluster resources across multiple accounts and regions. The dashboard includes information about EC2 Instances and EKS Cluster versions | Read |

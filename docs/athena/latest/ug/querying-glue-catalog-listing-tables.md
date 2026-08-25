@@ -19,8 +19,6 @@ WHERE  table_schema = 'rdspostgresql'
 ```
 The following table shows a sample result.
 
-****
-
 |  | table\_schema | table\_name | table\_type |
 | --- | --- | --- | --- |
 | 1 | rdspostgresql | rdspostgresqldb1\_public\_account | BASE TABLE |
@@ -36,8 +34,6 @@ FROM   information_schema.tables
 WHERE  table_name = 'athena1'
 ```
 The following table shows a sample result.
-
-****
 
 |  | table\_schema | table\_name | table\_type |
 | --- | --- | --- | --- |

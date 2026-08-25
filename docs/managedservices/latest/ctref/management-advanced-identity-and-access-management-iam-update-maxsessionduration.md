@@ -14,8 +14,6 @@ Update the MaxSessionDuration property of an AWS Identity and Access Management 
 ## Change Type Details
 <a name="ct-1fzddqrr20c2i-MAIu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1fzddqrr20c2i |

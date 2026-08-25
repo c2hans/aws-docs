@@ -26,10 +26,10 @@ The Elastic Beanstalk service has two sets of endpoints that consists of the old
 + **IPv4 **endpoints use the domain `amazonaws.com` – format for general service endpoint: `elasticbeanstalk.{{region}}.amazonaws.com`
 + **Dual-stack** endpoints use the domain `api.aws` – format for general service endpoint:: `elasticbeanstalk.{{region}}.api.aws`
 
-The endpoints for *service health* and *FIPS* have different host names, but they follow the same domain name pattern. For a list of endpoints see [Elastic Beanstalk service endpoints](https://docs.aws.amazon.com//general/latest/gr/elasticbeanstalk.html#elasticbeanstalk_region) in the *Amazon Web Services General Reference*.
+The endpoints for *service health* and *FIPS* have different host names, but they follow the same domain name pattern. For a list of endpoints see [Elastic Beanstalk service endpoints](https://docs.aws.amazon.com/general/latest/gr/elasticbeanstalk.html#elasticbeanstalk_region) in the *Amazon Web Services General Reference*.
 
 **Requests to Elastic Beanstalk**
-When you send requests to the Elastic Beanstalk service with the [AWS CLI](https://docs.aws.amazon.com/cli/latest/reference/elasticbeanstalk) or the [AWS SDK](https://aws.amazon.com//developer/tools/) you can specify an IPv4 endpoint or a dual-stack endpoint. The AWS CLI and AWS SDK use the IPv4-only endpoints by default if an endpoint URL isn't specified.
+When you send requests to the Elastic Beanstalk service with the [AWS CLI](https://docs.aws.amazon.com/cli/latest/reference/elasticbeanstalk) or the [AWS SDK](https://aws.amazon.com/developer/tools/) you can specify an IPv4 endpoint or a dual-stack endpoint. The AWS CLI and AWS SDK use the IPv4-only endpoints by default if an endpoint URL isn't specified.
 
 The following example demonstrates the AWS CLI sending a request to a dual-stack endpoint:
 
@@ -57,7 +57,7 @@ print(dual_stack_eb_client.list_available_solution_stacks())
 ```
 
 **VPC endpoints for dual-stack IPs**
-To configure your Elastic Beanstalk VPC endpoints to support dual-stack traffic, specify **dualstack** for the **IP address type** parameter of the VPC endpoint. You can specify this field via the [AWS CLI](https://docs.aws.amazon.com/cli/latest/reference/elasticbeanstalk), the [AWS SDK](https://aws.amazon.com//developer/tools/), or the AWS PrivateLink console. For instructions to do so in the AWS PrivateLink console, see [Create a VPC endpoint](https://docs.aws.amazon.com/vpc/latest/privatelink/create-interface-endpoint.html) in the *AWS PrivateLink Guide*.
+To configure your Elastic Beanstalk VPC endpoints to support dual-stack traffic, specify **dualstack** for the **IP address type** parameter of the VPC endpoint. You can specify this field via the [AWS CLI](https://docs.aws.amazon.com/cli/latest/reference/elasticbeanstalk), the [AWS SDK](https://aws.amazon.com/developer/tools/), or the AWS PrivateLink console. For instructions to do so in the AWS PrivateLink console, see [Create a VPC endpoint](https://docs.aws.amazon.com/vpc/latest/privatelink/create-interface-endpoint.html) in the *AWS PrivateLink Guide*.
 
 **Note**
 You must specify the **IP address type** of the VPC endpoint as either **IPv4** or **dualstack**. At this time Elastic Beanstalk VPC endpoints don't support an **IP address type** of **IPv6**, which would indicate IPv6-only support. The **dualstack** option allows for both the IPv4 and IPv6 internet protocols.

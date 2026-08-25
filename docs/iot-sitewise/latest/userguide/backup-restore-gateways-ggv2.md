@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/backup-res
 # Back up and restore SiteWise Edge gateways
 <a name="backup-restore-gateways-ggv2"></a>
 
-This topic covers how to restore SiteWise Edge gateways and backup your metric data. If you are experiencing issues with a broken SiteWise Edge gateway on the same machine and need to troubleshoot the issue, please read the AWS IoT SiteWise documentation [ Troubleshooting SiteWise Edge gateway issues](https://docs.aws.amazon.com//iot-sitewise/latest/userguide/troubleshooting-gateway.html#troubleshoot-gateway-issues).
+This topic covers how to restore SiteWise Edge gateways and backup your metric data. If you are experiencing issues with a broken SiteWise Edge gateway on the same machine and need to troubleshoot the issue, please read the AWS IoT SiteWise documentation [ Troubleshooting SiteWise Edge gateway issues](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/troubleshooting-gateway.html#troubleshoot-gateway-issues).
 
 **Note**
 The guidance covered in this topic is for SiteWise Edge gateways installed on AWS IoT Greengrass V2 version 2.1.0 or higher.
@@ -42,7 +42,7 @@ Before attempting to restore a SiteWise Edge gateway, ensure that all edge devic
 
 Use the following procedure to a restore a SiteWise Edge gateway:
 
-1. Use the installation script downloaded when you create SiteWise Edge gateway to restore the SiteWise Edge gateway on the new machine. Read the [Installing the SiteWise Edge gateway software on your local device](https://docs.aws.amazon.com//iot-sitewise/latest/userguide/install-gateway-software-on-local-device.html) procedure to setup the SiteWise Edge gateway.
+1. Use the installation script downloaded when you create SiteWise Edge gateway to restore the SiteWise Edge gateway on the new machine. Read the [Installing the SiteWise Edge gateway software on your local device](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/install-gateway-software-on-local-device.html) procedure to setup the SiteWise Edge gateway.
 
    If you lose or cannot find the installation script, please contact [AWS Customer Support](https://aws.amazon.com/contact-us/).
 
@@ -120,7 +120,7 @@ Use the following procedure to restore data on a new machine.
 Use this procedure validate your backed-up data and SiteWise Edge gateway restorations.
 
 **Note**
-This procedure requires that you have installed AWS OpsHub for AWS IoT SiteWise. For more information see, [Managing SiteWise Edge gateways using AWS OpsHub for AWS IoT SiteWise](https://docs.aws.amazon.com//iot-sitewise/latest/userguide/manage-gateways-ggv2.html).
+This procedure requires that you have installed AWS OpsHub for AWS IoT SiteWise. For more information see, [Managing SiteWise Edge gateways using AWS OpsHub for AWS IoT SiteWise](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/manage-gateways-ggv2.html).
 
 1. Open AWS OpsHub for AWS IoT SiteWise.
 
@@ -128,4 +128,4 @@ This procedure requires that you have installed AWS OpsHub for AWS IoT SiteWise.
 
 1. Validate your past data on the portal dashboard to check that the past data and the new data are both properly setup. There will be a downtime between past and new data. You should except to see a duration where no data points are collected.
 
-If you run into issues with backing up or restoring a SiteWise Edge gateway see the following troubleshooting topics [Troubleshooting an AWS IoT SiteWise Edge gateway](https://docs.aws.amazon.com//iot-sitewise/latest/userguide/troubleshooting-gateway.html).
+If you run into issues with backing up or restoring a SiteWise Edge gateway see the following troubleshooting topics [Troubleshooting an AWS IoT SiteWise Edge gateway](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/troubleshooting-gateway.html).

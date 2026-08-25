@@ -14,7 +14,7 @@ Follow these steps to get the lifecycle scripts.
 
 1. Download the [lifecycle scripts](https://github.com/aws-samples/awsome-distributed-training/tree/main/1.architectures/5.sagemaker-hyperpod/LifecycleScripts) from the GitHub repository to your machine.
 
-1. Upload the [lifecycle scripts](https://github.com/aws-samples/awsome-distributed-training/tree/main/1.architectures/5.sagemaker-hyperpod/LifecycleScripts) to the Amazon S3 bucket you created in [Provision basic resources](sagemaker-hyperpod-multihead-slurm-cfn.md#sagemaker-hyperpod-multihead-slurm-cfn-basic), using the [cp](https://docs.aws.amazon.com//cli/latest/reference/s3/cp.html) CLI command.
+1. Upload the [lifecycle scripts](https://github.com/aws-samples/awsome-distributed-training/tree/main/1.architectures/5.sagemaker-hyperpod/LifecycleScripts) to the Amazon S3 bucket you created in [Provision basic resources](sagemaker-hyperpod-multihead-slurm-cfn.md#sagemaker-hyperpod-multihead-slurm-cfn-basic), using the [cp](https://docs.aws.amazon.com/cli/latest/reference/s3/cp.html) CLI command.
 
    ```
    aws s3 cp --recursive LifeCycleScripts/base-config s3://${ROOT_BUCKET_NAME}/LifeCycleScripts/base-config
@@ -68,4 +68,4 @@ After you upload all the lifecycle scripts and the `provisioning_parameters.json
 
 ![Image showing all the lifecycle scripts uploaded to the Amazon S3 bucket in the Amazon Simple Storage Service console.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/hyperpod/hyperpod-lifecycle-scripts-s3.png)
 
-For more information, see [Start with base lifecycle scripts provided by HyperPod](https://docs.aws.amazon.com//sagemaker/latest/dg/sagemaker-hyperpod-lifecycle-best-practices-slurm-slurm-base-config.html).
+For more information, see [Start with base lifecycle scripts provided by HyperPod](https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-lifecycle-best-practices-slurm-slurm-base-config.html).

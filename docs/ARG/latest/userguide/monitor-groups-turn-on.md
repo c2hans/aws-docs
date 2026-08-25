@@ -76,7 +76,7 @@ $ aws resource-groups get-account-settings
 ```
 
 For more information, see the following resources:
-+ AWS CLI – [aws resource-groups update-account-settings](https://docs.aws.amazon.com//cli/latest/reference/resource-groups/update-account-settings.html) and [aws resource-groups get-account-settings](https://docs.aws.amazon.com//cli/latest/reference/resource-groups/get-account-settings.html)
-+ API – [UpdateAccountSettings](https://docs.aws.amazon.com//ARG/latest/APIReference/API_UpdateAccountSettings.html) and [GetAccountSettings](https://docs.aws.amazon.com//ARG/latest/APIReference/API_GetAccountSettings.html)
++ AWS CLI – [aws resource-groups update-account-settings](https://docs.aws.amazon.com/cli/latest/reference/resource-groups/update-account-settings.html) and [aws resource-groups get-account-settings](https://docs.aws.amazon.com/cli/latest/reference/resource-groups/get-account-settings.html)
++ API – [UpdateAccountSettings](https://docs.aws.amazon.com/ARG/latest/APIReference/API_UpdateAccountSettings.html) and [GetAccountSettings](https://docs.aws.amazon.com/ARG/latest/APIReference/API_GetAccountSettings.html)
 
 ------

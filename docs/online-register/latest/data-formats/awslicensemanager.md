@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsl
 
 AWS License Manager provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="license-manager-GetAccessToken"></a>[GetAccessToken](https://docs.aws.amazon.com/license-manager/latest/APIReference/API_GetAccessToken.html) | Get access token | Read |

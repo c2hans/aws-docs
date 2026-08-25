@@ -10,7 +10,7 @@ You can connect to Amazon EC2 instances created from most Windows Amazon Machine
 The license for the Windows Server operating system allows two simultaneous remote connections for administrative purposes. The license for Windows Server is included in the price of your Windows instance. If you require more than two simultaneous remote connections, you must purchase a Remote Desktop Services (RDS) license. If you attempt a third connection, an error occurs.
 
 **Tip**
-If you need to connect to your instance in order to troubleshoot boot, network configuration, and other issues for instances built on the [AWS Nitro System](https://aws.amazon.com/ec2/nitro/), you can use the [EC2 Serial Console for instances](ec2-serial-console.md).
+If you need to connect to your instance to troubleshoot boot, network configuration, and other issues for instances built on the [AWS Nitro System](https://aws.amazon.com/ec2/nitro/), you can use the [EC2 Serial Console for instances](ec2-serial-console.md).
 
 **Topics**
 + [Connect to your Windows instance using an RDP client](connect-rdp.md)

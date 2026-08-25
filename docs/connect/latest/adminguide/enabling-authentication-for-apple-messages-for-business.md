@@ -49,7 +49,7 @@ You must select **Don't generate a client secret**  when configuring the Amazo
 
 **Enable Customer Profiles**
 
- On the **Customer Profiles** page in Connect Customer console, ensure that Customer Profiles is enabled for your instance. If **No Customer Profiles domain associated with this instance of Connect Customer.** is displayed, then see [Enable Customer Profiles for your Connect Customer instance](enable-customer-profiles.md).
+ On the **Customer Profiles** page in Connect Customer console, make sure that Customer Profiles is enabled for your instance. If **No Customer Profiles domain associated with this instance of Connect Customer.** is displayed, then see [Enable Customer Profiles for your Connect Customer instance](enable-customer-profiles.md).
 
 ![Enable customer profiles in the Connect Customer console.](http://docs.aws.amazon.com/connect/latest/adminguide/images/apple-messages-for-business-configuring-amazon-connect-customer-profiles.png)
 

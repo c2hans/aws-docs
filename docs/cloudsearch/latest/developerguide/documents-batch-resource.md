@@ -80,8 +80,6 @@ The [JSON schema](http://json-schema.org/) representation of a batch is shown be
 #### documents/batch Request Properties (JSON)
 <a name="documents-batch-json-properties"></a>
 
-****
-
 | Property | Description | Required |
 | --- | --- | --- |
 | type | The operation type, add or delete.  | Yes |
@@ -148,8 +146,6 @@ The JSON schema representation of a document service API response is shown below
 #### documents/batch Response Properties (JSON)
 <a name="documents-batch-json-response-properties"></a>
 
-****
-
 | Property | Description |
 | --- | --- |
 | status | The result status, which is either success or error.  |
@@ -166,8 +162,6 @@ A document service request can return three types of status codes:
 + 4xx status codes indicate that the request was malformed.
 + 2xx status codes indicate that the request was processed successfully.
 
-****
-
 |  Error  |  Description  | HTTP Status Code  |
 | --- | --- | --- |
 |  No Content-Type  |  The Content-Type header is missing.  |  400  |
@@ -182,8 +176,6 @@ A document service request can return three types of status codes:
 ## Common Request Headers
 <a name="documents-batch-common-request-headers"></a>
 
-****
-
 | Name | Description | Required |
 | --- | --- | --- |
 | Content-Type | A standard MIME type describing the format of the object data. For more information, see [W3C RFC 2616 Section 14](http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.17). Default: application/json <br />Constraints: application/json or application/xml only | Required |
@@ -192,8 +184,6 @@ A document service request can return three types of status codes:
 
 ## Common Response Headers
 <a name="documents-batch-common-response-headers"></a>
-
-****
 
 | Name | Description |
 | --- | --- |

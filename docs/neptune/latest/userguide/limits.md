@@ -51,13 +51,6 @@ For example, when Neptune ML uses Amazon API Gateway to create its export servic
 
 These and other differences are [explained here](https://docs.amazonaws.cn/en_us/aws/latest/userguide/api-gateway.html#feature-diff).
 
-## Differences in the Asia Pacific (Hyderabad) region
-<a name="limits-hyd-region"></a>
-
-The following Neptune features are not supported in the Asia Pacific (Hyderabad) (`ap-south-2`) region:
-+ [Neptune global databases](neptune-global-database.md)
-+ Cross-region snapshot copying (see [Copying a Snapshot](backup-restore-copy-snapshot.md))
-
 ## Maximum size of storage cluster volumes
 <a name="limits-cluster-volume-size"></a>
 

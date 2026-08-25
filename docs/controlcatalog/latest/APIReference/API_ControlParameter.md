@@ -32,6 +32,12 @@ The parameter name. This name is the parameter `key` when you call [`EnableContr
 Type: String
 Required: Yes
 
+ ** Requirement **   <a name="controlcatalog-Type-ControlParameter-Requirement"></a>
+Indicates whether the parameter is required or optional when you enable the control.
+Type: String
+Valid Values: `REQUIRED | OPTIONAL`
+Required: No
+
 ## See Also
 <a name="API_ControlParameter_SeeAlso"></a>
 

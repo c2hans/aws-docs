@@ -305,12 +305,12 @@ Follow these steps to configure the automation:
 
 Systems Manager Automation
 + [Run this Automation (console)](https://console.aws.amazon.com/systems-manager/automation/execute/AWSSupport-TroubleshootR53DNSResolution)
-+ [Run an automation](https://docs.aws.amazon.com//systems-manager/latest/userguide/automation-working-executing.html)
-+ [Setting up an Automation](https://docs.aws.amazon.com//systems-manager/latest/userguide/automation-setup.html)
++ [Run an automation](https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-working-executing.html)
++ [Setting up an Automation](https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-setup.html)
 + [Support Automation Workflows landing page](https://aws.amazon.com/premiumsupport/technology/saw/)
 
 AWS service documentation
-+ [Route 53 Resolver](https://docs.aws.amazon.com//Route53/latest/DeveloperGuide/resolver.html)
-+ [Route 53 Resolver DNS Firewall](https://docs.aws.amazon.com//Route53/latest/DeveloperGuide/resolver-dns-firewall.html)
-+ [Working with private hosted zones](https://docs.aws.amazon.com//Route53/latest/DeveloperGuide/hosted-zones-private.html)
-+ [DNS attributes for your Amazon VPC](https://docs.aws.amazon.com//vpc/latest/userguide/vpc-dns.html)
++ [Route 53 Resolver](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html)
++ [Route 53 Resolver DNS Firewall](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-dns-firewall.html)
++ [Working with private hosted zones](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/hosted-zones-private.html)
++ [DNS attributes for your Amazon VPC](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-dns.html)

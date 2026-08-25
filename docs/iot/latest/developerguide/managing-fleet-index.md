@@ -18,7 +18,7 @@ The index created for all of your things is called `AWS_Things`. Thing indexing 
 
 To add named shadows for indexing:
 + If you use the [AWS IoT console](https://console.aws.amazon.com/iot/home), turn on **Thing indexing**, choose **Add named shadows**, and add your shadow names through **Named shadow selection**.
-+ If you use the AWS Command Line Interface (AWS CLI), set `namedShadowIndexingMode` to be `ON`, and specify shadow names in [`IndexingFilter`](https://docs.aws.amazon.com//iot/latest/apireference/API_IndexingFilter.html). To see example CLI commands, see [Managing thing indexing](managing-index.md#enable-index).
++ If you use the AWS Command Line Interface (AWS CLI), set `namedShadowIndexingMode` to be `ON`, and specify shadow names in [`IndexingFilter`](https://docs.aws.amazon.com/iot/latest/apireference/API_IndexingFilter.html). To see example CLI commands, see [Managing thing indexing](managing-index.md#enable-index).
 
  For more information about shadows, see [AWS IoT Device Shadow service](iot-device-shadows.md).
 

@@ -19,8 +19,6 @@ The console playgrounds don't support running inference on embeddings models. Us
 
 To use a foundation model with the Amazon Bedrock API, you need to determine the appropriate **model ID** to use. Refer to the following table to determine where to find the model ID that you need to use.
 
-****
-
 | Use case | How to find the model ID |
 | --- | --- |
 | Use a base model | Look up the ID in the [base model IDs chart](models-supported.md) |

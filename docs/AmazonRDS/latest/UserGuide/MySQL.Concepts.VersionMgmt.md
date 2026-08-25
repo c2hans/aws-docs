@@ -44,14 +44,13 @@ The following table shows the minor versions of MySQL 8.4 that Amazon RDS curren
 
 | MySQL engine version | Community release date | RDS release date | RDS end of standard support date |
 | --- | --- | --- | --- |
+| 8.4.11 | 28 July 2026 | 21 August 2026 | 21 August 2027 |
 | 8.4.10 | 16 June 2026 | 7 July 2026 | 7 July 2027 |
 | 8.4.9 | 21 April 2026 | 8 May 2026 | 8 May 2027 |
 | 8.4.8 | 20 January 2026 | 3 February 2026 | 3 February 2027 |
 | 8.4.7 | 21 October 2025 | 13 November 2025 | 30 November 2026 |
 | 8.4.6 | 22 July 2025 | 1 August 2025 | 31 October 2026 |
 | 8.4.5 | 15 April 2025 | 29 April 2025 | 31 October 2026 |
-| 8.4.4 | 21 January 2025 | 19 February 2025 | 31 May 2026 |
-| 8.4.3 | 15 October 2024 | 21 November 2024 | 31 May 2026 |
 
 The following table shows the minor versions of MySQL 8.0 that Amazon RDS currently supports.
 
@@ -61,12 +60,6 @@ Minor versions can reach end of standard support before major versions do. For e
 | MySQL engine version | Community release date | RDS release date | RDS end of standard support date |
 | --- | --- | --- | --- |
 | 8.0.46\* | 21 April 2026 | 8 May 2026 | 31 July 2026 |
-| 8.0.45 | 20 January 2026 | 3 February 2026 | 31 July 2026 |
-| 8.0.44 | 21 October 2025 | 13 November 2025 | 31 July 2026 |
-| 8.0.43 | 22 July 2025 | 1 August 2025 | 31 July 2026 |
-| 8.0.42 | 15 April 2025 | 29 April 2025 | 31 July 2026 |
-| 8.0.41 | 21 January 2025 | 19 February 2025 | 31 May 2026 |
-| 8.0.40 | 15 October 2024 | 13 November 2024 | 31 May 2026 |
 
 \* Amazon RDS Extended Support eligible minor engine version. For more information, see [Using Amazon RDS Extended Support](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/extended-support.html).
 
@@ -95,7 +88,6 @@ Minor versions can reach end of Extended Support before major versions do. For e
 | 5.7.44-RDS.20250818\* | Not applicable | 15 September 2025 | 31 October 2026 |
 | 5.7.44-RDS.20250508\* | Not applicable | 20 May 2025 | 31 October 2026 |
 | 5.7.44-RDS.20250213\* | Not applicable | 12 March 2025 | 31 October 2026 |
-| 5.7.44-RDS.20250103\* | Not applicable | 13 February 2025 | 31 May 2026 |
 
 \* MySQL Community retired major version 5.7 and won't be releasing new minor versions. This is a minor version that Amazon RDS released with critical security patches and bug fixes for MySQL 5.7 databases that are covered under RDS Extended Support. For more information about these minor versions, see [Amazon RDS Extended Support versions for RDS for MySQL](#mysql-extended-support-releases). For more information about RDS Extended Support, see [Amazon RDS Extended Support with Amazon RDS](extended-support.md).
 
@@ -139,6 +131,7 @@ You can test a DB instance against a new version before upgrading by creating a 
 For the changes that the MySQL community made to the minor versions, see [Critical Patch Updates, Security Alerts and Bulletins](https://www.oracle.com/security-alerts/) on the Oracle website. Under **Critical Patch Update**, choose the month when Oracle released the minor version. And then choose the MySQL minor version under **Affected Products and Versions**.
 
 **Topics**
++ [MySQL version 8.4.11](#MySQL.Concepts.VersionMgmt.Supported.Minor.8.4.11)
 + [MySQL version 8.4.10](#MySQL.Concepts.VersionMgmt.Supported.Minor.8.4.10)
 + [MySQL version 8.4.9](#MySQL.Concepts.VersionMgmt.Supported.Minor.8.4.9)
 + [MySQL version 8.4.8](#MySQL.Concepts.VersionMgmt.Supported.Minor.8.4.8)
@@ -155,6 +148,15 @@ For the changes that the MySQL community made to the minor versions, see [Critic
 + [MySQL version 8.0.40](#MySQL.Concepts.VersionMgmt.Supported.Minor.8.0.40)
 + [MySQL version 8.0.39](#MySQL.Concepts.VersionMgmt.Supported.Minor.8.0.39)
 + [MySQL version 8.0.37](#MySQL.Concepts.VersionMgmt.Supported.Minor.8.0.37)
+
+#### MySQL version 8.4.11
+<a name="MySQL.Concepts.VersionMgmt.Supported.Minor.8.4.11"></a>
+
+MySQL version 8.4.11 is now available on Amazon RDS. This release contains fixes and improvements added by the MySQL community and Amazon RDS.
+
+**New features and enhancements**
++ Updated the time zone information to base it on `tzdata2026c`.
++ Added support for post-quantum hybrid key exchange (`X25519MLKEM768` and `SecP256r1MLKEM768`) for TLS 1.3 connections. Clients that support post-quantum key exchange negotiate a quantum-resistant shared secret automatically. To confirm which group the current session negotiated, query the `Ssl_named_group` status variable. For example: `SHOW STATUS LIKE 'Ssl_named_group';`.
 
 #### MySQL version 8.4.10
 <a name="MySQL.Concepts.VersionMgmt.Supported.Minor.8.4.10"></a>

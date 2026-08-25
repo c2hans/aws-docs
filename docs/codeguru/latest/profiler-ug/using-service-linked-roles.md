@@ -94,8 +94,6 @@ CodeGuru Profiler supports using service-linked roles in all of the AWS Regions 
 
 CodeGuru Profiler does not support using service-linked roles in every Region where the service is available. You can use the AWSServiceRoleForCodeGuruProfiler role in the following Regions.
 
-****
-
 | Region name | Region identity | Support in CodeGuru Profiler |
 | --- | --- | --- |
 | US East (N. Virginia) | us-east-1 | Yes |

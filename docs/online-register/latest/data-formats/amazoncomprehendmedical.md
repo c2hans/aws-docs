@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon Comprehend Medical provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="comprehendmedical-DescribeEntitiesDetectionV2Job"></a>[DescribeEntitiesDetectionV2Job](https://docs.aws.amazon.com/comprehend-medical/latest/api/API_DescribeEntitiesDetectionV2Job.html) | Describe the properties of a medical entity detection job that you have submitted | Read |

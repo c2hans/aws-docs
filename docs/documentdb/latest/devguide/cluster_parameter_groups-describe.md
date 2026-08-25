@@ -20,8 +20,6 @@ To describe the details of a given cluster parameter group, complete the followi
 ------
 #### [ Using the AWS Management Console ]
 
-****
-
 1. Sign in to the AWS Management Console, and open the Amazon DocumentDB console at [https://console.aws.amazon.com/docdb](https://console.aws.amazon.com/docdb).
 
 1. In the navigation pane, choose **Parameter groups**.

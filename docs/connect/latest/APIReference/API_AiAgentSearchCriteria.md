@@ -25,6 +25,7 @@ Required: No
 ID of the AI Agent that was involved in the contact.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 128.
+Pattern: `[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}(:[A-Z0-9_$]+){0,1}$|^arn:[a-z-]*?:wisdom:[a-z0-9-]*?:[0-9]{12}:[a-z-]*?/[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}(?:/[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}){0,2}(:[A-Z0-9_$]+){0,1}`
 Required: No
 
  ** VersionNumber **   <a name="connect-Type-AiAgentSearchCriteria-VersionNumber"></a>

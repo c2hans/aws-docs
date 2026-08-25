@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon Kinesis Video Streams provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="kinesisvideo-DescribeEdgeConfiguration"></a>[DescribeEdgeConfiguration](https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/API_DescribeEdgeConfiguration.html) | Describe the edge configuration of your Kinesis Video Stream | Read |

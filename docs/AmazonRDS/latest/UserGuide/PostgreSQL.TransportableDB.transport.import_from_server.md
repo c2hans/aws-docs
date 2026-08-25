@@ -31,8 +31,6 @@ None.
 
 You can find descriptions of the `transport.import_from_server` function parameters in the following table.
 
-****
-
 | Parameter | Description |
 | --- | --- |
 | host | The endpoint of the source DB instance. |

@@ -8,6 +8,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 <a name="AWS_Cases"></a>
 
 **Resource types**
++ [AWS::Cases::Case](aws-resource-cases-case.md)
 + [AWS::Cases::CaseRule](aws-resource-cases-caserule.md)
 + [AWS::Cases::Domain](aws-resource-cases-domain.md)
 + [AWS::Cases::Field](aws-resource-cases-field.md)

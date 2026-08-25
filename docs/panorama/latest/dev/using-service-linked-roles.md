@@ -57,8 +57,6 @@ AWS Panorama does not allow you to edit the AWSServiceRoleForAWSPanorama service
 If you no longer need to use a feature or service that requires a service-linked role, we recommend that you delete that role. That way you don’t have an unused entity that is not actively monitored or maintained. However, you must clean up the resources for your service-linked role before you can manually delete it.
 
 To delete the AWS Panorama resources used by the AWSServiceRoleForAWSPanorama, use the procedures in the following sections of this guide.
-
-****
 + [Delete versions and applications](applications-manage.md#applications-manage-delete)
 + [Deregister an appliance](appliance-manage.md#appliance-manage-delete)
 

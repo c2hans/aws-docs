@@ -95,8 +95,6 @@ redshift://${{{jdbc_connection_string}}}
 
 You can use a multiplexer to connect to multiple database instances with a single Lambda function. Requests are routed by catalog name. Use the following classes in Lambda.
 
-****
-
 | Handler | Class |
 | --- | --- |
 | Composite handler | RedshiftMuxCompositeHandler |
@@ -106,16 +104,12 @@ You can use a multiplexer to connect to multiple database instances with a singl
 ##### Multiplexing handler parameters
 <a name="connectors-redshift-multiplexing-handler-parameters"></a>
 
-****
-
 | Parameter | Description |
 | --- | --- |
 | ${{catalog}}\_connection\_string | Required. A database instance connection string. Prefix the environment variable with the name of the catalog used in Athena. For example, if the catalog registered with Athena is myredshiftcatalog, then the environment variable name is myredshiftcatalog\_connection\_string. |
 | default | Required. The default connection string. This string is used when the catalog is lambda:${{{AWS\_LAMBDA\_FUNCTION\_NAME}}}. |
 
 The following example properties are for a Redshift MUX Lambda function that supports two database instances: `redshift1` (the default), and `redshift2`.
-
-****
 
 | Property | Value |
 | --- | --- |
@@ -159,8 +153,6 @@ Currently, the Redshift connector recognizes the `user` and `password` JDBC prop
 <a name="connectors-redshift-data-type-support"></a>
 
 The following table shows the corresponding data types for JDBC and Apache Arrow.
-
-****
 
 | JDBC | Arrow |
 | --- | --- |

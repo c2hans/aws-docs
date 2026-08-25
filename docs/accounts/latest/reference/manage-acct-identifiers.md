@@ -5,6 +5,8 @@ source_url: https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-id
 # View AWS account identifiers
 <a name="manage-acct-identifiers"></a>
 
+This information is about viewing AWS account identifiers if you signed up for AWS using Sign up for AWS (advanced) or if you activated advanced features for your account. To compare sign-up options, see [Compare sign-up options](sign-up-for-aws.md).
+
 AWS assigns the following unique identifiers to each AWS account:
 
 **[AWS account ID](#FindAccountId)**  <a name="awsaccountid"></a>

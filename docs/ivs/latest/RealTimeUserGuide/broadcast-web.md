@@ -24,6 +24,6 @@ The Web broadcast SDK enables participants to send and receive video. The SDK su
 + [Simple Publishing and Subscribing](https://codepen.io/amazon-ivs/pen/ZEqgrpo)
 + [Comprehensive React Real-Time Collaboration Demo](https://github.com/aws-samples/amazon-ivs-real-time-collaboration-web-demo/tree/main)
 
-**Platform requirements**: See [Amazon IVS Broadcast SDK](https://docs.aws.amazon.com//ivs/latest/RealTimeUserGuide/broadcast.html) for a list of supported platforms
+**Platform requirements**: See [Amazon IVS Broadcast SDK](https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/broadcast.html) for a list of supported platforms
 
 **Note:** Publishing from a browser is convenient for end users because it does not require installing additional software. However, browser-based publishing is subject to the constraints and variability of browser environments. If you need to prioritize stability (for example, for event streaming), we generally recommend publishing from a non-browser source (e.g., OBS Studio or other dedicated encoders), which often have direct access to system resources and avoid browser limitations. For more on non-browser publishing options, see the [Stream Ingest](rt-stream-ingest.md) documentation.

@@ -22,7 +22,7 @@ You can configure tag-based access controls by using the Connect Customer admin 
 + Connect Customer can display up to 500 resources at a time on a real-time metrics table. For example, in an Agents table it can display up to 500 agents at a time. In a Queues table it can display up to 500 queues, and so on.
 + Very often fewer than 500 agents will appear on a real-time metrics table at any given time when tagging is enabled. Here's why:
   + Connect Customer can return a maximum of 500 agents at a time.
-  + When tagging is enabled, Connect Customer selects the first 500 agents who have the appropriate tags, and then displays only those agents in that group of 500 **who are active** (Online or On Contact). Because not all of the 500 tagged agents may be active, it is very likely fewer than 500 tagged agents will be displayed in the table.
+  + When tagging is enabled, Connect Customer selects the first 500 agents who have the appropriate tags, and then displays only those agents in that group of 500 **who are active** (Online or On Contact). Because not all of the 500 tagged agents might be active, it is very likely fewer than 500 tagged agents will be displayed in the table.
   + For example, you have 1000 tagged agents. In the first group of 500 tagged agents only 50 are online. Connect Customer selects the first 500 tagged agents but displays only 50 because they are currently active. It does not select the first 500 active agents.
   + For instructions that explain how to view the status of hundreds of agents when tagging is enabled, see [How to view hundreds of agents, queues, and routing profiles on the real-time metrics report](#view-tag-based-agents).
 + You can filter and group tables only by the primary resource (agent, queue, or routing profile). You cannot filter and group tables by non-primary resources. For example, you cannot filter by queue in an Agent table and you cannot group by queue in a Routing profile table.
@@ -50,7 +50,7 @@ Connect Customer displays up to 500 resources at a time on the real-time metrics
 1. For each table, manually filter to add up to 500 resources. For example, to add agents to the first table, you would choose to filter by **Agents**, and then choose 500 agents to include in the table, as shown in the following image. In table 2, add the next group of 500 agents, and so on.
 ![The table filters page, set to filter by agent.](http://docs.aws.amazon.com/connect/latest/adminguide/images/filterbyagent.png)
 
-1. You will be able to view the data for all 2500 resources across the 5 tables. When tags are applied to agents, each table will likely display fewer than 500 agents because not all of them may be active at the same time.
+1. You will be able to view the data for all 2500 resources across the 5 tables. When tags are applied to agents, each table will likely display fewer than 500 agents because not all of them might be active at the same time.
 
 ## How to transition to tag-based access control
 <a name="rtm-tag-based-access-control-transitioning"></a>

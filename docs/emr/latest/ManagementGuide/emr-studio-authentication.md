@@ -9,8 +9,6 @@ EMR Studio supports two authentication modes: IAM authentication mode and IAM Id
 
 Use the following table to choose an authentication mode for EMR Studio.
 
-****
-
 | If you are... | We recommend... |
 | --- | --- |
 | Already familiar with or have previously set up IAM authentication or federation | [IAM authentication mode](#emr-studio-iam-authentication), which offers the following benefits:+  Provides quick setup for EMR Studio if you already manage identities such as users and groups in IAM. <br />+  Works with identity providers that are compatible with OpenID Connect (OIDC) or Security Assertion Markup Language 2.0 (SAML 2.0). <br />+  Supports using multiple identity providers with the same AWS account. <br />+  Available in a wide number of AWS Regions. <br />+  Compliant with SOC 2.  |
@@ -70,7 +68,6 @@ You should only use your management account to enable IAM Identity Center and *p
 1. Follow the instructions in [Enable IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/step1.html) to enable IAM Identity Center in the AWS Region where you want to create the EMR Studio.
 
 1. Connect IAM Identity Center to your identity provider and provision the users and groups that you want to assign to the Studio.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-studio-authentication.html)
 
 You can now assign users and groups from your Identity Store to an EMR Studio. For instructions, see [Assign a user or group to an EMR Studio](emr-studio-manage-users.md#emr-studio-assign-users-groups).

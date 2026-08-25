@@ -8,8 +8,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/Hive-release-his
 ## Amazon EMR 7.5.0 - Hive changes
 <a name="Hive-release-history-changes-750"></a>
 
-****
-
 | Type | Description |
 | --- | --- |
 | Improvement | Increased maximum time to wait for Tez session to be opened while trying to use the existing session in HiveCLI to 10s |

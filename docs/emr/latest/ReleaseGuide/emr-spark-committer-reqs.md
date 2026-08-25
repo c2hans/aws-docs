@@ -27,8 +27,6 @@ The `partitionOverwriteMode` write option was introduced in Spark 2.4.0. For Spa
 
 Generally, the EMRFS S3-optimized committer isn't used in the following situations.
 
-****
-
 | Situation | Why the committer is not used |
 | --- | --- |
 | When you write to HDFS | The committer only supports writing to Amazon S3 using EMRFS. |

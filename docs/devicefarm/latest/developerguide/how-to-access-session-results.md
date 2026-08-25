@@ -12,7 +12,7 @@ For information about sessions, see [Sessions](sessions.md).
 
 ## Prerequisites
 <a name="how-to-access-session-results-prerequisites"></a>
-+ Complete a session. Follow the instructions in [Using a remote access session in AWS Device FarmUsing a session](how-to-use-session.md), and then return to this page.
++ Complete a session. Follow the instructions in [Using a remote access session in AWS Device Farm](how-to-use-session.md), and then return to this page.
 
 ## Viewing session details
 <a name="how-to-view-session-details"></a>

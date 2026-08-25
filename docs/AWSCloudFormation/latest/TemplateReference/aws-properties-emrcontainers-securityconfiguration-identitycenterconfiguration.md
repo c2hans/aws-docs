@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::EMRContainers::SecurityConfiguration IdentityCenterConfiguration
 <a name="aws-properties-emrcontainers-securityconfiguration-identitycenterconfiguration"></a>
 
-<a name="aws-properties-emrcontainers-securityconfiguration-identitycenterconfiguration-description"></a>The `IdentityCenterConfiguration` property type specifies Property description not available. for an [AWS::EMRContainers::SecurityConfiguration](aws-resource-emrcontainers-securityconfiguration.md).
+Contains the IAM Identity Center settings for a security configuration, including instance ARN, application assignment requirements, and application ARN.
 
 ## Syntax
 <a name="aws-properties-emrcontainers-securityconfiguration-identitycenterconfiguration-syntax"></a>
@@ -38,19 +38,19 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-emrcontainers-securityconfiguration-identitycenterconfiguration-properties"></a>
 
 `EnableIdentityCenter`  <a name="cfn-emrcontainers-securityconfiguration-identitycenterconfiguration-enableidentitycenter"></a>
-Property description not available.
+Specifies whether Identity Center is enabled for the security configuration.
 *Required*: No
 *Type*: Boolean
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `IdentityCenterApplicationAssignmentRequired`  <a name="cfn-emrcontainers-securityconfiguration-identitycenterconfiguration-identitycenterapplicationassignmentrequired"></a>
-Property description not available.
+Specifies whether user assignment is required for the Identity Center application.
 *Required*: No
 *Type*: Boolean
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `IdentityCenterInstanceARN`  <a name="cfn-emrcontainers-securityconfiguration-identitycenterconfiguration-identitycenterinstancearn"></a>
-Property description not available.
+The Amazon Resource Name (ARN) of the Identity Center instance.
 *Required*: No
 *Type*: String
 *Pattern*: `^arn:(aws|aws-us-gov|aws-cn|aws-iso|aws-iso-b):sso:::instance/(sso)?ins-[a-zA-Z0-9-.]{16}$`

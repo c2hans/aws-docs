@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsa
 
 AWS App Runner provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="apprunner-DescribeAutoScalingConfiguration"></a>[DescribeAutoScalingConfiguration](https://docs.aws.amazon.com/apprunner/latest/api/API_DescribeAutoScalingConfiguration.html) | Retrieve the description of an AWS App Runner automatic scaling configuration resource | Read |

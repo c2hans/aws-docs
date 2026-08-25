@@ -9,7 +9,10 @@ Associates an AWS Key Management Service (AWS KMS) customer managed key with the
 
 Only the `default` dataset is supported. The `default` dataset is implicit for every account in every Region — you do not need to create it before calling this operation.
 
-You can call `AssociateDatasetKmsKey` on a dataset that is already associated with a KMS key to replace the existing key with a different one. To replace a key, the caller must have `kms:Decrypt` permission on both the current key and the new key.
+You can call `AssociateDatasetKmsKey` on a dataset that is already associated with a KMS key to replace the existing key with a different one. The caller must have `kms:Decrypt` permission on both the current key and the new key.
+
+**Note**
+If the currently associated key has been deleted, is scheduled for deletion, is pending import, is unavailable, or has been disabled, Amazon CloudWatch does not require `kms:Decrypt` permission on the current key and the rotation proceeds. If the key was only disabled, consider re-enabling it instead of rotating, because re-enabling allows Amazon CloudWatch to resume decrypting your existing metric data encrypted with that key.
 
 The KMS key that you specify must meet all of the following requirements:
 + It must be a symmetric encryption KMS key (key spec `SYMMETRIC_DEFAULT`, key usage `ENCRYPT_DECRYPT`). Asymmetric keys, HMAC keys, and key material types other than `SYMMETRIC_DEFAULT` are not supported.
@@ -19,9 +22,9 @@ The KMS key that you specify must meet all of the following requirements:
 + It must be specified as a fully qualified key ARN. Key IDs, aliases, and alias ARNs are not accepted.
 + It must be in the same AWS Region as the dataset.
 
-Before completing the association, Amazon CloudWatch validates the key by performing a series of dry-run KMS operations. Service-principal checks run first to verify that the key policy grants the required access to Amazon CloudWatch. These checks include `kms:DescribeKey`, `kms:GenerateDataKey`, `kms:Encrypt`, `kms:Decrypt`, and `kms:ReEncrypt*`. After those succeed, a `kms:Decrypt` dry-run is run with the caller's credentials to verify that the calling principal can use the key. When you are replacing an existing key, the caller's `kms:Decrypt` dry-run is run on the current key first, and only then on the new key.
+Before completing the association, Amazon CloudWatch validates the key by performing a series of dry-run KMS operations. Service-principal checks run first to verify that the key policy grants the required access to Amazon CloudWatch. These checks include `kms:DescribeKey`, `kms:GenerateDataKey`, `kms:Encrypt`, `kms:Decrypt`, and `kms:ReEncrypt*`. After those succeed, a `kms:Decrypt` dry-run is run with the caller's credentials to verify that the calling principal can use the new key. When you are replacing an existing key, the caller's `kms:Decrypt` dry-run is also run on the current key.
 
-If any of these checks fails, the operation fails and the existing key association (if any) remains unchanged. Common failure causes include the key being disabled, the key policy not granting the required permissions to Amazon CloudWatch, or the caller lacking `kms:Decrypt` permission on the key.
+If any of these checks on the new key fails, the operation fails and the existing key association (if any) remains unchanged. Common failure causes include the new key being disabled, the key policy not granting the required permissions to Amazon CloudWatch, or the caller lacking `kms:Decrypt` permission on the new key.
 
 For more information about using customer managed keys with Amazon CloudWatch, see [Encryption at rest with customer managed keys](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cmk-encryption.html) in the *Amazon CloudWatch User Guide*.
 

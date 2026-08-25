@@ -70,7 +70,7 @@ In the agent event stream you'll see the **AgentStatus**, for example:
 ## "We couldn't find this agent. Use the agent's user name to identify them."
 <a name="agent-status-cannot-find-agent"></a>
 
-On occasion, in the **Contact summary** the **Agent** field may say **"We couldn't find this agent. Use the agent's user name to identify them." This message is shown in the following image of the **Contact summary**.**
+On occasion, in the **Contact summary** the **Agent** field might say **"We couldn't find this agent. Use the agent's user name to identify them." This message is shown in the following image of the **Contact summary**.**
 
 ![The contact summary page, the error message in the Agent field.](http://docs.aws.amazon.com/connect/latest/adminguide/images/agent-status-not-found.png)
 

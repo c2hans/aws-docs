@@ -9,8 +9,6 @@ Amazon Q Business is no longer open to new customers. For capabilities similar t
 
 The following table gives an overview of the Microsoft Yammer connector and its supported features.
 
-****
-
 - ****Security****
   - **Feature:** Authentication type / **Support:** OAuth 2.0 with Resource Owner Password Flow
   - **Feature:** Authentication credentials / **Support:** +  Microsoft Yammer username <br />+  Microsoft Yammer password <br />+  Microsoft Yammer Client ID <br />+  Microsoft Yammer Client secret

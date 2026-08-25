@@ -23,6 +23,7 @@ The `MANUAL` running mode value is only supported by Amazon WorkSpaces Core. Con
          "Mode": "{{string}}",
          "PreferredProtocol": "{{string}}"
       },
+      "NestedVirtualizationEnabled": {{boolean}},
       "OperatingSystemName": "{{string}}",
       "Protocols": [ "{{string}}" ],
       "RootVolumeSizeGib": {{number}},

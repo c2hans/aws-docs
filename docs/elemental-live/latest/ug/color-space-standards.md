@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/color-space-sta
 
 To read this table, find a color space in the first column, then read across to identify the three sets of color data for that color space.
 
-****
-
 |  Elemental Live term for the color space   |  Complies with this color space standard   |  Complies with this brightness function standard   |  Complies with this standard for display metadata   |
 | --- | --- | --- | --- |
 | 601 or Rec\_601  | SDR rec. 601  | BT.1886  | Not applicable. This color space doesn't include display metadata. |

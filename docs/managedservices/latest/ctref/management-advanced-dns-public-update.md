@@ -14,8 +14,6 @@ Update an existing Route 53 DNS Hosted Zone with the supplied resource record se
 ## Change Type Details
 <a name="ct-1hzofpphabs3i-MADu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1hzofpphabs3i |

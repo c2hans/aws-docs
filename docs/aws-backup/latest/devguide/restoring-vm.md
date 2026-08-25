@@ -24,8 +24,8 @@ AWS Backup restores of virtual machines are non-destructive, meaning AWS Backup 
 + Confirm your [operating system is supported](https://docs.aws.amazon.com/vm-import/latest/userguide/prerequisites.html#vmimport-operating-systems) for import to and export from Amazon EC2 in the *VM Import/Export User Guide*.
 + Review limitations involved with [Importing VMs to Amazon EC2](https://docs.aws.amazon.com/vm-import/latest/userguide/prerequisites.html#limitations-image) in the *VM Import/Export User Guide*.
 + When you restore to an Amazon EC2 instance using AWS CLI, you must specify `"RestoreTo":"EC2Instance"`. All other attributes have default values.
-+ Amazon EC2 offers [EC2 Allowed AMIs](https://docs.aws.amazon.com//AWSEC2/latest/UserGuide/ec2-allowed-amis.html). If this setting is enabled in your account, add the alias `aws-backup-vault` to your allowlist. Otherwise, restore operations of VM recovery points to EC2 instances will fail with an error message, such as "Source AMI not found in Region".
-+ VMware restores to EC2 involving more than 21 disks are not supported. As a workaround, use [VMware Restores to EBS](https://docs.aws.amazon.com//aws-backup/latest/devguide/restoring-vm.html#restore-vm-ebs) to restore each disk individually as an EBS volume, then attach the EBS volumes to an EC2 instance.
++ Amazon EC2 offers [EC2 Allowed AMIs](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-allowed-amis.html). If this setting is enabled in your account, add the alias `aws-backup-vault` to your allowlist. Otherwise, restore operations of VM recovery points to EC2 instances will fail with an error message, such as "Source AMI not found in Region".
++ VMware restores to EC2 involving more than 21 disks are not supported. As a workaround, use [VMware Restores to EBS](https://docs.aws.amazon.com/aws-backup/latest/devguide/restoring-vm.html#restore-vm-ebs) to restore each disk individually as an EBS volume, then attach the EBS volumes to an EC2 instance.
 
 ## Use the AWS Backup console to restore virtual machine recovery points
 <a name="vm-restore-console"></a>
@@ -76,6 +76,8 @@ If you need to restore a virtual machine that no longer has a connection with Ba
    1. **Datastore**
 
 1. For **Restore role,** select either the **Default role** (recommended) or **Choose an IAM role** using the dropdown menu.
+**Note**
+If role manager is enabled in your account, AWS Backup selects the default service role for you, and a **Customize** option is available. For more information, see [IAM role creation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html) in the *IAM User Guide*.
 
 1. Choose **Restore backup**.
 
@@ -106,6 +108,8 @@ If you need to restore a virtual machine that no longer has a connection with Ba
 1. Select your KMS key from the menu.
 
 1. For **Restore role,** select either the **Default role** (recommended) or **Choose an IAM role**.
+**Note**
+If role manager is enabled in your account, AWS Backup selects the default service role for you, and a **Customize** option is available. For more information, see [IAM role creation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html) in the *IAM User Guide*.
 
 1. Choose **Restore backup**.
 
@@ -138,6 +142,8 @@ Choose an instance type that matches or exceeds the specifications of the origin
 1. For **security groups**, choose a security group, which acts as a firewall for traffic to your instance.
 
 1. For **Restore role,** select either the **Default role** (recommended) or **Choose an IAM role**.
+**Note**
+If role manager is enabled in your account, AWS Backup selects the default service role for you, and a **Customize** option is available. For more information, see [IAM role creation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html) in the *IAM User Guide*.
 
 1. *Optional*: To run a script on your instance at launch, expand **Advanced settings** and enter the script in **User data**.
 

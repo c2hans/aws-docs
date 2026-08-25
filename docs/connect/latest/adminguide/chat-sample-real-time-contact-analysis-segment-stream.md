@@ -38,7 +38,7 @@ This topic provides sample segment streams for STARTED, SEGMENTS, COMPLETED, and
 ## Sample SEGMENTS event
 <a name="chat-sample-segments-event"></a>
 + EventType: [SEGMENTS](chat-real-time-contact-analysis-segment-streams-data-model.md#chat-segment-streams-data-model-segments-event)
-+ Published during a conversational analytics session. This event contains a list of [RealtimeContactAnalysisSegment](https://docs.aws.amazon.com/connect/latest/APIReference/API_RealtimeContactAnalysisSegment.html) objects with analyzed information. The list of segments may include `"Transcript"`, `"Categories"`, `"Issue"`, `"Event"`, `"Attachment"`, or "PostContactSummary" segments.
++ Published during a conversational analytics session. This event contains a list of [RealtimeContactAnalysisSegment](https://docs.aws.amazon.com/connect/latest/APIReference/API_RealtimeContactAnalysisSegment.html) objects with analyzed information. The list of segments might include `"Transcript"`, `"Categories"`, `"Issue"`, `"Event"`, `"Attachment"`, or "PostContactSummary" segments.
 
 ```
 {

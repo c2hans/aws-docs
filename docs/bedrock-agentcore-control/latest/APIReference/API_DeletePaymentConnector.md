@@ -27,7 +27,7 @@ Pattern: `[a-zA-Z0-9](-*[a-zA-Z0-9]){0,256}`
  ** [paymentConnectorId](#API_DeletePaymentConnector_RequestSyntax) **   <a name="bedrockagentcorecontrol-DeletePaymentConnector-request-uri-paymentConnectorId"></a>
 The unique identifier of the payment connector to delete.
 Length Constraints: Minimum length of 12. Maximum length of 211.
-Pattern: `([0-9a-z][-]?){1,100}-[0-9a-z]{10}`
+Pattern: `([0-9a-z_][-]?){1,100}-[0-9a-z]{10}`
 Required: Yes
 
  ** [paymentManagerId](#API_DeletePaymentConnector_RequestSyntax) **   <a name="bedrockagentcorecontrol-DeletePaymentConnector-request-uri-paymentManagerId"></a>
@@ -65,12 +65,12 @@ The following data is returned in JSON format by the service.
 The unique identifier of the deleted payment connector.
 Type: String
 Length Constraints: Minimum length of 12. Maximum length of 211.
-Pattern: `([0-9a-z][-]?){1,100}-[0-9a-z]{10}`
+Pattern: `([0-9a-z_][-]?){1,100}-[0-9a-z]{10}`
 
  ** [status](#API_DeletePaymentConnector_ResponseSyntax) **   <a name="bedrockagentcorecontrol-DeletePaymentConnector-response-status"></a>
 The current status of the payment connector, set to `DELETING` when deletion is initiated. Possible values include `CREATING`, `READY`, `UPDATING`, `DELETING`, `CREATE_FAILED`, `UPDATE_FAILED`, and `DELETE_FAILED`.
 Type: String
-Valid Values: `CREATING | UPDATING | DELETING | READY | CREATE_FAILED | UPDATE_FAILED | DELETE_FAILED`
+Valid Values: `CREATING | UPDATING | DELETING | READY | CREATE_FAILED | UPDATE_FAILED | DELETE_FAILED | AWS_MARKETPLACE_SUBSCRIPTION_REQUIRED | PENDING_AUTHENTICATION | PROVISIONING | AUTHENTICATION_EXPIRED | AUTHENTICATION_FAILED`
 
 ## Errors
 <a name="API_DeletePaymentConnector_Errors"></a>

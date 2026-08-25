@@ -86,7 +86,7 @@ You can add an SSL connection to a newly created endpoint or to an existing endp
 1. Upload the certificate you want to use for encrypting the connection to an endpoint.
 **Note**
 You can also upload a certificate using the AWS DMS console when you create or modify an endpoint by selecting **Add new CA certificate** on the **Create database endpoint** page.
-For Aurora Serverless as target, get the certificate mentioned in [Using TLS/SSL with Aurora Serverless](https://docs.aws.amazon.com//AmazonRDS/latest/AuroraUserGuide/aurora-serverless.html#aurora-serverless.tls).
+For Aurora Serverless as target, get the certificate mentioned in [Using TLS/SSL with Aurora Serverless](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-serverless.html#aurora-serverless.tls).
 
 1. Create an endpoint as described in [Step 2: Specify source and target endpoints](CHAP_GettingStarted.Replication.md#CHAP_GettingStarted.Replication.Endpoints)
 

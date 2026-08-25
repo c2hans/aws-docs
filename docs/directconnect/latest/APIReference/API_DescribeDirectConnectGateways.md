@@ -59,7 +59,8 @@ Required: No
                "key": "string",
                "value": "string"
             }
-         ]
+         ],
+         "totalPrefixPoolAllocations": number
       }
    ],
    "nextToken": "string"

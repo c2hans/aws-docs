@@ -22,8 +22,6 @@ Donut charts show up to 20 data points for group or color. For more information 
 
 To understand the features supported by donut charts, use the following table.
 
-****
-
 | Feature | Supported? | Comments | For more information |
 | --- | --- | --- | --- |
 | Changing the legend display | Yes |  | [Legends on visual types in Quick](customizing-visual-legend.md) |

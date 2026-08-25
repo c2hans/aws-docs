@@ -11,7 +11,7 @@ Devices connect to AWS IoT and other services through AWS IoT Core. Through AWS 
 AWS IoT manages device communication through a message broker. Devices and clients publish messages to the message broker and also subscribe to messages that the message broker publishes. Messages are identified by an application-defined [*topic*](topics.md). When the message broker receives a message published by a device or client, it republishes that message to the devices and clients that have subscribed to the message's topic. The message broker also forwards messages to the AWS IoT [rules](iot-rules.md) engine, which can act on the content of the message.
 
 **AWS IoT message security**
-Device connections to AWS IoT use [X.509 client certificates](x509-client-certs.md) and [AWS signature V4](https://docs.aws.amazon.com//general/latest/gr/signing_aws_api_requests.html) for authentication. Device communications are secured by TLS version 1.3 and AWS IoT requires devices to send the [Server Name Indication (SNI) extension](https://tools.ietf.org/html/rfc3546#section-3.1) when they connect. For more information, see [Transport Security in AWS IoT](transport-security.html).
+Device connections to AWS IoT use [X.509 client certificates](x509-client-certs.md) and [AWS signature V4](https://docs.aws.amazon.com/general/latest/gr/signing_aws_api_requests.html) for authentication. Device communications are secured by TLS version 1.3 and AWS IoT requires devices to send the [Server Name Indication (SNI) extension](https://tools.ietf.org/html/rfc3546#section-3.1) when they connect. For more information, see [Transport Security in AWS IoT](transport-security.html).
 
 ## AWS IoT device data and service endpoints
 <a name="iot-connect-device-endpoints"></a>
@@ -21,7 +21,7 @@ You can cache or store the endpoints in your device. This means you won't need t
 
 Each account has several device endpoints that are unique to the account and support specific IoT functions. The AWS IoT device data endpoints support a publish/subscribe protocol that is designed for the communication needs of IoT devices; however, other clients, such as apps and services, can also use this interface if their application requires the specialized features that these endpoints provide. The AWS IoT device service endpoints support device-centric access to security and management services.
 
-To learn your account's device data endpoint, you can find it in the [**Settings**](https://console.aws.amazon.com//iot/home#/settings) page of your AWS IoT Core console.
+To learn your account's device data endpoint, you can find it in the [**Settings**](https://console.aws.amazon.com/iot/home#/settings) page of your AWS IoT Core console.
 
 To learn your account's device endpoint for a specific purpose, including the device data endpoint, use the **describe-endpoint** CLI command shown here, or the `DescribeEndpoint` REST API, and provide the `{{endpointType}}` parameter value from the following table.
 

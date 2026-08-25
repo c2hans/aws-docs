@@ -20,8 +20,6 @@ To get started using your AWS Panorama Appliance or [compatible device](gettings
 <a name="gettingstarted-prerequisites"></a>
 
 To follow this tutorial, you need an AWS Panorama Appliance or compatible device and the following hardware:
-
-****
 + **Display** – A display with HDMI input for viewing the sample application output.
 + **USB drive** (included with AWS Panorama Appliance) – A FAT32-formatted USB 3.0 flash memory drive with at least 1 GB of storage, for transferring an archive with configuration files and a certificate to the AWS Panorama Appliance.
 + **Camera** – An IP camera that outputs an RTSP video stream.
@@ -31,8 +29,6 @@ Use the tools and instructions provided by your camera's manufacturer to identif
 ![Viewing a stream in VLC.](http://docs.aws.amazon.com/panorama/latest/dev/images/vlc-stream.png)
 
 The AWS Panorama console uses other AWS services to assemble application components, manage permissions, and verify settings. To register an appliance and deploy the sample application, you need the following permissions:
-
-****
 + [AWSPanoramaFullAccess](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/AWSPanoramaFullAccess) – Provides full access to AWS Panorama, AWS Panorama access points in Amazon S3, appliance credentials in AWS Secrets Manager, and appliance logs in Amazon CloudWatch. Includes permission to create a [service-linked role](permissions-services.md) for AWS Panorama.
 + **AWS Identity and Access Management (IAM)** – On first run, to create roles used by the AWS Panorama service and the AWS Panorama Appliance.
 
@@ -112,8 +108,6 @@ Next, register a camera stream with the AWS Panorama console.
 ![Add streams to an AWS Panorama appliance on the console.](http://docs.aws.amazon.com/panorama/latest/dev/images/setup-addstream.png)
 
 1. Configure the following settings.
-
-****
    + **Name** – A name for the camera stream.
    + **Description** – A short description of the camera, its location, or other details.
    + **RTSP URL** – A URL that specifies the camera's IP address and the path to the stream. For example, `rtsp://192.168.0.77/live/mpeg4/`

@@ -9,8 +9,6 @@ To interact with Amazon Simple Email Service (Amazon SES), you use security cred
 
 The following table lists the types of credentials you might use with Amazon SES, depending on what you are doing.
 
-****
-
 | If you want to access the... | Use these credentials | What the credentials consist of | How to get the credentials |
 | --- | --- | --- | --- |
 | Amazon SES API<br />(You might access the Amazon SES API directly, or indirectly through an AWS SDK, the AWS Command Line Interface, or the AWS Tools for Windows PowerShell.) | AWS access keys | Access key ID and secret access key | See [Access Keys](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) in the *AWS General Reference*. For security best practice, use AWS Identity and Access Management (IAM) user access keys instead of AWS account access keys. Your AWS account credentials grant full access to all your AWS resources, so you should store them in a safe place and instead use IAM user credentials for day-to-day interaction with AWS. For more information, see [Root Account Credentials vs. IAM User Credentials](https://docs.aws.amazon.com/general/latest/gr/root-vs-iam.html) in the *AWS General Reference*.  |

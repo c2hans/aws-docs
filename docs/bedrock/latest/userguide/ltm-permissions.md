@@ -9,7 +9,7 @@ If you've enabled memory for your agent and if you encrypt agent sessions with a
 
 **Customer managed key policy**
 
-Amazon Bedrock uses these permissions to generate encrypted data keys and then use the generated keys to encrypt agent memory. Amazon Bedrock also needs permissions to re-encrypt the the generated data key with different encryption contexts. Re-encrypt permissions are also used when customer managed key transitions between another customer managed key or service owned key. For more information, see [Hierarchical Keyring](https://docs.aws.amazon.com//database-encryption-sdk/latest/devguide/use-hierarchical-keyring.html).
+Amazon Bedrock uses these permissions to generate encrypted data keys and then use the generated keys to encrypt agent memory. Amazon Bedrock also needs permissions to re-encrypt the the generated data key with different encryption contexts. Re-encrypt permissions are also used when customer managed key transitions between another customer managed key or service owned key. For more information, see [Hierarchical Keyring](https://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/use-hierarchical-keyring.html).
 
 Replace the `$region`, `account-id`, and `${caller-identity-role}` with appropriate values.
 

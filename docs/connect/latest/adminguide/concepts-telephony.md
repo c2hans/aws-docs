@@ -21,16 +21,16 @@ This topic explains the options that Connect Customer provides for telephony, wh
 
 Connect Customer provides capabilities to host both toll-free and direct dial numbers (DID) in all AWS Regions supported by Connect Customer. You can use both types of numbers in a single instance. A complete list of supported countries/regions and costs is located on the [Connect Customer pricing](https://aws.amazon.com/connect/pricing/) page.
 
-AWS manages the connectivity to our network of carriers providing diverse connections to multiple carriers in each region supported by Connect Customer. When Connect Customer is deployed in a Region, we take advantage of the built-in redundancy of the AWS Availability Zone design to provide multiple carrier interfaces into multiple data centers. You can see how AWS manages the design of a Region [here](https://infrastructure.aws/).
+AWS manages the connectivity to our network of carriers providing diverse connections to multiple carriers in each Region supported by Connect Customer. When Connect Customer is deployed in a Region, we take advantage of the built-in redundancy of the AWS Availability Zone design to provide multiple carrier interfaces into multiple data centers. You can see how AWS manages the design of a Region [here](https://infrastructure.aws/).
 
-In addition to the Connect Customer service being spread across multiple Availability Zones, AWS also has multiple telephony providers. These providers have multiple links into the data centers in those Availability Zones. This ensures that if a single or even multiple links fail from a carrier, there are alternate routes available to ensure the service remains available.
+In addition to the Connect Customer service being spread across multiple Availability Zones, AWS also has multiple telephony providers. These providers have multiple links into the data centers in those Availability Zones. This makes sure that if a single or even multiple links fail from a carrier, there are alternate routes available to ensure the service remains available.
 
 To learn more about Connect Customer architecture, see [Architectural guidance for Connect Customer](architecture-guidance.md).
 + **AWS manages toll-free numbers as a Responsible Organization**
 
-  These numbers are phone numbers with distinct prefix codes that can be dialed with no charge to the person placing the call. Such numbers allow callers to reach businesses and/or individuals out of the area without being charged a long-distance fee for the call.
+  These numbers are phone numbers with distinct prefix codes that can be dialed with no charge to the person placing the call. Such numbers allow callers to reach businesses or individuals out of the area without being charged a long-distance fee for the call.
 
-  In the United States, the [Federal Communications Commission](https://www.fcc.gov/consumers/guides/what-toll-free-number-and-how-does-it-work) provides rules for obtaining and using toll-free numbers. In other countries, similar governing bodies ensure that such numbers are managed and distributed in accordance with local laws.
+  In the United States, the [Federal Communications Commission](https://www.fcc.gov/consumers/guides/what-toll-free-number-and-how-does-it-work) provides rules for obtaining and using toll-free numbers. In other countries, similar governing bodies make sure that such numbers are managed and distributed in accordance with local laws.
 
   When you claim or port a US toll-free number into Connect Customer, we register that number with [SOMOS](https://www.somos.com/). After the number is registered, we are able to select multiple carriers to provide BOTH route and carrier redundancy. This provides the highest level of availability, ensuring the number will remain available even in the event of a complete carrier outage. This level of service does come at an additional cost, as these numbers are a higher price than direct dial, but the service reliability and customer experience make this the most attractive option.
 + **Locally formatted numbers**
@@ -41,9 +41,9 @@ To learn more about Connect Customer architecture, see [Architectural guidance f
 
   DID numbers offer you the ability to present a local calling line identification when placing outbound calls, and a local presence to inbound callers. This can be very useful to increase the likelihood outbound and queued callback calls get answered by your customers. It can also show a customer that you are local to their area, and provide a cheaper inbound route than a long-distance call if you don't publish a toll-free number.
 
-  Because DID numbers are threaded to single carrier, Connect Customer doesn't offer carrier redundancy for DID numbers. We do offer link redundancy across multiple Availability Zones, so in the event of a link failure that carrier still has facilities available in another location to deliver calls. DID numbers also have a capacity limitation on how many calls a single number can accommodate, and this number does vary by Region. It is important to work with your AWS account team to ensure you are properly enabled with the right type of DID numbers if you plan on using DID numbers as your primary inbound channel, and have an expectation of over 100 concurrent calls per number.
+  Because DID numbers are threaded to single carrier, Connect Customer doesn't offer carrier redundancy for DID numbers. We do offer link redundancy across multiple Availability Zones, so in the event of a link failure that carrier still has facilities available in another location to deliver calls. DID numbers also have a capacity limitation on how many calls a single number can accommodate, and this number does vary by Region. It is important to work with your AWS account team to make sure you are properly enabled with the right type of DID numbers if you plan on using DID numbers as your primary inbound channel, and have an expectation of over 100 concurrent calls per number.
 
-  DID numbers are less expensive than toll-free numbers, but don't have the redundancy and broad geographical coverage of them. The ability to localize numbers may be an attractive option for your business.
+  DID numbers are less expensive than toll-free numbers, but don't have the redundancy and broad geographical coverage of them. The ability to localize numbers might be an attractive option for your business.
 
 ## Use cases for different configurations
 <a name="concepts-use-cases"></a>
@@ -64,7 +64,7 @@ If you're migrating to Connect Customer from other platform, we recommend starti
 ### Maintaining two separate platforms
 <a name="concepts-two-platforms"></a>
 
-In some cases, you may have more than one Contact Center platform requiring telephony. Here's an overview of how to configure this:
+In some cases, you might have more than one Contact Center platform requiring telephony. Here's an overview of how to configure this:
 + Choose which platform is the initial call-handling service, and forward to the other platform.
 + If Connect Customer is the primary call handling platform, you can port or claim numbers. You will design your flows to transfer calls to the other platform on a telephone number you will provide in the flow.
 + If the external platform is the primary call handler, you will need to configure that platform to forward calls to a number you claim in Connect Customer. Choose either a toll-free number, which will give you better redundancy and capacity at an increased cost, or a bank of DID numbers to terminate the call into Connect Customer.

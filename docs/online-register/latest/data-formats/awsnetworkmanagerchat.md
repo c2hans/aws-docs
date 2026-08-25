@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsn
 
 AWS Network Manager Chat provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="networkmanager-chat-ListConversationMessages"></a>[ListConversationMessages](https://docs.aws.amazon.com/vpc/latest/reachability/security_iam_required-API-permissions.html) | List conversation messages | List |

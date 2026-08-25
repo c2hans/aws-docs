@@ -102,7 +102,7 @@ If you're a first-time user of Amazon FSx, we recommend that you read the follow
 
 1. If you're ready to create your first Amazon FSx file system, follow the instructions in [Getting started with Amazon FSx for NetApp ONTAP](getting-started.md).
 
-1. For information about performance, see [Amazon FSx for NetApp ONTAP performancePerformance](performance.md).
+1. For information about performance, see [Amazon FSx for NetApp ONTAP performance](performance.md).
 
 1. For Amazon FSx security details, see [Security in Amazon FSx for NetApp ONTAP](security.md).
 

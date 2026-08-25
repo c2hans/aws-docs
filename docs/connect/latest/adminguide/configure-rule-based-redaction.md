@@ -47,12 +47,12 @@ Before you configure rule-based redaction, complete the following.
    + **Allowlist - show matching content** – Only content that matches a rule remains visible in the final recording; all other browser and application windows are masked.
    + **Denylist - hide matching content** – Only content that matches a rule is masked in the final recording; all other content remains visible.
 
-1. Under **URL rules**, add one or more URL rules to match browser pages. For each rule:
+1. (Optional) Under **URL rules**, add rules to match browser pages. For each rule:
    + For **Comparison type**, choose a comparison type.
    + For **URL rule**, enter the pattern to match against.
    + To add another URL rule, choose **Add URL rule**.
 
-1. Under **Window title rules**, add one or more window title rules to match native application windows. For each rule:
+1. (Optional) Under **Window title rules**, add rules to match native application windows. For each rule:
    + For **Comparison type**, choose a comparison type.
    + For **Window title rule**, enter the pattern to match against.
    + To add another window title rule, choose **Add window title rule**.
@@ -60,6 +60,12 @@ Before you configure rule-based redaction, complete the following.
 1. Save and publish the flow.
 
 ![The Redaction configuration panel in the Set recording, analytics, and processing behavior flow block.](http://docs.aws.amazon.com/connect/latest/adminguide/images/configure-rule-based-redaction-flow-block.png)
+
+**Important**
+Rule-based redaction supports configurations with no URL or window title rules.
+An empty **Denylist** masks no browser or application windows.
+An empty **Allowlist** masks all browser and application windows.
+To preserve screen content and use redacted call audio, select **Denylist** and leave both rule lists empty. Enable conversational analytics call recording redaction for the contact. The resulting redacted screen recording preserves screen content and uses redacted audio. Without conversational analytics call recording redaction, the redacted screen recording has no audio.
 
 You can add rules of either type, or both types, in the same block. The configuration applies to every contact that is routed through the flow until you change it.
 

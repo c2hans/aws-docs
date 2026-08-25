@@ -46,8 +46,6 @@ pip install "sagemaker>=3.19.0"
 
 The SDK supports the following models and techniques within the Amazon Nova family:
 
-****
-
 | Method | Supported Models |
 | --- | --- |
 | Continued Pre-training | [All Nova Models](https://docs.aws.amazon.com/nova/latest/userguide/nova-model-recipes.html#nova-model-get-recipes) (SMHP only) |

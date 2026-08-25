@@ -18,13 +18,13 @@ This policy is attached to a service-linked role that allows the service to perf
 <a name="AWSElasticBeanstalkServiceRolePolicy-details"></a>
 + **Type**: Service-linked role policy
 + **Creation time**: September 13, 2017, 23:46 UTC
-+ **Edited time:** August 03, 2026, 18:57 UTC
++ **Edited time:** August 18, 2026, 17:17 UTC
 + **ARN**: `arn:aws:iam::aws:policy/aws-service-role/AWSElasticBeanstalkServiceRolePolicy`
 
 ## Policy version
 <a name="AWSElasticBeanstalkServiceRolePolicy-version"></a>
 
-**Policy version:** v7 (default)
+**Policy version:** v8 (default)
 
 The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request.
 
@@ -218,6 +218,7 @@ The policy's default version is the version that defines the permissions for the
       "Action" : [
         "s3:CreateBucket",
         "s3:GetObjectVersion",
+        "s3:GetObject",
         "s3:ListBucket",
         "s3:PutObject",
         "s3:PutObjectAcl"
@@ -634,5 +635,5 @@ The policy's default version is the version that defines the permissions for the
 
 ## Learn more
 <a name="AWSElasticBeanstalkServiceRolePolicy-learn-more"></a>
-+ [Understand versioning for IAM policies](https://docs.aws.amazon.com//IAM/latest/UserGuide/access_policies_managed-versioning.html)
-+ [Get started with AWS managed policies and move toward least-privilege permissions](https://docs.aws.amazon.com//IAM/latest/UserGuide/best-practices.html#bp-use-aws-defined-policies)
++ [Understand versioning for IAM policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-versioning.html)
++ [Get started with AWS managed policies and move toward least-privilege permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#bp-use-aws-defined-policies)

@@ -148,7 +148,7 @@ For more information, see [Amazon EBS volumes](https://docs.aws.amazon.com/ebs/l
 
 AWS Backup supports Amazon RDS database engines and Aurora clusters.
 + How to back up resources: [Getting started with AWS Backup](getting-started.md)
-+ [Amazon Relational Database Service backupsAmazon RDS Multi-Availability Zone backups](rds-backup.md)
++ [Amazon Relational Database Service backups](rds-backup.md)
 + How to restore Amazon RDS resources: [Restore an RDS database](restoring-rds.md)
 + How to restore Aurora clusters: [Restoring an Amazon Aurora cluster](restoring-aur.md)
 

@@ -43,7 +43,7 @@ Recent changes made to the console might affect your access if all of the follow
 
 We recommend you review the IAM policies that contain the `aws:SourceIp` or `aws:SourceVpc` global condition key. Apply both `aws:SourceIp` and `aws:SourceVpc` where applicable.
 
-Some AWS Management Console features use dual-stack domains that support both IPv4 and IPv6 connections. If your IAM policy restricts access using `aws:SourceIp` with only IPv4 CIDR blocks, requests might fail when your operating system prefers IPv6 connections (or vice versa). To avoid this, include both IPv4 and IPv6 CIDR blocks in your `aws:SourceIp` condition. For more information, see [aws:SourceIp](https://docs.aws.amazon.com//IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourceip) in the *AWS Identity and Access Management User Guide*.
+Some AWS Management Console features use dual-stack domains that support both IPv4 and IPv6 connections. If your IAM policy restricts access using `aws:SourceIp` with only IPv4 CIDR blocks, requests might fail when your operating system prefers IPv6 connections (or vice versa). To avoid this, include both IPv4 and IPv6 CIDR blocks in your `aws:SourceIp` condition. For more information, see [aws:SourceIp](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourceip) in the *AWS Identity and Access Management User Guide*.
 
 You can also onboard to the AWS Management Console Private Access feature to access the AWS Management Console through a VPC endpoint and use `aws:SourceVpc` conditions in your policies. For more information, see the following:
 + [AWS Management Console Private Access](console-private-access.md)
@@ -59,7 +59,7 @@ If there's a service outage in your default AWS Region, your browser might displ
 https://{{region}}.console.aws.amazon.com
 ```
 
-For more information, see [AWS Management Console service endpoints](https://docs.aws.amazon.com//general/latest/gr/mgmt-console.html) in the *AWS General Reference*.
+For more information, see [AWS Management Console service endpoints](https://docs.aws.amazon.com/general/latest/gr/mgmt-console.html) in the *AWS General Reference*.
 
 To view the status of all AWS services, including the AWS Management Console, see [AWS Health Dashboard](https://health.aws.amazon.com/health/status).
 

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/tro
 # DynamoDB throttling resolution guide
 <a name="troubleshooting-throttling-diagnostics"></a>
 
-This section provides targeted resolution guidance for each specific throttling reason that DynamoDB may return. Each entry includes suggested resolution approaches based on best practices and corresponding CloudWatch metrics to monitor.
+This section provides targeted resolution guidance for each specific throttling reason that DynamoDB might return. Each entry includes suggested resolution approaches based on best practices and corresponding CloudWatch metrics to monitor.
 
 DynamoDB implements 16 distinct throttling reasons across four main categories. Use the throttling reasons from your application's exception to navigate directly to the relevant guidance.
 

@@ -24,8 +24,6 @@ The 9-minute video [How to set up IAM Identity Center for your on-premise Active
 
 To enable multiple users in a single AWS account to start using AWS Cloud9, start steps that are for the AWS resources you have.
 
-****
-
 |  **Do you have an AWS account?**  |  **Do you have at least one IAM group and user in that account?**  |  **Start with this step**  |
 | --- | --- | --- |
 | No | — |  Step 1: Sign up for an AWS account  |
@@ -45,7 +43,7 @@ To enable multiple users in a single AWS account to start using AWS Cloud9, star
 ### Sign up for an AWS account
 <a name="sign-up-for-aws"></a>
 
-To get started with AWS, you need an AWS account. For information about creating an AWS account, see [Getting started with an AWS account](https://docs.aws.amazon.com//accounts/latest/reference/getting-started.html) in the *AWS Account Management Reference Guide*.
+To get started with AWS, you need an AWS account. For information about creating an AWS account, see [Getting started with an AWS account](https://docs.aws.amazon.com/accounts/latest/reference/getting-started.html) in the *AWS Account Management Reference Guide*.
 
 ## Step 1: Create an IAM group and user, and add the user to the group
 <a name="setup-create-iam-resources"></a>
@@ -304,8 +302,6 @@ The AWS Cloud9 console is displayed, and you can begin using AWS Cloud9.
 
 ## Next steps
 <a name="setup-next-steps"></a>
-
-****
 
 |  **Task**  |  **See this topic**  |
 | --- | --- |

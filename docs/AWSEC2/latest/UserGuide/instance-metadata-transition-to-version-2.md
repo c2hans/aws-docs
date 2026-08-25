@@ -59,7 +59,7 @@ The IAM policy or SCP must contain the following IAM condition keys:
 + `ec2:MetadataHttpPutResponseHopLimit`
 + `ec2:MetadataHttpTokens`
 If a parameter in the API or CLI call doesn't match the state specified in the policy that contains the condition key, the API or CLI call fails with an `UnauthorizedOperation` response.
-Furthermore, you can choose an additional layer of protection to enforce the change from IMDSv1 to IMDSv2. At the access management layer with respect to the APIs called via EC2 Role credentials, you can use a condition key in either IAM policies or AWS Organizations service control policies (SCPs). Specifically, by using the condition key `ec2:RoleDelivery` with a value of `2.0` in your IAM policies, API calls made with EC2 Role credentials obtained from IMDSv1 will receive an `UnauthorizedOperation` response. The same thing can be achieved more broadly with that condition required by an SCP. This ensures that credentials delivered via IMDSv1 cannot actually be used to call APIs because any API calls not matching the specified condition will receive an `UnauthorizedOperation` error.
+Furthermore, you can choose an additional layer of protection to enforce the change from IMDSv1 to IMDSv2. At the access management layer with respect to the APIs called through EC2 Role credentials, you can use a condition key in either IAM policies or AWS Organizations service control policies (SCPs). Specifically, by using the condition key `ec2:RoleDelivery` with a value of `2.0` in your IAM policies, API calls made with EC2 Role credentials obtained from IMDSv1 will receive an `UnauthorizedOperation` response. The same thing can be achieved more broadly with that condition required by an SCP. This ensures that credentials delivered through IMDSv1 cannot actually be used to call APIs because any API calls not matching the specified condition will receive an `UnauthorizedOperation` error.
 For example IAM policies, see [Work with instance metadata](ExamplePolicies_EC2.md#iam-example-instance-metadata). For more information on SCPs, see [Service control policies](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html) in the *AWS Organizations User Guide*.
 
 **Declarative Policies**
@@ -106,7 +106,7 @@ To assess your IMDSv2 migration scope, identify instances that are configured to
 
 1. **Audit IMDSv1 calls on each instance:**
 
-   Use the CloudWatch metric `MetadataNoToken`. This metric shows the number of IMDSv1 calls to the IMDS on your instances. For more information, see [Instance metrics](https://docs.aws.amazon.com/en_us/AWSEC2/latest/UserGuide/viewing_metrics_with_cloudwatch.html#ec2-cloudwatch-metrics).
+   Use the CloudWatch metric `MetadataNoToken`. This metric shows the number of IMDSv1 calls to the IMDS on your instances. For more information, see [Instance metrics](viewing_metrics_with_cloudwatch.md#ec2-cloudwatch-metrics).
 
 1. **Identify software on your instances making IMDSv1 calls:**
 
@@ -218,7 +218,7 @@ You can set IMDSv2=required as the default configuration at either the account o
 ### Step 5: Enforce instances to require IMDSv2
 <a name="path-step-5"></a>
 
-Once you’ve confirmed that there is no dependency on IMDSv1 on any of your instances, we recommend that you enforce IMDSv2 on all new instances.
+After you’ve confirmed that there is no dependency on IMDSv1 on any of your instances, we recommend that you enforce IMDSv2 on all new instances.
 
 Use one of the following options to enforce IMDSv2:
 

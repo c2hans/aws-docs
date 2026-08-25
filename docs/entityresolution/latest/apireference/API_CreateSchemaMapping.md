@@ -52,7 +52,7 @@ Required: No
  ** [mappedInputFields](#API_CreateSchemaMapping_RequestSyntax) **   <a name="API-CreateSchemaMapping-request-mappedInputFields"></a>
 A list of `MappedInputFields`. Each `MappedInputField` corresponds to a column the source data table, and contains column name plus additional information that AWS Entity Resolution uses for matching.
 Type: Array of [SchemaInputAttribute](API_SchemaInputAttribute.md) objects
-Array Members: Minimum number of 2 items. Maximum number of 35 items.
+Array Members: Minimum number of 2 items. Maximum number of 60 items.
 Required: Yes
 
  ** [schemaName](#API_CreateSchemaMapping_RequestSyntax) **   <a name="API-CreateSchemaMapping-request-schemaName"></a>
@@ -109,7 +109,7 @@ Length Constraints: Minimum length of 0. Maximum length of 255.
  ** [mappedInputFields](#API_CreateSchemaMapping_ResponseSyntax) **   <a name="API-CreateSchemaMapping-response-mappedInputFields"></a>
 A list of `MappedInputFields`. Each `MappedInputField` corresponds to a column the source data table, and contains column name plus additional information that AWS Entity Resolution uses for matching.
 Type: Array of [SchemaInputAttribute](API_SchemaInputAttribute.md) objects
-Array Members: Minimum number of 2 items. Maximum number of 35 items.
+Array Members: Minimum number of 2 items. Maximum number of 60 items.
 
  ** [schemaArn](#API_CreateSchemaMapping_ResponseSyntax) **   <a name="API-CreateSchemaMapping-response-schemaArn"></a>
 The ARN (Amazon Resource Name) that AWS Entity Resolution generated for the `SchemaMapping`.

@@ -26,7 +26,7 @@ The following procedure shows how to use the console to delete the `MusicBackup`
 1. In the list of backups, choose `MusicBackup`.
 ![Screenshot showing the MusicBackup with status as available.](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/select_musicbackup.png)
 
-1. Choose **Delete**. Confirm that you want to delete the backup by typing **delete** and clicking **Delete**.
+1. Choose **Delete**. Confirm that you want to delete the backup by typing **delete** and choosing **Delete**.
 
 ## Deleting a table backup (AWS CLI)
 <a name="deletebackup_cli"></a>

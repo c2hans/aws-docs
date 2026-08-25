@@ -52,6 +52,10 @@ When you create a custom patch baseline, you can specify one or more patches for
 
 Windows Server, however, doesn't support the concept of patch dependencies. You can add a patch to the **Rejected patches** list in a custom baseline for Windows Server, but the result depends on (1) whether the rejected patch is already installed on a managed node, and (2) which option you choose for **Rejected patches action**.
 
+**Rejected patches in bundled Windows updates**
+Microsoft combines some Windows updates into a single update under a parent Microsoft Knowledge Base (KB) ID. This update contains multiple component updates (child KB IDs) and installs the component applicable to the managed node.
+On Windows Server, Patch Manager applies the **Rejected patches** list to the update that Windows Update makes available, which is the parent update. If you add only a child KB to the **Rejected patches** list while its parent update is approved by the baseline, Patch Manager approves the parent update. Windows Update then installs the applicable child component as part of the parent update.
+
 Refer to the following table for details about rejected patch options on Windows Server.
 
 | Installation status | Option: "Allow as dependency" | Option: "Block" |

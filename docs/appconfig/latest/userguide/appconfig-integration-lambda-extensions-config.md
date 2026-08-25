@@ -29,10 +29,9 @@ The AWS AppConfig Agent Lambda extension can only retrieve data from one account
 AWS Lambda logs information about the AWS AppConfig Agent Lambda extension and the Lambda function by using Amazon CloudWatch Logs.
 The following table includes a **Sample values** column. Depending on your monitor resolution, you might need to scroll to the bottom of the table and then scroll to the right to view the column.
 
-****
-
 | Environment variable | Details | Default value | Sample values |
 | --- | --- | --- | --- |
+| `AWS_APPCONFIG_EXTENSION_EXPERIMENT_ASSIGNMENT_LOG_DESTINATION` | This environment variable enables AWS AppConfig Agent to log experiment assignment records, which capture each occurrence of an experiment treatment being assigned to a given entity at a given time. Possible values: `file:<path>/` indicates a base directory under which assignment records are written to disk; `stderr` indicates that assignment records are emitted to stderr. This feature requires AWS AppConfig Agent Lambda extension version 2.0.20159 or later. | None | `file:/tmp/aws-appconfig/assignments/`<br />`stderr` |
 | `AWS_APPCONFIG_EXTENSION_HTTP_PORT` | This environment variable specifies the port on which the local HTTP server that hosts the extension runs. | 2772 | 2772 |
 | `AWS_APPCONFIG_EXTENSION_LOG_LEVEL` | This environment variable specifies the level of detail that the agent logs. Each level includes the current level and all higher levels. The value is case insensitive. From most to least detailed, the log levels are: `trace`, `debug`, `info`, `warn`, `error`, `fatal`, and `none`. The `trace` log includes detailed information, including timing information, about the agent. | info | trace<br />debug<br />info<br />warn<br />error<br />fatal<br />none |
 | `AWS_APPCONFIG_EXTENSION_MAX_CONNECTIONS` | This environment variable configures the maximum number of connections the extension uses to retrieve configurations from AWS AppConfig.  | 3 | 3 |

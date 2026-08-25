@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/device-advisor
 <a name="device-advisor-tests-job-execution"></a>
 
 **"Device can complete a job execution"**
- This test case helps you validate if your device is able to receive updates using AWS IoT Jobs, and publish the status of successful updates. For more information on AWS IoT Jobs, see [ Jobs](https://docs.aws.amazon.com//iot/latest/developerguide/iot-jobs.html).
+ This test case helps you validate if your device is able to receive updates using AWS IoT Jobs, and publish the status of successful updates. For more information on AWS IoT Jobs, see [ Jobs](https://docs.aws.amazon.com/iot/latest/developerguide/iot-jobs.html).
  To successfully run this test case, there are two reserved AWS topics that you need to grant your [Device Role](https://docs.aws.amazon.com/iot/latest/developerguide/device-advisor-setting-up.html#da-iam-role) . To subscribe to job activity related messages, use the **notify** and **notify-next** topics. Your device role must grant PUBLISH action for the following topics:
 + $aws/things/**thingName**/jobs/**jobId**/get
 + $aws/things/**thingName**/jobs/**jobId**/update
@@ -55,4 +55,4 @@ For more information about these reserved topics, see reserved topics for [AWS I
    }
 ]
 ```
-For more information on creating and using job documents see [job document](https://docs.aws.amazon.com//iot/latest/developerguide/iot-jobs.html).
+For more information on creating and using job documents see [job document](https://docs.aws.amazon.com/iot/latest/developerguide/iot-jobs.html).

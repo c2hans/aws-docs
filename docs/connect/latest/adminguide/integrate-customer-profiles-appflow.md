@@ -145,4 +145,4 @@ After your connection is established, if it stops working, delete the integratio
 
 If an object fails to be sent, choose **Flow details** to learn more about what's gone wrong.
 
-You may need to delete the configuration and re-connect to the external application.
+You might need to delete the configuration and re-connect to the external application.

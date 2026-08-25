@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsi
 
 AWS IoT Analytics provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="iotanalytics-DescribeChannel"></a>[DescribeChannel](https://docs.aws.amazon.com/iotanalytics/latest/APIReference/API_DescribeChannel.html) | Describes the specified channel | Read |

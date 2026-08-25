@@ -9,7 +9,7 @@ Use this guide to get started with Amazon Elastic VMware Service (Amazon EVS). Y
 
 After you’re finished, you’ll have an Amazon EVS environment that you can use to migrate your VMware vSphere-based workloads to the AWS Cloud.
 
-Amazon EVS can deploy VCF for you, or you can use **Self-deployed** mode to install VCF yourself. For the VCF versions that Amazon EVS supports, see [VCF versions and EC2 instance types provided by Amazon EVS](versions-provided.md).
+Amazon EVS can deploy VCF 5.2.x for you, or you can use **Self-deployed** mode to install VCF yourself. For the VCF versions that Amazon EVS supports, see [VCF versions and EC2 instance types provided by Amazon EVS](versions-provided.md).
 
 For Self-deployed mode, see [Creating an Amazon EVS environment with Self-deployed mode](#getting-started-self-deployed). The procedures under [Create an Amazon EVS environment](#getting-started-create-env) cover environment creation where Amazon EVS deploys VCF for you.
 
@@ -531,13 +531,13 @@ You can create a DHCP option set using the Amazon VPC console or AWS CLI. For mo
 <a name="getting-started-config-dns"></a>
 
 DNS configuration enables hostname resolution in your Amazon EVS environment. To successfully deploy an Amazon EVS environment, your VPC’s DHCP option set must have the following DNS settings:
-+ A primary DNS server IP address and a secondary DNS server IP address in the DHCP option set.
++ A primary DNS server IP address and a secondary DNS server IP address in the DHCP option set. Both DNS server IPs must be reachable and responding to queries when the Amazon EVS connector launches. All required DNS records (forward A records and reverse PTR records) must be resolvable through those servers at that time.
 + A DNS forward lookup zone with A records for each VCF management appliance and Amazon EVS host in your deployment.
-+ A reverse lookup zone with PTR records for each VCF management appliance and Amazon EVS host in your deployment. For NTP configuration, you can use the the default Amazon NTP address `169.254.169.123`, or another IPv4 address that you prefer.
++ A reverse lookup zone with PTR records for each VCF management appliance and Amazon EVS host in your deployment. For NTP configuration, you can use the default Amazon NTP address `169.254.169.123`, or another IPv4 address that you prefer.
 
 For more information about configuring DNS servers in a DHCP option set, see [Create a DHCP option set](https://docs.aws.amazon.com/vpc/latest/userguide/DHCPOptionSet.html#CreatingaDHCPOptionSet).
 
-#### Configure DNS for on-premisis connectivity
+#### Configure DNS for on-premises connectivity
 <a name="getting-started-config-dns-on-prem"></a>
 
 For on-premises connectivity, we recommend the use of Route 53 private hosted zones with inbound resolvers. This setup enables hybrid DNS resolution, where you can use Route 53 for internal DNS within your VPC and integrate it with your existing on-premises DNS infrastructure. This allows resources within your VPC to resolve domain names hosted on your on-premises network, and vice versa, without requiring complex configurations. If required, you can also use your own DNS server with Route 53 outbound resolvers. For steps to configure, see [Creating a private hosted zone](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/hosted-zone-private-creating.html) and [Forwarding inbound DNS queries to your VPC](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-forwarding-inbound-queries.html) in the *Amazon Route 53 Developer Guide*.
@@ -842,13 +842,13 @@ This section describes the Amazon EVS-specific configuration you provide during 
 
 At a high level, installing VCF on your Amazon EVS hosts involves the following. Before you start, review the [Amazon EVS network settings](#sd-install-network) that you apply throughout installation.
 
-1.  ** [Prepare your ESX hosts](#sd-install-hosts) ** by setting the VM management VLAN on every host.
+1.  ** [Prepare the VCF Installer host](#sd-install-hosts) ** by setting the VM management VLAN ID on the ESX host where the VCF Installer will run.
 
 1.  ** [Prepare a temporary datastore](#sd-install-datastore) ** for the VCF Installer appliance. The vSAN datastore does not exist until bringup completes, so the Installer needs somewhere to run first.
 
 1.  ** [Deploy the VCF Installer appliance and download the VCF software](#sd-install-deploy) ** using a Broadcom download token.
 
-1.  ** [Run VCF bringup](#sd-install-bringup) **, which deploys the VCF management appliances and forms the vSAN datastore.
+1.  ** [Run VCF bringup](#sd-install-bringup) **, which deploys the VCF management appliances and creates the vSAN datastore.
 
 1.  ** [Reclaim the temporary datastore](#sd-install-reclaim) ** after VCF is fully installed and the Installer appliance is running on vSAN.
 
@@ -879,27 +879,30 @@ When you configure the management cluster during bringup, also apply these Amazo
 +  **Uplink teaming** — Use a failover teaming policy (active uplink with a standby uplink) for the distributed switch port groups, rather than a load-balancing policy.
 +  **EVC mode** — Set the cluster Enhanced vMotion Compatibility (EVC) mode to match your instance type: `INTEL_ICELAKE` for `i4i.metal`, or `INTEL_SAPPHIRERAPIDS` for `i7i.metal-24xl`.
 
-<a name="sd-install-hosts"></a> **Prepare your ESX hosts**
+#### Prepare the VCF Installer host
+<a name="sd-install-hosts"></a>
 
-On **every** ESX host in your environment, set the `VM Network` port group to the VM management VLAN. The VCF management appliances must run on the VM management VLAN, and the VCF Installer migrates host networking to a distributed switch only later, during bringup. You do not need to enable SSH on the hosts.
+On the ESX host where you will run the VCF Installer appliance, set the `VM Network` port group to the Amazon EVS-assigned VM management VLAN ID. This makes sure the VCF Installer appliance can communicate on the VM management VLAN. The host management network port group `Management` must remain untagged with VLAN ID `0`. The VCF Installer migrates host networking to a distributed switch during bringup. You do not need to enable SSH on the hosts.
 
-1. Find the VLAN ID of the VM management network. Amazon EVS assigns a fixed VLAN ID to each network function. Look up the ID for your environment in the Amazon EVS console (**Environments** → your environment → **Networks and connectivity** tab), or by running `aws evs list-environment-vlans` and matching on the `vmManagement` function.
+1. Find the VLAN ID of the VM management network. In the Amazon EVS console, open **Environments**, choose your environment, and then choose the **Networks and connectivity** tab. Alternatively, run `aws evs list-environment-vlans` and match the `vmManagement` function.
 
-1. On each host, using the VMware Host Client or the vSphere APIs, set the `VM Network` port group to that VM management VLAN ID. On a new ESX host this port group is untagged (VLAN ID `0`, the host management network).
+1. On the VCF Installer host, set the `VM Network` port group VLAN ID to the VM management VLAN ID. Leave the host management port group `Management` untagged with VLAN ID `0`.
 
-<a name="sd-install-datastore"></a> **Prepare a temporary datastore for the VCF Installer**
+#### Prepare a temporary datastore for the VCF Installer
+<a name="sd-install-datastore"></a>
 
 Amazon EVS hosts have no local VMFS datastores, and the vSAN datastore does not exist until bringup completes, so the VCF Installer appliance needs a temporary datastore to run from. Choose one host to run the Installer.
 
-1. In the Amazon EC2 console, create an encrypted Amazon EBS volume in the same Availability Zone as the host you chose. Size it to hold the VCF Installer appliance and the VCF installation bundles — at least 256 GB.
+1. In the Amazon EC2 console, create an encrypted General Purpose SSD (`gp3`) Amazon EBS volume in the same Availability Zone as the host you chose. Size it to hold the VCF Installer appliance and the VCF installation bundles: at least 256 GB.
 
-1. Attach the volume to that host.
+1. Attach the newly created EBS volume to the ESX host you chose earlier. For instructions, see [Attach an Amazon EBS volume to an instance](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-attaching-volume.html) in the *Amazon EBS User Guide*.
 
 1. Using the VMware Host Client or the vSphere APIs, create a local VMFS datastore on the attached EBS volume.
 
-<a name="sd-install-deploy"></a> **Deploy the VCF Installer and download the VCF software**
+#### Deploy the VCF Installer and download the VCF software
+<a name="sd-install-deploy"></a>
 
-1. Download the VCF Installer OVA for your target VCF version, and generate a Broadcom download token from the [Broadcom Support Portal](https://support.broadcom.com/). You use this token in the VCF Installer to enable the software depot.
+1. Make sure that your Broadcom account has a valid VCF entitlement so you can generate a download token. Download the VCF Installer OVA for your target VCF version, and generate a Broadcom download token from the [Broadcom Support Portal](https://support.broadcom.com/). You use this token in the VCF Installer to enable the software depot.
 
 1. Deploy the VCF Installer OVA onto the local VMFS datastore. Attach it to the `VM Network` port group, set its management IP address to the SDDC Manager address from your DNS plan, and set the appliance password. The VCF Installer appliance becomes SDDC Manager during bringup, so it uses the SDDC Manager address. (On VCF 9.0.x and 9.1.x, VCF Operations is a separate appliance.)
 
@@ -907,7 +910,8 @@ Amazon EVS hosts have no local VMFS datastores, and the vSAN datastore does not 
 **Note**
 Enabling the depot and syncing software requires outbound internet access from the Installer. The NAT gateway in your network foundation provides this access. For more information, see [Create a VPC with subnets and route tables](#getting-started-create-vpc).
 
-<a name="sd-install-bringup"></a> **Run VCF bringup**
+#### Run VCF bringup
+<a name="sd-install-bringup"></a>
 
 With the software synced, create your VCF deployment specification, validate it, and run the deployment.
 
@@ -919,20 +923,33 @@ With the software synced, create your VCF deployment specification, validate it,
 **Note**
 Bringup is the longest part of the installation and accounts for most of the setup time. When you use vSAN, forming the datastore and deploying the management appliances can take several hours.
 
-<a name="sd-install-reclaim"></a> **Reclaim the temporary datastore**
+#### Reclaim the temporary datastore
+<a name="sd-install-reclaim"></a>
 
-When bringup finishes, the management appliances run on the vSAN datastore, and the temporary VMFS datastore is empty. Unmount the temporary VMFS datastore from the host, then detach and delete the EBS volume to stop accruing storage charges.
+When bringup finishes, the management appliances run on the vSAN datastore, and the temporary VMFS datastore is empty. Reclaim the temporary datastore:
 
- **VCF appliance passwords**
+1. In the vSphere Client, unmount the temporary VMFS datastore from the host.
+
+1. In the Amazon EC2 console or using the AWS CLI, detach the EBS volume from the host instance. For instructions, see [Detach an Amazon EBS volume from an instance](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-detaching-volume.html) in the *Amazon EBS User Guide*.
+
+1. Wait until the volume state is `available`, then delete the volume through the EC2 console or the AWS CLI to stop accruing storage charges. To check the volume state, see [View Amazon EBS volume information](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-describing-volumes.html). To delete the volume, see [Delete an Amazon EBS volume](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-deleting-volume.html) in the *Amazon EBS User Guide*.
+
+#### VCF appliance passwords
+<a name="sd-install-passwords"></a>
 
 During bringup you set passwords for the VCF management appliances. Each appliance enforces its own password complexity requirements, which are defined by VCF. If an appliance rejects a password, the validation error states the specific requirement that the password must meet.
 
- **Bringup validation settings for VCF Installer**
+#### Bringup validation settings for VCF Installer
+<a name="sd-install-validation"></a>
 
-Several VCF Installer standard validation checks do not apply to the Amazon EVS network environment and fail unless you turn them off. Adjust the following values in the VCF spec file or the corresponding VCF Installer wizard options so that validation passes:
-+  **Skip gateway ping validation** — Set `skipGatewayPingValidation` to `true`. AWS VPC gateways do not respond to ICMP, so the gateway reachability check fails on Amazon EVS even when routing is correct.
-+  **Skip ESX thumbprint validation** — Set `skipEsxThumbprintValidation` to `true`.
-+  **Distributed switch teaming** — Set the NSX teaming policy to `FAILOVER_ORDER`, consistent with the failover teaming described earlier in this step.
+Several VCF Installer standard validation checks do not apply to the Amazon EVS network environment. How you handle them depends on whether you drive bringup with a spec file or the VCF Installer wizard.
++  **Gateway ping validation** – Amazon EVS VLAN subnet gateways do not respond to ICMP ping from outside the subnet, so the gateway reachability check fails on Amazon EVS even when routing is correct.
+  +  **Spec file** – set `skipGatewayPingValidation` to `true`.
+  +  **Wizard** – acknowledge the failing gateway ping check and continue.
++  **ESX host thumbprint validation**
+  +  **Spec file** – set `skipEsxThumbprintValidation` to `true` or extract and enter correct thumbprints for all hosts in the spec.
+  +  **Wizard** – thumbprint validation is mandatory. Review and accept the thumbprint to continue at the hosts step.
++  **Distributed switch teaming** – Set the NSX teaming policy to `FAILOVER_ORDER`, consistent with the failover teaming described earlier in this step.
 
 **Note**
 When you run bringup through the VCF Installer wizard, use the wizard to identify and correct spec errors. The wizard surfaces validation problems more clearly than the API, whose errors are less descriptive.
@@ -955,8 +972,8 @@ Create your overlay networks using Tier-0/Tier-1 routers on the NSX Edges direct
 NSX defines its own **VPC** and **transit gateway** abstractions, which are different from Amazon VPC and AWS Transit Gateway. In this guide, "VPC" and "transit gateway" refer to the AWS resources unless prefixed with "NSX".
 
 Before you begin, confirm that the following are in place:
-+ VCF installation completed successfully (NSX Manager and your VCF management appliance — Operations Manager for VCF 9.0.x and 9.1.x or SDDC Manager for VCF 5.2.x — are accessible).
-+ Your VPC Route Server is created with endpoints and peers. For more information, see [Set up a VPC Route Server instance with endpoints and peers](#getting-started-create-rs-resources).
++ VCF installation completed successfully (NSX Manager and your VCF management appliance, Operations Manager for VCF 9.x or SDDC Manager for VCF 5.2.x, are all accessible).
++ Your VPC Route Server is created with endpoints, peers, and propagations. For more information, see [Set up a VPC Route Server instance with endpoints and peers](#getting-started-create-rs-resources).
 + You have the two Route Server endpoint IP addresses. Both endpoints are in the service access subnet, which provides redundancy.
 + You choose two private BGP ASNs, which must match the values you configured on the VPC Route Server peers (see [Set up a VPC Route Server instance with endpoints and peers](#getting-started-create-rs-resources)):
   + NSX Edge Tier-0 local ASN (for example, `65000`)
@@ -964,25 +981,46 @@ Before you begin, confirm that the following are in place:
 
     Private ASNs are in the range 64512–65534 (16-bit) or 4200000000–4294967294 (32-bit).
 
+<a name="sd-nsx-uplink-profile"></a> **Create an uplink profile**
+
+Before you deploy the NSX Edge cluster, create an uplink profile in NSX Manager. The uplink profile defines the teaming policy, transport VLAN, and MTU that Edge transport nodes use for overlay (Geneve) traffic.
+
+For version-specific field labels and screenshots, see:
++ VCF 9.0.x: [Create an Uplink Profile](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vcf-9-0-and-later/9-0/advanced-network-management/administration-guide/transport-zones-and-transport-nodes/configuring-profiles/create-an-uplink-profile.html) in the VMware Cloud Foundation documentation.
++ VCF 9.1.x: [Add an Uplink Profile](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vcf-9-0-and-later/9-1/advanced-network-management/transport-zones-and-transport-nodes/configuring-profiles/create-an-uplink-profile.html) in the VMware Cloud Foundation documentation.
+
+Configure the profile with the following Amazon EVS-specific values:
+
+| Parameter | Value |
+| --- | --- |
+| Name | For example, `edge-uplink-profile`. |
+| Teaming policy | Failover Order. |
+| Active Uplinks |  `uplink1`. |
+| Standby Uplinks | Leave empty. NSX Edge VMs do not support standby uplinks. |
+| Transport VLAN | The Amazon EVS-assigned Edge TEP VLAN ID. Look up the ID for your environment in the Amazon EVS console (**Environments** → your environment → **Networks and connectivity** tab), or by running `aws evs list-environment-vlans` and matching on the `edgeVTep` function. |
+| MTU |  `8500`. |
+
+Use the uplink name `uplink1` when you configure each Edge transport node in the following **Deploy the NSX Edge cluster** step.
+
  **Deploy the NSX Edge cluster**
 
-1. Log in to the NSX Manager UI (`https://<nsx-manager-fqdn>/`).
+Deploy two Edge transport nodes and group them into an Edge cluster using the NSX Manager UI. The workflow order differs by VCF version. VCF 9.0.x creates Edge transport nodes individually and then creates the Edge cluster as a separate action. VCF 9.1.x begins with an Edge cluster workflow and adds nodes within it.
 
-1. Navigate to **System** → **Fabric** → **Nodes** → **Edge Transport Nodes**.
+For the complete procedure, refer to the Broadcom documentation for your VCF version:
++ VCF 9.0.x: [Create an Edge Transport Node](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vcf-9-0-and-later/9-0/advanced-network-management/administration-guide/installing-nsx-edge/create-an-edge-transport-node.html) and [Create an Edge Cluster](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vcf-9-0-and-later/9-0/advanced-network-management/administration-guide/installing-nsx-edge/create-an-edge-cluster.html).
++ VCF 9.1.x: [Create an NSX Edge Cluster and Add Edge Nodes](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vcf-9-0-and-later/9-1/advanced-network-management/installing-nsx-edge/create-an-edge-transport-node.html).
 
-1. Choose **Add Edge VM** and configure the following:
+When configuring the Edge nodes for your Amazon EVS environment, select the following:
 
-   1.  **Name** — for example, `edge-node-01`.
-
-   1.  **Form factor** — **Large** (recommended for production).
-
-   1.  **Host switch** — configure with the appropriate uplink profile and transport VLAN.
-
-1. Repeat for the second Edge node (`edge-node-02`).
-
-1. Navigate to **System** → **Fabric** → **Nodes** → **Edge Clusters**.
-
-1. Choose **Add Edge Cluster** and add both Edge nodes as members.
+| Parameter | Value |
+| --- | --- |
+| Name | A unique name for each Edge node (for example, `edge-node-01` and `edge-node-02`). |
+| Form factor | Large (recommended). |
+| Compute and datastore | A compute resource and datastore appropriate for your deployment. |
+| Management IP | An IP address from the EVS VM management subnet. |
+| Default gateway | The default gateway for the EVS VM management subnet. |
+| Management interface | The VM management port group. |
+| Transport networking | The EVS-assigned transport VLAN and applicable uplink profile for datapath connectivity. |
 
  **Create the Tier-0 gateway**
 
@@ -1014,13 +1052,17 @@ Ensure both the Tier-0 and Tier-1 gateways have **Non-preemptive** failover. Non
 **Note**
 The Edge uplink interfaces and the Route Server endpoints are in different subnets, so these are multihop BGP sessions. Set the BGP multihop limit to at least 2, and ensure the Tier-0 gateway can reach each Route Server endpoint IP address (for example, with a static route to the endpoint by way of the uplink gateway).
 
-1. Choose **Save** and wait for the BGP sessions to establish.
+1. Choose **Save**.
 
-1. On the Tier-0 gateway, expand **Route Re-Distribution** and enable redistribution into BGP for the route types that carry your workload networks — for example, **Tier-1 Connected** (workload segment subnets), **Tier-1 NAT**, and **Tier-1 Static Routes**.
+1. Wait for the BGP sessions to establish.
 
-   Do not redistribute **Tier-0 Connected** or **Tier-0 Static Routes**. Redistributing **Tier-0 Connected** advertises the NSX uplink subnet to AWS, and **Tier-0 Static Routes** re-advertises the Route Server endpoint host routes — neither is wanted.
+1. To advertise only overlay-network routes to the VPC Route Server, configure route redistribution and an outbound route filter on the Tier-0 gateway in NSX Manager.
 
-1. Apply an outbound route filter so that the Tier-0 gateway advertises only private (RFC 1918) networks to the VPC Route Server. Create an IP prefix list that permits `10.0.0.0/8`, `172.16.0.0/12`, and `192.168.0.0/16` (including the more-specific routes within them), denies all other prefixes, and apply it as the out-filter on each BGP neighbor.
+   1. On the Tier-0 gateway, expand **Route Re-Distribution** and enable redistribution into BGP for your overlay network route types, for example, **Tier-1 Connected** (workload segment subnets), **Tier-1 NAT**, and **Tier-1 Static Routes**.
+
+      Do not select **External Interface Subnet** and do not select Tier-0 **Static Routes**. Redistributing **External Interface Subnet** advertises the NSX uplink subnet to AWS, and **Static Routes** re-advertises the Route Server endpoint host routes; neither is wanted.
+
+   1. (Optional) Apply an outbound route filter for RFC 1918 networks to limit the CIDRs that are advertised to your VPC. Create an IP prefix list that permits `10.0.0.0/8`, `172.16.0.0/12`, and `192.168.0.0/16` (including more-specific routes within them), denies all other prefixes, and apply it as the out-filter on each BGP neighbor.
 
  **Verify BGP peering**
 
@@ -1049,7 +1091,7 @@ After VCF is installed and its management appliances are reachable over your VCF
 **Important**
 Before you create a connector, store the credentials for the target VCF management appliance in AWS Secrets Manager. Tag the secret and the AWS KMS key that encrypts it with `EvsAccess=true`. Without this tag, Amazon EVS cannot access the secret and connector creation fails.
 
-The connector type you create depends on your VCF version: Operations Manager (`OPERATIONS_MANAGER`) for VCF 9.0.x and 9.1.x, or SDDC Manager (`SDDC_MANAGER`) for VCF 5.2.x. You can also create a vCenter connector (`VCENTER`). For the connector types, required secret keys, and descriptions, see [Create an Amazon EVS environment connector](evs-env-create-connector.md).
+The connector type you create depends on your VCF version. VCF 9.x requires an Operations Manager (`OPERATIONS_MANAGER`) connector. VCF 5.2.x requires an SDDC Manager (`SDDC_MANAGER`) connector. You can also create a vCenter connector (`VCENTER`). For the connector types, required secret keys, and descriptions, see [Create an Amazon EVS environment connector](evs-env-create-connector.md).
 
 ### Step 7: Verify the environment
 <a name="self-deployed-verify"></a>

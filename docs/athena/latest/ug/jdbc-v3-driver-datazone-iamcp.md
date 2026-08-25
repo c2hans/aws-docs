@@ -12,8 +12,6 @@ An authentication plugin that uses IAM credentials to connect to Amazon Athena t
 
 The credentials provider that will be used to authenticate requests to AWS. Set the value of this parameter to `SageMakerIam`.
 
-****
-
 | Parameter name | Alias | Parameter type | Default value | Value to use |
 | --- | --- | --- | --- | --- |
 | CredentialsProvider | AWSCredentialsProviderClass (deprecated), DataZoneIam | Required | none | SageMakerIam |
@@ -22,8 +20,6 @@ The credentials provider that will be used to authenticate requests to AWS. Set 
 <a name="jdbc-v3-driver-datazone-iamcp-datazone-domain-identifier"></a>
 
 Identifier of the DataZone domain to use.
-
-****
 
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
@@ -34,8 +30,6 @@ Identifier of the DataZone domain to use.
 
 Identifier of the DataZone project to use.
 
-****
-
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
 | DataZoneProjectId | none | Optional | none |
@@ -44,8 +38,6 @@ Identifier of the DataZone project to use.
 <a name="jdbc-v3-driver-datazone-iamcp-datazone-environment-identifier"></a>
 
 Identifier of the DataZone environment to use. Required if `DataZoneProjectId` is not specified.
-
-****
 
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
@@ -56,8 +48,6 @@ Identifier of the DataZone environment to use. Required if `DataZoneProjectId` i
 
 The AWS Region where your DataZone domain is provisioned.
 
-****
-
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
 | DataZoneDomainRegion | none | Required | none |
@@ -66,8 +56,6 @@ The AWS Region where your DataZone domain is provisioned.
 <a name="jdbc-v3-driver-datazone-iamcp-datazone-endpoint-override"></a>
 
 The DataZone API endpoint to use instead of the endpoint default for the provided AWS Region.
-
-****
 
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
@@ -78,8 +66,6 @@ The DataZone API endpoint to use instead of the endpoint default for the provide
 
 Your AWS access key ID. For more information about access keys, see [AWS security credentials](https://docs.aws.amazon.com/IAM/latest/UserGuide/security-creds.html) in the *IAM User Guide*.
 
-****
-
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
 | User | AccessKeyId | Optional | none |
@@ -88,8 +74,6 @@ Your AWS access key ID. For more information about access keys, see [AWS securit
 <a name="jdbc-v3-driver-datazone-iamcp-password"></a>
 
 Your AWS secret key ID. For more information about access keys, see [AWS security credentials](https://docs.aws.amazon.com/IAM/latest/UserGuide/security-creds.html) in the *IAM User Guide*.
-
-****
 
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |

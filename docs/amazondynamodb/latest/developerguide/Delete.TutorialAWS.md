@@ -17,6 +17,6 @@ In order to delete this kind of backup, do the following:
 
 1. On the screen that follows, choose **Continue to AWS Backup**.
 
-   You will be taken to the AWS Backup console. To learn more on how to delete backups on the AWS Backup console, see [Deleting backups](https://docs.aws.amazon.com/aws-backup/latest/devguide/deleting-backups.html).
+   The AWS Backup console opens. For more information about deleting backups in the AWS Backup console, see [Deleting backups](https://docs.aws.amazon.com/aws-backup/latest/devguide/deleting-backups.html) in the AWS Backup Developer Guide.
 
    For more information about AWS Backup see [Backup and recovery using AWS Backup](https://docs.aws.amazon.com/prescriptive-guidance/latest/backup-recovery/aws-backup.html) in the *AWS Prescriptive Guidance*.

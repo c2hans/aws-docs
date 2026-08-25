@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/quicksight-gen-bi
 <a name="quicksight-gen-bi"></a>
 
 **Note**
- Powered by Amazon Bedrock: Amazon Q in Quick is built on Amazon Bedrock and includes [automated abuse detection](https://docs.aws.amazon.com//bedrock/latest/userguide/abuse-detection.html) implemented in Amazon Bedrock to enforce safety, security, and the responsible use of AI.
+ Powered by Amazon Bedrock: Amazon Q in Quick is built on Amazon Bedrock and includes [automated abuse detection](https://docs.aws.amazon.com/bedrock/latest/userguide/abuse-detection.html) implemented in Amazon Bedrock to enforce safety, security, and the responsible use of AI.
 
 **Important**
 For the latest Amazon Quick chat experience — including cross-dataset Q&A with multi-dataset Topics, agentic workflows, and LLM-powered natural language querying — see [Ask questions, explore data, and get insights with chat in Amazon Quick](using-quick-chat.md). To learn about the new multi-dataset Topics that serve as the semantic layer for both chat and analysis, see [Working with Amazon Quick Sight Topics](topics.md).

@@ -54,8 +54,6 @@ IBM Db2 for z/OS to Amazon Aurora PostgreSQL
 
 Generative AI-assisted schema conversion focuses on specific SQL elements with designated action items. All other SQL elements are converted using default rule-based approaches. The SQL elements within the extended scope of Generative AI conversion include:
 
-****
-
 - **Oracle to Amazon RDS for PostgreSQL and Oracle to Amazon Aurora PostgreSQL**
   - **Action item:** 5578 / **Message:** AWS DMS Schema Conversion cannot convert the SELECT statement / **Syntax element:** All occurrences except limitations
   - **Action item:** 30415 / **Message:** Your MERGE statement contains a filtering condition in the WHERE clause that is based on a value in a target table column / **Syntax element:** All occurrences except limitations
@@ -263,8 +261,6 @@ The Converting database objects with generative AI feature has the following lim
 Conversion using generative AI takes longer than basic conversion.
 
 Every AWS account have a per-minute quota limiting the number of SQL statements that can be converted using generative AI. Statements exceeding this limit are queued for processing in subsequent minutes. The quota is as follows:
-
-****
 
 | Region | SQL Statements per AWS account per minute |
 | --- | --- |

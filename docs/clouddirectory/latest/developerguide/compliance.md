@@ -9,8 +9,6 @@ Amazon Cloud Directory is no longer open to new customers, and will reach end of
 
 Amazon Cloud Directory has undergone auditing for the following standards and can be part of your solution when you need to obtain compliance certification.
 
-****
-
 |  |  |
 | --- |--- |
 | ![FedRAMP logo with blue square containing white FR letters above red text.](http://docs.aws.amazon.com/clouddirectory/latest/developerguide/images/FedRAMP.png) | Amazon Cloud Directory meets Federal Risk and Authorization Management Program (FedRAMP) security requirements and has received a FedRAMP Joint Authorization Board (JAB) Provisional Authority to Operate (P-ATO) at the FedRAMP Moderate Baseline. For more information about FedRAMP, see [FedRAMP Compliance](https://aws.amazon.com/compliance/fedramp/). |

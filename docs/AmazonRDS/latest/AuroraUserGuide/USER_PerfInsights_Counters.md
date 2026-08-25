@@ -2,22 +2,22 @@
 source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_PerfInsights_Counters.html
 ---
 
-# Performance Insights counter metrics
+# Detailed Database Metrics
 <a name="USER_PerfInsights_Counters"></a>
 
-Counter metrics are operating system and database performance metrics in the Performance Insights dashboard. To help identify and analyze performance problems, you can correlate counter metrics with DB load. You must append a statistic function to the metric to get the metric values. For example, the supported functions for `os.memory.active` metric are `.avg`, `.min`, `.max`, `.sum`, and `.sample_count`.
+Counter metrics are operating system and database performance metrics. These metrics are exposed through the Performance Insights API. To help identify and analyze performance problems, you can correlate counter metrics with DB load. You must append a statistic function to the metric to get the metric values. For example, the supported functions for `os.memory.active` metric are `.avg`, `.min`, `.max`, `.sum`, and `.sample_count`.
 
 The counter metrics are collected one time each minute. The OS metrics collection depends on whether Enhanced Monitoring is turned on or off. If Enhanced Monitoring is turned off, the OS metrics are collected one time each minute. If Enhanced Monitoring is turned on, the OS metrics are collected for the selected time period. For more information about turning Enhanced Monitoring on or off, see [Turning Enhanced Monitoring on and off](USER_Monitoring.OS.Enabling.md#USER_Monitoring.OS.Enabling.Procedure).
 
 **Topics**
-+ [Performance Insights operating system counters](#USER_PerfInsights_Counters.OS)
-+ [Performance Insights counters for Aurora MySQL](#USER_PerfInsights_Counters.Aurora_MySQL)
-+ [Performance Insights counters for Aurora PostgreSQL](#USER_PerfInsights_Counters.Aurora_PostgreSQL)
++ [Operating system counters](#USER_PerfInsights_Counters.OS)
++ [Detailed Database Metrics for Aurora MySQL](#USER_PerfInsights_Counters.Aurora_MySQL)
++ [Detailed Database Metrics for Aurora PostgreSQL](#USER_PerfInsights_Counters.Aurora_PostgreSQL)
 
-## Performance Insights operating system counters
+## Operating system counters
 <a name="USER_PerfInsights_Counters.OS"></a>
 
-The following operating system counters, which are prefixed with `os`, are available with Performance Insights for Aurora PostgreSQL and Aurora MySQL.
+The following operating system counters, which are prefixed with `os`, are available through the Performance Insights API for Aurora PostgreSQL and Aurora MySQL.
 
 You can use `ListAvailableResourceMetrics` API for the list of available counter metrics for your DB instance. For more information, see [ ListAvailableResourceMetrics](https://docs.aws.amazon.com/performance-insights/latest/APIReference/API_ListAvailableResourceMetrics) in the Amazon RDS Performance Insights API Reference guide.
 
@@ -108,10 +108,10 @@ You can use `ListAvailableResourceMetrics` API for the list of available counter
 | Num VCPUs | General | vCPUs | os.general.numVCPUs | The number of virtual CPUs (vCPUs) for the DB instance. |
 | Serverless Database Capacity | General | ACUs | os.general.serverlessDatabaseCapacity | The current capacity of the instance, in ACUs. |
 
-## Performance Insights counters for Aurora MySQL
+## Detailed Database Metrics for Aurora MySQL
 <a name="USER_PerfInsights_Counters.Aurora_MySQL"></a>
 
-The following database counters are available with Performance Insights for Aurora MySQL.
+The following database counters are available through the Performance Insights API for Aurora MySQL.
 
 **Topics**
 + [Native counters for Aurora MySQL](#USER_PerfInsights_Counters.Aurora_MySQL.Native)
@@ -184,10 +184,10 @@ Non-native counter metrics are counters defined by Amazon RDS. A non-native metr
 | temp\_disk\_tables\_percent | Temp | db.Temp.temp\_disk\_tables\_percent | The percentage of temporary tables that are created on disk by the server when running statements. | (db.Temp.Created\_tmp\_disk\_tables / db.Temp.Created\_tmp\_tables) \* 100 |
 | trx\_rseg\_history\_len | Transactions | None | db.Transactions.trx\_rseg\_history\_len | A list of the undo log pages for committed transactions that is maintained by the InnoDB transaction system to implement multi-version concurrency control. For more information about undo log records details, see [https://dev.mysql.com/doc/refman/8.0/en/innodb-multi-versioning.html](https://dev.mysql.com/doc/refman/8.0/en/innodb-multi-versioning.html) in the MySQL documentation. | SELECT COUNT AS trx\_rseg\_history\_len FROM INFORMATION\_SCHEMA.INNODB\_METRICS WHERE NAME='trx\_rseg\_history\_len'  |
 
-## Performance Insights counters for Aurora PostgreSQL
+## Detailed Database Metrics for Aurora PostgreSQL
 <a name="USER_PerfInsights_Counters.Aurora_PostgreSQL"></a>
 
-The following database counters are available with Performance Insights for Aurora PostgreSQL.
+The following database counters are available through the Performance Insights API for Aurora PostgreSQL.
 
 **Topics**
 + [Native counters for Aurora PostgreSQL](#USER_PerfInsights_Counters.Aurora_PostgreSQL.Native)

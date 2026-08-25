@@ -14,8 +14,6 @@ Terminate up to fifty EC2 instances. The automation checks that none of the inst
 ## Change Type Details
 <a name="ct-3dfubbpesm2v9-MSEt-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-3dfubbpesm2v9 |

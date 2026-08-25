@@ -7,8 +7,6 @@ This is an earlier version of the AWS Well-Architected Framework. For the latest
 # REL07-BP02 Obtain resources upon detection of impairment to a workload
 <a name="rel_adapt_to_changes_reactive_adapt_auto"></a>
 
-****
-
 |  |
 | --- |
 | This best practice was updated with new guidance on December 6, 2023. |

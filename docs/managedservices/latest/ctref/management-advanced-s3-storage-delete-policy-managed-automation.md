@@ -14,8 +14,6 @@ Use to delete an S3 bucket policy.
 ## Change Type Details
 <a name="ct-0ttx8eh3ice91-MASd-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-0ttx8eh3ice91 |

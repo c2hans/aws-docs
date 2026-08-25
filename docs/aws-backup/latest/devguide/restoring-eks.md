@@ -128,6 +128,8 @@ Follow these steps to restore Amazon EKS backups using the AWS Backup console or
 1. Optionally, configure advanced settings for custom restore order for Kubernetes resources.
 
 1. Choose the IAM restore role for the job. If not using the default role, ensure the selected role includes the iam:PassRole permission.
+**Note**
+If role manager is enabled in your account, AWS Backup selects the default service role for you, and a **Customize** option is available. For more information, see [IAM role creation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html) in the *IAM User Guide*.
 
 1. Choose **Restore backup**.
 

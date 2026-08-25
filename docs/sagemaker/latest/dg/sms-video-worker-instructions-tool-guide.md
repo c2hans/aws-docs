@@ -10,8 +10,6 @@ Amazon SageMaker Ground Truth is no longer open to new customers. Existing custo
 
 Your task will include one or more tools. The tool provided dictates the type of annotations you will create to identify and track objects. Use the following table to learn more about each tool provided.
 
-****
-
 | Tool | Icon | Action | Description |
 | --- | --- | --- | --- |
 | Bounding box |  ![The Bounding box icon.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/sms/video/Bounding%20Box.png)  | Add a bounding box annotation. | Choose this icon to add a bounding box. Each bounding box you add is associated with the category you choose from the Label category drop down menu. Select the bounding box or its associated label to adjust it.  |

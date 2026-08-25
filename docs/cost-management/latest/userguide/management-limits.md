@@ -78,7 +78,7 @@ For a list of quotas and restrictions for features in the AWS Billing console, s
 | Monitors per alert subscription | 502 maximum (all monitors can be attached) |
 | Time to detect anomaly after usage | Up to 24 hours |
 | Historical data required for detection | 10 days minimum |
-| Unsupported services |  +  AWS Marketplace <br />+  AWS Support <br />+  WorkSpaces <br />+  Cost Explorer <br />+  Budgets <br />+  AWS Shield <br />+  Amazon Route 53 <br />+  AWS Certificate Manager <br />+  Only analyzes Usage charge type and NetUnblendedCost   |
+| Unsupported services |  +  AWS Marketplace (except third-party foundation models on Amazon Bedrock) <br />+  AWS Support <br />+  WorkSpaces <br />+  Cost Explorer <br />+  Budgets <br />+  AWS Shield <br />+  Amazon Route 53 <br />+  AWS Certificate Manager <br />+  Only analyzes Usage charge type and NetUnblendedCost   |
 
 ## AWS Pricing Calculator
 <a name="limits-pc"></a>

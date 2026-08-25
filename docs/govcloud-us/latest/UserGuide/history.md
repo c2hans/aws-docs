@@ -9,6 +9,10 @@ The following table describes important changes to the documentation since the l
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [Amazon OpenSearch Ingestion](govcloud-opensearch.md) | Amazon OpenSearch Ingestion is now available. | August 19, 2026 |
+| [Amazon S3 Metadata](govcloud-s3.md) | S3 Metadata and annotations are now available in AWS GovCloud (US) Regions. | August 18, 2026 |
+| [AWS Outposts](govcloud-outposts.md) | Launching Amazon EC2 instances that use Local Boot with an encrypted AMI is not supported on [AWS Outposts](govcloud-outposts.md) in AWS GovCloud (US) Regions. | August 17, 2026 |
+| [Amazon Quick](govcloud-aqs.md) | Updated Amazon Quick to reflect current feature availability in AWS GovCloud (US), including newly supported agentic capabilities. | August 13, 2026 |
 | [Amazon FSx for Lustre](#history) | Amazon FSx for Lustre Persistent 2 SSD file systems are now available in AWS GovCloud (US) Regions. See [Amazon FSx](govcloud-fsx.md). | August 4, 2026 |
 | [Amazon GuardDuty](govcloud-guardduty.md) | New finding type UnauthorizedAccess:IAMUser/ResourceCredentialExfiltration.InsideAWS and updated finding type UnauthorizedAccess:IAMUser/ResourceCredentialExfiltration.OutsideAWS. GuardDuty introduces a new finding type that detects when temporary AWS credentials created for an ECS task are used from a different AWS account. Additionally, the existing ResourceCredentialExfiltration.OutsideAWS finding now detects ECS task credential exfiltration in addition to Lambda. For more information, see [UnauthorizedAccess:IAMUser/ResourceCredentialExfiltration.InsideAWS](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.html#unauthorizedaccess-iam-resourcecredentialexfiltrationinsideaws) and [UnauthorizedAccess:IAMUser/ResourceCredentialExfiltration.OutsideAWS](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.html#unauthorizedaccess-iam-resourcecredentialexfiltrationoutsideaws). | July 15, 2026 |
 | [Amazon RDS for Db2](#history) | Amazon RDS for Db2 is now available in AWS GovCloud (US) Regions with Bring Your Own License (BYOL). | April 29, 2026 |
@@ -87,7 +91,7 @@ The following table describes important changes to the documentation since the l
 | [AWS Lambda](govcloud-lambda.md) | The Python 3.11 (`python3.11`) runtime is now available in the AWS GovCloud (US-East) and AWS GovCloud (US-West) Regions. | September 28, 2023 |
 | [Red Hat OpenShift Service on AWS](govcloud-rosa.md) |  ROSA is now supported. | September 16, 2023 |
 | [Amazon GuardDuty](govcloud-guardduty.md) | Lambda Protection is now supported in AWS GovCloud (US) Regions. The service-linked role now includes AWS Lambda actions to retrieve information about your Lambda functions and tags ( `"lambda:GetFunctionConfiguration"` and `"lambda:ListTags"`)." | August 15, 2023 |
-| [Quick](govcloud-aqs.md) | Dashboard snapshot export API operations are not available in AWS GovCloud (US). See [How Amazon Quick Suite differs for AWS GovCloud (US)](govcloud-aqs.md#govcloud-aqs-diffs). | July 24, 2023 |
+| [Quick](govcloud-aqs.md) | Dashboard snapshot export API operations are not available in AWS GovCloud (US). | July 24, 2023 |
 | [Amazon Location Service](govcloud-geo.md) | Amazon Location Service is now supported. | July 17, 2023 |
 | [AWS SDK for SAP ABAP](govcloud-abapsdk.md) | AWS SDK for SAP ABAP is now supported. | June 30, 2023 |
 | [AWS Firewall Manager](govcloud-fms.md) |  AWS Firewall Manager now supports AWS Network Firewall and DNS Firewall policies. | June 8, 2023 |

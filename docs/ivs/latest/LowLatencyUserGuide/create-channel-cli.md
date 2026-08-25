@@ -53,7 +53,7 @@ Follow one of the two procedures below, depending on whether you want to create 
 ## Create a Channel with Recording
 <a name="getting-started-create-channel-cli-recording"></a>
 
-**Prerequisite:** Before starting this procedure, create an Amazon S3 bucket and note its ARN. See [Getting Started with Amazon S3](https://docs.aws.amazon.com//AmazonS3/latest/userguide/GetStartedWithS3.html). The S3 bucket must be in the same region where you will create a recording configuration; see the known issue in Step 1 below.
+**Prerequisite:** Before starting this procedure, create an Amazon S3 bucket and note its ARN. See [Getting Started with Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/GetStartedWithS3.html). The S3 bucket must be in the same region where you will create a recording configuration; see the known issue in Step 1 below.
 
 Then follow these steps to create the channel:
 

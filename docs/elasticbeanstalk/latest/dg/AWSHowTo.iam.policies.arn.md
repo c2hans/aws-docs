@@ -23,8 +23,6 @@ Where:
 
 Elastic Beanstalk has several types of resources you can specify in a policy. The following table shows the ARN format for each resource type and an example.
 
-****
-
 | Resource type | Format for ARN |
 | --- | --- |
 | `application` | `arn:aws:elasticbeanstalk:{{region}}:{{account-id}}:application/{{application-name}}`<br />Example: **arn:aws:elasticbeanstalk:us-east-2:123456789012:application/My App**  |

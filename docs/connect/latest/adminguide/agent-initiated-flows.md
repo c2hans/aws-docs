@@ -32,7 +32,7 @@ Voice and other channels are not currently supported.
 + Only [Inbound Flows](https://docs.aws.amazon.com/connect/latest/adminguide/sample-inbound-flow.html) are supported
 + Transfers and adding new participants will not work during an ongoing agent-initiated workflow. The workflow needs to be either completed or cancelled before adding a new agent or contact.
 + Only one agent-initiated flow can execute at a time per contact
-+ The following flow blocks are not supported: [**Connect assistant**](https://docs.aws.amazon.com/connect/latest/adminguide/connect-assistant-block.html), [**Authenticate Customer**](https://docs.aws.amazon.com/connect/latest/adminguide/authenticate-customer.html), [**Create Persistent Contact Association**](https://docs.aws.amazon.com/connect/latest/adminguide/create-persistent-contact-association-block.html), [**Get Customer Input**](https://docs.aws.amazon.com/connect/latest/adminguide/get-customer-input.html)
++ The following flow blocks are not supported: [Connect assistant](https://docs.aws.amazon.com/connect/latest/adminguide/connect-assistant-block.html), [Authenticate Customer](https://docs.aws.amazon.com/connect/latest/adminguide/authenticate-customer.html), [Create Persistent Contact Association](https://docs.aws.amazon.com/connect/latest/adminguide/create-persistent-contact-association-block.html), [Get Customer Input](https://docs.aws.amazon.com/connect/latest/adminguide/get-customer-input.html)
 + Limited to 10 Agent-initiated flows per Chat
 
 ## Security profile permissions for agent-initiated flows
@@ -89,7 +89,7 @@ For additional details on quick connects, see [Create quick connects in Connect 
 
 ![Form and Add to chat.](http://docs.aws.amazon.com/connect/latest/adminguide/images/agent-initiated-flows-agent-example-2.png)
 
-When the form is active, the agent may cancel the workflow. Agents will see events for the status of the workflow.
+When the form is active, the agent might cancel the workflow. Agents will see events for the status of the workflow.
 
 ![Active workflow status.](http://docs.aws.amazon.com/connect/latest/adminguide/images/agent-initiated-flows-agent-example-3.png)
 

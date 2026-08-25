@@ -64,4 +64,4 @@ The following is an example of a custom endpoint policy. When you attach this po
 ```
 
 **Note**
-For a complete list of AWS Control Tower API operations, see the [AWS Control Tower API Reference](https://docs.aws.amazon.com//controltower/latest/APIReference/Welcome.html).
+For a complete list of AWS Control Tower API operations, see the [AWS Control Tower API Reference](https://docs.aws.amazon.com/controltower/latest/APIReference/Welcome.html).

@@ -30,7 +30,7 @@ The multi-skill feature optimizes staffing by scheduling agents based on their s
 ## Generate and publish forecast
 <a name="generate-publish-mutliskill-forecasting"></a>
 
-Generate and publish your forecast. Forecasting requires additional configurations including - time zone selection, setting up an interval of granularity (15/30m) and importing of historical data if there is no history on connect. Once these settings are enabled, forecasters can generate both long term (64 weeks ahead) and short term (18 weeks ahead) forecasts for the forecast group. You can view both contact volume and average handle time forecasts at interval level detail. You may examine forecasts for individual demand groups to assess peak and lull period variations and may override if required. Once you are satisfied, you may publish your forecast.
+Generate and publish your forecast. Forecasting requires additional configurations including - time zone selection, setting up an interval of granularity (15/30m) and importing of historical data if there is no history on connect. Once these settings are enabled, forecasters can generate both long term (64 weeks ahead) and short term (18 weeks ahead) forecasts for the forecast group. You can view both contact volume and average handle time forecasts at interval level detail. You might examine forecasts for individual demand groups to assess peak and lull period variations and might override if required. After you are satisfied, you might publish your forecast.
 
 For more information, see [Publish a forecast](publish-forecast.md)
 

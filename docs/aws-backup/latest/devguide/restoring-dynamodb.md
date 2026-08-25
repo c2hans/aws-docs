@@ -19,6 +19,8 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/restoring-dyn
 1. For **Settings**, **New table name** text field, enter a new table name.
 
 1. For **Restore role**, choose the IAM role that AWS Backup will assume for this restore.
+**Note**
+If role manager is enabled in your account, AWS Backup selects the default service role for you, and a **Customize** option is available. For more information, see [IAM role creation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html) in the *IAM User Guide*.
 
 1. For **Encryption settings**:
 

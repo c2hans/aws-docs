@@ -19,7 +19,7 @@ AWS Elemental MediaConvert sends the following metrics to CloudWatch at the end 
 | `JobsSubmittedCount` | Count | The number of jobs submitted to a queue. <br />This includes jobs that later complete, error, or are canceled. |
 | `JobsCompletedCount` | Count | The number of jobs completed in a queue. |
 | `JobsCanceledCount` | Count | The number of jobs canceled in a queue. |
-| `JobsErroredCount` | Count | The number of jobs that failed because of invalid inputs, such as a request to transcode a file that is not in the specified input bucket. |
+| `JobsErroredCount` | Count | The number of jobs that failed because of invalid inputs, such as a request to transcode a file that is not in the specified input bucket.<br />To find the error percent, use the following formula:<br />`JobsErroredCount` / (`JobsCompletedCount` \+ `JobsErroredCount`) |
 | `StandbyTime` | Milliseconds | The amount of time a job is in a queue before MediaConvert starts processing it, in milliseconds. |
 | `TranscodingTime` | Milliseconds | The number of milliseconds for MediaConvert to complete transcoding. |
 | `BlackVideoDetected` | Milliseconds | The total duration of black video frames in your output that are also present in your input in milliseconds.<br />`BlackVideoDetected` does not include any black frames inserted by MediaConvert. |

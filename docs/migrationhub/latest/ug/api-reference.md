@@ -13,9 +13,9 @@ The AWS Migration Hub API methods help to obtain server and application migratio
 You must set your AWS Migration Hub home Region before you call write actions (create, notify, associate, disassociate, import, or put), or a `HomeRegionNotSetException` error is returned.
 You must make the API calls while in your Migration Hub home Region.
 If you call APIs outside your Migration Hub home Region, you will get an `InvalidInputException`.
-To get your current Migration Hub home Region, call [GetHomeRegion](https://docs.aws.amazon.com//migrationhub-home-region/latest/APIReference/API_GetHomeRegion.html).
+To get your current Migration Hub home Region, call [GetHomeRegion](https://docs.aws.amazon.com/migrationhub-home-region/latest/APIReference/API_GetHomeRegion.html).
 
-For more information about the home Region APIs, see the [Migration Hub Home Region API Reference](https://docs.aws.amazon.com//migrationhub-home-region/latest/APIReference/Welcome.html).
+For more information about the home Region APIs, see the [Migration Hub Home Region API Reference](https://docs.aws.amazon.com/migrationhub-home-region/latest/APIReference/Welcome.html).
 
 ## Reporting migration status updates
 <a name="api-reference-workflow"></a>
@@ -73,7 +73,7 @@ To call the Migration Hub Config service, the prefix is `migrationhub-config`, a
 + `https://migrationhub-config.{{Region_Name}}.amazonaws.com`
 + Therefore, to call Migration Hub Config service (that is, the home region APIs) in region `eu-central-1`, the API endpoint is: `https://migrationhub-config.eu-central-1.amazonaws.com`
 
-For more details about the Migration Hub Config service, see [the API reference](https://docs.aws.amazon.com//migrationhub-home-region/latest/APIReference/Welcome.html).
+For more details about the Migration Hub Config service, see [the API reference](https://docs.aws.amazon.com/migrationhub-home-region/latest/APIReference/Welcome.html).
 
 ## API version
 <a name="api-reference-version"></a>

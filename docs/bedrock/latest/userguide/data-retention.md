@@ -207,6 +207,9 @@ Some models require data retention for safety and abuse-prevention purposes. If 
 
 Accounts approved for ZDR on a specific model will see `"none"` included in that model's `allowed_modes`.
 
+**Anthropic Claude models**
+ZDR eligibility for Claude models is managed by Anthropic. Contact your Anthropic account representative for support.
+
 ## Enforcing retention policy with IAM
 <a name="data-retention-iam"></a>
 

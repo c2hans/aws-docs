@@ -160,8 +160,6 @@ Now that you know the criteria by which you will be evaluating your monitoring a
 
 The following table highlights which services are optimized for which circumstances. Use the table to help determine the service that is the best fit for your organization and use case.
 
-****
-
 | Use case | What is it optimized for? | Monitoring and observability services |
 | --- |--- |--- |
 | Monitoring and alerting | These services are optimized to provide real-time visibility, proactive issue detection, resource optimization, and efficient incident response, contributing to overall application and infrastructure health.  | [Amazon CloudWatch](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html)<br />[Amazon CloudWatch Logs](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html)<br />[Amazon EventBridge](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html) |
@@ -277,7 +275,7 @@ To explore how to use and learn more about each of the available AWS observabili
 
   How to create, deploy, and monitor synthetic monitoring solutions using Amazon CloudWatch Synthetics.
 
-   [Read the blog post](https://aws.amazon.com/blogs//mt/secure-monitoring-of-user-workflow-experience-using-amazon-cloudwatch-synthetics-and-aws-secrets-manager/)
+   [Read the blog post](https://aws.amazon.com/blogs/mt/secure-monitoring-of-user-workflow-experience-using-amazon-cloudwatch-synthetics-and-aws-secrets-manager/)
 
 ------
 #### [ Amazon EventBridge ]
@@ -290,7 +288,7 @@ To explore how to use and learn more about each of the available AWS observabili
 
   Create a function to use as the target for the EventBridge rule using the Lambda console.
 
-   [Explore the guide](https://docs.aws.amazon.com//latest/userguide/eb-get-started.html)
+   [Explore the guide](https://docs.aws.amazon.com/latest/userguide/eb-get-started.html)
 +  **Log the state of an Amazon EC2 instance using EventBridge**
 
   Create an AWS Lambda function to log state changes for an Amazon EC2 instance. You will log the launch of any new EC2 instance.

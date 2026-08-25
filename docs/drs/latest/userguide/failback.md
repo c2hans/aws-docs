@@ -38,6 +38,8 @@ In summary: AWS Elastic Disaster Recovery handles **recovery** (launching instan
 
 AWS Elastic Disaster Recovery allows you to launch Drill and Recovery instances for your source servers in AWS once they are in **Continuous Data Protection**. While Drill Instances and Recovery Instances are launched similarly, they serve different purposes. During normal operations, we recommend periodically testing your ability to recover using DRS by using Drill Instances.
 
+To recover a group of interdependent source servers in a defined order, with wait times between groups, use a recovery plan. For more information, see [Orchestrating recovery with recovery plans](recovery-plans.md).
+
 ### Understanding failback
 <a name="drs-failback-faq"></a>
 

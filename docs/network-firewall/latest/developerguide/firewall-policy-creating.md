@@ -38,7 +38,7 @@ You can't change the name after you create the firewall policy.
    + Choose **Strict order** (recommended) to provide your rules in the order that you want them to be evaluated. You can then choose one or more default actions for packets that don't match any rules.
    + Choose **Action order** to have the stateful rules engine determine the evaluation order of your rules. The default action for this rule order is **Pass**, followed by **Drop**, **Reject**, and **Alert** actions. This option was previously named **Default** order.
 
-   For more information about stateful default actions for rule groups, see [Action orderAction order](suricata-rule-evaluation-order.md#suricata-default-rule-evaluation-order).
+   For more information about stateful default actions for rule groups, see [Action order](suricata-rule-evaluation-order.md#suricata-default-rule-evaluation-order).
 
 1. To add stateless rule groups, in the **Stateless rule groups** section, choose **Add rule groups**, then select the check boxes for the rule groups that you want to add and choose **Add rule groups**.
 

@@ -26,6 +26,9 @@ Content-type: application/json
             "{{string}}" : "{{string}}"
          },
          "Method": "{{string}}"
+      },
+      "VastResponse": {
+         "AdSequencingMode": "{{string}}"
       }
    },
    "AdDecisionServerUrl": "{{string}}",
@@ -67,6 +70,11 @@ Content-type: application/json
    },
    "InsertionMode": "{{string}}",
    "LivePreRollConfiguration": {
+      "AdDecisionServerConfiguration": {
+         "VastResponse": {
+            "AdSequencingMode": "{{string}}"
+         }
+      },
       "AdDecisionServerUrl": "{{string}}",
       "MaxDurationSeconds": {{number}}
    },
@@ -218,6 +226,9 @@ Content-type: application/json
             "string" : "string"
          },
          "Method": "string"
+      },
+      "VastResponse": {
+         "AdSequencingMode": "string"
       }
    },
    "AdDecisionServerUrl": "string",
@@ -267,6 +278,11 @@ Content-type: application/json
    },
    "InsertionMode": "string",
    "LivePreRollConfiguration": {
+      "AdDecisionServerConfiguration": {
+         "VastResponse": {
+            "AdSequencingMode": "string"
+         }
+      },
       "AdDecisionServerUrl": "string",
       "MaxDurationSeconds": number
    },

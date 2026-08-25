@@ -101,8 +101,6 @@ The `Resource` JSON policy element specifies the object or objects to which the 
 
 In the AWS Serverless Application Repository, the primary AWS resource is an AWS Serverless Application Repository *application*. AWS Serverless Application Repository applications have unique Amazon Resource Names (ARNs) associated with them, as shown in the following table.
 
-****
-
 | AWS Resource Type | Amazon Resource Name (ARN) Format  |
 | --- | --- |
 | Application | arn:{{partition}}:serverlessrepo:{{region}}:{{account-id}}:applications/{{application-name}} |

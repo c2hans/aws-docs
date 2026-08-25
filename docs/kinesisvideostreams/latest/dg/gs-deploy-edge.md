@@ -75,8 +75,8 @@ Make sure that the modified run script doesn't contain any **tab** characters. T
    ```
 
    For additional information, see the following sections in the *AWS IoT Greengrass Version 2 Developer Guide*:
-   + [AWS IoT Greengrass CLI commands](https://docs.aws.amazon.com//greengrass/v2/developerguide/gg-cli-reference.html)
-   + [Deploy AWS IoT Greengrass components to devices](https://docs.aws.amazon.com//greengrass/v2/developerguide/manage-deployments.html)
+   + [AWS IoT Greengrass CLI commands](https://docs.aws.amazon.com/greengrass/v2/developerguide/gg-cli-reference.html)
+   + [Deploy AWS IoT Greengrass components to devices](https://docs.aws.amazon.com/greengrass/v2/developerguide/manage-deployments.html)
 
 1. Send configurations to the application using the AWS CLI.
 

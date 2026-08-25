@@ -51,8 +51,6 @@ content-type: application/x-amz-json-1.0
 }
 ```
 
-****
-
 |  Name  |  Description  |  Required |
 | --- | --- | --- |
 |  RequestItems  | A container of the table name and corresponding items to get by primary key. While requesting items, each table name can be invoked only once per operation.<br />Type: String <br />Default: None  |  Yes |
@@ -108,8 +106,6 @@ content-length: 855
 }
 ```
 
-****
-
 |  Name  |  Description  |
 | --- | --- |
 | Responses  | Table names and the respective item attributes from the tables.<br />Type: Map |
@@ -123,8 +119,6 @@ content-length: 855
 
 ## Special errors
 <a name="API_BatchGetItem_SpecialErrors"></a>
-
-****
 
 |  Error  |  Description  |
 | --- | --- |

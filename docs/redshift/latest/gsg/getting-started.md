@@ -12,7 +12,7 @@ Amazon Redshift Serverless lets you access and analyze data without all of the c
  If you are a first-time user of Amazon Redshift, we recommend that you begin by reading the following sections:
 + [Amazon Redshift Serverless feature overview](https://docs.aws.amazon.com/redshift/latest/mgmt/serverless-considerations.html) – In this topic, you can find an overview of Amazon Redshift Serverless and its key capabilities.
 + [Service highlights and pricing](https://aws.amazon.com/redshift/redshift-serverless) – On this product detail page, you can find details about Amazon Redshift Serverless highlights and pricing.
-+ [Get started with Amazon Redshift Serverless data warehousesGet started with serverless data warehouses](new-user-serverless.md). – In this topic, you can learn more about how to create an Amazon Redshift Serverless data warehouse, and start querying data using query editor v2.
++ [Get started with Amazon Redshift Serverless data warehouses](new-user-serverless.md). – In this topic, you can learn more about how to create an Amazon Redshift Serverless data warehouse, and start querying data using query editor v2.
 
 If you prefer to manage your Amazon Redshift resources manually, you can create provisioned clusters for your data querying needs. For more information, see [Amazon Redshift clusters](https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-clusters.html).
 

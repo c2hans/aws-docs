@@ -30,7 +30,7 @@ It is a best practice to update to the latest version of the landing zone.
 + Some potential exists for double costs, especially if some accounts within an OU are not enrolled in AWS Control Tower and have account-level trails of their own that you want to keep.
 
 **Considerations about choosing organization-level CloudTrail trails**
-+ When you upgrade to 3.0 or later, AWS Control Tower deletes the account-level trails that it originally created, after 24 hours. [[Exception]](https://docs.aws.amazon.com//controltower/latest/userguide/retain-account-trails.html)
++ When you upgrade to 3.0 or later, AWS Control Tower deletes the account-level trails that it originally created, after 24 hours. [[Exception]](https://docs.aws.amazon.com/controltower/latest/userguide/retain-account-trails.html)
 + No data from these trails is lost. Your existing logs are preserved even when the trails are removed.
 + AWS Control Tower creates a new path in the same Amazon S3 bucket for the trails, to differentiate account-level trails from organization-level trails.
   + An account trail log path is of this form: `/orgId/AWSLogs/...`

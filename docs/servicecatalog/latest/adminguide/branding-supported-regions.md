@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/adminguide/brandin
 
 AWS Service Catalog supports console branding preferences in the AWS Regions listed in the table below.
 
-****
-
 | AWS Region name | AWS Region identity |
 | --- | --- |
 | US East (N. Virginia) | us-east-1 |

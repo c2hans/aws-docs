@@ -82,7 +82,7 @@ You can use the console or CLI to create and manage environment account connecti
 
 1. Decide on a name for the environment that you plan to create in your management account or choose the name of an existing environment that requires an environment account connection.
 
-1. In an environment account, in the [AWS Proton console](https://console.aws.amazon.com//proton/), choose **Environment account connections** in the navigation pane.
+1. In an environment account, in the [AWS Proton console](https://console.aws.amazon.com/proton/), choose **Environment account connections** in the navigation pane.
 
 1. In the **Environment account connections** page, choose **Request to connect**.
 **Note**
@@ -104,7 +104,7 @@ The role that AWS Proton automatically creates for you has broad permissions. We
 
 **Accept or reject an environment account connection request.**
 
-1. In a management account, in the [AWS Proton console](https://console.aws.amazon.com//proton/), choose **Environment account connections** in the navigation pane.
+1. In a management account, in the [AWS Proton console](https://console.aws.amazon.com/proton/), choose **Environment account connections** in the navigation pane.
 
 1. In the **Environment account connections** page, in the **Environment account connection requests** table, choose the environment connection request to accept or reject.
 **Note**
@@ -116,7 +116,7 @@ Verify the account ID that's listed in the **Environment account connection** pa
 
 **Delete an environment account connection.**
 
-1. In an environment account, in the [AWS Proton console](https://console.aws.amazon.com//proton/), choose **Environment account connections** in the navigation pane.
+1. In an environment account, in the [AWS Proton console](https://console.aws.amazon.com/proton/), choose **Environment account connections** in the navigation pane.
 **Note**
 Verify the account ID that's listed in the **Environment account connection** page heading. Make sure that it matches the account ID of the management account that's associated with the environment account connection to reject. After you delete this environment account connection, AWS Proton *can’t* manage the environment infrastructure resources in the environment account. It can only manage it after a new environment account connection for the environment account and named environment is accepted by the management account.
 

@@ -40,7 +40,7 @@ A policy that grants a user permission to assume a role must include a statement
 Users that get the policy are allowed to switch roles on the resource listed (either through group membership or directly attached).
 
 **Note**
-If `Resource` is set to `*`, the user can assume any role in any account that trusts the user's account. (In other words, the role's trust policy specifies the user's account as `Principal`). As a best practice, we recommend that you follow the [principle of least privilege](https://docs.aws.amazon.com/http://en.wikipedia.org/wiki/Principle_of_least_privilege) and specify the complete ARN for only the roles that the user needs.
+If `Resource` is set to `*`, the user can assume any role in any account that trusts the user's account. (In other words, the role's trust policy specifies the user's account as `Principal`). As a best practice, we recommend that you follow the [principle of least privilege](http://en.wikipedia.org/wiki/Principle_of_least_privilege) and specify the complete ARN for only the roles that the user needs.
 
 The following example shows a policy that lets the user assume roles in only one account. In addition, the policy uses a wildcard (\*) to specify that the user can switch to a role only if the role name begins with the letters `Test`.
 

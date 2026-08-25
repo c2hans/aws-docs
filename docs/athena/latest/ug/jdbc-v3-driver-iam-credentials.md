@@ -12,8 +12,6 @@ You can use your IAM credentials with the JDBC driver to connect to Amazon Athen
 
 Your AWS access key ID. For information about access keys, see [AWS security credentials](https://docs.aws.amazon.com/IAM/latest/UserGuide/security-creds.html) in the *IAM User Guide*.
 
-****
-
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
 | User | AccessKeyId | Required | none |
@@ -23,8 +21,6 @@ Your AWS access key ID. For information about access keys, see [AWS security cre
 
 Your AWS secret key ID. For information about access keys, see [AWS security credentials](https://docs.aws.amazon.com/IAM/latest/UserGuide/security-creds.html) in the *IAM User Guide*.
 
-****
-
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |
 | Password | SecretAccessKey | Optional | none |
@@ -33,8 +29,6 @@ Your AWS secret key ID. For information about access keys, see [AWS security cre
 <a name="jdbc-v3-driver-session-token"></a>
 
 If you use temporary AWS credentials, you must specify a session token. For information about temporary credentials, see [Temporary security credentials in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp.html) in the *IAM User Guide*.
-
-****
 
 | Parameter name | Alias | Parameter type | Default value |
 | --- | --- | --- | --- |

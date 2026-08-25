@@ -13,8 +13,8 @@ If you're using a version of Apache Flink that's deprecating, we recommend that 
 | Apache Flink version | Status - Amazon Managed Service for Apache Flink | Status - Apache Flink community | Link | Note |
 | --- | --- | --- | --- | --- |
 | 2.3.0 | Supported | Supported | [Amazon Managed Service for Apache Flink 2.3](flink-2-3.md) |  |
-| 2.2.0 | Supported | Supported | [Amazon Managed Service for Apache Flink 2.2](flink-2-2.md) | This is a major version with breaking changes. See [Breaking changes and deprecations](flink-2-2.md#flink-2-2-breaking-changes) before proceeding. |
-| 1.20.0 | Supported | Supported | [Amazon Managed Service for Apache Flink 1.20](flink-1-20.md) |  |
+| 2.2.1 | Supported | Supported | [Amazon Managed Service for Apache Flink 2.2](flink-2-2.md) | This is a major version with breaking changes. See [Breaking changes and deprecations](flink-2-2.md#flink-2-2-breaking-changes) before proceeding. |
+| 1.20.5 | Supported | Supported | [Amazon Managed Service for Apache Flink 1.20](flink-1-20.md) |  |
 | 1.19.1 | Supported | Supported | [Amazon Managed Service for Apache Flink 1.19](flink-1-19.md) |  |
 | 1.18.1 | Supported | Unsupported | [Amazon Managed Service for Apache Flink 1.18](flink-1-18.md) |  |
 | 1.15.2 | Supported | Unsupported | [Amazon Managed Service for Apache Flink 1.15](flink-1-15-2.md) |  |

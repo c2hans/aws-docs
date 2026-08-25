@@ -34,8 +34,6 @@ The following is an example of this object type. The `InputData` object referenc
 ## Syntax
 <a name="exists-syntax"></a>
 
-****
-
 | Optional Fields | Description | Slot Type |
 | --- | --- | --- |
 | attemptStatus | Most recently reported status from the remote activity. | String |
@@ -50,8 +48,6 @@ The following is an example of this object type. The `InputData` object referenc
 | preconditionTimeout | The period from start after which precondition is marked as failed if still not satisfied | Period |
 | reportProgressTimeout | Timeout for remote work successive calls to reportProgress. If set, then remote activities that do not report progress for the specified period may be considered stalled and so retried. | Period |
 | retryDelay | The timeout duration between two retry attempts. | Period |
-
-****
 
 | Runtime Fields | Description | Slot Type |
 | --- | --- | --- |
@@ -73,8 +69,6 @@ The following is an example of this object type. The `InputData` object referenc
 | @status | The status of this object. | String |
 | @version | Pipeline version the object was created with. | String |
 | @waitingOn | Description of list of dependencies this object is waiting on. | Reference Object, e.g. "waitingOn":{"ref":"myRunnableObjectId"} |
-
-****
 
 | System Fields | Description | Slot Type |
 | --- | --- | --- |

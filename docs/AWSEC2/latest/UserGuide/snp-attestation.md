@@ -50,7 +50,7 @@ In this step, you install and build the `snpguest` utility, which you use to gen
 ### Step 2: Generate the attestation report
 <a name="snp-att-dh-report"></a>
 
-Generate a request for the attestation report. The `snpguest` utility requests the attestation report from the AMD Secure Processor via the host, and writes it to a binary file. The following example creates a random request nonce and stores the report in `report.bin`.
+Generate a request for the attestation report. The `snpguest` utility requests the attestation report from the AMD Secure Processor through the host, and writes it to a binary file. The following example creates a random request nonce and stores the report in `report.bin`.
 
 ```
 $ ./snpguest report {{report.bin}} {{request-file.txt}} --random

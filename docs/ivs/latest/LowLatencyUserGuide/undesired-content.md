@@ -55,7 +55,7 @@ For more information, see:
 
 1. [Monitoring Amazon IVS Low-Latency Streaming](stream-health.md)
 
-1. [Creating a CloudWatch alarm based on anomaly detection](https://docs.aws.amazon.com//AmazonCloudWatch/latest/monitoring/Create_Anomaly_Detection_Alarm.html)
+1. [Creating a CloudWatch alarm based on anomaly detection](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Create_Anomaly_Detection_Alarm.html)
 
 ### Custom Content Moderation
 <a name="undesired-content-custom-moderation"></a>
@@ -98,7 +98,7 @@ In many cases, undesired content is streamed to a large audience outside of your
 Note that you can get the protection of private channels and authentication without forcing users to create and/or log in to formal accounts. Your playback application can simply acquire a token anonymously behind the scenes. You’ll still be able to take advantage of origin enforcement.
 
 To learn more about private channels, see:
-+ [Setting Up Private Channels](https://docs.aws.amazon.com//ivs/latest/LowLatencyUserGuide/private-channels.html) in the *IVS Low-Latency Streaming User Guide*. Within that document, to learn more about origin enforcement, see [Generate and Sign IVS Playback Tokens](https://docs.aws.amazon.com//ivs/latest/LowLatencyUserGuide/private-channels-generate-tokens.html).
++ [Setting Up Private Channels](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/private-channels.html) in the *IVS Low-Latency Streaming User Guide*. Within that document, to learn more about origin enforcement, see [Generate and Sign IVS Playback Tokens](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/private-channels-generate-tokens.html).
 + [Creating a Private Channel for Authorized Live Stream Playback with Amazon IVS](https://dev.to/aws/creating-a-private-channel-for-authorized-live-stream-playback-with-amazon-ivs-2mdl) (blog post)
 
 ### Use Playback Restriction Policies
@@ -146,7 +146,7 @@ If you do not want to use [private channels](#undesired-content-private-channels
    aws ivs create-playback-restriction-policy --name test-playback-restriction-policy --enable-strict-origin-enforcement --allowed-countries "US","JP" --allowed-origins "https://example1.com","https://*.example2.com"
    ```
 
-   This returns a new playback restriction policy. For its fields, see [PlaybackRestrictionPolicy](https://docs.aws.amazon.com//ivs/latest/LowLatencyAPIReference/API_PlaybackRestrictionPolicy.html) in the *IVS Low-Latency Streaming API Reference*.
+   This returns a new playback restriction policy. For its fields, see [PlaybackRestrictionPolicy](https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_PlaybackRestrictionPolicy.html) in the *IVS Low-Latency Streaming API Reference*.
 
 1. Attach the new policy to a channel. For an existing channel, run `update-channel` and pass in the ARN of the playback restriction policy created in the previous step:
 

@@ -48,7 +48,7 @@ If you edit or delete a message, the agent still sees the original message. You 
    The following is an example of a live chat channel receiving a notification when the another collaborator adds an update after the chat has ended.
 ![Reply to support case in the Slack chat channel.](http://docs.aws.amazon.com/awssupport/latest/user/images/supportapp/correspondence-chat-slack-channel.png)
 
-   The notification will indicate the chat status (requested, in progress, or ended) and whether the correspondence was added by an agent or by another collaborator. The Support App will also attempt to link back to the original Slack thread or channel where this chat was requested. You can [ reply to this case](https://docs.aws.amazon.com//awssupport/latest/user/replying-to-support-cases-in-slack.html) from that channel, or any other channel with access to this case.
+   The notification will indicate the chat status (requested, in progress, or ended) and whether the correspondence was added by an agent or by another collaborator. The Support App will also attempt to link back to the original Slack thread or channel where this chat was requested. You can [ reply to this case](https://docs.aws.amazon.com/awssupport/latest/user/replying-to-support-cases-in-slack.html) from that channel, or any other channel with access to this case.
 
 **To join a live chat session with Support in the current channel**
 

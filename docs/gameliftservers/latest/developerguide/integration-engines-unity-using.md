@@ -44,9 +44,9 @@ The provided code example illustrates the basic required integration elements. I
 + Implement callback functions to respond to requests from the Amazon GameLift Servers service, including `OnStartGameSession`, `OnProcessTerminate`, and `onHealthCheck`.
 + Call ProcessReady() with a designated port to notify the Amazon GameLift Servers service when the process is ready to host game sessions.
 
-The sample code provided establishes communication with the Amazon GameLift Servers service. It also implements a set of callback functions that respond to requests from the Amazon GameLift Servers service. For more information on each function and what the code does, see [Initialize the server process](https://docs.aws.amazon.com//gameliftservers/latest/developerguide/gamelift-sdk-server-api.html#gamelift-sdk-server-initialize). For more information on the SDK actions and data types used in this code, read [C\# server SDK 5.x for Amazon GameLift Servers -- Actions](integration-server-sdk5-csharp-actions.md).
+The sample code provided establishes communication with the Amazon GameLift Servers service. It also implements a set of callback functions that respond to requests from the Amazon GameLift Servers service. For more information on each function and what the code does, see [Initialize the server process](https://docs.aws.amazon.com/gameliftservers/latest/developerguide/gamelift-sdk-server-api.html#gamelift-sdk-server-initialize). For more information on the SDK actions and data types used in this code, read [C\# server SDK 5.x for Amazon GameLift Servers -- Actions](integration-server-sdk5-csharp-actions.md).
 
-The sample code shows how to add the required functionality, as described in [Add Amazon GameLift Servers to your game server](https://docs.aws.amazon.com//gameliftservers/latest/developerguide/gamelift-sdk-server-api.html). For more information on server SDK actions, see the [C\# server SDK 5.x for Amazon GameLift Servers -- Actions](integration-server-sdk5-csharp-actions.md).
+The sample code shows how to add the required functionality, as described in [Add Amazon GameLift Servers to your game server](https://docs.aws.amazon.com/gameliftservers/latest/developerguide/gamelift-sdk-server-api.html). For more information on server SDK actions, see the [C\# server SDK 5.x for Amazon GameLift Servers -- Actions](integration-server-sdk5-csharp-actions.md).
 
 ### Integration sample code
 <a name="w2aab9c11c11b9c19c15c13b1"></a>
@@ -179,7 +179,7 @@ public class ServerSDKManualTest : MonoBehaviour
 <a name="integration-engines-unity-additional-resources"></a>
 
 Now that you've prepared a game server build with the minimum required functionality for hosting with Amazon GameLift Servers, consider these potential next steps:
-+ Deploy your integrated game server for and testing and development. With an Anywhere fleet, you can set up your local machine as a hosting resource and use it to test your game server and game client connections. For cloud-based hosting, deploy your game server to a managed EC2 or managed container fleet. See these topics for guidance:
++ Deploy your integrated game server for testing and development. With an Anywhere fleet, you can set up your local machine as a hosting resource and use it to test your game server and game client connections. For cloud-based hosting, deploy your game server to a managed EC2 or managed container fleet. See these topics for guidance:
   + [Set up for iterative development with Amazon GameLift Servers Anywhere](integration-dev-iteration.md)
   + [Amazon GameLift Servers Anywhere fleets](fleets-intro-anywhere.md)
   + [Amazon GameLift Servers managed EC2 fleets](fleets-intro-managed.md)

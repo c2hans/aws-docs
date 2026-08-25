@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/redshift/latest/gsg/document-history.htm
 <a name="document-history"></a>
 
 **Note**
-For a description of new features in Amazon Redshift, see [What's new](https://aws.amazon.com//redshift/whats-new).
+For a description of new features in Amazon Redshift, see [What's new](https://aws.amazon.com/redshift/whats-new).
 
 The following table describes the important documentation changes to the *Amazon Redshift Getting Started Guide*.
 

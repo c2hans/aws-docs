@@ -25,7 +25,7 @@ In the AWS Toolkit, you can create a new Step Functions state machine from a fil
 
 **Note**
 To work with Step Functions in VS Code, the extension of your `Amazon State Language`(ASL) file that contains your state machine definition must end with `asl.json`, `asl.yml`, or `.asl.yaml`.
-By default, relevant Step Functions files open in Workflow Studio. For detailed information about working in Workflow Studio through the AWS Toolkit, see the [Working with Workflow Studio](https://docs.aws.amazon.com//toolkit-for-vscode/latest/userguide/stepfunctions-workflowstudio.html) topic in this User Guide.
+By default, relevant Step Functions files open in Workflow Studio. For detailed information about working in Workflow Studio through the AWS Toolkit, see the [Working with Workflow Studio](https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/stepfunctions-workflowstudio.html) topic in this User Guide.
 
 1. From your workspace in VS Code, create a new file.
 

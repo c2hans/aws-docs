@@ -33,7 +33,7 @@ The following diagram shows a table named *Pets*, which spans multiple partition
 ![DynamoDB's distribution of table items across partitions based on the partition key's hash value.](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/HowItWorksPartitionKey.png)
 
 **Note**
-DynamoDB is optimized for uniform distribution of items across a table's partitions, no matter how many partitions there may be. We recommend that you choose a partition key that can have a large number of distinct values relative to the number of items in the table.
+DynamoDB is optimized for uniform distribution of items across a table's partitions, no matter how many partitions there might be. We recommend that you choose a partition key that can have a large number of distinct values relative to the number of items in the table.
 
 ## Data distribution: Partition key and sort key
 <a name="HowItWorks.Partitions.CompositeKey"></a>

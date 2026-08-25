@@ -5,10 +5,10 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/apache-kafka-r
 # Apache Kafka
 <a name="apache-kafka-rule-action"></a>
 
-The Apache Kafka (Kafka) action sends messages directly to your [Amazon Managed Streaming for Apache Kafka](https://docs.aws.amazon.com//msk/latest/developerguide/what-is-msk.html) (Amazon MSK), Apache Kafka clusters managed by third-party providers such as [Confluent Cloud](https://www.confluent.io/), or self-managed Apache Kafka clusters. With Kafka rule action, you can route your IoT data to Kafka clusters. This enables you to build high-performance data pipelines for various purposes, such as streaming analytics, data integration, visualization, and mission-critical business applications.
+The Apache Kafka (Kafka) action sends messages directly to your [Amazon Managed Streaming for Apache Kafka](https://docs.aws.amazon.com/msk/latest/developerguide/what-is-msk.html) (Amazon MSK), Apache Kafka clusters managed by third-party providers such as [Confluent Cloud](https://www.confluent.io/), or self-managed Apache Kafka clusters. With Kafka rule action, you can route your IoT data to Kafka clusters. This enables you to build high-performance data pipelines for various purposes, such as streaming analytics, data integration, visualization, and mission-critical business applications.
 
 **Note**
-This topic assumes familiarity with the Apache Kafka platform and related concepts. For more information about Apache Kafka, see [Apache Kafka](https://kafka.apache.org/). [MSK Serverless](https://docs.aws.amazon.com//msk/latest/developerguide/serverless.html) is not supported. MSK Serverless clusters can only be done via IAM authentication, which Apache Kafka rule action doesn't currently support. For more information about how to configure AWS IoT Core with Confluent, see [Leveraging Confluent and AWS to Solve IoT Device and Data Management Challenges](https://aws.amazon.com/blogs/apn/leveraging-confluent-and-aws-to-solve-iot-device-and-data-management-challenges/).
+This topic assumes familiarity with the Apache Kafka platform and related concepts. For more information about Apache Kafka, see [Apache Kafka](https://kafka.apache.org/). [MSK Serverless](https://docs.aws.amazon.com/msk/latest/developerguide/serverless.html) is not supported. MSK Serverless clusters can only be done via IAM authentication, which Apache Kafka rule action doesn't currently support. For more information about how to configure AWS IoT Core with Confluent, see [Leveraging Confluent and AWS to Solve IoT Device and Data Management Challenges](https://aws.amazon.com/blogs/apn/leveraging-confluent-and-aws-to-solve-iot-device-and-data-management-challenges/).
 
 ## Requirements
 <a name="apache-kafka-rule-action-requirements"></a>
@@ -157,7 +157,7 @@ The unique Kerberos identity to which Kerberos can assign tickets to access Kerb
 ## Examples
 <a name="apache-kafka-rule-action-examples"></a>
 
-The following JSON example defines an Apache Kafka action in an AWS IoT rule. The following example passes the [ sourceIp()](iot-sql-functions.md#iot-function-sourceip) inline function as a [substitution template](https://docs.aws.amazon.com//iot/latest/developerguide/iot-substitution-templates.html) in the Kafka Action header.
+The following JSON example defines an Apache Kafka action in an AWS IoT rule. The following example passes the [ sourceIp()](iot-sql-functions.md#iot-function-sourceip) inline function as a [substitution template](https://docs.aws.amazon.com/iot/latest/developerguide/iot-substitution-templates.html) in the Kafka Action header.
 
 ```
 {

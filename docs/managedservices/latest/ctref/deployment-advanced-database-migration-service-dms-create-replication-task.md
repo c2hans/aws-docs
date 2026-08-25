@@ -14,8 +14,6 @@ Use to create a Database Migration Service (DMS) replication task.
 ## Change Type Details
 <a name="ct-1d2fml15b9eth-DADc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-1d2fml15b9eth |

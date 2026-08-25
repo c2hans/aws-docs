@@ -7,11 +7,11 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-evaluatio
 
 You can delete a model evaluation job by using the Amazon Bedrock console, or by using the [BatchDeleteEvaluationJob](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_BatchDeleteEvaluationJob.html) operation with the AWS CLI, or a supported AWS SDK.
 
-Before you can delete a model evaluation job, the status of the job must be `FAILED`, `COMPLETED`, or `STOPPED`. You can get the current status for a job from the Amazon Bedrock console or by calling the [ ListEvaluationJobs](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_ListEvaluationJobs.html). For more information, see [List automatic model evaluation jobs in Amazon BedrockList model evaluation jobs that use human workers in Amazon Bedrock](model-evaluation-jobs-management-list.md).
+Before you can delete a model evaluation job, the status of the job must be `FAILED`, `COMPLETED`, or `STOPPED`. You can get the current status for a job from the Amazon Bedrock console or by calling the [ ListEvaluationJobs](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_ListEvaluationJobs.html). For more information, see [List automatic model evaluation jobs in Amazon Bedrock](model-evaluation-jobs-management-list.md).
 
 You can delete up to 25 model evaluation jobs at a time with the console and with the `BatchDeleteEvaluationJob` operation. If you need to delete more jobs, repeat the console procedure or `BatchDeleteEvaluationJob` call.
 
-If you delete a model evaluation job with the `BatchDeleteEvaluationJob` operation, you need the Amazon Resource Names (ARNs) of the models that you want to delete. For information about getting the ARN for a model, see [List automatic model evaluation jobs in Amazon BedrockList model evaluation jobs that use human workers in Amazon Bedrock](model-evaluation-jobs-management-list.md).
+If you delete a model evaluation job with the `BatchDeleteEvaluationJob` operation, you need the Amazon Resource Names (ARNs) of the models that you want to delete. For information about getting the ARN for a model, see [List automatic model evaluation jobs in Amazon Bedrock](model-evaluation-jobs-management-list.md).
 
 When you delete a model evaluation job all resources in Amazon Bedrock and Amazon SageMaker AI are removed. Any model evaluation job saved in Amazon S3 buckets are left unchanged. Also, for model evaluation jobs that use human workers, deleting a model evaluation job will not delete the workforce or workteam you have configured in Amazon Cognito or SageMaker AI.
 

@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/how-creating-a
 
 You can use the [Apache Beam](https://beam.apache.org/) framework with your Managed Service for Apache Flink application to process streaming data. Managed Service for Apache Flink applications that use Apache Beam use [Apache Flink runner](https://beam.apache.org/documentation/runners/flink/) to execute Beam pipelines.
 
-For a tutorial about how to use Apache Beam in a Managed Service for Apache Flink application, see [Use CloudFormationCreating an application using Apache Beam](examples-beam.md).
+For a tutorial about how to use Apache Beam in a Managed Service for Apache Flink application, see [Use CloudFormation](examples-beam.md).
 
 **Topics**
 + [Limitations of Apache Flink runner with Managed Service for Apache Flink](#how-creating-apps-beam-using)

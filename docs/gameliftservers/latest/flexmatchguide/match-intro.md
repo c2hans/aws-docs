@@ -12,7 +12,7 @@ Use FlexMatch as a standalone matchmaking service or integrated with an Amazon G
 FlexMatch gives you the flexibility to set matchmaking priorities depending on your game requirements. For example, you can do the following:
 + Find a balance between match speed and quality. Set match rules to quickly find matches that are good enough, or have players wait a little longer to find the best possible match for an optimum player experience.
 + Make matches based on well-matched players or well-matched teams. Create matches where all players have similar characteristics such as skill or experience. Or form matches where the combined characteristics of each team meet a common criteria.
-+ Prioritize how player latency factors into matchmaking. Do you want to set a hard limit on latency for all players, or are higher latencies acceptable as long as everyone in the match has similary latency?
++ Prioritize how player latency factors into matchmaking. Do you want to set a hard limit on latency for all players, or are higher latencies acceptable as long as everyone in the match has similar latency?
 
 **Ready to start working with FlexMatch?**
 For step-by-step guidance on getting your game up and running with FlexMatch, see the following topics:

@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsr
 
 AWS Resource Access Manager (RAM) provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="ram-GetPermission"></a>[GetPermission](https://docs.aws.amazon.com/ram/latest/APIReference/API_GetPermission.html) | Get the contents of an AWS RAM permission | Read |

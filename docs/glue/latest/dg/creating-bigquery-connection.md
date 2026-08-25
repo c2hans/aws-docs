@@ -42,7 +42,7 @@ To connect to Google BigQuery from AWS Glue, you will need to create and store y
    }
    ```
 
-1. In AWS Secrets Manager, create a secret using your downloaded credentials file. You can choose the **Plaintext** tab and paste the JSON formatted file content. To create a secret in Secrets Manager, follow the tutorial available in [ Create an AWS Secrets Manager secret ](https://docs.aws.amazon.com//secretsmanager/latest/userguide/create_secret.html) in the AWS Secrets Manager documentation. After creating the secret, keep the Secret name, {{secretName}} for the next step.
+1. In AWS Secrets Manager, create a secret using your downloaded credentials file. You can choose the **Plaintext** tab and paste the JSON formatted file content. To create a secret in Secrets Manager, follow the tutorial available in [ Create an AWS Secrets Manager secret ](https://docs.aws.amazon.com/secretsmanager/latest/userguide/create_secret.html) in the AWS Secrets Manager documentation. After creating the secret, keep the Secret name, {{secretName}} for the next step.
 
 1. In the AWS Glue Data Catalog, create a connection by following the steps in [https://docs.aws.amazon.com/glue/latest/dg/console-connections.html](https://docs.aws.amazon.com/glue/latest/dg/console-connections.html). After creating the connection, keep the connection name, {{connectionName}}, for the next step.
    + When selecting a **Connection type**, select Google BigQuery.

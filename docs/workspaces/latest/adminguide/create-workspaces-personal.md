@@ -54,7 +54,11 @@ Review the recommended uses and specifications of each bundle to help ensure you
 
      1. Enter the user’s **Username**, **First name**, **Last name**, and **Email**. To add additional users, choose **Create additional user** and enter their information.
 
-1. Under **Customization** (optional), you can customize bundles, root and user volume encryption, and user volume for all users or specific users.
+1. Under **Customization** (optional), you can customize bundles, root and user volume encryption, nested virtualization, and user volume for all users or specific users.
+   + To enable encryption for the root volume, user volume, or both, select **Encryption**. For more information, see [Encrypted WorkSpaces in WorkSpaces Personal](encrypt-workspaces.md).
+   + To enable nested virtualization, expand the **Nested virtualization** section and select **Enable Nested Virtualization**. Nested virtualization allows you to run hypervisors such as Hyper-V and KVM inside your WorkSpace, enabling tools like Docker Desktop and WSL2. For more information, see [Nested virtualization for WorkSpaces Personal](https://docs.aws.amazon.com/workspaces/latest/adminguide/nested-virtualization.html).
+**Note**
+Nested virtualization is available only on non-GPU bundles using the DCV (WSP) protocol with a supported operating system. For the full list of supported configurations, see [Nested virtualization for WorkSpaces Personal](https://docs.aws.amazon.com/workspaces/latest/adminguide/nested-virtualization.html).
 
 1. Choose Create WorkSpaces. The initial status of the WorkSpace is PENDING. When the creation is complete, the status is AVAILABLE and an invitation is sent to the email address that you specified for the users.
 

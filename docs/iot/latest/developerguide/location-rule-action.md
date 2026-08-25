@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/location-rule-
 # Location
 <a name="location-rule-action"></a>
 
-The Location (`location`) action sends your geographical location data to [Amazon Location Service](https://docs.aws.amazon.com//location/latest/developerguide/welcome.html).
+The Location (`location`) action sends your geographical location data to [Amazon Location Service](https://docs.aws.amazon.com/location/latest/developerguide/welcome.html).
 
 ## Requirements
 <a name="location-rule-action-requirements"></a>
@@ -21,7 +21,7 @@ This rule action has the following requirements:
 When you create an AWS IoT rule with this action, you must specify the following information:
 
 `deviceId`
-The unique ID of the device providing the location data. For more information, see [`DeviceId`](https://docs.aws.amazon.com//location/latest/APIReference/API_DevicePositionUpdate.html) from the *Amazon Location Service API Reference*.
+The unique ID of the device providing the location data. For more information, see [`DeviceId`](https://docs.aws.amazon.com/location/latest/APIReference/API_DevicePositionUpdate.html) from the *Amazon Location Service API Reference*.
 Supports [substitution templates](iot-substitution-templates.md): Yes
 
 `latitude`
@@ -42,7 +42,7 @@ The `timestamp` value consists of the following two values:
 + `unit`: (Optional) The precision of the timestamp value that results from the expression described in `value`. Valid values: `SECONDS` \| `MILLISECONDS` \| `MICROSECONDS` \| `NANOSECONDS`. The default is `MILLISECONDS`. Supports [substitution templates](iot-substitution-templates.md): API and AWS CLI only.
 
 `trackerName`
-The name of the tracker resource in Amazon Location in which the location is updated. For more information, see [Tracker](https://docs.aws.amazon.com//location/latest/developerguide/geofence-tracker-concepts.html#tracking-overview) from the *Amazon Location Service Developer Guide*.
+The name of the tracker resource in Amazon Location in which the location is updated. For more information, see [Tracker](https://docs.aws.amazon.com/location/latest/developerguide/geofence-tracker-concepts.html#tracking-overview) from the *Amazon Location Service Developer Guide*.
 Supports [substitution templates](iot-substitution-templates.md): API and AWS CLI only
 
 ## Examples
@@ -137,4 +137,4 @@ aws location get-device-position-history --device-id {{001}} --tracker-name {{my
 
 ## See also
 <a name="location-rule-action-see-also"></a>
-+ [What is Amazon Location Service?](https://docs.aws.amazon.com//location/latest/developerguide/welcome.html) in the *Amazon Location Service Developer Guide*.
++ [What is Amazon Location Service?](https://docs.aws.amazon.com/location/latest/developerguide/welcome.html) in the *Amazon Location Service Developer Guide*.

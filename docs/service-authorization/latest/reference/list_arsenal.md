@@ -29,8 +29,6 @@ Application Discovery Arsenal has no API operations that can be used in the `Act
 
 The following actions are defined by Application Discovery Arsenal but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 | Actions | Description | Resource types (\*required) | Condition keys | Access level |
 | --- | --- | --- | --- | --- |
 |   [RegisterOnPremisesAgent](https://docs.aws.amazon.com/application-discovery/latest/userguide/setting-up.html)  | Grants permission to register AWS provided data collectors to the Application Discovery Service |  |   | Write |

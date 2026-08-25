@@ -33,7 +33,7 @@ The following differences apply to Amazon Relational Database Service:
 
 ## Documentation
 <a name="govcloud-rds-docs"></a>
-+  [Amazon RDS documentation](https://docs.aws.amazon.com/http://aws.amazon.com/documentation/rds/)
++  [Amazon RDS documentation](http://aws.amazon.com/documentation/rds/)
 
 ## Export-controlled content
 <a name="rds-itar"></a>

@@ -28,7 +28,7 @@ The following are the service endpoints and service quotas for this service.
 If you are using data plane endpoints for the first time, use the `iot:Data-ATS` endpoints.
 We recommend using the AWS IoT Core data plane ATS endpoint for accessing Jobs functionality, as it enables advanced features like IPv6 and AWS PrivateLink that are not available through the `iot:Jobs` endpoint.
 
-The commands and jobs features in AWS IoT Device Management share the same data plane endpoints. These data endpoints are specific to each AWS account and AWS Region. To find the data plane endpoint for your AWS account and AWS Region, use the [**describe-endpoint**](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/describe-endpoint.html) CLI command shown here, or the [`DescribeEndpoint`](https://docs.aws.amazon.com//iot/latest/apireference/API_DescribeEndpoint.html) REST API.
+The commands and jobs features in AWS IoT Device Management share the same data plane endpoints. These data endpoints are specific to each AWS account and AWS Region. To find the data plane endpoint for your AWS account and AWS Region, use the [**describe-endpoint**](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/describe-endpoint.html) CLI command shown here, or the [`DescribeEndpoint`](https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeEndpoint.html) REST API.
 
 To retrieve the AWS IoT Core `iot:Data-ATS` dual-stack endpoint, use the following command:
 
@@ -191,7 +191,7 @@ AWS IoT Device Management Software Package Catalog is available in the following
 ### AWS IoT FIPS endpoints
 <a name="iot_device_management_fips"></a>
 
-AWS IoT provides endpoints that support the [Federal Information Processing Standard (FIPS) 140-2](https://aws.amazon.com//compliance/fips/). Choose the appropriate FIPS compliant endpoint to access AWS IoT features in your AWS Region from [FIPS Endpoints by Service](https://aws.amazon.com//compliance/fips/#FIPS_Endpoints_by_Service). For more information about the FIPS endpoints provided by AWS IoT, see [Connecting to AWS IoT FIPS endpoints](https://docs.aws.amazon.com//iot/latest/developerguide/iot-connect-fips.html).
+AWS IoT provides endpoints that support the [Federal Information Processing Standard (FIPS) 140-2](https://aws.amazon.com/compliance/fips/). Choose the appropriate FIPS compliant endpoint to access AWS IoT features in your AWS Region from [FIPS Endpoints by Service](https://aws.amazon.com/compliance/fips/#FIPS_Endpoints_by_Service). For more information about the FIPS endpoints provided by AWS IoT, see [Connecting to AWS IoT FIPS endpoints](https://docs.aws.amazon.com/iot/latest/developerguide/iot-connect-fips.html).
 
 ## Service quotas
 <a name="iot_device_management_quotas"></a>
@@ -298,7 +298,7 @@ AWS IoT provides endpoints that support the [Federal Information Processing Stan
 | `[StartNextPendingJobExecution/UpdateJobExecution throttle limit](https://console.aws.amazon.com/servicequotas/home/services/iot/quotas/L-C8F5F7B3)` | The maximum number of total write transactions per second per account which can be caused by invoking StartNextPendingJobExecution and/or UpdatePendingJobExecution. | 200 | No |
 | `[UpdateJob throttle limit](https://console.aws.amazon.com/servicequotas/home/services/iot/quotas/L-7365ADF8)` | The throttle limit for UpdateJob in your AWS account per Region per second. | 10 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/iot/quotas/L-7365ADF8) |
 
-† For definitions of data plane and control plane, see **What are the ways for accessing AWS IoT Core?** in the [AWS IoT Core FAQs](https://aws.amazon.com//iot-core/faqs/)
+† For definitions of data plane and control plane, see **What are the ways for accessing AWS IoT Core?** in the [AWS IoT Core FAQs](https://aws.amazon.com/iot-core/faqs/)
 
 ### AWS IoT Device Management commands
 <a name="commands-limits"></a>

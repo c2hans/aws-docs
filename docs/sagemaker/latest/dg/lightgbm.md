@@ -19,8 +19,6 @@ LightGBM is a memory-bound (as opposed to compute-bound) algorithm. So, a genera
 
 The following table outlines a variety of sample notebooks that address different use cases of Amazon SageMaker AI LightGBM algorithm.
 
-****
-
 | **Notebook Title** | **Description** |
 | --- | --- |
 | [Tabular classification with Amazon SageMaker AI LightGBM and CatBoost algorithm](https://sagemaker-examples.readthedocs.io/en/latest/introduction_to_amazon_algorithms/lightgbm_catboost_tabular/Amazon_Tabular_Classification_LightGBM_CatBoost.html) | This notebook demonstrates the use of the Amazon SageMaker AI LightGBM algorithm to train and host a tabular classification model.  |

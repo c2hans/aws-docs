@@ -30,7 +30,6 @@ For detailed instructions that you can use to customize IAM permissions for AWS 
    1. Next, select whether your identities should have **Read only (recommended)** or **Read and write** access to the locations that you previously selected. AWS Glue adds permissions policies to your identities based on the combination of locations and read or write permissions you select.
 
       The following table displays the permissions that AWS Glue attaches for Amazon S3 access.
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/glue/latest/dg/set-up-iam.html)
 
 1. Choose **Next**.

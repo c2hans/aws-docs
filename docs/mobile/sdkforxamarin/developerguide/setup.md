@@ -131,8 +131,6 @@ Install-Package AWSSDK.CognitoIdentity
 
 The AWS Core Runtime and Amazon Cognito Identity packages are required for all projects. The following is a full list of package names for each service.
 
-****
-
 | Service | Package name |
 | --- | --- |
 | AWS Core Runtime | AWSSDK.Core |

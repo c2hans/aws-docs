@@ -7,8 +7,6 @@ This is an earlier version of the AWS Well-Architected Framework. For the latest
 # SEC01-BP07 Identify threats and prioritize mitigations using a threat model
 <a name="sec_securely_operate_threat_model"></a>
 
-****
-
 |  |
 | --- |
 | This best practice was updated with new guidance on December 6, 2023. |

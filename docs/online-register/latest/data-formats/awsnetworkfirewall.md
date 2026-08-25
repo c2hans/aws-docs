@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsn
 
 AWS Network Firewall provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="network-firewall-DescribeContainerAssociation"></a>[DescribeContainerAssociation](https://docs.aws.amazon.com/network-firewall/latest/APIReference/API_DescribeContainerAssociation.html) | Retrieve the data objects that define a container association | Read |

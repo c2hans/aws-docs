@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/enable-persist
 # Enable persistent connection for Connect Customer agents
 <a name="enable-persistent-connection"></a>
 
-When **Enable persistent connection** is selected for an agent, after a call ends the agent's softphone maintains its media connection to Connect Customer for a few minutes. This enables subsequent calls to connect faster. In case the agent remains idle for an extended period of time, the softphone media connection is dropped to reduce agent workstation and network resource consumption. It is re-established upon the next call for this agent.
+When you select **Enable persistent connection** for an agent, the agent's softphone maintains its media connection to Connect Customer for a few minutes after login and after each call ends. This enables subsequent calls to connect faster. If the agent remains idle for an extended period of time, the softphone drops the media connection to reduce agent workstation and network resource consumption. This does not impact the agent's ability to receive calls. The media connection is re-established when the agent receives the next call.
 
 This functionality doesn't apply to chats or tasks.
 

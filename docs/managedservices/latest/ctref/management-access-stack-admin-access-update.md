@@ -14,8 +14,6 @@ Update admin access for one or more users for one or more stacks. The maximum ac
 ## Change Type Details
 <a name="ct-0ikpop8zqhkxg-MASu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-0ikpop8zqhkxg |

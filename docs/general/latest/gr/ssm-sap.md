@@ -48,8 +48,6 @@ The following are the service endpoints and service quotas for this service.
 ## Service quotas
 <a name="limits_ssm-sap"></a>
 
-****
-
 | Name | Default | Adjustable | Description |
 | --- | --- | --- | --- |
 | SAP applications per Region in an AWS account | 10 | Yes | The maximum number of SAP applications that you can register with AWS Systems Manager for SAP per Region in an AWS account. |

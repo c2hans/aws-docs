@@ -14,8 +14,6 @@ Change the hostname of an EC2 Linux instance. If no hostname is provided, then t
 ## Change Type Details
 <a name="ct-2781aqd6f6svs-MAEc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2781aqd6f6svs |

@@ -21,14 +21,14 @@ The following sections explain the different ingestion and storage options avail
 ### Master participant only
 <a name="master-ptp-only"></a>
 
-Master participants first connect to Kinesis Video Streams with WebRTC Signaling via [ConnectAsMaster](ConnectAsMaster.md). Next, they call the [JoinStorageSession](https://docs.aws.amazon.com//kinesisvideostreams/latest/dg/API_webrtc_JoinStorageSession.html) API to have the storage session initiate a WebRTC connection. Once a WebRTC connection is established, media will be ingested to the configured Kinesis video stream.
+Master participants first connect to Kinesis Video Streams with WebRTC Signaling via [ConnectAsMaster](ConnectAsMaster.md). Next, they call the [JoinStorageSession](https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/API_webrtc_JoinStorageSession.html) API to have the storage session initiate a WebRTC connection. Once a WebRTC connection is established, media will be ingested to the configured Kinesis video stream.
 
 ![Diagram showing WebRTC ingestion flow between master participant, storage session, and stream.](http://docs.aws.amazon.com/kinesisvideostreams-webrtc-dg/latest/devguide/images/ingestion-flow.png)
 
 ### Master and viewer participants together
 <a name="master-viewer-ptp-together"></a>
 
-Viewer participants first connect to Kinesis Video Streams with WebRTC Signaling via [ConnectAsViewer](ConnectAsViewer.md). Next, they call the [JoinStorageSessionAsViewer](https://docs.aws.amazon.com//kinesisvideostreams/latest/dg/API_webrtc_JoinStorageSessionAsViewer.html) API to have the storage session initiate a WebRTC connection. Once a WebRTC connection is established, combined media from the master and all viewer participants will be ingested to the configured Kinesis video stream, as long as the master participant is present.
+Viewer participants first connect to Kinesis Video Streams with WebRTC Signaling via [ConnectAsViewer](ConnectAsViewer.md). Next, they call the [JoinStorageSessionAsViewer](https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/API_webrtc_JoinStorageSessionAsViewer.html) API to have the storage session initiate a WebRTC connection. Once a WebRTC connection is established, combined media from the master and all viewer participants will be ingested to the configured Kinesis video stream, as long as the master participant is present.
 
 The storage session combines and forwards all viewer participant’s audio to the master participant. Viewer participants receive combined media from the master participant and audio from any other viewer participants from the storage session.
 

@@ -17,7 +17,7 @@ You can partition the external tables on one or more columns to optimize query p
 
 Amazon Redshift RG clusters and Amazon Redshift Serverless include an integrated data lake query engine that runs on the cluster's own compute resources, providing a unified experience for both data lake and data warehouse use cases.
 
-The integrated data lake query engine eliminates the requirement to use Redshift Spectrum and eliminates the associated Redshift Spectrum charges. No additional configuration is required to enable the integrated data lake query engine as it is enabled by default.
+The integrated data lake query engine eliminates the requirement to use Redshift Spectrum and eliminates the associated Redshift Spectrum charges. The integrated data lake query engine also supports querying data in Amazon S3 buckets located in a different AWS Region. Cross-region queries incur additional data transfer charges. No additional configuration is required to enable the integrated data lake query engine as it is enabled by default.
 
 **Note**
 In some cases, you may observe slower performance on RG compared to RA3 clusters running Redshift Spectrum, which scales independently using dedicated compute resources. If you observe slower query performance, consider adding more nodes or upgrading to larger RG instance sizes.

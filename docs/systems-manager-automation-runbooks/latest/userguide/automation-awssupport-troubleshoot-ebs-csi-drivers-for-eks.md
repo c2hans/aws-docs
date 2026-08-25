@@ -242,7 +242,7 @@ Follow these steps to configure the automation:
 
 1. Grant the required permissions for Amazon EKS cluster RBAC (Role-Based Access Control). The recommended approach is to create an Access Entry in your Amazon EKS cluster.
 
-    In the Amazon EKS console, navigate to your cluster. For Amazon EKS access entries, verify your access configuration is set to `API_AND_CONFIG_MAP` or `API`. For steps to configure authentication mode for access entries, see [Setting up access entries](https://docs.aws.amazon.com//eks/latest/userguide/setting-up-access-entries.html).
+    In the Amazon EKS console, navigate to your cluster. For Amazon EKS access entries, verify your access configuration is set to `API_AND_CONFIG_MAP` or `API`. For steps to configure authentication mode for access entries, see [Setting up access entries](https://docs.aws.amazon.com/eks/latest/userguide/setting-up-access-entries.html).
 
    Choose **Create access entry**.
    + For *IAM principal ARN*, select the IAM role you created for SSM automation in the previous step.
@@ -309,8 +309,8 @@ Follow these steps to configure the automation:
 
 Systems Manager Automation
 + [Run this Automation (console)](https://console.aws.amazon.com/systems-manager/documents/AWSSupport-TroubleshootEbsCsiDriversForEks/description)
-+ [Run an automation](https://docs.aws.amazon.com//systems-manager/latest/userguide/automation-working-executing.html)
-+ [Setting up an Automation](https://docs.aws.amazon.com//systems-manager/latest/userguide/automation-setup.html)
++ [Run an automation](https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-working-executing.html)
++ [Setting up an Automation](https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-setup.html)
 + [Support Automation Workflows](https://aws.amazon.com/premiumsupport/technology/saw/)
 
-For more information on Amazon EBS CSI Driver, see [Amazon EBS CSI Driver](https://docs.aws.amazon.com//eks/latest/userguide/ebs-csi.html).
+For more information on Amazon EBS CSI Driver, see [Amazon EBS CSI Driver](https://docs.aws.amazon.com/eks/latest/userguide/ebs-csi.html).

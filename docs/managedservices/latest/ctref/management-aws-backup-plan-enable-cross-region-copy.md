@@ -14,8 +14,6 @@ Update an existing backup plan rule with copy actions like cross region destinat
 ## Change Type Details
 <a name="ct-0fqo03yizfnw6-MABe-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-0fqo03yizfnw6 |

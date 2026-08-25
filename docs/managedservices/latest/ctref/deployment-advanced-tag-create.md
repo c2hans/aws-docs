@@ -14,8 +14,6 @@ Add tags to existing, supported resources: Autoscaling, EC2, Elastic Load Balanc
 ## Change Type Details
 <a name="ct-3cx7we852p3af-DATc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-3cx7we852p3af |

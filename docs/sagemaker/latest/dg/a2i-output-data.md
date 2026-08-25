@@ -23,8 +23,6 @@ Use the following sections to learn more about Amazon A2I output data format for
 
 Amazon A2I built-in task types include Amazon Textract and Amazon Rekognition. In addition to human responses, the output data from one of these tasks includes details about the reason the human loop was created and information about the integrated service used to create the human loop. Use the following table to learn more about the output data schema for all built-in task types. The *value* for each of these parameters depends on the service you use with Amazon A2I. Refer to the second table in this section for more information about these service-specific values.
 
-****
-
 | Parameter | Value Type | Example Values | Description |
 | --- | --- | --- | --- |
 | awsManagedHumanLoopRequestSource | String | AWS/Rekognition/DetectModerationLabels/Image/V3 or AWS/Textract/AnalyzeDocument/Forms/V1 | The API operation and associated AWS services that requested that Amazon A2I create the a human loop. This is the API operation you use to configure your Amazon A2I human loop. |
@@ -245,8 +243,6 @@ The following is an example of the output data from an Amazon A2I human review o
 <a name="sms-output-data-custom"></a>
 
 When you add Amazon A2I to a custom human review workflow, you see the following parameters in the output data returned from human review tasks.
-
-****
 
 | Parameter | Value Type | Description |
 | --- | --- | --- |

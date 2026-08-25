@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/device-shadow-
 
 The Device Shadow service publishes a message on the error topic (over MQTT) when an attempt to change the state document fails. This message is only emitted as a response to a publish request on one of the reserved `$aws` topics. If the client updates the document using the REST API, then it receives the HTTP error code as part of its response, and no MQTT error messages are emitted.
 
-****
-
 | HTTP error code | Error messages |
 | --- | --- |
 | 400 (Bad Request) |  +  Invalid JSON <br />+  Missing required node: state <br />+  State node must be an object <br />+  Desired node must be an object <br />+  Reported node must be an object <br />+  Invalid version <br />+  Invalid clientToken  A client token that is longer than 64 bytes will cause this response.  <br />+  JSON contains too many levels of nesting; maximum is 6 <br />+  State contains an invalid node   |

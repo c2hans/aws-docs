@@ -15,8 +15,6 @@ When you have a Lambda trigger assigned to your user pool, Amazon Cognito interr
 
 The following table summarizes some of the ways you can use Lambda triggers to customize user pool operations:
 
-****
-
 - ** **Custom Authentication Flow** **
   - **Operation:** Define Auth Challenge / **Description:** Determines the next challenge in a custom auth flow
   - **Operation:** Create Auth Challenge / **Description:** Creates a challenge in a custom auth flow
@@ -219,7 +217,7 @@ You can submit custom parameters to your Lambda trigger functions in API operati
 **Client metadata example use cases**
 + Pass geolocation data at sign-up to the [pre sign-up trigger](user-pool-lambda-pre-sign-up.md) and prevent sign-in from unwanted locations.
 + Pass tenant ID data to [custom challenge triggers](user-pool-lambda-challenge.md) and issue different challenges to customers from different business units.
-+ Pass a user's token to the [pre token generation trigger](user-pool-lambda-pre-token-generation.md) and generate a log of the principal that an M2M request was made on behalf of. For an example request, see [Client credentials with basic authorizationClient credentials with POST body authorization](token-endpoint.md#exchanging-client-credentials-for-an-access-token-in-request-body).
++ Pass a user's token to the [pre token generation trigger](user-pool-lambda-pre-token-generation.md) and generate a log of the principal that an M2M request was made on behalf of. For an example request, see [Client credentials with basic authorization](token-endpoint.md#exchanging-client-credentials-for-an-access-token-in-request-body).
 
 Here is an example of passing client metadata to the pre sign-up trigger.
 
@@ -303,7 +301,7 @@ The request results in the following request body to your pre sign-up function.
 ------
 
 **Client metadata for machine-to-machine (M2M) client credentials**
-You can pass [client metadata](#working-with-lambda-trigger-client-metadata) in M2M requests. Client metadata is additional information from a user or application environment that can contribute to the outcomes of a [Pre token generation Lambda trigger](user-pool-lambda-pre-token-generation.md). In authentication operations with a user principal, you can pass client metadata to the pre token generation trigger in the body of [AdminRespondToAuthChallenge](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_AdminRespondToAuthChallenge.html) and [RespondToAuthChallenge](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_RespondToAuthChallenge.html) API requests. Because applications conduct the flow for generation of access tokens for M2M with direct requests to the [Token endpoint](token-endpoint.md), they have a different model. In the POST body of token requests for client credentials, pass an `aws_client_metadata` parameter with the client metadata object URL-encoded (`x-www-form-urlencoded`) to string. For an example request, see [Client credentials with basic authorizationClient credentials with POST body authorization](token-endpoint.md#exchanging-client-credentials-for-an-access-token-in-request-body). The following is an example parameter that passes the key-value pairs `{"environment": "dev", "language": "en-US"}`.
+You can pass [client metadata](#working-with-lambda-trigger-client-metadata) in M2M requests. Client metadata is additional information from a user or application environment that can contribute to the outcomes of a [Pre token generation Lambda trigger](user-pool-lambda-pre-token-generation.md). In authentication operations with a user principal, you can pass client metadata to the pre token generation trigger in the body of [AdminRespondToAuthChallenge](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_AdminRespondToAuthChallenge.html) and [RespondToAuthChallenge](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_RespondToAuthChallenge.html) API requests. Because applications conduct the flow for generation of access tokens for M2M with direct requests to the [Token endpoint](token-endpoint.md), they have a different model. In the POST body of token requests for client credentials, pass an `aws_client_metadata` parameter with the client metadata object URL-encoded (`x-www-form-urlencoded`) to string. For an example request, see [Client credentials with basic authorization](token-endpoint.md#exchanging-client-credentials-for-an-access-token-in-request-body). The following is an example parameter that passes the key-value pairs `{"environment": "dev", "language": "en-US"}`.
 
 ```
 aws_client_metadata=%7B%22environment%22%3A%20%22dev%22,%20%22language%22%3A%20%22en-US%22%7D

@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon GroundTruth Labeling provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="groundtruthlabeling-DescribeConsoleJob"></a>[DescribeConsoleJob](https://docs.aws.amazon.com/sagemaker/latest/dg/sms-data-input.html#sms-console-create-manifest-file) | Get status of GroundTruthLabeling Jobs | Read |

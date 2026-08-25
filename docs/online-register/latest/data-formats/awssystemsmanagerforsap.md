@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awss
 
 AWS Systems Manager for SAP provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="ssm-sap-GetApplication"></a>[GetApplication](https://docs.aws.amazon.com/systems-manager/index.html) | Access information about an application registered with SSM for SAP by providing the application ID or application ARN | Read |

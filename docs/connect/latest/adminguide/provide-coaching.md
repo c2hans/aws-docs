@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/provide-coachi
 # Provide agent coaching in Connect Customer
 <a name="provide-coaching"></a>
 
-Connect Customer provides integrated coaching tools that help supervisors deliver structured, data-driven feedback to agents based on performance evaluations. For upcoming one-on-one sessions with agents, supervisors can share detailed coaching feedback with concrete examples, and set performance goals directly within Connect Customer. Quality management teams can also assign coaching to supervisors with due dates when they identify improvement opportunities, such as showing greater empathy towards customer issues. Once coaching is completed, agents can acknowledge the feedback in Connect Customer, ensuring that they understand next steps for improvement. Past coaching feedback is centrally accessible, making it easier for agents, supervisors, and quality managers to track agent progress over time.
+Connect Customer provides integrated coaching tools that help supervisors deliver structured, data-driven feedback to agents based on performance evaluations. For upcoming one-on-one sessions with agents, supervisors can share detailed coaching feedback with concrete examples, and set performance goals directly within Connect Customer. Quality management teams can also assign coaching to supervisors with due dates when they identify improvement opportunities, such as showing greater empathy towards customer issues. After coaching is completed, agents can acknowledge the feedback in Connect Customer, making sure that they understand next steps for improvement. Past coaching feedback is centrally accessible, making it easier for agents, supervisors, and quality managers to track agent progress over time.
 
 **Note**
 This feature is available as part of Connect Customer performance evaluations.
@@ -82,10 +82,10 @@ For example, if you notice in your [Agent performance evaluations dashboard](age
 1. Open an evaluation and choose **Coach on this evaluation**.
 ![The Coach on this evaluation button on an evaluation.](http://docs.aws.amazon.com/connect/latest/adminguide/images/coaching-coach-on-this-evaluation-button.png)
 
-1. You can add the entire evaluation, a specific section and/or question to a coaching session:
+1. You can add the entire evaluation, a specific section or question to a coaching session:
 ![Adding evaluation items to a coaching session.](http://docs.aws.amazon.com/connect/latest/adminguide/images/coaching-add-evaluation-items.png)
 
-1. You can link the evaluation, its sections and/or questions to an existing coaching session, or create a new session. Items can be linked as strength or growth opportunities.
+1. You can link the evaluation, its sections or questions to an existing coaching session, or create a new session. Items can be linked as strength or growth opportunities.
 ![The dialog for adding a question to a coaching session.](http://docs.aws.amazon.com/connect/latest/adminguide/images/coaching-add-question-to-coaching-dialog.png)
 
 1. After you add an evaluation or its items for coaching, a link will be provided to view the coaching session.

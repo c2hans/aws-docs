@@ -73,7 +73,7 @@ For more information about CloudWatch, see [ https://aws.amazon.com/cloudwatch/]
 
 Amazon CloudWatch Events (CloudWatch Events) delivers a near real-time stream of system events that describe changes in Amazon Web Services (AWS) resources. Using simple rules that you can quickly set up, you can match events and route them to one or more target functions or streams. In AWS ParallelCluster, CloudWatch Events is used for AWS Batch jobs.
 
-For more information about CloudWatch Events, see [https://docs.aws.amazon.com//eventbridge/latest/userguide/eb-cwe-now-eb](https://docs.aws.amazon.com//eventbridge/latest/userguide/eb-cwe-now-eb.html).
+For more information about CloudWatch Events, see [https://docs.aws.amazon.com//eventbridge/latest/userguide/eb-cwe-now-eb](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-cwe-now-eb.html).
 
 ## Amazon CloudWatch Logs
 <a name="amazon-cloudwatch-logs-v3"></a>

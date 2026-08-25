@@ -127,7 +127,7 @@ Follow these steps to configure the automation:
      Starts a query log for the provided `ContactId` in the CloudWatch Logs log group associated with the Connect Customer instance provided in `ConnectInstanceId`. Queries time out after 60 minutes of runtime. If your query times out, reduce the time range being searched. You can view the queries currently in progress as well as your recent query history in the CloudWatch console. For more information see [View running queries or query history](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatchLogs-Insights-Query-History.html).
    + **WaitForQueryCompletion**
 
-     Waits for the CloudWatch Logs query log for the provided `ContactId` to complete. Notice that the query times out after 60 minutes of runtime. If your query times out, reduce the time range being searched. You can view the queries currently in progress as well as your recent query history in the Connect Customer console. For more information see [View running queries or query history](https://docs.aws.amazon.com//AmazonCloudWatch/latest/logs/CloudWatchLogs-Insights-Query-History.html).
+     Waits for the CloudWatch Logs query log for the provided `ContactId` to complete. Notice that the query times out after 60 minutes of runtime. If your query times out, reduce the time range being searched. You can view the queries currently in progress as well as your recent query history in the Connect Customer console. For more information see [View running queries or query history](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatchLogs-Insights-Query-History.html).
    + **UploadContactFlowLog**
 
      Gets the query result and uploads the contact flow log to the Amazon S3 bucket specified in `S3BucketName`.
@@ -145,6 +145,6 @@ Follow these steps to configure the automation:
 
 Systems Manager Automation
 + [Run this Automation (console)](https://console.aws.amazon.com/systems-manager/documents/AWSSupport-CollectAmazonConnectContactFlowLog/description)
-+ [Run an automation](https://docs.aws.amazon.com//systems-manager/latest/userguide/automation-working-executing.html)
-+ [Setting up an Automation](https://docs.aws.amazon.com//systems-manager/latest/userguide/automation-setup.html)
++ [Run an automation](https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-working-executing.html)
++ [Setting up an Automation](https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-setup.html)
 + [Support Automation Workflows landing page](https://aws.amazon.com/premiumsupport/technology/saw/)

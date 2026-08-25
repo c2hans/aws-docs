@@ -39,7 +39,7 @@ If information extraction fails with a runtime error, the failure is displayed s
 ### In the UI (Contact details page)
 <a name="information-extraction-errors-ui"></a>
 
-Failed extractions are displayed with dashed borders, transparent backgrounds, and an error icon. Hovering over a failed extraction shows why it failed.
+Failed extractions are displayed with dashed borders, transparent backgrounds, and an error icon. Pausing on a failed extraction shows why it failed.
 
 ### In the S3 analysis output file
 <a name="information-extraction-errors-s3"></a>

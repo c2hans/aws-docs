@@ -25,8 +25,6 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_lambda-actions-as-permissions).
 
-****
-
 - **   AddEventSource  **
   - **SDK client:** lambda
   - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)
@@ -169,6 +167,11 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
+
+- **   DeleteResourcePolicy  **
+  - **SDK client:** lambda
+  - **IAM action:**  [lambda:DeleteResourcePolicy](#list_lambda-action-DeleteResourcePolicy)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Permissions management, Write
+  - **IAM action:**  [lambda:RemovePermission](#list_lambda-action-RemovePermission)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Permissions management, Write
 
 - **   GetAccountSettings  **
   - **SDK client:** lambda
@@ -314,6 +317,11 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
+
+- **   GetResourcePolicy  **
+  - **SDK client:** lambda
+  - **IAM action:**  [lambda:GetPolicy](#list_lambda-action-GetPolicy)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
+  - **IAM action:**  [lambda:GetResourcePolicy](#list_lambda-action-GetResourcePolicy)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
 
 - **   GetRuntimeManagementConfig  **
   - **SDK client:** lambda
@@ -503,6 +511,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
+
+- **   PutResourcePolicy  **
+  - **SDK client:** lambda
+  - **IAM action:**  [lambda:AddPermission](#list_lambda-action-AddPermission)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Permissions management, Write
+  - **IAM action:**  [lambda:PutResourcePolicy](#list_lambda-action-PutResourcePolicy)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Permissions management, Write
+  - **IAM action:**  [lambda:RemovePermission](#list_lambda-action-RemovePermission)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Permissions management, Write
 
 - **   PutRuntimeManagementConfig  **
   - **SDK client:** lambda
@@ -826,8 +840,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
 
-****
-
 - **   [AddLayerVersionPermission](https://docs.aws.amazon.com/lambda/latest/dg/API_AddLayerVersionPermission.html)  **
   - **Description:** Grants permission to add permissions to the resource-based policy of a version of an AWS Lambda layer
   - **Resource types (\*required):** [layerVersion\*](#list_lambda-resource-layerVersion)
@@ -990,6 +1002,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [function version](#list_lambda-resource-functionversion) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
+- **   [DeleteResourcePolicy](https://docs.aws.amazon.com/lambda/latest/dg/API_DeleteResourcePolicy.html)  **
+  - **Description:** Grants permission to detach a policy from an AWS Lambda resource
+  - **Resource types (\*required):** [function\*](#list_lambda-resource-function)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)<br />[lambda:Principal](#list_lambda-lambda_Principal)
+  - **Access level:** Permissions management, Write
+
 - **   [GetAccountSettings](https://docs.aws.amazon.com/lambda/latest/dg/API_GetAccountSettings.html)  **
   - **Description:** Grants permission to view details about an account's limits and usage in an AWS Region
   - **Resource types (\*required):**
@@ -1138,6 +1156,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Description:** Grants permission to view the provisioned concurrency configuration for an AWS Lambda function's alias or version
   - **Resource types (\*required):** [function alias](#list_lambda-resource-functionalias) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [function version](#list_lambda-resource-functionversion) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)
+  - **Access level:** Read
+
+- **   [GetResourcePolicy](https://docs.aws.amazon.com/lambda/latest/dg/API_GetResourcePolicy.html)  **
+  - **Description:** Grants permission to view a policy for an AWS Lambda resource
+  - **Resource types (\*required):** [function\*](#list_lambda-resource-function)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
 - **   [GetRuntimeManagementConfig](https://docs.aws.amazon.com/lambda/latest/dg/API_GetRuntimeManagementConfig.html)  **
@@ -1342,6 +1366,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [function version](#list_lambda-resource-functionversion) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
+- **   [PutResourcePolicy](https://docs.aws.amazon.com/lambda/latest/dg/API_PutResourcePolicy.html)  **
+  - **Description:** Grants permission to attach a policy to an AWS Lambda resource
+  - **Resource types (\*required):** [function\*](#list_lambda-resource-function)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)<br />[lambda:Principal](#list_lambda-lambda_Principal)
+  - **Access level:** Permissions management, Write
+
 - **   [PutRuntimeManagementConfig](https://docs.aws.amazon.com/lambda/latest/dg/API_PutRuntimeManagementConfig.html)  **
   - **Description:** Grants permission to update the runtime management configuration of an AWS Lambda function
   - **Resource types (\*required):** [function\*](#list_lambda-resource-function)
@@ -1505,8 +1535,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 The following actions are defined by AWS Lambda but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 - **   [ConnectMicrovm](https://docs.aws.amazon.com/lambda/latest/dg/lambda-permissions.html)  **
   - **Description:** Grants permission to connect to a Lambda MicroVM via HTTP (VPC Endpoint only)
   - **Resource types (\*required):**
@@ -1548,8 +1576,6 @@ The following actions are defined by AWS Lambda but are not directly invocable t
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
 
-****
-
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
 |  [capacityProvider](https://docs.aws.amazon.com/lambda/latest/dg/lambda-api-permissions-ref.html)  | arn:${Partition}:lambda:${Region}:${Account}:capacity-provider:${CapacityProviderName} | [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_) |
@@ -1568,8 +1594,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_lambda-policy-keys"></a>
 
 AWS Lambda defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

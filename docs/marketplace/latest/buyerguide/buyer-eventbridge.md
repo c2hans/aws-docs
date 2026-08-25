@@ -9,8 +9,6 @@ As a buyer, you receive an *event* from AWS Marketplace every time a seller crea
 
 This topic provides detailed information about the event listed in the following table.
 
-****
-
 | Action by seller | Event received by buyer | More information |
 | --- | --- | --- |
 | Creates a private offer and makes it available to your AWS account | Private Offer Available | [Event for new private offers](#events-privateofferavailable) |

@@ -12,8 +12,6 @@ RDS for Oracle Database 12c is no longer supported. This information is only use
 
 To find what Oracle Patch Set Updates (PSUs) are applied to Amazon RDS for Oracle Database 12c Release 1 (12.1.0.2), see the following table.
 
-****
-
 |  Date  |  PSU  |
 | --- | --- |
 | 2022 July | [12.1.0.2.v29](#oracle-version-12.1.0.2.v29) |

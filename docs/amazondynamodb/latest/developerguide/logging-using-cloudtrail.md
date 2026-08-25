@@ -90,7 +90,7 @@ The following API actions are logged by default as events in CloudTrail files:
 ### DynamoDB data plane events in CloudTrail
 <a name="ddb-data-plane-events-in-cloudtrail"></a>
 
-To enable logging of the following API actions in CloudTrail files, you'll need to enable logging of data plane API activity in CloudTrail. See [Logging data events for trails](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-data-events-with-cloudtrail.html) for more information.
+To enable logging of the following API actions in CloudTrail files, you must enable logging of data plane API activity in CloudTrail. See [Logging data events for trails](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-data-events-with-cloudtrail.html) for more information.
 
 Data plane events can be filtered by resource type, for granular control over which DynamoDB API calls you want to selectively log and pay for in CloudTrail. For example, by specifying `AWS::DynamoDB::Stream` as a resource type, you can log only calls to the DynamoDB streams APIs. For tables with streams enabled, the resource field in the data plane event contains both `AWS::DynamoDB::Stream` and `AWS::DynamoDB::Table`. If you specify `AWS::DynamoDB::Table` as a resource type, it will log both DynamoDB table and DynamoDB streams events by default. You can add an additional [filter](https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_AdvancedFieldSelector.html) to exclude the streams events, if you don't want the streams events to be logged. For more information, see [DataResource](https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_DataResource.html) in the *AWS CloudTrail API Reference*.
 

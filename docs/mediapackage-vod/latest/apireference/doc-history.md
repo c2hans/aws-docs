@@ -8,8 +8,6 @@ source_url: https://docs.aws.amazon.com/mediapackage-vod/latest/apireference/doc
 The following table describes the documentation for this release of AWS Elemental MediaPackage (MediaPackage).
 + **API version:** latest
 
-****
-
 | Change | Description | Date |
 | --- | --- | --- |
 | New createdAt field | MediaPackage now provides the date and time the VOD asset, packaging configuration, and packaging group were created. | March 8, 2023 |

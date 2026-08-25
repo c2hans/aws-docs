@@ -14,3 +14,4 @@ You can use the AWS Management Console to maintain your AWS Managed Microsoft AD
 + [Rename your AWS Managed Microsoft AD site name](ms_ad_rename_site.md) to improve AWS Managed Microsoft AD ability to find and authenticate your existing Active Directory users in your on-premises directory.
 + [Delete your AWS Managed Microsoft AD](ms_ad_delete.md) when you no longer need it.
 + [Tag your directory](tag_directory.md) to organize and manage your directories using key-value pairs.
++ [Manage DNS conditional forwarders](ms_ad_conditional_forwarders.md) to route DNS queries for a remote domain to the correct DNS servers, which is required to set up a trust relationship with another domain.

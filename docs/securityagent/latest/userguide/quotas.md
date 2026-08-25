@@ -29,7 +29,9 @@ Configuration quotas limit the number of resources and settings you can configur
 | Agent Spaces | Per account per region | 100 | Yes |
 | Integrations | Per account per region | 20 | No |
 | Integrated resources per integration | Per integration | 50 | No |
-| Custom security requirements | Per account per region | 20 | No |
+| Security requirement packs | Per account per region | 20 | No |
+| Security requirements per pack | Per pack | 30 | No |
+| Enabled security requirements | Per account per region | 150 | No |
 | Pentest projects | Per account per region | 1,000 | Yes |
 | Concurrent pentest runs | Per account per region | 5 | Yes |
 | Code review projects | Per account per region | 1,000 | Yes |

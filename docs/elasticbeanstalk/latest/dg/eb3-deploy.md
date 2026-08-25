@@ -27,8 +27,6 @@ You can configure the EB CLI to deploy an artifact from your build process inste
 ## Options
 <a name="eb3-deployoptions"></a>
 
-****
-
 |  Name  |  Description  |
 | --- | --- |
 | `-l` {{version\_label}}<br />or<br />`--label` {{version\_label}} | Specify a label to use for the version that the EB CLI creates. If the label has already been used, the EB CLI redeploys the previous version with that label.<br />Type: String |

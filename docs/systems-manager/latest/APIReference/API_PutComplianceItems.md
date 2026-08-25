@@ -66,7 +66,7 @@ The request accepts the following data in JSON format.
 Specify the compliance type. For example, specify Association (for a State Manager association), Patch, or Custom:`string`.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 100.
-Pattern: `[A-Za-z0-9_\-]\w+|Custom:[a-zA-Z0-9_\-]\w+`
+Pattern: `^([A-Za-z0-9_\-]\w+|Custom:[a-zA-Z0-9_\-]\w+)$`
 Required: Yes
 
  ** [ExecutionSummary](#API_PutComplianceItems_RequestSyntax) **   <a name="systemsmanager-PutComplianceItems-request-ExecutionSummary"></a>

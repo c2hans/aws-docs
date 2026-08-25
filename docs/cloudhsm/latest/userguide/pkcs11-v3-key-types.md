@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/pkcs11-v3-key-
 
 The PKCS \#11 library supports the following key types with AWS CloudHSM Client SDK 3.
 
-****
-
 | Key Type | Description |
 | --- | --- |
 | RSA | Generate 2048-bit to 4096-bit RSA keys, in increments of 256 bits. |

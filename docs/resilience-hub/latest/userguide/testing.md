@@ -19,6 +19,6 @@ You can use the AWS FIS experiments in their default state or customize them bas
   + [Running AWS FIS experiments](test-assessment-report.md#arh-running-aws-fis-experiments)
   + [AWS Fault Injection Service experiment failures/status check](test-failures.md)
 + AWS FIS console
-  + [Managing your AWS FIS experiments](https://docs.aws.amazon.com//fis/latest/userguide/experiments.html)
-  + [Working with the AWS FIS scenario library](https://docs.aws.amazon.com//fis/latest/userguide/scenario-library.html)
-  + [Managing AWS FIS experiment templates](https://docs.aws.amazon.com//fis/latest/userguide/manage-experiment-template.html)
+  + [Managing your AWS FIS experiments](https://docs.aws.amazon.com/fis/latest/userguide/experiments.html)
+  + [Working with the AWS FIS scenario library](https://docs.aws.amazon.com/fis/latest/userguide/scenario-library.html)
+  + [Managing AWS FIS experiment templates](https://docs.aws.amazon.com/fis/latest/userguide/manage-experiment-template.html)

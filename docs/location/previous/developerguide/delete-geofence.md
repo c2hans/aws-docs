@@ -28,7 +28,7 @@ This operation deletes the resource permanently.
 ------
 #### [ API ]
 
-Use the `[BatchDeleteGeofence](https://docs.aws.amazon.com//location/previous/APIReference/API_BatchDeleteGeofence.html)` operation from the Amazon Location Geofences APIs.
+Use the `[BatchDeleteGeofence](https://docs.aws.amazon.com/location/previous/APIReference/API_BatchDeleteGeofence.html)` operation from the Amazon Location Geofences APIs.
 
 The following example is an API request to delete geofences from the geofence collection {{ExampleCollection}}.
 
@@ -41,7 +41,7 @@ Content-type: application/json
 }
 ```
 
-The following is an example success response for `[BatchDeleteGeofence](https://docs.aws.amazon.com//location/previous/APIReference/API_BatchDeleteGeofence.html)`.
+The following is an example success response for `[BatchDeleteGeofence](https://docs.aws.amazon.com/location/previous/APIReference/API_BatchDeleteGeofence.html)`.
 
 ```
 HTTP/1.1 200

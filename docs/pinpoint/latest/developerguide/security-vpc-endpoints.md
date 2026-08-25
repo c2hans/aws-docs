@@ -24,7 +24,7 @@ Amazon Pinpoint supports the following service names:
 
 If you turn on private DNS for an interface endpoint, you can make API requests to Amazon Pinpoint using the default DNS name for the AWS Region, for example, `com.amazonaws.{{us-east-1}}.pinpoint`. For more information, see [DNS hostnames](https://docs.aws.amazon.com/vpc/latest/privatelink/privatelink-access-aws-services.html#interface-endpoint-dns-hostnames) in the *AWS PrivateLink Guide*.
 
-For a list of all the Regions and endpoints where Amazon Pinpoint is currently available, see [AWS service endpoints](https://docs.aws.amazon.com//general/latest/gr/pinpoint.html) in the *Amazon Web Services General Reference*.
+For a list of all the Regions and endpoints where Amazon Pinpoint is currently available, see [AWS service endpoints](https://docs.aws.amazon.com/general/latest/gr/pinpoint.html) in the *Amazon Web Services General Reference*.
 
 ## Creating a VPC endpoint policy
 <a name="security-vpc-endpoints-policy"></a>

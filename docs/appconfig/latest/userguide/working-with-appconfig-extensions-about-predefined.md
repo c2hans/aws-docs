@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/appconfig/latest/userguide/working-with-
 
 AWS AppConfig includes the following AWS authored extensions. These extensions can help you integrate the AWS AppConfig workflow with other services. You can use these extensions in the AWS Management Console or by calling extension [API actions](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_Operations.html) directly from the AWS CLI, AWS Tools for PowerShell, or the SDK.
 
-****
-
 | Extension | Description |
 | --- | --- |
 | [AWS AppConfig deployment events to EventBridge](https://docs.aws.amazon.com/appconfig/latest/userguide/working-with-appconfig-extensions-about-predefined-notification-eventbridge.html) | This extension sends events to the EventBridge default event bus when a configuration is deployed.  |

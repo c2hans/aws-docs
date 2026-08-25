@@ -28,8 +28,6 @@ In AWS SDK for Java 1.x, DynamoDBMapper supports reading of empty String attribu
 
 DynamoDB supports the Java [Set](http://docs.oracle.com/javase/6/docs/api/java/util/Set.html), [List](http://docs.oracle.com/javase/6/docs/api/java/util/List.html), and [Map](http://docs.oracle.com/javase/6/docs/api/java/util/Map.html) collection types. The following table summarizes how these Java types map to the DynamoDB types.
 
-****
-
 | Java type | DynamoDB type |
 | --- | --- |
 | All number types | `N` (number type) |

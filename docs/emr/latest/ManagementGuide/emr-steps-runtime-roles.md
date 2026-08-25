@@ -77,7 +77,7 @@ Amazon EMR clusters use the Amazon EC2 instance profile role to assume the runti
 ### Step 3: Set up a trust policy
 <a name="configure-trust-policy"></a>
 
-For each IAM role that you plan to use as a runtime role, set the following trust policy, replacing `EMR_EC2_DefaultRole` with your instance profile role. To modify the trust policy of an IAM role, see [Modifying a role trust policy](https://docs.aws.amazon.com//IAM/latest/UserGuide/roles-managingrole-editing-console.html).
+For each IAM role that you plan to use as a runtime role, set the following trust policy, replacing `EMR_EC2_DefaultRole` with your instance profile role. To modify the trust policy of an IAM role, see [Modifying a role trust policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/roles-managingrole-editing-console.html).
 
 ```
 {

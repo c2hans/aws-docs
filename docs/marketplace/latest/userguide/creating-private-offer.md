@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/creating-pr
 As an AWS Marketplace seller, you can create and manage private offers. Private offers are negotiated terms used to purchase a product from AWS Marketplace. This can involve a custom pricing plan, end user license agreement (EULA), or custom solutions. The following sections describe how to create and manage private offers.
 
 **Note**
-To be eligible to issue private offers, you must have at least one active public listing. If you have a public listing, and you don't have access to the Private Offers tab, see [IAM Permissions](https://docs.aws.amazon.com//marketplace/latest/userguide/detailed-management-portal-permissions.html) or [contact AWS Marketplace support](https://aws.amazon.com//marketplace/management/contact-us).
+To be eligible to issue private offers, you must have at least one active public listing. If you have a public listing, and you don't have access to the Private Offers tab, see [IAM Permissions](https://docs.aws.amazon.com/marketplace/latest/userguide/detailed-management-portal-permissions.html) or [contact AWS Marketplace support](https://aws.amazon.com/marketplace/management/contact-us).
 
 **Topics**
 + [Starting a new private offer](#starting-new-private-offer)

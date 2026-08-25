@@ -44,7 +44,7 @@ Valid Values: `CONTINUOUS | SNAPSHOT`
 Required: No
 
  ** SelectionWindowDays **   <a name="Backup-Type-RestoreTestingRecoveryPointSelection-SelectionWindowDays"></a>
-Accepted values are integers from 1 to 365.
+Accepted values are integers from 1 to 365. If not included, the value defaults to 30. The selection window is calculated from the actual job execution time, not the plan's scheduled start time.
 Type: Integer
 Required: No
 

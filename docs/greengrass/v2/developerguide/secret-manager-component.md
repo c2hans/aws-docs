@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/secret-mana
 
 The secret manager component (`aws.greengrass.SecretManager`) deploys secrets from AWS Secrets Manager to Greengrass core devices. Use this component to securely use credentials, such as passwords, in custom components on your Greengrass core devices. For more information about Secrets Manager, see [What is AWS Secrets Manager?](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html) in the *AWS Secrets Manager User Guide*.
 
-To access this component's secrets in your custom Greengrass components, use the [GetSecretValue](ipc-secret-manager.md#ipc-operation-getsecretvalue) operation in the AWS IoT Device SDK. For more information, see [Use the AWS IoT Device SDK to communicate with the Greengrass nucleus, other components, and AWS IoT CoreCommunicate with the Greengrass nucleus, other components, and AWS IoT Core](interprocess-communication.md) and [Retrieve secret values](ipc-secret-manager.md).
+To access this component's secrets in your custom Greengrass components, use the [GetSecretValue](ipc-secret-manager.md#ipc-operation-getsecretvalue) operation in the AWS IoT Device SDK. For more information, see [Use the AWS IoT Device SDK to communicate with the Greengrass nucleus, other components, and AWS IoT Core](interprocess-communication.md) and [Retrieve secret values](ipc-secret-manager.md).
 
 This component encrypts secrets on the core device to keep your credentials and passwords secure until you need to use them. It uses the core device's private key to encrypt and decrypt secrets.
 
@@ -98,7 +98,25 @@ This component must be able to perform outbound requests to the following endpoi
 ## Dependencies
 <a name="secret-manager-component-dependencies"></a>
 
-When you deploy a component, AWS IoT Greengrass also deploys compatible versions of its dependencies. This means that you must meet the requirements for the component and all of its dependencies to successfully deploy the component. This section lists the dependencies for the [released versions](#secret-manager-component-changelog) of this component and the semantic version constraints that define the component versions for each dependency. You can also view the dependencies for each version of the component in the [AWS IoT Greengrass console](https://console.aws.amazon.com//greengrass). On the component details page, look for the **Dependencies** list.
+When you deploy a component, AWS IoT Greengrass also deploys compatible versions of its dependencies. This means that you must meet the requirements for the component and all of its dependencies to successfully deploy the component. This section lists the dependencies for the [released versions](#secret-manager-component-changelog) of this component and the semantic version constraints that define the component versions for each dependency. You can also view the dependencies for each version of the component in the [AWS IoT Greengrass console](https://console.aws.amazon.com/greengrass). On the component details page, look for the **Dependencies** list.
+
+------
+#### [ 2.2.9 – 2.2.10 ]
+
+The following table lists the dependencies for versions 2.2.9 and 2.2.10 of this component.
+
+| Dependency | Compatible versions | Dependency type |
+| --- | --- | --- |
+| [Greengrass nucleus](greengrass-nucleus-component.md) | >=2.5.0 <2.19.0 | Soft |
+
+------
+#### [ 2.2.8 ]
+
+The following table lists the dependencies for version 2.2.8 of this component.
+
+| Dependency | Compatible versions | Dependency type |
+| --- | --- | --- |
+| [Greengrass nucleus](greengrass-nucleus-component.md) | >=2.5.0 <2.18.0 | Soft |
 
 ------
 #### [ 2.2.7 ]
@@ -347,6 +365,7 @@ The following table describes the changes in each version of the component.
 
 |  **Version**  |  **Changes**  |
 | --- | --- |
+| 2.2.10 |  **Bug fixes and improvements**<br />   Fixes an issue where a runtime error occurs when you deploy secret manager with the [Client device auth](client-device-auth-component.md) component.     |
 | 2.2.9 |  **Bug fixes and improvements**<br />   General bug fixes and improvements.     |
 | 2.2.8 | Updates the component version for the Greengrass nucleus version 2.17.0 release. |
 | 2.2.7 | Version updated for Greengrass nucleus version 2.16.0 release. |

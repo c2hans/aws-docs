@@ -14,8 +14,6 @@ Create an IAM OpenID Connect provider for the Amazon Elastic Kubernetes Service 
 ## Change Type Details
 <a name="ct-30ecvfi3tq4k3-DAIc-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-30ecvfi3tq4k3 |

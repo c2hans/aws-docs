@@ -100,7 +100,7 @@ To create a record of type A, perform the following steps.
 1. In the **Configure records** page, choose **Define simple record**.
 
 1. In the **Define simple record** page:
-   + For **Record name**, enter the alias of your AWS account number. You get this value when onboarding your gateway or by using the [`GetServiceEndpoint`](https://docs.aws.amazon.com//iotwireless/latest/apireference/API_GetServiceEndpoint.html) REST API.
+   + For **Record name**, enter the alias of your AWS account number. You get this value when onboarding your gateway or by using the [`GetServiceEndpoint`](https://docs.aws.amazon.com/iotwireless/latest/apireference/API_GetServiceEndpoint.html) REST API.
    + For **Record type**, keep the value as `A - Routes traffic to an IPv4 address and some AWS resources`.
    + For **Value/Route traffic to**, choose **Alias to VPC endpoint**. Then choose your **Region** and then choose the endpoint that you created previously, as described in [Create an Amazon VPC interface endpoint](#lns-create-vpc-endpoint) from the list of endpoints displayed.
 
@@ -138,7 +138,7 @@ You must make sure that the VPC and subnet that you created supports routing of 
 1. In the **Configure records** page, choose **Define simple record**.
 
 1. In the **Define simple record** page:
-   + For **Record name**, enter the alias of your AWS account number. You get this value when onboarding your gateway or by using the [`GetServiceEndpoint`](https://docs.aws.amazon.com//iotwireless/latest/apireference/API_GetServiceEndpoint.html) REST API.
+   + For **Record name**, enter the alias of your AWS account number. You get this value when onboarding your gateway or by using the [`GetServiceEndpoint`](https://docs.aws.amazon.com/iotwireless/latest/apireference/API_GetServiceEndpoint.html) REST API.
    + For **Record type**, keep the value as `AAAA - Routes traffic to an IPv6 address and some AWS resources`.
    + For **Value/Route traffic to**, choose **IP address or another value, depending on the record type** and then enter the IP address that you obtained using the `nslookup` command.
 

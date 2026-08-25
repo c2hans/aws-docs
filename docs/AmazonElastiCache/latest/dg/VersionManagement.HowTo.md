@@ -21,8 +21,6 @@ You can also cross upgrade from Redis OSS to Valkey. For more information on cro
 
 **Valkey and Redis OSS**
 
-****
-
 | Caches | Replication groups |
 | --- | --- |
 | [Using the ElastiCache AWS Management Console](Clusters.Modify.md#Clusters.Modify.CON) | [Using the AWS Management Console](Replication.Modify.md#Replication.Modify.CON) |
@@ -151,8 +149,6 @@ Upgrading directly from Redis OSS 4 or lower to Valkey may include a longer fail
 <a name="resolving-blocked-engine-upgrades"></a>
 
 As shown in the following table, your Valkey or Redis OSS engine upgrade operation is blocked if you have a pending scale up operation.
-
-****
 
 - **Scale up**
   - Immediate engine upgrade

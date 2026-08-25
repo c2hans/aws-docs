@@ -9,8 +9,6 @@ Amazon Q Business is no longer open to new customers. For capabilities similar t
 
 The following table gives an overview of the Gmail connector and its supported features.
 
-****
-
 - ****Security****
   - **Feature:** Authentication type / **Latest Connector:** Google Service Account / **Legacy Connector:** Google Service Account
   - **Feature:** Authentication credentials / **Latest Connector:**  +  Google service account <br />+  Admin account email <br />+  Client email <br />+  Private key   / **Legacy Connector:**  +  Google service account <br />+  Admin account email <br />+  Client email <br />+  Private key

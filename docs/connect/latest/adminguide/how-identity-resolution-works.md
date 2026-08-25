@@ -52,7 +52,7 @@ For example, suppose a profile is created with FirstName “John” manually by 
   + For example, when multiple attributes are specified in the criteria, such as `email address` and `phone number`, then all similar profiles in a match group that have the exact same value of `email address` and `phone number` are merged.
   + If one or more of the similar profiles in a match group have a different value or missing value for one or more of the attributes in a criteria, the similar profiles are merged.
 
-    For example, one match group may be five similar profiles out of which three profiles are consolidated, because these three profiles meet the criteria. The other two profiles are not merged, because they do not meet the criteria.
+    For example, one match group might be five similar profiles out of which three profiles are consolidated, because these three profiles meet the criteria. The other two profiles are not merged, because they do not meet the criteria.
 + **Multiple criteria are evaluated in the order of priority starting with Criteria 1**.
   +  The sequence in which consolidation criteria are applied. It starts with Criteria 1 as the highest priority to Criteria 10 as the lowest priority.
   + After the Identity Resolution Job applies one criteria, it applies the next criteria to the consolidated profiles and the remaining similar profiles in a match group.
@@ -62,7 +62,7 @@ For example, suppose a profile is created with FirstName “John” manually by 
   + All criteria is applied in the sequence in which you listed them. It doesn't matter whether the criteria fails or succeeds to consolidate similar profiles in a match group.
 + **By default, profile conflicts are managed by recency**.
   + When two or more similar profiles in a match group meet a consolidation criteria, the resulting consolidated profile is created by comparing each value of the profile attributes constituent similar profiles.
-  + Each attribute may have an exact match in value. In this case, any value may be selected for that attribute.
+  + Each attribute might have an exact match in value. In this case, any value might be selected for that attribute.
   + If there is a conflict between values of two or more constituent similar profiles, the most recently updated attribute is chosen.
 
     For example, if Jane Doe has three different values in the `Address` attribute of the constituent similar profiles, Identity Resolution picks the most recent addressed to create the unified profile.

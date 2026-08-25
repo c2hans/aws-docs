@@ -51,7 +51,7 @@ Before using the Slurm REST API, ensure you have:
      -H "Authorization: Bearer {{<jwt>}}" \
      -H "Content-Type: application/json" \
      -d '{{<job-json>}}' \
-     https://{{<privateIpAddress>}}:6820/slurm/v0.0.43/job/submit
+     http://{{<privateIpAddress>}}:6820/slurm/v0.0.43/job/submit
    ```
 
 1. Note the job ID returned in the response for monitoring purposes.
@@ -62,14 +62,14 @@ Before using the Slurm REST API, ensure you have:
 
    ```
    curl -X GET -H "Authorization: Bearer {{<jwt>}}" \
-       https://{{<privateIpAddress>}}:6820/slurm/v0.0.43/job/{{<job-id>}}
+       http://{{<privateIpAddress>}}:6820/slurm/v0.0.43/job/{{<job-id>}}
    ```
 
 1. List all jobs for the authenticated user:
 
    ```
    curl -X GET -H "Authorization: Bearer {{<jwt>}}" \
-       https://{{<privateIpAddress>}}:6820/slurm/v0.0.43/jobs
+       http://{{<privateIpAddress>}}:6820/slurm/v0.0.43/jobs
    ```
 
 **To cancel a job**
@@ -77,5 +77,5 @@ Before using the Slurm REST API, ensure you have:
 
   ```
   curl -X DELETE -H "Authorization: Bearer {{<jwt>}}" \
-      https://{{<privateIpAddress>}}:6820/slurm/v0.0.43/job/{{<job-id>}}
+      http://{{<privateIpAddress>}}:6820/slurm/v0.0.43/job/{{<job-id>}}
   ```

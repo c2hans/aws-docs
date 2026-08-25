@@ -98,7 +98,7 @@ Your signaling channel name must be unique for the current account and region. Y
      + Select **Automatically determine ingestion mode**.
      + Make sure **Automatically determine ingestion mode** isn't selected and set the manual override to **OFF**.
 **Note**
-**Automatically determine ingestion mode** has the application call the [DescribeMediaStorageConfiguration](https://docs.aws.amazon.com//kinesisvideostreams/latest/dg/API_DescribeMediaStorageConfiguration.html) API to determine which mode to run in (Peer-to-peer or WebRTC ingestion). This additional API call adds a small amount to the startup time.
+**Automatically determine ingestion mode** has the application call the [DescribeMediaStorageConfiguration](https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/API_DescribeMediaStorageConfiguration.html) API to determine which mode to run in (Peer-to-peer or WebRTC ingestion). This additional API call adds a small amount to the startup time.
 If you know ahead of time which mode this signaling channel is running in, use the manual override to skip this API call.
    + ICE candidate generation. Leave `STUN`/`TURN` selected and leave `Trickle ICE` enabled.
 
@@ -106,11 +106,11 @@ If you know ahead of time which mode this signaling channel is running in, use t
 
    Allow access to your camera and/or microphone, if needed.
 
-1. Open the [Kinesis Video Streams console](https://console.aws.amazon.com//kinesisvideo/home/) in the AWS Management Console.
+1. Open the [Kinesis Video Streams console](https://console.aws.amazon.com/kinesisvideo/home/) in the AWS Management Console.
 
    Make sure the correct region is selected.
 
-1. In the left navigation, select **[signaling channels](https://console.aws.amazon.com//kinesisvideo/home#/signalingChannels/)**.
+1. In the left navigation, select **[signaling channels](https://console.aws.amazon.com/kinesisvideo/home#/signalingChannels/)**.
 
    Select the name of the signaling channel above. Use the search bar, if needed.
 
@@ -136,7 +136,7 @@ Your signaling channel name must be unique for the current account and region. Y
      + Select **Automatically determine ingestion mode**.
      + Make sure **Automatically determine ingestion mode** isn't selected and set the manual override to **OFF**.
 **Note**
-**Automatically determine ingestion mode** has the application call the [DescribeMediaStorageConfiguration](https://docs.aws.amazon.com//kinesisvideostreams/latest/dg/API_DescribeMediaStorageConfiguration.html) API to determine which mode to run in (Peer-to-peer or WebRTC ingestion). This additional API call adds a small amount to the startup time.
+**Automatically determine ingestion mode** has the application call the [DescribeMediaStorageConfiguration](https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/API_DescribeMediaStorageConfiguration.html) API to determine which mode to run in (Peer-to-peer or WebRTC ingestion). This additional API call adds a small amount to the startup time.
 If you know ahead of time which mode this signaling channel is running in, use the manual override to skip this API call.
    + ICE candidate generation. Leave `STUN`/`TURN` selected and leave `Trickle ICE` enabled.
 
@@ -161,7 +161,7 @@ If you know ahead of time which mode this signaling channel is running in, use t
 
    The storage session handles mixing the media received from master and viewer participants and sending it to the appropriate destinations.
 
-1. You can view and consume ingested media through [Kinesis Video Streams playback](https://docs.aws.amazon.com//kinesisvideostreams/latest/dg/how-playback.html).
+1. You can view and consume ingested media through [Kinesis Video Streams playback](https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/how-playback.html).
 
 ## Edit the sample application
 <a name="run-sdk-js"></a>

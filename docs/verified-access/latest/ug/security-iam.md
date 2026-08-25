@@ -21,7 +21,7 @@ AWS Identity and Access Management (IAM) is an AWS service that helps an adminis
 <a name="security_iam_audience"></a>
 
 How you use AWS Identity and Access Management (IAM) differs based on your role:
-+ **Service user** - request permissions from your administrator if you cannot access features (see [Troubleshooting Verified Access identity and accessTroubleshooting](security_iam_troubleshoot.md))
++ **Service user** - request permissions from your administrator if you cannot access features (see [Troubleshooting Verified Access identity and access](security_iam_troubleshoot.md))
 + **Service administrator** - determine user access and submit permission requests (see [How Verified Access works with IAM](security_iam_service-with-iam.md))
 + **IAM administrator** - write policies to manage access (see [Identity-based policy examples for Verified Access](security_iam_id-based-policy-examples.md))
 

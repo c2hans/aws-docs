@@ -29,8 +29,6 @@ Amazon Q has no API operations that can be used in the `Actions` element of an I
 
 The following actions are defined by Amazon Q but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
-****
-
 - **   [AssociateConnectorResource](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/security_iam_manage-access-with-policies.html)  **
   - **Description:** Grants permission to associate an AWS resource with an Amazon Q connector
   - **Resource types (\*required):**
@@ -360,8 +358,6 @@ The following actions are defined by Amazon Q but are not directly invocable thr
 
 The following resource types are defined by this service and can be used in the `Resource` element of IAM permission policy statements.
 
-****
-
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
 |  [plugin](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/plugins.html)  | arn:${Partition}:qdeveloper:${Region}:${Account}:plugin/${Identifier} | [aws:ResourceTag/${TagKey}](#list_q-aws_ResourceTag___TagKey_) |
@@ -371,8 +367,6 @@ The following resource types are defined by this service and can be used in the 
 <a name="list_q-policy-keys"></a>
 
 Amazon Q defines the following condition keys that can be used in the `Condition` element of an IAM policy.
-
-****
 
 | Condition keys | Description | Type |
 | --- | --- | --- |

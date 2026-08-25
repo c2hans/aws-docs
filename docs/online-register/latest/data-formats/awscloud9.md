@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsc
 
 AWS Cloud9 provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="cloud9-CreateEnvironmentToken"></a>[CreateEnvironmentToken](https://docs.aws.amazon.com/cloud9/latest/user-guide/security-iam.html#auth-and-access-control-ref-matrix) | Create an authentication token that allows a connection between the AWS Cloud9 IDE and the user's environment | Read |

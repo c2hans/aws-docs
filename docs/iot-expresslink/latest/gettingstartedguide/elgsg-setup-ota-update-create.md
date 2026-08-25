@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/iot-expresslink/latest/gettingstartedgui
 # Create a firmware update job in AWS IoT
 <a name="elgsg-setup-ota-update-create"></a>
 
-1. Open the [AWS IoT console](https://console.aws.amazon.com//iot/home). Choose **Manage** then choose **Jobs**. Choose **Create job**, **Create FreeRTOS OTA Update Job**, then choose **Next**.
+1. Open the [AWS IoT console](https://console.aws.amazon.com/iot/home). Choose **Manage** then choose **Jobs**. Choose **Create job**, **Create FreeRTOS OTA Update Job**, then choose **Next**.
 
 1. Enter a job name which is unique within your AWS account. Enter an optional description. Choose **Next**.
 

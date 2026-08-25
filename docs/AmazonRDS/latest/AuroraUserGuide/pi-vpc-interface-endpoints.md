@@ -23,7 +23,7 @@ By default, full access to Performance Insights is allowed through the interface
 ## Availability
 <a name="rds-and-vpc-interface-endpoints-availability"></a>
 
-Performance Insights API currently supports VPC endpoints in AWS Regions that support Performance Insights. For information about Performance Insights availability, see [Supported Regions and Aurora DB engines for Performance Insights](Concepts.Aurora_Fea_Regions_DB-eng.Feature.PerfInsights.md).
+Performance Insights API currently supports VPC endpoints in AWS Regions that support Performance Insights. For information about Performance Insights availability, see [Supported Regions and Aurora DB engines for Database Insights](Concepts.Aurora_Fea_Regions_DB-eng.Feature.PerfInsights.md).
 
 ## Create an interface endpoint for Performance Insights
 <a name="vpc-endpoint-create"></a>
@@ -56,9 +56,9 @@ The following is an example of a custom endpoint policy. When you attach this po
          "Principal":"*",
          "Effect":"Allow",
          "Action":[
-            "rds:CreatePerformanceAnalysisReport",
-            "rds:DeletePerformanceAnalysisReport",
-            "rds:GetPerformanceAnalysisReport"
+            "pi:CreatePerformanceAnalysisReport",
+            "pi:DeletePerformanceAnalysisReport",
+            "pi:GetPerformanceAnalysisReport"
          ],
          "Resource":"*"
       }

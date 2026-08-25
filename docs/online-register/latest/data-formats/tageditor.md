@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/tage
 
 Tag Editor provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="resource-explorer-ListResourceTypes"></a>[ListResourceTypes](https://docs.aws.amazon.com/ARG/latest/userguide/gettingstarted-prereqs.html#rg-permissions-te) | Retrieve the resource types currently supported by Tag Editor | List |

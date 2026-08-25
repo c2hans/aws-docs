@@ -9,8 +9,6 @@ The content in an MP4 source always consists of one video track, one or more aud
 
 Obtain identifying information from the content provider.
 
-****
-
 |  Asset  |  Details  | Information to obtain |
 | --- | --- | --- |
 | Video | You don't need identifying information. MediaLive always extracts the single video asset. | None |

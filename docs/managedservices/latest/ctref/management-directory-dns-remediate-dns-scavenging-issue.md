@@ -14,8 +14,6 @@ Remediates DNS scavenging issues for Windows failover clusters by updating permi
 ## Change Type Details
 <a name="ct-3k67klld7cimj-MDDr-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-3k67klld7cimj |

@@ -9,7 +9,7 @@ This section explains how to create an IAM policy and attach it to the execution
 
 1. Download the [IAM policy example](https://github.com/aws-samples/awsome-distributed-training/blob/main/1.architectures/5.sagemaker-hyperpod/1.AmazonSageMakerClustersExecutionRolePolicy.json) to your machine from the GitHub repository.
 
-1. Create an IAM policy with the downloaded example, using the [create-policy](https://docs.aws.amazon.com//cli/latest/reference/iam/create-policy.html) CLI command.
+1. Create an IAM policy with the downloaded example, using the [create-policy](https://docs.aws.amazon.com/cli/latest/reference/iam/create-policy.html) CLI command.
 
    ```
    aws --region {{us-east-1}} iam create-policy \
@@ -36,7 +36,7 @@ This section explains how to create an IAM policy and attach it to the execution
    }
    ```
 
-1. Attach the policy `AmazonSagemakerExecutionPolicy` to the Slurm execution role you created in [Provision additional resources to support multiple controller nodes](sagemaker-hyperpod-multihead-slurm-cfn.md#sagemaker-hyperpod-multihead-slurm-cfn-multihead), using the [attach-role-policy](https://docs.aws.amazon.com//cli/latest/reference/iam/attach-role-policy.html) CLI command.
+1. Attach the policy `AmazonSagemakerExecutionPolicy` to the Slurm execution role you created in [Provision additional resources to support multiple controller nodes](sagemaker-hyperpod-multihead-slurm-cfn.md#sagemaker-hyperpod-multihead-slurm-cfn-multihead), using the [attach-role-policy](https://docs.aws.amazon.com/cli/latest/reference/iam/attach-role-policy.html) CLI command.
 
    ```
    aws --region {{us-east-1}} iam attach-role-policy \

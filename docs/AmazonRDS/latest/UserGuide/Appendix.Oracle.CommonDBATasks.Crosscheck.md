@@ -18,8 +18,6 @@ For more information, see [Common parameters for RMAN procedures](Appendix.Oracl
 
 This procedure also uses the following additional parameter.
 
-****
-
 | Parameter name | Data type | Valid values | Default | Required | Description |
 | --- | --- | --- | --- | --- | --- |
 | `p_delete_expired` | boolean | `TRUE`, `FALSE` | `TRUE` | No | When `TRUE`, delete expired archived redo log records from the control file.<br />When `FALSE`, retain the expired archived redo log records in the control file.  |

@@ -16,6 +16,7 @@ This guide fits into a larger context of AWS multi-Region deployments, as covere
 + [Key facts about MREC](#bp-global-table-design-MREC-facts)
 + [Key facts about MRSC](#bp-global-table-design-MRSC-facts)
 + [MREC DynamoDB global table use cases](#bp-global-table-design.prescriptive-guidance.usecases)
++ [Key facts about multi-account global tables](#bp-global-table-design-multi-account-facts)
 + [Write modes with DynamoDB global tables](bp-global-table-design.prescriptive-guidance.writemodes.md)
 + [Routing strategies in DynamoDB](bp-global-table-design.prescriptive-guidance.request-routing.md)
 + [Evacuation processes](bp-global-table-design.prescriptive-guidance.evacuation.md)
@@ -29,18 +30,18 @@ This guide fits into a larger context of AWS multi-Region deployments, as covere
 + DynamoDB (without global tables) is a Regional service, which means that it is highly available and intrinsically resilient to failures of infrastructure, including the failure of an entire Availability Zone. A single-Region DynamoDB table is designed for 99.99% availability. For more information, see the [DynamoDB service-level agreement](https://aws.amazon.com/dynamodb/sla/) (SLA).
 + A DynamoDB global table replicates its data between two or more Regions. A multi-Region DynamoDB table is designed for 99.999% availability. With proper planning, global tables can help create an architecture that is resilient to Regional failures.
 + DynamoDB doesn’t have a global endpoint. All requests are made to a Regional endpoint that accesses the global table instance that’s local to that Region.
-+ Calls to DynamoDB should not go across Regions. The best practice is for an application that is homed to one Region to directly access only the local DynamoDB endpoint for its Region. If problems are detected within a Region (in the DynamoDB layer or in the surrounding stack), end user traffic should be routed to a different application endpoint that’s hosted in a different Region. Global tables ensure that the application homed in every Region has access to the same data.
++ Calls to DynamoDB should not go across Regions. The best practice is for an application that is homed to one Region to directly access only the local DynamoDB endpoint for its Region. If problems are detected within a Region (in the DynamoDB layer or in the surrounding stack), end user traffic should be routed to a different application endpoint that’s hosted in a different Region. Global tables make sure that the application homed in every Region has access to the same data.
 
 ### Consistency modes
 <a name="bp-global-table-design-prescriptive-guidance-consistency"></a>
 
 When you create a global table, you configure its consistency mode. Global tables support two consistency modes: multi-Region eventual consistency (MREC) and multi-Region strong consistency (MRSC) which was introduced in June 2025.
 
-If you don't specify a consistency mode when you create a global table, the global table defaults to MREC. A global table can't contain replicas that are configured with different consistency modes. You can't change a global table's consistency mode after its creation.
+If you don't specify a consistency mode when you create a global table, the global table defaults to MREC. A global table can't contain replicas that are configured with different consistency modes. You can't change a global table's consistency mode after its creation. Multi-account global tables support MREC only.
 
 ## Key facts about MREC
 <a name="bp-global-table-design-MREC-facts"></a>
-+ Global tables that use MREC also employ an active-active replication model. From the perspective of DynamoDB, the table in each Region has equal standing to accept read and write requests. After receiving a write request, the local replica table replicates the write operation to other participating remote Regions in the background.
++ Global tables that use MREC employ an active-active replication model. From the perspective of DynamoDB, the table in each Region has equal standing to accept read and write requests. After receiving a write request, the local replica table replicates the write operation to other participating remote Regions in the background.
 + Items are replicated individually. Items that are updated within a single transaction might not be replicated together.
 + Each table partition in the source Region replicates its write operations in parallel with every other partition. The sequence of write operations within a remote Region might not match the sequence of write operations that happened within the source Region. For more information about table partitions, see the blog post [Scaling DynamoDB: How partitions, hot keys, and split for heat impact performance](https://aws.amazon.com/blogs/database/part-3-scaling-dynamodb-how-partitions-hot-keys-and-split-for-heat-impact-performance/).
 + A newly written item is usually propagated to all replica tables within a second. Nearby Regions tend to propagate faster.
@@ -89,13 +90,31 @@ MREC and MRSC global tables both provide this benefit:
 
 If your goal is resiliency and disaster recovery, MRSC tables have higher write latencies and higher strongly consistent read latencies, but support an RPO of zero. MREC global tables support an RPO equal to the replication delay between replicas, usually a few seconds depending on the replica Regions.
 
+## Key facts about multi-account global tables
+<a name="bp-global-table-design-multi-account-facts"></a>
+
+With DynamoDB global tables, you can replicate data between tables in different AWS accounts. You can use multi-account global tables when security or governance controls require isolating workload Regions into separate AWS accounts. Accounts are a hard boundary, and separating a workload across multiple accounts reduces potential impact in account compromise scenarios. Your account can replicate data only to and from replicas in other accounts. You cannot delete those replicas or modify their point-in-time recovery (PITR) or backup settings. Therefore, if credentials in one account are compromised, only that account's replica of the data is affected.
+
+Accounts also provide a hard boundary for cost allocation. Each account pays only for the resources and requests used by its own replica—reads, writes, storage, and data transfer. DynamoDB global tables don't charge for replication data transfer between Regions. If a different team uses the replica, a separate account provides clearer cost separation than tags alone.
++ Multi-account global tables support only MREC.
++ Conflict resolution uses the same last-writer-wins mechanism as same-account MREC global tables.
++ Every replica in a multi-account global table **must** be in a different AWS account **and** Region. DynamoDB doesn't support same-Region replication.
++ Because every replica must have a unique AWS account, a table must be single-Region before you add the first cross-account replica. An existing single-account global table must delete its replicas before becoming a multi-account global table.
++ All replicas in the replication group must have a resource-based policy that allows the DynamoDB replication service principal (`replication.dynamodb.amazonaws.com`) to read and write data between replicas. Add this policy to the source replica before adding a new replica. You can use the DynamoDB console, the , an AWS SDK, or an infrastructure-as-code tool. For an example resource policy, see [Setting up multi-account global tables](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/V2globaltables_MA.tutorial.html).
++ DynamoDB doesn't replicate point-in-time recovery (PITR) settings. For full resiliency in all accounts, enable PITR on every replica. This provides a recovery path if one account is compromised and malicious writes or deletes replicate to other accounts.
++ If the source replica is encrypted with an [AWS KMS key](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#customer-cmk), you must update the key policy to allow the DynamoDB replication service principal (`replication.dynamodb.amazonaws.com`) permission to `kms:Decrypt`, `kms:ReEncrypt*`, `kms:GenerateDataKey*`, and `kms:DescribeKey`. You don't need these permissions when you use an AWS owned key. Multi-account global tables don't support AWS managed keys.
++ To create a replica from the console, initiate the action in the destination account and destination Region.
++ Encryption key management modes don't need to match between replicas.
++ You can create replicas with AWS owned encryption keys through the console. Use the or an AWS SDK if you need to create a replica with a customer managed key.
++ You cannot delete the source replica for the first 24 hours after creating a multi-account global table. Otherwise, you can delete your replica from the replication group or change your replica's non-replicated settings at any time. You cannot, however, delete or modify replicas in other accounts.
+
 ## Conclusion and resources
 <a name="bp-global-table-design.prescriptive-guidance-resources-conclusion"></a>
 
 DynamoDB global tables have very few controls but still require careful consideration. You must determine your write mode, routing model, and evacuation processes. You must instrument your application across every Region and be ready to adjust your routing or perform an evacuation to maintain global health. The reward is having a globally distributed dataset with low-latency read and write operations that is designed for 99.999% availability.
 
 For more information about DynamoDB global tables, see the following resources:
-+ [DynamoDB documentation](https://docs.aws.amazon.com/dynamodb/)
++ [Global tables - multi-active, multi-Region replication](GlobalTables.md)
 + [Amazon Application Recovery Controller](https://aws.amazon.com/application-recovery-controller/)
 + [Readiness check in ARC](https://docs.aws.amazon.com/r53recovery/latest/dg/recovery-readiness.html) (AWS documentation)
 + [Route 53 routing policies](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html)

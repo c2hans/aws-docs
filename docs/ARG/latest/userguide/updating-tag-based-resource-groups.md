@@ -16,7 +16,7 @@ Update a tag-based group by changing the resource types or tags in the query on 
 
 1. In the navigation pane, under **[Saved Resource Groups](https://console.aws.amazon.com/resource-groups/groups)**, choose the name of the group, and then choose **Edit**.
 **Note**
-You can update only resource groups that you own. The **Owner** column shows account ownership for each resource group. Any groups with an account owner other than the one you're signed in to were created in AWS License Manager. For more information, see [Host resource groups in AWS License Manager](https://docs.aws.amazon.com//license-manager/latest/userguide/host-resource-groups.html) in the *License Manager User Guide*.
+You can update only resource groups that you own. The **Owner** column shows account ownership for each resource group. Any groups with an account owner other than the one you're signed in to were created in AWS License Manager. For more information, see [Host resource groups in AWS License Manager](https://docs.aws.amazon.com/license-manager/latest/userguide/host-resource-groups.html) in the *License Manager User Guide*.
 
 1. On the **Edit group** page, under **Grouping criteria**, add or remove resource types. You can have a maximum of 20 resource types in a query. To remove a resource type, choose **X** on the resource type's label. Choose **View group resources** to see how the changes affect your group's resource members. In this walkthrough, we add the resource type **AWS::RDS::DBInstance** to the query.
 

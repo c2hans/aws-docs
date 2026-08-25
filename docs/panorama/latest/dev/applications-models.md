@@ -76,8 +76,6 @@ You can use models that you build in PyTorch, Apache MXNet, and TensorFlow in AW
 For details about the framework versions and file formats supported by SageMaker AI Neo, see [Supported Frameworks](https://docs.aws.amazon.com/sagemaker/latest/dg/neo-supported-devices-edge-frameworks.html) in the Amazon SageMaker AI Developer Guide.
 
 The repository for this guide provides a sample application that demonstrates this workflow for a Keras model in TensorFlow `SavedModel` format. It uses TensorFlow 2 and can run locally in a virtual environment or in a Docker container. The sample app also includes templates and scripts for building the model on an Amazon EC2 instance.
-
-****
 + [Custom model sample application](https://github.com/awsdocs/aws-panorama-developer-guide/blob/main/sample-apps/custom-model)
 
 ![Custom model sample application](http://docs.aws.amazon.com/panorama/latest/dev/images/sample-custom-model.png)
@@ -126,8 +124,6 @@ For the descriptor file's JSON schema, see [assetDescriptor.schema.json](https:/
 <a name="applications-models-training"></a>
 
 When you train a model, use images from the target environment, or from a test environment that closely resembles the target environment. Consider the following factors that can affect model performance:
-
-****
 + **Lighting** – The amount of light that is reflected by a subject determines how much detail the model has to analyze. A model trained with images of well-lit subjects might not work well in a low-light or backlit environment.
 + **Resolution** – The input size of a model is typically fixed at a resolution between 224 and 512 pixels wide in a square aspect ratio. Before you pass a frame of video to the model, you can downscale or crop it to fit the required size.
 + **Image distortion** – A camera's focal length and lens shape can cause images to exhibit distortion away from the center of the frame. The position of a camera also determines which features of a subject are visible. For example, an overhead camera with a wide angle lens will show the top of a subject when it's in the center of the frame, and a skewed view of the subject's side as it moves farther away from center.

@@ -9,8 +9,6 @@ This section is a high-level reference for features in CodePipeline documentatio
 
 This table is updated periodically with feature reference information.
 
-****
-
 | Date of table update | Feature | CodePipeline User Guide | CodePipeline API Guide | CloudFormation Reference | AWS CDK Reference - L1 constructs |
 | --- | --- | --- | --- | --- | --- |
 | October 15, 2024 | Automatic retry on stage failure | [Configure a stage for automatic retry on failure](stage-retry.md#stage-retry-auto) | [RetryConfiguration](https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_RetryConfiguration.html) |  |  |

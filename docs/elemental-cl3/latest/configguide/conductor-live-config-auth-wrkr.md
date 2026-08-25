@@ -13,8 +13,6 @@ This procedure applies to both types of user authentication—local authenticati
 
 Make sure you perform the configuration on the correct nodes.
 
-****
-
 | Node | Node where you perform this task |
 | --- | --- |
 | Primary Conductor Live node | Yes |

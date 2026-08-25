@@ -19,7 +19,7 @@ Before you create a support ticket, try asking Amazon Q to resolve the issue. Fo
 
 To create cases in Amazon Q, you must meet the following requirements:
 + You have a support plan higher than the Basic Support plan. Only users with support plans other than the Basic Support plan can contact Support with Amazon Q.
-+ You have permissions to chat with Amazon Q. For more information, see [Allow users to chat with Amazon QAllow users to use Amazon Q CLI with AWS CloudShell](id-based-policy-examples-users.md#id-based-policy-examples-allow-chat).
++ You have permissions to chat with Amazon Q. For more information, see [Allow users to chat with Amazon Q](id-based-policy-examples-users.md#id-based-policy-examples-allow-chat).
 + You have permissions to create Support cases. For more information, see [Manage access to Support Center](https://docs.aws.amazon.com/awssupport/latest/user/accessing-support.html).
 
 ## Specify the right service

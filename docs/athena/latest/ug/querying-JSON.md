@@ -40,8 +40,6 @@ SELECT * FROM planets_json
 
 The query results look like the following.
 
-****
-
 | \# | name | distancefromsun | orbitalperiod | daylength |
 | --- | --- | --- | --- | --- |
 | 1 | Mercury | 0.39 | 0.24 | 58.65 |

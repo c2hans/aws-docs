@@ -25,7 +25,7 @@ Use these steps to set up your contact center.
 ## Next steps
 <a name="gs-options"></a>
 
-There's a lot you can do to optimize your contact center. Here are a couple of additional steps that you may find useful:
+There's a lot you can do to optimize your contact center. Here are a couple of additional steps that you might find useful:
 
 1. [Monitor live & recorded conversations](monitoring-amazon-connect.md). Monitor live conversations and review past conversations. This is a way that managers can coach agents and help them improve. For voice conversations, set up recording in your flows. For chat conversations, set up recording at the instance level.
 
@@ -61,7 +61,7 @@ The [Connect Customer API Reference](https://docs.aws.amazon.com/connect/latest/
 ### Connect Customer Streams
 <a name="streams"></a>
 
-The [Connect Customer Streams](https://github.com/aws/amazon-connect-streams) documentation describes how to integrate your existing web applications with Connect Customer. Streams gives you the power to embed the Contact Control Panel (CCP) UI components into your page, and/or handle agent and contact state events directly giving you the power to control agent and contact state through an object oriented event driven interface. You can use the built in interface or build your own from scratch: Streams gives you the power to choose.
+The [Connect Customer Streams](https://github.com/aws/amazon-connect-streams) documentation describes how to integrate your existing web applications with Connect Customer. Streams gives you the power to embed the Contact Control Panel (CCP) UI components into your page, or handle agent and contact state events directly giving you the power to control agent and contact state through an object oriented event driven interface. You can use the built in interface or build your own from scratch: Streams gives you the power to choose.
 
 ### Connect Customer Chat UI Examples
 <a name="chat-example"></a>

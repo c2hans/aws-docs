@@ -19,7 +19,7 @@ The **Rules** page shows your rules and their current compliance results in a ta
 **Note**
 When you add a new rule, AWS Config evaluates the applicable resources in your resource inventory, including previously recorded resources. For example, if you recorded `AWS::IoT::Policy` resources but later excluded them from recording, AWS Config retains the initial configuration items (CIs) in your inventory. Although AWS Config no longer updates these CIs when their associated resource types are excluded from recording, it retains their last recorded state and evaluates them when you add applicable rules.
 AWS Config does not evaluate resources that are not in the resource inventory. For example, if you add the [amplify-branch-tagged](amplify-branch-tagged.md) rule but don't record and have never recorded `AWS::Amplify::Branch` resources, AWS Config can't evaluate whether the AWS Amplify branches in your account are compliant or noncompliant.
-For more information, see [Recording AWS Resources with AWS ConfigConsiderations](select-resources.md).
+For more information, see [Recording AWS Resources with AWS Config](select-resources.md).
 
 ### Adding rules
 <a name="add-rules-console"></a>

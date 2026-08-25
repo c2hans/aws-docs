@@ -349,8 +349,6 @@ To use this feature, your Amazon SES account has to be out of the sandbox. For m
 
 To create a custom verification email, use the `CreateCustomVerificationEmailTemplate` API operation. This operation takes the following inputs:
 
-****
-
 | Attribute | Description |
 | --- | --- |
 | TemplateName | The name of the template. The name you specify must be unique. |
@@ -421,8 +419,6 @@ You can edit a custom verification email template by using the `UpdateCustomVeri
 <a name="send-email-verify-address-custom-sending"></a>
 
 After you create at least one custom verification email template, you can send it to your customers by calling the [SendCustomVerificationEmail](http://docs.aws.amazon.com/ses/latest/APIReference/API_SendCustomVerificationEmail.html) API operation. You can call the `SendCustomVerificationEmail` operation by using any of the AWS SDKs or the AWS CLI. The `SendCustomVerificationEmail` operation takes the following inputs:
-
-****
 
 | Attribute | Description |
 | --- | --- |

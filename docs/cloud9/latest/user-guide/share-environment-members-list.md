@@ -18,8 +18,6 @@ A circle next to each member indicates their online status, as follows:
 
 To use code to get a list of environment members, call the AWS Cloud9 describe environment memberships operation, as follows.
 
-****
-
 |  |  |
 | --- |--- |
 | AWS CLI |  [describe-environment-memberships](https://docs.aws.amazon.com/cli/latest/reference/cloud9/describe-environment-memberships.html)  |

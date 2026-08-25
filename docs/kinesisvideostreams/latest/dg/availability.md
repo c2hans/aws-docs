@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/availabili
 
 Amazon Kinesis Video Streams is available in the following regions:
 
-****
-
 | Region Name | AWS Region Code |
 | --- | --- |
 | US East (Ohio) | us-east-2 |

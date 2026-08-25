@@ -14,8 +14,6 @@ Update an Auto Scaling Group and associated launch configuration created with CT
 ## Change Type Details
 <a name="ct-3fi2cx8b83iua-MAAu-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-3fi2cx8b83iua |

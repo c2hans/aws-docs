@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awss
 
 AWS Security Agent provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="securityagent-BatchGetAgentSpaces"></a>[BatchGetAgentSpaces](https://docs.aws.amazon.com/securityagent/API_BatchGetAgentSpaces.html) | Retrieve multiple agent spaces in a single request | Read |

@@ -43,6 +43,9 @@ AWS Transform accepts configuration files from the following source types:
 **Note**
 The maximum supported source network file size is 70 MB.
 
+**Note**
+To enable stale security group rule removal during network review, submit observed network traffic data from the [AWS Transform discovery tool](https://docs.aws.amazon.com/transform/latest/userguide/discovery-tool.html) or modelizeIT alongside your source network configuration. For more information, see [Guided network recommendations](#transform-vmware-guided-recommendations).
+
 **Warning**
 Download RVTools only from the official Dell site at [https://www.dell.com/en-us/shop/vmware/sl/rvtools](https://www.dell.com/en-us/shop/vmware/sl/rvtools). Do not download RVTools from unofficial sources.
 
@@ -275,6 +278,7 @@ AWS Transform might recommend the following optimizations:
 + **Scope review:** Identifies network segments that may not need to migrate to AWS, such as legacy systems or constructs pending decommission. AWS Transform asks for your confirmation before excluding any construct.
 + **VPC capacity right-sizing:** Surfaces VPCs where the CIDR appears oversized or undersized for the subnets it contains. AWS Transform presents the current capacity data and lets you decide whether to resize.
 + **Security review:** Flags security group rules that allow unrestricted inbound traffic (0.0.0.0/0) for your review.
++ **Stale security group rule removal:** Identifies unused inbound firewall rules migrated from your on-premises environment and suggests removing them, so you don't carry forward security exposure that no longer serves a purpose. To identify unused rules, AWS Transform uses observed network traffic data collected by the [AWS Transform discovery tool](https://docs.aws.amazon.com/transform/latest/userguide/discovery-tool.html) or modelizeIT. You must submit this traffic data alongside your source network input. AWS Transform compares your migrated firewall rules against the observed traffic over the observation window captured in that data, and flags a rule as unused when no inbound traffic matches it. Without traffic data, AWS Transform cannot determine which rules are unused and does not suggest removals. AWS Transform removes only unused ingress (inbound) rules. The absence of observed inbound traffic is a reliable signal that a rule is unused. Review the suggested removals before you apply them to confirm that they align with your security policies.
 + **VPC consolidation:** Identifies fragmented VPCs that appear separated by physical infrastructure limits rather than logical isolation requirements, and suggests merging them.
 
 **Note**

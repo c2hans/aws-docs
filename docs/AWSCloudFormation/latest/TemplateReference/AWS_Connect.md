@@ -25,6 +25,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::Connect::Instance](aws-resource-connect-instance.md)
 + [AWS::Connect::InstanceStorageConfig](aws-resource-connect-instancestorageconfig.md)
 + [AWS::Connect::IntegrationAssociation](aws-resource-connect-integrationassociation.md)
++ [AWS::Connect::Metric](aws-resource-connect-metric.md)
 + [AWS::Connect::Notification](aws-resource-connect-notification.md)
 + [AWS::Connect::PhoneNumber](aws-resource-connect-phonenumber.md)
 + [AWS::Connect::PredefinedAttribute](aws-resource-connect-predefinedattribute.md)

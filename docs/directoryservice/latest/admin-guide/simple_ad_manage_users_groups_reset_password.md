@@ -33,7 +33,7 @@ You can reset the password for any user in your Active Directory with the follow
 ------
 #### [ AWS CLI ]
 
-1. To install the AWS CLI, see [Install or update the latest version of the AWS CLI](https://docs.aws.amazon.com//cli/latest/userguide/getting-started-install.html).
+1. To install the AWS CLI, see [Install or update the latest version of the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html).
 
 1. Open the AWS CLI.
 

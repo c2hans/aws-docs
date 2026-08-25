@@ -105,7 +105,7 @@ After you set up a rule you can use it to answer single selection or multiple se
 ### Automation using metrics
 <a name="automation-using-metrics"></a>
 
-You can use contact metrics to automatically answer questions on the self-service experience. For example, you can check for customer sentiment during the automated interaction. To use metrics, ensure that the Question Type is chosen as Number.
+You can use contact metrics to automatically answer questions on the self-service experience. For example, you can check for customer sentiment during the automated interaction. To use metrics, make sure that the Question Type is chosen as Number.
 
 ![Automation tab showing Option 2: Contact metrics selected with customer sentiment score field.](http://docs.aws.amazon.com/connect/latest/adminguide/images/self-service-eval-metrics-automation.png)
 
@@ -124,7 +124,7 @@ To trigger a self-service interaction evaluation, you can identify if specific A
 ![AI Agent condition with Self service selected and SalesAgent specified as the AI agent.](http://docs.aws.amazon.com/connect/latest/adminguide/images/self-service-eval-ai-agent-identification.png)
 
 Custom contact attributes and contact segment attributes
-You can also use **custom contact attributes** and **contact segment attributes** set within flows to identify specific workflows, bots, customer intents or outcomes. For example, you may set a contact attribute within flows, `pizzaOrderBot = true` if a Lex bot called "Pizza Order Bot" is invoked during the conversation.
+You can also use **custom contact attributes** and **contact segment attributes** set within flows to identify specific workflows, bots, customer intents or outcomes. For example, you might set a contact attribute within flows, `pizzaOrderBot = true` if a Lex bot called "Pizza Order Bot" is invoked during the conversation.
 
 ![Define conditions page showing pizzaOrderBot contact attribute equals true condition.](http://docs.aws.amazon.com/connect/latest/adminguide/images/self-service-eval-custom-contact-attributes.png)
 

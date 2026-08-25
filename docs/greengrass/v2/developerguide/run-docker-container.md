@@ -487,7 +487,7 @@ This section describes how you can run a Docker container in a component from a 
 ## Use interprocess communication in Docker container components
 <a name="docker-container-ipc"></a>
 
-You can use the Greengrass interprocess communication (IPC) library in the AWS IoT Device SDK or the AWS IoT Greengrass Component SDK to communicate with the Greengrass nucleus, other Greengrass components, and AWS IoT Core. For more information, see [Use the AWS IoT Device SDK to communicate with the Greengrass nucleus, other components, and AWS IoT CoreCommunicate with the Greengrass nucleus, other components, and AWS IoT Core](interprocess-communication.md).
+You can use the Greengrass interprocess communication (IPC) library in the AWS IoT Device SDK or the AWS IoT Greengrass Component SDK to communicate with the Greengrass nucleus, other Greengrass components, and AWS IoT Core. For more information, see [Use the AWS IoT Device SDK to communicate with the Greengrass nucleus, other components, and AWS IoT Core](interprocess-communication.md).
 
 To use IPC in a Docker container component, you must run the Docker container with the following parameters:
 + Mount the IPC socket in the container. The Greengrass nucleus provides the IPC socket file path in the `AWS_GG_NUCLEUS_DOMAIN_SOCKET_FILEPATH_FOR_COMPONENT` environment variable.

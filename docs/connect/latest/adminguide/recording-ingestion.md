@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/recording-inge
 This guide provides instructions for importing voice recordings from third-party voice systems into Connect Customer and generating conversational analytics.
 
 **Note**
-Recording ingestion is only available in [Amazon Connect Customer](https://docs.aws.amazon.com//connect/latest/adminguide/enable-nextgeneration-amazonconnect.html) instances.
+Recording ingestion is only available in [Amazon Connect Customer](https://docs.aws.amazon.com/connect/latest/adminguide/enable-nextgeneration-amazonconnect.html) instances.
 
 ## Common use cases
 <a name="recording-ingestion-use-cases"></a>
@@ -37,7 +37,7 @@ The following service quotas apply to recording ingestion.
 <a name="recording-ingestion-prerequisites"></a>
 + An Amazon Connect Customer instance.
 + Conversational analytics enabled on your instance. To enable, open your instance in the AWS Console and navigate to **Applications**, **Analytics tools**.
-+ At least one active agent in your Connect Customer instance to associate with imported contacts. Depending on your requirements, you may want to do one of the following:
++ At least one active agent in your Connect Customer instance to associate with imported contacts. Depending on your requirements, you might want to do one of the following:
   + Assign all contacts to a single logical agent
   + Assign contacts to a single logical agent per line of business
   + Assign each contact to a specific individual agent
@@ -62,7 +62,7 @@ The following service quotas apply to recording ingestion.
 <a name="recording-ingestion-best-practices"></a>
 + Test the end-to-end workflow in a non-production Connect Customer instance before using in production.
 + Ensure WAV files meet the format requirements before ingestion — invalid formats are rejected.
-+ Wait for the recording attachment to complete before calling StartContactConversationalAnalyticsJob. Monitor your contact trace record (CTR) delivery via Amazon Kinesis Data Stream or Amazon Kinesis Data Firehose to confirm attachment status. For more information, see [Enable data streaming for your Connect Customer instance](data-streaming.md).
++ Wait for the recording attachment to complete before calling StartContactConversationalAnalyticsJob. Monitor your contact trace record (CTR) delivery through Amazon Kinesis Data Stream or Amazon Kinesis Data Firehose to confirm attachment status. For more information, see [Enable data streaming for your Connect Customer instance](data-streaming.md).
 + Configure EventBridge to receive analytics job failure notifications. For more information, see [Error notifications: When conversational analytics can't analyze a contact](contact-lens-error-notifications.md).
 
 ## Verification

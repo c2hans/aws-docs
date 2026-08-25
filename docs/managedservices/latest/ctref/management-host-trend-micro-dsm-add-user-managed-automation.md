@@ -14,8 +14,6 @@ Add a new DSM console user to the Trend Micro console for your account. Once the
 ## Change Type Details
 <a name="ct-24rl68y07m769-MHTa-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-24rl68y07m769 |

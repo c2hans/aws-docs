@@ -33,7 +33,7 @@ The following table describes the functions that are used in the process of crea
 | `KDF(K, Label, Context, L)` | A NIST SP800-108 KDF in Counter Mode using the PRF function HMAC-SHA256 as defined in [NIST SP 800-108r1](https://doi.org/10.6028/NIST.SP.800-108r1-upd1). |
 | `Oct2Int(byte[ ])` | An octet to integer function as described in ANSI X9.62. |
 | `Trim()` | Remove any leading or trailing whitespace. |
-| `UriEncode()` | URI encode every byte. UriEncode() must enforce the following rules:+  URI encode every byte except the unreserved characters: 'A'-'Z', 'a'-'z', '0'-'9', '-', '.', '\_', and '\~'.  <br />+  The space character is a reserved character and must be encoded as "%20" (and not as "\+").  <br />+  Each URI encoded byte is formed by a '%' and the two-digit hexadecimal value of the byte.  <br />+  Letters in the hexadecimal value must be uppercase, for example "%1A".  <br />+  Encode the forward slash character, '/', everywhere except in the object key name. For example, if the object key name is `photos/Jan/sample.jpg`, the forward slash in the key name is not encoded.   The standard UriEncode functions provided by your development platform may not work because of differences in implementation and related ambiguity in the underlying RFCs. We recommend that you write your own custom UriEncode function to ensure that your encoding will work. <br />To see an example of a UriEncode function in Java, see [Java Utilities](https://github.com/aws/aws-sdk-java/blob/master/aws-java-sdk-core/src/main/java/com/amazonaws/util/SdkHttpUtils.java#L66) on the GitHub website. |
+| `UriEncode()` | URI encode every byte. UriEncode() must enforce the following rules:+  URI encode every byte except the unreserved characters: 'A'-'Z', 'a'-'z', '0'-'9', '-', '.', '\_', and '\~'.  <br />+  The space character is a reserved character and must be encoded as "%20" (and not as "\+").  <br />+  Each URI encoded byte is formed by a '%' and the two-digit hexadecimal value of the byte.  <br />+  Letters in the hexadecimal value must be uppercase, for example "%1A".  <br />+  Encode the forward slash character, '/', everywhere except in the object key name. For example, if the object key name is `photos/Jan/sample.jpg`, the forward slash in the key name is not encoded.   The standard UriEncode functions provided by your development platform might not work because of differences in implementation and related ambiguity in the underlying RFCs. We recommend that you write your own custom UriEncode function to make sure that your encoding will work. <br />To see an example of a UriEncode function in Java, see [Java Utilities](https://github.com/aws/aws-sdk-java/blob/master/aws-java-sdk-core/src/main/java/com/amazonaws/util/SdkHttpUtils.java#L66) on the GitHub website. |
 
 **Note**
 When signing your requests, you can use either AWS SigV4 or AWS SigV4a. The key difference between the two is determined by how the signature is calculated. With SigV4a, the region set is included in the string to sign, but is not part of the credential derivation step.
@@ -69,7 +69,7 @@ Add the calculated signature to an HTTP header or to the query string of the req
 ## Create a canonical request
 <a name="create-canonical-request"></a>
 
-To create a canonical request, concatenate the following strings, separated by newline characters. This helps ensure that the signature that you calculate can match the signature that AWS calculates.
+To create a canonical request, concatenate the following strings, separated by newline characters. This helps make sure that the signature that you calculate can match the signature that AWS calculates.
 
 ```
 {{<HTTPMethod>}}\n
@@ -239,7 +239,7 @@ SigningKey = HMAC-SHA256({{<DateRegionServiceKey>}}, "aws4_request")
 + `Date` – A string that contains the date used in the credential scope, in the format *YYYYMMDD*.
 + `Region` – A string that contains the Region code (for example, `us-east-1`).
 
-  For a list of Region strings, see [Regional Endpoints](https://docs.aws.amazon.com//general/latest/gr/rande.html#regional-endpoints) in the *AWS General Reference*.
+  For a list of Region strings, see [Regional Endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints) in the *AWS General Reference*.
 + `Service` – A string that contains the service code (for example, `ec2`).
 + The string to sign that you created in the previous step.
 
@@ -308,7 +308,7 @@ if (c < 255) {
 ## Calculate the signature
 <a name="calculate-signature"></a>
 
-Once you have derived the signing key, calculate the signature to add to your request. This procedure varies based on the signature version you use.
+After you have derived the signing key, calculate the signature to add to your request. This procedure varies based on the signature version you use.
 
 **To calculate a signature for SigV4**
 

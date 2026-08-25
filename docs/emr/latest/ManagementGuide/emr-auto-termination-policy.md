@@ -9,8 +9,6 @@ An auto-termination policy lets you orchestrate cluster cleanup without the need
 
 Depending on release version, Amazon EMR uses different criteria to mark a cluster as idle. The following table outlines how Amazon EMR determines cluster idleness.
 
-****
-
 | When you use ... | A cluster is considered idle when ... |
 | --- | --- |
 | Amazon EMR versions 5.34.0 and later, and 6.4.0 and later |  +  There are no active YARN applications <br />+  HDFS utilization is below 10% <br />+  There are no active EMR notebook or EMR Studio connections <br />+  There are no on-cluster application user interfaces in use <br />+  There are no pending steps   |

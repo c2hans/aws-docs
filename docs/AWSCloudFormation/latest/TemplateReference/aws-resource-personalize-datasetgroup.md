@@ -26,7 +26,8 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[Domain](#cfn-personalize-datasetgroup-domain)" : {{String}},
       "[KmsKeyArn](#cfn-personalize-datasetgroup-kmskeyarn)" : {{String}},
       "[Name](#cfn-personalize-datasetgroup-name)" : {{String}},
-      "[RoleArn](#cfn-personalize-datasetgroup-rolearn)" : {{String}}
+      "[RoleArn](#cfn-personalize-datasetgroup-rolearn)" : {{String}},
+      "[Tags](#cfn-personalize-datasetgroup-tags)" : {{[ Tag, ... ]}}
     }
 }
 ```
@@ -41,6 +42,8 @@ Properties:
   [KmsKeyArn](#cfn-personalize-datasetgroup-kmskeyarn): {{String}}
   [Name](#cfn-personalize-datasetgroup-name): {{String}}
   [RoleArn](#cfn-personalize-datasetgroup-rolearn): {{String}}
+  [Tags](#cfn-personalize-datasetgroup-tags): {{
+    - Tag}}
 ```
 
 ## Properties
@@ -77,6 +80,14 @@ The ARN of the AWS Identity and Access Management (IAM) role that has permission
 *Pattern*: `arn:([a-z\d-]+):iam::\d{12}:role/?[a-zA-Z_0-9+=,.@\-_/]+`
 *Minimum*: `0`
 *Maximum*: `256`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`Tags`  <a name="cfn-personalize-datasetgroup-tags"></a>
+Property description not available.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-personalize-datasetgroup-tag.md)
+*Minimum*: `0`
+*Maximum*: `50`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values

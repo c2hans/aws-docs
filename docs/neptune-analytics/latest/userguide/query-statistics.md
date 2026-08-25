@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/query
 # Statistics
 <a name="query-statistics"></a>
 
-Neptune Analytics uses similar statistics for planning query execution as in [Neptune Database](https://docs.aws.amazon.com//neptune/latest/userguide/neptune-dfe-statistics.html). Computing these statistics is performed as an integrated part of the Neptune Analytics storage system. There are a number of differences between the features and usage of statistics between Neptune Analytics and Neptune Database:
+Neptune Analytics uses similar statistics for planning query execution as in [Neptune Database](https://docs.aws.amazon.com/neptune/latest/userguide/neptune-dfe-statistics.html). Computing these statistics is performed as an integrated part of the Neptune Analytics storage system. There are a number of differences between the features and usage of statistics between Neptune Analytics and Neptune Database:
 
 1.  Initial statistics generation is performed as part of either the initial import task or an initial data load occurring before any query-driven updates. Subsequently, statistics re-computation is triggered automatically based on the amount of update operations performed by the database.
 

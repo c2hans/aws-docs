@@ -17,8 +17,6 @@ Most AWS service documentation contains troubleshooting topics that can get you 
 **Note**
 The following table provides a list of the most common services. To search for other troubleshooting topics, use the search text box on the [AWS Documentation landing page](https://docs.aws.amazon.com/index.html).
 
-****
-
 | Service | Link |
 | --- | --- |
 | Amazon Web Services | [Troubleshooting AWS Signature Version 4 errors](https://docs.aws.amazon.com/general/latest/gr/signature-v4-troubleshooting.html) |

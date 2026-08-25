@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsd
 
 AWS Device Farm provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="devicefarm-GetAccountSettings"></a>[GetAccountSettings](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_GetAccountSettings.html) | Retrieve the number of unmetered iOS and/or unmetered Android devices purchased by the account | Read |

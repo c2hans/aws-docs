@@ -271,7 +271,7 @@ Uses the following format:
   },
 ```
 
-For information about generating and uploading the authentication file, see [Authenticating with image repositoriesUsing AWS Secrets Manager](docker-configuration.remote-repo.md).
+For information about generating and uploading the authentication file, see [Authenticating with image repositories](docker-configuration.remote-repo.md).
 
 ## Example Dockerrun.aws.json v2
 <a name="create_deploy_docker_v2config_example"></a>

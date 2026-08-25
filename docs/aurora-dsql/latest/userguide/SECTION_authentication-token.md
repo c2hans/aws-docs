@@ -136,7 +136,7 @@ You can generate an authentication token for your cluster when it is in `ACTIVE`
 #### [ Python SDK ]
 
 **Tip**
-AWS recommends using the [Aurora DSQL Connector for PythonAbout the ConnectorWhat is Aurora DSQL Authentication?FeaturesQuick start guideRequirementsInstallationInstall psycopg or psycopg2 or asyncpg separatelyBasic Usagepsycopgpsycopg2asyncpgUsing just hostpsycopgpsycopg2asyncpgUsing just cluster IDpsycopgpsycopg2asyncpgpsycopgpsycopg2asyncpgConnection Stringpsycopgpsycopg2asyncpgAdvanced Configurationpsycopgpsycopg2asyncpgConfiguration OptionsUsing the Aurora DSQL connector for Python with connection poolingpsycopgpsycopg2asyncpgAuthenticationAdmin vs Regular UsersExamplespsycopgpsycopg2asyncpg](SECTION_program-with-dsql-connector-for-python.md), which handles token generation automatically.
+AWS recommends using the [Aurora DSQL Connector for Python](SECTION_program-with-dsql-connector-for-python.md), which handles token generation automatically.
 
 You can generate the token in the following ways:
 + If you are connecting with the `admin` role, use `generate_db_connect_admin_auth_token`.

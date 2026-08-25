@@ -85,8 +85,6 @@ The VPC feature for automatically creating a DNS record is disabled for AWS IoT 
 ### Set up your Greengrass core device to operate in VPC
 <a name="vpc-endpoint-operate-gg-core"></a>
 
-****
-
 1. Get the AWS IoT endpoints for your AWS account, and save them to use later. Your device uses these endpoints to connect to AWS IoT. Do the following:
 
    1. Get the AWS IoT data endpoint for your AWS account.

@@ -106,7 +106,7 @@ Compute Optimizer supports rightsizing recommendations for EC2 Auto Scaling grou
 
 **Note**
 Compute Optimizer doesn't support rightsizing recommendations for EC2 Auto Scaling groups that have the following:
-EC2 instance types that aren’t [supported by Compute Optimizer](https://docs.aws.amazon.com//compute-optimizer/latest/ug/supported-resources.html#supported-ec2-instances)
+EC2 instance types that aren’t [supported by Compute Optimizer](https://docs.aws.amazon.com/compute-optimizer/latest/ug/supported-resources.html#supported-ec2-instances)
 Spot Instances
 Mixed instance types that contain any instances outside of the C, M, or R instance families
 Amazon ECS or Amazon EKS workloads
@@ -131,7 +131,7 @@ Compute Optimizer generates recommendations for the following EBS volume types t
 + General Purpose SSD `gp2` and `gp3`
 + Provisioned IOPS SSD `io1`, `io2`, and `io2 Block Express`
 
-Compute Optimizer also generates recommendations to move your data out from previous generation HDD Magnetic volumes. For more information, see [ Amazon EBS previous generation volumes](https://aws.amazon.com//ebs/previous-generation/).
+Compute Optimizer also generates recommendations to move your data out from previous generation HDD Magnetic volumes. For more information, see [ Amazon EBS previous generation volumes](https://aws.amazon.com/ebs/previous-generation/).
 
 ## Supported Amazon Aurora and RDS databases
 <a name="supported-rds"></a>
@@ -150,7 +150,7 @@ Compute Optimizer generates recommendations for Amazon Aurora and RDS databases 
 ### RDS DB instances
 <a name="supported-rds-instance"></a>
 
-Compute Optimizer generates recommendations for several DB instance types. For more information about Aurora and RDS DB instance types, see [DB instance classes](https://docs.aws.amazon.com//AmazonRDS/latest/UserGuide/Concepts.DBInstanceClass) in the *Amazon Relational Database Service User Guide* and [ DB instance class types](https://docs.aws.amazon.com//AmazonRDS/latest/AuroraUserGuide/Concepts.DBInstanceClass.Types.html) in the *Amazon Aurora User Guide for Aurora*.
+Compute Optimizer generates recommendations for several DB instance types. For more information about Aurora and RDS DB instance types, see [DB instance classes](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.DBInstanceClass) in the *Amazon Relational Database Service User Guide* and [ DB instance class types](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Concepts.DBInstanceClass.Types.html) in the *Amazon Aurora User Guide for Aurora*.
 
 The following tables list the DB instance types for the databases that are supported by Compute Optimizer.
 

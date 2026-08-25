@@ -21,7 +21,9 @@ The AMS AWS CloudFormation ingest change type (CT) enables you to use your exist
 The AMS CloudFormation ingest process involves the following:
 + Prepare and upload your custom CloudFormation template to an S3 bucket, or provide the template inline when creating the RFC. If you are using an S3 bucket with a presigned URL; for more information, see [presign](https://docs.aws.amazon.com/cli/latest/reference/s3/presign.html).
 + Submit the CloudFormation ingest change type to AMS in an RFC. For the CFN ingest change type walkthrough, see [Create CloudFormation ingest stack](#ex-cfn-ingest-create-col). For CFN ingest examples, see [CloudFormation Ingest: Examples](cfn-ingest-examples.md).
-+ Once your stack is created, you can update it, and remediate drift on it; additionally, should the update fail, you can explicitly approve and implement the update. All of these procedures are described in this section.
++ Once your stack is created, you can update it; additionally, should the update fail, you can explicitly approve and implement the update.
+**Note**
+Drift remediation is not supported by AMS for CloudFormation-ingested stacks. As the owner of a CloudFormation-ingested stack, you are responsible for managing stack drift directly.
 
   For information on CFN drift detection, see [New – CloudFormation Drift Detection](https://aws.amazon.com/blogs/aws/new-cloudformation-drift-detection/).
 

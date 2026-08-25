@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/index-usage-monit
 
 Index usage logs provide visibility into how your Amazon Quick index storage is consumed across knowledge bases and Spaces, including file uploads. You can use these logs to track growth trends, identify the largest sources, detect unexpected spikes, and plan capacity.
 
-Before you query index usage data, you must configure `INDEX_USAGE_LOGS` delivery. For instructions on setting up delivery, see [Monitoring Amazon Quick usage using CloudWatch Logs](monitoring-quicksuite-chat-feedback-cloudwatch.md).
+Before you query index usage data, you must configure `INDEX_USAGE_LOGS` delivery. For instructions on setting up delivery, see [Monitoring Amazon Quick using CloudWatch Logs](monitoring-cloudwatch-logs.md).
 
 ## Log schema
 <a name="index-usage-monitoring-schema"></a>

@@ -20,7 +20,7 @@ This topic describes how to edit tags attached policies with AWS Organizations. 
 ## Edit tags attached to a service control policy (SCP)
 <a name="tag_policy_scp"></a>
 
-When you sign in to your organization's management account, you can add or remove the tags attached to an SCP. For more information about tagging, see [Tagging AWS Organizations resourcesConsiderations](orgs_tagging.md).
+When you sign in to your organization's management account, you can add or remove the tags attached to an SCP. For more information about tagging, see [Tagging AWS Organizations resources](orgs_tagging.md).
 
 **Minimum permissions**
 To edit the tags attached to an SCP in your organization, you must have the following permissions:
@@ -60,7 +60,7 @@ You can use one of the following commands to edit the tags attached to an SCP:
 ## Edit tags attached to a resource control policy (RCP)
 <a name="tag_policy_rcp"></a>
 
-When you sign in to your organization's management account, you can add or remove the tags attached to an RCP. For more information about tagging, see [Tagging AWS Organizations resourcesConsiderations](orgs_tagging.md).
+When you sign in to your organization's management account, you can add or remove the tags attached to an RCP. For more information about tagging, see [Tagging AWS Organizations resources](orgs_tagging.md).
 
 **Minimum permissions**
 To edit the tags attached to an RCP in your AWS organization, you must have the following permissions:
@@ -100,7 +100,7 @@ You can use one of the following commands to edit the tags attached to an RCP:
 ## Edit tags attached to an declarative policy
 <a name="tag-declarative-policy-procedure"></a>
 
-When you sign in to your organization's management account, you can add or remove the tags attached to a declarative policy. For more information about tagging, see [Tagging AWS Organizations resourcesConsiderations](orgs_tagging.md).
+When you sign in to your organization's management account, you can add or remove the tags attached to a declarative policy. For more information about tagging, see [Tagging AWS Organizations resources](orgs_tagging.md).
 
 **Minimum permissions**
 To edit the tags attached to a declarative policy in your AWS organization, you must have the following permissions:
@@ -140,7 +140,7 @@ You can use one of the following commands to edit the tags attached to a declara
 ## Edit tags attached to a backup policy
 <a name="tag-backup-policy-procedure"></a>
 
-When you sign in to your organization's management account, you can add or remove the tags attached to a backup policy. For more information about tagging, see [Tagging AWS Organizations resourcesConsiderations](orgs_tagging.md).
+When you sign in to your organization's management account, you can add or remove the tags attached to a backup policy. For more information about tagging, see [Tagging AWS Organizations resources](orgs_tagging.md).
 
 **Minimum permissions**
 To edit the tags attached to a backup policy in your organization, you must have the following permissions:
@@ -264,7 +264,7 @@ You can use one of the following commands to edit the tags attached to a chat ap
 ## Edit tags attached to an AI services opt-out policy
 <a name="tag-ai-opt-out-policy-procedure"></a>
 
-When you sign in to your organization's management account, you can add or remove the tags attached to an AI services opt-out policy. For more information about tagging, see [Tagging AWS Organizations resourcesConsiderations](orgs_tagging.md).
+When you sign in to your organization's management account, you can add or remove the tags attached to an AI services opt-out policy. For more information about tagging, see [Tagging AWS Organizations resources](orgs_tagging.md).
 
 **Minimum permissions**
 To edit the tags attached to an AI services opt-out policy in your organization, you must have the following permissions:
@@ -304,7 +304,7 @@ You can use one of the following commands to edit the tags attached to a AI serv
 ## Edit tags attached to a Security Hub policy
 <a name="tag-security-hub-policy-procedure"></a>
 
-When you sign in to your organization's management account, you can add or remove the tags attached to a Security Hub policy. For more information about tagging, see [Tagging AWS Organizations resourcesConsiderations](orgs_tagging.md).
+When you sign in to your organization's management account, you can add or remove the tags attached to a Security Hub policy. For more information about tagging, see [Tagging AWS Organizations resources](orgs_tagging.md).
 
 **Minimum permissions**
 To edit the tags attached to a Security Hub policy in your organization, you must have the following permissions:

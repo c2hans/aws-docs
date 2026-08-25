@@ -12,8 +12,6 @@ You can use the default credentials that you configure on your client system to 
 
 The credentials provider that will be used to authenticate requests to AWS. Set the value of this parameter to `DefaultChain`.
 
-****
-
 | Parameter name | Alias | Parameter type | Default value | Value to use |
 | --- | --- | --- | --- | --- |
 | CredentialsProvider | AWSCredentialsProviderClass (deprecated) | Required | none | DefaultChain |

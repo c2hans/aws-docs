@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon Connect provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="connect-BatchDescribeDataTableValue"></a>[BatchDescribeDataTableValue](https://docs.aws.amazon.com/connect/latest/APIReference/API_BatchDescribeDataTableValue.html) | Batch describe values in a data table in an Amazon Connect instance | Read |

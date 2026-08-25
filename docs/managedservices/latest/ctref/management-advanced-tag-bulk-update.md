@@ -14,8 +14,6 @@ Bulk add tags to existing, supported resources: Autoscaling, EC2, Elastic Load B
 ## Change Type Details
 <a name="ct-3047c34zuvswh-MATb-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-3047c34zuvswh |

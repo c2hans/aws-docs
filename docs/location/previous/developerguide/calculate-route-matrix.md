@@ -93,8 +93,6 @@ Content-type: application/json
 
 When calculating a route matrix, there are restrictions on the departure and destination positions. These restrictions vary depending on the provider used by the `RouteCalculator` resource.
 
-****
-
 | Limitation | Esri | Grab | HERE |
 | --- | --- | --- | --- |
 | Number of positions | Up to 10 departure positions and 10 destination positions. | Up to 350 departure positions and 350 destination positions. | Up to 350 departure positions and 350 destination positions.<br />For longer routes, additional restrictions apply. See the [ section](#matrix-routing-longer-routes). |

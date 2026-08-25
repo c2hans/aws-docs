@@ -18,8 +18,6 @@ PROCEDURE cleanup_incomplete_xtts_import(
 ## Parameters
 <a name="rdsadmin_transport_util_cleanup_incomplete_xtts_import-parameters"></a>
 
-****
-
 | Parameter name | Data type | Default | Required | Description |
 | --- | --- | --- | --- | --- |
 | `p_directory_name` | `VARCHAR2` | — | Yes | The directory that contains the orphaned data files. |

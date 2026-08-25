@@ -10,7 +10,7 @@ The following issues are specific to [agentic self-service](agentic-self-service
 ## AI agent is not responding to customers
 <a name="ts-ai-agent-not-responding"></a>
 
-If your AI agent is processing requests but customers are not seeing any responses, the orchestration prompt may be missing the required message formatting instructions.
+If your AI agent is processing requests but customers are not seeing any responses, the orchestration prompt might be missing the required message formatting instructions.
 
 Orchestrator AI agents only display messages to customers when the model's response is wrapped in `<message>` tags. If your prompt does not instruct the model to use these tags, responses will not be rendered to the customer.
 

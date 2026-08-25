@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/two-way-sms-i
 # IAM policies for Amazon SNS topics
 <a name="two-way-sms-iam-policy"></a>
 
-If you want AWS End User Messaging SMS to use an existing IAM role or if you create a new role, attach the following policies to that role so that AWS End User Messaging SMS can assume it. For information about how to modify the trust relationship of a role, see [Modifying a Role](https://docs.aws.amazon.com//IAM/latest/UserGuide/id_roles_manage.html) in the [*IAM user guide*](https://docs.aws.amazon.com//IAM/latest/UserGuide/introduction.html).
+If you want AWS End User Messaging SMS to use an existing IAM role or if you create a new role, attach the following policies to that role so that AWS End User Messaging SMS can assume it. For information about how to modify the trust relationship of a role, see [Modifying a Role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_manage.html) in the [*IAM user guide*](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html).
 
 The following is the **trust policy** for the IAM role. In the following IAM policy, make the following changes:
 + Replace {{accountId}} with the unique ID for your AWS account.

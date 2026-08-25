@@ -49,6 +49,12 @@ Type: Array of [AssetBundleImportJobThemeOverridePermissions](API_AssetBundleImp
 Array Members: Minimum number of 1 item. Maximum number of 2 items.
 Required: No
 
+ ** TopicsV2 **   <a name="QS-Type-AssetBundleImportJobOverridePermissions-TopicsV2"></a>
+A list of permissions for the topics that you want to apply overrides to.
+Type: Array of [AssetBundleImportJobTopicV2OverridePermissions](API_AssetBundleImportJobTopicV2OverridePermissions.md) objects
+Array Members: Minimum number of 1 item. Maximum number of 2 items.
+Required: No
+
 ## See Also
 <a name="API_AssetBundleImportJobOverridePermissions_SeeAlso"></a>
 

@@ -14,8 +14,6 @@ Delete Elastic Block Store (EBS) snapshots. Because deleted snapshots cannot be 
 ## Change Type Details
 <a name="ct-30bfiwxjku1nu-MAEd-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-30bfiwxjku1nu |

@@ -181,7 +181,7 @@ By default, the role associated with the AWS Glue interactive session is the sam
   ```
 
 **Note**
-Failures occurring while applying those permissions do not prevent the creation of AWS Glue interactive sessions. You can find details about the reason of the failure in Studio or Studio Classic [CloudWatch](https://docs.aws.amazon.com//sagemaker/latest/dg/monitoring-cloudwatch.html) logs.
+Failures occurring while applying those permissions do not prevent the creation of AWS Glue interactive sessions. You can find details about the reason of the failure in Studio or Studio Classic [CloudWatch](https://docs.aws.amazon.com/sagemaker/latest/dg/monitoring-cloudwatch.html) logs.
 You must restart the kernel of your AWS Glue interactive session to propagate the update of a tag’s value.
 
 It is important to note the following points:

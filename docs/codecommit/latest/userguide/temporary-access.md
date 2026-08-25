@@ -103,7 +103,7 @@ You must configure your local computer to use the access credentials by installi
 ## Step 4: Access the CodeCommit repositories
 <a name="temporary-access-use-credentials"></a>
 
-Assuming your user has followed the instructions in [Connect to a repository](how-to-connect.md) to connect to the CodeCommit repositories, the user then uses the extended functionality provided by **git-remote-codecommit** and Git to call **git clone**, **git push**, and **git pull** to clone, push to, and pull from, the CodeCommit repositories to which he or she has access. For example, to clone a repository:
+Assuming your user has followed the instructions in [Connect to a repository](how-to-connect.md) to connect to the CodeCommit repositories, the user then uses the extended functionality provided by **git-remote-codecommit** and Git to call **git clone**, **git push**, and **git pull** to clone, push to, and pull from, the CodeCommit repositories to which they have access. For example, to clone a repository:
 
 ```
 git clone codecommit://{{CodeAccess}}@{{MyDemoRepo}}

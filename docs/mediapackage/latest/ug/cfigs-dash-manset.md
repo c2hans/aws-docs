@@ -37,7 +37,7 @@ This option isn't supported in combination with multi-period DASH.
 
 1. For **Period triggers**, select how MediaPackage creates MPD periods in the DASH output manifest.
    + **None** – MediaPackage doesn't create additional periods. It formats the manifest as a single period and doesn't include SCTE-35 markers in the segments.
-   + **Trigger new periods on ads** – MediaPackage creates and inserts in the manifest multiple periods based on SCTE-35 ad markers from the input content. These periods separate portions of the content, such as setting boundaries between the main content and ad content. For more information about how MediaPackage configures periods in the manifest, see [DASH manifest options in AWS Elemental MediaPackageMulti-period DASH in AWS Elemental MediaPackage](multi-period.md).
+   + **Trigger new periods on ads** – MediaPackage creates and inserts in the manifest multiple periods based on SCTE-35 ad markers from the input content. These periods separate portions of the content, such as setting boundaries between the main content and ad content. For more information about how MediaPackage configures periods in the manifest, see [DASH manifest options in AWS Elemental MediaPackage](multi-period.md).
 **Important**
 Multiple periods are required if you use AWS Elemental MediaTailor for personalized ad insertion in DASH content. For more information about this service, see the [AWS Elemental MediaTailor User Guide](https://docs.aws.amazon.com/mediatailor/latest/ug/).
 

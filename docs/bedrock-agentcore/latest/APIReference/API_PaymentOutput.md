@@ -18,6 +18,11 @@ Output from a crypto X402 payment.
 Type: [CryptoX402PaymentOutput](API_CryptoX402PaymentOutput.md) object
 Required: No
 
+ ** mpp **   <a name="BedrockAgentCore-Type-PaymentOutput-mpp"></a>
+Contains the payment credential, ready to retry the request.
+Type: [MppPaymentOutput](API_MppPaymentOutput.md) object
+Required: No
+
 ## See Also
 <a name="API_PaymentOutput_SeeAlso"></a>
 

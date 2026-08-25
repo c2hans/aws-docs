@@ -213,7 +213,7 @@ HTTPS (TLS) can be used to help prevent eavesdropping or manipulation of network
 ### Remediation
 <a name="cloudfront-9-remediation"></a>
 
-To update the Origin Protocol Policy to require encryption for a CloudFront connection, see [Requiring HTTPS for communication between CloudFront and your custom origin](https://docs.aws.amazon.com//AmazonCloudFront/latest/DeveloperGuide/using-https-cloudfront-to-custom-origin.html) in the *Amazon CloudFront Developer Guide*.
+To update the Origin Protocol Policy to require encryption for a CloudFront connection, see [Requiring HTTPS for communication between CloudFront and your custom origin](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/using-https-cloudfront-to-custom-origin.html) in the *Amazon CloudFront Developer Guide*.
 
 ## [CloudFront.10] CloudFront distributions should not use deprecated SSL protocols between edge locations and custom origins
 <a name="cloudfront-10"></a>
@@ -239,7 +239,7 @@ In 2015, the Internet Engineering Task Force (IETF) officially announced that SS
 ### Remediation
 <a name="cloudfront-10-remediation"></a>
 
-To update the Origin SSL Protocols for a CloudFront distribution, see [Requiring HTTPS for communication between CloudFront and your custom origin](https://docs.aws.amazon.com//AmazonCloudFront/latest/DeveloperGuide/using-https-cloudfront-to-custom-origin.html) in the *Amazon CloudFront Developer Guide*.
+To update the Origin SSL Protocols for a CloudFront distribution, see [Requiring HTTPS for communication between CloudFront and your custom origin](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/using-https-cloudfront-to-custom-origin.html) in the *Amazon CloudFront Developer Guide*.
 
 ## [CloudFront.12] CloudFront distributions should not point to non-existent S3 origins
 <a name="cloudfront-12"></a>

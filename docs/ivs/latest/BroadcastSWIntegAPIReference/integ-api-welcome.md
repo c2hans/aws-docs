@@ -15,4 +15,4 @@ The Amazon Interactive Video Service (IVS) broadcast software integration API is
 + **Preferences** — Preferences set by the user; for example, output resolution or frame rate.
 + **Service** — A video service or platform like IVS.
 
-For more information about IVS support for multitrack video, also see [Multitrack Broadcast Software Integration Guide](https://docs.aws.amazon.com//ivs/latest/LowLatencyUserGuide/multitrack-video-sw-integration.html).
+For more information about IVS support for multitrack video, also see [Multitrack Broadcast Software Integration Guide](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multitrack-video-sw-integration.html).

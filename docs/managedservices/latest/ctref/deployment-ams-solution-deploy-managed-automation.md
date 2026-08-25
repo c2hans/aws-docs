@@ -14,8 +14,6 @@ Deploy an AMS pattern to the current account. Patterns provide tools, architectu
 ## Change Type Details
 <a name="ct-2jndrh7uit8uf-DASd-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-2jndrh7uit8uf |

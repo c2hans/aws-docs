@@ -20,6 +20,6 @@ For information about IPv6 support for AWS Transfer Family servers, see [IPv6 su
 
 To connect programmatically to an AWS service, you use an endpoint. For example, the endpoint for customers in US East (Ohio) region (`us-east-2`), is `transfer.us-east-2.amazonaws.com`. Service quotas, also referred to as limits, are the maximum number of service resources or operations for your AWS account. In this guide, you can find quotas in [AS2 quotas](create-b2b-server.md#as2-quotas) and [Quotas for SFTP connectors](scale-and-limits-sftp-connector.md#limits-sftp-connector).
 
-For more information about supported AWS Regions, endpoints, and service quotas, see [AWS Transfer Family endpoints and quotas](https://docs.aws.amazon.com//general/latest/gr/transfer-service.html) in the *Amazon Web Services General Reference*.
+For more information about supported AWS Regions, endpoints, and service quotas, see [AWS Transfer Family endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/transfer-service.html) in the *Amazon Web Services General Reference*.
 
 For Transfer Family web apps, the supported regions are listed in [AWS Regions for Transfer Family web apps](web-app.md#webapp-regions). For quotas that pertain to Transfer Family web apps, see [Web app quotas](webapp-end-users.md#end-user-quotas).

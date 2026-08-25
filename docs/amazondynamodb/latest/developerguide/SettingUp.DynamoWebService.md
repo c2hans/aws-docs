@@ -19,7 +19,7 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Set
 ### Sign up for an AWS account
 <a name="sign-up-for-aws"></a>
 
-To get started with AWS, you need an AWS account. For information about creating an AWS account, see [Getting started with an AWS account](https://docs.aws.amazon.com//accounts/latest/reference/getting-started.html) in the *AWS Account Management Reference Guide*.
+To get started with AWS, you need an AWS account. For information about creating an AWS account, see [Getting started with an AWS account](https://docs.aws.amazon.com/accounts/latest/reference/getting-started.html) in the *AWS Account Management Reference Guide*.
 
 ## Configuring your credentials
 <a name="SettingUp.DynamoWebService.ConfigureCredentials"></a>
@@ -35,7 +35,7 @@ To get started with AWS, you need an AWS account. For information about creating
 
 You can integrate DynamoDB with many other AWS services. For more information, see the following:
 + [Using DynamoDB with other AWS services](OtherServices.md)
-+ [CloudFormation for DynamoDB](https://docs.aws.amazon.com//AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html)
++ [CloudFormation for DynamoDB](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html)
 + [Using AWS Backup with DynamoDB](backuprestore_HowItWorksAWS.md)
 + [AWS Identity and Access Management (IAM) and DynamoDB](identity-and-access-mgmt.md)
 + [Using AWS Lambda with Amazon DynamoDB](https://docs.aws.amazon.com/lambda/latest/dg/with-ddb.html)

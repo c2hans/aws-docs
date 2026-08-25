@@ -37,7 +37,7 @@ The easiest way to set up an inventory is by using the Amazon S3 console, but yo
 
    Some object metadata fields in S3 Inventory report configurations are optional, meaning that they're available by default but they can be restricted when you grant a user the `s3:PutInventoryConfiguration` permission. You can control whether users can include these optional metadata fields in their reports by using the `s3:InventoryAccessibleOptionalFields` condition key.
 
-   For more information about the optional metadata fields available in S3 Inventory, see [OptionalFields](https://docs.aws.amazon.com//AmazonS3/latest/API/API_PutBucketInventoryConfiguration.html#API_PutBucketInventoryConfiguration_RequestBody) in the *Amazon Simple Storage Service API Reference*. For more information about restricting access to certain optional metadata fields in an inventory configuration, see [Control S3 Inventory report configuration creation](example-bucket-policies.md#example-bucket-policies-s3-inventory-2).
+   For more information about the optional metadata fields available in S3 Inventory, see [OptionalFields](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketInventoryConfiguration.html#API_PutBucketInventoryConfiguration_RequestBody) in the *Amazon Simple Storage Service API Reference*. For more information about restricting access to certain optional metadata fields in an inventory configuration, see [Control S3 Inventory report configuration creation](example-bucket-policies.md#example-bucket-policies-s3-inventory-2).
 
    You can specify that the inventory list file be encrypted by using server-side encryption with an Amazon S3 managed key (SSE-S3) or an AWS Key Management Service (AWS KMS) customer managed key (SSE-KMS).
 **Note**

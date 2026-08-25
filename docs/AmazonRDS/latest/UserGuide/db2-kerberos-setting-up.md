@@ -180,7 +180,7 @@ After you enable Kerberos authentication, the master user loses the `masterdba` 
 ## Step 6: Modify DB parameter
 <a name="db2-kerberos-setting-up-modify-db-parameter"></a>
 
-If you plan to use AWS Managed Microsoft AD only, skip to [Step 7: Create or modify an RDS for Db2 DB instanceStep 7: Create or modify a DB instance](#db2-kerberos-setting-up-create-modify).
+If you plan to use AWS Managed Microsoft AD only, skip to [Step 7: Create or modify an RDS for Db2 DB instance](#db2-kerberos-setting-up-create-modify).
 
 To enable Kerberos authentication using your self-managed Active Directory, you must set the parameter `rds.active_directory_configuration` to `AWS_MANAGED_AD_WITH_TRUST` in your parameter group. By default, this parameter is set to `AWS_MANAGED_AD` for using AWS Managed Microsoft AD only.
 

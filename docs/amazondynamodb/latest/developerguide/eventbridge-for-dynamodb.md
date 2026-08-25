@@ -73,7 +73,7 @@ Follow the steps below to create an integration through the AWS Management Conso
    1. When building the event pattern, follow the guide for **Existing schema**. Here, you can select the *discovered-schemas* registry and the discovered schema for your event. This allows you to configure an event pattern specific to your use case that only routes messages that match specific attributes. For example, if you wanted to match only on DynamoDB items where the SK begins with `“user#”`, you’d use a configuration like this.
 ![Image showing an EventBridge rule where only DynamoDB items that have a sort key beginning with "user#" is displayed.](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/eventbridge-rule-example.png)
 
-   1. Click **Generate event pattern in JSON** after you’ve finished designing a pattern against your schema. If you instead want to match all events that appear on DynamoDB Streams, use the following JSON for the event pattern.
+   1. Choose **Generate event pattern in JSON** after you’ve finished designing a pattern against your schema. If you instead want to match all events that appear on DynamoDB Streams, use the following JSON for the event pattern.
 
       ```
       {

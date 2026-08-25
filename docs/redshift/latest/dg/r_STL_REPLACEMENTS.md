@@ -29,6 +29,7 @@ STL\_NESTLOOP only contains queries run on main provisioned clusters. It doesn't
 | line\_number | bigint | Line number in the input data file that contained an invalid UTF-8 character. A -1 indicates that the line number is not available, such as, when copying from a columnar data file. |
 | colname | character(127) | First field that contained an invalid UTF-8 character. |
 | raw\_line | character(1024) | Raw load data that contained an invalid UTF-8 character. |
+| user\_query\_id  | bigint  | The query identifier of the user-submitted query, as recorded in the query\_id column of [SYS\_COPY\_REPLACEMENTS](SYS_COPY_REPLACEMENTS.md).  |
 
 ## Sample queries
 <a name="r_STL_REPLACEMENTS-sample-queries"></a>

@@ -18,5 +18,4 @@ Motion graphic overlays are in the global processors. They appear on every outpu
 1. In the medium gray **Global Processors** section of the job, choose the **Motion Image Inserter** slider. The **Global Processors** section is just below the dark gray **Input** section.
 
 1. Specify values for the motion image inserter settings. See the following table for information about each field. For information about **Action Time** and **Loop Input**, see [Setting Up When Your Motion Graphic Plays](when-your-motion-overlay-plays.md).
-****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-server/latest/ug/motion-graphic-overlay.html)

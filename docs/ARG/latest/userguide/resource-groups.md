@@ -71,7 +71,7 @@ Tags are properties of a resource, so they are shared across your entire account
 ## AWS Resource Groups resources
 <a name="resourcegroups-arns"></a>
 
-In Resource Groups, the only available resource is a group. Groups have unique Amazon Resource Names (ARNs) associated with them. For more information about ARNs, see [Amazon Resource Names (ARN) and AWS Service Namespaces](https://docs.aws.amazon.com//general/latest/gr/aws-arns-and-namespaces.html) in the *Amazon Web Services General Reference*.
+In Resource Groups, the only available resource is a group. Groups have unique Amazon Resource Names (ARNs) associated with them. For more information about ARNs, see [Amazon Resource Names (ARN) and AWS Service Namespaces](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html) in the *Amazon Web Services General Reference*.
 
 |  Resource Type  |  ARN Format  |
 | --- | --- |

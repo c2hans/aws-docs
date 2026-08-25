@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awss
 
 AWS Server Migration Service provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="sms-GetApp"></a>[GetApp](https://docs.aws.amazon.com/server-migration-service/latest/APIReference/API_GetApp.html) | Get the configuration and statuses for an existing application | Read |

@@ -62,7 +62,7 @@ For example, you can use `_hotelPreferenceId` as a key name with the [SearchProf
 
 | Standard airPreference field | Data type | Description |
 | --- | --- | --- |
-| Type | String | The type of contact (e.g. personal, emergency) |
+| Type | String | The type of contact (for example, personal, emergency) |
 | PreferenceLevel | String | Priority level of this contact |
 | PhoneNumber | String | Phone number |
 | Relationship | String | The relationship to the profile |
@@ -218,7 +218,7 @@ For example, you can use `_hotelPreferenceId` as a key name with the [SearchProf
 
 | Standard hotelPreference field | Type | Description |
 | --- | --- | --- |
-| ChannelType | String | Type of marketing channel (e.g., SMS, Email) |
+| ChannelType | String | Type of marketing channel (for example, SMS, Email) |
 | OptIn | String | Opt-in status for marketing |
 | Frequency | String | Frequency of marketing communications |
 | StartDate | String | Start date of marketing preference |

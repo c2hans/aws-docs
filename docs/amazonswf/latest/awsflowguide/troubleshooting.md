@@ -102,8 +102,6 @@ Sometimes you may shut down workers and start new ones in quick succession only 
 
 In order to make sure that the problem is in fact due to old workers getting tasks, you should look at the workflow history to determine which process received the task that you expected the new worker to receive. For example, the `DecisionTaskStarted` event in history contains the identity of the workflow worker that received the task. The id used by the Flow Framework is of the form: {{{processId}}}`@`{{{host name}}}. For instance, following are the details of the `DecisionTaskStarted` event in the Amazon SWF console for a sample execution:
 
-****
-
 |  |  |
 | --- |--- |
 |  Event Timestamp  |  Mon Feb 20 11:52:40 GMT-800 2012  |

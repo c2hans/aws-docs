@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsc
 
 AWS Control Tower provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="controltower-DescribeAccountFactoryConfig"></a>[DescribeAccountFactoryConfig](https://docs.aws.amazon.com/controltower/latest/userguide/account-factory.html) | Describe the current account factory configuration | Read |

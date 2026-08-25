@@ -26,7 +26,7 @@ We recommend that you migrate to KCL 3.5 or later, which uses single table forma
   Follow the [Idle time removal ](https://docs.aws.amazon.com/streams/latest/dev/kcl-migration.html#idle-time-removal)and [Client configuration removals](https://docs.aws.amazon.com/streams/latest/dev/kcl-migration.html#client-configuration-removals) sections in the [Migrate consumers from KCL 1.x to KCL 2.x](https://docs.aws.amazon.com/streams/latest/dev/kcl-migration.html#recrod-processor-migration) page.
 + **Step 6: Follow the step-by-step instructions in the KCL 2.x to KCL 3.x migration guide**
 
-  Follow instructions on the [Migrate from KCL 2.x to KCL 3.x](kcl-migration-from-2-3.md) page to complete the migration. If you need to roll back to the previous KCL version or roll forward to KCL 3.x after a rollback, refer to [Roll back to the previous KCL version](kcl-migration-rollback.md) and [Roll forward to KCL 3.x after a rollback](kcl-migration-rollforward.md).
+  Follow instructions on the [Migrate from KCL 2.x to KCL 3.x](kcl-migration-from-2-3.md) page to complete the migration. If you need to roll back to the previous KCL version or roll forward to KCL 3.x after a rollback, refer to [Roll back to the previous KCL version](kcl-migration-rollback.md) and [Roll forward to KCL 3.5.x after a rollback from KCL 3.5.x](kcl-migration-rollforward.md).
 
 **Important**
 Do not use AWS SDK for Java version 2.27.19 to 2.27.23 with KCL 3.x. These versions include an issue that causes an exception error related to KCL's DynamoDB usage. We recommend that you use the AWS SDK for Java version 2.28.0 or later to avoid this issue.

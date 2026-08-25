@@ -13,7 +13,7 @@ In this tutorial, you will create an AWS Lambda trigger to process only some eve
 
 With [Lambda event filtering](https://docs.aws.amazon.com/lambda/latest/dg/invocation-eventfiltering.html) you can use filter expressions to control which events Lambda sends to your function for processing. You can configure up to 5 different filters per DynamoDB streams. If you are using batching windows, Lambda applies the filter criteria to each new event to see if it should be included in the current batch.
 
-Filters are applied via structures called `FilterCriteria`. The 3 main attributes of `FilterCriteria` are `metadata properties`, `data properties` and `filter patterns`.
+Filters are applied through structures called `FilterCriteria`. The 3 main attributes of `FilterCriteria` are `metadata properties`, `data properties` and `filter patterns`.
 
 Here is an example structure of a DynamoDB Streams event:
 
@@ -71,7 +71,7 @@ Finally, the filter rules will define the filter expression that you want to app
 You can specify up to 5 event filtering patterns for a Lambda function. Notice that each one of those 5 events will be evaluated as a logical OR. So if you configure two filters named `Filter_One` and `Filter_Two`, the Lambda function will execute `Filter_One` OR `Filter_Two`.
 
 **Note**
-In the [Lambda event filtering](https://docs.aws.amazon.com/lambda/latest/dg/invocation-eventfiltering.html) page there are some options to filter and compare numeric values, however in the case of DynamoDB filter events it doesn’t apply because numbers in DynamoDB are stored as strings. For example ` "quantity": { "N": "50" }`, we know its a number because of the `"N"` property.
+In the [Lambda event filtering](https://docs.aws.amazon.com/lambda/latest/dg/invocation-eventfiltering.html) page there are some options to filter and compare numeric values, however in the case of DynamoDB filter events it doesn’t apply because numbers in DynamoDB are stored as strings. For example ` "quantity": { "N": "50" }`, you know it's a number because of the `"N"` property.
 
 ## Putting it all together - CloudFormation
 <a name="Streams.Lambda.Tutorial2.Cloudformation"></a>
@@ -303,7 +303,7 @@ Notice the OR condition is added by introducing new patterns in the filter secti
 ## Putting it all together - CDK
 <a name="Streams.Lambda.Tutorial2.CDK"></a>
 
-The following sample CDK project formation template walks through event filtering functionality. Before working with this CDK project you will need to [ install the pre-requisites](https://docs.aws.amazon.com/cdk/v2/guide/work-with.html) including [ running preparation scripts](https://docs.aws.amazon.com/cdk/v2/guide/work-with-cdk-python.html).
+The following sample CDK project formation template walks through event filtering functionality. Before working with this CDK project, you must [install the prerequisites](https://docs.aws.amazon.com/cdk/v2/guide/work-with.html) including [ running preparation scripts](https://docs.aws.amazon.com/cdk/v2/guide/work-with-cdk-python.html).
 
 **Create a CDK project**
 
@@ -333,7 +333,7 @@ Open the file `./ddb_filters/ddb_filters_stack.py` with your preferred text edit
 
 Next, add the functions `_create_ddb_table` and `_set_ddb_trigger_function`. These functions will create a DynamoDB table with partition key PK and sort key SK in provision mode on-demand mode, with Amazon DynamoDB Streams enabled by default to show New and Old images.
 
-The Lambda function will be stored in the folder `lambda` under the file `app.py`. This file will be created later. It will include an environment variable `APP_TABLE_NAME`, which will be the name of the Amazon DynamoDB Table created by this stack. In the same function we will grant stream read permissions to the Lambda function. Finally, it will subscribe to the DynamoDB Streams as the event source for the lambda function.
+The Lambda function will be stored in the folder `lambda` under the file `app.py`. This file will be created later. It will include an environment variable `APP_TABLE_NAME`, which will be the name of the Amazon DynamoDB Table created by this stack. In the same function, the code grants stream read permissions to the Lambda function. Finally, it will subscribe to the DynamoDB Streams as the event source for the lambda function.
 
 At the end of the file in the `__init__` method, you will call the respective constructs to initialize them in the stack. For bigger projects that require additional components and services, it might be best to define these constructs outside the base stack.
 
@@ -399,7 +399,7 @@ class DdbFiltersStack(Stack):
         self._set_ddb_trigger_function(ddb_table)
 ```
 
-Now we will create a very simple lambda function that will print the logs into Amazon CloudWatch. To do this, create a new folder called `lambda`.
+Now create a simple Lambda function that prints the logs to Amazon CloudWatch. To do this, create a new folder called `lambda`.
 
 ```
 mkdir lambda

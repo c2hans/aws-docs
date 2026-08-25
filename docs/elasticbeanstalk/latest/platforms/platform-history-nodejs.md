@@ -9,12 +9,30 @@ This page lists the current and previous versions of AWS Elastic Beanstalk's Nod
 
 See the [Supported platforms](platforms-supported.md) page for information on the latest version of each platform supported by Elastic Beanstalk. Detailed release notes are available for recent releases at [AWS Elastic Beanstalk Release Notes](https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/).
 
-## August 11, 2026 – present
+## August 24, 2026 – present
+<a name="platform-history-2026-08-24"></a>
+
+The following Elastic Beanstalk platform versions for Node.js have been current since August 24, 2026:
+
+|  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
+| --- | --- | --- | --- | --- | --- |
+|  ** Node.js 24 AL2023 version 6.11.7** <br /> * 64bit Amazon Linux 2023 v6.11.7 running Node.js 24 *  | 2023.12.20260817 | 24.19.0 (11.17.0)<br /> Default version: v24.19.0 | nginx 1.30.4 (default), Apache 2.4.68 | 2.50.1 | 3.6.7 |
+|  ** Node.js 22 AL2023 version 6.11.7** <br /> * 64bit Amazon Linux 2023 v6.11.7 running Node.js 22 *  | 2023.12.20260817 | 22.23.2 (10.9.8)<br /> Default version: v22.23.2 | nginx 1.30.4 (default), Apache 2.4.68 | 2.50.1 | 3.6.7 |
+
+## August 13, 2026 – August 23, 2026
+<a name="platform-history-2026-08-13"></a>
+
+The following Elastic Beanstalk platform versions for Node.js were current between August 13, 2026 and August 23, 2026:
+
+|  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
+| --- | --- | --- | --- | --- | --- |
+|  ** Node.js 24 AL2023 version 6.11.6** <br /> * 64bit Amazon Linux 2023 v6.11.6 running Node.js 24 *  | 2023.12.20260803 | 24.18.0 (11.16.0)<br /> Default version: v24.18.0 | nginx 1.30.4 (default), Apache 2.4.68 | 2.50.1 | 3.6.7 |
+|  ** Node.js 22 AL2023 version 6.11.6** <br /> * 64bit Amazon Linux 2023 v6.11.6 running Node.js 22 *  | 2023.12.20260803 | 22.23.2 (10.9.8)<br /> Default version: v22.23.2 | nginx 1.30.4 (default), Apache 2.4.68 | 2.50.1 | 3.6.7 |
+
+## August 11, 2026 – August 12, 2026
 <a name="platform-history-2026-08-11"></a>
 
-The following Elastic Beanstalk platform versions for Node.js have been current since August 11, 2026:
-
-****
+The following Elastic Beanstalk platform versions for Node.js were current between August 11, 2026 and August 12, 2026:
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -27,8 +45,6 @@ The following Elastic Beanstalk platform versions for Node.js have been current 
 
 The following Elastic Beanstalk platform versions for Node.js were current between July 29, 2026 and August 10, 2026:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 24 AL2023 version 6.11.5** <br /> * 64bit Amazon Linux 2023 v6.11.5 running Node.js 24 *  | 2023.12.20260727 | 24.18.0 (11.16.0)<br /> Default version: v24.18.0 | nginx 1.30.3 (default), Apache 2.4.68 | 2.50.1 | 3.6.5 |
@@ -39,8 +55,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2026-07-16"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between July 16, 2026 and July 28, 2026:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -53,8 +67,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between July 8, 2026 and July 15, 2026:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 24 AL2023 version 6.11.3** <br /> * 64bit Amazon Linux 2023 v6.11.3 running Node.js 24 *  | 2023.12.20260622 | 24.18.0 (11.16.0)<br /> Default version: v24.18.0 | nginx 1.30.2 (default), Apache 2.4.68 | 2.50.1 | 3.6.5 |
@@ -65,8 +77,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2026-06-29"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between June 29, 2026 and July 7, 2026:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -79,8 +89,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between June 12, 2026 and June 28, 2026:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 24 AL2023 version 6.11.2** <br /> * 64bit Amazon Linux 2023 v6.11.2 running Node.js 24 *  | 2023.12.20260608 | 24.16.0 (11.13.0)<br /> Default version: v24.16.0 | nginx 1.30.2 (default), Apache 2.4.67 | 2.50.1 | 3.6.5 |
@@ -91,8 +99,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2026-05-28"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between May 28, 2026 and June 11, 2026:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -105,8 +111,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between May 19, 2026 and May 27, 2026:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 24 AL2023 version 6.11.0** <br /> * 64bit Amazon Linux 2023 v6.11.0 running Node.js 24 *  | 2023.11.20260514 | 24.15.0 (11.12.1)<br /> Default version: v24.15.0 | nginx 1.30.0 (default), Apache 2.4.66 | 2.50.1 | 3.6.2 |
@@ -117,8 +121,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2026-05-07"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between May 7, 2026 and May 18, 2026:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -131,8 +133,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between May 4, 2026 and May 6, 2026:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 24 AL2023 version 6.10.2** <br /> * 64bit Amazon Linux 2023 v6.10.2 running Node.js 24 *  | 2023.11.20260427 | 24.15.0 (11.12.1)<br /> Default version: v24.15.0 | nginx 1.28.3 (default), Apache 2.4.66 | 2.50.1 | 3.6.2 |
@@ -143,8 +143,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2026-04-09"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between April 9, 2026 and May 3, 2026:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -157,8 +155,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between March 31, 2026 and April 8, 2026:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 24 AL2023 version 6.10.0** <br /> * 64bit Amazon Linux 2023 v6.10.0 running Node.js 24 *  | 2023.10.20260325 | 24.14.1 (11.11.0)<br /> Default version: v24.14.1 | nginx 1.28.2 (default), Apache 2.4.66 | 2.50.1 | 3.6.2 |
@@ -169,8 +165,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2026-03-11"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between March 11, 2026 and March 30, 2026:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -183,8 +177,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between February 26, 2026 and March 10, 2026:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 24 AL2023 version 6.8.0** <br /> * 64bit Amazon Linux 2023 v6.8.0 running Node.js 24 *  | 2023.10.20260216 | 24.14.0 (11.9.0)<br /> Default version: v24.14.0 | nginx 1.28.2 (default), Apache 2.4.66 | 2.50.1 | 3.6.2 |
@@ -195,8 +187,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2026-02-12"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between February 12, 2026 and February 25, 2026:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -209,8 +199,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between January 30, 2026 and February 11, 2026:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 24 AL2023 version 6.7.3** <br /> * 64bit Amazon Linux 2023 v6.7.3 running Node.js 24 *  | 2023.10.20260120 | 24.13.0 (11.6.2)<br /> Default version: v24.13.0 | nginx 1.28.1 (default), Apache 2.4.66 | 2.50.1 | 3.6.1 |
@@ -221,8 +209,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2026-01-15"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between January 15, 2026 and January 29, 2026:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -235,8 +221,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between January 13, 2026 and January 14, 2026:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 24 AL2023 version 6.7.2** <br /> * 64bit Amazon Linux 2023 v6.7.2 running Node.js 24 *  | 2023.10.20260105 | 24.12.0 (11.6.2)<br /> Default version: v24.12.0 | nginx 1.28.0 (default), Apache 2.4.66 | 2.50.1 | 3.6.1 |
@@ -247,8 +231,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2025-12-16"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between December 16, 2025 and January 12, 2026:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -261,8 +243,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between November 20, 2025 and December 15, 2025:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 24 AL2023 version 6.7.0** <br /> * 64bit Amazon Linux 2023 v6.7.0 running Node.js 24 *  | 2023.9.20251117 | 24.11.1 (11.6.2)<br /> Default version: v24.11.1 | nginx 1.28.0 (default), Apache 2.4.65 | 2.50.1 | 3.6.1 |
@@ -274,8 +254,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between November 5, 2025 and November 19, 2025:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 22 AL2023 version 6.6.8** <br /> * 64bit Amazon Linux 2023 v6.6.8 running Node.js 22 *  | 2023.9.20251027 | 22.21.1 (10.9.4)<br /> Default version: v22.21.1 | nginx 1.28.0 (default), Apache 2.4.65 | 2.50.1 | 3.3.15 |
@@ -285,8 +263,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2025-10-27"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between October 27, 2025 and November 4, 2025:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -298,8 +274,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between October 16, 2025 and October 26, 2025:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 22 AL2023 version 6.6.6** <br /> * 64bit Amazon Linux 2023 v6.6.6 running Node.js 22 *  | 2023.9.20250929 | 22.20.0 (10.9.3)<br /> Default version: v22.20.0 | nginx 1.28.0 (default), Apache 2.4.65 | 2.50.1 | 3.3.15 |
@@ -309,8 +283,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2025-10-07"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between October 7, 2025 and October 15, 2025:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -322,8 +294,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between September 16, 2025 and October 6, 2025:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 22 AL2023 version 6.6.5** <br /> * 64bit Amazon Linux 2023 v6.6.5 running Node.js 22 *  | 2023.8.20250908 | 22.19.0 (10.9.3)<br /> Default version: v22.19.0 | nginx 1.28.0 (default), Apache 2.4.64 | 2.50.1 | 3.3.15 |
@@ -333,8 +303,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2025-08-22"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between August 22, 2025 and September 15, 2025:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -346,8 +314,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between August 20, 2025 and August 21, 2025:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 22 AL2023 version 6.6.4** <br /> * 64bit Amazon Linux 2023 v6.6.4 running Node.js 22 *  | 2023.8.20250818 | 22.18.0 (10.9.3)<br /> Default version: v22.18.0 | nginx 1.28.0 (default), Apache 2.4.64 | 2.50.1 | 3.3.15 |
@@ -358,8 +324,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between August 11, 2025 and August 19, 2025:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 22 AL2023 version 6.6.3** <br /> * 64bit Amazon Linux 2023 v6.6.3 running Node.js 22 *  | 2023.8.20250804 | 22.18.0 (10.9.3)<br /> Default version: v22.18.0 | nginx 1.28.0 (default), Apache 2.4.64 | 2.50.1 | 3.3.15 |
@@ -369,8 +333,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2025-08-07"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between August 7, 2025 and August 10, 2025:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -384,8 +346,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between July 31, 2025 and August 6, 2025:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 22 AL2023 version 6.6.2** <br /> * 64bit Amazon Linux 2023 v6.6.2 running Node.js 22 *  | 2023.8.20250721 | 22.17.1 (10.9.2)<br /> Default version: v22.17.1 | nginx 1.28.0 (default), Apache 2.4.62 | 2.50.1 | 3.3.15 |
@@ -397,8 +357,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2025-07-30"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between July 30, 2025 and July 30, 2025:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -412,8 +370,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between July 17, 2025 and July 29, 2025:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 22 AL2023 version 6.6.1** <br /> * 64bit Amazon Linux 2023 v6.6.1 running Node.js 22 *  | 2023.8.20250707 | 22.17.0 (10.9.2)<br /> Default version: v22.17.0 | nginx 1.28.0 (default), Apache 2.4.62 | 2.47.1 | 3.3.15 |
@@ -425,8 +381,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2025-06-27"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between June 27, 2025 and July 16, 2025:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -440,8 +394,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between June 26, 2025 and June 26, 2025:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 22 AL2023 version 6.5.2** <br /> * 64bit Amazon Linux 2023 v6.5.2 running Node.js 22 *  | 2023.7.20250512 | 22.15.1 (10.9.2)<br /> Default version: v22.15.1 | nginx 1.26.3 (default), Apache 2.4.62 | 2.47.1 | 3.3.14 |
@@ -453,8 +405,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2025-05-20"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between May 20, 2025 and June 25, 2025:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -468,8 +418,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between April 24, 2025 and May 19, 2025:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 22 AL2023 version 6.5.1** <br /> * 64bit Amazon Linux 2023 v6.5.1 running Node.js 22 *  | 2023.7.20250414 | 22.14.0 (10.9.2)<br /> Default version: v22.14.0 | nginx 1.26.3 (default), Apache 2.4.62 | 2.47.1 | 3.3.14 |
@@ -481,8 +429,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2025-04-22"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between April 22, 2025 and April 23, 2025:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -496,8 +442,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between March 28, 2025 and April 21, 2025:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 22 AL2023 version 6.5.0** <br /> * 64bit Amazon Linux 2023 v6.5.0 running Node.js 22 *  | 2023.6.20250317 | 22.14.0 (10.9.2)<br /> Default version: v22.14.0 | nginx 1.26.3 (default), Apache 2.4.62 | 2.47.1 | 3.3.14 |
@@ -509,8 +453,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2025-02-27"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between February 27, 2025 and March 27, 2025:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -524,8 +466,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between February 25, 2025 and February 26, 2025:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 22 AL2023 version 6.4.3** <br /> * 64bit Amazon Linux 2023 v6.4.3 running Node.js 22 *  | 2023.6.20250218 | 22.14.0 (10.9.2)<br /> Default version: v22.14.0 | nginx 1.26.3 (default), Apache 2.4.62 | 2.47.1 | 3.3.14 |
@@ -537,8 +477,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2025-01-28"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between January 28, 2025 and February 24, 2025:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -552,8 +490,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between January 3, 2025 and January 27, 2025:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 22 AL2023 version 6.4.1** <br /> * 64bit Amazon Linux 2023 v6.4.1 running Node.js 22 *  | 2023.6.20241212 | 22.12.0 (10.9.0)<br /> Default version: v22.12.0 | nginx 1.26.2 (default), Apache 2.4.62 | 2.40.1 | 3.3.13 |
@@ -565,8 +501,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2024-12-19"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between December 19, 2024 and January 2, 2025:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -580,8 +514,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between November 21, 2024 and December 18, 2024:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 22 AL2023 version 6.4.0** <br /> * 64bit Amazon Linux 2023 v6.4.0 running Node.js 22 *  | 2023.6.20241111 | 22.11.0 (10.9.0)<br /> Default version: 22.11.0 | nginx 1.26.2 (default), Apache 2.4.62 | 2.40.1 | 3.3.13 |
@@ -594,8 +526,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between November 19, 2024 and November 20, 2024:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 20 AL2023 version 6.3.0** <br /> * 64bit Amazon Linux 2023 v6.3.0 running Node.js 20 *  | 2023.6.20241031 | 20.12.2 (10.5.0)<br /> Default version: 20.12.2 | nginx 1.26.2 (default), Apache 2.4.62 | 2.40.1 | 3.3.13 |
@@ -606,8 +536,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2024-11-08"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between November 8, 2024 and November 18, 2024:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -620,8 +548,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between October 10, 2024 and November 7, 2024:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 20 AL2023 version 6.2.2** <br /> * 64bit Amazon Linux 2023 v6.2.2 running Node.js 20 *  | 2023.5.20241001 | 20.12.2 (10.5.0)<br /> Default version: 20.12.2 | nginx 1.24.0 (default), Apache 2.4.62 | 2.40.1 | 3.3.13 |
@@ -632,8 +558,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2024-10-08"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between October 8, 2024 and October 9, 2024:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -648,8 +572,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between October 4, 2024 and October 7, 2024:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 20 AL2023 version 6.2.1** <br /> * 64bit Amazon Linux 2023 v6.2.1 running Node.js 20 *  | 2023.5.20240903 | 20.12.2 (10.5.0)<br /> Default version: 20.12.2 | nginx 1.24.0 (default), Apache 2.4.62 | 2.40.1 | 3.3.13 |
@@ -662,8 +584,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2024-09-12"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between September 12, 2024 and October 3, 2024:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -678,8 +598,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between September 10, 2024 and September 11, 2024:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 20 AL2023 version 6.2.1** <br /> * 64bit Amazon Linux 2023 v6.2.1 running Node.js 20 *  | 2023.5.20240903 | 20.12.2 (10.5.0)<br /> Default version: 20.12.2 | nginx 1.24.0 (default), Apache 2.4.62 | 2.40.1 | 3.3.13 |
@@ -692,8 +610,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2024-08-16"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between August 16, 2024 and September 9, 2024:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -708,8 +624,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between August 12, 2024 and August 15, 2024:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 20 AL2023 version 6.2.0** <br /> * 64bit Amazon Linux 2023 v6.2.0 running Node.js 20 *  | 2023.5.20240805 | 20.12.2 (10.5.0)<br /> Default version: 20.12.2 | nginx 1.24.0 (default), Apache 2.4.62 | 2.40.1 | 3.3.12 |
@@ -722,8 +636,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2024-07-29"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between July 29, 2024 and August 11, 2024:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -738,8 +650,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between July 18, 2024 and July 28, 2024:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 20 AL2023 version 6.1.7** <br /> * 64bit Amazon Linux 2023 v6.1.7 running Node.js 20 *  | 2023.5.20240701 | 20.12.2 (10.5.0)<br /> Default version: 20.12.2 | nginx 1.24.0 (default), Apache 2.4.59 | 2.40.1 | 3.3.12 |
@@ -752,8 +662,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2024-07-03"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between July 3, 2024 and July 17, 2024:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -768,8 +676,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between June 18, 2024 and July 2, 2024:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 20 AL2023 version 6.1.6** <br /> * 64bit Amazon Linux 2023 v6.1.6 running Node.js 20 *  | 2023.4.20240611 | 20.12.2 (10.5.0)<br /> Default version: 20.12.2 | nginx 1.24.0 (default), Apache 2.4.59 | 2.40.1 | 3.2.0 |
@@ -782,8 +688,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2024-06-13"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between June 13, 2024 and June 17, 2024:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -798,8 +702,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between May 28, 2024 and June 12, 2024:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 20 AL2023 version 6.1.5** <br /> * 64bit Amazon Linux 2023 v6.1.5 running Node.js 20 *  | 2023.4.20240513 | 20.12.2 (10.5.0)<br /> Default version: 20.12.2 | nginx 1.24.0 (default), Apache 2.4.59 | 2.40.1 | 3.2.0 |
@@ -812,8 +714,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2024-05-16"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between May 16, 2024 and May 27, 2024:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -828,8 +728,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between May 1, 2024 and May 15, 2024:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 20 AL2023 version 6.1.4** <br /> * 64bit Amazon Linux 2023 v6.1.4 running Node.js 20 *  | 2023.4.20240429 | 20.12.2 (10.5.0)<br /> Default version: 20.12.2 | nginx 1.24.0 (default), Apache 2.4.59 | 2.40.1 | 3.2.0 |
@@ -842,8 +740,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2024-04-26"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between April 26, 2024 and April 30, 2024:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -858,8 +754,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between April 23, 2024 and April 25, 2024:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 20 AL2023 version 6.1.3** <br /> * 64bit Amazon Linux 2023 v6.1.3 running Node.js 20 *  | 2023.4.20240416 | 20.11.1 (10.2.4)<br /> Default version: 20.11.1 | nginx 1.24.0 (default), Apache 2.4.58 | 2.40.1 | 3.2.0 |
@@ -872,8 +766,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2024-03-28"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between March 28, 2024 and April 22, 2024:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -888,8 +780,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between March 26, 2024 and March 27, 2024:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 20 AL2023 version 6.1.2** <br /> * 64bit Amazon Linux 2023 v6.1.2 running Node.js 20 *  | 2023.4.20240319 | 20.11.1 (10.2.4)<br /> Default version: 20.11.1 | nginx 1.24.0 (default), Apache 2.4.58 | 2.40.1 | 3.2.0 |
@@ -902,8 +792,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2024-02-28"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between February 28, 2024 and March 25, 2024:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -918,8 +806,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between February 22, 2024 and February 27, 2024:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 20 AL2023 version 6.1.1** <br /> * 64bit Amazon Linux 2023 v6.1.1 running Node.js 20 *  | 2023.3.20240219 | 20.10.0 (10.2.3)<br /> Default version: 20.10.0 | nginx 1.24.0 (default), Apache 2.4.58 | 2.40.1 | 3.2.0 |
@@ -932,8 +818,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2024-01-29"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between January 29, 2024 and February 21, 2024:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -948,8 +832,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between January 25, 2024 and January 28, 2024:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 20 AL2023 version 6.1.0** <br /> * 64bit Amazon Linux 2023 v6.1.0 running Node.js 20 *  | 2023.3.20240122 | 20.10.0 (10.2.3)<br /> Default version: 20.10.0 | nginx 1.24.0 (default), Apache 2.4.58 | 2.40.1 | 3.2.0 |
@@ -963,8 +845,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between December 19, 2023 and January 24, 2024:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 18 AL2023 version 6.0.4** <br /> * 64bit Amazon Linux 2023 v6.0.4 running Node.js 18 *  | 2023.3.20231211 | 18.18.2 (9.8.1)<br /> Default version: 18.18.2 | nginx 1.24.0 (default), Apache 2.4.58 | 2.40.1 | 3.2.0 |
@@ -976,8 +856,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2023-12-15"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between December 15, 2023 and December 18, 2023:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -991,8 +869,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between November 17, 2023 and December 14, 2023:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 18 AL2023 version 6.0.3** <br /> * 64bit Amazon Linux 2023 v6.0.3 running Node.js 18 *  | 2023.2.20231113 | 18.18.2 (9.8.1)<br /> Default version: 18.18.2 | nginx 1.24.0 (default), Apache 2.4.58 | 2.40.1 | 3.2.0 |
@@ -1004,8 +880,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2023-11-15"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between November 15, 2023 and November 16, 2023:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -1019,8 +893,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between October 24, 2023 and November 14, 2023:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 18 AL2023 version 6.0.2** <br /> * 64bit Amazon Linux 2023 v6.0.2 running Node.js 18 *  | 2023.2.20231016 | 18.18.0 (9.8.1)<br /> Default version: 18.18.0 | nginx 1.24.0 (default), Apache 2.4.56 | 2.40.1 | 3.2.0 |
@@ -1032,8 +904,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2023-10-19"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between October 19, 2023 and October 23, 2023:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -1047,8 +917,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between October 6, 2023 and October 18, 2023:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 18 AL2023 version 6.0.1** <br /> * 64bit Amazon Linux 2023 v6.0.1 running Node.js 18 *  | 2023.1.20230825 | 18.12.1 (8.19.2)<br /> Default version: 18.12.1 | nginx 1.24.0 (default), Apache 2.4.56 | 2.40.1 | 3.2.0 |
@@ -1060,8 +928,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2023-09-13"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between September 13, 2023 and October 5, 2023:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -1075,8 +941,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between September 5, 2023 and September 12, 2023:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 18 AL2023 version 6.0.0** <br /> * 64bit Amazon Linux 2023 v6.0.0 running Node.js 18 *  | 2023.1.20230725 | 18.12.1 (8.19.2)<br /> Default version: 18.12.1 | nginx 1.24.0 (default), Apache 2.4.56 | 2.40.1 | 3.2.0 |
@@ -1088,8 +952,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2023-08-04"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between August 4, 2023 and September 4, 2023:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -1103,8 +965,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between July 28, 2023 and August 3, 2023:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 18 AL2 version 5.8.4** <br /> * 64bit Amazon Linux 2 v5.8.4 running Node.js 18 *  | 2.0.20230719 | 18.17.0 (9.6.7), 18.16.1 (9.5.1), 18.16.0 (9.5.1), 18.15.0 (9.5.0), 18.14.2 (9.5.0), 18.14.1 (9.3.1), 18.14.0 (9.3.1), 18.13.0 (8.19.3), 18.12.1 (8.19.2), 18.12.0 (8.19.2), 18.11.0 (8.19.2), 18.10.0 (8.19.2), 18.9.1 (8.19.1), 18.9.0 (8.19.1), 18.8.0 (8.18.0), 18.7.0 (8.15.0), 18.6.0 (8.13.2), 18.5.0 (8.12.1), 18.4.0 (8.12.1), 18.3.0 (8.11.0), 18.2.0 (8.9.0), 18.1.0 (8.8.0), 18.0.0 (8.6.0)<br /> Default version: 18.17.0 | nginx 1.22.1 (default), Apache 2.4.57 | 2.40.1 | 3.2.0 |
@@ -1115,8 +975,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2023-06-30"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between June 30, 2023 and July 27, 2023:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -1129,8 +987,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between May 31, 2023 and June 29, 2023:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 18 AL2 version 5.8.2** <br /> * 64bit Amazon Linux 2 v5.8.2 running Node.js 18 *  | 2.0.20230515 | 18.16.0 (9.5.1), 18.15.0 (9.5.0), 18.14.2 (9.5.0), 18.14.1 (9.3.1), 18.14.0 (9.3.1), 18.13.0 (8.19.3), 18.12.1 (8.19.2), 18.12.0 (8.19.2), 18.11.0 (8.19.2), 18.10.0 (8.19.2), 18.9.1 (8.19.1), 18.9.0 (8.19.1), 18.8.0 (8.18.0), 18.7.0 (8.15.0), 18.6.0 (8.13.2), 18.5.0 (8.12.1), 18.4.0 (8.12.1), 18.3.0 (8.11.0), 18.2.0 (8.9.0), 18.1.0 (8.8.0), 18.0.0 (8.6.0)<br /> Default version: 18.16.0 | nginx 1.22.1 (default), Apache 2.4.57 | 2.39.2 | 3.2.0 |
@@ -1141,8 +997,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2023-04-28"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between April 28, 2023 and May 30, 2023:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -1155,8 +1009,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between April 3, 2023 and April 27, 2023:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 18 AL2 version 5.8.0** <br /> * 64bit Amazon Linux 2 v5.8.0 running Node.js 18 *  | 2.0.20230320 | 18.15.0 (9.5.0), 18.14.2 (9.5.0), 18.14.1 (9.3.1), 18.14.0 (9.3.1), 18.13.0 (8.19.3), 18.12.1 (8.19.2), 18.12.0 (8.19.2), 18.11.0 (8.19.2), 18.10.0 (8.19.2), 18.9.1 (8.19.1), 18.9.0 (8.19.1), 18.8.0 (8.18.0), 18.7.0 (8.15.0), 18.6.0 (8.13.2), 18.5.0 (8.12.1), 18.4.0 (8.12.1), 18.3.0 (8.11.0), 18.2.0 (8.9.0), 18.1.0 (8.8.0), 18.0.0 (8.6.0)<br /> Default version: 18.15.0 | nginx 1.22.1 (default), Apache 2.4.56 | 2.39.2 | 3.2.0 |
@@ -1168,8 +1020,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between March 7, 2023 and April 2, 2023:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 16 AL2 version 5.7.0** <br /> * 64bit Amazon Linux 2 v5.7.0 running Node.js 16 *  | 2.0.20230221 | 16.19.1 (8.19.3), 16.19.0 (8.19.3), 16.18.1 (8.19.2), 16.18.0 (8.19.2), 16.17.1 (8.15.0), 16.17.0 (8.15.0), 16.16.0 (8.11.0), 16.15.1 (8.11.0), 16.15.0 (8.5.5), 16.14.2 (8.5.0), 16.14.1 (8.5.0), 16.14.0 (8.3.1), 16.13.2 (8.1.2), 16.13.1 (8.1.2), 16.13.0 (8.1.0), 16.12.0 (8.1.0), 16.11.1 (8.0.0), 16.11.0 (8.0.0), 16.10.0 (7.24.0), 16.9.1 (7.21.1), 16.9.0 (7.21.1), 16.8.0 (7.21.0), 16.7.0 (7.20.3), 16.6.2 (7.20.3), 16.6.1 (7.20.3), 16.6.0 (7.19.1), 16.5.0 (7.19.1), 16.4.2 (7.18.1), 16.4.1 (7.18.1), 16.4.0 (7.18.1), 16.3.0 (7.15.1), 16.2.0 (7.13.0), 16.1.0 (7.11.2), 16.0.0 (7.10.0)<br /> Default version: 16.19.1 | nginx 1.22.1 (default), Apache 2.4.55 | 2.39.1 | 3.2.0 |
@@ -1179,8 +1029,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2023-02-01"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between February 1, 2023 and March 6, 2023:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -1192,8 +1040,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between December 29, 2022 and January 31, 2023:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 16 AL2 version 5.6.3** <br /> * 64bit Amazon Linux 2 v5.6.3 running Node.js 16 *  | 2.0.20221210 | 16.19.0 (8.19.3), 16.18.1 (8.19.2), 16.18.0 (8.19.2), 16.17.1 (8.15.0), 16.17.0 (8.15.0), 16.16.0 (8.11.0), 16.15.1 (8.11.0), 16.15.0 (8.5.5), 16.14.2 (8.5.0), 16.14.1 (8.5.0), 16.14.0 (8.3.1), 16.13.2 (8.1.2), 16.13.1 (8.1.2), 16.13.0 (8.1.0), 16.12.0 (8.1.0), 16.11.1 (8.0.0), 16.11.0 (8.0.0), 16.10.0 (7.24.0), 16.9.1 (7.21.1), 16.9.0 (7.21.1), 16.8.0 (7.21.0), 16.7.0 (7.20.3), 16.6.2 (7.20.3), 16.6.1 (7.20.3), 16.6.0 (7.19.1), 16.5.0 (7.19.1), 16.4.2 (7.18.1), 16.4.1 (7.18.1), 16.4.0 (7.18.1), 16.3.0 (7.15.1), 16.2.0 (7.13.0), 16.1.0 (7.11.2), 16.0.0 (7.10.0)<br /> Default version: 16.19.0 | nginx 1.22.0 (default), Apache 2.4.54 | 2.38.1 | 3.2.0 |
@@ -1204,8 +1050,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between December 23, 2022 and December 28, 2022:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 16 AL2 version 5.6.2** <br /> * 64bit Amazon Linux 2 v5.6.2 running Node.js 16 *  | 2.0.20221103 | 16.18.1 (8.19.2), 16.18.0 (8.19.2), 16.17.1 (8.15.0), 16.17.0 (8.15.0), 16.16.0 (8.11.0), 16.15.1 (8.11.0), 16.15.0 (8.5.5), 16.14.2 (8.5.0), 16.14.1 (8.5.0), 16.14.0 (8.3.1), 16.13.2 (8.1.2), 16.13.1 (8.1.2), 16.13.0 (8.1.0), 16.12.0 (8.1.0), 16.11.1 (8.0.0), 16.11.0 (8.0.0), 16.10.0 (7.24.0), 16.9.1 (7.21.1), 16.9.0 (7.21.1), 16.8.0 (7.21.0), 16.7.0 (7.20.3), 16.6.2 (7.20.3), 16.6.1 (7.20.3), 16.6.0 (7.19.1), 16.5.0 (7.19.1), 16.4.2 (7.18.1), 16.4.1 (7.18.1), 16.4.0 (7.18.1), 16.3.0 (7.15.1), 16.2.0 (7.13.0), 16.1.0 (7.11.2), 16.0.0 (7.10.0)<br /> Default version: 16.18.1 | nginx 1.22.0 (default), Apache 2.4.54 | 2.37.1 | 3.2.0 |
@@ -1215,8 +1059,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2022-12-06"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between December 6, 2022 and December 22, 2022:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -1229,8 +1071,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between November 4, 2022 and December 5, 2022:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 16 AL2 version 5.6.1** <br /> * 64bit Amazon Linux 2 v5.6.1 running Node.js 16 *  | 2.0.20221004 | 16.18.0 (8.19.2), 16.17.1 (8.15.0), 16.17.0 (8.15.0), 16.16.0 (8.11.0), 16.15.1 (8.11.0), 16.15.0 (8.5.5), 16.14.2 (8.5.0), 16.14.1 (8.5.0), 16.14.0 (8.3.1), 16.13.2 (8.1.2), 16.13.1 (8.1.2), 16.13.0 (8.1.0), 16.12.0 (8.1.0), 16.11.1 (8.0.0), 16.11.0 (8.0.0), 16.10.0 (7.24.0), 16.9.1 (7.21.1), 16.9.0 (7.21.1), 16.8.0 (7.21.0), 16.7.0 (7.20.3), 16.6.2 (7.20.3), 16.6.1 (7.20.3), 16.6.0 (7.19.1), 16.5.0 (7.19.1), 16.4.2 (7.18.1), 16.4.1 (7.18.1), 16.4.0 (7.18.1), 16.3.0 (7.15.1), 16.2.0 (7.13.0), 16.1.0 (7.11.2), 16.0.0 (7.10.0)<br /> Default version: 16.18.0 | nginx 1.22.0 (default), Apache 2.4.54 | 2.37.1 | 3.2.0 |
@@ -1241,8 +1081,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2022-10-03"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between October 3, 2022 and November 3, 2022:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -1255,8 +1093,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between August 31, 2022 and October 2, 2022:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 16 AL2 version 5.5.6** <br /> * 64bit Amazon Linux 2 v5.5.6 running Node.js 16 *  | 2.0.20220805 | 16.17.0 (8.15.0), 16.16.0 (8.11.0), 16.15.1 (8.11.0), 16.15.0 (8.5.5), 16.14.2 (8.5.0), 16.14.1 (8.5.0), 16.14.0 (8.3.1), 16.13.2 (8.1.2), 16.13.1 (8.1.2), 16.13.0 (8.1.0), 16.12.0 (8.1.0), 16.11.1 (8.0.0), 16.11.0 (8.0.0), 16.10.0 (7.24.0), 16.9.1 (7.21.1), 16.9.0 (7.21.1), 16.8.0 (7.21.0), 16.7.0 (7.20.3), 16.6.2 (7.20.3), 16.6.1 (7.20.3), 16.6.0 (7.19.1), 16.5.0 (7.19.1), 16.4.2 (7.18.1), 16.4.1 (7.18.1), 16.4.0 (7.18.1), 16.3.0 (7.15.1), 16.2.0 (7.13.0), 16.1.0 (7.11.2), 16.0.0 (7.10.0)<br /> Default version: 16.17.0 | nginx 1.20.0 (default), Apache 2.4.54 | 2.37.1 | 3.2.0 |
@@ -1267,8 +1103,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2022-08-08"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between August 8, 2022 and August 30, 2022:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -1281,8 +1115,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between July 18, 2022 and August 7, 2022:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 16 AL2 version 5.5.4** <br /> * 64bit Amazon Linux 2 v5.5.4 running Node.js 16 *  | 2.0.20220606 | 16.15.1 (8.11.0), 16.15.0 (8.5.5), 16.14.2 (8.5.0), 16.14.1 (8.5.0), 16.14.0 (8.3.1), 16.13.2 (8.1.2), 16.13.1 (8.1.2), 16.13.0 (8.1.0), 16.12.0 (8.1.0), 16.11.1 (8.0.0), 16.11.0 (8.0.0), 16.10.0 (7.24.0), 16.9.1 (7.21.1), 16.9.0 (7.21.1), 16.8.0 (7.21.0), 16.7.0 (7.20.3), 16.6.2 (7.20.3), 16.6.1 (7.20.3), 16.6.0 (7.19.1), 16.5.0 (7.19.1), 16.4.2 (7.18.1), 16.4.1 (7.18.1), 16.4.0 (7.18.1), 16.3.0 (7.15.1), 16.2.0 (7.13.0), 16.1.0 (7.11.2), 16.0.0 (7.10.0)<br /> Default version: 16.15.1 | nginx 1.20.0 (default), Apache 2.4.53 | 2.32.0 | 3.2.0 |
@@ -1293,8 +1125,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2022-06-29"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between June 29, 2022 and July 17, 2022:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -1307,8 +1137,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2022-06-22"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between June 22, 2022 and June 28, 2022:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -1323,8 +1151,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between May 26, 2022 and June 21, 2022:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 16 AL2 version 5.5.3** <br /> * 64bit Amazon Linux 2 v5.5.3 running Node.js 16 *  | 2.0.20220426 | 16.15.0 (8.5.5), 16.14.2 (8.5.0), 16.14.1 (8.5.0), 16.14.0 (8.3.1), 16.13.2 (8.1.2), 16.13.1 (8.1.2), 16.13.0 (8.1.0), 16.12.0 (8.1.0), 16.11.1 (8.0.0), 16.11.0 (8.0.0), 16.10.0 (7.24.0), 16.9.1 (7.21.1), 16.9.0 (7.21.1), 16.8.0 (7.21.0), 16.7.0 (7.20.3), 16.6.2 (7.20.3), 16.6.1 (7.20.3), 16.6.0 (7.19.1), 16.5.0 (7.19.1), 16.4.2 (7.18.1), 16.4.1 (7.18.1), 16.4.0 (7.18.1), 16.3.0 (7.15.1), 16.2.0 (7.13.0), 16.1.0 (7.11.2), 16.0.0 (7.10.0)<br /> Default version: 16.15.0 | nginx 1.20.0 (default), Apache 2.4.53 | 2.32.0 | 3.2.0 |
@@ -1337,8 +1163,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2022-04-29"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between April 29, 2022 and May 25, 2022:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -1353,8 +1177,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between March 31, 2022 and April 28, 2022:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 16 AL2 version 5.5.1** <br /> * 64bit Amazon Linux 2 v5.5.1 running Node.js 16 *  | 2.0.20220316 | 16.14.2 (8.5.0), 16.14.1 (8.5.0), 16.14.0 (8.3.1), 16.13.2 (8.1.2), 16.13.1 (8.1.2), 16.13.0 (8.1.0), 16.12.0 (8.1.0), 16.11.1 (8.0.0), 16.11.0 (8.0.0), 16.10.0 (7.24.0), 16.9.1 (7.21.1), 16.9.0 (7.21.1), 16.8.0 (7.21.0), 16.7.0 (7.20.3), 16.6.2 (7.20.3), 16.6.1 (7.20.3), 16.6.0 (7.19.1), 16.5.0 (7.19.1), 16.4.2 (7.18.1), 16.4.1 (7.18.1), 16.4.0 (7.18.1), 16.3.0 (7.15.1), 16.2.0 (7.13.0), 16.1.0 (7.11.2), 16.0.0 (7.10.0)<br /> Default version: 16.14.2 | nginx 1.20.0 (default), Apache 2.4.52 | 2.32.0 | 3.2.0 |
@@ -1367,8 +1189,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2022-03-02"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between March 2, 2022 and March 30, 2022:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -1383,8 +1203,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between February 3, 2022 and March 1, 2022:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 14 AL2 version 5.4.10** <br /> * 64bit Amazon Linux 2 v5.4.10 running Node.js 14 *  | 2.0.20220121 | 14.18.3 (6.14.15), 14.18.2 (6.14.15), 14.18.1 (6.14.15), 14.18.0 (6.14.15), 14.17.6 (6.14.15), 14.17.5 (6.14.14), 14.17.4 (6.14.14), 14.17.3 (6.14.13), 14.17.2 (6.14.13), 14.17.1 (6.14.13), 14.17.0 (6.14.13), 14.16.1 (6.14.12), 14.16.0 (6.14.11), 14.15.5 (6.14.11), 14.15.4 (6.14.10), 14.15.3 (6.14.9), 14.15.2 (6.14.9), 14.15.1 (6.14.8), 14.15.0 (6.14.8), 14.14.0 (6.14.8), 14.13.1 (6.14.8), 14.13.0 (6.14.8), 14.12.0 (6.14.8), 14.11.0 (6.14.8), 14.10.1 (6.14.8), 14.10.0 (6.14.8), 14.9.0 (6.14.8), 14.8.0 (6.14.7), 14.7.0 (6.14.7), 14.6.0 (6.14.6), 14.5.0 (6.14.5), 14.4.0 (6.14.5), 14.3.0 (6.14.5), 14.2.0 (6.14.4), 14.1.0 (6.14.4), 14.0.0 (6.14.4)<br /> Default version: 14.18.3 | nginx 1.20.0 (default), Apache 2.4.52 | 2.32.0 | 3.2.0 |
@@ -1396,8 +1214,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2021-12-21"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between December 21, 2021 and February 2, 2022:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -1411,8 +1227,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between November 24, 2021 and December 20, 2021:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 14 AL2 version 5.4.8** <br /> * 64bit Amazon Linux 2 v5.4.8 running Node.js 14 *  | 2.0.20211103 | 14.18.1 (6.14.15), 14.18.0 (6.14.15), 14.17.6 (6.14.15), 14.17.5 (6.14.14), 14.17.4 (6.14.14), 14.17.3 (6.14.13), 14.17.2 (6.14.13), 14.17.1 (6.14.13), 14.17.0 (6.14.13), 14.16.1 (6.14.12), 14.16.0 (6.14.11), 14.15.5 (6.14.11), 14.15.4 (6.14.10), 14.15.3 (6.14.9), 14.15.2 (6.14.9), 14.15.1 (6.14.8), 14.15.0 (6.14.8), 14.14.0 (6.14.8), 14.13.1 (6.14.8), 14.13.0 (6.14.8), 14.12.0 (6.14.8), 14.11.0 (6.14.8), 14.10.1 (6.14.8), 14.10.0 (6.14.8), 14.9.0 (6.14.8), 14.8.0 (6.14.7), 14.7.0 (6.14.7), 14.6.0 (6.14.6), 14.5.0 (6.14.5), 14.4.0 (6.14.5), 14.3.0 (6.14.5), 14.2.0 (6.14.4), 14.1.0 (6.14.4), 14.0.0 (6.14.4)<br /> Default version: 14.18.1 | nginx 1.20.0 (default), Apache 2.4.51 | 2.32.0 | 3.2.0 |
@@ -1424,8 +1238,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2021-11-19"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between November 19, 2021 and November 23, 2021:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -1439,8 +1251,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between October 21, 2021 and November 18, 2021:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 14 AL2 version 5.4.7** <br /> * 64bit Amazon Linux 2 v5.4.7 running Node.js 14 *  | 2.0.20211001 | 14.18.1 (6.14.15), 14.18.0 (6.14.15), 14.17.5 (6.14.14), 14.17.4 (6.14.14), 14.17.3 (6.14.13), 14.17.2 (6.14.13), 14.17.1 (6.14.13), 14.17.0 (6.14.13), 14.16.1 (6.14.12), 14.16.0 (6.14.11), 14.15.5 (6.14.11), 14.15.4 (6.14.10), 14.15.3 (6.14.9), 14.15.2 (6.14.9), 14.15.1 (6.14.8), 14.15.0 (6.14.8), 14.14.0 (6.14.8), 14.13.1 (6.14.8), 14.13.0 (6.14.8), 14.12.0 (6.14.8), 14.11.0 (6.14.8), 14.10.1 (6.14.8), 14.10.0 (6.14.8), 14.9.0 (6.14.8), 14.8.0 (6.14.7), 14.7.0 (6.14.7), 14.6.0 (6.14.6), 14.5.0 (6.14.5), 14.4.0 (6.14.5), 14.3.0 (6.14.5), 14.2.0 (6.14.4), 14.1.0 (6.14.4), 14.0.0 (6.14.4)<br /> Default version: 14.18.1 | nginx 1.20.0 (default), Apache 2.4.51 | 2.32.0 | 3.2.0 |
@@ -1452,8 +1262,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2021-10-03"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between October 3, 2021 and October 20, 2021:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -1467,8 +1275,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between September 2, 2021 and October 2, 2021:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 14 AL2 version 5.4.5** <br /> * 64bit Amazon Linux 2 v5.4.5 running Node.js 14 *  | 2.0.20210721 | 14.17.5 (6.14.14), 14.17.4 (6.14.14), 14.17.3 (6.14.13), 14.17.2 (6.14.13), 14.17.1 (6.14.13), 14.17.0 (6.14.13), 14.16.1 (6.14.12), 14.16.0 (6.14.11), 14.15.5 (6.14.11), 14.15.4 (6.14.10), 14.15.3 (6.14.9), 14.15.2 (6.14.9), 14.15.1 (6.14.8), 14.15.0 (6.14.8), 14.14.0 (6.14.8), 14.13.1 (6.14.8), 14.13.0 (6.14.8), 14.12.0 (6.14.8), 14.11.0 (6.14.8), 14.10.1 (6.14.8), 14.10.0 (6.14.8), 14.9.0 (6.14.8), 14.8.0 (6.14.7), 14.7.0 (6.14.7), 14.6.0 (6.14.6), 14.5.0 (6.14.5), 14.4.0 (6.14.5), 14.3.0 (6.14.5), 14.2.0 (6.14.4), 14.1.0 (6.14.4), 14.0.0 (6.14.4)<br /> Default version: 14.17.5 | nginx 1.20.0 (default), Apache 2.4.48 | 2.32.0 | 3.2.0 |
@@ -1480,8 +1286,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2021-07-30"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between July 30, 2021 and September 1, 2021:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -1495,8 +1299,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between July 21, 2021 and July 29, 2021:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 14 AL2 version 5.4.3** <br /> * 64bit Amazon Linux 2 v5.4.3 running Node.js 14 *  | 2.0.20210701 | 14.17.3 (6.14.13), 14.17.2 (6.14.13), 14.17.1 (6.14.13), 14.17.0 (6.14.13), 14.16.1 (6.14.12), 14.16.0 (6.14.11), 14.15.5 (6.14.11), 14.15.4 (6.14.10), 14.15.3 (6.14.9), 14.15.2 (6.14.9), 14.15.1 (6.14.8), 14.15.0 (6.14.8), 14.14.0 (6.14.8), 14.13.1 (6.14.8), 14.13.0 (6.14.8), 14.12.0 (6.14.8), 14.11.0 (6.14.8), 14.10.1 (6.14.8), 14.10.0 (6.14.8), 14.9.0 (6.14.8), 14.8.0 (6.14.7), 14.7.0 (6.14.7), 14.6.0 (6.14.6), 14.5.0 (6.14.5), 14.4.0 (6.14.5), 14.3.0 (6.14.5), 14.2.0 (6.14.4), 14.1.0 (6.14.4), 14.0.0 (6.14.4)<br /> Default version: 14.17.3 | nginx 1.20.0 (default), Apache 2.4.48 | 2.32.0 | 3.2.0 |
@@ -1508,8 +1310,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2021-07-08"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between July 8, 2021 and July 20, 2021:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -1523,8 +1323,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between July 7, 2021 and July 7, 2021:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 14 AL2 version 5.4.2** <br /> * 64bit Amazon Linux 2 v5.4.2 running Node.js 14 *  | 2.0.20210617 | 14.17.1 (6.14.13), 14.17.0 (6.14.13), 14.16.1 (6.14.12), 14.16.0 (6.14.11), 14.15.5 (6.14.11), 14.15.4 (6.14.10), 14.15.3 (6.14.9), 14.15.2 (6.14.9), 14.15.1 (6.14.8), 14.15.0 (6.14.8), 14.14.0 (6.14.8), 14.13.1 (6.14.8), 14.13.0 (6.14.8), 14.12.0 (6.14.8), 14.11.0 (6.14.8), 14.10.1 (6.14.8), 14.10.0 (6.14.8), 14.9.0 (6.14.8), 14.8.0 (6.14.7), 14.7.0 (6.14.7), 14.6.0 (6.14.6), 14.5.0 (6.14.5), 14.4.0 (6.14.5), 14.3.0 (6.14.5), 14.2.0 (6.14.4), 14.1.0 (6.14.4), 14.0.0 (6.14.4)<br /> Default version: 14.17.1 | nginx 1.20.0 (default), Apache 2.4.46 | 2.23.4 | 3.2.0 |
@@ -1536,8 +1334,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2021-06-11"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between June 11, 2021 and July 6, 2021:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -1551,8 +1347,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between June 1, 2021 and June 10, 2021:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 14 AL2 version 5.4.0** <br /> * 64bit Amazon Linux 2 v5.4.0 running Node.js 14 *  | 2.0.20210427 | 14.17.0 (6.14.13), 14.16.1 (6.14.12), 14.16.0 (6.14.11), 14.15.5 (6.14.11), 14.15.4 (6.14.10), 14.15.3 (6.14.9), 14.15.2 (6.14.9), 14.15.1 (6.14.8), 14.15.0 (6.14.8), 14.14.0 (6.14.8), 14.13.1 (6.14.8), 14.13.0 (6.14.8), 14.12.0 (6.14.8), 14.11.0 (6.14.8), 14.10.1 (6.14.8), 14.10.0 (6.14.8), 14.9.0 (6.14.8), 14.8.0 (6.14.7), 14.7.0 (6.14.7), 14.6.0 (6.14.6), 14.5.0 (6.14.5), 14.4.0 (6.14.5), 14.3.0 (6.14.5), 14.2.0 (6.14.4), 14.1.0 (6.14.4), 14.0.0 (6.14.4)<br /> Default version: 14.17.0 | nginx 1.20.0 (default), Apache 2.4.46 | 2.23.4 | 3.2.0 |
@@ -1564,8 +1358,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2021-05-26"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between May 26, 2021 and May 31, 2021:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -1579,8 +1371,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between May 3, 2021 and May 25, 2021:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 14 AL2 version 5.3.2** <br /> * 64bit Amazon Linux 2 v5.3.2 running Node.js 14 *  | 2.0.20210421 | 14.16.1 (6.14.12), 14.16.0 (6.14.11), 14.15.5 (6.14.11), 14.15.4 (6.14.10), 14.15.3 (6.14.9), 14.15.2 (6.14.9), 14.15.1 (6.14.8), 14.15.0 (6.14.8), 14.14.0 (6.14.8), 14.13.1 (6.14.8), 14.13.0 (6.14.8), 14.12.0 (6.14.8), 14.11.0 (6.14.8), 14.10.1 (6.14.8), 14.10.0 (6.14.8), 14.9.0 (6.14.8), 14.8.0 (6.14.7), 14.7.0 (6.14.7), 14.6.0 (6.14.6), 14.5.0 (6.14.5), 14.4.0 (6.14.5), 14.3.0 (6.14.5), 14.2.0 (6.14.4), 14.1.0 (6.14.4), 14.0.0 (6.14.4)<br /> Default version: 14.16.1 | nginx 1.18.0 (default), Apache 2.4.46 | 2.23.4 | 3.2.0 |
@@ -1592,8 +1382,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2021-04-21"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between April 21, 2021 and May 2, 2021:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -1607,8 +1395,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between March 31, 2021 and April 20, 2021:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 14 AL2 version 5.3.1** <br /> * 64bit Amazon Linux 2 v5.3.1 running Node.js 14 *  | 2.0.20210326 | 14.16.0 (6.14.11), 14.15.5 (6.14.11), 14.15.4 (6.14.10), 14.15.3 (6.14.9), 14.15.2 (6.14.9), 14.15.1 (6.14.8), 14.15.0 (6.14.8), 14.14.0 (6.14.8), 14.13.1 (6.14.8), 14.13.0 (6.14.8), 14.12.0 (6.14.8), 14.11.0 (6.14.8), 14.10.1 (6.14.8), 14.10.0 (6.14.8), 14.9.0 (6.14.8), 14.8.0 (6.14.7), 14.7.0 (6.14.7), 14.6.0 (6.14.6), 14.5.0 (6.14.5), 14.4.0 (6.14.5), 14.3.0 (6.14.5), 14.2.0 (6.14.4), 14.1.0 (6.14.4), 14.0.0 (6.14.4)<br /> Default version: 14.16.0 | nginx 1.18.0 (default), Apache 2.4.46 | 2.23.4 | 3.2.0 |
@@ -1620,8 +1406,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2021-03-30"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between March 30, 2021 and March 30, 2021:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -1635,8 +1419,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between March 1, 2021 and March 29, 2021:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 14 AL2 version 5.3.0** <br /> * 64bit Amazon Linux 2 v5.3.0 running Node.js 14 *  | 2.0.20210219 | 14.16.0 (6.14.11), 14.15.5 (6.14.11), 14.15.4 (6.14.10), 14.15.3 (6.14.9), 14.15.2 (6.14.9), 14.15.1 (6.14.8), 14.15.0 (6.14.8), 14.14.0 (6.14.8), 14.13.1 (6.14.8), 14.13.0 (6.14.8), 14.12.0 (6.14.8), 14.11.0 (6.14.8), 14.10.1 (6.14.8), 14.10.0 (6.14.8), 14.9.0 (6.14.8), 14.8.0 (6.14.7), 14.7.0 (6.14.7), 14.6.0 (6.14.6), 14.5.0 (6.14.5), 14.4.0 (6.14.5), 14.3.0 (6.14.5), 14.2.0 (6.14.4), 14.1.0 (6.14.4), 14.0.0 (6.14.4)<br /> Default version: 14.16.0 | nginx 1.18.0 (default), Apache 2.4.46 | 2.23.3 | 3.2.0 |
@@ -1648,8 +1430,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2021-02-26"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between February 26, 2021 and February 28, 2021:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -1663,8 +1443,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between January 29, 2021 and February 25, 2021:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 12 AL2 version 5.2.5** <br /> * 64bit Amazon Linux 2 v5.2.5 running Node.js 12 *  | 2.0.20210126 | 12.20.1 (6.14.10), 12.20.0 (6.14.8), 12.19.1 (6.14.8), 12.19.0 (6.14.8), 12.18.4 (6.14.6), 12.18.3 (6.14.6), 12.18.2 (6.14.5), 12.18.1 (6.14.5), 12.18.0 (6.14.4), 12.17.0 (6.14.4), 12.16.3 (6.14.4), 12.16.2 (6.14.4), 12.16.1 (6.13.4), 12.16.0 (6.13.4), 12.15.0 (6.13.4), 12.14.1 (6.13.4), 12.14.0 (6.13.4), 12.13.1 (6.12.1), 12.13.0 (6.12.0), 12.12.0 (6.11.3), 12.11.1 (6.11.3), 12.11.0 (6.11.3), 12.10.0 (6.10.3), 12.9.1 (6.10.2), 12.9.0 (6.10.2), 12.8.1 (6.10.2), 12.8.0 (6.10.2), 12.7.0 (6.10.0), 12.6.0 (6.9.0), 12.5.0 (6.9.0), 12.4.0 (6.9.0), 12.3.1 (6.9.0), 12.3.0 (6.9.0), 12.2.0 (6.9.0), 12.1.0 (6.9.0), 12.0.0 (6.9.0)<br /> Default version: 12.20.1 | nginx 1.18.0 (default), Apache 2.4.46 | 2.23.3 | 3.2.0 |
@@ -1675,8 +1453,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2021-01-28"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between January 28, 2021 and January 28, 2021:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -1689,8 +1465,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between December 30, 2020 and January 27, 2021:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 12 AL2 version 5.2.4** <br /> * 64bit Amazon Linux 2 v5.2.4 running Node.js 12 *  | 2.0.20201218 | 12.20.0 (6.14.8), 12.19.1 (6.14.8), 12.19.0 (6.14.8), 12.18.4 (6.14.6), 12.18.3 (6.14.6), 12.18.2 (6.14.5), 12.18.1 (6.14.5), 12.18.0 (6.14.4), 12.17.0 (6.14.4), 12.16.3 (6.14.4), 12.16.2 (6.14.4), 12.16.1 (6.13.4), 12.16.0 (6.13.4), 12.15.0 (6.13.4), 12.14.1 (6.13.4), 12.14.0 (6.13.4), 12.13.1 (6.12.1), 12.13.0 (6.12.0), 12.12.0 (6.11.3), 12.11.1 (6.11.3), 12.11.0 (6.11.3), 12.10.0 (6.10.3), 12.9.1 (6.10.2), 12.9.0 (6.10.2), 12.8.1 (6.10.2), 12.8.0 (6.10.2), 12.7.0 (6.10.0), 12.6.0 (6.9.0), 12.5.0 (6.9.0), 12.4.0 (6.9.0), 12.3.1 (6.9.0), 12.3.0 (6.9.0), 12.2.0 (6.9.0), 12.1.0 (6.9.0), 12.0.0 (6.9.0)<br /> Default version: 12.20.0 | nginx 1.18.0 (default), Apache 2.4.46 | 2.23.3 | 3.2.0 |
@@ -1701,8 +1475,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2020-12-29"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between December 29, 2020 and December 29, 2020:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -1715,8 +1487,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between November 11, 2020 and December 28, 2020:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 12 AL2 version 5.2.3** <br /> * 64bit Amazon Linux 2 v5.2.3 running Node.js 12 *  | 2.0.20200917 | 12.19.0 (6.14.8), 12.18.4 (6.14.6), 12.18.3 (6.14.6), 12.18.2 (6.14.5), 12.18.1 (6.14.5), 12.18.0 (6.14.4), 12.17.0 (6.14.4), 12.16.3 (6.14.4), 12.16.2 (6.14.4), 12.16.1 (6.13.4), 12.16.0 (6.13.4), 12.15.0 (6.13.4), 12.14.1 (6.13.4), 12.14.0 (6.13.4), 12.13.1 (6.12.1), 12.13.0 (6.12.0), 12.12.0 (6.11.3), 12.11.1 (6.11.3), 12.11.0 (6.11.3), 12.10.0 (6.10.3), 12.9.1 (6.10.2), 12.9.0 (6.10.2), 12.8.1 (6.10.2), 12.8.0 (6.10.2), 12.7.0 (6.10.0), 12.6.0 (6.9.0), 12.5.0 (6.9.0), 12.4.0 (6.9.0), 12.3.1 (6.9.0), 12.3.0 (6.9.0), 12.2.0 (6.9.0), 12.1.0 (6.9.0), 12.0.0 (6.9.0)<br /> Default version: 12.19.0 | nginx 1.18.0 (default), Apache 2.4.46 | 2.23.3 | 3.2.0 |
@@ -1727,8 +1497,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2020-11-10"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between November 10, 2020 and November 10, 2020:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -1741,8 +1509,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between October 7, 2020 and November 9, 2020:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 12 AL2 version 5.2.2** <br /> * 64bit Amazon Linux 2 v5.2.2 running Node.js 12 *  | 2.0.20200928 | 12.18.4 (6.14.6), 12.18.3 (6.14.6), 12.18.2 (6.14.5), 12.18.1 (6.14.5), 12.18.0 (6.14.4), 12.17.0 (6.14.4), 12.16.3 (6.14.4), 12.16.2 (6.14.4), 12.16.1 (6.13.4), 12.16.0 (6.13.4), 12.15.0 (6.13.4), 12.14.1 (6.13.4), 12.14.0 (6.13.4), 12.13.1 (6.12.1), 12.13.0 (6.12.0), 12.12.0 (6.11.3), 12.11.1 (6.11.3), 12.11.0 (6.11.3), 12.10.0 (6.10.3), 12.9.1 (6.10.2), 12.9.0 (6.10.2), 12.8.1 (6.10.2), 12.8.0 (6.10.2), 12.7.0 (6.10.0), 12.6.0 (6.9.0), 12.5.0 (6.9.0), 12.4.0 (6.9.0), 12.3.1 (6.9.0), 12.3.0 (6.9.0), 12.2.0 (6.9.0), 12.1.0 (6.9.0), 12.0.0 (6.9.0)<br /> Default version: 12.18.4 | nginx 1.18.0 (default), Apache 2.4.46 | 2.23.3 | 3.2.0 |
@@ -1753,8 +1519,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2020-10-06"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between October 6, 2020 and October 6, 2020:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -1767,8 +1531,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between September 10, 2020 and October 5, 2020:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 12 AL2 version 5.2.1** <br /> * 64bit Amazon Linux 2 v5.2.1 running Node.js 12 *  | 2.0.20200827 | 12.18.3 (6.14.6), 12.18.2 (6.14.5), 12.18.1 (6.14.5), 12.17.0 (6.14.4), 12.16.3 (6.14.4), 12.16.2 (6.14.4), 12.16.1 (6.13.4), 12.16.0 (6.13.4), 12.15.0 (6.13.4), 12.14.1 (6.13.4), 12.14.0 (6.13.4), 12.13.1 (6.12.1), 12.13.0 (6.12.0), 12.12.0 (6.11.3), 12.11.1 (6.11.3), 12.11.0 (6.11.3), 12.10.0 (6.10.3), 12.9.1 (6.10.2), 12.9.0 (6.10.2), 12.8.1 (6.10.2), 12.8.0 (6.10.2), 12.7.0 (6.10.0), 12.6.0 (6.9.0), 12.5.0 (6.9.0), 12.4.0 (6.9.0), 12.3.1 (6.9.0), 12.3.0 (6.9.0), 12.2.0 (6.9.0), 12.1.0 (6.9.0), 12.0.0 (6.9.0)<br /> Default version: 12.18.3 | nginx 1.18.0 (default), Apache 2.4.43 | 2.23.3 | 3.2.0 |
@@ -1779,8 +1541,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2020-09-03"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between September 3, 2020 and September 9, 2020:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -1793,8 +1553,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between August 7, 2020 and September 2, 2020:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 12 AL2 version 5.2.0** <br /> * 64bit Amazon Linux 2 v5.2.0 running Node.js 12 *  | 2.0.20200723 | 12.18.3 (6.14.6), 12.18.2 (6.14.5), 12.18.1 (6.14.5), 12.17.0 (6.14.4), 12.16.3 (6.14.4), 12.16.2 (6.14.4), 12.16.1 (6.13.4), 12.16.0 (6.13.4), 12.15.0 (6.13.4), 12.14.1 (6.13.4), 12.14.0 (6.13.4), 12.13.1 (6.12.1), 12.13.0 (6.12.0), 12.12.0 (6.11.3), 12.11.1 (6.11.3), 12.11.0 (6.11.3), 12.10.0 (6.10.3), 12.9.1 (6.10.2), 12.9.0 (6.10.2), 12.8.1 (6.10.2), 12.8.0 (6.10.2), 12.7.0 (6.10.0), 12.6.0 (6.9.0), 12.5.0 (6.9.0), 12.4.0 (6.9.0), 12.3.1 (6.9.0), 12.3.0 (6.9.0), 12.2.0 (6.9.0), 12.1.0 (6.9.0), 12.0.0 (6.9.0)<br /> Default version: 12.18.3 | nginx 1.18.0 (default), Apache 2.4.43 | 2.23.3 | 3.2.0 |
@@ -1805,8 +1563,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2020-08-04"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between August 4, 2020 and August 6, 2020:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -1819,8 +1575,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between July 6, 2020 and August 3, 2020:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 12 AL2 version 5.1.0** <br /> * 64bit Amazon Linux 2 v5.1.0 running Node.js 12 *  | 2.0.20200603 | 12.18.1 (6.14.5), 12.17.0 (6.14.4), 12.16.3 (6.14.4), 12.16.2 (6.14.4), 12.16.1 (6.13.4), 12.16.0 (6.13.4), 12.15.0 (6.13.4), 12.14.1 (6.13.4), 12.14.0 (6.13.4), 12.13.1 (6.12.1), 12.13.0 (6.12.0), 12.12.0 (6.11.3), 12.11.1 (6.11.3), 12.11.0 (6.11.3), 12.10.0 (6.10.3), 12.9.1 (6.10.2), 12.9.0 (6.10.2), 12.8.1 (6.10.2), 12.8.0 (6.10.2), 12.7.0 (6.10.0), 12.6.0 (6.9.0), 12.5.0 (6.9.0), 12.4.0 (6.9.0), 12.3.1 (6.9.0), 12.3.0 (6.9.0), 12.2.0 (6.9.0), 12.1.0 (6.9.0), 12.0.0 (6.9.0)<br /> Default version: 12.18.1 | nginx 1.16.1 | 2.23.3 | 3.2.0 |
@@ -1831,8 +1585,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2020-06-23"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between June 23, 2020 and July 5, 2020:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -1845,8 +1597,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between June 5, 2020 and June 22, 2020:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 12 AL2 version 5.0.2** <br /> * 64bit Amazon Linux 2 v5.0.2 running Node.js 12 *  | 2.0.20200520 | 12.17.0 (6.14.4), 12.16.3 (6.14.4), 12.16.2 (6.14.4), 12.16.1 (6.13.4), 12.16.0 (6.13.4), 12.15.0 (6.13.4), 12.14.1 (6.13.4), 12.14.0 (6.13.4), 12.13.1 (6.12.1), 12.13.0 (6.12.0), 12.12.0 (6.11.3), 12.11.1 (6.11.3), 12.11.0 (6.11.3), 12.10.0 (6.10.3), 12.9.1 (6.10.2), 12.9.0 (6.10.2), 12.8.1 (6.10.2), 12.8.0 (6.10.2), 12.7.0 (6.10.0), 12.6.0 (6.9.0), 12.5.0 (6.9.0), 12.4.0 (6.9.0), 12.3.1 (6.9.0), 12.3.0 (6.9.0), 12.2.0 (6.9.0), 12.1.0 (6.9.0), 12.0.0 (6.9.0)<br /> Default version: 12.17.0 | nginx 1.16.1 | 2.23.3 | 3.2.0 |
@@ -1857,8 +1607,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2020-06-03"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between June 3, 2020 and June 4, 2020:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -1871,8 +1619,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between May 6, 2020 and June 2, 2020:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 12 AL2 version 5.0.1** <br /> * 64bit Amazon Linux 2 v5.0.1 running Node.js 12 *  | 2.0.20200430 | 12.16.2 (6.14.4), 12.16.1 (6.13.4), 12.16.0 (6.13.4), 12.15.0 (6.13.4), 12.14.1 (6.13.4), 12.14.0 (6.13.4), 12.13.1 (6.12.1), 12.13.0 (6.12.0), 12.12.0 (6.11.3), 12.11.1 (6.11.3), 12.11.0 (6.11.3), 12.10.0 (6.10.3), 12.9.1 (6.10.2), 12.9.0 (6.10.2), 12.8.1 (6.10.2), 12.8.0 (6.10.2), 12.7.0 (6.10.0), 12.6.0 (6.9.0), 12.5.0 (6.9.0), 12.4.0 (6.9.0), 12.3.1 (6.9.0), 12.3.0 (6.9.0), 12.2.0 (6.9.0), 12.1.0 (6.9.0), 12.0.0 (6.9.0)<br /> Default version: 12.16.2 | nginx 1.16.1 | 2.23.1 | 3.2.0 |
@@ -1883,8 +1629,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2020-05-04"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between May 4, 2020 and May 5, 2020:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -1897,8 +1641,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between April 30, 2020 and May 3, 2020:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 12 AL2 version 5.0.0** <br /> * 64bit Amazon Linux 2 v5.0.0 running Node.js 12 *  | 2.0.20200406 | 12.16.2 (6.14.4), 12.16.1 (6.13.4), 12.16.0 (6.13.4), 12.15.0 (6.13.4), 12.14.1 (6.13.4), 12.14.0 (6.13.4), 12.13.1 (6.12.1), 12.13.0 (6.12.0), 12.12.0 (6.11.3), 12.11.1 (6.11.3), 12.11.0 (6.11.3), 12.10.0 (6.10.3), 12.9.1 (6.10.2), 12.9.0 (6.10.2), 12.8.1 (6.10.2), 12.8.0 (6.10.2), 12.7.0 (6.10.0), 12.6.0 (6.9.0), 12.5.0 (6.9.0), 12.4.0 (6.9.0), 12.3.1 (6.9.0), 12.3.0 (6.9.0), 12.2.0 (6.9.0), 12.1.0 (6.9.0), 12.0.0 (6.9.0)<br /> Default version: 12.16.1 | nginx 1.16.1 | 2.23.1 | 3.2.0 |
@@ -1910,8 +1652,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between March 27, 2020 and April 29, 2020:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js version 4.14.1** <br /> * 64bit Amazon Linux 2018.03 v4.14.1 running Node.js *  | 2018.03.0 | 12.16.1 (6.13.4), 12.15.0 (6.13.4), 12.14.1 (6.13.4), 12.14.0 (6.13.4), 10.19.0 (6.13.4), 10.18.1 (6.13.4), 10.18.0 (6.13.4), 10.17.0 (6.11.3), 10.16.3 (6.9.0), 10.16.2 (6.9.0), 10.16.1 (6.9.0), 10.16.0 (6.9.0), 10.15.3 (6.4.1), 10.15.1 (6.4.1), 10.15.0 (6.4.1), 10.14.1 (6.4.1), 8.17.0 (6.13.4), 8.16.2 (6.4.1), 8.16.1 (6.4.1), 8.16.0 (6.4.1), 8.15.1 (6.4.1), 8.15.0 (6.4.1), 8.14.0 (6.4.1), 7.10.1 (4.2.0), 6.17.1 (3.10.10), 6.17.0 (3.10.10), 6.16.0 (3.10.10), 6.15.1 (3.10.10), 5.12.0 (3.8.6), 4.9.1 (2.15.11), 4.8.7 (2.15.11)<br /> Default version: 12.16.1 | nginx 1.16.1, Apache 2.4.41 | 2.14.5 | 3.1.0 |
@@ -1920,8 +1660,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2020-02-28"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between February 28, 2020 and March 26, 2020:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -1932,8 +1670,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between January 21, 2020 and February 27, 2020:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js version 4.13.0** <br /> * 64bit Amazon Linux 2018.03 v4.13.0 running Node.js *  | 2018.03.0 | 12.14.1 (6.13.4), 12.14.0 (6.13.4), 10.18.1 (6.13.4), 10.18.0 (6.13.4), 10.17.0 (6.11.3), 10.16.3 (6.9.0), 10.16.2 (6.9.0), 10.16.1 (6.9.0), 10.16.0 (6.9.0), 10.15.3 (6.4.1), 10.15.1 (6.4.1), 10.15.0 (6.4.1), 10.14.1 (6.4.1), 8.17.0 (6.13.4), 8.16.2 (6.4.1), 8.16.1 (6.4.1), 8.16.0 (6.4.1), 8.15.1 (6.4.1), 8.15.0 (6.4.1), 8.14.0 (6.4.1), 7.10.1 (4.2.0), 6.17.1 (3.10.10), 6.17.0 (3.10.10), 6.16.0 (3.10.10), 6.15.1 (3.10.10), 5.12.0 (3.8.6), 4.9.1 (2.15.11), 4.8.7 (2.15.11)<br /> Default version: 12.14.1 | nginx 1.16.1, Apache 2.4.41 | 2.14.5 | 3.1.0 |
@@ -1942,8 +1678,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2019-11-25"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between November 25, 2019 and January 20, 2020:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -1954,8 +1688,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between October 17, 2019 and November 24, 2019:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js version 4.11.0** <br /> * 64bit Amazon Linux 2018.03 v4.11.0 running Node.js *  | 2018.03.0 | 10.16.3 (6.9.0), 10.16.2 (6.9.0), 10.16.1 (6.9.0), 10.16.0 (6.9.0), 10.15.3 (6.4.1), 10.15.1 (6.4.1), 10.15.0 (6.4.1), 10.14.1 (6.4.1), 8.16.2 (6.4.1), 8.16.1 (6.4.1), 8.16.0 (6.4.1), 8.15.1 (6.4.1), 8.15.0 (6.4.1), 8.14.0 (6.4.1), 7.10.1 (4.2.0), 6.17.1 (3.10.10), 6.17.0 (3.10.10), 6.16.0 (3.10.10), 6.15.1 (3.10.10), 5.12.0 (3.8.6), 4.9.1 (2.15.11), 4.8.7 (2.15.11)<br /> Default version: 10.16.3 | nginx 1.16.1, Apache 2.4.39 | 2.14.5 | 3.1.0 |
@@ -1964,8 +1696,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 <a name="platform-history-2019-09-06"></a>
 
 The following Elastic Beanstalk platform versions for Node.js were current between September 6, 2019 and October 16, 2019:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -1976,8 +1706,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between August 8, 2019 and September 5, 2019:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js version 4.10.1** <br /> * 64bit Amazon Linux 2018.03 v4.10.1 running Node.js *  | 2018.03.0 | 10.16.0 (6.9.0), 10.15.3 (6.4.1), 10.15.1 (6.4.1), 10.15.0 (6.4.1), 10.14.1 (6.4.1), 8.16.0 (6.4.1), 8.15.1 (6.4.1), 8.15.0 (6.4.1), 8.14.0 (6.4.1), 7.10.1 (4.2.0), 6.17.1 (3.10.10), 6.17.0 (3.10.10), 6.16.0 (3.10.10), 6.15.1 (3.10.10), 5.12.0 (3.8.6), 4.9.1 (2.15.11), 4.8.7 (2.15.11)<br /> Default version: 10.16.0 | nginx 1.14.1, Apache 2.4.39 | 2.14.5 | 3.1.0 |
@@ -1987,15 +1715,11 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between June 17, 2019 and August 7, 2019:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js version 4.9.2** <br /> * 64bit Amazon Linux 2018.03 v4.9.2 running Node.js *  | 2018.03.0 | 10.16.0 (6.9.0), 10.15.3 (6.4.1), 10.15.1 (6.4.1), 10.15.0 (6.4.1), 10.14.1 (6.4.1), 8.16.0 (6.4.1), 8.15.1 (6.4.1), 8.15.0 (6.4.1), 8.14.0 (6.4.1), 7.10.1 (4.2.0), 6.17.1 (3.10.10), 6.17.0 (3.10.10), 6.16.0 (3.10.10), 6.15.1 (3.10.10), 5.12.0 (3.8.6), 4.9.1 (2.15.11), 4.8.7 (2.15.11)<br /> Default version: 10.16.0 | nginx 1.14.1, Apache 2.4.39 | 2.14.5 | 3.0.0 |
 
 The following Elastic Beanstalk platform versions for Node.js were current between June 14, 2019 and June 16, 2019:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -2003,15 +1727,11 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between June 7, 2019 and June 13, 2019:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  **Node.js version 4.9.0** <br /> * 64bit Amazon Linux 2018.03 v4.9.0 running Node.js *  | 2018.03.0 | 10.16.0 (6.9.0), 10.15.3 (6.4.1), 10.15.1 (6.4.1), 10.15.0 (6.4.1), 10.14.1 (6.4.1), 8.16.0 (6.4.1), 8.15.1 (6.4.1), 8.15.0 (6.4.1), 8.14.0 (6.4.1), 7.10.1 (4.2.0), 6.17.1 (3.10.10), 6.17.0 (3.10.10), 6.16.0 (3.10.10), 6.15.1 (3.10.10), 5.12.0 (3.8.6), 4.9.1 (2.15.11), 4.8.7 (2.15.11)<br /> Default version: 10.16.0 | nginx 1.14.1, Apache 2.4.39 | 2.14.5 | 3.0.0 |
 
 The following Elastic Beanstalk platform versions for Node.js were current between May 3, 2019 and June 6, 2019:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -2019,15 +1739,11 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between April 2, 2019 and May 2, 2019:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  **Node.js version 4.8.2** <br /> * 64bit Amazon Linux 2018.03 v4.8.2 running Node.js *  | 2018.03.0 | 10.15.3 (6.4.1), 10.15.1 (6.4.1), 10.15.0 (6.4.1), 10.14.1 (6.4.1), 8.15.1 (6.4.1), 8.15.0 (6.4.1), 8.14.0 (6.4.1), 7.10.1 (4.2.0), 6.17.0 (3.10.10), 6.16.0 (3.10.10), 6.15.1 (3.10.10), 5.12.0 (3.8.6), 4.9.1 (2.15.11), 4.8.7 (2.15.11)<br /> Default platform: 10.15.3 | nginx 1.14.1, Apache 2.4.38 | 2.14.5 | 3.0.0 |
 
 The following Elastic Beanstalk platform versions for Node.js were current between February 21, 2019 and April 1, 2019:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -2035,15 +1751,11 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between January 23, 2019 and February 20, 2019:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  **Node.js version 4.8.0** <br /> * 64bit Amazon Linux 2018.03 v4.8.0 running Node.js *  | 2018.03.0 | 10.15.0 (6.4.1), 10.14.1 (6.4.1), 8.15.0 (6.4.1), 8.14.0 (6.4.1), 7.10.1 (4.2.0), 6.16.0 (3.10.10), 6.15.1 (3.10.10), 5.12.0 (3.8.6), 4.9.1 (2.15.11), 4.8.7 (2.15.11)<br /> Default platform: 10.15.0 | nginx 1.14.1, Apache 2.4.37 | 2.14.5 | 3.0.0 |
 
 The following Elastic Beanstalk platform versions for Node.js were current between December 17, 2018 and January 22, 2019:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js version (npm version)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -2051,15 +1763,11 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between November 16, 2018 and December 16, 2018:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js version (npm version)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  **Node.js version 4.7.0** <br /> * 64bit Amazon Linux 2018.03 v4.7.0 running Node.js *  | 2018.03.0 | 10.13.0 (6.4.1), 8.12.0 (6.4.1), 8.11.4 (5.6.0), 7.10.1 (4.2.0), 6.14.4 (3.10.10), 6.14.3(3.10.10), 5.12.0 (3.8.6), 4.9.1(2.15.11), 4.8.7 (2.15.11)<br /> Default platform: 10.13.0 | nginx 1.12.1, Apache 2.4.34 | 2.14.5 | 2.0.0 |
 
 The following Elastic Beanstalk platform versions for Node.js were current between October 29, 2018 and November 15, 2018:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js version (npm version)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -2067,15 +1775,11 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between September 25, 2018 and October 28, 2018:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js version (npm version)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  **Node.js version 4.5.4** <br /> * 64bit Amazon Linux 2018.03 v4.5.4 running Node.js *  | 2018.03.0 | 8.11.4 (5.6.0), 8.11.3(5.6.0), 7.10.1 (4.2.0), 6.14.4 (3.10.10), 6.14.3(3.10.10), 5.12.0 (3.8.6), 4.9.1(2.15.11), 4.8.7 (2.15.11)<br /> Default platform: 6.14.4 | nginx 1.12.1, Apache 2.4.34 | 2.14.4 | 2.0.0 |
 
 The following Elastic Beanstalk platform versions for Node.js were current between August 20, 2018 and September 24, 2018:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js version (npm version)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -2083,15 +1787,11 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between August 15, 2018 and August 19, 2018:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js version (npm version)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  **Node.js version 4.5.2** <br /> * 64bit Amazon Linux 2018.03 v4.5.2 running Node.js *  | 2018.03.0 | 8.11.3 (5.6.0), 8.11.1(5.6.0), 7.10.1 (4.2.0), 6.14.3 (3.10.10), 6.14.1(3.10.10), 5.12.0 (3.8.6), 4.9.1(2.15.11), 4.8.7 (2.15.11)<br /> Default platform: 6.14.3 | nginx 1.12.1, Apache 2.4.33 | 2.14.4 | 2.0.0 |
 
 The following Elastic Beanstalk platform versions for Node.js were current between June 21, 2018 and August 14, 2018:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js version (npm version)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -2099,15 +1799,11 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between May 11, 2018 and June 20, 2018:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js version (npm version)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  **Node.js version 4.5.0** <br /> * 64bit Amazon Linux 2018.03 v4.5.0 running Node.js *  | 2018.03.0 | 8.11.1(5.6.0), 8.10.0 (5.6.0), 7.10.1 (4.2.0), 6.14.1(3.10.10), 6.13.1 (3.10.10), 5.12.0 (3.8.6), 4.9.1(2.15.11), 4.8.7 (2.15.11)<br /> Default platform: 6.13.1 | nginx 1.12.1, Apache 2.4.27 | 2.13.6 | 2.0.0 |
 
 The following Elastic Beanstalk platform versions for Node.js were current between April 2, 2018 and May 10, 2018:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js version (npm version)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -2115,15 +1811,11 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between February 22, 2018 and April 1, 2018:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js version (npm version)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  **Node.js version 4.4.5** <br /> *64bit Amazon Linux 2017.09 v4.4.5 running Node.js*  | 2017.09.1 | 8.9.3 (5.5.1), 8.8.1 (5.4.2), 7.10.1 (4.2.0), 6.12.2 (3.10.10), 6.11.5 (3.10.10), 5.12.0 (3.8.6), 4.8.7 (2.15.11), 4.8.5 (2.15.11)<br /> Default platform: 6.11.5 | nginx 1.12.1, Apache 2.4.27 | 2.13.6 | 2.0.0 |
 
 The following Elastic Beanstalk platform versions for Node.js were current between January 19, 2018 and February 21, 2018:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js version (npm version)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -2131,15 +1823,11 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between January 10, 2018 and January 18, 2018:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js version (npm version)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  **Node.js version 4.4.3** <br /> *64bit Amazon Linux 2017.09 v4.4.3 running Node.js*  | 2017.09.1 | 8.9.3 (5.5.1), 8.8.1 (5.4.2), 7.10.1 (4.2.0), 6.12.2 (3.10.10), 6.11.5 (3.10.10), 5.12.0 (3.8.6), 4.8.7 (2.15.11), 4.8.5 (2.15.11)<br /> Default platform: 6.11.5 | nginx 1.12.1, Apache 2.4.27 | 2.13.6 | 2.0.0 |
 
 The following Elastic Beanstalk platform versions for Node.js were current between January 6, 2018 and January 9, 2018:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js version (npm version)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -2147,15 +1835,11 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between December 20, 2017 and January 5, 2018:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js version (npm version)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  **Node.js version 4.4.1** <br /> *64bit Amazon Linux 2017.09 v4.4.1 running Node.js*  | 2017.09.1 | 8.9.3 (5.5.1), 8.8.1 (5.4.2), 7.10.1 (4.2.0), 6.12.2 (3.10.10), 6.11.5 (3.10.10), 5.12.0 (3.8.6), 4.8.7 (2.15.11), 4.8.5 (2.15.11)<br /> Default platform: 6.11.5 | nginx 1.12.1, Apache 2.4.27 | 2.13.6 | 2.0.0 |
 
 The following Elastic Beanstalk platform versions for Node.js were current between November 14, 2017 and December 19, 2017:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js version (npm version)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -2163,15 +1847,11 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between September 25, 2017 and November 13, 2017:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js version (npm version)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  **Node.js version 4.3.0** <br /> *64bit Amazon Linux 2017.03 v4.3.0 running Node.js*  | 2017.03.1 | 8.4.0 (5.3.0), 8.1.4 (5.0.3), 7.10.1 (4.2.0), 7.6.0 (4.1.2), 6.11.1 (3.10.10), 6.10.0 (3.10.10), 5.12.0 (3.8.6), 4.8.4 (2.15.11)<br /> Default platform: 6.11.1 | nginx 1.12.1, Apache 2.4.27 | 2.13.5 | 2.0.0 |
 
 The following Elastic Beanstalk platform versions for Node.js were current between August 30, 2017 and September 24, 2017:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform (Package Manager — npm)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -2179,15 +1859,11 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between August 11, 2017 and August 29, 2017:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform (Package Manager — npm)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
 |  **Node.js version 4.2.1** <br /> *64bit Amazon Linux 2017.03 v4.2.1 running Node.js*  | 2017.03.1 | 8.1.4 (5.0.3), 7.10.1 (4.2.0), 7.6.0 (4.1.2), 6.11.1 (3.10.10), 6.10.0 (3.10.10), 5.12.0 (3.8.6), 4.8.4 (2.15.11), 4.8.0 (2.15.11)<br /> Default platform: 6.11.1 | nginx 1.10.3, Apache 2.4.27 | 2.7.4 | 2.0.0 |
 
 The following Elastic Beanstalk platform versions for Node.js were current between July 15, 2017 and August 10, 2017:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform (Package Manager — npm)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
@@ -2195,15 +1871,11 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between June 27, 2017 and July 14, 2017:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Package Manager  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
 |  **Node.js version 4.1.1** <br /> *64bit Amazon Linux 2017.03 v4.1.1 running Node.js*  | 2017.03.0 | Node.js 6.10.0, Also supports 7.6.0, 6.9.1, 5.12.0, 4.8.0, 4.6.1 | NPM 3.9.5 | nginx 1.10.2, Apache 2.4.25 | 2.7.4 | 2.0.0 |
 
 The following Elastic Beanstalk platform versions for Node.js were current between May 19, 2017 and June 26, 2017:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Package Manager  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -2211,15 +1883,11 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between April 5, 2017 and May 18, 2017:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Package Manager  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
 |  **Node.js version 4.0.1** <br /> *64bit Amazon Linux 2016.09 v4.0.1 running Node.js*  | 2016.09.0 | Node.js 6.10.0, Also supports 7.6.0, 6.9.1, 5.12.0, 4.8.0, 4.6.1 | NPM 3.9.5 | nginx 1.10.1, Apache 2.4.25 | 2.7.4 | 1.0.0 |
 
 The following Elastic Beanstalk platform versions for Node.js were current between March 8, 2017 and April 4, 2017:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Package Manager  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -2227,23 +1895,17 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between February 9, 2017 and March 7, 2017:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Package Manager  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
 |  **Node.js version 3.3.1** <br /> *64bit Amazon Linux 2016.09 v3.3.1 running Node.js*  | 2016.09.0 | Node.js 6.9.1, Also supports 6.2.2, 5.12.0, 4.6.1, 4.4.6, 0.12.17, 0.12.15, 0.10.48, 0.10.46 | NPM 3.9.5 | nginx 1.10.1, Apache 2.4.23 | 2.7.4 | 1,0.0 |
 
 The following Elastic Beanstalk platform versions for Node.js were current between December 22, 2016 and February 8, 2017:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Package Manager  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- | --- |
 |  **Node.js version 3.3.0** <br /> *64bit Amazon Linux 2016.09 v3.3.0 running Node.js*  | 2016.09.0 | Node.js 6.9.1, Also supports 6.2.2, 5.12.0, 4.6.1, 4.4.6, 0.12.17, 0.12.15, 0.10.48, 0.10.46 | NPM 3.9.5 | nginx 1.10.1, Apache 2.4.23 | 2.7.4 | 1.0.0 |
 
 The following Elastic Beanstalk platform versions for Node.js were current between December 9, 2016 and December 21, 2016:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Package Manager  |  Proxy Server  |  Git  |
 | --- | --- | --- | --- | --- | --- |
@@ -2253,15 +1915,11 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between October 28, 2016 and December 8, 2016:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Package Manager  |  Proxy Server  |  Git  |
 | --- | --- | --- | --- | --- | --- |
 |  **Node.js version 3.1.0** <br /> *64bit Amazon Linux 2016.09 v3.1.0 running Node.js*  | 2016.09.0 | Node.js 6.9.1, Also supports 6.9.1, 6.2.2, 5.12.0, 4.6.1, 4.4.6, 0.12.17, 0.12.15, 0.10.48, 0.10.46 | NPM 2.15.5 | nginx 1.10.1, Apache 2.4.18 | 2.7.4 |
 
 The following Elastic Beanstalk platform versions for Node.js were current between June 26, 2016 and October 27, 2016:
-
-****
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Package Manager  |  Proxy Server  |  Git  |
 | --- | --- | --- | --- | --- | --- |
@@ -2269,15 +1927,11 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between May 9, 2016 and June 26, 2016:
 
-****
-
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Platform  |  Package Manager  |  Proxy Server  |  Git  |
 | --- | --- | --- | --- | --- | --- |
 |  **Node.js version 2.1.1** <br /> *64bit Amazon Linux 2016.03 v2.1.1 running Node.js*  | 2016.03 | Node.js 4.4.3, Also supports 0.12.13, 0.10.44, 0.8.28 | NPM 2.15.1 | nginx 1.8.1, Apache 2.4.18 | 2.7.4 |
 
 The following Elastic Beanstalk platform versions for Node.js were current between April 7, 2016 and May 9, 2016:
-
-****
 
 |  Platform Version and *Solution Stack Name*  |  AMI  |  Platform  |  Package Manager  |  Proxy Server  |  Git  |
 | --- | --- | --- | --- | --- | --- |
@@ -2285,15 +1939,11 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between February 26, 2016 and April 7, 2016:
 
-****
-
 |  Platform Version and *Solution Stack Name*  |  AMI  |  Platform  |  Package Manager  |  Web Server  |  Git  |
 | --- | --- | --- | --- | --- | --- |
 | **Node.js version 2.0.8**<br />*64bit Amazon Linux 2015.09 v2.0.8 running Node.js* | 2015.09 | Node.js 4.3.0<br />Also supports 0.12.10, 0.10.42, 0.8.28 | NPM 2.14.7 | nginx 1.8.0 or <br />Apache 2.4.16 | Git 2.4.3 |
 
 The following Elastic Beanstalk platform versions for Node.js were current between February 11, 2016 and February 26, 2016:
-
-****
 
 |  Platform Version and *Solution Stack Name*  |  AMI  |  Platform  |  Package Manager  |  Web Server  |  Git  |
 | --- | --- | --- | --- | --- | --- |
@@ -2301,15 +1951,11 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between January 11, 2016 and February 11, 2016:
 
-****
-
 |  Platform Version and *Solution Stack Name*  |  AMI  |  Platform  |  Package Manager  |  Web Server  |  Git  |
 | --- | --- | --- | --- | --- | --- |
 | **Node.js version 2.0.6**<br />*64bit Amazon Linux 2015.09 v2.0.6 running Node.js* | 2015.09 | Node.js 4.2.3<br />Also supports 0.12.9, 0.10.41, 0.8.28 | NPM 2.14.7 | nginx 1.8.0 or <br />Apache 2.4.16 | Git 2.1.0 |
 
 The following Elastic Beanstalk platform versions for Node.js were current between December 18, 2015 and January 11, 2016:
-
-****
 
 |  Platform Version and *Solution Stack Name*  |  AMI  |  Platform  |  Package Manager  |  Web Server  |  Git  |
 | --- | --- | --- | --- | --- | --- |
@@ -2317,15 +1963,11 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between November 2, 2015 and December 18, 2015:
 
-****
-
 |  Platform Version and *Solution Stack Name*  |  AMI  |  Platform  |  Package Manager  |  Web Server  |  Git  |
 | --- | --- | --- | --- | --- | --- |
 | **Node.js version 2.0.4**<br />*64bit Amazon Linux 2015.09 v2.0.4 running Node.js* | 2015.09 | Node.js 4.2.1<br />Also supports 0.12.7, 0.12.6, 0.10.39, 0.10.38, 0.10.31, 0.8.28 | NPM 2.14.7 | nginx 1.8.0 or <br />Apache 2.4.16 | Git 2.1.0 |
 
 The following Elastic Beanstalk platform versions for Node.js were current between September 18, 2015 and November 2, 2015:
-
-****
 
 |  Platform Version and *Solution Stack Name*  |  AMI  |  Platform  |  Web Server  |  Git  |
 | --- | --- | --- | --- | --- |
@@ -2333,15 +1975,11 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between August 11, 2015 and September 18, 2015:
 
-****
-
 | Platform Version and *Solution Stack Name* | AMI | Platform | Web Server | Git |
 | --- | --- | --- | --- | --- |
 | **Node.js version 2.0.0**<br />*64bit Amazon Linux 2015.03 v2.0.0 running Node.js* | 2015.03 | Node.js 0.12.6<br />Also supports 0.10.39, 0.10.38, 0.10.31, 0.8.28 | nginx 1.6.2 or <br />Apache 2.4.12 | Git 2.1.0 |
 
 The following Elastic Beanstalk platform versions for Node.js were current between August 3, 2015 and August 11, 2015:
-
-****
 
 | Platform Version and *Solution Stack Name* | AMI | Platform | Web Server | Git |
 | --- | --- | --- | --- | --- |
@@ -2349,23 +1987,17 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between July 7, 2015 and August 3, 2015:
 
-****
-
 | Platform Version and *Solution Stack Name* | AMI | Platform | Web Server |
 | --- | --- | --- | --- |
 | **Node.js version 1.4.4**<br />*64bit Amazon Linux 2015.03 v1.4.4 running Node.js* | 2015.03 | Node.js 0.12.6<br />Also supports 0.10.39, 0.10.38, 0.10.31, 0.8.28 | nginx 1.6.2 or <br />Apache 2.4.12 |
 
 The following Elastic Beanstalk platform versions for Node.js were current between June 15, 2015 and July 7, 2015:
 
-****
-
 | Platform Version and *Solution Stack Name* | AMI | Platform | Web Server |
 | --- | --- | --- | --- |
 | **Node.js version 1.4.3**<br />*64bit Amazon Linux 2015.03 v1.4.3 running Node.js* | 2015.03 | Node.js 0.12.4<br />Also supports 0.12.2, 0.12.0, 0.10.38, 0.10.31, 0.8.28 | nginx 1.6.2 or <br />Apache 2.4.12 |
 
 The following Elastic Beanstalk platform versions for Node.js were current between May 27, 2015 and June 15, 2015:
-
-****
 
 |  **Node.js Configurations**  |
 | --- |
@@ -2375,8 +2007,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between April 22, 2015 and May 26, 2015:
 
-****
-
 |  **Node.js Configurations**  |
 | --- |
 | **Name** | **AMI** | **Language** | **Node.js Version** | **Web Server** |
@@ -2384,8 +2014,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 | 64bit Amazon Linux 2015.03 v1.3.1 running Node.js | 2015.03 | JavaScript | 0.8.26<br />0.8.28<br />0.10.21<br />0.10.26<br />0.10.31<br />0.10.38<br />0.12.0<br />0.12.2 | nginx 1.6.2 or Apache 2.4.12 |
 
 The following Elastic Beanstalk platform versions for Node.js were current between April 8, 2015 and April 21, 2015:
-
-****
 
 |  **Node.js Configurations**  |
 | --- |
@@ -2395,8 +2023,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between March 24, 2015 and April 7, 2015:
 
-****
-
 |  **Node.js Configurations**  |
 | --- |
 | **Name** | **AMI** | **Language** | **Node.js Version** | **Web Server** |
@@ -2405,8 +2031,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between February 17, 2015 and March 23, 2015:
 
-****
-
 |  **Node.js Configurations**  |
 | --- |
 | **Name** | **AMI** | **Language** | **Node.js Version** | **Web Server** |
@@ -2414,8 +2038,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 | 64bit Amazon Linux 2014.09 v1.2.0 running Node.js | 2014.09 | JavaScript | 0.8.26<br />0.8.28<br />0.10.21<br />0.10.26<br />0.10.31 | nginx 1.6.2 or Apache 2.4.10 |
 
 The following Elastic Beanstalk platform versions for Node.js were current between January 28, 2015 and February 16, 2015:
-
-****
 
 |  **Node.js Configurations**  |
 | --- |
@@ -2429,8 +2051,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between October 16, 2014 and January 27, 2015:
 
-****
-
 |  **Node.js Configurations**  |
 | --- |
 | **Name** | **AMI** | **Language** | **Node.js Version** | **Web Server** |
@@ -2443,8 +2063,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between October 9, 2014 and October 15, 2014:
 
-****
-
 |  **Node.js Configurations**  |
 | --- |
 | **Name** | **AMI** | **Language** | **Node.js Version** | **Web Server** |
@@ -2452,8 +2070,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 | 64bit Amazon Linux 2014.09 v1.0.8 running Node.js | 2014.09 | JavaScript | 0.8.6 through 0.8.21<br />0.8.24<br />0.8.26<br />0.10.10<br />0.10.21<br />0.10.26 | nginx 1.4.7 or Apache 2.4.6 |
 
 The following Elastic Beanstalk platform versions for Node.js were current between September 24, 2014 and October 8, 2014:
-
-****
 
 |  **Node.js Configurations**  |
 | --- |
@@ -2466,8 +2082,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between June 30, 2014 and September 23, 2014:
 
-****
-
 |  **Node.js Configurations**  |
 | --- |
 | **Name** | **AMI** | **Language** | **Node.js Version** | **Web Server** |
@@ -2475,8 +2089,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 | 64bit Amazon Linux 2014.03 v1.0.4 running Node.js | 2014.03 | JavaScript | 0.8.6 through 0.8.21<br />0.8.24<br />0.8.26<br />0.10.10<br />0.10.21<br />0.10.26 | nginx 1.4.7 or Apache 2.4.6 |
 
 The following Elastic Beanstalk platform versions for Node.js were current between June 5, 2014 and June 29, 2014:
-
-****
 
 |  **Node.js Configurations**  |
 | --- |
@@ -2489,8 +2101,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between May 5, 2014 and June 4, 2014:
 
-****
-
 |  **Node.js Configurations**  |
 | --- |
 | **Name** | **AMI** | **Language** | **Node.js Version** | **Web Server** |
@@ -2499,8 +2109,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 | 64bit Amazon Linux 2014.03 v1.0.2 running Node.js | 2014.03 | JavaScript | 0.8.6 through 0.8.21<br />0.8.24<br />0.8.26<br />0.10.10<br />0.10.21<br />0.10.26 | nginx 1.4.7 or Apache 2.4.6 |
 
 The following Elastic Beanstalk platform versions for Node.js were current between April 7, 2014 and May 4, 2014:
-
-****
 
 |  **Node.js Configurations**  |
 | --- |
@@ -2515,8 +2123,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between March 18, 2014 and April 6, 2014:
 
-****
-
 |  **Node.js Configurations**  |
 | --- |
 | **Name** | **AMI** | **Language** | **Node.js Version** | **Web Server** |
@@ -2528,8 +2134,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between October 29, 2013 and March 17, 2014:
 
-****
-
 |  **Node.js Configurations**  |
 | --- |
 | **Name** | **AMI** | **Language** | **Node.js Version** | **Web Server** |
@@ -2539,8 +2143,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 
 The following Elastic Beanstalk platform versions for Node.js were current between August 15, 2013 and October 28, 2013:
 
-****
-
 |  **Node.js Configurations**  |
 | --- |
 | **Name** | **AMI** | **Language** | **Node.js Version** | **Web Server** |
@@ -2549,8 +2151,6 @@ The following Elastic Beanstalk platform versions for Node.js were current betwe
 | 64bit Amazon Linux running Node.js | 2013.03 | JavaScript | 0.8.6 through 0.8.21<br />0.8.24<br />0.10.10 | nginx 1.2.9 or Apache 2.4.4 |
 
 The following Elastic Beanstalk platform versions for Node.js were current prior to August 15, 2013:
-
-****
 
 |  **Node.js Configurations**  |
 | --- |

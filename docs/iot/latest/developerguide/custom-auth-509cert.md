@@ -5,9 +5,9 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/custom-auth-50
 # Custom authentication with X.509 client certificates
 <a name="custom-auth-509cert"></a>
 
-When connecting devices to AWS IoT Core, you have multiple [authentication types](protocols.md#connection-protocol-auth-mode) available. You can use [X.509 client certificates](https://docs.aws.amazon.com//iot/latest/developerguide/x509-client-certs.html) that can be used to authenticate client and device connections, or define [custom authorizers](https://docs.aws.amazon.com//iot/latest/developerguide/custom-authentication.html) to manage your own client authentication and authorization logic. This topic covers how to use custom authentication with X.509 client certificates.
+When connecting devices to AWS IoT Core, you have multiple [authentication types](protocols.md#connection-protocol-auth-mode) available. You can use [X.509 client certificates](https://docs.aws.amazon.com/iot/latest/developerguide/x509-client-certs.html) that can be used to authenticate client and device connections, or define [custom authorizers](https://docs.aws.amazon.com/iot/latest/developerguide/custom-authentication.html) to manage your own client authentication and authorization logic. This topic covers how to use custom authentication with X.509 client certificates.
 
-Using custom authentication with X.509 certificates can be helpful if you've already authenticated your devices using X.509 certificates and want to perform additional validation and custom authorization. For example, if you store your devices' data such as their serial numbers in the X.509 client certificate, after AWS IoT Core authenticated the X.509 client certificate, you can use a custom authorizer to identify specific devices based on the information stored in the certificate's CommonName field. Using custom authentication with X.509 certificates can enhance your device security management when connecting devices to AWS IoT Core and provides more flexibility to manage the authentication and authorization logic. AWS IoT Core supports custom authentication with X.509 certificates using the X.509 certificate and custom authorizer authentication type, which works with both the [MQTT](https://docs.aws.amazon.com//iot/latest/developerguide/mqtt.html) protocol and the [HTTPS](https://docs.aws.amazon.com//iot/latest/developerguide/http.html) protocol. For more information about the authentication types and application protocols that AWS IoT Core device endpoints support, see [Device communication protocols](https://docs.aws.amazon.com//iot/latest/developerguide/protocols.html).
+Using custom authentication with X.509 certificates can be helpful if you've already authenticated your devices using X.509 certificates and want to perform additional validation and custom authorization. For example, if you store your devices' data such as their serial numbers in the X.509 client certificate, after AWS IoT Core authenticated the X.509 client certificate, you can use a custom authorizer to identify specific devices based on the information stored in the certificate's CommonName field. Using custom authentication with X.509 certificates can enhance your device security management when connecting devices to AWS IoT Core and provides more flexibility to manage the authentication and authorization logic. AWS IoT Core supports custom authentication with X.509 certificates using the X.509 certificate and custom authorizer authentication type, which works with both the [MQTT](https://docs.aws.amazon.com/iot/latest/developerguide/mqtt.html) protocol and the [HTTPS](https://docs.aws.amazon.com/iot/latest/developerguide/http.html) protocol. For more information about the authentication types and application protocols that AWS IoT Core device endpoints support, see [Device communication protocols](https://docs.aws.amazon.com/iot/latest/developerguide/protocols.html).
 
 **Note**
 Custom authentication with X.509 client certificates is not supported in the AWS GovCloud (US) Regions.
@@ -24,15 +24,15 @@ You must use an endpoint created using [domain configurations](iot-custom-endpoi
 ## Step 1: Register your X.509 client certificates with AWS IoT Core
 <a name="custom-auth-509cert-client"></a>
 
-If you haven't done this already, register and activate your [X.509 client certificates](https://docs.aws.amazon.com//iot/latest/developerguide/x509-client-certs.html) with AWS IoT Core. Otherwise, skip to the next step.
+If you haven't done this already, register and activate your [X.509 client certificates](https://docs.aws.amazon.com/iot/latest/developerguide/x509-client-certs.html) with AWS IoT Core. Otherwise, skip to the next step.
 
 To register and activate your client certificates with AWS IoT Core, follow the steps:
 
-1. If you [create client certificates directly with AWS IoT](https://docs.aws.amazon.com//iot/latest/developerguide/device-certs-create.html). These client certificates will be automatically registered with AWS IoT Core.
+1. If you [create client certificates directly with AWS IoT](https://docs.aws.amazon.com/iot/latest/developerguide/device-certs-create.html). These client certificates will be automatically registered with AWS IoT Core.
 
-1. If you [create your own client certificates](https://docs.aws.amazon.com//iot/latest/developerguide/device-certs-your-own.html), follow [these instructions to register them with AWS IoT Core](https://docs.aws.amazon.com//iot/latest/developerguide/register-device-cert.html).
+1. If you [create your own client certificates](https://docs.aws.amazon.com/iot/latest/developerguide/device-certs-your-own.html), follow [these instructions to register them with AWS IoT Core](https://docs.aws.amazon.com/iot/latest/developerguide/register-device-cert.html).
 
-1. To activate your client certificates, follow [these instructions](https://docs.aws.amazon.com//iot/latest/developerguide/activate-or-deactivate-device-cert.html).
+1. To activate your client certificates, follow [these instructions](https://docs.aws.amazon.com/iot/latest/developerguide/activate-or-deactivate-device-cert.html).
 
 ## Step 2: Create a Lambda function
 <a name="custom-auth-509cert-lambda"></a>
@@ -92,7 +92,7 @@ Metadata of the connection.
 `id` - The connection ID, which you can use for logging and troubleshooting.
 
 **Note**
-In this event JSON object, `x509CertificatePem` and `principalId` are two new fields in the request. The value of `principalId` is the same as the value of `certificateId`. For more information, see [Certificate](https://docs.aws.amazon.com//iot/latest/apireference/API_Certificate.html).
+In this event JSON object, `x509CertificatePem` and `principalId` are two new fields in the request. The value of `principalId` is the same as the value of `certificateId`. For more information, see [Certificate](https://docs.aws.amazon.com/iot/latest/apireference/API_Certificate.html).
 
 ### Lambda function response example
 <a name="custom-auth-509cert-response"></a>
@@ -131,7 +131,7 @@ A Boolean value that indicates whether the request is authenticated.
 An alphanumeric string that acts as an identifier for the token sent by the custom authorization request. The value must be an alphanumeric string with at least one, and no more than 128, characters. It identifies the connection in logs. The value of `principalId` must be the same as the value of `principalId` in the event JSON object (i.e. certificateId of the X.509 certificate).
 
 `policyDocuments`
-A list of JSON-formatted AWS IoT Core policy documents. The value is optional and supports [thing policy variables](https://docs.aws.amazon.com//iot/latest/developerguide/thing-policy-variables.html) and [certificate policy variables](https://docs.aws.amazon.com//iot/latest/developerguide/cert-policy-variables.html). The maximum number of policy documents is 10. Each policy document can contain a maximum of 2,048 characters. If you have multiple policies attached to your client certificate and the Lambda function, the permission is a collection of all policies. For more information about creating AWS IoT Core policies, see [Policies](https://docs.aws.amazon.com//iot/latest/developerguide/iot-policies.html).
+A list of JSON-formatted AWS IoT Core policy documents. The value is optional and supports [thing policy variables](https://docs.aws.amazon.com/iot/latest/developerguide/thing-policy-variables.html) and [certificate policy variables](https://docs.aws.amazon.com/iot/latest/developerguide/cert-policy-variables.html). The maximum number of policy documents is 10. Each policy document can contain a maximum of 2,048 characters. If you have multiple policies attached to your client certificate and the Lambda function, the permission is a collection of all policies. For more information about creating AWS IoT Core policies, see [Policies](https://docs.aws.amazon.com/iot/latest/developerguide/iot-policies.html).
 
 `disconnectAfterInSeconds`
 An integer that specifies the maximum duration (in seconds) of the connection to the AWS IoT Core gateway. The minimum value is 300 seconds, and the maximum value is 86,400 seconds. `disconnectAfterInSeconds` is for the lifetime of a connection and doesn't get refreshed on consecutive policy refreshes.
@@ -214,7 +214,7 @@ function generateAuthResponse(principalId, effect) {
 }
 ```
 
-The preceding Lambda function returns the following JSON when it receives a certificate with the expected serial, fingerprint, and subject. The value of `x509CertificatePem` will be the client certificate provided in the TLS handshake. For more information, see [Defining your Lambda function](https://docs.aws.amazon.com//iot/latest/developerguide/config-custom-auth.html#custom-auth-lambda).
+The preceding Lambda function returns the following JSON when it receives a certificate with the expected serial, fingerprint, and subject. The value of `x509CertificatePem` will be the client certificate provided in the TLS handshake. For more information, see [Defining your Lambda function](https://docs.aws.amazon.com/iot/latest/developerguide/config-custom-auth.html#custom-auth-lambda).
 
 ```
 {
@@ -255,7 +255,7 @@ The preceding Lambda function returns the following JSON when it receives a cert
 ## Step 3: Create a custom authorizer
 <a name="custom-auth-509cert-authorizer"></a>
 
-After [you define the Lambda function](#custom-auth-509cert-lambda), create a custom authorizer to manage your own client authentication and authorization logic. You can follow the detailed instructions in [Step 3: Create a customer authorizer resource and its authorization](https://docs.aws.amazon.com//iot/latest/developerguide/custom-auth-tutorial.html#custom-auth-tutorial-authorizer). For more information, see [Creating an authorizer](https://docs.aws.amazon.com//iot/latest/developerguide/config-custom-auth.html).
+After [you define the Lambda function](#custom-auth-509cert-lambda), create a custom authorizer to manage your own client authentication and authorization logic. You can follow the detailed instructions in [Step 3: Create a customer authorizer resource and its authorization](https://docs.aws.amazon.com/iot/latest/developerguide/custom-auth-tutorial.html#custom-auth-tutorial-authorizer). For more information, see [Creating an authorizer](https://docs.aws.amazon.com/iot/latest/developerguide/config-custom-auth.html).
 
 In the process of creating the custom authorizer, you must grant AWS IoT permission to invoke the Lambda function after it's created. For detailed instructions, see [Authorizing AWS IoT to invoke your Lambda function](custom-auth-authorize.md).
 
@@ -267,7 +267,7 @@ To authenticate devices using custom authentication with X.509 client certificat
 ### Set authentication type and application protocol in domain configuration (CLI)
 <a name="custom-auth-509cert-cli"></a>
 
-If you don't have a domain configuration, use the [**create-domain-configuration**](https://docs.aws.amazon.com//cli/latest/reference/iot/create-domain-configuration.html) command to create one. The value of `authenticationType` must be `CUSTOM_AUTH_X509`, and the value of `applicationProtocol` can either be `SECURE_MQTT` or `HTTPS`.
+If you don't have a domain configuration, use the [**create-domain-configuration**](https://docs.aws.amazon.com/cli/latest/reference/iot/create-domain-configuration.html) command to create one. The value of `authenticationType` must be `CUSTOM_AUTH_X509`, and the value of `applicationProtocol` can either be `SECURE_MQTT` or `HTTPS`.
 
 ```
 aws iot create-domain-configuration \
@@ -279,7 +279,7 @@ aws iot create-domain-configuration \
     }'
 ```
 
-If you already have a domain configuration, use the [**update-domain-configuration**](https://docs.aws.amazon.com//cli/latest/reference/iot/update-domain-configuration.html) command update `authenticationType` and `applicationProtocol` if needed. Note that you can't change the authentication type or protocol on the default endpoint (`iot:Data-ATS`).
+If you already have a domain configuration, use the [**update-domain-configuration**](https://docs.aws.amazon.com/cli/latest/reference/iot/update-domain-configuration.html) command update `authenticationType` and `applicationProtocol` if needed. Note that you can't change the authentication type or protocol on the default endpoint (`iot:Data-ATS`).
 
 ```
 aws iot update-domain-configuration \
@@ -306,4 +306,4 @@ An object that specifies the authorizer configuration in a domain configuration.
 `defaultAuthorizerName`
 The name of the authorizer for a domain configuration.
 
-For more information, see [CreateDomainConfiguration](https://docs.aws.amazon.com//iot/latest/apireference/API_CreateDomainConfiguration.html) and [UpdateDomainConfiguration](https://docs.aws.amazon.com//iot/latest/apireference/API_UpdateDomainConfiguration.html) from the *AWS IoT API Reference*. For more information about domain configuration, see [Domain configurations](https://docs.aws.amazon.com//iot/latest/developerguide/iot-custom-endpoints-configurable.html).
+For more information, see [CreateDomainConfiguration](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateDomainConfiguration.html) and [UpdateDomainConfiguration](https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateDomainConfiguration.html) from the *AWS IoT API Reference*. For more information about domain configuration, see [Domain configurations](https://docs.aws.amazon.com/iot/latest/developerguide/iot-custom-endpoints-configurable.html).

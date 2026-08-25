@@ -322,7 +322,7 @@ For more information, see [Creating a key policy](https://docs.aws.amazon.com/km
 ## Encryption context
 <a name="zero-etl.add-encryption-context"></a>
 
-When you encryption a zero-ETL integration, you can add key-value pairs as an **Additional encryption context**. You might want to add these key-value pairs to add additional contextual information about the data being replicated. For more information, see [Encryption context](https://docs.aws.amazon.com//kms/latest/developerguide/encrypt_context.html) in the *AWS Key Management Service Developer Guide*.
+When you encryption a zero-ETL integration, you can add key-value pairs as an **Additional encryption context**. You might want to add these key-value pairs to add additional contextual information about the data being replicated. For more information, see [Encryption context](https://docs.aws.amazon.com/kms/latest/developerguide/encrypt_context.html) in the *AWS Key Management Service Developer Guide*.
 
 Amazon Redshift adds the following encryption context pairs in addition to any that you add:
 + `aws:redshift:integration:arn` - `IntegrationArn`

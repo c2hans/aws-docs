@@ -313,8 +313,6 @@ The following is additional information for [Getting started with AWS Cloud9 Con
 
 Explore any or all of the following topics to continue getting familiar with AWS Cloud9.
 
-****
-
 |  **Task**  |  **See this topic**  |
 | --- | --- |
 | Learn more about what you can do with an environment. | [Working with environments in AWS Cloud9](environments.md) |

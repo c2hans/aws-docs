@@ -86,8 +86,6 @@ The assume role doesn't have sufficient permission to invoke the `RunInstances` 
 **Action-Specific Failures Reference**
 When a step fails, the failure message might indicate which service was being invoked when the failure occurred. The following table lists the services invoked by each action. The table also provides links to information about each service.
 
-****
-
 | Action | AWS services invoked by this action | For information about this service | Troubleshooting content |
 | --- | --- | --- | --- |
 | `aws:runInstances` | Amazon EC2 | [ Amazon EC2 User Guide](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/) | [Troubleshooting EC2 Instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-troubleshoot.html) |

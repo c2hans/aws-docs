@@ -33,7 +33,7 @@ You can assign a variable type in the Amazon Fraud Detector console, using the A
 ## Assign variable type to a list using the AWS SDK for Python (Boto3)
 <a name="assign-variable-type-list-sdk"></a>
 
-The following example uses the [UpdateList](https://docs.aws.amazon.com//frauddetector/latest/api/API_UpdateList.html) API operation to assign a variable type to `allow_ip_address` list.
+The following example uses the [UpdateList](https://docs.aws.amazon.com/frauddetector/latest/api/API_UpdateList.html) API operation to assign a variable type to `allow_ip_address` list.
 
 ```
 import boto3

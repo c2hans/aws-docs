@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 
 Amazon CloudWatch Network Synthetic Monitor provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="networkmonitor-GetMonitor"></a>[GetMonitor](https://docs.aws.amazon.com/networkmonitor/latest/APIReference/API_GetMonitor.html) | Get information about a monitor | Read |

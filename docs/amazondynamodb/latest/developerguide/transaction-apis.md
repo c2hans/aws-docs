@@ -44,7 +44,7 @@ Because propagation isn't immediate, if a table is restored from backup ([Restor
 ### Idempotency
 <a name="transaction-apis-txwriteitems-idempotency"></a>
 
-You can optionally include a client token when you make a `TransactWriteItems` call to ensure that the request is *idempotent*. Making your transactions idempotent helps prevent application errors if the same operation is submitted multiple times due to a connection time-out or other connectivity issue.
+You can optionally include a client token when you make a `TransactWriteItems` call to make sure that the request is *idempotent*. Making your transactions idempotent helps prevent application errors if the same operation is submitted multiple times due to a connection time-out or other connectivity issue.
 
 If the original `TransactWriteItems` call was successful, then subsequent `TransactWriteItems` calls with the same client token return successfully without making any changes. If the `ReturnConsumedCapacity` parameter is set, the initial `TransactWriteItems` call returns the number of write capacity units consumed in making the changes. Subsequent `TransactWriteItems` calls with the same client token return the number of read capacity units consumed in reading the item.
 
@@ -186,8 +186,8 @@ Also, default SDK behavior is to retry transactions in case of a `TransactionInP
 <a name="transaction-best-practices"></a>
 
 Consider the following recommended practices when using DynamoDB transactions.
-+ Enable automatic scaling on your tables, or ensure that you have provisioned enough throughput capacity to perform the two read or write operations for every item in your transaction.
-+ If you are not using an AWS provided SDK, include a `ClientRequestToken` attribute when you make a `TransactWriteItems` call to ensure that the request is idempotent.
++ Enable automatic scaling on your tables, or make sure that you have provisioned enough throughput capacity to perform the two read or write operations for every item in your transaction.
++ If you are not using an AWS provided SDK, include a `ClientRequestToken` attribute when you make a `TransactWriteItems` call to make sure that the request is idempotent.
 + Don't group operations together in a transaction if it's not necessary. For example, if a single transaction with 10 operations can be broken up into multiple transactions without compromising the application correctness, we recommend splitting up the transaction. Simpler transactions improve throughput and are more likely to succeed.
 + Multiple transactions updating the same items simultaneously can cause conflicts that cancel the transactions. We recommend following DynamoDB best practices for data modeling to minimize such conflicts.
 + If a set of attributes is often updated across multiple items as part of a single transaction, consider grouping the attributes into a single item to reduce the scope of the transaction.

@@ -14,7 +14,7 @@ The following are the service endpoints and service quotas for this service.
 ## Service endpoints
 <a name="migrationhub-region"></a>
 
-The migration tools that integrate with AWS Migration Hub send migration status to the Migration Hub in the home Region you choose. For information about choosing a home Region, see [ The AWS Migration Hub Home Region](https://docs.aws.amazon.com//migrationhub/latest/ug/home-region.html) in the *AWS Migration Hub User Guide*.
+The migration tools that integrate with AWS Migration Hub send migration status to the Migration Hub in the home Region you choose. For information about choosing a home Region, see [ The AWS Migration Hub Home Region](https://docs.aws.amazon.com/migrationhub/latest/ug/home-region.html) in the *AWS Migration Hub User Guide*.
 
 | Region Name | Region | Endpoint | Protocol |
 | --- | --- | --- | --- |

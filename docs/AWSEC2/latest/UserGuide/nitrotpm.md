@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/nitrotpm.html
 # NitroTPM for Amazon EC2 instances
 <a name="nitrotpm"></a>
 
-Nitro Trusted Platform Module (NitroTPM) is a virtual device that is provided by the [AWS Nitro System](https://aws.amazon.com//ec2/nitro/) and conforms to the [TPM 2.0 specification](https://trustedcomputinggroup.org/resource/trusted-platform-module-2-0-a-brief-introduction/). It securely stores artifacts (such as passwords, certificates, or encryption keys) that are used to authenticate the instance. NitroTPM can generate keys and use them for cryptographic functions (such as hashing, signing, encryption, and decryption).
+Nitro Trusted Platform Module (NitroTPM) is a virtual device that is provided by the [AWS Nitro System](https://aws.amazon.com/ec2/nitro/) and conforms to the [TPM 2.0 specification](https://trustedcomputinggroup.org/resource/trusted-platform-module-2-0-a-brief-introduction/). It securely stores artifacts (such as passwords, certificates, or encryption keys) that are used to authenticate the instance. NitroTPM can generate keys and use them for cryptographic functions (such as hashing, signing, encryption, and decryption).
 
 NitroTPM provides *measured boot*, a process where the bootloader and operating system create cryptographic hashes of every boot binary and combine them with the previous values in NitroTPM internal Platform Configuration Registers (PCRs). With measured boot, you can obtain signed PCR values from NitroTPM and use them to prove to remote entities the integrity of the instance's boot software. This is known as remote *attestation*.
 

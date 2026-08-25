@@ -7,8 +7,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awss
 
 AWS Systems Manager Quick Setup provides the following APIs for data retrieval.
 
-****
-
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="ssm-quicksetup-GetConfiguration"></a>[GetConfiguration](https://docs.aws.amazon.com/quick-setup/latest/APIReference/API_GetConfiguration.html) | Get Quick Setup configuration | Read |

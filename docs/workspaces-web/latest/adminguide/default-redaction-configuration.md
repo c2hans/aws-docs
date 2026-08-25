@@ -9,8 +9,6 @@ The default redaction configuration will automatically apply a confidence level 
 
 Confidence levels allow you to fine-tune the redaction logic for built-in data types using a combination of format, keywords, and unformatted text. Choose the level of strictness for how redaction is applied, including High, Medium, or Low. The default value will apply to all data types, unless an override is applied at the data type level. In general, start with a default configuration of Medium, and refine by validating that the redaction is enforced as expected on your sites.
 
-****
-
 | Confidence level | Description | Example |
 | --- | --- | --- |
 | High | Requires a formatted text pattern match in order for content to be redacted.  | SSN of 123-45-6798 would be redacted, while 123456789 would not. |

@@ -10,7 +10,11 @@ This topic defines the flow block for branching based on a comparison to the val
 ## Description
 <a name="check-contact-attributes-description"></a>
 + Branches based on a comparison to the value of a contact attribute.
-+ Supported comparisons include: **Equals**, **Is Greater Than**, **Is Less Than**, **Starts With**, **Contains**.
++ Supported comparisons include: **Equals**, **Is Greater Than**, **Is Less Than**, **Starts With**, **Contains**, **Exists**, **Key Exists**.
++ **And (all match)** and **Or (any matches)** operators for grouping compound conditions in one branch.
+
+**Note**
+The **Exists** and **Key Exists** operators, and combining multiple conditions in a single branch with **And** or **Or**, are only available in [Amazon Connect Customer](https://docs.aws.amazon.com/connect/latest/adminguide/enable-nextgeneration-amazonconnect.html) instances.
 
 ## Supported channels
 <a name="check-contact-attributes-channels"></a>
@@ -43,7 +47,7 @@ The following image shows the **Properties** page of the **Check contact attribu
 You can check conditions like the following:
 + $.Attributes.verificationCode
 
-To check for a NULL value, you need to use a Lambda.
+To check for a NULL value, use the **Exists** operator (available only in [Amazon Connect Customer](https://docs.aws.amazon.com/connect/latest/adminguide/enable-nextgeneration-amazonconnect.html) instances) or use a Lambda.
 
 ### Amazon Lex attributes
 <a name="check-lex-attributes"></a>
@@ -75,6 +79,7 @@ You can set attributes that are **Type** = **Lex** as follows:
 
 ## Configuration tips
 <a name="check-contact-attributes-tips"></a>
++ With [Amazon Connect Customer](https://docs.aws.amazon.com/connect/latest/adminguide/enable-nextgeneration-amazonconnect.html), a single branch can evaluate multiple conditions combined with **And** or **Or**. A condition group must contain at least two conditions and cannot be nested more than one level deep.
 + If you have multiple conditions to compare, Connect Customer checks them in the order they are listed.
 
   For example, in the following image of the **Check contact attributes** properties page, it is configured so Connect Customer compares the **greater than 60** condition first and compares **greater than 2** last.
@@ -87,6 +92,26 @@ You can set attributes that are **Type** = **Lex** as follows:
 The following image shows an example of what this block looks like when it is configured. It shows the block has four branches, one for each condition: greater or equal to 60, greater to equal to 10, greater or equal to 2, or **No match**.
 
 ![A configured Check contact attributes block.](http://docs.aws.amazon.com/connect/latest/adminguide/images/check-contact-attributes-configured.png)
+
+## Compound conditions per branch
+<a name="check-contact-attributes-compound"></a>
+
+**Note**
+Compound conditions are only available in [Amazon Connect Customer](https://docs.aws.amazon.com/connect/latest/adminguide/enable-nextgeneration-amazonconnect.html) instances.
+
+Use compound conditions when a single decision depends on more than one attribute — for example, checking both a customer type and an account balance — without needing separate **Check contact attributes** blocks.
++ Compound conditions within a branch combine multiple individual conditions with the **And** (all must be true) or **Or** (any true) operators.
++ Select **Compound Condition** as the **Condition Type** from the dropdown to use the **And** or **Or** operators.
++ Within a branch, add two or more sub-conditions. For each sub-condition, specify the attribute, the operator, and the value.
++ A branch is taken when its combined condition evaluates to true. Branches are evaluated top to bottom, and the first matching branch is taken. If none match, the **No match** branch is taken.
+
+For example, a single branch can check whether `CustomerType` **Equals** "Premium" **And** `AccountBalance` **Is greater than** 1000.
+
+A block supports up to 10 compound conditions (**And** or **Or**), and each compound condition supports up to 10 sub-conditions.
+
+![The Check contact attributes block with a compound condition being configured, showing Condition Type set to Compound Condition with And/Or sub-conditions.](http://docs.aws.amazon.com/connect/latest/adminguide/images/check-contact-attributes-compound.png)
+
+![A configured Check contact attributes block with a compound condition branch.](http://docs.aws.amazon.com/connect/latest/adminguide/images/check-contact-attributes-compound-configured.png)
 
 ## Sample flows
 <a name="check-contact-attributes-samples"></a>

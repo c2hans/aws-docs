@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/userguide/slr-permi
 # Service-linked role (SLR) permissions for Security Lake
 <a name="slr-permissions"></a>
 
-Security Lake uses the service-linked role named `AWSServiceRoleForSecurityLake`. This service-linked role trusts the `securitylake.amazonaws.com` service to assume the role. For more information about, AWS managed policies for Amazon Security Lake, see [AWS manage policies for Amazon Security Lake](https://docs.aws.amazon.com//security-lake/latest/userguide/security-iam-awsmanpol.html).
+Security Lake uses the service-linked role named `AWSServiceRoleForSecurityLake`. This service-linked role trusts the `securitylake.amazonaws.com` service to assume the role. For more information about, AWS managed policies for Amazon Security Lake, see [AWS manage policies for Amazon Security Lake](https://docs.aws.amazon.com/security-lake/latest/userguide/security-iam-awsmanpol.html).
 
 The permissions policy for the role, which is an AWS managed policy named `SecurityLakeServiceLinkedRole`, allows Security Lake to create and operate the security data lake. It also allows Security Lake to perform tasks such as the following on the specified resources:
 + Use AWS Organizations actions to retrieve information about associated accounts

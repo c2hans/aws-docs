@@ -48,7 +48,7 @@ The [Amazon Bedrock AgentCore Control Plane service API reference](https://docs.
 <a name="gateway-prerequisites-aws-cli"></a>
 
 The AWS Command Line Interface (CLI) lets you interact with the AWS API in a command line interface. To learn how to install and set up the AWS CLI, see [Getting started with the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html) in the [AWS Command Line Interface User Guide](https://docs.aws.amazon.com/cli/latest/userguide/).
-+  **Installation** – To learn how to install the AWS CLI see [Installing or updating to the latest version of the AWS CLI](https://docs.aws.amazon.com//cli/latest/userguide/getting-started-install.html).
++  **Installation** – To learn how to install the AWS CLI see [Installing or updating to the latest version of the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html).
 +  **Authentication** – To learn about configuring your credentials in the AWS CLI see [Setting up the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-quickstart.html).
 +  **Other resources** – To see the syntax of specific API methods in the Amazon Bedrock AgentCore control plane service, see the [bedrock-agentcore-control](https://docs.aws.amazon.com/cli/latest/reference/bedrock-agentcore-control/) reference.
 

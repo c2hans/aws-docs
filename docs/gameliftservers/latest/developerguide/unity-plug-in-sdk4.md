@@ -231,7 +231,7 @@ You must configure AWS credentials and an AWS account bootstrap to deploy a scen
 
 1. Deselect **Local Testing Mode**.
 
-1. Enter the **API Gateway Endpoint** and the **Coginito Client ID**. Choose the same AWS Region you used for the scenario deployment. You can then rebuild and run the game client using the deployed scenario resources.
+1. Enter the **API Gateway Endpoint** and the **Cognito Client ID**. Choose the same AWS Region you used for the scenario deployment. You can then rebuild and run the game client using the deployed scenario resources.
 
 ### Deleting resources created by the scenario
 <a name="unity-plug-in-sdk4-scenario-delete"></a>

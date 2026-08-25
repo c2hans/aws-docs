@@ -51,7 +51,7 @@ Touchtone buffering in Connect Customer works best when integrated with the exis
 ## The buffer lifecycle
 <a name="touchtone-buffering-lifecycle"></a>
 + **Enable buffering**: Use the [Set Touchtone Buffer Behavior](set-touchtone-buffer-behavior.md) block from the Connect Customer flow designer UI to start capturing inputs.
-+ **Automatic collection and processing**: Use this block at the start of the flow to enable touchtone buffering. From that point onward, digits pressed by customers are stored in a 30-character buffer. The buffer automatically discards any used digits immediately after they are processed in the flow. Once the buffer reaches its 30-character limit, additional customer entries are ignored until space becomes available.
++ **Automatic collection and processing**: Use this block at the start of the flow to enable touchtone buffering. From that point onward, digits pressed by customers are stored in a 30-character buffer. The buffer automatically discards any used digits immediately after they are processed in the flow. After the buffer reaches its 30-character limit, additional customer entries are ignored until space becomes available.
 + **Controlled clearing**: Stop and optionally store buffer contents when appropriate. You can configure encryption parameters to encrypt the buffer entry that gets stored into the `Stored customer input` system attribute to protect PII.
 
 ## Block capabilities
@@ -110,7 +110,7 @@ Buffer-aware collection
 + Dequeues up to the maximum number of digits specified in the block configuration.
 + If the buffer has fewer digits than requested, applies the inter-digit timeout for partial buffering scenarios. For example, if the maximum configured digits are 6 and the buffer contains only 4 digits, the system waits for the specified timeout duration to allow the caller to enter the remaining digits. After the timeout expires, the call proceeds and stores whatever digits are present in the buffer at that moment.
 + If the buffer contains equal to or more digits than the maximum configured on the block, the call proceeds immediately.
-+ **Specify a terminating keypress**: Flow designers can define a custom terminating keypress for when contacts complete their touchtone inputs. The terminating keypress may be up to five characters long, including `#`, `*`, and digits 0-9.
++ **Specify a terminating keypress**: Flow designers can define a custom terminating keypress for when contacts complete their touchtone inputs. The terminating keypress might be up to five characters long, including `#`, `*`, and digits 0-9.
 
 ## Flow logging changes
 <a name="touchtone-buffering-flow-logging"></a>

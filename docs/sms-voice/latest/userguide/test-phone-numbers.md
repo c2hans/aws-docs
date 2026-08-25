@@ -40,8 +40,6 @@ You can request an origination simulator phone number through the SMS simulator 
 
 Destination simulator phone numbers are available in several countries and regions. For each country and region, there are phone numbers that generate message success events, and numbers that generate message failure events. The following table contains SMS/MMS simulator phone numbers for all of the countries and regions in which the simulator is available.
 
-****
-
 | Country | Event type | Phone number |
 | --- | --- | --- |
 | Australia | Success | \+61455944038 |

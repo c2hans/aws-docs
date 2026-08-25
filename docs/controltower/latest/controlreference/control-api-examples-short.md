@@ -13,7 +13,7 @@ When you invoke `EnableControl` on an account or OU, the `operationIdentifier` v
 ## EnableControl
 <a name="enable-control-api-examples"></a>
 
-For more information about this API operation, see [EnableControl](https://docs.aws.amazon.com//controltower/latest/APIReference/API_EnableControl.html).
+For more information about this API operation, see [EnableControl](https://docs.aws.amazon.com/controltower/latest/APIReference/API_EnableControl.html).
 
 **Example input for EnableControl:**
 
@@ -48,7 +48,7 @@ aws controltower enable-control \
 ## DisableControl
 <a name="disable-control-api-examples"></a>
 
-For more information about this API operation, see [DisableControl](https://docs.aws.amazon.com//controltower/latest/APIReference/API_DisableControl.html).
+For more information about this API operation, see [DisableControl](https://docs.aws.amazon.com/controltower/latest/APIReference/API_DisableControl.html).
 
 **Example input for DisableControl:**
 
@@ -70,7 +70,7 @@ For more information about this API operation, see [DisableControl](https://docs
 ## GetControlOperation
 <a name="get-control-operation-api-examples"></a>
 
-For more information about this API operation, see [GetControlOperation](https://docs.aws.amazon.com//controltower/latest/APIReference/API_GetControlOperation.html).
+For more information about this API operation, see [GetControlOperation](https://docs.aws.amazon.com/controltower/latest/APIReference/API_GetControlOperation.html).
 
 **Example input for GetControlOperation:**
 
@@ -122,7 +122,7 @@ For more information about this API operation, see [GetControlOperation](https:/
 ## GetEnabledControl
 <a name="get-enabled-control-api-examples"></a>
 
-For more information about this API operation, see [GetEnabledControl](https://docs.aws.amazon.com//controltower/latest/APIReference/API_GetEnabledControl.html).
+For more information about this API operation, see [GetEnabledControl](https://docs.aws.amazon.com/controltower/latest/APIReference/API_GetEnabledControl.html).
 
 **Example for GetEnabledControl**
 
@@ -154,7 +154,7 @@ aws controltower get-enabled-control --enabled-control-identifier arn:aws:contro
 ## ListControlOperations
 <a name="list-control-operations-api-examples"></a>
 
-For more information about this API operation, see [ListControlOperations](https://docs.aws.amazon.com//controltower/latest/APIReference/API_ListControlOperations.html).
+For more information about this API operation, see [ListControlOperations](https://docs.aws.amazon.com/controltower/latest/APIReference/API_ListControlOperations.html).
 
 **Example input and output for ListControlOperations:**
 
@@ -303,7 +303,7 @@ aws controltower list-control-operations --max-items 13
 ## ListEnabledControls
 <a name="list-enabled-controls-api-examples"></a>
 
-For more information about this API operation, see [ListEnabledControls](https://docs.aws.amazon.com//controltower/latest/APIReference/API_ListEnabledControls.html).
+For more information about this API operation, see [ListEnabledControls](https://docs.aws.amazon.com/controltower/latest/APIReference/API_ListEnabledControls.html).
 
 **Example input for ListEnabledControls:**
 
@@ -383,7 +383,7 @@ aws controltower list-enabled-controls --target-identifier arn:aws:organizations
 ## ListTagsForResource
 <a name="list-tags-for-resource-example"></a>
 
-For more information about this API operation, see [ListTagsForResource](https://docs.aws.amazon.com//controltower/latest/APIReference/API_ListTagsForResource.html).
+For more information about this API operation, see [ListTagsForResource](https://docs.aws.amazon.com/controltower/latest/APIReference/API_ListTagsForResource.html).
 
 **Example for ListTagsForResource**
 
@@ -397,7 +397,7 @@ aws controltower list-tags-for-resource --resource-arn "arn:aws:controltower:us-
 ## ResetEnabledControl
 <a name="reset-enabled-control-examples"></a>
 
-For more information about this API operation, see [ResetEnabledControl](https://docs.aws.amazon.com//controltower/latest/APIReference/API_ResetEnabledControl.html).
+For more information about this API operation, see [ResetEnabledControl](https://docs.aws.amazon.com/controltower/latest/APIReference/API_ResetEnabledControl.html).
 
 **Example for ResetEnabledControl**
 
@@ -409,7 +409,7 @@ aws controltower reset-enabled-control \
 ## TagResource
 <a name="tag-resource-example"></a>
 
-For more information about this API operation, see [TagResource](https://docs.aws.amazon.com//controltower/latest/APIReference/API_TagResource.html).
+For more information about this API operation, see [TagResource](https://docs.aws.amazon.com/controltower/latest/APIReference/API_TagResource.html).
 
 **Example for TagResource**
 
@@ -422,7 +422,7 @@ aws controltower tag-resource --resource-arn "arn:aws:controltower:us-east-1:123
 ## UntagResource
 <a name="untag-resource-example"></a>
 
-For more information about this API operation, see [UntagResource](https://docs.aws.amazon.com//controltower/latest/APIReference/API_UntagResource.html).
+For more information about this API operation, see [UntagResource](https://docs.aws.amazon.com/controltower/latest/APIReference/API_UntagResource.html).
 
 **Example for UntagResource**
 
@@ -435,7 +435,7 @@ aws controltower untag-resource --resource-arn "arn:aws:controltower:us-east-1:1
 ## UpdateEnabledControl
 <a name="update-enabled-control"></a>
 
-For more information about this API operation, see [UpdateEnabledControl](https://docs.aws.amazon.com//controltower/latest/APIReference/API_UpdateEnabledControl.html).
+For more information about this API operation, see [UpdateEnabledControl](https://docs.aws.amazon.com/controltower/latest/APIReference/API_UpdateEnabledControl.html).
 
 **Change the parameters of a control:**
 
@@ -530,4 +530,4 @@ Example output:
 }
 ```
 
-For examples of how to work with the AWS Control Tower baseline APIs, see [Examples for baseline API usage](https://docs.aws.amazon.com//controltower/latest/userguide/baseline-api-examples.html).
+For examples of how to work with the AWS Control Tower baseline APIs, see [Examples for baseline API usage](https://docs.aws.amazon.com/controltower/latest/userguide/baseline-api-examples.html).

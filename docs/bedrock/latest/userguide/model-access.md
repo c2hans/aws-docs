@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-access.ht
 # Request access to models
 <a name="model-access"></a>
 
-Access to all Amazon Bedrock foundation models is enabled by default with the correct AWS Marketplace permissions. To get started, simply select a model from the model catalog in the Amazon Bedrock console and open it in the playground or invoke the model using the [InvokeModel](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_InvokeModel.html) or [Converse](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_Converse.html) API operations. For information about the different models supported in Amazon Bedrock, see [Amazon Bedrock foundation model information](https://docs.aws.amazon.com//bedrock/latest/userguide/foundation-models-reference.html). For information about model pricing, see [Amazon Bedrock Pricing](https://aws.amazon.com/bedrock/pricing/).
+Access to all Amazon Bedrock foundation models is enabled by default with the correct AWS Marketplace permissions. To get started, simply select a model from the model catalog in the Amazon Bedrock console and open it in the playground or invoke the model using the [InvokeModel](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_InvokeModel.html) or [Converse](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_Converse.html) API operations. For information about the different models supported in Amazon Bedrock, see [Amazon Bedrock foundation model information](https://docs.aws.amazon.com/bedrock/latest/userguide/foundation-models-reference.html). For information about model pricing, see [Amazon Bedrock Pricing](https://aws.amazon.com/bedrock/pricing/).
 
 Access to all Amazon Bedrock foundation models is enabled by default with the correct AWS Marketplace permissions in all commercial AWS Regions. For programmatic access to third-party models, see [Manage model access using SDK and CLI](#model-access-modify).
 
@@ -42,8 +42,6 @@ When you first invoke an Amazon Bedrock serverless model served from AWS Marketp
 If you can’t assume AWS Marketplace permission, someone with AWS Marketplace permissions must enable the model for the account as a one-time step (either manually or through auto-enablement). After the model is enabled, you can invoke the model without needing AWS Marketplace permissions. Users don't need AWS Marketplace subscription permissions to invoke models after they've been enabled. These permissions are only required the first time a model is being used in an account.
 
 Access to Amazon Bedrock serverless foundation models with a product ID is controlled by the following IAM actions:
-
-****
 
 | IAM action | Description | Applies to which models |
 | --- | --- | --- |

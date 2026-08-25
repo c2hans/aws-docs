@@ -43,7 +43,7 @@ This message-level setting overrides the default message type that you chose on 
 
 1. (Optional) For **Sender ID**, enter a custom ID that contains up to 11 alphanumeric characters, including at least one letter, and no spaces. The sender ID is displayed as the message sender on the recipient's device. For example, you can use your business brand to make the message source easier to recognize.
 
-   Support for sender IDs varies by country and region. For more information, see [Supported countries and regions (SMS channel)](https://docs.aws.amazon.com//sms-voice/latest/userguide/phone-numbers-sms-by-country.html) in the *AWS End User Messaging SMS User Guide*.
+   Support for sender IDs varies by country and region. For more information, see [Supported countries and regions (SMS channel)](https://docs.aws.amazon.com/sms-voice/latest/userguide/phone-numbers-sms-by-country.html) in the *AWS End User Messaging SMS User Guide*.
 
    This message-level sender ID overrides your default sender ID, which you chose on the **Settings** page for the project.
 

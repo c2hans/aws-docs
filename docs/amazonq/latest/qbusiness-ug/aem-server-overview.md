@@ -9,8 +9,6 @@ Amazon Q Business is no longer open to new customers. For capabilities similar t
 
 The following table gives an overview of the Amazon Q Business AEM (Server) connector and its supported features.
 
-****
-
 - ****Security****
   - **Feature:** Authentication type / **Support:** Basic, OAuth 2.0 with Client Credentials Flow
   - **Feature:** Authentication credentials / **Support:** +  AEM (Server) host URL <br />+  Username of AEM user <br />+  Password of AEM user  +  AEM (Server) host URL <br />+  Client ID <br />+  Client secret <br />+  Private key   Admin privileges required.

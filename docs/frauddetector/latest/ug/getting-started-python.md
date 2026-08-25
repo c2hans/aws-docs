@@ -50,7 +50,7 @@ In this step, you create resources that are used to define model, event, and rul
 
 A variable is a data element from your dataset that you want to use to create event type, model, and rules.
 
-In the following example,the [CreateVariable](https://docs.aws.amazon.com//frauddetector/latest/api/API_CreateVariable.html) API is used to create two variables. The variables are `email_address` and `ip_address`. Assign them to the corresponding variable types: `EMAIL_ADDRESS` and `IP_ADDRESS`. These variables are part of the example dataset you uploaded. When you specify the variable type, Amazon Fraud Detector interprets the variable during model training and when getting predictions. Only variables with an associated variable type can be used for model training.
+In the following example,the [CreateVariable](https://docs.aws.amazon.com/frauddetector/latest/api/API_CreateVariable.html) API is used to create two variables. The variables are `email_address` and `ip_address`. Assign them to the corresponding variable types: `EMAIL_ADDRESS` and `IP_ADDRESS`. These variables are part of the example dataset you uploaded. When you specify the variable type, Amazon Fraud Detector interprets the variable during model training and when getting predictions. Only variables with an associated variable type can be used for model training.
 
 ```
 import boto3
@@ -80,7 +80,7 @@ fraudDetector.create_variable(
 
 An entity represents who is performing the event and an entity type classifies the entity. Example classifications include *customer*, *merchant*, or *account*.
 
-In the following example, [PutEntityType](https://docs.aws.amazon.com//frauddetector/latest/api/API_PutEntityType.html) API is used to create a `sample_customer` entity type.
+In the following example, [PutEntityType](https://docs.aws.amazon.com/frauddetector/latest/api/API_PutEntityType.html) API is used to create a `sample_customer` entity type.
 
 ```
 import boto3
@@ -97,7 +97,7 @@ fraudDetector.put_entity_type(
 
 A label classifies an event as fraudulent or legitimate and is used to train the fraud detection model. The model learns to classify events using these label values.
 
-In the following example, the [Putlabel](https://docs.aws.amazon.com//frauddetector/latest/api/API_PutLabel.html) API is used to create two labels, `fraud` and `legit`.
+In the following example, the [Putlabel](https://docs.aws.amazon.com/frauddetector/latest/api/API_PutLabel.html) API is used to create two labels, `fraud` and `legit`.
 
 ```
 import boto3
@@ -119,7 +119,7 @@ fraudDetector.put_label(
 
 With Amazon Fraud Detector, you build models that evaluate risks and generate fraud predictions for individual events. An event type defines the structure of an individual event.
 
-In the following example, the [PutEventType](https://docs.aws.amazon.com//frauddetector/latest/api/API_PutEventType.html) API is used to create an event type `sample_registration`. You define the event type by specifying the variables (`email_address`,`ip_address`), entity type (`sample_customer`), and labels (`fraud`, `legit`) that you created in the previous step.
+In the following example, the [PutEventType](https://docs.aws.amazon.com/frauddetector/latest/api/API_PutEventType.html) API is used to create an event type `sample_registration`. You define the event type by specifying the variables (`email_address`,`ip_address`), entity type (`sample_customer`), and labels (`fraud`, `legit`) that you created in the previous step.
 
 ```
 import boto3
@@ -143,7 +143,7 @@ For more information about different model types that Amazon Fraud Detector supp
 
 **Create a model**
 
-In the following example, the [CreateModel](https://docs.aws.amazon.com//frauddetector/latest/api/API_CreateModel.html) API is used to create a model.
+In the following example, the [CreateModel](https://docs.aws.amazon.com/frauddetector/latest/api/API_CreateModel.html) API is used to create a model.
 
 ```
 import boto3
@@ -157,7 +157,7 @@ fraudDetector.create_model (
 
 **Train a model**
 
-In the following example, the [CreateModelVersion](https://docs.aws.amazon.com//frauddetector/latest/api/API_CreateModelVersion.html) API is used to train the model. Specify `'EXTERNAL_EVENTS'` for the `trainingDataSource` and the Amazon S3 location where you stored your example dataset and the *RoleArn* of the Amazon S3 bucket for `externalEventsDetail`. For `trainingDataSchema` parameter, specify how Amazon Fraud Detector interprets the example data. More specifically, specify which variables to include and how to classify the event labels.
+In the following example, the [CreateModelVersion](https://docs.aws.amazon.com/frauddetector/latest/api/API_CreateModelVersion.html) API is used to train the model. Specify `'EXTERNAL_EVENTS'` for the `trainingDataSource` and the Amazon S3 location where you stored your example dataset and the *RoleArn* of the Amazon S3 bucket for `externalEventsDetail`. For `trainingDataSchema` parameter, specify how Amazon Fraud Detector interprets the example data. More specifically, specify which variables to include and how to classify the event labels.
 
 ```
 import boto3
@@ -189,7 +189,7 @@ You can train your model multiple times. Each time that you train a model, a new
 
 An important step in using Amazon Fraud Detector is to assess the accuracy of your model using model scores and performance metrics. After model training is complete, Amazon Fraud Detector validates model performance using the 15% of your data that wasn't used to train the model. It generates a model performance score and other performance metrics.
 
-Use the [DescribeModelVersions](https://docs.aws.amazon.com//frauddetector/latest/api/API_DescribeModelVersions.html) API to review model performance. Look at the **Model performance** overall score and all other metrics generated by Amazon Fraud Detector for this model.
+Use the [DescribeModelVersions](https://docs.aws.amazon.com/frauddetector/latest/api/API_DescribeModelVersions.html) API to review model performance. Look at the **Model performance** overall score and all other metrics generated by Amazon Fraud Detector for this model.
 
 To learn more about the model performance score and performance metrics, see [Model scores](model-scores.md) and [Model performance metrics](training-performance-metrics.md).
 
@@ -197,7 +197,7 @@ You can expect all your trained Amazon Fraud Detector models to have real-world 
 
 **Deploy a model**
 
-After you reviewed the performance metrics of your trained model, deploy the model and make it available to Amazon Fraud Detector to generate fraud predictions. To deploy the trained model, use the [UpdateModelVersionStatus](https://docs.aws.amazon.com//frauddetector/latest/api/API_UpdateModelVersionStatus.html) API. In the following example, it's used to update the model version status to ACTIVE.
+After you reviewed the performance metrics of your trained model, deploy the model and make it available to Amazon Fraud Detector to generate fraud predictions. To deploy the trained model, use the [UpdateModelVersionStatus](https://docs.aws.amazon.com/frauddetector/latest/api/API_UpdateModelVersionStatus.html) API. In the following example, it's used to update the model version status to ACTIVE.
 
 ```
 import boto3
@@ -220,7 +220,7 @@ Use the following example codes to create detector, rules, outcome, and to publi
 
 **Create a detector**
 
-In the following example, the [PutDetector](https://docs.aws.amazon.com//frauddetector/latest/api/API_PutDetector.html) API is used to create a `sample_detector` detector for `sample_registration` event type.
+In the following example, the [PutDetector](https://docs.aws.amazon.com/frauddetector/latest/api/API_PutDetector.html) API is used to create a `sample_detector` detector for `sample_registration` event type.
 
 ```
 import boto3
@@ -234,7 +234,7 @@ fraudDetector.put_detector (
 
 **Create outcomes**
 
-Outcomes are created for each possible fraud prediction result. In the following example, the [PutOutcome](https://docs.aws.amazon.com//frauddetector/latest/api/API_PutOutcome.html) API is used to create three outcomes - `verify_customer`, `review`, and `approve`. These outcomes are later assigned to rules.
+Outcomes are created for each possible fraud prediction result. In the following example, the [PutOutcome](https://docs.aws.amazon.com/frauddetector/latest/api/API_PutOutcome.html) API is used to create three outcomes - `verify_customer`, `review`, and `approve`. These outcomes are later assigned to rules.
 
 ```
 import boto3
@@ -260,7 +260,7 @@ fraudDetector.put_outcome(
 
 Rule consists of one or more variables from your dataset, a logic expression, and one or more outcomes.
 
-In the following example, the [CreateRule](https://docs.aws.amazon.com//frauddetector/latest/api/API_CreateRule.html) API is used to create three different rules: `high_risk`, `medium_risk`, and `low_risk`. Create rule expressions to compare the model performance score `sample_fraud_detection_model_insightscore` value against various thresholds. This is to determine the level of risk for an event and assign outcome that was defined in the previous step.
+In the following example, the [CreateRule](https://docs.aws.amazon.com/frauddetector/latest/api/API_CreateRule.html) API is used to create three different rules: `high_risk`, `medium_risk`, and `low_risk`. Create rule expressions to compare the model performance score `sample_fraud_detection_model_insightscore` value against various thresholds. This is to determine the level of risk for an event and assign outcome that was defined in the previous step.
 
 ```
 import boto3
@@ -295,7 +295,7 @@ fraudDetector.create_rule(
 
 A detector version defines model and rules that are used to get fraud prediction.
 
-In the following example, the [CreateDetectorVersion](https://docs.aws.amazon.com//frauddetector/latest/api/API_CreateDetectorVersion.html) API is used to create a detector version. It does this by providing model version details, rules, and a rule execution mode FIRST\_MATCHED. A rule execution mode specifies the sequence for evaluating rules. The rule execution mode FIRST\_MATCHED specifies that the rules are evaluated sequentially, first to last, stopping at first matched rule.
+In the following example, the [CreateDetectorVersion](https://docs.aws.amazon.com/frauddetector/latest/api/API_CreateDetectorVersion.html) API is used to create a detector version. It does this by providing model version details, rules, and a rule execution mode FIRST\_MATCHED. A rule execution mode specifies the sequence for evaluating rules. The rule execution mode FIRST\_MATCHED specifies that the rules are evaluated sequentially, first to last, stopping at first matched rule.
 
 ```
 import boto3
@@ -333,7 +333,7 @@ fraudDetector.create_detector_version(
 
 The last step of this tutorial uses the detector `sample_detector` created in the previous step to generate fraud predictions for `sample_registration` event type in real time. The detector evaluates the example data that's uploaded to Amazon S3. The response includes model performance scores as well as any outcomes that are associated to the matched rules.
 
-In the following example, the [GetEventPrediction](https://docs.aws.amazon.com//frauddetector/latest/api/API_GetEventPrediction.html) API is used to provide data from a single account registration with each request. For this tutorial, take data (email\_address and ip\_address) from the account registration example data file. Each line (row) after the top header line represents data from a single account registration event.
+In the following example, the [GetEventPrediction](https://docs.aws.amazon.com/frauddetector/latest/api/API_GetEventPrediction.html) API is used to provide data from a single account registration with each request. For this tutorial, take data (email\_address and ip\_address) from the account registration example data file. Each line (row) after the top header line represents data from a single account registration event.
 
 ```
 import boto3

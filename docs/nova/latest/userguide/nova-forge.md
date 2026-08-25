@@ -41,12 +41,12 @@ Also ensure the following prerequisites are complete:
 
 1. [General prerequisites](nova-model-general-prerequisites.md)
 
-1. Additional steps for SageMaker HyperPod users: Add Restricted Instance Group (RIG) to your SageMaker HyperPod cluster (to complete follow steps [here](https://docs.aws.amazon.com//sagemaker/latest/dg/nova-hp-cluster.html))
+1. Additional steps for SageMaker HyperPod users: Add Restricted Instance Group (RIG) to your SageMaker HyperPod cluster (to complete follow steps [here](https://docs.aws.amazon.com/sagemaker/latest/dg/nova-hp-cluster.html))
 
 ## Initial SageMaker HyperPod setup
 <a name="nova-forge-setup-hp"></a>
 
-Follow the steps in the [Amazon Web Services documentation](https://docs.aws.amazon.com//sagemaker/latest/dg/nova-hp-train.html) to connect the HyperPod CLI to your cluster. Ensure you use the `nova-lite-2.0-release` branch of the SageMaker HyperPod CLI. [This topic](https://docs.aws.amazon.com//sagemaker/latest/dg/nova-hp-train.html) covers:
+Follow the steps in the [Amazon Web Services documentation](https://docs.aws.amazon.com/sagemaker/latest/dg/nova-hp-train.html) to connect the HyperPod CLI to your cluster. Ensure you use the `nova-lite-2.0-release` branch of the SageMaker HyperPod CLI. [This topic](https://docs.aws.amazon.com/sagemaker/latest/dg/nova-hp-train.html) covers:
 + Setting up IAM permissions and policies
 + Configuring the SageMaker HyperPod CLI
 + Creating your cluster with the necessary instance groups

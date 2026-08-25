@@ -22,7 +22,7 @@ You can monitor Amazon Q Business and Amazon Q Apps with Amazon CloudWatch, whic
 <a name="using-metrics"></a>
 
 To use metrics, you must specify the following information:
-+ The metric namespace. A *namespace* is a CloudWatch container Amazon Q uses to publish its metrics into. If you are using the CloudWatch [ListMetrics](https://docs.aws.amazon.com//AmazonCloudWatch/latest/APIReference/API_ListMetrics.html) API or the [list-metrics](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudwatch/list-metrics.html) command to view the metrics for Amazon Q Business or Amazon Q Apps, specify `AWS/QBusiness` or `AWS/QApps` for the namespace.
++ The metric namespace. A *namespace* is a CloudWatch container Amazon Q uses to publish its metrics into. If you are using the CloudWatch [ListMetrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_ListMetrics.html) API or the [list-metrics](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudwatch/list-metrics.html) command to view the metrics for Amazon Q Business or Amazon Q Apps, specify `AWS/QBusiness` or `AWS/QApps` for the namespace.
 + The metric dimension. A *dimension* is a name-value pair that helps you to uniquely identify a metric. Common dimension names include:
   + `ApplicationId` - Identifies the specific Amazon Q Business application
   + `IndexId` - Identifies the specific index (for index-related metrics)

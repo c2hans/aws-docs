@@ -14,8 +14,6 @@ Add a certificate to the specified Network Load Balancer (NLB) listener. Use the
 ## Change Type Details
 <a name="ct-35p977vul06df-MANa-table"></a>
 
-****
-
 |  |  |
 | --- |--- |
 | Change type ID | ct-35p977vul06df |

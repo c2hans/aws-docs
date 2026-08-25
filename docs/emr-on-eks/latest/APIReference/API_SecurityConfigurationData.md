@@ -10,6 +10,11 @@ Configurations related to the security configuration for the request.
 ## Contents
 <a name="API_SecurityConfigurationData_Contents"></a>
 
+ ** authenticationConfiguration **   <a name="emroneks-Type-SecurityConfigurationData-authenticationConfiguration"></a>
+Authentication-related configuration input for the security configuration.
+Type: [AuthenticationConfiguration](API_AuthenticationConfiguration.md) object
+Required: No
+
  ** authorizationConfiguration **   <a name="emroneks-Type-SecurityConfigurationData-authorizationConfiguration"></a>
 Authorization-related configuration input for the security configuration.
 Type: [AuthorizationConfiguration](API_AuthorizationConfiguration.md) object

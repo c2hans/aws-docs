@@ -26,7 +26,7 @@ For example, if you establish the naming convention that `_i` is appended to the
 
 If a document field matches more than one dynamic field pattern, the longest matching pattern is used. If the patterns are the same length, the dynamic field that occurs first when the field names are sorted alphabetically is used.
 
-You can define \* as a dynamic field to match any fields that don't map to an explicitly defined field or a longer dynamic field pattern. This is useful if you want to simply ignore unrecognized fields. For more information, see [Using a Dynamic Field to Ignore Unrecognized Fields in Amazon CloudSearchIgnoring Unrecognized Document Fields](#ignoring-fields).
+You can define \* as a dynamic field to match any fields that don't map to an explicitly defined field or a longer dynamic field pattern. This is useful if you want to simply ignore unrecognized fields. For more information, see [Using a Dynamic Field to Ignore Unrecognized Fields in Amazon CloudSearch](#ignoring-fields).
 
 Dynamic fields count toward the total number of fields defined for a domain. A domain can have a maximum of 200 field definitions, which includes dynamic fields. However, the pattern defined by a single dynamic field typically matches multiple document fields, so the total number of fields in your index can exceed 200. For more information, see [Understanding Amazon CloudSearch Limits](limits.md). When using dynamic fields, keep in mind that significantly increasing the number of fields in your index can impact query performance.
 

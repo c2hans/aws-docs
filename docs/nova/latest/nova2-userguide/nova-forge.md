@@ -39,6 +39,6 @@ To request access to the Amazon Nova Forge service, add the following tag to you
 
 Also ensure the following prerequisites are complete:
 
-1. [General prerequisites](https://docs.aws.amazon.com//nova/latest/nova2-userguide/nova-model.html#nova-model-general-prerequisites)
+1. [General prerequisites](https://docs.aws.amazon.com/nova/latest/nova2-userguide/nova-model.html#nova-model-general-prerequisites)
 
-1. Additional steps for SageMaker HyperPod users: Add Restricted Instance Group (RIG) to your SageMaker HyperPod cluster (to complete follow steps [here](https://docs.aws.amazon.com//sagemaker/latest/dg/nova-hp-cluster.html))
+1. Additional steps for SageMaker HyperPod users: Add Restricted Instance Group (RIG) to your SageMaker HyperPod cluster (to complete follow steps [here](https://docs.aws.amazon.com/sagemaker/latest/dg/nova-hp-cluster.html))

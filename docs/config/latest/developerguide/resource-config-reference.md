@@ -26,8 +26,6 @@ If a resource type does not support tagging or does not include tag information 
 ## Amazon AppStream
 <a name="amazonappstream"></a>
 
-****
-
 - **Amazon AppStream**
   - **Resource Type Value:** AWS::AppStream::Application / **Relationship:** NA / **Related Resource:** NA / **Notes:**
   - **Resource Type Value:** AWS::AppStream::AppBlockBuilder / **Relationship:** NA / **Related Resource:** NA / **Notes:**
@@ -38,8 +36,6 @@ If a resource type does not support tagging or does not include tag information 
 ## Amazon AppFlow
 <a name="amazonappflow"></a>
 
-****
-
 | AWS Service | Resource Type Value | Relationship | Related Resource | Notes |
 | --- | --- | --- | --- | --- |
 | Amazon AppFlow | AWS::AppFlow::Flow | NA | NA |  |
@@ -47,16 +43,12 @@ If a resource type does not support tagging or does not include tag information 
 ## Amazon AppIntegrations
 <a name="amazonappintegrations"></a>
 
-****
-
 - **Amazon AppIntegrations**
   - **Resource Type Value:** AWS::AppIntegrations::EventIntegration / **Relationship:** NA / **Related Resource:** NA / **Notes:**
   - **Resource Type Value:** AWS::AppIntegrations::Application / **Relationship:** NA / **Related Resource:** NA / **Notes:**
 
 ## Amazon API Gateway
 <a name="amazonapigateway"></a>
-
-****
 
 - **API Gateway**
   - **Resource Type Value:** AWS::ApiGateway::DomainName / **Relationship:** NA / **Related Resource:** NA / **Notes:**
@@ -78,8 +70,6 @@ To learn more about how AWS Config integrates with Amazon API Gateway, see [Moni
 ## Amazon Athena
 <a name="amazonathena"></a>
 
-****
-
 - **Amazon Athena**
   - **Resource Type Value:** AWS::Athena::WorkGroup / **Relationship:** NA / **Related Resource:** NA / **Notes:**
   - **Resource Type Value:** AWS::Athena::DataCatalog / **Relationship:** NA / **Related Resource:** NA / **Notes:**
@@ -87,8 +77,6 @@ To learn more about how AWS Config integrates with Amazon API Gateway, see [Moni
 
 ## Amazon Bedrock
 <a name="amazonbedrock"></a>
-
-****
 
 - **Amazon Bedrock**
   - **Resource Type Value:** AWS::Bedrock::ApplicationInferenceProfile / **Relationship:** NA / **Related Resource:** NA / **Notes:**
@@ -111,8 +99,6 @@ To learn more about how AWS Config integrates with Amazon API Gateway, see [Moni
 ## Amazon CloudFront
 <a name="amazoncloudfront"></a>
 
-****
-
 - **Amazon CloudFront**
   - **Resource Type Value:** AWS::CloudFront::Distribution / **Relationship:** is associated with / **Related Resource:** AWS WAF WebACL / **Notes:**
   - **Related Resource:** ACM Certificate / **Notes:**
@@ -128,8 +114,6 @@ To learn more about how AWS Config integrates with Amazon API Gateway, see [Moni
 
 ## Amazon CloudWatch
 <a name="amazoncloudwatch"></a>
-
-****
 
 - **Amazon CloudWatch**
   - **Resource Type Value:** AWS::CloudWatch::Alarm / **Relationship:** NA / **Related Resource:** NA / **Notes:**
@@ -167,8 +151,6 @@ To learn more about how AWS Config integrates with Amazon API Gateway, see [Moni
 ## Amazon CodeGuru
 <a name="amazoncodeguru"></a>
 
-****
-
 | AWS Service | Resource Type Value | Relationship | Related Resource | Notes |
 | --- | --- | --- | --- | --- |
 | Amazon CodeGuru Reviewer | AWS::CodeGuruReviewer::RepositoryAssociation | NA | NA |  |
@@ -176,8 +158,6 @@ To learn more about how AWS Config integrates with Amazon API Gateway, see [Moni
 
 ## Amazon Cognito
 <a name="amazoncognito"></a>
-
-****
 
 - **Amazon Cognito**
   - **Resource Type Value:** AWS::Cognito::IdentityPool / **Relationship:** NA / **Related Resource:** NA / **Notes:**
@@ -194,16 +174,12 @@ To learn more about how AWS Config integrates with Amazon API Gateway, see [Moni
 ## Amazon Comprehend
 <a name="amazoncomprehend"></a>
 
-****
-
 | AWS Service | Resource Type Value | Relationship | Related Resource | Notes |
 | --- | --- | --- | --- | --- |
 | Amazon Comprehend | AWS::Comprehend::Flywheel | NA | NA |  |
 
 ## Connect Customer
 <a name="amazonconnect"></a>
-
-****
 
 - **Connect Customer**
   - **Resource Type Value:** AWS::Connect::Instance / **Relationship:** NA / **Related Resource:** NA / **Notes:**
@@ -224,8 +200,6 @@ To learn more about how AWS Config integrates with Amazon API Gateway, see [Moni
 ## Amazon Detective
 <a name="amazondetective"></a>
 
-****
-
 - **Amazon Detective**
   - **Resource Type Value:** AWS::Detective::Graph / **Relationship:** NA / **Related Resource:** NA / **Notes:**
   - **Resource Type Value:** AWS::Detective::OrganizationAdmin / **Relationship:** NA / **Related Resource:** NA / **Notes:**
@@ -233,16 +207,12 @@ To learn more about how AWS Config integrates with Amazon API Gateway, see [Moni
 ## Amazon DynamoDB
 <a name="amazondynamodb"></a>
 
-****
-
 | AWS Service | Resource Type Value | Relationship | Related Resource | Notes |
 | --- | --- | --- | --- | --- |
 | Amazon DynamoDB | AWS::DynamoDB::Table | NA | NA |  |
 
 ## Amazon Elastic Compute Cloud
 <a name="amazonelasticcomputecloud"></a>
-
-****
 
 - **Amazon Elastic Compute Cloud**
   - **Resource Type Value:** AWS::EC2::Host\* / **Relationship:** contains / **Related Resource:** EC2 instance / **Notes:**
@@ -368,8 +338,6 @@ To learn more about how AWS Config integrates with Amazon API Gateway, see [Moni
 ## Amazon Elastic Container Registry
 <a name="amazonelasticcontainerregistry"></a>
 
-****
-
 - **Amazon Elastic Container Registry**
   - **Resource Type Value:** AWS::ECR::ReplicationConfiguration / **Relationship:** NA / **Related Resource:** NA / **Notes:**
   - **Resource Type Value:** AWS::ECR::Repository / **Relationship:** NA / **Related Resource:** NA / **Notes:**
@@ -385,8 +353,6 @@ To learn more about how AWS Config integrates with Amazon API Gateway, see [Moni
 
 ## Amazon Elastic Container Service
 <a name="amazonelasticcontainerservice"></a>
-
-****
 
 - **Amazon Elastic Container Service**
   - **Resource Type Value:** AWS::ECS::Cluster / **Relationship:** NA / **Related Resource:** NA / **Notes:**
@@ -404,16 +370,12 @@ New (supported): `arn:aws:ecs:{{region}}:{{aws_account_id}}:service/{{cluster-na
 ## Amazon Elastic File System
 <a name="amazonelasticfilesystem"></a>
 
-****
-
 - **Amazon Elastic File System**
   - **Resource Type Value:** AWS::EFS::FileSystem / **Relationship:** NA / **Related Resource:** NA / **Notes:**
   - **Resource Type Value:** AWS::EFS::AccessPoint / **Relationship:** NA / **Related Resource:** NA / **Notes:**
 
 ## Amazon Elastic Kubernetes Service
 <a name="amazonelastickubernetesservice"></a>
-
-****
 
 - **Amazon Elastic Kubernetes Service**
   - **Resource Type Value:** AWS::EKS::Addon / **Relationship:** NA / **Related Resource:** NA / **Notes:**
@@ -424,8 +386,6 @@ New (supported): `arn:aws:ecs:{{region}}:{{aws_account_id}}:service/{{cluster-na
 
 ## Amazon EMR
 <a name="amazonemr"></a>
-
-****
 
 - **Amazon EMR**
   - **Resource Type Value:** AWS::EMR::Studio / **Relationship:** NA / **Related Resource:** NA / **Notes:**
@@ -440,16 +400,12 @@ New (supported): `arn:aws:ecs:{{region}}:{{aws_account_id}}:service/{{cluster-na
 ## Amazon EMR Serverless
 <a name="amazonemrserverless"></a>
 
-****
-
 | AWS Service | Resource Type Value | Relationship | Related Resource | Notes |
 | --- | --- | --- | --- | --- |
 | Amazon EMR Serverless | AWS::EMRServerless::Application | NA | NA |  |
 
 ## Amazon EventBridge
 <a name="amazoneventbridge"></a>
-
-****
 
 - **Amazon EventBridge**
   - **Resource Type Value:** AWS::Events::EventBus / **Relationship:** NA / **Related Resource:** NA / **Notes:**
@@ -468,16 +424,12 @@ New (supported): `arn:aws:ecs:{{region}}:{{aws_account_id}}:service/{{cluster-na
 ## Amazon Forecast
 <a name="amazonforecast"></a>
 
-****
-
 - **Amazon Forecast**
   - **Resource Type Value:** AWS::Forecast::Dataset / **Relationship:** NA / **Related Resource:** NA / **Notes:**
   - **Resource Type Value:** AWS::Forecast::DatasetGroup / **Relationship:** NA / **Related Resource:** NA / **Notes:**
 
 ## Amazon Fraud Detector
 <a name="amazonfrauddetector"></a>
-
-****
 
 - **Amazon Fraud Detector**
   - **Resource Type Value:** AWS::FraudDetector::Label / **Relationship:** NA / **Related Resource:** NA / **Notes:**
@@ -487,8 +439,6 @@ New (supported): `arn:aws:ecs:{{region}}:{{aws_account_id}}:service/{{cluster-na
 
 ## Amazon GameLift
 <a name="amazongamelift"></a>
-
-****
 
 - **Amazon GameLift**
   - **Resource Type Value:** AWS::GameLift::Build / **Relationship:** NA / **Related Resource:** NA / **Notes:**
@@ -502,8 +452,6 @@ New (supported): `arn:aws:ecs:{{region}}:{{aws_account_id}}:service/{{cluster-na
 ## Amazon GuardDuty
 <a name="amazonguardduty"></a>
 
-****
-
 - **Amazon GuardDuty**
   - **Resource Type Value:** AWS::GuardDuty::Detector / **Relationship:** NA / **Related Resource:** NA / **Notes:**
   - **Resource Type Value:** AWS::GuardDuty::Filter / **Relationship:** NA / **Related Resource:** NA / **Notes:**
@@ -514,16 +462,12 @@ New (supported): `arn:aws:ecs:{{region}}:{{aws_account_id}}:service/{{cluster-na
 ## Amazon Inspector
 <a name="amazoninspector"></a>
 
-****
-
 - **Amazon Inspector**
   - **Resource Type Value:** AWS::InspectorV2::Filter  / **Relationship:** NA / **Related Resource:** NA / **Notes:**
   - **Resource Type Value:** AWS::InspectorV2::Activation / **Relationship:** NA / **Related Resource:** NA / **Notes:**
 
 ## Amazon Interactive Video Service
 <a name="amazoninteractivevideoservice"></a>
-
-****
 
 - **Amazon Interactive Video Service**
   - **Resource Type Value:** AWS::IVS::Channel / **Relationship:** NA / **Related Resource:** NA / **Notes:**
@@ -533,8 +477,6 @@ New (supported): `arn:aws:ecs:{{region}}:{{aws_account_id}}:service/{{cluster-na
 ## Amazon Keyspaces (for Apache Cassandra)
 <a name="amazonkeyspaces"></a>
 
-****
-
 | AWS Service | Resource Type Value | Relationship | Related Resource | Notes |
 | --- | --- | --- | --- | --- |
 | Amazon Keyspaces (for Apache Cassandra) | AWS::Cassandra::Keyspace | NA | NA |  |
@@ -542,16 +484,12 @@ New (supported): `arn:aws:ecs:{{region}}:{{aws_account_id}}:service/{{cluster-na
 ## Amazon Location Service
 <a name="amazonlocation"></a>
 
-****
-
 | AWS Service | Resource Type Value | Relationship | Related Resource | Notes |
 | --- | --- | --- | --- | --- |
 | Amazon Location Service | AWS::Location::APIKey | NA | NA |  |
 
 ## Amazon OpenSearch Service
 <a name="amazonopensearchservice"></a>
-
-****
 
 - **Amazon OpenSearch Service (legacy Elasticsearch)**
   - **Resource Type Value:** AWS::Elasticsearch::Domain
@@ -580,16 +518,12 @@ You might continue to see your data for `AWS::OpenSearch::Domain` under the exis
 ## Amazon OpenSearch Ingestion
 <a name="awsosis"></a>
 
-****
-
 | AWS Service | Resource Type Value | Relationship | Related Resource | Notes |
 | --- | --- | --- | --- | --- |
 | Amazon OpenSearch Ingestion | AWS::OSIS::Pipeline | NA | NA |  |
 
 ## Amazon Personalize
 <a name="amazonpersonalize"></a>
-
-****
 
 - **Amazon Personalize**
   - **Resource Type Value:** AWS::Personalize::Dataset / **Relationship:** NA / **Related Resource:** NA / **Notes:**
@@ -599,8 +533,6 @@ You might continue to see your data for `AWS::OpenSearch::Domain` under the exis
 
 ## Amazon Pinpoint
 <a name="amazonpinpoint"></a>
-
-****
 
 - **Amazon Pinpoint**
   - **Resource Type Value:** AWS::Pinpoint::ApplicationSettings / **Relationship:** NA / **Related Resource:** NA / **Notes:**
@@ -615,8 +547,6 @@ You might continue to see your data for `AWS::OpenSearch::Domain` under the exis
 ## Amazon Quantum Ledger Database (Amazon QLDB)
 <a name="amazonqldb"></a>
 
-****
-
 | AWS Service | Resource Type Value | Relationship | Related Resource | Notes |
 | --- | --- | --- | --- | --- |
 | Amazon QLDB | AWS::QLDB::Ledger | NA | NA |  |
@@ -624,16 +554,12 @@ You might continue to see your data for `AWS::OpenSearch::Domain` under the exis
 ## Amazon Kendra
 <a name="amazonkendra"></a>
 
-****
-
 | AWS Service | Resource Type Value | Relationship | Related Resource | Notes |
 | --- | --- | --- | --- | --- |
 | Amazon Kendra | AWS::Kendra::Index  | NA | NA |  |
 
 ## Amazon Kinesis
 <a name="amazonkinesis"></a>
-
-****
 
 - **Amazon Kinesis**
   - **Resource Type Value:** AWS::Kinesis::ResourcePolicy / **Relationship:** NA / **Related Resource:** NA / **Notes:** Recording configuration items for resource deletion events might take up to 120 hours to reflect in AWS Config.
@@ -659,16 +585,12 @@ You might continue to see your data for `AWS::OpenSearch::Domain` under the exis
 ## Amazon Lex
 <a name="amazonlex"></a>
 
-****
-
 - **Amazon Lex**
   - **Resource Type Value:** AWS::Lex::BotAlias  / **Relationship:** NA / **Related Resource:** NA / **Notes:**
   - **Resource Type Value:** AWS::Lex::Bot / **Relationship:** NA / **Related Resource:** NA / **Notes:**
 
 ## Amazon Lightsail
 <a name="amazonlightsail"></a>
-
-****
 
 - **Amazon Lightsail**
   - **Resource Type Value:** AWS::Lightsail::Disk / **Relationship:** NA / **Related Resource:** NA / **Notes:**
@@ -679,16 +601,12 @@ You might continue to see your data for `AWS::OpenSearch::Domain` under the exis
 ## Amazon Lookout for Metrics
 <a name="amazonlookoutmetrics"></a>
 
-****
-
 | AWS Service | Resource Type Value | Relationship | Related Resource | Notes |
 | --- | --- | --- | --- | --- |
 | Amazon Lookout for Metrics | AWS::LookoutMetrics::Alert | NA | NA |  |
 
 ## Amazon Lookout for Vision
 <a name="amazonlookoutvision"></a>
-
-****
 
 | AWS Service | Resource Type Value | Relationship | Related Resource | Notes |
 | --- | --- | --- | --- | --- |
@@ -697,16 +615,12 @@ You might continue to see your data for `AWS::OpenSearch::Domain` under the exis
 ## Amazon Macie
 <a name="amazonmacie"></a>
 
-****
-
 | AWS Service | Resource Type Value | Relationship | Related Resource | Notes |
 | --- | --- | --- | --- | --- |
 | Amazon Macie | AWS::Macie::Session | NA | NA |  |
 
 ## Amazon Managed Grafana
 <a name="amazonmanagedgrafana"></a>
-
-****
 
 | AWS Service | Resource Type Value | Relationship | Related Resource | Notes |
 | --- | --- | --- | --- | --- |
@@ -715,16 +629,12 @@ You might continue to see your data for `AWS::OpenSearch::Domain` under the exis
 ## Amazon Managed Service for Prometheus
 <a name="amazonmanagedserviceforprometheus"></a>
 
-****
-
 | AWS Service | Resource Type Value | Relationship | Related Resource | Notes |
 | --- | --- | --- | --- | --- |
 | Amazon Managed Service for Prometheus | AWS::APS::RuleGroupsNamespace | NA | NA |  |
 
 ## Amazon MemoryDB
 <a name="amazonmemorydbforredis"></a>
-
-****
 
 | AWS Service | Resource Type Value | Relationship | Related Resource | Notes |
 | --- | --- | --- | --- | --- |
@@ -733,16 +643,12 @@ You might continue to see your data for `AWS::OpenSearch::Domain` under the exis
 ## Amazon MQ
 <a name="amazonmq"></a>
 
-****
-
 | AWS Service | Resource Type Value | Relationship | Related Resource | Notes |
 | --- | --- | --- | --- | --- |
 | Amazon MQ | AWS::AmazonMQ::Broker | NA | NA |  |
 
 ## Amazon Managed Streaming for Apache Kafka
 <a name="amazonmsk"></a>
-
-****
 
 - **Amazon Managed Streaming for Apache Kafka**
   - **Resource Type Value:** AWS::MSK::Cluster / **Relationship:** NA / **Related Resource:** NA / **Notes:**
@@ -759,8 +665,6 @@ You might continue to see your data for `AWS::OpenSearch::Domain` under the exis
 ## Amazon Lex
 <a name="amazonqbusiness"></a>
 
-****
-
 - **Amazon Q Business**
   - **Resource Type Value:** AWS::QBusiness::Application
   - **Relationship:** NA
@@ -769,8 +673,6 @@ You might continue to see your data for `AWS::OpenSearch::Domain` under the exis
 
 ## Amazon Quick
 <a name="amazonquicksight"></a>
-
-****
 
 - **Amazon Quick**
   - **Resource Type Value:** AWS::QuickSight::Dashboard / **Relationship:** NA / **Related Resource:** NA / **Notes:**
@@ -781,8 +683,6 @@ You might continue to see your data for `AWS::OpenSearch::Domain` under the exis
 
 ## Amazon Redshift
 <a name="amazonredshift"></a>
-
-****
 
 - **Amazon Redshift**
   - **Resource Type Value:** AWS::Redshift::Cluster / **Relationship:** is associated with / **Related Resource:** Cluster parameter group / **Notes:**
@@ -805,8 +705,6 @@ You might continue to see your data for `AWS::OpenSearch::Domain` under the exis
 ## Amazon Relational Database Service
 <a name="amazonrds"></a>
 
-****
-
 - **Amazon Relational Database Service**
   - **Resource Type Value:** AWS::RDS::DBCluster / **Relationship:** contains / **Related Resource:** RDS DB instance / **Notes:**
   - **Relationship:** is associated with / **Related Resource:** RDS DB subnet group / **Notes:**
@@ -828,8 +726,6 @@ You might continue to see your data for `AWS::OpenSearch::Domain` under the exis
 
 ## Amazon Route 53
 <a name="amazonroute53"></a>
-
-****
 
 - **Amazon Route 53**
   - **Resource Type Value:** AWS::Route53::DNSSEC / **Relationship:** NA / **Related Resource:** NA / **Notes:**
@@ -864,8 +760,6 @@ You might continue to see your data for `AWS::OpenSearch::Domain` under the exis
 ## Amazon SageMaker AI
 <a name="amazonsagemaker"></a>
 
-****
-
 - **Amazon SageMaker AI**
   - **Resource Type Value:** AWS::SageMaker::AppImageConfig / **Relationship:** NA / **Related Resource:** NA / **Notes:**
   - **Resource Type Value:** AWS::SageMaker::Cluster / **Relationship:** NA / **Related Resource:** NA / **Notes:**
@@ -894,8 +788,6 @@ You might continue to see your data for `AWS::OpenSearch::Domain` under the exis
 ## Amazon Simple Email Service
 <a name="amazonsimpleemailservice"></a>
 
-****
-
 - **Amazon Simple Email Service**
   - **Resource Type Value:** AWS::SES::ConfigurationSet / **Relationship:** NA / **Related Resource:** NA / **Notes:**
   - **Resource Type Value:** AWS::SES::ContactList / **Relationship:** NA / **Related Resource:** NA / **Notes:**
@@ -908,8 +800,6 @@ You might continue to see your data for `AWS::OpenSearch::Domain` under the exis
 ## Amazon Simple Notification Service
 <a name="amazonsimplenotificationservice"></a>
 
-****
-
 | AWS Service | Resource Type Value | Relationship | Related Resource | Notes |
 | --- | --- | --- | --- | --- |
 | Amazon Simple Notification Service | AWS::SNS::Topic | NA | NA |  |
@@ -917,16 +807,12 @@ You might continue to see your data for `AWS::OpenSearch::Domain` under the exis
 ## Amazon Simple Queue Service
 <a name="amazonsimplequeueservice"></a>
 
-****
-
 | AWS Service | Resource Type Value | Relationship | Related Resource | Notes |
 | --- | --- | --- | --- | --- |
 | Amazon Simple Queue Service | AWS::SQS::Queue | NA | NA |  |
 
 ## Amazon Simple Storage Service
 <a name="amazonsimplestorageservice"></a>
-
-****
 
 - **Amazon Simple Storage Service**
   - **Resource Type Value:** AWS::S3::AccountPublicAccessBlock / **Relationship:** NA / **Related Resource:** NA / **Notes:**
@@ -952,8 +838,6 @@ You might continue to see your data for `AWS::OpenSearch::Domain` under the exis
 
 AWS Config also records the following attributes for the Amazon S3 bucket resource type.
 
-****
-
 | Attributes | Description |
 | --- | --- |
 | AccelerateConfiguration | Transfer acceleration for data over long distances between your client and a bucket. |
@@ -974,16 +858,12 @@ For more information about the attributes, see [Bucket Configuration Options](ht
 ## Amazon S3 Vectors
 <a name="amazons3vectors"></a>
 
-****
-
 - **Amazon S3 Vectors**
   - **Resource Type Value:** AWS::S3Vectors::VectorBucket / **Relationship:** NA / **Related Resource:** NA / **Notes:**
   - **Resource Type Value:** AWS::S3Vectors::VectorBucketPolicy / **Relationship:** NA / **Related Resource:** NA / **Notes:**
 
 ## Amazon Verified Permissions
 <a name="amazonverifiedpermissions"></a>
-
-****
 
 | AWS Service | Resource Type Value | Relationship | Related Resource | Notes |
 | --- | --- | --- | --- | --- |
@@ -992,8 +872,6 @@ For more information about the attributes, see [Bucket Configuration Options](ht
 ## Amazon WorkSpaces
 <a name="amazonworkspaces"></a>
 
-****
-
 - **Amazon WorkSpaces**
   - **Resource Type Value:** AWS::WorkSpaces::ConnectionAlias / **Relationship:** NA / **Related Resource:** NA / **Notes:**
   - **Resource Type Value:** AWS::WorkSpaces::Workspace / **Relationship:** NA / **Related Resource:** NA / **Notes:**
@@ -1001,16 +879,12 @@ For more information about the attributes, see [Bucket Configuration Options](ht
 ## AWS Amplify
 <a name="awsamplify"></a>
 
-****
-
 - **AWS Amplify**
   - **Resource Type Value:** AWS::Amplify::App / **Relationship:** NA / **Related Resource:** NA / **Notes:**
   - **Resource Type Value:** AWS::Amplify::Branch / **Relationship:** NA / **Related Resource:** NA / **Notes:**
 
 ## AWS AppConfig
 <a name="awsappconfig"></a>
-
-****
 
 - **AWS AppConfig**
   - **Resource Type Value:** AWS::AppConfig::Application / **Relationship:** NA / **Related Resource:** NA / **Notes:**
@@ -1024,16 +898,12 @@ For more information about the attributes, see [Bucket Configuration Options](ht
 ## AWS App Runner
 <a name="awsapprunner"></a>
 
-****
-
 - **AWS App Runner**
   - **Resource Type Value:** AWS::AppRunner::VpcConnector / **Relationship:** NA / **Related Resource:** NA / **Notes:**
   - **Resource Type Value:** AWS::AppRunner::Service / **Relationship:** NA / **Related Resource:** NA / **Notes:**
 
 ## AWS App Mesh
 <a name="awsappmesh"></a>
-
-****
 
 - **AWS App Mesh**
   - **Resource Type Value:** AWS::AppMesh::VirtualNode / **Relationship:** NA / **Related Resource:** NA / **Notes:**
@@ -1047,16 +917,12 @@ For more information about the attributes, see [Bucket Configuration Options](ht
 ## AWS AppSync
 <a name="awsappsync"></a>
 
-****
-
 - **AWS AppSync**
   - **Resource Type Value:** AWS::AppSync::DataSource / **Relationship:** NA / **Related Resource:** NA / **Notes:**
   - **Resource Type Value:** AWS::AppSync::GraphQLApi / **Relationship:** NA / **Related Resource:** NA / **Notes:**
 
 ## AWS Audit Manager
 <a name="aws-audit-manager"></a>
-
-****
 
 - **AWS Audit Manager**
   - **Resource Type Value:** AWS::AuditManager::Assessment
@@ -1066,8 +932,6 @@ For more information about the attributes, see [Bucket Configuration Options](ht
 
 ## AWS Auto Scaling
 <a name="awsautoscaling"></a>
-
-****
 
 - **AWS Auto Scaling**
   - **Resource Type Value:** AWS::AutoScaling::AutoScalingGroup / **Relationship:** contains / **Related Resource:** Amazon EC2 instance / **Notes:**
@@ -1083,16 +947,12 @@ For more information about the attributes, see [Bucket Configuration Options](ht
 ## AWS B2B Data Interchange
 <a name="awsb2bi"></a>
 
-****
-
 - **AWS B2B Data Interchange**
   - **Resource Type Value:** AWS::B2BI::Capability / **Relationship:** NA / **Related Resource:** NA / **Notes:**
   - **Resource Type Value:** AWS::B2BI::Transformer / **Relationship:** NA / **Related Resource:** NA / **Notes:**
 
 ## AWS Backup
 <a name="awsbackup"></a>
-
-****
 
 - **AWS Backup**
   - **Resource Type Value:** AWS::Backup::BackupPlan / **Relationship:** NA / **Related Resource:** NA\* / **Notes:**
@@ -1117,8 +977,6 @@ For more information, see [Managing backups using backup plans](https://docs.aws
 ## AWS Batch
 <a name="awsbatch"></a>
 
-****
-
 - **AWS Batch**
   - **Resource Type Value:** AWS::Batch::ComputeEnvironment / **Relationship:** NA / **Related Resource:** NA / **Notes:**
   - **Resource Type Value:** AWS::Batch::ConsumableResource / **Relationship:** NA / **Related Resource:** NA / **Notes:**
@@ -1128,16 +986,12 @@ For more information, see [Managing backups using backup plans](https://docs.aws
 ## AWS Billing and Cost Management
 <a name="awsbillingandcostmanagement"></a>
 
-****
-
 | AWS Service | Resource Type Value | Relationship | Related Resource | Notes |
 | --- | --- | --- | --- | --- |
 | AWS Billing and Cost Management | AWS::BCMDataExports::Export | NA | NA |  |
 
 ## AWS Budgets
 <a name="awsbudgets"></a>
-
-****
 
 | AWS Service | Resource Type Value | Relationship | Related Resource | Notes |
 | --- | --- | --- | --- | --- |
@@ -1146,16 +1000,12 @@ For more information, see [Managing backups using backup plans](https://docs.aws
 ## AWS Certificate Manager
 <a name="awscertificatemanager"></a>
 
-****
-
 | AWS Service | Resource Type Value | Relationship | Related Resource | Notes |
 | --- | --- | --- | --- | --- |
 | AWS Certificate Manager | AWS::ACM::Certificate | NA | NA |  |
 
 ## AWS Clean Rooms
 <a name="awscleanrooms"></a>
-
-****
 
 - **AWS Clean Rooms**
   - **Resource Type Value:** AWS::CleanRooms::AnalysisTemplate / **Relationship:** NA / **Related Resource:** NA / **Notes:**
@@ -1173,8 +1023,6 @@ For more information, see [Managing backups using backup plans](https://docs.aws
 ## AWS CloudFormation
 <a name="awscloudformation"></a>
 
-****
-
 - **CloudFormation**
   - **Resource Type Value:** AWS::CloudFormation::GuardHook / **Relationship:** NA / **Related Resource:** NA / **Notes:**
   - **Resource Type Value:** AWS::CloudFormation::LambdaHook / **Relationship:** NA / **Related Resource:** NA / **Notes:**
@@ -1186,16 +1034,12 @@ For more information, see [Managing backups using backup plans](https://docs.aws
 ## AWS CloudTrail
 <a name="awscloudtrail"></a>
 
-****
-
 - **AWS CloudTrail**
   - **Resource Type Value:** AWS::CloudTrail::Trail / **Relationship:** NA / **Related Resource:** NA / **Notes:**
   - **Resource Type Value:** AWS::CloudTrail::EventDataStore / **Relationship:** NA / **Related Resource:** NA / **Notes:**
 
 ## AWS Cloud9
 <a name="awscloud9"></a>
-
-****
 
 | AWS Service | Resource Type Value | Relationship | Related Resource | Notes |
 | --- | --- | --- | --- | --- |
@@ -1207,8 +1051,6 @@ After careful consideration, we have made the decision to close new customer acc
 ## AWS Cloud Map
 <a name="awscloudmap"></a>
 
-****
-
 - **Service Discovery**
   - **Resource Type Value:** AWS::ServiceDiscovery::Service / **Relationship:** NA / **Related Resource:** NA / **Notes:**
   - **Resource Type Value:** AWS::ServiceDiscovery::PublicDnsNamespace / **Relationship:** NA / **Related Resource:** NA / **Notes:**
@@ -1218,8 +1060,6 @@ After careful consideration, we have made the decision to close new customer acc
 ## AWS CodeArtifact
 <a name="awscodeartifact"></a>
 
-****
-
 - **AWS CodeArtifact**
   - **Resource Type Value:** AWS::CodeArtifact::Domain / **Relationship:** NA / **Related Resource:** NA / **Notes:**
   - **Resource Type Value:** AWS::CodeArtifact::PackageGroup / **Relationship:** NA / **Related Resource:** NA / **Notes:** Recording configuration items for resource deletion events might take up to 120 hours to reflect in AWS Config.
@@ -1227,8 +1067,6 @@ After careful consideration, we have made the decision to close new customer acc
 
 ## AWS CodeBuild
 <a name="awscodebuild"></a>
-
-****
 
 - **AWS CodeBuild**
   - **Resource Type Value:** AWS::CodeBuild::Project\* / **Relationship:** is associated with / **Related Resource:** S3 bucket / **Notes:**
@@ -1240,8 +1078,6 @@ After careful consideration, we have made the decision to close new customer acc
 ## AWS CodeDeploy
 <a name="awscodedeploy"></a>
 
-****
-
 - **AWS CodeDeploy**
   - **Resource Type Value:** AWS::CodeDeploy::Application / **Relationship:** contains / **Related Resource:** DeploymentGroup / **Notes:**
   - **Resource Type Value:** AWS::CodeDeploy::DeploymentConfig / **Relationship:** NA / **Related Resource:** NA / **Notes:**
@@ -1249,8 +1085,6 @@ After careful consideration, we have made the decision to close new customer acc
 
 ## AWS CodePipeline
 <a name="awscodepipeline"></a>
-
-****
 
 - **AWS CodePipeline **
   - **Resource Type Value:** AWS::CodePipeline::Pipeline\*
@@ -1265,8 +1099,6 @@ After careful consideration, we have made the decision to close new customer acc
 
 ## AWS Config
 <a name="awsconfig"></a>
-
-****
 
 - **AWS Config**
   - **Resource Type Value:** AWS::Config::AggregationAuthorization / **Relationship:** NA / **Related Resource:** NA / **Notes:**
@@ -1286,8 +1118,6 @@ Recording for the `AWS::Config::ConformancePackCompliance` and `AWS::Config::Con
 ## AWS Cost Explorer
 <a name="awscostexplorer"></a>
 
-****
-
 - **AWS Cost Explorer**
   - **Resource Type Value:** AWS::CE::CostCategory
   - **Relationship:** NA
@@ -1296,8 +1126,6 @@ Recording for the `AWS::Config::ConformancePackCompliance` and `AWS::Config::Con
 
 ## AWS Database Migration Service
 <a name="awsdms"></a>
-
-****
 
 - **AWS Database Migration Service**
   - **Resource Type Value:** AWS::DMS::EventSubscription / **Relationship:** NA / **Related Resource:** NA / **Notes:**
@@ -1309,8 +1137,6 @@ Recording for the `AWS::Config::ConformancePackCompliance` and `AWS::Config::Con
 
 ## AWS DataSync
 <a name="awsdatasync"></a>
-
-****
 
 - **AWS DataSync**
   - **Resource Type Value:** AWS::DataSync::Agent / **Relationship:** NA / **Related Resource:** NA / **Notes:**
@@ -1327,16 +1153,12 @@ Recording for the `AWS::Config::ConformancePackCompliance` and `AWS::Config::Con
 ## Amazon Aurora DSQL
 <a name="awsdsql"></a>
 
-****
-
 | AWS Service | Resource Type Value | Relationship | Related Resource | Notes |
 | --- | --- | --- | --- | --- |
 | Amazon Aurora DSQL | AWS::DSQL::Cluster | NA | NA |  |
 
 ## AWS Deadline Cloud
 <a name="awsdeadlinecloud"></a>
-
-****
 
 - **AWS Deadline Cloud**
   - **Resource Type Value:** AWS::Deadline::Fleet / **Relationship:** NA / **Related Resource:** NA / **Notes:**
@@ -1349,8 +1171,6 @@ Recording for the `AWS::Config::ConformancePackCompliance` and `AWS::Config::Con
 ## AWS Device Farm
 <a name="awsdevicefarm"></a>
 
-****
-
 - **AWS Device Farm**
   - **Resource Type Value:** AWS::DeviceFarm::TestGridProject / **Relationship:** NA / **Related Resource:** NA / **Notes:**
   - **Resource Type Value:** AWS::DeviceFarm::InstanceProfile / **Relationship:** NA / **Related Resource:** NA / **Notes:**
@@ -1358,8 +1178,6 @@ Recording for the `AWS::Config::ConformancePackCompliance` and `AWS::Config::Con
 
 ## AWS Elastic Beanstalk
 <a name="awselasticbeanstalk"></a>
-
-****
 
 - **AWS Elastic Beanstalk**
   - **Resource Type Value:** AWS::ElasticBeanstalk::Application / **Relationship:** contains / **Related Resource:** Elastic Beanstalk Application Version / **Notes:**
@@ -1376,8 +1194,6 @@ Recording for the `AWS::Config::ConformancePackCompliance` and `AWS::Config::Con
 ## AWS Entity Resolution
 <a name="awsentityresolution"></a>
 
-****
-
 - **AWS Entity Resolution**
   - **Resource Type Value:** AWS::EntityResolution::IdMappingWorkflow / **Relationship:** NA / **Related Resource:** NA / **Notes:**
   - **Resource Type Value:** AWS::EntityResolution::MatchingWorkflow / **Relationship:** NA / **Related Resource:** NA / **Notes:**
@@ -1386,16 +1202,12 @@ Recording for the `AWS::Config::ConformancePackCompliance` and `AWS::Config::Con
 ## AWS Fault Injection Service
 <a name="awsfis"></a>
 
-****
-
 - **AWS Fault Injection Service**
   - **Resource Type Value:** AWS::FIS::ExperimentTemplate / **Relationship:** NA / **Related Resource:** NA / **Notes:**
   - **Resource Type Value:** AWS::FIS::TargetAccountConfiguration / **Relationship:** NA / **Related Resource:** NA / **Notes:**
 
 ## AWS Global Accelerator
 <a name="awsglobalaccelerator"></a>
-
-****
 
 - **AWS Global Accelerator**
   - **Resource Type Value:** AWS::GlobalAccelerator::Listener / **Relationship:** NA / **Related Resource:** NA / **Notes:**
@@ -1404,8 +1216,6 @@ Recording for the `AWS::Config::ConformancePackCompliance` and `AWS::Config::Con
 
 ## AWS Glue
 <a name="awsglue"></a>
-
-****
 
 - **AWS Glue**
   - **Resource Type Value:** AWS::Glue::Classifier / **Relationship:** NA / **Related Resource:** NA / **Notes:**
@@ -1418,8 +1228,6 @@ Recording for the `AWS::Config::ConformancePackCompliance` and `AWS::Config::Con
 ## AWS Glue DataBrew
 <a name="awsgluedatabrew"></a>
 
-****
-
 - **AWS Glue DataBrew**
   - **Resource Type Value:** AWS::DataBrew::Dataset / **Relationship:** NA / **Related Resource:** NA / **Notes:**
   - **Resource Type Value:** AWS::DataBrew::Job / **Relationship:** NA / **Related Resource:** NA / **Notes:**
@@ -1431,8 +1239,6 @@ Recording for the `AWS::Config::ConformancePackCompliance` and `AWS::Config::Con
 ## AWS Ground Station
 <a name="aws-ground-station"></a>
 
-****
-
 - **AWS Ground Station**
   - **Resource Type Value:** AWS::GroundStation::Config / **Relationship:** NA / **Related Resource:** NA / **Notes:**
   - **Resource Type Value:** AWS::GroundStation::MissionProfile / **Relationship:** NA / **Related Resource:** NA / **Notes:**
@@ -1441,16 +1247,12 @@ Recording for the `AWS::Config::ConformancePackCompliance` and `AWS::Config::Con
 ## AWS HealthLake
 <a name="amazonhealthlake"></a>
 
-****
-
 | AWS Service | Resource Type Value | Relationship | Related Resource | Notes |
 | --- | --- | --- | --- | --- |
 | AWS HealthLake | AWS::HealthLake::FHIRDatastore | NA | NA |  |
 
 ## AWS Identity and Access Management (IAM)
 <a name="awsiam"></a>
-
-****
 
 - **AWS Identity and Access Management**
   - **Resource Type Value:** AWS::IAM::User / **Relationship:** is attached to / **Related Resource:** IAM group / **Notes:**
@@ -1562,16 +1364,12 @@ AWS Config includes inline policies with the configuration details that it recor
 ## AWS Key Management Service
 <a name="awskeymanagementservice"></a>
 
-****
-
 - **AWS Key Management Service**
   - **Resource Type Value:** AWS::KMS::Key / **Relationship:** NA / **Related Resource:** NA / **Notes:**
   - **Resource Type Value:** AWS::KMS::Alias / **Relationship:** NA / **Related Resource:** NA / **Notes:**
 
 ## AWS Lambda
 <a name="awslambda"></a>
-
-****
 
 - **AWS Lambda**
   - **Resource Type Value:** AWS::Lambda::Function / **Relationship:** is associated with / **Related Resource:** IAM role / **Notes:**
@@ -1582,16 +1380,12 @@ AWS Config includes inline policies with the configuration details that it recor
 ## AWS Mainframe Modernization
 <a name="awsmainframemodernization"></a>
 
-****
-
 | AWS Service | Resource Type Value | Relationship | Related Resource | Notes |
 | --- | --- | --- | --- | --- |
 | AWS Mainframe Modernization | AWS::M2::Environment | NA | NA |  |
 
 ## AWS Network Firewall
 <a name="awsnetworkfirewall"></a>
-
-****
 
 - **AWS Network Firewall**
   - **Resource Type Value:** AWS::NetworkFirewall::ContainerAssociation / **Relationship:** NA / **Related Resource:** NA / **Notes:**
@@ -1604,8 +1398,6 @@ AWS Config includes inline policies with the configuration details that it recor
 
 ## AWS Network Manager
 <a name="awsnetworkmanager"></a>
-
-****
 
 - **AWS Network Manager**
   - **Resource Type Value:** AWS::NetworkManager::TransitGatewayRegistration / **Relationship:** NA / **Related Resource:** NA / **Notes:**
@@ -1621,8 +1413,6 @@ AWS Config includes inline policies with the configuration details that it recor
 ## AWS Organizations
 <a name="awsorganizations"></a>
 
-****
-
 - **AWS Organizations**
   - **Resource Type Value:** AWS::Organizations::OrganizationalUnit
   - **Relationship:** NA
@@ -1632,16 +1422,12 @@ AWS Config includes inline policies with the configuration details that it recor
 ## AWS HealthOmics
 <a name="awshealthomics"></a>
 
-****
-
 | AWS Service | Resource Type Value | Relationship | Related Resource | Notes |
 | --- | --- | --- | --- | --- |
 | AWS HealthOmics | AWS::Omics::ReferenceStore | NA | NA |  |
 
 ## AWS Panorama
 <a name="awspanorama"></a>
-
-****
 
 - **AWS Panorama**
   - **Resource Type Value:** AWS::Panorama::Package
@@ -1651,8 +1437,6 @@ AWS Config includes inline policies with the configuration details that it recor
 
 ## AWS Private Certificate Authority
 <a name="awsprivateca"></a>
-
-****
 
 - **AWS Private Certificate Authority**
   - **Resource Type Value:** AWS::ACMPCA::CertificateAuthority / **Relationship:** NA / **Related Resource:** NA / **Notes:**
@@ -1670,16 +1454,12 @@ AWS Config includes inline policies with the configuration details that it recor
 ## AWS Resilience Hub
 <a name="awsresiliencehub"></a>
 
-****
-
 - **AWS Resilience Hub**
   - **Resource Type Value:** AWS::ResilienceHub::ResiliencyPolicy / **Relationship:** NA / **Related Resource:** NA / **Notes:**
   - **Resource Type Value:** AWS::ResilienceHub::App / **Relationship:** NA / **Related Resource:** NA / **Notes:**
 
 ## AWS Resource Explorer
 <a name="awsresourceexplorer"></a>
-
-****
 
 - **AWS Resource Explorer**
   - **Resource Type Value:** AWS::ResourceExplorer2::Index / **Relationship:** NA / **Related Resource:** NA / **Notes:**
@@ -1688,8 +1468,6 @@ AWS Config includes inline policies with the configuration details that it recor
 ## AWS Resource Groups
 <a name="awsresourcegroups"></a>
 
-****
-
 | AWS Service | Resource Type Value | Relationship | Related Resource | Notes |
 | --- | --- | --- | --- | --- |
 | AWS Resource Groups | AWS::ResourceGroups::Group | NA | NA |  |
@@ -1697,16 +1475,12 @@ AWS Config includes inline policies with the configuration details that it recor
 ## AWS Resource Access Manager
 <a name="awsram"></a>
 
-****
-
 | AWS Service | Resource Type Value | Relationship | Related Resource | Notes |
 | --- | --- | --- | --- | --- |
 | AWS Resource Access Manager | AWS::RAM::ResourceShare | NA | NA |  |
 
 ## AWS RoboMaker
 <a name="awsrobomaker"></a>
-
-****
 
 - **AWS RoboMaker**
   - **Resource Type Value:** AWS::RoboMaker::RobotApplicationVersion / **Relationship:** NA / **Related Resource:** NA / **Notes:**
@@ -1716,16 +1490,12 @@ AWS Config includes inline policies with the configuration details that it recor
 ## AWS Signer
 <a name="awssigner"></a>
 
-****
-
 | AWS Service | Resource Type Value | Relationship | Related Resource | Notes |
 | --- | --- | --- | --- | --- |
 | AWS Signer | AWS::Signer::SigningProfile | NA | NA |  |
 
 ## AWS Secrets Manager
 <a name="awssecretsmanager"></a>
-
-****
 
 - **AWS Secrets Manager**
   - **Resource Type Value:** AWS::SecretsManager::Secret / **Relationship:** is associated with / **Related Resource:** Lambda function / **Notes:**
@@ -1736,16 +1506,12 @@ AWS Config includes inline policies with the configuration details that it recor
 ## AWS Security Hub CSPM
 <a name="awssecurityhub"></a>
 
-****
-
 | AWS Service | Resource Type Value | Relationship | Related Resource | Notes |
 | --- | --- | --- | --- | --- |
 | AWS Security Hub CSPM | AWS::SecurityHub::Standard | NA | NA |  |
 
 ## AWS Service Catalog
 <a name="awsservicecatalog"></a>
-
-****
 
 - **AWS Service Catalog**
   - **Resource Type Value:** AWS::ServiceCatalog::CloudFormationProduct / **Relationship:** is contained in / **Related Resource:** Portfolio / **Notes:**
@@ -1761,8 +1527,6 @@ When you use AWS Service Catalog with AWS Config, configuration items show the c
 ## AWS Shield
 <a name="awsshield"></a>
 
-****
-
 - **AWS Shield**
   - **Resource Type Value:** AWS::Shield::Protection / **Relationship:** is associated with / **Related Resource:** Amazon CloudFront distribution / **Notes:**
   - **Resource Type Value:** AWS::ShieldRegional::Protection / **Relationship:** is associated with / **Related Resource:** EC2 EIP / **Notes:**
@@ -1772,8 +1536,6 @@ When you use AWS Service Catalog with AWS Config, configuration items show the c
 ## AWS Step Functions
 <a name="awsstepfunctions"></a>
 
-****
-
 - **AWS Step Functions**
   - **Resource Type Value:** AWS::StepFunctions::Activity / **Relationship:** NA / **Related Resource:** NA / **Notes:**
   - **Resource Type Value:** AWS::StepFunctions::StateMachine / **Relationship:** NA / **Related Resource:** NA / **Notes:**
@@ -1781,16 +1543,12 @@ When you use AWS Service Catalog with AWS Config, configuration items show the c
 ## Amazon EventBridge Scheduler
 <a name="amazoneventbridgescheduler"></a>
 
-****
-
 | AWS Service | Resource Type Value | Relationship | Related Resource | Notes |
 | --- | --- | --- | --- | --- |
 | Amazon EventBridge Scheduler | AWS::Scheduler::ScheduleGroup | NA | NA |  |
 
 ## AWS Systems Manager
 <a name="awssystemsmanager"></a>
-
-****
 
 - **AWS Systems Manager**
   - **Resource Type Value:** AWS::SSM::AssociationCompliance / **Relationship:** is associated with / **Related Resource:** Managed Instance Inventory / **Notes:**
@@ -1818,8 +1576,6 @@ When you use AWS Service Catalog with AWS Config, configuration items show the c
 ## AWS Transfer Family
 <a name="awstransferfamily"></a>
 
-****
-
 - **AWS Transfer Family**
   - **Resource Type Value:** AWS::Transfer::Agreement / **Relationship:** NA / **Related Resource:** NA / **Notes:**
   - **Resource Type Value:** AWS::Transfer::Certificate / **Relationship:** NA / **Related Resource:** NA / **Notes:**
@@ -1831,8 +1587,6 @@ When you use AWS Service Catalog with AWS Config, configuration items show the c
 
 ## AWS WAF
 <a name="awswaf"></a>
-
-****
 
 - **AWS WAF**
   - **Resource Type Value:** AWS::WAF::RateBasedRule / **Relationship:** NA / **Related Resource:** NA / **Notes:**
@@ -1865,16 +1619,12 @@ When you use AWS Service Catalog with AWS Config, configuration items show the c
 ## AWS X-Ray
 <a name="awsxray"></a>
 
-****
-
 | AWS Service | Resource Type Value | Relationship | Related Resource | Notes |
 | --- | --- | --- | --- | --- |
 | AWS X-Ray | AWS::XRay::EncryptionConfig | NA | NA |  |
 
 ## Elastic Load Balancing
 <a name="awselasticloadbalancing"></a>
-
-****
 
 - **Elastic Load Balancing**
   - **Resource Type Value:** Application Load Balancer<br />`AWS::ElasticLoadBalancingV2::LoadBalancer` / **Relationship:** is associated with / **Related Resource:** EC2 security group / **Notes:**
@@ -1890,8 +1640,6 @@ When you use AWS Service Catalog with AWS Config, configuration items show the c
 ## AWS Elemental MediaConnect
 <a name="awsconnect"></a>
 
-****
-
 - **AWS Elemental MediaConnect**
   - **Resource Type Value:** AWS::MediaConnect::FlowEntitlement / **Relationship:** NA / **Related Resource:** NA / **Notes:**
   - **Resource Type Value:** AWS::MediaConnect::FlowVpcInterface / **Relationship:** NA / **Related Resource:** NA / **Notes:**
@@ -1900,8 +1648,6 @@ When you use AWS Service Catalog with AWS Config, configuration items show the c
 
 ## AWS Elemental MediaLive
 <a name="awselementalmedialive"></a>
-
-****
 
 - **AWS Elemental MediaLive**
   - **Resource Type Value:** AWS::MediaLive::CloudWatchAlarmTemplate / **Relationship:** NA / **Related Resource:** NA / **Notes:**
@@ -1912,16 +1658,12 @@ When you use AWS Service Catalog with AWS Config, configuration items show the c
 ## AWS Elemental MediaPackage
 <a name="awselementalmediapackage"></a>
 
-****
-
 - **AWS Elemental MediaPackage**
   - **Resource Type Value:** AWS::MediaPackage::PackagingGroup / **Relationship:** NA / **Related Resource:** NA / **Notes:**
   - **Resource Type Value:** AWS::MediaPackage::PackagingConfiguration / **Relationship:** NA / **Related Resource:** NA / **Notes:**
 
 ## AWS Elemental MediaPackage V2
 <a name="awselementalmediapackagev2"></a>
-
-****
 
 - **AWS Elemental MediaPackage V2**
   - **Resource Type Value:** AWS::MediaPackageV2::Channel / **Relationship:** NA / **Related Resource:** NA / **Notes:**
@@ -1930,8 +1672,6 @@ When you use AWS Service Catalog with AWS Config, configuration items show the c
 
 ## AWS Elemental MediaTailor
 <a name="awselementalmediatailor"></a>
-
-****
 
 - **AWS Elemental MediaTailor**
   - **Resource Type Value:** AWS::MediaTailor::Channel / **Relationship:** NA / **Related Resource:** NA / **Notes:**

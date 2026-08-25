@@ -18,4 +18,4 @@ If you have the necessary permissions, you can access information about your AWS
 1. View your account information.
 
 **Note**
-If you would like to close your AWS account, see [Close an AWS account](https://docs.aws.amazon.com//accounts/latest/reference/manage-acct-closing.html) in the *AWS Account Management Reference Guide*.
+If you would like to close your AWS account, see [Close an AWS account](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-closing.html) in the *AWS Account Management Reference Guide*.
