@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/load-and-penet
 
 Connect Customer regularly performs rigorous testing to ensure our service delivers the security, reliability, and availability required to support world-class contact centers of all sizes.
 
-Connect Customer has developed policies and requirements governing your the ability to conduct your own security assessments (such as penetration tests) and load testing to validate your environments and ensure they are production-ready. This topic explains the policies and requirements.
+Connect Customer has developed policies and requirements governing your the ability to conduct your own security assessments (such as penetration tests) and load testing to validate your environments and make sure they are production-ready. This topic explains the policies and requirements.
 
 ## Security and penetration testing
 <a name="securityandpenetrationtesting"></a>
@@ -45,8 +45,8 @@ Our load test policy requires that customers:
 
 The Connect Customer team will review your request. We will:
 + Determine whether there are any risks.
-+ Validate whether there are any considerations with the load test having the ability to be detected and/or reported as being abusive.
-+ Given where the test is designed, determine whether it might be unintentionally abusive and/or impactful to other entities.
++ Validate whether there are any considerations with the load test having the ability to be detected or reported as being abusive.
++ Given where the test is designed, determine whether it might be unintentionally abusive or impactful to other entities.
 + Determine whether you have mitigations applied to your instances, which can impact your tests as well as your production workloads.
 
 If we determine there is not likely to be an impact, we will provide a **written approval** to proceed.
@@ -59,4 +59,4 @@ For tests that might have impact, we will ask you to take additional steps, such
 Even with approval from AWS, you are responsible for:
 Any damages to AWS, other AWS customers, or external entities that are caused by your testing activities.
 Compliance with applicable laws in jurisdictions in which you operate, including laws and regulations governing cybersecurity or misuse of IT systems.
-Any load test run without approval from AWS will result in mitigation actions being taken against the AWS account up to and including suspension of service. Unauthorized testing may also be considered a violation of law and subject to criminal prosecution.
+Any load test run without approval from AWS will result in mitigation actions being taken against the AWS account up to and including suspension of service. Unauthorized testing might also be considered a violation of law and subject to criminal prosecution.

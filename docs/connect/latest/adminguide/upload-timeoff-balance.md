@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/upload-timeoff
 # Import an agent's time off balance to Connect Customer
 <a name="upload-timeoff-balance"></a>
 
-You can import or export a .csv file of an agent's time off balance. For example, you may download the time off balance from your HR system and then upload it to Connect Customer.
+You can import or export a .csv file of an agent's time off balance. For example, you might download the time off balance from your HR system and then upload it to Connect Customer.
 
 Connect Customer uses the time off balance to automatically approve or decline time off requests based on the agent's available net balance.
 

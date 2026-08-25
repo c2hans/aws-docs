@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/data-opt-out.h
 # Connect Customer Service Improvement and how to opt out from using your data for service improvement
 <a name="data-opt-out"></a>
 
-When you enable Connect Customer, we may use Your Content processed by Connect Customer to develop and improve your experience.
+When you enable Connect Customer, we might use Your Content processed by Connect Customer to develop and improve your experience.
 
 Benefits to allowing AWS to use Your Content for service improvement:
 
@@ -23,7 +23,7 @@ When the following Connect Customer features are enabled, we can use Your Conten
 + **Outbound campaigns**
 + **Connect Customer agent assist**
 
-Only Amazon employees will have access to the data. Your trust, privacy, and the security of Your Content are our highest priority and ensure that our use complies with our commitments to you. For more information, see [Data Privacy FAQ](https://aws.amazon.com/compliance/data-privacy-faq/).
+Only Amazon employees will have access to the data. Your trust, privacy, and the security of Your Content are our highest priority and make sure that our use complies with our commitments to you. For more information, see [Data Privacy FAQ](https://aws.amazon.com/compliance/data-privacy-faq/).
 
 You can always choose to opt out of having your data used to develop and improve Connect Customer by using an AWS Organizations opt-out policy. For information about how to opt out, see [AI services opt-out policies](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_ai-opt-out.html) in the *AWS Organizations User Guide*.
 

@@ -17,9 +17,10 @@ Type: Integer
 Required: Yes
 
  ** type **   <a name="Batch-Type-ComputeResource-type"></a>
-The type of compute environment: `EC2`, `SPOT`, `FARGATE`, or `FARGATE_SPOT`. For more information, see [Compute environments](https://docs.aws.amazon.com/batch/latest/userguide/compute_environments.html) in the * AWS Batch User Guide*.
+The type of compute environment: `EC2`, `SPOT`, `FARGATE`, `FARGATE_SPOT`, or `ECS_MANAGED_INSTANCES`. For more information, see [Compute environments](https://docs.aws.amazon.com/batch/latest/userguide/compute_environments.html) in the * AWS Batch User Guide*.
  If you choose `SPOT`, you must also specify an Amazon EC2 Spot Fleet role with the `spotIamFleetRole` parameter. For more information, see [Amazon EC2 spot fleet role](https://docs.aws.amazon.com/batch/latest/userguide/spot_fleet_IAM_role.html) in the * AWS Batch User Guide*.
-Multi-node parallel jobs aren't supported on Spot Instances.
+If you choose `ECS_MANAGED_INSTANCES`, you must also specify a `managedInstancesProvider` configuration. To use Spot capacity, set `capacityOptionType` to `SPOT` in the `managedInstancesProvider.instanceLaunchTemplate` configuration. For more information, see [Amazon ECS Managed Instances compute environments](https://docs.aws.amazon.com/batch/latest/userguide/ecs_managed_instances.html) in the * AWS Batch User Guide*.
+Multi-node parallel jobs aren't supported on Spot Instances or Amazon ECS Managed Instances.
 Type: String
 Valid Values: `EC2 | SPOT | FARGATE | FARGATE_SPOT`
 Required: Yes

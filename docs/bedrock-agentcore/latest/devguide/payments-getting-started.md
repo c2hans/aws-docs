@@ -11,6 +11,8 @@ You can set up payments in two ways:
 +  [Using the AgentCore Payments skill](#payments-getting-started-skill) — An automated setup experience that provisions all resources through a guided conversation with AI coding agents like Kiro, Claude Code, or Codex. The skill handles CLI commands, SDK scripts, and framework wiring for you.
 +  [Using CLI, SDK, or Boto3](#payments-getting-started-manual) — A step-by-step manual setup using the AgentCore CLI, AWS SDK, or AWS CLI directly.
 
+You can provide credentials in two ways when you create a Coinbase connector. With **Quick create** (recommended), you authorize through Coinbase and AgentCore payments provisions and stores the credentials for you — no keys to generate or paste. With **Manual**, you supply Coinbase API keys that you generated yourself. Stripe (Privy) uses the manual flow only. With Quick create, you skip Steps 1 and 2 of the manual setup.
+
 ## Using the AgentCore Payments skill
 <a name="payments-getting-started-skill"></a>
 
@@ -74,7 +76,7 @@ The skill runs an automated process that provisions your payment infrastructure 
 
 1. Creates the payment manager
 
-1.  **Pauses** — You run `agentcore add payment-connector` to enter your provider secrets (Coinbase CDP or Stripe Privy credentials)
+1.  **Pauses** — You add a payment connector. For **Coinbase with Quick create** (recommended), you authorize through Coinbase and AgentCore payments provisions the credentials for you — no secrets to enter. For **Coinbase manual** or **Stripe (Privy)**, you run `agentcore add payment-connector` to enter your provider secrets.
 
 1. Deploys resources to your AWS account (`agentcore deploy -y`)
 
@@ -86,8 +88,8 @@ The skill runs an automated process that provisions your payment infrastructure 
 
 1. Sets environment variables and runs a test payment against a paid endpoint
 
-Before running the connector command, obtain credentials from your provider:
-+  **Coinbase CDP** — API Key ID, API Key Secret, and Wallet Secret from the [Coinbase Developer Platform](https://docs.cdp.coinbase.com/api-reference/v2/authentication#1-create-client-api-key) website (with Delegated signing enabled). Coinbase also requires an active AWS Marketplace subscription to the **Coinbase Wallets for AgentCore Payments** listing. See [Subscribe to Coinbase Wallets for AgentCore Payments in AWS Marketplace](payments-marketplace-subscription.md).
+If you use the **manual** flow (Coinbase manual or Stripe Privy), obtain credentials from your provider before adding the connector. With Coinbase **Quick create**, you skip this — you authorize through Coinbase instead of pasting keys.
++  **Coinbase CDP** (manual only) — API Key ID, API Key Secret, and Wallet Secret from the [Coinbase Developer Platform](https://docs.cdp.coinbase.com/api-reference/v2/authentication#1-create-client-api-key) website (with Delegated signing enabled). Coinbase also requires an active AWS Marketplace subscription to the **Coinbase Wallets for AgentCore Payments** listing. See [Subscribe to Coinbase Wallets for AgentCore Payments in AWS Marketplace](payments-marketplace-subscription.md).
 +  **Stripe Privy** — App ID, App Secret, Authorization ID, and Authorization Private Key from the [Privy dashboard](https://dashboard.privy.io/) website.
 
 A successful run shows the agent calling `x402_fetch`, detecting a `402`, settling payment via the AgentCore SDK, and the retry returning `200` with paid content.
@@ -121,8 +123,13 @@ aws sts get-caller-identity
 **Tip**
 If you have the AgentCore CLI v0.19.0 or later installed, you can use CLI commands as an alternative to the SDK in Steps 2, 3, 5, and 6. Each step below shows both options.
 
-### Step 1: Obtain payment provider credentials
+### Step 1: Obtain payment provider credentials (manual flow)
 <a name="payments-getting-started-provider-credentials"></a>
+
+Steps 1 and 2 apply to the **manual** credential flow — Coinbase (manual) or Stripe (Privy).
+
+**Note**
+ **Using Quick create for Coinbase (recommended).** Skip Steps 1 and 2 and see [Step 3](#payments-getting-started-step3). AgentCore payments provisions the Coinbase credentials for you after you authorize through Coinbase — you do not obtain or store any keys.
 
 AgentCore payments connects to an external payment provider for wallet operations. You need credentials from one of the supported providers before proceeding.
 
@@ -159,10 +166,10 @@ You will use these four values in the next step:
 
 For full details including security best practices and credential rotation, see [Prerequisites](payments-prerequisites.md).
 
-### Step 2: Store credentials in AgentCore Identity
+### Step 2: Store credentials in AgentCore Identity (manual flow)
 <a name="payments-getting-started-step2"></a>
 
-Store your payment provider credentials as a PaymentCredentialProvider. This keeps secrets in AWS Secrets Manager rather than in your application code.
+Store your payment provider credentials as a PaymentCredentialProvider. This keeps secrets in AWS Secrets Manager rather than in your application code. If you are using Coinbase **Quick create**, skip this step. AgentCore payments creates and stores the credential provider for you in Step 3.
 
 **Example**
 
@@ -215,107 +222,42 @@ With the AgentCore CLI, credential storage happens automatically when you add a 
 
 A Payment Manager is the top-level resource that coordinates payment operations. A Payment Connector links the manager to your payment provider credentials. Before creating these resources, set up the required IAM roles as described in [IAM roles for AgentCore payments](payments-iam-roles.md).
 
+First, create the **Payment Manager** (common to all providers):
+
 **Example**
-For the full console walkthrough including JWT authorization and custom claims, see [Create a Payment Manager and Connector](payments-create-manager.md).
 
 1. Open the [Amazon Bedrock AgentCore console](https://console.aws.amazon.com/bedrock-agentcore/).
 
 1. In the navigation pane, under **Build**, choose **Payments**.
 
-1. Choose **Create Payment Manager**.
+1. Choose **Create Payment Manager**, enter a **Name**, and under **Permissions** choose **Create and use a new service role** (or select an existing role).
 
-1. Enter a **Name** for your Payment Manager.
+1. Under **Inbound Auth**, choose **Use IAM username**.
 
-1. Under **Permissions**, choose **Create and use a new service role** (or select an existing role).
-
-1. Under **Inbound Auth**, choose **Use IAM username** for IAM authorization.
-
-1. (Optional) In the **Payment connector** section, choose a name for the connector and either select an existing outbound auth or create a new one by selecting your provider (Coinbase or Stripe Privy) and entering your credentials.
-
-1. Choose **Create Payment Manager**.
-The CLI creates the credential provider, Payment Manager, and Payment Connector in one flow. From your AgentCore project directory, add a payment manager and connector together.
- **Interactive wizard:**
-
-```
-agentcore add payment-manager
-```
-The wizard prompts for the manager name, pattern (interceptor), auto-payment toggle, and default spend limit. It then asks whether to add a connector and walks through provider selection and credential input.
- **Non-interactive (Coinbase CDP):**
+1. Choose **Create Payment Manager**. You add the connector in the provider section below.
+For the full console walkthrough including JWT authorization and custom claims, see [Create a Payment Manager and Connector](payments-create-manager.md).
 
 ```
 agentcore add payment-manager \
   --name my-payment-manager \
   --auto-payment \
   --default-spend-limit 5.00
-
-agentcore add payment-connector \
-  --manager my-payment-manager \
-  --name my-coinbase-connector \
-  --provider CoinbaseCDP \
-  --api-key-id <YOUR_CDP_API_KEY_ID> \
-  --api-key-secret <YOUR_CDP_API_KEY_SECRET> \
-  --wallet-secret <YOUR_CDP_WALLET_SECRET>
 ```
- **Non-interactive (Privy):**
+Add the connector in the provider section below, then run `agentcore deploy`.
 
 ```
-agentcore add payment-manager \
-  --name my-payment-manager \
-  --auto-payment \
-  --default-spend-limit 5.00
-
-agentcore add payment-connector \
-  --manager my-payment-manager \
-  --name my-privy-connector \
-  --provider StripePrivy \
-  --app-id <YOUR_PRIVY_APP_ID> \
-  --app-secret <YOUR_PRIVY_APP_SECRET> \
-  --authorization-id <YOUR_PRIVY_AUTHORIZATION_ID> \
-  --authorization-private-key <YOUR_PRIVY_PRIVATE_KEY_BASE64>
-```
-After adding, deploy to provision the payment infrastructure:
-
-```
-agentcore deploy
-```
-The deploy step creates IAM roles, stores credentials in AgentCore Identity, and provisions the Payment Manager and Connector. You will see "Creating payment infrastructure…​" in the output.
-The AgentCore SDK creates the Payment Manager, credential provider, and connector in a single call.
-
-```
-from bedrock_agentcore.payments import PaymentClient
+from bedrock_agentcore.payments.client import PaymentClient
 
 payment_client = PaymentClient(region_name="us-west-2")
 
-response = payment_client.create_payment_manager_with_connector(
-    payment_manager_name="my-first-payment-manager",
-    payment_manager_description="Payment manager for my agent.",
+manager = payment_client.create_payment_manager(
+    name="my-first-payment-manager",
     authorizer_type="AWS_IAM",
     role_arn="<YOUR_SERVICE_ROLE_ARN>",
-    payment_connector_config={
-        "name": "my-coinbase-connector",
-        "description": "Coinbase CDP connector",
-        "payment_credential_provider_config": {
-            "name": "my-coinbase-provider",
-            "credential_provider_vendor": "CoinbaseCDP",
-            "credentials": {
-                "api_key_id": "<YOUR_CDP_API_KEY_ID>",
-                "api_key_secret": "<YOUR_CDP_API_KEY_SECRET>",
-                "wallet_secret": "<YOUR_CDP_WALLET_SECRET>",
-            },
-        },
-    },
-    wait_for_ready=True,
-    max_wait=300,
-    poll_interval=5,
 )
-
-PAYMENT_MANAGER_ARN = response["paymentManager"]["paymentManagerArn"]
-PAYMENT_CONNECTOR_ID = response["paymentConnector"]["paymentConnectorId"]
-print(f"Payment Manager ARN: {PAYMENT_MANAGER_ARN}")
-print(f"Connector ID: {PAYMENT_CONNECTOR_ID}")
+PAYMENT_MANAGER_ID = manager["paymentManagerId"]
 ```
-For Stripe Privy, replace the `payment_credential_provider_config` with `credential_provider_vendor: "StripePrivy"` and the corresponding Privy credentials.
-Create the Payment Manager:
+Use `PAYMENT_MANAGER_ID` with `payment_client` to create the connector in the provider section below.
 
 ```
 aws bedrock-agentcore-control create-payment-manager \
@@ -324,8 +266,7 @@ aws bedrock-agentcore-control create-payment-manager \
   --role-arn "<YOUR_SERVICE_ROLE_ARN>" \
   --region us-west-2
 ```
-After the manager reaches `READY` status, create a credential provider and connector. See [Create a Payment Manager and Connector](payments-create-manager.md) for the full AWS CLI workflow.
-First, create the Payment Manager (the same for both providers):
+Wait for the manager to reach `READY`, then create the connector in the provider section below.
 
 ```
 import time
@@ -335,43 +276,184 @@ manager = client.create_payment_manager(
     authorizerType="AWS_IAM",
     roleArn="<YOUR_SERVICE_ROLE_ARN>"
 )
-PAYMENT_MANAGER_ARN = manager["paymentManagerArn"]
-print(f"Payment Manager created: {PAYMENT_MANAGER_ARN}")
+PAYMENT_MANAGER_ID = manager["paymentManagerId"]
 
-# Wait for the manager to reach READY state
-while True:
-    status = client.get_payment_manager(paymentManagerArn=PAYMENT_MANAGER_ARN)
-    if status["status"] == "READY":
-        break
-    print(f"Status: {status['status']}... waiting")
+while client.get_payment_manager(paymentManagerId=PAYMENT_MANAGER_ID)["status"] != "READY":
     time.sleep(5)
 ```
-Then create the Payment Connector for your provider:
- **Coinbase CDP:**
+
+Then create a **Payment Connector** for your provider. Choose the **Coinbase** section (Quick create or Manual) or the **Stripe (Privy)** section.
+
+#### Coinbase — Quick create (recommended)
+<a name="payments-getting-started-step3-coinbase-quickcreate"></a>
+
+With Quick create, you do not obtain or store Coinbase credentials. In the console, you complete this by choosing **Quick Create with Coinbase**. With the AWS CLI, AWS SDK, AgentCore CLI, or AgentCore SDK, pass `provisionMode=QUICK_CREATE` with an empty credential list. The connector starts in `PENDING_AUTHENTICATION` and returns an `authorizationUrl`. You open the returned `authorizationUrl` in a browser. After you authorize through Coinbase, AgentCore payments provisions the credentials and moves the connector to `READY`.
+
+**Example**
+
+1. In the **Payment connector** section, choose **Add outbound auth** > **Create payment auth**, and for **Payment provider** choose **Coinbase**.
+
+1. Choose **Quick create configurations - recommended**, then choose **Create payment auth**.
+
+1. A Coinbase window opens — sign in or sign up and authorize (link) your Coinbase CDP account.
+
+1. AgentCore payments provisions the Coinbase CDP API key and Wallet secret and stores them for you. The connector moves from `PENDING_AUTHENTICATION` to `READY`.
 
 ```
-connector = client.create_payment_connector(
-    paymentManagerArn=PAYMENT_MANAGER_ARN,
+agentcore add payment-connector \
+  --manager my-payment-manager \
+  --name my-coinbase-connector \
+  --provider CoinbaseCDP \
+  --quick-create
+
+agentcore deploy
+```
+The CLI opens the Coinbase authorization flow. After you authorize, the service provisions the credentials and the connector reaches `READY`.
+
+```
+connector = payment_client.create_payment_connector(
+    payment_manager_id=PAYMENT_MANAGER_ID,
     name="my-coinbase-connector",
-    paymentConnectorType="CoinbaseCDP",
-    credentialProviderArn=CREDENTIAL_PROVIDER_ARN
+    connector_type="CoinbaseCDP",
+    credential_provider_configurations=[],
+    provision_mode="QUICK_CREATE",
 )
-PAYMENT_CONNECTOR_ID = connector["paymentConnectorId"]
-print(f"Connector created: {PAYMENT_CONNECTOR_ID}")
+# Open connector["authorizationUrl"], authorize through Coinbase,
+# then poll get_payment_connector until status == "READY".
 ```
- **Privy:**
+
+```
+aws bedrock-agentcore-control create-payment-connector \
+  --payment-manager-id "<PAYMENT_MANAGER_ID>" \
+  --name "my-coinbase-connector" \
+  --type CoinbaseCDP \
+  --credential-provider-configurations '[]' \
+  --provision-mode QUICK_CREATE \
+  --region us-west-2
+```
+The response includes `status: PENDING_AUTHENTICATION` and an `authorizationUrl`. Open the URL in a browser and complete the Coinbase authorization, then poll until the connector is `READY`:
+
+```
+aws bedrock-agentcore-control get-payment-connector \
+  --payment-manager-id "<PAYMENT_MANAGER_ID>" \
+  --payment-connector-id "<PAYMENT_CONNECTOR_ID>" \
+  --region us-west-2
+```
 
 ```
 connector = client.create_payment_connector(
-    paymentManagerArn=PAYMENT_MANAGER_ARN,
-    name="my-privy-connector",
-    paymentConnectorType="StripePrivy",
-    credentialProviderArn=CREDENTIAL_PROVIDER_ARN
+    paymentManagerId=PAYMENT_MANAGER_ID,
+    name="my-coinbase-connector",
+    type="CoinbaseCDP",
+    credentialProviderConfigurations=[],
+    provisionMode="QUICK_CREATE",
 )
 PAYMENT_CONNECTOR_ID = connector["paymentConnectorId"]
-print(f"Connector created: {PAYMENT_CONNECTOR_ID}")
+print(connector["status"], connector.get("authorizationUrl"))
+# PENDING_AUTHENTICATION  https://...
+# Open the authorizationUrl, authorize, then poll get_payment_connector until READY.
 ```
-If you do not have a service role, see [IAM roles for AgentCore payments](payments-iam-roles.md) for instructions on creating one. The console can also create a role on your behalf. For the complete request and response schemas, see [CreatePaymentManager](https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIReference/API_CreatePaymentManager.html) and [CreatePaymentConnector](https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIReference/API_CreatePaymentConnector.html) in the API Reference.
+
+#### Coinbase — Manual
+<a name="payments-getting-started-step3-coinbase-manual"></a>
+
+Use Coinbase CDP credentials that you generated yourself (Steps 1–2). Create the credential provider, then create the connector referencing its ARN. For the **Console** or **AgentCore CLI** manual walkthrough, see [Create a Payment Manager and Connector](payments-create-manager.md).
+
+**Example**
+
+```
+agentcore add payment-connector \
+  --manager <manager-name> \
+  --name my-coinbase-connector \
+  --provider CoinbaseCDP \
+  --api-key-id <YOUR_API_KEY_ID> \
+  --api-key-secret <YOUR_API_KEY_SECRET> \
+  --wallet-secret <YOUR_WALLET_SECRET>
+
+agentcore deploy
+```
+The CLI stores the credentials in AgentCore Identity and creates the connector when you run `agentcore deploy`.
+
+```
+connector = payment_client.create_payment_connector(
+    payment_manager_id=PAYMENT_MANAGER_ID,
+    name="my-coinbase-connector",
+    connector_type="CoinbaseCDP",
+    credential_provider_configurations=[
+        {"coinbaseCDP": {"credentialProviderArn": CREDENTIAL_PROVIDER_ARN}}
+    ],
+)
+```
+
+```
+aws bedrock-agentcore-control create-payment-connector \
+  --payment-manager-id "<PAYMENT_MANAGER_ID>" \
+  --name "my-coinbase-connector" \
+  --type CoinbaseCDP \
+  --credential-provider-configurations '[{"coinbaseCDP":{"credentialProviderArn":"<CREDENTIAL_PROVIDER_ARN>"}}]' \
+  --region us-west-2
+```
+
+```
+connector = client.create_payment_connector(
+    paymentManagerId=PAYMENT_MANAGER_ID,
+    name="my-coinbase-connector",
+    type="CoinbaseCDP",
+    credentialProviderConfigurations=[{"coinbaseCDP": {"credentialProviderArn": CREDENTIAL_PROVIDER_ARN}}],
+)
+```
+
+#### Stripe (Privy) — Manual
+<a name="payments-getting-started-step3-stripe"></a>
+
+Stripe (Privy) uses the manual flow only. Create the credential provider from your Privy credentials (Steps 1–2), then create the connector referencing its ARN. For the **Console** or **AgentCore CLI** manual walkthrough, see [Create a Payment Manager and Connector](payments-create-manager.md).
+
+**Example**
+
+```
+agentcore add payment-connector \
+  --manager <manager-name> \
+  --name my-privy-connector \
+  --provider StripePrivy \
+  --app-id <YOUR_APP_ID> \
+  --app-secret <YOUR_APP_SECRET> \
+  --authorization-id <YOUR_AUTHORIZATION_ID> \
+  --authorization-private-key <YOUR_PRIVATE_KEY_BASE64>
+
+agentcore deploy
+```
+The CLI stores the credentials in AgentCore Identity and creates the connector when you run `agentcore deploy`.
+
+```
+connector = payment_client.create_payment_connector(
+    payment_manager_id=PAYMENT_MANAGER_ID,
+    name="my-privy-connector",
+    connector_type="StripePrivy",
+    credential_provider_configurations=[
+        {"stripePrivy": {"credentialProviderArn": CREDENTIAL_PROVIDER_ARN}}
+    ],
+)
+```
+
+```
+aws bedrock-agentcore-control create-payment-connector \
+  --payment-manager-id "<PAYMENT_MANAGER_ID>" \
+  --name "my-privy-connector" \
+  --type StripePrivy \
+  --credential-provider-configurations '[{"stripePrivy":{"credentialProviderArn":"<CREDENTIAL_PROVIDER_ARN>"}}]' \
+  --region us-west-2
+```
+
+```
+connector = client.create_payment_connector(
+    paymentManagerId=PAYMENT_MANAGER_ID,
+    name="my-privy-connector",
+    type="StripePrivy",
+    credentialProviderConfigurations=[{"stripePrivy": {"credentialProviderArn": CREDENTIAL_PROVIDER_ARN}}],
+)
+```
+
+If you do not have a service role, see [IAM roles for AgentCore payments](payments-iam-roles.md) for instructions on creating one. The console can also create a role on your behalf. For the complete request and response schemas, see [CreatePaymentManager](https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIReference/API_CreatePaymentManager.html) and [CreatePaymentConnector](https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIReference/API_CreatePaymentConnector.html) in the Amazon Bedrock AgentCore Control API Reference.
 
 ### Step 4: Create a payment instrument
 <a name="payments-getting-started-step4"></a>
@@ -735,7 +817,7 @@ agentcore deploy
 The `remove` commands update the local configuration. The follow-up `deploy` tears down the payment infrastructure in your account.
 
 ```
-from bedrock_agentcore.payments import PaymentClient
+from bedrock_agentcore.payments.client import PaymentClient
 
 payment_client = PaymentClient(region_name="us-west-2")
 

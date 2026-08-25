@@ -18,13 +18,13 @@ You can attach `AWSElasticDisasterRecoveryReadOnlyAccess` to your users, groups,
 <a name="AWSElasticDisasterRecoveryReadOnlyAccess-details"></a>
 + **Type**: AWS managed policy
 + **Creation time**: November 17, 2021, 10:50 UTC
-+ **Edited time:** July 29, 2024, 19:39 UTC
++ **Edited time:** August 18, 2026, 14:47 UTC
 + **ARN**: `arn:aws:iam::aws:policy/AWSElasticDisasterRecoveryReadOnlyAccess`
 
 ## Policy version
 <a name="AWSElasticDisasterRecoveryReadOnlyAccess-version"></a>
 
-**Policy version:** v5 (default)
+**Policy version:** v6 (default)
 
 The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request.
 
@@ -115,6 +115,21 @@ The policy's default version is the version that defines the permissions for the
           "aws:ResourceTag/AWSElasticDisasterRecoveryManaged" : "false"
         }
       }
+    },
+    {
+      "Sid" : "DRSReadOnlyAccess9",
+      "Effect" : "Allow",
+      "Action" : [
+        "drs:GetRecoveryPlan",
+        "drs:ListRecoveryPlans",
+        "drs:GetRecoveryPlanStep",
+        "drs:ListRecoveryPlanSteps",
+        "drs:GetRecoveryPlanExecution",
+        "drs:ListRecoveryPlanExecutions",
+        "drs:GetRecoveryPlanExecutionStep",
+        "drs:ListRecoveryPlanExecutionSteps"
+      ],
+      "Resource" : "*"
     }
   ]
 }

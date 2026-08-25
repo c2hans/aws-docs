@@ -559,7 +559,7 @@ The Bedrock knowledge base integration is only available for on-contact calls an
 1. Review and add integration
 ![BYOBKB review and integrate page.](http://docs.aws.amazon.com/connect/latest/adminguide/images/ai-agents-byobkb-review-and-integrate.png)
 
-You have successfully integrated an existing Bedrock Knowledge Base with Connect's AI Agents
+You have successfully integrated an existing Bedrock Knowledge Base with AI agents
 
 **Note**
 If you delete objects from SaaS applications, such as SalesForce and ServiceNow, Connect Customer knowledge bases do not process those deletions. You must archive objects in SalesForce and retire articles in ServiceNow to remove them from those knowledge bases.

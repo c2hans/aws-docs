@@ -32,4 +32,4 @@ Key metrics available in these dashboards include:
 **Topics**
 + [Model Invocations](model-invocations.md)
 + [Amazon Bedrock AgentCore](AgentCore-Agents.md)
-+ [Coding Agent Insights](coding-agents-insights.md)
++ [Monitor AI coding agents with Amazon CloudWatch Coding Agent Insights](coding-agents-insights.md)

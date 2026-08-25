@@ -29,6 +29,8 @@ If both a resource tag and an IAM principal tag are present, the resource tag ta
 
 1. Must have AWS Migration Program Engagement number (MPE ID number), also known as your project number, in your Migration Plan.
 
+1. Create a new IAM principal (user or role) dedicated to your Amazon Bedrock or Amazon Bedrock AgentCore workloads initiated and deployed during the MAP Credit Period.
+
 1. Enable IAM principal cost allocation tags in your AWS Billing and Cost Management console. For more information, see [IAM principal cost allocation tags](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/iam-principal-cost-allocation.html) in the *AWS Billing User Guide*.
 
 1. Activate the `map-migrated` tag as a cost allocation tag (CAT) in the Billing console under **Cost allocation tags**. Cost allocation tags are available for both resource tags and IAM principal tags.
@@ -128,6 +130,8 @@ MAP spend tracking recognizes the `map-migrated` tag on any IAM principal that a
 1. Customers must gain access to supported foundation models only by using the Amazon Bedrock Console or API.
 
 1. If using volume-based discounts (such as Provisioned Throughput for supported foundation models), these must be purchased only using the Amazon Bedrock Console or API.
+
+1. Create new inference profiles dedicated to your Amazon Bedrock or Amazon Bedrock AgentCore workloads initiated and deployed during the MAP Credit Period.
 
 1. Your role must have access to the inference profile API actions. If your role has the AmazonBedrockFullAccess AWS-managed policy attached, you can skip this step. Otherwise, follow the steps at Creating IAM policies and create the following policy, which allows a role to do inference profile-related actions and run model inference using all foundation models and inference profiles.
 

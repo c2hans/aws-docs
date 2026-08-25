@@ -16,6 +16,7 @@ References:
 **Topics**
 + [API operations defined by AWS Batch](#list_batch-operations)
 + [Actions defined by AWS Batch](#list_batch-actions-as-permissions)
++ [Permission-only actions for AWS Batch](#list_batch-permission-only-actions)
 + [Resource types defined by AWS Batch](#list_batch-resources-for-iam-policies)
 + [Condition keys for AWS Batch](#list_batch-policy-keys)
 
@@ -32,6 +33,7 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   CreateComputeEnvironment  **
   - **IAM action:**  [batch:CreateComputeEnvironment](#list_batch-action-CreateComputeEnvironment)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [batch:SetCapacityTags](#list_batch-action-SetCapacityTags)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
   - **IAM action:**  [batch:TagResource](#list_batch-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
   - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** batch.amazonaws.com, ec2.amazonaws.com, ecs.amazonaws.com, spotfleet.amazonaws.com / **Access level:** Write
 
@@ -579,6 +581,17 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [service-job\*](#list_batch-resource-service-job)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_batch-aws_ResourceTag___TagKey_)<br />[batch:SchedulingPriority](#list_batch-batch_SchedulingPriority)
   - **Access level:** Write
+
+## Permission-only actions for AWS Batch
+<a name="list_batch-permission-only-actions"></a>
+
+The following actions are defined by AWS Batch but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
+
+- **   [SetCapacityTags](IAM_policies.html)  **
+  - **Description:** Grants permission to set capacity tags on an AWS Batch compute environment in your account
+  - **Resource types (\*required):** [compute-environment\*](#list_batch-resource-compute-environment)
+  - **Condition keys:** [aws:RequestTag/${TagKey}](#list_batch-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_batch-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_batch-aws_TagKeys)
+  - **Access level:** Tagging, Write
 
 ## Resource types defined by AWS Batch
 <a name="list_batch-resources-for-iam-policies"></a>

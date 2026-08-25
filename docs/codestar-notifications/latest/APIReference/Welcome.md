@@ -30,4 +30,4 @@ Tags, by calling the following:
 
  For information about how to use AWS CodeStar Notifications, see the [AWS Developer Tools Console User Guide](https://docs.aws.amazon.com/dtconsole/latest/userguide/what-is-dtconsole.html).
 
-This document was last published on August 18, 2026.
+This document was last published on August 24, 2026.

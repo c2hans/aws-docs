@@ -29,7 +29,7 @@ The following steps show how to change the default message customers hear when t
 
 1. Choose **Save** at the bottom of the properties page.
 
-1. Choose **Publish**. Connect Customer starts playing the new message almost immediately (it may take a few moments for it to fully take effect).
+1. Choose **Publish**. Connect Customer starts playing the new message almost immediately (it might take a few moments for it to fully take effect).
 ![The publish button on the flow designer.](http://docs.aws.amazon.com/connect/latest/adminguide/images/customize-default-contact-flow4.png)
 
 ## Copy a default flow before customizing it

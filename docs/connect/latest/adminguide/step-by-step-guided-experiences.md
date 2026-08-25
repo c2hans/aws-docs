@@ -11,6 +11,20 @@ To learn more about the possible UI configurations, see our interactive [documen
 
 To learn more about the pricing of step-by-step guides, on the Connect Customer [pricing page](https://aws.amazon.com/connect/pricing/), scroll to the **Agent productivity** section, and then choose the **Guides** tab.
 
+**Topics**
++ [Overview](#step-by-step-guided-experiences-overview)
++ [Complex JSON Object support](#step-by-step-guided-experiences-complex-json)
++ [Enable step-by-step guides](enable-guided-experiences-sg.md)
++ [View resource](view-resources-sg.md)
++ [UI builder](no-code-ui-builder.md)
++ [Invoke a guide at the start of a contact](how-to-invoke-a-flow-sg.md)
++ [Deploy step-by-step guides in chats](step-by-step-guides-chat.md)
++ [Display contact attributes in the agent workspace](display-contact-attributes-sg.md)
++ [Enable agents to enter disposition codes](disposition-codes-sg.md)
++ [PII Redaction](step-by-step-guides-pii-redaction.md)
++ [View Integrations](integrate-views-with-connect-resources.md)
++ [Use Guides in Workspace for Managers](use-guides-in-manager-workspace.md)
+
 ## Overview
 <a name="step-by-step-guided-experiences-overview"></a>
 

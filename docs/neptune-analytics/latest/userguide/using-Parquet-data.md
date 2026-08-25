@@ -25,7 +25,7 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/using
 **Edge headers**
 +  `~from` - Required. The vertex `id` of the **from** vertex.
 +  `~to` - Required. The vertex `id` of the **to** vertex.
-+  `~label` - Optional. A label for the edge. The label is a string value.
++  `~label` - Optional. A label for the edge. The label is a string value. When `~label` is omitted or the value is empty, the edge is assigned the default label `"edge"`. This is analogous to CSV load behavior. Unlike vertices, edges always have a label in Neptune Analytics.
 
 ## Property column headers
 <a name="using-Parquet-data-property-column-headers"></a>

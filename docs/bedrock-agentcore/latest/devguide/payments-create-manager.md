@@ -135,7 +135,20 @@ The AgentCore CLI creates the credential provider, Payment Manager, and Payment 
 agentcore add payment-manager
 ```
 The wizard prompts for manager name, pattern, auto-payment toggle, spend limit, and optionally walks through adding a connector with provider credentials.
- **Non-interactive (Coinbase CDP):**
+ **Coinbase — Quick create (recommended):**
+Quick create provisions the Coinbase credential provider for you, so you do not pass any API keys. Add the connector with the `--quick-create` flag, then deploy:
+
+```
+agentcore add payment-connector \
+  --manager MyPaymentManager \
+  --name CoinbaseConnector \
+  --provider CoinbaseCDP \
+  --quick-create
+
+agentcore deploy
+```
+The CLI opens the Coinbase authorization flow. After you authorize, the service provisions the credentials and the connector reaches `READY`.
+ **Coinbase CDP — Manual flow (non-interactive):**
 
 ```
 agentcore add payment-manager \
@@ -153,7 +166,7 @@ agentcore add payment-connector \
 
 agentcore deploy
 ```
- **Non-interactive (Stripe/Privy):**
+ **Stripe (Privy) — Manual flow (non-interactive):**
 
 ```
 agentcore add payment-manager \
@@ -173,11 +186,54 @@ agentcore add payment-connector \
 agentcore deploy
 ```
 Running `agentcore deploy` provisions IAM roles, stores credentials in AgentCore Identity, and creates the Payment Manager and Connector.
-The AgentCore SDK provides a convenience method `create_payment_manager_with_connector` that creates the Payment Manager, credential provider, and connector in a single call.
+The AgentCore SDK supports Coinbase **Quick create** (shown first) and manual provisioning. The manual examples that follow pass provider credentials directly. They use the convenience method `create_payment_manager_with_connector`, which creates the Payment Manager, credential provider, and connector in a single call.
+ **Coinbase — Quick create (recommended):**
+With Quick create, you create the connector with an empty `credential_provider_configurations` list and `provision_mode="QUICK_CREATE"`. The connector returns status `PENDING_AUTHENTICATION` and an authorization URL. After you authorize through Coinbase, the service provisions the credential provider and the connector reaches `READY`.
+
+```
+import time
+import webbrowser
+
+from bedrock_agentcore.payments.client import PaymentClient
+
+payment_client = PaymentClient(region_name="us-east-1")
+
+connector = payment_client.create_payment_connector(
+    payment_manager_id="<paymentManagerId>",
+    name="CoinbaseConnector",
+    connector_type="CoinbaseCDP",
+    credential_provider_configurations=[],
+    provision_mode="QUICK_CREATE",
+)
+
+# Authorize through Coinbase using the returned URL.
+webbrowser.open(connector["authorizationUrl"])
+
+# Terminal states that mean provisioning did not succeed.
+TERMINAL_FAILURES = {
+    "AUTHENTICATION_EXPIRED",
+    "AUTHENTICATION_FAILED",
+    "AWS_MARKETPLACE_SUBSCRIPTION_REQUIRED",
+    "CREATE_FAILED",
+}
+
+# Poll until the connector reaches READY or fails.
+while True:
+    response = payment_client.get_payment_connector(
+        payment_connector_id=connector["paymentConnectorId"]
+    )
+    status = response["status"]
+    if status == "READY":
+        break
+    if status in TERMINAL_FAILURES:
+        raise RuntimeError(f"Connector provisioning failed: {status}")
+    time.sleep(5)
+```
+The authorization URL is valid for about 10 minutes. If it expires, the connector transitions to `AUTHENTICATION_EXPIRED` and you re-create it.
  **Coinbase CDP with IAM authorization:**
 
 ```
-from bedrock_agentcore.payments import PaymentClient
+from bedrock_agentcore.payments.client import PaymentClient
 
 payment_client = PaymentClient(region_name="us-east-1")
 
@@ -336,6 +392,20 @@ aws bedrock-agentcore-control create-payment-manager \
   --region us-east-1
 ```
 The Payment Manager status starts as `CREATING` and transitions to `READY` when provisioning completes.
+ **Coinbase — Quick create (recommended):**
+With Quick create, you create the connector with an empty credential-provider-configurations list and `--provision-mode QUICK_CREATE`. You do not create a credential provider first.
+
+```
+aws bedrock-agentcore-control create-payment-connector \
+  --payment-manager-id <paymentManagerId> \
+  --name "CoinbaseConnector" \
+  --type CoinbaseCDP \
+  --credential-provider-configurations '[]' \
+  --provision-mode QUICK_CREATE \
+  --region us-east-1
+```
+The response has status `PENDING_AUTHENTICATION` and an `authorizationUrl`. Open the URL, authorize through Coinbase, and then poll `get-payment-connector` until the status is `READY`. The URL is valid for about 10 minutes; if it expires, the connector transitions to `AUTHENTICATION_EXPIRED` and you re-create it.
+ **Manual flow:** With the manual flow, you create a payment credential provider and then reference its ARN when you create the connector. This is the only flow for Stripe (Privy).
 After the Payment Manager is ready, [create a payment credential provider](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/resource-providers.html#payment-credential-provider):
 The following example creates a payment credential provider for Coinbase CDP:
 
@@ -420,6 +490,24 @@ payment_manager = client.create_payment_manager(
     }
 )
 ```
+ **Coinbase — Quick create (recommended):**
+With Quick create, you create the connector with an empty `credentialProviderConfigurations` list and `provisionMode="QUICK_CREATE"`. You do not create a credential provider first.
+
+```
+# Create a Coinbase connector with Quick create
+connector = client.create_payment_connector(
+    paymentManagerId=payment_manager["paymentManagerId"],
+    name="CoinbaseConnector",
+    type="CoinbaseCDP",
+    credentialProviderConfigurations=[],
+    provisionMode="QUICK_CREATE"
+)
+
+print(f"Status: {connector['status']}")
+print(f"Authorization URL: {connector.get('authorizationUrl')}")
+```
+The connector returns status `PENDING_AUTHENTICATION` and an `authorizationUrl`. Open the URL, authorize through Coinbase, and then poll `get_payment_connector` until the status is `READY`. The URL is valid for about 10 minutes; if it expires, the connector transitions to `AUTHENTICATION_EXPIRED` and you re-create it.
+ **Manual flow:** With the manual flow, you create a payment credential provider and then reference its ARN when you create the connector. This is the only flow for Stripe (Privy).
 After the Payment Manager reaches `READY` status, create a payment credential provider:
 The following example configures a provider for Coinbase CDP:
 
@@ -509,6 +597,25 @@ After creation, the Payment Manager transitions through the following states:
 |  `UPDATING`  | A configuration change is being applied. |
 |  `CREATE_FAILED`  | Provisioning failure. |
 |  `UPDATE_FAILED`  | Update operation failure. |
+
+## Payment Connector lifecycle states
+<a name="payments-setup-connector-lifecycle"></a>
+
+A Payment Connector transitions through the following states. The `PENDING_AUTHENTICATION`, `PROVISIONING`, `AUTHENTICATION_EXPIRED`, and `AUTHENTICATION_FAILED` states apply to the Coinbase **Quick create** flow.
+
+| State | Description |
+| --- | --- |
+|  `CREATING`  | Initial state while the connector is being provisioned. |
+|  `PENDING_AUTHENTICATION`  | Quick create only. The connector is waiting for you to authorize through Coinbase using the returned `authorizationUrl`. |
+|  `PROVISIONING`  | Quick create only. Authorization succeeded and the service is provisioning the credential provider. |
+|  `READY`  | The connector is operational and can process payments. |
+|  `UPDATING`  | A configuration change is being applied. |
+|  `AUTHENTICATION_EXPIRED`  | Quick create only. The `authorizationUrl` expired (about 10 minutes) before authorization completed. Re-create the connector to get a fresh URL. |
+|  `AUTHENTICATION_FAILED`  | Quick create only. Authorization through Coinbase did not complete successfully. |
+|  `AWS_MARKETPLACE_SUBSCRIPTION_REQUIRED`  | Coinbase requires an active AWS Marketplace subscription. Subscribe to the **Coinbase Wallets for AgentCore Payments** listing and retry. |
+|  `CREATE_FAILED`  | Provisioning failure. |
+|  `UPDATE_FAILED`  | Update operation failure. |
+|  `DELETE_FAILED`  | Delete operation failure. |
 
 ## Get a Payment Manager
 <a name="payments-setup-pm-get"></a>

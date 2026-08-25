@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/userguide/vpc-vpe-access.htm
 # Managing access to service-specific Amazon VPC endpoints on Amazon MWAA
 <a name="vpc-vpe-access"></a>
 
-A VPC endpoint (AWS PrivateLink) you can use to privately connect your VPC to services hosted on AWS without requiring an internet gateway, a NAT device, VPN, or firewall proxies. These endpoints are horizontally scalable and highly available virtual devices that allow communication between instances in your VPC and AWS services. This page describes the VPC endpoints created by Amazon MWAA, and how to access the VPC endpoint for your Apache Airflow webserver if you've chosen the **Private network** access mode on Amazon Managed Workflows for Apache Airflow.
+A VPC endpoint (AWS PrivateLink) lets you privately connect your VPC to services hosted on AWS without requiring an internet gateway, a NAT device, VPN, or firewall proxies. These endpoints are horizontally scalable and highly available virtual devices that allow communication between instances in your VPC and AWS services. This page describes the VPC endpoints created by Amazon MWAA, and how to access the VPC endpoint for your Apache Airflow webserver if you've chosen the **Private network** access mode on Amazon Managed Workflows for Apache Airflow.
 
 **Note**
 If you chose **Both public and private network access**, the VPC endpoint for the webserver is created and managed automatically by Amazon MWAA for worker connectivity. No additional VPC endpoint setup is required, and you do not need to configure access to the VPC endpoint for browser access to the Apache Airflow UI.
@@ -44,7 +44,7 @@ If you chose the **Public network** access mode for your Apache Airflow webserve
 <a name="vpc-vpe-about-private"></a>
 
 If you chose the **Private network** access mode for your Apache Airflow webserver, network traffic is privately routed *within your Amazon VPC*.
-+ Amazon MWAA creates a VPC interface endpoint for your Apache Airflow webserver, and an interface endpoint for your Amazon Aurora PostgreSQL metadata database. The endpoints are created in the Availability Zones mapped to your private subnets and is independent from other AWS accounts.
++ Amazon MWAA creates a VPC interface endpoint for your Apache Airflow webserver, and an interface endpoint for your Amazon Aurora PostgreSQL metadata database. The endpoints are created in the Availability Zones mapped to your private subnets and are independent from other AWS accounts.
 + Amazon MWAA then binds an IP address from your private subnets to the interface endpoints. This is designed to support the best practice of binding a single IP from each Availability Zone of the Amazon VPC.
 
 ## Permission to use other AWS services
@@ -167,5 +167,5 @@ The following section displays the configurations you'll need to apply to an [Ap
 **Example region to upload certificate**
 
      ```
-     aws acm import-certificate --certificate fileb://Certificate.pem --certificate-chain fileb://CertificateChain.pem --private-key fileb://PrivateKey.pem {{--region us-west-2}}
+     aws acm import-certificate --certificate fileb://Certificate.pem --certificate-chain fileb://CertificateChain.pem --private-key fileb://PrivateKey.pem --region {{us-west-2}}
      ```

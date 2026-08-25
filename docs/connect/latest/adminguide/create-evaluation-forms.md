@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/create-evaluat
 # Create an evaluation form in Connect Customer
 <a name="create-evaluation-forms"></a>
 
-In Connect Customer, you can create [many different evaluation forms](feature-limits.md#evaluationforms-feature-specs). For example, you may need a different evaluation form for each business unit, and for different queues. You can also create different evaluation forms for evaluating the agent interaction and the self-service interaction with a Lex bot or AI agent.
+In Connect Customer, you can create [many different evaluation forms](feature-limits.md#evaluationforms-feature-specs). For example, you might need a different evaluation form for each business unit, and for different queues. You can also create different evaluation forms for evaluating the agent interaction and the self-service interaction with a Lex bot or AI agent.
 
 Each form can contain multiple sections and questions.
 + You can assign [weights](about-scoring-and-weights.md) to each question and section to indicate how much their score impacts the overall score of the evaluation form.
@@ -54,17 +54,35 @@ The following steps explain how to create or duplicate an evaluation form and se
 1. Continue to the next step to add sections and questions.
 
 **Import evaluation forms from another instance**
-You can export an evaluation form from one Connect Customer instance (say a test instance) and import it into another Connect Customer instance (say a production instance) using the Connect UI:
-While viewing an existing evaluation form select **Actions > Export as JSON**
+You can export an evaluation form from one Connect Customer instance (say a test instance) and import it into another instance (say a production instance).
+While viewing an existing evaluation form, choose **Actions**, **Export as JSON**.
 
 ![The evaluation form page, the export as json action.](http://docs.aws.amazon.com/connect/latest/adminguide/images/evaluation-forms-export-json.png)
 
-Open the instance where you want to import this form
-On the page **Evaluation Forms** page, click import form. Select **Choose File** to upload the previously exported JSON and click **Import**
+Open the instance where you want to import this form.
+On the **Evaluation forms** page, choose **Import form**. Choose **Choose File** to upload the previously exported JSON, then choose **Import**.
 
 ![The evaluation forms page, the import form action.](http://docs.aws.amazon.com/connect/latest/adminguide/images/evaluation-forms-import-json.png)
 
-The form will be created including questions, instructions, answers, scoring and automation configuration. Note that any instance-specific settings such as rule categories and tags will not be present in the exported/imported file.
+The form is created including questions, instructions, answers, scoring, and automation configuration. Instance-specific settings such as rule categories and tags are not present in the exported file.
+
+**Import an evaluation form from a PDF using AI**
+You can import an evaluation form from any quality management system by uploading a PDF. Connect Customer uses AI to extract the sections, questions, answer options, and scoring from the PDF and create a draft evaluation form that you can review and edit.
+On the **Evaluation forms** page, choose **Import form**, then choose **From PDF**.
+The following image shows the **Import form** menu with the **From PDF** option.
+
+![The Evaluation forms page showing the Import form button with the From PDF menu option highlighted.](http://docs.aws.amazon.com/connect/latest/adminguide/images/evaluation-forms-import-pdf.png)
+
+In the **Import evaluation form with AI** dialog:
+**Evaluation form PDF** – Choose a PDF file (max 2 MB).
+**Scoring method** – Choose **Points-based**, **Percentage-based**, or **Not scored**.
+**Instructions (optional)** – Provide context to guide the extraction, for example: "This form is for outbound sales calls. Focus on upselling questions."
+
+![The Import evaluation form with AI dialog, showing fields for Evaluation form PDF, Scoring method, and Instructions.](http://docs.aws.amazon.com/connect/latest/adminguide/images/evaluation-forms-import-pdf-dialog.png)
+
+Choose **Import**. The import typically completes within one minute.
+After the import completes, the form appears as a draft. Open it to review that the sections, questions, and scoring were extracted correctly.
+Edit the form as needed, then activate it.
 
 ## Step 2: Add sections and questions
 <a name="step-sections"></a>
@@ -79,7 +97,7 @@ The form will be created including questions, instructions, answers, scoring and
 
 1. In the **Instructions to evaluators** box, add information to help the evaluators or generative AI to answer the question.
 
-   For example, for the question *Did the agent try to validate the customer identity?* you may provide additional instructions such as, *The agent is required to always ask a customer their membership ID and postal code before addressing the customer's questions*.
+   For example, for the question *Did the agent try to validate the customer identity?* you might provide additional instructions such as, *The agent is required to always ask a customer their membership ID and postal code before addressing the customer's questions*.
 
 1. In the **Question type** box, choose one of the following options to appear on the form:
    + **Single selection**: The evaluator can choose from a list of options, such as **Yes**, **No**, or **Good**, **Fair**, **Poor**.
@@ -248,7 +266,7 @@ Both for assisting evaluators, and for automated submission of evaluations, you 
 + **Generative AI**: Both *Single selection* and *Text field* questions can be automatically answered using generative AI.
 
   For information about automating evaluations of self-service (automated) interactions, see [Performance evaluations of self-service interactions in Connect Customer](performance-evaluations-automated-interactions.md).
-+ **Metrics**: *Numeric* questions (for example, what was the longest that the customer was put on hold?) can be automatically answered using metrics such as longest hold time, sentiment score, etc.
++ **Metrics**: *Numeric* questions (for example, what was the longest that the customer was put on hold?) can be automatically answered using metrics such as longest hold time, sentiment score.
 
 Following are examples of each type of automation for each type of question.
 
@@ -363,7 +381,7 @@ Gen AI validation is rate limited per Connect Customer instance: no more than 3 
 1. You can close the side panel at any time. To reopen it, either choose the **Findings** button next to a question, or choose **Save and validate** again.
 ![The Findings button next to a question.](http://docs.aws.amazon.com/connect/latest/adminguide/images/evaluationforms-findings-button.png)
 
-1. On the side panel, you can mark each finding as resolved once you have addressed it. Choose the **Pending resolve** filter to focus on the findings that still need attention.
+1. On the side panel, you can mark each finding as resolved after you have addressed it. Choose the **Pending resolve** filter to focus on the findings that still need attention.
 ![The side panel with findings and the Pending resolve filter.](http://docs.aws.amazon.com/connect/latest/adminguide/images/evaluationforms-resolve-findings.png)
 
 **Note**

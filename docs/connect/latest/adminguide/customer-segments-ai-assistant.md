@@ -16,7 +16,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/customer-segme
 
 **Note**
 To use the segment AI assistant, users will need the permission for segment creation **CustomerProfiles.Segments.Create**.
-While these AI-powered tools offer valuable suggestions, it's important to review and adjust the recommended segments to ensure they align with the organization's specific business objectives and comply with its data usage policies.
+While these AI-powered tools offer valuable suggestions, it's important to review and adjust the recommended segments to make sure they align with the organization's specific business objectives and comply with its data usage policies.
 
 ## Inspiration Cards for Segment Creation
 <a name="inspiration-cards-for-segment-creation"></a>
@@ -35,7 +35,7 @@ The trend data is based on event ingestion dates of default calculated attribute
 +  Inspiration cards offer ideas across three business-focused themes:
   +  **Promotion**: Ideas for targeting customers with specific promotional strategies.
   +  **Retention**: Identify segments for customer retention efforts.
-  +  **Support**: Highlight customer groups that may need specialized attention for customer service.
+  +  **Support**: Highlight customer groups that might need specialized attention for customer service.
 +  **Insight-based recommendations**: Use historical trends, data insights and generative AI to create meaningful, actionable insights.
 
  **How to use inspiration cards**
@@ -91,17 +91,17 @@ The following image shows an example of a segment AI assistant prompt.
 
  As you use the segment AI assistant, keep the following best practices in mind:
 +  Write specific descriptions. Segment AI assistant generates more accurate conditions when you use the names of existing attributes.
-+  Ensure that all attributes you reference exist in your domain.
++  Make sure that all attributes you reference exist in your domain.
 +  Start with simple prompts and try different prompts. If you don't receive what you want on the first try, rewrite your prompt. Submitting a new prompt replaces existing conditions, or by choosing **New conversation**.
 +  Allocate time for segment refinement and validation on the segment builder to ensure segments accurately reflect your actual data values.
 
 **Note**
-The segment AI assistant is designed to work with general descriptors and criteria. Always adhere to data protection regulations and company policies when describing segments. Ensure that your prompts and descriptions do not contain any sensitive or personal information.
+The segment AI assistant is designed to work with general descriptors and criteria. Always adhere to data protection regulations and company policies when describing segments. Make sure that your prompts and descriptions do not contain any sensitive or personal information.
 
 ## Provide feedback on generated segments
 <a name="providing-feedback-on-generated-segments"></a>
 
- After a segment is generated, users are encouraged to evaluate the feature's performance and provide feedback. This feedback mechanism helps improve the segment generation process and ensures it meets business needs effectively. The following image shows a feedback page.
+ After a segment is generated, users are encouraged to evaluate the feature's performance and provide feedback. This feedback mechanism helps improve the segment generation process and makes sure it meets business needs effectively. The following image shows a feedback page.
 
 ![An example of a message that your feedback has been recorded.](http://docs.aws.amazon.com/connect/latest/adminguide/images/providing-feedback-on-generated-segments-1.png)
 
@@ -120,7 +120,7 @@ The segment AI assistant is designed to work with general descriptors and criter
 ## Error handling
 <a name="customer-segments-ai-error-handling"></a>
 
-When using the segment AI assistant to generate customer segments, you may occasionally encounter an error message stating: **We can't process your request right now.** This error can occur even after providing a valid prompt for segment creation.
+When using the segment AI assistant to generate customer segments, you might occasionally encounter an error message stating: **We can't process your request right now.** This error can occur even after providing a valid prompt for segment creation.
 
 The following image shows an example of this error message.
 
@@ -129,7 +129,7 @@ The following image shows an example of this error message.
  Use the following steps help you understand and troubleshoot this error.
 
  **Possible causes:**
-+  **High system load**: The segment AI assistant may be experiencing high demand or processing multiple requests simultaneously.
++  **High system load**: The segment AI assistant might be experiencing high demand or processing multiple requests simultaneously.
 +  **Temporary service disruption**: There could be a brief interruption in the service's ability to process new segment requests.
 +  **Complex query**: The system might need more time to process particularly complex or resource-intensive segment queries.
 
@@ -147,7 +147,7 @@ The following image shows an example of this error message.
 
  **Best practices**
 +  If the error persists after multiple attempts, consider simplifying your segment criteria or breaking it down into smaller, more manageable requests.
-+  Try to avoid making repeated requests in quick succession, as this may contribute to system overload.
++  Try to avoid making repeated requests in quick succession, as this might contribute to system overload.
 +  If the issue continues, reach out to customer support for further assistance.
 
  Remember, this error is typically temporary, and following the provided instructions should allow you to successfully create your desired segment.
@@ -157,17 +157,17 @@ The following image shows an example of this error message.
 
  Understanding the data processing lifecycle is crucial for effective use of the segment AI assistant. This section outlines what business users can expect during different phases of data integration and how it affects segment suggestions.
 
- **Data processing and quality impact:** Segment AI assistant evolves through two main phases: initial data ingestion and post-processing. During initial ingestion, the system may not fully use actual attribute values, relying more on prompt interpretation. For example, a prompt for *VIP customers* might suggest a *VIP* segment instead of using the existing *Gold* tier from your data. After complete processing, the system uses actual attribute values, resulting in more accurate segment creation, reduces reliance on prompt interpretation and improves overall segmentation quality.
+ **Data processing and quality impact:** Segment AI assistant evolves through two main phases: initial data ingestion and post-processing. During initial ingestion, the system might not fully use actual attribute values, relying more on prompt interpretation. For example, a prompt for *VIP customers* might suggest a *VIP* segment instead of using the existing *Gold* tier from your data. After complete processing, the system uses actual attribute values, resulting in more accurate segment creation, reduces reliance on prompt interpretation and improves overall segmentation quality.
 
 **Note**
 Allow sufficient time for complete data processing before relying on advanced features. Regularly update customer profile data. Segment accuracy depends on the completeness and recency of customer data in Connect Customer Customer Profiles. The system flags any missing attributes in its responses.
 
- **System performance: **During high-volume periods, expect potential delays in segment generation. The system is optimized for typical workloads, but businesses with extensive segmentation needs may need to adjust their processes accordingly.
+ **System performance: **During high-volume periods, expect potential delays in segment generation. The system is optimized for typical workloads, but businesses with extensive segmentation needs might need to adjust their processes accordingly.
 
  **Attribute availability**: The quality of the generated segments is dependent on the customer data available in Connect Customer Customer Profiles. The more comprehensive and up-to-date the customer profile data, the more accurate the system can be in interpreting prompts and defining relevant segments. If there is an attribute that does not exist, we will return a message with the missing attribute.
 
- **Prompt complexity**: For very complex or nuanced segment definitions, the natural language processing may have limitations. Customers should start with relatively straightforward prompts and gradually increase the complexity as they gain experience with the feature.
+ **Prompt complexity**: For very complex or nuanced segment definitions, the natural language processing might have limitations. Customers should start with relatively straightforward prompts and gradually increase the complexity as they gain experience with the feature.
 
- **Segment refinement**: Although the system-generated segments are a great starting point, customers may still want to review and refine the details to ensure the segment aligns perfectly with their business objectives. The segmentation interface allows for full customization after the initial generation.
+ **Segment refinement**: Although the system-generated segments are a great starting point, customers might still want to review and refine the details to ensure the segment aligns perfectly with their business objectives. The segmentation interface allows for full customization after the initial generation.
 
- **Performance and scaling**: Under high concurrency, there may be some latency in the segment generation process as the language model needs to process each prompt. The system is designed to handle typical segmentation workloads, but customers with extremely high segmentation demands may need to adjust their workflows accordingly
+ **Performance and scaling**: Under high concurrency, there might be some latency in the segment generation process as the language model needs to process each prompt. The system is designed to handle typical segmentation workloads, but customers with extremely high segmentation demands might need to adjust their workflows accordingly

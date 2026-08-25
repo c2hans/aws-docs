@@ -34,7 +34,9 @@ This section describes new features and advantages of AWS Glue version 6.0.
   + VARIANT data type with variant shredding for simplified semi-structured data management and faster reads.
   + Nanosecond-precision timestamps.
   + Geospatial data types (Geometry and Geography).
-+ **Spark Declarative Pipelines (SDP)** — A new declarative framework for defining end-to-end data pipelines using SQL or DataFrame API, with support for streaming tables and materialized views. For more information, see [Spark Declarative Pipelines](etl-jobs-section.md#spark-declarative-pipelines).
+**Upgrading to Iceberg v3 is a one-way change**
+If you upgrade an Iceberg table to format version 3, you can't downgrade it back to version 2—Iceberg rejects the `ALTER TABLE ... SET TBLPROPERTIES('format-version'='2')` operation. If you use another service that doesn't support Iceberg v3, keep it as an Iceberg v2 table and don't upgrade it to v3.
++ **Spark Declarative Pipelines (SDP)** — A new declarative framework for defining end-to-end data pipelines using SQL or DataFrame API, with support for streaming tables and materialized views. For more information, see [Spark Declarative Pipelines](spark-declarative-pipelines.md).
 + **Spark Connect for Interactive Sessions** — Enables thin-client connectivity to AWS Glue Interactive Sessions through Spark Connect protocol, supporting remote development workflows.
 + **Arrow-native Python UDFs/UDTFs** — Improved performance for Python user-defined functions using Apache Arrow columnar format natively.
 + **Customer-managed or service-generated Python virtual environment** (`--python-virtual-env`) — You can build and provide your own Python venv that AWS Glue attaches to Spark drivers and executors at runtime, providing full control over dependency management. When existing jobs are migrated to AWS Glue 6.0, AWS Glue automatically generates this virtual environment if required.
@@ -44,7 +46,7 @@ This section describes new features and advantages of AWS Glue version 6.0.
 **Known issues and limitations**
 Note the following known issues and limitations:
 + **ANSI mode is enabled by default** in Spark 4.1. Operations that previously returned NULL on overflow (for example, integer arithmetic, cast operations) now throw exceptions. Set `spark.sql.ansi.enabled=false` to restore previous behavior.
-+ **Spark Declarative Pipelines (SDP)** is a new feature with limited support for certain SQL constructs. Refer to the [Spark Declarative Pipelines](etl-jobs-section.md#spark-declarative-pipelines) documentation for current limitations.
++ **Spark Declarative Pipelines (SDP)** is a new feature with limited support for certain SQL constructs. Refer to the [Spark Declarative Pipelines](spark-declarative-pipelines.md) documentation for current limitations.
 + **Iceberg v3 tables** created in AWS Glue 6.0 cannot be read by Athena SQL (error: `Cannot read unsupported version 3`). Use Iceberg v2 for cross-engine compatibility with Athena.
 + **Python 3.13** removes several deprecated modules and changes behavior for some standard library functions. Review the Python 3.13 migration guide for compatibility.
 + **AWS SDK for Java 2.x compatibility with `--user-jars-first`** — AWS Glue 6.0 includes AWS SDK for Java 2.x version 2.44.6. If you use the `--user-jars-first` job parameter with a custom JAR that bundles an older version of the AWS SDK for Java 2.x, your job might fail with a `java.lang.NoSuchFieldError` or similar error. These failures occur when the SDK bundled in your custom JAR is missing classes, fields, or methods that the AWS Glue runtime depends on. To avoid this issue, ensure that any custom JAR you supply with `--user-jars-first` uses AWS SDK for Java 2.x version 2.44.6 or later.
@@ -72,6 +74,11 @@ For new jobs, choose `Glue 6.0` when you create a job.
 + In the console, choose `Spark 4.1.1, Python 3 (Glue Version 6.0) or Spark 4.1.1, Scala 2 (Glue Version 6.0)` in `Glue version`.
 + In AWS Glue Studio, choose `Glue 6.0 - Supports Spark 4.1.1, Scala 2, Python 3` in `Glue version`.
 + In the API, choose **6.0** in the `GlueVersion` parameter in the [CreateJob](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-jobs-job.html#aws-glue-api-jobs-job-CreateJob) API operation.
+
+To help migrate your jobs, you can use [Generative AI upgrades for Apache Spark](https://docs.aws.amazon.com/glue/latest/dg/upgrade-analysis.html) to upgrade your AWS Glue ETL jobs from older AWS Glue versions (2.0 and later) to the latest AWS Glue version.
+
+**Troubleshooting**
+You can use the [Spark Troubleshooting Agent](https://docs.aws.amazon.com/emr/latest/ReleaseGuide/spark-troubleshoot.html) to troubleshoot your AWS Glue ETL jobs.
 
 ## Migration checklist
 <a name="migrating-version-60-checklist"></a>

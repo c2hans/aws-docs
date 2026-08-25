@@ -13,7 +13,7 @@ If you have integrated with Apple Messages for Business, see [Interactive Messag
 ## Validation limits
 <a name="validation-limits"></a>
 
-The string field limits (for example, title, subtitle, etc.) are expected to be enforced by the client (that is, a custom built interface or the hosted communications widget). The [SendMessage](https://docs.aws.amazon.com/connect-participant/latest/APIReference/API_SendMessage.html) API checks only that the total size of the string is less than 20KB.
+The string field limits (for example, title, subtitle) are expected to be enforced by the client (that is, a custom built interface or the hosted communications widget). The [SendMessage](https://docs.aws.amazon.com/connect-participant/latest/APIReference/API_SendMessage.html) API checks only that the total size of the string is less than 20KB.
 + When you use the hosted communications widget without customizing it, if the string exceeds field limits, it is truncated on the user interface and an ellipsis (...) is appended. You can determine how to enforce field limits by customizing the widget.
 + If you are integrating with other platforms (such as Apple Messages for Business), review the limits in this topic for Connect Customer, and review the limits in the documentation for the other platform. For example, quick replies are not supported on older versions of iOS.
 
@@ -1043,7 +1043,7 @@ This template is applicable only for Apple Messages for Business contact flows.
 |  | shippingMethods  | No  |  |  | An array that lists the available shipping methods. The Apple Pay payment sheet displays the first shipping method from the array as the default shipping method.  |
 |  | supportedCountries  | No  |  |  | An array of countries to support. List each country with their ISO 3166 country code.  |
 | applePay  | merchantIdentifier  | Yes  |  |  | A unique identifier that represents a merchant for Apple Pay.  |
-|  | merchantCapabilities  | Yes  |  |  | An array of payment capabilities supported by the merchant. The array must include supports3DS, and may optionally include supportsCredit, supportsDebit, and supportsEMV.  |
+|  | merchantCapabilities  | Yes  |  |  | An array of payment capabilities supported by the merchant. The array must include supports3DS, and can optionally include supportsCredit, supportsDebit, and supportsEMV.  |
 |  | supportedNetworks  | Yes  |  |  | An array of payment networks supported by the merchant. The array must include one or more of the following values: amex, discover, jcb, masterCard, privateLabel, or visa  |
 | lineItem  | amount  | Yes  |  |  | The monetary amount of the line item.  |
 |  | label  | Yes  |  |  | A short, localized description of the line item.  |
@@ -1276,7 +1276,7 @@ The WhatsApp reply template has the following limits.
 ## Rich formatting in titles and subtitles
 <a name="rich-link-formatting"></a>
 
-You can add rich formatting to the titles and subtitles of your chat messages. For example, you can add links, italics, bold, numbered lists, and bulleted lists. You use [markdown]( https://commonmark.org/help/) to format your text.
+You can add rich formatting to the titles and subtitles of your chat messages. For example, you can add links, italics, bold, numbered lists, and bulleted lists. You use [markdown](https://commonmark.org/help/) to format your text.
 
 The following image of a chat box shows an example list picker with rich formatting in the title and subtitle.
 + The title **How can we help? aws.amazon.com** is bold and contains a link.

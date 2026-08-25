@@ -20,7 +20,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/upgrade-analysis.html
 <a name="upgrade-analysis-prerequisites"></a>
 
  The following prerequisites are required to use generative AI to upgrade jobs in AWS Glue:
-+  AWS Glue 2 PySpark jobs – only AWS Glue 2 jobs can be upgraded to AWS Glue 5.
++  Your job must be a PySpark job running on AWS Glue 2.0, 3.0, 4.0, 5.0, or 5.1. You can upgrade it to AWS Glue 4.0, 5.0, 5.1, or 6.0.
 +  IAM permissions are required to start the analysis, review the results and upgrade your job. For more information, see the examples in the [Permissions](#auto-upgrade-permissions) section below.
 +  If using AWS KMS to encrypt analysis artifacts, then additional AWS AWS KMS permissions are needed. For more information, see the examples in the [AWS KMS policy](#auto-upgrade-kms-policy) section below.
 
@@ -433,7 +433,7 @@ job.commit()
 <a name="upgrade-analysis-considerations"></a>
 
  As you begin using Spark Upgrades, there are several important aspects to consider for optimal usage of the service.
-+  **Service Scope and Limitations**: The current release focuses on PySpark code upgrades from AWS Glue versions 2.0 to version 5.0. At this time, the service handles PySpark code that doesn't rely on additional library dependencies. You can run automated upgrades for up to 10 jobs concurrently in an AWS account, allowing you to efficiently upgrade multiple jobs while maintaining system stability.
++  **Service Scope and Limitations**: The current release focuses on PySpark code upgrades from any supported source version. At this time, you can upgrade PySpark code that doesn't rely on additional library dependencies. You can run automated upgrades for up to 10 jobs concurrently in an AWS account, allowing you to efficiently upgrade multiple jobs while maintaining system stability.
   +  Only PySpark jobs are supported.
   +  Upgrade analysis will time out after 24 hours.
   +  Only one active upgrade analysis can be run at a time for one job. On the account-level, up to 10 active upgrade analysis can be run at the same time.

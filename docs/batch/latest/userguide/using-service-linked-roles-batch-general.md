@@ -33,7 +33,7 @@ The AWSServiceRoleForBatch service-linked role trusts the following services to 
 The role permissions policy named [BatchServiceRolePolicy](security-iam-awsmanpol.md#security-iam-awsmanpol-BatchServiceRolePolicy) allows AWS Batch to complete the following actions on the specified resources:
 + `autoscaling` – Allows AWS Batch to create and manage Amazon EC2 Auto Scaling resources. AWS Batch creates and manages Amazon EC2 Auto Scaling groups for most compute environments.
 + `ec2` – Allows AWS Batch to control the lifecycle of Amazon EC2 instances as well as create and manage launch templates and tags. AWS Batch creates and manages EC2 Spot Fleet requests for some EC2 Spot compute environments.
-+ `ecs` - Allows AWS Batch to create and managed Amazon ECS clusters, task-definitions and tasks for job execution.
++ `ecs` – Allows AWS Batch to create and manage Amazon ECS clusters (including updating cluster settings such as Container Insights), task definitions, and tasks for job execution.
 + `eks` - Allows AWS Batch to describe the Amazon EKS cluster resource for validations.
 + `iam` - Allows AWS Batch to validate and pass roles provided by owner to Amazon EC2, Amazon EC2 Auto Scaling and Amazon ECS.
 + `logs` – Allows AWS Batch to create and manage log groups and log streams for AWS Batch jobs.

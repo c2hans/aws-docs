@@ -221,7 +221,7 @@ A list of Availability Zones (AZs) where instances in the DB cluster can be crea
 Valid for: Aurora DB clusters only
 *Required*: No
 *Type*: Array of String
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 `BacktrackWindow`  <a name="cfn-rds-dbcluster-backtrackwindow"></a>
 The target backtrack window, in seconds. To disable backtracking, set this value to `0`.

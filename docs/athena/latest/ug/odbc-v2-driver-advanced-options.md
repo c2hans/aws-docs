@@ -134,9 +134,14 @@ Specifies the column length for columns with complex data types like `map`, `str
 
 Instructs the HTTP client where to find your SSL certificate trust store. This value is passed to the `ClientConfiguration.caFile` parameter. For more information, see [AWS Client configuration](https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/client-config.html) in the *AWS SDK for C\+\+ Developer Guide*.
 
+Starting with driver version 2.3.0.0, the following platform-specific behavior applies:
++ On Windows, the driver verifies SSL certificates against the Windows system certificate store and does not use this parameter. To use a private certificate authority (CA), import the CA certificate into the Windows certificate store.
++ On Linux, if you do not set this parameter, the driver locates the CA bundle at runtime by checking the `CURL_CA_BUNDLE` and `SSL_CERT_FILE` environment variables and then a set of well-known system paths. To use a private CA, set this parameter or one of the environment variables to the path of your CA bundle.
++ On macOS, the driver uses the trust store file that you specify in this parameter. If you do not set it, certificate verification uses the system curl library's default trust store.
+
 | **Connection string name** | **Parameter type** | **Default value** | **Connection string example** |
 | --- | --- | --- | --- |
-| TrustedCerts | Optional | %INSTALL\_PATH%/bin | TrustedCerts=C:\\\\Program Files\\\\Amazon Athena ODBC Driver\\\\bin\\\\cacert.pem; |
+| TrustedCerts | Optional | Windows: system certificate store; Linux: auto-detected CA bundle; macOS: curl default trust store | TrustedCerts=/etc/ssl/certs/cacert.pem; |
 
 ## Min poll period
 <a name="odbc-v2-driver-advanced-options-min-poll-period"></a>

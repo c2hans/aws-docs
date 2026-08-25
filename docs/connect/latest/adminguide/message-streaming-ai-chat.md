@@ -12,7 +12,7 @@ The following are integration options, along with features of each option:
   + Eliminates Amazon Lex timeout limitations
   + Provides fulfillment messages during processing (such as "One moment while I review your account")
   + Displays partial responses with progressive text (growing text bubble)
-+ Third-party bots via Amazon Lex or Lambda
++ Third-party bots through Amazon Lex or Lambda
   + Eliminates Amazon Lex timeout limitations
   + Standard bot response behavior
 

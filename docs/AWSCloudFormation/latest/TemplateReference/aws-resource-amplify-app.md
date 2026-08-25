@@ -87,7 +87,7 @@ Existing Amplify apps deployed from a GitHub repository using OAuth continue to 
 *Required*: No
 *Type*: String
 *Minimum*: `1`
-*Maximum*: `255`
+*Maximum*: `4096`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `AutoBranchCreationConfig`  <a name="cfn-amplify-app-autobranchcreationconfig"></a>
@@ -196,7 +196,7 @@ Existing Amplify apps deployed from a GitHub repository using OAuth continue to 
 *Required*: No
 *Type*: String
 *Pattern*: `(?s).*`
-*Maximum*: `1000`
+*Maximum*: `4096`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Platform`  <a name="cfn-amplify-app-platform"></a>

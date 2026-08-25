@@ -16,7 +16,7 @@ When using prompt caching, you're charged at a reduced rate for tokens read from
 
 If you opt to use prompt caching, Amazon Bedrock creates a cache composed of *cache checkpoints*. These are markers that define the contiguous subsection of your prompt that you wish to cache (often referred to as a prompt prefix). These prompt prefixes should be static between requests, alterations to the prompt prefix in subsequent requests will result in cache misses.
 
-Cache checkpoints have a minimum and maximum number of tokens, dependent on the specific model you're using. You can only create a cache checkpoint if your total prompt prefix meets the minimum number of tokens. For example, Claude 3.7 Sonnet requires at least 1,024 tokens per cache checkpoint, while Claude Opus 4.5, Claude Opus 4.6, Claude Haiku 4.5, and Claude Sonnet 4.5 require at least 4,096 tokens per cache checkpoint. That means that for a model with a 1,024-token minimum, your first cache checkpoint can be defined after 1,024 tokens and your second cache checkpoint can be defined after 2,048 tokens. If you try to add a cache checkpoint before meeting the minimum number of tokens, your inference will still succeed, but your prefix will not be cached. The cache has a Time To Live (TTL), which resets with each successful cache hit. During this period, the context in the cache is preserved. If no cache hits occur within the TTL window, your cache expires. Many models support a 5-minute TTL. Check the model card for your model to see the exact TTL conditions.
+Cache checkpoints have a minimum and maximum number of tokens, dependent on the specific model you're using. You can only create a cache checkpoint if your total prompt prefix meets the minimum number of tokens. For example, Claude Opus 5 requires at least 512 tokens per cache checkpoint, Claude Sonnet 5 requires at least 1,024 tokens per cache checkpoint, and Claude Haiku 4.5 requires at least 4,096 tokens per cache checkpoint. That means that for a model with a 1,024-token minimum, your first cache checkpoint can be defined after 1,024 tokens and your second cache checkpoint can be defined after 2,048 tokens. If you try to add a cache checkpoint before meeting the minimum number of tokens, your inference will still succeed, but your prefix will not be cached. The cache has a Time To Live (TTL), which resets with each successful cache hit. During this period, the context in the cache is preserved. If no cache hits occur within the TTL window, your cache expires. Many models support a 5-minute TTL. Check the model card for your model to see the exact TTL conditions.
 
 You can use prompt caching anytime you get model inference in Amazon Bedrock for supported models. Prompt caching is supported by the following Amazon Bedrock features:
 
@@ -48,19 +48,25 @@ To see which models support prompt caching, please refer to [Models at a glance]
 
 | Model name | Model ID | Release Type | Minimum number of tokens per cache checkpoint | Maximum number of cache checkpoints per request | Supported TTL | Fields that accept prompt cache checkpoints |
 | --- | --- | --- | --- | --- | --- | --- |
+| Claude Fable 5 | anthropic.claude-fable-5 | Generally Available | 512 | 4 | 5 minutes, 1 hour | `system`, `messages`, and `tools` |
+| Claude Mythos 5 | anthropic.claude-mythos-5 | Gated | 512 | 4 | 5 minutes, 1 hour | `system`, `messages`, and `tools` |
+| Claude Mythos Preview | anthropic.claude-mythos-preview | Gated | 4,096 | 4 | 5 minutes, 1 hour | `system`, `messages`, and `tools` |
+| Claude Opus 5 | anthropic.claude-opus-5 | Generally Available | 512 | 4 | 5 minutes, 1 hour | `system`, `messages`, and `tools` |
+| Claude Opus 4.8 | anthropic.claude-opus-4-8 | Generally Available | 1,024 | 4 | 5 minutes, 1 hour | `system`, `messages`, and `tools` |
+| Claude Opus 4.7 | anthropic.claude-opus-4-7 | Generally Available | 4,096 | 4 | 5 minutes, 1 hour | `system`, `messages`, and `tools` |
+| Claude Opus 4.6 | anthropic.claude-opus-4-6-v1 | Generally Available | 4,096 | 4 | 5 minutes, 1 hour | `system`, `messages`, and `tools` |
 | Claude Opus 4.5 | anthropic.claude-opus-4-5-20251101-v1:0 | Generally Available | 4,096 | 4 | 5 minutes, 1 hour | `system`, `messages`, and `tools` |
-| Claude Opus 4.6 | anthropic.claude-opus-4-6-v1 | Generally Available | 4,096 | 4 | 5 minutes | `system`, `messages`, and `tools` |
-| Claude Sonnet 4.5 | anthropic.claude-sonnet-4-5-20250929-v1:0 | Generally Available | 4,096 | 4 | 5 minutes, 1 hour | `system`, `messages`, and `tools` |
-| Claude Sonnet 4.6 | anthropic.claude-sonnet-4-6 | Generally Available | 1,024 | 4 | 5 minutes | `system`, `messages`, and `tools` |
-| Claude Haiku 4.5 | anthropic.claude-haiku-4-5-20251001-v1:0 | Generally Available | 4,096 | 4 | 5 minutes, 1 hour | `system`, `messages`, and `tools` |
-| Claude Opus 4 | anthropic.claude-opus-4-20250514-v1:0 | Generally Available | 1,024 | 4 | 5 minutes | `system`, `messages`, and `tools` |
+| Claude Sonnet 5 | anthropic.claude-sonnet-5 | Generally Available | 1,024 | 4 | 5 minutes, 1 hour | `system`, `messages`, and `tools` |
+| Claude Sonnet 4.6 | anthropic.claude-sonnet-4-6 | Generally Available | 1,024 | 4 | 5 minutes, 1 hour | `system`, `messages`, and `tools` |
+| Claude Sonnet 4.5 | anthropic.claude-sonnet-4-5-20250929-v1:0 | Generally Available | 1,024 | 4 | 5 minutes, 1 hour | `system`, `messages`, and `tools` |
 | Claude 3.7 Sonnet | anthropic.claude-3-7-sonnet-20250219-v1:0 | Generally Available | 1,024 | 4 | 5 minutes | `system`, `messages`, and `tools` |
 | Claude 3.5 Sonnet v2 | anthropic.claude-3-5-sonnet-20241022-v2:0 | Preview | 1,024 | 4 | 5 minutes | `system`, `messages`, and `tools` |
+| Claude Haiku 4.5 | anthropic.claude-haiku-4-5-20251001-v1:0 | Generally Available | 4,096 | 4 | 5 minutes, 1 hour | `system`, `messages`, and `tools` |
 | GPT-5.6 Sol | openai.gpt-5.6-sol | Generally Available | 1,024 | 4 | 30 minutes | `prompt_cache_breakpoint` on `input_text`, `input_image`, and `input_file` blocks (Responses API) |
 | GPT-5.6 Terra | openai.gpt-5.6-terra | Generally Available | 1,024 | 4 | 30 minutes | `prompt_cache_breakpoint` on `input_text`, `input_image`, and `input_file` blocks (Responses API) |
 | GPT-5.6 Luna | openai.gpt-5.6-luna | Generally Available | 1,024 | 4 | 30 minutes | `prompt_cache_breakpoint` on `input_text`, `input_image`, and `input_file` blocks (Responses API) |
 
-To use the 1-hour TTL option with supported models (Claude Opus 4.5, Claude Haiku 4.5, and Claude Sonnet 4.5), specify the `ttl` field in your cache checkpoint. In the Converse API, add `"ttl": "1h"` to your `cachePoint` object. In the InvokeModel API for Claude models, add `"ttl": "1h"` to your `cache_control` object. If no `ttl` value is provided, the default 5-minute caching behavior applies. The 1-hour TTL is useful for longer-running sessions or batch processing scenarios where you want to maintain the cache across extended periods.
+To use the 1-hour TTL option with supported models (Claude Fable 5, Claude Opus 5, Claude Opus 4.8, Claude Opus 4.7, Claude Opus 4.6, Claude Opus 4.5, Claude Sonnet 5, Claude Sonnet 4.6, Claude Sonnet 4.5, and Claude Haiku 4.5), specify the `ttl` field in your cache checkpoint. In the Converse API, add `"ttl": "1h"` to your `cachePoint` object. In the InvokeModel API for Claude models, add `"ttl": "1h"` to your `cache_control` object. If no `ttl` value is provided, the default 5-minute caching behavior applies. The 1-hour TTL is useful for longer-running sessions or batch processing scenarios where you want to maintain the cache across extended periods.
 
 Amazon Nova offers automatic prompt caching for all text prompts, including `User` and `System` messages. This mechanism can provide latency benefits when prompts begin with repetitive parts, even without explicit configuration. However, to unlock cost savings and ensure more consistent performance benefits, we recommend opting in to **Explicit Prompt Caching**.
 

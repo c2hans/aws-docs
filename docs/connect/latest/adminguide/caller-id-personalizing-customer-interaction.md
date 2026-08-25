@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/caller-id-pers
 You can provide a personalized experience for your customers by using metadata attributes that provide information related to call origination. For example, you can look up a customer's contact ID, and welcome them with a personalized greeting.
 
 **Important**
-Features that are provided by Connect Customer or third parties may rely on call data for identifying inbound callers for personalizing customer interaction or detecting fraud and may be subject to additional terms and conditions. Network-related call data that is not displayed to call recipients may not be used for any purpose other than fraud detection.
+Features that are provided by Connect Customer or third parties might rely on call data for identifying inbound callers for personalizing customer interaction or detecting fraud and might be subject to additional terms and conditions. Network-related call data that is not displayed to call recipients might not be used for any purpose other than fraud detection.
 
 ## Use telephony call metadata attributes
 <a name="call-metadata-attributes"></a>
@@ -33,7 +33,7 @@ The following table lists the available telephony call metadata attributes. For 
 ## Troubleshoot issues
 <a name="ts-metadata"></a>
 
-The availability of telephony metadata is not consistent across all telephony providers and may not be available in all cases.
+The availability of telephony metadata is not consistent across all telephony providers and might not be available in all cases.
 
 Before opening an AWS Support case:
 + If you are missing data on all calls required by a third-party Connect Customer Ready service, check that you followed the service configuration guide provided by the third party.

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/monitor-conver
 # Assign permissions to monitor live conversations in the Connect Customer Contact Control Panel (CCP)
 <a name="monitor-conversations-permissions"></a>
 
-For managers to monitor live conversations, you assign them the **CallCenterManager** and **Agent** security profiles. To allow agent trainees to monitor live conversations, you may want to create a security profile specific for this purpose.
+For managers to monitor live conversations, you assign them the **CallCenterManager** and **Agent** security profiles. To allow agent trainees to monitor live conversations, you might want to create a security profile specific for this purpose.
 
 **To assign a manager permissions to monitor a live conversation**
 

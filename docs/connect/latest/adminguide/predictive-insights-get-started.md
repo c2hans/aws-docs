@@ -30,7 +30,7 @@ For more information, see [Object type mapping for Item Catalog](standard-loyalt
 ## Step 3: Creating Predictive Insights
 <a name="create-predictive-insights"></a>
 
-Connect Customer enables you to build and deploy specialized AI models tailored to your specific product recommendation needs. These models can be configured through either the Connect Web UI or programmatically via APIs to match your unique business scenarios. Predictive Insights offers several types of recommendations:
+Connect Customer enables you to build and deploy specialized AI models tailored to your specific product recommendation needs. These models can be configured through either the Connect Web UI or programmatically through APIs to match your unique business scenarios. Predictive Insights offers several types of recommendations:
 
 1. **Recommended for you** - provides personalized recommendations tailored to a specific user. Recommendations are based on the user’s past behavior such as clickstream events, purchase events, consumed content, and so on.
 
@@ -43,7 +43,7 @@ Connect Customer enables you to build and deploy specialized AI models tailored 
 1. **Trending now** - recommends items with the largest increase in velocity of engagement over a recent time period. It is designed to surface items that are experiencing virality in user interactions.
 
 **Note**
-Enabling AI models with Predictive Insights is available under preview. Additional pricing may apply in future.
+Enabling AI models with Predictive Insights is available under preview. Additional pricing might apply in future.
 
 **Item Limits by Recommendation Type**
 
@@ -69,7 +69,7 @@ The **Get profile recommendations** flow block has the following properties to c
 
 1. **Profile ID (required):**
 
-    A Profile ID is required for this block to function. The **Get profile recommendations** flow block generates recommendations for the Profile ID provided here. You have the option to manually input the Profile ID or use a pre-defined value stored in an attribute. If using a pre-defined value, ensure you provide the Profile ID by using a preceding **Get profile** block Use the **Get profile** block to pinpoint the specific profile before moving forward to generate recommendations in the subsequent block.
+    A Profile ID is required for this block to function. The **Get profile recommendations** flow block generates recommendations for the Profile ID provided here. You have the option to manually input the Profile ID or use a pre-defined value stored in an attribute. If using a pre-defined value, make sure you provide the Profile ID by using a preceding **Get profile** block Use the **Get profile** block to pinpoint the specific profile before moving forward to generate recommendations in the subsequent block.
 
 1. **Recommender name (required):**
 
@@ -85,7 +85,7 @@ The **Get profile recommendations** flow block has the following properties to c
 
 1. **Item ID:**
 
-    This is the Item ID provided as additional context to generate recommendations for the given Profile ID. Item ID is only required when using a “*Similar items” *or “*Frequently paired items” *recommender type. You have the option to manually input the Profile ID or use a pre-defined value stored in an attribute. If using a pre-defined value, ensure you provide the Item ID by using a preceding **Get calculated attributes** block. Use the **Get calculated attributes** block to pinpoint the specific Item ID before moving forward to generate recommendations in the subsequent block.
+    This is the Item ID provided as additional context to generate recommendations for the given Profile ID. Item ID is only required when using a “*Similar items” *or “*Frequently paired items” *recommender type. You have the option to manually input the Profile ID or use a pre-defined value stored in an attribute. If using a pre-defined value, make sure you provide the Item ID by using a preceding **Get calculated attributes** block. Use the **Get calculated attributes** block to pinpoint the specific Item ID before moving forward to generate recommendations in the subsequent block.
 
 **Flow Block Branches**
 
@@ -97,7 +97,7 @@ The **Get profile recommendations** flow block can route contacts down the follo
 
 1. **Error:**
 
-    An error was encountered while trying to generate recommendations. This may be due to a system error or how **Get profile recommendations** block is configured.
+    An error was encountered while trying to generate recommendations. This might be due to a system error or how **Get profile recommendations** block is configured.
 
 1. **None Found:**
 
@@ -153,7 +153,7 @@ def flatten(recommendation, index):
     return flat
 ```
 
-Once you have set up your flow with the **Get profile recommendations** block, you can start using it to generate recommendations for your customers during their contacts.
+After you have set up your flow with the **Get profile recommendations** block, you can start using it to generate recommendations for your customers during their contacts.
 
 ### Using Customer Profile Recommendations in Outbound Campaigns
 <a name="using-in-outbound-campaigns"></a>

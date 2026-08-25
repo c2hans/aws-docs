@@ -136,7 +136,7 @@ This example shows how to configure resources in your development environment to
         "environment": {
             "tag_values": {
                 "development": {
-                    "upgrade_order": "first"
+                    "patch_order": "first"
                 }
             }
         }
@@ -155,7 +155,7 @@ This example demonstrates how to ensure your production environments receive upg
         "environment": {
             "tag_values": {
                 "production": {
-                    "upgrade_order": "last"
+                    "patch_order": "last"
                 }
             }
         }

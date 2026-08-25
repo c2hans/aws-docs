@@ -36,7 +36,7 @@ To access the Amazon DynamoDB console, you must have a minimum set of permission
 
 You don't need to allow minimum console permissions for users that are making calls only to the AWS CLI or the AWS API. Instead, allow access to only the actions that match the API operation that they're trying to perform.
 
-To ensure that users and roles can still use the DynamoDB console, also attach the DynamoDB `ConsoleAccess` or `ReadOnly` AWS managed policy to the entities. For more information, see [Adding permissions to a user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_change-permissions.html#users_change_permissions-add-console) in the *IAM User Guide*.
+To make sure that users and roles can still use the DynamoDB console, also attach the DynamoDB `ConsoleAccess` or `ReadOnly` AWS managed policy to the entities. For more information, see [Adding permissions to a user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_change-permissions.html#users_change_permissions-add-console) in the *IAM User Guide*.
 
 ## Allow users to view their own permissions
 <a name="security_iam_id-based-policy-examples-view-own-permissions"></a>

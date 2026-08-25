@@ -73,6 +73,11 @@ Allows filtering on the `ResellerLegalName` of a ResaleAuthorization.
 Type: [ResaleAuthorizationResellerLegalNameFilter](API_ResaleAuthorizationResellerLegalNameFilter.md) object
 Required: No
 
+ ** ResellerRole **   <a name="AWSMarketplaceService-Type-ResaleAuthorizationFilters-ResellerRole"></a>
+Allows filtering on the `ResellerRole` of a ResaleAuthorization.
+Type: [ResaleAuthorizationResellerRoleFilter](API_ResaleAuthorizationResellerRoleFilter.md) object
+Required: No
+
  ** Status **   <a name="AWSMarketplaceService-Type-ResaleAuthorizationFilters-Status"></a>
 Allows filtering on the `Status` of a ResaleAuthorization.
 Type: [ResaleAuthorizationStatusFilter](API_ResaleAuthorizationStatusFilter.md) object

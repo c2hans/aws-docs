@@ -65,7 +65,7 @@ We recommend using [QualityMetrics](ctr-data-model.md#ctr-qualitymetrics) data t
 + What percentage of agents or calls are impacted?
   + Scenario 1: If only 1 agent is encountering the problem, it could be related to agent workstation including operating system and browser/network configuration of the agent.
   + Scenario 2: If multiple agents in the same hierarchy (for example, the same geographical location or office) experience audio quality issues, this could be a result of a local network issue (modem/ISP/Router/LAN connections) or recent software upgrades to the machines of agents.
-  + Scenario 3: Multiple agents (working remote and/or at office location) may be experiencing the issue. Check the browser/system configurations for any updates along with any network changes that may have occurred at the organizational level.
+  + Scenario 3: Multiple agents (working remote or at office location) might be experiencing the issue. Check the browser/system configurations for any updates along with any network changes that might have occurred at the organizational level.
 + What percentage of calls are affected in a given day and out of how many calls?
 + Is the issue observed on incoming calls, outgoing calls or both?
 + Is an entity forwarding calls to Connect Customer? If so, does the audio quality issue occur in case of direct dials to Connect Customer without the call quality issue.
@@ -85,16 +85,16 @@ The following list explains the potential values for `PotentialQualityIssues` an
 + `HighPacketLoss`: When this value occurs for `PotentialQualityIssues`, it suggests that there is packet loss observed on the outbound audio (egress) stream for the participant.
   + Causes:
     + This can occur in the path the packets traverse the network between the participant and the Connect Customer endpoint which could be due to a bad/poor network, congestion in network, constrained network bandwidth.
-    + It can also occur when there could be other applications on the participant's system that may be causing network bandwidth starvation.
-+ `HighJitterBuffer`: This is the time delay introduced by a buffer built-in the browser to correct the order of audio packets after network traversal. Jitter buffer plays a major role in ensuring that the packets received over network at a device are aligned appropriately to provide the audio without distortion.
+    + It can also occur when there could be other applications on the participant's system that might be causing network bandwidth starvation.
++ `HighJitterBuffer`: This is the time delay introduced by a buffer built-in the browser to correct the order of audio packets after network traversal. Jitter buffer plays a major role in making sure that the packets received over network at a device are aligned appropriately to provide the audio without distortion.
   + Causes:
-    + If a congestion (network and/or hardware) occurs at the participant's end, the `JitterBuffer` increases causing audio delays/distorted or choppy audio.
+    + If a congestion (network or hardware) occurs at the participant's end, the `JitterBuffer` increases causing audio delays/distorted or choppy audio.
     + Jitter buffer is responsible for delaying the processing media packets just enough to smooth out delivery times but high jitter buffer can cause background noise or audio quality issue.
     + If jitter buffer is more than 30 ms or changing very frequently then it means network congestion or low network bandwidth of router. High jitter can also be caused due to hardware issues of the devices involved.
 + `HighRoundTripTime`: This is the time it takes for a packet to travel through an IP network, from a sending endpoint to a receiving endpoint and back, not including the processing time at its destination. High RTT results in callers experiencing noticeable delays (speech overlap) on the call. RoundTripTime (RTT) is the estimated network round trip time between the participant's device and Connect Customer endpoint.
   + Causes:
     + The most common cause of high round trip time is a low-bandwidth or constrained network.
-    + You may also experience high round-trip time if a certain software program is causing a spike in round-trip time. In the past, some of our customers have reported VPN applications being cause of the issue.
+    + You might also experience high round-trip time if a certain software program is causing a spike in round-trip time. In the past, some of our customers have reported VPN applications being cause of the issue.
     + If the agent's physical location is distant from the AWS Region of the Connect Customer instance, it results in an increase to RoundTripTime adding latency.
     + Routing audio through a virtualized desktop (as opposed to redirecting the WebRTC session directly to agent workstation) could also introduce high round trip time.
 

@@ -85,5 +85,5 @@ A customer can have many bookmarks and a bookmark can belong to many customers. 
 The access patterns facilitated by this data model are:
 + A single query by `customerId` can now return customer data as well as bookmarks.
 + A query `ByEmail` index returns customer data by email address. Note that bookmarks are not retrieved by this index.
-+ A query `ByUrl` index gets bookmarks data by URL. Note that we have customerId as the sort key for the index because the same URL can be bookmarked by multiple customers.
++ A query `ByUrl` index gets bookmarks data by URL. Note that this index has customerId as the sort key because the same URL can be bookmarked by multiple customers.
 + A query `ByCustomerFolder` index gets bookmarks by folder for each customer.

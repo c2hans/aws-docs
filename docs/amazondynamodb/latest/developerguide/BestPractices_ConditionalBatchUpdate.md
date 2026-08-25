@@ -61,7 +61,7 @@ After update:  [{'quantity': {'N': '20'}, 'warehouse': {'S': 'WITROM1'}, 'price'
 
 Since this is a bounded operation for an internal system, idempotency requirements haven't been considered. It's possible to place additional guardrails like price update should go through only if price is greater than 35 and less than 40 to make the updates more robust.
 
-Alternatively, we can perform the same batch update operation using `TransactWriteItems` in case of stricter idempotency and ACID requirements. However, it is important to remember that either all the operations in the transaction bundle go through or the entire bundle fails.
+Alternatively, you can perform the same batch update operation using `TransactWriteItems` in case of stricter idempotency and ACID requirements. However, it is important to remember that either all the operations in the transaction bundle go through or the entire bundle fails.
 
 Let’s assume a case where there is a heatwave in Italy and the demand for desk fans has increased sharply. The vendor wants to increase their desk fan cost going out of every warehouse in Italy by 20 Euros but the regulatory body only allows this cost increase if the current cost is less than 70 Euros across their entire inventory. It's essential that the price is updated throughout the inventory at once and only once and only if the cost is less than 70 Euros in each of their warehouse.
 

@@ -21,7 +21,7 @@ You can use the JDBC 3.x driver in custom application or from a third-party SQL 
 ### In a custom application
 <a name="jdbc-v3-driver-installation-in-a-custom-application"></a>
 
-Download the `.zip` file that contains the driver jar and its dependencies. Each dependency has its own `.jar` file. Add the driver jar as a dependency in your custom application. Selectively add the dependencies of the driver jar based on whether you have already added those dependencies to your application from another source.
+Download the `.zip` file that contains the driver and its dependencies. Add the driver `.jar` file and every other `.jar` file in the `runtime-dependencies` directory to your custom application's Java classpath. Only omit a `.jar` file if your application already provides a compatible version of that dependency. The `AthenaStreamingJavaClient-2.0.jar` file provides the `software.amazon.awssdk.services.athenastreaming.AthenaStreamingAsyncClient` class. Include this file unless your application already provides that class.
 
 ### In a third-party SQL client
 <a name="jdbc-v3-driver-installation-in-a-third-party-sql-client"></a>
@@ -116,6 +116,13 @@ Some BI tools ask you to provide the driver class from the JDBC driver `.jar` fi
 <a name="jdbc-v3-driver-upgrading-connection-string"></a>
 
 The version 3 driver uses `jdbc:athena://` for the protocol at the beginning of the JDBC connection string URL. The version 3 driver also supports the version 2 protocol `jdbc:awsathena://`, but the use of the version 2 protocol is deprecated. To avoid undefined behaviors, version 3 does not accept connection strings that start with `jdbc:awsathena://` if version 2 (or any other driver that accepts connection strings that start with `jdbc:awsathena://`) has been registered with the [DriverManager](https://docs.oracle.com/javase/8/docs/api/java/sql/DriverManager.html) class.
+
+### String column metadata
+<a name="jdbc-v3-driver-upgrading-string-column-metadata"></a>
+
+With the JDBC 3.x driver, you can no longer use the JDBC 2.x `StringColumnLength` connection parameter. Instead, you can access the precision that Athena supplies through standard JDBC metadata methods, including `ResultSetMetaData.getPrecision` and `ResultSetMetaData.getColumnDisplaySize`. Because the Athena `string` type is unbounded, its reported precision can be `2147483647`.
+
+If your application allocates fixed-size buffers from JDBC metadata, configure it to use variable-size buffers. If your application requires bounded column metadata, cast the column to `varchar({{n}})` in the query or expose the cast through a view. Choose a value for {{n}} that preserves all expected data because casting to a smaller size can truncate values.
 
 ### Credentials providers
 <a name="jdbc-v3-driver-upgrading-credentials-providers"></a>

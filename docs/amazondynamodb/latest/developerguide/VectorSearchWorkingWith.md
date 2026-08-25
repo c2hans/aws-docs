@@ -20,7 +20,7 @@ This section describes how to create and manage vector indexes, write items with
 <a name="VectorSearchWorkingWith.Prerequisites"></a>
 
 Before you work with vector indexes, verify the following:
-+ Your table uses on-demand capacity mode (`PAY_PER_REQUEST`). Vector indexes are not supported on provisioned capacity tables.
++ Your table uses on-demand capacity mode (`PAY_PER_REQUEST`). Vector indexes use on-demand capacity mode only and require a table that also uses on-demand capacity mode, so you cannot mix the two capacity modes.
 + Your AWS Identity and Access Management (IAM) identity has `dynamodb:CreateTable` or `dynamodb:UpdateTable` permissions to create vector indexes.
 + Your IAM identity has `dynamodb:SearchVectors` permission on the vector index resource to perform searches. The resource ARN format is `arn:aws:dynamodb:{{region}}:{{account-id}}:table/{{table-name}}/index/{{index-name}}`.
 

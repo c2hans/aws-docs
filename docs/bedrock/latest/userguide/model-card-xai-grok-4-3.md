@@ -43,7 +43,13 @@ Grok 4.3 is a reasoning-first model that offers always-on and configurable reaso
 ## Pricing
 <a name="model-card-xai-grok-4-3-pricing"></a>
 
-For pricing information, see the [Amazon Bedrock Pricing](https://aws.amazon.com/bedrock/pricing/) page.
+| **Inference option** | **Input** | **Output** | **Cache read** |
+| --- | --- | --- | --- |
+| In-Region | $1.25 | $2.50 | $0.20 |
+
+*All prices are per 1 million tokens. Pricing shown is for the Standard tier. Grok 4.3 supports In-Region inference only.*
+
+**Priority and Flex tier support:** In addition to Standard, Grok 4.3 supports the Priority and Flex service tiers. Priority is billed at **1.75x** the Standard per-token rate (a 75% premium) and Flex at **0.5x** the Standard rate (a 50% discount); apply these multipliers to the Standard rates shown above. For details on each service tier, see [service tiers](service-tiers-inference.html).
 
 ## Programmatic Access
 <a name="model-card-xai-grok-4-3-programmatic-access"></a>

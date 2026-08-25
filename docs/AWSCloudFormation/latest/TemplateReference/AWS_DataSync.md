@@ -21,3 +21,4 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::DataSync::LocationS3](aws-resource-datasync-locations3.md)
 + [AWS::DataSync::LocationSMB](aws-resource-datasync-locationsmb.md)
 + [AWS::DataSync::Task](aws-resource-datasync-task.md)
++ [AWS::DataSync::TaskExecution](aws-resource-datasync-taskexecution.md)

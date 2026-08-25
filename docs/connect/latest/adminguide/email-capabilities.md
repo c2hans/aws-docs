@@ -17,14 +17,14 @@ Connect Customer Email integrates with [Amazon Simple Email Service (SES)](https
 + [Every email message is a unique email contact](#email-capabilities-howmanaged)
 + [Email threads](#email-capabilities-howthreadsmanaged)
 + [Send email](#email-capabilities-howemailssent)
-+ [Self-addressed emails](#email-capabilities-selfaddressed)
++ [Handling email loops](#email-capabilities-loops)
 
 ## Receive emails
 <a name="email-capabilities-howreceived"></a>
 
 There are three main ways that Connect Customer can receive emails:
 + **Method 1**: By an [email address](create-email-address1.md) defined in Connect Customer (for example, support@{{customer-domain}}.com) using a [verified email domain from Amazon SES](https://docs.aws.amazon.com/ses/latest/dg/creating-identities.html#just-verify-domain-proc), such as the email domain provided with your Connect Customer instance (for example, @{{instance-alias}}.email.connect.aws) or a custom verified domain that you own or is provided by your company (for example, @{{customer-domain}}.com). See [Step 3: Use your own custom email domains](enable-email1.md#use-custom-email) in [Enable email for your instance](enable-email1.md) for details about onboarding custom email domains.
-+ **Method 2**: By using a routing rule on your email server (for example, [Microsoft 365 Connectors](https://learn.microsoft.com/en-us/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail), [Google Workspace Mail Routes](https://support.google.com/a/answer/2614757?hl=en&ref_topic=2921034&sjid=9077065025577504786-NC)) to send the incoming email to one of [Amazon SES's SMTP endpoints](https://docs.aws.amazon.com/general/latest/gr/ses.html) using a verified email domain onboarded to Amazon SES (for example, @{{customer-domain}}.com).
++ **Method 2**: By using a routing rule on your email server (for example, [Microsoft 365 Connectors](https://learn.microsoft.com/en-us/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail), [Google Workspace Mail Routes](https://support.google.com/a/answer/2614757?hl=en&ref_topic=2921034&sjid=9077065025577504786-NC)) to send the incoming email to one of [the SMTP endpoints of Amazon SES](https://docs.aws.amazon.com/general/latest/gr/ses.html) using a verified email domain onboarded to Amazon SES (for example, @{{customer-domain}}.com).
 + **Method 3**: By using the [StartEmailContact](https://docs.aws.amazon.com/connect/latest/APIReference/API_StartEmailContact.html) API to start an email contact by using a webform on your website or in your mobile app. This starts inbound email contacts similar to customers sending emails to your email addresses.
 
 The following diagram illustrates how emails sent from your customers are received by Connect Customer using the [StartEmailContact](https://docs.aws.amazon.com/connect/latest/APIReference/API_StartEmailContact.html) API for each of the methods mentioned above.
@@ -84,7 +84,7 @@ For information about how the email contact information is populated into the em
 ## Email threads
 <a name="email-capabilities-howthreadsmanaged"></a>
 
-Email threading ensures that outgoing emails and incoming responses related to a customer inquiry are associated with each other in a chronological and organized fashion.
+Email threading makes sure that outgoing emails and incoming responses related to a customer inquiry are associated with each other in a chronological and organized fashion.
 
 To maintain the whole email conversation, Connect Customer links the email contacts together using a few fields on the email contact such as the relatedContactId and a list of email headers that follow conventional email client standards (RFC 5256).
 
@@ -113,7 +113,12 @@ The [StartOutboundEmailContact](https://docs.aws.amazon.com/connect/latest/APIRe
 + It functions similarly to [StartEmailContact](https://docs.aws.amazon.com/connect/latest/APIReference/API_StartEmailContact.html) API, however it is the inverse since it is outbound.
 +  It requires at least one email address in either the To or CC email address attributes and it requires an outbound whisper flow for handling the outbound contact.
 
-## Emails that loop back to the same address
+## Handling email loops
+<a name="email-capabilities-loops"></a>
+
+Emails can loop back into your Connect Customer instance in two ways. The first is self-addressed messages (where the sender and recipient are the same). The second is automated responses such as bounce notifications and out-of-office replies. Connect Customer automatically blocks self-addressed emails from re-entering your system. However, automated responses can still create loops. To prevent this, add filtering logic to your inbound email flows that detects and discards these messages.
+
+### Emails that loop back to the same address
 <a name="email-capabilities-selfaddressed"></a>
 
 **Automatic behavior**
@@ -122,3 +127,15 @@ Connect Customer applies this behavior automatically, and you cannot turn it off
 When an agent replies to an email, the reply is sent from the queue's configured email address. If an agent CCs or includes that same address in the To field, the email is delivered back to your Connect Customer instance.
 
 Connect Customer automatically ignores these emails and does not create new inbound contacts. This prevents duplicate contacts and ensures replies or outbound emails are not re-routed back to agents.
+
+### Prevent automated email loops
+<a name="email-capabilities-preventloops"></a>
+
+Email loops can occur when you configure automated responses on your Connect Customer instance using the **Send message** block. The automated reply might trigger a bounce (Non-Delivery Report/NDR). It might also reach a mailbox with an out-of-office auto-reply enabled. In either case, your Connect Customer instance ingests that response as a new inbound email. This triggers another automated reply and creates an infinite loop. Connect Customer does not natively detect or suppress NDR or out-of-office messages. For safeguards that apply when you use the **Send message** block in outbound flows, see [Important information about using the Send message block in outbound flows](send-message.md#send-message-outboundflow-important).
+
+To prevent automated email loops, implement the following logic in your inbound email flows, and optionally adjust your Amazon SES notification settings:
++ **Filter automated senders in your inbound email flow** – Place a [Check contact attributes](check-contact-attributes.md) block early in the flow, before any case creation or automated reply logic. Branch on the sender attribute `$.CustomerEndpoint.Address`. Use Contains conditions to match patterns such as `mailer-daemon`, `MAILER-DAEMON`, `postmaster`, `noreply`, `no-reply`, and `bounces+`. String comparisons in the **Check contact attributes** block are case-sensitive, so include both lowercase and uppercase variants of each pattern. On match, end the contact with [Disconnect / hang up](disconnect-hang-up.md) or route it to a supervisor review queue. As a secondary check, inspect `$.SegmentAttributes['connect:EmailSubject']` for bounce subject prefixes such as `Undeliverable:` and `Mail Delivery Failed`.
++ **(Optional) Disable Amazon SES email feedback forwarding** – By default, Amazon SES delivers bounce and complaint notifications as email to the sending address, which is how NDRs enter your support inbox. Disable email feedback forwarding and route notifications to an Amazon Simple Notification Service (Amazon SNS) topic instead. You can disable forwarding only after you configure Amazon SNS topics for both bounces and complaints. For more information, see [Receiving Amazon SES notifications through email](https://docs.aws.amazon.com/ses/latest/dg/monitor-sending-activity-using-notifications-email.html) and [Configuring Amazon SNS notifications for Amazon SES](https://docs.aws.amazon.com/ses/latest/dg/configure-sns-notifications.html).
+
+**Filter on the sender address**
+`$.SystemEndpoint.Address` contains your Connect Customer instance's configured email address – not the sender's email address. Do not use it as a filter condition, because it does not match against incoming sender addresses (including automated email responses).

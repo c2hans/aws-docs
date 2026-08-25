@@ -23,7 +23,7 @@ The functionality of this block depends on where it is used:
 
 This block is designed to be used in the following scenarios:
 + Place the contact in a queue to be connected to an agent.
-+ You want to move the current customer from a generic queue to a specialized queue. You may want to do this when customers have waited too long in the queue, for example, or you have other business requirements.
++ You want to move the current customer from a generic queue to a specialized queue. You might want to do this when customers have waited too long in the queue, for example, or you have other business requirements.
 + Offer callback options to the customer instead of having them wait to be connected to an agent.
 
 ## Contact types

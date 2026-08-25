@@ -12,6 +12,7 @@ Amazon RDS supports DB instances that run the following versions and editions of
 
 **Note**
 Oracle Database 11g, Oracle Database 12c, and Oracle Database 18c are legacy versions that are no longer supported in Amazon RDS.
+Oracle is ending support for Oracle Database 21c on July 31, 2027. After this date, Amazon RDS for Oracle will deprecate Oracle Database 21c. To plan your upgrade, see [Preparing for Oracle Database 21c end of support](USER_UpgradeDBInstance.Oracle.21c-end-of-support.md).
 
 Before creating a DB instance, complete the steps in the [Setting up your Amazon RDS environment](CHAP_SettingUp.md) section of this guide. When you create a DB instance using your master account, the account gets DBA privileges, with some limitations. For example, the master user can't perform operations that require SYSDBA privileges, and access to certain Oracle-supplied packages and tables is restricted. For more information, see [RDS for Oracle users and privileges](Oracle.Concepts.Privileges.md). Use this account for administrative tasks such as creating additional database accounts. You can't use SYS, SYSTEM, or other Oracle-supplied administrative accounts. To grant privileges on objects owned by SYS, use the `rdsadmin.rdsadmin_util.grant_sys_object` procedure. For more information, see [How to manage privileges on SYS objects](Oracle.Concepts.Privileges.md#Oracle.Concepts.Privileges.SYS-objects).
 

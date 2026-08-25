@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 # ListAgentRuntimeVersionsByCapacityProvider
 <a name="API_ListAgentRuntimeVersionsByCapacityProvider"></a>
 
-Lists the agent runtime versions that are associated with a capacity provider. Use this operation to identify the runtimes you must disassociate before you can delete the capacity provider. Results are paginated. Use the `nextToken` parameter to retrieve additional results.
+Lists the agent runtime versions that are associated with a capacity provider. Use this operation to identify the runtimes you must disassociate before you can delete the capacity provider. Results are paginated; use the `nextToken` parameter to retrieve additional results.
 
 ## Request Syntax
 <a name="API_ListAgentRuntimeVersionsByCapacityProvider_RequestSyntax"></a>

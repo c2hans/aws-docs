@@ -24,9 +24,10 @@ The JSONPath reference for each attribute is provided so you can [create dynamic
 + [Amazon Lex contact attributes](#attribs-lex-table)
 + [Case contact attributes](#attribs-case-table)
 + [Lambda contact attributes](#attribs-lambda-table)
++ [External tool attributes](#external-tool-attributes)
 + [User-defined attributes](#user-defined-attributes)
 + [Flow attributes](#flow-attributes)
-+ [Loop Attributes](#w2aac18c54b9c41)
++ [Loop Attributes](#w2aac18c54b9c43)
 + [Flow modules attributes](#flow-modules-attributes)
 + [Data Table attributes](#data-table-attributes)
 + [Apple Messages for Business attributes](#apple-messages-for-business-attributes)
@@ -45,7 +46,7 @@ Not all blocks in a flow support using System attributes. For example, you canno
 | --- | --- | --- | --- |
 | AWS Region | When used, this returns the AWS Region where the contact is being handled. For example, us-west-2, us-east-1, and so on. | System | $.AwsRegion or $['AwsRegion'] |
 | Customer address or number | The customer's phone number, or email address if using the EMAIL channel.<br />Supported in voice calls, SMS, WhatsApp business messaging, and email.<br />When used in an outbound whisper flow, this is the number that the agents dialed to reach the customer. When used in inbound flows, this is the number from which the customer placed the call. This attribute is included in contact records. When used in a Lambda function, it's included in the input object under CustomerEndpoint.  | System | $.CustomerEndpoint.Address |
-| Customer ID | The customer's identification number. For example, the CustomerId may be a customer number from your CRM. You can create a Lambda function to pull the unique customer ID of the caller from your CRM system. Voice ID uses this attribute as the `CustomerSpeakerId` for the caller. | System | $.CustomerId |
+| Customer ID | The customer's identification number. For example, the CustomerId might be a customer number from your CRM. You can create a Lambda function to pull the unique customer ID of the caller from your CRM system. Voice ID uses this attribute as the `CustomerSpeakerId` for the caller. | System | $.CustomerId |
 | System address or number | Supported in voice calls, SMS, email, and WhatsApp business messaging.<br />The number the customer dialed to call your contact center or the email address that the contact sent the email to if using the EMAIL channel.<br />This attribute is included in contact records. When used in a Lambda function, it's included in the input object under SystemEndpoint. | System | $.SystemEndpoint.Address |
 | Customer display name | The customer's name on the email that they sent to your contact center. | System | $.CustomerEndpoint.DisplayName |
 | System display name | The display name of the email address that the customer sent. | System | $.SystemEndpoint.DisplayName |
@@ -67,7 +68,7 @@ Not all blocks in a flow support using System attributes. For example, you canno
 | Name | The name of the task. | System | $.Name |
 | Description | A description of the task. | System | $.Description |
 | References | Links to other documents that are related to a contact. | System | $.References.{{ReferenceKey}}.Value and $.References.{{ReferenceKey}}.Type where {{ReferenceKey}} is the user-defined Reference name. |
-| Language | The language of content.<br />Use the standard java.util.Locale. For example, en-US for United States English, ja-JP for Japanese, etc. | System | $.LanguageCode |
+| Language | The language of content.<br />Use the standard java.util.Locale. For example, en-US for United States English, ja-JP for Japanese. | System | $.LanguageCode |
 | System Endpoint Type | The type of the system endpoint. Valid value is TELEPHONE\_NUMBER. | System | $.SystemEndpoint.Type |
 | Customer Endpoint type | The type of the customer endpoint. Valid value is TELEPHONE\_NUMBER. | System | $.CustomerEndpoint.Type |
 | Queue Outbound Caller ID number | The outbound caller ID number defined for the queue. This can be useful for reverting the caller ID after setting a custom caller ID. | System | $.Queue.OutboundCallerId.Address |
@@ -207,7 +208,7 @@ Telephony metadata provides additional information related to call origination f
 | SIPREC metadata |  SIPREC metadata XML received by Amazon Contact Lens connector | System |  $.Media.Sip.SiprecMetadata |
 
 **Note**
-The availability of telephony metadata is not consistent across all telephony providers and may not be available in all cases. This may result in empty values.
+The availability of telephony metadata is not consistent across all telephony providers and might not be available in all cases. This might result in empty values.
 
 ## Chat initial message attributes
 <a name="chat-initial-message-attributes"></a>
@@ -267,8 +268,8 @@ The following table lists the attributes that are used with Connect Customer Cas
 | Date/Time Closed | The date and time the case was last closed. It does not guarantee that a case is closed. If a case is reopened, this field contains the date/time stamp of the last time the status was changed to closed. | date-time | $.Case.last\_closed\_datetime  | Connect Customer |
 | Date/Time Opened | The date and time the case was opened. | date-time | $.Case.created\_datetime | Connect Customer |
 | Date/Time Updated | The date and time the case was last updated. | date-time  | $.Case.last\_updated\_datetime | Connect Customer |
-| Reference number | A friendly identifier for the case. By default, Cases automatically generates an 8-digit numeric reference number. However, you should treat this value as a string, since you can override the reference number via API to pass in a value with 1–50 alphanumeric characters, for example to carry over an existing identifier from an upstream system.<br />Reference numbers (unlike the Case ID) are not guaranteed to be unique. We recommend that you identify the customer and then collect the reference number to correctly find the right case. | text | $.Case.reference\_number | Agent |
-| Reference ID (coming later in 2026) | An identifier for the case that is unique within a Cases domain, so you can use it to look up a case directly. By default, Cases automatically generates a 9-character alphanumeric reference ID. However, you can override the reference ID via API to pass in a value with 1–50 alphanumeric characters, for example to carry over an existing identifier from an upstream system. Reference IDs are not case-sensitive. | text | $.Case.reference\_id | Agent |
+| Reference number | A friendly identifier for the case. By default, Cases automatically generates an 8-digit numeric reference number. However, you should treat this value as a string, since you can override the reference number through API to pass in a value with 1–50 alphanumeric characters, for example to carry over an existing identifier from an upstream system.<br />Reference numbers (unlike the Case ID) are not guaranteed to be unique. We recommend that you identify the customer and then collect the reference number to correctly find the right case. | text | $.Case.reference\_number | Agent |
+| Reference ID (coming later in 2026) | An identifier for the case that is unique within a Cases domain, so you can use it to look up a case directly. By default, Cases automatically generates a 9-character alphanumeric reference ID. However, you can override the reference ID through API to pass in a value with 1–50 alphanumeric characters, for example to carry over an existing identifier from an upstream system. Reference IDs are not case-sensitive. | text | $.Case.reference\_id | Agent |
 | Status | Current status of the case | text | $.Case.status | Agent |
 | Summary | Summary of the case | text | $.Case.summary | Agent |
 | Title | Title of the case | text | $.Case.title | Agent |
@@ -289,12 +290,26 @@ For more information about using attributes in Lambda functions, see [Grant Conn
 
 These attributes are not included in contact records, not passed to the next Lambda invocation, and not passed to the CCP for screenpop information. However, they can be passed as Lambda function inputs on an [AWS Lambda function](invoke-lambda-function-block.md) block, or copied to user-defined attributes using the [Set contact attributes](set-contact-attributes.md) block. When used in [Set contact attributes](set-contact-attributes.md) blocks, the attributes that are copied are included in contact records, and can be used in the CCP.
 
+## External tool attributes
+<a name="external-tool-attributes"></a>
+
+**Note**
+External tool attributes are only available in [Amazon Connect Customer](https://docs.aws.amazon.com/connect/latest/adminguide/enable-nextgeneration-amazonconnect.html) instances.
+
+External tool attributes are returned from the most recent invocation of an [External Tool](external-tool.md) block. External tool attributes are overwritten with each invocation of the block.
+
+To reference attributes in JSONPath, use:
++ `$.ExternalTool.ResultData.attributeName`, where `attributeName` is a field returned by the tool.
++ `$.ExternalTool.InvocationId` to reference the invocation ID. For asynchronous invocations, pass this to a **Load tool result** action to retrieve the result.
+
+The result is limited to 32 KB and is not included in contact records. To persist a value beyond the next invocation, copy it to a user-defined attribute using the [Set contact attributes](set-contact-attributes.md) block.
+
 ## User-defined attributes
 <a name="user-defined-attributes"></a>
 
 For all other attributes Connect Customer defines the key and value. For user-defined attributes, however, you provide a name for the key and the value.
 
-Use user-defined attributes in situations where you want to store values in a contact flow, and then refer to those values later. For example, if you integrate Connect Customer and a CRM or other system, you might want to get input from the customer such as their member number. Then you can use that member number retrieve information about the member from the CRM, and/or use the member number throughout the flow, etc.
+Use user-defined attributes in situations where you want to store values in a contact flow, and then refer to those values later. For example, if you integrate Connect Customer and a CRM or other system, you might want to get input from the customer such as their member number. Then you can use that member number retrieve information about the member from the CRM, or use the member number throughout the flow.
 
 | Attribute | Description | Type | JSONPath Reference |
 | --- | --- | --- | --- |
@@ -322,7 +337,7 @@ Flow attributes are useful in situations where you don't want to persist the dat
 | Any name you choose | A flow attribute has two parts:+  Destination key: this is any name you choose for the key. However, the **$** and **.** (period) characters are not allowed because they are both used in defining the attribute paths in JSONPath. <br />+  Value: this is can be any value you choose.  | Flow | $.FlowAttributes.*name\_of\_your\_destination\_key* |
 
 ## Loop Attributes
-<a name="w2aac18c54b9c41"></a>
+<a name="w2aac18c54b9c43"></a>
 
 The following table lists the attributes that are available with the Loop block if a LoopName is specified in the Loop block.
 

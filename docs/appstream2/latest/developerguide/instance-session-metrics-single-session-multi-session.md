@@ -7,6 +7,13 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/instanc
 
 The following are instance and session performance metrics for single-session and multi-session fleets.
 
+**Important**
+All metrics are available for the Windows Server operating system. For the remaining set of supported operating systems, only the following metrics are available: `UDPPacketLossRate`, `TCPRetransmissionRate`, `BandwidthInbound`, `CongestionWindow`, `ConnectionDuration`, `MetadataNoToken`, and `MetadataNoTokenRejected`.
+Additionally, some metrics may not be available depending on the software versions used for your images and client. We recommend always using the latest available image and client versions to ensure full metric availability.
+For images, if you are using bundle-based images (Windows only), select the LATEST bundle or a version dated 2025-02-07 or later. If you are using managed image updates, Windows requires version 2025-02-07 or later, and RHEL and Rocky Linux require version 2025-09-05 or later. For a complete list of available managed image versions, refer to the [base image version history](https://docs.aws.amazon.com/appstream2/latest/developerguide/base-image-version-history.html). If you are using custom images with the AppStream 2.0 agent, ensure your agent version is current. For details on agent versions and update options, refer to the [agent software versions](https://docs.aws.amazon.com/appstream2/latest/developerguide/agent-software-versions.html) documentation.
+For clients, the Mac native client requires version 1.2.0 or later, and the Windows native client requires version 1.2.1581 or later. The web client always delivers the latest version automatically, so no action is required.
+If your image or client version does not meet these minimum requirements, some metrics will not be reported. Updating to the latest versions will enable full metric availability.
+
 | Metric | Description | Dimensions | Statistics | Units |
 | --- | --- | --- | --- | --- |
 | CpuUtilizationInstance | The percentage of allocated compute units that are currently in use on the instance. | [Fleet]<br />[UserId]<br />[FleetName, InstanceId]<br />[FleetName, InstanceId, SessionId, UserId] | Average, Minimum, Maximum | Percent |
@@ -31,6 +38,3 @@ The following are instance and session performance metrics for single-session an
 | FramesPerSecond | The number of frames sent per second from the instance to the client. | [Fleet]<br />[UserId]<br />[FleetName, InstanceId, SessionId]<br />[FleetName, InstanceId, SessionId, UserId] | Average, Minimum, Maximum | Count |
 | MetadataNoToken | The number of times the instance metadata service was accessed without a token (IMDSv1). This metric helps identify workloads that have not yet migrated to IMDSv2. | [Fleet]<br />[ImageBuilder]<br />[AppBlockBuilder] | Sum | Count |
 | MetadataNoTokenRejected | The number of times an IMDSv1 request to the instance metadata service was rejected. This metric is available when the instance is configured to require IMDSv2. | [Fleet]<br />[ImageBuilder]<br />[AppBlockBuilder] | Sum | Count |
-
-**Note**
-All metrics are available for the Windows Server operating system. For the remaining set of supported operating systems, only the following metrics are available: `UDPPacketLossRate`, `TCPRetransmissionRate`, `BandwidthInbound`, `CongestionWindow`, `ConnectionDuration`, `MetadataNoToken`, and `MetadataNoTokenRejected`.

@@ -370,6 +370,7 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   RestoreDBClusterToPointInTime  **
   - **SDK client:** docdb
+  - **IAM action:**  [rds:AddRoleToDBCluster](#list_rds-action-AddRoleToDBCluster)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [rds:AddTagsToResource](#list_rds-action-AddTagsToResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
   - **IAM action:**  [rds:CreateDBInstance](#list_rds-action-CreateDBInstance)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [rds:RestoreDBClusterToPointInTime](#list_rds-action-RestoreDBClusterToPointInTime)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
@@ -836,6 +837,7 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   RestoreDBClusterToPointInTime  **
   - **SDK client:** neptune
+  - **IAM action:**  [rds:AddRoleToDBCluster](#list_rds-action-AddRoleToDBCluster)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [rds:AddTagsToResource](#list_rds-action-AddTagsToResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
   - **IAM action:**  [rds:CreateDBInstance](#list_rds-action-CreateDBInstance)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [rds:RestoreDBClusterToPointInTime](#list_rds-action-RestoreDBClusterToPointInTime)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
@@ -1835,6 +1837,7 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   RestoreDBClusterToPointInTime  **
   - **SDK client:** rds
+  - **IAM action:**  [rds:AddRoleToDBCluster](#list_rds-action-AddRoleToDBCluster)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [rds:AddTagsToResource](#list_rds-action-AddTagsToResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
   - **IAM action:**  [rds:CreateDBInstance](#list_rds-action-CreateDBInstance)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [rds:RestoreDBClusterToPointInTime](#list_rds-action-RestoreDBClusterToPointInTime)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write

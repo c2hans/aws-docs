@@ -139,7 +139,7 @@ If a summary is not generated, an error message is displayed on the **Contact de
   },
 ```
 
-Following is a list of error messages that may be displayed on the Contact details or search pages if a summary is not generated. Also listed is the associated reason code that appears in the conversational analytics output file.
+Following is a list of error messages that might be displayed on the Contact details or search pages if a summary is not generated. Also listed is the associated reason code that appears in the conversational analytics output file.
 + **Summary could not be generated due to exceeding quota of concurrent summaries**. ReasonCode: `QUOTA_EXCEEDED`.
 
   If you receive this message, we recommend that you [submit a ticket](https://console.aws.amazon.com/support/home#/case/create?issueType=service-limit-increase&limitType=service-code-connect) to increase the [Concurrent post-contact summary jobs](amazon-connect-service-limits.md#contactlens-quotas) quota.
@@ -151,5 +151,5 @@ Following is a list of error messages that may be displayed on the Contact detai
   This error is returned if the enabled summary is incompatible with other conversational analytics settings, particularly if it's enabled for an unsupported locale.
 + **Summary cannot be provided because it failed to satisfy security and quality guardrails**. ReasonCode: `FAILED_SAFETY_GUIDELINES`.
 
-  This error can occur in Connect Customer for Concurrent post-contact summary jobs. Connect Customer passes contact data to Amazon Bedrock for summary generation. If the contact data contains unredacted Personally Identifiable Information (PII), Amazon Bedrock's safety guidelines are triggered. As a result, Amazon Bedrock refuses to generate the summary to protect sensitive information, leading to the error in Connect Customer.
+  This error can occur in Connect Customer for Concurrent post-contact summary jobs. Connect Customer passes contact data to Amazon Bedrock for summary generation. If the contact data contains unredacted Personally Identifiable Information (PII), the safety guidelines of Amazon Bedrock are triggered. As a result, Amazon Bedrock refuses to generate the summary to protect sensitive information, leading to the error in Connect Customer.
 + Internal system error. ReasonCode: `INTERNAL_ERROR`

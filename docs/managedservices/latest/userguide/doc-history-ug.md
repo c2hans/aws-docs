@@ -14,6 +14,7 @@ The following table describes the important changes in each release of the *AMS 
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [Updated MALZ Trend Micro Deep Security offboarding options](https://docs.aws.amazon.com/managedservices/latest/userguide/offboarding-malz.html) | Removed the option to reconnect offboarded Application accounts to the existing Trend Micro Deep Security Manager (DSM) and maintain licensing in the shared services account. This option is no longer available as part of AMS Advanced deprecation. | August 21, 2026 |
 | [Updated drift remediation FAQs for CloudFormation-ingested stacks](https://docs.aws.amazon.com/managedservices/latest/userguide/ex-rfc-updates-and-dd.html) | Clarified that drift remediation is supported for standard AMS change types (ct-3kinq0u4l33zf) but is not supported for stacks provisioned through the CloudFormation ingest change type (ct-36cn2avfrrj9v). | August 18, 2026 |
 | [Removed deprecated drift remediation change type references](https://docs.aws.amazon.com/managedservices/latest/userguide/ex-rfc-updates-and-dd.html) | Removed references to the deprecated managed automation drift remediation change type (ct-34sxfo53yuzah) from the drift remediation FAQs. | August 18, 2026 |
 | [Updated security enhanced AMI list](https://docs.aws.amazon.com/managedservices/latest/userguide/supported-configs.html) | Added the list of operating systems with security enhanced AMIs directly to the supported configurations page. Removed reference to AWS Artifact Security Guide. | July 29, 2026 |

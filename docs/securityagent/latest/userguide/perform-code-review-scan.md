@@ -2,12 +2,12 @@
 source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/perform-code-review-scan.html
 ---
 
-# Create a code review
+# Create a Continuum code review
 <a name="perform-code-review-scan"></a>
 
 Create code reviews in the AWS Security Agent web application to scan your source code repositories and S3 sources for security vulnerabilities. Code reviews perform comprehensive static analysis across your entire codebase, identifying security issues and providing remediation guidance.
 
-Unlike pull request-based code review which analyzes individual code changes (see [Review code security findings in pull requests](review-code-findings-github.md)), on-demand code reviews scan your full source code to identify security vulnerabilities and validate compliance with your organization’s security requirements.
+Unlike pull request-based code review which analyzes individual code changes (see [Review Continuum code security findings in pull requests](review-code-findings-github.md)), on-demand code reviews scan your full source code to identify security vulnerabilities and validate compliance with your organization’s security requirements.
 
 In this procedure, you’ll create a code review by selecting source code inputs, configuring permissions, and running the review.
 
@@ -20,10 +20,10 @@ Before you begin, ensure you have:
 
 **Tip**
 If you already have GitHub repositories connected to your Agent Space, code review is ready to use — no additional setup is required. Choose **Start in web app** from the **Code review** card on your Agent Space page, or launch the web application directly.
-If you need to connect additional sources or configure S3 buckets, see [Enable code review](enable-code-review-scan.md).
+If you need to connect additional sources or configure S3 buckets, see [Enable Continuum code review](enable-code-review-scan.md).
 
-## Access the code reviews page
-<a name="_access_the_code_reviews_page"></a>
+## Access the Continuum code reviews page
+<a name="_access_the_continuum_code_reviews_page"></a>
 
 Navigate to the code reviews section in the web application.
 
@@ -33,15 +33,15 @@ Navigate to the code reviews section in the web application.
 
 1. You see a list of existing code reviews with their source information, last run status, and findings summary.
 
-## Create a code review
-<a name="_create_a_code_review"></a>
+## Create a Continuum code review
+<a name="_create_a_continuum_code_review"></a>
 
 Set up a new code review by configuring its source code inputs and permissions.
 
 1. On the **Code reviews** page, choose **Create code review**.
 
-### Configure code review details
-<a name="_configure_code_review_details"></a>
+### Configure Continuum code review details
+<a name="_configure_continuum_code_review_details"></a>
 
 Provide a title and select the source code to review.
 
@@ -78,7 +78,7 @@ Select ZIP files from the S3 buckets connected to your Agent Space. Your Agent S
 1. Enter the S3 URI of each ZIP file you want to include in the review. You can add up to 30 S3 sources.
 
 **Note**
-S3 sources must be ZIP files stored in S3 buckets that are connected to your Agent Space. To make additional buckets available, see [Enable code review](enable-code-review-scan.md).
+S3 sources must be ZIP files stored in S3 buckets that are connected to your Agent Space. To make additional buckets available, see [Enable Continuum code review](enable-code-review-scan.md).
 
 ### Configure permissions
 <a name="_configure_permissions"></a>
@@ -95,8 +95,8 @@ The service role must have permissions to access your source code in S3 and writ
 **Note**
 If you don’t select a log group, AWS Security Agent creates a default log group for storing code review logs.
 
-### Configure automatic code remediation
-<a name="_configure_automatic_code_remediation"></a>
+### Configure Continuum automatic code remediation
+<a name="_configure_continuum_automatic_code_remediation"></a>
 
 Enable automatic remediation to have AWS Security Agent generate code fixes for all findings as soon as the review completes.
 
@@ -175,8 +175,8 @@ The following table lists the allowed domains and their purposes.
 **Note**
 If your application requires network access to domains not on this list, the connection will be blocked by the network firewall. Applications that depend on external APIs or services not listed above may not start correctly in the simulated environment.
 
-### Create the code review
-<a name="_create_the_code_review"></a>
+### Create the Continuum code review
+<a name="_create_the_continuum_code_review"></a>
 
 1. Review your configuration to ensure accuracy.
 
@@ -184,8 +184,8 @@ If your application requires network access to domains not on this list, the con
 
 You are redirected to the code review detail page where you can start a review run.
 
-## Run a code review
-<a name="_run_a_code_review"></a>
+## Run a Continuum code review
+<a name="_run_a_continuum_code_review"></a>
 
 After creating a code review, start a run to begin the analysis.
 
@@ -195,8 +195,8 @@ After creating a code review, start a run to begin the analysis.
 
 You can also start a review from the **Code reviews** list page by choosing **Start review** next to the code review you want to run.
 
-## Monitor a code review run
-<a name="_monitor_a_code_review_run"></a>
+## Monitor a Continuum code review run
+<a name="_monitor_a_continuum_code_review_run"></a>
 
 Track the progress of your code review as it executes.
 
@@ -224,7 +224,7 @@ On the run detail page, navigate between tabs to monitor progress:
 +  **Preflight** – View the preflight check progress and status of each validation step.
 +  **Code review logs** – View the tasks AWS Security Agent identified and conducted during the review, with detailed task logs for each step.
 +  **Simulated validation** – When simulated validation is enabled, view the provisioning status, validation tasks for individual findings, and their results.
-+  **Findings** – View security findings after the review completes (see [Review findings from a code review](review-code-scan-findings.md)).
++  **Findings** – View security findings after the review completes (see [Review findings from a Continuum code review](review-code-scan-findings.md)).
 
 ### Run history
 <a name="_run_history"></a>
@@ -239,7 +239,7 @@ Each code review maintains a history of all runs. On the code review detail page
 <a name="_next_steps"></a>
 
 After running a code review:
-+ Review security findings and their remediation guidance (see [Review findings from a code review](review-code-scan-findings.md))
-+ Remediate findings through automated pull requests or manual fixes (see [Remediate code review findings](remediate-code-scan-findings.md))
++ Review security findings and their remediation guidance (see [Review findings from a Continuum code review](review-code-scan-findings.md))
++ Remediate findings through automated pull requests or manual fixes (see [Remediate Continuum code review findings](remediate-code-scan-findings.md))
 + Run additional reviews after implementing fixes to verify remediation
 + Adjust your code review configuration or sources as your codebase evolves

@@ -248,6 +248,8 @@ The following data types are supported:
 +  [ModifyReflectionConfiguration](API_ModifyReflectionConfiguration.md)
 +  [ModifySelfManagedConfiguration](API_ModifySelfManagedConfiguration.md)
 +  [ModifyStrategyConfiguration](API_ModifyStrategyConfiguration.md)
++  [NamespaceKeyEntry](API_NamespaceKeyEntry.md)
++  [NamespaceKeyValidation](API_NamespaceKeyValidation.md)
 +  [NetworkConfiguration](API_NetworkConfiguration.md)
 +  [NumberValidation](API_NumberValidation.md)
 +  [NumericalScaleDefinition](API_NumericalScaleDefinition.md)

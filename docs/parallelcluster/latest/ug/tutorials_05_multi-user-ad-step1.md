@@ -172,7 +172,7 @@ After the script completes, continue to the next step.
 
 1. In the **Amazon EC2 Dashboard**, choose **Launch Instance**.
 
-1. In **Application and OS Images**, select a recent Amazon Linux 2 AMI.
+1. In **Application and OS Images**, select a recent Amazon Linux 2023 AMI.
 
 1. For **Instance type**, choose t2.micro.
 
@@ -228,7 +228,7 @@ After the script completes, continue to the next step.
 
 1. In the **Amazon EC2 Dashboard**, choose **Launch Instance**.
 
-1. In **Application and OS Images**, select a recent Amazon Linux 2 AMI.
+1. In **Application and OS Images**, select a recent Amazon Linux 2023 AMI.
 
 1. For **Instance type**, choose t2.micro.
 

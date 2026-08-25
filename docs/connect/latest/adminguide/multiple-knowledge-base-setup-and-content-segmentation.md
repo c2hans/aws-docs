@@ -14,12 +14,12 @@ You can control how your AI agent queries content at two levels:
 + **Content level:** Use content segmentation to query only specific content within a single knowledge base.
 
 **Topics**
-+ [How to configure your orchestration agent to query multiple knowledge bases](#w2aac28c32c13)
-+ [Content segmentation](#w2aac28c32c15)
++ [How to configure your orchestration agent to query multiple knowledge bases](#w2aac30c34c13)
++ [Content segmentation](#w2aac30c34c15)
 + [Add citation data to your AI agent trace](#add-citation-data-ai-agent-trace)
 
 ## How to configure your orchestration agent to query multiple knowledge bases
-<a name="w2aac28c32c13"></a>
+<a name="w2aac30c34c13"></a>
 
 You can configure multiple Retrieve tools to query different knowledge bases. Depending on your use case, you can either:
 + Query all knowledge bases simultaneously (parallel invocation)
@@ -45,7 +45,7 @@ Both configurations require the same initial setup. Complete these steps first, 
 1. Now select the additional knowledge base that you want to associate beyond the default knowledge base
 ![Choosing the assistant association for the retrieve tool.](http://docs.aws.amazon.com/connect/latest/adminguide/images/ai-agents-picking-assistant-association-in-retrieve-tool2.png)
 
-1. Name each additional Retrieve tool starting with "Retrieve" (e.g., Retrieve2, Retrieve3, RetrieveProducts, RetrievePolicies).
+1. Name each additional Retrieve tool starting with "Retrieve" (for example, Retrieve2, Retrieve3, RetrieveProducts, RetrievePolicies).
 ![Naming the retrieve tool.](http://docs.aws.amazon.com/connect/latest/adminguide/images/ai-agents-naming-the-retrieve-tool.png)
 
 1. Next, configure the tool instructions and examples. The configuration varies depending on your use case. The following sections cover two scenarios: querying all knowledge bases simultaneously and querying knowledge bases selectively.
@@ -104,7 +104,7 @@ Use this configuration when you want the agent to select the appropriate knowled
 #### Configuring tool instructions for each knowledge base
 <a name="ai-agents-conditional-tool-instructions"></a>
 
-Unlike parallel invocation, each Retrieve tool needs distinct instructions that describe when it should be used. This includes the default Retrieve tool—you must update its instructions to differentiate it from the additional Retrieve tools. Use descriptive names that reflect each knowledge base's content (e.g., RetrieveProducts, RetrievePolicies) to help the model select the correct tool.
+Unlike parallel invocation, each Retrieve tool needs distinct instructions that describe when it should be used. This includes the default Retrieve tool—you must update its instructions to differentiate it from the additional Retrieve tools. Use descriptive names that reflect each knowledge base's content (for example, RetrieveProducts, RetrievePolicies) to help the model select the correct tool.
 
 1. For each Retrieve tool, including the default, write specific instructions that describe the content of its associated knowledge base and when to use it.
 ![Retrieve tool instructions.](http://docs.aws.amazon.com/connect/latest/adminguide/images/ai-agents-retrieve-tool-instructions.png)
@@ -150,10 +150,10 @@ The model's ability to select the correct Retrieve tool depends on several facto
 **Add example questions:** Include sample questions in the tool instructions to help the model understand intended use cases.
 **Avoid overlap:** Ensure tool names, descriptions, and examples are mutually exclusive. Overlapping content can cause the model to choose inconsistently.
 **Match terminology to user language:** Use the same words and phrases your users typically use, not just internal or technical terminology.
-Your use case may require additional prompt modifications beyond the examples provided here.
+Your use case might require additional prompt modifications beyond the examples provided here.
 
 ## Content segmentation
-<a name="w2aac28c32c15"></a>
+<a name="w2aac30c34c15"></a>
 
 Content segmentation allows you to tag your knowledge base content and filter retrieval results based on those tags. When your LLM tool queries the knowledge base, it can specify tags to retrieve only content matching those tags, enabling targeted responses from specific content subsets.
 
@@ -161,12 +161,12 @@ Content segmentation allows you to tag your knowledge base content and filter re
 Content segmentation is not available with the Web crawler data source type.
 
 ### Tagging content by data source type
-<a name="w2aac28c32c15b7"></a>
+<a name="w2aac30c34c15b7"></a>
 
 The process for tagging content varies depending on your data source type.
 
 #### S3, Salesforce, SharePoint, Zendesk, and ServiceNow
-<a name="w2aac28c32c15b7b5"></a>
+<a name="w2aac30c34c15b7b5"></a>
 
 After creating your knowledge base, you can apply tags to individual content items for segmentation. Tags are applied at the content level, meaning each piece of content must be tagged individually.
 
@@ -175,9 +175,9 @@ To tag content, use the Amazon Connect [TagResource API](https://docs.aws.amazon
 For examples of tagging content, see the [content segmentation workshop](https://catalog.workshops.aws/workshops/9657f1e6-9357-4d9f-8733-d334ebec0aab/en-US/01-foundation/07-content-segmentation).
 
 ##### Using tags in the Retrieve tool
-<a name="w2aac28c32c15b7b5b9"></a>
+<a name="w2aac30c34c15b7b5b9"></a>
 
-Once your content is tagged, you can filter retrieval results by specifying tag filters in the Retrieve tool configuration.
+After your content is tagged, you can filter retrieval results by specifying tag filters in the Retrieve tool configuration.
 
 1. In the Retrieve tool configuration, navigate to the Override Input Values section.
 
@@ -192,7 +192,7 @@ You can use any filter configuration that starts with `retrievalConfiguration.fi
 ![Completed tag filter configuration.](http://docs.aws.amazon.com/connect/latest/adminguide/images/ai-agents-retrieve-tool-filter-complete.png)
 
 #### Bedrock knowledge base
-<a name="w2aac28c32c15b7b7"></a>
+<a name="w2aac30c34c15b7b7"></a>
 
 For Bedrock knowledge base data sources, content is not stored as Amazon Connect resources, so tagging through the TagResource API is not available. Instead, you must define metadata fields directly on your Bedrock knowledge base data sources.
 
@@ -201,7 +201,7 @@ For S3 data sources, see the Document metadata fields section in the [Amazon Bed
 For other data source types, see [Custom transformation during ingestion](https://docs.aws.amazon.com/bedrock/latest/userguide/kb-custom-transformation.html) in the Amazon Bedrock documentation.
 
 ##### Using metadata fields in the Retrieve tool
-<a name="w2aac28c32c15b7b7b9"></a>
+<a name="w2aac30c34c15b7b7b9"></a>
 
 Bedrock knowledge bases automatically provide built-in metadata fields on all files. You can use these fields to filter retrieval results in the Retrieve tool using the same configuration method shown in the example above.
 

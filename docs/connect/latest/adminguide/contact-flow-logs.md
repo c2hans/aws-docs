@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/contact-flow-l
 By default when you create a new Connect Customer instance, an Amazon CloudWatch log group is created automatically to store the logs for your instance.
 
 **Tip**
-Connect Customer delivers flow logs at least once. They may be delivered again for multiple reasons. For example, a service retry due to an unavoidable failure.
+Connect Customer delivers flow logs at least once. They might be delivered again for multiple reasons. For example, a service retry due to an unavoidable failure.
 
 ## Step 1: Enable logging for your instance
 <a name="enable-contact-flow-logs"></a>

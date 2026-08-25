@@ -48,7 +48,7 @@ Saved searches on Contact search created before the launch of the ability to sea
 When you select multiple values at any hierarchy level, you cannot filter on the next hierarchy level(s).
 + Filter contacts by channel and channel subtype, such as SMS.
 + Filter to search for email contacts using email address (To, From and CC) and email subject. Searching on an email subject is not case sensitive. Also, searching for a subset of words within an email subject provides search results. For example, if you enter **inquiry**, Connect Customer return emails with the subject **Customer Inquiry**.
-+ Filters for [conversation analytics](analyze-conversations.md). You can search for contacts that have conversational analytics enabled. e.g. **Conversational analytics: Voice - Agent interaction** returns contacts where the agent interaction has been analyzed by conversational analytics. You can [search for Contact categories](search-conversations.md#contact-category-search) by specifying the full category name. Choose to search using **Match any** or **Match all** or **Match none**. For example, you can search contacts with both "category A" and "category B", or with either one of the two categories.
++ Filters for [conversation analytics](analyze-conversations.md). You can search for contacts that have conversational analytics enabled. for example, **Conversational analytics: Voice - Agent interaction** returns contacts where the agent interaction has been analyzed by conversational analytics. You can [search for Contact categories](search-conversations.md#contact-category-search) by specifying the full category name. Choose to search using **Match any** or **Match all** or **Match none**. For example, you can search contacts with both "category A" and "category B", or with either one of the two categories.
 
    For the complete list of conversational analytics filters, see [Search conversations analyzed by conversational analytics](search-conversations.md). You can apply these filters only if your organization has enabled conversational analytics.
 
@@ -60,9 +60,9 @@ When you select multiple values at any hierarchy level, you cannot filter on the
   +  **Search contacts by keywords**: This controls access to the keywords search.
   +  **Conversational analytics**: On the **Contact details** page, this displays graphs that summarize conversational analytics.
 + Filters for recordings. Using the **recording** filter, you can filter for contacts with a screen recording (video) or audio recording (voice).
-+ Filter for Active Region. Search for contacts by the AWS region where they were handled. This filter is available for Connect Customer instances using global resiliency, where contacts may be handled in a different AWS region than the region you are logged into.
++ Filter for Active Region. Search for contacts by the AWS Region where they were handled. This filter is available for Connect Customer instances using global resiliency, where contacts might be handled in a different AWS Region than the region you are logged into.
 **Important**
-Some Connect Customer features may be unavailable when accessing cross-region contact data. For complete details, refer to the [Set up Connect Customer Global Resiliency](setup-connect-global-resiliency.md).
+Some Connect Customer features might be unavailable when accessing cross-region contact data. For complete details, refer to the [Set up Connect Customer Global Resiliency](setup-connect-global-resiliency.md).
 + Filters for [Voice ID](voice-id.md). You can search for the Voice ID authentication and fraud detection status of contacts, if your organization has enabled Voice ID. To access this functionality, on your security profile, you need **Analytics and Optimization**, **Voice ID - attributes and search** - **View** permission.
 
   The following image shows the filters available to search Voice ID: **Authentication result**, **Fraud detection result**, **Speaker actions**.
@@ -85,7 +85,7 @@ Before users can search for contacts in Connect Customer, or access detailed con
   For more information about hierarchy groups, see [Organize agents into teams and groups for reporting and access by creating hierarchies](agent-hierarchy.md).
 **Important**
 Deleting a hierarchy level severs the link to existing contacts. This action can not be reversed.
-When you change a user's hierarchy group, it may take a couple of minutes for their contact search results to reflect their new permissions.
+When you change a user's hierarchy group, it might take a couple of minutes for their contact search results to reflect their new permissions.
 
   The following table lists the typical permissions and what contacts can be views on **Contact search** and **Contact details** pages.
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/contact-search.html)
@@ -94,8 +94,8 @@ We do not recommend assigning permissions in any other combination than what is 
 + **Conversational analytics**: On the ** Contact details** page for a contact, you can view graphs that summarize conversational analytics: customer sentiment trend, sentiment, and non-talk time.
 + **Call recordings (redacted) - Access**: If your organization uses conversational analytics, you can assign this permission so agents access only those agent call recordings in which sensitive data has been redacted.
 + **Contact transcripts (redacted) - Access**: If your organization uses conversational analytics, you can assign this permission so agents access only those contact transcripts in which sensitive data has been redacted.
-+ **Call recordings (unredacted) - Access**: Use this permission to manage who can access recordings on the **Contact search** and **Contact details** pages. If desired, you can use **Restrict contact access** to ensure they only have access to detailed information for those contacts handled by their hierarchy group.
-+ **Contact transcripts (unredacted) - Access**: Use this permission to manage who can view unredacted chat and email conversations, and unredacted voice transcripts produced by conversational analytics on the **Contact search** and **Contact details** pages. If desired, you can use **Restrict contact access** to ensure they only have access to detailed information for those contacts handled by their hierarchy group.
++ **Call recordings (unredacted) - Access**: Use this permission to manage who can access recordings on the **Contact search** and **Contact details** pages. If desired, you can use **Restrict contact access** to make sure they only have access to detailed information for those contacts handled by their hierarchy group.
++ **Contact transcripts (unredacted) - Access**: Use this permission to manage who can view unredacted chat and email conversations, and unredacted voice transcripts produced by conversational analytics on the **Contact search** and **Contact details** pages. If desired, you can use **Restrict contact access** to make sure they only have access to detailed information for those contacts handled by their hierarchy group.
 + **Evaluation forms - perform evaluations**: Allows users to [search for](search-evaluations.md) evaluations by evaluation form, score, last updated date/range, evaluator, and status.
 + **Voice ID - attributes and search**: If your organization uses Voice ID, users with this permission can search for and view Voice ID results in the **Contact detail** page.
 + **Users - View** permission: You must have this permission to use the **Agent** filter on the **Contact search** page.

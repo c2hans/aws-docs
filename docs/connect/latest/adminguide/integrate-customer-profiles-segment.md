@@ -24,7 +24,7 @@ To provide periodic updates to Connect Customer Customer Profiles, you can integ
 ![The Select data source page.](http://docs.aws.amazon.com/connect/latest/adminguide/images/customer-profiles-cp-segment-source.png)
 
 1. On the **Establish connection** page, choose one of the following:
-   + **Use existing connection**: This allows you to reuse existing Amazon EventBridge resources that you may have created in your AWS account.
+   + **Use existing connection**: This allows you to reuse existing Amazon EventBridge resources that you might have created in your AWS account.
    + **Create new connection**: Enter the information required by the external application.
 ![The Establish connection page.](http://docs.aws.amazon.com/connect/latest/adminguide/images/customer-profiles-enable-segment-establish-connection.png)
      + **Connection name**: Provide a name for your connection. The connection name is referenced by integrations that use this connection.
@@ -128,4 +128,4 @@ After your connection is established, if it stops working, delete the integratio
 
 If an object fails to be sent, choose **Flow details** to learn more about what's gone wrong.
 
-You may need to delete the configuration and re-connect to the external application.
+You might need to delete the configuration and re-connect to the external application.

@@ -22,7 +22,7 @@ This is a legacy parameter. The namespaces associated with the memory strategy.
 Type: Array of strings
 Array Members: Fixed number of 1 item.
 Length Constraints: Minimum length of 1. Maximum length of 512.
-Pattern: `[a-zA-Z0-9\-_\/]*(\{(actorId|sessionId|memoryStrategyId)\}[a-zA-Z0-9\-_\/]*)*`
+Pattern: `[a-zA-Z0-9\-_\/]*(\{[a-zA-Z][a-zA-Z0-9]*\}[a-zA-Z0-9\-_\/]*)*`
 Required: Yes
 
  ** namespaceTemplates **   <a name="bedrockagentcorecontrol-Type-MemoryStrategy-namespaceTemplates"></a>
@@ -30,7 +30,7 @@ The namespaceTemplates associated with the memory strategy.
 Type: Array of strings
 Array Members: Fixed number of 1 item.
 Length Constraints: Minimum length of 1. Maximum length of 512.
-Pattern: `[a-zA-Z0-9\-_\/]*(\{(actorId|sessionId|memoryStrategyId)\}[a-zA-Z0-9\-_\/]*)*`
+Pattern: `[a-zA-Z0-9\-_\/]*(\{[a-zA-Z][a-zA-Z0-9]*\}[a-zA-Z0-9\-_\/]*)*`
 Required: Yes
 
  ** strategyId **   <a name="bedrockagentcorecontrol-Type-MemoryStrategy-strategyId"></a>

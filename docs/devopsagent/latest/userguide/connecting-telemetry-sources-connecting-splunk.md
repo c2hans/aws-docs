@@ -60,6 +60,8 @@ Establish connection to your Splunk remote MCP endpoint with account access cred
 + **Token Name** - The name of the bearer token for authentication: `my-splunk-token`
 + **Token Value** The bearer token value for authentication
 
+Each registration connects to one Splunk deployment. To connect additional Splunk deployments, repeat the steps in Step 1: Connect. Give each registration its own **Server Name**.
+
 ### Step 2: Enable
 <a name="step-2-enable"></a>
 
@@ -76,7 +78,7 @@ Activate Splunk in a specific Agent space and configure appropriate scoping
 
 1. Press Add
 
-1. Select Splunk
+1. Select the Splunk registration you want to enable.
 
 1. Next
 
@@ -85,6 +87,8 @@ Activate Splunk in a specific Agent space and configure appropriate scoping
 1. Copy the Webhook URL and API Key
 
 **Note:** AWS DevOps Agent shows the webhook API key one time. If you lose it, rotate the webhook to generate a new key. The webhook URL does not change. For instructions on managing webhook credentials, see [Managing webhook credentials](configuring-integrations-and-knowledge-invoking-devops-agent-through-webhook.md).
+
+You can associate more than one Splunk registration with a single Agent Space. To add another registration, repeat the steps in this procedure.
 
 ### Step 3: Configure webhooks
 <a name="step-3-configure-webhooks"></a>

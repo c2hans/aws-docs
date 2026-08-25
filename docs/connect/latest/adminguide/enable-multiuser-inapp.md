@@ -18,7 +18,7 @@ Connect Customer supports adding additional users to join the in-app, web, and v
 
 1. When [CreateParticipant](https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateParticipant.html) completes successfully, it returns a [participant token](https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateParticipant.html#connect-CreateParticipant-response-ParticipantCredentials). This token can be used in a request to [CreateParticipantConnection](https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-participant_CreateParticipantConnection.html) with `Type` set to `WEBRTC_CONNECTION`. The response includes [ConnectionData](https://docs.aws.amazon.com/connect/latest/APIReference/API_ConnectionData.html#connect-Type-ConnectionData-Meeting) which can be used to join the meeting using the [Amazon Chime SDK Client Libraries](https://docs.aws.amazon.com/chime-sdk/latest/dg/mtgs-sdk-client-lib.html) for the additional participant created. Follow the [integration instructions](config-com-widget2.md) to allow your application end-user to join the meeting.
 **Note**
-[CreateParticipant](https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateParticipant.html) returns a Bad Request error if the agent is not yet connected to the contact. For business applications where users may attempt to join before the agent is connected, see [Handling concurrent user joins](#handling-concurrent-joins).
+[CreateParticipant](https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateParticipant.html) returns a Bad Request error if the agent is not yet connected to the contact. For business applications where users might attempt to join before the agent is connected, see [Handling concurrent user joins](#handling-concurrent-joins).
 
 1. The additional customers can connect at any time after [CreateParticipantConnection](https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-participant_CreateParticipantConnection.html) returns. After participants join, [all additional voice and recording behavior is similar to the multi party capability](multi-party-calls.md). The new participants can enable their video and screen-share, if their capabilities have been enabled in the [CreateParticipant](https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateParticipant.html) request.
 **Note**
@@ -46,7 +46,7 @@ A total of only 6 participants (customers and agents) can join an active call at
 ## Handling concurrent user joins
 <a name="handling-concurrent-joins"></a>
 
-Businesses may want to create applications where users can join in any order, at any time. For example, your application may email a link with an external appointment ID to multiple users that should be used to join a call at a scheduled time. To achieve this behavior, business backends must ensure that:
+Businesses might want to create applications where users can join in any order, at any time. For example, your application might email a link with an external appointment ID to multiple users that should be used to join a call at a scheduled time. To achieve this behavior, business backends must make sure that:
 + The first user that joins triggers a StartWebRTCContact request.
 + All additional users use CreateParticipant and CreateParticipantConnection but **only after the first user has connected to an agent**.
 

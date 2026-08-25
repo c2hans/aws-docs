@@ -11,6 +11,6 @@ We recommend that members periodically take the following actions:
   For more information about how to view recent queries, see [Viewing recent queries](https://docs.aws.amazon.com/clean-rooms/latest/userguide/query-data.html#view-queries-console).
 
   For more information about how to view recent jobs, see [Viewing recent jobs](view-recent-jobs.md).
-+ To verify that the configured table columns match what was agreed upon for the collaboration, review the configured table columns that are used in collaboration members’ analysis rules and in queries.
++ To verify that the configured table columns match what was agreed upon for the collaboration, review the configured table columns that are used in collaboration members' analysis rules and in queries.
 
   For more information about how to view the configured columns, see [Viewing tables and analysis rules](https://docs.aws.amazon.com/clean-rooms/latest/userguide/manage-configured-tables.html#view-tables).

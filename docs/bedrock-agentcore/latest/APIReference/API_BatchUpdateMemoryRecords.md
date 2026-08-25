@@ -24,6 +24,7 @@ Content-type: application/json
             "{{string}}" : { ... }
          },
          "namespaces": [ "{{string}}" ],
+         "sourceNamespaces": [ "{{string}}" ],
          "timestamp": {{number}}
       }
    ]

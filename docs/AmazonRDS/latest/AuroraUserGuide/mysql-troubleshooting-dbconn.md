@@ -119,7 +119,7 @@ To troubleshoot connectivity issues in Aurora MySQL using Performance Insights, 
 + Threads\_connected
 + Threads\_created
 + Threads\_running
-These metrics can help you to identify connection bottlenecks, detect network or authentication problems, optimize connection pooling, and ensure efficient thread management. For more information, see [Performance Insights counters for Aurora MySQL](USER_PerfInsights_Counters.md#USER_PerfInsights_Counters.Aurora_MySQL).
+These metrics can help you to identify connection bottlenecks, detect network or authentication problems, optimize connection pooling, and ensure efficient thread management. For more information, see [Detailed Database Metrics for Aurora MySQL](USER_PerfInsights_Counters.md#USER_PerfInsights_Counters.Aurora_MySQL).
 
 **Performance Insights features**
 + **Database Load** – Visualize the database load over time and correlate it with connectivity issues or performance degradation.

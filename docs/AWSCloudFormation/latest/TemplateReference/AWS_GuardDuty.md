@@ -8,6 +8,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 <a name="AWS_GuardDuty"></a>
 
 **Resource types**
++ [AWS::GuardDuty::CustomDetectionRuleAssociation](aws-resource-guardduty-customdetectionruleassociation.md)
 + [AWS::GuardDuty::Detector](aws-resource-guardduty-detector.md)
 + [AWS::GuardDuty::Filter](aws-resource-guardduty-filter.md)
 + [AWS::GuardDuty::IPSet](aws-resource-guardduty-ipset.md)

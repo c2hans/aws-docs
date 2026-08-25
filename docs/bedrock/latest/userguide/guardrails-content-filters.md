@@ -22,6 +22,9 @@ Amazon Bedrock Guardrails supports content filters to help detect and filter har
 **Misconduct**
 + Describes input prompts and model responses that seeks or provides information about engaging in criminal activity, or harming, defrauding, or taking advantage of a person, group or institution.
 
+**Note**
+Content filters evaluate text in user messages, system prompts, and model text responses. In tool use (function calling) workloads, they do not evaluate tool results (`toolResult`), tool definitions (`toolSpec`), or model-generated tool call arguments (`toolUse.input`).
+
 ## Configure content filters for your guardrail
 <a name="guardrails-filters-text-configure"></a>
 

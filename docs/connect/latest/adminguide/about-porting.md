@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/about-porting.
 # How to port your numbers to Connect Customer
 <a name="about-porting"></a>
 
-The following steps are for a typical porting request. This process requires timely communication to make progress. If you take longer than 30 days to respond to requests for information, your porting request may be cancelled, rescheduled, or restarted from the beginning.
+The following steps are for a typical porting request. This process requires timely communication to make progress. If you take longer than 30 days to respond to requests for information, your porting request might be cancelled, rescheduled, or restarted from the beginning.
 
 **Documentation requirements**: For a list of country-specific requirements for porting numbers, see [Region requirements for ordering and porting phone numbers in Connect Customer](phone-number-requirements.md).
 
@@ -121,7 +121,7 @@ After you have submitted all required documentation, the Connect Customer team s
 + After the carriers successfully validate the LOA, they will either confirm your requested date or provide an available date for the actual porting. This is known as the "mutually agreed date and time."
 + You should validate that the "mutually agreed date and time" is correct.
 **Important**
-If your LOA contains multiple phone numbers, some numbers may be given different "mutually agreed dates." Check the status and dates/times for each one.
+If your LOA contains multiple phone numbers, some numbers might be given different "mutually agreed dates." Check the status and dates/times for each one.
 
 Most carriers require that portings are completed during normal business hours. For country-specific business hours, see [Region requirements for ordering and porting phone numbers in Connect Customer](phone-number-requirements.md).
 
@@ -138,7 +138,7 @@ It is expected that you or your partner associate your phone number to the flow.
 If you want AWS Support to do this on your behalf, note this in your support ticket. You must specify the flow name/ARN to be matched to each phone number.
 You or your partner must validate that the correct flow has been associated with each phone number.
 
-1. [Submit a service quota request](amazon-connect-service-limits.md) at least five days in advance of the mutually agreed date for any changes to your service quotas required to support your use case. For example, you may need to increase the number of concurrent calls per instance, or enable countries for outbound calling.
+1. [Submit a service quota request](amazon-connect-service-limits.md) at least five days in advance of the mutually agreed date for any changes to your service quotas required to support your use case. For example, you might need to increase the number of concurrent calls per instance, or enable countries for outbound calling.
 
 ## Step 6: Checklist of activities on your porting date
 <a name="step6-porting"></a>

@@ -31,6 +31,8 @@ Restoring an Amazon RDS database requires specifying multiple restore options. F
 1. In the **Maintenance** pane, accept the default or specify the option for **Auto minor version upgrade**.
 
 1. In the **Restore role** pane, choose the IAM role that AWS Backup will assume for this restore.
+**Note**
+If role manager is enabled in your account, AWS Backup selects the default service role for you, and a **Customize** option is available. For more information, see [IAM role creation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html) in the *IAM User Guide*.
 
 1. Choose **Restore backup**.
 

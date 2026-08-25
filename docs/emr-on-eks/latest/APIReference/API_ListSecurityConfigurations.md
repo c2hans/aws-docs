@@ -55,6 +55,17 @@ Content-type: application/json
          "id": "string",
          "name": "string",
          "securityConfigurationData": {
+            "authenticationConfiguration": {
+               "iamConfiguration": {
+                  "systemRole": "string"
+               },
+               "identityCenterConfiguration": {
+                  "emrIdentityCenterApplicationARN": "string",
+                  "enableIdentityCenter": boolean,
+                  "identityCenterApplicationAssignmentRequired": boolean,
+                  "identityCenterInstanceARN": "string"
+               }
+            },
             "authorizationConfiguration": {
                "encryptionConfiguration": {
                   "inTransitEncryptionConfiguration": {

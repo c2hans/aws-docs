@@ -59,6 +59,15 @@ Content-type: application/json
       "managedByResourceArn": "string",
       "memoryExecutionRoleArn": "string",
       "name": "string",
+      "namespaceKeys": [
+         {
+            "key": "string",
+            "validation": {
+               "allowedValues": [ "string" ],
+               "regexPattern": "string"
+            }
+         }
+      ],
       "status": "string",
       "strategies": [
          {

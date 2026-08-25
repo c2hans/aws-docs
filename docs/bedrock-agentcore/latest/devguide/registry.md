@@ -21,6 +21,7 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/regist
 + [Curating the registry](registry-curating.md)
 + [Discovering the registry](registry-searching.md)
 + [Notifications (Amazon EventBridge)](registry-eventbridge.md)
++ [Sharing a registry across accounts with AWS RAM](registry-cross-account-sharing.md)
 + [Log Registry API calls with AWS CloudTrail](registry-cloudtrail.md)
 + [IAM Permissions](registry-iam-permissions.md)
 + [Using service-linked roles for AWS Agent Registry](using-service-linked-role-agent-registry.md)

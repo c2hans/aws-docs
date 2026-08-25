@@ -318,11 +318,7 @@ If you see errors like the one shown in the following example, a home directory 
 $ ssh AD_USER@$HEAD_NODE_IP
 /opt/parallelcluster/scripts/generate_ssh_key.sh failed: exit code 1
 
-       __|  __|_  )
-       _|  (     /   Amazon Linux 2 AMI
-      ___|\___|___|
-
-https://aws.amazon.com/amazon-linux-2/
+{{Operating system login banner}}
 Could not chdir to home directory /home/PclusterUser85: No such file or directory
 ```
 

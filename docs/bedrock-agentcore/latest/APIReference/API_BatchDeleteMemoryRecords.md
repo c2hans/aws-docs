@@ -17,7 +17,8 @@ Content-type: application/json
 {
    "records": [
       {
-         "memoryRecordId": "{{string}}"
+         "memoryRecordId": "{{string}}",
+         "namespace": "{{string}}"
       }
    ]
 }

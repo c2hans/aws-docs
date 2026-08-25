@@ -59,6 +59,8 @@ When restoring a backup, you can't change the type of Active Directory on the fi
 1. (Optional) In the **Backup and maintenance** section, provide the information to set your backup preferences.
 
 1. In the **Restore role** section, choose the IAM role that AWS Backup will use to create and manage your backups on your behalf. We recommend that you choose the **Default role**. If there is no default role, one is created for you with the correct permissions. You can also provide your own IAM role.
+**Note**
+If role manager is enabled in your account, AWS Backup selects the default service role for you, and a **Customize** option is available. For more information, see [IAM role creation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html) in the *IAM User Guide*.
 
 1. Verify all your entries, and choose **Restore Backup**.
 
@@ -103,6 +105,8 @@ For Intelligent Tiering file systems, storage capacity is elastic and cannot be 
 1. (Optional) In the **Backup and maintenance** section, provide the information to set your backup preferences.
 
 1. In the **Restore role** section, choose the IAM role that AWS Backup will use to create and manage your backups on your behalf. We recommend that you choose the **Default role**. If there is no default role, one is created for you with the correct permissions. You can also provide your IAM role.
+**Note**
+If role manager is enabled in your account, AWS Backup selects the default service role for you, and a **Customize** option is available. For more information, see [IAM role creation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html) in the *IAM User Guide*.
 
 1. Verify all your entries, and choose **Restore Backup**.
 
@@ -186,6 +190,8 @@ For Intelligent Tiering file systems, storage capacity is elastic and cannot be 
 1. In the **Subnet** dropdown menu, choose the subnet in which your file system’s network interface resides.
 
 1. In the **Restore role** section, choose the IAM role that AWS Backup will use to create and manage your backups on your behalf. We recommend that you choose the **Default role**. If there is no default role, one is created for you with the correct permissions. You can also choose an IAM role.
+**Note**
+If role manager is enabled in your account, AWS Backup selects the default service role for you, and a **Customize** option is available. For more information, see [IAM role creation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html) in the *IAM User Guide*.
 
 1. Verify all your entries, and choose **Restore Backup**.
 

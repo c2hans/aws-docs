@@ -5,9 +5,9 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/ts-agent-attac
 # Internal firewall or missing CORS policy prevents access to chat, email, task, or case attachments
 <a name="ts-agent-attachments"></a>
 
-This topic is for developers who need to investigate issues that may occur when using attachments with the chat, email, or task channels in Connect Customer, or when using attachments to upload files to cases.
+This topic is for developers who need to investigate issues that might occur when using attachments with the chat, email, or task channels in Connect Customer, or when using attachments to upload files to cases.
 
-The following issues may cause attachments to not display for your agents using Connect Customer chat, email, or tasks, or Connect Customer Cases.
+The following issues might cause attachments to not display for your agents using Connect Customer chat, email, or tasks, or Connect Customer Cases.
 
 ## Configure a CORS policy on your attachments bucket
 <a name="cors-policy-not-configured"></a>
@@ -17,7 +17,7 @@ A common reason for attachments not appearing in chats, emails, or tasks is that
 ## Internal firewall settings are preventing access
 <a name="update-firewall-settings"></a>
 
- Check that your firewall isn't preventing agents from accessing the files in your Amazon S3 bucket. You may need to add the Amazon S3 bucket where your files are stored to your domain allowlist. For more information, see [Set up your network to use the Connect Customer Contact Control Panel (CCP)](ccp-networking.md).
+ Check that your firewall isn't preventing agents from accessing the files in your Amazon S3 bucket. You might need to add the Amazon S3 bucket where your files are stored to your domain allowlist. For more information, see [Set up your network to use the Connect Customer Contact Control Panel (CCP)](ccp-networking.md).
 
 ## Attachments are too large, too many, or don't meet file type requirements
 <a name="check-attachment-size"></a>

@@ -7,6 +7,10 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/transform-vmw
 
 The following release notes cover the latest changes to [Migrations (including VMware)](transform-app-vmware.md). For a list of changes across the full AWS Transform service, see the [changelog](https://docs.aws.amazon.com/transform/latest/userguide/change-log.html). For supported AWS Transform regions, see [Supported Regions](https://docs.aws.amazon.com/transform/latest/userguide/regions.html). For supported target regions, see the [account connector setup page](https://docs.aws.amazon.com/transform/latest/userguide/transform-vmware-connect-target-account.html#transform-vmware-cta-supported-regions).
 
+## August 2026
+<a name="transform-vmware-release-notes-august-2026"></a>
++ AWS Transform for migrations now identifies unused inbound firewall rules migrated from your on-premises environment and suggests removing them as part of guided network recommendations. This helps you avoid carrying forward security exposure, such as open inbound access, that no longer serves a purpose. Removal is limited to unused ingress rules. [Learn more about guided network recommendations](https://docs.aws.amazon.com/transform/latest/userguide/transform-vmware-migrate-network.html#transform-vmware-guided-recommendations).
+
 ## July 2026
 <a name="transform-vmware-release-notes-july-2026"></a>
 + AWS Transform for migrations now supports migrating virtual and bare metal server environments from virtually any source, including VMware, Hyper-V, and other platforms. Migration capabilities, including discovery, migration planning, landing zone creation, network migration, and server rehost, are available regardless of your source infrastructure. The web application workflow has been renamed from "VMware Migrations" to "Migrations (including VMware)". [Learn more about migrations](https://docs.aws.amazon.com/transform/latest/userguide/transform-app-vmware.html).

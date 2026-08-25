@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/paymen
 ## Role summary
 <a name="payments-iam-role-summary"></a>
 
-AgentCore payments uses a four-role IAM model that separates administrative, management, agent execution, and service operations. Set up IAM permissions based on the persona that matches your role.
+AgentCore payments uses a five-role IAM model that separates administrative, management, agent execution, service operations, and AWS Marketplace subscription (Coinbase only). Set up IAM permissions based on the persona that matches your role.
 
 | Role | Purpose |
 | --- | --- |
@@ -16,6 +16,7 @@ AgentCore payments uses a four-role IAM model that separates administrative, man
 | Agent developer (ManagementRole) | Manages payment instruments and sessions, cannot execute payments |
 | Payment execution (ProcessPaymentRole) | Executes payment transactions on behalf of agents |
 | Service role (ResourceRetrievalRole) | Assumed by AgentCore payments at runtime to retrieve credentials |
+| Marketplace subscription (`AWSMarketplaceManageSubscriptions` on the Administrator) | For Coinbase, subscribes the account to the **Coinbase Wallets for AgentCore Payments** listing in AWS Marketplace. This is an AWS managed policy attached to the Administrator identity, not a separate assumable role. |
 
 **Tip**
 You can automate the steps on this page with the AgentCore Payments skill in the AWS agent toolkit. The skill is part of the **aws-agents** plugin and lets an AI coding agent create your Payment Manager, connector, credential provider, payment instrument, and session using the `agentcore` CLI, and add a process payment tool to your agent. For details, see the [quickstart](payments-getting-started.md) and the [AWS agent toolkit on GitHub](https://github.com/aws/agent-toolkit-for-aws/tree/main).
@@ -23,7 +24,7 @@ You can automate the steps on this page with the AgentCore Payments skill in the
 ## Why role separation matters
 <a name="payments-iam-why-separation"></a>
 
-Separating payment management from payment execution prevents a single compromised identity from both creating sessions with unlimited budgets and executing payments against those sessions. The explicit `Deny` on `ProcessPayment` in the management role and the narrow scope of the execution role enforce this boundary. This also ensures that audit trails clearly distinguish who configured payment resources from who executed transactions.
+Separating payment management from payment execution prevents a single compromised identity from both creating sessions with unlimited budgets and executing payments against those sessions. The explicit `Deny` on `ProcessPayment` in the management role enforces this boundary. This also ensures that audit trails clearly distinguish who configured payment resources from who executed transactions.
 
 ## Administrator permissions (ControlPlaneRole)
 <a name="payments-iam-admin"></a>
@@ -135,8 +136,7 @@ For deterministic/human-in-the-loop (HITL) code that manages payment instruments
                 "bedrock-agentcore:DeletePaymentSession"
             ],
             "Resource": [
-                "arn:aws:bedrock-agentcore:*:111122223333:payment-manager/*/instrument/*",
-                "arn:aws:bedrock-agentcore:*:111122223333:payment-manager/*/session/*"
+                "arn:aws:bedrock-agentcore:*:111122223333:payment-manager/*"
             ]
         },
         {
@@ -166,7 +166,7 @@ For deterministic code paths that execute payment transactions on behalf of agen
             "Effect": "Allow",
             "Action": "bedrock-agentcore:ProcessPayment",
             "Resource": [
-                "arn:aws:bedrock-agentcore:*:111122223333:payment-manager/*/session/*"
+                "arn:aws:bedrock-agentcore:*:111122223333:payment-manager/*"
             ]
         },
         {
@@ -178,8 +178,7 @@ For deterministic code paths that execute payment transactions on behalf of agen
                 "bedrock-agentcore:GetPaymentSession"
             ],
             "Resource": [
-                "arn:aws:bedrock-agentcore:*:111122223333:payment-manager/*/instrument/*",
-                "arn:aws:bedrock-agentcore:*:111122223333:payment-manager/*/session/*"
+                "arn:aws:bedrock-agentcore:*:111122223333:payment-manager/*"
             ]
         }
     ]

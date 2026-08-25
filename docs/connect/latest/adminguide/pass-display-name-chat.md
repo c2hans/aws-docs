@@ -11,9 +11,9 @@ The following images show the customer's display name in their chat experience, 
 
 ![The customers name in their chat experience, the customer name in the agents CCP.](http://docs.aws.amazon.com/connect/latest/adminguide/images/chatwidget-displayname.png)
 
-1. How the customer display name may appear to the customer using the chat user interface.
+1. How the customer display name might appear to the customer using the chat user interface.
 
-1. How the customer display name may appear to the agent using the CCP.
+1. How the customer display name might appear to the agent using the CCP.
 
 ## How to pass a customer display name in the communications widget
 <a name="setup-display-name"></a>

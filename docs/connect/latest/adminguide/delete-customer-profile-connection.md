@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/delete-custome
 <a name="delete-customer-profile-connection"></a>
 
 **Note**
-Deleting mappings will only delete objects and data associated with that specific mapping. If there are multiple objects associated with a profile, then deleting a specific mapping may not clear the profile data. If you want to delete specific data, then you would delete the mapping, but your profiles may still exist if they contain data from other mappings. This could result in additional charges for the existing profiles. You can delete a domain and all data from Customer Profiles, including all profiles, by using the [Connect Customer console](delete-customer-profiles-domain.md) or the [DeleteDomain](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_DeleteDomain.html) API.
+Deleting mappings will only delete objects and data associated with that specific mapping. If there are multiple objects associated with a profile, then deleting a specific mapping might not clear the profile data. If you want to delete specific data, then you would delete the mapping, but your profiles might still exist if they contain data from other mappings. This could result in additional charges for the existing profiles. You can delete a domain and all data from Customer Profiles, including all profiles, by using the [Connect Customer console](delete-customer-profiles-domain.md) or the [DeleteDomain](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_DeleteDomain.html) API.
 
 **Console method**
 + If at any time you want to stop the ingestion of customer profile data, choose the integration/mapping and then choose **Delete**.

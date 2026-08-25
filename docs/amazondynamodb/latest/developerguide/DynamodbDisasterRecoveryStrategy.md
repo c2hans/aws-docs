@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Dyn
 # Choosing your disaster recovery strategy for Amazon DynamoDB workloads
 <a name="DynamodbDisasterRecoveryStrategy"></a>
 
-Before selecting a DynamoDB DR strategy, you must define your business recovery requirements. This initial analysis prevents costly over-engineering while helping to ensure you meet critical business continuity needs. The optimal approach balances four key factors: recovery speed, data loss tolerance, implementation complexity, and operational costs.
+Before selecting a DynamoDB DR strategy, you must define your business recovery requirements. This initial analysis prevents costly over-engineering while helping to make sure you meet critical business continuity needs. The optimal approach balances four key factors: recovery speed, data loss tolerance, implementation complexity, and operational costs.
 
 Let's understand two key metrics that shape your DR strategy:
 + **Recovery time objective (RTO)** – This is the maximum acceptable delay between the interruption of service and its restoration. RTO answers the question, How long can we afford to be down? This can range from zero (requiring continuous availability) to several hours, depending on business requirements.

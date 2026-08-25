@@ -16,7 +16,7 @@ This data type is a UNION, so only one of the following members can be specified
  ** sessionSpans **   <a name="BedrockAgentCore-Type-EvaluationInput-sessionSpans"></a>
  The collection of spans representing agent execution traces within a session. Each span contains detailed information about tool calls, model interactions, and other agent activities that can be evaluated for quality and performance.
 Type: Array of JSON values
-Array Members: Minimum number of 1 item. Maximum number of 1000 items.
+Array Members: Minimum number of 1 item. Maximum number of 20000 items.
 Required: No
 
 ## See Also

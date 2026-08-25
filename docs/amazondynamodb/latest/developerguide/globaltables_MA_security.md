@@ -24,7 +24,7 @@ Each replica must give the above permissions to all other replicas and to itself
 ## Service-linked roles for multi-account global tables
 <a name="globaltables_MA_service_linked_roles"></a>
 
-DynamoDB multi-account global tables replicate settings across all replicas so that each replica is set up identically with consistent throughput and provides a seamless fail-over experience. Replication of settings is controlled through the `ReplicateSettings` permission on the service principal, but we also rely on service-linked roles (SLRs) to manage certain cross-account cross-Region replication and auto-scaling capabilities. These roles are set up only once per AWS account. Once created, the same roles serve all global tables in your account. For more information about service-linked roles, see [Using service-linked roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create-service-linked-role.html) in the IAM User Guide.
+DynamoDB multi-account global tables replicate settings across all replicas so that each replica is set up identically with consistent throughput and provides a seamless fail-over experience. Replication of settings is controlled through the `ReplicateSettings` permission on the service principal, but DynamoDB also relies on service-linked roles (SLRs) to manage certain cross-account cross-Region replication and auto-scaling capabilities. These roles are set up only once per AWS account. Once created, the same roles serve all global tables in your account. For more information about service-linked roles, see [Using service-linked roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create-service-linked-role.html) in the IAM User Guide.
 
 ### Settings management service-linked role
 <a name="globaltables_MA_settings_management_slr"></a>
@@ -54,7 +54,7 @@ The following sections describe the required permissions for different global ta
 **Note**
 All permissions described must be applied to the specific table resource ARN in the affected Region(s). The table resource ARN follows the format `arn:aws:dynamodb:region:account-id:table/table-name`, where you need to specify your actual Region, account ID, and table name values.
 
-The following are the step-by-step topics we cover in the sections below:
+The following sections cover these step-by-step topics:
 + Creating multi-account global tables and adding replicas
 + Updating a multi-account global table
 + Deleting global tables and removing replicas
@@ -166,7 +166,7 @@ To establish this setup:
 ##### Example IAM policies for a 3-replica setup
 <a name="globaltables_MA_3replica_example"></a>
 
-In this setup, we have 3 replicas ReplicaA, ReplicaB, and ReplicaC in Account A, Account B, and Account C, respectively. Replica A is the first replica, which starts as a regional table, and then ReplicaB and ReplicaC are added to it.
+In this setup, there are 3 replicas ReplicaA, ReplicaB, and ReplicaC in Account A, Account B, and Account C, respectively. Replica A is the first replica, which starts as a regional table, and then ReplicaB and ReplicaC are added to it.
 + The administrator of Account A must first attach the resource-based policy to ReplicaA allowing replication with all members, and allowing the IAM principals of Account B and Account C to add replicas.
 
 ------

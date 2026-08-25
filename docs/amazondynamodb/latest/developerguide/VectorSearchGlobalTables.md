@@ -14,7 +14,7 @@ You can use vector indexes with every global table configuration:
 
 Multi-account global tables always use MREC because MRSC supports same-account configurations only. This is a global tables constraint, not a vector index limitation.
 
-The following example adds a replica in the `us-west-2` Region to a table named `Products` that already has a vector index. The table must use on-demand capacity mode, which is required for both vector indexes and this example.
+The following example adds a replica in the `us-west-2` Region to a table named `Products` that already has a vector index. The table must use on-demand capacity mode, which vector indexes require.
 
 ```
 aws dynamodb update-table \

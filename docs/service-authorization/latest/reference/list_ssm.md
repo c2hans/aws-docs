@@ -1669,7 +1669,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
 - **   [RegisterManagedInstance](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-setting-up-messageAPIs.html)  **
   - **Description:** Grants permission to register a Systems Manager Agent
   - **Resource types (\*required):**
-  - **Condition keys:** [aws:RequestTag/${TagKey}](#list_ssm-aws_RequestTag___TagKey_)<br />[aws:TagKeys](#list_ssm-aws_TagKeys)
+  - **Condition keys:** [aws:RequestTag/${TagKey}](#list_ssm-aws_RequestTag___TagKey_)<br />[aws:TagKeys](#list_ssm-aws_TagKeys)<br />[ssm:NodeAccountId](#list_ssm-ssm_NodeAccountId)<br />[ssm:NodeOrgId](#list_ssm-ssm_NodeOrgId)
   - **Access level:** Write
 
 - **   [RegisterPatchBaselineForPatchGroup](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_RegisterPatchBaselineForPatchGroup.html)  **
@@ -1924,11 +1924,23 @@ The following actions are defined by AWS Systems Manager but are not directly in
   - **Condition keys:**
   - **Access level:** Read
 
+- **   [RequestManagedInstanceRoleToken](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-setting-up-messageAPIs.html)  **
+  - **Description:** Grants permission to SSM Agent to retrieve temporary credentials to access the managed node (internal Systems Manager call)
+  - **Resource types (\*required):** [instance](#list_ssm-resource-instance) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ssm-aws_ResourceTag___TagKey_)<br />[ssm:NodeAccountId](#list_ssm-ssm_NodeAccountId)<br />[ssm:NodeOrgId](#list_ssm-ssm_NodeOrgId)<br />[ssm:resourceTag/${TagKey}](#list_ssm-ssm_resourceTag___TagKey_)
+  - **Resource types (\*required):** [managed-instance](#list_ssm-resource-managed-instance) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ssm-aws_ResourceTag___TagKey_)<br />[ssm:NodeAccountId](#list_ssm-ssm_NodeAccountId)<br />[ssm:NodeOrgId](#list_ssm-ssm_NodeOrgId)<br />[ssm:resourceTag/tag-key](#list_ssm-ssm_resourceTag_tag-key)
+  - **Access level:** Write
+
 - **   [UpdateInstanceAssociationStatus](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-setting-up-messageAPIs.html)  **
   - **Description:** Grants permission to SSM Agent to update the status of the association that it is currently running (internal Systems Manager call)
   - **Resource types (\*required):** [association\*](#list_ssm-resource-association) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ssm-aws_ResourceTag___TagKey_)<br />[ec2:SourceInstanceARN](#list_ssm-ec2_SourceInstanceARN)<br />[ssm:SourceInstanceARN](#list_ssm-ssm_SourceInstanceARN)
   - **Resource types (\*required):** [instance](#list_ssm-resource-instance) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ssm-aws_ResourceTag___TagKey_)<br />[ec2:SourceInstanceARN](#list_ssm-ec2_SourceInstanceARN)<br />[ssm:resourceTag/${TagKey}](#list_ssm-ssm_resourceTag___TagKey_)<br />[ssm:SourceInstanceARN](#list_ssm-ssm_SourceInstanceARN)
   - **Resource types (\*required):** [managed-instance](#list_ssm-resource-managed-instance) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ssm-aws_ResourceTag___TagKey_)<br />[ec2:SourceInstanceARN](#list_ssm-ec2_SourceInstanceARN)<br />[ssm:resourceTag/tag-key](#list_ssm-ssm_resourceTag_tag-key)<br />[ssm:SourceInstanceARN](#list_ssm-ssm_SourceInstanceARN)
+  - **Access level:** Write
+
+- **   [UpdateManagedInstancePublicKey](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-setting-up-messageAPIs.html)  **
+  - **Description:** Grants permission to SSM Agent to update the public key of the managed node after rotating the key pair (internal Systems Manager call)
+  - **Resource types (\*required):** [instance](#list_ssm-resource-instance) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ssm-aws_ResourceTag___TagKey_)<br />[ssm:NodeAccountId](#list_ssm-ssm_NodeAccountId)<br />[ssm:NodeOrgId](#list_ssm-ssm_NodeOrgId)<br />[ssm:resourceTag/${TagKey}](#list_ssm-ssm_resourceTag___TagKey_)
+  - **Resource types (\*required):** [managed-instance](#list_ssm-resource-managed-instance) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ssm-aws_ResourceTag___TagKey_)<br />[ssm:NodeAccountId](#list_ssm-ssm_NodeAccountId)<br />[ssm:NodeOrgId](#list_ssm-ssm_NodeOrgId)<br />[ssm:resourceTag/tag-key](#list_ssm-ssm_resourceTag_tag-key)
   - **Access level:** Write
 
 ## Resource types defined by AWS Systems Manager
@@ -1978,6 +1990,8 @@ AWS Systems Manager defines the following condition keys that can be used in the
 |   [ssm:DocumentType](https://docs.aws.amazon.com/systems-manager/latest/userguide/auth-and-access-control-iam-access-control-identity-based.html#policy-conditions)  | Filters access by verifying that a user has permission to access a document belonging to a specific document type. Only available in "aws", "aws-cn", and "aws-us-gov" partitions | String |
 |   [ssm:DocumentVersion](https://docs.aws.amazon.com/systems-manager/latest/userguide/auth-and-access-control-iam-access-control-identity-based.html#policy-conditions)  | Filters access by verifying that a user has permission to access a specific version of a document | ArrayOfString |
 |   [ssm:InventoryTypeName](https://docs.aws.amazon.com/systems-manager/latest/userguide/auth-and-access-control-iam-access-control-identity-based.html#policy-conditions)  | Filters access by verifying that a user also has access to the InventoryType specified in the request | ArrayOfString |
+|   [ssm:NodeAccountId](https://docs.aws.amazon.com/systems-manager/latest/userguide/auth-and-access-control-iam-access-control-identity-based.html#policy-conditions)  | Filters access by the AWS account ID associated with the managed node making the request. Available only in VPC endpoint policies and service control policies (SCPs) | String |
+|   [ssm:NodeOrgId](https://docs.aws.amazon.com/systems-manager/latest/userguide/auth-and-access-control-iam-access-control-identity-based.html#policy-conditions)  | Filters access by the AWS Organizations ID associated with the managed node making the request. Available only in VPC endpoint policies and service control policies (SCPs) | String |
 |   [ssm:Overwrite](https://docs.aws.amazon.com/systems-manager/latest/userguide/parameter-store-policy-conditions.html#overwrite-condition)  | Filters access by controling whether Systems Manager parameters can be overwritten | String |
 |   [ssm:Policies](https://docs.aws.amazon.com/systems-manager/latest/userguide/parameter-store-policy-conditions.html#parameter-policies-condition)  | Filters access by controlling whether an IAM Entity (user or role) can create or update a parameter that includes a parameter policy | String |
 |   [ssm:Recursive](https://docs.aws.amazon.com/systems-manager/latest/userguide/parameter-store-policy-conditions.html#recursive-condition)  | Filters access by Systems Manager parameters created in a hierarchical structure | String |

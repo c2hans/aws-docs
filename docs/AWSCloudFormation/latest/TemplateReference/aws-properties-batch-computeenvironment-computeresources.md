@@ -119,7 +119,8 @@ This parameter isn't applicable to jobs that are running on Fargate resources. D
 *Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 `CapacityTags`  <a name="cfn-batch-computeenvironment-computeresources-capacitytags"></a>
-Property description not available.
+The tags to apply to the Amazon ECS capacity provider and Amazon EC2 instances launched by the compute environment. These tags are separate from the compute environment resource tags (the top-level `tags` parameter). Use `capacityTags` for cost allocation and organization of the underlying infrastructure resources.
+This parameter is only valid for `ECS_MANAGED_INSTANCES` compute environments. You must have the `batch:SetCapacityTags` permission on the compute environment resource to use this parameter.
 *Required*: No
 *Type*: Object of String
 *Pattern*: `.*`
@@ -194,7 +195,8 @@ This parameter isn't applicable to jobs running on Fargate resources, and should
 *Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 `ManagedInstancesProvider`  <a name="cfn-batch-computeenvironment-computeresources-managedinstancesprovider"></a>
-Property description not available.
+The configuration for the Amazon ECS Managed Instances capacity provider. This parameter is required when `computeResources.type` is `ECS_MANAGED_INSTANCES` and must not be specified for other compute environment types.
+For more information, see [Amazon ECS Managed Instances compute environments](https://docs.aws.amazon.com/batch/latest/userguide/ecs_managed_instances.html) in the *AWS Batch User Guide*.
 *Required*: No
 *Type*: [ManagedInstancesProvider](aws-properties-batch-computeenvironment-managedinstancesprovider.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

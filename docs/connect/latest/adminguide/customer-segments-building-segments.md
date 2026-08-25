@@ -13,7 +13,7 @@ To navigate to the segmentation builder experience in the Connect Customer admin
 Before building segments, we recommend your Customer Profiles domain setup data integrations to populate profiles in your Customer Profiles Domain. For more information on how to configure data integrations with Customer Profiles, see [Integrate external applications with Connect Customer Customer Profiles](integrate-external-apps-customer-profiles.md).
 Segments can include events you captured using Calculated Attributes. For more information on how to configure custom Calculated Attributes and review the default Calculated Attributes Customer Profiles offers, see [Set up calculated attributes in Connect Customer Customer Profiles](customerprofiles-calculated-attributes.md).
 
-Connect Customer provides two ways to build customer segments: 1/ Define segments through Spark SQL (Beta; requires Data store to be enabled); 2/ Define segments through audience groups and filters (Classic Segmentation). For both, you can use natural language prompts via Generative AI-powered Segment AI assistant. If you define segments in one of the ways, you move that segment to the other and would have to start again.
+Connect Customer provides two ways to build customer segments: 1/ Define segments through Spark SQL (Beta; requires Data store to be enabled); 2/ Define segments through audience groups and filters (Classic Segmentation). For both, you can use natural language prompts through Generative AI-powered Segment AI assistant. If you define segments in one of the ways, you move that segment to the other and would have to start again.
 
 ## Classic segmentation with audience groups and filters
 <a name="customer-segments-audience-groups-classic-segmentation"></a>
@@ -51,7 +51,7 @@ Connect Customer provides two ways to build customer segments: 1/ Define segment
 ### Step 1: Build a new segment
 <a name="step-1-build-a-new-segment"></a>
 
-1.  To create a segment, ensure that you have created security profiles permissions as a prerequisite. For more information, see [Assign security profile permissions to manage customer segments](security-profile-customer-profile-segmentation.md). In addition, to best visualize the membership of your segment, we recommend data ingestion before segment creation. To ingest profiles through S3 or external applications, see [Create and ingest customer data into Customer Profiles](customer-profiles-object-type-mappings.md) or [Integrate external applications with Connect Customer Customer Profiles](integrate-external-apps-customer-profiles.md).
+1.  To create a segment, make sure that you have created security profiles permissions as a prerequisite. For more information, see [Assign security profile permissions to manage customer segments](security-profile-customer-profile-segmentation.md). In addition, to best visualize the membership of your segment, we recommend data ingestion before segment creation. To ingest profiles through S3 or external applications, see [Create and ingest customer data into Customer Profiles](customer-profiles-object-type-mappings.md) or [Integrate external applications with Connect Customer Customer Profiles](integrate-external-apps-customer-profiles.md).
 
 1.  Choose **Create a segment** in the Customer segment table view.
 ![The Create a segment button.](http://docs.aws.amazon.com/connect/latest/adminguide/images/step-1-build-a-new-segment-1.png)
@@ -94,7 +94,7 @@ To create a segment only with sub-profiles, create a new audience that excludes 
 
    1. If John doesn't answer, then calls Sally (ID: 3) as a backup contact
 
-1.  Once you choose a starting audience, the **Estimated audience** section updates to display the eligible profiles. Once you edit the audience groups, you can choose **Refresh** button in the Estimated audience section to re-fetch the estimate.
+1.  After you choose a starting audience, the **Estimated audience** section updates to display the eligible profiles. After you edit the audience groups, you can choose **Refresh** button in the Estimated audience section to re-fetch the estimate.
 ![An Estimated audience section.](http://docs.aws.amazon.com/connect/latest/adminguide/images/step-3-choose-the-starting-audiences-to-include-in-audience-group-2.png)
 
 ### Step 4: Choose and apply audience filters (optional)
@@ -118,7 +118,7 @@ To create a segment only with sub-profiles, create a new audience that excludes 
 
    1.  **Custom attributes** - Filter the audience based on one of custom profile attributes.
 **Note**
-We store up to 1000 most recent profile attributes within the domain. If your domain contains a large amount of attributes the oldest attributes may not be displayed in this list.
+We store up to 1000 most recent profile attributes within the domain. If your domain contains a large amount of attributes the oldest attributes might not be displayed in this list.
 
 1.  Choose the **Operator**. Operators determines the relationship of the attribute to a value you enter. The following describes the available operators. Available operators change based on the type of value of the attribute you selected.
 
@@ -212,7 +212,7 @@ Segment sort order is respected only for voice campaigns and voice activities in
 ![The Enable Sorting configuration for segment results.](http://docs.aws.amazon.com/connect/latest/adminguide/images/customer-profiles-enable-segment-sorting.png)
 
 ## Creating segments powered by Spark SQL
-<a name="w2aac36c53c13c15"></a>
+<a name="w2aac38c53c13c15"></a>
 
 Segments powered by Spark SQL enables you to use complete Customer Profile data and expanded functionality to define segments. You can use standard profile object attributes and custom object attributes. You can also used SQL-based functionality such as joining standard and custom objects together to use data from various objects, filtering segments with statistics such as percentiles and standardizing date fields to make comparisons.
 
@@ -222,20 +222,20 @@ You also have the option to create the Spark SQL segment directly.
 
 Like Classic segmentation, segments powered by Spark SQL can be used in segment membership calls and Flow blocks. To use Outbound Campaigns or Journeys with Spark SQL segments, contact AWS Support to request access.
 
-When you use a Spark SQL segment in a segment membership call, Flow block, or Outbound Campaign initiated by a customer event, it uses the last exported segment (segment snapshot). The segment snapshot used for membership expires 1 year after creation. If you receive a 4XX error, ensure you have exported the segment (segment snapshot).
+When you use a Spark SQL segment in a segment membership call, Flow block, or Outbound Campaign initiated by a customer event, it uses the last exported segment (segment snapshot). The segment snapshot used for membership expires 1 year after creation. If you receive a 4XX error, make sure you have exported the segment (segment snapshot).
 
 **Note**
 **SQL segmentation runs on Data store which has up to 10 years data. Classic segmentation uses latest data (data updated in past 3 years)**
 
 ### Step 1: Build a new segment
-<a name="w2aac36c53c13c15c15"></a>
+<a name="w2aac38c53c13c15c15"></a>
 
 In the Segment AI assistant, select “How to create a segment” for more guidance on creating valuable segments or “I want to generate a segment” to enter a natural language prompt to create the segment.
 
 Alternatively, use SQL to define a new segment in the query editor.
 
 ### Step 2: Specify a name and description
-<a name="w2aac36c53c13c15c17"></a>
+<a name="w2aac38c53c13c15c17"></a>
 
 For Name, enter a name for the customer segment to make it easy to recognize later.
 
@@ -245,21 +245,21 @@ The Amazon Connect admin website uses the entered name as the `DisplayName` of t
 For Description, optionally enter a description for the customer segment.
 
 ### Step 3: Review and validate the segment
-<a name="w2aac36c53c13c15c19"></a>
+<a name="w2aac38c53c13c15c19"></a>
 
-Review the data the Segment AI assistant used and the steps the AI model it took to generate your segment. You can also review the SQL it created to define the segment in the query editor. If it was not able to create the segment, address the feedback it provided to help it create an accurate segment. Once it has generated a segment, Customer Profiles will automatically create a segment estimate for you.
+Review the data the Segment AI assistant used and the steps the AI model it took to generate your segment. You can also review the SQL it created to define the segment in the query editor. If it was not able to create the segment, address the feedback it provided to help it create an accurate segment. After it has generated a segment, Customer Profiles will automatically create a segment estimate for you.
 
 If you want to make edits, you can provide a new prompt by choosing “New conversation” or create/edit SQL in the query editor.
 
 If you are not using the Segment AI assistant, you can validate the query and create the estimate by choosing on the “Validate and estimate query” button below the query editor.
 
 **Note**
-Segments powered by Spark SQL will take time depending on the amount of profile data you use in the segment and the SQL used, similar to other query engines (e.g., multiple joins across objects usually take more time).
+Segments powered by Spark SQL will take time depending on the amount of profile data you use in the segment and the SQL used, similar to other query engines (for example, multiple joins across objects usually take more time).
 
 ### Step 4: Create segment
-<a name="w2aac36c53c13c15c21"></a>
+<a name="w2aac38c53c13c15c21"></a>
 
-Once you have build a segment and are satisfied, select “Create segment” button on the top right. Once you have created the segment, you can select Actions - exporting to .csv, using the segment in Flows and using the segment in Outbound Campaigns.
+After you have build a segment and are satisfied, select “Create segment” button on the top right. After you have created the segment, you can select Actions - exporting to .csv, using the segment in Flows and using the segment in Outbound Campaigns.
 
 **Note**
 If you use the segment in Outbound Campaigns or Flow blocks, it will check segment membership based on when the segment was last created. If you need real-time segment membership checks as the Flow or campaign is being executed, use Classic segmentation.

@@ -9,3 +9,4 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 **Resource types**
 + [AWS::EMRServerless::Application](aws-resource-emrserverless-application.md)
++ [AWS::EMRServerless::JobRun](aws-resource-emrserverless-jobrun.md)

@@ -77,7 +77,7 @@ The contact's active Region is displayed on the contact details page under **Glo
 ![The contact details page showing the Global resiliency metadata section with the active Region information.](http://docs.aws.amazon.com/connect/latest/adminguide/images/global-resiliency-metadata.png)
 
 **Note**
-If the contact's active Region is impaired, some information may be unavailable, including screen and audio recordings, chat transcripts, IVR interactions, email attachments and transcripts, and conversational analytics data.
+If the contact's active Region is impaired, some information might be unavailable, including screen and audio recordings, chat transcripts, IVR interactions, email attachments and transcripts, and conversational analytics data.
 
 ### Conversational analytics data access
 <a name="contact-lens-data-access-across-regions"></a>

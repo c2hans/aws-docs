@@ -21,7 +21,7 @@ The former management account becomes a standalone AWS account that is no longer
 
 **Deleted organizations cannot be recovered**
 
-If you delete an organization, you can't recover it. If you created any policies inside of the organization, they're also deleted and you can't recover them.
+If you delete an organization, you can't recover it. AWS also deletes any organization policies that you created in the organization, such as SCPs, RCPs, tag policies, backup policies, or AI services opt-out policies. You can't recover deleted policies.
 
 **Organizations can only be deleted after all member account have been removed**
 

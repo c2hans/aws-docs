@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/manager-assist
 When you ask manager assistant a question that starts with **why**, or when you request an investigation into a metric change, manager assistant runs an investigation. An investigation is a multi-step analysis that goes beyond returning a single metric value: it examines multiple related data points across your contact center to identify which factors contributed to the change, and what you can do about it.
 
 **Important**
-Responses generated during investigations may contain inaccuracies. Manager assistant identifies correlations in your data, and cannot confirm definitive root causes. Always validate investigation findings before you make operational decisions.
+Responses generated during investigations might contain inaccuracies. Manager assistant identifies correlations in your data, and cannot confirm definitive root causes. Always validate investigation findings before you make operational decisions.
 
 ## How investigations work
 <a name="manager-assistant-investigations-how"></a>
@@ -40,7 +40,7 @@ When the investigation is complete, manager assistant returns a structured analy
 
 ![Investigation results that list a staffing shortage as the primary driver, abandonment as an amplifying factor, and contact volume and handle time as factors that did not contribute.](http://docs.aws.amazon.com/connect/latest/adminguide/images/manager-assistant-investigation-results.png)
 
-Following the analysis of the major contributing factors, manager assistant provides prioritized recommended actions. Each recommendation includes the reasoning for why it addresses the identified issue, and may include a confidence indicator that reflects how directly the action addresses that issue. The following table shows example recommended actions for this investigation.
+Following the analysis of the major contributing factors, manager assistant provides prioritized recommended actions. Each recommendation includes the reasoning for why it addresses the identified issue, and might include a confidence indicator that reflects how directly the action addresses that issue. The following table shows example recommended actions for this investigation.
 
 | Priority | Action | Confidence |
 | --- | --- | --- |

@@ -27,3 +27,28 @@ The name of the AWS configuration profile whose credentials should be used to au
 
 **Note**
 The profile name can also be specified as the value of the `CredentialsProviderArguments` parameter, although this use is deprecated.
+
+## Authenticating with an IAM Identity Center profile
+<a name="jdbc-v3-driver-identity-center-profile-example"></a>
+
+Use an IAM Identity Center profile with the `ProfileCredentials` provider to authenticate requests to AWS. This approach uses SSO-managed credentials instead of long-term access keys. The following example shows the required entries in the `~/.aws/config` file.
+
+```
+[profile athena-idc]
+sso_session = athena-idc-session
+sso_account_id = 111122223333
+sso_role_name = AthenaQueryRole
+region = us-east-1
+
+[sso-session athena-idc-session]
+sso_start_url = https://example.awsapps.com/start
+sso_region = us-east-1
+sso_registration_scopes = sso:account:access
+```
+
+Before opening the JDBC connection, sign in to the profile. For example, use `aws sso login --profile athena-idc`. Then configure the JDBC connection with the following parameters.
+
+```
+CredentialsProvider=ProfileCredentials;
+ProfileName=athena-idc;
+```

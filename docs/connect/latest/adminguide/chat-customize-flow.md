@@ -35,7 +35,7 @@ Add a [Play prompt](play.md) block before a [AWS Lambda function](invoke-lambda-
 A custom participant cannot be added to a chat when an agent or Amazon Lex bot is already present on the contact.
 A custom participant will be disconnected when an agent or Amazon Lex bot joins a contact.
 Only one custom participant can be present on a contact.
-A custom participant is not permitted to access attachments a customer may upload.
+A custom participant is not permitted to access attachments a customer might upload.
 
 We recommend configuring how long a custom participant can chat with a contact:
 + Set the **Timeout** property on the [Wait](wait.md) block for the `ParticipantRole` = `CUSTOM_BOT`.

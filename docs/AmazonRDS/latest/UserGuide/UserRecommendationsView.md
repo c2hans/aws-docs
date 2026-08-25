@@ -69,7 +69,7 @@ Using the Amazon RDS console, you can view Amazon RDS recommendations for your d
 
    For information about the components on the details page for an anomaly based reactive recommendation, see [Viewing reactive anomalies](https://docs.aws.amazon.com/devops-guru/latest/userguide/working-with-rds.analyzing.metrics.html) in the *Amazon DevOps Guru User Guide*.
 
-   For information about the components on the details page for a threshold based proactive recommendation, see [Viewing Performance Insights proactive recommendations](USER_PerfInsights.InsightsRecommendationViewDetails.md).
+   For information about the components on the details page for a threshold based proactive recommendation, see [Viewing Database Insights proactive recommendations](USER_PerfInsights.InsightsRecommendationViewDetails.md).
 
    The other automated recommendations display the following components on the recommendation details page:
    + **Recommendation** – A summary of the recommendation and whether downtime is required to apply the recommendation.

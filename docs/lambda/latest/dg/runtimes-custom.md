@@ -100,7 +100,7 @@ Your custom runtime must:
 + **Support concurrent `/next` requests** – The runtime can make multiple simultaneous calls to the [next invocation](runtimes-api.md#runtimes-api-next) API, up to the limit specified by the `AWS_LAMBDA_MAX_CONCURRENCY` environment variable.
 + **Handle concurrent `/response` requests** – Multiple invocations can call the [invocation response](runtimes-api.md#runtimes-api-response) API simultaneously.
 + **Implement thread-safe request handling** – Ensure that concurrent invocations don't interfere with each other by properly managing shared resources and state.
-+ **Use unique request IDs** – Track each invocation separately using the `Lambda-Runtime-Aws-Request-Id` header to match responses with their corresponding requests.
++ **Use request IDs and invocation IDs correctly** – A request ID identifies the event; use it in the URL path. An invocation ID represents a single invocation attempt—a single request ID might result in multiple attempts, each with a unique invocation ID. Echo the invocation ID back on `/response` and `/error` calls. The header is optional—omitting it is accepted for backward compatibility. Lambda only rejects with `400 InvalidInvocationId` when the header is present but its value does not match.
 
 ### Implementation pattern
 <a name="runtimes-custom-managed-instances-implementation"></a>

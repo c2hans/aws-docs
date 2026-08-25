@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-
 
 *Ashish Srivastava, Bhavani Akundi, and Sreenivas Nettem, Amazon Web Services*
 
-This guide explains how to implement the SQL Server auditing process for SQL Server on Amazon Elastic Compute Cloud (Amazon EC2) and Amazon Relational Database System (Amazon RDS) for SQL Server database instances.
+This guide explains how to implement the SQL Server auditing process for SQL Server on Amazon Elastic Compute Cloud (Amazon EC2) and Amazon Relational Database Service (Amazon RDS) for SQL Server database instances.
 
 Database auditing is an IT auditing method for certifying that organizational data is secure. It involves evaluating data and logging key critical business operations on databases.
 

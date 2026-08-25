@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/code-review-ide-integration.html
 ---
 
-# Run code security scans from your IDE
+# Run Continuum code security scans from your IDE
 <a name="code-review-ide-integration"></a>
 
 Run AWS Security Agent code security scans directly from your IDE using Kiro or Claude Code. The IDE integration lets you scan your local source code for security vulnerabilities, run differential scans on only changed code, and perform threat model reviews on design documents — all without leaving your development environment. Findings appear alongside your code with remediation guidance, and you can apply automated fixes directly from the IDE.
@@ -119,8 +119,8 @@ The setup verifies your AWS credentials, creates or reuses an Agent Space, provi
 **Note**
 Setup runs automatically on your first scan if not already configured. You don’t need to run it separately.
 
-## Run a full security scan
-<a name="_run_a_full_security_scan"></a>
+## Run a full Continuum security scan
+<a name="_run_a_full_continuum_security_scan"></a>
 
 Scan your entire project for security vulnerabilities:
 
@@ -149,8 +149,8 @@ Full scans typically take around 1 hour depending on codebase size. The IDE chec
 How's the scan going?
 ```
 
-## Run a differential scan
-<a name="_run_a_differential_scan"></a>
+## Run a Continuum differential scan
+<a name="_run_a_continuum_differential_scan"></a>
 
 For faster feedback during development, scan only the code that changed since a git ref:
 
@@ -166,15 +166,15 @@ Diff scan my uncommitted changes
 
 Differential scans upload both the full repository context and the git diff patch, then run analysis focused only on the changed lines. Results typically arrive in 5–15 minutes.
 
-For more information about the S3 diff scan API, see [Run a differential code scan with S3](run-diff-scan-s3.md).
+For more information about the S3 diff scan API, see [Run a Continuum differential code scan with S3](run-diff-scan-s3.md).
 
-## Run a threat model review
-<a name="_run_a_threat_model_review"></a>
+## Run a Continuum threat model review
+<a name="_run_a_continuum_threat_model_review"></a>
 
 Analyze design documents for security-posture changes using STRIDE methodology:
 
 ```
-Run a threat model review on my spec
+Run a Continuum threat model review on my spec
 ```
 
 The IDE identifies your `requirements.md` and `design.md` files (typically under `.kiro/specs/`), uploads them alongside your source code, and runs a threat model analysis. Results identify:
@@ -296,7 +296,7 @@ If you run a diff scan with no uncommitted changes, the MCP server reports "No c
 <a name="_next_steps"></a>
 
 After running your first IDE security scan:
-+ Enable pull request code review comments for automated GitHub integration (see [Enable pull request code review for GitHub repositories](enable-code-review.md))
++ Enable pull request code review comments for automated GitHub integration (see [Enable Continuum pull request code review for GitHub repositories](enable-code-review.md))
 + Configure security requirements for organization-specific policy validation (see [Manage security requirements](security-requirements.md))
-+ Run periodic full scans to catch issues across your entire codebase (see [Create a code review](perform-code-review-scan.md))
++ Run periodic full scans to catch issues across your entire codebase (see [Create a Continuum code review](perform-code-review-scan.md))
 + Use threat model reviews on new feature specs before implementation

@@ -59,9 +59,9 @@ Consider a scenario where you've configured three 40-second prompts in this loop
 
 If you don't enable **Continue prompts during interrupt**:
 + The block plays prompts in order until the 60-second timeout. This means the first prompt plays entirely, followed by 20 seconds of the second prompt.
-+ At 60 seconds, Connect executes the Flows logic in the timeout branch for the Loop prompts block. This may include different audio treatments, such as brief silences or a separate prompt via a Play prompt block.
++ At 60 seconds, Connect executes the Flows logic in the timeout branch for the Loop prompts block. This might include different audio treatments, such as brief silences or a separate prompt through a Play prompt block.
 + After executing the Resume block in the timeout branch, Connect restarts the prompts from the beginning of the first prompt.
-+ This behavior may prevent customers from hearing important information scheduled after 60 seconds (such as in the third prompt). This is particularly likely when using default Amazon Connect audio prompts, which can be up to 4 minutes long.
++ This behavior might prevent customers from hearing important information scheduled after 60 seconds (such as in the third prompt). This is particularly likely when using default Amazon Connect audio prompts, which can be up to 4 minutes long.
 
 If you enable **Continue prompts during interrupt**:
 + The block plays prompts in order.

@@ -26,7 +26,7 @@ You can set an ASN or Long ASN range on either the console or through the APIs.
 
 When choosing to use either an ASN or a long ASN, note the following:
 + **Backward compatibility**: Direct Connect automatically handles BGP sessions with both ASN and long ASN-capable routers. If your router doesn't support long ASNs, the BGP session will operate in ASN mode.
-+ **ASN format**: You can specify 4-byte ASNs in either asplain format — for example, `4200000000` — or asdot format — for example, `64086.59904`. Direct Connect accepts both formats but displays ASNs in asplain format.
++ **ASN format**: Specify 4-byte ASNs in asplain format, for example, `4200000000`. Direct Connect displays 4-byte ASNs in asplain format.
 + **Private ASN ranges**: When using private long ASNs (`4200000000-4294967294`), the same replacement behavior applies as with private ASNs. Direct Connect will replace your private ASN with `7224` when advertising to other networks.
 + **BGP community tags**: All existing BGP community tags (`7224:xxxx`) work with long ASNs. The community tag format remains unchanged.
 + **Monitoring and troubleshooting**: CloudWatch metrics, BGP session logs, and troubleshooting tools display long ASNs in asplain format for consistency.

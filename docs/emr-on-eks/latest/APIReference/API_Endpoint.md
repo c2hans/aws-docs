@@ -17,6 +17,13 @@ Length Constraints: Minimum length of 60. Maximum length of 1024.
 Pattern: `^arn:(aws[a-zA-Z0-9-]*):emr-containers:.+:(\d{12}):\/virtualclusters\/[0-9a-zA-Z]+\/endpoints\/[0-9a-zA-Z]+$`
 Required: No
 
+ ** authProxyUrl **   <a name="emroneks-Type-Endpoint-authProxyUrl"></a>
+The authentication proxy URL of the endpoint.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 10280.
+Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDBFF-\uDC00\uDFFF\r\n\t]*`
+Required: No
+
  ** certificateArn **   <a name="emroneks-Type-Endpoint-certificateArn"></a>
  *This member has been deprecated.*
 The certificate ARN of the endpoint. This field is under deprecation and will be removed in future.

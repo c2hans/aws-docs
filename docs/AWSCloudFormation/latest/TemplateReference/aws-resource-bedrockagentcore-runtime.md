@@ -30,6 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[AgentRuntimeArtifact](#cfn-bedrockagentcore-runtime-agentruntimeartifact)" : {{AgentRuntimeArtifact}},
       "[AgentRuntimeName](#cfn-bedrockagentcore-runtime-agentruntimename)" : {{String}},
       "[AuthorizerConfiguration](#cfn-bedrockagentcore-runtime-authorizerconfiguration)" : {{AuthorizerConfiguration}},
+      "[CapacityProviderConfiguration](#cfn-bedrockagentcore-runtime-capacityproviderconfiguration)" : {{CapacityProviderConfiguration}},
       "[Description](#cfn-bedrockagentcore-runtime-description)" : {{String}},
       "[EnvironmentVariables](#cfn-bedrockagentcore-runtime-environmentvariables)" : {{{{{Key}}: {{Value}}, ...}}},
       "[FilesystemConfigurations](#cfn-bedrockagentcore-runtime-filesystemconfigurations)" : {{[ FilesystemConfiguration, ... ]}},
@@ -54,6 +55,8 @@ Properties:
   [AgentRuntimeName](#cfn-bedrockagentcore-runtime-agentruntimename): {{String}}
   [AuthorizerConfiguration](#cfn-bedrockagentcore-runtime-authorizerconfiguration): {{
     AuthorizerConfiguration}}
+  [CapacityProviderConfiguration](#cfn-bedrockagentcore-runtime-capacityproviderconfiguration): {{
+    CapacityProviderConfiguration}}
   [Description](#cfn-bedrockagentcore-runtime-description): {{String}}
   [EnvironmentVariables](#cfn-bedrockagentcore-runtime-environmentvariables): {{
     {{Key}}: {{Value}}}}
@@ -93,6 +96,12 @@ The authorizer configuration for the AgentCore Runtime.
 *Type*: [AuthorizerConfiguration](aws-properties-bedrockagentcore-runtime-authorizerconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
+`CapacityProviderConfiguration`  <a name="cfn-bedrockagentcore-runtime-capacityproviderconfiguration"></a>
+Property description not available.
+*Required*: No
+*Type*: [CapacityProviderConfiguration](aws-properties-bedrockagentcore-runtime-capacityproviderconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
 `Description`  <a name="cfn-bedrockagentcore-runtime-description"></a>
 The description of the AgentCore Runtime.
 *Required*: No
@@ -125,7 +134,7 @@ The lifecycle configuration for the AgentCore Runtime.
 
 `NetworkConfiguration`  <a name="cfn-bedrockagentcore-runtime-networkconfiguration"></a>
 The network configuration for the AgentCore Runtime.
-*Required*: Yes
+*Required*: No
 *Type*: [NetworkConfiguration](aws-properties-bedrockagentcore-runtime-networkconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 

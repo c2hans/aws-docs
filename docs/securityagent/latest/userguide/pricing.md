@@ -16,10 +16,10 @@ The following table describes which capabilities AWS Security Agent bills for.
 
 | Capability | How AWS Security Agent charges you |
 | --- | --- |
-| Penetration testing | AWS Security Agent meters each task hour by the second of task time |
-| Code review | No charge while in preview |
-| Design review | No charge while in preview |
-| Threat modeling | No charge while in preview |
+| Continuum penetration testing | AWS Security Agent meters each task hour by the second of task time |
+| Continuum code review | No charge while in preview |
+| Continuum design review | No charge while in preview |
+| Continuum threat modeling | No charge while in preview |
 
 AWS Security Agent bills penetration testing for each second of task time. It converts the total to hours on your bill, so you pay for partial hours.
 
@@ -55,13 +55,13 @@ The `PentestExecutionDuration` metric that AWS Security Agent publishes to Amazo
 
 AWS Security Agent applies monthly quotas to design reviews and pull request code reviews. It also applies configuration quotas to resources such as Agent Spaces and penetration test projects. These quotas limit capacity, not spending. Reaching a monthly quota blocks additional reviews until the next month. It doesn’t cap what you spend on penetration testing, and a quota increase doesn’t change your rate. For more information, see [Service Quotas](quotas.md).
 
-## Control penetration testing costs
-<a name="_control_penetration_testing_costs"></a>
+## Control Continuum penetration testing costs
+<a name="_control_continuum_penetration_testing_costs"></a>
 
 Task hours depend on how much reasoning and acting you ask the agent to do. To reduce the task hours that a run consumes, do the following:
-+  **Narrow the test scope** – Target specific URL paths rather than an entire domain, and list URLs that you want to exclude. For more information, see [Create a penetration test](perform-penetration-test.md).
++  **Narrow the test scope** – Target specific URL paths rather than an entire domain, and list URLs that you want to exclude. For more information, see [Create a Continuum penetration test](perform-penetration-test.md).
 +  **Select only the risk types you need** – Each additional risk type adds tasks to the run.
-+  **Stop a run that is off track** – Monitor the penetration test logs as a run progresses. If the logs show that the agent is exploring areas you don’t care about, stop the run. For more information, see [Review findings from a penetration test](review-penetration-findings.md).
++  **Stop a run that is off track** – Monitor the penetration test logs as a run progresses. If the logs show that the agent is exploring areas you don’t care about, stop the run. For more information, see [Review findings from a Continuum penetration test](review-penetration-findings.md).
 +  **Reuse a configuration to build a baseline** – Penetration test configurations are reusable. Compare the task hours across runs of the same configuration to learn what a target typically costs.
 
 ## Pricing FAQ
@@ -82,8 +82,8 @@ Penetration testing. AWS doesn’t charge for code reviews, design reviews, or t
 
 No. Quotas limit how many resources you can create and how many reviews you can run. They don’t limit how much you can spend. For more information, see [Service Quotas](quotas.md).
 
-### Can I estimate what a penetration test will cost before I start it?
-<a name="_can_i_estimate_what_a_penetration_test_will_cost_before_i_start_it"></a>
+### Can I estimate what a Continuum penetration test will cost before I start it?
+<a name="_can_i_estimate_what_a_continuum_penetration_test_will_cost_before_i_start_it"></a>
 
 There is no precise estimation. Task hours depend on the breadth of the target application and the risk types you select. The agent also adapts its plan as it explores your application. If you have run the same configuration before, use the task hours from those runs as a baseline. For worked examples, see [AWS Security Agent pricing](https://aws.amazon.com/security-agent/pricing/).
 

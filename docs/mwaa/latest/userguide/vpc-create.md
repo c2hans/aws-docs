@@ -498,7 +498,7 @@ This option uses [Private routing without internet access](networking-about.md#n
         Value: !Ref PrivateSubnet2
    ```
 
-1. In your command prompt, navigate to the directory where `cfn-vpc-private.yml` is stored. For example:
+1. In your command prompt, navigate to the directory where `cfn-vpc-private.yaml` is stored. For example:
 
    ```
    cd mwaaproject
@@ -507,7 +507,7 @@ This option uses [Private routing without internet access](networking-about.md#n
 1. Use the [`aws cloudformation create-stack`](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack.html) command to create the stack using the AWS CLI.
 
    ```
-   aws cloudformation create-stack --stack-name mwaa-private-environment --template-body file://cfn-vpc-private.yml
+   aws cloudformation create-stack --stack-name mwaa-private-environment --template-body file://cfn-vpc-private.yaml
    ```
 **Note**
 It takes about 30 minutes to create the Amazon VPC infrastructure.

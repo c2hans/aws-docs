@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/revalidate-findings.html
 ---
 
-# Revalidate penetration test findings
+# Revalidate Continuum penetration test findings
 <a name="revalidate-findings"></a>
 
 After you remediate a vulnerability, use AWS Security Agent to revalidate the finding and confirm whether it is still exploitable. Revalidation re-tests one or more existing findings without running a full penetration test. You get a fast answer on whether your fix worked.
@@ -59,4 +59,4 @@ A revalidation run appears in your run history with a type of **Revalidation**, 
 
 After revalidation, consider these next steps:
 + Revalidate a finding again after each remediation attempt until its status is **Resolved**.
-+ Run a full penetration test for broad changes to your application instead of revalidating individual findings. For details, see [Create a penetration test](perform-penetration-test.md).
++ Run a full penetration test for broad changes to your application instead of revalidating individual findings. For details, see [Create a Continuum penetration test](perform-penetration-test.md).

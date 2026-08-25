@@ -37,4 +37,5 @@ For information about the latest features released for OpenSearch UI, see [Amazo
 + [Restricting network access to OpenSearch UI applications](application-network-access.md)
 + [Migrating saved objects from OpenSearch Dashboards to OpenSearch UI](application-migration.md)
 + [Monitoring OpenSearch UI with Amazon CloudWatch](application-monitoring.md)
++ [Setting up a friendly URL for OpenSearch UI applications (self-service)](application-custom-domain.md)
 + [OpenSearch UI endpoints and quotas](opensearch-ui-endpoints-quotas.md)

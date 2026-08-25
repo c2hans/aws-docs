@@ -67,17 +67,71 @@ If you enable a stream within a CloudFormation template and also define a policy
 <a name="aws-properties-dynamodb-table-resourcepolicy--examples--Attaching_a_resource-based_policy_to_a_table_and_its_stream--json"></a>
 
 ```
-{ "AWSTemplateFormatVersion": "2010-09-09", "Resources": {
-            "MusicCollectionTable": { "Type": "AWS::DynamoDB::Table", "Properties": {
-            "AttributeDefinitions": [ { "AttributeName": "Artist", "AttributeType": "S" } ],
-            "KeySchema": [ { "AttributeName": "Artist", "KeyType": "HASH" } ], "BillingMode":
-            "PROVISIONED", "ProvisionedThroughput": { "ReadCapacityUnits": 5, "WriteCapacityUnits":
-            5 }, "StreamSpecification": { "StreamViewType": "OLD_IMAGE", "ResourcePolicy": {
-            "PolicyDocument": { "Version": "2012-10-17",		 	 	  "Statement": [ { "Principal": { "AWS":
-            "arn:aws:iam::111122223333:user/foobar" }, "Effect": "Allow", "Action": [
-            "dynamodb:GetRecords", "dynamodb:GetShardIterator", "dynamodb:DescribeStream" ],
-            "Resource": "*" } ] } } }, "TableName": "MusicCollection", "ResourcePolicy": {
-            "PolicyDocument": { "Version": "2012-10-17",		 	 	  "Statement": [ { "Principal": { "AWS": [
-            "arn:aws:iam::111122223333:user/foobar" ] }, "Effect": "Allow", "Action":
-            "dynamodb:GetItem", "Resource": "*" } ] } } } } } }
+{
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Resources": {
+    "MusicCollectionTable": {
+      "Type": "AWS::DynamoDB::Table",
+      "Properties": {
+        "AttributeDefinitions": [
+          {
+            "AttributeName": "Artist",
+            "AttributeType": "S"
+          }
+        ],
+        "KeySchema": [
+          {
+            "AttributeName": "Artist",
+            "KeyType": "HASH"
+          }
+        ],
+        "BillingMode": "PROVISIONED",
+        "ProvisionedThroughput": {
+          "ReadCapacityUnits": 5,
+          "WriteCapacityUnits": 5
+        },
+        "StreamSpecification": {
+          "StreamViewType": "OLD_IMAGE",
+          "ResourcePolicy": {
+            "PolicyDocument": {
+              "Version": "2012-10-17",
+              "Statement": [
+                {
+                  "Principal": {
+                    "AWS": "arn:aws:iam::111122223333:user/foobar"
+                  },
+                  "Effect": "Allow",
+                  "Action": [
+                    "dynamodb:GetRecords",
+                    "dynamodb:GetShardIterator",
+                    "dynamodb:DescribeStream"
+                  ],
+                  "Resource": "*"
+                }
+              ]
+            }
+          }
+        },
+        "TableName": "MusicCollection",
+        "ResourcePolicy": {
+          "PolicyDocument": {
+            "Version": "2012-10-17",
+            "Statement": [
+              {
+                "Principal": {
+                  "AWS": [
+                    "arn:aws:iam::111122223333:user/foobar"
+                  ]
+                },
+                "Effect": "Allow",
+                "Action": "dynamodb:GetItem",
+                "Resource": "*"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}
 ```

@@ -12,7 +12,7 @@ Use these steps to set up forecasting & agent scheduling.
 
 1. [Enable forecasting & agent scheduling](enable-forecasting-capacity-planning-scheduling.md) in the Connect Customer console.
 **Note**
-After enabling Forecasting & agent scheduling, it may take up to **24 hours** before the feature is available for use.
+After enabling Forecasting & agent scheduling, it might take up to **24 hours** before the feature is available for use.
 
 1. [Assign security profile permissions](required-optimization-permissions.md) to the Connect Customer users who will use this feature.
 

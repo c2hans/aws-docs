@@ -67,6 +67,10 @@ Required: Yes
          "partnerInterconnectMacSecCapable": boolean,
          "partnerName": "string",
          "portEncryptionStatus": "string",
+         "prefixPoolSizeIpv4": number,
+         "prefixPoolSizeIpv6": number,
+         "prefixPoolUnallocatedCountIpv4": number,
+         "prefixPoolUnallocatedCountIpv6": number,
          "providerName": "string",
          "rateLimiterStatus": {
             "inUse": number,

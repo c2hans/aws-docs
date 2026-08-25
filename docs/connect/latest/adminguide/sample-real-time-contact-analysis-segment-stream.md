@@ -27,7 +27,7 @@ This topic provides sample segment streams for STARTED, SEGMENTS, COMPLETED, and
 ## Sample SEGMENTS event
 <a name="sample-segments-event"></a>
 + EventType: SEGMENTS
-+ Published during a conversational analytics session. This event contains a list of segments with analyzed information. The list of segments may include "`Utterance`," "`Transcript`," "`Categories`" or "`PostContactSummary`" segments.
++ Published during a conversational analytics session. This event contains a list of segments with analyzed information. The list of segments might include "`Utterance`," "`Transcript`," "`Categories`" or "`PostContactSummary`" segments.
 
 ```
 {

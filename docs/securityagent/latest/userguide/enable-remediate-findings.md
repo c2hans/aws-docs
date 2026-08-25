@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/enable-remediate-findings.html
 ---
 
-# Enable users to start remediation of penetration test and code review findings
+# Enable users to start remediation of Continuum penetration test and code review findings
 <a name="enable-remediate-findings"></a>
 
 In the AWS Management Console, you can enable automatic remediation so users of the AWS Security Agent web application can request fixes for a specific finding. AWS Security Agent delivers each fix as a GitHub pull request on the affected repository.
@@ -14,7 +14,7 @@ You enable remediation per repository from within an Agent Space. The **Penetrat
 
 Before you begin, ensure you have:
 
-1. Enabled penetration testing (see [Enable penetration test](enable-penetration-test.md)) or code review (see [Enable code review](enable-code-review-scan.md))
+1. Enabled penetration testing (see [Enable Continuum penetration test](enable-penetration-test.md)) or code review (see [Enable Continuum code review](enable-code-review-scan.md))
 
 1. Installed and authorized the AWS Security Agent GitHub App for your GitHub organization (see [Connect AWS Security Agent to GitHub repositories](connect-github.md))
 
@@ -23,7 +23,7 @@ Before you begin, ensure you have:
 
 Choose the entry point that matches how your repositories are set up.
 
-### From the Penetration test tab
+### From the penetration test tab
 <a name="_from_the_penetration_test_tab"></a>
 
 Use this path to add GitHub repositories for penetration testing and configure remediation in the same pass.
@@ -42,7 +42,7 @@ Use this path to add GitHub repositories for penetration testing and configure r
 
 1. Choose **Next** to configure repository capabilities.
 
-### From the Code review tab
+### From the code review tab
 <a name="_from_the_code_review_tab"></a>
 
 Use this path when your repositories are already connected for code review.

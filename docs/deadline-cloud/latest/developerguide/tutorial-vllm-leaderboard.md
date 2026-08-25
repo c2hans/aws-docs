@@ -39,7 +39,7 @@ Before you begin, the following setup is recommended:
 + A Deadline Cloud farm with an NVIDIA GPU service-managed fleet (A10G or L4, at least 32 GB RAM, at least 4 vCPUs).
 + A queue with a conda queue environment attached that reads `CondaPackages` and `CondaChannels` job parameters.
 + The [Deadline Cloud CLI](https://github.com/aws-deadline/deadline-cloud) installed on your workstation.
-+ Sufficient Amazon Elastic Compute Cloud (Amazon EC2) vCPU service quota for GPU instances. The default 3-model run on `g5.xlarge` (4 vCPUs each) requires at least 12 vCPUs under *Running On-Demand G and VT instances*.
++ Sufficient Deadline Cloud service quota for GPU instances. The default 3-model run on `g5.xlarge` (4 vCPUs and 1 GPU each) requires at least 3 GPUs under *OnDemand G instance GPUs per region* and 12 vCPUs under *OnDemand vCPUs per region*.
 
 **Note**
 A Hugging Face token is only required for gated models (such as Llama). The default model list uses ungated models.
@@ -167,7 +167,7 @@ To avoid ongoing charges, clean up the resources that you created for this tutor
 
 **Fleet does not scale up workers**
 
-The most common cause is an Amazon EC2 vCPU service quota. Open the [Service Quotas console](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas) under **EC2** and confirm that you have headroom for *Running On-Demand G and VT instances*. Quota increases can take minutes to a couple of business days.
+The most common cause is an Deadline Cloud service quota. Open the [Service Quotas console](https://console.aws.amazon.com/servicequotas/home/services/deadline/quotas) under **AWS Deadline Cloud** and confirm that you have headroom for *OnDemand G instance GPUs per region* and *OnDemand vCPUs per region*. Quota increases can take minutes to a couple of business days.
 
 ## Related resources
 <a name="tutorial-vllm-related"></a>

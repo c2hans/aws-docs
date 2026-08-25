@@ -9,6 +9,9 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 Specifies the infrastructure update policy for the Amazon EC2 compute environment. For more information about infrastructure updates, see [Updating compute environments](https://docs.aws.amazon.com/batch/latest/userguide/updating-compute-environments.html) in the *AWS Batch User Guide*.
 
+**Important**
+The `updatePolicy` property applies only to Amazon EC2 managed compute environments. AWS Batch doesn't support `updatePolicy` for Fargate compute environments. If you specify it for a Fargate compute environment, AWS Batch ignores it.
+
 ## Syntax
 <a name="aws-properties-batch-computeenvironment-updatepolicy-syntax"></a>
 

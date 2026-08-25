@@ -27,11 +27,11 @@ The following tables compare what's available on each endpoint.
 
 | API | `bedrock-runtime` | `bedrock-mantle` |
 | --- | --- | --- |
-| [InvokeModel](inference-api.md) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) |
-| [Converse / ConverseStream](conversation-inference.md) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) |
-| [Chat Completions (OpenAI-compatible)](inference-chat-completions-mantle.md) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
-| [Responses API (OpenAI-compatible)](bedrock-mantle.md#bedrock-mantle-responses) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
-| [Messages API (Anthropic-native)](inference-messages-api.md) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
+| [InvokeModel](inference-api.md) | ![supported](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![not-supported](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) |
+| [Converse / ConverseStream](conversation-inference.md) | ![supported](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![not-supported](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) |
+| [Chat Completions (OpenAI-compatible)](inference-chat-completions-mantle.md) | ![supported](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![supported](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
+| [Responses API (OpenAI-compatible)](bedrock-mantle.md#bedrock-mantle-responses) | ![supported](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![supported](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
+| [Messages API (Anthropic-native)](inference-messages-api.md) | ![supported](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![supported](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
 
 **Note**
 The Messages API is available on both endpoints, but the two surfaces do not have identical feature support. In particular, [structured outputs](structured-output.md) (the `output_config.format` parameter) are not supported on `bedrock-mantle` — requests that include `output_config.format` are rejected with a 400 error. To use structured outputs with Anthropic Claude models, call the Converse or InvokeModel APIs on `bedrock-runtime`.
@@ -47,21 +47,21 @@ The Responses API is also available on both endpoints without identical feature 
 
 | Capability | `bedrock-runtime` | `bedrock-mantle` |
 | --- | --- | --- |
-| [Cross-region inference (geographic and global profiles)](cross-region-inference.md) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) |
-| [Stateful conversation management](bedrock-mantle.md#bedrock-mantle-responses-state) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
-| [Asynchronous (long-running) inference](bedrock-mantle.md) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
-| [Client-side tool use](tool-use-client-side.md) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
-| [Server-side tool use](tool-use-server-side.md) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
-| [Pre-configured ready-to-use tools](tool-use.md) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
-| [Projects](projects.md) | Default project only | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
-| [Workspaces](workspaces.md) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
+| [Cross-region inference (geographic and global profiles)](cross-region-inference.md) | ![supported](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![not-supported](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) |
+| [Stateful conversation management](bedrock-mantle.md#bedrock-mantle-responses-state) | ![supported](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![supported](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
+| [Asynchronous (long-running) inference](bedrock-mantle.md) | ![not-supported](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![supported](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
+| [Client-side tool use](tool-use-client-side.md) | ![supported](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![supported](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
+| [Server-side tool use](tool-use-server-side.md) | ![not-supported](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![supported](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
+| [Pre-configured ready-to-use tools](tool-use.md) | ![not-supported](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![supported](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
+| [Projects](projects.md) | Default project only | ![supported](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
+| [Workspaces](workspaces.md) | ![not-supported](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![supported](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
 
 **Operational**
 
 | Item | `bedrock-runtime` | `bedrock-mantle` |
 | --- | --- | --- |
-| AWS [SigV4](AmazonS3/latest/API/sig-v4-authenticating-requests.html) authentication | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
-| [Bedrock API key (also works with OpenAI SDK)](api-keys.md) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
+| AWS [SigV4](AmazonS3/latest/API/sig-v4-authenticating-requests.html) authentication | ![supported](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![supported](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
+| [Bedrock API key (also works with OpenAI SDK)](api-keys.md) | ![supported](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![supported](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
 | [Usage attribution](cost-management.md) | [IAM principal](cost-mgmt-iam-principal-tracking.md), [per-request metadata tagging](cost-mgmt-request-metadata.md), [application inference profiles](cost-mgmt-application-inference-profiles.md) | [Projects](projects.md), [Workspaces](workspaces.md) |
 
 **Note**
@@ -71,9 +71,9 @@ On `bedrock-runtime`, the Responses API attributes usage by [IAM principal](cost
 
 | Feature | `bedrock-runtime` | `bedrock-mantle` |
 | --- | --- | --- |
-| [Guardrails](guardrails.md) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) |
-| [Prompt caching](prompt-caching.md) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
-| [Intelligent prompt routing](prompt-routing.md) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) |
+| [Guardrails](guardrails.md) | ![supported](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![not-supported](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) |
+| [Prompt caching](prompt-caching.md) | ![supported](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![supported](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
+| [Intelligent prompt routing](prompt-routing.md) | ![supported](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![not-supported](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) |
 
 **Note**
 Prompt caching support on `bedrock-mantle` depends on the specific model — see each model card under [Models at a glance](model-cards.md) for details.

@@ -154,4 +154,4 @@ Use the following APIs for AWS Config:
 +  [ListStoredQueries](API_ListStoredQueries.md), lists the stored queries for a single AWS account and a single AWS Region.
 +  [DeleteStoredQuery](API_DeleteStoredQuery.md), deletes the stored query for a single AWS account and a single AWS Region.
 
-This document was last published on August 18, 2026.
+This document was last published on August 24, 2026.

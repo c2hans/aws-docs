@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/voiceid-domain
 **Note**
 End of support notice: On May 20, 2026, AWS will end support for Amazon Connect Customer Voice ID. After May 20, 2026, you will no longer be able to access Voice ID on the Amazon Connect Customer console, access Voice ID features on the Connect Customer admin website or Contact Control Panel, or access Voice ID resources. For more information, visit [Amazon Connect Customer Voice ID end of support](https://docs.aws.amazon.com/connect/latest/adminguide/amazonconnect-voiceid-end-of-support.html).
 
-When you enable Connect Customer Voice ID, you create a Voice ID domain: a container for all Voice ID data, such as speaker identifiers (which serves as the customer identifier), the voiceprints, the customer audio that was used for creating the enrollment voiceprints, and the enrollment statuses (enrolled, opted out, etc.) associated with the speaker identifiers. For detection of fraudsters in a watchlist, the Voice ID domain stores the fraudster identifiers, voiceprints, and audio used for creating the voiceprints.
+When you enable Connect Customer Voice ID, you create a Voice ID domain: a container for all Voice ID data, such as speaker identifiers (which serves as the customer identifier), the voiceprints, the customer audio that was used for creating the enrollment voiceprints, and the enrollment statuses (enrolled, opted out) associated with the speaker identifiers. For detection of fraudsters in a watchlist, the Voice ID domain stores the fraudster identifiers, voiceprints, and audio used for creating the voiceprints.
 
 Following are guidelines for creating Voice ID domains:
 + Each Connect Customer instance can be associated with only one Voice ID domain.
@@ -16,9 +16,9 @@ Following are guidelines for creating Voice ID domains:
 + You can create multiple domains, but they don't share customer data between each other.
 + We recommend creating a new Voice ID domain to associate with a Connect Customer instance when:
   + You are enabling Voice ID for the first time on your account in an AWS Region.
-  + You want to ensure that you isolate the Voice ID domains used for your test and production environments.
+  + You want to make sure that you isolate the Voice ID domains used for your test and production environments.
 + We recommend using an existing Voice ID domain when:
-  + You want to use the same set of enrolled callers and fraudsters across different Connect Customer instances (that may belong to different customer service teams)
+  + You want to use the same set of enrolled callers and fraudsters across different Connect Customer instances (that might belong to different customer service teams)
   + You want to use the same test environment across different test Connect Customer instances.
 **Note**
 Only existing Voice ID domains in the same Region in your Connect Customer account can be shared across Connect Customer instances in that Region.

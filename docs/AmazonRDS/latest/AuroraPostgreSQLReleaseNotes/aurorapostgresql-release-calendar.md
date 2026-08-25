@@ -72,20 +72,24 @@ Dates with only a month and a year are approximate, and will be updated with an 
 </thead>
 <tbody>
   <tr><td colspan="4"><b>18</b></td><td></td><td></td><td></td></tr>
+  <tr><td>18.4</td><td>May 2026</td><td>21 August 2026</td><td>31 December 2027</td><td></td><td></td><td></td></tr>
   <tr><td>18.3</td><td>26 February 2026</td><td>11 June 2026</td><td>30 November 2027</td><td></td><td></td><td></td></tr>
   <tr><td colspan="4"><b>17</b></td><td></td><td></td><td></td></tr>
+  <tr><td>17.10</td><td>May 2026</td><td>21 August 2026</td><td>31 December 2027</td><td></td><td></td><td></td></tr>
   <tr><td>17.9</td><td>26 February 2026</td><td>6 April 2026</td><td>30 September 2027</td><td></td><td></td><td></td></tr>
   <tr><td>17.7 (LTS)</td><td>13 November 2025</td><td>18 December 2025</td><td>28 February 2030</td><td></td><td></td><td></td></tr>
   <tr><td>17.6</td><td>14 August 2025</td><td>25 November 2025</td><td>30 April 2027</td><td></td><td></td><td></td></tr>
   <tr><td>17.5</td><td>8 May 2025</td><td>30 June 2025</td><td>31 December 2026</td><td></td><td></td><td></td></tr>
   <tr><td>17.4</td><td>20 February 2025</td><td>1 May 2025</td><td>30 November 2026</td><td></td><td></td><td></td></tr>
   <tr><td colspan="4"><b>16</b></td><td></td><td></td><td></td></tr>
+  <tr><td>16.14</td><td>May 2026</td><td>21 August 2026</td><td>31 December 2027</td><td></td><td></td><td></td></tr>
   <tr><td>16.13</td><td>26 February 2026</td><td>6 April 2026</td><td>30 September 2027</td><td></td><td></td><td></td></tr>
   <tr><td>16.11</td><td>13 November 2025</td><td>18 December 2025</td><td>31 May 2027</td><td></td><td></td><td></td></tr>
   <tr><td>16.10</td><td>14 August 2025</td><td>25 November 2025</td><td>30 April 2027</td><td></td><td></td><td></td></tr>
   <tr><td>16.9</td><td>8 May 2025</td><td>30 June 2025</td><td>31 December 2026</td><td></td><td></td><td></td></tr>
   <tr><td>16.8 (LTS)</td><td>20 February 2025</td><td>8 April 2025</td><td>28 February 2029</td><td></td><td></td><td></td></tr>
   <tr><td colspan="4"><b>15</b></td><td></td><td></td><td></td></tr>
+  <tr><td>15.18</td><td>May 2026</td><td>21 August 2026</td><td>31 December 2027</td><td></td><td></td><td></td></tr>
   <tr><td>15.17</td><td>26 February 2026</td><td>6 April 2026</td><td>30 September 2027</td><td></td><td></td><td></td></tr>
   <tr><td>15.15</td><td>13 November 2025</td><td>18 December 2025</td><td>31 May 2027</td><td></td><td></td><td></td></tr>
   <tr><td>15.14</td><td>14 August 2025</td><td>25 November 2025</td><td>30 April 2027</td><td></td><td></td><td></td></tr>
@@ -93,6 +97,7 @@ Dates with only a month and a year are approximate, and will be updated with an 
   <tr><td>15.12</td><td>20 February 2025</td><td>8 April 2025</td><td>30 November 2026</td><td></td><td></td><td></td></tr>
   <tr><td>15.10 (LTS)</td><td>21 November 2024</td><td>13 December 2024</td><td>29 February 2028</td><td></td><td></td><td></td></tr>
   <tr><td colspan="4"><b>14</b></td><td></td><td></td><td></td></tr>
+  <tr><td>14.23</td><td>May 2026</td><td>21 August 2026</td><td>28 February 2027</td><td></td><td></td><td></td></tr>
   <tr><td>14.22</td><td>26 February 2026</td><td>6 April 2026</td><td>28 February 2027</td><td></td><td></td><td></td></tr>
   <tr><td>14.20</td><td>13 November 2025</td><td>18 December 2025</td><td>28 February 2027</td><td></td><td></td><td></td></tr>
   <tr><td>14.19</td><td>14 August 2025</td><td>25 November 2025</td><td>28 February 2027</td><td></td><td></td><td></td></tr>

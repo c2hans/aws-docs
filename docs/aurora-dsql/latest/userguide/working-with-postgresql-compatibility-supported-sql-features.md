@@ -41,7 +41,7 @@ Aurora DSQL supports the following PostgreSQL DDL commands.
 | `CREATE` | `TABLE` | For information about the supported syntax of the `CREATE TABLE` command, see [`CREATE TABLE`](create-table-syntax-support.md). |
 | `ALTER` | `TABLE` | For information about the supported syntax of the `ALTER TABLE` command, see [`ALTER TABLE`](alter-table-syntax-support.md). |
 | `DROP` | `TABLE` |  |
-| `CREATE` | `[UNIQUE] INDEX ASYNC` | You can use this command with the following parameters: `ON`, `NULLS FIRST`, `NULLS LAST`.<br />For information about the supported syntax of the `CREATE INDEX ASYNC` command, see [Asynchronous indexes in Aurora DSQL](working-with-create-index-async.md). |
+| `CREATE` | `[UNIQUE] INDEX ASYNC` | Index keys can be column names or expressions. You can also use `INCLUDE`, `NULLS FIRST`, `NULLS LAST`, and `NULLS [NOT] DISTINCT`.<br />See [`CREATE INDEX`](create-index-syntax-support.md) for the supported syntax. |
 | `DROP` | `INDEX` |  |
 | `CREATE` | `VIEW` | For more information about the supported syntax of the `CREATE VIEW` command, see [`CREATE VIEW`](create-view.md).  |
 | ALTER | VIEW | For information about the supported syntax of the `ALTER VIEW` command, see [`ALTER VIEW`](alter-view-syntax-support.md). |
@@ -52,6 +52,11 @@ Aurora DSQL supports the following PostgreSQL DDL commands.
 | `CREATE` | `ROLE`, `WITH` |  |
 | `CREATE` | `FUNCTION` | `LANGUAGE SQL` |
 | `CREATE` | `DOMAIN` |  |
+| `CREATE` | `SCHEMA` | You can nest `CREATE SEQUENCE` and `GRANT` statements in the `CREATE SCHEMA` command. |
+| `ALTER` | `USER`, `ROLE`, `GROUP` | `RENAME TO` |
+| `ALTER` | `ROUTINE` | `SET SCHEMA`, `OWNER TO`, `RENAME TO` |
+| `COMMENT ON` | `ROUTINE` | None |
+| `DROP` | `ROUTINE` | None |
 
 ## Data Manipulation Language (DML)
 <a name="dsql-dml"></a>
@@ -71,8 +76,9 @@ Aurora DSQL supports the following PostgreSQL DCL commands.
 
 | Command | Supported clauses |
 | --- | --- |
-| `GRANT` | `ON`, `TO` |
-| `REVOKE` | `ON`, `FROM`, `CASCADE`, `RESTRICT` |
+| `GRANT` | `ON`, `TO`<br />Supported object types include `ROUTINE`. |
+| `REVOKE` | `ON`, `FROM`, `CASCADE`, `RESTRICT`<br />Supported object types include `ROUTINE`. |
+| `ALTER DEFAULT PRIVILEGES` | Configure default privileges for `TABLE`, `SEQUENCE`, `FUNCTION`, and `TYPE` objects. |
 
 ## Transaction Control Language (TCL)
 <a name="dsql-tcl"></a>

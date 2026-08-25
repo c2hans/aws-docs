@@ -80,7 +80,7 @@ Following is an example workflow to claim phone numbers and use them across mult
 
 Your [ClaimPhoneNumber](https://docs.aws.amazon.com/connect/latest/APIReference/API_ClaimPhoneNumber.html) API call will fail with a `ResourceNotFoundException` in the following cases:
 + The specified traffic distribution group does not exist, the status of the traffic distribution group is not `ACTIVE`, or you do not have ownership of the traffic distribution group.
-+ The phone number is not available for claiming. In some cases, a phone number found from [SearchAvailablePhoneNumbers](https://docs.aws.amazon.com/connect/latest/APIReference/API_SearchAvailablePhoneNumbers.html) may have been claimed by another customer.
++ The phone number is not available for claiming. In some cases, a phone number found from [SearchAvailablePhoneNumbers](https://docs.aws.amazon.com/connect/latest/APIReference/API_SearchAvailablePhoneNumbers.html) might have been claimed by another customer.
 
 [ClaimPhoneNumber](https://docs.aws.amazon.com/connect/latest/APIReference/API_ClaimPhoneNumber.html) will fail with a `InvalidParameterException` error in the following case:
 + The endpoint you are calling is not in the same Region where the traffic distribution group was created.

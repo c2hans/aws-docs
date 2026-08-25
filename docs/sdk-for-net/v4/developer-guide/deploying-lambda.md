@@ -83,3 +83,5 @@ If you deploy a function that already exists in your account, the deploy functio
 After your Lambda function is deployed, it's ready to use. For more information, see [Examples of How to Use AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/use-cases.html).
 
 Lambda automatically monitors Lambda functions for you and reports metrics through Amazon CloudWatch. To monitor and troubleshoot your Lambda function, see [Monitoring and troubleshooting Lambda applications](https://docs.aws.amazon.com/lambda/latest/dg/monitoring-functions.html).
+
+To help your functions run efficiently in the memory-constrained environment of Lambda, including how to configure .NET garbage collection, see [Performance best practices](net-dg-performance.md).

@@ -15,7 +15,7 @@ Connect Customer supports the following scenarios for migrating phone numbers:
 **Topics**
 + [Important things to know](#move-number-important)
 + [Self-move: same Region and AWS account](#move-number-same-region-account)
-+ [Different Regions and/or AWS account](#move-number-different-region-account)
++ [Different Regions or AWS account](#move-number-different-region-account)
 
 ## Important things to know
 <a name="move-number-important"></a>
@@ -23,8 +23,8 @@ Connect Customer supports the following scenarios for migrating phone numbers:
 The following information applies to phone number migrations that are performed by AWS Support.
 + If your new instance ARN belongs to traffic distribution group, you need to provide AWS Support with the instance and traffic distribution group ARNs. To obtain the traffic distribution group ARN, run a [list-traffic-distribution-groups](https://docs.aws.amazon.com/cli/latest/reference/connect/list-traffic-distribution-groups.html) CLI command.
 + AWS Support can schedule migrations anytime between Monday and Friday. Exceptions to this are local National Holidays when no phone number migrations can be scheduled.
-+ When the migration date and time arrives, you must make sure the phone number is no longer configured as the outbound callback number on any of your queues. Otherwise, this will prevent AWS Support from migrating the number and it may delay the process.
-+ The migration of each phone number takes between 20-30 minutes. During a phone number migration, **calls may be blocked and may fail for the number being migrated**.
++ When the migration date and time arrives, you must make sure the phone number is no longer configured as the outbound callback number on any of your queues. Otherwise, this will prevent AWS Support from migrating the number and it might delay the process.
++ The migration of each phone number takes between 20-30 minutes. During a phone number migration, **calls might be blocked and might fail for the number being migrated**.
 + To eliminate additional downtime, if you're associating a flow to a migrated phone number in the new Connect Customer instance, make sure the flow exists and is published in the new Connect Customer instance. Provide AWS Support with the flow ARN so they can associate it with the phone number when they do the migration.
 + Depending on the phone number, migration might not be possible. You'll be contacted through your AWS Support case if this applies to your request. Refer to the [Connect Customer Telecoms Country Coverage Guide](https://d1v2gagwb6hfe1.cloudfront.net/Amazon_Connect_Telecoms_Coverage.pdf) for regional availability of phone numbers in certain countries.
 + After your phone number is migrated, you must set the outbound number on your queues. This cannot be done by AWS Support.
@@ -41,7 +41,7 @@ If you receive errors when running AWS CLI commands, make sure that you're using
 
 For instructions and sample CLI commands, see [How do I migrate phone numbers from one Connect Customer instance to another?](https://repost.aws/knowledge-center/connect-migrate-phone-number)
 
-## Different Regions and/or AWS account
+## Different Regions or AWS account
 <a name="move-number-different-region-account"></a>
 
 When the old and new Connect Customer instances are located in different Regions, but the same AWS account, complete the following steps to create a single AWS Support case.

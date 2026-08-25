@@ -21,6 +21,7 @@ This topic lists the AWS Regions where Connect Customer features are available.
 + [Customer authentication](#customerauthentication_region)
 + [Customer Profiles](#customerprofiles_region)
 + [Customer Profiles calculated attributes API](#customerprofiles_calculatedattributesregion)
++ [External Tool](#externaltool_region)
 + [Forecasting & agent scheduling](#optimization_region)
 + [Amazon Connect agentic voice](#gv_region)
 + [Global Resiliency](#gr_region)
@@ -236,6 +237,18 @@ The calculated attributes API is available in the following AWS Regions:
 + Asia Pacific (Singapore)
 + Asia Pacific (Sydney)
 + Asia Pacific (Tokyo)
++ Canada (Central)
++ Europe (Frankfurt)
++ Europe (London)
+
+## External Tool
+<a name="externaltool_region"></a>
++ US East (N. Virginia)
++ US West (Oregon)
++ Asia Pacific (Tokyo)
++ Asia Pacific (Seoul)
++ Asia Pacific (Singapore)
++ Asia Pacific (Sydney)
 + Canada (Central)
 + Europe (Frankfurt)
 + Europe (London)

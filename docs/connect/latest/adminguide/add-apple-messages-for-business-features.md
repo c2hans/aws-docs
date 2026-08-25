@@ -43,7 +43,7 @@ Authentication allows customers to sign in to your Identity Provider(s) of choic
 
 You can give your customers the ability to start a conversation with you from your website or an email message.
 
-For example, customers may start a chat using a URL that you provide. When they choose the URL, the system redirects them to Messages so they can send your business a text message.
+For example, customers might start a chat using a URL that you provide. When they choose the URL, the system redirects them to Messages so they can send your business a text message.
 
 You decide how and where to provide the URL. You can include it as a link in an email message, on your website, or use it as the action for a button in your app.
 

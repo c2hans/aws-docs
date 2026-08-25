@@ -86,8 +86,8 @@ Required: No
  ** [NextToken](#API_ListEntities_RequestSyntax) **   <a name="AWSMarketplaceService-ListEntities-request-NextToken"></a>
 The value of the next token, if it exists. Null if there are no more results.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 2048.
-Pattern: `^[\w+=.:@\-\/]$`
+Length Constraints: Minimum length of 1. Maximum length of 4096.
+Pattern: `^[\w+=.:@\-\/]+$`
 Required: No
 
  ** [OwnershipType](#API_ListEntities_RequestSyntax) **   <a name="AWSMarketplaceService-ListEntities-request-OwnershipType"></a>
@@ -142,12 +142,15 @@ Content-type: application/json
          "OfferSummary": {
             "AvailabilityEndDate": "string",
             "BuyerAccounts": [ "string" ],
+            "CreatedBySource": "string",
             "Name": "string",
             "OfferSetId": "string",
             "ProductId": "string",
             "ReleaseDate": "string",
             "ResaleAuthorizationId": "string",
             "State": "string",
+            "TargetAgreementId": "string",
+            "TargetAgreementIntent": "string",
             "Targeting": [ "string" ]
          },
          "ResaleAuthorizationSummary": {
@@ -161,6 +164,7 @@ Content-type: application/json
             "ProductName": "string",
             "ResellerAccountID": "string",
             "ResellerLegalName": "string",
+            "ResellerRole": "string",
             "Status": "string"
          },
          "SaaSProductSummary": {
@@ -188,8 +192,8 @@ Type: Array of [EntitySummary](API_EntitySummary.md) objects
  ** [NextToken](#API_ListEntities_ResponseSyntax) **   <a name="AWSMarketplaceService-ListEntities-response-NextToken"></a>
 The value of the next token if it exists. Null if there is no more result.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 2048.
-Pattern: `^[\w+=.:@\-\/]$`
+Length Constraints: Minimum length of 1. Maximum length of 4096.
+Pattern: `^[\w+=.:@\-\/]+$`
 
 ## Errors
 <a name="API_ListEntities_Errors"></a>

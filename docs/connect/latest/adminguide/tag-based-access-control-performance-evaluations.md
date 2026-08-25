@@ -10,8 +10,8 @@ Connect Customer enables businesses to restrict access to specific performance e
 You can start by tagging evaluation forms, for example "Department: New customer". When you tag an evaluation form, all subsequent evaluations filled with the evaluation form also carry the same tag. You can then enable tag-based access controls to evaluation forms and evaluations within the security profiles of users for whom you wish to restrict access to specific evaluation forms and evaluations. Once tag-based-access control on evaluation forms is enabled, users will be able to modify only specific evaluation forms on the **Evaluation forms** page. On Contact Search, users will only be able to search for evaluation forms for which they have access, and use the evaluation forms to start evaluations. Similarly within Connect Customer **Dashboards**, users will only be able to view aggregated scores for evaluation forms for which they have access. Tag-based access control on evaluations restricts users to only be able to view specific evaluations on the **Contact Details** page. For example, if a specific evaluation should only be visible to certain personas, such as fraud investigation, then you can restrict agents from viewing those evaluations on the Contact Details page.
 
 **Important Notes**
-Once you enable tag based access control on evaluations, users will lose access to any evaluations before tagging the evaluation form. If you are already using performance evaluations, we recommend to first tag evaluation forms and accumulate evaluations over several months, before enabling tag based access to evaluations.
-We recommend using a single tag on an evaluation form (e.g. "Department: New customer") while configuring tag-based access. While assigning and permitting access on multiple tags is possible, it creates complexity. This is discussed in more detail below.
+After you enable tag based access control on evaluations, users will lose access to any evaluations before tagging the evaluation form. If you are already using performance evaluations, we recommend to first tag evaluation forms and accumulate evaluations over several months, before enabling tag based access to evaluations.
+We recommend using a single tag on an evaluation form (for example, "Department: New customer") while configuring tag-based access. While assigning and permitting access on multiple tags is possible, it creates complexity. This is discussed in more detail below.
 
 ## Tagging evaluation forms
 <a name="tagging-evaluation-forms"></a>
@@ -65,9 +65,9 @@ Tags are copied over only to new evaluations. If you have existing evaluations, 
 ![The tag-based access control setup screen.](http://docs.aws.amazon.com/connect/latest/adminguide/images/evaluationforms-tags-tbac-setup.png)
 
 If you have existing evaluations, then enabling tag-based access to contact evaluations will result in individuals who already have access to evaluations losing access to historical evaluations. To retain access to historical evaluations you can:
-+ Start by tagging forms. This would result in any evaluations performed subsequently carrying the same tag. Once you have accumulated several months' evaluations you can enable tag-based-access.
++ Start by tagging forms. This would result in any evaluations performed subsequently carrying the same tag. After you have accumulated several months' evaluations you can enable tag-based-access.
 + Your technical administrator can use the [TagResource](https://docs.aws.amazon.com/connect/latest/APIReference/API_TagResource.html) API to tag any historical evaluations.
-+ Enable tag-based access on **evaluation forms** but not **contact evaluations**. This may be desirable in situations where there is already security that limits access to which contacts are accessible. For example, supervisors may already be restricted to access contacts within their own hierarchy, and you may want to grant your supervisors access to all evaluations on those contacts.
++ Enable tag-based access on **evaluation forms** but not **contact evaluations**. This might be desirable in situations where there is already security that limits access to which contacts are accessible. For example, supervisors might already be restricted to access contacts within their own hierarchy, and you might want to grant your supervisors access to all evaluations on those contacts.
 
 If you have enabled tag-based access control on **Contact Evaluations**, it is recommended to have consistency with tag-based-access on the **Evaluation Forms**. It is also recommended that users' security profiles have access to all tags on the form(s) that they need to use. For example, if a user needs to use a form with tags "Department: New customer", "Product: Auto Insurance", their security profile should have access control enabled for both these tags across both **Evaluation Forms** and **Contact Evaluations**. If they have only one of the tags, then creating an evaluation manually in the UI will fail.
 
@@ -78,12 +78,12 @@ Tag-based-access-control can be used to run automated evaluation tests in produc
 + On the **Evaluation forms** page, tag evaluation forms that are live and should be visible to agents and supervisors as "Live: Yes"
 + On **Users > Security Profiles**, you can turn on tag-based access control on **Evaluation Forms** and **Evaluations**, restricting agent and supervisors access to forms with the tag "Live:Yes"
 **Note**
-Before enabling tag-based-access-control, you may want sufficient history to accumulate, e.g. 2 months of evaluations, as this would result in a loss in historical evaluations
+Before enabling tag-based-access-control, you might want sufficient history to accumulate, for example, 2 months of evaluations, as this would result in a loss in historical evaluations
 + Automated evaluation forms that are still under testing can be tagged as "Live:No", preventing them from being visible by agents and supervisors
 + Quality managers responsible for creating evaluation forms can be granted access to evaluation forms without tag-based restrictions. Alternatively, you can assign two security profiles to quality managers:
   + The first would grant them access to **Evaluation Forms** and **Evaluations** with the tag "Live: No"
   + The second would grant them access to **Evaluation Forms** and **Evaluations** with the tag "Live: Yes"
-+ Once you are ready to go live with automated evaluations, you can duplicate the form, and change the tag to "Live: Yes". The original form when it was under testing should continue carrying the tag "Live: No". This ensures that supervisors and agents cannot see historical aggregated evaluation scores in **Dashboards** when the form was under testing.
++ After you are ready to go live with automated evaluations, you can duplicate the form, and change the tag to "Live: Yes". The original form when it was under testing should continue carrying the tag "Live: No". This makes sure that supervisors and agents cannot see historical aggregated evaluation scores in **Dashboards** when the form was under testing.
 
 ## Tag Based Access Control while setting up rules to submit automated evaluations
 <a name="tag-based-access-automated-evaluations"></a>

@@ -120,7 +120,7 @@ The following tables list:
 | Agent status - Edit | AgentStates.Edit | Edit a custom agent status. |
 | Agent status - Enable/Disable | AgentStates.EnableAndDisable | View and edit custom agent states. |
 | Agent status - View | AgentStates.View | [View an agent's status in the real-time metrics report](rtm-change-agent-activity-state.md) and historical metrics report. For example, if they are **Available**, **Offline**, or in a custom state. View their status in the [Agent activity report](agent-activity-audit-report.md). |
-| Workspaces - Create | Workspaces.Create | [Set up workspaces for your admin website users](amazon-connect-workspaces.md). |
+| Workspaces - Create | Workspaces.Create | [Set up workspaces for your business users](amazon-connect-workspaces.md). |
 | Workspaces - Delete | Workspaces.Delete | Delete workspaces. |
 | Workspaces - Edit | Workspaces.Edit | Edit workspaces. |
 | Workspaces - View | Workspaces.View | View workspaces. |
@@ -158,7 +158,7 @@ The following tables list:
 | Custom metrics | CustomMetrics.Create<br />CustomMetrics.View<br />CustomMetrics.Edit<br />CustomMetrics.Delete<br />CustomMetrics.Publish |  Grants access to [create and manage custom service level metric calculations](dashboard-customize-widgets.md#dashboard-custom-sl) for any widget on a dashboard. |
 | Contact Search | ContactSearch.View | Access the **Contact search** page, which is where users can [search for contacts](contact-search.md) and see results on the **Contact details** page. |
 | View my contacts | MyContacts.View | Allows agents to view contacts that they themselves had handled, on **Contact search** and **Contact details** pages. |
-| Sample contacts | ContactSearchSampleContacts.View | Find a [random sample of contacts](random-sampling-of-contacts-for-evaluation.md) for evaluating agent performance and contact quality, e.g. 5 contacts per agent from last month. |
+| Sample contacts | ContactSearchSampleContacts.View | Find a [random sample of contacts](random-sampling-of-contacts-for-evaluation.md) for evaluating agent performance and contact quality, for example, 5 contacts per agent from last month. |
 | Search contacts by conversation characteristics | ContactSearchWithCharacteristics.Access | Access to the conversational analytics filters that enable users to search by sentiment scores, non-talk time, and category. |
 | Search contacts by conversation characteristics - View | ContactSearchWithCharacteristics.View | View the conversational analytics filters that enable users to search by sentiment scores, non-talk time, and category.  |
 | Search contacts by keywords | ContactSearchWithKeywords.Access | Search for contacts by keyword. On the **Contact Search** page, users can access additional filters that allow them to search conversational analytics transcripts by keywords or phrases, such as "thank you for your business." |

@@ -114,7 +114,7 @@ The first step in testing the task experience is to create a quick connect for t
 ## View metrics for the test experiences
 <a name="test-metrics"></a>
 
-When you're testing the voice, chat, and task experiences, you may also want to explore metrics.
+When you're testing the voice, chat, and task experiences, you might also want to explore metrics.
 
 1. On the left navigation menu, choose **Analytics and optimization**, **Real-time metrics**, **Queues**.
 

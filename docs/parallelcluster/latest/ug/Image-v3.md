@@ -20,7 +20,7 @@ Image:
 <a name="Image-v3.properties"></a>
 
 `Os` (**Required**, `String`)
-Specifies the operating system to use for the cluster. The supported values are `alinux2`, `alinux2023`, `ubuntu2404`, `ubuntu2204`, `rhel8`, `rocky8`, `rhel9`, `rocky9`.
+Specifies the operating system to use for the cluster. The supported values are `alinux2023`, `ubuntu2404`, `ubuntu2204`, `rhel8`, `rocky8`, `rhel9`, `rocky9`.
 If you configure your cluster to use `rhel`, the on-demand cost for any instance type is higher than when you configure your cluster to use other supported operation systems. For more information about pricing, see [On-Demand Pricing ](https://aws.amazon.com/ec2/pricing/on-demand) and [How is Red Hat Enterprise Linux on Amazon EC2 offered and priced?](https://aws.amazon.com/partners/redhat/faqs/#Pricing_and_Billing).
 Red Hat Enterprise Linux 8.7 (`rhel8`) is added starting in AWS ParallelCluster version 3.6.0.
 Red Hat Enterprise Linux 9 (`rhel9`) is added starting in AWS ParallelCluster version 3.9.0.

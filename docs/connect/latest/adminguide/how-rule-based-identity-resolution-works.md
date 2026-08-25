@@ -87,7 +87,7 @@ If you are enabling the rule-based matching with an existing domain, the system 
 + **All attributes in an attribute type selector are connected with an *OR* relationship**
   + When specifying attributes within the attribute type selector, attributes of the same type are linked through an OR relationship. For instance, consider the PhoneNumber Type where HomePhoneNumber and BusinessPhoneNumber are used. In this scenario, two profiles can be matched if either their HomePhoneNumber or BusinessPhoneNumber aligns. Consequently, the matching process allows for flexible matches based on either home or business phone numbers.
 + **The match result is eventually optimized.**
-  + Due to the near real-time nature of profile matching in the system, there is a possibility that a match group for your profile may be found at a lower (less optimized) rule level. Nevertheless, if a match is available at a higher (more optimized) rule level, the system will assign the profile to that particular group.
+  + Due to the near real-time nature of profile matching in the system, there is a possibility that a match group for your profile might be found at a lower (less optimized) rule level. Nevertheless, if a match is available at a higher (more optimized) rule level, the system will assign the profile to that particular group.
 
 **Note**
 When Identity Resolution performs rule-based matching, the order in which the rules that you have configured will be processed is dependant on how the data is ingested. For example, If you configure rules 1 and 2, rule 2 might be processed before rule 1. The processing order might change, but the end result will always be the same.

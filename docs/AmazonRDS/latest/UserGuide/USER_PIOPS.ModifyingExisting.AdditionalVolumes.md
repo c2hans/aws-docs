@@ -20,6 +20,9 @@ The additional volumes must use the volume names shown in the following table.
 | rdsdbdata3 | I: |
 | rdsdbdata4 | J: |
 
+**Note**
+Support for additional storage volumes depends on the DB engine and DB instance configuration. Before you add a storage volume, review the engine-specific requirements and limitations. For RDS for Oracle, see [Limitations of using additional storage volumes with RDS for Oracle](User_Oracle_AdditionalStorage.md#User_Oracle_AdditionalStorage.limitations). For RDS for SQL Server, see [Working with storage in RDS for SQL Server](Appendix.SQLServer.CommonDBATasks.DatabaseStorage.md).
+
 ## Console
 <a name="USER_PIOPS.ModifyingExisting.AdditionalVolumes.console"></a>
 
@@ -29,11 +32,11 @@ The additional volumes must use the volume names shown in the following table.
 
 1. In the navigation pane, choose **Databases**.
 
-1. Choose the DB instance that you want to modify.
+1. Choose the DB instance that you want to modify. The details page for the DB instance opens.
 
-1. Choose **Modify**.
+1. Choose the **Configuration** tab.
 
-1. In the **Storage** section, choose **Add additional storage volume**.
+1. Choose **Add storage volume**.
 
 1. Configure the additional storage volume:
    + **Volume name** – Choose `rdsdbdata2`, `rdsdbdata3`, or `rdsdbdata4`.
@@ -42,9 +45,7 @@ The additional volumes must use the volume names shown in the following table.
    + For io2 storage, configure **Provisioned IOPS**.
    + For gp3 storage, optionally configure **Storage throughput**.
 
-1. Choose **Continue**.
-
-1. When the settings are as you want them, choose **Modify DB instance**.
+1. For **Scheduling**, choose **Apply immediately**, and then choose **Submit**.
 
 **Important**
 When you are adding an additional storage volume using the `modify-db-instance` operation, the RDS adds the storage volume immediately regardless of the `--no-apply-immediately` parameter. If you have other modifications in the request, RDS applies them based on the schedule modifications. See [Using the schedule modifications setting](USER_ModifyInstance.ApplyImmediately.md).

@@ -83,6 +83,11 @@ This approach should be used for testing and development purposes only. It is no
 + The traffic from clients to the NAT instance is unencrypted. Therefore, you should avoid sending sensitive data via the NAT instance.
 + The NAT instance adds the overhead of maintaining another instance.
 + The NAT instance serves as a single point of failure. For high availability, consider using a [NAT gateway](https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpc-nat-gateway.html) instead.
++ This approach does not work with Valkey or Redis OSS (cluster mode enabled). In cluster mode, clients follow `MOVED` and `ASK` redirects to the cluster's internal node addresses. These addresses are not reachable through the static port-forwarding rules (iptables) on the NAT instance. Use this approach only with Memcached or with cluster mode disabled.
+
+**Security considerations for external access**
+Port forwarding relays a cache port to a public Elastic IP address. If the NAT instance's security group allows access from a broad range of source addresses, this can expose your cache to the internet. Memcached provides no built-in authentication, and the NAT instance does not encrypt traffic in transit. Restrict the NAT instance security group to the specific trusted client IP addresses that require access. Do not send sensitive data through this connection.
+This approach cannot provide encrypted, authenticated access to the cache. For in-transit encryption with Transport Layer Security (TLS), connect to an encryption-enabled cache from within the VPC. Alternatively, use [AWS Site-to-Site VPN](https://docs.aws.amazon.com/vpn/latest/s2svpn/VPC_VPN.html) or [AWS Client VPN](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/what-is.html) for external access. For more information, see [ElastiCache in-transit encryption (TLS)](in-transit-encryption.md).
 
 #### How to access ElastiCache resources from outside AWS
 <a name="access-from-outside-aws-how-to"></a>

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/getting-started
 # Quickstart
 <a name="getting-started"></a>
 
-Get started with Amazon Bedrock in minutes. For new applications, we recommend the `bedrock-runtime` endpoint. The following steps walk you through running your first inference request using the Anthropic-native [Messages API](inference-messages-api.md), the OpenAI-compatible [Responses API](bedrock-mantle.md) and [Chat Completions API](inference-chat-completions.md), and the [Converse](conversation-inference.md) and [Invoke](inference-invoke.md) APIs. For a complete list of APIs, see [Build](build.md). After you complete these steps, you can send inference requests to any supported foundation model.
+Get started with Amazon Bedrock in minutes. For new applications, we recommend the [`bedrock-runtime`](endpoints.md) endpoint. The following steps walk you through running your first inference request using the Anthropic-native [Messages API](inference-messages-api.md), the OpenAI-compatible [Responses API](bedrock-mantle.md) and [Chat Completions API](inference-chat-completions.md), and the [Converse](conversation-inference.md) and [Invoke](inference-invoke.md) APIs. For a complete list of APIs, see [Build](build.md). After you complete these steps, you can send inference requests to any supported foundation model.
 
 **To run your first inference request**
 
@@ -25,7 +25,7 @@ Get started with Amazon Bedrock in minutes. For new applications, we recommend t
 #### [ Messages API ]
 
    ```
-   pip install boto3 anthropic
+   pip install anthropic aws-bedrock-token-generator
    ```
 
 ------
@@ -51,6 +51,7 @@ Get started with Amazon Bedrock in minutes. For new applications, we recommend t
 
    ```
    AWS_BEARER_TOKEN_BEDROCK="<provide your Bedrock API key>"
+   ANTHROPIC_BASE_URL="https://bedrock-runtime.<your-region>.amazonaws.com/anthropic"
    ```
 
 ------
@@ -80,9 +81,12 @@ Get started with Amazon Bedrock in minutes. For new applications, we recommend t
 #### [ Messages API ]
 
       ```
-      from anthropic import AnthropicBedrock
+      from anthropic import Anthropic
+      from aws_bedrock_token_generator import provide_token
 
-      client = AnthropicBedrock(aws_region="us-east-1")
+      token = provide_token(region="us-east-1")
+
+      client = Anthropic(api_key=token)
 
       response = client.messages.create(
           model="global.anthropic.claude-opus-5",
@@ -172,7 +176,7 @@ Get started with Amazon Bedrock in minutes. For new applications, we recommend t
 
       You should see the output of your inference request.
 
-To learn more about using other APIs and endpoints, see [Build](build.md).
+To learn more about using other APIs and endpoints, see [Build](build.md) and [Endpoints supported by Amazon Bedrock](endpoints.md).
 
 ## Next steps
 <a name="getting-started-next-steps"></a>

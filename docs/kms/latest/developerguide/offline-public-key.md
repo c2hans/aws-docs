@@ -28,7 +28,7 @@ To protect your KMS keys, AWS KMS provides access controls, authenticated encryp
 [Key policies](key-policies.md) and [IAM policies](iam-policies.md) that control access to the KMS key within AWS KMS have no effect on operations performed outside of AWS. Any user who can get the public key can use it outside of AWS KMS even if they don't have permission to encrypt data or verify signatures with the KMS key.
 
 **Key usage restrictions**
-Key usage restrictions are not effective outside of AWS KMS. If you call the [Encrypt](https://docs.aws.amazon.com/kms/latest/APIReference/API_Encrypt.html) operation with a KMS key that has a `KeyUsage` of `SIGN_VERIFY`, the AWS KMS operation fails. But if you encrypt data outside of AWS KMS with a public key from a KMS key with a `KeyUsage` of `SIGN_VERIFY` or `KEY_AGREEMENT`, the data cannot be decrypted.
+Key usage restrictions are not effective outside of AWS KMS. An RSA key pair is structurally the same whether its key usage is `ENCRYPT_DECRYPT` or `SIGN_VERIFY`. So you can use the downloaded public key of a `SIGN_VERIFY` RSA KMS key to encrypt data outside of AWS KMS. However, AWS KMS can't decrypt that data using the corresponding private key. AWS KMS enforces key usage for the operations it performs, so it rejects [Decrypt](https://docs.aws.amazon.com/kms/latest/APIReference/API_Decrypt.html) requests on a `SIGN_VERIFY` key.
 
 **Algorithm restrictions**
 Restrictions on the encryption and signing algorithms that AWS KMS supports are not effective outside of AWS KMS. If you encrypt data with the public key from a KMS key outside of AWS KMS, and use an encryption algorithm that AWS KMS does not support, the data cannot be decrypted.

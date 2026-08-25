@@ -23,6 +23,11 @@ Allows filtering on the `BuyerAccounts` of an offer.
 Type: [OfferBuyerAccountsFilter](API_OfferBuyerAccountsFilter.md) object
 Required: No
 
+ ** CreatedBySource **   <a name="AWSMarketplaceService-Type-OfferFilters-CreatedBySource"></a>
+Allows filtering on the `CreatedBySource` of an offer.
+Type: [OfferCreatedBySourceFilter](API_OfferCreatedBySourceFilter.md) object
+Required: No
+
  ** EntityId **   <a name="AWSMarketplaceService-Type-OfferFilters-EntityId"></a>
 Allows filtering on `EntityId` of an offer.
 Type: [OfferEntityIdFilter](API_OfferEntityIdFilter.md) object
@@ -62,6 +67,16 @@ Required: No
  ** State **   <a name="AWSMarketplaceService-Type-OfferFilters-State"></a>
 Allows filtering on the `State` of an offer.
 Type: [OfferStateFilter](API_OfferStateFilter.md) object
+Required: No
+
+ ** TargetAgreementId **   <a name="AWSMarketplaceService-Type-OfferFilters-TargetAgreementId"></a>
+Allows filtering on the `TargetAgreementId` of an offer.
+Type: [OfferTargetAgreementIdFilter](API_OfferTargetAgreementIdFilter.md) object
+Required: No
+
+ ** TargetAgreementIntent **   <a name="AWSMarketplaceService-Type-OfferFilters-TargetAgreementIntent"></a>
+Allows filtering on the `TargetAgreementIntent` of an offer.
+Type: [OfferTargetAgreementIntentFilter](API_OfferTargetAgreementIntentFilter.md) object
 Required: No
 
  ** Targeting **   <a name="AWSMarketplaceService-Type-OfferFilters-Targeting"></a>

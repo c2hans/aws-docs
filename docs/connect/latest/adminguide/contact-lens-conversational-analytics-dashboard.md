@@ -33,7 +33,7 @@ Data visualizations such as **Movers and shakers** display the largest changes c
    + **Access metrics - Access permission** or the **Dashboard - Access permission**. For information about the difference in behavior, see [Assign permissions to view dashboards and reports in Connect Customer](dashboard-required-permissions.md).
    + **conversational analytics - conversational analytics**: This permission enables users to view data in the conversational analytics dashboard.
 
-1. In the AWS console, ensure that **Analytics tools**, **Enable conversational analytics** is selected, as shown in the following image.
+1. In the AWS console, make sure that **Analytics tools**, **Enable conversational analytics** is selected, as shown in the following image.
 ![The Enable conversational analytics checkbox in the AWS console.](http://docs.aws.amazon.com/connect/latest/adminguide/images/dashboards-enable-contact-lens-checkbox.png)
 
 1. In your flow, enable conversational analytics so it analyzes your contacts. For instructions, see [Enable call recording and speech analytics](enable-analytics.md#enable-callrecording-speechanalytics).
@@ -115,7 +115,7 @@ The contact count by queue chart displays the count of contacts for each queue, 
 **Note**
 This section of the dashboard displays data even when conversational analytics is not enabled on any contacts.
 
-The Contacts handled and average handle time trend is a time-series chart that displays the count of contacts handled (blue bars) and the average handle time (red line) over a given time period broken down by intervals (15min, daily, weekly, monthly). You can configure different time range intervals by using the "Interval" button directly in the widget. The intervals that you may select depend on the page-level time range filter.
+The Contacts handled and average handle time trend is a time-series chart that displays the count of contacts handled (blue bars) and the average handle time (red line) over a given time period broken down by intervals (15min, daily, weekly, monthly). You can configure different time range intervals by using the "Interval" button directly in the widget. The intervals that you might select depend on the page-level time range filter.
 
 For example:
 + If you have a "Today" time range filter on your dashboard, you can only see an interval of 15min for the last 24 hours.

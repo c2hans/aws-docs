@@ -41,7 +41,7 @@ Type: String
 Required: No
 
  ** networkConfiguration **   <a name="Batch-Type-EcsTaskProperties-networkConfiguration"></a>
-The network configuration for jobs that are running on Fargate resources. Jobs that are running on Amazon EC2 resources must not specify this parameter.
+The network configuration for jobs that are running on Fargate resources. Jobs that are running on Amazon EC2 resources or Amazon ECS Managed Instances must not specify this parameter.
 Type: [NetworkConfiguration](API_NetworkConfiguration.md) object
 Required: No
 
@@ -59,7 +59,8 @@ Type: String
 Required: No
 
  ** runtimePlatform **   <a name="Batch-Type-EcsTaskProperties-runtimePlatform"></a>
-An object that represents the compute environment architecture for AWS Batch jobs on Fargate.
+An object that represents the compute environment architecture for AWS Batch jobs on Fargate or Amazon ECS Managed Instances. Use this to specify the operating system family (`operatingSystemFamily`) and CPU architecture (`cpuArchitecture`).
+For Amazon ECS Managed Instances, the valid value for `operatingSystemFamily` is `LINUX` (default). The valid values for `cpuArchitecture` are `X86_64` and `ARM64`.
 Type: [RuntimePlatform](API_RuntimePlatform.md) object
 Required: No
 

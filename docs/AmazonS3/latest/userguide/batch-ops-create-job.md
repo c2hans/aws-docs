@@ -289,7 +289,7 @@ Batch Operations jobs that perform actions on directory buckets require specific
         --role-name {{S3BatchJobRole}} \
         --policy-name {{PutObjectTaggingBatchJobPolicy}} \
         --policy-document '{
-        "Version": "2012-10-17"		 	 	 ,		 	 	 TCX5-2025-waiver;,
+        "Version": "2012-10-17",
         "Statement":[
           {
             "Effect":"Allow",
@@ -365,7 +365,7 @@ The following example shows how to create an S3 Batch Operations `S3DeleteObject
       aws iam create-role \
        --role-name {{S3BatchJobRole}} \
        --assume-role-policy-document '{
-         "Version": "2012-10-17"		 	 	 ,		 	 	 TCX5-2025-waiver;,
+         "Version": "2012-10-17",
          "Statement":[
             {
                "Effect":"Allow",
@@ -396,7 +396,7 @@ Batch Operations jobs that perform actions on directory buckets require specific
         --role-name {{S3BatchJobRole}} \
         --policy-name {{DeleteObjectTaggingBatchJobPolicy}} \
         --policy-document '{
-        "Version": "2012-10-17"		 	 	 ,		 	 	 TCX5-2025-waiver;,
+        "Version": "2012-10-17",
         "Statement":[
           {
             "Effect":"Allow",

@@ -43,6 +43,8 @@ You can restore an entire Amazon EC2 instance from a single recovery point, incl
 1. In the **Network settings** pane, we use the settings from the protected instance to select the default values for the instance type, VPC, subnet, security group, and instance IAM role. You can use these default values or change them as needed.
 
 1. In the **Restore role** pane, use the **Default role** or use **Choose an IAM role** to specify an IAM role that grants AWS Backup permission to restore the backup.
+**Note**
+If role manager is enabled in your account, AWS Backup selects the default service role for you, and a **Customize** option is available. For more information, see [IAM role creation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html) in the *IAM User Guide*.
 
 1. In the **Protected resource tags** pane, we select **Copy tags from the protected resource to the restored resource** by default. If you do not want to copy these tags, clear the check box.
 

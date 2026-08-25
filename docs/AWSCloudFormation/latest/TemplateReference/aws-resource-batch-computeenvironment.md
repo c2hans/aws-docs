@@ -51,6 +51,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[ComputeEnvironmentName](#cfn-batch-computeenvironment-computeenvironmentname)" : {{String}},
       "[ComputeResources](#cfn-batch-computeenvironment-computeresources)" : {{ComputeResources}},
       "[Context](#cfn-batch-computeenvironment-context)" : {{String}},
+      "[EcsSettings](#cfn-batch-computeenvironment-ecssettings)" : {{EcsSettings}},
       "[EksConfiguration](#cfn-batch-computeenvironment-eksconfiguration)" : {{EksConfiguration}},
       "[ReplaceComputeEnvironment](#cfn-batch-computeenvironment-replacecomputeenvironment)" : {{Boolean}},
       "[ServiceRole](#cfn-batch-computeenvironment-servicerole)" : {{String}},
@@ -73,6 +74,8 @@ Properties:
   [ComputeResources](#cfn-batch-computeenvironment-computeresources): {{
     ComputeResources}}
   [Context](#cfn-batch-computeenvironment-context): {{String}}
+  [EcsSettings](#cfn-batch-computeenvironment-ecssettings): {{
+    EcsSettings}}
   [EksConfiguration](#cfn-batch-computeenvironment-eksconfiguration): {{
     EksConfiguration}}
   [ReplaceComputeEnvironment](#cfn-batch-computeenvironment-replacecomputeenvironment): {{Boolean}}
@@ -105,6 +108,12 @@ The ComputeResources property type specifies details of the compute resources ma
 Reserved.
 *Required*: No
 *Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`EcsSettings`  <a name="cfn-batch-computeenvironment-ecssettings"></a>
+The Amazon ECS settings for the compute environment. These settings control CloudWatch Container Insights collection.
+*Required*: No
+*Type*: [EcsSettings](aws-properties-batch-computeenvironment-ecssettings.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `EksConfiguration`  <a name="cfn-batch-computeenvironment-eksconfiguration"></a>

@@ -60,7 +60,7 @@ Natural Language - Semantic Match conditions cannot be used for real-time analys
 To create rules that use generative AI requires an additional permission: **Rules - Generative AI**.
 
      **Pro Tip**:Use generative AI-powered **Natural language- Semantic match** if you previously used **Words or Phrases - Semantic Match**.
-   + **Words or Phrases - Semantic Match**: Finds words that may be synonyms. For example, if you enter "upset" it can match "not happy," or "hardly acceptable" can match with "unacceptable," and "unsubscribe" can match with "cancel subscription." Similarly, it can semantically match phrases. For example, "thank you so much for helping me out," "thanks a lot and this is so helpful," and "I am so happy that you are able to help me."
+   + **Words or Phrases - Semantic Match**: Finds words that might be synonyms. For example, if you enter "upset" it can match "not happy," or "hardly acceptable" can match with "unacceptable," and "unsubscribe" can match with "cancel subscription." Similarly, it can semantically match phrases. For example, "thank you so much for helping me out," "thanks a lot and this is so helpful," and "I am so happy that you are able to help me."
 
      This removes the need to define an exhaustive list of keywords while creating categories, and provides you the ability to cast a wider net for searching similar phrases that are important to you. For best semantic matching results, provide keywords or phrases with similar meaning within a semantic matching card. Currently, you can provide a maximum of four keywords and phrases per semantic matching card.
 
@@ -68,7 +68,7 @@ To create rules that use generative AI requires an additional permission: **Rule
 ![The new rules page, the Words or phrases - Exact match section.](http://docs.aws.amazon.com/connect/latest/adminguide/images/contact-lens-add-category-rules-script.png)
 ![The new rules page, the Words or phrases - Exact match section, the Add button.](http://docs.aws.amazon.com/connect/latest/adminguide/images/contact-lens-add-category-rules-script2.png)
 
-   The logic that conversational analytics uses to read these phrases is: (Hello AND thank AND you AND for AND calling AND Example AND Corp) OR (we AND value AND your AND business) OR (how AND may AND I AND assist AND you).
+   The logic that conversational analytics uses to read these phrases is: (Hello AND thank AND you AND for AND calling AND Example AND Corp) OR (we AND value AND your AND business) OR (how AND might AND I AND assist AND you).
 
    Alternatively, use a **Natural Language - Semantic Match** condition and enter a natural language statement in the textbox, that Generative AI should be able to evaluate as either True or False.
 ![The new rules page, the Natural language - Semantic match section.](http://docs.aws.amazon.com/connect/latest/adminguide/images/contact-lens-add-category-rules-natural-language-semantic.png)

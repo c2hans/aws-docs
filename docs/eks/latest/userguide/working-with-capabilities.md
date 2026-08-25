@@ -222,7 +222,7 @@ aws eks update-capability \
 Not all capability properties can be updated after creation. Refer to the capability-specific documentation for details on what can be modified.
 
 ## Delete a capability
-<a name="_delete_a_capability"></a>
+<a name="capabilities-delete"></a>
 
 When you no longer need a capability on your cluster, you can delete the capability resource.
 

@@ -23,6 +23,7 @@ The health check `type` values include:
 + `CONTAINER_RUNTIME` – Monitors the health of the container runtime (for example, the Docker daemon). Available on EC2 launch type.
 + `ACCELERATED_COMPUTE` – Monitors the health of accelerated compute devices such as GPUs. When a GPU is impaired, the `statusReason` contains the NVIDIA Xid error code in the format `XID_<number>`. Available on Amazon ECS Managed Instances launch type.
 + `DAEMON` – Monitors the health of required daemon tasks on the container instance. Available on Amazon ECS Managed Instances launch type.
++ `AGENT_CONNECTIVITY` – Monitors the connectivity between the Amazon ECS container agent and the Amazon ECS control plane. Available on Amazon ECS Managed Instances, AWS Fargate, and Amazon EC2 launch types.
 
 You can also monitor health status changes through events. For more information, see [Amazon ECS container instance health change events](ecs_container_instance_health_events.md).
 

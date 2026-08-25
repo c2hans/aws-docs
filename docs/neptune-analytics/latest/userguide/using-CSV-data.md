@@ -12,6 +12,7 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/using
 
 **Edge files**:
 +  The `~id` (`:ID`) column in `edge` (`relationship`) files in `CSV` (`opencypher`) format is not supported. It is ignored if provided in any of the `edge` (`relationship`) files.
++  If the `~label` (`:TYPE`) column is missing from an edge file, or if the `~label` value for a row is empty, the edge is assigned the default label `"edge"`. Unlike vertices, edges always have a label in Neptune Analytics.
 
 **Vertex files**:
 +  Only explicitly provided labels are associated with the vertices. If the label provided is empty, the vertex is added without a label. If a row contains just the vertex id without any labels or properties then the row is ignored, and no vertex is added. For more information about vertices, see [vertices](query-openCypher-data-model.md#query-openCypher-data-model-vertices).

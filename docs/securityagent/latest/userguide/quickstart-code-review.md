@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/quickstart-code-review.html
 ---
 
-# Quickstart: Run a code review
+# Quickstart: Run a Continuum code review
 <a name="quickstart-code-review"></a>
 
 This quickstart walks you through running your first code review with AWS Security Agent. AWS Security Agent scans your source code repositories for security vulnerabilities and compliance with your organization’s security requirements.
@@ -37,14 +37,14 @@ If you haven’t already set up AWS Security Agent, complete the initial setup:
 **Note**
 When you choose Set up, AWS Security Agent creates your Agent Space and establishes a web application where users can run penetration tests, code reviews, threat models, and design reviews.
 
-## Step 2: Enable and configure code review
+## Step 2: Enable and configure Continuum code review
 <a name="step-2-enable-and-configure-code-review"></a>
 
 **Note**
 If you already have GitHub repositories or S3 buckets connected to your Agent Space (for example, through penetration testing setup), code review is already enabled. You can skip this step and go directly to the web application.
 
-### Open the code review setup wizard
-<a name="_open_the_code_review_setup_wizard"></a>
+### Open the Continuum code review setup wizard
+<a name="_open_the_continuum_code_review_setup_wizard"></a>
 
 1. From the left sidebar, select **Agent Spaces** and then select your Agent Space.
 
@@ -96,7 +96,7 @@ If you already have GitHub repositories or S3 buckets connected to your Agent Sp
 
 1. Choose **Save**.
 
-## Step 3: Create and run a code review
+## Step 3: Create and run a Continuum code review
 <a name="step-3-create-and-run-a-code-review"></a>
 
 **Note**
@@ -122,7 +122,7 @@ You create and run code reviews only in the AWS Security Agent web application.
 
 1. On the code review detail page, choose **Start review**.
 
-## Step 4: Review code review findings
+## Step 4: Review Continuum code review findings
 <a name="step-4-review-code-review-findings"></a>
 
 1. The code review typically takes 30–60 minutes depending on the size of your codebase.
@@ -139,4 +139,4 @@ You create and run code reviews only in the AWS Security Agent web application.
 
    1. Use **Remediate code** to generate a pull request with a fix, or review automatic remediation PRs if you enabled that option.
 
-For more details, see [Create a code review](perform-code-review-scan.md) and [Review findings from a code review](review-code-scan-findings.md).
+For more details, see [Create a Continuum code review](perform-code-review-scan.md) and [Review findings from a Continuum code review](review-code-scan-findings.md).

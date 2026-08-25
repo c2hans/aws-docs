@@ -15,6 +15,8 @@ To request a quota increase, see [Requesting a quota increase](https://docs.aws.
 
 Your AWS account has the following quotas related to Deadline Cloud.
 
+Compute for service-managed fleets counts against the Deadline Cloud vCPU and GPU quotas in the following table, not against your Amazon Elastic Compute Cloud (Amazon EC2) service quotas. Your Amazon EC2 quotas apply only to [customer-managed fleets](https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/manage-cmf.html), because those workers run on instances in your own account.
+
 The following table includes quotas for persistent storage volumes used by service-managed fleets. For more information about persistent storage, see [Persistent storage for service-managed fleets](volumes.md).
 
 | Name | Default | Adjustable | Description |

@@ -20,5 +20,6 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::Lambda::MicrovmImage](aws-resource-lambda-microvmimage.md)
 + [AWS::Lambda::NetworkConnector](aws-resource-lambda-networkconnector.md)
 + [AWS::Lambda::Permission](aws-resource-lambda-permission.md)
++ [AWS::Lambda::ResourcePolicy](aws-resource-lambda-resourcepolicy.md)
 + [AWS::Lambda::Url](aws-resource-lambda-url.md)
 + [AWS::Lambda::Version](aws-resource-lambda-version.md)

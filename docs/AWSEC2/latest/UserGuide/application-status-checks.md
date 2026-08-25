@@ -18,6 +18,7 @@ Application status checks monitor the HTTP and HTTPS responses of your applicati
 + [Handling deployment, in-place patching, and replacements](#asc-handling-deployment-and-patching)
 + [Testing a new application status check](#asc-testing-a-new-check)
 + [Advanced networking](#asc-advanced-networking)
++ [Best practices](#asc-best-practices)
 + [Troubleshooting](#asc-troubleshooting)
 + [Monitor application status checks](#asc-monitoring)
 + [Security and permissions](#asc-security-and-permissions)
@@ -40,9 +41,15 @@ During a reboot, application status checks report a failure until the instance b
 
 Application status checks originate from the Amazon EC2 application status checks service. To reach your instances, AWS creates a managed elastic network interface (ENI) in your VPC. AWS creates one ENI per combination of source subnet and security group that has associated instances. AWS creates the managed ENI when an application status check first requires that combination, and removes it when no remaining application status check requires it. The managed ENI does not count against your instance ENI limit, but does count against the *Network interfaces per Region* quota for your account, which is enforced per Availability Zone. For more information, see [Amazon VPC quotas](https://docs.aws.amazon.com/vpc/latest/userguide/amazon-vpc-limits.html).
 
+By default, Amazon EC2 hides these managed network interfaces from the console and API list operations for accounts that did not have managed resources before this setting became available. To change their visibility, see [Managed resource visibility settings](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/amazon-ec2-managed-instances.html#managed-resource-visibility-settings).
+
+AWS creates one managed network interface for each combination of source subnet and security group among your associated instances. The number of managed interfaces grows with the number of distinct subnet and security group combinations your monitored instances use. Consolidating monitored instances into fewer subnet and security group combinations reduces the number of managed interfaces. For example, 200 instances spread across 2 subnets that all use a single security group produce 2 managed interfaces. The same 200 instances using 3 security groups across those 2 subnets produce up to 6 managed interfaces. Each interface corresponds to one subnet and security group combination.
+
 Application status checks reach your instances from a private vantage point within your VPC. The scope describes where the check originates, not a property of your instance's IP address. AWS creates the managed ENI in a subnet within your VPC and reaches the instance over the private network path.
 
-Health check traffic originates from AWS-managed Amazon EC2 instances in the same Availability Zone as the target instance (or the parent Availability Zone for Local Zone targets), travels over the AWS internal network, and does not traverse the public internet. For more information, see [Amazon VPC FAQs](https://aws.amazon.com/vpc/faqs/) on the Amazon Web Services website.
+With AWS managed network paths, health check traffic originates from AWS managed Amazon EC2 instances in the same Availability Zone as the target instance (or the parent Availability Zone for Local Zone targets). The traffic travels over the AWS internal network and does not traverse the public internet. For more information, see [Amazon VPC FAQs](https://aws.amazon.com/vpc/faqs/) on the Amazon Web Services website.
+
+With customer-managed network paths, you choose the source subnets, so you can run checks from a different Availability Zone than the target. For more information, see [Cross-Availability Zone monitoring](#asc-cross-az).
 
 ### AWS managed and customer-managed network paths
 <a name="asc-onboarding-modes"></a>
@@ -328,6 +335,8 @@ Amazon EC2 Auto Scaling uses the overall status for the instance, not individual
 
 Use the `InitializationGracePeriodSeconds` parameter on the check to allow new instances time to start up before application status checks begin. If the grace period is too short, new instances might be terminated and replaced by Amazon EC2 Auto Scaling before their application is ready to serve traffic.
 
+The check's `InitializationGracePeriodSeconds` sets how long after an instance launches before the check starts evaluating the application. Set it to cover your application's startup time, so the check does not report `impaired` while the application is still starting up. The Auto Scaling group's health check grace period is separate. It sets how long after an instance enters service before Amazon EC2 Auto Scaling terminates it for a failed health check.
+
 For more information about how Amazon EC2 Auto Scaling uses health checks, see [Health checks for instances in an Auto Scaling group](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-health-checks.html) and [Use application status checks with an Auto Scaling group](https://docs.aws.amazon.com/autoscaling/ec2/userguide/use-application-status-checks-auto-scaling-group.html) in the *Amazon EC2 Auto Scaling User Guide*.
 
 ## Handling deployment, in-place patching, and replacements
@@ -437,10 +446,34 @@ You can validate a new application status check in production before it starts c
 
 Application status checks originate from a managed ENI in the source subnet and security group you specify (or that AWS selects for you). For workloads that require higher availability than a single-source configuration provides, or for workloads that run in Local Zones or Outposts, consider the following patterns.
 
+### Cross-Availability Zone monitoring
+<a name="asc-cross-az"></a>
+
+For Availability Zone redundancy, you can run health checks from more than one Availability Zone. With customer-managed network paths, you define health check paths whose sources are in two different Availability Zones that reach the same destination instances, using the `--health-check-paths` parameter. Monitoring from two Availability Zones keeps health reporting for your instances continuous even if one Availability Zone becomes unavailable.
+
+The following example creates a check with two health check paths whose sources are in different Availability Zones, both reaching the same destination instances.
+
+```
+aws ec2 create-application-status-check \
+        --protocol https \
+        --port 443 \
+        --path "/health" \
+        --status-code-matcher "200" \
+        --health-check-paths '[{"Source":{"SubnetId":"subnet-source-az1","SecurityGroupId":"sg-healthcheck"},"Destinations":[{"SubnetId":"subnet-app-az1","SecurityGroupId":"sg-app"}]},{"Source":{"SubnetId":"subnet-source-az2","SecurityGroupId":"sg-healthcheck"},"Destinations":[{"SubnetId":"subnet-app-az2","SecurityGroupId":"sg-app"}]}]'
+```
+
 ### Local Zones
 <a name="asc-local-zones"></a>
 
 For instances running in AWS Local Zones, the managed elastic network interface (ENI) resides in the parent AWS Region, not in the Local Zone. Health check traffic between the parent Region and your Local Zone instances traverses the Local Zone service link, which may incur additional data transfer charges.
+
+## Best practices
+<a name="asc-best-practices"></a>
++ **Design your health endpoint to reflect the health of the application running on that instance.** When your endpoint returns health based on the application itself, Amazon EC2 Auto Scaling replaces only the instances that are genuinely impaired. If the endpoint's response also depends on a shared resource such as a database or a downstream service, a problem with that resource can fail the check across many instances at once. This can trigger a fleet-wide replacement. For guidance on writing health check endpoints, see [Implementing health checks](https://aws.amazon.com/builders-library/implementing-health-checks/) in the Amazon Builders' Library.
++ **Protect against correlated failures.** An included check drives Amazon EC2 Auto Scaling replacement. A check that fails across many instances at once can trigger a wave of replacements. Set an instance maintenance policy on your Auto Scaling group to limit how many instances are replaced at the same time. For more information, see [Instance maintenance policy](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-instance-maintenance-policy.html) in the Amazon EC2 Auto Scaling User Guide.
++ **Alarm on the count of impaired instances.** Create an Amazon CloudWatch alarm on the `StatusCheckFailed_Application` metric across your fleet. A sudden rise across many instances indicates a shared dependency rather than individual instance faults, and gives you time to respond before replacements cascade. For more information, see [Monitor application status checks](#asc-monitoring).
++ **Stay within your network interface quota.** Application status checks create managed network interfaces that count against the *Network interfaces per Region* quota. AWS enforces this quota per Availability Zone. Monitor your usage so a growing fleet does not reach the quota. If it does, AWS cannot create new interfaces. For related quota alarm guidance, see [Quotas](#asc-quotas).
++ **Treat status check permissions as change-controlled.** The IAM actions that create, modify, delete, associate, disassociate, and suppress application status checks can affect instance availability. These actions determine what drives Amazon EC2 Auto Scaling replacement. Treat actions such as `ec2:CreateApplicationStatusCheck`, `ec2:AssociateApplicationStatusCheck`, `ec2:ModifyApplicationStatusCheck`, and `ec2:EnableApplicationStatusCheckSuppression` as change-controlled rather than granting them as part of general Amazon EC2 access. For the full list of actions, see the Amazon EC2 API Reference.
 
 ## Troubleshooting
 <a name="asc-troubleshooting"></a>

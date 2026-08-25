@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/review-code-findings-github.html
 ---
 
-# Review code security findings in pull requests
+# Review Continuum code security findings in pull requests
 <a name="review-code-findings-github"></a>
 
 After enabling code review for pull requests for your repositories, AWS Security Agent automatically analyzes pull requests and posts security findings directly in your source control provider. This allows developers to address security issues within their normal workflow without leaving the pull request.
@@ -10,8 +10,8 @@ After enabling code review for pull requests for your repositories, AWS Security
 **Note**
 This page applies to GitHub pull requests, GitLab merge requests, and Bitbucket pull requests. The experience is similar across all providers.
 
-## How code review works in pull requests
-<a name="_how_code_review_works_in_pull_requests"></a>
+## How Continuum code review works in pull requests
+<a name="_how_continuum_code_review_works_in_pull_requests"></a>
 
 When you submit a pull request (or merge request in GitLab) in a repository with code review enabled, AWS Security Agent automatically begins analysis.
 
@@ -21,8 +21,8 @@ When you submit a pull request (or merge request in GitLab) in a repository with
 
 1.  **Review completion** - After analysis completes, AWS Security Agent posts a review to your pull request with the results. All security findings are batched together in a single review to keep your pull request organized and minimize notifications.
 
-## Understanding code review results
-<a name="_understanding_code_review_results"></a>
+## Understanding Continuum code review results
+<a name="_understanding_continuum_code_review_results"></a>
 
 AWS Security Agent provides different types of results depending on what it finds during analysis.
 
@@ -38,7 +38,7 @@ If AWS Security Agent identifies security issues in your code changes, it posts 
   + Relevant context based on your code review settings (security requirement violations, common vulnerabilities, or both)
 
 **Note**
-The types of security issues analyzed depend on your code review settings. If you configured security requirement validation, findings will reference your organization’s custom security requirements. If you configured security vulnerability findings, findings will identify common security vulnerabilities. For more information about code review settings, see [Enable pull request code review for GitHub repositories](enable-code-review.md).
+The types of security issues analyzed depend on your code review settings. If you configured security requirement validation, findings will reference your organization’s custom security requirements. If you configured security vulnerability findings, findings will identify common security vulnerabilities. For more information about code review settings, see [Enable Continuum pull request code review for GitHub repositories](enable-code-review.md).
 
 ### When no security issues are found
 <a name="_when_no_security_issues_are_found"></a>
@@ -55,8 +55,8 @@ After reviewing the security findings posted by AWS Security Agent, you can take
 **Tip**
 Each finding includes specific remediation guidance tailored to the security issue identified. Review this guidance carefully to understand the security risk and how to address it effectively.
 
-## Filtering code review findings
-<a name="_filtering_code_review_findings"></a>
+## Filtering Continuum code review findings
+<a name="_filtering_continuum_code_review_findings"></a>
 
 You can customize how AWS Security Agent analyzes your code by adding a `filtering.md` file to your repository. This file allows you to reduce false positives by providing context about your codebase and excluding files or folders from analysis.
 
@@ -128,6 +128,6 @@ Context hints are applied after AWS Security Agent completes its initial analysi
 After reviewing code security findings:
 + Update your code based on remediation guidance
 + Push new commits to trigger re-analysis of your changes
-+ Adjust code review settings if needed (see [Enable pull request code review for GitHub repositories](enable-code-review.md))
++ Adjust code review settings if needed (see [Enable Continuum pull request code review for GitHub repositories](enable-code-review.md))
 + Review your organization’s security requirements to understand validation criteria
 + Consider penetration testing for comprehensive security validation of deployed applications

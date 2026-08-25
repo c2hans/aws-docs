@@ -14,7 +14,7 @@ This topic defines the flow block for setting the text-to-speech (TTS) language 
 + You can choose **Override speaking style** to make it and other voices [Neural Voices](https://docs.aws.amazon.com/polly/latest/dg/neural-voices.html) or [Generative Voices](https://docs.aws.amazon.com/polly/latest/dg/generative-voices.html).
   + Neural voices make automated conversations sound more lifelike by improving the pitch, inflection, intonation, and tempo.
   + For a list of supported neural voices, see [Neural Voices](https://docs.aws.amazon.com/polly/latest/dg/neural-voices.html#neural-voicelist) in the *Amazon Polly Developer Guide*.
-  + Generative voices are the most human-like, emotionally engaged, and adaptive conversational voices available for the use via Amazon Polly
+  + Generative voices are the most human-like, emotionally engaged, and adaptive conversational voices available for the use through Amazon Polly
   + For a list of supported generative voices, see [Generative Voices](https://docs.aws.amazon.com/polly/latest/dg/generative-voices.html#generative-voicelist) in the *Amazon Polly Developer Guide*.
 + After this block is run, any TTS invocation resolves to theneural, standard or generative voice selected.
 + If this block is triggered during a chat conversation, the contact goes down the **Success** branch. It has no effect on the chat experience.
@@ -68,7 +68,7 @@ You can also set language, voice, engine and style dynamically. There are a few 
 If the language is selected dynamically, the voice must also be selected dynamically.
 If the voice is selected dynamically and the speaking style is overridden, then the engine and style must be selected dynamically.
 If the voice or engine are invalid, or the selected voice doesn't support the selected engine, the error branch will be taken.
-Language code is only passed into a flow action if **Set language attribute** is selected. Therefore, invalid language codes will not take the error branch in this block but they may result in erroneous behavior when used with Lex V2 bots.
+Language code is only passed into a flow action if **Set language attribute** is selected. Therefore, invalid language codes will not take the error branch in this block but they might result in erroneous behavior when used with Lex V2 bots.
 If a play prompt is added after the Error branch, the voice used for it will default to Joanna/standard.
 If the defined speaking style is not supported by the defined voice, the **None** speaking style will be used.
 
@@ -100,7 +100,7 @@ The following table contains some examples on configurations and their results:
 | en-US | Ruth | N/D | N/D | Error branch: engine is not specified, thus it defaults to standard. Ruth does not support standard engine, which results in error branch being taken. |
 | en-US | Ruth | neural | none | Success branch: Ruth supports neural engine |
 | en-US | Ruth | neural | conversational | Success branch: Even though Ruth does not support conversational speech style, the block does not take the error branch. Instead, when the voice is synthesized, it just uses no speaking style. |
-| ar-AE | Ruth | neural | none | Success branch: This block does not do validation on language code. Only the voice is used to synthesize speech. However, language code being incorrect may result in erroneous behavior when used with Lex V2 bots. |
+| ar-AE | Ruth | neural | none | Success branch: This block does not do validation on language code. Only the voice is used to synthesize speech. However, language code being incorrect might result in erroneous behavior when used with Lex V2 bots. |
 
 ## Use an Amazon Lex V2 bot with Connect Customer
 <a name="set-voice-lexv2bot"></a>

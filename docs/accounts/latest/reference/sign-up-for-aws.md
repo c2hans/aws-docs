@@ -106,6 +106,6 @@ You manage your AWS accounts based on the type of AWS you're using. The followin
 | Opt out of AI data use | [Opt out of use of your content for service improvement in AWS Settings](opt-out-ai-data-use.md) | [AI services opt-out policies](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_ai-opt-out.html) |
 | Request your data | [Request your AWS Builder ID data](request-your-builder-id-data.md) | [Request your data](https://pages.awscloud.com/DSAR_RTF.html) |
 | Delete your AWS profile | [Close your account in AWS Settings](close-account-new-experience.md) | [Close an AWS account](manage-acct-closing.md) |
-| Manage accounts in India | [Manage accounts in India in AWS Settings](managing-accounts-india-in-my-aws-portal.md) | [Manage accounts in India](managing-accounts-india.md) |
+| Manage accounts in India | [Manage accounts in India in AWS Settings](manage-accounts-india-in-aws-settings.md) | [Manage accounts in India](managing-accounts-india.md) |
 | Create an administrator user | Not applicable | [Sign up for AWS (advanced)](getting-started.md) |
 | Plan your account governance structure | Not applicable | [Plan your AWS account governance structure](plan-acct-structure.md) |

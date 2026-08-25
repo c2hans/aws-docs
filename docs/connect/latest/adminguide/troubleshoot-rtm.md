@@ -23,6 +23,6 @@ In the following situations, you could end up with no metrics or fewer rows than
 
    For example, let's say you have 600 queues in your instance. Of these, 200 match your criteria; 100 are active and by coincidence all happen to be Queues \#500-\#600. When you run the report, you'd get just 1 row (Queue \#500) since the other 499 queues that were returned (Queues \#1-\#499) were considered inactive and were not displayed.
 
-1. You're running a report with fewer than 500 queues. While you may expect to see metrics for all filtered queues, only active queues are shown on the real-time metrics report page. Try changing the settings for the report, such as changing the time range.
+1. You're running a report with fewer than 500 queues. While you might expect to see metrics for all filtered queues, only active queues are shown on the real-time metrics report page. Try changing the settings for the report, such as changing the time range.
 
 1. If you as a user don't have any tags assigned to you (in other words, you have access to every queue in your Connect Customer instance), then the metrics page randomly selects 100 queues from your Connect Customer instance and any filters/groupings are applied to those 100 queues only. The same applies for other resources that can be tagged. This is done to limit the amount of data so dashboard performance is optimized.

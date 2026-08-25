@@ -11,3 +11,7 @@ Before you create a Cloud Connector, complete the following prerequisites on bot
 
 **Important**
 Make sure your AWS account is not in any service control policy (SCP) that restricts the `sts:GetWebIdentityToken` action.
+
+**Topics**
++ [AWS prerequisites](cloud-connector-prereqs-aws.md)
++ [Azure prerequisites](cloud-connector-prereqs-azure.md)

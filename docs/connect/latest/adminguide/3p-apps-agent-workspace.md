@@ -2,52 +2,49 @@
 source_url: https://docs.aws.amazon.com/connect/latest/adminguide/3p-apps-agent-workspace.html
 ---
 
-# Access third-party applications in the Connect Customer agent workspace
+# Access third-party applications in the agent workspace
 <a name="3p-apps-agent-workspace"></a>
 
-## Important things to know
-<a name="important-3p-apps"></a>
-+ On Jul 22, 2024, Google [announced](https://privacysandbox.com/news/privacy-sandbox-update/) that they no longer plan to deprecate third-party cookies and instead provide an opt-in mechanism for deprecating third-party cookies. Opting into third-party cookie deprecation may impact the third-party applications experience. If you are using third-party apps in the Connect Customer Agent workspace on the Chrome browser, we recommend that you:
-  + **Temporary solution**: Update [Enterprise Chrome policies](https://support.google.com/chrome/a/answer/7679408?sjid=16745203858910744446-EU#upChromeBrsrBB117)). You can set `BlockThirdPartyCookies` Policy to false and safeguard your agent experience from immediate impact due to 3P Cookie Deprecation.
-  + **Permanent solution**: We recommend that app developers follow [best practices](https://developers.google.com/privacy-sandbox/3pcd) that will continue to pass third-party cookies.
-+ You must have [integrated the application](https://docs.aws.amazon.com/connect/latest/adminguide/3p-apps.html) and the agent must have [access to the application](https://docs.aws.amazon.com/connect/latest/adminguide/assign-security-profile-3p-apps.html) by using security profiles. The agent must also have access to the CCP in order for the application launcher to appear.
-
-## Use the app launcher to access third-party applications
+## Launch third-party applications
 <a name="security-profile-perms-3p-apps"></a>
 
-Agents can access third-party applications in the agent workspace by using the apps launcher, shown in the following image. The apps launcher appears on the agent workspace after you have successfully [onboarded](3p-apps.md) your third-party app.
+Agents access third-party applications in the agent workspace with the **Apps** launcher, shown in the following image. The launcher appears in the agent workspace after you [onboard](3p-apps.md) your third-party app.
 
-![The apps launcher on the agent workspace.](http://docs.aws.amazon.com/connect/latest/adminguide/images/agent-workspace-apps-launcher.png)
+![The Apps launcher in the agent workspace.](http://docs.aws.amazon.com/connect/latest/adminguide/images/agent-workspace-apps-launcher.png)
 
-The app launcher shows a list of applications that the agent has access to.
+The **Apps** launcher lists the applications that the agent can access.
 
-The agent can launch applications when they don't have any contacts (they are in the idle state) or when they are on a contact (call, chat, or task). After an app is opened for a given contact, it stays open until that contact is closed.
+Agents can open applications when they don't have any contacts or while handling a contact, such as a call, chat, or task. After an agent opens an app for a contact, the app stays open until the contact closes.
 
 ## Required security profile permissions to access third-party applications
 <a name="req-security-profile-perms-3p-apps"></a>
 
-Agents need the following security profiles permissions to access third-party apps:
+Agents need the following security profile permissions to access third-party apps:
 + **Contact Control Panel (CCP) - Access the CCP**
-+ Access to at least one third-party application - it appears in the security profile page after you have successfully [onboarded](3p-apps.md) your third-party app.
++ Access to at least one third-party application: the application appears on the **Security profiles** page after you [onboard](3p-apps.md) it.
 
-## Pin apps on the agent workspace
+## Pin apps in the agent workspace
 <a name="pinning-apps"></a>
 
-Agents can pin an app as open. On the apps tab, choose the More icon and then select **Pin tab**, as shown in the following image.
+Agents can pin an app so that it stays open. On the app's tab, choose the more options icon, and then choose **Pin tab**, as shown in the following image.
 
-![The pin tab open on the agent workspace.](http://docs.aws.amazon.com/connect/latest/adminguide/images/3p-apps-agent-workspace-pinned-1.png)
+![The Pin tab option on an app's tab in the agent workspace.](http://docs.aws.amazon.com/connect/latest/adminguide/images/3p-apps-agent-workspace-pinned-1.png)
 
-After an app is pinned, it stays open in the idle state and pops open for any contacts that come in. The app stays pinned for that user and browser until the user clears the cookies on the browser.
+After an agent pins an app, the app stays open while the agent is idle and opens automatically for incoming contacts. The app stays pinned for that user and browser until the user clears the browser cookies.
 
-An agent can unpin the tab if they no longer want this app to always be open; they will still be able to open and close the app as needed.
+An agent can unpin the tab at any time and then open and close the app as needed.
 
-### Examples of apps pinned on the agent workspace
-<a name="example-pinned-apps"></a>
-
-The following image shows an example of a third-party app named NoteTest that is pinned to the agent workspace.
+The following image shows a third-party app named NoteTest pinned in the agent workspace.
 
 ![A third-party note test app that is pinned to the agent workspace.](http://docs.aws.amazon.com/connect/latest/adminguide/images/3p-apps-agent-workspace-notes-app.png)
 
-The following image shows an example of a third-party app named Maps that is pinned to the agent workspace.
+The following image shows a third-party app named Maps pinned in the agent workspace.
 
 ![A third-party maps app that is pinned to the agent workspace.](http://docs.aws.amazon.com/connect/latest/adminguide/images/3p-apps-agent-workspace-maps-app.png)
+
+## Important things to know
+<a name="important-3p-apps"></a>
++ On July 22, 2024, Google [announced](https://privacysandbox.com/news/privacy-sandbox-update/) that it no longer plans to deprecate third-party cookies. Instead, Google provides an opt-in mechanism for deprecating third-party cookies. Opting in might affect how third-party applications work. If you use third-party apps in the Connect Customer agent workspace on the Chrome browser, we recommend that you do one of the following:
+  + **Temporary solution**: Update [Enterprise Chrome policies](https://support.google.com/chrome/a/answer/7679408?sjid=16745203858910744446-EU#upChromeBrsrBB117). Set the `BlockThirdPartyCookies` policy to `false` so that third-party cookie deprecation doesn't affect your agents.
+  + **Permanent solution**: We recommend that app developers follow [best practices](https://developers.google.com/privacy-sandbox/3pcd) that will continue to pass third-party cookies.
++ You must have [integrated the application](3p-apps.md), and the agent must have [access to the application](assign-security-profile-3p-apps.md) through a security profile. The agent must also have access to the CCP for the **Apps** launcher to appear.

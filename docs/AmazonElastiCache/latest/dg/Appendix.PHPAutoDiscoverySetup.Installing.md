@@ -32,7 +32,7 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/Appendix.PHP
 1. Install PHP 7.
 
    ```
-   sudo yum install php70
+   sudo apt-get install php7.0
    ```
 
 1. Download the Amazon ElastiCache Cluster Client.

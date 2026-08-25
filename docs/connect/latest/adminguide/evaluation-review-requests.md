@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/evaluation-rev
 # Request reviews of (appeal) performance evaluations in Connect Customer
 <a name="evaluation-review-requests"></a>
 
-When an agent performance evaluation is submitted, you can automatically notify the agent to review their evaluation. For example, you can set up a [rule to send an email](contact-lens-rules-email.md) to the agent when an evaluation is available. Once they have reviewed an evaluation, they can [acknowledge](acknowledge-evaluations.md) the evaluation. If they disagree with the feedback within an evaluation, they can request a review of (appeal) performance evaluations. When a review is requested, designated managers are automatically notified via email. They can then revise the evaluation or add additional notes that justify the original evaluation, before completing the review. Upon completion, the user who had requested the review and the agent evaluated is notified via email.
+When an agent performance evaluation is submitted, you can automatically notify the agent to review their evaluation. For example, you can set up a [rule to send an email](contact-lens-rules-email.md) to the agent when an evaluation is available. After they have reviewed an evaluation, they can [acknowledge](acknowledge-evaluations.md) the evaluation. If they disagree with the feedback within an evaluation, they can request a review of (appeal) performance evaluations. When a review is requested, designated managers are automatically notified through email. They can then revise the evaluation or add additional notes that justify the original evaluation, before completing the review. Upon completion, the user who had requested the review and the agent evaluated is notified through email.
 
 ## How do I enable review requests (appeals)?
 <a name="enable-review-requests"></a>
@@ -24,9 +24,9 @@ Connect Customer enables you to specify which evaluation forms support review re
 
 1. You can specify the time window till when a review can be requested on an evaluation. The time window is measured from the time of the original submission of an evaluation.
 
-1. You can also choose one or more recipients who will be notified via email when a review is requested. The email has a link to the contact with the evaluation for which a review is requested. Note that in order for the users to receive emails on a SAML authenticated instance, the secondary email needs to be provided within the user's profile in Connect.
+1. You can also choose one or more recipients who will be notified through email when a review is requested. The email has a link to the contact with the evaluation for which a review is requested. Note that in order for the users to receive emails on a SAML authenticated instance, the secondary email needs to be provided within the user's profile in Connect.
 
-1. Once you **Activate** the form, subsequent evaluations performed using the form will support review requests.
+1. After you **Activate** the form, subsequent evaluations performed using the form will support review requests.
 
 ![Additional settings tab showing Allow review requests option.](http://docs.aws.amazon.com/connect/latest/adminguide/images/evaluationforms-review-enable.png)
 
@@ -64,13 +64,13 @@ Users with the permission **Evaluation forms - review evaluations - Create and V
 ## Searching for pending reviews
 <a name="searching-pending-reviews"></a>
 
-As mentioned above, you can configure in the evaluation form, who would be automatically notified via email if a review is requested. These notification emails contain links to contacts with evaluations for which a review is requested. Additionally, users with appropriate permissions can search for contacts with evaluations for which a review is requested or which are already under review:
+As mentioned above, you can configure in the evaluation form, who would be automatically notified through email if a review is requested. These notification emails contain links to contacts with evaluations for which a review is requested. Additionally, users with appropriate permissions can search for contacts with evaluations for which a review is requested or which are already under review:
 
 1. Log in to Connect Customer with a user account that has [permissions to access contact records](contact-search.md#required-permissions-search-contacts) and the **Evaluation forms - perform evaluations** permission.
 
 1. On the navigation bar, choose **Analytics and optimization**, **Contact search**.
 
-1. Use the time range filter to search for contacts from the relevant time window, e.g. last month.
+1. Use the time range filter to search for contacts from the relevant time window, for example, last month.
 
 1. Use the evaluation status filter with the value **Review requested** to search for contacts with evaluations where a review has been requested, and is yet to be picked up for review
 

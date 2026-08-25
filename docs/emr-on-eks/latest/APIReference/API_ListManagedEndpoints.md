@@ -66,6 +66,7 @@ Content-type: application/json
    "endpoints": [
       {
          "arn": "string",
+         "authProxyUrl": "string",
          "certificateArn": "string",
          "certificateAuthority": {
             "certificateArn": "string",
@@ -98,6 +99,7 @@ Content-type: application/json
                },
                "persistentAppUI": "string",
                "s3MonitoringConfiguration": {
+                  "encryptionKeyArn": "string",
                   "logUri": "string"
                }
             }

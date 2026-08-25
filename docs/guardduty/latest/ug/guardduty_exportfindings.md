@@ -231,7 +231,7 @@ If you do not already have an Amazon S3 bucket where you want to export these fi
 
    1. Replace {{[optional prefix]}} part of the {{S3 bucket ARN/[optional prefix]}} placeholder value with an optional folder location to which you want to export the findings. For more information about the use of prefixes, see [Organizing objects using prefixes](https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-prefixes.html) in the *Amazon S3 User Guide*.
 
-      When you provide an optional folder location that doesn't exist already, GuardDuty will create that location only if the account associated with the S3 bucket is the same as the account exporting the findings. When you export findings to an S3 bucket that belongs to another account, the folder location must exist already.
+      When you provide an optional folder location, the folder must already exist in the S3 bucket. GuardDuty does not create the folder on your behalf. This requirement applies regardless of bucket ownership.
 
    1. Replace {{KMS key ARN}} with the Amazon Resource Name (ARN) of the KMS key associated with the encryption of the findings exported to the S3 bucket. To locate the key ARN, see [Finding the key ID and ARN](https://docs.aws.amazon.com/kms/latest/developerguide/find-cmk-id-arn.html) in the *AWS Key Management Service Developer Guide*.
 **Note**
@@ -244,7 +244,7 @@ If you're using GuardDuty in an opt-in Region, replace the value for the "Servic
 
 GuardDuty permits you to export findings to an existing bucket in another AWS account.
 
-When creating a new S3 bucket or choosing an existing bucket in your account, you can add an optional prefix. When configuring export findings, GuardDuty creates a new folder in the S3 bucket for your findings. The prefix will be appended to the default folder structure that GuardDuty created. For example, the format of the optional prefix `/AWSLogs/{{123456789012}}/GuardDuty/{{Region}}`.
+When creating a new S3 bucket or choosing an existing bucket in your account, you can add an optional prefix. Both the prefix and the folder path that findings are written to must already exist in the S3 bucket. GuardDuty does not create any folders on your behalf. GuardDuty writes findings objects to the path `/AWSLogs/{{123456789012}}/GuardDuty/{{Region}}`, so you must create this folder structure before you export findings.
 
 The entire path of the S3 object will be `{{amzn-s3-demo-bucket}}/{{prefix-name}}/UUID{{.jsonl.gz}}`. The `UUID` is randomly generated and doesn't represent the detector ID or the finding ID.
 

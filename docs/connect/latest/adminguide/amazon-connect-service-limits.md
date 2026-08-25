@@ -49,7 +49,7 @@ To request a quota increase, see [Requesting a quota increase](https://docs.aws.
 
 | Name | Default | Adjustable | Adjustability |
 | --- | --- | --- | --- |
-| Active email contact expiry | 14 days (Default)<br />Customizable up to 90 days using the [Flow block in Connect Customer: Set contact attributes](set-contact-attributes.md) flow block or [Expiry](https://docs.aws.amazon.com/connect/latest/APIReference/API_Expiry.html) API to update the connect:ContactExpiry [segment attribute](connect-attrib-list.md#attribs-segment-attributes).<br />This determines how long an email contact can remain active (e.g., waiting in queue or assigned to an agent) before expiring and closing automatically. "No" for adjustability means that you cannot customize or increase this attribute to be greater than 90 days. | No | Resource Level |
+| Active email contact expiry | 14 days (Default)<br />Customizable up to 90 days using the [Flow block in Connect Customer: Set contact attributes](set-contact-attributes.md) flow block or [Expiry](https://docs.aws.amazon.com/connect/latest/APIReference/API_Expiry.html) API to update the connect:ContactExpiry [segment attribute](connect-attrib-list.md#attribs-segment-attributes).<br />This determines how long an email contact can remain active (for example, waiting in queue or assigned to an agent) before expiring and closing automatically. "No" for adjustability means that you cannot customize or increase this attribute to be greater than 90 days. | No | Resource Level |
 | Active email conversation (thread) expiry | 90 days<br />Meaning if an end customer (using their email client) or an agent (using their agent application) replies to an email as part of an ongoing conversation (thread) within 90 days, the email reply will automatically be included within that same [email conversation (thread)](email-capabilities.md#email-capabilities-howthreadsmanaged) in Connect Customer. If they reply after 90 days, it will start a new [email conversation (thread)](email-capabilities.md#email-capabilities-howthreadsmanaged) in Connect Customer. | No | Resource Level |
 | AWS Lambda functions per instance | 50 | Yes | Resource Level |
 | Agent status per instance | 50 | No | Not Adjustable |
@@ -329,7 +329,7 @@ Connect Customer throttling quotas are by account, and per Region, not by user a
 | [ListIntegrationAssociations](https://docs.aws.amazon.com/connect/latest/APIReference/API_ListIntegrationAssociations.html)  | 25 | 50 |
 
 **Important**
-\* [GetCurrentMetricData](https://docs.aws.amazon.com/connect/latest/APIReference/API_GetCurrentMetricData.html), [GetMetricDataV2](https://docs.aws.amazon.com/connect/latest/APIReference/API_GetMetricDataV2.html), and [GetCurrentUserData](https://docs.aws.amazon.com/connect/latest/APIReference/API_GetCurrentUserData.html) may incorrectly display 200 as their throttling quota in the Service Quotas console. We recommend using the default quotas specified here, or opening a ticket.
+\* [GetCurrentMetricData](https://docs.aws.amazon.com/connect/latest/APIReference/API_GetCurrentMetricData.html), [GetMetricDataV2](https://docs.aws.amazon.com/connect/latest/APIReference/API_GetMetricDataV2.html), and [GetCurrentUserData](https://docs.aws.amazon.com/connect/latest/APIReference/API_GetCurrentUserData.html) might incorrectly display 200 as their throttling quota in the Service Quotas console. We recommend using the default quotas specified here, or opening a ticket.
 
 ### Connect Customer Cases API throttling quotas
 <a name="cases-api-quotas"></a>

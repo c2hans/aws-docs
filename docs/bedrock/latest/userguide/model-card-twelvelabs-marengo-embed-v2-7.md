@@ -13,9 +13,9 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-twel
 
 Marengo Embed v2.7 is TwelveLabs' video embedding model for multimodal video understanding, search, and classification. For more information about model development and performance, see the [model/service card](https://docs.twelvelabs.io/docs/concepts/models/marengo).
 + **Model launch date:** Dec 4, 2024
-+ **Model EOL date:** N/A
++ **Model EOL date:** November 30, 2026
 + **End User License Agreements and Terms of Use:** [View](https://aws.amazon.com/legal/bedrock/third-party-models/)
-+ **Model lifecycle:** Active
++ **Model lifecycle:** Legacy
 + **Marketplace product ID:** `prod-o6xchhpirymvs`
 
 | **Input Modalities** | **Output Modalities** | **[APIs supported](apis.html)** | **[Endpoints supported](endpoints.html)** |

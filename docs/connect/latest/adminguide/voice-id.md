@@ -23,7 +23,7 @@ With Connect Customer Voice ID you can:
 ### Customer enrollment
 <a name="customer-enrollment"></a>
 
-1. When a customer calls for the first time, the agent confirms the identity of the caller by using existing security measures, such as asking for mother's maiden name or a one-time passcode (OTP) delivered by SMS. This ensures that only genuine customers are enrolled in Voice ID.
+1. When a customer calls for the first time, the agent confirms the identity of the caller by using existing security measures, such as asking for mother's maiden name or a one-time passcode (OTP) delivered by SMS. This makes sure that only genuine customers are enrolled in Voice ID.
 
 1. Voice ID starts listening to the customer's speech after the contact has encountered the [Set Voice ID](set-voice-id.md) block, where Voice ID is enabled. Voice ID listens to the call until one of the following happens:
    + It gets enough audio to evaluate the speaker for authentication, fraud, and enroll the speaker (if requested). This is 30 seconds of customer speech, excluding silence.

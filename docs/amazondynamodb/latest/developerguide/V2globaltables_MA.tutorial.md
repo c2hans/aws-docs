@@ -78,7 +78,7 @@ Follow these steps to create a multi-account global table using the AWS Manageme
 
 1. This new table serves as the first replica table in a new global table. It is the prototype for other replica tables that you add later.
 
-1. Wait for the table to become **Active**. For the newly created table, from the **Global tables** tab, navigate to **Settings Replication** and click **Enable**.
+1. Wait for the table to become **Active**. For the newly created table, from the **Global tables** tab, navigate to **Settings Replication** and choose **Enable**.
 
 1. Logout of this account ({{111122223333}} here).
 

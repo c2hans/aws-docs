@@ -190,7 +190,7 @@ Incremental export: DynamoDB Incremental Export to Amazon S3 can support up to 3
 ## Backup and restore
 <a name="limits-backup-restore"></a>
 
-DynamoDB supports up to 50 concurrent restores totaling 50 TB via DynamoDB on-demand or continuous backups. AWS Backup supports up to 50 concurrent restores totaling 25 TB.
+DynamoDB supports up to 50 concurrent restores totaling 50 TB through DynamoDB on-demand or continuous backups. AWS Backup supports up to 50 concurrent restores totaling 25 TB.
 
 ## Contributor Insights
 <a name="contributor-insights-quotas"></a>

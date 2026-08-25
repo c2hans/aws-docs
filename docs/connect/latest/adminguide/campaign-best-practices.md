@@ -45,7 +45,7 @@ When agent productivity, cost per calls, or contact center efficiency are critic
 ### Progressive campaigns
 <a name="progressive-campaigns"></a>
 
-When you need to reduce answer speeds, use progressive mode. A progressive mode campaign dials the next phone number in a list after an agent completes the previous call. If there are multiple campaigns targeting the same set of agents, then each of them may end up dialing contacts for the same agents. There are two ways to prevent this:
+When you need to reduce answer speeds, use progressive mode. A progressive mode campaign dials the next phone number in a list after an agent completes the previous call. If there are multiple campaigns targeting the same set of agents, then each of them might end up dialing contacts for the same agents. There are two ways to prevent this:
 + Change the bandwidth allocation of the campaigns so the sum of the bandwidth allocation of each of those campaigns is less than or equal to 100%. This greatly reduces the likelihood of multiple campaigns dialing contacts for the same agents, but it does not completely eliminate it.
 + If a 1:1 guarantee is required, then have an exclusive set of agents for each campaign. To do this, assign the campaign's queue to a single routing profile. That routing profile must only have this campaign's queue, must only allow voice calls, and no inbound contacts should be put into this queue.
 
@@ -69,8 +69,8 @@ Best Practice for Preview Dialing Mode: disable call classification.
 <a name="agent-staffing"></a>
 
 When call recipients answer a call and hear silence in return, they often hang up. For predictive campaigns, use the following best practices to help reduce that silence:
-+ Ensure that you have enough agents logged in to your call queue. For more information about staffing, see [Forecasting & agent scheduling in Connect Customer](forecasting-capacity-planning-scheduling.md).
-+ Consider using Connect Customer's machine learning services.
++ Make sure that you have enough agents logged in to your call queue. For more information about staffing, see [Forecasting & agent scheduling in Connect Customer](forecasting-capacity-planning-scheduling.md).
++ Consider using the machine learning services of Connect Customer.
   + [Forecasting](forecasting.md). Analyze and predict contact volume based on historical data. What will future demand—the contact volume and handle time—look like? Connect Customer forecasting provides accurate and auto-generated forecasts that are automatically updated daily.
   + [Capacity planning](capacity-planning.md). Predict how many agents your contact center will require. Optimize plans by scenarios, service level goals, and metrics, such as shrinkage.
   + [Scheduling](scheduling.md). Generate agent schedules for day-to-day workloads that are flexible, and meet business and compliance requirements. Offer agents flexible schedules and work-life balance. How many agents are needed in each shift? Which agent works in which slot?
@@ -80,7 +80,7 @@ When call recipients answer a call and hear silence in return, they often hang u
 ## Connection latency best practices
 <a name="call-latency"></a>
 
-Successful outbound calling campaigns avoid silent calls, the period of silence after a person answers a call and before an agent comes on the line. Legal requirements to limit the number of silent or abandoned calls and keep the called party informed may also apply. You can configure Connect Customer in different ways to reduce call connection delays.
+Successful outbound calling campaigns avoid silent calls, the period of silence after a person answers a call and before an agent comes on the line. Legal requirements to limit the number of silent or abandoned calls and keep the called party informed might also apply. You can configure Connect Customer in different ways to reduce call connection delays.
 
 **Topics**
 + [Pinpoint segment attributes](#pinpoint-segment-attributes)
@@ -112,7 +112,7 @@ When using the [Check call progress](check-call-progress.md) flow block:
 ### Outbound agentless calling
 <a name="outbound-agentless"></a>
 
-Outbound campaigns often use custom greetings and self service functions. Do not use Lambda functions to get contact attributes. Instead, provide customer data (attributes) via the campaign segment. Use these attributes from the campaign segment to play custom greetings.
+Outbound campaigns often use custom greetings and self service functions. Do not use Lambda functions to get contact attributes. Instead, provide customer data (attributes) through the campaign segment. Use these attributes from the campaign segment to play custom greetings.
 + Example - Call Answered or Not Detected: "Hello, `$.Attributes.FirstName`. This is `$.Attributes.CallerIdentity` calling to confirm your upcoming appointment on `$.Attributes.AppointmentDate` at `$.Attributes.AppointmentTime`. If this is still a good time and date for you, just say, "Confirm". If you would like to use our self service system to modify your appointment, just say, "self service" or stay on the line and we will connect you with the next available agent."
 + Example - Voicemail with or without beep: "Hello, `$.Attributes.FirstName`. This is `$.Attributes.CallerIdentity` calling to confirm your upcoming appointment on `$.Attributes.AppointmentDate` at `$.Attributes.AppointmentTime`. If this is still a good time and date for you, we will see you then. If you would like to modify your appointment, please call us back at `$.SystemEndpoint.Address` to reschedule your appointment"
 + Error branch - Occasionally there could be an issue that causes a call to follow the Error branch. As a best practice, use a [Play prompt](play.md) block with a message that applies to the contact that was dialed, with instruction to "Please call us at `$.SystemEndpoint.Address` to confirm or reschedule your appointment." Do this before the [Disconnect / hang up](disconnect-hang-up.md) block in case the call recipient answered, but an error occurred in the processing.
@@ -146,9 +146,9 @@ These options apply to soft phones only.
 <a name="workstations"></a>
 
 The following best practices can help optimize agent efficiency by ensuring adequate hardware and network resources.
-+ Ensure that agent workstations meet the minimum requirements. For more information, see [Agent headset and workstation requirements for using the Contact Control Panel (CCP)](ccp-agent-hardware.md).
-+ Ensure that the agent has the CCP or agent workspace open and present on their desktop. This reduces the time spent bringing the screen to the front before greeting the caller.
-+ On the local network, ensure that the agents are connected to a LAN. This mitigates potential wireless network latency
++ Make sure that agent workstations meet the minimum requirements. For more information, see [Agent headset and workstation requirements for using the Contact Control Panel (CCP)](ccp-agent-hardware.md).
++ Make sure that the agent has the CCP or agent workspace open and present on their desktop. This reduces the time spent bringing the screen to the front before greeting the caller.
++ On the local network, make sure that the agents are connected to a LAN. This mitigates potential wireless network latency
 + If possible, minimize the geographic distance between the AWS Region that hosts your Connect Customer instance and the agents that interact with the outbound campaigns. The greater the geographic distance between your agents and the hosting Region, the higher the possible latency.
 
 **Note**
@@ -178,17 +178,17 @@ Forty to 60-percent of calls to consumers go to voicemail. AMD helps eliminate t
 ### The pros, cons, and best uses of Answering Machine Detection
 <a name="amd-pros-cons"></a>
 
-The use of Answering Machine Detection (AMD) may not comply with telemarketing laws. You are responsible for implementing AMD in a manner that is compliant with applicable laws, and you should always consult your legal advisor regarding your specific use case.
+The use of Answering Machine Detection (AMD) might not comply with telemarketing laws. You are responsible for implementing AMD in a manner that is compliant with applicable laws, and you should always consult your legal advisor regarding your specific use case.
 
 Use case 1: AMD is on and leaving automatic voicemails
 + **Pros** – Agents primarily interact with live calls 95-percent of the time, maximizing talk time. AMD can leave automatic voicemails if a voicemail is detected.
 + **Cons** – The technology leaves a voicemail 50-percent to 60-percent of the time due to false positives due to the large variety of answering machine types. Also, AMD can irritate customers because it adds a short delay to live calls.
-+ **Best uses** – Calling consumers during the day when you may get a large quantity of answering machines and it's not urgent to ensure every call receives a voicemail.
++ **Best uses** – Calling consumers during the day when you might get a large quantity of answering machines and it's not urgent to ensure every call receives a voicemail.
 
 Use case 2: AMD is on but not leaving automatic voicemails
 + **Pros** – Agents primarily interact with live calls 95-percent of the time, maximizing talk time.
 + **Cons** – Cannot leave any voicemails. Adds a delay to live calls which can annoy customers.
-+ **Best uses** – Calling consumers during the day when you may get a large quantity of voicemails and you don't want to leave any voicemails.
++ **Best uses** – Calling consumers during the day when you might get a large quantity of voicemails and you don't want to leave any voicemails.
 
 Use case 3: AMD is off and agents can leave manual voicemails
 + **Pros** – Voicemails can be left 100-percent of the time.
@@ -247,7 +247,7 @@ For example, if your journey's quiet time runs from 20:00 (8:00 PM) to 08:00 (8:
 ### Store and use local time zones
 <a name="use-local-time-zones"></a>
 
-To optimize participant engagement in a journey that has a scheduled start and end time, configure the journey to use each participant's local time zone. This helps to ensure that journey activities occur when a participant is most likely to participate in those activities.
+To optimize participant engagement in a journey that has a scheduled start and end time, configure the journey to use each participant's local time zone. This helps to make sure that journey activities occur when a participant is most likely to participate in those activities.
 
 **To use recipient time zones**
 + Under **When to send**, choose the **Recipeints local time zone** radio button.
@@ -307,9 +307,9 @@ The following sections provide best practices for managing redials and different
 ### Automate workflows and use multiple channels
 <a name="workflow-channels"></a>
 
-As a best practice, don't persistently call leads and hope the contact answers. The more you call, the less likely the contact may be to answer. Instead, use automation to move the contact to another list and call back 30 days later, then perhaps 60 days later.
+As a best practice, don't persistently call leads and hope the contact answers. The more you call, the less likely the contact might be to answer. Instead, use automation to move the contact to another list and call back 30 days later, then perhaps 60 days later.
 
-Also, look at the number of times a call goes to voicemail. At some point, you may want to stop calling that lead.
+Also, look at the number of times a call goes to voicemail. At some point, you might want to stop calling that lead.
 
 An optimal strategy uses automated workflows with multiple communication channels to build an outreach cadence. For example, you start with a phone call, then send an SMS message, then an email. This can significantly increase the chances of contacting the lead. For more information about setting up multiple channels, see:
 +  [Tutorial: Using Postman with the Amazon Pinpoint API](https://docs.aws.amazon.com/pinpoint/latest/developerguide/tutorials-using-postman.html), in the *Amazon Pinpoint Developer Guide*.

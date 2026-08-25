@@ -23,6 +23,11 @@ The conversational content of the payload.
 Type: [Conversational](API_Conversational.md) object
 Required: No
 
+ ** json **   <a name="BedrockAgentCore-Type-PayloadType-json"></a>
+The JSON content of the payload. Use this type to store non-conversational, JSON-formatted data, such as behavioral events, activity logs, or system events.
+Type: [MemoryJsonData](API_MemoryJsonData.md) object
+Required: No
+
 ## See Also
 <a name="API_PayloadType_SeeAlso"></a>
 

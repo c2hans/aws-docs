@@ -35,7 +35,7 @@ The Connect Customer console, Contact Control Panel (CCP), and agent workspace d
   + Latest three versions of Google Chrome, Firefox, Safari, and Microsoft Edge Chromium on MacOS, Windows, iOS, and Android.
 + Voice Focus (VF) and Echo Reduction (ER) feature support in out-of-the-box communications widgets
 
-  The out-of-the-box communications widget's Voice Focus (VF) and Echo Reduction (ER) features are not universally supported across all devices. Lower specification devices may not support Amazon Voice Focus irrespective to laptop, desktop or iOS and Android devices. For more information, see [Amazon Voice Focus support by device](https://aws.github.io/amazon-chime-sdk-js/modules/amazonvoice_focus.html#can-i-use-amazon-voice-focus-and-echo-reduction-in-my-application) in the Amazon Chime SDK for JavaScript documentation. On devices where Voice Focus is not supported, the browser's built-in noise suppression is relied upon.
+  The out-of-the-box communications widget's Voice Focus (VF) and Echo Reduction (ER) features are not universally supported across all devices. Lower specification devices might not support Amazon Voice Focus irrespective to laptop, desktop or iOS and Android devices. For more information, see [Amazon Voice Focus support by device](https://aws.github.io/amazon-chime-sdk-js/modules/amazonvoice_focus.html#can-i-use-amazon-voice-focus-and-echo-reduction-in-my-application) in the Amazon Chime SDK for JavaScript documentation. On devices where Voice Focus is not supported, the browser's built-in noise suppression is relied upon.
 
    If you are building custom communication widget, you can follow [Integrating Amazon Voice Focus and Echo Reduction into your Amazon Chime SDK for JavaScript application](https://aws.github.io/amazon-chime-sdk-js/modules/amazonvoice_focus.html#integrating-amazon-voice-focus-and-echo-reduction-into-your-amazon-chime-sdk-for-javascript-application) or Amazon Chime SDK React component library documentation on [Voice Focus and WebAudio Best Practice](https://aws.github.io/amazon-chime-sdk-component-library-react/?path=/docs/sdk-providers-voicefocusprovider--page#voice-focus-and-webaudio-best-practice) to implement Voice Focus and Echo Reduction.
 
@@ -49,7 +49,7 @@ The communications widget supports browser notifications for desktop devices. Fo
 On July 22, 2024, Google announced a change in its plans regarding third-party cookies. Rather than deprecating third-party cookies by default, Google offers an opt-in mechanism for users to disable them.
 
 **Note**
-**For businesses that embed the Contact Control Panel (CCP) into a custom workspace**: If your agents use Google's opt-in mechanism to disable third-party cookies, it will cause authentication issues when they use the CCP. Connect Customer relies on third-party cookies to help authentication. Ensure that third-party cookies are enabled in your agents' browser settings to avoid any authentication issues while using the CCP.
+**For businesses that embed the Contact Control Panel (CCP) into a custom workspace**: If your agents use Google's opt-in mechanism to disable third-party cookies, it will cause authentication issues when they use the CCP. Connect Customer relies on third-party cookies to help authentication. Make sure that third-party cookies are enabled in your agents' browser settings to avoid any authentication issues while using the CCP.
 
 ## Firefox Enhanced Tracking Protection updates
 <a name="browsers-firefox-issue"></a>
@@ -66,7 +66,7 @@ To prevent impacts to your users (agents), we recommend that your users complete
 ## Firefox browser guidance for Microphone Access
 <a name="firefox-browser-mic"></a>
 
-The Connect Customer CCP conforms to Firefox microphone usage guidance, and only has access to connect to the user's microphone when the CCP tab is in focus. This may lead to missed call scenarios when the CCP tab is not in focus, for example, if the agent focused on a different tab or application.
+The Connect Customer CCP conforms to Firefox microphone usage guidance, and only has access to connect to the user's microphone when the CCP tab is in focus. This might lead to missed call scenarios when the CCP tab is not in focus, for example, if the agent focused on a different tab or application.
 + Agents must focus on the CCP or Agent Workspace Firefox browser tab when they accept and connect to a voice contact.
 
 ## Microsoft Edge v146 autoplay policy change
@@ -111,14 +111,14 @@ https://[your-hosting-domain]
 **Note**
 The wildcard value `*` is not accepted by this policy. Use the exact instance URL.
 
-You can configure this policy using Group Policy (via MSEdge.admx), Microsoft Intune, or directly via the Windows Registry at the path above.
+You can configure this policy using Group Policy (through MSEdge.admx), Microsoft Intune, or directly through the Windows Registry at the path above.
 
 For complete configuration instructions and examples, see [AutoplayAllowlist policy](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-browser-policies/autoplayallowlist) in the Microsoft Edge documentation. For background on the AutoplayAllowed policy behavior change in Edge v146, see [AutoplayAllowed policy](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-browser-policies/autoplayallowed) in the Microsoft Edge documentation.
 
 ## Optimize performance for Flow Designer for a multiple GPU system on Windows
 <a name="firefox-multiple-gpus"></a>
 
-If you're using Flow Designer on a Windows system with dual GPUs, you might notice that animations in Firefox feel less smooth compared to Chrome. This happens because, by default, browsers use the power-saving GPU. For Chrome, the default output is 60 FPS. However, Firefox may cap at 30 FPS, leading to less fluid animations.
+If you're using Flow Designer on a Windows system with dual GPUs, you might notice that animations in Firefox feel less smooth compared to Chrome. This happens because, by default, browsers use the power-saving GPU. For Chrome, the default output is 60 FPS. However, Firefox might cap at 30 FPS, leading to less fluid animations.
 
 If your system has a dedicated GPU, you can improve performance by changing its GPU preferences in Window settings.
 

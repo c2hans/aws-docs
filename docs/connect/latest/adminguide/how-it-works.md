@@ -188,4 +188,4 @@ Example usage:
 ```
 
 **Note**
-Ensure that the attributes, objects, and segments you reference exist in your Customer Profiles configuration before using them in your layout.
+Make sure that the attributes, objects, and segments you reference exist in your Customer Profiles configuration before using them in your layout.

@@ -188,20 +188,81 @@ By default, every mapped value is emitted as a JSON string. Use `targetFhirType`
   targetFhirType: decimal
 ```
 
+```
+# JSON example
+- fhirPath: address[0]
+  sourceColumn: ADDRESS_JSON
+  transform:
+    type: direct
+  targetFhirType: json
+```
+
 **Accepted targetFhirType values**
 
 | Value | Behavior |
 | --- | --- |
-| boolean | Converts "true"/"1" to JSON true, everything else to false. |
-| integer | Parses the value as a whole number. Non-numeric values are skipped. |
-| decimal | Parses the value as a floating-point number. Non-numeric values are skipped. |
+| boolean | Converts true, TRUE, or 1 to JSON true, and false, FALSE, or 0 to JSON false. Any other value is a conversion failure. |
+| integer | Parses the value as a whole number. |
+| decimal | Parses the value as a floating-point number. |
+| json | Parses the value as JSON and embeds it as a structured object or array instead of a string. See [Embedding JSON with targetFhirType: json](#csv-yaml-target-fhir-type-json). |
 
-If the source value cannot be converted to the requested type (for example, the string `"abc"` with `targetFhirType: integer`), the field is silently omitted from the output resource rather than producing an error.
+The service handles conversion failures differently depending on the type. For `boolean`, `integer`, and `decimal`, if the service can't convert a value, it emits the original string and records a warning. For `json`, if the service can't parse a value, it omits the field from the output resource and records a warning.
 
 When do I need it?
 + The FHIR element is defined as `boolean`, `integer`, or `decimal` in the spec and your source data stores it as a string.
 + You are populating an `extension` with a `valueInteger` or `valueDecimal` element.
 + You want JSON-native types for downstream consumers that parse the JSON strictly.
+
+#### Embedding JSON with targetFhirType: json
+<a name="csv-yaml-target-fhir-type-json"></a>
+
+Some FHIR elements are objects or arrays rather than scalars. If your source column already holds a JSON fragment, set `targetFhirType: json` to embed it as structure. Without it, the service emits the fragment as a quoted string and FHIR validation rejects the resource.
+
+Given this field mapping:
+
+```
+- fhirPath: address[0]
+  sourceColumn: ADDRESS_JSON
+  transform:
+    type: direct
+  targetFhirType: json
+```
+
+And this value in the `ADDRESS_JSON` column:
+
+```
+{"city":"Seattle","state":"WA","line":["123 Main St"]}
+```
+
+The conversion produces:
+
+```
+{
+  "address": [
+    {
+      "city": "Seattle",
+      "state": "WA",
+      "line": ["123 Main St"]
+    }
+  ]
+}
+```
+
+You can also map a sub-path of an embedded object to override one of its fields. Mapping `address[0]` as `json` and `address[0].city` as a scalar in the same table replaces `city` and leaves the other fields intact. The result doesn't depend on the order you list the mappings in.
+
+The following table describes the requirements for using `targetFhirType: json`.
+
+| Requirement | Detail |
+| --- | --- |
+| Must be an object or array | JSON scalars such as 42, "hello", true, and null are rejected. Use integer, decimal, or boolean for those. |
+| Maximum value size | 2 KB per cell. |
+| Maximum nesting depth | 5 levels. |
+| Must parse cleanly | Trailing characters after the JSON value are rejected. |
+
+If a value doesn't meet these requirements, the service omits the field and records a warning. The service also omits empty cells.
+
+**Note**
+You can combine `targetFhirType: json` with any transform type. The service parses the value as JSON after the transform runs.
 
 ## Transform types
 <a name="csv-yaml-transform-types"></a>

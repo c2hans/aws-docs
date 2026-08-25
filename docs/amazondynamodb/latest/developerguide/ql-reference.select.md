@@ -49,7 +49,7 @@ FROM "TableName"."IndexName"
 
 **{{condition}}**
 (Optional) The selection criteria for the query.
-To ensure that a `SELECT` statement does not result in a full table scan, the `WHERE` clause condition must specify a partition key. Use the equality or IN operator.
+To make sure that a `SELECT` statement does not result in a full table scan, the `WHERE` clause condition must specify a partition key. Use the equality or IN operator.
 For example, if you have an `Orders` table with an `OrderID` partition key and other non-key attributes, including an `Address`, the following statements would not result in a full table scan:
 
 ```

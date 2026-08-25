@@ -62,7 +62,7 @@ Add the following policy to your destination bucket, replacing the placeholder v
 ## AWS KMS key policy (if encryption enabled)
 <a name="recording-ingestion-kms-key-policy"></a>
 
-If your Connect Customer instance has call recording encryption enabled, you must use a customer-managed AWS KMS key (service-managed keys are not supported). The key policy must grant the `connect.amazonaws.com` service principal the `kms:Decrypt`, `kms:Encrypt`, `kms:GenerateDataKey`, and `kms:DescribeKey` actions, scoped to your AWS account via the `aws:SourceAccount` condition.
+If your Connect Customer instance has call recording encryption enabled, you must use a customer-managed AWS KMS key (service-managed keys are not supported). The key policy must grant the `connect.amazonaws.com` service principal the `kms:Decrypt`, `kms:Encrypt`, `kms:GenerateDataKey`, and `kms:DescribeKey` actions, scoped to your AWS account through the `aws:SourceAccount` condition.
 
 Example key policy statement:
 

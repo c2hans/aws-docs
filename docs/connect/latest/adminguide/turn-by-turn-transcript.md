@@ -11,7 +11,7 @@ The following image of a contact record shows features that enable you to quickl
 
 ![An analysis of a voice contact.](http://docs.aws.amazon.com/connect/latest/adminguide/images/contact-lens-navigate-transcripts2.png)
 
-1. Use [Show key highlights](#contact-lens-contact-summarization) to review only the issue, outcome, and/or action item.
+1. Use [Show key highlights](#contact-lens-contact-summarization) to review only the issue, outcome, or action item.
 
 1. Use [Autoscroll](#autoscroll) for voice contacts, to jump around the audio or transcript. The two always stay in sync.
 

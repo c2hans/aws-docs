@@ -79,7 +79,7 @@ By default, the class properties map to the same name attributes in the table. T
 
 The `@DynamoDBAttribute` annotation is optional when the name of the DynamoDB attribute matches the name of the property declared in the class. When they differ, use this annotation with the `attributeName` parameter to specify which DynamoDB attribute this property corresponds to.
 
-In the preceding example, the `@DynamoDBAttribute` annotation is added to each property to ensure that the property names match exactly with the tables created in a previous step, and to be consistent with the attribute names used in other code examples in this guide.
+In the preceding example, the `@DynamoDBAttribute` annotation is added to each property to make sure that the property names match exactly with the tables created in a previous step, and to be consistent with the attribute names used in other code examples in this guide.
 
 Your class definition can have properties that don't map to any attributes in the table. You identify these properties by adding the `@DynamoDBIgnore` annotation. In the preceding example, the `SomeProp` property is marked with the `@DynamoDBIgnore` annotation. When you upload a `CatalogItem` instance to the table, your `DynamoDBMapper` instance does not include the `SomeProp` property. In addition, the mapper does not return this attribute when you retrieve an item from the table.
 

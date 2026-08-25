@@ -12,6 +12,7 @@ You also set priority to the job queue that determines the order that the AWS Ba
 **Topics**
 + [Create an Amazon EC2 job queue](create-job-queue-ec2.md)
 + [Create a Fargate job queue](create-job-queue-fargate.md)
++ [Create an Amazon ECS Managed Instances job queue](create-job-queue-ecs-managed-instances.md)
 + [Create an Amazon EKS job queue](create-job-queue-eks.md)
 + [Create a SageMaker Training job queue in AWS Batch](create-sagemaker-job-queue.md)
 + [Job queue template](job-queue-template.md)

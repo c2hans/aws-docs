@@ -50,6 +50,7 @@ Required: Yes
    },
    "CreationTime": number,
    "DefaultDomainIdList": [ "string" ],
+   "KmsKeyId": "string",
    "LastModifiedBy": {
       "DomainId": "string",
       "IamIdentity": {
@@ -108,6 +109,12 @@ List of SageMaker Domain IDs for which this MLflow App is the default.
 Type: Array of strings
 Length Constraints: Minimum length of 0. Maximum length of 63.
 Pattern: `d-(-*[a-z0-9]){1,61}`
+
+ ** [KmsKeyId](#API_DescribeMlflowApp_ResponseSyntax) **   <a name="sagemaker-DescribeMlflowApp-response-KmsKeyId"></a>
+The ID of the AWS KMS key used to encrypt the data at rest associated with the MLflow App. This field is absent if the MLflow App is not encrypted with a customer-managed key.
+Type: String
+Length Constraints: Minimum length of 0. Maximum length of 2048.
+Pattern: `[a-zA-Z0-9:/_-]*`
 
  ** [LastModifiedBy](#API_DescribeMlflowApp_ResponseSyntax) **   <a name="sagemaker-DescribeMlflowApp-response-LastModifiedBy"></a>
 Information about the user who created or modified a SageMaker resource.

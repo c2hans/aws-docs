@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/entity-resolut
 # Resolution with AWS Entity Resolution
 <a name="entity-resolution"></a>
 
- Amazon Connect Customer Profiles offers a *managed connector* that lets you directly import matching results from AWS Entity Resolution. This integration allows you to use AWS Entity Resolution's powerful matching capabilities while maintaining your customer profiles in Amazon Connect.
+ Amazon Connect Customer Profiles offers a *managed connector* that lets you directly import matching results from AWS Entity Resolution. This integration allows you to use the powerful matching capabilities of AWS Entity Resolution while maintaining your customer profiles in Connect Customer.
 
  AWS Entity Resolution helps you match and link related records across your various data sources using flexible matching techniques including rules, machine learning, or third-party data providers. By connecting Entity Resolution results to Customer Profiles, you can:
 + Consolidate customer records from multiple systems more accurately

@@ -120,10 +120,10 @@ Configure the following properties on the page to send an SMS message:
 + **Flow**: The Connect Customer flow that will handle the outbound contact created. This flow can be used to assign the outbound contact to an agent to respond to the customer.
   + **Set manually**: Use the drop-down menu to choose from a list of published flows.
   + **Set dynamically**: Accepts an attribute based on a **Namespace** and **Key** that points to a flow ARN.
-+ **Link to contact**: This property gives you the option to link the outbound contact that is created to the inbound contact that initiated the flow. In some situations, you may not want to link the outbound contact that is created to avoid repetitive contact associations.
++ **Link to contact**: This property gives you the option to link the outbound contact that is created to the inbound contact that initiated the flow. In some situations, you might not want to link the outbound contact that is created to avoid repetitive contact associations.
   + This property gives you the option to link the outbound SMS contact to the inbound contact that initiated the flow.
 
-    In some situations, you may not want to link the contact to avoid sending repetitive outbound SMS messages. For example, if the flow is configured to send the customer the message *Thank you for your message\! We will get back to you within 24 hours.* every time you receive a contact.
+    In some situations, you might not want to link the contact to avoid sending repetitive outbound SMS messages. For example, if the flow is configured to send the customer the message *Thank you for your message\! We will get back to you within 24 hours.* every time you receive a contact.
 
 ### Send a WhatsApp Message
 <a name="sendmessage-block-whatsapp"></a>
@@ -153,10 +153,10 @@ If a customer has not messaged your business within the past 24 hours, they are 
 + **Flow**: The Connect Customer flow that will handle the outbound contact created. This flow can be used to assign the outbound contact to an agent to respond to the customer.
   + **Set manually**: Use the drop-down menu to choose from a list of published flows.
   + **Set dynamically**: Accepts an attribute based on a **Namespace** and **Key** that points to a flow ARN.
-+ **Link to contact**: This property gives you the option to link the outbound contact that is created to the inbound contact that initiated the flow. In some situations, you may not want to link the outbound contact that is created to avoid repetitive contact associations.
++ **Link to contact**: This property gives you the option to link the outbound contact that is created to the inbound contact that initiated the flow. In some situations, you might not want to link the outbound contact that is created to avoid repetitive contact associations.
   + This property gives you the option to link the outbound WhatsApp contact to the inbound contact that initiated the flow.
 
-    In some situations, you may not want to link the contact to avoid sending repetitive outbound WhatsApp messages. For example, if the flow is configured to send the customer the message *Thank you for your message\! We will get back to you within 24 hours.* every time you receive a contact.
+    In some situations, you might not want to link the contact to avoid sending repetitive outbound WhatsApp messages. For example, if the flow is configured to send the customer the message *Thank you for your message\! We will get back to you within 24 hours.* every time you receive a contact.
 
 ### Send an email
 <a name="sendmessage-block-email"></a>
@@ -187,7 +187,7 @@ You can enter only one email address on the cc line.
 + **Link to contact**:
   + This property gives you the option to link the outbound email contact to the inbound contact that initiated the flow.
 
-    In some situations, you may not want to link the contact to avoid sending repetitive outbound email messages. For example, if the flow is configured to send the customer the message *Thank you for your message\! We will get back to you within X hours.* every time you receive a contact.
+    In some situations, you might not want to link the contact to avoid sending repetitive outbound email messages. For example, if the flow is configured to send the customer the message *Thank you for your message\! We will get back to you within X hours.* every time you receive a contact.
 
 ### About using templates in the block
 <a name="sendmessage-block-email"></a>

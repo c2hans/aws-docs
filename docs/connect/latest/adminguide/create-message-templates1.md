@@ -95,7 +95,7 @@ When you create an email message that's based on a template, Connect Customer po
 
 1. Define a name for the template and add descriptions if needed.
 
-1. Once you selected Meta approved template, you will see the details displayed in **Body** and **Template Metadata (JSON)** format.
+1. After you selected Meta approved template, you will see the details displayed in **Body** and **Template Metadata (JSON)** format.
 
 1. **Attribute mapping:** To enable personalized message delivery in Connect Customer, you will need to map your imported Meta attributes to custom text. By combining your existing Connect attributes with plain text, you can create customized messages for your customers. For example, you might see Hello {{1}} in the **Body**, and you can choose to `Attributes.Customer.FirstName` from Connect attribute list to match.
 

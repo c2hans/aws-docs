@@ -17,6 +17,11 @@ To receive notifications of all source file changes to this specific documentati
 https://github.com/awsdocs/amazon-eks-user-guide/commits/mainline/latest/ug/automode/auto-change.adoc.atom
 ```
 
+## August 17, 2026
+<a name="_august_17_2026"></a>
+
+ **Documentation**: Added instructions for granting the EKS Auto Mode managed controllers additional Kubernetes RBAC through the `eks:managed` group on the auto-created `AWSServiceRoleForAmazonEKS` access entry. This unblocks use cases such as granting the load balancer controller access to a specific `Secret` so it can resolve OIDC configuration on an ALB `Ingress`. For more information, see [Grant additional Kubernetes RBAC to EKS Auto Mode managed controllers](auto-managed-rbac.md) and the walkthrough at [Grant the EKS Auto Mode load balancer controller access to a specific Secret](auto-managed-rbac-example.md).
+
 ## August 12, 2026
 <a name="_august_12_2026"></a>
 

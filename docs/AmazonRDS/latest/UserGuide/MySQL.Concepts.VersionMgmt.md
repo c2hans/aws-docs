@@ -44,6 +44,7 @@ The following table shows the minor versions of MySQL 8.4 that Amazon RDS curren
 
 | MySQL engine version | Community release date | RDS release date | RDS end of standard support date |
 | --- | --- | --- | --- |
+| 8.4.11 | 28 July 2026 | 21 August 2026 | 21 August 2027 |
 | 8.4.10 | 16 June 2026 | 7 July 2026 | 7 July 2027 |
 | 8.4.9 | 21 April 2026 | 8 May 2026 | 8 May 2027 |
 | 8.4.8 | 20 January 2026 | 3 February 2026 | 3 February 2027 |
@@ -130,6 +131,7 @@ You can test a DB instance against a new version before upgrading by creating a 
 For the changes that the MySQL community made to the minor versions, see [Critical Patch Updates, Security Alerts and Bulletins](https://www.oracle.com/security-alerts/) on the Oracle website. Under **Critical Patch Update**, choose the month when Oracle released the minor version. And then choose the MySQL minor version under **Affected Products and Versions**.
 
 **Topics**
++ [MySQL version 8.4.11](#MySQL.Concepts.VersionMgmt.Supported.Minor.8.4.11)
 + [MySQL version 8.4.10](#MySQL.Concepts.VersionMgmt.Supported.Minor.8.4.10)
 + [MySQL version 8.4.9](#MySQL.Concepts.VersionMgmt.Supported.Minor.8.4.9)
 + [MySQL version 8.4.8](#MySQL.Concepts.VersionMgmt.Supported.Minor.8.4.8)
@@ -146,6 +148,15 @@ For the changes that the MySQL community made to the minor versions, see [Critic
 + [MySQL version 8.0.40](#MySQL.Concepts.VersionMgmt.Supported.Minor.8.0.40)
 + [MySQL version 8.0.39](#MySQL.Concepts.VersionMgmt.Supported.Minor.8.0.39)
 + [MySQL version 8.0.37](#MySQL.Concepts.VersionMgmt.Supported.Minor.8.0.37)
+
+#### MySQL version 8.4.11
+<a name="MySQL.Concepts.VersionMgmt.Supported.Minor.8.4.11"></a>
+
+MySQL version 8.4.11 is now available on Amazon RDS. This release contains fixes and improvements added by the MySQL community and Amazon RDS.
+
+**New features and enhancements**
++ Updated the time zone information to base it on `tzdata2026c`.
++ Added support for post-quantum hybrid key exchange (`X25519MLKEM768` and `SecP256r1MLKEM768`) for TLS 1.3 connections. Clients that support post-quantum key exchange negotiate a quantum-resistant shared secret automatically. To confirm which group the current session negotiated, query the `Ssl_named_group` status variable. For example: `SHOW STATUS LIKE 'Ssl_named_group';`.
 
 #### MySQL version 8.4.10
 <a name="MySQL.Concepts.VersionMgmt.Supported.Minor.8.4.10"></a>

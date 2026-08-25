@@ -36,7 +36,7 @@ You can configure the **Check attributes** block by using the Amazon Connect adm
 | Property | Description |
 | --- | --- |
 | Attribute key | Select the attribute to evaluate. |
-| Operator | Choose the comparison condition (Equals, Contains, Greater than, etc.). |
+| Operator | Choose the comparison condition (Equals, Contains, Greater than). |
 | Value | Specify the target value for comparison. |
 
 Supported comparison conditions include: **Equals**, **Is less than**, **Is less or equal**, **Is greater than**, **Is greater or equal**, **Starts with**, **Ends with**, **Contains**, **Exists**, **Key exists**.

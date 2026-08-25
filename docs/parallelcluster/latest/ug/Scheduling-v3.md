@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/parallelcluster/latest/ug/Scheduling-v3.
 # `Scheduling` section
 <a name="Scheduling-v3"></a>
 
-**(Required)** Defines the job scheduler that's used in the cluster and the compute instances that the job scheduler manages. You can either use the Slurm or AWS Batch scheduler. Each supports a different set of settings and properties.
+**(Required)** Defines the job scheduler that's used in the cluster and the compute instances that the job scheduler manages. You can either use the Slurm or AWS Batch scheduler. Each supports a different set of settings and properties. Starting with AWS ParallelCluster version 3.16.0, AWS Batch as a scheduler is no longer supported.
 
 **Topics**
 + [`Scheduling` properties](#Scheduling-v3.properties)
@@ -165,7 +165,7 @@ Scheduling:
 <a name="Scheduling-v3.properties"></a>
 
 **`Scheduler` (**Required**, `String`)**
-Specifies the type of scheduler that's used. Supported values are `slurm` and `awsbatch`.
+Specifies the type of scheduler that's used. Supported values are `slurm` and `awsbatch`. Starting with AWS ParallelCluster version 3.16.0, AWS Batch as a scheduler is no longer supported.
 [Update policy: If this setting is changed, the update is not allowed.](using-pcluster-update-cluster-v3.md#update-policy-fail-v3)
 `awsbatch` only supports the `alinux2` operating system and `x86_64` platform.
 

@@ -41,11 +41,26 @@ Length Constraints: Minimum length of 1. Maximum length of 64.
 Pattern: `[\.\-_/#A-Za-z0-9]+`
 Required: No
 
+ ** schedulerConfiguration **   <a name="emroneks-Type-VirtualCluster-schedulerConfiguration"></a>
+The scheduler configuration (concurrency and queue limits) applied to the virtual cluster. The service does not return this field when no scheduler limits are configured.
+Type: [SchedulerConfiguration](API_SchedulerConfiguration.md) object
+Required: No
+
+ ** schedulerStatus **   <a name="emroneks-Type-VirtualCluster-schedulerStatus"></a>
+The current in-queue and concurrent job-run counts for the virtual cluster.
+Type: [SchedulerStatus](API_SchedulerStatus.md) object
+Required: No
+
  ** securityConfigurationId **   <a name="emroneks-Type-VirtualCluster-securityConfigurationId"></a>
 The ID of the security configuration.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
 Pattern: `[0-9a-z]+`
+Required: No
+
+ ** sessionEnabled **   <a name="emroneks-Type-VirtualCluster-sessionEnabled"></a>
+Specifies whether the virtual cluster has session support enabled.
+Type: Boolean
 Required: No
 
  ** state **   <a name="emroneks-Type-VirtualCluster-state"></a>

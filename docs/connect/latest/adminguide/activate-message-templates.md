@@ -9,7 +9,7 @@ To help you manage the development and use of individual message templates, Conn
 
 You can only activate message templates that have been **Saved as new version**. This is to prevent accidentally activating templates that are drafts.
 
-When a template version is **Activated**, it is available to be added to the [Flow block in Connect Customer: Send message](send-message.md) and may be available to agents through the agent workspace.
+When a template version is **Activated**, it is available to be added to the [Flow block in Connect Customer: Send message](send-message.md) and might be available to agents through the agent workspace.
 
 **To activate a messaging template**
 

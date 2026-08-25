@@ -22,7 +22,7 @@ Type: Boolean
 Required: No
 
  ** iops **   <a name="bedrockagentcorecontrol-Type-EphemeralEBSVolumeConfiguration-iops"></a>
-The number of IOPS to provision. For `gp3`, `io1`, and `io2` volumes, this is the number of IOPS provisioned for the volume. For `gp2` volumes, this sets the baseline IOPS performance. Supported values: `gp3`, 3,000–80,000; `io1`, 100–64,000; `io2`, 100–256,000.
+The number of IOPS to provision. For `gp3`, `io1`, and `io2` volumes, this is the number of IOPS provisioned for the volume. For `gp2` volumes, this sets the baseline IOPS performance. It also controls the rate at which the volume accumulates I/O credits for bursting. Supported values: `gp3`, 3,000–80,000; `io1`, 100–64,000; `io2`, 100–256,000.
 Type: Integer
 Valid Range: Minimum value of 100. Maximum value of 256000.
 Required: No

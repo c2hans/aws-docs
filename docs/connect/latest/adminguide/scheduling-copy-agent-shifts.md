@@ -21,7 +21,7 @@ Contact center managers, supervisors, and schedulers can copy shifts from one ag
 
 1. In the **Add to** section, select the agents (up to 50 agents) you would like to copy the shift to.
 
-1. In the **Add to** section, select a single date or date range to copy to. Ensure that the number of days selected in **Copy from** matches the number of days selected in **Copy to**.
+1. In the **Add to** section, select a single date or date range to copy to. Make sure that the number of days selected in **Copy from** matches the number of days selected in **Copy to**.
 
 1. Choose **Apply** and then **Confirm**.
 

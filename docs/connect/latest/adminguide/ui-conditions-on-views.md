@@ -22,6 +22,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/ui-conditions-
 
 1. Apply when value matches: The value of the trigger component that will be evaluated to trigger the condition
 
-1. Apply results: The desired change to the selected component once the evaluation on the trigger component is met
+1. Apply results: The desired change to the selected component after the evaluation on the trigger component is met
 
  When conditions are set on a component, it will be outlined in dashed lines in the UI builder. You can remove conditions by choosing the trash icon in the conditions tab in the component's settings panel.

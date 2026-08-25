@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_ListV
 # ListVirtualClusters
 <a name="API_ListVirtualClusters"></a>
 
-Lists information about the specified virtual cluster. Virtual cluster is a managed entity on Amazon EMR on EKS. You can create, describe, list and delete virtual clusters. They do not consume any additional resource in your system. A single virtual cluster maps to a single Kubernetes namespace. Given this relationship, you can model virtual clusters the same way you model Kubernetes namespaces to meet your requirements.
+Lists information about the specified virtual cluster. Virtual cluster is a managed entity on Amazon EMR on EKS. You can create, update, describe, list and delete virtual clusters. They do not consume any additional resource in your system. A single virtual cluster maps to a single Kubernetes namespace. Given this relationship, you can model virtual clusters the same way you model Kubernetes namespaces to meet your requirements.
 
 ## Request Syntax
 <a name="API_ListVirtualClusters_RequestSyntax"></a>
@@ -75,7 +75,16 @@ Content-type: application/json
          "createdAt": "string",
          "id": "string",
          "name": "string",
+         "schedulerConfiguration": {
+            "maxConcurrentJobRuns": number,
+            "maxInQueueJobRuns": number
+         },
+         "schedulerStatus": {
+            "currentConcurrentJobRuns": number,
+            "currentInQueueJobRuns": number
+         },
          "securityConfigurationId": "string",
+         "sessionEnabled": boolean,
          "state": "string",
          "tags": {
             "string" : "string"

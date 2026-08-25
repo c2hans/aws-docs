@@ -16,7 +16,7 @@ The following table lists the quotas related to Direct Connect.
 | Active Direct Connect connections per Direct Connect location per Region per account | 10 | Contact your Solutions Architect (SA) or Technical Account Manager (TAM) for further assistance. |
 | Number of virtual interfaces per Link Aggregation Group (LAG) | 51 | When AWS Direct Connect support for Amazon VPC Transit Gateways was launched, a quota of one (1) transit virtual interface was added to the quota of 50 private or public virtual interfaces per LAG. The number of transit virtual interfaces allowed is now four (4) and is counted against the maximum of 51 virtual interfaces per LAG. This limit cannot be increased. |
 | Rate Limiters per Dedicated connection | 10 | Contact your Solutions Architect (SA) or Technical Account Manager (TAM) for further assistance. |
-| Routes per Border Gateway Protocol (BGP) session on a private virtual interface or transit virtual interface from on-premises to AWS.<br />If you advertise more than 100 routes each for IPv4 and IPv6 over the BGP session, the BGP session will go into an idle state with the BGP session DOWN. | 100 each for IPv4 and IPv6 | Contact your Solutions Architect (SA) or Technical Account Manager (TAM) for further assistance. |
+| Routes per Border Gateway Protocol (BGP) session on a private virtual interface or transit virtual interface from on-premises to AWS.<br />If you advertise more route prefixes than your configured allocations for IPv4 and IPv6 over the BGP session, the BGP session will go into an idle state and be reported with BGP session status DOWN. | Default of 100 each for IPv4 and IPv6. Can be increased [using prefix controls](prefix-controls.md) up to 1,000 each for IPv4 and IPv6. | Contact your Solutions Architect (SA) or Technical Account Manager (TAM) for further assistance. |
 | Routes per Border Gateway Protocol (BGP) session on a public virtual interface | 1,000 | This limit cannot be increased. |
 | Dedicated connections per link aggregation group (LAG) | 4 when the port speed is less than 100G 2 when the port speed is 100G |  |
 | Link aggregation groups (LAGs) per Region | 10 | Contact your Solutions Architect (SA) or Technical Account Manager (TAM) for further assistance. |
@@ -28,7 +28,7 @@ The following table lists the quotas related to Direct Connect.
 | Number of prefixes per AWS Transit Gateway from AWS to on-premise on a transit virtual interface | 200 combined total for IPv4 and IPv6 | Contact your Solutions Architect (SA) or Technical Account Manager (TAM) for further assistance. |
 | Number of virtual interfaces per virtual private gateway | There is no limit. |  |
 | Number of Direct Connect gateways associated to a Transit Gateway | 20 | This limit cannot be increased. |
-| SiteLink prefix limit | 100 | Contact your Solutions Architect (SA) or Technical Account Manager (TAM) for further assistance. |
+| SiteLink prefix limit | Up to 1,000 each for IPv4 and IPv6, configured on your private or transit virtual interface [using prefix controls](prefix-controls.md). | Contact your Solutions Architect (SA) or Technical Account Manager (TAM) for further assistance. |
 
 Direct Connect supports these port speeds over single-mode fiber: 1 Gbps: 1000BASE-LX (1310 nm), 10 Gbps: 10GBASE-LR (1310 nm) , 100Gbps: 100GBASE-LR4, and 400 Gbps: 400GBASE-LR4.
 

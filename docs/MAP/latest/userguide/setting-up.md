@@ -24,7 +24,7 @@ The following diagram shows the decision tree for selecting the appropriate tag 
   + **Services included in the Service list**
   + **SAP included in the Service list**
   + **Oracle included in the Service list**
-  + **DB&A included Service list**: For more information, see [Database and analytic tags](DBA-tags.md).
+  + **Database and analytics included in the Service list**: For more information, see [Database and analytics tags](DBA-tags.md).
 
 **Note**
 Use lowercase letters for the `mig`, `sap`, and `oracle` prefixes and uppercase letters for the alphanumeric MPE IDs (long MPE IDs). For more information about your MPE ID, see [MPE ID length](mpe-length.md).

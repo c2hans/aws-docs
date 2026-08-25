@@ -64,7 +64,7 @@ Begin with an overview question, and then drill into specifics. For example:
 | Informal metric names | May not be recognized. | Use standard Connect Customer metric terminology. |
 | Overly complex compound question | May return partial or inaccurate results. | Break the question into multiple sequential questions. |
 | Not using follow-up questions | Repeats full context and loses the investigation thread. | Use follow-up questions such as **Break that down by hour.** |
-| Vague resource references | An incorrect resource may be selected. | Use exact names, such as the Premium Support queue instead of the support queue. |
+| Vague resource references | An incorrect resource might be selected. | Use exact names, such as the Premium Support queue instead of the support queue. |
 
 ## Recommended daily workflow
 <a name="manager-assistant-daily-workflow"></a>
@@ -99,4 +99,4 @@ Manager assistant interprets time references and calculation boundaries as follo
 + Document decisions separately. Manager assistant provides insights, and is not a system of record.
 
 **Important**
-Responses from manager assistant may contain inaccuracies. Always validate information before you make business decisions.
+Responses from manager assistant might contain inaccuracies. Always validate information before you make business decisions.

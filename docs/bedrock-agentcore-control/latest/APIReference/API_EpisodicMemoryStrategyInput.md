@@ -33,7 +33,7 @@ This is a legacy parameter, use `namespaceTemplates`. The namespaces for which t
 Type: Array of strings
 Array Members: Fixed number of 1 item.
 Length Constraints: Minimum length of 1. Maximum length of 512.
-Pattern: `[a-zA-Z0-9\-_\/]*(\{(actorId|sessionId|memoryStrategyId)\}[a-zA-Z0-9\-_\/]*)*`
+Pattern: `[a-zA-Z0-9\-_\/]*(\{[a-zA-Z][a-zA-Z0-9]*\}[a-zA-Z0-9\-_\/]*)*`
 Required: No
 
  ** namespaceTemplates **   <a name="bedrockagentcorecontrol-Type-EpisodicMemoryStrategyInput-namespaceTemplates"></a>
@@ -41,7 +41,7 @@ The namespaceTemplates for which to create episodes.
 Type: Array of strings
 Array Members: Fixed number of 1 item.
 Length Constraints: Minimum length of 1. Maximum length of 512.
-Pattern: `[a-zA-Z0-9\-_\/]*(\{(actorId|sessionId|memoryStrategyId)\}[a-zA-Z0-9\-_\/]*)*`
+Pattern: `[a-zA-Z0-9\-_\/]*(\{[a-zA-Z][a-zA-Z0-9]*\}[a-zA-Z0-9\-_\/]*)*`
 Required: No
 
  ** reflectionConfiguration **   <a name="bedrockagentcorecontrol-Type-EpisodicMemoryStrategyInput-reflectionConfiguration"></a>

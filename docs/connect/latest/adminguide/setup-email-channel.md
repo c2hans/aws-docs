@@ -42,7 +42,7 @@ In the routing profile:
   + **Message**: Specify a template or enter plain text.
     + You can specify the **Subject** dynamically by using the **Segment attribute** - **Email Subject**.
     + You can specify the **Message** dynamically by choosing a **User-defined** attribute.
-  + **Link to contact**: Choose if you want to link the inbound contact email to the outbound contact email. You may not want to choose this option for automatic reply emails.
+  + **Link to contact**: Choose if you want to link the inbound contact email to the outbound contact email. You might not want to choose this option for automatic reply emails.
 + Use the attributes in the [Check contact attributes](check-contact-attributes.md) block to check the channel of the contact. If it's an email, you can use the following [Segment attributes](connect-attrib-list.md#attribs-segment-attributes) to check:
   + **Email Subject**: You can check the subject for certain keywords, for example.
   + **Amazon SES Spam Verdict** and **Amazon SES Virus Verdict**: When the customer's email comes in, Amazon SES scans it for spam and viruses. For example, if the condition equals FAILED (that means, the email failed the check) you can disconnect the contact or send the email to a special queue for managers to review it.

@@ -127,7 +127,7 @@ Pattern: `arn:aws(|-cn|-us-gov):kms:[a-zA-Z0-9-]*:[0-9]{12}:key/[a-zA-Z0-9-]{36}
  ** [schemaType](#API_GetDataset_ResponseSyntax) **   <a name="bedrockagentcorecontrol-GetDataset-response-schemaType"></a>
  The schema type declared at create time. Immutable after creation.
 Type: String
-Valid Values: `AGENTCORE_EVALUATION_PREDEFINED_V1 | AGENTCORE_EVALUATION_SIMULATED_V1 | GENERIC_EVALUATION_PREDEFINED_V1`
+Valid Values: `AGENTCORE_EVALUATION_PREDEFINED_V1 | AGENTCORE_EVALUATION_SIMULATED_V1 | THIRD_PARTY_EVALUATION_V1`
 
  ** [status](#API_GetDataset_ResponseSyntax) **   <a name="bedrockagentcorecontrol-GetDataset-response-status"></a>
  The current status of the dataset.

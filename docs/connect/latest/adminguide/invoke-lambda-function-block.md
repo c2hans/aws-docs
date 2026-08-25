@@ -65,7 +65,7 @@ When **Select an action** is set to **Invoke Lambda**, note the following proper
   If your Lambda invocation gets throttled, the request is retried. It is also retried if a general service failure (500 error) happens.
 
   When a Lambda invocation returns an error, Connect Customer retries up to three times, for maximum until timeout specified. At that point, the contact is routed down the **Error** branch.
-+ **Response validation**: The Lambda function response may be either a STRING\_MAP or JSON. You must set it when you configure the **AWS Lambda function** block in the flow.
++ **Response validation**: The Lambda function response might be either a STRING\_MAP or JSON. You must set it when you configure the **AWS Lambda function** block in the flow.
   + When the response validation is set to STRING\_MAP, the Lambda function returns a flat object of key/value pairs of the string type.
   + When the response validation is set to JSON, the Lambda function returns any valid JSON including nested JSON.
 

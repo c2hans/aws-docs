@@ -140,7 +140,7 @@ Auto Scaling typically takes several minutes to respond to traffic changes. For 
 
 Use this procedure when [Auto Scaling](AutoScaling.md) is enabled but throttling still occurs. You can tune Auto Scaling independently for both tables and global secondary indexes (GSIs), with separate controls for read and write capacity units.
 + **Adjust target utilization:** Consider lowering the target utilization for your table or GSIs to trigger scaling earlier before throttling occurs. Make sure that you monitor your traffic after making these adjustments. See [Configuring table Auto Scaling to adjust the read or write capacity of your table or GSI](#provisioned-capacity-configure-autoscaling) for more information about capacity consumption and cost implications.
-+ **Review capacity boundaries:** Ensure your minimum and maximum capacity settings align with your actual workload patterns.
++ **Review capacity boundaries:** Make sure your minimum and maximum capacity settings align with your actual workload patterns.
 
 ### Switching to on-demand capacity mode
 <a name="procedure-switch-ondemand"></a>

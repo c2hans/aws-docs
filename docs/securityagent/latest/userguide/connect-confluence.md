@@ -8,9 +8,9 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/connect-c
 Connect your AWS Security Agent to Confluence Cloud to provide documentation context for security assessments. Unlike code providers, Confluence serves as a documentation source that provides threat models, architecture documents, API specifications, and other materials that enhance the quality of security reviews. Before you begin, review [How integrations work with Agent Spaces](about-integrations.md) to understand how a registration is reused across Agent Spaces.
 
 Confluence integration serves multiple purposes:
-+  **Design review context** - Provide architectural documents and design specifications for security design reviews
-+  **Threat modeling** - Provide existing threat models and system documentation for threat analysis
-+  **Penetration testing context** - Provide application documentation for deeper understanding during penetration testing
++  **Continuum design review context** - Provide architectural documents and design specifications for security design reviews
++  **Continuum threat modeling** - Provide existing threat models and system documentation for threat analysis
++  **Continuum penetration testing context** - Provide application documentation for deeper understanding during penetration testing
 
 Connecting Confluence to AWS Security Agent requires installing the AWS Security Agent Forge app on your Atlassian site and completing the OAuth authorization flow.
 
@@ -110,5 +110,5 @@ If the AWS Security Agent Forge app is uninstalled from your Atlassian site whil
 After connecting Confluence to AWS Security Agent:
 + Navigate to the Agent Space where you want to use this documentation
 + Select specific pages to include as context for design reviews and penetration tests
-+ Select pages as scope documents for threat models (see [Enable threat modeling](enable-threat-model.md))
++ Select pages as scope documents for threat models (see [Enable Continuum threat modeling](enable-threat-model.md))
 + Upload additional documentation via S3 if needed (see [Provide agent resources from an S3 bucket](enable-s3-bucket.md))

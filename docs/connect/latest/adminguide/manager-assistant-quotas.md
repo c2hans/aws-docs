@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/manager-assist
 # Service quotas for manager assistant
 <a name="manager-assistant-quotas"></a>
 
-The following quotas apply to manager assistant during preview. These quotas may change as the capability matures, so check this page for updates.
+The following quotas apply to manager assistant during preview. These quotas might change as the capability matures, so check this page for updates.
 
 ## Quotas
 <a name="manager-assistant-quotas-list"></a>

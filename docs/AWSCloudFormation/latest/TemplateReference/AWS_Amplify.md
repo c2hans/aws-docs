@@ -12,3 +12,4 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::Amplify::Branch](aws-resource-amplify-branch.md)
 + [AWS::Amplify::Domain](aws-resource-amplify-domain.md)
 + [AWS::Amplify::Jobs](aws-resource-amplify-jobs.md)
++ [AWS::Amplify::Webhook](aws-resource-amplify-webhook.md)

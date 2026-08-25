@@ -49,7 +49,8 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[Threshold](#cfn-cloudwatch-alarm-threshold)" : {{Number}},
       "[ThresholdMetricId](#cfn-cloudwatch-alarm-thresholdmetricid)" : {{String}},
       "[TreatMissingData](#cfn-cloudwatch-alarm-treatmissingdata)" : {{String}},
-      "[Unit](#cfn-cloudwatch-alarm-unit)" : {{String}}
+      "[Unit](#cfn-cloudwatch-alarm-unit)" : {{String}},
+      "[WarmUpConfiguration](#cfn-cloudwatch-alarm-warmupconfiguration)" : {{WarmUpConfiguration}}
     }
 }
 ```
@@ -93,6 +94,8 @@ Properties:
   [ThresholdMetricId](#cfn-cloudwatch-alarm-thresholdmetricid): {{String}}
   [TreatMissingData](#cfn-cloudwatch-alarm-treatmissingdata): {{String}}
   [Unit](#cfn-cloudwatch-alarm-unit): {{String}}
+  [WarmUpConfiguration](#cfn-cloudwatch-alarm-warmupconfiguration): {{
+    WarmUpConfiguration}}
 ```
 
 ## Properties
@@ -287,6 +290,13 @@ The unit of the metric associated with the alarm. Specify this only if you are c
 *Required*: No
 *Type*: String
 *Allowed values*: `Seconds | Microseconds | Milliseconds | Bytes | Kilobytes | Megabytes | Gigabytes | Terabytes | Bits | Kilobits | Megabits | Gigabits | Terabits | Percent | Count | Bytes/Second | Kilobytes/Second | Megabytes/Second | Gigabytes/Second | Terabytes/Second | Bits/Second | Kilobits/Second | Megabits/Second | Gigabits/Second | Terabits/Second | Count/Second | None`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`WarmUpConfiguration`  <a name="cfn-cloudwatch-alarm-warmupconfiguration"></a>
+The warm-up configuration for the alarm. A warm-up period delays alarm evaluation after you create or update the alarm. During the warm-up period, the alarm stays in `INSUFFICIENT_DATA` and does not perform alarm actions.
+For more information, see [Alarm warm-up periods](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/alarm-warm-up.html) in the *Amazon CloudWatch User Guide*.
+*Required*: No
+*Type*: [WarmUpConfiguration](aws-properties-cloudwatch-alarm-warmupconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values

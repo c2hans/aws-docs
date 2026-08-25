@@ -87,7 +87,7 @@ You can disable trusted access using either the Reachability Analyzer console (r
 ## Enabling a delegated administrator account for Reachability Analyzer
 <a name="integrate-enable-da-ra"></a>
 
-The delegated administrator account is able to run connectivity analyses across any of the resources in the organization. For more information, see [Integrate Reachability Analyzer with AWS Organizations](https://docs.aws.amazon.com/vpc/latest/ipam/enable-integ-ipam.html) in the *Reachability Analyzer user guide*.
+The delegated administrator account is able to run connectivity analyses across any of the resources in the organization. For more information, see [Integrate Reachability Analyzer with AWS Organizations](https://docs.aws.amazon.com/vpc/latest/reachability/multi-account.html) in the *Reachability Analyzer user guide*.
 
 Only an administrator in the organization management account can configure a delegated administrator for Reachability Analyzer.
 
@@ -96,7 +96,7 @@ You can specify a delegated administrator account from the Reachability Analyzer
 **Minimum permissions**
 Only a user or role in the Organizations management account can configure a member account as a delegated administrator for Reachability Analyzer in the organization
 
-To configure a delegated administrator using the Reachability Analyzer console, see [Integrate Reachability Analyzer with AWS Organizations](https://docs.aws.amazon.com/vpc/latest/ipam/enable-integ-ipam.html) in the *Reachability Analyzer user guide*.
+To configure a delegated administrator using the Reachability Analyzer console, see [Manage delegated administrator accounts in Reachability Analyzer](https://docs.aws.amazon.com/vpc/latest/reachability/manage-delegated-administrators.html) in the *Reachability Analyzer user guide*.
 
 ## Disabling a delegated administrator for Reachability Analyzer
 <a name="integrate-disable-da-ra"></a>

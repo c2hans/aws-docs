@@ -57,7 +57,7 @@ Simulates customer voice or text input. This is used for Lex bot or AI agent int
   + ActionType: Must be `SendInstruction`
   + Actor: `Customer` indicates this simulates customer behavior
   + Instruction: Object defining the instruction
-    + Type: Must be `TextUtterance`
+    + Type: Must be `Utterance`
     + Properties:
       + Text (Optional): Plain text input to send
       + SSML (Optional): SSML-formatted input to send
@@ -73,7 +73,7 @@ Simulates customer voice or text input. This is used for Lex bot or AI agent int
         "ActionType": "SendInstruction",
         "Actor" : "Customer",
         "Instruction": {
-            "Type": "TextUtterance",
+            "Type": "Utterance",
             "Properties": {
                 "Text":  "string", // An optional string that defines text to send to the participant along with gathering input. May not be specified if PromptId or SSML is also specified. May be specified statically or dynamically.
                 "SSML": "string", // An optional string that defines SSML to send to the participant along with gathering input. May not be specified if Text or PromptId is also specified May be specified statically or dynamically.,
@@ -111,7 +111,7 @@ Simulates customer ending the call.
         "ActionType": "SendInstruction",
         "Actor" : "Customer",
         "Instruction": {
-            "Type": "Disconnect",
+            "Type": "Disconnect"
         }
     },
     "Transitions": { "NextAction": "string" }

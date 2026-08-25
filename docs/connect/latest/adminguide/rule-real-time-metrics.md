@@ -24,7 +24,7 @@ You can create rules that automatically send emails or tasks to managers based o
 1. Choose **Add condition**. The **Metrics** card is added automatically, as shown in the following image.
 ![The condition for when a real-time metric is updated.](http://docs.aws.amazon.com/connect/latest/adminguide/images/rtm-rule-condition-all.png)
 **Note**
-You can add up to 2 Metrics cards. This enables you to create a condition where one card evaluates real-time metrics and another evaluates trailing windows of time. For example, you may want an alert when several agents on are lunch break (Agent activity = Lunch break for 1 hour) and Average handle time is greater than 5 minutes.
+You can add up to 2 Metrics cards. This enables you to create a condition where one card evaluates real-time metrics and another evaluates trailing windows of time. For example, you might want an alert when several agents on are lunch break (Agent activity = Lunch break for 1 hour) and Average handle time is greater than 5 minutes.
 You can add up to 10 metrics to each **Metrics** card.
 
    Following are the available real-time metrics you can add, depending on the event source.

@@ -18,6 +18,7 @@ You can use the Athena JDBC driver to connect to Amazon Athena from many third-p
 Following are some considerations and limitations for the Athena JDBC 3.x driver.
 + **Logging** – The 3.x driver uses [SLF4J](https://www.slf4j.org/manual.html), which is an abstraction layer that enables the use of any one of several logging systems at runtime.
 + **Encryption** – When using the Amazon S3 fetcher with the `CSE_KMS` encryption option, the Amazon S3 client can't decrypt results stored in an Amazon S3 bucket. If you require `CSE_KMS` encryption, you can continue to use the streaming fetcher. Support for `CSE_KMS` encryption with the Amazon S3 fetcher is planned.
++ **Table types** – The `DatabaseMetaData.getTables` method reports Athena external and federated tables as the JDBC table type `TABLE`. It reports Athena views as `VIEW`. When you pass a table-type filter to `getTables`, use the JDBC names `TABLE` and `VIEW`. Do not use Athena table-type names such as `EXTERNAL_TABLE` or `VIRTUAL_VIEW`.
 
 ## JDBC 3.x driver download
 <a name="jdbc-v3-driver-download"></a>

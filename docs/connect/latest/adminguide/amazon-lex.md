@@ -185,7 +185,7 @@ After you create your bot, make sure it works as intended.
 ------
 #### [ Amazon Lex ]
 
-1. At the bottom of the page, choose **Build**. It may take a minute or two. The following image shows where the **Build** button is located.
+1. At the bottom of the page, choose **Build**. It might take a minute or two. The following image shows where the **Build** button is located.
 ![The location of the Build button on the page.](http://docs.aws.amazon.com/connect/latest/adminguide/images/lexv2-build-test-intent.png)
 
 1. When it's finished building, choose **Test**.
@@ -205,7 +205,7 @@ After you create your bot, make sure it works as intended.
 ------
 #### [ Amazon Lex (Classic) ]
 
-1. Choose **Build**. It may take a minute or two.
+1. Choose **Build**. It might take a minute or two.
 
 1. When it's finished building, choose **Test Chatbot**, as shown in the following image.
 ![The test chatbot button, on the right side of the page.](http://docs.aws.amazon.com/connect/latest/adminguide/images/lex-test-chatbot.png)

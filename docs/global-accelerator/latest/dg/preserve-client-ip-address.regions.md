@@ -35,7 +35,6 @@ Global Accelerator is currently available in the following AWS Regions. Availabi
 | Asia Pacific (Seoul) | ap-northeast-2 |
 | Canada (Central) | ca-central-1 (except AZ cac1-az3) |
 | Canada West (Calgary) | ca-west-1 |
-| Canada West (Calgary) | ca-west-1 |
 | Europe (Frankfurt) | eu-central-1 |
 | Europe (Ireland) | eu-west-1 |
 | Europe (London) | eu-west-2 |

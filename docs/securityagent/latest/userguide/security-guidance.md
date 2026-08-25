@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/security-guidance.html
 ---
 
-# Security Considerations for AWS Security Agent and AI assisted penetration testing
+# Security Considerations for AWS Security Agent and AI assisted Continuum penetration testing
 <a name="security-guidance"></a>
 
 AWS Security Agent is a frontier agent that proactively secures your applications throughout the development lifecycle across all your environments. It conducts automated security reviews customized to your requirements, with security teams centrally defining standards that are automatically validated during reviews. Security Agent performs on-demand penetration testing customized to your application, discovering and reporting verified security risks. This approach scales security expertise across your applications to match development velocity while providing comprehensive security coverage. By integrating security from design to deployment, it helps prevent vulnerabilities early and at scale.
@@ -16,18 +16,18 @@ For deployment validation, AWS Security Agent transforms penetration testing fro
 
 AWS Security Agent provides comprehensive security capabilities spanning the entire development lifecycle.
 
-## Design security review
-<a name="_design_security_review"></a>
+## Continuum design security review
+<a name="_continuum_design_security_review"></a>
 
 AWS Security Agent provides on-demand security feedback on design documents and assesses compliance with organizational security requirements before code is written. Security teams upload design documents through the web application, where the agent analyzes them against your security requirements and surfaces findings with remediation guidance. This accelerates hours-long manual reviews into focused analysis, enabling teams to address security concerns when remediation is most efficient.
 
-## Code security review
-<a name="_code_security_review"></a>
+## Continuum code security review
+<a name="_continuum_code_security_review"></a>
 
 AWS Security Agent analyzes pull requests or uploaded code for organizational security requirements and common security issues like missing input validation and SQL injection risks. The agent provides remediation guidance directly within your code repository platform. Security teams configure which repositories to monitor, scaling evaluation across all codebases while maintaining oversight on critical issues.
 
-## On-demand penetration testing
-<a name="_on_demand_penetration_testing"></a>
+## On-demand Continuum penetration testing
+<a name="_on_demand_continuum_penetration_testing"></a>
 
 AWS Security Agent provides on-demand penetration testing that discovers and reports validated security vulnerabilities through tailored multi-step attack scenarios. AWS Security Agent deploys specialized AI agents that develop application context from provided documentation and credentials, then execute sophisticated attack chains to identify complex vulnerabilities that conventional tools miss. It documents findings with impact analysis, reproducible attack paths, and ready-to-implement code fixes, accelerating penetration testing from weeks to hours and scaling validation across your application portfolio.
 

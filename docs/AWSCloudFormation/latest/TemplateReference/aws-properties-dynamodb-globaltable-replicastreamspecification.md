@@ -19,7 +19,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
-  "[ResourcePolicy](#cfn-dynamodb-globaltable-replicastreamspecification-resourcepolicy)" : {{ResourcePolicy}}
+  "[ResourcePolicy](#cfn-dynamodb-globaltable-replicastreamspecification-resourcepolicy)" : {{ResourcePolicy}},
+  "[Tags](#cfn-dynamodb-globaltable-replicastreamspecification-tags)" : {{[ Tag, ... ]}}
 }
 ```
 
@@ -29,6 +30,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
   [ResourcePolicy](#cfn-dynamodb-globaltable-replicastreamspecification-resourcepolicy): {{
     ResourcePolicy}}
+  [Tags](#cfn-dynamodb-globaltable-replicastreamspecification-tags): {{
+    - Tag}}
 ```
 
 ## Properties
@@ -40,4 +43,11 @@ In a CloudFormation template, you can provide the policy in JSON or YAML format 
 You can update the `ResourcePolicy` property if you've specified more than one table using the [AWS::DynamoDB::GlobalTable](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-globaltable.html) resource.
 *Required*: No
 *Type*: [ResourcePolicy](aws-properties-dynamodb-globaltable-resourcepolicy.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`Tags`  <a name="cfn-dynamodb-globaltable-replicastreamspecification-tags"></a>
+Specifies the tags to apply to the DynamoDB stream for this global table replica. Stream tags are independent of table and replica tags.
+For an overview on tagging DynamoDB resources, see [Tagging for DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Tagging.html) in the *Amazon DynamoDB Developer Guide*.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-dynamodb-globaltable-tag.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

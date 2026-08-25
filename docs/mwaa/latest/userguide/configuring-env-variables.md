@@ -21,11 +21,11 @@ Apache Airflow configuration options can be attached to your Amazon Managed Work
   + [Scheduler configurations](#configuring-env-variables-scheduler)
   + [Worker configurations](#configuring-env-variables-workers)
   + [Webserver configurations](#configuring-env-variables-webserver)
-  + [Triggerer configurations](#configuring-env-variables-webserver)
+  + [Triggerer configurations](#configuring-env-variables-triggerer)
 + [Unsupported configurations](#configuring-env-variables-unsupported)
 + [Examples and sample code](#configuring-env-variables-code)
   + [Example DAG](#configuring-env-variables-dag)
-  + [Example email notification settings](#configuring-env-variables-email)
+  + [Example email notification settings](#configuring-env-variables-email-example)
 + [What's next?](#configuring-env-variables-next-up)
 
 ## Prerequisites
@@ -104,10 +104,13 @@ We recommend using port 587 for SMTP traffic. By default, AWS blocks outbound SM
 | --- | --- | --- |
 | email.email\_backend | The Apache Airflow utility used for email notifications in [email\_backend](https://airflow.apache.org/docs/apache-airflow/2.0.2/configurations-ref.html#email-backend). | airflow.utils.email.send\_email\_smtp |
 | smtp.smtp\_host | The name of the outbound server used for the email address in [smtp\_host](https://airflow.apache.org/docs/apache-airflow/2.0.2/configurations-ref.html#smtp-host). | localhost |
-| smtp.smtp\_starttls | Transport Layer Security (TLS) is used to encrypt the email over the internet in [smtp\_starttls](https://airflow.apache.org/docs/apache-airflow/2.0.2/configurations-ref.html#smtp-starttls). | False |
-| smtp.smtp\_ssl | Secure Sockets Layer (SSL) is used to connect the server and email client in [smtp\_ssl](https://airflow.apache.org/docs/apache-airflow/2.0.2/configurations-ref.html#smtp-ssl). | True |
+| smtp.smtp\_starttls | Transport Layer Security (TLS) is used to encrypt the email over the internet in [smtp\_starttls](https://airflow.apache.org/docs/apache-airflow/2.0.2/configurations-ref.html#smtp-starttls). | True |
+| smtp.smtp\_ssl | Secure Sockets Layer (SSL) is used to connect the server and email client in [smtp\_ssl](https://airflow.apache.org/docs/apache-airflow/2.0.2/configurations-ref.html#smtp-ssl). | False |
 | smtp.smtp\_port | The Transmission Control Protocol (TCP) port designated to the server in [smtp\_port](https://airflow.apache.org/docs/apache-airflow/2.0.2/configurations-ref.html#smtp-port). | 587 |
 | smtp.smtp\_mail\_from | The outbound email address in [smtp\_mail\_from](https://airflow.apache.org/docs/apache-airflow/2.0.2/configurations-ref.html#smtp-mail-from). | myemail@domain.com |
+
+**SMTP port and encryption settings**
+Use 587 with STARTTLS (`smtp_starttls` : `True`, `smtp_ssl` : `False`), or 465 with the SSL/TLS wrapper (`smtp_ssl` : `True`).
 
 ### Task configurations
 <a name="configuring-env-variables-tasks"></a>
@@ -149,14 +152,14 @@ The following list displays the Apache Airflow webserver configurations availabl
 | webserver.default\_ui\_timezone Not available in Apache Airflow v3.  | The default Apache Airflow UI datetime setting in [default\_ui\_timezone](https://airflow.apache.org/docs/apache-airflow/2.0.2/configurations-ref.html#default-ui-timezone). Setting the `default_ui_timezone` option does not change the time zone in which your DAGs are scheduled to run. To change the time zone for your DAGs, you can use a custom plugin. For more information, refer to [Changing a DAG's timezone on Amazon MWAA](samples-plugins-timezone.md).  | America/New\_York |
 
 ### Triggerer configurations
-<a name="configuring-env-variables-webserver"></a>
+<a name="configuring-env-variables-triggerer"></a>
 
 The following list displays the Apache Airflow [triggerer](https://airflow.apache.org/docs/apache-airflow/stable/authoring-and-scheduling/deferring.html) configurations available on Amazon MWAA for Apache Airflow v2 and v3.
 
 | Airflow configuration option | Description | Example value |
 | --- | --- | --- |
 | mwaa.triggerer\_enabled | Used for activating and deactivating the triggerer on Amazon MWAA. By default, this value is set to `True`. If set to `False`, Amazon MWAA will not start any triggerer processes on schedulers. | True |
-| triggerer.default\_capacity (in v2)<br />triggerer.capacity (in v3) | Defines the number triggers each triggerer can run in parallel. On Amazon MWAA, this capacity is set per each triggerer and per each scheduler as both components run alongside each other. The default per scheduler is set to `60`, `125`, `250`, `500`, and `1000` for small, medium and large, xlarge, and 2xlarge instances, respectively. | 125 |
+| triggerer.default\_capacity (in v2)<br />triggerer.capacity (in v3) | Defines the number of triggers each triggerer can run in parallel. On Amazon MWAA, this capacity is set for each triggerer and for each scheduler as both components run alongside each other. The default per scheduler is set to `60`, `125`, `250`, `500`, and `1000` for small, medium, large, xlarge, and 2xlarge instances, respectively. | 125 |
 
 ## Unsupported configurations
 <a name="configuring-env-variables-unsupported"></a>
@@ -178,31 +181,32 @@ You can use the following DAG to print your `email_backend` Apache Airflow confi
 
 ```
 from airflow.decorators import dag
-				from datetime import datetime
+from airflow.operators.python import PythonOperator
+from datetime import datetime
 
-				def print_var(**kwargs):
-				email_backend = kwargs['conf'].get(section='email', key='email_backend')
-				print("email_backend")
-				return email_backend
+def print_var(**kwargs):
+    email_backend = kwargs['conf'].get(section='email', key='email_backend')
+    print(email_backend)
+    return email_backend
 
-				@dag(
-				dag_id="print_env_variable_example",
-				schedule_interval=None,
-				start_date=datetime({{yyyy}}, {{m}}, {{d}}),
-				catchup=False,
-				)
-				def print_variable_dag():
-				email_backend_test = PythonOperator(
-				task_id="email_backend_test",
-				python_callable=print_var,
-				provide_context=True
-				)
+@dag(
+    dag_id="print_env_variable_example",
+    schedule_interval=None,
+    start_date=datetime({{yyyy}}, {{m}}, {{d}}),
+    catchup=False,
+)
+def print_variable_dag():
+    email_backend_test = PythonOperator(
+        task_id="email_backend_test",
+        python_callable=print_var,
+        provide_context=True
+    )
 
-				print_variable_test = print_variable_dag()
+print_variable_test = print_variable_dag()
 ```
 
 ### Example email notification settings
-<a name="configuring-env-variables-email"></a>
+<a name="configuring-env-variables-email-example"></a>
 
 The following Apache Airflow configuration options can be used for a Gmail.com email account using an app password. For more information, refer to [Sign in using app passwords](https://support.google.com/mail/answer/185833?hl=en-GB) in the *Gmail Help reference guide*.
 

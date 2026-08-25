@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PerfInsi
 # Database load
 <a name="USER_PerfInsights.Overview.ActiveSessions"></a>
 
-*Database load (DB load)* measures the level of session activity in your database. `DBLoad` is the key metric in Performance Insights, and Performance Insights collects DB load every second.
+*Database load (DB load)* measures the level of session activity in your database. `DBLoad` is the key metric in Database Insights, and Database Insights collects DB load every second.
 
 **Topics**
 + [Active sessions](#USER_PerfInsights.Overview.ActiveSessions.active-sessions)
@@ -23,15 +23,15 @@ A session is active when it's either running on CPU or waiting for a resource to
 ## Average active sessions
 <a name="USER_PerfInsights.Overview.ActiveSessions.AAS"></a>
 
-The *average active sessions (AAS)* is the unit for the `DBLoad` metric in Performance Insights. It measures how many sessions are concurrently active on the database.
+The *average active sessions (AAS)* is the unit for the `DBLoad` metric in Database Insights. It measures how many sessions are concurrently active on the database.
 
-Every second, Performance Insights samples the number of sessions concurrently running a query. For each active session, Performance Insights collects the following data:
+Every second, Database Insights samples the number of sessions concurrently running a query. For each active session, Database Insights collects the following data:
 + SQL statement
 + Session state (running on CPU or waiting)
 + Host
 + User running the SQL
 
-Performance Insights calculates the AAS by dividing the total number of sessions by the number of samples for a specific time period. For example, the following table shows 5 consecutive samples of a running query taken at 1-second intervals.
+Database Insights calculates the AAS by dividing the total number of sessions by the number of samples for a specific time period. For example, the following table shows 5 consecutive samples of a running query taken at 1-second intervals.
 
 | Sample | Number of sessions running query | AAS | Calculation |
 | --- | --- | --- | --- |
@@ -46,7 +46,7 @@ In the preceding example, the DB load for the time interval was 2 AAS. This meas
 ## Average active executions
 <a name="USER_PerfInsights.Overview.ActiveSessions.AAE"></a>
 
-The average active executions (AAE) per second is related to AAS. To calculate the AAE, Performance Insights divides the total execution time of a query by the time interval. The following table shows the AAE calculation for the same query in the preceding table.
+The average active executions (AAE) per second is related to AAS. To calculate the AAE, Database Insights divides the total execution time of a query by the time interval. The following table shows the AAE calculation for the same query in the preceding table.
 
 | Elapsed time (sec) | Total execution time (sec) | AAE | Calculation |
 | --- | --- | --- | --- |
@@ -70,7 +70,7 @@ When you are diagnosing performance issues, the following dimensions are often t
 + [Top SQL](#USER_PerfInsights.Overview.ActiveSessions.top-sql)
 + [Plans](#USER_PerfInsights.Overview.ActiveSessions.plans)
 
-For a complete list of dimensions for the Amazon RDS engines, see [DB load sliced by dimensions](USER_PerfInsights.UsingDashboard.Components.md#USER_PerfInsights.UsingDashboard.Components.AvgActiveSessions.dims).
+For a complete list of dimensions for the Amazon RDS engines, see [Database Insights](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_DatabaseInsights.html).
 
 ### Wait events
 <a name="USER_PerfInsights.Overview.ActiveSessions.waits"></a>
@@ -88,36 +88,34 @@ Wait events vary by DB engine:
 + For information about all SQL Server wait events, see [ Types of Waits](https://docs.microsoft.com/en-us/sql/relational-databases/system-dynamic-management-views/sys-dm-os-wait-stats-transact-sql?view=sql-server-2017#WaitTypes) in the SQL Server documentation.
 
 **Note**
-For Oracle, background processes sometimes do work without an associated SQL statement. In these cases, Performance Insights reports the type of background process concatenated with a colon and the wait class associated with that background process. Types of background process include `LGWR`, `ARC0`, `PMON`, and so on.
-For example, when the archiver is performing I/O, the Performance Insights report for it is similar to `ARC1:System I/O`. Occasionally, the background process type is also missing, and Performance Insights only reports the wait class, for example `:System I/O`.
+For Oracle, background processes sometimes do work without an associated SQL statement. In these cases, Database Insights reports the type of background process concatenated with a colon and the wait class associated with that background process. Types of background process include `LGWR`, `ARC0`, `PMON`, and so on.
+For example, when the archiver is performing I/O, the Database Insights report for it is similar to `ARC1:System I/O`. Occasionally, the background process type is also missing, and Database Insights only reports the wait class, for example `:System I/O`.
 
 ### Top SQL
 <a name="USER_PerfInsights.Overview.ActiveSessions.top-sql"></a>
 
 Where wait events show bottlenecks, top SQL shows which queries are contributing the most to DB load. For example, many queries might be currently running on the database, but a single query might consume 99 percent of the DB load. In this case, the high load might indicate a problem with the query.
 
-By default, the Performance Insights console displays top SQL queries that are contributing to the database load. The console also shows relevant statistics for each statement. To diagnose performance problems for a specific statement, you can examine its execution plan.
+By default, the Database Insights console displays top SQL queries that are contributing to the database load. The console also shows relevant statistics for each statement. To diagnose performance problems for a specific statement, you can examine its execution plan.
 
 ### Plans
 <a name="USER_PerfInsights.Overview.ActiveSessions.plans"></a>
 
 An *execution plan*, also called simply a *plan*, is a sequence of steps that access data. For example, a plan for joining tables `t1` and `t2` might loop through all rows in `t1` and compare each row to a row in `t2`. In a relational database, an *optimizer* is built-in code that determines the most efficient plan for a SQL query.
 
-For DB instances, Performance Insights collects execution plans automatically. To diagnose SQL performance problems, examine the captured plans for high-resource SQL queries. The plans show how the database has parsed and run queries.
+For DB instances, Database Insights collects execution plans automatically. To diagnose SQL performance problems, examine the captured plans for high-resource SQL queries. The plans show how the database has parsed and run queries.
 
-To learn how to analyze DB load using plans, see:
-+ Oracle: [Analyzing Oracle execution plans using the Performance Insights dashboard for Amazon RDS](USER_PerfInsights.UsingDashboard.AccessPlans.md)
-+ SQL Server: [Analyzing SQL Server execution plans using the Performance Insights dashboard for Amazon RDS](USER_PerfInsights.UsingDashboard.AccessPlansSqlServer.md)
+To learn how to analyze DB load using plans, see [Database Insights](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_DatabaseInsights.html).
 
 #### Plan capture
 <a name="USER_PerfInsights.Overview.ActiveSessions.plans.capture"></a>
 
-Every five minutes, Performance Insights identifies the most resource-intensive queries and captures their plans. Thus, you don't need to manually collect and manage a huge number of plans. Instead, you can use the **Top SQL** tab to focus on the plans for the most problematic queries.
+Every five minutes, Database Insights identifies the most resource-intensive queries and captures their plans. Thus, you don't need to manually collect and manage a huge number of plans. Instead, you can use the **Top SQL** tab to focus on the plans for the most problematic queries.
 
 **Note**
-Performance Insights doesn't capture plans for queries whose text exceeds the maximum collectable query text limit. For more information, see [Accessing more SQL text in the Performance Insights dashboard](USER_PerfInsights.UsingDashboard.SQLTextSize.md).
+Database Insights doesn't capture plans for queries whose text exceeds the maximum collectable query text limit. For more information, see [Database Insights](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_DatabaseInsights.html).
 
-The retention period for execution plans is the same as for your Performance Insights data. The retention setting is **Default (7 days)**. To retain your performance data for longer, specify 1–24 months. For more information about retention periods, see [Pricing and data retention for Performance Insights](USER_PerfInsights.Overview.cost.md).
+The retention period for execution plans is the same as for your Database Insights data. The retention setting is **Default (7 days)**. To retain your performance data for longer, specify 1–24 months. For more information about retention periods, see [Pricing and data retention for Database Insights](USER_PerfInsights.Overview.cost.md).
 
 #### Digest queries
 <a name="USER_PerfInsights.Overview.ActiveSessions.plans.digest"></a>

@@ -1136,6 +1136,12 @@ The following actions are defined by Amazon WorkSpaces but are not directly invo
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_workspaces-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
+- **   [InvokeOnboardingAgent](https://docs.aws.amazon.com/workspaces/latest/adminguide/wsp-console-permissions-ref.html)  **
+  - **Description:** Grants permission to use WorkSpaces Advisor for WorkSpace onboarding
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** Write
+
 - **   [InvokeTroubleshootingInvestigation](https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-advisor.html)  **
   - **Description:** Grants permission to invoke troubleshooting investigation
   - **Resource types (\*required):** [workspaceid\*](#list_workspaces-resource-workspaceid)
@@ -1147,6 +1153,12 @@ The following actions are defined by Amazon WorkSpaces but are not directly invo
   - **Resource types (\*required):** [workspaceid\*](#list_workspaces-resource-workspaceid)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_workspaces-aws_ResourceTag___TagKey_)
   - **Access level:** Read
+
+- **   [Personalization](https://docs.aws.amazon.com/workspaces/latest/adminguide/wsp-console-permissions-ref.html)  **
+  - **Description:** Grants permission to manage features that enable personalization of the WorkSpaces console experience
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** Write
 
 - **   [UpdateConsent](https://docs.aws.amazon.com/workspaces/latest/adminguide/wsp-console-permissions-ref.html)  **
   - **Description:** Grants permission to update the consent agreement to BYOL minimum requirements

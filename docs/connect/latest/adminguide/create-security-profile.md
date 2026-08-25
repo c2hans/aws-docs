@@ -49,12 +49,12 @@ You can configure tag-based access controls on a security profile. Use these ste
 
 1. Enter the **Key** and **Value** combination for the resource tags that you want to restrict access to.
 
-1. Ensure that you have enabled *View* permissions for the resources that you have selected.
+1. Make sure that you have enabled *View* permissions for the resources that you have selected.
 
 1. Choose **Save**.
 
 **Note**
-It is mandatory to specify both a resource type and an access control tag when configuring tag-based access controls. As a best practice, ensure that you have matching resource tags on a security profile that has tag-based access controls configured. To learn more about tag-based access controls in Connect Customer, see [Apply tag-based access control in Connect Customer](tag-based-access-control.md).
+It is mandatory to specify both a resource type and an access control tag when configuring tag-based access controls. As a best practice, make sure that you have matching resource tags on a security profile that has tag-based access controls configured. To learn more about tag-based access controls in Connect Customer, see [Apply tag-based access control in Connect Customer](tag-based-access-control.md).
 
 ## Tag security profiles
 <a name="security-profile-tagging"></a>

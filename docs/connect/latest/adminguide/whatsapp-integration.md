@@ -180,7 +180,7 @@ Use the following information to troubleshoot common problems with a WhatsApp in
 <a name="no-imported-number"></a>
 
 If your imported number fails to appear in the Connect Customer admin website, follow these steps:
-+ Ensure that the event destination IAM role has the necessary permissions. For more information, see [Step 1: Enable Connect Customer as the event destination](#enable-connect-destination).
++ Make sure that the event destination IAM role has the necessary permissions. For more information, see [Step 1: Enable Connect Customer as the event destination](#enable-connect-destination).
 + See if your *Phone numbers per instance* quota needs to be raised. For more information, see [Connect Customer service quotas](amazon-connect-service-limits.md).
 + To reassign a linked WhatsApp Business Account to a different Connect Customer instance, you must first release the imported phone numbers from the original Connect Customer instance. After the phone numbers are released, you can update the event destination on your linked WhatsApp Business Account to another Connect Customer instance.
 **Important**
@@ -195,7 +195,7 @@ If you made a fix, you must import the phone numbers again. To do this, repeat [
 If WhatsApp inbound message delivery stops, search your AWS CloudTrail logs for `SendIntegrationEvent` and `SendChatIntegrationEvent` for error details.
 
 You can also check these common scenarios:
-+ Ensure that your linked WhatsApp Business Account in AWS End User Messaging Social has a Connect Customer event destination enabled.
++ Make sure that your linked WhatsApp Business Account in AWS End User Messaging Social has a Connect Customer event destination enabled.
 + Ensure your event destination IAM role has the necessary permissions. For more information, see [Step 1: Enable Connect Customer as the event destination](#enable-connect-destination) earlier in this section. You have a misconfigured role if CloudTrail throws `AccessDeniedException` errors from the `SendIntegrationEvent` API.
-+ Ensure that your WhatsApp phone number imported successfully to your Connect Customer instance, and that the number has an associated inbound contact flow. For more information, see [Step 2: Configure an inbound contact flow on your phone number](#inbound-contact-flow).
++ Make sure that your WhatsApp phone number imported successfully to your Connect Customer instance, and that the number has an associated inbound contact flow. For more information, see [Step 2: Configure an inbound contact flow on your phone number](#inbound-contact-flow).
 + Inbound messages were dropped because they are not yet supported. For more information, see [WhatsApp Business messaging capabilities and limitations with Connect Customer](whatsapp-messaging-capabilities.md).

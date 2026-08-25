@@ -42,7 +42,7 @@ If you use custom AWS Identity and Access Management (IAM) policies, for a list 
 ![The select application page.](http://docs.aws.amazon.com/connect/latest/adminguide/images/tasks-choose-an-app-zendesk.png)
 
 1. On the **Establish connection** page, choose one of the following:
-   + **Use an existing connection**. This allows you to reuse existing EventBridge resources you may have created in your AWS account.
+   + **Use an existing connection**. This allows you to reuse existing EventBridge resources you might have created in your AWS account.
    + **Create a new connection**: Enter the information required by the external application.
 
      1. Enter your application instance URL. This URL is used for deep-linking into the tasks created in your external application.
@@ -80,7 +80,7 @@ A connection might fail to create a task if you do not correctly select the **Su
 
 ![The Amazon Web Services page, the support ticket option.](http://docs.aws.amazon.com/connect/latest/adminguide/images/zendesk-support-ticket.png)
 
-There is also another case where you may not have selected the correct AWS Region that the Connect Customer instance is in, when setting up EventBridge. To fix:
+There is also another case where you might not have selected the correct AWS Region that the Connect Customer instance is in, when setting up EventBridge. To fix:
 
 1. Go to the EventBridge console at [https://console.aws.amazon.com/events/](https://console.aws.amazon.com/events/).
 

@@ -2,12 +2,12 @@
 source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/remediate-finding.html
 ---
 
-# Remediate a penetration test finding
+# Remediate a Continuum penetration test finding
 <a name="remediate-finding"></a>
 
 When viewing the findings for a penetration test, you can request AWS Security Agent attempt to remediate a finding. For a connected private repository, AWS Security Agent opens a pull request (or a merge request, for GitLab) with the proposed fix. For Amazon S3 sources, the remediation is available as a downloadable code diff that you can apply locally. AWS Security Agent supports several third-party source code providers — see [How integrations work with Agent Spaces](about-integrations.md).
 
-You must enable finding remediation in the AWS Management Console. (See [Enable users to start remediation of penetration test and code review findings](enable-remediate-findings.md).) Users can start remediation for a specific finding from the AWS Security Agent web application.
+You must enable finding remediation in the AWS Management Console. (See [Enable users to start remediation of Continuum penetration test and code review findings](enable-remediate-findings.md).) Users can start remediation for a specific finding from the AWS Security Agent web application.
 
 ## Prerequisites
 <a name="_prerequisites"></a>
@@ -17,13 +17,13 @@ Before you begin, ensure you have:
 + Access to the AWS Security Agent web application
 + Familiarity with your application’s architecture and security requirements
 
-## Step 1: Enable or disable automatic remediation
-<a name="_step_1_enable_or_disable_automatic_remediation"></a>
+## Step 1: Enable or disable Continuum automatic remediation
+<a name="_step_1_enable_or_disable_continuum_automatic_remediation"></a>
 
 You can configure code remediation options when you create or modify a penetration test. If you enable automatic remediation, AWS Security Agent automatically attempts to remediate a finding when the agent confirms it during the penetration test. Automatic remediation covers both connected source code repositories and Amazon S3 sources. You can also start code remediation manually with the **Remediate code** button. . In the view to edit **Penetration test details**, in the **Automatic code remediation** section, enable or disable code remediation.
 
-## Step 2: Select repositories for code remediation
-<a name="_step_2_select_repositories_for_code_remediation"></a>
+## Step 2: Select repositories for Continuum code remediation
+<a name="_step_2_select_repositories_for_continuum_code_remediation"></a>
 
 1. Choose **Next** all the way to the last step **Additional learning resources**.
 
@@ -37,13 +37,13 @@ You can configure code remediation options when you create or modify a penetrati
 
 1. You can see the successfully associated repositories under the **Penetration test learning resources** tab.
 
-## Step 3: Start a penetration test and view findings
-<a name="_step_3_start_a_penetration_test_and_view_findings"></a>
+## Step 3: Start a Continuum penetration test and view findings
+<a name="_step_3_start_a_continuum_penetration_test_and_view_findings"></a>
 
-Run the penetration test to detect findings. For more information, see [Review findings from a penetration test](review-penetration-findings.md).
+Run the penetration test to detect findings. For more information, see [Review findings from a Continuum penetration test](review-penetration-findings.md).
 
-## Step 4: Start and view code remediation
-<a name="_step_4_start_and_view_code_remediation"></a>
+## Step 4: Start and view Continuum code remediation
+<a name="_step_4_start_and_view_continuum_code_remediation"></a>
 
 1. Navigate to the finding.
 

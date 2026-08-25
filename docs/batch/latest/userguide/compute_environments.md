@@ -19,4 +19,5 @@ Job queues are mapped to one or more compute environments. Compute environments 
 + [Instance type allocation strategies for AWS Batch](allocation-strategies.md)
 + [Compute resource memory management](memory-management.md)
 + [Fargate compute environments](fargate.md)
++ [Amazon ECS Managed Instances compute environments](ecs_managed_instances.md)
 + [Amazon EKS compute environments](eks.md)

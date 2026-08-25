@@ -160,7 +160,7 @@ Create a file named `authentication-method.json` that contains the following con
        {
          "ActorPolicy":
              {
-                "Version": "2012-10-17"		 	 	 ,		 	 	 TCX5-2025-waiver;,
+                "Version": "2012-10-17",
                     "Statement":
                     [
                         {

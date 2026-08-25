@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/ai-generated-n
 
 Connect AI agents can on-demand generate contact summaries and notes for voice and chat interactions. AI-generated note taking boosts agent productivity by eliminating manual note-taking and bookkeeping tasks, creating a draft summary based on the conversation transcript.
 
-When enabled, the AI agent analyzes the full conversation transcript and generates a structured summary that may include:
+When enabled, the AI agent analyzes the full conversation transcript and generates a structured summary that might include:
 + The customer's issue or intent
 + Relevant account or contextual details discussed
 + Actions taken during the interaction

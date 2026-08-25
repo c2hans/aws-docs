@@ -24,7 +24,7 @@ The following sections explain the details of the customizations, their use case
 ## Background blur
 <a name="background-blur"></a>
 
-This customization controls the background blur behavior of the customer's video. When enabled, the customer's background is blurred when video is active. This helps protect their personal information or private spaces that may be visible in the background during the video call.
+This customization controls the background blur behavior of the customer's video. When enabled, the customer's background is blurred when video is active. This helps protect their personal information or private spaces that might be visible in the background during the video call.
 
 To enable background blur, set `videoFilter.backgroundBlur.option` to `ENABLED_ON_BY_DEFAULT` in `WebCallingCustomizationObject`.
 

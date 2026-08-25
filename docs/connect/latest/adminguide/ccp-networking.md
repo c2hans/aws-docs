@@ -11,7 +11,7 @@ The following diagram shows you what each port is used for.
 
 ![Connect Customer components and their connections to AWS Cloud services.](http://docs.aws.amazon.com/connect/latest/adminguide/images/networking.png)
 
-If your contact center is using the email channel, see the Amazon SES Developer Guide for information. If your business sends a large volume of email, you may want to lease dedicated IP addresses. For more information, see [Dedicated IP addresses for Amazon SES](https://docs.aws.amazon.com/ses/latest/dg/dedicated-ip.html).
+If your contact center is using the email channel, see the Amazon SES Developer Guide for information. If your business sends a large volume of email, you might want to lease dedicated IP addresses. For more information, see [Dedicated IP addresses for Amazon SES](https://docs.aws.amazon.com/ses/latest/dg/dedicated-ip.html).
 
 The following sections describe the two primary connectivity options for using the CCP.
 
@@ -60,7 +60,7 @@ To allow traffic for Amazon EC2 endpoints, allow access for the URL and port, as
 Fully qualified domain names (FQDNs) cannot be changed or customized on a per-customer basis. Instead, use [Option 2 - allow IP address ranges](#option2).
 
 **Tip**
-When using `rtc*.connect-telecom.{{region}}.amazonaws.com`, ` *.transport.connect.{{region}}.amazonaws.com`, and `https://myInstanceName.awsapps.com`, in certain proxy applications, web socket handling may impact functionality. Be sure to test and validate before deploying to a production environment.
+When using `rtc*.connect-telecom.{{region}}.amazonaws.com`, ` *.transport.connect.{{region}}.amazonaws.com`, and `https://myInstanceName.awsapps.com`, in certain proxy applications, web socket handling might impact functionality. Be sure to test and validate before deploying to a production environment.
 
 The following table lists the CloudFront domains used for static assets if you want to add domains to your allowlist instead of IP ranges:
 
@@ -220,7 +220,7 @@ Connect Customer Region selection is contingent upon data governance requirement
 **Important**
 If your agents are using SAML 2.0 to login to Connect Customer, you need to allowlist the AWS SSO endpoints listed in [AWS Sign-In endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/signin-service.html).
 
-Remote agents, those that use Connect Customer from a location other than those connected to your organization's main network, may experience issues relating to their local network if they have an unstable connection, packet loss, or high latency. This is compounded if a VPN is required to access resources. Ideally, the agents are located close to the AWS Region where your AWS resources and Connect Customer instance are hosted, and have a stable connection to the public WAN.
+Remote agents, those that use Connect Customer from a location other than those connected to your organization's main network, might experience issues relating to their local network if they have an unstable connection, packet loss, or high latency. This is compounded if a VPN is required to access resources. Ideally, the agents are located close to the AWS Region where your AWS resources and Connect Customer instance are hosted, and have a stable connection to the public WAN.
 
 ## Rerouting audio
 <a name="reroute-audio"></a>

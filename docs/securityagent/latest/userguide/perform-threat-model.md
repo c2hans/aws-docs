@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/perform-threat-model.html
 ---
 
-# Create a threat model
+# Create a Continuum threat model
 <a name="perform-threat-model"></a>
 
 Create threat models in the AWS Security Agent web application to analyze your application’s architecture and identify security threats. A threat model produces two main outputs: a **system overview** that describes how your system is built and behaves, and a set of **threats** that describe how the system could be attacked, each with a severity level, STRIDE classification, and actionable recommendations.
@@ -19,15 +19,15 @@ In this procedure, you create a threat model by configuring its inputs and permi
 Before you begin, ensure you have:
 + Access to the AWS Security Agent web application
 + At least one of the following:
-  + A connected repository (GitHub, GitHub Enterprise Server, GitLab, GitLab Self-Managed, or Bitbucket) to use as a source (see [Enable threat modeling](enable-threat-model.md))
+  + A connected repository (GitHub, GitHub Enterprise Server, GitLab, GitLab Self-Managed, or Bitbucket) to use as a source (see [Enable Continuum threat modeling](enable-threat-model.md))
   + An S3 bucket containing source code
   + Design documents to upload as scope docs, or a Confluence integration
 
 **Tip**
 If you already have repositories or S3 buckets connected to your Agent Space (for example, through code review or penetration testing setup), you can create a threat model immediately — no additional setup is required.
 
-## How AWS Security Agent runs a threat model
-<a name="_how_aws_security_agent_runs_a_threat_model"></a>
+## How AWS Security Agent runs a Continuum threat model
+<a name="_how_aws_security_agent_runs_a_continuum_threat_model"></a>
 
 The inputs you provide determine how AWS Security Agent runs the threat model. There are three scenarios.
 
@@ -37,8 +37,8 @@ The inputs you provide determine how AWS Security Agent runs the threat model. T
 |  **Scope docs only** (design documents) | AWS Security Agent runs a threat model focused on the design described in your documents. It identifies threats based on the architecture, data flows, and components described in the scope docs — useful for threat modeling a design before any code exists. |
 |  **Both sources and scope docs**  | AWS Security Agent scopes the threat model to the context described in the scope docs (for example, a design document for a new feature). It uses the source code to understand your existing system, then threat models the design described in the scope docs — whether that design is already implemented or not. |
 
-## Access the threat models page
-<a name="_access_the_threat_models_page"></a>
+## Access the Continuum threat models page
+<a name="_access_the_continuum_threat_models_page"></a>
 
 Navigate to the threat modeling section in the web application.
 
@@ -48,15 +48,15 @@ Navigate to the threat modeling section in the web application.
 
 1. You see a list of existing threat models with their title, latest run status, and threat counts by severity.
 
-## Create a threat model
-<a name="_create_a_threat_model"></a>
+## Create a Continuum threat model
+<a name="_create_a_continuum_threat_model"></a>
 
 Set up a new threat model by configuring its inputs and permissions.
 
 1. On the **Threat models** page, choose **Create threat model**.
 
-### Configure threat model details
-<a name="_configure_threat_model_details"></a>
+### Configure Continuum threat model details
+<a name="_configure_continuum_threat_model_details"></a>
 
 Provide a title for your threat model.
 
@@ -117,8 +117,8 @@ The service role must have permissions to access your source code in S3 and writ
 
 1. (Optional) In the **Log group** dropdown, select a CloudWatch log group to store threat model execution logs.
 
-### Create the threat model
-<a name="_create_the_threat_model"></a>
+### Create the Continuum threat model
+<a name="_create_the_continuum_threat_model"></a>
 
 1. Review your configuration.
 
@@ -126,8 +126,8 @@ The service role must have permissions to access your source code in S3 and writ
 
 You are redirected to the threat model detail page where you can start a run.
 
-## Run a threat model
-<a name="_run_a_threat_model"></a>
+## Run a Continuum threat model
+<a name="_run_a_continuum_threat_model"></a>
 
 After creating a threat model, start a run to begin the analysis.
 
@@ -137,8 +137,8 @@ After creating a threat model, start a run to begin the analysis.
 
 You can also start a run from the **Threat models** list page by choosing **Start run** next to the threat model you want to run.
 
-## Monitor a threat model run
-<a name="_monitor_a_threat_model_run"></a>
+## Monitor a Continuum threat model run
+<a name="_monitor_a_continuum_threat_model_run"></a>
 
 Track the progress of your threat model as it executes.
 
@@ -160,7 +160,7 @@ On the run detail page, navigate between tabs:
 +  **Configuration** – View the sources, documents, and permissions (service role, CloudWatch log group) that were used for this run.
 +  **Preflight** – View the status of preflight checks that run before threat analysis begins, including logging infrastructure setup, S3 source access validation (when applicable), and testing environment setup. A progress bar shows how many checks have completed.
 +  **Logs** – View a filterable list of tasks the agent performed during the run. Select any task to view its detailed log output in a side panel.
-+  **Threats** – View the threats identified during the run (see [Review threats from a threat model](review-threat-model-findings.md)).
++  **Threats** – View the threats identified during the run (see [Review threats from a Continuum threat model](review-threat-model-findings.md)).
 
 ### Run history
 <a name="_run_history"></a>
@@ -172,8 +172,8 @@ Each threat model maintains a history of all runs. On the threat model detail pa
 **Tip**
 Re-run the same threat model after you update your source code or revise your scope docs to see how the system overview and threats change over time.
 
-## Edit a threat model
-<a name="_edit_a_threat_model"></a>
+## Edit a Continuum threat model
+<a name="_edit_a_continuum_threat_model"></a>
 
 To modify your threat model configuration:
 
@@ -186,8 +186,8 @@ To modify your threat model configuration:
 **Note**
 Editing a threat model does not affect previously completed runs. Those preserve the configuration snapshot used at the time they ran.
 
-## Delete a threat model
-<a name="_delete_a_threat_model"></a>
+## Delete a Continuum threat model
+<a name="_delete_a_continuum_threat_model"></a>
 
 To delete a threat model and all its associated runs and threats:
 
@@ -202,6 +202,6 @@ If a run is currently in progress, you must stop it before deleting the threat m
 <a name="_next_steps"></a>
 
 After running a threat model:
-+ Review the system overview and threats (see [Review threats from a threat model](review-threat-model-findings.md))
++ Review the system overview and threats (see [Review threats from a Continuum threat model](review-threat-model-findings.md))
 + Re-run the threat model after making changes to verify threats are addressed
 + Adjust your sources and scope docs as your application evolves

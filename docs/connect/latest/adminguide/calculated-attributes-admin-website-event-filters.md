@@ -57,7 +57,7 @@ Operators determine the relationship of the attribute to a value you enter. The 
  Calculated attributes in the Connect Customer admin website use the UTC timezone and a default time of 00:00:00 UTC for all time-based filters. You can filter on dates but times are recorded as the same value. If you enter a date of 2024-01-01, the console passes the time as 2024-01-01T00:00:00Z.
 
 **Note**
-By default, event filters are evaluated when a profile object is saved or updated. For instance, if you filter standard asset objects where the `PurchaseDate` is within the last week, the relative time is calculated as *within the last week from the moment the asset object is saved or updated*. This means the filtering results may vary depending on when the object is saved or updated.
+By default, event filters are evaluated when a profile object is saved or updated. For instance, if you filter standard asset objects where the `PurchaseDate` is within the last week, the relative time is calculated as *within the last week from the moment the asset object is saved or updated*. This means the filtering results might vary depending on when the object is saved or updated.
 
 ## Relationship between event filters
 <a name="calculated-attributes-admin-website-relationship-between-event-filters"></a>
@@ -69,7 +69,7 @@ By default, event filters are evaluated when a profile object is saved or update
 
 ## Next steps
 <a name="calculated-attributes-admin-website-event-filter-next-steps"></a>
-+  [Use your calculated attribute in your contact center via the Flow editor](https://docs.aws.amazon.com/connect/latest/adminguide/customer-profiles-block.html#customer-profiles-block-properties-get-calculated-attributes)
++  [Use your calculated attribute in your contact center through the Flow editor](https://docs.aws.amazon.com/connect/latest/adminguide/customer-profiles-block.html#customer-profiles-block-properties-get-calculated-attributes)
 +  [Use your calculated attribute to define a customer segment](https://docs.aws.amazon.com/connect/latest/adminguide/segmentation-admin-website)
 +  [View Calculated Attributes in Amazon Connect](https://docs.aws.amazon.com/connect/latest/adminguide/calculated-attributes-admin-website-view.html)
 +  [Edit Calculated Attributes in Amazon Connect](https://docs.aws.amazon.com/connect/latest/adminguide/calculated-attributes-admin-website-edit.html)

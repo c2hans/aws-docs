@@ -60,7 +60,7 @@ You can launch an EC2 instance using the AWS Management Console as described in 
 **Warning**
 If you choose **Proceed without a key pair (Not recommended)**, you won't be able to connect to your instance using the methods described in this tutorial.
 
-1. Under **Network settings**, notice that your default VPC is selected, the option to use the default subnet in an Availability Zone that is chosen for you, and a security group with a rule that allows connections to your instance from anywhere (`0.0.0.0.0/0`).
+1. Under **Network settings**, notice that your default VPC is selected, the option to use the default subnet in an Availability Zone that is chosen for you, and a security group with a rule that allows connections to your instance from anywhere (`0.0.0.0/0`).
 **Warning**
 If you specify `0.0.0.0/0`, you are enabling traffic from any IP addresses in the world. For the SSH and RDP protocols, you might consider this acceptable for a short time in a test environment, but it's unsafe for production environments. In production, be sure to authorize access only from the appropriate individual IP address or range of addresses.
 

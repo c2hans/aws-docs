@@ -13,9 +13,9 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-ai21
 
 Jamba 1.5 Mini is AI21 Labs' lightweight hybrid SSM-Transformer model with 52B total parameters and a 256K context window, optimized for low-latency enterprise tasks. For more information about model development and performance, see the [model/service card](https://www.ai21.com/blog/announcing-jamba-model-family).
 + **Model launch date:** Aug 22, 2024
-+ **Model EOL date:** No sooner than 9/23/2025
++ **Model EOL date:** November 26, 2026
 + **End User License Agreements and Terms of Use:** [View](https://www.ai21.com/jamba-open-model-license/)
-+ **Model lifecycle:** Active
++ **Model lifecycle:** Legacy
 + **Context window:** 256K tokens
 + **Max output tokens:** 4K
 + **Knowledge cutoff:** Mar 2024

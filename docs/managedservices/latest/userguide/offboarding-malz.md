@@ -326,19 +326,6 @@ Make sure to disable or remove Managed Services Startup scheduled task as mentio
 Use one of the following options to continue or discontinue the use of Trend Micro Deep Security:
 
 **Continue usage**
-+ **(If offboarding the entire MALZ) After Core account offboarding, reconnect offboarded Application accounts to the existing Trend Micro Deep Security Manager (DSM) and maintain licensing in shared Services account.** For more information, see [Add AWS cloud accounts](https://help.deepsecurity.trendmicro.com/12_0/aws/Add-Computers/add-aws.html?Highlight=account%20sync) and [Check your license information](https://help.deepsecurity.trendmicro.com/12_0/aws/Manage-Components/ui-admin-licenses.html).
-
-  1. Log in to the shared services account and navigate to the Secrets Manager console.
-
-  1. Retrieve DSM console admin credentials that are stored in the `/ams/eps/` path.
-
-  1. Log in to the DSM console at [https://dsm.sentinel.int](https://dsm.sentinel.int/).
-
-  1. Choose **Use Cross Account Role**, and then enter **arn:aws:iam::ACCOUNTID:role/mc\_eps\_cross\_account\_role**. Replace **ACCOUNTID** with the offboarded Application account ID.
-
-  1. Choose **Next**.
-
-  1. Wait several minutes for DSM to process the account discovery and show that sync was successful.
 + **Reconnect offboarded Application accounts to a new Trend Micro DSM installation.** For more information, see [Activate and protect agents](https://help.deepsecurity.trendmicro.com/12_0/aws/agent-initiated-activation-communication.html?Highlight=activation) and [Activate the agent](https://help.deepsecurity.trendmicro.com/12_0/aws/Get-Started/Install/activate-agent.html?Highlight=activate%20agent).
 + **Reconnect offboarded Application accounts to Trend Micro Cloud One.** For more information, see [Migrate from Deep Security to Workload Security](https://help.deepsecurity.trendmicro.com/20_0/on-premise/migration.html) and [Migrate from an on-premises DSM](https://cloudone.trendmicro.com/docs/workload-security/migration/).
 

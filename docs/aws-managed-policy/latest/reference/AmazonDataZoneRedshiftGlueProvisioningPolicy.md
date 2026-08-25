@@ -18,13 +18,13 @@ You can attach `AmazonDataZoneRedshiftGlueProvisioningPolicy` to your users, gro
 <a name="AmazonDataZoneRedshiftGlueProvisioningPolicy-details"></a>
 + **Type**: AWS managed policy
 + **Creation time**: September 22, 2023, 20:19 UTC
-+ **Edited time:** October 23, 2024, 18:29 UTC
++ **Edited time:** August 21, 2026, 22:27 UTC
 + **ARN**: `arn:aws:iam::aws:policy/AmazonDataZoneRedshiftGlueProvisioningPolicy`
 
 ## Policy version
 <a name="AmazonDataZoneRedshiftGlueProvisioningPolicy-version"></a>
 
-**Policy version:** v4 (default)
+**Policy version:** v5 (default)
 
 The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request.
 
@@ -97,7 +97,8 @@ The policy's default version is the version that defines the permissions for the
       "Effect" : "Allow",
       "Action" : [
         "cloudformation:CreateStack",
-        "cloudformation:TagResource"
+        "cloudformation:TagResource",
+        "cloudformation:UntagResource"
       ],
       "Resource" : [
         "arn:aws:cloudformation:*:*:stack/DataZone*"

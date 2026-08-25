@@ -13,30 +13,16 @@ The following procedure details the minimum steps required to configure FSx for 
 Before you use Amazon EVS with Amazon FSx for NetApp ONTAP, make sure that the following prerequisite tasks have been completed.
 + An Amazon EVS environment is deployed in your Virtual Private Cloud (VPC). For more information, see [Getting started with Amazon Elastic VMware Service](getting-started.md).
 + You have access to your vSphere client running on Amazon EVS.
-+ You or your storage admin must have necessary permissions to create and manage FSx for ONTAP file systems in your VPC. For more information, see [Identity and access management for Amazon FSx for NetApp ONTAP](https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/security-iam.html.).
++ You or your storage admin must have necessary permissions to create and manage FSx for ONTAP file systems in your VPC. For more information, see [Identity and access management for Amazon FSx for NetApp ONTAP](https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/security-iam.html).
 
 Your IAM principal has appropriate permissions to create and manage FSx for ONTAP file systems in your VPC. For more information, see [Create and manage an Amazon EVS environment](security-iam-id-based-policy-examples.md#security-iam-id-based-policy-examples-create-env).
 
 ## Create an FSx for NetApp ONTAP file system
 <a name="create-fsx-file-system-nfs"></a>
 
-1. Go to the [Amazon FSx console](https://console.aws.amazon.com/fsx).
+Amazon EVS is a single Availability Zone service, but you can use either a Single-AZ or Multi-AZ FSx for ONTAP file system. If you choose a Multi-AZ file system, all VPC route tables used by your Amazon EVS host subnets must be associated with that file system. For the full file-system creation workflow, see [Creating FSx for ONTAP file systems](https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/creating-file-systems.html) in the *Amazon FSx for NetApp ONTAP User Guide*.
 
-1. Choose **Create file system**.
-
-1. Select **Amazon FSx for NetApp ONTAP**.
-
-1. Choose **Next**.
-
-1. Select **Standard create**.
-
-1. For **Deployment type**, select a Single-AZ deployment option.
-**Note**
-Amazon EVS only supports Single-AZ deployments at this time.
-
-1. For **SSD storage capacity**, specify 1024 GiB.
-
-1. For **Throughput capacity**, choose **Specify throughput capacity**. Choose at least 512 MB/s for Single-AZ 1 or at least 768 MB/s for Single-AZ 2.
+When you reach the networking and volume configuration pages of the FSx creation wizard, apply the following Amazon EVS-specific settings:
 
 1. Select the Amazon EVS VPC that has connectivity to your Amazon EVS VLAN subnets.
 
@@ -47,10 +33,6 @@ Amazon EVS only supports Single-AZ deployments at this time.
 1. For **Junction path**, specify a meaningful name such as `/vol1` to identify this volume in vSphere.
 
 1. Within **Default volume configuration**, set **Storage efficiency** to **Enabled**.
-
-1. Leave the remaining setting at their default values and choose **Next**.
-
-1. Review the file system attributes and choose **Create file system**.
 
 ## Retrieve the NFS DNS name for the storage virtual machine
 <a name="create-fsx-volume-nfs"></a>

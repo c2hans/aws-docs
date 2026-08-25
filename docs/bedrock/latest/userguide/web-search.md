@@ -81,7 +81,7 @@ To enable Web Search, add a tool of type `web_search` to the `tools` array in yo
 
 By default, Web Search is served entirely from the Amazon Bedrock web index and cache, and no request data leaves the AWS boundary for retrieval. Whether search and fetch may reach the external web is governed by two controls that work together: the `external_web_access` parameter in the Responses API and the `bedrock-websearch:ExternalWebAccess` IAM permission.
 
-The `external_web_access` parameter defaults to `true`, matching the OpenAI Responses API so that your call does not have to change. The [AmazonBedrockFullAccess](security-iam-awsmanpol.md#security-iam-awsmanpol-AmazonBedrockFullAccess) policy grants the basic Web Search actions — `bedrock-websearch:InvokeSearch` and `bedrock-websearch:InvokeFetch` — but does not grant `bedrock-websearch:ExternalWebAccess`. As a result, a request that leaves `external_web_access` at `true` from an identity that does not hold `ExternalWebAccess` returns a `403 AccessDenied` on the authorization check. The model does not fail the request: it grounds its answer in Search and cached Fetch and reports that it could not obtain external web access.
+The `external_web_access` parameter defaults to `true`, matching the OpenAI Responses API so that your call does not have to change. The [AmazonBedrockFullAccess](security-iam-awsmanpol.md#security-iam-awsmanpol-AmazonBedrockFullAccess) policy grants the basic Web Search actions — `bedrock-websearch:InvokeSearch` and `bedrock-websearch:InvokeFetch` — but does not grant `bedrock-websearch:ExternalWebAccess`. As a result, a request that leaves `external_web_access` at `true` from an identity that does not hold `ExternalWebAccess` returns a `403 AccessDenied` on the authorization check. The model does not fail the request: it grounds its answer in Search but fails all Fetch requests and reports that it could not obtain external web access.
 
 To make a request that does not hit this error, use one of the two approaches below.
 
@@ -112,7 +112,10 @@ curl "https://bedrock-mantle.us-west-2.api.aws/openai/v1/responses" \
 ### Enable external web access
 <a name="web-search-enable-external"></a>
 
-Grant `bedrock-websearch:ExternalWebAccess` to the request identity and leave `external_web_access` at its default of `true`. This configuration governs whether search and fetch may reach the external web. Today, retrieval is served entirely from the Amazon Bedrock web index and cache, so no request data leaves the AWS boundary even when this permission is granted. In a future release, this configuration may allow search and fetch to retrieve content from the live external web, at which point request data may leave the AWS boundary. External web access is disabled by default (that is, `bedrock-websearch:ExternalWebAccess` is disallowed), and any future change will require allowing `bedrock-websearch:ExternalWebAccess` as an explicit opt-in before it takes effect. External web access remains under your control: it applies only because you granted the permission and left the parameter enabled.
+Grant `bedrock-websearch:ExternalWebAccess` to the request identity and set `external_web_access` to `true`. With this configuration, search and fetch may reach the live external web directly. When a request reaches the external web, your request data may leave the AWS boundary. External web access is disabled by default (that is, `bedrock-websearch:ExternalWebAccess` is disallowed), external web access takes effect only after you explicitly allow that permission. External web access remains under your control. It applies only when you grant the permission and leave the parameter enabled.
+
+**Note**
+Note that setting `external_web_access` to `true` introduces data exfiltration risk. An agent could encode query data into a URL and then attempt to fetch that URL from the external internet. When you work with sensitive data, set `external_web_access` to `false` to prevent data reaching the external internet.
 
 ## Using Web Search with Codex
 <a name="web-search-codex"></a>

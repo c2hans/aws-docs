@@ -24,7 +24,7 @@ To provide periodic updates to Connect Customer Customer Profiles, you can integ
 ![The select source page.](http://docs.aws.amazon.com/connect/latest/adminguide/images/customer-profiles-cp-shopify-source.png)
 
 1. On the **Establish connection** page, choose one of the following:
-   + **Use existing connection**: This allows you to reuse existing Amazon EventBridge resources that you may have created in your AWS account.
+   + **Use existing connection**: This allows you to reuse existing Amazon EventBridge resources that you might have created in your AWS account.
    + **Create new connection**: Enter the information required by the external application.
 ![The Establish connection page.](http://docs.aws.amazon.com/connect/latest/adminguide/images/customer-profiles-enable-shopify-establish-connection.png)
      + **Connection name**: Provide a name for your connection. The connection name is referenced by integrations that use this connection.
@@ -34,7 +34,7 @@ To provide periodic updates to Connect Customer Customer Profiles, you can integ
        + Log in to your partners.shopify.com account.
        + Go to your app.
        + Copy the URL from your browser.
-     + **Client ID**: Enter your application client ID. This is a string that uniquely distinguishes the client in your external application. This client ID is the Source Name available on the application website. You use the ID that you specify here to identify the client that you want Customer Profiles to ingest your objects from. Your client ID may be available after following the Source setup steps.
+     + **Client ID**: Enter your application client ID. This is a string that uniquely distinguishes the client in your external application. This client ID is the Source Name available on the application website. You use the ID that you specify here to identify the client that you want Customer Profiles to ingest your objects from. Your client ID might be available after following the Source setup steps.
 
        To find your source name:
        + Log in to your partners.shopify.com account.
@@ -200,4 +200,4 @@ After your connection is established, if it stops working, delete the integratio
 
 If an object fails to be sent, choose **Flow details** to learn more about what's gone wrong.
 
-You may need to delete the configuration and re-connect to the external application.
+You might need to delete the configuration and re-connect to the external application.

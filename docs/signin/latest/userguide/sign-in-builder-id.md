@@ -26,6 +26,7 @@ AWS Builder ID is separate from your AWS Skill Builder subscription, an online l
 + [Delete all active sessions for your AWS Builder ID](delete-sessions-builder-id.md)
 + [Delete your AWS Builder ID](delete-builder-id.md)
 + [Manage AWS Builder ID multi-factor authentication (MFA)](mfa-builder-id.md)
++ [Recover your AWS Builder ID](recover-builder-id.md)
 + [Privacy and data in AWS Builder ID](privacy-builder-id.md)
 + [AWS Builder ID and other AWS credentials](differences-builder-id.md)
 + [Troubleshooting AWS Builder ID issues](troubleshooting-builder-id-issues.md)
@@ -41,6 +42,9 @@ AWS Builder ID is separate from your AWS Skill Builder subscription, an online l
    + [I have an Apple Account](#sign-in-builder-id-apple)
    + [I have a GitHub Account](#sign-in-builder-id-github)
    + [I have an Amazon Account](#sign-in-builder-id-amazon)
+
+**Note**
+If you can't sign in, choose **Trouble Signing In?** on the sign-in page. For example, use this option if you forgot your password, lost your MFA device, or can no longer use your social login. For more information, see [Recover your AWS Builder ID](recover-builder-id.md).
 
 ### I have an existing account
 <a name="sign-in-builder-id-email"></a>

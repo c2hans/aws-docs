@@ -10,6 +10,10 @@ After an Amazon EVS environment deploys, you can add hosts to increase capacity 
 **Note**
 You must assign and commission the host within the SDDC Manager user interface.
 
+Before creating each ESX host, make sure that a DNS forward lookup zone contains an A record for the host. Also confirm that a reverse lookup zone contains a PTR record for the host. For more information, see the *DNS records for VCF components* section in [Amazon EVS deployment prerequisite checklist](evs-deployment-prereq-checklist.md).
+
+If you plan to use an EC2 partition placement group for your hosts, see the placement group guidance in [Resilience in Amazon EVS](disaster-recovery-resiliency.md).
+
  **To create an Amazon EVS host**
 
 Follow these steps to create an Amazon EVS host.

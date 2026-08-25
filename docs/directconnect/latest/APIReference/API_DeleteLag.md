@@ -65,6 +65,10 @@ Required: Yes
          "partnerInterconnectMacSecCapable": boolean,
          "partnerName": "string",
          "portEncryptionStatus": "string",
+         "prefixPoolSizeIpv4": number,
+         "prefixPoolSizeIpv6": number,
+         "prefixPoolUnallocatedCountIpv4": number,
+         "prefixPoolUnallocatedCountIpv6": number,
          "providerName": "string",
          "rateLimiterStatus": {
             "inUse": number,
@@ -102,6 +106,10 @@ Required: Yes
    "minimumLinks": number,
    "numberOfConnections": number,
    "ownerAccount": "string",
+   "prefixPoolSizeIpv4": number,
+   "prefixPoolSizeIpv6": number,
+   "prefixPoolUnallocatedCountIpv4": number,
+   "prefixPoolUnallocatedCountIpv6": number,
    "providerName": "string",
    "rateLimiterStatus": {
       "inUse": number,
@@ -208,6 +216,26 @@ Type: Integer
  ** [ownerAccount](#API_DeleteLag_ResponseSyntax) **   <a name="DX-DeleteLag-response-ownerAccount"></a>
 The ID of the AWS account that owns the LAG.
 Type: String
+
+ ** [prefixPoolSizeIpv4](#API_DeleteLag_ResponseSyntax) **   <a name="DX-DeleteLag-response-prefixPoolSizeIpv4"></a>
+The total number of inbound IPv4 route prefixes you can allocate across the virtual interfaces on the LAG. Not applicable to LAGs that are interconnects and support hosted connections.
+Type: Integer
+Valid Range: Minimum value of 0.
+
+ ** [prefixPoolSizeIpv6](#API_DeleteLag_ResponseSyntax) **   <a name="DX-DeleteLag-response-prefixPoolSizeIpv6"></a>
+The total number of inbound IPv6 route prefixes you can allocate across the virtual interfaces on the LAG. Not applicable to LAGs that are interconnects and support hosted connections.
+Type: Integer
+Valid Range: Minimum value of 0.
+
+ ** [prefixPoolUnallocatedCountIpv4](#API_DeleteLag_ResponseSyntax) **   <a name="DX-DeleteLag-response-prefixPoolUnallocatedCountIpv4"></a>
+The number of inbound IPv4 route prefixes in the LAG prefix pool not yet allocated to a virtual interface. Not applicable to LAGs that are interconnects and support hosted connections.
+Type: Integer
+Valid Range: Minimum value of 0.
+
+ ** [prefixPoolUnallocatedCountIpv6](#API_DeleteLag_ResponseSyntax) **   <a name="DX-DeleteLag-response-prefixPoolUnallocatedCountIpv6"></a>
+The number of inbound IPv6 route prefixes in the LAG prefix pool not yet allocated to a virtual interface. Not applicable to LAGs that are interconnects and support hosted connections.
+Type: Integer
+Valid Range: Minimum value of 0.
 
  ** [providerName](#API_DeleteLag_ResponseSyntax) **   <a name="DX-DeleteLag-response-providerName"></a>
 The name of the service provider associated with the LAG.

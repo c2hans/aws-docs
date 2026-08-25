@@ -137,7 +137,7 @@ If you are unable to access the scheduling tables by using Option 1, try using O
 
 **Join keys:**
 + `instance_id` — Joins to all tables
-+ `queue_arn` — Joins to Agent Queue Statistic Record (via queue ARN and ID mapping)
++ `queue_arn` — Joins to Agent Queue Statistic Record (through queue ARN and ID mapping)
 
 |  **Column**  |  **Type**  |  **Nullable**  |  **Description**  |
 | --- | --- | --- | --- |

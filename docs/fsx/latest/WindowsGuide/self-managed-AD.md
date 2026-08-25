@@ -63,7 +63,7 @@ These are the prerequisites for your self-managed Microsoft Active Directory, ei
 
   Amazon FSx requires connectivity to the domain controllers or Active Directory sites you have defined in your Active Directory environment. Amazon FSx will ignore any domain controllers with TCP and UDP blocked on port 389. For the remaining domain controllers in your Active Directory, ensure that they meet the Amazon FSx connectivity requirements. Additionally, verify that any changes to your service account are propagated to all these domain controllers.
 **Important**
-Do not move computer objects that Amazon FSx creates in the OU after your file system is created. Doing so will cause your file system to become misconfigured.
+Do not move, disable, or delete the computer objects that Amazon FSx creates in the OU. Do not change the default OU after your file system is created. Any of these actions will cause your file system to become misconfigured.
 
 You can validate your Active Directory configuration, including testing connectivity of multiple domain controllers, using the [Amazon FSx Active Directory Validation tool](validate-ad-config.md). To limit the number of domain controllers that require connectivity, you can also build a trust relationship between your on-premise domain controllers and AWS Managed Microsoft AD. For more information, see [Using a resource forest isolation model](fsx-aws-managed-ad.md#using-a-rfim).
 
@@ -140,7 +140,7 @@ If your Active Directory environment has a large number of domain controllers, u
 Use security group rules to implement the principle of least privilege in your virtual private cloud (VPC). You can limiting the type of inbound and outbound network traffic allowed for your file using VPC security group rules. For example, we recommend only allowing outbound traffic to your self-managed Active Directory domains controllers or to within the subnet or security group you are using. For more information, see [File system access control with Amazon VPC](limit-access-security-groups.md).
 
 **Do not move computer objects created by Amazon FSx**
-Do not move computer objects that Amazon FSx creates in the OU after your file system is created. Doing so will cause your file system to become misconfigured.
+Do not move, disable, or delete the computer objects that Amazon FSx creates in the OU. Do not change the default OU after your file system is created. Any of these actions will cause your file system to become misconfigured.
 
 **Validate your Active Directory configuration**
 Before attempting to join an FSx for Windows File Server file system to your Active Directory, we strongly recommend that you validate your Active Directory configuration using the [Amazon FSx Active Directory Validation tool](validate-ad-config.md).

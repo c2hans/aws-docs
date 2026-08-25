@@ -114,7 +114,7 @@ This block does not support fragmented action.
 ## Known error scenarios
 <a name="return-errorscenarios"></a>
 
-Because this is a terminal block there are no error scenarios that the flow may encounter when this block is run.
+Because this is a terminal block there are no error scenarios that the flow might encounter when this block is run.
 
 ## What this block looks like in a flow log
 <a name="return-flowlogs"></a>

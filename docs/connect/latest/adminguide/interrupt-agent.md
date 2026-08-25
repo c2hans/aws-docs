@@ -76,9 +76,9 @@ After the **Success** branch is taken, the caller remains in the queue flow whil
 
 A common use case for this block is routing calls to an agent's personal or direct inward dial (DID) extension, even when the agent is already on another call.
 
-If you have already implemented personal extension routing in Connect Customer – for example, a flow that transfers the caller to a specific agent queue and then forwards to voicemail after a timeout – you may want to add interrupt behavior as follows:
+If you have already implemented personal extension routing in Connect Customer – for example, a flow that transfers the caller to a specific agent queue and then forwards to voicemail after a timeout – you might want to add interrupt behavior as follows:
 + In the **Customer queue flow** that executes when the contact is placed in the agent queue, add the **Interrupt agent** block as the first block.
-+ Configure your voicemail transfer logic to wait **at least 30 seconds** before transferring the caller to voicemail. Because the interrupt call rings for 30 seconds before timing out, a shorter voicemail timeout may start to route the caller to voicemail before the agent has had a chance to accept.
++ Configure your voicemail transfer logic to wait **at least 30 seconds** before transferring the caller to voicemail. Because the interrupt call rings for 30 seconds before timing out, a shorter voicemail timeout might start to route the caller to voicemail before the agent has had a chance to accept.
 
 You can use this block to offer a chat, task, or email contact to an agent even if the agent is already at maximum concurrency for that channel, or is in a custom status.
 
@@ -116,7 +116,7 @@ In Agent Workspace, contextual apps such as Customer Profiles continue to displa
 ### Accepting the interrupt contact
 <a name="interrupt-agent-dual-calls-accept"></a>
 
-Once the agent accepts the interrupt contact, the original contact is automatically placed on hold and contextual apps such as Customer Profiles update to reflect the new contact.
+After the agent accepts the interrupt contact, the original contact is automatically placed on hold and contextual apps such as Customer Profiles update to reflect the new contact.
 
 Both calls remain assigned to the agent, but the agent is only active on one call at a time; the other call will remain on hold until the agent explicitly resumes it. To resume the other contact, the agent must first select the call and then choose **Resume** in its contact card.
 
@@ -143,12 +143,12 @@ If a supervisor is actively barging a contact and receives a second call, they c
 
 ## Limitations and requirements
 <a name="interrupt-agent-limitations"></a>
-+ **Softphone required.** This feature is supported only for agents using the Connect Customer softphone (Agent Workspace, standalone CCP, or custom CCP integrations via StreamsJS or ConnectSDK). It is not supported for agents using deskphone or mobile device forwarding. If an agent has deskphone forwarding enabled and is already on a call, the block takes the **Error** branch. If the agent is fully idle, a single call can still be forwarded to a deskphone as usual.
++ **Softphone required.** This feature is supported only for agents using the Connect Customer softphone (Agent Workspace, standalone CCP, or custom CCP integrations through StreamsJS or ConnectSDK). It is not supported for agents using deskphone or mobile device forwarding. If an agent has deskphone forwarding enabled and is already on a call, the block takes the **Error** branch. If the agent is fully idle, a single call can still be forwarded to a deskphone as usual.
 + **Maximum concurrency.** An agent can be offered at most 1 contact past their normal maximum concurrency using this feature. This means an agent can handle at most 2 concurrent voice calls. If an agent is already handling 2 calls when this block is executed, the block takes the **Error** branch.
 + **Connecting and preview dialer states.** If the agent's existing contact is in a Connecting state or the agent is in preview dialer mode, a second call cannot be offered. The block takes the **Error** branch.
 + **In-app, web, and video calling.** In-app/web calling, video, and screen share contacts cannot be set as interrupt contacts. If an agent is handling an in-app or web calling contact, they cannot be offered a second call even if it is a standard voice call. The block takes the **Error** branch.
 + **Browser support.** This feature is supported on Google Chrome ([supported browsers](connect-supported-browsers.md)) and Microsoft Edge Chromium. It is not supported on Mozilla Firefox.
-+ **Agent-first callbacks.** An agent currently handling an agent-first callback cannot be offered a second agent-first callback via this block. The agent can be offered a standard inbound voice call.
++ **Agent-first callbacks.** An agent currently handling an agent-first callback cannot be offered a second agent-first callback through this block. The agent can be offered a standard inbound voice call.
 
 ## Frequently asked questions
 <a name="interrupt-agent-faq"></a>
@@ -157,10 +157,10 @@ If a supervisor is actively barging a contact and receives a second call, they c
 The block offers a contact to the specified agent even if the agent is already on one call or in a custom status. It can only be used in a Customer queue flow. The **Success** branch is taken as soon as the contact is successfully offered – not when the agent accepts. The caller remains in the queue flow until the agent accepts the contact.
 
 **What does the caller hear while waiting for the agent to accept?**
-The caller's experience depends on how you have configured your Customer queue flow. The caller remains in the queue flow (for example, hearing hold music configured via [Loop prompts](loop-prompts.md) blocks) while the contact is being offered to the agent.
+The caller's experience depends on how you have configured your Customer queue flow. The caller remains in the queue flow (for example, hearing hold music configured through [Loop prompts](loop-prompts.md) blocks) while the contact is being offered to the agent.
 
 **What happens if the agent does not answer or rejects the contact?**
-The contact returns to the Customer queue flow. The subsequent behavior depends on your flow configuration – for example, the contact may be transferred to voicemail or placed back in a queue.
+The contact returns to the Customer queue flow. The subsequent behavior depends on your flow configuration – for example, the contact might be transferred to voicemail or placed back in a queue.
 
 **How long does the interrupt call ring before timing out?**
 The interrupt call rings for 30 seconds. This is not configurable.
@@ -169,10 +169,10 @@ The interrupt call rings for 30 seconds. This is not configurable.
 The **Interrupt agent** block is represented as the `RouteContactToAgent` action in the Connect Customer Flow language.
 
 **Can I use this feature if my agents use a custom Contact Control Panel (CCP)?**
-Yes. If you use a custom CCP, ensure you are using the latest version of StreamsJS and review whether you need to make additional changes to your implementation.
+Yes. If you use a custom CCP, make sure you are using the latest version of StreamsJS and review whether you need to make additional changes to your implementation.
 For example:
-+ If your custom CCP uses the softphone from Connect Customer embedded iframe (that is, if `allowFramedSoftphone` is passed as `true` to initiate the CCP using [Connect Customer Streams JS](https://github.com/amazon-connect/amazon-connect-streams)), then you may not need to make any changes for this functionality to work. However, if your custom CCP integrates [Connect Customer RTC JS](https://github.com/aws/connect-rtc-js) in its own frame, you may need to upgrade RTC JS.
-+ The `agent.getState()` API is not supported for dual call scenarios where each call may have a different status (for example, Connected vs ACW) and therefore the agent no longer has a single overall state. If you are using `agent.getState()` in your custom CCP today, we recommend migrating to `agent.getAvailabilityState()` to get the agent's current status such as Available or Offline, or `contact.getState()` for channel-agnostic contact states such as Connecting and Connected.
++ If your custom CCP uses the softphone from Connect Customer embedded iframe (that is, if `allowFramedSoftphone` is passed as `true` to initiate the CCP using [Connect Customer Streams JS](https://github.com/amazon-connect/amazon-connect-streams)), then you might not need to make any changes for this functionality to work. However, if your custom CCP integrates [Connect Customer RTC JS](https://github.com/aws/connect-rtc-js) in its own frame, you might need to upgrade RTC JS.
++ The `agent.getState()` API is not supported for dual call scenarios where each call might have a different status (for example, Connected vs ACW) and therefore the agent no longer has a single overall state. If you are using `agent.getState()` in your custom CCP today, we recommend migrating to `agent.getAvailabilityState()` to get the agent's current status such as Available or Offline, or `contact.getState()` for channel-agnostic contact states such as Connecting and Connected.
 For more details, see the [StreamsJS release notes](https://github.com/amazon-connect/amazon-connect-streams/releases).
 
 ## More resources

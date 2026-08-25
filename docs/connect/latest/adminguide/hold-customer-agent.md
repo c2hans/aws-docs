@@ -16,7 +16,7 @@ During a video call or screen sharing session, agents are able to see the custom
 + If this block is triggered during a chat conversation, the contact is routed down the **Error** branch.
 
 **Hold flows do not play**
-Configured hold flows (either default or custom set via the **Set hold flow** block) do not play when you use this block. The participant on hold experiences silence.
+Configured hold flows (either default or custom set through the **Set hold flow** block) do not play when you use this block. The participant on hold experiences silence.
 
 ## Supported channels
 <a name="hold-customer-agent-channels"></a>

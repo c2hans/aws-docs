@@ -33,7 +33,7 @@ For example, you might set up the staffing group to generate a schedule where ev
 1. In the **Staff details** section, specify optional details such as:
    + **Time zone**: Render schedules in the local time zone of the agent.
    + **Access to all published schedules**: Select **Yes** to give this user access to all published schedules without being a supervisor in staffing groups. Note that the user still needs **Scheduling, Schedule manager - Edit** permission in their security profile.
-   + **Staff start date** and **Staff end date**: Schedule agents based on respective start and end dates. For example, if someone is starting on May 15th, set this start date as May 15th to ensure that schedules are not generated for this agent before this date.
+   + **Staff start date** and **Staff end date**: Schedule agents based on respective start and end dates. For example, if someone is starting on May 15th, set this start date as May 15th to make sure that schedules are not generated for this agent before this date.
    + **Eligible to request time-off**: Specify whether this agent is eligible to request time-off.
    + **Eligible to trade shifts**: Specify whether this agent eligible to trade shifts.
 
@@ -41,7 +41,7 @@ For example, you might set up the staffing group to generate a schedule where ev
 
 1. In the **Staff contract rules** section, define rules that must be applied when scheduling this agent. For example, they must get 2 consecutive days off every week, they cannot work more than 40 hours per week, they must have a gap of 11 hours between consecutive shifts, and more.
 
-1. Choose **Apply to Staff**. This saves the rules, and ensures they are applied during the next scheduling cycle.
+1. Choose **Apply to Staff**. This saves the rules, and makes sure they are applied during the next scheduling cycle.
 
 ## Import time off balance for individuals
 <a name="scheduling-upload-ic-timeoff"></a>

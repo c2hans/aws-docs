@@ -51,7 +51,7 @@ With Amazon Lex natively integrated within Connect Customer, no coding is requir
 You can help customers through text-based communication channels, such as web chat, mobile chat, SMS, and third-party messaging apps, such as WhatsApp or Facebook Messenger. By using the [Connect Customer chat and messaging](web-and-mobile-chat.md) features, you can set up AI-powered chatbots and step-by-step guides so customers can self-serve. If customers need assistance, agents get all of the prior context from the self-service interactions to ensure a seamless transition.
 + **Chat**. Connect Customer makes it easy to [set up your customer's chat experience](enable-chat-in-app.md). You can add a communications widget to your website that is hosted by Connect Customer. You configure the communications widget in the Connect Customer admin website. You can customize the font and colors, and secure the widget so that it can be launched only from your website. When finished, you will have a short code snippet that you add to your website.
 
-  Because Connect Customer hosts the widget, it ensures that the latest version is always live on your website.
+  Because Connect Customer hosts the widget, it makes sure that the latest version is always live on your website.
 + **SMS**. You can [set up two-way SMS messaging](setup-sms-messaging.md) capabilities so your customers can text you from their mobile device, and your agents can respond using the same tools they already use for calls and chats. With Amazon Lex, you can detect the intent of the customer message and automate responses to their questions, saving agents valuable time and effort.
 + **Third-party messaging apps**. To integrate with third-party messaging apps, use the [Connect Customer APIs](https://docs.aws.amazon.com/connect/latest/APIReference/Welcome.html) that enable you to subscribe to a real-time stream of chat messages. Using these APIs, you can:
   + Stream chat messages in real time when a new chat contact is created.
@@ -87,7 +87,7 @@ Agents have access to a rich text editor to respond to emails and to create pers
 
 ![An email signature template.](http://docs.aws.amazon.com/connect/latest/adminguide/images/overviewemailtemplate.png)
 
-Both agents and contact center managers can easily view an entire email thread. Email threading ensures that outgoing emails and incoming responses related to a customer inquiry are associated with each other in a [chronological and organized fashion](email-capabilities.md#email-capabilities-howthreadsmanaged). Agents can view an email thread in the agent workspace and CCP, and for added security, when they reply to an email, they can't manipulate what the customer wrote as part of their email.
+Both agents and contact center managers can easily view an entire email thread. Email threading makes sure that outgoing emails and incoming responses related to a customer inquiry are associated with each other in a [chronological and organized fashion](email-capabilities.md#email-capabilities-howthreadsmanaged). Agents can view an email thread in the agent workspace and CCP, and for added security, when they reply to an email, they can't manipulate what the customer wrote as part of their email.
 
 The following image shows an example of an email contact being handled by an agent within the CCP in the agent workspace. In this example they have associated the email contact to a case and are using the rich text editor and quick responses to respond.
 
@@ -120,7 +120,7 @@ Out-of-the-box, the [agent workspace](agent-workspace.md) integrates all of your
 
 From one application your agents can view detailed customer information, work on tasks, view workforce schedules, get generative AI-powered agent assist, and track and manage customer issues that require multiple interactions.
 
-You can also easily integrate other applications directly into the agent workspace, thus further increasing agent efficiency. For more information, see [Integrate third-party applications (3p apps) in the Connect Customer agent workspace](3p-apps.md)
+You can also easily integrate other applications directly into the agent workspace, thus further increasing agent efficiency. For more information, see [Integrate third-party applications in the agent workspace](3p-apps.md)
 
 The following image shows the agent workspace with callouts indicating the features on the page.
 
@@ -148,7 +148,7 @@ In the following image of the agent workspace, the agent is on a chat with Nikki
 
 You can use [Connect Customer agent assist](connect-ai-agent.md) to automatically detect customer intent during calls and chats. agent assist uses the real-time conversation with the customer, along with relevant company content, to automatically recommend what to say or what actions an agent should take to better assist the customer. This improves both agent productivity and customer satisfaction. Agents can also use natural language to search across connected knowledge sources to receive generated responses, recommended actions, and links to more information.
 
-The following image shows how an article may appear in the agent application when the agent is on a call.
+The following image shows how an article might appear in the agent application when the agent is on a call.
 
 ![The agent application with an article displayed in it.](http://docs.aws.amazon.com/connect/latest/adminguide/images/wisdom-concepts-intro2.png)
 

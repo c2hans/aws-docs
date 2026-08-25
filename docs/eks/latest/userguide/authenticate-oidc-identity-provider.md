@@ -10,13 +10,16 @@ To contribute to this user guide, choose the **Edit this page on GitHub** link t
 <a name="authenticate-oidc-identity-provider"></a>
 
 Amazon EKS supports using OpenID Connect (OIDC) identity providers as a method to authenticate users to your cluster. OIDC identity providers can be used with, or as an alternative to AWS Identity and Access Management (IAM). For more information about using IAM, see [Grant IAM users and roles access to Kubernetes APIs](grant-k8s-access.md). After configuring authentication to your cluster, you can create Kubernetes `roles` and `clusterroles` to assign permissions to the roles, and then bind the roles to the identities using Kubernetes `rolebindings` and `clusterrolebindings`. For more information, see [Using RBAC Authorization](https://kubernetes.io/docs/reference/access-authn-authz/rbac/) in the Kubernetes documentation.
-+ You can associate one OIDC identity provider to your cluster.
 + Kubernetes doesn’t provide an OIDC identity provider. You can use an existing public OIDC identity provider, or you can run your own identity provider. For a list of certified providers, see [OpenID Certification](https://openid.net/certification/) on the OpenID site.
 + The issuer URL of the OIDC identity provider must be publicly accessible, so that Amazon EKS can discover the signing keys. Amazon EKS doesn’t support OIDC identity providers with self-signed certificates.
 + You can’t disable IAM authentication to your cluster, because it’s still required for joining nodes to a cluster.
 + An Amazon EKS cluster must still be created by an AWS [IAM principal](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html#iam-term-principal), rather than an OIDC identity provider user. This is because the cluster creator interacts with the Amazon EKS APIs, rather than the Kubernetes APIs.
 + OIDC identity provider-authenticated users are listed in the cluster’s audit log if CloudWatch logs are turned on for the control plane. For more information, see [Enable or disable control plane logs](control-plane-logs.md#enabling-control-plane-log-export).
 + You can’t sign in to the AWS Management Console with an account from an OIDC provider. You can only [View Kubernetes resources in the AWS Management Console](view-kubernetes-resources.md) by signing into the AWS Management Console with an AWS Identity and Access Management account.
+
+The number of OIDC identity providers you can associate with a cluster depends on the cluster’s Kubernetes version. On clusters running Kubernetes version 1.32 or later, you can associate up to 10 OIDC identity providers. The combined size of all OIDC provider configurations must be less than 12 KB. On clusters running a version earlier than 1.32, you can associate only one OIDC identity provider.
++ The issuer URL (`issuerUrl`) and name (`name`) must be unique across all OIDC identity providers associated with the cluster. You can’t associate the same provider more than once.
++ Associating an OIDC identity provider is a cluster update. The cluster enters the `UPDATING` state, and the change can take several minutes to be fully applied to the cluster’s API servers. You can track the progress of the update with the [DescribeUpdate](https://docs.aws.amazon.com/eks/latest/APIReference/API_DescribeUpdate.html) operation.
 
 **Note**
 The control plane fetches the provider’s signing keys from the issuer URL, so the issuer must be reachable from the control plane. If your cluster uses customer-routed control plane egress (`controlPlaneEgressMode=CUSTOMER_ROUTED`), make sure the issuer endpoint is reachable through the egress path you configure in your VPC. For more information, see [Configuring control plane egress routing](control-plane-egress.md).
@@ -27,7 +30,7 @@ The control plane fetches the provider’s signing keys from the issuer URL, so 
 Before you can associate an OIDC identity provider with your cluster, you need the following information from your provider:
 
  **Issuer URL**
-The URL of the OIDC identity provider that allows the API server to discover public signing keys for verifying tokens. The URL must begin with `https://` and should correspond to the `iss` claim in the provider’s OIDC ID tokens. In accordance with the OIDC standard, path components are allowed but query parameters are not. Typically the URL consists of only a host name, like `https://server.example.org` or `https://example.com`. This URL should point to the level below `.well-known/openid-configuration` and must be publicly accessible over the internet.
+The URL of the OIDC identity provider that allows the API server to discover public signing keys for verifying tokens. The URL must begin with `https://` and should correspond to the `iss` claim in the provider’s OIDC ID tokens. In accordance with the OIDC standard, path components are allowed but query parameters are not. Typically the URL consists of only a host name, like `https://server.example.org` or `https://example.com`. This URL should point to the level below `.well-known/openid-configuration` and must be publicly accessible over the internet. The issuer URL must be unique across all OIDC identity providers associated with the cluster.
 
  **Client ID (also known as *audience*)**
 The ID for the client application that makes authentication requests to the OIDC identity provider.
@@ -94,6 +97,15 @@ Don’t specify `system:`, or any portion of that string, for `groupsPrefix` or 
      +  **Required claims** – Select **Add claim** and enter one or more key value pairs that describe required claims in the client ID token. The pairs describe required claims in the ID Token. If set, each claim is verified to be present in the ID token with a matching value.
 
        1. To use `kubectl` to work with your cluster and OIDC identity provider, see [Using kubectl](https://kubernetes.io/docs/reference/access-authn-authz/authentication/#using-kubectl) in the Kubernetes documentation.
+
+## Best practices for multiple identity providers
+<a name="oidc-identity-provider-best-practices"></a>
+
+ **Use username and group prefixes**: Set a username prefix (`usernamePrefix`) and a groups prefix (`groupsPrefix`) for each OIDC identity provider to reduce the chance that identities from different providers overlap. If you don’t use prefixes, use username and groups claims that are unique per provider. Either approach makes sure that two providers can’t produce the same Kubernetes username or group name.
+
+ **Validate token claims**: Use required claims (`requiredClaims`) to specify the key-value pairs that must be present in the ID token, so that your cluster accepts only the tokens that you authorize.
+
+ **Limit the claims in each token**: Configure your identity provider to issue tokens with only the claims that your cluster needs. Limiting the claims reduces the information that’s exposed if a token is compromised.
 
 ## Example IAM policy
 <a name="oidc-identity-provider-iam-policy"></a>

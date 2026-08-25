@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bac
 # Understanding Amazon DynamoDB billing for backups
 <a name="backup-restore-billing"></a>
 
-This guide provides details about how DynamoDB billing works for backups. We break down the various components that contribute to the overall cost, providing clear explanations and practical examples.
+This guide provides details about how DynamoDB billing works for backups. The following sections break down the various components that contribute to the overall cost, providing clear explanations and practical examples.
 
 DynamoDB offers on-demand backups and point-in-time recovery (PITR) backups to help protect your DynamoDB data from disaster events and offers data archiving for long-term retention.
 

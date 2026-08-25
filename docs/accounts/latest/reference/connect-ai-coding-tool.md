@@ -19,10 +19,10 @@ You can provide your AI coding tool with access to your project and install the 
 + The credentials you generate are for use by the AWS CLI, AWS Tools for PowerShell, and AWS SDKs. External tools may not be supported. The access to your resources is valid for 12 hours. Use the following command to renew your credentials:
 
   ```
-  aws login --mcp
+  aws login --profile {{profile-name}}
   ```
 
-  The command will automatically open your default browser, but you do not need to take any action. AWS can renew your credentials for 90 days. After 90 days, you'll need to grant access in a browser window again.
+  Replace {{profile-name}} with the profile name you chose during initial setup. The command will automatically open your default browser, but you do not need to take any action. AWS can renew your credentials for 90 days. After 90 days, you'll need to grant access in a browser window again.
 
 ## Connect your AI coding tool to your project
 <a name="connect-ai-coding-tool-console"></a>

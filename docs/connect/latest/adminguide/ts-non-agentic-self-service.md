@@ -46,4 +46,4 @@ This issue can occur due to timeouts from Amazon Lex or incorrect Amazon Nova Pr
 ### Amazon Nova Pro configuration
 <a name="amazon-nova-pro-configuration"></a>
 
-If you're using Amazon Nova Pro for your custom AI prompts, ensure that the tool\_use examples follow [Python-compatible format](create-ai-prompts.md#nova-pro-aiprompt).
+If you're using Amazon Nova Pro for your custom AI prompts, make sure that the tool\_use examples follow [Python-compatible format](create-ai-prompts.md#nova-pro-aiprompt).

@@ -62,7 +62,7 @@ The following example shows how to pass contact attributes directly from snippet
 ### Using the attributes in contact flows
 <a name="contact-flow-usage-voice"></a>
 
-The [Check contact attributes](check-contact-attributes.md) flow block provides access to these attributes via the **User defined** namespace, as shown in the following image. You can use the flow block to add branching logic. The full path is `$Attribute.HostedWidget-{{attributeName}}`.
+The [Check contact attributes](check-contact-attributes.md) flow block provides access to these attributes through the **User defined** namespace, as shown in the following image. You can use the flow block to add branching logic. The full path is `$Attribute.HostedWidget-{{attributeName}}`.
 
 ![Image showing a flow block branching to Valid and Invalid prompts.](http://docs.aws.amazon.com/connect/latest/adminguide/images/flow-check-contact-attrib.png)
 

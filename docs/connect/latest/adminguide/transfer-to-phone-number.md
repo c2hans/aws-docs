@@ -55,10 +55,10 @@ Note the following properties:
 **Caller ID recommendations for calls outside the US**
 If you are using Connect Customer outside of the United States, we recommend choosing **Caller ID number** and then selecting an Connect Customer number. Otherwise, local regulations might cause telephony providers to block or redirect non-Amazon Connect phone numbers, resulting in service-related events, such as rejected calls, poor audio quality, delay, latency, and displaying the incorrect caller ID.
 **In Australia**: The caller ID must be an Connect Customer provided DID (Direct Inward Dialing) phone number. If a toll free number or a number not provided by Connect Customer is used in the caller ID, local telephony suppliers may reject outbound calls due to local anti-fraud requirements.
-**In the UK**: The caller ID must be a valid E164 phone number. If the phone number is not provided in the caller ID, local telephony suppliers may reject outbound calls due to local anti-fraud requirements.
+**In the UK**: The caller ID must be a valid E164 phone number. If the phone number is not provided in the caller ID, local telephony suppliers might reject outbound calls due to local anti-fraud requirements.
 + **Caller ID name**: You can set a caller ID name, but there's no guarantee it will appear correctly to the customer. For more information, see [Outbound caller ID number](queues-callerid.md#using-call-number-block).
 **Note**
-Per SIP protocol RFC3261, the following characters are reserved: **; / ? : @ & = \+ $ ,**. Do not use these characters in the caller ID name. When these characters are included, outbound calls may fail or the caller ID name may display inaccurately.
+Per SIP protocol RFC3261, the following characters are reserved: **; / ? : @ & = \+ $ ,**. Do not use these characters in the caller ID name. When these characters are included, outbound calls might fail or the caller ID name might display inaccurately.
 When [Transfer to phone number](#transfer-to-phone-number) block is used without specifying a custom caller ID, the caller ID of the caller is passed as the caller ID. For example, if you transfer to an external number and no custom caller ID is used to specify that the call is coming from your organization, then the contact's caller ID is displayed to the external party.
 
 ## Configuration tips

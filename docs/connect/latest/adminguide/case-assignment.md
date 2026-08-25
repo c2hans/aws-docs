@@ -70,4 +70,4 @@ The following image shows an example of the Properties page for the **Cases** bl
 
 ![The Cases block with request field set to Assigned queue.](http://docs.aws.amazon.com/connect/latest/adminguide/images/cases-block-assigned-queue.png)
 
-There are situations where you may want to set the assigned queue or assigned user dynamically. For example, when the customer enters a DTMF number for a fraud issue, you can create cases where the Fraud department is automatically set as the case owner.
+There are situations where you might want to set the assigned queue or assigned user dynamically. For example, when the customer enters a DTMF number for a fraud issue, you can create cases where the Fraud department is automatically set as the case owner.

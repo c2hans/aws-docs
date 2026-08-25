@@ -13,7 +13,7 @@ To use this operation, you must have the `bedrock-agentcore:DeleteMemoryRecord` 
 <a name="API_DeleteMemoryRecord_RequestSyntax"></a>
 
 ```
-DELETE /memories/{{memoryId}}/memoryRecords/{{memoryRecordId}} HTTP/1.1
+DELETE /memories/{{memoryId}}/memoryRecords/{{memoryRecordId}}?namespace={{namespace}} HTTP/1.1
 ```
 
 ## URI Request Parameters
@@ -32,6 +32,11 @@ The identifier of the memory record to delete.
 Length Constraints: Minimum length of 40. Maximum length of 50.
 Pattern: `mem-[a-zA-Z0-9-_]*`
 Required: Yes
+
+ ** [namespace](#API_DeleteMemoryRecord_RequestSyntax) **   <a name="BedrockAgentCore-DeleteMemoryRecord-request-uri-namespace"></a>
+The namespace of the memory record to delete. This value is used for IAM condition key authorization.
+Length Constraints: Minimum length of 1. Maximum length of 1024.
+Pattern: `[a-zA-Z0-9/*][a-zA-Z0-9-_/*]*(?::[a-zA-Z0-9-_/*]+)*[a-zA-Z0-9-_/*]*`
 
 ## Request Body
 <a name="API_DeleteMemoryRecord_RequestBody"></a>

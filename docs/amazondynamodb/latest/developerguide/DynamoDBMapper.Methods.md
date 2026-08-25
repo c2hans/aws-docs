@@ -50,7 +50,7 @@ If you have versioning enabled, the client-side and server-side item versions mu
 ## load
 <a name="DynamoDBMapper.Methods.load"></a>
 
-Retrieves an item from a table. You must provide the primary key of the item that you want to retrieve. You can provide optional configuration parameters using the `DynamoDBMapperConfig` object. For example, you can optionally request strongly consistent reads to ensure that this method retrieves only the latest item values as shown in the following Java statement.
+Retrieves an item from a table. You must provide the primary key of the item that you want to retrieve. You can provide optional configuration parameters using the `DynamoDBMapperConfig` object. For example, you can optionally request strongly consistent reads to make sure that this method retrieves only the latest item values as shown in the following Java statement.
 
 ```
 DynamoDBMapperConfig config = DynamoDBMapperConfig.builder()

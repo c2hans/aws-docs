@@ -507,8 +507,8 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [StartConnection](https://docs.aws.amazon.com/outposts/latest/APIReference/API_StartConnection.html)  **
   - **Description:** Grants permission to start a connection for your Outpost server
-  - **Resource types (\*required):**
-  - **Condition keys:**
+  - **Resource types (\*required):** [outpost\*](#list_outposts-resource-outpost)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_outposts-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
 - **   [TagResource](https://docs.aws.amazon.com/outposts/latest/APIReference/API_TagResource.html)  **

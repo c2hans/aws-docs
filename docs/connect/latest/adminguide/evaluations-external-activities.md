@@ -30,7 +30,7 @@ The rest of this topic describes each step in detail.
 <a name="steps-for-it-admins"></a>
 
 The following steps are typically performed by an IT admin.
-+  Ensure that agents or back-office workers who you want to evaluate are users on Connect Customer. To add new users, see [Add users to Connect Customer](user-management.md).
++  Make sure that agents or back-office workers who you want to evaluate are users on Connect Customer. To add new users, see [Add users to Connect Customer](user-management.md).
 + Use the [CreateContact](https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateContact.html) API to ingest all external activities completed by these agents into Connect Customer as completed Connect Customer tasks.
 
    You can ingest:
@@ -66,7 +66,7 @@ The following steps are typically performed by an IT admin.
     }
   }'
   ```
-+  You can add additional activity information within attributes. This information may be useful for quality managers who are searching and evaluating contacts. For example, the previous API call includes the a custom attribute called `ExternalContactType`. It enables managers to distinguish between different types of external activities within Contact search.
++  You can add additional activity information within attributes. This information might be useful for quality managers who are searching and evaluating contacts. For example, the previous API call includes the a custom attribute called `ExternalContactType`. It enables managers to distinguish between different types of external activities within Contact search.
 
    You can also add links to the third-party system within contact references. These links enable managers to reference additional information that's not included with the task.
 +  To enable managers to search for activities using these attributes, you need to enable search on these attributes. For more information, see [Search for contacts in Connect Customer by using custom contact attributes or contact segment attributes](search-custom-attributes.md).

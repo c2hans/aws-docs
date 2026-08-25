@@ -9,6 +9,7 @@ The following table describes the important changes to the documentation for AWS
 
 | Date | Change | Documentation updates | API versions updated |
 | --- | --- | --- | --- |
+| August 20, 2026 | Corrected Slurm REST API documentation | Corrected the example script for retrieving the JWT signing key to use `--version-id` instead of `--version-stage`, and updated endpoint URLs in the Slurm REST API topics to use `http://`, because the `slurmrestd` endpoint is HTTP only. | Not applicable |
 | August 14, 2026 | Updated node lifecycle actions best practices | Added guidance that AWS PCS does not support rebooting the instance during a lifecycle action script. | Not applicable |
 | August 11, 2026 | Updated AWS PCS agent to version 1.5.1 | Added AWS PCS agent version 1.5.1-1 in the user guide. | Not applicable |
 | August 11, 2026 | Documented rolling update limitation for Slurm CLI Filter Plugins | Added a limitation to the cluster version update page: clusters that use Slurm CLI Filter Plugins don't support rolling updates. | Not applicable |

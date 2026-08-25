@@ -200,4 +200,4 @@ The following limitations apply to Amazon Quick analytics:
 + Detailed query and response data is only available to instance administrators
 
 **Note**
-For comprehensive monitoring beyond chat interactions, consider using CloudWatch metrics and logs in conjunction with the analytics dashboard. For more information, see [Monitoring Quick](https://docs.aws.amazon.com/quicksuite/latest/userguide/monitoring-quicksight.html).
+For comprehensive monitoring beyond chat interactions, consider using CloudWatch metrics and logs in conjunction with the analytics dashboard. For more information, see [Monitoring Quick](https://docs.aws.amazon.com/quicksuite/latest/userguide/monitoring-cloudwatch-metrics.html).

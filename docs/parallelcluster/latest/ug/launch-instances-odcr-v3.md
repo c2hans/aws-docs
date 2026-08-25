@@ -240,7 +240,7 @@ If the target ODCR is shared by another account, you don't need to create a reso
    ```
    Region: {{REGION_ID}}
    Image:
-     Os: alinux2
+     Os: alinux2023
    HeadNode:
      InstanceType: c5.2xlarge
      Ssh:

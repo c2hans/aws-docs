@@ -10,6 +10,13 @@ We recommend subscribing to the RSS feed so updates to these notes are delivered
 ## August 2026
 <a name="_august_2026"></a>
 
+### AWS Agent Registry: Cross-account sharing with AWS RAM
+<a name="shared_aws_agent_registry_cross_account_sharing_with_shared_aws_ram"></a>
+
+ AWS Agent Registry now supports cross-account sharing through AWS Resource Access Manager (RAM). Choose from four managed permissions (ReadOnly, Consumer, Publisher, Admin) to control what shared accounts can do. RAM manages the resource-based policy on your behalf. For accounts within the same AWS Organization, sharing takes effect automatically; for external accounts, the consumer accepts an invitation.
+
+For more information, see [Sharing a registry across accounts with AWS RAM](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/registry-cross-account-sharing.html).
+
 ### Payments: Coinbase wallet usage is billed through AWS Marketplace
 <a name="payments_coinbase_wallet_usage_is_billed_through_shared_aws_marketplace"></a>
 
@@ -18,6 +25,15 @@ To use Coinbase as a payment provider with AgentCore payments, subscribe to the 
 Coinbase wallet usage is metered through AWS Marketplace and billed on your AWS bill based on Coinbase’s public pricing. Your account remains eligible for the Coinbase free tier. This requirement applies to the Coinbase provider only; other providers, such as Stripe (Privy), are not affected.
 
 For more information, see [Subscribe to Coinbase Wallets for AgentCore Payments in AWS Marketplace](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/payments-marketplace-subscription.html).
+
+### Memory: Store and extract non-conversational JSON payloads
+<a name="_memory_store_and_extract_non_conversational_json_payloads_2"></a>
+
+Amazon Bedrock AgentCore Memory now accepts a `json` payload type on the CreateEvent API. With this payload type, agents can store non-conversational, JSON-formatted data (up to 100 KB) such as behavioral events, activity logs, and system events.
+
+ `json` payloads are also extracted into long-term memory across the semantic, user preference, summarization, and episodic strategies.
+
+See [Create an event](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/short-term-create-event.html).
 
 ### Evaluations: Skill evaluators
 <a name="_evaluations_skill_evaluators_2"></a>

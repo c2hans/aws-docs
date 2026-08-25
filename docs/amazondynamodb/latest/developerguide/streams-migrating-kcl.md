@@ -404,7 +404,7 @@ final Worker worker = StreamsWorkerFactory.createDynamoDbStreamsWorker(
 **Note**
 KCL 3.5.x\+ migration uses three phases:
 **Phase 1** (`CLIENT_VERSION_CONFIG_COMPATIBLE_WITH_2X_PHASE1`): Pure KCL 1.x compatible mode. No migration-specific metadata is written to the lease table. Safe rollback to KCL v1 by redeploying previous code. Use this phase to validate stability.
-**Phase 2** (`CLIENT_VERSION_CONFIG_COMPATIBLE_WITH_2X`): Starts the migration. Writes `WORKER_METRIC_STATS` and `Migration3.0` entries to the lease table. KCL auto-transitions to full 3.x load balancing when all workers are ready. Rollback to Phase 1 is supported (via the KCL Migration Tool). Rollback to KCL v1 is no longer possible.
+**Phase 2** (`CLIENT_VERSION_CONFIG_COMPATIBLE_WITH_2X`): Starts the migration. Writes `WORKER_METRIC_STATS` and `Migration3.0` entries to the lease table. KCL auto-transitions to full 3.x load balancing when all workers are ready. Rollback to Phase 1 is supported (through the KCL Migration Tool). Rollback to KCL v1 is no longer possible.
 **Phase 3** (`CLIENT_VERSION_CONFIG_3X`): Full KCL 3.x functionality. Explicitly set by the customer or used as default when the config is removed. Terminal state, no rollback.
 These settings maintain compatibility between DynamoDB Streams Kinesis Adapter for KCL v3 and KCL v1, not between KCL v2 and v3.
 

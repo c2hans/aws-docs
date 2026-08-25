@@ -146,7 +146,7 @@ Consider the following questions when examining the workload:
 
    1. If a large HLL is caused by a write transaction, it means that `UNDO` logs are accumulating (not being cleaned regularly). In a large write transaction, this accumulation can grow quickly. In MySQL, `UNDO` is stored in the [SYSTEM tablespace](https://dev.mysql.com/doc/refman/5.7/en/innodb-system-tablespace.html). The `SYSTEM` tablespace is not shrinkable. The `UNDO` log might cause the `SYSTEM` tablespace to grow to several GB, or even TB. After the purge, release the allocated space by taking a logical backup (dump) of the data, then import the dump to a new DB instance.
 
-   1. If a large HLL is caused by a read transaction (long-running query), it can mean that the query is using a large amount of temporary space. Release the temporary space by rebooting. Examine Performance Insights DB metrics for any changes in the `Temp` section, such as `created_tmp_tables`. For more information, see [Monitoring DB load with Performance Insights on Amazon Aurora](USER_PerfInsights.md).
+   1. If a large HLL is caused by a read transaction (long-running query), it can mean that the query is using a large amount of temporary space. Release the temporary space by rebooting. Examine Performance Insights DB metrics for any changes in the `Temp` section, such as `created_tmp_tables`. For more information, see [Monitoring DB load with Amazon CloudWatch Database Insights on Amazon Aurora](USER_PerfInsights.md).
 
 1. Can you split long-running transactions into smaller ones that modify fewer rows?
 

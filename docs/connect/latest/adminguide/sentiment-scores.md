@@ -15,7 +15,7 @@ You can view a sentiment score for the entire conversation, as well as sentiment
 ## How to investigate sentiment scores
 <a name="how-to-use-sentiment-scores"></a>
 
-When working to improve your contact center, you may want to focus on the following:
+When working to improve your contact center, you might want to focus on the following:
 + Contacts that start with a positive sentiment score but end with a negative score.
 
   If you want to focus on a limited set of contacts to sample for quality assurance, for example, you can look at contacts where you know the customer had a positive sentiment at the start but ended with a negative sentiment. That shows you they left the conversation unhappy about something.

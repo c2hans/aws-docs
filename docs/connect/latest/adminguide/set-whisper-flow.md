@@ -26,7 +26,7 @@ For voice conversations, the **Set whisper flow** block overrides the [default a
 + Linking to a different whisper flow that you create.
 
 –OR–
-+ Disabling the whisper flow from running. You may want to disable the default whisper flow so customers do not perceive any connection latency, for example, as part of an outbound campaign.
++ Disabling the whisper flow from running. You might want to disable the default whisper flow so customers do not perceive any connection latency, for example, as part of an outbound campaign.
 
 **Important**
 Chat conversations do not include a default whisper. You need to include a **Set whisper flow** block for the default agent or customer whispers to play. For instructions, see [Set the default whisper flow in Connect Customer for a chat conversation](set-default-whisper-flow-for-chat.md).

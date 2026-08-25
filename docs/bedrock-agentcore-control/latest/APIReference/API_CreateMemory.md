@@ -30,6 +30,15 @@ Content-type: application/json
       { ... }
    ],
    "name": "{{string}}",
+   "namespaceKeys": [
+      {
+         "key": "{{string}}",
+         "validation": {
+            "allowedValues": [ "{{string}}" ],
+            "regexPattern": "{{string}}"
+         }
+      }
+   ],
    "streamDeliveryResources": {
       "resources": [
          { ... }
@@ -98,6 +107,12 @@ Type: String
 Pattern: `[a-zA-Z][a-zA-Z0-9_]{0,47}`
 Required: Yes
 
+ ** [namespaceKeys](#API_CreateMemory_RequestSyntax) **   <a name="bedrockagentcorecontrol-CreateMemory-request-namespaceKeys"></a>
+The namespace variable key definitions with optional validation rules. Use these `namespaceKeys` in `namespaceTemplates` to control namespace hierarchy.
+Type: Array of [NamespaceKeyEntry](API_NamespaceKeyEntry.md) objects
+Array Members: Minimum number of 1 item. Maximum number of 5 items.
+Required: No
+
  ** [streamDeliveryResources](#API_CreateMemory_RequestSyntax) **   <a name="bedrockagentcorecontrol-CreateMemory-request-streamDeliveryResources"></a>
 Configuration for streaming memory record data to external resources.
 Type: [StreamDeliveryResources](API_StreamDeliveryResources.md) object
@@ -138,6 +153,15 @@ Content-type: application/json
       "managedByResourceArn": "string",
       "memoryExecutionRoleArn": "string",
       "name": "string",
+      "namespaceKeys": [
+         {
+            "key": "string",
+            "validation": {
+               "allowedValues": [ "string" ],
+               "regexPattern": "string"
+            }
+         }
+      ],
       "status": "string",
       "strategies": [
          {

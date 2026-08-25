@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/calibrations-p
 # Calibration sessions for performance evaluations
 <a name="calibrations-performance-evaluations"></a>
 
-Connect Customer conversational analytics enables you to conduct calibration sessions to drive consistency and accuracy in how managers evaluate agent performance, so that agents receive feedback that is consistent. During a calibration, multiple managers can evaluate the same contact using the same evaluation form. You can then review differences in evaluations filled by different managers to align managers on evaluation best practices and identify opportunities to improve the evaluation form, e.g. rephrasing an evaluation question to be more specific, so that it is consistently answered by managers. You can also compare manager's answers with a designated expert, to measure and improve manager accuracy on evaluating agent performance. The expert is usually the quality manager who is conducting the calibration session.
+Connect Customer conversational analytics enables you to conduct calibration sessions to drive consistency and accuracy in how managers evaluate agent performance, so that agents receive feedback that is consistent. During a calibration, multiple managers can evaluate the same contact using the same evaluation form. You can then review differences in evaluations filled by different managers to align managers on evaluation best practices and identify opportunities to improve the evaluation form, for example, rephrasing an evaluation question to be more specific, so that it is consistently answered by managers. You can also compare manager's answers with a designated expert, to measure and improve manager accuracy on evaluating agent performance. The expert is usually the quality manager who is conducting the calibration session.
 
 ## Permissions needed for calibrations
 <a name="calibrations-performance-evaluations-permissions"></a>
@@ -25,7 +25,7 @@ In addition, for both sets of users, you also need permissions to search and vie
 
 1. On the left nav, go to **Analytics and optimization, Contact search**.
 
-1. Search for a contact that you wish to perform calibrations on, for example, minimum interaction duration, specific queue, etc.
+1. Search for a contact that you wish to perform calibrations on, for example, minimum interaction duration, specific queue.
 
 1. On the **Contact details** page of a contact, choose **Evaluations** on the top right to open the **Evaluations** side panel.
 
@@ -77,11 +77,11 @@ Use the following procedure to perform evaluations as a part of a calibration se
 
 1. Within a few seconds, a calibration report will be available for download in .csv format. This report contains the answers of participants that have submitted evaluations, along with the weighted scores for each question, section and the overall form, evaluator notes and comparison of the evaluator's scores with the expert evaluator.
 
-   Use the field **absolute deviation from expert** (lower is better) for each participant to determine if an evaluator is significantly deviating from the expert while answering evaluation questions. You can also see **average absolute deviation from expert** (lower is better) to see if there are certain questions that get inconsistent answers from participants and need improvement (For example, better phrasing, more specific questions, etc.)
+   Use the field **absolute deviation from expert** (lower is better) for each participant to determine if an evaluator is significantly deviating from the expert while answering evaluation questions. You can also see **average absolute deviation from expert** (lower is better) to see if there are certain questions that get inconsistent answers from participants and need improvement (For example, better phrasing, more specific questions)
 
 ## Finding calibration sessions
 <a name="calibrations-find"></a>
 
-Amazon Connect Customer notifies users participating in calibration sessions via email (for example, if a user is added as a participant, if there is a change to the due date, etc.). If a user managing a calibration session has added themselves as the **expert** participant, then they would also receive emails. The email contains a link to the contact which is being used for calibration. Note that in order for users to receive email notifications, you need to assign emails to the users on Connect Customer. For more information, see [Add users to Connect Customer](user-management.md).
+Amazon Connect Customer notifies users participating in calibration sessions through email (for example, if a user is added as a participant, if there is a change to the due date). If a user managing a calibration session has added themselves as the **expert** participant, then they would also receive emails. The email contains a link to the contact which is being used for calibration. Note that in order for users to receive email notifications, you need to assign emails to the users on Connect Customer. For more information, see [Add users to Connect Customer](user-management.md).
 
 As a manager setting up a calibration, you can copy the contact ID to search for the contact on which the calibration session was setup. Note that if you have not added yourself as an expert or if user emails are not setup within Connect Customer, you will not receive an email containing a link to the contact on which the calibration session was setup.

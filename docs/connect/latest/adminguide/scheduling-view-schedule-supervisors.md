@@ -41,7 +41,7 @@ The following image shows the agent's schedule, and a second line under it that 
 ![An example of the adherence view where all the agents have breached their schedule during all blocks of time.](http://docs.aws.amazon.com/connect/latest/adminguide/images/scheduling-dailyview1.png)
 
 + The adherence view displays the agents' non-adherence data alongside their scheduled activities. It displays breaches that are longer than a minute. The data refreshes approximately every 5 minutes.
-+ You can hover over the non-adherence activities to view details such as start time, end time, duration, scheduled activity, and actual activity. You can also view the adherence percentage that is calculated for this shift.
++ You can pause on the non-adherence activities to view details such as start time, end time, duration, scheduled activity, and actual activity. You can also view the adherence percentage that is calculated for this shift.
 + Non-adherence data is visible for up to 90 days in the past. It is available only in the daily view.
 
 To see which agents have exceeded a specified adherence duration, you can filter agents based on adherence breach duration. For example, you can choose to view agents who have breached adherence by more than 10 minutes. The following image shows the breach duration filter set to 30 minutes. The red lines indicate when the breach occurred.

@@ -31,6 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[ExportPath](#cfn-fsx-filesystem-lustreconfiguration-exportpath)" : {{String}},
   "[ImportedFileChunkSize](#cfn-fsx-filesystem-lustreconfiguration-importedfilechunksize)" : {{Integer}},
   "[ImportPath](#cfn-fsx-filesystem-lustreconfiguration-importpath)" : {{String}},
+  "[LogConfiguration](#cfn-fsx-filesystem-lustreconfiguration-logconfiguration)" : {{LogConfiguration}},
   "[MetadataConfiguration](#cfn-fsx-filesystem-lustreconfiguration-metadataconfiguration)" : {{MetadataConfiguration}},
   "[PerUnitStorageThroughput](#cfn-fsx-filesystem-lustreconfiguration-perunitstoragethroughput)" : {{Integer}},
   "[ThroughputCapacity](#cfn-fsx-filesystem-lustreconfiguration-throughputcapacity)" : {{Integer}},
@@ -55,6 +56,8 @@ To declare this entity in your CloudFormation template, use the following syntax
   [ExportPath](#cfn-fsx-filesystem-lustreconfiguration-exportpath): {{String}}
   [ImportedFileChunkSize](#cfn-fsx-filesystem-lustreconfiguration-importedfilechunksize): {{Integer}}
   [ImportPath](#cfn-fsx-filesystem-lustreconfiguration-importpath): {{String}}
+  [LogConfiguration](#cfn-fsx-filesystem-lustreconfiguration-logconfiguration): {{
+    LogConfiguration}}
   [MetadataConfiguration](#cfn-fsx-filesystem-lustreconfiguration-metadataconfiguration): {{
     MetadataConfiguration}}
   [PerUnitStorageThroughput](#cfn-fsx-filesystem-lustreconfiguration-perunitstoragethroughput): {{Integer}}
@@ -172,6 +175,12 @@ This parameter is not supported for Lustre file systems with a data repository a
 *Pattern*: `^[^\u0000\u0085\u2028\u2029\r\n]{3,4357}$`
 *Minimum*: `3`
 *Maximum*: `4357`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`LogConfiguration`  <a name="cfn-fsx-filesystem-lustreconfiguration-logconfiguration"></a>
+Property description not available.
+*Required*: No
+*Type*: [LogConfiguration](aws-properties-fsx-filesystem-logconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `MetadataConfiguration`  <a name="cfn-fsx-filesystem-lustreconfiguration-metadataconfiguration"></a>

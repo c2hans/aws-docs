@@ -55,7 +55,7 @@ In a DynamoDB table, each key value must be unique. However, the key values in a
 | 201 | Comet Quest | 0 |
 | 301 | Comet Quest | 0 |
 
-When this data is added to the `GameScores` table, DynamoDB propagates it to `GameTitleIndex`. If we then query the index using Comet Quest for `GameTitle` and 0 for `TopScore`, the following data is returned.
+When this data is added to the `GameScores` table, DynamoDB propagates it to `GameTitleIndex`. If you then query the index using Comet Quest for `GameTitle` and 0 for `TopScore`, the following data is returned.
 
 ![Table containing a list of titles, top scores, and user ids.](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/GSI_05.png)
 

@@ -38,9 +38,26 @@ AgentCore payments supports the following connector types:
 Key connector characteristics:
 + Each PaymentConnector belongs to exactly one PaymentManager
 + Credentials are stored in AWS Secrets Manager through AgentCore Identity and referenced by ARN
-+ Connectors follow the same lifecycle states as PaymentManagers (`CREATING`, `READY`, `UPDATING`, `CREATE_FAILED`, `UPDATE_FAILED`, `DELETE_FAILED`)
++ Connectors share the base lifecycle states with PaymentManagers (`CREATING`, `READY`, `UPDATING`, `CREATE_FAILED`, `UPDATE_FAILED`, `DELETE_FAILED`). Coinbase Quick create connectors can also report additional states (`PENDING_AUTHENTICATION`, `PROVISIONING`, `AUTHENTICATION_EXPIRED`, `AUTHENTICATION_FAILED`) — see the following section.
 
 You create a connector with the [CreatePaymentConnector](payments-create-manager.md#payments-create-manager-create) operation. For the complete list of connector operations, see the [Payments API reference](https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIReference/API_CreatePaymentConnector.html).
+
+### Quick create and Manual provisioning
+<a name="payments-how-it-works-provision-modes"></a>
+
+You provision a connector’s credentials in one of two ways. The mode you can use depends on the payment provider.
+
+ **Quick create (recommended)** — Quick create is available for Coinbase connectors only. You authorize the connection through Coinbase with a one-time OAuth consent, and the service then provisions and stores the Coinbase credential provider for you. You create the connector with `provisionMode` set to `QUICK_CREATE` and an empty credential list. The connector enters `PENDING_AUTHENTICATION` and returns an `authorizationUrl`. After you authorize at that URL, the service provisions the credentials and the connector becomes `READY`. The `authorizationUrl` is valid for about 10 minutes. If it lapses before you authorize, the connector moves to `AUTHENTICATION_EXPIRED` and you re-create it.
+
+ **Manual** — With manual provisioning, you bring your own provider API credentials. The credentials are stored as a PaymentCredentialProvider, and the connector references that provider by ARN. Stripe (Privy) supports manual provisioning only.
+
+During Quick create, a connector can report these additional statuses:
++  `PENDING_AUTHENTICATION` — Waiting for you to authorize at the `authorizationUrl`.
++  `PROVISIONING` — The service is provisioning and storing the credential provider after you authorize.
++  `AUTHENTICATION_EXPIRED` — The `authorizationUrl` lapsed before you authorized. Re-create the connector to get a fresh URL.
++  `AUTHENTICATION_FAILED` — Authorization did not complete successfully.
+
+For step-by-step instructions, see [the quick start](payments-getting-started.md) or [Create a Payment Manager and Connector](payments-create-manager.md).
 
 ## Credential management
 <a name="payments-how-it-works-credential-management"></a>

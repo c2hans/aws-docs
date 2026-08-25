@@ -170,7 +170,7 @@ This prevents a [cross-service confused deputy](cross-service-confused-deputy-pr
   + **Limits**: You can subscribe to up to two SNS topics per contact.
   + When you call [StartContactStreaming](https://docs.aws.amazon.com/connect/latest/APIReference/API_StartContactStreaming.html), you'll need to provide the Amazon Resource Name (ARN) of the SNS topic (see [Step 1: Create a standard SNS topic](#step1-chat-streaming)).
 
-    A single SNS topic ARN may be used across multiple AWS accounts, but it must be in the same Region as your Connect Customer instance. For example, if your topic ARN is in **us-east-1**, your Connect Customer instance must be in **us-east-1**.
+    A single SNS topic ARN might be used across multiple AWS accounts, but it must be in the same Region as your Connect Customer instance. For example, if your topic ARN is in **us-east-1**, your Connect Customer instance must be in **us-east-1**.
   + For initial chat messages that aren't received on the streaming endpoint, you can call the [GetTranscript](https://docs.aws.amazon.com/connect-participant/latest/APIReference/API_GetTranscript.html) API to receive the initial messages.
 
 ## Step 4: Create the participant connection

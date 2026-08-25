@@ -51,6 +51,14 @@ Length Constraints: Minimum length of 1. Maximum length of 1024.
 Pattern: `[a-zA-Z0-9/*][a-zA-Z0-9-_/*]*(?::[a-zA-Z0-9-_/*]+)*[a-zA-Z0-9-_/*]*`
 Required: No
 
+ ** sourceNamespaces **   <a name="BedrockAgentCore-Type-MemoryRecordUpdateInput-sourceNamespaces"></a>
+The namespaces of the source memory record being updated. This value is used for IAM condition key authorization.
+Type: Array of strings
+Array Members: Minimum number of 0 items. Maximum number of 1 item.
+Length Constraints: Minimum length of 1. Maximum length of 1024.
+Pattern: `[a-zA-Z0-9/*][a-zA-Z0-9-_/*]*(?::[a-zA-Z0-9-_/*]+)*[a-zA-Z0-9-_/*]*`
+Required: No
+
 ## See Also
 <a name="API_MemoryRecordUpdateInput_SeeAlso"></a>
 

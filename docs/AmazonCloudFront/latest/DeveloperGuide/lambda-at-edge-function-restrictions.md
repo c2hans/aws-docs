@@ -67,6 +67,7 @@ Lambda@Edge functions share the same [Regional concurrency](https://docs.aws.ama
 + [Lambda functions that use the arm64 architecture](https://docs.aws.amazon.com/lambda/latest/dg/foundation-arch.html)
 + Lambda functions with more than 512 MB of ephemeral storage
 + Using a [customer managed key to encrypt your .zip deployment packages](https://docs.aws.amazon.com/lambda/latest/dg/encrypt-zip-package.html)
++ [Self-managed Amazon S3 code storage](https://docs.aws.amazon.com/lambda/latest/dg/configuration-self-managed-storage.html)
 
 ## Supported runtimes
 <a name="lambda-at-edge-restrictions-runtime"></a>

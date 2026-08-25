@@ -28,6 +28,8 @@ A jumbo MTU value must be either 1500 or 8500. No other values will be accepted.
       "directConnectGatewayId": "{{string}}",
       "enableSiteLink": {{boolean}},
       "mtu": {{number}},
+      "prefixPoolAllocatedCountIpv4": {{number}},
+      "prefixPoolAllocatedCountIpv6": {{number}},
       "rateLimit": "{{string}}",
       "tags": [
          {
@@ -95,6 +97,8 @@ Required: Yes
       "location": "string",
       "mtu": number,
       "ownerAccount": "string",
+      "prefixPoolAllocatedCountIpv4": number,
+      "prefixPoolAllocatedCountIpv6": number,
       "rateLimit": "string",
       "region": "string",
       "routeFilterPrefixes": [

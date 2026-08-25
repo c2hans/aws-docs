@@ -20,7 +20,7 @@ There are two actions supported as part of this block:
 
 The above screenshot shows the two actions in the block's "Select action" dropdown.
 
-Once you select an action, you can select a channel to configure those settings for. Here are the supported channels for each action:
+After you select an action, you can select a channel to configure those settings for. Here are the supported channels for each action:
 
 |  | Chat supported? | Email supported? | Tasks supported? | Voice supported? |
 | --- | --- | --- | --- | --- |
@@ -51,7 +51,7 @@ The following image shows a picture of the **Set message processor** action set 
 
 1. **Enable processing** - control whether you want to start or stop chat message processing.
 
-1. **Function ARN** - define a lambda function that will perform the message processing. This function should be integrated with custom message processing. You can do so through the **CreateIntegrationAssociation** public API, using the MESSAGE\_PROCESSOR IntegrationType. View documentation [here](https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateIntegrationAssociation.html).
+1. **Function ARN** - define a lambda function that will perform the message processing. This function should be integrated with custom message processing. You can do so through the **CreateIntegrationAssociation** public API, using the MESSAGE\_PROCESSOR IntegrationType. For more information, see [CreateIntegrationAssociation](https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateIntegrationAssociation.html) in the *Connect Customer API Reference*.
 
 1. **Processing failure handling** - select whether you would like the original, unprocessed message to be delivered or not in case processing fails.
 

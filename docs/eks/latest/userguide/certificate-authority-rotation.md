@@ -411,6 +411,66 @@ New nodes bootstrap with the updated CA data automatically. The rolling replacem
 
 If you manage your node groups through Terraform or CloudFormation, CA rotation does not create drift in your IaC state. The CA lifecycle is managed through dedicated EKS APIs that are separate from your cluster resource configuration. For more detail on how CA rotation interacts with infrastructure as code, see the Infrastructure as code section.
 
+#### Custom launch template with a custom AMI
+<a name="_custom_launch_template_with_a_custom_ami"></a>
+
+If your node group is deployed with a custom AMI, AWS does not merge user data. You are responsible for supplying the correct bootstrap configuration, including the updated CA trust bundle. CA rotation does not update your user data for you, and a node without the successor CA fails to join the cluster.
+
+1. Retrieve the updated CA data (the combined trust bundle containing both the outgoing and successor CAs):
+
+   ```
+   aws eks describe-cluster --name my-cluster --region us-west-2 --query 'cluster.certificateAuthority.data' --output text
+   ```
+
+1. Update the CA data in your launch template user data. The way you specify the CA data depends on your operating system and bootstrap mechanism, and matches how you originally provided it. For more information about customizing managed nodes, see [Customize managed nodes with launch templates](https://docs.aws.amazon.com/eks/latest/userguide/launch-templates.html).
+
+1. Create a new version of your launch template with the updated user data, then update the node group to that launch template version. This recycles the nodes so they bootstrap with the successor CA:
+
+   ```
+   aws eks update-nodegroup-version --cluster-name my-cluster --nodegroup-name my-nodegroup --launch-template id=<lt-id>,version=<new-version> --region us-west-2
+   ```
+
+   For more information about updating a node group to a new launch template version, see [Update a managed node group for your cluster](https://docs.aws.amazon.com/eks/latest/userguide/update-managed-node-group.html).
+
+#### Verify nodes are running on the updated launch template
+<a name="_verify_nodes_are_running_on_the_updated_launch_template"></a>
+
+Before proceeding to activation, confirm that all nodes in your managed node group are running on the latest launch template version. This version must contain the updated CA trust bundle.
+
+1. Get the launch template for the node group. If `describe-nodegroup` returns a `launchTemplate` field, use it directly:
+
+   ```
+   aws eks describe-nodegroup --cluster-name my-cluster --nodegroup-name my-nodegroup --region us-west-2 --query 'nodegroup.launchTemplate'
+   ```
+
+   If it does not return a `launchTemplate` field, AWS manages the launch template internally. Find it through the Auto Scaling group instead:
+
+   ```
+   ASG=$(aws eks describe-nodegroup --cluster-name my-cluster --nodegroup-name my-nodegroup --region us-west-2 --query 'nodegroup.resources.autoScalingGroups[0].name' --output text)
+   aws autoscaling describe-auto-scaling-groups --auto-scaling-group-names "$ASG" --region us-west-2 --query 'AutoScalingGroups[0].{LaunchTemplate: LaunchTemplate, MixedInstancesPolicy: MixedInstancesPolicy.LaunchTemplate.LaunchTemplateSpecification}'
+   ```
+**Note**
+The launch template might be under `LaunchTemplate` or `MixedInstancesPolicy` depending on the Auto Scaling group configuration.
+
+1. Decode the launch template user data. Use the launch template ID and version from the previous step. Confirm that the CA data in the user data matches the combined trust bundle returned by `describe-cluster`. The field that holds the CA data depends on your operating system and bootstrap mechanism:
+
+   ```
+   aws ec2 describe-launch-template-versions --launch-template-id <lt-id> --versions <version> --region us-west-2 --query 'LaunchTemplateVersions[0].LaunchTemplateData.UserData' --output text | base64 --decode
+   ```
+
+1. Confirm that all worker nodes are running on the latest launch template version after the upgrade. Describe the Auto Scaling group for the node group. Compare each instance’s launch template version to the group’s current launch template version. Every `InService` instance must be on the current version. The rolling replacement drains instances in a `Terminating` state. You can ignore these instances:
+
+   ```
+   ASG=$(aws eks describe-nodegroup --cluster-name my-cluster --nodegroup-name my-nodegroup --region us-west-2 --query 'nodegroup.resources.autoScalingGroups[0].name' --output text)
+   aws autoscaling describe-auto-scaling-groups --auto-scaling-group-names "$ASG" --region us-west-2 --query 'AutoScalingGroups[0].Instances[].{InstanceId: InstanceId, LifecycleState: LifecycleState, LaunchTemplateVersion: LaunchTemplate.Version}' --output table
+   ```
+
+1. Confirm that the replacement nodes are healthy. Every node in the node group must be `Ready`, which confirms that the kubelet established a connection to the API server using the updated CA trust bundle:
+
+   ```
+   kubectl get nodes -l eks.amazonaws.com/nodegroup=my-nodegroup
+   ```
+
 ### Karpenter-controlled nodes
 <a name="_karpenter_controlled_nodes_2"></a>
 

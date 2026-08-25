@@ -14,7 +14,7 @@ Learn about best practices and recommendations for using Express Mode service ef
 <a name="express-service-secrets-management"></a>
 + **Use Secrets Manager for secrets** - Store sensitive data in Secrets Manager (e.g. private repository or database credentials).
 
-  For more information Secrets Manager best practices, see [Secrets Manager best practices](secretsmanager/latest/userguide/best-practices.html) in the *Secrets Manager User Guide*
+  For more information about Secrets Manager best practices, see [Secrets Manager best practices](https://docs.aws.amazon.com/secretsmanager/latest/userguide/best-practices.html) in the *Secrets Manager User Guide*.
 + **Enable encryption at rest** - Ensure secrets are encrypted when stored in AWS services.
 
   Using a service such as Secrets Manager allows you to encrypt using either an AWS managed or customer provided key.
@@ -35,7 +35,7 @@ aws ecs update-express-gateway-service \
 <a name="express-service-network-security"></a>
 + **Use private subnets for sensitive applications** - Deploy applications that don't need direct internet access in private subnets.
 
-  For more information on recommended architectures, refer to [Connect Amazon ECS application to the internet.](AmazonECS/latest/developerguide/networking-outbound.html)
+  For more information about recommended architectures, see [Connect Amazon ECS application to the internet](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/networking-outbound.html).
 + **Configure security groups to be minimally permissive** - Restrict inbound and outbound traffic to only necessary ports and sources.
 
   To restrict the outbound traffic of the Express Mode Service Security Group, you can edit this directly in Amazon EC2 Security Groups Console by modifying the Outbound rules, or use the following commands:
@@ -77,7 +77,7 @@ aws ecs update-express-gateway-service \
 
   You can modify the service metric's target value in your Express Mode service console.
 
-  Consider adding a predictive scaling policy, especially if your traffic follows a time-based pattern. See [ Predictive Auto Scaling](AWSEC2ContainerServiceDocs/latest/shared/predictive-auto-scaling.html) for more information.
+  Consider adding a predictive scaling policy, especially if your traffic follows a time-based pattern. For more information, see [ Predictive Auto Scaling](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/predictive-auto-scaling.html).
 + **Use multiple scaling metrics** - Consider using both CPU or Memory and request-based scaling for more responsive scaling.
 
   You can add multiple policies to a service. Express Mode adds one by default, but you can attach addtional policies to your service directly.
@@ -107,10 +107,10 @@ aws ecs update-express-gateway-service \
 <a name="express-service-monitoring"></a>
 + **Enable Enhanced Container Insights** - Use CloudWatch; Enhanced Container Insights for comprehensive monitoring of your Express Mode service applications.
 
-  See [Setting up Container Insights on Amazon ECS](AmazonCloudWatch/latest/monitoring/deploy-container-insights-ECS-cluster.html) for more information.
+  For more information, see [Setting up Container Insights on Amazon ECS](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/deploy-container-insights-ECS-cluster.html).
 + **Set up custom metrics** - Publish application-specific metrics to CloudWatch; for business logic monitoring.
 
-  See [Public custom metrics](AmazonCloudWatch/latest/monitoring/publishingMetrics.html) in the *CloudWatch User Guide* for more information.
+  For more information, see [Publish custom metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/publishingMetrics.html) in the *CloudWatch User Guide*.
 + **Configure log retention** - Set appropriate log retention periods to balance cost and compliance requirements.
 
   CloudWatch Log Groups created by Express Mode are configured to never expire and are retained when the Express Mode service is deleted. You can adjust this setting in the CloudWatch Log Group.
@@ -118,7 +118,7 @@ aws ecs update-express-gateway-service \
 
 ### Deployment strategies
 <a name="express-service-deployment"></a>
-+ **Implement bake times** - Express Mode implements a canary bake time to ensure deployments have time to stabilize while reducing blast radius of problematic deployments. If your application needs more time to stabilize, you can configure this in the Amazon ECS Service definition of your Express Mode service. Refer to [Creating an Amazon ECS canary deployment](AmazonECS/latest/developerguide/deploy-canary-service.html) for more details.
++ **Implement bake times** - Express Mode implements a canary bake time to ensure deployments have time to stabilize while reducing blast radius of problematic deployments. If your application needs more time to stabilize, you can configure this in the Amazon ECS Service definition of your Express Mode service. For more information, see [Creating an Amazon ECS canary deployment](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deploy-canary-service.html).
 + **Implement rollback procedures** - Have a plan to quickly revert to previous versions if issues occur.
 
   Meaningful health checks and alarm based rollbacks can both help with rollback. Express Mode's canary deployment strategy combined with alarm based rollbacks on 4xx and 5xx traffic sets up your deployments for fast rollbacks in the event of faulty application code or configuration.

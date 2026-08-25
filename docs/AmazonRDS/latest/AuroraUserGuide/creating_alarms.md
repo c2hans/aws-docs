@@ -13,7 +13,7 @@ Alarms invoke actions for sustained state changes only. CloudWatch alarms don't 
 For Aurora, use `WRITER` or `READER` role metrics to set up alarms instead of relying on metrics for specific DB instances. Aurora DB instance roles can change roles over time. You can find these role-based metrics in the CloudWatch console.
 Aurora Auto Scaling automatically sets alarms based on `READER` role metrics. For more information about Aurora Auto Scaling, see [Amazon Aurora Auto Scaling with Aurora Replicas](Aurora.Integrating.AutoScaling.md).
 
-You can use the **DB\_PERF\_INSIGHTS** metric math function in the CloudWatch console to query Amazon RDS for Performance Insights counter metrics. The **DB\_PERF\_INSIGHTS** function also includes the DBLoad metric at sub-minute intervals. You can set CloudWatch alarms on these metrics.
+You can use the **DB\_PERF\_INSIGHTS** metric math function in the CloudWatch console to query Amazon RDS for detailed per-query and database counter metrics, which are exposed through the Performance Insights API. The **DB\_PERF\_INSIGHTS** function also includes the DBLoad metric at sub-minute intervals. You can set CloudWatch alarms on these metrics.
 
 For more details on how to create an alarm, see [ Create an alarm on Performance Insights counter metrics from an AWS database](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_alarm_database_performance_insights.html).
 

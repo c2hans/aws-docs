@@ -59,7 +59,7 @@ For example, your contact center opens at 9AM but the forecast says no contacts 
 
 **To add rules**
 + In the **Rules** section, choose **\+** and then use the dropdown to choose the type of rule to create for the staffing group. For example, you can specify:
-  + **Minimum staff required**: Specify the minimum number of agents that should be available, despite what the forecast indicates. For example, if the forecast says that you do not need any agents in the first half hour that your contact center opens, you can ensure that there is a minimum of one agent during this time.
+  + **Minimum staff required**: Specify the minimum number of agents that should be available, despite what the forecast indicates. For example, if the forecast says that you do not need any agents in the first half hour that your contact center opens, you can make sure that there is a minimum of one agent during this time.
   + **Shift start time: **
     + **Same Start Time**: This creates schedules with the same shift start time for all staff.
     + **Previous day's start time**: This creates schedules such that for each agent in the staffing group, a shift does not start earlier than previous day's shift.

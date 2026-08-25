@@ -44,7 +44,7 @@ Calling disconnect programmatically can be useful in multiple cases. It provides
 
 A common use case would be to attach the disconnect functionality to events that fire when the browser or tab context is destroyed. `pagehide` and `beforeunload` are the common events that are fired when tearing down the browser. These are triggered when a user refreshes, navigates to a different URL or closes the tab or browser. Although both events are fired when the browser context is destroyed, there is no guarantee that the `disconnect` function can fully execute before the browser’s resources are cleaned up.
 
-`pagehide` is a more modern page lifecycle event and is supported across all major browsers and operating systems. `beforeunload` is an alternative event to try if the `pagehide` event fails to call disconnect consistently. `beforeunload` is triggered before `pagehide` which may provide additional reliability if the `disconnect` function is failing to complete before the browser is closed. There have been reliability issues regarding `beforeunload` especially on iOS devices.
+`pagehide` is a more modern page lifecycle event and is supported across all major browsers and operating systems. `beforeunload` is an alternative event to try if the `pagehide` event fails to call disconnect consistently. `beforeunload` is triggered before `pagehide` which might provide additional reliability if the `disconnect` function is failing to complete before the browser is closed. There have been reliability issues regarding `beforeunload` especially on iOS devices.
 
 Following is an example code snippet:
 

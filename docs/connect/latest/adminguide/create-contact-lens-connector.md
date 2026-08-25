@@ -24,7 +24,7 @@ This topic explains how to create a conversational analytics connector to integr
 ![The conversational analytics connector page, the voice system type dropdown list.](http://docs.aws.amazon.com/connect/latest/adminguide/images/contact-lens-voice-system-types.png)
 
 1. Enable **Encryption** and **Logging** of the SIP and Media metric messages.
-   + Amazon Chime SDK Voice Connector uses TLS server certificates issued by Amazon Trust Services. Most modern operating systems trust Amazon Trust Services by default. If this is not the case for your SIP infrastructure and you enable encryption, you may need to add the Starfield and Amazon Trust Services root CA certificates, excluding the EU roots, to your trust stores. You can find these certificates [here](https://www.amazontrust.com/repository/).
+   + Amazon Chime SDK Voice Connector uses TLS server certificates issued by Amazon Trust Services. Most modern operating systems trust Amazon Trust Services by default. If this is not the case for your SIP infrastructure and you enable encryption, you might need to add the Starfield and Amazon Trust Services root CA certificates, excluding the EU roots, to your trust stores. You can find these certificates [here](https://www.amazontrust.com/repository/).
    + Although logging is optional, we recommend you enable it to help you debug integration issues.
 
 1.  In the **Source IP addresses** section, you can configure a range of Source IP addresses that are allowed to send voice to this connector.

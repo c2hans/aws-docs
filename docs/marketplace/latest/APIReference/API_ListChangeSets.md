@@ -65,8 +65,8 @@ Required: No
  ** [NextToken](#API_ListChangeSets_RequestSyntax) **   <a name="AWSMarketplaceService-ListChangeSets-request-NextToken"></a>
 The token value retrieved from a previous call to access the next page of results.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 2048.
-Pattern: `^[\w+=.:@\-\/]$`
+Length Constraints: Minimum length of 1. Maximum length of 4096.
+Pattern: `^[\w+=.:@\-\/]+$`
 Required: No
 
  ** [Sort](#API_ListChangeSets_RequestSyntax) **   <a name="AWSMarketplaceService-ListChangeSets-request-Sort"></a>
@@ -112,8 +112,8 @@ Type: Array of [ChangeSetSummaryListItem](API_ChangeSetSummaryListItem.md) objec
  ** [NextToken](#API_ListChangeSets_ResponseSyntax) **   <a name="AWSMarketplaceService-ListChangeSets-response-NextToken"></a>
 The value of the next token, if it exists. Null if there are no more results.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 2048.
-Pattern: `^[\w+=.:@\-\/]$`
+Length Constraints: Minimum length of 1. Maximum length of 4096.
+Pattern: `^[\w+=.:@\-\/]+$`
 
 ## Errors
 <a name="API_ListChangeSets_Errors"></a>

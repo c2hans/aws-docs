@@ -15,13 +15,10 @@ The following example demonstrates a JSON string representing the content of a t
         {
             "Identifier": "TriggerHoursCheck",
             "Event": {
-                "Identifier": "Unique identifer"
+                "Identifier": "evt-hours",
                 "Type": "TestInitiated",
                 "Actor": "System",
                 "Properties": {}
-            },
-            "Usage": {
-                "Type": "EXACTLY"
             },
             "Actions": [
                 {
@@ -43,9 +40,7 @@ The following example demonstrates a JSON string representing the content of a t
                             }
                         }
                     },
-                    "Transitions": {
-                        "NextAction": ""
-                    }
+                    "Transitions": {}
                 }
             ],
             "Transitions": {
@@ -57,35 +52,29 @@ The following example demonstrates a JSON string representing the content of a t
         {
             "Identifier": "Welcome Message",
             "Event": {
-                "Identifier": "Unique identifer"
+                "Identifier": "evt-welcome",
                 "Type": "MessageReceived",
                 "Actor": "System",
                 "Properties": {
-                    "Text": "Press 1 to be connected to an agent"
-                },
-                "MatchingCriteria": "Similarity"
-            },
-            "Usage": {
-                "Type": "EXACTLY"
+                    "Text": "Press 1 to be connected to an agent",
+                    "MatchingCriteria": { "Type": "Similarity" }
+                }
             },
             "Actions": [
                 {
                     "Identifier": "Send dtmf input",
                     "Type": "SendInstruction",
-                    "Actor": "Customer",
                     "Parameters": {
                         "ActionType": "SendInstruction",
-                        "Actor" : "Customer",
+                        "Actor": "Customer",
                         "Instruction": {
                             "Type": "DtmfInput",
                             "Properties": {
-                                "Value": 1
+                                "Value": "1"
                             }
                         }
                     },
-                    "Transitions": {
-                        "NextAction": ""
-                    }
+                    "Transitions": {}
                 }
             ],
             "Transitions": {
@@ -97,15 +86,13 @@ The following example demonstrates a JSON string representing the content of a t
         {
             "Identifier": "Trigger Queue Announcement",
             "Event": {
+                "Identifier": "evt-queue",
                 "Type": "MessageReceived",
                 "Actor": "System",
                 "Properties": {
-                    "Text": "Thank you for calling. Your call is very important to us and will be answered in the order it was received."
-                },
-                "MatchingCriteria": "Similarity"
-            },
-            "Usage": {
-                "Type": "EXACTLY"
+                    "Text": "Thank you for calling. Your call is very important to us and will be answered in the order it was received.",
+                    "MatchingCriteria": { "Type": "Similarity" }
+                }
             },
             "Actions": [
                 {
@@ -124,14 +111,12 @@ The following example demonstrates a JSON string representing the content of a t
                     "Identifier": "endthetest",
                     "Type": "TestControl",
                     "Parameters": {
-                        "ActionType": "TestControl"
+                        "ActionType": "TestControl",
                         "Command": {
                             "Type": "EndTest"
                         }
                     },
-                    "Transitions": {
-                        "NextAction": ""
-                    }
+                    "Transitions": {}
                 }
             ],
             "Transitions": {

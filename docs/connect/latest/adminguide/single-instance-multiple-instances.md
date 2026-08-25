@@ -16,7 +16,7 @@ A centralized contact center operation with shared infrastructure and unified cu
 ### Pros
 <a name="single-instance-pros"></a>
 + **Lower operational overhead** – Manage/maintain single system, less duplication of setup/config.
-+ **Centralized management** – Unified metrics, reporting, queues, routing profiles, users, etc.
++ **Centralized management** – Unified metrics, reporting, queues, routing profiles, users.
 + **Consistent customer experience** – Common IVR, flows, and settings across teams.
 
 ### Cons
@@ -31,7 +31,7 @@ A centralized contact center operation with shared infrastructure and unified cu
 ### Best For
 <a name="multiple-instances-best-for"></a>
 
-Enterprises with geographic, regulatory, or security requirements infeasible to implement in single-region (telephony, data segregation, latency due to physical distance, etc.).
+Enterprises with geographic, regulatory, or security requirements infeasible to implement in single-region (telephony, data segregation, latency due to physical distance).
 
 ### Pros
 <a name="multiple-instances-pros"></a>
@@ -45,8 +45,8 @@ Enterprises with geographic, regulatory, or security requirements infeasible to 
 <a name="multiple-instances-cons"></a>
 + **Higher management overhead** – Need to maintain and update multiple environments.
 + **Fragmented reporting** – Multi-region reporting currently needs to be built.
-+ **Increased costs** – Each instance may require duplicate resources (Lambda, Amazon Lex, API).
-+ **Inconsistent user experience** – Unless strictly governed, each instance may drift in flow design, customer experience, customer security models, etc.
++ **Increased costs** – Each instance might require duplicate resources (Lambda, Amazon Lex, API).
++ **Inconsistent user experience** – Unless strictly governed, each instance might drift in flow design, customer experience, customer security models.
 
 ## Summary
 <a name="single-multiple-instances-summary"></a>

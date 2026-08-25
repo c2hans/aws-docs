@@ -164,3 +164,6 @@ public class HomeController : Controller
 
 }
 ```
+
+**Note**
+By default, `AddAWSService` registers the service client as a singleton, which is the recommended lifetime because service clients are thread-safe and relatively expensive to construct. For more information about reusing clients and other performance recommendations, see [Performance best practices](net-dg-performance.md).

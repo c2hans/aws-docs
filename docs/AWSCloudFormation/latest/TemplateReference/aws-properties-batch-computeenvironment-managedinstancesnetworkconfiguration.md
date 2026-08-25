@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::Batch::ComputeEnvironment ManagedInstancesNetworkConfiguration
 <a name="aws-properties-batch-computeenvironment-managedinstancesnetworkconfiguration"></a>
 
-<a name="aws-properties-batch-computeenvironment-managedinstancesnetworkconfiguration-description"></a>The `ManagedInstancesNetworkConfiguration` property type specifies Property description not available. for an [AWS::Batch::ComputeEnvironment](aws-resource-batch-computeenvironment.md).
+The network configuration for Amazon ECS Managed Instances. Specifies the VPC subnets and security groups where instances are launched.
 
 ## Syntax
 <a name="aws-properties-batch-computeenvironment-managedinstancesnetworkconfiguration-syntax"></a>
@@ -38,13 +38,13 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-batch-computeenvironment-managedinstancesnetworkconfiguration-properties"></a>
 
 `SecurityGroups`  <a name="cfn-batch-computeenvironment-managedinstancesnetworkconfiguration-securitygroups"></a>
-Property description not available.
+The VPC security groups to associate with the managed instances.
 *Required*: Yes
 *Type*: Array of String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Subnets`  <a name="cfn-batch-computeenvironment-managedinstancesnetworkconfiguration-subnets"></a>
-Property description not available.
+The VPC subnets where managed instances are launched. If your subnets don't provide public IP addresses, they must have a NAT gateway for outbound internet access.
 *Required*: Yes
 *Type*: Array of String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

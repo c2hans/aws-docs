@@ -10,7 +10,7 @@ The following table lists the data types you can use with PartiQL for DynamoDB.
 | DynamoDB data type | PartiQL representation | Notes |
 | --- | --- | --- |
 | Boolean | TRUE \| FALSE | Not case sensitive. |
-| Binary | N/A | Only supported via code. |
+| Binary | N/A | Only supported through code. |
 | List | [ value1, value2,...] | There are no restrictions on the data types that can be stored in a List type, and the elements in a List do not have to be of the same type. |
 | Map | { 'name' : value } | There are no restrictions on the data types that can be stored in a Map type, and the elements in a Map do not have to be of the same type. |
 | Null | NULL | Not case sensitive. |

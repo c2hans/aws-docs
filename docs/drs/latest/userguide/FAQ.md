@@ -13,13 +13,11 @@ With AWS Elastic Disaster Recovery, you can recover your applications on AWS fro
 ## How do I upgrade from CloudEndure Disaster Recovery to AWS Elastic Disaster Recovery?
 <a name="cedr-to-drs"></a>
 
-You can use the CEDR to DRS Upgrade Assessment Tool and the Server Upgrade Tool to move your source servers from CloudEndure Disaster Recovery (CEDR) to AWS Elastic Disaster Recovery (DRS). [Learn more in the CloudEndure documentation](https://docs.cloudendure.com/#Configuring_and_Running_Disaster_Recovery/Upgrade_CEDR_to_DRS/Upgrade_CEDR_to_DRS.htm#Upgrading_from_CEDR_to_AWS%C2%A0DRS%3FTocPath%3DNavigation%7CConfiguring%2520and%2520Running%2520Disaster%2520Recovery%7CUpgrading%2520from%2520CEDR%2520to%2520AWS%25C2%25A0DRS%7C_____0).
+You can use the CEDR to DRS Upgrade Assessment Tool and the Server Upgrade Tool to move your source servers from CloudEndure Disaster Recovery (CEDR) to AWS Elastic Disaster Recovery (DRS). For instructions on manually upgrading from CEDR to AWS DRS, see [Upgrading from CEDR to AWS DRS - Manual instructions](#cedr-to-drs-instructions).
 
 AWS Elastic Disaster Recovery (Elastic Disaster Recovery) is the next generation of CloudEndure Disaster Recovery (CEDR) and is the recommended service to use for Disaster Recovery to AWS. All customers are encouraged to transition from CEDR to Elastic Disaster Recovery, as soon as this is feasible for them.
 
 Prior to upgrading, [learn more about the differences between the two services](https://aws.amazon.com/disaster-recovery/faqs/?nc=sn&loc=4), and make sure that [DRS is right for you](https://aws.amazon.com/disaster-recovery/when-to-choose-aws-drs/?cloud-endure-blogs.sort-by=item.additionalFields.createdDate&cloud-endure-blogs.sort-order=desc).
-
-For manual upgrading instructions, refer to [this section](#cedr-to-drs-instructions).
 
 ## Can AWS Elastic Disaster Recovery protect physical servers?
 <a name="Can-CloudEndure-Protect-Migrate-Servers"></a>
@@ -152,7 +150,7 @@ You can then set this launch template as your default version.
 <a name="cedr-to-drs-instructions"></a>
 
 **Important**
-You can now use the CEDR to DRS Upgrade Assessment Tool and the Server Upgrade Tool to move your source servers from CloudEndure Disaster Recovery (CEDR) to AWS Elastic Disaster Recovery (AWS DRS). [Learn more in the CloudEndure documentation](https://docs.cloudendure.com/#Configuring_and_Running_Disaster_Recovery/Upgrade_CEDR_to_DRS/Upgrade_CEDR_to_DRS.htm#Upgrading_from_CEDR_to_AWS%C2%A0DRS%3FTocPath%3DNavigation%7CConfiguring%2520and%2520Running%2520Disaster%2520Recovery%7CUpgrading%2520from%2520CEDR%2520to%2520AWS%25C2%25A0DRS%7C_____0).
+You can now use the CEDR to DRS Upgrade Assessment Tool and the Server Upgrade Tool to move your source servers from CloudEndure Disaster Recovery (CEDR) to AWS Elastic Disaster Recovery (AWS DRS).
 
 AWS Elastic Disaster Recovery (AWS DRS) is the next generation of CloudEndure Disaster Recovery (CEDR) and is the recommended service to use for Disaster Recovery to AWS. All customers are encouraged to transition from CEDR to AWS DRS, as soon as this is feasible for them.
 
@@ -162,13 +160,13 @@ The following are the manual instructions for upgrading:
 
 1. Follow the DRS [getting started procedure to initialize AWS DRS](https://docs.aws.amazon.com/drs/latest/userguide/getting-started-initializing.html) in the AWS Region you want to replicate to.
 
-1.  [Launch a recovery instance (target machine)](https://docs.cloudendure.com/#Configuring_and_Running_Disaster_Recovery/Performing_a_Disaster_Recovery_Failover/Performing_a_Disaster_Recovery_Failover.htm#Performing_a_Failover_with_CloudEndure_..20%3FTocPath%3DNavigation%7CConfiguring%2520and%2520Running%2520Disaster%2520Recovery%7CPerforming%2520a%2520Disaster%2520Recovery%2520Failover%2520and%2520Failback%7CFailover%2520and%2520Failback%2520with%2520CloudEndure%2520-%2520Detailed%2520Instructions%7CPerforming%2520a%2520Failover%2520with%2520CloudEndure%7C_____0) using CloudEndure, and make sure that it works as expected. Once you have verified that everything works as expected, terminate the launched instance using the CloudEndure Console by choosing the ["Delete Target Machines" option](https://docs.cloudendure.com/#Getting_Started_with_CloudEndure/Exploring_the_CloudEndure_Console/Machines/Machines.htm#MACHINE_ACTIONS_Menu%3FTocPath%3DNavigation%7CGetting%2520Started%2520with%2520CloudEndure%7CExploring%2520the%2520CloudEndure%2520User%2520Console%7CMachines%2520Page%7C_____3). If you want to keep the instance, [activate EC2 termination protection](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/terminating-instances.html#Using_ChangingDisableAPITermination) before removing the source machine from the CloudEndure service.
+1.  Launch a recovery instance (target machine) using CloudEndure, and make sure that it works as expected. After you have verified that everything works as expected, terminate the launched instance using the CloudEndure Console by choosing the "Delete Target Machines" option. If you want to keep the instance, [activate EC2 termination protection](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/terminating-instances.html#Using_ChangingDisableAPITermination) before removing the source machine from the CloudEndure service.
 
    Until the server is ready on DRS, CloudEndure will still be your way to launch Recovery instances should you need them. That is why you must make sure that recovery using CloudEndure is working as expected for the server/s you are about to transition to DRS.
 
-1. [Pause data replication](https://docs.cloudendure.com/#Getting_Started_with_CloudEndure/Exploring_the_CloudEndure_Console/Machines/Machines.htm#MACHINE_ACTIONS_Menu%3FTocPath%3DNavigation%7CGetting%2520Started%2520with%2520CloudEndure%7CExploring%2520the%2520CloudEndure%2520User%2520Console%7CMachines%2520Page%7C_____3) for this server in CloudEndure.
+1. Pause data replication for this server in CloudEndure.
 
-1. [Manually uninstall the CloudEndure agent from your source servers](https://docs.cloudendure.com/#FAQ/FAQ/Agent_Related.htm#How_do_I_manually_uninstall_the_CloudEndure_Agent_from_a_Source_or_Target_mac...%3FTocPath%3DNavigation%7CFAQ%25C2%25A0and%25C2%25A0Troubleshooting%7CFAQ%7CAgent%2520Related%7C_____14).
+1. Manually uninstall the CloudEndure agent from your source servers.
 **Important**
 Do ** *not* ** use the **Remove from console** option available from the CloudEndure user console. By keeping this server’s records in CloudEndure, you also maintain its Point In Time recovery points, allowing you to launch a recovery instance using CloudEndure, should you need such a recovery instance before this server is ready on Elastic Disaster Recovery.
 
@@ -183,11 +181,11 @@ Do ** *not* ** use the **Remove from console** option available from the CloudEn
 1. Wait for the number of recovery days you want to have [Points In Time](https://docs.aws.amazon.com/drs/latest/userguide/failback-overview.html#point-in-time-faq) for to pass. For example, if you have CloudEndure and AWS DRS configured to retain 10 daily recovery Points In Time, then wait for 10 full days after the server has achieved the **Healthy** state in AWS DRS before removing it from CloudEndure.
 
 **Important**
-[Remove your source servers from the CloudEndure console](https://docs.cloudendure.com/#Installing_the_CloudEndure_Agents/Uninstalling_the_Agents/Uninstalling_the_Agents.htm#Uninstalling_Agents_from_Source_Machines%3FTocPath%3DNavigation%7CInstalling%2520the%2520CloudEndure%2520Agents%7CUninstalling%2520the%2520Agents%7CUninstalling%2520Agents%2520from%2520Source%2520Machines%7C_____0).
+Remove your source servers from the CloudEndure console.
 This action will cause all replication resources created for this server in AWS to be terminated. Until you do this, these resources continue to cost you money.
 If you have a launched a target instance in AWS using CEDR, consider whether you want to keep it or not.
 
-If you experience a disaster recovery event before the server reaches the **Healthy ** state in AWS DRS, navigate to the CloudEndure console and [launch a Target instance from there](https://docs.cloudendure.com/#Configuring_and_Running_Disaster_Recovery/Performing_a_Disaster_Recovery_Failover/Performing_a_Disaster_Recovery_Failover.htm#Performing_a_Failover_with_CloudEndure_..20%3FTocPath%3DNavigation%7CConfiguring%2520and%2520Running%2520Disaster%2520Recovery%7CPerforming%2520a%2520Disaster%2520Recovery%2520Failover%2520and%2520Failback%7CFailover%2520and%2520Failback%2520with%2520CloudEndure%2520-%2520Detailed%2520Instructions%7CPerforming%2520a%2520Failover%2520with%2520CloudEndure%7C_____0). This will launch the Target instance from the last PIT the system created before you removed the CloudEndure agent from the source servers. The CloudEndure console UI will show you the PIT from when this will launch.
+If you experience a disaster recovery event before the server reaches the **Healthy ** state in AWS DRS, navigate to the CloudEndure console and launch a Target instance from there. This will launch the Target instance from the last PIT the system created before you removed the CloudEndure agent from the source servers. The CloudEndure console UI will show you the PIT from when this will launch.
 
 **Note**
 During some of the time it takes to transition from CloudEndure to DRS you will not have the same level of protection: While replication in CloudEndure is paused and the server has not yet completed the initial scan, you will not be able to launch instances in DRS, and only be able to launch instances in CloudEndure with data prior to the pause action. This applies both to launching from latest snapshot and to launching from point-in-time.

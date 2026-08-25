@@ -14,6 +14,7 @@ A job queue will be blocked in these scenarios if a job is submitted to a job qu
 
 **Topics**
 + [Tutorial: Create a managed compute environment using Fargate resources](create-compute-environment-fargate.md)
++ [Tutorial: Create a managed compute environment using Amazon ECS Managed Instances](create-compute-environment-ecs-managed-instances.md)
 + [Tutorial: Create a managed compute environment using Amazon EC2 resources](create-compute-environment-managed-ec2.md)
 + [Tutorial: Create an unmanaged compute environment using Amazon EC2 resources](create-compute-environment-unmanaged-ec2.md)
 + [Tutorial: Create a managed compute environment using Amazon EKS resources](create-compute-environment-managed-eks.md)

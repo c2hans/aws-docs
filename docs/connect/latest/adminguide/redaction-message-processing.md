@@ -18,12 +18,12 @@ The following are processing options, along with features of each option:
 + Choose to redact selected or all sensitive data entities
 + Replace with generic placeholders ([PII]) or entity-specific placeholders ([NAME], [CREDIT\_CARD])
 
-**Custom message processors (via Lambda)**
+**Custom message processors (through Lambda)**
 
 With a custom processor Lambda, you have the freedom to transform messages in any way you choose. A copy of each message is sent to your Lambda function, and if a valid response is received within the timeout, the content in the response becomes the new canonical form of that message.
 
 This enables use cases such as:
-+ Language translation via third-party services
++ Language translation through third-party services
 + Profanity filtering
 + AI/LLM-powered message transformation
 + Business-specific message modifications

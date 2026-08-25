@@ -189,10 +189,8 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [quicksight:SetGroupMapping](#list_quicksight-action-SetGroupMapping)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
 
 - **   CreateSpace  **
-  - **IAM action:**  [quicksight:CreateSpace](#list_quicksight-action-CreateSpace)
-  - **Condition key:**
-  - **Possible value(s):**
-  - **Access level:** Write
+  - **IAM action:**  [quicksight:CreateSpace](#list_quicksight-action-CreateSpace)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [quicksight:TagResource](#list_quicksight-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
 - **   CreateTemplate  **
   - **IAM action:**  [quicksight:CreateTemplate](#list_quicksight-action-CreateTemplate)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write

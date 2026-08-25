@@ -63,7 +63,7 @@ To allow full read/write access to Connect Customer, you must attach two policie
 
 ------
 
-To allow a user to create an instance, ensure that they have the permissions granted by the `AmazonConnect_FullAccess` policy.
+To allow a user to create an instance, make sure that they have the permissions granted by the `AmazonConnect_FullAccess` policy.
 
 When you use `AmazonConnect_FullAccess` policy, note the following:
 + Additional privileges are required to create an Amazon S3 bucket with a name of your choosing, or to use an existing bucket while creating or updating an instance from the Connect Customer admin website. If you choose default storage locations for your call recordings, chat transcripts, email messages, attachments, call transcripts, and other data, the system prepends `"amazon-connect-"` to those objects.

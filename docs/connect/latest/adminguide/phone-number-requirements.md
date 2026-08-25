@@ -83,8 +83,8 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 | Type of number | Portability windows | Required Documents |
 | --- | --- | --- |
-| Local telephone numbers | Monday-Friday 8 AM -5 PM AEST/AEDT  | 1.  Last invoice <br />2.  Letter of Authorization (LOA): When you request porting services, we may provide you with a country-specific LOA template and explain how to complete it. <br />3.  Documents required for the Type of Number, as listed in the previous table for ordering phone numbers, as well as account number with current provider.   |
-| Toll-free prefixes: \+61 13, \+61 1800 | Monday-Friday 8 AM -3:30 PM AEST/AEDT  | 1.  Last invoice <br />2.  Letter of Authorization (LOA): When you request porting services, we may provide you with a country-specific LOA template and explain how to complete it. <br />3.  Documents required for the Type of Number, as listed in the previous table for ordering phone numbers, as well as ABN/ACN, and account number with current provider.   |
+| Local telephone numbers | Monday-Friday 8 AM -5 PM AEST/AEDT  | 1.  Last invoice <br />2.  Letter of Authorization (LOA): When you request porting services, we might provide you with a country-specific LOA template and explain how to complete it. <br />3.  Documents required for the Type of Number, as listed in the previous table for ordering phone numbers, as well as account number with current provider.   |
+| Toll-free prefixes: \+61 13, \+61 1800 | Monday-Friday 8 AM -3:30 PM AEST/AEDT  | 1.  Last invoice <br />2.  Letter of Authorization (LOA): When you request porting services, we might provide you with a country-specific LOA template and explain how to complete it. <br />3.  Documents required for the Type of Number, as listed in the previous table for ordering phone numbers, as well as ABN/ACN, and account number with current provider.   |
 
 ## Austria (AT)
 <a name="austria-requirements"></a>
@@ -1458,7 +1458,7 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 | VoIP prefixes numbers: \+82 70 | Yes | Local customers should provide a copy of their **business (tax office) registration certificate**, which is issued by local tax authorities and shows the company's registered address.<br />Submit an Support ticket to verify the documents for new number(s) ordering. |
 | Representative numbers: \+82 15, \+82 16 | Yes | Representative number order form is required. Use the form that is provided to you when you make the request. Along with this form, the following documents are required:+  Local customers should provide a copy of their **business (tax office) registration certificate**, which is issued by local tax authorities and shows the company's registered address. <br />Submit an Support ticket to verify the documents for new number(s) ordering. |
 | Toll-free prefixes: \+82 80 | Yes | Your business address in South Korea.<br />Local customers should provide a copy of their **business (tax office) registration certificate**, which is issued by local tax authorities and shows the company's registered address.<br />Submit an Support ticket to verify the documents for new number(s) ordering.<br />Submit an Support ticket to order a new number. |
-| Geographic Prefixes: \+82 2 | Yes (via Porting) | Same as for VOIP numbers, but the provided business registration document should reference a physical location associated with \+822 (Seoul) zone.<br />But if new local numbers are needed due to the Korean regulations requiring new local numbers to be physically installed as legacy services, we recommend you pre-plan migrations and ensure that you request numbers with existing providers that have a minimum of 6 months of physical installation of the number.<br />Connect Customer can support migration of a large number of DIDs, and can port numbers older than 6 months directly to Connect Customer. |
+| Geographic Prefixes: \+82 2 | Yes (through Porting) | Same as for VOIP numbers, but the provided business registration document should reference a physical location associated with \+822 (Seoul) zone.<br />But if new local numbers are needed due to the Korean regulations requiring new local numbers to be physically installed as legacy services, we recommend you pre-plan migrations and make sure that you request numbers with existing providers that have a minimum of 6 months of physical installation of the number.<br />Connect Customer can support migration of a large number of DIDs, and can port numbers older than 6 months directly to Connect Customer. |
 
 ### Number portability
 <a name="kr-porting"></a>
@@ -1618,7 +1618,7 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
-| Local telephone numbers: \+44 1, \+44 2 | No | A local address may be required for number orders in certain area codes.  |
+| Local telephone numbers: \+44 1, \+44 2 | No | A local address might be required for number orders in certain area codes.  |
 | Mobile prefixes: \+44 7 | No |  |
 | Toll-free prefixes: \+44 800, \+44 808 | No |  |
 | National prefixes: \+44 33, \+44 84 | No |  |

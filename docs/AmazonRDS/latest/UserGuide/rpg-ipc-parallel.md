@@ -151,7 +151,7 @@ SHOW max_parallel_workers_per_gather;
 <a name="rpg-ipc-parallel-optimize-resources"></a>
 
 Monitor CPU utilization and consider adjusting the number of vCPUs if consistently high and if your application benefits from parallel queries. Ensure adequate memory is available for parallel operations.
-+ Use Performance Insights metrics to determine if the system is CPU-bound.
++ Use detailed per-query and database counter metrics to determine if the system is CPU-bound.
 + Each parallel worker uses its own `work_mem`. Ensure total memory usage is within instance limits.
 
 The parallel queries may consume very substantially more resources than non-parallel queries, because each worker process is a completely separate process which has roughly the same impact on the system as an additional user session. This should be taken into account when choosing a value for this setting, as well as when configuring other settings that control resource utilization, such as `work_mem`. For more information, see the [PostgreSQL documentation](https://www.postgresql.org/docs/current/runtime-config-resource.html#GUC-WORK-MEM). Resource limits such as `work_mem` are applied individually to each worker, which means the total utilization may be much higher across all processes than it would normally be for any single process.

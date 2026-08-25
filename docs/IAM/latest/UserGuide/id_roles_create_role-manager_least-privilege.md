@@ -12,7 +12,7 @@ Disabling role manager does not affect roles previously created by role manager.
 ## When to apply least-privilege permissions
 <a name="id_roles_create_role-manager_least-privilege_when"></a>
 
-Granting a role only the permissions its resource requires is a security best practice in line with the principle of least privilege. Most roles created by role manager are over-permissive by default because they are intended to help you get started without encountering IAM friction.
+Granting a role only the permissions its resource requires is a security best practice in line with the principle of least privilege. For most roles, role manager creates roles with well scoped permissions. For some roles, such as those for compute resources or cloud infrastructure management, it creates roles with broad permissions.
 
 When you are ready to start scoping down roles created by role manager, we recommend starting with the roles associated with your most sensitive workloads and resources, such as anything handling PII or production data. To learn more, see [Prepare for least-privilege permissions](getting-started-reduce-permissions.md).
 

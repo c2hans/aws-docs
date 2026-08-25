@@ -227,7 +227,7 @@ The following steps are IdP agnostic; they work for any SAML IdP (for example, O
    1. Using the technique/parameters appropriate for your IdP, set the relay state to the console endpoint that matches (for example, https://{{region-id}}.console.aws.amazon.com/connect/federate/{{instance-id}}).
 
 **Note**
-Ensure that STS is not disabled in your additional Regions.
+Make sure that STS is not disabled in your additional Regions.
 Ensure no SCPs are preventing STS actions in your additional Regions.
 
 ## Use a destination in your relay state URL

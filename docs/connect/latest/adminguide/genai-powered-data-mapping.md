@@ -45,7 +45,7 @@ The system works in four phases. In the first phase, Customer Profiles fetches s
 ## Generative AI powered data mapping troubleshooting
 <a name="genai-powered-data-mapping-troubleshooting"></a>
 
-The following sections display the possible error messages that you may encounter. It also provides the cause and resolution for each issue.
+The following sections display the possible error messages that you might encounter. It also provides the cause and resolution for each issue.
 
 ### Error: Could not parse object string into JSON
 <a name="genai-powered-data-mapping-parse-object-error"></a>

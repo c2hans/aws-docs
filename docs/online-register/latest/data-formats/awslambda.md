@@ -34,6 +34,7 @@ AWS Lambda provides the following APIs for data retrieval.
 | <a name="lambda-GetNetworkConnector"></a>[GetNetworkConnector](https://docs.aws.amazon.com/lambda/latest/dg/API_GetNetworkConnector.html) | View details about an AWS Lambda network connector | Read |
 | <a name="lambda-GetPolicy"></a>[GetPolicy](https://docs.aws.amazon.com/lambda/latest/dg/API_GetPolicy.html) | View the resource-based policy for an AWS Lambda function, version, or alias | Read |
 | <a name="lambda-GetProvisionedConcurrencyConfig"></a>[GetProvisionedConcurrencyConfig](https://docs.aws.amazon.com/lambda/latest/dg/API_GetProvisionedConcurrencyConfig.html) | View the provisioned concurrency configuration for an AWS Lambda function's alias or version | Read |
+| <a name="lambda-GetResourcePolicy"></a>[GetResourcePolicy](https://docs.aws.amazon.com/lambda/latest/dg/API_GetResourcePolicy.html) | View a policy for an AWS Lambda resource | Read |
 | <a name="lambda-GetRuntimeManagementConfig"></a>[GetRuntimeManagementConfig](https://docs.aws.amazon.com/lambda/latest/dg/API_GetRuntimeManagementConfig.html) | View the runtime management configuration of an AWS Lambda function | Read |
 | <a name="lambda-ListAliases"></a>[ListAliases](https://docs.aws.amazon.com/lambda/latest/dg/API_ListAliases.html) | Retrieve a list of aliases for an AWS Lambda function | List |
 | <a name="lambda-ListCapacityProviders"></a>[ListCapacityProviders](https://docs.aws.amazon.com/lambda/latest/dg/API_ListCapacityProviders.html) | Retrieve a list of AWS Lambda capacity providers | List |

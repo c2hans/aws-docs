@@ -20,7 +20,7 @@ To update your Connect Customer Cases data in Connect Customer Customer Profiles
 
 ![The Cases page, the Domain details section showing the domain ID.](http://docs.aws.amazon.com/connect/latest/adminguide/images/stream-data-from-connect-cases-to-event-bridge-2.png)
 
-1.  Using the AWS CLI, create a Case event configuration to send Connect Customer Cases Events to your AWS account's default Event Bridge bus.
+1.  Using the AWS CLI, create a Case event configuration to send Connect Customer Cases Events to the default EventBridge bus for your AWS account.
 
 ```
 // set up Case Event Configuration including all system fields

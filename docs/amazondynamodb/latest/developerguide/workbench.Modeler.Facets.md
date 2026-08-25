@@ -8,13 +8,13 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/wor
  In NoSQL Workbench, *Facets* give you a way to view a subset of the data in a table, without having to see records that don't meet the constraints of the facet. Facets are considered a visual data modeling tool, and don't exist as a usable construct in DynamoDB, as they are purely an aid to modeling of access patterns.
 
 **Note**
- We recommend you use [Adding and validating access patterns](workbench.Modeler.AccessPatterns.md) to visualize how your application will access data in DynamoDB instead of Facets. Access patterns mirror your actual database interactions and help you build the correct data model for your use case, while facets are non-functional visualizations.
+ We recommend you use [Adding and validating access patterns](workbench.Modeler.AccessPatterns.md) to visualize how your application will access data in DynamoDB instead of Facets. Access patterns mirror your actual database interactions and help you build the correct data model for your use case, although facets are non-functional visualizations.
 
 **To create a facet**
 
-1. In the resource selector panel, choose a **Table** you wish to edit
+1. In the resource selector panel, choose a **Table** you want to edit
 
-1. In the top bar, click the **Edit** action icon.
+1. In the top bar, choose **Edit**.
 
 1. Scroll down to the **Facet filters** section.
 

@@ -7,6 +7,34 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-not
 
 This document contains all Amazon IVS Real-Time Streaming release notes, latest first, organized by date of release.
 
+## August 19, 2026
+<a name="aug19-26-connection-reuse-rt"></a>
+
+### Connection Reuse Across Stages
+<a name="aug19-26-connection-reuse-rt-desc"></a>
+
+You can now reuse a single connection across multiple stages, reducing time to video when users transition between stages. Use the new `RealTimeConnection` feature to establish the network connection once and share it across stage joins, eliminating repeated connection setup. This is useful for applications where users browse a feed of live streams and quickly move from one to the next. See [Reducing Time to Video When Switching Between Stages](real-time-streaming-optimization.md#real-time-streaming-stage-switching).
+
+## August 19, 2026
+<a name="aug19-26-broadcast-android-rt"></a>
+
+### Amazon IVS Broadcast SDK: Android 1.43.2 (Real-Time Streaming)
+<a name="aug19-26-broadcast-android-rt-1432"></a>
+
+| Platform | Downloads and Changes |
+| --- | --- |
+| [Android Broadcast SDK 1.43.2](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.43.2/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.43.2/android/)+  Fixed an issue that could cause audio to fail to play on some Pixel devices.  |
+
+#### Broadcast SDK Size: Android
+<a name="broadcast-1432-rt-sdk-size-android"></a>
+
+| Architecture | Compressed Size | Uncompressed Size |
+| --- | --- | --- |
+| arm64-v8a | 6.041 MB | 14.669 MB |
+| armeabi-v7a | 5.234 MB | 10.164 MB |
+| x86\_64 | 6.151 MB | 15.250 MB |
+| x86 | 6.427 MB | 15.875 MB |
+
 ## August 12, 2026
 <a name="aug12-26-broadcast-web-rt"></a>
 

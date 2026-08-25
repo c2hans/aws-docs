@@ -86,7 +86,7 @@ Resources:
       ClusterName: !Sub 'c-${AWS::StackName}'
       ClusterConfiguration:
         Image:
-          Os: alinux2
+          Os: alinux2023
         HeadNode:
           InstanceType: t2.medium
           Networking:

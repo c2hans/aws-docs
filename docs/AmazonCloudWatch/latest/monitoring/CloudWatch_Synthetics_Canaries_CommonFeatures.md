@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Synthetics_Canaries_CommonFeatures.html
 ---
 
-# Common canary features
+# Common features for CloudWatch Synthetics canaries
 <a name="CloudWatch_Synthetics_Canaries_CommonFeatures"></a>
 
 You can use the following features with all canary runtimes.

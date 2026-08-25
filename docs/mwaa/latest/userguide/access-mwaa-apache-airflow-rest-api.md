@@ -50,11 +50,6 @@ Use the following examples to make API calls to the Apache Airflow REST API and 
 
 To access the Apache Airflow REST API using AWS credentials, you must grant the `airflow:InvokeRestApi` permission in your IAM policy. In the following policy sample, specify the `Admin`, `Op`, `User`, `Viewer`, or `Public` role in `{airflow-role}` to customize the level of user access. For more information, refer to [Default Roles](https://airflow.apache.org/docs/apache-airflow/1.10.6/security.html?highlight=ldap#default-roles) in the *Apache Airflow reference guide*.
 
-------
-#### [ JSON ]
-
-****
-
 ```
 {
     "Version":"2012-10-17",
@@ -62,16 +57,14 @@ To access the Apache Airflow REST API using AWS credentials, you must grant the 
         {
             "Sid": "AllowMwaaRestApiAccess",
             "Effect": "Allow",
-            "Action": "airflow:InvokeRestApi",
+            "Action": ["airflow:InvokeRestApi","airflow:CreateWebLoginToken"],
             "Resource": [
-            "arn:aws:airflow:{{us-east-1}}:{{111122223333}}:role/{your-environment-name}/{airflow-role}"
+            "arn:aws:airflow:{{{your-region}}}:{{{your-account-id}}}:role/{your-environment-name}/{airflow-role}"
             ]
         }
     ]
 }
 ```
-
-------
 
 **Note**
 While configuring a private webserver, the `InvokeRestApi` action cannot be invoked from outside of a Virtual Private Cloud (VPC). You can use the `aws:SourceVpc` key to apply more granular access control for this operation. For more information, refer to [aws:SourceVpc](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourcevpc).
@@ -134,7 +127,7 @@ The session token expires after 12 hours.
 **Tip**
 Key changes in the following code samples from Apache Airflow v2 to v3 are:
 REST API path changed from `/api/v1` to `/api/v2`
-Login path changed from `/aws_maa/login` to `/pluginsv2/aws_mwaa/login`
+Login path changed from `/aws_mwaa/login` to `/pluginsv2/aws_mwaa/login`
 Response from login `response.cookies["_token"]` contains token information that you must use for subsequent API calls
 For a REST API call, you must pass `jwt_token` information in headers as:
 

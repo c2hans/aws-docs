@@ -143,4 +143,4 @@ Resume a chat when you want to continue an earlier conversation. Manager assista
 Resume a chat when your new question builds on an earlier one, for example when you drill into the same metric or time range. Start a new chat when your question is unrelated.
 
 **Important**
-Because a resumed chat carries the full earlier conversation, manager assistant may reference details from previous turns in its responses. To get a response that is based only on your new question, start a new chat.
+Because a resumed chat carries the full earlier conversation, manager assistant might reference details from previous turns in its responses. To get a response that is based only on your new question, start a new chat.

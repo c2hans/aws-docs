@@ -108,7 +108,7 @@ Replace {{inputs highlighted in red}}, such as {{keypair}}, with your own values
          ClusterName: !Sub 'c-${AWS::StackName}'
          ClusterConfiguration:
            Image:
-             Os: alinux2
+             Os: alinux2023
            HeadNode:
              InstanceType: t2.medium
              Networking:

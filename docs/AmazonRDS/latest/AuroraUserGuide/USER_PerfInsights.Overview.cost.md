@@ -2,18 +2,18 @@
 source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_PerfInsights.Overview.cost.html
 ---
 
-# Pricing and data retention for Performance Insights
+# Pricing and data retention for Database Insights
 <a name="USER_PerfInsights.Overview.cost"></a>
 
-By default, Performance Insights includes 7 days of performance data history and 1 million API requests per month. You can also purchase longer retention periods. For complete pricing information, see [Performance Insights Pricing](https://aws.amazon.com/rds/performance-insights/pricing/).
+By default, Database Insights includes 7 days of performance data history and 1 million API requests per month. You can also purchase longer retention periods. For complete pricing information, see [Database Insights Pricing](https://aws.amazon.com/cloudwatch/pricing/).
 
-In the RDS console, you can choose any of the following retention periods for your Performance Insights data:
+In the RDS console, you can choose any of the following retention periods for your Database Insights data:
 + **Default (7 days)**
 + **{{n}} months**, where **{{n}}** is a number from 1–24
 
-![The retention period options for Performance Insights data.](http://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/images/pi-retention-periods.png)
+![The retention period options for Database Insights data.](http://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/images/pi-retention-periods.png)
 
-To learn how to set a retention period using the AWS CLI, see [Turning Performance Insights on and off for Aurora](USER_PerfInsights.Enabling.md).
+To learn how to set a retention period using the AWS CLI, see [Enabling and disabling detailed per-query and database counter metrics](USER_PerfInsights.Enabling.md).
 
 **Note**
-Stopping a DB cluster with Performance Insights enabled doesn't affect data retention. While a DB cluster is stopped, Performance Insights won't collect any data.
+Stopping a DB cluster with Database Insights enabled doesn't affect data retention. While a DB cluster is stopped, Database Insights won't collect any data.

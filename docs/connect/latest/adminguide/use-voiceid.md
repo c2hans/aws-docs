@@ -54,7 +54,7 @@ The following image shows what appears in your CCP when a caller has opted out o
 ## Authentication status = Not authenticated
 <a name="use-voiceid-mismatch"></a>
 
-When an enrolled caller calls your contact center, Voice ID may return a result of **Not authenticated**. This means Voice ID was unable to authenticate a caller's speech. The authentication score for the caller is lower than the configured threshold.
+When an enrolled caller calls your contact center, Voice ID might return a result of **Not authenticated**. This means Voice ID was unable to authenticate a caller's speech. The authentication score for the caller is lower than the configured threshold.
 
 ![Caller not authenticated.](http://docs.aws.amazon.com/connect/latest/adminguide/images/voiceid-ccp-not-authenticated.png)
 
@@ -63,6 +63,6 @@ The previous images show that the **Fraud risk** can be **High** or **Low**, ind
 ## Authentication status: Inconclusive
 <a name="use-voiceid-inconclusive"></a>
 
-When an enrolled customer calls your contact center, Voice ID may return a result of **Inconclusive**: Voice ID was unable to analyze a caller's speech for authentication. This is usually because Voice ID did not get the required 10 seconds to provide a result for verification.
+When an enrolled customer calls your contact center, Voice ID might return a result of **Inconclusive**: Voice ID was unable to analyze a caller's speech for authentication. This is usually because Voice ID did not get the required 10 seconds to provide a result for verification.
 
 ![Authentication status Inconclusive.](http://docs.aws.amazon.com/connect/latest/adminguide/images/voiceid-ccp-inconclusive.png)

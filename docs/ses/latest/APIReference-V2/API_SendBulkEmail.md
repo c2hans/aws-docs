@@ -41,6 +41,12 @@ Content-type: application/json
          ]
       }
    ],
+   "ConfigurationOverrides": {
+      "Tracking": {
+         "ClickTrackingEnabled": "{{string}}",
+         "OpenTrackingEnabled": "{{string}}"
+      }
+   },
    "ConfigurationSetName": "{{string}}",
    "DefaultContent": {
       "Template": {
@@ -101,6 +107,11 @@ The request accepts the following data in JSON format.
 The list of bulk email entry objects.
 Type: Array of [BulkEmailEntry](API_BulkEmailEntry.md) objects
 Required: Yes
+
+ ** [ConfigurationOverrides](#API_SendBulkEmail_RequestSyntax) **   <a name="SES-SendBulkEmail-request-ConfigurationOverrides"></a>
+An object that overrides, for the messages in this request only, settings that would otherwise apply to them. The overrides apply to every message in the request. Each setting that you don't override keeps the value that already applies.
+Type: [ConfigurationOverrides](API_ConfigurationOverrides.md) object
+Required: No
 
  ** [ConfigurationSetName](#API_SendBulkEmail_RequestSyntax) **   <a name="SES-SendBulkEmail-request-ConfigurationSetName"></a>
 The name of the configuration set to use when sending the email.

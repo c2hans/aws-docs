@@ -22,7 +22,7 @@ If you have view-only permissions, you will not see this action.
 
 1. Build your list of overrides by choosing between:
 
-   1. **Add recurring event** — Use for holidays and other dates that follow a repeating pattern (e.g. early closure the last Friday of every month).
+   1. **Add recurring event** — Use for holidays and other dates that follow a repeating pattern (for example, early closure the last Friday of every month).
 
    1. **Create temporary hours** — Use for dates with non-standard hours that are not recurring and where the configured hours must supersede all other settings for that date/range.
 
@@ -142,7 +142,7 @@ The list of overrides in a linked list cannot be modified in any way from a chil
 If only a subset of users with permission to edit hours of operations should have access to a parent record, you can set up granular access control. For more information, see [Apply tag-based access control in Connect Customer](tag-based-access-control.md).
 
 **Dates with competing overrides**
-There may be times where the overrides on a given hours of operation resource conflict with each other. Connect prioritizes the various types as follows:
+There might be times where the overrides on a given hours of operation resource conflict with each other. Connect prioritizes the various types as follows:
 
 1. Closed recurring overrides are considered first.
 

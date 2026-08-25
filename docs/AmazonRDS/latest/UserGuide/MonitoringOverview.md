@@ -19,7 +19,7 @@ We recommend that you automate monitoring tasks as much as possible.
 **Topics**
 + [Amazon RDS instance status and recommendations](#MonitoringOverview.tools.automated.rds)
 + [Amazon CloudWatch metrics for Amazon RDS](#MonitoringOverview.tools.automated.integrated)
-+ [Amazon RDS Performance Insights and operating-system monitoring](#MonitoringOverview.tools.automated.metrics.rds)
++ [Amazon RDS Enhanced Monitoring](#MonitoringOverview.tools.automated.metrics.rds)
 + [Integrated services](#MonitoringOverview.tools.automated.integrated.events-logs-streams)
 
 ### Amazon RDS instance status and recommendations
@@ -36,13 +36,12 @@ Amazon RDS integrates with Amazon CloudWatch for additional monitoring capabilit
 + **Amazon CloudWatch** – This service monitors your AWS resources and the applications you run on AWS in real time. You can use the following Amazon CloudWatch features with Amazon RDS:
   + **Amazon CloudWatch metrics** – Amazon RDS automatically sends metrics to CloudWatch every minute for each active database. You don't get additional charges for Amazon RDS metrics in CloudWatch. For more information, see [Monitoring Amazon RDS metrics with Amazon CloudWatch](monitoring-cloudwatch.md).
   + **Amazon CloudWatch alarms** – You can watch a single Amazon RDS metric over a specific time period. You can then perform one or more actions based on the value of the metric relative to a threshold that you set. For more information, see [Monitoring Amazon RDS metrics with Amazon CloudWatch](monitoring-cloudwatch.md).
+  + **Amazon CloudWatch Database Insights** – Assess the load on your database, and determine when and where to take action. For more information, see [Monitoring Amazon RDS databases with CloudWatch Database Insights](USER_DatabaseInsights.md).
 
-### Amazon RDS Performance Insights and operating-system monitoring
+### Amazon RDS Enhanced Monitoring
 <a name="MonitoringOverview.tools.automated.metrics.rds"></a>
 
-You can use the following automated tools to monitor Amazon RDS performance:
-+ **Amazon RDS Performance Insights** – Assess the load on your database, and determine when and where to take action. For more information, see [Monitoring DB load with Performance Insights on Amazon RDS](USER_PerfInsights.md).
-+ **Amazon RDS Enhanced Monitoring** – Look at metrics in real time for the operating system. For more information, see [Monitoring OS metrics with Enhanced Monitoring](USER_Monitoring.OS.md).
+Amazon RDS Enhanced Monitoring provides metrics in real time for the operating system. For more information, see [Monitoring OS metrics with Enhanced Monitoring](USER_Monitoring.OS.md).
 
 ### Integrated services
 <a name="MonitoringOverview.tools.automated.integrated.events-logs-streams"></a>

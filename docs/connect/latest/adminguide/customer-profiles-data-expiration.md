@@ -9,12 +9,12 @@ If a profile has not been updated within a specified amount of time, it will exp
 
 The time for Customer Profiles Data expiry can be broken down into two different categories:
 
-## Profiles created via CreateProfile
+## Profiles created through CreateProfile
 <a name="profiles-created-via-createprofile"></a>
 
 Profiles created by using the `CreateProfile` API will expire based on the timestamp assigned by **DefaultExpirationDays** on a Customer Profiles Domain. If no Expiration has been configured it will default to 365 days.
 
-## Profiles created or updated via PutProfileObject
+## Profiles created or updated through PutProfileObject
 <a name="profiles-created-via-putprofileobject"></a>
 
 Profiles created or updated by using `PutProfileObject` will always respect the **ExpirationDays** defined on the object type associated to them. If no Expiration is defined on the object type, the Customer Profiles domain expiration date will be used. Finally, if neither are provided, the profile or profile object will expire to the default 365 days.

@@ -33,7 +33,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/glue-streaming-execution-
 ## Real-time mode (AWS Glue 6.0\+)
 <a name="glue-streaming-concepts-real-time-mode"></a>
 
- Real-time mode is a new execution model for Spark Structured Streaming available starting in AWS Glue 6.0 that reduces end-to-end latency to milliseconds. This mode uses `Trigger.RealTime` — tasks run continuously within a batch window, processing records as they arrive rather than waiting for data to accumulate. Real-time mode applies only to Spark Structured Streaming and does not apply to legacy Spark Streaming (DStreams).
+ Real-time mode is a new execution model for Spark Structured Streaming available starting in AWS Glue 6.0 that reduces end-to-end latency to sub-second. Real-time mode can also help achieve millisecond-level latencies for eligible workloads. Tasks run continuously, processing records as they arrive rather than waiting for data to accumulate. Real-time mode applies only to Spark Structured Streaming and does not apply to legacy Spark Streaming (DStreams).
 
  Real-time mode requires explicit opt-in through the `--enable-real-time-mode` job argument. This mode does not use `forEachBatch`. Instead, you use `writeStream` with `Trigger.RealTime` directly.
 
@@ -56,7 +56,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/glue-streaming-execution-
 
 | Feature | Micro-batch mode | Real-time mode |
 | --- | --- | --- |
-| Latency | Seconds to minutes | Milliseconds |
+| Latency | Seconds to minutes | Sub-second |
 | Sources | Kafka, Kinesis | Kafka only |
 | Languages | Python, Scala | Scala only |
 | Operations | Stateful and stateless | Stateless only |

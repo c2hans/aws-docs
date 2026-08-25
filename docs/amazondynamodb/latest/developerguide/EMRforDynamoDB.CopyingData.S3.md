@@ -24,7 +24,7 @@ If you worked through [Tutorial: Working with Amazon DynamoDB and Apache Hive](E
    where {{accountID}} is your AWS account ID and region is the AWS region for the bucket.
 
 **Note**
-For these examples, we will use a subpath within the bucket, as in this example:
+These examples use a subpath within the bucket, as in this example:
  `s3://aws-logs-123456789012-us-west-2/hive-test`
 
 The following procedures are written with the assumption you followed the steps in the tutorial and have an external table in DynamoDB named *ddb\_features*.
@@ -86,7 +86,7 @@ If you want to specify your own field separator character, you can create an ext
 
 **Example From DynamoDB to Amazon S3**
 
-1. Create a Hive external table that maps to Amazon S3. When you do this, ensure that the data types are consistent with those of the DynamoDB external table.
+1. Create a Hive external table that maps to Amazon S3. When you do this, make sure that the data types are consistent with those of the DynamoDB external table.
 
    ```
    CREATE EXTERNAL TABLE s3_features_csv

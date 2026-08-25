@@ -32,6 +32,22 @@ The API schema configuration that defines the structure of the passthrough targe
 Type: [HttpApiSchemaConfiguration](API_HttpApiSchemaConfiguration.md) object
 Required: No
 
+ ** staticQueryParameterConflictResolution **   <a name="bedrockagentcorecontrol-Type-PassthroughTargetConfiguration-staticQueryParameterConflictResolution"></a>
+Controls precedence when a client request supplies a query parameter whose name matches a configured static query parameter. If not set, defaults to `CLIENT_OVERRIDE`:
++  `CLIENT_OVERRIDE` - The client-supplied value overrides the configured static value for that parameter name.
++  `STATIC_OVERRIDE` - The configured static value is retained, overriding the client-supplied value for that parameter name.
+Type: String
+Valid Values: `CLIENT_OVERRIDE | STATIC_OVERRIDE`
+Required: No
+
+ ** staticQueryParameters **   <a name="bedrockagentcorecontrol-Type-PassthroughTargetConfiguration-staticQueryParameters"></a>
+A map of static query parameters that the gateway always appends to the outbound URL when forwarding requests to the target. The total outbound URL length, which includes the endpoint and the percent-encoded query parameters, is enforced by the service.
+Type: String to string map
+Key Length Constraints: Minimum length of 1. Maximum length of 128.
+Key Pattern: `[a-zA-Z0-9_.-]+`
+Value Pattern: `[^\x00-\x1F\x7F]*`
+Required: No
+
  ** stickinessConfiguration **   <a name="bedrockagentcorecontrol-Type-PassthroughTargetConfiguration-stickinessConfiguration"></a>
 The session stickiness configuration for the passthrough target. This configuration routes requests within the same session to the same target.
 Type: [StickinessConfiguration](API_StickinessConfiguration.md) object

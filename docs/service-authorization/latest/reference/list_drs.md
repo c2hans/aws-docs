@@ -291,12 +291,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [drs:StartRecovery](#list_drs-action-StartRecovery)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [drs:TagResource](#list_drs-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
-- **   StartRecoveryPlanExecution  **
-  - **IAM action:**  [drs:StartRecoveryPlanExecution](#list_drs-action-StartRecoveryPlanExecution)
-  - **Condition key:**
-  - **Possible value(s):**
-  - **Access level:** Write
-
 - **   StartReplication  **
   - **IAM action:**  [drs:StartReplication](#list_drs-action-StartReplication)
   - **Condition key:**
@@ -369,12 +363,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   UpdateRecoveryPlan  **
   - **IAM action:**  [drs:UpdateRecoveryPlan](#list_drs-action-UpdateRecoveryPlan)
-  - **Condition key:**
-  - **Possible value(s):**
-  - **Access level:** Write
-
-- **   UpdateRecoveryPlanExecutionStep  **
-  - **IAM action:**  [drs:UpdateRecoveryPlanExecutionStep](#list_drs-action-UpdateRecoveryPlanExecutionStep)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write

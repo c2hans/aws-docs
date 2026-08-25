@@ -31,8 +31,8 @@ Configuration options:
 + **Action** – Select "Test commands"
 + **Test control type** – Choose "Log data"
 + **Log data** – Define one or more key-value pairs:
-  + **Log identifier** – A descriptive name for the logged value (e.g., "Current Queue Name")
-  + **Log value** – JSONPath to the attribute you want to log (e.g., $.Queue.Name) along with any descriptive text
+  + **Log identifier** – A descriptive name for the logged value (for example, "Current Queue Name")
+  + **Log value** – JSONPath to the attribute you want to log (for example, $.Queue.Name) along with any descriptive text
 
 Use cases:
 + Debugging test failures by seeing intermediate values

@@ -96,13 +96,15 @@ This parameter is not supported for jobs that run on Fargate resources.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `NetworkConfiguration`  <a name="cfn-batch-jobdefinition-ecstaskproperties-networkconfiguration"></a>
-The network configuration for jobs that are running on Fargate resources. Jobs that are running on Amazon EC2 resources must not specify this parameter.
+The network configuration for jobs that are running on Fargate resources. Jobs that are running on Amazon EC2 resources or Amazon ECS Managed Instances must not specify this parameter.
 *Required*: No
 *Type*: [NetworkConfiguration](aws-properties-batch-jobdefinition-networkconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `NetworkMode`  <a name="cfn-batch-jobdefinition-ecstaskproperties-networkmode"></a>
-Property description not available.
+The network mode to use for the task. Valid values: `host`. When not specified, the default is `host`.
+With `host` mode, the container shares the host instance's network stack directly. When running tasks that use the `host` network mode, do not run containers using the root user (UID 0). Running as root grants unrestricted access to host resources and increases the attack surface.
+This parameter only applies to jobs running on Amazon ECS Managed Instances (`MANAGED_INSTANCES` platform capability). It cannot be specified for Fargate or Amazon EC2 platform job definitions.
 *Required*: No
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -123,7 +125,8 @@ The Fargate platform version where the jobs are running. A platform version is s
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `RuntimePlatform`  <a name="cfn-batch-jobdefinition-ecstaskproperties-runtimeplatform"></a>
-An object that represents the compute environment architecture for AWS Batch jobs on Fargate.
+An object that represents the compute environment architecture for AWS Batch jobs on Fargate or Amazon ECS Managed Instances. Use this to specify the operating system family (`operatingSystemFamily`) and CPU architecture (`cpuArchitecture`).
+For Amazon ECS Managed Instances, the valid value for `operatingSystemFamily` is `LINUX` (default). The valid values for `cpuArchitecture` are `X86_64` and `ARM64`.
 *Required*: No
 *Type*: [RuntimePlatform](aws-properties-batch-jobdefinition-runtimeplatform.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

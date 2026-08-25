@@ -95,6 +95,9 @@ Adds an AssumeRolePolicyDocument for the default created `Role` for this functio
  `AutoPublishAlias`   <a name="sam-function-autopublishalias"></a>
 The name of the Lambda alias. For more information about Lambda aliases, see [Lambda function aliases](https://docs.aws.amazon.com/lambda/latest/dg/configuration-aliases.html) in the *AWS Lambda Developer Guide*. For examples that use this property, see [Deploying serverless applications gradually with AWS SAM](automating-updates-to-serverless-apps.md).
 AWS SAM generates [AWS::Lambda::Version](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-version.html) and [AWS::Lambda::Alias](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-alias.html) resources when this property is set. For information about this scenario, see [AutoPublishAlias property is specified](sam-specification-generated-resources-function.md#sam-specification-generated-resources-function-autopublishalias). For general information about generated CloudFormation resources, see [Generated CloudFormation resources for AWS SAM](sam-specification-generated-resources.md).
+**Version publishing and intrinsic functions**
+AWS SAM determines whether to publish a new version by comparing property values in the template between deployments. For values supplied through intrinsic functions, AWS SAM compares the unresolved reference, not the resolved value. One example is an environment variable set to `!Ref` of a template parameter.
+If a deployment changes only the value of a stack parameter, the template itself is unchanged. In this case, AWS SAM does not publish a new version or update the alias. AWS SAM applies the change to the function's `$LATEST` version only. For workarounds, see example using [AWS::LanguageExtensions](#sam-function-autopublishaliasallproperties).
 *Type*: String
 *Required*: No
 *CloudFormation compatibility*: This property is unique to AWS SAM and doesn't have an CloudFormation equivalent.
@@ -103,6 +106,17 @@ AWS SAM generates [AWS::Lambda::Version](https://docs.aws.amazon.com/AWSCloudFor
 Specifies when a new [`AWS::Lambda::Version`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-version.html) is created. When `true`, a new Lambda version is created when any property in the Lambda function is modified. When `false`, a new Lambda version is created only when any of the following properties are modified:
 + `Environment`, `MemorySize`, or `SnapStart`.
 + Any change that results in an update to the `Code` property, such as `CodeDict`, `ImageUri`, or `InlineCode`.
+**Parameter changes and version publishing**
+AWS SAM publishes a new version only when a property's value changes in the template. If a property value comes from an intrinsic function, AWS SAM sees the unresolved reference. One example is an environment variable defined as `!Ref` of a template parameter. Deployments that change only the parameter's value do not publish a new version, even with `AutoPublishAliasAllProperties: true`. AWS SAM applies the change to `$LATEST` only.
+Use one of the following workarounds to force AWS SAM to publish a new version when only a parameter value changes:
++ **Standard AWS SAM and CloudFormation deployments**: add the [AWS::LanguageExtensions transform](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/transform-aws-languageextensions.html) before `AWS::Serverless-2016-10-31` in your template's `Transform` section. CloudFormation resolves references to their actual values before AWS SAM computes the version hash. A change to the parameter's value then publishes a new version and updates the alias:
+
+  ```
+  Transform:
+    - AWS::LanguageExtensions
+    - AWS::Serverless-2016-10-31
+  ```
++ **AWS Serverless Application Repository applications**: the AWS Serverless Application Repository supports only the `AWS::Serverless-2016-10-31` transform and rejects templates that declare `AWS::LanguageExtensions`. For applications that you publish through the AWS Serverless Application Repository, supply the value directly as a literal in the template instead of referencing a parameter. This makes the change visible when AWS SAM computes the version hash.
 This property requires `AutoPublishAlias` to be defined.
 If `AutoPublishCodeSha256` is also specified, its behavior takes precedence over `AutoPublishAliasAllProperties: true`.
 *Type*: Boolean

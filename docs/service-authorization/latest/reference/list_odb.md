@@ -63,10 +63,8 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [odb:TagResource](#list_odb-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
 - **   CreateExascaleDbStorageVault  **
-  - **IAM action:**  [odb:CreateExascaleDbStorageVault](#list_odb-action-CreateExascaleDbStorageVault)
-  - **Condition key:**
-  - **Possible value(s):**
-  - **Access level:** Write
+  - **IAM action:**  [odb:CreateExascaleDbStorageVault](#list_odb-action-CreateExascaleDbStorageVault)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [odb:TagResource](#list_odb-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
 - **   CreateOdbNetwork  **
   - **IAM action:**  [odb:CreateOdbNetwork](#list_odb-action-CreateOdbNetwork)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write

@@ -10,7 +10,7 @@ The first step in setting up your Connect Customer contact center is to create a
 ## Things to know before you begin
 <a name="get-started-prerequisites"></a>
 + When you sign up for Amazon Web Services (AWS), your AWS account is automatically signed up for all services in AWS, including Connect Customer. You are charged only for the services that you use. To create an AWS account, see [How/ do I create and activate an AWS account?](https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/)
-+ To allow a user to create an instance, ensure that they have the permissions granted by the **AmazonConnect\_FullAccess** policy.
++ To allow a user to create an instance, make sure that they have the permissions granted by the **AmazonConnect\_FullAccess** policy.
 + For a list of the minimum IAM permissions required to create an instance, see [Required permissions for using custom IAM policies to manage access to the Connect Customer console](security-iam-amazon-connect-permissions.md).
 + When you create an instance, it is a [Connect Customer](enable-nextgeneration-amazonconnect.md) instance, which has an all-inclusive channel pricing model that covers all optimization features for usage on your platform.
 + Connect Customer is not available to customers in India using Amazon Web Services through Amazon Web Services India Private Limited (AWS India). You will receive an error message if you try to create an instance in Connect Customer.

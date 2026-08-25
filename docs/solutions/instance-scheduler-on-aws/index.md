@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com//solutions/instance-scheduler-on-aws//in
 
 Configure start and stop schedules for your Amazon EC2 and Amazon RDS instances to manage costs
 
-- **Version**: 3.2.7
+- **Version**: 3.2.8
 - **Released**: 8/2026
 - **Author**: AWS
 - **Est. deployment time**: 5 mins

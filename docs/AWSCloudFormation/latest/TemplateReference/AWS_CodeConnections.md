@@ -9,3 +9,4 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 **Resource types**
 + [AWS::CodeConnections::Connection](aws-resource-codeconnections-connection.md)
++ [AWS::CodeConnections::Host](aws-resource-codeconnections-host.md)

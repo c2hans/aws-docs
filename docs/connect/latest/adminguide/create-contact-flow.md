@@ -36,7 +36,7 @@ Chances are you're going to create tens or hundreds of flows. To help you stay o
 Connect Customer includes a set of specific flow types. **Each type has only those blocks for a specific scenario.** For example, the flow type for transferring to a queue contains only the appropriate flow blocks for that type of flow.
 
 **Important**
-When you create a flow, you need to choose the right type for your scenario. Otherwise, the blocks you need may not be available.
+When you create a flow, you need to choose the right type for your scenario. Otherwise, the blocks you need might not be available.
 You can't import flows of different types. This means if you start with one type and need to switch to another to get the right blocks, you have to start over.
 
 The following flow types are available.

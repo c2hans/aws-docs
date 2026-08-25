@@ -37,14 +37,14 @@ You add S3 buckets while configuring a capability for your Agent Space. The **S3
 **Note**
 You can add up to 10 S3 resources. S3 buckets are shared across capabilities, including code review, penetration testing, and threat modeling.
 
-## Requirements for code review sources
-<a name="_requirements_for_code_review_sources"></a>
+## Requirements for Continuum code review sources
+<a name="_requirements_for_continuum_code_review_sources"></a>
 
 For code review, S3 sources must be ZIP files stored in a connected bucket. Any ZIP file in a connected bucket can be selected as a source when a user creates a code review. Resources that you provide as context for penetration testing or threat modeling, such as API documents or design documents, do not need to be ZIP files.
 
 ## Next steps
 <a name="_next_steps"></a>
-+ Enable code review and select S3 sources (see [Enable code review](enable-code-review-scan.md)).
-+ Configure penetration testing for your Agent Space (see [Enable penetration test](enable-penetration-test.md)).
-+ Run a threat model on connected sources (see [Enable threat modeling](enable-threat-model.md)).
-+ Run a differential code scan from a diff stored in S3 (see [Run a differential code scan with S3](run-diff-scan-s3.md)).
++ Enable code review and select S3 sources (see [Enable Continuum code review](enable-code-review-scan.md)).
++ Configure penetration testing for your Agent Space (see [Enable Continuum penetration test](enable-penetration-test.md)).
++ Run a threat model on connected sources (see [Enable Continuum threat modeling](enable-threat-model.md)).
++ Run a differential code scan from a diff stored in S3 (see [Run a Continuum differential code scan with S3](run-diff-scan-s3.md)).

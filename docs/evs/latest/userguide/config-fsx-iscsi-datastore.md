@@ -2,10 +2,10 @@
 source_url: https://docs.aws.amazon.com/evs/latest/userguide/config-fsx-iscsi-datastore.html
 ---
 
-# Configure FSx for NetApp ONTAP FSx as an iSCSI datastore
+# Configure FSx for NetApp ONTAP as a block datastore
 <a name="config-fsx-iscsi-datastore"></a>
 
-The following procedure details the minimum steps required to configure FSx for NetApp ONTAP as an iSCSI datastore for Amazon EVS using the FSx console and VMware vSphere client interface that runs on Amazon EVS.
+FSx for ONTAP block storage can be presented to your ESX hosts over iSCSI or NVMe/TCP. Both protocols use the same FSx for ONTAP file system and result in a VMFS datastore. They differ in how you configure the ESXi storage adapter and provision the block device on ONTAP. NVMe/TCP requires a second-generation file system with 6 or fewer HA pairs. Choose one protocol and follow the corresponding sections.
 
 ## Prerequisites
 <a name="fsx-evs-prereqs-iscsi"></a>
@@ -13,40 +13,22 @@ The following procedure details the minimum steps required to configure FSx for 
 Before you use Amazon EVS with Amazon FSx for NetApp ONTAP, make sure that the following prerequisite tasks have been completed.
 + An Amazon EVS environment is deployed in your Virtual Private Cloud (VPC). For more information, see [Getting started with Amazon Elastic VMware Service](getting-started.md).
 + You have access to your vSphere client running on Amazon EVS.
-+ You or your storage admin must have necessary permissions to create and manage FSx for ONTAP file systems in your VPC. For more information, see [Identity and access management for Amazon FSx for NetApp ONTAP](https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/security-iam.html.).
++ You or your storage admin must have necessary permissions to create and manage FSx for ONTAP file systems in your VPC. For more information, see [Identity and access management for Amazon FSx for NetApp ONTAP](https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/security-iam.html).
 
 ## Create an FSx for NetApp ONTAP file system
 <a name="create-fsx-file-system-iscsi"></a>
 
-1. Go to the [Amazon FSx console](https://console.aws.amazon.com/fsx).
+Amazon EVS is a single Availability Zone service, but you can use either a Single-AZ or Multi-AZ FSx for ONTAP file system. If you choose a Multi-AZ file system, all VPC route tables used by your Amazon EVS host subnets must be associated with that file system. For the full file-system creation workflow, see [Creating FSx for ONTAP file systems](https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/creating-file-systems.html) in the *Amazon FSx for NetApp ONTAP User Guide*.
 
-1. Choose **Create file system**.
-
-1. Select **Amazon FSx for NetApp ONTAP**.
-
-1. Choose **Next**.
-
-1. Select **Standard create**.
-
-1. For **Deployment type**, select a Single-AZ deployment option.
-**Note**
-Amazon EVS only supports Single-AZ deployments at this time.
-
-1. For **SSD storage capacity**, specify 1024 GiB.
-
-1. For **Throughput capacity**, choose **Specify throughput capacity**. Choose at least 512 MB/s for Single-AZ 1 or at least 768 MB/s for Single-AZ 2.
+When you reach the networking and volume configuration pages of the FSx creation wizard, apply the following Amazon EVS-specific settings:
 
 1. Select the Amazon EVS VPC that has connectivity to your Amazon EVS VLAN subnets.
 
-1. Select a security group that permits all required FSx for ONTAP iSCSI traffic to the Amazon EVS host VMkernel management VLAN subnet.
+1. Select a security group that permits all required FSx for ONTAP iSCSI or NVMe/TCP traffic to the Amazon EVS host VMkernel management VLAN subnet.
 
 1. Select the Amazon EVS service access subnet that your file system will be deployed in. For more information, see [Service access subnet](concepts.md#concepts-service-access-subnet).
 
 1. Within **Default volume configuration**, set **Storage efficiency** to **Enabled**.
-
-1. Leave the remaining setting at their default values and choose **Next**.
-
-1. Review the file system attributes and choose **Create file system**.
 
 ## Configure a software iSCSI adapter in vSphere for ESX host storage
 <a name="config-iscsi-adapter"></a>
@@ -55,12 +37,19 @@ For each ESX host, you must configure the software iSCSI adapter so that your ES
 
 After you configure the software iSCSI adapter, copy the iSCSI Qualified Name (IQN) associated with an iSCSI adapter. These values will be used later.
 
+## Configure a software NVMe over TCP adapter in vSphere for ESX host storage
+<a name="config-nvme-tcp-adapter"></a>
+
+For each ESX host, you must configure the software NVMe over TCP adapter so that your ESX hosts can use it to access NVMe/TCP storage. For instructions to configure the software NVMe over TCP adapter for ESX hosts in vSphere, see [Configuring NVMe over TCP on ESXi](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/vsphere-storage/about-vmware-nvme-storage/configuring-nvme-over-tcp-on-esxi.html) in the VMware vSphere product documentation.
+
+After you configure the software NVMe over TCP adapter, copy the NVMe Qualified Name (NQN) associated with the ESXi host. You can retrieve the host NQN by running `esxcli nvme info get` on the ESXi host. These values will be used later.
+
 ## Create an iSCSI LUN
 <a name="config-iscsi-lun"></a>
 
 FSx for ONTAP allows you to create Logical Unit Numbers (LUNs) that are specifically intended for iSCSI access, providing shared block storage to your ESX hosts. You use the NetApp ONTAP CLI to create a LUN.
 
-Below is a sample command.
+The following is a sample command.
 
 **Note**
 It is recommended to configure the LUN size to 90% of the volume size.
@@ -81,7 +70,7 @@ Now that you have created an iSCSI LUN, the next step in the process is to creat
 
 1. Configure the initiator group.
 
-   Below is a sample command. For `--initiator`, use the iSCSI adapter IQNs that you copied in the previous step.
+   The following is a sample command. For `--initiator`, use the iSCSI adapter IQNs that you copied in the previous step.
 
    ```
    igroup create <svm_name> \
@@ -97,7 +86,7 @@ Now that you have created an iSCSI LUN, the next step in the process is to creat
    lun igroup show
    ```
 
-1. Map the LUN to the initiator group. Below is a sample command.
+1. Map the LUN to the initiator group. The following is a sample command.
 
    ```
    lun mapping create -vserver <svm_name> \
@@ -119,7 +108,48 @@ For more information, see [Provisioning iSCSI for Linux](https://docs.aws.amazon
 
 To allow the ESX hosts to see the iSCSI LUN, you must configure dynamic discovery for each host in the vSphere client interface. For the iSCSI server field, enter the (NFS) DNS name that you copied in the previous step. For more information, see [Configure Dynamic or Static Discovery for iSCSI and iSER on ESX Host](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/vsphere-storage-8-0/configuring-iscsi-and-iser-adapters-and-storage-with-esxi/configure-dynamic-or-static-discovery-for-iscsi-and-iser-on-esxi-host.html#GUID-4ED3304A-ED4F-4692-825F-83637E04D592-en) in the VMware vSphere product documentation.
 
-## Create a VMFS Datastore in VMware vSphere using the iSCSI LUN
+## Create an NVMe namespace
+<a name="config-nvme-namespace"></a>
+
+FSx for ONTAP allows you to create NVMe namespaces that are specifically intended for NVMe/TCP access, providing shared block storage to your ESX hosts. You use the NetApp ONTAP CLI to create a namespace, create a subsystem, map the namespace to the subsystem, and add your ESXi host NQNs.
+
+The following are sample commands.
+
+```
+vserver nvme namespace create -vserver <your_svm_name> \
+-path /vol/<your_volume_name>/<namespace_name> \
+-size <required_datastore_capacity> \
+-ostype vmware
+
+vserver nvme subsystem create -vserver <your_svm_name> \
+-subsystem <subsystem_name> \
+-ostype vmware
+
+vserver nvme subsystem map add -vserver <your_svm_name> \
+-subsystem <subsystem_name> \
+-path /vol/<your_volume_name>/<namespace_name>
+
+vserver nvme subsystem host add -vserver <your_svm_name> \
+-subsystem <subsystem_name> \
+-host-nqn <esxi_host_nqn>
+```
+
+Repeat the `subsystem host add` command for each ESXi host NQN that requires access to this namespace.
+
+To verify, run:
+
+```
+vserver nvme namespace show -vserver <your_svm_name>
+```
+
+For more information, see [Provisioning NVMe/TCP](https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/provision-nvme-linux.html) in the *FSx for ONTAP User Guide*.
+
+## Configure discovery of the NVMe namespace in vSphere
+<a name="config-nvme-discovery-vsphere"></a>
+
+To allow the ESX hosts to see the NVMe namespace, you must add a controller on the NVMe over TCP adapter for each host in the vSphere client interface. Use the SVM’s iSCSI LIF IP address as the target address when adding the controller; FSx for ONTAP uses the same SVM endpoints for both iSCSI and NVMe/TCP. You can find this IP address in the Amazon FSx console on the SVM’s **Endpoints** tab, or by running `network interface show -vserver <your_svm_name> -data-protocol nvme-tcp` in the ONTAP CLI. For more information, see [Configuring NVMe over TCP on ESXi](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/vsphere-storage/about-vmware-nvme-storage/configuring-nvme-over-tcp-on-esxi.html) in the VMware vSphere product documentation.
+
+## Create a VMFS datastore in VMware vSphere
 <a name="create-vmfs"></a>
 
-Virtual Machine File System (VMFS) datastores serve as repositories for VMware virtual machines. Follow the instruction in [Create a vSphere VMFS Datastore](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/vsphere-storage-8-0/working-with-datastores-in-vsphere-storage-environment/creating-vsphere-datastores.html#GUID-5AC611E0-7CEB-4604-A03C-F600B1BA2D23-en) to set up the VMFS datastore in VMware vSphere using the iSCSI LUN that you previously configured.
+Virtual Machine File System (VMFS) datastores serve as repositories for VMware virtual machines. Follow the instruction in [Create a vSphere VMFS Datastore](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/vsphere-storage-8-0/working-with-datastores-in-vsphere-storage-environment/creating-vsphere-datastores.html#GUID-5AC611E0-7CEB-4604-A03C-F600B1BA2D23-en) to set up the VMFS datastore in VMware vSphere. When prompted to select a device, choose the iSCSI LUN or NVMe namespace that you previously configured.

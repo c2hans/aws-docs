@@ -21,8 +21,8 @@ Each observation consists of an event to observe and actions to execute when tha
 + Event - Defines the expected event from the system to observe
 + Actions - Array of actions to execute when the event is observed
 + Usage - Defines how many times this observation should be matched
-  + Type: "EXACTLY"
-  + Times: Integer value for the count, when applicable
+  + Type: Specifies how many times the observation must match. Valid values are `Exactly`, `AtLeast`, `AtMost`, or `Always` (case-sensitive).
+  + Times: An integer value for the count. This field is required for all types except `Always`.
 + Transitions - Optional object defining flow control to next observations
   + NextObservations: Array of observation IDs to transition to
 
@@ -32,7 +32,7 @@ Each observation consists of an event to observe and actions to execute when tha
   "Metadata": { ... }, // Metadata to be used for data which is used for UI or any non-runtime impacting data as required.
   "Observations": [
     {
-      "Identifier": "Unique identifer",
+      "Identifier": "unique identifier",
       "Event": { ... },
       "Actions": [
             {
@@ -43,7 +43,7 @@ Each observation consists of an event to observe and actions to execute when tha
             },
             ...
         ],
-      "Usage": { "Type": "ANY" },
+      "Usage": { "Type": "Exactly", "Times": 1 },
       "Transitions" : {
         "NextObservations": ["string-id", "string-id", "string-id"]
       }

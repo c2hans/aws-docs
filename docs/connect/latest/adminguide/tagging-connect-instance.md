@@ -25,10 +25,10 @@ Instance Tagging provides the ability for you to tag Connect Customer instances 
 
 1. Enter a `Key` and `Value` pair and choose **Next**.
 
-1. Once you have made your desired configurations under the **Set telephony** and **Data storage** steps, review your configurations and choose **Create instance**.
+1. After you have made your desired configurations under the **Set telephony** and **Data storage** steps, review your configurations and choose **Create instance**.
 ![Create you instance after reviewing your desired configurations.](http://docs.aws.amazon.com/connect/latest/adminguide/images/tag-instance-at-creation-4.png)
 
-1. Once the instance has been created, navigate to the **Account overview** page of the instance and the tags that you added will appear in the **Tags** section.
+1. After the instance has been created, navigate to the **Account overview** page of the instance and the tags that you added will appear in the **Tags** section.
 ![The characters after the last /.](http://docs.aws.amazon.com/connect/latest/adminguide/images/tag-instance-at-creation-5.png)
 
 ## Tagging an existing Connect Customer instance

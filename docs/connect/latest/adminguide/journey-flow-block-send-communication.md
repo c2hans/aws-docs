@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/journey-flow-b
 <a name="journey-flow-block-send-communication"></a>
 
 **Important**
-Before using this block, ensure you completed [channel configuration](how-to-create-campaigns.md) including claimed phone numbers for agent assisted voice or automated voice, claim a phone number or originating identity in AWS End User Messaging SMS and then import the number into Amazon Connect for SMS or WhatsApp, and enabled email at Amazon Connect instance. For instructions, see [Set up SMS messaging](setup-sms-messaging.md), [Enable email campaigns](enable-email.md).
+Before using this block, make sure you completed [channel configuration](how-to-create-campaigns.md) including claimed phone numbers for agent assisted voice or automated voice, claim a phone number or originating identity in AWS End User Messaging SMS and then import the number into Amazon Connect for SMS or WhatsApp, and enabled email at Amazon Connect instance. For instructions, see [Set up SMS messaging](setup-sms-messaging.md), [Enable email campaigns](enable-email.md).
 
 ## Description
 <a name="journey-flow-block-send-communication-description"></a>
@@ -29,7 +29,7 @@ Use this block to send communications through channels such as voice, SMS, Whats
 | SMS | Yes |
 | WhatsApp | Yes |
 | Email | Yes |
-| Custom channel | Yes, via Custom action |
+| Custom channel | Yes, through Custom action |
 
 ## How to configure this block
 <a name="journey-flow-block-send-communication-configure"></a>

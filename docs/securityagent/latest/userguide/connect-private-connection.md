@@ -178,4 +178,4 @@ Follow this pattern:
 ## Next steps
 <a name="_next_steps"></a>
 +  [Connect AWS Security Agent to GitLab Self-Managed](connect-gitlab-self-managed.md) - Connect a private GitLab instance
-+  [Connect AWS Security Agent to GitHub Enterprise](connect-github-enterprise-server.md) - Connect a private GitHub Enterprise Server
++  [Connect AWS Security Agent to GitHub Enterprise](connect-github-enterprise.md) - Connect a private GitHub Enterprise instance

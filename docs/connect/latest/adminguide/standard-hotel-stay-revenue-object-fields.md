@@ -12,9 +12,9 @@ The following table lists all the fields in the Customer Profiles standard hotel
 | Standard hotelStayRevenue field | Type | Description |
 | --- | --- | --- |
 | StayRevenueId | String | The unique identifier of the standard hotel stay revenue. |
-| CurrencyCode | String | ISO code for the currency (e.g., USD) |
-| CurrencyName | String | Full name of the currency (e.g., US Dollar) |
-| CurrencySymbol | String | Symbol of the currency (e.g., $) |
+| CurrencyCode | String | ISO code for the currency (for example, USD) |
+| CurrencyName | String | Full name of the currency (for example, US Dollar) |
+| CurrencySymbol | String | Symbol of the currency (for example, $) |
 | ReservationId | String | Unique identifier for the hotel reservation |
 | GuestId | String | Unique identifier for the guest |
 | LastUpdatedOn | String | Timestamp of the last update to the stay record |
@@ -23,7 +23,7 @@ The following table lists all the fields in the Customer Profiles standard hotel
 | CreatedBy | String | Identifier of the user/system that created the stay record |
 | StartDate | String | Start date of the hotel stay |
 | HotelCode | String | Code identifying the specific hotel |
-| Type | String | Type of revenue (e.g., room rate, incidentals, taxes) |
+| Type | String | Type of revenue (for example, room rate, incidentals, taxes) |
 | Description | String | Description of the revenue item |
 | Amount | String | Amount of the revenue item |
 | ProcessedDate | String | Date the revenue was processed |

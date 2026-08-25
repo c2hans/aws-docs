@@ -160,6 +160,9 @@ For a list of actions policies for the AWS Cost Management console, see [AWS Cos
 | customer-verification:GetCustomerVerificationDetails | (For customers with an India billing or contact address only)<br />Grants permission to retrieve customer verification data. |
 | customer-verification:CreateCustomerVerificationDetails | (For customers with an India billing or contact address only)<br />Grants permission to create customer verification data. |
 | customer-verification:UpdateCustomerVerificationDetails | (For customers with an India billing or contact address only)<br />Grants permission to update customer verification data. |
+| customer-verification:GetInheritanceConfig | (For customers with an India billing or contact address only)<br />Grants permission to retrieve the customer verification inheritance configuration for an account. |
+| customer-verification:PutInheritanceConfig | (For customers with an India billing or contact address only)<br />Grants permission to enable or disable customer verification inheritance for an account. |
+| customer-verification:CreateUploadUrls | (For customers with an India billing or contact address only)<br />Grants permission to generate URLs for uploading customer verification documents. |
 | mapcredit:ListAssociatedPrograms | Grants permission to view the associated Migration Acceleration Program agreements and dashboard for the payer account. |
 | mapcredit:ListQuarterSpend | Grants permission to view the Migration Acceleration Program eligible spend for the payer account. |
 | mapcredit:ListQuarterCredits | Grants permission to view the Migration Acceleration Program credits for the payer account. |

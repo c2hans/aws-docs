@@ -21,4 +21,4 @@ In tasks with multiple containers running as different users, Amazon ECS automat
 + Verify that all containers requiring write access have the `user` parameter properly configured.
 + Check that the volume is mounted in all containers that need access to it.
 
-For more information about configuring users in container definitions, see [ Amazon ECS task definition parameters for Fargate ](https://docs.aws.amazon.com/./task_definition_parameters.html).
+For more information about configuring users in container definitions, see [ Amazon ECS task definition parameters for Fargate ](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definition_parameters.html).

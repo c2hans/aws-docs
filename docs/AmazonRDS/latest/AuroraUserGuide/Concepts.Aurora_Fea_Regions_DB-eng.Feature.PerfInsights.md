@@ -2,35 +2,29 @@
 source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Concepts.Aurora_Fea_Regions_DB-eng.Feature.PerfInsights.html
 ---
 
-# Supported Regions and Aurora DB engines for Performance Insights
+# Supported Regions and Aurora DB engines for Database Insights
 <a name="Concepts.Aurora_Fea_Regions_DB-eng.Feature.PerfInsights"></a>
 
-**Important**
- AWS has announced the end-of-life date for Performance Insights: July 31, 2026. After this date, Amazon RDS will no longer support the Performance Insights console experience. The Performance Insights console will redirect to CloudWatch Database Insights. Flexible retention periods (1–24 months) and their associated pricing are preserved in Standard mode of Database Insights at the same cost as Performance Insights today. The Performance Insights API will continue to exist with no changes. Costs for the Performance Insights API will appear in your AWS bill with the cost of CloudWatch Database Insights.
- We recommend that you review your DB clusters using Performance Insights and choose the Database Insights mode that best fits your needs before July 31, 2026. For core monitoring with flexible retention, Standard mode of Database Insights preserves your existing experience and pricing. For advanced capabilities including fleet-level monitoring, lock diagnostics, and execution plan capture, see [Turning on the Advanced mode of Database Insights for Amazon Aurora](USER_DatabaseInsights.TurningOnAdvanced.md).
- If you take no action, DB clusters using Performance Insights will default to using the Standard mode of Database Insights with your existing retention period configured. Your CloudFormation templates, Terraform configurations, and deployment scripts will continue to work exactly as they do today – all Performance Insights API parameters, including retention period settings, are fully preserved. After July 31, 2026, only the Advanced mode of Database Insights will support execution plans and on-demand analysis.
- With CloudWatch Database Insights, you can monitor database load for your fleet of databases and analyze and troubleshoot performance at scale. For more information about Database Insights, see [Monitoring Amazon Aurora databases with CloudWatch Database Insights](USER_DatabaseInsights.md) or [Register for upcoming workshops](https://aws-experience.com/amer/smb/events/series/Cloud-Operations-Enablement) to learn more. For current pricing information, see [Amazon CloudWatch Pricing](https://aws.amazon.com/cloudwatch/pricing/).
+Database Insights expands on existing Amazon RDS monitoring features to illustrate and help you analyze your database performance. With the Database Insights dashboard, you can visualize the database load on your Amazon RDS DB instance load and filter the load by waits, SQL statements, hosts, or users. For more information, see [Overview of Database Insights on Amazon Aurora](USER_PerfInsights.Overview.md).
 
-Performance Insights expands on existing Amazon RDS monitoring features to illustrate and help you analyze your database performance. With the Performance Insights dashboard, you can visualize the database load on your Amazon RDS DB instance load and filter the load by waits, SQL statements, hosts, or users. For more information, see [Overview of Performance Insights on Amazon Aurora](USER_PerfInsights.Overview.md).
-
-For the region, DB engine, and instance class support information for Performance Insights features, see [ Amazon Aurora DB engine, Region, and instance class support for Performance Insights features](USER_PerfInsights.Overview.Engines.md#USER_PerfInsights.Overview.PIfeatureEngnRegSupport).
+For the region, DB engine, and instance class support information for Database Insights features, see [Database Insights](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_DatabaseInsights.html).
 
 **Topics**
-+ [Performance Insights with Aurora MySQL](#Concepts.Aurora_Fea_Regions_DB-eng.Feature.PerfInsights.amy)
-+ [Performance Insights with Aurora PostgreSQL](#Concepts.Aurora_Fea_Regions_DB-eng.Feature.PerfInsights.apg)
-+ [Performance Insights with Aurora Serverless](#Concepts.Aurora_Fea_Regions_DB-eng.Feature.PerfInsights.serverless)
++ [Database Insights with Aurora MySQL](#Concepts.Aurora_Fea_Regions_DB-eng.Feature.PerfInsights.amy)
++ [Database Insights with Aurora PostgreSQL](#Concepts.Aurora_Fea_Regions_DB-eng.Feature.PerfInsights.apg)
++ [Database Insights with Aurora Serverless](#Concepts.Aurora_Fea_Regions_DB-eng.Feature.PerfInsights.serverless)
 
-## Performance Insights with Aurora MySQL
+## Database Insights with Aurora MySQL
 <a name="Concepts.Aurora_Fea_Regions_DB-eng.Feature.PerfInsights.amy"></a>
 
 **Note**
-Engine version support is different for Performance Insights with Aurora MySQL if you have parallel query turned on. For more information on parallel query, see [Parallel query for Amazon Aurora MySQL](aurora-mysql-parallel-query.md).
+Engine version support is different for Database Insights with Aurora MySQL if you have parallel query turned on. For more information on parallel query, see [Parallel query for Amazon Aurora MySQL](aurora-mysql-parallel-query.md).
 
 **Topics**
-+ [Performance Insights with Aurora MySQL and parallel query turned off](#Feature.PerfInsights.regions.amy.pq)
-+ [Performance Insights with Aurora MySQL and parallel query turned on](#Feature.PerfInsights.regions.amy.pqoff)
++ [Database Insights with Aurora MySQL and parallel query turned off](#Feature.PerfInsights.regions.amy.pq)
++ [Database Insights with Aurora MySQL and parallel query turned on](#Feature.PerfInsights.regions.amy.pqoff)
 
-### Performance Insights with Aurora MySQL and parallel query turned off
+### Database Insights with Aurora MySQL and parallel query turned off
 <a name="Feature.PerfInsights.regions.amy.pq"></a>
 
 The following Regions and engine versions are available for Performance Insights with Aurora MySQL and parallel query turned off.
@@ -76,7 +70,7 @@ The following Regions and engine versions are available for Performance Insights
 | AWS GovCloud (US-East) | All versions | All versions | All versions |
 | AWS GovCloud (US-West) | All versions | All versions | All versions |
 
-### Performance Insights with Aurora MySQL and parallel query turned on
+### Database Insights with Aurora MySQL and parallel query turned on
 <a name="Feature.PerfInsights.regions.amy.pqoff"></a>
 
 The following Regions and engine versions are available for Performance Insights with Aurora MySQL and parallel query turned on.
@@ -122,10 +116,10 @@ The following Regions and engine versions are available for Performance Insights
 | AWS GovCloud (US-East) | Not available | Not available | Version 2.09.0 and higher |
 | AWS GovCloud (US-West) | Not available | Not available | Version 2.09.0 and higher |
 
-## Performance Insights with Aurora PostgreSQL
+## Database Insights with Aurora PostgreSQL
 <a name="Concepts.Aurora_Fea_Regions_DB-eng.Feature.PerfInsights.apg"></a>
 
-The following Regions and engine versions are available for Performance Insights with Aurora PostgreSQL.
+The following Regions and engine versions are available for Database Insights with Aurora PostgreSQL.
 
 | Region | Aurora PostgreSQL 17 | Aurora PostgreSQL 16 | Aurora PostgreSQL 15 | Aurora PostgreSQL 14 | Aurora PostgreSQL 13 | Aurora PostgreSQL 12 | Aurora PostgreSQL 11 | Aurora PostgreSQL 10 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -168,7 +162,7 @@ The following Regions and engine versions are available for Performance Insights
 | AWS GovCloud (US-East) | All versions | All versions | All versions | All versions | All versions | All versions | All versions | All versions |
 | AWS GovCloud (US-West) | All versions | All versions | All versions | All versions | All versions | All versions | All versions | All versions |
 
-## Performance Insights with Aurora Serverless
+## Database Insights with Aurora Serverless
 <a name="Concepts.Aurora_Fea_Regions_DB-eng.Feature.PerfInsights.serverless"></a>
 
-Aurora serverless supports Performance Insights for all MySQL-compatible and PostgreSQL-compatible versions. We recommend that you set the minimum capacity to at least 2 Aurora capacity units (ACUs).
+Aurora serverless supports Database Insights for all MySQL-compatible and PostgreSQL-compatible versions. We recommend that you set the minimum capacity to at least 2 Aurora capacity units (ACUs).

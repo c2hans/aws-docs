@@ -40,11 +40,11 @@ A work activity cannot be replaced with a non-work activity.
 
    1. **Do not optimize**: activity will be placed for the date and time that you specify.
 
-   1. **Anytime within shift**: Optimizes placement across the entire shift to minimize impact to service level targets. Specify a date range, and the system finds the best time within each agent's shift. For individual activities, placement may vary by agent. For shared activities, all agents receive the same date and time.
+   1. **Anytime within shift**: Optimizes placement across the entire shift to minimize impact to service level targets. Specify a date range, and the system finds the best time within each agent's shift. For individual activities, placement might vary by agent. For shared activities, all agents receive the same date and time.
 
-   1. **Time window**: Optimizes placement within a specific date and time range you define. The system finds the best time within that window to minimize impact to service level targets. For individual activities, placement may vary by agent. For shared activities, all agents receive the same date and time.
+   1. **Time window**: Optimizes placement within a specific date and time range you define. The system finds the best time within that window to minimize impact to service level targets. For individual activities, placement might vary by agent. For shared activities, all agents receive the same date and time.
 
-   1. **Relative to shift**: Optimizes placement within a time window defined by offsets from each agent's shift start and end (for example, "1 hour after shift start" to "2 hours before shift end"). The system finds the best time within that window to minimize impact to service level targets. For individual activities, placement may vary by agent. For shared activities, all agents receive the same date and time.
+   1. **Relative to shift**: Optimizes placement within a time window defined by offsets from each agent's shift start and end (for example, "1 hour after shift start" to "2 hours before shift end"). The system finds the best time within that window to minimize impact to service level targets. For individual activities, placement might vary by agent. For shared activities, all agents receive the same date and time.
 **Note**
 Additional things to note when you select one of the optimized placement options:
 To create a recurring activity, use the Do not optimize placement method.

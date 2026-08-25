@@ -36,8 +36,8 @@ Instrumenting your agent is only one part of producing telemetry that the evalua
 For how AgentCore delivers that telemetry, where the service finds the values it needs, and the setup steps for your hosting option, see [Telemetry setup and delivery](supported-frameworks-telemetry.md).
 
 **Topics**
-+ [Strands Agents](supported-frameworks-strands.md)
-+ [LangGraph](supported-frameworks-langgraph.md)
++ [Set up Strands Agents telemetry for AgentCore Evaluations](supported-frameworks-strands.md)
++ [Set up LangGraph telemetry for AgentCore Evaluations](supported-frameworks-langgraph.md)
 + [OpenAI Agents](supported-frameworks-openai-agents.md)
 + [LlamaIndex](supported-frameworks-llamaindex.md)
 + [Google ADK](supported-frameworks-google-adk.md)

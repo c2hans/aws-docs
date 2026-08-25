@@ -45,16 +45,16 @@ Possible solutions:
 + Have an owner approve your installation request BEFORE you try to create the integration
 + Have an owner update your role in the GitHub organization from a `Member` to an `Owner` and restart the integration process again
 
-## Agent cannot connect to endpoint during a penetration test
-<a name="_agent_cannot_connect_to_endpoint_during_a_penetration_test"></a>
+## Agent cannot connect to endpoint during a Continuum penetration test
+<a name="_agent_cannot_connect_to_endpoint_during_a_continuum_penetration_test"></a>
 
 If the penetration test agent is unable to make calls to the configured target URL or fails to successfully navigate the target endpoint:
 + If your endpoint makes calls to domains outside the configured target URL, verify the additional domains are added as **Accessible URLs** in your penetration test configuration
 + Penetration testing is currently only available for HTTP/HTTPS endpoints serving traffic on ports 80 or 443
 + If you have a WAF configured, check that you WAF is not blocking penetration test traffic. You can allowlist penetration test traffic by `User-Agent` header, which will be set to `securityagent` by default
 
-## Endpoint validation failed during a penetration test
-<a name="_endpoint_validation_failed_during_a_penetration_test"></a>
+## Endpoint validation failed during a Continuum penetration test
+<a name="_endpoint_validation_failed_during_a_continuum_penetration_test"></a>
 
 A penetration test failing during endpoint validation indicates that your endpoint is not accessible from the penetration testing environment. The steps for debugging this issue will depend on if you have configured a VPC for your penetration test:
 + For a non-VPC penetration test:
@@ -65,8 +65,8 @@ A penetration test failing during endpoint validation indicates that your endpoi
   + Ensure the selected VPC/subnet has proper routing to the target endpoint (e.g., via VPN tunnel or VPC peering), DNS resolution is correctly configured for the private domain (e.g., Route 53 Resolver or custom DNS), and security group rules allow outbound traffic to the target
   + To debug further, launch an EC2 instance in your account with the same VPC, subnet, and security group as your penetration test. Connect to the EC2 instance and verify that networking requests to your target endpoint succeed
 
-## Penetration test failed due to an IP allowlist
-<a name="_penetration_test_failed_due_to_an_ip_allowlist"></a>
+## Continuum penetration test failed due to an IP allowlist
+<a name="_continuum_penetration_test_failed_due_to_an_ip_allowlist"></a>
 
 If the endpoint that a penetration test targets has an IP allowlist enabled, you can add a private VPC configuration with an associated [VPC NAT Gateway](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-gateway.html) to your penetration test. You can then use the NAT Gateway IP address to allowlist outbound traffic from the penetration test.
 

@@ -8,6 +8,9 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/enable-attachm
 You can allow customers and agents to share files using chat, email, and tasks, and allow agents to upload files to cases. After you complete the steps in this topic, an attachment icon automatically appears in your agent's Contact Control Panel so they can share attachments on chats, emails, and tasks.
 
 **Important**
+The **Attachments** page in the Connect Customer admin website, where you configure attachment file types and size limits, is not available in the legacy `https://{{your-instance-alias}}.awsapps.com/connect/` domain. If your instance still uses the legacy domain, update it to the `https://{{your-instance-alias}}.my.connect.aws/` domain before you complete step 3 in this topic. For more information, see [Update your Connect Customer domain](update-your-connect-domain.md) in this guide.
+
+**Important**
 You must complete steps 1 and 4 in this topic (create an Amazon S3 bucket and configure a CORS policy) for email attachments. If you don't do this, yet have selected **Enable Attachments sharing** for your instance, the email channel will not work for your instance.
 
  For a list of supported file types, see [Connect Customer feature specifications](feature-limits.md).
@@ -98,7 +101,7 @@ After you enable attachments and assign permissions, you can configure allowed f
 
 **Email attachment limitations**
 Email attachments cannot exceed 20 MB due to Amazon SES limitations.
-Even if you add a file extension to the allowed list for email, Amazon SES may block certain file types. For a list of file types that SES blocks, see [Unsupported attachment types](https://docs.aws.amazon.com/ses/latest/dg/mime-types-appendix.html) in the *Amazon Simple Email Service Developer Guide*.
+Even if you add a file extension to the allowed list for email, Amazon SES might block certain file types. For a list of file types that SES blocks, see [Unsupported attachment types](https://docs.aws.amazon.com/ses/latest/dg/mime-types-appendix.html) in the *Amazon Simple Email Service Developer Guide*.
 
 **Note**
 You can also configure these options programmatically by using the [UpdateAttachedFilesConfiguration](https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateAttachedFilesConfiguration.html) API. The API uses the `AttachmentScope` parameter to specify the channel (EMAIL, CHAT, CASE, or TASK).
@@ -125,7 +128,7 @@ To allow customers and agents to upload and download files, update your cross-or
 1. Add a CORS policy that has one of the following rules on your attachments bucket. For example CORS policies, see [Cross-origin resource sharing: Use-case scenarios](https://docs.aws.amazon.com/AmazonS3/latest/userguide/cors.html#example-scenarios-cors) in the *Amazon S3 Developer Guide*.
    + Option 1: List the endpoints from where attachments will be sent and received, such as the name of your business web site. This rule allows cross-origin PUT and GET requests from your website (for example, http://www.example1.com).
 
-     Your CORS policy may look similar to the following example:
+     Your CORS policy might look similar to the following example:
 
      ```
      [
@@ -146,7 +149,7 @@ To allow customers and agents to upload and download files, update your cross-or
      ```
    + Option 2: Add the `*` wildcard to `AllowedOrigin`. This rule allows cross-origin PUT and GET requests from all origins, so you don't have to list your endpoints.
 
-     Your CORS policy may look similar to the following example:
+     Your CORS policy might look similar to the following example:
 
      ```
      [
@@ -173,7 +176,7 @@ If you are skipping the out-of-the-box Chat UI or Agent workspace, you can use t
 ## Next step
 <a name="nextsteps-attachments"></a>
 
-We recommend enabling attachment scanning to meet compliance requirements or security policies that your organization may have in place for file sharing. For more information, see [Set up attachment scanning in Connect Customer](setup-attachment-scanning.md).
+We recommend enabling attachment scanning to meet compliance requirements or security policies that your organization might have in place for file sharing. For more information, see [Set up attachment scanning in Connect Customer](setup-attachment-scanning.md).
 
 ## Attachments not appearing?
 <a name="problems-enabling-attachments"></a>

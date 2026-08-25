@@ -1814,6 +1814,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_bedrock-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
+- **   [CreateDataSourceToken](https://docs.aws.amazon.com/bedrock/latest/userguide/kb-managed-3lo-setup.html)  **
+  - **Description:** Grants permission to create an authorization token for MANAGED\_OAUTH2 data source
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** Write
+
 - **   [CreateEvaluationJob](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_CreateEvaluationJob.html)  **
   - **Description:** Grants permission to create a job for evaluation foundation models or custom models
   - **Resource types (\*required):** [custom-model\*](#list_bedrock-resource-custom-model) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_bedrock-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_bedrock-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_bedrock-aws_TagKeys)
@@ -2340,6 +2346,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Description:** Grants permission to retrieve an existing data source
   - **Resource types (\*required):** [knowledge-base\*](#list_bedrock-resource-knowledge-base)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_bedrock-aws_ResourceTag___TagKey_)
+  - **Access level:** Read
+
+- **   [GetDataSourceAuthorizationUrl](https://docs.aws.amazon.com/bedrock/latest/userguide/kb-managed-3lo-setup.html)  **
+  - **Description:** Grants permission to get the authorization URL for a MANAGED\_OAUTH2 data source
+  - **Resource types (\*required):**
+  - **Condition keys:**
   - **Access level:** Read
 
 - **   [GetDocumentContent](https://docs.aws.amazon.com/bedrock/latest/APIReference/welcome.html)  **

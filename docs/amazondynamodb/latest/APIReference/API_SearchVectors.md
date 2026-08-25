@@ -94,7 +94,7 @@ Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: Yes
 
  ** [TopK](#API_SearchVectors_RequestSyntax) **   <a name="DDB-SearchVectors-request-TopK"></a>
-The number of most similar results to return.
+The number of most similar results to return. Valid values range from 1 to 100, inclusive.
 Type: Integer
 Valid Range: Minimum value of 1.
 Required: Yes

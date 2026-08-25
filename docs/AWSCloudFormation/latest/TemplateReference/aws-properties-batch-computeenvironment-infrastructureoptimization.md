@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::Batch::ComputeEnvironment InfrastructureOptimization
 <a name="aws-properties-batch-computeenvironment-infrastructureoptimization"></a>
 
-<a name="aws-properties-batch-computeenvironment-infrastructureoptimization-description"></a>The `InfrastructureOptimization` property type specifies Property description not available. for an [AWS::Batch::ComputeEnvironment](aws-resource-batch-computeenvironment.md).
+The infrastructure optimization configuration for an Amazon ECS Managed Instances capacity provider. Specifies the idle-instance scale-in behavior.
 
 ## Syntax
 <a name="aws-properties-batch-computeenvironment-infrastructureoptimization-syntax"></a>
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-batch-computeenvironment-infrastructureoptimization-properties"></a>
 
 `ScaleInAfter`  <a name="cfn-batch-computeenvironment-infrastructureoptimization-scaleinafter"></a>
-Property description not available.
+The number of seconds an instance can remain idle before it is terminated. Valid values are `-1` or `0` to `3600`. Use `-1` as a special value to disable scale-in (instances are never terminated for being idle). If not specified, a default value applies.
 *Required*: No
 *Type*: Integer
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

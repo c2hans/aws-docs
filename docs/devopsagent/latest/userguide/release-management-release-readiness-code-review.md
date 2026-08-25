@@ -155,7 +155,7 @@ The verification testing environment has outbound network access restricted to a
 ## Reviewing code review results
 <a name="reviewing-code-review-results"></a>
 
-Each code review produces a report accessible in the **Changes** page of the DevOps Agent web app. Reports include:
+Each code review produces a report accessible in the **Releases** page of the DevOps Agent web app. Reports include:
 + **Finding categories** — Policy violations, dependency risks, access-control issues, and test coverage gaps
 + **Severity levels** — Blocking (must fix before merge), Warning (should address), and Informational (awareness only)
 + **Execution journal** — The full trace of evaluation steps and tools used by the agent, providing transparency into how conclusions were reached

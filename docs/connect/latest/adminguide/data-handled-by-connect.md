@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/data-handled-b
 # Data handled by Connect Customer
 <a name="data-handled-by-connect"></a>
 
-Data held within Connect Customer is segregated by the AWS account ID and the Connect Customer instance ID. This ensures that data can be accessed only by the authorized users of a specific Connect Customer instance.
+Data held within Connect Customer is segregated by the AWS account ID and the Connect Customer instance ID. This makes sure that data can be accessed only by the authorized users of a specific Connect Customer instance.
 
 Connect Customer handles a variety of data related to the contact center, including but not limited to the following categories.
 + **Resources and configurations** – This includes queues, flows, users, routing profiles, and task templates.
@@ -104,7 +104,7 @@ The following data stored by Connect Customer is treated as sensitive:
 
 Content processed by conversational analytics in real-time is encrypted at rest and in transit. Data is encrypted with keys owned by conversational analytics.
 
-Conversational analytics persists data (transcript, category names, etc.) on the Connect Customer side for a short period of time. This is to ensure that the API serves data continuously, for up to 24h after contact terminates.
+Conversational analytics persists data (transcript, category names) on the Connect Customer side for a short period of time. This is to make sure that the API serves data continuously, for up to 24h after contact terminates.
 
 ## Voiceprints and Voice ID audio recordings
 <a name="voiceprints-data-protection"></a>

@@ -51,7 +51,7 @@ To work with the DynamoDB console, a user must have a minimum set of permissions
 + Amazon Simple Notification Service permissions to notify you whenever a CloudWatch alarm is triggered.
 + AWS Lambda permissions to process DynamoDB Streams records.
 
-If you create an IAM policy that is more restrictive than the minimum required permissions, the console won't function as intended for users with that IAM policy. To ensure that those users can still use the DynamoDB console, also attach the `AmazonDynamoDBReadOnlyAccess` AWS managed policy to the user, as described in [AWS managed (predefined) IAM policies for Amazon DynamoDB](#access-policy-examples-aws-managed).
+If you create an IAM policy that is more restrictive than the minimum required permissions, the console won't function as intended for users with that IAM policy. To make sure that those users can still use the DynamoDB console, also attach the `AmazonDynamoDBReadOnlyAccess` AWS managed policy to the user, as described in [AWS managed (predefined) IAM policies for Amazon DynamoDB](#access-policy-examples-aws-managed).
 
 You don't need to allow minimum console permissions for users who are making calls only to the AWS CLI or the Amazon DynamoDB API.
 

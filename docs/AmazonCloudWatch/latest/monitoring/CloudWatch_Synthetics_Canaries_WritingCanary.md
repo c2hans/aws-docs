@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 The following sections explain how to write a canary script and how to integrate a canary with other AWS services and with external dependencies and libraries.
 
 **Topics**
-+ [Common canary features](CloudWatch_Synthetics_Canaries_CommonFeatures.md)
++ [Common features for CloudWatch Synthetics canaries](CloudWatch_Synthetics_Canaries_CommonFeatures.md)
 + [Writing a canary script using the Java runtime](Synthetics_WritingCanary_Java.md)
 + [Writing a Node.js canary script using the Playwright runtime](Synthetics_WritingCanary_Nodejs_Playwright.md)
 + [Writing a Node.js canary script using the Puppeteer runtime](CloudWatch_Synthetics_Canaries_WritingCanary_Nodejs_Pup.md)

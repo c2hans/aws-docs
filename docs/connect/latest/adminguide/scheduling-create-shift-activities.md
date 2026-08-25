@@ -29,8 +29,8 @@ You can create multiple shift activities to include as part of your staff shifts
      The color you choose appears in both the draft and published versions of the schedule.
    + **Type**: Select if this activity is of type Productive, Non-productive, or Time off
      + **Productive**: Use this type for activities that represent time spent by agents doing productive work such as handling contacts in Connect Customer, or working on tasks in another system.
-     + **Non-productive**: Use this type for activities that represent time spent by agents on activities such as meetings, training, 1:1s, etc.
-     + **Time off**: Use this for activities that agents and supervisors use for creating time-off requests such as PTO, sick leave, leave of absence, etc.
+     + **Non-productive**: Use this type for activities that represent time spent by agents on activities such as meetings, training, 1:1s.
+     + **Time off**: Use this for activities that agents and supervisors use for creating time-off requests such as PTO, sick leave, leave of absence.
    + **Sub-type**
      + **If non-productive: Break or meal**: Set this subtype for breaks, lunches or meal activities. This option is available only for Non-Productive activity types. This setting allows automated break or meal time adjustments when time offs or overtimes are added or removed from staff shifts, to comply with the break rules configured in the Staffing Group and Shift Profiles.
      + **Time off: Staff Requestable**: Set to **Yes** to allow agents to see and pick the respective time off activity during time off creation. Set to **No** for time off activities that can be requested only by supervisors on behalf of an agent.

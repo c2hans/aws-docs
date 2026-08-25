@@ -18,13 +18,13 @@ This policy is attached to a service-linked role that allows the service to perf
 <a name="AmazonInspector2AgentlessServiceRolePolicy-details"></a>
 + **Type**: Service-linked role policy
 + **Creation time**: November 20, 2023, 15:18 UTC
-+ **Edited time:** November 20, 2023, 15:18 UTC
++ **Edited time:** August 20, 2026, 19:17 UTC
 + **ARN**: `arn:aws:iam::aws:policy/aws-service-role/AmazonInspector2AgentlessServiceRolePolicy`
 
 ## Policy version
 <a name="AmazonInspector2AgentlessServiceRolePolicy-version"></a>
 
-**Policy version:** v1 (default)
+**Policy version:** v2 (default)
 
 The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request.
 
@@ -170,6 +170,50 @@ The policy's default version is the version that defines the permissions for the
       "Condition" : {
         "StringEquals" : {
           "aws:ResourceAccount" : "${aws:PrincipalAccount}"
+        },
+        "StringLike" : {
+          "kms:ViaService" : "ec2.*.amazonaws.com"
+        }
+      }
+    },
+    {
+      "Sid" : "DecryptCrossAccountOrgVolContext",
+      "Effect" : "Allow",
+      "Action" : "kms:Decrypt",
+      "Resource" : "arn:aws:kms:*:*:key/*",
+      "Condition" : {
+        "StringEquals" : {
+          "aws:ResourceOrgID" : "${aws:PrincipalOrgID}"
+        },
+        "StringLike" : {
+          "kms:ViaService" : "ec2.*.amazonaws.com",
+          "kms:EncryptionContext:aws:ebs:id" : "vol-*"
+        }
+      }
+    },
+    {
+      "Sid" : "DecryptCrossAccountOrgSnapContext",
+      "Effect" : "Allow",
+      "Action" : "kms:Decrypt",
+      "Resource" : "arn:aws:kms:*:*:key/*",
+      "Condition" : {
+        "StringEquals" : {
+          "aws:ResourceOrgID" : "${aws:PrincipalOrgID}"
+        },
+        "StringLike" : {
+          "kms:ViaService" : "ec2.*.amazonaws.com",
+          "kms:EncryptionContext:aws:ebs:id" : "snap-*"
+        }
+      }
+    },
+    {
+      "Sid" : "DescribeCrossAccountOrgKeysForEbsOperations",
+      "Effect" : "Allow",
+      "Action" : "kms:DescribeKey",
+      "Resource" : "arn:aws:kms:*:*:key/*",
+      "Condition" : {
+        "StringEquals" : {
+          "aws:ResourceOrgID" : "${aws:PrincipalOrgID}"
         },
         "StringLike" : {
           "kms:ViaService" : "ec2.*.amazonaws.com"

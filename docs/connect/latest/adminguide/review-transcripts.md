@@ -13,7 +13,7 @@ The following image shows an example of a voice contact.
 
 ![An analysis of a voice contact.](http://docs.aws.amazon.com/connect/latest/adminguide/images/contact-lens-category-hit.png)
 
-The following image shows an example of a chat contact. **System Message** applies to chat, where the participant may be a Lex bot or prompt.
+The following image shows an example of a chat contact. **System Message** applies to chat, where the participant might be a Lex bot or prompt.
 
 ![An analysis of a chat contact.](http://docs.aws.amazon.com/connect/latest/adminguide/images/contact-lens-category-hit-chat.png)
 
@@ -29,6 +29,6 @@ The following image shows an example of a chat contact. **System Message** appli
 
 1. In the **Recording** and **Transcript** sections of the **Contact details** page, review what was spoken or written, when, and their sentiment.
 
-1. For calls, if desired, choose the play prompt to listen to the recording. Or, click on the relevant part of the recording to listen to the portion you're interested in.
+1. For calls, if desired, choose the play prompt to listen to the recording. Or, choose the relevant part of the recording to listen to the portion you're interested in.
 
 1. For chats, if desired, use the graph to navigate to the portion of the transcript you're interested in.

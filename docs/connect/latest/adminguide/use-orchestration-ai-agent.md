@@ -13,7 +13,7 @@ Orchestrator AI Agents serve as primary agents for resolving customer interactio
 + **Security Profiles**: Security profiles control which tools an AI Agent can execute. Agents can only use tools they have explicit permission to access through their assigned security profile.
 
 **Note**
-Orchestration AI agents require chat streaming to be enabled for chat contacts. Without chat streaming enabled, some messages will fail to render. See - [Enable message streaming for AI-powered chat](https://docs.aws.amazon.com/connect/latest/adminguide/message-streaming-ai-chat.html).
+Orchestration AI agents require chat streaming to be enabled for chat contacts. Without chat streaming enabled, some messages will fail to render. For more information, see [Enable message streaming for AI-powered chat](https://docs.aws.amazon.com/connect/latest/adminguide/message-streaming-ai-chat.html).
 
 ## Message parsing
 <a name="message-parsing"></a>

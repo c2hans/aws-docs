@@ -20,6 +20,6 @@ deadline bundle submit ./job_bundles/vllm_lm_eval_leaderboard/ \
   --parameter Benchmarks="hellaswag,mmlu,gsm8k"
 ```
 
-If your fleet does not scale up workers, the most common cause is an EC2 vCPU service quota. Confirm that you have headroom for *Running On-Demand G and VT instances* in the Service Quotas console.
+If your fleet does not scale up workers, the most common cause is an Deadline Cloud service quota. Confirm that you have headroom for *OnDemand G instance GPUs per region* and *OnDemand vCPUs per region* in the Service Quotas console.
 
 For a complete walkthrough that covers prerequisites, farm setup, custom models and benchmarks, and cleanup, see [Benchmark LLMs with vLLM and lm-evaluation-harness](tutorial-vllm-leaderboard.md).

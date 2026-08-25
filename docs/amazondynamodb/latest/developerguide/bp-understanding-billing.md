@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-
 
  This document explains the `UsageType` billing codes for charges related to DynamoDB.
 
-AWS provides cost and usage reports (CUR) that contain data for the services used. You can use AWS Cost and Usage Report to publish billing reports to Amazon S3 in a CSV format. When setting up the CUR you can choose to break time periods down by hour, day, or month, and you can choose if you want to break out usage by resource ID or not. For more details on generating CUR, please see [Creating Cost and Usage Reports](https://docs.aws.amazon.com/cur/latest/userguide/creating-cur.html)
+AWS provides cost and usage reports (CUR) that contain data for the services used. You can use AWS Cost and Usage Report to publish billing reports to Amazon S3 in a CSV format. When setting up the CUR you can choose to break time periods down by hour, day, or month, and you can choose if you want to break out usage by resource ID or not. For more information about generating CUR, see [Creating Cost and Usage Reports](https://docs.aws.amazon.com/cur/latest/userguide/creating-cur.html) in the AWS Data Exports User Guide.
 
 Within the CSV export, you will find relevant attributes listed for each line. The following are examples of attributes that might be included:
 + **lineitem/UsageStartDate: **The start date and time for the line item in UTC, inclusive.
@@ -20,7 +20,7 @@ Within the CSV export, you will find relevant attributes listed for each line. T
 + **lineitem/UnblendedCost: **The cost of this usage.
 + **lineitem/LineItemDescription: **Textual description of the line item.
 
-For more information about the CUR data dictionary, see [Cost and Usage Report (CUR) 2.0](https://docs.aws.amazon.com/cur/latest/userguide/table-dictionary-cur2.html). Note that the exact names vary depending on context.
+For more information about the CUR data dictionary, see [Cost and Usage Report (CUR) 2.0](https://docs.aws.amazon.com/cur/latest/userguide/table-dictionary-cur2.html) in the AWS Data Exports User Guide. Note that the exact names vary depending on context.
 
 A `UsageType` is a string with a value such as `ReadCapacityUnit-Hrs`, `USW2-ReadRequestUnits`, `EU-WriteCapacityUnit-Hrs`, or `USE1-TimedPITRStorage-ByteHrs`. Each usage type begins with an optional Region prefix. If absent, that indicates the us-east-1 Region. If present, the below table maps the short billing Region code to the conventional Region code and name.
 
@@ -60,7 +60,7 @@ For example, the usage named `USW2-ReadRequestUnits` indicates read request unit
 | USW1 | us-west-1 | US West (N. California) |
 | USW2 | us-west-2 | US West (Oregon) |
 
-In the following sections, we use `REG-UsageType` pattern when going through the charges for DynamoDB, where REG specifies the region where usage occurred and usageType is the code for the type of charge. For example if you see a line item for `USW1- ReadCapacityUnit-Hrs` in your CSV file, that means the usage was incurred in US-West-1 for provisioned read capacity. In that case the listing would say `REG-ReadCapacityUnit-Hrs`.
+The following sections use the `REG-UsageType` pattern when going through the charges for DynamoDB, where REG specifies the region where usage occurred and usageType is the code for the type of charge. For example if you see a line item for `USW1- ReadCapacityUnit-Hrs` in your CSV file, that means the usage was incurred in US-West-1 for provisioned read capacity. In that case the listing would say `REG-ReadCapacityUnit-Hrs`.
 
 **Topics**
 + [Throughput Capacity](#bp-understanding-billing.throughput)

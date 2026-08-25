@@ -37,7 +37,9 @@ To declare this entity in your CloudFormation template, use the following syntax
   "Type" : "AWS::EKS::Cluster",
   "Properties" : {
       "[AccessConfig](#cfn-eks-cluster-accessconfig)" : {{AccessConfig}},
+      "[ActiveCertificateAuthorityId](#cfn-eks-cluster-activecertificateauthorityid)" : {{String}},
       "[BootstrapSelfManagedAddons](#cfn-eks-cluster-bootstrapselfmanagedaddons)" : {{Boolean}},
+      "[CertificateAuthority](#cfn-eks-cluster-certificateauthority)" : {{CertificateAuthority}},
       "[ComputeConfig](#cfn-eks-cluster-computeconfig)" : {{ComputeConfig}},
       "[ControlPlaneScalingConfig](#cfn-eks-cluster-controlplanescalingconfig)" : {{ControlPlaneScalingConfig}},
       "[DeletionProtection](#cfn-eks-cluster-deletionprotection)" : {{Boolean}},
@@ -71,7 +73,10 @@ Type: AWS::EKS::Cluster
 Properties:
   [AccessConfig](#cfn-eks-cluster-accessconfig): {{
     AccessConfig}}
+  [ActiveCertificateAuthorityId](#cfn-eks-cluster-activecertificateauthorityid): {{String}}
   [BootstrapSelfManagedAddons](#cfn-eks-cluster-bootstrapselfmanagedaddons): {{Boolean}}
+  [CertificateAuthority](#cfn-eks-cluster-certificateauthority): {{
+    CertificateAuthority}}
   [ComputeConfig](#cfn-eks-cluster-computeconfig): {{
     ComputeConfig}}
   [ControlPlaneScalingConfig](#cfn-eks-cluster-controlplanescalingconfig): {{
@@ -120,6 +125,13 @@ The access configuration for the cluster.
 *Type*: [AccessConfig](aws-properties-eks-cluster-accessconfig.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
+`ActiveCertificateAuthorityId`  <a name="cfn-eks-cluster-activecertificateauthorityid"></a>
+The ID of the certificate authority (CA) to activate as the cluster's signing CA, completing a CA rotation. Set this to the `Id` of an `AWS::EKS::CertificateAuthority` resource whose distribution status is `COMPLETE`; the previously active CA is retired but remains trusted.
+This is a write-only property that triggers activation. It isn't stored in the stack's state or returned on read, so subsequent stack updates that omit it don't revert or deactivate the CA, and CloudFormation doesn't detect drift if the active CA changes outside of CloudFormation (for example, through auto-activation by Amazon EKS). For more information, see [Rotate the Amazon EKS cluster certificate authority](https://docs.aws.amazon.com/eks/latest/userguide/certificate-authority-rotation.html) in the *Amazon EKS User Guide*.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
 `BootstrapSelfManagedAddons`  <a name="cfn-eks-cluster-bootstrapselfmanagedaddons"></a>
 If you set this value to `False` when creating a cluster, the default networking add-ons will not be installed.
 The default networking add-ons include `vpc-cni`, `coredns`, and `kube-proxy`.
@@ -127,6 +139,12 @@ Use this option when you plan to install third-party alternative add-ons or self
 *Required*: No
 *Type*: Boolean
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`CertificateAuthority`  <a name="cfn-eks-cluster-certificateauthority"></a>
+The `certificate-authority-data` for your cluster.
+*Required*: No
+*Type*: [CertificateAuthority](aws-properties-eks-cluster-certificateauthority.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ComputeConfig`  <a name="cfn-eks-cluster-computeconfig"></a>
 Indicates the current configuration of the compute capability on your EKS Auto Mode cluster. For example, if the capability is enabled or disabled. If the compute capability is enabled, EKS Auto Mode will create and delete EC2 Managed Instances in your AWS account. For more information, see EKS Auto Mode compute capability in the *Amazon EKS User Guide*.
@@ -288,6 +306,15 @@ For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::
 
 `Arn`  <a name="Arn-fn::getatt"></a>
 The ARN of the cluster, such as `arn:aws:eks:us-west-2:666666666666:cluster/prod`.
+
+`CertificateAuthority.Active.ActivatedBy`  <a name="CertificateAuthority.Active.ActivatedBy-fn::getatt"></a>
+The entity that activated the current signing certificate authority, either `CUSTOMER` or `EKS`.
+
+`CertificateAuthority.Active.Id`  <a name="CertificateAuthority.Active.Id-fn::getatt"></a>
+The ID of the certificate authority that is currently signing certificates for the cluster.
+
+`CertificateAuthority.Data`  <a name="CertificateAuthority.Data-fn::getatt"></a>
+The Base64-encoded certificate-authority trust bundle for the cluster. During a CA rotation's dual trust period, this bundle contains both the outgoing CA and the successor CA.
 
 `CertificateAuthorityData`  <a name="CertificateAuthorityData-fn::getatt"></a>
 The `certificate-authority-data` for your cluster.

@@ -12,14 +12,14 @@ Connect Customer country allowlisting supports a default deny model; unless you 
 
 For a list of all the countries available for outbound calling, see [Connect Customer pricing](https://aws.amazon.com/connect/pricing/).
 
-If you already have an instance, the countries that you are allowed to call may be different that those listed in the following sections because we have changed the service quotas over time.
+If you already have an instance, the countries that you are allowed to call might be different that those listed in the following sections because we have changed the service quotas over time.
 
-**UK** mobile numbers with the following prefix may not be allowed by default:
+**UK** mobile numbers with the following prefix might not be allowed by default:
 + \+447
 
 If you cannot dial these UK mobile numbers, you must submit a service quota increase request.
 
-**Japan** mobile numbers with the following prefixes may not be allowed by default:
+**Japan** mobile numbers with the following prefixes might not be allowed by default:
 + \+8170, 8180, and 8190
 
 If you can not dial these Japan mobile numbers, you must submit a service quota increase request.

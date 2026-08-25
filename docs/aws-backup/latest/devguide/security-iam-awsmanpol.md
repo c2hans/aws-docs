@@ -672,6 +672,7 @@ View details about updates to AWS managed policies for AWS Backup since this ser
 
 | Change | Description | Date |
 | --- | --- | --- |
+| [AWSBackupServiceRolePolicyForS3Backup](#AWSBackupServiceRolePolicyForS3Backup) – Update to an existing policy | AWS Backup added the following permission to this policy:+  `s3:ListTagsForResource` <br />With this permission, AWS Backup can verify the Amazon S3 bucket system tag `aws:backup:enabled` when configuring Amazon EventBridge event notifications for Amazon S3 backups. | August 24, 2026 |
 | [AWSBackupAccessPointOperatorAccess](#AWSBackupAccessPointOperatorAccess) – New policy | Use this new managed policy to create and manage backup access points and access backup data in recovery points through Amazon S3 access points. | August 6, 2026 |
 | [AWSServiceRolePolicyForBackupRestoreTesting](#AWSServiceRolePolicyForBackupRestoreTesting) – Update to an existing policy | AWS Backup added the following permission to this policy:+  `rds:DeleteTenantDatabase` <br />These permissions allow AWS Backup Restore Testing to delete RDS Tenant Databases after restore test completion. | March 18, 2026 |
 | [AWSBackupServiceRolePolicyForBackup](#AWSBackupServiceRolePolicyForBackup) – Update to an existing policy | AWS Backup added the following permissions to this policy:+  `guardduty:StartMalwareScan` <br />+  `guardduty:GetMalwareScan` <br />+  `iam:PassRole` <br />These permissions allow AWS Backup to initiate malware scans on your recovery points. | February 23, 2026 |

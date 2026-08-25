@@ -91,7 +91,7 @@ Access to EC2 instance metadata is required. If you have a custom network setup 
 
    1.  **Terminate the EC2 instances (A1) on the source account and region.**
 
-       These have now been replaced by the new instances launched in step 2 above (EC2 failed back instances, A3). You might have stopped these instances after the failover, and you can now terminate them using the AWS EC2 Console.
+       These have now been replaced by the new instances launched in step 2 above (EC2 failed back instances, A4). You might have stopped these instances after the failover, and you can now terminate them using the AWS EC2 Console.
 
    1.  **Remove the recovery instance (A3) in the source account and region.**
 

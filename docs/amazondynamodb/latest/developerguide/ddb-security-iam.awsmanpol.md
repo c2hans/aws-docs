@@ -24,7 +24,7 @@ This policy grants permissions to do the following:
 + `account` – Retrieve region status for evaluating replica accessibility.
 + `iam` – To create the service-linked role for application Auto Scaling in the event that the service-linked role does not already exist.
 
-The definition of this managed policy can be found [here](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/DynamoDBReplicationServiceRolePolicy.html).
+For more information, see [DynamoDBReplicationServiceRolePolicy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/DynamoDBReplicationServiceRolePolicy.html) in the AWS Managed Policy Reference.
 
 ## AWS managed policy: AmazonDynamoDBFullAccess\_v2
 <a name="ddb-security-iam.awsmanpol.fullaccesspolicy-v2"></a>

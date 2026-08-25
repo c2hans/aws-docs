@@ -66,10 +66,10 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Access level:** Write
 
 - **   DeleteDataGrant  **
-  - **IAM action:**  [dataexchange:DeleteDataGrant](#list_dataexchange-action-DeleteDataGrant)
-  - **Condition key:**
-  - **Possible value(s):**
-  - **Access level:** Write
+  - **IAM action:**  [dataexchange:CreateJob](#list_dataexchange-action-CreateJob)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [dataexchange:DeleteDataGrant](#list_dataexchange-action-DeleteDataGrant)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [dataexchange:DeleteDataSet](#list_dataexchange-action-DeleteDataSet)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [dataexchange:StartJob](#list_dataexchange-action-StartJob)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
 
 - **   DeleteDataSet  **
   - **IAM action:**  [dataexchange:DeleteDataSet](#list_dataexchange-action-DeleteDataSet)

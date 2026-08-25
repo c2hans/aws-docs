@@ -55,3 +55,44 @@ The following table details the relationship between GuardDuty administrator acc
 \+Indicates that the delegated GuardDuty administrator account can take this action only if they have not set up the auto-enable preferences to `ALL` the organization members.
 
 \*Indicates that a delegated GuardDuty administrator account can't disable GuardDuty in a member account directly. The delegated GuardDuty administrator account must first disassociate the member account, and then delete them. After this, each member account can disable GuardDuty in their own accounts. For more information about performing these tasks in your organization, see [Continually managing your member accounts within GuardDuty](maintaining-guardduty-organization-delegated-admin.md).
+
+## Understanding member relationship status
+<a name="administrator_member_relationship_status"></a>
+
+GuardDuty API operations such as [ListMembers](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListMembers.html) and [GetMembers](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GetMembers.html) return a `relationshipStatus` field for each member account. This field indicates the current state of the relationship between the administrator account and the member account. Check this value when you want to confirm that GuardDuty is actively monitoring a member account. It also helps you troubleshoot why a member account didn't finish onboarding or is no longer being monitored. The following list describes the possible values.
+
+**`Created`**
+The administrator account has added this account as a member (for example, by calling CreateMembers), but the member relationship isn't active yet.
+
+**`Invited`**
+The administrator account has sent an invitation to this member account, and the invitation is waiting to be accepted.
+
+**`Enabled`**
+This member account is associated with the administrator account, and GuardDuty is actively monitoring the member account.
+
+**`Disabled`**
+This member account is associated with the administrator account, but GuardDuty isn't actively monitoring the member account.
+
+**`Removed`**
+This member account is no longer associated with the administrator account. This status typically indicates that the administrator account removed the association.
+
+**`Resigned`**
+This member account is no longer associated with the administrator account. This status typically indicates that the member account removed itself from the association.
+
+**`Deleted`**
+This member account no longer exists in GuardDuty.
+
+**`EmailVerificationInProgress`**
+This member account's invitation is pending email address verification.
+
+**`EmailVerificationFailed`**
+This member account's invitation didn't pass email address verification.
+
+**`RegionDisabled`**
+This member account can't be monitored because GuardDuty isn't enabled or isn't available in the current AWS Region.
+
+**`AccountSuspended`**
+This member's AWS account is in a suspended state.
+
+**`CannotCreateDetectorInOrganizationMasterAccount`**
+GuardDuty can't create a detector in the AWS Organizations management account, typically because the required service-linked role permissions are missing.

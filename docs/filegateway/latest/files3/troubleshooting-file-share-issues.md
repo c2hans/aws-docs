@@ -26,16 +26,21 @@ You can find information following about actions to take if you experience unexp
 
 The file share status summarizes the health of your file share. If your S3 File Gateway file share is stuck in the `CREATING`, `UPDATING`, or `DELETING` state, use the following troubleshooting steps to identify and resolve the issue.
 
-### Confirm IAM role permissions and trust relationship
-<a name="w2ab1c55c43b9b5"></a>
+**Note**
+When you create a file share, Storage Gateway doesn't verify that the IAM role and the Amazon S3 bucket that you specify already exist. This is intentional, because a newly created IAM role can take time to become available for Storage Gateway to assume. As a result, a `CreateNFSFileShare` or `CreateSMBFileShare` request that specifies a role or a bucket that doesn't exist still succeeds and returns a file share ARN, but the file share remains in the `CREATING` state instead of changing to `AVAILABLE`. Before you continue troubleshooting, confirm that both the IAM role and the Amazon S3 bucket that you specified exist.
 
-The AWS Identity and Access Management (IAM) role associated with your file share must have sufficient permissions to access the Amazon S3 bucket. Additionally, the role's trust policy must grant the Storage Gateway service permissions to assume the role.
+### Confirm IAM role permissions and trust relationship
+<a name="w2ab1c55c43b9b7"></a>
+
+The AWS Identity and Access Management (IAM) role associated with your file share must exist, and it must have sufficient permissions to access the Amazon S3 bucket. Additionally, the role's trust policy must grant the Storage Gateway service permissions to assume the role.
 
 **To verify IAM role permissions:**
 
 1. Open the IAM console at [https://console.aws.amazon.com/iam/](https://console.aws.amazon.com/iam/).
 
 1. In the navigation pane, choose **Roles**.
+
+1. Confirm that the IAM role that you specified for your file share appears in the list of roles. If the role doesn't exist, create it, and then create the file share again. For more information, see [Granting access to an Amazon S3 bucket](grant-access-s3.md).
 
 1. Choose the IAM role that's associated with your file share.
 
@@ -65,7 +70,7 @@ The AWS Identity and Access Management (IAM) role associated with your file shar
 To avoid cross-service confused deputy prevention issues, use a trust relationship policy that includes condition context keys. For more information, see [Cross-service confused deputy prevention](cross-service-confused-deputy-prevention.md).
 
 ### Verify AWS STS is activated in your Region
-<a name="w2ab1c55c43b9b7"></a>
+<a name="w2ab1c55c43b9b9"></a>
 
 File shares can become stuck in the `CREATING` or `UPDATING` state if AWS Security Token Service (AWS STS) is deactivated in your AWS Region.
 
@@ -80,9 +85,9 @@ File shares can become stuck in the `CREATING` or `UPDATING` state if AWS Securi
 1. If the status is **Inactive**, choose **Activate** to enable AWS STS in that Region.
 
 ### Verify S3 bucket exists and follows naming rules
-<a name="w2ab1c55c43b9b9"></a>
+<a name="w2ab1c55c43b9c11"></a>
 
-Your file share requires a valid Amazon S3 bucket that follows Amazon S3 naming conventions.
+Your file share requires an existing Amazon S3 bucket that follows Amazon S3 naming conventions. Storage Gateway doesn't verify that the bucket exists when you create the file share, so a file share that points to a bucket that was deleted or never created remains in the `CREATING` state.
 
 **To verify your S3 bucket:**
 
@@ -95,7 +100,7 @@ Your file share requires a valid Amazon S3 bucket that follows Amazon S3 naming 
 S3 File Gateway does not support Amazon S3 buckets with periods (`.`) in the bucket name.
 
 ### Force delete a file share stuck in DELETING state
-<a name="w2ab1c55c43b9c11"></a>
+<a name="w2ab1c55c43b9c13"></a>
 
 When you delete a file share, the gateway removes the share from the associated Amazon S3 bucket. However, data that's currently uploading continues to upload before the deletion completes. During this process, the file share shows a `DELETING` status.
 
@@ -128,7 +133,7 @@ Before force deleting a file share, confirm that your gateway isn't in an `OFFLI
 If the gateway virtual machine (VM) is already deleted, you must delete the gateway from the Storage Gateway console to remove all associated file shares, including those stuck in the `DELETING` state. For more information, see [Deleting your gateway and removing associated resources](deleting-gateway-common.md).
 
 ### Troubleshoot network connectivity issues
-<a name="w2ab1c55c43b9c13"></a>
+<a name="w2ab1c55c43b9c15"></a>
 
 Network issues can prevent your file share from transitioning out of the `CREATING`, `UPDATING`, or `DELETING` state. Common network issues include:
 + Your gateway is offline or the gateway VM is deleted.
@@ -137,7 +142,7 @@ Network issues can prevent your file share from transitioning out of the `CREATI
 + Required network ports aren't open or network routing is improperly configured.
 
 #### Test S3 connectivity from the gateway local console
-<a name="w2ab1c55c43b9c13b7"></a>
+<a name="w2ab1c55c43b9c15b7"></a>
 
 **To test S3 connectivity:**
 
@@ -159,7 +164,7 @@ The gateway automatically performs a connectivity test that validates both the n
 + **SSL Test failure** - Indicates that SSL inspection or deep packet inspection is occurring between your gateway VM and Amazon S3 service endpoints. Disable SSL and deep packet inspection for Storage Gateway traffic.
 
 #### Verify proxy configuration
-<a name="w2ab1c55c43b9c13b9"></a>
+<a name="w2ab1c55c43b9c15b9"></a>
 
 If your gateway uses a proxy server, verify that the proxy isn't blocking network communication.
 
@@ -176,7 +181,7 @@ If your gateway uses a proxy server, verify that the proxy isn't blocking networ
 If issues persist, you can temporarily remove the proxy configuration to determine if the proxy is causing the problem.
 
 #### Verify security groups and network routing
-<a name="w2ab1c55c43b9c13c11"></a>
+<a name="w2ab1c55c43b9c15c11"></a>
 + **For gateways on Amazon EC2** - Confirm that the security group has port 443 open to Amazon S3 endpoints. Verify that the Amazon EC2 subnet's route table properly routes Amazon S3 traffic to Amazon S3 endpoints. For more information, see the required network ports.
 + **For on-premises gateways** - Confirm that firewall rules allow the required ports and that local route tables properly route Amazon S3 traffic to Amazon S3 endpoints. For more information, see the required network ports.
 + **VPC endpoints** - Verify that the Amazon S3 Amazon VPC endpoint used by the gateway hasn't been deleted. If the Amazon VPC endpoint is deleted and the gateway has no public IP address, the gateway can't communicate with Amazon S3.

@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/manager-assist
 Manager assistant is built on foundation models in Amazon Bedrock. It uses foundation models to interpret questions written in plain language, identify the relevant metrics, retrieve data, and generate responses.
 
 **Important**
-Although responses are grounded in the data in your instance, AI-generated responses may contain inaccuracies. Always validate critical insights against your Connect Customer reports and dashboards.
+Although responses are grounded in the data in your instance, AI-generated responses might contain inaccuracies. Always validate critical insights against your Connect Customer reports and dashboards.
 
 ## Cross-Region inference
 <a name="manager-assistant-cross-region-inference"></a>

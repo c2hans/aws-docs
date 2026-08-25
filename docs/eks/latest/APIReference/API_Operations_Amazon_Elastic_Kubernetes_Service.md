@@ -6,6 +6,7 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_Operations_A
 <a name="API_Operations_Amazon_Elastic_Kubernetes_Service"></a>
 
 The following actions are supported by Amazon Elastic Kubernetes Service:
++  [ActivateCertificateAuthority](API_ActivateCertificateAuthority.md)
 +  [AssociateAccessPolicy](API_AssociateAccessPolicy.md)
 +  [AssociateEncryptionConfig](API_AssociateEncryptionConfig.md)
 +  [AssociateIdentityProviderConfig](API_AssociateIdentityProviderConfig.md)
@@ -13,6 +14,7 @@ The following actions are supported by Amazon Elastic Kubernetes Service:
 +  [CreateAccessEntry](API_CreateAccessEntry.md)
 +  [CreateAddon](API_CreateAddon.md)
 +  [CreateCapability](API_CreateCapability.md)
++  [CreateCertificateAuthority](API_CreateCertificateAuthority.md)
 +  [CreateCluster](API_CreateCluster.md)
 +  [CreateEksAnywhereSubscription](API_CreateEksAnywhereSubscription.md)
 +  [CreateFargateProfile](API_CreateFargateProfile.md)
@@ -21,6 +23,7 @@ The following actions are supported by Amazon Elastic Kubernetes Service:
 +  [DeleteAccessEntry](API_DeleteAccessEntry.md)
 +  [DeleteAddon](API_DeleteAddon.md)
 +  [DeleteCapability](API_DeleteCapability.md)
++  [DeleteCertificateAuthority](API_DeleteCertificateAuthority.md)
 +  [DeleteCluster](API_DeleteCluster.md)
 +  [DeleteEksAnywhereSubscription](API_DeleteEksAnywhereSubscription.md)
 +  [DeleteFargateProfile](API_DeleteFargateProfile.md)
@@ -32,6 +35,7 @@ The following actions are supported by Amazon Elastic Kubernetes Service:
 +  [DescribeAddonConfiguration](API_DescribeAddonConfiguration.md)
 +  [DescribeAddonVersions](API_DescribeAddonVersions.md)
 +  [DescribeCapability](API_DescribeCapability.md)
++  [DescribeCertificateAuthority](API_DescribeCertificateAuthority.md)
 +  [DescribeCluster](API_DescribeCluster.md)
 +  [DescribeClusterVersions](API_DescribeClusterVersions.md)
 +  [DescribeEksAnywhereSubscription](API_DescribeEksAnywhereSubscription.md)
@@ -49,6 +53,7 @@ The following actions are supported by Amazon Elastic Kubernetes Service:
 +  [ListAddons](API_ListAddons.md)
 +  [ListAssociatedAccessPolicies](API_ListAssociatedAccessPolicies.md)
 +  [ListCapabilities](API_ListCapabilities.md)
++  [ListCertificateAuthorities](API_ListCertificateAuthorities.md)
 +  [ListClusters](API_ListClusters.md)
 +  [ListEksAnywhereSubscriptions](API_ListEksAnywhereSubscriptions.md)
 +  [ListFargateProfiles](API_ListFargateProfiles.md)

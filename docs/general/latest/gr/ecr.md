@@ -92,7 +92,7 @@ The following table provides the default limits for Amazon Elastic Container Reg
 | Rate of image scans | Each supported Region: 1 | No | The maximum number of image scans per image, per 24 hours. |
 | Registered repositories | Each supported Region: 100,000 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/ecr/quotas/L-CFEB8E8D)  | The maximum number of repositories that you can create in this account in the current Region. |
 | Rules per lifecycle policy | Each supported Region: 50 | No | The maximum number of rules in a lifecycle policy |
-| Rules per replication configuration | ca-central-1: 25<br />Each of the other supported Regions: 10 | No | The maximum number of rules in a replication configuration. |
+| Rules per replication configuration | Each supported Region: 25 | No | The maximum number of rules in a replication configuration. |
 | Tags per image | Each supported Region: 1,000 | No | The maximum number of tags per image. |
 | Unique destinations across all rules in a replication configuration | Each supported Region: 25 | No | The maximum number of unique destinations across all rules in a replication configuration. |
 

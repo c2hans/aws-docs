@@ -21,7 +21,7 @@ Amazon RDS features are different from engine-native features and options. For m
 + [IAM database authentication](Concepts.RDS_Fea_Regions_DB-eng.Feature.IamDatabaseAuthentication.md)
 + [Kerberos authentication](Concepts.RDS_Fea_Regions_DB-eng.Feature.KerberosAuthentication.md)
 + [Multi-AZ DB clusters](Concepts.RDS_Fea_Regions_DB-eng.Feature.MultiAZDBClusters.md)
-+ [Performance Insights](Concepts.RDS_Fea_Regions_DB-eng.Feature.PerformanceInsights.md)
++ [Database Insights](Concepts.RDS_Fea_Regions_DB-eng.Feature.PerformanceInsights.md)
 + [RDS Custom](Concepts.RDS_Fea_Regions_DB-eng.Feature.RDSCustom.md)
 + [Amazon RDS Proxy](Concepts.RDS_Fea_Regions_DB-eng.Feature.RDSProxy.md)
 + [Secrets Manager integration](Concepts.RDS_Fea_Regions_DB-eng.Feature.SecretsManager.md)

@@ -93,7 +93,7 @@ Look for examples of throttling in the following resources:
 ### Check the top hosts and top users
 <a name="ams-waits.client-connection.top-hosts"></a>
 
-Use Performance Insights to check the top hosts and top users. For more information, see [Analyzing metrics with the Performance Insights dashboard](USER_PerfInsights.UsingDashboard.md).
+Use Performance Insights to check the top hosts and top users. For more information, see [Database Insights](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_DatabaseInsights.html).
 
 ### Query the performance\_schema tables
 <a name="ams-waits.client-connection.perf-schema"></a>

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/integrate-publ
 # Integrate a published dashboard into the agent workspace
 <a name="integrate-published-dashboard"></a>
 
-You can create a customized dashboard, and then surface it in the agent workspace. You may want to do this if you don't want agents to have access to all the widgets or metrics on the default **Agent workspace performance dashboard**.
+You can create a customized dashboard, and then surface it in the agent workspace. You might want to do this if you don't want agents to have access to all the widgets or metrics on the default **Agent workspace performance dashboard**.
 
 **How often do embedded dashboards and widgets refresh?**
 + Dashboards and widgets embedded in the agent workspace refresh every 2 minutes.
@@ -16,7 +16,7 @@ Following is a high-level overview of how you integrate a published dashboard in
 
 1. Publish your Connect Customer dashboard. For instructions, see [Publish reports](publish-reports.md).
 
-1. Integrate your published Connect Customer dashboard into the agent workspace. For instructions, see [Integrate third-party applications (3p apps)](3p-apps.md).
+1. Integrate your published Connect Customer dashboard into the agent workspace. For instructions, see [Integrate third-party applications (3P apps)](3p-apps.md).
 **Note**
 When you perform this step, ensure the access URL includes `&_appLayoutMode=embedded` at the end. This ensures the website navigation and header are hidden.
 

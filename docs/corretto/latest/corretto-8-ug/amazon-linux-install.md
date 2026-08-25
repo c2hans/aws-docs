@@ -79,24 +79,3 @@ If using the JDK you should also run:
 ```
 sudo alternatives --config javac
 ```
-
-## Uninstall Amazon Corretto 8
-<a name="amazon-linux-uninstall"></a>
-
-You can uninstall Amazon Corretto 8 with the following commands.
-
-Uninstall JRE:
-
-**Example**
-
-```
-sudo yum remove java-1.8.0-amazon-corretto
-```
-
-Uninstall JDK:
-
-**Example**
-
-```
-sudo yum remove java-1.8.0-amazon-corretto-devel
-```

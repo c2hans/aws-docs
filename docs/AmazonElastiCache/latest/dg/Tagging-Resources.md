@@ -64,7 +64,7 @@ The following table describes the ElastiCache resources that can be tagged, and 
 | usergroup | Yes | Yes |
 
 **Note**
-You cannot tag Global Datastores.
+You cannot tag Global Datastores. However, you can tag the individual member replication groups and clusters within a Global Datastore.
 
 You can apply tag-based resource-level permissions in your IAM policies to the ElastiCache API actions that support tagging on creation to implement granular control over the users and groups that can tag resources on creation. Your resources are properly secured from creation—tags that are applied immediately to your resources. Therefore any tag-based resource-level permissions controlling the use of resources are immediately effective. Your resources can be tracked and reported on more accurately. You can enforce the use of tagging on new resources, and control which tag keys and values are set on your resources.
 

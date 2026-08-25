@@ -30,7 +30,7 @@ This guide fits into a larger context of AWS multi-Region deployments, as covere
 + DynamoDB (without global tables) is a Regional service, which means that it is highly available and intrinsically resilient to failures of infrastructure, including the failure of an entire Availability Zone. A single-Region DynamoDB table is designed for 99.99% availability. For more information, see the [DynamoDB service-level agreement](https://aws.amazon.com/dynamodb/sla/) (SLA).
 + A DynamoDB global table replicates its data between two or more Regions. A multi-Region DynamoDB table is designed for 99.999% availability. With proper planning, global tables can help create an architecture that is resilient to Regional failures.
 + DynamoDB doesn’t have a global endpoint. All requests are made to a Regional endpoint that accesses the global table instance that’s local to that Region.
-+ Calls to DynamoDB should not go across Regions. The best practice is for an application that is homed to one Region to directly access only the local DynamoDB endpoint for its Region. If problems are detected within a Region (in the DynamoDB layer or in the surrounding stack), end user traffic should be routed to a different application endpoint that’s hosted in a different Region. Global tables ensure that the application homed in every Region has access to the same data.
++ Calls to DynamoDB should not go across Regions. The best practice is for an application that is homed to one Region to directly access only the local DynamoDB endpoint for its Region. If problems are detected within a Region (in the DynamoDB layer or in the surrounding stack), end user traffic should be routed to a different application endpoint that’s hosted in a different Region. Global tables make sure that the application homed in every Region has access to the same data.
 
 ### Consistency modes
 <a name="bp-global-table-design-prescriptive-guidance-consistency"></a>
@@ -114,7 +114,7 @@ Accounts also provide a hard boundary for cost allocation. Each account pays onl
 DynamoDB global tables have very few controls but still require careful consideration. You must determine your write mode, routing model, and evacuation processes. You must instrument your application across every Region and be ready to adjust your routing or perform an evacuation to maintain global health. The reward is having a globally distributed dataset with low-latency read and write operations that is designed for 99.999% availability.
 
 For more information about DynamoDB global tables, see the following resources:
-+ [DynamoDB documentation](https://docs.aws.amazon.com/dynamodb/)
++ [Global tables - multi-active, multi-Region replication](GlobalTables.md)
 + [Amazon Application Recovery Controller](https://aws.amazon.com/application-recovery-controller/)
 + [Readiness check in ARC](https://docs.aws.amazon.com/r53recovery/latest/dg/recovery-readiness.html) (AWS documentation)
 + [Route 53 routing policies](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html)

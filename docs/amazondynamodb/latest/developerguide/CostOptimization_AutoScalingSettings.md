@@ -51,7 +51,7 @@ You can use either the AWS CLI or AWS Management Console to monitor and identify
    aws application-autoscaling describe-scaling-policies --service-namespace dynamodb --resource-id "table/<table-name>/index/<gsi-name>”
    ```
 
-   The values we're interested in for the auto scaling policies are highlighted below. We want to ensure that the target value is greater than 50% to avoid over-provisioning. You should obtain a result similar to the following:
+   The values we're interested in for the auto scaling policies are highlighted below. We want to make sure that the target value is greater than 50% to avoid over-provisioning. You should obtain a result similar to the following:
 
    ```
    {
@@ -215,7 +215,7 @@ The following picture shows a sample workload that always keeps the 70% target u
 
 ![A table's throughput at 70% target utilization, even as auto scaling rules adjust capacity.](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/CostOptimization/AutoScalingSettings3.png)
 
-Zooming in, we can see there was a spike in the application that triggered the 70% auto scaling threshold, forcing the auto scaling to kick in and provide the extra capacity required for the table. The scheduled auto scaling action will affect maximum and minimum values, and it is your responsibility to set them up.
+Zooming in, you can see there was a spike in the application that triggered the 70% auto scaling threshold, forcing the auto scaling to kick in and provide the extra capacity required for the table. The scheduled auto scaling action will affect maximum and minimum values, and it is your responsibility to set them up.
 
 ![Spike in a DynamoDB table throughput that initiates auto scaling to provide required extra capacity.](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/CostOptimization/AutoScalingSettings4.png)
 
@@ -224,7 +224,7 @@ Zooming in, we can see there was a spike in the application that triggered the 7
 ## How to address spiky workloads with unknown patterns
 <a name="CostOptimization_AutoScalingSettings_UnknownPatterns"></a>
 
-In this scenario, the application uses a very low utilization target because you don’t know the application patterns yet, and you want to ensure your workload is not throttled.
+In this scenario, the application uses a very low utilization target because you don’t know the application patterns yet, and you want to make sure your workload is not throttled.
 
 Consider using [on-demand capacity mode](capacity-mode.md#capacity-mode-on-demand) instead. On-demand tables are perfect for spiky workloads where you don’t know the traffic patterns. With on-demand capacity mode, you pay per request for the data reads and writes your application performs on your tables. You do not need to specify how much read and write throughput you expect your application to perform, as DynamoDB instantly accommodates your workloads as they ramp up or down.
 

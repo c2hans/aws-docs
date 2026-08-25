@@ -10,14 +10,14 @@ AWS Data Exports allows you to create exports of Cost and Usage Report 2.0 (CUR 
 CUR 2.0 provides the following improvements over CUR:
 + **Consistent schema:** CUR 2.0 contains a fixed set of columns, whereas the columns included for CUR can vary monthly depending on your usage of AWS services, cost categories, and resource tags.
 + **Nested data:** CUR 2.0 reduces data sparsity by collapsing certain columns from CUR into individual columns with key-value pairs of the collapsed columns. Optionally, you can query the nested keys in Data Exports as separate columns to match the original CUR schema and data.
-+ **Additional columns:** CUR 2.0 contains two additional columns: **bill\_payer\_account\_name** and **line\_item\_usage\_account\_name**.
++ **Additional columns:** CUR 2.0 contains two additional columns: **bill\_payer\_account\_name**, **line\_item\_usage\_account\_name**, **line\_item\_iam\_principal** and **line\_item\_user\_identifier**.
 
 The following table outlines the differences between CUR 2.0 and legacy CUR in more detail:
 
 |  | CUR 2.0 | Legacy CUR |
 | --- | --- | --- |
 | Data schema | Fixed schema.<br />For the complete column list, see [Cost and Usage Report (CUR) 2.0](https://docs.aws.amazon.com/cur/latest/userguide/table-dictionary-cur2.html). | Dynamic schema based on AWS usage and activity.<br />For the partial column list, see [Data dictionary](https://docs.aws.amazon.com/cur/latest/userguide/data-dictionary.html). |
-| Exclusive columns | `bill_payer_account_name`<br />`line_item_usage_account_name` | None |
+| Exclusive columns | `bill_payer_account_name`<br />`line_item_usage_account_name`<br />`line_item_iam_principal`<br />`line_item_user_identifier` | None |
 | Export customization | Enables basic SQL for column selections, row filtering, and column aliasing (renaming).<br />For details about the supported SQL syntax, see [Data query](https://docs.aws.amazon.com/cur/latest/userguide/dataexports-data-query.html). | Not supported. You must manually set up Athena/QuickSight to create the view you require. |
 | Nested columns with key-value pairs | `resource_tags`<br />`cost_category`<br />`product`<br />`discount` | No nested columns.<br />The four nested columns in CUR 2.0 are split into separate columns in legacy CUR (for example, `resource_tags_user_creator`). |
 | File delivery destination | S3 bucket | S3 bucket |

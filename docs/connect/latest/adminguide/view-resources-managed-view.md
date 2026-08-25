@@ -79,7 +79,7 @@ The following image shows an example of a **Detail view**. It has a page heading
 ------
 #### [ List view ]
 
-The **List view** is for displaying information as a list of items with titles and descriptions. Items may also act as links with actions attached. It also optionally supports the standard back navigation and persistent context header.
+The **List view** is for displaying information as a list of items with titles and descriptions. Items might also act as links with actions attached. It also optionally supports the standard back navigation and persistent context header.
 
 Interactive [documentation](https://d3irlmavjxd3d8.cloudfront.net/?path=/docs/aws-managed-views-list--with-all) for **List view**
 
@@ -89,7 +89,7 @@ The following image shows an example of a List view. It has one column with thre
 
 **Items**
 + Required, will display these items as a list.
-+ Each item may have a Heading, Description, Icon, and Id.
++ Each item might have a Heading, Description, Icon, and Id.
   + All properties are optional.
   + When Id is defined, the output will include the value as part of output.
 
@@ -187,7 +187,7 @@ The following image shows an example of a Form view for a car rental reservation
 
 **Wizard (Optional)**
 + Display **ProgressTracker** at the left side of the view.
-+ Each item may have a Heading, Description, and Optional.
++ Each item might have a Heading, Description, and Optional.
   + Heading is required
 
 **Back (Optional)**

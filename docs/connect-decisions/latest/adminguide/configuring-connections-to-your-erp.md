@@ -66,7 +66,7 @@ source_url: https://docs.aws.amazon.com/connect-decisions/latest/adminguide/conf
 
    ```
    {
-       "Version": "2012-10-17",
+       "Version": "2012-10-17"		 	 	 ,
        "Statement": [
            {
                "Sid": "Statement1",
@@ -95,7 +95,7 @@ source_url: https://docs.aws.amazon.com/connect-decisions/latest/adminguide/conf
 
    ```
    {
-      "Version":"2012-10-17",
+      "Version":"2012-10-17"		 	 	 ,
       "Statement":[
          {
             "Effect":"Allow",

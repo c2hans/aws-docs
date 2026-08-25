@@ -10,7 +10,7 @@ As a best practice, users assigned to the Connect Customer **Admin** security pr
 
 This method ensures the appropriate levels security.
 
-However, if there's an emergency, you can log in from the Connect Customer console using your AWS account credentials. For example, you may need to login in this way in the following situations:
+However, if there's an emergency, you can log in from the Connect Customer console using your AWS account credentials. For example, you might need to login in this way in the following situations:
 + You forgot your Connect Customer administrator password and no other Connect Customer administrators are around to reset it.
 + Someone deleted the Connect Customer **Admin** security profile by mistake.
 

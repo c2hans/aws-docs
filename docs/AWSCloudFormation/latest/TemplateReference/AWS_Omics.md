@@ -14,6 +14,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::Omics::Reference](aws-resource-omics-reference.md)
 + [AWS::Omics::ReferenceStore](aws-resource-omics-referencestore.md)
 + [AWS::Omics::Run](aws-resource-omics-run.md)
++ [AWS::Omics::RunCache](aws-resource-omics-runcache.md)
 + [AWS::Omics::RunGroup](aws-resource-omics-rungroup.md)
 + [AWS::Omics::SequenceStore](aws-resource-omics-sequencestore.md)
 + [AWS::Omics::Task](aws-resource-omics-task.md)

@@ -21,7 +21,7 @@ New Connect Customer instances created after this feature's launch date automati
 
 1. Locate the **Show View** block in the flow. Select it to open its configuration.
 
-1. Under **View**, a view name may already be displayed, but you must select the AWS managed view titled **after contact work** from the dropdown.
+1. Under **View**, a view name might already be displayed, but you must select the AWS managed view titled **after contact work** from the dropdown.
 
 1. Save and publish the flow.
 

@@ -89,7 +89,7 @@ EC2 Instances that have failed over must resolve via DNS the regional DRS endpoi
 
    1.  **Terminate the source region EC2 instances (A1).**
 
-       These have now been replaced by the new instances launched in step 2 above (EC2 failed back instances, A3). You might have stopped these instances after the failover, and you can now terminate them using the AWS EC2 Console.
+       These have now been replaced by the new instances launched in step 2 above (EC2 failed back instances, A4). You might have stopped these instances after the failover, and you can now terminate them using the AWS EC2 Console.
 
    1.  **Remove the recovery instance (A3) in the source region.**
 

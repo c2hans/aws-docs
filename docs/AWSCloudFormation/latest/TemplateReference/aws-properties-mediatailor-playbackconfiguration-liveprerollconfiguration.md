@@ -19,6 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
+  "[AdDecisionServerConfiguration](#cfn-mediatailor-playbackconfiguration-liveprerollconfiguration-addecisionserverconfiguration)" : {{PreRollAdDecisionServerConfiguration}},
   "[AdDecisionServerUrl](#cfn-mediatailor-playbackconfiguration-liveprerollconfiguration-addecisionserverurl)" : {{String}},
   "[MaxDurationSeconds](#cfn-mediatailor-playbackconfiguration-liveprerollconfiguration-maxdurationseconds)" : {{Integer}}
 }
@@ -28,12 +29,20 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-mediatailor-playbackconfiguration-liveprerollconfiguration-syntax.yaml"></a>
 
 ```
+  [AdDecisionServerConfiguration](#cfn-mediatailor-playbackconfiguration-liveprerollconfiguration-addecisionserverconfiguration): {{
+    PreRollAdDecisionServerConfiguration}}
   [AdDecisionServerUrl](#cfn-mediatailor-playbackconfiguration-liveprerollconfiguration-addecisionserverurl): {{String}}
   [MaxDurationSeconds](#cfn-mediatailor-playbackconfiguration-liveprerollconfiguration-maxdurationseconds): {{Integer}}
 ```
 
 ## Properties
 <a name="aws-properties-mediatailor-playbackconfiguration-liveprerollconfiguration-properties"></a>
+
+`AdDecisionServerConfiguration`  <a name="cfn-mediatailor-playbackconfiguration-liveprerollconfiguration-addecisionserverconfiguration"></a>
+The configuration for the ad decision server (ADS) for live pre-roll ads. The configuration contains settings that control how MediaTailor processes VAST responses for pre-roll ad breaks.
+*Required*: No
+*Type*: [PreRollAdDecisionServerConfiguration](aws-properties-mediatailor-playbackconfiguration-prerolladdecisionserverconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `AdDecisionServerUrl`  <a name="cfn-mediatailor-playbackconfiguration-liveprerollconfiguration-addecisionserverurl"></a>
 The URL for the ad decision server (ADS) for pre-roll ads. This includes the specification of static parameters and placeholders for dynamic parameters. AWS Elemental MediaTailor substitutes player-specific and session-specific parameters as needed when calling the ADS. Alternately, for testing, you can provide a static VAST URL. The maximum length is 25,000 characters.

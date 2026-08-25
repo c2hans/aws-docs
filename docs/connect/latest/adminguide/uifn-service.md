@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/uifn-service.h
 
 A Universal International Freephone number (UIFN) is a unique **inbound only** freephone number that can be used throughout the world. It provides toll-free calling from international locations to your contact center.
 
-You can use UIFN with Connect Customer in [many countries](#list-of-uifn-countries) registered with the International Telecommunications Union (ITU). The ITU supports the administration of the UIFN service. Availability depends on carrier support and may vary by country.
+You can use UIFN with Connect Customer in [many countries](#list-of-uifn-countries) registered with the International Telecommunications Union (ITU). The ITU supports the administration of the UIFN service. Availability depends on carrier support and might vary by country.
 
 **Note**
 Connect Customer allows you to enable UIFNs in as many countries as you need, however, it requires a minimum of 5 countries.
@@ -28,7 +28,7 @@ To request a UIFN within a specific AWS Region, create an AWS Support case. In t
 
   For number portability, after you open a case, Amazon will provide you with *Service Provider Change Authorization and Designation of Agency* document.
 
-Connect Customer can route UIFNs to multiple AWS Regions. For example, if a UIFN is enabled for Australia, it can be routed to your Connect Customer instance that is located in the Asia Pacific (Sydney) Region. If a UIFN is enabled for **more** countries, each country can be routed to your Connect Customer instance, which may be in any supported AWS Region.
+Connect Customer can route UIFNs to multiple AWS Regions. For example, if a UIFN is enabled for Australia, it can be routed to your Connect Customer instance that is located in the Asia Pacific (Sydney) Region. If a UIFN is enabled for **more** countries, each country can be routed to your Connect Customer instance, which might be in any supported AWS Region.
 
 The following image shows the body of a sample UIFN request submitted to AWS Support. This request is for two UIFNs. The first is for a UIFN that is enabled for Argentina, Brazil, and Colombia, and connected to a Connect Customer instance in the US West (Oregon) Region. The second request is for a UIFN that is enabled for Japan, Australia, and New Zealand and connected to a Connect Customer instance located in the Asia Pacific (Singapore) Region.
 
@@ -36,7 +36,7 @@ The following image shows the body of a sample UIFN request submitted to AWS Sup
 
 **Important**
 **UIFN is an inbound-only service**. Before opening a ticket to request a UIFN:
-Ensure you understand that this number cannot be used for outbound.
+Make sure you understand that this number cannot be used for outbound.
 Check the National reachability of the country in the following section.
 Full National reachability means the UIFN reaches all local (in-country) networks. UIFNs in some countries have limited reachability and will only work with specific carriers/networks where you need to use different codes to dial the number (for example, Japan).
 
@@ -65,7 +65,7 @@ Full National reachability means the UIFN reaches all local (in-country) network
 | Greece | 00-800-XXXX-XXXX<br />National reachability: all fixed; Cosmotel mobile network | 10-15 |
 | Guadeloupe | 00-800-XXXX-XXXX<br />National reachability: full | 30-60 |
 | Hong Kong | 006-800-XXXX-XXXX<br />National reachability: full<br />CLI not guaranteed. | 20-40 |
-| Hungary | 00-800-XXXX-XXXX<br />National reachability: full<br />Activation of international direct dialing service is required for calling parties for both fixed and mobile lines. <br />Airtime charges may apply when calling from mobiles. | 10-15 |
+| Hungary | 00-800-XXXX-XXXX<br />National reachability: full<br />Activation of international direct dialing service is required for calling parties for both fixed and mobile lines. <br />Airtime charges might apply when calling from mobiles. | 10-15 |
 | Iceland | 00-800-XXXX-XXXX<br />National reachability: all fixed; Iceland Telecom, IMC, Vodafone mobile networks. | 10-20 |
 | Israel | Dialing format:+  LANLI: 012800XXXXXXX <br />+  BEZEQ: 013800XXXXXXX <br />+  BARAK: 014800XXXXXXX <br />National reachability: full | 20-50 |
 | Italy | 00-800-XXXX-XXXX<br />National reachability: all fixed networks, including Vatican and San Marino | 10-15 |
@@ -87,7 +87,7 @@ Full National reachability means the UIFN reaches all local (in-country) network
 | Reunion | 00-800-XXXX-XXXX<br />National reachability: full | 30-60 |
 | Romania | 00-800-XXXX-XXXX<br />National reachability: Orange fixed and mobile network, Rodasy fixed and mobile network, Romtelekom fixed and mobile network, Cosmote mobile network | 10-30 |
 | Saint Pierre And Miquelon | 00-800-XXXX-XXXX<br />National reachability: full | 30-60 |
-| Singapore | 001 800 XXXX XXXX<br />Activation of international direct dialing service is required for calling parties of both fixed and mobile lines.<br />Airtime charges may apply when calling from mobiles.<br />Calling from Starhub payphones is not supported. | 20-30 |
+| Singapore | 001 800 XXXX XXXX<br />Activation of international direct dialing service is required for calling parties of both fixed and mobile lines.<br />Airtime charges might apply when calling from mobiles.<br />Calling from Starhub payphones is not supported. | 20-30 |
 | Slovakia | 00-800-XXXX-XXXX<br />National reachability: full | 15-30 |
 | Slovenia | 00-800-XXXX-XXXX<br />National reachability: full | 15-30 |
 | South Africa | 00-800-XXXX-XXXX<br />National reachability: partial<br />Not reachable from MTN and prepaid subscribers. | 10-15 |

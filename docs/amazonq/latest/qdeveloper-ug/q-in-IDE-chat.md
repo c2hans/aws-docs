@@ -5,6 +5,9 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/q-in-IDE-ch
 # Chatting with Amazon Q Developer about code
 <a name="q-in-IDE-chat"></a>
 
+**End of support notice**
+On April 30, 2027, AWS will discontinue support for Amazon Q Developer IDE plugins. For capabilities similar to Amazon Q Developer IDE plugins, explore Kiro to access the latest models and features, including agentic coding, chat and MCP support. For more information, see [Amazon Q Developer IDE plugins end of support](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/q-developer-ide-end-of-support.html).
+
 Chat with Amazon Q Developer in your integrated development environment (IDE) to ask questions about building at AWS and for assistance with software development. Amazon Q can explain coding concepts and code snippets, generate code and unit tests, and improve code, including debugging or refactoring.
 
 **Topics**
@@ -26,7 +29,7 @@ Chat with Amazon Q Developer in your integrated development environment (IDE) to
 <a name="working-with-q-in-IDE"></a>
 
 ### Using chat
-<a name="w2aac11c16b7b3"></a>
+<a name="w2aac11c18b9b3"></a>
 
  To start chatting with Amazon Q, choose the Amazon Q icon from the navigation bar in your IDE and enter your question in the text bar. To start chatting with Amazon Q in Visual Studio, choose **View** from the main menu and then choose **Amazon Q chat**.
 

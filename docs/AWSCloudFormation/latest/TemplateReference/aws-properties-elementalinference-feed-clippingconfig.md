@@ -19,7 +19,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
-  "[CallbackMetadata](#cfn-elementalinference-feed-clippingconfig-callbackmetadata)" : {{String}}
+  "[CallbackMetadata](#cfn-elementalinference-feed-clippingconfig-callbackmetadata)" : {{String}},
+  "[DataSourceConfiguration](#cfn-elementalinference-feed-clippingconfig-datasourceconfiguration)" : {{DataSourceConfiguration}}
 }
 ```
 
@@ -28,6 +29,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
   [CallbackMetadata](#cfn-elementalinference-feed-clippingconfig-callbackmetadata): {{String}}
+  [DataSourceConfiguration](#cfn-elementalinference-feed-clippingconfig-datasourceconfiguration): {{
+    DataSourceConfiguration}}
 ```
 
 ## Properties
@@ -39,4 +42,10 @@ Metadata that you want to include in the event that Elemental Inference sends to
 *Type*: String
 *Pattern*: `^[\w \-\.',@:;]*$`
 *Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`DataSourceConfiguration`  <a name="cfn-elementalinference-feed-clippingconfig-datasourceconfiguration"></a>
+Property description not available.
+*Required*: No
+*Type*: [DataSourceConfiguration](aws-properties-elementalinference-feed-datasourceconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

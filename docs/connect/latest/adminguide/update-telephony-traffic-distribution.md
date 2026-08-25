@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/update-telepho
 You use the [UpdateTrafficDistribution](https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateTrafficDistribution.html) API to distribute telephony traffic and [shift agents](update-agents-across-regions.md) across Regions.
 
 **Note**
-When you shift telephony traffic, also shift agents and/or agent sign-ins to ensure they can handle the calls in the other Region. If you don't shift the agents, voice calls will go to the shifted Region but there won't be any agents available to receive the calls.
+When you shift telephony traffic, also shift agents or agent sign-ins to make sure they can handle the calls in the other Region. If you don't shift the agents, voice calls will go to the shifted Region but there won't be any agents available to receive the calls.
 
 After you have claimed phone numbers to your traffic distribution group, you can use the [UpdateTrafficDistribution](https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateTrafficDistribution.html) API to distribute inbound voice contacts across linked instances in a given traffic distribution group in 10% increments.
 

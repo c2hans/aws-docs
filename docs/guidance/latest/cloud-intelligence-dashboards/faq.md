@@ -305,6 +305,21 @@ For very large CUR files, Athena may time out trying to query the data for summa
 
 Edit your Glue crawler to refresh the metadata from the partitions by following [these steps](https://repost.aws/knowledge-center/athena-hive-partition-schema-mismatch).
 
+#### I am getting the error "AccessDeniedException" for "athena:GetWorkGroup" on "CidQuickSightDataSourceRole" - what do I do?
+<a name="i-am-getting-the-error-accessdeniedexception-for-athenagetworkgroup-on-cidquicksightdatasourcerole-what-do-i-do"></a>
+
+This error appears during `cid-cmd --recursive` updates or during a Quick Sight dataset refresh when the `CidQuickSightDataSourceRole` is missing the Athena workgroup permission required to query data. The root cause is that the data source role does not have permission to call `athena:GetWorkGroup`.
+
+To fix this, update the `Cloud-Intelligence-Dashboards` CloudFormation stack to the latest version of [the template](https://aws-managed-cost-intelligence-dashboards.s3.amazonaws.com/cfn/cid-cfn.yml). The permission was added in version 4.4.8 and later, so updating the stack resolves the error automatically.
+
+If you cannot update the stack immediately, you can apply a manual workaround by attaching the `AWSQuicksightAthenaAccess` managed policy to the `CidQuickSightDataSourceRole`:
+
+```
+arn:aws:iam::aws:policy/service-role/AWSQuicksightAthenaAccess
+```
+
+After updating the stack (or attaching the policy), retry the `cid-cmd` update or the Quick Sight dataset refresh.
+
 #### Can we use Incremental Refresh for CUR Datasets?
 <a name="can-we-use-incremental-refresh-for-cur-datasets"></a>
 

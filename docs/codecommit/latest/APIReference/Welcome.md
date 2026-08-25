@@ -110,4 +110,4 @@ Triggers, by calling the following:
 
 For information about how to use AWS CodeCommit, see the [AWS CodeCommit User Guide](https://docs.aws.amazon.com/codecommit/latest/userguide/welcome.html).
 
-This document was last published on August 18, 2026.
+This document was last published on August 24, 2026.

@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::Batch::ComputeEnvironment ManagedInstancesLocalStorageConfiguration
 <a name="aws-properties-batch-computeenvironment-managedinstanceslocalstorageconfiguration"></a>
 
-<a name="aws-properties-batch-computeenvironment-managedinstanceslocalstorageconfiguration-description"></a>The `ManagedInstancesLocalStorageConfiguration` property type specifies Property description not available. for an [AWS::Batch::ComputeEnvironment](aws-resource-batch-computeenvironment.md).
+The local storage configuration for Amazon ECS Managed Instances.
 
 ## Syntax
 <a name="aws-properties-batch-computeenvironment-managedinstanceslocalstorageconfiguration-syntax"></a>
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-batch-computeenvironment-managedinstanceslocalstorageconfiguration-properties"></a>
 
 `UseLocalStorage`  <a name="cfn-batch-computeenvironment-managedinstanceslocalstorageconfiguration-uselocalstorage"></a>
-Property description not available.
+Specifies whether instance store volumes (local NVMe SSDs) are available to containers. When enabled, containers can use the instance store for high-performance temporary storage.
 *Required*: No
 *Type*: Boolean
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

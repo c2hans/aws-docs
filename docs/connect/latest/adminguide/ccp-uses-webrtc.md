@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/ccp-uses-webrt
 # How Contact Control Panel (CCP) uses WebRTC
 <a name="ccp-uses-webrtc"></a>
 
-This advanced topic is for IT admins who may be interested in how Contact Control Panel (CCP) delivers voice calls. It also provides some networking details.
+This advanced topic is for IT admins who might be interested in how Contact Control Panel (CCP) delivers voice calls. It also provides some networking details.
 
 CCP uses WebRTC as the underlying technology for enabling real-time communication between contact center agents and customers. It enables agents to manage inbound and outbound calls and video conferences directly from their web browser.
 
@@ -39,7 +39,7 @@ A server that is used to bypass the Symmetric NAT restriction by opening a conne
 A component that manages TURN endpoints. The endpoints enable media relay by using the cloud when applications can't stream media peer-to-peer.
 
 Session Description Protocol (SDP)
-A standard for describing the multimedia content of the connection such as resolution, formats, codecs, encryption, and more, so that both peers can understand each other once the data is transferring.
+A standard for describing the multimedia content of the connection such as resolution, formats, codecs, encryption, and more, so that both peers can understand each other after the data is transferring.
 
 SDP Offer
 An SDP message sent by an agent which generates a session description to create or modify a session. It describes the aspects of desired media communication.
@@ -85,8 +85,8 @@ The following diagram illustrates the communication between CCP and Connect Cust
 
 ## Best practices
 <a name="webrtc-ccp-bp"></a>
-+ For the most reliable and best audio experience, it is strongly recommended to ensure that media traffic between agent workstation and AWS is exchanged directly and does not traverse through VPNs or other network accelerator hops.
-+ To ensure your business is able to successfully help WebRTC connections and mitigate error behaviors, ensure you have allow-listed incoming UDP traffic on port 3478 (SEND/RECEIVE). For more information, see [Option 1 (recommended): Replace Amazon EC2 and CloudFront IP range requirements with a domain allowlist](ccp-networking.md#option1). In the table, see the row for `TurnNlb-*.elb.region.amazonaws.com`.
++ For the most reliable and best audio experience, it is strongly recommended to make sure that media traffic between agent workstation and AWS is exchanged directly and does not traverse through VPNs or other network accelerator hops.
++ To ensure your business is able to successfully help WebRTC connections and mitigate error behaviors, make sure you have allow-listed incoming UDP traffic on port 3478 (SEND/RECEIVE). For more information, see [Option 1 (recommended): Replace Amazon EC2 and CloudFront IP range requirements with a domain allowlist](ccp-networking.md#option1). In the table, see the row for `TurnNlb-*.elb.region.amazonaws.com`.
 + If you're using [Option 2 (not recommended): Allow IP address ranges](ccp-networking.md#option2), we recommend the following to mitigate error behaviors:
   + Monitor the IP ranges allow-listed by your business for Connect Customer.
   + Ensure changes within the IP ranges are monitored.

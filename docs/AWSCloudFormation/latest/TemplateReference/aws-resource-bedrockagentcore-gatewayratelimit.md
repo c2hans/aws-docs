@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::BedrockAgentCore::GatewayRateLimit
 <a name="aws-resource-bedrockagentcore-gatewayratelimit"></a>
 
-Creates a rate limit for a gateway. Rate limits define throttling rules for each dimension that control request rates, token consumption rates, and concurrent connections through the gateway.
+Shared fields for `GatewayRateLimit` responses.
 
 ## Syntax
 <a name="aws-resource-bedrockagentcore-gatewayratelimit-syntax"></a>
@@ -80,7 +80,7 @@ The unique identifier of the gateway.
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `RateLimitId`  <a name="cfn-bedrockagentcore-gatewayratelimit-ratelimitid"></a>
-The unique identifier of the rate limit.
+The unique identifier of the created rate limit.
 *Required*: No
 *Type*: String
 *Pattern*: `^[a-zA-Z0-9][a-zA-Z0-9\-_\.]{0,62}[a-zA-Z0-9]$`

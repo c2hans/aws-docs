@@ -23,7 +23,7 @@ This is a guide on how to create an EventBridge rule to log Connect Customer fai
 
 1. With **AWS events or EventBridge partner events** selected under **Events**, select the **Use pattern form** option under **Event pattern**. This is where you will define the pattern to match for triggering the rule.
 
-1. Type and select **Amazon Connect** under the **AWS service** dropdown to narrow down the event types. Select the desired event type in the dropdown below. Choose **Next** once the pattern is set up.
+1. Type and select **Amazon Connect** under the **AWS service** dropdown to narrow down the event types. Select the desired event type in the dropdown below. Choose **Next** after the pattern is set up.
 
    To subscribe to EventBridge event types, create a custom EventBridge rule that matches the following:
    + `"source"` = `"aws.connect"`
@@ -73,14 +73,14 @@ The following is an example EventBridge payload when the rule is matched:
 ## Common errors
 <a name="performance-evaluation-events-errors"></a>
 
-The following errors may occur when the system eventually fails to process evaluations after multiple retry attempts.
+The following errors might occur when the system eventually fails to process evaluations after multiple retry attempts.
 
 ### Automated evaluation submission errors
 <a name="automated-evaluation-submission-errors"></a>
 
 | Error | Error message |
 | --- | --- |
-| AUTOMATED\_SUBMISSION\_FAILED | Automated contact evaluation submission failed because some of the questions could not be answered. Please verify the evaluation form and/or the Connect Customer rule configurations. |
+| AUTOMATED\_SUBMISSION\_FAILED | Automated contact evaluation submission failed because some of the questions could not be answered. Please verify the evaluation form or the Connect Customer rule configurations. |
 | ANALYSIS\_FILE\_ERROR | Automated contact evaluation submission failed due to an error when searching/retrieving/parsing the analysis file. |
 | INTERNAL\_SERVER\_ERROR | Automated contact evaluation submission failed due to an internal server error. Please expect delayed processing. |
 | QUOTA\_EXCEEDED\_ERROR | Automated contact evaluation submission failed because the remaining quota for using generative AI to automatically answer evaluation questions for the contact is insufficient. |

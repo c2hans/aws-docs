@@ -51,10 +51,11 @@ If any field contains escaped characters (for example, `\n`), convert them to th
 1. Amazon SNS requires the string to sign to follow a strict, fixed field order for verification. **Only the explicitly required fields must be included**—no extra fields can be added. Optional fields, such as `Subject`, must be included only if present in the message and must appear in the exact position defined by the required field order. For example:
 
    ```
-   KeyNameOne\nValueOne\nKeyNameTwo\nValueTwo
+   KeyNameOne\nValueOne\nKeyNameTwo\nValueTwo\n
    ```
 **Important**
-Do not add a newline character at the end of the string.
+The complete string to sign ends with a single trailing newline character after the last field's value. Do not add any newline characters beyond that one.
+The example scripts on this page add the trailing newline for you. The shell `echo` command and the `<<<` here-string each append the trailing newline, so the `STRING_TO_SIGN` value itself omits it. If you build the string in another language, such as Python, Java, Go, or Rust, append the single trailing newline yourself. Otherwise, your code cannot verify the signature.
 
 1. Arrange the** key-value pairs** in byte-sort order (alphabetical by key name).
 

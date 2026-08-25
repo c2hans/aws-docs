@@ -23,7 +23,7 @@ By default, full access to Performance Insights is allowed through the interface
 ## Availability
 <a name="rds-and-vpc-interface-endpoints-availability"></a>
 
-Performance Insights API currently supports VPC endpoints in AWS Regions that support Performance Insights. For information about Performance Insights availability, see [Supported Regions and DB engines for Performance Insights in Amazon RDS](Concepts.RDS_Fea_Regions_DB-eng.Feature.PerformanceInsights.md) .
+Performance Insights API currently supports VPC endpoints in AWS Regions that support Performance Insights. For information about Performance Insights availability, see [Supported Regions and DB engines for Database Insights in Amazon RDS](Concepts.RDS_Fea_Regions_DB-eng.Feature.PerformanceInsights.md) .
 
 ## Create an interface endpoint for Performance Insights
 <a name="vpc-endpoint-create"></a>

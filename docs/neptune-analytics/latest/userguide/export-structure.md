@@ -12,6 +12,13 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/expor
 
  The exception to this label-based separation occurs if you specify to export [ all labels together in the provided filter](https://docs.aws.amazon.com/neptune-analytics/latest/userguide/export-filter-samples.html#export-filter-samples-2). In this case, the label column will indicate the potentially different labels for each vertex and edge (when a vertex or edge has multiple labels, they will both be specified, separated by semi-colons `‘;’`), and all files for vertices and/or edges will share the same schema. It is important to note that vertices and edges will always be output to separate file sets.
 
+### Label-less vertices and default-labeled edges in exported files
+<a name="export-structure-csv-labelless"></a>
+
+ Exported files are grouped by label. The following special cases apply to entities without an explicitly assigned label:
++  **Label-less vertices** — Vertices that were loaded without a `~label` value are exported to files whose name contains the sentinel `_NO_LABEL_`. For example: `Vertex__NO_LABEL__0.parquet` or `Vertex__NO_LABEL__0.csv`. The `~label` column in these files will be empty.
++  **Default-labeled edges** — Edges that were loaded without a `~label` value are assigned the default label `"edge"` at import time (see [Behavioral differences from Neptune Database](using-CSV-data.md#using-CSV-data-differences)). These edges are exported to files named with the label `edge`. For example: `Edge_edge_0.parquet` or `Edge_edge_0.csv`.
+
 ## Parquet
 <a name="export-structure-parquet"></a>
 
@@ -34,3 +41,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/expor
   }
  }
 ```
+
+**Note**
+ The file naming conventions for label-less vertices (`_NO_LABEL_` sentinel) and default-labeled edges (label = `"edge"`) apply to Parquet exports in the same way as CSV exports. See [Label-less vertices and default-labeled edges in exported files](#export-structure-csv-labelless).

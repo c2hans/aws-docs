@@ -51,6 +51,22 @@ The exception includes a `subscriptionUrl` field with a link to the AWS Marketpl
 | --- | --- |
 |  `SubscriptionRequiredException` (HTTP 403) | Your account does not have an active AWS Marketplace subscription for Coinbase. To resolve:1.  Open the AWS Marketplace listing at the `subscriptionUrl` returned in the error, or go to the [Coinbase Wallets for AgentCore Payments](https://aws.amazon.com/marketplace/pp/prodview-ia2zd5puqyi7g) listing. <br />2.  Subscribe to the listing. The subscribing identity needs the `AWSMarketplaceManageSubscriptions` permissions. <br />3.  After the subscription is active, retry the operation. <br />For more information, see [Subscribe to Coinbase Wallets for AgentCore Payments in AWS Marketplace](payments-marketplace-subscription.md). |
 
+## Quick create authorization errors
+<a name="payments-troubleshooting-quick-create"></a>
+
+Quick create lets you set up a Coinbase payment connector without managing credentials yourself. When you call `CreatePaymentConnector`, the service returns an `authorizationUrl`. Open the URL (or provide it to your application’s users) to complete the Coinbase authorization. During this flow, the connector moves through the following Quick-create-specific statuses:
++  `PENDING_AUTHENTICATION` — The connector is waiting for you (or your application’s user) to complete the Coinbase authorization.
++  `PROVISIONING` — The authorization is complete and the service is provisioning the connector.
++  `AUTHENTICATION_EXPIRED` — The `authorizationUrl` expired before the authorization was completed.
++  `AUTHENTICATION_FAILED` — The Coinbase authorization did not succeed.
+
+The following table lists common Quick create authorization issues and their resolutions.
+
+| Connector status | Resolution |
+| --- | --- |
+| Connector stuck in `PENDING_AUTHENTICATION`  | The Quick create authorization has not been completed. To resolve:1.  Open the `authorizationUrl` returned by `CreatePaymentConnector`. <br />2.  Sign in and complete the Coinbase authorization.  |
+| Connector in `AUTHENTICATION_EXPIRED`  | The `authorizationUrl` expired, which happens about 10 minutes after `CreatePaymentConnector` returns it. To resolve:1.  Re-create the connector with `CreatePaymentConnector` to get a fresh `authorizationUrl`. <br />2.  Open the new `authorizationUrl` and complete the Coinbase authorization promptly.  |
+
 ## Resource not found errors
 <a name="payments-troubleshooting-not-found"></a>
 

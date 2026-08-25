@@ -417,7 +417,7 @@ The payment instrument’s blockchain network must match the challenge method. P
 | Method | Coinbase CDP | Stripe (Privy) |
 | --- | --- | --- |
 |  `evm`  | Supported | Supported |
-|  `tempo`  | Not supported | Supported |
+|  `tempo`  | Supported | Supported |
 |  `solana`  | Not supported | Supported |
 
 ### Network fee consent

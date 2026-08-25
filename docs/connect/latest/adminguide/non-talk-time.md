@@ -17,9 +17,9 @@ The following image shows the location of non-talk time data on the **Contact de
 ## How to investigate non-talk time
 <a name="how-to-investigate-non-talk-time"></a>
 
-Non-talk time can help you identify calls that have gone poorly. This may be because:
+Non-talk time can help you identify calls that have gone poorly. This might be because:
 + The customer was asking a question that's new for your contact center.
-+ It's taking the agent a long time to do something but they are well-trained. This indicates there may be an issue with the tools the agent is using. For example, the tools aren't responsive enough or aren't easy to use.
++ It's taking the agent a long time to do something but they are well-trained. This indicates there might be an issue with the tools the agent is using. For example, the tools aren't responsive enough or aren't easy to use.
 + The agent didn't have a ready answer, but they are fairly new. This indicates they need more training.
 
 You can decide whether to focus on these contacts to improve your contact center. For example, you can go to that section of the audio, and then look at the transcript to see what was going on.

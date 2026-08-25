@@ -127,7 +127,7 @@ Fix any errors if the JSON is invalid. The following image shows an example erro
 
 1. When selecting a custom view, you will likely want to set the values of dynamic inputs through the **Set JSON** option. When doing this, you can choose **Apply Sample Data** to pre-populate the input with a JSON schema that contains sample data.
 
-   Ensure you [configure dynamic references](no-code-ui-builder-properties-dynamic-fields.md) for dynamic data (for example, $.Channel) in the UI builder to be populated at run time.
+   Make sure you [configure dynamic references](no-code-ui-builder-properties-dynamic-fields.md) for dynamic data (for example, $.Channel) in the UI builder to be populated at run time.
 
    The following image shows the **Apply Sample Data** option.
 ![The Apply Sample Data option on the Show view block.](http://docs.aws.amazon.com/connect/latest/adminguide/images/apply-sample-data.png)

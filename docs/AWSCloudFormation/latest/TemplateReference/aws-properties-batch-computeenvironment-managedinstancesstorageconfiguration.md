@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::Batch::ComputeEnvironment ManagedInstancesStorageConfiguration
 <a name="aws-properties-batch-computeenvironment-managedinstancesstorageconfiguration"></a>
 
-<a name="aws-properties-batch-computeenvironment-managedinstancesstorageconfiguration-description"></a>The `ManagedInstancesStorageConfiguration` property type specifies Property description not available. for an [AWS::Batch::ComputeEnvironment](aws-resource-batch-computeenvironment.md).
+The storage configuration for Amazon ECS Managed Instances.
 
 ## Syntax
 <a name="aws-properties-batch-computeenvironment-managedinstancesstorageconfiguration-syntax"></a>
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-batch-computeenvironment-managedinstancesstorageconfiguration-properties"></a>
 
 `StorageSizeGiB`  <a name="cfn-batch-computeenvironment-managedinstancesstorageconfiguration-storagesizegib"></a>
-Property description not available.
+The size of the root EBS volume in GiB for the managed instances.
 *Required*: No
 *Type*: Integer
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

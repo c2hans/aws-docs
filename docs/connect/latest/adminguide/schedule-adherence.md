@@ -5,13 +5,13 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/schedule-adher
 # Schedule Adherence for agent productivity in Connect Customer
 <a name="schedule-adherence"></a>
 
-Contact center supervisors or managers track schedule adherence to understand when agents are following the schedule that you have created. This helps ensure you achieve your service level targets, while improving agent productivity and customer satisfaction.
+Contact center supervisors or managers track schedule adherence to understand when agents are following the schedule that you have created. This helps make sure you achieve your service level targets, while improving agent productivity and customer satisfaction.
 
 Before you begin, note the following:
 
 1. Schedule Adherence requires that schedules are created and published. For more information, see [Scheduling in Connect Customer](scheduling.md).
 
-1. Ensure you have the right permissions to access metrics and scheduling information. For more information about the required permissions, see [Assign permissions](required-optimization-permissions.md).
+1. Make sure you have the right permissions to access metrics and scheduling information. For more information about the required permissions, see [Assign permissions](required-optimization-permissions.md).
 
 **Topics**
 + [How adherence is determined](#schedule-adherence-determined)
@@ -157,7 +157,7 @@ In the **Queue and agent performance** dashboard, the **Agent Adherence** widget
 + The **Status duration** column shows how long an agent has been in their current adherence state.
 + The **Schedule adherence percent** shows the adherence calculation taking thresholds into account.
 
-You can hover over the **Using thresholds** indicator to see details about the threshold being used.
+You can pause on the **Using thresholds** indicator to see details about the threshold being used.
 
 The following image shows an example **Queue and agent performance** dashboard, with an **Adherent** status, and the **Using thresholds** message. One message is general, the other message shows X minutes as a placeholder for what would be your adherence threshold.
 

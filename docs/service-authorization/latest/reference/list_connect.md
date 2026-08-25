@@ -247,10 +247,8 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   CreateAttachedFile  **
   - **SDK client:** connect
-  - **IAM action:**  [connect:CreateAttachedFile](#list_connect-action-CreateAttachedFile)
-  - **Condition key:**
-  - **Possible value(s):**
-  - **Access level:** Write
+  - **IAM action:**  [connect:CreateAttachedFile](#list_connect-action-CreateAttachedFile)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [connect:TagResource](#list_connect-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
 - **   CreateContact  **
   - **SDK client:** connect
@@ -311,6 +309,13 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **SDK client:** connect
   - **IAM action:**  [connect:CreateEvaluationForm](#list_connect-action-CreateEvaluationForm)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [connect:TagResource](#list_connect-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+
+- **   CreateExtractionDefinition  **
+  - **SDK client:** connect
+  - **IAM action:**  [connect:TagResource](#list_connect-action-TagResource)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Tagging, Write
 
 - **   CreateHoursOfOperation  **
   - **SDK client:** connect
@@ -394,10 +399,8 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   CreateRule  **
   - **SDK client:** connect
-  - **IAM action:**  [connect:CreateRule](#list_connect-action-CreateRule)
-  - **Condition key:**
-  - **Possible value(s):**
-  - **Access level:** Write
+  - **IAM action:**  [connect:CreateRule](#list_connect-action-CreateRule)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [connect:TagResource](#list_connect-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
 - **   CreateSecurityProfile  **
   - **SDK client:** connect

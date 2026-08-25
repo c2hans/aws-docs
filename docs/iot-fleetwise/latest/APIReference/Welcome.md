@@ -12,4 +12,4 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/Welcom
 
 For more information, see [What is AWS IoT FleetWise?](https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/) in the * AWS IoT FleetWise Developer Guide*.
 
-This document was last published on August 18, 2026.
+This document was last published on August 24, 2026.

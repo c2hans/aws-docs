@@ -400,7 +400,7 @@ Open the [AWS Compute Optimizer console](https://console.aws.amazon.com/compute-
 Open the [AWS Cost Anomaly Detection](https://console.aws.amazon.com/cost-management/home#/anomaly-detection) page in the console and create at least one anomaly monitor. The agent investigates anomalies that AWS Cost Anomaly Detection produces from your monitors. For details, see [Getting started with AWS Cost Anomaly Detection](https://docs.aws.amazon.com/cost-management/latest/userguide/getting-started-ad.html).
 
 **AWS Cost Optimization Hub** (for cost optimization recommendations)
-AWS Cost Optimization Hub is enabled by default in every AWS account. No additional setup is required.
+Open [AWS Cost Optimization Hub](https://console.aws.amazon.com/cost-management/home#/cost-optimization-hub) in the console and enable it. You must opt in before the agent can retrieve AWS Cost Optimization Hub recommendations. For details, see [Getting started with AWS Cost Optimization Hub](https://docs.aws.amazon.com/cost-management/latest/userguide/coh-getting-started.html).
 
 **AWS CloudTrail** (for cost anomaly investigation)
 The agent uses CloudTrail Event History (through `LookupEvents`) to identify the change behind a cost spike. CloudTrail Event History is enabled by default in every AWS account at no charge. You do not need to create a trail or configure CloudTrail for the agent to investigate anomalies.

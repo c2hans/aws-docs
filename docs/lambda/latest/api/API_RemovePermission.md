@@ -86,7 +86,7 @@ The exception type.
 HTTP Status Code: 412
 
  ** PublicPolicyException **
-The resource-based policy you tried to add to the Lambda function would grant public access to it, and your account's `BlockPublicAccess` setting prevents public access. For more information about blocking public access to Lambda functions, see [Block public access to Lambda resources](https://docs.aws.amazon.com/lambda/latest/dg/access-control-resource-based.html#access-control-block-public-access).
+The resource-based policy you tried to add to the Lambda resource would grant public access to it, which isn't allowed.
  ** Message **
 The exception message.
  ** Type **

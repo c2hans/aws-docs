@@ -10,7 +10,7 @@ This topic lists which fields in Salesforce objects map to fields in the standar
 ## Salesforce-Account object
 <a name="salesforceaccountobject"></a>
 
-Following is a list of all the fields in a Salesforce-Account object. The fields in your Salesforce-Account object may vary depending on the configuration of your Salesforce instance.
+Following is a list of all the fields in a Salesforce-Account object. The fields in your Salesforce-Account object might vary depending on the configuration of your Salesforce instance.
 + Id
 + IsDeleted
 + MasterRecordId

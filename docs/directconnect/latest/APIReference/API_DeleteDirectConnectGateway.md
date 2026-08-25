@@ -45,7 +45,8 @@ Required: Yes
             "key": "string",
             "value": "string"
          }
-      ]
+      ],
+      "totalPrefixPoolAllocations": number
    }
 }
 ```

@@ -12,6 +12,7 @@ The following tables describe the important changes to the documentation for Ama
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [Broadcast SDK: Android 1.43.2](#history-user-guide) | Added SDK patch 1.43.2 to the [Release Notes](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html#aug19-26-broadcast-android-ll). | August 19, 2026 |
 | [Broadcast SDK: Web 1.38.1](#history-user-guide) | Updated version number and artifact links in the low-latency streaming broadcast SDK guide: [Web](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/broadcast-web.html). Also see the [Release Notes](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html#aug12-26-broadcast-web-ll). | August 12, 2026 |
 | [Broadcast SDK: Android 1.43.1](#history-user-guide) | Added SDK patch 1.43.1 to the [Release Notes](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html#aug11-26-broadcast-android-ll). | August 11, 2026 |
 | [Player SDK: Web 1.55.0](#history-user-guide) | Updated version number and artifact links in the player SDK guides: [Web](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/player-web.html), [Video.js Integration](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/player-videojs.html), and [JW Player Integration](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/player-jwplayer.html). Also see the [Release Notes](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html#aug06-26-player-web-ll). | August 6, 2026 |

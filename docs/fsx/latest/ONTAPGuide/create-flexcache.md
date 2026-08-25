@@ -125,12 +125,6 @@ After you have established cluster peering successfully, the next step is to cre
    Origin::> vserver peer accept -vserver {{OriginSVM}} -peer-vserver {{CacheSVM}} -local-name {{CacheLocalName}}
    ```
 
-1. On the source cluster, accept the peering relationship.
-
-   ```
-   Origin::> vserver peer accept -vserver {{OriginSVM}} -peer-vserver {{CacheSVM}} -local-name {{CacheLocalName}}
-   ```
-
 1. Verify that the SVM peering was successful using the following command; `Peer State` should be set to `peered` in the response.
 
    ```

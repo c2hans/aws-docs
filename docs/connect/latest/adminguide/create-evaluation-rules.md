@@ -32,7 +32,7 @@ You can create rules that automatically send emails or tasks to supervisors and 
    + **Evaluation - Section score**: Build rules that run when the score for a specific section is met.
    + **Evaluation - Question answer**: Build rules that run when the score for a specific question and answer is met.
    + **Evaluation - Results available**: Build rules that run on any evaluation submissions.
-   + **Agent hierarchy**: Build rules that run on a specific agent hierarchy. Agent hierarchies may represent geographical locations, departments, products, or teams.
+   + **Agent hierarchy**: Build rules that run on a specific agent hierarchy. Agent hierarchies might represent geographical locations, departments, products, or teams.
 
      To see list of agent hierarchies so you can add them to rules, you need **Agent hierarchy - View** permissions in your security profile.
    + **Agent**: Build rules that run on a subset of agents. For example, receive notifications on agents belonging to your team.

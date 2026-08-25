@@ -51,7 +51,7 @@ The following table is a partial list of Amazon S3 operations and if they are co
 | `[UploadPartCopy](https://docs.aws.amazon.com/AmazonS3/latest/API/API_UploadPartCopy.html)` (same-Region copies only) | Supported, if source and destination are within the same access point |
 
 Limitations to using Amazon S3 operations are the following:
-+ Maximum object size is 50 GB for uploads, but you can download objects larger than that
++ Maximum object size is 50 GiB for uploads, but you can download objects larger than that
 + `FSX_ONTAP` is the only supported storage class
 + SSE-FSX is the only supported server-side encryption mode
 + The following Amazon S3 features are not supported: access control lists (ACLs) other than `bucket-owner-full-control`, Object Annotations, Requester Pays, Object Versioning, Object Lock, Object Lifecycle, Static Website Hosting (e.g., website redirection), multi-factor authentication (MFA), and conditional writes

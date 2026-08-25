@@ -28,7 +28,7 @@ In [Connect Customer](enable-nextgeneration-amazonconnect.md) instances, you can
 
 1. View the list of all the custom metrics in your instance.
 
-   Any custom service level metrics that were created via the custom dashboards will be listed here and can be managed here as well.
+   Any custom service level metrics that were created through the custom dashboards will be listed here and can be managed here as well.
 
 You can do character matching quick search on the metric name or description by entering on the search text box.
 
@@ -112,7 +112,7 @@ The metrics builder is an interactive editor that allows you to define an advanc
 
 **Components**
 
-A component represents the metric primitive or base metric expression that can be referenced as the variable for the metric formula that will be entered via the definition editor.
+A component represents the metric primitive or base metric expression that can be referenced as the variable for the metric formula that will be entered through the definition editor.
 + Maximum of 5 metric components can be added.
 + Component identifier
   + Starts with underscore or letter followed by letters, numbers or underscores only.

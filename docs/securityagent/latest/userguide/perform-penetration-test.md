@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/perform-penetration-test.html
 ---
 
-# Create a penetration test
+# Create a Continuum penetration test
 <a name="perform-penetration-test"></a>
 
 Set up automated penetration testing for your web applications by configuring test scope, target domains, and AWS resource access. Penetration tests help identify security vulnerabilities in running applications by simulating real-world attack scenarios against your verified domains.
@@ -20,8 +20,8 @@ Before you begin, ensure you have:
 + IAM role with appropriate permissions for AWS Security Agent
 + Understanding of your application’s architecture and critical paths
 
-## Start creating a penetration test
-<a name="_start_creating_a_penetration_test"></a>
+## Start creating a Continuum penetration test
+<a name="_start_creating_a_continuum_penetration_test"></a>
 
 Navigate to the penetration test creation page in the web application.
 
@@ -32,10 +32,10 @@ Navigate to the penetration test creation page in the web application.
 1. Choose **Create a penetration test**.
 
 **Tip**
-Only verified domains can be included in penetration tests. Ask your admin to verify the domain in AWS management console. See [Enable an application domain for penetration testing](enable-test-domain.md).
+Only verified domains can be included in penetration tests. Ask your admin to verify the domain in AWS management console. See [Enable an application domain for Continuum penetration testing](enable-test-domain.md).
 
-## Name your penetration test
-<a name="_name_your_penetration_test"></a>
+## Name your Continuum penetration test
+<a name="_name_your_continuum_penetration_test"></a>
 
 Provide a descriptive name that helps identify the purpose and scope of this penetration test.
 
@@ -44,8 +44,8 @@ Provide a descriptive name that helps identify the purpose and scope of this pen
 
    The name should clearly identify the application, environment, or component being tested. Maximum 100 characters.
 
-## Configure penetration test scope
-<a name="_configure_penetration_test_scope"></a>
+## Configure Continuum penetration test scope
+<a name="_configure_continuum_penetration_test_scope"></a>
 
 Define which domains and URL paths will be tested, and configure optional exclusions to control test boundaries.
 
@@ -161,8 +161,8 @@ The selected IAM role must have permissions to access VPC resources, CloudWatch 
 The selected CloudWatch log group will store detailed logs of the penetration test execution, including requests made, responses received, and vulnerabilities discovered.
 If you don’t select a log group, a new CloudWatch log group will be automatically created with the `/aws/securityagent` prefix to store the penetration test logs.
 
-## Automatic code remediation
-<a name="_automatic_code_remediation"></a>
+## Continuum automatic code remediation
+<a name="_continuum_automatic_code_remediation"></a>
 
 Select the **Enable automatic remediation** checkbox.
 
@@ -212,7 +212,7 @@ Provide authentication credentials that AWS Security Agent will use to access yo
 
 1. In the **Credential \#1** section, select a credential input method:
    +  **Input credentials** - Enter your credentials directly into AWS Security Agent.
-   +  **Advanced setting** - For sensitive credential information, use advanced options such as AWS Secrets Manager or AWS Lambda functions. See [Provide authentication credentials for penetration testing](provide-testing-credentials.md) for details.
+   +  **Advanced setting** - For sensitive credential information, use advanced options such as AWS Secrets Manager or AWS Lambda functions. See [Provide authentication credentials for Continuum penetration testing](provide-testing-credentials.md) for details.
 **Tip**
 For production environments or sensitive credentials, we recommend using the advanced setting option to securely reference credentials stored in AWS Secrets Manager or Systems Manager Parameter Store.
 
@@ -269,8 +269,8 @@ Provide supplementary resources to help AWS Security Agent conduct more thorough
 **Note**
 Additional resources are optional but recommended. Providing comprehensive information about your application helps ensure thorough test coverage, reduces false positives, and delivers more actionable results.
 
-### Add resources to the penetration test
-<a name="_add_resources_to_the_penetration_test"></a>
+### Add resources to the Continuum penetration test
+<a name="_add_resources_to_the_continuum_penetration_test"></a>
 
 Select existing resources or upload new files that will help guide the penetration test.
 
@@ -370,8 +370,8 @@ For larger applications, or to get the most complete results, set a higher limit
 **Note**
 When a test reaches its maximum task hours, AWS Security Agent stops working on the test and keeps the findings already discovered. The run finishes with a status of **Completed**. You can review these findings or create and run a new test.
 
-## Create the penetration test
-<a name="_create_the_penetration_test"></a>
+## Create the Continuum penetration test
+<a name="_create_the_continuum_penetration_test"></a>
 
 Finalize and launch your penetration test configuration.
 

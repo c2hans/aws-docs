@@ -5,6 +5,9 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/transform-i
 # Transforming code in the IDE with Amazon Q Developer
 <a name="transform-in-IDE"></a>
 
+**End of support notice**
+On April 30, 2027, AWS will discontinue support for Amazon Q Developer IDE plugins. For capabilities similar to Amazon Q Developer IDE plugins, explore Kiro to access the latest models and features, including agentic coding, chat and MCP support. For more information, see [Amazon Q Developer IDE plugins end of support](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/q-developer-ide-end-of-support.html).
+
 Amazon Q Developer can transform your code in integrated development environments (IDEs) by performing automated language and operating system (OS)-level upgrades and conversions. You provide the code to be transformed, and Amazon Q generates changes that you can review and apply to your files.
 
 To get started, install Amazon Q in an IDE that supports transformations. Then, see the topic for the type of transformation you'd like to perform with Amazon Q.

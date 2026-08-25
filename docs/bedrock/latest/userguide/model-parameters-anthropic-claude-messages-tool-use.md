@@ -246,13 +246,19 @@ The Anthropic `web_search_20250305` server tool is not supported on Amazon Bedro
 #### [ Request ]
 
 ```
-from anthropic import AnthropicBedrock
+from anthropic import Anthropic
+from aws_bedrock_token_generator import provide_token
 
-client = AnthropicBedrock()
+token = provide_token(region="us-east-1")
+
+client = Anthropic(
+    base_url="https://bedrock-runtime.us-east-1.amazonaws.com/anthropic",
+    api_key=token,
+)
 
 response = client.beta.messages.create(
     betas=["context-management-2025-06-27"],
-    model="claude-sonnet-4-20250514",
+    model="global.anthropic.claude-sonnet-4-20250514-v1:0",
     max_tokens=4096,
     messages=[
         {

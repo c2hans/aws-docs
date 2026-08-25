@@ -13,7 +13,7 @@ This article describes the data model for Connect Customer contact records. Cont
 ## Important things to know
 <a name="important-things-to-know-ctr-data-model"></a>
 + We continually release new features that result in the addition of new fields to the contact records data model. Any changes we make to the data model are backward compatible. When you develop applications, we recommend that you build them to ignore the addition of new fields in the contact records data model. This will help ensure your applications are resilient.
-+ Connect Customer delivers contact records at least once. Contact records may be delivered again for multiple reasons, such as new information arriving after initial delivery. For example, when you use the [update-contact-attributes](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/connect/update-contact-attributes.html) CLI command to update a contact record, Connect Customer delivers a new contact record. This contact record is available for 24 months from the time the associated contact was initiated.
++ Connect Customer delivers contact records at least once. Contact records might be delivered again for multiple reasons, such as new information arriving after initial delivery. For example, when you use the [update-contact-attributes](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/connect/update-contact-attributes.html) CLI command to update a contact record, Connect Customer delivers a new contact record. This contact record is available for 24 months from the time the associated contact was initiated.
 
   If you're building a system that consumes contact record export streams, be sure to include logic that checks for duplicate contact records for a contact. Use the **LastUpdateTimestamp** property to determine if a copy contains new data than previous copies. Then use the **ContactId** property for deduplication.
 + Every action taken on a unique contact generates an event. These events appear as a field or an attribute on the contact record. If the number of actions for a contact exceeds a threshold, such as an internal storage limit, then any actions that follow will not appear on that contact record.
@@ -383,7 +383,7 @@ Information about conversational analytics features applied to this contact.
 Type: [ContactLens](#ctr-ContactLens)
 
 **CustomerId**
-The customer's identification number. For example, the CustomerId may be a customer number from your CRM. You can create a Lambda function to pull the unique customer ID of the caller from your CRM system. If you enable Connect Customer Voice ID capability, this attribute is populated with the CustomerSpeakerId of the caller.
+The customer's identification number. For example, the CustomerId might be a customer number from your CRM. You can create a Lambda function to pull the unique customer ID of the caller from your CRM system. If you enable Connect Customer Voice ID capability, this attribute is populated with the CustomerSpeakerId of the caller.
 Type: String
 
 **CustomerEndpoint**
@@ -416,11 +416,11 @@ Voice contacts can have the following disconnect reasons:
 
   BlockReason – If the call is formally blocked using the 603\+ "Network Blocked", the [ FCC-mandated standard](https://docs.fcc.gov/public/attachments/FCC-25-15A1.pdf) that provides a uniform informative message that you can process and seek correction with the end customers carrier if you believe the traffic is blocked for invalid reasons, see [Segment attributes](connect-attrib-list.md#attribs-segment-attributes) for detail.
 **Note**
-Amazon Connect helps customers flag spam blocking based on its own best practice. Because spam blocking lacks global unification, a very small number of false positives may occur in this category. Amazon Connect expects to see around 1% of calls have this effect. If blocking occurs, we recommend you review the carrier network you are calling, and you should contact the carrier you are attempting to call to determine why the call faced blocking. Due to blocking rules, AWS cannot unblock networks on your behalf.
-+ `TELECOM_UNANSWERED` – Amazon Connect attempts to deliver the call via multiple routes and currently receives messages from either the network or the handset confirming that the system cannot deliver the call at this time.
+Amazon Connect helps customers flag spam blocking based on its own best practice. Because spam blocking lacks global unification, a very small number of false positives might occur in this category. Amazon Connect expects to see around 1% of calls have this effect. If blocking occurs, we recommend you review the carrier network you are calling, and you should contact the carrier you are attempting to call to determine why the call faced blocking. Due to blocking rules, AWS cannot unblock networks on your behalf.
++ `TELECOM_UNANSWERED` – Amazon Connect attempts to deliver the call through multiple routes and currently receives messages from either the network or the handset confirming that the system cannot deliver the call at this time.
 + `TELECOM_TIMEOUT` – If the call attempt occurs on multiple networks and reaches 60 seconds of ringing, the system reports that it has reached the timeout point for this call attempt.
 + `TELECOM_ORIGINATOR_CANCEL` – This occurs when the call is cancelled by the originating party before the connection to the Connect Customer system is established. For inbound calls, this happens when the customer cancels the call before connecting to the Connect Customer system. For outbound calls, this occurs when the agent/API user cancels the call before connecting, or when the call remains unanswered after 60 seconds.
-+ `TELECOM_PROBLEM` – If we try to reach this customer via multiple networks and receive responses from the PSTN that indicate a problem exists with the destination network where we cannot reach the end network but believe the number remains valid, this reason code applies.
++ `TELECOM_PROBLEM` – If we try to reach this customer through multiple networks and receive responses from the PSTN that indicate a problem exists with the destination network where we cannot reach the end network but believe the number remains valid, this reason code applies.
 **Note**
 Amazon Connect attempts to make calls as part of outbound configuration with multiple providers as our coverage guide shows. If the guide indicates multi-carrier setup, the result from multiple networks shows the problem links to the third-party network. Amazon Connect expects around 2% of calls on average to have this effect. You do not need to report any telecom problem to AWS Support, and this does not represent an Amazon Connect failure.
 + `CUSTOMER_NEVER_ARRIVED` – When someone creates an inbound web calling contact, Amazon Connect automatically terminates the contact if the customer doesn't connect within a specified period of time.
@@ -523,7 +523,7 @@ The date and time this contact was initiated, in UTC time.
 + For `TRANSFER` and `QUEUE_TRANSFER`, this is when the transfer was initiated.
 Type: String (*yyyy*-*mm*-*dd*T*hh*:*mm*:*ss*Z)
 In the case of tasks, InitiationTimestamp signifies when the task contact was created, whereas EnqueueTimestamp signifies time when the task contact was put in a queue to match the contact with agent.
-You can configure flows so there is processing done on the task before a contact is queued. For example, this processing can take one minute or maybe several days. Many tasks, especially those used for backoffice processing aren't queued so they may have an InitiationTimestamp but not an EnqueueTimestamp.
+You can configure flows so there is processing done on the task before a contact is queued. For example, this processing can take one minute or maybe several days. Many tasks, especially those used for backoffice processing aren't queued so they might have an InitiationTimestamp but not an EnqueueTimestamp.
 Scheduled tasks get initiated when a contact is created, however they only start running flows when the schedule is met.
 The 7 days expiry value is not absolute and there could be cases where tasks expire just beyond 7 days ( 7.01 days )
 
@@ -917,12 +917,12 @@ Min value: 0
 Information about the global resiliency configuration for the contact, including traffic distribution details.
 
 **ActiveRegion**
-The current AWS region in which the contact is active. This indicates where the contact is being processed in real-time.
+The current AWS Region in which the contact is active. This indicates where the contact is being processed in real-time.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 1024.
 
 **OriginRegion**
-The AWS region where the contact was originally created and initiated. This may differ from the `ActiveRegion` if the contact has been transferred across regions.
+The AWS Region where the contact was originally created and initiated. This might differ from the `ActiveRegion` if the contact has been transferred across regions.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 1024.
 

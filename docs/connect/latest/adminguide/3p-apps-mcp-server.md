@@ -15,16 +15,16 @@ Only one instance can be associated with a gateway, and that instance must be co
 
 1. On the **Add integration** page, enter the following information:
 
-   1. **Basic information**
+   1. **Integration information**
       + **Display name** – A friendly name for the application. This name is displayed on security profiles and to your agents on the tab in the agent workspace. You can change this name later.
-      + **Description (optional)** – You may optionally provide a description for this application.
+      + **Description (optional)** – You can optionally provide a description for this application.
       + **Integration type** – Select **MCP server**.
-![The Add integration page showing Basic information fields for an MCP server application.](http://docs.aws.amazon.com/connect/latest/adminguide/images/integrations-3p-mcp-app.png)
+![The Add integration page showing Integration information fields for an MCP server application.](http://docs.aws.amazon.com/connect/latest/adminguide/images/integrations-3p-mcp-app.png)
 
-   1. **Application details**
+   1. **Integration details**
 
       Select a Bedrock AgentCore gateway to connect with Connect Customer. Gateways convert APIs, Lambda functions, and services into MCP-compatible tools for AI agents. If no gateways currently exist, create a new one using Bedrock AgentCore.
-![The Application details section showing gateway selection.](http://docs.aws.amazon.com/connect/latest/adminguide/images/integrations-3p-mcp-select-gateway.png)
+![The Integration details section showing gateway selection.](http://docs.aws.amazon.com/connect/latest/adminguide/images/integrations-3p-mcp-select-gateway.png)
 
       A new gateway can be created in Bedrock AgentCore.
 **Note**
@@ -36,7 +36,7 @@ In the gateway's **Inbound Identity** configuration, add the gateway ID to the *
 
    1. **Instance association (optional)**
 
-      Select the instance that is configured with the selected gateway's Discovery URL. Defaults to **None**. If you are not ready to select an instance or if no instance has been associated with the selected gateway's Discovery URL, you may still create the MCP server integration now and associate an instance later.
+      Select the instance that is configured with the selected gateway's Discovery URL. Defaults to **None**. If you are not ready to select an instance or if no instance has been associated with the selected gateway's Discovery URL, you might still create the MCP server integration now and associate an instance later.
 ![The Instance association section showing instance selection options.](http://docs.aws.amazon.com/connect/latest/adminguide/images/3p-apps-mcp-instance.png)
 
 1. Choose **Add integration**.

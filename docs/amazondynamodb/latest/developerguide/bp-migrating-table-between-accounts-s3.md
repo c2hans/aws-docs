@@ -34,7 +34,7 @@ For more information about DynamoDB pricing, see [DynamoDB pricing](https://aws.
 
    1. For **Exported file format**, choose between DynamoDB JSON and Amazon Ion. The default option is DynamoDB JSON.
 
-1. Click the **Export** button to begin the export.
+1. Choose **Export** to begin the export.
 
 1. Small table exports should complete in a few minutes, but tables in the terabyte range can take more than an hour.
 
@@ -59,7 +59,7 @@ For more information about DynamoDB pricing, see [DynamoDB pricing](https://aws.
 
 1. Select **Next**. For **Configure table settings**, customize any additional table settings if applicable.
 
-1. Select **Next** again to review your import options, then click **Import** to begin the import task. You'll see your new table listed under **Imports from S3** with the status **Importing**. You cannot access your table during this time. Small imports should complete in a few minutes, but tables in the terabyte range can take more than an hour.
+1. Select **Next** again to review your import options, then choose **Import** to begin the import task. You see your new table listed under **Imports from S3** with the status **Importing**. You cannot access your table during this time. Small imports should complete in a few minutes, but tables in the terabyte range can take more than an hour.
 
 1. After the import completes, the status shows as **Active**, and you can start using the table.
 

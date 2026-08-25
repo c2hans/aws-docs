@@ -77,6 +77,18 @@ The maximum transmission unit (MTU), in bytes. The supported values are 1500 and
 Type: Integer
 Required: No
 
+ ** prefixPoolAllocatedCountIpv4 **   <a name="DX-Type-NewPrivateVirtualInterface-prefixPoolAllocatedCountIpv4"></a>
+The number of inbound IPv4 route prefixes to allocate to the virtual interface.
+Type: Integer
+Valid Range: Minimum value of 0.
+Required: No
+
+ ** prefixPoolAllocatedCountIpv6 **   <a name="DX-Type-NewPrivateVirtualInterface-prefixPoolAllocatedCountIpv6"></a>
+The number of inbound IPv6 route prefixes to allocate to the virtual interface.
+Type: Integer
+Valid Range: Minimum value of 0.
+Required: No
+
  ** rateLimit **   <a name="DX-Type-NewPrivateVirtualInterface-rateLimit"></a>
 The rate limit (bandwidth allocation) to apply to the virtual interface. The rate limit restricts the maximum bandwidth that the virtual interface can use on the parent connection.
 Type: String

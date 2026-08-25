@@ -30,6 +30,9 @@ Creates an Amazon SageMaker Partner AI App.
    "EnableAutoMinorVersionUpgrade": {{boolean}},
    "EnableIamSessionBasedIdentity": {{boolean}},
    "ExecutionRoleArn": "{{string}}",
+   "IdcConfig": {
+      "InstanceArn": "{{string}}"
+   },
    "KmsKeyId": "{{string}}",
    "MaintenanceConfig": {
       "MaintenanceWindowStart": "{{string}}"
@@ -59,9 +62,11 @@ Type: [PartnerAppConfig](API_PartnerAppConfig.md) object
 Required: No
 
  ** [AuthType](#API_CreatePartnerApp_RequestSyntax) **   <a name="sagemaker-CreatePartnerApp-request-AuthType"></a>
-The authorization type that users use to access the SageMaker Partner AI App.
+The authorization type that users use to access the SageMaker Partner AI App. Valid values:
++  `IAM`: Users access the SageMaker Partner AI App with their AWS IAM identity.
++  `IDC`: Users access the SageMaker Partner AI App with their AWS IAM Identity Center identity. Specify the Identity Center instance to use in `IdcConfig`.
 Type: String
-Valid Values: `IAM`
+Valid Values: `IAM | IDC`
 Required: Yes
 
  ** [ClientToken](#API_CreatePartnerApp_RequestSyntax) **   <a name="sagemaker-CreatePartnerApp-request-ClientToken"></a>
@@ -87,6 +92,11 @@ Type: String
 Length Constraints: Minimum length of 20. Maximum length of 2048.
 Pattern: `arn:aws[a-z\-]*:iam::\d{12}:role/?[a-zA-Z_0-9+=,.@\-_/]+`
 Required: Yes
+
+ ** [IdcConfig](#API_CreatePartnerApp_RequestSyntax) **   <a name="sagemaker-CreatePartnerApp-request-IdcConfig"></a>
+Specifies the AWS IAM Identity Center configuration for the SageMaker Partner AI App. Specify this parameter when `AuthType` is `IDC`. Apps that use `IAM` authorization don't use this parameter.
+Type: [IdcConfigInput](API_IdcConfigInput.md) object
+Required: No
 
  ** [KmsKeyId](#API_CreatePartnerApp_RequestSyntax) **   <a name="sagemaker-CreatePartnerApp-request-KmsKeyId"></a>
 SageMaker Partner AI Apps uses AWS KMS to encrypt data at rest using an AWS managed key by default. For more control, specify a customer managed key.

@@ -33,7 +33,7 @@ For a list of required permissions to perform this procedure, see [Assign permis
 ## Status definitions
 <a name="agent-activity-status-definitions"></a>
 
-The following values may appear in the **Status** column on agent activity audit report.
+The following values might appear in the **Status** column on agent activity audit report.
 + **Available**: The agent has set their status in the Contact Control Panel (CCP) to **Available**. Contacts can be routed to them.
 + **Offline**: The agent has set their status in the Contact Control Panel (CCP) to **Offline**. Contacts can not be routed to them.
 + **Custom status**: The agent has set their status in the Contact Control Panel (CCP) to a custom status. Contacts can not be routed to them.

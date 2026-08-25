@@ -28,12 +28,17 @@ This architecture diagram shows how to build a retail hyper personalization plat
 
 ![Architecture diagram for Retail Hyper Personalization on AWS](/images/solutions/retail-hyper-personalization-on-aws/images/retail-hyper-personalization-on-aws-1.png)
 
-1. **Step 1**: Behavioral signals from e-commerce, in-store IoT, POS, and CRM systems are ingested in real time through Amazon Kinesis Data Streams.
-1. **Step 2**: Stream processing updates customer profiles and enriches event data for downstream personalization services.
-1. **Step 3**: Amazon Personalize generates tailored product recommendations based on individual customer behavior and interaction history.
-1. **Step 4**: Amazon Bedrock generates personalized content including product descriptions and marketing copy tailored to each shopper segment.
-1. **Step 5**: An AI Shopping Assistant powered by Amazon Bedrock AgentCore enables conversational product discovery through natural language interactions.
-1. **Step 6**: Automated monitoring detects model drift and triggers retraining workflows to maintain recommendation accuracy as customer behavior evolves.
+1. **Step 1**: Shoppers interact with the retail experience through the e-commerce site, in-store IoT touchpoints, and POS systems. Retail signals, including browsing events, transactions, and CRM records, flow into Amazon API Gateway, over TLS-encrypted connections, for downstream processing.
+1. **Step 2**: Amazon Kinesis Data Streams processes events in real time while Amazon Data Firehose delivers raw events to the data lake.
+1. **Step 3**: Amazon S3 stores training datasets and raw events. Amazon Athena federates queries across sources for analytics-ready data.
+1. **Step 4**: AWS Lambda processes streaming events, updating profiles in Amazon DynamoDB and forwarding signals to Amazon Personalize for identified and anonymous users.
+1. **Step 5**: Amazon Personalize delivers tailored product recommendations and rankings based on real-time interactions and historical behavior.
+1. **Step 6**: Amazon Bedrock, a fully managed service with security, privacy, and responsible AI controls, uses Retrieval Augmented Generation (RAG) to generate personalized content grounded in near real-time customer profiles and product data. Amazon SageMaker AI builds, trains, and deploys custom ML models using training data from Amazon S3.
+1. **Step 7**: The AI Shopping Assistant is deployed and operated using Amazon Bedrock AgentCore, a comprehensive set of services for securely running AI agents at scale. The AgentCore Runtime provides low-latency serverless environments with session isolation, supporting any agent framework, for conversational product discovery. Responses return via AWS AppSync.
+1. **Step 8**: Amazon EventBridge captures scheduled triggers and model drift events, sourced from Amazon SageMaker Model Monitor. This detects performance degradation, routing them to AWS Step Functions to initiate automated retraining workflows and campaign refresh pipelines.
+1. **Step 9**: Amazon ECS on AWS Fargate hosts microservices for A/B testing, campaign management, and recommendation blending.
+1. **Step 10**: AWS AppSync serves near real-time recommendations via GraphQL. Amazon Pinpoint delivers personalized email, SMS, and push campaigns.
+1. **Step 11**: Amazon Cognito authenticates users. AWS KMS encrypts data at rest. Amazon CloudWatch provides metrics and logs while AWS X-Ray enables distributed tracing across the request path. AWS IAM enforces least-privilege access.
 ## Deploy with confidence
 
 Everything you need to launch this Guidance in your account is right here.

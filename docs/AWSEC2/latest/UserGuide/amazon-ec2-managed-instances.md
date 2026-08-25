@@ -136,7 +136,7 @@ AWS services such as Amazon EKS, Amazon ECS, WorkSpaces Core, AWS Lambda, and Am
 | Amazon EC2 launch templates | Amazon EKS, Amazon ECS, Amazon WorkSpaces Core, Amazon Bedrock AgentCore | Launch templates created by managed services |
 | Amazon EBS volumes | Amazon EKS, Amazon ECS, Amazon WorkSpaces Core, Amazon Bedrock AgentCore, Amazon EC2 Fast Launch | Volumes attached to managed instances |
 | Amazon EBS snapshots | Amazon EC2 Fast Launch | Snapshots managed by Amazon EC2 Fast Launch |
-| Network interfaces (ENIs) | Amazon EKS, Amazon ECS, AWS Lambda, Amazon WorkSpaces Core, Amazon Bedrock AgentCore | Network interfaces provisioned for managed workloads |
+| Network interfaces (ENIs) | Amazon EKS, Amazon ECS, AWS Lambda, Amazon WorkSpaces Core, Amazon Bedrock AgentCore, Amazon EC2 Application Status Checks | Network interfaces provisioned for managed workloads |
 
 **Note**
 By default, Amazon EC2 hides managed resources for accounts that did not have managed resources before visibility settings became available. For accounts that already had managed resources, Amazon EC2 sets the visibility setting to **Visible** to preserve existing workflows. The visibility setting applies to all managed resources in a Region, regardless of when they were created. You can change visibility settings at any time.

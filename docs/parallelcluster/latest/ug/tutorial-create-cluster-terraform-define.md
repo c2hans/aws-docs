@@ -80,7 +80,7 @@ You can define multiple clusters within the `cluster_config` element. For every 
          configuration : {
            Region : local.config_vars.region
            Image : {
-             Os : "alinux2"
+             Os : "alinux2023"
            }
            HeadNode : {
              InstanceType : "t3.small"
@@ -149,7 +149,7 @@ You can define multiple clusters within the `cluster_config` element. For every 
    ```
    Region: ${region}
    Image:
-    Os: alinux2
+    Os: alinux2023
    HeadNode:
     InstanceType: t3.small
     Networking:

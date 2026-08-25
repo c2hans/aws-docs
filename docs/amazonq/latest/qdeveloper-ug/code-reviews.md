@@ -5,6 +5,9 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/code-review
 # Reviewing code with Amazon Q Developer
 <a name="code-reviews"></a>
 
+**End of support notice**
+On April 30, 2027, AWS will discontinue support for Amazon Q Developer IDE plugins. For capabilities similar to Amazon Q Developer IDE plugins, explore Kiro to access the latest models and features, including agentic coding, chat and MCP support. For more information, see [Amazon Q Developer IDE plugins end of support](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/q-developer-ide-end-of-support.html).
+
 Amazon Q Developer can review your codebase for security vulnerabilities and code quality issues to improve the posture of your applications throughout the development cycle. You can review an entire codebase, analyzing all files in your local project or workspace, or review a single file. You can also enable auto reviews that assess your code as you write it.
 
 Reviews are powered by both generative AI and rule-based automatic reasoning. [Amazon Q detectors](https://docs.aws.amazon.com/codeguru/detector-library), informed by years of AWS and Amazon.com security best practices, power the rule-based security and quality reviews. As security policies are updated and detectors are added, reviews automatically incorporate new detectors to ensure your code is compliant with the most up-to-date policies.

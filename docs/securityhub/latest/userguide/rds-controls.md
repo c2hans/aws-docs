@@ -1031,7 +1031,7 @@ To publish Aurora MySQL DB cluster audit logs to CloudWatch Logs, see [Publishin
 
 **Parameters:** None
 
-This control checks if automatic minor version upgrade is enabled for an Amazon RDS Multi-AZ DB cluster. The control fails if automatic minor version upgrade isn't enabled for the Multi-AZ DB cluster.
+This control checks if automatic minor version upgrade is enabled for an Amazon RDS Multi-AZ DB cluster. The control fails if automatic minor version upgrade isn't enabled for the Multi-AZ DB cluster. This control does not apply to Aurora DB clusters.
 
 RDS provides automatic minor version upgrade so that you can keep your Multi-AZ DB cluster up to date. Minor versions can introduce new software features, bug fixes, security patches, and performance improvements. By enabling automatic minor version upgrade on RDS database clusters, the cluster, along with the instances in the cluster, will receive automatic updates to the minor version when new versions are available. The updates are applied automatically during the maintenance window.
 

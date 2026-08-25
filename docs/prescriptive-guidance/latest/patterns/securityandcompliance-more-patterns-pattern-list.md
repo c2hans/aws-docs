@@ -34,7 +34,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/se
 + [Enable encrypted connections for PostgreSQL DB instances in Amazon RDS](enable-encrypted-connections-for-postgresql-db-instances-in-amazon-rds.md)
 + [Encrypt an existing Amazon RDS for PostgreSQL DB instance](encrypt-an-existing-amazon-rds-for-postgresql-db-instance.md)
 + [Enforce automatic tagging of Amazon RDS databases at launch](enforce-automatic-tagging-of-amazon-rds-databases-at-launch.md)
-+ [Enforce tagging of Amazon EMR clusters at launch](enforce-tagging-of-amazon-emr-clusters-at-launch.md)
 + [Ensure Amazon EMR logging to Amazon S3 is enabled at launch](ensure-amazon-emr-logging-to-amazon-s3-is-enabled-at-launch.md)
 + [Generate an AWS CloudFormation template containing AWS Config managed rules using Troposphere](generate-an-aws-cloudformation-template-containing-aws-config-managed-rules-using-troposphere.md)
 + [Get Amazon SNS notifications when the key state of an AWS KMS key changes](get-amazon-sns-notifications-when-the-key-state-of-an-aws-kms-key-changes.md)

@@ -27,9 +27,9 @@ The following diagram illustrates the four primary scenarios where DynamoDB impl
 
 ![The diagram illustrates the four primary reasons why DynamoDB may throttle requests in provisioned and on-demand mode.](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/throttling-reasons.png)
 
-This guide is organized to help you understand and work with throttling in DynamoDB. First, we help you identify the specific type of throttling affecting your workload through a [diagnostic framework](throttling-diagnosing-workflow.md).
+This guide is organized to help you understand and work with throttling in DynamoDB. First, this guide helps you identify the specific type of throttling affecting your workload through a [diagnostic framework](throttling-diagnosing-workflow.md).
 
-Then, the [resolution guide](troubleshooting-throttling-diagnostics.md) section offers specific guidance for each throttling scenario, including CloudWatch metrics to monitor for detection and analysis, and recommended steps for optimization. By following this structured approach, you can better diagnose the root cause of throttling and implement the appropriate solution to ensure your DynamoDB tables operate efficiently.
+Then, the [resolution guide](troubleshooting-throttling-diagnostics.md) section offers specific guidance for each throttling scenario, including CloudWatch metrics to monitor for detection and analysis, and recommended steps for optimization. By following this structured approach, you can better diagnose the root cause of throttling and implement the appropriate solution to make sure your DynamoDB tables operate efficiently.
 
 To get started, follow [Diagnosing throttling](throttling-diagnosing-workflow.md) to learn how to identify which type of throttling is affecting your workload and implement the recommended resolution strategy.
 

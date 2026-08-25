@@ -113,7 +113,7 @@ Agents can use any of these customer Identifiers in the Agent Workspace to find 
   You can have multiple order identifiers.
 + **Additional search attributes - optional**: You can choose attributes in your data source object that you want to index to be searchable. By default, all your identifiers are indexed.
 **Tip**
-If the search attributes in your data source objects contain mostly the same value, it may result in slower data ingestion. We recommend creating search attributes that are unique in your data source objects.
+If the search attributes in your data source objects contain mostly the same value, it might result in slower data ingestion. We recommend creating search attributes that are unique in your data source objects.
 + **Data object timestamp**: The data object timestamp is used to resolve profile conflicts when Identity Resolution is enabled for consolidating similar profiles. When two or more similar profiles have conflicting records, the records from the profile with the most recently updated timestamp will be used.
 
   You can choose an attribute in your object to reference for when your object was last updated.

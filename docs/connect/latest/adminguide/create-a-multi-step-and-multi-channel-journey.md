@@ -37,18 +37,18 @@ The following steps show you how to create a journey with the Visual Journey Bui
 ###
 <a name="communications-per-recipient"></a>
 
-You can control how often each recipient is contacted by setting communication limits for the Journey. Simply specify the maximum number of messages a recipient can receive within a defined time frame (e.g., per day, week, or month). If a recipient has already received the maximum number of communications within any of the time frames you set, Connect Customer Outbound Campaigns will automatically skip that recipient and they won't receive additional messages from the Journey.
+You can control how often each recipient is contacted by setting communication limits for the Journey. Simply specify the maximum number of messages a recipient can receive within a defined time frame (for example, per day, week, or month). If a recipient has already received the maximum number of communications within any of the time frames you set, Connect Customer Outbound Campaigns will automatically skip that recipient and they won't receive additional messages from the Journey.
 
 **Example:**
 
 If you set a limit of 4 communications per 2 days and 6 communications per 2 weeks (14 days), any recipient who has already received 4 messages in the last 2 days or 6 messages in the last 14 days will not be contacted again by this Journey.
 
-Connect Customer Outbound Campaigns considers any time a recipient has been contacted, regardless of the recipients interaction with the message, as a communication. For example, a phone call ending in a voicemail is still considered a communication. Amazon Connect Outbound Campaigns will adjust the count of communications if it can determine that the message never reached the end user, and will always err on the side of over-counting. In addition to setting communication limits for individual journeys, you can also define **Total Communication Limits** at the instance level. These limits control how many messages a recipient can receive across all journeys running within your Amazon Connect instance over a specific time frame. If a recipient reaches the specified limit—for example, 10 communications per week—they will be excluded from further messaging across **all journeys** until the time window resets. This helps ensure that overall message volume stays within acceptable boundaries.
+Connect Customer Outbound Campaigns considers any time a recipient has been contacted, regardless of the recipients interaction with the message, as a communication. For example, a phone call ending in a voicemail is still considered a communication. Amazon Connect Outbound Campaigns will adjust the count of communications if it can determine that the message never reached the end user, and will always err on the side of over-counting. In addition to setting communication limits for individual journeys, you can also define **Total Communication Limits** at the instance level. These limits control how many messages a recipient can receive across all journeys running within your Amazon Connect instance over a specific time frame. If a recipient reaches the specified limit—for example, 10 communications per week—they will be excluded from further messaging across **all journeys** until the time window resets. This helps make sure that overall message volume stays within acceptable boundaries.
 
 For **critical journeys**, you have the option to **opt out** of total communication limits by enabling the **Ignore total limits** setting. This allows these journeys to bypass the instance-wide limits, ensuring important messages are delivered without being blocked by other ongoing journeys.
 
 **Note**
-The total count of messages across journeys will not necessarily be incremented immediately, but will eventually be accurate. For example, if two journeys target the same user at the same moment in time, the first journey's communication may not be reflected in the total communication count by the time the second campaign checks.
+The total count of messages across journeys will not necessarily be incremented immediately, but will eventually be accurate. For example, if two journeys target the same user at the same moment in time, the first journey's communication might not be reflected in the total communication count by the time the second campaign checks.
 All communications across all journeys in the active state are considered when determining if a recipient has breached their total limits.
 Connect Customer Outbound Campaigns measures a day as a rolling 24 hour window from the current moment.
 Any communications sent from a journey that **ignores total limits** will not count toward the instance's total communication limits. These journeys are treated as **outside the scope** of instance-level limits.
@@ -61,22 +61,22 @@ You can specify valid times to attempt to contact your users. The **Active commu
 #### Time zone
 <a name="communication-time-zone"></a>
 
-In order for the Journey to determine appropriate time to attempt communication with a particular recipient, you need to provide a **Time Zone**. You may either select a **Standard time zone**, which will be used for all recipients, or you may specify the **Recipient's local time zone**. Recipients with no time zone specified are excluded from message deliveries.
+In order for the Journey to determine appropriate time to attempt communication with a particular recipient, you need to provide a **Time Zone**. You might either select a **Standard time zone**, which will be used for all recipients, or you might specify the **Recipient's local time zone**. Recipients with no time zone specified are excluded from message deliveries.
 + **Standard time zone**: The time zone selected will be used for all recipients. Select this option if you know the time zone of all recipients in your segment or if you want to send all communications in the same time zone.
 + **Recipient's local time zone**: Connect Customer Outbound Campaigns use profile attributes to infer each recipient's time zone. If the time zone cannot be determined, the recipient will be dropped from the Journey. Select this option if it's important to send communications to recipients only during their specific local times.
 
   When you select **Recipient's local time zone**, you configure the following settings:
-  + **Detect recipient's local time zone** — Choose the method used to detect the recipient's time zone. Connect Customer Outbound Campaigns use a profile's [Address](https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-customer-profiles_CreateProfile.html#connect-connect-customer-profiles_CreateProfile-request-Address) and/or [Phone Number](https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-customer-profiles_CreateProfile.html#connect-connect-customer-profiles_CreateProfile-request-PhoneNumber)'s area code to infer the recipient's time zone.
+  + **Detect recipient's local time zone** — Choose the method used to detect the recipient's time zone. Connect Customer Outbound Campaigns use a profile's [Address](https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-customer-profiles_CreateProfile.html#connect-connect-customer-profiles_CreateProfile-request-Address) or [Phone Number](https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-customer-profiles_CreateProfile.html#connect-connect-customer-profiles_CreateProfile-request-PhoneNumber)'s area code to infer the recipient's time zone.
 
     To detect a recipient's time zone from their postal code, you must populate the profile's `Address.Country` together with `Address.PostalCode`. Postal code-based time zone detection requires `Country`; other detection methods do not require `Country`. If `Country` is missing, we cannot determine the recipient's time zone from the postal code. We drop the recipient from the Journey with a `DROPPED_MISSING_TIMEZONE` status.
   + **Profile attributes to use for time zone detection** — Choose the scope of profile attributes used for time zone detection:
-    + **Primary only** — Uses only the primary phone number and/or address attributes from the recipient's customer profile to determine the time zone.
-    + **All available** — Uses all phone number and/or address attributes from the recipient's customer profile to determine the time zone.
+    + **Primary only** — Uses only the primary phone number or address attributes from the recipient's customer profile to determine the time zone.
+    + **All available** — Uses all phone number or address attributes from the recipient's customer profile to determine the time zone.
 
 #### Active communication time (optional)
 <a name="active-communication-time"></a>
 
-The **Active communication time** represents the times during which Connect Customer Outbound campaigns may send communications for this journey. To add active communication times: Select the channel. Alternatively, select Apply to all channels to apply the active communication times to each channel. Select the day of the week to configure. You can add multiple active communication times for each day, if desired. Select the time frame during which Amazon Connect Outbound campaigns can send communications on the given day.
+The **Active communication time** represents the times during which Connect Customer Outbound campaigns might send communications for this journey. To add active communication times: Select the channel. Alternatively, select Apply to all channels to apply the active communication times to each channel. Select the day of the week to configure. You can add multiple active communication times for each day, if desired. Select the time frame during which Amazon Connect Outbound campaigns can send communications on the given day.
 
 #### Exceptions to communication time (optional)
 <a name="exceptions-to-communication-time"></a>
@@ -91,9 +91,9 @@ Select the channel. Add a **Name** for the exception. This name is only for info
 Take a moment to review your journey before publishing.
 
 **Important**
-These settings cannot be changed once your journey has been published.
+These settings cannot be changed after your journey has been published.
 
-Once you have reviewed your journey, choose **Publish** to schedule your journey.
+After you have reviewed your journey, choose **Publish** to schedule your journey.
 
 #### Schedule journey
 <a name="schedule-journey"></a>
@@ -109,6 +109,6 @@ Specify when you want your journey to begin:
 If you want your journey to repeat running, select the **Repeats** radio button and choose a **Frequency**. Connect Customer Outbound campaigns will then refresh profiles in the segment specified for this journey at the same frequency you select. For example, if you schedule your journey to start at 7:03AM EST and use a Daily Frequency, then profiles will be refreshed in the segment daily at 7:03AM EST.
 
 **Important**
-A recipient may be active only in a journey once at any given time. So if they are still waiting to exit the journey when the next Segment Snapshot is created, and are a member of that Snapshot, they are **NOT** allowed to enter the journey as a part of the second Snapshot. If a recipient is a part of a segment Snapshot and is not currently in the journey, they are allowed to enter, regardless of whether they have previously gone through the journey.
+A recipient can be active only in a journey once at any given time. So if they are still waiting to exit the journey when the next Segment Snapshot is created, and are a member of that Snapshot, they are **NOT** allowed to enter the journey as a part of the second Snapshot. If a recipient is a part of a segment Snapshot and is not currently in the journey, they are allowed to enter, regardless of whether they have previously gone through the journey.
 
  Choose **Publish** to schedule your journey.

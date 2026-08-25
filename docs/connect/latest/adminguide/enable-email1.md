@@ -94,7 +94,7 @@ To allow customers and agents to upload and download files, update your cross-or
 1. Add a CORS policy that has one of the following rules on your attachments bucket. For example CORS policies, see [Cross-origin resource sharing: Use-case scenarios](https://docs.aws.amazon.com/AmazonS3/latest/userguide/cors.html#example-scenarios-cors) in the *Amazon S3 Developer Guide*.
    + Option 1: List the endpoints from where attachments will be sent and received, such as the name of your business web site. This rule allows cross-origin PUT and GET requests from your website (for example, http://www.example1.com).
 
-     Your CORS policy may look similar to the following example:
+     Your CORS policy might look similar to the following example:
 
      ```
      [
@@ -116,7 +116,7 @@ To allow customers and agents to upload and download files, update your cross-or
      ```
    + Option 2: Add the `*` wildcard to `AllowedOrigin`. This rule allows cross-origin PUT and GET requests from all origins, so you don't have to list your endpoints.
 
-     Your CORS policy may look similar to the following example:
+     Your CORS policy might look similar to the following example:
 
      ```
      [

@@ -33,6 +33,8 @@ Gateway versions 1.x.x can't be updated to 2.x.x.
 
 | Release Date | Software Version | Release Notes |
 | --- | --- | --- |
+| 2026-08-20 | 2.1.12 |  +  Updates operating system components and software packages to improve security and performance.   |
+| 2026-08-10 | 2.1.11 |  +  Updates operating system components and software packages to improve security and performance.   |
 | 2026-07-20 | 2.1.10 |  +  Updates operating system components and software packages to improve security and performance. <br />+  Fixes a potential gateway stability issue when the cache runs critically low.   |
 | 2026-07-15 | 2.1.9 |  +  Updates operating system components and software packages to improve security and performance.   |
 | 2026-06-16 | 2.1.8 | **Maintenance Updates:**+  Updated operating system and software elements to improve security and performance.  |

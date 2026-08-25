@@ -87,7 +87,7 @@ The following tables contain contact analytics data.
 |  aws\_account\_id  |  string  |  Yes  |  The ID of the AWS account that owns the contact.  |
 |  instance\_id  |  string  |  No  |  The identifier of the Connect Customer instance. You can [find the instance ID](https://docs.aws.amazon.com/connect/latest/adminguide/find-instance-arn.html) in the Amazon Resource Name (ARN) of the instance.  |
 |  evaluation\_id  |  string  |  No  |  primary key, ID of the evaluation to disambiguate multiple evaluations done of the call with the same form (by different evaluators).  |
-|  item\_reference\_id  |  string  |  No  |  primary key - may represent form/ section/ sub-section/ question depending on type.  |
+|  item\_reference\_id  |  string  |  No  |  primary key - might represent form/ section/ sub-section/ question depending on type.  |
 |  item\_type  |  string  |  Yes  |  Defines "Form/Section/sub-section/question or indicates a deleted record.  |
 |  contact\_id  |  string  |  Yes  |  The ID of the contact being evaluated.  |
 |  evaluation\_submitted\_timestamp  |  Timestamp  |  Yes  |  Timestamp when contact was evaluated.  |

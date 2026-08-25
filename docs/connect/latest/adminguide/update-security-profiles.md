@@ -30,4 +30,4 @@ By default, the Connect Customer **Admin** security profile has these permission
 1. Choose **Save**.
 
 **Note**
-Modifying the access control or resource tags on a security profile may impact the features or resources that a user with this security profile can access.
+Modifying the access control or resource tags on a security profile might impact the features or resources that a user with this security profile can access.

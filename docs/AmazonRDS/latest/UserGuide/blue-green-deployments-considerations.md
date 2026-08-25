@@ -113,7 +113,7 @@ The name (instance ID) of a resource changes when you switch over a blue/green d
 After you switch over a blue/green deployment, consider updating the resource IDs to those of the newly transitioned production resources for integrated features and services that you used with the production resources. Specifically, consider the following updates:
 + If you perform filtering using the RDS API and resource IDs, adjust the resource IDs used in filtering after switchover.
 + If you use CloudTrail for auditing resources, adjust the consumers of the CloudTrail to track the new resource IDs after switchover. For more information, see [Monitoring Amazon RDS API calls in AWS CloudTrail](logging-using-cloudtrail.md).
-+ If you use the Performance Insights API, adjust the resource IDs in calls to the API after switchover. For more information, see [Monitoring DB load with Performance Insights on Amazon RDS](USER_PerfInsights.md).
++ If you use the Performance Insights API, adjust the resource IDs in calls to the API after switchover. For more information, see [Monitoring DB load with Amazon CloudWatch Database Insights on Amazon RDS](USER_PerfInsights.md).
 
   You can monitor a database with the same name after switchover, but it doesn't contain the data from before the switchover.
 + If you use resource IDs in IAM policies, make sure you add the resource IDs of the newly transitioned resources when necessary. For more information, see [Identity and access management for Amazon RDS](UsingWithRDS.IAM.md).

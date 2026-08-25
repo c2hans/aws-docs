@@ -5,6 +5,9 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/inline-sugg
 # Generating inline suggestions with Amazon Q Developer
 <a name="inline-suggestions"></a>
 
+**End of support notice**
+On April 30, 2027, AWS will discontinue support for Amazon Q Developer IDE plugins. For capabilities similar to Amazon Q Developer IDE plugins, explore Kiro to access the latest models and features, including agentic coding, chat and MCP support. For more information, see [Amazon Q Developer IDE plugins end of support](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/q-developer-ide-end-of-support.html).
+
 Amazon Q can provide you with code recommendations in real time. As you write code, Amazon Q automatically generates suggestions based on your existing code and comments. Your personalized recommendations can vary in size and scope, ranging from a single line comment to fully formed functions.
 
 When you start typing out single lines of code or comments, Amazon Q makes suggestions based on your current and previous inputs. Filenames are also taken into consideration.

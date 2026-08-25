@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/setup-chat-tim
 # Set up chat timeouts for chat participants
 <a name="setup-chat-timeouts"></a>
 
-When a chat conversation between an agent and a customer has been inactive (no messages sent) for a certain amount of time, you may want to consider a chat participant to be idle, and you may even want to automatically disconnect an agent from the chat.
+When a chat conversation between an agent and a customer has been inactive (no messages sent) for a certain amount of time, you might want to consider a chat participant to be idle, and you might even want to automatically disconnect an agent from the chat.
 
 To do this you can configure both idle timeouts and auto-close timeouts using the [UpdateParticipantRoleConfig](https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateParticipantRoleConfig.html) action.
 

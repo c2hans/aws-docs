@@ -128,7 +128,7 @@ This access pattern requires a one-to-many relationship model between a complain
 
 Other options to deal with such possible comment collisions would be to increase the granularity for the timestamp or add an incremental number as a suffix instead of using `Comment_ID`. In this case, we’ll prefix the sort key value for items corresponding to comments with “comm\#” to enable range-based operations.
 
-We also need to ensure that the `currentState` in the complaint metadata reflects the state when a new comment is added. Adding a comment might indicate that the complaint has been assigned to an agent or it has been resolved and so on. In order to bundle the addition of comment and update of current state in the complaint metadata, in an all-or-nothing manner, we will use the [TransactWriteItems](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_TransactWriteItems.html) API. The resulting table state now looks like this:
+We also need to make sure that the `currentState` in the complaint metadata reflects the state when a new comment is added. Adding a comment might indicate that the complaint has been assigned to an agent or it has been resolved and so on. In order to bundle the addition of comment and update of current state in the complaint metadata, in an all-or-nothing manner, we will use the [TransactWriteItems](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_TransactWriteItems.html) API. The resulting table state now looks like this:
 
 ![Table to store a complaint with its comments as a one-to-many relationship using a composite sort key.](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/DataModeling/ComplaintManagement-8-Step2.png)
 

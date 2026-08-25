@@ -27,13 +27,13 @@ Activity in the database that's generating write-ahead log data fills up the WAL
 If this wait event occurs often, you should review your workload and the type of updates that your workload performs and their frequency. In particular, look for the following types of activity.
 
 **Heavy DML activity**
-Changing data in database tables doesn't happen instantaneously. An insert to one table might need to wait for an insert or an update to the same table from another client. The data manipulation language (DML) statements for changing data values (INSERT, UPDATE, DELETE, COMMIT, ROLLBACK TRANSACTION) can result in contention that causes the write-ahead logfile to be waiting for the buffers to be flushed. This situation is captured in the following Amazon RDS Performance Insights metrics that indicate heavy DML activity.
+Changing data in database tables doesn't happen instantaneously. An insert to one table might need to wait for an insert or an update to the same table from another client. The data manipulation language (DML) statements for changing data values (INSERT, UPDATE, DELETE, COMMIT, ROLLBACK TRANSACTION) can result in contention that causes the write-ahead logfile to be waiting for the buffers to be flushed. This situation is captured in the following detailed per-query and database counter metrics, which are exposed through the Performance Insights API and indicate heavy DML activity.
 +  `tup_inserted`
 + `tup_updated`
 + `tup_deleted`
 + `xact_rollback`
 + `xact_commit`
-For more information about these metrics, see [Performance Insights counters for Amazon RDS for PostgreSQL](USER_PerfInsights_Counters.md#USER_PerfInsights_Counters.PostgreSQL).
+For more information about these metrics, see [Detailed Database Metrics for Amazon RDS for PostgreSQL](USER_PerfInsights_Counters.md#USER_PerfInsights_Counters.PostgreSQL).
 
 **Frequent checkpoint activity**
 Frequent checkpoints contribute to a higher number of WAL files. In RDS for PostgreSQL, full page writes are always "on." Full page writes help protect against data loss. However, when checkpointing occurs too frequently, the system can suffer overall performance issues. This is especially true on systems with heavy DML activity. In some cases, you might find error messages in your `postgresql.log` stating that “checkpoints are occurring too frequently."

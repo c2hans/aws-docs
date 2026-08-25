@@ -8,8 +8,10 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 <a name="AWS_Deadline"></a>
 
 **Resource types**
++ [AWS::Deadline::Budget](aws-resource-deadline-budget.md)
 + [AWS::Deadline::Farm](aws-resource-deadline-farm.md)
 + [AWS::Deadline::Fleet](aws-resource-deadline-fleet.md)
++ [AWS::Deadline::Job](aws-resource-deadline-job.md)
 + [AWS::Deadline::LicenseEndpoint](aws-resource-deadline-licenseendpoint.md)
 + [AWS::Deadline::Limit](aws-resource-deadline-limit.md)
 + [AWS::Deadline::MeteredProduct](aws-resource-deadline-meteredproduct.md)
@@ -19,3 +21,4 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::Deadline::QueueFleetAssociation](aws-resource-deadline-queuefleetassociation.md)
 + [AWS::Deadline::QueueLimitAssociation](aws-resource-deadline-queuelimitassociation.md)
 + [AWS::Deadline::StorageProfile](aws-resource-deadline-storageprofile.md)
++ [AWS::Deadline::Worker](aws-resource-deadline-worker.md)

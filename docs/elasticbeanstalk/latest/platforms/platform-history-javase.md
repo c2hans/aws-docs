@@ -9,10 +9,23 @@ This page lists the current and previous versions of AWS Elastic Beanstalk's Jav
 
 See the [Supported platforms](platforms-supported.md) page for information on the latest version of each platform supported by Elastic Beanstalk. Detailed release notes are available for recent releases at [AWS Elastic Beanstalk Release Notes](https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/).
 
-## August 11, 2026 – present
+## August 24, 2026 – present
+<a name="platform-history-2026-08-24"></a>
+
+The following Elastic Beanstalk platform versions for Java SE have been current since August 24, 2026:
+
+|  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  Tools  |  AWS X-Ray  |  Proxy Server  |
+| --- | --- | --- | --- | --- | --- |
+|  ** Corretto 25 AL2023 version 4.12.7** <br /> * 64bit Amazon Linux 2023 v4.12.7 running Corretto 25 *  | 2023.12.20260817 | Corretto 25.0.4.7.1 | Ant 1.10.17, Gradle 9.7.1, Maven 3.9.16 | 3.6.7 | nginx 1.30.4 |
+|  ** Corretto 21 AL2023 version 4.12.7** <br /> * 64bit Amazon Linux 2023 v4.12.7 running Corretto 21 *  | 2023.12.20260817 | Corretto 21.0.12.8.1 | Ant 1.10.17, Gradle 9.7.1, Maven 3.9.16 | 3.6.7 | nginx 1.30.4 |
+|  ** Corretto 17 AL2023 version 4.12.7** <br /> * 64bit Amazon Linux 2023 v4.12.7 running Corretto 17 *  | 2023.12.20260817 | Corretto 17.0.20.8.1 | Ant 1.10.17, Gradle 9.7.1, Maven 3.9.16 | 3.6.7 | nginx 1.30.4 |
+|  ** Corretto 11 AL2023 version 4.12.7** <br /> * 64bit Amazon Linux 2023 v4.12.7 running Corretto 11 *  | 2023.12.20260817 | Corretto 11.0.32.9.1 | Ant 1.10.17, Gradle 8.14.5, Maven 3.9.16 | 3.6.7 | nginx 1.30.4 |
+|  ** Corretto 8 AL2023 version 4.12.7** <br /> * 64bit Amazon Linux 2023 v4.12.7 running Corretto 8 *  | 2023.12.20260817 | Corretto 8.502.07.1 | Ant 1.10.17, Gradle 8.14.5, Maven 3.9.16 | 3.6.7 | nginx 1.30.4 |
+
+## August 11, 2026 – August 23, 2026
 <a name="platform-history-2026-08-11"></a>
 
-The following Elastic Beanstalk platform versions for Java SE have been current since August 11, 2026:
+The following Elastic Beanstalk platform versions for Java SE were current between August 11, 2026 and August 23, 2026:
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  Tools  |  AWS X-Ray  |  Proxy Server  |
 | --- | --- | --- | --- | --- | --- |

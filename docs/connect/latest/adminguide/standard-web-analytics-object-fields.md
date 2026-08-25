@@ -14,10 +14,10 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/standard-web-a
 <tbody>
   <tr><td colspan="3">Event Attributes</td></tr>
   <tr><td>EventId</td><td>String</td><td>Unique identifier for a web analytics event.</td></tr>
-  <tr><td>EventType</td><td>String</td><td>Type of the web analytics event, like - Page View, form submission, button choose, sPull up mainline<br />\u0000<br />earch bar interaction, app error prompts, cart interactions, purchases, scrolls, etc.</td></tr>
+  <tr><td>EventType</td><td>String</td><td>Type of the web analytics event, like - Page View, form submission, button choose, sPull up mainline<br />\u0000<br />earch bar interaction, app error prompts, cart interactions, purchases, scrolls.</td></tr>
   <tr><td>EventTimestamp</td><td>Number</td><td>Epoch millisecond timestamp of the event.</td></tr>
-  <tr><td>EventDuration</td><td>Number</td><td>EventDuration represents the amount of time a user spent during a particular interaction, measured in seconds. Common use cases include: Time spent viewing a product, Length of a browsing session on a particular page, Time spent on a feature, etc.</td></tr>
-  <tr><td>EventValue</td><td>Number</td><td>EventValue is a numerical attribute that represents the value or importance of an interaction event. Common use cases include: Purchase amount for transaction events, Rating values for product ratings, Percentage completion for video views, etc.</td></tr>
+  <tr><td>EventDuration</td><td>Number</td><td>EventDuration represents the amount of time a user spent during a particular interaction, measured in seconds. Common use cases include: Time spent viewing a product, Length of a browsing session on a particular page, Time spent on a feature.</td></tr>
+  <tr><td>EventValue</td><td>Number</td><td>EventValue is a numerical attribute that represents the value or importance of an interaction event. Common use cases include: Purchase amount for transaction events, Rating values for product ratings, Percentage completion for video views.</td></tr>
   <tr><td colspan="3">Session Attributes</td></tr>
   <tr><td>Session.Id</td><td>String</td><td>Unique identifier for the session.</td></tr>
   <tr><td>Session.StartTimestamp</td><td>Number</td><td>Epoch millisecond indicating the start timestamp of the session.</td></tr>
@@ -32,7 +32,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/standard-web-a
   <tr><td>Element.Classes</td><td>String</td><td>CSS Styling Classes of the Element</td></tr>
   <tr><td>Element.Text</td><td>String</td><td>Element text (Useful for buttons, input fields placeholders, etc).</td></tr>
   <tr><td>Element.AltText</td><td>String</td><td>AltText of a HTML element (generally used for images).</td></tr>
-  <tr><td>Element.Source</td><td>String</td><td>Source of an video, image, etc.</td></tr>
+  <tr><td>Element.Source</td><td>String</td><td>Source of an video, image.</td></tr>
   <tr><td colspan="3">Form</td></tr>
   <tr><td>Form.Id</td><td>String</td><td>Unique Identifier for an input form</td></tr>
   <tr><td>Form.Name</td><td>String</td><td>Name of the Form</td></tr>
@@ -46,11 +46,11 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/standard-web-a
   <tr><td>Search.ResultsPerPage</td><td>Number</td><td>Number of results shown per page.</td></tr>
   <tr><td>Search.CurrentResultsPage</td><td>Number</td><td>Current results page that the user is viewing.</td></tr>
   <tr><td>Search.FilterExpression</td><td>String</td><td>Any additional filter expressions used.</td></tr>
-  <tr><td>Search.SortCriteria</td><td>String</td><td>Criteria for sorting the search result. For example - Relevance, Price, etc.</td></tr>
+  <tr><td>Search.SortCriteria</td><td>String</td><td>Criteria for sorting the search result. For example - Relevance, Price.</td></tr>
   <tr><td>Search.SortOrder</td><td>String</td><td>Sort order for Search results - Ascending/Descending.</td></tr>
   <tr><td colspan="3">Item/Item List</td></tr>
-  <tr><td>Item</td><td>Item</td><td>Focused item in an event, indicating, the item added to a cart, item viewed, etc.</td></tr>
-  <tr><td>ItemsList</td><td>List&lt;Item&gt;</td><td>Focused list of items in an event, indicating, items purchased, items in a cart, item search results, etc.</td></tr>
+  <tr><td>Item</td><td>Item</td><td>Focused item in an event, indicating, the item added to a cart, item viewed.</td></tr>
+  <tr><td>ItemsList</td><td>List&lt;Item&gt;</td><td>Focused list of items in an event, indicating, items purchased, items in a cart, item search results.</td></tr>
   <tr><td colspan="3">Item Impressions</td></tr>
   <tr><td>AdditionalItemImpressions</td><td>List&lt;Item&gt;</td><td>Additional Item impressions list</td></tr>
   <tr><td colspan="3">Cart</td></tr>
@@ -101,7 +101,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/standard-web-a
 | Value | String | Monetary value of the item. |
 | Currency | String | Currency of the item. |
 | Quantity | Number | Quantity of the item. |
-| ImpressionType | String | String identifying the impression type for an event. For example - Featured, Sponsored, Top picks, etc. |
+| ImpressionType | String | String identifying the impression type for an event. For example - Featured, Sponsored, Top picks. |
 | ImpressionId | String | A string identifier for uniquely identifying an impression. |
 
 **Device Standard Object Schema**
@@ -109,8 +109,8 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/standard-web-a
 | Field | Type | Description |
 | --- | --- | --- |
 | DeviceId | String | A unique identifier for the device. |
-| Type | String | Type of device (e.g., desktop, mobile) |
-| Model | String | Device model, like - Macbook Pro/Air, IPhone 16, etc. |
+| Type | String | Type of device (for example, desktop, mobile) |
+| Model | String | Device model, like - Macbook Pro/Air, IPhone 16. |
 | Manufacturer | String | Manufacturer of the device. |
 | OperatingSystem | String | Indicates Windows, MacOs, IOS, Android. |
 | OperatingSystemVersion | String | OS Version |

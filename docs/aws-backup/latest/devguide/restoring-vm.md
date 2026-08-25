@@ -76,6 +76,8 @@ If you need to restore a virtual machine that no longer has a connection with Ba
    1. **Datastore**
 
 1. For **Restore role,** select either the **Default role** (recommended) or **Choose an IAM role** using the dropdown menu.
+**Note**
+If role manager is enabled in your account, AWS Backup selects the default service role for you, and a **Customize** option is available. For more information, see [IAM role creation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html) in the *IAM User Guide*.
 
 1. Choose **Restore backup**.
 
@@ -106,6 +108,8 @@ If you need to restore a virtual machine that no longer has a connection with Ba
 1. Select your KMS key from the menu.
 
 1. For **Restore role,** select either the **Default role** (recommended) or **Choose an IAM role**.
+**Note**
+If role manager is enabled in your account, AWS Backup selects the default service role for you, and a **Customize** option is available. For more information, see [IAM role creation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html) in the *IAM User Guide*.
 
 1. Choose **Restore backup**.
 
@@ -138,6 +142,8 @@ Choose an instance type that matches or exceeds the specifications of the origin
 1. For **security groups**, choose a security group, which acts as a firewall for traffic to your instance.
 
 1. For **Restore role,** select either the **Default role** (recommended) or **Choose an IAM role**.
+**Note**
+If role manager is enabled in your account, AWS Backup selects the default service role for you, and a **Customize** option is available. For more information, see [IAM role creation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html) in the *IAM User Guide*.
 
 1. *Optional*: To run a script on your instance at launch, expand **Advanced settings** and enter the script in **User data**.
 

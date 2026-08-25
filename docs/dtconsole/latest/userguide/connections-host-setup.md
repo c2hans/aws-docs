@@ -15,7 +15,7 @@ After your host is created, it is in a **Pending** status. To move the host from
 
 1. After your host reaches **Pending** status on the AWS Developer Tools console, choose **Set up host**.
 
-1. If you are creating a host for GitLab self-managed, a **Set up** page displays. In **Provide personal access token**, provide your GitLab PAT with the followed scoped-down permission only: api.
+1. If you are creating a host for GitLab self-managed, a **Set up** page displays. In **Provide personal access token**, provide your GitLab PAT with the `api` scope. If Admin Mode is enabled on your GitLab instance, the PAT must also include the `admin_mode` scope. For more information, see [Access token scopes](https://docs.gitlab.com/security/tokens/access_token_scopes/) on the GitLab website.
 
 1. On the third-party installed provider login page, such as the **GitHub Enterprise Server** login page, log in with your account credentials if prompted.
 

@@ -151,7 +151,7 @@ If the Amazon AppIntegrations service is using the role when you try to delete t
 
 1. Go to the Customer Profiles or the Tasks section of the Connect Customer Console and choose the name of the event integration association that you wish to delete.
 
-1. Once you choose an event integration on the Tasks section, a pop-up will appear. Choose the **Remove connection** button and enter the word *remove* to delete your event integration association.
+1. After you choose an event integration on the Tasks section, a pop-up will appear. Choose the **Remove connection** button and enter the word *remove* to delete your event integration association.
 
 **To delete event integrations used by the AWSServiceRoleForAppIntegrations using the AWS CLI**
 

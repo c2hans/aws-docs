@@ -15,7 +15,7 @@ Object Lock adds another layer of protection against object changes and deletion
 + You must enable versioning on your call recording bucket.
 + After you enable Amazon S3 Object Lock, you cannot remove it.
 + We recommend using a dedicated call recording bucket because all objects will be locked after the default Object Lock retention policy is applied.
-+ Ensure that your retention policy is appropriate for your requirements. After the policy is configured, your call recordings will be protected from deletion for the duration specified.
++ Make sure that your retention policy is appropriate for your requirements. After the policy is configured, your call recordings will be protected from deletion for the duration specified.
 + We strongly recommended you thoroughly test the policy in a non-production environment before implementing it in production.
 
 ## Step 1: Create an S3 bucket with Object Lock enabled

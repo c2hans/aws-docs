@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/performance-ef
 # Performance efficiency for Amazon Connect workloads
 <a name="performance-efficiency-bp"></a>
 
-Performance eﬃciency includes the ability to use computing resources eﬃciently to meet system requirements, and to maintain that eﬃciency as demand changes and technologies evolve. This section provides an overview of design principles, best practices, and questions surrounding performance efficiency for Connect Customer workloads. You can ﬁnd prescriptive guidance on implementation in the [Performance Eﬃciency Pillar](                 https://d0.awsstatic.com/whitepapers/architecture/AWS-Performance-Efficiency-Pillar.pdf) whitepaper.
+Performance eﬃciency includes the ability to use computing resources eﬃciently to meet system requirements, and to maintain that eﬃciency as demand changes and technologies evolve. This section provides an overview of design principles, best practices, and questions surrounding performance efficiency for Connect Customer workloads. You can ﬁnd prescriptive guidance on implementation in the [Performance Eﬃciency Pillar](https://d0.awsstatic.com/whitepapers/architecture/AWS-Performance-Efficiency-Pillar.pdf) whitepaper.
 
 ## Architectural design
 <a name="performance-efficiency-architecturaldesignbp"></a>
@@ -14,7 +14,7 @@ There are two fundamental architectural design principles to consider when desig
 + Reductionism is a philosophical tenet stating that by analyzing a system to its ultimate component parts, you can unravel it at deeper levels.
 + Holism, in contrast, states that by considering the whole picture one gets a deeper and more complete view of a situation than by analyzing it into its component parts
 
-The reductionist approach focuses on each individual component (IVR, ACD, Speech Recognition) on its own and often results in a disjointed customer experience that, when evaluated individually, may meet performance requirements for the use case. However, when evaluated end-to-end, can result in decreased quality of experience for your contacts while funneling development efforts into operational silos. This approach complicates regression testing, increases time to market, and limits the development of cross-discipline operational resources critical to the success of your contact center.
+The reductionist approach focuses on each individual component (IVR, ACD, Speech Recognition) on its own and often results in a disjointed customer experience that, when evaluated individually, might meet performance requirements for the use case. However, when evaluated end-to-end, can result in decreased quality of experience for your contacts while funneling development efforts into operational silos. This approach complicates regression testing, increases time to market, and limits the development of cross-discipline operational resources critical to the success of your contact center.
 
 A holistic view of the contact center is shown in the following diagram:
 
@@ -28,7 +28,7 @@ You can start with the default experience, building out your flows, but refactor
 
 ![Refactoring your single flow into two.](http://docs.aws.amazon.com/connect/latest/adminguide/images/architecture/architecturaldesign2.png)
 
-In your next iteration, identify additional experiences that you need to plan for and build routing and, if necessary, flows for each. For example, you may want to play different prompts for a contact that is past due on their bill or that may have tried to contact multiple times for the same purpose. With this approach, you are working towards personalized, dynamic experiences that are pertinent to your contacts and why they are contacting you. In addition to improving the quality of experience for your contacts and decreasing handle times, you’re encouraging contact self-service by providing a more intelligent and flexible experience. Your next iteration may look like the following illustration:
+In your next iteration, identify additional experiences that you need to plan for and build routing and, if necessary, flows for each. For example, you might want to play different prompts for a contact that is past due on their bill or that might have tried to contact multiple times for the same purpose. With this approach, you are working towards personalized, dynamic experiences that are pertinent to your contacts and why they are contacting you. In addition to improving the quality of experience for your contacts and decreasing handle times, you’re encouraging contact self-service by providing a more intelligent and flexible experience. Your next iteration might look like the following illustration:
 
 ![Next iteration of flow.](http://docs.aws.amazon.com/connect/latest/adminguide/images/architecture/architecturaldesign3.png)
 
@@ -41,7 +41,7 @@ Many Large businesses support multiple phone numbers, business units, prompts, q
 
 ![Flow design example showing a one-to-one mapping of a DNIS and Flow implementation.](http://docs.aws.amazon.com/connect/latest/adminguide/images/architecture/contactflowdesign.png)
 
-Alternatively, you should consider an approach that results in Multiple DNIS to one or few flows by using the dynamic nature of Connect Customer Flows. With this approach, you can store configuration information like Prompts, Queues, Business Hours, Whisper Prompts/Flows, Queues, Queue Treatments and Hold Messages etc., in NoSQL Database DynamoDB. In Connect Customer, you can associate multiple phone numbers to the same flow and use the Lambda function to look up configurations for that phone number. This allows you to dynamically define the contact’s experience based on the attributes returned from DynamoDB.
+Alternatively, you should consider an approach that results in Multiple DNIS to one or few flows by using the dynamic nature of Connect Customer Flows. With this approach, you can store configuration information like Prompts, Queues, Business Hours, Whisper Prompts/Flows, Queues, Queue Treatments and Hold Messages, in NoSQL Database DynamoDB. In Connect Customer, you can associate multiple phone numbers to the same flow and use the Lambda function to look up configurations for that phone number. This allows you to dynamically define the contact’s experience based on the attributes returned from DynamoDB.
 
 For example, you can play prompts or use Text-to-Speech (TTS) to greet callers based upon the lookups in DynamoDB or associate queues using dynamic attributes supported in flow blocks. The result with this approach is a flow implementation that is efficient to build, maintain, and support:
 
@@ -78,7 +78,7 @@ Direct Connect is a cloud service solution that makes it more efficient to estab
 
 While Direct Connect does not solve issues specific to private LAN/WAN traversal to your edge router, it can help solve for latency and connectivity issues between your edge router and AWS resources. It can also solve for latency and poor call quality between your edge router and AWS resources.
 
-Depending on your VDI environment, you may not be able to take advantage of Direct Connect as it requires you to conﬁgure your edge router to redirect AWS traﬃc across dedicated ﬁber rather than traversing the public WAN. If the VDI environment is hosted outside of your local DXC-enabled network, you may not be able to take full advantage of Direct Connect.
+Depending on your VDI environment, you might not be able to take advantage of Direct Connect as it requires you to conﬁgure your edge router to redirect AWS traﬃc across dedicated ﬁber rather than traversing the public WAN. If the VDI environment is hosted outside of your local DXC-enabled network, you might not be able to take full advantage of Direct Connect.
 
 Do not use Direct Connect for "QoS" or "increased security." Direct Connect can cause performance degradation in cases where the latency from the agent workstation is higher than the ISP’s path to the Connect Customer instance. Direct Connect does not offer additional security when compared to an ISP as Connect Customer voice and data is already encrypted.
 
@@ -90,7 +90,7 @@ Connect Customer offers a native integration with Amazon Polly, allowing you to 
 ### Amazon Lex
 <a name="amazonlex-bp"></a>
 
-Your contact’s path to service can be a challenging experience that doesn’t always meet up to their expectations. Your contacts may wait on hold, repeat information, need to be transferred, and ultimately, spend too much time getting what they need. AI is playing a role in improving this customer experience in call centers to include engagement through chatbots — intelligent, natural language virtual assistants. These chatbots are able to recognize human speech and understand the caller’s intent without requiring the caller to speak in specific phrases. Contacts can perform tasks such as changing a password, requesting a balance on an account, or scheduling an appointment without ever speaking to an agent.
+Your contact’s path to service can be a challenging experience that doesn’t always meet up to their expectations. Your contacts might wait on hold, repeat information, need to be transferred, and ultimately, spend too much time getting what they need. AI is playing a role in improving this customer experience in call centers to include engagement through chatbots — intelligent, natural language virtual assistants. These chatbots are able to recognize human speech and understand the caller’s intent without requiring the caller to speak in specific phrases. Contacts can perform tasks such as changing a password, requesting a balance on an account, or scheduling an appointment without ever speaking to an agent.
 
 Amazon Lex is a service that allows you to create intelligent conversational chatbots. It lets you turn your Connect Customer contact center flows into natural conversations that provide personalized experiences for your callers. Using the same technology that powers Amazon Alexa, an Amazon Lex chatbot can be attached to your Connect Customer Flow to recognize the intent of your caller, ask follow-up questions, and provide answers. Amazon Lex maintains context and manages the dialogue, dynamically adjusting the responses based on the conversation, so your contact center can perform common tasks for callers, to address many customer inquiries through self-service interactions. Additionally, Amazon Lex chatbots support an optimal (8 kHz) telephony audio sampling rate, to provide increased speech recognition accuracy and fidelity for your contact center voice interactions.
 
@@ -124,7 +124,7 @@ Conversational analytics is a set of machine learning (ML) capabilities integrat
 + [ Amazon EBS volume performance on Linux instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSPerformance.html)
 
 **Whitepaper**
-+ [Performance Eﬃciency Pillar](                         https://d0.awsstatic.com/whitepapers/architecture/AWS-Performance-Efficiency-Pillar.pdf)
++ [Performance Eﬃciency Pillar](https://d0.awsstatic.com/whitepapers/architecture/AWS-Performance-Efficiency-Pillar.pdf)
 
 **Video**
 + [AWS re:Invent 2016: Scaling Up to Your First 10 Million Users (ARC201)](https://www.youtube.com/watch?v=n28lDDdlnVg)

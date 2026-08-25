@@ -53,14 +53,14 @@ Each extraction includes:
 + **Value** — The extracted information from the contact.
 + **PointsOfInterest** — The timestamp offsets in the recording where the information was mentioned (voice contacts only).
 
-## Extracted information via API
+## Extracted information through API
 <a name="information-extraction-api"></a>
 
 You can retrieve extracted information generated during after-call work programmatically using the following APIs:
 + **[ListRealtimeContactAnalysisSegments](https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-contact-lens_ListRealtimeContactAnalysisSegments.html)** — Returns extracted information segments for **voice** contacts during after-contact work.
 + **[ListRealtimeContactAnalysisSegmentsV2](https://docs.aws.amazon.com/connect/latest/APIReference/API_ListRealtimeContactAnalysisSegmentsV2.html)** — Returns extracted information segments for **chat** contacts during after-contact work.
 
-## Extracted information via Amazon Kinesis
+## Extracted information through Amazon Kinesis
 <a name="information-extraction-kinesis"></a>
 
 If your Connect Customer instance is configured to send conversational analytics to Amazon Kinesis Data Streams, extracted information events generated during after-call work are delivered to your Kinesis stream as they are produced.

@@ -187,7 +187,7 @@ When you enable an IAM role to delegate KMS operations, you can no longer access
            {
                "Effect": "Allow",
                "Action": "kms:DescribeKey",
-               "Resource": "arn:aws:kms:{{<region>}}:{{<account-id>}}:key/{{<key-id>}}"
+               "Resource": "arn:aws:kms:{{us-east-1}}:{{123456789012}}:key/{{1234abcd-12ab-34cd-56ef-1234567890ab}}"
            },
            {
                "Effect": "Allow",
@@ -196,18 +196,18 @@ When you enable an IAM role to delegate KMS operations, you can no longer access
                    "kms:Encrypt",
                    "kms:GenerateDataKey"
                ],
-               "Resource": "arn:aws:kms:{{<region>}}:{{<account-id>}}:key/{{<key-id>}}"
+               "Resource": "arn:aws:kms:{{us-east-1}}:{{123456789012}}:key/{{1234abcd-12ab-34cd-56ef-1234567890ab}}"
            },
            {
                "Effect": "Allow",
                "Action": "kms:CreateGrant",
-               "Resource": "arn:aws:kms:{{<region>}}:{{<account-id>}}:key/{{<key-id>}}",
+               "Resource": "arn:aws:kms:{{us-east-1}}:{{123456789012}}:key/{{1234abcd-12ab-34cd-56ef-1234567890ab}}",
                "Condition": {
                    "StringEquals": {
-                       "kms:EncryptionContext:glue_catalog_id": "{{<account-id>}}"
+                       "kms:EncryptionContext:glue_catalog_id": "{{123456789012}}"
                    },
                    "StringLike": {
-                       "kms:CallerAccount": "{{<account-id>}}"
+                       "kms:CallerAccount": "{{123456789012}}"
                    },
                    "Bool": {
                        "kms:GrantIsForAWSResource": "true"

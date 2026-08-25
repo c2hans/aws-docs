@@ -11,4 +11,4 @@ GuardDuty also monitors AWS account access behavior for signs of compromise, suc
 
 GuardDuty informs you about the status of your AWS environment by producing security findings that you can view in the GuardDuty console or through Amazon EventBridge. For more information, see the * [Amazon GuardDuty User Guide](https://docs.aws.amazon.com/guardduty/latest/ug/what-is-guardduty.html) *.
 
-This document was last published on August 18, 2026.
+This document was last published on August 24, 2026.

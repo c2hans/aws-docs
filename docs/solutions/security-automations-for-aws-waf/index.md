@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com//solutions/security-automations-for-aws-
 
 Deploy a set of preconfigured AWS WAF rules to filter common web-based attacks
 
-- **Version**: 4.1.5
+- **Version**: 4.1.6
 - **Released**: 8/2026
 - **Author**: AWS
 - **Est. deployment time**: 15 mins

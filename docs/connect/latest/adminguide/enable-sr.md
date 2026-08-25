@@ -55,8 +55,8 @@ Follow the instructions in [Connect Customer Client Application](amazon-connect-
 ## Configuration tips
 <a name="tips-sr"></a>
 + To enable supervisors to search for contacts that have screen recordings, add a [Set contact attributes](set-contact-attributes.md) block before **Set recording and analytics behavior**. Add a custom attribute called something like **screen recording = true**. Supervisors can [search on this custom attribute](search-custom-attributes.md) to find those that have screen recordings.
-+ You may want to add a [Distribute by percentage](distribute-by-percentage.md) block before **Set recording and analytics behavior**. This enables you to use screen recording for some but not all contacts.
-+ You may want to use the [SuspendContactRecording](https://docs.aws.amazon.com/connect/latest/APIReference/API_SuspendContactRecording.html) and [ResumeContactRecording](https://docs.aws.amazon.com/connect/latest/APIReference/API_ResumeContactRecording.html) APIs to prevent sensitive information from being captured in the screen recording.
++ You might want to add a [Distribute by percentage](distribute-by-percentage.md) block before **Set recording and analytics behavior**. This enables you to use screen recording for some but not all contacts.
++ You might want to use the [SuspendContactRecording](https://docs.aws.amazon.com/connect/latest/APIReference/API_SuspendContactRecording.html) and [ResumeContactRecording](https://docs.aws.amazon.com/connect/latest/APIReference/API_ResumeContactRecording.html) APIs to prevent sensitive information from being captured in the screen recording.
 
 ## Next steps
 <a name="next-steps-sr"></a>

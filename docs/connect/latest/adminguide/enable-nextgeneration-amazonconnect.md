@@ -32,7 +32,7 @@ Connect Customer embeds AI at every stage of the customer journey. The following
 
 All new instances are Connect Customer instances.
 
-If your Connect Customer instance was created before Connect Customer was available, you may need to update your instance to Connect Customer.
+If your Connect Customer instance was created before Connect Customer was available, you might need to update your instance to Connect Customer.
 
 1. Log in to the AWS Management Console using your AWS account.
 
@@ -49,7 +49,7 @@ If your Connect Customer instance was created before Connect Customer was availa
 ## How to switch to Customer Basic
 <a name="how-to-disable-ac"></a>
 
-Connect Customer Basic does not include all the AI capabilities available in Connect Customer. If you switch to Connect Customer Basic, some capabilities you are using today may no longer be available, including:
+Connect Customer Basic does not include all the AI capabilities available in Connect Customer. If you switch to Connect Customer Basic, some capabilities you are using today might no longer be available, including:
 + Agentic customer experience designer (ACXD)
   + No-code visual canvas
   + Blended AI logic - agentic AI reasoning and deterministic AI
@@ -83,7 +83,7 @@ Connect Customer Basic does not include all the AI capabilities available in Con
 + [Custom metrics in dashboards and APIs](custom-metrics-topic.md)
 
 **Warning**
-If these features are configured in contact flows, you may encounter runtime errors.
+If these features are configured in contact flows, you might encounter runtime errors.
 
 Complete the following steps to switch from Connect Customer to Connect Customer Basic for a given Connect Customer instance.
 

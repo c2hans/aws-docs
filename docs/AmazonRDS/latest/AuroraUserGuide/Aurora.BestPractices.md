@@ -60,9 +60,9 @@ For more information, see [Connecting to Aurora DB clusters with the AWS drivers
 ## Monitoring Amazon Aurora
 <a name="Aurora.BestPractices.Monitoring"></a>
 
-Amazon Aurora provides various metrics and insights that you can monitor to determine the health and performance of your Aurora DB cluster. You can use various tools, such as the AWS Management Console, AWS CLI, and CloudWatch API, to view Aurora metrics. You can view the combined Performance Insights and CloudWatch metrics in the Performance Insights dashboard and monitor your DB instance. To use this monitoring view, Performance Insights must be turned on for your DB instance. For information about this monitoring view, see [Viewing combined metrics with the Performance Insights dashboard](Viewing_Unifiedmetrics.md).
+Amazon Aurora provides various metrics and insights that you can monitor to determine the health and performance of your Aurora DB cluster. You can use various tools, such as the AWS Management Console, AWS CLI, and CloudWatch API, to view Aurora metrics. You can view the combined Performance Insights and CloudWatch metrics in the Performance Insights dashboard and monitor your DB instance. To use this monitoring view, Performance Insights must be turned on for your DB instance. For information about this monitoring view, see [Database Insights](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_DatabaseInsights.html).
 
-You can create a performance analysis report for a specific time period and view the insights identified and the recommendations to resolve the issues. For more information see, [Creating a performance analysis report in Performance Insights](USER_PerfInsights.UsingDashboard.AnalyzePerformanceTimePeriod.md).
+You can create a performance analysis report for a specific time period and view the insights identified and the recommendations to resolve the issues. For more information, see [Database Insights](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_DatabaseInsights.html).
 
 ## Working with DB parameter groups and DB cluster parameter groups
 <a name="Aurora.BestPractices.ParameterGroups"></a>

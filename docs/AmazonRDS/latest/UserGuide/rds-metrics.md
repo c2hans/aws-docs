@@ -46,7 +46,7 @@ The Amazon RDS console might display metrics in units that are different from th
 | `FreeStorageSpace` | The amount of available storage space.  | All | Bytes |
 | `FreeStorageSpaceLogVolume` | The amount of available storage space on the log volume. | DB instances with [dedicated log volume](USER_PIOPS.dlv.md) enabled | Bytes |
 | `IamDbAuthConnectionRequests` | The number of connection requests using IAM authentication to the DB instance. | All | Count |
-| `MaximumUsedTransactionIDs` | The maximum transaction IDs that have been used. | PostgreSQL | Count |
+| `MaximumUsedTransactionIDs` | The maximum transaction IDs that have been used. This metric excludes databases that PostgreSQL has marked as invalid. An invalid database has a `datconnlimit` value of `-2` in `pg_catalog.pg_database`, for example after an interrupted `DROP DATABASE` operation. Autovacuum ignores invalid databases, so they don't contribute to transaction ID wraparound. To remove an invalid database, use `DROP DATABASE` again. | PostgreSQL | Count |
 | `NetworkReceiveThroughput` | The incoming (receive) network traffic on the DB instance, including both customer database traffic and Amazon RDS traffic used for monitoring and replication. | All | Bytes per second |
 | `NetworkTransmitThroughput` | The outgoing (transmit) network traffic on the DB instance, including both customer database traffic and Amazon RDS traffic used for monitoring and replication. | All | Bytes per second |
 | `OldestLogicalReplicationSlotLag` | The lagging size of the Amazon RDS commits a transaction on the source database and the time when RDS applies the transaction on the replica database. | PostgreSQL | Bytes |

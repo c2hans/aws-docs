@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/developer-guide/p
 
 The AWS Partner Central API Reference was restructured. For more information about the supported API operations, see the [AWS Partner Central API Reference](https://docs.aws.amazon.com/partner-central/latest/APIReference/Welcome.html).
 
-# Partner Central agents MCP Server
+# Connect AI agents to AWS Partner Central with the MCP Server
 <a name="partner-central-mcp-server"></a>
 
 The Partner Central agents MCP Server provides Partner Central tools through the Model Context Protocol (MCP), enabling your AI agents and tools to discover and interact with opportunity management, customer insights, and funding programs through natural language.

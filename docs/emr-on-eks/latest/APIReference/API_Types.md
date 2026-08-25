@@ -11,6 +11,7 @@ The Amazon EMR Containers API contains several data types that various actions u
 The order of each element in a data type structure is not guaranteed. Applications should not assume a particular order.
 
 The following data types are supported:
++  [AuthenticationConfiguration](API_AuthenticationConfiguration.md)
 +  [AuthorizationConfiguration](API_AuthorizationConfiguration.md)
 +  [Certificate](API_Certificate.md)
 +  [CloudWatchMonitoringConfiguration](API_CloudWatchMonitoringConfiguration.md)
@@ -23,6 +24,8 @@ The following data types are supported:
 +  [EksInfo](API_EksInfo.md)
 +  [EncryptionConfiguration](API_EncryptionConfiguration.md)
 +  [Endpoint](API_Endpoint.md)
++  [IAMConfiguration](API_IAMConfiguration.md)
++  [IdentityCenterConfiguration](API_IdentityCenterConfiguration.md)
 +  [InTransitEncryptionConfiguration](API_InTransitEncryptionConfiguration.md)
 +  [JobDriver](API_JobDriver.md)
 +  [JobRun](API_JobRun.md)
@@ -38,6 +41,8 @@ The following data types are supported:
 +  [RetryPolicyConfiguration](API_RetryPolicyConfiguration.md)
 +  [RetryPolicyExecution](API_RetryPolicyExecution.md)
 +  [S3MonitoringConfiguration](API_S3MonitoringConfiguration.md)
++  [SchedulerConfiguration](API_SchedulerConfiguration.md)
++  [SchedulerStatus](API_SchedulerStatus.md)
 +  [SecureNamespaceInfo](API_SecureNamespaceInfo.md)
 +  [SecurityConfiguration](API_SecurityConfiguration.md)
 +  [SecurityConfigurationData](API_SecurityConfigurationData.md)

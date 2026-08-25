@@ -48,7 +48,7 @@ When explicitly creating MEMORY tables with CREATE TABLE, only the `max_heap_tab
 ## Relevant metrics
 <a name="proactive-insights.temp-tables.metrics"></a>
 
-The following Performance Insights metrics are related to this insight:
+The following detailed per-query and database counter metrics, exposed through the Performance Insights API, are related to this insight:
 + Created\_tmp\_disk\_tables
 + Created\_tmp\_tables
 

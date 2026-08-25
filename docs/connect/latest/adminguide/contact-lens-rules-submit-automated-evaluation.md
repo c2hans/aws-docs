@@ -49,7 +49,7 @@ This is the default rule type that is selected when you create a rule to submit 
    + Queues
    + Initiation method
 
-   In addition, you can exclude contacts that may have ended prematurely due to connectivity or other issues using conditions such as:
+   In addition, you can exclude contacts that might have ended prematurely due to connectivity or other issues using conditions such as:
    + Interaction duration (for example, over 30 seconds)
    + Talk time (for example, the customer speaks for over 10 seconds)
    + Potential disconnect issue when the issue does not exist or there is no known connectivity or device issue during the conversation

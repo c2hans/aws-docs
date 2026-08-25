@@ -87,6 +87,8 @@ As with full restores, item-level restored files are placed in a recovery subdir
 1. For **Restore role**, choose the IAM role that AWS Backup will assume for this restore.
 **Note**
 If the AWS Backup default role is not present in your account, a **Default role** is created for you with the correct permissions. You can delete this default role or make it unusable.
+**Note**
+If role manager is enabled in your account, AWS Backup selects the default service role for you, and a **Customize** option is available. For more information, see [IAM role creation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html) in the *IAM User Guide*.
 
 1. Choose **Restore backup**.
 

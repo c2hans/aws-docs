@@ -14,7 +14,7 @@ This is different than using Amazon DynamoDB which provides the following operat
 + `Scan` – Retrieves all of the items in the specified table. (This operation should not be used with large tables because it can consume large amounts of system resources.)
 
 **Note**
-With a relational database, you can use the `SELECT` statement to join data from multiple tables and return the results. Joins are fundamental to the relational model. To ensure that joins run efficiently, the database and its applications should be performance-tuned on an ongoing basis. DynamoDB is a non-relational NoSQL database that does not support table joins. Instead, applications read data from one table at a time.
+With a relational database, you can use the `SELECT` statement to join data from multiple tables and return the results. Joins are fundamental to the relational model. To make sure that joins run efficiently, the database and its applications should be performance-tuned on an ongoing basis. DynamoDB is a non-relational NoSQL database that does not support table joins. Instead, applications read data from one table at a time.
 
 The following sections describe different use cases for reading data, and how to perform these tasks with a relational database and with DynamoDB.
 

@@ -19,7 +19,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/an
 + [Convert the Teradata NORMALIZE temporal feature to Amazon Redshift SQL](convert-the-teradata-normalize-temporal-feature-to-amazon-redshift-sql.md)
 + [Convert the Teradata RESET WHEN feature to Amazon Redshift SQL](convert-the-teradata-reset-when-feature-to-amazon-redshift-sql.md)
 + [Deploy and manage a serverless data lake on the AWS Cloud by using infrastructure as code](deploy-and-manage-a-serverless-data-lake-on-the-aws-cloud-by-using-infrastructure-as-code.md)
-+ [Enforce tagging of Amazon EMR clusters at launch](enforce-tagging-of-amazon-emr-clusters-at-launch.md)
 + [Ensure Amazon EMR logging to Amazon S3 is enabled at launch](ensure-amazon-emr-logging-to-amazon-s3-is-enabled-at-launch.md)
 + [Generate test data using an AWS Glue job and Python](generate-test-data-using-an-aws-glue-job-and-python.md)
 + [Cost-effectively ingest IoT data directly into Amazon S3 using AWS IoT Greengrass](cost-effectively-ingest-iot-data-directly-into-amazon-s3-using-aws-iot-greengrass.md)

@@ -27,7 +27,7 @@ Pro Tip: Use generative AI-powered Natural language- Semantic match if you previ
 1. Enter a natural language statement that can be evaluated by Generative AI as true or false by matching with the conversation transcript.
 ![Import from word collection option in the UI.](http://docs.aws.amazon.com/connect/latest/adminguide/images/enter-natural-language-statement.png)
 
-1. Add any additional conditions, for example, queues, custom contact attributes, etc.
+1. Add any additional conditions, for example, queues, custom contact attributes.
 
 1. Choose **Next** and provide a category name (with no spaces) that would be used to label contacts with the natural language statement, for example, **CustomerAddressChange**.
 

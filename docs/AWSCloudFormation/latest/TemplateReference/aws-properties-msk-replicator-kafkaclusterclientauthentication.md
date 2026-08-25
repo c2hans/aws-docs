@@ -20,6 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 {
   "[MTLS](#cfn-msk-replicator-kafkaclusterclientauthentication-mtls)" : {{KafkaClusterMtlsAuthentication}},
+  "[SaslOAuthBearer](#cfn-msk-replicator-kafkaclusterclientauthentication-sasloauthbearer)" : {{KafkaClusterSaslOAuthBearerAuthentication}},
   "[SaslScram](#cfn-msk-replicator-kafkaclusterclientauthentication-saslscram)" : {{KafkaClusterSaslScramAuthentication}}
 }
 ```
@@ -30,6 +31,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
   [MTLS](#cfn-msk-replicator-kafkaclusterclientauthentication-mtls): {{
     KafkaClusterMtlsAuthentication}}
+  [SaslOAuthBearer](#cfn-msk-replicator-kafkaclusterclientauthentication-sasloauthbearer): {{
+    KafkaClusterSaslOAuthBearerAuthentication}}
   [SaslScram](#cfn-msk-replicator-kafkaclusterclientauthentication-saslscram): {{
     KafkaClusterSaslScramAuthentication}}
 ```
@@ -41,6 +44,12 @@ To declare this entity in your CloudFormation template, use the following syntax
 Property description not available.
 *Required*: No
 *Type*: [KafkaClusterMtlsAuthentication](aws-properties-msk-replicator-kafkaclustermtlsauthentication.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`SaslOAuthBearer`  <a name="cfn-msk-replicator-kafkaclusterclientauthentication-sasloauthbearer"></a>
+Property description not available.
+*Required*: No
+*Type*: [KafkaClusterSaslOAuthBearerAuthentication](aws-properties-msk-replicator-kafkaclustersasloauthbearerauthentication.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `SaslScram`  <a name="cfn-msk-replicator-kafkaclusterclientauthentication-saslscram"></a>

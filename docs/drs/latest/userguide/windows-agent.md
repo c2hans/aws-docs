@@ -320,6 +320,15 @@ To install the agent on a secured network, [learn about the additional required 
    ```
 **Note**
 You can also enter these values as part of the installation script command parameters. If you do not enter these parameters as part of the installation script, you are prompted to enter them one by one as described above. (for example: `.\AwsReplicationWindowsInstaller.exe --region regionname --aws-access-key-id AKIAIOSFODNN7EXAMPLE --aws-secret-access-key wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY`)
+**Note**
+You can also pass credentials through environment variables. We recommend using temporary credentials from AWS STS. Set `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, and `AWS_SESSION_TOKEN` in your PowerShell session. Then run the installer with `--no-prompt`:
+
+   ```
+   $env:AWS_ACCESS_KEY_ID = "AKIAIOSFODNN7EXAMPLE"
+   $env:AWS_SECRET_ACCESS_KEY = "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
+   $env:AWS_SESSION_TOKEN = "AQoDYXdzEJr//////////wEa8AMDSomethingEXAMPLE"
+   .\AwsReplicationWindowsInstaller.exe --region us-east-1 --no-prompt
+   ```
 
     If you require additional customization, you can add a variety of parameters to the installation script in order to manipulate the way the Agent is installed on your server. See the [Installer Parameters](installer-parameters.md) for more information.
 

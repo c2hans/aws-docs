@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/deploy-browser
 # Deploy the Connect Customer browser extension
 <a name="deploy-browser-extension"></a>
 
-The Connect Customer browser extension reports the URL of each browser window to the Connect Customer Client Application so that URL rules configured in your flow block can be evaluated. Without the extension, URLs are not reported and URL rules cannot match, so browser pages that should be redacted by URL may appear in the recording. Window title rules do not depend on the extension; they match on native window titles and work without the extension installed.
+The Connect Customer browser extension reports the URL of each browser window to the Connect Customer Client Application so that URL rules configured in your flow block can be evaluated. Without the extension, URLs are not reported and URL rules cannot match, so browser pages that should be redacted by URL might appear in the recording. Window title rules do not depend on the extension; they match on native window titles and work without the extension installed.
 
 If any of your flow blocks use URL rules, install the extension on every browser that agents use during recorded contacts. The extension is distributed by AWS and installed on agent workstations through your browser's enterprise extension policy. It is not published to the Chrome Web Store or Firefox Add-ons.
 
@@ -246,6 +246,6 @@ After the extension is removed or blocked, contacts handled by those agents are 
 ## What happens if the extension is disabled during a contact
 <a name="extension-disabled-during-contact"></a>
 
-If the extension is uninstalled or disabled while a recorded contact is active, browser URLs stop being reported to the Connect Customer Client Application for the remainder of the contact. URL rules can no longer match, and browser pages that should be redacted by URL may appear in the recording. Window title rules continue to match as normal.
+If the extension is uninstalled or disabled while a recorded contact is active, browser URLs stop being reported to the Connect Customer Client Application for the remainder of the contact. URL rules can no longer match, and browser pages that should be redacted by URL might appear in the recording. Window title rules continue to match as normal.
 
 To restore redaction for new contacts, reinstall or re-enable the extension before the next contact begins.

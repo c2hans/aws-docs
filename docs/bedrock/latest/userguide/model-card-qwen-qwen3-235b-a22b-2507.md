@@ -129,7 +129,7 @@ pip install boto3
 
 ```
 OPENAI_API_KEY="<provide your Bedrock API key>"
-OPENAI_BASE_URL="https://bedrock-mantle.<your-region>.api.aws/v1"
+OPENAI_BASE_URL="https://bedrock-runtime.<your-region>.amazonaws.com/openai/v1"
 ```
 
 ------

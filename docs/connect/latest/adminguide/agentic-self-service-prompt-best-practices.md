@@ -83,7 +83,7 @@ These criteria are specific, verifiable from a transcript, and cover different d
 ### Lead with instructions, reinforce with examples
 <a name="prompt-bp-instructions-with-examples"></a>
 
-State critical rules as clear instructions, then immediately provide a worked example showing the exact expected behavior. Instructions alone may be insufficient — the AI agent needs to see both the rule and a step-by-step demonstration to follow it reliably.
+State critical rules as clear instructions, then immediately provide a worked example showing the exact expected behavior. Instructions alone might be insufficient — the AI agent needs to see both the rule and a step-by-step demonstration to follow it reliably.
 
 ### Use strong directive language for critical instructions
 <a name="prompt-bp-directive-language"></a>
@@ -175,7 +175,7 @@ Review all active instructions to ensure rules don't conflict. One rule empoweri
 - Share internal system details, tool names, or backend processes.
 ```
 
-"Share all available information" conflicts with "Never share internal system details." The AI agent may reveal backend information in an attempt to be transparent, or become paralyzed trying to decide what counts as "all available."
+"Share all available information" conflicts with "Never share internal system details." The AI agent might reveal backend information in an attempt to be transparent, or become paralyzed trying to decide what counts as "all available."
 
 #### Good example
 <a name="prompt-bp-avoid-contradictions-good"></a>
@@ -244,7 +244,7 @@ Smaller, faster models perform well when given precise, step-by-step procedures 
 ### Put static domain facts in the prompt
 <a name="prompt-bp-domain-facts-in-prompt"></a>
 
-Domain policies that are constant across all conversations and critical to AI agent behavior should be embedded directly in the system prompt rather than retrieved from a knowledge base via a tool call. Retrieving policies via tool calls means they become part of conversation history and can fall out of the model's context window after many turns. Embedding them in the prompt also benefits from prompt caching, which can reduce latency and cost.
+Domain policies that are constant across all conversations and critical to AI agent behavior should be embedded directly in the system prompt rather than retrieved from a knowledge base through a tool call. Retrieving policies through tool calls means they become part of conversation history and can fall out of the model's context window after many turns. Embedding them in the prompt also benefits from prompt caching, which can reduce latency and cost.
 
 ### Optimize for prompt caching
 <a name="prompt-bp-prompt-caching"></a>
@@ -257,7 +257,7 @@ Prompt caching reduces latency and cost by reusing previously processed prompt p
 ### Provide intermediate messages for long-running tool calls
 <a name="prompt-bp-filler-messages"></a>
 
-When a tool call may take several seconds to complete, instruct the AI agent to send an initial `<message>` acknowledging the customer's request before invoking the tool. This provides immediate feedback and reduces perceived wait time. For example:
+When a tool call might take several seconds to complete, instruct the AI agent to send an initial `<message>` acknowledging the customer's request before invoking the tool. This provides immediate feedback and reduces perceived wait time. For example:
 
 ```
 User: "Can you check my order status?"

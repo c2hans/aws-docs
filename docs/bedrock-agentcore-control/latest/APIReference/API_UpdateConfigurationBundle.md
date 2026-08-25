@@ -105,7 +105,7 @@ Required: No
 A list of parent version identifiers for lineage tracking. Regular commits have a single parent. Merge commits have two parents: the target branch parent and the source branch parent. If the branch already exists, the first parent must be the latest version on that branch.
 Type: Array of strings
 Pattern: `[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}`
-Required: Yes
+Required: No
 
 ## Response Syntax
 <a name="API_UpdateConfigurationBundle_ResponseSyntax"></a>

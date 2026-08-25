@@ -5,6 +5,12 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/Console_Log.
 # Specifying log delivery using the Console
 <a name="Console_Log"></a>
 
+**Log delivery requirements**
+Log delivery is not supported for serverless caches.
+Slow Log is supported for Valkey 7.x and above, and Redis OSS clusters and replication groups using engine version 6.0 onward.
+Engine Log is supported for Valkey 7.x and above, and Redis OSS clusters and replication groups using engine version 6.2 onward.
+The **Logs** tab appears in the console only when your cluster meets above requirements.
+
 Using the AWS Management Console you can create a Valkey or Redis OSS (cluster mode disabled) cluster by following the steps at [Creating a Valkey (cluster mode disabled) cluster (Console)](SubnetGroups.designing-cluster-pre.valkey.md#Clusters.Create.CON.valkey-gs) or create a Valkey or Redis OSS (cluster mode enabled) cluster using the steps at [Creating a Valkey or Redis OSS (cluster mode enabled) cluster (Console)](Clusters.Create.md#Clusters.Create.CON.RedisCluster). In either case, you configure log delivery by doing the following;
 
 1. Under **Advanced settings**, choose **Logs** and then check either **Slow logs** or **Engine logs**.

@@ -91,6 +91,10 @@ Required: Yes
    "partnerInterconnectMacSecCapable": boolean,
    "partnerName": "string",
    "portEncryptionStatus": "string",
+   "prefixPoolSizeIpv4": number,
+   "prefixPoolSizeIpv6": number,
+   "prefixPoolUnallocatedCountIpv4": number,
+   "prefixPoolUnallocatedCountIpv6": number,
    "providerName": "string",
    "rateLimiterStatus": {
       "inUse": number,
@@ -205,6 +209,26 @@ Type: String
 The MAC Security (MACsec) port link status of the connection.
 The valid values are `Encryption Up`, which means that there is an active Connection Key Name, or `Encryption Down`.
 Type: String
+
+ ** [prefixPoolSizeIpv4](#API_AllocateConnectionOnInterconnect_ResponseSyntax) **   <a name="DX-AllocateConnectionOnInterconnect-response-prefixPoolSizeIpv4"></a>
+The total number of inbound IPv4 route prefixes you can allocate across the virtual interfaces on the connection. Not applicable to hosted connections or interconnects.
+Type: Integer
+Valid Range: Minimum value of 0.
+
+ ** [prefixPoolSizeIpv6](#API_AllocateConnectionOnInterconnect_ResponseSyntax) **   <a name="DX-AllocateConnectionOnInterconnect-response-prefixPoolSizeIpv6"></a>
+The total number of inbound IPv6 route prefixes you can allocate across the virtual interfaces on the connection. Not applicable to hosted connections or interconnects.
+Type: Integer
+Valid Range: Minimum value of 0.
+
+ ** [prefixPoolUnallocatedCountIpv4](#API_AllocateConnectionOnInterconnect_ResponseSyntax) **   <a name="DX-AllocateConnectionOnInterconnect-response-prefixPoolUnallocatedCountIpv4"></a>
+The number of inbound IPv4 route prefixes in the connection prefix pool not yet allocated to a virtual interface. Not applicable to hosted connections or interconnects.
+Type: Integer
+Valid Range: Minimum value of 0.
+
+ ** [prefixPoolUnallocatedCountIpv6](#API_AllocateConnectionOnInterconnect_ResponseSyntax) **   <a name="DX-AllocateConnectionOnInterconnect-response-prefixPoolUnallocatedCountIpv6"></a>
+The number of inbound IPv6 route prefixes in the connection prefix pool not yet allocated to a virtual interface. Not applicable to hosted connections or interconnects.
+Type: Integer
+Valid Range: Minimum value of 0.
 
  ** [providerName](#API_AllocateConnectionOnInterconnect_ResponseSyntax) **   <a name="DX-AllocateConnectionOnInterconnect-response-providerName"></a>
 The name of the service provider associated with the connection.

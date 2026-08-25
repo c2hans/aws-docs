@@ -35,6 +35,8 @@ The following actions are defined by AWS Customer Verification Service but are n
 |   [CreateUploadUrls](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html#user-permissions)  | Grants permission to create upload URLs |  |   | Write |
 |   [GetCustomerVerificationDetails](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html#user-permissions)  | Grants permission to get customer verification data |  |   | Read |
 |   [GetCustomerVerificationEligibility](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html#user-permissions)  | Grants permission to get customer verification eligibility |  |   | Read |
+|   [GetInheritanceConfig](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html#user-permissions)  | Grants permission to get inheritance configuration |  |   | Read |
+|   [PutInheritanceConfig](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html#user-permissions)  | Grants permission to put inheritance configuration |  |   | Write |
 |   [UpdateCustomerVerificationDetails](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html#user-permissions)  | Grants permission to update customer verification data |  |   | Write |
 
 ## Resource types defined by AWS Customer Verification Service

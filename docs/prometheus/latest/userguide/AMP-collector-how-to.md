@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-collecto
 # Set up managed collectors for Amazon EKS
 <a name="AMP-collector-how-to"></a>
 
-To use an Amazon Managed Service for Prometheus collector, you create a scraper that discovers and pulls metrics in your Amazon EKS cluster. You can also create a scraper that integrates with Amazon Managed Streaming for Apache Kafka. For more information, see [Integrate Amazon MSK](https://docs.aws.amazon.com/prometheus/latest/userguide/prom-msk-integration.html).
+To use an Amazon Managed Service for Prometheus collector, you create a scraper that discovers and pulls metrics in your Amazon EKS cluster. You can also create a scraper that integrates with Amazon Managed Streaming for Apache Kafka or with Amazon OpenSearch Service. For more information, see [Integrate Amazon MSK](https://docs.aws.amazon.com/prometheus/latest/userguide/prom-msk-integration.html) and [Integrate Amazon OpenSearch Service](https://docs.aws.amazon.com/prometheus/latest/userguide/prom-opensearch-integration.html).
 + You can create a scraper as part of your Amazon EKS cluster creation. For more information about creating an Amazon EKS cluster, including creating a scraper, see [Creating an Amazon EKS cluster](https://docs.aws.amazon.com/eks/latest/userguide/create-cluster.html) in the *Amazon EKS User Guide*.
 + You can create your own scraper, programmatically with the AWS API or by using the AWS CLI.
 

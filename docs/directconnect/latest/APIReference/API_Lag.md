@@ -111,6 +111,30 @@ The ID of the AWS account that owns the LAG.
 Type: String
 Required: No
 
+ ** prefixPoolSizeIpv4 **   <a name="DX-Type-Lag-prefixPoolSizeIpv4"></a>
+The total number of inbound IPv4 route prefixes you can allocate across the virtual interfaces on the LAG. Not applicable to LAGs that are interconnects and support hosted connections.
+Type: Integer
+Valid Range: Minimum value of 0.
+Required: No
+
+ ** prefixPoolSizeIpv6 **   <a name="DX-Type-Lag-prefixPoolSizeIpv6"></a>
+The total number of inbound IPv6 route prefixes you can allocate across the virtual interfaces on the LAG. Not applicable to LAGs that are interconnects and support hosted connections.
+Type: Integer
+Valid Range: Minimum value of 0.
+Required: No
+
+ ** prefixPoolUnallocatedCountIpv4 **   <a name="DX-Type-Lag-prefixPoolUnallocatedCountIpv4"></a>
+The number of inbound IPv4 route prefixes in the LAG prefix pool not yet allocated to a virtual interface. Not applicable to LAGs that are interconnects and support hosted connections.
+Type: Integer
+Valid Range: Minimum value of 0.
+Required: No
+
+ ** prefixPoolUnallocatedCountIpv6 **   <a name="DX-Type-Lag-prefixPoolUnallocatedCountIpv6"></a>
+The number of inbound IPv6 route prefixes in the LAG prefix pool not yet allocated to a virtual interface. Not applicable to LAGs that are interconnects and support hosted connections.
+Type: Integer
+Valid Range: Minimum value of 0.
+Required: No
+
  ** providerName **   <a name="DX-Type-Lag-providerName"></a>
 The name of the service provider associated with the LAG.
 Type: String

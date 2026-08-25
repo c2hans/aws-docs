@@ -16,6 +16,8 @@ Setting the MTU of a virtual interface to 8500 (jumbo frames) can cause an updat
 {
    "enableSiteLink": {{boolean}},
    "mtu": {{number}},
+   "prefixPoolAllocatedCountIpv4": {{number}},
+   "prefixPoolAllocatedCountIpv6": {{number}},
    "rateLimit": "{{string}}",
    "virtualInterfaceId": "{{string}}",
    "virtualInterfaceName": "{{string}}"
@@ -37,6 +39,18 @@ Required: No
  ** [mtu](#API_UpdateVirtualInterfaceAttributes_RequestSyntax) **   <a name="DX-UpdateVirtualInterfaceAttributes-request-mtu"></a>
 The maximum transmission unit (MTU), in bytes. The supported values are 1500 and 8500. The default value is 1500.
 Type: Integer
+Required: No
+
+ ** [prefixPoolAllocatedCountIpv4](#API_UpdateVirtualInterfaceAttributes_RequestSyntax) **   <a name="DX-UpdateVirtualInterfaceAttributes-request-prefixPoolAllocatedCountIpv4"></a>
+The number of inbound IPv4 route prefixes to allocate to the virtual interface. Not applicable to public virtual interfaces.
+Type: Integer
+Valid Range: Minimum value of 0.
+Required: No
+
+ ** [prefixPoolAllocatedCountIpv6](#API_UpdateVirtualInterfaceAttributes_RequestSyntax) **   <a name="DX-UpdateVirtualInterfaceAttributes-request-prefixPoolAllocatedCountIpv6"></a>
+The number of inbound IPv6 route prefixes to allocate to the virtual interface. Not applicable to public virtual interfaces.
+Type: Integer
+Valid Range: Minimum value of 0.
 Required: No
 
  ** [rateLimit](#API_UpdateVirtualInterfaceAttributes_RequestSyntax) **   <a name="DX-UpdateVirtualInterfaceAttributes-request-rateLimit"></a>
@@ -90,6 +104,8 @@ Required: No
    "location": "string",
    "mtu": number,
    "ownerAccount": "string",
+   "prefixPoolAllocatedCountIpv4": number,
+   "prefixPoolAllocatedCountIpv6": number,
    "rateLimit": "string",
    "region": "string",
    "routeFilterPrefixes": [
@@ -198,6 +214,16 @@ Type: Integer
  ** [ownerAccount](#API_UpdateVirtualInterfaceAttributes_ResponseSyntax) **   <a name="DX-UpdateVirtualInterfaceAttributes-response-ownerAccount"></a>
 The ID of the AWS account that owns the virtual interface.
 Type: String
+
+ ** [prefixPoolAllocatedCountIpv4](#API_UpdateVirtualInterfaceAttributes_ResponseSyntax) **   <a name="DX-UpdateVirtualInterfaceAttributes-response-prefixPoolAllocatedCountIpv4"></a>
+The number of inbound IPv4 route prefixes allocated to the virtual interface. Not applicable to public virtual interfaces.
+Type: Integer
+Valid Range: Minimum value of 0.
+
+ ** [prefixPoolAllocatedCountIpv6](#API_UpdateVirtualInterfaceAttributes_ResponseSyntax) **   <a name="DX-UpdateVirtualInterfaceAttributes-response-prefixPoolAllocatedCountIpv6"></a>
+The number of inbound IPv6 route prefixes allocated to the virtual interface. Not applicable to public virtual interfaces.
+Type: Integer
+Valid Range: Minimum value of 0.
 
  ** [rateLimit](#API_UpdateVirtualInterfaceAttributes_ResponseSyntax) **   <a name="DX-UpdateVirtualInterfaceAttributes-response-rateLimit"></a>
 The rate limit (bandwidth allocation) applied to the virtual interface. The value must be one of the supported bandwidth values and cannot exceed the bandwidth of the parent connection or LAG. Supported values: `50Mbps`, `100Mbps`, `200Mbps`, `300Mbps`, `400Mbps`, `500Mbps`, `600Mbps`, `700Mbps`, `800Mbps`, `900Mbps`, `1Gbps`, `1.2Gbps`, `1.5Gbps`, `1.8Gbps`, `2Gbps`, `2.1Gbps`, `2.4Gbps`, `2.7Gbps`, `3Gbps`, `3.2Gbps`, `3.6Gbps`, `4Gbps`, `5Gbps`, `6Gbps`, `7Gbps`, `8Gbps`, `9Gbps`, `10Gbps`, `12Gbps`, `15Gbps`, `18Gbps`, `20Gbps`, `21Gbps`, `24Gbps`, `27Gbps`, `30Gbps`, `32Gbps`, `36Gbps`, `40Gbps`, `50Gbps`, `60Gbps`, `70Gbps`, `80Gbps`, `100Gbps`, `120Gbps`, `150Gbps`, `180Gbps`, `200Gbps`, `210Gbps`, `240Gbps`, `270Gbps`, `300Gbps`, `320Gbps`, `360Gbps`, `400Gbps`, `450Gbps`, `480Gbps`, `500Gbps`, `540Gbps`, `600Gbps`, `700Gbps`, `800Gbps`, `900Gbps`, `1Tbps`, `1.1Tbps`, `1.2Tbps`, `1.3Tbps`, `1.4Tbps`, `1.5Tbps`, `1.6Tbps`.

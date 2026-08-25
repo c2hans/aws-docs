@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::Batch::ComputeEnvironment CapacityReservations
 <a name="aws-properties-batch-computeenvironment-capacityreservations"></a>
 
-<a name="aws-properties-batch-computeenvironment-capacityreservations-description"></a>The `CapacityReservations` property type specifies Property description not available. for an [AWS::Batch::ComputeEnvironment](aws-resource-batch-computeenvironment.md).
+The capacity reservation configuration for Amazon ECS Managed Instances. Use this to target On-Demand Capacity Reservations or Reserved Instances.
 
 ## Syntax
 <a name="aws-properties-batch-computeenvironment-capacityreservations-syntax"></a>
@@ -36,13 +36,16 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-batch-computeenvironment-capacityreservations-properties"></a>
 
 `ReservationGroupArn`  <a name="cfn-batch-computeenvironment-capacityreservations-reservationgrouparn"></a>
-Property description not available.
+The Amazon Resource Name (ARN) of the capacity reservation group to target.
 *Required*: No
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ReservationPreference`  <a name="cfn-batch-computeenvironment-capacityreservations-reservationpreference"></a>
-Property description not available.
+The capacity reservation preference. Valid values:
++ `RESERVATIONS_ONLY` — Use only capacity reservations.
++ `RESERVATIONS_FIRST` — Prefer capacity reservations but fall back to On-Demand if unavailable.
++ `RESERVATIONS_EXCLUDED` — Do not use capacity reservations.
 *Required*: No
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

@@ -13,7 +13,7 @@ When you [configure a third-party speech provider](configure-third-party-speech-
 
   These policies allow Connect Customer to access to the API key within the secret. Note that you cannot use the default `aws/secretsmanager` KMS key; you will have to create a new key or use an existing customer-managed key. For more information about how KMS keys secure secrets, see [Secret encryption and decryption in Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/security-encryption.html).
 
-Make sure that the resource-based policy for the secret includes the `aws:SourceAccount` and `aws:SourceArn` confused deputy conditions (see [The confused deputy problem](https://docs.aws.amazon.com/IAM/latest/UserGuide/confused-deputy.html)) and that the resource-based policy for the KMS key includes the `kms:EncryptionContext:SecretARN` condition. This will ensure that Connect Customer can only access your API key secret in context of a single specific instance, and can only access your KMS key in context of both that instance and the specific secret.
+Make sure that the resource-based policy for the secret includes the `aws:SourceAccount` and `aws:SourceArn` confused deputy conditions (see [The confused deputy problem](https://docs.aws.amazon.com/IAM/latest/UserGuide/confused-deputy.html)) and that the resource-based policy for the KMS key includes the `kms:EncryptionContext:SecretARN` condition. This will make sure that Connect Customer can only access your API key secret in context of a single specific instance, and can only access your KMS key in context of both that instance and the specific secret.
 
 ## Example of a resource-based policy for Secrets Manager secrets
 <a name="example-resource-policy-secrets-manager"></a>
@@ -93,4 +93,4 @@ To attach a resource-based policy to your KMS key, go to the AWS Key Management 
 
 We recommend rotating API keys at least every 90 days to minimize the risk of compromise, and to maintain a well-practiced key rotation process for emergency situations.
 
-To rotate an API key, you must rotate the secret in which it is contained. See [Rotate Secrets Manager secrets](https://docs.aws.amazon.com/secretsmanager/latest/userguide/rotating-secrets.html) in the *Secrets Manager User Guide* for more information on how to rotate secrets. When you rotate an API key, it is recommended that you wait for the previous key's usage to drop to zero before revoking the old API key to ensure that ongoing requests are not impacted.
+To rotate an API key, you must rotate the secret in which it is contained. See [Rotate Secrets Manager secrets](https://docs.aws.amazon.com/secretsmanager/latest/userguide/rotating-secrets.html) in the *Secrets Manager User Guide* for more information on how to rotate secrets. When you rotate an API key, it is recommended that you wait for the previous key's usage to drop to zero before revoking the old API key to make sure that ongoing requests are not impacted.

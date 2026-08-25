@@ -64,7 +64,7 @@ The DNS hostname of the host. DNS hostnames for hosts must be unique across Amaz
 The EC2 instance type that represents the host.
 *Required*: Yes
 *Type*: String
-*Allowed values*: `i4i.metal | i7i.metal-24xl`
+*Allowed values*: `i4i.metal | i7i.metal-24xl | i7i.metal-48xl`
 *Update requires*: Updates are not supported.
 
 `KeyName`  <a name="cfn-evs-environment-hostinfoforcreate-keyname"></a>

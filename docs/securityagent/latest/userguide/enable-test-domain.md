@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/enable-test-domain.html
 ---
 
-# Enable an application domain for penetration testing
+# Enable an application domain for Continuum penetration testing
 <a name="enable-test-domain"></a>
 
 Before you can run a penetration test on an application, you need to add a target domain and verify ownership. AWS Security Agent will only perform penetration tests against verified domains.

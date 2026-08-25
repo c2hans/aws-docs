@@ -15,7 +15,7 @@ Your file system can get into a **Misconfigured** state for several reasons, suc
 + The Active Directory domain controller is not reachable due to network connectivity issues, such as invalid VPC Security Groups, VPC Network ACL or routing table configuration, or domain controller firewall settings.
 
 **Important**
-Do not move computer objects that Amazon FSx creates in the OU after your file system is created. Doing so will cause your file system to become misconfigured.
+Do not move, disable, or delete the computer objects that Amazon FSx creates in the OU. Do not change the default OU after your file system is created. Any of these actions will cause your file system to become misconfigured.
 
 (For the full list of Active Directory requirements, see [Prerequisites](self-managed-AD.md#self-manage-prereqs). You can also validate that your Active Directory environment is properly configured to meet these requirements by using the [Amazon FSx Active Directory Validation tool](validate-ad-config.md#test-ad-network-config).)
 

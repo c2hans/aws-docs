@@ -85,7 +85,7 @@ AWS Glue Streaming supports a variety of data targets such as:
 ## Enabling real-time mode for streaming jobs
 <a name="glue-streaming-real-time-mode"></a>
 
- Real-time mode (RTM) is a new execution model for Spark Structured Streaming available in AWS Glue 6.0. RTM reduces end-to-end latency from seconds or minutes to milliseconds. Real-time mode applies only to Spark Structured Streaming jobs. It does not apply to legacy Spark Streaming (DStreams) or other job types.
+ Real-time mode (RTM) is a new execution model for Spark Structured Streaming available in AWS Glue 6.0. RTM reduces end-to-end latency from seconds or minutes to sub-second. Real-time mode applies only to Spark Structured Streaming jobs. It does not apply to legacy Spark Streaming (DStreams) or other job types.
 
  RTM uses `Trigger.RealTime`. Tasks run continuously within a batch window (default 5 minutes) and process records as they arrive, rather than accumulating data across intervals. This differs from the default micro-batch model, where `forEachBatch`/`Trigger.ProcessingTime` polls, processes, commits, and restarts tasks each interval.
 
@@ -109,7 +109,7 @@ Before you enable real-time mode, confirm that your job meets the following requ
 <a name="glue-streaming-rtm-when-to-use"></a>
 
 Real-time mode is designed for a specific class of streaming workloads. Consider using real-time mode when:
-+ You need millisecond-level end-to-end latency and micro-batch latency (1–2 seconds or more) is too high for your use case.
++ You need sub-second end-to-end latency and micro-batch latency (1–2 seconds or more) is too high for your use case.
 + Your pipeline performs stateless transformations such as filtering, projecting, enriching, or routing records from Kafka to Kafka or another sink.
 + You have a fixed, predictable number of Kafka partitions and can provision workers accordingly.
 + Your jobs are written in Scala.
@@ -131,7 +131,7 @@ Micro-batch mode
 Each interval launches tasks, reads accumulated data, processes the data, commits the checkpoint, terminates tasks, and repeats. Minimum latency is approximately 1–2 seconds.
 
 Real-time mode
-Tasks launch once and run for the duration of `batchDurationMs` (default 5 minutes). Tasks process records as they arrive, with millisecond-level latency. At the deadline, tasks cooperatively stop. The driver commits the checkpoint, and the next batch relaunches tasks.
+Tasks launch once and run for the duration of `batchDurationMs` (default 5 minutes). Tasks process records as they arrive, with sub-second latency. At the deadline, tasks cooperatively stop. The driver commits the checkpoint, and the next batch relaunches tasks.
 
 Both modes use the same checkpoint format and recovery mechanism. The key difference is task lifetime. Micro-batch mode terminates and relaunches tasks every interval. Real-time mode keeps tasks running continuously within a longer batch window.
 

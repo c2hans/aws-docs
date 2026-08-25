@@ -13,7 +13,7 @@ Here's how you can set up a flow to test live media streaming:
 
 1. Add a **Stop media streaming** block to where you want to stop streaming.
 
-1. Configure both blocks to specify what you want to stream: **From the customer** and/or **To the customer**.
+1. Configure both blocks to specify what you want to stream: **From the customer** or **To the customer**.
 ![A Start media streaming block.](http://docs.aws.amazon.com/connect/latest/adminguide/images/start-media-streaming.png)
 
 Customer audio is captured until a **Stop media streaming** block is invoked, even if the contact is passed to another flow.
