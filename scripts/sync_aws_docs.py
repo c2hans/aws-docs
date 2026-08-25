@@ -22,6 +22,7 @@ reconverting unchanged pages.
 from __future__ import annotations
 
 import argparse
+import fcntl
 import hashlib
 import json
 import re
@@ -29,10 +30,11 @@ import subprocess
 import sys
 import threading
 import time
+from contextlib import contextmanager
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass, field
 from pathlib import Path
-from urllib.parse import urlparse
+from urllib.parse import unquote, urlparse, urlunparse
 from xml.etree import ElementTree
 
 import requests
@@ -65,7 +67,7 @@ SDK_REFERENCE_PATTERNS = [
     r"AWSJavaScriptSDK/",                      # JS SDK v2 API docs
     r"cdk/api/",                               # CDK construct library reference
     r"powershell/v\d+/reference/",             # PowerShell cmdlet reference
-    r"^https://docs\.aws\.amazon\.com/cli/(latest|v\d+)/sitemap\.xml$",  # CLI command reference
+    r"^https://docs\.aws\.amazon\.com/cli/(latest|v\d+)/",  # CLI command reference
 ]
 SDK_REFERENCE_RE = re.compile("|".join(SDK_REFERENCE_PATTERNS))
 
@@ -79,6 +81,11 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 DOCS_DIR = REPO_ROOT / "docs"
 STATE_DIR = REPO_ROOT / ".cache"
 MANIFEST_PATH = STATE_DIR / "manifest.json"
+LOCK_PATH = STATE_DIR / "sync.lock"
+
+
+class SyncError(RuntimeError):
+    pass
 
 
 def make_session() -> requests.Session:
@@ -116,10 +123,22 @@ def is_english(url: str) -> bool:
 
 def fetch_xml_locs(url: str, timeout: float) -> tuple[str, list[str]]:
     """Fetch a sitemap (index or urlset) and return (root_tag, locs)."""
+    parsed_url = urlparse(url)
+    if parsed_url.scheme != "https" or parsed_url.netloc != urlparse(BASE).netloc:
+        raise SyncError(f"unsupported sitemap URL: {url}")
     resp = session().get(url, timeout=timeout)
     resp.raise_for_status()
+    final_url = urlparse(resp.url)
+    if final_url.scheme != "https" or final_url.netloc != urlparse(BASE).netloc:
+        raise SyncError(f"sitemap redirected off docs.aws.amazon.com: {resp.url}")
+    # AWS's index occasionally retains a sitemap URL after a guide becomes a
+    # single page. In that case the URL redirects directly to the HTML page.
+    if parsed_url.path.endswith("/sitemap.xml") and final_url.path.endswith(".html"):
+        return "urlset", [resp.url]
     root = ElementTree.fromstring(resp.content)
     tag = root.tag.replace(XML_NS, "")
+    if tag not in {"sitemapindex", "urlset"}:
+        raise SyncError(f"unexpected root tag {root.tag!r} for {url}")
     locs = [
         el.text.strip()
         for el in root.iter(f"{XML_NS}loc")
@@ -132,7 +151,8 @@ def discover_guide_sitemaps(
     timeout: float, english_only: bool, exclude_sdk_references: bool = True
 ) -> list[str]:
     tag, locs = fetch_xml_locs(SITEMAP_INDEX, timeout)
-    assert tag == "sitemapindex", f"unexpected root tag {tag} for sitemap index"
+    if tag != "sitemapindex" or not locs:
+        raise SyncError(f"invalid or empty sitemap index at {SITEMAP_INDEX}")
     if english_only:
         locs = [l for l in locs if is_english(l)]
     if exclude_sdk_references:
@@ -141,23 +161,33 @@ def discover_guide_sitemaps(
 
 
 def discover_pages(sitemap_url: str, timeout: float) -> list[str]:
-    """A guide's sitemap.xml is normally a <urlset>. Handle nested indexes too."""
-    tag, locs = fetch_xml_locs(sitemap_url, timeout)
+    """Recursively read a guide sitemap, failing if any branch is incomplete."""
     pages: list[str] = []
-    if tag == "sitemapindex":
-        for sub in locs:
-            try:
-                _, sub_locs = fetch_xml_locs(sub, timeout)
-                pages.extend(sub_locs)
-            except (requests.RequestException, ElementTree.ParseError):
-                continue
-    else:
-        pages.extend(locs)
+    seen: set[str] = set()
+
+    def walk(url: str, depth: int = 0) -> None:
+        if depth > 10:
+            raise SyncError(f"sitemap nesting exceeds 10 levels at {url}")
+        if url in seen:
+            raise SyncError(f"sitemap cycle detected at {url}")
+        seen.add(url)
+        tag, locs = fetch_xml_locs(url, timeout)
+        if tag == "sitemapindex":
+            for sub in locs:
+                walk(sub, depth + 1)
+        else:
+            pages.extend(locs)
+
+    walk(sitemap_url)
+    if not pages:
+        raise SyncError(f"sitemap contains no pages: {sitemap_url}")
     base_host = urlparse(BASE).netloc
     return [
         p
         for p in pages
-        if urlparse(p).path.endswith(".html") and urlparse(p).netloc == base_host
+        if urlparse(p).path.endswith(".html")
+        and urlparse(p).scheme == "https"
+        and urlparse(p).netloc == base_host
     ]
 
 
@@ -190,10 +220,35 @@ def front_matter(source_url: str) -> str:
 
 
 def url_to_local_path(url: str) -> Path:
-    path = urlparse(url).path.lstrip("/")
+    parsed = urlparse(url)
+    if parsed.scheme != "https" or parsed.netloc != urlparse(BASE).netloc:
+        raise SyncError(f"unsupported documentation URL: {url}")
+    if parsed.query or parsed.fragment:
+        raise SyncError(f"documentation URL has query or fragment: {url}")
+    decoded_path = unquote(parsed.path)
+    if "\\" in decoded_path or "\x00" in decoded_path:
+        raise SyncError(f"unsafe documentation path: {url}")
+    parts = Path(decoded_path).parts
+    if ".." in parts:
+        raise SyncError(f"documentation path escapes docs directory: {url}")
+    path = decoded_path.lstrip("/")
     if path.endswith(".html"):
         path = path[: -len(".html")] + ".md"
-    return DOCS_DIR / path
+    else:
+        raise SyncError(f"documentation URL does not end in .html: {url}")
+    local_path = DOCS_DIR / path
+    try:
+        local_path.resolve().relative_to(DOCS_DIR.resolve())
+    except ValueError as e:
+        raise SyncError(f"documentation path escapes docs directory: {url}") from e
+    return local_path
+
+
+def markdown_url(url: str) -> str:
+    parsed = urlparse(url)
+    if not parsed.path.endswith(".html"):
+        raise SyncError(f"documentation URL does not end in .html: {url}")
+    return urlunparse(parsed._replace(path=parsed.path[:-5] + ".md"))
 
 
 def sha256(text: str) -> str:
@@ -202,11 +257,7 @@ def sha256(text: str) -> str:
 
 def fetch_page(url: str, timeout: float, cache_entry: dict | None) -> FetchResult:
     local_path = url_to_local_path(url)
-    # Plain suffix swap, not urljoin: some sitemap URLs (e.g. the /solutions/
-    # tree) contain a doubled slash right after the domain, and urljoin()
-    # treats a path starting with "//" as a protocol-relative reference,
-    # silently discarding the real host in favor of the first path segment.
-    md_url = url[: -len(".html")] + ".md"
+    md_url = markdown_url(url)
 
     headers = {}
     if cache_entry:
@@ -220,7 +271,13 @@ def fetch_page(url: str, timeout: float, cache_entry: dict | None) -> FetchResul
     except requests.RequestException as e:
         return FetchResult(url, local_path, None, "error", error=str(e))
 
-    if resp.status_code == 304:
+    final_url = urlparse(resp.url)
+    if final_url.scheme != "https" or final_url.netloc != urlparse(BASE).netloc:
+        return FetchResult(
+            url, local_path, None, "error", error=f"redirected off docs.aws.amazon.com: {resp.url}"
+        )
+
+    if resp.status_code == 304 and cache_entry:
         return FetchResult(
             url,
             local_path,
@@ -230,7 +287,7 @@ def fetch_page(url: str, timeout: float, cache_entry: dict | None) -> FetchResul
             last_modified=cache_entry.get("last_modified"),
         )
 
-    if resp.status_code == 200 and "markdown" in resp.headers.get("Content-Type", ""):
+    if resp.status_code == 200 and "markdown" in resp.headers.get("Content-Type", "").lower():
         body = normalize_markdown(front_matter(url) + resp.text)
         return FetchResult(
             url,
@@ -263,6 +320,8 @@ class Manifest:
         if path.exists():
             try:
                 self.data = json.loads(path.read_text())
+                if not isinstance(self.data, dict):
+                    self.data = {}
             except (json.JSONDecodeError, OSError):
                 self.data = {}
         self._dirty_count = 0
@@ -276,6 +335,11 @@ class Manifest:
             self._dirty_count += 1
             if self._dirty_count >= flush_every:
                 self._flush_locked()
+
+    def remove(self, url: str) -> None:
+        with self.lock:
+            if self.data.pop(url, None) is not None:
+                self._dirty_count += 1
 
     def flush(self) -> None:
         with self.lock:
@@ -299,10 +363,49 @@ def run_git(args: list[str], cwd: Path) -> subprocess.CompletedProcess:
     )
 
 
-def git_stage_and_count(repo_dir: Path) -> int:
-    run_git(["add", "--", "docs"], repo_dir)
-    r = run_git(["diff", "--cached", "--name-only", "--", "docs"], repo_dir)
-    return len([l for l in r.stdout.splitlines() if l.strip()])
+def require_clean_auto_commit(repo_dir: Path, manifest: Manifest) -> None:
+    staged = run_git(["diff", "--cached", "--quiet"], repo_dir)
+    if staged.returncode not in {0, 1}:
+        raise SyncError(staged.stderr.strip() or "failed to inspect git index")
+    docs_status = run_git(["status", "--porcelain", "--", "docs"], repo_dir)
+    if docs_status.returncode != 0:
+        raise SyncError(docs_status.stderr.strip() or "failed to inspect docs worktree")
+    if staged.returncode == 1:
+        raise SyncError("auto-commit requires an empty git index")
+    entries_by_path = {
+        entry.get("local_path"): entry for entry in manifest.data.values()
+    }
+    for line in docs_status.stdout.splitlines():
+        relative_path = line[3:]
+        path = repo_dir / relative_path
+        entry = entries_by_path.get(relative_path)
+        if (
+            not entry
+            or not path.is_file()
+            or entry.get("sha256") != sha256(path.read_text())
+        ):
+            raise SyncError(
+                "docs/ has changes not produced by a recoverable previous sync: "
+                f"{relative_path}"
+            )
+
+
+def git_stage_and_count(repo_dir: Path, paths: list[Path]) -> int:
+    relative_paths = sorted({str(p.relative_to(repo_dir)) for p in paths})
+    for start in range(0, len(relative_paths), 500):
+        r = run_git(["add", "--", *relative_paths[start : start + 500]], repo_dir)
+        if r.returncode != 0:
+            raise SyncError(r.stderr.strip() or "git add failed")
+    r = run_git(["diff", "--cached", "--name-only"], repo_dir)
+    if r.returncode != 0:
+        raise SyncError(r.stderr.strip() or "git diff failed")
+    staged_paths = {line for line in r.stdout.splitlines() if line.strip()}
+    unexpected = staged_paths - set(relative_paths)
+    if unexpected:
+        raise SyncError(
+            "refusing to commit unrelated staged paths: " + ", ".join(sorted(unexpected))
+        )
+    return len(staged_paths)
 
 
 def git_commit(repo_dir: Path, message: str) -> bool:
@@ -313,16 +416,32 @@ def git_commit(repo_dir: Path, message: str) -> bool:
     return True
 
 
-def git_push(repo_dir: Path) -> None:
+def git_push(repo_dir: Path) -> bool:
     r = run_git(["remote"], repo_dir)
+    if r.returncode != 0:
+        print(f"git remote failed: {r.stderr}", file=sys.stderr)
+        return False
     if "origin" not in r.stdout.split():
-        print("No 'origin' remote configured; skipping push.", file=sys.stderr)
-        return
+        print("No 'origin' remote configured; cannot push.", file=sys.stderr)
+        return False
     r = run_git(["push", "origin", "HEAD"], repo_dir)
     if r.returncode != 0:
         print(f"git push failed: {r.stdout}\n{r.stderr}", file=sys.stderr)
+        return False
     else:
         print("Pushed to origin.")
+        return True
+
+
+@contextmanager
+def process_lock(path: Path):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w") as lock_file:
+        try:
+            fcntl.flock(lock_file, fcntl.LOCK_EX | fcntl.LOCK_NB)
+        except BlockingIOError as e:
+            raise SyncError("another AWS docs sync is already running") from e
+        yield
 
 
 # --------------------------------------------------------------------------
@@ -344,8 +463,10 @@ class Stats:
                 setattr(self, k, getattr(self, k) + v)
 
 
-def process_url(url: str, timeout: float, manifest: Manifest, dry_run: bool) -> tuple[str, str]:
-    cache_entry = manifest.get(url)
+def process_url(
+    url: str, timeout: float, manifest: Manifest, dry_run: bool, no_cache: bool
+) -> tuple[str, str]:
+    cache_entry = None if no_cache else manifest.get(url)
     local_path = url_to_local_path(url)
     if cache_entry:
         # Local mirror must still exist and match what the manifest recorded,
@@ -374,17 +495,85 @@ def process_url(url: str, timeout: float, manifest: Manifest, dry_run: bool) -> 
         tmp_path.write_text(result.markdown)
         tmp_path.replace(local_path)
 
-    manifest.update(
-        url,
-        {
-            "etag": result.etag,
-            "last_modified": result.last_modified,
-            "sha256": sha256(result.markdown),
-            "local_path": str(local_path.relative_to(REPO_ROOT)),
-        },
-    )
+    if not dry_run:
+        manifest.update(
+            url,
+            {
+                "etag": result.etag,
+                "last_modified": result.last_modified,
+                "sha256": sha256(result.markdown),
+                "local_path": str(local_path.relative_to(REPO_ROOT)),
+            },
+        )
 
     return ("written" if changed else "unchanged"), url
+
+
+def remove_stale_pages(
+    manifest: Manifest,
+    discovered: set[str],
+    dry_run: bool,
+    eligible,
+) -> tuple[list[Path], list[str]]:
+    candidates: dict[str, tuple[Path, dict | None]] = {}
+    errors: list[str] = []
+    discovered_paths = {url_to_local_path(url) for url in discovered}
+    for url, entry in list(manifest.data.items()):
+        if not eligible(url):
+            continue
+        try:
+            path = url_to_local_path(url)
+            if path in discovered_paths:
+                if url not in discovered and not dry_run:
+                    manifest.remove(url)
+                continue
+            candidates[url] = (path, entry)
+        except (OSError, UnicodeError, SyncError) as e:
+            errors.append(f"failed to remove stale page for {url}: {e}")
+
+    # The manifest is local and gitignored, so a fresh clone needs the tracked
+    # tree as a second source of managed stale-page candidates.
+    for path in DOCS_DIR.rglob("*.md"):
+        relative = path.relative_to(DOCS_DIR).as_posix()
+        url = f"{BASE}/{relative[:-3]}.html"
+        if path not in discovered_paths and eligible(url):
+            candidates.setdefault(url, (path, manifest.get(url)))
+
+    for url, (path, entry) in candidates.items():
+        if not path.exists():
+            continue
+        expected_hash = entry.get("sha256") if entry else None
+        hash_matches = (
+            isinstance(expected_hash, str)
+            and len(expected_hash) == 64
+            and sha256(path.read_text()) == expected_hash
+        )
+        if not hash_matches:
+            relative = str(path.relative_to(REPO_ROOT))
+            tracked = run_git(["ls-files", "--error-unmatch", "--", relative], REPO_ROOT)
+            clean = run_git(["diff", "--quiet", "--", relative], REPO_ROOT)
+            staged_clean = run_git(
+                ["diff", "--cached", "--quiet", "--", relative], REPO_ROOT
+            )
+            if (
+                tracked.returncode != 0
+                or clean.returncode != 0
+                or staged_clean.returncode != 0
+            ):
+                errors.append(f"refusing to delete unverified stale page {path}")
+
+    if errors:
+        return [], errors
+
+    removed: list[Path] = []
+    for url, (path, _) in candidates.items():
+        if path.exists():
+            if not dry_run:
+                path.unlink()
+            removed.append(path)
+        if not dry_run:
+            manifest.remove(url)
+    return removed, errors
 
 
 def main() -> int:
@@ -408,10 +597,32 @@ def main() -> int:
     ap.add_argument("--push", action="store_true", default=False)
     args = ap.parse_args()
 
-    STATE_DIR.mkdir(parents=True, exist_ok=True)
+    if args.workers < 1:
+        ap.error("--workers must be positive")
+    if args.timeout <= 0:
+        ap.error("--timeout must be positive")
+
+    for name in ("limit", "max_sitemaps"):
+        value = getattr(args, name)
+        if value is not None and value < 0:
+            ap.error(f"--{name.replace('_', '-')} must be nonnegative")
+
+    try:
+        if args.dry_run:
+            return run_sync(args)
+        with process_lock(LOCK_PATH):
+            return run_sync(args)
+    except SyncError as e:
+        print(f"ERROR: {e}", file=sys.stderr)
+        return 1
+
+
+def run_sync(args: argparse.Namespace) -> int:
+    if not args.dry_run:
+        STATE_DIR.mkdir(parents=True, exist_ok=True)
     manifest = Manifest(MANIFEST_PATH)
-    if args.no_cache:
-        manifest.data = {}
+    if args.commit and not args.dry_run:
+        require_clean_auto_commit(REPO_ROOT, manifest)
 
     print("Discovering guide sitemaps...", file=sys.stderr)
     guide_sitemaps = discover_guide_sitemaps(
@@ -422,11 +633,14 @@ def main() -> int:
     if args.guide_filter:
         pat = re.compile(args.guide_filter)
         guide_sitemaps = [g for g in guide_sitemaps if pat.search(g)]
-    if args.max_sitemaps:
+        if not guide_sitemaps:
+            raise SyncError(f"guide filter matched no sitemaps: {args.guide_filter}")
+    if args.max_sitemaps is not None:
         guide_sitemaps = guide_sitemaps[: args.max_sitemaps]
     print(f"{len(guide_sitemaps)} guide sitemap(s) selected.", file=sys.stderr)
 
     all_pages: list[str] = []
+    discovery_errors = 0
     with ThreadPoolExecutor(max_workers=args.workers) as pool:
         futures = {pool.submit(discover_pages, gs, args.timeout): gs for gs in guide_sitemaps}
         i = 0
@@ -434,8 +648,9 @@ def main() -> int:
             gs = futures[fut]
             try:
                 pages = fut.result()
-            except (requests.RequestException, ElementTree.ParseError) as e:
+            except (requests.RequestException, ElementTree.ParseError, SyncError) as e:
                 print(f"WARN: failed to read {gs}: {e}", file=sys.stderr)
+                discovery_errors += 1
                 continue
             finally:
                 i += 1
@@ -444,25 +659,49 @@ def main() -> int:
                 print(f"  scanned {i}/{len(guide_sitemaps)} sitemaps, {len(all_pages)} pages so far", file=sys.stderr)
 
     all_pages = sorted(set(all_pages))
-    if args.limit:
+    if discovery_errors:
+        print(
+            f"ERROR: discovery failed for {discovery_errors} sitemap(s); aborting sync",
+            file=sys.stderr,
+        )
+        return 1
+    try:
+        destinations = [url_to_local_path(url) for url in all_pages]
+    except SyncError as e:
+        print(f"ERROR: {e}", file=sys.stderr)
+        return 1
+    if len(set(destinations)) != len(destinations):
+        print("ERROR: multiple documentation URLs map to the same local path", file=sys.stderr)
+        return 1
+    if args.limit is not None:
         all_pages = all_pages[: args.limit]
     print(f"{len(all_pages)} page(s) to sync.", file=sys.stderr)
 
     stats = Stats(total=len(all_pages))
+    changed_urls: list[str] = []
     t0 = time.time()
     with ThreadPoolExecutor(max_workers=args.workers) as pool:
         futures = {
-            pool.submit(process_url, url, args.timeout, manifest, args.dry_run): url
+            pool.submit(
+                process_url, url, args.timeout, manifest, args.dry_run, args.no_cache
+            ): url
             for url in all_pages
         }
         done = 0
         for fut in as_completed(futures):
-            kind, info = fut.result()
+            try:
+                kind, info = fut.result()
+            except Exception as e:
+                stats.bump(errors=1)
+                print(f"ERROR {futures[fut]}: {e}", file=sys.stderr)
+                done += 1
+                continue
             if kind == "error":
                 stats.bump(errors=1)
                 print(f"ERROR {info}", file=sys.stderr)
             elif kind == "written":
                 stats.bump(written=1)
+                changed_urls.append(info)
             elif kind == "unchanged":
                 stats.bump(unchanged=1)
             elif kind == "cached_skip":
@@ -478,7 +717,31 @@ def main() -> int:
                     file=sys.stderr,
                 )
 
-    manifest.flush()
+    changed_paths = [url_to_local_path(url) for url in changed_urls]
+
+    complete_full_run = (
+        not args.guide_filter
+        and args.max_sitemaps is None
+        and args.limit is None
+        and not args.all_locales
+        and not args.include_sdk_references
+        and discovery_errors == 0
+        and stats.errors == 0
+    )
+    removed_paths: list[Path] = []
+    if complete_full_run:
+        removed_paths, stale_errors = remove_stale_pages(
+            manifest,
+            set(all_pages),
+            args.dry_run,
+            lambda url: is_english(url) and not is_sdk_reference(url),
+        )
+        for error in stale_errors:
+            print(f"ERROR {error}", file=sys.stderr)
+            stats.bump(errors=1)
+
+    if not args.dry_run:
+        manifest.flush()
 
     print(
         f"\nDone. total={stats.total} written={stats.written} "
@@ -487,21 +750,30 @@ def main() -> int:
         file=sys.stderr,
     )
 
+    if discovery_errors or stats.errors:
+        print(
+            f"Sync incomplete: discovery_errors={discovery_errors}, "
+            f"page_errors={stats.errors}; skipping commit.",
+            file=sys.stderr,
+        )
+        return 1
+
     if args.commit and not args.dry_run:
-        n = git_stage_and_count(REPO_ROOT)
+        # Only stage files this run may have updated, plus verified stale removals.
+        n = git_stage_and_count(REPO_ROOT, changed_paths + removed_paths)
         if n:
             msg = f"Sync AWS docs: {n} page(s) changed ({time.strftime('%Y-%m-%d')})"
             if git_commit(REPO_ROOT, msg):
                 print(f"Committed: {msg}")
-                if args.push:
-                    git_push(REPO_ROOT)
+                if args.push and not git_push(REPO_ROOT):
+                    return 1
             else:
                 print("Commit failed; see errors above.", file=sys.stderr)
                 return 1
         else:
             print("No changes to commit.")
 
-    return 0 if stats.errors == 0 else 1
+    return 0
 
 
 if __name__ == "__main__":
